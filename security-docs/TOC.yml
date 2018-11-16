@@ -1,2 +1,7 @@
-- name: Index
+- name: Security Engineering
+  displayName: Home
   href: index.md
+  expanded: true
+  items: 
+    - name: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
+      href: security-docs/Securing the Future of Artificial Intelligence and Machine Learning at Microsoft.md

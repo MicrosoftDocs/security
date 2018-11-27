@@ -3,5 +3,69 @@
   href: index.md
   expanded: true
   items: 
-    - name: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
-      href: securing-the-future-of-artificial-intelligence-and-machine-learning-at-microsoft.md
+  - name: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
+    href: securing-the-future-of-artificial-intelligence-and-machine-learning-at-microsoft.md
+  - name: Securing the Future of AI and ML at Microsoft 
+    href: security-the-future-of-ai-and-ml-at-microsoft.md
+  - name: Solving the TLS 1.0 Problem
+    href: solving-the-tls-1.0-problem.md
+  - name: SDL
+    items:
+    - name: Security Bug Bar (Sample) 
+      href: security-bug-bar-sample.md
+    - name: Microsoft SDL Cryptographic Recommendations 
+      href: microsoft-sdl-cryptographic-recommendations.md
+    - name: Read our getting started guide 
+      href: /azure/security/azure-security-threat-modeling-tool-getting-started
+    - name: Get familiar with the features
+      href: /azure/security/azure-security-threat-modeling-tool-feature-overview
+    - name:	Learn about generated threat categories
+      href: /azure/security/azure-security-threat-modeling-tool-threats
+    - name:	Find mitigations to generated threats
+      href: /azure/security/azure-security-threat-modeling-tool-mitigations
+    - name:	Add or modify a field to track data requirements in Azure Devops
+      href: /azure/devops/reference/add-modify-field?view=tfs-2018&viewFallbackFrom=vsts
+    - name:	FxCop
+      href: /visualstudio/code-quality/install-fxcop-analyzers?view=vs-2017
+    - name:	Using Azure Security Center for an incident response 
+      href: /azure/security-center/security-center-incident-response
+  - name: OSA
+    items:
+    - name:	Azure Multi-Factor Authentication
+      href: /azure/active-directory/authentication/concept-mfa-howitworks
+    - name:	Azure AD Privileged Identity Management 
+      href: /azure/active-directory/privileged-identity-management/pim-configure
+    - name:	Role Based Access Control 
+      href: /azure/role-based-access-control/
+    - name:	Privileged Account Workstations
+      href: /windows-server/identity/securing-privileged-access/privileged-access-workstations
+    - name:	Just Enough Administration
+      href: /powershell/jea/overview
+    - name:	Azure Key Vault 
+      href: /azure/key-vault/
+    - name:	Safe storage of app secrets in development
+      href: /aspnet/core/security/app-secrets?view=aspnetcore-2.1&tabs=windows
+    - name:	Managed Identities for Azure 
+      href: /azure/active-directory/managed-identities-azure-resources/overview
+    - name:	Applocker 
+      href: /windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview
+    - name:	Securing SQL Server 
+      href: /sql/relational-databases/security/securing-sql-server?view=sql-server-2017
+    - name:	Windows security baselines
+      href: /windows/security/threat-protection/windows-security-baselines
+    - name:	Device Guard
+      href: /windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control
+    - name:	Enterprise Mobility + Security Documentation 
+      href: /enterprise-mobility-security/
+    - name:	Azure DDoS Protection Standard overview
+      href: /azure/virtual-network/ddos-protection-overview
+  - name: DevSecOps
+    items: 
+    - name:	Use the Key Vault Connected Service
+      href: /azure/key-vault/vs-key-vault-add-connected-service
+    - name:	Advanced Threat Detection
+      href: /azure/security/azure-threat-detection
+  - name: CDOC
+    items:
+    - name: FY18 CDOC Strategy Brief
+      href: fy18-cdoc-strategy-brief.md

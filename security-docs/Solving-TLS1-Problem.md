@@ -1,43 +1,26 @@
 # Solving the TLS 1.0 Problem
 
 By Andrew Marshall
-
 Principal Security Program Manager
-
 Microsoft Corporation
 
-##### Contributors/Thanks to
-
+#### Contributors/Thanks to
 Mark Cartwright
-
 Bryan Sullivan
-
 Patrick Jungles
-
 Michael Scovetta
-
 Tony Rice
-
 David LeBlanc
-
 Mortimer Cook
-
 Daniel Sommerfeld
-
 Andrei Popov
-
 Michiko Short
-
 Justin Burke
-
 Gov Maharaj
-
 Brad Turner
-
 Sean Stevenson
 
-# 
-
+######
 This document is provided “as-is.” Information and views expressed in
 this document, including URL and other Internet web site references, may
 change without notice. You bear the risk of using it.
@@ -48,7 +31,7 @@ this document for your internal, reference purposes.
 
 © 2017 Microsoft Corporation. All rights reserved.
 
-## Executive Summary 
+## Executive Summary
 
 This document presents guidance on rapidly identifying and removing
 Transport Layer Security (TLS) protocol version 1.0 dependencies in

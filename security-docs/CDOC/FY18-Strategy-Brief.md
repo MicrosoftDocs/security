@@ -1,12 +1,12 @@
-![](./media/FY18_CDOC_Strategy_Brief-000.jpg)
-![](./media/FY18_CDOC_Strategy_Brief-003.jpg)![](./media/FY18_CDOC_Strategy_Brief-001.jpg)
+![](/security-docs/media/FY18_CDOC_Strategy_Brief-000.jpg)
+![](/security-docs/media/FY18_CDOC_Strategy_Brief-003.jpg)![](/security-docs/media/FY18_CDOC_Strategy_Brief-001.jpg)
 
 # Microsoft Cyber Defense Operations Center
 Cybersecurity is a shared responsibility, which impacts us all. Today, a single breach, physical or virtual, can cause millions of dollars of damage to an organization and potentially billions in financial losses to the global economy. Every day, we see reports of cybercriminals targeting businesses and individuals for financial gain or socially-motivated purposes. Add to these threats those by nation-state actors seeking to disrupt operations, conduct espionage, or generally undermine trust.
 
 In this brief, we share the state of online security, threat actors and the sophisticated tactics they employ to advance their goals, and how Microsoft’s Cyber Defense Operations Center combats these threats and helps customers protect their sensitive applications and data.
 
-![](./media/FY18_CDOC_Strategy_Brief-004.jpg)
+![](/security-docs/media/FY18_CDOC_Strategy_Brief-004.jpg)
 ### The Microsoft Cyber Defense Operations Center
 Microsoft is deeply committed to making the online world safer for everyone. Our company’s cybersecurity strategies have evolved from the unique visibility we have into the rapidly evolving cyberthreat landscape.
 
@@ -23,17 +23,17 @@ The first step to protecting people, devices, data, and critical infrastructure 
 
    - **Cybercriminals** span several subcategories though they often share common motivations—financial, intelligence, and/or social or political gain. Their approach is usually direct—by infiltrating a financial-data system, skimming micro-amounts too small to detect and exiting before being discovered. Maintaining a persistent, clandestine presence is critical to meeting their objective.
 
-    Their approach may be an intrusion that diverts a large financial payout through a labyrinth of accounts to evade tracking and intervention. At times, the goal is to steal intellectual property that the target possesses so the cybercriminal acts as an intermediary to deliver a product design, software source code, or other proprietary information that has value to a specific entity. More than half of these activities are perpetrated by organized criminal groups.
+   Their approach may be an intrusion that diverts a large financial payout through a labyrinth of accounts to evade tracking and intervention. At times, the goal is to steal intellectual property that the target possesses so the cybercriminal acts as an intermediary to deliver a product design, software source code, or other proprietary information that has value to a specific entity. More than half of these activities are perpetrated by organized criminal groups.
 
-    - **Nation-state actors** work for a government to disrupt or compromise targeted governments, organizations, or individuals to gain access to valuable data or intelligence. They are engaged in international affairs to influence and drive an outcome that may benefit a country or countries. A nation-state actor’s objective is to disrupt operations, conduct espionage against corporations, steal secrets from other governments, or otherwise undermine trust in institutions. They work with large resources at their disposal and without fear of legal retribution, with a toolkit that spans from simple to highly complex.
+   - **Nation-state actors** work for a government to disrupt or compromise targeted governments, organizations, or individuals to gain access to valuable data or intelligence. They are engaged in international affairs to influence and drive an outcome that may benefit a country or countries. A nation-state actor’s objective is to disrupt operations, conduct espionage against corporations, steal secrets from other governments, or otherwise undermine trust in institutions. They work with large resources at their disposal and without fear of legal retribution, with a toolkit that spans from simple to highly complex.
     
-    Nation-state actors can attract some of the most sophisticated cyberhacking talent and may advance their tools to the point of weaponization. Their intrusion approach often involves an advanced persistent threat using supercomputing power to brute-force break credentials through millions of attempts at arriving at the correct password. They may also use hyper-targeted phishing attacks to attract an insider into revealing their credentials.
+   Nation-state actors can attract some of the most sophisticated cyberhacking talent and may advance their tools to the point of weaponization. Their intrusion approach often involves an advanced persistent threat using supercomputing power to brute-force break credentials through millions of attempts at arriving at the correct password. They may also use hyper-targeted phishing attacks to attract an insider into revealing their credentials.
 
-    - **Insider** threats are particularly challenging due to the unpredictability of human behavior. The motivation for an insider maybe opportunistic and for financial gain. However, there are multiple causes for potential insider threats, spanning from simple carelessness to sophisticated schemes. Many data breaches resulting from insider threats are completely unintentional due to accidental or negligent activity that puts an organization at risk without being aware of the vulnerability.
+   - **Insider** threats are particularly challenging due to the unpredictability of human behavior. The motivation for an insider maybe opportunistic and for financial gain. However, there are multiple causes for potential insider threats, spanning from simple carelessness to sophisticated schemes. Many data breaches resulting from insider threats are completely unintentional due to accidental or negligent activity that puts an organization at risk without being aware of the vulnerability.
 
     - **Hacktivists** focus on political and/or socially-motivated attacks. They strive to be visible and recognized in the news to draw attention to themselves and their cause. Their tactics include distributed denial-of-service (DDoS) attacks, vulnerability exploits or defacing an online presence. A connection to a social or political issue can make any company or organization a target. Social media enables hacktivists to quickly evangelize their cause and recruit others to participate.
 
-![](./media/FY18_CDOC_Strategy_Brief-005.jpg)
+![](/security-docs/media/FY18_CDOC_Strategy_Brief-005.jpg)
 ### Threat actor techniques 
 Adversaries are skilled at finding ways to penetrate an organization’s network despite the protections in place using various sophisticated techniques. Several tactics have been around since the early days of the Internet, though others reflect the creativity and increasing sophistication of today’s adversaries.
 
@@ -53,6 +53,7 @@ Adversaries are skilled at finding ways to penetrate an organization’s network
    
    Often a denial of service attack is used to cover or distract from a more deceptive effort to penetrate an organization. In most cases, the objective of the adversary is to gain access to a network using compromised credentials, then move laterally across the network to gain access to more “powerful” credentials that are the keys to the most sensitive and valuable information within the organization.
 
+![](/security-docs/media/FY18_CDOC_Strategy_Brief-006.jpg)
 ### The militarization of cyberspace
 The growing possibility of cyberwarfare is one of the leading concerns among governments and citizens today. It involves nation-states using and targeting computers and networks in warfare. 
 
@@ -63,8 +64,8 @@ New threat tools and tactics developed through advanced military investments may
 ### The Microsoft cybersecurity posture
 While security has always been a priority for Microsoft, we recognize that the digital world requires continuous advances in our commitment in how we protect, detect, and respond to cybersecurity threats. These three commitments define our approach to cyber defense and serve as a useful framework for our discussion of Microsoft’s cyber defense strategies and capabilities.
 
-
 ## PROTECT
+![](/security-docs/media/FY18_CDOC_Strategy_Brief-007.jpg)
 
 ### Protect
 Microsoft’s first commitment is to protect the computing environment used by our customers and employees to ensure the resiliency of our cloud infrastructure and services, products, devices, and the company’s internal corporate resources from determined adversaries.
@@ -97,8 +98,8 @@ Microsoft’s protection tactics include:
 
 Having a rich set of controls and a defense-in-depth strategy helps ensure that should any one area fail, there are compensating controls in other areas to help maintain the security and privacy of our customers, cloud services, and our own infrastructure. However, no environment is truly impenetrable, as people will make errors and determined adversaries will continue to look for vulnerabilities and exploit them. The significant investments we continue to make in these protection layers and baseline analysis enables us to rapidly detect when abnormal activity is present.
 
-
 ## DETECT
+![](/security-docs/media/FY18_CDOC_Strategy_Brief-008.jpg)
 
 ### Detect
 The CDOC teams employ automated software, machine learning, behavioral analysis, and forensic techniques to create an intelligent security graph of our environment. This signal is enriched with contextual metadata and behavioral models generated from sources such as Active Directory, asset and configuration management systems, and event logs.
@@ -122,6 +123,7 @@ Microsoft’s detection tactics include:
    - Data scientists and security experts routinely work side-by-side to address escalated events that exhibit unusual characteristics requiring further analysis of targets. They can then determine potential response and remediation efforts.
 
 ## RESPOND
+![](/security-docs/media/FY18_CDOC_Strategy_Brief-009.jpg)
 
 ### Respond
 When Microsoft detects abnormal activity in our systems, it triggers our response teams to engage and quickly respond with precise force. Notifications from software-based detection systems flow through our automated response systems using risk-based algorithms to flag events requiring intervention from our response team. Mean-Time-to-Mitigate is paramount and our automation system provides responders with relevant, actionable information that accelerates triage, mitigation, and recovery.

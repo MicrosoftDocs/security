@@ -6,15 +6,15 @@
   - name: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
     href: securing-the-future-of-artificial-intelligence-and-machine-learning-at-microsoft.md
   - name: Securing the Future of AI and ML at Microsoft 
-    href: security-the-future-of-ai-and-ml-at-microsoft.md
+    href: Security-the-Future-of-AI-ML-at-MS.md
   - name: Solving the TLS 1.0 Problem
-    href: solving-the-tls-1.0-problem.md
+    href: Solving-TLS1-Problem.md
   - name: SDL
     items:
     - name: Security Bug Bar (Sample) 
-      href: security-bug-bar-sample.md
+      href: /security/SDL/Security-Bug-Bar-sample.md
     - name: Microsoft SDL Cryptographic Recommendations 
-      href: microsoft-sdl-cryptographic-recommendations.md
+      href: /security/SDL/MS-SDL-Crypto-Recmd.md
     - name: Read our getting started guide 
       href: /azure/security/azure-security-threat-modeling-tool-getting-started
     - name: Get familiar with the features
@@ -68,4 +68,4 @@
   - name: CDOC
     items:
     - name: FY18 CDOC Strategy Brief
-      href: fy18-cdoc-strategy-brief.md
+      href: /security/CDOC/FY18-Strategy-Brief.md

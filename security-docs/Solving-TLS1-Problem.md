@@ -20,19 +20,9 @@ Gov Maharaj
 Brad Turner
 Sean Stevenson
 
-######
-This document is provided “as-is.” Information and views expressed in
-this document, including URL and other Internet web site references, may
-change without notice. You bear the risk of using it.
-
-This document does not provide you with any legal rights to any
-intellectual property in any Microsoft product. You may copy and use
-this document for your internal, reference purposes.
-
-© 2017 Microsoft Corporation. All rights reserved.
+###### This document is provided "as-is." Information and views expressed in this document, including URL and other Internet web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes. © 2017 Microsoft Corporation. All rights reserved.
 
 ## Executive Summary
-
 This document presents guidance on rapidly identifying and removing
 Transport Layer Security (TLS) protocol version 1.0 dependencies in
 software built on top of Microsoft operating systems. It is intended to
@@ -85,7 +75,6 @@ of this document, references to the deprecation of TLS 1.0 also include
 TLS 1.1.
 
 ## The Current State of Microsoft’s TLS 1.0 implementation
-
 [Microsoft’s TLS 1.0
 implementation](https://support.microsoft.com/en-us/kb/3117336) is free
 of known security vulnerabilities. Due to the potential for future
@@ -103,14 +92,12 @@ testing and supportability purposes as many different browsers and
 operating systems had varying levels of TLS support.
 
 ## Ensuring support for TLS 1.2 across deployed operating systems
-
 Many operating systems have outdated TLS version defaults or support
 ceilings that need to be accounted for. Usage of Windows 8/Server 2012
 or later means that TLS 1.2 will be the default security protocol
 version:
 
 #### Figure 1: Security Protocol Support by OS Version
-
 | Windows OS              | SSLv2         | SSLv3    | TLS 1.0     | TLS 1.1                                                                                                                            | TLS 1.2                                                                                                                            |
 | ----------------------- | ------------- | -------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | Windows Vista           | Enabled       | Enabled  | **Default** | Not Supported                                                                                                                      | Not Supported                                                                                                                      |
@@ -132,6 +119,8 @@ protocol versions negotiated by various simulated client OS/browser
 combinations when connecting to
 [www.microsoft.com](http://www.microsoft.com).
 
+##### 1 Hardcoding here means that the TLS version is fixed to a version that is outdated and less secure than newer versions. TLS versions newer than the hardcoded version cannot be used without modifying the program in question. This class of problem cannot be addressed without source code changes and software update deployment.
+
 If not already complete, it is highly recommended to conduct an
 inventory of operating systems used by your enterprise, customers and
 partners (the latter two via outreach/communication or at least HTTP
@@ -141,30 +130,28 @@ such a situation, traffic analysis will yield the TLS versions
 successfully negotiated by customers/partners connecting to your
 services, but the traffic itself will remain encrypted.
 
-##   
-Finding and fixing TLS 1.0 dependencies in code
-
+## Finding and fixing TLS 1.0 dependencies in code
 For products using the Windows OS-provided cryptography libraries and
 security protocols, the following steps should help identify any
 hardcoded TLS 1.0 usage in your applications:
 
-1.  Identify all instances of
+1. Identify all instances of
     [AcquireCredentialsHandle](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374712\(v=vs.85\).aspx)().
     This helps reviewers get closer proximity to code blocks where TLS
     may be hardcoded.
 
-2.  Review any instances of the
+2. Review any instances of the
     [SecPkgContext\_SupportedProtocols](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380103\(v=vs.85\).aspx)
     and
     [SecPkgContext\_ConnectionInfo](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379819\(v=vs.85\).aspx)
     structures for hardcoded TLS.
 
-3.  In native code, set any non-zero assignments of
+3. In native code, set any non-zero assignments of
     [grbitEnabledProtocols](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379810\(v=vs.85\).aspx)
     to zero. This allows the operating system to use its default TLS
     version.
 
-4.  Disable [FIPS
+4. Disable [FIPS
     Mode](https://blogs.technet.microsoft.com/secguide/2014/04/07/why-were-not-recommending-fips-mode-anymore/)
     if it is enabled due to the potential for conflict with settings
     required for explicitly disabling TLS 1.0/1.1 in this document. See
@@ -172,27 +159,27 @@ hardcoded TLS 1.0 usage in your applications:
     B](#appendix-b-deprecating-tls-1.01.1-while-retaining-fips-mode) for
     more information.
 
-5.  Update and recompile any applications using WinHTTP hosted on Server
+5. Update and recompile any applications using WinHTTP hosted on Server
     2012 or older.
     
-    1.  Applications must add code to support TLS 1.2 via
+    1. Applications must add code to support TLS 1.2 via
         [WinHttpSetOption](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384114\(v=vs.85\).aspx)
 
 6.  To cover all the bases, scan source code and online service
     configuration files for the patterns below corresponding to
     enumerated type values commonly used in TLS hardcoding:
     
-    1.  SecurityProtocolType
+    1. SecurityProtocolType
     
-    2.  SSLv2, SSLv23, SSLv3, TLS1, TLS 10, TLS11
+    2. SSLv2, SSLv23, SSLv3, TLS1, TLS 10, TLS11
     
     3.  WINHTTP\_FLAG\_SECURE\_PROTOCOL\_
     
-    4.  SP\_PROT\_
+    4. SP\_PROT\_
     
-    5.  NSStreamSocketSecurityLevel
+    5. NSStreamSocketSecurityLevel
     
-    6.  PROTOCOL\_SSL or PROTOCOL\_TLS
+    6. PROTOCOL\_SSL or PROTOCOL\_TLS
 
 The recommended solution in all cases above is to remove the hardcoded
 protocol version selection and defer to the operating system default.
@@ -200,7 +187,6 @@ Operating systems which do not support TLS 1.2 as the default should be
 upgraded to versions which do.
 
 ## Testing with TLS 1.2+
-
 Following the fixes recommended in the section above, products should be
 regression-tested for protocol negotiation errors and compatibility with
 other operating systems in your enterprise.
@@ -237,39 +223,38 @@ other operating systems in your enterprise.
 A simple blueprint for testing these changes in an online service
 consists of the following:
 
-1.  Conduct a scan of production environment systems to identify
+1. Conduct a scan of production environment systems to identify
     operating systems which do not support TLS 1.2.
 
-2.  Scan source code and online service configuration files for
+2. Scan source code and online service configuration files for
     hardcoded TLS as described in “[Finding and fixing TLS 1.0
     dependencies in
     code](#finding-and-fixing-tls-1.0-dependencies-in-code)”
 
-3.  Update/recompile applications as required:
+3. Update/recompile applications as required:
     
-    1.  Managed apps
+    1. Managed apps
         
-        1.  Rebuild against the latest .NET Framework version.
+        1. Rebuild against the latest .NET Framework version.
         
-        2.  Verify any usage of the
+        2. Verify any usage of the
             [SSLProtocols](https://msdn.microsoft.com/en-us/library/system.security.authentication.sslprotocols\(v=vs.110\).aspx)
             enumeration is set to SSLProtocols.None in order to use OS
             default settings.
     
-    2.  WinHTTP apps – rebuild with
+    2. WinHTTP apps – rebuild with
         [WinHttpSetOption](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384114\(v=vs.85\).aspx)
         to support TLS 1.2
 
-4.  Start testing in a pre-production or staging environment with all
+4. Start testing in a pre-production or staging environment with all
     security protocols older than TLS 1.2 disabled [via
     registry](https://support.microsoft.com/en-us/help/245030/how-to-restrict-the-use-of-certain-cryptographic-algorithms-and-protocols-in-schannel.dll).
 
-5.  Fix any remaining instances of TLS hardcoding as they are
+5. Fix any remaining instances of TLS hardcoding as they are
     encountered in testing. Redeploy the software and perform a new
     regression test run.
 
 ## Notifying partners of your TLS 1.0 deprecation plans
-
 After TLS hardcoding is addressed and operating system/development
 framework updates are completed, should you opt to deprecate TLS 1.0 it
 will be necessary to coordinate with customers and partners:
@@ -283,7 +268,6 @@ will be necessary to coordinate with customers and partners:
     described in above sections.
 
 ## Conclusion
-
 Removing TLS 1.0 dependencies is a complicated issue to drive end to
 end. Microsoft and industry partners are taking action on this today to
 ensure our entire product stack is more secure by default, from our OS
@@ -296,28 +280,19 @@ transition.
 
 ## Appendix A: Handshake Simulation for various clients connecting to [www.microsoft.com](http://www.microsoft.com), courtesy SSLLabs.com
 
-![](media/image1.png)
+![](./media/image1.png)
 
 ## Appendix B: Deprecating TLS 1.0/1.1 while retaining FIPS Mode
-
 Follow the steps below if your network requires FIPS Mode but you also
 want to deprecate TLS 1.0/1.1:
 
-1.  Configure TLS versions [via the
+1. Configure TLS versions [via the
     registry](https://support.microsoft.com/en-us/help/245030/how-to-restrict-the-use-of-certain-cryptographic-algorithms-and-protocols-in-schannel.dll),
     by setting “Enabled” to zero for the unwanted TLS versions.
 
-2.  Disable Curve 25519 (Server 2016 only) via Group Policy.
+2. Disable Curve 25519 (Server 2016 only) via Group Policy.
 
-3.  Disable any cipher suites using algorithms that aren’t allowed by
+3. Disable any cipher suites using algorithms that aren’t allowed by
     the relevant FIPS publication. For Server 2016 (assuming the default
     settings are in effect) this is means disabling RC4, PSK and NULL
     ciphers.
-
-<!-- end list -->
-
-1.  Hardcoding here means that the TLS version is fixed to a version
-    that is outdated and less secure than newer versions. TLS versions
-    newer than the hardcoded version cannot be used without modifying
-    the program in question. This class of problem cannot be addressed
-    without source code changes and software update deployment.

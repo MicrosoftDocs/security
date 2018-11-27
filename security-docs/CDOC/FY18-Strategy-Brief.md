@@ -1,9 +1,13 @@
-#Microsoft Cyber Defense Operations Center
+![](./media/FY18_CDOC_Strategy_Brief-000.jpg)
+![](./media/FY18_CDOC_Strategy_Brief-003.jpg)![](./media/FY18_CDOC_Strategy_Brief-001.jpg)
+
+# Microsoft Cyber Defense Operations Center
 Cybersecurity is a shared responsibility, which impacts us all. Today, a single breach, physical or virtual, can cause millions of dollars of damage to an organization and potentially billions in financial losses to the global economy. Every day, we see reports of cybercriminals targeting businesses and individuals for financial gain or socially-motivated purposes. Add to these threats those by nation-state actors seeking to disrupt operations, conduct espionage, or generally undermine trust.
 
 In this brief, we share the state of online security, threat actors and the sophisticated tactics they employ to advance their goals, and how Microsoft’s Cyber Defense Operations Center combats these threats and helps customers protect their sensitive applications and data.
 
-## The Microsoft Cyber Defense Operations Center
+![](./media/FY18_CDOC_Strategy_Brief-004.jpg)
+### The Microsoft Cyber Defense Operations Center
 Microsoft is deeply committed to making the online world safer for everyone. Our company’s cybersecurity strategies have evolved from the unique visibility we have into the rapidly evolving cyberthreat landscape.
 
 Innovation in the attack space across people, places, and processes is a necessary and continual investment we all need to make, as adversaries continue to evolve in both determination and sophistication. In response to increased investments in defense strategies by many organizations, attackers are adapting and improving tactics at breakneck speed.
@@ -14,7 +18,7 @@ The Microsoft Cyber Defense Operations Center (CDOC) is one example of the more 
 
 Microsoft has invested more than $15 billion in our cloud infrastructure, with over 90 percent of Fortune 500 companies using the Microsoft cloud. Today, we own and operate one of the world’s largest cloud footprints with more than 100 geo-distributed datacenters, 200 cloud services, millions of devices, and a billion customers around the globe.
 
-## Cybersecurity threat actors and motivations
+### Cybersecurity threat actors and motivations
 The first step to protecting people, devices, data, and critical infrastructure is to understand the different types of threat actors and their motivations.
 
    - **Cybercriminals** span several subcategories though they often share common motivations—financial, intelligence, and/or social or political gain. Their approach is usually direct—by infiltrating a financial-data system, skimming micro-amounts too small to detect and exiting before being discovered. Maintaining a persistent, clandestine presence is critical to meeting their objective.
@@ -29,7 +33,8 @@ The first step to protecting people, devices, data, and critical infrastructure 
 
     - **Hacktivists** focus on political and/or socially-motivated attacks. They strive to be visible and recognized in the news to draw attention to themselves and their cause. Their tactics include distributed denial-of-service (DDoS) attacks, vulnerability exploits or defacing an online presence. A connection to a social or political issue can make any company or organization a target. Social media enables hacktivists to quickly evangelize their cause and recruit others to participate.
 
-## Threat actor techniques 
+![](./media/FY18_CDOC_Strategy_Brief-005.jpg)
+### Threat actor techniques 
 Adversaries are skilled at finding ways to penetrate an organization’s network despite the protections in place using various sophisticated techniques. Several tactics have been around since the early days of the Internet, though others reflect the creativity and increasing sophistication of today’s adversaries.
 
    - **Social engineering** is a broad term for an attack that tricks users into acting or divulging information they would otherwise not do. Social engineering plays on the good intentions of most people and their willingness to be helpful, to avoid problems, to trust familiar sources, or to potentially gain a reward. Other attack vectors can fall under the umbrella of social engineering, but the following are some of the attributes that make social engineering tactics easier to recognize and defend against:
@@ -48,19 +53,20 @@ Adversaries are skilled at finding ways to penetrate an organization’s network
    
    Often a denial of service attack is used to cover or distract from a more deceptive effort to penetrate an organization. In most cases, the objective of the adversary is to gain access to a network using compromised credentials, then move laterally across the network to gain access to more “powerful” credentials that are the keys to the most sensitive and valuable information within the organization.
 
-## The militarization of cyberspace
+### The militarization of cyberspace
 The growing possibility of cyberwarfare is one of the leading concerns among governments and citizens today. It involves nation-states using and targeting computers and networks in warfare. 
 
 Both offensive and defensive operations are used to conduct cyberattacks, espionage and sabotage. Nation-states have been developing their capabilities and engaged in cyberwarfare either as aggressors, defendants, or both for many years. 
 
 New threat tools and tactics developed through advanced military investments may also be breached and cyberthreats can be shared online and weaponized by cybercriminals for further use.
 
-## The Microsoft cybersecurity posture
+### The Microsoft cybersecurity posture
 While security has always been a priority for Microsoft, we recognize that the digital world requires continuous advances in our commitment in how we protect, detect, and respond to cybersecurity threats. These three commitments define our approach to cyber defense and serve as a useful framework for our discussion of Microsoft’s cyber defense strategies and capabilities.
 
-# PROTECT
 
-## Protect
+## PROTECT
+
+### Protect
 Microsoft’s first commitment is to protect the computing environment used by our customers and employees to ensure the resiliency of our cloud infrastructure and services, products, devices, and the company’s internal corporate resources from determined adversaries.
 
 The CDOC teams’ protection measures span across all endpoints, from sensors and datacenters to identities and software-as-a-service (SaaS) applications. Defense-indepth—applying controls at multiple layers with overlapping safeguards and risk mitigation strategies—is a best-practice across the industry and it’s the approach we take to protect our valuable customer and corporate assets.
@@ -91,9 +97,10 @@ Microsoft’s protection tactics include:
 
 Having a rich set of controls and a defense-in-depth strategy helps ensure that should any one area fail, there are compensating controls in other areas to help maintain the security and privacy of our customers, cloud services, and our own infrastructure. However, no environment is truly impenetrable, as people will make errors and determined adversaries will continue to look for vulnerabilities and exploit them. The significant investments we continue to make in these protection layers and baseline analysis enables us to rapidly detect when abnormal activity is present.
 
-# DETECT
 
-## Detect
+## DETECT
+
+### Detect
 The CDOC teams employ automated software, machine learning, behavioral analysis, and forensic techniques to create an intelligent security graph of our environment. This signal is enriched with contextual metadata and behavioral models generated from sources such as Active Directory, asset and configuration management systems, and event logs.
 
 Our extensive investments in security analytics build rich behavioral profiles and predictive models that allow us to “connect the dots” and identify advanced threats that might otherwise have gone undetected, then counter with strong containment and coordinated remediation activities.
@@ -114,9 +121,9 @@ Microsoft’s detection tactics include:
     
    - Data scientists and security experts routinely work side-by-side to address escalated events that exhibit unusual characteristics requiring further analysis of targets. They can then determine potential response and remediation efforts.
 
-# RESPOND
+## RESPOND
 
-## Respond
+### Respond
 When Microsoft detects abnormal activity in our systems, it triggers our response teams to engage and quickly respond with precise force. Notifications from software-based detection systems flow through our automated response systems using risk-based algorithms to flag events requiring intervention from our response team. Mean-Time-to-Mitigate is paramount and our automation system provides responders with relevant, actionable information that accelerates triage, mitigation, and recovery.
 
 To manage security incidents at such a massive scale, we deploy a tiered system to efficiently assign response tasks to the right resource and facilitate a rational escalation path. 
@@ -135,14 +142,14 @@ Microsoft’s response tactics include:
     
     - Penetration testing is employed across all Microsoft products and services through ongoing Red Team/Blue Team exercises to unearth vulnerabilities before a real adversary can leverage those weak points for an attack.
 
-## Cyberdefense for our customers
+### Cyberdefense for our customers
 We are often asked what tools and processes our customers can adopt for their own environment and how Microsoft might help in their implementation. Microsoft has consolidated many of the cyberdefense products and services we use in the CDOC into a range of products and services. The Microsoft Enterprise Cybersecurity Group and Microsoft Consulting Services teams engage with our customers to deliver the solutions most appropriate for their specific needs and requirements. 
 
 One of the first steps that Microsoft highly recommends is to establish a security foundation. Our foundation services provide critical attack defenses and core identity-enablement services that help you to ensure assets are protected. The foundation helps you to accelerate your digital transformation journey to move towards a more secure modern enterprise. 
 
 Building on this foundation, customers can then leverage solutions proven successful with other Microsoft customers and deployed in Microsoft’s own IT and cloud services environments. For more information on our enterprise cybersecurity tools, capabilities and service offerings, please visit Microsoft.com/security and contact our teams at cyberservices@microsoft.com.
 
-## Best practices to protect your environment
+### Best practices to protect your environment
 | Invest in your platform | Invest in your instrumentation | Invest in your people |
 | ----------------------- | :-----------------------------:| ---------------------:|
 | _Agility and scalability require planning and building enabling platforms_ | _Ensure you are exhaustively measuring the elements in your platform_ | _Skilled analysts and data scientists are the foundation of defense, while users are the new security perimeter_ |

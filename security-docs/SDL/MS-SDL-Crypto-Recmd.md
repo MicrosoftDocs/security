@@ -29,6 +29,7 @@ SSL/TLS:
 
 ### Symmetric Block Ciphers, Cipher Modes and Initialization Vectors 
 _Block Ciphers_
+
 For products using symmetric block ciphers:
 
   - Advanced Encryption Standard (AES) is recommended for new code.
@@ -51,6 +52,7 @@ decrypting existing data for the sake of backward-compatibility, and
 data should be re-encrypted using a recommended block cipher.
 
 _Cipher Modes_
+
 Symmetric algorithms can operate in a variety of modes, most of which
 link together the encryption operations on successive blocks of
 plaintext and ciphertext.
@@ -91,6 +93,7 @@ modes are used:
   - Anything else not on the "recommended" list above
 
 _Initialization Vectors (IV)_
+
 All symmetric block ciphers should also be used with a cryptographically
 strong random number as an initialization vector. Initialization vectors
 should never be a constant value. See Random Number Generators for
@@ -456,6 +459,7 @@ accounts and computers:
     ](https://azure.microsoft.com/en-us/services/key-vault/)
 
 _SQL Server TDE_
+
 You can use SQL Server Transparent Data Encryption (TDE) to protect
 sensitive data.
 
@@ -490,6 +494,7 @@ should keep in mind:
     for more details.
 
 _Credential Management_
+
 Use the [<span class="underline">Windows Credential Manager
 API</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374731.aspx#credentials_management_functions)
 or [<span class="underline">Microsoft Azure
@@ -497,6 +502,7 @@ KeyVault</span>](https://azure.microsoft.com/en-us/services/key-vault/)
 to protect password and credential data.
 
 _Windows Store Apps_ 
+
 Use the classes in the [<span class="underline">Windows.Security.Cryptography</span>](https://msdn.microsoft.com/en-us/library/windows/apps/windows.security.cryptography.aspx)
 and
 [<span class="underline">Windows.Security.Cryptography.DataProtection</span>](https://msdn.microsoft.com/en-us/library/windows/apps/windows.security.cryptography.dataprotection.aspx)
@@ -515,6 +521,7 @@ Use the classes in the
 namespace to protect password and credential data.
 
 _.NET_
+
 For data that needs to be persisted across system reboots:
 
   - ProtectedData.Protect

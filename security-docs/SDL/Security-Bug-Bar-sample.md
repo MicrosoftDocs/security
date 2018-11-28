@@ -11,16 +11,16 @@ section.
 
 **On This Page**
 
-Server  
+[Server](#Server)  
 [Client](#Client)  
 [Definitions of Terms](#Definition_of_Terms)
 
 <table>
 <thead>
-<tr class="header">
-<th><p><span id="Server" class="anchor"></span>Server<br />
+<tr class="header" colspan="2">
+<th><p><span id="Server" class="anchor"></span>Server<br /></th>
 Please refer to the <a href="#denial-of-service-server-matrix">Denial of Service Matrix</a> for a complete matrix of server DoS scenarios.</p>
-<p>The server bar is usually not appropriate when user interaction is part of the exploitation process. If a Critical vulnerability exists only on server products, and is exploited in a way that requires user interaction and results in the compromise of the server, the severity may be reduced from Critical to Important in accordance with the NEAT/data definition of extensive user interaction presented at the start of the client severity pivot.</p></th>
+<p>The server bar is usually not appropriate when user interaction is part of the exploitation process. If a Critical vulnerability exists only on server products, and is exploited in a way that requires user interaction and results in the compromise of the server, the severity may be reduced from Critical to Important in accordance with the NEAT/data definition of extensive user interaction presented at the start of the client severity pivot.</p>
 </tr>
 </thead>
 <tbody>
@@ -183,7 +183,7 @@ Note that a vulnerability in a security feature is rated “Important” by defa
 <ul>
 <li><p>Example:</p>
 <ul>
-<li><p>Targeted disclosure of anonymous data—see the M<a href="http://twc/Privacy/Shared%20Documents/MSPrivacyStandard.doc">icrosoft Privacy Standard for Development (MPSD)</a> for detailed <em>definitions of anonymous data</em></p></li>
+<li><p>Targeted disclosure of anonymous data—see the <a href="http://twc/Privacy/Shared%20Documents/MSPrivacyStandard.doc">Microsoft Privacy Standard for Development (MPSD)</a> for detailed <em>definitions of anonymous data</em></p></li>
 <li><p>Targeted disclosure of the existence of a file</p></li>
 <li><p>Targeted disclosure of a file version number</p></li>
 </ul></li>
@@ -249,8 +249,8 @@ Note that a vulnerability in a security feature is rated “Important” by defa
 
 <table>
 <thead>
-<tr class="header">
-<th><p><span id="Client" class="anchor"></span>Client<br />
+<tr class="header" colspan="2">
+<th><p><span id="Client" class="anchor"></span>Client<br /></th>
 Extensive user action is defined as:</p>
 <ul>
 <li><p>&quot;User interaction&quot; can only happen in client-driven scenario.</p></li>
@@ -265,7 +265,7 @@ Extensive user action is defined as:</p>
 <li><p><strong>T</strong>ested (Has the warning been reviewed by multiple people, to make sure people understand how to respond to the warning?)</p></li>
 </ul></li>
 <li><p><strong>Clarification:</strong> Note that the effect of extensive user interaction is not one level reduction in severity, but is and has been a reduction in severity in certain circumstances where the phrase extensive user interaction appears in the bug bar. The intent is to help customers differentiate fast-spreading and wormable attacks from those, where because the user interacts, the attack is slowed down. This bug bar does not allow you to reduce the Elevation of Privilege below Important because of user interaction.</p></li>
-</ul></th>
+</ul>
 </tr>
 </thead>
 <tbody>

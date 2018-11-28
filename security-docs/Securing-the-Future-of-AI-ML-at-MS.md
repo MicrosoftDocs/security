@@ -1,3 +1,4 @@
+# Securing the Future of Artificial Intelligence and Machine Learning at Microsoft 
 By Andrew Marshall, Raul Rojas, Jay Stokes and Donald Brinkman
 
 Special Thanks to Mark Cartwright and Graham Calladine
@@ -12,8 +13,7 @@ This document does not provide you with any legal rights to any
 intellectual property in any Microsoft product. You may copy and use
 this document for your internal, reference purposes.
 
-# Executive Summary
-
+## Executive Summary
 Artificial Intelligence (AI) and Machine Learning (ML) are already
 making a big impact on how people work, socialize, and live their lives.
 As consumption of products and services built around AI/ML increases,
@@ -83,8 +83,7 @@ AI decision-making processes at a mathematical level. From a security
 perspective, this effectively means loss of control and a departure from
 Microsoft’s guiding principles on Artificial Intelligence .
 
-# New Security Engineering Challenges
-
+## New Security Engineering Challenges
 Traditional software attack vectors are still critical to address, but
 they do not provide sufficient coverage in the AI/ML threat landscape.
 The tech industry must avoid fighting next-gen issues with last-gen
@@ -137,7 +136,6 @@ discussed in detail
 below.
 
 ## AI requires new pivots to traditional secure design/secure operations models: the introduction of Resilience and Discretion
-
 AI designers will always need to ensure the confidentiality, integrity
 and availability of sensitive data, that the AI system is free of known
 vulnerabilities, and provide controls for the protection, detection and

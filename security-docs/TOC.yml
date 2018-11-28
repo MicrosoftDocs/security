@@ -12,9 +12,9 @@
   - name: SDL
     items:
     - name: Security Bug Bar (Sample) 
-      href: /security/SDL/Security-Bug-Bar-sample.md
+      href: SDL/security-bug-bar-sample.md
     - name: Microsoft SDL Cryptographic Recommendations 
-      href: /security/SDL/MS-SDL-Crypto-Recmd.md
+      href: SDL/MS-SDL-Crypto-Recmd.md
     - name: Read our getting started guide 
       href: /azure/security/azure-security-threat-modeling-tool-getting-started
     - name: Get familiar with the features

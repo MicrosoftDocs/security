@@ -500,5 +500,3 @@ truly democratized and augments the intelligence of all humanity.
   - > *Fernanda Viégas, Martin Wattenberg, Daniel Smilkov, James Wexler,
     > Jimbo Wilson, Nikhil Thorat, Charles Nicholson, Google Research:
     > Big Picture* <https://research.google.com/bigpicture/>
-
-<span id="_Appendix" class="anchor"></span>

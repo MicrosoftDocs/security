@@ -5,19 +5,19 @@ Principal Security Program Manager
 Microsoft Corporation
 
 #### Contributors/Thanks to
-Mark Cartwright
-Bryan Sullivan
-Patrick Jungles
-Michael Scovetta
-Tony Rice
-David LeBlanc
-Mortimer Cook
-Daniel Sommerfeld
-Andrei Popov
-Michiko Short
-Justin Burke
-Gov Maharaj
-Brad Turner
+Mark Cartwright  
+Bryan Sullivan  
+Patrick Jungles  
+Michael Scovetta  
+Tony Rice  
+David LeBlanc  
+Mortimer Cook  
+Daniel Sommerfeld  
+Andrei Popov  
+Michiko Short  
+Justin Burke  
+Gov Maharaj  
+Brad Turner  
 Sean Stevenson
 
 ###### This document is provided "as-is." Information and views expressed in this document, including URL and other Internet web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes. © 2017 Microsoft Corporation. All rights reserved.

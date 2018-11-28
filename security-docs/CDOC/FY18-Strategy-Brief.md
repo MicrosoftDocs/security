@@ -21,37 +21,37 @@ Microsoft has invested more than $15 billion in our cloud infrastructure, with o
 ### Cybersecurity threat actors and motivations
 The first step to protecting people, devices, data, and critical infrastructure is to understand the different types of threat actors and their motivations.
 
-   - **Cybercriminals** span several subcategories though they often share common motivations—financial, intelligence, and/or social or political gain. Their approach is usually direct—by infiltrating a financial-data system, skimming micro-amounts too small to detect and exiting before being discovered. Maintaining a persistent, clandestine presence is critical to meeting their objective.
+  - **Cybercriminals** span several subcategories though they often share common motivations—financial, intelligence, and/or social or political gain. Their approach is usually direct—by infiltrating a financial-data system, skimming micro-amounts too small to detect and exiting before being discovered. Maintaining a persistent, clandestine presence is critical to meeting their objective.
 
-   Their approach may be an intrusion that diverts a large financial payout through a labyrinth of accounts to evade tracking and intervention. At times, the goal is to steal intellectual property that the target possesses so the cybercriminal acts as an intermediary to deliver a product design, software source code, or other proprietary information that has value to a specific entity. More than half of these activities are perpetrated by organized criminal groups.
+  Their approach may be an intrusion that diverts a large financial payout through a labyrinth of accounts to evade tracking and intervention. At times, the goal is to steal intellectual property that the target possesses so the cybercriminal acts as an intermediary to deliver a product design, software source code, or other proprietary information that has value to a specific entity. More than half of these activities are perpetrated by organized criminal groups.
 
-   - **Nation-state actors** work for a government to disrupt or compromise targeted governments, organizations, or individuals to gain access to valuable data or intelligence. They are engaged in international affairs to influence and drive an outcome that may benefit a country or countries. A nation-state actor’s objective is to disrupt operations, conduct espionage against corporations, steal secrets from other governments, or otherwise undermine trust in institutions. They work with large resources at their disposal and without fear of legal retribution, with a toolkit that spans from simple to highly complex.
-    
-   Nation-state actors can attract some of the most sophisticated cyberhacking talent and may advance their tools to the point of weaponization. Their intrusion approach often involves an advanced persistent threat using supercomputing power to brute-force break credentials through millions of attempts at arriving at the correct password. They may also use hyper-targeted phishing attacks to attract an insider into revealing their credentials.
+  - **Nation-state actors** work for a government to disrupt or compromise targeted governments, organizations, or individuals to gain access to valuable data or intelligence. They are engaged in international affairs to influence and drive an outcome that may benefit a country or countries. A nation-state actor’s objective is to disrupt operations, conduct espionage against corporations, steal secrets from other governments, or otherwise undermine trust in institutions. They work with large resources at their disposal and without fear of legal retribution, with a toolkit that spans from simple to highly complex.
+  
+  Nation-state actors can attract some of the most sophisticated cyberhacking talent and may advance their tools to the point of weaponization. Their intrusion approach often involves an advanced persistent threat using supercomputing power to brute-force break credentials through millions of attempts at arriving at the correct password. They may also use hyper-targeted phishing attacks to attract an insider into revealing their credentials.
 
-   - **Insider** threats are particularly challenging due to the unpredictability of human behavior. The motivation for an insider maybe opportunistic and for financial gain. However, there are multiple causes for potential insider threats, spanning from simple carelessness to sophisticated schemes. Many data breaches resulting from insider threats are completely unintentional due to accidental or negligent activity that puts an organization at risk without being aware of the vulnerability.
+  - **Insider** threats are particularly challenging due to the unpredictability of human behavior. The motivation for an insider maybe opportunistic and for financial gain. However, there are multiple causes for potential insider threats, spanning from simple carelessness to sophisticated schemes. Many data breaches resulting from insider threats are completely unintentional due to accidental or negligent activity that puts an organization at risk without being aware of the vulnerability.
 
-    - **Hacktivists** focus on political and/or socially-motivated attacks. They strive to be visible and recognized in the news to draw attention to themselves and their cause. Their tactics include distributed denial-of-service (DDoS) attacks, vulnerability exploits or defacing an online presence. A connection to a social or political issue can make any company or organization a target. Social media enables hacktivists to quickly evangelize their cause and recruit others to participate.
+  - **Hacktivists** focus on political and/or socially-motivated attacks. They strive to be visible and recognized in the news to draw attention to themselves and their cause. Their tactics include distributed denial-of-service (DDoS) attacks, vulnerability exploits or defacing an online presence. A connection to a social or political issue can make any company or organization a target. Social media enables hacktivists to quickly evangelize their cause and recruit others to participate.
 
 ![](/security/media/FY18_CDOC_Strategy_Brief-005.jpg)
 ### Threat actor techniques 
 Adversaries are skilled at finding ways to penetrate an organization’s network despite the protections in place using various sophisticated techniques. Several tactics have been around since the early days of the Internet, though others reflect the creativity and increasing sophistication of today’s adversaries.
 
-   - **Social engineering** is a broad term for an attack that tricks users into acting or divulging information they would otherwise not do. Social engineering plays on the good intentions of most people and their willingness to be helpful, to avoid problems, to trust familiar sources, or to potentially gain a reward. Other attack vectors can fall under the umbrella of social engineering, but the following are some of the attributes that make social engineering tactics easier to recognize and defend against:
+  - **Social engineering** is a broad term for an attack that tricks users into acting or divulging information they would otherwise not do. Social engineering plays on the good intentions of most people and their willingness to be helpful, to avoid problems, to trust familiar sources, or to potentially gain a reward. Other attack vectors can fall under the umbrella of social engineering, but the following are some of the attributes that make social engineering tactics easier to recognize and defend against:
 
-       - **Phishing emails** are an effective tool because they play against the weakest link in the security chain—everyday users who don’t think about network security as top-of-mind. A phishing campaign may invite or frighten a user to inadvertently share their credentials by tricking them into clicking a link they believe is a legitimate site or downloading a file that contains malicious code. Phishing emails used to be poorly written and easy to recognize. Today, adversaries have become adept at mimicking legitimate emails and landing sites that are difficult to identify as fraudulent.
+      - **Phishing emails** are an effective tool because they play against the weakest link in the security chain—everyday users who don’t think about network security as top-of-mind. A phishing campaign may invite or frighten a user to inadvertently share their credentials by tricking them into clicking a link they believe is a legitimate site or downloading a file that contains malicious code. Phishing emails used to be poorly written and easy to recognize. Today, adversaries have become adept at mimicking legitimate emails and landing sites that are difficult to identify as fraudulent.
 
-        - **Identity spoofing** involves an adversary masquerading as another legitimate user by falsifying the information presented to an application or network resource. An example is an email that arrives seemingly bearing the address of a colleague requesting action, but the address is hiding the real source of the email sender. Similarly, a URL can be spoofed to appear as a legitimate site, but the actual IP address is actually pointing to a cybercriminal’s site.
+      - **Identity spoofing** involves an adversary masquerading as another legitimate user by falsifying the information presented to an application or network resource. An example is an email that arrives seemingly bearing the address of a colleague requesting action, but the address is hiding the real source of the email sender. Similarly, a URL can be spoofed to appear as a legitimate site, but the actual IP address is actually pointing to a cybercriminal’s site.
 
-   - Malware has been with us since the dawn of computing. Today, we’re seeing a strong up-tick in ransomware and malicious code specifically intended to encrypt devices and data. Cybercriminals then demand payment in cryptocurrency for the keys to unlock and return control to the victim. This can happen at an individual level to your computer and data files, or now more frequently, to an entire enterprise. The use of ransomware is particularly pronounced in the healthcare field, as the life-or-death consequences these organizations face make them highly sensitive to network downtime.
+  - Malware has been with us since the dawn of computing. Today, we’re seeing a strong up-tick in ransomware and malicious code specifically intended to encrypt devices and data. Cybercriminals then demand payment in cryptocurrency for the keys to unlock and return control to the victim. This can happen at an individual level to your computer and data files, or now more frequently, to an entire enterprise. The use of ransomware is particularly pronounced in the healthcare field, as the life-or-death consequences these organizations face make them highly sensitive to network downtime.
 
-   - **Supply chain insertion** is an example of a creative approach to injecting malware into a network. For example, by hijacking an application update process, an adversary circumvents anti-malware tools and protections. We are seeing this technique become more common and this threat will continue to grow until more comprehensive security protections are infused into software by application developers.
+  - **Supply chain insertion** is an example of a creative approach to injecting malware into a network. For example, by hijacking an application update process, an adversary circumvents anti-malware tools and protections. We are seeing this technique become more common and this threat will continue to grow until more comprehensive security protections are infused into software by application developers.
 
-   - **Man-in-the-middle** attacks involve an adversary inserting themselves between a user and a resource they are accessing, thereby intercepting critical information such as a user’s login credentials. For example, a cybercriminal in a coffee shop may employ key-logging software to capture a users’ domain credentials as they join the wifi network. The threat actor can then gain access to the user’s sensitive information, such as banking and personal information that they can use or sell on the dark web.
+  - **Man-in-the-middle** attacks involve an adversary inserting themselves between a user and a resource they are accessing, thereby intercepting critical information such as a user’s login credentials. For example, a cybercriminal in a coffee shop may employ key-logging software to capture a users’ domain credentials as they join the wifi network. The threat actor can then gain access to the user’s sensitive information, such as banking and personal information that they can use or sell on the dark web.
 
-   - **Distributed Denial of Service (DDoS)** attacks have been around more than a decade and are massive attacks are becoming more common with the rapid growth of the Internet of Things (IoT). When using this technique, an adversary overwhelms a site by bombarding it with malicious traffic that displaces legitimate queries. Previously planted malware is often used to hijack an IoT device such as a webcam or smart thermostat. In a DDoS attack, incoming traffic from different sources flood a network with numerous requests. This overwhelms servers and denies access from legitimate requests. Many attacks involve forging of IP sender addresses (IP address spoofing) also, so that the location of the attacking machines cannot easily be identified and defeated.
+  - **Distributed Denial of Service (DDoS)** attacks have been around more than a decade and are massive attacks are becoming more common with the rapid growth of the Internet of Things (IoT). When using this technique, an adversary overwhelms a site by bombarding it with malicious traffic that displaces legitimate queries. Previously planted malware is often used to hijack an IoT device such as a webcam or smart thermostat. In a DDoS attack, incoming traffic from different sources flood a network with numerous requests. This overwhelms servers and denies access from legitimate requests. Many attacks involve forging of IP sender addresses (IP address spoofing) also, so that the location of the attacking machines cannot easily be identified and defeated.
    
-   Often a denial of service attack is used to cover or distract from a more deceptive effort to penetrate an organization. In most cases, the objective of the adversary is to gain access to a network using compromised credentials, then move laterally across the network to gain access to more “powerful” credentials that are the keys to the most sensitive and valuable information within the organization.
+  Often a denial of service attack is used to cover or distract from a more deceptive effort to penetrate an organization. In most cases, the objective of the adversary is to gain access to a network using compromised credentials, then move laterally across the network to gain access to more “powerful” credentials that are the keys to the most sensitive and valuable information within the organization.
 
 ![](/security/media/FY18_CDOC_Strategy_Brief-006.jpg)
 ### The militarization of cyberspace
@@ -74,27 +74,27 @@ The CDOC teams’ protection measures span across all endpoints, from sensors an
 
 Microsoft’s protection tactics include:
 
-   - Extensive monitoring and controls over the physical environment of our global datacenters including cameras, personnel screening, fences and barriers, and multiple identification methods for physical access.
+  - Extensive monitoring and controls over the physical environment of our global datacenters including cameras, personnel screening, fences and barriers, and multiple identification methods for physical access.
 
-   - Software-defined networks that protect our cloud infrastructure from intrusions and DDoS attacks.
+  - Software-defined networks that protect our cloud infrastructure from intrusions and DDoS attacks.
 
-   - Multi-factor authentication is employed across our infrastructure to control identity and access management. It ensures that critical resources and data are protected by at least two of the following:
+  - Multi-factor authentication is employed across our infrastructure to control identity and access management. It ensures that critical resources and data are protected by at least two of the following:
 
-       - Something you know (password or PIN)
-       - Something you are (biometrics)
-       - Something you have (smartphone)
+    - Something you know (password or PIN)
+    - Something you are (biometrics)
+    - Something you have (smartphone)
 
-   - Non-persistent administration employs just-in-time (JIT) and just-enough administrator (JEA) privileges to engineering staff who manage infrastructure and services. This provides a unique set of credentials for elevated access that automatically expires after a pre-designated duration.
+  - Non-persistent administration employs just-in-time (JIT) and just-enough administrator (JEA) privileges to engineering staff who manage infrastructure and services. This provides a unique set of credentials for elevated access that automatically expires after a pre-designated duration.
 
-   - Proper hygiene is rigorously maintained through up-to-date, anti-malware software and adherence to strict patching and configuration management.
-    
-   - Microsoft Malware Protection Center’s team of researchers identify, reverse engineer, and develop malware signatures and then deploy them across our infrastructure for advanced detection and defense. These signatures are distributed to our responders, customers and the industry through Windows Updates and notifications to protect their devices.
-    
-   - Microsoft Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. The SDL is used to harden all applications, online services and products, and to routinely validate its effectiveness through penetration testing and vulnerability scanning.
-    
-   - Threat modeling and attack surface analysis ensures that potential threats are assessed, exposed aspects of the service are evaluated, and the attack surface is minimized by restricting services or eliminating unnecessary functions.
+  - Proper hygiene is rigorously maintained through up-to-date, anti-malware software and adherence to strict patching and configuration management.
+  
+  - Microsoft Malware Protection Center’s team of researchers identify, reverse engineer, and develop malware signatures and then deploy them across our infrastructure for advanced detection and defense. These signatures are distributed to our responders, customers and the industry through Windows Updates and notifications to protect their devices.
+  
+  - Microsoft Security Development Lifecycle (SDL) is a software development process that helps developers build more secure software and address security compliance requirements while reducing development cost. The SDL is used to harden all applications, online services and products, and to routinely validate its effectiveness through penetration testing and vulnerability scanning.
+  
+  - Threat modeling and attack surface analysis ensures that potential threats are assessed, exposed aspects of the service are evaluated, and the attack surface is minimized by restricting services or eliminating unnecessary functions.
 
-   - Classifying data according to its sensitivity and taking the appropriate measures to protect it, including encryption in transit and at rest, and enforcing the principle of least-privilege access provides additional protection. • Awareness training that fosters a trust relationship between the user and the security team to develop an environment where users will report incidents and anomalies without fear of repercussion.
+  - Classifying data according to its sensitivity and taking the appropriate measures to protect it, including encryption in transit and at rest, and enforcing the principle of least-privilege access provides additional protection. • Awareness training that fosters a trust relationship between the user and the security team to develop an environment where users will report incidents and anomalies without fear of repercussion.
 
 Having a rich set of controls and a defense-in-depth strategy helps ensure that should any one area fail, there are compensating controls in other areas to help maintain the security and privacy of our customers, cloud services, and our own infrastructure. However, no environment is truly impenetrable, as people will make errors and determined adversaries will continue to look for vulnerabilities and exploit them. The significant investments we continue to make in these protection layers and baseline analysis enables us to rapidly detect when abnormal activity is present.
 
@@ -106,21 +106,21 @@ The CDOC teams employ automated software, machine learning, behavioral analysis,
 
 Our extensive investments in security analytics build rich behavioral profiles and predictive models that allow us to “connect the dots” and identify advanced threats that might otherwise have gone undetected, then counter with strong containment and coordinated remediation activities.
 
-Microsoft also employs custom-developed security software, along with industryleading tools and machine learning. Our threat intelligence is continually evolving, with automated data-enrichment to more rapidly detect malicious activity and report with high fidelity. Vulnerability scans are performed regularly to test and refine the effectiveness of protective measures. The breadth of Microsoft’s investment in its security ecosystem and the variety of signals monitored by the CDOC teams provide a more comprehensive threat view than can be achieved by most service providers. 
+Microsoft also employs custom-developed security software, along with industryleading tools and machine learning. Our threat intelligence is continually evolving, with automated data-enrichment to more rapidly detect malicious activity and report with high fidelity. Vulnerability scans are performed regularly to test and refine the effectiveness of protective measures. The breadth of Microsoft’s investment in its security ecosystem and the variety of signals monitored by the CDOC teams provide a more comprehensive threat view than can be achieved by most service providers.
 
 Microsoft’s detection tactics include:
 
-   - Monitoring network and physical environments 24x7x365 for potential cybersecurity events. Behavior profiling is based on usage patterns and an understanding of unique threats to our services.
-    
-   - Identity and behavioral analytics are developed to highlight abnormal activity.
-    
-   - Machine learning software tools and techniques are routinely used to discover and flag irregularities.
-    
-   - Advanced analytical tools and processes are deployed to further identify anomalous activity and innovative correlation capabilities. This enables highlycontextualized detections to be created from the enormous volumes of data in near real-time.
+  - Monitoring network and physical environments 24x7x365 for potential cybersecurity events. Behavior profiling is based on usage patterns and an understanding of unique threats to our services.
+  
+  - Identity and behavioral analytics are developed to highlight abnormal activity.
+  
+  - Machine learning software tools and techniques are routinely used to discover and flag irregularities.
+  
+  - Advanced analytical tools and processes are deployed to further identify anomalous activity and innovative correlation capabilities. This enables highlycontextualized detections to be created from the enormous volumes of data in near real-time.
 
-   - Automated software-based processes that are continuously audited and evolved for increased effectiveness.
-    
-   - Data scientists and security experts routinely work side-by-side to address escalated events that exhibit unusual characteristics requiring further analysis of targets. They can then determine potential response and remediation efforts.
+  - Automated software-based processes that are continuously audited and evolved for increased effectiveness.
+  
+  - Data scientists and security experts routinely work side-by-side to address escalated events that exhibit unusual characteristics requiring further analysis of targets. They can then determine potential response and remediation efforts.
 
 ## RESPOND
 ![](/security/media/FY18_CDOC_Strategy_Brief-009.jpg)
@@ -132,17 +132,17 @@ To manage security incidents at such a massive scale, we deploy a tiered system 
 
 Microsoft’s response tactics include:
 
-   - Automated response systems use risk-based algorithms to flag events requiring human intervention.
-    
-   - Well-defined, documented, and scalable incident response processes within a continuous improvement model helps to keep us ahead of adversaries by making these available to all responders.
-    
-   - Subject matter expertise across our teams, in multiple security areas, provides a diverse skill set for addressing incidents. Security expertise in incident response, forensics, and intrusion analysis; and a deep understanding of the platforms, services, and applications operating in our cloud datacenters.
-    
-   - Wide enterprise searching across cloud, hybrid and on-premises data and systems to determine the scope of an incident.
-    
-   - Deep forensic analysis for major threats are performed by specialists to understand incidents and to aid in their containment and eradication. • Microsoft’s security software tools, automation and hyper-scale cloud infrastructure enable our security experts to reduce the time to detect, investigate, analyze, respond, and recover from cyberattacks.
-    
-    - Penetration testing is employed across all Microsoft products and services through ongoing Red Team/Blue Team exercises to unearth vulnerabilities before a real adversary can leverage those weak points for an attack.
+  - Automated response systems use risk-based algorithms to flag events requiring human intervention.
+  
+  - Well-defined, documented, and scalable incident response processes within a continuous improvement model helps to keep us ahead of adversaries by making these available to all responders.
+  
+  - Subject matter expertise across our teams, in multiple security areas, provides a diverse skill set for addressing incidents. Security expertise in incident response, forensics, and intrusion analysis; and a deep understanding of the platforms, services, and applications operating in our cloud datacenters.
+  
+  - Wide enterprise searching across cloud, hybrid and on-premises data and systems to determine the scope of an incident.
+  
+  - Deep forensic analysis for major threats are performed by specialists to understand incidents and to aid in their containment and eradication. • Microsoft’s security software tools, automation and hyper-scale cloud infrastructure enable our security experts to reduce the time to detect, investigate, analyze, respond, and recover from cyberattacks.
+  
+  - Penetration testing is employed across all Microsoft products and services through ongoing Red Team/Blue Team exercises to unearth vulnerabilities before a real adversary can leverage those weak points for an attack.
 
 ### Cyberdefense for our customers
 We are often asked what tools and processes our customers can adopt for their own environment and how Microsoft might help in their implementation. Microsoft has consolidated many of the cyberdefense products and services we use in the CDOC into a range of products and services. The Microsoft Enterprise Cybersecurity Group and Microsoft Consulting Services teams engage with our customers to deliver the solutions most appropriate for their specific needs and requirements. 

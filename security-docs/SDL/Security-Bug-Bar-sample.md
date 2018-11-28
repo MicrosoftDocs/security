@@ -25,7 +25,7 @@ Please refer to the <a href="#denial-of-service-server-matrix">Denial of Service
 </thead>
 <tbody>
 <tr class="odd">
-<td>Critcal</td>
+<td>Critical</td>
 <td><p>Server summary: Network worms or <em>unavoidable</em> cases where the server is “owned.”</p>
 <ul>
 <li><p>Elevation of privilege: The ability to either execute arbitrary code <em>or</em> obtain more privilege than authorized</p>

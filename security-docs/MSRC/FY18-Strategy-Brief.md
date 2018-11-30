@@ -1,13 +1,13 @@
 # Microsoft Cybersecurity Defense Operations Center
-![] (/security/media/FY18CDOC_StrategyBrief_1.png)
+![](/security/media/FY18CDOC_StrategyBrief_1.png)
 Cybersecurity is a shared responsibility, which impacts us all. Today, a single breach, physical or virtual, can cause millions of dollars of damage to an organization and potentially billions in financial losses to the global economy. Every day, we see reports of cybercriminals targeting businesses and individuals for financial gain or socially-motivated purposes. Add to these threats those by nation-state actors seeking to disrupt operations, conduct espionage, or generally undermine trust.
 
 In this brief, we share the state of online security, threat actors and the sophisticated tactics they employ to advance their goals, and how Microsoft’s Cyber Defense Operations Center combats these threats and helps customers protect their sensitive applications and data.
 
-<table cellspacing="1">
+<table cellpadding="1">
 <tbody>
 <tr>
-<td><p><img src="/security/media/FY18CDOC_StrategyBrief_2.png"></p></td>
+<td><br><br><img src="/security/media/FY18CDOC_StrategyBrief_2.png"></td>
 <td valign="top">
 <h3>The Microsoft Cyber Defense Operations Center</h3>
 Microsoft is deeply committed to making the online world safer for everyone. Our company’s cybersecurity strategies have evolved from the unique visibility we have into the rapidly evolving cyberthreat landscape.
@@ -26,7 +26,7 @@ The first step to protecting people, devices, data, and critical infrastructure 
 </td>
 </tr>
 <tr>
-<td><p><img src="/security/media/FY18CDOC_StrategyBrief_3.png"></p></td>
+<td><br><br><img src="/security/media/FY18CDOC_StrategyBrief_3.png"></td>
 <td valign="top">
 <h3>Threat actor techniques</h3>
 <p>Adversaries are skilled at finding ways to penetrate an organization’s network despite the protections in place using various sophisticated techniques. Several tactics have been around since the early days of the Internet, though others reflect the creativity and increasing sophistication of today’s adversaries.</p>
@@ -41,7 +41,7 @@ The first step to protecting people, devices, data, and critical infrastructure 
 </ul>
 </td>
 <tr>
-<td><p><img src="/security/media/FY18CDOC_StrategyBrief_4.png"></p></td>
+<td><br><br><img src="/security/media/FY18CDOC_StrategyBrief_4.png"></td>
 <td valign="top">
 <h3>The militarization of cyberspace</h3>
 <p>The growing possibility of cyberwarfare is one of the leading concerns among governments and citizens today. It involves nation-states using and targeting computers and networks in warfare.</p>
@@ -123,24 +123,24 @@ The first step to protecting people, devices, data, and critical infrastructure 
 <th>Invest in your people</th>
 </tr>
 <tr>
-<td><em>Agility and scalability require planning and building enabling platform</em></td>
-<td><em>Ensure you are exhaustively measuring the elements in your platform</em></td>
-<td><em>Skilled analysts and data scientists are the foundation of defense, while users are the new security perimeter</em></td>
+<td bgcolor="#f2f2f2"><em>Agility and scalability require planning and building enabling platform</em></td>
+<td bgcolor="#f2f2f2"><em>Ensure you are exhaustively measuring the elements in your platform</em></td>
+<td bgcolor="#f2f2f2"><em>Skilled analysts and data scientists are the foundation of defense, while users are the new security perimeter</em></td>
 </tr>
 <tr>
-<td bgcolor="#f2f2f2">Maintain a well-documented inventory of your assets</td>
-<td bgcolor="#f2f2f2">Acquire and/or build the tools needed to fully monitor your network, hosts, and logs</td>
-<td bgcolor="#f2f2f2">Establsih relationships and lines of communication between the incident response team and other groups</td>
+<td>Maintain a well-documented inventory of your assets</td>
+<td>Acquire and/or build the tools needed to fully monitor your network, hosts, and logs</td>
+<td>Establsih relationships and lines of communication between the incident response team and other groups</td>
 </tr>
 <tr>
-<td>Have a well-defined security policy with clear standards and guidance for your organization</td>
-<td>Proactively maintain controls and measures, and regularly test them for accuracy and effectiveness</td>
-<td>Adopt least privilege administrator principles; eliminate persistent administrator rights</td>
+<td bgcolor="#f2f2f2">Have a well-defined security policy with clear standards and guidance for your organization</td>
+<td bgcolor="#f2f2f2">Proactively maintain controls and measures, and regularly test them for accuracy and effectiveness</td>
+<td bgcolor="#f2f2f2">Adopt least privilege administrator principles; eliminate persistent administrator rights</td>
 </tr>
 <tr>
-<td bgcolor="#f2f2f2">Maintain proper hygiene—most attacks could be prevented with timely patches and antivirus</td>
-<td bgcolor="#f2f2f2">Maintain tight control over change management policies</td>
-<td bgcolor="#f2f2f2">Use the lessons-learned process to gain value from every major incident</td>
+<td>Maintain proper hygiene—most attacks could be prevented with timely patches and antivirus</td>
+<td>Maintain tight control over change management policies</td>
+<td>Use the lessons-learned process to gain value from every major incident</td>
 </tr>
 <tr>
 <td bgcolor="#f2f2f2">Employ multi-factor authentication to strengthen protection of accounts and device</td>
@@ -153,6 +153,6 @@ The first step to protecting people, devices, data, and critical infrastructure 
 </tbody>
 </table> 
 
-#### The following individuals contributed to this strategy brief: Alex Harmon, Bryan Casper, Cory Gehr, John Dellinger, Monica Drake, Brian Hooper, Kristina Laidler, Cory Marchand, Steven Meyers, Phillip Misner, Ben Ridgway, Joanna Sharpe, Darrell West, and Hannah West.
+##### The following individuals contributed to this strategy brief: Alex Harmon, Bryan Casper, Cory Gehr, John Dellinger, Monica Drake, Brian Hooper, Kristina Laidler, Cory Marchand, Steven Meyers, Phillip Misner, Ben Ridgway, Joanna Sharpe, Darrell West, and Hannah West.
 
 ##### © 2018 Microsoft Corporation. All rights reserved. This document is for informational purposes only. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS SUMMARY. 

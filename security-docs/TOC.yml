@@ -1,4 +1,4 @@
-- name: Security Engineering
+- name: Security
   displayName: Home
   href: index.md
   expanded: true
@@ -9,7 +9,7 @@
     href: Securing-the-Future-of-AI-ML-at-MS.md
   - name: Solving the TLS 1.0 Problem
     href: Solving-TLS1-Problem.md
-  - name: SDL
+  - name: Security Development Lifecycle
     items:
     - name: Security Bug Bar (Sample) 
       href: SDL/security-bug-bar-sample.md
@@ -29,7 +29,7 @@
       href: /visualstudio/code-quality/install-fxcop-analyzers?view=vs-2017
     - name:	Using Azure Security Center for an incident response 
       href: /azure/security-center/security-center-incident-response
-  - name: OSA
+  - name: Operational Security Assurance
     items:
     - name:	Azure Multi-Factor Authentication
       href: /azure/active-directory/authentication/concept-mfa-howitworks
@@ -59,13 +59,13 @@
       href: /enterprise-mobility-security/
     - name:	Azure DDoS Protection Standard overview
       href: /azure/virtual-network/ddos-protection-overview
-  - name: DevSecOps
+  - name: Security DevOps
     items: 
     - name:	Use the Key Vault Connected Service
       href: /azure/key-vault/vs-key-vault-add-connected-service
     - name:	Advanced Threat Detection
       href: /azure/security/azure-threat-detection
-  - name: CDOC
+  - name: Cyber Defense Operations Center
     items:
     - name: FY18 CDOC Strategy Brief
-      href: CDOC/FY18-Strategy-Brief.md
+      href: MSRC/FY18-Strategy-Brief.md

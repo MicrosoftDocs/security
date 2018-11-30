@@ -19,7 +19,7 @@ section.
 <thead>
 <tr class="header" colspan="2">
 <th><p><span id="Server" class="anchor"></span>Server<br /></th>
-Please refer to the <a href="#denial-of-service-server-matrix">Denial of Service Matrix</a> for a complete matrix of server DoS scenarios.</p>
+<p>Please refer to the <a href="#denial-of-service-server-matrix">Denial of Service Matrix</a> for a complete matrix of server DoS scenarios.</p>
 <p>The server bar is usually not appropriate when user interaction is part of the exploitation process. If a Critical vulnerability exists only on server products, and is exploited in a way that requires user interaction and results in the compromise of the server, the severity may be reduced from Critical to Important in accordance with the NEAT/data definition of extensive user interaction presented at the start of the client severity pivot.</p>
 </tr>
 </thead>

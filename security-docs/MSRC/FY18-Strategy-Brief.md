@@ -1,49 +1,33 @@
 # Microsoft Cybersecurity Defense Operations Center
 
-<table>
-<tbody>
-<tr>
-<td><img src="/security/media/FY18CDOC_StrategyBrief_1.png"></td>
-<td valign="top">Cybersecurity is a shared responsibility, which impacts us all. Today, a single breach, physical or virtual, can cause millions of dollars of damage to an organization and potentially billions in financial losses to the global economy. Every day, we see reports of cybercriminals targeting businesses and individuals for financial gain or socially-motivated purposes. Add to these threats those by nation-state actors seeking to disrupt operations, conduct espionage, or generally undermine trust.</td>
-</tr>
-</tbody>
-</table>
+![](/security/media/FY18CDOC_StrategyBrief_1.png")
+Cybersecurity is a shared responsibility, which impacts us all. Today, a single breach, physical or virtual, can cause millions of dollars of damage to an organization and potentially billions in financial losses to the global economy. Every day, we see reports of cybercriminals targeting businesses and individuals for financial gain or socially-motivated purposes. Add to these threats those by nation-state actors seeking to disrupt operations, conduct espionage, or generally undermine trust.
 
 In this brief, we share the state of online security, threat actors and the sophisticated tactics they employ to advance their goals, and how Microsoft’s Cyber Defense Operations Center combats these threats and helps customers protect their sensitive applications and data.
 
-### The Microsoft Cyber Defense Operations Center
 <table>
 <tbody>
 <tr>
 <td><img src="/security/media/FY18CDOC_StrategyBrief_2.png"></td>
 <td valign="top">
-Microsoft is deeply committed to making the online world safer for everyone. Our company’s cybersecurity strategies have evolved from the unique visibility we have into the rapidly evolving cyberthreat landscape.</td>
+<h2>The Microsoft Cyber Defense Operations Center</h2>
+Microsoft is deeply committed to making the online world safer for everyone. Our company’s cybersecurity strategies have evolved from the unique visibility we have into the rapidly evolving cyberthreat landscape.
+<p>Innovation in the attack space across people, places, and processes is a necessary and continual investment we all need to make, as adversaries continue to evolve in both determination and sophistication. In response to increased investments in defense strategies by many organizations, attackers are adapting and improving tactics at breakneck speed.
+Fortunately, cyberdefenders like Microsoft’s global information security teams are also innovating and disrupting long-reliable attack methods with ongoing, advanced training and modern security technologies, tools, and processes.</p>
+<p>The Microsoft Cyber Defense Operations Center (CDOC) is one example of the more than $1 billion we invest each year on security, data protection, and risk management. The CDOC brings together cybersecurity specialists and data scientists in a 24x7 facility to combat threats in real-time.  We are connected to more than 3,500 security professionals globally across our product development teams, information security groups, and legal teams to protect our cloud infrastructure and services, products and devices, and internal resources.</p>
+<p>Microsoft has invested more than $15 billion in our cloud infrastructure, with over 90 percent of Fortune 500 companies using the Microsoft cloud. Today, we own and operate one of the world’s largest cloud footprints with more than 100 geo-distributed datacenters, 200 cloud services, millions of devices, and a billion customers around the globe.</p>
+<h2>Cybersecurity threat actors and motivations</h2>
+The first step to protecting people, devices, data, and critical infrastructure is to understand the different types of threat actors and their motivations.
+<ul>
+<li><b>Cybercriminals</b> span several subcategories though they often share common motivations—financial, intelligence, and/or social or political gain. Their approach is usually direct—by infiltrating a financial-data system, skimming micro-amounts too small to detect and exiting before being discovered. Maintaining a persistent, clandestine presence is critical to meeting their objective.<br><br>Their approach may be an intrusion that diverts a large financial payout through a labyrinth of accounts to evade tracking and intervention. At times, the goal is to steal intellectual property that the target possesses so the cybercriminal acts as an intermediary to deliver a product design, software source code, or other proprietary information that has value to a specific entity. More than half of these activities are perpetrated by organized criminal groups.</li>
+<li><b>Nation-state actors</b> work for a government to disrupt or compromise targeted governments, organizations, or individuals to gain access to valuable data or intelligence. They are engaged in international affairs to influence and drive an outcome that may benefit a country or countries. A nation-state actor’s objective is to disrupt operations, conduct espionage against corporations, steal secrets from other governments, or otherwise undermine trust in institutions. They work with large resources at their disposal and without fear of legal retribution, with a toolkit that spans from simple to highly complex.<br><br>Nation-state actors can attract some of the most sophisticated cyberhacking talent and may advance their tools to the point of weaponization. Their intrusion approach often involves an advanced persistent threat using supercomputing power to brute-force break credentials through millions of attempts at arriving at the correct password. They may also use hyper-targeted phishing attacks to attract an insider into revealing their credentials.</li>
+<li><b>Insider</b> threats are particularly challenging due to the unpredictability of human behavior. The motivation for an insider maybe opportunistic and for financial gain. However, there are multiple causes for potential insider threats, spanning from simple carelessness to sophisticated schemes. Many data breaches resulting from insider threats are completely unintentional due to accidental or negligent activity that puts an organization at risk without being aware of the vulnerability.</li>
+<li><b>Hacktivists</b> focus on political and/or socially-motivated attacks. They strive to be visible and recognized in the news to draw attention to themselves and their cause. Their tactics include distributed denial-of-service (DDoS) attacks, vulnerability exploits or defacing an online presence. A connection to a social or political issue can make any company or organization a target. Social media enables hacktivists to quickly evangelize their cause and recruit others to participate.</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
-
-Innovation in the attack space across people, places, and processes is a necessary and continual investment we all need to make, as adversaries continue to evolve in both determination and sophistication. In response to increased investments in defense strategies by many organizations, attackers are adapting and improving tactics at breakneck speed.
-
-Fortunately, cyberdefenders like Microsoft’s global information security teams are also innovating and disrupting long-reliable attack methods with ongoing, advanced training and modern security technologies, tools, and processes.
-
-The Microsoft Cyber Defense Operations Center (CDOC) is one example of the more than $1 billion we invest each year on security, data protection, and risk management. The CDOC brings together cybersecurity specialists and data scientists in a 24x7 facility to combat threats in real-time.  We are connected to more than 3,500 security professionals globally across our product development teams, information security groups, and legal teams to protect our cloud infrastructure and services, products and devices, and internal resources.
-
-Microsoft has invested more than $15 billion in our cloud infrastructure, with over 90 percent of Fortune 500 companies using the Microsoft cloud. Today, we own and operate one of the world’s largest cloud footprints with more than 100 geo-distributed datacenters, 200 cloud services, millions of devices, and a billion customers around the globe.
-
-### Cybersecurity threat actors and motivations
-The first step to protecting people, devices, data, and critical infrastructure is to understand the different types of threat actors and their motivations.
-
-  - **Cybercriminals** span several subcategories though they often share common motivations—financial, intelligence, and/or social or political gain. Their approach is usually direct—by infiltrating a financial-data system, skimming micro-amounts too small to detect and exiting before being discovered. Maintaining a persistent, clandestine presence is critical to meeting their objective.
-
-    Their approach may be an intrusion that diverts a large financial payout through a labyrinth of accounts to evade tracking and intervention. At times, the goal is to steal intellectual property that the target possesses so the cybercriminal acts as an intermediary to deliver a product design, software source code, or other proprietary information that has value to a specific entity. More than half of these activities are perpetrated by organized criminal groups.
-
-  - **Nation-state actors** work for a government to disrupt or compromise targeted governments, organizations, or individuals to gain access to valuable data or intelligence. They are engaged in international affairs to influence and drive an outcome that may benefit a country or countries. A nation-state actor’s objective is to disrupt operations, conduct espionage against corporations, steal secrets from other governments, or otherwise undermine trust in institutions. They work with large resources at their disposal and without fear of legal retribution, with a toolkit that spans from simple to highly complex.
-  
-    Nation-state actors can attract some of the most sophisticated cyberhacking talent and may advance their tools to the point of weaponization. Their intrusion approach often involves an advanced persistent threat using supercomputing power to brute-force break credentials through millions of attempts at arriving at the correct password. They may also use hyper-targeted phishing attacks to attract an insider into revealing their credentials.
-
-  - **Insider** threats are particularly challenging due to the unpredictability of human behavior. The motivation for an insider maybe opportunistic and for financial gain. However, there are multiple causes for potential insider threats, spanning from simple carelessness to sophisticated schemes. Many data breaches resulting from insider threats are completely unintentional due to accidental or negligent activity that puts an organization at risk without being aware of the vulnerability.
-
-  - **Hacktivists** focus on political and/or socially-motivated attacks. They strive to be visible and recognized in the news to draw attention to themselves and their cause. Their tactics include distributed denial-of-service (DDoS) attacks, vulnerability exploits or defacing an online presence. A connection to a social or political issue can make any company or organization a target. Social media enables hacktivists to quickly evangelize their cause and recruit others to participate.
 
 ![](/security/media/FY18CDOC_StrategyBrief_3.png)
 ### Threat actor techniques 
@@ -171,3 +155,7 @@ Building on this foundation, customers can then leverage solutions proven succes
 | Have a well-defined security policy with clear standards and guidance for your organization | Proactively maintain controls and measures, and regularly test them for accuracy and effectiveness | Adopt least privilege administrator principles; eliminate persistent administrator rights |
 | Maintain proper hygiene—most attacks could be prevented with timely patches and antivirus | Maintain tight control over change management policies | Use the lessons-learned process to gain value from every major incident |
 | Employ multi-factor authentication to strengthen protection of accounts and device | Monitor for abnormal account and credential activity to detect abuse | Enlist, educate, and empower users to recognize likely threats and their own role in protecting business data |
+
+#### The following individuals contributed to this strategy brief: Alex Harmon, Bryan Casper, Cory Gehr, John Dellinger, Monica Drake, Brian Hooper, Kristina Laidler, Cory Marchand, Steven Meyers, Phillip Misner, Ben Ridgway, Joanna Sharpe, Darrell West, and Hannah West.
+
+##### © 2018 Microsoft Corporation. All rights reserved. This document is for informational purposes only. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS SUMMARY. 

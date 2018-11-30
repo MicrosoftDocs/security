@@ -1,9 +1,16 @@
-![](/security/media/FY18CDOC_StrategyBrief_1.png)
-Cybersecurity is a shared responsibility, which impacts us all. Today, a single breach, physical or virtual, can cause millions of dollars of damage to an organization and potentially billions in financial losses to the global economy. Every day, we see reports of cybercriminals targeting businesses and individuals for financial gain or socially-motivated purposes. Add to these threats those by nation-state actors seeking to disrupt operations, conduct espionage, or generally undermine trust.
+# Microsoft Cybersecurity Defense Operations Center
+
+<table>
+<tbody>
+<tr>
+<td><img src="/security/media/FY18CDOC_StrategyBrief_1.png">Cybersecurity is a shared responsibility, which impacts us all. Today, a single breach, physical or virtual, can cause millions of dollars of damage to an organization and potentially billions in financial losses to the global economy. Every day, we see reports of cybercriminals targeting businesses and individuals for financial gain or socially-motivated purposes. Add to these threats those by nation-state actors seeking to disrupt operations, conduct espionage, or generally undermine trust.</td>
+</tr>
+</tbody>
+</table>
 
 In this brief, we share the state of online security, threat actors and the sophisticated tactics they employ to advance their goals, and how Microsoft’s Cyber Defense Operations Center combats these threats and helps customers protect their sensitive applications and data.
 
-![](/security/media/FY18CDOC_StrategyBrief_2.png) 
+![](/security/media/FY18CDOC_StrategyBrief_2.png)
 ### The Microsoft Cyber Defense Operations Center
 Microsoft is deeply committed to making the online world safer for everyone. Our company’s cybersecurity strategies have evolved from the unique visibility we have into the rapidly evolving cyberthreat landscape.
 

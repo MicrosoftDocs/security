@@ -1,3 +1,13 @@
+---
+layout: LandingPage
+title: Microsoft SDL Cryptographic Recommendations 
+description: This document contains recommendations and best practices for using encryption on Microsoft platforms.
+ms.date: 12/3/2018
+ms.service: security
+ms.author: bcowper
+ms.topic: conceptual
+---
+
 # Microsoft SDL Cryptographic Recommendations
 
 ## Introduction
@@ -362,9 +372,9 @@ to a message that allows its recipient to verify both the authenticity
 of the sender and the integrity of the message using a secret key.
 
 The use of either a hash-based MAC
-([<span class="underline">HMAC</span>)](http://csrc.nist.gov/publications/nistpubs/800-107-rev1/sp800-107-rev1.pdf)
+([<span class="underline">HMAC</span>)](https://csrc.nist.gov/publications/nistpubs/800-107-rev1/sp800-107-rev1.pdf)
 or [<span class="underline">block-cipher-based
-MAC</span>](http://csrc.nist.gov/publications/nistpubs/800-38B/SP_800-38B.pdf)
+MAC</span>](https://csrc.nist.gov/publications/nistpubs/800-38B/SP_800-38B.pdf)
 is recommended as long as all underlying hash or symmetric encryption
 algorithms are also recommended for use; currently this includes the
 HMAC-SHA2 functions (HMAC-SHA256, HMAC-SHA384 and HMAC-SHA512).

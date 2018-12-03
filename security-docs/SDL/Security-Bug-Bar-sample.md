@@ -1,3 +1,13 @@
+---
+layout: LandingPage
+title: SDL Security Bug Bar (Sample)
+description: This sample document is for illustration purposes only.
+ms.date: 12/3/2018
+ms.service: security
+ms.author: bcowper
+ms.topic: conceptual
+---
+
 # SDL Security Bug Bar (Sample)
 
 **Note:** This sample document is for illustration purposes only. The
@@ -565,7 +575,7 @@ DoS.
 <p><em>This documentation is provided “as-is.” Information and views expressed in this document, including URL and other Internet website references, may change without notice. You bear the risk of using it. </em></p>
 <p><em>This documentation does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes. </em></p>
 <p><em>© 2018 Microsoft Corporation. All rights reserved.</em></p>
-<p><em>Licensed under</em> <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported</a></p></td>
+<p><em>Licensed under</em> <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported</a></p></td>
 </tr>
 </tbody>
 </table>

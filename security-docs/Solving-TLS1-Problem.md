@@ -1,9 +1,7 @@
 ---
 layout: LandingPage
 title: Solving the TLS 1.0 Problem
-description: This document presents guidance on rapidly identifying and removing
-Transport Layer Security (TLS) protocol version 1.0 dependencies in
-software built on top of Microsoft operating systems.
+description: This document presents guidance on rapidly identifying and removing Transport Layer Security (TLS) protocol version 1.0 dependencies in software built on top of Microsoft operating systems.
 ms.date: 12/3/2018
 ms.service: security
 ms.author: bcowper

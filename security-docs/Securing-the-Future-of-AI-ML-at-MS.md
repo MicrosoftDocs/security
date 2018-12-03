@@ -1,4 +1,16 @@
-# Securing the Future of Artificial Intelligence and Machine Learning at Microsoft 
+---
+layout: LandingPage
+title: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
+description: This document shares some of
+Microsoft’s security lessons-learned from designing products and
+operating online services built on AI.
+ms.date: 12/3/2018
+ms.service: security
+ms.author: bcowper
+ms.topic: conceptual
+---
+
+# Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
 By Andrew Marshall, Raul Rojas, Jay Stokes and Donald Brinkman
 
 Special Thanks to Mark Cartwright and Graham Calladine
@@ -338,7 +350,7 @@ As an AI can have an authenticated group of “peers” it talks to in order
 to accomplish complex tasks, it must also recognize the need to restrict
 the data it shares with those peers.
 
-# Early Observations on Addressing AI Security Issues 
+## Early Observations on Addressing AI Security Issues 
 
 Despite the nascent state of this project, we believe the evidence
 compiled to date shows deeper investigation into each of the areas below
@@ -433,7 +445,7 @@ thoughts on what we’d like to see done in this space.
     1.  This could focus on not only text vernacular, but image, voice
         and gesture data as well as permutations of those data types.
 
-# Conclusion
+## Conclusion
 
 The [Asilomar AI Principles](https://futureoflife.org/ai-principles/)
 illustrate the complexity of delivering on AI in a fashion that
@@ -447,7 +459,7 @@ Convention . By addressing the issues presented here, we can begin
 guiding our customers and industry partners down a path where AI is
 truly democratized and augments the intelligence of all humanity.
 
-# Bibliography
+## Bibliography
 
   - > *Taleb, Nassim Nicholas (2007),* The Black Swan: The Impact of the
     > Highly Improbable, Random
@@ -463,7 +475,7 @@ truly democratized and augments the intelligence of all humanity.
     > <https://blog.openai.com/adversarial-example-research/>
 
   - > *Satya Nadella:* The Partnership of the Future
-    > <http://www.slate.com/articles/technology/future_tense/2016/06/microsoft_ceo_satya_nadella_humans_and_a_i_can_work_together_to_solve_society.html>
+    > <https://www.slate.com/articles/technology/future_tense/2016/06/microsoft_ceo_satya_nadella_humans_and_a_i_can_work_together_to_solve_society.html>
 
   - > *Claburn, Thomas:* Google's troll-destroying AI can't cope with
     > typos

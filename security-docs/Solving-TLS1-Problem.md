@@ -1,3 +1,15 @@
+---
+layout: LandingPage
+title: Solving the TLS 1.0 Problem
+description: This document presents guidance on rapidly identifying and removing
+Transport Layer Security (TLS) protocol version 1.0 dependencies in
+software built on top of Microsoft operating systems.
+ms.date: 12/3/2018
+ms.service: security
+ms.author: bcowper
+ms.topic: conceptual
+---
+
 # Solving the TLS 1.0 Problem
 
 By Andrew Marshall
@@ -97,11 +109,11 @@ clients when connecting to your online services is by referring to the
 Handshake Simulation at [Qualys SSL Labs](https://www.ssllabs.com/).
 This simulation covers client OS/browser combinations across
 manufacturers. See [Appendix
-A](#appendix-a-handshake-simulation-for-various-clients-connecting-to-www.microsoft.com-courtesy-ssllabs.com)
+A](#appendix-a-handshake-simulation)
 at the end of this document for a detailed example showing the TLS
 protocol versions negotiated by various simulated client OS/browser
 combinations when connecting to
-[www.microsoft.com](http://www.microsoft.com).
+[www.microsoft.com](https://www.microsoft.com).
 
 ##### 1 Hardcoding here means that the TLS version is fixed to a version that is outdated and less secure than newer versions. TLS versions newer than the hardcoded version cannot be used without modifying the program in question. This class of problem cannot be addressed without source code changes and software update deployment.
 
@@ -114,7 +126,7 @@ such a situation, traffic analysis will yield the TLS versions
 successfully negotiated by customers/partners connecting to your
 services, but the traffic itself will remain encrypted.
 
-## Finding and fixing TLS 1.0 dependencies in code
+## <a id="finding-and-fixing-tls-1.0-dependencies-in-code"></a>Finding and fixing TLS 1.0 dependencies in code
 For products using the Windows OS-provided cryptography libraries and
 security protocols, the following steps should help identify any
 hardcoded TLS 1.0 usage in your applications:
@@ -262,11 +274,11 @@ challenges to expect. It will also help your own customers become more
 prepared for the
 transition.
 
-## Appendix A: Handshake Simulation for various clients connecting to [www.microsoft.com](http://www.microsoft.com), courtesy SSLLabs.com
+## <a id="appendix-a-handshake-simulation"></a>Appendix A: Handshake Simulation for various clients connecting to [www.microsoft.com](https://www.microsoft.com), courtesy SSLLabs.com
 
 ![](./media/image1.png)
 
-## Appendix B: Deprecating TLS 1.0/1.1 while retaining FIPS Mode
+## <a id="appendix-b-deprecating-tls-1.01.1-while-retaining-fips-mode"></a>Appendix B: Deprecating TLS 1.0/1.1 while retaining FIPS Mode
 Follow the steps below if your network requires FIPS Mode but you also
 want to deprecate TLS 1.0/1.1:
 

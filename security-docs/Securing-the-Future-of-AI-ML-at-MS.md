@@ -10,6 +10,7 @@ ms.topic:
 
 # Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
 By Andrew Marshall, Raul Rojas, Jay Stokes and Donald Brinkman
+
 Special Thanks to Mark Cartwright and Graham Calladine
 
 ## Executive Summary

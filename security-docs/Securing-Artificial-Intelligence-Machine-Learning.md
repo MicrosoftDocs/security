@@ -42,7 +42,7 @@ Traditional software attack vectors are still critical to address, but they do n
 
 3. Machine Learning algorithms must be capable of discerning maliciously-introduced data from benign “[Black Swan](https://en.wikipedia.org/wiki/The_Black_Swan_\(Taleb_book\))”     events by rejecting training data with negative impact on results. Otherwise, learning models will always be susceptible to gaming by attackers and trolls.
 
-4. AI must have built-in forensic capabilities. This enables enterprises to provide customers with transparency and accountability of their AI, ensuring its actions are not only verifiably correct but also legally defensible. These capabilities also function as an early form of “AI intrusion detection”, allowing engineers to determine the exact point in time that a decision was made by a classifier, what data influenced it, and whether or not that data was trustworthy. [Data visualization](https://research.google.com/bigpicture/)capabilities in this area are rapidly advancing and show promise to help engineers identify and resolve root causes for these complex issues.
+4. AI must have built-in forensic capabilities. This enables enterprises to provide customers with transparency and accountability of their AI, ensuring its actions are not only verifiably correct but also legally defensible. These capabilities also function as an early form of “AI intrusion detection”, allowing engineers to determine the exact point in time that a decision was made by a classifier, what data influenced it, and whether or not that data was trustworthy. [Data visualization](https://research.google.com/bigpicture/ capabilities in this area are rapidly advancing and show promise to help engineers identify and resolve root causes for these complex issues.
 
 5. AI must recognize and safeguard sensitive information, even if humans don’t recognize it as such. Rich user experiences in AI require vast amounts of raw data to train on, so “over-sharing” by customers must be planned for.
 
@@ -62,7 +62,7 @@ The unpredictability, creativity, and maliciousness of criminals, determined adv
 
 1. Pinpoint individual users who deviate from norms set by the various large clusters of similar users e.g. users who seem to type to fast, respond too fast, don’t sleep, or trigger parts of the system other users do not.
 
-2. Identify patterns of behavior that are known to be indicators of malicious intent (probing attacks and the start of the [Network Intrusion Kill Chain] (https://en.wikipedia.org/wiki/Kill_chain)).
+2. Identify patterns of behavior that are known to be indicators of malicious intent probing attacks and the start of the [Network Intrusion Kill Chain](https://en.wikipedia.org/wiki/Kill_chain).
 
 3. Recognize any time when multiple users act in a coordinated fashion; e.g., multiple users all issuing the same unexplainable yet deliberately crafted query, sudden spikes in the number of users or sudden spikes in activation of specific parts of an AI system.
 
@@ -125,8 +125,7 @@ Despite the nascent state of this project, we believe the evidence compiled to d
     2. Over time, this expertise will build up within engineering groups organically, as it did with traditional security expertise over the past 10 years.
 
 2. Training could be developed which empowers enterprises to deliver on goals such as democratizing AI while mitigating the challenges discussed in this document.
-    1. AI-specific security training ensures that engineers are aware of the risks posed ***<span class="underline">to</span>*** their AI and the resources at their disposal. This material needs to be delivered in conjunction with current training on protecting
-        customer data.
+    1. AI-specific security training ensures that engineers are aware of the risks posed __to__ their AI and the resources at their disposal. This material needs to be delivered in conjunction with current training on protecting customer data.
     2. This could be accomplished without requiring every data scientist to become a security expert – instead, the focus is placed on educating developers on Resilience and Discretion as applied to their AI use cases.
     3. Developers will need to understand the secure “building blocks” of AI services that will be reused across their enterprise. There will need to be an emphasis on fault-tolerant design with subsystems which can be easily turned off (e.g. image processors, text parsers).
 
@@ -161,11 +160,11 @@ Despite the nascent state of this project, we believe the evidence compiled to d
 The [Asilomar AI Principles](https://futureoflife.org/ai-principles/) illustrate the complexity of delivering on AI in a fashion that consistently benefits humanity. Future AIs will need to interact with other AIs to deliver rich, compelling user experiences. That means it simply is not good enough for Microsoft to “get AI right” from a security perspective – the *world* has to. We need industry alignment and collaboration with greater visibility brought to the issues in this document in a fashion similar to our worldwide push for a Digital Geneva Convention . By addressing the issues presented here, we can begin guiding our customers and industry partners down a path where AI is truly democratized and augments the intelligence of all humanity.
 
 ## Bibliography
-  - *Taleb, Nassim Nicholas (2007),* The Black Swan: The Impact of the Highly Improbable, Random House, [ISBN](https://en.wikipedia.org/wiki/International_Standard_Book_Number) [978-1400063512](https://en.wikipedia.org/wiki/Special:BookSources/978-1400063512)*
+  - *Taleb, Nassim Nicholas (2007),* The Black Swan: The Impact of the Highly Improbable, Random House, [ISBN 978-1400063512](https://en.wikipedia.org/wiki/Special:BookSources/978-1400063512)
 
   - *Florian Tramèr, Fan Zhang, Ari Juels, Michael K. Reiter, Thomas Ristenpart,* Stealing Machine Learning Models via Prediction APIs <https://arxiv.org/abs/1609.02943>
 
-  - *Ian GoodFellow, Nicolas Papernot, Sandy Huang, Yan Duan, Pieter Abbeel and Jack Clark :* Attacking machine learning with adversarial examples <https://blog.openai.com/adversarial-example-research/>
+  - *Ian GoodFellow, Nicolas Papernot, Sandy Huang, Yan Duan, Pieter Abbeel and Jack Clark:* Attacking machine learning with adversarial examples <https://blog.openai.com/adversarial-example-research/>
 
   - *Satya Nadella:* The Partnership of the Future  <https://www.slate.com/articles/technology/future_tense/2016/06/microsoft_ceo_satya_nadella_humans_and_a_i_can_work_together_to_solve_society.html>
 
@@ -184,4 +183,4 @@ The [Asilomar AI Principles](https://futureoflife.org/ai-principles/) illustrate
 
   - *Nicholas Carlini, Pratyush Mishra, Tavish Vaidya, Yuankai Zhang, Micah Sherr, Clay Shields, David Wagner, Wenchao Zhou: Hidden Voice Commands* <https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/carlini>
 
-  - *Fernanda Viégas, Martin Wattenberg, Daniel Smilkov, James Wexler, Jimbo Wilson, Nikhil Thorat, Charles Nicholson, Google Research: Big Picture*  <https://research.google.com/bigpicture/>
+  - *Fernanda Viégas, Martin Wattenberg, Daniel Smilkov, James Wexler, Jimbo Wilson, Nikhil Thorat, Charles Nicholson, Google Research: Big Picture* <https://research.google.com/bigpicture/>

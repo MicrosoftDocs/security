@@ -18,8 +18,7 @@ In this brief, we share the state of online security, threat actors and the soph
 <table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-
-<td><br><br><img src="/security/media/FY18CDOC_StrategyBrief_2.png" alt=""></td>
+<td><br><br><img src="/security/media/FY18CDOC-StrategyBrief-2.png" alt=""></td>
 <td valign="top">
 <h2>The Microsoft Cyber Defense Operations Center</h2>
 Microsoft is deeply committed to making the online world safer for everyone. Our company’s cybersecurity strategies have evolved from the unique visibility we have into the rapidly evolving cyberthreat landscape.
@@ -38,8 +37,7 @@ The first step to protecting people, devices, data, and critical infrastructure 
 </td>
 </tr>
 <tr>
-
-<td><br><br><img src="/security/media/FY18CDOC_StrategyBrief_3.png" alt=""></td>
+<td><br><br><img src="/security/media/FY18CDOC-StrategyBrief-3.png" alt=""></td>
 <td valign="top">
 <h2>Threat actor techniques</h2>
 <p>Adversaries are skilled at finding ways to penetrate an organization’s network despite the protections in place using various sophisticated techniques. Several tactics have been around since the early days of the Internet, though others reflect the creativity and increasing sophistication of today’s adversaries.</p>
@@ -54,8 +52,7 @@ The first step to protecting people, devices, data, and critical infrastructure 
 </ul>
 </td>
 <tr>
-
-<td><br><br><img src="/security/media/FY18CDOC_StrategyBrief_4.png" alt=""></td>
+<td><br><br><img src="/security/media/FY18CDOC-StrategyBrief-4.png" alt=""></td>
 <td valign="top">
 <h2>The militarization of cyberspace</h2>
 <p>The growing possibility of cyberwarfare is one of the leading concerns among governments and citizens today. It involves nation-states using and targeting computers and networks in warfare.</p>
@@ -67,7 +64,6 @@ The first step to protecting people, devices, data, and critical infrastructure 
 </tr>
 <tr>
 <td><h2>PROTECT<h2><p><img src="/security/media/FY18CDOC-StrategyBrief-5.png" alt=""></p></td>
-<td><p><img src="/security/media/FY18CDOC_StrategyBrief_5.png" alt=""></p></td>
 <td valign="top">
 <h2>Protect</h2>
 <p>Microsoft’s first commitment is to protect the computing environment used by our customers and employees to ensure the resiliency of our cloud infrastructure and services, products, devices, and the company’s internal corporate resources from determined adversaries.</p>
@@ -94,7 +90,6 @@ The first step to protecting people, devices, data, and critical infrastructure 
 </tr>
 <tr>
 <td><h2>DETECT<h2><p><img src="/security/media/FY18CDOC-StrategyBrief-6.png" alt=""></p></td>
-<td><p><img src="/security/media/FY18CDOC_StrategyBrief_6.png" alt=""></p></td>
 <td valign="top">
 <h2>Detect</h2>
 <p>The CDOC teams employ automated software, machine learning, behavioral analysis, and forensic techniques to create an intelligent security graph of our environment. This signal is enriched with contextual metadata and behavioral models generated from sources such as Active Directory, asset and configuration management systems, and event logs.</p>
@@ -113,7 +108,6 @@ The first step to protecting people, devices, data, and critical infrastructure 
 </tr>
 <tr>
 <td><h2>RESPOND<h2><p><img src="/security/media/FY18CDOC-StrategyBrief-7.png" alt=""></p></td>
-<td><p><img src="/security/media/FY18CDOC_StrategyBrief_7.png" alt=""></p></td>
 <td valign="top">
 <h2>Respond</h2>
 <p>When Microsoft detects abnormal activity in our systems, it triggers our response teams to engage and quickly respond with precise force. Notifications from software-based detection systems flow through our automated response systems using risk-based algorithms to flag events requiring intervention from our response team. Mean-Time-to-Mitigate is paramount and our automation system provides responders with relevant, actionable information that accelerates triage, mitigation, and recovery.</p>

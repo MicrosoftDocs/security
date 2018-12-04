@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: SDL Security Bug Bar (Sample)
-description: This sample document is for illustration purposes only.
+description: This document outlines the basic criteria to consider when creating security processes, and serves as an example of a security bug bar as recommended within the SDL practices information found at https://microsoft.com/sdl.
 ms.date: 12/3/2018
 ms.service: security
 ms.author: bcowper
@@ -19,8 +19,7 @@ Please refer to the [definitions of
 terms](https://msdn.microsoft.com/library/cc307404.aspx#EBAA) in this
 section.
 
-**On This Page**
-
+## On This Page
 [Server](#Server)  
 [Client](#Client)  
 [Definitions of Terms](#Definition_of_Terms)
@@ -111,7 +110,7 @@ section.
 <ul>
 <li><p>Examples:</p>
 <ul>
-<li><p>Personally identifiable information (PII) disclosure—see the <a href="https://www.microsoft.com/privacy/processes.aspx">Microsoft Privacy Standard for Development (MPSD)</a> for detailed definitions and examples of PII</p>
+<li><p>Personally identifiable information (PII) disclosure</p>
 <ul>
 <li><p>Disclosure of PII (email addresses, phone numbers, credit card information)</p></li>
 <li><p>Attacker can collect PII without user consent or in a covert fashion</p></li>
@@ -193,7 +192,7 @@ Note that a vulnerability in a security feature is rated “Important” by defa
 <ul>
 <li><p>Example:</p>
 <ul>
-<li><p>Targeted disclosure of anonymous data—see the <a href="http://twc/Privacy/Shared%20Documents/MSPrivacyStandard.doc">Microsoft Privacy Standard for Development (MPSD)</a> for detailed <em>definitions of anonymous data</em></p></li>
+<li><p>Targeted disclosure of anonymous data</p></li>
 <li><p>Targeted disclosure of the existence of a file</p></li>
 <li><p>Targeted disclosure of a file version number</p></li>
 </ul></li>
@@ -320,7 +319,7 @@ Extensive user action is defined as:</p>
 <li><p>Example:</p>
 <ul>
 <li><p>Unauthorized file system access: reading from the file system</p></li>
-<li><p>Disclosure of PII—see the <a href="https://www.microsoft.com/privacy/processes.aspx">Microsoft Privacy Standard for Development (MPSD)</a> for detailed definitions and examples of PII</p>
+<li><p>Disclosure of PII</p>
 <ul>
 <li><p>Disclosure of PII (email addresses, phone numbers)</p></li>
 </ul></li>
@@ -468,8 +467,8 @@ Extensive user action is defined as:</p>
 </tbody>
 </table>
 
-<span id="Definition_of_Terms" class="anchor"></span>Definition of
-Terms  
+<span id="Definition_of_Terms" class="anchor"></span>
+## Definition of Terms  
 **authenticated**  
 Any attack which has to include authenticating by the network. This
 implies that logging of some type must be able to occur so that the

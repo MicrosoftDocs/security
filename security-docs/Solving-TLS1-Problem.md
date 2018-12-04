@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Solving the TLS 1.0 Problem
-description: This document presents guidance on rapidly identifying and removing Transport Layer Security (TLS) protocol version 1.0 dependencies in software built on top of Microsoft operating systems.
+description: This document presents guidance on rapidly identifying and removing Transport Layer Security (TLS) protocol version 1.0 dependencies in software built on top of Microsoft operating systems. It is intended to be used as a starting point for building a migration plan to a TLS 1.2+ network environment.
 ms.date: 12/3/2018
 ms.service: security
 ms.author: bcowper
@@ -9,12 +9,9 @@ ms.topic: conceptual
 ---
 
 # Solving the TLS 1.0 Problem
-
 By Andrew Marshall
 Principal Security Program Manager
 Microsoft Corporation
-
-###### This document is provided "as-is." Information and views expressed in this document, including URL and other Internet web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes. © 2017 Microsoft Corporation. All rights reserved.
 
 ## Executive Summary
 This document presents guidance on rapidly identifying and removing
@@ -113,7 +110,7 @@ protocol versions negotiated by various simulated client OS/browser
 combinations when connecting to
 [www.microsoft.com](https://www.microsoft.com).
 
-##### 1 Hardcoding here means that the TLS version is fixed to a version that is outdated and less secure than newer versions. TLS versions newer than the hardcoded version cannot be used without modifying the program in question. This class of problem cannot be addressed without source code changes and software update deployment.
+##### <sup>1</sup> Hardcoding here means that the TLS version is fixed to a version that is outdated and less secure than newer versions. TLS versions newer than the hardcoded version cannot be used without modifying the program in question. This class of problem cannot be addressed without source code changes and software update deployment.
 
 If not already complete, it is highly recommended to conduct an
 inventory of operating systems used by your enterprise, customers and
@@ -290,7 +287,6 @@ want to deprecate TLS 1.0/1.1:
     the relevant FIPS publication. For Server 2016 (assuming the default
     settings are in effect) this is means disabling RC4, PSK and NULL
     ciphers.
-
 
 #### Contributors/Thanks to
 Mark Cartwright  

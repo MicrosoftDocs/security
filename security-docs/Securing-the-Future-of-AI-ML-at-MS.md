@@ -1,20 +1,17 @@
 ---
-layout: LandingPage
+layout: conceptual
 title: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
-description: This document shares some of Microsoft’s security lessons-learned from designing products and operating online services built on AI.
+description: This research papers shares some of Microsoft’s security lessons-learned from designing products and operating online services built on AI.
 ms.date: 12/3/2018
 ms.service: security
-ms.author: bcowper
-ms.topic: conceptual
+ms.author: conceptual
+ms.topic: 
 ---
 
 # Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
 By Andrew Marshall, Raul Rojas, Jay Stokes and Donald Brinkman
 
 Special Thanks to Mark Cartwright and Graham Calladine
-
-###### (c) 2018 Microsoft Corporation.  All rights reserved.  This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it.
-###### This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
 
 ## Executive Summary
 Artificial Intelligence (AI) and Machine Learning (ML) are already
@@ -211,7 +208,6 @@ the early years of cloud
 computing.
 
 ## AI must be able to recognize bias in others without being biased on its own
-
 While AI should be fair and inclusive without discriminating against any
 particular group of individuals or valid outcomes, it needs to have an
 innate understanding of bias to achieve this. Without being trained to
@@ -246,7 +242,6 @@ recognition and avoidance
 techniques.
 
 ## Machine Learning Algorithms must be capable of discerning maliciously-introduced data from benign “Black Swan” events
-
 Numerous whitepapers have been published on the theoretical potential of
 ML model/classifier tampering and extraction/theft from services where
 attackers have access to both the training data set and an informed
@@ -287,7 +282,6 @@ malicious data to prevent it from becoming a core part of the learning
 model.
 
 ## AI must have built-in forensics and security logging to provide transparency and accountability
-
 AI will eventually be capable of acting in a professional capacity as an
 agent on our behalf, assisting us with high-impact decision-making. An
 example of this could be an AI that assists in the processing of
@@ -335,7 +329,6 @@ techniques](https://research.google.com/bigpicture/) allowing the
 auditing, debugging and tuning of algorithms for more effective results.
 
 ## AI must safeguard sensitive information, even if humans don’t
-
 Rich experiences require rich data. Humans already volunteer vast
 amounts of data for ML to train against. This ranges from the mundane
 video streaming queue contents to trends in credit card
@@ -348,8 +341,7 @@ As an AI can have an authenticated group of “peers” it talks to in order
 to accomplish complex tasks, it must also recognize the need to restrict
 the data it shares with those peers.
 
-## Early Observations on Addressing AI Security Issues 
-
+## Early Observations on Addressing AI Security Issues
 Despite the nascent state of this project, we believe the evidence
 compiled to date shows deeper investigation into each of the areas below
 will be key in moving our industry towards more trustworthy and secure
@@ -444,7 +436,6 @@ thoughts on what we’d like to see done in this space.
         and gesture data as well as permutations of those data types.
 
 ## Conclusion
-
 The [Asilomar AI Principles](https://futureoflife.org/ai-principles/)
 illustrate the complexity of delivering on AI in a fashion that
 consistently benefits humanity. Future AIs will need to interact with
@@ -458,7 +449,6 @@ guiding our customers and industry partners down a path where AI is
 truly democratized and augments the intelligence of all humanity.
 
 ## Bibliography
-
   - > *Taleb, Nassim Nicholas (2007),* The Black Swan: The Impact of the
     > Highly Improbable, Random
     > House*, [ISBN](https://en.wikipedia.org/wiki/International_Standard_Book_Number) [978-1400063512](https://en.wikipedia.org/wiki/Special:BookSources/978-1400063512)*
@@ -473,7 +463,7 @@ truly democratized and augments the intelligence of all humanity.
     > <https://blog.openai.com/adversarial-example-research/>
 
   - > *Satya Nadella:* The Partnership of the Future
-    > <https://www.slate.com/articles/technology/future_tense/2016/06/microsoft_ceo_satya_nadella_humans_and_a_i_can_work_together_to_solve_society.html>
+    ><https://www.slate.com/articles/technology/future_tense/2016/06/microsoft_ceo_satya_nadella_humans_and_a_i_can_work_together_to_solve_society.html>
 
   - > *Claburn, Thomas:* Google's troll-destroying AI can't cope with
     > typos

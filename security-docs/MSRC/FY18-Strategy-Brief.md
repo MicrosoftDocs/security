@@ -158,7 +158,7 @@ The first step to protecting people, devices, data, and critical infrastructure 
 <td bgcolor="#f2f2f2">Monitor for abnormal account and credential activity to detect abuse</td>
 <td bgcolor="#f2f2f2">Enlist, educate, and empower users to recognize likely threats and their own role in protecting business data</td>
 </tr>
-<table>
+</table>
 </td>
 </tr>
 </tbody>

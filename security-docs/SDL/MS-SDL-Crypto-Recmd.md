@@ -1,3 +1,13 @@
+---
+layout: LandingPage
+title: Microsoft SDL Cryptographic Recommendations
+description: This document contains recommendations and best practices for using encryption on Microsoft platforms. It is meant to be used as a reference when designing products to use the same APIs, algorithms, protocols and key lengths that Microsoft requires of its own products and services.
+ms.date: 12/3/2018
+ms.service: security
+ms.author: bcowper
+ms.topic: conceptual
+---
+
 # Microsoft SDL Cryptographic Recommendations
 
 ## Introduction

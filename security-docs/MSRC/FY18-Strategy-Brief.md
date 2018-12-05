@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Microsoft Cybersecurity Defense Operations Center
-description: This document share the state of online security.
+description: Cybersecurity is a shared responsibility, which impacts us all. Today, a single breach, physical or virtual, can cause millions of dollars of damage to an organization and potentially billions in financial losses to the global economy. In this brief, we share the state of online security, threat actors, and the sophisticated tactics they employ to advance their goals, and some of the best practices that Microsoft’s Cyber Defense Operations Center uses to combat these threats and help customers protect their sensitive applications and data.
 ms.date: 12/3/2018
 ms.service: security
 ms.author: modrake

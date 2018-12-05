@@ -1,14 +1,14 @@
 ---
 layout: LandingPage
-title: Welcome to Security
-description: Welcome to Security
+title: Security development lifecycle documentation
+description: This library of content provides a set of documents and resources to help you address your security needs.
 ms.date: 12/3/2018
 ms.service: security
 ms.author: bcowper
 ms.topic: article
 ---
 
-# Welcome to Security
+# Security development lifecycle documentation
 With today’s complex threat landscape, it’s more important than ever to build security into your applications and services from the ground up. Security operations should be tightly integrated to enable fast and continuous delivery, and a scalable process for improving operational security in cloud-based infrastructure should be leveraged. This library of content provides a set of documents and resources to help you. Other useful resources include:
 
 [Microsoft Security Response Center web site](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmicrosoft.com%2Fmsrc&data=02%7C01%7Cv-savila%40microsoft.com%7C7570ab84fffb41ebd71208d659bf68db%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636795075971565896&sdata=q5TRI6qyj49tv8fq0c1Bpei509lVPDYIzYtowjFqvRU%3D&reserved=0)

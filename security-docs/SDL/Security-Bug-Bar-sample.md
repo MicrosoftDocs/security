@@ -9,15 +9,10 @@ ms.topic: conceptual
 ---
 
 # SDL Security Bug Bar (Sample)
+ 
+**Note:** This sample document is for illustration purposes only. The content presented below outlines basic criteria to consider when creating security processes. It is not an exhaustive list of activities or criteria and should not be treated as such.
 
-**Note:** This sample document is for illustration purposes only. The
-content presented below outlines basic criteria to consider when
-creating security processes. It is not an exhaustive list of activities
-or criteria and should not be treated as such.
-
-Please refer to the [definitions of
-terms](https://msdn.microsoft.com/library/cc307404.aspx#EBAA) in this
-section.
+Please refer to the [definitions of terms](#Definition_of_Terms) in this section.
 
 ## On This Page
 [Server](#Server)  

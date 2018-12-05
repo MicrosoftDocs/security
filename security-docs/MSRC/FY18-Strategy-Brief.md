@@ -9,7 +9,7 @@ ms.topic: conceptual
 ---
 
 # Microsoft Cybersecurity Defense Operations Center
-![](/security/media/FY18CDOC-StrategyBrief-1.png)
+![Sharing Microsoft's best practices to protect, detect, and respond to cybersecurity threats](/security/media/FY18CDOC-StrategyBrief-1.png)
 
 Cybersecurity is a shared responsibility, which impacts us all. Today, a single breach, physical or virtual, can cause millions of dollars of damage to an organization and potentially billions in financial losses to the global economy. Every day, we see reports of cybercriminals targeting businesses and individuals for financial gain or socially-motivated purposes. Add to these threats those by nation-state actors seeking to disrupt operations, conduct espionage, or generally undermine trust.
 

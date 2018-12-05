@@ -1,10 +1,11 @@
 ---
-title: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
+layout: LandingPage
+title: Securing the Future of AI and ML at Microsoft
 description: This research papers shares some of Microsoft’s security lessons-learned from designing products and operating online services built on AI.
-ms.date: 12/3/2018
+ms.date: 12/03/2018
 ms.service: security
-ms.author: conceptual
-ms.topic: 
+ms.author: bcowper
+ms.topic: conceptual
 ---
 
 # Securing the Future of Artificial Intelligence and Machine Learning at Microsoft

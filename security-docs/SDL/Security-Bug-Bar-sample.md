@@ -1,5 +1,5 @@
 ---
-layout: LandingPage
+layout: Conceptual
 title: SDL Security Bug Bar (Sample)
 description: This document outlines the basic criteria to consider when creating security processes, and serves as an example of a security bug bar as recommended within the SDL practices information found at https://microsoft.com/sdl.
 ms.date: 12/03/2018

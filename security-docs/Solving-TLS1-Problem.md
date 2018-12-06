@@ -1,5 +1,5 @@
 ---
-layout: LandingPage
+layout: Conceptual
 title: Solving the TLS 1.0 Problem
 description: This document presents guidance on rapidly identifying and removing Transport Layer Security (TLS) protocol version 1.0 dependencies in software built on top of Microsoft operating systems. It is intended to be used as a starting point for building a migration plan to a TLS 1.2+ network environment.
 ms.date: 12/03/2018

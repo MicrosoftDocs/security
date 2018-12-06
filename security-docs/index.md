@@ -5,7 +5,7 @@ description: This library of content provides a set of documents and resources t
 ms.date: 12/03/2018
 ms.service: security
 ms.author: bcowper
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Security development lifecycle documentation

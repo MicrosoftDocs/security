@@ -271,7 +271,7 @@ transition.
 
 ## <a id="appendix-a-handshake-simulation"></a>Appendix A: Handshake Simulation for various clients connecting to [www.microsoft.com](https://www.microsoft.com), courtesy SSLLabs.com
 
-![](./media/image1.png)
+![Results of Handshake Simulation](./media/image1.png)
 
 ## <a id="appendix-b-deprecating-tls-1.01.1-while-retaining-fips-mode"></a>Appendix B: Deprecating TLS 1.0/1.1 while retaining FIPS Mode
 Follow the steps below if your network requires FIPS Mode but you also

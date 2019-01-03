@@ -47,6 +47,10 @@
       href: /aspnet/core/security/app-secrets?view=aspnetcore-2.1&tabs=windows
     - name:	What is managed identities for Azure resources? 
       href: /azure/active-directory/managed-identities-azure-resources/overview
+    - name:	Using a Windows VM system-assigned managed identity to access Azure Key Vault 
+      href: /azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-nonaad
+    - name:	Using a Linux VM system-assigned managed identity to access Azure Key Vault 
+      href: /azure/active-directory/managed-identities-azure-resources/tutorial-linux-vm-access-nonaad  
     - name:	Applocker 
       href: /windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview
     - name:	Securing SQL Server 

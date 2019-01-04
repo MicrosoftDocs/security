@@ -201,7 +201,7 @@ Solutions (1) and (2) are mutually-exclusive, meaning they need not be implement
 ## Rebuild/retarget managed applications using the latest .Net Framework version
 Applications using .NET framework versions prior to 4.7 may have limitations effectively capping support to TLS 1.0 regardless of the underlying OS defaults. Refer to the below diagram and https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls for more information.
 
-![.NETTLS.png](media/.NETTLS.png)
+![DOTNETTLS.png](media/DOTNETTLS.png)
 
 *SystemDefaultTLSVersion takes precedence over app-level targeting of TLS versions.  The recommended best practice is to always defer to the OS default TLS version.  It is also the only crypto-agile solution that lets your apps take advantage of future TLS 1.3 support.
 

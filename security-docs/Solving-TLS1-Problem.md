@@ -8,36 +8,21 @@ ms.author: bcowper
 ms.topic: conceptual
 ---
 
-# Solving the TLS 1.0 Problem
+# Solving the TLS 1.0 Problem, 2nd Edition
 By Andrew Marshall
+
 Principal Security Program Manager
+
 Microsoft Corporation
 
 ## Executive Summary
-This document presents guidance on rapidly identifying and removing
-Transport Layer Security (TLS) protocol version 1.0 dependencies in
-software built on top of Microsoft operating systems. It is intended to
-be used as a starting point for building a migration plan to a TLS 1.2+
-network environment. While the solutions discussed here may carry over
-and help with removing TLS 1.0 usage in non-Microsoft operating systems
-or crypto libraries, they are not a focus of this document.
+This document presents the latest guidance on rapidly identifying and removing Transport Layer Security (TLS) protocol version 1.0 dependencies in software built on top of Microsoft operating systems, following up with details on product changes and new features delivered by Microsoft to protect your own customers and online services.  It is intended to be used as a starting point for building a migration plan to a TLS 1.2+ network environment. While the solutions discussed here may carry over and help with removing TLS 1.0 usage in non-Microsoft operating systems or crypto libraries, they are not a focus of this document.
 
-TLS 1.0 is a security protocol first defined in 1999 for establishing
-encryption channels over computer networks. Microsoft has supported this
-protocol since Windows XP/Server 2003. While no longer the default
-security protocol in use by modern OSes, TLS 1.0 is still supported for
-backwards compatibility. Evolving regulatory requirements as well as new
-security vulnerabilities in TLS 1.0 provide corporations with the
-incentive to disable TLS 1.0 entirely.
+TLS 1.0 is a security protocol first defined in 1999 for establishing encryption channels over computer networks. Microsoft has supported this protocol since Windows XP/Server 2003. While no longer the default security protocol in use by modern OSes, TLS 1.0 is still supported for backwards compatibility. Evolving regulatory requirements as well as new security vulnerabilities in TLS 1.0 provide corporations with the incentive to disable TLS 1.0 entirely.
 
-Microsoft recommends customers get ahead of this issue by removing TLS
-1.0 dependencies in their environments and disabling TLS 1.0 at the
-operating system level where possible. Given the length of time TLS 1.0
-has been supported by the software industry, it is highly recommended
-that any TLS 1.0 deprecation plan include the following:
+Microsoft recommends customers get ahead of this issue by removing TLS 1.0 dependencies in their environments and disabling TLS 1.0 at the operating system level where possible. Given the length of time TLS 1.0 has been supported by the software industry, it is highly recommended that any TLS 1.0 deprecation plan include the following:
 
-  - Code analysis to find/fix hardcoded instances of TLS 1.0 (or
-    instances of older TLS/SSL versions).
+  - Code analysis to find/fix hardcoded instances of TLS 1.0 or older security protocols.
 
   - Network endpoint scanning and traffic analysis to identify operating
     systems using TLS 1.0 or older protocols.
@@ -45,8 +30,7 @@ that any TLS 1.0 deprecation plan include the following:
   - Full regression testing through your entire application stack with
     TLS 1.0 disabled.
 
-  - Migration of legacy operating systems and development
-    libraries/frameworks to versions capable of negotiating TLS 1.2.
+  - Migration of legacy operating systems and development libraries/frameworks to versions capable of negotiating TLS 1.2 by default.
 
   - Compatibility testing across operating systems used by your business
     to identify any TLS 1.2 support issues.
@@ -54,16 +38,11 @@ that any TLS 1.0 deprecation plan include the following:
   - Coordination with your own business partners and customers to notify
     them of your move to deprecate TLS 1.0.
 
-  - Understanding which clients may not interoperate by disabling TLS
-    1.0
+  - Understanding which clients may no longer be able to connect to your servers once TLS 1.0 is disabled.
 
-The goal of this document is to provide recommendations which can help
-remove technical blockers to disabling TLS 1.0 while at the same time
-increasing visibility into the impact of this change to your own
-customers. Completing such investigations can help reduce the business
-impact of the next security vulnerability in TLS 1.0. For the purposes
-of this document, references to the deprecation of TLS 1.0 also include
-TLS 1.1.
+The goal of this document is to provide recommendations which can help remove technical blockers to disabling TLS 1.0 while at the same time increasing visibility into the impact of this change to your own customers. Completing such investigations can help reduce the business impact of the next security vulnerability in TLS 1.0. For the purposes of this document, references to the deprecation of TLS 1.0 also include TLS 1.1.
+
+Enterprise software developers have a strategic need to adopt more future-safe and agile solutions (otherwise known as Crypto Agility) to deal with future security protocol compromises.  While this document proposes agile solutions to the elimination of TLS hardcoding, broader Crypto Agility solutions are beyond the scope of this document.
 
 ## The Current State of Microsoft’s TLS 1.0 implementation
 [Microsoft’s TLS 1.0
@@ -77,10 +56,10 @@ recommended that dependencies on all security protocols older than TLS
 
 In planning for this migration to TLS 1.2+, developers and system
 administrators should be aware of the potential for protocol version
-hardcoding\[1\] in applications developed by their employees and
-partners. Protocol version hardcoding was commonplace in the past for
+hardcoding in applications developed by their employees and
+partners. Hardcoding here means that the TLS version is fixed to a version that is outdated and less secure than newer versions. TLS versions newer than the hardcoded version cannot be used without modifying the program in question. This class of problem cannot be addressed without source code changes and software update deployment.  Protocol version hardcoding was commonplace in the past for
 testing and supportability purposes as many different browsers and
-operating systems had varying levels of TLS support.
+operating systems had varying levels of TLS support.  
 
 ## Ensuring support for TLS 1.2 across deployed operating systems
 Many operating systems have outdated TLS version defaults or support
@@ -92,12 +71,16 @@ version:
 | Windows OS              | SSLv2         | SSLv3    | TLS 1.0     | TLS 1.1                                                                                                                            | TLS 1.2                                                                                                                            |
 | ----------------------- | ------------- | -------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | Windows Vista           | Enabled       | Enabled  | **Default** | Not Supported                                                                                                                      | Not Supported                                                                                                                      |
-| Windows Server 2008     | Enabled       | Enabled  | **Default** | [Disabled](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              | [Disabled](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              |
-| Windows 7 (WS2008 R2)   | Enabled       | Enabled  | **Default** | [Disabled](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | [Disabled](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) |
+| Windows Server 2008     | Enabled       | Enabled  | **Default** | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              |
+| Windows 7 (WS2008 R2)   | Enabled       | Enabled  | **Default** | [Disabled*](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | [Disabled*](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) |
 | Windows 8 (WS2012)      | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
 | Windows 8.1 (WS2012 R2) | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
 | Windows 10              | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
 | Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
+
+*TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
+
+Also note that Microsoft Edge and Internet Explorer 11 will both drop TLS 1.0/1.1 support in 2020. More information on TLS version support by browser can be found here: https://caniuse.com/#search=tls
 
 A quick way to determine what TLS version will be requested by various
 clients when connecting to your online services is by referring to the
@@ -110,7 +93,7 @@ protocol versions negotiated by various simulated client OS/browser
 combinations when connecting to
 [www.microsoft.com](https://www.microsoft.com).
 
-##### <sup>1</sup> Hardcoding here means that the TLS version is fixed to a version that is outdated and less secure than newer versions. TLS versions newer than the hardcoded version cannot be used without modifying the program in question. This class of problem cannot be addressed without source code changes and software update deployment.
+
 
 If not already complete, it is highly recommended to conduct an
 inventory of operating systems used by your enterprise, customers and
@@ -120,6 +103,30 @@ supplemented by traffic analysis at your enterprise network edge. In
 such a situation, traffic analysis will yield the TLS versions
 successfully negotiated by customers/partners connecting to your
 services, but the traffic itself will remain encrypted.
+
+## Microsoft’s Engineering Improvements to eliminate TLS 1.0 dependencies
+Since the v1 release of this document, Microsoft has shipped a number of software updates and new features in support of TLS 1.0 deprecation. These include:
+
+  - [IIS custom logging](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) to correlate client IP/user agent string, service URI, TLS protocol version and cipher suite.
+
+     - With this logging, admins can finally quantify their customers’ exposure to weak TLS.
+  - [SecureScore](https://securescore.microsoft.com/) - To help Office 365 tenant admins identify their own weak TLS usage, the SecureScore portal has been built to share this information as TLS 1.0 exited support in Office 365 in October 2018. 
+
+     - This portal provides Office 365 tenant admins with the valuable information they need to reach out to their own customers who may be unaware of their own TLS 1.0 dependencies. 
+
+     - Please visit https://securescore.microsoft.com/ for more information.
+
+  - .Net Framework updates to eliminate app-level hardcoding and prevent framework-inherited TLS 1.0 dependencies.
+
+  - Developer Guidance and software updates have been released to help customers identify and eliminate .Net dependencies on weak TLS: [Transport Layer Security (TLS) best practices with the .NET Framework](https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls)
+
+     - FYI: All apps targeting .NET 4.5 or below are likely going to have to be modified in order to support TLS 1.2.
+
+  - TLS 1.2 has been backported to [Windows Server 2008 SP2](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) and [XP POSReady 2009](https://cloudblogs.microsoft.com/microsoftsecure/2017/10/05/announcing-support-for-tls-1-1-and-tls-1-2-in-xp-posready-2009) to help customers with legacy obligations.
+
+  - More announcements will be made in early 2019 and communicated in subsequent updates of this document.
+
+
 
 ## <a id="finding-and-fixing-tls-1.0-dependencies-in-code"></a>Finding and fixing TLS 1.0 dependencies in code
 For products using the Windows OS-provided cryptography libraries and
@@ -153,7 +160,9 @@ hardcoded TLS 1.0 usage in your applications:
 5. Update and recompile any applications using WinHTTP hosted on Server
     2012 or older.
     
-    1. Applications must add code to support TLS 1.2 via
+    1. Managed apps – rebuild and retarget against the latest .NET Framework version 
+     
+    2. Applications must add code to support TLS 1.2 via
         [WinHttpSetOption](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384114\(v=vs.85\).aspx)
 
 6.  To cover all the bases, scan source code and online service
@@ -172,10 +181,29 @@ hardcoded TLS 1.0 usage in your applications:
     
     6. PROTOCOL\_SSL or PROTOCOL\_TLS
 
-The recommended solution in all cases above is to remove the hardcoded
-protocol version selection and defer to the operating system default.
-Operating systems which do not support TLS 1.2 as the default should be
-upgraded to versions which do.
+The recommended solution in all cases above is to remove the hardcoded protocol version selection and defer to the operating system default. If you are using [DevSkim](https://github.com/Microsoft/DevSkim/), [click here](https://github.com/Microsoft/DevSkim/blob/4ac9214f84f517fb2d83c362720fa33fe93e6dc8/rules/default/security/cryptography/protocol.json) to see rules covering the above checks which you can use with your own code.
+
+
+## Update Windows PowerShell scripts or related registry settings
+Windows PowerShell uses .NET Framework 4.5, which does not include TLS 1.2 as an available protocol.  To work around this, two solutions are available:
+
+    1.  Modify the script in question to include the following:
+        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;
+
+    2.  Add a system-wide registry key (e.g. via group policy) to any machine that needs to make TLS 1.2 connections from a .NET app. This will cause .NET to use the “System Default” TLS versions which adds TLS 1.2 as an available protocol AND it will allow the scripts to use future TLS Versions when the OS supports them. (e.g. TLS 1.3)  
+
+        reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:64
+
+        reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:32
+
+Solutions (1) and (2) are mutually-exclusive, meaning they need not be implemented together. 
+
+## Rebuild/retarget managed applications using the latest .Net Framework version
+Applications using .NET framework versions prior to 4.7 may have limitations effectively capping support to TLS 1.0 regardless of the underlying OS defaults. Refer to the below diagram and https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls for more information.
+
+![DOTNETTLS.png](media/DOTNETTLS.png)
+
+*SystemDefaultTLSVersion takes precedence over app-level targeting of TLS versions.  The recommended best practice is to always defer to the OS default TLS version.  It is also the only crypto-agile solution that lets your apps take advantage of future TLS 1.3 support.
 
 ## Testing with TLS 1.2+
 Following the fixes recommended in the section above, products should be

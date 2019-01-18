@@ -9,12 +9,13 @@ ms.topic: hub-page
     <div class="container">
         <h1>Security documentation</h1>
         <p>With today’s complex threat landscape, it’s more important than ever to build security into your applications and services from the ground up. Security operations should be tightly integrated to enable fast and continuous delivery, and a scalable process for improving operational security in cloud-based infrastructure should be leveraged. This library of content provides a set of documents and resources to help you.</p>
+        <p></p>
         <ul class="pivots">
             <li>
                 <a href="#security-engineering">Security Engineering</a>
                 <ul id="security-engineering">
                     <li>
-                        <ul id="all" class="cardsW">
+                        <ul id="security-engineering-all" class="cardsW">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
@@ -99,9 +100,13 @@ ms.topic: hub-page
                             </li>
                         </ul>
                     </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#products">Products</a>
+                <ul id="products">
                     <li>
-                        <a href="#products">Products</a>
-                        <ul id="products" class="cardsF">
+                        <ul id="products-all" class="cardsF">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">

@@ -69,7 +69,7 @@ ms.topic: hub-page
                                                     <li><a href="/sql/relational-databases/security/securing-sql-server?view=sql-server-2017">Securing SQL Server</a></li>
                                                     <li><a href="/windows/security/threat-protection/windows-security-baselines">Windows security baselines</a></li>
                                                     <li><a href="/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control">Device Guard: Windows Defender Application Control and virtualization-based protection of code integrity</a></li>
-                                                    <li><a href="s/enterprise-mobility-security/">Enterprise Mobility + Security Documentation</a></li>
+                                                    <li><a href="/enterprise-mobility-security/">Enterprise Mobility + Security Documentation</a></li>
                                                     <li><a href="/azure/virtual-network/ddos-protection-overview">Azure DDoS Protection Standard overview</a></li>
                                                 </ul>
                                             </div>
@@ -271,21 +271,3 @@ ms.topic: hub-page
         </ul>
     </div>
 </div>
-
-# 
- Other useful resources include:
-
-
-[Azure Security](https://docs.microsoft.com/en-us/azure/security/)
-
-[Microsoft Security Response Center](https://microsoft.com/msrc)
-
-[Microsoft Trust Center](https://microsoft.com/trust)
-
-[Office 365 security and compliance](https://docs.microsoft.com/en-us/office365/securitycompliance/)
-
-[Operational Security Assurance](https://www.microsoft.com/en-us/securityengineering/osa/)
-
-[Secure DevOps](https://www.microsoft.com/en-us/securityengineering/devsecops)
-
-[Security Development Lifecycle](https://microsoft.com/sdl)

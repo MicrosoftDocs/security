@@ -22,13 +22,8 @@ ms.topic: hub-page
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage bgdAccent1">
-                                                <img src="/media/illustrations/nuget-tools-reference_2.svg" alt="" />
-                                            </div>
-                                        </div>
                                         <div class="cardText">
-                                            <h3 style="margin: 8px 0 2px 0;">Featured Articles</h3>
+                                            <h3 style="margin: 8px 0 20px 0;">Featured Articles</h3>
                                             <ul>
                                                 <li>Security Engineering &gt;</li>
                                                 <li><a href="/security/securing-artificial-intelligence-machine-learning">Securing the Future of Artificial Intelligence and Machine Learning at Microsoft</a></li>
@@ -46,12 +41,8 @@ ms.topic: hub-page
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage bgdAccent1">
-                                            </div>
-                                        </div>
                                         <div class="cardText">
-                                            <h3 style="margin: 8px 0 2px 0;">&nbsp;</h3>
+                                            <h3 style="margin: 8px 0 20px 0;">&nbsp;</h3>
                                             <ul>
                                                 <li>Cyber Defense Operations Center &gt;</li>
                                                 <li><a href="/security/msrc/fy18-strategy-brief">FY18 CDOC Strategy Brief</a></li>
@@ -68,12 +59,8 @@ ms.topic: hub-page
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage bgdAccent1">
-                                            </div>
-                                        </div>
                                         <div class="cardText">
-                                            <h3 style="margin: 8px 0 2px 0;">&nbsp;</h3>
+                                            <h3 style="margin: 8px 0 20px 0;">&nbsp;</h3>
                                             <ul>
                                                 <li>Trusted Root &gt;</li>
                                                 <li><a href="">articles in production</a></li>

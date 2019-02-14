@@ -25,12 +25,12 @@ ms.topic: hub-page
                                         <div class="cardText">
                                             <h3 style="margin: 8px 0 20px 0;">Featured Articles</h3>
                                             <ul>
-                                                <li>Security Engineering &gt;</li>
+                                                <li><strong>Security Engineering &gt;</strong></li>
                                                 <li><a href="/security/securing-artificial-intelligence-machine-learning">Securing the Future of Artificial Intelligence and Machine Learning at Microsoft</a></li>
                                                 <li><a href="/security/solving-tls1-problem">Solving the TLS 1.0 Problem</a></li>
                                                 <li>&nbsp;</li>
-                                                <li>Government Security Program &gt;</li>
-                                                <li><a href="5 articles in production"></a></li>
+                                                <li><strong>Government Security Program &gt;</strong></li>
+                                                <li><a href="">5 articles in production</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -44,10 +44,10 @@ ms.topic: hub-page
                                         <div class="cardText">
                                             <h3 style="margin: 8px 0 20px 0;">&nbsp;</h3>
                                             <ul>
-                                                <li>Cyber Defense Operations Center &gt;</li>
+                                                <li><strong>Cyber Defense Operations Center &gt;</strong></li>
                                                 <li><a href="/security/msrc/fy18-strategy-brief">FY18 CDOC Strategy Brief</a></li>
                                                 <li>&nbsp;</li>
-                                                <li>MSRC &gt;</li>
+                                                <li><strong>MSRC &gt;</strong></li>
                                                 <li><a href="">articles in production</a></li>
                                             </ul>
                                         </div>
@@ -62,7 +62,7 @@ ms.topic: hub-page
                                         <div class="cardText">
                                             <h3 style="margin: 8px 0 20px 0;">&nbsp;</h3>
                                             <ul>
-                                                <li>Trusted Root &gt;</li>
+                                                <li><strong>Trusted Root &gt;</strong></li>
                                                 <li><a href="">articles in production</a></li>
                                             </ul>
                                         </div>

@@ -13,6 +13,80 @@ ms.topic: hub-page
     <p></p>
     <ul class="pivots">
         <li>
+            <a href="#general-security">General Security</a>
+            <ul id="general-security">
+                <li>
+                    <a href="#general-security1"></a>
+                    <ul id="general-security1" class="cardsW">
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage bgdAccent1">
+                                                <img src="/media/illustrations/nuget-tools-reference_2.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3 style="margin: 8px 0 2px 0;">Featured Articles</h3>
+                                            <ul>
+                                                <li>Security Engineering &gt;</li>
+                                                <li><a href="/security/securing-artificial-intelligence-machine-learning">Securing the Future of Artificial Intelligence and Machine Learning at Microsoft</a></li>
+                                                <li><a href="/security/solving-tls1-problem">Solving the TLS 1.0 Problem</a></li>
+                                                <li>&nbsp;</li>
+                                                <li>Government Security Program &gt;</li>
+                                                <li><a href="5 articles in production"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage bgdAccent1">
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3 style="margin: 8px 0 2px 0;">&nbsp;</h3>
+                                            <ul>
+                                                <li>Cyber Defense Operations Center &gt;</li>
+                                                <li><a href="/security/msrc/fy18-strategy-brief">FY18 CDOC Strategy Brief</a></li>
+                                                <li>&nbsp;</li>
+                                                <li>MSRC &gt;</li>
+                                                <li><a href="">articles in production</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage bgdAccent1">
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3 style="margin: 8px 0 2px 0;">&nbsp;</h3>
+                                            <ul>
+                                                <li>Trusted Root &gt;</li>
+                                                <li><a href="">articles in production</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        <li>
             <a href="#security-engineering">Security Engineering</a>
             <ul id="security-engineering">
                 <li>
@@ -30,14 +104,14 @@ ms.topic: hub-page
                                         <div class="cardText">
                                             <h3 style="margin: 8px 0 2px 0;">Security Development Lifecycle</h3>
                                             <ul>
-                                                <li><a href="/security/sdl/security-bug-bar-sample">Security Bug Bar (Sample)</a></li>
-                                                <li><a href="/security/sdl/cryptographic-recommendations">Microsoft SDL Cryptographic Recommendations</a></li>
-                                                <li><a href="/azure/security/azure-security-threat-modeling-tool-getting-started">Getting started with the Threat Modeling Tool</a></li>
-                                                <li><a href="/azure/security/azure-security-threat-modeling-tool-feature-overview">Threat Modeling Tool feature overview</a></li>
-                                                <li><a href="/azure/security/azure-security-threat-modeling-tool-threats">Microsoft Threat Modeling Tool threats</a></li>
-                                                <li><a href="/azure/security/azure-security-threat-modeling-tool-mitigations">Microsoft Threat Modeling Tool mitigations</a></li>
                                                 <li><a href="/azure/devops/reference/add-modify-field?view=tfs-2018&viewFallbackFrom=vsts">Add or modify a field to track work</a></li>
                                                 <li><a href="/visualstudio/code-quality/install-fxcop-analyzers?view=vs-2017">Install FxCop analyzers in Visual Studio</a></li>
+                                                <li><a href="/security/sdl/cryptographic-recommendations">Microsoft SDL Cryptographic Recommendations</a></li>
+                                                <li><a href="/azure/security/azure-security-threat-modeling-tool-feature-overview">Threat Modeling Tool feature overview</a></li>
+                                                <li><a href="/azure/security/azure-security-threat-modeling-tool-getting-started">Getting started with the Threat Modeling Tool</a></li>
+                                                <li><a href="/azure/security/azure-security-threat-modeling-tool-threats">Microsoft Threat Modeling Tool threats</a></li>
+                                                <li><a href="/azure/security/azure-security-threat-modeling-tool-mitigations">Microsoft Threat Modeling Tool mitigations</a></li>
+                                                <li><a href="/security/sdl/security-bug-bar-sample">Security Bug Bar (Sample)</a></li>
                                                 <li><a href="/azure/security-center/security-center-incident-response">Using Azure Security Center for an incident response</a></li>
                                             </ul>
                                         </div>
@@ -57,23 +131,23 @@ ms.topic: hub-page
                                         <div class="cardText">
                                             <h3 style="margin: 8px 0 2px 0;">Operational Security Assurance</h3>
                                             <ul>
-                                                <li><a href="/azure/active-directory/authentication/concept-mfa-howitworks">How it works: Azure Multi-Factor Authentication</a></li>
-                                                <li><a href="/azure/active-directory/privileged-identity-management/pim-configure">What is Azure AD Privileged Identity Management</a></li>
-                                                <li><a href="/azure/role-based-access-control/">Role-based access control documentation</a></li>
-                                                <li><a href="/windows-server/identity/securing-privileged-access/privileged-access-workstations">Privileged Account Workstations</a></li>
-                                                <li><a href="/powershell/jea/overview">Just Enough Administration</a></li>
-                                                <li><a href="/azure/key-vault/">Key Vault Documentation</a></li>
-                                                <li><a href="/aspnet/core/security/key-vault-configuration?view=aspnetcore-2.2">Key Vault Configuration</a></li>
-                                                <li><a href="/aspnet/core/security/app-secrets?view=aspnetcore-2.1&tabs=windows">Safe storage of app secrets in development in ASP.NET Core</a></li>
-                                                <li><a href="/azure/active-directory/managed-identities-azure-resources/overview">What is managed identities for Azure resources</a></li>
-                                                <li><a href="/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-nonaad">Using a Windows VM system-assigned managed identity to access Azure Key Vault</a></li>
-                                                <li><a href="/azure/active-directory/managed-identities-azure-resources/tutorial-linux-vm-access-nonaad">Using a Linux VM system-assigned managed identity to access Azure Key Vault</a></li>
                                                 <li><a href="/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview">Applocker</a></li>
-                                                <li><a href="/sql/relational-databases/security/securing-sql-server?view=sql-server-2017">Securing SQL Server</a></li>
-                                                <li><a href="/windows/security/threat-protection/windows-security-baselines">Windows security baselines</a></li>
+                                                <li><a href="/azure/virtual-network/ddos-protection-overview">Azure DDoS Protection Standard overview</a></li>
                                                 <li><a href="/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control">Device Guard: Windows Defender Application Control and virtualization-based protection of code integrity</a></li>
                                                 <li><a href="/enterprise-mobility-security/">Enterprise Mobility + Security Documentation</a></li>
-                                                <li><a href="/azure/virtual-network/ddos-protection-overview">Azure DDoS Protection Standard overview</a></li>
+                                                <li><a href="/azure/active-directory/authentication/concept-mfa-howitworks">How it works: Azure Multi-Factor Authentication</a></li>
+                                                <li><a href="/powershell/jea/overview">Just Enough Administration</a></li>
+                                                <li><a href="/aspnet/core/security/key-vault-configuration?view=aspnetcore-2.2">Key Vault Configuration</a></li>
+                                                <li><a href="/azure/key-vault/">Key Vault Documentation</a></li>
+                                                <li><a href="/windows-server/identity/securing-privileged-access/privileged-access-workstations">Privileged Account Workstations</a></li>
+                                                <li><a href="/azure/role-based-access-control/">Role-based access control documentation</a></li>
+                                                <li><a href="/aspnet/core/security/app-secrets?view=aspnetcore-2.1&tabs=windows">Safe storage of app secrets in development in ASP.NET Core</a></li>
+                                                <li><a href="/sql/relational-databases/security/securing-sql-server?view=sql-server-2017">Securing SQL Server</a></li>
+                                                <li><a href="/azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-nonaad">Using a Windows VM system-assigned managed identity to access Azure Key Vault</a></li>
+                                                <li><a href="/azure/active-directory/managed-identities-azure-resources/tutorial-linux-vm-access-nonaad">Using a Linux VM system-assigned managed identity to access Azure Key Vault</a></li>
+                                                <li><a href="/azure/active-directory/privileged-identity-management/pim-configure">What is Azure AD Privileged Identity Management</a></li>
+                                                <li><a href="/azure/active-directory/managed-identities-azure-resources/overview">What is managed identities for Azure resources</a></li>
+                                                <li><a href="/windows/security/threat-protection/windows-security-baselines">Windows security baselines</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -121,8 +195,8 @@ ms.topic: hub-page
                                         </div>
                                             <div class="cardText">
                                             <h3>Azure</h3>
-                                            <p><a href="/azure/#pivot=get-started&panel=get-started1">Secure and manage resources</a></p>
                                             <p><a href="/azure/#pivot=products&panel=security">Azure Security Products</a></p>
+                                            <p><a href="/azure/index#pivot=products&panel=mgmt">Azure Management Products</a></p>
                                             <p><a href="/azure/devops/?view=vsts">Azure DevOps</a></p>
                                         </div>
                                     </div>

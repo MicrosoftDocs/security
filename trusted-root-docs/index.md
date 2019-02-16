@@ -3,11 +3,11 @@
 
 
    
- > ### Important
+ > [!NOTE]
  > This page supersedes the TechNet Library page: <https://technet.microsoft.com/en-us/library/cc751157.aspx>
  
 
- > ### Notes
+ > [!NOTE]
  > * For information on the most-recent updates shipped, please see <http://aka.ms/rootupdates> 
  > * Bookmark this page as: <http://aka.ms/RootCert> 
 
@@ -75,7 +75,7 @@ to request inclusion into the program.
  
 
 
-> ### Notes
+> [!NOTE]
 > * Microsoft will determine at its sole discretion which CA certificates are included the Program.
 > * Microsoft will not charge any fee for including a CA's certificates in the Program.
 > * Microsoft reserves the right to not include a CA in the Program for any reason or no reason at all
@@ -236,7 +236,7 @@ Program.
     replaced with a SHA2 family of certificates (excluding SHA-224) by
     January 1, 2017.
    
-> ### Note
+> [!NOTE]
 > Please note: Microsoft will not require CAs to replace SHA1 Server Authentication certificates but will no longer trust SHA1 certificates after this date.
  
 

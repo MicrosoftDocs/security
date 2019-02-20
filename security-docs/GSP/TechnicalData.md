@@ -1,3 +1,12 @@
+﻿---
+title: Technical Data
+description: This document provides details of the Technical Data offering that provides access to a broad range of confidential technical information, exclusive of source code, which allows government agencies and international organizations to evaluate the trustworthiness of Microsoft products and services.
+ms.date: 02/19/2019
+ms.service: security
+ms.author: kellieac
+ms.topic: conceptual
+---
+
 # Technical Data
 
 The mission of Microsoft’s Government Security Program (GSP) is to build trust through transparency. Since the program’s inception in 2003, Microsoft has provided visibility into our technology and security artifacts which governments and international organizations can use to help protect themselves and their citizens. The Technical Data offering provides access to a broad range of confidential technical information, exclusive of source code, which allows government agencies and international organizations to evaluate the trustworthiness of Microsoft products and services. 

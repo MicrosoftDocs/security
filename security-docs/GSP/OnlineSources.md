@@ -1,4 +1,13 @@
-﻿# Online Access to Source Code
+﻿---
+title: Online Access to Source Code
+description: This document provides details of the Online Source offering and CCP site that enables GSP participants to evaluate individual system component functions, component interaction, and security and reliability capabilities.
+ms.date: 02/19/2019
+ms.service: security
+ms.author: kellieac
+ms.topic: conceptual
+---
+
+# Online Access to Source Code
 
 Since its launch in 2003, the Government Security Program (GSP) has provided governments and international organizations with the ability to access and inspect source code for a variety of Microsoft products. The Online Source offering provides access through our Code Center Premium (CCP) web site to the GSP participant’s premises. Using two-factor authentication and an encrypted connection, the Online Source offering enables access to product source code such as Windows, Office, SharePoint Server, and Exchange Server. The site provides read-only access and a debugger that can be used to review code.   
 

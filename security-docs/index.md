@@ -50,16 +50,16 @@ ms.topic: hub-page
                                             <ul>
                                                 <li><strong>Cyber Defense Operations Center &gt;</strong></li>
                                                 <li><a href="/security/msrc/fy18-strategy-brief">FY18 CDOC Strategy Brief</a></li>
-                                                <li>&nbsp;</li>
+                                                <!--li>&nbsp;</li>
                                                 <li><strong>MSRC &gt;</strong></li>
-                                                <li><a href="">articles in production</a></li>
+                                                <li><a href="">articles in production</a></li-->
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <!--li>
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -73,7 +73,7 @@ ms.topic: hub-page
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li-->
                     </ul>
                 </li>
             </ul>

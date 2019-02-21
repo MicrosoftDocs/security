@@ -1,3 +1,12 @@
+---
+title: Information Sharing and Exchange
+description: This document provides details of the Information Sharing and Exchange offering that enables Microsoft to share and exchange materials related to Microsoft products and services.
+ms.date: 02/19/2019
+ms.service: security
+ms.author: kellieac
+ms.topic: conceptual
+---
+
 # Information Sharing and Exchange
 
 The mission of Microsoft’s Government Security Program (GSP) is to build trust through transparency. Since the program’s inception in 2003, Microsoft has provided visibility into our technology and security artifacts which governments and international organizations can use to help protect themselves and their citizens. The Information Sharing and Exchange offering enables Microsoft to share and exchange materials about threats, vulnerabilities, anomalous behavior, malware information, and security issues against or related to Microsoft products and services. 

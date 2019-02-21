@@ -9,11 +9,11 @@ ms.topic: hub-page
 <div id="main" class="v2">
 <div class="container">
     <h1>Security documentation</h1>
-    <p>With today’s complex threat landscape, it’s more important than ever to build security into your applications and services from the ground up. Security operations should be tightly integrated to enable fast and continuous delivery, and a scalable process for improving operational security in cloud-based infrastructure should be leveraged. This library of content provides a set of documents and resources to help you.</p>
+    <p>This collection of resources is designed to help you find security related documentation and information from across Microsoft. The Security Engineering section contains articles referenced on the <a href="https://www.microsoft.com/en-us/securityengineering">Microsoft Security Engineering web site</a> for specific engineering topics such as <a href="https://www.microsoft.com/en-us/securityengineering/sdl/">Security Development Lifecycle (SDL)</a>, <a href="https://www.microsoft.com/en-us/securityengineering/osa">Operational Security Assurance (OSA)</a> and <a href="https://www.microsoft.com/en-us/securityengineering/devsecops">Secure DevOps</a>. If you are looking for security documentation for Microsoft products and services, please go to the Product Security section.</p>
     <p></p>
     <ul class="pivots">
         <li>
-            <a href="#general-security">General Security</a>
+            <a href="#general-security">Security Articles</a>
             <ul id="general-security">
                 <li>
                     <a href="#general-security1"></a>
@@ -30,7 +30,11 @@ ms.topic: hub-page
                                                 <li><a href="/security/solving-tls1-problem">Solving the TLS 1.0 Problem</a></li>
                                                 <li>&nbsp;</li>
                                                 <li><strong>Government Security Program &gt;</strong></li>
-                                                <li><a href="">5 articles in production</a></li>
+                                                <li><a href="/security/gsp/programoverview">GSP Program Overview</a></li>
+                                                <li><a href="/security/gsp/contenttransparencycenters">Transparency Centers</a></li>
+                                                <li><a href="/security/gsp/informationsharingandexchange">Information Sharing And Exchange</a></li>
+                                                <li><a href="/security/gsp/onlinesources">Online Sources</a></li>
+                                                <li><a href="/security/gsp/technicaldata">Technical Data</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -166,7 +170,7 @@ ms.topic: hub-page
             </ul>
         </li>
         <li>
-            <a href="#products">Products</a>
+            <a href="#products">Product Security</a>
             <ul id="products">
                 <li>
                     <a href="#products1"></a>

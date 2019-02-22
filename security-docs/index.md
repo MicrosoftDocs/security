@@ -17,19 +17,41 @@ ms.topic: hub-page
             <ul id="general-security">
                 <li>
                     <a href="#general-security1"></a>
-                    <ul id="general-security1" class="cardsW">
+                    <ul id="general-security1" class="cardsF">
                         <li>
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="" />
+                                            </div>
+                                        </div>
                                         <div class="cardText">
-                                            <h3 style="margin: 8px 0 20px 0;">Featured Articles</h3>
+                                            <h2 style="margin: 8px 0 20px 0;">Featured Articles</h2>
+                                            <h3 style="margin: 8px 0 20px 0;">Security Engineering</h3>
                                             <ul>
-                                                <li><strong>Security Engineering &gt;</strong></li>
                                                 <li><a href="/security/securing-artificial-intelligence-machine-learning">Securing the Future of Artificial Intelligence and Machine Learning at Microsoft</a></li>
                                                 <li><a href="/security/solving-tls1-problem">Solving the TLS 1.0 Problem</a></li>
-                                                <li>&nbsp;</li>
-                                                <li><strong>Government Security Program &gt;</strong></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/common/i_investigate.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h2 style="margin: 8px 0 20px 0;">&nbsp;</h2>
+                                            <h3 style="margin: 8px 0 20px 0;">Government Security Program</h3>
+                                            <ul>
                                                 <li><a href="/security/gsp/programoverview">GSP Program Overview</a></li>
                                                 <li><a href="/security/gsp/contenttransparencycenters">Transparency Centers</a></li>
                                                 <li><a href="/security/gsp/informationsharingandexchange">Information Sharing And Exchange</a></li>
@@ -45,10 +67,15 @@ ms.topic: hub-page
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="" />
+                                            </div>
+                                        </div>
                                         <div class="cardText">
-                                            <h3 style="margin: 8px 0 20px 0;">&nbsp;</h3>
+                                            <h2 style="margin: 8px 0 20px 0;">&nbsp;</h2>
+                                            <h3 style="margin: 8px 0 20px 0;">Cyber Defense Operations Center</h3>
                                             <ul>
-                                                <li><strong>Cyber Defense Operations Center &gt;</strong></li>
                                                 <li><a href="/security/msrc/fy18-strategy-brief">FY18 CDOC Strategy Brief</a></li>
                                                 <!--li>&nbsp;</li>
                                                 <li><strong>MSRC &gt;</strong></li>
@@ -95,7 +122,7 @@ ms.topic: hub-page
                                         <div class="cardText">
                                             <h3 style="margin: 8px 0 2px 0;">Security Development Lifecycle</h3>
                                             <ul>
-                                                <li><a href="/azure/devops/reference/add-modify-field?view=tfs-2018&viewFallbackFrom=vsts">Add or modify a field to track work</a></li>
+                                                <li><a href="/azure/devops/reference/add-modify-field?view=tfs-2018&viewFallbackFrom=vsts">Tracking security work items in Azure DevOps</a></li>
                                                 <li><a href="/visualstudio/code-quality/install-fxcop-analyzers?view=vs-2017">Install FxCop analyzers in Visual Studio</a></li>
                                                 <li><a href="/security/sdl/cryptographic-recommendations">Microsoft SDL Cryptographic Recommendations</a></li>
                                                 <li><a href="/azure/security/azure-security-threat-modeling-tool-feature-overview">Threat Modeling Tool feature overview</a></li>
@@ -274,7 +301,7 @@ ms.topic: hub-page
                                             </div>
                                         </div>
                                             <div class="cardText">
-                                            <h3>EMS</h3>
+                                            <h3>Enterprise Mobility + Security</h3>
                                             <p><a href="/sccm/">System Center Configuration Manager</a></p>
                                             <p><a href="/azure/active-directory/authentication/index">Multi-Factor Authentication</a></p>
                                             <p><a href="/microsoft-identity-manager/">Microsoft identity Manager</a></p>

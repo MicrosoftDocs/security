@@ -17,6 +17,7 @@ ms.topic: hub-page
             <ul id="general-security">
                 <li>
                     <a href="#general-security1"></a>
+                    <h2 style="margin: 8px 0 20px 0;">Featured Articles</h2>
                     <ul id="general-security1" class="cardsF">
                         <li>
                             <div class="cardSize">
@@ -28,8 +29,7 @@ ms.topic: hub-page
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h2 style="margin: 8px 0 20px 0;">Featured Articles</h2>
-                                            <h3 style="margin: 8px 0 20px 0;">Security Engineering</h3>
+                                            <h3>Security Engineering</h3>
                                             <ul>
                                                 <li><a href="/security/securing-artificial-intelligence-machine-learning">Securing the Future of Artificial Intelligence and Machine Learning at Microsoft</a></li>
                                                 <li><a href="/security/solving-tls1-problem">Solving the TLS 1.0 Problem</a></li>
@@ -49,8 +49,7 @@ ms.topic: hub-page
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h2 style="margin: 8px 0 20px 0;">&nbsp;</h2>
-                                            <h3 style="margin: 8px 0 20px 0;">Government Security Program</h3>
+                                            <h3>Government Security Program</h3>
                                             <ul>
                                                 <li><a href="/security/gsp/programoverview">GSP Program Overview</a></li>
                                                 <li><a href="/security/gsp/contenttransparencycenters">Transparency Centers</a></li>
@@ -73,8 +72,7 @@ ms.topic: hub-page
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h2 style="margin: 8px 0 20px 0;">&nbsp;</h2>
-                                            <h3 style="margin: 8px 0 20px 0;">Cyber Defense Operations Center</h3>
+                                            <h3>Cyber Defense Operations Center</h3>
                                             <ul>
                                                 <li><a href="/security/msrc/fy18-strategy-brief">FY18 CDOC Strategy Brief</a></li>
                                                 <!--li>&nbsp;</li>

@@ -1,13 +1,2 @@
 - name: Program Requirements
   href: programrequirements.md
-- name: Audit Requirements
-  href: auditrequirements.md
-- name: Release Notes
-  href: ReleaseNotes.md
-  items: 
-  - name:February 2019
-    href: feb2019.md
-  - name:January 2019
-    href: Jan2019.md
-- name: List of Participants
-  href: ListOfParticipants.md

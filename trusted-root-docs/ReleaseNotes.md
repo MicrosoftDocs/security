@@ -13,28 +13,15 @@ Please note, the changes listed are accurate at the time of posting but are subj
 A list of Root Store participants, updated monthly, can be found here: <http://aka.ms/trustcertpartners>. 
 
 
-# 2019 Releases
+## 2019 
 
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
-| March | March 26 |  |
-| February | March 5 | |
-| January |  |  |
-
-#Previous Years
-## 2018 Releases
-| Month |	Date of Release	| Release Notes |
-|---|---|---|
-| March | March 26 |  |
-| February | March 5 | |
-| January |  |  |
+| March | March 26 | TBA |
+| February | March 5 | [Deployment Notice Posted February 19](FebruaryChanges.md) |
+| January | January 29 | [Deployment Notice Posted January 23](Jan2019.md) |
 
 
-##2017
-| Month |	Date of Release	| Release Notes |
-|---|---|---|
-| March | March 26 |  |
-| February | March 5 | |
-| January |  |  |
-
+## 2018 
+2018 and earlier coming soon
 

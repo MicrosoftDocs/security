@@ -1,0 +1,46 @@
+# February 2019 -- Deployment Notice (19/February)
+
+On Tuesday, March 5th, 2019, Microsoft will release a planned update to the Microsoft Trusted Root Certificate Program.
+
+This release will **remove** the following root (Root Certificate \\ SHA-1 Thumbprint):
+
+1.  SECOM Trust Systems CO LTD \\ FEB8C432DCF9769ACEAE3DD8908FFD288665647D
+
+    
+This release will **disable** the following roots:
+
+
+1.  Certipost E-Trust Primary Normalised CA \\ A59C9B10EC7357515ABB660C4D94F73B9E6E9272
+2.  Certipost E-Trust Primary Qualified CA \\ 742CDF1594049CBF17A2046CC639BB3888E02E33
+3.  Japan Certification Services, Inc. SecureSign RootCA1 \\ CABB51672400588E6419F1D40878D0403AA20264
+4.  Japan Certification Services, Inc. SecureSign RootCA2 \\ 00EA522C8A9C06AA3ECCE0B4FA6CDC21D92E8099  
+5.  Japan Certification Services, Inc. SecureSign RootCA3 \\ 8EB03FC3CF7BB292866268B751223DB5103405CB  
+6.  Root CA Generalitat Valenciana \\ A073E5C5BD43610D864C21130A855857CC9CEA46  
+7.  Skaitmeninio sertifikavimo centras, Lithuania (5A5A) \\ 5A5A4DAF7861267C4B1F1E67586BAE6ED4FEB93F  
+8.  Starfield Technologies Inc. \\ 5D003860F002ED829DEAA41868F788186D62127F  
+9.  StartCom Certification Authority \\ 3E2BF7F2031B96F38CE6C4D8A85D3E2D58476A0F   
+10. StartCom Certification Authority G2 \\ 31F1FD68226320EEC63B3F9DEA4A3E537C7C3917   
+11. Swisscom Root CA 1 \\ 5F3AFC0A8B64F686673474DF7EA9A2FEF9FA7A51   
+12. VAS Latvijas Pasts SSI(RCA) \\ 086418E906CEE89C2353B6E27FBD9E7439F76316   
+13. WoSign \\ B94294BF91EA8FB64BE61097C7FB001359B676CB 
+14. WoSign China \\ 1632478D89F9213A92008563F5A4A7D312408AD6
+15. WoSign ECC \\ D27AD2BEED94C0A13CC72521EA5D71BE8119F32B
+16. WoSign G2 \\ FBEDDC9065B7272037BC550C9C56DEBBF27894E1
+
+
+This release will **NotBefore all EKUs** for the following roots:
+
+1. VI Registru Centras RCSC  \\ 971D3486FC1E8E6315F7C6F2E12967C724342214 
+2. ANF AC \\ CEA9890D85D80753A626286CDAD78CB566D70CF2
+3. ANF Global Root CA \\ 5BB59920D11B391479463ADD5100DB1D52F43AD4
+
+    
+This release will **NotBefore the server authentication EKU** for the
+following roots:
+
+1. Saudi National Root CA \\ 8351509B7DF8CFE87BAE62AEB9B03A52F4E62C79
+
+    
+
+Windows 10 allows us to stop trusting roots or EKU's using the "NotBefore" or "Disable" properties, both of which allow us to remove certain capabilities of the root certificate without complete removal. These features are not available on versions prior to Windows 10. Earlier versions of Windows will be unaffected by this change. The update package will be available for download and testing at
+<http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/test/authrootstl.cab>

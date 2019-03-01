@@ -502,9 +502,9 @@ In the event of a Security Incident, the CA must:
 
 ## See also
 
--   [Program
-    Participants](http://aka.ms/trustcertpartners)
--   [Audit Requirements](http://aka.ms/auditreqs)
+-   [Release Notes](ReleaseNotes.md)
+-   [Program Participants](ListOfParticipants.md)
+-   [Audit Requirements](AuditRequirements.md)
 -   [SHA1 Deprecation Guidelines](http://aka.ms/sha1)
 
 

@@ -198,96 +198,17 @@ B. ETSI-Based Audits
 Note 1: If a CA uses an ETSI-based audit, it must perform a **full**
 audit annually, and Microsoft will not accept surveillance audits.
 
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| \         | EN 319    | EN 319    | EN 319    | EN 319    | EN 319    |
-| \         | 411-1     | 411-1     | 411-1     | 411-1     | 411-2     |
-|           | V1.1.1 or | V1.1.1 or | V1.1.1 or | V1.1.1 or | V2.1.1 or |
-|           | later     | later or  | later or  | later     | later -   |
-|           | (DVCP,    | later     | later     | (LCP,     | Electroni |
-|           | OVCP or   | (EVCP or  | (EVCG     | NCP, NCP+ | c         |
-|           | PTC-BR    | EVCP+     | policy) - | policies) | Signature |
-|           | policies) | policies) | Electroni | -         | s         |
-|           | -         | -         | c         | Electroni | and       |
-|           | Electroni | Electroni | Signature | c         | Infrastru |
-|           | c         | c         | s         | Signature | cture     |
-|           | Signature | Signature | and       | s         | (ESI);    |
-|           | s         | s         | Infrastru | and       | Policy    |
-|           | and       | and       | ctures    | Infrastru | and       |
-|           | Infrastru | Infrastru | (ESI);    | ctures    | security  |
-|           | ctures    | ctures    | Policy    | (ESI);    | requireme |
-|           | (ESI);    | (ESI);    | and       | Policy    | nts       |
-|           | Policy    | Policy    | security  | and       | for Trust |
-|           | and       | and       | requireme | security  | Service   |
-|           | security  | security  | nts       | requireme | Providers |
-|           | requireme | requireme | for Trust | nts       | issuing   |
-|           | nts       | nts       | Service   | for Trust | certifica |
-|           | for Trust | for Trust | Providers | Service   | tes;      |
-|           | Service   | Service   | issuing   | Providers | Part 2 :  |
-|           | Providers | Providers | certifica | issuing   | Requireme |
-|           | issuing   | issuing   | tes;      | certifica | nts       |
-|           | certifica | certifica | PART 1:   | tes;      | for trust |
-|           | tes;      | tes;      | General   | PART 1:   | service   |
-|           | PART 1:   | PART 1:   | requireme | General   | providers |
-|           | General   | General   | nts       | requireme | issuing   |
-|           | requireme | requireme |           | nts       | EU        |
-|           | nts       | nts       |           |           | qualified |
-|           |           |           |           |           | certifica |
-|           |           |           |           |           | tes       |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Server    | X         |           |           |           |           |
-| Authentic |           |           |           |           |           |
-| ation     |           |           |           |           |           |
-| (non-EV)  |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Server    | X         | \         | \         | \         | \         |
-| Authentic |           |           |           |           |           |
-| ation     |           |           |           |           |           |
-| (non-EV)  |           |           |           |           |           |
-| and       |           |           |           |           |           |
-| Client    |           |           |           |           |           |
-| Authentic |           |           |           |           |           |
-| ation     |           |           |           |           |           |
-| only      |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Server    | \         | X         | \         | \         | \         |
-| Authentic |           |           |           |           |           |
-| ation     |           |           |           |           |           |
-| (EV)      |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Server    | \         | X         | \         | \         | \         |
-| Authentic |           |           |           |           |           |
-| ation     |           |           |           |           |           |
-| (EV) and  |           |           |           |           |           |
-| Client    |           |           |           |           |           |
-| Authentic |           |           |           |           |           |
-| ation     |           |           |           |           |           |
-| only      |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| EV Code   | \         | \         | X         | \         | \         |
-| Signing   |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Non-EV    | X         | \         | \         | X         | X         |
-| Code      |           |           |           |           |           |
-| Signing   |           |           |           |           |           |
-| and Time  |           |           |           |           |           |
-| stamping  |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Secured   | X         | \         | \         | X         | X         |
-| Email     |           |           |           |           |           |
-| (S/MIME)  |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Client    | X         | \         | \         | X         | X         |
-| Authentic |           |           |           |           |           |
-| ation     |           |           |           |           |           |
-| (without  |           |           |           |           |           |
-| Server    |           |           |           |           |           |
-| Authentic |           |           |           |           |           |
-| ation)    |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-| Document  | X         | \         | \         | X         | X         |
-| Signing   |           |           |           |           |           |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-
+| | EN 319 411-1 V1.1.1 or later (DVCP, OVCP or PTC-BR policies) - Electronic Signatures and Infrastructures (ESI); Policy and security requirements for Trust Service Providers issuing certificates; PART 1: General requirements | EN 319 411-1 V1.1.1 or later or later (EVCP or EVCP+ policies) - Electronic Signatures and Infrastructures (ESI); Policy and security requirements for Trust Service Providers issuing certificates; PART 1: General requirements | EN 319 411-1 V1.1.1 or later or later (EVCG policy) - Electronic Signatures and Infrastructures (ESI); Policy and security requirements for Trust Service Providers issuing certificates; PART 1: General requirements | EN 319 411-1 V1.1.1 or later (LCP, NCP, NCP+ policies) -  Electronic Signatures and Infrastructures (ESI); Policy and security requirements for Trust Service Providers issuing certificates; PART 1: General requirements | EN 319 411-2 V2.1.1 or later - Electronic Signatures and Infrastructure (ESI); Policy and security requirements for Trust Service Providers issuing certificates; Part 2 : Requirements for trust service providers issuing EU qualified certificates |
+| --- | --- | --- | --- | --- | --- |
+| Server Authentication (Non-EV) | X |  |  |  |  |
+| Server Authentication (non-EV) and Client Authentication only | X |  |  |  |  |
+| Server Authentication (EV) |  | X |  |  |  |
+| Server Authentication (EV) and Client Authentication only |  | X |  |  |  |
+| EV Code Signing |  |  | X |  |  |
+| Non-EV Code Signing and Time stamping | X |  |  | X | X |
+| Secured Email (S/MIME) | X |  |  | X | X |
+| Client Authentication (without Server Authentication) | X |  |  | X | X |
+| Document Signing | X |  |  | X | X |
 
 ------------------------------------------------------------------------
 

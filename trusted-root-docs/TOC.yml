@@ -5,8 +5,6 @@
 - name: Release Notes
   href: ReleaseNotes.md
   items: 
-- name:2019
-  items:
   - name:February 2019
     href: feb2019.md
   - name:January 2019

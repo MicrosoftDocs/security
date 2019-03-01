@@ -1,2 +1,8 @@
 - name: Program Requirements
   href: programrequirements.md
+- name: Audit Requirements
+  href: auditrequirements.md
+- name: Release Notes
+  href: ReleaseNotes.md
+- name: List of Participants
+  href: ListOfParticipants.md

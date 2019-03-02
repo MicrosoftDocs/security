@@ -15,7 +15,7 @@ Government CA. (See \"Definitions\", below). Additionally, you will find
 information about how the requirements are changing for Government CAs.
 
 > [!NOTE]
-> Bookmark this page: <http://aka.ms/auditreqs>
+> Bookmark this page: <https://aka.ms/auditreqs>
 
 
 ------------------------------------------------------------------------
@@ -49,17 +49,17 @@ Microsoft considers an auditor to be a Qualified Auditor if s/he is an
 independent individual or company that is certified to perform
 certification authority audits by one of these three authorities: (1)
 WebTrust, (2) an ETSI Equivalent National Authority (published at
-<http://aka.ms/ena>) or, (3) in the case of a Government CA, the
+<https://aka.ms/ena>) or, (3) in the case of a Government CA, the
 government itself. (For more information on Government CAs, see \"
 Government CA Requirements\" below.)
 
 If a CA chooses to obtain a WebTrust audit, Microsoft requires the CA to
 retain a WebTrust licensed auditor to perform the audit. The full list
 of WebTrust-licensed auditors is available at
-<http://aka.ms/webtrustauditors>. If a CA chooses to obtain an
+<https://aka.ms/webtrustauditors>. If a CA chooses to obtain an
 ETSI-based audit, Microsoft requires the CA to retain an authorized
 entity by an Equivalent National Authority (or \"ENAs\"). A catalogue of
-acceptable ENAs is based on the list at <http://aka.ms/ena>. If a CA is
+acceptable ENAs is based on the list at <https://aka.ms/ena>. If a CA is
 operated in a country that does not have an ETSI Equivalent National
 Authority, Microsoft will accept an audit performed by an auditor that
 is qualified under an Equivalent National Authority in the auditor\'s
@@ -125,7 +125,7 @@ their audit letter.
 2.  Audit letter must be in a "Text Searchable" PDF format.
 3.  Audits conducted by certified WebTrust auditors must have their
     audit letters uploaded to
-    [http://cert.webtrust.org](http://cert.webtrust.org/).
+    [https://cert.webtrust.org](https://cert.webtrust.org/).
 4.  Audits conducted by certified ETSI auditors must have their audit
     letters uploaded to their auditor's website.
 5.  Audit letter must have the auditor's name in the audit letter as
@@ -147,7 +147,7 @@ F. Audit Submission
 ------------------------------------------
 
 To submit annual audits, please refer to the CCADB instructions on how
-to create an audit case found here: <http://ccadb.org/cas/updates>.
+to create an audit case found here: <https://ccadb.org/cas/updates>.
 
 If the CA is applying into the Root Store and is not in the CCADB, they
 should email their audit attestation to msroot\@microsoft.com.
@@ -319,9 +319,9 @@ Related
 ======================
 
 -   [Microsoft Trusted Root Program Requirements main
-    page](http://aka.ms/rootcert "Go to the Microsoft Trusted Root Certificate Main Page")
+    page](ProgramRequirements.md)
 -   [Program
-    Participants](http://social.technet.microsoft.com/wiki/contents/articles/31634.program-participants.aspx)
+    Participants](ListOfParticipants.md)
 -   [SHA1 Deprecation Guidelines](http://aka.ms/sha1)
 
 

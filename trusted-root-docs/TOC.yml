@@ -6,9 +6,9 @@
   - name: 2019
     items:
     - name: February 2019
-    - href: feb2019.md
+      href: feb2019.md
     - name: January 2019
-    - href: jan2019.md
+      href: jan2019.md
 - name: Release Notes
   href: ReleaseNotes.md
 - name: List of Participants

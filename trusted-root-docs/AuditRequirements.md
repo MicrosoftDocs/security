@@ -21,8 +21,8 @@ information about how the requirements are changing for Government CAs.
 ------------------------------------------------------------------------
 
 
-General Requirements
-==========================================================================================
+## General Requirements
+
 
 Microsoft requires that every CA submit evidence of a Qualifying Audit
 on an annual basis for the CA and any non-limited root within its PKI
@@ -42,8 +42,8 @@ conformance to the Audit Requirements in a timely manner.
 
  
 
-A. The Auditor's Qualifications
---------------------------------------------------------------------------
+### A. The Auditor's Qualifications
+
 
 Microsoft considers an auditor to be a Qualified Auditor if s/he is an
 independent individual or company that is certified to perform
@@ -66,8 +66,7 @@ is qualified under an Equivalent National Authority in the auditor\'s
 home country.
 
 
-B. The Scope of the Audit
--------------------------------------------------------------
+### B. The Scope of the Audit
 
 The scope of the audit must include all roots, non-limited sub-roots,
 and cross-signed non-enrolled roots, under the root, except for
@@ -79,8 +78,8 @@ also be in a publicly-accessible location.
 
 
 
-C. Point-in-Time Readiness Assessments
----------------------------------------------------------------------------------------
+### C. Point-in-Time Readiness Assessments
+
 
 Microsoft requires an audit prior to commencing commercial operations.
 For commercial CAs that have not been operational as an issuer of
@@ -94,8 +93,8 @@ the new roots.  Rather, they should be up to date on audits for their
 existing roots in the program.
 
 
-D. The Time Period Between the Assessment and the Auditor's Attestation
-----------------------------------------------------------------------------------------------------------------------------------------------------------
+### D. The Time Period Between the Assessment and the Auditor's Attestation
+
 
 Microsoft requires that the CA obtain a conforming audit annually. To
 ensure that Microsoft has information that accurately reflects the
@@ -104,8 +103,8 @@ from the audit must be dated and received by Microsoft not more than 3
 months from the ending date specified in the attestation letter.
 
 
-E. Audit Attestation
---------------------------------------------
+### E. Audit Attestation
+
 
 Microsoft requires that each auditor complete and submit to Microsoft a
 Qualifying Attestation. A Qualifying Attestation requires that the
@@ -143,8 +142,8 @@ their audit letter.
     <https://aka.ms/auditreqs> and list the full name and version of the
     audit standards referenced.
 
-F. Audit Submission
-------------------------------------------
+### F. Audit Submission
+
 
 To submit annual audits, please refer to the CCADB instructions on how
 to create an audit case found here: <https://ccadb.org/cas/updates>.
@@ -154,15 +153,15 @@ should email their audit attestation to msroot\@microsoft.com.
 
 ------------------------------------------------------------------------
 
-Conventional CA Audit Standards
-======================================================================
+## Conventional CA Audit Standards
+
 
 The Program accepts two types of audit standards: WebTrust and ETSI. For
 each of the EKUs on the left, Microsoft requires an audit that conforms
 to the standard marked.
 
-A. WebTrust Audits
-------------------------------------------------------------
+### A. WebTrust Audits
+
 
 Microsoft will now be requiring the WebTrust Trust Services Principles
 and Criteria for Certification Authorities -- Code Signing for any audit
@@ -192,8 +191,8 @@ the Code Signing audit.
 
 
 
-B. ETSI-Based Audits
---------------------------------------------
+### B. ETSI-Based Audits
+
 
 Note 1: If a CA uses an ETSI-based audit, it must perform a **full**
 audit annually, and Microsoft will not accept surveillance audits.
@@ -212,8 +211,8 @@ audit annually, and Microsoft will not accept surveillance audits.
 
 ------------------------------------------------------------------------
 
-Government CA Requirements
-============================================================
+## Government CA Requirements
+
 
 Effective July 1, 2015, Government CAs may choose to either obtain the
 above WebTrust or ETSI-based audit(s) required of Commercial CAs, or to
@@ -222,8 +221,7 @@ or ETSI-based audit, Microsoft will treat the Government CA as a
 Commercial CA. The Government CA can then operate without limiting the
 certificates it issues.
 
-A. Equivalent Audit Restrictions
---------------------------------------------------------------------
+### A. Equivalent Audit Restrictions
 
 If the Government CA chooses not to use a WebTrust or ETSI audit, it may
 obtain an Equivalent Audit. In an Equivalent Audit (\"EA\"), the
@@ -253,8 +251,8 @@ requirements immediately upon expiration of their then-current audit.
 
 
 
-B. Content of the Equivalent Audit Report
---------------------------------------------------------------------------------------
+### B. Content of the Equivalent Audit Report
+
 
 Microsoft requires all Government CAs that submit an EA to provide an
 attestation letter from the auditor that:
@@ -279,31 +277,31 @@ attestation letter from the auditor that:
 
 ------------------------------------------------------------------------
 
-Definitions
-==============================
+## Definitions
 
-### Government CA
+
+#### Government CA
 
 
 A "Government CA" is an entity that signs the Government Program
 Agreement.
 
 
-### Commercial CA
+#### Commercial CA
 
 A "Commercial CA" is an entity that signs the Commercial Program
 Agreement.
 
 
 
-### Certification Authority
+#### Certification Authority
 
 \"Certification Authority\" or \"CA\" means an entity that issues
 digital certificates in accordance with Local Laws and Regulations.
 
 
 
-### Local Laws and Regulations
+#### Local Laws and Regulations
 
 \"Local Laws and Regulations\" means the laws and regulations applicable
 to a CA under which the CA is authorized to issue digital certificates,
@@ -315,8 +313,8 @@ frequency and procedure.
 
 ------------------------------------------------------------------------
 
-Related
-======================
+## Related
+
 
 -   [Microsoft Trusted Root Program Requirements main
     page](ProgramRequirements.md)

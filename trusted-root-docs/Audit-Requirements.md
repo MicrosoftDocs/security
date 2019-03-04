@@ -325,9 +325,9 @@ frequency and procedure.
 
 
 -   [Microsoft Trusted Root Program Requirements main
-    page](ProgramRequirements.md)
+    page](Program-Requirements.md)
 -   [Program
-    Participants](ListOfParticipants.md)
+    Participants](Participants-list.md)
 -   [SHA1 Deprecation Guidelines](https://aka.ms/sha1)
 
 

@@ -1,4 +1,4 @@
-# List of Participants
+# List of Participants - Microsoft Trusted Root Program 
 
 ## Current List
 

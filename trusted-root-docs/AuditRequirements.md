@@ -320,7 +320,7 @@ frequency and procedure.
     page](ProgramRequirements.md)
 -   [Program
     Participants](ListOfParticipants.md)
--   [SHA1 Deprecation Guidelines](http://aka.ms/sha1)
+-   [SHA1 Deprecation Guidelines](https://aka.ms/sha1)
 
 
 

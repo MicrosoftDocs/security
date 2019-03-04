@@ -1,4 +1,12 @@
-------------------------------------------------------------------------
+---
+title: Audit Requirements - Microsoft Trusted Root Certificate Program
+description: This document provides details about the audit requirements that all Certificate Authorities are required to adhere to  in order to provide annual audits that meet our standards. 
+ms.date: 03/04/2019
+ms.service: security
+ms.author: kasirota
+ms.topic: conceptual
+---
+
 
 # Audit Requirements - Microsoft Trusted Root Certificate Program
 

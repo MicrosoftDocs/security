@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------
 
-Microsoft Trusted Root Certificate Program Audit Requirements
-=============================================================
+# Audit Requirements - Microsoft Trusted Root Certificate Program
+
 
 This page sets out the requirements for Certification Authorities (CAs)
 who participate in the Microsoft Trusted Root Certificate Program

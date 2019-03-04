@@ -1,11 +1,7 @@
-# Microsoft Trusted Root Program Requirements
+# Program Requirements - Microsoft Trusted Root Program
 ------------------------------------------------------------------------
 
 
-   
- > [!NOTE]
- > This page supersedes the TechNet Library page: <https://technet.microsoft.com/en-us/library/cc751157.aspx>
- 
 
  > [!NOTE]
  > * For information on the most-recent updates shipped, please see <http://aka.ms/rootupdates> 

@@ -1,3 +1,12 @@
+---
+title: Release notes - Microsoft Trusted Root Certificate Program
+description: This document provides details about the changes made monthly to the root store.
+ms.date: 03/04/2019
+ms.service: security
+ms.author: kasirota
+ms.topic: conceptual
+---
+
 # Release notes - Microsoft Trusted Root Certificate Program
 
 The Microsoft Trusted Root Certificate Program releases changes to our Root Store on a monthly cadence, except for December. The public can expect the following cadence for releases: 

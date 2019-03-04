@@ -41,7 +41,7 @@ Root Program Participants (as of November 27
     September
     26, 2017)](https://gallery.technet.microsoft.com/Trusted-Root-Certificate-2696b664)
 -   [Microsoft Trusted Root Certificate Program: Participants (as of
-    June 27, 2017)](http://aka.ms/RootCertDownload)
+    June 27, 2017)](https://aka.ms/RootCertDownload)
 -   [Microsoft Trusted Root Certificate Program: Participants (as of
     April
     25, 2017)](https://gallery.technet.microsoft.com/Trusted-Root-Certificate-4a54196a?redir=0)

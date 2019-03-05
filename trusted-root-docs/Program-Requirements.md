@@ -8,16 +8,6 @@ ms.topic: conceptual
 ---
 
 # Program Requirements - Microsoft Trusted Root Program
-------------------------------------------------------------------------
-
-
-
- > [!NOTE]
- > * For information on the most-recent updates shipped, please see <https://aka.ms/rootupdates> 
- > * Bookmark this page as: <https://aka.ms/RootCert> 
-
-
-------------------------------------------------------------------------
 ## 1. Introduction
 
 The Microsoft Root Certificate Program supports the distribution of root
@@ -27,6 +17,11 @@ information about how a Certificate Authority (CA) can contact Microsoft
 to request inclusion into the program.
 
 
+
+
+ > [!NOTE]
+ > * For information on the most-recent updates shipped, please see <https://aka.ms/rootupdates> 
+ > * Bookmark this page as: <https://aka.ms/RootCert> 
 
 
 ------------------------------------------------------------------------
@@ -507,9 +502,9 @@ In the event of a Security Incident, the CA must:
 
 ## See also
 
--   [Release Notes](ReleaseNotes.md)
--   [Program Participants](ListOfParticipants.md)
--   [Audit Requirements](AuditRequirements.md)
+-   [Release Notes](Release-Notes.md)
+-   [Program Participants](Participants-List.md)
+-   [Audit Requirements](Audit-Requirements.md)
 -   [SHA1 Deprecation Guidelines](https://aka.ms/sha1)
 
 

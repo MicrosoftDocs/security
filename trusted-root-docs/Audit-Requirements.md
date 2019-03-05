@@ -177,15 +177,11 @@ statements with periods commencing on or after January 1, 2018. This
 will be required for any CA that has the code signing EKU enabled for
 their roots. If a CA has the code signing EKU enabled on a root but is
 not actively issuing code signing certificates, they may reach out the
-msroot\@microsoft.com to have the EKU status set to "NotBefore." If a CA
-is issuing EV code signing certificates, they will still be required to
-provide the WebTrust Principles and Criteria for Certification
-Authorities -- Extended Validation Code Signing audit, in addition to
-the Code Signing audit.
+msroot\@microsoft.com to have the EKU status set to "NotBefore." 
 
 
 
-|  | WebTrust Principles and Criteria for Certification Authorities - WebTrust for CAs 2.0 | WebTrust Principles and Criteria for Certification Authorities - SSL Baseline with Network Security - Version 2 | WebTrust Principles and Criteria for Certification Authorities - Extended Validation SSL - Version 1.4.5 | WebTrust Principles and Criteria for Certification Authorities - Extended Validation Code Signing | WebTrust Principles and Criteria for Certification Authorities - Code Signing |
+|  | WebTrust for CA v2.1 | SSL Baseline with Network Security v2.3 | Extended Validation SSL v1.6.2 | Extended Validation Code Signing v1.4.1 | Publicly Trusted Code Signing Certificates v1.0.1 |
 | --- | --- | --- | --- | --- | --- |
 | Server Authentication (Non-EV) | X | X |  |  |  |
 | Server Authentication (non-EV) and Client Authentication only | X | X |  |  |  |
@@ -205,7 +201,7 @@ the Code Signing audit.
 Note 1: If a CA uses an ETSI-based audit, it must perform a **full**
 audit annually, and Microsoft will not accept surveillance audits.
 
-| | EN 319 411-1 V1.1.1 or later (DVCP, OVCP or PTC-BR policies) - Electronic Signatures and Infrastructures (ESI); Policy and security requirements for Trust Service Providers issuing certificates; PART 1: General requirements | EN 319 411-1 V1.1.1 or later or later (EVCP or EVCP+ policies) - Electronic Signatures and Infrastructures (ESI); Policy and security requirements for Trust Service Providers issuing certificates; PART 1: General requirements | EN 319 411-1 V1.1.1 or later or later (EVCG policy) - Electronic Signatures and Infrastructures (ESI); Policy and security requirements for Trust Service Providers issuing certificates; PART 1: General requirements | EN 319 411-1 V1.1.1 or later (LCP, NCP, NCP+ policies) -  Electronic Signatures and Infrastructures (ESI); Policy and security requirements for Trust Service Providers issuing certificates; PART 1: General requirements | EN 319 411-2 V2.1.1 or later - Electronic Signatures and Infrastructure (ESI); Policy and security requirements for Trust Service Providers issuing certificates; Part 2 : Requirements for trust service providers issuing EU qualified certificates |
+| | EN 319 411-1: DVCP, OVCP or PTC-BR policies | EN 319 411-1: EVCP or EVCP+ policies | EN 319 411-1: EVCG policy | EN 319 411-1: LCP, NCP, NCP+ policies | EN 319 411-2 v2.1.1 |
 | --- | --- | --- | --- | --- | --- |
 | Server Authentication (Non-EV) | X |  |  |  |  |
 | Server Authentication (non-EV) and Client Authentication only | X |  |  |  |  |
@@ -325,9 +321,9 @@ frequency and procedure.
 
 
 -   [Microsoft Trusted Root Program Requirements main
-    page](ProgramRequirements.md)
+    page](Program-Requirements.md)
 -   [Program
-    Participants](ListOfParticipants.md)
+    Participants](Participants-list.md)
 -   [SHA1 Deprecation Guidelines](https://aka.ms/sha1)
 
 

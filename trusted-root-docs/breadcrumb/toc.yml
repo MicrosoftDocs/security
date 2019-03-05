@@ -5,3 +5,7 @@
   - name: Security
     tocHref: /security/
     topicHref: /security
+    items:
+    - name: Trusted Root
+      tocHref: /security/trusted-root/
+      topicHref: /security/trusted-root

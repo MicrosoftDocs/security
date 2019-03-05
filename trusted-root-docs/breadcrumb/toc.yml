@@ -2,6 +2,6 @@
   tocHref: /
   topicHref: /
   items:
-  -name: Security
-   tocHref: /security/
-   topicHref: /security/
+  - name: Security
+    tocHref: /security/
+    topicHref: /security/

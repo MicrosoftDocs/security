@@ -177,11 +177,7 @@ statements with periods commencing on or after January 1, 2018. This
 will be required for any CA that has the code signing EKU enabled for
 their roots. If a CA has the code signing EKU enabled on a root but is
 not actively issuing code signing certificates, they may reach out the
-msroot\@microsoft.com to have the EKU status set to "NotBefore." If a CA
-is issuing EV code signing certificates, they will still be required to
-provide the WebTrust Principles and Criteria for Certification
-Authorities -- Extended Validation Code Signing audit, in addition to
-the Code Signing audit.
+msroot\@microsoft.com to have the EKU status set to "NotBefore." 
 
 
 

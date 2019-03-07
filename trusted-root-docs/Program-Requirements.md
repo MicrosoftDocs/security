@@ -1,18 +1,13 @@
-# Microsoft Trusted Root Program Requirements
-------------------------------------------------------------------------
+---
+title: Program Requirements - Microsoft Trusted Root Program 
+description: This document provides details about the requirements all Certificate Authorities are required to adhere to in order to be compliant with our program. 
+ms.date: 03/04/2019
+ms.service: security
+ms.author: kasirota
+ms.topic: conceptual
+---
 
-
-   
- > [!NOTE]
- > This page supersedes the TechNet Library page: <https://technet.microsoft.com/en-us/library/cc751157.aspx>
- 
-
- > [!NOTE]
- > * For information on the most-recent updates shipped, please see <http://aka.ms/rootupdates> 
- > * Bookmark this page as: <http://aka.ms/RootCert> 
-
-
-------------------------------------------------------------------------
+# Program Requirements - Microsoft Trusted Root Program
 ## 1. Introduction
 
 The Microsoft Root Certificate Program supports the distribution of root
@@ -24,13 +19,18 @@ to request inclusion into the program.
 
 
 
+ > [!NOTE]
+ > * For information on the most-recent updates shipped, please see <https://aka.ms/rootupdates> 
+ > * Bookmark this page as: <https://aka.ms/RootCert> 
+
+
 ------------------------------------------------------------------------
 
 ## 2. Certificate Authority Intake Process
 
 1.  In order to begin the process to be included in the Program, a CA
     must fill out the application located at
-    <http://aka.ms/rootcertapply> and email the completed form to
+    <https://aka.ms/rootcertapply> and email the completed form to
     [msroot\@microsoft.com]. This will begin the onboarding
     process, outlined below:
 2.  Microsoft will review the application, and may request additional
@@ -43,7 +43,7 @@ to request inclusion into the program.
     every four months).
 4.  Upon receipt of preliminary approval from Microsoft, the CA will
     need to engage an auditor to complete the necessary audit. See,
-    http://aka.ms/auditreqs for more information about the Program's
+    https://aka.ms/auditreqs for more information about the Program's
     audit requirements.
 5.  When the audit is complete, the CA must send the following materials
     to Microsoft:
@@ -90,7 +90,7 @@ to request inclusion into the program.
 ## 3. Continuing Program Requirements
 
 1.  The CA must provide to Microsoft evidence of a Qualified Audit (see
-    <http://aka.ms/auditreqs>) for each root, non-limited sub-CA, or
+    <https://aka.ms/auditreqs>) for each root, non-limited sub-CA, or
     cross-signed non-enrolled root, before conducting commercial
     operations and thereafter on an annual basis.
 2.  The CA must assume responsibility to ensure that all non-limited
@@ -152,7 +152,7 @@ to request inclusion into the program.
     adopt the Minimum Requirements for the Issuance and Management of
     Publicly Trusted Code Signing Certificates published by the CAB
     Forum Code Signing Working Group (available at
-    <http://aka.ms/csbr>). Each CA must make the necessary changes to
+    <https://aka.ms/csbr>). Each CA must make the necessary changes to
     its CP/CPS documents and provide evidence to Microsoft that it has
     made the change and implemented the required process updates.  
 
@@ -206,7 +206,7 @@ Program.
 8.  Government CAs must restrict server authentication to .gov domains
     and may only issues other certificates to the ISO3166 country codes
     that the country has sovereign control over (see
-    <http://aka.ms/auditreqs> section III for the definition of a
+    <https://aka.ms/auditreqs> section III for the definition of a
     "Government CA").
 9.  Deleted November 2015
 10. New intermediate CA certificates must meet the requirements for
@@ -447,7 +447,7 @@ In the event of a Security Incident, the CA must:
 
 1.  Notify Microsoft as soon as is practical but no later than 24 hours
     from the time of the Security Incident by (a) completing the form
-    located at http://aka.ms/rootnotify, and (b) sending the completed
+    located at https://aka.ms/rootnotify, and (b) sending the completed
     form to rootnotify\@microsoft.com. The form requires the following
     information (if known at the time):
     -   Who detected the incident.
@@ -502,10 +502,10 @@ In the event of a Security Incident, the CA must:
 
 ## See also
 
--   [Program
-    Participants](http://aka.ms/trustcertpartners)
--   [Audit Requirements](http://aka.ms/auditreqs)
--   [SHA1 Deprecation Guidelines](http://aka.ms/sha1)
+-   [Release Notes](Release-Notes.md)
+-   [Program Participants](Participants-List.md)
+-   [Audit Requirements](Audit-Requirements.md)
+-   [SHA1 Deprecation Guidelines](https://aka.ms/sha1)
 
 
 

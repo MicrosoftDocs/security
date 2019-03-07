@@ -1,2 +1,15 @@
-- name: Index
-  href: index.md
+- name: Program Requirements
+  href: program-requirements.md
+- name: Audit Requirements
+  href: audit-requirements.md
+- name: Release Notes
+  href: Release-Notes.md
+  items:
+  - name: 2019 releases
+    items:
+    - name: February 2019
+      href: feb2019.md
+    - name: January 2019
+      href: jan2019.md
+- name: List of Participants
+  href: Participants-List.md

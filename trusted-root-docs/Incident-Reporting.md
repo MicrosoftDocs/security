@@ -31,49 +31,6 @@ ms.topic: conceptual
     Microsoft believes that the PKI is compromised; as to affect the
     security posture of a large number of Microsoft's customers.
 
- 
-
-## Microsoft's Rights in the Event of an Incident
-
-In the event of a Security Incident, Microsoft may at its sole
-discretion, do any of the following:
-
-1.  In an Exceptional Circumstance, immediately revoke any certificate
-    the CA or any sub-CA has enrolled in the Program, otherwise it may
-    revoke any certificate after providing seven days' notice to the CA.
-2.  Microsoft may take action including, but not limited to marking
-    files signed by compromised certificates as malware, blocking web
-    navigation to sites served with compromised Server Authentication
-    certificates, preventing delivery of mail signed by compromised
-    Secure Email certificates, etc.
-3.  Request that the CA make specific reports at a periodic interval to
-    be determined by Microsoft.
-4.  Specify a due date for the CA to submit to Microsoft a final
-    Security Incident report.
-5.  Communicate with affected third parties.
-6.  Require the CA to employ, at the CA's expense, a third-party
-    investigator to investigate the Security Incident and prepare the
-    final Security Incident report.
-7.  Disqualify any Qualifying Audit and require the CA to perform a new
-    Qualifying Audit at the CA's sole expense.
-
- 
-
-## Microsoft's Responsibilities in the Event of a Security Incident
-
-In the event that Microsoft exercises any of the rights described above,
-Microsoft will:
-
-1.  Notify the CA, in writing, of its intentions 7 days prior to
-    Microsoft's action, except under Exceptional Circumstances, in which
-    case Microsoft will make reasonable efforts to communicate with the
-    CA prior to taking action; and
-2.  Allow the CA to propose an alternate course of action, in which
-    case, Microsoft will consider reasonable alternatives but reserves
-    the right to reject such proposals if it deems the proposed course
-    of action not to be in its customers' best interest.
-
- 
 
 ## CA Responsibilities in the Event of an Incident
 
@@ -130,3 +87,43 @@ In the event of a Security Incident, the CA must:
     -   Detailed description of how the issue was closed.
 5.  If requested by Microsoft, a complete investigative and technical
     report of the compromise.
+
+## Microsoft's Rights in the Event of an Incident
+
+In the event of a Security Incident, Microsoft may at its sole
+discretion, do any of the following:
+
+1.  In an Exceptional Circumstance, immediately revoke any certificate
+    the CA or any sub-CA has enrolled in the Program, otherwise it may
+    revoke any certificate after providing seven days' notice to the CA.
+2.  Microsoft may take action including, but not limited to marking
+    files signed by compromised certificates as malware, blocking web
+    navigation to sites served with compromised Server Authentication
+    certificates, preventing delivery of mail signed by compromised
+    Secure Email certificates, etc.
+3.  Request that the CA make specific reports at a periodic interval to
+    be determined by Microsoft.
+4.  Specify a due date for the CA to submit to Microsoft a final
+    Security Incident report.
+5.  Communicate with affected third parties.
+6.  Require the CA to employ, at the CA's expense, a third-party
+    investigator to investigate the Security Incident and prepare the
+    final Security Incident report.
+7.  Disqualify any Qualifying Audit and require the CA to perform a new
+    Qualifying Audit at the CA's sole expense.
+
+ 
+
+## Microsoft's Responsibilities in the Event of a Security Incident
+
+In the event that Microsoft exercises any of the rights described above,
+Microsoft will:
+
+1.  Notify the CA, in writing, of its intentions 7 days prior to
+    Microsoft's action, except under Exceptional Circumstances, in which
+    case Microsoft will make reasonable efforts to communicate with the
+    CA prior to taking action; and
+2.  Allow the CA to propose an alternate course of action, in which
+    case, Microsoft will consider reasonable alternatives but reserves
+    the right to reject such proposals if it deems the proposed course
+    of action not to be in its customers' best interest.

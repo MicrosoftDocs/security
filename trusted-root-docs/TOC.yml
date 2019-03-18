@@ -4,12 +4,5 @@
   href: audit-requirements.md
 - name: Release Notes
   href: Release-Notes.md
-  items:
-     - name: March 2019
-       href: mar2019.md
-     - name: February 2019
-       href: feb2019.md
-     - name: January 2019
-       href: jan2019.md
 - name: List of Participants
   href: Participants-List.md

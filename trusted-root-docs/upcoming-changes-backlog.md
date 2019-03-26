@@ -14,12 +14,18 @@ The Microsoft Trusted Root Certificate Program releases changes to our Root Stor
 2.	Certificate Authority (CA)-initiated and CA-confirmed deprecations will occur on even numbered months
 3.	Microsoft-initiated deprecations will occur in February and August releases
 
-Changes to the CTL are generally pushed at the end of the month listed. However, NotBefore and Disable dates are set on the first of the month to allow for accurate testing.
+Changes to the CTL are generally pushed at the end of the month listed in the release column. However, NotBefore and Disable dates are set on the first of the month to allow for accurate testing.
+ 
+ 
+ > [!NOTE]
+ > If a release is listed as TBD, it has not yet been scheduled. If there is a month in the release column, the change has been scheduled. Confirmed changes can also be found with the release notes at <http://aka.ms/rootupdates>. 
+ > Modifications to scheduled releases can only be guaranteed until the 10th of the month of release. We will try to accomodate for modifications requested after that date.
 
-If a release is listed as TBD, it has not yet been scheduled. If there is a month in the release column, the change has been scheduled. 
-Confirmed changes can also be found with the release notes here <http://aka.ms/rootupdates>. 
 
-Please note, the changes listed are accurate at the time of posting but are subject to change. If you are a certificate user who has active certificates chaining up to a deprecating root,  please reach out to your CA to understand how changes may impact your certificates. 
+Please note, the changes listed are accurate at the time of posting but are subject to change. 
+
+If you are a certificate user who has active certificates chaining up to a deprecating root,  please reach out to your CA to understand how changes may impact your certificates. 
+
 Update packages will be available for download and testing at <https://aka.ms/CTLDownload> 
 
 ## CA-Requested and CA-Confirmed Root Changes 

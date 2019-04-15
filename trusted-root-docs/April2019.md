@@ -7,7 +7,7 @@ ms.author: kasirota
 ms.topic: conceptual
 ---
 
-# March 2019 Deployment Notice (15/March) - Microsoft Trusted Root Program 
+# April 2019 Deployment Notice (15/April) - Microsoft Trusted Root Program 
 
 On Tuesday, April 30th, 2019, Microsoft will release a planned update to the Microsoft Trusted Root Certificate Program.
 

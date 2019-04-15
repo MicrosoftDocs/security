@@ -47,6 +47,6 @@ This release will **NotBefore the server authentication EKU** in the following r
 >[!NOTE]
 > * Windows 10 allows us to stop trusting roots or EKU's using the "NotBefore" or "Disable" properties, both of which allow us to remove certain capabilities of the root certificate without complete removal. These features are not available on versions prior to Windows 10. Earlier versions of Windows will be unaffected by this change. 
 
-> * The NotBefore and Disable dates are set for the first day of the month. Please refer here for more information on what will be affected with each action: 
+> * The NotBefore and Disable dates are set for the first day of the release month. This means that all certificates issued after April 1st will be affected.  
 
 > * The update package will be available for download and testing at: <https://aka.ms/CTLDownload>

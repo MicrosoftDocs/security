@@ -11,11 +11,16 @@ ms.topic: conceptual
 
 Below are listed the different changes that Microsoft Trusted Root Program can make at any given time.
 
-First of the release month date refers to the 1st day of the month the release is scheduled in. For example, if a change is scheduled for the April release, first of the release month date is April 1st. The release date will be day the changes are pushed, which is generally the last Tuesday of the Month. 
+First day of the release month date refers to the 1st day of the month the release is scheduled in. For example, if a change is scheduled for the April release, first day of the release month date is April 1st. The release date will be day the changes are pushed, which is generally the last Tuesday of the Month. 
 
-## Action: NotBefore the Server Authentication EKU only
-Definition of action: This root will no longer be able to issue TLS certificates that will be trusted. Any certificates issued before the first of the release month NotBefore date will continue to be trusted. All other EKUs will be unaffected. 
+
+## Action: NotBefore
+Definition of action: This root will no longer be able to issue certificates that will be trusted. Any certificates issued before the first day of the release month NotBefore date will continue to be trusted.
+
+
+## Action: NotBefore an EKU only
+Definition of action: This root will no longer be able to issue certificates for that EKU that will be trusted. Any certificates issued before the first day of the release month NotBefore date will continue to be trusted. All other EKUs will be unaffected. This is most commonly completed on the Server Authentication EKU or the Code Signing EKU. 
 
 
 ## Action: Disable
-Definition of action: All existing certs, with the exception of code-signing and time-stamping certs, will no longer be trusted. Code-signing and time-stamping certificates will no longer be able to issue code-sign or time-stamp code that will be trusted. Anything that is signed after the April 1st disable date will be seen as revoked. Code that has been signed or timestamps issued before the April 1st disable date will continue to function. 
+Definition of action: All existing certs, with the exception of code-signing and time-stamping certs, will no longer be trusted. Code-signing and time-stamping certificates will no longer be able to issue code-sign or time-stamp code that will be trusted. Anything that is signed after the first day of the release month disable date will be seen as revoked. Code that has been signed or timestamps issued before the first day of the release month disable date will continue to function. 

@@ -37,9 +37,8 @@ ms.topic: conceptual
 In the event of a Security Incident, the CA must:
 
 1.  Notify Microsoft as soon as is practical but no later than 24 hours
-    from the time of the Security Incident by (a) completing the form
-    located at https://aka.ms/rootnotify, and (b) sending the completed
-    form to rootnotify\@microsoft.com. The form requires the following
+    from the time of the Security Incident by (a) completing the following questions below and (b) sending the completed
+    form to msroot\@microsoft.com. The form requires the following
     information (if known at the time):
     -   Who detected the incident.
     -   If available, who perpetrated the incident.

@@ -44,14 +44,3 @@ The reason this action will be taken is listed in the table. If there are any co
 | Release |	CA Name 	| Root Name | Root Thumbprint | Type of Change | Reason for deprecation | 
 |---|---|---|---|---|---|
 | August | KarinaCA | Karina Root | 111111111111111111111 | NotBefore | Audits > 1 old on CCADB. |
-
-
-## Pending applications
-
-This queue is listed in order of application. 
-
-| Release |	Certificate Authority Name 	| Root Name | Root Thumbprint | Notes |
-|---|---|---|---|---|
-| TBD | KarinaCA | Karina Root | 111111111111111111111 | NotBefore |  |
-| TBD | KarinaCA | Karina Root | 111111111111111111111 | Add |  |
-

@@ -127,28 +127,37 @@ your auditor to make sure the Qualifying Attestation Letter fulfills the
 following requirements. If the audit letter fails in any of these
 categories, a mail will be sent back to the CA asking them to update
 their audit letter.
-
+#### ALL CAS 
 1.  Audit letter must be written in English
 2.  Audit letter must be in a "Text Searchable" PDF format.
-3.  Audits conducted by certified WebTrust auditors must have their
-    audit letters uploaded to
-    [https://cert.webtrust.org](https://cert.webtrust.org/).
-4.  Audits conducted by certified ETSI auditors must have their audit
-    letters uploaded to their auditor's website.
-5.  Audit letter must have the auditor's name in the audit letter as
+3.  Audit letter must have the auditor's name in the audit letter as
     recorded in CCADB.   
-6.  Audit letter must list either SHA1 thumbprint or SHA256 thumbprint
+4.  Audit letter must list either SHA1 thumbprint or SHA256 thumbprint
     of audited roots.
-7.  Audit letter must list the date the audit letter was written.
-8.  Audit letter must state the start and end dates of the period that
+5.  Audit letter must list the date the audit letter was written.
+6.  Audit letter must state the start and end dates of the period that
     was audited.  Please note that this is not the period the auditor
     was on-site.
-9.  The audit letter must include the full name of the CA as recorded in
+7.  The audit letter must include the full name of the CA as recorded in
     CCADB.
-10. Audit letter must list the audit standards that were used during the
+8. Audit letter must list the audit standards that were used during the
     audit. Please reference WebTrust/ETSI guidelines or
     <https://aka.ms/auditreqs> and list the full name and version of the
     audit standards referenced.
+    
+#### CAs submitting Webtrust audits
+1.  Audits conducted by certified WebTrust auditors must have their
+    audit letters uploaded to
+    [https://cert.webtrust.org](https://cert.webtrust.org/). 
+
+    
+#### CAs submitting ETSI audits
+1.  Audits conducted by certified ETSI auditors should have their audit
+    letters uploaded to their auditor's website. If the auditor does not post on their website, the CA must provide the name and email of the auditor when submitting the audit letter. A Microsoft representative will reach out to the auditor to verify the authenticity of the letter. 
+2. CAs may submit audits with either the EN 319 411-2 or 411-2 policy. 
+    
+#### CAs submitting equivalent audits
+
 
 ### F. Audit Submission
 
@@ -199,19 +208,21 @@ msroot\@microsoft.com to have the EKU status set to "NotBefore."
 
 
 Note 1: If a CA uses an ETSI-based audit, it must perform a **full**
-audit annually, and Microsoft will not accept surveillance audits.
+audit annually, and Microsoft will not accept surveillance audits. 
 
-| | EN 319 411-1: DVCP, OVCP or PTC-BR policies | EN 319 411-1: EVCP or EVCP+ policies | EN 319 411-1: EVCG policy | EN 319 411-1: LCP, NCP, NCP+ policies | EN 319 411-2 v2.1.1 |
+| | EN 319 411-1: DVCP, OVCP or PTC-BR policies | EN 319 411-1: EVCP policy | EN 319 411-2: QCP-w policy (based on EN 319 411-1, EVCP) | EN 319 411-1: LCP, NCP, NCP+ policies | EN 319 411-2: QCP-n, QCP-n-qscd, QCP-l, QCP-l-qscd policies (based on EN 319 411-1, NCP/NCP+)  |
 | --- | --- | --- | --- | --- | --- |
 | Server Authentication (Non-EV) | X |  |  |  |  |
 | Server Authentication (non-EV) and Client Authentication only | X |  |  |  |  |
 | Server Authentication (EV) |  | X |  |  |  |
-| Server Authentication (EV) and Client Authentication only |  | X |  |  |  |
-| EV Code Signing |  |  | X |  |  |
-| Non-EV Code Signing and Time stamping | X |  |  | X | X |
-| Secured Email (S/MIME) | X |  |  | X | X |
-| Client Authentication (without Server Authentication) | X |  |  | X | X |
-| Document Signing | X |  |  | X | X |
+| Server Authentication (EV) and Client Authentication only |  | X | X |  |  |
+| EV Code Signing |  |  | X | X |  |
+| Non-EV Code Signing and Time stamping |  |  |  | X | X |
+| Secured Email (S/MIME) |  |  |  | X | X |
+| Client Authentication (without Server Authentication) |  |  |  | X | X |
+| Document Signing |  |  |  | X | X |
+
+In addition, the audit  
 
 ------------------------------------------------------------------------
 

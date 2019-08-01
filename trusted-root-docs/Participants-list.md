@@ -1,7 +1,7 @@
 ---
 title: List of Participants - Microsoft Trusted Root Program 
 description: This document provides details about the participating Certificate Authorities in the Microsoft Trusted Root Program. 
-ms.date: 03/04/2019
+ms.date: 08/01/2019
 ms.service: security
 ms.author: kasirota
 ms.topic: conceptual

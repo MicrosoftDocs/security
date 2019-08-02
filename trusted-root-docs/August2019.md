@@ -29,7 +29,7 @@ This release will **disable** the following roots :
 13. ComSign Advanced Security CA	\ 80BF3DE9A41D768D194B293C85632CDBC8EA8CF7
 14. SwissSign Platinum Root CA – G3	\ A1E7C600AA4170E5B74BC94F9B9703EDC261B4B9
 15. GeoTrust Global CA 2	\ A9E9780814375888F20519B06D2B0D2B6016907D
-16. DigiCert Global Root	97817950D81C9670CC34D809CF794431367EF474
+16. DigiCert Global Root	\ 97817950D81C9670CC34D809CF794431367EF474
 
 
 This release will **NotBefore** the following roots:
@@ -75,7 +75,7 @@ This release will **add** the following roots:
 2. TrustFactory SSL Root Certificate Authority	\ D11478E8E5FB62540593D22C51570D014EAC76D8
 
 This release will **modify the EV OIDs** for the following root: 
-1. HiPKI Root CA - G1	6A92E4A8EE1bEC964537E3295749CD96E3E5D260
+1. HiPKI Root CA - G1	\ 6A92E4A8EE1bEC964537E3295749CD96E3E5D260
 
    
 

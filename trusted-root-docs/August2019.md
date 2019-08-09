@@ -63,8 +63,7 @@ This release will **NotBefore the code signing EKU** for the following roots:
 
 
 This release will **remove** the following roots: 
-1. Izenpe.com	\ 30779E9315022E94856A3FF8BCF815B082F9AEFD
-2. ePKI Root Certification Authority - G2	\ 81AC5DE150D1B8DE5D3E0E266A136B737862D322
+1. ePKI Root Certification Authority - G2	\ 81AC5DE150D1B8DE5D3E0E266A136B737862D322
 
 This release will **add** the following roots: 
 1. TrustFactory Client Root Certificate Authority \ F90CC7521EAB33F228EAA835E4E50292E31D281E

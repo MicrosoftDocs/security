@@ -1,3 +1,24 @@
+---
+# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
+
+# Mandatory fields.
+title: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
+description: Threat Mitigation/Security Feature Technical Guidance
+author: Andrew Marshall
+ms.author: Andrew Marshall
+ms.date: 8/14/2019
+ms.topic: article
+# Use ms.service for services or ms.prod for on-prem products. Remove the # before the relevant field.
+# ms.service: service-name-from-white-list
+ms.prod: security
+
+# Optional fields. Don't forget to remove # if you need a field.
+# ms.custom: can-be-multiple-comma-separated
+# ms.reviewer: MSFT-alias-of-reviewer
+# manager: MSFT-alias-of-manager-or-PM-counterpart
+
+---
+
 TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
 ========================
 

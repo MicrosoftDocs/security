@@ -78,7 +78,7 @@ dependencies. Figure 1 illustrates TLS version selection and certificate
 binding as distinctly separate actions. This is the default
 functionality:
 
-![Default TLS Version selection](.\media/dltlsfig1.jpg)
+![Default TLS Version selection](.\media\dltlsfig1.jpg)
 
 Figure 1: Default TLS Version selection and Certificate Binding
 Functionality
@@ -100,7 +100,7 @@ functionality available higher up the stack, where the TLS session is
 bound to the certificate, so a specific minimum TLS version can be
 assigned as described in Figure 2 below.
 
-![Enforcing minimum TLS version for a selected certificate](.\media/dltlsfig2.jpg)
+![Enforcing minimum TLS version for a selected certificate](.\media\dltlsfig2.jpg)
 
 Figure 2: Disable Legacy TLS feature enforcing minimum TLS version for a
 selected certificate, Secure.contoso.com.
@@ -117,7 +117,7 @@ WinHTTP APIs.
 Create a site binding for the SSL Certificate “secure.contoso.com” as
 shown below, then check “Disable Legacy TLS” and click OK.
 
-![IIS UI](.\media/dltlsfig3.jpg)
+![IIS UI](.\media\dltlsfig3.jpg)
 
 ### Option \#2: PowerShell
 

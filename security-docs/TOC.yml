@@ -3,6 +3,8 @@
   href: index.md
   expanded: true
   items: 
+  - name: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
+    href: Disable-Legacy-TLS.md
   - name: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
     href: Securing-Artificial-Intelligence-Machine-Learning.md
   - name: Solving the TLS 1.0 Problem

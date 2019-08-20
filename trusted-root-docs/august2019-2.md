@@ -1,7 +1,6 @@
 ---
 title: August 2019 Deployment Notice - Microsoft Trusted Root Program
 description: This document provides details about the changes made monthly to the root store.
-author: Karina Sirota
 ms.date: 08/14/2019
 ms.service: security
 ms.author: kasirota

@@ -5,7 +5,7 @@
 title: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
 description: Threat Mitigation/Security Feature Technical Guidance
 author: Andrew Marshall
-ms.author: AMarshall
+ms.author: AMarshal
 ms.date: 8/14/2019
 ms.topic: article
 # Use ms.service for services or ms.prod for on-prem products. Remove the # before the relevant field.

@@ -27,13 +27,13 @@ This post is authored by
 Andrew Marshall, Principal Security Program Manager, Customer Security
 and Trust
 
-Gabriel Montenegro, Principal Program Manager, Windows Stack R&D
+Gabriel Montenegro, Principal Program Manager, Core Networking
 
-Niranjan Inamdar, Senior Software Engineer, Windows Stack R&D
+Niranjan Inamdar, Senior Software Engineer, Core Networking
 
 Michael Brown, Senior Software Engineer, Internet Information Services
 
-Ivan Pashov, Principal Software Engineering Lead, Windows Stack R&D
+Ivan Pashov, Principal Software Engineering Lead, Core Networking
 
 August 2019
 

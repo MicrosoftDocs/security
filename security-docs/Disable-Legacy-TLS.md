@@ -110,7 +110,7 @@ Feature deployment guidance
 
 The Disable Legacy TLS feature can be deployed through the Internet
 Information Services (IIS) Server UI, via PowerShell commands or C++
-WinHTTP APIs.
+HTTP.sys APIs.
 
 ### Option \#1: IIS UI configuration
 

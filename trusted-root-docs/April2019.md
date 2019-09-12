@@ -3,6 +3,7 @@ title: April 2019 Deployment Notice (15/March) - Microsoft Trusted Root Program
 description: This document provides details about the changes made in April 2019 to the root store.
 ms.date: 04/15/2019
 ms.service: security
+author: kasirota
 ms.author: kasirota
 ms.topic: conceptual
 ---

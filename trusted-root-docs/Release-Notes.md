@@ -3,6 +3,7 @@ title: Release notes - Microsoft Trusted Root Certificate Program
 description: This document provides details about the changes made monthly to the root store.
 ms.date: 07/11/2019
 ms.service: security
+author: kasirota
 ms.author: kasirota
 ms.topic: conceptual
 ---
@@ -26,6 +27,8 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
+| September | September 24 | [Deployment Notice Posted September 24](Sept2019.md) |
+| August | August 14 | [Deployment Notice Posted August 14](august2019-2.md) |
 | August | August 14 | [Deployment Notice Posted August 14](august2019-2.md) |
 | August | August 27 | [Deployment Notice Posted August 2](august2019.md) |
 | July | July 10 | [Deployment Notice Posted July 11](july2019-2.md) |

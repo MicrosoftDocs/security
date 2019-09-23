@@ -12,14 +12,18 @@ ms.topic: conceptual
 
 ## Current List
 
+You can view the complete and up-to-date list here: https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT. 
 
-You can download the complete, most recent list here: [Microsoft Trusted
-Root Program Participants as of July
-2019](https://gallery.technet.microsoft.com/Trusted-Root-Program-86901ff5)
+You can download the complete, most recent list here: https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFTCSV. 
+
+Both of these lists are created from the data in the Common CA Database, of which Microsoft is a partner. More information can be found here: https://www.ccadb.org/. 
 
  
 ## Legacy Lists
 
+- [Microsoft Trusted
+Root Program Participants as of July
+2019](https://gallery.technet.microsoft.com/Trusted-Root-Program-86901ff5)
 -  [Microsoft Trusted
 Root Program Participants as of March
 2019](https://gallery.technet.microsoft.com/Trusted-Root-Program-381e7a89)

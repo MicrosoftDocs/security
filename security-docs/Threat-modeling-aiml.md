@@ -44,9 +44,9 @@ protect Microsoft products and services against these threats.  This section is 
 This guidance is organized around an Adversarial Machine Learning Threat
 Taxonomy created by Ram Shankar Siva Kumar, David O’Brien, Kendra
 Albert, Salome Viljoen, and Jeffrey Snover entitled “[Failure Modes in
-Machine Learning](LINK).” For incident management guidance on triaging
+Machine Learning](https://docs.microsoft.com/en-us/security/failure-modes-machine-learning).” For incident management guidance on triaging
 security threats detailed in this document, refer to the [SDL Bug Bar
-for AI/ML Threats.](LINK)
+for AI/ML Threats.](https://docs.microsoft.com/en-us/security/bugbar-aiml-threats)
 
 ## Key New Considerations in Threat Modeling: Changing the way you view Trust Boundaries
 
@@ -145,10 +145,9 @@ for AI/ML Threats.](LINK)
 
 ### Related Threats and Mitigations in this Document
 
-- [Adversarial Perturbation](#_#1:_Adversarial_Perturbation) (all
-    variants)
+- Adversarial Perturbation (all variants)
 
-- [Data Poisoning](#_#2a_Targeted_Data) (all variants)
+- Data Poisoning (all variants)
 
 ### Example Attacks
 
@@ -205,11 +204,11 @@ for AI/ML Threats.](LINK)
 
 ### Related Threats and Mitigations in this Document
 
-- [Membership Inference](#_#4_Membership_Inference)
+- Membership Inference
 
-- [Model Inversion](#_#3_Model_Inversion)
+- Model Inversion
 
-- [Model Stealing](#_#5_Model_Stealing)
+- Model Stealing
 
 ### Example Attacks
 
@@ -284,18 +283,17 @@ for AI/ML Threats.](LINK)
 
 ### Related Threats and Mitigations in this Document
 
-- [Neural Net Reprogramming](#_#6_Neural_Net)
+- Neural Net Reprogramming
 
-- [Adversarial Examples in the physical
-    domain](#_#7_Adversarial_Example)
+- Adversarial Examples in the physical domain
 
-- [Malicious ML Providers Recovering Training Data](#_#8_Malicious_ML)
+- Malicious ML Providers Recovering Training Data
 
-- [Attacking the ML Supply Chain](#_#9_Attacking_the)
+- Attacking the ML Supply Chain
 
-- [Backdoored Model](#_#11_Exploit_software)
+- Backdoored Model
 
-- [Compromised ML-specific dependencies](#_#11_Exploit_software)
+- Compromised ML-specific dependencies
 
 ### Example Attacks
 
@@ -334,9 +332,9 @@ This can also be manifested by trolls using certain target words in a
 way that the AI will ban them, effectively denying service to legitimate
 users with a name matching a “banned” word.
 
-![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm1.jpg)[24]
+![Attack Difficulty](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm1.jpg)[24]
 
-## Variant \#1a: Targeted misclassification
+## Variant \#1a: Targeted Misclassification
 
 
 In this case attackers generate a sample that is not in the input class
@@ -348,9 +346,9 @@ is exploiting some specific aspects of the target model. The adversary
 gives an input sample that is not a legitimate sample, but the target
 system classifies it as a legitimate class.
 
-#### Examples 
+#### Examples
 
-![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm2.jpg)[6]
+![Targeted Misclassification](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm2.jpg)[6]
 
 #### Mitigations
 
@@ -371,7 +369,7 @@ system classifies it as a legitimate class.
     learning model on the adversarial examples. In contrast, the natural
     inputs are robust in attribution space.
 
-    ![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm3.jpg)[20]
+    ![Attribution-driven Causal Analysis](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm3.jpg)[20]
 
 These approaches can make machine learning models more resilient to
 adversarial attacks because fooling this two-layer cognition system
@@ -407,7 +405,7 @@ learning attacks which force targeted misclassification, there may be no
 discernable attacker traffic footprint as the probing attacks can be
 carried out offline.
 
-#### Examples 
+#### Examples
 
 Forcing benign emails to be classified as spam or causing a malicious
 example to go undetected. These are also known as model evasion or
@@ -440,7 +438,7 @@ Proactive/Protective Actions
     function of the classifier smoother (increasing the input margin).
     This includes correct classifications with lower confidence rates.
 
-> ![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm4.jpg)
+> ![Adversarial Training](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm4.jpg)
 
 Invest in developing monotonic classification with selection of
 monotonic features. This ensures that the adversary will not be able
@@ -459,9 +457,9 @@ class [13].
     and selecting a threshold value, system can output the correct
     prediction for legitimate examples and rejects adversarial inputs.
 
--   ![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm5.jpg)
+- ![Feature squeezing 1](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm5.jpg)
 
--   -   ![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm6.jpg)[18]
+- ![Feature squeezing 2](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm6.jpg)[18]
 
 - Certified Defenses against Adversarial Examples [22]: The authors
     propose a method based on a semi-definite relaxation that outputs a
@@ -485,7 +483,7 @@ Remote Elevation of Privilege
 
 Critical
 
-## Variant \#1c: Random misclassification
+## Variant \#1c: Random Misclassification
 
 This is a special variation where the attacker’s target classification
 can be anything other than the legitimate source classification. The
@@ -495,7 +493,7 @@ classification being used in the future [3].
 
 ##### Examples
 
-![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm7.jpg)
+![Random Misclassification](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm7.jpg)
 
 ##### Mitigations
 
@@ -519,7 +517,7 @@ indistinguishable from legitimate alerts [3].
 
 ##### Examples 
 
-![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm8.jpg)
+![Confidence Reduction](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm8.jpg)
 
 ##### Mitigations
 
@@ -639,7 +637,7 @@ to the classification matching the target [4].
 
 ##### Examples 
 
-![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm9.jpg)[4]
+![Model Inversion](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm9.jpg)[4]
 
 ##### Mitigations
 
@@ -673,7 +671,7 @@ model’s training dataset or not[1]. Researchers were able to predict a
 patient’s main procedure (e.g: Surgery the patient went through) based
 on the attributes (e.g: age, gender, hospital)[1].
 
-![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm10.jpg)[12]
+![Membership Inference](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm10.jpg)[12]
 
 ##### Mitigations
 
@@ -897,7 +895,7 @@ mis-classifications, such as classifying a certain virus as
 non-malicious[1]. This is a risk in ML-as-a-Service model-generation
 scenarios.
 
-![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm11.jpg)[12]
+![Backdoor Machine Learning](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm11.jpg)[12]
 
 ##### Traditional Parallels
 ---------------------

@@ -50,7 +50,7 @@ for AI/ML Threats.](LINK)
 
 ## Key New Considerations in Threat Modeling: Changing the way you view Trust Boundaries
 
-### Assume compromise/poisoning of the data you train from as well as the data provider. Learn to detect anomalous and malicious data entries as well as being able to distinguish between and recover from them.
+### Assume compromise/poisoning of the data you train from as well as the data provider. Learn to detect anomalous and malicious data entries as well as being able to distinguish between and recover from them
 
 ### Summary
 
@@ -323,7 +323,6 @@ class="anchor"></span></span></span></span></span></span></span></span></span></
 ## \#1: Adversarial Perturbation
 
 #### Description
------------
 
 In perturbation-style attacks, the attacker stealthily modifies
 the query to get a desired response from a production-deployed model[1].
@@ -338,7 +337,6 @@ users with a name matching a “banned” word.
 
 ## Variant \#1a: Targeted misclassification
 
-
 In this case attackers generate a sample that is not in the input class
 of the target classifier but gets classified by the model as that
 particular input class. The adversarial sample can appear like random
@@ -348,7 +346,7 @@ is exploiting some specific aspects of the target model. The adversary
 gives an input sample that is not a legitimate sample, but the target
 system classifies it as a legitimate class.
 
-#### Examples 
+#### Examples
 
 ![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm2.jpg)[6]
 
@@ -407,7 +405,7 @@ learning attacks which force targeted misclassification, there may be no
 discernable attacker traffic footprint as the probing attacks can be
 carried out offline.
 
-#### Examples 
+#### Examples
 
 Forcing benign emails to be classified as spam or causing a malicious
 example to go undetected. These are also known as model evasion or
@@ -461,7 +459,7 @@ class [13].
 
 -   ![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm5.jpg)
 
--   -   ![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm6.jpg)[18]
+-   ![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm6.jpg)[18]
 
 - Certified Defenses against Adversarial Examples [22]: The authors
     propose a method based on a semi-definite relaxation that outputs a
@@ -517,7 +515,7 @@ take the form of a large number of false positives meant to overwhelm
 administrators or monitoring systems with fraudulent alerts
 indistinguishable from legitimate alerts [3].
 
-##### Examples 
+##### Examples
 
 ![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm8.jpg)
 
@@ -595,7 +593,6 @@ Critical
 
 ## \#2b Indiscriminate Data Poisoning
 
-
 ##### Description
 
 Goal is to ruin the quality/integrity of the data set being attacked.
@@ -606,7 +603,7 @@ garbage-in/garbage-out situation. Once detected, triage needs to
 determine the extent of data that has been breached and
 quarantine/retrain.
 
-##### Examples 
+##### Examples
 
 A company scrapes a well-known and trusted website for oil futures data
 to train their models. The data provider’s website is subsequently
@@ -637,7 +634,7 @@ attacks in the biometric community [16, 17] This is accomplished by
 finding the input which maximizes the confidence level returned, subject
 to the classification matching the target [4].
 
-##### Examples 
+##### Examples
 
 ![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm9.jpg)[4]
 
@@ -671,7 +668,7 @@ critical.
 The attacker can determine whether a given data record was part of the
 model’s training dataset or not[1]. Researchers were able to predict a
 patient’s main procedure (e.g: Surgery the patient went through) based
-on the attributes (e.g: age, gender, hospital)[1].
+on the attributes (e.g: age, gender, hospital) [1].
 
 ![](https://github.com/MicrosoftDocs/Security/blob/master/security-docs/media/tm10.jpg)[12]
 
@@ -766,7 +763,7 @@ By means of a specially crafted query from an adversary, Machine
 learning systems can be reprogrammed to a task that deviates from the
 creator’s original intent [1].
 
-##### Examples 
+##### Examples
 
 Weak access controls on a facial recognition API enabling 3<sup>rd</sup>
 parties to incorporate into apps designed to harm Microsoft customers,
@@ -800,7 +797,7 @@ Description
 An adversarial example is an input/query from a malicious entity sent
 with the sole aim of misleading the machine learning system [1]
 
-##### Examples 
+##### Examples
 
 These examples can manifest in the physical domain, like a self-driving
 car being tricked into running a stop sign because of a certain color of

@@ -1,3 +1,16 @@
+---
+# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
+
+# Mandatory fields.
+title: AI/ML Pivots to the Security Development Lifecycle Bug Bar
+description: Machine Learning Bug Triage Guidance
+author: Andrew Marshall
+ms.author: Andrew Marshall
+ms.date: 11/11/2019
+ms.topic: article
+ms.prod: security
+---
+
 # AI/ML Pivots to the Security Development Lifecycle Bug Bar
 
 By Andrew Marshall, Jugal Parikh, Emre Kiciman and Ram Shankar Siva
@@ -14,12 +27,12 @@ It is intended to be used as a reference for the triage of AI/ML-related
 security issues.
 For more detailed threat analysis and mitigation information, refer to
 [Threat Modeling AI/ML Systems and
-Dependencies](https://docs.microsoft.com/en-us/security/threat-modeling-aiml).
+Dependencies](https://docs.microsoft.com/security/threat-modeling-aiml).
 
 This guidance is organized around and extensively references the
 Adversarial Machine Learning Threat Taxonomy "Failure Modes in Machine Learning" created by Ram Shankar Siva
 Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover entitled “[Failure Modes in
-Machine Learning](https://docs.microsoft.com/en-us/security/failure-modes-machine-learning).
+Machine Learning](https://docs.microsoft.com/security/failure-modes-machine-learning).
 Note that while the research this content is based on addresses both
 intentional/malicious and accidental behaviors in ML failure modes, this
 bug bar supplement focuses entirely on intentional/malicious behaviors

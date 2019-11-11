@@ -1,3 +1,16 @@
+---
+# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
+
+# Mandatory fields.
+title: Failure Modes in Machine Learning
+description: Machine Learning Threat Taxonomy
+author: Andrew Marshall
+ms.author: Andrew Marshall
+ms.date: 11/11/2019
+ms.topic: article
+ms.prod: security
+---
+
 # Failure Modes in Machine Learning
 
 <table style="text-align:center" border="0">
@@ -16,6 +29,8 @@
     <td><p><a href="mailto:sviljoen@cyber.harvard.edu">Salome Viljoen</a></p></td>
   </tr>
 </table>
+
+November 2019
 
 ## Introduction & Background
 
@@ -68,14 +83,14 @@ failure modes together in one place and addresses the following needs:
     effectuate tangible engineering outcomes.  The skillsets of security engineers and data scientists do not typically overlap, so we needed to equip them to have depth-technical discussions with each other during security design reviews and bug triage.
 
     *Results:* Using this taxonomy as a lens, Microsoft modified its
-    [Security Development Lifecycle](https://www.microsoft.com/en-us/securityengineering/sdl/) process for its entire organization.
+    [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/) process for its entire organization.
     Specifically, data scientists and security engineers at Microsoft now
     share the common language of this taxonomy, allowing them to more effectively threat model their ML systems before
     deploying to production; Security Incident Responders also have a
     bug bar to triage these net-new threats specific to ML, the standard process for vulnerabilities triage and response used by the Microsoft Security Response Center and all Microsoft product teams.  
     <p>
 
-See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](https://docs.microsoft.com/en-us/security/threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](https://docs.microsoft.com/en-us/security/bugbar-aiml-threats).
+See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](https://docs.microsoft.com/security/threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](https://docs.microsoft.com/security/bugbar-aiml-threats).
 
 ## How to use this document
 
@@ -85,7 +100,7 @@ mitigations to these failure modes here, as defenses are scenario-specific
 and tie in with the threat model and system architecture under consideration.  Options presented for threat mitigation are based on current research with the expectation that those defenses will evolve over time as well.
 
 For engineers, we recommend browsing through the overview of possible
-failure modes and jumping into the [threat modeling document](https://docs.microsoft.com/en-us/security/threat-modeling-aiml). This way,
+failure modes and jumping into the [threat modeling document](https://docs.microsoft.com/security/threat-modeling-aiml). This way,
 engineers can identify threats, attacks, vulnerabilities and use the
 framework to plan for countermeasures where available. We then refer you
 to the bug bar that maps these new vulnerabilities in the taxonomy
@@ -443,7 +458,7 @@ Targeted attacks on speech-to-text." arXiv preprint arXiv:1801.01944
 Poisoning attacks and countermeasures for regression learning." *arXiv
 preprint arXiv:1804.00308* (2018)
 
-[11] [https://blogs.microsoft.com/blog/2016/03/25/learning-tays-introduction/](../customXml/item1.xml)
+[11] [https://blogs.microsoft.com/blog/2016/03/25/learning-tays-introduction/]
 
 [12] Fredrikson M, Jha S, Ristenpart T. 2015. Model inversion attacks
 that exploit confidence information and basic countermeasures
@@ -474,9 +489,9 @@ Implementations." *arXiv preprint arXiv:1711.11008* (2017).
 Identifying vulnerabilities in the machine learning model supply
 chain." *arXiv preprint arXiv:1708.06733* (2017)
 
-[21] [https://www.wired.com/story/machine-learning-backdoors/](../customXml/item2.xml)
+[21] [https://www.wired.com/story/machine-learning-backdoors/]
 
-[22] [https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml](../customXml/item3.xml)
+[22] [https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml]
 
 [23] Amodei, Dario, et al. "Concrete problems in AI safety." *arXiv
 preprint arXiv:1606.06565* (2016).

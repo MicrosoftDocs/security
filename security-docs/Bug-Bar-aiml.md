@@ -1,3 +1,16 @@
+---
+# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
+
+# Mandatory fields.
+title: AI/ML Pivots to the Security Development Lifecycle Bug Bar
+description: Machine Learning Bug Triage Guidance
+author: Andrew Marshall
+ms.author: Andrew Marshall
+ms.date: 11/11/2019
+ms.topic: article
+ms.prod: security
+---
+
 # AI/ML Pivots to the Security Development Lifecycle Bug Bar
 
 By Andrew Marshall, Jugal Parikh, Emre Kiciman and Ram Shankar Siva

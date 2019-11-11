@@ -1,3 +1,16 @@
+---
+# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
+
+# Mandatory fields.
+title: Failure Modes in Machine Learning
+description: Machine Learning Threat Taxonomy
+author: Andrew Marshall
+ms.author: Andrew Marshall
+ms.date: 11/11/2019
+ms.topic: article
+ms.prod: security
+---
+
 # Failure Modes in Machine Learning
 
 <table style="text-align:center" border="0">
@@ -16,6 +29,8 @@
     <td><p><a href="mailto:sviljoen@cyber.harvard.edu">Salome Viljoen</a></p></td>
   </tr>
 </table>
+
+November 2019
 
 ## Introduction & Background
 

@@ -1,3 +1,16 @@
+---
+# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
+
+# Mandatory fields.
+title: Threat Modeling AI/ML Systems and Dependencies
+description: Threat Mitigation/Security Feature Technical Guidance
+author: Andrew Marshall
+ms.author: Andrew Marshall
+ms.date: 11/11/2019
+ms.topic: article
+ms.prod: security
+---
+
 # Threat Modeling AI/ML Systems and Dependencies
 
 By Andrew Marshall, Jugal Parikh, Emre Kiciman and Ram Shankar Siva

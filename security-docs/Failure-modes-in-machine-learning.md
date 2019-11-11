@@ -13,19 +13,22 @@ ms.prod: security
 
 # Failure Modes in Machine Learning
 
-<table style="text-align:center" border="0">
+<table style="text-align:left" border="0">
   <tr>
     <th>Microsoft Corporation</th>
-    <th>Berkman Klein Center for Internet and Society at Harvard University</th>
     <th>Harvard Law School</th>
+    <th>Berkman Klein Center for Internet and Society at Harvard University</th>
+    
   </tr>
   <tr>
     <td><p><a href="mailto:ram.shankar@microsoft.com">Ram Shankar Siva Kumar</a></p></td>
-    <td><p><a href="mailto:dobrien@cyber.harvard.edu">David O’Brien</a></p></td>
     <td><p><a href="mailto:kalbert@law.harvard.edu">Kendra Albert</a></p></td>
+    <td><p><a href="mailto:dobrien@cyber.harvard.edu">David O’Brien</a></p></td>
+    
   </tr>
   <tr>
     <td><p><a href="mailto:jsnover@microsoft.com">Jeffrey Snover</a></p></td>
+    <td><p><a> </a></p></td>
     <td><p><a href="mailto:sviljoen@cyber.harvard.edu">Salome Viljoen</a></p></td>
   </tr>
 </table>

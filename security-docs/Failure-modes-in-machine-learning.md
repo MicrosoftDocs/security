@@ -458,7 +458,7 @@ Targeted attacks on speech-to-text." arXiv preprint arXiv:1801.01944
 Poisoning attacks and countermeasures for regression learning." *arXiv
 preprint arXiv:1804.00308* (2018)
 
-[11] [https://blogs.microsoft.com/blog/2016/03/25/learning-tays-introduction/](../customXml/item1.xml)
+[11] [https://blogs.microsoft.com/blog/2016/03/25/learning-tays-introduction/]
 
 [12] Fredrikson M, Jha S, Ristenpart T. 2015. Model inversion attacks
 that exploit confidence information and basic countermeasures
@@ -489,9 +489,9 @@ Implementations." *arXiv preprint arXiv:1711.11008* (2017).
 Identifying vulnerabilities in the machine learning model supply
 chain." *arXiv preprint arXiv:1708.06733* (2017)
 
-[21] [https://www.wired.com/story/machine-learning-backdoors/](../customXml/item2.xml)
+[21] [https://www.wired.com/story/machine-learning-backdoors/]
 
-[22] [https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml](../customXml/item3.xml)
+[22] [https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml]
 
 [23] Amodei, Dario, et al. "Concrete problems in AI safety." *arXiv
 preprint arXiv:1606.06565* (2016).

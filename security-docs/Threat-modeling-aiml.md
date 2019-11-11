@@ -44,9 +44,9 @@ protect Microsoft products and services against these threats.  This section is 
 This guidance is organized around an Adversarial Machine Learning Threat
 Taxonomy created by Ram Shankar Siva Kumar, David O’Brien, Kendra
 Albert, Salome Viljoen, and Jeffrey Snover entitled “[Failure Modes in
-Machine Learning](LINK).” For incident management guidance on triaging
+Machine Learning](https://docs.microsoft.com/en-us/security/failure-modes-machine-learning).” For incident management guidance on triaging
 security threats detailed in this document, refer to the [SDL Bug Bar
-for AI/ML Threats.](LINK)
+for AI/ML Threats.](https://docs.microsoft.com/en-us/security/bugbar-aiml-threats)  All of these are living documents which will evolve over time with the threat landscape.
 
 ## Key New Considerations in Threat Modeling: Changing the way you view Trust Boundaries
 
@@ -145,10 +145,9 @@ for AI/ML Threats.](LINK)
 
 ### Related Threats and Mitigations in this Document
 
-- [Adversarial Perturbation](#_#1:_Adversarial_Perturbation) (all
-    variants)
+- Adversarial Perturbation (all variants)
 
-- [Data Poisoning](#_#2a_Targeted_Data) (all variants)
+- Data Poisoning (all variants)
 
 ### Example Attacks
 
@@ -205,11 +204,11 @@ for AI/ML Threats.](LINK)
 
 ### Related Threats and Mitigations in this Document
 
-- [Membership Inference](#_#4_Membership_Inference)
+- Membership Inference
 
-- [Model Inversion](#_#3_Model_Inversion)
+- Model Inversion
 
-- [Model Stealing](#_#5_Model_Stealing)
+- Model Stealing
 
 ### Example Attacks
 
@@ -284,18 +283,17 @@ for AI/ML Threats.](LINK)
 
 ### Related Threats and Mitigations in this Document
 
-- [Neural Net Reprogramming](#_#6_Neural_Net)
+- Neural Net Reprogramming
 
-- [Adversarial Examples in the physical
-    domain](#_#7_Adversarial_Example)
+- Adversarial Examples in the physical domain
 
-- [Malicious ML Providers Recovering Training Data](#_#8_Malicious_ML)
+- Malicious ML Providers Recovering Training Data
 
-- [Attacking the ML Supply Chain](#_#9_Attacking_the)
+- Attacking the ML Supply Chain
 
-- [Backdoored Model](#_#11_Exploit_software)
+- Backdoored Model
 
-- [Compromised ML-specific dependencies](#_#11_Exploit_software)
+- Compromised ML-specific dependencies
 
 ### Example Attacks
 
@@ -790,7 +788,6 @@ offender’s account.
 Important to Critical
 
 ## \#7 Adversarial Example in the Physical domain (bits-\>atoms)
-=============================================================
 
 Description
 
@@ -825,7 +822,6 @@ traditional software.
 Critical
 
 ## \#8 Malicious ML providers who can recover training data 
-=========================================================
 
 ##### Description
 
@@ -852,7 +848,6 @@ face of malicious ML-as-a-Service providers.
 Important if data is PII, Moderate otherwise
 
 ## \#9 Attacking the ML Supply Chain
-=================================
 
 ##### Description
 

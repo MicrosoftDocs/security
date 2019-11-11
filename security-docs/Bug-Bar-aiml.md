@@ -7,18 +7,19 @@ November 2019
 
 This document is a deliverable of the Microsoft [AETHER Engineering Practices for
 AI Working
-Group](https://aether.microsoft.com/working-group/engineering-practices-for-ai/)
-and functions as a supplement to the existing [SDL bug
-bar](https://microsoft.sharepoint.com/:w:/r/teams/securityassurance/_layouts/15/Doc.aspx?sourcedoc=%7BBA3828DB-A620-4727-A2BC-7A6FE03A4C25%7D&file=SDL_BugBar_CurrentVersion%20(1).docx&action=default&mobileredirect=true) used to triage traditional security vulnerabilities.
+Group](https://news.microsoft.com/2018/03/29/satya-nadella-email-to-employees-embracing-our-future-intelligent-cloud-and-intelligent-edge/)
+and functions as a supplement to the existing SDL bug
+bar used to triage traditional security vulnerabilities.
 It is intended to be used as a reference for the triage of AI/ML-related
-security issues encountered in our online services and client software.
+security issues.
 For more detailed threat analysis and mitigation information, refer to
 [Threat Modeling AI/ML Systems and
-Dependencies](https://teams.microsoft.com/l/file/43941588-A4E1-42E7-B7FE-9CF9F87494A2?tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47&fileType=docx&objectUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FAETHEREngineeringPracticesSecurityWorkstream%2FShared%20Documents%2FGeneral%2FThreat%20Modeling%20Guidance%2FThreat%20Modeling%20AI%20ML%20Systems%20and%20Dependencies.docx&baseUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FAETHEREngineeringPracticesSecurityWorkstream&serviceName=teams&threadId=19:2528f06977de4c1aa87b6e77663a4932@thread.skype&groupId=fc45d340-a475-4595-8979-65d774202716).
+Dependencies](https://docs.microsoft.com/en-us/security/threat-modeling-aiml).
 
 This guidance is organized around and extensively references the
 Adversarial Machine Learning Threat Taxonomy "Failure Modes in Machine Learning" created by Ram Shankar Siva
-Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover.
+Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover entitled “[Failure Modes in
+Machine Learning](https://docs.microsoft.com/en-us/security/failure-modes-machine-learning).
 Note that while the research this content is based on addresses both
 intentional/malicious and accidental behaviors in ML failure modes, this
 bug bar supplement focuses entirely on intentional/malicious behaviors
@@ -36,7 +37,7 @@ that would result in a security incident and/or deployment of a fix.
 <tr class="odd">
 <td align="left">Data Poisoning</td>
 <td align="left">Important to Critical</td>
-<td align="left"><p>Corrupting the training data - The end goal of the attacker is to contaminate the machine model generated <em><strong>in the training phase</strong></em>, so that predictions on new data will be modified in the testing phase.</p>
+<td align="left"><p>Corrupting the training data - The end goal of the attacker is to contaminate the machine model generated <em>in the training phase</em>, so that predictions on new data will be modified in the testing phase.</p>
 <p>In targeted poisoning attacks, the attacker wants to misclassify specific examples to cause specific actions to be taken or omitted.</p>
 <p>Submitting AV software as malware to force its misclassification as malicious and eliminate the use of targeted AV software on client systems. </p>
 <p>A company scrapes a well-known and trusted website for futures data to train their models. The data provider’s website is subsequently compromised via SQL Injection attack. The attacker can poison the dataset at will and the model being trained has no notion that the data is tainted.</p></td>
@@ -84,7 +85,7 @@ that would result in a security incident and/or deployment of a fix.
 <tr class="even">
 <td align="left">Adversarial Perturbation</td>
 <td align="left">Important to Critical</td>
-<td align="left"><p>In perturbation-style attacks, the attacker stealthily modifies the query to get a desired response from a <em><strong>production-deployed model</strong></em>. This is a breach of model input integrity which leads to fuzzing-style attacks where the end result isn’t necessarily an access violation or EOP, but instead compromises the model’s classification performance.</p>
+<td align="left"><p>In perturbation-style attacks, the attacker stealthily modifies the query to get a desired response from a <em>production-deployed model</em>. This is a breach of model input integrity which leads to fuzzing-style attacks where the end result isn’t necessarily an access violation or EOP, but instead compromises the model’s classification performance.</p>
 <p>This can be manifested by trolls using certain target words in a way that the AI will ban them, effectively denying service to legitimate users with a name matching a “banned” word.</p>
 <p>Forcing benign emails to be classified as spam or causing a malicious example to go undetected. These are also known as model evasion or mimicry attacks.</p>
 <p>Attacker can craft inputs to reduce the confidence level of correct classification, especially in high-consequence scenarios. This can also take the form of a large number of false positives meant to overwhelm administrators or monitoring systems with fraudulent alerts indistinguishable from legitimate alerts.</p></td>

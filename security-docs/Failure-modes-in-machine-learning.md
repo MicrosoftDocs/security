@@ -83,14 +83,14 @@ failure modes together in one place and addresses the following needs:
     effectuate tangible engineering outcomes.  The skillsets of security engineers and data scientists do not typically overlap, so we needed to equip them to have depth-technical discussions with each other during security design reviews and bug triage.
 
     *Results:* Using this taxonomy as a lens, Microsoft modified its
-    [Security Development Lifecycle](https://www.microsoft.com/en-us/securityengineering/sdl/) process for its entire organization.
+    [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/) process for its entire organization.
     Specifically, data scientists and security engineers at Microsoft now
     share the common language of this taxonomy, allowing them to more effectively threat model their ML systems before
     deploying to production; Security Incident Responders also have a
     bug bar to triage these net-new threats specific to ML, the standard process for vulnerabilities triage and response used by the Microsoft Security Response Center and all Microsoft product teams.  
     <p>
 
-See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](https://docs.microsoft.com/en-us/security/threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](https://docs.microsoft.com/en-us/security/bugbar-aiml-threats).
+See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](https://docs.microsoft.com/security/threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](https://docs.microsoft.com/security/bugbar-aiml-threats).
 
 ## How to use this document
 
@@ -100,7 +100,7 @@ mitigations to these failure modes here, as defenses are scenario-specific
 and tie in with the threat model and system architecture under consideration.  Options presented for threat mitigation are based on current research with the expectation that those defenses will evolve over time as well.
 
 For engineers, we recommend browsing through the overview of possible
-failure modes and jumping into the [threat modeling document](https://docs.microsoft.com/en-us/security/threat-modeling-aiml). This way,
+failure modes and jumping into the [threat modeling document](https://docs.microsoft.com/security/threat-modeling-aiml). This way,
 engineers can identify threats, attacks, vulnerabilities and use the
 framework to plan for countermeasures where available. We then refer you
 to the bug bar that maps these new vulnerabilities in the taxonomy

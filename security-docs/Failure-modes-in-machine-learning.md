@@ -1,22 +1,39 @@
+---
+# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
+
+# Mandatory fields.
+title: Failure Modes in Machine Learning
+description: Machine Learning Threat Taxonomy
+author: Andrew Marshall
+ms.author: Andrew Marshall
+ms.date: 11/11/2019
+ms.topic: article
+ms.prod: security
+---
+
 # Failure Modes in Machine Learning
 
-<table style="text-align:center" border="0">
+<table style="text-align:left" border="0">
   <tr>
     <th>Microsoft Corporation</th>
-    <th>Berkman Klein Center for Internet and Society at Harvard University</th>
     <th>Harvard Law School</th>
+    <th>Berkman Klein Center for Internet and Society at Harvard University</th>
+    
   </tr>
   <tr>
     <td><p><a href="mailto:ram.shankar@microsoft.com">Ram Shankar Siva Kumar</a></p></td>
-    <td><p><a href="mailto:dobrien@cyber.harvard.edu">David O’Brien</a></p></td>
     <td><p><a href="mailto:kalbert@law.harvard.edu">Kendra Albert</a></p></td>
+    <td><p><a href="mailto:dobrien@cyber.harvard.edu">David O’Brien</a></p></td>
+    
   </tr>
   <tr>
     <td><p><a href="mailto:jsnover@microsoft.com">Jeffrey Snover</a></p></td>
+    <td><p><a> </a></p></td>
     <td><p><a href="mailto:sviljoen@cyber.harvard.edu">Salome Viljoen</a></p></td>
   </tr>
 </table>
-Special thanks to Andrew Marshall and the AETHER Security Engineering Workgroup at Microsoft
+
+November 2019
 
 ## Introduction & Background
 
@@ -43,7 +60,7 @@ single place.
 We would like to point out that there are other taxonomies and
 frameworks that individually highlight intentional failure
 modes[1]<sup>,</sup>[2] and unintentional failure
-modes[3]<sup>,</sup>[4] . Our classification brings the two separate
+modes[3]<sup>,</sup>[4]. Our classification brings the two separate
 failure modes together in one place and addresses the following needs:
 
 1.  Our goal was to equip software developers, security incident
@@ -69,25 +86,24 @@ failure modes together in one place and addresses the following needs:
     effectuate tangible engineering outcomes.  The skillsets of security engineers and data scientists do not typically overlap, so we needed to equip them to have depth-technical discussions with each other during security design reviews and bug triage.
 
     *Results:* Using this taxonomy as a lens, Microsoft modified its
-    [Security Development Lifecycle](https://www.microsoft.com/en-us/securityengineering/sdl/) process for its entire organization.
+    [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/) process for its entire organization.
     Specifically, data scientists and security engineers at Microsoft now
     share the common language of this taxonomy, allowing them to more effectively threat model their ML systems before
     deploying to production; Security Incident Responders also have a
     bug bar to triage these net-new threats specific to ML, the standard process for vulnerabilities triage and response used by the Microsoft Security Response Center and all Microsoft product teams.  
     <p>
-    Microsoft's AI/ML Threat Modeling Guidance specific to the threats described here can be found at [LINKTOTMGUIDANCEINPROD](LINKTOTMGUIDANCEINPROD)
-    Microsoft's SDL Bug Bar Pivots for Machine Learning vulnerabilities can be found at [LINKTOBugBarINPROD](LINKTOBugBarINPROD)
 
+See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](https://docs.microsoft.com/security/threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](https://docs.microsoft.com/security/bugbar-aiml-threats).
 
 ## How to use this document
 
 At the outset, we acknowledge that this is a living document which will evolve over time with the threat landscape.
 We also do not prescribe technological
 mitigations to these failure modes here, as defenses are scenario-specific
-and tie in with the threat model and system architecture under consideration.  Microsoft's [LINKTOTMGUIDANCEINPROD](LINKTOTMGUIDANCEINPROD) recommends options for mitigation based on current research with the expectation that those mitigations will evolve over time as well.
+and tie in with the threat model and system architecture under consideration.  Options presented for threat mitigation are based on current research with the expectation that those defenses will evolve over time as well.
 
 For engineers, we recommend browsing through the overview of possible
-failure modes and jumping into the threat modeling document[LINKTOTMGUIDANCEINPROD](LINKTOTMGUIDANCEINPROD). This way,
+failure modes and jumping into the [threat modeling document](https://docs.microsoft.com/security/threat-modeling-aiml). This way,
 engineers can identify threats, attacks, vulnerabilities and use the
 framework to plan for countermeasures where available. We then refer you
 to the bug bar that maps these new vulnerabilities in the taxonomy
@@ -253,7 +269,7 @@ fields:
     <th>Description</th>
     <th>Type of Compromise</th>
     <th>Scenario</th>
-    <th>Is the attacker [technologically] misusing the system?   </th>
+    <!-- <th>Is the attacker [technologically] misusing the system?   </th> -->
   </tr>
   <tr>
     <td>1 </td>
@@ -263,7 +279,7 @@ fields:
     <td>Image: Noise is added to an X-ray image, which makes the predictions go from normal scan to abnormal  [1][Blackbox]<p>  
     Text translation: Specific characters are manipulated to result in incorrect translation. The attack can suppress specific word or can even remove the word completely[2][Blackbox and Whitebox]<p>
     Speech: Researchers showed how given a speech waveform, another waveform can be exactly replicated but transcribes into a totally different text[3][Whitebox but may be extended to blackbox]</td>
-    <td>In a blackbox setting no special privileges are required by the attacker to perform the attack. The attacker generates the perturbations offline and queries the system legitimately.<p>There seems to be no technological access violations<p>Just like a legitimate user sends in a legitimate image, the attacker sends in a corrupted image for classification to purposely confuse the system.     </td>
+    <!-- <td>In a blackbox setting no special privileges are required by the attacker to perform the attack. The attacker generates the perturbations offline and queries the system legitimately.<p>There seems to be no technological access violations<p>Just like a legitimate user sends in a legitimate image, the attacker sends in a corrupted image for classification to purposely confuse the system.     </td> -->
   </tr>
   <tr>
     <td>2</td>
@@ -271,15 +287,15 @@ fields:
     <td>The goal of the attacker is to contaminate the machine model generated in the training phase, so that predictions on new data will be modified in the testing phase <p>Targeted: In targeted poisoning attacks, the attacker wants to misclassify specific examples <p>Indiscriminate: The aim here is to cause DoS like effect, which makes the system. </td>
     <td>Integrity</td>
     <td>In a medical dataset where the goal is to predict the dosage of anticoagulant drug Warfarin using demographic information, etc. Researchers introduced malicious samples at 8% poisoning rate, which changed dosage by 75.06% for half of patients[4][Blackbox] <p>In the Tay chatbot, future conversations were tainted because a fraction of the past conversations were used to train the system via feedback[5] [Blackbox] </td>
-    <td>No special privileges required by the attacker. In a closed system like social media platforms, the attacker needs to be a user of the platform.<p> No technological access violation<p>The authorized attacker sends chaff traffic to the endpoint, just like an authorized user would send legitimate traffic to the end point.        </td>
+    <!-- <td>No special privileges required by the attacker. In a closed system like social media platforms, the attacker needs to be a user of the platform.<p> No technological access violation<p>The authorized attacker sends chaff traffic to the endpoint, just like an authorized user would send legitimate traffic to the end point.        </td> -->
   </tr>
   <tr>
     <td>3</td>
     <td>Model Inversion  </td>
     <td>The private features used in machine learning models can be recovered</td>
     <td>Confidentiality; </td>
-    <td>Researchers were able to recover private training data used to train the algorithm[6] The authors were able to reconstruct faces, by just the name and access to the model to the point where Mechanical turks could use the photo to identify an individual from aline-up with 95% accuracy.  The authors were also able to extract specific information. Verbatim from [12] “In May 2014, Walt Hickey wrote an article for FiveThirtyEight’sDataLab section that attempted a statistical analysis of the connection between peoples’ steak preparation preferences and their propensity for risk-taking behaviors. To support the analysis, FiveThirtyEight commissioned a survey of 553 individuals from SurveyMonkey, which collected responses to questions such as: “Do you ever smoke cigarettes?”, “Have you ever cheated on your signiﬁcant other?”, and of course, “How do you like your steak prepared?”.Demographic characteristics such as age, gender, household income, education,and census region were also collected. We discarded rows that did not contain responses for the inﬁdelity question or the steak preparation question,resulting in a total of 332 rows for the inversion experiments. We used model inversion on the decision tree learned from this dataset to infer whether each participant responded “Yes” to the question about inﬁdelity” [Whitebox and Blackbox] </td>
-    <td>Technologically, it feels like the attacker is not misusing the system  -       No special privileges is required by the attacker to perform the attack.  -       There seems to be no technological access violations – Just like a legitimate user sends in a legitimate image, the attacker sends these specially craftedqueries to recover the private features.     </td>
+    <td>Researchers were able to recover private training data used to train the algorithm[6] The authors were able to reconstruct faces, by just the name and access to the model to the point where Mechanical turks could use the photo to identify an individual from aline-up with 95% accuracy.  The authors were also able to extract specific information.  [Whitebox and Blackbox][12] </td>
+    <!-- <td>Technologically, it feels like the attacker is not misusing the system  -       No special privileges is required by the attacker to perform the attack.  -       There seems to be no technological access violations – Just like a legitimate user sends in a legitimate image, the attacker sends these specially craftedqueries to recover the private features.     </td> -->
   </tr>
   <tr>
     <td>4</td>
@@ -287,7 +303,7 @@ fields:
     <td>The attacker can determine whether a given data record was part of the model’s training dataset or not</td>
     <td>Confidentiality </td>
     <td>Researchers were able to ay to predict a patient’s main procedure(e.g: Surgery the patient went through) based on the attributes (e.g: age,gender, hospital)[7][Blackbox]</td>
-    <td>Technologically, it feels like the attacker is not misusing the system  -       No special privileges is required by the attacker to perform the attack.  -       There seems to be no technological access violations – Just like a legitimate user sends in a legitimate image, the attacker sends these specially crafted queries to infer membership.    </td>
+    <!-- <td>Technologically, it feels like the attacker is not misusing the system  -       No special privileges is required by the attacker to perform the attack.  -       There seems to be no technological access violations – Just like a legitimate user sends in a legitimate image, the attacker sends these specially crafted queries to infer membership.    </td> -->
   </tr>
   <tr>
     <td>5</td>
@@ -295,7 +311,7 @@ fields:
     <td>The attackers recreate the underlying model by legitimately querying the model. The functionality of thenew model is same as that of the underlying model. </td>
     <td>Confidentiality</td>
     <td>Researchers successfully emulated the underlying algorithm from Amazon, BigML. For instance, in the BigML case, researchers were able to recover the model used to predict if someone should have a good/bad credit risk (German Credit Card dataset) using 1,150 queries and within 10 minutes[8]</td>
-    <td>Technologically, it feels like the attacker is not misusing the system  -       No special privileges is required by the attacker to perform the attack.  -       There seems to be no technological access violations – Just like a legitimate user sends in a legitimate image, the attacker sends these specially crafted queries to confuse the system   </td>
+    <!-- <td>Technologically, it feels like the attacker is not misusing the system  -       No special privileges is required by the attacker to perform the attack.  -       There seems to be no technological access violations – Just like a legitimate user sends in a legitimate image, the attacker sends these specially crafted queries to confuse the system   </td> -->
   </tr>
   <tr>
     <td>6</td>
@@ -303,7 +319,7 @@ fields:
     <td>By means of a specially crafted query from an adversary, Machine learning systems can be reprogrammed to a task that deviates from the creator’s original intent</td>
     <td>Integrity, Availability</td>
     <td>Demonstrated how ImageNet, a system used to classify one of several categories of images was repurposed to count squares. Authors end the paper with a hypothetical scenario: An attacker sends Captcha images to the computer vision classifier in a cloud hosted photos service to solve the image captchas to create spam accounts[9]  </td>
-    <td>Technologically, it feels like the attacker is not misusing the system  -       No special privileges is required by the attacker to perform the attack.  -       There seems to be no technological access violations – Just like a legitimate user sends in a legitimate image, the attacker sends these specially crafted queries to reprogram the system  </td>
+    <!-- <td>Technologically, it feels like the attacker is not misusing the system  -       No special privileges is required by the attacker to perform the attack.  -       There seems to be no technological access violations – Just like a legitimate user sends in a legitimate image, the attacker sends these specially crafted queries to reprogram the system  </td> -->
   </tr>
   <tr>
     <td>7</td>
@@ -312,7 +328,7 @@ fields:
     <td>Integrity</td>
     <td>Researchers 3D prints a rifle with custom texture that fools image recognition system into thinking it is a turtle[10] <p>
     Researchers construct sunglasses with a design that can now fool image recognition systems, and no longer recognize the faces correctly[11]</td>
-    <td> </td>
+    <!-- <td> </td> -->
   </tr>
   <tr>
     <td>8</td>
@@ -320,7 +336,7 @@ fields:
     <td> Malicious ML provider can query the model used by customer and recover customer’s training data</td>
     <td>Confidentiality </td>
     <td>Researchers show how a malicious provider presents a backdoored algorithm, wherein the private training data is recovered. They were able to reconstruct faces and texts, given the model alone.  [12] </td>
-    <td>Technologically, it feels like the provider is misusing the system. Providers don’t snoop around on customer’s data, and this is indirect violation of customer promises. </td>
+    <!-- <td>Technologically, it feels like the provider is misusing the system. Providers don’t snoop around on customer’s data, and this is indirect violation of customer promises. </td> -->
   </tr>
   <tr>
     <td>9</td>
@@ -328,7 +344,7 @@ fields:
     <td>Owing to large resources (data + computation) required to train algorithms, the current practice is to reuse models trained by large corporations, and modify them slightly for task at hand (e.g: ResNet is a popular image recognition model from Microsoft). These models are curated ina Model Zoo (Caffe hosts popular image recognition models). In this attack,the adversary attacks the models hosted in Caffe, thereby poisoning the well for anyone else. </td>
     <td>Integrity</td>
     <td>Researchers show how it is possible for an attacker to check in malicious code into one of the popular model. An unsuspecting ML developer downloads this model and uses it as part of the image recognition system in their code [14]. The authors show how in Caffe, there exists a model whose SHA1 hash doesNOT match the authors’ digest, indicating tampering. There are 22 models without any SHA1 hash for integrity checks at all. </td>
-    <td>Technologically, the attacker is misusing the system  -      Injecting malicious code into source repository feels like a technological violation.    Questions:  1.      Are Model repositories (typically open source)  failing their duty of care if they don’t check for adversarial manipulation of the models they host?  2.       Can the adversary who tampered with the models be punished under CFAA?  3.       Is the unsuspecting developer now liable for any damages incurred by the customer?  </td>
+    <!-- <td>Technologically, the attacker is misusing the system  -      Injecting malicious code into source repository feels like a technological violation.    Questions:  1.      Are Model repositories (typically open source)  failing their duty of care if they don’t check for adversarial manipulation of the models they host?  2.       Can the adversary who tampered with the models be punished under CFAA?  3.       Is the unsuspecting developer now liable for any damages incurred by the customer?  </td> -->
   </tr>
   <tr>
     <td>10</td>
@@ -336,7 +352,7 @@ fields:
     <td>Like in the “Attacking the ML Supply Chain”, In this attack scenario,the training process is either fully or partially outsourced to a malicious party who wants to provide the user with a trained model that contains a backdoor. The backdoored model would perform well on most inputs (including inputs that the end user may hold out as a validation set) but cause targeted misclassifications or degrade the accuracy of the model for inputs that satisfy some secret, attacker-chosen property, which we will refer to as the backdoor trigger</td>
     <td>Confidentiality, Integrity</td>
     <td>Researchers created a backdoored U.S. street sign classifier that identifies stop signs as speed limits only when a special sticker is added to the stop sign (backdoor trigger) 20 They are now extending this work to text processing systems, wherein specific words are replaced with the trigger being the speaker’s accent[15]</td>
-    <td>Technologically, it feels like the attacker is misusing the system. This is because backdooring the system feels like violating access controls put forth by the original system designer.  </td>
+    <!-- <td>Technologically, it feels like the attacker is misusing the system. This is because backdooring the system feels like violating access controls put forth by the original system designer.  </td> -->
   </tr>
   <tr>
     <td>11</td>
@@ -344,7 +360,7 @@ fields:
     <td>In this attack, the attacker does NOT manipulate the algorithms. Instead, exploits traditional software vulnerabilities such as buffer overflows. </td>
     <td>Confidentiality, Integrity, Availability, </td>
     <td>An adversary sends in corrupt input to an image recognition system that causes it to misclassify by exploiting a software bug in one of the dependencies.</td>
-    <td>Technologically, it feels like the attacker is misusing the system. This is because exploiting software dependencies equates to violating access controls put forth by the original system designer.  </td>
+    <!-- <td>Technologically, it feels like the attacker is misusing the system. This is because exploiting software dependencies equates to violating access controls put forth by the original system designer.  </td> -->
   </tr>
 </table>
 <p>
@@ -404,7 +420,11 @@ fields:
   </tr>
 </table>
 
+## Acknowledgements 
 
+We would like to thank Andrew Marshall, Magnus Nystrom, John Walton, John Lambert, Sharon Xia, Andi Comissoneru, Emre Kiciman, Jugal Parikh, Sharon Gillet, members of Microsoft’s AI and Ethics in Engineering and Research (AETHER) committee’s Security workstream, Amar Ashar, Samuel Klein, Jonathan Zittrain,  members of AI Safety Security Working Group at Berkman Klein for providing helpful feedback. We would also like to thank reviewers from 23 external partners, standards organization, and government organizations for shaping the taxonomy.  
+
+## Bibliography
 
 [1] Li, Guofu, et al. "Security Matters: A Survey on Adversarial Machine
 Learning." *arXiv preprint arXiv:1810.07339* (2018).
@@ -441,7 +461,7 @@ Targeted attacks on speech-to-text." arXiv preprint arXiv:1801.01944
 Poisoning attacks and countermeasures for regression learning." *arXiv
 preprint arXiv:1804.00308* (2018)
 
-[11] [https://blogs.microsoft.com/blog/2016/03/25/learning-tays-introduction/](../customXml/item1.xml)
+[11] [https://blogs.microsoft.com/blog/2016/03/25/learning-tays-introduction/]
 
 [12] Fredrikson M, Jha S, Ristenpart T. 2015. Model inversion attacks
 that exploit confidence information and basic countermeasures
@@ -465,8 +485,6 @@ adversarial examples." *arXiv preprint arXiv:1707.07397*(2017)
 Network Attacks on State-of-the-Art Face Recognition." *arXiv preprint
 arXiv:1801.00349* (2017).
 
-[18] 
-
 [19] Xiao, Qixue, et al. "Security Risks in Deep Learning
 Implementations." *arXiv preprint arXiv:1711.11008* (2017).
 
@@ -474,9 +492,9 @@ Implementations." *arXiv preprint arXiv:1711.11008* (2017).
 Identifying vulnerabilities in the machine learning model supply
 chain." *arXiv preprint arXiv:1708.06733* (2017)
 
-[21] [https://www.wired.com/story/machine-learning-backdoors/](../customXml/item2.xml)
+[21] [https://www.wired.com/story/machine-learning-backdoors/]
 
-[22] [https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml](../customXml/item3.xml)
+[22] [https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml]
 
 [23] Amodei, Dario, et al. "Concrete problems in AI safety." *arXiv
 preprint arXiv:1606.06565* (2016).

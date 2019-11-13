@@ -32,7 +32,7 @@ Dependencies](https://docs.microsoft.com/security/threat-modeling-aiml).
 This guidance is organized around and extensively references the
 Adversarial Machine Learning Threat Taxonomy "Failure Modes in Machine Learning" created by Ram Shankar Siva
 Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover entitled “[Failure Modes in
-Machine Learning](https://docs.microsoft.com/security/failure-modes-machine-learning).
+Machine Learning](https://docs.microsoft.com/security/failure-modes-in-machine-learning).
 Note that while the research this content is based on addresses both
 intentional/malicious and accidental behaviors in ML failure modes, this
 bug bar supplement focuses entirely on intentional/malicious behaviors
@@ -66,7 +66,7 @@ that would result in a security incident and/or deployment of a fix.
 </tr>
 <tr class="odd">
 <td align="left">Model Inversion</td>
-<td align="left">Critical</td>
+<td align="left">Important to Critical</td>
 <td align="left"><p>The private features used in machine learning models can be recovered. This includes reconstructing private training data that the attacker does not have access to. This is accomplished by finding the input which maximizes the confidence level returned, subject to the classification matching the target.</p>
 <p>Example: Reconstruction of facial recognition data from guessed or known names and API access to query the model.</p></td>
 </tr>
@@ -92,8 +92,8 @@ that would result in a security incident and/or deployment of a fix.
 <td align="left">Neural Net Reprogramming</td>
 <td align="left">Important to Critical</td>
 <td align="left"><p>By means of a specially crafted query from an attacker, ML systems can be reprogrammed to a task that deviates from the creator’s original intent</p>
-<p>Weak access controls on a facial recognition API enabling 3<sup>rd</sup> parties to incorporate into apps designed to harm Microsoft customers, such as a deep fakes generator.</p>
-<p>This is an abuse scenario, probably not something you SSIRP on</p></td>
+<p>Weak access controls on a facial recognition API enabling 3<sup>rd</sup> parties to incorporate into apps designed to harm users, such as a deep fakes generator.</p>
+<p>This is an abuse/account takedown scenario</p></td>
 </tr>
 <tr class="even">
 <td align="left">Adversarial Perturbation</td>

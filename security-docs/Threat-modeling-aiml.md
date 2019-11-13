@@ -379,7 +379,7 @@ system classifies it as a legitimate class.
     with high attribution leads to change indecision of the machine
     learning model on the adversarial examples. In contrast, the natural
     inputs are robust in attribution space.
-https:
+
     ![](https://docs.microsoft.com/en-us/security/media/tm3.jpg)[20]
 
 These approaches can make machine learning models more resilient to
@@ -449,7 +449,7 @@ Proactive/Protective Actions
     function of the classifier smoother (increasing the input margin).
     This includes correct classifications with lower confidence rates.
 
-> ![](https://docs.microsoft.com/en-us/security/media/tm4.jpg)
+![](https://docs.microsoft.com/en-us/security/media/tm4.jpg)
 
 Invest in developing monotonic classification with selection of
 monotonic features. This ensures that the adversary will not be able
@@ -468,9 +468,9 @@ class [13].
     and selecting a threshold value, system can output the correct
     prediction for legitimate examples and rejects adversarial inputs.
 
--   ![](https://docs.microsoft.com/en-us/security/media/tm5.jpg)
+    ![](https://docs.microsoft.com/en-us/security/media/tm5.jpg)
 
--   ![](https://docs.microsoft.com/en-us/security/media/tm6.jpg)[18]
+    ![](https://docs.microsoft.com/en-us/security/media/tm6.jpg)[18]
 
 - Certified Defenses against Adversarial Examples [22]: The authors
     propose a method based on a semi-definite relaxation that outputs a
@@ -574,15 +574,14 @@ systems.
 
     -Data Sanitization/ validation: remove poisoning samples from
         training data
+    -Bagging for fighting poisoning attacks [14]
 
-        -   Bagging for fighting poisoning attacks [14]
-
-        -   Reject-on-Negative-Impact (RONI) defense [15]
+    -Reject-on-Negative-Impact (RONI) defense [15]
 
     -Robust Learning: Pick learning algorithms that are robust in the
         presence of poisoning samples.
 
-        -   One such approach is described in [21] where authors address
+    -One such approach is described in [21] where authors address
             the problem of data poisoning in two steps: 1) introducing a
             novel robust matrix factorization method to recover the true
             subspace, and 2) novel robust principle component regression
@@ -879,7 +878,6 @@ Caffe, thereby poisoning the well for anyone else. [1]
 - App store unknowingly hosting malware
 
 ##### Mitigations
------------
 
 - Minimize 3rd-party dependencies for models and data where possible.
 
@@ -905,7 +903,6 @@ scenarios.
 ![](https://docs.microsoft.com/en-us/security/media/tm11.jpg)[12]
 
 ##### Traditional Parallels
----------------------
 
 -   Compromise of third-party security dependency
 
@@ -967,11 +964,10 @@ Variable; Up to Critical depending on the type of traditional software
 vulnerability.
 
 ## Bibliography
-============
 
-[1] Adversarial Machine Learning Threat Taxonomy, Ram Shankar Siva
+[1] Failure Modes in Machine Learning, Ram Shankar Siva
 Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover,
-publish data TBD
+<https://docs.microsoft.com/security/failure-modes-in-machine-learning>
 
 [2] AETHER Security Engineering Workstream, Data Provenance/Lineage
 v-team
@@ -1009,17 +1005,13 @@ Bindschaedler1 , Lei Wang2 , Diyue Bu2 , Xiaofeng Wang2 , Haixu Tang2 ,
 Carl A. Gunter1 , and Kai Chen3,4
 
 [10] Simon-Gabriel et al., Adversarial vulnerability of neural networks
-increases with input
-
-dimension, ArXiv 2018;
+increases with input dimension, ArXiv 2018;
 
 [11] Lyu et al., A unified gradient regularization family for
 adversarial examples, ICDM 2015
 
 [12] Wild Patterns: Ten Years After the Rise of Adversarial Machine
-Learning - NeCS 2019
-
-Battista Biggioa,b,∗, Fabio Roli
+Learning - NeCS 2019 Battista Biggioa, Fabio Roli
 
 [13] Adversarially Robust Malware Detection UsingMonotonic
 Classification Inigo Incer et al.

@@ -16,19 +16,21 @@ ms.prod: security
 <table style="text-align:left" border="0">
   <tr>
     <th>Microsoft Corporation</th>
-    <th>Harvard Law School</th>
     <th>Berkman Klein Center for Internet and Society at Harvard University</th>
     
   </tr>
   <tr>
     <td><p><a href="mailto:ram.shankar@microsoft.com">Ram Shankar Siva Kumar</a></p></td>
-    <td><p><a href="mailto:kalbert@law.harvard.edu">Kendra Albert</a></p></td>
     <td><p><a href="mailto:dobrien@cyber.harvard.edu">David O’Brien</a></p></td>
     
   </tr>
   <tr>
     <td><p><a href="mailto:jsnover@microsoft.com">Jeffrey Snover</a></p></td>
-    <td><p><a> </a></p></td>
+    <td><p><a href="mailto:kalbert@law.harvard.edu">Kendra Albert</a></p></td>
+    
+  </tr>
+  <tr>
+    <td></td>
     <td><p><a href="mailto:sviljoen@cyber.harvard.edu">Salome Viljoen</a></p></td>
   </tr>
 </table>
@@ -63,27 +65,11 @@ modes[1]<sup>,</sup>[2] and unintentional failure
 modes[3]<sup>,</sup>[4]. Our classification brings the two separate
 failure modes together in one place and addresses the following needs:
 
-1.  Our goal was to equip software developers, security incident
-    responders, lawyers and policy makers with a common vernacular when
-    talking about this problem. After developing the initial version of
-    the taxonomy last year, we worked with security and ML teams across
-    Microsoft, 23 external partners, standards organization, governments
-    to understand how stakeholders would use our framework. Based on
-    this usability study and their feedback, we iterated on the
-    framework.
+1.  The need to equip software developers, security incident responders, lawyers, and policy makers with a common vernacular to talk about this problem. After developing the initial version of the taxonomy last year, we worked with security and ML teams across Microsoft, 23 external partners, standards organization, and governments to understand how stakeholders would use our framework. Based on this usability study and stakeholder feedback, we iterated on the framework.
 
-    *Result:* . *Throughout the paper, we attempt to highlight how
-    machine learning failure modes are meaningfully different from
-    traditional software failures* For instance, when presented with an
-    ML failure mode, we frequently observed that software developers and
-    lawyers mentally mapped the failure mode to the
-    Confidentiality-Integrity-Availability triad, a concept in
-    traditional software security.
+    *Results:* When presented with an ML failure mode, we frequently observed that software developers and lawyers mentally mapped the ML failure modes to traditional software attacks like data exfiltration. So, throughout the paper, we attempt to highlight how machine learning failure modes are meaningfully different from traditional software failures from a technology and policy perspective.
 
-2.  We wanted engineers to build on top of the taxonomy and integrate
-    into their existing software development and security practices.
-    Broadly, we wanted the taxonomy to be more than educational tool and
-    effectuate tangible engineering outcomes.  The skillsets of security engineers and data scientists do not typically overlap, so we needed to equip them to have depth-technical discussions with each other during security design reviews and bug triage.
+2.  The need for a common platform for engineers to build on top of and to integrate into their existing software development and security practices. Broadly, we wanted the taxonomy to be more than an educational tool – we want it to effectuate tangible engineering outcomes.
 
     *Results:* Using this taxonomy as a lens, Microsoft modified its
     [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/) process for its entire organization.
@@ -92,6 +78,10 @@ failure modes together in one place and addresses the following needs:
     deploying to production; Security Incident Responders also have a
     bug bar to triage these net-new threats specific to ML, the standard process for vulnerabilities triage and response used by the Microsoft Security Response Center and all Microsoft product teams.  
     <p>
+
+3.  The need for a common vocabulary to describe these attacks amongst policymakers and lawyers. We believe that this  for describing different ML failure modes and analysis of how their harms might be regulated is a meaningful first step towards informed policy.
+
+    *Results:* This taxonomy is written for a wide interdisciplinary audience – so, policymakers who are looking at the issues from a general ML/AI perspective, as well as specific domains such as misinformation/healthcare should find the failure mode catalogue useful. We also highlight any applicable legal interventions to address the failure modes.
 
 See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](https://docs.microsoft.com/security/threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](https://docs.microsoft.com/security/bugbar-aiml-threats).
 
@@ -123,7 +113,7 @@ adequately capture emerging issues, what historical legal regimes or
 policy solutions might have dealt with similar harms, and where we
 should be especially sensitive to civil liberties issues.
 
-## Structure of the document
+## Document Structure
 
 In both the *Intentional Failure Modes* and *Unintentional Failure
 Modes* sections, we provide a brief definition of the attack, and
@@ -132,13 +122,11 @@ an illustrative example from literature.
 In the *Intentional Failure Modes* section, we provide the additional
 fields:
 
-1. The goal of the attack being carried out, expressed as a violation of
-    Confidentiality, Integrity or Availability.
+1. What does the attack attempt to compromise in the ML system – Confidentiality, Integrity or Availability? We define Confidentiality as assuring that the components of the ML system (data, algorithm, model) are accessible only by authorized parties; Integrity is defined as assuring that the ML system can be modified only by authorized parties; Availability is defined as an assurance that the ML system is accessible to authorized parties. Together, Confidentiality, Integrity and Availability is called the CIA triad. For each intentional failure mode, we attempt to identify which of the CIA triad is compromised.
 
-2. A distinction in the amount of access required to carry out the attack: Whether the attack is blackbox/whitebox style.  Black box means the attacker does NOT have direct access to training data, no knowledge of ML algorithms used, and no access to source code.  Whitebox-style attacks may have access to some/all of these things.
+2. How much knowledge is required to mount this attack – blackbox or whitebox? In Blackbox style attacks., the attacker does NOT have direct access to the training data, no knowledge of the ML algorithm used and no access to the source code of the model. The attacker only queries the model and observes the response. In a whitebox style attack the attacker has knowledge of either ML algorithm or access to the model source code.  
 
-3. Commentary on if the attacker is violating traditional technological
-    notion of access/authorization.
+3. Commentary on if the attacker is violating traditional technological notion of access/authorization.
 
 ## Intentionally-Motivated Failures Summary
 

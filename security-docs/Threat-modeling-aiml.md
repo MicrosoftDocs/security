@@ -344,7 +344,7 @@ This can also be manifested by trolls using certain target words in a
 way that the AI will ban them, effectively denying service to legitimate
 users with a name matching a “banned” word.
 
-![](https://docs.microsoft.com/en-us/security/media/tm1.jpg)[24]
+![](./media/tm1.jpg)[24]
 
 ## Variant \#1a: Targeted misclassification
 
@@ -359,7 +359,7 @@ system classifies it as a legitimate class.
 
 #### Examples
 
-![](https://docs.microsoft.com/en-us/security/media/tm2.jpg)[6]
+![](./media/tm2.jpg)[6]
 
 #### Mitigations
 
@@ -380,7 +380,7 @@ system classifies it as a legitimate class.
     learning model on the adversarial examples. In contrast, the natural
     inputs are robust in attribution space.
 
-    ![](https://docs.microsoft.com/en-us/security/media/tm3.jpg)[20]
+    ![](./media/tm3.jpg)[20]
 
 These approaches can make machine learning models more resilient to
 adversarial attacks because fooling this two-layer cognition system
@@ -449,7 +449,7 @@ Proactive/Protective Actions
     function of the classifier smoother (increasing the input margin).
     This includes correct classifications with lower confidence rates.
 
-![](https://docs.microsoft.com/en-us/security/media/tm4.jpg)
+![](./media/tm4.jpg)
 
 Invest in developing monotonic classification with selection of
 monotonic features. This ensures that the adversary will not be able
@@ -468,9 +468,9 @@ class [13].
     and selecting a threshold value, system can output the correct
     prediction for legitimate examples and rejects adversarial inputs.
 
-    ![](https://docs.microsoft.com/en-us/security/media/tm5.jpg)
+    ![](./media/tm5.jpg)
 
-    ![](https://docs.microsoft.com/en-us/security/media/tm6.jpg)[18]
+    ![](./media/tm6.jpg)[18]
 
 - Certified Defenses against Adversarial Examples [22]: The authors
     propose a method based on a semi-definite relaxation that outputs a
@@ -504,7 +504,7 @@ classification being used in the future [3].
 
 ##### Examples
 
-![](https://docs.microsoft.com/en-us/security/media/tm7.jpg)
+![](./media/tm7.jpg)
 
 ##### Mitigations
 
@@ -528,7 +528,7 @@ indistinguishable from legitimate alerts [3].
 
 ##### Examples
 
-![](https://docs.microsoft.com/en-us/security/media/tm8.jpg)
+![](./media/tm8.jpg)
 
 ##### Mitigations
 
@@ -646,7 +646,7 @@ to the classification matching the target [4].
 
 ##### Examples
 
-![](https://docs.microsoft.com/en-us/security/media/tm9.jpg)[4]
+![](./media/tm9.jpg)[4]
 
 ##### Mitigations
 
@@ -680,7 +680,7 @@ model’s training dataset or not[1]. Researchers were able to predict a
 patient’s main procedure (e.g: Surgery the patient went through) based
 on the attributes (e.g: age, gender, hospital) [1].
 
-![](https://docs.microsoft.com/en-us/security/media/tm10.jpg)[12]
+![](./media/tm10.jpg)[12]
 
 ##### Mitigations
 
@@ -900,7 +900,7 @@ mis-classifications, such as classifying a certain virus as
 non-malicious[1]. This is a risk in ML-as-a-Service model-generation
 scenarios.
 
-![](https://docs.microsoft.com/en-us/security/media/tm11.jpg)[12]
+![](./media/tm11.jpg)[12]
 
 ##### Traditional Parallels
 

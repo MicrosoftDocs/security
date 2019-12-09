@@ -15,7 +15,7 @@
     href: Solving-TLS1-Problem.md
   - name: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
     href: Disable-Legacy-TLS.md
-    - name: Government Security Program
+  - name: Government Security Program
     items:
     - name: Program Overview
       href: GSP/ProgramOverview.md

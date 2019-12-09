@@ -67,7 +67,6 @@ The reason this action will be taken is listed in the table. If there are any co
  | NotBefore | Audits > 1 old on CCADB. |
  | February 2020 | DocuSign (OpenTrust/Keynectis)  | 		OpenTrust Root CA G1	 | 	7991E834F7E2EEDD08950152E9552D14E958D57E
  | NotBefore | Audits > 1 old on CCADB. |
-
 | February 2020 | NLB Nova Ljubljanska Banka d.d. Ljubljana | NLB Nova Ljubljanska Banka d.d. Ljubljana | 0456F23D1E9C43AECB0D807F1C0647551A05F456 | NotBefore | Audits > 1 old on CCADB. |
 | February 2020 | Post of Slovenia | POSTarCA | B1EAC3E5B82476E9D50B1EC67D2CC11E12E0B491 | NotBefore | Audits > 1 old on CCADB. |
 | February 2020 | Post of Serbia | Posta CA Root | D6BF7994F42BE5FA29DA0BD7587B591F47A44F22 | NotBefore | Audits > 1 old on CCADB. |

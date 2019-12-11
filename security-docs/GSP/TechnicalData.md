@@ -4,6 +4,7 @@ description: This document provides details of the Technical Data offering that 
 ms.date: 02/19/2019
 ms.service: security
 ms.author: kellieac
+author: kellieac
 ms.topic: conceptual
 ---
 

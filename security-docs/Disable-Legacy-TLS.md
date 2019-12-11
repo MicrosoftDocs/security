@@ -4,6 +4,7 @@
 # Mandatory fields.
 title: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
 description: Threat Mitigation/Security Feature Technical Guidance
+author: Andrew Marshall
 ms.author: AMarshal
 ms.date: 8/14/2019
 ms.topic: article
@@ -51,7 +52,7 @@ dependencies](https://www.microsoft.com/security/blog/2019/02/11/solving-the-tls
 
 Now Microsoft is pleased to announce a powerful new feature in Windows
 to make your transition to a TLS 1.2+ world easier. Beginning with
-[KB4490481](https://support.microsoft.com/en-us/help/4490481/windows-10-update-kb4490481),
+[KB4490481](https://support.microsoft.com/help/4490481/windows-10-update-kb4490481),
 Windows Server 2019 now allows you to block weak TLS versions from being
 used with individual certificates you designate. We call this feature
 “Disable Legacy TLS” and it effectively enforces a TLS version and
@@ -177,7 +178,7 @@ Additionally, one can troubleshoot and test this feature with Netsh:
 Along with Disable Legacy TLS, the following additions have been made to
 HTTP.sys:
 
-- [HTTP\_SERVICE\_CONFIG\_SSL\_PARAM](https://docs.microsoft.com/en-us/windows/win32/api/http/ns-http-_http_service_config_ssl_param).DefaultFlags
+- [HTTP\_SERVICE\_CONFIG\_SSL\_PARAM](https://docs.microsoft.com/windows/win32/api/http/ns-http-_http_service_config_ssl_param).DefaultFlags
     now supports the following new values:
 
 - HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_ENABLE\_SESSION\_TICKET:

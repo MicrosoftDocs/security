@@ -4,6 +4,7 @@ description: This document provides an overview of the transparency centers thro
 ms.date: 02/19/2019
 ms.service: security
 ms.author: kellieac
+author: kellieac
 ms.topic: conceptual
 ---
 

@@ -5,6 +5,7 @@ description: This document contains recommendations and best practices for using
 ms.date: 12/03/2018
 ms.service: security
 ms.author: bcowper
+author: bcowper
 ms.topic: conceptual
 ---
 
@@ -170,62 +171,62 @@ number generators when randomness is required.
 CNG
 
   - Use
-    [<span class="underline">BCryptGenRandom</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/aa375458.aspx)
+    [<span class="underline">BCryptGenRandom</span>](https://msdn.microsoft.com/library/windows/desktop/aa375458.aspx)
     with the BCRYPT\_USE\_SYSTEM\_PREFERRED\_RNG flag
 
 CAPI
 
   - Use
-    [<span class="underline">CryptGenRandom</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379942.aspx)
+    [<span class="underline">CryptGenRandom</span>](https://msdn.microsoft.com/library/windows/desktop/aa379942.aspx)
     to generate random values.
 
 Win32/64
 
   - Legacy code can use
-    [<span class="underline">RtlGenRandom</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/aa387694.aspx)
+    [<span class="underline">RtlGenRandom</span>](https://msdn.microsoft.com/library/windows/desktop/aa387694.aspx)
     in kernel mode
 
   - New code should use
-    [<span class="underline">BCryptGenRandom</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/aa375458.aspx)
+    [<span class="underline">BCryptGenRandom</span>](https://msdn.microsoft.com/library/windows/desktop/aa375458.aspx)
     or
-    [<span class="underline">CryptGenRandom</span>.](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379942.aspx)
+    [<span class="underline">CryptGenRandom</span>.](https://msdn.microsoft.com/library/windows/desktop/aa379942.aspx)
 
   - The C function
-    <span class="underline">[Rand\_s(](https://msdn.microsoft.com/en-us/library/sxtz2fa8.aspx))</span>
+    <span class="underline">[Rand\_s(](https://msdn.microsoft.com/library/sxtz2fa8.aspx))</span>
     is also recommended (which on Windows, calls
-    [<span class="underline">CryptGenRandom</span>)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379942.aspx)
+    [<span class="underline">CryptGenRandom</span>)](https://msdn.microsoft.com/library/windows/desktop/aa379942.aspx)
 
   - Rand\_s() is a safe and performant replacement for Rand(). Rand()
     should not be used for any cryptographic applications, but is ok for
     internal testing only.
 
   - The
-    [<span class="underline">SystemPrng</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/dd408060.aspx)
+    [<span class="underline">SystemPrng</span>](https://msdn.microsoft.com/library/windows/desktop/dd408060.aspx)
     function is recommended for kernel-mode code.
 
 .NET
 
   - Use
-    [<span class="underline">RNGCryptoServiceProvider</span>](https://msdn.microsoft.com/en-us/library/system.security.cryptography.rngcryptoserviceprovider.aspx)
+    [<span class="underline">RNGCryptoServiceProvider</span>](https://msdn.microsoft.com/library/system.security.cryptography.rngcryptoserviceprovider.aspx)
     or
     [<span class="underline">RNGCng</span>.](https://clrsecurity.codeplex.com/wikipage?title=Security.Cryptography.RNGCng&referringTitle=Security.Cryptography.dll)
 
 Windows Store Apps
 
   - Store Apps can use
-    [<span class="underline">CryptographicBuffer.GenerateRandom</span>](https://msdn.microsoft.com/en-us/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandom.aspx)
+    [<span class="underline">CryptographicBuffer.GenerateRandom</span>](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandom.aspx)
     or
-    [<span class="underline">CryptographicBuffer.GenerateRandomNumber</span>.](https://msdn.microsoft.com/en-us/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandomnumber.aspx)
+    [<span class="underline">CryptographicBuffer.GenerateRandomNumber</span>.](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandomnumber.aspx)
 
 Not Recommended
 
   - Insecure functions related to random number generation include
-    [<span class="underline">rand</span>,](https://msdn.microsoft.com/en-us/library/398ax69y.aspx)
-    [<span class="underline">System.Random</span>](https://msdn.microsoft.com/en-us/library/system.random.aspx)
+    [<span class="underline">rand</span>,](https://msdn.microsoft.com/library/398ax69y.aspx)
+    [<span class="underline">System.Random</span>](https://msdn.microsoft.com/library/system.random.aspx)
     (.NET),
-    [<span class="underline">GetTickCount</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724408.aspx)
+    [<span class="underline">GetTickCount</span>](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx)
     and [<span class="underline">GetTickCount64</span>
-    ](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724411.aspx)
+    ](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx)
 
   - Use of the dual elliptic curve random number generator
     ("DUAL\_EC\_DRBG") algorithm is not recommended.
@@ -258,22 +259,22 @@ _Native Code_
     Vista onward).
 
   - SSL/TLS/DTLS:
-    [<span class="underline">WinINet</span>,](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331\(v=vs.85\).aspx)
-    [<span class="underline">WinHTTP</span>,](https://msdn.microsoft.com/en-us/library/aa382925\(v=VS.85\).aspx)
-    [<span class="underline">Schannel</span>,](https://msdn.microsoft.com/en-us/library/windows/desktop/ms678421\(v=vs.85\).aspx)
-    [<span class="underline">IXMLHTTPRequest2</span>,](https://msdn.microsoft.com/en-us/library/windows/desktop/hh831151.aspx)
+    [<span class="underline">WinINet</span>,](https://msdn.microsoft.com/library/windows/desktop/aa385331\(v=vs.85\).aspx)
+    [<span class="underline">WinHTTP</span>,](https://msdn.microsoft.com/library/aa382925\(v=VS.85\).aspx)
+    [<span class="underline">Schannel</span>,](https://msdn.microsoft.com/library/windows/desktop/ms678421\(v=vs.85\).aspx)
+    [<span class="underline">IXMLHTTPRequest2</span>,](https://msdn.microsoft.com/library/windows/desktop/hh831151.aspx)
     or
-    [<span class="underline">IXMLHTTPRequest3</span>.](https://msdn.microsoft.com/en-us/library/windows/desktop/dn376398.aspx)
+    [<span class="underline">IXMLHTTPRequest3</span>.](https://msdn.microsoft.com/library/windows/desktop/dn376398.aspx)
 
-    - WinHTTP apps should be built with [<span class="underline">WinHttpSetOption</span><span class="underline"></span>](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384114\(v=vs.85\).aspx)<span class="underline">in order</span> to support TLS 1.2
+    - WinHTTP apps should be built with [<span class="underline">WinHttpSetOption</span><span class="underline"></span>](https://msdn.microsoft.com/library/windows/desktop/aa384114\(v=vs.85\).aspx)<span class="underline">in order</span> to support TLS 1.2
 
   - Code signature verification:
-    [<span class="underline">WinVerifyTrust</span>](https://msdn.microsoft.com/en-us/library/aa388208\(v=VS.85\).aspx)
+    [<span class="underline">WinVerifyTrust</span>](https://msdn.microsoft.com/library/aa388208\(v=VS.85\).aspx)
     is the supported API for verifying code signatures on Windows
     platforms.
 
   - Certificate Validation (as used in restricted certificate validation
-    for code signing or SSL/TLS/DTLS): CAPI2 API; for example, [<span class="underline">CertGetCertificateChain</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/aa376078\(v=vs.85\).aspx) and [<span class="underline">CertVerifyCertificateChainPolicy</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377163\(v=vs.85\).aspx)
+    for code signing or SSL/TLS/DTLS): CAPI2 API; for example, [<span class="underline">CertGetCertificateChain</span>](https://msdn.microsoft.com/library/windows/desktop/aa376078\(v=vs.85\).aspx) and [<span class="underline">CertVerifyCertificateChainPolicy</span>](https://msdn.microsoft.com/library/windows/desktop/aa377163\(v=vs.85\).aspx)
 
 _Managed Code_
 
@@ -284,16 +285,16 @@ _Managed Code_
   - Use the latest version of the .Net Framework available. At a minimum
     this should be .Net Framework version 4.6. If an older version is
     required, ensure the
-    [“<span class="underline">SchUseStrongCrypto</span>”](https://technet.microsoft.com/en-us/library/security/2960358.aspx#ID0ETHAE)
+    [“<span class="underline">SchUseStrongCrypto</span>”](https://technet.microsoft.com/library/security/2960358.aspx#ID0ETHAE)
     regkey is set to enable TLS 1.2 for the application in question.
 
   - Certificate Validation: Use APIs defined under the
-    [<span class="underline">System.Security.Cryptography.X509Certificates</span>](https://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.aspx)
+    [<span class="underline">System.Security.Cryptography.X509Certificates</span>](https://msdn.microsoft.com/library/system.security.cryptography.x509certificates.aspx)
     namespace.
 
   - SSL/TLS/DTLS: Use APIs defined under the System.Net namespace (for
     example,
-    [<span class="underline">HttpWebRequest</span>)](https://msdn.microsoft.com/en-us/library/system.net.httpwebrequest.aspx).
+    [<span class="underline">HttpWebRequest</span>)](https://msdn.microsoft.com/library/system.net.httpwebrequest.aspx).
 
 ## Key Derivation Functions
 Key derivation is the process of deriving cryptographic key material
@@ -315,7 +316,7 @@ The following standards specify KDF functions recommended for use:
     5.8.1 is recommended.
 
 To derive keys from existing keys, use the
-[<span class="underline">BCryptKeyDerivation</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/hh448506\(v=vs.85\).aspx)
+[<span class="underline">BCryptKeyDerivation</span>](https://msdn.microsoft.com/library/windows/desktop/hh448506\(v=vs.85\).aspx)
 API with one of the algorithms:
 
   - BCRYPT\_SP800108\_CTR\_HMAC\_ALGORITHM
@@ -324,7 +325,7 @@ API with one of the algorithms:
 
 To derive keys from a shared secret (the output of a key agreement) use
 the
-[<span class="underline">BCryptDeriveKey</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/aa375393\(v=vs.85\).aspx)
+[<span class="underline">BCryptDeriveKey</span>](https://msdn.microsoft.com/library/windows/desktop/aa375393\(v=vs.85\).aspx)
 API with one of the following algorithms:
 
   - BCRYPT\_KDF\_SP80056A\_CONCAT
@@ -396,7 +397,7 @@ Truncation of HMACs to less than 128 bits is not recommended.
     
       - For more information on Cryptographic Agility, see
         [<span class="underline">Cryptographic Agility on
-        MSDN</span>.](https://msdn.microsoft.com/en-us/magazine/ee321570.aspx)
+        MSDN</span>.](https://msdn.microsoft.com/magazine/ee321570.aspx)
 
   - Where available, products should use established, platform-provided
     cryptographic protocols rather than re-implementing them. This
@@ -466,7 +467,7 @@ accounts and computers:
   - NCryptProtectSecret (in CNG DPAPI, available as of Windows 8)
 
   - [<span class="underline">Microsoft Azure KeyVault</span>
-    ](https://azure.microsoft.com/en-us/services/key-vault/)
+    ](https://azure.microsoft.com/services/key-vault/)
 
 _SQL Server TDE_
 
@@ -482,7 +483,7 @@ There are some important considerations for using SQL TDE that you
 should keep in mind:
 
   - SQL Server does not support encryption for
-    [<span class="underline">FILESTREAM</span>](https://technet.microsoft.com/en-us/library/gg471497.aspx)
+    [<span class="underline">FILESTREAM</span>](https://technet.microsoft.com/library/gg471497.aspx)
     data, even when TDE is enabled.
 
   - TDE does not automatically provide encryption for data in transit to
@@ -491,7 +492,7 @@ should keep in mind:
     [<span class="underline">Enable</span>
     <span class="underline">Encrypted Connections to the Database Engine
     (SQL Server Configuration
-    Manager)</span>](https://technet.microsoft.com/en-us/library/ms191192.aspx)
+    Manager)</span>](https://technet.microsoft.com/library/ms191192.aspx)
     for guidance on enabling encrypted connections.
 
   - If you move a TDE-protected database to a different SQL Server
@@ -500,22 +501,22 @@ should keep in mind:
     the destination SQL Server instance. Please see the TechNet article
     [<span class="underline">Move a TDE</span>
     <span class="underline">Protected Database to Another SQL
-    Server</span>](https://technet.microsoft.com/en-us/library/ff773063.aspx)
+    Server</span>](https://technet.microsoft.com/library/ff773063.aspx)
     for more details.
 
 _Credential Management_
 
 Use the [<span class="underline">Windows Credential Manager
-API</span>](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374731.aspx#credentials_management_functions)
+API</span>](https://msdn.microsoft.com/library/windows/desktop/aa374731.aspx#credentials_management_functions)
 or [<span class="underline">Microsoft Azure
-KeyVault</span>](https://azure.microsoft.com/en-us/services/key-vault/)
+KeyVault</span>](https://azure.microsoft.com/services/key-vault/)
 to protect password and credential data.
 
 _Windows Store Apps_ 
 
-Use the classes in the [<span class="underline">Windows.Security.Cryptography</span>](https://msdn.microsoft.com/en-us/library/windows/apps/windows.security.cryptography.aspx)
+Use the classes in the [<span class="underline">Windows.Security.Cryptography</span>](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.aspx)
 and
-[<span class="underline">Windows.Security.Cryptography.DataProtection</span>](https://msdn.microsoft.com/en-us/library/windows/apps/windows.security.cryptography.dataprotection.aspx)
+[<span class="underline">Windows.Security.Cryptography.DataProtection</span>](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.dataprotection.aspx)
 namespaces to protect secrets and sensitive data.
 
   - ProtectAsync
@@ -527,7 +528,7 @@ namespaces to protect secrets and sensitive data.
   - UnprotectStreamAsync
 
 Use the classes in the
-[<span class="underline">Windows.Security.Credentials</span>](https://msdn.microsoft.com/en-us/library/windows/apps/windows.security.credentials.aspx)
+[<span class="underline">Windows.Security.Credentials</span>](https://msdn.microsoft.com/library/windows/apps/windows.security.credentials.aspx)
 namespace to protect password and credential data.
 
 _.NET_
@@ -547,14 +548,14 @@ For data that does not need to be persisted across system reboots:
 For configuration files, use
 
 either
-[<span class="underline">RSAProtectedConfigurationProvider</span>](https://msdn.microsoft.com/en-us/library/system.configuration.rsaprotectedconfigurationprovider.aspx)
+[<span class="underline">RSAProtectedConfigurationProvider</span>](https://msdn.microsoft.com/library/system.configuration.rsaprotectedconfigurationprovider.aspx)
 or
-[<span class="underline">DPAPIProtectedConfigurationProvider</span>](https://msdn.microsoft.com/en-us/library/system.configuration.dpapiprotectedconfigurationprovider.aspx)
+[<span class="underline">DPAPIProtectedConfigurationProvider</span>](https://msdn.microsoft.com/library/system.configuration.dpapiprotectedconfigurationprovider.aspx)
 to protect your configuration, using either RSA encryption or DPAPI,
 respectively.
 
 The RSAProtectedConfigurationProvider can be used across multiple
 machines in a cluster. See [<span class="underline">Encrypting
 Configuration Information Using Protected
-Configuration</span>](https://msdn.microsoft.com/en-us/library/53tyfkaw.aspx)
+Configuration</span>](https://msdn.microsoft.com/library/53tyfkaw.aspx)
 for more information.

@@ -5,6 +5,7 @@ description: This research papers shares some of Microsoft’s security lessons-
 ms.date: 12/03/2018
 ms.service: security
 ms.author: bcowper
+author: bcowper
 ms.topic: conceptual
 ---
 

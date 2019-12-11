@@ -5,6 +5,7 @@ description: This document outlines the basic criteria to consider when creating
 ms.date: 12/03/2018
 ms.service: security
 ms.author: bcowper
+author: bcowper
 ms.topic: conceptual
 ---
 

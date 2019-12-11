@@ -5,7 +5,7 @@
 title: Failure Modes in Machine Learning
 description: Machine Learning Threat Taxonomy
 author: Andrew Marshall
-ms.author: Andrew Marshall
+ms.author: AMarshal
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: security

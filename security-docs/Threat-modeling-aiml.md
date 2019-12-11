@@ -6,7 +6,7 @@ title: Threat Modeling AI/ML Systems and Dependencies
 description: Threat Mitigation/Security Feature Technical Guidance
 author: AMarshal
 ms.author: AMarshal
-author: Andrew Marshall
+author: AMarshal
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: security

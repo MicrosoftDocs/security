@@ -57,9 +57,9 @@ protect Microsoft products and services against these threats.  This section is 
 This guidance is organized around an Adversarial Machine Learning Threat
 Taxonomy created by Ram Shankar Siva Kumar, David O’Brien, Kendra
 Albert, Salome Viljoen, and Jeffrey Snover entitled “[Failure Modes in
-Machine Learning](https://docs.microsoft.com/security/failure-modes-machine-learning).” For incident management guidance on triaging
+Machine Learning](https://docs.microsoft.com/en-us/security/failure-modes-in-machine-learning).” For incident management guidance on triaging
 security threats detailed in this document, refer to the [SDL Bug Bar
-for AI/ML Threats.](https://docs.microsoft.com/security/bugbar-aiml-threats)  All of these are living documents which will evolve over time with the threat landscape.
+for AI/ML Threats.](https://docs.microsoft.com/en-us/security/bug-bar-aiml)  All of these are living documents which will evolve over time with the threat landscape.
 
 ## Key New Considerations in Threat Modeling: Changing the way you view Trust Boundaries
 

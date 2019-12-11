@@ -43,7 +43,7 @@ the software and physical domains, as well as [making compromise trivial
 lower down the software stack](https://arxiv.org/pdf/1901.03597.pdf).
 For an introduction to net-new security threats in this space see
 [Securing the Future of AI and ML at
-Microsoft](https://docs.microsoft.com/security/securing-artificial-intelligence-machine-learning).
+Microsoft](https://docs.microsoft.com/en-us/security/securing-artificial-intelligence-machine-learning).
 
 The skillsets of security engineers and data scientists typically do not overlap.  This guidance provides a way for both disciplines to have structured conversations on these net-new threats/mitigations without requiring security engineers to become data scientists or vice versa.
 

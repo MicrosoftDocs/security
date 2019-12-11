@@ -5,6 +5,7 @@ description: This document presents guidance on rapidly identifying and removing
 ms.date: 01/04/2019
 ms.service: security
 ms.author: amarshal
+author: AMarshal
 ms.topic: conceptual
 ---
 

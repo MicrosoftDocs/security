@@ -83,7 +83,7 @@ failure modes together in one place and addresses the following needs:
 
     *Results:* This taxonomy is written for a wide interdisciplinary audience – so, policymakers who are looking at the issues from a general ML/AI perspective, as well as specific domains such as misinformation/healthcare should find the failure mode catalogue useful. We also highlight any applicable legal interventions to address the failure modes.
 
-See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](./threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](./security/bug-bar-aiml).
+See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](https://docs.microsoft.com/en-us/security/threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](https://docs.microsoft.com/en-us/security/security/bug-bar-aiml).
 
 ## How to use this document
 
@@ -93,7 +93,7 @@ mitigations to these failure modes here, as defenses are scenario-specific
 and tie in with the threat model and system architecture under consideration.  Options presented for threat mitigation are based on current research with the expectation that those defenses will evolve over time as well.
 
 For engineers, we recommend browsing through the overview of possible
-failure modes and jumping into the [threat modeling document](./threat-modeling-aiml). This way,
+failure modes and jumping into the [threat modeling document](https://docs.microsoft.com/en-us/security/threat-modeling-aiml). This way,
 engineers can identify threats, attacks, vulnerabilities and use the
 framework to plan for countermeasures where available. We then refer you
 to the bug bar that maps these new vulnerabilities in the taxonomy

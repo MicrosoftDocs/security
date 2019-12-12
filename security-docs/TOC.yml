@@ -87,3 +87,19 @@
     items:
     - name: FY18 CDOC Strategy Brief
       href: MSRC/FY18-Strategy-Brief.md
+  - name: Chief Information Security Officer (CISO) Workshop
+    items:
+    - name: CISO Workshop overview
+      href: ciso-workshop.md
+    - name: Module 1 - Microsoft cybersecurity briefing
+      href: ciso-workshop-module-1.md
+    - name: Module 2 - Security management
+      href: ciso-workshop-module-2.md
+    - name: Module 3 -  Identity and zero trust user access
+      href: ciso-workshop-module-3.md
+    - name: Module 4a -  Threat protection strategy, Part I
+      href: ciso-workshop-module-4a.md 
+    - name: Module 4b -  Threat protection strategy, Part II
+      href: ciso-workshop-module-4b.md
+    - name: Module 5 -  Information protection
+      href: ciso-workshop-module-5.md

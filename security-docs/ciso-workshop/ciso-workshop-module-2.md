@@ -16,8 +16,8 @@ description: "Learn more about security principles and recommendations for moder
 
 Learn how to increase visibility and control over your hybrid enterprise estate with integrated guidance, automated policy enforcement, and monitoring.
 
-- Download PDF summary: [Module 2: Security Management](../media/ciso-workshop-2-security-management.pdf)
-- Download PowerPoint summary: [Module 2: Security Management](../media/ciso-workshop-2-security-management.pptx)
+- Download PDF summary: [Module 2: Security Management](../media/security-ciso-workshop/ciso-workshop-2-security-management.pdf)
+- Download PowerPoint summary: [Module 2: Security Management](../media/security-ciso-workshop/ciso-workshop-2-security-management.pptx)
 
 ## Introduction: Security Management (1:25)
 

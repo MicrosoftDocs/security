@@ -12,7 +12,7 @@ ms.collection:
 description: "Learn more about security principles and recommendations for modernizing security in your organization."
 ---
 
-# CISO Workshop Module 2: Security Management 
+# CISO Workshop Module 2: Security Management
 
 Learn how to increase visibility and control over your hybrid enterprise estate with integrated guidance, automated policy enforcement, and monitoring.
 

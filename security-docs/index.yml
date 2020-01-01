@@ -1,0 +1,106 @@
+### YamlMime:Hub
+
+title: Security documentation
+summary: Technical security information from across Microsoft
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+
+metadata:
+  title: Microsoft security documentation
+  description: Technical security information from across Microsoft
+# services: service
+# ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: na
+  ms.topic: hub-page
+  ms.collection: na
+  author: TerryLanfear
+  ms.author: terrylan
+  manager: rkarlin
+  ms.date: 12/31/2019
+
+productDirectory:
+  title: News and highlights
+  summary: Stay up to date on what is new in security at Microsoft
+  items:
+    # Card
+    - title: Microsoft Ignite 2019
+      imageSrc: https://docs.microsoft.com/media/common/i_video.svg
+      links:
+        - url: https://www.microsoft.com/ignite
+          text: Sessions from Ignite
+    # Card
+    - title: Microsoft Learn
+      imageSrc: https://docs.microsoft.com/media/common/i_learn-about.svg
+      links:
+        - url: https://docs.microsoft.com/learn/modules/top-5-security-items-to-consider/
+          text: Security items to consider before pushing to production
+        - url: https://docs.microsoft.com/learn/modules/create-security-baselines/
+          text: Create security baselines
+    # Card
+    - title: Improve your security score
+      imageSrc: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
+          text: Microsoft Secure Score
+        - url: Azure Security Center Secure Score
+          text: https://docs.microsoft.com/azure/security-center/security-center-secure-score
+
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Get started
+  summary: Begin your security journey here
+  items:
+    # Card
+    - title: CISO workshop training
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-1
+          itemType: tutorial
+          text: Cybersecurity briefing
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-2
+          itemType: tutorial
+          text: Security management
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-3
+          itemType: tutorial
+          text: Identity and Zero Trust user access
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-4a
+          itemType: tutorial
+          text: Threat protection strategy
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-5
+          itemType: tutorial
+          text: Information protection
+      # footerLink (optional)
+      footerLink:
+        url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop
+        text: See more
+    # Card
+    - title: Security benchmarks
+      links:
+        - url: https://docs.microsoft.com/azure/security/benchmarks/overview
+          itemType: overview
+          text: What are security benchmarks?
+        - url: https://docs.microsoft.com/azure/security/benchmarks/introduction
+          itemType: overview
+          text: Introduction to security controls
+        - url: https://docs.microsoft.com/azure/security/benchmarks/
+          itemType: overview
+          text: Azure security benchmarks
+    # Card
+    - title: Product security
+      links:
+        - url: https://docs.microsoft.com/security/#pivot=security-engineering
+          itemType: overview
+          text: Microsoft security engineering
+        - url: https://docs.microsoft.com/azure/security/
+          itemType: overview
+          text: Azure security
+        - url: https://docs.microsoft.com/microsoft-365/security/
+          itemType: overview
+          text: M365 security
+        - url: https://docs.microsoft.com/windows/
+          itemType: overview
+          text: Windows security
+        - url: https://docs.microsoft.com/sql/lp/sql-server/secure-sql-server?view=sql-server-2017
+          itemType: overview
+          text: SQL security
+        - url: https://docs.microsoft.com/enterprise-mobility-security/
+          itemType: overview
+          text: Enterprise Mobility + Security

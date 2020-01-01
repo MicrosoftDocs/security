@@ -1,6 +1,6 @@
 - name: Security
   displayName: Home
-  href: index.md
+  href: index.yml
   expanded: true
   items: 
   - name: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019

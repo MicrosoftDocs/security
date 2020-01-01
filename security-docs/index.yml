@@ -41,8 +41,8 @@ productDirectory:
       links:
         - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
           text: Microsoft Secure Score
-        - url: Azure Security Center Secure Score
-          text: https://docs.microsoft.com/azure/security-center/security-center-secure-score
+        - url: https://docs.microsoft.com/azure/security-center/security-center-secure-score
+          text: Azure Security Center Secure Score
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

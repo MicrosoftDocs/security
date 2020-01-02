@@ -170,7 +170,7 @@ additionalContent:
 
 #additionalContent:
   # Supports up to 3 sections
-  sections:
+#  sections:
     - title: Additional security resources
       summary: sectionsummary # < 160 chars (optional)
       items:

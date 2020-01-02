@@ -104,3 +104,66 @@ conceptualContent:
         - url: https://docs.microsoft.com/enterprise-mobility-security/
           itemType: overview
           text: Enterprise Mobility + Security
+
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Security disciplines
+      summary: Guidance for security related decisions that improve your security posture
+      items:
+        # Card
+        - title: Governance, risk, and compliance
+#           links:
+#            - text: link1a
+#              url: file1a.md OR https://docs.microsoft.com/file1a
+#            - text: link1b
+#              url: file1b.md OR https://docs.microsoft.com/file1b
+        # Card
+        - title: Network containment
+#          links:
+#            - text: link2a
+#              url: file2a.md OR https://docs.microsoft.com/file2a
+#            - text: link2b
+#              url: file2b.md OR https://docs.microsoft.com/file2b
+        # Card
+        - title: Identity
+#          links:
+#            - text: link3a
+#              url: file3a.md OR https://docs.microsoft.com/file3a
+#            - text: link3b
+#              url: file3b.md OR https://docs.microsoft.com/file3b
+        # Card
+        - title: Information protection and storage
+#          links:
+#            - text: link3a
+#              url: file3a.md OR https://docs.microsoft.com/file3a
+#            - text: link3b
+#              url: file3b.md OR https://docs.microsoft.com/file3b
+        # Card
+        - title: Application and cloud services
+#          links:
+#            - text: link3a
+#              url: file3a.md OR https://docs.microsoft.com/file3a
+#            - text: link3b
+#              url: file3b.md OR https://docs.microsoft.com/file3b
+        # Card
+        - title: Security operations
+#          links:
+#            - text: link3a
+#              url: file3a.md OR https://docs.microsoft.com/file3a
+#            - text: link3b
+#              url: file3b.md OR https://docs.microsoft.com/file3b
+        # Card
+        - title: Administration
+#          links:
+#            - text: link3a
+#              url: file3a.md OR https://docs.microsoft.com/file3a
+#            - text: link3b
+#              url: file3b.md OR https://docs.microsoft.com/file3b
+        # Card
+        - title: Endpoint security
+#          links:
+#            - text: link3a
+#              url: file3a.md OR https://docs.microsoft.com/file3a
+#            - text: link3b
+#              url: file3b.md OR https://docs.microsoft.com/file3b

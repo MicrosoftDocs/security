@@ -167,3 +167,52 @@ additionalContent:
 #              url: file3a.md OR https://docs.microsoft.com/file3a
 #            - text: link3b
 #              url: file3b.md OR https://docs.microsoft.com/file3b
+
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Additional security resources
+#      summary: sectionsummary # < 160 chars (optional)
+      items:
+        # Card
+        - title: Security reference
+          links:
+            - text: Operational Security Assurance
+              url: https://www.microsoft.com/securityengineering/osa/
+            - text: Secure DevOps
+              url: https://www.microsoft.com/securityengineering/devsecops
+            - text: Microsoft Security Risk Detection
+              url: https://www.microsoft.com/security-risk-detection/
+            - text: Azure secure development
+              url: https://www.microsoft.com/securityengineering/devsecops
+        # Card
+        - title: Security programs
+          links:
+            - text: Microsoft Security Response Center
+              url: https://www.microsoft.com/msrc
+            - text: Cyber Defense Operations Center
+              url: https://www.microsoft.com/msrc/cdoc
+            - text: Digital Crimes Unit
+              url: https://news.microsoft.com/on-the-issues/topic/cybersecurity/
+        # Card
+        - title: Professional services
+          links:
+            - text: Microsoft Detection and Response Team
+              url: https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/
+            - text: MCS and Premier Catalog
+#              url: file3b.md OR https://docs.microsoft.com/file3b
+            - text: Cybersecurity Reference Architecture
+              url: https://gallery.technet.microsoft.com/Cybersecurity-Reference-883fb54c
+        # Card
+        - title: Professional services
+          links:
+            - text: Microsoft Trust Center
+              url: https://www.microsoft.com/trust-center
+            - text: Compliance
+              url: https://www.microsoft.com/trust-center/compliance/compliance-overview
+            - text: Privacy
+              url: https://www.microsoft.com/trust-center/privacy
+            - text: Azure governance
+              url: https://docs.microsoft.com/azure/governance/
+  # footer (optional)
+  footer: "Found a problem on our site? Let us know!"

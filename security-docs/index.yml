@@ -183,7 +183,7 @@ additionalContent:
             - text: Microsoft Security Risk Detection
               url: https://www.microsoft.com/en-us/security-risk-detection/
             - text: Azure secure development
-              url: https://www.microsoft.com/en-us/securityengineering/devsecops
+              url: https://docs.microsoft.com/azure/security/develop/index
         # Card
         - title: Security programs
           links:

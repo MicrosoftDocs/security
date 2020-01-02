@@ -168,7 +168,7 @@ additionalContent:
 #            - text: link3b
 #              url: file3b.md OR https://docs.microsoft.com/file3b
 
-additionalContent:
+#additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Additional security resources

@@ -177,13 +177,13 @@ additionalContent:
         - title: Security reference
           links:
             - text: Operational Security Assurance
-              url: https://www.microsoft.com/securityengineering/osa/
+              url: https://www.microsoft.com/en-us/securityengineering/osa/
             - text: Secure DevOps
-              url: https://www.microsoft.com/securityengineering/devsecops
+              url: https://www.microsoft.com/en-us/securityengineering/devsecops
             - text: Microsoft Security Risk Detection
-              url: https://www.microsoft.com/security-risk-detection/
+              url: https://www.microsoft.com/en-us/security-risk-detection/
             - text: Azure secure development
-              url: https://www.microsoft.com/securityengineering/devsecops
+              url: https://www.microsoft.com/en-us/securityengineering/devsecops
         # Card
         - title: Security programs
           links:

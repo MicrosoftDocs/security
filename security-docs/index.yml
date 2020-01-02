@@ -199,7 +199,7 @@ additionalContent:
           links:
             - text: Microsoft Detection and Response Team
               url: https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/
-            - text: MCS and Premier Catalog
+#            - text: MCS and Premier Catalog
 #              url: file3b.md OR https://docs.microsoft.com/file3b
             - text: Cybersecurity Reference Architecture
               url: https://gallery.technet.microsoft.com/Cybersecurity-Reference-883fb54c

@@ -172,7 +172,7 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Additional security resources
-#      summary: sectionsummary # < 160 chars (optional)
+      summary: sectionsummary # < 160 chars (optional)
       items:
         # Card
         - title: Security reference

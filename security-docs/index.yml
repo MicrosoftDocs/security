@@ -106,67 +106,50 @@ conceptualContent:
           text: Enterprise Mobility + Security
 
 additionalContent:
-  # Supports up to 3 sections
   sections:
     - title: Security disciplines
       summary: Guidance for security related decisions that improve your security posture
       items:
-        # Card
         - title: Compliance
-#           links:
+          links:
             - text: Governance, risk, and compliance
               url: https://docs.microsoft.com/azure/architecture/framework/security/governance
-#            - text: link1b
-#              url: file1b.md OR https://docs.microsoft.com/file1b
-        # Card
+
         - title: Network
-#          links:
+          links:
             - text: Network security and containment
               url: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment
-#            - text: link2b
-#              url: file2b.md OR https://docs.microsoft.com/file2b
-        # Card
+
         - title: Identity
-#          links:
+          links:
             - text: Identity and access management
               url: https://docs.microsoft.com/azure/architecture/framework/security/identity
-#            - text: link3b
-#              url: file3b.md OR https://docs.microsoft.com/file3b
-        # Card
+
         - title: Information
-#          links:
+          links:
             - text: Storage, data, and encryption
               url: https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption
-#            - text: link3b
-#              url: file3b.md OR https://docs.microsoft.com/file3b
-        # Card
+
         - title: Application
-#          links:
+          links:
             - text: Applications and services
               url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services
-#            - text: link3b
-#              url: file3b.md OR https://docs.microsoft.com/file3b
-        # Card
+
         - title: Operations
-#          links:
+          links:
             - text: Security operations
               url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations
-#            - text: link3b
-#              url: file3b.md OR https://docs.microsoft.com/file3b
-        # Card
+
         - title: Administration
-#          links:
+          links:
             - text: Administration
               url: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
-#            - text: link3b
-#              url: file3b.md OR https://docs.microsoft.com/file3b
-        # Card
+
         - title: Endpoint security
-#          links:
+          links:
             - text: Microsoft Defender Advanced Threat Protection
               url: https://docs.microsoft.com/windows/security/threat-protection/
-#            - text: link3b
-#              url: file3b.md OR https://docs.microsoft.com/file3b
+
 
 #additionalContent:
   # Supports up to 3 sections

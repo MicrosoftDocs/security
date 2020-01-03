@@ -115,17 +115,17 @@ additionalContent:
             - text: Governance, risk, and compliance
               url: https://docs.microsoft.com/azure/architecture/framework/security/governance
 
-        - title: Network
+        - title: Network security
           links:
             - text: Network security and containment
               url: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment
 
-        - title: Identity
+        - title: Identity management
           links:
             - text: Identity and access management
               url: https://docs.microsoft.com/azure/architecture/framework/security/identity
 
-        - title: Information
+        - title: Information protection
           links:
             - text: Storage, data, and encryption
               url: https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption
@@ -135,7 +135,7 @@ additionalContent:
             - text: Applications and services
               url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services
 
-        - title: Operations
+        - title: Monitoring, auditing, and operations
           links:
             - text: Security operations
               url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations

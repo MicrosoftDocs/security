@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 01/02/2020
+  ms.date: 01/03/2020
 
 productDirectory:
   title: News and highlights
@@ -84,11 +84,11 @@ conceptualContent:
           itemType: overview
           text: Azure security benchmarks
     # Card
-    - title: Product security
+    - title: Docs directory
       links:
         - url: https://docs.microsoft.com/security/failure-modes-in-machine-learning
           itemType: overview
-          text: Microsoft security engineering
+          text: Microsoft security capabilities
         - url: https://docs.microsoft.com/azure/security/
           itemType: overview
           text: Azure security
@@ -112,59 +112,59 @@ additionalContent:
       summary: Guidance for security related decisions that improve your security posture
       items:
         # Card
-        - title: Governance, risk, and compliance
+        - title: Compliance
 #           links:
-#            - text: link1a
-#              url: file1a.md OR https://docs.microsoft.com/file1a
+            - text: Governance, risk, and compliance
+              url: https://docs.microsoft.com/azure/architecture/framework/security/governance
 #            - text: link1b
 #              url: file1b.md OR https://docs.microsoft.com/file1b
         # Card
-        - title: Network containment
+        - title: Network
 #          links:
-#            - text: link2a
-#              url: file2a.md OR https://docs.microsoft.com/file2a
+            - text: Network security and containment
+              url: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment
 #            - text: link2b
 #              url: file2b.md OR https://docs.microsoft.com/file2b
         # Card
         - title: Identity
 #          links:
-#            - text: link3a
-#              url: file3a.md OR https://docs.microsoft.com/file3a
+            - text: Identity and access management
+              url: https://docs.microsoft.com/azure/architecture/framework/security/identity
 #            - text: link3b
 #              url: file3b.md OR https://docs.microsoft.com/file3b
         # Card
-        - title: Information protection and storage
+        - title: Information
 #          links:
-#            - text: link3a
-#              url: file3a.md OR https://docs.microsoft.com/file3a
+            - text: Storage, data, and encryption
+              url: https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption
 #            - text: link3b
 #              url: file3b.md OR https://docs.microsoft.com/file3b
         # Card
-        - title: Application and cloud services
+        - title: Application
 #          links:
-#            - text: link3a
-#              url: file3a.md OR https://docs.microsoft.com/file3a
+            - text: Applications and services
+              url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services
 #            - text: link3b
 #              url: file3b.md OR https://docs.microsoft.com/file3b
         # Card
-        - title: Security operations
+        - title: Operations
 #          links:
-#            - text: link3a
-#              url: file3a.md OR https://docs.microsoft.com/file3a
+            - text: Security operations
+              url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations
 #            - text: link3b
 #              url: file3b.md OR https://docs.microsoft.com/file3b
         # Card
         - title: Administration
 #          links:
-#            - text: link3a
-#              url: file3a.md OR https://docs.microsoft.com/file3a
+            - text: Administration
+              url: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
 #            - text: link3b
 #              url: file3b.md OR https://docs.microsoft.com/file3b
         # Card
         - title: Endpoint security
 #          links:
-#            - text: link3a
-#              url: file3a.md OR https://docs.microsoft.com/file3a
+            - text: Microsoft Defender Advanced Threat Protection
+              url: https://docs.microsoft.com/windows/security/threat-protection/
 #            - text: link3b
 #              url: file3b.md OR https://docs.microsoft.com/file3b
 
@@ -176,6 +176,8 @@ additionalContent:
         # Card
         - title: Security reference
           links:
+            - text: Security Development Lifecycle (SDL)
+              url: https://www.microsoft.com/en-us/securityengineering/sdl/
             - text: Operational Security Assurance
               url: https://www.microsoft.com/en-us/securityengineering/osa/
             - text: Secure DevOps
@@ -193,6 +195,8 @@ additionalContent:
               url: https://www.microsoft.com/msrc/cdoc
             - text: Digital Crimes Unit
               url: https://news.microsoft.com/on-the-issues/topic/cybersecurity/
+            - text: Government Security Program
+              url: https://www.microsoft.com/en-us/securityengineering/gsp
         # Card
         - title: Professional services
           links:
@@ -203,7 +207,7 @@ additionalContent:
             - text: Cybersecurity Reference Architecture
               url: https://gallery.technet.microsoft.com/Cybersecurity-Reference-883fb54c
         # Card
-        - title: Professional services
+        - title: Security principles
           links:
             - text: Microsoft Trust Center
               url: https://www.microsoft.com/trust-center

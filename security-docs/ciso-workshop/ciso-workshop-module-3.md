@@ -17,7 +17,7 @@ description: "Learn more about security principles and recommendations for moder
 Learn how to advance zero trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter.
 
 - Download PDF summary: [Module 3: Identity and Zero Trust User Access](https://download.microsoft.com/download/e/0/3/e037fdcb-67f8-43f7-b137-36ffed7e317c/ciso-workshop-3-identity-and-zero-trust-user-access.pdf)
-- Download PowerPoint summary: [Module 3: Identity and Access Management](https://download.microsoft.com/download/e/0/3/e037fdcb-67f8-43f7-b137-36ffed7e317c/ciso-workshop-3-identity-protection.pptx)
+- Download PowerPoint summary: [Module 3: Identity and Zero Trust User Access](https://download.microsoft.com/download/e/0/3/e037fdcb-67f8-43f7-b137-36ffed7e317c/ciso-workshop-3-identity-and-zero-trust-user-access.pptx)
 
 ## Part 1: Identity and Zero Trust History (9:33)
 

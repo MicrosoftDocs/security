@@ -31,9 +31,12 @@ ms.topic: hub-page
                                         <div class="cardText">
                                             <h3>Security Engineering</h3>
                                             <ul>
-                                                <li><a href="/security/disable-legacy-tls">TLS version enforcement capabilities now available per certificate binding on Windows Server 2019</a></li>
+                                                <li><a href="/security/failure-modes-in-machine-learning">Failure Modes in Machine Learning</a></li>
+                                                <li><a href="/security/threat-modeling-aiml">Threat Modeling AI/ML Systems and Dependencies</a></li>
+                                                <li><a href="/security/bug-bar-aiml">AI/ML Pivots to the Security Development Lifecycle Bug Bar</a></li>
                                                 <li><a href="/security/securing-artificial-intelligence-machine-learning">Securing the Future of Artificial Intelligence and Machine Learning at Microsoft</a></li>
                                                 <li><a href="/security/solving-tls1-problem">Solving the TLS 1.0 Problem</a></li>
+                                                <li><a href="/security/disable-legacy-tls">TLS version enforcement capabilities now available per certificate binding on Windows Server 2019</a></li>
                                             </ul>
                                         </div>
                                     </div>

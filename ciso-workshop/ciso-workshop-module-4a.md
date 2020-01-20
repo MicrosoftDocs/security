@@ -16,8 +16,8 @@ description: "Learn more about security principles and recommendations for moder
 
 Explore key learnings about threat protection, security evolution, strategies, and security road maps.
 
-- Download PDF summary: [Module 4a: Threat Protection Strategy](../media/ciso-workshop-4a-threat-protection.pdf)
-- Download PowerPoint summary: [Module 4a: Threat Protection Strategy](https://docs.microsoft.com/microsoft-365/security/media/ciso-workshop-4a-threat-protection.pptx)
+- Download PDF summary: [Module 4a: Threat Protection Strategy](https://download.microsoft.com/download/e/0/3/e037fdcb-67f8-43f7-b137-36ffed7e317c/ciso-workshop-4a-threat-protection.pdf)
+- Download PowerPoint summary: [Module 4a: Threat Protection Strategy](https://download.microsoft.com/download/e/0/3/e037fdcb-67f8-43f7-b137-36ffed7e317c/ciso-workshop-4a-threat-protection.pptx)
 
 ## Introduction: Threat Protection Strategy (4:37)
 

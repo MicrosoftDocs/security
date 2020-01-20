@@ -3,12 +3,18 @@
   href: index.yml
   expanded: true
   items: 
-  - name: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
-    href: Disable-Legacy-TLS.md
+  - name: Failure Modes in Machine Learning
+    href: failure-modes-in-machine-learning.md
+  - name: Threat Modeling AI/ML Systems and Dependencies
+    href: threat-modeling-aiml.md
+  - name: AI/ML Pivots to the Security Development Lifecycle Bug Bar
+    href: bug-bar-aiml.md
   - name: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
     href: Securing-Artificial-Intelligence-Machine-Learning.md
   - name: Solving the TLS 1.0 Problem
     href: Solving-TLS1-Problem.md
+  - name: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
+    href: Disable-Legacy-TLS.md
   - name: Government Security Program
     items:
     - name: Program Overview

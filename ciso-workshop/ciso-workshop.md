@@ -21,7 +21,7 @@ The CISO workshop can help your organization meet the dual security challenges o
 - Increasingly sophisticated attacks
 - Protecting assets on a hybrid enterprise that now includes cloud platforms
 
-The CISO workshop videos and PDF/PowerPoint download content 're modular so you can jump to any section of interest or start at the beginning. The slides for each module are shared with a creative commons (with attribution) license to help your organization build effective security strategies.
+The CISO workshop videos and PDF/PowerPoint download content are modular so you can jump to any section of interest or start at the beginning. The slides for each module are shared with a creative commons (with attribution) license to help your organization build effective security strategies.
 
 - [Module 1: Microsoft Cybersecurity Briefing](ciso-workshop-module-1.md): This module covers overviews on critical security hygiene, Microsoft cybersecurity reference architecture, cybersecurity resilience, Internet of Things (IoT), and operational tech.
 

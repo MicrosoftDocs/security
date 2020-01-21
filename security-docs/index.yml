@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 01/03/2020
+  ms.date: 01/21/2020
 
 productDirectory:
   title: News and highlights
@@ -50,45 +50,61 @@ conceptualContent:
   summary: Begin your security journey here
   items:
     # Card
-    - title: CISO workshop training
+    - title: Training for Chief Information Security Officer (CISO)
       links:
         - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-1
           itemType: tutorial
-          text: Cybersecurity briefing
+          text: Principles and recommendations for modernizing security in your organization
         - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-2
           itemType: tutorial
-          text: Security management
+          text: Increase visibility and control over your hybrid enterprise estate
         - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-3
           itemType: tutorial
-          text: Identity and Zero Trust user access
+          text: Protect your data with identity and zero trust user access
         - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-4a
           itemType: tutorial
-          text: Threat protection strategy
+          text: Strategy for threat protection
         - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-5
           itemType: tutorial
-          text: Information protection
+          text: Protect sensitive information wherever it goes
       # footerLink (optional)
       footerLink:
         url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop
         text: See more
     # Card
+    - title: Security compass
+      links:
+        - url: https://docs.microsoft.com/azure/architecture/framework/security/overview
+          itemType: overview
+          text: Learn to securely operate your workloads
+        - url: https://docs.microsoft.com/azure/architecture/framework/security/role-of-security
+          itemType: overview
+          text: Role of security when building in the cloud
+        - url: https://docs.microsoft.com/azure/architecture/framework/security/security-principles
+          itemType: overview
+          text: Design for security
+        - url: https://docs.microsoft.com/azure/architecture/framework/security/resilience
+          itemType: overview
+          text: Reduce your security risk
+    # Card
     - title: Security benchmarks
       links:
         - url: https://docs.microsoft.com/azure/security/benchmarks/overview
           itemType: overview
-          text: What are security benchmarks?
+          text: Improve the security of your applications and data on Azure
         - url: https://docs.microsoft.com/azure/security/benchmarks/introduction
           itemType: overview
-          text: Introduction to security controls
-        - url: https://docs.microsoft.com/azure/security/benchmarks/
-          itemType: overview
-          text: Azure security benchmarks
+          text: Use benchmark recommendations to secure your cloud deployment
+      # footerLink (optional)
+      footerLink:
+        url: https://docs.microsoft.com/azure/security/benchmarks/
+        text: See more
     # Card
     - title: Docs directory
       links:
         - url: https://docs.microsoft.com/security/failure-modes-in-machine-learning
           itemType: overview
-          text: Microsoft security capabilities
+          text: Microsoft security engineering
         - url: https://docs.microsoft.com/azure/security/
           itemType: overview
           text: Azure security

@@ -343,7 +343,7 @@ using Extended Validation requirements.   All developers who wish to
 have their kernel-mode drivers included in Windows must follow the
 procedures outlined by the Microsoft Hardware Development Team.  Program
 documentation can be found
-[here](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/)
+[here](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
 ------------------------------------------------------------------------
 

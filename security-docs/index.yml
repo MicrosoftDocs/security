@@ -54,13 +54,13 @@ conceptualContent:
       links:
         - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-1
           itemType: tutorial
-          text: Principles and recommendations for modernizing security in your organization
+          text: Modernize security in your organization
         - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-2
           itemType: tutorial
-          text: Increase visibility and control over your hybrid enterprise estate
+          text: Increase your security management
         - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-3
           itemType: tutorial
-          text: Protect your data with identity and zero trust user access
+          text: Protect your data with identity and zero trust
         - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-4a
           itemType: tutorial
           text: Strategy for threat protection
@@ -76,7 +76,7 @@ conceptualContent:
       links:
         - url: https://docs.microsoft.com/azure/architecture/framework/security/overview
           itemType: overview
-          text: Learn to securely operate your workloads
+          text: Securely operate your workloads
         - url: https://docs.microsoft.com/azure/architecture/framework/security/role-of-security
           itemType: overview
           text: Role of security when building in the cloud
@@ -91,16 +91,16 @@ conceptualContent:
       links:
         - url: https://docs.microsoft.com/azure/security/benchmarks/overview
           itemType: overview
-          text: Improve the security of your applications and data on Azure
+          text: Improve your security on Azure
         - url: https://docs.microsoft.com/azure/security/benchmarks/introduction
           itemType: overview
-          text: Use benchmark recommendations to secure your cloud deployment
+          text: Recommendations to secure your cloud deployment
       # footerLink (optional)
       footerLink:
         url: https://docs.microsoft.com/azure/security/benchmarks/
         text: See more
     # Card
-    - title: Docs directory
+    - title: Product documentation
       links:
         - url: https://docs.microsoft.com/security/failure-modes-in-machine-learning
           itemType: overview

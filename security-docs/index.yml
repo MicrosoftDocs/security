@@ -102,7 +102,7 @@ conceptualContent:
     # Card
     - title: Product documentation
       links:
-        - url: https://docs.microsoft.com/security/failure-modes-in-machine-learning
+        - url: engineering/failure-modes-in-machine-learning
           itemType: overview
           text: Microsoft security engineering
         - url: https://docs.microsoft.com/azure/security/

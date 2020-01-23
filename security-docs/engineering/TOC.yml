@@ -18,21 +18,21 @@
   - name: Government Security Program
     items:
     - name: Program Overview
-      href: GSP/ProgramOverview.md
+      href: ./GSP/ProgramOverview.md
     - name: Transparency Centers
-      href: GSP/ContentTransparencyCenters.md
+      href: ./GSP/ContentTransparencyCenters.md
     - name: Information Sharing And Exchange
-      href: GSP/InformationSharingAndExchange.md
+      href: ./GSP/InformationSharingAndExchange.md
     - name: Online Sources
-      href: GSP/OnlineSources.md 
+      href: ./GSP/OnlineSources.md 
     - name: Technical Data
-      href: GSP/TechnicalData.md
+      href: ./GSP/TechnicalData.md
   - name: Security Development Lifecycle
     items:
     - name: Security Bug Bar (Sample) 
-      href: SDL/security-bug-bar-sample.md
+      href: ./SDL/security-bug-bar-sample.md
     - name: Microsoft SDL Cryptographic Recommendations 
-      href: SDL/Cryptographic-Recommendations.md
+      href: ./SDL/Cryptographic-Recommendations.md
     - name: Getting started with the Threat Modeling Tool 
       href: /azure/security/azure-security-threat-modeling-tool-getting-started
     - name: Threat Modeling Tool feature overview
@@ -92,4 +92,4 @@
   - name: Cyber Defense Operations Center
     items:
     - name: FY18 CDOC Strategy Brief
-      href: MSRC/FY18-Strategy-Brief.md
+      href: ./MSRC/FY18-Strategy-Brief.md

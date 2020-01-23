@@ -17,17 +17,17 @@ ms.prod: security
   <tr>
     <th>Microsoft Corporation</th>
     <th>Berkman Klein Center for Internet and Society at Harvard University</th>
-    
+
   </tr>
   <tr>
     <td><p><a href="mailto:ram.shankar@microsoft.com">Ram Shankar Siva Kumar</a></p></td>
     <td><p><a href="mailto:dobrien@cyber.harvard.edu">David O’Brien</a></p></td>
-    
+
   </tr>
   <tr>
     <td><p><a href="mailto:jsnover@microsoft.com">Jeffrey Snover</a></p></td>
     <td><p><a href="mailto:kalbert@law.harvard.edu">Kendra Albert</a></p></td>
-    
+
   </tr>
   <tr>
     <td></td>
@@ -83,7 +83,7 @@ failure modes together in one place and addresses the following needs:
 
     *Results:* This taxonomy is written for a wide interdisciplinary audience – so, policymakers who are looking at the issues from a general ML/AI perspective, as well as specific domains such as misinformation/healthcare should find the failure mode catalogue useful. We also highlight any applicable legal interventions to address the failure modes.
 
-See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](https://docs.microsoft.com/en-us/security/threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](https://docs.microsoft.com/en-us/security/security/bug-bar-aiml).
+See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](https://docs.microsoft.com/security/threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](https://docs.microsoft.com/security/security/bug-bar-aiml).
 
 ## How to use this document
 
@@ -93,7 +93,7 @@ mitigations to these failure modes here, as defenses are scenario-specific
 and tie in with the threat model and system architecture under consideration.  Options presented for threat mitigation are based on current research with the expectation that those defenses will evolve over time as well.
 
 For engineers, we recommend browsing through the overview of possible
-failure modes and jumping into the [threat modeling document](https://docs.microsoft.com/en-us/security/threat-modeling-aiml). This way,
+failure modes and jumping into the [threat modeling document](https://docs.microsoft.com/security/threat-modeling-aiml). This way,
 engineers can identify threats, attacks, vulnerabilities and use the
 framework to plan for countermeasures where available. We then refer you
 to the bug bar that maps these new vulnerabilities in the taxonomy
@@ -408,7 +408,7 @@ fields:
   </tr>
 </table>
 
-## Acknowledgements 
+## Acknowledgements
 
 We would like to thank Andrew Marshall, Magnus Nystrom, John Walton, John Lambert, Sharon Xia, Andi Comissoneru, Emre Kiciman, Jugal Parikh, Sharon Gillet, members of Microsoft’s AI and Ethics in Engineering and Research (AETHER) committee’s Security workstream, Amar Ashar, Samuel Klein, Jonathan Zittrain,  members of AI Safety Security Working Group at Berkman Klein for providing helpful feedback. We would also like to thank reviewers from 23 external partners, standards organization, and government organizations for shaping the taxonomy.  
 

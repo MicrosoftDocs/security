@@ -37,9 +37,7 @@ landingContent:
         links:
           - text: Security operations
             url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations
-          - text: Endpoint security
-            url: 
- 
+           
    # Card
   - title: Cloud Adoption Plan integration
     linkLists:

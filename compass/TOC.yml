@@ -1,67 +1,67 @@
 - name: Microsoft Security Compass
   href: index.yml
-  items:
-  - name: Get started
-    items:
-      - name: What is Microsoft Security Compass?
-        href: microsoft-security-compass-introduction.md
-      - name: What's new in Microsoft Security Compass?
-        href: new-in-microsoft-security-compass.md
-      - name: Progress and role tracking spreadsheets
-        href: progress-and-role-tracking-spreadsheets.md
-  - name: Governance, risk, and compliance
-    items:
-      - name: Videos and decks
-        href: governance-risk-compliance-videos-and-decks.md
-      - name: Articles
-        href: https://docs.microsoft.com/azure/architecture/framework/security/governance
-      - name: Capabilities
-        href: governance-risk-compliance-capabilities.md
-  - name: Network containment
-    items:
-      - name: Videos and decks
-        href: network-containment-videos-and-decks.md
-      - name: Articles
-        href: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment
-      - name: Capabilities
-        href: network-containment-capabilities.md
-  - name: Identity
-    items:
-      - name: Videos and decks
-        href: identity-videos-and-decks.md
-      - name: Articles
-        href: https://docs.microsoft.com/azure/architecture/framework/security/identity
-      - name: Capabilities
-        href: identity-capabilities.md
-  - name: Information protection and storage
-    items:
-      - name: Videos and decks
-        href: information-protection-and-storage-videos-and-decks.md
-      - name: Articles
-        href: https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption
-      - name: Capabilities
-        href: information-protection-and-storage-capabilities.md
-  - name: Applications and cloud services
-    items:
-      - name: Videos and decks
-        href: applications-and-cloud-services-videos-and-decks.md
-      - name: Articles
-        href: https://docs.microsoft.com/azure/architecture/framework/security/applications-services
-      - name: Capabilities
-        href: applications-and-cloud-services-capabilities.md
-  - name: Security operations
-    items:
-      - name: Videos and decks
-        href: security-operations-videos-and-decks.md
-      - name: Articles
-        href: https://docs.microsoft.com/azure/architecture/framework/security/security-operations
-      - name: Capabilities
-        href: security-operations-capabilities.md
-   - name: Administration
-    items:
-      - name: Videos and decks
-        href: administration-videos-and-decks.md
-      - name: Articles
-        href: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
-      - name: Capabilities
-        href: administration-capabilities.md
+  items: 
+    - name: Get started
+      items:
+        - name: What is Microsoft Security Compass?
+          href: microsoft-security-compass-introduction.md
+        - name: What's new in Microsoft Security Compass?
+          href: new-in-microsoft-security-compass.md
+        - name: Progress and role tracking spreadsheets
+          href: progress-and-role-tracking-spreadsheets.md
+    - name: Governance, risk, and compliance
+      items:
+        - name: Videos and decks
+          href: governance-risk-compliance-videos-and-decks.md
+        - name: Articles
+          href: https://docs.microsoft.com/azure/architecture/framework/security/governance
+        - name: Capabilities
+          href: governance-risk-compliance-capabilities.md
+    - name: Network containment
+      items:
+        - name: Videos and decks
+          href: network-containment-videos-and-decks.md
+        - name: Articles
+          href: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment
+        - name: Capabilities
+          href: network-containment-capabilities.md
+    - name: Identity
+      items:
+        - name: Videos and decks
+          href: identity-videos-and-decks.md
+        - name: Articles
+          href: https://docs.microsoft.com/azure/architecture/framework/security/identity
+        - name: Capabilities
+          href: identity-capabilities.md
+    - name: Information protection and storage
+      items:
+        - name: Videos and decks
+          href: information-protection-and-storage-videos-and-decks.md
+        - name: Articles
+          href: https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption
+        - name: Capabilities
+          href: information-protection-and-storage-capabilities.md
+    - name: Applications and cloud services
+      tems:
+        - name: Videos and decks
+          href: applications-and-cloud-services-videos-and-decks.md
+        - name: Articles
+          href: https://docs.microsoft.com/azure/architecture/framework/security/applications-services
+        - name: Capabilities
+          href: applications-and-cloud-services-capabilities.md
+    - name: Security operations
+      items:
+        - name: Videos and decks
+          href: security-operations-videos-and-decks.md
+        - name: Articles
+          href: https://docs.microsoft.com/azure/architecture/framework/security/security-operations
+        - name: Capabilities
+          href: security-operations-capabilities.md
+    - name: Administration
+      items:
+        - name: Videos and decks
+          href: administration-videos-and-decks.md
+        - name: Articles
+          href: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
+        - name: Capabilities
+          href: administration-capabilities.md

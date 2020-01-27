@@ -42,7 +42,7 @@
         - name: Capabilities
           href: information-protection-and-storage-capabilities.md
     - name: Applications and cloud services
-      tems:
+      items:
         - name: Videos and decks
           href: applications-and-cloud-services-videos-and-decks.md
         - name: Articles

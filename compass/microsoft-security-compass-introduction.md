@@ -18,16 +18,21 @@ Introduction.....Microsoft Security Compass is designed to provide clear actiona
 > [!VIDEO https://www.youtube.com/watch?v=NwovfHZEdqY&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=1]
 
 ## Azure Components and Reference Model (21:52)
+
 > [!VIDEO https://www.youtube.com/watch?v=tax-OEXmTqE&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=2]
 
 ## Evolution of threat environment, roles, & digital strategies (20:05)
+
 > [!VIDEO https://www.youtube.com/watch?v=Yy6Y9ijn9Ig&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=3]
 
 ## Transformation of Security, Strategies, Tools, & Threats (15:14)
+
 > [!VIDEO https://www.youtube.com/watch?v=3wpibAUbqTg&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=4]
 
 ## Azure Regions and Services (3:00)
+
 > [!VIDEO https://www.youtube.com/watch?v=gdc0HKgIkog&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=5]
 
 ## Microsoft Security Practices (13:50)
+
 > [!VIDEO https://www.youtube.com/watch?v=EzyceWhNeiw&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=6]

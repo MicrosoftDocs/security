@@ -13,6 +13,8 @@ description: "Introduction to Microsoft Security Compass"
 
 Introduction.....Microsoft Security Compass is designed to provide clear actionable guidance for security related decisions. This is designed to help organizations that are new to Azure as well as those who wish to increase their security posture on Azure.
 
+Click [Microsoft Security Compass presentation slides](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Azure%20Security%20Compass%201.1/Azure%20Security%20Compass%20v1.1%20-%20Presentation.pptx) to download the Microsoft Security Compass workshop presentation slides.
+
 ## Introduction to Azure Security Compass (14:59)
 
 > [!VIDEO https://www.youtube.com/embed/watch?v=NwovfHZEdqY&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=1]

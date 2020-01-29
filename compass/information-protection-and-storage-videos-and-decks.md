@@ -9,7 +9,12 @@ localization_priority: Normal
 description: "Videos and decks"
 ---
 
-# Videos and decks
+# Microsoft Security Compass module: Information protections and storage
+Introduction...
+
+## Part 1
+
+## Part 2
 
 
 

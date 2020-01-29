@@ -28,7 +28,7 @@ landingContent:
           - text: What is Microsoft Security Compass?
             url:  microsoft-security-compass-introduction.md
           - text: Progress and role tracking spreadsheets
-            url: https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Azure%20Security%20Compass%201.1/Azure%20Security%20Compass%20v1.1%20-%20Decision%20Worksheet.xlsx
+            url: progress-and-role-tracking-worksheets.md
   
   # Card
   - title: What's new in Microsoft Security Compass?

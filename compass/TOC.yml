@@ -7,8 +7,8 @@
           href: microsoft-security-compass-introduction.md
         - name: What's new in Microsoft Security Compass?
           href: new-in-microsoft-security-compass.md
-        - name: Progress and role tracking spreadsheets
-          href: progress-and-role-tracking-spreadsheets.md
+        - name: Progress and role tracking worksheets
+          href: progress-and-role-tracking-worksheets.md
     - name: Governance, risk, and compliance
       items:
         - name: Videos and decks
@@ -65,3 +65,11 @@
           href: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
         - name: Capabilities
           href: administration-capabilities.md
+    - name: Endpoint security
+      items:
+        - name: Videos and decks
+          href: endpoint-security-videos-and-decks.md
+        - name: Articles
+          href: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
+        - name: Capabilities
+          href: endpoint-security-capabilities.md

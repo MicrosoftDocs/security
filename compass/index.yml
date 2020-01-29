@@ -6,9 +6,9 @@ summary: Learn about Microsoft Security Compass that is designed to rapidly incr
 metadata:
   title: Microsoft Security Compass documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about Microsoft Security Compass that is designed to rapidly increase your Azure security posture. # Required; article description that is displayed in search results. < 160 chars.
-  services: office-365-security-compliance
-  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
+  services: ms-security
+  ms.service: ms-security #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: ms-security-compass
   ms.topic: landing-page # Required
   ms.collection: m365-security-compliance
   author: dansimp #Required; your GitHub user alias, with correct capitalization.

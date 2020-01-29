@@ -17,24 +17,27 @@ Click [here](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Azure%20S
 
 ## Introduction to Azure Security Compass (14:59)
 
-> [!VIDEO https://www.youtube.com/embed/watch?v=NwovfHZEdqY&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=1]
+> [!VIDEO https://www.youtube.com/embed/watch?v=EzyceWhNeiw&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=6]
 
 ## Azure Components and Reference Model (21:52)
 
-> [!VIDEO https://www.youtube.com/embed/watch?v=tax-OEXmTqE&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=2]
+> [!VIDEO https://www.youtube.com/embed/watch?v=NwovfHZEdqY&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=1]
 
 ## Evolution of threat environment, roles, & digital strategies (20:05)
 
-> [!VIDEO https://www.youtube.com/embed/watch?v=Yy6Y9ijn9Ig&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=3]
+> [!VIDEO https://www.youtube.com/embed/watch?v=tax-OEXmTqE&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=2]
+
 
 ## Transformation of Security, Strategies, Tools, & Threats (15:14)
 
-> [!VIDEO https://www.youtube.com/embed/watch?v=3wpibAUbqTg&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=4]
+> [!VIDEO https://www.youtube.com/embed/watch?v=Yy6Y9ijn9Ig&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=3]
+
 
 ## Azure Regions and Services (3:00)
 
-> [!VIDEO https://www.youtube.com/embed/watch?v=gdc0HKgIkog&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=5]
+> [!VIDEO https://www.youtube.com/embed/watch?v=3wpibAUbqTg&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=4]
+
 
 ## Microsoft Security Practices (13:50)
 
-> [!VIDEO https://www.youtube.com/embed/watch?v=EzyceWhNeiw&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=6]
+> [!VIDEO https://www.youtube.com/embed/watch?v=gdc0HKgIkog&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=5]

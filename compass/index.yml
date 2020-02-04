@@ -36,8 +36,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Security operations
-            url: https://review.docs.microsoft.com/en-us/windows/client-management/mdm/new-in-windows-mdm-enrollment-management?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
-            #url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations?index=/security/compass/index.json&bc=/security/compass/breadcrumb/index.json
+            url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
           - text: Endpoint security
             url: endpoint-security-videos-and-decks.md
            
@@ -47,7 +46,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Security integration with Cloud Adoption Plan
-            url: https://docs.microsoft.com/en-us/azure/architecture/framework/security/applications-services
+            url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
 
 
   # Card
@@ -56,4 +55,4 @@ landingContent:
       - linkListType: overview
         links:
           - text: Security reference architectures and design
-            url: https://docs.microsoft.com/azure/architecture/framework/security/overview
+            url: https://docs.microsoft.com/azure/architecture/framework/security/overview?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json

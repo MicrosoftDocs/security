@@ -17,11 +17,15 @@ These can be used by an organization to track status for Microsoft’s recommend
 ## Tracking worksheet
 The tracking worksheet assists with tracking status of decisions, policy, and implementation.
 
-Click [here](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Azure%20Security%20Compass%201.1/Azure%20Security%20Compass%20v1.1%20-%20Decision%20Worksheet.xlsx) to download the tracking worksheet.
+![Thumb nail of decision worksheet](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/master/microsoft-365/downloads/security-compass-decision-worksheet-thumb.png)
+
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/master/microsoft-365/downloads/security-compass-decision-worksheet.pdf) | [Excel](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/master/microsoft-365/downloads/security-compass-decision-worksheet.xlsx)
+
 
 ## Cloud role tracking worksheet
 
 The cloud role tracking worksheet assists with designating the parties responsible for specific functions in Azure.
 
-Click [here](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Azure%20Security%20Compass%201.1/Azure%20Security%20Compass%20v1.1%20-%20Cloud%20Role%20Tracking.pptx) to download the cloud role tracking worksheet.
+![Thumb nail of cloud role tracking worksheet](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/master/microsoft-365/downloads/security-compass-cloud-role-tracking-thumb.png)
 
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/master/microsoft-365/downloads/security-compass-cloud-role-tracking.pdf) | [PowerPoint Presentation](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/master/microsoft-365/downloads/security-compass-cloud-role-tracking.pptx)

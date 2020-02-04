@@ -41,5 +41,5 @@ The CERT notifies the IP address owners that they are likely infected with Simda
 
 ## Contact Us   
 
-Contact your local Microsoft representative or email **gspteam\@microsoft.com** to learn more about the Government Security Program   
+Contact your local Microsoft representative to learn more about the Government Security Program   
 

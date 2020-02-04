@@ -45,4 +45,4 @@ One of the frequent uses of this offering is to review security content related 
 
 ## Contact Us
 
-Contact your local Microsoft representative or email __gspteam\@microsoft.com__  to learn more about the Government Security Program
+Contact your local Microsoft representative to learn more about the Government Security Program

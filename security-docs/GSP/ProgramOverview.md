@@ -65,4 +65,4 @@ A GSP participant (Sponsoring Agency) may request Microsoft’s approval to add 
 
 ## Contact Us
 
-Contact your local Microsoft representative or email **gspteam\@microsoft.com**  to learn more about the Government Security Program
+Contact your local Microsoft representative to learn more about the Government Security Program

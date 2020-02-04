@@ -30,7 +30,7 @@
         - name: Videos and decks
           href: identity-videos-and-decks.md
         - name: Articles
-          href: https://github.com/ManikaDhiman/architecture-center/blob/MDBranchCompassLibrarySetup/docs/framework/security/identity?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+          href: https://github.com/ManikaDhiman/architecture-center/blob/MDBranchCompassLibrarySetup/docs/framework/security/identity.md?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
         - name: Capabilities
           href: identity-capabilities.md
     - name: Information protection and storage

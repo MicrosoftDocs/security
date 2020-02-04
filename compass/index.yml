@@ -36,7 +36,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Security operations
-            url: https://review.docs.microsoft.com/en-us/windows/client-management/mdm/new-in-windows-mdm-enrollment-management?index=/security/compass/index.json&bc=/security/compass/breadcrumb/index.json
+            url: https://review.docs.microsoft.com/en-us/windows/client-management/mdm/new-in-windows-mdm-enrollment-management?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
             #url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations?index=/security/compass/index.json&bc=/security/compass/breadcrumb/index.json
           - text: Endpoint security
             url: endpoint-security-videos-and-decks.md

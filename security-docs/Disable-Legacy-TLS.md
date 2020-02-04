@@ -111,14 +111,14 @@ The Disable Legacy TLS feature can be deployed through the Internet
 Information Services (IIS) Server UI, via PowerShell commands or C++
 HTTP.sys APIs.
 
-### Option \#1: IIS UI configuration
+### Option \#1: IIS UI configuration (Available April 2020)
 
 Create a site binding for the SSL Certificate “secure.contoso.com” as
 shown below, then check “Disable Legacy TLS” and click OK.
 
 ![IIS UI](./media/dltlsfig3.jpg)
 
-### Option \#2: PowerShell
+### Option \#2: PowerShell (Available April 2020)
 
 In PowerShell you can reference SSL flags like this:
 
@@ -172,7 +172,7 @@ Additionally, one can troubleshoot and test this feature with Netsh:
 
      Watch for Disable Legacy TLS Versions  : Set/Not Set
 
-### Option \#3: C++ HTTP.sys APIs
+### Option \#3: C++ HTTP.sys APIs (Available Now)
 
 Along with Disable Legacy TLS, the following additions have been made to
 HTTP.sys:

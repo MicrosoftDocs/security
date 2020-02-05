@@ -13,21 +13,6 @@ description: "Introduction to Microsoft Security Compass"
 
 Introduction.....Microsoft Security Compass is designed to provide clear actionable guidance for security related decisions. This is designed to help organizations that are new to Azure as well as those who wish to increase their security posture on Azure.
 
-## Microsoft Security Compass workshop presentation
-
-Click the following image to download the Microsoft Security Compass workshop presentation slides.
-
-[![Thumb image of Microsoft Security Compass workshop presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation-thumb.png)](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx)
-
-Click [here](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pdf) to open in PDF.
-
-## Top 10 Azure Security best practices
-Click the following image to download the top 10 Azure Security best practices presentation slides.
-
-[![Thumb image of top 10 Azure Security best practices](https://docs.microsoft.com/microsoft-365/downloads/top-10-azure-security-best-practices-thumb.png)](https://docs.microsoft.com/microsoft-365/downloads/top-10-azure-security-best-practices.pptx)
-
-Click [here](https://docs.microsoft.com/microsoft-365/downloads/top-10-azure-security-best-practices.pdf) to open in PDF.
-
 ## Introduction to Azure Security Compass (14:59)
 
 > [!VIDEO https://www.youtube.com/embed/watch?v=EzyceWhNeiw&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=6]
@@ -54,3 +39,19 @@ Click [here](https://docs.microsoft.com/microsoft-365/downloads/top-10-azure-sec
 ## Microsoft Security Practices (13:50)
 
 > [!VIDEO https://www.youtube.com/embed/watch?v=gdc0HKgIkog&list=PLLasX02E8BPCWLfOxUXQjriXLRHVwwbCg&index=5]
+
+## Microsoft Security Compass workshop presentation
+
+Description.....
+
+[![Thumb image of Microsoft Security Compass workshop presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation-thumb.png)](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pdf)
+
+[PowerPoint](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx) | [PDF](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pdf)
+
+
+## Top 10 Azure Security best practices
+Description......
+
+[![Thumb image of top 10 Azure Security best practices](https://docs.microsoft.com/microsoft-365/downloads/top-10-azure-security-best-practices-thumb.png)](https://docs.microsoft.com/microsoft-365/downloads/top-10-azure-security-best-practices.pdf)
+
+[PowerPoint](https://docs.microsoft.com/microsoft-365/downloads/top-10-azure-security-best-practices.pptx) | [PDF](https://docs.microsoft.com/microsoft-365/downloads/top-10-azure-security-best-practices.pdf)

@@ -37,8 +37,8 @@ landingContent:
         links:
           - text: Security operations
             url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
-          - text: Endpoint security
-            url: endpoint-security-videos-and-decks.md
+          #- text: Endpoint security
+           # url: endpoint-security-videos-and-decks.md
            
    # Card
   - title: Cloud Adoption Plan integration

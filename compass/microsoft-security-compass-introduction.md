@@ -16,6 +16,7 @@ Introduction.....Microsoft Security Compass is designed to provide clear actiona
 ## Microsoft Security Compass workshop presentation
 
 Click the following image to download the Microsoft Security Compass workshop presentation slides.
+
 [![Thumb image of Microsoft Security Compass workshop presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation-thumb.png)](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx)
 
 Click [here](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pdf) to open in PDF.

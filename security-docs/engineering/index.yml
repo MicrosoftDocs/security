@@ -1,0 +1,47 @@
+### YamlMime:Landing
+
+title: Microsoft security engineering documentation
+summary: This collection of resources is designed to help you find security related documentation and information from across Microsoft. 
+
+metadata:
+  title: Microsoft security engineering documentation
+  description: Find security related documentation and information from across Microsoft.
+  services: security
+  ms.topic: landing-page
+  author: TerryLanfear
+  ms.author: terrylan
+  manager: rkarlin
+  ms.date: 02/11/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Government security program
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Trust through transparency
+            url: ../../gsp/programoverview.md
+          - text: Transparency centers
+            url: ../../gsp/contenttransparencycenters.md
+
+  # Card
+  - title: Security Developmental Lifecycle
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Create a security process
+            url: ../../sdl/security-bug-bar-sample.md
+          - text: Encryption best practices
+            url: ../../sdl/cryptographic-recommendations.md
+
+  # Card
+  - title: Cyber Defense Operations Center
+    linkLists:
+      - linkListType: overview
+        links:
+          - text:  State of online security
+            url: ../../msrc/fy18-strategy-brief.md

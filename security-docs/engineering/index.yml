@@ -24,9 +24,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Trust through transparency
-            url: ../../gsp/programoverview.md
+            url: ../gsp/programoverview.md
           - text: Transparency centers
-            url: ../../gsp/contenttransparencycenters.md
+            url: ../gsp/contenttransparencycenters.md
 
   # Card
   - title: Security Developmental Lifecycle
@@ -34,9 +34,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Create a security process
-            url: ../../sdl/security-bug-bar-sample.md
+            url: ../sdl/security-bug-bar-sample.md
           - text: Encryption best practices
-            url: ../../sdl/cryptographic-recommendations.md
+            url: ../sdl/cryptographic-recommendations.md
 
   # Card
   - title: Cyber Defense Operations Center
@@ -44,4 +44,4 @@ landingContent:
       - linkListType: overview
         links:
           - text:  State of online security
-            url: ../../msrc/fy18-strategy-brief.md
+            url: ../msrc/fy18-strategy-brief.md

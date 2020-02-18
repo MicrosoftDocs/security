@@ -3,7 +3,7 @@
   href: index.yml
   expanded: true
   items:
-  - name: Secure machine learning
+  - name: Securing machine learning
     items:
     - name: Failure Modes in Machine Learning
       href: failure-modes-in-machine-learning.md
@@ -14,7 +14,7 @@
     - name: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
       href: Securing-Artificial-Intelligence-Machine-Learning.md
 
-  - name: Removing TLS 1.0 usage
+  - name: Secure communications
     items:
     - name: Solving the TLS 1.0 Problem
       href: Solving-TLS1-Problem.md
@@ -40,64 +40,6 @@
       href: ../SDL/security-bug-bar-sample.md
     - name: Microsoft SDL Cryptographic Recommendations 
       href: ../SDL/Cryptographic-Recommendations.md
-    - name: Getting started with the Threat Modeling Tool 
-      href: /azure/security/azure-security-threat-modeling-tool-getting-started
-    - name: Threat Modeling Tool feature overview
-      href: /azure/security/azure-security-threat-modeling-tool-feature-overview
-    - name:	Microsoft Threat Modeling Tool threats
-      href: /azure/security/azure-security-threat-modeling-tool-threats
-    - name:	Microsoft Threat Modeling Tool mitigations
-      href: /azure/security/azure-security-threat-modeling-tool-mitigations
-    - name:	Add or modify a field to track work
-      href: /azure/devops/reference/add-modify-field?view=tfs-2018&viewFallbackFrom=vsts
-    - name:	Install FxCop analyzers in Visual Studio
-      href: /visualstudio/code-quality/install-fxcop-analyzers?view=vs-2017
-    - name:	Using Azure Security Center for an incident response 
-      href: /azure/security-center/security-center-incident-response
-
-  - name: Operational Security Assurance
-    items:
-    - name:	'How it works: Azure Multi-Factor Authentication'
-      href: /azure/active-directory/authentication/concept-mfa-howitworks
-    - name:	What is Azure AD Privileged Identity Management?
-      href: /azure/active-directory/privileged-identity-management/pim-configure
-    - name:	Role-based access control documentation
-      href: /azure/role-based-access-control/
-    - name:	Privileged Account Workstations
-      href: /windows-server/identity/securing-privileged-access/privileged-access-workstations
-    - name:	Just Enough Administration
-      href: /powershell/jea/overview
-    - name:	Key Vault Documentation
-      href: /azure/key-vault/
-    - name:	Key Vault Configuration
-      href: /aspnet/core/security/key-vault-configuration  
-    - name:	Safe storage of app secrets in development in ASP.NET Core
-      href: /aspnet/core/security/app-secrets?view=aspnetcore-2.1&tabs=windows
-    - name:	What is managed identities for Azure resources? 
-      href: /azure/active-directory/managed-identities-azure-resources/overview
-    - name:	Using a Windows VM system-assigned managed identity to access Azure Key Vault 
-      href: /azure/active-directory/managed-identities-azure-resources/tutorial-windows-vm-access-nonaad
-    - name:	Using a Linux VM system-assigned managed identity to access Azure Key Vault 
-      href: /azure/active-directory/managed-identities-azure-resources/tutorial-linux-vm-access-nonaad  
-    - name:	Applocker 
-      href: /windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview
-    - name:	Securing SQL Server 
-      href: /sql/relational-databases/security/securing-sql-server?view=sql-server-2017
-    - name:	Windows security baselines
-      href: /windows/security/threat-protection/windows-security-baselines
-    - name:	'Device Guard: Windows Defender Application Control and virtualization-based protection of code integrity'
-      href: /windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control
-    - name:	Enterprise Mobility + Security Documentation 
-      href: /enterprise-mobility-security/
-    - name:	Azure DDoS Protection Standard overview
-      href: /azure/virtual-network/ddos-protection-overview
-
-  - name: Secure DevOps
-    items: 
-    - name:	Add Key Vault to your web application by using Visual Studio Connected Services
-      href: /azure/key-vault/vs-key-vault-add-connected-service
-    - name:	Azure advanced threat detection
-      href: /azure/security/azure-threat-detection
 
   - name: Cyber Defense Operations Center
     items:

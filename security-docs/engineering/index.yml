@@ -20,7 +20,7 @@ landingContent:
 # Start card title with a verb
 
   # Card
-  - title: Secure machine learning
+  - title: Securing machine learning
     linkLists:
       - linkListType: overview
         links:
@@ -30,9 +30,21 @@ landingContent:
             url: threat-modeling-aiml.md
           - text: Triaging failure modes
             url: bug-bar-aiml.md
+          - text: Securing the future of machine learning
+            url: securing-artificial-intelligence-machine-learning.md
 
   # Card
-  - title: About Microsoft's government security program
+  - title: Secure communications
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Solving the TLS 1.0 problem
+            url: solving-tls1-problem.md
+          - text: Block weak TLS versions
+            url: disable-legacy-tls.md
+
+  # Card
+  - title: About Microsoft's Government Security Program
     linkLists:
       - linkListType: overview
         links:
@@ -42,6 +54,10 @@ landingContent:
             url: ../GSP/ContentTransparencyCenters.md
           - text: Information sharing and exchange
             url: ../GSP/informationsharingandexchange.md
+          - text: Online sourcs
+            url: ../GSP/onlinesources.md
+          - text: Technical data
+            url: ../GSP/technicaldata.md
 
   # Card
   - title: Develop secure apps using Microsoft's SDL
@@ -54,9 +70,9 @@ landingContent:
             url: ../SDL/Cryptographic-Recommendations.md
 
   # Card
-  - title: Understand state of online security
+  - title: About Microsoft's Cyber Defense Operations Center
     linkLists:
       - linkListType: overview
         links:
-          - text:  Cyber Defense Operations Center
+          - text:  Strategy brief
             url: ../MSRC/FY18-Strategy-Brief.md

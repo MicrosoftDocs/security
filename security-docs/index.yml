@@ -22,6 +22,14 @@ productDirectory:
   summary: Stay up to date on what is new in security at Microsoft
   items:
     # Card
+    - title: Latest from security engineering
+      imageSrc: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      links:
+        - url: ./security-docs/engineering/threat-modeling-aiml.md
+          text: Threat Modeling for machine learning
+        - url: ./security-docs/engineering/bug-bar-aiml.md
+          text: Triaging failure modes
+    # Card
     - title: Microsoft Ignite 2019
       imageSrc: https://docs.microsoft.com/media/common/i_video.svg
       links:

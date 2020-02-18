@@ -28,9 +28,9 @@ landingContent:
             url: failure-modes-in-machine-learning.md
           - text: Threat modeling
             url: threat-modeling-aiml.md
-          - text: Triaging failure modes
+          - text: Triage failure modes
             url: bug-bar-aiml.md
-          - text: Securing the future of machine learning
+          - text: Secure the future of machine learning
             url: securing-artificial-intelligence-machine-learning.md
 
   # Card
@@ -38,7 +38,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Solving the TLS 1.0 problem
+          - text: Solve the TLS 1.0 problem
             url: solving-tls1-problem.md
           - text: Disable legacy TLS versions
             url: disable-legacy-tls.md

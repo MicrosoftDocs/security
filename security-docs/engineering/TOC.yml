@@ -18,7 +18,7 @@
     items:
     - name: Solving the TLS 1.0 Problem
       href: Solving-TLS1-Problem.md
-    - name: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
+    - name: Disable legacy TLS
       href: Disable-Legacy-TLS.md
 
   - name: Government Security Program
@@ -29,19 +29,19 @@
       href: ../GSP/ContentTransparencyCenters.md
     - name: Information Sharing And Exchange
       href: ../GSP/InformationSharingAndExchange.md
-    - name: Online Sources
+    - name: Access to source code
       href: ../GSP/OnlineSources.md 
-    - name: Technical Data
+    - name: Access to technical data
       href: ../GSP/TechnicalData.md
 
   - name: Security Development Lifecycle
     items:
     - name: Security Bug Bar (Sample) 
       href: ../SDL/security-bug-bar-sample.md
-    - name: Microsoft SDL Cryptographic Recommendations 
+    - name: Cryptographic recommendations 
       href: ../SDL/Cryptographic-Recommendations.md
 
   - name: Cyber Defense Operations Center
     items:
-    - name: FY18 CDOC Strategy Brief
+    - name: Strategy brief
       href: ../MSRC/FY18-Strategy-Brief.md

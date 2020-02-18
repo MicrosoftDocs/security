@@ -11,37 +11,52 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 02/12/2020
+  ms.date: 02/18/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+
   # Card
-  - title: Government security program
+  - title: Secure machine learning
     linkLists:
       - linkListType: overview
         links:
-          - text: Trust through transparency
+          - text: Failure mode attacks
+            url: failure-modes-in-machine-learning.md
+          - text: Threat modeling
+            url: threat-modeling-aiml.md
+          - text: Failure modes
+            url: bug-bar-aiml.md
+
+  # Card
+  - title: About Microsoft's government security program
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: GSP program overview
             url: ../GSP/ProgramOverview.md
           - text: Transparency centers
             url: ../GSP/ContentTransparencyCenters.md
+          - text: Information sharing and exchange
+            url: ../GSP/informationsharingandexchange.md
 
   # Card
-  - title: Security Developmental Lifecycle
+  - title: Develop secure apps using Microsoft's SDL
     linkLists:
       - linkListType: overview
         links:
           - text: Create a security process
             url: ../SDL/Security-Bug-Bar-Sample.md
-          - text: Encryption best practices
+          - text: Cryptographic best practices
             url: ../SDL/Cryptographic-Recommendations.md
 
   # Card
-  - title: Cyber Defense Operations Center
+  - title: Understand state of online security
     linkLists:
       - linkListType: overview
         links:
-          - text:  State of online security
+          - text:  Cyber Defense Operations Center
             url: ../MSRC/FY18-Strategy-Brief.md

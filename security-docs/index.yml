@@ -25,9 +25,9 @@ productDirectory:
     - title: Latest from security engineering
       imageSrc: https://docs.microsoft.com/media/common/i_threat-protection.svg
       links:
-        - url: ./engineering/threat-modeling-aiml.md
+        - url: ./engineering/Threat-modeling-aiml.md
           text: Threat Modeling for machine learning
-        - url: ./engineering/bug-bar-aiml.md
+        - url: ./engineering/Bug-Bar-aiml.md
           text: Triaging failure modes
     # Card
     - title: Microsoft Ignite 2019

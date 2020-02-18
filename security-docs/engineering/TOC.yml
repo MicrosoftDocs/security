@@ -2,19 +2,25 @@
   displayName: Home
   href: index.yml
   expanded: true
-  items: 
-  - name: Failure Modes in Machine Learning
-    href: failure-modes-in-machine-learning.md
-  - name: Threat Modeling AI/ML Systems and Dependencies
-    href: threat-modeling-aiml.md
-  - name: AI/ML Pivots to the Security Development Lifecycle Bug Bar
-    href: bug-bar-aiml.md
-  - name: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
-    href: Securing-Artificial-Intelligence-Machine-Learning.md
-  - name: Solving the TLS 1.0 Problem
-    href: Solving-TLS1-Problem.md
-  - name: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
-    href: Disable-Legacy-TLS.md
+  items:
+  - name: Secure machine learning
+    items:
+    - name: Failure Modes in Machine Learning
+      href: failure-modes-in-machine-learning.md
+    - name: Threat Modeling AI/ML Systems and Dependencies
+      href: threat-modeling-aiml.md
+    - name: AI/ML Pivots to the Security Development Lifecycle Bug Bar
+      href: bug-bar-aiml.md
+    - name: Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
+      href: Securing-Artificial-Intelligence-Machine-Learning.md
+
+  - name: Removing TLS 1.0 usage
+    items:
+    - name: Solving the TLS 1.0 Problem
+      href: Solving-TLS1-Problem.md
+    - name: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
+      href: Disable-Legacy-TLS.md
+
   - name: Government Security Program
     items:
     - name: Program Overview
@@ -27,6 +33,7 @@
       href: ../GSP/OnlineSources.md 
     - name: Technical Data
       href: ../GSP/TechnicalData.md
+
   - name: Security Development Lifecycle
     items:
     - name: Security Bug Bar (Sample) 
@@ -47,6 +54,7 @@
       href: /visualstudio/code-quality/install-fxcop-analyzers?view=vs-2017
     - name:	Using Azure Security Center for an incident response 
       href: /azure/security-center/security-center-incident-response
+
   - name: Operational Security Assurance
     items:
     - name:	'How it works: Azure Multi-Factor Authentication'
@@ -83,12 +91,14 @@
       href: /enterprise-mobility-security/
     - name:	Azure DDoS Protection Standard overview
       href: /azure/virtual-network/ddos-protection-overview
+
   - name: Secure DevOps
     items: 
     - name:	Add Key Vault to your web application by using Visual Studio Connected Services
       href: /azure/key-vault/vs-key-vault-add-connected-service
     - name:	Azure advanced threat detection
       href: /azure/security/azure-threat-detection
+
   - name: Cyber Defense Operations Center
     items:
     - name: FY18 CDOC Strategy Brief

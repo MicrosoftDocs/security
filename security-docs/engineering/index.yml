@@ -24,11 +24,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Failure mode attacks
+          - text: Failure modes in machine learning
             url: failure-modes-in-machine-learning.md
           - text: Threat modeling
             url: threat-modeling-aiml.md
-          - text: Failure modes
+          - text: Triaging failure modes
             url: bug-bar-aiml.md
 
   # Card
@@ -36,7 +36,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: GSP program overview
+          - text: Program overview
             url: ../GSP/ProgramOverview.md
           - text: Transparency centers
             url: ../GSP/ContentTransparencyCenters.md

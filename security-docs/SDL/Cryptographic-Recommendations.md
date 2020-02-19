@@ -5,7 +5,7 @@ description: This document contains recommendations and best practices for using
 ms.date: 12/03/2018
 ms.service: security
 ms.author: bcowper
-author: bcowper
+author: BruceCowper
 ms.topic: conceptual
 ---
 
@@ -38,7 +38,7 @@ SSL/TLS:
 
   - SSL 3 and SSL 2 should be disabled by default
 
-### Symmetric Block Ciphers, Cipher Modes and Initialization Vectors 
+### Symmetric Block Ciphers, Cipher Modes and Initialization Vectors
 _Block Ciphers_
 
 For products using symmetric block ciphers:
@@ -115,8 +115,8 @@ encryption operations, as this can reveal information about the data
 being encrypted, particularly when using streaming cipher modes like
 Output Feedback (OFB) or Counter (CTR).
 
-### Asymmetric Algorithms, Key Lengths, and Padding Modes 
-_RSA_ 
+### Asymmetric Algorithms, Key Lengths, and Padding Modes
+_RSA_
 
   - RSA should be used for encryption, key exchange and signatures.
 
@@ -394,7 +394,7 @@ Truncation of HMACs to less than 128 bits is not recommended.
     to different algorithms in the future. This should include the
     algorithm used, key sizes, initialization vectors, and padding
     modes.
-    
+
       - For more information on Cryptographic Agility, see
         [<span class="underline">Cryptographic Agility on
         MSDN</span>.](https://msdn.microsoft.com/magazine/ee321570.aspx)
@@ -410,7 +410,7 @@ Truncation of HMACs to less than 128 bits is not recommended.
   - Do not report cryptographic operation failures to end-users. When
     returning an error to a remote caller (e.g. web client, or client in
     a client-server scenario), use a generic error message only.
-    
+
       - Avoid providing any unnecessary information, such as directly
         reporting out-of-range or invalid length errors. Log verbose
         errors on the server only, and only if verbose logging is
@@ -418,19 +418,19 @@ Truncation of HMACs to less than 128 bits is not recommended.
 
   - Additional security review is highly recommended for any design
     incorporating the following:
-    
+
       - A new protocol that is primarily focused on security (such as an
         authentication or authorization protocol)
-    
+
       - A new protocol that uses cryptography in a novel or non-standard
         way o Example considerations include:
-        
+
           - Will a product that implements the protocol call any crypto
             APIs or methods as part of the protocol implementation?
-        
+
           - Does the protocol depend on any other protocol used for
             authentication or authorization?
-        
+
           - Will the protocol define storage formats for cryptographic
             elements, such as keys?
 
@@ -438,13 +438,13 @@ Truncation of HMACs to less than 128 bits is not recommended.
     environments. Use of a self-signed certificate, like use of a raw
     cryptographic key, does not inherently provide users or
     administrators any basis for making a trust decision.
-    
+
       - In contrast, use of a certificate rooted in a trusted
         certificate authority makes clear the basis for relying on the
         associated private key and enables revocation and updates in the
         event of a security failure.
 
-## Encrypting Sensitive Data prior to Storage 
+## Encrypting Sensitive Data prior to Storage
 _DPAPI/DPAPI-NG_
 
 For data that needs to be persisted across system reboots:
@@ -512,7 +512,7 @@ or [<span class="underline">Microsoft Azure
 KeyVault</span>](https://azure.microsoft.com/services/key-vault/)
 to protect password and credential data.
 
-_Windows Store Apps_ 
+_Windows Store Apps_
 
 Use the classes in the [<span class="underline">Windows.Security.Cryptography</span>](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.aspx)
 and

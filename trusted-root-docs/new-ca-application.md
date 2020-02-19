@@ -4,6 +4,7 @@ description: This document provides details about the requirements all Certifica
 ms.date: 02/18/2020
 ms.service: security
 ms.author: kasirota
+author: kasirota
 ms.topic: conceptual
 ---
 # New CA application - Microsoft Trusted Root Program

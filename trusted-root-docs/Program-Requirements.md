@@ -129,7 +129,7 @@ Program.
 
 ### F. Windows 10 Kernel Mode Code Signing (KMCS) Requirements
 
-Windows 10 has heightened requirements to validate kernel-mode drivers.  Drivers must be signed by both Microsoft and a Program partner using Extended Validation requirements.   All developers who wish to have their kernel-mode drivers included in Windows must follow the procedures outlined by the Microsoft Hardware Development Team.  Program documentation can be found here: <https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/ > Additionally, a FAQ about the deprecation of 3rd party KMCS certificates can be found here: https://docs.microsoft.com/en-us/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates. 
+Windows 10 has heightened requirements to validate kernel-mode drivers.  Drivers must be signed by both Microsoft and a Program partner using Extended Validation requirements.   All developers who wish to have their kernel-mode drivers included in Windows must follow the procedures outlined by the Microsoft Hardware Development Team.  Program documentation can be found here: <https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/> Additionally, a FAQ about the deprecation of 3rd party KMCS certificates can be found here: https://docs.microsoft.com/en-us/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates. 
  
 Starting January 31, 2020, all newly issued kernel mode code signing certificates MUST expire by January 1st, 2022. 
 

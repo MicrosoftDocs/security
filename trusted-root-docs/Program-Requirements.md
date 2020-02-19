@@ -145,10 +145,10 @@ Though not required by Microsoft, the following represents what
 Microsoft believes to be the best practices that each CA should follow.
 
 1.  Microsoft recommends that each CA have an established communication channel to its customers. For example, if Microsoft were to notify the CA that Microsoft was disabling weak file hashes, the CA should have a method to notify its customers to use the updated signtool.exe file.
-
 2.  Because root certificates will be removed without regard to any unexpired end entity certificates issued from them, the CAs should plan to cease issuing end entity certificates for uses besides code  signing such that those certificates expire according to these root removal guidelines.
 3.  While Windows will not enforce specific policies on Secure Email certificates, Microsoft recommends that CAs start issuing new Secure Email certificates using the SHA-2 algorithm.
 4.  Microsoft recommends an OCSP responder maximum validity period of one (1) day.
+
 
 
 

@@ -138,7 +138,7 @@ Starting January 31, 2020, all newly issued kernel mode code signing certificate
 
 ------------------------------------------------------------------------
 
-## 5. Technical Best Practices
+## 4. Technical Best Practices
 
 
 Though not required by Microsoft, the following represents what

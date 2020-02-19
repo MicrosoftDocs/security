@@ -2,7 +2,7 @@
 layout: Conceptual
 title: Solving the TLS 1.0 Problem
 description: This document presents guidance on rapidly identifying and removing Transport Layer Security (TLS) protocol version 1.0 dependencies in software built on top of Microsoft operating systems. It is intended to be used as a starting point for building a migration plan to a TLS 1.2+ network environment.
-ms.date: 01/04/2019
+ms.date: 02/18/2020
 ms.service: security
 ms.author: amarshal
 ms.topic: conceptual
@@ -78,7 +78,7 @@ version:
 
 *TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
 
-Also note that Microsoft Edge and Internet Explorer 11 will both drop TLS 1.0/1.1 support in 2020. More information on TLS version support by browser can be found here: https://caniuse.com/#search=tls
+For more information on TLS 1.0/1.1 deprecation in IE/Edge, see [Modernizing TLS connections in Microsoft Edge and Internet Explorer 11](https://blogs.windows.com/msedgedev/2018/10/15/modernizing-tls-edge-ie11/)
 
 A quick way to determine what TLS version will be requested by various
 clients when connecting to your online services is by referring to the

@@ -1,6 +1,34 @@
 {
   "docsets_to_publish": [
     {
+      "docset_name": "ciso-workshop",
+      "build_source_folder": "ciso-workshop",
+      "build_output_subfolder": "ciso-workshop",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "compass",
+      "build_source_folder": "compass",
+      "build_output_subfolder": "compass",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "security-docs",
       "build_source_folder": "security-docs",
       "build_output_subfolder": "security-docs",
@@ -48,5 +76,8 @@
     }
   ],
   "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }

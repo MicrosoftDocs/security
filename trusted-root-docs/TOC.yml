@@ -4,10 +4,9 @@
   href: audit-requirements.md
 - name: Incident Reporting
   href: Incident-Reporting.md
+- name: Release Notes
+  href: Release-Notes.md
 - name: List of Participants
   href: Participants-List.md
 - name: Release Notes Home Page
   href: Release-Notes.md
-  items:
-  - name: Upcoming Changes Backlog
-    href: upcoming-changes-backlog.md

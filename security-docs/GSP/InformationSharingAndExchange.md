@@ -3,7 +3,7 @@ title: Information Sharing and Exchange
 description: This document provides details of the Information Sharing and Exchange offering that enables Microsoft to share and exchange materials related to Microsoft products and services.
 ms.date: 02/19/2019
 ms.service: security
-ms.author: kellieac
+ms.author: bcowper
 ms.topic: conceptual
 ---
 
@@ -41,5 +41,5 @@ The CERT notifies the IP address owners that they are likely infected with Simda
 
 ## Contact Us   
 
-Contact your local Microsoft representative or email **gspteam\@microsoft.com** to learn more about the Government Security Program   
+Contact your local Microsoft representative to learn more about the Government Security Program   
 

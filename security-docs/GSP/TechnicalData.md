@@ -3,7 +3,7 @@ title: Technical Data
 description: This document provides details of the Technical Data offering that provides access to a broad range of confidential technical information, exclusive of source code, which allows government agencies and international organizations to evaluate the trustworthiness of Microsoft products and services.
 ms.date: 02/19/2019
 ms.service: security
-ms.author: kellieac
+ms.author: bcowper
 ms.topic: conceptual
 ---
 
@@ -45,4 +45,4 @@ One of the frequent uses of this offering is to review security content related 
 
 ## Contact Us
 
-Contact your local Microsoft representative or email __gspteam\@microsoft.com__  to learn more about the Government Security Program
+Contact your local Microsoft representative to learn more about the Government Security Program

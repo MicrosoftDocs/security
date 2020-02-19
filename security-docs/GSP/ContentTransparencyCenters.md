@@ -3,7 +3,7 @@ title: Transparency Centers
 description: This document provides an overview of the transparency centers throughout the world for the Government Security Program.
 ms.date: 02/19/2019
 ms.service: security
-ms.author: kellieac
+ms.author: bcowper
 ms.topic: conceptual
 ---
 
@@ -47,4 +47,4 @@ The environment and tools for source code evaluation include:
 
 ## Contact Us
 
-Contact your local Microsoft representative or email **gspteam\@microsoft.com**  to learn more about the Government Security Program
+Contact your local Microsoft representative to learn more about the Government Security Program

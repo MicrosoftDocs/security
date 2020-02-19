@@ -1,8 +1,9 @@
 ---
 title: Release notes - Microsoft Trusted Root Certificate Program
 description: This document provides details about the changes made monthly to the root store.
-ms.date: 03/04/2019
+ms.date: 09/11/2019
 ms.service: security
+author: kasirota
 ms.author: kasirota
 ms.topic: conceptual
 ---
@@ -21,11 +22,24 @@ Please note, the changes listed are accurate at the time of posting but are subj
 
 A list of Root Store participants, updated monthly, can be found here: <https://aka.ms/trustcertpartners>. 
 
+## 2020
+| Month |	Date of Release	| Release Notes |
+|---|---|---|
+| February | February 25th  | [Deployment Notice Posted February 3](2020/Feb2020.md) |
+| January | January 28  | [Deployment Notice Posted January 22](2020/Jan2020.md) |
 
 ## 2019 
 
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
+| October | October 28  | [Deployment Notice Posted October 11](oct2019.md) |
+| August | August 14 | [Deployment Notice Posted August 14](august2019-2.md) |
+| August | August 27 | [Deployment Notice Posted August 2](august2019.md) |
+| July | July 10 | [Deployment Notice Posted July 11](july2019-2.md) |
+| July | July 30 | [Deployment Notice Posted July 2](July2019.md) |
+| June | July 2 | [Deployment Notice Posted June 5](june2019.md) |
+| May | May 28 | [Deployment Notice Posted May 1](May2019.md) |
+| April | April 30 | [Deployment Notice Posted April 15](April2019.md) |
 | March | March 26 | [Deployment Notice Posted March 6](Mar2019.md) |
 | February | March 5 | [Deployment Notice Posted February 19](Feb2019.md) |
 | January | January 29 | [Deployment Notice Posted January 23](Jan2019.md) |

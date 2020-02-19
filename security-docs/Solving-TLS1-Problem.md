@@ -78,7 +78,7 @@ version:
 
 *TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
 
-For more information on TLS 1.0/1.1 deprecation in IE/Edge, see [Modernizing TLS connections in Microsoft Edge and Internet Explorer 11](https://blogs.windows.com/msedgedev/2018/10/15/modernizing-tls-edge-ie11/)
+For more information on TLS 1.0/1.1 deprecation in IE/Edge, see [Modernizing TLS connections in Microsoft Edge and Internet Explorer 11](https://blogs.windows.com/msedgedev/2018/10/15/modernizing-tls-edge-ie11/) and [Site compatibility-impacting changes coming to Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/web-platform/site-impacting-changes)
 
 A quick way to determine what TLS version will be requested by various
 clients when connecting to your online services is by referring to the

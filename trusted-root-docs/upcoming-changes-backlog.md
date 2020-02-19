@@ -3,6 +3,7 @@ title: Upcoming Changes Backlog - Microsoft Trusted Root Certificate Program
 description: This document provides details about the changes made monthly to the root store.
 ms.date: 03/04/2019
 ms.service: security
+author:kasirota
 ms.author: kasirota
 ms.topic: conceptual
 ---

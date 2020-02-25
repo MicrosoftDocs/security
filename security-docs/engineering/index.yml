@@ -24,7 +24,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Threat taxonomy: Failure modes in machine learning
+          - text: Threat taxonomy - Failure modes in machine learning
             url: failure-modes-in-machine-learning.md
           - text: Threat modeling AI/ML systems and dependencies
             url: threat-modeling-aiml.md

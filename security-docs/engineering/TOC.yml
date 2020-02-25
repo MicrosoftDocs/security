@@ -5,7 +5,7 @@
   items:
   - name: Artifical intelligence and machine learning security
     items:
-    - name: Threat taxonomy: Failure modes in machine learning
+    - name: Threat taxonomy - Failure modes in machine learning
       href: failure-modes-in-machine-learning.md
     - name: Threat Modeling AI/ML systems and dependencies
       href: threat-modeling-aiml.md

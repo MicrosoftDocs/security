@@ -12,7 +12,7 @@ description: "Videos and decks"
 # Microsoft Security Compass module: Security operations
 Introduction...
 
-## Part 1: Introduction - SOC Learnings, Stratagies, and Technical Integration (24:30)
+## Part 1: Introduction - SOC Learnings, Strategies, and Technical Integration (24:30)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qjuW]
 
 ## Part 2: Azure Alerts (02:36)

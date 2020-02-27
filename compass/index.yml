@@ -1,0 +1,58 @@
+### YamlMime:Landing
+
+title: Microsoft Security Compass documentation # < 60 chars
+summary: Learn about Microsoft Security Compass that is designed to rapidly increase your Azure security posture.  # < 160 chars
+
+metadata:
+  title: Microsoft Security Compass documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Microsoft Security Compass that is designed to rapidly increase your Azure security posture. # Required; article description that is displayed in search results. < 160 chars.
+  services: ms-security
+  ms.service: ms-security #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: ms-security-compass
+  ms.topic: landing-page # Required
+  ms.collection: m365-security-compliance
+  author: dansimp #Required; your GitHub user alias, with correct capitalization.
+  ms.author: dansimp #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/21/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Security Compass?
+            url:  microsoft-security-compass-introduction.md
+          - text: Progress and role tracking spreadsheets
+            url: progress-and-role-tracking-worksheets.md
+  
+  # Card
+  - title: What's new in Microsoft Security Compass?
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Security operations
+            url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+          #- text: Endpoint security
+           # url: endpoint-security-videos-and-decks.md
+           
+   # Card
+  - title: Cloud Adoption Plan integration
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Security integration with Cloud Adoption Plan
+            url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+
+
+  # Card
+  - title: Reference architectures
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Security reference architectures and design
+            url: https://docs.microsoft.com/azure/architecture/framework/security/overview?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json

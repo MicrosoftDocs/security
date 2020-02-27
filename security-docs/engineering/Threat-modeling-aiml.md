@@ -6,7 +6,6 @@ title: Threat Modeling AI/ML Systems and Dependencies
 description: Threat Mitigation/Security Feature Technical Guidance
 author: AMarshal
 ms.author: AMarshal
-author: AMarshal
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: security
@@ -44,7 +43,7 @@ the software and physical domains, as well as [making compromise trivial
 lower down the software stack](https://arxiv.org/pdf/1901.03597.pdf).
 For an introduction to net-new security threats in this space see
 [Securing the Future of AI and ML at
-Microsoft](https://docs.microsoft.com/en-us/security/securing-artificial-intelligence-machine-learning).
+Microsoft](https://docs.microsoft.com/security/securing-artificial-intelligence-machine-learning).
 
 The skillsets of security engineers and data scientists typically do not overlap.  This guidance provides a way for both disciplines to have structured conversations on these net-new threats/mitigations without requiring security engineers to become data scientists or vice versa.
 
@@ -58,9 +57,9 @@ protect Microsoft products and services against these threats.  This section is 
 This guidance is organized around an Adversarial Machine Learning Threat
 Taxonomy created by Ram Shankar Siva Kumar, David O’Brien, Kendra
 Albert, Salome Viljoen, and Jeffrey Snover entitled “[Failure Modes in
-Machine Learning](https://docs.microsoft.com/en-us/security/failure-modes-in-machine-learning).” For incident management guidance on triaging
+Machine Learning](https://docs.microsoft.com/security/failure-modes-in-machine-learning).” For incident management guidance on triaging
 security threats detailed in this document, refer to the [SDL Bug Bar
-for AI/ML Threats.](https://docs.microsoft.com/en-us/security/bug-bar-aiml)  All of these are living documents which will evolve over time with the threat landscape.
+for AI/ML Threats.](https://docs.microsoft.com/security/bug-bar-aiml)  All of these are living documents which will evolve over time with the threat landscape.
 
 ## Key New Considerations in Threat Modeling: Changing the way you view Trust Boundaries
 
@@ -345,7 +344,7 @@ This can also be manifested by trolls using certain target words in a
 way that the AI will ban them, effectively denying service to legitimate
 users with a name matching a “banned” word.
 
-![](./media/tm1.jpg)[24]
+![](./media/threat-modeling-aiml/tm1.jpg)[24]
 
 ## Variant \#1a: Targeted misclassification
 
@@ -360,7 +359,7 @@ system classifies it as a legitimate class.
 
 #### Examples
 
-![](./media/tm2.jpg)[6]
+![](./media/threat-modeling-aiml/tm2.jpg)[6]
 
 #### Mitigations
 
@@ -381,7 +380,7 @@ system classifies it as a legitimate class.
     learning model on the adversarial examples. In contrast, the natural
     inputs are robust in attribution space.
 
-    ![](./media/tm3.jpg)[20]
+    ![](./media/threat-modeling-aiml/tm3.jpg)[20]
 
 These approaches can make machine learning models more resilient to
 adversarial attacks because fooling this two-layer cognition system
@@ -450,7 +449,7 @@ Proactive/Protective Actions
     function of the classifier smoother (increasing the input margin).
     This includes correct classifications with lower confidence rates.
 
-![](./media/tm4.jpg)
+![](./media/threat-modeling-aiml/tm4.jpg)
 
 Invest in developing monotonic classification with selection of
 monotonic features. This ensures that the adversary will not be able
@@ -469,9 +468,9 @@ class [13].
     and selecting a threshold value, system can output the correct
     prediction for legitimate examples and rejects adversarial inputs.
 
-    ![](./media/tm5.jpg)
+    ![](./media/threat-modeling-aiml/tm5.jpg)
 
-    ![](./media/tm6.jpg)[18]
+    ![](./media/threat-modeling-aiml/tm6.jpg)[18]
 
 - Certified Defenses against Adversarial Examples [22]: The authors
     propose a method based on a semi-definite relaxation that outputs a
@@ -505,7 +504,7 @@ classification being used in the future [3].
 
 ##### Examples
 
-![](./media/tm7.jpg)
+![](./media/threat-modeling-aiml/tm7.jpg)
 
 ##### Mitigations
 
@@ -529,7 +528,7 @@ indistinguishable from legitimate alerts [3].
 
 ##### Examples
 
-![](./media/tm8.jpg)
+![](./media/threat-modeling-aiml/tm8.jpg)
 
 ##### Mitigations
 
@@ -554,7 +553,7 @@ modified in the testing phase[1]. In targeted poisoning attacks, the
 attacker wants to misclassify specific examples to cause specific
 actions to be taken or omitted.
 
-##### Examples 
+##### Examples
 
 Submitting AV software as malware to force its misclassification as
 malicious and eliminate the use of targeted AV software on client
@@ -647,7 +646,7 @@ to the classification matching the target [4].
 
 ##### Examples
 
-![](./media/tm9.jpg)[4]
+![](./media/threat-modeling-aiml/tm9.jpg)[4]
 
 ##### Mitigations
 
@@ -681,7 +680,7 @@ model’s training dataset or not[1]. Researchers were able to predict a
 patient’s main procedure (e.g: Surgery the patient went through) based
 on the attributes (e.g: age, gender, hospital) [1].
 
-![](./media/tm10.jpg)[12]
+![](./media/threat-modeling-aiml/tm10.jpg)[12]
 
 ##### Mitigations
 
@@ -737,7 +736,7 @@ recover feature information or make inferences on training data. 
     production-deployed model can be developed entirely offline by the
     attacker who extracted a copy of your model.
 
-##### Examples 
+##### Examples
 
 In settings where an ML model serves to detect adversarial behavior,
 such as identification of spam, malware classification, and network
@@ -901,7 +900,7 @@ mis-classifications, such as classifying a certain virus as
 non-malicious[1]. This is a risk in ML-as-a-Service model-generation
 scenarios.
 
-![](./media/tm11.jpg)[12]
+![](./media/threat-modeling-aiml/tm11.jpg)[12]
 
 ##### Traditional Parallels
 

@@ -5,7 +5,7 @@ description: This research papers shares some of Microsoft’s security lessons-
 ms.date: 12/04/2018
 ms.service: security
 ms.author: bcowper
-author: bcowper
+author: BruceCowper
 ms.topic: conceptual
 ---
 
@@ -135,27 +135,27 @@ Despite the nascent state of this project, we believe the evidence compiled to d
     1. Techniques such as Reject on Negative Input [6] need researcher cycles to investigate.
 
     2. This work involves mathematical verification, proof-of-concept in code, and testing against both malicious and benign anomalous data.
-    
+
     3. Human spot-checking/moderation may be beneficial here,  particularly where statistical anomalies are present.
-    
+
     4. “Overseer classifiers” could be built to have a more universal understanding of threats across multiple AIs. This vastly improves the security of the system because the attacker can no longer exfiltrate any one particular model.
-    
+
     5. AIs could be linked together to identify threats in each other’s systems
 
 4. A centralized ML auditing/forensics library could be built that establishes a standard for transparency and trustworthiness of AI.
-    
+
     1. Query capabilities could also be built for auditing and reconstruction of high business impact decisions by AI.
 
 5. The vernacular in use by adversaries across different cultural groups and social media could be continuously inventoried and analyzed by AI in order to detect and respond to trolling, sarcasm, etc.
-    
+
     1. AIs need to be resilient in the face of all kinds of vernacular, whether technical, regional, or forum-specific.
-     
+
     2. This body of knowledge could also be leveraged in content    filtering/labeling/blocking automation to address moderator scalability issues.
-    
+
     3. This global database of terms could be hosted in development libraries or even exposed via cloud service APIs for reuse by different AIs, ensuring new AIs benefit from the  combined wisdom of older ones.
 
 6. A “Machine Learning Fuzzing Framework” could be created which provides engineers with the ability to inject various types of attacks into test training sets for AI to evaluate.
-    
+
     1. This could focus on not only text vernacular, but image, voice and gesture data as well as permutations of those data types.
 
 ## Conclusion

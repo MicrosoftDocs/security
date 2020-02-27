@@ -1,0 +1,228 @@
+### YamlMime:Hub
+
+title: Security documentation
+summary: Technical security information from across Microsoft
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+
+metadata:
+  title: Microsoft security documentation
+  description: Technical security information from across Microsoft
+# services: service
+# ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: na
+  ms.topic: hub-page
+  ms.collection: na
+  author: TerryLanfear
+  ms.author: terrylan
+  manager: rkarlin
+  ms.date: 02/27/2020
+
+productDirectory:
+  title: News and highlights
+  summary: Stay up to date on what is new in security at Microsoft
+  items:
+    # Card
+    - title: Latest from security engineering
+      imageSrc: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      links:
+        - url: ./engineering/Threat-modeling-aiml.md
+          text: Threat Modeling for machine learning
+        - url: ./engineering/Bug-Bar-aiml.md
+          text: Triaging failure modes
+    # Card
+    - title: Microsoft Ignite 2019
+      imageSrc: https://docs.microsoft.com/media/common/i_video.svg
+      links:
+        - url: https://www.microsoft.com/ignite
+          text: Sessions from Ignite
+    # Card
+    - title: Microsoft Learn
+      imageSrc: https://docs.microsoft.com/media/common/i_learn-about.svg
+      links:
+        - url: https://docs.microsoft.com/learn/modules/top-5-security-items-to-consider/
+          text: Security items to consider before pushing to production
+        - url: https://docs.microsoft.com/learn/modules/create-security-baselines/
+          text: Create security baselines
+    # Card
+    - title: Improve your security score
+      imageSrc: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score
+          text: Microsoft Secure Score
+        - url: https://docs.microsoft.com/azure/security-center/security-center-secure-score
+          text: Azure Security Center Secure Score
+
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Get started
+  summary: Begin your security journey here
+  items:
+    # Card
+    - title: Training for Chief Information Security Officer (CISO)
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-1
+          itemType: tutorial
+          text: Modernize security in your organization
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-2
+          itemType: tutorial
+          text: Increase your security management
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-3
+          itemType: tutorial
+          text: Protect your data with identity and zero trust
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-4a
+          itemType: tutorial
+          text: Strategy for threat protection
+        - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop-module-5
+          itemType: tutorial
+          text: Protect sensitive information wherever it goes
+      # footerLink (optional)
+      footerLink:
+        url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop
+        text: See more
+    # Card
+    - title: Security compass
+      links:
+        - url: https://docs.microsoft.com/azure/architecture/framework/security/overview
+          itemType: overview
+          text: Securely operate your workloads
+        - url: https://docs.microsoft.com/azure/architecture/framework/security/role-of-security
+          itemType: overview
+          text: Role of security when building in the cloud
+        - url: https://docs.microsoft.com/azure/architecture/framework/security/security-principles
+          itemType: overview
+          text: Design for security
+        - url: https://docs.microsoft.com/azure/architecture/framework/security/resilience
+          itemType: overview
+          text: Reduce your security risk
+    # Card
+    - title: Security benchmarks
+      links:
+        - url: https://docs.microsoft.com/azure/security/benchmarks/overview
+          itemType: overview
+          text: Improve your security on Azure
+        - url: https://docs.microsoft.com/azure/security/benchmarks/introduction
+          itemType: overview
+          text: Recommendations to secure your cloud deployment
+      # footerLink (optional)
+      footerLink:
+        url: https://docs.microsoft.com/azure/security/benchmarks/
+        text: See more
+    # Card
+    - title: Product documentation
+      links:
+        - url: ./engineering/index.yml
+          itemType: overview
+          text: Microsoft security engineering
+        - url: https://docs.microsoft.com/azure/security/
+          itemType: overview
+          text: Azure security
+        - url: https://docs.microsoft.com/microsoft-365/security/
+          itemType: overview
+          text: M365 security
+        - url: https://docs.microsoft.com/windows/
+          itemType: overview
+          text: Windows security
+        - url: https://docs.microsoft.com/sql/lp/sql-server/secure-sql-server?view=sql-server-2017
+          itemType: overview
+          text: SQL security
+        - url: https://docs.microsoft.com/enterprise-mobility-security/
+          itemType: overview
+          text: Enterprise Mobility + Security
+
+additionalContent:
+  sections:
+    - title: Security disciplines
+      summary: Guidance for security related decisions that improve your security posture
+      items:
+        - title: Compliance
+          links:
+            - text: Governance, risk, and compliance
+              url: https://docs.microsoft.com/azure/architecture/framework/security/governance
+
+        - title: Network security
+          links:
+            - text: Network security and containment
+              url: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment
+
+        - title: Identity management
+          links:
+            - text: Identity and access management
+              url: https://docs.microsoft.com/azure/architecture/framework/security/identity
+
+        - title: Information protection
+          links:
+            - text: Storage, data, and encryption
+              url: https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption
+
+        - title: Application
+          links:
+            - text: Applications and services
+              url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services
+
+        - title: Monitoring, auditing, and operations
+          links:
+            - text: Security operations
+              url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations
+
+        - title: Administration
+          links:
+            - text: Administration
+              url: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
+
+        - title: Endpoint security
+          links:
+            - text: Microsoft Defender Advanced Threat Protection
+              url: https://docs.microsoft.com/windows/security/threat-protection/
+
+
+#additionalContent:
+  # Supports up to 3 sections
+#  sections:
+    - title: Additional security resources
+      items:
+        # Card
+        - title: Security reference
+          links:
+            - text: Security Development Lifecycle (SDL)
+              url: https://www.microsoft.com/en-us/securityengineering/sdl/
+            - text: Operational Security Assurance
+              url: https://www.microsoft.com/en-us/securityengineering/osa/
+            - text: Secure DevOps
+              url: https://www.microsoft.com/en-us/securityengineering/devsecops
+            - text: Microsoft Security Risk Detection
+              url: https://www.microsoft.com/en-us/security-risk-detection/
+            - text: Azure secure development
+              url: https://docs.microsoft.com/azure/security/develop/index
+        # Card
+        - title: Security programs
+          links:
+            - text: Microsoft Security Response Center
+              url: https://www.microsoft.com/msrc
+            - text: Cyber Defense Operations Center
+              url: https://www.microsoft.com/msrc/cdoc
+            - text: Digital Crimes Unit
+              url: https://news.microsoft.com/on-the-issues/topic/cybersecurity/
+            - text: Government Security Program
+              url: https://www.microsoft.com/en-us/securityengineering/gsp
+        # Card
+        - title: Professional services
+          links:
+            - text: Microsoft Detection and Response Team
+              url: https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/
+#            - text: MCS and Premier Catalog
+#              url: file3b.md OR https://docs.microsoft.com/file3b
+            - text: Cybersecurity Reference Architecture
+              url: https://gallery.technet.microsoft.com/Cybersecurity-Reference-883fb54c
+        # Card
+        - title: Security principles
+          links:
+            - text: Microsoft Trust Center
+              url: https://www.microsoft.com/trust-center
+            - text: Compliance
+              url: https://www.microsoft.com/trust-center/compliance/compliance-overview
+            - text: Privacy
+              url: https://www.microsoft.com/trust-center/privacy
+            - text: Azure governance
+              url: https://docs.microsoft.com/azure/governance/
+  # footer (optional)
+  footer: "Found a problem on our site? Let us know!"

@@ -11,7 +11,7 @@ description: "Capabilities"
 
 # Identity capabilities
 
-This article lists many capabilities that can help with identity.
+This article lists capabilities that can help with identity.
 
 ## Cloud identity services
 <br>

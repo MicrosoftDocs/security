@@ -18,7 +18,7 @@ Introduction...
 ## Part 2: Azure Alerts (02:36)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qm7B]
 
-## Part 3: Azure Alerts (04:51)
+## Part 3: Alert and Log Ingestion (04:51)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q3NI]
 
 ## Part 4: Journey to Cloud Analytics (06:05)

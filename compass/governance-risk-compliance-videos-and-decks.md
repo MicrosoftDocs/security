@@ -1,5 +1,5 @@
 ---
-title: "Videos and decks"
+title: "Videos and slides"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -10,7 +10,9 @@ description: "Videos and decks"
 ---
 
 # Microsoft Security Compass module: Governance, risk, and compliance
-Introduction...
+Governance, Risk, and Compliance (GRC) activities help reduce organizational risk by ensuring policy and best practices are followed consistently over time.
+
+The following videos provide guidance on governance, risk, and compliance. To download the PowerPoint slides associated with these videos, see [presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
 
 ## Part 1: Introduction + Manage Connected Tenants (08:45)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qbBk]

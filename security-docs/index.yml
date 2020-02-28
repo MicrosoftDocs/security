@@ -15,7 +15,30 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 02/27/2020
+  ms.date: 02/28/2020
+
+
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Improve your security score
+      itemType: concept
+      url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide
+    # Card
+    - title: Failure modes in machine learning
+      itemType: concept
+      url: ./engineering/failure-modes-in-machine-learning.md
+    # Card
+    - title: Microsoft Ignite 2019 security sessions
+      itemType: video
+      url: https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222019-11-03T08%253A00%253A00-05%253A00%2522%252C%2522to%2522%253A%25222019-11-08T19%253A00%253A00-05%253A00%2522%257D&g=%255B%2522on-demand%2522%255D&q=security&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D
+    # Card
+    - title: Security learning paths and modules
+      itemType: learn
+      url: https://docs.microsoft.com/en-us/learn/browse/?term=security
+
 
 productDirectory:
   title: News and highlights
@@ -131,6 +154,27 @@ conceptualContent:
 
 additionalContent:
   sections:
+
+    - title: Get started
+      summary: Begin your security journey here
+      items:
+        # Card
+        - title: Chief Information Security Officer (CISO) Training
+          summary: Principles and recommendations for modernizing security in your organization
+          url: ../ciso-workshop/ciso-workshop.md
+        # Card
+        - title: Security compass
+          summary: Key architectural considerations and principles for security
+          url: https://docs.microsoft.com/azure/architecture/framework/security/overview
+        # Card
+        - title: Security benchmarks
+          summary: Secure your cloud deployment with security benchmark recommendations
+          url: https://docs.microsoft.com/azure/security/benchmarks/introduction
+        # Card
+        - title: Security engineering
+          summary: security related documentation and information from across Microsoft
+          url: ./engineering/index.yml
+
     - title: Security disciplines
       summary: Guidance for security related decisions that improve your security posture
       items:
@@ -174,12 +218,22 @@ additionalContent:
             - text: Microsoft Defender Advanced Threat Protection
               url: https://docs.microsoft.com/windows/security/threat-protection/
 
-
-#additionalContent:
-  # Supports up to 3 sections
 #  sections:
     - title: Additional security resources
       items:
+        # Card
+        - title: Product documentation
+          links:
+            - url: https://docs.microsoft.com/azure/security/
+              text: Azure security
+            - url: https://docs.microsoft.com/microsoft-365/security/
+              text: M365 security
+            - url: https://docs.microsoft.com/windows/
+              text: Windows security
+            - url: https://docs.microsoft.com/sql/lp/sql-server/secure-sql-server?view=sql-server-2017
+              text: SQL security
+            - url: https://docs.microsoft.com/enterprise-mobility-security/
+              text: Enterprise Mobility + Security
         # Card
         - title: Security reference
           links:

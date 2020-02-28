@@ -1,0 +1,78 @@
+### YamlMime:Landing
+
+title: Microsoft security engineering documentation
+summary: This collection of resources is designed to help you find security related documentation and information from across Microsoft. 
+
+metadata:
+  title: Microsoft security engineering documentation
+  description: Find security related documentation and information from across Microsoft.
+  services: security
+  ms.topic: landing-page
+  author: TerryLanfear
+  ms.author: terrylan
+  manager: rkarlin
+  ms.date: 02/27/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card
+  - title: Artifical intelligence and machine learning security
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Threat taxonomy - Failure modes in machine learning
+            url: failure-modes-in-machine-learning.md
+          - text: Threat modeling AI/ML systems and dependencies
+            url: threat-modeling-aiml.md
+          - text: AI/ML pivots to the Security Development Lifecycle bug bar
+            url: bug-bar-aiml.md
+          - text: Securing the future of AI/ML at Microsoft
+            url: securing-artificial-intelligence-machine-learning.md
+
+  # Card
+  - title: TLS 1.0 deprecation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Solving the TLS 1.0 problem, 2nd edition
+            url: solving-tls1-problem.md
+          - text: Disable legacy TLS versions
+            url: disable-legacy-tls.md
+
+  # Card
+  - title: About Microsoft's Government Security Program
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Program overview
+            url: ../GSP/ProgramOverview.md
+          - text: Transparency centers
+            url: ../GSP/ContentTransparencyCenters.md
+          - text: Information sharing and exchange
+            url: ../GSP/informationsharingandexchange.md
+          - text: Online access to source code
+            url: ../GSP/onlinesources.md
+          - text: Access to technical information
+            url: ../GSP/technicaldata.md
+
+  # Card
+  - title: Develop secure apps using Microsoft's SDL
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Create a security process
+            url: ../SDL/Security-Bug-Bar-Sample.md
+          - text: Cryptographic recommendations
+            url: ../SDL/Cryptographic-Recommendations.md
+
+  # Card
+  - title: About Microsoft's Cyber Defense Operations Center
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Strategy brief
+            url: ../MSRC/FY18-Strategy-Brief.md

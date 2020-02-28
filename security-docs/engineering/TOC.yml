@@ -1,0 +1,47 @@
+- name: Security
+  displayName: Home
+  href: index.yml
+  expanded: true
+  items:
+  - name: Artifical intelligence and machine learning security
+    items:
+    - name: Threat taxonomy - Failure modes in machine learning
+      href: failure-modes-in-machine-learning.md
+    - name: Threat Modeling AI/ML systems and dependencies
+      href: threat-modeling-aiml.md
+    - name: AI/ML pivots to the Security Development Lifecycle bug bar
+      href: bug-bar-aiml.md
+    - name: Securing the future of AI/ML at Microsoft
+      href: Securing-Artificial-Intelligence-Machine-Learning.md
+
+  - name: TLS 1.0 deprecation
+    items:
+    - name: Solving the TLS 1.0 problem, 2nd edition
+      href: Solving-TLS1-Problem.md
+    - name: Disable legacy TLS
+      href: Disable-Legacy-TLS.md
+
+  - name: Government Security Program
+    items:
+    - name: Program overview
+      href: ../GSP/ProgramOverview.md
+    - name: Transparency centers
+      href: ../GSP/ContentTransparencyCenters.md
+    - name: Information sharing and exchange
+      href: ../GSP/InformationSharingAndExchange.md
+    - name: Access to source code
+      href: ../GSP/OnlineSources.md 
+    - name: Access to technical data
+      href: ../GSP/TechnicalData.md
+
+  - name: Security Development Lifecycle
+    items:
+    - name: Security bug bar (sample) 
+      href: ../SDL/security-bug-bar-sample.md
+    - name: Cryptographic recommendations 
+      href: ../SDL/Cryptographic-Recommendations.md
+
+  - name: Cyber Defense Operations Center
+    items:
+    - name: Strategy brief
+      href: ../MSRC/FY18-Strategy-Brief.md

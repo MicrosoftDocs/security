@@ -77,7 +77,7 @@ version:
 | Windows 10              | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
 | Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
 
-*TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
+*TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)
 
 Also note that Microsoft Edge and Internet Explorer 11 will both drop TLS 1.0/1.1 support in 2020. More information on TLS version support by browser can be found here: https://caniuse.com/#search=tls
 
@@ -109,9 +109,9 @@ Since the v1 release of this document, Microsoft has shipped a number of softwar
   - [IIS custom logging](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) to correlate client IP/user agent string, service URI, TLS protocol version and cipher suite.
 
      - With this logging, admins can finally quantify their customers’ exposure to weak TLS.
-  - [SecureScore](https://securescore.microsoft.com/) - To help Office 365 tenant admins identify their own weak TLS usage, the SecureScore portal has been built to share this information as TLS 1.0 exited support in Office 365 in October 2018. 
+  - [SecureScore](https://securescore.microsoft.com/) - To help Office 365 tenant admins identify their own weak TLS usage, the SecureScore portal has been built to share this information as TLS 1.0 exited support in Office 365 in October 2018.
 
-     - This portal provides Office 365 tenant admins with the valuable information they need to reach out to their own customers who may be unaware of their own TLS 1.0 dependencies. 
+     - This portal provides Office 365 tenant admins with the valuable information they need to reach out to their own customers who may be unaware of their own TLS 1.0 dependencies.
 
      - Please visit https://securescore.microsoft.com/ for more information.
 
@@ -158,26 +158,26 @@ hardcoded TLS 1.0 usage in your applications:
 
 5. Update and recompile any applications using WinHTTP hosted on Server
     2012 or older.
-    
-    1. Managed apps – rebuild and retarget against the latest .NET Framework version 
-     
+
+    1. Managed apps – rebuild and retarget against the latest .NET Framework version
+
     2. Applications must add code to support TLS 1.2 via
         [WinHttpSetOption](https://msdn.microsoft.com/library/windows/desktop/aa384114\(v=vs.85\).aspx)
 
 6.  To cover all the bases, scan source code and online service
     configuration files for the patterns below corresponding to
     enumerated type values commonly used in TLS hardcoding:
-    
+
     1. SecurityProtocolType
-    
+
     2. SSLv2, SSLv23, SSLv3, TLS1, TLS 10, TLS11
-    
+
     3.  WINHTTP\_FLAG\_SECURE\_PROTOCOL\_
-    
+
     4. SP\_PROT\_
-    
+
     5. NSStreamSocketSecurityLevel
-    
+
     6. PROTOCOL\_SSL or PROTOCOL\_TLS
 
 The recommended solution in all cases above is to remove the hardcoded protocol version selection and defer to the operating system default. If you are using [DevSkim](https://github.com/Microsoft/DevSkim/), [click here](https://github.com/Microsoft/DevSkim/blob/4ac9214f84f517fb2d83c362720fa33fe93e6dc8/rules/default/security/cryptography/protocol.json) to see rules covering the above checks which you can use with your own code.
@@ -195,12 +195,12 @@ Windows PowerShell uses .NET Framework 4.5, which does not include TLS 1.2 as an
 
         reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:32
 
-Solutions (1) and (2) are mutually-exclusive, meaning they need not be implemented together. 
+Solutions (1) and (2) are mutually-exclusive, meaning they need not be implemented together.
 
 ## Rebuild/retarget managed applications using the latest .Net Framework version
 Applications using .NET framework versions prior to 4.7 may have limitations effectively capping support to TLS 1.0 regardless of the underlying OS defaults. Refer to the below diagram and https://docs.microsoft.com/dotnet/framework/network-programming/tls for more information.
 
-![DOTNETTLS.png](media/DOTNETTLS.png)
+![DOTNETTLS.png](./media/solving-tls1-problem/DOTNETTLS.png)
 
 *SystemDefaultTLSVersion takes precedence over app-level targeting of TLS versions.  The recommended best practice is to always defer to the OS default TLS version.  It is also the only crypto-agile solution that lets your apps take advantage of future TLS 1.3 support.
 
@@ -212,7 +212,7 @@ other operating systems in your enterprise.
   - The most common issue in this regression testing will be a TLS
     negotiation failure due to a client connection attempt from an
     operating system or browser that does not support TLS 1.2.
-    
+
       - For example, a Vista client will fail to negotiate TLS with a
         server configured for TLS 1.2+ as Vista’s maximum supported TLS
         version is 1.0. That client should be either upgraded or
@@ -222,18 +222,18 @@ other operating systems in your enterprise.
     require additional regression testing as the certificate-selection
     code associated with TLS 1.0 was less expressive than that for TLS
     1.2.
-    
+
       - If a product negotiates MTLS with a certificate from a
         non-standard location (outside of the standard named certificate
         stores in Windows), then that code may need updating to ensure
         the certificate is acquired correctly.
 
   - Service interdependencies should be reviewed for trouble spots.
-    
+
       - Any services which interoperate with 3<sup>rd</sup>-party
         services should conduct additional interop testing with those
         3<sup>rd</sup> parties.
-    
+
       - Any non-Windows applications or server operating systems in use
         require investigation / confirmation that they can support TLS
         1.2. Scanning is the easiest way to determine this.
@@ -250,16 +250,16 @@ consists of the following:
     code](#finding-and-fixing-tls-1.0-dependencies-in-code)”
 
 3. Update/recompile applications as required:
-    
+
     1. Managed apps
-        
+
         1. Rebuild against the latest .NET Framework version.
-        
+
         2. Verify any usage of the
             [SSLProtocols](https://msdn.microsoft.com/library/system.security.authentication.sslprotocols\(v=vs.110\).aspx)
             enumeration is set to SSLProtocols.None in order to use OS
             default settings.
-    
+
     2. WinHTTP apps – rebuild with
         [WinHttpSetOption](https://msdn.microsoft.com/library/windows/desktop/aa384114\(v=vs.85\).aspx)
         to support TLS 1.2
@@ -298,7 +298,7 @@ transition.
 
 ## <a id="appendix-a-handshake-simulation"></a>Appendix A: Handshake Simulation for various clients connecting to [www.microsoft.com](https://www.microsoft.com), courtesy SSLLabs.com
 
-![Results of Handshake Simulation](./media/image1.png)
+![Results of Handshake Simulation](./media/solving-tls1-problem/image1.png)
 
 ## <a id="appendix-b-deprecating-tls-1.01.1-while-retaining-fips-mode"></a>Appendix B: Deprecating TLS 1.0/1.1 while retaining FIPS Mode
 Follow the steps below if your network requires FIPS Mode but you also

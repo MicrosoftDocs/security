@@ -50,7 +50,7 @@ additionalContent:
         # Card
         - title: Chief Information Security Officer (CISO) Training
           summary: Principles and recommendations for modernizing security in your organization
-          url: ../../ciso-workshop/ciso-workshop.md
+          url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop
         # Card
         - title: Security compass
           summary: Key architectural considerations and principles for security

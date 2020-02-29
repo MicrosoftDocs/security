@@ -13,7 +13,7 @@
       items:
         - name: Videos and decks
           href: governance-risk-compliance-videos-and-decks.md
-        - name: Articles
+        - name: Article
           href: https://docs.microsoft.com/azure/architecture/framework/security/governance?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
         - name: Capabilities
           href: governance-risk-compliance-capabilities.md
@@ -29,7 +29,7 @@
       items:
         - name: Videos and decks
           href: identity-videos-and-decks.md
-        - name: Articles
+        - name: Article
           href: https://docs.microsoft.com/azure/architecture/framework/security/identity?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
         - name: Capabilities
           href: identity-capabilities.md
@@ -70,7 +70,7 @@
     #  items:
     #    - name: Videos and decks
     #      href: endpoint-security-videos-and-decks.md
-    #    - name: Articles
+    #    - name: Article
     #      href: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
     #    - name: Capabilities
     #      href: 

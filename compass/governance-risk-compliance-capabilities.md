@@ -12,7 +12,7 @@ description: "Capabilities"
 # Governance, risk, and compliance capabilities
 
 This article lists capabilities that can help with governance, risk, and compliance. You can also learn more about these capabilities at [Azure governance documentation](https://docs.microsoft.com/azure/governance/).
-## Category 1
+
 <br>
 
 
@@ -24,12 +24,6 @@ This article lists capabilities that can help with governance, risk, and complia
 |Azure Blueprints    | Azure Blueprints enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements. Azure Blueprints makes it possible for development teams to rapidly build and stand up new environments with trust they're building within organizational compliance with a set of built-in components -- such as networking -- to speed up development and delivery.       |   [Azure Blueprints documentation](https://docs.microsoft.com/azure/governance/blueprints/overview)      |
 |Microsoft 365 compliance center|Microsoft 365 compliance center provides easy access to the data and tools you need to manage to your organization's compliance needs.|[Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center?view=o365-worldwide)|
 | | | |
-
-
-## Category 2
-
-
-## Category 3
 
 
 

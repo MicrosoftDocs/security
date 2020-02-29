@@ -20,7 +20,7 @@ This article lists capabilities that can help with network traffic and containme
 
 |Capability  |Description |More information  |
 |---------|---------|---------|
-|Azure ExpressRoute    |Use Azure ExpressRoute to create private connections between Azure datacenters and infrastructure on your premises or in a colocation environment. ExpressRoute connections don't go over the public Internet, and they offer more reliability, faster speeds, and lower latencies than typical Internet connections.       | [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) <br> <br>  [Azure ExpressRoute for Office 365](https://docs.microsoft.com/en-us/office365/enterprise/azure-expressroute)      |
+|Azure ExpressRoute    |Use Azure ExpressRoute to create private connections between Azure datacenters and infrastructure on your premises or in a colocation environment. ExpressRoute connections don't go over the public Internet, and they offer more reliability, faster speeds, and lower latencies than typical Internet connections.       | [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) <br> <br>  [Azure ExpressRoute for Office 365](https://docs.microsoft.com/office365/enterprise/azure-expressroute)      |
 
 
 

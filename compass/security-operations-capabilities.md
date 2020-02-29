@@ -11,7 +11,9 @@ description: "Capabilities"
 
 # Security operations capabilities
 This article lists the capabilities that can help with security operations.
+
 <br> 
+
 |Capability  |Description  |More information  |
 |---------|---------|---------|
 |Azure Sentinel |Microsoft Azure Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. Azure Sentinel delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response. | [Azure Sentinel documentation](https://docs.microsoft.com/azure/sentinel/)|

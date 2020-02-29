@@ -1,16 +1,18 @@
 ---
-title: "Videos and decks"
+title: "Videos and slides"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
-ms.topic: tutorial
+ms.topic: article
 localization_priority: Normal
-description: "Videos and decks"
+description: "Videos and slides"
 ---
 
 # Microsoft Security Compass module: Administration
-Introduction...
+Administrative accounts with privileged access to the environment (and associated elements like groups and workstations) must be protected at the highest levels of security assurances to ensure all other security assurances aren't undermined.
+
+The following videos provide guidance on administration. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
 
 ## Part 1: Introduction (05:40)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qbw1]

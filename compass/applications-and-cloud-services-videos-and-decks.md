@@ -1,16 +1,18 @@
 ---
-title: "Videos and decks"
+title: "Videos and slides"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
-ms.topic: tutorial
+ms.topic: article
 localization_priority: Normal
-description: "Videos and decks"
+description: "Videos and slides"
 ---
 
-# Microsoft Security Compass module: Applications and cloud services
-Introduction...
+# Microsoft Security Compass module: Applications and Services
+Applications and services execute the business processes that create value for the organization and often require security assurances of confidentiality, integrity, and availability to mitigate risk.
+
+The following videos provide guidance on applications and services. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
 
 ## Part 1:
 

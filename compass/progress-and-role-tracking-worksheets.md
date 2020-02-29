@@ -4,7 +4,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
-ms.topic: tutorial
+ms.topic: article
 localization_priority: Normal
 description: "Provides progress and role tracking worksheets"
 ---
@@ -27,4 +27,4 @@ The cloud role tracking worksheet assists with designating the parties responsib
 
 [![Thumb image of cloud role tracking worksheet](https://docs.microsoft.com/microsoft-365/downloads/security-compass-cloud-role-tracking-thumb.png)](https://docs.microsoft.com/microsoft-365/downloads/security-compass-cloud-role-tracking.pdf)
 
-[PDF](https://docs.microsoft.com/microsoft-365/downloads/security-compass-cloud-role-tracking.pdf)
+[PDF](https://docs.microsoft.com/microsoft-365/downloads/security-compass-cloud-role-tracking.pdf) | [PowerPoint](https://docs.microsoft.com/microsoft-365/downloads/security-compass-cloud-role-tracking.pptx)

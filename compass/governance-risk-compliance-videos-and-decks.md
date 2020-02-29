@@ -6,7 +6,7 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-description: "Videos and decks"
+description: "Videos and slides"
 ---
 
 # Microsoft Security Compass module: Governance, risk, and compliance

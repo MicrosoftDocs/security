@@ -4,7 +4,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
-ms.topic: tutorial
+ms.topic: article
 localization_priority: Normal
 description: "Discover what's new in Microsoft Security Compass"
 ---

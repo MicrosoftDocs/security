@@ -1,16 +1,18 @@
 ---
-title: "Videos and decks"
+title: "Videos and slides"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
-ms.topic: tutorial
+ms.topic: article
 localization_priority: Normal
-description: "Videos and decks"
+description: "Videos and slides"
 ---
 
-# Microsoft Security Compass module: Network containment
-Introduction...
+# Microsoft Security Compass module: Network Security & Containment
+Network Security & Containment helps reduce organizational risk by providing access controls to limit attacker's ability to traverse the enterprise environment without impeding legitimate communications and interactions. 
+
+The following videos provide guidance on network security and containment. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
 
 ## Part 1: Introduction - Overview of Azure Network Security (21:31)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qm7f]

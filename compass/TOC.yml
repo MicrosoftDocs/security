@@ -21,7 +21,7 @@
       items:
         - name: Videos and slides
           href: security-operations-videos-and-decks.md
-        - name: Articles
+        - name: Article
           href: https://docs.microsoft.com/azure/architecture/framework/security/security-operations?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
         - name: Capabilities
           href: security-operations-capabilities.md
@@ -37,7 +37,7 @@
       items:
         - name: Videos and slides
           href: network-containment-videos-and-decks.md
-        - name: Articles
+        - name: Article
           href: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
         - name: Capabilities
           href: network-containment-capabilities.md
@@ -45,7 +45,7 @@
       items:
         - name: Videos and slides
           href: administration-videos-and-decks.md
-        - name: Articles
+        - name: Article
           href: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
         - name: Capabilities
           href: administration-capabilities.md
@@ -53,7 +53,7 @@
       items:
         - name: Videos and slides
           href: information-protection-and-storage-videos-and-decks.md
-        - name: Articles
+        - name: Article
           href: https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
         - name: Capabilities
           href: information-protection-and-storage-capabilities.md
@@ -61,7 +61,7 @@
       items:
         - name: Videos and slides
           href: applications-and-cloud-services-videos-and-decks.md
-        - name: Articles
+        - name: Article
           href: https://docs.microsoft.com/azure/architecture/framework/security/applications-services?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
         - name: Capabilities
           href: applications-and-cloud-services-capabilities.md

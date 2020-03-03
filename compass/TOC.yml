@@ -47,8 +47,8 @@
           href: administration-videos-and-decks.md
         - name: Article
           href: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
-        - name: Capabilities
-          href: administration-capabilities.md
+    #   - name: Capabilities
+    #     href: administration-capabilities.md
     - name: Information Protection and Storage
       items:
         - name: Videos and slides

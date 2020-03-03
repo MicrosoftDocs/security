@@ -50,11 +50,11 @@ additionalContent:
         # Card
         - title: Chief Information Security Officer (CISO) Training
           summary: If you're new to Microsoft Security, start here! Includes principles and recommendations for modernizing security in your organization.
-          url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop
+          url: ../../ciso-workshop/ciso-workshop.md
         # Card
         - title: Security compass
           summary: Are you a security professional? Microsoft Security Compass is a collection of best practices with actionable guidance for your security architecture.
-          url: https://docs.microsoft.com/azure/architecture/framework/security/overview
+          url: ../../compass/index.yml
         # Card
         - title: Security benchmarks
           summary: Security recommendations provide a strong starting point for your own planning and deployment.

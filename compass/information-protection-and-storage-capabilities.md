@@ -45,7 +45,7 @@ Microsoft 365 and Office 365 include capabilities that can be applied to specifi
 
 |Capability  |Description |More information  |
 |---------|---------|---------|
-| Azure SQL Database| Azure SQL Database is a general-purpose relational database, provided as a managed service. With it, you can create a highly available and high-performance data storage layer for the applications and solutions in Azure. |[Azure SQL Database documentation](https://docs.microsoft.com/en-us/azure/sql-database/) |
+| Azure SQL Database| Azure SQL Database is a general-purpose relational database, provided as a managed service. With it, you can create a highly available and high-performance data storage layer for the applications and solutions in Azure. |[Azure SQL Database documentation](https://docs.microsoft.com/azure/sql-database/) |
 | Azure SQL Database security capabilities| Security capabilities for data include Always encrypted and Transparent Data Encryption (TDE)| [An overview of Azure SQL Database security capabilities](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)|
 | | | |
 

@@ -11,15 +11,11 @@ description: "Introduction to Microsoft Security Compass"
 
 # What is Microsoft Security Compass
 
-Introduction.....Microsoft Security Compass is designed to provide clear actionable guidance for security related decisions. This is designed to help organizations that are new to Azure as well as those who wish to increase their security posture on Azure.
+Microsoft Security Compass is a collection of best practices that provide clear actionable guidance for security related decisions. This is designed to help you increase your security posture and reduce risk whether your environment is cloud-only, or a hybrid enterprise spanning cloud(s) and on-premises data centers.
 
 ## Introduction to Azure Security Compass (14:58)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qm6i]
-
-## Azure Components and Reference Model (21:51)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q6Ft]
 
 ## Evolution of Threat Environment, Roles, & Digital Strategies (20:04)
 
@@ -36,6 +32,10 @@ Introduction.....Microsoft Security Compass is designed to provide clear actiona
 ## Microsoft Security Practices (13:49)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q3Az]
+
+## Azure Components and Reference Model (21:51)
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q6Ft]
 
 ## Microsoft Security Compass workshop presentation
 

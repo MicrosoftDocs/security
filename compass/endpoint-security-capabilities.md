@@ -18,7 +18,6 @@ This article lists the capabilities that can help with endpoint security.
 ## Category 2
 
 
-## Category 3
 
 
 

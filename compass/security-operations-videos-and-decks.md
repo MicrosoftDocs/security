@@ -1,16 +1,18 @@
 ---
-title: "Videos and decks"
+title: "Videos and slides"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
-ms.topic: tutorial
+ms.topic: article
 localization_priority: Normal
-description: "Videos and decks"
+description: "Videos and slides"
 ---
 
-# Microsoft Security Compass module: Security operations
-Introduction...
+# Microsoft Security Compass module: Security Operations
+Security Operations monitor the enterprise environment to rapidly identify and remediate risk from active attack operations, sharing insights and threat intelligence from these attacks to the rest of the organization.
+
+The following videos provide guidance on security operations. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
 
 ## Part 1: Introduction - SOC Learnings, Strategies, and Technical Integration (24:30)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qjuW]
@@ -18,7 +20,7 @@ Introduction...
 ## Part 2: Azure Alerts (02:36)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qm7B]
 
-## Part 3: Azure Alerts (04:51)
+## Part 3: Alert and Log Ingestion (04:51)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q3NI]
 
 ## Part 4: Journey to Cloud Analytics (06:05)

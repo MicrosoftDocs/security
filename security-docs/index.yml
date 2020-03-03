@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 02/28/2020
+  ms.date: 03/03/2020
 
 
 # Maximum of 8 items
@@ -49,19 +49,19 @@ additionalContent:
       items:
         # Card
         - title: Chief Information Security Officer (CISO) Training
-          summary: Principles and recommendations for modernizing security in your organization
+          summary: If you're new to Microsoft Security, start here! Includes principles and recommendations for modernizing security in your organization.
           url: https://docs.microsoft.com/microsoft-365/security/office-365-security/ciso-workshop
         # Card
         - title: Security compass
-          summary: Key architectural considerations and principles for security
+          summary: Are you a security professional? Microsoft Security Compass is a collection of best practices with actionable guidance for your security architecture.
           url: https://docs.microsoft.com/azure/architecture/framework/security/overview
         # Card
         - title: Security benchmarks
-          summary: Secure your cloud deployment with security benchmark recommendations
+          summary: Security recommendations provide a strong starting point for your own planning and deployment.
           url: https://docs.microsoft.com/azure/security/benchmarks/introduction
         # Card
         - title: Microsoft security engineering
-          summary: Security related documentation and information from across Microsoft
+          summary: Security related documentation and information from across Microsoft.
           url: ./engineering/index.yml
 
 #  Section 2

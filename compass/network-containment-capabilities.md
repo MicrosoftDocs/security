@@ -14,7 +14,7 @@ description: "Capabilities"
 This article lists capabilities that can help with network traffic and containment.
 
 
-## Capabilities that work with IaaS, PaaS, and IaaS apps
+## Capabilities that work with SaaS, PaaS, and IaaS apps
 <br>
 
 

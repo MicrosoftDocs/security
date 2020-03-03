@@ -5,8 +5,8 @@
       items:
         - name: What is Microsoft Security Compass?
           href: microsoft-security-compass-introduction.md
-        - name: What's new in Microsoft Security Compass?
-          href: new-in-microsoft-security-compass.md
+    #   - name: What's new in Microsoft Security Compass?
+    #     href: new-in-microsoft-security-compass.md
         - name: Progress and role tracking worksheets
           href: progress-and-role-tracking-worksheets.md
     - name: Governance, risk, and compliance
@@ -59,11 +59,11 @@
           href: information-protection-and-storage-capabilities.md
     - name: Applications and Services
       items:
-        - name: Videos and slides
-          href: applications-and-cloud-services-videos-and-decks.md
+    #   - name: Videos and slides
+    #     href: applications-and-cloud-services-videos-and-decks.md
         - name: Article
-          href: https://docs.microsoft.com/azure/architecture/framework/security/applications-services?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
-        - name: Capabilities
+    #     href: https://docs.microsoft.com/azure/architecture/framework/security/applications-services?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+    #   - name: Capabilities
           href: applications-and-cloud-services-capabilities.md
     # Commenting out the following section as the content for Endpoint security is not published yet.
     # - name: Endpoint security

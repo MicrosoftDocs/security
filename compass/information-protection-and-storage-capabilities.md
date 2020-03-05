@@ -26,7 +26,7 @@ Microsoft 365 and Office 365 include capabilities that can be applied to specifi
 |[Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome?view=o365-worldwide) (OME)  <br/> |With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Office 365 Message Encryption works with Outlook.com, Yahoo!, Gmail, and other email services. Email message encryption helps ensure that only intended recipients can view message content. <br/> |
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/)<br/> |Azure Information Protection (sometimes referred to as AIP) helps an organization to classify, label, and optionally, protect documents and emails. Administrators can automatically apply labels by defining rules and conditions. Users can manually apply labels to files and mail. You can also give users recommendations about when to apply labels.<br/> If you're using sensitivity labels or Office Message Encryption, you're already using classification and protection capabilities. If you haven't yet migrated Azure Information Protection labels to Office 365, continue to manage these in Azure Information Protection.  <br/>You can run the [Azure Information Protection scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner) on premises to classify and protect files on Windows Server, network shares, and SharePoint Server sites and libraries. This can be a first step toward identifying data to migrate to Office 365.
 |Azure Information Protection with customer managed encryption key <br/> |Some organizations have a business need or compliance requirement to retain control of an encryption key. This is not common. Azure Information Protection allows organizations to bring your own key (BYOK) to the service. For more information, see [Bring your own key (BYOK) for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/byok-price-restrictions). Another more complex option is offered for customers who have a requirement to retain an encryption key on premises, referred to as hold your own key (HYOK).  For more information, see [Hold your own key (HYOK) for Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions). <br/> |
-
+| | | |
 
 
 ## Azure storage and encryption
@@ -37,7 +37,7 @@ Microsoft 365 and Office 365 include capabilities that can be applied to specifi
 |Azure Storage |Azure Storage includes Azure Blobs (objects), Azure Data Lake Storage Gen2, Azure Files, Azure Queues, and Azure Tables. |[Azure Storage documentation](https://docs.microsoft.com/azure/storage/)|
 |Azure encryption | Azure encryption options include encryption at rest, encryption in flight, and key management with Azure Key Vault| [Azure encryption overview](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview)|
 | | | |
-| | | |
+
 
 
 ## Azure SQL Database

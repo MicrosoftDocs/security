@@ -62,9 +62,9 @@
     #   - name: Videos and slides
     #     href: applications-and-cloud-services-videos-and-decks.md
         - name: Article
-    #     href: https://docs.microsoft.com/azure/architecture/framework/security/applications-services?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+          href: https://docs.microsoft.com/azure/architecture/framework/security/applications-services?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
     #   - name: Capabilities
-          href: applications-and-cloud-services-capabilities.md
+    #     href: applications-and-cloud-services-capabilities.md
     # Commenting out the following section as the content for Endpoint security is not published yet.
     # - name: Endpoint security
     #  items:

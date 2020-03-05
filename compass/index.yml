@@ -31,15 +31,15 @@ landingContent:
             url: progress-and-role-tracking-worksheets.md
   
   # Card
-  - title: What's new in Microsoft Security Compass?
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Security operations
-            url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
-          #- text: Endpoint security
-           # url: endpoint-security-videos-and-decks.md
-           
+ # - title: What's new in Microsoft Security Compass?
+ #   linkLists:
+ #     - linkListType: overview
+ #       links:
+ #         - text: Security operations
+ #           url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+ #         #- text: Endpoint security
+ #          # url: endpoint-security-videos-and-decks.md
+ #         
    # Card
   - title: Cloud Adoption Plan integration
     linkLists:

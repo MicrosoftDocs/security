@@ -156,8 +156,7 @@ their audit letter.
 1.  Audits conducted by certified ETSI auditors should have their audit
     letters uploaded to their auditor's website. If the auditor does not post on their website, the CA must provide the name and email of the auditor when submitting the audit letter. A Microsoft representative will reach out to the auditor to verify the authenticity of the letter. 
 2. CAs may submit audits with either the EN 319 411-2 or 411-2 policy. 
-    
-#### CAs submitting equivalent audits
+   
 
 
 ### F. Audit Submission
@@ -223,7 +222,6 @@ audit annually, and Microsoft will not accept surveillance audits.
 | Client Authentication (without Server Authentication) |  |  |  | X | X |
 | Document Signing |  |  |  | X | X |
 
-In addition, the audit  
 
 ------------------------------------------------------------------------
 

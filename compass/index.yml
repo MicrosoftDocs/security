@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Microsoft security architecture recommendations # < 60 chars
-summary: Learn how to rapidly increase your security posture with prescriptive security architecture guidance.  # < 160 chars
+summary: Learn how to rapidly increase your security posture with prescriptive security architecture recommendations.  # < 160 chars
 
 metadata:
   title: Microsoft security architecture recommendations # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to rapidly increase your security posture with prescriptive security architecture guidance. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn how to rapidly increase your security posture with prescriptive security architecture recommendations. # Required; article description that is displayed in search results. < 160 chars.
   services: ms-security
   ms.service: ms-security #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: ms-security-compass

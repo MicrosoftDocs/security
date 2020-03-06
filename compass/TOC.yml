@@ -3,7 +3,7 @@
   items: 
     - name: Introduction
       items:
-        - name: Overview
+        - name: What's inside Microsoft security architecture recommendations?
           href: microsoft-security-compass-introduction.md
     #   - name: What's new in Microsoft Security Compass?
     #     href: new-in-microsoft-security-compass.md

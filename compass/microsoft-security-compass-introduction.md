@@ -39,9 +39,9 @@ To download the PowerPoint slides associated with these videos, click [download 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q6Ft]
 
-## Microsoft Security Compass workshop presentation
+## Microsoft security architecture recommendations workshop presentation
 
-Description.....
+View the slides for this workshop. 
 
 [![Thumb image of Microsoft security architecture presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation-thumb.png)](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pdf)
 
@@ -49,7 +49,7 @@ Description.....
 
 
 ## Top 10 Azure Security best practices
-Description......
+View slides for Top 10 Azure Security best practices.
 
 [![Thumb image of top 10 Azure Security best practices](https://docs.microsoft.com/microsoft-365/downloads/top-10-azure-security-best-practices-thumb.png)](https://docs.microsoft.com/microsoft-365/downloads/top-10-azure-security-best-practices.pdf)
 

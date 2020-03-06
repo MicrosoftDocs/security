@@ -13,7 +13,6 @@ description: "Capabilities"
 This article lists the capabilities that can help with information protection and storage.
 
 ## Capabilities that work with Microsoft 365 
-<br>
 
 Microsoft 365 and Office 365 include capabilities that can be applied to specific types of data to protect information across Microsoft 365 tools, including OneDrive, SharePoint Online, and mail. Some capabilities, like sensitive information types, can be used with Microsoft Cloud App Security to protect information across other SaaS apps in your environment.
 

@@ -27,9 +27,9 @@ highlightedContent:
       itemType: concept
       url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide
     # Card
-    - title: Failure modes in machine learning
+    - title: Solving the TLS 1.0 problem, 2nd edition
       itemType: concept
-      url: ./engineering/failure-modes-in-machine-learning.md
+      url: ./engineering/solving-tls1-problem.md
     # Card
     - title: Microsoft Ignite 2019 security sessions
       itemType: video
@@ -48,7 +48,7 @@ additionalContent:
       summary: Begin your security journey here
       items:
         # Card
-        - title: Chief Information Security Officer (CISO) Training
+        - title: Chief Information Security Officer (CISO) training
           summary: If you're new to Microsoft Security, start here! Includes principles and recommendations for modernizing security in your organization.
           url: /security/ciso-workshop/ciso-workshop
         # Card

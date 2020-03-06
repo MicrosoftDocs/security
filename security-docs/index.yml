@@ -168,5 +168,3 @@ additionalContent:
               url: https://www.microsoft.com/trust-center/privacy
             - text: Azure governance
               url: https://docs.microsoft.com/azure/governance/
-  # footer (optional)
-  footer: "Found a problem on our site? Let us know!"

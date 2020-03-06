@@ -1,9 +1,9 @@
-- name: Microsoft Security Compass
+- name: Microsoft security architecture recommendations
   href: index.yml
   items: 
     - name: Introduction
       items:
-        - name: What is Microsoft Security Compass?
+        - name: What's inside Microsoft security architecture recommendations?
           href: microsoft-security-compass-introduction.md
     #   - name: What's new in Microsoft Security Compass?
     #     href: new-in-microsoft-security-compass.md

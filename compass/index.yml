@@ -30,6 +30,7 @@ landingContent:
           - text: Progress and role tracking spreadsheets
             url: progress-and-role-tracking-worksheets.md
   
+  
   # Card
  # - title: What's new in Microsoft Security Compass?
  #   linkLists:
@@ -40,13 +41,35 @@ landingContent:
  #         #- text: Endpoint security
  #          # url: endpoint-security-videos-and-decks.md
  #         
-   # Card
-  - title: Cloud Adoption Plan integration
+
+  # Card
+  - title: Governance, risk, and compliance
     linkLists:
       - linkListType: overview
         links:
-          - text: Security integration with Cloud Adoption Plan
-            url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+          - text: Reduce risk with policy and best practices
+            url: governance-risk-compliance-videos-and-decks
+          - text: Governance, risk, and compliance capabilities
+            url: governance-risk-compliance-capabilities
+
+ # Card
+  - title: Security operations
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Rapidly identify and remediate risk from active attacks
+            url: security-operations-videos-and-decks
+          - text: Security operations capabilities
+            url: security-operations-capabilities
+
+
+   # Card
+  - title: Cloud adoption plan integration
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Security design principles for cloud architecture
+            url: https://docs.microsoft.com/azure/architecture/framework/security/security-principles
 
 
   # Card

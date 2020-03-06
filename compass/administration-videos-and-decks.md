@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Videos and slides"
 ---
 
-# Microsoft Security Compass module: Administration
+# Microsoft security architecture recommendations module: Administration
 Administrative accounts with privileged access to the environment (and associated elements like groups and workstations) must be protected at the highest levels of security assurances to ensure all other security assurances aren't undermined.
 
 The following videos provide guidance on administration. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).

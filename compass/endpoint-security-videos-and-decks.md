@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Videos and decks"
 ---
 
-# Microsoft Security Compass module: Endpoint security
+# Microsoft security architecture recommendations module: Endpoint security
 Introduction...
 
 ## Part 1: 

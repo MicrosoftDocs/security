@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Videos and slides"
 ---
 
-# Microsoft Security Compass module: Security Operations
+# Microsoft security architecture recommendations module: Security Operations
 Security Operations monitor the enterprise environment to rapidly identify and remediate risk from active attack operations, sharing insights and threat intelligence from these attacks to the rest of the organization.
 
 The following videos provide guidance on security operations. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).

@@ -1,15 +1,15 @@
 ---
-title: "What is Microsoft Security Compass"
+title: "What's inside Microsoft security architecture recommendations?"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-description: "Introduction to Microsoft Security Compass"
+description: "Introduction to Microsoft security architecture recommendations"
 ---
 
-# What is Microsoft Security Compass
+# What's inside Microsoft security architecture recommendations?
 
 Microsoft Security Compass is a collection of best practices that provide clear actionable guidance for security related decisions. This is designed to help you increase your security posture and reduce risk whether your environment is cloud-only, or a hybrid enterprise spanning cloud(s) and on-premises data centers.
 

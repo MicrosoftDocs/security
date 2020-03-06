@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Videos and slides"
 ---
 
-# Microsoft Security Compass module: Network Security & Containment
+# Microsoft security architecture recommendations module: Network Security & Containment
 Network Security & Containment helps reduce organizational risk by providing access controls to limit attacker's ability to traverse the enterprise environment without impeding legitimate communications and interactions. 
 
 The following videos provide guidance on network security and containment. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).

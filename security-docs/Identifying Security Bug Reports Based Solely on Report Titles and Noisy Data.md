@@ -1,7 +1,7 @@
 ---
 layout: Conceptual
-title: Securing the Future of AI and ML at Microsoft
-description: This research papers shares some of Microsoft’s security lessons-learned from designing products and operating online services built on AI.
+title: Identifying Security Bug Reports Based Solely on Report Titles and Noisy Data
+description: This research papers shares some of Microsoft's lessons-learned from using machine learning to improve the accuracy of labeling in security bug reports (SCRs).
 ms.date: 03/06/2020
 ms.service: security
 ms.author: bcowper
@@ -13,7 +13,7 @@ ms.topic: conceptual
 <table style="text-align:left" border="0">
   
   <tr>
-    <td><p><a href="mailto:mayana.wanderley@microsoft.com">Mayana Pereira	</a></p>CELA Data Science <br> Microsoft</td>
+    <td><p><a href="mailto:mayana.wanderley@microsoft.com">Mayana Pereira    </a></p>CELA Data Science <br> Microsoft</td>
     <td><p><a href="mailto:alokku@microsoft.com">Alok Kumar</a></p>Customer Security and Trust<br>Microsoft</td>
     <td><p><a href="mailto:scott.christiansen@microsoft.com">Scott Christiansen</a></p>Customer Security and Trust <br> Microsoft</td>
 </table>
@@ -28,7 +28,7 @@ Identifying security related issues among reported bugs is a pressing need among
 
 Machine learning and artificial intelligence tools promise to make the software development faster, agile and correct. Several researchers have applied machine learning to the problem of identifying security bugs [2], [7], [8], [18].Previous published studies have assumed that the entire bug report is available for training and scoring a machine learning model. This is not necessarily the case. There are situations where the entire bug report cannot be made available. For example, the bug report might contain passwords, personally identifying information (PII) or other kinds of sensitive data - a case we are currently facing at Microsoft. It is therefore important to establish how well security bug identification can be performed using less information, such as when only the title of the bug report is available.
 
-Additionally, bug repositories often contain mislabeled entries [7]: non-security bug reports classified as security related and vice-versa. There are several reasons for the occurrence of mislabeling, ranging from the development team’s lack of expertise in security, to the fuzziness of certain problems, e.g. it is possible for non-security bugs to be exploited in an indirect way as to cause a security implication. This is a serious problem since the mislabeling of SBRs results in security experts having to manually review bug database in an expensive and time-consuming effort. Understanding how noise affects different classifiers and how robust (or fragile) different machine learning techniques are in the presence of data sets contaminated with different kinds of noise is a problem that must be addressed for to bring automatic classification to the practice of software engineering.
+Additionally, bug repositories often contain mislabeled entries [7]: non-security bug reports classified as security related and vice-versa. There are several reasons for the occurrence of mislabeling, ranging from the development team's lack of expertise in security, to the fuzziness of certain problems, e.g. it is possible for non-security bugs to be exploited in an indirect way as to cause a security implication. This is a serious problem since the mislabeling of SBRs results in security experts having to manually review bug database in an expensive and time-consuming effort. Understanding how noise affects different classifiers and how robust (or fragile) different machine learning techniques are in the presence of data sets contaminated with different kinds of noise is a problem that must be addressed for to bring automatic classification to the practice of software engineering.
 
 Preliminary work argues that bug repositories are intrinsically noisy and that the noise might have an adverse effect on the performance machine learning classifiers [7]. There lacks, however, any systematic and quantitative study of how different levels and types of noise affect the performance of different supervised machine learning algorithms for the problem of identifying security bug reports (SRBs).
 
@@ -59,7 +59,7 @@ Wijayasekara et al. [16] also used text mining techniques to generate the featur
 
 ### LABEL NOISE
 
-The problem of dealing with data sets with label noise has been extensively studied. Frenay and Verleysen propose a label noise taxonomy in [6], in order to distinguish different types of noisy label. The authors propose three different types of noise: label noise which occurs independently of the true class and of the values of the instance features; label noise that depends only on the true label; and label noise where the mislabelling probability also depends on the feature values. In our work we study the first two types of noise. From a theoretical perspective, label noise usually decreases a model’s performance [10], except in some specific cases [14]. In general, robust methods rely on overfitting avoidance to handle label noise [15]. The study of noise effects in classification has been done before in many areas such as satellite image classification [13], software quality classification [4] and medical domain classification [12].
+The problem of dealing with data sets with label noise has been extensively studied. Frenay and Verleysen propose a label noise taxonomy in [6], in order to distinguish different types of noisy label. The authors propose three different types of noise: label noise which occurs independently of the true class and of the values of the instance features; label noise that depends only on the true label; and label noise where the mislabelling probability also depends on the feature values. In our work we study the first two types of noise. From a theoretical perspective, label noise usually decreases a model's performance [10], except in some specific cases [14]. In general, robust methods rely on overfitting avoidance to handle label noise [15]. The study of noise effects in classification has been done before in many areas such as satellite image classification [13], software quality classification [4] and medical domain classification [12].
 To the best of our knowledge, there are no published works studying the precise quantification of the effects of noisy labels in the problem of SBRs classification. In this scenario, the precise relationship among noise levels, noise types and performance degradation has not been established. Moreover, it is worthwhile to understand how different classifiers behave in the presence of noise. More generally, we are unaware of any work that systematically studies the effect of noisy data sets on the performance of different machine learning algorithms in the context of software bug reports.
 
 ## III. DATA SET DESCRIPTION
@@ -105,7 +105,7 @@ We add noise to the training and validation data sets for different levels of p<
 In class-independent noise experiments, for p<sub>br</sub> ∈ P we do the following:
 - Generate noise for training and validation data sets;
 
-- Train logistic regression, naive Bayes and AdaBoost models using training data set (with noise); • Tune models using validation data set (with noise);
+- Train logistic regression, naive Bayes and AdaBoost models using training data set (with noise); * Tune models using validation data set (with noise);
 
 - Test models using test data set (noiseless).
 
@@ -178,38 +178,38 @@ Finally, class-dependent noise significantly impacts the AUC only when there is 
 In this paper we have started the systematic study of the effects of noise in the performance of machine learning classifiers for the identification of security bugs. There are several interesting sequels to this work, including: examining the effect of noisy data sets in determining the severity level of a security bug; understanding the effect of class imbalance on the resilience of the trained models against noise; understanding the effect of noise that is adversarially introduced in the data set.
 
 ### REFERENCES
-[1]	John Anvik, Lyndon Hiew, and Gail C Murphy. Who should fix this bug? _In Proceedings of the 28th international conference on Software engineering_, pages 361–370. ACM, 2006.
+[1]    John Anvik, Lyndon Hiew, and Gail C Murphy. Who should fix this bug? _In Proceedings of the 28th international conference on Software engineering_, pages 361–370. ACM, 2006.
 
-[2]	Diksha Behl, Sahil Handa, and Anuja Arora. A bug mining tool to identify and analyze security bugs using naive bayes and tf-idf. In _Optimization, Reliabilty, and Information Technology (ICROIT)_, 2014 International Conference on, pages 294–299. IEEE, 2014.
+[2]    Diksha Behl, Sahil Handa, and Anuja Arora. A bug mining tool to identify and analyze security bugs using naive bayes and tf-idf. In _Optimization, Reliabilty, and Information Technology (ICROIT)_, 2014 International Conference on, pages 294–299. IEEE, 2014.
 
-[3]	Nicolas Bettenburg, Rahul Premraj, Thomas Zimmermann, and Sunghun Kim. Duplicate bug reports considered harmful really? In _Software maintenance, 2008. ICSM 2008. IEEE international conference on_, pages 337–345. IEEE, 2008.
+[3]    Nicolas Bettenburg, Rahul Premraj, Thomas Zimmermann, and Sunghun Kim. Duplicate bug reports considered harmful really? In _Software maintenance, 2008. ICSM 2008. IEEE international conference on_, pages 337–345. IEEE, 2008.
 
-[4]	Andres Folleco, Taghi M Khoshgoftaar, Jason Van Hulse, and Lofton Bullard. Identifying learners robust to low quality data. In _Information Reuse and Integration, 2008. IRI 2008. IEEE International Conference on_, pages 190–195. IEEE, 2008.
+[4]    Andres Folleco, Taghi M Khoshgoftaar, Jason Van Hulse, and Lofton Bullard. Identifying learners robust to low quality data. In _Information Reuse and Integration, 2008. IRI 2008. IEEE International Conference on_, pages 190–195. IEEE, 2008.
 
-[5]	Benoˆıt Frenay.´ _Uncertainty and label noise in machine learning_. PhD thesis, Catholic University of Louvain, Louvain-la-Neuve, Belgium, 2013.
+[5]    Benoˆıt Frenay.´ _Uncertainty and label noise in machine learning_. PhD thesis, Catholic University of Louvain, Louvain-la-Neuve, Belgium, 2013.
 
-[6]	Benoˆıt Frenay and Michel Verleysen. Classification in the presence of´ label noise: a survey. _IEEE transactions on neural networks and learning systems_, 25(5):845–869, 2014.
+[6]    Benoˆıt Frenay and Michel Verleysen. Classification in the presence of´ label noise: a survey. _IEEE transactions on neural networks and learning systems_, 25(5):845–869, 2014.
 
-[7]	Michael Gegick, Pete Rotella, and Tao Xie. Identifying security bug reports via text mining: An industrial case study. In _Mining software repositories (MSR), 2010 7th IEEE working conference on_, pages 11–20. IEEE, 2010.
+[7]    Michael Gegick, Pete Rotella, and Tao Xie. Identifying security bug reports via text mining: An industrial case study. In _Mining software repositories (MSR), 2010 7th IEEE working conference on_, pages 11–20. IEEE, 2010.
 
-[8]	Katerina Goseva-Popstojanova and Jacob Tyo. Identification of security related bug reports via text mining using supervised and unsupervised classification. In _2018 IEEE International Conference on Software Quality, Reliability and Security (QRS)_, pages 344–355, 2018.
+[8]    Katerina Goseva-Popstojanova and Jacob Tyo. Identification of security related bug reports via text mining using supervised and unsupervised classification. In _2018 IEEE International Conference on Software Quality, Reliability and Security (QRS)_, pages 344–355, 2018.
 
-[9]	Ahmed Lamkanfi, Serge Demeyer, Emanuel Giger, and Bart Goethals. Predicting the severity of a reported bug. In _Mining Software Repositories (MSR), 2010 7th IEEE Working Conference on_, pages 1–10. IEEE, 2010.
+[9]    Ahmed Lamkanfi, Serge Demeyer, Emanuel Giger, and Bart Goethals. Predicting the severity of a reported bug. In _Mining Software Repositories (MSR), 2010 7th IEEE Working Conference on_, pages 1–10. IEEE, 2010.
 
-[10]	Naresh Manwani and PS Sastry. Noise tolerance under risk minimization. _IEEE transactions on cybernetics_, 43(3):1146–1151, 2013.
+[10]    Naresh Manwani and PS Sastry. Noise tolerance under risk minimization. _IEEE transactions on cybernetics_, 43(3):1146–1151, 2013.
 
-[11]	G Murphy and D Cubranic. Automatic bug triage using text categorization. In _Proceedings of the Sixteenth International Conference on Software Engineering & Knowledge Engineering_. Citeseer, 2004.
+[11]    G Murphy and D Cubranic. Automatic bug triage using text categorization. In _Proceedings of the Sixteenth International Conference on Software Engineering & Knowledge Engineering_. Citeseer, 2004.
 
-[12]	Mykola Pechenizkiy, Alexey Tsymbal, Seppo Puuronen, and Oleksandr Pechenizkiy. Class noise and supervised learning in medical domains: The effect of feature extraction. In _null_, pages 708–713. IEEE, 2006.
+[12]    Mykola Pechenizkiy, Alexey Tsymbal, Seppo Puuronen, and Oleksandr Pechenizkiy. Class noise and supervised learning in medical domains: The effect of feature extraction. In _null_, pages 708–713. IEEE, 2006.
 
-[13]	Charlotte Pelletier, Silvia Valero, Jordi Inglada, Nicolas Champion, Claire Marais Sicre, and Gerard Dedieu.´ Effect of training class label noise on classification performances for land cover mapping with satellite image time series. _Remote Sensing_, 9(2):173, 2017.
+[13]    Charlotte Pelletier, Silvia Valero, Jordi Inglada, Nicolas Champion, Claire Marais Sicre, and Gerard Dedieu.´ Effect of training class label noise on classification performances for land cover mapping with satellite image time series. _Remote Sensing_, 9(2):173, 2017.
 
-[14]	PS Sastry, GD Nagendra, and Naresh Manwani. A team of continuousaction learning automata for noise-tolerant learning of half-spaces. _IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)_, 40(1):19–28, 2010.
+[14]    PS Sastry, GD Nagendra, and Naresh Manwani. A team of continuousaction learning automata for noise-tolerant learning of half-spaces. _IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)_, 40(1):19–28, 2010.
 
-[15]	Choh-Man Teng. A comparison of noise handling techniques. In _FLAIRS Conference_, pages 269–273, 2001.
+[15]    Choh-Man Teng. A comparison of noise handling techniques. In _FLAIRS Conference_, pages 269–273, 2001.
 
-[16]	Dumidu Wijayasekara, Milos Manic, and Miles McQueen. Vulnerability identification and classification via text mining bug databases. In _Industrial Electronics Society, IECON 2014-40th Annual Conference of the IEEE, pages 3612–3618. IEEE_, 2014.
+[16]    Dumidu Wijayasekara, Milos Manic, and Miles McQueen. Vulnerability identification and classification via text mining bug databases. In _Industrial Electronics Society, IECON 2014-40th Annual Conference of the IEEE, pages 3612–3618. IEEE_, 2014.
 
-[17]	Xinli Yang, David Lo, Qiao Huang, Xin Xia, and Jianling Sun. Automated identification of high impact bug reports leveraging imbalanced learning strategies. In _Computer Software and Applications Conference (COMPSAC), 2016 IEEE 40th Annual_, volume 1, pages 227–232. IEEE, 2016.
+[17]    Xinli Yang, David Lo, Qiao Huang, Xin Xia, and Jianling Sun. Automated identification of high impact bug reports leveraging imbalanced learning strategies. In _Computer Software and Applications Conference (COMPSAC), 2016 IEEE 40th Annual_, volume 1, pages 227–232. IEEE, 2016.
 
-[18]	Deqing Zou, Zhijun Deng, Zhen Li, and Hai Jin. Automatically identifying security bug reports via multitype features analysis. In _Australasian Conference on Information Security and Privacy_, pages 619–633. Springer, 2018.
+[18]    Deqing Zou, Zhijun Deng, Zhen Li, and Hai Jin. Automatically identifying security bug reports via multitype features analysis. In _Australasian Conference on Information Security and Privacy_, pages 619–633. Springer, 2018.

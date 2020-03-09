@@ -27,9 +27,9 @@ highlightedContent:
       itemType: concept
       url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide
     # Card
-    - title: Failure modes in machine learning
+    - title: Solving the TLS 1.0 problem, 2nd edition
       itemType: concept
-      url: ./engineering/failure-modes-in-machine-learning.md
+      url: ./engineering/solving-tls1-problem.md
     # Card
     - title: Microsoft Ignite 2019 security sessions
       itemType: video
@@ -48,12 +48,12 @@ additionalContent:
       summary: Begin your security journey here
       items:
         # Card
-        - title: Chief Information Security Officer (CISO) Training
+        - title: Chief Information Security Officer (CISO) training
           summary: If you're new to Microsoft Security, start here! Includes principles and recommendations for modernizing security in your organization.
           url: /security/ciso-workshop/ciso-workshop
         # Card
-        - title: Security compass
-          summary: Are you a security professional? Microsoft Security Compass is a collection of best practices with actionable guidance for your security architecture.
+        - title: Microsoft security architecture recommendations
+          summary: Are you a security professional? Microsoft security architecture recommendations is a collection of best practices with actionable guidance for your security architecture.
           url: /security/compass/index
         # Card
         - title: Security benchmarks
@@ -71,22 +71,22 @@ additionalContent:
         - title: Compliance
           links:
             - text: Governance, risk, and compliance
-              url: https://docs.microsoft.com/azure/architecture/framework/security/governance
+              url: /security/compass/governance-risk-compliance-videos-and-decks
 
         - title: Network security
           links:
             - text: Network security and containment
-              url: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment
+              url: /security/compass/network-containment-videos-and-decks
 
         - title: Identity management
           links:
             - text: Identity and access management
-              url: https://docs.microsoft.com/azure/architecture/framework/security/identity
+              url: /security/compass/identity-videos-and-decks
 
         - title: Information protection
           links:
             - text: Storage, data, and encryption
-              url: https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption
+              url: /security/compass/information-protection-and-storage-videos-and-decks
 
         - title: Application
           links:
@@ -96,17 +96,17 @@ additionalContent:
         - title: Monitoring, auditing, and operations
           links:
             - text: Security operations
-              url: https://docs.microsoft.com/azure/architecture/framework/security/security-operations
+              url: /security/compass/security-operations-videos-and-decks
 
         - title: Administration
           links:
             - text: Administration
-              url: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
+              url: /security/compass/administration-videos-and-decks
 
-        - title: Endpoint security
+        - title: Threat protection
           links:
-            - text: Microsoft Defender Advanced Threat Protection
-              url: https://docs.microsoft.com/windows/security/threat-protection/
+            - text: Microsoft Threat Protection
+              url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection
 
 #  Section 3
     - title: Additional security resources
@@ -117,8 +117,8 @@ additionalContent:
             - url: https://docs.microsoft.com/azure/security/
               text: Azure security
             - url: https://docs.microsoft.com/microsoft-365/security/
-              text: M365 security
-            - url: https://docs.microsoft.com/windows/
+              text: Microsoft 365 security
+            - url: https://docs.microsoft.com/windows/security/
               text: Windows security
             - url: https://docs.microsoft.com/sql/lp/sql-server/secure-sql-server?view=sql-server-2017
               text: SQL security
@@ -168,5 +168,3 @@ additionalContent:
               url: https://www.microsoft.com/trust-center/privacy
             - text: Azure governance
               url: https://docs.microsoft.com/azure/governance/
-  # footer (optional)
-  footer: "Found a problem on our site? Let us know!"

@@ -1,0 +1,34 @@
+{ 
+    "redirections": [
+      {
+        "source_path": "security/solving-tls1-problem.md",
+        "redirect_url": "/security/engineering/solving-tls1-problem",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "security/failure-modes-in-machine-learning.md",
+        "redirect_url": "security/engineering/failure-modes-in-machine-learning",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "security/threat-modeling-aiml.md",
+        "redirect_url": "/security/engineering/threat-modeling-aiml",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "security/bug-bar-aiml.md",
+        "redirect_url": "/security/engineering/bug-bar-aiml",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "security/securing-artificial-intelligence-machine-learning.md",
+        "redirect_url": "/security/engineering/securing-artificial-intelligence-machine-learning",
+        "redirect_document_id": true
+      },
+      {
+        "source_path": "security/disable-legacy-tls.md",
+        "redirect_url": "/security/engineering/disable-legacy-tls",
+        "redirect_document_id": true
+      }
+  ] 
+  } 

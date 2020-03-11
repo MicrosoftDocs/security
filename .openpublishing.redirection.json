@@ -7,7 +7,7 @@
       },
       {
         "source_path": "security-docs/failure-modes-in-machine-learning.md",
-        "redirect_url": "security/engineering/failure-modes-in-machine-learning",
+        "redirect_url": "/security/engineering/failure-modes-in-machine-learning",
         "redirect_document_id": true
       },
       {

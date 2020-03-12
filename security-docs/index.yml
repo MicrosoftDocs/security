@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 03/10/2020
+  ms.date: 03/12/2020
 
 
 # Maximum of 8 items
@@ -23,13 +23,21 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Improve your security score
+    - title: Improve your Microsoft security score
       itemType: concept
       url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide
     # Card
     - title: Solving the TLS 1.0 problem, 2nd edition
       itemType: concept
       url: ./engineering/solving-tls1-problem.md
+    # Card
+    - title: What is Azure Security Center?
+      itemType: overview
+      url: https://docs.microsoft.com/azure/security-center/security-center-intro
+    # Card
+    - title: Advanced threat protection
+      itemType: overview
+      url: https://docs.microsoft.com/azure/security/fundamentals/threat-detection
     # Card
     - title: Microsoft Ignite 2019 security sessions
       itemType: video

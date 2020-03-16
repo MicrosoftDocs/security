@@ -78,4 +78,4 @@ landingContent:
       - linkListType: overview
         links:
           - text: Security reference architectures and design
-            url: https://docs.microsoft.com/azure/architecture/framework/security/overview?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            url: https://gallery.technet.microsoft.com/Cybersecurity-Reference-883fb54c

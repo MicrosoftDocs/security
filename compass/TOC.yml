@@ -9,7 +9,7 @@
     #     href: new-in-microsoft-security-compass.md
         - name: Progress and role tracking worksheets
           href: progress-and-role-tracking-worksheets.md
-    - name: Governance, risk, and compliance
+    - name: Governance, Risk, and Compliance
       items:
         - name: Videos and slides
           href: governance-risk-compliance-videos-and-decks.md
@@ -41,7 +41,7 @@
           href: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
         - name: Capabilities
           href: network-containment-capabilities.md
-    - name: Administration
+    - name: Privileged Administration
       items:
         - name: Videos and slides
           href: administration-videos-and-decks.md

@@ -1,15 +1,15 @@
 ---
-title: "Capabilities"
+title: "Microsoft Identity capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-description: "Capabilities"
+description: "This article lists capabilities that can help with identity."
 ---
 
-# Identity capabilities
+# Microsoft Identity capabilities
 
 This article lists capabilities that can help with identity.
 

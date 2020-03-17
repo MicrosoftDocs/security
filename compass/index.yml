@@ -17,6 +17,8 @@ metadata:
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
+This guidance was formerly referred to as Azure Security Compass and is now increasing in scope to encompass all Microsoft security guidance and capabilities, including Microsoft 365. 
+
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb

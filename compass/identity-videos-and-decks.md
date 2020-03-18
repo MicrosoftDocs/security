@@ -1,12 +1,12 @@
 ---
-title: "Videos and slides"
+title: "Microsoft security architecture recommendations module: Identity and access management"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-description: "Videos and slides"
+description: "Provides guidance on identity and access management."
 ---
 
 # Microsoft security architecture recommendations module: Identity and access management

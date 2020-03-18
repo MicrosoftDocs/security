@@ -1,15 +1,15 @@
 ---
-title: "Videos and slides"
+title: "Microsoft security architecture recommendations module: Privileged administration"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-description: "Videos and slides"
+description: "Learn how to protect accounts with privileged access."
 ---
 
-# Microsoft security architecture recommendations module: Administration
+# Microsoft security architecture recommendations module: Privileged administration
 Administrative accounts with privileged access to the environment (and associated elements like groups and workstations) must be protected at the highest levels of security assurances to ensure all other security assurances aren't undermined.
 
 The following videos provide guidance on administration. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).

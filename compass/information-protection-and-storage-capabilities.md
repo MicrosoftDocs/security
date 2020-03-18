@@ -1,15 +1,15 @@
 ---
-title: "Capabilities"
+title: "Microsoft information protection and storage capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-description: "Capabilities"
+description: "Lists capabilities that can help with information protection and storage."
 ---
 
-# Information protection and storage capabilities
+# Microsoft information protection and storage capabilities
 This article lists the capabilities that can help with information protection and storage.
 
 ## Capabilities that work with Microsoft 365 

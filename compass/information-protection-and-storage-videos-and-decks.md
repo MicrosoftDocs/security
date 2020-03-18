@@ -1,15 +1,15 @@
 ---
-title: "Videos and slides"
+title: "Microsoft security architecture recommendations module: Information protection and storages"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-description: "Videos and slides"
+description: "Provides guidance on information protection and storage."
 ---
 
-# Microsoft security architecture recommendations module: Information Protection and Storage
+# Microsoft security architecture recommendations module: Information protection and storage
 Intellectual property that is valuable to the organization (or its customers/constituents) requires security protection appropriate to its value.
 
 The following videos provide guidance on information protection and storage. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).

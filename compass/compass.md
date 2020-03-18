@@ -27,3 +27,5 @@ In this guidance:
 - [Applications and services](applications-and-cloud-services-videos-and-decks.md)
 
 This guidance is presented in a series of videos. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
+
+:::image type="content" source="media/security-compass-presentation-example-slide.png" alt-text="Example slide":::

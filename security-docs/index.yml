@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 03/12/2020
+  ms.date: 03/17/2020
 
 
 # Maximum of 8 items
@@ -23,7 +23,11 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Improve your security score
+    - title: Add Zero Trust
+      itemType: concept
+      url: https://www.microsoft.com/security/business/zero-trust
+    # Card
+    - title: Plan and improve your security posture with Secure Score
       itemType: concept
       url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide
     # Card
@@ -31,11 +35,15 @@ highlightedContent:
       itemType: concept
       url: ./engineering/solving-tls1-problem.md
     # Card
-    - title: What is Azure Security Center?
-      itemType: overview
-      url: https://docs.microsoft.com/azure/security-center/security-center-intro
+    - title: New videos providing Microsoft security architecture recommendations
+      itemType: video
+      url: /security/compass/microsoft-security-compass-introduction.md
     # Card
-    - title: Advanced threat protection
+    - title: Securing AI and ML
+      itemType: concept
+      url: ./engineering/failure-modes-in-machine-learning.md
+    # Card
+    - title: Advanced threat protection for Azure
       itemType: overview
       url: https://docs.microsoft.com/azure/security/fundamentals/threat-detection
     # Card
@@ -43,9 +51,9 @@ highlightedContent:
       itemType: video
       url: https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222019-11-03T08%253A00%253A00-05%253A00%2522%252C%2522to%2522%253A%25222019-11-08T19%253A00%253A00-05%253A00%2522%257D&g=%255B%2522on-demand%2522%255D&q=security&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D
     # Card
-    - title: Security learning paths and modules
-      itemType: learn
-      url: https://docs.microsoft.com/en-us/learn/browse/?term=security
+    - title: What is Azure Security Center?
+      itemType: overview
+      url: https://docs.microsoft.com/azure/security-center/security-center-intro
 
 additionalContent:
 #  Maximum of 3 sections
@@ -56,7 +64,7 @@ additionalContent:
       summary: Begin your security journey here
       items:
         # Card
-        - title: Chief Information Security Officer (CISO) training
+        - title: Cybersecurity training - Chief Information Security Officer (CISO) workshop
           summary: If you're new to Microsoft Security, start here! Includes principles and recommendations for modernizing security in your organization.
           url: /security/ciso-workshop/ciso-workshop
         # Card
@@ -71,6 +79,10 @@ additionalContent:
         - title: Microsoft security engineering
           summary: Security related documentation and information from across Microsoft.
           url: ./engineering/index.yml
+        # Card
+        - title: Security learning paths and modules
+          summary: Learn new skills and discover the power of Microsoft products with step-by-step guidance.
+          url: https://docs.microsoft.com/en-us/learn/browse/?term=security
 
 #  Section 2
     - title: Security disciplines
@@ -106,7 +118,7 @@ additionalContent:
             - text: Security operations
               url: /security/compass/security-operations-videos-and-decks
 
-        - title: Administration
+        - title: Privileged access
           links:
             - text: Administration
               url: /security/compass/administration-videos-and-decks

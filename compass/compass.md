@@ -14,5 +14,5 @@ description: "Learn how to rapidly increase your security posture with prescript
 
 # Microsoft Identity capabilities
 
-This article lists capabilities that can help with identity.
-This guidance was formerly referred to as Azure Security Compass and is now increasing in scope to encompass all Microsoft security guidance and capabilities, including Microsoft 365. 
+
+Learn how to rapidly increase your security posture with prescriptive security architecture recommendations. This guidance was formerly referred to as Azure Security Compass and is now increasing in scope to encompass all Microsoft security guidance and capabilities, including Microsoft 365. 

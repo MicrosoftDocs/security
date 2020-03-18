@@ -37,7 +37,7 @@ highlightedContent:
     # Card
     - title: New videos providing Microsoft security architecture recommendations
       itemType: video
-      url: /security/compass/microsoft-security-compass-introduction.md
+      url: /security/compass/microsoft-security-compass-introduction
     # Card
     - title: Securing AI and ML
       itemType: concept
@@ -70,7 +70,7 @@ additionalContent:
         # Card
         - title: Microsoft security architecture recommendations
           summary: Are you a security professional? Microsoft security architecture recommendations is a collection of best practices with actionable guidance for your security architecture.
-          url: /security/compass/index
+          url: /security/compass/compass
         # Card
         - title: Security benchmarks
           summary: Security recommendations provide a strong starting point for your own planning and deployment.

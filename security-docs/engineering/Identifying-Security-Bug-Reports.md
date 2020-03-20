@@ -126,13 +126,13 @@ _a) Model performance without noise in the training data set_: One of the contri
 
 The logistic regression model is the best performing classifier. It is the classifier with the highest AUC value, of 0.9826, recall of 0.9353 for a FPR value of 0.0735. The naive Bayes Classifier presents slightly lower performance than the logistic regression Classifier, with an AUC of 0.9779 and a recall of 0.9189 for a FPR of 0.0769. The AdaBoost classifier has an inferior performance in comparison to the two previously mentioned classifiers. It achieves an AUC of 0.9143, and a recall of 0.7018 for a 0.0774 FPR. The area under the ROC curve (AUC) is a good metric for comparing performance of several models, as it summarizes in a single value the TPR vs. FPR relation. In the subsequent analysis we will restrict our comparative analysis to AUC values.
 
-![Table I](./media/TableI.png)
+![Table I](./media/identifying-security-bug-reports/TableI.png)
 
 _A. Class Noise: single-class_
 
 One can imagine a scenario where all bugs are assigned to class NSBR by default, and a bug will only be assigned to class SBR if there is a security expert reviewing the bug repository. This scenario is represented in the single-class experimental setting, where we assume that p<sub>nsbr</sub> = 0 and 0 < p<sub>sbr</sub> < 0.5.
 
-![Table II](./media/TableII.png)
+![Table II](./media/identifying-security-bug-reports/TableII.png)
 
 From table II we observe a very small impact in the AUC for all three classifiers. The AUC-ROC from a model trained on p<sub>sbr</sub> = 0 compared to a AUC-ROC of model where p<sub>sbr</sub> = 0.25 differs by 0.003 for logistic regression, 0.006 for naive Bayes, and 0.006 for AdaBoost. In the case of p<sub>sbr</sub> = 0.50, the AUC measured for each of the models differ from the model trained with p<sub>sbr</sub> = 0 by 0.007 for logistic regression, 0.011 for naive Bayes, and 0.010 for AdaBoost. logistic regression classifier trained in the presence of single-class noise presents the smallest variation in its AUC metric, i.e. a more robust behavior, when compared to our naive Bayes and AdaBoost classifiers.
 
@@ -140,11 +140,11 @@ _B. Class Noise: class-independent_
 
 We compare the performance of our three classifiers for the case where the training set is corrupted by a class-independent noise. We measure the AUC for each model trained with different levels of p<sub>br</sub> in the training data.
 
-![Table III](./media/TableIII.png)
+![Table III](./media/identifying-security-bug-reports/TableIII.png)
 
 In Table III we observe a decrease in the AUC-ROC for every noise increment in the experiment. The AUC-ROC measured from a model trained on noiseless data compared to a AUC-ROC of model trained with class-independent noise with p<sub>br</sub> = 0.25 differs by 0.011 for logistic regression, 0.008 for naive Bayes, and 0.0038 for AdaBoost. We observe that label noise does not impact the AUC of naive Bayes and AdaBoost classifiers significantly when noise levels are lower than 40%. On the other hand, logistic regression Classifier experiences an impact in AUC measure for label noise levels above 30%.
 
-![AUC](./media/AUC.png)
+![AUC](./media/identifying-security-bug-reports/AUC.png)
 
 Fig. 1. Variation of AUC-ROC in class-independent noise. For a noise level p<sub>br</sub> =0.5 the classifier acts like a random classifier, i.e. AUC≈0.5. But we can observe that for lower noise levels (p<sub>br</sub> ≤0.30), the logistic regression learner presents a better performance compared to the other two models. However, for 0.35≤ p<sub>br</sub> ≤0.45 naive Bayes learner presents better AUCROC metrics.
 
@@ -152,9 +152,9 @@ _C. Class Noise: class-dependent_
 
 In the final set of experiments, we consider a scenario where different classes contain different noise levels, i.e. p<sub>sbr</sub> &#8800; p<sub>nsbr</sub>. We systematically increment p<sub>sbr</sub> and p<sub>nsbr</sub> independently by 0.05 in the training data and observe the change in behavior of the three classifiers.
 
-![Logistic Regression](./media/TableIV.png)
-![Naive Bayes](./media/TableV.png)
-![AdaBoost](./media/TableVI.png)
+![Logistic Regression](./media/identifying-security-bug-reports/TableIV.png)
+![Naive Bayes](./media/identifying-security-bug-reports/TableV.png)
+![AdaBoost](./media/identifying-security-bug-reports/TableVI.png)
 
 Tables IV, V, VI show the variation of AUC as noise is increased in different levels in each class for logistic regression in Table IV, for naive Bayes in Table V and for AdaBoost in Table VI. For all classifiers, we notice an impact in AUC metric when both classes contains noise level above 30%. naive Bayes behaves mot robustly. The impact on AUC is very small even when the 50% of the label in the positive class are flipped, provided that the negative class contains 30% of noisy labels or less. In this case, the drop in AUC is of 0.03. AdaBoost presented the most robust behavior of all three classifiers. A significant change in AUC will only happen for noise levels greater than 45% in both classes. In that case, we start observing an AUC decay greater than 0.02.
 

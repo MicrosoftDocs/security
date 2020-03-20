@@ -20,7 +20,7 @@ landingContent:
 # Start card title with a verb
 
   # Card
-  - title: Artifical intelligence and machine learning security
+  - title: Artificial intelligence and machine learning security
     linkLists:
       - linkListType: overview
         links:
@@ -32,6 +32,8 @@ landingContent:
             url: bug-bar-aiml.md
           - text: Securing the future of AI/ML at Microsoft
             url: securing-artificial-intelligence-machine-learning.md
+          - text: Identifying Security Bug Reports Based Solely on Report Titles and Noisy Data
+            url: identifying-security-bug-reports.md
 
   # Card
   - title: TLS 1.0 deprecation

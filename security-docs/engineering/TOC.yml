@@ -13,6 +13,8 @@
       href: bug-bar-aiml.md
     - name: Securing the future of AI/ML at Microsoft
       href: Securing-Artificial-Intelligence-Machine-Learning.md
+    - name: Identifying Security Bug Reports Based Solely on Report Titles and Noisy Data
+      href: identifying-security-bug-reports.md
 
   - name: TLS 1.0 deprecation
     items:

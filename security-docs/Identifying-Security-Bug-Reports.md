@@ -14,8 +14,8 @@ ms.topic: conceptual
   
   <tr>
     <td><p><a href="mailto:mayana.wanderley@microsoft.com">Mayana Pereira    </a></p>CELA Data Science <br> Microsoft</td>
-    <td><p><a href="mailto:alokku@microsoft.com">Alok Kumar</a></p>Customer Security and Trust<br>Microsoft</td>
     <td><p><a href="mailto:scott.christiansen@microsoft.com">Scott Christiansen</a></p>Customer Security and Trust <br> Microsoft</td>
+    <td><p>Alok Kumar</p><br><br></td>
 </table>
 
 _Abstract_ — Identifying security bug reports (SBRs) is a vital step in the software development life-cycle. In supervised machine learning based approaches, it is usual to assume that entire bug reports are available for training and that their labels are noise free. To the best of our knowledge, this is the first study to show that accurate label prediction is possible for SBRs even when solely the title is available and in the presence of label noise.

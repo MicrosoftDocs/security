@@ -1,0 +1,190 @@
+### YamlMime:Hub
+
+title: Security documentation
+summary: Technical security information from across Microsoft
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+
+metadata:
+  title: Microsoft security documentation
+  description: Technical security information from across Microsoft
+# services: service
+# ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: na
+  ms.topic: hub-page
+  ms.collection: na
+  author: TerryLanfear
+  ms.author: terrylan
+  manager: rkarlin
+  ms.date: 03/19/2020
+
+
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Zero Trust maturity model and guidance
+      itemType: overview
+      url: https://www.microsoft.com/security/business/zero-trust
+    # Card
+    - title: Plan and improve your security posture with Secure Score
+      itemType: concept
+      url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide
+    # Card
+    - title: Solving the TLS 1.0 problem, 2nd edition
+      itemType: concept
+      url: ./engineering/solving-tls1-problem.md
+    # Card
+    - title: New videos providing Microsoft security architecture recommendations
+      itemType: video
+      url: /security/compass/microsoft-security-compass-introduction
+    # Card
+    - title: Securing AI and ML
+      itemType: concept
+      url: ./engineering/failure-modes-in-machine-learning.md
+    # Card
+    - title: Advanced threat protection for Azure
+      itemType: overview
+      url: https://docs.microsoft.com/azure/security/fundamentals/threat-detection
+    # Card
+    - title: Microsoft Ignite 2019 security sessions
+      itemType: video
+      url: https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222019-11-03T08%253A00%253A00-05%253A00%2522%252C%2522to%2522%253A%25222019-11-08T19%253A00%253A00-05%253A00%2522%257D&g=%255B%2522on-demand%2522%255D&q=security&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D
+    # Card
+    - title: What is Azure Security Center?
+      itemType: overview
+      url: https://docs.microsoft.com/azure/security-center/security-center-intro
+
+additionalContent:
+#  Maximum of 3 sections
+  sections:
+
+#  Section 1
+    - title: Get started
+      summary: Begin your security journey here
+      items:
+        # Card
+        - title: Cybersecurity training - Chief Information Security Officer (CISO) workshop
+          summary: If you're new to Microsoft Security, start here! Includes principles and recommendations for modernizing security in your organization.
+          url: /security/ciso-workshop/ciso-workshop
+        # Card
+        - title: Microsoft security architecture recommendations
+          summary: Are you a security professional? Microsoft security architecture recommendations is a collection of best practices with actionable guidance for your security architecture.
+          url: /security/compass/compass
+        # Card
+        - title: Security benchmarks
+          summary: Security recommendations provide a strong starting point for your own planning and deployment.
+          url: https://docs.microsoft.com/azure/security/benchmarks/introduction
+        # Card
+        - title: Microsoft security engineering
+          summary: Security related documentation and information from across Microsoft.
+          url: ./engineering/index.yml
+        # Card
+        - title: Security learning paths and modules
+          summary: Learn new skills and discover the power of Microsoft products with step-by-step guidance.
+          url: https://docs.microsoft.com/en-us/learn/browse/?term=security
+
+#  Section 2
+    - title: Security disciplines
+      summary: Guidance for security related decisions that improve your security posture
+      items:
+        - title: Compliance
+          links:
+            - text: Governance, risk, and compliance
+              url: /security/compass/governance-risk-compliance-videos-and-decks
+
+        - title: Network security
+          links:
+            - text: Network security and containment
+              url: /security/compass/network-containment-videos-and-decks
+
+        - title: Identity management
+          links:
+            - text: Identity and access management
+              url: /security/compass/identity-videos-and-decks
+
+        - title: Information protection
+          links:
+            - text: Storage, data, and encryption
+              url: /security/compass/information-protection-and-storage-videos-and-decks
+
+        - title: Application
+          links:
+            - text: Applications and services
+              url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services
+
+        - title: Monitoring, auditing, and operations
+          links:
+            - text: Security operations
+              url: /security/compass/security-operations-videos-and-decks
+
+        - title: Privileged access
+          links:
+            - text: Administration
+              url: /security/compass/administration-videos-and-decks
+
+        - title: Threat protection
+          links:
+            - text: Microsoft Threat Protection
+              url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection
+
+#  Section 3
+    - title: Additional security resources
+      items:
+        # Card
+        - title: Security documentation for Microsoft products
+          links:
+            - url: https://docs.microsoft.com/azure/security/
+              text: Azure security
+            - url: https://docs.microsoft.com/microsoft-365/security/
+              text: Microsoft 365 security
+            - url: https://docs.microsoft.com/windows/security/
+              text: Windows security
+            - url: https://docs.microsoft.com/sql/lp/sql-server/secure-sql-server?view=sql-server-2017
+              text: SQL security
+            - url: https://docs.microsoft.com/enterprise-mobility-security/
+              text: Enterprise Mobility + Security
+        # Card
+        - title: Security reference
+          links:
+            - text: Security Development Lifecycle (SDL)
+              url: https://www.microsoft.com/en-us/securityengineering/sdl/
+            - text: Operational Security Assurance
+              url: https://www.microsoft.com/en-us/securityengineering/osa/
+            - text: Secure DevOps
+              url: https://www.microsoft.com/en-us/securityengineering/devsecops
+            - text: Microsoft Security Risk Detection
+              url: https://www.microsoft.com/en-us/security-risk-detection/
+            - text: Azure secure development
+              url: https://docs.microsoft.com/azure/security/develop/index
+        # Card
+        - title: Security programs
+          links:
+            - text: Microsoft Security Response Center
+              url: https://www.microsoft.com/msrc
+            - text: Cyber Defense Operations Center
+              url: https://www.microsoft.com/msrc/cdoc
+            - text: Digital Crimes Unit
+              url: https://news.microsoft.com/on-the-issues/topic/cybersecurity/
+            - text: Government Security Program
+              url: https://www.microsoft.com/en-us/securityengineering/gsp
+        # Card
+        - title: Professional services
+          links:
+            - text: Microsoft Detection and Response Team
+              url: https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/
+#            - text: MCS and Premier Catalog
+#              url: file3b.md OR https://docs.microsoft.com/file3b
+            - text: Cybersecurity Reference Architecture
+              url: https://gallery.technet.microsoft.com/Cybersecurity-Reference-883fb54c
+        # Card
+        - title: Security principles
+          links:
+            - text: Microsoft Trust Center
+              url: https://www.microsoft.com/trust-center
+            - text: Compliance
+              url: https://www.microsoft.com/trust-center/compliance/compliance-overview
+            - text: Privacy
+              url: https://www.microsoft.com/trust-center/privacy
+            - text: Azure governance
+              url: https://docs.microsoft.com/azure/governance/

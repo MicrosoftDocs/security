@@ -5,11 +5,12 @@ description: This document outlines the basic criteria to consider when creating
 ms.date: 12/03/2018
 ms.service: security
 ms.author: bcowper
+author: BruceCowper
 ms.topic: conceptual
 ---
 
 # SDL Security Bug Bar (Sample)
- 
+
 **Note:** This sample document is for illustration purposes only. The content presented below outlines basic criteria to consider when creating security processes. It is not an exhaustive list of activities or criteria and should not be treated as such.
 
 Please refer to the [definitions of terms](#Definition_of_Terms) in this section.
@@ -468,41 +469,41 @@ Extensive user action is defined as:</p>
 Any attack which has to include authenticating by the network. This
 implies that logging of some type must be able to occur so that the
 attacker can be identified.  
-  
+
 **anonymous**  
 Any attack which does not need to authenticate to complete.  
-  
+
 **client**  
 Either software that runs locally on a single computer or software that
 accesses shared resources provided by a server over a network.  
-  
+
 **default/common**  
 Any features that are active out of the box or that reach more than 10
 percent of users.  
-  
+
 **scenario**  
 Any features that require special customization or use cases to enable,
 reaching less than 10 percent of users.  
-  
+
 **server**  
 Computer that is configured to run software that awaits and fulfills
 requests from client processes that run on other computers.  
-  
+
       **Critical.** *A security vulnerability that would be rated as
 having the highest potential for damage.*  
-  
+
       **Important.** *A security vulnerability that would be rated as
 having significant potential for damage, but less than Critical.*  
-  
+
       **Moderate.** *A security vulnerability that would be rated as
 having moderate potential for damage, but less than Important.*  
-  
+
       **Low.** *A security vulnerability that would be rated as having
 low potential for damage.*  
-  
+
 **targeted information disclosure**  
 Ability to intentionally select (target) desired information.  
-  
+
 **temporary DoS**  
 A temporary DoS is a situation where the following criteria are met:
 

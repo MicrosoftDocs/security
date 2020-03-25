@@ -1,3 +1,11 @@
 - name: Docs
   tocHref: /
   topicHref: /
+  items:
+  - name: Security
+    href: /security
+    topicHref: /security/index
+    items:
+    - name: Microsoft security architecture recommendations
+      href: /security/compass
+      topicHref: /security/compass/index

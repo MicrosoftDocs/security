@@ -3,7 +3,8 @@ title: Transparency Centers
 description: This document provides an overview of the transparency centers throughout the world for the Government Security Program.
 ms.date: 02/19/2019
 ms.service: security
-ms.author: bcowper
+ms.author: kellieac
+author: kellieac
 ms.topic: conceptual
 ---
 
@@ -24,7 +25,7 @@ Transparency Centers provide GSP participants with an opportunity to visit a sec
 
 ## Center Visits
 
-Each visit to a Transparency Center is tailored to the unique goals of what an agency is looking to accomplish. Visits can last from one day to two weeks, depending on an agency’s needs, and are scheduled based on facility availability. Face-to-face or teleconference exchanges with Microsoft engineers may also be available and can be beneficial during Transparency Center visits for agencies who have also joined the Technical Data portion of the program.
+Each visit to a Transparency Center is tailored to the unique goals of what an agency is looking to accomplish. Visits can last from one day to two weeks, depending on an agency's needs, and are scheduled based on facility availability. Face-to-face or teleconference exchanges with Microsoft engineers may also be available and can be beneficial during Transparency Center visits for agencies who have also joined the Technical Data portion of the program.
 
 ## Environment and Tools
 
@@ -42,7 +43,7 @@ The environment and tools for source code evaluation include:
  - Evaluation of Cryptography Next Generation implementation and preparation for national cryptography implementation
  - Review of SSL and TCP/IP implementation
  - Inspection of the source of random number generators
- - Walkthrough of Microsoft’s build process
+ - Walkthrough of Microsoft's build process
  - Assessment of individual binaries to compare against shipped binaries
 
 ## Contact Us

@@ -30,7 +30,7 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 
 ### Communication and Disclosure Requirements
 
-4.   Program Participants must provide Microsoft the identities of at least two “Trusted Agents” to serve as representatives to the Program and one general email alias. Program Participants must inform Microsoft upon the removal or addition of personnel as a Trusted Agent. Program Participants agree to receive notices by e-mail and must provide Microsoft with an email address to receive official notices. Program Participants must agree that notice is effective when Microsoft sends an email or official letter. At least one of the contacts or aliases provided should be a 24/7 monitored communications channel for revocation requests or other incident management situations.
+4.   Program Participants must provide Microsoft the identities of at least two "Trusted Agents" to serve as representatives to the Program and one general email alias. Program Participants must inform Microsoft upon the removal or addition of personnel as a Trusted Agent. Program Participants agree to receive notices by e-mail and must provide Microsoft with an email address to receive official notices. Program Participants must agree that notice is effective when Microsoft sends an email or official letter. At least one of the contacts or aliases provided should be a 24/7 monitored communications channel for revocation requests or other incident management situations.
 
 5.   The Program Participant must disclose its full PKI hierarchy (non-limited subordinate CA, cross-signed non-enrolled root CAs, subordinate CAs, EKUs, certificate constraints) to Microsoft on an annual basis, including certificates issued to CAs operated by external third parties within the CCADB.  Program Participants must keep this information accurate in the CCADB when changes occur. If a subordinate CA is not publicly disclosed or audited, it must be domain-constrained. 
 
@@ -68,7 +68,7 @@ Program.
 5.  Participating Root CAs may not issue new 1024-bit RSA certificates from roots covered by these requirements.
 6.  All end-entity certificates must contain an AIA extension with a valid OCSP URL. These certificates may also contain a CDP extension that contains a valid CRL URL. All other certificate types must contain either an AIA extension with an OCSP URL or a CDP extension with a valid CRL URL
 7.  Private Keys and subject names must be unique per root certificate; reuse of private keys or subject names in subsequent root certificates by the same CA may result in unexpected certificate chaining issues. CAs must generate a new key and apply a new subject name when generating a new root certificate prior to distribution by Microsoft.
-8.  Government CAs must restrict server authentication to government-issued top level domains and may only issue other certificates to the ISO3166 country codes that the country has sovereign control over (see  <https://aka.ms/auditreqs> section III for the definition of a "Government CA"). These government-issued TLDs are referred to in each CA’s respective contract. 
+8.  Government CAs must restrict server authentication to government-issued top level domains and may only issue other certificates to the ISO3166 country codes that the country has sovereign control over (see  <https://aka.ms/auditreqs> section III for the definition of a "Government CA"). These government-issued TLDs are referred to in each CA's respective contract. 
 9. Issuing CA certificates that chain to a participating Root CA  must be constrained to a single EKU (e.g., separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single Issuing CA must not combine server authentication with S/MIME, code signing or time stamping EKU.  A separate intermediate must be used for each use case.
 10. End-entity certificates must meet the requirements for algorithm type and key size for Subscriber certificates listed in Appendix A of the CAB Forum Baseline Requirements located at   https://cabforum.org/baseline-requirements-documents/.
 11. CAs must declare one of the following policy OIDs in its Certificate Policy extension end-entity certificate: 
@@ -109,7 +109,7 @@ Program.
 
 1.  New root CAs that support code-signing infrastructure must be signed with using the SHA2 hashing algorithm.
 2.  Root certificates that support code signing use may be removed from distribution by the Program 10 years from the date of distribution of a replacement rollover root certificate or sooner, if requested by the CA. 
-3.  Root certificates that remain in distribution to support only code signing use beyond their algorithm security lifetime (e.g. RSA 1024  = 2014, RSA 2048 = 2030) may be set to ‘disable’ in the Windows 10 OS. 
+3.  Root certificates that remain in distribution to support only code signing use beyond their algorithm security lifetime (e.g. RSA 1024  = 2014, RSA 2048 = 2030) may be set to 'disable' in the Windows 10 OS. 
 
  
 
@@ -130,11 +130,13 @@ Program.
 
 ### F. Windows 10 Kernel Mode Code Signing (KMCS) Requirements
 
-
-Windows 10 has heightened requirements to validate kernel-mode drivers.  Drivers must be signed by both Microsoft and a Program partner using Extended Validation requirements.   All developers who wish to have their kernel-mode drivers included in Windows must follow the procedures outlined by the Microsoft Hardware Development Team.  Program documentation can be found here: <https://docs.microsoft.com/windows-hardware/drivers/dashboard/> Additionally, a FAQ about the deprecation of 3rd party KMCS certificates can be found here: https://docs.microsoft.com/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates. 
- 
-Starting January 31, 2020, all newly issued kernel mode code signing certificates MUST expire by January 1st, 2022. 
-
+Windows 10 has heightened requirements to validate kernel-mode
+drivers.  Drivers must be signed by both Microsoft and a Program partner
+using Extended Validation requirements.   All developers who wish to
+have their kernel-mode drivers included in Windows must follow the
+procedures outlined by the Microsoft Hardware Development Team.  Program
+documentation can be found
+[here](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
 ------------------------------------------------------------------------
 

@@ -23,7 +23,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Enable security and management for your remote workforce
+    - title: Secure your remote workforce
       itemType: overview
       url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
     # Card

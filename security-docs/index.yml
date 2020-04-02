@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
 title: Security documentation
-summary: Technical security information from across Microsoft
+summary: Technical guidance from across Microsoft for security strategy and architecture
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 
 metadata:
   title: Microsoft security documentation
-  description: Technical security information from across Microsoft
+  description: Technical guidance to help security professionals build and improve cybersecurity strategy, architecture, and prioritized roadmaps
 # services: service
 # ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: na
@@ -15,13 +15,17 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 03/19/2020
+  ms.date: 04/02/2020
 
 
 # Maximum of 8 items
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
+    # Card
+    - title: Secure your remote workforce
+      itemType: overview
+      url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
     # Card
     - title: Zero Trust maturity model and guidance
       itemType: overview
@@ -47,11 +51,7 @@ highlightedContent:
       itemType: overview
       url: https://docs.microsoft.com/azure/security/fundamentals/threat-detection
     # Card
-    - title: Microsoft Ignite 2019 security sessions
-      itemType: video
-      url: https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222019-11-03T08%253A00%253A00-05%253A00%2522%252C%2522to%2522%253A%25222019-11-08T19%253A00%253A00-05%253A00%2522%257D&g=%255B%2522on-demand%2522%255D&q=security&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D
-    # Card
-    - title: What is Azure Security Center?
+    - title: Azure Security Center
       itemType: overview
       url: https://docs.microsoft.com/azure/security-center/security-center-intro
 
@@ -83,6 +83,10 @@ additionalContent:
         - title: Security learning paths and modules
           summary: Learn new skills and discover the power of Microsoft products with step-by-step guidance.
           url: https://docs.microsoft.com/en-us/learn/browse/?term=security
+        # Card
+        - title: Microsoft Ignite 2019
+          summary: View security sessions from Microsoft Ignite.
+          url: https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222019-11-03T08%253A00%253A00-05%253A00%2522%252C%2522to%2522%253A%25222019-11-08T19%253A00%253A00-05%253A00%2522%257D&g=%255B%2522on-demand%2522%255D&q=security&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D
 
 #  Section 2
     - title: Security disciplines

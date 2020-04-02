@@ -6,7 +6,7 @@ summary: Technical guidance from across Microsoft for security strategy and arch
 
 metadata:
   title: Microsoft security documentation
-  description: Technical security information from across Microsoft
+  description: Technical guidance to help security professionals build and improve cybersecurity strategy, architecture, and prioritized roadmaps
 # services: service
 # ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: na
@@ -25,7 +25,7 @@ highlightedContent:
     # Card
     - title: Enable security and management for your remote workforce
       itemType: overview
-      url: https://www.microsoft.com/security/business/zero-trust
+      url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
     # Card
     - title: Zero Trust maturity model and guidance
       itemType: overview

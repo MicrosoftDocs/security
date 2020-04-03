@@ -4,8 +4,8 @@
   items:
   - name: Security
     href: /security
-    topicHref: /security/index
+    topicHref: /security/compass
     items:
     - name: Microsoft security architecture recommendations
-      href: /security/compass
-      topicHref: /security/compass/index
+      href: /security/compass/
+      topicHref: /security/compass/compass

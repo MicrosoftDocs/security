@@ -5,6 +5,7 @@ description: Cybersecurity is a shared responsibility. In this brief, we share t
 ms.date: 12/03/2018
 ms.service: security
 ms.author: modrake
+author: modrake
 ms.topic: conceptual
 ---
 

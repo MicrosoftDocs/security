@@ -4,12 +4,13 @@ description: This document provides details of the Information Sharing and Excha
 ms.date: 02/19/2019
 ms.service: security
 ms.author: kellieac
+author: kellieac
 ms.topic: conceptual
 ---
 
 # Information Sharing and Exchange
 
-The mission of Microsoft’s Government Security Program (GSP) is to build trust through transparency. Since the program’s inception in 2003, Microsoft has provided visibility into our technology and security artifacts which governments and international organizations can use to help protect themselves and their citizens. The Information Sharing and Exchange offering enables Microsoft to share and exchange materials about threats, vulnerabilities, anomalous behavior, malware information, and security issues against or related to Microsoft products and services. 
+The mission of Microsoft's Government Security Program (GSP) is to build trust through transparency. Since the program's inception in 2003, Microsoft has provided visibility into our technology and security artifacts which governments and international organizations can use to help protect themselves and their citizens. The Information Sharing and Exchange offering enables Microsoft to share and exchange materials about threats, vulnerabilities, anomalous behavior, malware information, and security issues against or related to Microsoft products and services. 
 This offering brings together groups and resources across the Microsoft environment to help governments protect citizens, infrastructure, and government agencies.
 
 ## The Information Sharing and Exchange offering provides      
@@ -19,7 +20,7 @@ This offering brings together groups and resources across the Microsoft environm
 
 ### IP Addresses of Infected Devices
 
-Microsoft’s Digital Crimes Unit (DCU) provides a sinkhole database of the malware-generated botnet feeds of infected hosts on a per-country basis.   
+Microsoft's Digital Crimes Unit (DCU) provides a sinkhole database of the malware-generated botnet feeds of infected hosts on a per-country basis.   
 
 ### Malicious URL Directory
 
@@ -41,5 +42,5 @@ The CERT notifies the IP address owners that they are likely infected with Simda
 
 ## Contact Us   
 
-Contact your local Microsoft representative or email **gspteam\@microsoft.com** to learn more about the Government Security Program   
+Contact your local Microsoft representative to learn more about the Government Security Program   
 

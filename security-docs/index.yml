@@ -135,12 +135,8 @@ additionalContent:
         # Card
         - title: Applications and services
           links:
-            - text: Videos and slides
-              url: /security/compass/applications-and-cloud-services-videos-and-decks
             - text: Article
               url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services
-            - text: Capabilities
-              url: /security/compass/applications-and-cloud-services-capabilities
 
         # Card
         - title: Security operations
@@ -159,8 +155,7 @@ additionalContent:
               url: /security/compass/administration-videos-and-decks
             - text: Article
               url: https://docs.microsoft.com/en-us/azure/architecture/framework/security/critical-impact-accounts?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
-            - text: Capabilities
-              url: /security/compass/administration-capabilities
+
 
 #  Section 3
     - title: Additional security resources

@@ -96,47 +96,71 @@ additionalContent:
         - title: Governance, risk, and compliance
           links:
             - text: Videos and slides
-              url: https://docs.microsoft.com/security/compass/governance-risk-compliance-videos-and-decks
+              url: /security/compass/governance-risk-compliance-videos-and-decks
             - text: Article
               url: https://docs.microsoft.com/azure/architecture/framework/security/governance?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
             - text: Capabilities
-              url: https://docs.microsoft.com/security/compass/governance-risk-compliance-capabilities
+              url: /security/compass/governance-risk-compliance-capabilities
 
-
-        - title: Compliance
-          links:
-            - text: Governance, risk, and compliance
-              url: /security/compass/governance-risk-compliance-videos-and-decks
-
+        # Card
         - title: Network security
           links:
-            - text: Network security and containment
+            - text: Videos and slides
               url: /security/compass/network-containment-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            - text: Capabilities
+              url: /security/compass/network-containment-capabilities
 
-        - title: Identity management
+        # Card
+        - title: Identity and access management
           links:
-            - text: Identity and access management
+            - text: Videos and slides
               url: /security/compass/identity-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/azure/architecture/framework/security/identity?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            - text: Capabilities
+              url: /security/compass/identity-capabilities
 
-        - title: Information protection
+        # Card
+        - title: Storage, data, and encryption
           links:
-            - text: Storage, data, and encryption
+            - text: Videos and slides
               url: /security/compass/information-protection-and-storage-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            - text: Capabilities
+              url: /security/compass/information-protection-and-storage-capabilities
 
-        - title: Application
+        # Card
+        - title: Applications and services
           links:
-            - text: Applications and services
+            - text: Videos and slides
+              url: /security/compass/applications-and-cloud-services-videos-and-decks
+            - text: Article
               url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services
+            - text: Capabilities
+              url: /security/compass/applications-and-cloud-services-capabilities
 
-        - title: Monitoring, auditing, and operations
+        # Card
+        - title: Security operations
           links:
-            - text: Security operations
+            - text: Videos and slides
               url: /security/compass/security-operations-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/en-us/azure/architecture/framework/security/security-operations?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            - text: Capabilities
+              url: /security/compass/security-operations-capabilities
 
+        # Card
         - title: Privileged access
           links:
-            - text: Administration
+            - text: Videos and slides
               url: /security/compass/administration-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/en-us/azure/architecture/framework/security/critical-impact-accounts?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            - text: Capabilities
+              url: /security/compass/administration-capabilities
 
 #  Section 3
     - title: Additional security resources

@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 04/02/2020
+  ms.date: 04/28/2020
 
 
 # Maximum of 8 items
@@ -92,6 +92,17 @@ additionalContent:
     - title: Security disciplines
       summary: Guidance for security related decisions that improve your security posture
       items:
+        # Card
+        - title: Governance, risk, and compliance
+          links:
+            - text: Videos and slides
+              url: https://docs.microsoft.com/security/compass/governance-risk-compliance-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/azure/architecture/framework/security/governance?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            - text: Capabilities
+              url: https://docs.microsoft.com/security/compass/governance-risk-compliance-capabilities
+
+
         - title: Compliance
           links:
             - text: Governance, risk, and compliance
@@ -127,11 +138,6 @@ additionalContent:
             - text: Administration
               url: /security/compass/administration-videos-and-decks
 
-        - title: Threat protection
-          links:
-            - text: Microsoft Threat Protection
-              url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection
-
 #  Section 3
     - title: Additional security resources
       items:
@@ -142,6 +148,10 @@ additionalContent:
               text: Azure security
             - url: https://docs.microsoft.com/microsoft-365/security/
               text: Microsoft 365 security
+            - url: https://docs.microsoft.com/azure/sentinel/
+              text: Azure Sentinel
+            - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection
+              text: Microsoft Threat Protection
             - url: https://docs.microsoft.com/windows/security/
               text: Windows security
             - url: https://docs.microsoft.com/sql/lp/sql-server/secure-sql-server?view=sql-server-2017

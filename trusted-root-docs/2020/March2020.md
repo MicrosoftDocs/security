@@ -1,7 +1,7 @@
 ---
 title: March 2020 Deployment Notice  - Microsoft Trusted Root Program 
 description: This document provides details about the changes made in March 2020 to the root store.
-ms.date: 03/18/2019
+ms.date: 03/18/2020
 ms.service: security
 author: kasirota
 ms.author: kasirota

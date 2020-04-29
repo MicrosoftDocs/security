@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 04/02/2020
+  ms.date: 04/28/2020
 
 
 # Maximum of 8 items
@@ -92,45 +92,70 @@ additionalContent:
     - title: Security disciplines
       summary: Guidance for security related decisions that improve your security posture
       items:
-        - title: Compliance
+        # Card
+        - title: Governance, risk, and compliance
           links:
-            - text: Governance, risk, and compliance
+            - text: Videos and slides
               url: /security/compass/governance-risk-compliance-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/azure/architecture/framework/security/governance?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            - text: Capabilities
+              url: /security/compass/governance-risk-compliance-capabilities
 
+        # Card
         - title: Network security
           links:
-            - text: Network security and containment
+            - text: Videos and slides
               url: /security/compass/network-containment-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            - text: Capabilities
+              url: /security/compass/network-containment-capabilities
 
-        - title: Identity management
+        # Card
+        - title: Identity and access management
           links:
-            - text: Identity and access management
+            - text: Videos and slides
               url: /security/compass/identity-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/azure/architecture/framework/security/identity?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            - text: Capabilities
+              url: /security/compass/identity-capabilities
 
-        - title: Information protection
+        # Card
+        - title: Storage, data, and encryption
           links:
-            - text: Storage, data, and encryption
+            - text: Videos and slides
               url: /security/compass/information-protection-and-storage-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            - text: Capabilities
+              url: /security/compass/information-protection-and-storage-capabilities
 
-        - title: Application
+        # Card
+        - title: Applications and services
           links:
-            - text: Applications and services
+            - text: Article
               url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services
 
-        - title: Monitoring, auditing, and operations
+        # Card
+        - title: Security operations
           links:
-            - text: Security operations
+            - text: Videos and slides
               url: /security/compass/security-operations-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/en-us/azure/architecture/framework/security/security-operations?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+            - text: Capabilities
+              url: /security/compass/security-operations-capabilities
 
+        # Card
         - title: Privileged access
           links:
-            - text: Administration
+            - text: Videos and slides
               url: /security/compass/administration-videos-and-decks
+            - text: Article
+              url: https://docs.microsoft.com/en-us/azure/architecture/framework/security/critical-impact-accounts?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
 
-        - title: Threat protection
-          links:
-            - text: Microsoft Threat Protection
-              url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection
 
 #  Section 3
     - title: Additional security resources
@@ -142,6 +167,10 @@ additionalContent:
               text: Azure security
             - url: https://docs.microsoft.com/microsoft-365/security/
               text: Microsoft 365 security
+            - url: https://docs.microsoft.com/azure/sentinel/
+              text: Azure Sentinel
+            - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection
+              text: Microsoft Threat Protection
             - url: https://docs.microsoft.com/windows/security/
               text: Windows security
             - url: https://docs.microsoft.com/sql/lp/sql-server/secure-sql-server?view=sql-server-2017

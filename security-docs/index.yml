@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
 title: Security documentation
-summary: Technical guidance from across Microsoft for security strategy and architecture
+summary: Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 
 metadata:
   title: Microsoft security documentation
-  description: Technical guidance to help security professionals build and improve cybersecurity strategy, architecture, and prioritized roadmaps
+  description: Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps
 # services: service
 # ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: na
@@ -23,9 +23,17 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Secure your remote workforce
+    - title: Identifying Security Bug Reports
+      itemType: concept
+      url: ./engineering/identifying-security-bug-reports.md
+    # Card
+    - title: Lessons learned from the Microsoft SOC
+      itemType: concept
+      url: https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/
+    # Card
+    - title: Azure security podcast
       itemType: overview
-      url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
+      url: https://azsecuritypodcast.azurewebsites.net/
     # Card
     - title: Zero Trust maturity model and guidance
       itemType: overview
@@ -43,17 +51,10 @@ highlightedContent:
       itemType: video
       url: /security/compass/microsoft-security-compass-introduction
     # Card
-    - title: Securing AI and ML
-      itemType: concept
-      url: ./engineering/failure-modes-in-machine-learning.md
-    # Card
     - title: Advanced threat protection for Azure
       itemType: overview
       url: https://docs.microsoft.com/azure/security/fundamentals/threat-detection
-    # Card
-    - title: Azure Security Center
-      itemType: overview
-      url: https://docs.microsoft.com/azure/security-center/security-center-intro
+
 
 additionalContent:
 #  Maximum of 3 sections
@@ -171,6 +172,8 @@ additionalContent:
               text: Azure Sentinel
             - url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection
               text: Microsoft Threat Protection
+            - url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
+              text: Secure your remote workforce
             - url: https://docs.microsoft.com/windows/security/
               text: Windows security
             - url: https://docs.microsoft.com/sql/lp/sql-server/secure-sql-server?view=sql-server-2017

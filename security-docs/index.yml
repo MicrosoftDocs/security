@@ -27,7 +27,7 @@ highlightedContent:
       itemType: learn
       url: https://resources.office.com/en-us-landing-US-M365-WBNR-FY20-06Jun-11-Microsoft-Virtual-Security-Compliance-Summit-4826.html
     # Card
-    - title: Identifying Security Bug Reports
+    - title: Identifying security bug reports
       itemType: concept
       url: ./engineering/identifying-security-bug-reports.md
     # Card

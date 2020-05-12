@@ -39,9 +39,9 @@ highlightedContent:
       itemType: overview
       url: https://www.microsoft.com/security/business/zero-trust
     # Card
-    - title: Plan and improve your security posture with Secure Score
+    - title: Deploy threat protection capabilities across Microsoft 365
       itemType: concept
-      url: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide
+      url: https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection?view=o365-worldwide
     # Card
     - title: Solving the TLS 1.0 problem, 2nd edition
       itemType: concept

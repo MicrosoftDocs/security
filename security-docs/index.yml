@@ -43,9 +43,9 @@ highlightedContent:
       itemType: concept
       url: https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection?view=o365-worldwide
     # Card
-    - title: Solving the TLS 1.0 problem, 2nd edition
+    - title: Register for Microsoft's June 2020 virtual security & compliance summit
       itemType: concept
-      url: ./engineering/solving-tls1-problem.md
+      url: https://resources.office.com/en-us-landing-US-M365-WBNR-FY20-06Jun-11-Microsoft-Virtual-Security-Compliance-Summit-4826.html
     # Card
     - title: New videos providing Microsoft security architecture recommendations
       itemType: video

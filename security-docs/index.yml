@@ -51,9 +51,9 @@ highlightedContent:
       itemType: concept
       url: https://docs.microsoft.com/azure/security/fundamentals/security-controls
     # Card
-    - title: New videos providing Microsoft security architecture recommendations
-      itemType: video
-      url: /security/compass/microsoft-security-compass-introduction
+    - title: Past news and highlights
+      itemType: overview
+      url: news-and-highlights.md
 
 
 

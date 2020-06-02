@@ -23,4 +23,4 @@ Below are past news and highlights that you may have missed or would like to rev
 - [Deploy threat protection capabilities across Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection?view=o365-worldwide)
 - [The Azure Security Podcast](https://azsecuritypodcast.azurewebsites.net/)
 - [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
-- [New videos providing Microsoft security architecture recommendations](/security/compass/microsoft-security-compass-introduction.md)
+- [New videos providing Microsoft security architecture recommendations](../compass/microsoft-security-compass-introduction.md)

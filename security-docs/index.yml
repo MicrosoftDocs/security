@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 05/12/2020
+  ms.date: 06/01/2020
 
 
 # Maximum of 8 items
@@ -23,7 +23,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Security hurdles you can sail over — One architect’s viewpoint
+    - title: Security hurdles you can sail over - One architect's viewpoint
       itemType: concept
       url: https://docs.microsoft.com/microsoft-365/solutions/security-design-principles?view=o365-worldwide
     # Card

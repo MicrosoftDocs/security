@@ -1,5 +1,5 @@
 ---
-title: "Microsoft security architecture recommendations module: Governance, risk, and compliance"
+title: "Microsoft Security Best Practices module: Governance, risk, and compliance"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Provides guidance on governance, risk, and compliance for security professionals."
 ---
 
-# Microsoft security architecture recommendations module: Governance, risk, and compliance
+# Microsoft Security Best Practices module: Governance, risk, and compliance
 Governance, Risk, and Compliance (GRC) activities help reduce organizational risk by ensuring policy and best practices are followed consistently over time. This section also addresses key roles and responsibilities we have found important for successfully managing cloud security. 
 
 The following videos provide guidance on governance, risk, and compliance. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).

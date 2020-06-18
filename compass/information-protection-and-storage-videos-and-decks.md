@@ -1,5 +1,5 @@
 ---
-title: "Microsoft security architecture recommendations module: Information protection and storages"
+title: "Microsoft Security Best Practices module: Information protection and storages"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,8 +9,10 @@ localization_priority: Normal
 description: "Provides guidance on information protection and storage."
 ---
 
-# Microsoft security architecture recommendations module: Information protection and storage
+# Microsoft Security Best Practices module: Information protection and storage
 Intellectual property that is valuable to the organization (or its customers/constituents) requires security protection appropriate to its value.
+
+See the [storage, data, and encryption](https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption) and [capabilities](#information-protection-and-storage-capabilities.md) articles for more information.
 
 The following videos provide guidance on information protection and storage. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft security architecture recommendations module: Network security & containment"
+title: "Microsoft Security Best Practices module: Network security & containment"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Provides guidance on network security and containment."
 ---
 
-# Microsoft security architecture recommendations module: Network security & containment
+# Microsoft Security Best Practices module: Network security & containment
 Network Security & Containment helps reduce organizational risk by providing access controls to limit the ability of attackers to traverse the enterprise environment without impeding legitimate communications and interactions. 
 
 The following videos provide guidance on network security and containment. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).

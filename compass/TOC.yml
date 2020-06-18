@@ -1,9 +1,9 @@
-- name: Microsoft security architecture recommendations
+- name: Microsoft Security Best Practices
   href: compass.md
   items: 
     - name: Introduction
       items:
-        - name: What's inside Microsoft security architecture recommendations?
+        - name: What's inside Microsoft Security Best Practices?
           href: microsoft-security-compass-introduction.md
     #   - name: What's new in Microsoft Security Compass?
     #     href: new-in-microsoft-security-compass.md

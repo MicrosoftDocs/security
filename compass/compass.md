@@ -1,21 +1,20 @@
 ---
-title: "Microsoft security architecture recommendations"
+title: "Microsoft Security Best Practices"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-description: "Learn how to rapidly increase your security posture with prescriptive security architecture recommendations."
+description: "Learn how to rapidly increase your security posture with prescriptive Microsoft Security Best Practices."
 
 
 
 ---
 
-# Microsoft security architecture recommendations
+# Microsoft Security Best Practices
 
-
-Microsoft security architecture recommendations is a collection of best practices that provide clear actionable guidance for security related decisions. This is designed to help you increase your security posture and reduce risk whether your environment is cloud-only, or a hybrid enterprise spanning cloud(s) and on-premises data centers. This guidance was formerly referred to as Azure Security Compass and is now increasing in scope to encompass all Microsoft security guidance and capabilities, including Microsoft 365. 
+Microsoft Security Best Practices (formerly known as the Azure Security Compass or Microsoft Security Compass) is a collection of best practices that provide clear actionable guidance for security related decisions. This is designed to help you increase your security posture and reduce risk whether your environment is cloud-only, or a hybrid enterprise spanning cloud(s) and on-premises data centers. This guidance was formerly referred to as Azure Security Compass and is now increasing in scope to encompass all Microsoft security guidance and capabilities, including Microsoft 365. 
 
 In this guidance:
 - [Introduction](microsoft-security-compass-introduction.md)

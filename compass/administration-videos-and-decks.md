@@ -45,3 +45,6 @@ The following videos provide guidance on administration. To download the PowerPo
 
 ## Part 10: Admin Account Lifecycle (02:53)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qlSH]
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

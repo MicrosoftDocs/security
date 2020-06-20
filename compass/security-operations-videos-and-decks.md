@@ -28,3 +28,6 @@ The following videos provide guidance on security operations. To download the Po
 
 ## Part 5: Security Operations General Guidance (03:42)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qbMI]
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

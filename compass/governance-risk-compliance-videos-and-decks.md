@@ -61,3 +61,6 @@ The following videos provide guidance on governance, risk, and compliance. To do
 
 ## Part 16: General Guidance (03:01)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q3E9]
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

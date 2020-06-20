@@ -48,5 +48,6 @@ Microsoft 365 and Office 365 include capabilities that can be applied to specifi
 | Azure SQL Database security capabilities| Security capabilities for data include Always encrypted and Transparent Data Encryption (TDE)| [An overview of Azure SQL Database security capabilities](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)|
 | | | |
 
-
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
 

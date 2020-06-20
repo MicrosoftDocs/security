@@ -47,3 +47,5 @@ This article lists capabilities that can help with identity.
 |Managed Identities    | You can reduce use of passwords by applications using Managed Identities to grant access to resources in Azure        |[What are managed identities for Azure resources? ](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview)   |
 |    |         |         |
 
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

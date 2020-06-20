@@ -23,3 +23,6 @@ For more information about information protection capabilities across Microsoft 
 
 ## Part 2: Storage and Encryption Best Practices (03:30)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q9Eg]
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

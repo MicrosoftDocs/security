@@ -46,3 +46,5 @@ This article lists capabilities that can help with network traffic and containme
 | Azure Firewall |Cloud-native network security to protect your Azure Virtual Network resources.  |       [Azure Firewall](https://azure.microsoft.com/services/azure-firewall/)  |
 |  |         |         |
 
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

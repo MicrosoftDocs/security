@@ -27,4 +27,5 @@ This article lists capabilities that can help with governance, risk, and complia
 | | | |
 
 
-
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

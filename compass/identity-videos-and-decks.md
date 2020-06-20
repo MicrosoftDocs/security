@@ -31,3 +31,6 @@ The following videos provide guidance on identity and access management. To down
 
 ## Part 6: General Guidance (02:38)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qbKi]
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

@@ -33,3 +33,6 @@ This guidance is presented in a series of videos. To download the PowerPoint sli
 [Security design principles for cloud architecture](https://docs.microsoft.com/azure/architecture/framework/security/security-principles)
 
 [Security reference architectures and design](https://gallery.technet.microsoft.com/Cybersecurity-Reference-883fb54c)
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

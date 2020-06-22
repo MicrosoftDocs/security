@@ -104,3 +104,6 @@ We recommend that for each service that supports service provider encryption
 that you enable that option.
 
 An example of service-specific service provider encryption is [Azure Storage Service encryption](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

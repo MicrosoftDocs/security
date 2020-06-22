@@ -148,3 +148,5 @@ that enable rapid response and remediation (filter false positives, and elevate
 true positives, etc.), but collection is not detection. If you don’t have a
 reasonable expectation that the data will provide value (for example, high volume of firewall denies events), you may deprioritize integration of these events.
 
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

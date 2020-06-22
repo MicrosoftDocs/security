@@ -271,3 +271,6 @@ https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-ris
 ### Use Cross-Platform Credential Management
 
 https://docs.microsoft.com/azure/virtual-machines/linux/login-using-aad
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

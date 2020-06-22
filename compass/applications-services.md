@@ -534,3 +534,6 @@ learned and best practices have become clear:
 -   **Monitor containers**  
     Ensure you deploy security monitoring tools that are container aware to
     monitor for anomalous behavior and enable investigation of incidents.
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

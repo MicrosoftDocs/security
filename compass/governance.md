@@ -638,3 +638,6 @@ as required:
 
 -   **Confidential Computing**  
     [Confidential Computing may help meet regulatory or security requirements](https://azure.microsoft.com/blog/azure-confidential-computing/).
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

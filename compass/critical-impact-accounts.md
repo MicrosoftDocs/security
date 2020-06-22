@@ -306,3 +306,6 @@ overall organizational risk.
 
 You can use [Office 365 Attack Simulation](https://docs.microsoft.com/office365/securitycompliance/attack-simulator)
 capabilities or any number of third party offerings.
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

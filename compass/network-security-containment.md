@@ -336,3 +336,6 @@ Examples of network logs that provide visibility include:
     and their equivalents
 
 -   [Azure Network Watcher](https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview)
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

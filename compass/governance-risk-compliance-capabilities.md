@@ -26,6 +26,5 @@ This article lists capabilities that can help with governance, risk, and complia
 |Azure Blueprints    | Azure Blueprints enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements. Azure Blueprints makes it possible for development teams to rapidly build and stand up new environments with trust they're building within organizational compliance with a set of built-in components -- such as networking -- to speed up development and delivery.       |   [Azure Blueprints documentation](https://docs.microsoft.com/azure/governance/blueprints/overview)      |
 | | | |
 
-
 ## Next steps
 For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

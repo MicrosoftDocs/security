@@ -50,4 +50,3 @@ Microsoft 365 and Office 365 include capabilities that can be applied to specifi
 
 ## Next steps
 For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
-

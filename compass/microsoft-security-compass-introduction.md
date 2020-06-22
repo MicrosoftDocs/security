@@ -43,7 +43,7 @@ To download the PowerPoint slides associated with these videos, click [download 
 
 View the slides for this workshop. 
 
-[![Thumb image of Microsoft security architecture presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation-thumb.png)](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pdf)
+[![Thumb image of Microsoft Security Best Practices presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation-thumb.png)](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pdf)
 
 [PowerPoint](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx) | [PDF](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pdf)
 

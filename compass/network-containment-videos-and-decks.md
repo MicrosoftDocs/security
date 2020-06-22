@@ -12,7 +12,7 @@ description: "Provides guidance on network security and containment."
 # Microsoft Security Best Practices module: Network security & containment
 Network Security & Containment helps reduce organizational risk by providing access controls to limit the ability of attackers to traverse the enterprise environment without impeding legitimate communications and interactions. 
 
-See the [network security and containment](network-security-containment.md) and [capabilities](network-containment-capabilities.md) topics for more information.
+See the [Network security and containment](network-security-containment.md) and [Capabilities](network-containment-capabilities.md) topics for more information.
 
 The following videos provide guidance on network security and containment. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
 

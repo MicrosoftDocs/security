@@ -12,7 +12,7 @@ description: "Provides guidance on identity and access management."
 # Microsoft Security Best Practices module: Identity and access management
 Identity and access management is critical to both security assurances as an access control as well as enterprise enablement of applications and services.
 
-See the [identity and access management](identity.md) and [capabilities](identity-capabilities.md) topics for more information.
+See the [Identity and access management](identity.md) and [Capabilities](identity-capabilities.md) topics for more information.
 
 The following videos provide guidance on identity and access management. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
 

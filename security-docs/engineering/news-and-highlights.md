@@ -18,9 +18,9 @@ Below are past news and highlights that you may have missed or would like to rev
 
 May, 2020
 
-- [Solving the TLS 1.0 Problem, 2nd Edition](./engineering/solving-tls1-problem.md)
+- [Solving the TLS 1.0 Problem, 2nd Edition](solving-tls1-problem.md)
 - [What is Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro)
-- [Securing the Future of Artificial Intelligence and Machine Learning at Microsoft](./engineering/securing-artificial-intelligence-machine-learning.md)
+- [Securing the Future of Artificial Intelligence and Machine Learning at Microsoft](securing-artificial-intelligence-machine-learning.md)
 - [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)
 
 June, 2020
@@ -29,4 +29,4 @@ June, 2020
 - [The Azure Security Podcast](https://azsecuritypodcast.azurewebsites.net/)
 - [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
 - [New videos providing Microsoft security architecture recommendations](/security/compass/microsoft-security-compass-introduction)
-- [Identifying Security Bug Reports Based Solely on Report Titles and Noisy Data](./engineering/identifying-security-bug-reports.md)
+- [Identifying Security Bug Reports Based Solely on Report Titles and Noisy Data](identifying-security-bug-reports.md)

@@ -51,4 +51,4 @@
   - name: Resources
     items:
     - name: Past news and highlights
-      href: ./security-docs/news-and-highlights.md
+      href: news-and-highlights.md

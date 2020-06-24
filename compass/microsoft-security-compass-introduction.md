@@ -47,6 +47,8 @@ View the slides for this workshop.
 
 [PowerPoint](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx) | [PDF](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pdf)
 
+> [!Note]
+> Azure Security Compass or Microsoft Security Compass is now renamed as Microsoft Security Best Practices.
 
 ## Top 10 Azure Security best practices
 View slides for Top 10 Azure Security best practices.

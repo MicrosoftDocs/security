@@ -1,10 +1,10 @@
 ---
 title: Governance, risk, and compliance in Azure | Microsoft Docs
 description: Define the security priorities around governance, risk, and compliance
-author: PageWriter-MSFT
+author: MarkSimos
 ms.date: 07/09/2019
 ms.topic: article
-ms.service: architecture-center
+ms.service: security
 ms.subservice: cloud-design-principles
 ---
 

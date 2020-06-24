@@ -1,10 +1,10 @@
 ---
 title: Security operations in Azure | Microsoft Docs
 description: Detect, respond, and recover the system when it's attacked.
-author: PageWriter-MSFT
+author: MarkSimos
 ms.date: 07/09/2019
 ms.topic: article
-ms.service: architecture-center
+ms.service: security
 ms.subservice: cloud-design-principles
 ---
 

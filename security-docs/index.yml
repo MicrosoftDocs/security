@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 06/01/2020
+  ms.date: 06/23/2020
 
 
 # Maximum of 8 items
@@ -23,29 +23,29 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
+    - title: Cloud Adoption Framework for Azure - Get started
+      itemType: overview
+      url: https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/security
+    # Card
     - title: Security hurdles you can sail over - One architect's viewpoint
       itemType: concept
       url: https://docs.microsoft.com/microsoft-365/solutions/security-design-principles?view=o365-worldwide
-    # Card
-    - title: Register for the security & compliance virtual summit, June 2020
-      itemType: learn
-      url: https://resources.office.com/en-us-landing-US-M365-WBNR-FY20-06Jun-11-Microsoft-Virtual-Security-Compliance-Summit-4826.html
-    # Card
-    - title: Identifying security bug reports
-      itemType: concept
-      url: ./engineering/identifying-security-bug-reports.md
     # Card
     - title: Lessons learned from the Microsoft SOC
       itemType: concept
       url: https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/
     # Card
-    - title: Become an Azure Sentinel Ninja - level 400 training
-      itemType: learn
-      url: https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310
-    # Card
     - title: Zero Trust maturity model and guidance
       itemType: overview
       url: https://www.microsoft.com/security/business/zero-trust
+    # Card
+    - title: The Azure Security Podcast
+      itemType: concept
+      url: https://azsecuritypodcast.azurewebsites.net/
+    # Card
+    - title: Become an Azure Sentinel Ninja - level 400 training
+      itemType: learn
+      url: https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310
     # Card
     - title: Azure built-in security controls
       itemType: concept
@@ -53,7 +53,7 @@ highlightedContent:
     # Card
     - title: Past news and highlights
       itemType: overview
-      url: news-and-highlights.md
+      url: ./engineering/news-and-highlights.md
 
 
 

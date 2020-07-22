@@ -14,7 +14,7 @@ Identity and access management is critical to both security assurances as an acc
 
 See the [Identity and access management](identity.md) and [Capabilities](identity-capabilities.md) topics for more information.
 
-The following videos provide guidance on identity and access management. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
+The following videos provide guidance on identity and access management. You can also download the [PowerPoint slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx) associated with these videos.
 
 ## Part 1: Introduction - Identity Attacks & Key Capabilities (05:44)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q6Dr]

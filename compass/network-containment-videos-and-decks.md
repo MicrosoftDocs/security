@@ -14,7 +14,7 @@ Network Security & Containment helps reduce organizational risk by providing acc
 
 See the [Network security and containment](network-security-containment.md) and [Capabilities](network-containment-capabilities.md) topics for more information.
 
-The following videos provide guidance on network security and containment. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
+The following videos provide guidance on network security and containment. You can also download the [PowerPoint slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx) associated with these videos.
 
 ## Part 1: Introduction - Overview of Azure Network Security (21:31)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qm7f]

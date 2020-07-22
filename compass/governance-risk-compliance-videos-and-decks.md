@@ -14,7 +14,7 @@ Governance, Risk, and Compliance (GRC) activities help reduce organizational ris
 
 See the [Governance, risk, and compliance](governance.md) and [Capabilities](governance-risk-compliance-capabilities.md) topics for more information.
 
-The following videos provide guidance on governance, risk, and compliance. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
+The following videos provide guidance on governance, risk, and compliance. You can also download the [PowerPoint slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx) associated with these videos.
 
 ## Part 1: Introduction + Manage Connected Tenants (08:45)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qbBk]

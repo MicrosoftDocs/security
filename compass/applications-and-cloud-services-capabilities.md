@@ -1,5 +1,5 @@
 ---
-title: "Capabilities"
+title: "Applications and cloud services capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp

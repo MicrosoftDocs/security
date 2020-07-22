@@ -10,7 +10,6 @@ ms.subservice: cloud-design-principles
 
 # Governance, risk, and compliance
 
-
 Organizations of all sizes are constrained by their available resources;
 financial, people, and time. To achieve an effective return on investment (ROI)
 organizations must prioritize where they will invest. Implementation of security
@@ -237,7 +236,7 @@ like overpermissioning, reducing your overall risk.
 
 Microsoft recommends starting from these Microsoft reference models and adapting to your organization.
 
-![](images/ref-perms.png)
+![image showing core services reference permissions](images/ref-perms.png)
 
 ### Core Services Reference Permissions
 This segment hosts shared services

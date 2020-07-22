@@ -1,5 +1,5 @@
 ---
-title: "Microsoft network containment capabilities"
+title: "Network containment capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Lists capabilities that can help with network traffic and containment."
 ---
 
-# Microsoft network containment capabilities
+# Network containment capabilities
 
 This article lists capabilities that can help with network traffic and containment.
 

@@ -287,7 +287,7 @@ don’t have to manage identities within the application.
 
 ## Bottom-up approach to reduce security bug volume and impact
 
-![](images/app-code.png)
+![image showing bottom-up approach to reduce security bug volume and impact](images/app-code.png)
 
 Reduce the count and potential severity of security bugs in your application by
 implementing security practices and tools during the development lifecycle.
@@ -313,7 +313,7 @@ and output validation, perform fuzz testing, attack surface reviews, and more.
 
 ## Top-down approach through threat modeling
 
-![](images/app-code2.png)
+![image showing top-down approach through threat modeling](images/app-code2.png)
 
 Perform threat modeling on your business-critical applications to discover and
 mitigate potential risks to your organization.

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft security operations capabilities"
+title: "Security operations capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Lists capabilities that can help with security operations."
 ---
 
-# Microsoft security operations capabilities
+# Security operations capabilities
 This article lists the capabilities that can help with security operations.
 
 <br> 

@@ -1,5 +1,5 @@
 ---
-title: "Capabilities"
+title: "Endpoint security capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp

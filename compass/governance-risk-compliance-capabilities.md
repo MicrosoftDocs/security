@@ -1,5 +1,5 @@
 ---
-title: "Microsoft governance, risk, and compliance capabilities"
+title: "Governance, risk, and compliance capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Lists capabilities that can help with governance, risk, and compliance."
 ---
 
-# Microsoft governance, risk, and compliance capabilities
+# Governance, risk, and compliance capabilities
 
 This article lists capabilities that can help with governance, risk, and compliance. You can also learn more about these capabilities at [Azure governance documentation](https://docs.microsoft.com/azure/governance/).
 

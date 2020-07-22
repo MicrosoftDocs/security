@@ -70,8 +70,8 @@ additionalContent:
           summary: If you're new to Microsoft Security, start here! Includes principles and recommendations for modernizing security in your organization.
           url: /security/ciso-workshop/ciso-workshop
         # Card
-        - title: Microsoft security architecture recommendations
-          summary: Are you a security professional? Microsoft security architecture recommendations is a collection of best practices with actionable guidance for your security architecture.
+        - title: Microsoft Security Best Practices
+          summary: Are you a security professional? Microsoft Security Best Practices is a collection of best practices with actionable guidance for your security architecture.
           url: /security/compass/compass
         # Card
         - title: Security benchmarks

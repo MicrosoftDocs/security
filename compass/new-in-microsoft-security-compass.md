@@ -13,3 +13,5 @@ description: "Discover what's new in Microsoft Security Compass"
 
 Microsoft Security Compass.....
 
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

@@ -6,6 +6,6 @@
     href: /security
     topicHref: /security/index
     items:
-    - name: Microsoft security architecture recommendations
+    - name: Microsoft Security Best Practices
       href: /security/compass/
       topicHref: /security/compass/compass

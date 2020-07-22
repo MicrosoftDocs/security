@@ -9,12 +9,13 @@ localization_priority: Normal
 description: "Videos and decks"
 ---
 
-# Microsoft security architecture recommendations module: Endpoint security
+# Microsoft Security Best Practices module: Endpoint security
 Introduction...
 
 ## Part 1: 
 
 ## Part 2: 
 
-
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Security Best Practices module: Network security & containment"
+title: "Microsoft Security Best Practices module: Network security and containment"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Provides guidance on network security and containment."
 ---
 
-# Microsoft Security Best Practices module: Network security & containment
+# Microsoft Security Best Practices module: Network security and containment
 Network Security & Containment helps reduce organizational risk by providing access controls to limit the ability of attackers to traverse the enterprise environment without impeding legitimate communications and interactions. 
 
 See the [Network security and containment](network-security-containment.md) and [Capabilities](network-containment-capabilities.md) topics for more information.

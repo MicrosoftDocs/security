@@ -1,5 +1,5 @@
 ---
-title: "Network containment capabilities"
+title: "Network security and containment capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,10 +9,9 @@ localization_priority: Normal
 description: "Lists capabilities that can help with network traffic and containment."
 ---
 
-# Network containment capabilities
+# Network security and containment capabilities
 
 This article lists capabilities that can help with network traffic and containment.
-
 
 ## Capabilities that work with SaaS, PaaS, and IaaS apps
 <br>

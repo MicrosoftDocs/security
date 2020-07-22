@@ -14,7 +14,7 @@ Security Operations monitor the enterprise environment to rapidly identify and r
 
 See the [Security operations](security-operations.md) and [Capabilities](security-operations-capabilities.md) topics for more information.
 
-The following videos provide guidance on security operations. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
+The following videos provide guidance on security operations. You can also download the [PowerPoint slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx) associated with these videos.
 
 ## Part 1: Introduction - SOC Learnings, Strategies, and Technical Integration (24:30)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qjuW]

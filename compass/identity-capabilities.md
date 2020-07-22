@@ -1,5 +1,5 @@
 ---
-title: "Identity capabilities"
+title: "Identity and access management capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "This article lists capabilities that can help with identity."
 ---
 
-# Identity capabilities
+# Identity and access management capabilities
 
 This article lists capabilities that can help with identity.
 

@@ -272,7 +272,7 @@ fields:
   <tr>
     <td>2</td>
     <td>Poisoning attacks  </td>
-    <td>The goal of the attacker is to contaminate the machine model generated in the training phase, so that predictions on new data will be modified in the testing phase <p>Targeted: In targeted poisoning attacks, the attacker wants to misclassify specific examples <p>Indiscriminate: The aim here is to cause DoS like effect, which makes the system. </td>
+    <td>The goal of the attacker is to contaminate the machine model generated in the training phase, so that predictions on new data will be modified in the testing phase <p>Targeted: In targeted poisoning attacks, the attacker wants to misclassify specific examples <p>Indiscriminate: The aim here is to cause DoS like effect, which makes the system unavailable. </td>
     <td>Integrity</td>
     <td>In a medical dataset where the goal is to predict the dosage of anticoagulant drug Warfarin using demographic information, etc. Researchers introduced malicious samples at 8% poisoning rate, which changed dosage by 75.06% for half of patients[4][Blackbox] <p>In the Tay chatbot, future conversations were tainted because a fraction of the past conversations were used to train the system via feedback[5] [Blackbox] </td>
     <!-- <td>No special privileges required by the attacker. In a closed system like social media platforms, the attacker needs to be a user of the platform.<p> No technological access violation<p>The authorized attacker sends chaff traffic to the endpoint, just like an authorized user would send legitimate traffic to the end point.        </td> -->
@@ -290,13 +290,13 @@ fields:
     <td>Membership Inference attack</td>
     <td>The attacker can determine whether a given data record was part of the model’s training dataset or not</td>
     <td>Confidentiality </td>
-    <td>Researchers were able to ay to predict a patient’s main procedure(e.g: Surgery the patient went through) based on the attributes (e.g: age,gender, hospital)[7][Blackbox]</td>
+    <td>Researchers were able to predict a patient’s main procedure(e.g: Surgery the patient went through) based on the attributes (e.g: age,gender, hospital)[7][Blackbox]</td>
     <!-- <td>Technologically, it feels like the attacker is not misusing the system  -       No special privileges is required by the attacker to perform the attack.  -       There seems to be no technological access violations – Just like a legitimate user sends in a legitimate image, the attacker sends these specially crafted queries to infer membership.    </td> -->
   </tr>
   <tr>
     <td>5</td>
     <td>Model stealing </td>
-    <td>The attackers recreate the underlying model by legitimately querying the model. The functionality of thenew model is same as that of the underlying model. </td>
+    <td>The attackers recreate the underlying model by legitimately querying the model. The functionality of the new model is same as that of the underlying model. </td>
     <td>Confidentiality</td>
     <td>Researchers successfully emulated the underlying algorithm from Amazon, BigML. For instance, in the BigML case, researchers were able to recover the model used to predict if someone should have a good/bad credit risk (German Credit Card dataset) using 1,150 queries and within 10 minutes[8]</td>
     <!-- <td>Technologically, it feels like the attacker is not misusing the system  -       No special privileges is required by the attacker to perform the attack.  -       There seems to be no technological access violations – Just like a legitimate user sends in a legitimate image, the attacker sends these specially crafted queries to confuse the system   </td> -->

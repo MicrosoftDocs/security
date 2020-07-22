@@ -848,7 +848,7 @@ Targeted information disclosure
 ##### Mitigations
 
 Research papers demonstrating the viability of this attack indicate
-Homomorphic Encryption [, ] would be an effective mitigation. This is an
+Homomorphic Encryption would be an effective mitigation. This is an
 area with little current investment at Microsoft and AETHER Security
 Engineering recommends building expertise with research investments in
 this space. This research would need to enumerate Homomorphic Encryption

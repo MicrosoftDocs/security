@@ -1,5 +1,5 @@
 ---
-title: "Microsoft network containment capabilities"
+title: "Network security and containment capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,10 +9,9 @@ localization_priority: Normal
 description: "Lists capabilities that can help with network traffic and containment."
 ---
 
-# Microsoft network containment capabilities
+# Network security and containment capabilities
 
 This article lists capabilities that can help with network traffic and containment.
-
 
 ## Capabilities that work with SaaS, PaaS, and IaaS apps
 <br>
@@ -46,3 +45,5 @@ This article lists capabilities that can help with network traffic and containme
 | Azure Firewall |Cloud-native network security to protect your Azure Virtual Network resources.  |       [Azure Firewall](https://azure.microsoft.com/services/azure-firewall/)  |
 |  |         |         |
 
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

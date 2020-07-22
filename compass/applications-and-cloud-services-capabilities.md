@@ -1,5 +1,5 @@
 ---
-title: "Capabilities"
+title: "Applications and cloud services capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -20,5 +20,6 @@ This article lists the capabilities that can help with applications and cloud se
 
 ## Category 3
 
-
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
 

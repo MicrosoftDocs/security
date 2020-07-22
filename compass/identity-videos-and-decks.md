@@ -1,5 +1,5 @@
 ---
-title: "Microsoft security architecture recommendations module: Identity and access management"
+title: "Microsoft Security Best Practices module: Identity and access management"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,10 +9,12 @@ localization_priority: Normal
 description: "Provides guidance on identity and access management."
 ---
 
-# Microsoft security architecture recommendations module: Identity and access management
+# Microsoft Security Best Practices module: Identity and access management
 Identity and access management is critical to both security assurances as an access control as well as enterprise enablement of applications and services.
 
-The following videos provide guidance on identity and access management. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
+See the [Identity and access management](identity.md) and [Capabilities](identity-capabilities.md) topics for more information.
+
+The following videos provide guidance on identity and access management. You can also download the [PowerPoint slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx) associated with these videos.
 
 ## Part 1: Introduction - Identity Attacks & Key Capabilities (05:44)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q6Dr]
@@ -31,3 +33,6 @@ The following videos provide guidance on identity and access management. To down
 
 ## Part 6: General Guidance (02:38)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qbKi]
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

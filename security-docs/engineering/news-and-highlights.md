@@ -16,17 +16,23 @@ The security documentation site provides you with current news and highlights fr
 
 Below are past news and highlights that you may have missed or would like to revisit.
 
+August, 2020
+
+- [Cloud Adoption Framework: Implement security across the enterprise environment](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/security)
+- [Security hurdles you can sail over — One architect’s viewpoint](https://docs.microsoft.com/microsoft-365/solutions/security-design-principles?view=o365-worldwide)
+- [Azure Security Podcast - Network Isolation and Private Endpoints](https://rss.com/podcasts/azsecpodcast/63940/)
+
+June, 2020
+
+- [Deploy threat protection capabilities across Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection?view=o365-worldwide)
+- [Azure Security Podcast](https://azsecuritypodcast.azurewebsites.net/)
+- [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
+- [New videos providing Microsoft security architecture recommendations](/security/compass/microsoft-security-compass-introduction)
+- [Identifying Security Bug Reports Based Solely on Report Titles and Noisy Data](identifying-security-bug-reports.md)
+
 May, 2020
 
 - [Solving the TLS 1.0 Problem, 2nd Edition](solving-tls1-problem.md)
 - [What is Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro)
 - [Securing the Future of Artificial Intelligence and Machine Learning at Microsoft](securing-artificial-intelligence-machine-learning.md)
 - [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)
-
-June, 2020
-
-- [Deploy threat protection capabilities across Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection?view=o365-worldwide)
-- [The Azure Security Podcast](https://azsecuritypodcast.azurewebsites.net/)
-- [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
-- [New videos providing Microsoft security architecture recommendations](/security/compass/microsoft-security-compass-introduction)
-- [Identifying Security Bug Reports Based Solely on Report Titles and Noisy Data](identifying-security-bug-reports.md)

@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 06/23/2020
+  ms.date: 08/11/2020
 
 
 # Maximum of 8 items
@@ -23,13 +23,13 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Cloud Adoption Framework for Azure - Get started
-      itemType: overview
-      url: https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/security
-    # Card
-    - title: Security hurdles you can sail over - One architect's viewpoint
+    - title: Cloud Adoption Framework for Azure - Define a security strategy
       itemType: concept
-      url: https://docs.microsoft.com/microsoft-365/solutions/security-design-principles?view=o365-worldwide
+      url: https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
+    # Card
+    - title: Networking up (to the cloud) - One architect's viewpoint
+      itemType: concept
+      url: https://docs.microsoft.com/microsoft-365/solutions/networking-design-principles?view=o365-worldwide
     # Card
     - title: Lessons learned from the Microsoft SOC
       itemType: concept
@@ -39,9 +39,9 @@ highlightedContent:
       itemType: overview
       url: https://www.microsoft.com/security/business/zero-trust
     # Card
-    - title: The Azure Security Podcast
+    - title: Lessons learned from the Microsoft SOC - Zen and the art of threat hunting
       itemType: concept
-      url: https://azsecuritypodcast.azurewebsites.net/
+      url: https://www.microsoft.com/security/blog/2020/06/25/zen-and-the-art-of-threat-hunting/
     # Card
     - title: Become an Azure Sentinel Ninja - level 400 training
       itemType: learn

@@ -27,7 +27,7 @@ highlightedContent:
       itemType: concept
       url: https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
     # Card
-    - title: Networking up (to the cloud) — One architect’s viewpoint
+    - title: Networking up (to the cloud) - One architect's viewpoint
       itemType: concept
       url: https://docs.microsoft.com/microsoft-365/solutions/networking-design-principles?view=o365-worldwide
     # Card

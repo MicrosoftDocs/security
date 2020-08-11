@@ -39,7 +39,7 @@ highlightedContent:
       itemType: overview
       url: https://www.microsoft.com/security/business/zero-trust
     # Card
-    - title: Lessons learned from the Microsoft SOC: Zen and the art of threat hunting
+    - title: Lessons learned from the Microsoft SOC - Zen and the art of threat hunting
       itemType: concept
       url: https://www.microsoft.com/security/blog/2020/06/25/zen-and-the-art-of-threat-hunting/
     # Card

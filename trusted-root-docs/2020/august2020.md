@@ -71,7 +71,7 @@ This release will **NotBefore the IP Security EKUs** to the following roots:
 11. Government of Brazil, Instituto Nacional de Tecnologia da Informação (ITI) \\ 		Autoridade Certificadora Raiz Brasileira v2	 \\ 	A9822E6C6933C63C148C2DCAA44A5CF1AAD2C42E
 12. Izenpe S.A. \\ 		Izenpe.com \\ 		30779E9315022E94856A3FF8BCF815B082F9AEFD
 
-This release will **add ** to the following roots:
+This release will **add** to the following roots:
 1. Government of Brazil, Instituto Nacional de Tecnologia da Informação (ITI)	 \\ 	Autoridade Certificadora Raiz Brasileira v10	 \\ 	6C155ED7271A904A0DC040F0C857FF53BF6DB290
 
 

@@ -1,2 +1,19 @@
 - name: Index
   href: index.md
+  -name: Zero Trust Intro
+   href: intro.md
+  -name: Secure identity
+   href: identity.md
+  -name: Secure endpoints
+   href: endpoints.md
+  -name: Secure applications
+   href: applications.md
+  -name: Secure data
+   href: data.md
+  -name: Secure infrastructure
+   href: infrastructure.md
+  -name: Secure networks
+   href: networks.md
+  -name: Visibility, automation, and orchestration
+   href: visibility-automation-orchestration.md
+   

@@ -35,8 +35,7 @@ data they contain---are protected by:
 ```
 -   Validating secure configuration options. 
 
-**Applications Zero Trust deployment objectives** 
-=================================================
+## Applications Zero Trust deployment objectives
 
 **Before** most organizations **start the Zero Trust journey,** their
 approach to application security is characterized by the following:
@@ -71,8 +70,7 @@ III. Assess the security configuration of your cloud environments.
 ** **
 =====
 
-**Products covered in this guide**
-==================================
+## Products covered in this guide
 
 **Microsoft Azure**
 
@@ -96,8 +94,7 @@ Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/c
 **  
 **
 
-**Application Zero Trust deployment guide**
-===========================================
+## Application Zero Trust deployment guide
 
 This guide will walk you through the steps required to secure
 applications and APIs following the principles of a Zero Trust security
@@ -402,8 +399,7 @@ Follow these steps:
 **  
 **
 
-**Conclusion**
-==============
+## Conclusion
 
 Regardless of where the cloud resource or application resides, Zero
 Trust principles help ensure that your cloud environments and data are

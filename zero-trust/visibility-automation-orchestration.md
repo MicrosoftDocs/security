@@ -102,7 +102,7 @@ known threat intelligence against the ingested data. If an IP, hash,
 URL, file, executable, etc. are known to be bad, they can be identified,
 investigated, and remediated.
 
-In the [infrastructure](http://aka.ms/ZTInfrastructure) pillar, time was
+In the [infrastructure](https://aka.ms/ZTInfrastructure) pillar, time was
 spent on addressing vulnerabilities. If a system is known to be
 vulnerable and a threat took advantage of that vulnerability, this is
 something that could be detected, investigated, and remediated.
@@ -138,8 +138,7 @@ provides the ability to gain the right visibility into all aspects of a
 heterogeneous environment---all while minimizing the cognitive overload
 of the operator.
 
-**Visibility, automation, and orchestration Zero Trust deployment objectives**
-==============================================================================
+## Visibility, automation, and orchestration Zero Trust deployment objectives
 
 When implementing an end-to-end Zero Trust framework for visibility,
 automation, and orchestration, we recommend you focus first on these
@@ -156,8 +155,7 @@ objective:**
 I.  Enable additional protection and detection
     > controls.<img src=".//media/image3.png" style="width:0.41875in;height:0.36944in" />
 
-**Products covered in this guide**
-==================================
+## Products covered in this guide
 
 **Microsoft Azure**
 
@@ -176,8 +174,7 @@ Protection](https://www.microsoft.com/security/business/threat-protection/integr
 **  
 **
 
-**Visibility, automation, and orchestration Zero Trust deployment guide**
-=========================================================================
+## Visibility, automation, and orchestration Zero Trust deployment guide
 
 ### This guide will walk you through the steps required to manage visibility, automation, and orchestration following the principles of a Zero Trust security framework.
 

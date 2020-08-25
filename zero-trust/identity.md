@@ -43,8 +43,7 @@ must:**
 > access to resources based on organization policies, on-going risk
 > analysis, and other tools.
 
-**Identity Zero Trust deployment objectives**
-=============================================
+## Identity Zero Trust deployment objectives
 
 > **Before** most organizations **start the Zero Trust journey**, their
 > approach to identity is problematic in that the on-premises identity
@@ -75,8 +74,7 @@ II. <img src=".//media/image5.png" style="width:0.41875in;height:0.36944in" />Us
 
 III. Threat signals from other security solutions are integrated.
 
-**Products covered in this guide**
-==================================
+## Products covered in this guide
 
 **Microsoft Azure**
 
@@ -104,8 +102,7 @@ Online](https://www.microsoft.com/microsoft-365/exchange/email)
 **  
 **
 
-**Identity Zero Trust deployment guide**
-========================================
+## Identity Zero Trust deployment guide
 
 ### This guide will walk you through the steps required to manage identities following the principles of a Zero Trust security framework.
 

@@ -51,8 +51,7 @@ To make this happen, we follow three Zero Trust principles:
     Use analytics to get [visibility](https://aka.ms/ZTCrossPillars),
     drive threat detection, and improve defenses.
 
-**Network Zero Trust deployment objectives**
-============================================
+## Network Zero Trust deployment objectives
 
 > **Before** most organization **start the Zero Trust journey**, they
 > have network security that is characterized by the following:
@@ -94,8 +93,7 @@ III. Encryption. All traffic is encrypted.
 **  
 **
 
-**Products covered in this guide**
-==================================
+## Products covered in this guide
 
 **Microsoft Azure**
 
@@ -130,8 +128,7 @@ Watcher](https://docs.microsoft.com/azure/network-watcher/network-watcher-monito
 **  
 **
 
-**Networking Zero Trust deployment guide**
-==========================================
+## Networking Zero Trust deployment guide
 
 ### This guide will walk you through the steps required to secure your networks following the principles of a Zero Trust security framework.
 

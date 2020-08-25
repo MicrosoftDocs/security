@@ -61,8 +61,7 @@ Trust model:**
 **  
 **
 
-**Endpoint Zero Trust deployment objectives**
-=============================================
+## Endpoint Zero Trust deployment objectives
 
 > **Before** most organizations **start the Zero Trust journey**, their
 > endpoint security is set up as follows:
@@ -119,8 +118,7 @@ II. **Access control is gated on endpoint risk for both corporate
     > then directly influence what resources will be accessible by the
     > user of that device.
 
-**Products covered in this guide**
-==================================
+## Products covered in this guide
 
 **Microsoft Azure**
 
@@ -140,8 +138,7 @@ Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-a
 **  
 **
 
-**Endpoint Zero Trust deployment guide**
-========================================
+## Endpoint Zero Trust deployment guide
 
 This guide will walk you through the steps required to secure your
 devices following the principles of a Zero Trust security framework.

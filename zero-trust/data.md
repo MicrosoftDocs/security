@@ -63,8 +63,7 @@ organizations can:
 -   **Track and monitor sensitive content** using policies as the
     content travels inside and outside your digital estate.
 
-**Data Zero Trust deployment objectives**
-=========================================
+## Data Zero Trust deployment objectives
 
 An information protection strategy needs to encompass your
 organization's entire digital content. As a baseline, you need to define
@@ -153,8 +152,7 @@ Capabilities**
 **  
 **
 
-**Data Zero Trust deployment guide**
-====================================
+## Data Zero Trust deployment guide
 
 This guide will walk you step-by-step through a Zero Trust approach to
 data protection maturity. Please keep in mind that these items will vary
@@ -321,8 +319,7 @@ Follow these steps:
     or, in the case of an email, block from being transmitted) when
     content matches a set of conditions.
 
-**Traditional data security objectives**
-========================================
+## Traditional data security objectives
 
 Sensitivity labels are the foundation of the Zero Trust model for data.
 Defining sensitivity levels is a process of [identifying stakeholders to

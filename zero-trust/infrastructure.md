@@ -51,8 +51,7 @@ infrastructure.
 
 <img src=".//media/image2.png" style="width:3.91177in;height:2.82892in" alt="A picture containing sign, shirt, graffiti, clock Description automatically generated" />
 
-**Infrastructure Zero Trust deployment objectives** 
-===================================================
+## Infrastructure Zero Trust deployment objectives
 
 > **  
 > Before** most organizations **start the Zero Trust journey, their**
@@ -98,7 +97,7 @@ Microsoft Azure**
 Blueprints](https://azure.microsoft.com/services/blueprints/)
 
 [Azure
-Policy](http://docs.microsoft.com/azure/governance/policy/overview)
+Policy](https://docs.microsoft.com/azure/governance/policy/overview)
 
 [Azure Arc](https://azure.microsoft.com/services/azure-arc)
 
@@ -111,8 +110,7 @@ Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
 [Azure Resource Manager (ARM)
 templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview)
 
-**Infrastructure Zero Trust deployment guide**
-==============================================
+## Infrastructure Zero Trust deployment guide
 
 This guide will walk you through the steps required to secure your
 infrastructure following the principles of a Zero Trust security
@@ -139,7 +137,7 @@ benefit of leveraging Azure is the ability to manage all your VMs from
 one platform using [Azure
 Arc](https://azure.microsoft.com/services/azure-arc/) (preview).
 Using Azure Arc, you can extend your Security Baselines from [Azure
-Policy](http://docs.microsoft.com/azure/governance/policy/overview),
+Policy](https://docs.microsoft.com/azure/governance/policy/overview),
 your [Azure Security
 Center](https://azure.microsoft.com/services/security-center)
 (ASC) policies, and Secure Score evaluations, as well as logging and

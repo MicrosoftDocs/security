@@ -458,8 +458,7 @@ Follow these steps:
 1.  [Enable Conditional Access
     integration](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad).
 
-2.  [Extend Conditional Access to on-premises
-    apps](https://docs.microsoft.com/bs-latn-ba/azure/active-directory/manage-apps/application-proxy-integrate-with-microsoft-cloud-application-security).
+2.  [Extend Conditional Access to on-premises apps](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-microsoft-cloud-application-security).
 
 **Enable restricted session for use in access decisions**
 
@@ -473,9 +472,7 @@ untrusted device.
 
 Take this step:
 
-1.  Enable limited access to [SharePoint
-    Online](https://aka.ms/spolimitedaccessdocs) and [Exchange
-    Online](https://aka.ms/owalimitedaccess)
+1.  Enable limited access to [SharePoint Online](https://aka.ms/spolimitedaccessdocs) and [Exchange Online](https://aka.ms/owalimitedaccess)
 
 ```{=html}
 <!-- -->

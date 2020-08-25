@@ -131,9 +131,7 @@ Products covered in this guide**
 **  
 Microsoft Azure**
 
-[[Azure Information
-Protection]{.ul}](https://azure.microsoft.com/en-gb/services/information-protection/) with
-Unified Labeling Client and Scanner 
+[[Azure Information Protection]{.ul}](https://azure.microsoft.com/services/information-protection/) with Unified Labeling Client and Scanner 
 
 **Microsoft 365**
 

@@ -1,6 +1,8 @@
-- name: Index
-  href: index.md
+- name: Zero Trust Security
+  expanded: true
   items:
+    -name: Index
+     href: index.md
     -name: Zero Trust Intro
      href: intro.md
     -name: Secure identity

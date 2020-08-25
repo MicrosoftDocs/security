@@ -1,3 +1,13 @@
+---
+title: Securing networks with Zero Trust
+description: Due to the cloud, mobile devices, and other endpoints that expand boundaries and change paradigms, there isn't necessarily a contained/defined network to secure. Instead, there is a vast portfolio of devices and networks, all linked by the cloud.
+ms.date: 09/01/2020
+ms.service: security
+author: garycentric
+ms.author: v-gmoor
+ms.topic: conceptual
+---
+
 <img src=".//media/image1.png" style="width:0.33681in;height:0.33681in" />Securing networks with Zero Trust
 ===========================================================================================================
 

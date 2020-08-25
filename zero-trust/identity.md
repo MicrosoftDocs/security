@@ -1,3 +1,13 @@
+---
+title: Securing identity with Zero Trust
+description: Identities, representing people, services, or IoT devices, are the common dominator across today’s many networks, endpoints, and applications. In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to data. 
+ms.date: 09/01/2020
+ms.service: security
+author: garycentric
+ms.author: v-gmoor
+ms.topic: conceptual
+---
+
 <img src=".//media/image1.png" style="width:0.37778in;height:0.47708in" />Securing identity with Zero Trust
 ===========================================================================================================
 

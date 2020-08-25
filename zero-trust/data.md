@@ -99,7 +99,7 @@ Zero Trust approach to securing data. We won't further discuss these
 activities in this guide. For more information, see:
 
 -   Microsoft Documents: [Getting started with sensitivity
-    labels](https://docs.microsoft.com/en-us/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-worldwide)
+    labels](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-worldwide)
 
 -   MIP and Compliance: [Deployment Acceleration
     Guide](https://aka.ms/MIPC/DAG)
@@ -139,7 +139,7 @@ Unified Labeling Client and Scanner 
 **Microsoft 365**
 
 [Microsoft Cloud App
-Security](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/cloud-app-security)[  
+Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)[  
   
 ]{.ul}**  
 Capabilities**
@@ -184,7 +184,7 @@ restricted so that it:
 ### Take this step:
 
 1.  [Configure sensitivity labels for
-    > encryption](https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels#understand-how-the-encryption-works).
+    > encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#understand-how-the-encryption-works).
 
 ```{=html}
 <!-- -->
@@ -199,18 +199,18 @@ Unified Labeling client**
 
 A strategic client selection for Windows leverages [built-in information
 protection features in Microsoft
-Office](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#support-for-sensitivity-label-capabilities-in-apps).
+Office](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#support-for-sensitivity-label-capabilities-in-apps).
 If this is not possible, an alternative solution would be to use the
 Azure Information Protection unified labeling client.
 
 Follow these steps:
 
 1.  [Learn how to configure
-    auto-labeling](https://docs.microsoft.com/en-us/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide#how-to-configure-auto-labeling-for-office-apps)
+    auto-labeling](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide#how-to-configure-auto-labeling-for-office-apps)
     for Office apps.
 
 2.  [Apply sensitivity labels to content
-    automatically](https://docs.microsoft.com/en-us/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide).
+    automatically](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide).
 
 **Automatically classify, label, and protect business critical content
 with sensitive data on-premises**
@@ -223,7 +223,7 @@ Take this step:
 
 1.  Configure the scanner to [use **enforce** mode and automatically
     classify, label, and protect
-    files](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner)
+    files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)
     with sensitive data.
 
 <img src=".//media/image9.png" style="width:0.59815in;height:0.52778in" />
@@ -238,12 +238,12 @@ steps, the next step is to use machine learning for smarter
 classification.
 
 Microsoft 365 provides three ways to classify content, including
-[manually](https://docs.microsoft.com/en-us/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#manually)
+[manually](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#manually)
 and with [automated pattern
-matching](https://docs.microsoft.com/en-us/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#automated-pattern-matching).
+matching](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#automated-pattern-matching).
 
 [Trainable
-classifiers](https://docs.microsoft.com/en-us/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#trainable-classifiers)
+classifiers](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#trainable-classifiers)
 (preview) are a third method well-suited to content that isn't easily
 identified by manual or automated pattern matching methods. A classifier
 learns how to identify a type of content by looking at hundreds of
@@ -261,10 +261,10 @@ classifies the content.
 Follow these steps:
 
 1.  Learn [where you can use trainable
-    classifiers](https://docs.microsoft.com/en-us/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#where-you-can-use-trainable-classifiers).
+    classifiers](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#where-you-can-use-trainable-classifiers).
 
 2.  [Create a trainable
-    classifier](https://docs.microsoft.com/en-us/microsoft-365/compliance/classifier-creating-a-trainable-classifier?view=o365-worldwide)
+    classifier](https://docs.microsoft.com/microsoft-365/compliance/classifier-creating-a-trainable-classifier?view=o365-worldwide)
     (preview).
 
 ```{=html}
@@ -288,11 +288,11 @@ capabilities to manage sensitive files, including:
 > Follow these steps:
 
 1.  [Configure auto-labeling
-    policies](https://docs.microsoft.com/en-us/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
+    policies](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
     for SharePoint, OneDrive, and Exchange
 
 2.  [Integrate Microsoft Cloud App
-    Security](https://docs.microsoft.com/en-us/cloud-app-security/azip-integration)
+    Security](https://docs.microsoft.com/cloud-app-security/azip-integration)
     and Microsoft Information Protection and use it to also protect data
     in third-party environments such as Box or G-Suite.
 
@@ -310,11 +310,11 @@ information across Office 365.
 Follow these steps:
 
 1.  [Learn how to protect
-    data](https://docs.microsoft.com/en-us/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)
+    data](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)
     with DLP policies.
 
 2.  [Create, test, and
-    tune](https://docs.microsoft.com/en-us/microsoft-365/compliance/create-test-tune-dlp-policy?view=o365-worldwide#where-to-start-with-data-loss-prevention)
+    tune](https://docs.microsoft.com/microsoft-365/compliance/create-test-tune-dlp-policy?view=o365-worldwide#where-to-start-with-data-loss-prevention)
     a DLP policy.
 
 3.  Use DLP to enforce actions (e.g., protect content, restrict access,
@@ -370,7 +370,7 @@ Follow these steps:
     Deployment Acceleration Guide](https://aka.ms/MIPC/DAG).
 
 -   [Get started with sensitivity
-    labels](https://docs.microsoft.com/en-us/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-worldwide).
+    labels](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-worldwide).
 
 **Automatically discover business-critical content with sensitive data
 on-premises**
@@ -402,26 +402,26 @@ Compliance Center or equivalent labeling center, there are client apps
 that users can leverage to classify and protect data as it is created or
 edited, such as the native Microsoft Office built-in labeling client or
 the [Azure Information Protection Unified
-Labeling](https://docs.microsoft.com/en-us/azure/information-protection/rms-client/aip-clientv2)
+Labeling](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)
 client.
 
 Follow these steps:
 
 1.  [Compare labeling client
-    features](https://docs.microsoft.com/en-us/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)
+    features](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)
     for Windows computers and [review support for sensitivity
-    label](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#support-for-sensitivity-label-capabilities-in-apps)
+    label](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#support-for-sensitivity-label-capabilities-in-apps)
     capabilities in Office apps to determine what sensitivity features
     and platform requirements are important to your scenarios.
 
 2.  [Start using sensitivity
-    labels](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide)
+    labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide)
     in Office apps, including [Microsoft Team sites, Microsoft 365
     groups (formerly Office 365 groups), and SharePoint
-    sites](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-worldwide).
+    sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-worldwide).
     Sensitivity labels can also be used to [classify and label sensitive
     data in Power BI
-    service](https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-security-apply-data-sensitivity-labels)
+    service](https://docs.microsoft.com/power-bi/collaborate-share/service-security-apply-data-sensitivity-labels)
     and can be applied to datasets, reports, dashboards, and data flows.
 
 **Default label applied to new content created by users**
@@ -434,7 +434,7 @@ other action is taken by users or system settings.
 Take this step:
 
 1.  [Learn what label policies can
-    do](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide#what-label-policies-can-do)
+    do](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide#what-label-policies-can-do)
     and what to consider when setting default labels.
 
 **Visual markings to indicate sensitive documents across apps and
@@ -450,14 +450,14 @@ headers or footers of emails or documents that have the label applied.
 Take this step:
 
 1.  [Learn when content markings are
-    applied](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption).
+    applied](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption).
 
 **Audit data to understand user labeling, classification, and protection
 behaviors**
 
 Once sensitivity labels have been published to your organization, you
 can use [data
-classification](https://docs.microsoft.com/en-us/microsoft-365/compliance/data-classification-overview?view=o365-worldwide)
+classification](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview?view=o365-worldwide)
 to identify sensitive content, where it's located, and exposure from
 user activities.
 
@@ -477,18 +477,18 @@ secure.
 Follow these steps:
 
 1.  [Get started with content
-    explorer](https://docs.microsoft.com/en-us/microsoft-365/compliance/data-classification-content-explorer?view=o365-worldwide)
+    explorer](https://docs.microsoft.com/microsoft-365/compliance/data-classification-content-explorer?view=o365-worldwide)
     to natively view the items summarized on the data classification
     overview page.
 
 2.  [Get started with activity
-    explorer](https://docs.microsoft.com/en-us/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
+    explorer](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
     to monitor the history of activities related to labeled content.
 
 **Conclusion**
 
 [Microsoft Information
-Protection](https://www.microsoft.com/en-us/security/business/information-protection)
+Protection](https://www.microsoft.com/security/business/information-protection)
 (MIP) is a comprehensive, flexible, integrated, and extensible approach
 to protecting sensitive data.
 

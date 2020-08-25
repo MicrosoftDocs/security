@@ -95,21 +95,21 @@ objectives:**
 Microsoft Azure**
 
 [Azure
-Blueprints](https://azure.microsoft.com/en-us/services/blueprints/)
+Blueprints](https://azure.microsoft.com/services/blueprints/)
 
 [Azure
-Policy](http://docs.microsoft.com/en-us/azure/governance/policy/overview)
+Policy](http://docs.microsoft.com/azure/governance/policy/overview)
 
-[Azure Arc](https://azure.microsoft.com/en-us/services/azure-arc)
+[Azure Arc](https://azure.microsoft.com/services/azure-arc)
 
 [Azure Security Center
-(ASC)](https://azure.microsoft.com/en-us/services/security-center)
+(ASC)](https://azure.microsoft.com/services/security-center)
 
 [Azure
-Sentinel](https://azure.microsoft.com/en-us/services/azure-sentinel/)
+Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
 
 [Azure Resource Manager (ARM)
-templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview)
+templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview)
 
 **Infrastructure Zero Trust deployment guide**
 ==============================================
@@ -137,37 +137,37 @@ Just as we have managed our on-prem data center environment, we must
 also ensure that we are effectively managing our cloud resources. The
 benefit of leveraging Azure is the ability to manage all your VMs from
 one platform using [Azure
-Arc](https://azure.microsoft.com/en-us/services/azure-arc/) (preview).
+Arc](https://azure.microsoft.com/services/azure-arc/) (preview).
 Using Azure Arc, you can extend your Security Baselines from [Azure
-Policy](http://docs.microsoft.com/en-us/azure/governance/policy/overview),
+Policy](http://docs.microsoft.com/azure/governance/policy/overview),
 your [Azure Security
-Center](https://azure.microsoft.com/en-us/services/security-center)
+Center](https://azure.microsoft.com/services/security-center)
 (ASC) policies, and Secure Score evaluations, as well as logging and
 monitoring all your resources in one place. Here are some actions for
 getting started:
 
-#### **Implement [Azure Arc (preview)](https://azure.microsoft.com/en-us/services/azure-arc/)**
+#### **Implement [Azure Arc (preview)](https://azure.microsoft.com/services/azure-arc/)**
 
-#### [Azure Arc](https://azure.microsoft.com/en-us/services/azure-arc/) allows organizations to extend the familiar security controls of Azure to on-premises and the edge of the organization's infrastructure. Administrators have several options for connecting on-premises resources to Azure Arc. These include Azure Portal, PowerShell, and Windows Installation with Service Principal scripting. 
+#### [Azure Arc](https://azure.microsoft.com/services/azure-arc/) allows organizations to extend the familiar security controls of Azure to on-premises and the edge of the organization's infrastructure. Administrators have several options for connecting on-premises resources to Azure Arc. These include Azure Portal, PowerShell, and Windows Installation with Service Principal scripting. 
 
-#### [Learn more about these techniques](https://docs.microsoft.com/en-us/azure/azure-arc/).
+#### [Learn more about these techniques](https://docs.microsoft.com/azure/azure-arc/).
 
 #### **Apply security baselines through Azure Policy, including application of in-guest policies**
 
 Enabling [ASC
-Standard](https://docs.microsoft.com/en-us/azure/security-center/security-center-get-started)
+Standard](https://docs.microsoft.com/azure/security-center/security-center-get-started)
 will allow you to incorporate a set of baseline controls through Azure
 Policy by incorporating the [Azure Policy built-in policy definitions
 for Azure Security
-Center](https://docs.microsoft.com/en-us/azure/security-center/policy-samples).
+Center](https://docs.microsoft.com/azure/security-center/policy-samples).
 The set of baseline policies will be reflected in the [ASC secure
-score](https://docs.microsoft.com/en-us/azure/security-center/security-center-secure-score),
+score](https://docs.microsoft.com/azure/security-center/security-center-secure-score),
 where you can measure your compliance to those policies.
 
 You can extend your coverage of policies beyond the ASC set and create
 custom policies if a built-in is not available. You and can also
 incorporate [Guest Configuration
-policies](https://docs.microsoft.com/en-us/azure/governance/policy/how-to/guest-configuration-create)
+policies](https://docs.microsoft.com/azure/governance/policy/how-to/guest-configuration-create)
 which will measure compliance inside your guest VMs within your
 subscriptions.
 
@@ -179,17 +179,17 @@ vulnerability management strategy, you will be able to measure
 compliance centrally to ensure malware protection is enabled and
 configured through the [Endpoint protection assessment and
 recommendations in Azure Security
-Center](https://docs.microsoft.com/en-us/azure/security-center/security-center-endpoint-protection).  
+Center](https://docs.microsoft.com/azure/security-center/security-center-endpoint-protection).  
 Additionally, as part of ASC Standard, you can use the policy [Enable
 the built-in vulnerability assessment solution on virtual machines
 (powered by
-Qualys)](https://docs.microsoft.com/en-us/azure/security-center/built-in-vulnerability-assessment)
+Qualys)](https://docs.microsoft.com/azure/security-center/built-in-vulnerability-assessment)
 to scan your VMs for vulnerabilities, and have those reflected directly
 in ASC. If you already have a Vulnerability scanning solution deployed
 in your enterprise, you can use the alternate policy Vulnerability
 assessment solution, which should be installed on your virtual machines
 for [Deploying a partner vulnerability scanning
-solution](https://docs.microsoft.com/en-us/azure/security-center/partner-vulnerability-assessment).
+solution](https://docs.microsoft.com/azure/security-center/partner-vulnerability-assessment).
 
 > [Learn about implementing an end-to-end Zero Trust strategy for
 > endpoints](https://aka.ms/ZTEndpoints)
@@ -206,23 +206,23 @@ solution](https://docs.microsoft.com/en-us/azure/security-center/partner-vulnera
 ### **Workloads are monitored and alerted to abnormal behavior.**  When you create new infrastructure, you need to ensure that you also establish rules for monitoring and raising alerts. This is key for identifying when a resource is displaying unexpected behavior. 
 
 **Enabling [Azure Security Center with Standard
-Tier](https://docs.microsoft.com/en-us/azure/security-center/security-center-get-started)
+Tier](https://docs.microsoft.com/azure/security-center/security-center-get-started)
 (ASC)**, including the relevant bundles to cover your various resources
 (e.g., Container Registry, Kubernetes, IoT, Virtual Machines, etc.) is
 highly recommended.
 
 For monitoring identities, we recommend **enabling [Azure Advanced
 Threat
-Protection](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp)
+Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 (A-ATP) and [Advanced Threat
-Analytics](https://docs.microsoft.com/en-us/advanced-threat-analytics/what-is-ata)
+Analytics](https://docs.microsoft.com/advanced-threat-analytics/what-is-ata)
 (ATA)** in order to enable signal collection to identify, detect, and
 investigate advanced threats, compromised identities, and malicious
 insider actions directed at your organization.
 
 Integrating these signals from ASC, A-ATP, ATA, and other monitoring and
 auditing systems with [Azure
-Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/overview), a
+Sentinel](https://docs.microsoft.com/azure/sentinel/overview), a
 cloud-native, security information event management (SIEM) and security
 orchestration automated response (SOAR) solution, will allow your
 Security Operations Center (SOC) to work from a single pane of glass to
@@ -235,7 +235,7 @@ I.  **Every workload is assigned an app identity---and configured and
     deployed consistently.**
 
 Microsoft recommends customers use a
-[policy](https://docs.microsoft.com/en-us/azure/governance/policy/tutorials/create-and-manage)
+[policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage)
 that is assigned and enforced when creating resources/workloads.
 Policies can require tags be to applied to a resource upon creation,
 mandate resource group assignment, as well as restrict/direct technical
@@ -252,7 +252,7 @@ administrative functions are required, users should receive temporary
 administrative access.
 
 Organizations should establish a [Protect the
-Administrator](https://www.microsoft.com/en-us/itshowcase/protecting-high-risk-environments-with-secure-admin-workstations)
+Administrator](https://www.microsoft.com/itshowcase/protecting-high-risk-environments-with-secure-admin-workstations)
 program. Characteristics of these programs include:
 
 -   Targeted reduction in the number of users with administrative
@@ -285,7 +285,7 @@ need to be able to block unauthorized deployments and trigger alerts to
 make leaders and managers aware of the issues.
 
 Microsoft Azure offers [Azure
-Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview)
+Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview)
 to govern how resources are deployed, ensuring that only approved
 resources (e.g., ARM templates) can be deployed. Blueprints can ensure
 that resources which do not meet the Blueprint's policies or other rules
@@ -302,12 +302,12 @@ resource owners can set up many metric and log collection and analysis
 capabilities. This visibility can be used not only to feed security
 operations but can also to support computing efficiency and
 organizational objectives. These include capabilities like [VM Scale
-Sets](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview),
+Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview),
 which allow for the secure and efficient scaling out and scaling in of
 resources based on metrics.
 
 On the access control side, [Role-Based Access Control
-(RBAC)](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview)
+(RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview)
 can be employed to assign permissions to resources. This allows
 permissions to be assigned and revoked uniformly at the individual and
 group levels by using a variety of built-in or custom roles.
@@ -316,7 +316,7 @@ I.  **User and resource access segmented for each workload.**
 
 Microsoft Azure offers many ways to segment workloads to manage user and
 resource access. [Network
-segmentation](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/network-level-segmentation)
+segmentation](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/network-level-segmentation)
 is the overall approach, and, within Azure, resources can be isolated at
 the subscription level with Virtual networks (VNets), VNet peering
 rules, Network Security Groups (NSGs), Application Security Groups

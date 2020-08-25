@@ -77,21 +77,21 @@ III. Assess the security configuration of your cloud environments.
 **Microsoft Azure**
 
 [Microsoft Azure Active
-Directory](https://azure.microsoft.com/en-us/services/active-directory/)
+Directory](https://azure.microsoft.com/services/active-directory/)
 
 **Microsoft 365**
 
 [Microsoft Cloud App
-Security](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/cloud-app-security)
+Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
 
 -   [Cloud
-    Discovery](https://docs.microsoft.com/en-us/cloud-app-security/set-up-cloud-discovery)
+    Discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery)
 
 [Microsoft Endpoint Manager](https://www.microsoft.com/endpointmanager)
 (includes Microsoft Intune and Configuration Manager)
 
 -   [Mobile Application
-    Management](https://docs.microsoft.com/en-us/mem/intune/apps/mam-faq)
+    Management](https://docs.microsoft.com/mem/intune/apps/mam-faq)
 
 **  
 **
@@ -134,12 +134,12 @@ threats and anomalies occur in your environment.
 Follow these steps:
 
 1.  Adopt [Microsoft Cloud App
-    Security](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/cloud-app-security),
+    Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security),
     which works with services to optimize visibility, governance
     actions, and usage.
 
 2.  [Review what apps can be
-    connected](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
+    connected](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
     with the Cloud App Security API integration, and connect the apps
     you need. Use the deeper visibility gained to investigate
     activities, files, and accounts for the apps in your cloud
@@ -167,13 +167,13 @@ and limiting access to regulated data.
 Follow these steps:
 
 1.  Set up [Cloud
-    Discovery](https://docs.microsoft.com/en-us/cloud-app-security/set-up-cloud-discovery),
+    Discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery),
     which analyzes your traffic logs against Microsoft Cloud App
     Security\'s catalog of over 16,000 cloud apps. The apps are ranked
     and scored, based on more than 90 risk factors.
 
 2.  [Discover and identify shadow
-    IT](https://docs.microsoft.com/en-us/cloud-app-security/tutorial-shadow-it#phase-1-discover-and-identify-shadow-it)
+    IT](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-1-discover-and-identify-shadow-it)
     to find out what apps are being used, following one of three
     options:
 
@@ -181,12 +181,12 @@ Follow these steps:
 <!-- -->
 ```
 a.  Integrate with [Microsoft Defender
-    ATP](https://docs.microsoft.com/en-us/cloud-app-security/wdatp-integration)
+    ATP](https://docs.microsoft.com/cloud-app-security/wdatp-integration)
     to immediately start collecting data on cloud traffic across your
     Windows 10 devices, on and off your network.
 
 b.  Deploy the [Cloud App Security log
-    collector](https://docs.microsoft.com/en-us/cloud-app-security/discovery-docker) on
+    collector](https://docs.microsoft.com/cloud-app-security/discovery-docker) on
     your firewalls and other proxies to collect data from your endpoints
     and send it to Cloud App Security for analysis.
 
@@ -196,7 +196,7 @@ c.  Integrate Cloud App Security with your proxy.
 <!-- -->
 ```
 1.  Identify the [risk
-    level](https://docs.microsoft.com/en-us/cloud-app-security/risk-score)
+    level](https://docs.microsoft.com/cloud-app-security/risk-score)
     of specific apps:
 
     a.  In the Cloud App Security portal, under Discover, click
@@ -208,7 +208,7 @@ c.  Integrate Cloud App Security with your proxy.
         > see details about the app\'s security risk factors.
 
 2.  [Evaluate compliance and analyze
-    usage](https://docs.microsoft.com/en-us/cloud-app-security/tutorial-shadow-it#phase-2-evaluate-and-analyze):
+    usage](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-2-evaluate-and-analyze):
 
     a.  In the Cloud App Security portal, under Discover, click
         > **Discovered apps**. Filter the list of apps discovered in
@@ -229,14 +229,14 @@ c.  Integrate Cloud App Security with your proxy.
         > clicking **Total active users**.
 
     d.  [Dive
-        > deeper](https://docs.microsoft.com/en-us/cloud-app-security/discovered-apps#deep-dive-into-discovered-apps)
+        > deeper](https://docs.microsoft.com/cloud-app-security/discovered-apps#deep-dive-into-discovered-apps)
         > into discovered apps. View subdomains and resources to learn
         > about specific activities, data access, and [resource
-        > usage](https://docs.microsoft.com/en-us/cloud-app-security/discovered-apps#discover-resources-and-custom-apps)
+        > usage](https://docs.microsoft.com/cloud-app-security/discovered-apps#discover-resources-and-custom-apps)
         > in your cloud services.
 
 3.  [Manage your
-    apps](https://docs.microsoft.com/en-us/cloud-app-security/tutorial-shadow-it#phase-3-manage-your-apps):
+    apps](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-3-manage-your-apps):
 
 ```{=html}
 <!-- -->
@@ -250,7 +250,7 @@ b.  App tags can be managed under Cloud Discovery settings** &gt; **App
     Discovery pages and creating policies using them.
 
 c.  Manage discovered apps using [Azure Active Directory (Azure AD)
-    Gallery](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/add-gallery-app).
+    Gallery](https://docs.microsoft.com/azure/active-directory/manage-apps/add-gallery-app).
     For apps that already appear in the Azure AD Gallery, apply single
     sign-on and manage the app with Azure AD. To do so, on the row where
     the relevant app appears, choose the three dots at the end of the
@@ -275,7 +275,7 @@ and alerts.
 Follow these steps:
 
 1.  [Use out-of-the box
-    policies](https://docs.microsoft.com/en-us/cloud-app-security/control-cloud-apps-with-policies)
+    policies](https://docs.microsoft.com/cloud-app-security/control-cloud-apps-with-policies)
     that have already been tested for many activities and files. Apply
     governance actions such as revoking permissions and suspending
     users, quarantining files, and applying sensitivity labels.
@@ -286,7 +286,7 @@ Follow these steps:
 3.  Configure policies to monitor shadow IT apps and provide control.
 
     a.  Create an [app discovery
-        > policy](https://docs.microsoft.com/en-us/cloud-app-security/cloud-discovery-policies)
+        > policy](https://docs.microsoft.com/cloud-app-security/cloud-discovery-policies)
         > that lets you know when there is a spike in downloads or
         > traffic from an app you\'re concerned about.
         > Enable **Anomalous behavior in discovered users' policy, Cloud
@@ -297,17 +297,17 @@ Follow these steps:
         > usage and behavior patterns.
 
 4.  [Control what's
-    sanctioned](https://docs.microsoft.com/en-us/cloud-app-security/tutorial-shadow-it#phase-5-control-sanctioned-apps)
+    sanctioned](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-5-control-sanctioned-apps)
     and block undesirable apps using this option:
 
     a.  [Connect apps via
-        > API](https://docs.microsoft.com/en-us/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) for
+        > API](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) for
         > continuous monitoring.
 
 5.  Protect apps using [Conditional Access App
-    Control](https://docs.microsoft.com/en-us/cloud-app-security/proxy-intro-aad)
+    Control](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad)
     and [Microsoft Cloud App
-    Security](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/cloud-app-security).
+    Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security).
 
 <img src=".//media/image7.png" style="width:0.58974in;height:0.52036in" />
 
@@ -325,7 +325,7 @@ and your organization at risk.
 Take this step:
 
 1.  [Enable real-time monitoring and control over access to any web
-    app](https://docs.microsoft.com/en-us/cloud-app-security/proxy-intro-aad),
+    app](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad),
     based on user, location, device, and app. For example, you can
     create policies to protect downloads of sensitive content with
     sensitivity labels when using any unmanaged device. Alternatively,
@@ -348,7 +348,7 @@ App Security, such as user and entity behavioral analytics (UEBA) and
 anomaly detection, malware protection, OAuth app protection, incident
 investigation, and remediation. Cloud App security targets numerous
 [security
-anomalies](https://docs.microsoft.com/en-us/cloud-app-security/investigate-anomaly-alerts)
+anomalies](https://docs.microsoft.com/cloud-app-security/investigate-anomaly-alerts)
 out of the box, such as impossible travel, suspicious inbox rules, and
 ransomware.
 
@@ -360,12 +360,12 @@ Follow these steps:
 
 -   [Take advantage of Cloud App Security's UEBA and machine
     > learning (ML) capabilities that are automatically enabled
-    > out-of-the-box](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy)
+    > out-of-the-box](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy)
     > to immediately detect threats and run advanced threat detection
     > across your cloud environment.
 
 -   [Tune and
-    > scope](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy#tune-anomaly-detection-policies)
+    > scope](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#tune-anomaly-detection-policies)
     > anomaly detection policies.
 
     I.  **Assess the security posture of your cloud environments.**
@@ -385,10 +385,10 @@ Follow these steps:
 
 2.  Limit the risk of a security breach by keeping cloud platforms, such
     as [Microsoft
-    Azure](https://docs.microsoft.com/en-us/cloud-app-security/protect-azure),
-    [AWS](https://docs.microsoft.com/en-us/cloud-app-security/protect-aws)
+    Azure](https://docs.microsoft.com/cloud-app-security/protect-azure),
+    [AWS](https://docs.microsoft.com/cloud-app-security/protect-aws)
     and
-    [GCP](https://docs.microsoft.com/en-us/cloud-app-security/protect-gcp),
+    [GCP](https://docs.microsoft.com/cloud-app-security/protect-gcp),
     compliant with your organizational configuration policy and
     regulatory compliance, following CIS benchmark, or the vendor's best
     practices for the security configuration.

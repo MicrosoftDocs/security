@@ -162,16 +162,16 @@ I.  Enable additional protection and detection
 **Microsoft Azure**
 
 [Azure Advanced Threat
-Protection](https://azure.microsoft.com/en-us/features/azure-advanced-threat-protection/)
+Protection](https://azure.microsoft.com/features/azure-advanced-threat-protection/)
 
 [Azure
-Sentinel](https://azure.microsoft.com/en-us/services/azure-sentinel/)[  
+Sentinel](https://azure.microsoft.com/services/azure-sentinel/)[  
 ]{.ul}
 
 **Microsoft 365**
 
 [Microsoft Threat
-Protection](https://www.microsoft.com/en-us/security/business/threat-protection/integrated-threat-protection)
+Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection)
 
 **  
 **
@@ -188,7 +188,7 @@ Protection](https://www.microsoft.com/en-us/security/business/threat-protection/
 I.  **Establish visibility.**
 
 The first step is to establish visibility by enabling [Microsoft Threat
-Protection](https://www.microsoft.com/en-us/security/business/threat-protection/integrated-threat-protection)
+Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection)
 (MTP).
 
 Follow these steps:
@@ -220,7 +220,7 @@ and remediation, which essentially provides an extra Tier 1 SOC
 analysis.
 
 [Automated Investigation and
-Remediation](https://docs.microsoft.com/en-us/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide)
+Remediation](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide)
 (AIR) can be enabled gradually, so that you can develop a comfort level
 with the actions that are taken.
 
@@ -239,7 +239,7 @@ Azure Sentinel**
 In order to gain visibility into the incidents that result from
 deploying a Zero Trust model, it is important to connect MTP, other
 Microsoft data connectors, and relevant third party products to [Azure
-Sentinel](https://azure.microsoft.com/en-us/services/azure-sentinel/) in
+Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in
 order to provide a centralized platform for incident investigation and
 response.  
   
@@ -260,7 +260,7 @@ Sentinel to improve your visibility and ability to orchestrate
 responses.
 
 [Attack surface
-reduction](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)
+reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)
 controls represent one such opportunity. These protective controls not
 only block certain activities that are most associated with malware, but
 also give into attempts to use specific approaches, which can help to

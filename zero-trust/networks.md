@@ -99,33 +99,33 @@ III. Encryption. All traffic is encrypted.
 
 **Microsoft Azure**
 
-[Azure Networking](https://docs.microsoft.com/en-us/azure/networking/)
+[Azure Networking](https://docs.microsoft.com/azure/networking/)
 
 [Virtual Networks and
-Subnets](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview)
+Subnets](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)
 
 [Network Security
-Groups](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview)
+Groups](https://docs.microsoft.com/azure/virtual-network/security-overview)
 and [Application Security
-Groups](https://docs.microsoft.com/en-us/azure/virtual-network/application-security-groups)
+Groups](https://docs.microsoft.com/azure/virtual-network/application-security-groups)
 
 [Azure
-Firewall](https://docs.microsoft.com/en-us/azure/firewall/overview)
+Firewall](https://docs.microsoft.com/azure/firewall/overview)
 
 [Azure DDoS
-Protection](https://docs.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview)
+Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)
 
 [Azure Web Application
-Firewall](https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview)
+Firewall](https://docs.microsoft.com/azure/web-application-firewall/ag/ag-overview)
 
 [Azure VPN
-Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)
 
 [Azure
-ExpressRoute](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-introduction)
+ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction)
 
 [Azure Network
-Watcher](https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview)
+Watcher](https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview)
 
 **  
 **
@@ -163,15 +163,15 @@ segmentation using software-defined micro-perimeters.
 Follow these steps:
 
 1.  [Create dedicated virtual
-    networks](https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-portal)
+    networks](https://docs.microsoft.com/azure/virtual-network/quick-create-portal)
     for different applications and/or application components.
 
 2.  Create a central VNet to set up the security posture for inter-app
     connectivity and connect the app VNets in [a hub-and-spoke
-    architecture](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke).
+    architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke).
 
 3.  [Deploy Azure
-    Firewall](https://docs.microsoft.com/en-us/azure/firewall/deploy-ps)
+    Firewall](https://docs.microsoft.com/azure/firewall/deploy-ps)
     in the hub VNet to inspect and govern traffic between the VNets.
 
 ### **II. Threat protection: Cloud native filtering and protection for known threats.**
@@ -201,7 +201,7 @@ Take these steps to protect against known threats:
 
 1.  **For endpoints with HTTP/S traffic**, protect using [Azure Web
     > Application Firewall
-    > (WAF)](https://docs.microsoft.com/en-us/azure/web-application-firewall/overview)
+    > (WAF)](https://docs.microsoft.com/azure/web-application-firewall/overview)
     > by:
 
 ```{=html}
@@ -220,42 +220,42 @@ c.  Adding custom rules to protect against threats specific to your
 > You can use one of two options:
 >
 > [Azure Front
-> Door](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-overview)
+> Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
 
 a.  [Create a Web Application Firewall policy on Azure Front
-    > Door](https://docs.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-create-portal).
+    > Door](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-create-portal).
 
 b.  [Configure bot protection for Web Application
-    > Firewall](https://docs.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-policy-configure-bot-protection).
+    > Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-policy-configure-bot-protection).
 
 c.  [Custom rules for Web Application
-    > Firewall](https://docs.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell).
+    > Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell).
 
 > [Azure Application
-> Gateway](https://docs.microsoft.com/en-us/azure/application-gateway/overview)
+> Gateway](https://docs.microsoft.com/azure/application-gateway/overview)
 
 a.  [Create an application gateway with a Web Application
-    > Firewall](https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal).
+    > Firewall](https://docs.microsoft.com/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal).
 
 b.  [Configure bot protection for Web Application
-    > Firewall](https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/bot-protection).
+    > Firewall](https://docs.microsoft.com/azure/web-application-firewall/ag/bot-protection).
 
 c.  [Create and use Web Application Firewall v2 custom
-    > rules.](https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/create-custom-waf-rules)
+    > rules.](https://docs.microsoft.com/azure/web-application-firewall/ag/create-custom-waf-rules)
 
 ```{=html}
 <!-- -->
 ```
 1.  **For all endpoints (HTTP or not)**, front with [Azure
-    > Firewall](https://docs.microsoft.com/en-us/azure/firewall/overview)
+    > Firewall](https://docs.microsoft.com/azure/firewall/overview)
     > for threat intelligence-based filtering at Layer 4:
 
     a.  [Deploy and configure Azure
-        > Firewall](https://docs.microsoft.com/en-us/azure/firewall/tutorial-firewall-deploy-portal)
+        > Firewall](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal)
         > using the Azure portal.
 
     b.  [Enable threat intelligence-based
-        > filtering](https://docs.microsoft.com/en-us/azure/firewall/threat-intel)
+        > filtering](https://docs.microsoft.com/azure/firewall/threat-intel)
         > for your traffic.
 
 > [Learn about implementing an end-to-end Zero Trust strategy for
@@ -270,25 +270,25 @@ Follow these steps:
 
 1.  Enforce HTTPS-only communication for your internet facing web
     applications by [redirecting HTTP traffic to HTTPS using Azure Front
-    Door](https://docs.microsoft.com/en-us/azure/frontdoor/front-door-how-to-redirect-https).
+    Door](https://docs.microsoft.com/azure/frontdoor/front-door-how-to-redirect-https).
 
 2.  Connect remote employees/partners to Microsoft Azure using the
     [Azure VPN
-    Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways).
+    Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways).
 
     a.  [Turn on
-        encryption](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-security-controls#data-protection)
+        encryption](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-security-controls#data-protection)
         for any point-to-site traffic in Azure VPN Gateway service.
 
 3.  Access your Azure virtual machines securely using encrypted
     communication via [Azure
-    Bastion](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview).
+    Bastion](https://docs.microsoft.com/azure/bastion/bastion-overview).
 
     a.  [Connect using SSH to a Linux virtual
-        machine](https://docs.microsoft.com/en-us/azure/bastion/bastion-connect-vm-ssh).
+        machine](https://docs.microsoft.com/azure/bastion/bastion-connect-vm-ssh).
 
     b.  [Connect using RDP to a Windows virtual
-        machine](https://docs.microsoft.com/en-us/azure/bastion/bastion-connect-vm-rdp).
+        machine](https://docs.microsoft.com/azure/bastion/bastion-connect-vm-rdp).
 
 > [Learn about implementing an end-to-end Zero Trust strategy for
 > applications](https://aka.ms/ZTApplications)
@@ -313,12 +313,12 @@ your network.
 Follow these steps:
 
 1.  Within the VNet, [add virtual network
-    subnets](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-subnet)
+    subnets](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-subnet)
     so that discrete components of an application can have their own
     perimeters.
 
 2.  [Apply network security group
-    rules](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic#create-security-rules)
+    rules](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#create-security-rules)
     to allow traffic only from the subnets that have an app subcomponent
     identified as a legitimate communications counterpart.
 
@@ -332,39 +332,39 @@ Follow these steps, depending on the type of boundary:
 
 1.  If internet connectivity is required for your application that needs
     to be routed via the hub VNet, [update the network security group
-    rules](https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic)
+    rules](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic)
     in hub VNet to allow internet connectivity.
 
 2.  [Turn on Azure DDoS Protection
-    Standard](https://docs.microsoft.com/en-us/azure/virtual-network/manage-ddos-protection#enable-ddos-for-an-existing-virtual-network)
+    Standard](https://docs.microsoft.com/azure/virtual-network/manage-ddos-protection#enable-ddos-for-an-existing-virtual-network)
     to protect the hub VNet from volumetric network layer attacks.
 
 3.  If your application uses HTTP/S protocols, [turn on Azure Web
     Application
-    Firewall](https://docs.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell)
+    Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell)
     to protect against Layer 7 threats.
 
 > **On-premises boundary**
 
 1.  If your app needs connectivity to your on-premise data center, [use
     Azure
-    ExpressRoute](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)
+    ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-portal-resource-manager)
     of Azure VPN [for connectivity to your hub
-    VNet](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal).
+    VNet](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal).
 
 2.  [Configure the Azure
-    Firewall](https://docs.microsoft.com/en-us/azure/firewall/tutorial-hybrid-ps)
+    Firewall](https://docs.microsoft.com/azure/firewall/tutorial-hybrid-ps)
     in the hub VNet to inspect and govern traffic.
 
 > **PaaS services boundary**
 
 1.  When using Azure-provided PaaS services (e.g., Azure Storage, [Azure
     Cosmos
-    DB](https://docs.microsoft.com/en-us/azure/private-link/create-private-endpoint-cosmosdb-portal),
+    DB](https://docs.microsoft.com/azure/private-link/create-private-endpoint-cosmosdb-portal),
     or [Azure Web
-    App](https://docs.microsoft.com/en-us/azure/private-link/create-private-endpoint-webapp-portal)),
+    App](https://docs.microsoft.com/azure/private-link/create-private-endpoint-webapp-portal)),
     use the
-    [PrivateLink](https://docs.microsoft.com/en-us/azure/private-link/create-private-link-service-portal)
+    [PrivateLink](https://docs.microsoft.com/azure/private-link/create-private-link-service-portal)
     connectivity option to ensure all data exchanges are over the
     private IP space and the traffic never leaves the Microsoft network.
 
@@ -374,7 +374,7 @@ data](https://aka.ms/ZTData)
 ### **V. Threat protection. Machine learning-based threat protection and filtering with context-based signals.**
 
 For further threat protection, turn on [Azure DDoS Protection
-Standard](https://docs.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview)
+Standard](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)
 to constantly monitor your Azure-hosted application traffic, use
 ML-based frameworks to baseline and detect volumetric traffic floods,
 and apply automatic mitigations.
@@ -382,11 +382,11 @@ and apply automatic mitigations.
 Follow these steps:
 
 1.  [Configure and
-    manage](https://docs.microsoft.com/en-us/azure/virtual-network/manage-ddos-protection)
+    manage](https://docs.microsoft.com/azure/virtual-network/manage-ddos-protection)
     Azure DDoS Protection Standard.
 
 2.  [Configure
-    alerts](https://docs.microsoft.com/en-us/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics)
+    alerts](https://docs.microsoft.com/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics)
     for DDoS protection metrics.
 
 ### **VI. Encryption: All traffic is encrypted.**
@@ -397,17 +397,17 @@ is encrypted.
 Follow these steps:
 
 1.  [Encrypt application backend
-    traffic](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell)
+    traffic](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell)
     between virtual networks.
 
 2.  Encrypt traffic between on-premises and cloud:
 
     a.  [Configure a site-to-site
-        VPN](https://docs.microsoft.com/en-us/azure/expressroute/site-to-site-vpn-over-microsoft-peering)
+        VPN](https://docs.microsoft.com/azure/expressroute/site-to-site-vpn-over-microsoft-peering)
         over ExpressRoute Microsoft peering.
 
     b.  [Configure IPsec transport
-        mode](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-howto-ipsec-transport-private-windows)
+        mode](https://docs.microsoft.com/azure/expressroute/expressroute-howto-ipsec-transport-private-windows)
         for ExpressRoute private peering.
 
     c.  

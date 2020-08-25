@@ -81,25 +81,25 @@ III. Threat signals from other security solutions are integrated.
 **Microsoft Azure**
 
 [Azure Active
-Directory](https://azure.microsoft.com/en-us/services/active-directory/)
+Directory](https://azure.microsoft.com/services/active-directory/)
 
 [Azure Advanced Threat
-Protection](https://azure.microsoft.com/en-us/features/azure-advanced-threat-protection/)
+Protection](https://azure.microsoft.com/features/azure-advanced-threat-protection/)
 
 **Microsoft 365**
 
 [Microsoft Endpoint
-Manager](https://www.microsoft.com/en-us/microsoft-365/microsoft-endpoint-manager)
+Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 (includes Microsoft Intune)
 
 [Microsoft Defender Advanced Threat
-Protection](https://www.microsoft.com/en-us/microsoft-365/windows/microsoft-defender-atp)
+Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
 
 [SharePoint
-Online](https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration)
+Online](https://www.microsoft.com/microsoft-365/sharepoint/collaboration)
 
 [Exchange
-Online](https://www.microsoft.com/en-us/microsoft-365/exchange/email)
+Online](https://www.microsoft.com/microsoft-365/exchange/email)
 
 **  
 **
@@ -178,24 +178,24 @@ becoming the first doubters of your Zero Trust strategy.
 Follow these steps:
 
 1.  [Integrate modern enterprise
-    applications](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/plan-sso-deployment)
+    applications](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-sso-deployment)
     that speak OAuth2.0 or SAML.
 
 2.  For Kerberos and form-based auth applications, [integrate them using
     the Azure AD Application
-    Proxy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-deployment-plan).
+    Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-deployment-plan).
 
 3.  If you publish your legacy applications using application delivery
     networks/controllers, use Azure AD to
-    [integrate](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/secure-hybrid-access)
+    [integrate](https://docs.microsoft.com/azure/active-directory/manage-apps/secure-hybrid-access)
     with most of the major ones (such as Citrix, Akamai, and F5).
 
 4.  To help discover and migrate your apps off of ADFS and
     existing/older IAM engines, review [resources and
-    tools](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/migration-resources).
+    tools](https://docs.microsoft.com/azure/active-directory/manage-apps/migration-resources).
 
 5.  [Power push identities into your various cloud
-    applications](https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/plan-auto-user-provisioning).
+    applications](https://docs.microsoft.com/azure/active-directory/app-provisioning/plan-auto-user-provisioning).
     This gives you a tighter identity lifecycle integration within those
     apps.
 
@@ -207,7 +207,7 @@ Follow these steps:
 Follow these steps:
 
 1.  [Roll out Azure AD MFA
-    (P1)](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted).
+    (P1)](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted).
     This is a foundational piece of reducing user session risk. As users
     appear on new devices and from new locations, being able to respond
     to an MFA challenge is one of the most direct ways that your users
@@ -216,7 +216,7 @@ Follow these steps:
     signals).
 
 2.  [Block legacy
-    authentication](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/block-legacy-authentication).
+    authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication).
     One of the most common attack vectors for malicious actors is to use
     stolen/replayed credentials against legacy protocols, such as
     SMTP,  
@@ -238,7 +238,7 @@ not needed.
 <img src=".//media/image8.png" style="width:5.55171in;height:3.47639in" />
 
 Microsoft provides standard conditional policies called [security
-defaults](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that
+defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that
 ensure a basic level of security. However, your organization may need
 more flexibility than security defaults offer. You can use Conditional
 Access to customize security defaults with more granularity and to
@@ -254,7 +254,7 @@ informs the risk of Identity Protection mentioned above.
 Take this step:
 
 1.  Check out our [deployment
-    > guidance](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access)
+    > guidance](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access)
     > and [best practices](https://aka.ms/resilientaad) for resilient
     > Conditional  
     > Access policies.
@@ -265,9 +265,9 @@ compromised devices**
 Follow these steps:
 
 1.  [Enable Azure AD Hybrid
-    Join](https://docs.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+    Join](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join-hybrid)
     or [Azure AD
-    Join](https://docs.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+    Join](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join-hybrid).
     If you are managing the user's laptop/computer, bring that
     information into Azure AD and use it to help make better decisions.
     For example, you may choose to allow rich client access to data
@@ -278,10 +278,10 @@ Follow these steps:
     working around your security or using shadow IT.
 
 2.  Enable the
-    [Intune](https://docs.microsoft.com/en-us/mem/intune/remote-actions/device-management)
+    [Intune](https://docs.microsoft.com/mem/intune/remote-actions/device-management)
     service within Microsoft Endpoint Manager (EMS) for managing your
     users' mobile devices and [enroll
-    devices](https://docs.microsoft.com/en-us/mem/intune/enrollment/device-enrollment).
+    devices](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
     The same can be said about user mobile devices as about laptops: The
     more you know about them (patch level, jailbroken, rooted, etc.),
     the more you are able to trust or mistrust them and provide a
@@ -301,7 +301,7 @@ into what is happening in the directory.
 Take this step:
 
 1.  [Plan an Azure AD reporting and monitoring
-    deployment](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/plan-monitoring-and-reporting)
+    deployment](https://docs.microsoft.com/azure/active-directory/reports-monitoring/plan-monitoring-and-reporting)
     to be able to persist and analyze logs from Azure AD, either in
     Azure or using a SIEM system of choice.
 
@@ -323,14 +323,14 @@ access privileged operations/roles.
 Follow these steps:
 
 1.  [Take control of your privileged
-    identities](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-admin-roles-secure).
+    identities](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure).
     Keep in mind that in a digitally-transformed organization,
     privileged access is not only administrative access, but also
     application owner or developer access that can change the way your
     mission-critical apps run and handle data.
 
 2.  [Use Privileged Identity Management to secure privileged
-    identities](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-deployment-plan).
+    identities](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-deployment-plan).
 
 **Restrict user consent to applications**
 
@@ -341,12 +341,12 @@ some best practices to keep in mind.
 Follow these steps:
 
 1.  [Restrict user consent and manage consent
-    > requests](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/manage-consent-requests)
+    > requests](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests)
     > to ensure that no unnecessary exposure occurs of your
     > organization's data to apps.
 
 2.  [Review prior/existing consent in your
-    > organization](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants?view=o365-worldwide)
+    > organization](https://docs.microsoft.com/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants?view=o365-worldwide)
     > for any excessive or  
     > malicious consent.
 
@@ -369,7 +369,7 @@ they have.
 Follow these steps:
 
 1.  Use Entitlement Management to [create access
-    > packages](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-access-package-create)
+    > packages](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create)
     > that users can request as they join different teams/projects and
     > that assigns them access to the associated resources (such as
     > applications, SharePoint sites, group memberships).
@@ -377,9 +377,9 @@ Follow these steps:
 2.  If deploying Entitlement Management is not possible for your
     > organization at this time, at least enable self-service paradigms
     > in your organization by deploying [self-service group
-    > management](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-self-service-management)
+    > management](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-self-service-management)
     > and [self-service application
-    > access](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/manage-self-service-access).
+    > access](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-self-service-access).
 
 **Use passwordless authentication to reduce the risk of phishing and
 password attacks**
@@ -392,7 +392,7 @@ are strong authentication factors that can mitigate risk as well.
 Take this step:
 
 1.  [Start rolling out passwordless
-    credentials](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-deployment)
+    credentials](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-deployment)
     in your organization.
 
 ```{=html}
@@ -413,9 +413,9 @@ attacks](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/
 Take this step:
 
 1.  Enable Azure AD Password Protection for your users [in the
-    cloud](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-password-ban-bad)
+    cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)
     and
-    [on-premises](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-ban-bad-on-premises-deploy).
+    [on-premises](https://docs.microsoft.com/azure/active-directory/authentication/howto-password-ban-bad-on-premises-deploy).
 
 **  
 Enable Identity Protection**
@@ -428,7 +428,7 @@ like in your environment.
 Take this step:
 
 1.  [Enable Identity
-    Protection](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection).
+    Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
 **Enable Microsoft Cloud App Security integration with Identity
 Protection**
@@ -446,7 +446,7 @@ user or block them.
 Take this step:
 
 1.  [Enable MCAS
-    monitoring](https://docs.microsoft.com/en-us/cloud-app-security/azip-integration)
+    monitoring](https://docs.microsoft.com/cloud-app-security/azip-integration)
     to enrich the Identity Protection signal.
 
 **Enable Conditional Access integration with Microsoft Cloud App
@@ -459,7 +459,7 @@ SaaS applications and enforce restrictions.
 Follow these steps:
 
 1.  [Enable Conditional Access
-    integration](https://docs.microsoft.com/en-us/cloud-app-security/proxy-intro-aad).
+    integration](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad).
 
 2.  [Extend Conditional Access to on-premises
     apps](https://docs.microsoft.com/bs-latn-ba/azure/active-directory/manage-apps/application-proxy-integrate-with-microsoft-cloud-application-security).
@@ -501,7 +501,7 @@ cloud.
 Follow these steps:
 
 1.  [Enable Azure ATP
-    integration](https://docs.microsoft.com/en-us/cloud-app-security/aatp-integration)
+    integration](https://docs.microsoft.com/cloud-app-security/aatp-integration)
     with Microsoft Cloud App Security to bring on-premises signals into
     the risk signal we know about the user.
 
@@ -524,7 +524,7 @@ runtime.
 Take this step:
 
 1.  [Configure Conditional Access in Defender
-    ATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-conditional-access).
+    ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-conditional-access).
 
 Conclusion
 

@@ -8,9 +8,9 @@ ms.author: kasirota
 ms.topic: conceptual
 ---
 
-# July 2020 Deployment Notice - Microsoft Trusted Root Program 
+# August 2020 Deployment Notice - Microsoft Trusted Root Program 
 
-On Tuesday, July 28th, 2020, Microsoft will release a planned update to the Microsoft Trusted Root Certificate Program.
+On Tuesday, August 28th, 2020, Microsoft will release a planned update to the Microsoft Trusted Root Certificate Program.
 
 This release will **NotBefore** the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
 

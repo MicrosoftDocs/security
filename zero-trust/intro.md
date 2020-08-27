@@ -8,10 +8,9 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-Zero Trust Deployment Center
-============================
+# Zero Trust Deployment Center
 
-**Assess Zero Trust readiness and build a plan**
+## Assess Zero Trust readiness and build a plan
 
 Today, organizations need a new security model that effectively adapts
 to the complexity of the modern environment, embraces the mobile
@@ -25,26 +24,12 @@ uncontrolled network. Regardless of where the request originates or what
 resource it accesses, the Zero Trust model teaches us to "never trust,
 always verify."
 
-**Guiding principles of Zero Trust**
+## Guiding principles of Zero Trust
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Verify explicitly</strong></th>
-<th><strong>Use least privileged access</strong></th>
-<th><strong>Assume breach</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Always authenticate and authorize based on all available data points.</td>
-<td>Limit user access with<br />
-Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.</td>
-<td>Minimize blast radius and segment access. Verify<br />
-end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.</td>
-</tr>
-</tbody>
-</table>
+| Verify&nbsp;explicitly | Use least privileged access | Assume breach |
+|---|---|---|
+| Always authenticate and authorize based on all available data points. | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. |
+
 
 A Zero Trust approach should extend throughout the entire digital estate
 and serve as an integrated security philosophy and end-to-end strategy.
@@ -60,7 +45,10 @@ implementing our own Zero Trust model, we've developed the following
 guidance to assess your readiness and to help you build a plan to get to
 Zero Trust.
 
-<img src=".//media/image1.png" style="width:5.82154in;height:1.56944in" />
+<!--
+<img src="./media/image1.png" style="width:5.82154in;height:1.56944in" />
+-->
+:::image type="content" source="./media/image1.png" alt-text="Provide integrated capabilities to manage threats.":::
 
 **Follow the steps below to mature your organization's approach to
 security and optimize how Zero Trust is implemented:**

@@ -30,9 +30,6 @@ data they contain---are protected by:
 
 -   Controlling user actions. 
 
-```{=html}
-<!-- -->
-```
 -   Validating secure configuration options. 
 
 ## Applications Zero Trust deployment objectives
@@ -48,51 +45,40 @@ When implementing a Zero Trust approach to managing and monitoring
 applications, we recommend you focus first on these **initial deployment
 objectives**:
 
-I.  <img src="./media/applications/image2.png" style="width:0.40746in;height:0.35952in" />Gain
-    > visibility into the activities and data in your applications by
-    > connecting them via APIs.
+-  <img src="./media/applications/image2.png" style="width:0.40746in;height:0.35952in" />Gain visibility into the activities and data in your applications by connecting them via APIs.
 
-II. Discover and control the use of shadow IT.
+- Discover and control the use of shadow IT.
 
-III. Protect sensitive information and activities automatically by
-     > implementing policies.
+- Protect sensitive information and activities automatically by implementing policies.
 
 Once these are completed, focus on these **additional deployment
 objectives**:
 
-I.  <img src="./media/applications/image4.png" style="width:0.41875in;height:0.36944in" />Deploy
-    > adaptive access and session controls for all apps.
+-  <img src="./media/applications/image4.png" style="width:0.41875in;height:0.36944in" />Deploy adaptive access and session controls for all apps.
 
-II. Strengthen protection against cyber threats and rogue apps.
+- Strengthen protection against cyber threats and rogue apps.
 
-III. Assess the security configuration of your cloud environments.
+- Assess the security configuration of your cloud environments.
 
 ** **
-=====
 
 ## Products covered in this guide
 
 **Microsoft Azure**
 
-[Microsoft Azure Active
-Directory](https://azure.microsoft.com/services/active-directory/)
+[Microsoft Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
 
 **Microsoft 365**
 
-[Microsoft Cloud App
-Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
+[Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
 
--   [Cloud
-    Discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery)
+-   [Cloud Discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery)
 
 [Microsoft Endpoint Manager](https://www.microsoft.com/endpointmanager)
 (includes Microsoft Intune and Configuration Manager)
 
--   [Mobile Application
-    Management](https://docs.microsoft.com/mem/intune/apps/mam-faq)
+-   [Mobile Application Management](https://docs.microsoft.com/mem/intune/apps/mam-faq)
 
-**  
-**
 
 ## Application Zero Trust deployment guide
 

@@ -60,8 +60,6 @@ objectives**:
 
 - Assess the security configuration of your cloud environments.
 
-** **
-
 ## Products covered in this guide
 
 **Microsoft Azure**
@@ -103,10 +101,9 @@ principles:
 
 <img src="./media/applications/image6.png" style="width:0.5812in;height:0.51282in" />
 
-> **Initial deployment objectives**
+### Initial deployment objectives
 
-I.  **Gain visibility into the activities and data in your applications
-    by connecting them via APIs**.
+#### Gain visibility into the activities and data in your applications by connecting them via APIs
 
 The majority of users\' activities in an organization originate on cloud
 applications and associated resources. Most major cloud apps provide an
@@ -116,22 +113,13 @@ threats and anomalies occur in your environment.
 
 Follow these steps:
 
-1.  Adopt [Microsoft Cloud App
-    Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security),
-    which works with services to optimize visibility, governance
-    actions, and usage.
+1.  Adopt [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security), which works with services to optimize visibility, governance actions, and usage.
 
-2.  [Review what apps can be
-    connected](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
-    with the Cloud App Security API integration, and connect the apps
-    you need. Use the deeper visibility gained to investigate
-    activities, files, and accounts for the apps in your cloud
-    environment.
+2.  [Review what apps can beconnected](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) with the Cloud App Security API integration, and connect the appsyou need. Use the deeper visibility gained to investigate activities, files, and accounts for the apps in your cloud environment.
 
-> [Learn about implementing an end-to-end identity Zero Trust
-> strategy](https://aka.ms/ZTIdentity)
+[Learn about implementing an end-to-end identity Zero Trust strategy](https://aka.ms/ZTIdentity)
 
-I.  **Discover and control the use of shadow IT.**
+#### Discover and control the use of shadow IT
 
 On average, 1,000 separate apps are being used in your organization. 80%
 of employees use non-sanctioned apps that no one has reviewed and that
@@ -144,40 +132,27 @@ Focus on identifying app usage patterns, assessing risk levels and
 business readiness of apps, preventing data leaks to noncompliant apps,
 and limiting access to regulated data.
 
-> [Learn about implementing an end-to-end Zero Trust strategy for
-> data](https://aka.ms/ZTData)
+[Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData)
 
 Follow these steps:
 
-1.  Set up [Cloud
-    Discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery),
-    which analyzes your traffic logs against Microsoft Cloud App
-    Security\'s catalog of over 16,000 cloud apps. The apps are ranked
-    and scored, based on more than 90 risk factors.
+1.  Set up [Cloud Discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery), which analyzes your traffic logs against Microsoft Cloud App Security's catalog of over 16,000 cloud apps. The apps are ranked and scored, based on more than 90 risk factors.
 
-2.  [Discover and identify shadow
-    IT](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-1-discover-and-identify-shadow-it)
-    to find out what apps are being used, following one of three
-    options:
+2.  [Discover and identify shadow IT](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-1-discover-and-identify-shadow-it) to find out what apps are being used, following one of three options:
 
-```{=html}
-<!-- -->
-```
-a.  Integrate with [Microsoft Defender
+> a.  Integrate with [Microsoft Defender
     ATP](https://docs.microsoft.com/cloud-app-security/wdatp-integration)
     to immediately start collecting data on cloud traffic across your
     Windows 10 devices, on and off your network.
 
-b.  Deploy the [Cloud App Security log
+> b.  Deploy the [Cloud App Security log
     collector](https://docs.microsoft.com/cloud-app-security/discovery-docker) on
     your firewalls and other proxies to collect data from your endpoints
     and send it to Cloud App Security for analysis.
 
-c.  Integrate Cloud App Security with your proxy.
+> c.  Integrate Cloud App Security with your proxy.
 
-```{=html}
-<!-- -->
-```
+
 1.  Identify the [risk
     level](https://docs.microsoft.com/cloud-app-security/risk-score)
     of specific apps:
@@ -239,11 +214,9 @@ c.  Manage discovered apps using [Azure Active Directory (Azure AD)
     the relevant app appears, choose the three dots at the end of the
     row, and then choose **Manage app with Azure AD**.
 
-> [Learn about implementing an end-to-end Zero Trust strategy for your
-> network](https://aka.ms/ZTNetwork)
+[Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork)
 
-I.  **Protect your sensitive information and activities automatically by
-    implementing policies.**
+#### Protect your sensitive information and activities automatically by implementing policies
 
 Cloud App Security enables you to define the way you want users to
 behave in the cloud. This can be done by creating policies. There are
@@ -294,9 +267,9 @@ Follow these steps:
 
 <img src="./media/applications/image7.png" style="width:0.58974in;height:0.52036in" />
 
-> **Additional deployment objectives**
+### Additional deployment objectives
 
-I.  **Deploy adaptive access and session controls for all apps.**
+#### Deploy adaptive access and session controls for all apps
 
 Once you've accomplished your initial three objectives, you can focus on
 additional objectives such as ensuring that all apps are using
@@ -315,10 +288,9 @@ Take this step:
     files can be scanned on upload to detect potential malware and block
     them from entering sensitive cloud environment.
 
-> [Learn about implementing an end-to-end Zero Trust strategy for
-> endpoints](https://aka.ms/ZTEndpoints)
+[Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints)
 
-### **V. Strengthen protection against cyber threats and rogue apps.**
+#### Strengthen protection against cyber threats and rogue apps
 
 Bad actors have developed dedicated and unique attack tools, techniques,
 and procedures (TTPs) that target the cloud to breach defenses and
@@ -351,7 +323,7 @@ Follow these steps:
     > scope](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#tune-anomaly-detection-policies)
     > anomaly detection policies.
 
-    I.  **Assess the security posture of your cloud environments.**
+#### Assess the security posture of your cloud environments
 
 Beyond SaaS applications, organizations are heavily invested in IaaS and
 PaaS services. Cloud App Security enables your organization to assess

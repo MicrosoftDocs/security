@@ -8,7 +8,7 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-<img src=".//media/image1.emf" style="width:0.41667in;height:0.41667in" />Securing applications with Zero Trust
+<img src="./media/applications/image1.emf" style="width:0.41667in;height:0.41667in" />Securing applications with Zero Trust
 ===============================================================================================================
 
 **Background**
@@ -48,7 +48,7 @@ When implementing a Zero Trust approach to managing and monitoring
 applications, we recommend you focus first on these **initial deployment
 objectives**:
 
-I.  <img src=".//media/image2.png" style="width:0.40746in;height:0.35952in" />Gain
+I.  <img src="./media/applications/image2.png" style="width:0.40746in;height:0.35952in" />Gain
     > visibility into the activities and data in your applications by
     > connecting them via APIs.
 
@@ -60,7 +60,7 @@ III. Protect sensitive information and activities automatically by
 Once these are completed, focus on these **additional deployment
 objectives**:
 
-I.  <img src=".//media/image4.png" style="width:0.41875in;height:0.36944in" />Deploy
+I.  <img src="./media/applications/image4.png" style="width:0.41875in;height:0.36944in" />Deploy
     > adaptive access and session controls for all apps.
 
 II. Strengthen protection against cyber threats and rogue apps.
@@ -115,7 +115,7 @@ principles:
     Use analytics to get [visibility](https://aka.ms/ZTCrossPillars),
     drive threat detection, and improve defenses.
 
-<img src=".//media/image6.png" style="width:0.5812in;height:0.51282in" />
+<img src="./media/applications/image6.png" style="width:0.5812in;height:0.51282in" />
 
 > **Initial deployment objectives**
 
@@ -306,7 +306,7 @@ Follow these steps:
     and [Microsoft Cloud App
     Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security).
 
-<img src=".//media/image7.png" style="width:0.58974in;height:0.52036in" />
+<img src="./media/applications/image7.png" style="width:0.58974in;height:0.52036in" />
 
 > **Additional deployment objectives**
 
@@ -408,6 +408,6 @@ implementations, please contact your Customer Success team.
 
 **The Zero Trust deployment guide series**
 
-| <img src=".//media/image8.emf" style="width:0.34215in;height:0.34215in" /> | <img src=".//media/image9.png" style="width:0.20833in;height:0.26316in" /> | <img src=".//media/image11.png" style="width:0.28564in;height:0.23809in" /> | <img src=".//media/image1.emf" style="width:0.26496in;height:0.26496in" /> | <img src=".//media/image12.png" style="width:0.26189in;height:0.22618in" /> | <img src=".//media/image14.png" style="width:0.2375in;height:0.26181in" /> | <img src=".//media/image15.png" style="width:0.24653in;height:0.24653in" /> | <img src=".//media/image16.png" style="width:0.27908in;height:0.27908in" />   |
+| <img src="./media/applications/image8.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/applications/image9.png" style="width:0.20833in;height:0.26316in" /> | <img src="./media/applications/image11.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/applications/image1.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/applications/image12.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/applications/image14.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/applications/image15.png" style="width:0.24653in;height:0.24653in" /> | <img src="./media/applications/image16.png" style="width:0.27908in;height:0.27908in" />   |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | [[Introduction]{.ul}](https://aka.ms/ZTDeploymentGuideIntroduction)        | [[Identity]{.ul}](https://aka.ms/ZTIdentity)                               | [[Endpoints]{.ul}](https://aka.ms/ZTEndpoints)                              | [[Applications]{.ul}](https://aka.ms/ZTApplications)                       | [[Data]{.ul}](https://aka.ms/ZTData)                                        | [[Network]{.ul}](https://aka.ms/ZTNetwork)                                 | [[Infrastructure]{.ul}](https://aka.ms/ZTInfrastructure)                    | [[Visibility, Automation, Orchestration]{.ul}](https://aka.ms/ZTCrossPillars) |

@@ -8,7 +8,7 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-<img src=".//media/image1.png" style="width:0.2375in;height:0.26181in" />Securing infrastructure with Zero Trust
+<img src="./media/infrastructure/image1.png" style="width:0.2375in;height:0.26181in" />Securing infrastructure with Zero Trust
 ================================================================================================================
 
 **  
@@ -49,7 +49,7 @@ your deployed infrastructure---and enable a different approach to
 defining, designing, provisioning, deploying, and monitoring your
 infrastructure.
 
-<img src=".//media/image2.png" style="width:3.91177in;height:2.82892in" alt="A picture containing sign, shirt, graffiti, clock Description automatically generated" />
+<img src="./media/infrastructure/image2.png" style="width:3.91177in;height:2.82892in" alt="A picture containing sign, shirt, graffiti, clock Description automatically generated" />
 
 ## Infrastructure Zero Trust deployment objectives
 
@@ -67,7 +67,7 @@ monitoring your identities, we recommend you focus first on these
 **initial deployment objectives**:
 
 -   Workloads are monitored and alerted for abnormal
-    > behavior<img src=".//media/image3.png" style="width:0.40746in;height:0.35952in" />.
+    > behavior<img src="./media/infrastructure/image3.png" style="width:0.40746in;height:0.35952in" />.
 
 -   Every workload is assigned an app identity.
 
@@ -78,7 +78,7 @@ objectives:**
 
 -   Unauthorized deployments are blocked, and alert is triggered.
 
--   <img src=".//media/image5.png" style="width:0.41875in;height:0.36944in" />Granular
+-   <img src="./media/infrastructure/image5.png" style="width:0.41875in;height:0.36944in" />Granular
     > visibility and access control are available across all workloads.
 
 -   User and resource access is segmented for each workload.
@@ -192,7 +192,7 @@ solution](https://docs.microsoft.com/azure/security-center/partner-vulnerability
 > [Learn about implementing an end-to-end Zero Trust strategy for
 > endpoints](https://aka.ms/ZTEndpoints)
 
-### <img src=".//media/image7.png" style="width:0.5812in;height:0.51282in" />
+### <img src="./media/infrastructure/image7.png" style="width:0.5812in;height:0.51282in" />
 
 > **Initial deployment objectives  
 > **
@@ -268,7 +268,7 @@ All of these items help an organization become more aware of how
 administrative permissions are being used, where these permissions are
 still necessary, and provide a roadmap for how to operate more securely.
 
-> <img src=".//media/image8.png" style="width:0.58974in;height:0.52036in" />**Additional
+> <img src="./media/infrastructure/image8.png" style="width:0.58974in;height:0.52036in" />**Additional
 > deployment objectives**
 >
 > Once you've accomplished your initial three objectives, you can focus
@@ -333,6 +333,6 @@ this guide, which spans all Zero Trust pillars.
 
 **The Zero Trust deployment guide series**
 
-| <img src=".//media/image9.emf" style="width:0.34215in;height:0.34215in" /> | <img src=".//media/image10.png" style="width:0.20833in;height:0.26316in" /> | <img src=".//media/image12.png" style="width:0.28564in;height:0.23809in" /> | <img src=".//media/image13.emf" style="width:0.26496in;height:0.26496in" /> | <img src=".//media/image14.png" style="width:0.26189in;height:0.22618in" /> | <img src=".//media/image1.png" style="width:0.2375in;height:0.26181in" /> | <img src=".//media/image16.png" style="width:0.24653in;height:0.24653in" /> | <img src=".//media/image17.png" style="width:0.27908in;height:0.27908in" />   |
+| <img src="./media/infrastructure/image9.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/infrastructure/image10.png" style="width:0.20833in;height:0.26316in" /> | <img src="./media/infrastructure/image12.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/infrastructure/image13.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/infrastructure/image14.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/infrastructure/image1.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/infrastructure/image16.png" style="width:0.24653in;height:0.24653in" /> | <img src="./media/infrastructure/image17.png" style="width:0.27908in;height:0.27908in" />   |
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | [[Introduction]{.ul}](https://aka.ms/ZTDeploymentGuideIntroduction)        | [[Identity]{.ul}](https://aka.ms/ZTIdentity)                                | [[Endpoints]{.ul}](https://aka.ms/ZTEndpoints)                              | [[Applications]{.ul}](https://aka.ms/ZTApplications)                        | [[Data]{.ul}](https://aka.ms/ZTData)                                        | [[Network]{.ul}](https://aka.ms/ZTNetwork)                                | [[Infrastructure]{.ul}](https://aka.ms/ZTInfrastructure)                    | [[Visibility, Automation, Orchestration]{.ul}](https://aka.ms/ZTCrossPillars) |

@@ -9,7 +9,7 @@ ms.topic: conceptual
 ---
 
 
-<img src=".//media/image1.png" style="width:0.36752in;height:0.3174in" />Securing data with Zero Trust
+<img src="./media/data/image1.png" style="width:0.36752in;height:0.3174in" />Securing data with Zero Trust
 ======================================================================================================
 
 **Background**
@@ -47,7 +47,7 @@ violations and risky user behavior. This allows you to take appropriate
 action, such as revoking access, blocking users, and refining your
 protection policies.
 
-<img src=".//media/image3.png" style="width:5.35294in;height:2.63644in" alt="A picture containing screenshot, device Description automatically generated" />
+<img src="./media/data/image3.png" style="width:5.35294in;height:2.63644in" alt="A picture containing screenshot, device Description automatically generated" />
 
 When data and sensitive content is understood, labeled, and classified,
 organizations can:
@@ -109,7 +109,7 @@ activities in this guide. For more information, see:
 When implementing an end-to-end Zero Trust framework for data, we
 recommend you focus first on these **initial deployment objectives**:
 
-I.  <img src=".//media/image4.png" style="width:0.40746in;height:0.35952in" />Access
+I.  <img src="./media/data/image4.png" style="width:0.40746in;height:0.35952in" />Access
     > decisions are governed by encryption.
 
 II. Data is automatically classified and labeled.
@@ -117,7 +117,7 @@ II. Data is automatically classified and labeled.
 Once these are completed, focus on these **additional deployment
 objectives:**
 
-I.  <img src=".//media/image6.png" style="width:0.41875in;height:0.36944in" />Classification
+I.  <img src="./media/data/image6.png" style="width:0.41875in;height:0.36944in" />Classification
     > is augmented by smart machine learning models.
 
 II. Access decisions are governed by a cloud security policy engine.
@@ -157,7 +157,7 @@ data protection maturity. Please keep in mind that these items will vary
 widely depending on the sensitivity of your information and the size and
 complexity of your organization.
 
-<img src=".//media/image8.png" style="width:0.57639in;height:0.50858in" />
+<img src="./media/data/image8.png" style="width:0.57639in;height:0.50858in" />
 
 > **Initial Zero Trust deployment objectives**
 
@@ -222,7 +222,7 @@ Take this step:
     files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)
     with sensitive data.
 
-<img src=".//media/image9.png" style="width:0.59815in;height:0.52778in" />
+<img src="./media/data/image9.png" style="width:0.59815in;height:0.52778in" />
 
 > **Additional deployment objectives**
 
@@ -440,7 +440,7 @@ document, any configured protection settings for that label are enforced
 on the content. When you use Office apps, watermarks can be applied to
 headers or footers of emails or documents that have the label applied.
 
-<img src=".//media/image10.png" style="width:2.66794in;height:2in" alt="Watermark and header applied to document" />
+<img src="./media/data/image10.png" style="width:2.66794in;height:2in" alt="Watermark and header applied to document" />
 
 Take this step:
 
@@ -487,13 +487,13 @@ Protection](https://www.microsoft.com/security/business/information-protection)
 (MIP) is a comprehensive, flexible, integrated, and extensible approach
 to protecting sensitive data.
 
-> <img src=".//media/image11.png" style="width:4.64227in;height:2.54118in" alt="A close up of a mans face Description automatically generated" />
+> <img src="./media/data/image11.png" style="width:4.64227in;height:2.54118in" alt="A close up of a mans face Description automatically generated" />
 
 For further information or help with implementation, please contact your
 Customer Success team.
 
 **The Zero Trust deployment guide series**
 
-| <img src=".//media/image12.emf" style="width:0.34215in;height:0.34215in" /> | <img src=".//media/image13.png" style="width:0.20833in;height:0.26316in" /> | <img src=".//media/image15.png" style="width:0.28564in;height:0.23809in" /> | <img src=".//media/image16.emf" style="width:0.26496in;height:0.26496in" /> | <img src=".//media/image17.png" style="width:0.26189in;height:0.22618in" /> | <img src=".//media/image18.png" style="width:0.2375in;height:0.26181in" /> | <img src=".//media/image19.png" style="width:0.24653in;height:0.24653in" /> | <img src=".//media/image20.png" style="width:0.27908in;height:0.27908in" /> |
+| <img src="./media/data/image12.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/data/image13.png" style="width:0.20833in;height:0.26316in" /> | <img src="./media/data/image15.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/data/image16.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/data/image17.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/data/image18.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/data/image19.png" style="width:0.24653in;height:0.24653in" /> | <img src="./media/data/image20.png" style="width:0.27908in;height:0.27908in" /> |
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | [Introduction](https://aka.ms/ZTDeploymentGuideIntroduction)                | [Identity](https://aka.ms/ZTIdentity)                                       | [Endpoints](https://aka.ms/ZTEndpoints)                                     | [Applications](https://aka.ms/ZTApplications)                               | [Data](https://aka.ms/ZTData)                                               | [Network](https://aka.ms/ZTNetwork)                                        | [Infrastructure](https://aka.ms/ZTInfrastructure)                           | [Visibility, Automation, Orchestration](https://aka.ms/ZTCrossPillars)      |

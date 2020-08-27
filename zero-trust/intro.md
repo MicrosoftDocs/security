@@ -53,12 +53,12 @@ Zero Trust.
 **Follow the steps below to mature your organization's approach to
 security and optimize how Zero Trust is implemented:**
 
-<img src=".//media/image2.png" style="width:0.51701in;height:0.51701in" />
+<img src="./media/intro/image2.png" style="width:0.51701in;height:0.51701in" />
 
 **Secure identity with Zero Trust -**
 [aka.ms/ZTIdentity](https://aka.ms/ZTIdentity)
 
-> <img src=".//media/image3.png" style="width:0.28564in;height:0.23809in" />Identities---whether
+> <img src="./media/intro/image3.png" style="width:0.28564in;height:0.23809in" />Identities---whether
 > they represent people, services, or IoT devices---define the Zero
 > Trust control plane. When an identity attempts to access a resource,
 > verify that identity with strong authentication, and ensure access is
@@ -68,7 +68,7 @@ security and optimize how Zero Trust is implemented:**
 **Secure endpoints with Zero Trust -**
 [aka.ms/ZTEndpoints](https://aka.ms/ZTDevices)
 
-> <img src=".//media/image4.emf" style="width:0.27292in;height:0.27292in" />Once
+> <img src="./media/intro/image4.emf" style="width:0.27292in;height:0.27292in" />Once
 > an identity has been granted access to a resource, data can flow to a
 > variety of different endpoints---from IoT devices to smartphones, BYOD
 > to partner-managed devices, and on-premises workloads to cloud-hosted
@@ -85,10 +85,10 @@ security and optimize how Zero Trust is implemented:**
 > based on real-time analytics, monitor for abnormal behavior, control
 > user actions, and validate secure configuration options.
 
-<img src=".//media/image5.png" style="width:0.26189in;height:0.22618in" />**Secure
+<img src="./media/intro/image5.png" style="width:0.26189in;height:0.22618in" />**Secure
 data with Zero Trust -** [aka.ms/ZTData](https://aka.ms/ZTData)
 
-> <img src=".//media/image7.png" style="width:0.2375in;height:0.26181in" />Ultimately,
+> <img src="./media/intro/image7.png" style="width:0.2375in;height:0.26181in" />Ultimately,
 > security teams are protecting data. Where possible, data should remain
 > safe even if it leaves the devices, apps, infrastructure, and networks
 > the organization controls. Classify, label, and encrypt data, and
@@ -97,7 +97,7 @@ data with Zero Trust -** [aka.ms/ZTData](https://aka.ms/ZTData)
 **Secure infrastructure with Zero Trust -**
 [aka.ms/ZTInfrastructure](https://aka.ms/ZTInfrastructure)
 
-> <img src=".//media/image8.png" style="width:0.24653in;height:0.24653in" />Infrastructure---whether
+> <img src="./media/intro/image8.png" style="width:0.24653in;height:0.24653in" />Infrastructure---whether
 > on-premises servers, cloud-based VMs, containers, or
 > micro-services---represents a critical threat vector. Assess for
 > version, configuration, and JIT access to harden defense. Use
@@ -117,7 +117,7 @@ data with Zero Trust -** [aka.ms/ZTData](https://aka.ms/ZTData)
 **  
 **
 
-> <img src=".//media/image9.png" style="width:0.24653in;height:0.24653in" />**Visibility,
+> <img src="./media/intro/image9.png" style="width:0.24653in;height:0.24653in" />**Visibility,
 > automation, and orchestration** **with Zero Trust** -
 > [aka.ms/ZTCrossPillars](https://aka.ms/ZTCrossPillars)
 >

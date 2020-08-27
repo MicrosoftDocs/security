@@ -8,7 +8,7 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-<img src=".//media/image1.png" style="width:0.37778in;height:0.47708in" />Securing identity with Zero Trust
+<img src="./media/identity/image1.png" style="width:0.37778in;height:0.47708in" />Securing identity with Zero Trust
 ===========================================================================================================
 
 **Background**
@@ -54,7 +54,7 @@ must:**
 When implementing an end-to-end Zero Trust framework for identity, we
 recommend you focus first on these **initial deployment objectives**:
 
-I.  <img src=".//media/image3.png" style="width:0.40746in;height:0.35952in" />Cloud
+I.  <img src="./media/identity/image3.png" style="width:0.40746in;height:0.35952in" />Cloud
     > identity federates with on-premises identity systems.
 
 II. Conditional Access policies gate access and provide remediation
@@ -68,7 +68,7 @@ objectives:**
 I.  Identities and access privileges are managed with identity
     > governance.
 
-II. <img src=".//media/image5.png" style="width:0.41875in;height:0.36944in" />User,
+II. <img src="./media/identity/image5.png" style="width:0.41875in;height:0.36944in" />User,
     > device, location, and behavior is analyzed in real time to
     > determine risk and deliver ongoing protection.
 
@@ -106,7 +106,7 @@ Online](https://www.microsoft.com/microsoft-365/exchange/email)
 
 ### This guide will walk you through the steps required to manage identities following the principles of a Zero Trust security framework.
 
-### <img src=".//media/image7.png" style="width:0.5812in;height:0.51282in" />
+### <img src="./media/identity/image7.png" style="width:0.5812in;height:0.51282in" />
 
 > **Initial deployment objectives**
 
@@ -232,7 +232,7 @@ like multi-factor authentication (MFA). CA policies allow you to prompt
 users for MFA when needed for security and stay out of users' way when
 not needed.
 
-<img src=".//media/image8.png" style="width:5.55171in;height:3.47639in" />
+<img src="./media/identity/image8.png" style="width:5.55171in;height:3.47639in" />
 
 Microsoft provides standard conditional policies called [security
 defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that
@@ -302,7 +302,7 @@ Take this step:
     to be able to persist and analyze logs from Azure AD, either in
     Azure or using a SIEM system of choice.
 
-<img src=".//media/image9.png" style="width:0.58974in;height:0.52036in" />
+<img src="./media/identity/image9.png" style="width:0.58974in;height:0.52036in" />
 
 > **Additional deployment objectives**
 
@@ -529,6 +529,6 @@ guide, which span all Zero Trust pillars.
 
 **The Zero Trust deployment guide series**
 
-| <img src=".//media/image11.emf" style="width:0.34215in;height:0.34215in" /> | <img src=".//media/image12.png" style="width:0.20833in;height:0.26316in" /> | <img src=".//media/image13.png" style="width:0.28564in;height:0.23809in" /> | <img src=".//media/image14.emf" style="width:0.26496in;height:0.26496in" /> | <img src=".//media/image15.png" style="width:0.26189in;height:0.22618in" /> | <img src=".//media/image17.png" style="width:0.2375in;height:0.26181in" /> | <img src=".//media/image18.png" style="width:0.24653in;height:0.24653in" /> | <img src=".//media/image19.png" style="width:0.27908in;height:0.27908in" /> |
+| <img src="./media/identity/image11.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/identity/image12.png" style="width:0.20833in;height:0.26316in" /> | <img src="./media/identity/image13.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/identity/image14.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/identity/image15.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/identity/image17.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/identity/image18.png" style="width:0.24653in;height:0.24653in" /> | <img src="./media/identity/image19.png" style="width:0.27908in;height:0.27908in" /> |
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | [Introduction](https://aka.ms/ZTDeploymentGuideIntroduction)                | [Identity](https://aka.ms/ZTIdentity)                                       | [Endpoints](https://aka.ms/ZTEndpoints)                                     | [Applications](https://aka.ms/ZTApplications)                               | [Data](https://aka.ms/ZTData)                                               | [Network](https://aka.ms/ZTNetwork)                                        | [Infrastructure](https://aka.ms/ZTInfrastructure)                           | [Visibility, Automation, Orchestration](https://aka.ms/ZTCrossPillars)      |

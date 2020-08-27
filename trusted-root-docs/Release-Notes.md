@@ -25,7 +25,7 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 ## 2020
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
-| August | August 24  | [Deployment Notice Posted August 18](2020/august2020.md) |
+| August | August 25  | [Deployment Notice Posted August 18](2020/august2020.md) |
 | July | July 28  | [Deployment Notice Posted July 27](2020/july2020.md) |
 | June | June 30  | [Deployment Notice Posted June 9](2020/June2020.md) |
 | May | May 19  | [Deployment Notice Posted May 19](2020/May2020.md) |

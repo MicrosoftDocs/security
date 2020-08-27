@@ -40,7 +40,7 @@ Your analysts become busier than ever, at a time when there is already a
 talent shortage. This can lead to chronic alert fatigue and analysts
 missing critical alerts.
 
-<img src=".//media/image1.png" style="width:5.85556in;height:3.29375in" />
+<img src="./media/visibility-automation-orchestration/image1.png" style="width:5.85556in;height:3.29375in" />
 
 With each of these individual areas generating their own relevant
 alerts, we need an integrated capability to manage the resulting influx
@@ -144,7 +144,7 @@ When implementing an end-to-end Zero Trust framework for visibility,
 automation, and orchestration, we recommend you focus first on these
 **initial deployment objectives**:
 
-I.  <img src=".//media/image2.png" style="width:0.40764in;height:0.35972in" />Establish
+I.  <img src="./media/visibility-automation-orchestration/image2.png" style="width:0.40764in;height:0.35972in" />Establish
     > visibility.
 
 II. Enable automation.
@@ -153,7 +153,7 @@ Once these are completed, focus on this **additional deployment
 objective:**
 
 I.  Enable additional protection and detection
-    > controls.<img src=".//media/image3.png" style="width:0.41875in;height:0.36944in" />
+    > controls.<img src="./media/visibility-automation-orchestration/image3.png" style="width:0.41875in;height:0.36944in" />
 
 ## Products covered in this guide
 
@@ -178,7 +178,7 @@ Protection](https://www.microsoft.com/security/business/threat-protection/integr
 
 ### This guide will walk you through the steps required to manage visibility, automation, and orchestration following the principles of a Zero Trust security framework.
 
-### <img src=".//media/image4.png" style="width:0.58125in;height:0.5125in" />
+### <img src="./media/visibility-automation-orchestration/image4.png" style="width:0.58125in;height:0.5125in" />
 
 > **Initial deployment objectives**
 
@@ -265,6 +265,6 @@ detect adversaries leveraging these techniques earlier in the process.
 
 **The Zero Trust deployment guide series**
 
-| <img src=".//media/image5.emf" style="width:0.34215in;height:0.34215in" /> | <img src=".//media/image6.png" style="width:0.2087in;height:0.26361in" /> | <img src=".//media/image8.png" style="width:0.28564in;height:0.23809in" /> | <img src=".//media/image9.emf" style="width:0.26496in;height:0.26496in" /> | <img src=".//media/image10.png" style="width:0.26189in;height:0.22618in" /> | <img src=".//media/image12.png" style="width:0.2375in;height:0.26181in" /> | <img src=".//media/image13.png" style="width:0.24653in;height:0.24653in" /> |
+| <img src="./media/visibility-automation-orchestration/image5.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/visibility-automation-orchestration/image6.png" style="width:0.2087in;height:0.26361in" /> | <img src="./media/visibility-automation-orchestration/image8.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/visibility-automation-orchestration/image9.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/visibility-automation-orchestration/image10.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/visibility-automation-orchestration/image12.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/visibility-automation-orchestration/image13.png" style="width:0.24653in;height:0.24653in" /> |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | [Introduction](https://aka.ms/ZTDeploymentGuideIntroduction)               | [Identity](https://aka.ms/ZTIdentity)                                     | [Endpoints](https://aka.ms/ZTEndpoints)                                    | [Applications](https://aka.ms/ZTApplications)                              | [Data](https://aka.ms/ZTData)                                               | [Network](https://aka.ms/ZTNetwork)                                        | [Infrastructure](https://aka.ms/ZTInfrastructure)                           |

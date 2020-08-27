@@ -9,7 +9,7 @@ ms.topic: conceptual
 ---
 
 
-<img src=".//media/image1.png" style="width:0.44323in;height:0.36946in" />Secure endpoints with Zero Trust
+<img src="./media/endpoints/image1.png" style="width:0.44323in;height:0.36946in" />Secure endpoints with Zero Trust
 ==========================================================================================================
 
 **Background**
@@ -81,7 +81,7 @@ When implementing an end-to-end Zero Trust framework for securing
 endpoints, we recommend you focus first on these **initial deployment
 objectives**:
 
-I.  <img src=".//media/image2.png" style="width:0.40746in;height:0.35952in" />**Endpoints
+I.  <img src="./media/endpoints/image2.png" style="width:0.40746in;height:0.35952in" />**Endpoints
     > are registered with cloud identity providers.** In order to
     > monitor security and risk across multiple endpoints used by any
     > one person, you need [visibility](https://aka.ms/ZTCrossPillars)
@@ -104,7 +104,7 @@ III. **Data loss prevention (DLP) policies are enforced for corporate
 Once these are completed, focus on these **additional deployment
 objectives**:
 
-I.  <img src=".//media/image4.png" style="width:0.41875in;height:0.36944in" />**Endpoint
+I.  <img src="./media/endpoints/image4.png" style="width:0.41875in;height:0.36944in" />**Endpoint
     > threat detection is used to monitor device risk.** Use a single
     > pane of glass to manage all endpoints in a consistent way, and use
     > a SIEM to route endpoint logs and transactions such that you get
@@ -143,7 +143,7 @@ Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-a
 This guide will walk you through the steps required to secure your
 devices following the principles of a Zero Trust security framework.
 
-<img src=".//media/image6.png" style="width:0.5812in;height:0.51282in" />
+<img src="./media/endpoints/image6.png" style="width:0.5812in;height:0.51282in" />
 
 > **Initial deployment objectives**
 
@@ -187,12 +187,12 @@ Existing Windows 10 devices**
 
 2.  Select **Access work** **or school,** and then select **Connect**.  
       
-    <img src=".//media/image7.png" style="width:5.17847in;height:2.86774in" alt="A screenshot of a cell phone Description automatically generated" />
+    <img src="./media/endpoints/image7.png" style="width:5.17847in;height:2.86774in" alt="A screenshot of a cell phone Description automatically generated" />
 
 3.  On the **Set up a work or school account** screen, select **Join
     this device to Azure AD**.  
       
-    <img src=".//media/image8.png" style="width:5.17847in;height:3.45232in" alt="A screenshot of a cell phone Description automatically generated" />
+    <img src="./media/endpoints/image8.png" style="width:5.17847in;height:3.45232in" alt="A screenshot of a cell phone Description automatically generated" />
 
 4.  On the **Let\'s get you signed in** screen, type your email address
     (for example, alain@contoso.com), and then select **Next**.
@@ -217,7 +217,7 @@ Follow these steps:
 2.  Select **Access work or school**, and then select **Connect** from
     the **Access work or school** screen.
 
-> <img src=".//media/image7.png" style="width:5.49974in;height:2.84483in" alt="A screenshot of a cell phone Description automatically generated" />
+> <img src="./media/endpoints/image7.png" style="width:5.49974in;height:2.84483in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  On the **Add a work or school account** screen, type in your email
     address for your work or school account, and then select **Next**.
@@ -246,7 +246,7 @@ Microsoft Intune.
 1.  Go to Devices &gt; Enrollment &gt; Enroll devices &gt; Windows
     enrollment &gt; Windows Hello for Business.
 
-<img src=".//media/image9.png" style="width:3.06604in;height:2.58253in" alt="A screenshot of a cell phone Description automatically generated" />
+<img src="./media/endpoints/image9.png" style="width:3.06604in;height:2.58253in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  Select from the following options for Configure Windows Hello for
     Business:
@@ -317,12 +317,12 @@ end user devices.
 1.  Select Devices &gt; Configuration profiles &gt; Create profile &gt;
     Windows 10 and Later &gt; Identity Protection.
 
-> <img src=".//media/image10.png" style="width:4.93058in;height:2.175in" alt="A screenshot of a cell phone Description automatically generated" />
+> <img src="./media/endpoints/image10.png" style="width:4.93058in;height:2.175in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  Configure Windows Hello for Business. Choose how you want to
     configure Windows Hello for Business.
 
-<img src=".//media/image11.png" style="width:5.9625in;height:5.9625in" alt="A screenshot of a cell phone Description automatically generated" />
+<img src="./media/endpoints/image11.png" style="width:5.9625in;height:5.9625in" alt="A screenshot of a cell phone Description automatically generated" />
 
 a.  Minimum PIN length.
 
@@ -397,11 +397,11 @@ policy](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy):
 
 3.  Select the desired Device Health configuration.
 
-<img src=".//media/image12.png" style="width:5.46875in;height:2.65861in" alt="A screenshot of a cell phone Description automatically generated" />
+<img src="./media/endpoints/image12.png" style="width:5.46875in;height:2.65861in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  Configure minimum or maximum Device Properties.
 
-<img src=".//media/image13.png" style="width:5.61875in;height:2.648in" alt="A screenshot of a cell phone Description automatically generated" />
+<img src="./media/endpoints/image13.png" style="width:5.61875in;height:2.648in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  Configure Configuration Manager Compliance. This requires all
     compliance evaluations in Configuration Manager to be compliant and
@@ -410,21 +410,21 @@ policy](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy):
 
 2.  Configure System Security Settings.
 
-> <img src=".//media/image14.png" style="width:6.05945in;height:5.79375in" alt="A screenshot of a cell phone Description automatically generated" />
+> <img src="./media/endpoints/image14.png" style="width:6.05945in;height:5.79375in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  Configure Microsoft Defender Antimalware.
 
-> <img src=".//media/image15.png" style="width:6.16875in;height:2.05062in" alt="A screenshot of a cell phone Description automatically generated" />
+> <img src="./media/endpoints/image15.png" style="width:6.16875in;height:2.05062in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  Configure the required Microsoft Defender ATP machine risk score.
 
-<img src=".//media/image16.png" style="width:6.10625in;height:1.0747in" alt="A screenshot of a cell phone Description automatically generated" />
+<img src="./media/endpoints/image16.png" style="width:6.10625in;height:1.0747in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  On the Actions for noncompliance tab, specify a sequence of actions
     to apply automatically to devices that do not meet this compliance
     policy.
 
-<img src=".//media/image17.png" style="width:5.96875in;height:1.79763in" alt="A screenshot of a cell phone Description automatically generated" />
+<img src="./media/endpoints/image17.png" style="width:5.96875in;height:1.79763in" alt="A screenshot of a cell phone Description automatically generated" />
 
 **Automate notification email and add additional remediation actions for
 noncompliant devices in Intune (all platforms)**
@@ -443,7 +443,7 @@ Take these steps:
 
 2.  Create a notification message template.
 
-<img src=".//media/image18.png" style="width:4.52059in;height:3.35664in" alt="A screenshot of a cell phone Description automatically generated" />
+<img src="./media/endpoints/image18.png" style="width:4.52059in;height:3.35664in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  Select Devices &gt; Compliance policies &gt; Policies, select one of
     your policies, and then select **Properties**.
@@ -452,7 +452,7 @@ Take these steps:
 
 3.  Add actions for noncompliance:
 
-> <img src=".//media/image17.png" style="width:6.18125in;height:1.86163in" alt="A screenshot of a cell phone Description automatically generated" />
+> <img src="./media/endpoints/image17.png" style="width:6.18125in;height:1.86163in" alt="A screenshot of a cell phone Description automatically generated" />
 
 a.  Set up an automated email to users with noncompliant devices.
 
@@ -503,7 +503,7 @@ Follow these steps:
 
     c.  Reconfigure the default settings to meet your business needs.  
           
-        <img src=".//media/image19.png" style="width:4.18891in;height:3.40752in" alt="Expand a group to view the settings for that group" />
+        <img src="./media/endpoints/image19.png" style="width:4.18891in;height:3.40752in" alt="Expand a group to view the settings for that group" />
 
 4.  On the Assignments tab, select groups to include and then assign the
     baseline to one or more groups. To fine-tune the assignment, use
@@ -533,7 +533,7 @@ Follow these steps:
     b.  Under Update ring settings, configure settings for your business
         needs.
 
-> <img src=".//media/image20.png" style="width:4.34483in;height:3.87317in" alt="A screenshot of a cell phone Description automatically generated" />
+> <img src="./media/endpoints/image20.png" style="width:4.34483in;height:3.87317in" alt="A screenshot of a cell phone Description automatically generated" />
 
 a.  Under Assignments, choose + Select groups to include, and then
     assign the update ring to one or more groups. To fine-tune the
@@ -602,7 +602,7 @@ Follow these steps:
     c.  Weekly schedule: If you choose a schedule type other than update
         at next check-in, configure the following options:
 
-> <img src=".//media/image21.png" style="width:4.7161in;height:3.38542in" alt="Example of selecting to update during scheduled time" />
+> <img src="./media/endpoints/image21.png" style="width:4.7161in;height:3.38542in" alt="Example of selecting to update during scheduled time" />
 
 1.  Choose a time zone.
 
@@ -625,11 +625,11 @@ devices](https://docs.microsoft.com/mem/intune/protect/encrypt-devices)
     a.  Platform: Windows 10 and later
 
     b.  Profile type: Endpoint protection  
-        <img src=".//media/image22.png" style="width:4.14733in;height:3.07017in" alt="Select the BitLocker profile" />
+        <img src="./media/endpoints/image22.png" style="width:4.14733in;height:3.07017in" alt="Select the BitLocker profile" />
 
 3.  Select Settings** &gt; **Windows Encryption  
       
-    <img src=".//media/image23.png" style="width:4.47797in;height:3.7326in" alt="BitLocker settings" />
+    <img src="./media/endpoints/image23.png" style="width:4.47797in;height:3.7326in" alt="BitLocker settings" />
 
 4.  Configure settings for BitLocker to meet your business needs, and
     then select **OK**.
@@ -644,11 +644,11 @@ devices](https://docs.microsoft.com/mem/intune/protect/encrypt-devices-filevault
     a.  Platform: macOS.
 
     b.  Profile type: Endpoint protection.  
-        <img src=".//media/image24.png" style="width:4.13154in;height:2.96491in" alt="Select the FileVault profile" />
+        <img src="./media/endpoints/image24.png" style="width:4.13154in;height:2.96491in" alt="Select the FileVault profile" />
 
 3.  Select Settings** &gt; **FileVault.  
       
-    <img src=".//media/image25.png" style="width:4.72845in;height:3.54937in" alt="FileVault settings" />
+    <img src="./media/endpoints/image25.png" style="width:4.72845in;height:3.54937in" alt="FileVault settings" />
 
 4.  For FileVault, select **Enable**.
 
@@ -739,7 +739,7 @@ Follow these steps:
 > [Learn about implementing an end-to-end Zero Trust strategy for
 > data](https://aka.ms/ZTData)
 >
-> <img src=".//media/image26.png" style="width:0.58974in;height:0.52036in" />**Additional
+> <img src="./media/endpoints/image26.png" style="width:0.58974in;height:0.52036in" />**Additional
 > deployment objectives**
 
 I.  **Endpoint threat detection is used to monitor device risk.**
@@ -783,7 +783,7 @@ Choose the option to import or get data from an Odata feed.
 5.  Select **Organization account**, and then sign in with your Intune
     credentials.
 
-> <img src=".//media/image27.png" style="width:5in;height:2in" alt="Organizational account credentials" />
+> <img src="./media/endpoints/image27.png" style="width:5in;height:2in" alt="Organizational account credentials" />
 
 1.  Select **Connect**. The Navigator will open and show you the list of
     tables in the Intune Data Warehouse.
@@ -847,6 +847,6 @@ Trust pillars.
 
 **The Zero Trust deployment guide series**
 
-| <img src=".//media/image28.emf" style="width:0.34215in;height:0.34215in" /> | <img src=".//media/image29.png" style="width:0.20833in;height:0.26316in" /> | <img src=".//media/image1.png" style="width:0.28564in;height:0.23809in" /> | <img src=".//media/image31.emf" style="width:0.26496in;height:0.26496in" /> | <img src=".//media/image32.png" style="width:0.26189in;height:0.22618in" /> | <img src=".//media/image34.png" style="width:0.2375in;height:0.26181in" /> | <img src=".//media/image35.png" style="width:0.24653in;height:0.24653in" /> | <img src=".//media/image36.png" style="width:0.27908in;height:0.27908in" /> |
+| <img src="./media/endpoints/image28.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/endpoints/image29.png" style="width:0.20833in;height:0.26316in" /> | <img src="./media/endpoints/image1.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/endpoints/image31.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/endpoints/image32.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/endpoints/image34.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/endpoints/image35.png" style="width:0.24653in;height:0.24653in" /> | <img src="./media/endpoints/image36.png" style="width:0.27908in;height:0.27908in" /> |
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | [Introduction](https://aka.ms/ZTDeploymentGuideIntroduction)                | [Identity](https://aka.ms/ZTIdentity)                                       | [Endpoints](https://aka.ms/ZTEndpoints)                                    | [Applications](https://aka.ms/ZTApplications)                               | [Data](https://aka.ms/ZTData)                                               | [Network](https://aka.ms/ZTNetwork)                                        | [Infrastructure](https://aka.ms/ZTInfrastructure)                           | [Visibility, Automation, Orchestration](https://aka.ms/ZTCrossPillars)      |

@@ -81,7 +81,7 @@ Once an identity has been granted access to a resource, data can flow to a varie
 :::row-end:::
 :::row:::
    :::column:::
-:::image type="content" source="./media/intro/icon-application-window.png" alt-text="Endpoint devices icon." border="false":::
+:::image type="content" source="./media/intro/icon-application-window.png" alt-text="Application window icon." border="false":::
    :::column-end:::
    :::column:::
 **Secure applications with Zero Trust -** [aka.ms/ZTApplications](https://aka.ms/ZTApplications)
@@ -130,10 +130,10 @@ All data is ultimately accessed over network infrastructure. Networking controls
 <!--
 <img src="./media/intro/image9.png" style="width:0.24653in;height:0.24653in" />
 -->
-:::image type="content" source="./media/intro/icon-gear.png" alt-text="Network diagram icon." border="false":::
+:::image type="content" source="./media/intro/icon-gear.png" alt-text="Gear icon." border="false":::
    :::column-end:::
    :::column:::
-**Visibility, automation, and orchestration** **with Zero Trust** - [aka.ms/ZTCrossPillars](https://aka.ms/ZTCrossPillars)
+**Visibility, automation, and orchestration with Zero Trust** - [aka.ms/ZTCrossPillars](https://aka.ms/ZTCrossPillars)
 
 In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints and devices, data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
 

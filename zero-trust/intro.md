@@ -48,7 +48,7 @@ Zero Trust.
 <!--
 <img src="./media/image1.png" style="width:5.82154in;height:1.56944in" />
 -->
-:::image type="content" source="./media/intro/image1.png" alt-text="" border="false":::
+:::image type="content" source="./media/intro/image1.png" alt-text="Diagram of Zero Trust security: visibility, automation, and orchestration." border="false":::
 
 **Follow the steps below to mature your organization's approach to
 security and optimize how Zero Trust is implemented:**

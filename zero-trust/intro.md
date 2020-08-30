@@ -128,9 +128,9 @@ All data is ultimately accessed over network infrastructure. Networking controls
 :::row:::
    :::column:::
 <!--
-<img src="./media/intro/image9.png" style="width:0.24653in;height:0.24653in" />
+:::image type="content" source="./media/intro/icon-gear.png" alt-text="Gear icon." border="false":::
 -->
-:::image type="content" source="./media/intro/icon-gear.png" alt-text="Gear icon." border="false" style="width:0.25in;height:0.25in":::
+<img src="./media/intro/icon-gear.png" style="width:0.25in;height:0.25in" />
    :::column-end:::
    :::column span="3":::
 **Visibility, automation, and orchestration with Zero Trust** - [aka.ms/ZTCrossPillars](https://aka.ms/ZTCrossPillars)

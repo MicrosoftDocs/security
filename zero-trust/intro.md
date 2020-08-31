@@ -48,7 +48,7 @@ Zero Trust.
 <!--
 <img src="./media/image1.png" style="width:5.82154in;height:1.56944in" />
 -->
-:::image type="content" source="./media/intro/image1.png" alt-text="Diagram of Zero Trust security: visibility, automation, and orchestration." border="false":::
+:::image type="content" source="./media/intro/zero-trust-security-elements-diagram.png" alt-text="Diagram of Zero Trust security: visibility, automation, and orchestration." border="false":::
 
 **Follow the steps below to mature your organization's approach to
 security and optimize how Zero Trust is implemented:**
@@ -128,9 +128,9 @@ All data is ultimately accessed over network infrastructure. Networking controls
 :::row:::
    :::column:::
 <!--
-:::image type="content" source="./media/intro/icon-gear.png" alt-text="Gear icon." border="false":::
--->
 <img src="./media/intro/icon-gear.png" style="width:75px;height:75px" />
+-->
+:::image type="content" source="./media/intro/icon-gear.png" alt-text="Gear icon." border="false":::
    :::column-end:::
    :::column span="3":::
 **Visibility, automation, and orchestration with Zero Trust** - [aka.ms/ZTCrossPillars](https://aka.ms/ZTCrossPillars)

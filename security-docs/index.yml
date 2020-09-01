@@ -97,13 +97,13 @@ additionalContent:
         # Card
         - title: Governance and strategy
           links:
-            - text: Overview
+            - text: Modernize security strategy
               url: https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
-            - text: Videos and slides
+            - text: Governance videos and slides
               url: /security/compass/governance-risk-compliance-videos-and-decks
-            - text: Article
+            - text: Governance article
               url: /security/compass/governance
-            - text: Capabilities
+            - text: Governance capabilities
               url: /security/compass/governance-risk-compliance-capabilities
 
         # Card
@@ -112,7 +112,7 @@ additionalContent:
             - text: Videos and slides
               url: /security/compass/network-containment-videos-and-decks
             - text: Article
-              url: https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+              url: /security/compass/network-security-containment
             - text: Capabilities
               url: /security/compass/network-containment-capabilities
 
@@ -122,7 +122,7 @@ additionalContent:
             - text: Videos and slides
               url: /security/compass/identity-videos-and-decks
             - text: Article
-              url: https://docs.microsoft.com/azure/architecture/framework/security/identity?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+              url: /security/compass/identity
             - text: Capabilities
               url: /security/compass/identity-capabilities
 
@@ -132,7 +132,7 @@ additionalContent:
             - text: Videos and slides
               url: /security/compass/information-protection-and-storage-videos-and-decks
             - text: Article
-              url: https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+              url: /security/compass/storage-data-encryption
             - text: Capabilities
               url: /security/compass/information-protection-and-storage-capabilities
 
@@ -140,7 +140,7 @@ additionalContent:
         - title: Applications and services
           links:
             - text: Article
-              url: https://docs.microsoft.com/azure/architecture/framework/security/applications-services
+              url: /security/compass/applications-services
 
         # Card
         - title: Security operations
@@ -148,7 +148,7 @@ additionalContent:
             - text: Videos and slides
               url: /security/compass/security-operations-videos-and-decks
             - text: Article
-              url: https://docs.microsoft.com/en-us/azure/architecture/framework/security/security-operations?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+              url: /security/compass/security-operations
             - text: Capabilities
               url: /security/compass/security-operations-capabilities
 
@@ -158,7 +158,7 @@ additionalContent:
             - text: Videos and slides
               url: /security/compass/administration-videos-and-decks
             - text: Article
-              url: https://docs.microsoft.com/en-us/azure/architecture/framework/security/critical-impact-accounts?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+              url: /security/compass/critical-impact-accounts
 
 
 #  Section 3

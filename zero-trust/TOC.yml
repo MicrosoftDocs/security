@@ -3,7 +3,7 @@
   items:
     - name: Zero Trust overview
       href: index.md
-    - name: Zero Trust Intro
+    - name: Secure identity
       href: identity.md
     - name: Secure endpoints
       href: endpoints.md

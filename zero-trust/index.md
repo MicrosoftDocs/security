@@ -27,7 +27,7 @@ always verify."
 ## Guiding principles of Zero Trust
 
 | Verify&nbsp;explicitly | Use least privileged access | Assume breach |
-|—|—|—|
+|------|-------|------|
 | Always authenticate and authorize based on all available data points. | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. |
 
 
@@ -60,7 +60,7 @@ security and optimize how Zero Trust is implemented:**
 -->
 :::image type="content" source="./media/intro/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
 [**Secure identity with Zero Trust**](./identity.md)
 
 Identities—whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow least privilege access principles.
@@ -73,7 +73,7 @@ Identities—whether they represent people, services, or IoT devices—define th
 -->
 :::image type="content" source="./media/intro/icon-endpoint-devices.png" alt-text="Endpoint devices icon." border="false":::
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
 [**Secure endpoints with Zero Trust**](./endpoints.md)
 
 Once an identity has been granted access to a resource, data can flow to a variety of different endpoints—from IoT devices to smartphones, BYOD to partner-managed devices, and on-premises workloads to cloud-hosted servers. This diversity creates a massive attack surface area. Monitor and enforce device health and compliance for secure access.
@@ -83,7 +83,7 @@ Once an identity has been granted access to a resource, data can flow to a varie
    :::column:::
 :::image type="content" source="./media/intro/icon-application-window.png" alt-text="Application window icon." border="false":::
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
 [**Secure applications with Zero Trust**](./applications.md)
 
 Applications and APIs provide the interface by which data is consumed. They may be legacy on-premises, lifted-and-shifted to cloud workloads, or modern SaaS applications. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.
@@ -96,8 +96,8 @@ Applications and APIs provide the interface by which data is consumed. They may 
 -->
 :::image type="content" source="./media/intro/icon-ones-and-zeroes.png" alt-text="Ones and zeroes icon." border="false":::
    :::column-end:::
-   :::column span="2":::
-[**Secure data with Zero Trust](./data.md)
+   :::column span="3":::
+[**Secure data with Zero Trust**](./data.md)
 
 Ultimately, security teams are protecting data. Where possible, data should remain safe even if it leaves the devices, apps, infrastructure, and networks the organization controls. Classify, label, and encrypt data, and restrict access based on those attributes.
    :::column-end:::
@@ -109,7 +109,7 @@ Ultimately, security teams are protecting data. Where possible, data should rema
 -->
 :::image type="content" source="./media/intro/icon-data-storage-disks.png" alt-text="Data storage disks icon." border="false":::
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
 [**Secure infrastructure with Zero Trust**](./infrastructure.md)
 
 Infrastructure—whether on-premises servers, cloud-based VMs, containers, or micro-services—represents a critical threat vector. Assess for version, configuration, and JIT access to harden defense. Use telemetry to detect attacks and anomalies, and automatically block and flag risky behavior and take protective actions.
@@ -119,7 +119,7 @@ Infrastructure—whether on-premises servers, cloud-based VMs, containers, or mi
    :::column:::
 :::image type="content" source="./media/intro/icon-network-diagram.png" alt-text="Network diagram icon." border="false":::
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
 [**Secure networks with Zero Trust**](./networks.md)
 
 All data is ultimately accessed over network infrastructure. Networking controls can provide critical controls to enhance visibility and help prevent attackers from moving laterally across the network. Segment networks (and do deeper in-network micro-segmentation) and deploy real-time threat protection, end-to-end encryption, monitoring, and analytics.
@@ -132,7 +132,7 @@ All data is ultimately accessed over network infrastructure. Networking controls
 -->
 :::image type="content" source="./media/intro/icon-gear.png" alt-text="Gear icon." border="false":::
    :::column-end:::
-   :::column span="2":::
+   :::column span="3":::
 [**Visibility, automation, and orchestration with Zero Trust**](./visibility-automation-orchestration.md)
 
 In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints and devices, data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.

@@ -15,13 +15,17 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 08/11/2020
+  ms.date: 09/01/2020
 
 
 # Maximum of 8 items
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
+    # Card
+    - title: Cybersecurity roles and responsibilities
+      itemType: overview
+      url: https://www.microsoft.com/security/blog/2020/08/06/organize-security-team-evolution-cybersecurity-roles-responsibilities/
     # Card
     - title: Cloud Adoption Framework for Azure - Define a security strategy
       itemType: concept
@@ -34,10 +38,6 @@ highlightedContent:
     - title: Become an Azure Sentinel Ninja - level 400 training
       itemType: learn
       url: https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310
-    # Card
-    - title: Zero Trust maturity model and guidance
-      itemType: overview
-      url: https://www.microsoft.com/security/business/zero-trust
     # Card
     - title: Lessons learned from the Microsoft SOC - Zen and the art of threat hunting
       itemType: concept
@@ -95,12 +95,14 @@ additionalContent:
       summary: Microsoft security best practices that help you improve your security posture
       items:
         # Card
-        - title: Governance, risk, and compliance
+        - title: Governance and strategy
           links:
+            - text: Overview
+              url: https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
             - text: Videos and slides
               url: /security/compass/governance-risk-compliance-videos-and-decks
             - text: Article
-              url: https://docs.microsoft.com/azure/architecture/framework/security/governance?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json
+              url: /security/compass/governance
             - text: Capabilities
               url: /security/compass/governance-risk-compliance-capabilities
 

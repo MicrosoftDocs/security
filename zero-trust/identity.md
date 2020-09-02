@@ -9,7 +9,6 @@ ms.topic: conceptual
 ---
 
 # Securing identity with Zero Trust
-<img src="./media/identity/icon-fingerprint-large.png" style="float:right">
 <!--
 <img src="./media/identity/image1.png" style="width:0.37778in;height:0.47708in" />
 -->
@@ -17,6 +16,7 @@ ms.topic: conceptual
 **Background**
 -->
 
+<img src="./media/identity/icon-fingerprint-large.png" style="float:right">
 Cloud applications and the mobile workforce have redefined the security
 perimeter. Employees are bringing their own devices and working
 remotely. Data is being accessed outside the corporate network and
@@ -54,7 +54,7 @@ apps, and [visibility](./visibility-automation-orchestration.md) into identity
 risk is very limited.
 
 When implementing an end-to-end Zero Trust framework for identity, we
-recommend you focus first on these **initial deployment objectives**:
+recommend you focus first on these _initial_ deployment objectives:
 
 :::row:::
    :::column:::
@@ -71,7 +71,9 @@ activities.
 :::row-end:::
 :::row:::
    :::column span="4":::
-Once these are completed, focus on these additional deployment objectives:
+
+After these are completed, focus on these _additional_ deployment objectives:
+
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -113,9 +115,15 @@ determine risk and deliver ongoing protection.
 
 This guide will walk you through the steps required to manage identities following the principles of a Zero Trust security framework.
 
-<img src="./media/identity/image7.png" style="width:0.5812in;height:0.51282in" />
 
+:::row:::
+   :::column:::
+:::image type="content" source="./media/identity/icon-checklist-one-checkmark-large.png" alt-text="Checklist icon with one checkmarks." border="false":::
+   :::column-end:::
+   :::column span="3":::
 ### Initial deployment objectives
+   :::column-end:::
+:::row-end:::
 
 #### Cloud identity federates with on-premises identity systems
 
@@ -269,8 +277,7 @@ Take this step:
 and [best practices](https://aka.ms/resilientaad) for resilient
 Conditional Access policies.
 
-### Register devices with Azure AD to restrict access from vulnerable and
-compromised devices
+### Register devices with Azure AD to restrict access from vulnerable and compromised devices
 
 Follow these steps:
 
@@ -312,7 +319,7 @@ Azure or using a SIEM system of choice.
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/identity/image9.png" alt-text="Checklist icon with two checkmarks." border="false":::
+:::image type="content" source="./media/identity/icon-checklist-two-checkmarks-large.png" alt-text="Checklist icon with two checkmarks." border="false":::
    :::column-end:::
    :::column span="3":::
 ### Additional deployment objectives

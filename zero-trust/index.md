@@ -58,7 +58,7 @@ security and optimize how Zero Trust is implemented:**
 <!--
 <img src="./media/intro/image2.png" style="width:0.51701in;height:0.51701in" />
 -->
-:::image type="content" source="./media/intro/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::
+:::image type="content" source="./media/intro/icon-fingerprint-large.png" alt-text="Fingerprint icon." border="false":::
    :::column-end:::
    :::column span="3":::
 [**Secure identity with Zero Trust**](./identity.md)

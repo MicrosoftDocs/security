@@ -9,12 +9,13 @@ ms.topic: conceptual
 ---
 
 # Securing identity with Zero Trust
-<img src="./media/identity/icon-fingerprint-large.png" style="float: right;">
+<img src="./media/identity/icon-fingerprint-large.png" style="float:right">
 <!--
 <img src="./media/identity/image1.png" style="width:0.37778in;height:0.47708in" />
 -->
-
+<!--
 **Background**
+-->
 
 Cloud applications and the mobile workforce have redefined the security
 perimeter. Employees are bringing their own devices and working
@@ -55,25 +56,38 @@ risk is very limited.
 When implementing an end-to-end Zero Trust framework for identity, we
 recommend you focus first on these **initial deployment objectives**:
 
-1.  <img src="./media/identity/image3.png" style="width:0.40746in;height:0.35952in" />Cloud
-identity federates with on-premises identity systems.
+:::row:::
+   :::column:::
+:::image type="content" source="./media/identity/image3.png" alt-text="List icon with one checkmark." border="false":::
+   :::column-end:::
+   :::column span="3":::
+1. Cloud identity federates with on-premises identity systems.
 
 2. Conditional Access policies gate access and provide remediation
 activities.
 
 3. Analytics improve visibility.
-
-Once these are completed, focus on these **additional deployment
-objectives:**
-
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+Once these are completed, focus on these additional deployment objectives:
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column::: 
+:::image type="content" source="./media/identity/image5.png" alt-text="List icon with two checkmarks." border="false":::
+   :::column-end:::
+   :::column span="3":::
 4.  Identities and access privileges are managed with identity
 governance.
 
-5. <img src="./media/identity/image5.png" style="width:0.41875in;height:0.36944in" />User,
-device, location, and behavior is analyzed in real time to
+5. User, device, location, and behavior is analyzed in real time to
 determine risk and deliver ongoing protection.
 
 6. Threat signals from other security solutions are integrated.
+   :::column-end:::
+:::row-end:::
 
 ## Products covered in this guide
 
@@ -95,16 +109,15 @@ determine risk and deliver ongoing protection.
 [Exchange Online](https://www.microsoft.com/microsoft-365/exchange/email)
 
 
-
 ## Identity Zero Trust deployment guide
 
-### This guide will walk you through the steps required to manage identities following the principles of a Zero Trust security framework.
+This guide will walk you through the steps required to manage identities following the principles of a Zero Trust security framework.
 
-### <img src="./media/identity/image7.png" style="width:0.5812in;height:0.51282in" />
+<img src="./media/identity/image7.png" style="width:0.5812in;height:0.51282in" />
 
-**Initial deployment objectives**
+### Initial deployment objectives
 
-I.  **Cloud identity federates with on-premises identity systems.**
+#### Cloud identity federates with on-premises identity systems
 
 Azure Active Directory (AD) enables strong authentication, a point of
 integration for endpoint security, and the core of your user-centric
@@ -114,6 +127,30 @@ resources based on user identity, environment, device health, and
 risk—verified explicitly at the point of access. We will show how you
 can implement a Zero Trust identity strategy with Azure AD.
 
+:::row:::
+   :::column:::
+Connect all of your users to Azure AD and federate with on-premises identity systems.
+   :::column-end:::
+   :::column:::
+→
+   :::column-end:::
+   :::column:::
+Establish your Identity Foundation with Azure AD.
+   :::column-end:::
+   :::column:::
+→
+   :::column-end:::
+   :::column:::
+Integrate all your applications with Azure AD.
+   :::column-end:::
+   :::column:::
+→
+   :::column-end:::
+   :::column:::
+Verify explicitly with strong authentication.
+   :::column-end:::
+:::row-end:::
+
 ### Connect all of your users to Azure AD and federate with on-premises identity systems
 
 Maintaining a healthy pipeline of your employees' identities and the necessary security artifacts (groups for authorization and endpoints for extra access policy controls) puts you in the best place to use consistent identities and controls in the cloud. 
@@ -121,22 +158,20 @@ Maintaining a healthy pipeline of your employees' identities and the necessary s
 Follow these steps:
 
 1.  [Choose an authentication option](https://aka.ms/auth-options).
-    Azure AD provides you the best brute force, DDoS, and password spray
-    protection, but make the decision that's right for your organization
-    and your compliance needs.
+Azure AD provides you the best brute force, DDoS, and password spray
+protection, but make the decision that's right for your organization
+and your compliance needs.
 
 2.  Only bring the identities you absolutely need. For example, use
-    going to the cloud as an opportunity to leave behind service
-    accounts that only make sense on-premises. Leave on-premises
-    privileged roles behind.
+going to the cloud as an opportunity to leave behind service
+accounts that only make sense on-premises. Leave on-premises
+privileged roles behind.
 
 3.  If your enterprise has more than 100,000 users, groups, and devices
-    combined [build a high performance sync
-    box](https://aka.ms/aadconnectperf) that will keep your life cycle
-    up to date.
+combined [build a high performance sync box](https://aka.ms/aadconnectperf) that will keep your life cycle up to date.
 
 
-**Establish your Identity Foundation with Azure AD**
+### Establish your Identity Foundation with Azure AD
 
 A Zero Trust strategy requires verifying explicitly, using
 least-privileged access principles, and assuming breach. Azure AD can
@@ -152,7 +187,7 @@ possible decisions about the authentication/authorization risk. In
 addition, single sign-on and consistent policy guardrails provide
 a better user experience and contribute to productivity gains.
 
-**Integrate all your applications with Azure AD**
+### Integrate all your applications with Azure AD
 
 Single sign-on prevents users from leaving copies of their credentials
 in various apps and helps avoid users get used to surrendering their
@@ -167,26 +202,26 @@ becoming the first doubters of your Zero Trust strategy.
 Follow these steps:
 
 1.  [Integrate modern enterprise applications](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-sso-deployment)
-    that speak OAuth2.0 or SAML.
+that speak OAuth2.0 or SAML.
 
 2.  For Kerberos and form-based auth applications, [integrate them using the Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-deployment-plan).
 
 3.  If you publish your legacy applications using application delivery
-    networks/controllers, use Azure AD to
-    [integrate](https://docs.microsoft.com/azure/active-directory/manage-apps/secure-hybrid-access)
-    with most of the major ones (such as Citrix, Akamai, and F5).
+networks/controllers, use Azure AD to
+[integrate](https://docs.microsoft.com/azure/active-directory/manage-apps/secure-hybrid-access)
+with most of the major ones (such as Citrix, Akamai, and F5).
 
 4.  To help discover and migrate your apps off of ADFS and
-    existing/older IAM engines, review [resources and tools](https://docs.microsoft.com/azure/active-directory/manage-apps/migration-resources).
+existing/older IAM engines, review [resources and tools](https://docs.microsoft.com/azure/active-directory/manage-apps/migration-resources).
 
 5.  [Power push identities into your various cloud applications](https://docs.microsoft.com/azure/active-directory/app-provisioning/plan-auto-user-provisioning).
-    This gives you a tighter identity lifecycle integration within those
-    apps.
+This gives you a tighter identity lifecycle integration within those
+apps.
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
 
-**Verify explicitly with strong authentication**
+### Verify explicitly with strong authentication
 
 Follow these steps:
 
@@ -213,7 +248,7 @@ like multi-factor authentication (MFA). CA policies allow you to prompt
 users for MFA when needed for security and stay out of users' way when
 not needed.
 
-<img src="./media/identity/image8.png" style="width:5.55171in;height:3.47639in" />
+:::image type="content" source="./media/identity/conditional-access-policies-diagram.png" alt-text="Diagram of Conditional Access policies in Zero Trust." border="false":::
 
 Microsoft provides standard conditional policies called [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that
 ensure a basic level of security. However, your organization may need
@@ -230,12 +265,12 @@ informs the risk of Identity Protection mentioned above.
 
 Take this step:
 
-1.  Check out our [deployment guidance](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access)
+ - Check out our [deployment guidance](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access)
 and [best practices](https://aka.ms/resilientaad) for resilient
 Conditional Access policies.
 
-**Register devices with Azure AD to restrict access from vulnerable and
-compromised devices**
+### Register devices with Azure AD to restrict access from vulnerable and
+compromised devices
 
 Follow these steps:
 
@@ -267,24 +302,54 @@ As you build your estate in Azure AD with authentication, authorization,
 and provisioning, it's important to have strong operational insights
 into what is happening in the directory.
 
-**Configure your logging and reporting to improve visibility**
+### Configure your logging and reporting to improve visibility
 
 Take this step:
 
-1.  [Plan an Azure AD reporting and monitoring deployment](https://docs.microsoft.com/azure/active-directory/reports-monitoring/plan-monitoring-and-reporting)
+ - [Plan an Azure AD reporting and monitoring deployment](https://docs.microsoft.com/azure/active-directory/reports-monitoring/plan-monitoring-and-reporting)
 to be able to persist and analyze logs from Azure AD, either in
 Azure or using a SIEM system of choice.
 
-<img src="./media/identity/image9.png" style="width:0.58974in;height:0.52036in" />
-
-**Additional deployment objectives**
+:::row:::
+   :::column:::
+:::image type="content" source="./media/identity/image9.png" alt-text="Checklist icon with two checkmarks." border="false":::
+   :::column-end:::
+   :::column span="3":::
+### Additional deployment objectives
+   :::column-end:::
+:::row-end:::
 
 ## Identities and access privileges are managed with identity governance
 
 Once you've accomplished your initial three objectives, you can focus on
 additional objectives such as more robust identity governance.
 
-**Secure privileged access with Privileged Identity Management**
+:::row:::
+   :::column:::
+Secure privileged access with Privileged Identity Management.
+   :::column-end:::
+   :::column:::
+→
+   :::column-end:::
+   :::column:::
+Restrict user content to applications.
+   :::column-end:::
+   :::column:::
+→
+   :::column-end:::
+   :::column:::
+Manage entitlement.
+   :::column-end:::
+   :::column:::
+→
+   :::column-end:::
+   :::column:::
+User passwordless authentication to reduce the risk of phishing and password attacks.
+   :::column-end:::
+:::row-end:::
+
+
+### Secure privileged access with Privileged Identity Management
 
 Control the endpoints, conditions, and credentials that users use to
 access privileged operations/roles.
@@ -299,7 +364,7 @@ mission-critical apps run and handle data.
 
 2.  [Use Privileged Identity Management to secure privileged identities](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-deployment-plan).
 
-**Restrict user consent to applications**
+### Restrict user consent to applications
 
 User consent to applications is a very common way for modern
 applications to get access to organizational resources, but there are
@@ -320,8 +385,7 @@ apps" in our [guide to implementing an identity Zero Trust
 strategy](https://aka.ms/ZTIdentity).
 
 
-
-**Manage entitlement**
+### Manage entitlement
 
 With applications centrally authenticating and driven from Azure AD, you
 can now streamline your access request, approval, and recertification
@@ -341,7 +405,7 @@ organization at this time, at least enable self-service paradigms
 in your organization by deploying [self-service group management](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-self-service-management)
 and [self-service application access](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-self-service-access).
 
-**Use passwordless authentication to reduce the risk of phishing and password attacks**
+### Use passwordless authentication to reduce the risk of phishing and password attacks
 
 With Azure AD supporting FIDO 2.0 and passwordless phone sign-in, you
 can move the needle on the credentials that your users (especially
@@ -358,7 +422,32 @@ in your organization.
 
 Real-time analysis is critical for determining risk and protection.
 
-**Deploy Azure AD Password Protection**
+:::row:::
+   :::column:::
+Deploy Azure AD Password Protection.
+   :::column-end:::
+   :::column:::
+→
+   :::column-end:::
+   :::column:::
+Enable Identity Protection.
+   :::column-end:::
+   :::column:::
+→
+   :::column-end:::
+   :::column:::
+Enable Microsoft Cloud App Security integration with Identity Protection.
+   :::column-end:::
+   :::column:::
+→
+   :::column-end:::
+   :::column:::
+Enable Conditional Access integration with Microsoft Cloud App Security.
+   :::column-end:::
+:::row-end:::
+
+
+### Deploy Azure AD Password Protection
 
 While enabling other methods to verify users explicitly, don't ignore
 weak passwords, password spray, and breach replay attacks. And [classic complex password policies do not prevent the most prevalent password attacks](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984).
@@ -368,7 +457,7 @@ Take this step:
  - Enable Azure AD Password Protection for your users [in the cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)
 and [on-premises](https://docs.microsoft.com/azure/active-directory/authentication/howto-password-ban-bad-on-premises-deploy).
 
-**Enable Identity Protection**
+### Enable Identity Protection
 
 Get more granular session/user risk signal with Identity Protection.
 You'll be able to investigate risk and confirm compromise or dismiss the
@@ -377,10 +466,9 @@ like in your environment.
 
 Take this step:
 
- - [Enable Identity
-    Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
+ - [Enable Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
-**Enable Microsoft Cloud App Security integration with Identity Protection**
+### Enable Microsoft Cloud App Security integration with Identity Protection
 
 Microsoft Cloud App Security (MCAS) monitors user behavior inside SaaS
 and modern applications. This informs Azure AD about what happened to
@@ -395,9 +483,9 @@ user or block them.
 Take this step:
 
  - [Enable MCAS monitoring](https://docs.microsoft.com/cloud-app-security/azip-integration)
-    to enrich the Identity Protection signal.
+to enrich the Identity Protection signal.
 
-**Enable Conditional Access integration with Microsoft Cloud App Security**
+### Enable Conditional Access integration with Microsoft Cloud App Security
 
 Using signals emitted after authentication and with MCAS proxying
 requests to applications, you will be able to monitor sessions going to
@@ -409,7 +497,7 @@ Follow these steps:
 
 2.  [Extend Conditional Access to on-premises apps](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-microsoft-cloud-application-security).
 
-**Enable restricted session for use in access decisions**
+### Enable restricted session for use in access decisions
 
 When a user's risk is low, but they are signing in from an unknown
 endpoint, you may want to allow them access to critical resources, but
@@ -429,7 +517,7 @@ Take this step:
 Finally, other security solutions can be integrated for greater
 effectiveness.
 
-**Integrate Azure Advanced Threat Protection with Microsoft Cloud App Security**
+### Integrate Azure Advanced Threat Protection with Microsoft Cloud App Security
 
 Integration with Azure Advanced Threat Protection (Azure ATP) enables
 Azure AD to know that a user is indulging in risky behavior while
@@ -447,7 +535,7 @@ the risk signal we know about the user.
 for each user at risk to give a holistic view of which ones your SOC
 should focus on.
 
-**Enable Microsoft Defender Advanced Threat Protection**
+### Enable Microsoft Defender Advanced Threat Protection
 
 Microsoft Defender Advanced Threat Protection (Defender ATP) allows you
 to attest to the health of Windows machines and determine whether they

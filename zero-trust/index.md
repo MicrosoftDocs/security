@@ -48,7 +48,7 @@ Zero Trust.
 <!--
 <img src="./media/image1.png" style="width:5.82154in;height:1.56944in" />
 -->
-:::image type="content" source="./media/intro/zero-trust-security-elements-diagram.png" alt-text="Diagram of Zero Trust security: visibility, automation, and orchestration." border="false":::
+:::image type="content" source="./media/intro/zero-trust-security-elements-diagram.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
 **Follow the steps below to mature your organization's approach to
 security and optimize how Zero Trust is implemented:**
@@ -58,7 +58,7 @@ security and optimize how Zero Trust is implemented:**
 <!--
 <img src="./media/intro/image2.png" style="width:0.51701in;height:0.51701in" />
 -->
-:::image type="content" source="./media/intro/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::
+:::image type="content" source="./media/intro/icon-fingerprint-large.png" alt-text="Fingerprint icon." border="false":::
    :::column-end:::
    :::column span="3":::
 [**Secure identity with Zero Trust**](./identity.md)

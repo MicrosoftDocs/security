@@ -78,6 +78,6 @@ This release will **add** to the following roots:
 
 >[!NOTE]
 > * Windows 10 allows us to stop trusting roots or EKU's using the "NotBefore" or "Disable" properties, both of which allow us to remove certain capabilities of the root certificate without complete removal. These features are not available on versions prior to Windows 10. Earlier versions of Windows will be unaffected by this change. 
-> * The NotBefore and Disable dates are set for the first day of the release month. This means that all certificates issued after April 1st will be affected.  
+> * The NotBefore and Disable dates are set for the first day of the release month.   
 > * The update package will be available for download and testing at: <https://aka.ms/CTLDownload>
 > * Signatures on the Certificate Trust Lists (CTLs) for the Microsoft Trusted Root Program changed from dual-signed (SHA-1/SHA-2) to SHA-2 only. No customer action required. For more information, please visit: <https://support.microsoft.com/en-us/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus> 

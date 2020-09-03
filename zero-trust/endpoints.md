@@ -9,8 +9,9 @@ ms.topic: conceptual
 ---
 
 
-<img src="./media/endpoints/image1.png" style="width:0.44323in;height:0.36946in" />Secure endpoints with Zero Trust
-==========================================================================================================
+# Secure endpoints with Zero Trust
+<img src="./media/endpoints/image1.png" style="width:0.44323in;height:0.36946in" />
+
 
 **Background**
 
@@ -19,8 +20,7 @@ data. Not all endpoints are managed or even owned by the organization,
 leading to different device configurations and software patch levels.
 This creates a massive attack surface and, if left unresolved, accessing
 work data from untrusted endpoints can easily become the weakest link in
-your [Zero
-Trust](https://go.microsoft.com/fwlink/p/?LinkID=2109181&clcid=0x409&culture=en-us&country=US)
+your [Zero Trust](https://go.microsoft.com/fwlink/p/?LinkID=2109181&clcid=0x409&culture=en-us&country=US)
 security strategy.
 
 Zero Trust adheres to the principle, "Never trust, always verify." In
@@ -42,101 +42,80 @@ those endpoints impacts your security posture. You need to prevent
 corporate data from leaking to untrusted or unknown apps or services,
 either accidentally or through malicious intent.
 
-**There are a few key rules for securing devices and endpoints in a Zero
-Trust model:**
+**There are a few key rules for securing devices and endpoints in a Zero Trust model:**
 
 -   Zero Trust security policies are centrally enforced through the
-    cloud and cover endpoint security, device configuration, app
-    protection, device compliance, and risk posture.
+cloud and cover endpoint security, device configuration, app
+protection, device compliance, and risk posture.
 
 -   The platform as well as the apps that run on the devices are
-    securely provisioned, properly configured, and kept up to date.
+securely provisioned, properly configured, and kept up to date.
 
 -   There is automated and prompt response to contain access to
-    corporate data within the apps in case of a security compromise.
+corporate data within the apps in case of a security compromise.
 
 -   The access control system ensures that all policy controls are in
-    effect before the data is accessed.
+effect before the data is accessed.
 
-**  
-**
+
 
 ## Endpoint Zero Trust deployment objectives
 
-> **Before** most organizations **start the Zero Trust journey**, their
-> endpoint security is set up as follows:
+> [!NOTE]
+> **Before** most organizations **start the Zero Trust journey**, their endpoint security is set up as follows:
+> 
+> -   Endpoints are domain-joined and managed with solutions like Group Policy Objects or Configuration Manager*.* These are great options, but they don't leverage modern Windows 10 CSPs or require a separate cloud management gateway appliance to service cloud-based devices.
+> 
+> -   Endpoints are required to be on a corporate network to access data. This could mean that the devices are required to physically be on-site to access the corporate network, or that they require VPN access, which increases the risk that a compromised device could access sensitive corporate resources.
 
--   Endpoints are domain-joined and managed with solutions like Group
-    Policy Objects or Configuration Manager*.* These are great options,
-    but they don't leverage modern Windows 10 CSPs or require a separate
-    cloud management gateway appliance to service cloud-based devices.
+When implementing an end-to-end Zero Trust framework for securing endpoints, we recommend you focus first on these **initial deployment objectives**:
 
--   Endpoints are required to be on a corporate network to access data.
-    This could mean that the devices are required to physically be
-    on-site to access the corporate network, or that they require VPN
-    access, which increases the risk that a compromised device could
-    access sensitive corporate resources.
+:::row:::
+   :::column:::
+:::image type="content" source="./media/endpoints/icon-checklist-one-checkmark-large.png" alt-text="List icon with one checkmark." border="false":::
+   :::column-end:::
+   :::column span="3":::
+1. **Endpoints are registered with cloud identity providers.** In order to monitor security and risk across multiple endpoints used by any one person, you need [visibility](https://aka.ms/ZTCrossPillars) in all devices and access points that may be accessing your resources.
 
-When implementing an end-to-end Zero Trust framework for securing
-endpoints, we recommend you focus first on these **initial deployment
-objectives**:
+2. **Access is only granted to cloud-managed and compliant endpoints and apps.** Set compliance rules to ensure that devices meet minimum security requirements before access is granted. Also, set remediation rules for noncompliant devices so that people know how to resolve the issue.
 
-I.  <img src="./media/endpoints/image2.png" style="width:0.40746in;height:0.35952in" />**Endpoints
-    > are registered with cloud identity providers.** In order to
-    > monitor security and risk across multiple endpoints used by any
-    > one person, you need [visibility](https://aka.ms/ZTCrossPillars)
-    > in all devices and access points that may be accessing your
-    > resources.
+3. **Data loss prevention (DLP) policies are enforced for corporate devices and BYOD**. Control what the user can do with the data after they have access. For instance, restrict file saving to untrusted locations (such as local disk), or restrict copy-and-paste sharing with a consumer communication app or chat app to protect data.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
 
-II. **Access is only granted to cloud-managed and compliant endpoints
-    > and apps.** Set compliance rules to ensure that devices meet
-    > minimum security requirements before access is granted. Also, set
-    > remediation rules for noncompliant devices so that people know how
-    > to resolve the issue.
+After these are completed, focus on these **additional deployment objectives**:
 
-III. **Data loss prevention (DLP) policies are enforced for corporate
-     > devices and BYOD**. Control what the user can do with the data
-     > after they have access. For instance, restrict file saving to
-     > untrusted locations (such as local disk), or restrict
-     > copy-and-paste sharing with a consumer communication app or chat
-     > app to protect data.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column::: 
+:::image type="content" source="./media/endpoints/icon-checklist-two-checkmarks-large.png" alt-text="List icon with two checkmarks." border="false":::
+   :::column-end:::
+   :::column span="3":::
+4.  **Endpoint threat detection is used to monitor device risk.** Use a single pane of glass to manage all endpoints in a consistent way, and use a SIEM to route endpoint logs and transactions such that you get fewer, but actionable, alerts.
 
-Once these are completed, focus on these **additional deployment
-objectives**:
-
-I.  <img src="./media/endpoints/image4.png" style="width:0.41875in;height:0.36944in" />**Endpoint
-    > threat detection is used to monitor device risk.** Use a single
-    > pane of glass to manage all endpoints in a consistent way, and use
-    > a SIEM to route endpoint logs and transactions such that you get
-    > fewer, but actionable, alerts.
-
-II. **Access control is gated on endpoint risk for both corporate
-    > devices and BYOD.** Integrate data from Microsoft Defender
-    > Advanced Threat Protection (ATP), or other Mobile Threat Defense
-    > (MTD) vendors, as an information source for device compliance
-    > policies and device Conditional Access rules. The device risk will
-    > then directly influence what resources will be accessible by the
-    > user of that device.
+5. **Access control is gated on endpoint risk for both corporate devices and BYOD.** Integrate data from Microsoft Defender Advanced Threat Protection (ATP), or other Mobile Threat Defense (MTD) vendors, as an information source for device compliance policies and device Conditional Access rules. The device risk will then directly influence what resources will be accessible by the user of that device.
+   :::column-end:::
+:::row-end:::
 
 ## Products covered in this guide
 
 **Microsoft Azure**
 
-[Azure Active
-Directory](https://azure.microsoft.com/services/active-directory/)
+[Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
 
 **Microsoft 365**
 
 [Microsoft Endpoint Manager](https://www.microsoft.com/endpointmanager)
 (includes Microsoft Intune and Configuration Manager)
 
-[Microsoft Defender Advanced Threat
-Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp#:~:text=Microsoft%20Defender%20ATP%20is%20a%20unified%20endpoint%20security,support%20via%20our%20first-party%20offerings%20and%20through%20partners%3A)
+[Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp#:~:text=Microsoft%20Defender%20ATP%20is%20a%20unified%20endpoint%20security,support%20via%20our%20first-party%20offerings%20and%20through%20partners%3A)
 
 [Bitlocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
 
-**  
-**
+
 
 ## Endpoint Zero Trust deployment guide
 
@@ -145,18 +124,37 @@ devices following the principles of a Zero Trust security framework.
 
 <img src="./media/endpoints/image6.png" style="width:0.5812in;height:0.51282in" />
 
-> **Initial deployment objectives**
+### Initial deployment objectives
 
-I.  **Endpoints are registered with a cloud identity provider.**
+#### Endpoints are registered with a cloud identity provider
 
 To help limit risk exposure, you need to monitor every endpoint to
 ensure each one has a trusted identity, security policies are applied,
 and the risk level for things like malware or data exfiltration has been
 measured, remediated, or deemed acceptable.
 
-After a device is registered, users can access your organization\'s
+After a device is registered, users can access your organization's
 restricted resources using their corporate username and password to sign
 in (or Windows Hello for Business).
+
+:::row:::
+   :::column:::
+Register corporate devices with Azure Active Directory.
+   :::column-end:::
+   :::column:::
+:::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+   :::column-end:::
+   :::column:::
+Register personal devices with Azure Active Directory.
+   :::column-end:::
+   :::column:::
+:::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+   :::column-end:::
+   :::column:::
+Enable and configure Windows Hello for Business.
+   :::column-end:::
+:::row-end:::
+
 
 **Register corporate devices with Azure Active Directory (AD)**
 
@@ -164,37 +162,32 @@ Follow these steps:
 
 **New Windows 10 devices**
 
-1.  Start up your new device and begin the OOBE (Out of Box Experience)
-    process.
+1.  Start up your new device and begin the OOBE (Out of Box Experience) process.
 
-2.  On the **Sign in with Microsoft** screen, type your work or school
-    email address.
+2.  On the **Sign in with Microsoft** screen, type your work or school email address.
 
 3.  On the **Enter your password** screen, type your password.
 
-4.  On your mobile device, approve your device so it can access your
-    account.
+4.  On your mobile device, approve your device so it can access your account.
 
-5.  Complete the OOBE process, including setting your privacy settings
-    and setting up Windows Hello (if necessary).
+5.  Complete the OOBE process, including setting your privacy settings and setting up Windows Hello (if necessary).
 
-6.  Your device is now joined to your organization\'s network.
+6.  Your device is now joined to your organization's network.
 
-**  
-Existing Windows 10 devices**
+**Existing Windows 10 devices**
 
 1.  Open **Settings**, and then select **Accounts**.
 
 2.  Select **Access work** **or school,** and then select **Connect**.  
-      
-    <img src="./media/endpoints/image7.png" style="width:5.17847in;height:2.86774in" alt="A screenshot of a cell phone Description automatically generated" />
+    
+    :::image type="content" source="./media/endpoints/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
 
 3.  On the **Set up a work or school account** screen, select **Join
-    this device to Azure AD**.  
-      
-    <img src="./media/endpoints/image8.png" style="width:5.17847in;height:3.45232in" alt="A screenshot of a cell phone Description automatically generated" />
+    this device to Azure AD**.
 
-4.  On the **Let\'s get you signed in** screen, type your email address
+    :::image type="content" source="./media/endpoints/screenshot-set-up-work-school-account-settings.png" alt-text="Set up a work or school account in Settings." border="false":::
+
+4.  On the **Let's get you signed in** screen, type your email address
     (for example, alain@contoso.com), and then select **Next**.
 
 5.  On the **Enter password** screen, type your password, and then
@@ -204,7 +197,7 @@ Existing Windows 10 devices**
     account.
 
 7.  On the **Make sure this is your organization** screen, review the
-    information to make sure it\'s right, and then select **Join**.
+    information to make sure it's right, and then select **Join**.
 
 8.  On the **You\'re all set** screen, click **Done**.
 
@@ -217,11 +210,11 @@ Follow these steps:
 2.  Select **Access work or school**, and then select **Connect** from
     the **Access work or school** screen.
 
-> <img src="./media/endpoints/image7.png" style="width:5.49974in;height:2.84483in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
 
 1.  On the **Add a work or school account** screen, type in your email
     address for your work or school account, and then select **Next**.
-    For example, [alain@contoso.com]{.ul}.
+    For example, **alain@contoso.com**.
 
 2.  Sign in to your work or school account, and then select **Sign in**.
 
@@ -231,91 +224,49 @@ Follow these steps:
 
 **Enable and configure Windows Hello for Business**
 
-To allow users an alternative sign-in method that replaces a password,
-such as PIN, biometric authentication, or fingerprint reader, [enable
-Windows Hello for Business on users' Windows 10
-devices](https://docs.microsoft.com/mem/intune/protect/windows-hello).
+To allow users an alternative sign-in method that replaces a password, such as PIN, biometric authentication, or fingerprint reader, [enable Windows Hello for Business on users' Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/windows-hello).
 
-The following Microsoft Intune and Azure AD actions are completed in
-the [Microsoft Endpoint Manager admin
-center](https://endpoint.microsoft.com/#home)**:**
+The following Microsoft Intune and Azure AD actions are completed in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home):
 
 Start by creating a Windows Hello for Business enrollment policy in
 Microsoft Intune.
 
-1.  Go to Devices &gt; Enrollment &gt; Enroll devices &gt; Windows
-    enrollment &gt; Windows Hello for Business.
+1.  Go to Devices &gt; Enrollment &gt; Enroll devices &gt; Windows enrollment &gt; Windows Hello for Business.
 
-<img src="./media/endpoints/image9.png" style="width:3.06604in;height:2.58253in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-windows-hello-business-settings.png" alt-text="Windows Hello for Business in Microsoft Intune." border="true":::
 
 1.  Select from the following options for Configure Windows Hello for
     Business:
 
-    a.  **Disabled.** If you don\'t want to use Windows Hello for
-        Business, select this setting. If disabled, users can\'t
-        provision Windows Hello for Business except on Azure AD-joined
-        mobile phones where provisioning may be required.
+    1.  **Disabled.** If you don't want to use Windows Hello for Business, select this setting. If disabled, users can't provision Windows Hello for Business except on Azure AD-joined mobile phones where provisioning may be required.
 
-    b.  **Enabled.** Select this setting if you want to configure
-        Windows Hello for Business settings. When you select Enabled,
-        additional settings for Windows Hello become visible.
+    1.  **Enabled.** Select this setting if you want to configure Windows Hello for Business settings. When you select Enabled, additional settings for Windows Hello become visible.
 
-    c.  **Not configured.** Select this setting if you don\'t want to
-        use Intune to control Windows Hello for Business settings. Any
-        existing Windows Hello for Business settings on Windows 10
-        devices isn\'t changed. All other settings on the pane are
-        unavailable.
+    1.  **Not configured.** Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices isn't changed. All other settings on the pane are unavailable.
 
-If you selected Enabled, [configure the required
-settings](https://docs.microsoft.com/mem/intune/protect/identity-protection-configure)
-that are applied to all enrolled Windows 10 devices and Windows 10
-mobile devices.
+If you selected Enabled, [configure the required settings](https://docs.microsoft.com/mem/intune/protect/identity-protection-configure) that are applied to all enrolled Windows 10 devices and Windows 10 mobile devices.
 
-1.  Use a Trusted Platform Module (TPM). A TPM chip provides an
-    additional layer of data security. Choose one of the following
-    values:
+1.  Use a Trusted Platform Module (TPM). A TPM chip provides an additional layer of data security. Choose one of the following values:
 
-    a.  **Required**. Only devices with an accessible TPM can provision
-        Windows Hello for Business.
+    1.  **Required**. Only devices with an accessible TPM can provision Windows Hello for Business.
 
-    b.  **Preferred**. Devices first attempt to use a TPM. If this
-        option isn\'t available, they can use software encryption.
+    1.  **Preferred**. Devices first attempt to use a TPM. If this option isn't available, they can use software encryption.
 
-2.  Set a minimum PIN length and Maximum PIN length. This configures
-    devices to use the minimum and maximum PIN lengths that you specify
-    to help ensure secure sign-in. The default PIN length is six
-    characters, but you can enforce a minimum length of four characters.
-    The maximum PIN length is 127 characters.
+2.  Set a minimum PIN length and Maximum PIN length. This configures devices to use the minimum and maximum PIN lengths that you specify to help ensure secure sign-in. The default PIN length is six characters, but you can enforce a minimum length of four characters. The maximum PIN length is 127 characters.
 
-3.  Set a PIN expiration (days). It\'s good practice to specify an
-    expiration period for a PIN, after which users must change it. The
-    default is 41 days.
+3.  Set a PIN expiration (days). It's good practice to specify an expiration period for a PIN, after which users must change it. The default is 41 days.
 
-4.  Remember PIN history. Restricts the reuse of previously used PINs.
-    By default, the last 5 PINs can\'t be reused.
+4.  Remember PIN history. Restricts the reuse of previously used PINs. By default, the last 5 PINs can't be reused.
 
-5.  Use enhanced anti-spoofing, when available. This configures when the
-    anti-spoofing features of Windows Hello are used on devices that
-    support it. For example, detecting a photograph of a face instead of
-    a real face.
+5.  Use enhanced anti-spoofing, when available. This configures when the anti-spoofing features of Windows Hello are used on devices that support it. For example, detecting a photograph of a face instead of a real face.
 
-6.  Allow phone sign-in. If this option is set to Yes, users can use a
-    remote passport to serve as a portable companion device for desktop
-    computer authentication. The desktop computer must be Azure AD
-    joined, and the companion device must be configured with a Windows
-    Hello for Business PIN.
+6.  Allow phone sign-in. If this option is set to Yes, users can use a remote passport to serve as a portable companion device for desktop computer authentication. The desktop computer must be Azure AD joined, and the companion device must be configured with a Windows Hello for Business PIN.
 
 After you configure these settings, select **Save.**
 
-After configuring the settings that apply to all enrolled Windows 10
-devices and Windows 10 mobile devices, [set up Windows Hello for
-Business Identity Protection
-profiles](https://docs.microsoft.com/mem/intune/protect/identity-protection-configure)
-to customize Windows Hello for Business security settings for specific
-end user devices.
+After configuring the settings that apply to all enrolled Windows 10 devices and Windows 10 mobile devices, [set up Windows Hello for Business Identity Protection profiles](https://docs.microsoft.com/mem/intune/protect/identity-protection-configure) to customize Windows Hello for Business security settings for specific end user devices.
 
-1.  Select Devices &gt; Configuration profiles &gt; Create profile &gt;
-    Windows 10 and Later &gt; Identity Protection.
+1.  Select Devices &gt; Configuration profiles &gt; Create profile &gt; Windows 10 and Later &gt; Identity Protection.
 
 > <img src="./media/endpoints/image10.png" style="width:4.93058in;height:2.175in" alt="A screenshot of a cell phone Description automatically generated" />
 
@@ -596,7 +547,7 @@ Follow these steps:
             check-in.
 
         iii. Update outside of scheduled time. You configure one or more
-             windows of time during which the updates won\'t install
+             windows of time during which the updates won't install
              upon check-in.
 
     c.  Weekly schedule: If you choose a schedule type other than update
@@ -796,7 +747,7 @@ Choose the option to import or get data from an Odata feed.
     Power BI has a feature called autodetect that attempts to find and
     create relationships for you. The tables in the Data Warehouse have
     been built to work with the autodetect feature in Power BI. However,
-    even if Power BI doesn\'t automatically find the relationships, you
+    even if Power BI doesn't automatically find the relationships, you
     can still manage the relationships.
 
 4.  Select **Manage Relationships**.

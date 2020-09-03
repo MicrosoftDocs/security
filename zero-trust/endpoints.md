@@ -15,47 +15,23 @@ ms.topic: conceptual
 
 **Background**
 
-The modern enterprise has an incredible diversity of endpoints accessing
-data. Not all endpoints are managed or even owned by the organization,
-leading to different device configurations and software patch levels.
-This creates a massive attack surface and, if left unresolved, accessing
-work data from untrusted endpoints can easily become the weakest link in
-your [Zero Trust](https://go.microsoft.com/fwlink/p/?LinkID=2109181&clcid=0x409&culture=en-us&country=US)
-security strategy.
+The modern enterprise has an incredible diversity of endpoints accessing data. Not all endpoints are managed or even owned by the organization, leading to different device configurations and software patch levels. This creates a massive attack surface and, if left unresolved, accessing work data from untrusted endpoints can easily become the weakest link in your [Zero Trust](https://go.microsoft.com/fwlink/p/?LinkID=2109181&clcid=0x409&culture=en-us&country=US) security strategy.
 
-Zero Trust adheres to the principle, "Never trust, always verify." In
-terms of endpoints, that means always verify *all* endpoints. That
-includes not only contractor, partner, and guest devices, but also
-[apps](https://aka.ms/ZTApplications) and devices used by employees to
-access work data, regardless of device ownership.  
+Zero Trust adheres to the principle, "Never trust, always verify." In terms of endpoints, that means always verify *all* endpoints. That includes not only contractor, partner, and guest devices, but also [apps](https://aka.ms/ZTApplications) and devices used by employees to access work data, regardless of device ownership.  
   
-In a Zero Trust approach, the same security policies are applied
-regardless of whether the device is corporate-owned or personally-owned
-through bring your own device (BYOD); whether the device is fully
-managed by IT, or only the apps and data are secured. The policies apply
-to all endpoints, whether PC, Mac, smartphone, tablet, wearable, or IoT
-device wherever they are connected, be it the secure corporate
-[network](https://aka.ms/ZTNetwork), home broadband, or public internet.
+In a Zero Trust approach, the same security policies are applied regardless of whether the device is corporate-owned or personally-owned through bring your own device (BYOD); whether the device is fully managed by IT, or only the apps and data are secured. The policies apply to all endpoints, whether PC, Mac, smartphone, tablet, wearable, or IoT device wherever they are connected, be it the secure corporate [network](https://aka.ms/ZTNetwork), home broadband, or public internet.
 
-Most importantly, the health and trustworthiness of apps that run on
-those endpoints impacts your security posture. You need to prevent
-corporate data from leaking to untrusted or unknown apps or services,
-either accidentally or through malicious intent.
+Most importantly, the health and trustworthiness of apps that run on those endpoints impacts your security posture. You need to prevent corporate data from leaking to untrusted or unknown apps or services, either accidentally or through malicious intent.
 
 **There are a few key rules for securing devices and endpoints in a Zero Trust model:**
 
--   Zero Trust security policies are centrally enforced through the
-cloud and cover endpoint security, device configuration, app
-protection, device compliance, and risk posture.
+-   Zero Trust security policies are centrally enforced through the cloud and cover endpoint security, device configuration, app protection, device compliance, and risk posture.
 
--   The platform as well as the apps that run on the devices are
-securely provisioned, properly configured, and kept up to date.
+-   The platform as well as the apps that run on the devices are securely provisioned, properly configured, and kept up to date.
 
--   There is automated and prompt response to contain access to
-corporate data within the apps in case of a security compromise.
+-   There is automated and prompt response to contain access to corporate data within the apps in case of a security compromise.
 
--   The access control system ensures that all policy controls are in
-effect before the data is accessed.
+-   The access control system ensures that all policy controls are in effect before the data is accessed.
 
 
 
@@ -119,8 +95,7 @@ After these are completed, focus on these **additional deployment objectives**:
 
 ## Endpoint Zero Trust deployment guide
 
-This guide will walk you through the steps required to secure your
-devices following the principles of a Zero Trust security framework.
+This guide will walk you through the steps required to secure your devices following the principles of a Zero Trust security framework.
 
 <img src="./media/endpoints/image6.png" style="width:0.5812in;height:0.51282in" />
 
@@ -128,14 +103,9 @@ devices following the principles of a Zero Trust security framework.
 
 #### Endpoints are registered with a cloud identity provider
 
-To help limit risk exposure, you need to monitor every endpoint to
-ensure each one has a trusted identity, security policies are applied,
-and the risk level for things like malware or data exfiltration has been
-measured, remediated, or deemed acceptable.
+To help limit risk exposure, you need to monitor every endpoint to ensure each one has a trusted identity, security policies are applied, and the risk level for things like malware or data exfiltration has been measured, remediated, or deemed acceptable.
 
-After a device is registered, users can access your organization's
-restricted resources using their corporate username and password to sign
-in (or Windows Hello for Business).
+After a device is registered, users can access your organization's restricted resources using their corporate username and password to sign in (or Windows Hello for Business).
 
 :::row:::
    :::column:::
@@ -182,22 +152,17 @@ Follow these steps:
     
     :::image type="content" source="./media/endpoints/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
 
-3.  On the **Set up a work or school account** screen, select **Join
-    this device to Azure AD**.
+3.  On the **Set up a work or school account** screen, select **Join     this device to Azure AD**.
 
     :::image type="content" source="./media/endpoints/screenshot-set-up-work-school-account-settings.png" alt-text="Set up a work or school account in Settings." border="false":::
 
-4.  On the **Let's get you signed in** screen, type your email address
-    (for example, alain@contoso.com), and then select **Next**.
+4.  On the **Let's get you signed in** screen, type your email address (for example, alain@contoso.com), and then select **Next**.
 
-5.  On the **Enter password** screen, type your password, and then
-    select **Sign in**.
+5.  On the **Enter password** screen, type your password, and then select **Sign in**.
 
-6.  On your mobile device, approve your device so it can access your
-    account.
+6.  On your mobile device, approve your device so it can access your account.
 
-7.  On the **Make sure this is your organization** screen, review the
-    information to make sure it's right, and then select **Join**.
+7.  On the **Make sure this is your organization** screen, review the information to make sure it's right, and then select **Join**.
 
 8.  On the **You\'re all set** screen, click **Done**.
 
@@ -207,20 +172,15 @@ Follow these steps:
 
 1.  Open **Settings**, and then select **Accounts**.
 
-2.  Select **Access work or school**, and then select **Connect** from
-    the **Access work or school** screen.
+2.  Select **Access work or school**, and then select **Connect** from     the **Access work or school** screen.
 
     :::image type="content" source="./media/endpoints/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
 
-1.  On the **Add a work or school account** screen, type in your email
-    address for your work or school account, and then select **Next**.
-    For example, **alain@contoso.com**.
+1.  On the **Add a work or school account** screen, type in your email address for your work or school account, and then select **Next**. For example, **alain@contoso.com**.
 
 2.  Sign in to your work or school account, and then select **Sign in**.
 
-3.  Complete the rest of the registration process, including approving
-    your identity verification request (if you use two-step
-    verification) and setting up Windows Hello (if necessary).
+3.  Complete the rest of the registration process, including approving your identity verification request (if you use two-step     verification) and setting up Windows Hello (if necessary).
 
 **Enable and configure Windows Hello for Business**
 
@@ -228,15 +188,13 @@ To allow users an alternative sign-in method that replaces a password, such as P
 
 The following Microsoft Intune and Azure AD actions are completed in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home):
 
-Start by creating a Windows Hello for Business enrollment policy in
-Microsoft Intune.
+Start by creating a Windows Hello for Business enrollment policy in Microsoft Intune.
 
 1.  Go to Devices &gt; Enrollment &gt; Enroll devices &gt; Windows enrollment &gt; Windows Hello for Business.
 
     :::image type="content" source="./media/endpoints/screenshot-windows-hello-business-settings.png" alt-text="Windows Hello for Business in Microsoft Intune." border="true":::
 
-1.  Select from the following options for Configure Windows Hello for
-    Business:
+1.  Select from the following options for Configure Windows Hello for Business:
 
     1.  **Disabled.** If you don't want to use Windows Hello for Business, select this setting. If disabled, users can't provision Windows Hello for Business except on Azure AD-joined mobile phones where provisioning may be required.
 
@@ -270,8 +228,7 @@ After configuring the settings that apply to all enrolled Windows 10 devices and
 
 > <img src="./media/endpoints/image10.png" style="width:4.93058in;height:2.175in" alt="A screenshot of a cell phone Description automatically generated" />
 
-1.  Configure Windows Hello for Business. Choose how you want to
-    configure Windows Hello for Business.
+1.  Configure Windows Hello for Business. Choose how you want to configure Windows Hello for Business.
 
 <img src="./media/endpoints/image11.png" style="width:5.9625in;height:5.9625in" alt="A screenshot of a cell phone Description automatically generated" />
 
@@ -287,64 +244,35 @@ e.  PIN Expiration (days).
 
 f.  Remember PIN history.
 
-g.  Enable PIN recovery. Allows user to use the Windows Hello for
-    Business PIN recovery service.
+g.  Enable PIN recovery. Allows user to use the Windows Hello for     Business PIN recovery service.
 
-h.  Use a Trusted Platform Module (TPM). A TPM chip provides an
-    additional layer of data security.
+h.  Use a Trusted Platform Module (TPM). A TPM chip provides an     additional layer of data security.
 
-i.  Allow biometric authentication. Enables biometric authentication,
-    such as facial recognition or fingerprint, as an alternative to a
-    PIN for Windows Hello for Business. Users must still configure a PIN
-    in case biometric authentication fails.
+i.  Allow biometric authentication. Enables biometric authentication,     such as facial recognition or fingerprint, as an alternative to a     PIN for Windows Hello for Business. Users must still configure a PIN     in case biometric authentication fails.
 
-j.  Use enhanced anti-spoofing, when available. Configures when the
-    anti-spoofing features of Windows Hello are used on devices that
-    support it (for example, detecting a photograph of a face instead of
-    a real face).
+j.  Use enhanced anti-spoofing, when available. Configures when the     anti-spoofing features of Windows Hello are used on devices that     support it (for example, detecting a photograph of a face instead of     a real face).
 
-k.  Use security keys for sign-in. This setting is available for devices
-    that run Windows 10 version 1903 or later. Use it to manage support
-    for using Windows Hello security keys for sign-in.
+k.  Use security keys for sign-in. This setting is available for devices     that run Windows 10 version 1903 or later. Use it to manage support     for using Windows Hello security keys for sign-in.
 
-Finally, you can create additional device restriction policies to
-further lock down corporate-owned devices.
+Finally, you can create additional device restriction policies to further lock down corporate-owned devices.
 
-> [Learn about implementing an end-to-end identity Zero Trust
-> strategy](https://aka.ms/ZTIdentity)
+> [Learn about implementing an end-to-end identity Zero strategy](https://aka.ms/ZTIdentity)
 
 I.  **Access is only granted to cloud-managed and compliant endpoints.**
 
-Once you have identities for all the endpoints accessing corporate
-resources and before access is granted, you want to ensure that they
-meet the [minimum security
-requirements](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started)
-set by your organization.
+Once you have identities for all the endpoints accessing corporate resources and before access is granted, you want to ensure that they meet the [minimum security requirements](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) set by your organization.
 
-After establishing compliance policies to gate access of corporate
-resources to trusted endpoints and mobile and desktop
-[applications](https://aka.ms/ZTApplications), all users can access
-organizational data on mobile devices and a minimum or maximum operating
-system version is installed on all devices. Devices are not jail-broken
-or rooted.
+After establishing compliance policies to gate access of corporate resources to trusted endpoints and mobile and desktop [applications](https://aka.ms/ZTApplications), all users can access organizational data on mobile devices and a minimum or maximum operating system version is installed on all devices. Devices are not jail-broken or rooted.
 
-Also, [set remediation
-rules](https://docs.microsoft.com/mem/intune/protect/actions-for-noncompliance) for
-noncompliant devices, such as blocking a noncompliant device or offering
-the user a grace period to get compliant.
+Also, [set remediation rules](https://docs.microsoft.com/mem/intune/protect/actions-for-noncompliance) for noncompliant devices, such as blocking a noncompliant device or offering the user a grace period to get compliant.
 
-**  
-  
-Create a compliance policy with Microsoft Intune (all platforms)**
+**Create a compliance policy with Microsoft Intune (all platforms)**
 
-Follow these steps to [create a compliance
-policy](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy):
+Follow these steps to [create a compliance policy](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy):
 
-1.  Select Devices &gt; Compliance policies &gt; Policies &gt; Create
-    Policy.
+1.  Select Devices &gt; Compliance policies &gt; Policies &gt; Create     Policy.
 
-2.  Select a Platform for this policy (Windows 10 used for example
-    below).
+2.  Select a Platform for this policy (Windows 10 used for example     below).
 
 3.  Select the desired Device Health configuration.
 
@@ -352,52 +280,39 @@ policy](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy):
 
 1.  Configure minimum or maximum Device Properties.
 
-<img src="./media/endpoints/image13.png" style="width:5.61875in;height:2.648in" alt="A screenshot of a cell phone Description automatically generated" />
+    <img src="./media/endpoints/image13.png" style="width:5.61875in;height:2.648in" alt="A screenshot of a cell phone Description automatically generated" />
 
-1.  Configure Configuration Manager Compliance. This requires all
-    compliance evaluations in Configuration Manager to be compliant and
-    is only applicable for comanaged Windows 10 devices. All Intune-only
-    devices will return N/A.
+1.  Configure Configuration Manager Compliance. This requires all     compliance evaluations in Configuration Manager to be compliant and     is only applicable for comanaged Windows 10 devices. All Intune-only     devices will return N/A.
 
 2.  Configure System Security Settings.
 
-> <img src="./media/endpoints/image14.png" style="width:6.05945in;height:5.79375in" alt="A screenshot of a cell phone Description automatically generated" />
+    <img src="./media/endpoints/image14.png" style="width:6.05945in;height:5.79375in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  Configure Microsoft Defender Antimalware.
 
-> <img src="./media/endpoints/image15.png" style="width:6.16875in;height:2.05062in" alt="A screenshot of a cell phone Description automatically generated" />
+    <img src="./media/endpoints/image15.png" style="width:6.16875in;height:2.05062in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  Configure the required Microsoft Defender ATP machine risk score.
 
-<img src="./media/endpoints/image16.png" style="width:6.10625in;height:1.0747in" alt="A screenshot of a cell phone Description automatically generated" />
+    <img src="./media/endpoints/image16.png" style="width:6.10625in;height:1.0747in" alt="A screenshot of a cell phone Description automatically generated" />
 
-1.  On the Actions for noncompliance tab, specify a sequence of actions
-    to apply automatically to devices that do not meet this compliance
-    policy.
+1.  On the Actions for noncompliance tab, specify a sequence of actions     to apply automatically to devices that do not meet this compliance     policy.
 
 <img src="./media/endpoints/image17.png" style="width:5.96875in;height:1.79763in" alt="A screenshot of a cell phone Description automatically generated" />
 
-**Automate notification email and add additional remediation actions for
-noncompliant devices in Intune (all platforms)**
+**Automate notification email and add additional remediation actions for noncompliant devices in Intune (all platforms)**
 
-When their endpoints or apps become non-compliant, users are guided
-through self-remediation. Alerts are automatically generated with
-additional alarms and automated actions set for certain thresholds. You
-can set
-[non-compliance](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
-remediation actions.
+When their endpoints or apps become non-compliant, users are guided through self-remediation. Alerts are automatically generated with additional alarms and automated actions set for certain thresholds. You can set [non-compliance](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) remediation actions.
 
 Take these steps:
 
-1.  Select Devices &gt; Compliance policies &gt; Notifications &gt;
-    Create notification.
+1.  Select Devices &gt; Compliance policies &gt; Notifications &gt;     Create notification.
 
 2.  Create a notification message template.
 
 <img src="./media/endpoints/image18.png" style="width:4.52059in;height:3.35664in" alt="A screenshot of a cell phone Description automatically generated" />
 
-1.  Select Devices &gt; Compliance policies &gt; Policies, select one of
-    your policies, and then select **Properties**.
+1.  Select Devices &gt; Compliance policies &gt; Policies, select one of     your policies, and then select **Properties**.
 
 2.  Select Actions for noncompliance &gt; Add.
 
@@ -409,120 +324,73 @@ a.  Set up an automated email to users with noncompliant devices.
 
 b.  Set up an action to remotely lock noncompliant devices.
 
-c.  Set up an action to automatically retire a noncompliant device after
-    a set number of days.
+c.  Set up an action to automatically retire a noncompliant device after     a set number of days.
 
-```{=html}
-<!-- -->
-```
+
 I.  **DLP policies are enforced for BYOD and corporate devices.**
 
-Once data access is granted, you want to control what the user can do
-with the data. For example, if a user accesses a document with a
-corporate identity, you want to prevent that document from being saved
-in an unprotected consumer storage location, or from being shared with a
-consumer communication or chat app.
+Once data access is granted, you want to control what the user can do with the data. For example, if a user accesses a document with a corporate identity, you want to prevent that document from being saved in an unprotected consumer storage location, or from being shared with a consumer communication or chat app.
 
 **Apply recommended security settings**
 
-First, [apply security settings recommended by Microsoft to Windows 10
-devices](https://docs.microsoft.com/mem/intune/protect/security-baselines)
-to protect corporate data (Requires Windows 10 1809 and later):
+First, [apply security settings recommended by Microsoft to Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/security-baselines) to protect corporate data (Requires Windows 10 1809 and later):
 
-Use Intune security baselines to help you secure and protect your users
-and devices. Security baselines are preconfigured groups of Windows
-settings that help you apply a known group of settings and default
-values that are recommended by the relevant security teams.
+Use Intune security baselines to help you secure and protect your users and devices. Security baselines are preconfigured groups of Windows settings that help you apply a known group of settings and default values that are recommended by the relevant security teams.
 
 Follow these steps:
 
-1.  Select Endpoint security &gt; Security baselines to view the list of
-    available baselines.
+1.  Select Endpoint security &gt; Security baselines to view the list of     available baselines.
 
-2.  Select the baseline you\'d like to use, and then select **Create
-    profile**.
+2.  Select the baseline you\'d like to use, and then select **Create     profile**.
 
-3.  On the Configuration settings tab, view the groups of Settings that
-    are available in the baseline you selected. You can expand a group
-    to view the settings in that group and the default values for those
-    settings in the baseline. To find specific settings:
+3.  On the Configuration settings tab, view the groups of Settings that     are available in the baseline you selected. You can expand a group     to view the settings in that group and the default values for those     settings in the baseline. To find specific settings:
 
     a.  Select a group to expand and review the available settings.
 
-    b.  Use the Search bar and specify keywords that filter the view to
-        display only those groups that contain your search criteria.
+    b.  Use the Search bar and specify keywords that filter the view to         display only those groups that contain your search criteria.
 
     c.  Reconfigure the default settings to meet your business needs.  
           
         <img src="./media/endpoints/image19.png" style="width:4.18891in;height:3.40752in" alt="Expand a group to view the settings for that group" />
 
-4.  On the Assignments tab, select groups to include and then assign the
-    baseline to one or more groups. To fine-tune the assignment, use
-    Select groups to exclude.
+4.  On the Assignments tab, select groups to include and then assign the     baseline to one or more groups. To fine-tune the assignment, use     Select groups to exclude.
 
-**  
-Ensure updates are deployed automatically to endpoints**
+**Ensure updates are deployed automatically to endpoints**
 
-**  
-**[Configure Windows 10
-devices](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)[  
-]{.ul}
+[Configure Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)
 
-Configure Windows Updates for Business to simplify the update management
-experience for users and ensure that devices are automatically updated
-to meet the required compliance level.
+Configure Windows Updates for Business to simplify the update management experience for users and ensure that devices are automatically updated to meet the required compliance level.
 
 Follow these steps:
 
-1.  Manage Windows 10 software updates in Intune by creating update
-    rings and enabling a collection of settings that configure when
-    Windows 10 updates will be installed.
+1.  Manage Windows 10 software updates in Intune by creating update     rings and enabling a collection of settings that configure when     Windows 10 updates will be installed.
 
-    a.  Select Devices &gt; Windows &gt; Windows 10 Update Rings &gt;
-        Create.
+    a.  Select Devices &gt; Windows &gt; Windows 10 Update Rings &gt;         Create.
 
-    b.  Under Update ring settings, configure settings for your business
-        needs.
+    b.  Under Update ring settings, configure settings for your business         needs.
 
-> <img src="./media/endpoints/image20.png" style="width:4.34483in;height:3.87317in" alt="A screenshot of a cell phone Description automatically generated" />
+        <img src="./media/endpoints/image20.png" style="width:4.34483in;height:3.87317in" alt="A screenshot of a cell phone Description automatically generated" />
 
-a.  Under Assignments, choose + Select groups to include, and then
-    assign the update ring to one or more groups. To fine-tune the
-    assignment, use + Select groups to exclude.
+a.  Under Assignments, choose + Select groups to include, and then     assign the update ring to one or more groups. To fine-tune the     assignment, use + Select groups to exclude.
 
-```{=html}
-<!-- -->
-```
-1.  Manage Windows 10 feature updates in Intune to bring devices to the
-    Windows version you specify (i.e., 1803 or 1809) and freeze the
-    feature set on those devices until you choose to update them to a
-    later Windows version.
 
-    a.  Select Devices &gt; Windows &gt; Windows 10 Feature updates &gt;
-        Create.
+1.  Manage Windows 10 feature updates in Intune to bring devices to the     Windows version you specify (i.e., 1803 or 1809) and freeze the     feature set on those devices until you choose to update them to a     later Windows version.
 
-    b.  Under Basics, specify a name, a description (optional), and, for
-        Feature update to deploy, select the version of Windows with the
-        feature set you want, and then select **Next**.
+    a.  Select Devices &gt; Windows &gt; Windows 10 Feature updates &gt;         Create.
 
-    c.  Under Assignments, choose and select groups to include and then
-        assign the feature update deployment to one or more groups.
+    b.  Under Basics, specify a name, a description (optional), and, for         Feature update to deploy, select the version of Windows with the         feature set you want, and then select **Next**.
 
-[Configure iOS
-devices](https://docs.microsoft.com/mem/intune/protect/software-updates-ios)
+    c.  Under Assignments, choose and select groups to include and then         assign the feature update deployment to one or more groups.
 
-For corporate-enrolled devices, configure iOS updates to simplify the
-update management experience for users and ensure that devices are
-automatically updated to meet the required compliance level. Configure
-iOS update policy.
+[Configure iOS devices](https://docs.microsoft.com/mem/intune/protect/software-updates-ios)
+
+For corporate-enrolled devices, configure iOS updates to simplify the update management experience for users and ensure that devices are automatically updated to meet the required compliance level. Configure iOS update policy.
 
 Follow these steps:
 
-1.  Select Devices &gt; Update policies for iOS/iPadOS &gt; Create
-    profile.
+1.  Select Devices &gt; Update policies for iOS/iPadOS &gt; Create     profile.
 
-2.  On the Basics tab, specify a name for this policy, specify a
-    description (optional), and then select **Next**.
+2.  On the Basics tab, specify a name for this policy, specify a     description (optional), and then select **Next**.
 
 3.  On the Update policy settings tab, configure the following:
 

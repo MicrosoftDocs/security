@@ -107,23 +107,23 @@ To help limit risk exposure, you need to monitor every endpoint to ensure each o
 
 After a device is registered, users can access your organization's restricted resources using their corporate username and password to sign in (or Windows Hello for Business).
 
-:::row:::
-   :::column:::
-Register corporate devices with Azure Active Directory.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Register personal devices with Azure Active Directory.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Enable and configure Windows Hello for Business.
-   :::column-end:::
-:::row-end:::
+> :::row:::
+>    :::column:::
+> Register corporate devices with Azure Active Directory.
+>    :::column-end:::
+>    :::column:::
+> :::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+>    :::column-end:::
+>    :::column:::
+> Register personal devices with Azure Active Directory.
+>    :::column-end:::
+>    :::column:::
+> :::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+>    :::column-end:::
+>    :::column:::
+> Enable and configure Windows Hello for Business.
+>    :::column-end:::
+> :::row-end:::
 
 
 **Register corporate devices with Azure Active Directory (AD)**
@@ -226,7 +226,7 @@ After configuring the settings that apply to all enrolled Windows 10 devices and
 
 1.  Select Devices &gt; Configuration profiles &gt; Create profile &gt; Windows 10 and Later &gt; Identity Protection.
 
-> <img src="./media/endpoints/image10.png" style="width:4.93058in;height:2.175in" alt="A screenshot of a cell phone Description automatically generated" />
+    <img src="./media/endpoints/image10.png" style="width:4.93058in;height:2.175in" alt="A screenshot of a cell phone Description automatically generated" />
 
 1.  Configure Windows Hello for Business. Choose how you want to configure Windows Hello for Business.
 

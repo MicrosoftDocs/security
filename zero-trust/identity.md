@@ -140,19 +140,19 @@ can implement a Zero Trust identity strategy with Azure AD.
 Connect all of your users to Azure AD and federate with on-premises identity systems.
    :::column-end:::
    :::column:::
-→
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Establish your Identity Foundation with Azure AD.
    :::column-end:::
    :::column:::
-→
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Integrate all your applications with Azure AD.
    :::column-end:::
    :::column:::
-→
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Verify explicitly with strong authentication.
@@ -336,19 +336,19 @@ additional objectives such as more robust identity governance.
 Secure privileged access with Privileged Identity Management.
    :::column-end:::
    :::column:::
-→
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Restrict user content to applications.
    :::column-end:::
    :::column:::
-→
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Manage entitlement.
    :::column-end:::
    :::column:::
-→
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 User passwordless authentication to reduce the risk of phishing and password attacks.
@@ -434,19 +434,19 @@ Real-time analysis is critical for determining risk and protection.
 Deploy Azure AD Password Protection.
    :::column-end:::
    :::column:::
-→
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Enable Identity Protection.
    :::column-end:::
    :::column:::
-→
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Enable Microsoft Cloud App Security integration with Identity Protection.
    :::column-end:::
    :::column:::
-→
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Enable Conditional Access integration with Microsoft Cloud App Security.

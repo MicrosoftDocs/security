@@ -16,7 +16,7 @@ ms.topic: conceptual
 **Background**
 -->
 
-<img src="./media/identity/icon-fingerprint-large.png" style="float:right">
+<img src="./media/identity/icon-fingerprint-large.png" style="float:right;width:.75.in;height:1in" alt="Fingerprint icon.">
 Cloud applications and the mobile workforce have redefined the security
 perimeter. Employees are bringing their own devices and working
 remotely. Data is being accessed outside the corporate network and

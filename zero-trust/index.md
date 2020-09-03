@@ -50,6 +50,10 @@ Zero Trust.
 -->
 :::image type="content" source="./media/intro/zero-trust-security-elements-diagram.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
+![Same image, different coding.](./media/intro/zero-trust-security-elements-diagram.png)
+
+<img src="./media/intro/zero-trust-security-elements-diagram.png" style="width:5.82154in;height:1.56944in" />
+
 **Follow the steps below to mature your organization's approach to
 security and optimize how Zero Trust is implemented:**
 

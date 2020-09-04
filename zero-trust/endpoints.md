@@ -10,7 +10,8 @@ ms.topic: conceptual
 
 
 # Secure endpoints with Zero Trust
-<img src="./media/endpoints/image1.png" style="float:right;width:.75in;height:.75in" />
+
+:::image type="content" source="./media/endpoints/icon-endpoint-devices-large.png" alt-text="Icon of endpoint devices." border="false" style="float:right":::
 
 
 **Background**
@@ -230,7 +231,7 @@ After configuring the settings that apply to all enrolled Windows 10 devices and
 
 1.  Configure Windows Hello for Business. Choose how you want to configure Windows Hello for Business.
 
-    :::image type="content" source="./media/endpoints/screenshot-identity-protection-windows-10-configuration-settings.png" alt-text="Screenshot of Create a profile with platform set to Windows 10 and profile set to Identity protection." border="true":::
+    :::image type="content" source="./media/endpoints/screenshot-identity-protection-windows-10-configuration-settings.png" alt-text="Screenshot of Configuration settings under Identity protection in Configuration profiles." border="true":::
 
     1.  Minimum PIN length.
 

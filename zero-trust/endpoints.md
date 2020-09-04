@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 
 # Secure endpoints with Zero Trust
-<img src="./media/endpoints/image1.png" style="width:0.44323in;height:0.36946in" />
+<img src="./media/endpoints/image1.png" style="float:right;width:.75in;height:.75in" />
 
 
 **Background**
@@ -97,7 +97,7 @@ After these are completed, focus on these **additional deployment objectives**:
 
 This guide will walk you through the steps required to secure your devices following the principles of a Zero Trust security framework.
 
-<img src="./media/endpoints/image6.png" style="width:0.5812in;height:0.51282in" />
+:::image type="content" source="./media/endpoints/icon-checklist-one-checkmark-large.png" alt-text="Checklist icon with one checkmark." border="false":::
 
 ### Initial deployment objectives
 
@@ -107,23 +107,23 @@ To help limit risk exposure, you need to monitor every endpoint to ensure each o
 
 After a device is registered, users can access your organization's restricted resources using their corporate username and password to sign in (or Windows Hello for Business).
 
-> :::row:::
->    :::column:::
-> Register corporate devices with Azure Active Directory.
->    :::column-end:::
->    :::column:::
-> :::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
->    :::column-end:::
->    :::column:::
-> Register personal devices with Azure Active Directory.
->    :::column-end:::
->    :::column:::
-> :::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
->    :::column-end:::
->    :::column:::
-> Enable and configure Windows Hello for Business.
->    :::column-end:::
-> :::row-end:::
+:::row:::
+   :::column:::
+Register corporate devices with Azure Active Directory.
+   :::column-end:::
+   :::column:::
+:::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+   :::column-end:::
+   :::column:::
+Register personal devices with Azure Active Directory.
+   :::column-end:::
+   :::column:::
+:::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+   :::column-end:::
+   :::column:::
+Enable and configure Windows Hello for Business.
+   :::column-end:::
+:::row-end:::
 
 
 **Register corporate devices with Azure Active Directory (AD)**
@@ -156,7 +156,7 @@ Follow these steps:
 
     :::image type="content" source="./media/endpoints/screenshot-set-up-work-school-account-settings.png" alt-text="Set up a work or school account in Settings." border="false":::
 
-4.  On the **Let's get you signed in** screen, type your email address (for example, __alain@contoso.com_), and then select **Next**.
+4.  On the **Let's get you signed in** screen, type your email address (for example, _alain\@contoso.com_), and then select **Next**.
 
 5.  On the **Enter password** screen, type your password, and then select **Sign in**.
 
@@ -176,7 +176,7 @@ Follow these steps:
 
     :::image type="content" source="./media/endpoints/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
 
-1.  On the **Add a work or school account** screen, type in your email address for your work or school account, and then select **Next**. For example, _alain@contoso.com_.
+1.  On the **Add a work or school account** screen, type in your email address for your work or school account, and then select **Next**. For example, _alain\@contoso.com_.
 
 2.  Sign in to your work or school account, and then select **Sign in**.
 

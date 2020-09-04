@@ -351,8 +351,8 @@ Follow these steps:
     1.  Use the Search bar and specify keywords that filter the view to display only those groups that contain your search criteria.
 
     1.  Reconfigure the default settings to meet your business needs.  
- 
-        <img src="./media/endpoints/image19.png" style="width:4.18891in;height:3.40752in" alt="Expand a group to view the settings for that group" />
+
+        :::image type="content" source="./media/endpoints/screenshot-create-profile-application-management-settings.png" alt-text="Screenshot of Application Management settings in Create Profile." border="false":::
 
 4.  On the Assignments tab, select groups to include and then assign the baseline to one or more groups. To fine-tune the assignment, use Select groups to exclude.
 
@@ -366,22 +366,22 @@ Follow these steps:
 
 1.  Manage Windows 10 software updates in Intune by creating update rings and enabling a collection of settings that configure when Windows 10 updates will be installed.
 
-    a.  Select **Devices &gt; Windows &gt; Windows 10 Update Rings &gt; Create**.
+    1.  Select **Devices &gt; Windows &gt; Windows 10 Update Rings &gt; Create**.
 
-    b.  Under Update ring settings, configure settings for your business needs.
+    1.  Under **Update ring settings**, configure settings for your business needs.
 
-        <img src="./media/endpoints/image20.png" style="width:4.34483in;height:3.87317in" alt="A screenshot of a cell phone Description automatically generated" />
+        :::image type="content" source="./media/endpoints/screenshot-update-settings-user-experience-settings.png" alt-text="Screenshot of Update settings and User experience settings." border="true":::
 
-a.  Under Assignments, choose + Select groups to include, and then assign the update ring to one or more groups. To fine-tune the assignment, use + Select groups to exclude.
+    1.  Under **Assignments**, choose + Select groups to include, and then assign the update ring to one or more groups. To fine-tune the assignment, use + Select groups to exclude.
 
 
 1.  Manage Windows 10 feature updates in Intune to bring devices to the Windows version you specify (i.e., 1803 or 1809) and freeze the feature set on those devices until you choose to update them to a later Windows version.
 
-    a.  Select **Devices &gt; Windows &gt; Windows 10 Feature updates &gt; Create**.
+    1.  Select **Devices &gt; Windows &gt; Windows 10 Feature updates &gt; Create**.
 
-    b.  Under **Basics**, specify a name, a description (optional), and, for **Feature update to deploy**, select the version of Windows with the feature set you want, and then select **Next**.
+    1.  Under **Basics**, specify a name, a description (optional), and, for **Feature update to deploy**, select the version of Windows with the feature set you want, and then select **Next**.
 
-    c.  Under Assignments, choose and select groups to include and then assign the feature update deployment to one or more groups.
+    1.  Under **Assignments**, choose and select groups to include and then assign the feature update deployment to one or more groups.
 
 [Configure iOS devices](https://docs.microsoft.com/mem/intune/protect/software-updates-ios)
 
@@ -395,23 +395,23 @@ Follow these steps:
 
 3.  On the Update policy settings tab, configure the following:
 
-    a.  Select version to install. You can choose from:
+    1.  Select version to install. You can choose from:
 
-        i.  Latest update: This deploys the most recently released update for iOS/iPadOS.
+        1.  Latest update: This deploys the most recently released update for iOS/iPadOS.
 
-        ii. Any previous version that is available in the dropdown box. If you select a previous version, you must also deploy a device configuration policy to delay visibility of software updates.
+        1. Any previous version that is available in the dropdown box. If you select a previous version, you must also deploy a device configuration policy to delay visibility of software updates.
 
-    b.  Schedule type: Configure the schedule for this policy:
+    1.  Schedule type: Configure the schedule for this policy:
 
-        i.  Update at next check-in. The update installs on the device the next time it checks in with Intune. This is the simplest option and has no additional configurations.
+        1.  Update at next check-in. The update installs on the device the next time it checks in with Intune. This is the simplest option and has no additional configurations.
 
-        ii. Update during scheduled time. You configure one or more windows of time during which the update will install upon check-in.
+        1. Update during scheduled time. You configure one or more windows of time during which the update will install upon check-in.
 
-        iii. Update outside of scheduled time. You configure one or more windows of time during which the updates won't install upon check-in.
+        1. Update outside of scheduled time. You configure one or more windows of time during which the updates won't install upon check-in.
 
-    c.  Weekly schedule: If you choose a schedule type other than update at next check-in, configure the following options:
+    1.  Weekly schedule: If you choose a schedule type other than update at next check-in, configure the following options:
 
-        <img src="./media/endpoints/image21.png" style="width:4.7161in;height:3.38542in" alt="Example of selecting to update during scheduled time" />
+        :::image type="content" source="./media/endpoints/screenshot-create-profile-update-policy-settings.png" alt-text="Screenshot of Update policy settings in Create profile." border="true":::
 
 1.  Choose a time zone.
 
@@ -419,40 +419,39 @@ Follow these steps:
 
 **Ensure devices are encrypted**
 
-[Configure Bitlocker to encrypt Windows 10
-devices](https://docs.microsoft.com/mem/intune/protect/encrypt-devices)
+[Configure Bitlocker to encrypt Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/encrypt-devices)
 
-1.  Select Devices &gt; Configuration profiles &gt; Create profile.
+1.  Select **Devices &gt; Configuration profiles &gt; Create profile**.
 
 2.  Set the following options:
 
-    a.  Platform: Windows 10 and later
+    1.  Platform: Windows 10 and later
 
-    b.  Profile type: Endpoint protection  
-	
-        <img src="./media/endpoints/image22.png" style="width:4.14733in;height:3.07017in" alt="Select the BitLocker profile" />
+    1.  Profile type: Endpoint protection  
+
+        :::image type="content" source="./media/endpoints/screenshot-devices-configuration-profiles-create-profile-windows.png" alt-text="Screenshot of Create a profile in Devices Configuration profiles for Windows 10." border="false":::
 
 3.  Select **Settings &gt; Windows Encryption**.
-  
-    <img src="./media/endpoints/image23.png" style="width:4.47797in;height:3.7326in" alt="BitLocker settings" />
+
+    :::image type="content" source="./media/endpoints/screenshot-devices-configuration-create-profile-endpoint-protection.png" alt-text="Screenshot of Endpoint protection in Create profile." border="false":::
 
 4.  Configure settings for BitLocker to meet your business needs, and then select **OK**.
 
 [Configure FileVault encryption on macOS devices](https://docs.microsoft.com/mem/intune/protect/encrypt-devices-filevault)
 
-1.  Select Devices &gt; Configuration profiles &gt; Create profile.
+1.  Select **Devices &gt; Configuration profiles &gt; Create profile**.
 
 2.  Set the following options:
 
-    a.  Platform: macOS.
+    1.  Platform: macOS.
 
-    b.  Profile type: Endpoint protection.  
-	
-        <img src="./media/endpoints/image24.png" style="width:4.13154in;height:2.96491in" alt="Select the FileVault profile" />
+    1.  Profile type: Endpoint protection.  
 
-3.  Select Settings** &gt; **FileVault.  
- 
-    <img src="./media/endpoints/image25.png" style="width:4.72845in;height:3.54937in" alt="FileVault settings" />
+        :::image type="content" source="./media/endpoints/screenshot-devices-configuration-profiles-create-profile-macos.png" alt-text="Screenshot of Create a profile in Devices Configuration profiles for mac OS." border="false":::
+
+3.  Select **Settings &gt; FileVault**. 
+
+    :::image type="content" source="./media/endpoints/screenshot-create-profile-Endpoint-protection-filevault.png" alt-text="Screenshot of File Vault under Endpoint protection in Create profile." border="false":::
 
 4.  For FileVault, select **Enable**.
 
@@ -482,21 +481,21 @@ Follow these steps:
 
 4.  Configure Data Protection Settings:
 
-    a.  **iOS/iPadOS data protection.** For information, see [iOS/iPadOS app protection policy settings - Data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios#data-protection).
+    1.  **iOS/iPadOS data protection.** For information, see [iOS/iPadOS app protection policy settings - Data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios#data-protection).
 
-    b.  **Android data protection.** For information, see [Android app protection policy settings - Data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-android#data-protection).
+    1.  **Android data protection.** For information, see [Android app protection policy settings - Data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-android#data-protection).
 
 5.  Configure Access Requirement Settings:
 
-    a.  **iOS/iPadOS access requirements**. For information, see [iOS/iPadOS app protection policy settings - Access requirements](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios#access-requirements).
+    1.  **iOS/iPadOS access requirements**. For information, see [iOS/iPadOS app protection policy settings - Access requirements](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios#access-requirements).
 
-    b.  **Android access requirements.** For information, see [Android app protection policy settings - Access requirements](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-android#access-requirements).
+    1.  **Android access requirements.** For information, see [Android app protection policy settings - Access requirements](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-android#access-requirements).
 
 6.  Configure Conditional Launch Settings:
 
-    a.  **iOS/iPadOS conditional launch**. For information, see [iOS/iPadOS app protection policy settings - Conditional launch](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios#conditional-launch).
+    1.  **iOS/iPadOS conditional launch**. For information, see [iOS/iPadOS app protection policy settings - Conditional launch](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios#conditional-launch).
 
-    b.  **Android conditional launch**. For information, see [Android app protection policy settings - Conditional launch](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-android#conditional-launch).
+    1.  **Android conditional launch**. For information, see [Android app protection policy settings - Conditional launch](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-android#conditional-launch).
 
 7.  Click **Next** to display the **Assignments** page.
 
@@ -505,9 +504,15 @@ Follow these steps:
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).
 
-<img src="./media/endpoints/image26.png" style="width:0.58974in;height:0.52036in" />
 
+:::row:::
+   :::column:::
+:::image type="content" source="./media/identity/icon-checklist-two-checkmarks-large.png" alt-text="Checklist icon with two checkmarks." border="false":::
+   :::column-end:::
+   :::column span="3":::
 ### Additional deployment objectives
+   :::column-end:::
+:::row-end:::
 
 I.  **Endpoint threat detection is used to monitor device risk.**
 
@@ -519,11 +524,11 @@ Using the Intune Data warehouse, [send device and app management data to reporti
 
 Follow these steps:
 
-1.  Select Reports &gt; Intune Data warehouse &gt; Data warehouse.
+1.  Select **Reports &gt; Intune Data warehouse &gt; Data warehouse**.
 
 2.  Copy the custom feed URL. For example:
 
-    <https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0>
+    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 3.  Open Power BI Desktop or your SIEM solution.
 
@@ -533,7 +538,7 @@ Choose the option to import or get data from an Odata feed.
 
 **From PowerBI**
 
-1.  From the menu, select File &gt; Get Data &gt; OData feed.
+1.  From the menu, select **File &gt; Get Data &gt; OData feed**.
 
 2.  Paste the custom feed URL that you copied from the earlier step into the URL box in the OData feed window.
 
@@ -543,7 +548,7 @@ Choose the option to import or get data from an Odata feed.
 
 5.  Select **Organization account**, and then sign in with your Intune credentials.
 
-    <img src="./media/endpoints/image27.png" style="width:5in;height:2in" alt="Organizational account credentials" />
+    :::image type="content" source="./media/endpoints/screenshot-powerbi-basic-organizational-account-odata-feed.png" alt-text="Screenshot of OData feed setting in Organizational account." border="false":::
 
 1.  Select **Connect**. The Navigator will open and show you the list of tables in the Intune Data Warehouse.
 

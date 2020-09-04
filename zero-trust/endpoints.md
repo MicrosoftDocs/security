@@ -148,7 +148,7 @@ Follow these steps:
 
 1.  Open **Settings**, and then select **Accounts**.
 
-2.  Select **Access work** **or school,** and then select **Connect**.  
+2.  Select **Access work or school,** and then select **Connect**.  
  
     :::image type="content" source="./media/endpoints/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
 
@@ -156,7 +156,7 @@ Follow these steps:
 
     :::image type="content" source="./media/endpoints/screenshot-set-up-work-school-account-settings.png" alt-text="Set up a work or school account in Settings." border="false":::
 
-4.  On the **Let's get you signed in** screen, type your email address (for example, **alain@contoso.com**), and then select **Next**.
+4.  On the **Let's get you signed in** screen, type your email address (for example, __alain@contoso.com_), and then select **Next**.
 
 5.  On the **Enter password** screen, type your password, and then select **Sign in**.
 
@@ -176,7 +176,7 @@ Follow these steps:
 
     :::image type="content" source="./media/endpoints/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
 
-1.  On the **Add a work or school account** screen, type in your email address for your work or school account, and then select **Next**. For example, <b>alain@contoso.com</b>.
+1.  On the **Add a work or school account** screen, type in your email address for your work or school account, and then select **Next**. For example, _alain@contoso.com_.
 
 2.  Sign in to your work or school account, and then select **Sign in**.
 
@@ -224,35 +224,35 @@ After you configure these settings, select **Save.**
 
 After configuring the settings that apply to all enrolled Windows 10 devices and Windows 10 mobile devices, [set up Windows Hello for Business Identity Protection profiles](https://docs.microsoft.com/mem/intune/protect/identity-protection-configure) to customize Windows Hello for Business security settings for specific end user devices.
 
-1.  Select Devices &gt; Configuration profiles &gt; Create profile &gt; Windows 10 and Later &gt; Identity Protection.
+1.  Select **Devices &gt; Configuration profiles &gt; Create profile &gt; Windows 10 and Later &gt; Identity Protection**.
 
-    <img src="./media/endpoints/image10.png" style="width:4.93058in;height:2.175in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-create-profile-windows-10-identity-protection.png" alt-text="Screenshot of Create a profile with platform set to Windows 10 and profile set to Identity protection." border="true":::
 
 1.  Configure Windows Hello for Business. Choose how you want to configure Windows Hello for Business.
 
-<img src="./media/endpoints/image11.png" style="width:5.9625in;height:5.9625in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-identity-protection-windows-10-configuration-settings.png" alt-text="Screenshot of Create a profile with platform set to Windows 10 and profile set to Identity protection." border="true":::
 
-a.  Minimum PIN length.
+    1.  Minimum PIN length.
 
-b.  Lowercase letters in PIN.
+    1.  Lowercase letters in PIN.
 
-c.  Uppercase letters in PIN.
+    1.  Uppercase letters in PIN.
 
-d.  Special characters in PIN.
+    1.  Special characters in PIN.
 
-e.  PIN Expiration (days).
+    1.  PIN Expiration (days).
 
-f.  Remember PIN history.
+    1.  Remember PIN history.
 
-g.  Enable PIN recovery. Allows user to use the Windows Hello for Business PIN recovery service.
+    1.  Enable PIN recovery. Allows user to use the Windows Hello for Business PIN recovery service.
 
-h.  Use a Trusted Platform Module (TPM). A TPM chip provides an additional layer of data security.
+    1.  Use a Trusted Platform Module (TPM). A TPM chip provides an additional layer of data security.
 
-i.  Allow biometric authentication. Enables biometric authentication, such as facial recognition or fingerprint, as an alternative to a PIN for Windows Hello for Business. Users must still configure a PIN in case biometric authentication fails.
+    1.  Allow biometric authentication. Enables biometric authentication, such as facial recognition or fingerprint, as an alternative to a PIN for Windows Hello for Business. Users must still configure a PIN in case biometric authentication fails.
 
-j.  Use enhanced anti-spoofing, when available. Configures when the anti-spoofing features of Windows Hello are used on devices that support it (for example, detecting a photograph of a face instead of a real face).
+    1.  Use enhanced anti-spoofing, when available. Configures when the anti-spoofing features of Windows Hello are used on devices that support it (for example, detecting a photograph of a face instead of a real face).
 
-k.  Use security keys for sign-in. This setting is available for devices that run Windows 10 version 1903 or later. Use it to manage support for using Windows Hello security keys for sign-in.
+    1.  Use security keys for sign-in. This setting is available for devices that run Windows 10 version 1903 or later. Use it to manage support for using Windows Hello security keys for sign-in.
 
 Finally, you can create additional device restriction policies to further lock down corporate-owned devices.
 
@@ -277,29 +277,29 @@ Follow these steps to [create a compliance policy](https://docs.microsoft.com/me
 
 3.  Select the desired Device Health configuration.
 
-    <img src="./media/endpoints/image12.png" style="width:5.46875in;height:2.65861in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-windows-10-compliance-policy-device-health-settings.png" alt-text="Screenshot of Device Health in Windows 10 compliance policy settings." border="true":::
 
 1.  Configure minimum or maximum Device Properties.
 
-    <img src="./media/endpoints/image13.png" style="width:5.61875in;height:2.648in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-windows-10-compliance-policy-device-properties-settings.png" alt-text="Screenshot of Device Properties in Windows 10 compliance policy settings." border="true":::
 
 1.  Configure Configuration Manager Compliance. This requires all compliance evaluations in Configuration Manager to be compliant and is only applicable for comanaged Windows 10 devices. All Intune-only devices will return N/A.
 
 2.  Configure System Security Settings.
 
-    <img src="./media/endpoints/image14.png" style="width:6.05945in;height:5.79375in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-windows-10-compliance-policy-system-security-settings.png" alt-text="Screenshot of System Security in Windows 10 compliance policy settings." border="true":::
 
 1.  Configure Microsoft Defender Antimalware.
 
-    <img src="./media/endpoints/image15.png" style="width:6.16875in;height:2.05062in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-windows-10-compliance-policy-defender-settings.png" alt-text="Screenshot of Microsoft Defender in Windows 10 compliance policy settings." border="true":::
 
 1.  Configure the required Microsoft Defender ATP machine risk score.
 
-    <img src="./media/endpoints/image16.png" style="width:6.10625in;height:1.0747in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-windows-10-compliance-policy-defender-atp-settings.png" alt-text="Screenshot of Microsoft Defender ATP in Windows 10 compliance policy settings." border="true":::
 
 1.  On the Actions for noncompliance tab, specify a sequence of actions to apply automatically to devices that do not meet this compliance policy.
 
-    <img src="./media/endpoints/image17.png" style="width:5.96875in;height:1.79763in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-actions-noncompliance-settings.png" alt-text="Screenshot of Actions for noncompliance in compliance policy settings." border="true":::
 
 **Automate notification email and add additional remediation actions for noncompliant devices in Intune (all platforms)**
 
@@ -311,21 +311,21 @@ Take these steps:
 
 2.  Create a notification message template.
 
-    <img src="./media/endpoints/image18.png" style="width:4.52059in;height:3.35664in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-create-notifications-message-template.png" alt-text="Screenshot of Create notification in compliance policy settings." border="true":::
 
-1.  Select Devices &gt; Compliance policies &gt; Policies, select one of your policies, and then select **Properties**.
+1.  Select **Devices &gt; Compliance policies &gt; Policies**, select one of your policies, and then select **Properties**.
 
-2.  Select Actions for noncompliance &gt; Add.
+2.  Select **Actions for noncompliance &gt; Add**.
 
 3.  Add actions for noncompliance:
 
-    <img src="./media/endpoints/image17.png" style="width:6.18125in;height:1.86163in" alt="A screenshot of a cell phone Description automatically generated" />
+    :::image type="content" source="./media/endpoints/screenshot-actions-noncompliance-settings.png" alt-text="Screenshot of Actions for noncompliance in compliance policy settings." border="true":::
 
-a.  Set up an automated email to users with noncompliant devices.
+    1.  Set up an automated email to users with noncompliant devices.
 
-b.  Set up an action to remotely lock noncompliant devices.
+    1.  Set up an action to remotely lock noncompliant devices.
 
-c.  Set up an action to automatically retire a noncompliant device after a set number of days.
+    1.  Set up an action to automatically retire a noncompliant device after a set number of days.
 
 
 I.  **DLP policies are enforced for BYOD and corporate devices.**
@@ -346,11 +346,11 @@ Follow these steps:
 
 3.  On the Configuration settings tab, view the groups of Settings that are available in the baseline you selected. You can expand a group to view the settings in that group and the default values for those settings in the baseline. To find specific settings:
 
-    a.  Select a group to expand and review the available settings.
+    1.  Select a group to expand and review the available settings.
 
-    b.  Use the Search bar and specify keywords that filter the view to display only those groups that contain your search criteria.
+    1.  Use the Search bar and specify keywords that filter the view to display only those groups that contain your search criteria.
 
-    c.  Reconfigure the default settings to meet your business needs.  
+    1.  Reconfigure the default settings to meet your business needs.  
  
         <img src="./media/endpoints/image19.png" style="width:4.18891in;height:3.40752in" alt="Expand a group to view the settings for that group" />
 

@@ -9,14 +9,9 @@ ms.topic: conceptual
 ---
 
 # Securing identity with Zero Trust
-<!--
-<img src="./media/identity/image1.png" style="width:0.37778in;height:0.47708in" />
--->
-<!--
-**Background**
--->
 
-<img src="./media/identity/icon-fingerprint-large.png" style="float:right;width:.75.in;height:1in" alt="Fingerprint icon.">
+:::image type="content" source="./media/identity/icon-fingerprint-large.png" alt-text="Fingerprint icon." border="false":::
+
 Cloud applications and the mobile workforce have redefined the security
 perimeter. Employees are bringing their own devices and working
 remotely. Data is being accessed outside the corporate network and

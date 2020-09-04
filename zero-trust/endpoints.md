@@ -11,8 +11,7 @@ ms.topic: conceptual
 
 # Secure endpoints with Zero Trust
 
-:::image type="content" source="./media/endpoints/icon-endpoint-devices-large.png" alt-text="Icon of endpoint devices." border="false" style="float:right":::
-
+<img src="./media/endpoints/icon-endpoint-devices-large.png" alt="Icon of endpoint devices." style="float:right" />
 
 **Background**
 

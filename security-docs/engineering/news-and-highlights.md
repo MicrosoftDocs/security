@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 06/23/2020
+ms.date: 09/01/2020
 ---
 
 # Security news and highlights
@@ -22,6 +22,7 @@ August, 2020
 - [Security hurdles you can sail over — One architect’s viewpoint](https://docs.microsoft.com/microsoft-365/solutions/security-design-principles?view=o365-worldwide)
 - [Azure Security Podcast - Network Isolation and Private Endpoints](https://rss.com/podcasts/azsecpodcast/63940/)
 - [CISO Series: Lessons learned from the Microsoft SOC—Part: A day in the life part 2](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)
+- [Zero Trust maturity model and guidance](https://www.microsoft.com/security/business/zero-trust?rtc=1)
 
 June, 2020
 

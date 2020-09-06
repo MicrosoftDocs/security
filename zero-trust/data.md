@@ -18,15 +18,15 @@ The three core elements of a data protection strategy are:
 
 1.  **Know your data**
 
-If you don't know what sensitive data you have on-premises and in cloud services, you can't adequately protect it. You need to discover data across your entire organization and classify all data by sensitivity level.
+    If you don't know what sensitive data you have on-premises and in cloud services, you can't adequately protect it. You need to discover data across your entire organization and classify all data by sensitivity level.
 
 1.  **Protect your data and prevent data loss**
 
-Sensitive data needs to be protected by data protection policies that label and encrypt data or block over-sharing. This ensures only authorized users are able to access the data, even when data travels outside of your corporate environment.
+    Sensitive data needs to be protected by data protection policies that label and encrypt data or block over-sharing. This ensures only authorized users are able to access the data, even when data travels outside of your corporate environment.
 
 1.  **Monitor and remediate**
 
-You should continuously monitor sensitive data to detect policy violations and risky user behavior. This allows you to take appropriate action, such as revoking access, blocking users, and refining your protection policies.
+    You should continuously monitor sensitive data to detect policy violations and risky user behavior. This allows you to take appropriate action, such as revoking access, blocking users, and refining your protection policies.
 
 :::image type="content" source="./media/data/diagram-monitor-remediate-data.png" lightbox="./media/data/diagram-monitor-remediate-data.png" alt-text="Diagram of monitoring activiting and remediation." border="false":::
 
@@ -104,6 +104,8 @@ After these are completed, focus on these **additional deployment objectives**:
 2. Access decisions are governed by a cloud security policy engine.
 
 3. Prevent data leakage through DLP policies based on a sensitivity label and content inspection.
+   :::column-end:::
+:::row-end:::
 
 **Products covered in this guide**
 
@@ -335,7 +337,7 @@ Take this step:
 
 After a sensitivity label is created and applied to an email or document, any configured protection settings for that label are enforced on the content. When you use Office apps, watermarks can be applied to headers or footers of emails or documents that have the label applied.
 
-:::image type="content" source="./media/data/screenshot-office-document-header-watermark-highly-confidential.png" lightbox="./media/data/screenshot-office-document-header-watermark-highly-confidential.png" alt-text="Screenshot of an Office document with a watermark and header about confidentiality." border="false":::
+:::image type="content" source="./media/data/screenshot-office-document-header-watermark-highly-confidential.png" alt-text="Screenshot of an Office document with a watermark and header about confidentiality." border="false":::
 
 Take this step:
 

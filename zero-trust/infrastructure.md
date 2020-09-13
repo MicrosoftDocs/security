@@ -8,8 +8,9 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-<img src="./media/infrastructure/image1.png" style="width:0.2375in;height:0.26181in" />Securing infrastructure with Zero Trust
-================================================================================================================
+# Securing infrastructure with Zero Trust
+
+<img src="./media/infrastructure/image1.png" style="width:0.2375in;height:0.26181in" />
 
 Infrastructure represents a critical threat vector. IT Infrastructure, whether on-premises or multi-cloud, is defined as all the hardware (physical, virtual, containerized), software (open source, first- and third-party, PaaS, SaaS), micro-services (functions, APIs), networking infrastructure, facilities, etc. that are required to develop, test,
 deliver, monitor, control, or support IT services. It is an area where Microsoft has invested tremendous resources to develop a comprehensive set of capabilities to secure your future cloud and on-premises infrastructure.

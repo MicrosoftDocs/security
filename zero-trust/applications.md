@@ -8,25 +8,20 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-<img src="./media/applications/image1.emf" style="width:0.41667in;height:0.41667in" />Securing applications with Zero Trust
-===============================================================================================================
 
-**Background**
+# Securing applications with Zero Trust
+
+<img src="./media/applications/image1.emf" style="width:0.41667in;height:0.41667in" />
 
 To get the full benefit of cloud apps and services, organizations must find the right balance of providing access while maintaining control to protect critical data accessed via applications and APIs.
 
 The **Zero Trust** model helps organizations ensure that apps, and the data they contain, are protected by:
 
 -   Applying controls and technologies to discover Shadow IT.
-
 -   Ensuring appropriate in-app permissions. 
-
 -   Limiting access based on real-time analytics. 
-
 -   Monitoring for abnormal behavior. 
-
 -   Controlling user actions. 
-
 -   Validating secure configuration options. 
 
 ## Applications Zero Trust deployment objectives
@@ -34,24 +29,22 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
 Before most organizations start the Zero Trust journey, their approach to application security is characterized by the following:
 
 -   On-premises apps are accessed through physical networks or VPN.
-
 -   Some critical cloud apps are accessible to users.
 
 When implementing a Zero Trust approach to managing and monitoring applications, we recommend you focus first on these **initial deployment objectives**:
 
--  <img src="./media/applications/image2.png" style="width:0.40746in;height:0.35952in" />Gain visibility into the activities and data in your applications by connecting them via APIs.
+<img src="./media/applications/image2.png" style="width:0.40746in;height:0.35952in" />
 
+- Gain visibility into the activities and data in your applications by connecting them via APIs.
 - Discover and control the use of shadow IT.
-
 - Protect sensitive information and activities automatically by implementing policies.
 
-Once these are completed, focus on these **additional deployment
-objectives**:
+Once these are completed, focus on these **additional deployment objectives**:
 
--  <img src="./media/applications/image4.png" style="width:0.41875in;height:0.36944in" />Deploy adaptive access and session controls for all apps.
+<img src="./media/applications/image4.png" style="width:0.41875in;height:0.36944in" />
 
+- Deploy adaptive access and session controls for all apps.
 - Strengthen protection against cyber threats and rogue apps.
-
 - Assess the security configuration of your cloud environments.
 
 ## Products covered in this guide

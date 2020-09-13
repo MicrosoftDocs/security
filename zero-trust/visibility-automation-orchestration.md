@@ -59,7 +59,8 @@ It is through this hierarchy that we enable our customers to maximize their focu
 
 When implementing an end-to-end Zero Trust framework for visibility, automation, and orchestration, we recommend you focus first on these **initial deployment objectives**:
 
-<img src="./media/visibility-automation-orchestration/image2.png" style="width:0.40764in;height:0.35972in" /> 
+<img src="./media/visibility-automation-orchestration/image2.png" style="width:0.40764in;height:0.35972in" />
+
 - Establish visibility.
 - Enable automation.
 

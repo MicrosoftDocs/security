@@ -8,8 +8,9 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-<img src="./media/networks/image1.png" style="width:0.33681in;height:0.33681in" />Securing networks with Zero Trust
-===========================================================================================================
+# Securing networks with Zero Trust
+
+<img src="./media/networks/image1.png" style="width:0.33681in;height:0.33681in" />
 
 Big data presents new opportunities to derive new insights and gain a competitive edge. We are moving away from an era where networks were clearly defined and usually specific to a certain location. The cloud, mobile devices, and other [endpoints](https://aka.ms/ZTEndpoints) expand the boundaries and change the paradigm. Now there isn't necessarily a contained/defined network to secure. Instead, there is a vast portfolio of devices and networks, all linked by the cloud.
 

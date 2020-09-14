@@ -58,7 +58,7 @@ security and optimize how Zero Trust is implemented:**
 <!--
 <img src="./media/intro/image2.png" style="width:0.51701in;height:0.51701in" />
 -->
-[:::image type="content" source="./media/intro/icon-fingerprint-large.png" alt-text="Fingerprint icon." border="false":::](https://www.youtube.com/watch?v=gA5q0_3bxPs)
+:::image type="content" source="./media/intro/icon-fingerprint-large.png" alt-text="Fingerprint icon." border="false":::
    :::column-end:::
    :::column span="3":::
 [**Secure identity with Zero Trust**](./identity.md)
@@ -66,7 +66,7 @@ security and optimize how Zero Trust is implemented:**
 Identities—whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow least privilege access principles.
    :::column-end:::
    :::column span="2":::
-:::image type="content" source="./media/desktop-deployment-center-home-media-13.png" alt-text="Placeholder 1." border="false":::
+[:::image type="content" source="./media/desktop-deployment-center-home-media-13.png" alt-text="Placeholder 1." border="false":::](https://www.youtube.com/watch?v=gA5q0_3bxPs)
    :::column-end:::
 :::row-end:::
 :::row:::

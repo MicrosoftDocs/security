@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Secure endpoints with Zero Trust
 
-:::image type="content" source="./media/endpoints/icon-endpoint-devices-large.png" alt-text="Icon of endpoint devices." border="false":::
+:::image type="content" source="./media/icon-endpoint-devices-large.png" alt-text="Icon of endpoint devices." border="false":::
 
 The modern enterprise has an incredible diversity of endpoints accessing data. Not all endpoints are managed or even owned by the organization, leading to different device configurations and software patch levels. This creates a massive attack surface and, if left unresolved, accessing work data from untrusted endpoints can easily become the weakest link in your [Zero Trust](https://go.microsoft.com/fwlink/p/?LinkID=2109181&clcid=0x409&culture=en-us&country=US) security strategy.
 

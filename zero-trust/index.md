@@ -74,7 +74,7 @@ Identities—whether they represent people, services, or IoT devices—define th
 <!--
 <img src="./media/intro/image4.emf" style="width:0.27292in;height:0.27292in" />
 -->
-:::image type="content" source="./media/intro/icon-endpoint-devices.png" alt-text="Endpoint devices icon." border="false":::
+:::image type="content" source="./media/icon-endpoint-devices-large.png" alt-text="Endpoint devices icon." border="false":::
    :::column-end:::
    :::column span="3":::
 [**Secure endpoints with Zero Trust**](./endpoints.md)

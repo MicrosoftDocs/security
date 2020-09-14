@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 09/01/2020
+ms.date: 09/13/2020
 ---
 
 # Security news and highlights
@@ -15,6 +15,10 @@ The security documentation site provides you with current news and highlights fr
 
 
 Below are past news and highlights that you may have missed or would like to revisit.
+
+September, 2020
+
+- [Migrate from Symantec to Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration)
 
 August, 2020
 

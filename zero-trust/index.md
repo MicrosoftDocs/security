@@ -66,7 +66,7 @@ security and optimize how Zero Trust is implemented:**
 Identities—whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow least privilege access principles.
    :::column-end:::
    :::column span="2":::
-[:::image type="content" source="./media/desktop-deployment-center-home-media-13.png" alt-text="Placeholder 1." border="false":::](https://www.youtube.com/watch?v=gA5q0_3bxPs)
+[:::image type="content" source="./media/video-image-placeholder-01.png" alt-text="Placeholder 1." border="false":::](https://www.youtube.com/watch?v=gA5q0_3bxPs)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -82,7 +82,7 @@ Identities—whether they represent people, services, or IoT devices—define th
 Once an identity has been granted access to a resource, data can flow to a variety of different endpoints—from IoT devices to smartphones, BYOD to partner-managed devices, and on-premises workloads to cloud-hosted servers. This diversity creates a massive attack surface area. Monitor and enforce device health and compliance for secure access.
    :::column-end:::
    :::column span="2":::
-:::image type="content" source="./media/desktop-deployment-center-home-media-14.png" alt-text="Placeholder 2." border="false":::
+[:::image type="content" source="./media/video-image-placeholder-02.png" alt-text="Placeholder 2." border="false":::](https://youtu.be/T6eWZbIP67E)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -95,7 +95,7 @@ Once an identity has been granted access to a resource, data can flow to a varie
 Applications and APIs provide the interface by which data is consumed. They may be legacy on-premises, lifted-and-shifted to cloud workloads, or modern SaaS applications. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.
    :::column-end:::
    :::column span="2":::
-:::image type="content" source="./media/desktop-deployment-center-home-media-15.png" alt-text="Placeholder 3." border="false":::
+[:::image type="content" source="./media/video-image-placeholder-03.png" alt-text="Placeholder 3." border="false":::](https://youtu.be/6jsOaz1uS08)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -111,7 +111,7 @@ Applications and APIs provide the interface by which data is consumed. They may 
 Ultimately, security teams are protecting data. Where possible, data should remain safe even if it leaves the devices, apps, infrastructure, and networks the organization controls. Classify, label, and encrypt data, and restrict access based on those attributes.
    :::column-end:::
    :::column span="2":::
-:::image type="content" source="./media/desktop-deployment-center-home-media-16.png" alt-text="Placeholder 4." border="false":::
+[:::image type="content" source="./media/video-image-placeholder-04.png" alt-text="Placeholder 4." border="false":::](https://youtu.be/XFg3szECXiw)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -127,7 +127,7 @@ Ultimately, security teams are protecting data. Where possible, data should rema
 Infrastructure—whether on-premises servers, cloud-based VMs, containers, or micro-services—represents a critical threat vector. Assess for version, configuration, and JIT access to harden defense. Use telemetry to detect attacks and anomalies, and automatically block and flag risky behavior and take protective actions.
    :::column-end:::
    :::column span="2":::
-:::image type="content" source="./media/desktop-deployment-center-home-media-17.png" alt-text="Placeholder 5." border="false":::
+[:::image type="content" source="./media/video-image-placeholder-05.png" alt-text="Placeholder 5." border="false":::](https://youtu.be/Nr01LAPaaik)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -140,7 +140,7 @@ Infrastructure—whether on-premises servers, cloud-based VMs, containers, or mi
 All data is ultimately accessed over network infrastructure. Networking controls can provide critical controls to enhance visibility and help prevent attackers from moving laterally across the network. Segment networks (and do deeper in-network micro-segmentation) and deploy real-time threat protection, end-to-end encryption, monitoring, and analytics.
    :::column-end:::
    :::column span="2":::
-:::image type="content" source="./media/desktop-deployment-center-home-media-18.png" alt-text="Placeholder 6." border="false":::
+[:::image type="content" source="./media/video-image-placeholder-06.png" alt-text="Placeholder 6." border="false":::](https://youtu.be/8CBfhBCtGGw)
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -158,6 +158,6 @@ In our Zero Trust guides, we define the approach to implement an end-to-end Zero
 With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
    :::column-end:::
    :::column span="2":::
-:::image type="content" source="./media/desktop-deployment-center-home-media-19.png" alt-text="Placeholder 7." border="false":::
+[:::image type="content" source="./media/video-image-placeholder-07.png" alt-text="Placeholder 7." border="false":::](https://youtu.be/FgC-kVfcgm8)
    :::column-end:::
 :::row-end:::

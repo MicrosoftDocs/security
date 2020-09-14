@@ -45,20 +45,14 @@ implementing our own Zero Trust model, we've developed the following
 guidance to assess your readiness and to help you build a plan to get to
 Zero Trust.
 
-<!--
-<img src="./media/image1.png" style="width:5.82154in;height:1.56944in" />
--->
-:::image type="content" source="./media/intro/zero-trust-security-elements-diagram.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
+:::image type="content" source="./media/zero-trust-security-elements-diagram.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
 **Follow the steps below to mature your organization's approach to
 security and optimize how Zero Trust is implemented:**
 
-:::row:::
+:::row::: <!-- ROW: Identity -->
    :::column:::
-<!--
-<img src="./media/intro/image2.png" style="width:0.51701in;height:0.51701in" />
--->
-:::image type="content" source="./media/intro/icon-fingerprint-large.png" alt-text="Fingerprint icon." border="false":::
+:::image type="content" source="./media/icon-fingerprint-large.png" alt-text="Fingerprint icon." border="false":::
    :::column-end:::
    :::column span="3":::
 [**Secure identity with Zero Trust**](./identity.md)
@@ -69,11 +63,8 @@ Identities—whether they represent people, services, or IoT devices—define th
 [:::image type="content" source="./media/video-image-placeholder-01.png" alt-text="Placeholder 1." border="false":::](https://www.youtube.com/watch?v=gA5q0_3bxPs)
    :::column-end:::
 :::row-end:::
-:::row:::
+:::row::: <!-- ROW: Endpoints -->
    :::column:::
-<!--
-<img src="./media/intro/image4.emf" style="width:0.27292in;height:0.27292in" />
--->
 :::image type="content" source="./media/icon-endpoint-devices-large.png" alt-text="Endpoint devices icon." border="false":::
    :::column-end:::
    :::column span="3":::
@@ -85,9 +76,9 @@ Once an identity has been granted access to a resource, data can flow to a varie
 [:::image type="content" source="./media/video-image-placeholder-02.png" alt-text="Placeholder 2." border="false":::](https://youtu.be/T6eWZbIP67E)
    :::column-end:::
 :::row-end:::
-:::row:::
+:::row::: <!-- ROW: Applications -->
    :::column:::
-:::image type="content" source="./media/intro/icon-application-window.png" alt-text="Application window icon." border="false":::
+:::image type="content" source="./media/icon-application-window-large.png" alt-text="Application window icon." border="false":::
    :::column-end:::
    :::column span="3":::
 [**Secure applications with Zero Trust**](./applications.md)
@@ -98,12 +89,9 @@ Applications and APIs provide the interface by which data is consumed. They may 
 [:::image type="content" source="./media/video-image-placeholder-03.png" alt-text="Placeholder 3." border="false":::](https://youtu.be/6jsOaz1uS08)
    :::column-end:::
 :::row-end:::
-:::row:::
+:::row::: <!-- ROW: Data -->
    :::column:::
-<!--
-<img src="./media/intro/image5.png" style="width:0.26189in;height:0.22618in" />
--->
-:::image type="content" source="./media/intro/icon-ones-and-zeroes.png" alt-text="Ones and zeroes icon." border="false":::
+:::image type="content" source="./media/icon-ones-and-zeroes-large.png" alt-text="Ones and zeroes icon." border="false":::
    :::column-end:::
    :::column span="3":::
 [**Secure data with Zero Trust**](./data.md)
@@ -114,12 +102,9 @@ Ultimately, security teams are protecting data. Where possible, data should rema
 [:::image type="content" source="./media/video-image-placeholder-04.png" alt-text="Placeholder 4." border="false":::](https://youtu.be/XFg3szECXiw)
    :::column-end:::
 :::row-end:::
-:::row:::
+:::row::: <!-- ROW: Infrastructure -->
    :::column:::
-<!--
-<img src="./media/intro/image8.png" style="width:0.24653in;height:0.24653in" />
--->
-:::image type="content" source="./media/intro/icon-data-storage-disks.png" alt-text="Data storage disks icon." border="false":::
+:::image type="content" source="./media/icon-data-storage-disks-large.png" alt-text="Data storage disks icon." border="false":::
    :::column-end:::
    :::column span="3":::
 [**Secure infrastructure with Zero Trust**](./infrastructure.md)
@@ -130,9 +115,9 @@ Infrastructure—whether on-premises servers, cloud-based VMs, containers, or mi
 [:::image type="content" source="./media/video-image-placeholder-05.png" alt-text="Placeholder 5." border="false":::](https://youtu.be/Nr01LAPaaik)
    :::column-end:::
 :::row-end:::
-:::row:::
+:::row::: <!-- ROW: Networks -->
    :::column:::
-:::image type="content" source="./media/intro/icon-network-diagram.png" alt-text="Network diagram icon." border="false":::
+:::image type="content" source="./media/icon-network-diagram-large.png" alt-text="Network diagram icon." border="false":::
    :::column-end:::
    :::column span="3":::
 [**Secure networks with Zero Trust**](./networks.md)
@@ -143,21 +128,18 @@ All data is ultimately accessed over network infrastructure. Networking controls
 [:::image type="content" source="./media/video-image-placeholder-06.png" alt-text="Placeholder 6." border="false":::](https://youtu.be/8CBfhBCtGGw)
    :::column-end:::
 :::row-end:::
-:::row:::
+:::row::: <!-- ROW: Visibility, automation, and orchestration -->
    :::column:::
-<!--
-<img src="./media/intro/icon-gear.png" style="width:75px;height:75px" />
--->
-:::image type="content" source="./media/intro/icon-gear.png" alt-text="Gear icon." border="false":::
+:::image type="content" source="./media/icon-gear-large.png" alt-text="Gear icon." border="false":::
    :::column-end:::
    :::column span="3":::
 [**Visibility, automation, and orchestration with Zero Trust**](./visibility-automation-orchestration.md)
 
 In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints and devices, data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
-
-With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
    :::column-end:::
    :::column span="2":::
 [:::image type="content" source="./media/video-image-placeholder-07.png" alt-text="Placeholder 7." border="false":::](https://youtu.be/FgC-kVfcgm8)
    :::column-end:::
 :::row-end:::
+
+With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.

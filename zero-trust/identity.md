@@ -131,28 +131,30 @@ risk—verified explicitly at the point of access. We will show how you
 can implement a Zero Trust identity strategy with Azure AD.
 
 :::row:::
-   :::column:::
+   :::column span="2":::
 Connect all of your users to Azure AD and federate with on-premises identity systems.
    :::column-end:::
    :::column:::
 :::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
-   :::column:::
+   :::column span="2":::
 Establish your Identity Foundation with Azure AD.
    :::column-end:::
    :::column:::
 :::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
-   :::column:::
+   :::column span="2":::
 Integrate all your applications with Azure AD.
    :::column-end:::
    :::column:::
 :::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
-   :::column:::
+   :::column span="2":::
 Verify explicitly with strong authentication.
    :::column-end:::
 :::row-end:::
+
+
 
 #### Connect all of your users to Azure AD and federate with on-premises identity systems
 

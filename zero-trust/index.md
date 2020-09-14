@@ -136,10 +136,10 @@ All data is ultimately accessed over network infrastructure. Networking controls
 [**Visibility, automation, and orchestration with Zero Trust**](./visibility-automation-orchestration.md)
 
 In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints and devices, data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
-
-With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
    :::column-end:::
    :::column span="2":::
 [:::image type="content" source="./media/video-image-placeholder-07.png" alt-text="Placeholder 7." border="false":::](https://youtu.be/FgC-kVfcgm8)
    :::column-end:::
 :::row-end:::
+
+With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.

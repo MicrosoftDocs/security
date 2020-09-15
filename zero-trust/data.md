@@ -69,7 +69,7 @@ information protection project, not just those focused on implementing a
 Zero Trust approach to securing data. We won't further discuss these
 activities in this guide. For more information, see:
 
--   Microsoft Documents: [Getting started with sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-worldwide)
+-   Microsoft Documents: [Getting started with sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-worldwide&preserve-view=true)
 
 -   MIP and Compliance: [Deployment Acceleration Guide](https://aka.ms/MIPC/DAG)
 
@@ -166,11 +166,11 @@ To avoid issues with data not being labeled manually, or labels being applied in
 
 **Automatically label content in Microsoft 365 Apps for Enterprise or Unified Labeling client**
 
-A strategic client selection for Windows leverages [built-in information protection features in Microsoft Office](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#support-for-sensitivity-label-capabilities-in-apps). If this is not possible, an alternative solution would be to use the Azure Information Protection unified labeling client.
+A strategic client selection for Windows leverages [built-in information protection features in Microsoft Office](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide&preserve-view=true#support-for-sensitivity-label-capabilities-in-apps). If this is not possible, an alternative solution would be to use the Azure Information Protection unified labeling client.
 
 Follow these steps:
 
-1.  [Learn how to configure auto-labeling](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide#how-to-configure-auto-labeling-for-office-apps) for Office apps.
+1.  [Learn how to configure auto-labeling](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide&preserve-view=true#how-to-configure-auto-labeling-for-office-apps) for Office apps.
 
 1.  [Apply sensitivity labels to content automatically](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide).
 

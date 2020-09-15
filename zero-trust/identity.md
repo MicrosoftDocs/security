@@ -10,9 +10,9 @@ ms.topic: conceptual
 
 # Securing identity with Zero Trust
 
-#### Background
-
 :::image type="content" source="./media/identity/icon-fingerprint-large.png" alt-text="Fingerprint icon." border="false":::
+
+#### Background
 
 Cloud applications and the mobile workforce have redefined the security perimeter. Employees are bringing their own devices and working remotely. Data is being accessed outside the corporate network and shared with external collaborators such as partners and vendors. Corporate applications and data are moving from on-premises to hybrid and cloud environments. Organizations can no longer rely on traditional network controls for security. Controls need to move to where the data is: on devices, inside apps, and with partners.
 
@@ -273,7 +273,7 @@ Follow these steps:
 
 1.  [Restrict user consent and manage consent requests](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests) to ensure that no unnecessary exposure occurs of your organization's data to apps.
 
-2.  [Review prior/existing consent in your organization](https://docs.microsoft.com/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants?view=o365-worldwide) for any excessive or malicious consent.
+2.  [Review prior/existing consent in your organization](https://docs.microsoft.com/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants?view=o365-worldwide&preserve-view=true) for any excessive or malicious consent.
 
 For more on tools to protect against tactics to access sensitive information, see "Strengthen protection against cyber threats and rogue apps" in our [guide to implementing an identity Zero Trust strategy](https://aka.ms/ZTIdentity).
 

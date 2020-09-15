@@ -42,11 +42,12 @@ analysis, and other tools.
 
 ## Identity Zero Trust deployment objectives
 
-**Before** most organizations **start the Zero Trust journey**, their
+
+<div class="alert">**Before** most organizations **start the Zero Trust journey**, their
 approach to identity is problematic in that the on-premises identity
 provider is in use, no SSO is present between cloud and on-premises
 apps, and [visibility](./visibility-automation-orchestration.md) into identity
-risk is very limited.
+risk is very limited.</div>
 
 When implementing an end-to-end Zero Trust framework for identity, we
 recommend you focus first on these _initial_ deployment objectives:

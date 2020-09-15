@@ -12,6 +12,8 @@ ms.topic: conceptual
 
 :::image type="content" source="./media/data/icon-ones-and-zeroes-large.png" alt-text="Ones and zeroes icon." border="false":::
 
+#### Background
+
 Protecting data is one of the primary responsibilities of security and compliance teams. Data should remain protected while at rest, in use, and when it leaves the [endpoints](https://aka.ms/ZTEndpoints), [apps](https://aka.ms/ZTApplications), [infrastructure](https://aka.ms/ZTInfrastructure), and [networks](https://aka.ms/ZTNetwork) that are within the control of the organization. To ensure protection and that data access is restricted to authorized users, data should be inventoried, classified, labeled, and, where appropriate, encrypted.
 
 The three core elements of a data protection strategy are:

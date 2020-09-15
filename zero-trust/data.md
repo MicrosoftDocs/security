@@ -172,7 +172,7 @@ Follow these steps:
 
 1.  [Learn how to configure auto-labeling](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide&preserve-view=true#how-to-configure-auto-labeling-for-office-apps) for Office apps.
 
-1.  [Apply sensitivity labels to content automatically](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide).
+1.  [Apply sensitivity labels to content automatically](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide&preserve-view=true).
 
 
 **Automatically classify, label, and protect business critical content with sensitive data on-premises**
@@ -198,15 +198,15 @@ I.  **Classification is augmented by smart machine learning models.**
 
 Enterprises have vast amounts of data that can be challenging to adequately label and classify. Once you've completed the first two steps, the next step is to use machine learning for smarter classification.
 
-Microsoft 365 provides three ways to classify content, including [manually](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#manually) and with [automated pattern matching](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#automated-pattern-matching).
+Microsoft 365 provides three ways to classify content, including [manually](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#manually) and with [automated pattern matching](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide&preserve-view=true#automated-pattern-matching).
 
-[Trainable classifiers](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#trainable-classifiers) (preview) are a third method well-suited to content that isn't easily identified by manual or automated pattern matching methods. A classifier learns how to identify a type of content by looking at hundreds of examples of the content you\'re interested in classifying. You start by feeding it examples that are definitely in the category. Once it processes those, you test it by giving it a mix of both matching and non-matching examples. The classifier then makes predictions as to whether any given item falls into the category you\'re building. You then confirm its results, sorting out the positives, negatives, false positives, and false negatives to help increase the accuracy of its predictions. When you publish the trained classifier, it sorts through items in locations like SharePoint Online, Exchange, and OneDrive, and classifies the content.
+[Trainable classifiers](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide&preserve-view=true#trainable-classifiers) (preview) are a third method well-suited to content that isn't easily identified by manual or automated pattern matching methods. A classifier learns how to identify a type of content by looking at hundreds of examples of the content you\'re interested in classifying. You start by feeding it examples that are definitely in the category. Once it processes those, you test it by giving it a mix of both matching and non-matching examples. The classifier then makes predictions as to whether any given item falls into the category you\'re building. You then confirm its results, sorting out the positives, negatives, false positives, and false negatives to help increase the accuracy of its predictions. When you publish the trained classifier, it sorts through items in locations like SharePoint Online, Exchange, and OneDrive, and classifies the content.
 
 Follow these steps:
 
-1.  Learn [where you can use trainable classifiers](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide#where-you-can-use-trainable-classifiers).
+1.  Learn [where you can use trainable classifiers](https://docs.microsoft.com/microsoft-365/compliance/classifier-getting-started-with?view=o365-worldwide&preserve-view=true#where-you-can-use-trainable-classifiers).
 
-2.  [Create a trainable classifier](https://docs.microsoft.com/microsoft-365/compliance/classifier-creating-a-trainable-classifier?view=o365-worldwide) (preview).
+2.  [Create a trainable classifier](https://docs.microsoft.com/microsoft-365/compliance/classifier-creating-a-trainable-classifier?view=o365-worldwide&preserve-view=true) (preview).
 
 
 IV.  **Access decisions are governed by a cloud security policy engine.**
@@ -221,7 +221,7 @@ For data stored in Exchange, SharePoint, and OneDrive, automatic classification 
 
 Follow these steps:
 
-1.  [Configure auto-labeling policies](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) for SharePoint, OneDrive, and Exchange.
+1.  [Configure auto-labeling policies](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide&preserve-view=true#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) for SharePoint, OneDrive, and Exchange.
 
 2.  [Integrate Microsoft Cloud App
 Security](https://docs.microsoft.com/cloud-app-security/azip-integration) and Microsoft Information Protection and use it to also protect data in third-party environments such as Box or G-Suite. 
@@ -233,9 +233,9 @@ To comply with business standards and industry regulations, organizations must p
 
 Follow these steps:
 
-1.  [Learn how to protect data](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide) with DLP policies.
+1.  [Learn how to protect data](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide&preserve-view=true) with DLP policies.
 
-2.  [Create, test, and tune](https://docs.microsoft.com/microsoft-365/compliance/create-test-tune-dlp-policy?view=o365-worldwide#where-to-start-with-data-loss-prevention) a DLP policy.
+2.  [Create, test, and tune](https://docs.microsoft.com/microsoft-365/compliance/create-test-tune-dlp-policy?view=o365-worldwide&preserve-view=true#where-to-start-with-data-loss-prevention) a DLP policy.
 
 3.  Use DLP to enforce actions (e.g., protect content, restrict access, or, in the case of an email, block from being transmitted) when content matches a set of conditions.
 
@@ -298,7 +298,7 @@ Follow these steps:
 
 -   Review the [Microsoft 365 Information Protection and Compliance Deployment Acceleration Guide](https://aka.ms/MIPC/DAG).
 
--   [Get started with sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-worldwide).
+-   [Get started with sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-worldwide&preserve-view=true).
 
 
 **Automatically discover business-critical content with sensitive data on-premises**
@@ -323,9 +323,9 @@ Once sensitivity labels have been published from Microsoft 365 Compliance Center
 
 Follow these steps:
 
-1.  [Compare labeling client features](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers) for Windows computers and [review support for sensitivity label](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#support-for-sensitivity-label-capabilities-in-apps) capabilities in Office apps to determine what sensitivity features and platform requirements are important to your scenarios.
+1.  [Compare labeling client features](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers) for Windows computers and [review support for sensitivity label](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide&preserve-view=true#support-for-sensitivity-label-capabilities-in-apps) capabilities in Office apps to determine what sensitivity features and platform requirements are important to your scenarios.
 
-2.  [Start using sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide) in Office apps, including [Microsoft Team sites, Microsoft 365 groups (formerly Office 365 groups), and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-worldwide). Sensitivity labels can also be used to [classify and label sensitive data in Power BI service](https://docs.microsoft.com/power-bi/collaborate-share/service-security-apply-data-sensitivity-labels) and can be applied to datasets, reports, dashboards, and data flows.
+2.  [Start using sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide) in Office apps, including [Microsoft Team sites, Microsoft 365 groups (formerly Office 365 groups), and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-worldwide). Sensitivity labels can also be used to [classify and label sensitive data in Power BI service](https://docs.microsoft.com/power-bi/collaborate-share/service-security-apply-data-sensitivity-labels&preserve-view=true) and can be applied to datasets, reports, dashboards, and data flows.
 
 **Default label applied to new content created by users**
 
@@ -333,7 +333,7 @@ When publishing a label policy, you can identify a specific label to be applied 
 
 Take this step:
 
- - [Learn what label policies can do](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide#what-label-policies-can-do) and what to consider when setting default labels.
+ - [Learn what label policies can do](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide&preserve-view=true#what-label-policies-can-do) and what to consider when setting default labels.
 
 **Visual markings to indicate sensitive documents across apps and services**
 
@@ -343,20 +343,19 @@ After a sensitivity label is created and applied to an email or document, any co
 
 Take this step:
 
- - [Learn when content markings are applied](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption).
+ - [Learn when content markings are applied](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide&preserve-view=true#when-office-apps-apply-content-marking-and-encryption).
 
 **Audit data to understand user labeling, classification, and protection behaviors**
 
-Once sensitivity labels have been published to your organization, you can use [data classification](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview?view=o365-worldwide) to identify sensitive content, where it's located, and exposure from user activities.
+Once sensitivity labels have been published to your organization, you can use [data classification](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview?view=o365-worldwide&preserve-view=true) to identify sensitive content, where it's located, and exposure from user activities.
 
 The **content explorer** tab in the Microsoft 365 Compliance Center provides a view of data at risk by displaying the amount and types of sensitive data in a particular document which can be filtered by label or sensitivity type to get a detailed view of locations where sensitive data is stored. The **Activity explorer** tab provides a view of activities related to sensitive data, sensitivity, and retention labels (such as decreased protection due to label downgrade or changes). Activity explorer also helps investigate events that could be leading towards a data leak scenario (e.g., removal of labels). Understanding these activities provides the ability to identify the right policies for protection or data loss prevention to ensure your most sensitive data is secure.
 
 Follow these steps:
 
-1.  [Get started with content explorer](https://docs.microsoft.com/microsoft-365/compliance/data-classification-content-explorer?view=o365-worldwide) to natively view the items summarized on the data classification overview page.
+1.  [Get started with content explorer](https://docs.microsoft.com/microsoft-365/compliance/data-classification-content-explorer?view=o365-worldwide&preserve-view=true) to natively view the items summarized on the data classification overview page.
 
-1.  [Get started with activity
-explorer](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide) to monitor the history of activities related to labeled content. 
+1.  [Get started with activity explorer](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide&preserve-view=true) to monitor the history of activities related to labeled content. 
 
 ## Conclusion
 

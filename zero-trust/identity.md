@@ -31,7 +31,7 @@ Once the identity has been verified, we can control that identity's access to re
 ## Identity Zero Trust deployment objectives
 
 
-<div class="alert"><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and <a href="./visibility-automation-orchestration.md">visibility</a> into identity risk is very limited.</div>
+<div class="alert.is-info"><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and <a href="./visibility-automation-orchestration.md">visibility</a> into identity risk is very limited.</div>
 
 When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these _initial_ deployment objectives:
 

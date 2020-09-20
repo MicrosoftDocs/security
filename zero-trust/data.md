@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 :::image type="content" source="./media/data/icon-ones-and-zeroes-large.png" alt-text="Ones and zeroes icon." border="false":::
 
-#### Background
+**Background**
 
 Protecting data is one of the primary responsibilities of security and compliance teams. Data should remain protected while at rest, in use, and when it leaves the [endpoints](https://aka.ms/ZTEndpoints), [apps](https://aka.ms/ZTApplications), [infrastructure](https://aka.ms/ZTInfrastructure), and [networks](https://aka.ms/ZTNetwork) that are within the control of the organization. To ensure protection and that data access is restricted to authorized users, data should be inventoried, classified, labeled, and, where appropriate, encrypted.
 
@@ -109,7 +109,7 @@ After these are completed, focus on these **additional deployment objectives**:
    :::column-end:::
 :::row-end:::
 
-**Products covered in this guide**
+## Products covered in this guide
 
 **Microsoft Azure**
 
@@ -139,7 +139,7 @@ This guide will walk you step-by-step through a Zero Trust approach to data prot
 :::image type="content" source="./media/icon-checklist-one-checkmark.png" alt-text="List icon with one checkmark, second instance." border="false":::
    :::column-end:::
    :::column span="3":::
-**Initial Zero Trust deployment objectives**
+## Initial Zero Trust deployment objectives
    :::column-end:::
 :::row-end:::
 
@@ -189,7 +189,7 @@ Take this step:
 :::image type="content" source="./media/icon-checklist-two-checkmarks.png" alt-text="List icon with two checkmarks, second instance." border="false":::
    :::column-end:::
    :::column span="3":::
-**Additional deployment objectives**
+## Additional deployment objectives
    :::column-end:::
 :::row-end:::
 

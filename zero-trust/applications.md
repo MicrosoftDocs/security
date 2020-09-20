@@ -8,8 +8,10 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-<img src="./media/applications/image1.emf" style="width:0.41667in;height:0.41667in" />Securing applications with Zero Trust
-===============================================================================================================
+
+# Securing applications with Zero Trust
+
+<img src="./media/applications/image1.emf" style="width:0.41667in;height:0.41667in" />
 
 **Background**
 
@@ -18,15 +20,10 @@ To get the full benefit of cloud apps and services, organizations must find th
 The **Zero Trust** model helps organizations ensure that apps, and the data they contain, are protected by:
 
 -   Applying controls and technologies to discover Shadow IT.
-
 -   Ensuring appropriate in-app permissions. 
-
 -   Limiting access based on real-time analytics. 
-
 -   Monitoring for abnormal behavior. 
-
 -   Controlling user actions. 
-
 -   Validating secure configuration options. 
 
 ## Applications Zero Trust deployment objectives
@@ -34,24 +31,22 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
 Before most organizations start the Zero Trust journey, their approach to application security is characterized by the following:
 
 -   On-premises apps are accessed through physical networks or VPN.
-
 -   Some critical cloud apps are accessible to users.
 
 When implementing a Zero Trust approach to managing and monitoring applications, we recommend you focus first on these **initial deployment objectives**:
 
--  <img src="./media/applications/image2.png" style="width:0.40746in;height:0.35952in" />Gain visibility into the activities and data in your applications by connecting them via APIs.
+<img src="./media/applications/image2.png" style="width:0.40746in;height:0.35952in" />
 
+- Gain visibility into the activities and data in your applications by connecting them via APIs.
 - Discover and control the use of shadow IT.
-
 - Protect sensitive information and activities automatically by implementing policies.
 
-Once these are completed, focus on these **additional deployment
-objectives**:
+Once these are completed, focus on these **additional deployment objectives**:
 
--  <img src="./media/applications/image4.png" style="width:0.41875in;height:0.36944in" />Deploy adaptive access and session controls for all apps.
+<img src="./media/applications/image4.png" style="width:0.41875in;height:0.36944in" />
 
+- Deploy adaptive access and session controls for all apps.
 - Strengthen protection against cyber threats and rogue apps.
-
 - Assess the security configuration of your cloud environments.
 
 ## Products covered in this guide
@@ -84,9 +79,9 @@ This guide will walk you through the steps required to secure applications and A
 
 <img src="./media/applications/image6.png" style="width:0.5812in;height:0.51282in" />
 
-### Initial deployment objectives
+## Initial deployment objectives
 
-#### Gain visibility into the activities and data in your applications by connecting them via APIs
+### Gain visibility into the activities and data in your applications by connecting them via APIs
 
 The majority of users\' activities in an organization originate on cloud applications and associated resources. Most major cloud apps provide an API for consuming tenant information and receiving corresponding governance actions. Use these integrations to monitor and alert when threats and anomalies occur in your environment.
 
@@ -98,7 +93,7 @@ Follow these steps:
 
 [Learn about implementing an end-to-end identity Zero Trust strategy](https://aka.ms/ZTIdentity).
 
-#### Discover and control the use of shadow IT
+### Discover and control the use of shadow IT
 
 On average, 1,000 separate apps are being used in your organization. 80 percent of employees use non-sanctioned apps that no one has reviewed and that may not be compliant with your security and compliance policies. And, because your employees are able to access your resources and apps from outside your corporate network, it's no longer enough to have rules and policies on your firewalls.
 
@@ -145,7 +140,7 @@ Follow these steps:
 
 [Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork).
 
-#### Protect your sensitive information and activities automatically by implementing policies
+### Protect your sensitive information and activities automatically by implementing policies
 
 Cloud App Security enables you to define the way you want users to behave in the cloud. This can be done by creating policies. There are many types: Access, activity, anomaly detection, app discovery, file policy, cloud discovery anomaly detection, and session policies.
 
@@ -171,9 +166,9 @@ Follow these steps:
 
 <img src="./media/applications/image7.png" style="width:0.58974in;height:0.52036in" />
 
-### Additional deployment objectives
+## Additional deployment objectives
 
-#### Deploy adaptive access and session controls for all apps
+### Deploy adaptive access and session controls for all apps
 
 Once you've accomplished your initial three objectives, you can focus on
 additional objectives such as ensuring that all apps are using
@@ -188,7 +183,7 @@ Take this step:
 
 [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
-#### Strengthen protection against cyber threats and rogue apps
+### Strengthen protection against cyber threats and rogue apps
 
 Bad actors have developed dedicated and unique attack tools, techniques, and procedures (TTPs) that target the cloud to breach defenses and access sensitive and business-critical information. They use tactics such as illicit OAuth consent grants, cloud ransomware, and compromising credentials for cloud identity.
 
@@ -202,7 +197,7 @@ Follow these steps:
 
 -   [Tune and scope](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#tune-anomaly-detection-policies) anomaly detection policies.
 
-#### Assess the security posture of your cloud environments
+### Assess the security posture of your cloud environments
 
 Beyond SaaS applications, organizations are heavily invested in IaaS and PaaS services. Cloud App Security enables your organization to assess and strengthen your security posture and capabilities for these services by getting visibility into the security configuration and compliance status across your public cloud platforms. This enables a risk-based investigation of the entire platform configuration status.
 

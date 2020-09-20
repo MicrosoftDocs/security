@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 :::image type="content" source="./media/icon-endpoint-devices-large.png" alt-text="Icon of endpoint devices." border="false":::
 
-#### Background
+**Background**
 
 The modern enterprise has an incredible diversity of endpoints accessing data. Not all endpoints are managed or even owned by the organization, leading to different device configurations and software patch levels. This creates a massive attack surface and, if left unresolved, accessing work data from untrusted endpoints can easily become the weakest link in your [Zero Trust](https://go.microsoft.com/fwlink/p/?LinkID=2109181&clcid=0x409&culture=en-us&country=US) security strategy.
 
@@ -99,9 +99,9 @@ This guide will walk you through the steps required to secure your devices follo
 
 :::image type="content" source="./media/endpoints/icon-checklist-one-checkmark-large.png" alt-text="Checklist icon with one checkmark." border="false":::
 
-### Initial deployment objectives
+## Initial deployment objectives
 
-#### Endpoints are registered with a cloud identity provider
+### Endpoints are registered with a cloud identity provider
 
 To help limit risk exposure, you need to monitor every endpoint to ensure each one has a trusted identity, security policies are applied, and the risk level for things like malware or data exfiltration has been measured, remediated, or deemed acceptable.
 
@@ -510,7 +510,7 @@ Follow these steps:
 :::image type="content" source="./media/identity/icon-checklist-two-checkmarks-large.png" alt-text="Checklist icon with two checkmarks." border="false":::
    :::column-end:::
    :::column span="3":::
-### Additional deployment objectives
+## Additional deployment objectives
    :::column-end:::
 :::row-end:::
 

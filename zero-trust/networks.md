@@ -87,7 +87,7 @@ This guide will walk you through the steps required to secure your networks foll
 
 <img src="./media/networks/image6.png" style="width:0.5812in;height:0.51282in" />
 
-**Initial deployment objectives**
+## Initial deployment objectives
 
 ### Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation.
 
@@ -179,7 +179,7 @@ Follow these steps:
 
 <img src="./media/networks/image8.png" style="width:0.58974in;height:0.52036in" />
 
-**Additional deployment objectives**
+## Additional deployment objectives
 
 ### Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
 
@@ -201,7 +201,7 @@ Follow these steps:
 
 Follow these steps, depending on the type of boundary:
 
-> **Internet boundary**
+**Internet boundary**
 
 1.  If internet connectivity is required for your application that needs to be routed via the hub VNet, [update the network security group rules](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic) in hub VNet to allow internet connectivity.
 
@@ -210,13 +210,13 @@ Follow these steps, depending on the type of boundary:
 
 3.  If your application uses HTTP/S protocols, [turn on Azure Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell) to protect against Layer 7 threats.
 
-> **On-premises boundary**
+**On-premises boundary**
 
 1.  If your app needs connectivity to your on-premise data center, [use Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-portal-resource-manager) of Azure VPN [for connectivity to your hub VNet](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal).
 
 2.  [Configure the Azure Firewall](https://docs.microsoft.com/azure/firewall/tutorial-hybrid-ps) in the hub VNet to inspect and govern traffic.
 
-> **PaaS services boundary**
+**PaaS services boundary**
 
 1.  When using Azure-provided PaaS services (e.g., Azure Storage, [Azure Cosmos DB](https://docs.microsoft.com/azure/private-link/create-private-endpoint-cosmosdb-portal),
     or [Azure Web App](https://docs.microsoft.com/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](https://docs.microsoft.com/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network.

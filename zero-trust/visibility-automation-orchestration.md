@@ -89,7 +89,7 @@ This guide will walk you through the steps required to manage visibility, automa
 
 <img src="./media/visibility-automation-orchestration/image4.png" style="width:0.58125in;height:0.5125in" />
 
-**Initial deployment objectives**
+## Initial deployment objectives
 
 ### Establish visibility
 

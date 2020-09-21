@@ -42,6 +42,7 @@ When data and sensitive content is understood, labeled, and classified, organiza
 
 -   **Track and monitor sensitive content** using policies as the content travels inside and outside your digital estate.
 
+
 ## Data Zero Trust deployment objectives
 
 An information protection strategy needs to encompass your organization's entire digital content. As a baseline, you need to define labels, discover sensitive data, and monitor the use of labels and actions across your environment. Use of sensitivity labels is discussed at the end of this guide.
@@ -247,6 +248,7 @@ These activities help address risk by identifying and marking sensitive informat
 
 The following guidance will help you get started with sensitivity labels.
 
+<div class="alert">
 :::row:::
    :::column:::
 Sensitivity labels are applied manually.
@@ -282,6 +284,7 @@ Visual markings to indicate sensitive documents across apps and services.
 Audit data to understand user labeling, classification, and protection behaviors.
    :::column-end:::
 :::row-end:::
+</div>
 
 
 **Sensitivity labels are applied manually.**

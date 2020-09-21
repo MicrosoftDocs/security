@@ -107,6 +107,7 @@ To help limit risk exposure, you need to monitor every endpoint to ensure each o
 
 After a device is registered, users can access your organization's restricted resources using their corporate username and password to sign in (or Windows Hello for Business).
 
+<div class="alert">
 :::row:::
    :::column:::
 Register corporate devices with Azure Active Directory.
@@ -124,6 +125,7 @@ Register personal devices with Azure Active Directory.
 Enable and configure Windows Hello for Business.
    :::column-end:::
 :::row-end:::
+</div>
 
 
 **Register corporate devices with Azure Active Directory (AD)**
@@ -267,15 +269,30 @@ After establishing compliance policies to gate access of corporate resources to 
 
 Also, [set remediation rules](https://docs.microsoft.com/mem/intune/protect/actions-for-noncompliance) for noncompliant devices, such as blocking a noncompliant device or offering the user a grace period to get compliant.
 
+<div class="alert">
+:::row:::
+   :::column span="3":::
+Create a compliance policy with Microsoft Intune (all platforms).
+   :::column-end:::
+   :::column:::
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+   :::column-end:::
+   :::column span="3":::
+Automate notification email and add additional remediation actions for noncompliant devices in Intune (all platforms).
+   :::column-end:::
+:::row-end:::
+</div>
+
+
 **Create a compliance policy with Microsoft Intune (all platforms)**
 
 Follow these steps to [create a compliance policy](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy):
 
 1.  Select Devices &gt; Compliance policies &gt; Policies &gt; Create Policy.
 
-2.  Select a Platform for this policy (Windows 10 used for example below).
+1.  Select a Platform for this policy (Windows 10 used for example below).
 
-3.  Select the desired Device Health configuration.
+1.  Select the desired Device Health configuration.
 
     :::image type="content" source="./media/endpoints/screenshot-windows-10-compliance-policy-device-health-settings.png" alt-text="Screenshot of Device Health in Windows 10 compliance policy settings." border="true":::
 
@@ -285,7 +302,7 @@ Follow these steps to [create a compliance policy](https://docs.microsoft.com/me
 
 1.  Configure Configuration Manager Compliance. This requires all compliance evaluations in Configuration Manager to be compliant and is only applicable for comanaged Windows 10 devices. All Intune-only devices will return N/A.
 
-2.  Configure System Security Settings.
+1.  Configure System Security Settings.
 
     :::image type="content" source="./media/endpoints/screenshot-windows-10-compliance-policy-system-security-settings.png" alt-text="Screenshot of System Security in Windows 10 compliance policy settings." border="true":::
 
@@ -309,15 +326,15 @@ Take these steps:
 
 1.  Select **Devices &gt; Compliance policies &gt; Notifications &gt; Create notification**.
 
-2.  Create a notification message template.
+1.  Create a notification message template.
 
     :::image type="content" source="./media/endpoints/screenshot-create-notifications-message-template.png" alt-text="Screenshot of Create notification in compliance policy settings." border="true":::
 
 1.  Select **Devices &gt; Compliance policies &gt; Policies**, select one of your policies, and then select **Properties**.
 
-2.  Select **Actions for noncompliance &gt; Add**.
+1.  Select **Actions for noncompliance &gt; Add**.
 
-3.  Add actions for noncompliance:
+1.  Add actions for noncompliance:
 
     :::image type="content" source="./media/endpoints/screenshot-actions-noncompliance-settings.png" alt-text="Screenshot of Actions for noncompliance in compliance policy settings." border="true":::
 
@@ -331,6 +348,32 @@ Take these steps:
 I.  **DLP policies are enforced for BYOD and corporate devices.**
 
 Once data access is granted, you want to control what the user can do with the data. For example, if a user accesses a document with a corporate identity, you want to prevent that document from being saved in an unprotected consumer storage location, or from being shared with a consumer communication or chat app.
+
+<div class="alert">
+:::row:::
+   :::column span="2":::
+Apply recommended security settings.
+   :::column-end:::
+   :::column:::
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+   :::column-end:::
+   :::column span="2":::
+Ensure updates are deployed automatically to endpoints.
+   :::column-end:::
+   :::column:::
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+   :::column-end:::
+   :::column span="2":::
+Ensure devices are encrypted.
+   :::column-end:::
+   :::column:::
+:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+   :::column-end:::
+   :::column span="2":::
+Create application protection policies to protect corporate data at the app level.
+   :::column-end:::
+:::row-end:::
+</div>
 
 **Apply recommended security settings**
 
@@ -514,6 +557,7 @@ Follow these steps:
    :::column-end:::
 :::row-end:::
 
+
 I.  **Endpoint threat detection is used to monitor device risk.**
 
 Once you've accomplished your first three objectives, the next step is to configure endpoint security so that advanced protection is provisioned, activated, and monitored. A single pane of glass is used to consistently manage all endpoints together.
@@ -527,7 +571,6 @@ Follow these steps:
 1.  Select **Reports &gt; Intune Data warehouse &gt; Data warehouse**.
 
 2.  Copy the custom feed URL. For example:
-
     `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 3.  Open Power BI Desktop or your SIEM solution.

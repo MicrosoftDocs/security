@@ -105,6 +105,7 @@ This guide will walk you through the steps required to manage identities followi
 
 Azure Active Directory (AD) enables strong authentication, a point of integration for endpoint security, and the core of your user-centric policies to guarantee least-privileged access. Azure AD's Conditional Access capabilities are the policy decision point for access to resources based on user identity, environment, device health, and risk—verified explicitly at the point of access. We will show how you can implement a Zero Trust identity strategy with Azure AD.
 
+<div class="alert">
 :::row:::
    :::column span="2":::
 Connect all of your users to Azure AD and federate with on-premises identity systems.
@@ -128,7 +129,7 @@ Integrate all your applications with Azure AD.
 Verify explicitly with strong authentication.
    :::column-end:::
 :::row-end:::
-
+</div>
 
 
 ### Connect all of your users to Azure AD and federate with on-premises identity systems
@@ -172,6 +173,7 @@ Follow these steps:
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
+
 
 ### Verify explicitly with strong authentication
 
@@ -230,6 +232,7 @@ Take this step:
 
 Once you've accomplished your initial three objectives, you can focus on additional objectives such as more robust identity governance.
 
+<div class="alert">
 :::row:::
    :::column:::
 Secure privileged access with Privileged Identity Management.
@@ -253,6 +256,7 @@ Manage entitlement.
 User passwordless authentication to reduce the risk of phishing and password attacks.
    :::column-end:::
 :::row-end:::
+</div>
 
 
 ### Secure privileged access with Privileged Identity Management
@@ -301,6 +305,7 @@ Take this step:
 
 Real-time analysis is critical for determining risk and protection.
 
+<div class="alert">
 :::row:::
    :::column:::
 Deploy Azure AD Password Protection.
@@ -324,6 +329,7 @@ Enable Microsoft Cloud App Security integration with Identity Protection.
 Enable Conditional Access integration with Microsoft Cloud App Security.
    :::column-end:::
 :::row-end:::
+</div>
 
 
 ### Deploy Azure AD Password Protection

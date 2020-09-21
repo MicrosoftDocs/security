@@ -3,8 +3,8 @@ title: Securing infrastructure with Zero Trust
 description: Infrastructure represents a critical threat vector. A Zero Trust strategy makes it easier for you to develop, test, deliver, monitor, control, and support IT services.
 ms.date: 09/01/2020
 ms.service: security
-author: garycentric
-ms.author: v-gmoor
+author: Kellylorenebaker
+ms.author: v-kbaker
 ms.topic: conceptual
 ---
 
@@ -31,10 +31,11 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
 
 ## Infrastructure Zero Trust deployment objectives
 
-Before most organizations start the Zero Trust journey, their approach to infrastructure security is characterized by the following:
-
--  Permissions are managed manually across environments.
--  Configuration management of VMs and servers on which workloads are running.
+> [!TIP]
+> Before most organizations start the Zero Trust journey, their approach to infrastructure security is characterized by the following:
+> 
+> -  Permissions are managed manually across environments.
+> -  Configuration management of VMs and servers on which workloads are running.
 
 When implementing an end-to-end Zero Trust framework for managing and monitoring your identities, we recommend you focus first on these **initial deployment objectives**:
 
@@ -72,9 +73,27 @@ Before you get started, ensure you've met these baseline infrastructure deployme
   
 ### Permissions are managed manually across environments
 
+<div="alert">
+**Setting the Microsoft Tenant Baseline**
+
+A prioritized baseline should be set for how your Infrastructure is managed. Leveraging industry guidance such as NIST 800-53, you can derive a set of requirements for managing your infrastructure. At Microsoft, we have set a minimal baseline to the following list of requirements:
+
+ - Access to data, networks, services, utilities, tools, and applications must be controlled by authentication and authorization mechanisms.
+ - Data must be encrypted in transit and at rest.
+ - Restrict network traffic flows.
+ - Security team visibility into all assets.
+ - Monitoring and auditing must be enabled and correctly configured according to prescribed organizational guidance.
+ - Anti-malware must be up to date and running.
+ - Vulnerability scans must be performed, and vulnerabilities remediated, according to prescribed organizational guidance.
+ 
+In order to measure and drive compliance to this minimal—or our expanded—baseline, we start with getting visibility at the Tenant level, and across your on-prem environments, by applying a Security Reader role across the Azure Tenant. With the Security Reader role in place, it can gain additional visibility through Azure Security Center and Azure Policies that can be used to apply industry baselines (e.g., Azure CIS, PCI, ISO 27001) or a custom baseline that your organization has defined.
+</div>
+
 From the tenant level down to the individual resources within each resource group ad subscription, appropriate role-based access controls must be applied.
 
-[Learn about implementing an end-to-end identity Zero Trust strategy](https://aka.ms/ZTIdentity).
+> [!TIP]
+> [Learn about implementing an end-to-end identity Zero Trust strategy](https://aka.ms/ZTIdentity).
+
 
 ### Configuration management of VMS and servers on which workloads are running
 
@@ -97,11 +116,20 @@ You can extend your coverage of policies beyond the ASC set and create custom po
 
 #### Apply ASC Endpoint Protection and Vulnerability Management controls
 
-Endpoint protection is essential to ensuring infrastructure remains secure and available. As part of any endpoint protection and vulnerability management strategy, you will be able to measure compliance centrally to ensure malware protection is enabled and configured through the [Endpoint protection assessment and recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-endpoint-protection). Additionally, as part of ASC Standard, you can use the policy [Enable
+Endpoint protection is essential to ensuring infrastructure remains secure and available. As part of any endpoint protection and vulnerability management strategy, you will be able to measure compliance centrally to ensure malware protection is enabled and configured through the [Endpoint protection assessment and recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-endpoint-protection). 
+
+<div="alert">
+**Centralized visibility of your baseline across multiple subscriptions**
+
+By applying the tenant reader roll, you can get visibility across your tenant of the status of each of the policies that are being evaluated as part of the ASC secure score, Azure Policy, and Guest Config policies. You funnel that to your organizational compliance dashboard for central reporting of the state of your tenant. 
+</div>
+
+Additionally, as part of ASC Standard, you can use the policy [Enable
 the built-in vulnerability assessment solution on virtual machines (powered by Qualys)](https://docs.microsoft.com/azure/security-center/built-in-vulnerability-assessment)
 to scan your VMs for vulnerabilities, and have those reflected directly in ASC. If you already have a Vulnerability scanning solution deployed in your enterprise, you can use the alternate policy Vulnerability assessment solution, which should be installed on your virtual machines for [Deploying a partner vulnerability scanning solution](https://docs.microsoft.com/azure/security-center/partner-vulnerability-assessment).
 
-[Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
 <img src="./media/infrastructure/image7.png" style="width:0.5812in;height:0.51282in" />
 
@@ -121,13 +149,17 @@ For monitoring identities, we recommend **enabling [Azure Advanced Threat Protec
 Integrating these signals from ASC, A-ATP, ATA, and other monitoring and auditing systems with [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview), a
 cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution, will allow your Security Operations Center (SOC) to work from a single pane of glass to monitor security events across your enterprise.
 
-[Learn about implementing an end-to-end identity Zero Trust strategy](https://aka.ms/ZTIdentity).
+> [!TIP]
+> [Learn about implementing an end-to-end identity Zero Trust strategy](https://aka.ms/ZTIdentity).
 
-### Every workload is assigned an app identity and configured and deployed consistently
+
+### Every workload is assigned an app identity—and configured and deployed consistently
 
 Microsoft recommends customers use a [policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) that is assigned and enforced when creating resources/workloads. Policies can require tags be to applied to a resource upon creation, mandate resource group assignment, as well as restrict/direct technical characteristics, such as regions allowed, VM specifications (e.g., VM type, disks, network policies applied).
 
-[Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
+
 
 ### Human access to resources requires Just-In-Time
 
@@ -167,7 +199,9 @@ On the access control side, [Role-Based Access Control (RBAC)](https://docs.micr
 
 Microsoft Azure offers many ways to segment workloads to manage user and resource access. [Network segmentation](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/network-level-segmentation) is the overall approach, and, within Azure, resources can be isolated at the subscription level with Virtual networks (VNets), VNet peering rules, Network Security Groups (NSGs), Application Security Groups (ASGs), and Azure Firewalls. There are several design patterns to determine the best approach to segmenting workloads.
 
-[Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork).
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork).
+
 
 ## Conclusion
 

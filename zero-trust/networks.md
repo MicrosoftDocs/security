@@ -3,8 +3,8 @@ title: Securing networks with Zero Trust
 description: Due to the cloud, mobile devices, and other endpoints that expand boundaries and change paradigms, there isn't necessarily a contained/defined network to secure. Instead, there is a vast portfolio of devices and networks, all linked by the cloud.
 ms.date: 09/01/2020
 ms.service: security
-author: garycentric
-ms.author: v-gmoor
+author: Kellylorenebaker
+ms.author: v-kbaker
 ms.topic: conceptual
 ---
 
@@ -34,13 +34,15 @@ To make this happen, we follow three Zero Trust principles:
 
 ## Network Zero Trust deployment objectives
 
-> **Before** most organization **start the Zero Trust journey**, they have network security that is characterized by the following:
+<div="alert">
+**Before** most organization **start the Zero Trust journey**, they have network security that is characterized by the following:
 
 - Few network security perimeters and open, flat networks.
 
 - Minimal threat protection and static traffic filtering.
 
 - Unencrypted internal traffic.
+</div>
 
 When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on these **initial deployment objectives**:
 
@@ -155,7 +157,9 @@ Take these steps to protect against known threats:
 
     b.  [Enable threat intelligence-based filtering](https://docs.microsoft.com/azure/firewall/threat-intel) for your traffic.
 
-[Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
+
 
 ### User-to-app internal traffic is encrypted.
 
@@ -175,7 +179,8 @@ Follow these steps:
 
     b.  [Connect using RDP to a Windows virtual machine](https://docs.microsoft.com/azure/bastion/bastion-connect-vm-rdp).
 
-[Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
 
 <img src="./media/networks/image8.png" style="width:0.58974in;height:0.52036in" />
 
@@ -221,7 +226,9 @@ Follow these steps, depending on the type of boundary:
 1.  When using Azure-provided PaaS services (e.g., Azure Storage, [Azure Cosmos DB](https://docs.microsoft.com/azure/private-link/create-private-endpoint-cosmosdb-portal),
     or [Azure Web App](https://docs.microsoft.com/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](https://docs.microsoft.com/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network.
 
-[Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).
+
 
 ### Threat protection: Machine learning-based threat protection and filtering with context-based signals
 

@@ -3,8 +3,8 @@ title: Audit Requirements - Microsoft Trusted Root Certificate Program
 description: To get the full benefit of cloud apps and services, organizations must find the right balance of providing access while maintaining control to protect critical data accessed via applications and APIs. 
 ms.date: 09/01/2020
 ms.service: security
-author: garycentric
-ms.author: v-gmoor
+author: Kellylorenebaker
+ms.author: v-kbaker
 ms.topic: conceptual
 ---
 
@@ -28,10 +28,12 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
 
 ## Applications Zero Trust deployment objectives
 
+<div class="alert">
 Before most organizations start the Zero Trust journey, their approach to application security is characterized by the following:
 
 -   On-premises apps are accessed through physical networks or VPN.
 -   Some critical cloud apps are accessible to users.
+</div>
 
 When implementing a Zero Trust approach to managing and monitoring applications, we recommend you focus first on these **initial deployment objectives**:
 
@@ -91,7 +93,8 @@ Follow these steps:
 
 2.  [Review what apps can beconnected](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) with the Cloud App Security API integration, and connect the appsyou need. Use the deeper visibility gained to investigate activities, files, and accounts for the apps in your cloud environment.
 
-[Learn about implementing an end-to-end identity Zero Trust strategy](https://aka.ms/ZTIdentity).
+> [!TIP]
+> [Learn about implementing an end-to-end identity Zero Trust strategy](https://aka.ms/ZTIdentity).
 
 ### Discover and control the use of shadow IT
 
@@ -99,7 +102,8 @@ On average, 1,000 separate apps are being used in your organization. 80 percent 
 
 Focus on identifying app usage patterns, assessing risk levels and business readiness of apps, preventing data leaks to noncompliant apps, and limiting access to regulated data.
 
-[Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).
 
 Follow these steps:
 
@@ -138,7 +142,8 @@ Follow these steps:
 
 > c.  Manage discovered apps using [Azure Active Directory (Azure AD) Gallery](https://docs.microsoft.com/azure/active-directory/manage-apps/add-gallery-app). For apps that already appear in the Azure AD Gallery, apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
 
-[Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork).
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork).
 
 ### Protect your sensitive information and activities automatically by implementing policies
 
@@ -181,7 +186,9 @@ Take this step:
 
 [Enable real-time monitoring and control over access to any web app](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad), based on user, location, device, and app. For example, you can create policies to protect downloads of sensitive content with sensitivity labels when using any unmanaged device. Alternatively, files can be scanned on upload to detect potential malware and block them from entering sensitive cloud environment.
 
-[Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
+
 
 ### Strengthen protection against cyber threats and rogue apps
 
@@ -209,7 +216,9 @@ Follow these steps:
 
 3.  Using Cloud App Security, the security configuration dashboard can be used to drive remediation actions to minimize the risk.
 
-[Learn about implementing an end-to-end Zero Trust strategy for your infrastructure](https://aka.ms/ZTInfrastructure).
+> [!TIP]
+> [Learn about implementing an end-to-end Zero Trust strategy for your infrastructure](https://aka.ms/ZTInfrastructure).
+
 
 ## Conclusion
 

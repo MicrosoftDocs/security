@@ -10,13 +10,13 @@ ms.topic: conceptual
 
 # Securing identity with Zero Trust
 
-:::image type="content" source="./media/identity/icon-fingerprint-large.png" alt-text="Fingerprint icon." border="false":::
+:::image type="content" source="./media/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::
 
 **Background**
 
 Cloud applications and the mobile workforce have redefined the security perimeter. Employees are bringing their own devices and working remotely. Data is being accessed outside the corporate network and shared with external collaborators such as partners and vendors. Corporate applications and data are moving from on-premises to hybrid and cloud environments. Organizations can no longer rely on traditional network controls for security. Controls need to move to where the data is: on devices, inside apps, and with partners.
 
-Identities, representing people, services, or IoT devices, are the common dominator across today's many [networks](./networks.md), [endpoints](./endpoints.md), and [applications](./applications.md). In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to [data](./data.md).
+Identities, representing people, services, or IoT devices, are the common dominator across today's many [networks](https://aka.ms/ZTNetwork), [endpoints](https://aka.ms/ZTDevices), and [applications](https://aka.ms/ZTApplications). In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to [data](https://aka.ms/ZTData).
 
 **Before an identity attempts to access a resource, organizations must:**
 
@@ -31,20 +31,20 @@ Once the identity has been verified, we can control that identity's access to re
 ## Identity Zero Trust deployment objectives
 
 
-<div class="alert"><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and <a href="./visibility-automation-orchestration.md">visibility</a> into identity risk is very limited.</div>
+<div class="alert"><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and <a href="https://aka.ms/ZTCrossPillars">visibility</a> into identity risk is very limited.</div>
 
 When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these _initial_ deployment objectives:
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/identity/image3.png" alt-text="List icon with one checkmark." border="false":::
+:::image type="content" source="./media/icon-initial-deployment.png" alt-text="List icon with one checkmark." border="false":::
    :::column-end:::
    :::column span="3":::
-1. Cloud identity federates with on-premises identity systems.
-
-2. Conditional Access policies gate access and provide remediation activities.
-
-3. Analytics improve visibility.
+<ol style="list-style-type:upper-roman">
+<li>Cloud identity federates with on-premises identity systems.</li>
+<li>Conditional Access policies gate access and provide remediation activities.</li>
+<li>Analytics improve visibility.</li>
+</ol>
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -56,14 +56,14 @@ After these are completed, focus on these _additional_ deployment objectives:
 :::row-end:::
 :::row:::
    :::column::: 
-:::image type="content" source="./media/identity/image5.png" alt-text="List icon with two checkmarks." border="false":::
+:::image type="content" source="./media/icon-additional-deployment.png" alt-text="List icon with two checkmarks." border="false":::
    :::column-end:::
    :::column span="3":::
-4.  Identities and access privileges are managed with identity governance.
-
-5. User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.
-
-6. Threat signals from other security solutions are integrated.
+<ol start="4" style="list-style-type:upper-roman">
+<li>Identities and access privileges are managed with identity governance.</li>
+<li>User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</li>
+<li>Threat signals from other security solutions are integrated.</li>
+</ol>
    :::column-end:::
 :::row-end:::
 
@@ -94,7 +94,7 @@ This guide will walk you through the steps required to manage identities followi
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/identity/icon-checklist-one-checkmark-large.png" alt-text="Checklist icon with one checkmarks." border="false":::
+:::image type="content" source="./media/icon-initial-deployment.png" alt-text="Checklist icon with one checkmarks." border="false":::
    :::column-end:::
    :::column span="3":::
 ## Initial deployment objectives
@@ -104,6 +104,7 @@ This guide will walk you through the steps required to manage identities followi
 ### Cloud identity federates with on-premises identity systems
 
 Azure Active Directory (AD) enables strong authentication, a point of integration for endpoint security, and the core of your user-centric policies to guarantee least-privileged access. Azure AD's Conditional Access capabilities are the policy decision point for access to resources based on user identity, environment, device health, and risk—verified explicitly at the point of access. We will show how you can implement a Zero Trust identity strategy with Azure AD.
+
 
 <div class="alert">
 :::row:::
@@ -221,7 +222,7 @@ Take this step:
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/identity/icon-checklist-two-checkmarks-large.png" alt-text="Checklist icon with two checkmarks." border="false":::
+:::image type="content" source="./media/icon-additional-deployment.png" alt-text="Checklist icon with two checkmarks." border="false":::
    :::column-end:::
    :::column span="3":::
 ## Additional deployment objectives
@@ -238,19 +239,19 @@ Once you've accomplished your initial three objectives, you can focus on additio
 Secure privileged access with Privileged Identity Management.
    :::column-end:::
    :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+:::image type="content" source="./media/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Restrict user content to applications.
    :::column-end:::
    :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+:::image type="content" source="./media/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Manage entitlement.
    :::column-end:::
    :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+:::image type="content" source="./media/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 User passwordless authentication to reduce the risk of phishing and password attacks.
@@ -268,6 +269,7 @@ Follow these steps:
 1.  [Take control of your privileged identities](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure). Keep in mind that in a digitally-transformed organization, privileged access is not only administrative access, but also application owner or developer access that can change the way your mission-critical apps run and handle data.
 
 2.  [Use Privileged Identity Management to secure privileged identities](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-deployment-plan).
+
 
 ### Restrict user consent to applications
 

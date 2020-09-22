@@ -81,7 +81,7 @@ When implementing an end-to-end Zero Trust framework for data, we recommend you 
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/icon-checklist-one-checkmark-large.png" alt-text="List icon with one checkmark, first instance." border="false":::
+:::image type="content" source="./media/icon-initial-deployment.png" alt-text="List icon with one checkmark, first instance." border="false":::
    :::column-end:::
    :::column span="3":::
 1. Access decisions are governed by encryption.
@@ -98,7 +98,7 @@ After these are completed, focus on these **additional deployment objectives**:
 :::row-end:::
 :::row:::
    :::column::: 
-:::image type="content" source="./media/icon-checklist-two-checkmarks-large.png" alt-text="List icon with two checkmarks, first instance." border="false":::
+:::image type="content" source="./media/icon-additional-deployment.png" alt-text="List icon with two checkmarks, first instance." border="false":::
    :::column-end:::
    :::column span="3":::
 
@@ -137,7 +137,7 @@ This guide will walk you step-by-step through a Zero Trust approach to data prot
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/icon-checklist-one-checkmark.png" alt-text="List icon with one checkmark, second instance." border="false":::
+:::image type="content" source="./media/icon-initial-deployment.png" alt-text="List icon with one checkmark, second instance." border="false":::
    :::column-end:::
    :::column span="3":::
 ## Initial Zero Trust deployment objectives
@@ -187,7 +187,7 @@ Take this step:
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/icon-checklist-two-checkmarks.png" alt-text="List icon with two checkmarks, second instance." border="false":::
+:::image type="content" source="./media/icon-additional-deployment.png" alt-text="List icon with two checkmarks, second instance." border="false":::
    :::column-end:::
    :::column span="3":::
 ## Additional deployment objectives

@@ -40,7 +40,7 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
 > [!NOTE]
 > **Before** most organizations **start the Zero Trust journey**, their endpoint security is set up as follows:
 > 
-> -   Endpoints are domain-joined and managed with solutions like Group Policy Objects or Configuration Manager*.* These are great options, but they don't leverage modern Windows 10 CSPs or require a separate cloud management gateway appliance to service cloud-based devices.
+> -   Endpoints are domain-joined and managed with solutions like Group Policy Objects or Configuration Manager. These are great options, but they don't leverage modern Windows 10 CSPs or require a separate cloud management gateway appliance to service cloud-based devices.
 > 
 > -   Endpoints are required to be on a corporate network to access data. This could mean that the devices are required to physically be on-site to access the corporate network, or that they require VPN access, which increases the risk that a compromised device could access sensitive corporate resources.
 
@@ -107,25 +107,7 @@ To help limit risk exposure, you need to monitor every endpoint to ensure each o
 
 After a device is registered, users can access your organization's restricted resources using their corporate username and password to sign in (or Windows Hello for Business).
 
-<div class="alert">
-:::row:::
-   :::column:::
-Register corporate devices with Azure Active Directory.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Register personal devices with Azure Active Directory.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/endpoints/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Enable and configure Windows Hello for Business.
-   :::column-end:::
-:::row-end:::
-</div>
+:::image type="content" source="./media/steps-box-endpoints-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
 
 
 **Register corporate devices with Azure Active Directory (AD)**
@@ -269,19 +251,7 @@ After establishing compliance policies to gate access of corporate resources to 
 
 Also, [set remediation rules](https://docs.microsoft.com/mem/intune/protect/actions-for-noncompliance) for noncompliant devices, such as blocking a noncompliant device or offering the user a grace period to get compliant.
 
-<div class="alert">
-:::row:::
-   :::column span="3":::
-Create a compliance policy with Microsoft Intune (all platforms).
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column span="3":::
-Automate notification email and add additional remediation actions for noncompliant devices in Intune (all platforms).
-   :::column-end:::
-:::row-end:::
-</div>
+:::image type="content" source="./media/steps-box-endpoints-2.png" alt-text="Diagram of the steps within phase 2 of the initial deployment objectives." border="true":::
 
 
 **Create a compliance policy with Microsoft Intune (all platforms)**
@@ -345,35 +315,11 @@ Take these steps:
     1.  Set up an action to automatically retire a noncompliant device after a set number of days.
 
 
-I.  **DLP policies are enforced for BYOD and corporate devices.**
+III.  **DLP policies are enforced for BYOD and corporate devices.**
 
 Once data access is granted, you want to control what the user can do with the data. For example, if a user accesses a document with a corporate identity, you want to prevent that document from being saved in an unprotected consumer storage location, or from being shared with a consumer communication or chat app.
 
-<div class="alert">
-:::row:::
-   :::column span="2":::
-Apply recommended security settings.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column span="2":::
-Ensure updates are deployed automatically to endpoints.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column span="2":::
-Ensure devices are encrypted.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column span="2":::
-Create application protection policies to protect corporate data at the app level.
-   :::column-end:::
-:::row-end:::
-</div>
+:::image type="content" source="./media/steps-box-endpoints-3.png" alt-text="Diagram of the steps within phase 3 of the initial deployment objectives." border="true":::
 
 **Apply recommended security settings**
 
@@ -558,11 +504,11 @@ Follow these steps:
 :::row-end:::
 
 
-I.  **Endpoint threat detection is used to monitor device risk.**
+IV.  **Endpoint threat detection is used to monitor device risk.**
 
 Once you've accomplished your first three objectives, the next step is to configure endpoint security so that advanced protection is provisioned, activated, and monitored. A single pane of glass is used to consistently manage all endpoints together.
 
-**Route endpoint logs and transactions to a SIEM or PowerBI**
+**Route endpoint logs and transactions to a SIEM or Power BI**
 
 Using the Intune Data warehouse, [send device and app management data to reporting or SIEM tools](https://docs.microsoft.com/mem/intune/developer/reports-nav-intune-data-warehouse) for intelligent filtering of alerts to reduce noise.
 

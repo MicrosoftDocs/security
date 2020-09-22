@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Securing identity with Zero Trust
 
-:::image type="content" source="./media/identity/icon-fingerprint-large.png" alt-text="Fingerprint icon." border="false":::
+:::image type="content" source="./media/identity/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::
 
 **Background**
 
@@ -40,11 +40,11 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
 :::image type="content" source="./media/identity/image3.png" alt-text="List icon with one checkmark." border="false":::
    :::column-end:::
    :::column span="3":::
-1. Cloud identity federates with on-premises identity systems.
-
-2. Conditional Access policies gate access and provide remediation activities.
-
-3. Analytics improve visibility.
+<ol type="I">
+<li>Cloud identity federates with on-premises identity systems.</li>
+<li>Conditional Access policies gate access and provide remediation activities.</li>
+<li>Analytics improve visibility.</li>
+</ol>
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -59,11 +59,11 @@ After these are completed, focus on these _additional_ deployment objectives:
 :::image type="content" source="./media/identity/image5.png" alt-text="List icon with two checkmarks." border="false":::
    :::column-end:::
    :::column span="3":::
-4.  Identities and access privileges are managed with identity governance.
-
-5. User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.
-
-6. Threat signals from other security solutions are integrated.
+<ol type="I" start="4">
+<li>Identities and access privileges are managed with identity governance.</li>
+<li>User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</li>
+<li>Threat signals from other security solutions are integrated.</li>
+</ol>
    :::column-end:::
 :::row-end:::
 
@@ -104,6 +104,27 @@ This guide will walk you through the steps required to manage identities followi
 ### Cloud identity federates with on-premises identity systems
 
 Azure Active Directory (AD) enables strong authentication, a point of integration for endpoint security, and the core of your user-centric policies to guarantee least-privileged access. Azure AD's Conditional Access capabilities are the policy decision point for access to resources based on user identity, environment, device health, and risk—verified explicitly at the point of access. We will show how you can implement a Zero Trust identity strategy with Azure AD.
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<tbody>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+</tbody>
+</table>
 
 <div class="alert">
 :::row:::

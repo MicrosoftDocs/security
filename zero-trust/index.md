@@ -52,10 +52,10 @@ security and optimize how Zero Trust is implemented:**
 
 :::row::: <!-- ROW: Identity -->
    :::column:::
-<!--:::image type="content" source="./media/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::--><img src="./media/icon-fingerprint.png" style="width:50px;height:50px">
+<!--:::image type="content" source="./media/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::--><img src="./media/icon-fingerprint.png" width="50" alt="Fingerprint icon.">
    :::column-end:::
    :::column span="3":::
-[**Secure identity with Zero Trust**](https://aka.ms/ZTIdentity)
+**Secure identity with Zero Trust** —[https://aka.ms/ZTIdentity](https://aka.ms/ZTIdentity)
 
 Identities—whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow least privilege access principles.
    :::column-end:::
@@ -158,63 +158,3 @@ In our Zero Trust guides, we define the approach to implement an end-to-end Zero
 
 With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
 
-
-<ul class="panelContent cardsM">
-    <li>
-        <a href="https://aka.ms/ZTIdentity">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="./media/icon-fingerprint.png" alt="Fingerprint icon." />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Secure identity with Zero Trust</h3>
-			<p>Identities—whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow least privilege access principles.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://aka.ms/ZTDevices">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="./media/icon-endpoint-devices.png" alt="Endpoint devices icon." />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Secure endpoints with Zero Trust</h3>
-			<p>Once an identity has been granted access to a resource, data can flow to a variety of different endpoints—from IoT devices to smartphones, BYOD to partner-managed devices, and on-premises workloads to cloud-hosted servers. This diversity creates a massive attack surface area. Monitor and enforce device health and compliance for secure access.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://aka.ms/ZTApplications">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="./media/icon-application-window.png" alt="Application window icon." />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Secure applications with Zero Trust</h3>
-			<p>Applications and APIs provide the interface by which data is consumed. They may be legacy on-premises, lifted-and-shifted to cloud workloads, or modern SaaS applications. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>

@@ -52,7 +52,7 @@ security and optimize how Zero Trust is implemented:**
 
 :::row::: <!-- ROW: Identity -->
    :::column:::
-<!--:::image type="content" source="./media/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::--><img src="./media/icon-fingerprint.png" width="50" alt="Fingerprint icon.">
+<!--:::image type="content" source="./media/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::--><img src="./media/icon-fingerprint.png" width="50" height="50" alt="Fingerprint icon.">
    :::column-end:::
    :::column span="3":::
 **Secure identity with Zero Trust** —[https://aka.ms/ZTIdentity](https://aka.ms/ZTIdentity)

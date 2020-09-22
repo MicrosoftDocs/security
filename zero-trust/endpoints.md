@@ -40,7 +40,7 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
 > [!NOTE]
 > **Before** most organizations **start the Zero Trust journey**, their endpoint security is set up as follows:
 > 
-> -   Endpoints are domain-joined and managed with solutions like Group Policy Objects or Configuration Manager*.* These are great options, but they don't leverage modern Windows 10 CSPs or require a separate cloud management gateway appliance to service cloud-based devices.
+> -   Endpoints are domain-joined and managed with solutions like Group Policy Objects or Configuration Manager. These are great options, but they don't leverage modern Windows 10 CSPs or require a separate cloud management gateway appliance to service cloud-based devices.
 > 
 > -   Endpoints are required to be on a corporate network to access data. This could mean that the devices are required to physically be on-site to access the corporate network, or that they require VPN access, which increases the risk that a compromised device could access sensitive corporate resources.
 

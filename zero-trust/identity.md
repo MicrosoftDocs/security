@@ -40,7 +40,7 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
 :::image type="content" source="./media/identity/image3.png" alt-text="List icon with one checkmark." border="false":::
    :::column-end:::
    :::column span="3":::
-<ol type="I">
+<ol style="list-style-type:upper-roman">
 <li>Cloud identity federates with on-premises identity systems.</li>
 <li>Conditional Access policies gate access and provide remediation activities.</li>
 <li>Analytics improve visibility.</li>
@@ -59,7 +59,7 @@ After these are completed, focus on these _additional_ deployment objectives:
 :::image type="content" source="./media/identity/image5.png" alt-text="List icon with two checkmarks." border="false":::
    :::column-end:::
    :::column span="3":::
-<ol type="I" start="4">
+<ol start="4" style="list-style-type:upper-roman">
 <li>Identities and access privileges are managed with identity governance.</li>
 <li>User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</li>
 <li>Threat signals from other security solutions are integrated.</li>

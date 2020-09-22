@@ -10,13 +10,13 @@ ms.topic: conceptual
 
 # Securing identity with Zero Trust
 
-:::image type="content" source="./media/identity/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::
+:::image type="content" source="./media/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::
 
 **Background**
 
 Cloud applications and the mobile workforce have redefined the security perimeter. Employees are bringing their own devices and working remotely. Data is being accessed outside the corporate network and shared with external collaborators such as partners and vendors. Corporate applications and data are moving from on-premises to hybrid and cloud environments. Organizations can no longer rely on traditional network controls for security. Controls need to move to where the data is: on devices, inside apps, and with partners.
 
-Identities, representing people, services, or IoT devices, are the common dominator across today's many [networks](./networks.md), [endpoints](./endpoints.md), and [applications](./applications.md). In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to [data](./data.md).
+Identities, representing people, services, or IoT devices, are the common dominator across today's many [networks](https://aka.ms/ZTNetwork), [endpoints](https://aka.ms/ZTDevices), and [applications](https://aka.ms/ZTApplications). In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to [data](https://aka.ms/ZTData).
 
 **Before an identity attempts to access a resource, organizations must:**
 
@@ -31,7 +31,7 @@ Once the identity has been verified, we can control that identity's access to re
 ## Identity Zero Trust deployment objectives
 
 
-<div class="alert"><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and <a href="./visibility-automation-orchestration.md">visibility</a> into identity risk is very limited.</div>
+<div class="alert"><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and <a href="https://aka.ms/ZTCrossPillars">visibility</a> into identity risk is very limited.</div>
 
 When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these _initial_ deployment objectives:
 

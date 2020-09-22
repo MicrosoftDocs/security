@@ -105,32 +105,7 @@ This guide will walk you through the steps required to manage identities followi
 
 Azure Active Directory (AD) enables strong authentication, a point of integration for endpoint security, and the core of your user-centric policies to guarantee least-privileged access. Azure AD's Conditional Access capabilities are the policy decision point for access to resources based on user identity, environment, device health, and risk—verified explicitly at the point of access. We will show how you can implement a Zero Trust identity strategy with Azure AD.
 
-
-<div class="alert">
-:::row:::
-   :::column span="2":::
-Connect all of your users to Azure AD and federate with on-premises identity systems.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column span="2":::
-Establish your Identity Foundation with Azure AD.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column span="2":::
-Integrate all your applications with Azure AD.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column span="2":::
-Verify explicitly with strong authentication.
-   :::column-end:::
-:::row-end:::
-</div>
+:::image type="content" source="./media/steps-box-identity-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
 
 
 ### Connect all of your users to Azure AD and federate with on-premises identity systems
@@ -233,31 +208,7 @@ Take this step:
 
 Once you've accomplished your initial three objectives, you can focus on additional objectives such as more robust identity governance.
 
-<div class="alert">
-:::row:::
-   :::column:::
-Secure privileged access with Privileged Identity Management.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Restrict user content to applications.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Manage entitlement.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-User passwordless authentication to reduce the risk of phishing and password attacks.
-   :::column-end:::
-:::row-end:::
-</div>
+:::image type="content" source="./media/steps-box-identity-4.png" alt-text="Diagram of the steps within phase 4 of the additional deployment objectives." border="true":::
 
 
 ### Secure privileged access with Privileged Identity Management
@@ -307,32 +258,7 @@ Take this step:
 
 Real-time analysis is critical for determining risk and protection.
 
-<div class="alert">
-:::row:::
-   :::column:::
-Deploy Azure AD Password Protection.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Enable Identity Protection.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Enable Microsoft Cloud App Security integration with Identity Protection.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Enable Conditional Access integration with Microsoft Cloud App Security.
-   :::column-end:::
-:::row-end:::
-</div>
-
+:::image type="content" source="./media/steps-box-identity-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
 
 ### Deploy Azure AD Password Protection
 

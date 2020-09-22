@@ -248,44 +248,7 @@ These activities help address risk by identifying and marking sensitive informat
 
 The following guidance will help you get started with sensitivity labels.
 
-<div class="alert">
-:::row:::
-   :::column:::
-Sensitivity labels are applied manually.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Automatically discover business-critical content with sensitive data on-premises.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Labels and classification available to Office on any device and manually applied to content.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Default label applied to new content created by users.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Visual markings to indicate sensitive documents across apps and services.
-   :::column-end:::
-   :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
-   :::column-end:::
-   :::column:::
-Audit data to understand user labeling, classification, and protection behaviors.
-   :::column-end:::
-:::row-end:::
-</div>
-
+:::image type="content" source="./media/steps-box-data-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
 
 **Sensitivity labels are applied manually.**
 

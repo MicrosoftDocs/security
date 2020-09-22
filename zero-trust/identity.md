@@ -37,7 +37,7 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/identity/image3.png" alt-text="List icon with one checkmark." border="false":::
+:::image type="content" source="./media/icon-initial-deployment.png" alt-text="List icon with one checkmark." border="false":::
    :::column-end:::
    :::column span="3":::
 <ol style="list-style-type:upper-roman">
@@ -56,7 +56,7 @@ After these are completed, focus on these _additional_ deployment objectives:
 :::row-end:::
 :::row:::
    :::column::: 
-:::image type="content" source="./media/identity/image5.png" alt-text="List icon with two checkmarks." border="false":::
+:::image type="content" source="./media/icon-additional-deployment.png" alt-text="List icon with two checkmarks." border="false":::
    :::column-end:::
    :::column span="3":::
 <ol start="4" style="list-style-type:upper-roman">
@@ -94,7 +94,7 @@ This guide will walk you through the steps required to manage identities followi
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/identity/icon-checklist-one-checkmark-large.png" alt-text="Checklist icon with one checkmarks." border="false":::
+:::image type="content" source="./media/icon-initial-deployment.png" alt-text="Checklist icon with one checkmarks." border="false":::
    :::column-end:::
    :::column span="3":::
 ## Initial deployment objectives
@@ -105,26 +105,6 @@ This guide will walk you through the steps required to manage identities followi
 
 Azure Active Directory (AD) enables strong authentication, a point of integration for endpoint security, and the core of your user-centric policies to guarantee least-privileged access. Azure AD's Conditional Access capabilities are the policy decision point for access to resources based on user identity, environment, device health, and risk—verified explicitly at the point of access. We will show how you can implement a Zero Trust identity strategy with Azure AD.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<tbody>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-</tbody>
-</table>
 
 <div class="alert">
 :::row:::
@@ -242,7 +222,7 @@ Take this step:
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/identity/icon-checklist-two-checkmarks-large.png" alt-text="Checklist icon with two checkmarks." border="false":::
+:::image type="content" source="./media/icon-additional-deployment.png" alt-text="Checklist icon with two checkmarks." border="false":::
    :::column-end:::
    :::column span="3":::
 ## Additional deployment objectives
@@ -259,19 +239,19 @@ Once you've accomplished your initial three objectives, you can focus on additio
 Secure privileged access with Privileged Identity Management.
    :::column-end:::
    :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+:::image type="content" source="./media/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Restrict user content to applications.
    :::column-end:::
    :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+:::image type="content" source="./media/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 Manage entitlement.
    :::column-end:::
    :::column:::
-:::image type="content" source="./media/identity/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
+:::image type="content" source="./media/circled-arrow-right.png" alt-text="Arrow in a circle pointing right." border="false":::
    :::column-end:::
    :::column:::
 User passwordless authentication to reduce the risk of phishing and password attacks.
@@ -289,6 +269,7 @@ Follow these steps:
 1.  [Take control of your privileged identities](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure). Keep in mind that in a digitally-transformed organization, privileged access is not only administrative access, but also application owner or developer access that can change the way your mission-critical apps run and handle data.
 
 2.  [Use Privileged Identity Management to secure privileged identities](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-deployment-plan).
+
 
 ### Restrict user consent to applications
 

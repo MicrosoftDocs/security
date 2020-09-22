@@ -159,34 +159,5 @@ In our Zero Trust guides, we define the approach to implement an end-to-end Zero
 With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
 
 
-<table border="1" width="100%">
-	<col style="width:40%">
-	<col style="width:30%">
-	<col style="width:30%">
-	<thead>
-	<tr>
-		<th>Fruits</th>
-		<th>Vitamin A</th>
-		<th>Vitamin C</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<th>Apples</th>
-		<td>98 ui</td>
-		<td>8.4 mg</td>
-	</tr>
-	<tr>
-		<th>Oranges</th>
-		<td>295 ui</td>
-		<td>69.7 mg</td>
-	</tr>
-	<tr>
-		<th>Bananas</th>
-		<td>76 ui</td>
-		<td>10.3 mg</td>
-	</tr>
-	</tbody>
-</table>
 
 

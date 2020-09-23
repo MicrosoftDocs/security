@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Securing identity with Zero Trust
 
-:::image type="content" source="./media/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::
+:::image type="content" source="./media/icon-fingerprint-medium.png" alt-text="Fingerprint icon." border="false":::
 
 **Background**
 
@@ -39,19 +39,22 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
 <table border="0">
    <tr>
       <td>
-	     <br/>
-         <p><img src="media/icon-initial-deployment-small.png" alt="List icon with one checkmark." data-linktype="relative-path"></p>
+         <br/>
+		 <p><img src="media/icon-initial-deployment-small.png" alt="List icon with one checkmark." data-linktype="relative-path"></p>
       </td>
       <td>
          <ol style="list-style-type:upper-roman">
             <li>
-               <p>Cloud identity federates with on-premises identity systems.</p>
+               <br/>
+			   <p>Cloud identity federates with on-premises identity systems.</p>
             </li>
             <li>
-               <p>Conditional Access policies gate access and provide remediation activities.</p>
+               <br/>
+			   <p>Conditional Access policies gate access and provide remediation activities.</p>
             </li>
             <li>
-               <p>Analytics improve visibility.</p>
+               <br/>
+			   <p>Analytics improve visibility.</p>
             </li>
          </ol>
       </td>
@@ -63,7 +66,7 @@ After these are completed, focus on these _additional_ deployment objectives:
 <table border="0">
    <tr>
       <td>
-         <br/>
+		 <br/>
 		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks." data-linktype="relative-path"></p>
       </td>
       <td>
@@ -108,6 +111,16 @@ After these are completed, focus on these _additional_ deployment objectives:
 
 This guide will walk you through the steps required to manage identities following the principles of a Zero Trust security framework.
 
+<table border="0">
+<tr>
+<td>
+<p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmarks." data-linktype="relative-path"></p>
+</td>
+<td>
+## Initial deployment objectives
+</td>
+</tr>
+</table>
 
 :::row:::
    :::column:::

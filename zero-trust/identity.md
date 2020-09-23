@@ -43,18 +43,19 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
 		 <p><img src="media/icon-initial-deployment-small.png" alt="List icon with one checkmark." data-linktype="relative-path"></p>
       </td>
       <td>
+	     <br/>
          <ol style="list-style-type:upper-roman">
             <li>
-               <br/>
 			   <p>Cloud identity federates with on-premises identity systems.</p>
+			   <br/>
             </li>
             <li>
-               <br/>
-			   <p>Conditional Access policies gate access and provide remediation activities.</p>
+               <p>Conditional Access policies gate access and provide remediation activities.</p>
+			   <br/>
             </li>
             <li>
-               <br/>
 			   <p>Analytics improve visibility.</p>
+			   <br/>
             </li>
          </ol>
       </td>

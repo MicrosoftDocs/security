@@ -39,7 +39,8 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
 <table border="0">
    <tr>
       <td>
-         <p><img src="media/icon-initial-deployment.png" alt="List icon with one checkmark." data-linktype="relative-path"></p>
+	     <br/>
+         <p><img src="media/icon-initial-deployment-small.png" alt="List icon with one checkmark." data-linktype="relative-path"></p>
       </td>
       <td>
          <ol style="list-style-type:upper-roman">
@@ -62,7 +63,8 @@ After these are completed, focus on these _additional_ deployment objectives:
 <table border="0">
    <tr>
       <td>
-         <p><img src="media/icon-additional-deployment.png" alt="List icon with two checkmarks." data-linktype="relative-path"></p>
+         <br/>
+		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks." data-linktype="relative-path"></p>
       </td>
       <td>
          <ol start="4" style="list-style-type:upper-roman">

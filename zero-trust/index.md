@@ -51,7 +51,7 @@ Zero Trust.
 
 :::row::: <!-- ROW: Identity -->
    :::column:::
-:::image type="content" source="./media/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::
+:::image type="content" source="./media/icon-fingerprint-small.png" alt-text="Fingerprint icon." border="false":::
    :::column-end:::
    :::column span="3":::
 **Secure identity with Zero Trust** — [https://aka.ms/ZTIdentity](https://aka.ms/ZTIdentity)
@@ -66,7 +66,7 @@ Identities—whether they represent people, services, or IoT devices—define th
 :::row-end:::
 :::row::: <!-- ROW: Endpoints -->
    :::column:::
-:::image type="content" source="./media/icon-endpoint-devices.png" alt-text="Endpoint devices icon." border="false":::
+:::image type="content" source="./media/icon-endpoint-devices-small.png" alt-text="Endpoint devices icon." border="false":::
    :::column-end:::
    :::column span="3":::
 **Secure endpoints with Zero Trust** — [https://aka.ms/ZTDevices](https://aka.ms/ZTDevices)
@@ -81,7 +81,7 @@ Once an identity has been granted access to a resource, data can flow to a varie
 :::row-end:::
 :::row::: <!-- ROW: Applications -->
    :::column:::
-:::image type="content" source="./media/icon-application-window.png" alt-text="Application window icon." border="false":::
+:::image type="content" source="./media/icon-application-window-small.png" alt-text="Application window icon." border="false":::
    :::column-end:::
    :::column span="3":::
 **Secure applications with Zero Trust** — [https://aka.ms/ZTApplications](https://aka.ms/ZTApplications)
@@ -96,7 +96,7 @@ Applications and APIs provide the interface by which data is consumed. They may 
 :::row-end:::
 :::row::: <!-- ROW: Data -->
    :::column:::
-:::image type="content" source="./media/icon-ones-and-zeroes.png" alt-text="Ones and zeroes icon." border="false":::
+:::image type="content" source="./media/icon-ones-and-zeroes-small.png" alt-text="Ones and zeroes icon." border="false":::
    :::column-end:::
    :::column span="3":::
 **Secure data with Zero Trust** — [https://aka.ms/ZTData](https://aka.ms/ZTData)
@@ -111,7 +111,7 @@ Ultimately, security teams are protecting data. Where possible, data should rema
 :::row-end:::
 :::row::: <!-- ROW: Infrastructure -->
    :::column:::
-:::image type="content" source="./media/icon-data-storage-disks.png" alt-text="Data storage disks icon." border="false":::
+:::image type="content" source="./media/icon-data-storage-disks-small.png" alt-text="Data storage disks icon." border="false":::
    :::column-end:::
    :::column span="3":::
 **Secure infrastructure with Zero Trust** — [https://aka.ms/ZTInfrastructure](https://aka.ms/ZTInfrastructure)
@@ -126,7 +126,7 @@ Infrastructure—whether on-premises servers, cloud-based VMs, containers, or mi
 :::row-end:::
 :::row::: <!-- ROW: Networks -->
    :::column:::
-:::image type="content" source="./media/icon-network-diagram.png" alt-text="Network diagram icon." border="false":::
+:::image type="content" source="./media/icon-network-diagram-small.png" alt-text="Network diagram icon." border="false":::
    :::column-end:::
    :::column span="3":::
 **Secure networks with Zero Trust** — [https://aka.ms/ZTNetwork](https://aka.ms/ZTNetwork)
@@ -141,7 +141,7 @@ All data is ultimately accessed over network infrastructure. Networking controls
 :::row-end:::
 :::row::: <!-- ROW: Visibility, automation, and orchestration -->
    :::column:::
-:::image type="content" source="./media/icon-gear.png" alt-text="Gear icon." border="false":::
+:::image type="content" source="./media/icon-gear-small.png" alt-text="Gear icon." border="false":::
    :::column-end:::
    :::column span="3":::
 **Visibility, automation, and orchestration with Zero Trust** — [https://aka.ms/ZTCrossPillars](https://aka.ms/ZTCrossPillars)

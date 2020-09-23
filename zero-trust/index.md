@@ -47,15 +47,14 @@ Zero Trust.
 
 :::image type="content" source="./media/zero-trust-security-elements-diagram.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
-**Follow the steps below to mature your organization's approach to
-security and optimize how Zero Trust is implemented:**
+**Follow the steps below to mature your organization's approach tosecurity and optimize how Zero Trust is implemented:**
 
 :::row::: <!-- ROW: Identity -->
    :::column:::
-<!--:::image type="content" source="./media/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::--><img src="./media/icon-fingerprint.png" width="50" height="50" alt="Fingerprint icon.">
+:::image type="content" source="./media/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::
    :::column-end:::
    :::column span="3":::
-**Secure identity with Zero Trust** —[https://aka.ms/ZTIdentity](https://aka.ms/ZTIdentity)
+**Secure identity with Zero Trust** — [https://aka.ms/ZTIdentity](https://aka.ms/ZTIdentity)
 
 Identities—whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow least privilege access principles.
    :::column-end:::

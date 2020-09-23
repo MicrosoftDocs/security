@@ -50,7 +50,7 @@ Zero Trust.
 **Follow the steps below to mature your organization's approach tosecurity and optimize how Zero Trust is implemented:**
 
 :::row::: <!-- ROW: Identity -->
-   :::column span="2":::
+   :::column:::
 :::image type="content" source="./media/icon-fingerprint-small.png" alt-text="Fingerprint icon." border="false":::
    :::column-end:::
    :::column span="3":::
@@ -65,7 +65,7 @@ Identities—whether they represent people, services, or IoT devices—define th
 -->
 :::row-end:::
 :::row::: <!-- ROW: Endpoints -->
-   :::column span="2":::
+   :::column:::
 :::image type="content" source="./media/icon-endpoint-devices-small.png" alt-text="Endpoint devices icon." border="false":::
    :::column-end:::
    :::column span="3":::
@@ -80,7 +80,7 @@ Once an identity has been granted access to a resource, data can flow to a varie
 -->
 :::row-end:::
 :::row::: <!-- ROW: Applications -->
-   :::column span="2":::
+   :::column:::
 :::image type="content" source="./media/icon-application-window-small.png" alt-text="Application window icon." border="false":::
    :::column-end:::
    :::column span="3":::
@@ -95,7 +95,7 @@ Applications and APIs provide the interface by which data is consumed. They may 
 -->
 :::row-end:::
 :::row::: <!-- ROW: Data -->
-   :::column span="2":::
+   :::column:::
 :::image type="content" source="./media/icon-ones-and-zeroes-small.png" alt-text="Ones and zeroes icon." border="false":::
    :::column-end:::
    :::column span="3":::
@@ -110,7 +110,7 @@ Ultimately, security teams are protecting data. Where possible, data should rema
 -->
 :::row-end:::
 :::row::: <!-- ROW: Infrastructure -->
-   :::column span="2":::
+   :::column:::
 :::image type="content" source="./media/icon-data-storage-disks-small.png" alt-text="Data storage disks icon." border="false":::
    :::column-end:::
    :::column span="3":::
@@ -125,7 +125,7 @@ Infrastructure—whether on-premises servers, cloud-based VMs, containers, or mi
 -->
 :::row-end:::
 :::row::: <!-- ROW: Networks -->
-   :::column span="2":::
+   :::column:::
 :::image type="content" source="./media/icon-network-diagram-small.png" alt-text="Network diagram icon." border="false":::
    :::column-end:::
    :::column span="3":::
@@ -140,7 +140,7 @@ All data is ultimately accessed over network infrastructure. Networking controls
 -->
 :::row-end:::
 :::row::: <!-- ROW: Visibility, automation, and orchestration -->
-   :::column span="2":::
+   :::column:::
 :::image type="content" source="./media/icon-gear-small.png" alt-text="Gear icon." border="false":::
    :::column-end:::
    :::column span="3":::

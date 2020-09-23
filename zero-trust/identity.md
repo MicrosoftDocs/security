@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Securing identity with Zero Trust
 
-:::image type="content" source="./media/icon-fingerprint.png" alt-text="Fingerprint icon." border="false":::
+:::image type="content" source="./media/icon-fingerprint-medium.png" alt-text="Fingerprint icon." border="false":::
 
 **Background**
 
@@ -35,37 +35,58 @@ Once the identity has been verified, we can control that identity's access to re
 
 When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these _initial_ deployment objectives:
 
-:::row:::
-   :::column:::
-:::image type="content" source="./media/icon-initial-deployment.png" alt-text="List icon with one checkmark." border="false":::
-   :::column-end:::
-   :::column span="3":::
-<ol style="list-style-type:upper-roman">
-<li>Cloud identity federates with on-premises identity systems.</li>
-<li>Conditional Access policies gate access and provide remediation activities.</li>
-<li>Analytics improve visibility.</li>
-</ol>
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
+
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="media/icon-initial-deployment-small.png" alt="List icon with one checkmark." data-linktype="relative-path"></p>
+      </td>
+      <td>
+	     <br/>
+         <ol style="list-style-type:upper-roman">
+            <li>
+			   <p>Cloud identity federates with on-premises identity systems.</p>
+			   <br/>
+            </li>
+            <li>
+               <p>Conditional Access policies gate access and provide remediation activities.</p>
+			   <br/>
+            </li>
+            <li>
+			   <p>Analytics improve visibility.</p>
+			   <br/>
+            </li>
+         </ol>
+      </td>
+   </tr>
+</table>
 
 After these are completed, focus on these _additional_ deployment objectives:
 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column::: 
-:::image type="content" source="./media/icon-additional-deployment.png" alt-text="List icon with two checkmarks." border="false":::
-   :::column-end:::
-   :::column span="3":::
-<ol start="4" style="list-style-type:upper-roman">
-<li>Identities and access privileges are managed with identity governance.</li>
-<li>User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</li>
-<li>Threat signals from other security solutions are integrated.</li>
-</ol>
-   :::column-end:::
-:::row-end:::
+<table border="0">
+   <tr>
+      <td>
+		 <br/>
+		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks." data-linktype="relative-path"></p>
+      </td>
+      <td>
+         <ol start="4" style="list-style-type:upper-roman">
+            <li>
+               <p>Identities and access privileges are managed with identity governance.</p>
+            </li>
+            <li>
+               <p>User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</p>
+            </li>
+            <li>
+               <p>Threat signals from other security solutions are integrated.</p>
+            </li>
+         </ol>
+      </td>
+   </tr>
+</table>
+
+
 
 ## Products covered in this guide
 
@@ -91,6 +112,16 @@ After these are completed, focus on these _additional_ deployment objectives:
 
 This guide will walk you through the steps required to manage identities following the principles of a Zero Trust security framework.
 
+<table border="0">
+<tr>
+<td>
+<p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmarks." data-linktype="relative-path"></p>
+</td>
+<td>
+## Initial deployment objectives
+</td>
+</tr>
+</table>
 
 :::row:::
    :::column:::

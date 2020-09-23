@@ -49,7 +49,7 @@ Zero Trust.
 
 **Follow the steps below to mature your organization's approach tosecurity and optimize how Zero Trust is implemented:**
 
-<br/><br/><br/>
+<br/>
 <table border="0">
    <tr>
       <td>

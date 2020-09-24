@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Securing identity with Zero Trust
 
-:::image type="content" source="./media/icon-fingerprint-medium.png" alt-text="Fingerprint icon." border="false":::
+:::image type="icon" source="./media/icon-fingerprint-medium.png" alt-text="Fingerprint icon." border="false":::
 
 **Background**
 
@@ -40,24 +40,12 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
    <tr>
       <td>
          <br/>
-		 <p><img src="media/icon-initial-deployment-small.png" alt="List icon with one checkmark." data-linktype="relative-path"></p>
+		 <p><img src="media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
-	     <br/>
-         <ol style="list-style-type:upper-roman">
-            <li>
-			   <p>Cloud identity federates with on-premises identity systems.</p>
-			   <br/>
-            </li>
-            <li>
-               <p>Conditional Access policies gate access and provide remediation activities.</p>
-			   <br/>
-            </li>
-            <li>
-			   <p>Analytics improve visibility.</p>
-			   <br/>
-            </li>
-         </ol>
+	     <p><b>I.</b> <a href="#cloud-identity-federates-with-on-premises-identity-systems">Cloud identity federates with on-premises identity systems.</a></p>
+         <p><b>II.</b> <a href="#conditional-access-policies-gate-access-and-provide-remediation-activities">Conditional Access policies gate access and provide remediation activities.</a></p>
+	     <p><b>III.</b> <a href="#analytics-improve-visibility">Analytics improve visibility.</a></p>
       </td>
    </tr>
 </table>
@@ -68,20 +56,12 @@ After these are completed, focus on these _additional_ deployment objectives:
    <tr>
       <td>
 		 <br/>
-		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks." data-linktype="relative-path"></p>
+		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
-         <ol start="4" style="list-style-type:upper-roman">
-            <li>
-               <p>Identities and access privileges are managed with identity governance.</p>
-            </li>
-            <li>
-               <p>User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</p>
-            </li>
-            <li>
-               <p>Threat signals from other security solutions are integrated.</p>
-            </li>
-         </ol>
+         <p><b>IV.</b> <a href="#identities-and-access-privileges-are-managed-with-identity-governance">Identities and access privileges are managed with identity governance.</a></p>
+         <p><b>V.</b> <a href="#user-device-location-and-behavior-is-analyzed-in-real-time-to-determine-risk-and-deliver-ongoing-protection">User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</a></p>
+         <p><b>VI.</b> <a href="#integrate-threat-signals-from-other-security-solutions-to-improve-detection-protection-and-response">Threat signals from other security solutions are integrated.</a></p>
       </td>
    </tr>
 </table>
@@ -112,25 +92,19 @@ After these are completed, focus on these _additional_ deployment objectives:
 
 This guide will walk you through the steps required to manage identities following the principles of a Zero Trust security framework.
 
+
 <table border="0">
-<tr>
-<td>
-<p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmarks." data-linktype="relative-path"></p>
-</td>
-<td>
-## Initial deployment objectives
-</td>
-</tr>
+   <tr>
+      <td>
+         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+      </td>
+      <td>
+         <h2>Initial deployment objectives</h2>
+      </td>
+   </tr>
 </table>
 
-:::row:::
-   :::column:::
-:::image type="content" source="./media/icon-initial-deployment.png" alt-text="Checklist icon with one checkmarks." border="false":::
-   :::column-end:::
-   :::column span="3":::
-## Initial deployment objectives
-   :::column-end:::
-:::row-end:::
+
 
 ### Cloud identity federates with on-premises identity systems
 
@@ -226,14 +200,18 @@ Take this step:
 
  - [Plan an Azure AD reporting and monitoring deployment](https://docs.microsoft.com/azure/active-directory/reports-monitoring/plan-monitoring-and-reporting) to be able to persist and analyze logs from Azure AD, either in Azure or using a SIEM system of choice.
 
-:::row:::
-   :::column:::
-:::image type="content" source="./media/icon-additional-deployment.png" alt-text="Checklist icon with two checkmarks." border="false":::
-   :::column-end:::
-   :::column span="3":::
-## Additional deployment objectives
-   :::column-end:::
-:::row-end:::
+
+<table border="0">
+   <tr>
+      <td>
+         <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+      </td>
+      <td>
+         <h2>Additional deployment objectives</h2>
+      </td>
+   </tr>
+</table>
+
 
 ### Identities and access privileges are managed with identity governance
 

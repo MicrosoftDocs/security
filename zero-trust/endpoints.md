@@ -60,7 +60,7 @@ When implementing an end-to-end Zero Trust framework for securing endpoints, we 
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
-	     <p><b>I.</b> <a href="#endpoints-are-registered-with-a-cloud-identity-provider">Endpoints are registered with cloud identity providers.</a> In order to monitor security and risk across multiple endpoints used by any one person, you need <a href="https://aka.ms/ZTCrossPillars">visibility</a> in all devices and access points that may be accessing your resources.</p>
+	     <p><b>I.</b> <a href="#i-endpoints-are-registered-with-a-cloud-identity-provider">Endpoints are registered with cloud identity providers.</a> In order to monitor security and risk across multiple endpoints used by any one person, you need <a href="https://aka.ms/ZTCrossPillars">visibility</a> in all devices and access points that may be accessing your resources.</p>
          <p><b>II.</b> <a href="">Access is only granted to cloud-managed and compliant endpoints and apps.</a> Set compliance rules to ensure that devices meet minimum security requirements before access is granted. Also, set remediation rules for noncompliant devices so that people know how to resolve the issue.</p>
 	     <p><b>III.</b> <a href="">Data loss prevention (DLP) policies are enforced for corporate devices and BYOD.</a> Control what the user can do with the data after they have access. For instance, restrict file saving to untrusted locations (such as local disk), or restrict copy-and-paste sharing with a consumer communication app or chat app to protect data.</p>
       </td>

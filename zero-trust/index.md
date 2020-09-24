@@ -53,7 +53,7 @@ Zero Trust.
 <table border="0">
    <tr>
       <td>
-         <p><img src="media/icon-fingerprint-small.png" type="icon"></p>
+         <p><img src="media/icon-fingerprint-small.png" alt="Fingerprint icon."></p>
       </td>
       <td>
          <p><strong>Secure identity with Zero Trust</strong> — <a href="https://aka.ms/ZTIdentity" data-linktype="external">https://aka.ms/ZTIdentity</a></p>

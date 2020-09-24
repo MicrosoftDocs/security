@@ -71,17 +71,9 @@ After these are completed, focus on these _additional_ deployment objectives:
 		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks." data-linktype="relative-path"></p>
       </td>
       <td>
-         <ol start="4" style="list-style-type:upper-roman">
-            <li>
-               <p>Identities and access privileges are managed with identity governance.</p>
-            </li>
-            <li>
-               <p>User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</p>
-            </li>
-            <li>
-               <p>Threat signals from other security solutions are integrated.</p>
-            </li>
-         </ol>
+         <p>IV. Identities and access privileges are managed with identity governance.</p>
+         <p>&nbsp;V. User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</p>
+         <p>VI. Threat signals from other security solutions are integrated.</p>
       </td>
    </tr>
 </table>
@@ -118,7 +110,7 @@ This guide will walk you through the steps required to manage identities followi
 <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark." data-linktype="relative-path"></p>
 </td>
 <td>
-## Initial deployment objectives
+<h2>Initial deployment objectives</h2>
 </td>
 </tr>
 </table>

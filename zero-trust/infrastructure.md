@@ -8,7 +8,7 @@ ms.author: v-kbaker
 ms.topic: conceptual
 ---
 
-# Securing infrastructure with Zero Trust
+# Secure infrastructure with Zero Trust
 
 <img src="./media/infrastructure/image1.png" style="width:0.2375in;height:0.26181in" />
 
@@ -182,7 +182,7 @@ All of these items help an organization become more aware of how administrative 
 
 Once you've accomplished your initial three objectives, you can focus on additional objectives such as blocking unauthorized deployments.
 
-### Identities unauthorized deployments are blocked, and alert is triggered
+### Identities unauthorized deployments are blocked and alert is triggered
 
 When organizations move to the cloud, the possibilities are limitless. That's not always a good thing. For a variety of reasons, organizations need to be able to block unauthorized deployments and trigger alerts to make leaders and managers aware of the issues.
 

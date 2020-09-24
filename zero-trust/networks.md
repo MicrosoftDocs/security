@@ -1,5 +1,5 @@
 ---
-title: Securing networks with Zero Trust
+title: Secure networks with Zero Trust
 description: Due to the cloud, mobile devices, and other endpoints that expand boundaries and change paradigms, there isn't necessarily a contained/defined network to secure. Instead, there is a vast portfolio of devices and networks, all linked by the cloud.
 ms.date: 09/01/2020
 ms.service: security
@@ -8,7 +8,7 @@ ms.author: v-kbaker
 ms.topic: conceptual
 ---
 
-# Securing networks with Zero Trust
+# Secure networks with Zero Trust
 
 <img src="./media/networks/image1.png" style="width:0.33681in;height:0.33681in" />
 
@@ -34,7 +34,6 @@ To make this happen, we follow three Zero Trust principles:
 
 ## Network Zero Trust deployment objectives
 
-<div="alert">
 **Before** most organization **start the Zero Trust journey**, they have network security that is characterized by the following:
 
 - Few network security perimeters and open, flat networks.
@@ -91,7 +90,7 @@ This guide will walk you through the steps required to secure your networks foll
 
 ## Initial deployment objectives
 
-### Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation.
+### Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
 
 Organizations should not just have one single, big pipe in and out of their network. In a Zero Trust approach, networks are instead segmented into smaller islands where specific workloads are contained. Each segment has its own ingress and egress controls to minimize the "blast radius" of unauthorized access to data. By implementing software-defined perimeters with granular controls, you increase the difficulty for unauthorized actors to propagate throughout your network, and so reduce the lateral movement of threats.
 

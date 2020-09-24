@@ -79,19 +79,6 @@ activities in this guide. For more information, see:
 When implementing an end-to-end Zero Trust framework for data, we recommend you focus first on these **initial deployment objectives**:
 
 
-:::row:::
-   :::column:::
-:::image type="icon" source="./media/icon-initial-deployment.png" alt-text="List icon with one checkmark, first instance." border="false":::
-   :::column-end:::
-   :::column span="3":::
-1. Access decisions are governed by encryption.
-
-2. Data is automatically classified and labeled.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
-
 <table border="0">
    <tr>
       <td>
@@ -99,8 +86,8 @@ When implementing an end-to-end Zero Trust framework for data, we recommend you 
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark, first instance."></p>
       </td>
       <td>
-	     <p><b>I.</b> <a href="">Access decisions are governed by encryption.</a></p>
-         <p><b>II.</b> <a href="">Data is automatically classified and labeled.</a></p>
+	     <p><b>I.</b> <a href="#i-access-decisions-are-governed-by-encryption">Access decisions are governed by encryption.</a></p>
+         <p><b>II.</b> <a href="#ii-data-is-automatically-classified-and-labeled">Data is automatically classified and labeled.</a></p>
       </td>
    </tr>
 </table>
@@ -108,21 +95,6 @@ When implementing an end-to-end Zero Trust framework for data, we recommend you 
 
 After these are completed, focus on these **additional deployment objectives**:
 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column::: 
-:::image type="icon" source="./media/icon-additional-deployment.png" alt-text="List icon with two checkmarks, first instance." border="false":::
-   :::column-end:::
-   :::column span="3":::
-
-1. Classification is augmented by smart machine learning models.
-
-2. Access decisions are governed by a cloud security policy engine.
-
-3. Prevent data leakage through DLP policies based on a sensitivity label and content inspection.
-   :::column-end:::
-:::row-end:::
 
 <table border="0">
    <tr>
@@ -131,12 +103,13 @@ After these are completed, focus on these **additional deployment objectives**:
 		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
-         <p><b>III.</b> <a href="">Classification is augmented by smart machine learning models.</a></p>
-         <p><b>IV.</b> <a href="">Access decisions are governed by a cloud security policy engine.</a></p>
-         <p><b>V.</b> <a href="">Prevent data leakage through DLP policies based on a sensitivity label and content inspection.</a></p>
+         <p><b>III.</b> <a href="#iii-classification-is-augmented-by-smart-machine-learning-models">Classification is augmented by smart machine learning models.</a></p>
+         <p><b>IV.</b> <a href="#iv-access-decisions-are-governed-by-a-cloud-security-policy-engine">Access decisions are governed by a cloud security policy engine.</a></p>
+         <p><b>V.</b> <a href="#v-dlp-policies-secure-sharing-with-encryption-and-tracking">Prevent data leakage through DLP policies based on a sensitivity label and content inspection.</a></p>
       </td>
    </tr>
 </table>
+
 
 ## Products covered in this guide
 
@@ -163,14 +136,18 @@ After these are completed, focus on these **additional deployment objectives**:
 
 This guide will walk you step-by-step through a Zero Trust approach to data protection maturity. Please keep in mind that these items will vary widely depending on the sensitivity of your information and the size and complexity of your organization.
 
-:::row:::
-   :::column:::
-:::image type="icon" source="./media/icon-initial-deployment.png" alt-text="List icon with one checkmark, second instance." border="false":::
-   :::column-end:::
-   :::column span="3":::
-## Initial Zero Trust deployment objectives
-   :::column-end:::
-:::row-end:::
+
+<table border="0">
+   <tr>
+      <td>
+         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+      </td>
+      <td>
+         <h2>Initial deployment objectives</h2>
+      </td>
+   </tr>
+</table>
+
 
 ### I. Access decisions are governed by encryption
 
@@ -213,14 +190,16 @@ Take this step:
  - Configure the scanner to [use **enforce** mode and automatically classify, label, and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner with sensitive data.
 
 
-:::row:::
-   :::column:::
-:::image type="icon" source="./media/icon-additional-deployment.png" alt-text="List icon with two checkmarks, second instance." border="false":::
-   :::column-end:::
-   :::column span="3":::
-## Additional deployment objectives
-   :::column-end:::
-:::row-end:::
+<table border="0">
+   <tr>
+      <td>
+         <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+      </td>
+      <td>
+         <h2>Additional deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 ### III. Classification is augmented by smart machine learning models

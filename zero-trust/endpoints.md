@@ -109,7 +109,18 @@ This guide will walk you through the steps required to secure your devices follo
 
 :::image type="content" source="./media/endpoints/icon-checklist-one-checkmark-large.png" alt-text="Checklist icon with one checkmark." border="false":::
 
-## Initial deployment objectives
+
+<table border="0">
+   <tr>
+      <td>
+         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+      </td>
+      <td>
+         <h2>Initial deployment objectives</h2>
+      </td>
+   </tr>
+</table>
+
 
 ### I. Endpoints are registered with a cloud identity provider
 

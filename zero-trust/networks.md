@@ -34,7 +34,6 @@ To make this happen, we follow three Zero Trust principles:
 
 ## Network Zero Trust deployment objectives
 
-<div="alert">
 **Before** most organization **start the Zero Trust journey**, they have network security that is characterized by the following:
 
 - Few network security perimeters and open, flat networks.

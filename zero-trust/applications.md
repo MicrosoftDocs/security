@@ -54,7 +54,7 @@ After these are completed, focus on these **additional deployment objectives**:
 <table border="0">
    <tr>
       <td>
-		 <br/>
+	 <br/>
 		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>

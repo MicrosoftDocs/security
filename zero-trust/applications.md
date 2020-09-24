@@ -145,7 +145,7 @@ Follow these steps:
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork).
 
-### Protect your sensitive information and activities automatically by implementing policies
+### Protect sensitive information and activities automatically by implementing policies
 
 Cloud App Security enables you to define the way you want users to behave in the cloud. This can be done by creating policies. There are many types: Access, activity, anomaly detection, app discovery, file policy, cloud discovery anomaly detection, and session policies.
 

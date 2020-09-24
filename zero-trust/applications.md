@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Secure applications with Zero Trust
 
-<img src="./media/applications/image1.emf" style="width:0.41667in;height:0.41667in" />
+<img src="./media/icon-application-window-medium.png" style="width:0.41667in;height:0.41667in" />
 
 **Background**
 
@@ -29,27 +29,41 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
 ## Applications Zero Trust deployment objectives
 
 <div class="alert">
-Before most organizations start the Zero Trust journey, their approach to application security is characterized by the following:
-
--   On-premises apps are accessed through physical networks or VPN.
--   Some critical cloud apps are accessible to users.
+   <p><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their on-premises apps are accessed through physical networks or VPN, and some critical cloud apps are accessible to users.</p>
 </div>
 
 When implementing a Zero Trust approach to managing and monitoring applications, we recommend you focus first on these **initial deployment objectives**:
 
-<img src="./media/applications/image2.png" style="width:0.40746in;height:0.35952in" />
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+      </td>
+      <td>
+	 <p><b>I.</b> <a href="#i-gain-visibility-into-the-activities-and-data-in-your-applications-by-connecting-them-via-apis">Gain visibility into the activities and data in your applications by connecting them via APIs.</a></p>
+         <p><b>II.</b> <a href="#ii-discover-and-control-the-use-of-shadow-it">Discover and control the use of shadow IT.</a></p>
+	 <p><b>III.</b> <a href="#iii-protect-sensitive-information-and-activities-automatically-by-implementing-policies">Protect sensitive information and activities automatically by implementing policies.</a></p>
+      </td>
+   </tr>
+</table>
 
-- Gain visibility into the activities and data in your applications by connecting them via APIs.
-- Discover and control the use of shadow IT.
-- Protect sensitive information and activities automatically by implementing policies.
 
-Once these are completed, focus on these **additional deployment objectives**:
+After these are completed, focus on these **additional deployment objectives**:
 
-<img src="./media/applications/image4.png" style="width:0.41875in;height:0.36944in" />
-
-- Deploy adaptive access and session controls for all apps.
-- Strengthen protection against cyber threats and rogue apps.
-- Assess the security configuration of your cloud environments.
+<table border="0">
+   <tr>
+      <td>
+	 <br/>
+		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+      </td>
+      <td>
+         <p><b>IV.</b> <a href="#iv-deploy-adaptive-access-and-session-controls-for-all-apps">Deploy adaptive access and session controls for all apps.</a></p>
+         <p><b>V.</b> <a href="#v-strengthen-protection-against-cyber-threats-and-rogue-apps">Strengthen protection against cyber threats and rogue apps.</a></p>
+         <p><b>VI.</b> <a href="#vi-assess-the-security-posture-of-your-cloud-environments">Assess the security posture of your cloud environments</a></p>
+      </td>
+   </tr>
+</table>
 
 ## Products covered in this guide
 
@@ -73,17 +87,17 @@ Once these are completed, focus on these **additional deployment objectives**:
 
 This guide will walk you through the steps required to secure applications and APIs following the principles of a Zero Trust security framework. Our approach is aligned with these three Zero Trust principles:
 
--  **Verify explicitly.** Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and anomalies.
+1.  **Verify explicitly.** Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and anomalies.
 
--  **Use least privileged access.** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive polices and data protection to protect both data and productivity.
+2.  **Use least privileged access.** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive polices and data protection to protect both data and productivity.
 
--  **Assume breach.** Minimize blast radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get [visibility](https://aka.ms/ZTCrossPillars), drive threat detection, and improve defenses.
+3.  **Assume breach.** Minimize blast radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get [visibility](https://aka.ms/ZTCrossPillars), drive threat detection, and improve defenses.
 
 <img src="./media/applications/image6.png" style="width:0.5812in;height:0.51282in" />
 
 ## Initial deployment objectives
 
-### Gain visibility into the activities and data in your applications by connecting them via APIs
+### I. Gain visibility into the activities and data in your applications by connecting them via APIs
 
 The majority of users\' activities in an organization originate on cloud applications and associated resources. Most major cloud apps provide an API for consuming tenant information and receiving corresponding governance actions. Use these integrations to monitor and alert when threats and anomalies occur in your environment.
 
@@ -96,7 +110,7 @@ Follow these steps:
 > [!TIP]
 > [Learn about implementing an end-to-end identity Zero Trust strategy](https://aka.ms/ZTIdentity).
 
-### Discover and control the use of shadow IT
+### II. Discover and control the use of shadow IT
 
 On average, 1,000 separate apps are being used in your organization. 80 percent of employees use non-sanctioned apps that no one has reviewed and that may not be compliant with your security and compliance policies. And, because your employees are able to access your resources and apps from outside your corporate network, it's no longer enough to have rules and policies on your firewalls.
 
@@ -111,41 +125,40 @@ Follow these steps:
 
 2.  [Discover and identify shadow IT](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-1-discover-and-identify-shadow-it) to find out what apps are being used, following one of three options:
 
-> a.  Integrate with [Microsoft Defender ATP](https://docs.microsoft.com/cloud-app-security/wdatp-integration) to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
+    1.  Integrate with [Microsoft Defender ATP](https://docs.microsoft.com/cloud-app-security/wdatp-integration) to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
 
-> b.  Deploy the [Cloud App Security log collector](https://docs.microsoft.com/cloud-app-security/discovery-docker) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
+    1.  Deploy the [Cloud App Security log collector](https://docs.microsoft.com/cloud-app-security/discovery-docker) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
 
-> c.  Integrate Cloud App Security with your proxy.
+    1.  Integrate Cloud App Security with your proxy.
 
+3.  Identify the [risk level](https://docs.microsoft.com/cloud-app-security/risk-score) of specific apps:
 
-1.  Identify the [risk level](https://docs.microsoft.com/cloud-app-security/risk-score) of specific apps:
+    1.  In the Cloud App Security portal, under Discover, click **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you are concerned about.
 
-    a.  In the Cloud App Security portal, under Discover, click **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you are concerned about.
+    1.  Drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's security risk factors.
 
-    b.  Drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's security risk factors.
+4.  [Evaluate compliance and analyze usage](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-2-evaluate-and-analyze):
 
-2.  [Evaluate compliance and analyze usage](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-2-evaluate-and-analyze):
+    1.  In the Cloud App Security portal, under Discover, click **Discovered apps**. Filter the list of apps discovered in your organization by the compliance risk factors you are concerned about. For example, use the suggested query to filter out noncompliant apps.
 
-    a.  In the Cloud App Security portal, under Discover, click **Discovered apps**. Filter the list of apps discovered in your organization by the compliance risk factors you are concerned about. For example, use the suggested query to filter out noncompliant apps.
+    1.  Drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's compliance risk factors.
 
-    b.  Drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's compliance risk factors.
+    1.  In the Cloud App Security portal, under Discover, click **Discovered apps** and then drill down by clicking on the specific app you want to investigate. The Use tab lets you know how many active users are using the app and how much traffic it's generating. If you want to see who, specifically, is using the app, you can drill down further by clicking **Total active users**.
 
-    c.  In the Cloud App Security portal, under Discover, click **Discovered apps** and then drill down by clicking on the specific app you want to investigate. The Use tab lets you know how many active users are using the app and how much traffic it's generating. If you want to see who, specifically, is using the app, you can drill down further by clicking **Total active users**.
+    1.  [Dive deeper](https://docs.microsoft.com/cloud-app-security/discovered-apps#deep-dive-into-discovered-apps) into discovered apps. View subdomains and resources to learn about specific activities, data access, and [resource usage](https://docs.microsoft.com/cloud-app-security/discovered-apps#discover-resources-and-custom-apps) in your cloud services.
 
-    d.  [Dive deeper](https://docs.microsoft.com/cloud-app-security/discovered-apps#deep-dive-into-discovered-apps) into discovered apps. View subdomains and resources to learn about specific activities, data access, and [resource usage](https://docs.microsoft.com/cloud-app-security/discovered-apps#discover-resources-and-custom-apps) in your cloud services.
+5.  [Manage your apps](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-3-manage-your-apps):
 
-3.  [Manage your apps](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-3-manage-your-apps):
+    1.  Create new custom app tags in order to classify each app according to its business status or justification. These tags can then be used for specific monitoring purposes.
 
-> a.  Create new custom app tags in order to classify each app according to its business status or justification. These tags can then be used for specific monitoring purposes.
+    1.  App tags can be managed under Cloud Discovery settings App tags. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
 
-> b.  App tags can be managed under Cloud Discovery settings App tags. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
-
-> c.  Manage discovered apps using [Azure Active Directory (Azure AD) Gallery](https://docs.microsoft.com/azure/active-directory/manage-apps/add-gallery-app). For apps that already appear in the Azure AD Gallery, apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
+    1.  Manage discovered apps using [Azure Active Directory (Azure AD) Gallery](https://docs.microsoft.com/azure/active-directory/manage-apps/add-gallery-app). For apps that already appear in the Azure AD Gallery, apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork).
 
-### Protect sensitive information and activities automatically by implementing policies
+### III. Protect sensitive information and activities automatically by implementing policies
 
 Cloud App Security enables you to define the way you want users to behave in the cloud. This can be done by creating policies. There are many types: Access, activity, anomaly detection, app discovery, file policy, cloud discovery anomaly detection, and session policies.
 
@@ -159,13 +172,13 @@ Follow these steps:
 
 3.  Configure policies to monitor shadow IT apps and provide control:
 
-    a.  Create an [app discovery policy](https://docs.microsoft.com/cloud-app-security/cloud-discovery-policies) that lets you know when there is a spike in downloads or traffic from an app you\'re concerned about. Enable **Anomalous behavior in discovered users' policy, Cloud storage app compliance check,** and **New risky app.**
+    1.  Create an [app discovery policy](https://docs.microsoft.com/cloud-app-security/cloud-discovery-policies) that lets you know when there is a spike in downloads or traffic from an app you\'re concerned about. Enable **Anomalous behavior in discovered users' policy, Cloud storage app compliance check,** and **New risky app.**
 
-    b.  Keep updating policies, and using the Cloud Discovery dashboard, check what (new) apps your users are using, as well as their usage and behavior patterns.
+    1.  Keep updating policies, and using the Cloud Discovery dashboard, check what (new) apps your users are using, as well as their usage and behavior patterns.
 
 4.  [Control what's sanctioned](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-5-control-sanctioned-apps) and block undesirable apps using this option:
 
-    a.  [Connect apps via API](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) for continuous monitoring.
+    1.  [Connect apps via API](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) for continuous monitoring.
 
 5.  Protect apps using [Conditional Access App Control](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad) and [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security).
 
@@ -173,7 +186,7 @@ Follow these steps:
 
 ## Additional deployment objectives
 
-### Deploy adaptive access and session controls for all apps
+### IV. Deploy adaptive access and session controls for all apps
 
 Once you've accomplished your initial three objectives, you can focus on
 additional objectives such as ensuring that all apps are using
@@ -184,13 +197,13 @@ and your organization at risk.
 
 Take this step:
 
-[Enable real-time monitoring and control over access to any web app](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad), based on user, location, device, and app. For example, you can create policies to protect downloads of sensitive content with sensitivity labels when using any unmanaged device. Alternatively, files can be scanned on upload to detect potential malware and block them from entering sensitive cloud environment.
+1. [Enable real-time monitoring and control over access to any web app](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad), based on user, location, device, and app. For example, you can create policies to protect downloads of sensitive content with sensitivity labels when using any unmanaged device. Alternatively, files can be scanned on upload to detect potential malware and block them from entering sensitive cloud environment.
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
 
-### Strengthen protection against cyber threats and rogue apps
+### V. Strengthen protection against cyber threats and rogue apps
 
 Bad actors have developed dedicated and unique attack tools, techniques, and procedures (TTPs) that target the cloud to breach defenses and access sensitive and business-critical information. They use tactics such as illicit OAuth consent grants, cloud ransomware, and compromising credentials for cloud identity.
 
@@ -200,11 +213,11 @@ The different detections are developed with security operations teams in mind an
 
 Follow these steps:
 
--   [Take advantage of Cloud App Security's UEBA and machine learning (ML) capabilities that are automatically enabled out-of-the-box](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy) to immediately detect threats and run advanced threat detection across your cloud environment.
+- [Take advantage of Cloud App Security's UEBA and machine learning (ML) capabilities that are automatically enabled out-of-the-box](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy) to immediately detect threats and run advanced threat detection across your cloud environment.
 
--   [Tune and scope](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#tune-anomaly-detection-policies) anomaly detection policies.
+- [Tune and scope](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#tune-anomaly-detection-policies) anomaly detection policies.
 
-### Assess the security posture of your cloud environments
+### VI. Assess the security posture of your cloud environments
 
 Beyond SaaS applications, organizations are heavily invested in IaaS and PaaS services. Cloud App Security enables your organization to assess and strengthen your security posture and capabilities for these services by getting visibility into the security configuration and compliance status across your public cloud platforms. This enables a risk-based investigation of the entire platform configuration status.
 
@@ -224,8 +237,3 @@ Follow these steps:
 
 Regardless of where the cloud resource or application resides, Zero Trust principles help ensure that your cloud environments and data are protected. For further information on these processes or help with these implementations, please contact your Customer Success team.
 
-**The Zero Trust deployment guide series**
-
-| <img src="./media/applications/image8.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/applications/image9.png" style="width:0.20833in;height:0.26316in" /> | <img src="./media/applications/image11.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/applications/image1.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/applications/image12.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/applications/image14.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/applications/image15.png" style="width:0.24653in;height:0.24653in" /> | <img src="./media/applications/image16.png" style="width:0.27908in;height:0.27908in" />   |
-|----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [[Introduction]{.ul}](https://aka.ms/ZTDeploymentGuideIntroduction)        | [[Identity]{.ul}](https://aka.ms/ZTIdentity)                               | [[Endpoints]{.ul}](https://aka.ms/ZTEndpoints)                              | [[Applications]{.ul}](https://aka.ms/ZTApplications)                       | [[Data]{.ul}](https://aka.ms/ZTData)                                        | [[Network]{.ul}](https://aka.ms/ZTNetwork)                                 | [[Infrastructure]{.ul}](https://aka.ms/ZTInfrastructure)                    | [[Visibility, Automation, Orchestration]{.ul}](https://aka.ms/ZTCrossPillars) |

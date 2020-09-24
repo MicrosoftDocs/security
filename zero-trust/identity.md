@@ -71,9 +71,9 @@ After these are completed, focus on these _additional_ deployment objectives:
 		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks." data-linktype="relative-path"></p>
       </td>
       <td>
-         <p>IV. Identities and access privileges are managed with identity governance.</p>
-         <p>&nbsp;V. User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</p>
-         <p>VI. Threat signals from other security solutions are integrated.</p>
+         <p><b>IV.</b> <a href="#identities-and-access-privileges-are-managed-with-identity-governance">Identities and access privileges are managed with identity governance.</a></p>
+         <p><b>V.</b> <a href="#user-device-location-and-behavior-is-analyzed-in-real-time-to-determine-risk-and-deliver-ongoing-protection">User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</a></p>
+         <p><b>VI.</b> <a href="#integrate-threat-signals-from-other-security-solutions-to-improve-detection-protection-and-response">Threat signals from other security solutions are integrated.</a></p>
       </td>
    </tr>
 </table>

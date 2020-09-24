@@ -120,7 +120,7 @@ After a device is registered, users can access your organization's restricted re
 :::image type="content" source="./media/steps-box-endpoints-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
 
 
-**Register corporate devices with Azure Active Directory (AD)**
+#### Register corporate devices with Azure Active Directory (AD)
 
 Follow these steps:
 
@@ -160,7 +160,8 @@ Follow these steps:
 
 8.  On the **You\'re all set** screen, click **Done**.
 
-**Register personal Windows devices with Azure AD**
+
+#### Register personal Windows devices with Azure AD
 
 Follow these steps:
 
@@ -176,7 +177,8 @@ Follow these steps:
 
 3.  Complete the rest of the registration process, including approving your identity verification request (if you use two-step verification) and setting up Windows Hello (if necessary).
 
-**Enable and configure Windows Hello for Business**
+
+#### Enable and configure Windows Hello for Business
 
 To allow users an alternative sign-in method that replaces a password, such as PIN, biometric authentication, or fingerprint reader, [enable Windows Hello for Business on users' Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/windows-hello).
 
@@ -264,7 +266,7 @@ Also, [set remediation rules](https://docs.microsoft.com/mem/intune/protect/acti
 :::image type="content" source="./media/steps-box-endpoints-2.png" alt-text="Diagram of the steps within phase 2 of the initial deployment objectives." border="true":::
 
 
-**Create a compliance policy with Microsoft Intune (all platforms)**
+#### Create a compliance policy with Microsoft Intune (all platforms)
 
 Follow these steps to [create a compliance policy](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy):
 
@@ -298,7 +300,8 @@ Follow these steps to [create a compliance policy](https://docs.microsoft.com/me
 
     :::image type="content" source="./media/endpoints/screenshot-actions-noncompliance-settings.png" alt-text="Screenshot of Actions for noncompliance in compliance policy settings." border="true":::
 
-**Automate notification email and add additional remediation actions for noncompliant devices in Intune (all platforms)**
+
+#### Automate notification email and add additional remediation actions for noncompliant devices in Intune (all platforms)
 
 When their endpoints or apps become non-compliant, users are guided through self-remediation. Alerts are automatically generated with additional alarms and automated actions set for certain thresholds. You can set [non-compliance](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) remediation actions.
 
@@ -331,7 +334,8 @@ Once data access is granted, you want to control what the user can do with the d
 
 :::image type="content" source="./media/steps-box-endpoints-3.png" alt-text="Diagram of the steps within phase 3 of the initial deployment objectives." border="true":::
 
-**Apply recommended security settings**
+
+#### Apply recommended security settings
 
 First, [apply security settings recommended by Microsoft to Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/security-baselines) to protect corporate data (Requires Windows 10 1809 and later):
 
@@ -355,7 +359,8 @@ Follow these steps:
 
 4.  On the Assignments tab, select groups to include and then assign the baseline to one or more groups. To fine-tune the assignment, use Select groups to exclude.
 
-**Ensure updates are deployed automatically to endpoints**
+
+#### Ensure updates are deployed automatically to endpoints
 
 [Configure Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)
 
@@ -416,7 +421,8 @@ Follow these steps:
 
 2.  Define a time window. Define one or more blocks of time that restrict when the updates install. Options include start day, start time, end day, and end time. By using a start day and end day, overnight blocks are supported. If you do not configure times to start or end, the configuration results in no restriction and updates can install at any time.
 
-**Ensure devices are encrypted**
+
+#### Ensure devices are encrypted
 
 [Configure Bitlocker to encrypt Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/encrypt-devices)
 
@@ -458,7 +464,8 @@ Follow these steps:
 
 6.  Configure the remaining FileVault settings to meet your business needs, and then select **OK**.
 
-**Create application protection policies to protect corporate data at the app-level**
+
+#### Create application protection policies to protect corporate data at the app-level
 
 To ensure your data remains safe or contained in a managed app, [create app protection policies (APP)](https://docs.microsoft.com/mem/intune/apps/app-protection-policy). A policy can be a rule that is enforced when the user attempts to access or move \"corporate\" data, or a set of actions that are prohibited or monitored when the user is inside the app.
 
@@ -504,21 +511,23 @@ Follow these steps:
 > [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).
 
 
-:::row:::
-   :::column:::
-:::image type="content" source="./media/identity/icon-checklist-two-checkmarks-large.png" alt-text="Checklist icon with two checkmarks." border="false":::
-   :::column-end:::
-   :::column span="3":::
-## Additional deployment objectives
-   :::column-end:::
-:::row-end:::
-
+<table border="0">
+   <tr>
+      <td>
+         <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+      </td>
+      <td>
+         <h2>Additional deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 ### IV. Endpoint threat detection is used to monitor device risk
 
 Once you've accomplished your first three objectives, the next step is to configure endpoint security so that advanced protection is provisioned, activated, and monitored. A single pane of glass is used to consistently manage all endpoints together.
 
-**Route endpoint logs and transactions to a SIEM or Power BI**
+
+#### Route endpoint logs and transactions to a SIEM or Power BI
 
 Using the Intune Data warehouse, [send device and app management data to reporting or SIEM tools](https://docs.microsoft.com/mem/intune/developer/reports-nav-intune-data-warehouse) for intelligent filtering of alerts to reduce noise.
 
@@ -531,11 +540,13 @@ Follow these steps:
 
 3.  Open Power BI Desktop or your SIEM solution.
 
-**From your SIEM solution**
+
+#### From your SIEM solution
 
 Choose the option to import or get data from an Odata feed.
 
-**From PowerBI**
+
+#### From PowerBI
 
 1.  From the menu, select **File &gt; Get Data &gt; OData feed**.
 
@@ -564,7 +575,7 @@ Choose the option to import or get data from an Odata feed.
 
 ### V. Access control is gated on device risk for both corporate and BYO devices
 
-**Corporate devices are enrolled with a cloud enrollment service such as DEP, Android Enterprise, or Windows AutoPilot**
+#### Corporate devices are enrolled with a cloud enrollment service such as DEP, Android Enterprise, or Windows AutoPilot
 
 Building and maintaining customized operating system images is a time-consuming process, and may include spending time applying custom operating system images to new devices to prepare them for use.
 

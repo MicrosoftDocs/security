@@ -222,13 +222,14 @@ You can use the Azure Information Protection (AIP) scanner to automatically clas
 
 Take this step:
 
- - Configure the scanner to [use **enforce** mode and automatically classify, label, and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner with sensitive data.
+ - Configure the scanner to [use **enforce** mode and automatically classify, label, and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner) with sensitive data.
 
 
 <table border="0">
    <tr>
       <td>
-         <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
       </td>
       <td>
          <h2>Additional deployment objectives</h2>
@@ -292,6 +293,7 @@ The following guidance will help you get started with sensitivity labels.
 
 :::image type="content" source="./media/steps-box-data-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
 
+
 #### Sensitivity labels are applied manually
 
 Defining the right label taxonomy and protection policies is the most critical step in an Information Protection deployment, so start **with creating a labeling strategy** that reflects your organization's sensitivity requirements for information.
@@ -350,7 +352,7 @@ Take this step:
 
 After a sensitivity label is created and applied to an email or document, any configured protection settings for that label are enforced on the content. When you use Office apps, watermarks can be applied to headers or footers of emails or documents that have the label applied.
 
-:::image type="content" source="./media/data/screenshot-office-document-header-watermark-highly-confidential.png" alt-text="Screenshot of an Office document with a watermark and header about confidentiality." border="false":::
+:::image type="content" source="./media/screenshot-office-document-header-watermark-highly-confidential.png" alt-text="Screenshot of an Office document with a watermark and header about confidentiality." border="false":::
 
 Take this step:
 
@@ -373,7 +375,7 @@ Follow these steps:
 
 [Microsoft Information Protection](https://www.microsoft.com/security/business/information-protection) (MIP) is a comprehensive, flexible, integrated, and extensible approach to protecting sensitive data.
 
-:::image type="content" source="./media/data/diagram-microsoft-information-protection-corporate-egress-highlighted.png" lightbox="./media/data/diagram-microsoft-information-protection-corporate-egress-highlighted.png" alt-text="Diagram of Microsoft Information Protection for data with Corporate Egress highlighted." border="false":::
+:::image type="content" source="./media/diagram-microsoft-information-protection-corporate-egress-highlighted.png" lightbox="./media/diagram-microsoft-information-protection-corporate-egress-highlighted.png" alt-text="Diagram of Microsoft Information Protection for data with Corporate Egress highlighted." border="false":::
 
 For further information or help with implementation, please contact your Customer Success team.
 

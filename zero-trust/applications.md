@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Secure applications with Zero Trust
 
-<img src="./media/icon-application-window-medium.png" style="width:0.41667in;height:0.41667in" />
+:::image type="icon" source="./media/icon-application-window-medium.png" alt-text="Application window icon." border="false":::
 
 **Background**
 

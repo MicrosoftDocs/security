@@ -30,8 +30,9 @@ Once the identity has been verified, we can control that identity's access to re
 
 ## Identity Zero Trust deployment objectives
 
-
-<div class="alert"><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and <a href="https://aka.ms/ZTCrossPillars">visibility</a> into identity risk is very limited.</div>
+<div class="alert">
+   <p><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and <a href="https://aka.ms/ZTCrossPillars">visibility</a> into identity risk is very limited.</p>
+</div>
 
 When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these _initial_ deployment objectives:
 
@@ -40,7 +41,7 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
    <tr>
       <td>
          <br/>
-		 <p><img src="media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
 	     <p><b>I.</b> <a href="#cloud-identity-federates-with-on-premises-identity-systems">Cloud identity federates with on-premises identity systems.</a></p>
@@ -49,6 +50,7 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
       </td>
    </tr>
 </table>
+
 
 After these are completed, focus on these _additional_ deployment objectives:
 
@@ -106,7 +108,7 @@ This guide will walk you through the steps required to manage identities followi
 
 
 
-### Cloud identity federates with on-premises identity systems
+### I. Cloud identity federates with on-premises identity systems
 
 Azure Active Directory (AD) enables strong authentication, a point of integration for endpoint security, and the core of your user-centric policies to guarantee least-privileged access. Azure AD's Conditional Access capabilities are the policy decision point for access to resources based on user identity, environment, device health, and risk—verified explicitly at the point of access. We will show how you can implement a Zero Trust identity strategy with Azure AD.
 
@@ -165,7 +167,7 @@ Follow these steps:
 2.  [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication). One of the most common attack vectors for malicious actors is to use stolen/replayed credentials against legacy protocols, such as SMTP, that cannot do modern security challenges.
 
 
-### Conditional Access policies gate access and provide remediation activities
+### II. Conditional Access policies gate access and provide remediation activities
 
 Azure AD Conditional Access (CA) analyzes signals such as user, device, and location to automate decisions and enforce organizational access policies for resource. You can use CA policies to apply access controls like multi-factor authentication (MFA). CA policies allow you to prompt users for MFA when needed for security and stay out of users' way when not needed.
 
@@ -190,7 +192,7 @@ Follow these steps:
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints)
 
-### Analytics improve visibility
+### III. Analytics improve visibility
 
 As you build your estate in Azure AD with authentication, authorization, and provisioning, it's important to have strong operational insights into what is happening in the directory.
 
@@ -213,7 +215,7 @@ Take this step:
 </table>
 
 
-### Identities and access privileges are managed with identity governance
+### IV. Identities and access privileges are managed with identity governance
 
 Once you've accomplished your initial three objectives, you can focus on additional objectives such as more robust identity governance.
 
@@ -263,7 +265,7 @@ Take this step:
  - [Start rolling out passwordless credentials](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-deployment) in your organization.
 
 
-## User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection
+## V. User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection
 
 Real-time analysis is critical for determining risk and protection.
 
@@ -312,7 +314,7 @@ Take this step:
  - Enable limited access to [SharePoint Online](https://aka.ms/spolimitedaccessdocs) and [Exchange Online](https://aka.ms/owalimitedaccess)
 
 
-## Integrate threat signals from other security solutions to improve detection, protection, and response
+## VI. Integrate threat signals from other security solutions to improve detection, protection, and response
 
 Finally, other security solutions can be integrated for greater effectiveness.
 

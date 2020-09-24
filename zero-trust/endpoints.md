@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Secure endpoints with Zero Trust
 
-:::image type="icon" source="./media/icon-endpoint-devices.png" alt-text="Icon of endpoint devices." border="false":::
+:::image type="icon" source="./media/icon-endpoint-devices-medium.png" border="false":::
 
 **Background**
 
@@ -37,44 +37,54 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
 
 ## Endpoint Zero Trust deployment objectives
 
-> [!NOTE]
-> **Before** most organizations **start the Zero Trust journey**, their endpoint security is set up as follows:
-> 
-> -   Endpoints are domain-joined and managed with solutions like Group Policy Objects or Configuration Manager. These are great options, but they don't leverage modern Windows 10 CSPs or require a separate cloud management gateway appliance to service cloud-based devices.
-> 
-> -   Endpoints are required to be on a corporate network to access data. This could mean that the devices are required to physically be on-site to access the corporate network, or that they require VPN access, which increases the risk that a compromised device could access sensitive corporate resources.
+<div class="alert">
+   <p><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their endpoint security is set up as follows:</p>
+   <ul>
+      <li>
+         <p>Endpoints are domain-joined and managed with solutions like Group Policy Objects or Configuration Manager. These are great options, but they don't leverage modern Windows 10 CSPs or require a separate cloud management gateway appliance to service cloud-based devices.</p>
+      </li>
+      <li>
+         <p>Endpoints are required to be on a corporate network to access data. This could mean that the devices are required to physically be on-site to access the corporate network, or that they require VPN access, which increases the risk that a compromised device could access sensitive corporate resources.</p>
+      </li>
+   </ul>
+</div>
+
 
 When implementing an end-to-end Zero Trust framework for securing endpoints, we recommend you focus first on these **initial deployment objectives**:
 
-:::row:::
-   :::column:::
-:::image type="content" source="./media/endpoints/icon-checklist-one-checkmark-large.png" alt-text="List icon with one checkmark." border="false":::
-   :::column-end:::
-   :::column span="3":::
-1. **Endpoints are registered with cloud identity providers.** In order to monitor security and risk across multiple endpoints used by any one person, you need [visibility](https://aka.ms/ZTCrossPillars) in all devices and access points that may be accessing your resources.
+   
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+      </td>
+      <td>
+	     <p><b>I.</b> <a href="#endpoints-are-registered-with-a-cloud-identity-provider">Endpoints are registered with cloud identity providers.</a> In order to monitor security and risk across multiple endpoints used by any one person, you need <a href="https://aka.ms/ZTCrossPillars">visibility</a> in all devices and access points that may be accessing your resources.</p>
+         <p><b>II.</b> <a href="">Access is only granted to cloud-managed and compliant endpoints and apps.</a> Set compliance rules to ensure that devices meet minimum security requirements before access is granted. Also, set remediation rules for noncompliant devices so that people know how to resolve the issue.</p>
+	     <p><b>III.</b> <a href="">Data loss prevention (DLP) policies are enforced for corporate devices and BYOD.</a> Control what the user can do with the data after they have access. For instance, restrict file saving to untrusted locations (such as local disk), or restrict copy-and-paste sharing with a consumer communication app or chat app to protect data.</p>
+      </td>
+   </tr>
+</table>
 
-2. **Access is only granted to cloud-managed and compliant endpoints and apps.** Set compliance rules to ensure that devices meet minimum security requirements before access is granted. Also, set remediation rules for noncompliant devices so that people know how to resolve the issue.
-
-3. **Data loss prevention (DLP) policies are enforced for corporate devices and BYOD**. Control what the user can do with the data after they have access. For instance, restrict file saving to untrusted locations (such as local disk), or restrict copy-and-paste sharing with a consumer communication app or chat app to protect data.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="4":::
 
 After these are completed, focus on these **additional deployment objectives**:
 
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column::: 
-:::image type="content" source="./media/endpoints/icon-checklist-two-checkmarks-large.png" alt-text="List icon with two checkmarks." border="false":::
-   :::column-end:::
-   :::column span="3":::
-4.  **Endpoint threat detection is used to monitor device risk.** Use a single pane of glass to manage all endpoints in a consistent way, and use a SIEM to route endpoint logs and transactions such that you get fewer, but actionable, alerts.
 
-5. **Access control is gated on endpoint risk for both corporate devices and BYOD.** Integrate data from Microsoft Defender Advanced Threat Protection (ATP), or other Mobile Threat Defense (MTD) vendors, as an information source for device compliance policies and device Conditional Access rules. The device risk will then directly influence what resources will be accessible by the user of that device.
-   :::column-end:::
-:::row-end:::
+<table border="0">
+   <tr>
+      <td>
+		 <br/>
+		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+      </td>
+      <td>
+         <p><b>IV.</b> <a href="">Endpoint threat detection is used to monitor device risk.</a> Use a single pane of glass to manage all endpoints in a consistent way, and use a SIEM to route endpoint logs and transactions such that you get fewer, but actionable, alerts.</p>
+         <p><b>V.</b> <a href="">Access control is gated on endpoint risk for both corporate devices and BYOD.</a> Integrate data from Microsoft Defender Advanced Threat Protection (ATP), or other Mobile Threat Defense (MTD) vendors, as an information source for device compliance policies and device Conditional Access rules. The device risk will then directly influence what resources will be accessible by the user of that device.</p>
+      </td>
+   </tr>
+</table>
+
+
 
 ## Products covered in this guide
 
@@ -101,7 +111,7 @@ This guide will walk you through the steps required to secure your devices follo
 
 ## Initial deployment objectives
 
-### Endpoints are registered with a cloud identity provider
+### I. Endpoints are registered with a cloud identity provider
 
 To help limit risk exposure, you need to monitor every endpoint to ensure each one has a trusted identity, security policies are applied, and the risk level for things like malware or data exfiltration has been measured, remediated, or deemed acceptable.
 
@@ -243,7 +253,7 @@ Finally, you can create additional device restriction policies to further lock d
 > [!TIP]
 > [Learn about implementing an end-to-end identity Zero strategy](https://aka.ms/ZTIdentity).
 
-I.  **Access is only granted to cloud-managed and compliant endpoints.**
+### II. Access is only granted to cloud-managed and compliant endpoints
 
 Once you have identities for all the endpoints accessing corporate resources and before access is granted, you want to ensure that they meet the [minimum security requirements](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) set by your organization.
 
@@ -315,7 +325,7 @@ Take these steps:
     1.  Set up an action to automatically retire a noncompliant device after a set number of days.
 
 
-III.  **DLP policies are enforced for BYOD and corporate devices.**
+### III. DLP policies are enforced for BYOD and corporate devices
 
 Once data access is granted, you want to control what the user can do with the data. For example, if a user accesses a document with a corporate identity, you want to prevent that document from being saved in an unprotected consumer storage location, or from being shared with a consumer communication or chat app.
 
@@ -504,7 +514,7 @@ Follow these steps:
 :::row-end:::
 
 
-IV.  **Endpoint threat detection is used to monitor device risk.**
+### IV. Endpoint threat detection is used to monitor device risk
 
 Once you've accomplished your first three objectives, the next step is to configure endpoint security so that advanced protection is provisioned, activated, and monitored. A single pane of glass is used to consistently manage all endpoints together.
 
@@ -552,7 +562,7 @@ Choose the option to import or get data from an Odata feed.
 6.  Learn [advanced ways to set up PowerBI visualizations](https://docs.microsoft.com/mem/intune/developer/reports-proc-create-with-odata#create-a-treemap-visualization).
 
 
-I.  **Access control is gated on device risk for both corporate and BYO devices.**
+### V. Access control is gated on device risk for both corporate and BYO devices
 
 **Corporate devices are enrolled with a cloud enrollment service such as DEP, Android Enterprise, or Windows AutoPilot**
 

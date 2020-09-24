@@ -125,35 +125,35 @@ Follow these steps:
 
 2.  [Discover and identify shadow IT](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-1-discover-and-identify-shadow-it) to find out what apps are being used, following one of three options:
 
-> a.  Integrate with [Microsoft Defender ATP](https://docs.microsoft.com/cloud-app-security/wdatp-integration) to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
+    1.  Integrate with [Microsoft Defender ATP](https://docs.microsoft.com/cloud-app-security/wdatp-integration) to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
 
-> b.  Deploy the [Cloud App Security log collector](https://docs.microsoft.com/cloud-app-security/discovery-docker) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
+    1.  Deploy the [Cloud App Security log collector](https://docs.microsoft.com/cloud-app-security/discovery-docker) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
 
-> c.  Integrate Cloud App Security with your proxy.
+    1.  Integrate Cloud App Security with your proxy.
 
 3.  Identify the [risk level](https://docs.microsoft.com/cloud-app-security/risk-score) of specific apps:
 
-> a.  In the Cloud App Security portal, under Discover, click **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you are concerned about.
+    1.  In the Cloud App Security portal, under Discover, click **Discovered apps**. Filter the list of apps discovered in your organization by the risk factors you are concerned about.
 
-> b.  Drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's security risk factors.
+    1.  Drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's security risk factors.
 
 4.  [Evaluate compliance and analyze usage](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-2-evaluate-and-analyze):
 
-> a.  In the Cloud App Security portal, under Discover, click **Discovered apps**. Filter the list of apps discovered in your organization by the compliance risk factors you are concerned about. For example, use the suggested query to filter out noncompliant apps.
+    1.  In the Cloud App Security portal, under Discover, click **Discovered apps**. Filter the list of apps discovered in your organization by the compliance risk factors you are concerned about. For example, use the suggested query to filter out noncompliant apps.
 
-> b.  Drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's compliance risk factors.
+    1.  Drill down into the app to understand more about its compliance by clicking the app name and then clicking the **Info** tab to see details about the app's compliance risk factors.
 
-> c.  In the Cloud App Security portal, under Discover, click **Discovered apps** and then drill down by clicking on the specific app you want to investigate. The Use tab lets you know how many active users are using the app and how much traffic it's generating. If you want to see who, specifically, is using the app, you can drill down further by clicking **Total active users**.
+    1.  In the Cloud App Security portal, under Discover, click **Discovered apps** and then drill down by clicking on the specific app you want to investigate. The Use tab lets you know how many active users are using the app and how much traffic it's generating. If you want to see who, specifically, is using the app, you can drill down further by clicking **Total active users**.
 
-> d.  [Dive deeper](https://docs.microsoft.com/cloud-app-security/discovered-apps#deep-dive-into-discovered-apps) into discovered apps. View subdomains and resources to learn about specific activities, data access, and [resource usage](https://docs.microsoft.com/cloud-app-security/discovered-apps#discover-resources-and-custom-apps) in your cloud services.
+    1.  [Dive deeper](https://docs.microsoft.com/cloud-app-security/discovered-apps#deep-dive-into-discovered-apps) into discovered apps. View subdomains and resources to learn about specific activities, data access, and [resource usage](https://docs.microsoft.com/cloud-app-security/discovered-apps#discover-resources-and-custom-apps) in your cloud services.
 
 5.  [Manage your apps](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-3-manage-your-apps):
 
-> a.  Create new custom app tags in order to classify each app according to its business status or justification. These tags can then be used for specific monitoring purposes.
+    1.  Create new custom app tags in order to classify each app according to its business status or justification. These tags can then be used for specific monitoring purposes.
 
-> b.  App tags can be managed under Cloud Discovery settings App tags. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
+    1.  App tags can be managed under Cloud Discovery settings App tags. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
 
-> c.  Manage discovered apps using [Azure Active Directory (Azure AD) Gallery](https://docs.microsoft.com/azure/active-directory/manage-apps/add-gallery-app). For apps that already appear in the Azure AD Gallery, apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
+    1.  Manage discovered apps using [Azure Active Directory (Azure AD) Gallery](https://docs.microsoft.com/azure/active-directory/manage-apps/add-gallery-app). For apps that already appear in the Azure AD Gallery, apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork).
@@ -172,13 +172,13 @@ Follow these steps:
 
 3.  Configure policies to monitor shadow IT apps and provide control:
 
-> a. Create an [app discovery policy](https://docs.microsoft.com/cloud-app-security/cloud-discovery-policies) that lets you know when there is a spike in downloads or traffic from an app you\'re concerned about. Enable **Anomalous behavior in discovered users' policy, Cloud storage app compliance check,** and **New risky app.**
+    1.  Create an [app discovery policy](https://docs.microsoft.com/cloud-app-security/cloud-discovery-policies) that lets you know when there is a spike in downloads or traffic from an app you\'re concerned about. Enable **Anomalous behavior in discovered users' policy, Cloud storage app compliance check,** and **New risky app.**
 
-> b. Keep updating policies, and using the Cloud Discovery dashboard, check what (new) apps your users are using, as well as their usage and behavior patterns.
+    1.  Keep updating policies, and using the Cloud Discovery dashboard, check what (new) apps your users are using, as well as their usage and behavior patterns.
 
 4.  [Control what's sanctioned](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-5-control-sanctioned-apps) and block undesirable apps using this option:
 
-> a.   [Connect apps via API](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) for continuous monitoring.
+    1.  [Connect apps via API](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) for continuous monitoring.
 
 5.  Protect apps using [Conditional Access App Control](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad) and [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security).
 

@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Secure data with Zero Trust
 
-:::image type="content" source="./media/icon-ones-and-zeroes-medium.png" alt-text="Ones and zeroes icon." border="false":::
+:::image type="icon" source="./media/icon-ones-and-zeroes-medium.png" alt-text="Ones and zeroes icon." border="false":::
 
 **Background**
 
@@ -123,14 +123,9 @@ After these are completed, focus on these **additional deployment objectives**:
 
 **Capabilities**
 
-|  Client | File Types |         Scanner        | Label Management |   Reporting and Audit  | DLP | CASB |
-|---------|------------|-------------|----------|------------------|------------------------|-----|------|
-|         |            | **On-Prem** | **M365** |                  | **Current** | **Next** |     |      |
-| Unified Labeling     | Office + Non-Office Files | Unified Labeling Scanner | M365 Data Classification | M365 Compliance Center  | AIP Analytics | M365 Activity Explorer | M365 Data Loss Prevention | Microsoft Cloud App Security |
-| Office Native Labeling | Office Files   |       |       |       | N/A    |     |      |   |
+:::image type="content" source="./media/table-data-capabilities.png" alt-text="Table of capabilities." border="false":::
 
-
-
+<!-- HTML version of the table that doesn't look great.
 <table>
 <thead>
 <tr class="header">
@@ -168,7 +163,7 @@ After these are completed, focus on these **additional deployment objectives**:
 </tr>
 </tbody>
 </table>
-
+-->
 
 
 

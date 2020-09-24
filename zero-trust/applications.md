@@ -41,9 +41,9 @@ When implementing a Zero Trust approach to managing and monitoring applications,
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
-	     <p><b>I.</b> <a href="#i-gain-visibility-into-the-activities-and-data-in-your-applications-by-connecting-them-via-apis">Gain visibility into the activities and data in your applications by connecting them via APIs.</a></p>
+	 <p><b>I.</b> <a href="#i-gain-visibility-into-the-activities-and-data-in-your-applications-by-connecting-them-via-apis">Gain visibility into the activities and data in your applications by connecting them via APIs.</a></p>
          <p><b>II.</b> <a href="#ii-discover-and-control-the-use-of-shadow-it">Discover and control the use of shadow IT.</a></p>
-	     <p><b>III.</b> <a href="#iii-protect-sensitive-information-and-activities-automatically-by-implementing-policies">Protect sensitive information and activities automatically by implementing policies.</a></p>
+	 <p><b>III.</b> <a href="#iii-protect-sensitive-information-and-activities-automatically-by-implementing-policies">Protect sensitive information and activities automatically by implementing policies.</a></p>
       </td>
    </tr>
 </table>

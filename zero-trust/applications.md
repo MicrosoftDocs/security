@@ -9,7 +9,7 @@ ms.topic: conceptual
 ---
 
 
-# Securing applications with Zero Trust
+# Secure applications with Zero Trust
 
 <img src="./media/applications/image1.emf" style="width:0.41667in;height:0.41667in" />
 

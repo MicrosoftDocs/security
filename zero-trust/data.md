@@ -131,56 +131,42 @@ After these are completed, focus on these **additional deployment objectives**:
 
 
 
-
 <table>
-   <thead>
-      <tr class="header">
-         <th><strong>Client</strong></th>
-         <th><strong>File Types</strong></th>
-         <th><strong>Scanner</strong></th>
-         <th><strong>Label Management</strong></th>
-         <th><strong>Reporting and Audit</strong></th>
-         <th><strong>DLP</strong></th>
-         <th><strong>CASB</strong></th>
-         <th></th>
-         <th></th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr class="odd">
-         <td></td>
-         <td></td>
-         <td><strong>On-Prem</strong></td>
-         <td><strong>M365</strong></td>
-         <td></td>
-         <td><strong>Current</strong></td>
-         <td><strong>Next</strong></td>
-         <td></td>
-         <td></td>
-      </tr>
-      <tr class="even">
-         <td>Unified Labeling</td>
-         <td>Office + Non-Office Files</td>
-         <td>Unified Labeling Scanner</td>
-         <td>M365 Data Classification</td>
-         <td>M365 Compliance Center</td>
-         <td>AIP Analytics</td>
-         <td>M365 Activity Explorer</td>
-         <td>M365 Data Loss Prevention</td>
-         <td>Microsoft Cloud App Security</td>
-      </tr>
-      <tr class="odd">
-         <td>Office Native Labeling</td>
-         <td>Office Files</td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td>N/A</td>
-         <td></td>
-         <td></td>
-         <td></td>
-      </tr>
-   </tbody>
+<thead>
+<tr class="header">
+<th rowspan="2">Client</th>
+<th rowspan="2">File Types</th>
+<th colspan="2">Scanner</th>
+<th rowspan="2">Label Management</th>
+<th colspan="2">Reporting and Audit</th>
+<th rowspan="2">DLP</th>
+<th rowspan="2">CASB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>On-Prem</strong></td>
+<td><strong>M365</strong></td>
+<td><strong>Current</strong></td>
+<td><strong>Next</strong></td>
+</tr>
+<tr class="even">
+<td>Unified Labeling</td>
+<td>Office + Non-Office Files</td>
+<td rowspan="2">Unified Labeling Scanner</td>
+<td rowspan="2">M365 Data Classification</td>
+<td rowspan="2">M365 Compliance Center</td>
+<td>AIP Analytics</td>
+<td rowspan="2">M365 Activity Explorer</td>
+<td rowspan="2">M365 Data Loss Prevention</td>
+<td rowspan="2">Microsoft Cloud App Security</td>
+</tr>
+<tr class="odd">
+<td>Office Native Labeling</td>
+<td>Office Files</td>
+<td>N/A</td>
+</tr>
+</tbody>
 </table>
 
 

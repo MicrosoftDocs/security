@@ -1,5 +1,5 @@
 ---
-title: Securing data with Zero Trust
+title: Secure data with Zero Trust
 description: Protecting data is one of the primary responsibilities of security and compliance teams. To ensure protection and that data access is restricted to authorized users, data should be inventoried, classified, labeled, and, where appropriate, encrypted. 
 ms.date: 09/01/2020
 ms.service: security
@@ -8,7 +8,7 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-# Securing data with Zero Trust
+# Secure data with Zero Trust
 
 :::image type="content" source="./media/data/icon-ones-and-zeroes-large.png" alt-text="Ones and zeroes icon." border="false":::
 

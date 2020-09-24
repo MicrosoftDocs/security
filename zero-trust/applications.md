@@ -50,7 +50,7 @@ When implementing a Zero Trust approach to managing and monitoring applications,
 </table>
 
 
-After these are completed, focus on these **additional_ deployment objectives**:
+After these are completed, focus on these **additional deployment objectives**:
 
 <table border="0">
    <tr>

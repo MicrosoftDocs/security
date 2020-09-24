@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Securing identity with Zero Trust
 
-:::image type="content" source="./media/icon-fingerprint-medium.png" alt-text="Fingerprint icon." border="false":::
+:::image type="icon" source="./media/icon-fingerprint-medium.png" alt-text="Fingerprint icon." border="false":::
 
 **Background**
 
@@ -115,7 +115,7 @@ This guide will walk you through the steps required to manage identities followi
 <table border="0">
 <tr>
 <td>
-<p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmarks." data-linktype="relative-path"></p>
+<p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark." data-linktype="relative-path"></p>
 </td>
 <td>
 ## Initial deployment objectives
@@ -125,7 +125,7 @@ This guide will walk you through the steps required to manage identities followi
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/icon-initial-deployment.png" alt-text="Checklist icon with one checkmarks." border="false":::
+:::image type="icon" source="./media/icon-initial-deployment.png" alt-text="Checklist icon with one checkmark." border="false":::
    :::column-end:::
    :::column span="3":::
 ## Initial deployment objectives
@@ -228,7 +228,7 @@ Take this step:
 
 :::row:::
    :::column:::
-:::image type="content" source="./media/icon-additional-deployment.png" alt-text="Checklist icon with two checkmarks." border="false":::
+:::image type="icon" source="./media/icon-additional-deployment.png" alt-text="Checklist icon with two checkmarks." border="false":::
    :::column-end:::
    :::column span="3":::
 ## Additional deployment objectives

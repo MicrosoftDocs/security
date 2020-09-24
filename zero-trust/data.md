@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Secure data with Zero Trust
 
-:::image type="content" source="./media/icon-ones-and-zeroes-medium.png" alt-text="Ones and zeroes icon." border="false":::
+:::image type="icon" source="./media/icon-ones-and-zeroes-medium.png" alt-text="Ones and zeroes icon." border="false":::
 
 **Background**
 
@@ -123,66 +123,47 @@ After these are completed, focus on these **additional deployment objectives**:
 
 **Capabilities**
 
-|  Client | File Types |         Scanner        | Label Management |   Reporting and Audit  | DLP | CASB |
-|---------|------------|-------------|----------|------------------|------------------------|-----|------|
-|         |            | **On-Prem** | **M365** |                  | **Current** | **Next** |     |      |
-| Unified Labeling     | Office + Non-Office Files | Unified Labeling Scanner | M365 Data Classification | M365 Compliance Center  | AIP Analytics | M365 Activity Explorer | M365 Data Loss Prevention | Microsoft Cloud App Security |
-| Office Native Labeling | Office Files   |       |       |       | N/A    |     |      |   |
+:::image type="content" source="./media/table-data-capabilities.png" alt-text="Table of capabilities." border="false":::
 
-
-
-
+<!-- HTML version of the table that doesn't look great.
 <table>
-   <thead>
-      <tr class="header">
-         <th><strong>Client</strong></th>
-         <th><strong>File Types</strong></th>
-         <th><strong>Scanner</strong></th>
-         <th><strong>Label Management</strong></th>
-         <th><strong>Reporting and Audit</strong></th>
-         <th><strong>DLP</strong></th>
-         <th><strong>CASB</strong></th>
-         <th></th>
-         <th></th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr class="odd">
-         <td></td>
-         <td></td>
-         <td><strong>On-Prem</strong></td>
-         <td><strong>M365</strong></td>
-         <td></td>
-         <td><strong>Current</strong></td>
-         <td><strong>Next</strong></td>
-         <td></td>
-         <td></td>
-      </tr>
-      <tr class="even">
-         <td>Unified Labeling</td>
-         <td>Office + Non-Office Files</td>
-         <td>Unified Labeling Scanner</td>
-         <td>M365 Data Classification</td>
-         <td>M365 Compliance Center</td>
-         <td>AIP Analytics</td>
-         <td>M365 Activity Explorer</td>
-         <td>M365 Data Loss Prevention</td>
-         <td>Microsoft Cloud App Security</td>
-      </tr>
-      <tr class="odd">
-         <td>Office Native Labeling</td>
-         <td>Office Files</td>
-         <td></td>
-         <td></td>
-         <td></td>
-         <td>N/A</td>
-         <td></td>
-         <td></td>
-         <td></td>
-      </tr>
-   </tbody>
+<thead>
+<tr class="header">
+<th rowspan="2">Client</th>
+<th rowspan="2">File Types</th>
+<th colspan="2">Scanner</th>
+<th rowspan="2">Label Management</th>
+<th colspan="2">Reporting and Audit</th>
+<th rowspan="2">DLP</th>
+<th rowspan="2">CASB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>On-Prem</strong></td>
+<td><strong>M365</strong></td>
+<td><strong>Current</strong></td>
+<td><strong>Next</strong></td>
+</tr>
+<tr class="even">
+<td>Unified Labeling</td>
+<td>Office + Non-Office Files</td>
+<td rowspan="2">Unified Labeling Scanner</td>
+<td rowspan="2">M365 Data Classification</td>
+<td rowspan="2">M365 Compliance Center</td>
+<td>AIP Analytics</td>
+<td rowspan="2">M365 Activity Explorer</td>
+<td rowspan="2">M365 Data Loss Prevention</td>
+<td rowspan="2">Microsoft Cloud App Security</td>
+</tr>
+<tr class="odd">
+<td>Office Native Labeling</td>
+<td>Office Files</td>
+<td>N/A</td>
+</tr>
+</tbody>
 </table>
-
+-->
 
 
 
@@ -241,13 +222,14 @@ You can use the Azure Information Protection (AIP) scanner to automatically clas
 
 Take this step:
 
- - Configure the scanner to [use **enforce** mode and automatically classify, label, and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner with sensitive data.
+ - Configure the scanner to [use **enforce** mode and automatically classify, label, and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner) with sensitive data.
 
 
 <table border="0">
    <tr>
       <td>
-         <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
       </td>
       <td>
          <h2>Additional deployment objectives</h2>
@@ -311,6 +293,7 @@ The following guidance will help you get started with sensitivity labels.
 
 :::image type="content" source="./media/steps-box-data-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
 
+
 #### Sensitivity labels are applied manually
 
 Defining the right label taxonomy and protection policies is the most critical step in an Information Protection deployment, so start **with creating a labeling strategy** that reflects your organization's sensitivity requirements for information.
@@ -369,7 +352,7 @@ Take this step:
 
 After a sensitivity label is created and applied to an email or document, any configured protection settings for that label are enforced on the content. When you use Office apps, watermarks can be applied to headers or footers of emails or documents that have the label applied.
 
-:::image type="content" source="./media/data/screenshot-office-document-header-watermark-highly-confidential.png" alt-text="Screenshot of an Office document with a watermark and header about confidentiality." border="false":::
+:::image type="content" source="./media/screenshot-office-document-header-watermark-highly-confidential.png" alt-text="Screenshot of an Office document with a watermark and header about confidentiality." border="false":::
 
 Take this step:
 
@@ -392,7 +375,7 @@ Follow these steps:
 
 [Microsoft Information Protection](https://www.microsoft.com/security/business/information-protection) (MIP) is a comprehensive, flexible, integrated, and extensible approach to protecting sensitive data.
 
-:::image type="content" source="./media/data/diagram-microsoft-information-protection-corporate-egress-highlighted.png" lightbox="./media/data/diagram-microsoft-information-protection-corporate-egress-highlighted.png" alt-text="Diagram of Microsoft Information Protection for data with Corporate Egress highlighted." border="false":::
+:::image type="content" source="./media/diagram-microsoft-information-protection-corporate-egress-highlighted.png" lightbox="./media/diagram-microsoft-information-protection-corporate-egress-highlighted.png" alt-text="Diagram of Microsoft Information Protection for data with Corporate Egress highlighted." border="false":::
 
 For further information or help with implementation, please contact your Customer Success team.
 

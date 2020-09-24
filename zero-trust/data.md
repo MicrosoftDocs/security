@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Secure data with Zero Trust
 
-:::image type="content" source="./media/data/icon-ones-and-zeroes-medium.png" alt-text="Ones and zeroes icon." border="false":::
+:::image type="content" source="./media/icon-ones-and-zeroes-medium.png" alt-text="Ones and zeroes icon." border="false":::
 
 **Background**
 
@@ -30,7 +30,7 @@ The three core elements of a data protection strategy are:
 
     You should continuously monitor sensitive data to detect policy violations and risky user behavior. This allows you to take appropriate action, such as revoking access, blocking users, and refining your protection policies.
 
-:::image type="content" source="./media/data/diagram-monitor-remediate-data.png" lightbox="./media/diagram-monitor-remediate-data.png" alt-text="Diagram of monitoring activiting and remediation." border="false":::
+:::image type="content" source="./media/diagram-monitor-remediate-data.png" lightbox="./media/diagram-monitor-remediate-data.png" alt-text="Diagram of monitoring activiting and remediation." border="false":::
 
 When data and sensitive content is understood, labeled, and classified, organizations can:
 
@@ -92,6 +92,20 @@ When implementing an end-to-end Zero Trust framework for data, we recommend you 
 :::row:::
    :::column span="4":::
 
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark, first instance."></p>
+      </td>
+      <td>
+	     <p><b>I.</b> <a href="">Access decisions are governed by encryption.</a></p>
+         <p><b>II.</b> <a href="">Data is automatically classified and labeled.</a></p>
+      </td>
+   </tr>
+</table>
+
+
 After these are completed, focus on these **additional deployment objectives**:
 
    :::column-end:::
@@ -109,6 +123,20 @@ After these are completed, focus on these **additional deployment objectives**:
 3. Prevent data leakage through DLP policies based on a sensitivity label and content inspection.
    :::column-end:::
 :::row-end:::
+
+<table border="0">
+   <tr>
+      <td>
+		 <br/>
+		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+      </td>
+      <td>
+         <p><b>III.</b> <a href="">Classification is augmented by smart machine learning models.</a></p>
+         <p><b>IV.</b> <a href="">Access decisions are governed by a cloud security policy engine.</a></p>
+         <p><b>V.</b> <a href="">Prevent data leakage through DLP policies based on a sensitivity label and content inspection.</a></p>
+      </td>
+   </tr>
+</table>
 
 ## Products covered in this guide
 
@@ -144,7 +172,7 @@ This guide will walk you step-by-step through a Zero Trust approach to data prot
    :::column-end:::
 :::row-end:::
 
-### Access decisions are governed by encryption
+### I. Access decisions are governed by encryption
 
 Protect your most sensitive data with encryption to restrict access to content that sensitivity labels are applied to.
 
@@ -156,16 +184,16 @@ When a document or email is encrypted, access to the content is restricted so th
 
 -   Can be decrypted only by users authorized by the label's encryption settings.
 
-### Take this step:
+Take this step:
 
  - [Configure sensitivity labels for encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels#understand-how-the-encryption-works).
 
 
-I.  **Data is automatically classified and labeled.**
+### II. Data is automatically classified and labeled
 
 To avoid issues with data not being labeled manually, or labels being applied inaccurately, automate data classification.
 
-**Automatically label content in Microsoft 365 Apps for Enterprise or Unified Labeling client**
+#### Automatically label content in Microsoft 365 Apps for Enterprise or Unified Labeling client
 
 A strategic client selection for Windows leverages [built-in information protection features in Microsoft Office](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide&preserve-view=true#support-for-sensitivity-label-capabilities-in-apps). If this is not possible, an alternative solution would be to use the Azure Information Protection unified labeling client.
 
@@ -176,7 +204,7 @@ Follow these steps:
 1.  [Apply sensitivity labels to content automatically](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide&preserve-view=true).
 
 
-**Automatically classify, label, and protect business critical content with sensitive data on-premises**
+#### Automatically classify, label, and protect business critical content with sensitive data on-premises
 
 You can use the Azure Information Protection (AIP) scanner to automatically classify and protect files for SharePoint 2013 and above and on-premise file servers.
 
@@ -195,7 +223,7 @@ Take this step:
 :::row-end:::
 
 
-I.  **Classification is augmented by smart machine learning models.**
+### III. Classification is augmented by smart machine learning models
 
 Enterprises have vast amounts of data that can be challenging to adequately label and classify. Once you've completed the first two steps, the next step is to use machine learning for smarter classification.
 
@@ -210,7 +238,7 @@ Follow these steps:
 2.  [Create a trainable classifier](https://docs.microsoft.com/microsoft-365/compliance/classifier-creating-a-trainable-classifier?view=o365-worldwide&preserve-view=true) (preview).
 
 
-IV.  **Access decisions are governed by a cloud security policy engine.**
+### IV. Access decisions are governed by a cloud security policy engine
 
 For data stored in Exchange, SharePoint, and OneDrive, automatic classification with sensitivity labels can be deployed via policies to targeted locations. Microsoft Cloud App Security provides additional capabilities to manage sensitive files, including:
 
@@ -228,7 +256,7 @@ Follow these steps:
 Security](https://docs.microsoft.com/cloud-app-security/azip-integration) and Microsoft Information Protection and use it to also protect data in third-party environments such as Box or G-Suite. 
 
 
-### DLP policies secure sharing with encryption and tracking
+### V. DLP policies secure sharing with encryption and tracking
 
 To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Office 365 Security & Compliance Center, you can identify, monitor, and automatically protect sensitive information across Office 365.
 
@@ -240,7 +268,7 @@ Follow these steps:
 
 3.  Use DLP to enforce actions (e.g., protect content, restrict access, or, in the case of an email, block from being transmitted) when content matches a set of conditions.
 
-## Traditional data security objectives
+### Traditional data security objectives
 
 Sensitivity labels are the foundation of the Zero Trust model for data. Defining sensitivity levels is a process of [identifying stakeholders to discuss and determine data types that are critical](https://aka.ms/MIPC/DataClassification) for enterprise businesses and that are subject to government regulation. Then a taxonomy can be made so that this type of data can be classified as Highly Confidential or Confidential, and the documents that contain this data are labelled accordingly. Similarly, a security policy decision should be made about other data-type sensitivity levels and document labels, such as General Public or Non-Business. With policy determination completed, discover files in all locations, validate contents in the files, compare them with the policy decision, and label the documents appropriately.
 
@@ -250,7 +278,7 @@ The following guidance will help you get started with sensitivity labels.
 
 :::image type="content" source="./media/steps-box-data-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
 
-**Sensitivity labels are applied manually.**
+#### Sensitivity labels are applied manually
 
 Defining the right label taxonomy and protection policies is the most critical step in an Information Protection deployment, so start **with creating a labeling strategy** that reflects your organization's sensitivity requirements for information.
 
@@ -267,7 +295,7 @@ Follow these steps:
 -   [Get started with sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-worldwide&preserve-view=true).
 
 
-**Automatically discover business-critical content with sensitive data on-premises**
+#### Automatically discover business-critical content with sensitive data on-premises
 
 The Azure Information Protection (AIP) scanner helps discover, classify, label, and protect sensitive information in your on-premises file repositories and on-premises SharePoint 2013+ sites. The AIP scanner provides immediate insight into types of data risk before moving to the cloud.
 
@@ -283,7 +311,8 @@ Follow these steps:
 
 5.  Run a discovery cycle and view reports for the scanner.
 
-**Labels and classifications available to Office users on any device and manually applied to content**
+
+#### Labels and classifications available to Office users on any device and manually applied to content
 
 Once sensitivity labels have been published from Microsoft 365 Compliance Center or equivalent labeling center, there are client apps that users can leverage to classify and protect data as it is created or edited, such as the native Microsoft Office built-in labeling client or the [Azure Information Protection Unified Labeling](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) client.
 
@@ -293,7 +322,8 @@ Follow these steps:
 
 2.  [Start using sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide&preserve-view=true) in Office apps, including [Microsoft Team sites, Microsoft 365 groups (formerly Office 365 groups), and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-worldwide&preserve-view=true). Sensitivity labels can also be used to [classify and label sensitive data in Power BI service](https://docs.microsoft.com/power-bi/collaborate-share/service-security-apply-data-sensitivity-labels&preserve-view=true) and can be applied to datasets, reports, dashboards, and data flows.
 
-**Default label applied to new content created by users**
+
+#### Default label applied to new content created by users
 
 When publishing a label policy, you can identify a specific label to be applied by default to all content created by users and groups included in the policy. This label can set a floor of protection, even if no other action is taken by users or system settings.
 
@@ -301,7 +331,8 @@ Take this step:
 
  - [Learn what label policies can do](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide&preserve-view=true#what-label-policies-can-do) and what to consider when setting default labels.
 
-**Visual markings to indicate sensitive documents across apps and services**
+
+#### Visual markings to indicate sensitive documents across apps and services
 
 After a sensitivity label is created and applied to an email or document, any configured protection settings for that label are enforced on the content. When you use Office apps, watermarks can be applied to headers or footers of emails or documents that have the label applied.
 
@@ -311,7 +342,8 @@ Take this step:
 
  - [Learn when content markings are applied](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide&preserve-view=true#when-office-apps-apply-content-marking-and-encryption).
 
-**Audit data to understand user labeling, classification, and protection behaviors**
+
+#### Audit data to understand user labeling, classification, and protection behaviors
 
 Once sensitivity labels have been published to your organization, you can use [data classification](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview?view=o365-worldwide&preserve-view=true) to identify sensitive content, where it's located, and exposure from user activities.
 

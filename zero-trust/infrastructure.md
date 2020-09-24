@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Secure infrastructure with Zero Trust
 
-<img src="./media/infrastructure/image1.png" style="width:0.2375in;height:0.26181in" />
+:::image type="icon" source="./media/icon-data-storage-disks-medium.png" alt-text="Data storage disks icon." border="false":::
 
 Infrastructure represents a critical threat vector. IT Infrastructure, whether on-premises or multi-cloud, is defined as all the hardware (physical, virtual, containerized), software (open source, first- and third-party, PaaS, SaaS), micro-services (functions, APIs), networking infrastructure, facilities, etc. that are required to develop, test,
 deliver, monitor, control, or support IT services. It is an area where Microsoft has invested tremendous resources to develop a comprehensive set of capabilities to secure your future cloud and on-premises infrastructure.
@@ -27,7 +27,8 @@ Just as importantly, Microsoft Azure Blueprints and related capabilities ensure 
 
 Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azure Sphere can greatly contribute to improving the security of your deployed infrastructure and enable a different approach to defining, designing, provisioning, deploying, and monitoring your infrastructure.
 
-<img src="./media/infrastructure/image2.png" style="width:3.91177in;height:2.82892in" alt="A picture containing sign, shirt, graffiti, clock Description automatically generated" />
+:::image type="content" source="./media/diagram-infrastructure-5-elements.png" alt-text="A repeating circular diagram of 5 elements: Assess compliance, Observe gaps, Author, Test, and Deploy." border="false":::
+
 
 ## Infrastructure Zero Trust deployment objectives
 
@@ -51,7 +52,7 @@ Once these are completed, focus on these **additional deployment objectives:**
 
 ## Products covered in this guide  
   
-Microsoft Azure**
+**Microsoft Azure**
 
 [Azure Blueprints](https://azure.microsoft.com/services/blueprints/)
 
@@ -71,23 +72,37 @@ This guide will walk you through the steps required to secure your infrastructur
 
 Before you get started, ensure you've met these baseline infrastructure deployment objectives.  
   
-### Permissions are managed manually across environments
-
-<div="alert">
-**Setting the Microsoft Tenant Baseline**
-
-A prioritized baseline should be set for how your Infrastructure is managed. Leveraging industry guidance such as NIST 800-53, you can derive a set of requirements for managing your infrastructure. At Microsoft, we have set a minimal baseline to the following list of requirements:
-
- - Access to data, networks, services, utilities, tools, and applications must be controlled by authentication and authorization mechanisms.
- - Data must be encrypted in transit and at rest.
- - Restrict network traffic flows.
- - Security team visibility into all assets.
- - Monitoring and auditing must be enabled and correctly configured according to prescribed organizational guidance.
- - Anti-malware must be up to date and running.
- - Vulnerability scans must be performed, and vulnerabilities remediated, according to prescribed organizational guidance.
- 
-In order to measure and drive compliance to this minimal—or our expanded—baseline, we start with getting visibility at the Tenant level, and across your on-prem environments, by applying a Security Reader role across the Azure Tenant. With the Security Reader role in place, it can gain additional visibility through Azure Security Center and Azure Policies that can be used to apply industry baselines (e.g., Azure CIS, PCI, ISO 27001) or a custom baseline that your organization has defined.
+<div class="alert">
+   <p><b>Setting the Microsoft Tenant Baseline</b></p>
+   <p>A prioritized baseline should be set for how your Infrastructure is managed. Leveraging industry guidance such as NIST 800-53, you can derive a set of requirements for managing your infrastructure. At Microsoft, we have set a minimal baseline to the following list of requirements:</p>
+   <ul>
+      <li>
+         <p>Access to data, networks, services, utilities, tools, and applications must be controlled by authentication and authorization mechanisms.</p>
+      </li>
+      <li>
+         <p>Data must be encrypted in transit and at rest.</p>
+      </li>
+      <li>
+         <p>Restrict network traffic flows.</p>
+      </li>
+      <li>
+         <p>Security team visibility into all assets.</p>
+      </li>
+      <li>
+         <p>Monitoring and auditing must be enabled and correctly configured according to prescribed organizational guidance.</p>
+      </li>
+      <li>
+         <p>Anti-malware must be up to date and running.</p>
+      </li>
+      <li>
+         <p>Vulnerability scans must be performed, and vulnerabilities remediated, according to prescribed organizational guidance.</p>
+      </li>
+   </ul>
+   <p>In order to measure and drive compliance to this minimal—or our expanded—baseline, we start with getting visibility at the Tenant level, and across your on-prem environments, by applying a Security Reader role across the Azure Tenant. With the Security Reader role in place, it can gain additional visibility through Azure Security Center and Azure Policies that can be used to apply industry baselines (e.g., Azure CIS, PCI, ISO 27001) or a custom baseline that your organization has defined.</p>
 </div>
+
+
+### Permissions are managed manually across environments
 
 From the tenant level down to the individual resources within each resource group ad subscription, appropriate role-based access controls must be applied.
 
@@ -118,11 +133,12 @@ You can extend your coverage of policies beyond the ASC set and create custom po
 
 Endpoint protection is essential to ensuring infrastructure remains secure and available. As part of any endpoint protection and vulnerability management strategy, you will be able to measure compliance centrally to ensure malware protection is enabled and configured through the [Endpoint protection assessment and recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-endpoint-protection). 
 
-<div="alert">
-**Centralized visibility of your baseline across multiple subscriptions**
 
-By applying the tenant reader roll, you can get visibility across your tenant of the status of each of the policies that are being evaluated as part of the ASC secure score, Azure Policy, and Guest Config policies. You funnel that to your organizational compliance dashboard for central reporting of the state of your tenant. 
+<div class="alert">
+   <p><b>Centralized visibility of your baseline across multiple subscriptions</b></p>
+   <p>By applying the tenant reader roll, you can get visibility across your tenant of the status of each of the policies that are being evaluated as part of the ASC secure score, Azure Policy, and Guest Config policies. You funnel that to your organizational compliance dashboard for central reporting of the state of your tenant.</p>
 </div>
+
 
 Additionally, as part of ASC Standard, you can use the policy [Enable
 the built-in vulnerability assessment solution on virtual machines (powered by Qualys)](https://docs.microsoft.com/azure/security-center/built-in-vulnerability-assessment)
@@ -133,9 +149,11 @@ to scan your VMs for vulnerabilities, and have those reflected directly in ASC. 
 
 <img src="./media/infrastructure/image7.png" style="width:0.5812in;height:0.51282in" />
 
+
 ## Initial deployment objectives  
 
 Once you've met the baseline infrastructure objectives, you can focus on implementing a modern infrastructure with an end-to-end Zero Trust strategy.
+
 
 ### Workloads are monitored and alerted to abnormal behavior
 

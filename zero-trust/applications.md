@@ -32,30 +32,35 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
    <p><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their on-premises apps are accessed through physical networks or VPN, and some critical cloud apps are accessible to users.</p>
 </div>
 
-When implementing a Zero Trust approach to managing and monitoring applications, we recommend you focus first on these **initial deployment objectives**:
+
+
 
 <table border="0">
+   <tr>
+      <td colspan="2">
+         <p>When implementing a Zero Trust approach to managing and monitoring applications, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+	  </td>
+   </tr>
    <tr>
       <td>
          <br/>
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
-	 <p><b>I.</b> <a href="#i-gain-visibility-into-the-activities-and-data-in-your-applications-by-connecting-them-via-apis">Gain visibility into the activities and data in your applications by connecting them via APIs.</a></p>
-         <p><b>II.</b> <a href="#ii-discover-and-control-the-use-of-shadow-it">Discover and control the use of shadow IT.</a></p>
-	 <p><b>III.</b> <a href="#iii-protect-sensitive-information-and-activities-automatically-by-implementing-policies">Protect sensitive information and activities automatically by implementing policies.</a></p>
+		 <p><b>I.</b> <a href="#i-gain-visibility-into-the-activities-and-data-in-your-applications-by-connecting-them-via-apis">Gain visibility into the activities and data in your applications by connecting them via APIs.</a></p>
+	     <p><b>II.</b> <a href="#ii-discover-and-control-the-use-of-shadow-it">Discover and control the use of shadow IT.</a></p>
+		 <p><b>III.</b> <a href="#iii-protect-sensitive-information-and-activities-automatically-by-implementing-policies">Protect sensitive information and activities automatically by implementing policies.</a></p>
       </td>
    </tr>
-</table>
-
-
-After these are completed, focus on these **additional deployment objectives**:
-
-<table border="0">
+   <tr>
+      <td colspan="2">
+         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+      </td>
+   </tr>
    <tr>
       <td>
-	 <br/>
-		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+		 <br/>
+		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
          <p><b>IV.</b> <a href="#iv-deploy-adaptive-access-and-session-controls-for-all-apps">Deploy adaptive access and session controls for all apps.</a></p>
@@ -64,6 +69,8 @@ After these are completed, focus on these **additional deployment objectives**:
       </td>
    </tr>
 </table>
+
+
 
 ## Products covered in this guide
 
@@ -95,7 +102,9 @@ This guide will walk you through the steps required to secure applications and A
 
 <img src="./media/applications/image6.png" style="width:0.5812in;height:0.51282in" />
 
+
 ## Initial deployment objectives
+
 
 ### I. Gain visibility into the activities and data in your applications by connecting them via APIs
 
@@ -184,7 +193,9 @@ Follow these steps:
 
 <img src="./media/applications/image7.png" style="width:0.58974in;height:0.52036in" />
 
+
 ## Additional deployment objectives
+
 
 ### IV. Deploy adaptive access and session controls for all apps
 
@@ -216,6 +227,7 @@ Follow these steps:
 - [Take advantage of Cloud App Security's UEBA and machine learning (ML) capabilities that are automatically enabled out-of-the-box](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy) to immediately detect threats and run advanced threat detection across your cloud environment.
 
 - [Tune and scope](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#tune-anomaly-detection-policies) anomaly detection policies.
+
 
 ### VI. Assess the security posture of your cloud environments
 

@@ -50,10 +50,12 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
 </div>
 
 
-When implementing an end-to-end Zero Trust framework for securing endpoints, we recommend you focus first on these **initial deployment objectives**:
-
-   
 <table border="0">
+   <tr>
+      <td colspan="2">
+         <p>When implementing an end-to-end Zero Trust framework for securing endpoints, we recommend you focus first on these<i>initial</i> deployment objectives:</p>
+	  </td>
+   </tr>
    <tr>
       <td>
          <br/>
@@ -65,17 +67,15 @@ When implementing an end-to-end Zero Trust framework for securing endpoints, we 
 	     <p><b>III.</b> <a href="">Data loss prevention (DLP) policies are enforced for corporate devices and BYOD.</a> Control what the user can do with the data after they have access. For instance, restrict file saving to untrusted locations (such as local disk), or restrict copy-and-paste sharing with a consumer communication app or chat app to protect data.</p>
       </td>
    </tr>
-</table>
-
-
-After these are completed, focus on these **additional deployment objectives**:
-
-
-<table border="0">
+   <tr>
+      <td colspan="2">
+         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+      </td>
+   </tr>
    <tr>
       <td>
 		 <br/>
-		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
          <p><b>IV.</b> <a href="">Endpoint threat detection is used to monitor device risk.</a> Use a single pane of glass to manage all endpoints in a consistent way, and use a SIEM to route endpoint logs and transactions such that you get fewer, but actionable, alerts.</p>

@@ -34,6 +34,7 @@ Once the identity has been verified, we can control that identity's access to re
    <p><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and <a href="https://aka.ms/ZTCrossPillars">visibility</a> into identity risk is very limited.</p>
 </div>
 
+
 <table border="0">
    <tr>
       <td colspan="2">
@@ -41,7 +42,7 @@ Once the identity has been verified, we can control that identity's access to re
 	  </td>
    </tr>
    <tr>
-      <td style="width:50%;">
+      <td>
          <br/>
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
@@ -57,7 +58,7 @@ Once the identity has been verified, we can control that identity's access to re
       </td>
    </tr>
    <tr>
-      <td style="width:50%;">
+      <td>
 		 <br/>
 		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>

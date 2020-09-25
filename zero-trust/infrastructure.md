@@ -38,17 +38,44 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
 > -  Permissions are managed manually across environments.
 > -  Configuration management of VMs and servers on which workloads are running.
 
-When implementing an end-to-end Zero Trust framework for managing and monitoring your identities, we recommend you focus first on these **initial deployment objectives**:
 
--   Workloads are monitored and alerted for abnormal behavior <img src="./media/infrastructure/image3.png" style="width:0.40746in;height:0.35952in" />.
--   Every workload is assigned an app identity.
--   Human access to resources requires Just-In-Time.
 
-Once these are completed, focus on these **additional deployment objectives:**
+<table border="0">
+   <tr>
+      <td colspan="2">
+         <p>When implementing an end-to-end Zero Trust framework for managing and monitoring your infrastructure, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+	  </td>
+   </tr>
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+      </td>
+      <td>
+		 <p><b>I.</b> <a href="">Workloads are monitored and alerted for abnormal behavior.</a></p>
+	     <p><b>II.</b> <a href="">Every workload is assigned an app identity.</a></p>
+		 <p><b>III.</b> <a href="">Human access to resources requires Just-In-Time.</a></p>
+      </td>
+   </tr>
+   <tr>
+      <td colspan="2">
+         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+		 <br/>
+		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+      </td>
+      <td>
+         <p><b>IV.</b> <a href="">Unauthorized deployments are blocked, and alert is triggered.</a></p>
+         <p><b>V.</b> <a href="">Granular visibility and access control are available across all workloads.</a></p>
+         <p><b>VI.</b> <a href="">User and resource access is segmented for each workload.</a></p>
+      </td>
+   </tr>
+</table>
 
--   Unauthorized deployments are blocked, and alert is triggered. <img src="./media/infrastructure/image5.png" style="width:0.41875in;height:0.36944in" /> 
--   Granular visibility and access control are available across all workloads.
--   User and resource access is segmented for each workload.
+
 
 ## Products covered in this guide  
   
@@ -65,6 +92,7 @@ Once these are completed, focus on these **additional deployment objectives:**
 [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
 
 [Azure Resource Manager (ARM) templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview)
+
 
 ## Infrastructure Zero Trust deployment guide
 
@@ -110,18 +138,20 @@ From the tenant level down to the individual resources within each resource grou
 > [Learn about implementing an end-to-end identity Zero Trust strategy](https://aka.ms/ZTIdentity).
 
 
-### Configuration management of VMS and servers on which workloads are running
+#### Configuration management of VMS and servers on which workloads are running
 
 Just as we have managed our on-prem data center environment, we must also ensure that we are effectively managing our cloud resources. The benefit of leveraging Azure is the ability to manage all your VMs from one platform using [Azure Arc](https://azure.microsoft.com/services/azure-arc/) (preview). Using Azure Arc, you can extend your Security Baselines from [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview), your [Azure Security Center](https://azure.microsoft.com/services/security-center)
 (ASC) policies, and Secure Score evaluations, as well as logging and monitoring all your resources in one place. Below are some actions for getting started.
 
-#### Implement [Azure Arc (preview)](https://azure.microsoft.com/services/azure-arc/)
+
+##### Implement [Azure Arc (preview)](https://azure.microsoft.com/services/azure-arc/)
 
 [Azure Arc](https://azure.microsoft.com/services/azure-arc/) allows organizations to extend the familiar security controls of Azure to on-premises and the edge of the organization's infrastructure. Administrators have several options for connecting on-premises resources to Azure Arc. These include Azure Portal, PowerShell, and Windows Installation with Service Principal scripting. 
 
 [Learn more about these techniques](https://docs.microsoft.com/azure/azure-arc/).
 
-#### Apply security baselines through Azure Policy, including application of in-guest policies
+
+##### Apply security baselines through Azure Policy, including application of in-guest policies
 
 Enabling [ASC Standard](https://docs.microsoft.com/azure/security-center/security-center-get-started) will allow you to incorporate a set of baseline controls through Azure
 Policy by incorporating the [Azure Policy built-in policy definitions for Azure Security Center](https://docs.microsoft.com/azure/security-center/policy-samples).
@@ -129,7 +159,8 @@ The set of baseline policies will be reflected in the [ASC secure score](https:/
 
 You can extend your coverage of policies beyond the ASC set and create custom policies if a built-in is not available. You and can also incorporate [Guest Configuration policies](https://docs.microsoft.com/azure/governance/policy/how-to/guest-configuration-create) which will measure compliance inside your guest VMs within your subscriptions.
 
-#### Apply ASC Endpoint Protection and Vulnerability Management controls
+
+##### Apply ASC Endpoint Protection and Vulnerability Management controls
 
 Endpoint protection is essential to ensuring infrastructure remains secure and available. As part of any endpoint protection and vulnerability management strategy, you will be able to measure compliance centrally to ensure malware protection is enabled and configured through the [Endpoint protection assessment and recommendations in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-endpoint-protection). 
 
@@ -155,7 +186,7 @@ to scan your VMs for vulnerabilities, and have those reflected directly in ASC. 
 Once you've met the baseline infrastructure objectives, you can focus on implementing a modern infrastructure with an end-to-end Zero Trust strategy.
 
 
-### Workloads are monitored and alerted to abnormal behavior
+### I. Workloads are monitored and alerted to abnormal behavior
 
 When you create new infrastructure, you need to ensure that you also establish rules for monitoring and raising alerts. This is key for identifying when a resource is displaying unexpected behavior. 
 
@@ -171,7 +202,7 @@ cloud-native, security information event management (SIEM) and security orchestr
 > [Learn about implementing an end-to-end identity Zero Trust strategy](https://aka.ms/ZTIdentity).
 
 
-### Every workload is assigned an app identity—and configured and deployed consistently
+### II. Every workload is assigned an app identity—and configured and deployed consistently
 
 Microsoft recommends customers use a [policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) that is assigned and enforced when creating resources/workloads. Policies can require tags be to applied to a resource upon creation, mandate resource group assignment, as well as restrict/direct technical characteristics, such as regions allowed, VM specifications (e.g., VM type, disks, network policies applied).
 
@@ -179,7 +210,7 @@ Microsoft recommends customers use a [policy](https://docs.microsoft.com/azure/g
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
 
 
-### Human access to resources requires Just-In-Time
+### III. Human access to resources requires Just-In-Time
 
 Personnel should use administrative access sparingly. When administrative functions are required, users should receive temporary
 administrative access.
@@ -196,24 +227,28 @@ All of these items help an organization become more aware of how administrative 
 
 <img src="./media/infrastructure/image8.png" style="width:0.58974in;height:0.52036in" />
 
+
 ## Additional deployment objectives
 
 Once you've accomplished your initial three objectives, you can focus on additional objectives such as blocking unauthorized deployments.
 
-### Identities unauthorized deployments are blocked and alert is triggered
+
+### IV. Identities unauthorized deployments are blocked and alert is triggered
 
 When organizations move to the cloud, the possibilities are limitless. That's not always a good thing. For a variety of reasons, organizations need to be able to block unauthorized deployments and trigger alerts to make leaders and managers aware of the issues.
 
 Microsoft Azure offers [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) to govern how resources are deployed, ensuring that only approved
 resources (e.g., ARM templates) can be deployed. Blueprints can ensure that resources which do not meet the Blueprint's policies or other rules are blocked from deployment. Actual or attempted Blueprint violation can raise alerts as needed and make notifications, activate webhooks or automation runbooks, or even create service management tickets.
 
-### Granular visibility and access control are available across workloads
+
+### V. Granular visibility and access control are available across workloads
 
 Microsoft Azure offers a variety of methods to achieve resource [visibility](https://aka.ms/ZTCrossPillars). From the Azure Portal, resource owners can set up many metric and log collection and analysis capabilities. This visibility can be used not only to feed security operations but can also to support computing efficiency and organizational objectives. These include capabilities like [VM Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/overview), which allow for the secure and efficient scaling out and scaling in of resources based on metrics.
 
 On the access control side, [Role-Based Access Control (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) can be employed to assign permissions to resources. This allows permissions to be assigned and revoked uniformly at the individual and group levels by using a variety of built-in or custom roles.
 
-### User and resource access segmented for each workload
+
+### VI. User and resource access segmented for each workload
 
 Microsoft Azure offers many ways to segment workloads to manage user and resource access. [Network segmentation](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/network-level-segmentation) is the overall approach, and, within Azure, resources can be isolated at the subscription level with Virtual networks (VNets), VNet peering rules, Network Security Groups (NSGs), Application Security Groups (ASGs), and Azure Firewalls. There are several design patterns to determine the best approach to segmenting workloads.
 

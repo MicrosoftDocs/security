@@ -35,7 +35,6 @@ To make this happen, we follow three Zero Trust principles:
 
 ## Network Zero Trust deployment objectives
 
-
 <div class="alert">
    <p><b>Before</b> most organization <b>start the Zero Trust journey</b>, they have network security that is characterized by the following:</p>
    <ul>
@@ -52,21 +51,45 @@ To make this happen, we follow three Zero Trust principles:
 </div>
 
 
-When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on these **initial deployment objectives**:
 
--  <img src="./media/networks/image2.png" style="width:0.40746in;height:0.35952in" />Network segmentation. Many ingress/egress cloud micro-perimeters with some micro-segmentation.
 
-- Threat protection. Cloud-native filtering and protection for known threats.
+<table border="0">
+   <tr>
+      <td colspan="2">
+         <p>When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+	  </td>
+   </tr>
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+      </td>
+      <td>
+		 <p><b>I.</b> <a href="">Network segmentation. Many ingress/egress cloud micro-perimeters with some micro-segmentation.</a></p>
+	     <p><b>II.</b> <a href="">Threat protection. Cloud-native filtering and protection for known threats.</a></p>
+		 <p><b>III.</b> <a href="">Encryption. User-to-app internal traffic is encrypted.</a></p>
+      </td>
+   </tr>
+   <tr>
+      <td colspan="2">
+         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+		 <br/>
+		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+      </td>
+      <td>
+         <p><b>IV.</b> <a href="">Network segmentation. Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation.</a></p>
+         <p><b>V.</b> <a href="">Threat protection. Machine learning-based threat protection and filtering with context-based signals.</a></p>
+         <p><b>VI.</b> <a href="">Encryption. All traffic is encrypted.</a></p>
+      </td>
+   </tr>
+</table>
 
-- Encryption. User-to-app internal traffic is encrypted.
 
-Once these are completed, focus on these **additional deployment objectives**:
 
-- <img src="./media/networks/image4.png" style="width:0.41875in;height:0.36944in" />Network segmentation. Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation.
-
-- Threat protection. Machine learning-based threat protection and filtering with context-based signals.
-
-- Encryption. All traffic is encrypted.
 
 ## Products covered in this guide
 
@@ -91,15 +114,18 @@ and [Application Security Groups](https://docs.microsoft.com/azure/virtual-netwo
 
 [Azure Network Watcher](https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview)
 
+
 ## Networking Zero Trust deployment guide
 
 This guide will walk you through the steps required to secure your networks following the principles of a Zero Trust security framework.
 
 <img src="./media/networks/image6.png" style="width:0.5812in;height:0.51282in" />
 
+
 ## Initial deployment objectives
 
-### Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
+
+### I. Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
 
 Organizations should not just have one single, big pipe in and out of their network. In a Zero Trust approach, networks are instead segmented into smaller islands where specific workloads are contained. Each segment has its own ingress and egress controls to minimize the "blast radius" of unauthorized access to data. By implementing software-defined perimeters with granular controls, you increase the difficulty for unauthorized actors to propagate throughout your network, and so reduce the lateral movement of threats.
 
@@ -108,8 +134,9 @@ There is no architecture design that fits the needs of all organizations. You ha
 In this deployment guide, we'll walk you through the steps to achieve one of those designs: Micro-segmentation.
 
 With micro-segmentation, organizations can move beyond simple centralized network-based perimeters to comprehensive and distributed segmentation using software-defined micro-perimeters.  
-  
-**Applications are partitioned to different Azure Virtual Networks (VNets) and connected using a hub-spoke model**
+
+
+#### Applications are partitioned to different Azure Virtual Networks (VNets) and connected using a hub-spoke model
 
 <img src="./media/networks/image7.png" style="width:3.40625in;height:2.1919in" alt="A screenshot of a cell phone Description automatically generated" />
 
@@ -122,7 +149,7 @@ Follow these steps:
 3.  [Deploy Azure Firewall](https://docs.microsoft.com/azure/firewall/deploy-ps) in the hub VNet to inspect and govern traffic between the VNets.
 
 
-### Threat protection: Cloud native filtering and protection for known threats
+### II. Threat protection: Cloud native filtering and protection for known threats
 
 Cloud applications that have opened up endpoints to external environments, such as the internet or your on-premises footprint, are at risk of attacks coming in from those environments. It is therefore imperative that you scan the traffic for malicious payloads or logic.
 
@@ -171,7 +198,7 @@ Take these steps to protect against known threats:
     > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
 
-### User-to-app internal traffic is encrypted.
+### III. User-to-app internal traffic is encrypted.
 
 The third initial objective to focus on is adding encryption to ensure user-to-app internal traffic is encrypted.
 
@@ -194,14 +221,16 @@ Follow these steps:
 
 <img src="./media/networks/image8.png" style="width:0.58974in;height:0.52036in" />
 
+
 ## Additional deployment objectives
 
-### Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
+
+### IV. Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
 
 Once you've accomplished your initial three objectives, the next step is to further segment your network.
 
-**Partition app components to different subnets**
 
+#### Partition app components to different subnets
 
 :::image type="content" source="./media/diagram-azure-region-virtual-network-servers.png" alt-text="Diagram of a virtual network of servers in the Azure region." border="false":::
 
@@ -212,13 +241,14 @@ Follow these steps:
 
 2.  [Apply network security group rules](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic#create-security-rules) to allow traffic only from the subnets that have an app subcomponent identified as a legitimate communications counterpart.
 
-**Segment and enforce the external boundaries**
+
+#### Segment and enforce the external boundaries
 
 :::image type="content" source="./media/diagram-servers-devices-boundaries-azure-vpn.png" alt-text="Diagram of a servers and devices with connections across boundaries." border="false":::
 
 Follow these steps, depending on the type of boundary:
 
-**Internet boundary**
+##### Internet boundary
 
 1.  If internet connectivity is required for your application that needs to be routed via the hub VNet, [update the network security group rules](https://docs.microsoft.com/azure/virtual-network/tutorial-filter-network-traffic) in hub VNet to allow internet connectivity.
 
@@ -227,13 +257,15 @@ Follow these steps, depending on the type of boundary:
 
 3.  If your application uses HTTP/S protocols, [turn on Azure Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell) to protect against Layer 7 threats.
 
-**On-premises boundary**
+
+##### On-premises boundary
 
 1.  If your app needs connectivity to your on-premise data center, [use Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-portal-resource-manager) of Azure VPN [for connectivity to your hub VNet](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal).
 
 2.  [Configure the Azure Firewall](https://docs.microsoft.com/azure/firewall/tutorial-hybrid-ps) in the hub VNet to inspect and govern traffic.
 
-**PaaS services boundary**
+
+##### PaaS services boundary
 
  - When using Azure-provided PaaS services (e.g., Azure Storage, [Azure Cosmos DB](https://docs.microsoft.com/azure/private-link/create-private-endpoint-cosmosdb-portal),
     or [Azure Web App](https://docs.microsoft.com/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](https://docs.microsoft.com/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network.
@@ -242,7 +274,7 @@ Follow these steps, depending on the type of boundary:
 > [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).
 
 
-### Threat protection: Machine learning-based threat protection and filtering with context-based signals
+### V. Threat protection: Machine learning-based threat protection and filtering with context-based signals
 
 For further threat protection, turn on [Azure DDoS Protection Standard](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) to constantly monitor your Azure-hosted application traffic, use ML-based frameworks to baseline and detect volumetric traffic floods, and apply automatic mitigations.
 
@@ -252,7 +284,8 @@ Follow these steps:
 
 1.  [Configure alerts](https://docs.microsoft.com/azure/virtual-network/manage-ddos-protection#configure-alerts-for-ddos-protection-metrics) for DDoS protection metrics.
 
-### Encryption: All traffic is encrypted
+
+### VI. Encryption: All traffic is encrypted
 
 Finally, complete your network protection by ensuring that all traffic is encrypted.
 
@@ -265,6 +298,7 @@ Follow these steps:
     1.  [Configure a site-to-site VPN](https://docs.microsoft.com/azure/expressroute/site-to-site-vpn-over-microsoft-peering) over ExpressRoute Microsoft peering.
 
     1.  [Configure IPsec transport mode](https://docs.microsoft.com/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
+
 
 ## Conclusion
 

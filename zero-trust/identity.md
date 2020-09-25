@@ -41,7 +41,7 @@ Once the identity has been verified, we can control that identity's access to re
 	  </td>
    </tr>
    <tr>
-      <td>
+      <td style="width:100px">
          <br/>
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
@@ -57,7 +57,7 @@ Once the identity has been verified, we can control that identity's access to re
       </td>
    </tr>
    <tr>
-      <td>
+      <td style="width:100px">
 		 <br/>
 		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>

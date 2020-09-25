@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Securing identity with Zero Trust
 
-:::image type="icon" source="./media/icon-fingerprint-medium.png" alt-text="Fingerprint icon." border="false":::
+:::image type="icon" source="./media/icon-fingerprint-medium.png":::
 
 **Background**
 

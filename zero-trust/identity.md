@@ -36,7 +36,9 @@ Once the identity has been verified, we can control that identity's access to re
 
 <table border="0">
    <tr>
-      <p>When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+      <td colspan="2">
+         <p>When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+	  </td>
    </tr>
    <tr>
       <td>
@@ -49,8 +51,10 @@ Once the identity has been verified, we can control that identity's access to re
 	     <p><b>III.</b> <a href="#iii-analytics-improve-visibility">Analytics improve visibility.</a></p>
       </td>
    </tr>
-   <tr colspan="2">
-      <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+   <tr>
+      <td colspan="2">
+         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+      </td>
    </tr>
    <tr>
       <td>

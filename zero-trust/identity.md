@@ -98,6 +98,7 @@ This guide will walk you through the steps required to manage identities followi
 <table border="0">
    <tr>
       <td>
+	     <br/>
          <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
       </td>
       <td>

@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Secure data with Zero Trust
 
-:::image type="icon" source="./media/icon-ones-and-zeroes-medium.png" alt-text="Ones and zeroes icon." border="false":::
+:::image type="icon" source="./media/icon-ones-and-zeroes-medium.png":::
 
 **Background**
 

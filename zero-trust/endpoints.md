@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Secure endpoints with Zero Trust
 
-:::image type="icon" source="./media/icon-endpoint-devices-medium.png" border="false":::
+:::image type="icon" source="./media/icon-endpoint-devices-medium.png":::
 
 **Background**
 

@@ -17,7 +17,7 @@ ms.topic: conceptual
 <table>
 <tr>
 <td>
-<div style="normal">
+<div style="body">
 <p>Cloud applications and the mobile workforce have redefined the security perimeter. Employees are bringing their own devices and working remotely. Data is being accessed outside the corporate network and shared with external collaborators such as partners and vendors. Corporate applications and data are moving from on-premises to hybrid and cloud environments. Organizations can no longer rely on traditional network controls for security. Controls need to move to where the data is: on devices, inside apps, and with partners.</p>
 </div>
 </td>

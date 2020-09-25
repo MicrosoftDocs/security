@@ -136,7 +136,7 @@ With micro-segmentation, organizations can move beyond simple centralized networ
 
 #### Applications are partitioned to different Azure Virtual Networks (VNets) and connected using a hub-spoke model
 
-<img src="./media/networks/image7.png" style="width:3.40625in;height:2.1919in" alt="A screenshot of a cell phone Description automatically generated" />
+:::image type="content" source="./media/diagram-network-hub-spoke-two-regions.png" alt-text="Diagram of two virtual networks connected in a hub-and-spoke model." border="false":::
 
 Follow these steps:
 

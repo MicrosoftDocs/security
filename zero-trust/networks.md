@@ -144,15 +144,15 @@ Take these steps to protect against known threats:
 
     You can use one of two options:
 
-    [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
+    - [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
 
-       1. [Create a Web Application Firewall policy on Azure Front Door](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-create-portal).
+        1. [Create a Web Application Firewall policy on Azure Front Door](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-create-portal).
 
-       1. [Configure bot protection for Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-policy-configure-bot-protection).
+        1. [Configure bot protection for Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-policy-configure-bot-protection).
 
-       1. [Custom rules for Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell).
+        1. [Custom rules for Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell).
 
-    [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/overview)
+    - [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/overview)
 
        1. [Create an application gateway with a Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal).
 

@@ -15,6 +15,7 @@ ms.topic: conceptual
 
 **Background**
 
+
 To get the full benefit of cloud apps and services, organizations must find the right balance of providing access while maintaining control to protect critical data accessed via applications and APIs.
 
 The **Zero Trust** model helps organizations ensure that apps, and the data they contain, are protected by:
@@ -43,7 +44,6 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
    </tr>
    <tr>
       <td>
-         <br/>
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
@@ -59,7 +59,6 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
    </tr>
    <tr>
       <td>
-		 <br/>
 		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>

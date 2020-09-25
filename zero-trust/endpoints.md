@@ -58,7 +58,6 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
    </tr>
    <tr>
       <td>
-         <br/>
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
@@ -74,7 +73,6 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
    </tr>
    <tr>
       <td>
-		 <br/>
 		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>

@@ -61,7 +61,6 @@ To make this happen, we follow three Zero Trust principles:
    </tr>
    <tr>
       <td>
-         <br/>
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
@@ -77,7 +76,6 @@ To make this happen, we follow three Zero Trust principles:
    </tr>
    <tr>
       <td>
-		 <br/>
 		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>

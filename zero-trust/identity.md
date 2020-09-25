@@ -34,10 +34,10 @@ Once the identity has been verified, we can control that identity's access to re
    <p><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and <a href="https://aka.ms/ZTCrossPillars">visibility</a> into identity risk is very limited.</p>
 </div>
 
-When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these _initial_ deployment objectives:
-
-
 <table border="0">
+   <tr>
+      <p>When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+   </tr>
    <tr>
       <td>
          <br/>
@@ -49,16 +49,13 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
 	     <p><b>III.</b> <a href="#iii-analytics-improve-visibility">Analytics improve visibility.</a></p>
       </td>
    </tr>
-</table>
-
-
-After these are completed, focus on these _additional_ deployment objectives:
-
-<table border="0">
+   <tr colspan="2">
+      <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+   </tr>
    <tr>
       <td>
 		 <br/>
-		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
          <p><b>IV.</b> <a href="#iv-identities-and-access-privileges-are-managed-with-identity-governance">Identities and access privileges are managed with identity governance.</a></p>
@@ -192,9 +189,11 @@ Follow these steps:
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints)
 
+
 ### III. Analytics improve visibility
 
 As you build your estate in Azure AD with authentication, authorization, and provisioning, it's important to have strong operational insights into what is happening in the directory.
+
 
 #### Configure your logging and reporting to improve visibility
 

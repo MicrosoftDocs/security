@@ -51,9 +51,9 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
-		 <p><b>I.</b> <a href="">Workloads are monitored and alerted for abnormal behavior.</a></p>
-	     <p><b>II.</b> <a href="">Every workload is assigned an app identity.</a></p>
-		 <p><b>III.</b> <a href="">Human access to resources requires Just-In-Time.</a></p>
+		 <p><b>I.</b> <a href="#i-workloads-are-monitored-and-alerted-to-abnormal-behavior">Workloads are monitored and alerted for abnormal behavior.</a></p>
+	     <p><b>II.</b> <a href="#ii-every-workload-is-assigned-an-app-identityand-configured-and-deployed-consistently">Every workload is assigned an app identity.</a></p>
+		 <p><b>III.</b> <a href="#iii-human-access-to-resources-requires-just-in-time">Human access to resources requires Just-In-Time.</a></p>
       </td>
    </tr>
    <tr>
@@ -66,9 +66,9 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
 		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
-         <p><b>IV.</b> <a href="">Unauthorized deployments are blocked, and alert is triggered.</a></p>
-         <p><b>V.</b> <a href="">Granular visibility and access control are available across all workloads.</a></p>
-         <p><b>VI.</b> <a href="">User and resource access is segmented for each workload.</a></p>
+         <p><b>IV.</b> <a href="#iv-identities-unauthorized-deployments-are-blocked-and-alert-is-triggered">Unauthorized deployments are blocked, and alert is triggered.</a></p>
+         <p><b>V.</b> <a href="#v-granular-visibility-and-access-control-are-available-across-workloads">Granular visibility and access control are available across all workloads.</a></p>
+         <p><b>VI.</b> <a href="#vi-user-and-resource-access-segmented-for-each-workload">User and resource access is segmented for each workload.</a></p>
       </td>
    </tr>
 </table>

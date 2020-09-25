@@ -69,8 +69,8 @@ It is through this hierarchy that we enable our customers to maximize their focu
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
-		 <p><b>I.</b> <a href="">Establish visibility.</a></p>
-	     <p><b>II.</b> <a href="">Enable automation.</a></p>
+		 <p><b>I.</b> <a href="#i-establish-visibility">Establish visibility.</a></p>
+	     <p><b>II.</b> <a href="#ii-enable-automation">Enable automation.</a></p>
       </td>
    </tr>
    <tr>
@@ -83,7 +83,7 @@ It is through this hierarchy that we enable our customers to maximize their focu
 		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
-         <p><b>IV.</b> <a href="">Enable additional protection and detection controls.</a></p>
+         <p><b>IV.</b> <a href="#iii-enable-additional-protection-and-detection-controls">Enable additional protection and detection controls.</a></p>
       </td>
    </tr>
 </table>

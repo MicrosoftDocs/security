@@ -117,10 +117,18 @@ and [Application Security Groups](https://docs.microsoft.com/azure/virtual-netwo
 
 This guide will walk you through the steps required to secure your networks following the principles of a Zero Trust security framework.
 
-<img src="./media/networks/image6.png" style="width:0.5812in;height:0.51282in" />
 
-
-## Initial deployment objectives
+<table border="0">
+   <tr>
+      <td>
+	     <br/>
+         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+      </td>
+      <td>
+         <h2>Initial deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 ### I. Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
@@ -220,7 +228,17 @@ Follow these steps:
 <img src="./media/networks/image8.png" style="width:0.58974in;height:0.52036in" />
 
 
-## Additional deployment objectives
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+      </td>
+      <td>
+         <h2>Additional deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 ### IV. Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation

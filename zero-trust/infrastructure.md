@@ -176,10 +176,19 @@ to scan your VMs for vulnerabilities, and have those reflected directly in ASC. 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
-<img src="./media/infrastructure/image7.png" style="width:0.5812in;height:0.51282in" />
 
 
-## Initial deployment objectives  
+<table border="0">
+   <tr>
+      <td>
+	     <br/>
+         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+      </td>
+      <td>
+         <h2>Initial deployment objectives</h2>
+      </td>
+   </tr>
+</table>  
 
 Once you've met the baseline infrastructure objectives, you can focus on implementing a modern infrastructure with an end-to-end Zero Trust strategy.
 
@@ -223,10 +232,19 @@ program. Characteristics of these programs include:
 
 All of these items help an organization become more aware of how administrative permissions are being used, where these permissions are still necessary, and provide a roadmap for how to operate more securely.
 
-<img src="./media/infrastructure/image8.png" style="width:0.58974in;height:0.52036in" />
 
 
-## Additional deployment objectives
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+      </td>
+      <td>
+         <h2>Additional deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 Once you've accomplished your initial three objectives, you can focus on additional objectives such as blocking unauthorized deployments.
 

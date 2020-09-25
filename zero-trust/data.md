@@ -136,6 +136,7 @@ This guide will walk you step-by-step through a Zero Trust approach to data prot
 <table border="0">
    <tr>
       <td>
+	     <br/>
          <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
       </td>
       <td>
@@ -197,6 +198,7 @@ Take this step:
       </td>
    </tr>
 </table>
+
 
 
 ### III. Classification is augmented by smart machine learning models

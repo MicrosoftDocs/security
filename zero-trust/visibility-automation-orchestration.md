@@ -107,9 +107,18 @@ It is through this hierarchy that we enable our customers to maximize their focu
 
 This guide will walk you through the steps required to manage visibility, automation, and orchestration following the principles of a Zero Trust security framework.
 
-<img src="./media/visibility-automation-orchestration/image4.png" style="width:0.58125in;height:0.5125in" />
 
-## Initial deployment objectives
+<table border="0">
+   <tr>
+      <td>
+	     <br/>
+         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+      </td>
+      <td>
+         <h2>Initial deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 ### I. Establish visibility
 
@@ -152,6 +161,19 @@ As part of the data connection process, relevant analytics can be enabled to tri
 #### Link threat intelligence data to Azure Sentinel
 
 Although machine learning and fusion analytics are provided out of the box, it is also beneficial to ingest threat intelligence data into Azure Sentinel to help identify events that relate to known bad entities.
+
+
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+      </td>
+      <td>
+         <h2>Additional deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 ### III. Enable additional protection and detection controls

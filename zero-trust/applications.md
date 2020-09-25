@@ -99,10 +99,18 @@ This guide will walk you through the steps required to secure applications and A
 
 3.  **Assume breach.** Minimize blast radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end to end. Use analytics to get [visibility](https://aka.ms/ZTCrossPillars), drive threat detection, and improve defenses.
 
-<img src="./media/applications/image6.png" style="width:0.5812in;height:0.51282in" />
 
-
-## Initial deployment objectives
+<table border="0">
+   <tr>
+      <td>
+	     <br/>
+         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+      </td>
+      <td>
+         <h2>Initial deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 ### I. Gain visibility into the activities and data in your applications by connecting them via APIs
@@ -193,7 +201,17 @@ Follow these steps:
 <img src="./media/applications/image7.png" style="width:0.58974in;height:0.52036in" />
 
 
-## Additional deployment objectives
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+      </td>
+      <td>
+         <h2>Additional deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 ### IV. Deploy adaptive access and session controls for all apps

@@ -209,7 +209,8 @@ Take this step:
 <table border="0">
    <tr>
       <td>
-         <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
       </td>
       <td>
          <h2>Additional deployment objectives</h2>

@@ -111,6 +111,7 @@ This guide will walk you through the steps required to secure your devices follo
 <table border="0">
    <tr>
       <td>
+	     <br/>
          <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
       </td>
       <td>
@@ -523,13 +524,15 @@ Follow these steps:
 <table border="0">
    <tr>
       <td>
-         <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
       </td>
       <td>
          <h2>Additional deployment objectives</h2>
       </td>
    </tr>
 </table>
+
 
 ### IV. Endpoint threat detection is used to monitor device risk
 

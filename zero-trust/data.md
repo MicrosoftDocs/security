@@ -76,29 +76,31 @@ activities in this guide. For more information, see:
 
 -   Microsoft Trust Center: [Data Classification and Sensitivity Label Taxonomy](https://aka.ms/MIPC/DataClassification)
 
-When implementing an end-to-end Zero Trust framework for data, we recommend you focus first on these **initial deployment objectives**:
 
 
 <table border="0">
    <tr>
+      <td colspan="2">
+         <p>When implementing an end-to-end Zero Trust framework for data, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+	  </td>
+   </tr>
+   <tr>
       <td>
-		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark, first instance."></p>
+		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
 	     <p><b>I.</b> <a href="#i-access-decisions-are-governed-by-encryption">Access decisions are governed by encryption.</a></p>
          <p><b>II.</b> <a href="#ii-data-is-automatically-classified-and-labeled">Data is automatically classified and labeled.</a></p>
       </td>
    </tr>
-</table>
-
-
-After these are completed, focus on these **additional deployment objectives**:
-
-
-<table border="0">
+   <tr>
+      <td colspan="2">
+         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+      </td>
+   </tr>
    <tr>
       <td>
-		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
          <p><b>III.</b> <a href="#iii-classification-is-augmented-by-smart-machine-learning-models">Classification is augmented by smart machine learning models.</a></p>
@@ -107,6 +109,7 @@ After these are completed, focus on these **additional deployment objectives**:
       </td>
    </tr>
 </table>
+
 
 
 ## Products covered in this guide
@@ -124,47 +127,6 @@ After these are completed, focus on these **additional deployment objectives**:
 
 :::image type="content" source="./media/table-data-capabilities.png" alt-text="Table of capabilities." border="false":::
 
-<!-- HTML version of the table that doesn't look great.
-<table>
-<thead>
-<tr class="header">
-<th rowspan="2">Client</th>
-<th rowspan="2">File Types</th>
-<th colspan="2">Scanner</th>
-<th rowspan="2">Label Management</th>
-<th colspan="2">Reporting and Audit</th>
-<th rowspan="2">DLP</th>
-<th rowspan="2">CASB</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>On-Prem</strong></td>
-<td><strong>M365</strong></td>
-<td><strong>Current</strong></td>
-<td><strong>Next</strong></td>
-</tr>
-<tr class="even">
-<td>Unified Labeling</td>
-<td>Office + Non-Office Files</td>
-<td rowspan="2">Unified Labeling Scanner</td>
-<td rowspan="2">M365 Data Classification</td>
-<td rowspan="2">M365 Compliance Center</td>
-<td>AIP Analytics</td>
-<td rowspan="2">M365 Activity Explorer</td>
-<td rowspan="2">M365 Data Loss Prevention</td>
-<td rowspan="2">Microsoft Cloud App Security</td>
-</tr>
-<tr class="odd">
-<td>Office Native Labeling</td>
-<td>Office Files</td>
-<td>N/A</td>
-</tr>
-</tbody>
-</table>
--->
-
-
 
 ## Data Zero Trust deployment guide
 
@@ -174,6 +136,7 @@ This guide will walk you step-by-step through a Zero Trust approach to data prot
 <table border="0">
    <tr>
       <td>
+	     <br/>
          <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
       </td>
       <td>
@@ -235,6 +198,7 @@ Take this step:
       </td>
    </tr>
 </table>
+
 
 
 ### III. Classification is augmented by smart machine learning models

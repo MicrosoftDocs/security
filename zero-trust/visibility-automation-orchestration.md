@@ -57,18 +57,38 @@ It is through this hierarchy that we enable our customers to maximize their focu
 
 ## Visibility, automation, and orchestration Zero Trust deployment objectives
 
-When implementing an end-to-end Zero Trust framework for visibility, automation, and orchestration, we recommend you focus first on these initial deployment objectives:
 
-<img src="./media/visibility-automation-orchestration/image2.png" style="width:0.40764in;height:0.35972in" />
+<table border="0">
+   <tr>
+      <td colspan="2">
+         <p>When implementing an end-to-end Zero Trust framework for visibility, automation, and orchestration, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+	  </td>
+   </tr>
+   <tr>
+      <td>
+		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+      </td>
+      <td>
+		 <p><b>I.</b> <a href="#i-establish-visibility">Establish visibility.</a></p>
+	     <p><b>II.</b> <a href="#ii-enable-automation">Enable automation.</a></p>
+      </td>
+   </tr>
+   <tr>
+      <td colspan="2">
+         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+      </td>
+      <td>
+         <p><b>IV.</b> <a href="#iii-enable-additional-protection-and-detection-controls">Enable additional protection and detection controls.</a></p>
+      </td>
+   </tr>
+</table>
 
-- Establish visibility.
-- Enable automation.
 
-Once the initial objectives are completed, focus on this additional deployment objective:
-
-<img src="./media/visibility-automation-orchestration/image3.png" style="width:0.41875in;height:0.36944in" />
-
-- Enable additional protection and detection controls.
 
 ## Products covered in this guide
 
@@ -87,11 +107,20 @@ Once the initial objectives are completed, focus on this additional deployment o
 
 This guide will walk you through the steps required to manage visibility, automation, and orchestration following the principles of a Zero Trust security framework.
 
-<img src="./media/visibility-automation-orchestration/image4.png" style="width:0.58125in;height:0.5125in" />
 
-## Initial deployment objectives
+<table border="0">
+   <tr>
+      <td>
+	     <br/>
+         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+      </td>
+      <td>
+         <h2>Initial deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
-### Establish visibility
+### I. Establish visibility
 
 The first step is to establish visibility by enabling [Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) (MTP).
 
@@ -103,11 +132,13 @@ Follow these steps:
     This gives you the all-important "dial tone" to start the flow of critical data.
 4.  Enable Microsoft Threat Protection to gain cross-workload visibility and incident detection.
 
-### Enable automation
+
+### II. Enable automation
 
 The next key step, once you have established visibility, is to enable automation.
 
-**Automated investigations and remediation**
+
+#### Automated investigations and remediation
 
 With Microsoft Threat Protection, we have automated both investigations and remediation, which essentially provides an extra Tier 1 SOC analysis.
 
@@ -119,17 +150,33 @@ Follow these steps:
 2.  Analyze the investigation steps and response actions.
 3.  Gradually transition to automatic approval for all devices to reduce the time to detection and response.
 
-**Link Microsoft data connectors and relevant third-party products to Azure Sentinel**
+
+#### Link Microsoft data connectors and relevant third-party products to Azure Sentinel
 
 In order to gain visibility into the incidents that result from deploying a Zero Trust model, it is important to connect MTP, other Microsoft data connectors, and relevant third party products to [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.  
   
 As part of the data connection process, relevant analytics can be enabled to trigger incidents and workbooks can be created for a graphical representation of the data over time.
 
-**Link threat intelligence data to Azure Sentinel**
+
+#### Link threat intelligence data to Azure Sentinel
 
 Although machine learning and fusion analytics are provided out of the box, it is also beneficial to ingest threat intelligence data into Azure Sentinel to help identify events that relate to known bad entities.
 
-### Enable additional protection and detection controls
+
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+      </td>
+      <td>
+         <h2>Additional deployment objectives</h2>
+      </td>
+   </tr>
+</table>
+
+
+### III. Enable additional protection and detection controls
 
 Enabling additional controls improves the signal coming in to MTP and Sentinel to improve your visibility and ability to orchestrate responses.
 

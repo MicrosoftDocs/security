@@ -98,7 +98,6 @@ After these are completed, focus on these **additional deployment objectives**:
 <table border="0">
    <tr>
       <td>
-		 <br/>
 		 <p><img src="media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
@@ -375,7 +374,7 @@ Follow these steps:
 
 [Microsoft Information Protection](https://www.microsoft.com/security/business/information-protection) (MIP) is a comprehensive, flexible, integrated, and extensible approach to protecting sensitive data.
 
-:::image type="content" source="./media/diagram-microsoft-information-protection-corporate-egress-highlighted.png" lightbox="./media/diagram-microsoft-information-protection-corporate-egress-highlighted.png" alt-text="Diagram of Microsoft Information Protection for data with Corporate Egress highlighted." border="false":::
+:::image type="content" source="./media/diagram-microsoft-information-protection-corporate-egress-highlighted.png" alt-text="Diagram of Microsoft Information Protection for data with Corporate Egress highlighted." border="false":::
 
 For further information or help with implementation, please contact your Customer Success team.
 

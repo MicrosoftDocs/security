@@ -146,19 +146,19 @@ Take these steps to protect against known threats:
 
     [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
 
-        1.  [Create a Web Application Firewall policy on Azure Front Door](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-create-portal).
+       1. [Create a Web Application Firewall policy on Azure Front Door](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-create-portal).
 
-        1.  [Configure bot protection for Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-policy-configure-bot-protection).
+       1. [Configure bot protection for Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-policy-configure-bot-protection).
 
-        1.  [Custom rules for Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell).
+       1. [Custom rules for Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/afds/waf-front-door-custom-rules-powershell).
 
     [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway/overview)
 
-        1.  [Create an application gateway with a Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal).
+       1. [Create an application gateway with a Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/ag/application-gateway-web-application-firewall-portal).
 
-        1.  [Configure bot protection for Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/ag/bot-protection).
+       1. [Configure bot protection for Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/ag/bot-protection).
 
-        1.  [Create and use Web Application Firewall v2 custom rules.](https://docs.microsoft.com/azure/web-application-firewall/ag/create-custom-waf-rules).
+       1. [Create and use Web Application Firewall v2 custom rules.](https://docs.microsoft.com/azure/web-application-firewall/ag/create-custom-waf-rules).
 
 
 2.  **For all endpoints (HTTP or not)**, front with [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) for threat intelligence-based filtering at Layer 4:
@@ -235,7 +235,7 @@ Follow these steps, depending on the type of boundary:
 
 **PaaS services boundary**
 
-1.  When using Azure-provided PaaS services (e.g., Azure Storage, [Azure Cosmos DB](https://docs.microsoft.com/azure/private-link/create-private-endpoint-cosmosdb-portal),
+ - When using Azure-provided PaaS services (e.g., Azure Storage, [Azure Cosmos DB](https://docs.microsoft.com/azure/private-link/create-private-endpoint-cosmosdb-portal),
     or [Azure Web App](https://docs.microsoft.com/azure/private-link/create-private-endpoint-webapp-portal), use the [PrivateLink](https://docs.microsoft.com/azure/private-link/create-private-link-service-portal) connectivity option to ensure all data exchanges are over the private IP space and the traffic never leaves the Microsoft network.
 
 > [!TIP]

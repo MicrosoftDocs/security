@@ -344,6 +344,8 @@ Take this step:
 
 Identity is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team or continue to read through the other chapters of this guide, which span all Zero Trust pillars.
 
+
+
 :::row:::
    :::column:::
 :::image type="icon" source="./media/icon-fingerprint-medium.png":::

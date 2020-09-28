@@ -266,3 +266,8 @@ Follow these steps:
 
 Regardless of where the cloud resource or application resides, Zero Trust principles help ensure that your cloud environments and data are protected. For further information on these processes or help with these implementations, please contact your Customer Success team.
 
+
+| Introduction | Identity | Endpoints | Applications | Data | Infrastructure | Networks | Visibility, Automation, Orchestration |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| ![Introduction](./media/icon-fingerprint-medium.png) | ![Identity](./media/icon-fingerprint-medium.png) | ![Endpoints](./media/icon-endpoint-devices-medium.png) | ![Applications](./media/icon-application-window-medium.png) | ![Data](./media/icon-ones-and-zeroes-medium.png) | ![Infrastructure](./media/icon-data-storage-disks-medium.png) | ![Networks](./media/icon-network-diagram-medium.png) | ![Visibility, Automation, Orchestration](./media/icon-gear-medium.png) |
+

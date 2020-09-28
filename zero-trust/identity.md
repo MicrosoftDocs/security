@@ -344,10 +344,44 @@ Take this step:
 
 Identity is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team or continue to read through the other chapters of this guide, which span all Zero Trust pillars.
 
-<!--
-**The Zero Trust deployment guide series**
+:::row:::
+   :::column:::
+:::image type="icon" source="./media/icon-fingerprint-medium.png":::
+Introduction
+   :::column-end::
+   :::column:::
+:::image type="icon" source="./media/icon-fingerprint-medium.png":::
+Identity
+   :::column-end::
+   :::column:::
+:::image type="icon" source="./media/icon-endpoint-devices-medium.png":::
+Endpoints
+   :::column-end::
+   :::column:::
+:::image type="icon" source="./media/icon-application-window-medium.png":::
+Applications
+   :::column-end::
+   :::column:::
+:::image type="icon" source="./media/icon-ones-and-zeroes-medium.png":::
+Data
+   :::column-end::
+   :::column:::
+:::image type="icon" source="./media/icon-data-storage-disks-medium.png":::
+Infrastructure
+   :::column-end::
+   :::column:::
+:::image type="icon" source="./media/icon-network-diagram-medium.png":::
+Networks
+   :::column-end::
+   :::column:::
+:::image type="icon" source="./media/icon-gear-medium.png":::
+Visibility, Automation, Orchestration
+   :::column-end:::
+:::row-end:::   
+   
+   
 
-| <img src="./media/identity/image11.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/identity/image12.png" style="width:0.20833in;height:0.26316in" /> | <img src="./media/identity/image13.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/identity/image14.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/identity/image15.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/identity/image17.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/identity/image18.png" style="width:0.24653in;height:0.24653in" /> | <img src="./media/identity/image19.png" style="width:0.27908in;height:0.27908in" /> |
-|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+<!--
+
 | [Introduction](https://aka.ms/ZTDeploymentGuideIntroduction)                | [Identity](https://aka.ms/ZTIdentity)                                       | [Endpoints](https://aka.ms/ZTEndpoints)                                     | [Applications](https://aka.ms/ZTApplications)                               | [Data](https://aka.ms/ZTData)                                               | [Network](https://aka.ms/ZTNetwork)                                        | [Infrastructure](https://aka.ms/ZTInfrastructure)                           | [Visibility, Automation, Orchestration](https://aka.ms/ZTCrossPillars)      |
 -->

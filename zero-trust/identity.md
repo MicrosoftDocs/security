@@ -63,7 +63,7 @@ Once the identity has been verified, we can control that identity's access to re
       <td>
          <p><b>IV.</b> <a href="#iv-identities-and-access-privileges-are-managed-with-identity-governance">Identities and access privileges are managed with identity governance.</a></p>
          <p><b>V.</b> <a href="#v-user-device-location-and-behavior-is-analyzed-in-real-time-to-determine-risk-and-deliver-ongoing-protection">User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</a></p>
-         <p><b>VI.</b> <a href="#vi-integrate-threat-signals-from-other-security-solutions-to-improve-detection-protection-and-response">Threat signals from other security solutions are integrated.</a></p>
+         <p><b>VI.</b> <a href="#vi-integrate-threat-signals-from-other-security-solutions-to-improve-detection-protection-and-response">Integrate threat signals from other security solutions to improve detection, protection, and response.</a></p>
       </td>
    </tr>
 </table>

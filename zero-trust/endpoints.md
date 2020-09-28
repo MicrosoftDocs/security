@@ -53,7 +53,7 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
 <table border="0">
    <tr>
       <td colspan="2">
-         <p>When implementing an end-to-end Zero Trust framework for securing endpoints, we recommend you focus first on these<i>initial</i> deployment objectives:</p>
+         <p>When implementing an end-to-end Zero Trust framework for securing endpoints, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
 	  </td>
    </tr>
    <tr>
@@ -82,25 +82,6 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
    </tr>
 </table>
 
-
-
-## Products covered in this guide
-
-**Microsoft Azure**
-
-[Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
-
-**Microsoft 365**
-
-[Microsoft Endpoint Manager](https://www.microsoft.com/endpointmanager)
-(includes Microsoft Intune and Configuration Manager)
-
-[Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp#:~:text=Microsoft%20Defender%20ATP%20is%20a%20unified%20endpoint%20security,support%20via%20our%20first-party%20offerings%20and%20through%20partners%3A)
-
-[Bitlocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
-
-
-
 ## Endpoint Zero Trust deployment guide
 
 This guide will walk you through the steps required to secure your devices following the principles of a Zero Trust security framework.
@@ -121,7 +102,7 @@ This guide will walk you through the steps required to secure your devices follo
 </table>
 
 
-### I. Endpoints are registered with a cloud identity provider
+### I. Endpoints are registered with a cloud identity providers
 
 To help limit risk exposure, you need to monitor every endpoint to ensure each one has a trusted identity, security policies are applied, and the risk level for things like malware or data exfiltration has been measured, remediated, or deemed acceptable.
 
@@ -265,7 +246,7 @@ Finally, you can create additional device restriction policies to further lock d
 > [!TIP]
 > [Learn about implementing an end-to-end identity Zero strategy](https://aka.ms/ZTIdentity).
 
-### II. Access is only granted to cloud-managed and compliant endpoints
+### II. Access is only granted to cloud-managed and compliant endpoints and apps
 
 Once you have identities for all the endpoints accessing corporate resources and before access is granted, you want to ensure that they meet the [minimum security requirements](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) set by your organization.
 
@@ -338,7 +319,7 @@ Take these steps:
     1.  Set up an action to automatically retire a noncompliant device after a set number of days.
 
 
-### III. DLP policies are enforced for BYOD and corporate devices
+### III. Data loss prevention (DLP) policies are enforced for corporate devices and BYOD
 
 Once data access is granted, you want to control what the user can do with the data. For example, if a user accesses a document with a corporate identity, you want to prevent that document from being saved in an unprotected consumer storage location, or from being shared with a consumer communication or chat app.
 
@@ -585,7 +566,7 @@ Choose the option to import or get data from an Odata feed.
 6.  Learn [advanced ways to set up PowerBI visualizations](https://docs.microsoft.com/mem/intune/developer/reports-proc-create-with-odata#create-a-treemap-visualization).
 
 
-### V. Access control is gated on device risk for both corporate and BYO devices
+### V. Access control is gated on endpoint risk for both corporate devices and BYOD
 
 #### Corporate devices are enrolled with a cloud enrollment service such as DEP, Android Enterprise, or Windows AutoPilot
 
@@ -598,6 +579,21 @@ Building and maintaining customized operating system images is a time-consuming 
 -   [Configure Windows Autopilot to automate Azure AD Join](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) and enroll new corporate-owned devices into Intune.
 
 -   [Configure Apple DEP](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment-program-enroll-ios) to automatically enroll iOS and iPadOS devices.
+
+## Products covered in this guide
+
+**Microsoft Azure**
+
+[Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
+
+**Microsoft 365**
+
+[Microsoft Endpoint Manager](https://www.microsoft.com/endpointmanager)
+(includes Microsoft Intune and Configuration Manager)
+
+[Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp#:~:text=Microsoft%20Defender%20ATP%20is%20a%20unified%20endpoint%20security,support%20via%20our%20first-party%20offerings%20and%20through%20partners%3A)
+
+[Bitlocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
 
 ## Conclusion
 

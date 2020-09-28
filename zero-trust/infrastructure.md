@@ -51,8 +51,8 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
 		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
-		 <p><b>I.</b> <a href="#i-workloads-are-monitored-and-alerted-to-abnormal-behavior">Workloads are monitored and alerted for abnormal behavior.</a></p>
-	     <p><b>II.</b> <a href="#ii-every-workload-is-assigned-an-app-identityand-configured-and-deployed-consistently">Every workload is assigned an app identity.</a></p>
+		 <p><b>I.</b> <a href="#i-workloads-are-monitored-and-alerted-to-abnormal-behavior">Workloads are monitored and alerted to abnormal behavior.</a></p>
+	     <p><b>II.</b> <a href="#ii-every-workload-is-assigned-an-app-identityand-configured-and-deployed-consistently">Every workload is assigned an app identity—and configured and deployed consistently.</a></p>
 		 <p><b>III.</b> <a href="#iii-human-access-to-resources-requires-just-in-time">Human access to resources requires Just-In-Time.</a></p>
       </td>
    </tr>
@@ -67,30 +67,13 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
       </td>
       <td>
          <p><b>IV.</b> <a href="#iv-identities-unauthorized-deployments-are-blocked-and-alert-is-triggered">Unauthorized deployments are blocked, and alert is triggered.</a></p>
-         <p><b>V.</b> <a href="#v-granular-visibility-and-access-control-are-available-across-workloads">Granular visibility and access control are available across all workloads.</a></p>
-         <p><b>VI.</b> <a href="#vi-user-and-resource-access-segmented-for-each-workload">User and resource access is segmented for each workload.</a></p>
+         <p><b>V.</b> <a href="#v-granular-visibility-and-access-control-are-available-across-workloads">Granular visibility and access control are available across workloads.</a></p>
+         <p><b>VI.</b> <a href="#vi-user-and-resource-access-segmented-for-each-workload">User and resource access segmented for each workload
+
+.</a></p>
       </td>
    </tr>
 </table>
-
-
-
-## Products covered in this guide  
-  
-**Microsoft Azure**
-
-[Azure Blueprints](https://azure.microsoft.com/services/blueprints/)
-
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview)
-
-[Azure Arc](https://azure.microsoft.com/services/azure-arc)
-
-[Azure Security Center (ASC)](https://azure.microsoft.com/services/security-center)
-
-[Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
-
-[Azure Resource Manager (ARM) templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview)
-
 
 ## Infrastructure Zero Trust deployment guide
 
@@ -249,7 +232,7 @@ All of these items help an organization become more aware of how administrative 
 Once you've accomplished your initial three objectives, you can focus on additional objectives such as blocking unauthorized deployments.
 
 
-### IV. Identities unauthorized deployments are blocked and alert is triggered
+### IV. Unauthorized deployments are blocked, and alert is triggered
 
 When organizations move to the cloud, the possibilities are limitless. That's not always a good thing. For a variety of reasons, organizations need to be able to block unauthorized deployments and trigger alerts to make leaders and managers aware of the issues.
 
@@ -271,6 +254,21 @@ Microsoft Azure offers many ways to segment workloads to manage user and resourc
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork).
 
+## Products covered in this guide  
+  
+**Microsoft Azure**
+
+[Azure Blueprints](https://azure.microsoft.com/services/blueprints/)
+
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview)
+
+[Azure Arc](https://azure.microsoft.com/services/azure-arc)
+
+[Azure Security Center (ASC)](https://azure.microsoft.com/services/security-center)
+
+[Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
+
+[Azure Resource Manager (ARM) templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview)
 
 ## Conclusion
 

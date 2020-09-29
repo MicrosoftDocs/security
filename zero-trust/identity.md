@@ -372,3 +372,6 @@ Identity is central to a successful Zero Trust strategy. For further information
    :::column-end:::
 :::row-end:::   
    
+
+
+<a href="https://aka.ms/ZTDeploymentGuideIntroduction"><img src="./media/icon-introduction-small.png" /></a>&nbsp;<a href="https://aka.ms/ZTIdentity"><img src="./media/icon-fingerprint-small.png" /></a>&nbsp;<a href="https://aka.ms/ZTEndpoints"><img src="./media/icon-endpoint-devices-small.png" /></a>&nbsp;<a href="https://aka.ms/ZTApplications"><img src="./media/icon-application-window-small.png" /></a>&nbsp;<a href="https://aka.ms/ZTData"><img src="./media/icon-ones-and-zeroes-small.png" /></a>&nbsp;<a href="https://aka.ms/ZTInfrastructure"><img src="./media/icon-data-storage-disks-small.png" /></a>&nbsp;<a href="https://aka.ms/ZTNetwork"><img src="./media/icon-network-diagram-small.png" /></a>&nbsp;<a href="https://aka.ms/ZTCrossPillars"><img src="./media/icon-gear-small.png" /></a>

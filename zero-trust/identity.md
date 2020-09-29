@@ -368,7 +368,7 @@ Identity is central to a successful Zero Trust strategy. For further information
 [![Icon for networks](./media/icon-network-diagram-navbar.png)](https://aka.ms/ZTNetwork)
    :::column-end:::
    :::column:::
-[![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
+[![Icon for visibility, automation, orchestration](./media/icon-gear-navbar.png)](https://aka.ms/ZTCrossPillars)
    :::column-end:::
 :::row-end:::   
    

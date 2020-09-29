@@ -627,7 +627,7 @@ A Zero Trust approach can significantly strengthen the security posture of your 
 [![Icon for networks](./media/icon-network-diagram-navbar.png)](https://aka.ms/ZTNetwork)
    :::column-end:::
    :::column:::
-[![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
+[![Icon for visibility, automation, orchestration](./media/icon-gear-navbar.png)](https://aka.ms/ZTCrossPillars)
    :::column-end:::
 :::row-end::: 
 
@@ -681,7 +681,7 @@ A Zero Trust approach can significantly strengthen the security posture of your 
 <td><a href="ttps://aka.ms/ZTData" alt="Icon for data"><img src="./media/icon-ones-and-zeroes-navbar.png"/></a></td>
 <td><a href="https://aka.ms/ZTInfrastructure" alt="Icon for infrastructure"><img src="./media/icon-data-storage-disks-navbar.png"/></a></td>
 <td><a href="https://aka.ms/ZTNetwork" alt="Icon for networks"><img src="./media/icon-network-diagram-navbar.png"/></a></td>
-<td><a href="https://aka.ms/ZTCrossPillars" alt="Icon for visibility, automation, orchestration"><img src="./media/icon-visibility-automation-orchestration-navbar.png"/></a></td>
+<td><a href="https://aka.ms/ZTCrossPillars" alt="Icon for visibility, automation, orchestration"><img src="./media/icon-gear-navbar.png"/></a></td>
 </tr>
 </tbody>
 </table>

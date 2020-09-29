@@ -72,7 +72,7 @@ Once the identity has been verified, we can control that identity's access to re
 
 This guide will walk you through the steps required to manage identities following the principles of a Zero Trust security framework.
 
-
+<!--
 <table border="0">
    <tr>
       <td>
@@ -83,8 +83,10 @@ This guide will walk you through the steps required to manage identities followi
          <h2>Initial deployment objectives</h2>
       </td>
    </tr>
-</table>
+</table>-->
 
+<br/><br/>
+[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
 
 
 ### I. Cloud identity federates with on-premises identity systems

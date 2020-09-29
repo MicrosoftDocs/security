@@ -85,7 +85,7 @@ It is through this hierarchy that we enable our customers to maximize their focu
 		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
-         <p><b>IV.</b> <a href="#iii-enable-additional-protection-and-detection-controls">Enable additional protection and detection controls.</a></p>
+         <p><b>III.</b> <a href="#iii-enable-additional-protection-and-detection-controls">Enable additional protection and detection controls.</a></p>
       </td>
    </tr>
 </table>
@@ -94,7 +94,7 @@ It is through this hierarchy that we enable our customers to maximize their focu
 
 This guide will walk you through the steps required to manage visibility, automation, and orchestration following the principles of a Zero Trust security framework.
 
-
+<br/><br/>
 <table border="0">
    <tr>
       <td>

@@ -30,7 +30,7 @@ The three core elements of a data protection strategy are:
 
     You should continuously monitor sensitive data to detect policy violations and risky user behavior. This allows you to take appropriate action, such as revoking access, blocking users, and refining your protection policies.
 
-:::image type="content" source="./media/diagram-monitor-remediate-data.png" lightbox="./media/diagram-monitor-remediate-data.png" alt-text="Diagram of monitoring activiting and remediation." border="false":::
+:::image type="content" source="./media/diagram-monitor-remediate-data.png" alt-text="Diagram of monitoring activiting and remediation." border="false":::
 
 When data and sensitive content is understood, labeled, and classified, organizations can:
 

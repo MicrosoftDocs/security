@@ -86,8 +86,6 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
 
 This guide will walk you through the steps required to secure your devices following the principles of a Zero Trust security framework.
 
-:::image type="content" source="./media/endpoints/icon-checklist-one-checkmark-large.png" alt-text="Checklist icon with one checkmark." border="false":::
-
 
 <table border="0">
    <tr>

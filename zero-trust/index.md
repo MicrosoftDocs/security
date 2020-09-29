@@ -10,6 +10,8 @@ ms.topic: conceptual
 
 # Zero Trust Deployment Center
 
+:::image type="icon" source="./media/icon-introduction-medium.png":::
+
 ## Assess Zero Trust readiness and build a plan
 
 Today, organizations need a new security model that effectively adapts
@@ -47,7 +49,7 @@ Zero Trust.
 
 :::image type="content" source="./media/zero-trust-security-elements-diagram.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
-**Follow the steps below to mature your organization's approach tosecurity and optimize how Zero Trust is implemented:**
+**Follow the steps below to mature your organization's approach to security and optimize how Zero Trust is implemented:**
 
 <br/>
 <table border="0">

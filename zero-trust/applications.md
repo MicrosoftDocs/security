@@ -264,4 +264,3 @@ Regardless of where the cloud resource or application resides, Zero Trust princi
 <br/><br/>
 [!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
 
-

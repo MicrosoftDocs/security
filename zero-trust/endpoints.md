@@ -637,8 +637,46 @@ A Zero Trust approach can significantly strengthen the security posture of your 
 
 
 
-<!--
 **The Zero Trust deployment guide series**
 
-Navbar here.
--->
+<table>
+<tbody>
+<tr>
+<td><a href="https://aka.ms/ZTDeploymentGuideIntroduction" alt="Icon for the introduction"><img src="./media/icon-introduction-navbar.png"/></a></td>
+<td><a href="https://aka.ms/ZTIdentity" alt="Icon for identity"><img src="./media/icon-fingerprint-navbar.png"/></a></td>
+<td><a href="https://aka.ms/ZTDevices" alt="Icon for endpoints"><img src="./media/icon-endpoint-devices-navbar.png"/></a></td>
+<td><a href="https://aka.ms/ZTApplications" alt="Icon for applications"><img src="./media/icon-application-window-navbar.png"/></a></td>
+<td><a href="ttps://aka.ms/ZTData" alt="Icon for data"><img src="./media/icon-ones-and-zeroes-navbar.png"/></a></td>
+<td><a href="https://aka.ms/ZTInfrastructure" alt="Icon for infrastructure"><img src="./media/icon-data-storage-disks-navbar.png"/></a></td>
+<td><a href="https://aka.ms/ZTNetwork" alt="Icon for networks"><img src="./media/icon-network-diagram-navbar.png"/></a></td>
+<td><a href="https://aka.ms/ZTCrossPillars" alt="Icon for visibility, automation, orchestration"><img src="./media/icon-visibility-automation-orchestration-navbar.png"/></a></td>
+</tr>
+</tbody>
+</table>
+
+:::row:::
+   :::column:::
+[![Icon for the introduction](./media/icon-introduction-navbar.png)](https://aka.ms/ZTDeploymentGuideIntroduction)
+   :::column-end:::
+   :::column:::
+[![Icon for identity](./media/icon-fingerprint-navbar.png)](https://aka.ms/ZTIdentity)
+   :::column-end:::
+   :::column:::
+[![Icon for endpoints](./media/icon-endpoint-devices-navbar.png)](https://aka.ms/ZTDevices)
+   :::column-end:::
+   :::column:::
+[![Icon for applications](./media/icon-application-window-navbar.png)](https://aka.ms/ZTApplications)
+   :::column-end:::
+   :::column:::
+[![Icon for data](./media/icon-ones-and-zeroes-navbar.png)](https://aka.ms/ZTData)
+   :::column-end:::
+   :::column:::
+[![Icon for infrastructure](./media/icon-data-storage-disks-navbar.png)](https://aka.ms/ZTInfrastructure)
+   :::column-end:::
+   :::column:::
+[![Icon for networks](./media/icon-network-diagram-navbar.png)](https://aka.ms/ZTNetwork)
+   :::column-end:::
+   :::column:::
+[![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
+   :::column-end:::
+:::row-end::: 

@@ -344,7 +344,6 @@ Identity is central to a successful Zero Trust strategy. For further information
 
 <br/><br/>
 **The Zero Trust deployment guide series**
-<br/>
 
 :::row:::
    :::column:::

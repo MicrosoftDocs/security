@@ -261,10 +261,7 @@ Follow these steps:
 Regardless of where the cloud resource or application resides, Zero Trust principles help ensure that your cloud environments and data are protected. For further information on these processes or help with these implementations, please contact your Customer Success team.
 
 
-<!--
-**The Zero Trust deployment guide series**
-
-Navbar here.
--->
+<br/><br/>
+[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
 
 

@@ -341,6 +341,8 @@ Take this step:
 
 Identity is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team or continue to read through the other <font style="font-size:18px">chapters of this guide</font>, which span all <font style="font-size:6px">Zero Trust pillars</font>.
 
+<br/><br/>
+[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
 
 <br/><br/>
 **The Zero Trust deployment guide series**
@@ -373,5 +375,3 @@ Identity is central to a successful Zero Trust strategy. For further information
 :::row-end:::   
    
 
-
-<a href="https://aka.ms/ZTDeploymentGuideIntroduction"><img src="./media/icon-introduction-navbar.png" /></a>&nbsp;<a href="https://aka.ms/ZTIdentity"><img src="./media/icon-fingerprint-navbar.png" /></a>&nbsp;<a href="https://aka.ms/ZTEndpoints"><img src="./media/icon-endpoint-devices-navbar.png" /></a>&nbsp;<a href="https://aka.ms/ZTApplications"><img src="./media/icon-application-window-navbar.png" /></a>&nbsp;<a href="https://aka.ms/ZTData"><img src="./media/icon-ones-and-zeroes-navbar.png" /></a>&nbsp;<a href="https://aka.ms/ZTInfrastructure"><img src="./media/icon-data-storage-disks-navbar.png" /></a>&nbsp;<a href="https://aka.ms/ZTNetwork"><img src="./media/icon-network-diagram-navbar.png" /></a>&nbsp;<a href="https://aka.ms/ZTCrossPillars"><img src="./media/icon-gear-navbar.png" /></a>

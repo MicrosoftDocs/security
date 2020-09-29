@@ -339,6 +339,10 @@ Follow these steps:
 
 For further information or help with implementation, please contact your Customer Success team.
 
+
+<br/><br/>
+[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
+
 <br/><br/>
 **The Zero Trust deployment guide series**
 <br/><br/>

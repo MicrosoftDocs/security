@@ -150,11 +150,8 @@ Zero Trust.
 With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
 
 
-<!--
-**The Zero Trust deployment guide series**
-
-Navbar here.
--->
+<br/><br/>
+[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
 
 
 

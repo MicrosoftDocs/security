@@ -340,17 +340,19 @@ Follow these steps:
 For further information or help with implementation, please contact your Customer Success team.
 
 
-<table >
+**The Zero Trust deployment guide series**
+
+<table>
 	<tbody>
 		<tr>
-			<td><center><img src="./media/data/image12.emf" style="width:0.34215in;height:0.34215in" /></center></td>
-			<td><center><img src="./media/data/image13.png" style="width:0.20833in;height:0.26316in" /></center></td>
-			<td><center><img src="./media/data/image15.png" style="width:0.28564in;height:0.23809in" /></center></td>
-			<td><center><img src="./media/data/image16.emf" style="width:0.26496in;height:0.26496in" /></center></td>
-			<td><center><img src="./media/data/image17.png" style="width:0.26189in;height:0.22618in" /></center></td>
-			<td><center><img src="./media/data/image18.png" style="width:0.2375in;height:0.26181in" /></center></td>
-			<td><center><img src="./media/data/image19.png" style="width:0.24653in;height:0.24653in" /></center></td>
-			<td><center><img src="./media/data/image20.png" style="width:0.27908in;height:0.27908in" /></center></td>
+			<td><center><img src="./media/icon-introduction-navbar.png" /></center></td>
+			<td><center><img src="./media/icon-fingerprint-navbar.png" /></center></td>
+			<td><center><img src="./media/icon-endpoint-devices-navbar.png" /></center></td>
+			<td><center><img src="./media/icon-application-window-navbar.png" /></center></td>
+			<td><center><img src="./media/icon-ones-and-zeroes-navbar.png" /></center></td>
+			<td><center><img src="./media/icon-data-storage-disks-navbar.png" /></center></td>
+			<td><center><img src="./media/icon-network-diagram-navbar.png" /></center></td>
+			<td><center><img src="./media/icon-gear-navbar.png" /></center></td>
 		</tr>
 		<tr>
 		   <td><center><sup>Introduction</sup></center></td>

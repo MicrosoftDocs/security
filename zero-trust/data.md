@@ -345,14 +345,14 @@ For further information or help with implementation, please contact your Custome
 <table>
 	<tbody>
 		<tr>
-			<td><center><img src="./media/icon-introduction-navbar.png" /></center></td>
-			<td><center><img src="./media/icon-fingerprint-navbar.png" /></center></td>
-			<td><center><img src="./media/icon-endpoint-devices-navbar.png" /></center></td>
-			<td><center><img src="./media/icon-application-window-navbar.png" /></center></td>
-			<td><center><img src="./media/icon-ones-and-zeroes-navbar.png" /></center></td>
-			<td><center><img src="./media/icon-data-storage-disks-navbar.png" /></center></td>
-			<td><center><img src="./media/icon-network-diagram-navbar.png" /></center></td>
-			<td><center><img src="./media/icon-gear-navbar.png" /></center></td>
+			<td><center><img src="./media/icon-introduction-small.png" /></center></td>
+			<td><center><img src="./media/icon-fingerprint-small.png" /></center></td>
+			<td><center><img src="./media/icon-endpoint-devices-small.png" /></center></td>
+			<td><center><img src="./media/icon-application-window-small.png" /></center></td>
+			<td><center><img src="./media/icon-ones-and-zeroes-small.png" /></center></td>
+			<td><center><img src="./media/icon-data-storage-disks-small.png" /></center></td>
+			<td><center><img src="./media/icon-network-diagram-small.png" /></center></td>
+			<td><center><img src="./media/icon-gear-small.png" /></center></td>
 		</tr>
 		<tr>
 		   <td><center><sup>Introduction</sup></center></td>

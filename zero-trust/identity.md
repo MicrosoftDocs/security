@@ -368,7 +368,7 @@ Identity is central to a successful Zero Trust strategy. For further information
 :::image type="icon" source="./media/icon-navbar-test.png":::
    :::column-end:::
    :::column:::
-:::image type="icon" source="./media/icon-navbar-test.png":::
+:::image type="icon" source="./media/icon-visibility-automation-orchestration-navbar.png":::
    :::column-end:::
 :::row-end:::   
    

@@ -339,6 +339,11 @@ Follow these steps:
 
 For further information or help with implementation, please contact your Customer Success team.
 
+
+<br/><br/>
+[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
+
+<!--
 <br/><br/>
 **The Zero Trust deployment guide series**
 <br/><br/>
@@ -366,12 +371,4 @@ For further information or help with implementation, please contact your Custome
 		</tr>
 	</tbody>
 </table>
-
-
-<!--
-**The Zero Trust deployment guide series**
-
-| <img src="./media/data/image12.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/data/image13.png" style="width:0.20833in;height:0.26316in" /> | <img src="./media/data/image15.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/data/image16.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/data/image17.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/data/image18.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/data/image19.png" style="width:0.24653in;height:0.24653in" /> | <img src="./media/data/image20.png" style="width:0.27908in;height:0.27908in" /> |
-|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Introduction](https://aka.ms/ZTDeploymentGuideIntroduction)                | [Identity](https://aka.ms/ZTIdentity)                                       | [Endpoints](https://aka.ms/ZTEndpoints)                                     | [Applications](https://aka.ms/ZTApplications)                               | [Data](https://aka.ms/ZTData)                                               | [Network](https://aka.ms/ZTNetwork)                                        | [Infrastructure](https://aka.ms/ZTInfrastructure)                           | [Visibility, Automation, Orchestration](https://aka.ms/ZTCrossPillars)      |
 -->

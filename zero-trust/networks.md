@@ -198,8 +198,6 @@ Follow these steps:
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
 
-<img src="./media/networks/image8.png" style="width:0.58974in;height:0.52036in" />
-
 
 <table border="0">
    <tr>
@@ -315,7 +313,6 @@ and [Application Security Groups](https://docs.microsoft.com/azure/virtual-netwo
 
 Securing networks is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team or continue to read through the other chapters of this guide, which spans all Zero Trust pillars.
 
-<!--
-**The Zero Trust deployment guide series**
 
-Navbar here -->
+<br/><br/>
+[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]

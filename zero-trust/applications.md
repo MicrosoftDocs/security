@@ -178,8 +178,6 @@ Follow these steps:
 
 5.  Protect apps using [Conditional Access App Control](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad) and [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security).
 
-<img src="./media/applications/image7.png" style="width:0.58974in;height:0.52036in" />
-
 
 <table border="0">
    <tr>
@@ -263,10 +261,6 @@ Follow these steps:
 Regardless of where the cloud resource or application resides, Zero Trust principles help ensure that your cloud environments and data are protected. For further information on these processes or help with these implementations, please contact your Customer Success team.
 
 
-<!--
-**The Zero Trust deployment guide series**
-
-Navbar here.
--->
-
+<br/><br/>
+[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
 

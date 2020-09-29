@@ -182,8 +182,5 @@ Enabling additional controls improves the signal coming in to MTP and Sentinel t
 [Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection)
 
 
-<!--
-**The Zero Trust deployment guide series**
-
-Navbar here.
--->
+<br/><br/>
+[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]

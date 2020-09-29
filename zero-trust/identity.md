@@ -341,34 +341,6 @@ Take this step:
 
 Identity is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team or continue to read through the other <font style="font-size:18px">chapters of this guide</font>, which span all <font style="font-size:6px">Zero Trust pillars</font>.
 
-
 <br/><br/>
-**The Zero Trust deployment guide series**
+[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
 
-:::row:::
-   :::column:::
-[![Icon for the introduction](./media/icon-introduction-navbar.png)](https://aka.ms/ZTDeploymentGuideIntroduction)
-   :::column-end:::
-   :::column:::
-[![Icon for identity](./media/icon-fingerprint-navbar.png)](https://aka.ms/ZTIdentity)
-   :::column-end:::
-   :::column:::
-[![Icon for endpoints](./media/icon-endpoint-devices-navbar.png)](https://aka.ms/ZTDevices)
-   :::column-end:::
-   :::column:::
-[![Icon for applications](./media/icon-application-window-navbar.png)](https://aka.ms/ZTApplications)
-   :::column-end:::
-   :::column:::
-[![Icon for data](./media/icon-ones-and-zeroes-navbar.png)](https://aka.ms/ZTData)
-   :::column-end:::
-   :::column:::
-[![Icon for infrastructure](./media/icon-data-storage-disks-navbar.png)](https://aka.ms/ZTInfrastructure)
-   :::column-end:::
-   :::column:::
-[![Icon for networks](./media/icon-network-diagram-navbar.png)](https://aka.ms/ZTNetwork)
-   :::column-end:::
-   :::column:::
-[![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
-   :::column-end:::
-:::row-end:::   
-   

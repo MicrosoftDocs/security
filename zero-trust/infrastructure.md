@@ -274,8 +274,5 @@ Microsoft Azure offers many ways to segment workloads to manage user and resourc
 
 Infrastructure is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team, or continue to read through the other chapters of this guide, which spans all Zero Trust pillars.
 
-<!--
-**The Zero Trust deployment guide series**
-
-Navbar here.
--->
+<br/><br/>
+[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]

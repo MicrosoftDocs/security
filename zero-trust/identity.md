@@ -346,35 +346,27 @@ Identity is central to a successful Zero Trust strategy. For further information
 :::row:::
    :::column:::
 :::image type="icon" source="./media/icon-navbar-test.png":::
-<br/>Introduction
    :::column-end:::
    :::column:::
 :::image type="icon" source="./media/icon-navbar-test.png":::
-<br/>Identity
    :::column-end:::
    :::column:::
 :::image type="icon" source="./media/icon-navbar-test.png":::
-<br/>Endpoints
    :::column-end:::
    :::column:::
 :::image type="icon" source="./media/icon-navbar-test.png":::
-<br/>Applications
    :::column-end:::
    :::column:::
 :::image type="icon" source="./media/icon-navbar-test.png":::
-<br/>Data
    :::column-end:::
    :::column:::
 :::image type="icon" source="./media/icon-navbar-test.png":::
-<br/>Infrastructure
    :::column-end:::
    :::column:::
 :::image type="icon" source="./media/icon-navbar-test.png":::
-<br/>Networks
    :::column-end:::
    :::column:::
-:::image type="icon" source="./media/icon-navbar-test":::
-<br/>Visibility, Automation, Orchestration
+:::image type="icon" source="./media/icon-navbar-test.png":::
    :::column-end:::
 :::row-end:::   
    

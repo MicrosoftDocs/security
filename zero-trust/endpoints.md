@@ -87,17 +87,9 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
 This guide will walk you through the steps required to secure your devices following the principles of a Zero Trust security framework.
 
 
-<table border="0">
-   <tr>
-      <td>
-	     <br/>
-         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
-      </td>
-      <td>
-         <h2>Initial deployment objectives</h2>
-      </td>
-   </tr>
-</table>
+<!-- H2 heading, "Initial deployment objectives" -->
+<br/><br/>
+[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
 
 
 ### I. Endpoints are registered with a cloud identity providers
@@ -500,17 +492,9 @@ Follow these steps:
 > [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).
 
 
-<table border="0">
-   <tr>
-      <td>
-         <br/>
-		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
-      </td>
-      <td>
-         <h2>Additional deployment objectives</h2>
-      </td>
-   </tr>
-</table>
+<!-- H2 heading, "Additional deployment objectives" -->
+<br/><br/>
+[!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
 
 
 ### IV. Endpoint threat detection is used to monitor device risk

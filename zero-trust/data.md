@@ -341,7 +341,7 @@ For further information or help with implementation, please contact your Custome
 
 <br/><br/>
 **The Zero Trust deployment guide series**
-<br/>
+<br/><br/><br/>
 <table>
 	<tbody>
 		<tr>
@@ -355,14 +355,14 @@ For further information or help with implementation, please contact your Custome
 			<td><center><img src="./media/icon-gear-small.png" /></center></td>
 		</tr>
 		<tr>
-		   <td><center><sup>Introduction</sup></center></td>
-		   <td><center><sup>Identity</sup></center></td>
-		   <td><center><sup>Endpoints</sup></center></td>
-		   <td><center><sup>Applications</sup></center></td>
-		   <td><center><sup>Data</sup></center></td>
-		   <td><center><sup>Infrastructure</sup></center></td>
-		   <td><center><sup>Networks</sup></center></td>
-		   <td><center><sup>Visibility,<br/>automation,<br/>orchestration</sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTDeploymentGuideIntroduction">Introduction</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTIdentity">Identity</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTEndpoints">Endpoints</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTApplications">Applications</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTData">Data</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTInfrastructure">Infrastructure</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTNetwork">Networks</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTCrossPillars">Visibility,<br/>automation,<br/>orchestration</a></sup></center></td>
 		</tr>
 	</tbody>
 </table>

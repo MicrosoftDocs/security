@@ -91,17 +91,9 @@ To make this happen, we follow three Zero Trust principles:
 This guide will walk you through the steps required to secure your networks following the principles of a Zero Trust security framework.
 
 
-<table border="0">
-   <tr>
-      <td>
-	     <br/>
-         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
-      </td>
-      <td>
-         <h2>Initial deployment objectives</h2>
-      </td>
-   </tr>
-</table>
+<!-- H2 heading, "Initial deployment objectives" -->
+<br/><br/>
+[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
 
 
 ### I. Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation
@@ -199,17 +191,9 @@ Follow these steps:
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
 
 
-<table border="0">
-   <tr>
-      <td>
-         <br/>
-		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
-      </td>
-      <td>
-         <h2>Additional deployment objectives</h2>
-      </td>
-   </tr>
-</table>
+<!-- H2 heading, "Additional deployment objectives" -->
+<br/><br/>
+[!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
 
 
 ### IV. Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
@@ -219,7 +203,7 @@ Once you've accomplished your initial three objectives, the next step is to furt
 
 #### Partition app components to different subnets
 
-:::image type="content" source="./media/diagram-azure-region-virtual-network-servers.png" alt-text="Diagram of a virtual network of servers in the Azure region." border="false":::
+:::image type="content" source="./media/diagram-azure-region-virtual-network-servers.png" alt-text="Diagram of a virtual network of servers in the Azure region." border="true":::
 
 
 Follow these steps:
@@ -231,7 +215,7 @@ Follow these steps:
 
 #### Segment and enforce the external boundaries
 
-:::image type="content" source="./media/diagram-servers-devices-boundaries-azure-vpn.png" alt-text="Diagram of a servers and devices with connections across boundaries." border="false":::
+:::image type="content" source="./media/diagram-servers-devices-boundaries-azure-vpn.png" alt-text="Diagram of a servers and devices with connections across boundaries." border="true":::
 
 Follow these steps, depending on the type of boundary:
 

@@ -85,7 +85,7 @@ It is through this hierarchy that we enable our customers to maximize their focu
 		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
-         <p><b>IV.</b> <a href="#iii-enable-additional-protection-and-detection-controls">Enable additional protection and detection controls.</a></p>
+         <p><b>III.</b> <a href="#iii-enable-additional-protection-and-detection-controls">Enable additional protection and detection controls.</a></p>
       </td>
    </tr>
 </table>
@@ -95,17 +95,10 @@ It is through this hierarchy that we enable our customers to maximize their focu
 This guide will walk you through the steps required to manage visibility, automation, and orchestration following the principles of a Zero Trust security framework.
 
 
-<table border="0">
-   <tr>
-      <td>
-	     <br/>
-         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
-      </td>
-      <td>
-         <h2>Initial deployment objectives</h2>
-      </td>
-   </tr>
-</table>
+<!-- H2 heading, "Initial deployment objectives" -->
+<br/><br/>
+[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
+
 
 ### I. Establish visibility
 
@@ -150,17 +143,9 @@ As part of the data connection process, relevant analytics can be enabled to tri
 Although machine learning and fusion analytics are provided out of the box, it is also beneficial to ingest threat intelligence data into Azure Sentinel to help identify events that relate to known bad entities.
 
 
-<table border="0">
-   <tr>
-      <td>
-         <br/>
-		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
-      </td>
-      <td>
-         <h2>Additional deployment objectives</h2>
-      </td>
-   </tr>
-</table>
+<!-- H2 heading, "Additional deployment objectives" -->
+<br/><br/>
+[!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
 
 
 ### III. Enable additional protection and detection controls

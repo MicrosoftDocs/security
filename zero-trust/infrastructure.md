@@ -68,9 +68,7 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
       <td>
          <p><b>IV.</b> <a href="#iv-identities-unauthorized-deployments-are-blocked-and-alert-is-triggered">Unauthorized deployments are blocked, and alert is triggered.</a></p>
          <p><b>V.</b> <a href="#v-granular-visibility-and-access-control-are-available-across-workloads">Granular visibility and access control are available across workloads.</a></p>
-         <p><b>VI.</b> <a href="#vi-user-and-resource-access-segmented-for-each-workload">User and resource access segmented for each workload
-
-.</a></p>
+         <p><b>VI.</b> <a href="#vi-user-and-resource-access-segmented-for-each-workload">User and resource access segmented for each workload.</a></p>
       </td>
    </tr>
 </table>
@@ -160,18 +158,9 @@ to scan your VMs for vulnerabilities, and have those reflected directly in ASC. 
 > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
 
-
-<table border="0">
-   <tr>
-      <td>
-	     <br/>
-         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
-      </td>
-      <td>
-         <h2>Initial deployment objectives</h2>
-      </td>
-   </tr>
-</table>  
+<!-- H2 heading, "Initial deployment objectives" -->
+<br/><br/>
+[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
 
 Once you've met the baseline infrastructure objectives, you can focus on implementing a modern infrastructure with an end-to-end Zero Trust strategy.
 
@@ -216,18 +205,10 @@ program. Characteristics of these programs include:
 All of these items help an organization become more aware of how administrative permissions are being used, where these permissions are still necessary, and provide a roadmap for how to operate more securely.
 
 
+<!-- H2 heading, "Additional deployment objectives" -->
+<br/><br/>
+[!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
 
-<table border="0">
-   <tr>
-      <td>
-         <br/>
-		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
-      </td>
-      <td>
-         <h2>Additional deployment objectives</h2>
-      </td>
-   </tr>
-</table>
 
 Once you've accomplished your initial three objectives, you can focus on additional objectives such as blocking unauthorized deployments.
 

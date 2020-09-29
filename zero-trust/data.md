@@ -30,7 +30,7 @@ The three core elements of a data protection strategy are:
 
     You should continuously monitor sensitive data to detect policy violations and risky user behavior. This allows you to take appropriate action, such as revoking access, blocking users, and refining your protection policies.
 
-:::image type="content" source="./media/diagram-monitor-remediate-data.png" lightbox="./media/diagram-monitor-remediate-data.png" alt-text="Diagram of monitoring activiting and remediation." border="false":::
+:::image type="content" source="./media/diagram-monitor-remediate-data.png" alt-text="Diagram of monitoring activiting and remediation." border="false":::
 
 When data and sensitive content is understood, labeled, and classified, organizations can:
 
@@ -120,17 +120,9 @@ activities in this guide. For more information, see:
 This guide will walk you step-by-step through a Zero Trust approach to data protection maturity. Please keep in mind that these items will vary widely depending on the sensitivity of your information and the size and complexity of your organization.
 
 
-<table border="0">
-   <tr>
-      <td>
-	     <br/>
-         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
-      </td>
-      <td>
-         <h2>Initial deployment objectives</h2>
-      </td>
-   </tr>
-</table>
+<!-- H2 heading, "Initial deployment objectives" -->
+<br/><br/>
+[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
 
 
 ### I. Access decisions are governed by encryption
@@ -174,17 +166,9 @@ Take this step:
  - Configure the scanner to [use **enforce** mode and automatically classify, label, and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner) with sensitive data.
 
 
-<table border="0">
-   <tr>
-      <td>
-         <br/>
-		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
-      </td>
-      <td>
-         <h2>Additional deployment objectives</h2>
-      </td>
-   </tr>
-</table>
+<!-- H2 heading, "Additional deployment objectives" -->
+<br/><br/>
+[!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
 
 
 

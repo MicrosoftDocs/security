@@ -632,6 +632,44 @@ A Zero Trust approach can significantly strengthen the security posture of your 
 :::row-end::: 
 
 
+:::row:::
+   :::column:::
+:::image type="icon" source="./media/icon-fingerprint-medium.png":::
+<br/><sup>Introduction</sup>
+   :::column-end:::
+   :::column:::
+:::image type="icon" source="./media/icon-fingerprint-medium.png":::
+<br/><sup>Identity</sup>
+   :::column-end:::
+   :::column:::
+:::image type="icon" source="./media/icon-endpoint-devices-medium.png":::
+<br/><sup>Endpoints</sup>
+   :::column-end:::
+   :::column:::
+:::image type="icon" source="./media/icon-application-window-medium.png":::
+<br/><sup>Applications</sup>
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column:::
+:::image type="icon" source="./media/icon-ones-and-zeroes-medium.png":::
+<br/><sup>Data</sup>
+   :::column-end:::
+   :::column:::
+:::image type="icon" source="./media/icon-data-storage-disks-medium.png":::
+<br/><sup>Infrastructure</sup>
+   :::column-end:::
+   :::column:::
+:::image type="icon" source="./media/icon-network-diagram-medium.png":::
+<br/><sup>Networks</sup>
+   :::column-end:::
+   :::column:::
+:::image type="icon" source="./media/icon-gear-medium.png":::
+<br/><sup>Visibility, Automation, Orchestration</sup>
+   :::column-end:::
+:::row-end:::  
+
+
 <!--
 <table width="100%">
 <tbody>

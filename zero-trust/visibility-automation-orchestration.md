@@ -90,21 +90,6 @@ It is through this hierarchy that we enable our customers to maximize their focu
    </tr>
 </table>
 
-
-
-## Products covered in this guide
-
-**Microsoft Azure**
-
-[Azure Advanced Threat Protection](https://azure.microsoft.com/features/azure-advanced-threat-protection/)
-
-[Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
-
-**Microsoft 365**
-
-[Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection)
-
-
 ## Visibility, automation, and orchestration Zero Trust deployment guide
 
 This guide will walk you through the steps required to manage visibility, automation, and orchestration following the principles of a Zero Trust security framework.
@@ -183,6 +168,18 @@ Although machine learning and fusion analytics are provided out of the box, it i
 Enabling additional controls improves the signal coming in to MTP and Sentinel to improve your visibility and ability to orchestrate responses.
 
 [Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) controls represent one such opportunity. These protective controls not only block certain activities that are most associated with malware, but also give into attempts to use specific approaches, which can help to detect adversaries leveraging these techniques earlier in the process.
+
+## Products covered in this guide
+
+**Microsoft Azure**
+
+[Azure Advanced Threat Protection](https://azure.microsoft.com/features/azure-advanced-threat-protection/)
+
+[Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
+
+**Microsoft 365**
+
+[Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection)
 
 **The Zero Trust deployment guide series**
 

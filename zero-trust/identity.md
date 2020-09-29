@@ -63,32 +63,10 @@ Once the identity has been verified, we can control that identity's access to re
       <td>
          <p><b>IV.</b> <a href="#iv-identities-and-access-privileges-are-managed-with-identity-governance">Identities and access privileges are managed with identity governance.</a></p>
          <p><b>V.</b> <a href="#v-user-device-location-and-behavior-is-analyzed-in-real-time-to-determine-risk-and-deliver-ongoing-protection">User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</a></p>
-         <p><b>VI.</b> <a href="#vi-integrate-threat-signals-from-other-security-solutions-to-improve-detection-protection-and-response">Threat signals from other security solutions are integrated.</a></p>
+         <p><b>VI.</b> <a href="#vi-integrate-threat-signals-from-other-security-solutions-to-improve-detection-protection-and-response">Integrate threat signals from other security solutions to improve detection, protection, and response.</a></p>
       </td>
    </tr>
 </table>
-
-
-
-## Products covered in this guide
-
-**Microsoft Azure**
-
-[Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
-
-[Azure Advanced Threat Protection](https://azure.microsoft.com/features/azure-advanced-threat-protection/)
-
-**Microsoft 365**
-
-[Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
-(includes Microsoft Intune)
-
-[Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
-
-[SharePoint Online](https://www.microsoft.com/microsoft-365/sharepoint/collaboration)
-
-[Exchange Online](https://www.microsoft.com/microsoft-365/exchange/email)
-
 
 ## Identity Zero Trust deployment guide
 
@@ -339,6 +317,25 @@ Microsoft Defender Advanced Threat Protection (Defender ATP) allows you to attes
 Take this step:
 
  - [Configure Conditional Access in Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-conditional-access).
+
+## Products covered in this guide
+
+**Microsoft Azure**
+
+[Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
+
+[Azure Advanced Threat Protection](https://azure.microsoft.com/features/azure-advanced-threat-protection/)
+
+**Microsoft 365**
+
+[Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
+(includes Microsoft Intune)
+
+[Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
+
+[SharePoint Online](https://www.microsoft.com/microsoft-365/sharepoint/collaboration)
+
+[Exchange Online](https://www.microsoft.com/microsoft-365/exchange/email)
 
 ## Conclusion
 

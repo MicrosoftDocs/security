@@ -110,19 +110,6 @@ activities in this guide. For more information, see:
    </tr>
 </table>
 
-
-
-## Products covered in this guide
-
-**Microsoft Azure**
-
-[Azure Information Protection](https://azure.microsoft.com/services/information-protection/) with Unified Labeling Client and Scanner 
-
-**Microsoft 365**
-
-[Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
-
-
 **Capabilities**
 
 :::image type="content" source="./media/table-data-capabilities.png" alt-text="Table of capabilities." border="false":::
@@ -234,7 +221,7 @@ Follow these steps:
 Security](https://docs.microsoft.com/cloud-app-security/azip-integration) and Microsoft Information Protection and use it to also protect data in third-party environments such as Box or G-Suite. 
 
 
-### V. DLP policies secure sharing with encryption and tracking
+### V. Prevent data leakage through DLP policies based on a sensitivity label and content inspection
 
 To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personally identifiable information (PII) such as credit card numbers, social security numbers, or health records. With a data loss prevention (DLP) policy in the Office 365 Security & Compliance Center, you can identify, monitor, and automatically protect sensitive information across Office 365.
 
@@ -333,6 +320,16 @@ Follow these steps:
 1.  [Get started with content explorer](https://docs.microsoft.com/microsoft-365/compliance/data-classification-content-explorer?view=o365-worldwide&preserve-view=true) to natively view the items summarized on the data classification overview page.
 
 1.  [Get started with activity explorer](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide&preserve-view=true) to monitor the history of activities related to labeled content. 
+
+## Products covered in this guide
+
+**Microsoft Azure**
+
+[Azure Information Protection](https://azure.microsoft.com/services/information-protection/) with Unified Labeling Client and Scanner 
+
+**Microsoft 365**
+
+[Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
 
 ## Conclusion
 

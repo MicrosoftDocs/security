@@ -181,8 +181,9 @@ Enabling additional controls improves the signal coming in to MTP and Sentinel t
 
 [Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection)
 
+
+<!--
 **The Zero Trust deployment guide series**
 
-| <img src="./media/visibility-automation-orchestration/image5.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/visibility-automation-orchestration/image6.png" style="width:0.2087in;height:0.26361in" /> | <img src="./media/visibility-automation-orchestration/image8.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/visibility-automation-orchestration/image9.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/visibility-automation-orchestration/image10.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/visibility-automation-orchestration/image12.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/visibility-automation-orchestration/image13.png" style="width:0.24653in;height:0.24653in" /> |
-|----------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Introduction](https://aka.ms/ZTDeploymentGuideIntroduction)               | [Identity](https://aka.ms/ZTIdentity)                                     | [Endpoints](https://aka.ms/ZTEndpoints)                                    | [Applications](https://aka.ms/ZTApplications)                              | [Data](https://aka.ms/ZTData)                                               | [Network](https://aka.ms/ZTNetwork)                                        | [Infrastructure](https://aka.ms/ZTInfrastructure)                           |
+Navbar here.
+-->

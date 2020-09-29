@@ -353,7 +353,7 @@ Identity is central to a successful Zero Trust strategy. For further information
 [![Icon for identity](./media/icon-fingerprint-navbar.png)](https://aka.ms/ZTIdentity)
    :::column-end:::
    :::column:::
-[![Icon for endpoints](./media/icon-application-window-navbar.png)](https://aka.ms/ZTDevices)
+[![Icon for endpoints](./media/icon-endpoint-devices-navbar.png)](https://aka.ms/ZTDevices)
    :::column-end:::
    :::column:::
 [![Icon for applications](./media/icon-application-window-navbar.png)](https://aka.ms/ZTApplications)

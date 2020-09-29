@@ -198,8 +198,6 @@ Follow these steps:
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
 
-<img src="./media/networks/image8.png" style="width:0.58974in;height:0.52036in" />
-
 
 <table border="0">
    <tr>

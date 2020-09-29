@@ -347,28 +347,28 @@ Identity is central to a successful Zero Trust strategy. For further information
 
 :::row:::
    :::column:::
-:::image type="icon" source="./media/icon-navbar-test.png":::
+[![Icon for the introduction](./media/icon-introduction-navbar.png)](https://aka.ms/ZTDeploymentGuideIntroduction)
    :::column-end:::
    :::column:::
-:::image type="icon" source="./media/icon-navbar-test.png":::
+[![Icon for identity](./media/icon-fingerprint-navbar.png)](https://aka.ms/ZTIdentity)
    :::column-end:::
    :::column:::
-:::image type="icon" source="./media/icon-navbar-test.png":::
+[![Icon for endpoints](./media/icon-application-window-navbar.png)](https://aka.ms/ZTDevices)
    :::column-end:::
    :::column:::
-:::image type="icon" source="./media/icon-navbar-test.png":::
+[![Icon for applications](./media/icon-application-window-navbar.png)](https://aka.ms/ZTApplications)
    :::column-end:::
    :::column:::
-:::image type="icon" source="./media/icon-navbar-test.png":::
+[![Icon for data](./media/icon-ones-and-zeroes-navbar.png)](https://aka.ms/ZTData)
    :::column-end:::
    :::column:::
-:::image type="icon" source="./media/icon-navbar-test.png":::
+[![Icon for infrastructure](./media/icon-data-storage-disks-navbar.png)](https://aka.ms/ZTInfrastructure)
    :::column-end:::
    :::column:::
-[![Visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
+[![Icon for networks](./media/icon-network-diagram-navbar.png)](https://aka.ms/ZTNetwork)
    :::column-end:::
    :::column:::
-![Visibility, automation, orchestration](:::image type="icon" source="./media/icon-visibility-automation-orchestration-navbar.png":::)
+[![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
    :::column-end:::
 :::row-end:::   
    

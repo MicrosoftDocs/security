@@ -339,9 +339,9 @@ Follow these steps:
 
 For further information or help with implementation, please contact your Customer Success team.
 
-
+<br/><br/>
 **The Zero Trust deployment guide series**
-
+<br/>
 <table>
 	<tbody>
 		<tr>

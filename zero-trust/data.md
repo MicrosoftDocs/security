@@ -339,8 +339,37 @@ Follow these steps:
 
 For further information or help with implementation, please contact your Customer Success team.
 
+
+<table >
+	<tbody>
+		<tr>
+			<td><center><img src="./media/data/image12.emf" style="width:0.34215in;height:0.34215in" /></center></td>
+			<td><center><img src="./media/data/image13.png" style="width:0.20833in;height:0.26316in" /></center></td>
+			<td><center><img src="./media/data/image15.png" style="width:0.28564in;height:0.23809in" /></center></td>
+			<td><center><img src="./media/data/image16.emf" style="width:0.26496in;height:0.26496in" /></center></td>
+			<td><center><img src="./media/data/image17.png" style="width:0.26189in;height:0.22618in" /></center></td>
+			<td><center><img src="./media/data/image18.png" style="width:0.2375in;height:0.26181in" /></center></td>
+			<td><center><img src="./media/data/image19.png" style="width:0.24653in;height:0.24653in" /></center></td>
+			<td><center><img src="./media/data/image20.png" style="width:0.27908in;height:0.27908in" /></center></td>
+		</tr>
+		<tr>
+		   <td><center><sup>Introduction</sup></center></td>
+		   <td><center><sup>Identity</sup></center></td>
+		   <td><center><sup>Endpoints</sup></center></td>
+		   <td><center><sup>Applications</sup></center></td>
+		   <td><center><sup>Data</sup></center></td>
+		   <td><center><sup>Infrastructure</sup></center></td>
+		   <td><center><sup>Networks</sup></center></td>
+		   <td><center><sup>Visibility,<br/>automation,<br/>orchestration</sup></center></td>
+		</tr>
+	</tbody>
+</table>
+
+
 <!--
 **The Zero Trust deployment guide series**
 
-Navbar here.
+| <img src="./media/data/image12.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/data/image13.png" style="width:0.20833in;height:0.26316in" /> | <img src="./media/data/image15.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/data/image16.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/data/image17.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/data/image18.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/data/image19.png" style="width:0.24653in;height:0.24653in" /> | <img src="./media/data/image20.png" style="width:0.27908in;height:0.27908in" /> |
+|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| [Introduction](https://aka.ms/ZTDeploymentGuideIntroduction)                | [Identity](https://aka.ms/ZTIdentity)                                       | [Endpoints](https://aka.ms/ZTEndpoints)                                     | [Applications](https://aka.ms/ZTApplications)                               | [Data](https://aka.ms/ZTData)                                               | [Network](https://aka.ms/ZTNetwork)                                        | [Infrastructure](https://aka.ms/ZTInfrastructure)                           | [Visibility, Automation, Orchestration](https://aka.ms/ZTCrossPillars)      |
 -->

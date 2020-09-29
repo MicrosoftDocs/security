@@ -600,46 +600,10 @@ Building and maintaining customized operating system images is a time-consuming 
 A Zero Trust approach can significantly strengthen the security posture of your devices and endpoints. For further information or help with implementation, please contact your Customer Success team, or continue to read through the other chapters of this guide that spans all Zero Trust pillars.
 
 
-:::row:::
-   :::column:::
-:::image type="icon" source="./media/icon-fingerprint-medium.png":::
-<br/><sup>Introduction</sup>
-   :::column-end:::
-   :::column:::
-:::image type="icon" source="./media/icon-fingerprint-medium.png":::
-<br/><sup>Identity</sup>
-   :::column-end:::
-   :::column:::
-:::image type="icon" source="./media/icon-endpoint-devices-medium.png":::
-<br/><sup>Endpoints</sup>
-   :::column-end:::
-   :::column:::
-:::image type="icon" source="./media/icon-application-window-medium.png":::
-<br/><sup>Applications</sup>
-   :::column-end:::
-   :::column:::
-:::image type="icon" source="./media/icon-ones-and-zeroes-medium.png":::
-<br/><sup>Data</sup>
-   :::column-end:::
-   :::column:::
-:::image type="icon" source="./media/icon-data-storage-disks-medium.png":::
-<br/><sup>Infrastructure</sup>
-   :::column-end:::
-   :::column:::
-:::image type="icon" source="./media/icon-network-diagram-medium.png":::
-<br/><sup>Networks</sup>
-   :::column-end:::
-   :::column:::
-:::image type="icon" source="./media/icon-gear-medium.png":::
-<br/><sup>Visibility, Automation, Orchestration</sup>
-   :::column-end:::
-:::row-end:::  
-
-
 
 **The Zero Trust deployment guide series**
 
-<table>
+<table width="70%">
 <tbody>
 <tr>
 <td><a href="https://aka.ms/ZTDeploymentGuideIntroduction" alt="Icon for the introduction"><img src="./media/icon-introduction-navbar.png"/></a></td>

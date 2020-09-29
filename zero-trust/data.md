@@ -340,6 +340,22 @@ Follow these steps:
 For further information or help with implementation, please contact your Customer Success team.
 
 
+<table >
+	<tbody>
+		<tr>
+			<td><img src="./media/data/image12.emf" style="width:0.34215in;height:0.34215in" /></td>
+			<td><img src="./media/data/image13.png" style="width:0.20833in;height:0.26316in" /></td>
+			<td><img src="./media/data/image15.png" style="width:0.28564in;height:0.23809in" /></td>
+			<td><img src="./media/data/image16.emf" style="width:0.26496in;height:0.26496in" /></td>
+			<td><img src="./media/data/image17.png" style="width:0.26189in;height:0.22618in" /></td>
+			<td><img src="./media/data/image18.png" style="width:0.2375in;height:0.26181in" /></td>
+			<td><img src="./media/data/image19.png" style="width:0.24653in;height:0.24653in" /></td>
+			<td><img src="./media/data/image20.png" style="width:0.27908in;height:0.27908in" /></td>
+		</tr>
+	</tbody>
+</table>
+
+
 <!--
 **The Zero Trust deployment guide series**
 

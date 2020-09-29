@@ -339,6 +339,34 @@ Follow these steps:
 
 For further information or help with implementation, please contact your Customer Success team.
 
+<br/><br/>
+**The Zero Trust deployment guide series**
+<br/><br/>
+<table>
+	<tbody>
+		<tr>
+			<td><center><a href="https://aka.ms/ZTDeploymentGuideIntroduction"><img src="./media/icon-introduction-small.png" /></a></center></td>
+			<td><center><a href="https://aka.ms/ZTIdentity"><img src="./media/icon-fingerprint-small.png" /></a></center></td>
+			<td><center><a href="https://aka.ms/ZTEndpoints"><img src="./media/icon-endpoint-devices-small.png" /></a></center></td>
+			<td><center><a href="https://aka.ms/ZTApplications"><img src="./media/icon-application-window-small.png" /></a></center></td>
+			<td><center><a href="https://aka.ms/ZTData"><img src="./media/icon-ones-and-zeroes-small.png" /></a></center></td>
+			<td><center><a href="https://aka.ms/ZTInfrastructure"><img src="./media/icon-data-storage-disks-small.png" /></a></center></td>
+			<td><center><a href="https://aka.ms/ZTNetwork"><img src="./media/icon-network-diagram-small.png" /></a></center></td>
+			<td><center><a href="https://aka.ms/ZTCrossPillars"><img src="./media/icon-gear-small.png" /></a></center></td>
+		</tr>
+		<tr>
+		   <td><center><sup><a href="https://aka.ms/ZTDeploymentGuideIntroduction">Introduction</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTIdentity">Identity</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTEndpoints">Endpoints</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTApplications">Applications</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTData">Data</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTInfrastructure">Infrastructure</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTNetwork">Networks</a></sup></center></td>
+		   <td><center><sup><a href="https://aka.ms/ZTCrossPillars">Visibility,<br/>automation,<br/>orchestration</a></sup></center></td>
+		</tr>
+	</tbody>
+</table>
+
 
 <!--
 **The Zero Trust deployment guide series**

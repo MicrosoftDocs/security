@@ -339,12 +339,36 @@ Take this step:
 
 ## Conclusion
 
-Identity is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team or continue to read through the other chapters of this guide, which span all Zero Trust pillars.
+Identity is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team or continue to read through the other <font style="font-size:18px">chapters of this guide</font>, which span all <font style="font-size:6px">Zero Trust pillars</font>.
 
-<!--
+
+<br/><br/>
 **The Zero Trust deployment guide series**
 
-| <img src="./media/identity/image11.emf" style="width:0.34215in;height:0.34215in" /> | <img src="./media/identity/image12.png" style="width:0.20833in;height:0.26316in" /> | <img src="./media/identity/image13.png" style="width:0.28564in;height:0.23809in" /> | <img src="./media/identity/image14.emf" style="width:0.26496in;height:0.26496in" /> | <img src="./media/identity/image15.png" style="width:0.26189in;height:0.22618in" /> | <img src="./media/identity/image17.png" style="width:0.2375in;height:0.26181in" /> | <img src="./media/identity/image18.png" style="width:0.24653in;height:0.24653in" /> | <img src="./media/identity/image19.png" style="width:0.27908in;height:0.27908in" /> |
-|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Introduction](https://aka.ms/ZTDeploymentGuideIntroduction)                | [Identity](https://aka.ms/ZTIdentity)                                       | [Endpoints](https://aka.ms/ZTEndpoints)                                     | [Applications](https://aka.ms/ZTApplications)                               | [Data](https://aka.ms/ZTData)                                               | [Network](https://aka.ms/ZTNetwork)                                        | [Infrastructure](https://aka.ms/ZTInfrastructure)                           | [Visibility, Automation, Orchestration](https://aka.ms/ZTCrossPillars)      |
--->
+:::row:::
+   :::column:::
+[![Icon for the introduction](./media/icon-introduction-navbar.png)](https://aka.ms/ZTDeploymentGuideIntroduction)
+   :::column-end:::
+   :::column:::
+[![Icon for identity](./media/icon-fingerprint-navbar.png)](https://aka.ms/ZTIdentity)
+   :::column-end:::
+   :::column:::
+[![Icon for endpoints](./media/icon-endpoint-devices-navbar.png)](https://aka.ms/ZTDevices)
+   :::column-end:::
+   :::column:::
+[![Icon for applications](./media/icon-application-window-navbar.png)](https://aka.ms/ZTApplications)
+   :::column-end:::
+   :::column:::
+[![Icon for data](./media/icon-ones-and-zeroes-navbar.png)](https://aka.ms/ZTData)
+   :::column-end:::
+   :::column:::
+[![Icon for infrastructure](./media/icon-data-storage-disks-navbar.png)](https://aka.ms/ZTInfrastructure)
+   :::column-end:::
+   :::column:::
+[![Icon for networks](./media/icon-network-diagram-navbar.png)](https://aka.ms/ZTNetwork)
+   :::column-end:::
+   :::column:::
+[![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
+   :::column-end:::
+:::row-end:::   
+   

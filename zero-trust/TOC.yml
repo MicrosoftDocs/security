@@ -1,7 +1,7 @@
 - name: Zero Trust Security
   expanded: true
   items:
-    - name: Zero Trust overview
+    - name: Zero Trust introduction
       href: index.md
     - name: Secure identity
       href: identity.md

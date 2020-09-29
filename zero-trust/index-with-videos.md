@@ -142,6 +142,10 @@ With Zero Trust, we move away from a trust-by-default perspective to a trust-by-
 
 
 
+<!--
+**The Zero Trust deployment guide series**
 
+Navbar here.
+-->
 
 

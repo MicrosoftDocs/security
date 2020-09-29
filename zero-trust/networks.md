@@ -65,7 +65,7 @@ To make this happen, we follow three Zero Trust principles:
       </td>
       <td>
 		 <p><b>I.</b> <a href="#i-network-segmentation-many-ingressegress-cloud-micro-perimeters-with-some-micro-segmentation">Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation.</a></p>
-	     <p><b>II.</b> <a href="#ii-threat-protection-cloud-native-filtering-and-protection-for-known-threats">Threat protection: Cloud-native filtering and protection for known threats.</a></p>
+	     <p><b>II.</b> <a href="#ii-threat-protection-cloud-native-filtering-and-protection-for-known-threats">Threat protection: Cloud native filtering and protection for known threats.</a></p>
 		 <p><b>III.</b> <a href="#iii-user-to-app-internal-traffic-is-encrypted">Encryption: User-to-app internal traffic is encrypted.</a></p>
       </td>
    </tr>
@@ -85,33 +85,6 @@ To make this happen, we follow three Zero Trust principles:
       </td>
    </tr>
 </table>
-
-
-
-
-## Products covered in this guide
-
-**Microsoft Azure**
-
-[Azure Networking](https://docs.microsoft.com/azure/networking/)
-
-[Virtual Networks and Subnets](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)
-
-[Network Security Groups](https://docs.microsoft.com/azure/virtual-network/security-overview)
-and [Application Security Groups](https://docs.microsoft.com/azure/virtual-network/application-security-groups)
-
-[Azure Firewall](https://docs.microsoft.com/azure/firewall/overview)
-
-[Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)
-
-[Azure Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/ag/ag-overview)
-
-[Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)
-
-[Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction)
-
-[Azure Network Watcher](https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview)
-
 
 ## Networking Zero Trust deployment guide
 
@@ -204,7 +177,7 @@ Take these steps to protect against known threats:
     > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints).
 
 
-### III. User-to-app internal traffic is encrypted.
+### III. Encryption: User-to-app internal traffic is encrypted
 
 The third initial objective to focus on is adding encryption to ensure user-to-app internal traffic is encrypted.
 
@@ -241,7 +214,7 @@ Follow these steps:
 </table>
 
 
-### IV. Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
+### IV. Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
 
 Once you've accomplished your initial three objectives, the next step is to further segment your network.
 
@@ -315,6 +288,28 @@ Follow these steps:
 
     1.  [Configure IPsec transport mode](https://docs.microsoft.com/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
 
+## Products covered in this guide
+
+**Microsoft Azure**
+
+[Azure Networking](https://docs.microsoft.com/azure/networking/)
+
+[Virtual Networks and Subnets](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview)
+
+[Network Security Groups](https://docs.microsoft.com/azure/virtual-network/security-overview)
+and [Application Security Groups](https://docs.microsoft.com/azure/virtual-network/application-security-groups)
+
+[Azure Firewall](https://docs.microsoft.com/azure/firewall/overview)
+
+[Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)
+
+[Azure Web Application Firewall](https://docs.microsoft.com/azure/web-application-firewall/ag/ag-overview)
+
+[Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+
+[Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction)
+
+[Azure Network Watcher](https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview)
 
 ## Conclusion
 

@@ -69,26 +69,6 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
    </tr>
 </table>
 
-
-
-## Products covered in this guide
-
-**Microsoft Azure**
-
-[Microsoft Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
-
-**Microsoft 365**
-
-[Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
-
--   [Cloud Discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery)
-
-[Microsoft Endpoint Manager](https://www.microsoft.com/endpointmanager)
-(includes Microsoft Intune and Configuration Manager)
-
--   [Mobile Application Management](https://docs.microsoft.com/mem/intune/apps/mam-faq)
-
-
 ## Application Zero Trust deployment guide
 
 This guide will walk you through the steps required to secure applications and APIs following the principles of a Zero Trust security framework. Our approach is aligned with these three Zero Trust principles:
@@ -261,6 +241,22 @@ Follow these steps:
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for your infrastructure](https://aka.ms/ZTInfrastructure).
 
+## Products covered in this guide
+
+**Microsoft Azure**
+
+[Microsoft Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
+
+**Microsoft 365**
+
+[Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
+
+[Cloud Discovery](https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery)
+
+[Microsoft Endpoint Manager](https://www.microsoft.com/endpointmanager)
+(includes Microsoft Intune and Configuration Manager)
+
+[Mobile Application Management](https://docs.microsoft.com/mem/intune/apps/mam-faq)
 
 ## Conclusion
 

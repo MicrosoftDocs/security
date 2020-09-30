@@ -106,11 +106,6 @@ additionalContent:
               url: https://aka.ms/ZTApplications
             - text: Secure data
               url: https://aka.ms/ZTData
-      # footerLink (optional)
-        footerLink:
-          - text: See more
-            url: https://aka.ms/ZTGuide
-
 
         # Card
         - title: Governance and strategy

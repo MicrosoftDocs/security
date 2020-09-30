@@ -39,7 +39,7 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
 <table border="0">
    <tr>
       <td colspan="2">
-         <p>When implementing a Zero Trust approach to managing and monitoring applications, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+         <p>When implementing a Zero Trust approach to managing and monitoring applications, we recommend you focus first on these <b>initial deployment objectives</b>:</p>
 	  </td>
    </tr>
    <tr>
@@ -54,7 +54,7 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
    </tr>
    <tr>
       <td colspan="2">
-         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+         <p>After these are completed, focus on these <b>additional deployment objectives</b>:</p>
       </td>
    </tr>
    <tr>

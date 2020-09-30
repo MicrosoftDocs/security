@@ -63,7 +63,7 @@ It is through this hierarchy that we enable our customers to maximize their focu
 <table border="0">
    <tr>
       <td colspan="2">
-         <p>When implementing an end-to-end Zero Trust framework for visibility, automation, and orchestration, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+         <p>When implementing an end-to-end Zero Trust framework for visibility, automation, and orchestration, we recommend you focus first on these <b>initial deployment objectives</b>:</p>
 	  </td>
    </tr>
    <tr>
@@ -77,7 +77,7 @@ It is through this hierarchy that we enable our customers to maximize their focu
    </tr>
    <tr>
       <td colspan="2">
-         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+         <p>After these are completed, focus on these <b>additional deployment objectives</b>:</p>
       </td>
    </tr>
    <tr>

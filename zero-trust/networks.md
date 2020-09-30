@@ -56,7 +56,7 @@ To make this happen, we follow three Zero Trust principles:
 <table border="0">
    <tr>
       <td colspan="2">
-         <p>When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+         <p>When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on these <b>initial deployment objectives</b>:</p>
 	  </td>
    </tr>
    <tr>
@@ -71,7 +71,7 @@ To make this happen, we follow three Zero Trust principles:
    </tr>
    <tr>
       <td colspan="2">
-         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+         <p>After these are completed, focus on these <b>additional deployment objectives</b>:</p>
       </td>
    </tr>
    <tr>

@@ -326,34 +326,34 @@ For further information or help with implementation, please contact your Custome
 
 
 <br/><br/>
+<!-- [v-gmoor, 2020-09-30]: The following include is constructed correctly, but it displays only a couple of the icons. The build claims that the others are outside of the build scope, even though they are located in the same path. So, I've copied the code for the navbar into each article, which I hope is a temporary fix.
 [!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
-
-<!--
-<br/><br/>
-**The Zero Trust deployment guide series**
-<br/><br/>
-<table>
-	<tbody>
-		<tr>
-			<td><center><a href="https://aka.ms/ZTDeploymentGuideIntroduction"><img src="./media/icon-introduction-small.png" /></a></center></td>
-			<td><center><a href="https://aka.ms/ZTIdentity"><img src="./media/icon-fingerprint-small.png" /></a></center></td>
-			<td><center><a href="https://aka.ms/ZTEndpoints"><img src="./media/icon-endpoint-devices-small.png" /></a></center></td>
-			<td><center><a href="https://aka.ms/ZTApplications"><img src="./media/icon-application-window-small.png" /></a></center></td>
-			<td><center><a href="https://aka.ms/ZTData"><img src="./media/icon-ones-and-zeroes-small.png" /></a></center></td>
-			<td><center><a href="https://aka.ms/ZTInfrastructure"><img src="./media/icon-data-storage-disks-small.png" /></a></center></td>
-			<td><center><a href="https://aka.ms/ZTNetwork"><img src="./media/icon-network-diagram-small.png" /></a></center></td>
-			<td><center><a href="https://aka.ms/ZTCrossPillars"><img src="./media/icon-gear-small.png" /></a></center></td>
-		</tr>
-		<tr>
-		   <td><center><sup><a href="https://aka.ms/ZTDeploymentGuideIntroduction">Introduction</a></sup></center></td>
-		   <td><center><sup><a href="https://aka.ms/ZTIdentity">Identity</a></sup></center></td>
-		   <td><center><sup><a href="https://aka.ms/ZTEndpoints">Endpoints</a></sup></center></td>
-		   <td><center><sup><a href="https://aka.ms/ZTApplications">Applications</a></sup></center></td>
-		   <td><center><sup><a href="https://aka.ms/ZTData">Data</a></sup></center></td>
-		   <td><center><sup><a href="https://aka.ms/ZTInfrastructure">Infrastructure</a></sup></center></td>
-		   <td><center><sup><a href="https://aka.ms/ZTNetwork">Networks</a></sup></center></td>
-		   <td><center><sup><a href="https://aka.ms/ZTCrossPillars">Visibility,<br/>automation,<br/>orchestration</a></sup></center></td>
-		</tr>
-	</tbody>
-</table>
 -->
+**The Zero Trust deployment guide series**
+
+:::row:::
+   :::column:::
+[![Icon for the introduction](./media/icon-introduction-navbar.png)](https://aka.ms/ZTDeploymentGuideIntroduction)
+   :::column-end:::
+   :::column:::
+[![Icon for identity](./media/icon-identity-navbar.png)](https://aka.ms/ZTIdentity)
+   :::column-end:::
+   :::column:::
+[![Icon for endpoints](./media/icon-endpoints-navbar.png)](https://aka.ms/ZTDevices)
+   :::column-end:::
+   :::column:::
+[![Icon for applications](./media/icon-applications-navbar.png)](https://aka.ms/ZTApplications)
+   :::column-end:::
+   :::column:::
+[![Icon for data](./media/icon-data-navbar.png)](https://aka.ms/ZTData)
+   :::column-end:::
+   :::column:::
+[![Icon for infrastructure](./media/icon-infrastructure-navbar.png)](https://aka.ms/ZTInfrastructure)
+   :::column-end:::
+   :::column:::
+[![Icon for networks](./media/icon-networks-navbar.png)](https://aka.ms/ZTNetwork)
+   :::column-end:::
+   :::column:::
+[![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
+   :::column-end:::
+:::row-end:::

@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 :::image type="icon" source="./media/icon-introduction-medium.png":::
 
-## Assess Zero Trust readiness and build a plan
+## Assess Zero Trust readiness and build a plan 
 
 Today, organizations need a new security model that effectively adapts
 to the complexity of the modern environment, embraces the mobile

@@ -121,9 +121,22 @@ activities in this guide. For more information, see:
 This guide will walk you step-by-step through a Zero Trust approach to data protection maturity. Please keep in mind that these items will vary widely depending on the sensitivity of your information and the size and complexity of your organization.
 
 
-<!-- H2 heading, "Initial deployment objectives" -->
 <br/><br/>
+<!-- H2 heading, "Initial deployment objectives" -->
+<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
 [!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
+-->
+<table border="0">
+   <tr>
+      <td>
+	     <br/>
+         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+      </td>
+      <td>
+         <h2>Initial deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 ### I. Access decisions are governed by encryption
@@ -167,9 +180,22 @@ Take this step:
  - Configure the scanner to [use **enforce** mode and automatically classify, label, and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner) with sensitive data.
 
 
-<!-- H2 heading, "Additional deployment objectives" -->
 <br/><br/>
+<!-- H2 heading, "Additional deployment objectives" -->
+<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
 [!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
+-->
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+      </td>
+      <td>
+         <h2>Additional deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 

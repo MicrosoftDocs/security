@@ -140,7 +140,7 @@ Follow these steps:
 
 Azure AD Conditional Access (CA) analyzes signals such as user, device, and location to automate decisions and enforce organizational access policies for resource. You can use CA policies to apply access controls like multi-factor authentication (MFA). CA policies allow you to prompt users for MFA when needed for security and stay out of users' way when not needed.
 
-:::image type="content" source="./media/identity/conditional-access-policies-diagram.png" alt-text="Diagram of Conditional Access policies in Zero Trust." border="false":::
+:::image type="content" source="./media/conditional-access-policies-diagram.png" alt-text="Diagram of Conditional Access policies in Zero Trust." border="false":::
 
 Microsoft provides standard conditional policies called [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that ensure a basic level of security. However, your organization may need more flexibility than security defaults offer. You can use Conditional Access to customize security defaults with more granularity and to configure new policies that meet your requirements.
 

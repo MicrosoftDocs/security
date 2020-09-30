@@ -96,16 +96,8 @@ additionalContent:
         # Card
         - title: Zero Trust Deployment Center
           links:
-            - text: Introduction
+            - text: Introduction to deployment guides
               url: https://aka.ms/ZTGuide
-            - text: Secure identity
-              url: https://aka.ms/ZTIdentity
-            - text: Secure endpoints
-              url: https://aka.ms/ZTDevices
-            - text: Secure applications
-              url: https://aka.ms/ZTApplications
-            - text: Secure data
-              url: https://aka.ms/ZTData
 
         # Card
         - title: Governance and strategy

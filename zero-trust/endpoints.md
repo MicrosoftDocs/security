@@ -107,7 +107,7 @@ Follow these steps:
 
 **New Windows 10 devices**
 
-1.  Start up your new device and begin the OOBE (Out of Box Experience) process.
+1.  Start up your new device and begin the OOBE (out-of-box-experience) process.
 
 2.  On the **Sign in with Microsoft** screen, type your work or school email address.
 
@@ -575,7 +575,7 @@ Building and maintaining customized operating system images is a time-consuming 
 
 [Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp#:~:text=Microsoft%20Defender%20ATP%20is%20a%20unified%20endpoint%20security,support%20via%20our%20first-party%20offerings%20and%20through%20partners%3A)
 
-[Bitlocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+[BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
 
 ## Conclusion
 

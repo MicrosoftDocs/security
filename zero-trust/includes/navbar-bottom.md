@@ -8,7 +8,7 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-**The Zero Trust deployment guide series**
+**The Zero Trust deployment guide series** 
 
 :::row:::
    :::column:::

@@ -185,7 +185,7 @@ adapting and restricting access as session risk changes will enable you
 to stop breaches and leaks in real time, before employees put your data
 and your organization at risk.
 
-Take this step:
+Take this step: 
 
  - [Enable real-time monitoring and control over access to any web app](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad), based on user, location, device, and app. For example, you can create policies to protect downloads of sensitive content with sensitivity labels when using any unmanaged device. Alternatively, files can be scanned on upload to detect potential malware and block them from entering sensitive cloud environment.
 

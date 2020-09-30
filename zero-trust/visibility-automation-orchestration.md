@@ -20,7 +20,7 @@ In our other Zero Trust guides, we defined the approach to implementing an end-t
 
 With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
 
-You want the ability to:
+You want the ability to: 
 
 -  Detect threats and vulnerabilities.
 -  Investigate.

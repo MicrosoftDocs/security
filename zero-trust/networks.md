@@ -18,7 +18,7 @@ Instead of believing everything behind the corporate firewall is safe, an end-to
 
 In the Zero Trust model, there are three key objectives when it comes to securing your networks:
 
-- Be ready to handle attacks before they happen.
+- Be ready to handle attacks before they happen. 
 
 - Minimize the extent of the damage and how fast it spreads.
 

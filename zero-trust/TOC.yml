@@ -2,18 +2,18 @@
   expanded: true
   items:
     - name: Zero Trust introduction
-      href: index.md
+      href: https://aka.ms/ZTDeploymentGuideIntroduction
     - name: Secure identity
-      href: identity.md
+      href: https://aka.ms/ZTIdentity
     - name: Secure endpoints
-      href: endpoints.md
+      href: https://aka.ms/ZTDevices
     - name: Secure applications
-      href: applications.md
+      href: https://aka.ms/ZTApplications
     - name: Secure data
-      href: data.md
+      href: https://aka.ms/ZTData
     - name: Secure infrastructure
-      href: infrastructure.md
+      href: https://aka.ms/ZTInfrastructure
     - name: Secure networks
-      href: networks.md
+      href: https://aka.ms/ZTNetwork
     - name: Visibility, automation, and orchestration
-      href: visibility-automation-orchestration.md
+      href: https://aka.ms/ZTCrossPillars

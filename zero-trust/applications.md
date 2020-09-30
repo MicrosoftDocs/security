@@ -1,7 +1,7 @@
 ---
 title: Audit Requirements - Microsoft Trusted Root Certificate Program
 description: To get the full benefit of cloud apps and services, organizations must find the right balance of providing access while maintaining control to protect critical data accessed via applications and APIs. 
-ms.date: 09/01/2020
+ms.date: 09/30/2020
 ms.service: security
 author: Kellylorenebaker
 ms.author: v-kbaker

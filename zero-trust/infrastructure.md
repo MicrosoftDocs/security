@@ -132,7 +132,7 @@ Just as we have managed our on-prem data center environment, we must also ensure
 
 ##### Apply security baselines through Azure Policy, including application of in-guest policies
 
-Enabling [ASC Standard](https://docs.microsoft.com/azure/security-center/security-center-get-started) will allow you to incorporate a set of baseline controls through Azure
+Enabling [ASC Standard](https://docs.microsoft.com/azure/security-center/security-center-get-started) will let you incorporate a set of baseline controls through Azure
 Policy by incorporating the [Azure Policy built-in policy definitions for Azure Security Center](https://docs.microsoft.com/azure/security-center/policy-samples).
 The set of baseline policies will be reflected in the [ASC secure score](https://docs.microsoft.com/azure/security-center/security-center-secure-score), where you can measure your compliance to those policies.
 

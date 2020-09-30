@@ -94,10 +94,18 @@ additionalContent:
       summary: Microsoft security best practices that help you improve your security posture
       items:
         # Card
-        - title: Zero trust security
+        - title: Zero Trust Deployment Center
           links:
-            - text: Deployment guides
-              url: https://docs.microsoft.com/security/zero-trust/
+            - text: Introduction
+              url: https://aka.ms/ZTGuide
+            - text: Secure identity
+              url: https://aka.ms/ZTIdentity
+            - text: Secure endpoints
+              url: https://aka.ms/ZTDevices
+            - text: Secure applications
+              url: https://aka.ms/ZTApplications
+            - text: Secure data
+              url: https://aka.ms/ZTData
 
         # Card
         - title: Governance and strategy

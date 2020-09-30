@@ -95,9 +95,22 @@ It is through this hierarchy that we enable our customers to maximize their focu
 This guide will walk you through the steps required to manage visibility, automation, and orchestration following the principles of a Zero Trust security framework.
 
 
-<!-- H2 heading, "Initial deployment objectives" -->
 <br/><br/>
+<!-- H2 heading, "Initial deployment objectives" -->
+<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
 [!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
+-->
+<table border="0">
+   <tr>
+      <td>
+	     <br/>
+         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+      </td>
+      <td>
+         <h2>Initial deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 ### I. Establish visibility
@@ -143,9 +156,22 @@ As part of the data connection process, relevant analytics can be enabled to tri
 Although machine learning and fusion analytics are provided out of the box, it is also beneficial to ingest threat intelligence data into Azure Sentinel to help identify events that relate to known bad entities.
 
 
-<!-- H2 heading, "Additional deployment objectives" -->
 <br/><br/>
+<!-- H2 heading, "Additional deployment objectives" -->
+<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
 [!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
+-->
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+      </td>
+      <td>
+         <h2>Additional deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 ### III. Enable additional protection and detection controls

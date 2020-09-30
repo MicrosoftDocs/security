@@ -72,9 +72,22 @@ Once the identity has been verified, we can control that identity's access to re
 
 This guide will walk you through the steps required to manage identities following the principles of a Zero Trust security framework.
 
-<!-- H2 heading, "Initial deployment objectives" -->
 <br/><br/>
+<!-- H2 heading, "Initial deployment objectives" -->
+<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
 [!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
+-->
+<table border="0">
+   <tr>
+      <td>
+	     <br/>
+         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+      </td>
+      <td>
+         <h2>Initial deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 ### I. Cloud identity federates with on-premises identity systems
@@ -174,9 +187,22 @@ Take this step:
  - [Plan an Azure AD reporting and monitoring deployment](https://docs.microsoft.com/azure/active-directory/reports-monitoring/plan-monitoring-and-reporting) to be able to persist and analyze logs from Azure AD, either in Azure or using a SIEM system of choice.
 
 
-<!-- H2 heading, "Additional deployment objectives" -->
 <br/><br/>
+<!-- H2 heading, "Additional deployment objectives" -->
+<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
 [!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
+-->
+<table border="0">
+   <tr>
+      <td>
+         <br/>
+		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
+      </td>
+      <td>
+         <h2>Additional deployment objectives</h2>
+      </td>
+   </tr>
+</table>
 
 
 ### IV. Identities and access privileges are managed with identity governance

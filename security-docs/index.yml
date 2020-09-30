@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 09/13/2020
+  ms.date: 09/29/2020
 
 
 # Maximum of 8 items
@@ -93,6 +93,12 @@ additionalContent:
     - title: Security disciplines
       summary: Microsoft security best practices that help you improve your security posture
       items:
+        # Card
+        - title: Zero trust security
+          links:
+            - text: Deployment guides
+              url: https://docs.microsoft.com/security/zero-trust/
+
         # Card
         - title: Governance and strategy
           links:

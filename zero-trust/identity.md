@@ -326,3 +326,31 @@ Identity is central to a successful Zero Trust strategy. For further information
 <br/><br/>
 [!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
 
+**The Zero Trust deployment guide series** 
+
+:::row:::
+   :::column:::
+[![Icon for the introduction](./includes/media/icon-introduction-navbar.png)](https://aka.ms/ZTDeploymentGuideIntroduction)
+   :::column-end:::
+   :::column:::
+[![Icon for identity](./includes/media/icon-identity-navbar.png)](https://aka.ms/ZTIdentity)
+   :::column-end:::
+   :::column:::
+[![Icon for endpoints](./includes/media/icon-endpoints-navbar.png)](https://aka.ms/ZTDevices)
+   :::column-end:::
+   :::column:::
+[![Icon for applications](./includes/media/icon-applications-navbar.png)](https://aka.ms/ZTApplications)
+   :::column-end:::
+   :::column:::
+[![Icon for data](./includes/media/icon-data-navbar.png)](https://aka.ms/ZTData)
+   :::column-end:::
+   :::column:::
+[![Icon for infrastructure](./includes/media/icon-infrastructure-navbar.png)](https://aka.ms/ZTInfrastructure)
+   :::column-end:::
+   :::column:::
+[![Icon for networks](./includes/media/icon-networks-navbar.png)](https://aka.ms/ZTNetwork)
+   :::column-end:::
+   :::column:::
+[![Icon for visibility, automation, orchestration](./includes/media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
+   :::column-end:::
+:::row-end:::

@@ -1,6 +1,6 @@
 ---
-title: Zero Trust Deployment Center
-description: The Zero Trust model assumes a breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to never trust and to always verify.
+title: Zero Trust Deployment Center (with videos)
+description: The Zero Trust model assumes a breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to never trust and to always verify. This file displays video links.
 ms.date: 09/01/2020
 ms.service: security
 author: garycentric
@@ -8,7 +8,9 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-# Zero Trust Deployment Center
+# Zero Trust Deployment introduction
+
+:::image type="icon" source="./media/icon-introduction-medium.png":::
 
 ## Assess Zero Trust readiness and build a plan
 
@@ -26,12 +28,12 @@ always verify."
 
 :::image type="content" source="./media/zero-trust-security-elements-diagram.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
+
 ## Guiding principles of Zero Trust
 
 | Verify&nbsp;explicitly | Use least privileged access | Assume breach |
 |------|-------|------|
 | Always authenticate and authorize based on all available data points. | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. |
-
 
 A Zero Trust approach should extend throughout the entire digital estate
 and serve as an integrated security philosophy and end-to-end strategy.
@@ -47,7 +49,8 @@ implementing our own Zero Trust model, we've developed the following
 guidance to assess your readiness and to help you build a plan to get to
 Zero Trust.
 
-**Follow the steps below to mature your organization's approach tosecurity and optimize how Zero Trust is implemented:**
+
+**Follow the steps below to mature your organization's approach to security and optimize how Zero Trust is implemented:**
 
 <br/>
 <table border="0">

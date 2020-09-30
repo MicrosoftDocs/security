@@ -35,7 +35,7 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
 
 
 
-## Endpoint Zero Trust deployment objectives
+## Endpoint Zero Trust deployment objectives 
 
 <div class="alert">
    <p><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their endpoint security is set up as follows:</p>

@@ -56,7 +56,7 @@ To make this happen, we follow three Zero Trust principles:
 <table border="0">
    <tr>
       <td colspan="2">
-         <p>When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+         <p>When implementing an end-to-end Zero Trust framework for securing networks, we recommend you focus first on these <b>initial deployment objectives</b>:</p>
 	  </td>
    </tr>
    <tr>
@@ -66,12 +66,12 @@ To make this happen, we follow three Zero Trust principles:
       <td>
 		 <p><b>I.</b> <a href="#i-network-segmentation-many-ingressegress-cloud-micro-perimeters-with-some-micro-segmentation">Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation.</a></p>
 	     <p><b>II.</b> <a href="#ii-threat-protection-cloud-native-filtering-and-protection-for-known-threats">Threat protection: Cloud native filtering and protection for known threats.</a></p>
-		 <p><b>III.</b> <a href="#iii-user-to-app-internal-traffic-is-encrypted">Encryption: User-to-app internal traffic is encrypted.</a></p>
+		 <p><b>III.</b> <a href="#iii-encryption-user-to-app-internal-traffic-is-encrypted">Encryption: User-to-app internal traffic is encrypted.</a></p>
       </td>
    </tr>
    <tr>
       <td colspan="2">
-         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+         <p>After these are completed, focus on these <b>additional deployment objectives</b>:</p>
       </td>
    </tr>
    <tr>
@@ -79,7 +79,7 @@ To make this happen, we follow three Zero Trust principles:
 		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
-         <p><b>IV.</b> <a href="#iv-fully-distributed-ingressegress-cloud-micro-perimeters-and-deeper-micro-segmentation">Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation.</a></p>
+         <p><b>IV.</b> <a href="#iv-network-segmentation-fully-distributed-ingressegress-cloud-micro-perimeters-and-deeper-micro-segmentation">Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation.</a></p>
          <p><b>V.</b> <a href="#v-threat-protection-machine-learning-based-threat-protection-and-filtering-with-context-based-signals">Threat protection: Machine learning-based threat protection and filtering with context-based signals.</a></p>
          <p><b>VI.</b> <a href="#vi-encryption-all-traffic-is-encrypted">Encryption: All traffic is encrypted.</a></p>
       </td>

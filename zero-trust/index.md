@@ -28,6 +28,7 @@ always verify."
 
 :::image type="content" source="./media/zero-trust-security-elements-diagram.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
+
 ## Guiding principles of Zero Trust
 
 | Verify&nbsp;explicitly | Use least privileged access | Assume breach |
@@ -48,7 +49,6 @@ implementing our own Zero Trust model, we've developed the following
 guidance to assess your readiness and to help you build a plan to get to
 Zero Trust.
 
-:::image type="content" source="./media/zero-trust-security-elements-diagram.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
 **Follow the steps below to mature your organization's approach to security and optimize how Zero Trust is implemented:**
 

@@ -81,7 +81,7 @@ activities in this guide. For more information, see:
 <table border="0">
    <tr>
       <td colspan="2">
-         <p>When implementing an end-to-end Zero Trust framework for data, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+         <p>When implementing an end-to-end Zero Trust framework for data, we recommend you focus first on these <b>initial deployment objectives</b>:</p>
 	  </td>
    </tr>
    <tr>
@@ -95,7 +95,7 @@ activities in this guide. For more information, see:
    </tr>
    <tr>
       <td colspan="2">
-         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+         <p>After these are completed, focus on these <b>additional deployment objectives</b>:</p>
       </td>
    </tr>
    <tr>
@@ -105,10 +105,11 @@ activities in this guide. For more information, see:
       <td>
          <p><b>III.</b> <a href="#iii-classification-is-augmented-by-smart-machine-learning-models">Classification is augmented by smart machine learning models.</a></p>
          <p><b>IV.</b> <a href="#iv-access-decisions-are-governed-by-a-cloud-security-policy-engine">Access decisions are governed by a cloud security policy engine.</a></p>
-         <p><b>V.</b> <a href="#v-dlp-policies-secure-sharing-with-encryption-and-tracking">Prevent data leakage through DLP policies based on a sensitivity label and content inspection.</a></p>
+         <p><b>V.</b> <a href="#v-prevent-data-leakage-through-dlp-policies-based-on-a-sensitivity-label-and-content-inspection">Prevent data leakage through DLP policies based on a sensitivity label and content inspection.</a></p>
       </td>
    </tr>
 </table>
+
 
 **Capabilities**
 

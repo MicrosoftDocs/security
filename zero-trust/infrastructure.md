@@ -43,7 +43,7 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
 <table border="0">
    <tr>
       <td colspan="2">
-         <p>When implementing an end-to-end Zero Trust framework for managing and monitoring your infrastructure, we recommend you focus first on these <i>initial</i> deployment objectives:</p>
+         <p>When implementing an end-to-end Zero Trust framework for managing and monitoring your infrastructure, we recommend you focus first on these <b>initial deployment objectives</b>:</p>
 	  </td>
    </tr>
    <tr>
@@ -58,7 +58,7 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
    </tr>
    <tr>
       <td colspan="2">
-         <p>After these are completed, focus on these <i>additional</i> deployment objectives:</p>
+         <p>After these are completed, focus on these <b>additional deployment objectives</b>:</p>
       </td>
    </tr>
    <tr>
@@ -66,7 +66,7 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
 		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
-         <p><b>IV.</b> <a href="#iv-identities-unauthorized-deployments-are-blocked-and-alert-is-triggered">Unauthorized deployments are blocked, and alert is triggered.</a></p>
+         <p><b>IV.</b> <a href="#iv-unauthorized-deployments-are-blocked-and-alert-is-triggered">Unauthorized deployments are blocked, and alert is triggered.</a></p>
          <p><b>V.</b> <a href="#v-granular-visibility-and-access-control-are-available-across-workloads">Granular visibility and access control are available across workloads.</a></p>
          <p><b>VI.</b> <a href="#vi-user-and-resource-access-segmented-for-each-workload">User and resource access segmented for each workload.</a></p>
       </td>

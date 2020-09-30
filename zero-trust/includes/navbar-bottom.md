@@ -35,4 +35,4 @@ ms.topic: conceptual
    :::column:::
 [![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
    :::column-end:::
-:::row-end:::   
+:::row-end:::

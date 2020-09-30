@@ -256,4 +256,35 @@ Microsoft Azure offers many ways to segment workloads to manage user and resourc
 Infrastructure is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team, or continue to read through the other chapters of this guide, which spans all Zero Trust pillars.
 
 <br/><br/>
+<!-- [v-gmoor, 2020-09-30]: The following include is constructed correctly, but it displays only a couple of the icons. The build claims that the others are outside of the build scope, even though they are located in the same path. So, I've copied the code for the navbar into each article, which I hope is a temporary fix.
 [!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
+-->
+**The Zero Trust deployment guide series**
+
+:::row:::
+   :::column:::
+[![Icon for the introduction](./media/icon-introduction-navbar.png)](https://aka.ms/ZTDeploymentGuideIntroduction)
+   :::column-end:::
+   :::column:::
+[![Icon for identity](./media/icon-identity-navbar.png)](https://aka.ms/ZTIdentity)
+   :::column-end:::
+   :::column:::
+[![Icon for endpoints](./media/icon-endpoints-navbar.png)](https://aka.ms/ZTDevices)
+   :::column-end:::
+   :::column:::
+[![Icon for applications](./media/icon-applications-navbar.png)](https://aka.ms/ZTApplications)
+   :::column-end:::
+   :::column:::
+[![Icon for data](./media/icon-data-navbar.png)](https://aka.ms/ZTData)
+   :::column-end:::
+   :::column:::
+[![Icon for infrastructure](./media/icon-infrastructure-navbar.png)](https://aka.ms/ZTInfrastructure)
+   :::column-end:::
+   :::column:::
+[![Icon for networks](./media/icon-networks-navbar.png)](https://aka.ms/ZTNetwork)
+   :::column-end:::
+   :::column:::
+[![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
+   :::column-end:::
+:::row-end:::
+

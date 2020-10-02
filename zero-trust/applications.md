@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Secure applications with Zero Trust
 
-:::image type="icon" source="./media/icon-application-window-medium.png":::
+:::image type="icon" source="./media/icon-applications-medium.png":::
 
 **Background**
 

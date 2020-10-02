@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Secure data with Zero Trust
 
-:::image type="icon" source="./media/icon-ones-and-zeroes-medium.png":::
+:::image type="icon" source="./media/icon-data-medium.png":::
 
 **Background**
 
@@ -252,7 +252,7 @@ These activities help address risk by identifying and marking sensitive informat
 
 The following guidance will help you get started with sensitivity labels.
 
-:::image type="content" source="./media/steps-box-data-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
+:::image type="content" source="./media/diagram-microsoft-information-protection-corporate-egress-highlightedsteps-box-data-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
 
 
 #### Sensitivity labels are applied manually

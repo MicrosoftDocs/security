@@ -59,7 +59,7 @@ Zero Trust.
    <tbody>
       <tr>
          <td>
-            <p><img src="media/icon-fingerprint-small.png" alt="Fingerprint icon."></p>
+            <p><img src="media/icon-identity-small.png" alt="Fingerprint icon."></p>
          </td>
          <td>
             <p><strong>Secure identity with Zero Trust</strong> — <a href="https://aka.ms/ZTIdentity" data-linktype="external">https://aka.ms/ZTIdentity</a></p>
@@ -71,7 +71,7 @@ Zero Trust.
       </tr>
       <tr>
          <td>
-            <p><img src="media/icon-endpoint-devices-small.png" alt="Endpoint devices icon."></p>
+            <p><img src="media/icon-endpoints-small.png" alt="Endpoint devices icon."></p>
          </td>
          <td>
             <p><strong>Secure endpoints with Zero Trust</strong> — <a href="https://aka.ms/ZTDevices" data-linktype="external">https://aka.ms/ZTDevices</a></p>
@@ -83,7 +83,7 @@ Zero Trust.
       </tr>
       <tr>
          <td>
-            <p><img src="media/icon-application-window-small.png" alt="Application window icon."></p>
+            <p><img src="media/icon-applications-small.png" alt="Application window icon."></p>
          </td>
          <td>
             <p><strong>Secure applications with Zero Trust</strong> — <a href="https://aka.ms/ZTApplications" data-linktype="external">https://aka.ms/ZTApplications</a></p>
@@ -95,7 +95,7 @@ Zero Trust.
       </tr>
       <tr>
          <td>
-            <p><img src="media/icon-ones-and-zeroes-small.png" alt="Ones and zeroes icon."></p>
+            <p><img src="media/icon-data-small.png" alt="Ones and zeroes icon."></p>
          </td>
          <td>
             <p><strong>Secure data with Zero Trust</strong> — <a href="https://aka.ms/ZTData" data-linktype="external">https://aka.ms/ZTData</a></p>
@@ -107,7 +107,7 @@ Zero Trust.
       </tr>
       <tr>
          <td>
-            <p><img src="media/icon-data-storage-disks-small.png" alt="Data storage disks icon."></p>
+            <p><img src="media/icon-infrastructure-small.png" alt="Data storage disks icon."></p>
          </td>
          <td>
             <p><strong>Secure infrastructure with Zero Trust</strong> — <a href="https://aka.ms/ZTInfrastructure" data-linktype="external">https://aka.ms/ZTInfrastructure</a></p>
@@ -119,7 +119,7 @@ Zero Trust.
       </tr>
       <tr>
          <td>
-            <p><img src="media/icon-network-diagram-small.png" alt="Network diagram icon."></p>
+            <p><img src="media/icon-networks-small.png" alt="Network diagram icon."></p>
          </td>
          <td>
             <p><strong>Secure networks with Zero Trust</strong> — <a href="https://aka.ms/ZTNetwork" data-linktype="external">https://aka.ms/ZTNetwork</a></p>
@@ -131,7 +131,7 @@ Zero Trust.
       </tr>
       <tr>
          <td>
-            <p><img src="media/icon-gear-small.png" alt="Gear icon."></p>
+            <p><img src="media/icon-visibility-automation-orchestration-small.png" alt="Gear icon."></p>
          </td>
          <td>
             <p><strong>Visibility, automation, and orchestration with Zero Trust</strong> — <a href="https://aka.ms/ZTCrossPillars" data-linktype="external">https://aka.ms/ZTCrossPillars</a></p>

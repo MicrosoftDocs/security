@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Secure endpoints with Zero Trust
 
-:::image type="icon" source="./media/icon-endpoint-devices-medium.png":::
+:::image type="icon" source="./media/icon-endpoints-medium.png":::
 
 **Background**
 
@@ -111,7 +111,7 @@ To help limit risk exposure, you need to monitor every endpoint to ensure each o
 
 After a device is registered, users can access your organization's restricted resources using their corporate username and password to sign in (or Windows Hello for Business).
 
-:::image type="content" source="./media/steps-box-endpoints-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
+:::image type="content" source="./media/diagram-steps-box-endpoints-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
 
 
 #### Register corporate devices with Azure Active Directory (AD)
@@ -257,7 +257,7 @@ After establishing compliance policies to gate access of corporate resources to 
 
 Also, [set remediation rules](https://docs.microsoft.com/mem/intune/protect/actions-for-noncompliance) for noncompliant devices, such as blocking a noncompliant device or offering the user a grace period to get compliant.
 
-:::image type="content" source="./media/steps-box-endpoints-2.png" alt-text="Diagram of the steps within phase 2 of the initial deployment objectives." border="true":::
+:::image type="content" source="./media/diagram-steps-box-endpoints-2.png" alt-text="Diagram of the steps within phase 2 of the initial deployment objectives." border="true":::
 
 
 #### Create a compliance policy with Microsoft Intune (all platforms)
@@ -326,7 +326,7 @@ Take these steps:
 
 Once data access is granted, you want to control what the user can do with the data. For example, if a user accesses a document with a corporate identity, you want to prevent that document from being saved in an unprotected consumer storage location, or from being shared with a consumer communication or chat app.
 
-:::image type="content" source="./media/steps-box-endpoints-3.png" alt-text="Diagram of the steps within phase 3 of the initial deployment objectives." border="true":::
+:::image type="content" source="./media/diagram-steps-box-endpoints-3.png" alt-text="Diagram of the steps within phase 3 of the initial deployment objectives." border="true":::
 
 
 #### Apply recommended security settings

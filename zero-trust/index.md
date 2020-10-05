@@ -149,9 +149,10 @@ With Zero Trust, we move away from a trust-by-default perspective to a trust-by-
 
 
 <br/><br/>
-<!-- [v-gmoor, 2020-09-30]: The following include is constructed correctly, but it displays only a couple of the icons. The build claims that the others are outside of the build scope, even though they are located in the same path. So, I've copied the code for the navbar into each article, which I hope is a temporary fix.
+<!-- [v-gmoor, 2020-09-30]: The following include is constructed correctly, but it displays only a couple of the icons. The build claims that the others are outside of the build scope, even though they are located in the same path. So, I've copied the code for the navbar into each article, which I hope is a temporary fix.-->
 [!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
--->
+
+<!--
 **The Zero Trust deployment guide series**
 
 :::row:::
@@ -180,7 +181,5 @@ With Zero Trust, we move away from a trust-by-default perspective to a trust-by-
 [![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
    :::column-end:::
 :::row-end:::
-
-
-
+-->
 

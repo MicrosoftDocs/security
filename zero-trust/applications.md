@@ -82,9 +82,10 @@ This guide will walk you through the steps required to secure applications and A
 
 <br/><br/>
 <!-- H2 heading, "Initial deployment objectives" -->
-<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
+<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.-->
 [!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
--->
+
+<!--
 <table border="0">
    <tr>
       <td>
@@ -96,6 +97,7 @@ This guide will walk you through the steps required to secure applications and A
       </td>
    </tr>
 </table>
+-->
 
 
 ### I. Gain visibility into the activities and data in your applications by connecting them via APIs
@@ -186,9 +188,10 @@ Follow these steps:
 
 <br/><br/>
 <!-- H2 heading, "Additional deployment objectives" -->
-<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
+<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.-->
 [!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
--->
+
+<!--
 <table border="0">
    <tr>
       <td>
@@ -200,6 +203,7 @@ Follow these steps:
       </td>
    </tr>
 </table>
+-->
 
 
 ### IV. Deploy adaptive access and session controls for all apps
@@ -272,9 +276,10 @@ Regardless of where the cloud resource or application resides, Zero Trust princi
 
 
 <br/><br/>
-<!-- [v-gmoor, 2020-09-30]: The following include is constructed correctly, but it displays only a couple of the icons. The build claims that the others are outside of the build scope, even though they are located in the same path. So, I've copied the code for the navbar into each article, which I hope is a temporary fix.
+<!-- [v-gmoor, 2020-09-30]: The following include is constructed correctly, but it displays only a couple of the icons. The build claims that the others are outside of the build scope, even though they are located in the same path. So, I've copied the code for the navbar into each article, which I hope is a temporary fix.-->
 [!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
--->
+
+<!--
 **The Zero Trust deployment guide series**
 
 :::row:::
@@ -303,3 +308,4 @@ Regardless of where the cloud resource or application resides, Zero Trust princi
 [![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
    :::column-end:::
 :::row-end:::
+-->

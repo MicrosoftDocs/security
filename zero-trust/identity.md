@@ -74,9 +74,10 @@ This guide will walk you through the steps required to manage identities followi
 
 <br/><br/>
 <!-- H2 heading, "Initial deployment objectives" -->
-<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
+<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.-->
 [!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
--->
+
+<!-- [v-gmoor, 2020-10-04] This code should be deleted when and if the preceding include file works. This code is identical to what is in ./includes/deployment-objectives-initial.md, but it references the instance of the image file that is in ./media/ rather than ./includes/media/.-->
 <table border="0">
    <tr>
       <td>
@@ -189,9 +190,10 @@ Take this step:
 
 <br/><br/>
 <!-- H2 heading, "Additional deployment objectives" -->
-<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
+<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.-->
 [!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
--->
+
+<!-- [v-gmoor, 2020-10-04] This code should be deleted when and if the preceding include file works. This code is identical to what is in ./includes/deployment-objectives-additional.md, but it references the instance of the image file that is in ./media/ rather than ./includes/media/.-->
 <table border="0">
    <tr>
       <td>
@@ -350,9 +352,14 @@ Take this step:
 Identity is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team or continue to read through the other <font style="font-size:18px">chapters of this guide</font>, which span all <font style="font-size:6px">Zero Trust pillars</font>.
 
 <br/><br/>
-<!-- [v-gmoor, 2020-09-30]: The following include is constructed correctly, but it displays only a couple of the icons. The build claims that the others are outside of the build scope, even though they are located in the same path. So, I've copied the code for the navbar into each article, which I hope is a temporary fix.
+<!-- [v-gmoor, 2020-09-30]: The following include is constructed correctly, but it displays only a couple of the icons. The build claims that the others are outside of the build scope, even though they are located in the same path. So, I've copied the code for the navbar into each article, which I hope is a temporary fix.-->
 [!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
--->
+
+
+<!-- [v-gmoor, 2020-10-04] The following code should be deleted when and if the preceding include file works.-->
+
+
+<!--[v-gmoor, 2020-20-04] The following code is the same as what is in ./includes/navbar-bottom.md. The only difference is that it relies on instances of the image files in ./media/ (rather than in ./includes/media/, where images for include files should be located).-->
 **The Zero Trust deployment guide series**
 
 :::row:::
@@ -381,3 +388,4 @@ Identity is central to a successful Zero Trust strategy. For further information
 [![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
    :::column-end:::
 :::row-end:::
+

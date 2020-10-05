@@ -12,7 +12,7 @@ ms.topic: conceptual
    <tr>
       <td>
 	     <br/>
-         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
+         <p><img src="../media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
       </td>
       <td>
          <h2>Initial deployment objectives</h2>

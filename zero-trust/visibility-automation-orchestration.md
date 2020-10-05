@@ -97,22 +97,8 @@ This guide will walk you through the steps required to manage visibility, automa
 
 <br/><br/>
 <!-- H2 heading, "Initial deployment objectives" -->
-<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.-->
 [!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
 
-<!--
-<table border="0">
-   <tr>
-      <td>
-	     <br/>
-         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
-      </td>
-      <td>
-         <h2>Initial deployment objectives</h2>
-      </td>
-   </tr>
-</table>
--->
 
 
 ### I. Establish visibility
@@ -160,22 +146,8 @@ Although machine learning and fusion analytics are provided out of the box, it i
 
 <br/><br/>
 <!-- H2 heading, "Additional deployment objectives" -->
-<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.-->
 [!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
 
-<!--
-<table border="0">
-   <tr>
-      <td>
-         <br/>
-		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
-      </td>
-      <td>
-         <h2>Additional deployment objectives</h2>
-      </td>
-   </tr>
-</table>
--->
 
 
 ### III. Enable additional protection and detection controls
@@ -196,37 +168,7 @@ Enabling additional controls improves the signal coming in to MTP and Sentinel t
 
 [Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection)
 
+
 <br/><br/>
-<!-- [v-gmoor, 2020-09-30]: The following include is constructed correctly, but it displays only a couple of the icons. The build claims that the others are outside of the build scope, even though they are located in the same path. So, I've copied the code for the navbar into each article, which I hope is a temporary fix.-->
+<!-- Include the nav bar. -->
 [!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
-
-<!--
-**The Zero Trust deployment guide series**
-
-:::row:::
-   :::column:::
-[![Icon for the introduction](./media/icon-introduction-navbar.png)](https://aka.ms/ZTDeploymentGuideIntroduction)
-   :::column-end:::
-   :::column:::
-[![Icon for identity](./media/icon-identity-navbar.png)](https://aka.ms/ZTIdentity)
-   :::column-end:::
-   :::column:::
-[![Icon for endpoints](./media/icon-endpoints-navbar.png)](https://aka.ms/ZTDevices)
-   :::column-end:::
-   :::column:::
-[![Icon for applications](./media/icon-applications-navbar.png)](https://aka.ms/ZTApplications)
-   :::column-end:::
-   :::column:::
-[![Icon for data](./media/icon-data-navbar.png)](https://aka.ms/ZTData)
-   :::column-end:::
-   :::column:::
-[![Icon for infrastructure](./media/icon-infrastructure-navbar.png)](https://aka.ms/ZTInfrastructure)
-   :::column-end:::
-   :::column:::
-[![Icon for networks](./media/icon-networks-navbar.png)](https://aka.ms/ZTNetwork)
-   :::column-end:::
-   :::column:::
-[![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
-   :::column-end:::
-:::row-end:::
--->

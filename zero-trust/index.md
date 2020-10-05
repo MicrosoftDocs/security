@@ -26,7 +26,7 @@ uncontrolled network. Regardless of where the request originates or what
 resource it accesses, the Zero Trust model teaches us to "never trust,
 always verify."
 
-:::image type="content" source="./media/zero-trust-security-elements-diagram.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
+:::image type="content" source="./media/diagram-zero-trust-security-elements.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
 
 ## Guiding principles of Zero Trust

@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Visibility, automation, and orchestration with Zero Trust
 
-:::image type="icon" source="./media/icon-gear-medium.png":::
+:::image type="icon" source="./media/icon-visibility-automation-orchestration-medium.png":::
 
 One of the significant changes in perspectives that is a hallmark of a Zero Trust security frameworks is moving away from trust-by-default toward trust-by-exception. However, you need some reliable way to establish trust once trust is needed. Since you no longer assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires the ability to gain visibility into the activities on and around the request.
 

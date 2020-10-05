@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Securing identity with Zero Trust
 
-:::image type="icon" source="./media/icon-fingerprint-medium.png":::
+:::image type="icon" source="./media/icon-identity-medium.png":::
 
 **Background** 
 
@@ -94,7 +94,7 @@ This guide will walk you through the steps required to manage identities followi
 
 Azure Active Directory (AD) enables strong authentication, a point of integration for endpoint security, and the core of your user-centric policies to guarantee least-privileged access. Azure AD's Conditional Access capabilities are the policy decision point for access to resources based on user identity, environment, device health, and risk—verified explicitly at the point of access. We will show how you can implement a Zero Trust identity strategy with Azure AD.
 
-:::image type="content" source="./media/steps-box-identity-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
+:::image type="content" source="./media/diagram-steps-box-identity-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
 
 
 #### Connect all of your users to Azure AD and federate with on-premises identity systems
@@ -153,7 +153,7 @@ Follow these steps:
 
 Azure AD Conditional Access (CA) analyzes signals such as user, device, and location to automate decisions and enforce organizational access policies for resource. You can use CA policies to apply access controls like multi-factor authentication (MFA). CA policies allow you to prompt users for MFA when needed for security and stay out of users' way when not needed.
 
-:::image type="content" source="./media/conditional-access-policies-diagram.png" alt-text="Diagram of Conditional Access policies in Zero Trust." border="false":::
+:::image type="content" source="./media/diagram-conditional-access-policies.png" alt-text="Diagram of Conditional Access policies in Zero Trust." border="false":::
 
 Microsoft provides standard conditional policies called [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that ensure a basic level of security. However, your organization may need more flexibility than security defaults offer. You can use Conditional Access to customize security defaults with more granularity and to configure new policies that meet your requirements.
 
@@ -209,7 +209,7 @@ Take this step:
 
 Once you've accomplished your initial three objectives, you can focus on additional objectives such as more robust identity governance.
 
-:::image type="content" source="./media/steps-box-identity-4.png" alt-text="Diagram of the steps within phase 4 of the additional deployment objectives." border="true":::
+:::image type="content" source="./media/diagram-steps-box-identity-4.png" alt-text="Diagram of the steps within phase 4 of the additional deployment objectives." border="true":::
 
 
 #### Secure privileged access with Privileged Identity Management
@@ -259,7 +259,7 @@ Take this step:
 
 Real-time analysis is critical for determining risk and protection.
 
-:::image type="content" source="./media/steps-box-identity-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
+:::image type="content" source="./media/diagram-steps-box-identity-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
 
 #### Deploy Azure AD Password Protection
 

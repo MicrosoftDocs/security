@@ -6,15 +6,18 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 09/13/2020
+ms.date: 10/06/2020
 ---
 
 # Security news and highlights
 
 The security documentation site provides you with current news and highlights from across Microsoft. News and highlights are updated regularly to bring you the most relevant security information.
 
-
 Below are past news and highlights that you may have missed or would like to revisit.
+
+October, 2020
+
+- [Cloud Adoption Framework for Azure - Define a security strategy](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy)
 
 September, 2020
 

@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Secure endpoints with Zero Trust
 
-:::image type="icon" source="./media/icon-endpoint-devices-medium.png":::
+:::image type="icon" source="./media/icon-endpoints-medium.png":::
 
 **Background**
 
@@ -89,20 +89,8 @@ This guide will walk you through the steps required to secure your devices follo
 
 <br/><br/>
 <!-- H2 heading, "Initial deployment objectives" -->
-<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
 [!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
--->
-<table border="0">
-   <tr>
-      <td>
-	     <br/>
-         <p><img src="media/icon-initial-deployment.png" alt="Checklist icon with one checkmark."></p>
-      </td>
-      <td>
-         <h2>Initial deployment objectives</h2>
-      </td>
-   </tr>
-</table>
+
 
 
 ### I. Endpoints are registered with a cloud identity providers
@@ -111,7 +99,7 @@ To help limit risk exposure, you need to monitor every endpoint to ensure each o
 
 After a device is registered, users can access your organization's restricted resources using their corporate username and password to sign in (or Windows Hello for Business).
 
-:::image type="content" source="./media/steps-box-endpoints-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
+:::image type="content" source="./media/diagram-steps-box-endpoints-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
 
 
 #### Register corporate devices with Azure Active Directory (AD)
@@ -257,7 +245,7 @@ After establishing compliance policies to gate access of corporate resources to 
 
 Also, [set remediation rules](https://docs.microsoft.com/mem/intune/protect/actions-for-noncompliance) for noncompliant devices, such as blocking a noncompliant device or offering the user a grace period to get compliant.
 
-:::image type="content" source="./media/steps-box-endpoints-2.png" alt-text="Diagram of the steps within phase 2 of the initial deployment objectives." border="true":::
+:::image type="content" source="./media/diagram-steps-box-endpoints-2.png" alt-text="Diagram of the steps within phase 2 of the initial deployment objectives." border="true":::
 
 
 #### Create a compliance policy with Microsoft Intune (all platforms)
@@ -326,7 +314,7 @@ Take these steps:
 
 Once data access is granted, you want to control what the user can do with the data. For example, if a user accesses a document with a corporate identity, you want to prevent that document from being saved in an unprotected consumer storage location, or from being shared with a consumer communication or chat app.
 
-:::image type="content" source="./media/steps-box-endpoints-3.png" alt-text="Diagram of the steps within phase 3 of the initial deployment objectives." border="true":::
+:::image type="content" source="./media/diagram-steps-box-endpoints-3.png" alt-text="Diagram of the steps within phase 3 of the initial deployment objectives." border="true":::
 
 
 #### Apply recommended security settings
@@ -507,20 +495,8 @@ Follow these steps:
 
 <br/><br/>
 <!-- H2 heading, "Additional deployment objectives" -->
-<!-- [v-gmoor, 2020-09-30] The following include worked fine in the release branch, but for some reason, the build considered the included icon image to be out of scope when we built this for the live branch. So, I am copying in the code from the include here to take the place of the include file until we can figure out that problem.
 [!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
--->
-<table border="0">
-   <tr>
-      <td>
-         <br/>
-		 <p><img src="./media/icon-additional-deployment.png" alt="Checklist icon with two checkmarks."></p>
-      </td>
-      <td>
-         <h2>Additional deployment objectives</h2>
-      </td>
-   </tr>
-</table>
+
 
 
 ### IV. Endpoint threat detection is used to monitor device risk
@@ -609,34 +585,5 @@ A Zero Trust approach can significantly strengthen the security posture of your 
 
 
 <br/><br/>
-<!-- [v-gmoor, 2020-09-30]: The following include is constructed correctly, but it displays only a couple of the icons. The build claims that the others are outside of the build scope, even though they are located in the same path. So, I've copied the code for the navbar into each article, which I hope is a temporary fix.
+<!-- Include the nav bar. -->
 [!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
--->
-**The Zero Trust deployment guide series**
-
-:::row:::
-   :::column:::
-[![Icon for the introduction](./media/icon-introduction-navbar.png)](https://aka.ms/ZTDeploymentGuideIntroduction)
-   :::column-end:::
-   :::column:::
-[![Icon for identity](./media/icon-identity-navbar.png)](https://aka.ms/ZTIdentity)
-   :::column-end:::
-   :::column:::
-[![Icon for endpoints](./media/icon-endpoints-navbar.png)](https://aka.ms/ZTDevices)
-   :::column-end:::
-   :::column:::
-[![Icon for applications](./media/icon-applications-navbar.png)](https://aka.ms/ZTApplications)
-   :::column-end:::
-   :::column:::
-[![Icon for data](./media/icon-data-navbar.png)](https://aka.ms/ZTData)
-   :::column-end:::
-   :::column:::
-[![Icon for infrastructure](./media/icon-infrastructure-navbar.png)](https://aka.ms/ZTInfrastructure)
-   :::column-end:::
-   :::column:::
-[![Icon for networks](./media/icon-networks-navbar.png)](https://aka.ms/ZTNetwork)
-   :::column-end:::
-   :::column:::
-[![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
-   :::column-end:::
-:::row-end:::

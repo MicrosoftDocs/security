@@ -26,7 +26,7 @@ uncontrolled network. Regardless of where the request originates or what
 resource it accesses, the Zero Trust model teaches us to "never trust,
 always verify."
 
-:::image type="content" source="./media/zero-trust-security-elements-diagram.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
+:::image type="content" source="./media/diagram-zero-trust-security-elements.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
 
 ## Guiding principles of Zero Trust
@@ -56,7 +56,7 @@ Zero Trust.
 <table border="0">
    <tr>
       <td>
-         <p><img src="media/icon-fingerprint-small.png" alt="Fingerprint icon."></p>
+         <p><img src="media/icon-identity-small.png" alt="Fingerprint icon."></p>
       </td>
       <td>
          <p><strong>Secure identity with Zero Trust</strong> — <a href="https://aka.ms/ZTIdentity" data-linktype="external">https://aka.ms/ZTIdentity</a></p>
@@ -68,7 +68,7 @@ Zero Trust.
    </tr>
    <tr>
       <td>
-         <p><img src="media/icon-endpoint-devices-small.png" alt="Endpoint devices icon."></p>
+         <p><img src="media/icon-endpoints-small.png" alt="Endpoint devices icon."></p>
       </td>
       <td>
          <p><strong>Secure endpoints with Zero Trust</strong> — <a href="https://aka.ms/ZTDevices" data-linktype="external">https://aka.ms/ZTDevices</a></p>
@@ -80,7 +80,7 @@ Zero Trust.
    </tr>
    <tr>
       <td>
-         <p><img src="media/icon-application-window-small.png" alt="Application window icon."></p>
+         <p><img src="media/icon-applications-small.png" alt="Application window icon."></p>
       </td>
       <td>
          <p><strong>Secure applications with Zero Trust</strong> — <a href="https://aka.ms/ZTApplications" data-linktype="external">https://aka.ms/ZTApplications</a></p>
@@ -92,7 +92,7 @@ Zero Trust.
    </tr>
    <tr>
       <td>
-         <p><img src="media/icon-ones-and-zeroes-small.png" alt="Ones and zeroes icon."></p>
+         <p><img src="media/icon-data-small.png" alt="Ones and zeroes icon."></p>
       </td>
       <td>
          <p><strong>Secure data with Zero Trust</strong> — <a href="https://aka.ms/ZTData" data-linktype="external">https://aka.ms/ZTData</a></p>
@@ -104,7 +104,7 @@ Zero Trust.
    </tr>
    <tr>
       <td>
-         <p><img src="media/icon-data-storage-disks-small.png" alt="Data storage disks icon."></p>
+         <p><img src="media/icon-infrastructure-small.png" alt="Data storage disks icon."></p>
       </td>
       <td>
          <p><strong>Secure infrastructure with Zero Trust</strong> — <a href="https://aka.ms/ZTInfrastructure" data-linktype="external">https://aka.ms/ZTInfrastructure</a></p>
@@ -116,7 +116,7 @@ Zero Trust.
    </tr>
    <tr>
       <td>
-         <p><img src="media/icon-network-diagram-small.png" alt="Network diagram icon."></p>
+         <p><img src="media/icon-networks-small.png" alt="Network diagram icon."></p>
       </td>
       <td>
          <p><strong>Secure networks with Zero Trust</strong> — <a href="https://aka.ms/ZTNetwork" data-linktype="external">https://aka.ms/ZTNetwork</a></p>
@@ -128,7 +128,7 @@ Zero Trust.
    </tr>
    <tr>
       <td>
-         <p><img src="media/icon-gear-small.png" alt="Gear icon."></p>
+         <p><img src="media/icon-visibility-automation-orchestration-small.png" alt="Gear icon."></p>
       </td>
       <td>
          <p><strong>Visibility, automation, and orchestration with Zero Trust</strong> — <a href="https://aka.ms/ZTCrossPillars" data-linktype="external">https://aka.ms/ZTCrossPillars</a></p>
@@ -144,39 +144,5 @@ Zero Trust.
 With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
 
 
-
-<br/><br/>
-<!-- [v-gmoor, 2020-09-30]: The following include is constructed correctly, but it displays only a couple of the icons. The build claims that the others are outside of the build scope, even though they are located in the same path. So, I've copied the code for the navbar into each article, which I hope is a temporary fix.
+<br/><br/><!-- Include the nav bar. -->
 [!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
--->
-**The Zero Trust deployment guide series**
-
-:::row:::
-   :::column:::
-[![Icon for the introduction](./media/icon-introduction-navbar.png)](https://aka.ms/ZTDeploymentGuideIntroduction)
-   :::column-end:::
-   :::column:::
-[![Icon for identity](./media/icon-identity-navbar.png)](https://aka.ms/ZTIdentity)
-   :::column-end:::
-   :::column:::
-[![Icon for endpoints](./media/icon-endpoints-navbar.png)](https://aka.ms/ZTDevices)
-   :::column-end:::
-   :::column:::
-[![Icon for applications](./media/icon-applications-navbar.png)](https://aka.ms/ZTApplications)
-   :::column-end:::
-   :::column:::
-[![Icon for data](./media/icon-data-navbar.png)](https://aka.ms/ZTData)
-   :::column-end:::
-   :::column:::
-[![Icon for infrastructure](./media/icon-infrastructure-navbar.png)](https://aka.ms/ZTInfrastructure)
-   :::column-end:::
-   :::column:::
-[![Icon for networks](./media/icon-networks-navbar.png)](https://aka.ms/ZTNetwork)
-   :::column-end:::
-   :::column:::
-[![Icon for visibility, automation, orchestration](./media/icon-visibility-automation-orchestration-navbar.png)](https://aka.ms/ZTCrossPillars)
-   :::column-end:::
-:::row-end:::
-
-
-

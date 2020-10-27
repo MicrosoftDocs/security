@@ -36,7 +36,7 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 
 6.   Program Participants must inform Microsoft via email at least 120 days before transferring ownership of enrolled root or subordinate CA that chains to an enrolled root to another entity or person. 
  
-7. Reason Code must be included in revocations. CAs must update the CCADB when revoking any intermediate certificates within 30 days. 
+7. Reason Code must be included in revocations for intermediate certificates. CAs must update the CCADB when revoking any intermediate certificates within 30 days. 
 
 8.  Program Participants agree that Microsoft may contact customers that Microsoft believes may be substantially impacted by the pending removal of a root CA from the Program. 
 
@@ -138,6 +138,7 @@ have their kernel-mode drivers included in Windows must follow the
 procedures outlined by the Microsoft Hardware Development Team.  Program
 documentation can be found
 [here](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+
 
 
 

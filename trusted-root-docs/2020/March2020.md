@@ -1,7 +1,7 @@
 ---
 title: March 2020 Deployment Notice  - Microsoft Trusted Root Program 
 description: This document provides details about the changes made in March 2020 to the root store.
-ms.date: 03/18/2019
+ms.date: 03/18/2020
 ms.service: security
 author: kasirota
 ms.author: kasirota
@@ -17,7 +17,9 @@ This release will **add** the following roots (CA \ Root Certificate \ SHA-1 Thu
 1. Microsoft \\ Microsoft EV ECC Root Certificate Authority 2017 \\ 6B1937ABFD64E1E40DAF2262A27857C015D6228D
 2. Microsoft \\ Microsoft EV RSA Root Certificate Authority 2017 \\ ADA06E72393CCBE873648CF122A91C35EF4C984D
 3. Agence Nationale de Certification Electronique (ANCE) \\ TunTrust Root CA \\ CFE970840FE0730F9DF60C7F2C4BEE2046349CBB
-4. Red Abogacía	\\ ACA ROOT \\ 496592B305707386CC5F3CDB259AE66D7661FCA
+
+This release will **remove the NotBefore status** of the following roots: 
+1. Red Abogacía	\\ ACA ROOT \\ 496592B305707386CC5F3CDB259AE66D7661FCA
 
 
 This release will **add the code signing EKU** in the following roots:

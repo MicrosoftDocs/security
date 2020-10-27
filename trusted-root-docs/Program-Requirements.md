@@ -69,7 +69,7 @@ Program.
 6.  All end-entity certificates must contain an AIA extension with a valid OCSP URL. These certificates may also contain a CDP extension that contains a valid CRL URL. All other certificate types must contain either an AIA extension with an OCSP URL or a CDP extension with a valid CRL URL
 7.  Private Keys and subject names must be unique per root certificate; reuse of private keys or subject names in subsequent root certificates by the same CA may result in unexpected certificate chaining issues. CAs must generate a new key and apply a new subject name when generating a new root certificate prior to distribution by Microsoft.
 8.  Government CAs must restrict server authentication to government-issued top level domains and may only issue other certificates to the ISO3166 country codes that the country has sovereign control over (see  <https://aka.ms/auditreqs> section III for the definition of a "Government CA"). These government-issued TLDs are referred to in each CA's respective contract. 
-9. Issuing CA certificates under root certificates submitted for distribution by the Program must separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single intermediate-issuing CA must not be used to issue server authentication, S/MIME, code signing and time stamping certificates. A separate intermediate must be used for each use case.
+9. Issuing CA certificates under root certificates submitted for distribution by the Program must separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single intermediate-issuing CA must not be used to issue server authentication, S/MIME, code signing and time stamping certificates. A separate intermediate must be used for each use case. 
 10. End-entity certificates must meet the requirements for algorithm type and key size for Subscriber certificates listed in Appendix A of the CAB Forum Baseline Requirements located at   https://cabforum.org/baseline-requirements-documents/.
 11. CAs must declare one of the following policy OIDs in its Certificate Policy extension end-entity certificate: 
     1. DV 2.23.140.1.2.1 
@@ -125,6 +125,7 @@ Program.
     5.  Document Signing EKU=1.3.6.1.4.1.311.10.3.12
      -   This EKU is used for signing documents within Office. It is not required for other document signing uses.
     
+    
     NOTE: Microsoft is not adding new root certificates with the Code Signing EKU at this time. New root certificates meant to replace exisiting root certificates that already have the Code Signing EKU and are compliant with code signing audit requirements will be considered. Any changes to this policy will be updated here. 
 
  
@@ -138,6 +139,7 @@ have their kernel-mode drivers included in Windows must follow the
 procedures outlined by the Microsoft Hardware Development Team.  Program
 documentation can be found
 [here](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+
 
 
 

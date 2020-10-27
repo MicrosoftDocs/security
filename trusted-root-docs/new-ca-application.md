@@ -8,6 +8,10 @@ author: kasirota
 ms.topic: conceptual
 ---
 # New CA application - Microsoft Trusted Root Program
+
+> [!NOTE]
+> Microsoft is not accepting new CA applicants at this time. We will update this page when we will be accepting new CA applicants into our program. 
+
 ## 1. Introduction
 
 This page describes the application process to become a new certificate authority in the Microsoft Trusted Root Program. 

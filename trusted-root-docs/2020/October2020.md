@@ -12,10 +12,10 @@ ms.topic: conceptual
 
 On Thursday, October 27, 2020, Microsoft will release an update to the Microsoft Trusted Root Certificate Program.
 
-This release will **NotBefore** to the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
-1. 	DATEV eG // CA DATEV BT 02 // 39410BC2303748066069A72A664DE4C743481296
-2. 	DATEV eG // CA DATEV INT 02 // 93F7F48B1261943F6A78210C52E626DFBFBBE260
-3. 	DATEV eG // CA DATEV STD 02 // AB9D58C03F54B1DAE3F7C2D4C6C1EC3694559C37
+This release will **NotBefore the Server Authentication** to the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
+1. 	DATEV eG \\ CA DATEV BT 02 \\ 39410BC2303748066069A72A664DE4C743481296
+2. 	DATEV eG \\ CA DATEV INT 02 \\ 93F7F48B1261943F6A78210C52E626DFBFBBE260
+3. 	DATEV eG \\ CA DATEV STD 02 \\ AB9D58C03F54B1DAE3F7C2D4C6C1EC3694559C37
 
 
 

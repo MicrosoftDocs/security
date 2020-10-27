@@ -69,7 +69,7 @@ Program.
 6.  All end-entity certificates must contain an AIA extension with a valid OCSP URL. These certificates may also contain a CDP extension that contains a valid CRL URL. All other certificate types must contain either an AIA extension with an OCSP URL or a CDP extension with a valid CRL URL
 7.  Private Keys and subject names must be unique per root certificate; reuse of private keys or subject names in subsequent root certificates by the same CA may result in unexpected certificate chaining issues. CAs must generate a new key and apply a new subject name when generating a new root certificate prior to distribution by Microsoft.
 8.  Government CAs must restrict server authentication to government-issued top level domains and may only issue other certificates to the ISO3166 country codes that the country has sovereign control over (see  <https://aka.ms/auditreqs> section III for the definition of a "Government CA"). These government-issued TLDs are referred to in each CA's respective contract. 
-9. Issuing CA certificates that chain to a participating Root CA  must be constrained to a single EKU (e.g., separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single Issuing CA must not combine server authentication with S/MIME, code signing or time stamping EKU.  A separate intermediate must be used for each use case.
+9. Issuing CA certificates under root certificates submitted for distribution by the Program must separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single intermediate-issuing CA must not be used to issue server authentication, S/MIME, code signing and time stamping certificates. A separate intermediate must be used for each use case.
 10. End-entity certificates must meet the requirements for algorithm type and key size for Subscriber certificates listed in Appendix A of the CAB Forum Baseline Requirements located at   https://cabforum.org/baseline-requirements-documents/.
 11. CAs must declare one of the following policy OIDs in its Certificate Policy extension end-entity certificate: 
     1. DV 2.23.140.1.2.1 
@@ -81,7 +81,7 @@ Program.
 12. End-entity certificates that include a Basic Constraints extension in accordance with IETF RFC 5280 must have the cA field set to FALSE and the pathLenConstraint field must be absent.
 13. A CA must technically constrain an OCSP responder such that the only EKU allowed is OCSP Signing.
 
- 
+ ote
 
 ### B. Key Requirements
 
@@ -121,10 +121,11 @@ Program.
     1.  Server Authentication =1.3.6.1.5.5.7.3.1
     2.  Client Authentication =1.3.6.1.5.5.7.3.2
     3.  Secure E-mail EKU=1.3.6.1.5.5.7.3.4
-    4.  Code Signing EKU=1.3.6.1.5.5.7.3.3
-    5.  Time stamping EKU=1.3.6.1.5.5.7.3.8
-    6.  Document Signing EKU=1.3.6.1.4.1.311.10.3.12
+    4.  Time stamping EKU=1.3.6.1.5.5.7.3.8
+    5.  Document Signing EKU=1.3.6.1.4.1.311.10.3.12
      -   This EKU is used for signing documents within Office. It is not required for other document signing uses.
+    
+    NOTE: Microsoft is not adding new root certificates with the Code Signing EKU at this time. New root certificates meant to replace exisiting root certificates that already have the Code Signing EKU and are compliant with code signing audit requirements will be considered. Any changes to this policy will be updated here. 
 
  
 
@@ -138,18 +139,6 @@ procedures outlined by the Microsoft Hardware Development Team.  Program
 documentation can be found
 [here](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
-------------------------------------------------------------------------
-
-## 4. Technical Best Practices
-
-
-Though not required by Microsoft, the following represents what
-Microsoft believes to be the best practices that each CA should follow.
-
-1.  Microsoft recommends that each CA have an established communication channel to its customers. For example, if Microsoft were to notify the CA that Microsoft was disabling weak file hashes, the CA should have a method to notify its customers to use the updated signtool.exe file.
-2.  Because root certificates will be removed without regard to any unexpired end entity certificates issued from them, the CAs should plan to cease issuing end entity certificates for uses besides code  signing such that those certificates expire according to these root removal guidelines.
-3.  While Windows will not enforce specific policies on Secure Email certificates, Microsoft recommends that CAs start issuing new Secure Email certificates using the SHA-2 algorithm.
-4.  Microsoft recommends an OCSP responder maximum validity period of one (1) day.
 
 
 

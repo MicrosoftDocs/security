@@ -47,3 +47,8 @@
     items:
     - name: Strategy brief
       href: ../MSRC/FY18-Strategy-Brief.md
+
+  - name: Resources
+    items:
+    - name: Past news and highlights
+      href: news-and-highlights.md

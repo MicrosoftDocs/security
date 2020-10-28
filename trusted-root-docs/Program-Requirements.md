@@ -36,16 +36,18 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 
 6.   Program Participants must inform Microsoft via email at least 120 days before transferring ownership of enrolled root or subordinate CA that chains to an enrolled root to another entity or person. 
  
-7. Reason Code must be included in revocations. CAs must update the CCADB when revoking any intermediate certificates within 30 days. 
+7. Reason Code must be included in revocations for intermediate certificates. CAs must update the CCADB when revoking any intermediate certificates within 30 days. 
 
 8.  Program Participants agree that Microsoft may contact customers that Microsoft believes may be substantially impacted by the pending removal of a root CA from the Program. 
 
+9. Program Participants must inform Microsoft via email when they delegate publicly trusted timestamping duties to a 3rd party.
+
 ### Other Requirements
-9.  Commercial CAs may not enroll a root CA into the Program that is intended to be primarily trusted internally within an organization (i.e. Enterprise CAs).
+10.  Commercial CAs may not enroll a root CA into the Program that is intended to be primarily trusted internally within an organization (i.e. Enterprise CAs).
 
-10. If a CA uses a subcontractor to operate any aspect of its business, the CA will assume responsibility for the subcontractor's business operations.
+11. If a CA uses a subcontractor to operate any aspect of its business, the CA will assume responsibility for the subcontractor's business operations.
 
-11. If Microsoft, in its sole discretion, identifies a certificate   whose usage or attributes are determined to be contrary to the objectives of the Trusted Root Program, Microsoft will notify the responsible CA and request that it revoke the certificate. The CA must either revoke the certificate or request an exception from Microsoft within 24 hours of receiving Microsoft's notice. Microsoft will review submitted material and inform the CA of its final decision to grant or deny the exception at its sole discretion. In the event that Microsoft does not grant the exception, the CA must revoke the certificate within 24 hours of the exception being denied. 
+12. If Microsoft, in its sole discretion, identifies a certificate   whose usage or attributes are determined to be contrary to the objectives of the Trusted Root Program, Microsoft will notify the responsible CA and request that it revoke the certificate. The CA must either revoke the certificate or request an exception from Microsoft within 24 hours of receiving Microsoft's notice. Microsoft will review submitted material and inform the CA of its final decision to grant or deny the exception at its sole discretion. In the event that Microsoft does not grant the exception, the CA must revoke the certificate within 24 hours of the exception being denied. 
 
 
 ------------------------------------------------------------------------
@@ -60,30 +62,30 @@ Program.
 1.  Root certificates must be x.509 v3 certificates.
     1.  The CN attribute must identify the publisher and must be unique.
     2.  The CN attribute must be in a language that is appropriate for the CA's market and readable by a typical customer in that market.
-    3.  Basic Constraints extension: must be cA=true.
+    3.  Basic Constraints extension: must be CA=true.
     4.  Key Usage extension MUST be present and MUST be marked critical. Bit positions for KeyCertSign and cRLSign MUST be set. If the Root CA Private Key is used for signing OCSP responses, then the digitalSignature bit MUST be set.
         -   Root Key Sizes must meet the requirements detailed in "Key Requirements".
 2.  Certificates to be added to the Trusted Root Store MUST be self-signed root certificates. 
 3.   Newly minted Root CAs must be valid for a minimum of 8 years, and a maximum of 25 years, from the date of submission.
-5.  Participating Root CAs may not issue new 1024-bit RSA certificates from roots covered by these requirements.
-6.  All end-entity certificates must contain an AIA extension with a valid OCSP URL. These certificates may also contain a CDP extension that contains a valid CRL URL. All other certificate types must contain either an AIA extension with an OCSP URL or a CDP extension with a valid CRL URL
-7.  Private Keys and subject names must be unique per root certificate; reuse of private keys or subject names in subsequent root certificates by the same CA may result in unexpected certificate chaining issues. CAs must generate a new key and apply a new subject name when generating a new root certificate prior to distribution by Microsoft.
-8.  Government CAs must restrict server authentication to government-issued top level domains and may only issue other certificates to the ISO3166 country codes that the country has sovereign control over (see  <https://aka.ms/auditreqs> section III for the definition of a "Government CA"). These government-issued TLDs are referred to in each CA's respective contract. 
-9. Issuing CA certificates that chain to a participating Root CA  must be constrained to a single EKU (e.g., separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single Issuing CA must not combine server authentication with S/MIME, code signing or time stamping EKU.  A separate intermediate must be used for each use case.
-10. End-entity certificates must meet the requirements for algorithm type and key size for Subscriber certificates listed in Appendix A of the CAB Forum Baseline Requirements located at   https://cabforum.org/baseline-requirements-documents/.
-11. CAs must declare one of the following policy OIDs in its Certificate Policy extension end-entity certificate: 
+4.  Participating Root CAs may not issue new 1024-bit RSA certificates from roots covered by these requirements.
+5.  All end-entity certificates must contain an AIA extension with a valid OCSP URL. These certificates may also contain a CDP extension that contains a valid CRL URL. All other certificate types must contain either an AIA extension with an OCSP URL or a CDP extension with a valid CRL URL
+6.  Private Keys and subject names must be unique per root certificate; reuse of private keys or subject names in subsequent root certificates by the same CA may result in unexpected certificate chaining issues. CAs must generate a new key and apply a new subject name when generating a new root certificate prior to distribution by Microsoft.
+7.  Government CAs must restrict server authentication to government-issued top level domains and may only issue other certificates to the ISO3166 country codes that the country has sovereign control over (see  <https://aka.ms/auditreqs> section III for the definition of a "Government CA"). These government-issued TLDs are referred to in each CA's respective contract. 
+8. Issuing CA certificates under root certificates submitted for distribution by the Program must separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single intermediate-issuing CA must not be used to issue server authentication, S/MIME, code signing and time stamping certificates. A separate intermediate must be used for each use case. 
+9. End-entity certificates must meet the requirements for algorithm type and key size for Subscriber certificates listed in Appendix A of the CAB Forum Baseline Requirements located at   https://cabforum.org/baseline-requirements-documents/.
+10. CAs must declare one of the following policy OIDs in its Certificate Policy extension end-entity certificate: 
     1. DV 2.23.140.1.2.1 
     2. OV 2.23.140.1.2.2
     3. EV 2.23.140.1.1. 
     4. IV 2.23.140.1.2.3 
     5. EV Code Signing 2.23.140.1.3
     6. Non-EV Code Signing 2.23.140.1.4.1
-12. End-entity certificates that include a Basic Constraints extension in accordance with IETF RFC 5280 must have the cA field set to FALSE and the pathLenConstraint field must be absent.
-13. A CA must technically constrain an OCSP responder such that the only EKU allowed is OCSP Signing.
+11. End-entity certificates that include a Basic Constraints extension in accordance with IETF RFC 5280 must have the cA field set to FALSE and the pathLenConstraint field must be absent.
+12. A CA must technically constrain an OCSP responder such that the only EKU allowed is OCSP Signing.
+13. A CA must be able to revoke a certificate to a specific date as requested by Microsoft.
 
- 
 
-### B. Key Requirements
+### B. Signature Requirements
 
 | Algorithm | All Uses Except for Code Signing and Time Stamping | Code Signing and Time Stamping Use |
 | --- | --- | --- |
@@ -107,9 +109,8 @@ Program.
 
 ### D. Code Signing Root Certificate Requirements
 
-1.  New root CAs that support code-signing infrastructure must be signed with using the SHA2 hashing algorithm.
-2.  Root certificates that support code signing use may be removed from distribution by the Program 10 years from the date of distribution of a replacement rollover root certificate or sooner, if requested by the CA. 
-3.  Root certificates that remain in distribution to support only code signing use beyond their algorithm security lifetime (e.g. RSA 1024  = 2014, RSA 2048 = 2030) may be set to 'disable' in the Windows 10 OS. 
+1.  Root certificates that support code signing use may be removed from distribution by the Program 10 years from the date of distribution of a replacement rollover root certificate or sooner, if requested by the CA. 
+2.  Root certificates that remain in distribution to support only code signing use beyond their algorithm security lifetime (e.g. RSA 1024  = 2014, RSA 2048 = 2030) may be set to 'disable' in the Windows 10 OS. 
 
  
 
@@ -121,12 +122,11 @@ Program.
     1.  Server Authentication =1.3.6.1.5.5.7.3.1
     2.  Client Authentication =1.3.6.1.5.5.7.3.2
     3.  Secure E-mail EKU=1.3.6.1.5.5.7.3.4
-    4.  Code Signing EKU=1.3.6.1.5.5.7.3.3
-    5.  Time stamping EKU=1.3.6.1.5.5.7.3.8
-    6.  Document Signing EKU=1.3.6.1.4.1.311.10.3.12
+    4.  Time stamping EKU=1.3.6.1.5.5.7.3.8
+    5.  Document Signing EKU=1.3.6.1.4.1.311.10.3.12
      -   This EKU is used for signing documents within Office. It is not required for other document signing uses.
-
  
+  NOTE: Microsoft is not adding new root certificates with the Code Signing EKU at this time. New root certificates meant to replace exisiting root certificates that already have the Code Signing EKU and are compliant with code signing audit requirements will be considered. Any changes to this policy will be updated here. 
 
 ### F. Windows 10 Kernel Mode Code Signing (KMCS) Requirements
 
@@ -138,18 +138,8 @@ procedures outlined by the Microsoft Hardware Development Team.  Program
 documentation can be found
 [here](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
-------------------------------------------------------------------------
-
-## 5. Technical Best Practices
 
 
-Though not required by Microsoft, the following represents what
-Microsoft believes to be the best practices that each CA should follow.
-
-1.  Microsoft recommends that each CA have an established communication channel to its customers. For example, if Microsoft were to notify the CA that Microsoft was disabling weak file hashes, the CA should have a method to notify its customers to use the updated signtool.exe file.
-2.  Because root certificates will be removed without regard to any unexpired end entity certificates issued from them, the CAs should plan to cease issuing end entity certificates for uses besides code  signing such that those certificates expire according to these root removal guidelines.
-3.  While Windows will not enforce specific policies on Secure Email certificates, Microsoft recommends that CAs start issuing new Secure Email certificates using the SHA-2 algorithm.
-4.  Microsoft recommends an OCSP responder maximum validity period of one (1) day.
 
 
 

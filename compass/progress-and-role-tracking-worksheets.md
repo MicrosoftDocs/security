@@ -28,3 +28,6 @@ The cloud role tracking worksheet assists with designating the parties responsib
 [![Thumb image of cloud role tracking worksheet](https://docs.microsoft.com/microsoft-365/downloads/security-compass-cloud-role-tracking-thumb.png)](https://docs.microsoft.com/microsoft-365/downloads/security-compass-cloud-role-tracking.pdf)
 
 [PDF](https://docs.microsoft.com/microsoft-365/downloads/security-compass-cloud-role-tracking.pdf) | [PowerPoint](https://docs.microsoft.com/microsoft-365/downloads/security-compass-cloud-role-tracking.pptx)
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft information protection and storage capabilities"
+title: "Information protection and storage capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Lists capabilities that can help with information protection and storage."
 ---
 
-# Microsoft information protection and storage capabilities
+# Information protection and storage capabilities
 This article lists the capabilities that can help with information protection and storage.
 
 ## Capabilities that work with Microsoft 365 
@@ -48,5 +48,5 @@ Microsoft 365 and Office 365 include capabilities that can be applied to specifi
 | Azure SQL Database security capabilities| Security capabilities for data include Always encrypted and Transparent Data Encryption (TDE)| [An overview of Azure SQL Database security capabilities](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)|
 | | | |
 
-
-
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

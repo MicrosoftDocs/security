@@ -1,5 +1,5 @@
 ---
-title: "Microsoft security operations capabilities"
+title: "Security operations capabilities"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -9,7 +9,7 @@ localization_priority: Normal
 description: "Lists capabilities that can help with security operations."
 ---
 
-# Microsoft security operations capabilities
+# Security operations capabilities
 This article lists the capabilities that can help with security operations.
 
 <br> 
@@ -25,3 +25,6 @@ This article lists the capabilities that can help with security operations.
 |Microsoft Cloud App Security|Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services. |[Microsoft Cloud App Security documentation](https://docs.microsoft.com/cloud-app-security/) |
 |Azure Monitor| Azure Monitor maximizes the availability and performance of your applications and services by delivering a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. It helps you understand how your applications are performing and proactively identifies issues affecting them and the resources they depend on.|[Azure Monitor documentation](https://docs.microsoft.com/azure/azure-monitor/) |
 | | | |
+
+## Next steps
+For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

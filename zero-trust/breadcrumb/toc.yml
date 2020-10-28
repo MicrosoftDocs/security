@@ -1,0 +1,11 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Security
+    href: /security
+    topicHref: /security/index
+    items:
+    - name: Microsoft Zero Trust
+      href: /security/zero-trust/
+      topicHref: /security/zero-trust

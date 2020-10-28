@@ -2,11 +2,12 @@
   href: program-requirements.md
 - name: Audit Requirements
   href: audit-requirements.md
-- name: Incident Reporting
+- name: Incident Reporting Procedure
   href: Incident-Reporting.md
+- name: New Certificate Authority Application Procedure
+  href: new-ca-application.md
 - name: Release Notes
   href: Release-Notes.md
 - name: List of Participants
   href: Participants-List.md
-- name: Release Notes Home Page
-  href: Release-Notes.md
+

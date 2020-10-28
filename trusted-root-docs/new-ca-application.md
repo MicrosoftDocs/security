@@ -8,6 +8,7 @@ author: kasirota
 ms.topic: conceptual
 ---
 # New CA application - Microsoft Trusted Root Program
+
 ## 1. Introduction
 
 This page describes the application process to become a new certificate authority in the Microsoft Trusted Root Program. 

@@ -145,6 +145,7 @@ their audit letter.
     audit. Please reference WebTrust/ETSI guidelines or
     <https://aka.ms/auditreqs> and list the full name and version of the
     audit standards referenced.
+
     
 #### CAs submitting Webtrust audits
 1.  Audits conducted by certified WebTrust auditors must have their
@@ -207,6 +208,7 @@ msroot\@microsoft.com to have the EKU status set to "NotBefore."
 
 Note 1: If a CA uses an ETSI-based audit, it must perform a **full**
 audit annually, and Microsoft will not accept surveillance audits. 
+Note 2: All ETSI audits statements must be audited against the CA/Browser Forum requirements . This must be mentioned in the audit letter. the ACAB'c [https://acab-c.com] has provided guidance that meets the Microsoft requirements.  
 
 | | EN 319 411-1: DVCP, OVCP or PTC-BR policies | EN 319 411-1: EVCP policy | EN 319 411-2: QCP-w policy (based on EN 319 411-1, EVCP) | EN 319 411-1: LCP, NCP, NCP+ policies | EN 319 411-2: QCP-n, QCP-n-qscd, QCP-l, QCP-l-qscd policies (based on EN 319 411-1, NCP/NCP+)  |
 | --- | --- | --- | --- | --- | --- |

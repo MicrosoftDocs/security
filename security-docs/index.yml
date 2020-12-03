@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 10/06/2020
+  ms.date: 12/02/2020
 
 
 # Maximum of 8 items
@@ -23,25 +23,25 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
+    - title: Microsoft Pluton - CPU security for PCs
+      itemType: overview
+      url: https://www.microsoft.com/security/blog/2020/11/17/meet-the-microsoft-pluton-processor-the-security-chip-designed-for-the-future-of-windows-pcs/
+    # Card
+    - title: Cyberattacks targeting health care
+      itemType: overview
+      url: https://blogs.microsoft.com/on-the-issues/2020/11/13/health-care-cyberattacks-covid-19-paris-peace-forum/
+    # Card
     - title: Microsoft Digital Defense Report
       itemType: concept
       url: https://www.microsoft.com/download/details.aspx?id=101738
-    # Card
-    - title: Become an Azure Sentinel Ninja - level 400 training
-      itemType: learn
-      url: https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310
     # Card
     - title: Security configuration baseline settings for Windows 10 and Windows Server version 2004
       itemType: overview
       url: https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-windows-10-and-windows-server-version/ba-p/1543631
     # Card
-    - title: Cybersecurity roles and responsibilities
-      itemType: overview
-      url: https://www.microsoft.com/security/blog/2020/08/06/organize-security-team-evolution-cybersecurity-roles-responsibilities/
-    # Card
-    - title: Networking up (to the cloud) - One architect's viewpoint
+    - title: Azure platform integrity and security
       itemType: concept
-      url: https://docs.microsoft.com/microsoft-365/solutions/networking-design-principles?view=o365-worldwide
+      url: https://docs.microsoft.com/azure/security/fundamentals/platform
     # Card
     - title: Azure built-in security controls
       itemType: concept
@@ -85,9 +85,9 @@ additionalContent:
           summary: Learn new skills and discover the power of Microsoft products with step-by-step guidance.
           url: https://docs.microsoft.com/en-us/learn/browse/?term=security
         # Card
-        - title: Microsoft Ignite 2019
-          summary: View security sessions from Microsoft Ignite.
-          url: https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222019-11-03T08%253A00%253A00-05%253A00%2522%252C%2522to%2522%253A%25222019-11-08T19%253A00%253A00-05%253A00%2522%257D&g=%255B%2522on-demand%2522%255D&q=security&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D
+        - title: Security roles and responsibilities
+          summary: Organizational functions required to manage information security risk in an enterprise.
+          url: https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security
 
 #  Section 2
     - title: Security disciplines

@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 10/06/2020
+ms.date: 12/02/2020
 ---
 
 # Security news and highlights
@@ -14,6 +14,12 @@ ms.date: 10/06/2020
 The security documentation site provides you with current news and highlights from across Microsoft. News and highlights are updated regularly to bring you the most relevant security information.
 
 Below are past news and highlights that you may have missed or would like to revisit.
+
+November, 2020
+
+- [Cybersecurity roles and responsibilities](https://www.microsoft.com/security/blog/2020/08/06/organize-security-team-evolution-cybersecurity-roles-responsibilities/)
+- [Networking up (to the cloud) - One architect's viewpoint](https://docs.microsoft.com/microsoft-365/solutions/networking-design-principles?view=o365-worldwide)
+- [Become an Azure Sentinel Ninja - level 400 training](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310)
 
 October, 2020
 

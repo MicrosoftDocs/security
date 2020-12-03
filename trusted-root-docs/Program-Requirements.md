@@ -40,14 +40,13 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 
 8.  Program Participants agree that Microsoft may contact customers that Microsoft believes may be substantially impacted by the pending removal of a root CA from the Program. 
 
-9. Program Participants must inform Microsoft via email when they delegate publicly trusted timestamping duties to a 3rd party.
 
 ### Other Requirements
-10.  Commercial CAs may not enroll a root CA into the Program that is intended to be primarily trusted internally within an organization (i.e. Enterprise CAs).
+9.  Commercial CAs may not enroll a root CA into the Program that is intended to be primarily trusted internally within an organization (i.e. Enterprise CAs).
 
-11. If a CA uses a subcontractor to operate any aspect of its business, the CA will assume responsibility for the subcontractor's business operations.
+10. If a CA uses a subcontractor to operate any aspect of its business, the CA will assume responsibility for the subcontractor's business operations.
 
-12. If Microsoft, in its sole discretion, identifies a certificate   whose usage or attributes are determined to be contrary to the objectives of the Trusted Root Program, Microsoft will notify the responsible CA and request that it revoke the certificate. The CA must either revoke the certificate or request an exception from Microsoft within 24 hours of receiving Microsoft's notice. Microsoft will review submitted material and inform the CA of its final decision to grant or deny the exception at its sole discretion. In the event that Microsoft does not grant the exception, the CA must revoke the certificate within 24 hours of the exception being denied. 
+11. If Microsoft, in its sole discretion, identifies a certificate   whose usage or attributes are determined to be contrary to the objectives of the Trusted Root Program, Microsoft will notify the responsible CA and request that it revoke the certificate. The CA must either revoke the certificate or request an exception from Microsoft within 24 hours of receiving Microsoft's notice. Microsoft will review submitted material and inform the CA of its final decision to grant or deny the exception at its sole discretion. In the event that Microsoft does not grant the exception, the CA must revoke the certificate within 24 hours of the exception being denied. 
 
 
 ------------------------------------------------------------------------
@@ -130,13 +129,7 @@ Program.
 
 ### F. Windows 10 Kernel Mode Code Signing (KMCS) Requirements
 
-Windows 10 has heightened requirements to validate kernel-mode
-drivers.  Drivers must be signed by both Microsoft and a Program partner
-using Extended Validation requirements.   All developers who wish to
-have their kernel-mode drivers included in Windows must follow the
-procedures outlined by the Microsoft Hardware Development Team.  Program
-documentation can be found
-[here](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+Windows 10 has heightened requirements to validate kernel-mode drivers.  Drivers must be signed by both Microsoft and a Program partner using Extended Validation requirements.  All developers who wish to have their kernel-mode drivers included in Windows must follow the procedures outlined by the Microsoft Hardware Development Team.  Program documentation can be found [here](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
 
 

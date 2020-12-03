@@ -61,7 +61,7 @@ Program.
 1.  Root certificates must be x.509 v3 certificates.
     1.  The CN attribute must identify the publisher and must be unique.
     2.  The CN attribute must be in a language that is appropriate for the CA's market and readable by a typical customer in that market.
-    3.  Basic Constraints extension: must be CA=true.
+    3.  Basic Constraints extension: must be cA=true.
     4.  Key Usage extension MUST be present and MUST be marked critical. Bit positions for KeyCertSign and cRLSign MUST be set. If the Root CA Private Key is used for signing OCSP responses, then the digitalSignature bit MUST be set.
         -   Root Key Sizes must meet the requirements detailed in "Key Requirements".
 2.  Certificates to be added to the Trusted Root Store MUST be self-signed root certificates. 
@@ -70,7 +70,7 @@ Program.
 5.  All end-entity certificates must contain an AIA extension with a valid OCSP URL. These certificates may also contain a CDP extension that contains a valid CRL URL. All other certificate types must contain either an AIA extension with an OCSP URL or a CDP extension with a valid CRL URL
 6.  Private Keys and subject names must be unique per root certificate; reuse of private keys or subject names in subsequent root certificates by the same CA may result in unexpected certificate chaining issues. CAs must generate a new key and apply a new subject name when generating a new root certificate prior to distribution by Microsoft.
 7.  Government CAs must restrict server authentication to government-issued top level domains and may only issue other certificates to the ISO3166 country codes that the country has sovereign control over (see  <https://aka.ms/auditreqs> section III for the definition of a "Government CA"). These government-issued TLDs are referred to in each CA's respective contract. 
-8. Issuing CA certificates under root certificates submitted for distribution by the Program must separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single intermediate-issuing CA must not be used to issue server authentication, S/MIME, code signing and time stamping certificates. A separate intermediate must be used for each use case. 
+8. Issuing CA certificates that chain to a participating Root CA must separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single Issuing CA must not combine server authentication with S/MIME, code signing or time stamping EKU. A separate intermediate must be used for each use case. 
 9. End-entity certificates must meet the requirements for algorithm type and key size for Subscriber certificates listed in Appendix A of the CAB Forum Baseline Requirements located at   https://cabforum.org/baseline-requirements-documents/.
 10. CAs must declare one of the following policy OIDs in its Certificate Policy extension end-entity certificate: 
     1. DV 2.23.140.1.2.1 
@@ -125,7 +125,6 @@ Program.
     5.  Document Signing EKU=1.3.6.1.4.1.311.10.3.12
      -   This EKU is used for signing documents within Office. It is not required for other document signing uses.
  
-  NOTE: Microsoft is not adding new root certificates with the Code Signing EKU at this time. New root certificates meant to replace exisiting root certificates that already have the Code Signing EKU and are compliant with code signing audit requirements will be considered. Any changes to this policy will be updated here. 
 
 ### F. Windows 10 Kernel Mode Code Signing (KMCS) Requirements
 

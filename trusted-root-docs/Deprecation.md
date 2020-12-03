@@ -21,7 +21,7 @@ Removal of a specific EKU from a root certificate. All End entity certificates t
 
 ## Disallow
 
-This feature can be used to revoke many types of certificates such as self-signed certificates, enterprise certificates, trusted root certificates, or high risk leaf certificates.  This feature effectively revokes the certificate. Users cannot mannually install the root and continue to have trust.
+This feature can be used to revoke many types of certificates such as self-signed certificates, enterprise certificates, trusted root certificates, or high risk leaf certificates.  This feature effectively revokes the certificate. Users cannot manually install the root and continue to have trust.
 
 ## Disable
 

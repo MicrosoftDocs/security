@@ -81,7 +81,6 @@ Program.
 12. End-entity certificates that include a Basic Constraints extension in accordance with IETF RFC 5280 must have the cA field set to FALSE and the pathLenConstraint field must be absent.
 13. A CA must technically constrain an OCSP responder such that the only EKU allowed is OCSP Signing.
 
- 
 
 ### B. Key Requirements
 
@@ -125,7 +124,8 @@ Program.
     5.  Time stamping EKU=1.3.6.1.5.5.7.3.8
     6.  Document Signing EKU=1.3.6.1.4.1.311.10.3.12
      -   This EKU is used for signing documents within Office. It is not required for other document signing uses.
-
+    
+ 
  
 
 ### F. Windows 10 Kernel Mode Code Signing (KMCS) Requirements
@@ -138,17 +138,17 @@ procedures outlined by the Microsoft Hardware Development Team.  Program
 documentation can be found
 [here](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
-------------------------------------------------------------------------
+------------------------------------------------------------------------	
 
-## 4. Technical Best Practices
+## 4. Technical Best Practices	
 
 
-Though not required by Microsoft, the following represents what
-Microsoft believes to be the best practices that each CA should follow.
+Though not required by Microsoft, the following represents what	
+Microsoft believes to be the best practices that each CA should follow.	
 
-1.  Microsoft recommends that each CA have an established communication channel to its customers. For example, if Microsoft were to notify the CA that Microsoft was disabling weak file hashes, the CA should have a method to notify its customers to use the updated signtool.exe file.
-2.  Because root certificates will be removed without regard to any unexpired end entity certificates issued from them, the CAs should plan to cease issuing end entity certificates for uses besides code  signing such that those certificates expire according to these root removal guidelines.
-3.  While Windows will not enforce specific policies on Secure Email certificates, Microsoft recommends that CAs start issuing new Secure Email certificates using the SHA-2 algorithm.
+1.  Microsoft recommends that each CA have an established communication channel to its customers. For example, if Microsoft were to notify the CA that Microsoft was disabling weak file hashes, the CA should have a method to notify its customers to use the updated signtool.exe file.	
+2.  Because root certificates will be removed without regard to any unexpired end entity certificates issued from them, the CAs should plan to cease issuing end entity certificates for uses besides code  signing such that those certificates expire according to these root removal guidelines.	
+3.  While Windows will not enforce specific policies on Secure Email certificates, Microsoft recommends that CAs start issuing new Secure Email certificates using the SHA-2 algorithm.	
 4.  Microsoft recommends an OCSP responder maximum validity period of one (1) day.
 
 

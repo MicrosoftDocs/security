@@ -13,7 +13,7 @@ ms.topic: conceptual
 Windows has many options for deprecating root certificate capbilities. These capabilities are listed here. 
 
 ## Removal
-Removal of a root from the CTL.  All certificates that chain to the root are no longer trusted. Users can still manually install the root.
+Removal of a root from the CTL.  All certificates that chain to the root are no longer trusted. Users can still manually install the root into the Local Machine “Trusted Root Certification Authorities”/Registry physical store. However, if installed into the Local Machine “Trusted Root Certification Authorities”/Third-Party physical store, will be auto deleted by the auto root update service.
  
 ## EKU Removal
 
@@ -21,7 +21,7 @@ Removal of a specific EKU from a root certificate. All End entity certificates t
 
 ## Disallow
 
-This feature can be used to revoke many types of certificates such as self-signed certificates, enterprise certificates, trusted root certificates, or high risk leaf certificates.  This feature effectively revokes the certificate. Users cannot manually install the root and continue to have trust.
+This feature involves adding the certificate to the Disallow CTL and can be used to revoke many types of certificates such as self-signed certificates, enterprise certificates, trusted root certificates, or high risk leaf certificates.  This feature effectively revokes the certificate. Users cannot manually install the root and continue to have trust.
 
 ## Disable
 

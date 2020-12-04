@@ -33,10 +33,7 @@ information about how the requirements are changing for Government CAs.
 ## General Requirements
 
 
-Microsoft requires that every CA submit evidence of a Qualifying Audit
-on an annual basis for the CA and any non-limited root within its PKI
-chain. A Qualifying Audit must meet the following five main
-requirements:
+Microsoft requires that every CA submit evidence of a Qualifying Audit on an annual basis for the CA and any non-limited root within its PKI chain. A Qualifying Audit must meet the following five main requirements:
 
 1.  the auditor must be qualified,
 2.  the audit must be performed using the proper scope,
@@ -45,22 +42,14 @@ requirements:
     issued within the proper time period, and
 5.  the auditor must complete and submit a Qualifying Attestation.
 
-It is the responsibility of the CA to provide Microsoft with a
-Qualifying Attestation to the results of the audit as well as
-conformance to the Audit Requirements in a timely manner.
+It is the responsibility of the CA to provide Microsoft with a Qualifying Attestation to the results of the audit as well as conformance to the Audit Requirements in a timely manner.
 
  
 
 ### A. The Auditor's Qualifications
 
 
-Microsoft considers an auditor to be a Qualified Auditor if s/he is an
-independent individual or company that is certified to perform
-certification authority audits by one of these three authorities: (1)
-WebTrust, (2) an ETSI Equivalent National Authority (published at
-<https://aka.ms/ena>) or, (3) in the case of a Government CA, the
-government itself. (For more information on Government CAs, see \"
-Government CA Requirements\" below.)
+Microsoft considers an auditor to be a Qualified Auditor if s/he is an independent individual or company that is certified to perform certification authority audits by one of these three authorities: (1) WebTrust, (2) an ETSI Equivalent National Authority (published at <https://aka.ms/ena>) or, (3) in the case of a Government CA, the government itself. (For more information on Government CAs, see \"Government CA Requirements\" below.)
 
 If a CA chooses to obtain a WebTrust audit, Microsoft requires the CA to
 retain a WebTrust licensed auditor to perform the audit. The full list
@@ -208,7 +197,7 @@ msroot\@microsoft.com to have the EKU status set to "NotBefore."
 
 Note 1: If a CA uses an ETSI-based audit, it must perform a **full**
 audit annually, and Microsoft will not accept surveillance audits. 
-Note 2: All ETSI audits statements must be audited against the CA/Browser Forum requirements . This must be mentioned in the audit letter. the ACAB'c [https://acab-c.com] has provided guidance that meets the Microsoft requirements.  
+Note 2: All ETSI audits statements must be audited against the CA/Browser Forum requirements and compliance to these requirements must be stated in the audit letter. The ACAB'c [https://acab-c.com] has provided guidance that meets the Microsoft requirements.  
 
 | | EN 319 411-1: DVCP, OVCP or PTC-BR policies | EN 319 411-1: EVCP policy | EN 319 411-2: QCP-w policy (based on EN 319 411-1, EVCP) | EN 319 411-1: LCP, NCP, NCP+ policies | EN 319 411-2: QCP-n, QCP-n-qscd, QCP-l, QCP-l-qscd policies (based on EN 319 411-1, NCP/NCP+)  |
 | --- | --- | --- | --- | --- | --- |
@@ -227,12 +216,7 @@ Note 2: All ETSI audits statements must be audited against the CA/Browser Forum 
 ## Government CA Requirements
 
 
-Effective July 1, 2015, Government CAs may choose to either obtain the
-above WebTrust or ETSI-based audit(s) required of Commercial CAs, or to
-use an Equivalent Audit. If a Government CA chooses to obtain a WebTrust
-or ETSI-based audit, Microsoft will treat the Government CA as a
-Commercial CA. The Government CA can then operate without limiting the
-certificates it issues.
+Effective July 1, 2015, Government CAs may choose to either obtain the above WebTrust or ETSI-based audit(s) required of Commercial CAs, or to use an Equivalent Audit. If a Government CA chooses to obtain a WebTrust or ETSI-based audit, Microsoft will treat the Government CA as a Commercial CA. The Government CA can then operate without limiting the certificates it issues.
 
 ### A. Equivalent Audit Restrictions
 
@@ -323,18 +307,3 @@ issuing, maintaining, or revoking certificates, including audit
 frequency and procedure.
 
 
-
-------------------------------------------------------------------------
-
-## Related
-
-
--   [Microsoft Trusted Root Program Requirements main
-    page](Program-Requirements.md)
--   [Program
-    Participants](Participants-list.md)
--   [SHA1 Deprecation Guidelines](https://aka.ms/sha1)
-
-
-
-------------------------------------------------------------------------

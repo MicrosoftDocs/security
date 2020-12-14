@@ -49,6 +49,8 @@
           href: critical-impact-accounts.md
     #   - name: Capabilities
     #     href: administration-capabilities.md
+    - name: Human operated ransomware
+      href: human-operated-ransomware.md 
     - name: Information protection and storage
       items:
         - name: Videos and slides

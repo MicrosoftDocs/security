@@ -20,7 +20,8 @@ Learn more about protecting against human operated ransomware attacks:
 
 **[See this webinar]()**
  
-Microsoft recommends you use the mitigation plans in this download **[Ransomware recommendations](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)**, which includes securing your privileged access [Deploy a secure, Azure-managed workstation](https://aka.ms/spa).
+Microsoft recommends you use the mitigation plans described in this presentation: **[Ransomware recommendations (ppt)](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)**, which includes securing your privileged access [Deploy a secure, Azure-managed workstation](https://aka.ms/spa).
 
 This image shows how this extortion-based attack is growing in impact and likelihood, using privileged access.
+
 ![image](media/ransomware-extortion-based-attack.png)

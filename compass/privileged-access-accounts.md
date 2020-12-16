@@ -3,7 +3,7 @@ title: Securing privileged access accounts
 description: Securing accounts is only one part of the privileged access story
 
 ms.service: security
-ms.subservice: cloud-design-principles
+ms.subservice: 
 ms.topic: conceptual
 ms.date: 12/15/2020
 

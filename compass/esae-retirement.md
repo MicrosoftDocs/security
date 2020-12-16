@@ -3,7 +3,7 @@ title: Enhanced Security Admin Environment (ESAE) architecture retirement
 description: Retiring the red forest as a legacy security mechanism
 
 ms.service: security
-ms.subservice: cloud-design-principles
+ms.subservice: 
 ms.topic: conceptual
 ms.date: 12/15/2020
 

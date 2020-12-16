@@ -3,7 +3,7 @@ title: Developing a privileged access strategy
 description: A good strategy is critical on your privileged access journey
 
 ms.service: security
-ms.subservice: cloud-design-principles
+ms.subservice: 
 ms.topic: conceptual
 ms.date: 12/15/2020
 
@@ -92,7 +92,7 @@ This strategy uses cloud services as the primary source of security and manageme
 
 ### Building the recommended strategy 
 
-Microsoft's recommended strategy is to incrementally build a 'closed loop' system for privileged access that ensures only trustworthy ['clean'](privileged-access-success-criteria#clean-source-principle) devices, accounts, and intermediary systems can be used for privileged access to business sensitive systems. 
+Microsoft's recommended strategy is to incrementally build a 'closed loop' system for privileged access that ensures only trustworthy ['clean'](privileged-access-success-criteria.md#clean-source-principle) devices, accounts, and intermediary systems can be used for privileged access to business sensitive systems. 
 
 Much like waterproofing something complex in real life like a boat, you need to design this strategy with an intentional outcome, establish and follow standards carefully, and continually monitor and audit the outcomes so that you remediate any leaks. You wouldn't just nail boards together in a boat shape and magically expect a waterproof boat. You would focus first on building and waterproofing significant items like the hull and critical components like the engine and steering mechanism (while leaving ways for people to get in), then later waterproofing comfort items like radios, seats, and the like. You would also maintain it over time as even the most perfect system could spring a leak later, so you need to keep up with preventive maintenance, monitor for leaks, and fix them to keep it from sinking. 
 

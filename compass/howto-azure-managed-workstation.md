@@ -3,7 +3,7 @@ title: Deploying a privileged access solution
 description: Configuring and deploying components of a privileged access solution
 
 ms.service: security
-ms.subservice: cloud-design-principles
+ms.subservice: 
 ms.topic: how-to
 ms.date: 12/15/2020
 
@@ -18,17 +18,17 @@ This document will guide you through implementing the technical components of th
 
 ![Summary of security level profiles](./media/howto-azure-managed-workstation/privileged-access-deployment-profile-summary.png)
 
-This guidance sets up all of the profiles for all three security levels and should be assigned your organizations roles based on the [Privileged access security levels](privileged-access-security-levels) guidance. Microsoft recommends configuring them in the order described in the [rapid modernization plan (RAMP)](security-rapid-modernization-plan)
+This guidance sets up all of the profiles for all three security levels and should be assigned your organizations roles based on the [Privileged access security levels](privileged-access-security-levels.md) guidance. Microsoft recommends configuring them in the order described in the [rapid modernization plan (RAMP)](security-rapid-modernization-plan.md)
 
 ## License requirements
 
 The concepts covered in this guide assume you have Microsoft 365 Enterprise E5 or an equivalent SKU. Some of the recommendations in this guide can be implemented with lower SKUs. For more information, see [Microsoft 365 Enterprise licensing](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
-To automate license provisioning, consider [group-based licensing](../users-groups-roles/licensing-groups-assign.md) for your users.
+To automate license provisioning, consider [group-based licensing](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign) for your users.
 
 ## Azure Active Directory configuration
 
-Azure Active Directory (Azure AD) manages users, groups, and devices for your administrator workstations. Enable identity services and features with an [administrator account](../users-groups-roles/directory-assign-admin-roles.md).
+Azure Active Directory (Azure AD) manages users, groups, and devices for your administrator workstations. Enable identity services and features with an [administrator account](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
 
 When you create the secured workstation administrator account, you expose the account to your current workstation. Make sure you use a known safe device to do this initial configuration and all global configuration. To reduce the attack exposure for the first-time experience, consider following the [guidance to prevent malware infections](/windows/security/threat-protection/intelligence/prevent-malware-infection).
 
@@ -60,7 +60,7 @@ Next, you create four groups: **Secure Workstation Users**, **Secure Workstation
 
 From the Azure portal, browse to **Azure Active Directory** > **Groups** > **New group**.
 
-1. For the workstation users group, you might want to configure [group-based licensing](../users-groups-roles/licensing-groups-assign.md) to automate provisioning of licenses to users.
+1. For the workstation users group, you might want to configure [group-based licensing](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign) to automate provisioning of licenses to users.
 1. For the workstation users group, enter:
 
    * **Group type** - Security
@@ -112,7 +112,7 @@ This method requires that users of the VIP, DevOps, and Privileged workstations 
 1. Go to **Azure Active Directory** > **Devices** > **Device settings**.
 1. Select **None** under **Additional local administrators on Azure AD joined devices**.
 
-Refer to [How to manage the local administrators group on Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) for details on how to manage members of the local administrators group. 
+Refer to [How to manage the local administrators group on Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) for details on how to manage members of the local administrators group.
 
 #### Require multi-factor authentication to join devices
 
@@ -134,33 +134,34 @@ These steps allow you to manage any device with Microsoft Endpoint Manager. For 
 
 ### Azure AD Conditional Access
 
-Azure AD Conditional Access can help restrict privileged administrative tasks to compliant devices. Predefined members of the **Secure Workstation Users** group are required to perform multi-factor authentication when signing in to cloud applications. A best practice is to exclude emergency access accounts from the policy. For more information, see [Manage emergency access accounts in Azure AD](../users-groups-roles/directory-emergency-access.md).
+Azure AD Conditional Access can help restrict privileged administrative tasks to compliant devices. Predefined members of the **Secure Workstation Users** group are required to perform multi-factor authentication when signing in to cloud applications. A best practice is to exclude emergency access accounts from the policy. For more information, see [Manage emergency access accounts in Azure AD](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access).
 
 #### Conditional Access only allowing secured workstation ability to access Azure portal
 
-Azure AD offers the ability to manage and restrict, who and what can access your Azure cloud management portal. Enabling [Conditional Access](../conditional-access/overview.md) will assure that only your secure workstation can manage or change resources. It's essential that while deploying this feature you consider, if [emergency access](../users-groups-roles/directory-emergency-access.md) functionality can or should be used only for extreme cases and the account managed through policy.
+Azure AD offers the ability to manage and restrict, who and what can access your Azure cloud management portal. Enabling [Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) will assure that only your secure workstation can manage or change resources. It's essential that while deploying this feature you consider, if [emergency access](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access) functionality can or should be used only for extreme cases and the account managed through policy.
 
  > [!NOTE]
  > You will need to create a user group, and include your emergency user that can bypass the Conditional Access policy. For our example we have a security group called **Emergency BreakGlass**
 
 1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Conditional Access** > **New Policy**.
 1. Provide a **Name** for the policy.
-1. Select **User and Groups** > **Select users and groups** 
+1. Select **User and Groups** > **Select users and groups**
 1. Select **Include** > **Directory roles** > Choose the roles > Global Administrator, Privileged Role Administrator, Privileged Authentication Administrator, Security Administrator, Compliance Administrator, Conditional Access Administrator, Application Administrator, Cloud Application Administrator, Intune Service Administrator
 1. Select **Exclude** > Choose **Users and groups** > Select **Select excluded users** > Select your **Emergency BreakGlass** group.
 1. Select **Cloud apps or actions** > Select **All cloud apps**
 1. Select **Conditions** > Select **Device Platforms** > Choose configure **Yes** > Select **Select Device platforms** Choose **Windows**
-1. Select **Access controls** > Select **Grant Access** **Yes** > Choose **Require device to be marked as compliant**. 
+1. Select **Access controls** > Select **Grant Access** **Yes** > Choose **Require device to be marked as compliant**.
 1. Select **Enable Policy** > **On**
- 
+
 This policy set will ensure that your Administrators must use a compliant Windows device, which is set by Microsoft Endpoint Manager, and Microsoft Defender for Endpoint.
 
-Organizations should also consider blocking legacy authentication protocols in their environments. There are multiple ways to accomplish this task, for more information about blocking legacy authentication protocols, see the article, [How to: Block legacy authentication to Azure AD with Conditional Access](../conditional-access/block-legacy-authentication.md).
+Organizations should also consider blocking legacy authentication protocols in their environments. There are multiple ways to accomplish this task, for more information about blocking legacy authentication protocols, see the article, [How to: Block legacy authentication to Azure AD with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication).
 
 ## Microsoft Intune configuration
+
 ### Device enrollment deny BYOD
 
-In our sample, we recommend that BYOD devices not be permitted. Using [Intune BYOD enrollment](/mem/intune/enrollment/windows-enrollment-methods) allows users to enroll devices that are less, or not trusted. However it's important to note that in organizations that have a limited budget to purchase new devices, looking to use existing hardware fleet, or considering non-windows devices, might consider the BYOD capability in Intune to deploy the Enterprise profile. 
+In our sample, we recommend that BYOD devices not be permitted. Using [Intune BYOD enrollment](/mem/intune/enrollment/windows-enrollment-methods) allows users to enroll devices that are less, or not trusted. However it's important to note that in organizations that have a limited budget to purchase new devices, looking to use existing hardware fleet, or considering non-windows devices, might consider the BYOD capability in Intune to deploy the Enterprise profile.
 
 The following guidance will configure Enrollment for deployments that will deny BYOD access.
 
@@ -272,7 +273,7 @@ To configure integration of Windows Defender for Endpoint and Microsoft Endpoint
 
 1. Select **Next** to open the **Scope tags** page. Scope tags are optional. Select **Next** to continue.
 
-1. On the **Assignments** page, select *Secure Workstation* group. For more information on assigning profiles, see [Assign user and device profiles](../configuration/device-profile-assign.md).
+1. On the **Assignments** page, select *Secure Workstation* group. For more information on assigning profiles, see [Assign user and device profiles](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).
 
    Select **Next**.
 
@@ -291,7 +292,7 @@ To successfully complete the hardening of the solution, download and execute the
 | Specialized | https://aka.ms/securedworkstationgit | Specialized - Windows10-(20H2).ps1 |
 | Privileged | https://aka.ms/securedworkstationgit | Privileged-Windows10-(20H2).ps1 |
 
->[!NOTE] 
+> [!NOTE]
 > The removal of of admin rights and access, as well as, Application execution control (AppLocker) are managed by the policy profiles that are deployed.  
 
 After the script successfully executes, you can make updates to profiles and policies in Intune. The scripts will create policies and profiles for you, but you must assign the policies to your **Secure Workstations** device group.
@@ -501,7 +502,7 @@ After you have configured the device, complete a review and check the configurat
 
 To assign devices and users, you need to map the [selected profiles](/intune/device-profile-assign) to your security group. All new users who require permissions to the service must be added to the security group as well.
 
-# Using Microsoft Defender for Endpoint to monitor and respond to security incidents
+## Using Microsoft Defender for Endpoint to monitor and respond to security incidents
 
 * Continuously observe and monitor vulnerabilities and misconfigurations
 * Utilize Microsoft Defender for Endpoint to prioritize dynamic threats in the wild
@@ -511,7 +512,7 @@ To assign devices and users, you need to map the [selected profiles](/intune/dev
 
 Configure your [Microsoft Defender Security Center](https://securitycenter.windows.com/machines). Using guidance at [Threat & Vulnerability Management dashboard overview](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights).
 
-## Monitoring application activity using Advanced Threat Hunting
+### Monitoring application activity using Advanced Threat Hunting
 
 Starting at the Specialized workstation, AppLocker is enabled for monitoring of application activity on a workstation. By default Defender for Endpoint captures AppLocker events and Advanced Hunting Queries can be used to determine what applications, scripts, DLL files are being blocked by AppLocker.
 

@@ -3,7 +3,7 @@ title: Rapidly modernize your security infrastructure
 description: Key initiatives to rapidly secure your environment
 
 ms.service: security
-ms.subservice: cloud-design-principles
+ms.subservice: 
 ms.topic: how-to
 ms.date: 12/15/2020
 
@@ -36,7 +36,7 @@ It is critical to work together as an organization, create partnerships, and edu
 
 - **What**: Ensure that you are not accidentally locked out of your Azure Active Directory (Azure AD) organization in an emergency situation. 
 - **Why**: Emergency access accounts rarely used and highly damaging to the organization if compromised, but their availability to the organization is also critically important for the few scenarios when they are required. Ensure you have a plan for continuity of access that accommodates both expected and unexpected events. 
- - **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
      - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards
@@ -59,7 +59,7 @@ It is critical to work together as an organization, create partnerships, and edu
      - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
 - **How**: Deploy and Configure Azure AD Privileged Identity Management using the guidance in the article, [Deploy Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-deployment-plan).
 - **Measure key results**: 100% of applicable privileged access roles are using Azure AD PIM
- 
+
 ### Identify and categorize privileged accounts (Azure AD)
 
 - **What**: Identify all roles and groups with high business impact that will require privileged security level (immediately or over time). Additional specialized roles will be identified in later stages. 

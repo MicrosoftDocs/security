@@ -228,5 +228,5 @@ Additional guidance is available in the Azure Bastion Documentation
 - [Security levels](privileged-access-security-levels.md)
 - [Privileged access accounts](privileged-access-accounts.md)
 - [Interfaces](privileged-access-interfaces.md)
-- [Privileged access devices](concept-azure-managed-workstation.md)
+- [Privileged access devices](privileged-access-devices.md)
 - [Enterprise access model](privileged-access-access-model.md)

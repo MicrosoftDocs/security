@@ -16,7 +16,7 @@ ms.reviewer: mas
 
 This rapid modernization plan (RAMP) will help you quickly adopt Microsoft's recommended [privileged access strategy](privileged-access-strategy.md).
 
-This roadmap builds on the technical controls established in the [privileged access deployment](howto-azure-managed-workstation.md) guidance. Complete those steps and then use the steps in this RAMP to configure the controls for your organization.  
+This roadmap builds on the technical controls established in the [privileged access deployment](privileged-access-deployment.md) guidance. Complete those steps and then use the steps in this RAMP to configure the controls for your organization.  
 
 ![Privileged access RAMP summary](./media/security-rapid-modernization-plan/privileged-access-ramp-summary.png)
 
@@ -220,7 +220,7 @@ Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Au
 - **How**: Create a process that monitors and manages user and sign-in risk. Decide if you will automate remediation, using Azure AD Multi-Factor Authentication and SSPR, or block and require administrator intervention.Follow the guidance in the article [How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
 - **Measure key results**: The organization has zero unaddressed user and sign-in risks. 
 > [!NOTE]
-> Conditional Access policies are required to block accrual of new sign-in risks. See the Conditional access section of [Privileged Access Deployment](howto-azure-managed-workstation.md#azure-active-directory-configuration)
+> Conditional Access policies are required to block accrual of new sign-in risks. See the Conditional access section of [Privileged Access Deployment](privileged-access-deployment.md#azure-active-directory-configuration)
 
 ## Admin workstations initial deployment
 
@@ -234,7 +234,7 @@ Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Au
      - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
      - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
      - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
-- **How**: Initial deployment should be to the Enterprise level as described in the article [Privileged Access Deployment](howto-azure-managed-workstation.md)
+- **How**: Initial deployment should be to the Enterprise level as described in the article [Privileged Access Deployment](privileged-access-deployment.md)
 - **Measure key results**: Every privileged account has a dedicated workstation to perform sensitive tasks from.
 > [!NOTE]
 > This step rapidly establishes a security baseline and must be increased to specialized and privileged levels as soon as possible.  
@@ -248,5 +248,5 @@ Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Au
 - [Privileged access accounts](privileged-access-accounts.md)
 - [Intermediaries](privileged-access-intermediaries.md)
 - [Interfaces](privileged-access-interfaces.md)
-- [Privileged access devices](concept-azure-managed-workstation.md)
+- [Privileged access devices](privileged-access-devices.md)
 - [Enterprise access model](privileged-access-access-model.md)

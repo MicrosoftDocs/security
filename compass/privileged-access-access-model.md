@@ -14,7 +14,7 @@ ms.reviewer: mas
 ---
 # Enterprise access model
 
-This document describes an overall enterprise access model that includes context of how a [privileged access strategy](privileged-access-strategy.md) fits in. For a roadmap on how to adopt a privileged access strategy, see the [rapid modernization plan (RaMP)](security-rapid-modernization-plan.md). For implementation guidance to deploy this, see [privileged access deployment](howto-azure-managed-workstation.md)
+This document describes an overall enterprise access model that includes context of how a [privileged access strategy](privileged-access-strategy.md) fits in. For a roadmap on how to adopt a privileged access strategy, see the [rapid modernization plan (RaMP)](security-rapid-modernization-plan.md). For implementation guidance to deploy this, see [privileged access deployment](privileged-access-deployment.md)
 
 Privileged access strategy is part of an overall enterprise access control strategy. This enterprise access model shows how privileged access fits into an overall enterprise access model. 
 
@@ -97,4 +97,4 @@ To ensure coverage for application access and the various partner and customer m
 - [Privileged access accounts](privileged-access-accounts.md)
 - [Intermediaries](privileged-access-intermediaries.md)
 - [Interfaces](privileged-access-interfaces.md)
-- [Privileged access devices](concept-azure-managed-workstation.md)
+- [Privileged access devices](privileged-access-devices.md)

@@ -43,6 +43,28 @@
           href: network-containment-capabilities.md
     - name: Privileged administration
       items:
+        - name: Securing privileged access
+          href: overview.md
+        - name: Privileged access strategy
+          href: privileged-access-strategy.md
+        - name: Measuring success
+          href: privileged-access-success-criteria.md
+        - name: Security levels
+          href: privileged-access-security-levels.md
+        - name: Privileged access accounts
+          href: privileged-access-accounts.md
+        - name: Intermediaries
+          href: privileged-access-intermediaries.md
+        - name: Interfaces
+          href: privileged-access-interfaces.md
+        - name: Privileged access devices
+          href: concept-azure-managed-workstation.md
+        - name: Enterprise access model
+          href: privileged-access-access-model.md
+        - name: Configuring the solution
+          href: howto-azure-managed-workstation.md
+        - name: ESAE Retirement
+          href: esae-retirement.md
         - name: Videos and slides
           href: administration-videos-and-decks.md
         - name: Article

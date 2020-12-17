@@ -217,7 +217,7 @@ Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Au
      - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement any changes
      - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
      - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated for related support calls and personnel has been trained on them
-- **How**: Create a process that monitors and manages user and sign-in risk. Decide if you will automate remediation, using Azure AD Multi-Factor Authentication and SSPR, or block and require administrator intervention.Follow the guidance in the article [How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) and 
+- **How**: Create a process that monitors and manages user and sign-in risk. Decide if you will automate remediation, using Azure AD Multi-Factor Authentication and SSPR, or block and require administrator intervention.Follow the guidance in the article [How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
 - **Measure key results**: The organization has zero unaddressed user and sign-in risks. 
 > [!NOTE]
 > Conditional Access policies are required to block accrual of new sign-in risks. See the Conditional access section of [Privileged Access Deployment](howto-azure-managed-workstation.md#azure-active-directory-configuration)
@@ -235,7 +235,7 @@ Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Au
      - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
      - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
 - **How**: Initial deployment should be to the Enterprise level as described in the article [Privileged Access Deployment](howto-azure-managed-workstation.md)
-- **Measure key results**: Every privileged account has a dedicated workstation to perform sensitive tasks from
+- **Measure key results**: Every privileged account has a dedicated workstation to perform sensitive tasks from.
 > [!NOTE]
 > This step rapidly establishes a security baseline and must be increased to specialized and privileged levels as soon as possible.  
 

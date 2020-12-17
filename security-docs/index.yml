@@ -160,6 +160,8 @@ additionalContent:
         # Card
         - title: Privileged access
           links:
+            - text: Overview
+              url: /security/compass/overview
             - text: Videos and slides
               url: /security/compass/administration-videos-and-decks
             - text: Article

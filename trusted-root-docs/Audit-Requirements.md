@@ -216,35 +216,17 @@ Note 2: All ETSI audits statements must be audited against the CA/Browser Forum 
 ## Government CA Requirements
 
 
-Effective July 1, 2015, Government CAs may choose to either obtain the above WebTrust or ETSI-based audit(s) required of Commercial CAs, or to use an Equivalent Audit. If a Government CA chooses to obtain a WebTrust or ETSI-based audit, Microsoft will treat the Government CA as a Commercial CA. The Government CA can then operate without limiting the certificates it issues.
+Government CAs may choose to either obtain the above WebTrust or ETSI-based audit(s) required of Commercial CAs, or to use an Equivalent Audit. If a Government CA chooses to obtain a WebTrust or ETSI-based audit, Microsoft will treat the Government CA as a Commercial CA. The Government CA can then operate without limiting the certificates it issues.
 
 ### A. Equivalent Audit Restrictions
 
-If the Government CA chooses not to use a WebTrust or ETSI audit, it may
-obtain an Equivalent Audit. In an Equivalent Audit (\"EA\"), the
-Government CA selects a third party to perform an audit. The audit has
-two purposes: (1) to demonstrate that the Government CA complies with
-local laws and regulations related to certificate authority operation,
-and (2) to demonstrate that the audit substantially complies with the
-relevant WebTrust or ETSI standard.
+If the Government CA chooses not to use a WebTrust or ETSI audit, it may obtain an Equivalent Audit. In an Equivalent Audit (\"EA\"), the Government CA selects a third party to perform an audit. The audit has two purposes: (1) to demonstrate that the Government CA complies with local laws and regulations related to certificate authority operation, and (2) to demonstrate that the audit substantially complies with the relevant WebTrust or ETSI standard.
 
-If a Government CA chooses to obtain an EA, Microsoft will limit the
-scope of certificates that the Government CA may issue. Government CAs
-that issue server authentication certificates must limit the root to
-government-controlled domains. Governments must limit the issuance of
-any other certificates to ISO3166 country codes that the country has
-sovereign control over.
+If a Government CA chooses to obtain an EA, Microsoft will limit the scope of certificates that the Government CA may issue. Government CAs that issue server authentication certificates must limit the root to government-controlled domains. Governments must limit the issuance of any other certificates to ISO3166 country codes that the country has sovereign control over.
 
-Government CAs must also accept and adopt the appropriate, CAB forum
-baseline requirements for CAs based on the type of certificates the root
-issues. However, the Program Requirements and Audit Requirements
-supersede those requirements in any aspect in which they are in
-conflict.
+Government CAs must also accept and adopt the appropriate, CAB forum baseline requirements for CAs based on the type of certificates the root issues. However, the Program Requirements and Audit Requirements supersede those requirements in any aspect in which they are in conflict.
 
-Effective June 1, 2015, all Government CAs entering the Program will be
-subject to the above EA requirements. All Government CAs that are part
-of the Program prior to June 1, 2015 will be subject to the above EA
-requirements immediately upon expiration of their then-current audit.
+All Government CAs entering the Program will be subject to the above EA requirements. All Government CAs that are part of the Program prior to June 1, 2015 will be subject to the above EA requirements immediately upon expiration of their then-current audit.
 
 
 

@@ -18,7 +18,7 @@ The Enhanced Security Admin Environment (ESAE) architecture (often referred to a
 
 ![Retirement of ESAE notification](./media/esae-retirement/retirement.png)
 
-Administrative Windows Server Active Directory forests have been retired from mainstream Microsoft recommendation and is now considered a custom configuration either hosted on-premises or with a cloud provider.
+Administrative Windows Server Active Directory forests have been retired from mainstream Microsoft recommendation and are now considered a custom configuration either hosted on-premises or with a cloud provider.
 
 ![PLACEHOLDER](./media/esae-retirement/defender-vs-attacker-cost.png)
 

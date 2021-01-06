@@ -105,5 +105,5 @@ Follow the guidance in the [Security rapid modernization plan](security-rapid-mo
 - [Security levels](privileged-access-security-levels.md)
 - [Intermediaries](privileged-access-intermediaries.md)
 - [Interfaces](privileged-access-interfaces.md)
-- [Privileged access devices](concept-azure-managed-workstation.md)
+- [Privileged access devices](privileged-access-devices.md)
 - [Enterprise access model](privileged-access-access-model.md)

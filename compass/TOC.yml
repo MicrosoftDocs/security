@@ -58,11 +58,13 @@
         - name: Interfaces
           href: privileged-access-interfaces.md
         - name: Privileged access devices
-          href: concept-azure-managed-workstation.md
+          href: privileged-access-devices.md
         - name: Enterprise access model
           href: privileged-access-access-model.md
-        - name: Configuring the solution
-          href: howto-azure-managed-workstation.md
+        - name: Privileged access implementation
+          href: privileged-access-deployment.md
+        - name: Modernization plan
+          href: security-rapid-modernization-plan.md
         - name: ESAE Retirement
           href: esae-retirement.md
         - name: Videos and slides

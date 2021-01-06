@@ -16,7 +16,7 @@ ms.reviewer: frasim
 
 This document will guide you through implementing the technical components of the [privileged access strategy](), including secure accounts, workstations and devices, and interface security (with conditional access policy).
 
-![Summary of security level profiles](./media/howto-azure-managed-workstation/privileged-access-deployment-profile-summary.png)
+![Summary of security level profiles](./media/privileged-access-deployment/privileged-access-deployment-profile-summary.png)
 
 This guidance sets up all of the profiles for all three security levels and should be assigned your organizations roles based on the [Privileged access security levels](privileged-access-security-levels.md) guidance. Microsoft recommends configuring them in the order described in the [rapid modernization plan (RAMP)](security-rapid-modernization-plan.md)
 
@@ -546,5 +546,5 @@ ActionType startswith "AppControl"
 - [Privileged access accounts](privileged-access-accounts.md)
 - [Intermediaries](privileged-access-intermediaries.md)
 - [Interfaces](privileged-access-interfaces.md)
-- [Privileged access devices](concept-azure-managed-workstation.md)
+- [Privileged access devices](privileged-access-devices.md)
 - [Enterprise access model](privileged-access-access-model.md)

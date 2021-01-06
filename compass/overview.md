@@ -38,9 +38,9 @@ Building this strategy requires a holistic approach combining multiple technolog
 
 Securing privileged access is also addresses by these industry standards and best practices.
 
-|   |   |   |   |
-| --- | --- | --- | --- |
-| [US NIST / Department of Defense](https://nvd.nist.gov/ncp/checklist/833) | [UK National Cyber Security Center (NCSC)](https://www.ncsc.gov.uk/collection/secure-system-administration) | [Australian Cyber Security Center (ACSC)](https://www.cyber.gov.au/acsc/view-all-content/publications/secure-administration) | [MITRE ATT&CK](https://attack.mitre.org/mitigations/M1026/) |
+|   |   |   |
+| --- | --- | --- |
+| [UK National Cyber Security Center (NCSC)](https://www.ncsc.gov.uk/collection/secure-system-administration) | [Australian Cyber Security Center (ACSC)](https://www.cyber.gov.au/acsc/view-all-content/publications/secure-administration) | [MITRE ATT&CK](https://attack.mitre.org/mitigations/M1026/) |
 
 ## Next steps
 
@@ -54,6 +54,6 @@ Strategy, design, and implementation resources to help you rapidly secure privil
 | ![Account doc](./media/overview/accounts.png) | [Accounts](privileged-access-accounts.md) | Guidance on security levels and controls for accounts |
 | ![Intermediaries doc](./media/overview/intermediaries.png) | [Intermediaries](privileged-access-intermediaries.md) | Guidance on security levels and controls for intermediaries |
 | ![Interfaces doc](./media/overview/interfaces.png) | [Interfaces](privileged-access-interfaces.md) | Guidance on security levels and controls for interfaces |
-| ![Devices doc](./media/overview/devices.png) | [Devices](concept-azure-managed-workstation.md) | Guidance on security levels and controls for devices and workstations |
+| ![Devices doc](./media/overview/devices.png) | [Devices](privileged-access-devices.md) | Guidance on security levels and controls for devices and workstations |
 | ![Enterprise access model doc](./media/overview/access-model.png) | [Enterprise access model](privileged-access-access-model.md) | Overview of Enterprise Access Model (successor to legacy tier model) |
 | ![Retiring ESAE doc](./media/overview/esae-retirement.png) | [ESAE Retirement](esae-retirement.md) | Information on retirement of legacy administrative forest |

@@ -14,11 +14,11 @@ ms.reviewer: mas
 ---
 # ESAE Architecture retirement
 
-The Enhanced Security Admin Environment (ESAE) architecture (often referred to as red forest, admin forest, or hardened forest) is a legacy approach to provide a secure environment for Windows Server Active Directory (AD) administrators. ESAE guidance has been replaced by the modern [privileged access strategy](privileged-access-strategy.md) and [rapid modernization plan (RAMP)](security-rapid-modernization-plan.md) guidance for providing secure environments for privileged users. Administrative Windows Server Active Directory forests are no longer recommended for protecting assets.
+The Enhanced Security Admin Environment (ESAE) architecture (often referred to as red forest, admin forest, or hardened forest) is a legacy approach to provide a secure environment for Windows Server Active Directory (AD) administrators. ESAE guidance has been replaced by the modern [privileged access strategy](privileged-access-strategy.md) and [rapid modernization plan (RAMP)](security-rapid-modernization-plan.md) guidance for providing secure environments for privileged users.
 
 ![Retirement of ESAE notification](./media/esae-retirement/retirement.png)
 
-This architecture has been retired from mainstream Microsoft recommendation and is now considered a custom configuration either hosted on-premises or with a cloud provider.
+Administrative Windows Server Active Directory forests have been retired from mainstream Microsoft recommendation and is now considered a custom configuration either hosted on-premises or with a cloud provider.
 
 ![PLACEHOLDER](./media/esae-retirement/defender-vs-attacker-cost.png)
 

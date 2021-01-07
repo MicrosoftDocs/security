@@ -14,13 +14,13 @@ ms.reviewer: frasim
 ---
 # Securing devices as part of the privileged access story
 
-This guidance is part of a complete [privileged access strategy](privileged-access-strategy.md) and is implemented as part of the [Privileged access deployment](howto-azure-managed-workstation.md)
+This guidance is part of a complete [privileged access strategy](privileged-access-strategy.md) and is implemented as part of the [Privileged access deployment](privileged-access-deployment.md)
 
 End to end zero trust [security for privileged access](overview.md) requires a strong foundation of device security upon which to build other security assurances for the  session. While security assurances may be enhanced in the session, they will always be limited by how strong the security assurances are in the originating device. An attacker with control of this device can impersonate users on it or steal their credentials for future impersonation. This risk undermines other assurances on the account, intermediaries like jump servers, and on the resources themselves. For more information, see [clean source principle](privileged-access-success-criteria.md#clean-source-principle)
 
 The article provides an overview of security controls to provide a secure workstation for sensitive users throughout its lifecycle. 
 
-![Workflow to acquire and deploy a secure workstation](./media/concept-azure-managed-workstation/secure-workstation-deployment-flow.png)
+![Workflow to acquire and deploy a secure workstation](./media/privileged-access-devices/secure-workstation-deployment-flow.png)
 
 This solution relies on core security capabilities in the Windows 10 operating system, Microsoft Defender for Endpoints, Azure Active Directory, and Microsoft Intune.
 
@@ -74,30 +74,30 @@ Essential to a secured workstation is a supply chain solution where you use a tr
 
 For this solution, root of trust will be deployed using [Windows Autopilot](/mem/autopilot/windows-autopilot) technology with hardware that meets the modern technical requirements. To secure a workstation, Autopilot lets you leverage Microsoft OEM-optimized Windows 10 devices. These devices come in a known good state from the manufacturer. Instead of reimaging a potentially insecure device, Autopilot can transform a Windows 10 device into a “business-ready” state. It applies settings and policies, installs apps, and even changes the edition of Windows 10. 
 
-![Secure workstation Levels](./media/concept-azure-managed-workstation/supplychain.png)
+![Secure workstation Levels](./media/privileged-access-devices/supplychain.png)
 
 ## Device roles and profiles
 
 This guidance shows how to harden Windows 10 and reduce the risks associated with device or user compromise. To take advantage of the modern hardware technology and root of trust device, the solution uses [Device Health Attestation](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643). This capability is present to ensure the attackers cannot be persistent during the early boot of a device. It does so by using policy and technology to help manage security features and risks.
 
-![Secure workstation profiles](./media/concept-azure-managed-workstation/secure-workstations-levels.png)
+![Secure workstation profiles](./media/privileged-access-devices/secure-workstations-levels.png)
 
 * **Enterprise Device** –  The first managed role is good for home users, small business users, general developers, and enterprises where organizations want to raise the minimum security bar. This profile permits users to run any applications and browse any website, but an anti-malware and endpoint detection and response (EDR) solution like [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) is required. A policy-based approach to increase the security posture is taken. It provides a secure means to work with customer data while also using productivity tools like email and web browsing. Audit policies and Intune allow you to monitor an Enterprise workstation for user behavior and profile usage. 
 
-The enterprise security profile in the [privileged access deployment](howto-azure-managed-workstation.md) guidance uses JSON files to configure this with Windows 10 and the provided JSON files. 
+The enterprise security profile in the [privileged access deployment](privileged-access-deployment.md) guidance uses JSON files to configure this with Windows 10 and the provided JSON files. 
 
 * **Specialized Device** – This represents a significant step up from enterprise usage by removing the ability to self-administer the workstation and limiting which applications may run to only the applications installed by an authorized administrator (in the program files and pre-approved applications in the user profile location. Removing the ability to install applications may impact productivity if implemented incorrectly, so ensure that you have provided access to Microsoft store applications or corporate managed applications that can be rapidly installed to meet users needs. For guidance on which users should be configured with specialized level devices, see [Privileged access security levels](privileged-access-security-levels.md)
    * The Specialized security user demands a more controlled environment while still being able to do activities such as email and web browsing in a simple-to-use experience. These users expect features such as cookies, favorites, and other shortcuts to work but do not require the ability to modify or debug their device operating system, install drivers, or similar.
 
-The specialized security profile in the [privileged access deployment](howto-azure-managed-workstation.md) guidance uses JSON files to configure this with Windows 10 and the provided JSON files. 
+The specialized security profile in the [privileged access deployment](privileged-access-deployment.md) guidance uses JSON files to configure this with Windows 10 and the provided JSON files. 
 
 * **Privileged Access Workstation (PAW)** – This is the highest security configuration designed for extremely sensitive roles that would have a signficant or material impact on the organization if their account was compromised. The PAW configuration includes security controls and policies that restrict local administrative access and productivity tools to minimize the attack surface to only what is absolutely required for performing sensitive job tasks. 
 This makes the PAW device difficult for attackers to compromise because it blocks the most common vector for phishing attacks: email and web browsing. 
 To provide productivity to these users, separate accounts and workstations must be provided for productivity applications and web browsing. While inconvenient, this is a necessary control to protect users whose account could inflict damage to most or all resources in the organization. 
    * A Privileged workstation provides a hardened workstation that has clear application control and application guard. The workstation uses credential guard, device guard, app guard, and exploit guard to protect the host from malicious behavior. All local disks are encrypted with BitLocker and web traffic is restricted to a limit set of permitted destinations (Deny all).
 
-The privileged security profile in the [privileged access deployment](howto-azure-managed-workstation.md) guidance uses JSON files to configure this with Windows 10 and the provided JSON files. 
+The privileged security profile in the [privileged access deployment](privileged-access-deployment.md) guidance uses JSON files to configure this with Windows 10 and the provided JSON files. 
 
 ## Next steps
 
-[Deploy a secure Azure-managed workstation](howto-azure-managed-workstation.md).
+[Deploy a secure Azure-managed workstation](privileged-access-deployment.md).

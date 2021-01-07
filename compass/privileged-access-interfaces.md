@@ -22,7 +22,7 @@ This policy ensures users and devices initiating the inbound session are known, 
 
 This guidance defines three security levels for interface security that you can use for assets with different sensitivity levels. These levels are configured in the [securing privileged access rapid modernization plan (RAMP)](security-rapid-modernization-plan.md) and correspond to [security levels of accounts and devices](privileged-access-security-levels.md).
 
-The security requirements for inbound sessions to interfaces apply to accounts and the source device, whether it’s a direct connection from [physical devices](concept-azure-managed-workstation.md) or a Remote Desktop / Jump server [intermediary](privileged-access-intermediaries.md). Intermediaries can accept sessions from personal devices to provide enterprise security level (for some scenarios), but specialized or privileged intermediaries should not allow connections from lower levels because of the security sensitive nature of their roles. 
+The security requirements for inbound sessions to interfaces apply to accounts and the source device, whether it’s a direct connection from [physical devices](privileged-access-devices.md) or a Remote Desktop / Jump server [intermediary](privileged-access-intermediaries.md). Intermediaries can accept sessions from personal devices to provide enterprise security level (for some scenarios), but specialized or privileged intermediaries should not allow connections from lower levels because of the security sensitive nature of their roles. 
 
 > [!NOTE]
 > These technologies provide strong end to end access control to the application interface, but the resource itself must also be secured from out of band attacks on the application code/functionality, unpatched vulnerabilities or configuration errors in the underlying operating system or firmware, on data at rest or in transit, supply chains, or other means. 
@@ -44,7 +44,7 @@ While some of these directly support Zero Trust enforcement via the Azure AD Con
 The ultimate goal of interface security is to ensure that each inbound session to the interface is known, trusted, and allowed:
 
 - Known – User is authenticated with strong authentication and device is authenticated (with exceptions for personal devices using a Remote Desktop or VDI solution for enterprise access)
-- Trusted – Security health is explicitly validated and enforced for [accounts](privileged-access-accounts.md) and [devices](concept-azure-managed-workstation.md) using a Zero Trust policy engine
+- Trusted – Security health is explicitly validated and enforced for [accounts](privileged-access-accounts.md) and [devices](privileged-access-devices.md) using a Zero Trust policy engine
 - Allowed – Access to the resources follows least privilege principle using a combination of controls to ensure it can only be accessed
    - By the right users
    - At the right time (just in time access, not permanent access)
@@ -108,5 +108,5 @@ Security controls for specialized interfaces should include
 - [Security levels](privileged-access-security-levels.md)
 - [Privileged access accounts](privileged-access-accounts.md)
 - [Intermediaries](privileged-access-intermediaries.md)
-- [Privileged access devices](concept-azure-managed-workstation.md)
+- [Privileged access devices](privileged-access-devices.md)
 - [Enterprise access model](privileged-access-access-model.md)

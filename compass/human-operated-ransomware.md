@@ -6,7 +6,7 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-description: "Capabilities"
+description: "Learn about how to protect yourself from human operated ransomware"
 ---
 
 # Human operated ransomware

@@ -166,7 +166,11 @@ additionalContent:
               url: /security/compass/administration-videos-and-decks
             - text: Article
               url: /security/compass/critical-impact-accounts
-
+        # Card
+        - title: Human operated ransomware
+          links:
+            - text: Article
+              url: /security/compass/human-operated-ransomware
 
 #  Section 3
     - title: Additional security resources

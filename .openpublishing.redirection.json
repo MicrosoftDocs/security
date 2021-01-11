@@ -31,12 +31,12 @@
         "redirect_document_id": true
       },
       {
-        "source_path": "Security/compass/concept-azure-managed-workstation.md",
+        "source_path": "compass/concept-azure-managed-workstation.md",
         "redirect_url": "/security/compass/concept-azure-managed-workstation",
         "redirect_document_id": true
       },
       {
-        "source_path": "Security/compass/howto-azure-managed-workstation.md",
+        "source_path": "compass/howto-azure-managed-workstation.md",
         "redirect_url": "/security/compass/privileged-access-deployment",
         "redirect_document_id": true
       }

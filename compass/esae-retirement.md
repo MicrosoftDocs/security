@@ -38,7 +38,7 @@ While still valid for specific use cases, ESAE hardened forest implementations a
 
 While not a mainstream recommendation, this architectural pattern is valid in a limited set of scenarios.
 
-In these exception cases, the organization must accept the increased technical complexity and operational costs of the solution. The organization must have a sophisticated security program to measure and monitor risk, and apply consistent operational rigor to the usage and maintenance of the ESAE solution.
+In these exception cases, the organization must accept the increased technical complexity and operational costs of the solution. The organization must have a sophisticated security program to measure risk, monitor risk, and apply consistent operational rigor to the usage and maintenance of the ESAE implementation.
 
 Example scenarios include:
 

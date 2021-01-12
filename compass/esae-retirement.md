@@ -30,8 +30,6 @@ When ESAE was originally designed 10 years ago, the focus was on on-premise envi
 
 Microsoft recommends the new cloud-based solutions because they can be deployed more quickly to protect a broader scope of administrative and business-sensitive roles and systems.
 
-![Defense vs attack cost](./media/esae-retirement/defender-vs-attacker-cost.png)
-
 The [privileged access strategy](privileged-access-strategy.md) provides protections and monitoring for a much larger set of sensitive users, while providing incremental lower-cost steps to rapidly build security assurances.
 
 While still valid for specific use cases, ESAE hardened forest implementations are more costly and more difficult to use, requiring more operational support compared to the newer cloud-based solution (due to the complex nature of that architecture). ESAE implementations are designed to protect only Windows Server Active Directory administrators. The cloud based [privileged access strategy](privileged-access-strategy.md) provides protections and monitoring for a much larger set of sensitive users, while providing incremental lower-cost steps to rapidly build security assurances.

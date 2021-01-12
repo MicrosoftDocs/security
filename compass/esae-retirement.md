@@ -5,7 +5,7 @@ description: Retiring the red forest as a legacy security mechanism
 ms.service: security
 ms.subservice: 
 ms.topic: conceptual
-ms.date: 01/11/2021
+ms.date: 01/12/2021
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -14,36 +14,42 @@ ms.reviewer: mas
 ---
 # Enhanced Security Admin Environment
 
-The Enhanced Security Admin Environment (ESAE) architecture (often referred to as red forest, admin forest, or hardened forest) is an on-premises approach to provide a secure environment for Windows Server Active Directory (AD) administrators.
+The Enhanced Security Admin Environment (ESAE) architecture (often referred to as red forest, admin forest, or hardened forest) is an approach to provide a secure environment for Windows Server Active Directory (AD) administrators.
 
-ESAE guidance has been replaced by the modern [privileged access strategy](privileged-access-strategy.md) and [rapid modernization plan (RAMP)](security-rapid-modernization-plan.md) guidance as the default recommended approach for securing privileged users. The ESAE administrative forest pattern is now considered a custom configuration suitable only for exception cases listed below.
+Microsoft’s recommendation to use this architectural pattern has been replaced by the modern [privileged access strategy](privileged-access-strategy.md) and [rapid modernization plan (RAMP)](security-rapid-modernization-plan.md) guidance as the default recommended approach for securing privileged users. The ESAE hardened administrative forest pattern (on-prem or cloud-based) is now considered a custom configuration suitable only for exception cases listed below.
 
 ## What if I already have ESAE?
 
-For customers that have already deployed this architecture, there is no urgency to retire or replace an ESAE implementation if it's being operated as designed and intended. As with any enterprise systems, you should maintain the software in it by applying security updates and ensuring software is within [support lifecycle](https://docs.microsoft.com/lifecycle/).
+For customers that have already deployed this architecture to enhance security and/or simplify multi-forest management, there is no urgency to retire or replace an ESAE implementation if it's being operated as designed and intended. As with any enterprise systems, you should maintain the software in it by applying security updates and ensuring software is within [support lifecycle](https://docs.microsoft.com/lifecycle/).
 
-Because of the limited role coverage, Microsoft also recommends organizations with ESAE also adopt the modern [privileged access strategy](privileged-access-strategy.md) using the [rapid modernization plan (RAMP)](security-rapid-modernization-plan.md) guidance. This complements the existing ESAE implementation and provides appropriate security for roles not already protected by ESAE including Azure AD Global Administrators, sensitive business users, and standard enterprise users. For more information, see the article [Securing privileged access security levels](privileged-access-security-levels.md).
+Microsoft also recommends organizations with ESAE / hardened forests adopt the modern [privileged access strategy](privileged-access-strategy.md) using the [rapid modernization plan (RAMP)](security-rapid-modernization-plan.md) guidance. This complements an existing ESAE implementation and provides appropriate security for roles not already protected by ESAE including Azure AD Global Administrators, sensitive business users, and standard enterprise users. For more information, see the article [Securing privileged access security levels](privileged-access-security-levels.md).
 
 ## Why change the recommendation?
 
-Microsoft has changed this guidance because cloud-based solutions can be deployed quicker to protect a broader scope of administrative and business-sensitive roles and systems.
+When ESAE was originally designed 10 years ago, the focus was on on-premise environments with AD as the local identity provider. ESAE / hardened forest implementations focus on protecting Windows Server Active Directory administrators.
+
+Microsoft recommends the new cloud-based solutions because they can be deployed more quickly to protect a broader scope of administrative and business-sensitive roles and systems.
 
 ![Defense vs attack cost](./media/esae-retirement/defender-vs-attacker-cost.png)
 
-While still valid for specific use cases, ESAE implementations are more costly and more difficult to use and support compared to the newer cloud-based solution (due to the complex nature of the architecture). ESAE implementations also protect only Windows Server Active Directory administrators. Because of the complexity of the controls in an ESAE implementation, we have also seen instances of ESAE User (domain administrators) intentionally circumventing ESAE protections to get their jobs done efficiently, undermining the original security goal of the architecture. The [privileged access strategy](privileged-access-strategy.md) provides protections and monitoring for a much larger set of sensitive users, while providing incremental lower-cost steps to rapidly build security assurances.
+The [privileged access strategy](privileged-access-strategy.md) provides protections and monitoring for a much larger set of sensitive users, while providing incremental lower-cost steps to rapidly build security assurances.
+
+While still valid for specific use cases, ESAE hardened forest implementations are more costly and more difficult to use, requiring more operational support compared to the newer cloud-based solution (due to the complex nature of that architecture). ESAE implementations are designed to protect only Windows Server Active Directory administrators. The cloud based [privileged access strategy](privileged-access-strategy.md) provides protections and monitoring for a much larger set of sensitive users, while providing incremental lower-cost steps to rapidly build security assurances.
 
 ## What are the valid ESAE use cases?
 
-While not a mainstream recommendation, this ESAE architectural pattern is valid in a limited set of scenarios. In all of these exception cases, the organization must accept the increased technical complexity and operational costs of the solution. Additionally, the organization must have a sophisticated security program to measure and monitor risk and also apply consistent operational rigor to the usage and maintenance of the ESAE solution.
+While not a mainstream recommendation, this architectural pattern is valid in a limited set of scenarios.
+
+In these exception cases, the organization must accept the increased technical complexity and operational costs of the solution. The organization must have a sophisticated security program to measure and monitor risk, and apply consistent operational rigor to the usage and maintenance of the ESAE solution.
 
 Example scenarios include:
 
-- Isolated environments - where cloud services are unavailable such as offline research laboratories, critical infrastructure or utilities, disconnected operational technology (OT) environments such as Supervisory control and data acquisition (SCADA) / Industrial Control Systems (ICS).
-- Regulated environment – industry or government regulation may specifically require an administrative forest configuration.
-- High level security assurance is mandated - organizations with low risk tolerance that are willing to accept the increased complexity and cost of the solution.
+- **Isolated on-premises environments** - where cloud services are unavailable such as offline research laboratories, critical infrastructure or utilities, disconnected operational technology (OT) environments such as Supervisory control and data acquisition (SCADA) / Industrial Control Systems (ICS), and public sector customers that are fully reliant on on-premises technology.
+- **Highly regulated environments** – industry or government regulation may specifically require an administrative forest configuration.
+- **High level security assurance is mandated** - organizations with low risk tolerance that are willing to accept the increased complexity and operational cost of the solution.
 
 > [!NOTE]
-> While Microsoft no longer recommends an isolated administrative forest model for most scenarios at most organizations, Microsoft still operates a similar architecture internally (and associated support processes and personnel) because of the extreme security requirements for providing trusted cloud services to organizations around the globe.
+> While Microsoft no longer recommends an isolated hardened forest model for most scenarios at most organizations, Microsoft still operates a similar architecture internally (and associated support processes and personnel) because of the extreme security requirements for providing trusted cloud services to organizations around the globe.
 
 ## Next steps
 

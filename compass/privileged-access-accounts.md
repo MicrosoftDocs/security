@@ -5,7 +5,7 @@ description: Securing accounts is only one part of the privileged access story
 ms.service: security
 ms.subservice: 
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 01/20/2021
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -86,7 +86,7 @@ Specialized security builds on the strong MFA in enterprise security by identify
 
 Privileged accounts have the highest level of protection because they represent a significant or material potential impact on the organization's operations if compromised.
 
-Privileged accounts always include IT Admins with access to most or all enterprise systems, including most or all business critical systems. Other accounts with a high business impact may also warrant this additional level of protection. For more information about which roles and accounts should be protected at what level, see the article [Privileged Security]. 
+Privileged accounts always include IT Admins with access to most or all enterprise systems, including most or all business critical systems. Other accounts with a high business impact may also warrant this additional level of protection. For more information about which roles and accounts should be protected at what level, see the article [Privileged Security](privileged-access-security-levels.md).
 
 In addition to specialized security , privileged account security increases both:
 

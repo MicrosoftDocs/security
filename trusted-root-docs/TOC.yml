@@ -2,6 +2,8 @@
   href: program-requirements.md
 - name: Audit Requirements
   href: audit-requirements.md
+- name: Testing Procedures
+  href: testing.md
 - name: Incident Reporting Procedure
   href: Incident-Reporting.md
 - name: New Certificate Authority Application Procedure

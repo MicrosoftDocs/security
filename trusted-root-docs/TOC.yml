@@ -6,6 +6,8 @@
   href: testing.md
 - name: Incident Reporting Procedure
   href: Incident-Reporting.md
+- name: Deprecation Definitions
+  href: Deprecation.md
 - name: New Certificate Authority Application Procedure
   href: new-ca-application.md
 - name: Release Notes

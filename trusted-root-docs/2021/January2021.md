@@ -1,7 +1,7 @@
 ---
 title: January 2021 Deployment Notice - Microsoft Trusted Root Program 
 description: This document provides details about the changes made in october 2020 to the root store.
-ms.date: 10/27/2020
+ms.date: 1/20/2021
 ms.service: security
 author: kasirota
 ms.author: kasirota

@@ -1,7 +1,7 @@
 ---
 title: Release notes - Microsoft Trusted Root Certificate Program
 description: This document provides details about the changes made monthly to the root store.
-ms.date: 10/27/2020
+ms.date: 2/12/2021
 ms.service: security
 author: kasirota
 ms.author: kasirota
@@ -25,6 +25,7 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 ## 2021
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
+| February | February 23 | [Deployment Notice for February 2021](2021/Feb2021.md) |
 | January | January 26 | [Deployment Notice for January 2021](2021/January2021.md) |
 
 ## 2020

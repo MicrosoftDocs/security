@@ -25,7 +25,7 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 ## 2021
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
-| February | February 23 | [Deployment Notice for February 2021](2021/Feb2021.md) |
+| February | March 3 | [Deployment Notice for February 2021](2021/Feb2021.md) |
 | January | January 26 | [Deployment Notice for January 2021](2021/January2021.md) |
 
 ## 2020
@@ -48,17 +48,17 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
-| October | November 5  | [Deployment Notice Posted October 11](oct2019.md) |
-| August | August 14 | [Deployment Notice Posted August 14](august2019-2.md) |
-| August | August 27 | [Deployment Notice Posted August 2](august2019.md) |
-| July | July 10 | [Deployment Notice Posted July 11](july2019-2.md) |
-| July | July 30 | [Deployment Notice Posted July 2](July2019.md) |
-| June | July 2 | [Deployment Notice Posted June 5](june2019.md) |
-| May | May 28 | [Deployment Notice Posted May 1](May2019.md) |
-| April | April 30 | [Deployment Notice Posted April 15](April2019.md) |
-| March | March 26 | [Deployment Notice Posted March 6](Mar2019.md) |
-| February | March 5 | [Deployment Notice Posted February 19](Feb2019.md) |
-| January | January 29 | [Deployment Notice Posted January 23](Jan2019.md) |
+| October | November 5  | [Deployment Notice Posted October 11](2019/oct2019.md) |
+| August | August 14 | [Deployment Notice Posted August 14](2019/august2019-2.md) |
+| August | August 27 | [Deployment Notice Posted August 2](2019/august2019.md) |
+| July | July 10 | [Deployment Notice Posted July 11](2019/july2019-2.md) |
+| July | July 30 | [Deployment Notice Posted July 2](2019/July2019.md) |
+| June | July 2 | [Deployment Notice Posted June 5](2019/june2019.md) |
+| May | May 28 | [Deployment Notice Posted May 1](2019/May2019.md) |
+| April | April 30 | [Deployment Notice Posted April 15](2019/April2019.md) |
+| March | March 26 | [Deployment Notice Posted March 6](2019/Mar2019.md) |
+| February | March 5 | [Deployment Notice Posted February 19](2019/Feb2019.md) |
+| January | January 29 | [Deployment Notice Posted January 23](2019/Jan2019.md) |
 
 
 ## 2018 

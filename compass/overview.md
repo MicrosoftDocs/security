@@ -36,7 +36,7 @@ Building this strategy requires a holistic approach combining multiple technolog
 
 ## Industry references
 
-Securing privileged access is also addresses by these industry standards and best practices.
+Securing privileged access is also addressed by these industry standards and best practices.
 
 |   |   |   |
 | --- | --- | --- |

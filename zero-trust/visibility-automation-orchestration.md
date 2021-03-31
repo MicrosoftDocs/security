@@ -33,7 +33,7 @@ You want the ability to:
 
 Managing threats includes reactive as well as proactive detection and requires tools that support both.
 
-**Reactive detection** is when incidents are triggered from one of thesix p illars that can be investigated. Additionally, a management product like a SIEM will likely support another layer of analytics that will enrich and correlate data, resulting in flagging an incident as bad. The next step would then be to investigate to get the full narrative of the attack.
+**Reactive detection** is when incidents are triggered from one of the six pillars that can be investigated. Additionally, a management product like a SIEM will likely support another layer of analytics that will enrich and correlate data, resulting in flagging an incident as bad. The next step would then be to investigate to get the full narrative of the attack.
 
 **Proactive detection** is when you apply hunting to the data to prove a compromised hypothesis. Threat hunting starts with the assumption you have been breached--you hunt for proof that there is indeed a breach.
 

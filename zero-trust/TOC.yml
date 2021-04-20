@@ -50,11 +50,11 @@
     - name: Cloud Security Solutions
       href: isv/cloud-security.md
     - name: Integrate Legacy Apps 
-      href: legacy-apps.md
+      href: isv/legacy-apps.md
     - name: Become FIDO2 Partner
-      href: fido2-hardware-partner.md
+      href: isv/fido2-hardware-partner.md
     - name: Privileged Access Solutions
-      hred: privileged-access.md
+      hred: isv/privileged-access.md
 - name: Resources
   expanded: true
   items:

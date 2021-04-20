@@ -1,4 +1,14 @@
-# FIDO2 Hardware Vendor DRAFT
+---
+title: Become a FIDO2 harware partner
+description: Become a FIDO2 harware partner
+ms.date: 04/20/2021
+ms.service: security
+author: knicholasa
+ms.author: nichola
+ms.topic: conceptual
+---
+
+# Become a FIDO2 harware partner
 
 81% of hacking related breaches used either stolen or weak passwords. It's common practice for IT to attempt lessening password risk by employing stronger password complexity and demanding more frequent password changes. However, these tactics drive up IT help desk costs while leading to poor user experiences related to password reset requirements.
 

@@ -1,3 +1,13 @@
+---
+title: Secure Hybrid Access Integrations for ISVs
+description: Secure Hybrid Access Integrations for ISVs
+ms.date: 04/20/2021
+ms.service: security
+author: knicholasa
+ms.author: nichola
+ms.topic: conceptual
+---
+
 # Secure Hybrid Access Integrations for ISVs
 
 Modern authentication protocols are designed to keep applications secure in a highly connected, cloud-based world. However, many business-critical applications were built before this move to the cloud. Their methods of authentication and authorization were not built to work outside of a protected corporate network. Companies need solutions that provide modern authentication for these applications with legacy protocols to continue using them securely in the modern workplace.

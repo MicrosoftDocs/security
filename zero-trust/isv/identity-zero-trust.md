@@ -1,3 +1,13 @@
+---
+title: Building identity solutions for Zero Trust
+description: Building identity solutions for Zero Trust
+ms.date: 04/20/2021
+ms.service: security
+author: knicholasa
+ms.author: nichola
+ms.topic: conceptual
+---
+
 # Building identity solutions for Zero Trust
 
 Identities define the Zero Trust control plane. They represent the people, services, or IoT devices that are accessing your resources. Creating identity solutions will help customers rapidly improve their security posture by controlling who has access to resources and what they have access to.

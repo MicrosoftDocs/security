@@ -1,3 +1,13 @@
+---
+title: Getting Started with Cloud Security Integrations
+description: Getting Started with Cloud Security Integrations
+ms.date: 04/20/2021
+ms.service: security
+author: knicholasa
+ms.author: nichola
+ms.topic: conceptual
+---
+
 # Getting Started with Cloud Security Integrations
 
 Knowing where to begin can be the biggest barrier to getting started integrating with Microsoft's identity features and services. The modern threat landscape is complex, and there are many integration options to evaluate.

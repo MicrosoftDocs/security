@@ -1,4 +1,14 @@
-# Privileged Access Management solutions DRAFT
+---
+title: Privileged Access Management solutions
+description: Privileged Access Management solutions
+ms.date: 04/20/2021
+ms.service: security
+author: knicholasa
+ms.author: nichola
+ms.topic: conceptual
+---
+
+# Privileged Access Management solutions
 
 Privileged Access Management (PAM) solutions are built to control who has access to elevated permissions in an organization's data and infrastructure. PAM solutions are key to implementing a Zero Trust model. They improving an organizations security posture by:
 

@@ -1,19 +1,66 @@
-- name: Zero Trust Security
+- name: Zero Trust security
+  expanded: true
+- name: Introduction
   expanded: true
   items:
-    - name: Zero Trust introduction
-      href: https://aka.ms/ZTDeploymentGuideIntroduction
+  - name: Zero Trust introduction
+    href: index.md
+- name: Zero Trust for IT Admins
+  expanded: true
+  items:
     - name: Secure identity
-      href: https://aka.ms/ZTIdentity
+      items:
+      - name: Identity security overview
+        href: identity.md
+      - name: Rapid modernization plan for Identity
+        href: https://docs.microsoft.com/security/compass/security-rapid-modernization-plan
     - name: Secure endpoints
-      href: https://aka.ms/ZTDevices
+      items:
+      - name: Endpoint security overview
+        href: endpoints.md
     - name: Secure applications
-      href: https://aka.ms/ZTApplications
+      items:
+      - name: Application security overview
+        href: applications.md
     - name: Secure data
-      href: https://aka.ms/ZTData
+      items:
+      - name: Data security overview
+        href: data.md
     - name: Secure infrastructure
-      href: https://aka.ms/ZTInfrastructure
+      items:
+      - name: Infrastructure security overview
+        href: infrastructure.md
     - name: Secure networks
-      href: https://aka.ms/ZTNetwork
+      items:
+      - name: Network security overview
+        href: networks.md
     - name: Visibility, automation, and orchestration
-      href: https://aka.ms/ZTCrossPillars
+      items:
+      - name: Orchestration overview
+        href: visibility-automation-orchestration.md
+- name: Zero Trust for ISVs
+  expanded: false
+  items: 
+  - name: Vendor view of Zero Trust
+    href: isv-zero-trust.md
+  - name: Identity
+    items:
+    - name: Zero Trust for Identity
+      href: isv/identity-zero-trust.md
+    - name: Cloud Security Solutions
+      href: isv/cloud-security.md
+    - name: Integrate Legacy Apps 
+      href: legacy-apps.md
+    - name: Become FIDO2 Partner
+      href: fido2-hardware-partner.md
+    - name: Privileged Access Solutions
+      hred: privileged-access.md
+- name: Resources
+  expanded: true
+  items:
+  - name: Zero Trust Assessment
+    href: https://info.microsoft.com/ww-landing-Zero-Trust-Assessment.html
+  - name: Microsoft Security Blog
+    href: https://www.microsoft.com/security/blog/
+  - name: Microsoft Intelligent Security Association
+    href: https://www.microsoft.com/security/business/intelligent-security-association

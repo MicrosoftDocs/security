@@ -72,7 +72,7 @@ Legacy authentication methods are among the top attack vectors for cloud-hosted 
 
 For Azure and other Azure AD-based accounts, configure [Conditional Access to block legacy protocols](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication).
 
-Disabling legacy authentication can be difficult, as some users may not want to move to new client software that supports modern authentication methods. However, moving away from legacy authentication can be done gradually. Start by using metrics and logging from your authentication provider to determine the how many users still authenticate with old clients. Next, disable any down-level protocols that aren’t in use, and set up conditional access for all users who aren’t using legacy protocols. Finally, give plenty of notice and guidance to users on how to upgrade before blocking legacy authentication for all users on all services at a protocol level.
+Disabling legacy authentication can be difficult, as some users may not want to move to new client software that supports modern authentication methods. However, moving away from legacy authentication can be done gradually. Start by using metrics and logging from your authentication provider to determine the how many users still authenticate with old clients. Next, disable any down-level protocols that aren’t in use, and set up Conditional Access for all users who aren’t using legacy protocols. Finally, give plenty of notice and guidance to users on how to upgrade before blocking legacy authentication for all users on all services at a protocol level.
 
 ## No on-premises admin accounts in cloud identity providers
 

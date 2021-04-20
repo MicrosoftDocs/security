@@ -41,20 +41,36 @@
 - name: Zero Trust for ISVs
   expanded: false
   items: 
-  - name: Overview of Zero Trust for ISVs
-    href: isv/isv-zero-trust.md
-  - name: Identity
-    items:
-    - name: Zero Trust for Identity
-      href: isv/identity-zero-trust.md
-    - name: Cloud Security Solutions
-      href: isv/cloud-security.md
-    - name: Integrate Legacy Apps 
-      href: isv/legacy-apps.md
-    - name: Become FIDO2 Partner
-      href: isv/fido2-hardware-vendor.md
-    - name: Privileged Access Solutions
-      hred: isv/privileged-access.md
+    - name: Overview of Zero Trust for ISVs
+      href: isv/isv-zero-trust.md
+    - name: Secure identity
+      items:
+      - name: Zero Trust for Identity
+        href: isv/identity-zero-trust.md
+      - name: Cloud Security Solutions
+        href: isv/cloud-security.md
+      - name: Integrate Legacy Apps 
+        href: isv/legacy-apps.md
+      - name: Become FIDO2 Partner
+        href: isv/fido2-hardware-vendor.md
+      - name: Privileged Access Solutions
+        hred: isv/privileged-access.md
+    - name: Secure endpoints
+    - name: Secure applications
+    - name: Secure data
+    - name: Secure infrastructure
+    - name: Secure networks
+    - name: Visibility, automation, and orchestration
+- name: Zero Trust for Developers
+  expanded: true
+  items:
+    - name: Secure identity
+    - name: Secure endpoints
+    - name: Secure applications
+    - name: Secure data
+    - name: Secure infrastructure
+    - name: Secure networks
+    - name: Visibility, automation, and orchestration
 - name: Resources
   expanded: true
   items:

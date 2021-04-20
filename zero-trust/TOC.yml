@@ -41,8 +41,8 @@
 - name: Zero Trust for ISVs
   expanded: false
   items: 
-  - name: Vendor view of Zero Trust
-    href: isv-zero-trust.md
+  - name: Overview of Zero Trust for ISVs
+    href: isv/isv-zero-trust.md
   - name: Identity
     items:
     - name: Zero Trust for Identity

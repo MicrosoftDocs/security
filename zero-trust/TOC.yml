@@ -52,7 +52,7 @@
     - name: Integrate Legacy Apps 
       href: isv/legacy-apps.md
     - name: Become FIDO2 Partner
-      href: isv/fido2-hardware-partner.md
+      href: isv/fido2-hardware-vendor.md
     - name: Privileged Access Solutions
       hred: isv/privileged-access.md
 - name: Resources

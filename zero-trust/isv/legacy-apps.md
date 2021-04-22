@@ -93,10 +93,30 @@ You can set up conditional access in the applications you have migrated for your
 
 # Highlighted partners
 
-Some text explaining how these partners work with us.
+Microsoft has existing partnerships with these third-party providers to protect legacy applications while using existing networking and delivery controllers.
 
-List of partners:
+| **Provider** | **Link** |
+| --- | --- |
+| Akamai Enterprise Application Access (EAA) | https://docs.microsoft.com/azure/active-directory/saas-apps/akamai-tutorial |
+| Citrix Application Delivery Controller (ADC) | https://docs.microsoft.com/azure/active-directory/saas-apps/citrix-netscaler-tutorial |
+| F5 Big-IP APM | https://docs.microsoft.com/azure/active-directory/manage-apps/f5-aad-integration |
+| Kemp | https://docs.microsoft.com/azure/active-directory/saas-apps/kemp-tutorial |
+| Pulse Secure Virtual Traffic Manager (VTM) | https://docs.microsoft.com/azure/active-directory/saas-apps/pulse-secure-virtual-traffic-manager-tutorial |
 
-- Foo
-- Bar
-- Baz
+The following VPN and SDP solution providers connect with Azure AD to enable modern authentication and authorization methods like single sign-on and multi-factor authentication.
+
+| **VPN Vendor** | **Link** |
+| --- | --- |
+| Cisco AnyConnect | https://docs.microsoft.com/azure/active-directory/saas-apps/cisco-anyconnect |
+| Fortinet | https://docs.microsoft.com/azure/active-directory/saas-apps/fortigate-ssl-vpn-tutorial |
+| F5 Big-IP APM | https://docs.microsoft.com/azure/active-directory/manage-apps/f5-aad-password-less-vpn |
+| Palo Alto Networks Global Protect | https://docs.microsoft.com/azure/active-directory/saas-apps/paloaltoadmin-tutorial |
+| Pulse Secure Pulse Connect Secure (PCS) | https://docs.microsoft.com/azure/active-directory/saas-apps/pulse-secure-pcs-tutorial |
+
+| **SDP Vendor** | **Link** |
+| --- | --- |
+| Datawiza Access Broker | https://docs.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-oidc-sso |
+| Perimeter 81 | https://docs.microsoft.com/azure/active-directory/saas-apps/perimeter-81-tutorial |
+| Silverfort Authentication Platform | https://docs.microsoft.com/azure/active-directory/manage-apps/add-application-portal-setup-oidc-sso |
+| Strata | https://docs.microsoft.com/azure/active-directory/saas-apps/maverics-identity-orchestrator-saml-connector-tutorial |
+| Zscaler Private Access (ZPA) | https://docs.microsoft.com/azure/active-directory/saas-apps/zscalerprivateaccess-tutorial |

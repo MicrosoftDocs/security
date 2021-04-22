@@ -1,12 +1,7 @@
 - name: Zero Trust security
-  expanded: true
-- name: Introduction
-  expanded: true
-  items:
-  - name: Zero Trust introduction
-    href: index.md
+  href: index.md
 - name: Zero Trust for IT Admins
-  expanded: true
+  expanded: false
   items:
     - name: Secure identity
       items:
@@ -45,11 +40,13 @@
       href: isv/isv-zero-trust.md
     - name: Secure identity
       items:
-      - name: Zero Trust for Identity
+      - name: Identity security overview
         href: isv/identity-zero-trust.md
+      - name: Integrations
+        expanded: true
       - name: Cloud Security Solutions
         href: isv/cloud-security.md
-      - name: Integrate Legacy Apps 
+      - name: Secure Hybrid Access 
         href: isv/legacy-apps.md
       - name: Become FIDO2 Partner
         href: isv/fido2-hardware-vendor.md
@@ -62,9 +59,12 @@
     - name: Secure networks
     - name: Visibility, automation, and orchestration
 - name: Zero Trust for Developers
-  expanded: true
+  expanded: false
   items:
     - name: Secure identity
+      items:
+      - name: Identity for Developers
+        href: developer.md
     - name: Secure endpoints
     - name: Secure applications
     - name: Secure data

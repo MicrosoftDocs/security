@@ -80,7 +80,7 @@ Disabling legacy authentication can be difficult, as some users may not want to 
 
 This mitigates the risk of an adversary pivoting to full control of on-premises assets following a successful compromise of a cloud account. This helps contain the scope of an incident from growing significantly.
 
-For Azure, don’t synchronize accounts to Azure AD that have high privileges in your existing AD DS. This is blocked by default in the default Azure AD Connect configuration, so you only need to confirm you haven’t changed this configuration.
+For Azure, don’t synchronize accounts to Azure AD that have high privileges in your existing AD DS. This is blocked by default in the default Azure AD Connect configuration, so you only need to confirm you haven’t customized this configuration.
 
 This is related to the [critical impact account dependencies](/azure/architecture/security/critical-impact-accounts#critical-impact-admin-dependencies--accountworkstation) guidance in the administration section that mitigates the inverse risk of pivoting from on-premises to cloud assets.
 
@@ -94,7 +94,7 @@ Legacy identity providers mostly checked to make sure passwords had a good mix o
 
 - **NIST** - https://pages.nist.gov/800-63-3/sp800-63b.html
 
-Identity solutions today need to be able to respond to types of attacks that didn't even exist one or two decades ago such as password sprays, breach replays (also called *credential stuffing*) that test username/password pairs from other sites’ breaches, and phishing man-in-the-middle attacks. Cloud identity providers are uniquely positioned to offer protection against these attacks. Since they handle such large volumes of sign-ons, they can apply better anomaly detection and use a variety of data sources to both proactively notify companies if their users’ passwords have been found in other breaches, as well as validate that any given sign in appears legitimate and is not coming from an unexpected or known-malicious host.
+Identity solutions today need to be able to respond to types of attacks that didn't even exist one or two decades ago such as password sprays, breach replays (also called *“credential stuffing*”) that test username/password pairs from other sites’ breaches, and phishing man-in-the-middle attacks. Cloud identity providers are uniquely positioned to offer protection against these attacks. Since they handle such large volumes of sign-ons, they can apply better anomaly detection and use a variety of data sources to both proactively notify companies if their users’ passwords have been found in other breaches, as well as validate that any given sign in appears legitimate and is not coming from an unexpected or known-malicious host.
 
 Additionally, synchronizing passwords to the cloud to support these checks also add resiliency during some attacks. Customers affected by (Not)Petya attacks were able to continue business operations when password hashes were synchronized to Azure AD (vs. near zero communications and IT services for customers affected organizations that had not synchronized passwords).
 

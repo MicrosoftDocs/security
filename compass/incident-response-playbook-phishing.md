@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: thomasdetzner
-author: thomasdetzner
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -53,7 +53,7 @@ Get-OrganizationConfig \| Format-List AuditDisabled\`
 
 The value **False** indicates that mailbox auditing on by default is enabled for the organization. This *on by default* organizational value overrides the mailbox auditing setting on specific mailboxes. For example, if mailbox auditing is disabled for a mailbox (the *AuditEnabled* property is **False** on the mailbox), the default mailbox actions will still be audited for the mailbox, because mailbox auditing on by default is enabled for the organization.
 
-**Note:** If the tenant was created BEFORE 2019, then you should enable the *mailbox auditing* and *ALL auditing* settings. See how to [enable mailbox auditing](https://docs.microsoft.com/en-us/office365/securitycompliance/enable-mailbox-auditing).
+**Note:** If the tenant was created BEFORE 2019, then you should enable the *mailbox auditing* and *ALL auditing* settings. See how to [enable mailbox auditing](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
 
 #### Verify mailbox auditing settings in the tenant
 
@@ -78,7 +78,7 @@ Get-Mailbox -Identity \*Johndoe” \| Set-Mailbox -AuditEnabled $true
 
 ### Message tracing
 
-Message tracing logs are invaluable components to trace message of interest in order to understand the original source of the message as well as the intended recipients. You can use the *MessageTrace* functionality through the Microsoft [Exchange Online portal](https://docs.microsoft.com/en-us/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results) or the [PowerShell cmdlet:](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-messagetrace?view=exchange-ps)
+Message tracing logs are invaluable components to trace message of interest in order to understand the original source of the message as well as the intended recipients. You can use the *MessageTrace* functionality through the Microsoft [Exchange Online portal](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results) or the [PowerShell cmdlet:](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-messagetrace)
 
 ```powershell
 Get-Message Trace
@@ -88,9 +88,9 @@ Several components of the *MessageTrace* functionality are self-explanatory but 
 
 ### Microsoft 365 security and compliance center
 
-To check whether a user viewed a specific document or purged an item in their mailbox, you can use the [Office 365 Security & Compliance Center](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center#:~:text=The%20Security%20%26%20Compliance%20Center%20is%20designed%20to,features%20bring%20together%20compliance%20capabilities%20across%20Office%20365.) and [check the permissions and roles of users and administrators](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+To check whether a user viewed a specific document or purged an item in their mailbox, you can use the [Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center#:~:text=The%20Security%20%26%20Compliance%20Center%20is%20designed%20to,features%20bring%20together%20compliance%20capabilities%20across%20Office%20365.) and [check the permissions and roles of users and administrators](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-You can also search the [unified audit log](https://docs.microsoft.com/en-us/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) and view all the activities of the user and administrator in your Office 365 organization.
+You can also search the [unified audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) and view all the activities of the user and administrator in your Office 365 organization.
 
 ### Are the sign-in logs and/or audit logs exported to an external system?
 
@@ -102,15 +102,15 @@ Since most of the Azure AD sign-in and audit data will get overwritten after 30 
 
 We recommend the following roles are enabled for the account you will use to perform the investigation:
 
-- [Global Reader ](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)
-- [Security Reader ](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) 
-- As a last resort, you can always fall back to the role of a [Global Administrator / Company Administrator](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)
+- [Global Reader ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)
+- [Security Reader ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) 
+- As a last resort, you can always fall back to the role of a [Global Administrator / Company Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)
 
 ### Roles in Microsoft 365 security and compliance center
 
-Generally speaking, the [Global Reader](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) or the [Security Reader](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security?view=o365-worldwide#security-reader) role should give you sufficient permissions to search the relevant logs.
+Generally speaking, the [Global Reader](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) or the [Security Reader](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security#security-reader) role should give you sufficient permissions to search the relevant logs.
 
-**Note:** If a user has the **View-Only Audit Logs** or **Audit Logs** role on the **Permissions** page in the Security & Compliance Center, they won't be able to search the Office 365 audit log. In this scenario, you must assign the permissions in Exchange Online because an [Exchange Online cmdlet](https://docs.microsoft.com/en-us/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide) is used to search the log.
+**Note:** If a user has the **View-Only Audit Logs** or **Audit Logs** role on the **Permissions** page in the Security & Compliance Center, they won't be able to search the Office 365 audit log. In this scenario, you must assign the permissions in Exchange Online because an [Exchange Online cmdlet](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) is used to search the log.
 
 If the customer has implemented the role-based access control (RBAC) in Exchange or if you are unsure which role you need in Exchange, you can use PowerShell to get the roles required for an individual Exchange PowerShell cmdlet:
 
@@ -118,7 +118,7 @@ If the customer has implemented the role-based access control (RBAC) in Exchange
 $Perms \| foreach {Get-ManagementRoleAssignment -Role $\_.Name -Delegating $false \| Format-Table -Auto Role,RoleAssigneeType,RoleAssigneeName}
 ```
 
-For more information, see [permissions required to run any Exchange cmdlet](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions?view=exchange-ps). 
+For more information, see [permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions). 
 
 ### Microsoft Defender for Endpoint
 
@@ -183,7 +183,7 @@ To install the MSOnline PowerShell module, follow these steps:
 
 ### Install Exchange PowerShell module
 
-Please follow the steps on [how to get the Exchange PowerShell installed with multi-factor authentication (MFA)](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps). You must have access to a tenant, so you can download the Exchange Online PowerShell module from the **Hybrid** tab in the Exchange admin center (EAC).
+Please follow the steps on [how to get the Exchange PowerShell installed with multi-factor authentication (MFA)](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell). You must have access to a tenant, so you can download the Exchange Online PowerShell module from the **Hybrid** tab in the Exchange admin center (EAC).
 
  Once you have configured the required settings, you can proceed with the investigation.
 
@@ -233,9 +233,9 @@ We do not give any recommendations in this playbook on how you want to record th
 
 ### Create a search filter within the security & compliance center
 
-Navigate to the security & compliance center in Microsoft 365 and create a new search filter, using the indicators you have been provided. Follow the guidance on [how to create a search filter](https://docs.microsoft.com/en-us/microsoft-365/compliance/content-search?view=o365-worldwide#create-a-search).
+Navigate to the security & compliance center in Microsoft 365 and create a new search filter, using the indicators you have been provided. Follow the guidance on [how to create a search filter](https://docs.microsoft.com/microsoft-365/compliance/content-search#create-a-search).
 
-For a full list of searchable patterns in the security & compliance center, refer to the article on [searchable email properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions?view=o365-worldwide#searchable-email-properties).
+For a full list of searchable patterns in the security & compliance center, refer to the article on [searchable email properties](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties).
 
 #### Sample search patterns
 
@@ -251,7 +251,7 @@ The following example query returns messages that were sent by *chatsuwloginsse
 (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
 ```
 
-For more details, see how to [search for and delete messages in your organization](https://docs.microsoft.com/en-us/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
+For more details, see how to [search for and delete messages in your organization](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
 
 ###  Use the search-mailbox cmdlet
 
@@ -324,7 +324,7 @@ Look for new rules, or rules that have been modified to redirect the mail to ext
 
 In the Office 365 security & compliance center, navigate to [unified audit log](https://protection.office.com/#/unifiedauditlog). Under **Activities** in the drop-down list, you can filter by **Exchange Mailbox Activities**.
 
-The capability to list compromised users is available in the [M365 security & compliance center](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-worldwide#compromised-users-report-new). 
+The capability to list compromised users is available in the [M365 security & compliance center](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-email-security-reports#compromised-users-report-new). 
 
 This report shows activities that could indicate a mailbox is being accessed illicitly. It includes created or received messages, moved or deleted messages, copied or purged messages, sent messages using send on behalf or send as, and all mailbox sign ins. The data includes date, IP address, user, activity performed, the item affected, and any extended details.
 
@@ -415,7 +415,7 @@ Use the *Search-Mailbox* cmdlet to search for message delivery information store
 Search-Mailbox -Identity "Jane Smith"-SearchQuery AttachmentNames:attachment\_name -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
-**Note:** For Exchange 2013, you need CU12 to have this [*cmdlet*](https://support.microsoft.com/en-us/topic/search-mailbox-cmdlet-with-attachment-keyword-lists-all-items-that-contain-the-query-string-of-attachment-b0422602-9f14-e85a-434f-81a14549574d) running*.*
+**Note:** For Exchange 2013, you need CU12 to have this [*cmdlet*](https://support.microsoft.com/topic/search-mailbox-cmdlet-with-attachment-keyword-lists-all-items-that-contain-the-query-string-of-attachment-b0422602-9f14-e85a-434f-81a14549574d) running*.*
 
 ### Was there payload in the attachment?
 
@@ -423,7 +423,7 @@ In this step, look for potential malicious content in the attachment, for exampl
 
 The **Malware Detections** report shows the number of incoming and outgoing messages that were detected as containing malware for your organization.
 
-To view this report, in the security & compliance center, go to [Reports >  Dashboard > Malware Detections](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-worldwide#malware-detections-report).  
+To view this report, in the security & compliance center, go to [Reports >  Dashboard > Malware Detections](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-email-security-reports#malware-detections-report).  
 
 Similar to the **Threat Protection Status** report, this report also displays data for the past seven days by default. However, you can choose filters to change the date range for up to 90 days to view the details. (If you are using a trial subscription, you might be limited to 30 days of data.) To see the details, select **View details table** or export the report.
 
@@ -479,11 +479,11 @@ The SPF record is stored within a DNS database and is bundled with the DNS looku
 
 ### Check if DKIM is enabled on your custom domains in Office 365
 
-The customer needs to publish two CNAME records for every domain they want to add the domain keys identified mail (DKIM). See how to [use DKIM to validate outbound email sent from your custom domain](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide).
+The customer needs to publish two CNAME records for every domain they want to add the domain keys identified mail (DKIM). See how to [use DKIM to validate outbound email sent from your custom domain](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email).
 
 ### Check for domain-based message authentication, reporting, and conformance (DMARC)
 
-You can use this feature to [validate outbound emails in Office 365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide#CreateDMARCRecord).
+You can use this feature to [validate outbound emails in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email#CreateDMARCRecord).
 
 ### Verify IP addresses to attackers/campaigns
 
@@ -499,7 +499,7 @@ To verify or investigate IP addresses that have been identified from the previou
 
 ### URL reputation
 
-You can use any Windows 10 device and Microsoft Edge browser which leverages the [SmartScreen](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) technology.
+You can use any Windows 10 device and Microsoft Edge browser which leverages the [SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) technology.
 
 Here are a few third-party URL reputation examples
 
@@ -519,13 +519,13 @@ You can investigate these events using Microsoft Defender for Endpoint.
     Depending on the vendor of the proxy and VPN solutions, you need to work with the customer to check the relevant logs. Ideally the customer is forwarding the events to their SIEM or in Sentinel.
 
 2. **Using Microsoft Defender for Endpoint**  
-    This is the best-case scenario, because you can use our threat intelligence and automated analysis to help your investigation. For more details, see [how to investigate alerts in Microsoft Defender for Endpoint](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/investigate-alerts). 
+    This is the best-case scenario, because you can use our threat intelligence and automated analysis to help your investigation. For more details, see [how to investigate alerts in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-alerts). 
 
     The **Alert process tree** takes alert triage and investigation to the next level, displaying the aggregated alerts and surrounding evidences that occurred within the same execution context and time period.  
     ![alertprocesstree](./media/incident-response-playbook-phishing/alertprocesstree.png)
      
 3.  **Windows-based client devices**  
-    Make sure the customer has enabled the [**Process Creation Events**](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4688) option. Ideally, the customer should have also enabled [command-line Tracing Events](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing).
+    Make sure the customer has enabled the [**Process Creation Events**](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4688) option. Ideally, the customer should have also enabled [command-line Tracing Events](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing).
 
     On Windows clients, which have the above-mentioned Audit Events enabled prior to the investigation, you can check Audit Event 4688 and determine the time when the email was delivered to the user:
 
@@ -573,7 +573,7 @@ Open the command prompt, and run the following command as an administrator.
 auditpol.exe /set /subcategory:”Application Generated” /failure:enable /success:enable
 ```
 
-For more details, see [how to configure ADFS servers for troubleshooting](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc738766(v=ws.10)?redirectedfrom=MSDN#BKMK_97).
+For more details, see [how to configure ADFS servers for troubleshooting](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc738766(v=ws.10)?redirectedfrom=MSDN#BKMK_97).
 
 You may want to also download the ADFS PowerShell modules from:
 
@@ -587,13 +587,13 @@ By default, ADFS in Windows Server 2016 has basic auditing enabled. With basic a
 ```powershell
 Set-AdfsProperties -AuditLevel Verbose
 ```
-For more details, see [auditing enhancements to ADFS in Windows server](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/technical-reference/auditing-enhancements-to-ad-fs-in-windows-server).
+For more details, see [auditing enhancements to ADFS in Windows server](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/auditing-enhancements-to-ad-fs-in-windows-server).
 
 If the customer has Azure AD Connect Health installed, you should also look into the Risky IP report. The failed sign-in activity client IP addresses are aggregated through Web Application proxy servers. Each item in the Risky IP report shows aggregated information about failed AD FS sign-in activities that exceed the designated threshold.
 
 ![timestamp](./media/incident-response-playbook-phishing/timestamp.png)
 
-For more details, see [Risky IP report](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip).
+For more details, see [Risky IP report](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip).
 
 #### Server 2012R2
 
@@ -632,7 +632,7 @@ To get the full list of ADFS Event ID per OS Level, refer to [GetADFSEventList](
 Check the Azure AD sign-in logs for the user(s) you are investigating.
 
 - Navigate to the [Azure AD portal > Sign-in](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen
-- Check the [sign-in activities](https://docs.microsoft.com/en-us/graph/api/resources/signinactivity?view=graph-rest-beta)
+- Check the [sign-in activities](https://docs.microsoft.com/graph/api/resources/signinactivity)
 - Check the [PowerShell function on GitHub](https://github.com/poshchap/Azure-AD-Users-PoSh/blob/master/Get-AzureADUserLastSignInActivity.ps1)
 
 In the Azure AD portal, navigate to the [Sign-ins](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen and add/modify the display filter for the timeframe you found in the previous investigation steps as well as add the user name as a filter, as shown in the image below.

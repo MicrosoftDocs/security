@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: thomasdetzner
-author: thomasdetzner
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -158,9 +158,9 @@ Application permissions are used by apps that run without a signed-in user pres
 
 For more information see:
 
-- [Admin consent workflow for admin approval for specific applications](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-admin-consent-workflow)
-- [Publisher verification program](https://docs.microsoft.com/en-us/azure/active-directory/develop/publisher-verification-overview#:~:text=Publisher%20verification%20%28preview%29%20helps%20admins%20and%20end%20users,application%20developers%20integrating%20with%20the%20Microsoft%20identity%20platform.)
-- [Configure how end users consent to applications](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-user-consent)
+- [Admin consent workflow for admin approval for specific applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow)
+- [Publisher verification program](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview#:~:text=Publisher%20verification%20%28preview%29%20helps%20admins%20and%20end%20users,application%20developers%20integrating%20with%20the%20Microsoft%20identity%20platform.)
+- [Configure how end users consent to applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-user-consent)
 
 ### Classifying risky permissions
 
@@ -231,7 +231,7 @@ As per our observation, attackers have used a combination of the first six permi
 
 8. You can now assign or review these permissions.
 
-    For more information, read  [Graph Permissions](https://docs.microsoft.com/en-us/graph/permissions-reference).
+    For more information, read  [Graph Permissions](https://docs.microsoft.com/graph/permissions-reference).
 
 ## Workflow
 
@@ -430,14 +430,14 @@ After you have finished inventorying application access, review the audit log to
 
 ## How to prevent attacks and mitigate risks?
 
-- Regularly [audit applications](https://docs.microsoft.com/en-us/azure/security/fundamentals/steps-secure-identity#audit-apps-and-consented-permissions) and granted permissions in your organization to ensure no unwarranted or suspicious applications have previously been granted access to data.
+- Regularly [audit applications](https://docs.microsoft.com/azure/security/fundamentals/steps-secure-identity#audit-apps-and-consented-permissions) and granted permissions in your organization to ensure no unwarranted or suspicious applications have previously been granted access to data.
 
-- [Review, detect, and remediate illicit consent grants in Office 365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants) for additional best practices and safeguards against suspicious applications requesting OAuth consent.
+- [Review, detect, and remediate illicit consent grants in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants) for additional best practices and safeguards against suspicious applications requesting OAuth consent.
 
 If your organization has the appropriate license:
 
-- Use additional [OAuth application](https://docs.microsoft.com/en-us/cloud-app-security/investigate-risky-oauth)  auditing features in Microsoft Cloud App Security.
-- Use [Azure Monitor Workbooks](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-use-azure-monitor-workbooks)  to monitor permissions and consent related activity. The Consent Insights workbook provides a view of apps by number of failed consent requests. This can be helpful to prioritize applications for administrators to review and decide whether to grant them admin consent.
+- Use additional [OAuth application](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)  auditing features in Microsoft Cloud App Security.
+- Use [Azure Monitor Workbooks](https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-use-azure-monitor-workbooks)  to monitor permissions and consent related activity. The Consent Insights workbook provides a view of apps by number of failed consent requests. This can be helpful to prioritize applications for administrators to review and decide whether to grant them admin consent.
 
 ## How to stop and remediate an illicit consent grant attack?
 
@@ -454,7 +454,7 @@ After you have identified an application with illicit permissions, you have seve
 4. Click on **Remove**.
     ![removeapp](./media/incident-response-playbook-app-consent/assignmentdetail.png)
 
-**You can use PowerShell to revoke the OAuth consent grant by following the steps in [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadoauth2permissiongrant?view=azureadps-2.0)**.
+**You can use PowerShell to revoke the OAuth consent grant by following the steps in [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/remove-azureadoauth2permissiongrant)**.
 
 First, run this command to gather information that you have in Azure AD, for permissions of consent grants.
 
@@ -466,7 +466,7 @@ The output is shown in the image below.
 
 ![output](./media/incident-response-playbook-app-consent/output.png)
 
-**You can use PowerShell to revoke the Service App Role Assignment by following the steps in [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadoauth2permissiongrant?view=azureadps-2.0)**.
+**You can use PowerShell to revoke the Service App Role Assignment by following the steps in [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/remove-azureadoauth2permissiongrant)**.
 
 ```powershell
 Remove-AzureADOAuth2PermissionGrant -ObjectId "GbrSwpsCB0ar6c7N7PRvD1bNACUj4C9IspcKu5YkdoE"
@@ -505,13 +505,13 @@ To help prevent consent attacks from affecting Azure AD and Office 365, see the
 ![consent](./media/incident-response-playbook-app-consent/consentpermissions.png)
 
 **Educate your application developers to follow the trustworthy app ecosystem.**  
-To help developers build high-quality and secure integrations, we’re also announcing [public preview of the Integration Assistant in Azure AD app registrations.](https://docs.microsoft.com/en-us/azure/active-directory/develop/identity-platform-integration-checklist)
+To help developers build high-quality and secure integrations, we’re also announcing [public preview of the Integration Assistant in Azure AD app registrations.](https://docs.microsoft.com/azure/active-directory/develop/identity-platform-integration-checklist)
 
 - The Integration Assistant analyzes your app registration and benchmarks it against a set of recommended security best practices.
 - The Integration Assistant highlights best practices that are relevant during each phase of your integration’s lifecycle—from development all the way to monitoring—and ensures every stage is properly configured.
 - It’s designed to make your job easier, whether you’re integrating your first app or you’re an expert looking to improve your skills.
 
-**Educate your organization on consent tactics ([phishing tactics, admin and user consents](https://docs.microsoft.com/en-us/azure/active-directory/develop/application-consent-experience) ):**
+**Educate your organization on consent tactics ([phishing tactics, admin and user consents](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience) ):**
 
 - Check for poor spelling and grammar. If an email message or the application’s consent screen has spelling and grammatical errors, it’s likely to be a suspicious application.
 - Keep a watchful eye on app names and domain URLs. Attackers like to spoof app names that make it appear to come from legitimate applications or companies but drive you to consent to a malicious app.
@@ -521,7 +521,7 @@ To help developers build high-quality and secure integrations, we’re also anno
 
 - Promote the use of applications that have been publisher verified. Publisher verification helps admins and end users understand the authenticity of application developers. Over 660 applications by 390 publishers have been verified thus far.
 - Configure application consent policies by allowing users to only consent to specific applications you trust, such as application developed by your organization or from verified publishers.
-- Educate your organization on how our permissions and consent [framework works](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-admin-consent-workflow).
+- Educate your organization on how our permissions and consent [framework works](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow).
 - Understand the data and permissions an application is asking for and understand how permissions and consent work within our platform.
 - Ensure administrators know how to manage and evaluate consent requests.
 
@@ -549,22 +549,22 @@ The content for this article has been sourced from the following resources:
 
 - [Protecting remote workforce application attacks](https://www.microsoft.com/security/blog/2020/07/08/protecting-remote-workforce-application-attacks-consent-phishing/)
 - [Fostering a secure and trustworthy app ecosystem](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/build-2020-fostering-a-secure-and-trustworthy-app-ecosystem-for/ba-p/1257360)
-- [Investigate risky OAuth apps](https://docs.microsoft.com/en-us/cloud-app-security/investigate-risky-oauth)
-- [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/manage-consent-requests)
-- [Disable user sign-ins for an enterprise app in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/disable-user-sign-in-portal)
-- [Understand the permissions and consent framework in the Microsoft identity platform.](https://docs.microsoft.com/en-us/azure/active-directory/develop/consent-framework)
-- [Understand the difference between delegated permissions and application permissions.](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#permission-types)
-- [Configure how end-users consent to applications](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-user-consent)
-- [Unexpected application in my applications list](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-types)
-- [Detect and Remediate Illicit Consent Grants](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants?view=o365-worldwide)
-- [How and Why Azure AD Applications are Added](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-how-applications-are-added)
-- [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals)
+- [Investigate risky OAuth apps](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)
+- [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests)
+- [Disable user sign-ins for an enterprise app in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/disable-user-sign-in-portal)
+- [Understand the permissions and consent framework in the Microsoft identity platform.](https://docs.microsoft.com/azure/active-directory/develop/consent-framework)
+- [Understand the difference between delegated permissions and application permissions.](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types)
+- [Configure how end-users consent to applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-user-consent)
+- [Unexpected application in my applications list](https://docs.microsoft.com/azure/active-directory/manage-apps/application-types)
+- [Detect and Remediate Illicit Consent Grants](https://docs.microsoft.com/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants)
+- [How and Why Azure AD Applications are Added](https://docs.microsoft.com/azure/active-directory/develop/active-directory-how-applications-are-added)
+- [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
 - [AAD Config Documentor](https://github.com/microsoft/AADConnectConfigDocumenter)
-- [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/manage-consent-requests)
-- [Get-AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/get-azureadserviceprincipal?view=azureadps-2.0)
+- [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests)
+- [Get-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/get-azureadserviceprincipal)
 - [Build 2020: Fostering a secure and trustworthy app ecosystem for all users](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/build-2020-fostering-a-secure-and-trustworthy-app-ecosystem-for/ba-p/1257360)
-- [Configure the admin consent workflow](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-admin-consent-workflow)
-- [Admins should evaluate all consent requests carefully before approving a request, especially when Microsoft has detected risk.](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-user-consent#configure-permission-classifications-preview)
+- [Configure the admin consent workflow](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow)
+- [Admins should evaluate all consent requests carefully before approving a request, especially when Microsoft has detected risk.](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-user-consent#configure-permission-classifications-preview)
 - [Application Registration vs. Enterprise Applications](https://morgantechspace.com/2019/07/difference-between-azure-ad-app-registration-and-enterprise-application.html)
-- [Permissions](https://docs.microsoft.com/en-us/cli/azure/ad/app/permission?view=azure-cli-latest)
+- [Permissions](https://docs.microsoft.com/cli/azure/ad/app/permission)
 - [KrebsOnSecurity on AppConsent Phishing](https://krebsonsecurity.com/2020/01/tricky-phish-angles-for-persistence-not-passwords/)

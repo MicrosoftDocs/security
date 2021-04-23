@@ -531,7 +531,7 @@ You can investigate these events using Microsoft Defender for Endpoint.
 
     ![event properties](./media/incident-response-playbook-phishing/eventproperties.png)
 
-    ![event properties](./media/incident-response-playbook-phishing/eventproperties1.gif)
+    ![event properties](./media/incident-response-playbook-phishing/eventproperties1.png)
 
 ### On what endpoint was the email opened?
 

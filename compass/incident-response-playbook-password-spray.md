@@ -538,7 +538,7 @@ Configure the threshold and alerts in ADFS Health Connect and Risky IP portal.
 
 *Configure threshold settings*
 
-<img src=".\media\incident-response-playbook-password-spray\image19.png" style="width:2.80556in;height:2.80106in" alt="Graphical user interface, text, application, chat or text message Description automatically generated" />
+![configurenotifications](./media/incident-response-playbook-password-spray/configurenotifications.png)
 
 *Configure notifications*
 

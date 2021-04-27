@@ -241,13 +241,13 @@ For a full list of searchable patterns in the security & compliance center, refe
 
 The following example query returns messages that were received by users between April 13, 2016 and April 14, 2016 and that contain the words "action" and "required" in the subject line:
 
-```powershell
+```SearchFilter
 (Received:4/13/2016..4/14/2016) AND (Subject:'Action required')
 ```
 
 The following example query returns messages that were sent by *chatsuwloginsset12345@outlook\[.\]com* and that contain the exact phrase "*Update your account information*" in the subject line.
 
-```powershell
+```SearchFilter
 (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
 ```
 
@@ -648,7 +648,7 @@ Or you can use the PowerShell command *Get-AzureADUserLastSignInActivity* to get
 Get-AzureADUserLastSignInActivity -TenantId 536279f6-1234-2567-be2d-61e352b51eef -UserObjectId 69447235-0974-4af6-bfa3-d0e922a92048 -CsvOutput
 ```
 
-Or you can use the new *AzureADIncidentResponse* PowerShell module where you have rich filtering capabilities:
+Or you can use the new [AzureADIncidentResponse](https://www.powershellgallery.com/packages/AzureADIncidentResponse/4.0) PowerShell module where you have rich filtering capabilities:
 
 ```powershell
 Get-AzureADIRSignInDetail -UserId johcast@Contoso.com -TenantId 536279f6-1234-2567-be2d-61e352b51eef -RangeFromDaysAgo 29 -RangeToDaysAgo 3

@@ -1,5 +1,5 @@
 ---
-title: AppConsent Investigation
+title: App consent grant investigation
 description: Learn how to identify and investigate app consent attacks, protect data and minimize further risks.
 keywords: app consent grant, investigation, attack, illicit consent grant, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall
 search.product: DART
@@ -22,7 +22,7 @@ ms.topic: article
 ms.technology: m365d
 ---
 
-# App Consent Grant Investigation
+# App consent grant investigation
 
 This article provides guidance on identifying and investigating app consent attacks, protecting information, and minimizing further risks.
 
@@ -105,7 +105,7 @@ Install-Module -Name AzureAD -Verbose
 4. Run this PowerShell command:
 
     ```powershell
-    Get-AzureADPSPermissions.ps1 \| Export-csv -Path "Permissions.csv" -NoTypeInformation
+    Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
     ```
 
     **Note:** After you run the PowerShell command, disconnect the session by using this command:
@@ -316,7 +316,7 @@ Run ```Get-AzureADPSPermissions.ps1```, to export all of the OAuth consent grant
 3. Run this PowerShell command:
 
     ```powershell
-    Get-AzureADPSPermissions.ps1 \| Export-csv c:\\temp\\consentgrants\\Permissions.csv -NoTypeInformation
+    Get-AzureADPSPermissions.ps1 | Export-csv c:\\temp\\consentgrants\\Permissions.csv -NoTypeInformation
     ```
 
 4. Once the script completes, it is recommended to disconnect the session properly using:
@@ -477,6 +477,7 @@ The output is shown in the image below.
 ![output](./media/incident-response-playbook-app-consent/output2.png)
 
 You can also deactivate sign-in for the affected account altogether, which will in turn deactivate app access to data in that account. This option isn't ideal for the end user's productivity, but it can be a viable short-term remediation.
+
 ![deactivateuser](./media/incident-response-playbook-app-consent/Testuser3.png)
 
 ## Recommended defenses

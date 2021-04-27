@@ -1,5 +1,5 @@
 ---
-title: Phishing Investigation
+title: Phishing investigation
 description: Learn how to identify and investigate phishing attacks, protect data and minimize further risks.
 keywords: phishing, investigation, attack, email, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall
 search.product: DART
@@ -48,7 +48,7 @@ Before proceeding with the investigation, it is recommended that you have the us
 Verify *mailbox auditing on by default* is turned on. To make sure that mailbox auditing is turned on for your organization, run the following command in Microsoft Exchange Online PowerShell:
 
 ```powershell
-Get-OrganizationConfig \| Format-List AuditDisabled\`
+Get-OrganizationConfig | Format-List AuditDisabled\`
 ```
 
 The value **False** indicates that mailbox auditing on by default is enabled for the organization. This *on by default* organizational value overrides the mailbox auditing setting on specific mailboxes. For example, if mailbox auditing is disabled for a mailbox (the *AuditEnabled* property is **False** on the mailbox), the default mailbox actions will still be audited for the mailbox, because mailbox auditing on by default is enabled for the organization.
@@ -60,7 +60,7 @@ The value **False** indicates that mailbox auditing on by default is enabled f
 To verify all mailboxes in a given tenant, run the following command in the Exchange Online PowerShell:
 
 ```powershell
-Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} \| Set-Mailbox -AuditEnabled $true
+Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditEnabled $true
 ```
 
 When a mailbox auditing is enabled, the default mailbox logging actions are applied:
@@ -73,7 +73,7 @@ When a mailbox auditing is enabled, the default mailbox logging actions are appl
 To enable the setting for specific users, run the following command. In this example, the user is *johndoe@contoso.com*.
 
 ```powershell
-Get-Mailbox -Identity \*Johndoe” \| Set-Mailbox -AuditEnabled $true
+Get-Mailbox -Identity \*Johndoe” | Set-Mailbox -AuditEnabled $true
 ```
 
 ### Message tracing
@@ -115,7 +115,7 @@ Generally speaking, the [Global Reader](https://docs.microsoft.com/azure/active-
 If the customer has implemented the role-based access control (RBAC) in Exchange or if you are unsure which role you need in Exchange, you can use PowerShell to get the roles required for an individual Exchange PowerShell cmdlet:
 
 ```powershell
-$Perms \| foreach {Get-ManagementRoleAssignment -Role $\_.Name -Delegating $false \| Format-Table -Auto Role,RoleAssigneeType,RoleAssigneeName}
+$Perms | foreach {Get-ManagementRoleAssignment -Role $\_.Name -Delegating $false | Format-Table -Auto Role,RoleAssigneeType,RoleAssigneeName}
 ```
 
 For more information, see [permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions). 
@@ -266,7 +266,7 @@ Search-Mailbox -Identity "Jane Smith" -SearchQuery "Subject:Invoice" -TargetMail
 In the example below, the query searches all tenant mailboxes for an email that contains the phrase "InvoiceUrgent" in the subject and copies the results to IRMailbox in a folder named "Investigation."
 
 ```powershell
-Get-Mailbox \| Search-Mailbox -SearchQuery 'InvoiceUrgent vote' -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
+Get-Mailbox | Search-Mailbox -SearchQuery 'InvoiceUrgent vote' -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
 ### Is delegated access configured on the mailbox?
@@ -282,13 +282,13 @@ Look for unusual names or permission grants. If you see something unusual, conta
 In this step, you need to check each mailbox that was previously identified for forwarding rules or inbox rules. For forwarding rules, use the following PowerShell cmdlet:
 
 ```powershell
-Get-Mailbox \| select UserPrincipalName,ForwardingSmtpAddress,DeliverToMailboxAndForward \| Export-csv c:\\temp\\Forwarding.csv -NoTypeInformation
+Get-Mailbox | select UserPrincipalName,ForwardingSmtpAddress,DeliverToMailboxAndForward | Export-csv c:\\temp\\Forwarding.csv -NoTypeInformation
 ```
 
 Here's an example query:
 
 ```powershell
-Search-UnifiedAuditLog -startdate 12/16/2019 -EndDate 03/16/2019 -ResultSize 5000 -recordtype exchangeadmin -Operations New-InboxRule \|Export-csv NoTypeInformation -Path c:\\temp\\Inboxrulesoutput.csv
+Search-UnifiedAuditLog -startdate 12/16/2019 -EndDate 03/16/2019 -ResultSize 5000 -recordtype exchangeadmin -Operations New-InboxRule |Export-csv NoTypeInformation -Path c:\\temp\\Inboxrulesoutput.csv
 ```
 
 Additionally, you can also utilize the *Inbox and Forwarding Rules* report in the Office 365 security & compliance center.
@@ -304,7 +304,7 @@ Additionally, you can also utilize the *Inbox and Forwarding Rules* report in th
 Additionally, check for the removal of Inbox rules. As an example, use the following PowerShell cmdlet:
 
 ```powershell
-Search-UnifiedAuditLog -startDate 12/16/2019 -EndDate 03/16/2020 -Operations Remove-InboxRule \|Export-CSV NoTypeInformation -Path c:\\temp\\removedInboxRules.csv
+Search-UnifiedAuditLog -startDate 12/16/2019 -EndDate 03/16/2020 -Operations Remove-InboxRule |Export-CSV NoTypeInformation -Path c:\\temp\\removedInboxRules.csv
 ```
 
 Look for inbox rules that were removed, consider the timestamps in proximity to your investigations.
@@ -351,7 +351,7 @@ Search-Mailbox -Identity "Jane Smith" -SearchQuery "Subject:Invoice" -TargetMail
 The following sample query searches all tenant mailboxes for an email that contains the phrase *InvoiceUrgent* in the subject and copies the results to I*RMailbox* in a folder named *Investigation*.
 
 ```powershell
-Get-Mailbox \| Search-Mailbox -SearchQuery 'InvoiceUrgent vote' -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
+Get-Mailbox | Search-Mailbox -SearchQuery 'InvoiceUrgent vote' -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
 #### Exchange on-premises
@@ -375,7 +375,7 @@ Use the *search-mailbox* cmdlet to perform a specific search query against a tar
 This sample query searches all tenant mailboxes for an email that contains the subject *InvoiceUrgent* in the subject and copies the results to *IRMailbox* in a folder named *Investigation*.
 
 ```powershell
-Get-Mailbox \| Search-Mailbox -SearchQuery "Subject:InvoiceUrgent" -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
+Get-Mailbox | Search-Mailbox -SearchQuery "Subject:InvoiceUrgent" -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
 #### Exchange on-premises
@@ -398,7 +398,7 @@ You have two options for Exchange Online:
 Use the *Search-Mailbox* cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.
 
 ```powershell
-Get-Mailbox -ResultSize unlimited \| Search-Mailbox -SearchQuery attachment:trojan\* -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
+Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan\* -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
 The other option is to use the PowerShell cmdlet in the security & compliance center.
@@ -623,7 +623,7 @@ Example for Event ID 1203:
 
 ![event1203](./media/incident-response-playbook-phishing/event1203.png)
 
-![event4624](./media/incident-response-playbook-phishing/Event4624.png]
+![event4624](./media/incident-response-playbook-phishing/Event4624.png)
 
 To get the full list of ADFS Event ID per OS Level, refer to [GetADFSEventList](https://adfshelp.microsoft.com/AdfsEventViewer/GetAdfsEventList).
 

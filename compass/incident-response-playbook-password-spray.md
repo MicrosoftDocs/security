@@ -1,5 +1,5 @@
 ---
-title: Password Spray Investigation
+title: Password spray investigation
 description: Learn how to identify and investigate password spray attacks, protect data and minimize further risks.
 keywords: password spray, password, investigation, attack, email, microsoft threat protection, microsoft 365, search, security, query, telemetry, security events, antivirus, firewall
 search.product: DART
@@ -22,7 +22,7 @@ ms.topic: article
 ms.technology: m365d
 ---
 
-# Password Spray Investigation
+# Password spray investigation
 
 This article provides guidance on identifying and investigating password spray attacks within your organization and take the required remedial action to protect information and minimize further risks.
 

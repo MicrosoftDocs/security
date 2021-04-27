@@ -1,6 +1,6 @@
 ---
 title: App consent grant investigation
-description: Learn how to identify and investigate app consent attacks, protect data and minimize further risks.
+description: Learn how to identify and investigate app consent attacks, protect data, and minimize further risks.
 keywords: app consent grant, investigation, attack, illicit consent grant, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall
 search.product: DART
 search.appverid: met150

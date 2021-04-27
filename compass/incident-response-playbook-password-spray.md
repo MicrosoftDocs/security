@@ -45,7 +45,7 @@ This section provides guidance on the system requirements. Before starting the i
 
 By default, the Microsoft Active Directory Federation Services (ADFS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request.
 
-To view the current auditing level, you can use the PowerShell cmdlet:
+To view the current auditing level, you can use this PowerShell command:
 
 ```powershell
 Get-AdfsProperties
@@ -61,7 +61,7 @@ The table below contains the auditing levels that are available:
 | Basic (Default) | Set-AdfsProperties -AuditLevel - Basic   | No more than 5 events will be logged for a single request                                 |
 | Verbose         | Set-AdfsProperties -AuditLevel - Verbose | All events will be logged. This will log a significant amount of information per request. |
 
-To raise or lower the auditing level, use the PowerShell cmdlet:
+To raise or lower the auditing level, use this PowerShell command:
 
 ```powershell
 Set-AdfsProperties -AuditLevel
@@ -87,7 +87,7 @@ Set-AdfsProperties -AuditLevel
 
 ### Install Azure AD Connect Health for ADFS
 
-The Azure AD Connect Health for ADFS agent allows you to have greater visibility into the customers federation environment. It provides customers with several pre-configured dashboards like usage, performance monitoring as well as risky IP reports.
+The Azure Active Directory (Azure AD) Connect Health for ADFS agent allows you to have greater visibility into the customers federation environment. It provides customers with several pre-configured dashboards like usage, performance monitoring as well as risky IP reports.
 
 To install ADFS Connect Health, go through the [requirements for using Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#requirements), and then install the [Azure ADFS Connect Health Agent](https://go.microsoft.com/fwlink/?LinkID=518973).
 
@@ -95,7 +95,7 @@ To install ADFS Connect Health, go through the [requirements for using Azure AD 
 
 Once Azure AD Connect Health for ADFS is configured, the customer should set the thresholds for alerting based on what is suitable for their environment.
 
-![riskyiplalerts](./media/incident-response-playbook-password-spray/Thresholdsettings.png)
+:::image type="content" source="./media/incident-response-playbook-password-spray/Thresholdsettings.png" alt-text="riskyiplalerts"::: 
 
 ### Set up SIEM tool alerts on Azure Sentinel
 
@@ -126,18 +126,22 @@ You can also use the Spunk platform to set up alerts.
 
 ## Workflow
 
+<!--
 ![workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)
+--> 
+
+[![Password spray investigation workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)](https://github.com/MicrosoftDocs/security/raw/public/compass/media/incident-response-playbook-password-spray/Pwdsprayflow.png)
 
 ## Checklist
 
 #### Investigation triggers
 
-- Have you received a trigger from SIEM, firewall logs or Azure AD
+- Rceived a trigger from SIEM, firewall logs or Azure AD
 - Identity Protection Password Spray feature or Risky IP
 - Large number of failed logins (Event ID 411)
 - Spike in Azure AD Connect Health for ADFS
-- Another security incident – eg phishing
-- Unexplained activity – log in from unfamiliar location, user getting unexpected MFA prompts
+- Another security incident (for example, phishing)
+- Unexplained activity – Sign-in from unfamiliar location, user getting unexpected MFA prompts
 
 ### Investigation
 
@@ -156,7 +160,7 @@ You can also use the Spunk platform to set up alerts.
 
 #### Mitigations
 
-Check the *References* section for guidance on how to enable features.
+Check the [References](#references) section for guidance on how to enable features.
 
 - [Block IP address of attacker](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)  (keep an eye out for changes to another IP address)
 - Changed user’s password of suspected compromise
@@ -193,15 +197,11 @@ Let’s understand a few password spray attack techniques before proceeding with
 
 As the very first step, you need to check what authentication type is used for a tenant/verified domain that you are investigating.
 
-To obtain the authentication status for a specific domain name, use the [Get-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/get-msoldomain) PowerShell cmdlet.
+To obtain the authentication status for a specific domain name, use the [Get-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/get-msoldomain) PowerShell command. Here's an example:
 
 ```powershell
-PS C:\Users\admuser&gt; Connect-MsolService
-PS C:\Users\admuser&gt; Get-MsolDomain -DomainName "contoso.com"
-
-    Name             Status         Authentication
-   ------          ----------      ----------------
-  contoso.com       Verified           Managed
+Connect-MsolService
+Get-MsolDomain -DomainName "contoso.com"
 ```
 
 ### Is the authentication federated or managed?
@@ -210,7 +210,9 @@ If the authentication is federated, then successful logins will be stored in the
 
 If the authentication type is managed, (Cloud only, password hash sync (PHS) or pass-through authentication (PTA)), then successful and failed logins will be stored in the Azure AD sign-In logs.
 
-**Note:** The [Staged Rollout](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-staged-rollout) feature allows the tenant domain name to be federated but specific users to be managed. Determine if any users are members of this group.
+>[!Note]
+>The [Staged Rollout](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-staged-rollout) feature allows the tenant domain name to be federated but specific users to be managed. Determine if any users are members of this group.
+>
 
 ### Is the Azure AD Connect Health enabled for ADFS?
 
@@ -250,8 +252,8 @@ An incident trigger is an event or a series of events that causes predefined ale
 - Date/time
 - Anomalies
 - Bad password attempts
-    ![pwdattempts](./media/incident-response-playbook-password-spray/Badpwdattempt.jpg)
-
+    
+    :::image type="content" source="./media/incident-response-playbook-password-spray/Badpwdattempt.jpg" alt-text="pwdattempts"::: 
     *Graph depicting number of bad password attempts*
 
 Unusual spikes in activity are key indicators through Azure AD Health Connect (assuming this is installed). Other indicators are:
@@ -277,7 +279,7 @@ The details of failed attempts are available in the tabs **IP address** and **ex
 
 ### Detect password spray in Azure Identity Protection
 
-Azure Identity Protection (IP) has a password-spray detection risk alert and search feature that you can be utilize to get additional information or set up automatic remediation. (This is a P2 feature).
+Azure Identity Protection is an Azure AD Premium P2 feature that has a password-spray detection risk alert and search feature that you can be utilize to get additional information or set up automatic remediation.
 
 ![detectpwd](./media/incident-response-playbook-password-spray/Detectpwd.png)
 
@@ -293,7 +295,9 @@ Low and slow attack indicators are those where thresholds for account lockout or
 
 ### Investigation and mitigation
 
-**Note:** You can perform investigation and mitigation simultaneously during sustained/ongoing attacks.
+>[!Note]
+>You can perform investigation and mitigation simultaneously during sustained/ongoing attacks.
+>
 
 1. Turn advanced logging on ADFS if it is not already turned on.
 2. Determine the date and time of start of the attack.
@@ -392,15 +396,15 @@ You can get all the Event IDs from the Sentinel Playbook that is available on [G
 
 Isolate the ADFS and Azure AD successful and interrupted sign-in events. These are your accounts of interest.
 
-Block the IP Address ADFS 2012R2 and above for federated authentication
+Block the IP Address ADFS 2012R2 and above for federated authentication. Here's an example:
 
 ```powershell
-PS C:\\ &gt;Set-AdfsProperties -AddBannedIps "1.2.3.4", "::3", "1.2.3.4/16"
+Set-AdfsProperties -AddBannedIps "1.2.3.4", "::3", "1.2.3.4/16"
 ```
 
 ### **Collect ADFS logs**
 
-Collect multiple event IDs within a time frame.
+Collect multiple event IDs within a time frame. Here's an example:
 
 ```powershell
 Get-WinEvent -ProviderName 'ADFS' | Where-Object { $_.ID -eq '412' -or $_.ID -eq '411' -or $_.ID -eq '342' -or $_.ID -eq '516' -and $_.TimeCreated -gt ((Get-Date).AddHours(-"8")) }
@@ -410,23 +414,23 @@ Get-WinEvent -ProviderName 'ADFS' | Where-Object { $_.ID -eq '412' -or $_.ID -eq
 
 Azure AD Sing-In reports include ADFS sign-in activity for customers who use Azure AD Connect Health. Filter sign-in logs by Token Issuer Type "Federated".
 
-Here’s a sample PowerShell cmdlet to retrieve sign-in logs for a specific IP address.
+Here’s an example PowerShell command to retrieve sign-in logs for a specific IP address:
 
 ```powershell
-Get-AzureADIRSignInDetail -TenantId b446a536-cb76-4360-a8bb-6593cf4d9c7f -IpAddress 212.100.128.76
+Get-AzureADIRSignInDetail -TenantId b446a536-cb76-4360-a8bb-6593cf4d9c7f -IpAddress 131.107.128.76
 ```
 
 Also, search the Azure portal for time frame, IP address and successful and interrupted login as shown in the images below.
 
-![timeframe](./media/incident-response-playbook-password-spray/Selectingtimeframe.jpg)
+:::image type="content" source="./media/incident-response-playbook-password-spray/Selectingtimeframe.jpg" alt-text="timeframe"::: 
 
 *Searching for logins within a specific time frame*
 
-![ipaddress](./media/incident-response-playbook-password-spray/Selectingipaddress.jpg)
+:::image type="content" source="./media/incident-response-playbook-password-spray/Selectingipaddress.jpg" alt-text="ipaddress"::: 
 
 *Searching for logins on a specific IP address*
 
-![status](./media/incident-response-playbook-password-spray/Selectingstatus.jpg)
+:::image type="content" source="./media/incident-response-playbook-password-spray/Selectingstatus.jpg" alt-text="status"::: 
 
 *Searching for logins based on the status*
 
@@ -448,20 +452,21 @@ Most attacks use legacy authentication. There are a number of ways to determine 
 1. In Azure AD, navigate to **Sign-Ins** and filter on **Client App.**
 2. Select all the legacy authentication protocols that are listed.
 
-    ![authenticationcheck](./media/incident-response-playbook-password-spray/Legacyauthenticationchecks.jpg)
-
+    :::image type="content" source="./media/incident-response-playbook-password-spray/Legacyauthenticationchecks.jpg" alt-text="authenticationcheck"::: 
+ 
     *List of legacy protocols*
 
-3. Or if you have an Azure workspace, you can use the pre-built legacy authentication workbook located in the Azure Active Directory under **Monitoring and Workbooks**.
+3. Or if you have an Azure workspace, you can use the pre-built legacy authentication workbook located in the Azure Active Directory portal under **Monitoring and Workbooks**.
 
-    ![workbook](./media/incident-response-playbook-password-spray/authenticationbook.png)
+    :::image type="content" source="./media/incident-response-playbook-password-spray/authenticationbook.png" alt-text="workbook"::: 
+
     *Legacy authentication workbook*
 
 ### Block IP address Azure AD for managed scenario (PHS including staging)
 
 1. Navigate to **New named locations**.
 
-    ![namedlocation](./media/incident-response-playbook-password-spray/Namedlocation.jpg)
+    :::image type="content" source="./media/incident-response-playbook-password-spray/Namedlocation.jpg" alt-text="namedlocation"::: 
 
 2. Create a CA policy to target all applications and block for this named location only.
 
@@ -506,7 +511,7 @@ If data has been breached, then you should inform additional agencies, such as t
 
 Implement password protection on Azure AD and on-premises by enabling the custom-banned password lists. This configuration will prevent users from setting weak passwords or passwords associated with your organization:
 
-![pwdprotection](./media/incident-response-playbook-password-spray/Passwordprotection.jpg)
+:::image type="content" source="./media/incident-response-playbook-password-spray/Passwordprotection.jpg" alt-text="pwdprotection"::: 
 
 *Enabling password protection*
 
@@ -516,13 +521,13 @@ For more information, see [how to defend against password spray attacks](https:/
 
 Tag the IP addresses in MCAS to receive alerts related to future use:
 
-![ipaddresstag](./media/incident-response-playbook-password-spray/IPaddresstag.jpg)
+:::image type="content" source="./media/incident-response-playbook-password-spray/IPaddresstag.jpg" alt-text="ipaddresstag"::: 
 
 *Tagging IP addresses*
 
 In the MCAS, “tag” IP address for the IP scope and set up an alert for this IP range for future reference and accelerated response.
 
-![ipaddressalert](./media/incident-response-playbook-password-spray/ipaddressalert.png)
+:::image type="content" source="./media/incident-response-playbook-password-spray/ipaddressalert.png" alt-text="ipaddressalert"::: 
 
 *Setting alerts for a specific IP address*
 
@@ -534,7 +539,7 @@ Depending on your organization needs, you can configure alerts.
 
 Configure the threshold and alerts in ADFS Health Connect and Risky IP portal.
 
-![threshold](./media/incident-response-playbook-password-spray/thresholdsettings.png)
+:::image type="content" source="./media/incident-response-playbook-password-spray/thresholdsettings.png" alt-text="threshold"::: 
 
 *Configure threshold settings*
 

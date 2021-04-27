@@ -48,12 +48,14 @@ Before proceeding with the investigation, it is recommended that you have the us
 Verify *mailbox auditing on by default* is turned on. To make sure that mailbox auditing is turned on for your organization, run the following command in Microsoft Exchange Online PowerShell:
 
 ```powershell
-Get-OrganizationConfig | Format-List AuditDisabled\`
+Get-OrganizationConfig | Format-List AuditDisabled`
 ```
 
 The value **False** indicates that mailbox auditing on by default is enabled for the organization. This *on by default* organizational value overrides the mailbox auditing setting on specific mailboxes. For example, if mailbox auditing is disabled for a mailbox (the *AuditEnabled* property is **False** on the mailbox), the default mailbox actions will still be audited for the mailbox, because mailbox auditing on by default is enabled for the organization.
 
-**Note:** If the tenant was created BEFORE 2019, then you should enable the *mailbox auditing* and *ALL auditing* settings. See how to [enable mailbox auditing](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
+>[!Note]
+>If the tenant was created BEFORE 2019, then you should enable the *mailbox auditing* and *ALL auditing* settings. See how to [enable mailbox auditing](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
+>
 
 #### Verify mailbox auditing settings in the tenant
 
@@ -73,7 +75,7 @@ When a mailbox auditing is enabled, the default mailbox logging actions are appl
 To enable the setting for specific users, run the following command. In this example, the user is *johndoe@contoso.com*.
 
 ```powershell
-Get-Mailbox -Identity \*Johndoe” | Set-Mailbox -AuditEnabled $true
+Get-Mailbox -Identity "johndoe" | Set-Mailbox -AuditEnabled $true
 ```
 
 ### Message tracing
@@ -94,7 +96,7 @@ You can also search the [unified audit log](https://docs.microsoft.com/microsoft
 
 ### Are the sign-in logs and/or audit logs exported to an external system?
 
-Since most of the Azure AD sign-in and audit data will get overwritten after 30 or 90 days, we recommend to all our customer to leverage Sentinel, Azure Monitor or an external SIEM.
+Since most of the Azure Active Directory (Azure AD) sign-in and audit data will get overwritten after 30 or 90 days, we recommend to all our customer to leverage Sentinel, Azure Monitor or an external SIEM.
 
 ## Roles and permissions required
 
@@ -110,12 +112,14 @@ We recommend the following roles are enabled for the account you will use to per
 
 Generally speaking, the [Global Reader](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) or the [Security Reader](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security#security-reader) role should give you sufficient permissions to search the relevant logs.
 
-**Note:** If a user has the **View-Only Audit Logs** or **Audit Logs** role on the **Permissions** page in the Security & Compliance Center, they won't be able to search the Office 365 audit log. In this scenario, you must assign the permissions in Exchange Online because an [Exchange Online cmdlet](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) is used to search the log.
+>[!Note]
+>If a user has the **View-Only Audit Logs** or **Audit Logs** role on the **Permissions** page in the Security & Compliance Center, they won't be able to search the Office 365 audit log. In this scenario, you must assign the permissions in Exchange Online because an [Exchange Online cmdlet](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) is used to search the log.
+>
 
 If the customer has implemented the role-based access control (RBAC) in Exchange or if you are unsure which role you need in Exchange, you can use PowerShell to get the roles required for an individual Exchange PowerShell cmdlet:
 
 ```powershell
-$Perms | foreach {Get-ManagementRoleAssignment -Role $\_.Name -Delegating $false | Format-Table -Auto Role,RoleAssigneeType,RoleAssigneeName}
+$Perms | foreach {Get-ManagementRoleAssignment -Role $_.Name -Delegating $false | Format-Table -Auto Role,RoleAssigneeType,RoleAssigneeName}
 ```
 
 For more information, see [permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions). 
@@ -139,7 +143,7 @@ The following PowerShell modules are required for the investigation of the cloud
 - MS Online for Office 365
 - Exchange connecting to Exchange for utilizing the unified audit log searches (inbox rules, message traces, forwarding rules, mailbox delegations, among others)
 
-When you use Azure active directory (AD) commands that are not part of the built-in modules in Azure, you need the MSOnline module - which is the same module that is used for Office 365. To work with Azure AD (which contains a set of functions) from PowerShell, import the Azure AD module.
+When you use Azure AD commands that are not part of the built-in modules in Azure, you need the MSOnline module - which is the same module that is used for Office 365. To work with Azure AD (which contains a set of functions) from PowerShell, import the Azure AD module.
 
 ## Installing various PowerShell modules
 
@@ -189,11 +193,26 @@ Please follow the steps on [how to get the Exchange PowerShell installed with mu
 
 ## Workflow
 
-![workflow](./media/incident-response-playbook-phishing/PI_flow.png)
+<!--
+![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)
+--> 
+
+[![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](https://github.com/MicrosoftDocs/security/raw/public/compass/media/incident-response-playbook-phishing/PI_flow.png)
 
 ## Checklist
 
 This checklist will help you evaluate your investigation process and verify whether you have completed all the steps during investigation:
+
+<!--
+
+| Completed | Task or question |
+|:-------|:-----|
+| ![Checkbox](./media/incident-response-playbook-phishing/checkbox.png) | Review Initial phishing email |
+| ![Checkbox](./media/incident-response-playbook-phishing/checkbox.png) | Get the list of users who got this email |
+| ![Checkbox](./media/incident-response-playbook-phishing/checkbox.png) | Get the latest Dates when the User had access to the mailbox |
+| ![Checkbox](./media/incident-response-playbook-phishing/checkbox.png) | Is delegated Access configured on the mailbox? |
+|
+--> 
 
 - Review Initial phishing email
 - Get the list of users who got this email
@@ -221,13 +240,13 @@ This checklist will help you evaluate your investigation process and verify whet
 
 ## Investigation steps
 
-For this investigation, it is assumed that you either have a sample phishing email, or parts of it like the sender’s address, subject of the email, or parts of the message to start the investigation. Please also make sure that you have completed / enabled all settings as recommended in the **Prerequisites** section.
+For this investigation, it is assumed that you either have a sample phishing email, or parts of it like the sender’s address, subject of the email, or parts of the message to start the investigation. Please also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
 
-This playbook is created with the intention that not all customers or investigation teams will have the full Microsoft 365 E5 or P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
+This playbook is created with the intention that not all customers or investigation teams will have the full Microsoft 365 E5 or Azure AD Premium P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
 
 ### [Get the list of users / identities who got the email](#findemail)
 
-As the very first step, you need to get a list of users / identities who received the phishing email. The objective of this step is to record a list of potential users / identities that you will later use to iterate through for additional investigation steps. Please refer to the **Workflow** section for a high-level flow diagram of the steps you need to follow during this investigation.
+As the very first step, you need to get a list of users / identities who received the phishing email. The objective of this step is to record a list of potential users / identities that you will later use to iterate through for additional investigation steps. Please refer to the [Workflow](#workflow) section for a high-level flow diagram of the steps you need to follow during this investigation.
 
 We do not give any recommendations in this playbook on how you want to record this list of potential users / identities. Depending on the size of the investigation, you can leverage an Excel book, a CSV file, or even a database for larger investigations. There are multiple ways to obtain the list of identities in a given tenant, and some examples are provided below.
 
@@ -282,13 +301,13 @@ Look for unusual names or permission grants. If you see something unusual, conta
 In this step, you need to check each mailbox that was previously identified for forwarding rules or inbox rules. For forwarding rules, use the following PowerShell cmdlet:
 
 ```powershell
-Get-Mailbox | select UserPrincipalName,ForwardingSmtpAddress,DeliverToMailboxAndForward | Export-csv c:\\temp\\Forwarding.csv -NoTypeInformation
+Get-Mailbox | select UserPrincipalName,ForwardingSmtpAddress,DeliverToMailboxAndForward | Export-csv c:\temp\Forwarding.csv -NoTypeInformation
 ```
 
 Here's an example query:
 
 ```powershell
-Search-UnifiedAuditLog -startdate 12/16/2019 -EndDate 03/16/2019 -ResultSize 5000 -recordtype exchangeadmin -Operations New-InboxRule |Export-csv NoTypeInformation -Path c:\\temp\\Inboxrulesoutput.csv
+Search-UnifiedAuditLog -startdate 12/16/2019 -EndDate 03/16/2019 -ResultSize 5000 -recordtype exchangeadmin -Operations New-InboxRule |Export-csv NoTypeInformation -Path c:\temp\Inboxrulesoutput.csv
 ```
 
 Additionally, you can also utilize the *Inbox and Forwarding Rules* report in the Office 365 security & compliance center.
@@ -304,7 +323,7 @@ Additionally, you can also utilize the *Inbox and Forwarding Rules* report in th
 Additionally, check for the removal of Inbox rules. As an example, use the following PowerShell cmdlet:
 
 ```powershell
-Search-UnifiedAuditLog -startDate 12/16/2019 -EndDate 03/16/2020 -Operations Remove-InboxRule |Export-CSV NoTypeInformation -Path c:\\temp\\removedInboxRules.csv
+Search-UnifiedAuditLog -startDate 12/16/2019 -EndDate 03/16/2020 -Operations Remove-InboxRule |Export-CSV NoTypeInformation -Path c:\temp\removedInboxRules.csv
 ```
 
 Look for inbox rules that were removed, consider the timestamps in proximity to your investigations.
@@ -328,7 +347,10 @@ The capability to list compromised users is available in the [M365 security & co
 
 This report shows activities that could indicate a mailbox is being accessed illicitly. It includes created or received messages, moved or deleted messages, copied or purged messages, sent messages using send on behalf or send as, and all mailbox sign ins. The data includes date, IP address, user, activity performed, the item affected, and any extended details.
 
-**Note:** For this data to be recorded, you must enable the **mailbox auditing** option.
+>[!Note]
+>For this data to be recorded, you must enable the **mailbox auditing** option.
+>
+
 
 The volume of data included here could be very substantial, so focus your search on users that would have high-impact if breached. Look for unusual patterns such as odd times of the day, or unusual IP addresses, and look for patterns such as high volumes of moves, purges, or deletes.
 
@@ -362,7 +384,7 @@ Use the Get-MessageTrackingLog cmdlet to search for message delivery information
 Get-MessageTrackingLog -Server Mailbox01 -Start "03/13/2018 09:00:00" -End "03/15/2018 17:00:00" -Sender "john@contoso.com"
 ```
 
-For information about the parameter sets in the **Syntax** section below, see the [Exchange cmdlet syntax](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-cmdlet-syntax).
+For information about parameter sets, see the [Exchange cmdlet syntax](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-cmdlet-syntax).
 
 ### Who else got the same email?
 
@@ -398,7 +420,7 @@ You have two options for Exchange Online:
 Use the *Search-Mailbox* cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.
 
 ```powershell
-Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan\* -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
+Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
 The other option is to use the PowerShell cmdlet in the security & compliance center.
@@ -412,10 +434,12 @@ New-ComplianceSearch -Name "Investigation" -ExchangeLocation "Research Departmen
 Use the *Search-Mailbox* cmdlet to search for message delivery information stored in the message tracking log.
 
 ```powershell
-Search-Mailbox -Identity "Jane Smith"-SearchQuery AttachmentNames:attachment\_name -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
+Search-Mailbox -Identity "Jane Smith"-SearchQuery AttachmentNames:attachment_name -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
-**Note:** For Exchange 2013, you need CU12 to have this [*cmdlet*](https://support.microsoft.com/topic/search-mailbox-cmdlet-with-attachment-keyword-lists-all-items-that-contain-the-query-string-of-attachment-b0422602-9f14-e85a-434f-81a14549574d) running*.*
+>[!Note]
+>For Exchange 2013, you need CU12 to have this [*cmdlet*](https://support.microsoft.com/topic/search-mailbox-cmdlet-with-attachment-keyword-lists-all-items-that-contain-the-query-string-of-attachment-b0422602-9f14-e85a-434f-81a14549574d) running.
+>
 
 ### Was there payload in the attachment?
 
@@ -435,7 +459,7 @@ To obtain the *Message-ID* for an email of interest, you need to examine the raw
 
 You should start by looking at the email headers. For example, in Outlook 365, open the message, navigate to **File > Info > Properties**:
 
-![checkemail](./media/incident-response-playbook-phishing/checkemail.png)
+![Example of a properties screen showing email headers](./media/incident-response-playbook-phishing/checkemail.png)
 *Properties screen showing email headers*
 
 When viewing an email header, it is recommended to copy and paste the header information into an email header analyzer provided by [MXToolbox](https://mxtoolbox.com/EmailHeaders.aspx) or [Azure](https://mha.azurewebsites.net/) for readability.
@@ -468,14 +492,16 @@ When viewing an email header, it is recommended to copy and paste the header inf
 
 The SPF record is stored within a DNS database and is bundled with the DNS lookup information. You can manually check the Sender Policy Framework (SPF) record for a domain by using the *nslookup* command:
 
-1. Open the command prompt (***Start > Run > cmd***).
+1. Open the command prompt (**Start > Run > cmd**).
 2. Type the command as: *nslookup -type=txt"* a space, and then the domain/host name. For example:
 
     ```powershell
      nslookup -type=txt domainname.com
     ```
 
-**Note:** *-all* (reject or fail them - don't deliver the email if anything does not match), this is recommended.
+>[!Note]
+>*-all* (reject or fail them - don't deliver the email if anything does not match), this is recommended.
+>
 
 ### Check if DKIM is enabled on your custom domains in Office 365
 
@@ -597,7 +623,7 @@ For more details, see [Risky IP report](https://docs.microsoft.com/azure/active-
 
 #### Server 2012R2
 
-**Event ID 342** – The user name or password are incorrect” in the ADFS admin logs.
+**Event ID 342** – "The user name or password are incorrect" in the ADFS admin logs.
 
 For the actual audit events, you need to look at the Security events logs and you should look for events with Event ID 411 for *Classic Audit Failure* with the source as *ADFS Auditing*. Also look for Event ID 412 on successful authentication.
 
@@ -640,15 +666,15 @@ In the Azure AD portal, navigate to the [Sign-ins](https://portal.azure.com/#bla
 ![displayfilter](./media/incident-response-playbook-phishing/DisplayFilter.png)
 
 You can also search using Graph API. For example, filter on **User properties** and get **lastSignInDate** along with it. Search on a specific user to get the last signed in date for this user.
-For example, *https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Dhanyah')&$select=displayName,signInActivity*
+For example, `https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Dhanyah')&$select=displayName,signInActivity`
 
-Or you can use the PowerShell command *Get-AzureADUserLastSignInActivity* to get the last interactive sign-in activity for the user, targeted by their object ID. The example below writes the output to a date and time stamped CSV file in the execution directory.
+Or you can use the PowerShell command `Get-AzureADUserLastSignInActivity` to get the last interactive sign-in activity for the user, targeted by their object ID. The example below writes the output to a date and time stamped CSV file in the execution directory.
 
 ```powershell
 Get-AzureADUserLastSignInActivity -TenantId 536279f6-1234-2567-be2d-61e352b51eef -UserObjectId 69447235-0974-4af6-bfa3-d0e922a92048 -CsvOutput
 ```
 
-Or you can use the new [AzureADIncidentResponse](https://www.powershellgallery.com/packages/AzureADIncidentResponse/4.0) PowerShell module where you have rich filtering capabilities:
+Or you can use the new [AzureADIncidentResponse](https://www.powershellgallery.com/packages/AzureADIncidentResponse/4.0) PowerShell module where you have rich filtering capabilities. Here's an example:
 
 ```powershell
 Get-AzureADIRSignInDetail -UserId johcast@Contoso.com -TenantId 536279f6-1234-2567-be2d-61e352b51eef -RangeFromDaysAgo 29 -RangeToDaysAgo 3
@@ -664,7 +690,7 @@ For a managed scenario, you should start looking at the sign-in logs and filter 
 
 ![manageduseripaddress](./media/incident-response-playbook-phishing/managedusersip.png)
 
-Or you can use the *AzureADIncidentResponse* PowerShell module.
+Or you can use the AzureADIncidentResponse PowerShell module.
 
 ```powershell
 Get-AzureADIRSignInDetail -IpAddress 1.2.3.4 -TenantId 536279f6-1234-2567-be2d-61e352b51eef -RangeFromDaysAgo 29 -RangeToDaysAgo 3 -OutGridView
@@ -672,13 +698,13 @@ Get-AzureADIRSignInDetail -IpAddress 1.2.3.4 -TenantId 536279f6-1234-2567-be2d-6
 
 When you look into the results list, navigate to the **Device info** tab. Depending on the device used, you will get varying output. Here are a few examples:
 
-- Example 1 - un-managed device (BYOD):
+- Example 1 - Un-managed device (BYOD):
 
-![unmanageddevice](./media/incident-response-playbook-phishing/unmanageddevice.png)
+  ![unmanageddevice](./media/incident-response-playbook-phishing/unmanageddevice.png)
 
-- Example 2 - managed device (AADJ or HAADJ):
+- Example 2 - Managed device (Azure AD join or hybrid Azure AD join):
 
-![manageddevice](./media/incident-response-playbook-phishing/Manageddevice.png)
+  ![manageddevice](./media/incident-response-playbook-phishing/Manageddevice.png)
 
 Check for the DeviceID if one is present. You should also look for the OS and the browser or *UserAgent* string.
 
@@ -708,7 +734,7 @@ From the previously found sign-in log details, check the *Application ID* under 
 
 Note the differences between the Application (and ID) to the Resource (and ID). The application is the client component involved, whereas the Resource is the service / application in Azure AD.
 
-With this AppID, you can now perform research in the tenant:
+With this AppID, you can now perform research in the tenant. Here's an example:
 
 ```powershell
 Get-AzureADApplication -Filter "AppId eq '30d4cbf1-c561-454e-bf01-528cd5eafd58'"

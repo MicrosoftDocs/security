@@ -452,7 +452,7 @@ To obtain the *Message-ID* for an email of interest, you need to examine the raw
 
 You should start by looking at the email headers. For example, in Outlook 365, open the message, navigate to **File > Info > Properties**:
 
-![Example of a properties screen showing email headers](./media/incident-response-playbook-phishing/checkemail.png)
+:::image type="content" source="./media/incident-response-playbook-phishing/checkemail.png" alt-text="Example of a properties screen showing email headers":::
 *Properties screen showing email headers*
 
 When viewing an email header, it is recommended to copy and paste the header information into an email header analyzer provided by [MXToolbox](https://mxtoolbox.com/EmailHeaders.aspx) or [Azure](https://mha.azurewebsites.net/) for readability.
@@ -612,7 +612,7 @@ For more details, see [auditing enhancements to ADFS in Windows server](https://
 
 If the customer has Azure AD Connect Health installed, you should also look into the Risky IP report. The failed sign-in activity client IP addresses are aggregated through Web Application proxy servers. Each item in the Risky IP report shows aggregated information about failed AD FS sign-in activities that exceed the designated threshold.
 
-![timestamp](./media/incident-response-playbook-phishing/timestamp.png)
+:::image type="content" source="./media/incident-response-playbook-phishing/timestamp.png" alt-text="timestamp":::
 
 For more details, see [Risky IP report](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip).
 
@@ -658,7 +658,7 @@ Check the Azure AD sign-in logs for the user(s) you are investigating.
 
 In the Azure AD portal, navigate to the [Sign-ins](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen and add/modify the display filter for the timeframe you found in the previous investigation steps as well as add the user name as a filter, as shown in this image.
 
-![displayfilter](./media/incident-response-playbook-phishing/DisplayFilter.png)
+:::image type="content" source="./media/incident-response-playbook-phishing/DisplayFilter.png" alt-text="displayfilter":::
 
 You can also search using Graph API. For example, filter on **User properties** and get **lastSignInDate** along with it. Search on a specific user to get the last signed in date for this user.
 For example, `https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Dhanyah')&$select=displayName,signInActivity`
@@ -683,7 +683,7 @@ Based on the source IP addresses that you found in the Azure AD sign-in logs or 
 
 For a managed scenario, you should start looking at the sign-in logs and filter based on the source IP address:
 
-![manageduseripaddress](./media/incident-response-playbook-phishing/managedusersip.png)
+:::image type="content" source="./media/incident-response-playbook-phishing/managedusersip.png" alt-text="manageduseripaddress]":::
 
 Or you can use the AzureADIncidentResponse PowerShell module.
 
@@ -695,15 +695,15 @@ When you look into the results list, navigate to the **Device info** tab. Depend
 
 - Example 1 - Un-managed device (BYOD):
 
-  ![unmanageddevice](./media/incident-response-playbook-phishing/unmanageddevice.png)
+  :::image type="content" source="./media/incident-response-playbook-phishing/unmanageddevice.png" alt-text="unmanageddevice":::
 
 - Example 2 - Managed device (Azure AD join or hybrid Azure AD join):
 
-  ![manageddevice](./media/incident-response-playbook-phishing/Manageddevice.png)
+  :::image type="content" source="./media/incident-response-playbook-phishing/Manageddevice.png" alt-text="manageddevice":::
 
 Check for the DeviceID if one is present. You should also look for the OS and the browser or *UserAgent* string.
 
-![deviceid](./media/incident-response-playbook-phishing/DeviceID.png)
+:::image type="content" source="./media/incident-response-playbook-phishing/DeviceID.png" alt-text="deviceid":::
 
 Record the *CorrelationID*, *Request ID* and *timestamp*. You should use *CorrelationID* and *timestamp* to correlate your findings to other events.
 
@@ -725,7 +725,7 @@ The starting point here are the sign-in logs and the app configuration of the te
 
 From the previously found sign-in log details, check the *Application ID* under the **Basic info** tab:
 
-![managedscenario](./media/incident-response-playbook-phishing/managedscenario1.png)
+:::image type="content" source="./media/incident-response-playbook-phishing/managedscenario1.png" alt-text="managedscenario":::
 
 Note the differences between the Application (and ID) to the Resource (and ID). The application is the client component involved, whereas the Resource is the service / application in Azure AD.
 
@@ -741,7 +741,7 @@ ObjectId                              |   AppId                                |
 
 With this information, you can search in the Enterprise Applications portal. Navigate to **All Applications** and search for the specific AppID.
 
-![enterpriseapps](./media/incident-response-playbook-phishing/enterpriseapps.png)
+:::image type="content" source="./media/incident-response-playbook-phishing/enterpriseapps.png" alt-text="enterpriseapps":::
 
 ## Additional incident response playbooks
 

@@ -28,7 +28,7 @@ This article provides guidance on identifying and investigating password spray a
 
 This article contains the following sections:
 
-- **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation, either on the customer side or for you as the investigator. For example, logging that should be turned on, roles and permissions required, among others.
+- **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation. For example, logging that should be turned on, roles and permissions required, among others.
 - **Workflow:** Shows the logical flow that you should follow to perform this investigation.
 - **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done or simply as a quality gate for yourself.
 - **Investigation steps:** Includes a detailed step-by-step guidance for this specific investigation.
@@ -87,13 +87,13 @@ Set-AdfsProperties -AuditLevel
 
 ### Install Azure AD Connect Health for ADFS
 
-The Azure Active Directory (Azure AD) Connect Health for ADFS agent allows you to have greater visibility into the customers federation environment. It provides customers with several pre-configured dashboards like usage, performance monitoring as well as risky IP reports.
+The Azure Active Directory (Azure AD) Connect Health for ADFS agent allows you to have greater visibility into your federation environment. It provides you with several pre-configured dashboards like usage, performance monitoring as well as risky IP reports.
 
 To install ADFS Connect Health, go through the [requirements for using Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#requirements), and then install the [Azure ADFS Connect Health Agent](https://go.microsoft.com/fwlink/?LinkID=518973).
 
 ### Set up [risky IP alerts](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/monitor-your-adfs-sign-in-activity-using-azure-ad-connect-health/ba-p/245395)
 
-Once Azure AD Connect Health for ADFS is configured, the customer should set the thresholds for alerting based on what is suitable for their environment.
+Once Azure AD Connect Health for ADFS is configured, you should set the thresholds for alerting based on what is suitable for their environment.
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/Thresholdsettings.png" alt-text="riskyiplalerts"::: 
 
@@ -136,9 +136,9 @@ You can also use the Spunk platform to set up alerts.
 
 #### Investigation triggers
 
-- Rceived a trigger from SIEM, firewall logs or Azure AD
+- Received a trigger from SIEM, firewall logs or Azure AD
 - Identity Protection Password Spray feature or Risky IP
-- Large number of failed logins (Event ID 411)
+- Large number of failed sign-ins (Event ID 411)
 - Spike in Azure AD Connect Health for ADFS
 - Another security incident (for example, phishing)
 - Unexplained activity – Sign-in from unfamiliar location, user getting unexpected MFA prompts
@@ -149,12 +149,12 @@ You can also use the Spunk platform to set up alerts.
 - Can you confirm this is a password spray?
 - Determine timeline for attack
 - Determine IP address/addresses of the attack
-- Filter successful logins for this time period and IP address, including successful password but failed MFA
+- Filter successful sign-ins for this time period and IP address, including successful password but failed MFA
 - Check [MFA reporting](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-reporting)
-- Is there anything out of the ordinary on the account – new device, new OS, new IP address used etc. Use MCAS or AIP to detect suspicious activity
+- Is there anything out of the ordinary on the account, such as new device, new OS, new IP address used. Use MCAS or Azure Information Protection to detect suspicious activity
 - Inform local authorities/third parties for assistance
 - If compromise suspected check for data exfiltration
-- Check associated account for suspicious behaviour
+- Check associated account for suspicious behavior
 - Check accounts of anyone working in the same office/delegated access - password hygiene (make sure they are not using the same password as the compromised account)
 - Run ADFS Help
 
@@ -206,9 +206,9 @@ Get-MsolDomain -DomainName "contoso.com"
 
 ### Is the authentication federated or managed?
 
-If the authentication is federated, then successful logins will be stored in the Azure AD. The failed logins will be in their Identity Provider (IDP). For more information, see  [ADFS troubleshooting and event logging](https://docs.microsoft.com/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
+If the authentication is federated, then successful sign-ins will be stored in the Azure AD. The failed sign-ins will be in their Identity Provider (IDP). For more information, see  [ADFS troubleshooting and event logging](https://docs.microsoft.com/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
 
-If the authentication type is managed, (Cloud only, password hash sync (PHS) or pass-through authentication (PTA)), then successful and failed logins will be stored in the Azure AD sign-In logs.
+If the authentication type is managed, (Cloud only, password hash sync (PHS) or pass-through authentication (PTA)), then successful and failed sign-ins will be stored in the Azure AD sign-In logs.
 
 >[!Note]
 >The [Staged Rollout](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-staged-rollout) feature allows the tenant domain name to be federated but specific users to be managed. Determine if any users are members of this group.
@@ -217,17 +217,17 @@ If the authentication type is managed, (Cloud only, password hash sync (PHS) or 
 ### Is the Azure AD Connect Health enabled for ADFS?
 
 - The [RiskyIP report](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip)  will provide suspect IPs and date/time. Notifications should be enabled.
-- Also check the [federated logins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
+- Also check the [federated sign-ins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
 
 ### Is the advanced logging enabled in ADFS?
 
 - This is a requirement for ADFS Connect Health but it can be enabled independently
 - See how to [enable ADFS Health Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs))
-- Also check the [Federated logins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
+- Also check the [Federated sign-ins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
 
 ### Are the logs stored in SIEM?
 
-To check whether the customer is storing and correlating logs in the Security Information and Event Management (SIEM) or in any other system, check the following:
+To check whether you are storing and correlating logs in a Security Information and Event Management (SIEM) or in any other system, check the following:
 
 - Log analytics- pre-built queries
 - Sentinel- pre-built queries
@@ -239,7 +239,7 @@ To check whether the customer is storing and correlating logs in the Security In
 
 It is important that you understand the logs that you are seeing to be able to determine compromise. Below are our quick guides to understanding Azure AD Sign-Ins and MFA reporting to help with this. Refer to these articles:
 
-- MFA reporting](<https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-reporting>)
+- [MFA reporting](<https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-reporting>)
 - [Understanding Sign Ins](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins)
 
 ### Incident triggers
@@ -259,7 +259,7 @@ An incident trigger is an event or a series of events that causes predefined ale
 Unusual spikes in activity are key indicators through Azure AD Health Connect (assuming this is installed). Other indicators are:
 
 - Alerting through SIEM shows a spike when you collate the logs.
-- Larger than normal log size for ADFS failed logins (this can be an alert in SIEM tool).
+- Larger than normal log size for ADFS failed sign-ins (this can be an alert in SIEM tool).
 - Increased amounts of 342/411 event IDs – username or password is incorrect. Or 516 for extranet lockout.
 - Hit failed authentication request threshold – Risky IP in Azure AD or SIEM tool alert/both 342 and 411 errors (To be able to view this information, the advanced logging should be turned on.)
 
@@ -279,9 +279,9 @@ The details of failed attempts are available in the tabs **IP address** and **ex
 
 ### Detect password spray in Azure Identity Protection
 
-Azure Identity Protection is an Azure AD Premium P2 feature that has a password-spray detection risk alert and search feature that you can be utilize to get additional information or set up automatic remediation.
+Azure Identity Protection is an Azure AD Premium P2 feature that has a password-spray detection risk alert and search feature that you can utilize to get additional information or set up automatic remediation.
 
-![detectpwd](./media/incident-response-playbook-password-spray/Detectpwd.png)
+:::image type="content" source="./media/incident-response-playbook-password-spray/Detectpwd.png" alt-text="detectpwd":::
 
 *Details of password spray attack*
 
@@ -369,7 +369,7 @@ Low and slow attack indicators are those where thresholds for account lockout or
 
 Along with the above event IDs, collate the *Audit Event 1203 – Fresh Credential Validation Error*.
 
-1. Collate all successful logins for this time on ADFS (if federated). A quick login and logout (at the same second) can be an indicator of a password being guessed successfully and being tried by the attacker.
+1. Collate all successful sign-ins for this time on ADFS (if federated). A quick sign-in and logout (at the same second) can be an indicator of a password being guessed successfully and being tried by the attacker.
 2. Collate any Azure AD successful or interrupted events for this time-period for both federated and managed scenarios.
 
 ### Monitor and collate Event IDs from Azure AD
@@ -412,7 +412,7 @@ Get-WinEvent -ProviderName 'ADFS' | Where-Object { $_.ID -eq '412' -or $_.ID -eq
 
 ### Collate ADFS logs in Azure AD
 
-Azure AD Sing-In reports include ADFS sign-in activity for customers who use Azure AD Connect Health. Filter sign-in logs by Token Issuer Type "Federated".
+Azure AD Sign-In reports include ADFS sign-in activity when you use Azure AD Connect Health. Filter sign-in logs by Token Issuer Type "Federated".
 
 Here’s an example PowerShell command to retrieve sign-in logs for a specific IP address:
 
@@ -420,30 +420,30 @@ Here’s an example PowerShell command to retrieve sign-in logs for a specific I
 Get-AzureADIRSignInDetail -TenantId b446a536-cb76-4360-a8bb-6593cf4d9c7f -IpAddress 131.107.128.76
 ```
 
-Also, search the Azure portal for time frame, IP address and successful and interrupted login as shown in these images.
+Also, search the Azure portal for time frame, IP address and successful and interrupted sign-in as shown in these images.
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/Selectingtimeframe.jpg" alt-text="timeframe"::: 
 
-*Searching for logins within a specific time frame*
+*Searching for sign-ins within a specific time frame*
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/Selectingipaddress.jpg" alt-text="ipaddress"::: 
 
-*Searching for logins on a specific IP address*
+*Searching for sign-ins on a specific IP address*
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/Selectingstatus.jpg" alt-text="status"::: 
 
-*Searching for logins based on the status*
+*Searching for sign-ins based on the status*
 
 You can then download this data as a *.csv* file for analysis. For more information, see [Sign-in activity reports in the Azure Active Directory portal](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins).
 
 ### Prioritize findings
 
-It is important to be able to react to the most critical threat. This can be the attacker has successfully obtained access to an account and therefore can access/exfiltrate data. The attacker has got the password but may not be able to access the account for example they have the password but are not passing the MFA challenge. Also the attacker could not be guessing passwords correctly but continuing to try. During analysis, prioritize these findings:
+It is important to be able to react to the most critical threat. This can be the attacker has successfully obtained access to an account and therefore can access/exfiltrate data. The attacker has the password but may not be able to access the account for example they have the password but are not passing the MFA challenge. Also, the attacker could not be guessing passwords correctly but continuing to try. During analysis, prioritize these findings:
 
-- Successful logins by known attacker IP address
+- Successful sign-ins by known attacker IP address
 - Interrupted sign-in by known attacker IP address
-- Unsuccessful logins by known attacker IP address
-- Other unknown IP address successful logins
+- Unsuccessful sign-ins by known attacker IP address
+- Other unknown IP address successful sign-ins
 
 ### Check legacy authentication
 
@@ -470,14 +470,14 @@ Most attacks use legacy authentication. There are a number of ways to determine 
 
 2. Create a CA policy to target all applications and block for this named location only.
 
-### Has the user used this operating system, IP, ISP, device or browser before?
+### Has the user used this operating system, IP, ISP, device, or browser before?
 
-If the user has not used them before and this activity is unusual, then flag the user and investigate all their activities.
+If the user has not used them before and this activity is unusual, then flag the user and investigate all of their activities.
 
 ### Is the IP marked as “risky”?  
 
 Ensure you record successful passwords but failed multi-factor authentication (MFA) responses, as this activity indicates that the attacker is getting the password but not passing MFA.  
-Set aside any account that appears to be a normal login, for example, passed MFA, location and IP not out of the ordinary.
+Set aside any account that appears to be a normal sign-in, for example, passed MFA, location and IP not out of the ordinary.
 
 ### MFA reporting
 
@@ -485,7 +485,7 @@ It is important to also check MFA logs as an attacker could have successfully gu
 
 ### Additional checks
 
-In the Microsoft Cloud App Security (MCAS), investigate activities and file access of the compromised account. For more information, see:
+In MCAS, investigate activities and file access of the compromised account. For more information, see:
 
 - [Investigate compromise with MCAS](https://docs.microsoft.com/cloud-app-security/investigate)
 - [Investigate anomalies with MCAS](https://docs.microsoft.com/cloud-app-security/investigate-anomaly-alerts)

@@ -28,7 +28,7 @@ This article provides guidance on identifying and investigating phishing attacks
 
 This article contains the following sections:
 
-- **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation, either on the customer side or for you as the investigator. For example, logging that should be turned on, roles and permissions required, among others.
+- **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation. For example, logging that should be turned on, roles and permissions required, among others.
 - **Workflow:** Shows the logical flow that you should follow to perform this investigation.
 - **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done or simply as a quality gate for yourself.
 - **Investigation steps:** Includes a detailed step-by-step guidance for this specific investigation.
@@ -96,7 +96,7 @@ You can also search the [unified audit log](https://docs.microsoft.com/microsoft
 
 ### Are the sign-in logs and/or audit logs exported to an external system?
 
-Since most of the Azure Active Directory (Azure AD) sign-in and audit data will get overwritten after 30 or 90 days, we recommend to all our customer to leverage Sentinel, Azure Monitor or an external SIEM.
+Since most of the Azure Active Directory (Azure AD) sign-in and audit data will get overwritten after 30 or 90 days, Microsoft recommends that you leverage Sentinel, Azure Monitor or an external SIEM.
 
 ## Roles and permissions required
 
@@ -116,7 +116,7 @@ Generally speaking, the [Global Reader](https://docs.microsoft.com/azure/active-
 >If a user has the **View-Only Audit Logs** or **Audit Logs** role on the **Permissions** page in the Security & Compliance Center, they won't be able to search the Office 365 audit log. In this scenario, you must assign the permissions in Exchange Online because an [Exchange Online cmdlet](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) is used to search the log.
 >
 
-If the customer has implemented the role-based access control (RBAC) in Exchange or if you are unsure which role you need in Exchange, you can use PowerShell to get the roles required for an individual Exchange PowerShell cmdlet:
+If you have implemented the role-based access control (RBAC) in Exchange or if you are unsure which role you need in Exchange, you can use PowerShell to get the roles required for an individual Exchange PowerShell cmdlet:
 
 ```powershell
 $Perms | foreach {Get-ManagementRoleAssignment -Role $_.Name -Delegating $false | Format-Table -Auto Role,RoleAssigneeType,RoleAssigneeName}
@@ -126,7 +126,7 @@ For more information, see [permissions required to run any Exchange cmdlet](http
 
 ### Microsoft Defender for Endpoint
 
-If the customer has Microsoft Defender for Endpoint (MDE) enabled and rolled out already, you should leverage it for this flow. See [Tackling phishing with signal-sharing and machine learning](https://www.microsoft.com/security/blog/2018/12/19/tackling-phishing-with-signal-sharing-and-machine-learning/).
+If you have Microsoft Defender for Endpoint (MDE) enabled and rolled out already, you should leverage it for this flow. See [Tackling phishing with signal-sharing and machine learning](https://www.microsoft.com/security/blog/2018/12/19/tackling-phishing-with-signal-sharing-and-machine-learning/).
 
 ## System requirements
 
@@ -225,8 +225,8 @@ This checklist will help you evaluate your investigation process and verify whet
 - Was the Attachment payload executed?
 - Was the destination IP / URL touched or opened
 - Was malicious code executed?
-- What logins happened with the account - Federated Scenario
-- What logins happened with the account - Managed Scenario
+- What sign-ins happened with the account - Federated Scenario
+- What sign-ins happened with the account - Managed Scenario
 - Investigate source IP address
 - Investigate device ID found
 - Investigate each App ID
@@ -381,7 +381,7 @@ For information about parameter sets, see the [Exchange cmdlet syntax](https://d
 
 ### Who else got the same email?
 
-There are two main cases here: The customer has Exchange Online or Hybrid Exchange with on-premises Exchange servers. The workflow is essentially the same as explained in the topic <a name ="findemail">Get the list of users/identities who got the email.</a> 
+There are two main cases here: You have Exchange Online or Hybrid Exchange with on-premises Exchange servers. The workflow is essentially the same as explained in the topic <a name ="findemail">Get the list of users/identities who got the email.</a> 
 
 #### Exchange Online
 
@@ -458,7 +458,7 @@ You should start by looking at the email headers. For example, in Outlook 365, o
 When viewing an email header, it is recommended to copy and paste the header information into an email header analyzer provided by [MXToolbox](https://mxtoolbox.com/EmailHeaders.aspx) or [Azure](https://mha.azurewebsites.net/) for readability.
 
 - **Headers Routing Information:** The routing information provides the route of an email as its being transferred between computers.
-- **Sender Policy Framework (SPF):** An email validation to help prevent/detect spoofing. In the SPF record, you can determine which IP addresses and domains can send mails on behalf of the domain.
+- **Sender Policy Framework (SPF):** An email validation to help prevent/detect spoofing. In the SPF record, you can determine which IP addresses and domains can send emails on behalf of the domain.
 - **SPF = Pass:** The SPF TXT record determined the sender is permitted to send on behalf of a domain.
     - SPF = Neutral
     - SPF = Fail: The policy configuration determines the outcome of the message  
@@ -498,7 +498,7 @@ The SPF record is stored within a DNS database and is bundled with the DNS looku
 
 ### Check if DKIM is enabled on your custom domains in Office 365
 
-The customer needs to publish two CNAME records for every domain they want to add the domain keys identified mail (DKIM). See how to [use DKIM to validate outbound email sent from your custom domain](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email).
+You need to publish two CNAME records for every domain they want to add the domain keys identified mail (DKIM). See how to [use DKIM to validate outbound email sent from your custom domain](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email).
 
 ### Check for domain-based message authentication, reporting, and conformance (DMARC)
 
@@ -530,12 +530,12 @@ As you investigate the IP addresses and URLs, look for and correlate IP addresse
 
 ### [Did the user click the link in the email?](#clicklink)
 
-If the user has clicked the link in the email (on-purpose or not), then this action typically leads to a new process creation on the device itself. Depending on the device this was performed, you need perform device-specific investigations. For example, Windows vs Android vs iOS. In this article, we have described a general approach along with some details for Windows based devices. If you are using Microsoft Defender for Endpoint (MDE), then you can also leverage it for iOS and soon Android.
+If the user has clicked the link in the email (on-purpose or not), then this action typically leads to a new process creation on the device itself. Depending on the device this was performed, you need perform device-specific investigations. For example, Windows vs Android vs iOS. In this article, we have described a general approach along with some details for Windows-based devices. If you are using Microsoft Defender for Endpoint (MDE), then you can also leverage it for iOS and soon Android.
 
 You can investigate these events using Microsoft Defender for Endpoint.
 
 1. **VPN/proxy logs**  
-    Depending on the vendor of the proxy and VPN solutions, you need to work with the customer to check the relevant logs. Ideally the customer is forwarding the events to their SIEM or in Sentinel.
+    Depending on the vendor of the proxy and VPN solutions, you need to check the relevant logs. Ideally you are forwarding the events to your SIEM or to Azure Sentinel.
 
 2. **Using Microsoft Defender for Endpoint**  
     This is the best-case scenario, because you can use our threat intelligence and automated analysis to help your investigation. For more details, see [how to investigate alerts in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-alerts). 
@@ -544,7 +544,7 @@ You can investigate these events using Microsoft Defender for Endpoint.
     ![alertprocesstree](./media/incident-response-playbook-phishing/alertprocesstree.png)
      
 3.  **Windows-based client devices**  
-    Make sure the customer has enabled the [**Process Creation Events**](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4688) option. Ideally, the customer should have also enabled [command-line Tracing Events](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing).
+    Make sure you have enabled the [**Process Creation Events**](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4688) option. Ideally, you should also enable [command-line Tracing Events](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing).
 
     On Windows clients, which have the above-mentioned Audit Events enabled prior to the investigation, you can check Audit Event 4688 and determine the time when the email was delivered to the user:
 
@@ -568,15 +568,15 @@ The tasks here are similar to the previous investigation step: <a name="clickli
 
 The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
 
-### What logins happened with the account?
+### What sign-ins happened with the account?
 
-Check the various logins that happened with the account.
+Check the various sign-ins that happened with the account.
 
 <h2 id="federated-scenario"></h2>
 
 ### Federated scenario
 
-The audit log settings and events differ based on the operating system (OS) Level and the Active Directory Federation Services (ADFS) Server version installed at the customer.
+The audit log settings and events differ based on the operating system (OS) Level and the Active Directory Federation Services (ADFS) Server version.
 
 See the following sections for different server versions.
 
@@ -610,7 +610,7 @@ Set-AdfsProperties -AuditLevel Verbose
 ```
 For more details, see [auditing enhancements to ADFS in Windows server](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/auditing-enhancements-to-ad-fs-in-windows-server).
 
-If the customer has Azure AD Connect Health installed, you should also look into the Risky IP report. The failed sign-in activity client IP addresses are aggregated through Web Application proxy servers. Each item in the Risky IP report shows aggregated information about failed AD FS sign-in activities that exceed the designated threshold.
+If you have Azure AD Connect Health installed, you should also look into the Risky IP report. The failed sign-in activity client IP addresses are aggregated through Web Application proxy servers. Each item in the Risky IP report shows aggregated information about failed AD FS sign-in activities that exceed the designated threshold.
 
 :::image type="content" source="./media/incident-response-playbook-phishing/timestamp.png" alt-text="timestamp":::
 
@@ -660,7 +660,7 @@ In the Azure AD portal, navigate to the [Sign-ins](https://portal.azure.com/#bla
 
 :::image type="content" source="./media/incident-response-playbook-phishing/DisplayFilter.png" alt-text="displayfilter":::
 
-You can also search using Graph API. For example, filter on **User properties** and get **lastSignInDate** along with it. Search on a specific user to get the last signed in date for this user.
+You can also search using Graph API. For example, filter on **User properties** and get **lastSignInDate** along with it. Search for a specific user to get the last signed in date for this user.
 For example, `https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Dhanyah')&$select=displayName,signInActivity`
 
 Or you can use the PowerShell command `Get-AzureADUserLastSignInActivity` to get the last interactive sign-in activity for the user, targeted by their object ID. This example writes the output to a date and time stamped CSV file in the execution directory.
@@ -709,7 +709,7 @@ Record the *CorrelationID*, *Request ID* and *timestamp*. You should use *Correl
 
 ### Federated user/application
 
-Follow the same procedure that is provided for [Federated login scenario](#federated-scenario).
+Follow the same procedure that is provided for [Federated sign-in scenario](#federated-scenario).
 
 Look for and record the *DeviceID, OS Level, CorrelationID, RequestID.*
 

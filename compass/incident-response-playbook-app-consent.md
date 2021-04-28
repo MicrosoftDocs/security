@@ -28,7 +28,7 @@ This article provides guidance on identifying and investigating app consent atta
 
 This article contains the following sections:
 
-- **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation, either on the customer side or for you as the investigator. For example, logging that should be turned on, roles and permissions required, among others.
+- **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation. For example, logging that should be turned on, roles and permissions required, among others.
 - **Workflow:** Shows the logical flow that you should follow to perform this investigation.
 - **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done or simply as a quality gate for yourself.
 - **Investigation steps:** Includes a detailed step-by-step guidance for this specific investigation.
@@ -41,11 +41,11 @@ Here are general settings and configurations you should complete to perform an i
 
 ### Customer data
 
-To start the investigation process, you need the following data from the customer:
+To start the investigation process, you need the following data:
 
-- Access to the tenant as a Global Admini - A Cloud only account (not part of their on-premises environment)
+- Access to the tenant as a Global Admin - A Cloud only account (not part of their on-premises environment)
 - Detail of indicators of compromise (IoCs)
-- The date and time when did the customer noticed the incident
+- The date and time when you noticed the incident
 - Date range
 - Number of compromised accounts
 - Name(s) of compromised accounts
@@ -259,13 +259,13 @@ Use this checklist to perform application consent grant validation.
 
 - **Requirements**
 
-  Make sure you have access to the tenant as a Global Admin. This is a cloud-only account and is not part of the customer's on-premises environment.
+  Make sure you have access to the tenant as a Global Admin. This is a cloud-only account and is not part of your on-premises environment.
 
 - **Indicators of compromise (IoC)**
 
     Check the following indicators of compromise (IoC)
 
-  - When did the customer notice the incident?
+  - When did you notice the incident?
   - Date range of the incident (how far left is the goal post?)
   - Number of compromised accounts
   - Name(s) of compromised accounts
@@ -321,7 +321,7 @@ There are several PowerShell tools you can use to investigate illicit consent gr
 - AzureAD incident response module
 - The Get-AzureADPSPermissions.ps1 script from GitHub
 
-PowerShell is the easiest tool and does not require you to modify anything on the tenancy. We are going to base our investigation on the public documentation from the Illicit Consent Grant attack.
+PowerShell is the easiest tool and does not require you to modify anything in the tenancy. We are going to base our investigation on the public documentation from the Illicit Consent Grant attack.
 
 Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants and OAuth apps for all users in your tenancy into a *.csv* file. See the [Prerequisites](#prerequisites) section to download and run the `Get-AzureADPSPermissions` script.
 
@@ -370,10 +370,11 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
 
     - Unusual or bland names
         ![unusualnames](./media/incident-response-playbook-app-consent/boringnames.png)
+
     - Hacker-sounding names. You must review these names carefully.
         ![hackernames](./media/incident-response-playbook-app-consent/hackernames.png)
 
-**Example Output:** AllPrincipal and read write all. These applications did not have anything suspicious like boring names, and were using MS graph etc. This was a real scenario (sanitized for demonstration) and these all fleshed out to be valid. However, perform research and determine the purpose of the applications. Validate with the CX if they are aware of this scenario and the actual permission this application has on the tenant, as shown in this example.
+**Example Output:** AllPrincipal and read write all. These applications did not have anything suspicious like bland names and were using MS graph. This was a real scenario (sanitized for demonstration) and these all fleshed out to be valid. However, perform research and determine the purpose of the applications. Validate with the CX if they are aware of this scenario and the actual permission this application has on the tenant, as shown in this example.
 
 ![exampleoutput](./media/incident-response-playbook-app-consent/Exampleoutput.png)
 
@@ -436,7 +437,7 @@ If you have one or more instances of the IOCs listed above, you need to do furth
 
 You can inventory apps for your users using the Azure Active Directory portal, PowerShell, or have your users individually enumerate their application access.
 
-- Use the Azure Active Directory portal to inventory applications and their permissions. This method is thorough, but you can only check one user at a time, which can be time consuming if you have to check the permissions of several users.
+- Use the Azure Active Directory portal to inventory applications and their permissions. This method is thorough, but you can only check one user at a time, which can be time-consuming if you have to check the permissions of several users.
 - Use PowerShell to inventory applications and their permissions. This method is the fastest and most thorough, with the least amount of overhead.
 - Encourage your users to individually check their apps and permissions and report the results back to the administrators for remediation.
 
@@ -557,7 +558,7 @@ To help developers build high-quality and secure integrations, we’re also anno
 #### Promote and allow access to apps you trust
 
 - Promote the use of applications that have been publisher verified. Publisher verification helps admins and end users understand the authenticity of application developers. Over 660 applications by 390 publishers have been verified thus far.
-- Configure application consent policies by allowing users to only consent to specific applications you trust, such as application developed by your organization or from verified publishers.
+- Configure application consent policies by allowing users to only consent to specific applications you trust, such as applications developed by your organization or from verified publishers.
 - Educate your organization on how our permissions and consent [framework works](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow).
 - Understand the data and permissions an application is asking for and understand how permissions and consent work within our platform.
 - Ensure administrators know how to manage and evaluate consent requests.
@@ -575,7 +576,7 @@ Audit apps and consented permissions in your organization to ensure applications
 
 ## References
 
-The content for this article has been sourced from the following resources:
+The source of the content for this article is the following:
 
 - [Protecting remote workforce application attacks](https://www.microsoft.com/security/blog/2020/07/08/protecting-remote-workforce-application-attacks-consent-phishing/)
 - [Fostering a secure and trustworthy app ecosystem](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/build-2020-fostering-a-secure-and-trustworthy-app-ecosystem-for/ba-p/1257360)

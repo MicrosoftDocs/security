@@ -420,7 +420,7 @@ Here’s an example PowerShell command to retrieve sign-in logs for a specific I
 Get-AzureADIRSignInDetail -TenantId b446a536-cb76-4360-a8bb-6593cf4d9c7f -IpAddress 131.107.128.76
 ```
 
-Also, search the Azure portal for time frame, IP address and successful and interrupted login as shown in the images below.
+Also, search the Azure portal for time frame, IP address and successful and interrupted login as shown in these images.
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/Selectingtimeframe.jpg" alt-text="timeframe"::: 
 

@@ -349,7 +349,7 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
 5. The script creates a file named *Permissions.csv*.
 6. Open the file, filter or format the data into a table and save as an *.xlxs* file (for filtering).
 
-    The **column headers** for output are shown in the image below.
+    The **column headers** for output are shown in this image.
 
     ![columnheaders](./media/incident-response-playbook-app-consent/columnheaders.png)
 
@@ -362,7 +362,7 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
     >Review the specific users that have consents granted. If high profile or high impact users have inappropriate consents granted, you should investigate further.
     >
 
-9. In the **ClientDisplayName** column **(C)**, look for apps that seem suspicious as noted below:
+9. In the **ClientDisplayName** column **(C)**, look for apps that seem suspicious, such as:
     - Apps with misspelled names
         ![misspeltnames](./media/incident-response-playbook-app-consent/misspeltnames.png)
 
@@ -371,7 +371,8 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
     - Hacker-sounding names. You must review these names carefully.
         ![hackernames](./media/incident-response-playbook-app-consent/hackernames.png)
 
-**Example Output:** AllPrincipal and read write all. These applications did not have anything suspicious like boring names, and were using MS graph etc. This was a real scenario (sanitized for demonstration) and these all fleshed out to be valid. However, perform research and determine the purpose of the applications. Validate with the CX if they are aware of this scenario and the actual permission this application has on the tenant, as shown in the example below.
+**Example Output:** AllPrincipal and read write all. These applications did not have anything suspicious like boring names, and were using MS graph etc. This was a real scenario (sanitized for demonstration) and these all fleshed out to be valid. However, perform research and determine the purpose of the applications. Validate with the CX if they are aware of this scenario and the actual permission this application has on the tenant, as shown in this example.
+
 ![exampleoutput](./media/incident-response-playbook-app-consent/Exampleoutput.png)
 
 Here are some useful tips to review information security policy (ISP) investigations:

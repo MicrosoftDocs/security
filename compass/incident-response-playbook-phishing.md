@@ -164,7 +164,9 @@ To install the Azure AD PowerShell module, follow these steps:
     Install-Module -Name AzureAD -Verbose
     ```
 
-    **Note:** If you are prompted to install modules from an untrusted repository, type **Y** and press **Enter**.
+    >[!Note]
+    >If you are prompted to install modules from an untrusted repository, type **Y** and press **Enter**.
+    >
 
 ### Install MSOnline PowerShell module 
 
@@ -183,7 +185,9 @@ To install the MSOnline PowerShell module, follow these steps:
     Install-Module -Name MSOnline -Verbose
     ```
 
-    **Note:** If you are prompted to install modules from an untrusted repository, type **Y** and press **Enter**.
+    >[!Note]
+    >If you are prompted to install modules from an untrusted repository, type **Y** and press **Enter**.
+    >
 
 ### Install Exchange PowerShell module
 
@@ -248,7 +252,7 @@ This playbook is created with the intention that not all customers or investigat
 
 As the very first step, you need to get a list of users / identities who received the phishing email. The objective of this step is to record a list of potential users / identities that you will later use to iterate through for additional investigation steps. Please refer to the [Workflow](#workflow) section for a high-level flow diagram of the steps you need to follow during this investigation.
 
-We do not give any recommendations in this playbook on how you want to record this list of potential users / identities. Depending on the size of the investigation, you can leverage an Excel book, a CSV file, or even a database for larger investigations. There are multiple ways to obtain the list of identities in a given tenant, and some examples are provided below.
+We do not give any recommendations in this playbook on how you want to record this list of potential users / identities. Depending on the size of the investigation, you can leverage an Excel book, a CSV file, or even a database for larger investigations. There are multiple ways to obtain the list of identities in a given tenant, and here are some examples.
 
 ### Create a search filter within the security & compliance center
 
@@ -282,7 +286,7 @@ The following example query searches Janes Smith mailbox for an email that conta
 Search-Mailbox -Identity "Jane Smith" -SearchQuery "Subject:Invoice" -TargetMailbox "IRMailbox" -TargetFolder "Investigation" LogLevel Full
 ```
 
-In the example below, the query searches all tenant mailboxes for an email that contains the phrase "InvoiceUrgent" in the subject and copies the results to IRMailbox in a folder named "Investigation."
+In this example command, the query searches all tenant mailboxes for an email that contains the phrase "InvoiceUrgent" in the subject and copies the results to IRMailbox in a folder named "Investigation."
 
 ```powershell
 Get-Mailbox | Search-Mailbox -SearchQuery 'InvoiceUrgent vote' -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
@@ -583,7 +587,7 @@ Check the various logins that happened with the account.
 
 The audit log settings and events differ based on the operating system (OS) Level and the Active Directory Federation Services (ADFS) Server version installed at the customer.
 
-The details for different server versions are provided below:
+See the following sections for different server versions.
 
 #### Server 2012R2
 
@@ -661,14 +665,14 @@ Check the Azure AD sign-in logs for the user(s) you are investigating.
 - Check the [sign-in activities](https://docs.microsoft.com/graph/api/resources/signinactivity)
 - Check the [PowerShell function on GitHub](https://github.com/poshchap/Azure-AD-Users-PoSh/blob/master/Get-AzureADUserLastSignInActivity.ps1)
 
-In the Azure AD portal, navigate to the [Sign-ins](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen and add/modify the display filter for the timeframe you found in the previous investigation steps as well as add the user name as a filter, as shown in the image below.
+In the Azure AD portal, navigate to the [Sign-ins](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen and add/modify the display filter for the timeframe you found in the previous investigation steps as well as add the user name as a filter, as shown in this image.
 
 ![displayfilter](./media/incident-response-playbook-phishing/DisplayFilter.png)
 
 You can also search using Graph API. For example, filter on **User properties** and get **lastSignInDate** along with it. Search on a specific user to get the last signed in date for this user.
 For example, `https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Dhanyah')&$select=displayName,signInActivity`
 
-Or you can use the PowerShell command `Get-AzureADUserLastSignInActivity` to get the last interactive sign-in activity for the user, targeted by their object ID. The example below writes the output to a date and time stamped CSV file in the execution directory.
+Or you can use the PowerShell command `Get-AzureADUserLastSignInActivity` to get the last interactive sign-in activity for the user, targeted by their object ID. This example writes the output to a date and time stamped CSV file in the execution directory.
 
 ```powershell
 Get-AzureADUserLastSignInActivity -TenantId 536279f6-1234-2567-be2d-61e352b51eef -UserObjectId 69447235-0974-4af6-bfa3-d0e922a92048 -CsvOutput

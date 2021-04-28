@@ -143,7 +143,7 @@ The data you collect should be focused on supporting one or more of these operat
 Integrating more data can allow you to enrich alerts with additional context that enable rapid response and remediation (filter false positives, and elevate
 true positives, etc.), but collection is not detection. If you don’t have a reasonable expectation that the data will provide value (for example, high volume of firewall denies events), you may deprioritize integration of these events.
 
-## Attack investigation guidance
+## Incident response playbooks
 
 Examine guidance for identifying and investigating these types of attacks:
 

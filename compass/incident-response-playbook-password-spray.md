@@ -217,13 +217,13 @@ If the authentication type is managed, (Cloud only, password hash sync (PHS) or 
 ### Is the Azure AD Connect Health enabled for ADFS?
 
 - The [RiskyIP report](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip)  will provide suspect IPs and date/time. Notifications should be enabled.
-- Also check the [federated logins investigation from the Phishing playbook](https://dev.azure.com/ProjectRedshift/Redshift/_wiki/wikis/Redshift.wiki/6/Investigation-Steps?anchor=what-logins-happened-with-the-account---federated-scenario)
+- Also check the [federated logins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
 
 ### Is the advanced logging enabled in ADFS?
 
 - This is a requirement for ADFS Connect Health but it can be enabled independently
 - See how to [enable ADFS Health Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs))
-- Also check the [Federated logins investigation from the Phishing playbook](https://dev.azure.com/ProjectRedshift/Redshift/_wiki/wikis/Redshift.wiki/6/Investigation-Steps?anchor=what-logins-happened-with-the-account---federated-scenario)
+- Also check the [Federated logins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
 
 ### Are the logs stored in SIEM?
 
@@ -602,7 +602,7 @@ See how to [configure alerts in the Identity Protection portal](https://docs.mic
 - [Attack simulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)
 
 
-## Additional attack guidance
+## Additional incident response playbooks
 
 Examine guidance for identifying and investigating these additional types of attacks:
 

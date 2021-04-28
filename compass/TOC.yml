@@ -25,7 +25,7 @@
           href: security-operations.md
         - name: Capabilities
           href: security-operations-capabilities.md
-        - name: Incident response guidance
+        - name: Incident response playbooks
           items:
             - name: Phishing
               href: incident-response-playbook-phishing.md

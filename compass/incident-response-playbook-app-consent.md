@@ -37,7 +37,7 @@ This article contains the following sections:
 
 ## Prerequisites
 
-This section contains details of items you need to perform an investigation for Application Consent Grants. Before starting the investigation, make sure you have read about the types of consent permissions explained in [Consent permission types](https://dev.azure.com/ProjectRedshift/Redshift/_wiki/wikis/Redshift.wiki/19/Consent-Permission-Types).
+This section contains details of items you need to perform an investigation for Application Consent Grants. Before starting the investigation, make sure you have read about the types of consent permissions explained in [Consent permission types](https://aka.ms/getazureadpermissions).
 
 ### Customer data
 
@@ -96,7 +96,7 @@ Install-Module -Name AzureAD -Verbose
 
 #### Download the AzureADPSPermissions Script from GitHub
 
-1. Download the [Get-AzureADPSPermissions.ps1](https://dev.azure.com/ProjectRedshift/Redshift/_wiki/wikis/Redshift.wiki?wikiVersion=GBwikiMaster&pagePath=%2FInvestigations%2FAppConsent%20Investigation%2F(https%3A%2F%2Fgist.github.com%2Fpsignoret%2F41793f8c6211d2df5051d77ca3728c09)) script from GitHub to a folder from which you will run the script. The output file "*permissions.csv*" will also be written to this same folder.
+1. Download the [Get-AzureADPSPermissions.ps1](https://aka.ms/getazureadpermissions) script from GitHub to a folder from which you will run the script. The output file "*permissions.csv*" will also be written to this same folder.
 2. Open a PowerShell instance as an administrator and open the folder in which you saved the script.
 3. Connect to your directory using the Connect-AzureAD cmdlet. Here's an example.
 
@@ -245,8 +245,10 @@ As per our observation, attackers have used a combination of the first six permi
 
 ## Workflow
 
-![appconsentworkflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)
 
+<!--
+![appconsentworkflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)
+--> 
 
 [![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](https://github.com/MicrosoftDocs/security/raw/public/compass/media/incident-response-playbook-app-consent/Appconsent_flow.png)
 
@@ -571,13 +573,6 @@ Audit apps and consented permissions in your organization to ensure applications
   - You can also deactivate sign-in for the affected account altogether, which will in turn deactivate application access to data in that account.
   - You can turn off integrated applications for your tenancy. This is a drastic step that prevents end users from granting consent to third-party applications on a tenant-wide basis. However, this option is not recommended.
 
-## Additional attack guidance
-
-Examine guidance for identifying and investigating these additional types of attacks:
-
-- [Phishing](incident-response-playbook-phishing.md)
-- [Password spray](incident-response-playbook-password-spray.md)
-
 ## References
 
 The content for this article has been sourced from the following resources:
@@ -603,3 +598,10 @@ The content for this article has been sourced from the following resources:
 - [Application Registration vs. Enterprise Applications](https://morgantechspace.com/2019/07/difference-between-azure-ad-app-registration-and-enterprise-application.html)
 - [Permissions](https://docs.microsoft.com/cli/azure/ad/app/permission)
 - [KrebsOnSecurity on AppConsent Phishing](https://krebsonsecurity.com/2020/01/tricky-phish-angles-for-persistence-not-passwords/)
+
+## Additional incident response playbooks
+
+Examine guidance for identifying and investigating these additional types of attacks:
+
+- [Phishing](incident-response-playbook-phishing.md)
+- [Password spray](incident-response-playbook-password-spray.md)

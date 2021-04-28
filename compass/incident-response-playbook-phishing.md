@@ -207,7 +207,7 @@ Please follow the steps on [how to get the Exchange PowerShell installed with mu
 
 This checklist will help you evaluate your investigation process and verify whether you have completed all the steps during investigation:
 
-<!--
+EXAMPLE CHECKLIST IN TABLE FORM
 
 | Completed | Task or question |
 |:-------|:-----|
@@ -216,7 +216,6 @@ This checklist will help you evaluate your investigation process and verify whet
 | ![Checkbox](./media/incident-response-playbook-phishing/checkbox.png) | Get the latest Dates when the User had access to the mailbox |
 | ![Checkbox](./media/incident-response-playbook-phishing/checkbox.png) | Is delegated Access configured on the mailbox? |
 |
---> 
 
 - Review Initial phishing email
 - Get the list of users who got this email
@@ -583,6 +582,7 @@ The tasks here are similar to the previous investigation step: <a name="clickli
 
 Check the various logins that happened with the account.
 
+<h2 id="federated-scenario"></h2>
 ### Federated scenario
 
 The audit log settings and events differ based on the operating system (OS) Level and the Active Directory Federation Services (ADFS) Server version installed at the customer.
@@ -752,7 +752,7 @@ With this information, you can search in the Enterprise Applications portal. Nav
 
 ![enterpriseapps](./media/incident-response-playbook-phishing/enterpriseapps.png)
 
-## Additional attack guidance
+## Additional incident response playbooks
 
 Examine guidance for identifying and investigating these additional types of attacks:
 

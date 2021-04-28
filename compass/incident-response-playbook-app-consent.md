@@ -56,18 +56,15 @@ To start the investigation process, you need the following data from the custome
 
 ### System requirements
 
-Ensure you complete the following installations and configurations:
+Ensure you complete the following installations and configuration requirements:
 
-1. The Azure AD PowerShell library is installed.
+1. The AzureAD and MSOnline PowerShell modules are installed.
 2. You have global administrator rights on the tenant that the script will be run against.
 3. You are assigned local administrator role on the computer that you will use to run the scripts.
-4. Configure your PowerShell environment with the following:
-    - AzureAD
-    - MSOnline
 
-#### Install AzureAD module
+#### Install the AzureAD module
 
-To install the AzureAD module, type the following command, and press **Enter**:
+Use this command to install the AzureAD module.
 
 ```powershell
 Install-Module -Name AzureAD -Verbose
@@ -81,37 +78,39 @@ Install-Module -Name AzureAD -Verbose
 #### Install the MSOnline PowerShell module
 
 1. Run the Windows PowerShell app with elevated privileges (run as administrator).
-2. Type the following command to allow PowerShell to run signed scripts, and press **Enter**:
+2. Run this command to allow PowerShell to run signed scripts.
 
     ```powershell
     Set-ExecutionPolicy RemoteSigned
     ```
 
-3. To install the MSOnline module, type the following command, and press **Enter**.
+3. Install the MSOnline module with this command.
 
     ```powershell
     Install-Module -Name MSOnline -Verbose
     ```
 
-   **Note:** If you are prompted to install the modules from an untrusted repository, type **Y** and press **Enter**.
+    >[!Note]
+    >If you are prompted to install the modules from an untrusted repository, type **Y** and press **Enter**.
+    >
 
 #### Download the AzureADPSPermissions Script from GitHub
 
 1. Download the [Get-AzureADPSPermissions.ps1](https://dev.azure.com/ProjectRedshift/Redshift/_wiki/wikis/Redshift.wiki?wikiVersion=GBwikiMaster&pagePath=%2FInvestigations%2FAppConsent%20Investigation%2F(https%3A%2F%2Fgist.github.com%2Fpsignoret%2F41793f8c6211d2df5051d77ca3728c09)) script from GitHub to a folder from which you will run the script. The output file "*permissions.csv*" will also be written to this same folder.
 2. Open a PowerShell instance as an administrator and open the folder in which you saved the script.
-3. Connect to your directory using the Connect-AzureAD cmdlet. For example:
+3. Connect to your directory using the Connect-AzureAD cmdlet. Here's an example.
 
     ```powershell
     Connect-AzureAD -tenantid "2b1a14ac-2956-442f-9577-1234567890ab" -AccountId "user1@contoso.onmicrosoft.com"
     ```
 
-4. Run this PowerShell command:
+4. Run this PowerShell command.
 
     ```powershell
     Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
     ```
 
-    **Note:** After you run the PowerShell command, disconnect the session by using this command:
+    Disconnect your AzureAD session with this command.
 
     ```powershell
     Disconnect-AzureAD
@@ -216,23 +215,29 @@ As per our observation, attackers have used a combination of the first six permi
 
 1. To view the permissions, navigate to the **Registration** screen in the enterprise application.
 
-    ![view permissions](./media/incident-response-playbook-app-consent/Viewpermissions.png)
+    :::image type="content" source="./media/incident-response-playbook-app-consent/Viewpermissions.png" alt-text="view permissions":::
 
-2. Click the **View API permissions** button.
-    ![apipermissions](./media/incident-response-playbook-app-consent/Viewapipermissionbutton.png)
+2. Select **View API permissions**.
 
-3. Click **Add a permission** and the following screen is displayed.
-    ![api](./media/incident-response-playbook-app-consent/Commonapi.png)
-4. Click **Microsoft Graph** to view the different types of permissions.
-    ![types of permissions](./media/incident-response-playbook-app-consent/RequestAPIpermissions.png)
+    :::image type="content" source="./media/incident-response-playbook-app-consent/Viewapipermissionbutton.png" alt-text="apipermissions":::
+
+3. Select **Add a permission** and the following screen is displayed.
+
+    :::image type="content" source="./media/incident-response-playbook-app-consent/Commonapi.png" alt-text="api":::
+
+4. Select **Microsoft Graph** to view the different types of permissions.
+
+    :::image type="content" source="./media/incident-response-playbook-app-consent/RequestAPIpermissions.png" alt-text="types of permissions":::
 
 5. Select the type of permissions the registered application is using: **Delegated** **permissions** or **Application** **permissions**. In the above image, **Application permissions** is selected.
 
 6. You can search for one of the high-risk impact permissions such as **EduRoster**.
-    ![examplepermission](./media/incident-response-playbook-app-consent/RequestAPIpermissions_edu.png)
+
+    :::image type="content" source="./media/incident-response-playbook-app-consent/RequestAPIpermissions_edu.png" alt-text="examplepermission":::
 
 7. Select **EduRoster** and expand the permissions.
-    ![eduroster](./media/incident-response-playbook-app-consent/RequestAPIpermissions_selecteduroster.png)
+
+    :::image type="content" source="./media/incident-response-playbook-app-consent/RequestAPIpermissions_selecteduroster.png" alt-text="eduroster":::
 
 8. You can now assign or review these permissions.
 
@@ -273,9 +278,9 @@ Use this checklist to perform application consent grant validation.
 - **PowerShell configuration**
 
     Configure your PowerShell environment with the following:
-  - Install Azure AD PowerShell library.
+  - Install the Azure AD PowerShell module.
   - Run the Windows PowerShell app with elevated privileges. (Run as administrator).
-  - Allow PowerShell to run signed scripts.
+  - Configure PowerShell to run signed scripts.
   - Download the *Get-AzureADPSPermissions.ps1* script.
 
 - **Investigation triggers**
@@ -291,18 +296,16 @@ You can use the following two methods to investigate application consent grants:
 - Azure portal
 - PowerShell script
 
-
 >[!Note]
 >Using the Azure portal *will only allow you to see Admin Consent Grants for the last 90 days and based on this, we recommend using the PowerShell script method only to reduce the attacker registers investigation steps.*
 >
-
 
 ### Method 1 – Using the Azure portal
 
 You can use the Azure Active Directory portal to find applications to which any individual user has granted permissions.
 
 1. Sign in to the **Azure portal** as an administrator.
-2. Select the **Azure Active Directory** tab.
+2. Select the **Azure Active Directory** icon.
 3. Select **Users**.
 4. Select the user that you want to review.
 5. Select **Applications**.
@@ -318,33 +321,36 @@ There are several PowerShell tools you can use to investigate illicit consent gr
 
 PowerShell is the easiest tool and does not require you to modify anything on the tenancy. We are going to base our investigation on the public documentation from the Illicit Consent Grant attack.
 
-Run ```Get-AzureADPSPermissions.ps1```, to export all of the OAuth consent grants and OAuth apps for all users in your tenancy into a *.csv* file. See the [Prerequisites](#prerequisites) section to download and run the ```Get-AzureADPSPermissions``` script.
+Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants and OAuth apps for all users in your tenancy into a *.csv* file. See the [Prerequisites](#prerequisites) section to download and run the `Get-AzureADPSPermissions` script.
 
 1. Open a PowerShell instance as an administrator and open the folder where you saved the script.
-2. Connect to your directory using the following *Connect-AzureAD* cmdlet.
+2. Connect to your directory using the following *Connect-AzureAD* command. Here's an example.
 
     ```powershell
     Connect-AzureAD -tenantid "2b1a14ac-2956-442f-9577-1234567890ab" -AccountId "user1@contoso.onmicrosoft.com"
     ```
 
-3. Run this PowerShell command:
+3. Run this PowerShell command.
 
     ```powershell
     Get-AzureADPSPermissions.ps1 | Export-csv c:\temp\consentgrants\Permissions.csv -NoTypeInformation
     ```
 
-4. Once the script completes, it is recommended to disconnect the session properly using:
+4. Once the script completes, it is recommended to disconnect the Azure AD session with this command.
 
     ```powershell
      Disconnect-AzureAD
     ```
 
-    **Note:** The script may take hours to complete (depending on the size and permissions configured as well as your connection)
+    >[!Note]
+    >The script may take hours to complete, depending on the size and permissions configured as well as your connection.
+    >
 
 5. The script creates a file named *Permissions.csv*.
 6. Open the file, filter or format the data into a table and save as an *.xlxs* file (for filtering).
 
-    The **column headers** for output are shown in the image below**.**
+    The **column headers** for output are shown in the image below.
+
     ![columnheaders](./media/incident-response-playbook-app-consent/columnheaders.png)
 
 7. In the **ConsentType** column **(G),** search for the value **AllPrinciples**. The **AllPrincipals** permission allows the client application to access everyone's content in the tenancy. Native Microsoft 365 applications need this permission to work correctly. ***Every non-Microsoft application with this permission should be reviewed carefully***.
@@ -352,7 +358,9 @@ Run ```Get-AzureADPSPermissions.ps1```, to export all of the OAuth consent grant
 8. In the **Permission** column **(F)**, review the permissions that each delegated application has. Look for **Read** and **Write** permission or __*. All__ permission, and review these carefully because they may not be appropriate.
 ![columnf](./media/incident-response-playbook-app-consent/columnf.png)
 
-    **Note:** Review the specific users that have consents granted. If high profile or high impact users have inappropriate consents granted, you should investigate further.
+    >[!Note]
+    >Review the specific users that have consents granted. If high profile or high impact users have inappropriate consents granted, you should investigate further.
+    >
 
 9. In the **ClientDisplayName** column **(C)**, look for apps that seem suspicious as noted below:
     - Apps with misspelled names
@@ -382,34 +390,38 @@ Here are some useful tips to review information security policy (ISP) investigat
 
 ### Attack techniques
 
-While [each attack tends to vary, the core attack techniques are:](https://attack.mitre.org/techniques/T1550/001/)
+While [each attack tends to vary, the core attack techniques are](https://attack.mitre.org/techniques/T1550/001/):
 
 - An attacker registers an app with an OAuth 2.0 provider, such as Azure AD.
 - The app is configured in a way that makes it seem legitimate. For example, attackers might use the name of a popular product available in the same ecosystem.
 - The attacker gets a link directly from users, which may be done through conventional email-based phishing, by compromising a non-malicious website, or through other techniques.
-- The user clicks the link and is shown an authentic consent prompt asking them to grant the malicious app permissions to data.
-- If a user clicks ‘Accept’, they will grant the app permissions to access sensitive data.
+- The user selects the link and is shown an authentic consent prompt asking them to grant the malicious app permissions to data.
+- If a user selects ‘Accept’, they will grant the app permissions to access sensitive data.
 - The app gets an authorization code, which it redeems for an access token, and potentially a refresh token.
 - The access token is used to make API calls on behalf of the user.
 - If the user accepts, the attacker can gain access to the user’s mails, forwarding rules, files, contacts, notes, profile, and other sensitive data and resources.
 
-    ![permissions](./media/incident-response-playbook-app-consent/Permissions.png)
+    :::image type="content" source="./media/incident-response-playbook-app-consent/Permissions.png" alt-text="permissions":::
 
 ## Finding signs of an attack
 
 1. Open the [Security & Compliance Center](https://protection.office.com/).
 2. Navigate to **Search** and select **Audit log search**.
-3. Search (all activities and all users) and enter the start date and end date if required, and then click **Search**.
-    ![auditlogsearch](./media/incident-response-playbook-app-consent/Auditlogsearch1.png)
+3. Search (all activities and all users) and enter the start date and end date if required, and then select **Search**.
 
-4. Click **Filter** results and in the **Activity** field, enter **Consent** to application.
-    ![auditlogsearch](./media/incident-response-playbook-app-consent/Auditlogsearch2.png)
+    :::image type="content" source="./media/incident-response-playbook-app-consent/Auditlogsearch1.png" alt-text="auditlogsearch":::
+
+4. Select **Filter** results and in the **Activity** field, enter **Consent** to application.
+
+    :::image type="content" source="./media/incident-response-playbook-app-consent/Auditlogsearch2.png" alt-text="auditlogsearch":::
 
 5. If you have activity under consent to grant, continue as directed below.
-6. Click on the result to see the details of the activity. Click **More Information** to get details of the activity.
+6. Select the result to see the details of the activity. Select **More Information** to get details of the activity.
 7. Check whether IsAdminContent is set to ‘True’.
 
-    **Note:** This process can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs.
+    >[!Note]
+    >This process can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs.
+    >
 
     The extent of time that an audit record is retained and is searchable in the audit log depends on your Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user. **If this value is true, it indicates that someone with Global Administrator access may have granted broad access to data. If this is unexpected, take immediate steps to confirm an attack.**
 
@@ -430,7 +442,7 @@ You can inventory apps for your users using the Azure Active Directory portal, P
 You can use the Azure Active Directory portal to see the list of apps to which any individual user has granted permissions.
 
 1. Sign in to the **Azure Portal** with administrative rights.
-2. Select the **Azure Active Directory** tab.
+2. Select the **Azure Active Directory** icon.
 3. Select **Users**.
 4. Select the user that you want to review.
 5. Select **Applications**.
@@ -462,11 +474,12 @@ After you have identified an application with illicit permissions, you have seve
 1. Navigate to the affected user in the **Azure Active Directory User** tab.
 2. Select **Applications**.
 
-    ![applications](./media/incident-response-playbook-app-consent/applications1.png)
+    :::image type="content" source="./media/incident-response-playbook-app-consent/applications1.png" alt-text="applications":::
 
 3. Select the illicit application.
-4. Click on **Remove**.
-    ![removeapp](./media/incident-response-playbook-app-consent/assignmentdetail.png)
+4. Select **Remove**.
+
+    :::image type="content" source="./media/incident-response-playbook-app-consent/assignmentdetail.png" alt-text="removeapp":::
 
 **You can use PowerShell to revoke the OAuth consent grant by following the steps in [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/remove-azureadoauth2permissiongrant)**.
 
@@ -476,23 +489,25 @@ First, run this command to gather information that you have in Azure AD, for per
 Get-ADOAuth2PermissionGrantoAuth
 ```
 
-The output is shown in the image below.
+Here's an example of the output.
 
 ![output](./media/incident-response-playbook-app-consent/output.png)
 
 **You can use PowerShell to revoke the Service App Role Assignment by following the steps in [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/remove-azureadoauth2permissiongrant)**.
 
+Here's an example.
+
 ```powershell
 Remove-AzureADOAuth2PermissionGrant -ObjectId "GbrSwpsCB0ar6c7N7PRvD1bNACUj4C9IspcKu5YkdoE"
 ```
 
-The output is shown in the image below.
+Here's an example of the output.
 
 ![output](./media/incident-response-playbook-app-consent/output2.png)
 
 You can also deactivate sign-in for the affected account altogether, which will in turn deactivate app access to data in that account. This option isn't ideal for the end user's productivity, but it can be a viable short-term remediation.
 
-![deactivateuser](./media/incident-response-playbook-app-consent/Testuser3.png)
+:::image type="content" source="./media/incident-response-playbook-app-consent/Testuser3.png" alt-text="deactivateuser":::
 
 ## Recommended defenses
 
@@ -507,7 +522,9 @@ To help prevent consent attacks from affecting Azure AD and Office 365, see the
 - This setting will have user implications and may not be applicable for an environment. If you are going to allow any consents, ensure the administrators approve the requests.
 - Allow consents for applications from verified publishers only and specific types of permissions classified as low impact.
 
-    **Note:** The above recommendations are suggested based on the most ideal, secure configurations. However, as security is a fine balance between functionalities and operations, the most secure configurations might cause additional overheads to administrators. It is a decision best made after consulting with your administrators.
+    >[!Note]
+    >The above recommendations are suggested based on the most ideal, secure configurations. However, as security is a fine balance between functionalities and operations, the most secure configurations might cause additional overheads to administrators. It is a decision best made after consulting with your administrators.
+    >
 
     **Configure risk-based step-up consent - Enabled by default if user consent to grants is enabled**
 - Risk-based step-up consent helps reduce user exposure to malicious apps that make illicit consent requests. If Microsoft detects a risky end-user consent request, the request will require a "step-up" to admin consent instead. This capability is enabled by **default**, but it will only result in a behavior change when **end-user consent is enabled**.
@@ -519,7 +536,7 @@ To help prevent consent attacks from affecting Azure AD and Office 365, see the
 >Any tasks that require administrator’s approval will have operational overhead. The "**Consent and permissions, User consent settings**" is in **Preview** currently. Once it is ready for general availability (GA), the "**Allow user consent from verified publishers, for selected permissions**" feature should reduce administrators’ overhead and it is recommended for most organizations.
 >
 
-![consent](./media/incident-response-playbook-app-consent/consentpermissions.png)
+:::image type="content" source="./media/incident-response-playbook-app-consent/consentpermissions.png" alt-text="consent":::
 
 **Educate your application developers to follow the trustworthy app ecosystem.**  
 To help developers build high-quality and secure integrations, we’re also announcing [public preview of the Integration Assistant in Azure AD app registrations.](https://docs.microsoft.com/azure/active-directory/develop/identity-platform-integration-checklist)
@@ -576,7 +593,7 @@ The content for this article has been sourced from the following resources:
 - [Detect and Remediate Illicit Consent Grants](https://docs.microsoft.com/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants)
 - [How and Why Azure AD Applications are Added](https://docs.microsoft.com/azure/active-directory/develop/active-directory-how-applications-are-added)
 - [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-- [AAD Config Documentor](https://github.com/microsoft/AADConnectConfigDocumenter)
+- [Azure AD Config Documentor](https://github.com/microsoft/AADConnectConfigDocumenter)
 - [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests)
 - [Get-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/get-azureadserviceprincipal)
 - [Build 2020: Fostering a secure and trustworthy app ecosystem for all users](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/build-2020-fostering-a-secure-and-trustworthy-app-ecosystem-for/ba-p/1257360)

@@ -53,7 +53,7 @@ Get-AdfsProperties
 
 ![adfs](./media/incident-response-playbook-password-spray/adfsproperties.png)
 
-The table below contains the auditing levels that are available:
+This table contains the auditing levels that are available.
 
 | **Audit level** | **PowerShell syntax** | **Description** |
 |-----------------|-----------------------|---------------------------------|

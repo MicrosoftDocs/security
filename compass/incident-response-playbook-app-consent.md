@@ -28,16 +28,16 @@ This article provides guidance on identifying and investigating app consent atta
 
 This article contains the following sections:
 
-- **Prerequisites:** This section covers the specific requirements you need to complete before starting the investigation, either on the customer side or for you as the investigator. For example, logging that should be turned on, roles and permissions required, among others.
-- **Workflow:** This section is a Visio chart of the logical flow that you should follow to perform this investigation.
-- **Checklist:** This section contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done or simply as a quality gate for yourself.
-- **Investigation steps:** This section includes a detailed step-by-step guidance for this specific investigation.
-- **Recovery:** This section contains high level steps on how to recover/mitigate from an Illicit Application Consent grant attack.
-- **References:** This section contains additional reading and reference materials from internal playbooks to website resources.
+- **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation, either on the customer side or for you as the investigator. For example, logging that should be turned on, roles and permissions required, among others.
+- **Workflow:** Shows the logical flow that you should follow to perform this investigation.
+- **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done or simply as a quality gate for yourself.
+- **Investigation steps:** Includes a detailed step-by-step guidance for this specific investigation.
+- **Recovery:** Contains high level steps on how to recover/mitigate from an Illicit Application Consent grant attack.
+- **References:** Contains additional reading and reference materials.
 
 ## Prerequisites
 
-This section contains details of items you need to perform an investigation for Application Consent Grants. Before starting the investigation, make sure you have read about the types of consent permissions explained in [Consent permission types](https://aka.ms/getazureadpermissions).
+Here are general settings and configurations you should complete to perform an investigation for Application Consent Grants. Before starting the investigation, make sure you have read about the types of consent permissions explained in [Consent permission types](https://aka.ms/getazureadpermissions).
 
 ### Customer data
 

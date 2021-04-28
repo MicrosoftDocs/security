@@ -28,14 +28,14 @@ This article provides guidance on identifying and investigating phishing attacks
 
 This article contains the following sections:
 
-- **Prerequisites:** This section covers the specific requirements you need to complete before starting the investigation, either on the customer side or for you as the investigator. For example, logging that should be turned on, roles and permissions required, among others.
-- **Workflow:** This section is a Visio chart of the logical flow that you should follow to perform this investigation.
-- **Checklist:** This section contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done or simply as a quality gate for yourself.
-- **Investigation steps:** This section includes a detailed step-by-step guidance for this specific investigation.
+- **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation, either on the customer side or for you as the investigator. For example, logging that should be turned on, roles and permissions required, among others.
+- **Workflow:** Shows the logical flow that you should follow to perform this investigation.
+- **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done or simply as a quality gate for yourself.
+- **Investigation steps:** Includes a detailed step-by-step guidance for this specific investigation.
 
 ## Prerequisites
 
-This section covers general settings and configurations you should complete before proceeding with the phishing investigation.
+Here are general settings and configurations you should complete before proceeding with the phishing investigation.
 
 ### Account details
 
@@ -206,16 +206,6 @@ Please follow the steps on [how to get the Exchange PowerShell installed with mu
 ## Checklist
 
 This checklist will help you evaluate your investigation process and verify whether you have completed all the steps during investigation:
-
-EXAMPLE CHECKLIST IN TABLE FORM
-
-| Completed | Task or question |
-|:-------|:-----|
-| ![Checkbox](./media/incident-response-playbook-phishing/checkbox.png) | Review Initial phishing email |
-| ![Checkbox](./media/incident-response-playbook-phishing/checkbox.png) | Get the list of users who got this email |
-| ![Checkbox](./media/incident-response-playbook-phishing/checkbox.png) | Get the latest Dates when the User had access to the mailbox |
-| ![Checkbox](./media/incident-response-playbook-phishing/checkbox.png) | Is delegated Access configured on the mailbox? |
-|
 
 - Review Initial phishing email
 - Get the list of users who got this email
@@ -583,6 +573,7 @@ The tasks here are similar to the previous investigation step: <a name="clickli
 Check the various logins that happened with the account.
 
 <h2 id="federated-scenario"></h2>
+
 ### Federated scenario
 
 The audit log settings and events differ based on the operating system (OS) Level and the Active Directory Federation Services (ADFS) Server version installed at the customer.

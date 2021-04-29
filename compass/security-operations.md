@@ -2,10 +2,11 @@
 title: Security operations in Azure | Microsoft Docs
 description: Detect, respond, and recover the system when it's attacked.
 author: MarkSimos
-ms.date: 07/09/2019
+ms.author: josephd
+localization_priority: Normal
+manager: dansimp
 ms.topic: article
-ms.service: security
-ms.subservice: cloud-design-principles
+ms.prod: m365-security
 ---
 
 # Security operations
@@ -127,14 +128,11 @@ Splunk, or QRadar), you should leverage native detections and controls such as
 
 ## Prioritize alert and log integration
 
-Ensure that you are integrating critical security alerts and logs into SIEMs
-without introducing a high volume of low value data.
+Ensure that you are integrating critical security alerts and logs into SIEMs without introducing a high volume of low value data.
 
-Introducing too much low value data can increase SIEM cost, increase noise and
-false positives, and lower performance.
+Introducing too much low value data can increase SIEM cost, increase noise and false positives, and lower performance.
 
-The data you collect should be focused on supporting one or more of these
-operations activities:
+The data you collect should be focused on supporting one or more of these operations activities:
 
 -   **Alerts** (detections from existing tools or data required for generating
     custom alerts)
@@ -143,10 +141,18 @@ operations activities:
 
 -   Proactive **hunting** activities
 
-Integrating more data can allow you to enrich alerts with additional context
-that enable rapid response and remediation (filter false positives, and elevate
-true positives, etc.), but collection is not detection. If you don’t have a
-reasonable expectation that the data will provide value (for example, high volume of firewall denies events), you may deprioritize integration of these events.
+Integrating more data can allow you to enrich alerts with additional context that enable rapid response and remediation (filter false positives, and elevate
+true positives, etc.), but collection is not detection. If you don’t have a reasonable expectation that the data will provide value (for example, high volume of firewall denies events), you may deprioritize integration of these events.
 
-## Next steps
+## Incident response playbooks
+
+Examine guidance for identifying and investigating these types of attacks:
+
+- [Phishing](incident-response-playbook-phishing.md)
+- [Password spray](incident-response-playbook-password-spray.md)
+- [App consent grant](incident-response-playbook-app-consent.md)
+
+
+## Additional resources
+
 For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

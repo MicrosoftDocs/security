@@ -2,10 +2,11 @@
 title: Identity and Access Management in Azure | Microsoft Docs
 description: Manage access based on identity authentication and authorization 
 author: MarkSimos
+ms.author: josephd
 ms.date: 04/20/2021
 ms.topic: article
 ms.service: security
-ms.subservice: cloud-design-principles
+ms.prod: m365-security
 ---
 
 # Identity and access management
@@ -114,7 +115,7 @@ For Azure, enable modern protections in Azure AD with these steps:
 
        -   **Azure AD Identity Protection** - Risk events are also part of the reporting capabilities of [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
 
-Use the [Identity Protection risk events API](https://docs.microsoft.com/graph/api/resources/identityprotection-root?view=graph-rest-beta) to gain programmatic access to security detections using Microsoft Graph.
+Use the [Identity Protection risk events API](https://docs.microsoft.com/graph/api/resources/identityprotection-root) to gain programmatic access to security detections using Microsoft Graph.
 
 ## Cross-platform credential management
 

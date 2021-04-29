@@ -267,7 +267,7 @@ Unusual spikes in activity are key indicators through Azure AD Health Connect (a
 
 Risky IP will alert when the customized threshold has been reached for bad passwords in an hour and bad password count in a day as well as extranet lockouts.
 
-![riskyipreport](./media/incident-response-playbook-password-spray/RiskyIPReport.jpg)
+![Example of risky IP report data](./media/incident-response-playbook-password-spray/RiskyIPReport.jpg)
 
 *Risky IP report data*
 
@@ -281,9 +281,9 @@ The details of failed attempts are available in the tabs **IP address** and **ex
 
 Azure Identity Protection is an Azure AD Premium P2 feature that has a password-spray detection risk alert and search feature that you can utilize to get additional information or set up automatic remediation.
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/Detectpwd.png" alt-text="detectpwd":::
+:::image type="content" source="./media/incident-response-playbook-password-spray/Detectpwd.png" alt-text="Example of password spray attack":::
 
-*Details of password spray attack*
+*Details of a password spray attack*
 
 ### Low and slow attack indicators
 
@@ -466,7 +466,7 @@ Most attacks use legacy authentication. There are a number of ways to determine 
 
 1. Navigate to **New named locations**.
 
-    :::image type="content" source="./media/incident-response-playbook-password-spray/Namedlocation.jpg" alt-text="namedlocation"::: 
+    :::image type="content" source="./media/incident-response-playbook-password-spray/Namedlocation.jpg" alt-text="Example of a new named location"::: 
 
 2. Create a CA policy to target all applications and block for this named location only.
 
@@ -521,13 +521,13 @@ For more information, see [how to defend against password spray attacks](https:/
 
 Tag the IP addresses in MCAS to receive alerts related to future use:
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/IPaddresstag.jpg" alt-text="ipaddresstag"::: 
+:::image type="content" source="./media/incident-response-playbook-password-spray/IPaddresstag.jpg" alt-text="Example of tagging an IP address"::: 
 
 *Tagging IP addresses*
 
 In MCAS, “tag” IP address for the IP scope and set up an alert for this IP range for future reference and accelerated response.
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/ipaddressalert.png" alt-text="ipaddressalert"::: 
+:::image type="content" source="./media/incident-response-playbook-password-spray/ipaddressalert.png" alt-text="Example of setting up an IP address alert"::: 
 
 *Setting alerts for a specific IP address*
 
@@ -539,7 +539,7 @@ Depending on your organization needs, you can configure alerts.
 
 Configure the threshold and alerts in ADFS Health Connect and Risky IP portal.
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/thresholdsettings.png" alt-text="threshold"::: 
+:::image type="content" source="./media/incident-response-playbook-password-spray/thresholdsettings.png" alt-text="Example of configuring threshold settings"::: 
 
 *Configure threshold settings*
 

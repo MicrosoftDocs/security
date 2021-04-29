@@ -353,12 +353,12 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
 
     The **column headers** for output are shown in this image.
 
-    ![columnheaders](./media/incident-response-playbook-app-consent/columnheaders.png)
+    ![Example of column headers](./media/incident-response-playbook-app-consent/columnheaders.png)
 
 7. In the **ConsentType** column **(G),** search for the value **AllPrinciples**. The **AllPrincipals** permission allows the client application to access everyone's content in the tenancy. Native Microsoft 365 applications need this permission to work correctly. ***Every non-Microsoft application with this permission should be reviewed carefully***.
 
 8. In the **Permission** column **(F)**, review the permissions that each delegated application has. Look for **Read** and **Write** permission or __*. All__ permission, and review these carefully because they may not be appropriate.
-![columnf](./media/incident-response-playbook-app-consent/columnf.png)
+![Example of Permission column F](./media/incident-response-playbook-app-consent/columnf.png)
 
     >[!Note]
     >Review the specific users that have consents granted. If high profile or high impact users have inappropriate consents granted, you should investigate further.
@@ -366,17 +366,17 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
 
 9. In the **ClientDisplayName** column **(C)**, look for apps that seem suspicious, such as:
     - Apps with misspelled names
-        ![misspeltnames](./media/incident-response-playbook-app-consent/misspeltnames.png)
+        ![Example of a misspelled name](./media/incident-response-playbook-app-consent/misspeltnames.png)
 
     - Unusual or bland names
-        ![unusualnames](./media/incident-response-playbook-app-consent/boringnames.png)
+        ![Example of an unusual name](./media/incident-response-playbook-app-consent/boringnames.png)
 
     - Hacker-sounding names. You must review these names carefully.
-        ![hackernames](./media/incident-response-playbook-app-consent/hackernames.png)
+        ![Example of a hacker name](./media/incident-response-playbook-app-consent/hackernames.png)
 
-**Example Output:** AllPrincipal and read write all. These applications did not have anything suspicious like bland names and were using MS graph. This was a real scenario (sanitized for demonstration) and these all fleshed out to be valid. However, perform research and determine the purpose of the applications. Validate with the CX if they are aware of this scenario and the actual permission this application has on the tenant, as shown in this example.
+**Example Output:** AllPrincipals and read write all. Applications may not have anything suspicious like bland names and are using MS graph. However, perform research and determine the purpose of the applications and the actual permissions the applications have in the tenant, as shown in this example.
 
-![exampleoutput](./media/incident-response-playbook-app-consent/Exampleoutput.png)
+![Example of applications with the AllPrincipals ConsentType](./media/incident-response-playbook-app-consent/Exampleoutput.png)
 
 Here are some useful tips to review information security policy (ISP) investigations:
 
@@ -405,7 +405,7 @@ While [each attack tends to vary, the core attack techniques are](https://attac
 - The access token is used to make API calls on behalf of the user.
 - If the user accepts, the attacker can gain access to the user’s mails, forwarding rules, files, contacts, notes, profile, and other sensitive data and resources.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/Permissions.png" alt-text="permissions":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/Permissions.png" alt-text="Example of permissions request":::
 
 ## Finding signs of an attack
 
@@ -413,11 +413,11 @@ While [each attack tends to vary, the core attack techniques are](https://attac
 2. Navigate to **Search** and select **Audit log search**.
 3. Search (all activities and all users) and enter the start date and end date if required, and then select **Search**.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/Auditlogsearch1.png" alt-text="auditlogsearch":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/Auditlogsearch1.png" alt-text="Example of an audit log search":::
 
 4. Select **Filter** results and in the **Activity** field, enter **Consent** to application.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/Auditlogsearch2.png" alt-text="auditlogsearch":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/Auditlogsearch2.png" alt-text="Example of filtering an audit log search":::
 
 5. If you have activity under consent to grant, continue as directed below.
 6. Select the result to see the details of the activity. Select **More Information** to get details of the activity.
@@ -495,7 +495,7 @@ Get-ADOAuth2PermissionGrantoAuth
 
 Here's an example of the output.
 
-![output](./media/incident-response-playbook-app-consent/output.png)
+![Example of the Get-ADOAuth2PermissionGrantoAuth command output](./media/incident-response-playbook-app-consent/output.png)
 
 **You can use PowerShell to revoke the Service App Role Assignment by following the steps in [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/remove-azureadoauth2permissiongrant)**.
 
@@ -507,7 +507,7 @@ Remove-AzureADOAuth2PermissionGrant -ObjectId "GbrSwpsCB0ar6c7N7PRvD1bNACUj4C9Is
 
 Here's an example of the output.
 
-![output](./media/incident-response-playbook-app-consent/output2.png)
+![Example of the Remove-AzureADOAuth2PermissionGrant command output](./media/incident-response-playbook-app-consent/output2.png)
 
 You can also deactivate sign-in for the affected account altogether, which will in turn deactivate app access to data in that account. This option isn't ideal for the end user's productivity, but it can be a viable short-term remediation.
 

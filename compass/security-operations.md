@@ -7,6 +7,7 @@ localization_priority: Normal
 manager: dansimp
 ms.topic: article
 ms.service: security
+ms.prod: m365-security
 ---
 
 # Security operations

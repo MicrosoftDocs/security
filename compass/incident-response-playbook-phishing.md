@@ -553,16 +553,16 @@ You can investigate these events using Microsoft Defender for Endpoint.
     This is the best-case scenario, because you can use our threat intelligence and automated analysis to help your investigation. For more details, see [how to investigate alerts in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-alerts). 
 
     The **Alert process tree** takes alert triage and investigation to the next level, displaying the aggregated alerts and surrounding evidences that occurred within the same execution context and time period.  
-    ![alertprocesstree](./media/incident-response-playbook-phishing/alertprocesstree.png)
+    ![Example of the alert process tree](./media/incident-response-playbook-phishing/alertprocesstree.png)
      
 3.  **Windows-based client devices**  
     Make sure you have enabled the [**Process Creation Events**](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4688) option. Ideally, you should also enable [command-line Tracing Events](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing).
 
     On Windows clients, which have the above-mentioned Audit Events enabled prior to the investigation, you can check Audit Event 4688 and determine the time when the email was delivered to the user:
 
-    ![event properties](./media/incident-response-playbook-phishing/eventproperties.png)
+    ![Example of Audit Event 4688](./media/incident-response-playbook-phishing/eventproperties.png)
 
-    ![event properties](./media/incident-response-playbook-phishing/eventproperties1.png)
+    ![Another example of Audit Event 4688](./media/incident-response-playbook-phishing/eventproperties1.png)
 
 ### On what endpoint was the email opened?
 
@@ -624,7 +624,7 @@ For more details, see [auditing enhancements to ADFS in Windows server](https://
 
 If you have Azure AD Connect Health installed, you should also look into the Risky IP report. The failed sign-in activity client IP addresses are aggregated through Web Application proxy servers. Each item in the Risky IP report shows aggregated information about failed AD FS sign-in activities that exceed the designated threshold.
 
-:::image type="content" source="./media/incident-response-playbook-phishing/timestamp.png" alt-text="timestamp":::
+:::image type="content" source="./media/incident-response-playbook-phishing/timestamp.png" alt-text="Example of the risky IP report":::
 
 For more details, see [Risky IP report](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip).
 
@@ -636,9 +636,9 @@ For the actual audit events, you need to look at the Security events logs and yo
 
 **Event ID 411** - *SecurityTokenValidationFailureAudit Token* validation failed. See inner exception for more details.
 
-![tokenvalidation](./media/incident-response-playbook-phishing/tokenvalidation.png)
+![Example of an event 411](./media/incident-response-playbook-phishing/tokenvalidation.png)
 
-![event](./media/incident-response-playbook-phishing/Event412.png)
+![Example of an event 412](./media/incident-response-playbook-phishing/Event412.png)
 
 You may need to correlate the Event with the corresponding Event ID 501.
 
@@ -654,9 +654,9 @@ Example for Event ID 1203:
 
 *Event ID 1203 FreshCredentialFailureAudit The Federation Service failed to validate a new credential. See XML for failure details.*
 
-![event1203](./media/incident-response-playbook-phishing/event1203.png)
+![Example of an event 1203](./media/incident-response-playbook-phishing/event1203.png)
 
-![event4624](./media/incident-response-playbook-phishing/Event4624.png)
+![Example of an event 4624](./media/incident-response-playbook-phishing/Event4624.png)
 
 To get the full list of ADFS Event ID per OS Level, refer to [GetADFSEventList](https://adfshelp.microsoft.com/AdfsEventViewer/GetAdfsEventList).
 
@@ -670,7 +670,7 @@ Check the Azure AD sign-in logs for the user(s) you are investigating.
 
 In the Azure AD portal, navigate to the [Sign-ins](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen and add/modify the display filter for the timeframe you found in the previous investigation steps as well as add the user name as a filter, as shown in this image.
 
-:::image type="content" source="./media/incident-response-playbook-phishing/DisplayFilter.png" alt-text="displayfilter":::
+:::image type="content" source="./media/incident-response-playbook-phishing/DisplayFilter.png" alt-text="Example of a display filter":::
 
 You can also search using Graph API. For example, filter on **User properties** and get **lastSignInDate** along with it. Search for a specific user to get the last signed in date for this user.
 For example, `https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Dhanyah')&$select=displayName,signInActivity`
@@ -695,7 +695,7 @@ Based on the source IP addresses that you found in the Azure AD sign-in logs or 
 
 For a managed scenario, you should start looking at the sign-in logs and filter based on the source IP address:
 
-:::image type="content" source="./media/incident-response-playbook-phishing/managedusersip.png" alt-text="manageduseripaddress]":::
+:::image type="content" source="./media/incident-response-playbook-phishing/managedusersip.png" alt-text="Example of a managed user IP address]":::
 
 Or you can use this command from the AzureADIncidentResponse PowerShell module:
 
@@ -707,15 +707,15 @@ When you look into the results list, navigate to the **Device info** tab. Depend
 
 - Example 1 - Un-managed device (BYOD):
 
-  :::image type="content" source="./media/incident-response-playbook-phishing/unmanageddevice.png" alt-text="unmanageddevice":::
+  :::image type="content" source="./media/incident-response-playbook-phishing/unmanageddevice.png" alt-text="Example of a unmanaged device":::
 
 - Example 2 - Managed device (Azure AD join or hybrid Azure AD join):
 
-  :::image type="content" source="./media/incident-response-playbook-phishing/Manageddevice.png" alt-text="manageddevice":::
+  :::image type="content" source="./media/incident-response-playbook-phishing/Manageddevice.png" alt-text="Example of a managed device":::
 
 Check for the DeviceID if one is present. You should also look for the OS and the browser or *UserAgent* string.
 
-:::image type="content" source="./media/incident-response-playbook-phishing/DeviceID.png" alt-text="deviceid":::
+:::image type="content" source="./media/incident-response-playbook-phishing/DeviceID.png" alt-text="Example of a device ID":::
 
 Record the *CorrelationID*, *Request ID* and *timestamp*. You should use *CorrelationID* and *timestamp* to correlate your findings to other events.
 
@@ -753,7 +753,7 @@ ObjectId                              |   AppId                                |
 
 With this information, you can search in the Enterprise Applications portal. Navigate to **All Applications** and search for the specific AppID.
 
-:::image type="content" source="./media/incident-response-playbook-phishing/enterpriseapps.png" alt-text="enterpriseapps":::
+:::image type="content" source="./media/incident-response-playbook-phishing/enterpriseapps.png" alt-text="Example of an application ID":::
 
 ## Additional incident response playbooks
 

@@ -76,7 +76,7 @@ Disabling legacy authentication can be difficult, as some users may not want to 
 
 ## No on-premises admin accounts in cloud identity providers
 
-**Best practice:** Don’t synchronize accounts with the highest privilege access to on premises resources as you synchronize your enterprise identity systems with cloud directories.
+**Best practice:** Don’t synchronize accounts with the highest privilege access to on-premises resources as you synchronize your enterprise identity systems with cloud directories.
 
 This mitigates the risk of an adversary pivoting to full control of on-premises assets following a successful compromise of a cloud account. This helps contain the scope of an incident from growing significantly.
 
@@ -149,6 +149,10 @@ People are a critical part of your defense, so ensure they have the knowledge an
 risk.
 
 You can use [Attack Simulator in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator) or any number of third-party offerings.
+
+## Next step
+
+Review identity and device access [capabilities](identity-capabilities.md).
 
 ## See also
 

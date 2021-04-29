@@ -501,7 +501,7 @@ If data has been breached, then you should inform additional agencies, such as t
 4. [Block legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication) authentication if it is being used (this action, however, could impact business).
 5. [Enable MFA](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa) if it is not already done.
 6. [Enable Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) for the user risk and sign-in risk
-7. Check the data that has been compromised (emails, SharePoint, OneDrive, apps). See how to use the [activity filter on MCAS](https://docs.microsoft.com/cloud-app-security/activity-filters).
+7. Check the data that has been compromised (emails, SharePoint, OneDrive, apps). See how to use the [activity filter in MCAS](https://docs.microsoft.com/cloud-app-security/activity-filters).
 8. Maintain password hygiene. For more information, see [Azure AD password protection](https://www.microsoft.com/research/publication/password-guidance/).
 9. You can also refer to [ADFS Help](https://adfshelp.microsoft.com/TroubleshootingGuides/Workflow/a73d5843-9939-4c03-80a1-adcbbf3ccec8).
 
@@ -525,7 +525,7 @@ Tag the IP addresses in MCAS to receive alerts related to future use:
 
 *Tagging IP addresses*
 
-In the MCAS, “tag” IP address for the IP scope and set up an alert for this IP range for future reference and accelerated response.
+In MCAS, “tag” IP address for the IP scope and set up an alert for this IP range for future reference and accelerated response.
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/ipaddressalert.png" alt-text="ipaddressalert"::: 
 

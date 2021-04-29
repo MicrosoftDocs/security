@@ -486,7 +486,7 @@ When viewing an email header, it is recommended to copy and paste the header inf
 
 - **Authentication-Results:** You can find what your email client authenticated when the email was sent. It will provide you with SPF and DKIM authentication.
 
-- **Originating IP:** The original IP can be used to determine if the IP is blacklisted and to obtain the geo location.
+- **Originating IP:** The original IP can be used to determine if the IP is blocklisted and to obtain the geo location.
 
 - **Spam Confidence Level (SCL):** This determines the probability of an incoming email is spam.  
     **SCL Rating:**

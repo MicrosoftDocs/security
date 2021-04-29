@@ -27,6 +27,8 @@
           href: security-operations-capabilities.md
         - name: Incident response playbooks
           items:
+            - name: Introduction
+              href: incident-response-playbooks.md
             - name: Phishing
               href: incident-response-playbook-phishing.md
             - name: Password spray

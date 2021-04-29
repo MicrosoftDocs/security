@@ -80,11 +80,7 @@ Get-Mailbox -Identity "johndoe" | Set-Mailbox -AuditEnabled $true
 
 ### Message tracing
 
-Message tracing logs are invaluable components to trace message of interest in order to understand the original source of the message as well as the intended recipients. You can use the *MessageTrace* functionality through the Microsoft [Exchange Online portal](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results) or the [PowerShell cmdlet:](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-messagetrace)
-
-```powershell
-Get-Message Trace
-```
+Message tracing logs are invaluable components to trace message of interest in order to understand the original source of the message as well as the intended recipients. You can use the *MessageTrace* functionality through the Microsoft [Exchange Online portal](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results) or the [Get-MessageTrace PowerShell cmdlet](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-messagetrace).
 
 Several components of the *MessageTrace* functionality are self-explanatory but *Message-ID* is a unique identifier for an email message and requires thorough understanding. To obtain the *Message-ID* for an email of interest we need to examine the raw email headers.
 
@@ -132,7 +128,7 @@ If you have Microsoft Defender for Endpoint (MDE) enabled and rolled out already
 
 ### Hardware requirements
 
-Nothing in particular; however, the system should be able to run PowerShell.
+The system should be able to run PowerShell.
 
 ### Software requirements
 
@@ -142,23 +138,24 @@ The following PowerShell modules are required for the investigation of the cloud
 - Azure AD preview in some cases
 - MS Online for Office 365
 - Exchange connecting to Exchange for utilizing the unified audit log searches (inbox rules, message traces, forwarding rules, mailbox delegations, among others)
+- Azure AD Incident Response
 
-When you use Azure AD commands that are not part of the built-in modules in Azure, you need the MSOnline module - which is the same module that is used for Office 365. To work with Azure AD (which contains a set of functions) from PowerShell, import the Azure AD module.
+When you use Azure AD commands that are not part of the built-in modules in Azure, you need the MSOnline module - which is the same module that is used for Office 365. To work with Azure AD (which contains a set of functions) from PowerShell, install the Azure AD module.
 
 ## Installing various PowerShell modules
 
-### Install Azure AD PowerShell module
+### Install the Azure AD PowerShell module
 
 To install the Azure AD PowerShell module, follow these steps:
 
 1. Run the **Windows PowerShell** app with elevated privileges (run as administrator).
 
-2. To allow PowerShell to run signed scripts, run the following and press **Enter**:
+2. To allow PowerShell to run signed scripts, run the following command:
     ```powershell
     Set-ExecutionPolicy RemoteSigned
     ```
 
-3. To install the Azure AD module, run the following command and press **Enter**:
+3. To install the Azure AD module, run the following command:
 
     ```powershell
     Install-Module -Name AzureAD -Verbose
@@ -168,18 +165,18 @@ To install the Azure AD PowerShell module, follow these steps:
     >If you are prompted to install modules from an untrusted repository, type **Y** and press **Enter**.
     >
 
-### Install MSOnline PowerShell module 
+### Install the MSOnline PowerShell module 
 
 To install the MSOnline PowerShell module, follow these steps:
 
 1. Run the **Windows PowerShell** app with elevated privileges (run as administrator).
-2. To allow PowerShell to run signed scripts, run the following command and press **Enter**:
+2. To allow PowerShell to run signed scripts, run the following command:
 
     ```powershell
     Set-ExecutionPolicy RemoteSigned
     ```
 
-3. To install the MSOnline module, run the following command and press **Enter**:
+3. To install the MSOnline module, run the following command:
 
     ```powershell
     Install-Module -Name MSOnline -Verbose
@@ -189,11 +186,26 @@ To install the MSOnline PowerShell module, follow these steps:
     >If you are prompted to install modules from an untrusted repository, type **Y** and press **Enter**.
     >
 
-### Install Exchange PowerShell module
+### Install the Exchange PowerShell module
 
 Please follow the steps on [how to get the Exchange PowerShell installed with multi-factor authentication (MFA)](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell). You must have access to a tenant, so you can download the Exchange Online PowerShell module from the **Hybrid** tab in the Exchange admin center (EAC).
 
  Once you have configured the required settings, you can proceed with the investigation.
+
+### Install the Azure AD Incident Response module
+
+The new [AzureADIncidentResponse](https://www.powershellgallery.com/packages/AzureADIncidentResponse/4.0) PowerShell module provides rich filtering capabilities for Azure AD incidents. Use these steps to install it.
+
+1. Run the **Windows PowerShell** app with elevated privileges (run as administrator).
+2. Use this command.
+
+    ```powershell
+    Install-Module -Name AzureADIncidentResponse -RequiredVersion 4.0
+    ```
+
+    >[!Note]
+    >If you are prompted to install modules from an untrusted repository, type **Y** and press **Enter**.
+    >
 
 ## Workflow
 
@@ -267,7 +279,7 @@ For more details, see how to [search for and delete messages in your organizatio
 
 ###  Use the search-mailbox cmdlet
 
-You can use the *search-mailbox* cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.  
+You can use the `Search-mailbox` cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.  
 
 The following example query searches Janes Smith mailbox for an email that contains the phrase Invoice in the subject and copies the results to IRMailbox in a folder named "Investigation."
 
@@ -285,13 +297,13 @@ Get-Mailbox | Search-Mailbox -SearchQuery 'InvoiceUrgent vote' -TargetMailbox "I
 
 See how to check whether [delegated access is configured on the mailbox](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/DumpDelegatesandForwardingRules.ps1).
 
-To create this report, run a small PowerShell script that will get a list of all your users. Then, use the Get-MailboxPermission cmdlet to create a CSV file of all the mailbox delegates in your tenancy.
+To create this report, run a small PowerShell script that gets a list of all your users. Then, use the Get-MailboxPermission cmdlet to create a CSV file of all the mailbox delegates in your tenancy.
 
 Look for unusual names or permission grants. If you see something unusual, contact the mailbox owner to check whether it is legitimate.
 
 ### Are there forwarding rule(s) configured for the mailbox?
 
-In this step, you need to check each mailbox that was previously identified for forwarding rules or inbox rules. For forwarding rules, use the following PowerShell cmdlet:
+In this step, you need to check each mailbox that was previously identified for forwarding rules or inbox rules. For forwarding rules, use the following PowerShell command:
 
 ```powershell
 Get-Mailbox | select UserPrincipalName,ForwardingSmtpAddress,DeliverToMailboxAndForward | Export-csv c:\temp\Forwarding.csv -NoTypeInformation
@@ -313,7 +325,7 @@ Additionally, you can also utilize the *Inbox and Forwarding Rules* report in th
 
 ### Review inbox rules
 
-Additionally, check for the removal of Inbox rules. As an example, use the following PowerShell cmdlet:
+Additionally, check for the removal of Inbox rules. As an example, use the following PowerShell commmand:
 
 ```powershell
 Search-UnifiedAuditLog -startDate 12/16/2019 -EndDate 03/16/2020 -Operations Remove-InboxRule |Export-CSV NoTypeInformation -Path c:\temp\removedInboxRules.csv
@@ -336,7 +348,7 @@ Look for new rules, or rules that have been modified to redirect the mail to ext
 
 In the Office 365 security & compliance center, navigate to [unified audit log](https://protection.office.com/#/unifiedauditlog). Under **Activities** in the drop-down list, you can filter by **Exchange Mailbox Activities**.
 
-The capability to list compromised users is available in the [M365 security & compliance center](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-email-security-reports#compromised-users-report-new). 
+The capability to list compromised users is available in the [Microsoft 365 security & compliance center](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-email-security-reports#compromised-users-report-new). 
 
 This report shows activities that could indicate a mailbox is being accessed illicitly. It includes created or received messages, moved or deleted messages, copied or purged messages, sent messages using send on behalf or send as, and all mailbox sign ins. The data includes date, IP address, user, activity performed, the item affected, and any extended details.
 
@@ -356,7 +368,7 @@ There are two main cases here:
 
 #### Microsoft Exchange Online
 
-Use the search-mailbox cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.  
+Use the `Search-Mailbox` cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.  
 The following example query searches Janes Smith’s mailbox for an email that contains the phrase *Invoice* in the subject and copies the results to *IRMailbox* in a folder named *Investigation.*
 
 ```powershell
@@ -371,7 +383,7 @@ Get-Mailbox | Search-Mailbox -SearchQuery 'InvoiceUrgent vote' -TargetMailbox "I
 
 #### Exchange on-premises
 
-Use the Get-MessageTrackingLog cmdlet to search for message delivery information stored in the message tracking log.
+Use the `Get-MessageTrackingLog` cmdlet to search for message delivery information stored in the message tracking log. Here's an example:
 
 ```powershell
 Get-MessageTrackingLog -Server Mailbox01 -Start "03/13/2018 09:00:00" -End "03/15/2018 17:00:00" -Sender "john@contoso.com"
@@ -385,7 +397,7 @@ There are two main cases here: You have Exchange Online or Hybrid Exchange with 
 
 #### Exchange Online
 
-Use the *search-mailbox* cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.
+Use the `Search-Mailbox` cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.
 
 This sample query searches all tenant mailboxes for an email that contains the subject *InvoiceUrgent* in the subject and copies the results to *IRMailbox* in a folder named *Investigation*.
 
@@ -395,7 +407,7 @@ Get-Mailbox | Search-Mailbox -SearchQuery "Subject:InvoiceUrgent" -TargetMailbox
 
 #### Exchange on-premises
 
-Use the *Get-MessageTrackingLog* cmdlet to search for message delivery information stored in the message tracking log.
+Use the `Get-MessageTrackingLog` cmdlet to search for message delivery information stored in the message tracking log. Here's an example:
 
 ```powershell
 Get-MessageTrackingLog -Server Mailbox01 -Start "03/13/2018 09:00:00" -End "03/15/2018 17:00:00" -MessageSubject "InvoiceUrgent"
@@ -405,18 +417,18 @@ Get-MessageTrackingLog -Server Mailbox01 -Start "03/13/2018 09:00:00" -End "03/1
 
 You have two options for Exchange Online:
 
-1. Use the classic *Search-Mailbox cmdlet*, or
-2. Use the PowerShell cmdlet in the Microsoft 365 security & compliance center.
+1. Use the classic `Search-Mailbox` cmdlet
+2. Use the `New-ComplianceSearch` cmdlet
 
 #### Exchange Online
 
-Use the *Search-Mailbox* cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.
+Use the `Search-Mailbox` cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox. Here's an example:
 
 ```powershell
 Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
-The other option is to use the PowerShell cmdlet in the security & compliance center.
+The other option is to use the `New-ComplianceSearch` cmdlet. Here's an example:
 
 ```powershell
 New-ComplianceSearch -Name "Investigation" -ExchangeLocation "Research Department" -ContentMatchQuery "from:pilar@contoso.com AND hasattachment:true"
@@ -424,14 +436,14 @@ New-ComplianceSearch -Name "Investigation" -ExchangeLocation "Research Departmen
 
 #### Exchange on-premises
 
-Use the *Search-Mailbox* cmdlet to search for message delivery information stored in the message tracking log.
+Use the `Search-Mailbox` cmdlet to search for message delivery information stored in the message tracking log. Here's an example:
 
 ```powershell
 Search-Mailbox -Identity "Jane Smith"-SearchQuery AttachmentNames:attachment_name -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
 >[!Note]
->For Exchange 2013, you need CU12 to have this [*cmdlet*](https://support.microsoft.com/topic/search-mailbox-cmdlet-with-attachment-keyword-lists-all-items-that-contain-the-query-string-of-attachment-b0422602-9f14-e85a-434f-81a14549574d) running.
+>For Exchange 2013, you need CU12 to have this [cmdlet](https://support.microsoft.com/topic/search-mailbox-cmdlet-with-attachment-keyword-lists-all-items-that-contain-the-query-string-of-attachment-b0422602-9f14-e85a-434f-81a14549574d) running.
 >
 
 ### Was there payload in the attachment?
@@ -603,7 +615,7 @@ You may want to also download the ADFS PowerShell modules from:
 
 #### Server 2016 and newer
 
-By default, ADFS in Windows Server 2016 has basic auditing enabled. With basic auditing, administrators can see five or less events for a single request. But you can raise or lower the auditing level by using the PowerShell cmdlet:
+By default, ADFS in Windows Server 2016 has basic auditing enabled. With basic auditing, administrators can see five or less events for a single request. But you can raise or lower the auditing level by using this command:
 
 ```powershell
 Set-AdfsProperties -AuditLevel Verbose
@@ -669,7 +681,7 @@ Or you can use the PowerShell command `Get-AzureADUserLastSignInActivity` to get
 Get-AzureADUserLastSignInActivity -TenantId 536279f6-1234-2567-be2d-61e352b51eef -UserObjectId 69447235-0974-4af6-bfa3-d0e922a92048 -CsvOutput
 ```
 
-Or you can use the new [AzureADIncidentResponse](https://www.powershellgallery.com/packages/AzureADIncidentResponse/4.0) PowerShell module where you have rich filtering capabilities. Here's an example:
+Or you can use this command from the AzureADIncidentResponse PowerShell module:
 
 ```powershell
 Get-AzureADIRSignInDetail -UserId johcast@Contoso.com -TenantId 536279f6-1234-2567-be2d-61e352b51eef -RangeFromDaysAgo 29 -RangeToDaysAgo 3
@@ -685,7 +697,7 @@ For a managed scenario, you should start looking at the sign-in logs and filter 
 
 :::image type="content" source="./media/incident-response-playbook-phishing/managedusersip.png" alt-text="manageduseripaddress]":::
 
-Or you can use the AzureADIncidentResponse PowerShell module.
+Or you can use this command from the AzureADIncidentResponse PowerShell module:
 
 ```powershell
 Get-AzureADIRSignInDetail -IpAddress 1.2.3.4 -TenantId 536279f6-1234-2567-be2d-61e352b51eef -RangeFromDaysAgo 29 -RangeToDaysAgo 3 -OutGridView

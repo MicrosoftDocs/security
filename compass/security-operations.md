@@ -150,7 +150,7 @@ Examine guidance for identifying and investigating these types of attacks:
 
 - [Phishing](incident-response-playbook-phishing.md)
 - [Password spray](incident-response-playbook-password-spray.md)
-- [App consent](incident-response-playbook-app-consent.md)
+- [App consent grant](incident-response-playbook-app-consent.md)
 
 
 ## Additional resources

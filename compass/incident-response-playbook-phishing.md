@@ -48,7 +48,7 @@ Before proceeding with the investigation, it is recommended that you have the us
 Verify *mailbox auditing on by default* is turned on. To make sure that mailbox auditing is turned on for your organization, run the following command in Microsoft Exchange Online PowerShell:
 
 ```powershell
-Get-OrganizationConfig | Format-List AuditDisabled`
+Get-OrganizationConfig | Format-List AuditDisabled
 ```
 
 The value **False** indicates that mailbox auditing on by default is enabled for the organization. This *on by default* organizational value overrides the mailbox auditing setting on specific mailboxes. For example, if mailbox auditing is disabled for a mailbox (the *AuditEnabled* property is **False** on the mailbox), the default mailbox actions will still be audited for the mailbox, because mailbox auditing on by default is enabled for the organization.
@@ -213,7 +213,7 @@ The new [AzureADIncidentResponse](https://www.powershellgallery.com/packages/Azu
 ![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)
 --> 
 
-[![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](https://github.com/MicrosoftDocs/security/raw/public/compass/media/incident-response-playbook-phishing/PI_flow.png)
+[![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-phishing/PI_flow.png)
 
 ## Checklist
 

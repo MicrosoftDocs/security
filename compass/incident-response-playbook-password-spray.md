@@ -130,7 +130,7 @@ You can also use the Spunk platform to set up alerts.
 ![workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)
 --> 
 
-[![Password spray investigation workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)](https://github.com/MicrosoftDocs/security/raw/public/compass/media/incident-response-playbook-password-spray/Pwdsprayflow.png)
+[![Password spray investigation workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-password-spray/Pwdsprayflow.png)
 
 ## Checklist
 

@@ -250,8 +250,9 @@ As per our observation, attackers have used a combination of the first six permi
 ![appconsentworkflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)
 --> 
 
-[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](https://github.com/MicrosoftDocs/security/raw/public/compass/media/incident-response-playbook-app-consent/Appconsent_flow.png)
+[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-app-consent/Appconsent_flow.png)
 
+incident-response-playbook-phishing/PI_flow.png
 
 ## Checklist
 

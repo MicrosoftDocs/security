@@ -5,7 +5,6 @@ author: MarkSimos
 ms.author: josephd
 ms.date: 04/20/2021
 ms.topic: article
-ms.service: security
 ms.prod: m365-security
 ---
 

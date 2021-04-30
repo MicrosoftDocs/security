@@ -6,6 +6,7 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
+ms.prod: m365-security
 description: "Learn how to establish security operations to rapidly identify and remediate risk from active attacks."
 ---
 

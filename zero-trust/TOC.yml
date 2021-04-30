@@ -36,8 +36,6 @@
 - name: Zero Trust for ISVs
   expanded: false
   items: 
-    - name: Overview of Zero Trust for ISVs
-      href: isv/isv-zero-trust.md
     - name: Secure identity
       expanded: false
       items:
@@ -54,12 +52,6 @@
           href: isv/fido2-hardware-vendor.md
         - name: Privileged Access Solutions
           hred: isv/privileged-access.md
-    - name: Secure endpoints
-    - name: Secure applications
-    - name: Secure data
-    - name: Secure infrastructure
-    - name: Secure networks
-    - name: Visibility, automation, and orchestration
 - name: Resources
   expanded: true
   items:

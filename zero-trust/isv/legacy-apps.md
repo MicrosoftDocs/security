@@ -96,7 +96,6 @@ You can set up conditional access in the applications you have migrated for your
 Microsoft has existing partnerships with these third-party providers to protect legacy applications while using existing networking and delivery controllers.
 
 | **Provider** | **Link** |
-
 | --- | --- |
 | Akamai Enterprise Application Access (EAA) | https://docs.microsoft.com/azure/active-directory/saas-apps/akamai-tutorial |
 | Citrix Application Delivery Controller (ADC) | https://docs.microsoft.com/azure/active-directory/saas-apps/citrix-netscaler-tutorial |

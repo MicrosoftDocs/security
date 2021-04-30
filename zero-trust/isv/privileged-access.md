@@ -72,7 +72,7 @@ Another great example if terms of use. You can leverage Azure AD terms of use AP
 
 [https://docs.microsoft.com/graph/api/resources/agreement?view=graph-rest-1.0](https://docs.microsoft.com/graph/api/resources/agreement)
 
-# Partners
+## Partners
 
 - foo
 - bar

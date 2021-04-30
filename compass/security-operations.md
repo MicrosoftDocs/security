@@ -1,15 +1,15 @@
 ---
 title: Security operations in Azure | Microsoft Docs
 description: Detect, respond, and recover the system when it's attacked.
-author: MarkSimos
-ms.author: josephd
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 ms.topic: article
 ms.prod: m365-security
 ---
 
-# Security operations
+# Microsoft security best practices for security operations
 
 Security operations maintain and restores the security assurances of the system
 as live adversaries attack it. The tasks of security operations are
@@ -73,7 +73,7 @@ the objectives should focus on
     environment (for example, skilled enough to evade reactive alerts).
 
 For more information on how Microsoft’s SOC uses these metrics, see
-https://aka.ms/ITSOC.
+[https://aka.ms/ITSOC](https://aka.ms/ITSOC).
 
 ## Hybrid enterprise view
 
@@ -152,7 +152,10 @@ Examine guidance for identifying and investigating these types of attacks:
 - [Password spray](incident-response-playbook-password-spray.md)
 - [App consent grant](incident-response-playbook-app-consent.md)
 
+## Next step
 
-## Additional resources
+Review [Capabilities](security-operations-capabilities.md).
+
+## See also
 
 For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).

@@ -3,40 +3,24 @@
 - name: Zero Trust for IT Admins
   expanded: false
   items:
-    - name: Secure identity
-      items:
-      - name: Identity security overview
-        href: identity.md
-      - name: Rapid modernization plan for Identity
-        href: https://docs.microsoft.com/security/compass/security-rapid-modernization-plan
-    - name: Secure endpoints
-      items:
-      - name: Endpoint security overview
-        href: endpoints.md
-    - name: Secure applications
-      items:
-      - name: Application security overview
-        href: applications.md
-    - name: Secure data
-      items:
-      - name: Data security overview
-        href: data.md
-    - name: Secure infrastructure
-      items:
-      - name: Infrastructure security overview
-        href: infrastructure.md
-    - name: Secure networks
-      items:
-      - name: Network security overview
-        href: networks.md
+    - name: Identity
+      href: identity.md
+    - name: Endpoints
+      href: endpoints.md
+    - name: Applications
+      href: applications.md
+    - name: Data
+      href: data.md
+    - name: Infrastructure
+      href: infrastructure.md
+    - name: Networks
+      href: networks.md
     - name: Visibility, automation, and orchestration
-      items:
-      - name: Orchestration overview
-        href: visibility-automation-orchestration.md
+      href: visibility-automation-orchestration.md
 - name: Zero Trust for ISVs
   expanded: false
   items: 
-    - name: Secure identity
+    - name: Identity
       expanded: false
       items:
       - name: Identity security overview
@@ -51,7 +35,25 @@
         - name: Become FIDO2 Partner
           href: isv/fido2-hardware-vendor.md
         - name: Privileged Access Solutions
-          hred: isv/privileged-access.md
+          href: isv/privileged-access.md
+    - name: Endpoints
+    - name: Applications
+    - name: Data
+    - name: Infrastructure
+    - name: Networks
+    - name: Visibility, automation, and orchestration
+- name: Zero Trust for Developers
+  expanded: false
+  items: 
+    - name: Identity
+      expanded: false
+      href: identity-developer.md
+    - name: Endpoints
+    - name: Applications
+    - name: Data
+    - name: Infrastructure
+    - name: Networks
+    - name: Visibility, automation, and orchestration
 - name: Resources
   expanded: true
   items:

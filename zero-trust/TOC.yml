@@ -58,19 +58,6 @@
     - name: Secure infrastructure
     - name: Secure networks
     - name: Visibility, automation, and orchestration
-- name: Zero Trust for Developers
-  expanded: false
-  items:
-    - name: Secure identity
-      items:
-      - name: Identity for Developers
-        href: developer.md
-    - name: Secure endpoints
-    - name: Secure applications
-    - name: Secure data
-    - name: Secure infrastructure
-    - name: Secure networks
-    - name: Visibility, automation, and orchestration
 - name: Resources
   expanded: true
   items:

@@ -21,20 +21,17 @@ You can become a Microsoft Compatible FIDO2 Security Key Vendor through the foll
 1. First, your authenticator needs to have a FIDO2 certification. We will not be able to work with providers who do not have a FIDO2 certification. To learn more about the certification, please visit this website: [https://fidoalliance.org/certification/](https://fidoalliance.org/certification/)
 2. After you have a FIDO2 certification, please fill in your request to our form here: [https://forms.office.com/r/NfmQpuS9hF](https://forms.office.com/r/NfmQpuS9hF). Our engineering team will only test compatibility of your FIDO2 devices. We won't test security of your solutions.
 3. Once we confirm to move forward to the testing phase, the process usually take about 3-6 months. The steps usually involve:
-  1. Initial discussion between Microsoft and your team.
+    - Initial discussion between Microsoft and your team.
+    - Verify FIDO Alliance Certification/path to certification if not complete.
+    - Overview of device from vendor
+    - Microsoft will share our test scripts with you. Our engineering team will be able to answer questions if you have any specific needs.
+    - You will complete and send all passed results to Microsoft Engineering team
+    - Once Microsoft confirms, you will send multiple hardware/solution samples of each device to Microsoft Engineering team
+    - Upon receipt Microsoft Engineering team will test script verification and user experience flow
+4. Upon successful passing of all tests by Microsoft Engineering team, Microsoft will confirm vendor's device is listed in [the FIDO MDS](https://fidoalliance.org/metadata/).
+5. Microsoft will add your FIDO2 Security Key on Azure AD backend and to our [list of approved FIDO2 vendors](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless).
 
-    1. Verify FIDO Alliance Certification/path to certification if not complete.
-    2. Overview of device from vendor
-  1. Microsoft will share our test scripts with you. Our engineering team will be able to answer questions if you have any specific needs.
-  2. You will complete and send all passed results to Microsoft Engineering team
-  3. Once Microsoft confirms, you will send multiple hardware/solution samples of each device to Microsoft Engineering team
-    1. Upon receipt Microsoft Engineering team will conduct;
-      1. Test script verification
-      2. User experience flow
-  4. Upon successful passing of all tests by Microsoft Engineering team, Microsoft will confirm vendor's device is listed in [the FIDO MDS](https://fidoalliance.org/metadata/).
-  5. Microsoft will add your FIDO2 Security Key on Azure AD backend and to our [list of approved FIDO2 vendors](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless).
-
-**Existing partners to highlight**
+## Current partners
 
 | **Provider** | **Link** |
 | --- | --- |

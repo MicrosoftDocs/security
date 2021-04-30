@@ -18,15 +18,13 @@ Privileged Access Management (PAM) solutions are built to control who has access
 
 PAM solutions are historically built around on-premises access management. This article explains how to extend these solutions by integrating them with Azure Active Directory.
 
-# Solution Overview
+## Solution Overview
 
 Traditionally, PAM solutions were built around an on-premises setup to control access within a secure network. Now, apps are moving into the cloud and employees are working from a variety of locations and devices. In this new world, cloud-based identity services are used as the control plane for managing access.
 
 There are many possible integrations for PAM solutions with Azure Active Directory (Azure AD). In this article we'll recommend some of the most common and useful integrations that will add value to your PAM solutions.
 
-# Key integrations
-
-This section outlines the key pieces we recommend for integrating a PAM solution with Azure Active Directory.
+The following sections outline the key pieces we recommend for integrating a PAM solution with Azure Active Directory.
 
 ## Publish your app to the Azure AD app gallery
 
@@ -72,7 +70,7 @@ Another great example if terms of use. You can leverage Azure AD terms of use AP
 
 [https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
 
-[https://docs.microsoft.com/graph/api/resources/agreement?view=graph-rest-1.0](https://docs.microsoft.com/graph/api/resources/agreement?view=graph-rest-1.0)
+[https://docs.microsoft.com/graph/api/resources/agreement?view=graph-rest-1.0](https://docs.microsoft.com/graph/api/resources/agreement)
 
 # Partners
 

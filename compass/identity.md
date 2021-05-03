@@ -3,12 +3,11 @@ title: Identity and Access Management in Azure | Microsoft Docs
 description: Manage access based on identity authentication and authorization 
 author: MarkSimos
 ms.author: josephd
-ms.date: 04/20/2021
 ms.topic: article
 ms.prod: m365-security
 ---
 
-# Identity and access management
+# Microsoft security best practices for identity and access management
 
 In cloud-based architecture, identity provides the basis of a large percentage of security assurances. While legacy IT infrastructure often heavily relied on firewalls and network security solutions at the internet egress points for protection against outside threats, these controls are less effective in cloud architectures with shared services being accessed across cloud provider networks or the internet.
 

@@ -7,12 +7,12 @@ audience: Admin
 ms.prod: m365-security
 ms.topic: article
 localization_priority: Normal
-description: "Lists capabilities that can help with security operations."
+description: "Lists capabilities that you can use for your security operations"
 ---
 
 # Security operations capabilities
 
-These are the capabilities that can help with security operations.
+These are the capabilities that you can use for your security operations.
 
 <br> 
 

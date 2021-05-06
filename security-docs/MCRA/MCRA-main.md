@@ -35,4 +35,4 @@ Organizations find this architecture useful because it covers capabilities acros
 
 ## Next Steps 
 
-[Download the file here]()
+[Download the file here](..\..\downloads\IR-Reference-Guide.pdf)

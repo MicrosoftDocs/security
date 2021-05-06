@@ -24,7 +24,7 @@ ms.technology: m365d
 
 # Incident response playbooks
 
-You need to respond quickly to detected security attacks to contain and remediate its damage. As new widespread cyberattacks happen, such as [Solarigate](https://aka.ms/dartrecoveryguide) and the [Exchange Server vulnerability](https://msrc-blog.microsoft.com/2021/03/16/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/), Microsoft will respond with detailed incident response guidance. 
+You need to respond quickly to detected security attacks to contain and remediate its damage. As new widespread cyberattacks happen, such as [Nobellium](https://msrc-blog.microsoft.com/2020/12/21/december-21st-2020-solorigate-resource-center/) and the [Exchange Server vulnerability](https://msrc-blog.microsoft.com/2021/03/16/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/), Microsoft will respond with detailed incident response guidance. 
 
 You also need detailed guidance for common attack methods that malicious users employ every day. To address this need, use the incident response playbooks for these types of attacks:
 

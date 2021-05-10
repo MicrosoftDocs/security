@@ -2,13 +2,14 @@
 title: "Microsoft Cybersecurity Reference Architectures"
 description: Security description
 author: marksimos
-ms.author: marksimos
+ms.author: mas
 ms.date: 04/15/2021
 ms.topic: article
+ms.service: security
 
 ---
 
-## Microsoft Cybersecurity Reference Architectures (MCRA)
+# Microsoft Cybersecurity Reference Architectures (MCRA)
 
 The Microsoft Cybersecurity Reference Architectures (https://aka.ms/MCRA) describe Microsoft’s cybersecurity capabilities. The diagrams describe how Microsoft security capabilities integrate with Microsoft platforms and 3rd party platforms like Microsoft 365, Microsoft Azure, 3rd party apps like ServiceNow and salesforce, and 3rd party platforms like Amazon Web Services (AWS) and Google Cloud Platform (GCP). 
 

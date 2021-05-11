@@ -23,8 +23,8 @@
     - name: Identity
       expanded: false
       items:
-      - name: Identity security overview
-        href: isv/identity-zero-trust.md
+      - name: ISV integration overview
+        href: isv/identity-isv-integration-overview.md
       - name: Integrations
         expanded: true
         items:

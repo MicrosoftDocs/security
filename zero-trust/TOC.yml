@@ -29,7 +29,7 @@
         expanded: true
         items:
         - name: Cloud Security Solutions
-          href: isv/cloud-security.md
+          href: isv/identity-isv-getting-started.md
         - name: Secure Hybrid Access 
           href: isv/legacy-apps.md
         - name: Become FIDO2 Partner

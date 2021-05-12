@@ -154,7 +154,7 @@ Examine guidance for identifying and investigating these types of attacks:
 
 ## Next step
 
-Review [Capabilities](security-operations-capabilities.md).
+Review [security operations capabilities](security-operations-capabilities.md).
 
 ## See also
 

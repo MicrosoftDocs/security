@@ -12,7 +12,7 @@ description: "Learn how to establish security operations to rapidly identify and
 
 # Security operations
 
-Security operations monitor the enterprise environment to rapidly identify and remediate risk from active attack operations, sharing insights and threat intelligence from these attacks to the rest of the organization.
+Security operations monitor an enterprise environment to rapidly identify and remediate risk from active attack operations, sharing insights and threat intelligence from these attacks to the rest of the organization.
 
 The following videos provide guidance on security operations.
 
@@ -33,7 +33,7 @@ The following videos provide guidance on security operations.
 
 ## Next steps
 
-See the [Security operations](security-operations.md) and [Capabilities](security-operations-capabilities.md) topics for more information.
+See security operations [best practices](security-operations.md) and [capabilities](security-operations-capabilities.md) for more information.
 
 ## See also
 

@@ -100,13 +100,13 @@ Here is a summary and diagram of this user authentication flow:
 
 Your solution will need to use these APIs. Azure AD will allow you to configure either the delegated permissions or the application permissions. For this solution, you only need delegated permissions.
 
-[Application Templates API](https://docs.microsoft.com/en-us/graph/application-saml-sso-configure-api#retrieve-the-gallery-application-template-identifier/: If you're interested in searching the Azure AD app gallery, you can use this API to find a matching application template. **Permission required** : Application.Read.All.
+[Application Templates API](/graph/application-saml-sso-configure-api#retrieve-the-gallery-application-template-identifier/): If you're interested in searching the Azure AD app gallery, you can use this API to find a matching application template. **Permission required** : Application.Read.All.
 
-[Application Registration API](https://docs.microsoft.com/en-us/graph/api/application-post-applications?view=graph-rest-1.0&tabs=http/: You will use this API to create either OIDC or SAML application registrations so end-users can sign-in to the applications that the customers has secured with your solution. Doing this will enable these applications to also be secured with Azure AD. **Permissions required** : Application.Read.All, Application.ReadWrite.All
+[Application Registration API](/graph/api/application-post-applications): You will use this API to create either OIDC or SAML application registrations so end-users can sign-in to the applications that the customers has secured with your solution. Doing this will enable these applications to also be secured with Azure AD. **Permissions required** : Application.Read.All, Application.ReadWrite.All
 
-[Service Principal API](https://docs.microsoft.com/en-us/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http/: After doing the app registration, you'll need to update the Service Principal Object to set some single sign-on properties. **Permissions required** : Application.ReadWrite.All, Directory.AccessAsUser.All, AppRoleAssignment.ReadWrite.All (for assignment)
+[Service Principal API](/graph/api/serviceprincipal-update): After doing the app registration, you'll need to update the Service Principal Object to set some single sign-on properties. **Permissions required** : Application.ReadWrite.All, Directory.AccessAsUser.All, AppRoleAssignment.ReadWrite.All (for assignment)
 
-[Conditional Access API](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-1.0/: If you want to also apply Azure AD Conditional Access policies to these end-user applications, you can use this API to do so. **Permissions required** : Policy.Read.All, Policy.ReadWrite.ConditionalAccess, and Application.Read.All
+[Conditional Access API](/graph/api/resources/conditionalaccesspolicy): If you want to also apply Azure AD Conditional Access policies to these end-user applications, you can use this API to do so. **Permissions required** : Policy.Read.All, Policy.ReadWrite.ConditionalAccess, and Application.Read.All
 
 ## Example Graph API scenarios
 
@@ -336,7 +336,7 @@ https://graph.microsoft.com/v1.0/applications/{Application Object ID}
 ```
 
 > [!NOTE]
-> The API Permissions listed above within the resourceAccess node will grant the application access to OpenID, User.Read, and offline_access, which should be enough to get the user signed in to your solution. If the application needs more permissions, [click here](https://docs.microsoft.com/en-us/graph/permissions-reference/ for more information.
+> The API Permissions listed above within the resourceAccess node will grant the application access to OpenID, User.Read, and offline_access, which should be enough to get the user signed in to your solution. If the application needs more permissions, [click here](/graph/permissions-reference/ for more information.
 
 ### Apply Conditional Access Policies
 

@@ -22,7 +22,7 @@ Identities represent people, services, and devices and the permissions that they
 
 Azure Active Directory (Azure AD) is Microsoft’s cloud enterprise identity service. It provides single sign-on authentication, conditional access, passwordless and multi-factor authentication, automated user provisioning and many more features that enable companies to protect and automate identity processes at scale.
 
-As an ISV, you can integrate with many of Azure AD’s features by using [Microsoft Graph](https://docs.microsoft.com/graph/overview) and the [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/app-resilience-continuous-access-evaluation). You can also gain access to the risk signals Azure AD calculates based on myriad data sources and policies and feed your own information back into the system to create a safer environment for all.
+As an ISV, you can integrate with many of Azure AD’s features by using [Microsoft Graph](/graph/overview) and the [Microsoft identity platform](/azure/active-directory/develop/app-resilience-continuous-access-evaluation). You can also gain access to the risk signals Azure AD calculates based on myriad data sources and policies and feed your own information back into the system to create a safer environment for all.
 
 
 :::image type="content" source="../media/diagram-conditional-access-policies-small.png" alt-text="Diagram of conditional access, showing machine learning, policies, and a real time evaluation engine making decisions about how to allow access." lightbox="../media/diagram-conditional-access-policies-white-background.png":::

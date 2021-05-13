@@ -31,7 +31,7 @@
         - name: Cloud Security Solutions
           href: isv/identity-isv-getting-started.md
         - name: Secure Hybrid Access 
-          href: isv/legacy-apps.md
+          href: isv/secure-hybrid-access.md
         - name: Become FIDO2 Partner
           href: isv/fido2-hardware-vendor.md
         - name: Privileged Access Solutions

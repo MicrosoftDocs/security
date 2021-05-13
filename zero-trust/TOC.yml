@@ -36,24 +36,12 @@
           href: isv/fido2-hardware-vendor.md
         - name: Privileged Access Solutions
           href: isv/privileged-access.md
-    - name: Endpoints
-    - name: Applications
-    - name: Data
-    - name: Infrastructure
-    - name: Networks
-    - name: Visibility, automation, and orchestration
 - name: Zero Trust for Developers
   expanded: false
   items: 
     - name: Identity
       expanded: false
       href: identity-developer.md
-    - name: Endpoints
-    - name: Applications
-    - name: Data
-    - name: Infrastructure
-    - name: Networks
-    - name: Visibility, automation, and orchestration
 - name: Resources
   expanded: true
   items:

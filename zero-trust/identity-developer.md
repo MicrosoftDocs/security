@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Zero Trust with the Microsoft identity platform
 
-:::image type="icon" source="../media/icon-identity-medium.png":::
+:::image type="icon" source="./media/icon-identity-medium.png":::
 
 Traditional approaches to secure application development are no longer enough. Applications are moving into the cloud and their users are working from a variety of devices and locations. Companies want to support employees collaborating with partners who are outside of their organization. At the same time, the threat landscape is evolving constantly, with new exploits and vulnerabilities being disclosed every day.
 

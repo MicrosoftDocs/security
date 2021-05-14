@@ -42,15 +42,15 @@ In our experience, many security ISVs have found these APIs to be particularly u
 
 When you integrate User Provisioning, you can keep your application up to date with changes in the tenant where your application resides. But if your application needs to make updates to the users and groups in the tenant, you can use the User and Group APIs through Microsoft Graph to write back to the Azure Active Directory tenant. You can read more about using the API in the [Microsoft Graph REST API v1.0 reference](/graph/api/overview) in the reference documentation for [/graph/api/user-getmembergroups](/graph/api/user-getmembergroups)
 
-### Conditional Aacess API
+### Conditional Access API
 
-[Conditional Access](/azure/active-directory/conditional-access/overview) is a key part of Zero Trust because it helps to ensure the right user has the right access to the right resources. Enabling Conditional Access allows Azure Active Directory to make access decision based on computed risk and preconfigured policies.
+[Conditional access](/azure/active-directory/conditional-access/overview) is a key part of Zero Trust because it helps to ensure the right user has the right access to the right resources. Enabling Conditional Access allows Azure Active Directory to make access decision based on computed risk and preconfigured policies.
 
-ISVs can take advantage of Conditional Access by surfacing the option to apply Conditional Access policies when relevant to the customers. For example, if a user is especially risky, you can suggest the customer enable Conditional Access for that user through your UI, and programmatically enable it in Azure Active Directory.
+ISVs can take advantage of conditional access by surfacing the option to apply conditional access policies when relevant to the customers. For example, if a user is especially risky, you can suggest the customer enable Conditional Access for that user through your UI, and programmatically enable it in Azure Active Directory.
 
 :::image type="content" source="../media/diagram-access-control.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to set conditions for a conditional access policy based on the user activity." border="true" lightbox="../media/diagram-access-control.png":::
 
-For more, check out the [configure Conditional Access policies using the Microsoft Graph API](https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/01-configure/graphapi) sample on GitHub.
+For more, check out the [configure conditional access policies using the Microsoft Graph API](https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/01-configure/graphapi) sample on GitHub.
 
 ### Confirm compromise and risky user APIs
 
@@ -61,3 +61,8 @@ Sometimes ISVs may become aware of compromise that is outside of the scope of Az
 Going in the other direction, Azure AD continually evaluates user risk based on various signals and machine learning. The Risky User API provides programmatic access to all at-risk users in the app’s Azure Active Directory tenant. ISVs can make use of this API to ensure they are handling users appropriately to their current level of risk. [riskyUser resource type](/graph/api/resources/riskyuser).
 
 :::image type="content" source="../media/diagram-risky-user.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to retrieve the user's risk level." border="true" lightbox="../media/diagram-access-control.png":::
+
+## Next steps
+
+[Secure hybrid access integrations](secure-hybrid-access.md)
+[Become a Microsoft-compatible FIDO2 security key vendor](fido2-hardware-vendor.md)

@@ -34,8 +34,6 @@
           href: isv/secure-hybrid-access.md
         - name: Become FIDO2 Partner
           href: isv/fido2-hardware-vendor.md
-        - name: Privileged Access Solutions
-          href: isv/privileged-access.md
 - name: Zero Trust for Developers
   expanded: false
   items: 

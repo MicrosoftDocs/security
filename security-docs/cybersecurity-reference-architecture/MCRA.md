@@ -1,25 +1,24 @@
 ---
-title: "Microsoft Cybersecurity Reference Architectures"
-description: Security description
+title: Microsoft Cybersecurity Reference Architectures
+description: Detailed technical reference architectures for multi-cloud cybersecurity including Microsoft and 3rd party platforms
 author: marksimos
 ms.author: mas
-ms.date: 04/15/2021
-ms.topic: article
+ms.date: 05/14/2021
+ms.topic: overview
 ms.service: security
 
 ---
+# Microsoft Cybersecurity Reference Architectures 
 
-# Microsoft Cybersecurity Reference Architectures (MCRA)
-
-The Microsoft Cybersecurity Reference Architectures describe Microsoft’s cybersecurity capabilities. The diagrams describe how Microsoft security capabilities integrate with Microsoft platforms and 3rd party platforms like Microsoft 365, Microsoft Azure, 3rd party apps like ServiceNow and salesforce, and 3rd party platforms like Amazon Web Services (AWS) and Google Cloud Platform (GCP). 
+The Microsoft Cybersecurity Reference Architectures (MCRA) describe Microsoft’s cybersecurity capabilities. The diagrams describe how Microsoft security capabilities integrate with Microsoft platforms and 3rd party platforms like Microsoft 365, Microsoft Azure, 3rd party apps like ServiceNow and salesforce, and 3rd party platforms like Amazon Web Services (AWS) and Google Cloud Platform (GCP). 
 
 [Download the file here](https://github.com/MicrosoftDocs/security/blob/main/Downloads/microsoft-cybersecurity-reference-architectures.pptx?raw=true)
 
-This is primarily composed of detailed technical diagrams on Microsoft cybersecurity capabilities, zero trust user access, security operations, operational technology (OT), multi-cloud and cross-platform capabilities, attack chain coverage, azure native security controls, and security organizational functions.
+The reference architectures are primarily composed of detailed technical diagrams on Microsoft cybersecurity capabilities, zero trust user access, security operations, operational technology (OT), multi-cloud and cross-platform capabilities, attack chain coverage, azure native security controls, and security organizational functions.
 
 :::image type="content" source="./media/MCRA-page1.png" alt-text="Microsoft Cybersecurity Reference Architecture - Page 1" lightbox="./media/MCRA-page1.png":::
 
-This also includes an overview of Zero Trust, a Zero Trust rapid modernization plan, key information on security operations, and summaries of key initiatives like protecting from human operated ransomware, securing privileged access, moving beyond VPN, and more. 
+The MCRA also includes an overview of Zero Trust and a Zero Trust rapid modernization plan (RaMP). Additionally, this includes other key information on security operations and key initiatives like protecting from human operated ransomware, securing privileged access, moving beyond VPN, and more. 
 
 :::image type="content" source="./media/MCRA-page2.png" alt-text="Microsoft Cybersecurity Reference Architecture - Page 2" lightbox="./media/MCRA-page2.png":::
 

@@ -32,7 +32,7 @@ Managing identities and access for organizations with thousands of users is chal
 
 SCIM (System for Cross-Domain Identity Management) is an open standard for exchanging user identity information. You can use the SCIM user management API to automatically provision users and groups between your application and Azure AD.
 
-Our tutorial on the subject, [Tutorial - Develop a SCIM endpoint for user provisioning to apps from Azure AD | Microsoft Docs](/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups), describes how to build a SCIM endpoint and integrate with the Azure AD provisioning service. The SCIM specification provides a common user schema for provisioning. When used in conjunction with federation standards like SAML or OpenID Connect, SCIM gives administrators an end-to-end, standards-based solution for access management.
+Our tutorial on the subject, [develop a SCIM endpoint for user provisioning to apps from Azure AD](/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups), describes how to build a SCIM endpoint and integrate with the Azure AD provisioning service. The SCIM specification provides a common user schema for provisioning. When used in conjunction with federation standards like SAML or OpenID Connect, SCIM gives administrators an end-to-end, standards-based solution for access management.
 
 ## Integrate with Key Security APIs
 

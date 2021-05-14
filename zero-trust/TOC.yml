@@ -1,19 +1,44 @@
-- name: Zero Trust Security
+- name: Zero Trust Overview
+  href: index.md
+- name: Identity
   expanded: true
   items:
-    - name: Zero Trust introduction
-      href: https://aka.ms/ZTDeploymentGuideIntroduction
-    - name: Secure identity
-      href: https://aka.ms/ZTIdentity
-    - name: Secure endpoints
-      href: https://aka.ms/ZTDevices
-    - name: Secure applications
-      href: https://aka.ms/ZTApplications
-    - name: Secure data
-      href: https://aka.ms/ZTData
-    - name: Secure infrastructure
-      href: https://aka.ms/ZTInfrastructure
-    - name: Secure networks
-      href: https://aka.ms/ZTNetwork
-    - name: Visibility, automation, and orchestration
-      href: https://aka.ms/ZTCrossPillars
+    - name: Identity for Admins
+      href: identity.md
+    - name: Identity for ISVs
+      expanded: false
+      items:
+        - name: ISV integration overview
+          href: isv/identity-isv-integration-overview.md
+        - name: Integrations
+          expanded: true
+          items:
+          - name: Getting started
+            href: isv/identity-isv-getting-started.md
+          - name: Secure hybrid access solutions
+            href: isv/secure-hybrid-access.md
+          - name: Become a compatible FIDO2 vendor
+            href: isv/fido2-hardware-vendor.md
+    - name: Identity for Developers
+      href: identity-developer.md
+- name: Endpoints
+  href: endpoints.md
+- name: Applications
+  href: applications.md
+- name: Data
+  href: data.md
+- name: Infrastructure
+  href: infrastructure.md
+- name: Networks
+  href: networks.md
+- name: Visibility, automation, and orchestration
+  href: visibility-automation-orchestration.md
+- name: Resources
+  expanded: true
+  items:
+  - name: Zero Trust Assessment
+    href: https://info.microsoft.com/ww-landing-Zero-Trust-Assessment.html
+  - name: Microsoft Security Blog
+    href: https://www.microsoft.com/security/blog/
+  - name: Microsoft Intelligent Security Association
+    href: https://www.microsoft.com/security/business/intelligent-security-association

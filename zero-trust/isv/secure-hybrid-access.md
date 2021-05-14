@@ -29,28 +29,28 @@ The rest of this guide explains the technical considerations and our recommendat
 
 ## Publish your application to the Azure AD app gallery
 
-You can pre-integrate your application with Azure AD to support single sign-on and automated provisioning by following the process to [publish it in the Azure AD app gallery](/azure/active-directory/develop/v2-howto-app-gallery-listing/. The Azure AD app gallery is a trusted source of Azure AD compatible applications for IT admins. Applications listed there have been validated to be compatible with Azure AD, support single sign-on and automated user provisioning, and are easily integrated into customer tenants with automated app registration.
+You can pre-integrate your application with Azure AD to support single sign-on and automated provisioning by following the process to [publish it in the Azure AD app gallery](/azure/active-directory/develop/v2-howto-app-gallery-listing/). The Azure AD app gallery is a trusted source of Azure AD compatible applications for IT admins. Applications listed there have been validated to be compatible with Azure AD, support single sign-on and automated user provisioning, and are easily integrated into customer tenants with automated app registration.
 
-In addition we recommend that you become a [verified publisher](/azure/active-directory/develop/publisher-verification-overview/ so that customers know you are the trusted publisher of the app.
+In addition we recommend that you become a [verified publisher](/azure/active-directory/develop/publisher-verification-overview/) so that customers know you are the trusted publisher of the app.
 
 ## Enable IT admin single sign-on
 
-You will want to [choose either OIDC or SAML](/azure/active-directory/manage-apps/sso-options#choosing-a-single-sign-on-method/ to enable single sign-on for IT administrators to your solution.
+You will want to [choose either OIDC or SAML](/azure/active-directory/manage-apps/sso-options#choosing-a-single-sign-on-method/) to enable single sign-on for IT administrators to your solution.
 
-The best option is to use OIDC. Microsoft Graph uses [OIDC/OAuth](/azure/active-directory/develop/v2-protocols-oidc/. This means that if your solution leverages OIDC with Azure AD for IT Administrator single sign-on, then your customers will have a seamless end-to-end experience. They will use OIDC to sign in to your solution and that same JSON Web Token (JWT) that was issued by Azure AD can then be used to interact with Microsoft Graph.
+The best option is to use OIDC. Microsoft Graph uses [OIDC/OAuth](/azure/active-directory/develop/v2-protocols-oidc/). This means that if your solution leverages OIDC with Azure AD for IT Administrator single sign-on, then your customers will have a seamless end-to-end experience. They will use OIDC to sign in to your solution and that same JSON Web Token (JWT) that was issued by Azure AD can then be used to interact with Microsoft Graph.
 
-If your solution is instead using [SAML](/azure/active-directory/manage-apps/configure-saml-single-sign-on/ for IT Administrator single sign-on, the SAML token won't enable your solution to interact with Microsoft Graph. You can still leverage SAML for IT Administrator single sign-on but your solution will also need to support OIDC integration with Azure AD so it can get a JSON Web Token (JWT) from Azure AD to properly interact with Microsoft Graph. You can use one of the following approaches:
+If your solution is instead using [SAML](/azure/active-directory/manage-apps/configure-saml-single-sign-on/) for IT Administrator single sign-on, the SAML token won't enable your solution to interact with Microsoft Graph. You can still leverage SAML for IT Administrator single sign-on but your solution will also need to support OIDC integration with Azure AD so it can get a JSON Web Token (JWT) from Azure AD to properly interact with Microsoft Graph. You can use one of the following approaches:
 
-Recommended SAML Approach: Create a new additional registration in the Azure AD app gallery, which is [an OIDC app](/azure/active-directory/saas-apps/openidoauth-tutorial/. This provides the most seamless experience for your customer. They will add both the SAML and OIDC apps to their tenant. If your application isn't in the Azure AD gallery today, you can start with a non-gallery [multi-tenant application](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant/.
+Recommended SAML Approach: Create a new additional registration in the Azure AD app gallery, which is [an OIDC app](/azure/active-directory/saas-apps/openidoauth-tutorial/). This provides the most seamless experience for your customer. They will add both the SAML and OIDC apps to their tenant. If your application isn't in the Azure AD gallery today, you can start with a non-gallery [multi-tenant application](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant/).
 
-Alternate SAML Approach: Your customer can manually [create an OIDC application registration](/azure/active-directory/saas-apps/openidoauth-tutorial/ in their Azure AD tenant and ensure they set the right URI's, endpoints, and permissions specified later in this document.
+Alternate SAML Approach: Your customer can manually [create an OIDC application registration](/azure/active-directory/saas-apps/openidoauth-tutorial/) in their Azure AD tenant and ensure they set the right URI's, endpoints, and permissions specified later in this document.
 
-You'll most likely want to use the [client_credentials grant type](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token/, which will require that your solution allows the customer to input a client_ID and secret into your user interface, and that you store this information. This will enable you to get an JSON Web Token (JWT) from Azure AD, which you can then use to interact with Microsoft Graph.
+You'll most likely want to use the [client_credentials grant type](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token/), which will require that your solution allows the customer to input a client_ID and secret into your user interface, and that you store this information. This will enable you to get an JSON Web Token (JWT) from Azure AD, which you can then use to interact with Microsoft Graph.
 
 If you choose this route, you should have ready-made documentation for your customer about how to create this application registration within their Azure AD tenant including the endpoints, URI's, and permissions required.
 
 > [!NOTE]
-> Before any applications can be used for either IT administrator or end-user sign-on, the customer's IT administrator will need to [consent to the application in their tenant](/azure/active-directory/manage-apps/grant-admin-consent/.
+> Before any applications can be used for either IT administrator or end-user sign-on, the customer's IT administrator will need to [consent to the application in their tenant](/azure/active-directory/manage-apps/grant-admin-consent/).
 
 ## Authentication flows
 
@@ -336,7 +336,7 @@ https://graph.microsoft.com/v1.0/applications/{Application Object ID}
 ```
 
 > [!NOTE]
-> The API Permissions listed above within the resourceAccess node will grant the application access to OpenID, User.Read, and offline_access, which should be enough to get the user signed in to your solution. If the application needs more permissions, [click here](/graph/permissions-reference/ for more information.
+> The API Permissions listed above within the resourceAccess node will grant the application access to OpenID, User.Read, and offline_access, which should be enough to get the user signed in to your solution. You can find more information on permissions on the [permissions reference page](/graph/permissions-reference/).
 
 ### Apply Conditional Access Policies
 
@@ -425,7 +425,7 @@ https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/
 }
 ```
 
-If you're interested in creating new Azure AD Conditional Access Policies, here are some additional templates that can help get you started using the [Conditional Access API](/azure/active-directory/conditional-access/howto-conditional-access-apis/.
+If you're interested in creating new Azure AD Conditional Access Policies, here are some additional templates that can help get you started using the [Conditional Access API](/azure/active-directory/conditional-access/howto-conditional-access-apis/).
 
 ```https
 #Policy Template for Requiring Compliant Device
@@ -522,7 +522,7 @@ https://login.microsoftonline.com/{Tenant_ID}/federationmetadata/2007-06/federat
 
 ### Assign users and groups
 
-Once you have published the applications to Azure AD, you can optionally assign it to users and groups to ensure it shows up on the [MyApplications](/azure/active-directory/user-help/my-applications-portal-workspaces/ portal. This assignment is stored on the Service Principal Object that was generated when you created the application:
+Once you have published the applications to Azure AD, you can optionally assign it to users and groups to ensure it shows up on the [MyApplications](/azure/active-directory/user-help/my-applications-portal-workspaces/) portal. This assignment is stored on the Service Principal Object that was generated when you created the application:
 
 First you'll want to get any AppRoles that the application may have associated with it. It's common for SaaS applications to have various AppRoles associated with them. For custom applications, there is typically just the one default AppRole. Grab the ID of the AppRole you want to assign:
 

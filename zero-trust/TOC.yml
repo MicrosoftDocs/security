@@ -1,38 +1,45 @@
 - name: Zero Trust Overview
   href: index.md
-- name: Identity
-  expanded: true
+- name: Zero Trust for IT Admins
+  expanded: false
   items:
-    - name: Identity for Admins
+    - name: Identity
       href: identity.md
-    - name: Identity for ISVs
+    - name: Endpoints
+      href: endpoints.md
+    - name: Applications
+      href: applications.md
+    - name: Data
+      href: data.md
+    - name: Infrastructure
+      href: infrastructure.md
+    - name: Networks
+      href: networks.md
+    - name: Visibility, automation, and orchestration
+      href: visibility-automation-orchestration.md
+- name: Zero Trust for ISVs
+  expanded: false
+  items: 
+    - name: Identity
       expanded: false
       items:
-        - name: ISV integration overview
-          href: isv/identity-isv-integration-overview.md
-        - name: Integrations
-          expanded: true
-          items:
-          - name: Getting started
-            href: isv/identity-isv-getting-started.md
-          - name: Secure hybrid access solutions
-            href: isv/secure-hybrid-access.md
-          - name: Become a compatible FIDO2 vendor
-            href: isv/fido2-hardware-vendor.md
-    - name: Identity for Developers
+      - name: ISV integration overview
+        href: isv/identity-isv-integration-overview.md
+      - name: Integrations
+        expanded: true
+        items:
+        - name: Cloud Security Solutions
+          href: isv/identity-isv-getting-started.md
+        - name: Secure Hybrid Access 
+          href: isv/secure-hybrid-access.md
+        - name: Become FIDO2 Partner
+          href: isv/fido2-hardware-vendor.md
+- name: Zero Trust for Developers
+  expanded: false
+  items: 
+    - name: Identity
+      expanded: false
       href: identity-developer.md
-- name: Endpoints
-  href: endpoints.md
-- name: Applications
-  href: applications.md
-- name: Data
-  href: data.md
-- name: Infrastructure
-  href: infrastructure.md
-- name: Networks
-  href: networks.md
-- name: Visibility, automation, and orchestration
-  href: visibility-automation-orchestration.md
 - name: Resources
   expanded: true
   items:

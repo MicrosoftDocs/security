@@ -28,11 +28,11 @@
       - name: Integrations
         expanded: true
         items:
-        - name: Cloud Security Solutions
+        - name: Getting started
           href: isv/identity-isv-getting-started.md
-        - name: Secure Hybrid Access 
+        - name: Secure hybrid access integrations
           href: isv/secure-hybrid-access.md
-        - name: Become FIDO2 Partner
+        - name: Become a compatible FIDO2 vendor
           href: isv/fido2-hardware-vendor.md
 - name: Zero Trust for Developers
   expanded: false

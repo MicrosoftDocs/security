@@ -38,13 +38,13 @@ We have included the following guidance to help you on the journey to integratin
    <tbody>
       <tr>
          <td>
-            <p><strong><a>Getting started with Zero Trust identity integrations</a href="cloud-security.md"></strong> </p>
+            <p><strong><a>Getting started with Zero Trust identity integrations</a href="identity-isv-getting-started.md"></strong> </p>
             <p>How to get started integrating with Azure AD on Zero Trust identity solutions</p>
          </td>
       </tr>
       <tr>
          <td>
-            <p><strong><a>Secure hybrid access integrations</a href="legacy-apps.md"></strong> </p>
+            <p><strong><a>Secure hybrid access integrations</a href="secure-hybrid-access.md"></strong> </p>
             <p>Create solutions that provide modern cloud authentication for legacy on-premises applications </p>
          </td>
       </tr>

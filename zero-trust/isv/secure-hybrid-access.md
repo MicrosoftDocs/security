@@ -23,7 +23,7 @@ The solution you build can include the following parts:
 1. **App discovery**. Often, customers are not aware of all the applications they are using. So as a first step you can build application discovery capabilities into your solution and surface discovered applications in the user interface. This enables the customer to prioritize how they want to approach integrating their applications with Azure AD.
 2. **App migration**. Next you can create an in-product workflow where the customer can directly integrate apps with Azure AD without having to go to the Azure AD portal. If you don't implement discovery capabilities in your solution you can start your solution here, integrating the applications customers do know about with Azure AD.
 3. **Legacy authentication support**. You can connect apps using legacy authentication methods to Azure AD so that they get the benefits of single sign-on and other features.
-4. **Conditional access**. As an additional feature, you can enable customers to immediately apply an Azure AD [Conditional Access](/azure/active-directory/conditional-access/overview/ policies to the applications from within your solution without having to go the Azure AD portal.
+4. **Conditional access**. As an additional feature, you can enable customers to immediately apply an Azure AD [Conditional Access](/azure/active-directory/conditional-access/overview/) policies to the applications from within your solution without having to go the Azure AD portal.
 
 The rest of this guide explains the technical considerations and our recommendations for implementing a solution.
 

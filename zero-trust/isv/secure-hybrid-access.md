@@ -1,6 +1,6 @@
 ---
-title: Secure Hybrid Access Integrations for ISVs
-description: Secure Hybrid Access Integrations for ISVs
+title: Secure hybrid access integrations
+description: Help customers discover and migrate SaaS applications into Azure AD and connect apps that use legacy authentication methods with Azure AD.
 ms.date: 04/20/2021
 ms.service: security
 author: knicholasa
@@ -8,7 +8,7 @@ ms.author: nichola
 ms.topic: conceptual
 ---
 
-# Secure Hybrid Access Integrations for ISVs
+# Secure hybrid access integrations
 
 Azure Active Directory supports modern authentication protocols that keep applications secure in a highly connected, cloud-based world. However, many business applications were created to work inside of a protected corporate network, and some of these applications make use of legacy authentication methods. As companies look to build a Zero Trust strategy and support hybrid and cloud-first work environments, they need solutions that connect apps to Azure Active Directory and provide modern authentication solutions for legacy applications.
 

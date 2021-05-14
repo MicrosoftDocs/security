@@ -8,7 +8,7 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-# Building Zero Trust Architecture
+# Zero Trust Resource Center
 
 :::image type="icon" source="./media/icon-introduction-medium.png":::
 

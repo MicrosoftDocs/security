@@ -8,7 +8,7 @@ ms.author: nichola
 ms.topic: conceptual
 ---
 
-# Become a Microsoft-Compatible FIDO2 Security Key Vendor
+# Become a Microsoft-compatible FIDO2 security key vendor
 
 Most hacking related breaches use either stolen or weak passwords. Often, IT will enforce stronger password complexity or frequent password changes to reduce the risk of a security incident. However, this increases help desk costs and leads to poor user experiences as users are required to memorize or store new, complex passwords.
 

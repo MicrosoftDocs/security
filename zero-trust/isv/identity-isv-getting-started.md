@@ -8,7 +8,7 @@ ms.author: nichola
 ms.topic: conceptual
 ---
 
-# Getting Started with Zero Trust Identity Integrations
+# Getting started with Zero Trust identity integrations
 
 Knowing where to begin can be a challenge when integrating with Microsoft’s identity features and services. The modern threat landscape is complex, and there are many integration options to evaluate.
 

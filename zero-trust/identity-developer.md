@@ -29,7 +29,7 @@ The identity platform gives you the ability to authenticate any Microsoft identi
 
 The unified platform makes it is even easier to develop for any user and connect every identity to your apps.
 
-[Embed the Identity Platform Overview video]
+> [!VIDEO https://www.youtube.com/embed/uDU1QTSw7Ps]
 
 ## IT is rolling out Zero Trust
 

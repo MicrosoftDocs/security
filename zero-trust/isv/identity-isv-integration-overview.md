@@ -16,7 +16,7 @@ The modern workplace has changed. Applications have moved into the cloud and emp
 
 Independent Software Vendors (ISVs) can integrate their solutions with Azure Active Directory to adopt a Zero Trust model and provide solutions that keep their customers secure in a hybrid and cloud environment. In this way ISVs can support the Zero Trust principles of verify explicitly, use least privileged access, and assume breach, and save their customers the significant time required to implement a solution on their own.
 
-## Identity Integrations with Azure Active Directory
+## Identity integrations with Azure Active Directory
 
 Identities represent people, services, and devices and the permissions that they obtain to access protected data. Identity solutions are the key control plane for managing access in the modern workplace and are essential to implementing a Zero Trust architecture. Identity solutions enable customers to verify explicitly using strong authentication and access policies, use least privileged access with granular permission and access, and assume breach with controls and policies that manage access to secure resources and minimize the blast radius of attacks.
 

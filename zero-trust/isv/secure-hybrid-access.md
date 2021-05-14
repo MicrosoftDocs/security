@@ -16,7 +16,7 @@ Azure Active Directory (Azure AD) natively supports modern protocols like SAML, 
 
 ISVs have the opportunity to help customers discover and migrate SaaS applications into Azure AD and connect apps that use legacy authentication methods with Azure AD. This will help customers consolidate onto a single platform (Azure AD) to simplify their app management and enable them to implement Zero Trust principles. Supporting apps using legacy authentication makes their users more secure and can be a great stop-gap until the customer modernizes their apps to natively support modern authentication protocols.
 
-## Solution Overview
+## Solution overview
 
 The solution you build can include the following parts:
 
@@ -37,9 +37,9 @@ In addition we recommend that you become a [verified publisher](/azure/active-di
 
 You will want to [choose either OIDC or SAML](/azure/active-directory/manage-apps/sso-options#choosing-a-single-sign-on-method/) to enable single sign-on for IT administrators to your solution.
 
-The best option is to use OIDC. Microsoft Graph uses [OIDC/OAuth](/azure/active-directory/develop/v2-protocols-oidc/). This means that if your solution leverages OIDC with Azure AD for IT Administrator single sign-on, then your customers will have a seamless end-to-end experience. They will use OIDC to sign in to your solution and that same JSON Web Token (JWT) that was issued by Azure AD can then be used to interact with Microsoft Graph.
+The best option is to use OIDC. Microsoft Graph uses [OIDC/OAuth](/azure/active-directory/develop/v2-protocols-oidc/). This means that if your solution leverages OIDC with Azure AD for IT administrator single sign-on, then your customers will have a seamless end-to-end experience. They will use OIDC to sign in to your solution and that same JSON Web Token (JWT) that was issued by Azure AD can then be used to interact with Microsoft Graph.
 
-If your solution is instead using [SAML](/azure/active-directory/manage-apps/configure-saml-single-sign-on/) for IT Administrator single sign-on, the SAML token won't enable your solution to interact with Microsoft Graph. You can still leverage SAML for IT Administrator single sign-on but your solution will also need to support OIDC integration with Azure AD so it can get a JSON Web Token (JWT) from Azure AD to properly interact with Microsoft Graph. You can use one of the following approaches:
+If your solution is instead using [SAML](/azure/active-directory/manage-apps/configure-saml-single-sign-on/) for IT administrator single sign-on, the SAML token won't enable your solution to interact with Microsoft Graph. You can still leverage SAML for IT administrator single sign-on but your solution will also need to support OIDC integration with Azure AD so it can get a JSON Web Token (JWT) from Azure AD to properly interact with Microsoft Graph. You can use one of the following approaches:
 
 Recommended SAML Approach: Create a new additional registration in the Azure AD app gallery, which is [an OIDC app](/azure/active-directory/saas-apps/openidoauth-tutorial/). This provides the most seamless experience for your customer. They will add both the SAML and OIDC apps to their tenant. If your application isn't in the Azure AD gallery today, you can start with a non-gallery [multi-tenant application](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant/).
 
@@ -56,30 +56,30 @@ If you choose this route, you should have ready-made documentation for your cust
 
 The solution will include three key authentication flows that support the following scenarios:
 
-1. The customer's IT Administrator signs in with single sign-on (SSO) to administer your solution.
-2. The customer's IT Administrator uses your solution to integrate applications with Azure AD via Microsoft Graph.
+1. The customer's IT administrator signs in with single sign-on (SSO) to administer your solution.
+2. The customer's IT administrator uses your solution to integrate applications with Azure AD via Microsoft Graph.
 3. End-users sign into legacy applications secured by your solution and Azure AD.
 
-### Your customer's IT Administrator performs single sign-on to your solution
+### Your customer's IT administrator performs single sign-on to your solution
 
-Your solution can use either SAML or OIDC for single sign-on (SSO) when the customer's IT Administrator signs in. Either way, it is recommended that the IT Administrator can sign in to your solution using their Azure AD credentials, which enables them a seamless experience and allows them to leverage the existing security controls they already have in place. This will require that your solution be integrated with Azure AD for Single Sign-On using either SAML or OIDC.
+Your solution can use either SAML or OIDC for single sign-on (SSO) when the customer's IT administrator signs in. Either way, it is recommended that the IT administrator can sign in to your solution using their Azure AD credentials, which enables them a seamless experience and allows them to leverage the existing security controls they already have in place. This will require that your solution be integrated with Azure AD for Single Sign-On using either SAML or OIDC.
 
-1. The IT Administrator wants to sign-in to your solution with their Azure AD credentials.
+1. The IT administrator wants to sign-in to your solution with their Azure AD credentials.
 1. Your solution will redirect them to Azure AD either with a SAML or OIDC sign in request.
-1.  Azure AD will authenticate the IT Administrator and then send them back to your solution with either a SAML token or JSON Web Token (JWT) in tow to be authorized within your solution
+1.  Azure AD will authenticate the IT administrator and then send them back to your solution with either a SAML token or JSON Web Token (JWT) in tow to be authorized within your solution
 
 :::image type="content" source="../media/admin-flow.png" alt-text="Diagram of the IT administrator being redirected by the solution to Azure AD to log in, and then being redirected by Azure AD back to the solution with a SAML token or JWT." lightbox="../media/admin-flow.png":::
 
-### The IT Administrator integrates applications with Azure AD using your solution
+### The IT administrator integrates applications with Azure AD using your solution
 
-The second leg of the IT Administrator journey will be to integrate applications with Azure AD by using your solution. To do this, your solution will use Microsoft Graph to create application registrations and Azure AD Conditional Access policies.
+The second leg of the IT administrator journey will be to integrate applications with Azure AD by using your solution. To do this, your solution will use Microsoft Graph to create application registrations and Azure AD Conditional Access policies.
 
 Here is a summary and diagram of this user authentication flow:
 
-1. The IT Administrator wants to sign-in to your solution with their Azure AD credentials.
+1. The IT administrator wants to sign-in to your solution with their Azure AD credentials.
 1. Your solution will redirect them to Azure AD either with a SAML or OIDC sign in request.
-1. Azure AD will authenticate the IT Administrator and then send them back to your solution with either a SAML token or JSON Web Token (JWT) in tow to be authorized within your solution.
-1. When an IT Administrator wants to integrate one of their applications with Azure AD, rather than having to go to the Azure AD portal, your solution will call the Microsoft Graph with their existing JSON web token (JWT) to register those applications or apply Azure AD Conditional Access policies to them.
+1. Azure AD will authenticate the IT administrator and then send them back to your solution with either a SAML token or JSON Web Token (JWT) in tow to be authorized within your solution.
+1. When an IT administrator wants to integrate one of their applications with Azure AD, rather than having to go to the Azure AD portal, your solution will call the Microsoft Graph with their existing JSON web token (JWT) to register those applications or apply Azure AD Conditional Access policies to them.
 
 :::image type="content" source="../media/registration-flow.png" alt-text="Diagram of the IT administrator being redirected by the solution to Azure AD to log in,  then being redirected by Azure AD back to the solution with a SAML token or JWT, and finally the solution making a call to Microsoft Graph with the JWT." lightbox="../media/registration-flow.png":::
 
@@ -114,7 +114,7 @@ This section provides a reference examples for using Microsoft Graph APIs to imp
 
 ### Use the Graph API to register apps with Azure AD
 
-#### Apps in the Azure AD App Gallery
+#### Apps in the Azure AD app gallery
 
 Some of the applications your customer is using will already be available in the [Azure Active Directory Application Gallery](https://azuremarketplace.microsoft.com/en-us/marketplace/apps). You can create a solution that programmatically adds these applications to the customer's tenant. The following is an example of using the Microsoft Graph API to search the Azure AD app gallery for a matching template and then registering the application in the customer's Azure AD tenant.
 
@@ -171,7 +171,7 @@ https://graph.microsoft.com/v1.0/applications/54c4806b-b260-4a12-873c-9671169837
 }
 ```
 
-#### Applications Not in the Azure AD App Gallery
+#### Applications not in the Azure AD app gallery
 
 If you can't find a match in the Azure AD app gallery or you just want to integrate a custom application, then you have the option of registering a custom application in Azure AD using this template ID:
 
@@ -221,11 +221,11 @@ https://graph.microsoft.com/v1.0/applications/54c4806b-b260-4a12-873c-9671169837
 }
 ```
 
-#### Cutover to Azure AD single sign-on
+#### Cut over to Azure AD single sign-on
 
-Once you have these SaaS applications registered inside Azure AD, the applications still need to be cutover to start us Azure AD as their identity provider. There are two ways to do this:
+Once you have these SaaS applications registered inside Azure AD, the applications still need to be cut over to start us Azure AD as their identity provider. There are two ways to do this:
 
-1. If the applications supports one-click SSO, then Azure AD can cutover the application for the customer. They just need to go into the Azure AD portal and perform the one-click SSO with the administrative credentials for the supported SaaS application. You can read about this in [one-click, single sign-on (SSO) configuration of your Azure Marketplace application](/azure/active-directory/manage-apps/one-click-sso-tutorial/).
+1. If the applications supports one-click SSO, then Azure AD can cut over the application for the customer. They just need to go into the Azure AD portal and perform the one-click SSO with the administrative credentials for the supported SaaS application. You can read about this in [one-click, single sign-on (SSO) configuration of your Azure Marketplace application](/azure/active-directory/manage-apps/one-click-sso-tutorial/).
 2. If the application doesn't support one-click SSO, then the customer will need to manually cutover the application to start using Azure AD. You can learn more in the [SaaS App Integration Tutorials for use with Azure AD](/azure/active-directory/saas-apps/tutorial-list/).
 
 ### Connect apps using legacy authentication methods to Azure AD
@@ -234,7 +234,7 @@ This is where your solution can sit in between Azure AD and the application and 
 
 You can enable customers to perform this integration directly from your console so that the discovery and integration is a seamless end-to-end experience. This will involve your platform creating either a SAML or OIDC application registration between your platform and Azure AD.
 
-#### Create a SAML Application Registration
+#### Create a SAML application registration
 
 You should use the custom application template ID for this:
 
@@ -253,9 +253,9 @@ https://graph.microsoft.com/v1.0/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3
 }
 ```
 
-1. When you make the above API call, we'll also generate a Service Principal object, which might take a few seconds. From the previous API call, you'll want to capture the Application ID and the Service Principal ID, which you'll use in subsequent API calls.
+When you make the above API call, we'll also generate a Service Principal object, which might take a few seconds. From the previous API call, you'll want to capture the Application ID and the Service Principal ID, which you'll use in subsequent API calls.
 
-1. Next, you'll want to PATCH the Service Principal Object with the saml protocol and the appropriate login URL:
+Next, you'll want to PATCH the Service Principal Object with the saml protocol and the appropriate login URL:
 
 ```https
 Authorization: Required with a valid Bearer token
@@ -269,7 +269,7 @@ https://graph.microsoft.com/v1.0/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f7
 }
 ```
 
-1. And lastly, you'll want to PATCH the Application Object with the appropriate redirecturis and the identifieruris:
+And lastly, you'll want to PATCH the Application Object with the appropriate redirecturis and the identifieruris:
 
 ```https
 Authorization: Required with a valid Bearer token
@@ -284,7 +284,7 @@ https://graph.microsoft.com/v1.0/applications/54c4806b-b260-4a12-873c-9671169837
 }
 ```
 
-#### Create an OIDC Application Registration
+#### Create an OIDC application registration
 
 You should use the custom application template ID for this:
 
@@ -338,14 +338,14 @@ https://graph.microsoft.com/v1.0/applications/{Application Object ID}
 > [!NOTE]
 > The API Permissions listed above within the resourceAccess node will grant the application access to OpenID, User.Read, and offline_access, which should be enough to get the user signed in to your solution. You can find more information on permissions on the [permissions reference page](/graph/permissions-reference/).
 
-### Apply Conditional Access Policies
+### Apply conditional access policies
 
 We want to empower customers and partners to also leverage the Microsoft Graph API to create or apply Conditional Access policies to customer's applications. For partners, this can provide additional value so the customer can apply these policies directly from your solution without having to go to the Azure AD portal. You have two options when applying Azure AD Conditional Access Policies:
 
 - You can assign the application to an existing Conditional Access Policy
 - You can create a new Conditional Access policy and assign the application to that new policy
 
-#### An Existing Conditional Access Policy
+#### An existing conditional access policy
 
 First, you'll want to query to get a list of all Conditional Access Policies and grab the Object ID of the policy you want to modify:
 
@@ -391,7 +391,7 @@ https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{policyid}
 }
 ```
 
-#### Create a new Azure AD Conditional Access Policy
+#### Create a new Azure AD conditional access policy
 
 You'll want to add the Application Object ID to be in scope of the includeApplications within the JSON body:
 
@@ -480,7 +480,7 @@ If you're interested in creating new Azure AD Conditional Access Policies, here 
 }
 ```
 
-### Automate Admin Consent
+### Automate admin consent
 
 If the customer is onboarding a lot of applications from your platform to Azure AD, you'll likely want to automate admin consent for them so they don't have to manually consent to lots of applications. This can also be done via Microsoft Graph. You'll need both the Service Principal Object ID of the application you created in previous API calls and the Service Principal Object ID of Microsoft Graph from the customer's tenant.
 
@@ -510,7 +510,7 @@ https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 }
 ```
 
-### Get the Token Signing Certificate
+### Get the token signing certificate
 
 To get the public portion of the token signing certificate for all these applications, you can GET it from the Azure AD metadata endpoint for the application:
 
@@ -548,7 +548,7 @@ https://graph.microsoft.com/v1.0/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f7
 }
 ```
 
-## Existing Partners
+## Existing partners
 
 Microsoft has existing partnerships with these third-party providers to protect legacy applications while using existing networking and delivery controllers.
 

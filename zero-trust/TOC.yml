@@ -30,7 +30,7 @@
         items:
         - name: Getting started
           href: isv/identity-isv-getting-started.md
-        - name: Secure hybrid access solutions
+        - name: Secure hybrid access integrations
           href: isv/secure-hybrid-access.md
         - name: Become a compatible FIDO2 vendor
           href: isv/fido2-hardware-vendor.md

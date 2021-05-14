@@ -54,7 +54,7 @@ For more, check out the [configure Conditional Access policies using the Microso
 
 ### Confirm compromise and risky user APIs
 
-Sometimes, ISVs may become aware of compromise that is outside of the scope of Azure Active Directory. For any security event, especially those including account compromise, Microsoft and the ISV can collaborate by sharing information from both parties. The [confirm compromise API](/graph/api/riskyusers-confirmcompromised) allows you to set a targeted user’s risk level to high. This lets Azure Active Directory respond appropriately, for example by requiring the user to reauthenticate or by restricting their access to sensitive data.
+Sometimes ISVs may become aware of compromise that is outside of the scope of Azure Active Directory. For any security event, especially those including account compromise, Microsoft and the ISV can collaborate by sharing information from both parties. The [confirm compromise API](/graph/api/riskyusers-confirmcompromised) allows you to set a targeted user’s risk level to high. This lets Azure Active Directory respond appropriately, for example by requiring the user to reauthenticate or by restricting their access to sensitive data.
 
 :::image type="content" source="../media/diagram-confirm-compromise.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to set user risk level to high." border="true" lightbox="../media/diagram-access-control.png":::
 

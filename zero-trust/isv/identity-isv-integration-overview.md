@@ -38,19 +38,19 @@ We have included the following guidance to help you on the journey to integratin
    <tbody>
       <tr>
          <td>
-            <p><strong><a>Getting started with Zero Trust identity integrations</a href="identity-isv-getting-started.md"></strong> </p>
+            <p><strong>Getting started with Zero Trust identity integrations</strong> </p>
             <p>How to get started integrating with Azure AD on Zero Trust identity solutions</p>
          </td>
       </tr>
       <tr>
          <td>
-            <p><strong><a>Secure hybrid access integrations</a href="secure-hybrid-access.md"></strong> </p>
+            <p><strong>Secure hybrid access integrations</strong> </p>
             <p>Create solutions that provide modern cloud authentication for legacy on-premises applications </p>
          </td>
       </tr>
       <tr>
          <td>
-            <p><strong><a>Become a Microsoft-compatible FIDO2 security key vendor</a href="fido2-hardware-vendor.md"></strong> </p>
+            <p><strong>Become a Microsoft-compatible FIDO2 security key vendor</strong> </p>
             <p>Partner with Microsoft to enable hardware based authentication solutions for customers</p>
          </td>
       </tr>

@@ -225,8 +225,8 @@ https://graph.microsoft.com/v1.0/applications/54c4806b-b260-4a12-873c-9671169837
 
 Once you have these SaaS applications registered inside Azure AD, the applications still need to be cutover to start us Azure AD as their identity provider. There are two ways to do this:
 
-1. If the applications supports one-click SSO, then Azure AD can cutover the application for the customer. They just need to go into the Azure AD portal and perform the one-click SSO with the administrative credentials for the supported SaaS application. [One-click, single sign-on (SSO) configuration of your Azure Marketplace application | Microsoft Docs](/azure/active-directory/manage-apps/one-click-sso-tutorial/
-2. If the application doesn't support one-click SSO, then the customer will need to manually cutover the application to start using Azure AD. [SaaS App Integration Tutorials for use with Azure AD | Microsoft Docs](/azure/active-directory/saas-apps/tutorial-list/
+1. If the applications supports one-click SSO, then Azure AD can cutover the application for the customer. They just need to go into the Azure AD portal and perform the one-click SSO with the administrative credentials for the supported SaaS application. You can read about this in [one-click, single sign-on (SSO) configuration of your Azure Marketplace application](/azure/active-directory/manage-apps/one-click-sso-tutorial/).
+2. If the application doesn't support one-click SSO, then the customer will need to manually cutover the application to start using Azure AD. You can learn more in the [SaaS App Integration Tutorials for use with Azure AD](/azure/active-directory/saas-apps/tutorial-list/).
 
 ### Connect apps using legacy authentication methods to Azure AD
 

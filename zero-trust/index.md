@@ -1,37 +1,27 @@
 ---
-title: Zero Trust Deployment Center
-description: The Zero Trust model assumes a breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to never trust and to always verify.
-ms.date: 09/30/2020
+title: Building Zero Trust Architecture
+description: Learn how to create Zero Trust solutions. The Zero Trust model assumes a breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to never trust and to always verify.
+ms.date: 04/30/2021
 ms.service: security
 author: garycentric
 ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-# Zero Trust Deployment Center
+# Zero Trust Resource Center
 
 :::image type="icon" source="./media/icon-introduction-medium.png":::
 
-## Assess Zero Trust readiness and build a plan 
+Today, organizations need a new security model that effectively adapts to the complexity of the modern environment, embraces the mobile workforce, and protects people, devices, applications, and data wherever they are located.
 
-Today, organizations need a new security model that effectively adapts
-to the complexity of the modern environment, embraces the mobile
-workforce, and protects people, devices, applications, and data wherever
-they are located.
-
-This is the core of **Zero Trust**. Instead of believing everything
-behind the corporate firewall is safe, the Zero Trust model assumes
-breach and verifies each request as though it originated from an
-uncontrolled network. Regardless of where the request originates or what
-resource it accesses, the Zero Trust model teaches us to "never trust,
-always verify."
+This is the core of **Zero Trust**. Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 
 :::image type="content" source="./media/diagram-zero-trust-security-elements.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
 
 ## Guiding principles of Zero Trust
 
-| Verify&nbsp;explicitly | Use least privileged access | Assume breach |
+| Verify explicitly | Use least privileged access | Assume breach |
 |------|-------|------|
 | Always authenticate and authorize based on all available data points. | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. |
 
@@ -50,7 +40,7 @@ guidance to assess your readiness and to help you build a plan to get to
 Zero Trust.
 
 
-**Follow the steps below to mature your organization's approach to security and optimize how Zero Trust is implemented:**
+**Follow the steps below to mature your approach to security and optimize how Zero Trust is implemented:**
 
 <br/>
 
@@ -62,7 +52,7 @@ Zero Trust.
             <p><img src="media/icon-identity-small.png" alt="Fingerprint icon."></p>
          </td>
          <td>
-            <p><strong>Secure identity with Zero Trust</strong> — <a href="https://aka.ms/ZTIdentity" data-linktype="external">https://aka.ms/ZTIdentity</a></p>
+            <p><strong>Secure identity with Zero Trust</strong> </p>
             <p>Identities—whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow least privilege access principles.</p>
          </td>
          <!--<td>
@@ -74,7 +64,7 @@ Zero Trust.
             <p><img src="media/icon-endpoints-small.png" alt="Endpoint devices icon."></p>
          </td>
          <td>
-            <p><strong>Secure endpoints with Zero Trust</strong> — <a href="https://aka.ms/ZTDevices" data-linktype="external">https://aka.ms/ZTDevices</a></p>
+            <p><strong>Secure endpoints with Zero Trust</strong> </p>
             <p>Once an identity has been granted access to a resource, data can flow to a variety of different endpoints—from IoT devices to smartphones, BYOD to partner-managed devices, and on-premises workloads to cloud-hosted servers. This diversity creates a massive attack surface area. Monitor and enforce device health and compliance for secure access.</p>
          </td>
          <!--<td>
@@ -86,7 +76,7 @@ Zero Trust.
             <p><img src="media/icon-applications-small.png" alt="Application window icon."></p>
          </td>
          <td>
-            <p><strong>Secure applications with Zero Trust</strong> — <a href="https://aka.ms/ZTApplications" data-linktype="external">https://aka.ms/ZTApplications</a></p>
+            <p><strong>Secure applications with Zero Trust</strong></p>
             <p>Applications and APIs provide the interface by which data is consumed. They may be legacy on-premises, lifted-and-shifted to cloud workloads, or modern SaaS applications. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.</p>
          </td>
          <!--<td>
@@ -98,7 +88,7 @@ Zero Trust.
             <p><img src="media/icon-data-small.png" alt="Ones and zeroes icon."></p>
          </td>
          <td>
-            <p><strong>Secure data with Zero Trust</strong> — <a href="https://aka.ms/ZTData" data-linktype="external">https://aka.ms/ZTData</a></p>
+            <p><strong>Secure data with Zero Trust</strong></p>
             <p>Ultimately, security teams are protecting data. Where possible, data should remain safe even if it leaves the devices, apps, infrastructure, and networks the organization controls. Classify, label, and encrypt data, and restrict access based on those attributes.</p>
          </td>
          <!--<td>
@@ -110,7 +100,7 @@ Zero Trust.
             <p><img src="media/icon-infrastructure-small.png" alt="Data storage disks icon."></p>
          </td>
          <td>
-            <p><strong>Secure infrastructure with Zero Trust</strong> — <a href="https://aka.ms/ZTInfrastructure" data-linktype="external">https://aka.ms/ZTInfrastructure</a></p>
+            <p><strong>Secure infrastructure with Zero Trust</strong></p>
             <p>Infrastructure—whether on-premises servers, cloud-based VMs, containers, or micro-services—represents a critical threat vector. Assess for version, configuration, and JIT access to harden defense. Use telemetry to detect attacks and anomalies, and automatically block and flag risky behavior and take protective actions.</p>
          </td>
          <!--<td>
@@ -122,7 +112,7 @@ Zero Trust.
             <p><img src="media/icon-networks-small.png" alt="Network diagram icon."></p>
          </td>
          <td>
-            <p><strong>Secure networks with Zero Trust</strong> — <a href="https://aka.ms/ZTNetwork" data-linktype="external">https://aka.ms/ZTNetwork</a></p>
+            <p><strong>Secure networks with Zero Trust</strong></p>
             <p>All data is ultimately accessed over network infrastructure. Networking controls can provide critical controls to enhance visibility and help prevent attackers from moving laterally across the network. Segment networks (and do deeper in-network micro-segmentation) and deploy real-time threat protection, end-to-end encryption, monitoring, and analytics.</p>
          </td>
          <!--<td>
@@ -134,7 +124,7 @@ Zero Trust.
             <p><img src="media/icon-visibility-automation-orchestration-small.png" alt="Gear icon."></p>
          </td>
          <td>
-            <p><strong>Visibility, automation, and orchestration with Zero Trust</strong> — <a href="https://aka.ms/ZTCrossPillars" data-linktype="external">https://aka.ms/ZTCrossPillars</a></p>
+            <p><strong>Visibility, automation, and orchestration with Zero Trust</strong> </p>
             <p>In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints and devices, data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.</p>
          </td>
          <!--<td>
@@ -144,10 +134,4 @@ Zero Trust.
    </tbody>
 </table>
 
-
 With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
-
-
-<br/><br/>
-<!-- Include the nav bar. -->
-[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]

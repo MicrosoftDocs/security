@@ -119,10 +119,10 @@ For more information, see [security solution integrations using the Microsoft Gr
 
 ### Using Splunk
 
-You can also use the Spunk platform to set up alerts.
+You can also use the Splunk platform to set up alerts.
 
-- Watch this video tutorial on how to create [Spunk alerts](https://www.splunk.com/view/SP-CAAAGYG)
-- For more information, see [Spunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview)
+- Watch this video tutorial on how to create [Splunk alerts](https://www.splunk.com/view/SP-CAAAGYG)
+- For more information, see [Splunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview)
 
 ## Workflow
 
@@ -136,27 +136,27 @@ You can also use the Spunk platform to set up alerts.
 
 #### Investigation triggers
 
-- Received a trigger from SIEM, firewall logs or Azure AD
-- Identity Protection Password Spray feature or Risky IP
+- Received a trigger from SIEM, firewall logs, or Azure AD
+- Azure AD Identity Protection Password Spray feature or Risky IP
 - Large number of failed sign-ins (Event ID 411)
 - Spike in Azure AD Connect Health for ADFS
 - Another security incident (for example, phishing)
-- Unexplained activity – Sign-in from unfamiliar location, user getting unexpected MFA prompts
+- Unexplained activity, such as a sign-in from unfamiliar location or a user getting unexpected MFA prompts
 
 ### Investigation
 
 - What is being alerted?
 - Can you confirm this is a password spray?
-- Determine timeline for attack
-- Determine IP address/addresses of the attack
-- Filter successful sign-ins for this time period and IP address, including successful password but failed MFA
+- Determine timeline for attack.
+- Determine the IP address(es) of the attack.
+- Filter on successful sign-ins for this time period and IP address, including successful password but failed MFA
 - Check [MFA reporting](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-reporting)
-- Is there anything out of the ordinary on the account, such as new device, new OS, new IP address used. Use MCAS or Azure Information Protection to detect suspicious activity
-- Inform local authorities/third parties for assistance
-- If compromise suspected check for data exfiltration
-- Check associated account for suspicious behavior
+- Is there anything out of the ordinary on the account, such as new device, new OS, new IP address used? Use MCAS or Azure Information Protection to detect suspicious activity.
+- Inform local authorities/third parties for assistance.
+- If you suspect a compromise, check for data exfiltration.
+- Check associated account for suspicious behavior.
 - Check accounts of anyone working in the same office/delegated access - password hygiene (make sure they are not using the same password as the compromised account)
-- Run ADFS Help
+- Run ADFS help
 
 #### Mitigations
 
@@ -206,15 +206,15 @@ Get-MsolDomain -DomainName "contoso.com"
 
 ### Is the authentication federated or managed?
 
-If the authentication is federated, then successful sign-ins will be stored in the Azure AD. The failed sign-ins will be in their Identity Provider (IDP). For more information, see  [ADFS troubleshooting and event logging](https://docs.microsoft.com/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
+If the authentication is federated, then successful sign-ins will be stored in Azure AD. The failed sign-ins will be in their Identity Provider (IDP). For more information, see  [ADFS troubleshooting and event logging](https://docs.microsoft.com/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
 
-If the authentication type is managed, (Cloud only, password hash sync (PHS) or pass-through authentication (PTA)), then successful and failed sign-ins will be stored in the Azure AD sign-In logs.
+If the authentication type is managed, (Cloud only, password hash sync (PHS) or pass-through authentication (PTA)), then successful and failed sign-ins will be stored in the Azure AD sign-in logs.
 
 >[!Note]
 >The [Staged Rollout](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-staged-rollout) feature allows the tenant domain name to be federated but specific users to be managed. Determine if any users are members of this group.
 >
 
-### Is the Azure AD Connect Health enabled for ADFS?
+### Is Azure AD Connect Health enabled for ADFS?
 
 - The [RiskyIP report](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip)  will provide suspect IPs and date/time. Notifications should be enabled.
 - Also check the [federated sign-ins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)

@@ -219,35 +219,35 @@ The new [AzureADIncidentResponse](https://www.powershellgallery.com/packages/Azu
 
 This checklist will help you evaluate your investigation process and verify whether you have completed all the steps during investigation:
 
-- Review Initial phishing email
+- Review initial phishing email
 - Get the list of users who got this email
-- Get the latest Dates when the User had access to the mailbox
-- Is delegated Access configured on the mailbox?
+- Get the latest dates when the user had access to the mailbox
+- Is delegated access configured on the mailbox?
 - Is there a forwarding rule configured for the mailbox?
-- Review Mail Transport Rules
+- Review your Mail Transport Rules
 - Find the email(s)
-- Did the user read / open the email?
+- Did the user read or open the email?
 - Who else got the same email?
 - Did the email contain an attachment?
 - Was there payload in the attachment?
 - Check email header for true source of the sender
-- Verify IP Addresses to attackers/campaigns
+- Verify IP addresses to attackers/campaigns
 - Did the user click the link in the email?
 - On what endpoint was the email opened?
-- Was the Attachment payload executed?
-- Was the destination IP / URL touched or opened
+- Was the attachment payload executed?
+- Was the destination IP or URL touched or opened?
 - Was malicious code executed?
-- What sign-ins happened with the account - Federated Scenario
-- What sign-ins happened with the account - Managed Scenario
-- Investigate source IP address
-- Investigate device ID found
+- What sign-ins happened with the account for the federated scenario?
+- What sign-ins happened with the account for the managed scenario?
+- Investigate the source IP address
+- Investigate the device ID found
 - Investigate each App ID
 
 ## Investigation steps
 
 For this investigation, it is assumed that you either have a sample phishing email, or parts of it like the sender’s address, subject of the email, or parts of the message to start the investigation. Please also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
 
-This playbook is created with the intention that not all customers or investigation teams will have the full Microsoft 365 E5 or Azure AD Premium P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
+This playbook is created with the intention that not all Microsoft customers and their investigation teams will have the full Microsoft 365 E5 or Azure AD Premium P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
 
 ### [Get the list of users / identities who got the email](#findemail)
 
@@ -277,11 +277,11 @@ The following example query returns messages that were sent by *chatsuwloginsse
 
 For more details, see how to [search for and delete messages in your organization](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
 
-###  Use the search-mailbox cmdlet
+###  Use the Search-Mailbox cmdlet
 
 You can use the `Search-mailbox` cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.  
 
-The following example query searches Janes Smith mailbox for an email that contains the phrase Invoice in the subject and copies the results to IRMailbox in a folder named "Investigation."
+The following example query searches Jane Smith mailbox for an email that contains the phrase Invoice in the subject and copies the results to IRMailbox in a folder named "Investigation."
 
 ```powershell
 Search-Mailbox -Identity "Jane Smith" -SearchQuery "Subject:Invoice" -TargetMailbox "IRMailbox" -TargetFolder "Investigation" LogLevel Full
@@ -525,7 +525,7 @@ To verify or investigate IP addresses that have been identified from the previou
 - Public Sources:
     - [Ipinfo.io](http://ipinfo.io/) - Has a free option to obtain geo-location
     - [Censys.io](http://censys.io/) - Has a free option to obtain information about what their passive scans of the internet know
-    - [Abuseip.com](http://abuseip.com/)  - Has a free option that provides some geolocation
+    - [AbuseIPDB.com](https://www.abuseipdb.com/)  - Has a free option that provides some geolocation
     - Ask Bing and Google - Search on the IP address
 
 ### URL reputation

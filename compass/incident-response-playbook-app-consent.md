@@ -252,29 +252,29 @@ As per our observation, attackers have used a combination of the first six permi
 
 [![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-app-consent/Appconsent_flow.png)
 
-incident-response-playbook-phishing/PI_flow.png
-
 ## Checklist
 
 Use this checklist to perform application consent grant validation.
 
 - **Requirements**
 
-  Make sure you have access to the tenant as a Global Admin. This is a cloud-only account and is not part of your on-premises environment.
+Make sure you have access to the tenant as a Global Admin. This is a cloud-only account and is not part of your on-premises environment.
 
 - **Indicators of compromise (IoC)**
 
-    Check the following indicators of compromise (IoC)
+  Check the following indicators of compromise (IoC):
 
   - When did you notice the incident?
   - Date range of the incident (how far left is the goal post?)
   - Number of compromised accounts
   - Name(s) of compromised accounts
   - Roles of the compromised account(s)
-  - Highly privileged, standard user or a combination
+  - Are the compromised accounts highly privileged, a standard user, or a combination
+- 
 - **Roles**
 
-    You must be assigned with these roles:
+  You must be assigned with these roles:
+
   - Global administrator rights on the tenant to execute the script
   - Local Administrator role on the computer from which will run the script
 
@@ -316,7 +316,7 @@ You can use the Azure Active Directory portal to find applications to which any 
 
 ### Method 2 - Using PowerShell  
 
-There are several PowerShell tools you can use to investigate illicit consent grants.
+There are several PowerShell tools you can use to investigate illicit consent grants, such as:
 
 - HAWK tool
 - AzureAD incident response module

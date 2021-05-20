@@ -98,7 +98,7 @@ Install-Module -Name AzureAD -Verbose
 
 1. Download the [Get-AzureADPSPermissions.ps1](https://aka.ms/getazureadpermissions) script from GitHub to a folder from which you will run the script. The output file "*permissions.csv*" will also be written to this same folder.
 2. Open a PowerShell instance as an administrator and open the folder in which you saved the script.
-3. Connect to your directory using the Connect-AzureAD cmdlet. Here's an example.
+3. Connect to your directory using the `Connect-AzureAD` cmdlet. Here's an example.
 
     ```powershell
     Connect-AzureAD -tenantid "2b1a14ac-2956-442f-9577-1234567890ab" -AccountId "user1@contoso.onmicrosoft.com"

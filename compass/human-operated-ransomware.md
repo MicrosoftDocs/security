@@ -4,6 +4,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
+ms.prod: m365-security
 ms.topic: article
 localization_priority: Normal
 description: "Learn about how to protect yourself from human operated ransomware"

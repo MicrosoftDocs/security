@@ -130,7 +130,6 @@ You can also use the Splunk platform to set up alerts.
 ![workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)
 
 [![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](../Downloads/incident-response-playbook-workflows.pdf)
---> 
 
 [![Password spray investigation workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)](../Downloads/incident-response-playbook-workflows.pdf)
 
@@ -139,6 +138,10 @@ You can also:
 - See the password spray and other incident playbook workflows as a [PDF](../Downloads/incident-response-playbook-workflows.pdf).
 - Download the workflows as a [PDF](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.pdf).
 - Download the workflows as a [Visio file](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.vsdx).
+
+--> 
+
+[![Password spray investigation workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media//incident-response-playbook-password-spray/Pwdsprayflow.png)
 
 ## Checklist
 

@@ -246,10 +246,6 @@ As per our observation, attackers have used a combination of the first six permi
 ## Workflow
 
 <!--
-![appconsentworkflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)
-
-[![App consent grant investigation workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)]()
---> 
 
 [![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](../Downloads/incident-response-playbook-workflows.pdf)
 
@@ -258,6 +254,12 @@ You can also:
 - See the app consent grant and other incident playbook workflows as a [PDF](../Downloads/incident-response-playbook-workflows.pdf).
 - Download the workflows as a [PDF](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.pdf).
 - Download the workflows as a [Visio file](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.vsdx).
+
+![appconsentworkflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)
+
+--> 
+
+[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-app-consent/Appconsent_flow.png)
 
 
 ## Checklist

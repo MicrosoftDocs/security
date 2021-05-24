@@ -245,12 +245,22 @@ As per our observation, attackers have used a combination of the first six permi
 
 ## Workflow
 
-
 <!--
+
+[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](../Downloads/incident-response-playbook-workflows.pdf)
+
+You can also:
+
+- See the app consent grant and other incident playbook workflows as a [PDF](../Downloads/incident-response-playbook-workflows.pdf).
+- Download the workflows as a [PDF](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.pdf).
+- Download the workflows as a [Visio file](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.vsdx).
+
 ![appconsentworkflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)
+
 --> 
 
 [![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-app-consent/Appconsent_flow.png)
+
 
 ## Checklist
 
@@ -258,7 +268,7 @@ Use this checklist to perform application consent grant validation.
 
 - **Requirements**
 
-Make sure you have access to the tenant as a Global Admin. This is a cloud-only account and is not part of your on-premises environment.
+  Make sure you have access to the tenant as a Global Admin. This is a cloud-only account and is not part of your on-premises environment.
 
 - **Indicators of compromise (IoC)**
 
@@ -270,7 +280,7 @@ Make sure you have access to the tenant as a Global Admin. This is a cloud-only 
   - Name(s) of compromised accounts
   - Roles of the compromised account(s)
   - Are the compromised accounts highly privileged, a standard user, or a combination
-- 
+
 - **Roles**
 
   You must be assigned with these roles:
@@ -280,17 +290,23 @@ Make sure you have access to the tenant as a Global Admin. This is a cloud-only 
 
 - **PowerShell configuration**
 
-    Configure your PowerShell environment with the following:
+  Configure your PowerShell environment with the following:
   - Install the Azure AD PowerShell module.
   - Run the Windows PowerShell app with elevated privileges. (Run as administrator).
   - Configure PowerShell to run signed scripts.
-  - Download the *Get-AzureADPSPermissions.ps1* script.
+  - Download the [Get-AzureADPSPermissions.ps1](https://aka.ms/getazureadpermissions) script.
 
 - **Investigation triggers**
   - Account compromise
   - App Consent settings modified on the tenant
   - Alert/audit event status reason "risky application" detected
   - Noticed odd looking applications
+
+<!--
+
+You can also download the app consent grant and other incident playbook checklists as an [Excel file](https://github.com/MicrosoftDocs/security/raw/live/Downloads/incident-response-playbook-workflows.xlsx).
+
+--> 
 
 ## Investigation steps
 
@@ -320,7 +336,7 @@ There are several PowerShell tools you can use to investigate illicit consent gr
 
 - HAWK tool
 - AzureAD incident response module
-- The Get-AzureADPSPermissions.ps1 script from GitHub
+- The [Get-AzureADPSPermissions.ps1](https://aka.ms/getazureadpermissions) script from GitHub
 
 PowerShell is the easiest tool and does not require you to modify anything in the tenancy. We are going to base our investigation on the public documentation from the Illicit Consent Grant attack.
 

@@ -302,7 +302,11 @@ Use this checklist to perform application consent grant validation.
   - Alert/audit event status reason "risky application" detected
   - Noticed odd looking applications
 
+<!--
+
 You can also download the app consent grant and other incident playbook checklists as an [Excel file](https://github.com/MicrosoftDocs/security/raw/live/Downloads/incident-response-playbook-workflows.xlsx).
+
+--> 
 
 ## Investigation steps
 

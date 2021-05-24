@@ -127,6 +127,7 @@ You can also use the Splunk platform to set up alerts.
 ## Workflow
 
 <!--
+
 ![workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)
 
 [![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](../Downloads/incident-response-playbook-workflows.pdf)
@@ -192,8 +193,11 @@ Check the [References](#references) section for guidance on how to enable featur
 - Security posture review/improvements
 - [Plan to run regular attack simulators](/microsoft-365/security/office-365-security/attack-simulator)
 
+<!--
 
 You can also download the password spray and other incident playbook checklists as an [Excel file](https://github.com/MicrosoftDocs/security/raw/live/Downloads/incident-response-playbook-workflows.xlsx).
+
+--> 
 
 ## Investigation steps
 

@@ -210,19 +210,6 @@ The new [AzureADIncidentResponse](https://www.powershellgallery.com/packages/Azu
 ## Workflow
 
 <!--
-![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)
-
-[![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-phishing/PI_flow.png)
-
-C:\DOCS\GitHub\OfficeDocs-Enterprise\Enterprise\downloads
-https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx
-
-
-C:\DOCS\GitHub\security-pr\Downloads
-https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.vsdx
-
-
-https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.xlsx
 
 
 [![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](../Downloads/incident-response-playbook-workflows.pdf)
@@ -236,7 +223,6 @@ You can also:
 --> 
 
 [![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-phishing/PI_flow.png)
-
 
 
 ## Checklist
@@ -267,7 +253,11 @@ This checklist will help you evaluate your investigation process and verify whet
 - Investigate the device ID found
 - Investigate each App ID
 
+<!--
+
 You can also download the phishing and other incident playbook checklists as an [Excel file](https://github.com/MicrosoftDocs/security/raw/live/Downloads/incident-response-playbook-workflows.xlsx).
+
+--> 
 
 ## Investigation steps
 

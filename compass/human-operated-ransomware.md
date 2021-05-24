@@ -14,7 +14,7 @@ description: "Learn about how to protect your organization from human-operated r
 
 Human-operated ransomware is a large and growing attack trend that represents a threat to organizations in every industry.
 
-Human-operated ransomware is different than commodity ransomware. These “hands-on-keyboard” attacks target the organization rather than a single device and leverage human attackers’ knowledge of common system and security misconfigurations to infiltrate the organization. The human attackers can navigate the enterprise network and adapt to the environment and it's weak points as they go. 
+Human-operated ransomware is different than commodity ransomware. These “hands-on-keyboard” attacks target the organization rather than a single device and leverage human attackers’ knowledge of common system and security misconfigurations to infiltrate the organization. The human attackers can navigate the enterprise network and adapt to the environment and its weak points as they go. 
 
 Hallmarks of these human-operated ransomware attacks typically include credential theft and lateral movement and can result in deployment of a ransomware payload to high business impact resources the attackers choose.
 

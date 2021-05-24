@@ -39,7 +39,7 @@ You can become a Microsoft-compatible FIDO2 security key vendor through the foll
 | Ensurity | [https://www.ensurity.com/contact](https://www.ensurity.com/contact) |
 | Excelsecu | [https://www.excelsecu.com/productdetail/esecufido2secu.html](https://www.excelsecu.com/productdetail/esecufido2secu.html) |
 | Feitian | [https://ftsafe.us/pages/microsoft](https://ftsafe.us/pages/microsoft) |
-| Gemalto (Thales Group) | [https://safenet.gemalto.com/multi-factor-authentication/authenticators/passwordless-authentication/](https://safenet.gemalto.com/multi-factor-authentication/authenticators/passwordless-authentication/) |
+| Gemalto (Thales Group) | [https://safenet.gemalto.com/access-management/authenticators/fido-devices](https://safenet.gemalto.com/access-management/authenticators/fido-devices) |
 | Go-Trust ID | [https://www.gotrustid.com/](https://www.gotrustid.com/) |
 | HID | [https://www.hidglobal.com/contact-us](https://www.hidglobal.com/contact-us) |
 | Hypersecu | [https://www.hypersecu.com/hyperfido](https://www.hypersecu.com/hyperfido) |

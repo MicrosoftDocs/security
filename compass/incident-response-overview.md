@@ -1,6 +1,6 @@
 ---
 title: Incident response overview | Microsoft Docs
-description: Understand the role of ncident response in security operations.
+description: Understand the role of incident response in security operations.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: dansimp

@@ -28,4 +28,4 @@ This figure shows how this extortion-based attack that uses privileged access is
 
 ## Additional resources
 
-See this [blog post](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) from the Microsoft 365 Defender Threat Intelligence Team for more information and attack chain analysis of ransomware attacks.
+See this [blog post](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) from the Microsoft 365 Defender Threat Intelligence Team for more information and attack chain analysis of actual human-operated ransomware attacks.

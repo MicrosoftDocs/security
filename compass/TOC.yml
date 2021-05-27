@@ -25,16 +25,20 @@
           href: security-operations.md
         - name: Capabilities
           href: security-operations-capabilities.md
-        - name: Incident response playbooks
+        - name: Incident response
           items:
-            - name: Introduction
-              href: incident-response-playbooks.md
-            - name: Phishing
-              href: incident-response-playbook-phishing.md
-            - name: Password spray
-              href: incident-response-playbook-password-spray.md
-            - name: App consent grant
-              href: incident-response-playbook-app-consent.md
+            - name: Overview
+              href: incident-response-overview.md
+            - name: Playbooks
+              items:
+                - name: Introduction
+                  href: incident-response-playbooks.md
+                - name: Phishing
+                  href: incident-response-playbook-phishing.md
+                - name: Password spray
+                  href: incident-response-playbook-password-spray.md
+                - name: App consent grant
+                  href: incident-response-playbook-app-consent.md
     - name: Identity and access management
       items:
         - name: Videos and slides

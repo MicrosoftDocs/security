@@ -126,23 +126,13 @@ You can also use the Splunk platform to set up alerts.
 
 ## Workflow
 
-<!--
-
-![workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)
-
-[![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](../Downloads/incident-response-playbook-workflows.pdf)
-
-[![Password spray investigation workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)](../Downloads/incident-response-playbook-workflows.pdf)
+[![Password spray investigation workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media//incident-response-playbook-password-spray/Pwdsprayflow.png)
 
 You can also:
 
-- See the password spray and other incident playbook workflows as a [PDF](../Downloads/incident-response-playbook-workflows.pdf).
-- Download the workflows as a [PDF](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.pdf).
-- Download the workflows as a [Visio file](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.vsdx).
+- Download the password spray and other incident response playbook workflows as a [PDF](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.pdf).
+- Download the password spray and other incident response playbook workflows as a [Visio file](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.vsdx).
 
---> 
-
-[![Password spray investigation workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media//incident-response-playbook-password-spray/Pwdsprayflow.png)
 
 ## Checklist
 
@@ -193,11 +183,7 @@ Check the [References](#references) section for guidance on how to enable featur
 - Security posture review/improvements
 - [Plan to run regular attack simulators](/microsoft-365/security/office-365-security/attack-simulator)
 
-<!--
-
-You can also download the password spray and other incident playbook checklists as an [Excel file](https://github.com/MicrosoftDocs/security/raw/live/Downloads/incident-response-playbook-workflows.xlsx).
-
---> 
+You can also download the password spray and other incident playbook checklists as an [Excel file](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Checklists.xlsx).
 
 ## Investigation steps
 

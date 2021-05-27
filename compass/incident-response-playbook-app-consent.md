@@ -245,21 +245,12 @@ As per our observation, attackers have used a combination of the first six permi
 
 ## Workflow
 
-<!--
-
-[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](../Downloads/incident-response-playbook-workflows.pdf)
+[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-app-consent/Appconsent_flow.png)
 
 You can also:
 
-- See the app consent grant and other incident playbook workflows as a [PDF](../Downloads/incident-response-playbook-workflows.pdf).
-- Download the workflows as a [PDF](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.pdf).
-- Download the workflows as a [Visio file](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.vsdx).
-
-![appconsentworkflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)
-
---> 
-
-[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-app-consent/Appconsent_flow.png)
+- Download the app consent grant and other incident response playbook workflows as a [PDF](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.pdf).
+- Download the app consent grant and other incident response playbook workflows as a [Visio file](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.vsdx).
 
 
 ## Checklist
@@ -302,11 +293,7 @@ Use this checklist to perform application consent grant validation.
   - Alert/audit event status reason "risky application" detected
   - Noticed odd looking applications
 
-<!--
-
-You can also download the app consent grant and other incident playbook checklists as an [Excel file](https://github.com/MicrosoftDocs/security/raw/live/Downloads/incident-response-playbook-workflows.xlsx).
-
---> 
+You can also download the app consent grant and other incident playbook checklists as an [Excel file](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Checklists.xlsx).
 
 ## Investigation steps
 

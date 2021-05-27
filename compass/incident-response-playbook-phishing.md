@@ -209,21 +209,12 @@ The new [AzureADIncidentResponse](https://www.powershellgallery.com/packages/Azu
 
 ## Workflow
 
-<!--
-
-
-[![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](../Downloads/incident-response-playbook-workflows.pdf)
+[![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-phishing/PI_flow.png)
 
 You can also:
 
-- See the phishing and other incident playbook workflows as a [PDF](../Downloads/incident-response-playbook-workflows.pdf).
-- Download the workflows as a [PDF](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.pdf).
-- Download the workflows as a [Visio file](https://github.com/MicrosoftDocs/security/raw/live/downloads/incident-response-playbook-workflows.vsdx).
-
---> 
-
-[![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-phishing/PI_flow.png)
-
+- Download the phishing and other incident response playbook workflows as a [PDF](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.pdf).
+- Download the phishing and other incident response playbook workflows as a [Visio file](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.vsdx).
 
 ## Checklist
 
@@ -253,11 +244,7 @@ This checklist will help you evaluate your investigation process and verify whet
 - Investigate the device ID found
 - Investigate each App ID
 
-<!--
-
-You can also download the phishing and other incident playbook checklists as an [Excel file](https://github.com/MicrosoftDocs/security/raw/live/Downloads/incident-response-playbook-workflows.xlsx).
-
---> 
+You can also download the phishing and other incident playbook checklists as an [Excel file](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Checklists.xlsx).
 
 ## Investigation steps
 

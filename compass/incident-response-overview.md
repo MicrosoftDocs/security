@@ -1,6 +1,6 @@
 ---
 title: Incident response overview | Microsoft Docs
-description: Understand the role of ncident response in security operations.
+description: Understand the role of incident response in security operations.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: dansimp
@@ -19,7 +19,7 @@ For more information on security operations roles and responsibilities, see [Clo
  
 ## Next steps
 
-- See how to [investigate incidents for Azure Sentinel](/azure/sentinel/tutorial-investigate-cases_).
+- See how to [investigate incidents for Azure Sentinel](/azure/sentinel/tutorial-investigate-cases).
 - See how to [investigate incidents for Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview).
 - Use the incident response playbooks at [https://aka.ms/IRplaybooks]( https://aka.ms/IRplaybooks).
 

@@ -19,7 +19,7 @@ For more information on security operations roles and responsibilities, see [Clo
  
 ## Next steps
 
-- See how to [investigate incidents for Azure Sentinel](/azure/sentinel/tutorial-investigate-cases_).
+- See how to [investigate incidents for Azure Sentinel](/azure/sentinel/tutorial-investigate-cases).
 - See how to [investigate incidents for Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview).
 - Use the incident response playbooks at [https://aka.ms/IRplaybooks]( https://aka.ms/IRplaybooks).
 

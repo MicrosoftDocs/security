@@ -40,7 +40,7 @@ guidance to assess your readiness and to help you build a plan to get to
 Zero Trust.
 
 
-**Follow the steps below to mature your approach to security and optimize how Zero Trust is implemented:**
+**You can organize your approach to Zero Trust around these key technology pillars:**
 
 <br/>
 
@@ -135,3 +135,9 @@ Zero Trust.
 </table>
 
 With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
+
+## Next steps
+
+- [Identity deployment guidance](identity.md)
+- [Identity integration guidance](isv/identity-isv-integration-overview.md)
+- [Identity app development guidance](identity-developer.md)

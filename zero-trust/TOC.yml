@@ -1,6 +1,6 @@
 - name: Zero Trust Overview
   href: index.md
-- name: Zero Trust for IT Admins
+- name: Deployment guidance
   expanded: false
   items:
     - name: Identity
@@ -17,7 +17,7 @@
       href: networks.md
     - name: Visibility, automation, and orchestration
       href: visibility-automation-orchestration.md
-- name: Zero Trust for ISVs
+- name: Integration guidance
   expanded: false
   items: 
     - name: Identity
@@ -34,7 +34,7 @@
           href: isv/secure-hybrid-access.md
         - name: Become a compatible FIDO2 vendor
           href: isv/fido2-hardware-vendor.md
-- name: Zero Trust for Developers
+- name: App development guidance
   expanded: false
   items: 
     - name: Identity

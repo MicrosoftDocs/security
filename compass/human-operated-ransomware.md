@@ -24,7 +24,7 @@ This figure shows how this extortion-based attack that uses maintenance and secu
 
 ![The impact and likelihood that human-operated ransomeware attacks will continue](media/ransomware-extortion-based-attack.png)
 
-To provide the best protection against any kind of ransomware attack, Microsoft recommends that you:
+To provide the best protection against ransomware attacks, Microsoft recommends that at a minimum you:
 
 1. Use an effective email filtering solution
 

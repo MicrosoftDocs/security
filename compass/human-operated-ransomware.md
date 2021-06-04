@@ -7,24 +7,69 @@ audience: Admin
 ms.prod: m365-security
 ms.topic: article
 localization_priority: Normal
-description: "Learn about how to protect your organization from human-operated ransomware"
+description: "Learn about how to protect your organization from human-operated ransomware."
 ---
 
 # Human-operated ransomware
 
 Human-operated ransomware is a large and growing attack trend that represents a threat to organizations in every industry.
 
-Human-operated ransomware is different than commodity ransomware. These “hands-on-keyboard” attacks target the organization rather than a single device and leverage human attackers’ knowledge of common system and security misconfigurations to infiltrate the organization. The human attackers can navigate the enterprise network and adapt to the environment and its weak points as they go. 
+Human-operated ransomware is different than commodity ransomware. These “hands-on-keyboard” attacks target an organization rather than a single device and leverage human attackers’ knowledge of common system and security misconfigurations to infiltrate the organization, navigate the enterprise network, and adapt to the environment and its weaknesses s as they go. 
 
 Hallmarks of these human-operated ransomware attacks typically include credential theft and lateral movement and can result in deployment of a ransomware payload to high business impact resources the attackers choose.
 
 These attacks can be catastrophic to business operations and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware that only requires malware remediation, human-operated ransomware will continue to threaten your business operations after the initial encounter. 
 
-To better protect your organization, Microsoft recommends that you use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation, which includes [securing privileged access](https://aka.ms/spa).
-
-This figure shows how this extortion-based attack that uses privileged access is growing in impact and likelihood.
+This figure shows how this extortion-based attack that uses maintenance and security configuration gaps and privileged access is growing in impact and likelihood.
 
 ![The impact and likelihood that human-operated ransomeware attacks will continue](media/ransomware-extortion-based-attack.png)
+
+To provide the best protection against any kind of ransomware attack, Microsoft recommends that you:
+
+1. Use an effective email filtering solution
+
+   According to the [Microsoft Security Intelligence Report Volume 24 of 2018](https://clouddamcdnprodep.azureedge.net/gdc/gdc09FrGq/original), spam and phishing emails are still the most common delivery method for ransomware infections. To effectively stop ransomware at its entry point, you must adopt an email security service that ensures all email content and headers entering and leaving the organization are scanned for spam, viruses, and other advanced malware threats. 
+
+   By adopting an enterprise-grade email protection solution, most cybersecurity threats against an organization will be blocked at ingress and egress.
+
+   **HOW:** Use [Exchange Online Protection (EOP)](/microsoft-365/security/office-365-security/exchange-online-protection-overview), the Microsoft 365 and Office 365 cloud-based filtering service that protects your organization' Exchange Online mailboxes against spam, malware, and other email threats. 
+
+2. Deploy regular hardware and software systems patching and effective vulnerability management
+
+   A vital defense against cybersecurity attacks is the application of security updates and patches as soon as the software publishers release them. 
+
+   A prominent example of this failure was the WannaCry ransomware events in 2017, one of the largest global cybersecurity attacks in the history of the internet, which used a leaked vulnerability in Windows networking Server Message Block (SMB) protocol, for which Microsoft had released a patch nearly two months before the first publicized incident. 
+
+   Regular patching and an effective vulnerability management program are important measures to defend against ransomware and other forms of malware.
+
+   **HOW:** Use [update channels](/microsoft-365/enterprise/deploy-update-channels-examples) for recommendations on updates for Windows 10 and Microsoft 365 Apps for Enterprise (Windows 10).
+
+3. Use up to date antivirus and an endpoint detection and response (EDR) solutions
+
+   While owning an antivirus solution alone does not ensure absolute protection against viruses and other advanced computer threats, ensure that your antivirus solutions are kept up to date with your software publishers. 
+
+   Attackers invest heavily in the creation of new viruses and exploits, while vendors are left playing catch-up by releasing daily updates to their antivirus database engines. 
+
+   EDR solutions collect and store large volumes of data from endpoints and provide real-time host-based, file-level monitoring and visibility to systems. The data sets and alerts generated by an EDR solution can help stop advanced threats and are often leveraged for responding to security incidents.
+
+4. Separate administrative and privileged credentials from standard credentials
+
+   Separate your system administrative accounts from your standard user accounts to ensure those administrative accounts are not useable across multiple systems. Separating these privileged accounts not only enforces proper access control but also ensures that a compromise of a single standard user account doesn’t lead to the compromise of your entire IT infrastructure. 
+
+   **HOW:** To effectively reduce your credential attack surface, use Microsoft support for [Azure Multi-Factor Authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks) to require stronger authentication for privileged accounts, [Azure Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/) for just-in-time use of privileged accounts, and [Privileged Access Management (PAM)](/microsoft-365/compliance/privileged-access-management-solution-overview) for just-in-time access to Microsoft 365 tasks that need elevated permissions.
+
+5. Implement effective application allowlists
+
+   You need to restrict the applications that can run within an IT infrastructure. Application allowlists ensure only applications that have been tested and approved by an organization can run on the systems within the infrastructure. While this can be tedious and presents several IT administrative challenges, this strategy has been proven effective.
+
+   **HOW:** For Microsoft 365 apps, use [Azure AD Conditional Access](/azure/active-directory/conditional-access/app-based-conditional-access) to require approved apps.
+
+6. Regularly back up critical systems and files
+
+   The ability to recover to a known good state is the most critical strategy of any information security incident plan, especially ransomware. Therefore, to ensure the success of this process, an organization must validate that all its critical systems, applications, and files are regularly backed up and that those backups are regularly tested to ensure they are recoverable. Ransomware is known to encrypt or destroy any file it comes across, and it can often make them unrecoverable; consequently, it’s of utmost importance that all impacted files can be easily recovered from a good backup stored at a secondary location not impacted by the ransomware attack.
+
+For additional information and details, see the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation, which includes [securing privileged access](https://aka.ms/spa).
+
 
 ## Additional resources
 

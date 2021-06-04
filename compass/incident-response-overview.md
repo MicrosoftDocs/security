@@ -36,14 +36,18 @@ In the safety of a trial or paid sandbox subscription, you can:
 - Identify, document, and share relevant data sources to model and detect adversary actions.
 - Validate and tune detection capabilities.
 
-The learnings from Simuland lab environment scenarios can then be implemented in production.
+The learnings from Simuland lab environment scenarios can then be implemented in your production envronment and security processes.
 
 After reading an overview of [Simuland](https://www.microsoft.com/security/blog/2021/05/20/simuland-understand-adversary-tradecraft-and-improve-detection-strategies/), see the [Simuland GitHub repository](https://github.com/Azure/SimuLand).
  
 ## Next steps
 
-- See how to [investigate incidents for Azure Sentinel](/azure/sentinel/tutorial-investigate-cases).
-- See how to [investigate incidents for Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview).
+If you are just starting out in incident response, see the [Incident Response Reference Guide](https://download.microsoft.com/download/4/f/f/4ff621f9-6f44-437a-80c7-2624e3d2ce80/IR-Reference-Guide.pdf) for an overview of preparing your organization and what to do during an incident.
+
+If you are experienced with incident response: 
+
+- See how to [investigate incidents in Azure Sentinel](/azure/sentinel/tutorial-investigate-cases).
+- See how to [investigate incidents in Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview).
 - Use the incident response playbooks at [https://aka.ms/IRplaybooks](https://aka.ms/IRplaybooks).
   - [Phishing](incident-response-playbook-phishing.md)
   - [Password spray](incident-response-playbook-password-spray.md)

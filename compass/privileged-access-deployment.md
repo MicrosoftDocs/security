@@ -267,7 +267,6 @@ To configure integration of Windows Defender for Endpoint and Microsoft Endpoint
 1. On the **Configuration settings** page, configure the following options in **Endpoint Detection and Response**:
   
    * **Sample sharing for all files**: Returns or sets the Microsoft Defender Advanced Threat Protection Sample Sharing configuration parameter.
-   * **Expedite telemetry reporting frequency**: For devices that are at high risk, **Enable** this setting so it reports telemetry to the Microsoft Defender ATP service more frequently.
 
      [Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) has more details on these Microsoft Defender ATP settings.
 

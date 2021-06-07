@@ -5,7 +5,7 @@ description: Configuring and deploying components of a privileged access solutio
 ms.service: security
 ms.subservice: 
 ms.topic: how-to
-ms.date: 12/15/2020
+ms.date: 06/07/2021
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -264,7 +264,7 @@ To configure integration of Windows Defender for Endpoint and Microsoft Endpoint
 1. For **Platform**, select **Windows 10 and Later**.
 1. For **Profile type**, select **Endpoint detection and response**, and then select **Create**.
 1. On the **Basics** page, enter a *PAW - Defender for Endpoint* in the Name field and *Description* (optional) for the profile, then choose **Next**.
-1. On the **Configuration settings** page, configure the following options in **Endpoint Detection and Response**:
+1. On the **Configuration settings** page, configure the following option in **Endpoint Detection and Response**:
   
    * **Sample sharing for all files**: Returns or sets the Microsoft Defender Advanced Threat Protection Sample Sharing configuration parameter.
 

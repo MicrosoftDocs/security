@@ -183,4 +183,4 @@ After reading an overview of [Simuland](https://www.microsoft.com/security/blog/
 
 - [Security operations functions](/azure/cloud-adoption-framework/organize/cloud-security-operations-center) from the Cloud Adoption Framework for Azure
 - [SOC Process Framework Workbook for Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-azure-sentinel-soc-process-framework-workbook/ba-p/2339315)
-- [Additional security guidance from Microsoft](https://docs.microsoft.com/security/) 
+- [Additional security guidance from Microsoft](/security/) 

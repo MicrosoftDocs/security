@@ -11,7 +11,7 @@ ms.prod: m365-security
 
 # Microsoft security best practices for security operations
 
-Security operations maintain and restores the security assurances of the system
+Security operations maintain and restore the security assurances of the system
 as live adversaries attack it. The tasks of security operations are
 described well by the NIST Cybersecurity Framework functions of Detect, Respond,
 and Recover.
@@ -103,10 +103,10 @@ are typically high quality (low false positive rate).
 
 Because many organizations may use multiple cloud platforms and need a unified
 view across the enterprise, you should ensure these native detections and
-controls feed a centralize SIEM or other tool. We don’t recommend trying to
+controls feed a centralized SIEM or other tool. We don’t recommend trying to
 substitute generalized log analysis tools and queries instead of native
 detections and controls. These tools can offer numerous values for proactive
-hunting activities, but getting to a high-quality alert with these tools
+hunting activities but getting to a high-quality alert with these tools
 requires application of deep expertise and time that could be better spent on
 hunting and other activities.
 
@@ -141,8 +141,7 @@ The data you collect should be focused on supporting one or more of these operat
 
 -   Proactive **hunting** activities
 
-Integrating more data can allow you to enrich alerts with additional context that enable rapid response and remediation (filter false positives, and elevate
-true positives, etc.), but collection is not detection. If you don’t have a reasonable expectation that the data will provide value (for example, high volume of firewall denies events), you may deprioritize integration of these events.
+Integrating more data can allow you to enrich alerts with additional context that enable rapid response and remediation (filter false positives, and elevate true positives, etc.), but collection is not detection. If you don’t have a reasonable expectation that the data will provide value (for example, high volume of firewall denies events), you may deprioritize integration of these events.
 
 ## Incident response playbooks
 
@@ -156,6 +155,32 @@ Examine guidance for identifying and investigating these types of attacks:
 
 Review [security operations capabilities](security-operations-capabilities.md).
 
+## Simuland
+
+[Simuland](https://www.microsoft.com/security/blog/2021/05/20/simuland-understand-adversary-tradecraft-and-improve-detection-strategies/) is an open-source initiative to deploy lab environments and end-to-end simulations that:
+
+- Reproduce well-known techniques used in real attack scenarios.
+- Actively test and verify the effectiveness of related Microsoft 365 Defender, Azure Defender, and Azure Sentinel detections.
+- Extend threat research using telemetry and forensic artifacts generated after each simulation exercise.
+
+Simuland lab environments provide use cases from a variety of data sources including telemetry from  Microsoft 365 Defender security products, Azure Defender, and other integrated data sources through Azure Sentinel data connectors.
+
+In the safety of a trial or paid sandbox subscription, you can:
+
+- Understand the underlying behavior and functionality of adversary tradecraft.
+- Identify mitigations and attacker paths by documenting preconditions for each attacker action.
+- Expedite the design and deployment of threat research lab environments.
+- Stay up to date with the latest techniques and tools used by real threat actors.
+- Identify, document, and share relevant data sources to model and detect adversary actions.
+- Validate and tune detection capabilities.
+
+The learnings from Simuland lab environment scenarios can then be implemented in production.
+
+After reading an overview of [Simuland](https://www.microsoft.com/security/blog/2021/05/20/simuland-understand-adversary-tradecraft-and-improve-detection-strategies/), see the [Simuland GitHub repository](https://github.com/Azure/SimuLand).
+
+
 ## See also
 
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
+- [Security operations functions](/azure/cloud-adoption-framework/organize/cloud-security-operations-center) from the Cloud Adoption Framework for Azure
+- [SOC Process Framework Workbook for Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-azure-sentinel-soc-process-framework-workbook/ba-p/2339315)
+- [Additional security guidance from Microsoft](/security/) 

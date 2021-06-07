@@ -24,15 +24,15 @@ This guidance sets up all of the profiles for all three security levels and shou
 
 The concepts covered in this guide assume you have Microsoft 365 Enterprise E5 or an equivalent SKU. Some of the recommendations in this guide can be implemented with lower SKUs. For more information, see [Microsoft 365 Enterprise licensing](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
-To automate license provisioning, consider [group-based licensing](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign) for your users.
+To automate license provisioning, consider [group-based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign) for your users.
 
 ## Azure Active Directory configuration
 
-Azure Active Directory (Azure AD) manages users, groups, and devices for your administrator workstations. Enable identity services and features with an [administrator account](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
+Azure Active Directory (Azure AD) manages users, groups, and devices for your administrator workstations. Enable identity services and features with an [administrator account](/azure/active-directory/roles/permissions-reference).
 
 When you create the secured workstation administrator account, you expose the account to your current workstation. Make sure you use a known safe device to do this initial configuration and all global configuration. To reduce the attack exposure for the first-time experience, consider following the [guidance to prevent malware infections](/windows/security/threat-protection/intelligence/prevent-malware-infection).
 
-Require multi-factor authentication, at least for your administrators. See [Conditional Access: Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) for implementation guidance.
+Require multi-factor authentication, at least for your administrators. See [Conditional Access: Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) for implementation guidance.
 
 ### Azure AD users and groups
 
@@ -60,7 +60,7 @@ Next, you create four groups: **Secure Workstation Users**, **Secure Workstation
 
 From the Azure portal, browse to **Azure Active Directory** > **Groups** > **New group**.
 
-1. For the workstation users group, you might want to configure [group-based licensing](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-groups-assign) to automate provisioning of licenses to users.
+1. For the workstation users group, you might want to configure [group-based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign) to automate provisioning of licenses to users.
 1. For the workstation users group, enter:
 
    * **Group type** - Security
@@ -112,7 +112,7 @@ This method requires that users of the VIP, DevOps, and Privileged workstations 
 1. Go to **Azure Active Directory** > **Devices** > **Device settings**.
 1. Select **None** under **Additional local administrators on Azure AD joined devices**.
 
-Refer to [How to manage the local administrators group on Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) for details on how to manage members of the local administrators group.
+Refer to [How to manage the local administrators group on Azure AD joined devices](/azure/active-directory/devices/assign-local-admin) for details on how to manage members of the local administrators group.
 
 #### Require multi-factor authentication to join devices
 
@@ -134,11 +134,11 @@ These steps allow you to manage any device with Microsoft Endpoint Manager. For 
 
 ### Azure AD Conditional Access
 
-Azure AD Conditional Access can help restrict privileged administrative tasks to compliant devices. Predefined members of the **Secure Workstation Users** group are required to perform multi-factor authentication when signing in to cloud applications. A best practice is to exclude emergency access accounts from the policy. For more information, see [Manage emergency access accounts in Azure AD](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access).
+Azure AD Conditional Access can help restrict privileged administrative tasks to compliant devices. Predefined members of the **Secure Workstation Users** group are required to perform multi-factor authentication when signing in to cloud applications. A best practice is to exclude emergency access accounts from the policy. For more information, see [Manage emergency access accounts in Azure AD](/azure/active-directory/roles/security-emergency-access).
 
 #### Conditional Access only allowing secured workstation ability to access Azure portal
 
-Azure AD offers the ability to manage and restrict, who and what can access your Azure cloud management portal. Enabling [Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) will assure that only your secure workstation can manage or change resources. It's essential that while deploying this feature you consider, if [emergency access](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access) functionality can or should be used only for extreme cases and the account managed through policy.
+Azure AD offers the ability to manage and restrict, who and what can access your Azure cloud management portal. Enabling [Conditional Access](/azure/active-directory/conditional-access/overview) will assure that only your secure workstation can manage or change resources. It's essential that while deploying this feature you consider, if [emergency access](/azure/active-directory/roles/security-emergency-access) functionality can or should be used only for extreme cases and the account managed through policy.
 
  > [!NOTE]
  > You will need to create a user group, and include your emergency user that can bypass the Conditional Access policy. For our example we have a security group called **Emergency BreakGlass**
@@ -155,7 +155,7 @@ Azure AD offers the ability to manage and restrict, who and what can access your
 
 This policy set will ensure that your Administrators must use a compliant Windows device, which is set by Microsoft Endpoint Manager, and Microsoft Defender for Endpoint.
 
-Organizations should also consider blocking legacy authentication protocols in their environments. There are multiple ways to accomplish this task, for more information about blocking legacy authentication protocols, see the article, [How to: Block legacy authentication to Azure AD with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication).
+Organizations should also consider blocking legacy authentication protocols in their environments. There are multiple ways to accomplish this task, for more information about blocking legacy authentication protocols, see the article, [How to: Block legacy authentication to Azure AD with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).
 
 ## Microsoft Intune configuration
 
@@ -272,7 +272,7 @@ To configure integration of Windows Defender for Endpoint and Microsoft Endpoint
 
 1. Select **Next** to open the **Scope tags** page. Scope tags are optional. Select **Next** to continue.
 
-1. On the **Assignments** page, select *Secure Workstation* group. For more information on assigning profiles, see [Assign user and device profiles](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).
+1. On the **Assignments** page, select *Secure Workstation* group. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
 
    Select **Next**.
 
@@ -341,7 +341,7 @@ Windows Defender Firewall policy settings are included in the Endpoint Protectio
 > [!NOTE]
 > There are two rules defined for each rule in the Microsoft Defender Firewall configuration. To restrict the inbound and outbound rules to Windows Services, e.g. DNS Client, both the service name, DNSCache, and the executable path, C:\Windows\System32\svchost.exe, need to be defined as separate rule rather than a single rule that is possible using Group Policy.
 
-You can make additional changes to the management of both inbound and outbound rules as needed for your permitted and blocked services. For more information, see [Firewall configuration service](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/create-windows-firewall-rules-in-intune).
+You can make additional changes to the management of both inbound and outbound rules as needed for your permitted and blocked services. For more information, see [Firewall configuration service](/windows/security/threat-protection/windows-firewall/create-windows-firewall-rules-in-intune).
 
 ### URL lock proxy
 
@@ -385,7 +385,7 @@ The secure workstation moves to a truly hardened state when local applications a
 
 An Intune-managed copy of the [Company Portal](/Intune/store-apps-company-portal-app) gives you on-demand access to additional tools that you can push down to users of the secured workstations.
 
-In a secured mode, application installation is restricted to managed applications that are delivered by Company Portal. However, installing the Company Portal requires access to Microsoft Store. In your secured solution, you [add and assign the Windows 10 Company Portal app for Autopilot provisioned devices](https://docs.microsoft.com/mem/intune/apps/store-apps-company-portal-autopilot).
+In a secured mode, application installation is restricted to managed applications that are delivered by Company Portal. However, installing the Company Portal requires access to Microsoft Store. In your secured solution, you [add and assign the Windows 10 Company Portal app for Autopilot provisioned devices](/mem/intune/apps/store-apps-company-portal-autopilot).
 
 > [!NOTE]
 > Make sure you assign the Company Portal app to the **Secure Workstation Device Tag** group used to assign the Autopilot profile.
@@ -464,7 +464,7 @@ vProvide a **Name** for the script and specify the **Script location**.
 
 ## Validate and test your deployment with your first device
 
-This enrollment assumes that you will use a physical computing device. It is recommended that as part of the procurement process that the OEM, Reseller, distributor, or partner [register devices in Windows Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices).
+This enrollment assumes that you will use a physical computing device. It is recommended that as part of the procurement process that the OEM, Reseller, distributor, or partner [register devices in Windows Autopilot](/mem/autopilot/add-devices).
 
 However for testing it is possible to stand up [Virtual Machines](/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm) as a test scenario. However note enrollment of personally joined devices will need to be revised to allow this method of joining a client.
 

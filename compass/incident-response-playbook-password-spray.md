@@ -156,7 +156,7 @@ You can also:
 - Is there anything out of the ordinary on the account, such as new device, new OS, new IP address used? Use MCAS or Azure Information Protection to detect suspicious activity.
 - Inform local authorities/third parties for assistance.
 - If you suspect a compromise, check for data exfiltration.
-- Check associated account for suspicious behavior.
+- Check associated account for suspicious behavior and look to correlate to other possible accounts and services as well as other malicious IP addresses.
 - Check accounts of anyone working in the same office/delegated access - password hygiene (make sure they are not using the same password as the compromised account)
 - Run ADFS help
 
@@ -176,6 +176,7 @@ Check the [References](#references) section for guidance on how to enable featur
 #### Recovery
 
 - Tag bad IP address in MCAS, SIEM, ADFS and Azure AD
+- Check for other forms of mailbox persistence such as forwarding rules or additional delegations added 
 - [MFA as primary authentication](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)
 - [Configure SIEM integrations with Cloud](/microsoft-365/security/office-365-security/siem-server-integration)
 - Configure Alerting - Identity Protection, ADFS Health Connect, SIEM and Cloud App Security

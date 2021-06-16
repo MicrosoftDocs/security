@@ -1,5 +1,5 @@
 ---
-title: Building Zero Trust Architecture
+title: Zero Trust Guidance Center
 description: Learn how to create Zero Trust solutions. The Zero Trust model assumes a breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to never trust and to always verify.
 ms.date: 04/30/2021
 ms.service: security
@@ -8,7 +8,7 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-# Zero Trust Resource Center
+# Zero Trust Guidance Center
 
 :::image type="icon" source="./media/icon-introduction-medium.png":::
 
@@ -38,7 +38,6 @@ helping customers to secure their organizations, as well as in
 implementing our own Zero Trust model, we've developed the following
 guidance to assess your readiness and to help you build a plan to get to
 Zero Trust.
-
 
 **You can organize your approach to Zero Trust around these key technology pillars:**
 
@@ -138,6 +137,10 @@ With Zero Trust, we move away from a trust-by-default perspective to a trust-by-
 
 ## Next steps
 
+This site contains guidance for deploying Zero Trust solutions in your organization, creating Zero Trust solutions that integrate with Microsoft products and services, and developing applications that follow Zero Trust best practices. The best place to start is with Identities.
+
 - [Identity deployment guidance](identity.md)
 - [Identity integration guidance](isv/identity-isv-integration-overview.md)
 - [Identity app development guidance](identity-developer.md)
+
+For more resources and to learn more about Zero Trust, check out our [Resources for accelerating your Zero Trust journey](https://www.microsoft.com/security/blog/2021/05/24/resources-for-accelerating-your-zero-trust-journey/).

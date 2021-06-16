@@ -43,9 +43,13 @@
 - name: Resources
   expanded: true
   items:
+  - name: Video - Zero Trust Security Implementation
+    href: https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu
+  - name: Resources for accelerating your Zero Trust journey
+    href: https://www.microsoft.com/security/blog/2021/05/24/resources-for-accelerating-your-zero-trust-journey/
   - name: Zero Trust Assessment
     href: https://info.microsoft.com/ww-landing-Zero-Trust-Assessment.html
-  - name: Microsoft Security Blog
-    href: https://www.microsoft.com/security/blog/
+  - name: Microsoft Zero Trust Security Blog
+    href: https://www.microsoft.com/security/blog/zero-trust/
   - name: Microsoft Intelligent Security Association
     href: https://www.microsoft.com/security/business/intelligent-security-association

@@ -137,7 +137,7 @@ With Zero Trust, we move away from a trust-by-default perspective to a trust-by-
 
 ## Next steps
 
-This site contains guidance for deploying Zero Trust solutions in your organization, creating Zero Trust solutions that integrate with Microsoft products and services, and developing applications that follow Zero Trust best practices. The best place to start is with Identities.
+This site contains guidance for deploying Zero Trust solutions in your organization, creating Zero Trust solutions that integrate with Microsoft products and services, and developing applications that follow Zero Trust best practices. The best place to start for all these categories is with Identity.
 
 - [Identity deployment guidance](identity.md)
 - [Identity integration guidance](isv/identity-isv-integration-overview.md)

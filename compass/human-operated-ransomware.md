@@ -22,7 +22,7 @@ These attacks can be catastrophic to business operations and are difficult to cl
 
 This figure shows how this extortion-based attack that uses maintenance and security configuration gaps and privileged access is growing in impact and likelihood.
 
-![The impact and likelihood that human-operated ransomeware attacks will continue](media/human-operated-ransomware/ransomware-extortion-based-attack.png)
+![The impact and likelihood that human-operated ransomware attacks will continue](media/human-operated-ransomware/ransomware-extortion-based-attack.png)
 
 
 ## Human-Operated Ransomware Mitigation Project Plan
@@ -31,11 +31,11 @@ To better protect your organization, Microsoft recommends that you use the infor
 
 Here is a summary of the guidance:
 
-![The impact and likelihood that human-operated ransomeware attacks will continue](media/human-operated-ransomware/stakes-weaknesses-plan.png)
+![The impact and likelihood that human-operated ransomware attacks will continue](media/human-operated-ransomware/stakes-weaknesses-plan.png)
 
 - The stakes of ransomware and extortion are high
 - However, the attacks have weaknesses that can mitigate your likelihood of being attacked
-- There are three phases to configure your infrastructure and exploit attack weaknesses
+- There are three phases to configure your infrastructure to exploit attack weaknesses
 
 ## Rapidly protect against ransomware and extortion
 
@@ -47,7 +47,7 @@ This three-phase guidance tells you how to:
 2. Prevent a ransomware attacker from getting broad access to resources in your environment.
 3. Prevent a ransomware attacker from entering your environment.
 
-![The three steps to protecting against ransomware and extortion](media/protect-against-ransomware/protect-against-ransomware-phases.png)
+[![The three steps to protecting against ransomware and extortion](media/protect-against-ransomware/protect-against-ransomware-phases.png)](protect-against-ransomware.md)
 
 ## Additional resources
 

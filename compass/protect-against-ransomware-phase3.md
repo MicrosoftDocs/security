@@ -21,7 +21,7 @@ description: Prevent entry into your environment.
 
 # Phase 3: Prevent entry into your environment
 
-In this step, you make the attackers work a lot harder to get access to your on-premises or cloud infrastructures by cutting them off at the points of entry as much as you can.
+In this phase, you make the attackers work a lot harder to get access to your on-premises or cloud infrastructures by cutting them off at the points of entry as much as you can.
 
 >[!Important]
 >While many of these will be familiar and/or easy to quickly accomplish, it’s critically important that **your work on Phase 3 should not slow down your progress on phases 1 and 2**!

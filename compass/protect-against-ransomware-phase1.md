@@ -37,7 +37,7 @@ The first thing you should do for these attacks is ensure your organization has 
 
 To avoid being forced into payment (the profitable situation for attackers), the most immediate and effective action you can take is to ensure your organization can restore your entire enterprise from immutable storage (which neither the attacker nor you can modify). 
 
-Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other steps in phase 1 or 2, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
+Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other areas in phase 1 or 2, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
 
 - What business assets would be the most damaging if compromised for example, what business leadership would be willing to pay an extortion demand if attackers controlled them)? 
 - How do these business assets translate to IT assets (files, applications, databases, servers, etc.)?
@@ -79,7 +79,7 @@ Apply these best practices to secure your backup infrastructure.
 | <input type="checkbox" disabled /> | Backup all critical systems automatically on a regular schedule. | Allows you to recover data up to the last backup. |
 | <input type="checkbox" disabled /> | Regularly exercise your business continuity/disaster recovery (BC/DR) plan. | Ensures rapid recovery of business operations by treating a ransomware or extortion attack with the same importance as a natural disaster. |
 | <input type="checkbox" disabled /> | Protect backups against deliberate erasure and encryption: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (e.g. [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site. | Backups that are accessible by attackers can be rendered unusable for business recovery. |
-| <input type="checkbox" disabled /> | Protect supporting documents required for recovery such as restoration procedure documents, CMDB, and network diagrams. | Attackers deliberately target these resources because it inhibits your ability to recover. |
+| <input type="checkbox" disabled /> | Protect supporting documents required for recovery such as restoration procedure documents, CMDB, and network diagrams. | Attackers deliberately target these resources because it impacts your ability to recover. |
 
 
 <!--
@@ -153,4 +153,4 @@ Try to achieve these results within 30-90 days:
 
 [![Phase 2. Prevent broad access to your environment](media/protect-against-ransomware/protect-against-ransomware-phase2.png)](protect-against-ransomware-phase2.md)
 
-Continue with [Phase 2](protect-against-ransomware-phase2.md) to prevent a ransomware attacker from gaining broad access to your environment.
+Continue with [Phase 2](protect-against-ransomware-phase2.md) to prevent an attacker from gaining broad access to your environment.

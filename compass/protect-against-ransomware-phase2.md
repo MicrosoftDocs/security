@@ -21,7 +21,7 @@ description: Deploy ransomware protection.
 
 # Phase 2: Prevent broad access to your environment
 
-In this step, you make it as hard as possible to prevent attackers traversing your infrastructure for data and systems to target and elevate their credentials and access high-value resources.
+In this phase, you make it as hard as possible to prevent attackers traversing your infrastructure for data and systems to target and elevate their credentials and access high-value resources.
 
 ## Privileged access strategy
 
@@ -137,4 +137,4 @@ Try to achieve these results within 30 days:
 [![Phase 3. Prevent entry into your environment](media/protect-against-ransomware/protect-against-ransomware-phase3.png)](protect-against-ransomware-phase3.md)
 
 
-Continue with [Phase 3](protect-against-ransomware-phase3.md) to prevent a ransomware attacker from gaining entry into your environment.
+Continue with [Phase 3](protect-against-ransomware-phase3.md) to prevent an attacker from gaining entry into your environment.

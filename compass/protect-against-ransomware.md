@@ -39,30 +39,30 @@ The attacks also have sophisticated business models, with attackers setting thei
 
 This guidance provides concrete instructions on how to best prepare your organization from many forms of ransomware and extortion.
 
-To help you understand how to protect your organization from ransomware, this guidance is organized into prioritized phases. Each phase corresponds to a separate article. The priority order is designed to ensure you reduce risk as fast as possible with each step you take, building on an assumption of extreme urgency that you will override normal security and IT priorities to avoid or mitigate these devastating attacks.
+To help you understand how to protect your organization from ransomware, this guidance is organized into prioritized phases. Each phase corresponds to a separate article. The priority order is designed to ensure you reduce risk as fast as possible with each phase, building on an assumption of extreme urgency that you will override normal security and IT priorities to avoid or mitigate these devastating attacks.
 
-![The three steps to protecting against ransomware](media/protect-against-ransomware/protect-against-ransomware-phases.png)
+![The three phases to protecting against ransomware](media/protect-against-ransomware/protect-against-ransomware-phases.png)
 
-**It is vital to note** that this guidance is structured as prioritized steps that you should follow in the prescribed order. To best adapt this guidance to your situation:
+**It is vital to note** that this guidance is structured as prioritized phases that you should follow in the prescribed order. To best adapt this guidance to your situation:
 
 1. **Stick with the recommended priorities** 
 
-   Use the steps as a starting plan for what to do first, next, and later so you get the most impactful elements first. 
+   Use the phases as a starting plan for what to do first, next, and later so you get the most impactful elements first. 
 
-2. **Be proactive and flexible (but don’t skip important steps)**
+2. **Be proactive and flexible (but don’t skip important tasks)**
 
-   Scan through the implementation checklists for all sections of all three steps to see if there are any steps that you can quickly complete earlier (e.g., already have access to a cloud service that hasn’t been utilized but could be quickly and easily configured). As you look over the whole plan, be very careful that *these later steps don’t delay completion* of critically important steps like backups and privileged access!
+   Scan through the implementation checklists for all sections of all three phases to see if there are any areas and tasks that you can quickly complete earlier (e.g., already have access to a cloud service that hasn’t been utilized but could be quickly and easily configured). As you look over the whole plan, be very careful that *these later areas and tasks don’t delay completion* of critically important areas like backups and privileged access!
 
 3.	**Do some items in parallel** 
 
-   Trying to do everything at once can be overwhelming, but some items can naturally be done in parallel. Staff on different teams can be working on tasks at the same time (e.g., backup team, endpoint team, identity team), while also driving for completion of the steps in priority order.
+   Trying to do everything at once can be overwhelming, but some items can naturally be done in parallel. Staff on different teams can be working on tasks at the same time (e.g., backup team, endpoint team, identity team), while also driving for completion of the phases in priority order.
 
 Implementation checklists do not intend to imply an order of tasks and results or assume a specific state of your existing configuration. Use the checklist to confirm and modify your existing configuration as needed and in a way that works within your organization. For example, in the most important backup element, you backup some systems, but they may not be offline/immutable, or you may not test the full enterprise restore procedures, or you may not have backups of critical business systems or critical IT systems like Active Directory domain controllers. 
 
 
 ### Phase 1. Prevent a ransomware attacker from obtaining financial leverage
 
-These steps are designed to [minimize the monetary incentive from ransomware attackers](protect-against-ransomware-phase1.md) by making it:
+This phase is designed to [minimize the monetary incentive from ransomware attackers](protect-against-ransomware-phase1.md) by making it:
 
 - Much harder to access and disrupt systems or encrypt or damage key organization data.
 - Easier for your organization to recover from an attack without paying the attackers.
@@ -85,40 +85,5 @@ While many of these will be familiar and/or easy to quickly accomplish, it’s c
 
 [![Phase 1. Remove ransomware financial leverage](media/protect-against-ransomware/protect-against-ransomware-phase1.png)](protect-against-ransomware-phase1.md)
 
-Start with [Phase 1](protect-against-ransomware-phase1.md) to prevent a ransomware attacker from gaining financial leverage on your organization.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-----------------
-To help you understand how to protect your organization from ransomware, this guidance is organized into steps. Each Phase corresponds to a separate article in this solution.
-
-
-These steps are designed with the assumption you are already breached. For example, the first thing you should when an attacker is already in your organization do is prevent them from accessing or damaging the resources that provide them with the most amount of leverage with which to demand higher payment. Backing up your organization's data to a safe off-line storage facility still allows the attacker to destroy your current and online data, but you can recover more quickly because the attacker cannot get to the off-line backup. 
-
-**It is vital to note** that although this guidance is structured as steps and sections, there are implementation tasks within each section that are easier to complete than others. To best use this guidance:
-
-- Use the steps as an indication of its relative importance in protecting your organization and complete the configuration tasks in each section based on the Phase order.
-- Scan through the implementation checklists ***for all sections of all three steps*** for configuration tasks that are easily done.
-
-In other words, think of the steps, sections, and configuration tasks in the implementation checklists as a set of protection elements that can be done in parallel (get the easy stuff done while the harder stuff is in progress), while also driving for completion of the steps in order.
-
-Implementation checklists do not intend to imply an order of tasks and results or assume a specific state of your existing configuration. Use the checklist to confirm and modify your existing configuration as needed and in a way that works within your organization.
-
-### Phase 1. Prevent a ransomware attacker from obtaining financial leverage
-
-[Minimize the monetary incentive](protect-against-ransomware-phase1.md) from ransomware attackers by making it:
-
-- Much harder to access and disrupt systems or encrypt or damage key organization data.
-- Easier for your organization to recover from an attack.
+Start with [Phase 1](protect-against-ransomware-phase1.md) to prevent an attacker from gaining financial leverage on your organization.
 

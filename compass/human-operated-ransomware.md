@@ -22,11 +22,32 @@ These attacks can be catastrophic to business operations and are difficult to cl
 
 This figure shows how this extortion-based attack that uses maintenance and security configuration gaps and privileged access is growing in impact and likelihood.
 
-![The impact and likelihood that human-operated ransomeware attacks will continue](media/ransomware-extortion-based-attack.png)
+![The impact and likelihood that human-operated ransomeware attacks will continue](media/human-operated-ransomware/ransomware-extortion-based-attack.png)
 
+
+## Human-Operated Ransomware Mitigation Project Plan
 
 To better protect your organization, Microsoft recommends that you use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation, which includes [securing privileged access](https://aka.ms/spa).
 
+Here is a summary of the guidance:
+
+![The impact and likelihood that human-operated ransomeware attacks will continue](media/human-operated-ransomware/stakes-weaknesses-plan.png)
+
+- The stakes of ransomware and extortion are high
+- However, the attacks have weaknesses that can mitigate your likelihood of being attacked
+- There are three phases to configure your infrastructure and exploit attack weaknesses
+
+## Rapidly protect against ransomware and extortion
+
+To quickly configure your IT infrastructure for the best protection against a ransomware or extortion attack, see the [Protect your organization against ransomware and extortion](protect-against-ransomware.md) solution. 
+
+This three-phase guidance tells you how to:
+
+1. Prevent a ransomware attacker from obtaining financial leverage.
+2. Prevent a ransomware attacker from getting broad access to resources in your environment.
+3. Prevent a ransomware attacker from entering your environment.
+
+![The three steps to protecting against ransomware and extortion](media/protect-against-ransomware/protect-against-ransomware-phases.png)
 
 ## Additional resources
 

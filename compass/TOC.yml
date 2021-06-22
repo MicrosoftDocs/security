@@ -87,8 +87,20 @@
           href: critical-impact-accounts.md
     #   - name: Capabilities
     #     href: administration-capabilities.md
-    - name: Human operated ransomware
-      href: human-operated-ransomware.md 
+    - name: Ransomware and extortion
+      items:
+        - name: Human operated ransomware
+          href: human-operated-ransomware.md 
+        - name: Rapidly protect against ransomware and extortion
+          items:
+            - name: Overview
+              href: protect-against-ransomware.md
+            - name: Phase 1. Remove ransomware financial objectives 
+              href: protect-against-ransomware-phase1.md
+            - name: Phase 2. Prevent broad access to your environment 
+              href: protect-against-ransomware-phase2.md
+            - name: Phase 3. Prevent entry into your environment 
+              href: protect-against-ransomware-phase3.md
     - name: Information protection and storage
       items:
         - name: Videos and slides

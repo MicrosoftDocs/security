@@ -85,9 +85,7 @@ Apply these best practices to protect your remote access infrastructure from ran
 
 ### Timeframe and key results
 
-Time to complete: 30 to 60 days
-
-Results:
+Try to achieve these results within 30-60 days:
 
 - TBD % of remote access connections using zero trust validation
 - TBD % of applications published to the Internet with Azure AD Application Proxy

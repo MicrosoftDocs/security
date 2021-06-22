@@ -151,6 +151,6 @@ Try to achieve these results within 30-90 days:
 
 ## Next step
 
-[![Phase 2. Prevent broad access to your environment](media/protect-against-ransomware/protect-against-ransomware-phase2.png)](ransomware-protection-deploy-step2.md)
+[![Phase 2. Prevent broad access to your environment](media/protect-against-ransomware/protect-against-ransomware-phase2.png)](ransomware-protection-deploy-phase2.md)
 
 Continue with [Phase 2](protect-against-ransomware-phase2.md) to prevent a ransomware attacker from gaining broad access to your environment.

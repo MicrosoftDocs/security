@@ -137,4 +137,4 @@ Try to achieve these results within 30 days:
 [![Phase 3. Prevent entry into your environment](media/protect-against-ransomware/protect-against-ransomware-phase3.png)](protect-against-ransomware-phase3.md)
 
 
-Continue with [Phase 3](protect-against-ransomware-phase.md) to prevent a ransomware attacker from gaining entry into your environment.
+Continue with [Phase 3](protect-against-ransomware-phase3.md) to prevent a ransomware attacker from gaining entry into your environment.

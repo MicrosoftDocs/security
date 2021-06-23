@@ -15,7 +15,7 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: 
-description: Prevent entry into your environment.
+description: Deploy ransomware protection to prevent an attacker from entering your environment.
 
 ---
 

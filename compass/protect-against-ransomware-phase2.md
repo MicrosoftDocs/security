@@ -15,7 +15,7 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: 
-description: Deploy ransomware protection.
+description: Deploy ransomware protection to prevent an attacker from obtaining broad access to your environment.
 
 ---
 

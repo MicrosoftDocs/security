@@ -33,7 +33,7 @@ While early ransomware mostly used malware that spread with phishing or between 
 
 These attacks can be catastrophic to business operations and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike early forms of ransomware that only required malware remediation, human-operated ransomware can continue to threaten your business operations after the initial encounter.
 
-## Sophistication of Ransomware and Extortion Attacks
+## Sophistication of ransomware and extortion attacks
 
 Technical hallmarks of these human-operated ransomware attacks typically include credential theft and lateral movement and can result in deployment of ransomware payloads to many high-value resources in order to encourage payment of the ransom. The attacker model is often effective and highly tuned, including targeting destruction or encryption of backups, network and enterprise documentation, and other artifacts that would let the organization rebuild without paying the ransom.
 

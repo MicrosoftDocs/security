@@ -21,6 +21,10 @@ description: Rapidly protect your organization against ransomware and extortion.
 
 # Rapidly protect against ransomware and extortion
 
+>[!Note]
+>This guidance will be updated as new information becomes available.
+>
+
 Mitigating ransomware and extortion attacks is an urgent priority for organizations because of the high impact of these attacks and high likelihood an organization will experience one. 
 
 Ransomware is a type of extortion attack that encrypts files and folders, preventing access to important data. Criminals use ransomware to extort money from victims by demanding money, usually in form of cryptocurrencies, in exchange for a decryption key. Criminals also often use ransomware to extort money from victims in exchange for not releasing sensitive data to the dark web or the public internet.
@@ -68,7 +72,7 @@ This phase is designed to [minimize the monetary incentive from ransomware attac
 - Easier for your organization to recover from an attack without paying the attackers.
 
 >[!Note]
->While restoring many or all enterprise systems is a difficult endeavor, the alternative of paying an attacker for a recovery key and then using tools written by attackers to recover systems and data is a much worse option..
+>While restoring many or all enterprise systems is a difficult endeavor, the alternative of paying an attacker for a recovery key and then using tools written by attackers to recover systems and data is a much worse option.
 >
 
 ### Phase 2. Prevent a ransomware attacker from getting broad access to resources in your environment

@@ -1,5 +1,5 @@
 ---
-title: "Phase 1: Remove ransomware financial objectives"
+title: "Phase 1: Prevent ransomware financial objectives"
 ms.author: josephd
 author: JoeDavies-MSFT
 f1.keywords:
@@ -19,7 +19,7 @@ description: Deploy ransomware protection.
 
 ---
 
-# Phase 1: Remove ransomware financial leverage
+# Phase 1: Prevent ransomware financial leverage
 
 The first thing you should do for these attacks is ensure your organization has a viable alternative to paying the ransom. While attackers in control of your organization have a variety of ways to pressure you into paying, the demands primarily focus on two categories:
 
@@ -142,12 +142,16 @@ Apply these best practices to protect your organization data.
 
 --> 
 
+<!--
+
 ### Implementation results and timelines
 
 Try to achieve these results within 30-90 days:
 
 - TBD % of users with data protection solutions
 - TBD % of devices with data protection solutions
+
+--> 
 
 ## Next step
 

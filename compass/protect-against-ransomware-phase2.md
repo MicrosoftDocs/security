@@ -124,6 +124,7 @@ Apply these best practices for improving your detection and response.
 
 --> 
 
+<!--
 
 ### Implementation results and timelines
 
@@ -131,6 +132,8 @@ Try to achieve these results within 30 days:
 
 - TBD for Mean Time to Acknowledge (MTTA) Alerts
 - TBD for Mean Time to Remediate (MTTR) Incidents
+
+--> 
 
 ## Next step
 

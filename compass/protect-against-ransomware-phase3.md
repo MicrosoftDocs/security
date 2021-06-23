@@ -83,6 +83,8 @@ Apply these best practices to protect your remote access infrastructure from ran
 |  |  |  |  |  |  |
 --> 
 
+<!--
+
 ### Timeframe and key results
 
 Try to achieve these results within 30-60 days:
@@ -90,6 +92,8 @@ Try to achieve these results within 30-60 days:
 - TBD % of remote access connections using zero trust validation
 - TBD % of applications published to the Internet with Azure AD Application Proxy
 - TBD of VPN connections per month (long-term target is zero)
+
+--> 
 
 ## Email and collaboration
 
@@ -133,13 +137,18 @@ Apply these best practices to protect your email and collaboration solutions fro
 | <input type="checkbox" disabled /> | [Enable attack surface reduction (ASR) rules](/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction) to block common attack techniques including: <br><br> Endpoint abuse: Credential theft, ransomware activity, and suspicious use of PsExec and WMI. <br><br> Weaponized Office document activity: Advanced macro activity, executable content, process creation, and process injection initiated by Office applications. <br> Note: Deploy these rules in audit mode first, then assess any negative impact, and then deploy them in block mode. |  |  |  |  |  |
 | <input type="checkbox" disabled /> | Audit and Monitor |  | Find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)) |  |  |  |
 |  |  |  |  |  |  |  |
+
 --> 
+
+<!--
 
 ### Implementation results and timelines
 
 Try to achieve these results within 30 days:
 
 - TBD % of computers with all protections enabled
+
+--> 
 
 ## Endpoints
 
@@ -190,11 +199,15 @@ Apply these best practices to all Windows, Linux, MacOS, Android, iOS, and other
 |  |  |  |  |  |  |  |
 --> 
 
+<!--
+
 ### Implementation results and timelines
 
 Try to achieve these results within 30-60 days:
 
 - TBD % of endpoints meet security standards
+
+--> 
 
 ## Accounts
 

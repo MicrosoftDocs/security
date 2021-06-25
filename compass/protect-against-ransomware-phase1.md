@@ -25,23 +25,23 @@ The first thing you should do for these attacks is prepare your organization so 
 
 - **Pay to regain access**
 
-  Attackers demand payment under the threat that they won’t give you back access to your systems and data. This is most frequently done by encrypting your systems and demanding payment for the decryption key. 
+  Attackers demand payment under the threat that they won’t give you back access to your systems and data. This is most frequently done by encrypting your systems and data and demanding payment for the decryption key. 
 
   >[!Important]
-  >Paying the ransom isn’t as simple and clean of a solution as it may seem. Because you are dealing with criminals that are only motivated by payment (and often relatively amateur operators who are using a toolkit provided by someone else), there is a lot of uncertainty around how well paying the ransom will actually work. There is no legal guarantee that they will provide a key that decrypts 100% of your data and systems, or even provide a key at all. The process to decrypt these systems uses homegrown attacker tools, which is often a clumsy and manual process.
+  >Paying the ransom isn’t as simple and clean of a solution as it may seem. Because you're dealing with criminals that are only motivated by payment (and often relatively amateur operators who are using a toolkit provided by someone else), there is a lot of uncertainty around how well paying the ransom will actually work. There is no legal guarantee that they will provide a key that decrypts 100% of your systems and data, or even provide a key at all. The process to decrypt these systems uses homegrown attacker tools, which is often a clumsy and manual process.
   >
 
 - **Pay to avoid disclosure**
 
    Attackers demand payment in exchange for not releasing sensitive or embarrassing data to the dark web (other criminals) or the general public. 
 
-To avoid being forced into payment (the profitable situation for attackers), the most immediate and effective action you can take is to ensure your organization can restore your entire enterprise from immutable storage (which neither the attacker nor you can modify). 
+To avoid being forced into payment (the profitable situation for attackers), the most immediate and effective action you can take is to ensure your organization can restore your entire enterprise from immutable storage, which neither the attacker nor you can modify. 
 
-Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other areas in phase 1 or 2, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
+Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other areas in phases 1 or 2, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
 
-- What business assets would be the most damaging if compromised for example, what business leadership would be willing to pay an extortion demand if attackers controlled them)? 
+- What business assets would be the most damaging if compromised? For example, what assets would business leadership would be willing to pay an extortion demand if attackers controlled them? 
 - How do these business assets translate to IT assets (files, applications, databases, servers, etc.)?
-- How can we protect or isolate these assets so that attackers with access to the general IT environment can’t access these? 
+- How can we protect or isolate these assets so that attackers with access to the general IT environment can’t access them? 
 
 ## Secure backups
 
@@ -52,7 +52,7 @@ Attacks on your backups focus on crippling your organization’s ability to resp
 Most organizations don’t protect backup and restoration procedures against this level of intentional targeting. 
 
 >[!Note]
->This preparation also improves resilience to natural disasters and rapid attacks like WannaCry & (Not)Petya.
+>This preparation also improves resilience to natural disasters and rapid attacks like WannaCry and (Not)Petya.
 >
 
 ### Program and project member accountabilities
@@ -78,7 +78,7 @@ Apply these best practices to secure your backup infrastructure.
 |:-------|:-------|:-----|
 | <input type="checkbox" disabled /> | Backup all critical systems automatically on a regular schedule. | Allows you to recover data up to the last backup. |
 | <input type="checkbox" disabled /> | Regularly exercise your business continuity/disaster recovery (BC/DR) plan. | Ensures rapid recovery of business operations by treating a ransomware or extortion attack with the same importance as a natural disaster. |
-| <input type="checkbox" disabled /> | Protect backups against deliberate erasure and encryption: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (e.g. [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site. | Backups that are accessible by attackers can be rendered unusable for business recovery. |
+| <input type="checkbox" disabled /> | Protect backups against deliberate erasure and encryption: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site. | Backups that are accessible by attackers can be rendered unusable for business recovery. |
 | <input type="checkbox" disabled /> | Protect supporting documents required for recovery such as restoration procedure documents, CMDB, and network diagrams. | Attackers deliberately target these resources because it impacts your ability to recover. |
 
 
@@ -110,7 +110,7 @@ This table describes the overall protection of your organization data from ranso
 |:-------|:-------|:-----|
 | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Operations or CIO | | Executive sponsorship |
 | Program lead from [Data Security](/azure/cloud-adoption-framework/organize/cloud-security-data-security) | | Drive results and cross-team collaboration |
-|  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Productivity / End User |  Implement changes to Microsoft 365 tenant for OneDrive / Protected Folders |
+|  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Productivity / End User |  Implement changes to Microsoft 365 tenant for OneDrive and Protected Folders |
 |  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Infrastructure/Backup | Enable Infrastructure backup |
 |  | Business / Application | Identify critical business assets |
 |  | [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture)  | Advise on configuration and standards |
@@ -126,7 +126,7 @@ Apply these best practices to protect your organization data.
 | Done| Task | Description |
 |:-------|:-------|:-----|
 | <input type="checkbox" disabled /> | Migrate your organization to the cloud: <br><br> - Move user data to cloud solutions like OneDrive/SharePoint to take advantage of [versioning and recycle bin capabilities](/microsoft-365/enterprise/microsoft-365-malware-and-ransomware-protection?view=o365-worldwide#sharepoint-online-and-onedrive-for-business-protection-against-ransomware). <br><br> - Educate users on how to [recover their files](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15?ui=en-US&rs=en-US&ad=US) by themselves to reduce delays and cost of recovery. | User data in the Microsoft cloud can be protected by built-in security and data management features. |
-| <input type="checkbox" disabled /> | Designate [Protected Folders](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) | Makes it more difficult for unauthorized applications to modify the data in these folders. |
+| <input type="checkbox" disabled /> | Designate [Protected Folders](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). | Makes it more difficult for unauthorized applications to modify the data in these folders. |
 | <input type="checkbox" disabled /> | Review your permissions: <br><br> - Discover broad write/delete permissions on file shares, SharePoint, and other solutions. Broad is defined as many users having write/delete permissions for business-critical data. <br><br> - Reduce broad permissions while meeting business collaboration requirements.  <br><br> - Audit and monitor to ensure broad permissions don’t reappear. | Reduces risk from broad access-enabling ransomware activities. |
 |  |  |  |
 

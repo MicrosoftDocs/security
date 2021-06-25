@@ -25,9 +25,9 @@ In this phase, you prevent attackers from obtaining a large scope of access for 
 
 ## Privileged access strategy
 
-You must implement a comprehensive strategy to reduce risk of privileged access compromise.
+You must implement a comprehensive strategy to reduce the risk of privileged access compromise.
 
-All other security controls can easily be invalidated by an attacker with privileged access in your environment. Ransomware attack operators use privileged access as a quick path to control all critical assets in the organization for their extortion. 
+All other security controls can easily be invalidated by an attacker with privileged access in your environment. Ransomware attackers use privileged access as a quick path to control all critical assets in the organization for their extortion. 
 
 ### Program and project member accountabilities
 
@@ -51,10 +51,10 @@ Build a multi-part strategy using the guidance at [https://aka.ms/SPA](https://a
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
-| <input type="checkbox" disabled /> | Enforce end-to-end session security | Explicitly validates the trust of users and devices before allowing access to administrative interfaces (using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview)). |
-| <input type="checkbox" disabled /> |  Protect and monitor identity systems | Prevents privilege escalation attacks including directories, identity management, administrator accounts and groups, and consent grant configuration. |
-| <input type="checkbox" disabled /> | Mitigate lateral traversal | Ensures that compromising a single device does not immediately lead to control of many or all other devices using local account passwords, service account passwords, or other secrets. |
-| <input type="checkbox" disabled /> | Ensure rapid threat response | Limits an adversary's access and time in the environment. See [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response) for more information. |
+| <input type="checkbox" disabled /> | Enforce end-to-end session security. | Explicitly validates the trust of users and devices before allowing access to administrative interfaces (using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview)). |
+| <input type="checkbox" disabled /> |  Protect and monitor identity systems. | Prevents privilege escalation attacks including directories, identity management, administrator accounts and groups, and consent grant configuration. |
+| <input type="checkbox" disabled /> | Mitigate lateral traversal. | Ensures that compromising a single device does not immediately lead to control of many or all other devices using local account passwords, service account passwords, or other secrets. |
+| <input type="checkbox" disabled /> | Ensure rapid threat response. | Limits an adversary's access and time in the environment. See [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response) for more information. |
 |  |  |  |
 
 <!--
@@ -104,9 +104,9 @@ Apply these best practices for improving your detection and response.
 | Done| Task | Description |
 |:-------|:-------|:-----|
 | <input type="checkbox" disabled /> | Prioritize common entry points: <br><br> - Use integrated Extended Detection and Response (XDR) tools like [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)] to provide high quality alerts and minimize friction and manual steps during response. <br><br> - Monitor for brute-force attempts like [password spray](/defender-for-identity/compromised-credentials-alerts). | Ransomware (and other) operators favor endpoint, email, identity, and RDP as entry points. |
-| <input type="checkbox" disabled /> | Monitor for an adversary disabling security (this is often part of an attack chain), such as: <br><br> - Event log clearing, especially the Security Event log and PowerShell Operational logs <br><br> - Disabling of security tools and controls (associated with some groups) | Attackers target security detection facilities to more safely continue their attack. |
-| <input type="checkbox" disabled /> | Don’t ignore commodity malware | Ransomware attackers regularly purchase access to target organizations from dark markets. |
-| <input type="checkbox" disabled /> | Integrate outside experts into processes to supplement expertise, such as the [Microsoft Detection and Response Team (DART)](https://aka.ms/dart) | Experience counts for detection and recovery. |
+| <input type="checkbox" disabled /> | Monitor for an adversary disabling security (this is often part of an attack chain), such as: <br><br> - Event log clearing, especially the Security Event log and PowerShell Operational logs. <br><br> - Disabling of security tools and controls (associated with some groups). | Attackers target security detection facilities to more safely continue their attack. |
+| <input type="checkbox" disabled /> | Don’t ignore commodity malware. | Ransomware attackers regularly purchase access to target organizations from dark markets. |
+| <input type="checkbox" disabled /> | Integrate outside experts into processes to supplement expertise, such as the [Microsoft Detection and Response Team (DART)](https://aka.ms/dart). | Experience counts for detection and recovery. |
 | <input type="checkbox" disabled /> | Rapidly isolate compromised computers using [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network). | Windows 10 integration makes this easy. |
 |  |  |  |
 

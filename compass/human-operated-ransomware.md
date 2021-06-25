@@ -25,23 +25,19 @@ This figure shows how this extortion-based attack that uses maintenance and secu
 ![The impact and likelihood that human-operated ransomware attacks will continue](media/human-operated-ransomware/ransomware-extortion-based-attack.png)
 
 
-## Human-Operated Ransomware Mitigation Project Plan
+## Protect your organization against ransomware and extortion
 
-To better protect your organization, Microsoft recommends that you use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation, which includes [securing privileged access](https://aka.ms/spa).
+For a comprehensive view of ransomware and extortion and how to protect your organization, use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation.
 
-Here is a summary of the guidance:
+Here's a summary of the guidance:
 
-![The impact and likelihood that human-operated ransomware attacks will continue](media/human-operated-ransomware/stakes-weaknesses-plan.png)
+![The summary of the guidance in the Human-Operated Ransomware Mitigation Project Plan](media/human-operated-ransomware/stakes-weaknesses-plan.png)
 
-- The stakes of ransomware and extortion are high
-- However, the attacks have weaknesses that can mitigate your likelihood of being attacked
-- There are three phases to configure your infrastructure to exploit attack weaknesses
+- The stakes of ransomware and extortion are high.
+- However, the attacks have weaknesses that can mitigate your likelihood of being attacked.
+- There are three phases to configure your infrastructure to exploit attack weaknesses.
 
-## Rapidly protect against ransomware and extortion
-
-To quickly configure your IT infrastructure for the best protection against a ransomware or extortion attack, see the [Protect your organization against ransomware and extortion](protect-against-ransomware.md) solution. 
-
-This three-phase guidance tells you how to:
+For the three phases to exploit attack weaknesses, see the [Protect your organization against ransomware and extortion](protect-against-ransomware.md) solution to **quickly** configure your IT infrastructure for the best protection:
 
 1. Prepare for the worst so that you can recover from an attack without having to pay the ransom.
 2. Limit the scope of damage of an attack by protecting privileged roles.
@@ -49,10 +45,9 @@ This three-phase guidance tells you how to:
 
 [![The three steps to protecting against ransomware and extortion](media/protect-against-ransomware/protect-against-ransomware-phases.png)](protect-against-ransomware.md)
 
-
 ## Additional resources
 
 - [Blog post](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) from the Microsoft 365 Defender Threat Intelligence Team for more information and attack chain analysis of actual human-operated ransomware attacks.
 
-- **Ransomware: A pervasive and ongoing threat** threat analytics report in the Microsoft 365 Defender portal.
+- **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal.
 

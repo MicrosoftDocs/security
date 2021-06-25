@@ -123,10 +123,10 @@ Apply these best practices to protect your email and collaboration solutions fro
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
-| <input type="checkbox" disabled /> | Enable [AMSI for Office VBA](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) | Detect Office macro attacks with endpoint tools like [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) |
+| <input type="checkbox" disabled /> | Enable [AMSI for Office VBA](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/), | Detect Office macro attacks with endpoint tools like [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).|
 | <input type="checkbox" disabled /> | Implement Advanced Email security using [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp) or a similar solution. | Email is a common entry point for attackers. |
 | <input type="checkbox" disabled /> | [Enable attack surface reduction (ASR) rules](/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction) to block common attack techniques including: <br><br> - Endpoint abuse such as credential theft, ransomware activity, and suspicious use of PsExec and WMI. <br><br> - Weaponized Office document activity such as advanced macro activity, executable content, process creation, and process injection initiated by Office applications. <br><br> **Note:** Deploy these rules in audit mode first, then assess any negative impact, and then deploy them in block mode. | ASR provides additional layers of protect specifically targeted at mitigating common attack methods. |
-| <input type="checkbox" disabled /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)) |  Reduces risk from ransomware activities that probe baseline security features and settings. |
+| <input type="checkbox" disabled /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)). |  Reduces risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
 
 <!--
@@ -154,7 +154,7 @@ Try to achieve these results within 30 days:
 
 Implement relevant security features and rigorously follow software maintenance best practices for computers and applications, prioritizing applications and server/client operating systems directly exposed to Internet traffic and content.
 
-Internet-exposed endpoints are a common entry vector that provide attackers access to the organization's assets. Prioritize blocking common OS and application with preventive controls to slow or stop them from executing the next stages. 
+Internet-exposed endpoints are a common entry vector that provides attackers access to the organization's assets. Prioritize blocking common OS and application with preventive controls to slow or stop them from executing the next stages. 
 
 ### Program and project member accountabilities
 
@@ -182,7 +182,7 @@ Apply these best practices to all Windows, Linux, MacOS, Android, iOS, and other
 | <input type="checkbox" disabled /> | Block known threats with [attack surface reduction](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) rules, [tamper protection](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Tamper-protection-now-generally-available-for-Microsoft-Defender/ba-p/911482), and [block at first site](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus). | Don't let lack of use of these built-in security features be the reason an attacker entered your organization. |
 | <input type="checkbox" disabled /> | Apply [Security Baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) to harden internet-facing Windows servers and clients and Office applications. | Protect your organization with the minimum level of security and build from there. |
 | <input type="checkbox" disabled /> | Maintain your software so that it is: <br><br> - Updated: Rapidly deploy critical security updates for operating systems, browsers, & email clients <br><br> - Supported:  Upgrade operating systems and software for versions supported by your vendors. | Attackers are counting on you missing or neglecting manufacturer updates and upgrades. |
-| <input type="checkbox" disabled /> | Isolate, disable, or retire insecure systems and protocols, including [unsupported operating systems](/lifecycle/) and [legacy protocols](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/retire-those-old-legacy-protocols/ba-p/259396) | Attackers use known vulnerabilities of legacy devices, systems, and protocols as entry points into your organization. |
+| <input type="checkbox" disabled /> | Isolate, disable, or retire insecure systems and protocols, including [unsupported operating systems](/lifecycle/) and [legacy protocols](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/retire-those-old-legacy-protocols/ba-p/259396). | Attackers use known vulnerabilities of legacy devices, systems, and protocols as entry points into your organization. |
 | <input type="checkbox" disabled /> | Block unexpected traffic with host-based firewall and network defenses. | Some malware attacks reply on unsolicited inbound traffic to hosts as a way of making a connection for an attack. |
 | <input type="checkbox" disabled /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)). | Reduces risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
@@ -236,7 +236,7 @@ Apply these best practices to protect your accounts from ransomware attackers.
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
-| <input type="checkbox" disabled /> | Enforce strong MFA or passwordless sign-in for all users. Start with administrator and priority accounts using one or more of: <br><br> - Passwordless authentication with [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification)  or the [Microsoft Authenticator app](/azure/active-directory/authentication/howto-authentication-phone-sign-in) <br><br> - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-userstates) <br><br> - Third-party MFA solution | Make it harder for an attacker to perform a credential compromise. |
+| <input type="checkbox" disabled /> | Enforce strong MFA or passwordless sign-in for all users. Start with administrator and priority accounts using one or more of: <br><br> - Passwordless authentication with [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) or the [Microsoft Authenticator app](/azure/active-directory/authentication/howto-authentication-phone-sign-in). <br><br> - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-userstates). <br><br> - Third-party MFA solution | Make it harder for an attacker to perform a credential compromise. |
 | <input type="checkbox" disabled /> | Increase password security: <br><br> - For Azure AD accounts, use [Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad) to detect and block known weak passwords and additional weak terms that are specific to your organization. <br><br> - For on-premises Active Directory Domain Services (AD DS) accounts, [Extend Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises) to AD DS accounts. | Ensure that attackers can't determine common passwords or passwords based on your organization name. |
 | <input type="checkbox" disabled /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)). | Reduces risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
@@ -263,4 +263,5 @@ Try to achieve these results within 30 days:
 
 - [Blog post](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) from the Microsoft 365 Defender Threat Intelligence Team for more information and attack chain analysis of actual human-operated ransomware attacks.
 
-- **Ransomware: A pervasive and ongoing threat** threat analytics report in the Microsoft 365 Defender portal.
+- **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal.
+

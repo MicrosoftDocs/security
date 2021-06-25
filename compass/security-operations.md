@@ -156,7 +156,7 @@ If you are new-to-role as a security analyst, see these resources to get you sta
 | Investigation for Microsoft 365 Defender | [Incidents in Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) |
 |||
 
-If you are an experienced security analyst, see these resources to ramp up your SecOps team for Microsoft security services quickly.
+If you are an experienced security analyst, see these resources to quickly ramp up your SecOps team for Microsoft security services.
 
 | Topic | Resource |
 |:-------|:-----|
@@ -219,23 +219,3 @@ After reading an overview of [Simuland](https://www.microsoft.com/security/blog/
 
 Review [security operations capabilities](security-operations-capabilities.md).
 
-
-
-<!--
-
-## Incident response playbooks
-
-Examine guidance for identifying and investigating these types of attacks:
-
-- [Phishing](incident-response-playbook-phishing.md)
-- [Password spray](incident-response-playbook-password-spray.md)
-- [App consent grant](incident-response-playbook-app-consent.md)
-
-
-## See also
-
-- [Security operations functions](/azure/cloud-adoption-framework/organize/cloud-security-operations-center) from the Cloud Adoption Framework for Azure
-- [SOC Process Framework Workbook for Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-azure-sentinel-soc-process-framework-workbook/ba-p/2339315)
-- [Additional security guidance from Microsoft](/security/) 
-
---> 

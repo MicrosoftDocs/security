@@ -32,7 +32,7 @@ If you are new-to-role as a security analyst, see these resources to get you sta
 
 ## Experienced security analyst resources
 
-If you are an experienced security analyst, see these resources to ramp up your SecOps team for Microsoft security services quickly.
+If you are an experienced security analyst, see these resources to quickly ramp up your SecOps team for Microsoft security services.
 
 | Topic | Resource |
 |:-------|:-----|
@@ -93,35 +93,3 @@ After reading an overview of [Simuland](https://www.microsoft.com/security/blog/
 | [Microsoft security documentation](/security/) | Additional security guidance from Microsoft. |
 |||
 
-
-<!--
- 
-## Next steps
-
-If you are just starting out in incident response, see the [Incident Response Reference Guide](https://download.microsoft.com/download/4/f/f/4ff621f9-6f44-437a-80c7-2624e3d2ce80/IR-Reference-Guide.pdf) for an overview of preparing your organization and what to do during an incident.
-
-If you are experienced with incident response: 
-
-- See how to [investigate incidents in Azure Sentinel](/azure/sentinel/tutorial-investigate-cases).
-- See how to [investigate incidents in Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview).
-- Use the incident response playbooks at [https://aka.ms/IRplaybooks](https://aka.ms/IRplaybooks).
-  - [Phishing](incident-response-playbook-phishing.md)
-  - [Password spray](incident-response-playbook-password-spray.md)
-  - [App consent grant](incident-response-playbook-app-consent.md)
-
-
-[Security operations](/azure/cloud-adoption-framework/secure/security-operations) from the Azure Cloud Adoption Framework provides strategic guidance for leaders establishing or modernizing a security operation function.
-
-[Microsoft security best practices for security operations](/security/compass/security-operations) describes how to best use your SecOps center to move faster that the attackers targeting your organization.
-
-
-- Use the incident response playbooks at [https://aka.ms/IRplaybooks](https://aka.ms/IRplaybooks).
-  - [Phishing](incident-response-playbook-phishing.md)
-  - [Password spray](incident-response-playbook-password-spray.md)
-  - [App consent grant](incident-response-playbook-app-consent.md)
-
-
-[SOC Process Framework Workbook for Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-azure-sentinel-soc-process-framework-workbook/ba-p/2339315) combines SOC industry standards and best practices and applies them to Azure Sentinel.
-
-
---> 

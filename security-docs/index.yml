@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 12/02/2020
+  ms.date: 06/25/2021
 
 
 # Maximum of 8 items
@@ -94,9 +94,9 @@ additionalContent:
       summary: Microsoft security best practices that help you improve your security posture
       items:
         # Card
-        - title: Zero Trust Deployment Center
+        - title: Zero Trust Guidance Center
           links:
-            - text: Introduction to deployment guides
+            - text: Zero Trust overview
               url: https://aka.ms/ZTGuide
 
         # Card

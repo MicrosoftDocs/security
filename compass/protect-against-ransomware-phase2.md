@@ -1,5 +1,5 @@
 ---
-title: "Phase 2: Prevent broad access to your environment"
+title: "Phase 2: Limit the scope of damage"
 ms.author: josephd
 author: JoeDavies-MSFT
 f1.keywords:
@@ -15,13 +15,13 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: 
-description: Deploy ransomware protection to prevent an attacker from obtaining broad access to your environment.
+description: Deploy ransomware protection to limit the scope of damage of an attacker by protecting privileged roles.
 
 ---
 
-# Phase 2: Prevent broad access to your environment
+# Phase 2: Limit the scope of damage
 
-In this phase, you make it as hard as possible to prevent attackers traversing your infrastructure for data and systems to target and elevate their credentials and access high-value resources.
+In this phase, you prevent attackers from obtaining a large scope of access for potential damage to data and systems by protecting privileged roles.
 
 ## Privileged access strategy
 
@@ -67,8 +67,6 @@ Build a multi-part strategy using the guidance at [https://aka.ms/SPA](https://a
 |  |  |  |  |  |  |  |
 
 --> 
-
-
 
 ### Implementation results and timelines
 
@@ -122,10 +120,6 @@ Apply these best practices for improving your detection and response.
 | <input type="checkbox" disabled /> | Rapidly isolate compromised computers using [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network) |  |  |  |  |  |
 |  |  |  |  |  |  |  |
 
---> 
-
-<!--
-
 ### Implementation results and timelines
 
 Try to achieve these results within 30 days:
@@ -137,7 +131,6 @@ Try to achieve these results within 30 days:
 
 ## Next step
 
-[![Phase 3. Prevent entry into your environment](media/protect-against-ransomware/protect-against-ransomware-phase3.png)](protect-against-ransomware-phase3.md)
+[![Phase 3. Make it hard to get in](media/protect-against-ransomware/protect-against-ransomware-phase3.png)](protect-against-ransomware-phase3.md)
 
-
-Continue with [Phase 3](protect-against-ransomware-phase3.md) to prevent an attacker from gaining entry into your environment.
+Continue with [Phase 3](protect-against-ransomware-phase3.md) to make it hard for an attacker to get into your environment by incrementally removing risks.

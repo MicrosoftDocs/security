@@ -1,5 +1,5 @@
 ---
-title: "Phase 1: Prevent ransomware financial leverage"
+title: "Phase 1: Prepare for the worst"
 ms.author: josephd
 author: JoeDavies-MSFT
 f1.keywords:
@@ -15,13 +15,13 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: 
-description: Deploy ransomware protection to prevent an attacker from obtaining financial leverage.
+description: Deploy ransomware protection to prepare your organization for the worst so that you can recover from an attack without having to pay the ransom.
 
 ---
 
-# Phase 1: Prevent ransomware financial leverage
+# Phase 1: Prepare for the worst
 
-The first thing you should do for these attacks is ensure your organization has a viable alternative to paying the ransom. While attackers in control of your organization have a variety of ways to pressure you into paying, the demands primarily focus on two categories:
+The first thing you should do for these attacks is prepare your organization so that it has a viable alternative to paying the ransom. While attackers in control of your organization have a variety of ways to pressure you into paying, the demands primarily focus on two categories:
 
 - **Pay to regain access**
 
@@ -123,7 +123,6 @@ This table describes the overall protection of your organization data from ranso
 
 Apply these best practices to protect your organization data.
 
-
 | Done| Task | Description |
 |:-------|:-------|:-----|
 | <input type="checkbox" disabled /> | Migrate your organization to the cloud: <br><br> - Move user data to cloud solutions like OneDrive/SharePoint to take advantage of [versioning and recycle bin capabilities](/microsoft-365/enterprise/microsoft-365-malware-and-ransomware-protection?view=o365-worldwide#sharepoint-online-and-onedrive-for-business-protection-against-ransomware). <br><br> - Educate users on how to [recover their files](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15?ui=en-US&rs=en-US&ad=US) by themselves to reduce delays and cost of recovery. | User data in the Microsoft cloud can be protected by built-in security and data management features. |
@@ -131,18 +130,14 @@ Apply these best practices to protect your organization data.
 | <input type="checkbox" disabled /> | Review your permissions: <br><br> - Discover broad write/delete permissions on file shares, SharePoint, and other solutions. Broad is defined as many users having write/delete permissions for business-critical data. <br><br> - Reduce broad permissions while meeting business collaboration requirements.  <br><br> - Audit and monitor to ensure broad permissions don’t reappear. | Reduces risk from broad access-enabling ransomware activities. |
 |  |  |  |
 
-
 <!--
+
 | Done| Task | Description | Result | Priority | Level of difficulty | Dependencies |
 |:-------|:-------|:-----|:-------|:-------|:-------|:-------|
 | <input type="checkbox" disabled /> | Migrate to cloud |  | Move user data to cloud solutions like OneDrive/SharePoint to take advantage of [versioning and recycle bin capabilities](/microsoft-365/enterprise/microsoft-365-malware-and-ransomware-protection?view=o365-worldwide#sharepoint-online-and-onedrive-for-business-protection-against-ransomware). <br><br> Educate users on how to [recover their files](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15?ui=en-US&rs=en-US&ad=US) by themselves to reduce delays and cost of recovery. |  |  |  |
 | <input type="checkbox" disabled /> | Designate [Protected Folders](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) | Make it more difficult for unauthorized applications to modify the data in these folders. |  |  |  |  |
 | <input type="checkbox" disabled /> | Review Permissions <br><br> Discover broad write/delete permissions on file shares, SharePoint, and other solutions. Broad is defined as many users having write/delete to business-critical data. <br><br> Reduce broad permissions while meeting business collaboration requirements  <br><br> Audit and monitor to ensure broad permissions don’t reappear | Reduce risk from broad access enabling ransomware. |  |  |  |  |
 |  |  |  |  |  |  |  |
-
---> 
-
-<!--
 
 ### Implementation results and timelines
 
@@ -155,6 +150,6 @@ Try to achieve these results within 30-90 days:
 
 ## Next step
 
-[![Phase 2. Prevent broad access to your environment](media/protect-against-ransomware/protect-against-ransomware-phase2.png)](protect-against-ransomware-phase2.md)
+[![Phase 2. Limit the scope of damage](media/protect-against-ransomware/protect-against-ransomware-phase2.png)](protect-against-ransomware-phase2.md)
 
-Continue with [Phase 2](protect-against-ransomware-phase2.md) to prevent an attacker from gaining broad access to your environment.
+Continue with [Phase 2](protect-against-ransomware-phase2.md) to limit the scope of damage of an attack by protecting privileged roles.

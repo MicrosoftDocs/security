@@ -1,5 +1,5 @@
 ---
-title: "Phase 3: Prevent entry into your environment"
+title: "Phase 3: Make it hard to get in"
 ms.author: josephd
 author: JoeDavies-MSFT
 f1.keywords:
@@ -15,13 +15,13 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: 
-description: Deploy ransomware protection to prevent an attacker from entering your environment.
+description: Deploy ransomware protection to make it hard for an attacker to get into your environment by incrementally removing the risks.
 
 ---
 
-# Phase 3: Prevent entry into your environment
+# Phase 3: Make it hard to get in
 
-In this phase, you make the attackers work a lot harder to get access to your on-premises or cloud infrastructures by cutting them off at the points of entry as much as you can.
+In this phase, you make the attackers work a lot harder to get into your on-premises or cloud infrastructures by incrementally removing the risks at the points of entry.
 
 >[!Important]
 >While many of these will be familiar and/or easy to quickly accomplish, it’s critically important that **your work on Phase 3 should not slow down your progress on phases 1 and 2**!
@@ -256,3 +256,11 @@ Try to achieve these results within 30 days:
 
 - 100 % of employees are actively using MFA
 - 100 % deployment of higher password security
+
+## Additional resources
+
+- Overview of [Human-operated ransomware](human-operated-ransomware.md)
+
+- [Blog post](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) from the Microsoft 365 Defender Threat Intelligence Team for more information and attack chain analysis of actual human-operated ransomware attacks.
+
+- **Ransomware: A pervasive and ongoing threat** threat analytics report in the Microsoft 365 Defender portal.

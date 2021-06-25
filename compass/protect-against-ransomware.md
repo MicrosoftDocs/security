@@ -61,10 +61,10 @@ To help you understand how to protect your organization from ransomware, this gu
 
    Trying to do everything at once can be overwhelming, but some items can naturally be done in parallel. Staff on different teams can be working on tasks at the same time (e.g., backup team, endpoint team, identity team), while also driving for completion of the phases in priority order.
 
-Implementation checklists do not intend to imply an order of tasks and results or assume a specific state of your existing configuration. Use the checklist to confirm and modify your existing configuration as needed and in a way that works within your organization. For example, in the most important backup element, you backup some systems, but they may not be offline/immutable, or you may not test the full enterprise restore procedures, or you may not have backups of critical business systems or critical IT systems like Active Directory domain controllers. 
+Implementation checklists do not intend to imply an order of tasks and results or assume a specific state of your existing configuration. Use the checklist to confirm and modify your existing configuration as needed and in a way that works within your organization. For example, in the most important backup element, you backup some systems, but they may not be offline/immutable, or you may not test the full enterprise restore procedures, or you may not have backups of critical business systems or critical IT systems like Active Directory Domain Services (AD DS) domain controllers. 
 
 
-### Phase 1. Prevent a ransomware attacker from obtaining financial leverage
+### Phase 1. Prepare for the worst
 
 This phase is designed to [minimize the monetary incentive from ransomware attackers](protect-against-ransomware-phase1.md) by making it:
 
@@ -75,11 +75,11 @@ This phase is designed to [minimize the monetary incentive from ransomware attac
 >While restoring many or all enterprise systems is a difficult endeavor, the alternative of paying an attacker for a recovery key and then using tools written by attackers to recover systems and data is a much worse option.
 >
 
-### Phase 2. Prevent a ransomware attacker from getting broad access to resources in your environment
+### Phase 2. Limit the scope of damage
 
 Make the attackers work a lot harder to [gain access to multiple business critical systems via privileged access roles](protect-against-ransomware-phase2.md). Limiting the attacker’s ability to get privileged access makes it much harder to profit off of an attack on your organization, making it more likely they will give up and go elsewhere.
 
-### Phase 3. Prevent a ransomware attacker from entering your environment
+### Phase 3. Make it hard to get in
 
 This last set of tasks is important to raise friction but is a very large set of scope that will take time to complete as part of a larger security journey. The goal of this phase is for attackers to have to work a lot harder to [obtain access to your on-premises or cloud infrastructures](protect-against-ransomware-phase3.md) at the various common points of entry for attacks. There are a lot of these, so it’s important to prioritize your work here based on how fast you can accomplish these with current resources. 
 
@@ -87,7 +87,6 @@ While many of these will be familiar and/or easy to quickly accomplish, it’s c
 
 ## Next step
 
-[![Phase 1. Remove ransomware financial leverage](media/protect-against-ransomware/protect-against-ransomware-phase1.png)](protect-against-ransomware-phase1.md)
+[![Phase 1. Prepare for the worst](media/protect-against-ransomware/protect-against-ransomware-phase1.png)](protect-against-ransomware-phase1.md)
 
-Start with [Phase 1](protect-against-ransomware-phase1.md) to prevent an attacker from gaining financial leverage on your organization.
-
+Start with [Phase 1](protect-against-ransomware-phase1.md) to prepare your organization for the worst.

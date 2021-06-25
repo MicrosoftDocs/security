@@ -43,12 +43,16 @@ To quickly configure your IT infrastructure for the best protection against a ra
 
 This three-phase guidance tells you how to:
 
-1. Prevent a ransomware attacker from obtaining financial leverage.
-2. Prevent a ransomware attacker from getting broad access to resources in your environment.
-3. Prevent a ransomware attacker from entering your environment.
+1. Prepare for the worst so that you can recover from an attack without having to pay the ransom.
+2. Limit the scope of damage of an attack by protecting privileged roles.
+3. Make it harder for a ransomware attacker to get into your environment by incrementally removing risks.
 
 [![The three steps to protecting against ransomware and extortion](media/protect-against-ransomware/protect-against-ransomware-phases.png)](protect-against-ransomware.md)
 
+
 ## Additional resources
 
-See this [blog post](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) from the Microsoft 365 Defender Threat Intelligence Team for more information and attack chain analysis of actual human-operated ransomware attacks.
+- [Blog post](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) from the Microsoft 365 Defender Threat Intelligence Team for more information and attack chain analysis of actual human-operated ransomware attacks.
+
+- **Ransomware: A pervasive and ongoing threat** threat analytics report in the Microsoft 365 Defender portal.
+

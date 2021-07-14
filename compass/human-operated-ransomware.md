@@ -47,7 +47,28 @@ For the three phases to exploit attack weaknesses, see the [Protect your organiz
 
 ## Additional resources
 
-- [Blog post](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) from the Microsoft 365 Defender Threat Intelligence Team for more information and attack chain analysis of actual human-operated ransomware attacks.
+Key industry information:
 
-- **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal.
+- [The latest Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
+
+- **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal (see these [licensing requirements](/microsoft-365/security/defender/prerequisites#licensing-requirements))
+
+Microsoft 365:
+
+- [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware)
+- [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
+
+Microsoft Security team blog posts:
+
+- [Becoming resilient by understanding cybersecurity risks: Part 4—navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+
+  See the **Ransomware** section.
+
+- [Human-operated ransomware attacks: A preventable disaster (March 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+
+  Includes attack chain analysis of actual human-operated ransomware attacks.
+
+- [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+
 

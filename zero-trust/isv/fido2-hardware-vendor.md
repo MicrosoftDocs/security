@@ -33,21 +33,22 @@ You can become a Microsoft-compatible FIDO2 security key vendor through the foll
 
 ## Current partners
 
-| **Provider** | **Link** |
-| --- | --- |
-| AuthenTrend | [https://authentrend.com/about-us/#pg-35-3](https://authentrend.com/about-us/#pg-35-3) |
-| Ensurity | [https://www.ensurity.com/contact](https://www.ensurity.com/contact) |
-| Excelsecu | [https://www.excelsecu.com/productdetail/esecufido2secu.html](https://www.excelsecu.com/productdetail/esecufido2secu.html) |
-| Feitian | [https://ftsafe.us/pages/microsoft](https://ftsafe.us/pages/microsoft) |
-| Gemalto (Thales Group) | [https://safenet.gemalto.com/multi-factor-authentication/authenticators/passwordless-authentication/](https://safenet.gemalto.com/multi-factor-authentication/authenticators/passwordless-authentication/) |
-| Go-Trust ID | [https://www.gotrustid.com/](https://www.gotrustid.com/) |
-| HID | [https://www.hidglobal.com/contact-us](https://www.hidglobal.com/contact-us) |
-| Hypersecu | [https://www.hypersecu.com/hyperfido](https://www.hypersecu.com/hyperfido) |
-| IDmelon Technologies Inc. | [https://www.idmelon.com/#idmelon](https://www.idmelon.com/#idmelon) |
-| Kensington  | [https://www.kensington.com/solutions/product-category/why-biometrics/](https://www.kensington.com/solutions/product-category/why-biometrics/) |
-| KONA I | [https://konai.com/business/security/fido](https://konai.com/business/security/fido) |
-| OneSpan Inc. | [https://www.onespan.com/products/fido](https://www.onespan.com/products/fido) |
-| Token2 Switzerland | [https://www.token2.swiss/shop/product/token2-t2f2-alu-fido2-u2f-and-totp-security-key](https://www.token2.swiss/shop/product/token2-t2f2-alu-fido2-u2f-and-totp-security-key) |
-| TrustKey Solutions | [https://www.trustkeysolutions.com/security-keys/](https://www.trustkeysolutions.com/security-keys/) |
-| VinCSS | [https://passwordless.vincss.net](https://passwordless.vincss.net/) |
-| Yubico | [https://www.yubico.com/solutions/passwordless/](https://www.yubico.com/solutions/passwordless/) |
+| **Provider**              |         **Contact**                                                                                  |
+|---------------------------|------------------------------------------------------------------------------------------------------|
+| AuthenTrend               |  https://authentrend.com/about-us/#pg-35-3                                                           |
+| Ensurity                  |  https://www.ensurity.com/contact                                                                    |
+| Excelsecu                 |  https://www.excelsecu.com/productdetail/esecufido2secu.html                                         |
+| Feitian                   |  https://shop.ftsafe.us/pages/microsoft                                                              |
+| GoTrustID Inc.            |  https://www.gotrustid.com/idem-key                                                                  |
+| HID                       |  https://www.hidglobal.com/contact-us                                                                |
+| Hypersecu                 |  https://www.hypersecu.com/hyperfido                                                                 |
+| IDmelon Technologies Inc. |  https://www.idmelon.com/#idmelon                                                                    |
+| Kensington                |  https://www.kensington.com/solutions/product-category/why-biometrics/                               |
+| KONA I                    |  https://konai.com/business/security/fido                                                            |
+| Nymi                      |  https://www.nymi.com/product                                                                        | 
+| OneSpan Inc.              |  https://www.onespan.com/products/fido                                                               |
+| Thales Group              |  https://cpl.thalesgroup.com/access-management/authenticators/fido-devices                           |
+| Token2 Switzerland        |  https://www.token2.swiss/shop/product/token2-t2f2-alu-fido2-u2f-and-totp-security-key               |
+| TrustKey Solutions        |  https://www.trustkeysolutions.com/security-keys/                                                    |
+| VinCSS                    |  https://passwordless.vincss.net                                                                     |
+| Yubico                    |  https://www.yubico.com/solutions/passwordless/                                                      |

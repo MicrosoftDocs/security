@@ -114,7 +114,7 @@ Follow these steps:
 
 2.  [Discover and identify shadow IT](https://docs.microsoft.com/cloud-app-security/tutorial-shadow-it#phase-1-discover-and-identify-shadow-it) to find out what apps are being used, following one of three options:
 
-    1.  Integrate with [Microsoft Defender ATP](https://docs.microsoft.com/cloud-app-security/wdatp-integration) to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
+    1.  Integrate with [Microsoft Defender for Endpoint](https://docs.microsoft.com/cloud-app-security/wdatp-integration) to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
 
     1.  Deploy the [Cloud App Security log collector](https://docs.microsoft.com/cloud-app-security/discovery-docker) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
 

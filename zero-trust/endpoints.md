@@ -77,7 +77,7 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
       </td>
       <td>
          <p><b>IV.</b> <a href="#iv-endpoint-threat-detection-is-used-to-monitor-device-risk">Endpoint threat detection is used to monitor device risk.</a> Use a single pane of glass to manage all endpoints in a consistent way, and use a SIEM to route endpoint logs and transactions such that you get fewer, but actionable, alerts.</p>
-         <p><b>V.</b> <a href="#v-access-control-is-gated-on-endpoint-risk-for-both-corporate-devices-and-byod">Access control is gated on endpoint risk for both corporate devices and BYOD.</a> Integrate data from Microsoft Defender Advanced Threat Protection (ATP), or other Mobile Threat Defense (MTD) vendors, as an information source for device compliance policies and device Conditional Access rules. The device risk will then directly influence what resources will be accessible by the user of that device.</p>
+         <p><b>V.</b> <a href="#v-access-control-is-gated-on-endpoint-risk-for-both-corporate-devices-and-byod">Access control is gated on endpoint risk for both corporate devices and BYOD.</a> Integrate data from Microsoft Defender for Endpoint, or other Mobile Threat Defense (MTD) vendors, as an information source for device compliance policies and device Conditional Access rules. The device risk will then directly influence what resources will be accessible by the user of that device.</p>
       </td>
    </tr>
 </table>
@@ -274,9 +274,9 @@ Follow these steps to [create a compliance policy](https://docs.microsoft.com/me
 
     :::image type="content" source="./media/screenshot-windows-10-compliance-policy-defender-settings.png" alt-text="Screenshot of Microsoft Defender in Windows 10 compliance policy settings." border="true":::
 
-1.  Configure the required Microsoft Defender ATP machine risk score.
+1.  Configure the required Microsoft Defender for Endpoint machine risk score.
 
-    :::image type="content" source="./media/screenshot-windows-10-compliance-policy-defender-atp-settings.png" alt-text="Screenshot of Microsoft Defender ATP in Windows 10 compliance policy settings." border="true":::
+    :::image type="content" source="./media/screenshot-windows-10-compliance-policy-defender-atp-settings.png" alt-text="Screenshot of Defender for Endpoint in Windows 10 compliance policy settings." border="true":::
 
 1.  On the Actions for noncompliance tab, specify a sequence of actions to apply automatically to devices that do not meet this compliance policy.
 
@@ -575,7 +575,7 @@ Building and maintaining customized operating system images is a time-consuming 
 [Microsoft Endpoint Manager](https://www.microsoft.com/endpointmanager)
 (includes Microsoft Intune and Configuration Manager)
 
-[Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp#:~:text=Microsoft%20Defender%20ATP%20is%20a%20unified%20endpoint%20security,support%20via%20our%20first-party%20offerings%20and%20through%20partners%3A)
+[Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/threat-protection/endpoint-defender)
 
 [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
 

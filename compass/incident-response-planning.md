@@ -11,7 +11,7 @@ ms.prod: m365-security
 
 # Incident response planning
 
-Use this table as a checklist to prepare your Security Operations Center (SecOps) to respond to cybersecurity incidents.
+Use this table as a checklist to prepare your Security Operations Center (SOC) to respond to cybersecurity incidents.
 
 | Done| Activity | Description | Benefit |
 |:-------|:-------|:-----|:-----|

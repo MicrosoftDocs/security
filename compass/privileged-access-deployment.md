@@ -373,9 +373,9 @@ The solution will provide you:
 
 Enable MCAS and connect to Defender ATP to block access the risky URLs:
 
-* In [Microsoft Defender Security Center](https://securitycenter.windows) > Settings > Advanced features, set Microsoft Cloud App Security integration > **ON**
-* In [Microsoft Defender Security Center](https://securitycenter.windows)  > Settings > Advanced features, set Custom network indicators >  **ON**
-* In [Microsoft Cloud App Security portal](https://portal.cloudappsecurity.com) > Settings > Microsoft Defender ATP integration > Select **Block unsanctioned apps**  
+* In [Microsoft Defender Security Center](https://securitycenter.windows.com) > Settings > Advanced features, set Microsoft Cloud App Security integration > **ON**
+* In [Microsoft Defender Security Center](https://securitycenter.windows.com)  > Settings > Advanced features, set Custom network indicators >  **ON**
+* In [Microsoft Cloud App Security portal](https://portal.cloudappsecurity.com) > Settings > Microsoft Defender for Endpoint > Select **Enforce app access**  
 
 ## Manage local applications
 

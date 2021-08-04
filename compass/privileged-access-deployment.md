@@ -138,22 +138,14 @@ Azure AD Conditional Access can help restrict privileged administrative tasks to
 
 #### Conditional Access only allowing secured workstation ability to access Azure portal
 
-Azure AD offers the ability to manage and restrict, who and what can access your Azure cloud management portal. Enabling [Conditional Access](/azure/active-directory/conditional-access/overview) will assure that only your secure workstation can manage or change resources. It's essential that while deploying this feature you consider, if [emergency access](/azure/active-directory/roles/security-emergency-access) functionality can or should be used only for extreme cases and the account managed through policy.
+Organizations should block Privileged Users from being able to connect to cloud management interfaces, portals and PowerShell, from non-PAW devices.
+
+To block unauthorized devices from being able to access cloud management interfaces, follow the guidance in the article [Conditional Access: Filters for Devices (preview)](/azure/active-directory/conditional-access/concept-condition-filters-for-devices#create-a-conditional-access-policy).  It's essential that while deploying this feature you consider, [emergency access account](/azure/active-directory/roles/security-emergency-access) functionality. These accounts should be used only for extreme cases and the account managed through policy.
 
  > [!NOTE]
  > You will need to create a user group, and include your emergency user that can bypass the Conditional Access policy. For our example we have a security group called **Emergency BreakGlass**
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Conditional Access** > **New Policy**.
-1. Provide a **Name** for the policy.
-1. Select **User and Groups** > **Select users and groups**
-1. Select **Include** > **Directory roles** > Choose the roles > Global Administrator, Privileged Role Administrator, Privileged Authentication Administrator, Security Administrator, Compliance Administrator, Conditional Access Administrator, Application Administrator, Cloud Application Administrator, Intune Service Administrator
-1. Select **Exclude** > Choose **Users and groups** > Select **Select excluded users** > Select your **Emergency BreakGlass** group.
-1. Select **Cloud apps or actions** > Select **All cloud apps**
-1. Select **Conditions** > Select **Device Platforms** > Choose configure **Yes** > Select **Select Device platforms** Choose **Windows**
-1. Select **Access controls** > Select **Grant Access** **Yes** > Choose **Require device to be marked as compliant**.
-1. Select **Enable Policy** > **On**
-
-This policy set will ensure that your Administrators must use a compliant Windows device, which is set by Microsoft Endpoint Manager, and Microsoft Defender for Endpoint.
+This policy set will ensure that your Administrators must use a device that is able to present a specific device attribute value, that that MFA is satisfied, and the device is marked as compliant by Microsoft Endpoint Manager and Microsoft Defender for Endpoint.
 
 Organizations should also consider blocking legacy authentication protocols in their environments. There are multiple ways to accomplish this task, for more information about blocking legacy authentication protocols, see the article, [How to: Block legacy authentication to Azure AD with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).
 

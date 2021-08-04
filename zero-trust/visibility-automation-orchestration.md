@@ -52,10 +52,10 @@ converged into a single workflow, providing a seamless experience that increases
 
 Security Operation Centers often deploy a combination of SIEM and SOAR technologies to collect, detect, investigate, and respond to threats. Microsoft offers Azure Sentinel as its SIEM-as-a-service offering. Azure Sentinel ingests all Microsoft Azure Threat Protection (Azure ATP) and third-party data.
 
-Microsoft Threat Protection (MTP), a key feed into Azure Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context- aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration
+Microsoft 365 Defender, a key feed into Azure Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context- aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration
 tools, identities, and applications.
 
-It is through this hierarchy that we enable our customers to maximize their focus. Though context-awareness and automated remediation, MTP can detect and stop many threats without adding additional alert-fatigue to already overloaded SOC personnel. Advanced hunting inside of MTP brings that context to the hunt to focus on many key attack points. And hunting and orchestration across the entire ecosystem through Azure Sentinel provides the ability to gain the right visibility into all aspects of a heterogeneous environment, all while minimizing the cognitive overload of the operator.
+It is through this hierarchy that we enable our customers to maximize their focus. Though context-awareness and automated remediation, Microsoft 365 Defender can detect and stop many threats without adding additional alert-fatigue to already overloaded SOC personnel. Advanced hunting inside of Microsoft 365 Defender brings that context to the hunt to focus on many key attack points. And hunting and orchestration across the entire ecosystem through Azure Sentinel provides the ability to gain the right visibility into all aspects of a heterogeneous environment, all while minimizing the cognitive overload of the operator.
 
 ## Visibility, automation, and orchestration Zero Trust deployment objectives
 
@@ -107,11 +107,11 @@ The first step is to establish visibility by enabling [Microsoft Threat Protecti
 
 Follow these steps:
 
-1.  Sign up for one of the Microsoft Threat Protection workloads.
+1.  Sign up for one of the Microsoft 365 Defender workloads.
 2.  Enable the workloads and establish connectivity.
 3.  Configure detection on your devices and infrastructure to bring immediate visibility into activities going on in the environment.
     This gives you the all-important "dial tone" to start the flow of critical data.
-4.  Enable Microsoft Threat Protection to gain cross-workload visibility and incident detection.
+4.  Enable Microsoft 365 Defender to gain cross-workload visibility and incident detection.
 
 
 ### II. Enable automation
@@ -121,7 +121,7 @@ The next key step, once you have established visibility, is to enable automation
 
 #### Automated investigations and remediation
 
-With Microsoft Threat Protection, we have automated both investigations and remediation, which essentially provides an extra Tier 1 SOC analysis.
+With Microsoft 365 Defender, we have automated both investigations and remediation, which essentially provides an extra Tier 1 SOC analysis.
 
 [Automated Investigation and Remediation](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true) (AIR) can be enabled gradually, so that you can develop a comfort level with the actions that are taken.
 
@@ -134,7 +134,7 @@ Follow these steps:
 
 #### Link Microsoft data connectors and relevant third-party products to Azure Sentinel
 
-In order to gain visibility into the incidents that result from deploying a Zero Trust model, it is important to connect MTP, other Microsoft data connectors, and relevant third party products to [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.  
+In order to gain visibility into the incidents that result from deploying a Zero Trust model, it is important to connect Microsoft 365 Defender, other Microsoft data connectors, and relevant third party products to [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.  
   
 As part of the data connection process, relevant analytics can be enabled to trigger incidents and workbooks can be created for a graphical representation of the data over time.
 
@@ -152,7 +152,7 @@ Although machine learning and fusion analytics are provided out of the box, it i
 
 ### III. Enable additional protection and detection controls
 
-Enabling additional controls improves the signal coming in to MTP and Sentinel to improve your visibility and ability to orchestrate responses.
+Enabling additional controls improves the signal coming in to Microsoft 365 Defender and Sentinel to improve your visibility and ability to orchestrate responses.
 
 [Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) controls represent one such opportunity. These protective controls not only block certain activities that are most associated with malware, but also give into attempts to use specific approaches, which can help to detect adversaries leveraging these techniques earlier in the process.
 

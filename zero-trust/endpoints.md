@@ -77,7 +77,7 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
       </td>
       <td>
          <p><b>IV.</b> <a href="#iv-endpoint-threat-detection-is-used-to-monitor-device-risk">Endpoint threat detection is used to monitor device risk.</a> Use a single pane of glass to manage all endpoints in a consistent way, and use a SIEM to route endpoint logs and transactions such that you get fewer, but actionable, alerts.</p>
-         <p><b>V.</b> <a href="#v-access-control-is-gated-on-endpoint-risk-for-both-corporate-devices-and-byod">Access control is gated on endpoint risk for both corporate devices and BYOD.</a> Integrate data from Microsoft Defender Advanced Threat Protection (ATP), or other Mobile Threat Defense (MTD) vendors, as an information source for device compliance policies and device Conditional Access rules. The device risk will then directly influence what resources will be accessible by the user of that device.</p>
+         <p><b>V.</b> <a href="#v-access-control-is-gated-on-endpoint-risk-for-both-corporate-devices-and-byod">Access control is gated on endpoint risk for both corporate devices and BYOD.</a> Integrate data from Microsoft Defender for Endpoint, or other Mobile Threat Defense (MTD) vendors, as an information source for device compliance policies and device Conditional Access rules. The device risk will then directly influence what resources will be accessible by the user of that device.</p>
       </td>
    </tr>
 </table>
@@ -162,7 +162,7 @@ Follow these steps:
 
 #### Enable and configure Windows Hello for Business
 
-To allow users an alternative sign-in method that replaces a password, such as PIN, biometric authentication, or fingerprint reader, [enable Windows Hello for Business on users' Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/windows-hello).
+To allow users an alternative sign-in method that replaces a password, such as PIN, biometric authentication, or fingerprint reader, [enable Windows Hello for Business on users' Windows 10 devices](/mem/intune/protect/windows-hello).
 
 The following Microsoft Intune and Azure AD actions are completed in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home):
 
@@ -180,7 +180,7 @@ Start by creating a Windows Hello for Business enrollment policy in Microsoft In
 
     1.  **Not configured.** Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices isn't changed. All other settings on the pane are unavailable.
 
-If you selected Enabled, [configure the required settings](https://docs.microsoft.com/mem/intune/protect/identity-protection-configure) that are applied to all enrolled Windows 10 devices and Windows 10 mobile devices.
+If you selected Enabled, [configure the required settings](/mem/intune/protect/identity-protection-configure) that are applied to all enrolled Windows 10 devices and Windows 10 mobile devices.
 
 1.  Use a Trusted Platform Module (TPM). A TPM chip provides an additional layer of data security. Choose one of the following values:
 
@@ -200,7 +200,7 @@ If you selected Enabled, [configure the required settings](https://docs.microsof
 
 After you configure these settings, select **Save.**
 
-After configuring the settings that apply to all enrolled Windows 10 devices and Windows 10 mobile devices, [set up Windows Hello for Business Identity Protection profiles](https://docs.microsoft.com/mem/intune/protect/identity-protection-configure) to customize Windows Hello for Business security settings for specific end user devices.
+After configuring the settings that apply to all enrolled Windows 10 devices and Windows 10 mobile devices, [set up Windows Hello for Business Identity Protection profiles](/mem/intune/protect/identity-protection-configure) to customize Windows Hello for Business security settings for specific end user devices.
 
 1.  Select **Devices &gt; Configuration profiles &gt; Create profile &gt; Windows 10 and Later &gt; Identity Protection**.
 
@@ -239,18 +239,18 @@ Finally, you can create additional device restriction policies to further lock d
 
 ### II. Access is only granted to cloud-managed and compliant endpoints and apps
 
-Once you have identities for all the endpoints accessing corporate resources and before access is granted, you want to ensure that they meet the [minimum security requirements](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) set by your organization.
+Once you have identities for all the endpoints accessing corporate resources and before access is granted, you want to ensure that they meet the [minimum security requirements](/mem/intune/protect/device-compliance-get-started) set by your organization.
 
 After establishing compliance policies to gate access of corporate resources to trusted endpoints and mobile and desktop [applications](https://aka.ms/ZTApplications), all users can access organizational data on mobile devices and a minimum or maximum operating system version is installed on all devices. Devices are not jail-broken or rooted.
 
-Also, [set remediation rules](https://docs.microsoft.com/mem/intune/protect/actions-for-noncompliance) for noncompliant devices, such as blocking a noncompliant device or offering the user a grace period to get compliant.
+Also, [set remediation rules](/mem/intune/protect/actions-for-noncompliance) for noncompliant devices, such as blocking a noncompliant device or offering the user a grace period to get compliant.
 
 :::image type="content" source="./media/diagram-steps-box-endpoints-2.png" alt-text="Diagram of the steps within phase 2 of the initial deployment objectives." border="true":::
 
 
 #### Create a compliance policy with Microsoft Intune (all platforms)
 
-Follow these steps to [create a compliance policy](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy):
+Follow these steps to [create a compliance policy](/mem/intune/protect/create-compliance-policy):
 
 1.  Select Devices &gt; Compliance policies &gt; Policies &gt; Create Policy.
 
@@ -274,9 +274,9 @@ Follow these steps to [create a compliance policy](https://docs.microsoft.com/me
 
     :::image type="content" source="./media/screenshot-windows-10-compliance-policy-defender-settings.png" alt-text="Screenshot of Microsoft Defender in Windows 10 compliance policy settings." border="true":::
 
-1.  Configure the required Microsoft Defender ATP machine risk score.
+1.  Configure the required Microsoft Defender for Endpoint machine risk score.
 
-    :::image type="content" source="./media/screenshot-windows-10-compliance-policy-defender-atp-settings.png" alt-text="Screenshot of Microsoft Defender ATP in Windows 10 compliance policy settings." border="true":::
+    :::image type="content" source="./media/screenshot-windows-10-compliance-policy-defender-atp-settings.png" alt-text="Screenshot of Defender for Endpoint in Windows 10 compliance policy settings." border="true":::
 
 1.  On the Actions for noncompliance tab, specify a sequence of actions to apply automatically to devices that do not meet this compliance policy.
 
@@ -285,7 +285,7 @@ Follow these steps to [create a compliance policy](https://docs.microsoft.com/me
 
 #### Automate notification email and add additional remediation actions for noncompliant devices in Intune (all platforms)
 
-When their endpoints or apps become non-compliant, users are guided through self-remediation. Alerts are automatically generated with additional alarms and automated actions set for certain thresholds. You can set [non-compliance](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) remediation actions.
+When their endpoints or apps become non-compliant, users are guided through self-remediation. Alerts are automatically generated with additional alarms and automated actions set for certain thresholds. You can set [non-compliance](/mem/intune/protect/create-compliance-policy) remediation actions.
 
 Take these steps:
 
@@ -319,7 +319,7 @@ Once data access is granted, you want to control what the user can do with the d
 
 #### Apply recommended security settings
 
-First, [apply security settings recommended by Microsoft to Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/security-baselines) to protect corporate data (Requires Windows 10 1809 and later):
+First, [apply security settings recommended by Microsoft to Windows 10 devices](/mem/intune/protect/security-baselines) to protect corporate data (Requires Windows 10 1809 and later):
 
 Use Intune security baselines to help you secure and protect your users and devices. Security baselines are preconfigured groups of Windows settings that help you apply a known group of settings and default values that are recommended by the relevant security teams.
 
@@ -344,7 +344,7 @@ Follow these steps:
 
 #### Ensure updates are deployed automatically to endpoints
 
-[Configure Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)
+[Configure Windows 10 devices](/mem/intune/protect/windows-update-for-business-configure)
 
 Configure Windows Updates for Business to simplify the update management experience for users and ensure that devices are automatically updated to meet the required compliance level.
 
@@ -369,7 +369,7 @@ Follow these steps:
 
     1.  Under **Assignments**, choose and select groups to include and then assign the feature update deployment to one or more groups.
 
-[Configure iOS devices](https://docs.microsoft.com/mem/intune/protect/software-updates-ios)
+[Configure iOS devices](/mem/intune/protect/software-updates-ios)
 
 For corporate-enrolled devices, configure iOS updates to simplify the update management experience for users and ensure that devices are automatically updated to meet the required compliance level. Configure iOS update policy.
 
@@ -406,7 +406,7 @@ Follow these steps:
 
 #### Ensure devices are encrypted
 
-[Configure Bitlocker to encrypt Windows 10 devices](https://docs.microsoft.com/mem/intune/protect/encrypt-devices)
+[Configure Bitlocker to encrypt Windows 10 devices](/mem/intune/protect/encrypt-devices)
 
 1.  Select **Devices &gt; Configuration profiles &gt; Create profile**.
 
@@ -424,7 +424,7 @@ Follow these steps:
 
 4.  Configure settings for BitLocker to meet your business needs, and then select **OK**.
 
-[Configure FileVault encryption on macOS devices](https://docs.microsoft.com/mem/intune/protect/encrypt-devices-filevault)
+[Configure FileVault encryption on macOS devices](/mem/intune/protect/encrypt-devices-filevault)
 
 1.  Select **Devices &gt; Configuration profiles &gt; Create profile**.
 
@@ -449,7 +449,7 @@ Follow these steps:
 
 #### Create application protection policies to protect corporate data at the app-level
 
-To ensure your data remains safe or contained in a managed app, [create app protection policies (APP)](https://docs.microsoft.com/mem/intune/apps/app-protection-policy). A policy can be a rule that is enforced when the user attempts to access or move \"corporate\" data, or a set of actions that are prohibited or monitored when the user is inside the app.
+To ensure your data remains safe or contained in a managed app, [create app protection policies (APP)](/mem/intune/apps/app-protection-policy). A policy can be a rule that is enforced when the user attempts to access or move \"corporate\" data, or a set of actions that are prohibited or monitored when the user is inside the app.
 
 The APP data protection framework is organized into three distinct configuration levels, with each level building off the previous level:
 
@@ -469,21 +469,21 @@ Follow these steps:
 
 4.  Configure Data Protection Settings:
 
-    1.  **iOS/iPadOS data protection.** For information, see [iOS/iPadOS app protection policy settings - Data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios#data-protection).
+    1.  **iOS/iPadOS data protection.** For information, see [iOS/iPadOS app protection policy settings - Data protection](/mem/intune/apps/app-protection-policy-settings-ios#data-protection).
 
-    1.  **Android data protection.** For information, see [Android app protection policy settings - Data protection](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-android#data-protection).
+    1.  **Android data protection.** For information, see [Android app protection policy settings - Data protection](/mem/intune/apps/app-protection-policy-settings-android#data-protection).
 
 5.  Configure Access Requirement Settings:
 
-    1.  **iOS/iPadOS access requirements**. For information, see [iOS/iPadOS app protection policy settings - Access requirements](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios#access-requirements).
+    1.  **iOS/iPadOS access requirements**. For information, see [iOS/iPadOS app protection policy settings - Access requirements](/mem/intune/apps/app-protection-policy-settings-ios#access-requirements).
 
-    1.  **Android access requirements.** For information, see [Android app protection policy settings - Access requirements](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-android#access-requirements).
+    1.  **Android access requirements.** For information, see [Android app protection policy settings - Access requirements](/mem/intune/apps/app-protection-policy-settings-android#access-requirements).
 
 6.  Configure Conditional Launch Settings:
 
-    1.  **iOS/iPadOS conditional launch**. For information, see [iOS/iPadOS app protection policy settings - Conditional launch](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios#conditional-launch).
+    1.  **iOS/iPadOS conditional launch**. For information, see [iOS/iPadOS app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-ios#conditional-launch).
 
-    1.  **Android conditional launch**. For information, see [Android app protection policy settings - Conditional launch](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-android#conditional-launch).
+    1.  **Android conditional launch**. For information, see [Android app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-android#conditional-launch).
 
 7.  Click **Next** to display the **Assignments** page.
 
@@ -506,7 +506,7 @@ Once you've accomplished your first three objectives, the next step is to config
 
 #### Route endpoint logs and transactions to a SIEM or Power BI
 
-Using the Intune Data warehouse, [send device and app management data to reporting or SIEM tools](https://docs.microsoft.com/mem/intune/developer/reports-nav-intune-data-warehouse) for intelligent filtering of alerts to reduce noise.
+Using the Intune Data warehouse, [send device and app management data to reporting or SIEM tools](/mem/intune/developer/reports-nav-intune-data-warehouse) for intelligent filtering of alerts to reduce noise.
 
 Follow these steps:
 
@@ -547,7 +547,7 @@ Choose the option to import or get data from an Odata feed.
 
 5.  Select **Autodetect** if Power BI has not already detected the relationships.
 
-6.  Learn [advanced ways to set up PowerBI visualizations](https://docs.microsoft.com/mem/intune/developer/reports-proc-create-with-odata#create-a-treemap-visualization).
+6.  Learn [advanced ways to set up PowerBI visualizations](/mem/intune/developer/reports-proc-create-with-odata#create-a-treemap-visualization).
 
 
 ### V. Access control is gated on endpoint risk for both corporate devices and BYOD
@@ -560,9 +560,9 @@ Building and maintaining customized operating system images is a time-consuming 
 
 -   Windows Autopilot is a collection of technologies used to set up and preconfigure new devices, getting them ready for productive use. You can also use Windows Autopilot to reset, repurpose, and recover devices.
 
--   [Configure Windows Autopilot to automate Azure AD Join](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) and enroll new corporate-owned devices into Intune.
+-   [Configure Windows Autopilot to automate Azure AD Join](/windows/deployment/windows-autopilot/windows-autopilot) and enroll new corporate-owned devices into Intune.
 
--   [Configure Apple DEP](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment-program-enroll-ios) to automatically enroll iOS and iPadOS devices.
+-   [Configure Apple DEP](/mem/intune/enrollment/device-enrollment-program-enroll-ios) to automatically enroll iOS and iPadOS devices.
 
 ## Products covered in this guide
 
@@ -575,9 +575,9 @@ Building and maintaining customized operating system images is a time-consuming 
 [Microsoft Endpoint Manager](https://www.microsoft.com/endpointmanager)
 (includes Microsoft Intune and Configuration Manager)
 
-[Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp#:~:text=Microsoft%20Defender%20ATP%20is%20a%20unified%20endpoint%20security,support%20via%20our%20first-party%20offerings%20and%20through%20partners%3A)
+[Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/threat-protection/endpoint-defender)
 
-[BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+[BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview)
 
 ## Conclusion
 

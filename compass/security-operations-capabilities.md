@@ -33,7 +33,9 @@ These are the capabilities that you can use for your security operations.
 
 - [Security operations functions](/azure/cloud-adoption-framework/organize/cloud-security-operations-center) from the Cloud Adoption Framework for Azure
 - [SOC Process Framework Workbook for Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-azure-sentinel-soc-process-framework-workbook/ba-p/2339315)
-- [Additional security guidance from Microsoft](/security/)
+- [Azure AD security operations guide](/azure/active-directory/fundamentals/security-operations-introduction)
+- [Microsoft 365 Defender security operations guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops)
+
 
 ## Key Microsoft security resources 
 

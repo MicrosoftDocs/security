@@ -29,7 +29,7 @@
           items:
             - name: Overview
               href: incident-response-overview.md
-            - name: Incident planning
+            - name: Planning
               href: incident-response-planning.md
             - name: Playbooks
               items:

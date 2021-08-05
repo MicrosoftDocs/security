@@ -57,6 +57,18 @@ Microsoft 365:
 
 - [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
+- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Handling ransomware in Sharepoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+
+Microsoft 365 Defender:
+
+- [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
+
+Microsoft Azure:
+
+- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video))
+- [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
+- [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
 
 Microsoft Security team blog posts:
 

@@ -37,7 +37,7 @@ This article contains the following sections:
 
 ## Prerequisites
 
-Here are general settings and configurations you should complete to perform an investigation for Application Consent Grants. Before starting the investigation, make sure you have read about the types of consent permissions explained in [Consent permission types](https://aka.ms/getazureadpermissions).
+Here are general settings and configurations you should complete to perform an investigation for Application Consent Grants. Before starting the investigation, make sure you have read about the types of consent permissions explained in [Consent permission types](/azure/active-directory/develop/v2-permissions-and-consent).
 
 ### Customer data
 
@@ -96,7 +96,7 @@ Install-Module -Name AzureAD -Verbose
 
 #### Download the AzureADPSPermissions Script from GitHub
 
-1. Download the [Get-AzureADPSPermissions.ps1](https://aka.ms/getazureadpermissions) script from GitHub to a folder from which you will run the script. The output file "*permissions.csv*" will also be written to this same folder.
+1. Download the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub to a folder from which you will run the script. The output file "*permissions.csv*" will also be written to this same folder.
 2. Open a PowerShell instance as an administrator and open the folder in which you saved the script.
 3. Connect to your directory using the `Connect-AzureAD` cmdlet. Here's an example.
 
@@ -285,7 +285,7 @@ Use this checklist to perform application consent grant validation.
   - Install the Azure AD PowerShell module.
   - Run the Windows PowerShell app with elevated privileges. (Run as administrator).
   - Configure PowerShell to run signed scripts.
-  - Download the [Get-AzureADPSPermissions.ps1](https://aka.ms/getazureadpermissions) script.
+  - Download the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script.
 
 - **Investigation triggers**
   - Account compromise
@@ -323,7 +323,7 @@ There are several PowerShell tools you can use to investigate illicit consent gr
 
 - HAWK tool
 - AzureAD incident response module
-- The [Get-AzureADPSPermissions.ps1](https://aka.ms/getazureadpermissions) script from GitHub
+- The [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub
 
 PowerShell is the easiest tool and does not require you to modify anything in the tenancy. We are going to base our investigation on the public documentation from the Illicit Consent Grant attack.
 

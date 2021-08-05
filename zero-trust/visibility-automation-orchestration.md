@@ -50,7 +50,7 @@ In the [infrastructure](https://aka.ms/ZTInfrastructure) pillar, time was spent 
 In order to use these tactics to manage threats, you should have a central console to allow SOC administrators to detect, investigate, remediate, hunt, utilize threat intelligence, understand known vulnerabilities, lean on threat experts and block threats across any of the six pillars. The tools needed to support these phases work best if
 converged into a single workflow, providing a seamless experience that increases the effectiveness of the SOC analyst.
 
-Security Operation Centers often deploy a combination of SIEM and SOAR technologies to collect, detect, investigate, and respond to threats. Microsoft offers Azure Sentinel as its SIEM-as-a-service offering. Azure Sentinel ingests all Microsoft Azure Threat Protection (Azure ATP) and third-party data.
+Security Operation Centers often deploy a combination of SIEM and SOAR technologies to collect, detect, investigate, and respond to threats. Microsoft offers Azure Sentinel as its SIEM-as-a-service offering. Azure Sentinel ingests all Microsoft Defender for Identity and third-party data.
 
 Microsoft Threat Protection (MTP), a key feed into Azure Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context- aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration
 tools, identities, and applications.
@@ -123,7 +123,7 @@ The next key step, once you have established visibility, is to enable automation
 
 With Microsoft Threat Protection, we have automated both investigations and remediation, which essentially provides an extra Tier 1 SOC analysis.
 
-[Automated Investigation and Remediation](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true) (AIR) can be enabled gradually, so that you can develop a comfort level with the actions that are taken.
+[Automated Investigation and Remediation](/microsoft-365/security/mtp/mtp-autoir) (AIR) can be enabled gradually, so that you can develop a comfort level with the actions that are taken.
 
 Follow these steps:
 
@@ -154,19 +154,19 @@ Although machine learning and fusion analytics are provided out of the box, it i
 
 Enabling additional controls improves the signal coming in to MTP and Sentinel to improve your visibility and ability to orchestrate responses.
 
-[Attack surface reduction](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) controls represent one such opportunity. These protective controls not only block certain activities that are most associated with malware, but also give into attempts to use specific approaches, which can help to detect adversaries leveraging these techniques earlier in the process.
+[Attack surface reduction](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) controls represent one such opportunity. These protective controls not only block certain activities that are most associated with malware, but also give into attempts to use specific approaches, which can help to detect adversaries leveraging these techniques earlier in the process.
 
 ## Products covered in this guide
 
 **Microsoft Azure**
 
-[Azure Advanced Threat Protection](https://azure.microsoft.com/features/azure-advanced-threat-protection/)
+[Microsoft Defender for Identity](https://www.microsoft.com/security/business/threat-protection/identity-defender)
 
 [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
 
 **Microsoft 365**
 
-[Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection)
+[Microsoft Threat Protection](https://www.microsoft.com/security/business/threat-protection/microsoft-365-defender)
 
 
 <br/><br/>

@@ -38,7 +38,7 @@ Use this table as a checklist to prepare your Security Operations Center (SOC) t
 | [Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra) | A set of visual architecture diagrams that show Microsoft’s cybersecurity capabilities and their integration with Microsoft cloud platforms such as Microsoft 365 and Microsoft Azure and third-party cloud platforms and apps. |
 | [Minutes matter infographic](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf) download | An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks.  |
 | [Azure Cloud Adoption Framework security operations](/azure/cloud-adoption-framework/secure/security-operations) | Strategic guidance for leaders establishing or modernizing a security operation function. |
-| [Microsoft security best practices for security operations](/security/compass/security-operations) | How to best use your SecOps center to move faster that the attackers targeting your organization. |
+| [Microsoft security best practices for security operations](/security/compass/security-operations) | How to best use your SecOps center to move faster than the attackers targeting your organization. |
 | [Microsoft cloud security for IT architects model](https://aka.ms/cloudarchsecurity) | Security across Microsoft cloud services and platforms for identity and device access, threat protection, and information protection. |
 | [Microsoft security documentation](/security/) | Additional security guidance from Microsoft. |
 |||

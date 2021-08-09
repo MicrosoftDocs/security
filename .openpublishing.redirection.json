@@ -1,6 +1,11 @@
 { 
     "redirections": [
       {
+        "source_path": "zero-trust/isv/fido2-hardware-vendor.md",
+        "redirect_url": "/active-directory/authentication/fido2-hardware-vendor",
+        "redirect_document_id": false
+      },
+      {
         "source_path": "security-docs/solving-tls1-problem.md",
         "redirect_url": "/security/engineering/solving-tls1-problem",
         "redirect_document_id": true

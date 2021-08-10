@@ -11,7 +11,7 @@ ms.prod: m365-security
 
 # Incident response process
 
-Here are a set of recommendations and best practices for responding to security incidents. Please feel free to incorporate the ones that will work within your organization's security departments.
+Here is a set of recommendations and best practices for responding to security incidents. Please feel free to incorporate the ones that will work within your organization's security department.
 
 During an incident, it is critical to:
 
@@ -200,10 +200,6 @@ Here are some helpful tips:
 Executive and board-level communications for incident response can be challenging if not practiced or anticipated. Make sure you have a communication plan to manage progress reporting and expectations for recovery.
 
 ## Incident response process
-
-Responding to incidents can be done effectively from both technical and operations perspectives with these recommendations. 
-
-### Process
 
 Use this general guidance about the incident response process for your security staff as needed.
 

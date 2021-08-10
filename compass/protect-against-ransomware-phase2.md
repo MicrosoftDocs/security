@@ -51,19 +51,19 @@ Build a multi-part strategy using the guidance at [https://aka.ms/SPA](https://a
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
-| <input type="checkbox" disabled /> | Enforce end-to-end session security. | Explicitly validates the trust of users and devices before allowing access to administrative interfaces (using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview)). |
-| <input type="checkbox" disabled /> |  Protect and monitor identity systems. | Prevents privilege escalation attacks including directories, identity management, administrator accounts and groups, and consent grant configuration. |
-| <input type="checkbox" disabled /> | Mitigate lateral traversal. | Ensures that compromising a single device does not immediately lead to control of many or all other devices using local account passwords, service account passwords, or other secrets. |
-| <input type="checkbox" disabled /> | Ensure rapid threat response. | Limits an adversary's access and time in the environment. See [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response) for more information. |
+| <input type="checkbox" /> | Enforce end-to-end session security. | Explicitly validates the trust of users and devices before allowing access to administrative interfaces (using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview)). |
+| <input type="checkbox" /> |  Protect and monitor identity systems. | Prevents privilege escalation attacks including directories, identity management, administrator accounts and groups, and consent grant configuration. |
+| <input type="checkbox" /> | Mitigate lateral traversal. | Ensures that compromising a single device does not immediately lead to control of many or all other devices using local account passwords, service account passwords, or other secrets. |
+| <input type="checkbox" /> | Ensure rapid threat response. | Limits an adversary's access and time in the environment. See [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response) for more information. |
 |  |  |  |
 
 <!--
 | Done| Task | Description | Result | Priority | Level of difficulty | Dependencies |
 |:-------|:-------|:-----|:-------|:-------|:-------|:-------|
-| <input type="checkbox" disabled /> | Enforce end-to-end session security | explicitly validate trust of users and workstations before allowing access to administrative interfaces (using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview)). |  |  |  |  |
-| <input type="checkbox" disabled /> |  Protect and monitor identity systems | against privilege escalation attacks including directories, identity management, administrator accounts and groups, and consent grant configuration. |  |  |  |  |
-| <input type="checkbox" disabled /> | Mitigate lateral traversal | Ensure that compromising a single device will not immediately lead to control of many or all other devices using local account passwords, service account passwords, or other secrets |  |  |  |  |
-| <input type="checkbox" disabled /> | Ensure rapid threat response | Limit adversary access and time in the environment. See [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response) for more information. |  |  |  |  |
+| <input type="checkbox" /> | Enforce end-to-end session security | explicitly validate trust of users and workstations before allowing access to administrative interfaces (using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview)). |  |  |  |  |
+| <input type="checkbox" /> |  Protect and monitor identity systems | against privilege escalation attacks including directories, identity management, administrator accounts and groups, and consent grant configuration. |  |  |  |  |
+| <input type="checkbox" /> | Mitigate lateral traversal | Ensure that compromising a single device will not immediately lead to control of many or all other devices using local account passwords, service account passwords, or other secrets |  |  |  |  |
+| <input type="checkbox" /> | Ensure rapid threat response | Limit adversary access and time in the environment. See [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response) for more information. |  |  |  |  |
 |  |  |  |  |  |  |  |
 
 --> 
@@ -103,21 +103,21 @@ Apply these best practices for improving your detection and response.
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
-| <input type="checkbox" disabled /> | Prioritize common entry points: <br><br> - Use integrated Extended Detection and Response (XDR) tools like [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection) to provide high quality alerts and minimize friction and manual steps during response. <br><br> - Monitor for brute-force attempts like [password spray](/defender-for-identity/compromised-credentials-alerts). | Ransomware (and other) operators favor endpoint, email, identity, and RDP as entry points. |
-| <input type="checkbox" disabled /> | Monitor for an adversary disabling security (this is often part of an attack chain), such as: <br><br> - Event log clearing, especially the Security Event log and PowerShell Operational logs. <br><br> - Disabling of security tools and controls (associated with some groups). | Attackers target security detection facilities to more safely continue their attack. |
-| <input type="checkbox" disabled /> | Don’t ignore commodity malware. | Ransomware attackers regularly purchase access to target organizations from dark markets. |
-| <input type="checkbox" disabled /> | Integrate outside experts into processes to supplement expertise, such as the [Microsoft Detection and Response Team (DART)](https://aka.ms/dart). | Experience counts for detection and recovery. |
-| <input type="checkbox" disabled /> | Rapidly isolate compromised computers using [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network). | Windows 10 integration makes this easy. |
+| <input type="checkbox" /> | Prioritize common entry points: <br><br> - Use integrated Extended Detection and Response (XDR) tools like [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection) to provide high quality alerts and minimize friction and manual steps during response. <br><br> - Monitor for brute-force attempts like [password spray](/defender-for-identity/compromised-credentials-alerts). | Ransomware (and other) operators favor endpoint, email, identity, and RDP as entry points. |
+| <input type="checkbox" /> | Monitor for an adversary disabling security (this is often part of an attack chain), such as: <br><br> - Event log clearing, especially the Security Event log and PowerShell Operational logs. <br><br> - Disabling of security tools and controls (associated with some groups). | Attackers target security detection facilities to more safely continue their attack. |
+| <input type="checkbox" /> | Don’t ignore commodity malware. | Ransomware attackers regularly purchase access to target organizations from dark markets. |
+| <input type="checkbox" /> | Integrate outside experts into processes to supplement expertise, such as the [Microsoft Detection and Response Team (DART)](https://aka.ms/dart). | Experience counts for detection and recovery. |
+| <input type="checkbox" /> | Rapidly isolate compromised computers using [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network). | Windows 10 integration makes this easy. |
 |  |  |  |
 
 <!--
 | Done| Task | Description | Result | Priority | Level of difficulty | Dependencies |
 |:-------|:-------|:-----|:-------|:-------|:-------|:-------|
-| <input type="checkbox" disabled /> | Prioritize common entry points | Ransomware (and other) operators favor Endpoint/Email/Identity + RDP | Integrated XDR - Use integrated Extended Detection and Response (XDR) tools like [Microsoft 365 Defender(/microsoft-365/security/mtp/microsoft-threat-protection)] to provide high quality alerts and minimize friction and manual steps during response <br><br> Brute Force - Monitor for brute-force attempts like [password spray](/defender-for-identity/compromised-credentials-alerts) |  |  |  |
-| <input type="checkbox" disabled /> | Monitor for adversary disabling security | this is often part of HumOR attack chain | Event Logs Clearing – especially the Security Event log and PowerShell Operational logs <br><br> Disabling of security tools/controls (associated with some groups) |  |  |  |
-| <input type="checkbox" disabled /> | Don’t ignore commodity malware | Ransomware attackers regularly purchase access to target organizations from dark markets |  |  |  |  |
-| <input type="checkbox" disabled /> | Integrate outside experts into processes to supplement expertise, such as the [Microsoft Detection and Response Team (DART)](https://aka.ms/dart) |  |  |  |  |  |
-| <input type="checkbox" disabled /> | Rapidly isolate compromised computers using [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network) |  |  |  |  |  |
+| <input type="checkbox" /> | Prioritize common entry points | Ransomware (and other) operators favor Endpoint/Email/Identity + RDP | Integrated XDR - Use integrated Extended Detection and Response (XDR) tools like [Microsoft 365 Defender(/microsoft-365/security/mtp/microsoft-threat-protection)] to provide high quality alerts and minimize friction and manual steps during response <br><br> Brute Force - Monitor for brute-force attempts like [password spray](/defender-for-identity/compromised-credentials-alerts) |  |  |  |
+| <input type="checkbox" /> | Monitor for adversary disabling security | this is often part of HumOR attack chain | Event Logs Clearing – especially the Security Event log and PowerShell Operational logs <br><br> Disabling of security tools/controls (associated with some groups) |  |  |  |
+| <input type="checkbox" /> | Don’t ignore commodity malware | Ransomware attackers regularly purchase access to target organizations from dark markets |  |  |  |  |
+| <input type="checkbox" /> | Integrate outside experts into processes to supplement expertise, such as the [Microsoft Detection and Response Team (DART)](https://aka.ms/dart) |  |  |  |  |  |
+| <input type="checkbox" /> | Rapidly isolate compromised computers using [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network) |  |  |  |  |  |
 |  |  |  |  |  |  |  |
 
 ### Implementation results and timelines

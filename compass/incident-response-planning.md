@@ -30,6 +30,13 @@ Use this table as a checklist to prepare your Security Operations Center (SOC) t
 | <input type="checkbox" /> | Incident response planning | At the outset of the incident, decide on: <ul><li> Important organizational parameters. </li><li> Assignment of people to roles and responsibilities. </li><li> The sense-of-urgency (such as 24x7 and business hours). </li><li> Staff for sustainability for the duration. </li></ul> | There is a tendency to throw all available resources at an incident in the beginning and hope for a quick resolution. Once you recognize or anticipate that an incident will go for an extended period of time, take on a different posture that with your staff and suppliers that allows them to settle in for a longer haul. |
 | <input type="checkbox" /> | Incident responders | Establish clear expectations with one another. A popular format of reporting ongoing activities includes: <ul><li> What have we done (and what were the results)? </li><li> What are we doing (and what results will be produced and when)? </li><li> What do we plan to do next (and when is it realistic to expect results)? </li></ul>| Incident responders come with different techniques and approaches, including dead box analysis, big data analysis, and the ability to produce incremental results. Starting with clear expectations will facilitate clear communications. | 
 
+## Incident response resources
+
+- [Overview](incident-response-overview.md) for Microsoft security products and resources for new-to-role and experienced analysts
+- [Process](incident-response-process.md) for incident response process recommendations and best practices
+- [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
+- [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
+- [Azure Sentinel](/azure/sentinel/investigate-cases) incident response
 
 ## Key Microsoft security resources 
 

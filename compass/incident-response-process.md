@@ -11,7 +11,7 @@ ms.prod: m365-security
 
 # Incident response process
 
-Intro
+Here are a set of recommendations and best practices for responding to security incidents. Please feel free to incorporate the ones that will work within your organization's security departments.
 
 During an incident, it is critical to:
 
@@ -48,15 +48,15 @@ During an incident, you must strike these critical balances:
 
 This article is designed to lower risk to your business in an incident by identifying common errors to avoid and providing guidance on what actions you can take rapidly that both reduce risk and meet stakeholder needs. 
 
-## Response
-Intro
+## Response best practices
 
-### Technology best practices
-Intro
+Responding to incidents can be done effectively from both technical and operations perspectives with these recommendations. 
 
-Here are some critical success factors:
+### Technology
 
-- You must Identify the scope of the attack operation.
+For the technical aspects of incident response, here are some critical success factors:
+
+- You must identify the scope of the attack operation.
 
    Most adversaries use multiple persistence mechanisms.
 
@@ -76,7 +76,7 @@ Here are some useful tips:
 
 - Don’t investigate forever
 
-   You must ruthlessly prioritize your  investigation efforts. For example, only perform forensic analysis on endpoints that attackers have actually used or modified. In a major incident where an attacker has administrative privileges, it is practically impossible to investigate all potentially compromised resources (which may include all corporate resources). 
+   You must ruthlessly prioritize your  investigation efforts. For example, only perform forensic analysis on endpoints that attackers have actually used or modified. In a major incident where an attacker has administrative privileges, it is practically impossible to investigate all potentially compromised resources (which may include all organization resources). 
 
 - Share information
 
@@ -94,12 +94,11 @@ Here are some useful tips:
 
    Plan for 50% of your staff operating at 50% of normal capacity due to situational stress.
 
-A key expectation to manage is that you may never be able to identify “patient zero” because the data required for this may have been deleted before the investigation starts (such as an attacker covering their tracks and log rolling).
+A key expectation to manage with stakeholder is that you may never be able to identify the information on the initial attack because the data required for this may have been deleted before the investigation starts (such as an attacker covering their tracks and log rolling).
 
-### Operations best practices
+### Operations
 
-
-Here are some critical success factors:
+For security operations aspects of incident response, here are some critical success factors:
 
 - Staying focused
 
@@ -115,7 +114,7 @@ Here are some critical success factors:
 
 Here are some useful tips:
 
-- Consider ICS for crisis management
+- Consider the Incident Command System (ICS) for crisis management
 
    If you don’t have a permanent organization that manages security incidents, we recommend using the ICS as a temporary organizational structure to manage the crisis. 
 
@@ -129,46 +128,20 @@ Here are some useful tips:
 
    Also consider your ability to hire, train, and retain people for any rare or specialized skill sets needed to operate or gain value from the tool. 
 
-- Access to deep expertise 
+- Access deep expertise 
 
    Confirm you have the ability to escalate questions and issues to deep experts on critical platforms. This may require access to the operating system and application vendor for business-critical systems and enterprise-wide components (such as desktops and servers). 
 
 Expectations for the flow of information between stakeholders will vary without clear guidance and input from senior incident response leaders. See [incident response planning](incident-response-planning.md) for more information.
 
 
-### Process
+## Recovery best practices
 
-Intro
+Recovering from incidents can be done effectively from both technical and operations perspectives with these recommendations. 
 
-1. Alert appears in the queue
+### Technology
 
-   After a threat detection tool such as Azure Sentinel or Microsoft 365 Defender detects a likely attack, an incident is automatically created. The Mean Time to Acknowledge (MTTA) measurement of SOC responsiveness begins with the time this attack is noticed by your security staff. 
-
-2. Own and orient
-
-   An analyst on shift is either delegated or takes ownership of the incident and performs an initial analysis. The timestamp for this is the end of the MTTA responsiveness measurement and begins the Mean Time to Remediate (MTTR) measurement.
-
-3. Examine the endpoints
-
-   Typically, the first priority is to identify affected endpoints so your analysts can rapidly get deep insight. For example, use the Endpoint Detection and Response (EDR) functionality in Azure Sentinel or Microsoft Defender 365 for this.
-
-4. Scope out and fill in the timeline
-
-   The analyst then builds a full picture and timeline of the related chain of events that led to the alert (which may be an adversary’s attack operation or false alarm positive) by following leads from the first host alert. The analyst travels along the timeline:
-
-   - Backward in time: Track backward to identify the entry point into your environment.
-
-   - Forward in time: Follow leads to any endpoints (devices) or assets an attacker may have accessed or attempted to access.
-
-Your analysts can build this picture using the MITRE ATT&CK™ model or the Lockheed Martin Cyber Kill Chain®.
-
-## Recovery
-Intro
-
-### Technology best practices
-Intro
-
-Here are some critical success factors:
+For the technical aspects of recovering from an incident, here are some critical success factors:
 
 - Don’t boil the ocean
 
@@ -198,10 +171,9 @@ Here are some helpful tips:
 
 A key expectation to manage is that your first recovery attempt may not fully succeed, so you may have to try again. 
 
-### Operations best practices
-Intro
+### Operations
 
-Here are some critical success factors:
+For the operations of recovering from an incident, here are some critical success factors:
 
 - Have a clear plan and limited scope
 
@@ -227,15 +199,19 @@ Here are some helpful tips:
 
 Executive and board-level communications for incident response can be challenging if not practiced or anticipated. Make sure you have a communication plan to manage progress reporting and expectations for recovery.
 
+## Incident response process
+
+Responding to incidents can be done effectively from both technical and operations perspectives with these recommendations. 
+
 ### Process
 
-Intro
+Use this general guidance about the incident response process for your security staff as needed.
 
-<!--
-When we last left our heroes in the previous entry, our analyst had built a timeline of the potential adversary attack operation. Of course, knowing what happened doesn’t actually stop the adversary or reduce organizational risk, so let’s remediate this attack!
---> 
+### 1. Decide and act
 
-#### 1. Decide and act
+After a threat detection tool such as Azure Sentinel or Microsoft 365 Defender detects a likely attack, it creates an incident. The Mean Time to Acknowledge (MTTA) measurement of SOC responsiveness begins with the time this attack is noticed by your security staff. 
+
+An analyst on shift is either delegated or takes ownership of the incident and performs an initial analysis. The timestamp for this is the end of the MTTA responsiveness measurement and begins the Mean Time to Remediate (MTTR) measurement.
 
 As the analyst that owns the incident develops a high enough level of confidence that they understand the story and scope of the attack, they can quickly shift to planning and executing cleanup actions.
 
@@ -281,7 +257,7 @@ The specific response steps are very dependent on the nature of the attack, but 
 - Other
    You can execute custom actions based on the nature of the attack such as revoking application tokens and reconfiguring servers and services.
 
-#### 2. Post-incident cleanup
+### 2. Post-incident cleanup
 
 Because you don’t learn lessons until you change future actions, always integrate any useful information learned from the investigation back into your security operations. Capture these learnings to avoid repeating manual work in the future and see connections between past and future incidents by the same threat actors. 
 
@@ -297,6 +273,13 @@ These learnings can take a number of forms, but common procedures include:
 
 - Internal actions such as enabling logging on assets and adding or changing security controls.
 
+## Incident response resources
+
+- [Overview](incident-response-overview.md) for Microsoft security products and resources for new-to-role and experienced analysts
+- [Planning](incident-response-planning.md) for your SOC
+- [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
+- [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
+- [Azure Sentinel](/azure/sentinel/investigate-cases) incident response
 
 ## Key Microsoft security resources 
 
@@ -311,3 +294,27 @@ These learnings can take a number of forms, but common procedures include:
 |||
 
 
+<!--
+
+Here are some general steps in the incident response process:
+
+
+3. Examine the endpoints
+
+   Typically, the first priority is to identify affected endpoints so your analysts can rapidly get deep insight. For example, use the Endpoint Detection and Response (EDR) functionality in Azure Sentinel or Microsoft Defender 365 for this.
+
+4. Scope out and fill in the timeline
+
+   The analyst then builds a full picture and timeline of the related chain of events that led to the alert (which may be an adversary’s attack operation or false alarm positive) by following leads from the first host alert. The analyst travels along the timeline:
+
+   - Backward in time: Track backward to identify the entry point into your environment.
+
+   - Forward in time: Follow leads to any endpoints (devices) or assets an attacker may have accessed or attempted to access.
+
+Your analysts can build this picture using the [MITRE ATT&CK™ model](https://attack.mitre.org/) or the [Lockheed Martin Cyber Kill Chain®](https://www.lockheedmartin.com/capabilities/cyber/cyber-kill-chain.html).
+
+
+
+When we last left our heroes in the previous entry, our analyst had built a timeline of the potential adversary attack operation. Of course, knowing what happened doesn’t actually stop the adversary or reduce organizational risk, so let’s remediate this attack!
+
+--> 

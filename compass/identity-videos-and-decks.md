@@ -40,7 +40,7 @@ See the [Identity and access management](identity.md) and [Capabilities](identit
 
 ## See also
 
-[PowerPoint slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx) for the Microsoft Azure Security Compass Workshop
+[PowerPoint slides](/microsoft-365/downloads/security-compass-presentation.pptx) for the Microsoft Azure Security Compass Workshop
 
 [Zero Trust Security Model and Framework](https://www.microsoft.com/security/business/zero-trust)
 

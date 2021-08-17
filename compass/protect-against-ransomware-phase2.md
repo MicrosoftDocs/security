@@ -57,16 +57,6 @@ Build a multi-part strategy using the guidance at [https://aka.ms/SPA](https://a
 | <input type="checkbox" /> | Ensure rapid threat response. | Limits an adversary's access and time in the environment. See [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response) for more information. |
 |  |  |  |
 
-<!--
-| Done| Task | Description | Result | Priority | Level of difficulty | Dependencies |
-|:-------|:-------|:-----|:-------|:-------|:-------|:-------|
-| <input type="checkbox" /> | Enforce end-to-end session security | explicitly validate trust of users and workstations before allowing access to administrative interfaces (using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview)). |  |  |  |  |
-| <input type="checkbox" /> |  Protect and monitor identity systems | against privilege escalation attacks including directories, identity management, administrator accounts and groups, and consent grant configuration. |  |  |  |  |
-| <input type="checkbox" /> | Mitigate lateral traversal | Ensure that compromising a single device will not immediately lead to control of many or all other devices using local account passwords, service account passwords, or other secrets |  |  |  |  |
-| <input type="checkbox" /> | Ensure rapid threat response | Limit adversary access and time in the environment. See [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response) for more information. |  |  |  |  |
-|  |  |  |  |  |  |  |
-
---> 
 
 ### Implementation results and timelines
 
@@ -110,24 +100,6 @@ Apply these best practices for improving your detection and response.
 | <input type="checkbox" /> | Rapidly isolate compromised computers using [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network). | Windows 10 integration makes this easy. |
 |  |  |  |
 
-<!--
-| Done| Task | Description | Result | Priority | Level of difficulty | Dependencies |
-|:-------|:-------|:-----|:-------|:-------|:-------|:-------|
-| <input type="checkbox" /> | Prioritize common entry points | Ransomware (and other) operators favor Endpoint/Email/Identity + RDP | Integrated XDR - Use integrated Extended Detection and Response (XDR) tools like [Microsoft 365 Defender(/microsoft-365/security/mtp/microsoft-threat-protection)] to provide high quality alerts and minimize friction and manual steps during response <br><br> Brute Force - Monitor for brute-force attempts like [password spray](/defender-for-identity/compromised-credentials-alerts) |  |  |  |
-| <input type="checkbox" /> | Monitor for adversary disabling security | this is often part of HumOR attack chain | Event Logs Clearing – especially the Security Event log and PowerShell Operational logs <br><br> Disabling of security tools/controls (associated with some groups) |  |  |  |
-| <input type="checkbox" /> | Don’t ignore commodity malware | Ransomware attackers regularly purchase access to target organizations from dark markets |  |  |  |  |
-| <input type="checkbox" /> | Integrate outside experts into processes to supplement expertise, such as the [Microsoft Detection and Response Team (DART)](https://aka.ms/dart) |  |  |  |  |  |
-| <input type="checkbox" /> | Rapidly isolate compromised computers using [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network) |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-
-### Implementation results and timelines
-
-Try to achieve these results within 30 days:
-
-- TBD for Mean Time to Acknowledge (MTTA) Alerts
-- TBD for Mean Time to Remediate (MTTR) Incidents
-
---> 
 
 ## Next step
 

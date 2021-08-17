@@ -155,4 +155,6 @@ Review identity and device access [capabilities](identity-capabilities.md).
 
 ## See also
 
-For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).
+[Zero Trust Security Model and Framework](https://www.microsoft.com/security/business/zero-trust)
+
+[Microsoft security documentation](/security/)

@@ -70,30 +70,6 @@ Apply these best practices to protect your remote access infrastructure from ran
 | <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)).  |  Reduces risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
 
-<!--
-| Done| Task | Description | Result | Priority | Level of difficulty | Dependencies |
-|:-------|:-------|:-----|:-------|:-------|:-------|:-------|
-| <input type="checkbox" /> | Maintain software and appliances | Avoid missing or neglecting manufacturer protections (security updates, supported status)| Ongoing process in place with short completion times. | High | Low | Software and hardware vendor communication about availability of updates |
-| <input type="checkbox" /> | Configure Azure AD | For existing remote access, include enforcing Zero Trust user and device validation with Conditional Access. | Infected or unhealthy remote devices and compromised user accounts cannot gain access to your organization intranet. | High | Medium |  |
-| <input type="checkbox" /> | Configure security for existing third-party VPN solutions (Cisco [AnyConnect](/azure/active-directory/saas-apps/cisco-anyconnect), Palo Alto Networks [GlobalProtect](/azure/active-directory/saas-apps/palo-alto-networks-globalprotect-tutorial) & [Captive Portal](/azure/active-directory/saas-apps/paloaltonetworks-captiveportal-tutorial), Fortinet [FortiGate SSL VPN](/azure/active-directory/saas-apps/fortigate-ssl-vpn-tutorial), Citrix [NetScaler](/azure/active-directory/saas-apps/citrix-netscaler-tutorial), [Zscaler Private Access (ZPA)](/azure/active-directory/saas-apps/zscalerprivateaccess-tutorial), and [more](/azure/active-directory/saas-apps/tutorial-list)) | | | | | |
-| <input type="checkbox" /> | Deploy [Azure VPN gateway](/azure/vpn-gateway/openvpn-azure-ad-tenant#enable-authentication) to provide remote access. |  |  |  | Medium |  |
-| <input type="checkbox" /> | Publish on-premises web apps with [Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services) | Move beyond VPN by publishing apps with Azure AD Application Proxy |  |  | Medium |  |
-| <input type="checkbox" /> | Secure access to Azure resources with [Azure Bastion](/azure/bastion/bastion-overview) |  |  |  | Medium |  |
-| <input type="checkbox" /> | Audit and monitor  | Find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)) |  |  |  |  |
-|  |  |  |  |  |  |
---> 
-
-<!--
-
-### Timeframe and key results
-
-Try to achieve these results within 30-60 days:
-
-- TBD % of remote access connections using zero trust validation
-- TBD % of applications published to the Internet with Azure AD Application Proxy
-- TBD of VPN connections per month (long-term target is zero)
-
---> 
 
 ## Email and collaboration
 
@@ -129,26 +105,6 @@ Apply these best practices to protect your email and collaboration solutions fro
 | <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)). |  Reduces risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
 
-<!--
-| Done| Task | Description | Result | Priority | Level of difficulty | Dependencies |
-|:-------|:-------|:-----|:-------|:-------|:-------|:-------|
-| <input type="checkbox" /> | Enable [AMSI for Office VBA](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) | Detect Office macro attacks with endpoint tools like [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) |  |  |  |  |
-| <input type="checkbox" /> | Implement Advanced Email security using [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp) or a similar solution |  |  |  |  |  |
-| <input type="checkbox" /> | [Enable attack surface reduction (ASR) rules](/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction) to block common attack techniques including: <br><br> Endpoint abuse: Credential theft, ransomware activity, and suspicious use of PsExec and WMI. <br><br> Weaponized Office document activity: Advanced macro activity, executable content, process creation, and process injection initiated by Office applications. <br> Note: Deploy these rules in audit mode first, then assess any negative impact, and then deploy them in block mode. |  |  |  |  |  |
-| <input type="checkbox" /> | Audit and Monitor |  | Find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)) |  |  |  |
-|  |  |  |  |  |  |  |
-
---> 
-
-<!--
-
-### Implementation results and timelines
-
-Try to achieve these results within 30 days:
-
-- TBD % of computers with all protections enabled
-
---> 
 
 ## Endpoints
 
@@ -187,31 +143,9 @@ Apply these best practices to all Windows, Linux, MacOS, Android, iOS, and other
 | <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)). | Reduces risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
 
-<!--
-| Done| Task | Description | Result | Priority | Level of difficulty | Dependencies |
-|:-------|:-------|:-----|:-------|:-------|:-------|:-------|
-| <input type="checkbox" /> | Block known threats |  | [Attack surface reduction](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) rules, [tamper protection](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Tamper-protection-now-generally-available-for-Microsoft-Defender/ba-p/911482), and [block at first site](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus) |  |  |  |
-| <input type="checkbox" /> | Apply [Security Baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) | harden internet-facing Windows Servers, Windows Clients, and Office Applications |  |  |  |  |
-| <input type="checkbox" /> | Maintain Software <br><br> Updated - Rapidly deploy critical security updates for OS, browser, & email <br><br> Supported – Update operating systems and software to currently support versions | Avoid missing or neglecting manufacturer protections |  |  |  |  |
-| <input type="checkbox" /> | Isolate, disable, or retire insecure systems and protocols, including [unsupported operating systems](https://docs.microsoft.com/lifecycle/) and [legacy protocols](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/retire-those-old-legacy-protocols/ba-p/259396) |  |  |  |  |  |
-| <input type="checkbox" /> | Block unexpected traffic | Host-based firewall and network defenses |  |  |  |  |
-| <input type="checkbox" /> | Audit and Monitor |  | Find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)). |  |  |  |
-|  |  |  |  |  |  |  |
---> 
-
-<!--
-
-### Implementation results and timelines
-
-Try to achieve these results within 30-60 days:
-
-- TBD % of endpoints meet security standards
-
---> 
-
 ## Accounts
 
-Just as antique skeleton keys won’t protect a house against a modern-day burglar, passwords cannot protect accounts against common attacks we see today. While multi-factor authentication (MFA) was once a burdensome extra step, passwordless approaches today improve the sign-in experience using biometric approaches that don’t require your users to remember or type a password. Additionally, Zero Trust approaches remember trusted devices, which reduce prompting for annoying out-of-band MFA actions.
+Just as antique skeleton keys won’t protect a house against a modern-day burglar, passwords cannot protect accounts against common attacks we see today. While multi-factor authentication (MFA) was once a burdensome extra step, passwordless authentication improves the sign-in experience using biometric approaches that don’t require your users to remember or type a password. Additionally, a [Zero Trust](https://www.microsoft.com/security/business/zero-trust) infrastructure stores information about trusted devices, which reduce prompting for annoying out-of-band MFA actions.
 
 Starting with high-privilege administrator accounts, rigorously follow these best practices for account security including using passwordless or MFA.
 
@@ -240,15 +174,6 @@ Apply these best practices to protect your accounts from ransomware attackers.
 | <input type="checkbox" /> | Increase password security: <br><br> - For Azure AD accounts, use [Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad) to detect and block known weak passwords and additional weak terms that are specific to your organization. <br><br> - For on-premises Active Directory Domain Services (AD DS) accounts, [Extend Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises) to AD DS accounts. | Ensure that attackers can't determine common passwords or passwords based on your organization name. |
 | <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)). | Reduces risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
-
-<!--
-| Done| Task | Description | Result | Priority | Level of difficulty | Dependencies |
-|:-------|:-------|:-----|:-------|:-------|:-------|:-------|
-| <input type="checkbox" /> | Enforce strong MFA or passwordless sign-in for all users |  | Start with administrator and priority accounts using one or more of: <br><br> - Passwordless authentication with [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification)  or the [Microsoft Authenticator app](/azure/active-directory/authentication/howto-authentication-phone-sign-in) <br><br> - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-userstates) <br><br> - Third-party MFA solution |  |  |  |
-| <input type="checkbox" /> | Increase password security |  | For Azure AD accounts, use [Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad) to detect and block known weak passwords and additional weak terms that are specific to your organization. <br><br> For on-premises Active Directory Domain Services (AD DS) accounts, [Extend Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises) to AD DS accounts. |  |  |  |
-| <input type="checkbox" /> | Audit and monitor |  | Find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)). |  |  |  |
-|  |  |  |  |  |  |  |
---> 
 
 ### Implementation results and timelines
 

@@ -82,16 +82,6 @@ Apply these best practices to secure your backup infrastructure.
 | <input type="checkbox" /> | Protect supporting documents required for recovery such as restoration procedure documents, CMDB, and network diagrams. | Attackers deliberately target these resources because it impacts your ability to recover. |
 
 
-<!--
-| Done| Task | Description | Result | Priority | Level of difficulty | Dependencies |
-|:-------|:-------|:-----|:-------|:-------|:-------|:-------|
-| <input type="checkbox" /> | Backup all critical systems automatically on a regular schedule |  |  |  |  |  |
-| <input type="checkbox" /> | Ensure Rapid Recovery of business operations by regularly exercising business continuity / disaster recovery (BC/DR) plan |  |  |  |  |  |
-| <input type="checkbox" /> | Protect backups against deliberate erasure and encryption <br><br> Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (e.g. [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks))  <br><br> Strongest Protection – Store backups in online immutable storage ([Azure Blob info](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline/off-site |  |  |  |  |  |
-| <input type="checkbox" /> | Protect supporting documents required for recovery such as restoration procedure documents, CMDB, and network diagrams |  |  |  |  |  |
---> 
-
-
 ### Implementation results and timelines
 
 Within 30 days, ensure that Mean Time to Recover (MTTR) meets your BC/DR goal, as measured during simulations and real-world operations.
@@ -125,28 +115,10 @@ Apply these best practices to protect your organization data.
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
-| <input type="checkbox" /> | Migrate your organization to the cloud: <br><br> - Move user data to cloud solutions like OneDrive/SharePoint to take advantage of [versioning and recycle bin capabilities](/microsoft-365/enterprise/microsoft-365-malware-and-ransomware-protection#sharepoint-online-and-onedrive-for-business-protection-against-ransomware). <br><br> - Educate users on how to [recover their files](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15?ui=en-US&rs=en-US&ad=US) by themselves to reduce delays and cost of recovery. | User data in the Microsoft cloud can be protected by built-in security and data management features. |
+| <input type="checkbox" /> | Migrate your organization to the cloud: <br><br> - Move user data to cloud solutions like OneDrive/SharePoint to take advantage of [versioning and recycle bin capabilities](/microsoft-365/enterprise/microsoft-365-malware-and-ransomware-protection#sharepoint-online-and-onedrive-for-business-protection-against-ransomware). <br><br> - Educate users on how to [recover their files](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15) by themselves to reduce delays and cost of recovery. | User data in the Microsoft cloud can be protected by built-in security and data management features. |
 | <input type="checkbox" /> | Designate [Protected Folders](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). | Makes it more difficult for unauthorized applications to modify the data in these folders. |
 | <input type="checkbox" /> | Review your permissions: <br><br> - Discover broad write/delete permissions on file shares, SharePoint, and other solutions. Broad is defined as many users having write/delete permissions for business-critical data. <br><br> - Reduce broad permissions while meeting business collaboration requirements.  <br><br> - Audit and monitor to ensure broad permissions don’t reappear. | Reduces risk from broad access-enabling ransomware activities. |
 |  |  |  |
-
-<!--
-
-| Done| Task | Description | Result | Priority | Level of difficulty | Dependencies |
-|:-------|:-------|:-----|:-------|:-------|:-------|:-------|
-| <input type="checkbox" /> | Migrate to cloud |  | Move user data to cloud solutions like OneDrive/SharePoint to take advantage of [versioning and recycle bin capabilities](/microsoft-365/enterprise/microsoft-365-malware-and-ransomware-protection#sharepoint-online-and-onedrive-for-business-protection-against-ransomware). <br><br> Educate users on how to [recover their files](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15?ui=en-US&rs=en-US&ad=US) by themselves to reduce delays and cost of recovery. |  |  |  |
-| <input type="checkbox" /> | Designate [Protected Folders](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) | Make it more difficult for unauthorized applications to modify the data in these folders. |  |  |  |  |
-| <input type="checkbox" /> | Review Permissions <br><br> Discover broad write/delete permissions on file shares, SharePoint, and other solutions. Broad is defined as many users having write/delete to business-critical data. <br><br> Reduce broad permissions while meeting business collaboration requirements  <br><br> Audit and monitor to ensure broad permissions don’t reappear | Reduce risk from broad access enabling ransomware. |  |  |  |  |
-|  |  |  |  |  |  |  |
-
-### Implementation results and timelines
-
-Try to achieve these results within 30-90 days:
-
-- TBD % of users with data protection solutions
-- TBD % of devices with data protection solutions
-
---> 
 
 ## Next step
 

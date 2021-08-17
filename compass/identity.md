@@ -23,7 +23,7 @@ A single authoritative source for identities increases clarity and consistency f
 
 For Azure, designate a single Azure AD tenant as the authoritative source for your organization's accounts.
 
-For more information, see [What is hybrid identity?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
+For more information, see [What is hybrid identity?](/azure/active-directory/hybrid/whatis-hybrid-identity).
  
 
 ## Synchronized identity systems
@@ -32,7 +32,7 @@ For more information, see [What is hybrid identity?](https://docs.microsoft.com/
 
 Consistency of identities across cloud and on-premises will reduce human errors and resulting security risk. Teams managing resources in both environments need a consistent authoritative source to achieve security assurances.
 
-For Azure, synchronize Azure AD with your existing authoritative on premises Active Directory Domain Services (AD DS) using [What is hybrid identity?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
+For Azure, synchronize Azure AD with your existing authoritative on premises Active Directory Domain Services (AD DS) using [What is hybrid identity?](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 This is also required for an Office 365 migration, so it is often already done before Azure migration and development projects begin. 
 
@@ -47,11 +47,11 @@ This reduces risk by granting the appropriate level of access to external entiti
 
 For example, these capabilities natively integrate into the same Azure AD identity and permission model used by Azure and Office 365:
 
-- [Azure AD](https://docs.microsoft.com/azure/active-directory/) for employees and enterprise resources.
-- [Azure AD B2B](https://docs.microsoft.com/azure/active-directory/b2b/) for business partners.
-- [Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/) customers or citizens.
+- [Azure AD](/azure/active-directory/) for employees and enterprise resources.
+- [Azure AD B2B](/azure/active-directory/b2b/) for business partners.
+- [Azure AD B2C](/azure/active-directory-b2c/) customers or citizens.
 
-For more information, see the [Azure AD federation compatibility list](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
+For more information, see the [Azure AD federation compatibility list](/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
 
 ## Passwordless or multi-factor authentication for administrative accounts
 
@@ -61,7 +61,7 @@ The details of this recommendation are in the administration section [Passwordle
 
 The same recommendation applies to all users but should be applied first and strongest to accounts with administrative privileges.
 
-You can also reduce use of passwords by applications using [Managed Identities](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) to grant access to resources in Azure.
+You can also reduce use of passwords by applications using [Managed Identities](/azure/active-directory/managed-identities-azure-resources/overview) to grant access to resources in Azure.
 
 ## Block legacy authentication
 
@@ -69,7 +69,7 @@ You can also reduce use of passwords by applications using [Managed Identities](
 
 Legacy authentication methods are among the top attack vectors for cloud-hosted services. Created before multifactor-authentication existed, legacy protocols don’t support additional factors beyond passwords and are therefore prime targets for password spraying, dictionary, or brute force attacks. As an example, nearly 100% of all password spray attacks against Office 365 customers use legacy protocols. Additionally, these older protocols frequently lack other attack countermeasures, such as account lockouts or back-off timers. Services running on Microsoft’s cloud that block legacy protocols have observed a 66% reduction in successful account compromises.
 
-For Azure and other Azure AD-based accounts, configure [Conditional Access to block legacy protocols](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication).
+For Azure and other Azure AD-based accounts, configure [Conditional Access to block legacy protocols](/azure/active-directory/conditional-access/block-legacy-authentication).
 
 Disabling legacy authentication can be difficult, as some users may not want to move to new client software that supports modern authentication methods. However, moving away from legacy authentication can be done gradually. Start by using metrics and logging from your authentication provider to determine the how many users still authenticate with old clients. Next, disable any down-level protocols that aren’t in use, and set up Conditional Access for all users who aren’t using legacy protocols. Finally, give plenty of notice and guidance to users on how to upgrade before blocking legacy authentication for all users on all services at a protocol level.
 
@@ -99,21 +99,21 @@ Additionally, synchronizing passwords to the cloud to support these checks also 
 
 For Azure, enable modern protections in Azure AD with these steps:
 
-1.  [Configure Azure AD Connect to synchronize password hashes](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
+1.  [Configure Azure AD Connect to synchronize password hashes](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 2.  Choose whether to automatically remediate these issues or manually remediate
     them based on a report:
 
-    a.  **Automatic Enforcement -** Automatically remediate high risk passwords with Conditional Access [leveraging Azure AD Identity Protection risk assessments](https://docs.microsoft.com/azure/active-directory/identity-protection/overview)
+    a.  **Automatic Enforcement -** Automatically remediate high risk passwords with Conditional Access [leveraging Azure AD Identity Protection risk assessments](/azure/active-directory/identity-protection/overview)
 
     b.  **Report & Manually Remediate -** View reports and manually remediate
         accounts
 
-       -   **Azure AD reporting** - Risk events are part of Azure AD's security reports. For more information, see the [users at risk security report](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-user-at-risk) and the [risky sign-ins security report](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risky-sign-ins).
+       -   **Azure AD reporting** - Risk events are part of Azure AD's security reports. For more information, see the [users at risk security report](/azure/active-directory/reports-monitoring/concept-user-at-risk) and the [risky sign-ins security report](/azure/active-directory/reports-monitoring/concept-risky-sign-ins).
 
-       -   **Azure AD Identity Protection** - Risk events are also part of the reporting capabilities of [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
+       -   **Azure AD Identity Protection** - Risk events are also part of the reporting capabilities of [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection).
 
-Use the [Identity Protection risk events API](https://docs.microsoft.com/graph/api/resources/identityprotection-root) to gain programmatic access to security detections using Microsoft Graph.
+Use the [Identity Protection risk events API](/graph/api/resources/identityprotection-root) to gain programmatic access to security detections using Microsoft Graph.
 
 ## Cross-platform credential management
 
@@ -124,13 +124,13 @@ A single identity provider for all enterprise assets will simplify management an
 For example, Azure AD can be used to authenticate:
 
 - Windows
-- [Linux](https://docs.microsoft.com/azure/virtual-machines/linux/login-using-aad)
+- [Linux](/azure/virtual-machines/linux/login-using-aad)
 - Azure
 - Office 365
-- [Amazon Web Services (AWS)](https://docs.microsoft.com/azure/active-directory/saas-apps/amazon-web-service-tutorial)
-- [Google Services](https://docs.microsoft.com/azure/active-directory/saas-apps/google-apps-tutorial)
-- Remote access to [legacy on-premises applications](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)
-- Third-party [SaaS providers](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list)
+- [Amazon Web Services (AWS)](/azure/active-directory/saas-apps/amazon-web-service-tutorial)
+- [Google Services](/azure/active-directory/saas-apps/google-apps-tutorial)
+- Remote access to [legacy on-premises applications](/azure/active-directory/manage-apps/application-proxy)
+- Third-party [SaaS providers](/azure/active-directory/saas-apps/tutorial-list)
 
 ## Conditional Access for users with Zero Trust
 
@@ -138,7 +138,7 @@ For example, Azure AD can be used to authenticate:
 
 The details of this recommendation are in the administration section [Enforce conditional access for ADMINS (Zero Trust)](/azure/architecture/security/critical-impact-accounts#enforce-conditional-access-for-admins---zero-trust). The same recommendation applies to all users, but should be applied first to accounts with administrative privileges.
 
-You can also reduce use of passwords by applications using [Managed Identities](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) to grant access to resources in Azure.
+You can also reduce use of passwords by applications using [Managed Identities](/azure/active-directory/managed-identities-azure-resources/overview) to grant access to resources in Azure.
 
 ## Simulate attacks
 
@@ -147,7 +147,7 @@ You can also reduce use of passwords by applications using [Managed Identities](
 People are a critical part of your defense, so ensure they have the knowledge and skills to avoid and resist attacks will reduce your overall organizational
 risk.
 
-You can use [Attack Simulator in Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator) or any number of third-party offerings.
+You can use [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulator) or any number of third-party offerings.
 
 ## Next step
 
@@ -155,4 +155,6 @@ Review identity and device access [capabilities](identity-capabilities.md).
 
 ## See also
 
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
+[Zero Trust Security Model and Framework](https://www.microsoft.com/security/business/zero-trust)
+
+[Microsoft security documentation](/security/)

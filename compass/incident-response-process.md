@@ -11,7 +11,7 @@ ms.prod: m365-security
 
 # Incident response process
 
-Here is a set of recommendations and best practices for responding to security incidents. Please feel free to incorporate the ones that will work within your organization's security department.
+Although each organization’s incident response process may be different based on organizational structure and capabilities, consider this set of recommendations and best practices for responding to security incidents.
 
 During an incident, it is critical to:
 
@@ -25,34 +25,38 @@ During an incident, it is critical to:
 
 - Be accurate when sharing publicly
 
-   Confirm anything you share with the public and customers is correct and truthful. 
+   Confirm that anything you share with the public and customers is correct and truthful. 
 
 - Get help when needed
 
-   Investigating and responding to attacks from sophisticated attackers benefits significantly from deep expertise and experience.
+   Tap into deep expertise and experience when investigating and responding to attacks from sophisticated attackers.
 
-Like diagnosing and treating medical disease, cybersecurity investigation and response for a major incident requires defending a system that is both: 
+Like diagnosing and treating a medical disease, cybersecurity investigation and response for a major incident requires defending a system that is both: 
 
-- Critically important (can’t be shut down to work on it) 
-- Complex (typically beyond the comprehension of any one person) 
+- Critically important (can’t be shut down to work on it). 
+- Complex (typically beyond the comprehension of any one person).
 
 During an incident, you must strike these critical balances:
 
 - Speed
 
-   You must balance the need to act quickly to satisfy stakeholders with the risk of rushed decisions.
+   Balance the need to act quickly to satisfy stakeholders with the risk of rushed decisions.
 
 - Sharing information
 
-   You must inform investigators, stakeholders, and customers while limiting liability and unrealistic expectations. 
+   Inform investigators, stakeholders, and customers while limiting liability and unrealistic expectations. 
 
-This article is designed to lower risk to your business in an incident by identifying common errors to avoid and providing guidance on what actions you can take rapidly that both reduce risk and meet stakeholder needs. 
+This article is designed to lower risk to your organization for a cybersecurity incident by identifying common errors to avoid and providing guidance on what actions you can rapidly take that both reduce risk and meet stakeholder needs. 
 
 ## Response best practices
 
 Responding to incidents can be done effectively from both technical and operations perspectives with these recommendations. 
 
-### Technology
+>[!Note]
+>For additional detailed industry guidance, see the [NIST Computer Security Incident Handling Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf).
+>
+
+### Technical
 
 For the technical aspects of incident response, here are some critical success factors:
 
@@ -60,7 +64,7 @@ For the technical aspects of incident response, here are some critical success f
 
    Most adversaries use multiple persistence mechanisms.
 
-- Identify the objective of attack, if possible.
+- Identify the objective of the attack, if possible.
 
    Persistent attackers will frequently return for their objective (data/systems) in a future attack.
 
@@ -72,11 +76,11 @@ Here are some useful tips:
 
 - Don’t make modifications
 
-   Unless you face an imminent threat of losing business-critical data (deletion, encryption, exfiltration), don’t start recovery operations until the investigation is complete. 
+   Unless you face an imminent threat of losing business-critical data&mdash;such as deletion, encryption, and exfiltration&mdash;don’t start recovery operations until the investigation is complete. 
 
 - Don’t investigate forever
 
-   You must ruthlessly prioritize your  investigation efforts. For example, only perform forensic analysis on endpoints that attackers have actually used or modified. In a major incident where an attacker has administrative privileges, it is practically impossible to investigate all potentially compromised resources (which may include all organization resources). 
+   You must ruthlessly prioritize your investigation efforts. For example, only perform forensic analysis on endpoints that attackers have actually used or modified. In a major incident where an attacker has administrative privileges, it is practically impossible to investigate all potentially compromised resources (which may include all organization resources). 
 
 - Share information
 
@@ -84,17 +88,17 @@ Here are some useful tips:
 
 - Access the right expertise
 
-   Confirm you integrate people with deep knowledge of the systems into the investigation–such as internal staff or external entities  like vendors–not just security generalists. 
+   Confirm that you integrate people with deep knowledge of the systems into the investigation&mdash;such as internal staff or external entities  like vendors&mdash;not just security generalists. 
 
 - Check with your legal department
 
-   Determine whether they plan to involve law enforcement so you can plan investigation and recovery procedures appropriately. 
+   Determine whether they plan to involve law enforcement so you can plan your investigation and recovery procedures appropriately. 
 
 - Anticipate reduced response capability
 
    Plan for 50% of your staff operating at 50% of normal capacity due to situational stress.
 
-A key expectation to manage with stakeholder is that you may never be able to identify the information on the initial attack because the data required for this may have been deleted before the investigation starts (such as an attacker covering their tracks and log rolling).
+A key expectation to manage with stakeholders is that you may never be able to identify the initial attack because the data required for this may have been deleted before the investigation starts, such as an attacker covering their tracks by log rolling.
 
 ### Operations
 
@@ -104,42 +108,42 @@ For security operations aspects of incident response, here are some critical suc
 
    Confirm you keep the focus on business-critical data, customer impact, and getting ready for remediation. 
 
-- Coordination and role clarity
+- Providing coordination and role clarity
 
-   Establish distinct roles for operations in support of the crisis team and confirm technical, legal and communications teams are keeping each other informed. 
+   Establish distinct roles for operations in support of the crisis team and confirm that technical, legal, and communications teams are keeping each other informed. 
 
-- Business perspective
+- Keeping your business perspective
 
-   You should always consider the impact on business operations by both adversary actions and your response actions. 
+   You should always consider the impact on business operations by both adversary actions and your own response actions. 
 
 Here are some useful tips:
 
-- Consider the Incident Command System (ICS) for crisis management
+- Consider the [Incident Command System (ICS)](https://training.fema.gov/is/courseoverview.aspx?code=is-100.c) for crisis management
 
    If you don’t have a permanent organization that manages security incidents, we recommend using the ICS as a temporary organizational structure to manage the crisis. 
 
-- The show must go on
+- Keep ongoing daily operations intact
 
-   Ensure the daily security operations are not completely sidelined to support incident investigations. The normal work still needs to be done.
+   Ensure that normal security operations are not completely sidelined to support incident investigations. This work still needs to be done.
 
 - Avoid wasteful spending 
 
-   Many major incidents result in organizations purchasing an assortment of expensive security tools in a panic that are never deployed or used. If you can’t deploy and use a tool during the investigation, defer acquisition until after you finish the investigation. 
-
-   Also consider your ability to hire, train, and retain people for any rare or specialized skill sets needed to operate or gain value from the tool. 
+   Many major incidents result in the purchase of expensive security tools in a panic that are never deployed or used. If you can’t deploy and use a tool during the investigation&mdash;which can include hiring and training for additional staff with the skill sets needed to operate the tool&mdash;defer acquisition until after you finish the investigation. 
 
 - Access deep expertise 
 
-   Confirm you have the ability to escalate questions and issues to deep experts on critical platforms. This may require access to the operating system and application vendor for business-critical systems and enterprise-wide components (such as desktops and servers). 
+   Confirm you have the ability to escalate questions and issues to deep experts on critical platforms. This may require access to the operating system and application vendor for business-critical systems and enterprise-wide components such as desktops and servers. 
 
-Expectations for the flow of information between stakeholders will vary without clear guidance and input from senior incident response leaders. See [incident response planning](incident-response-planning.md) for more information.
+- Establish information flows
+
+   Set clear guidance and expectations for the flow of information between senior incident response leaders and organization stakeholders. See [incident response planning](incident-response-planning.md) for more information. 
 
 
 ## Recovery best practices
 
 Recovering from incidents can be done effectively from both technical and operations perspectives with these recommendations. 
 
-### Technology
+### Technical
 
 For the technical aspects of recovering from an incident, here are some critical success factors:
 
@@ -149,7 +153,7 @@ For the technical aspects of recovering from an incident, here are some critical
 
 - Avoid distractions
 
-   Defer long-term security investments like implementing large and complex new security systems or replacing antimalware solutions until after the recovery operation. Anything that does not have direct and immediate impact on the current recovery operation is a distraction. 
+   Defer long-term security investments like implementing large and complex new security systems or replacing anti-malware solutions until after the recovery operation. Anything that does not have direct and immediate impact on the current recovery operation is a distraction. 
 
 Here are some helpful tips:
 
@@ -167,21 +171,23 @@ Here are some helpful tips:
 
 - Avoid tipping off your adversary
 
-   As practical, you should take steps to limit the information available to adversaries about the recovery operation. Adversaries typically have access to all production data and email in a major cybersecurity incident. But in reality, most attackers don’t have time to monitor all your communications. Microsoft’s SOC has used a non-production Microsoft 365 tenant for secure collaboration for members of the incident response team. 
+   As practical, you should take steps to limit the information available to adversaries about the recovery operation. Adversaries typically have access to all production data and email in a major cybersecurity incident. But in reality, most attackers don’t have time to monitor all your communications. 
+
+  Microsoft’s Security Operations Center (SOC) has used a non-production Microsoft 365 tenant for secure communication and collaboration for members of the incident response team. 
 
 A key expectation to manage is that your first recovery attempt may not fully succeed, so you may have to try again. 
 
 ### Operations
 
-For the operations of recovering from an incident, here are some critical success factors:
+For the operations aspects of recovering from an incident, here are some critical success factors:
 
 - Have a clear plan and limited scope
 
-   Work closely with your technical teams to build a clear plan with limited scope. While plans may change based on adversary activity or new information, you should work diligently to limit “scope creep” of additional tasks. 
+   Work closely with your technical teams to build a clear plan with limited scope. While plans may change based on adversary activity or new information, you should work diligently to limit scope expansion and taking on additional tasks. 
 
 - Have clear plan ownership
 
-   Recovery operations involve many people doing many different tasks at once, so designate a clear project lead for the operation for clear decision-making and good information to flow among the crisis team.
+   Recovery operations involve many people doing many different tasks at once, so designate a project lead for the operation for clear decision-making and definitive information to flow among the crisis team.
 
 - Maintain stakeholder communications
 
@@ -191,7 +197,7 @@ Here are some helpful tips:
 
 - Know your capabilities and limits
 
-   Managing major security incidents is very challenging, very complex, and new to many professionals in the industry. You should consider bringing in expertise from external organizations or professional services if your teams are overwhelmed or aren’t confident about what to do next. 
+  Managing major security incidents is very challenging, very complex, and new to many professionals in the industry. You should consider bringing in expertise from external organizations or professional services if your teams are overwhelmed or aren’t confident about what to do next. 
 
 - Capture the lessons learned
 
@@ -201,7 +207,7 @@ Executive and board-level communications for incident response can be challengin
 
 ## Incident response process
 
-Use this general guidance about the incident response process for your security staff as needed.
+Consider this general guidance about the incident response process for your security operations and staff.
 
 ### 1. Decide and act
 
@@ -211,63 +217,71 @@ An analyst on shift is either delegated or takes ownership of the incident and p
 
 As the analyst that owns the incident develops a high enough level of confidence that they understand the story and scope of the attack, they can quickly shift to planning and executing cleanup actions.
 
-Depending on the nature and scope of the attack, your analysts can clean up attack artifacts as they go (such as emails, endpoints, and identities) or they may build a list of compromised resources to clean up all at once (Big Bang)
+Depending on the nature and scope of the attack, your analysts can clean up attack artifacts as they go (such as emails, endpoints, and identities) or they may build a list of compromised resources to clean up all at once (known as a Big Bang)
 
 - Clean as you go
 
-   For most typical incidents that are detected early in the attack operation, analysts quickly clean up the artifacts as they find them. This puts the adversary at a disadvantage and prevents them from moving forward with the next stage of their attack.
+   For most typical incidents that are detected early in the attack operation, analysts can quickly clean up the artifacts as they find them. This puts the adversary at a disadvantage and prevents them from moving forward with the next stage of their attack.
 
 - Prepare for a Big Bang
 
-   This approach is appropriate for a scenario where an adversary has already settled in and established redundant access mechanisms to your environment. This is frequently seen in customer incidents investigated by Microsoft’s Detection and Response Team (DART). In this approach, analysts should avoid tipping off the adversary until full discovery of all attacker presence, because surprise can help with fully disrupting their operation. 
+   This approach is appropriate for a scenario where an adversary has already settled in and established redundant access mechanisms to your environment. This is frequently seen in customer incidents investigated by [Microsoft’s Detection and Response Team (DART)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/). In this approach, analysts should avoid tipping off the adversary until full discovery of the attacker's presence, because surprise can help with fully disrupting their operation.
 
-   Microsoft has learned that partial remediation often tips off an adversary, which gives them a chance to react and rapidly make the incident worse, such as spread the attack further, change access methods to evade detection, inflict damage and destruction for revenge, or cover their tracks.)
-   Cleaning up phishing and malicious emails can often be done without tipping off the adversary but cleaning up host malware and reclaiming control of accounts has a high chance of discovery by the adversary.
+   Microsoft has learned that partial remediation often tips off an adversary, which gives them a chance to react and rapidly make the incident worse. For example, the attacker can spread the attack further, change their access methods to evade detection, cover their tracks, and inflict data and system damage and destruction for revenge.
+
+   Cleaning up phishing and malicious emails can often be done without tipping off the attacker but cleaning up host malware and reclaiming control of accounts has a high chance of discovery.
 
 These are not easy decisions to make and there is no substitute for experience in making these judgement calls. A collaborative work environment and culture in your SOC helps ensure that analysts can tap into each other’s experience.
 
-The specific response steps are very dependent on the nature of the attack, but the most common procedures used by analysts can include:
+The specific response steps are dependent on the nature of the attack, but the most common procedures used by analysts can include:
 
 - Client endpoints (devices)
 
-   Isolate the endpoint and contact the user directly (or IT operations/helpdesk) to have them initiate a reinstallation procedure.
+   Isolate the endpoint and contact the user or IT operations/helpdesk to initiate a reinstallation procedure.
 
 - Server or applications
 
-   Work with IT operations and/or application owners to arrange rapid remediation of these resources.
+   Work with IT operations and application owners to arrange rapid remediation of these resources.
 
 - User accounts
 
-   Reclaim control by disabling the account and resetting password for compromised accounts, although these procedures could evolve as your users transition to passwordless authentication using Windows Hello or another form of multi-factor authentication (MFA). A separate step is to expire all authentication tokens for the user with Microsoft Cloud App Security.
+   Reclaim control by disabling the account and resetting password for compromised accounts. These procedures could evolve as your users transition to passwordless authentication using Windows Hello or another form of multi-factor authentication (MFA). A separate step is to expire all authentication tokens for the account with [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
-   Your analysts can also review the MFA method phone number and device enrollment to ensure it hasn’t been hijacked (often contacting the user) and reset this information as needed.
+   Your analysts can also review the MFA method phone number and device enrollment to ensure it hasn’t been hijacked by contacting the user and reset this information as needed.
 
 - Service Accounts
 
-   Because of the high risk of service or business impact, your analysts should work with the service account owner of record and falling back on IT operations as needed, to arrange rapid remediation of these resources.
+   Because of the high risk of service or business impact, your analysts should work with the service account owner of record, falling back on IT operations as needed, to arrange rapid remediation of these resources.
 
 - Emails
 
-   Delete the attack or phishing email and sometimes clear them ed to prevent users from recovering deleted emails), but always save a copy of original email for later search for post-attack analysis (such as headers, content, and scripts or attachments).
+   Delete the attack or phishing email and sometimes clear them to prevent users from recovering deleted emails. Always save a copy of original email for later search for post-attack analysis, such as headers, content, and scripts or attachments.
 
 - Other
+
    You can execute custom actions based on the nature of the attack such as revoking application tokens and reconfiguring servers and services.
 
 ### 2. Post-incident cleanup
 
-Because you don’t learn lessons until you change future actions, always integrate any useful information learned from the investigation back into your security operations. Capture these learnings to avoid repeating manual work in the future and see connections between past and future incidents by the same threat actors. 
+Because you don’t benefit from learned lessons until you change future actions, always integrate any useful information learned from the investigation back into your security operations. 
 
-These learnings can take a number of forms, but common procedures include:
+Determine the connections between past and future incidents by the same threat actors or methods and capture these learnings to avoid repeating manual work and analysis delays in the future. 
 
-- Indicators of Compromise (IoCs)
+These learnings can take a number of forms, but common practices include analysis of:
 
-   Record any applicable IoCs such as file hashes, malicious IP addresses, and email attributes into your threat intelligence systems so that your SOC can benefit from these learnings.
+- Indicators of Compromise (IoCs).
 
-- Unknown or unpatched vulnerabilities
+   Record any applicable IoCs such as file hashes, malicious IP addresses, and email attributes into your SOC threat intelligence systems.
+
+- Unknown or unpatched vulnerabilities.
 
    Your analysts can initiate processes to ensure that missing security patches get applied, misconfigurations are corrected, and vendors (including Microsoft) are informed of “zero day” vulnerabilities so that they can create and distribute security patches.
 
-- Internal actions such as enabling logging on assets and adding or changing security controls.
+- Internal actions such as enabling logging on assets covering your cloud-based and on-premises resources. 
+
+   Review your existing security baselines and consider adding or changing security controls. For example, see the [Azure Active Directory security operations guide](/azure/active-directory/fundamentals/security-operations-introduction) for information on enabling the appropriate level of auditing in the directory before the next incident happens.
+
+Review your response processes to identify and resolve any gaps found during the incident.
 
 ## Incident response resources
 

@@ -84,7 +84,6 @@ After reading an overview of [Simuland](https://www.microsoft.com/security/blog/
 
 ## Incident response resources
 
-- [Overview](incident-response-overview.md) for Microsoft security products and resources for new-to-role and experienced analysts
 - [Planning](incident-response-planning.md) for your SOC
 - [Process](incident-response-process.md) for incident response process recommendations and best practices
 - [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods

@@ -81,6 +81,16 @@ The learnings from Simuland lab environment scenarios can then be implemented in
 
 After reading an overview of [Simuland](https://www.microsoft.com/security/blog/2021/05/20/simuland-understand-adversary-tradecraft-and-improve-detection-strategies/), see the [Simuland GitHub repository](https://github.com/Azure/SimuLand).
 
+
+## Incident response resources
+
+- [Planning](incident-response-planning.md) for your SOC
+- [Process](incident-response-process.md) for incident response process recommendations and best practices
+- [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
+- [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
+- [Azure Sentinel](/azure/sentinel/investigate-cases) incident response
+
+
 ## Key Microsoft security resources 
 
 | Resource | Description |

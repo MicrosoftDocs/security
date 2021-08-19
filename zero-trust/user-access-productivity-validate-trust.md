@@ -43,9 +43,9 @@ Meet these deployment objectives to protect your accounts with Zero Trust.
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Self-service password reset (SSPR) has been eneabled, which gives you credential reset capabilities | IT implementer | link |
+| <input type="checkbox" /> | 1. Self-service password reset (SSPR) has been enabled, which gives you credential reset capabilities | IT implementer | link |
 | <input type="checkbox" /> | 2. Multi-Factor Authentication (MFA) has been enabled and appropriate methods for MFA have been selected | IT implementer | link |
-| <input type="checkbox" /> | 3. ombined User Registration has been enabled for your directory, allows users to register for SSPR and MFA in one step | IT implementer | link |
+| <input type="checkbox" /> | 3. Combined User Registration has been enabled for your directory, allows users to register for SSPR and MFA in one step | IT implementer | link |
 |
 
 

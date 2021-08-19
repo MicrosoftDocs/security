@@ -74,8 +74,8 @@ Meet these deployment objectives to protect your devices with Zero Trust.
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> |  |  |  | link |
-| <input type="checkbox" /> |  |  |  | link |
-| <input type="checkbox" /> |  |  |  | link |
-| <input type="checkbox" /> |  |  |  | link |
+| <input type="checkbox" /> |  |  | link |
+| <input type="checkbox" /> |  |  | link |
+| <input type="checkbox" /> |  |  | link |
+| <input type="checkbox" /> |  |  | link |
 |

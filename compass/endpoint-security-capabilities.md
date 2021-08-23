@@ -6,6 +6,7 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
+ms.service: security
 description: "Capabilities"
 ---
 

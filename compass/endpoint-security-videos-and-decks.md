@@ -6,6 +6,7 @@ manager: dansimp
 audience: Admin
 ms.topic: tutorial
 localization_priority: Normal
+ms.service: security
 description: "Videos and decks"
 ---
 

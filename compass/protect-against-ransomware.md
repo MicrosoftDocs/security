@@ -85,6 +85,13 @@ This last set of tasks is important to raise friction for entry but will take ti
 
 While many of these will be familiar and/or easy to quickly accomplish, it’s critically important that ***your work on phase 3 should not slow down your progress on phases 1 and 2!***
 
+## At a glance
+
+You can also see an overview of the phases and their implementation checklists as levels of protection against ransomware attackers with the [Protect your organization from ransomware
+poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf).
+
+[![The "Protect your organization from ransomware" poster](media/human-operated-ransomware/ransomware-poster-thumbnail.png)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
+
 ## Next step
 
 [![Phase 1. Prepare for the worst](media/protect-against-ransomware/protect-against-ransomware-phase1.png)](protect-against-ransomware-phase1.md)

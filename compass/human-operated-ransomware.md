@@ -43,7 +43,12 @@ For the three phases to exploit attack weaknesses, see the [Protect your organiz
 2. Limit the scope of damage of an attack by protecting privileged roles.
 3. Make it harder for a ransomware attacker to get into your environment by incrementally removing risks.
 
-[![The three steps to protecting against ransomware and extortion](media/protect-against-ransomware/protect-against-ransomware-phases.png)](protect-against-ransomware.md)
+[![The three phases to protecting against ransomware and extortion](media/protect-against-ransomware/protect-against-ransomware-phases.png)](protect-against-ransomware.md)
+
+You can also see an overview of the phases as levels of protection against ransomware attackers with the [Protect your organization from ransomware
+poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf).
+
+[![The "Protect your organization from ransomware" poster](media/human-operated-ransomware/ransomware-poster-thumbnail.png)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
 
 ## Additional resources
 

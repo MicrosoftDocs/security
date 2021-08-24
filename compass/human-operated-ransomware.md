@@ -39,7 +39,7 @@ Here's a summary of the guidance:
 
 For the three phases to exploit attack weaknesses, see the [Protect your organization against ransomware and extortion](protect-against-ransomware.md) solution to **quickly** configure your IT infrastructure for the best protection:
 
-1. Prepare for the worst so that you can recover from an attack without having to pay the ransom.
+1. Prepare your organization so you can recover from an attack without having to pay the ransom.
 2. Limit the scope of damage of an attack by protecting privileged roles.
 3. Make it harder for a ransomware attacker to get into your environment by incrementally removing risks.
 

@@ -51,7 +51,7 @@ To help you understand how to protect your organization from ransomware, this gu
 
 1. **Stick with the recommended priorities** 
 
-    Use the phases as a starting plan for what to do first, next, and later so you get the most impactful elements first. 
+    Use the phases as a starting plan for what to do first, next, and later so you get the most impactful elements first. These recommendations have been prioritized using the [Zero Trust](https://www.microsoft.com/security/business/zero-trust) principle of assume breach, which focuses on minimizing business risk by assuming the attackers can successfully gain access to your environment through one or more methods.
 
 2. **Be proactive and flexible (but don’t skip important tasks)**
 
@@ -61,10 +61,10 @@ To help you understand how to protect your organization from ransomware, this gu
 
     Trying to do everything at once can be overwhelming, but some items can naturally be done in parallel. Staff on different teams can be working on tasks at the same time (e.g., backup team, endpoint team, identity team), while also driving for completion of the phases in priority order.
 
-Implementation checklists do not intend to imply an order of tasks and results or assume a specific state of your existing configuration. Use a checklist to confirm and modify your existing configuration as needed and in a way that works within your organization. For example, in the most important backup element, you backup some systems, but they may not be offline/immutable, or you may not test the full enterprise restore procedures, or you may not have backups of critical business systems or critical IT systems like Active Directory Domain Services (AD DS) domain controllers. 
+The items in the implementation checklists are in the recommended order of prioritization, not a technical dependency order. Use the checklists to confirm and modify your existing configuration as needed and in a way that works within your organization. For example, in the most important backup element, you backup some systems, but they may not be offline/immutable, or you may not test the full enterprise restore procedures, or you may not have backups of critical business systems or critical IT systems like Active Directory Domain Services (AD DS) domain controllers. 
 
 
-### Phase 1. Prepare for the worst
+### Phase 1. Prepare your recovery plan
 
 This phase is designed to [minimize the monetary incentive from ransomware attackers](protect-against-ransomware-phase1.md) by making it:
 
@@ -85,8 +85,15 @@ This last set of tasks is important to raise friction for entry but will take ti
 
 While many of these will be familiar and/or easy to quickly accomplish, it’s critically important that ***your work on phase 3 should not slow down your progress on phases 1 and 2!***
 
+## At a glance
+
+You can also see an overview of the phases and their implementation checklists as levels of protection against ransomware attackers with the [Protect your organization from ransomware
+poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf).
+
+[![The "Protect your organization from ransomware" poster](media/human-operated-ransomware/ransomware-poster-thumbnail.png#lightbox)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
+
 ## Next step
 
-[![Phase 1. Prepare for the worst](media/protect-against-ransomware/protect-against-ransomware-phase1.png)](protect-against-ransomware-phase1.md)
+[![Phase 1. Prepare your recovery plan](media/protect-against-ransomware/protect-against-ransomware-phase1.png)](protect-against-ransomware-phase1.md)
 
-Start with [Phase 1](protect-against-ransomware-phase1.md) to prepare your organization for the worst.
+Start with [Phase 1](protect-against-ransomware-phase1.md) to prepare your organization to recover from an attack without having to pay the ransom.

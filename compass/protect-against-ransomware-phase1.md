@@ -1,5 +1,5 @@
 ---
-title: "Phase 1: Prepare for the worst"
+title: "Phase 1: Prepare your recovery plan"
 ms.author: josephd
 author: JoeDavies-MSFT
 f1.keywords:
@@ -15,11 +15,11 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: 
-description: Deploy ransomware protection to prepare your organization for the worst so that you can recover from an attack without having to pay the ransom.
+description: Prepare your organization so that you can recover from an attack without having to pay the ransom.
 
 ---
 
-# Phase 1: Prepare for the worst
+# Phase 1: Prepare your recovery plan
 
 The first thing you should do for these attacks is prepare your organization so that it has a viable alternative to paying the ransom. While attackers in control of your organization have a variety of ways to pressure you into paying, the demands primarily focus on two categories:
 

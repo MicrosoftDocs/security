@@ -2,8 +2,9 @@
 title: Step 2. Increase security for accessing key resources
 description: Increase security for accessing key resources 
 ms.service: security
-author: garycentric
-ms.author: v-gmoor
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: dansimp
 ms.topic: conceptual
 ---
 

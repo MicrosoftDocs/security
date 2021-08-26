@@ -2,8 +2,9 @@
 title: Step 3. Governance
 description: Governance 
 ms.service: security
-author: garycentric
-ms.author: v-gmoor
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: dansimp
 ms.topic: conceptual
 ---
 

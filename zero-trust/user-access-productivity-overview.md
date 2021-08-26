@@ -2,8 +2,9 @@
 title: User Access and Productivity Overview
 description: User Access and Productivity Overview 
 ms.service: security
-author: garycentric
-ms.author: v-gmoor
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: dansimp
 ms.topic: conceptual
 ---
 

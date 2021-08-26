@@ -54,8 +54,8 @@
 - name: Zero Trust RAMP pillars 
   expanded: false
   items: 
-  - name: Overview
-    href: zero-trust-ramp-overview.md
+    - name: Overview
+      href: zero-trust-ramp-overview.md
     - name: User Access and Productivity
       expanded: false
       items:

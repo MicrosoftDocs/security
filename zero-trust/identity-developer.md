@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 Traditional approaches to secure application development are no longer enough. Applications are moving into the cloud and their users are working from a variety of devices and locations. Companies want to support employees collaborating with partners who are outside of their organization. At the same time, the threat landscape is evolving constantly, with new exploits and vulnerabilities being disclosed every day.
 
-Identity is the backbone of secure app development, acting as the control plane for managing access to your applications to keep users and data safe. This document explains identity best practices for building Zero Trust ready applications using the Microsoft identity platform.
+Identity is the backbone of secure app development, acting as the control plane for managing access to your applications to keep users and data safe. This document explains identity best practices for building Zero Trust ready applications using the Microsoft identity platform. In addition, we have published [a whitepaper](https://www.microsoft.com/security/content-library/Search?SearchDataFor=OJZgGWbHnB3Ll5hblDBugaEMQAchNfvkzk5X5AmPM4tK43NHpbF5%2Bky%2Fnuivl7plZz89b%2FuLMMZsMqKeYbhPPw%3D%3D&IsKeywordSearch=evXIpssXVY6lIm6X2K9ieA%3D%3D) with specific action items you can take as you develop apps.
 
 ## What is the Microsoft identity platform?
 
@@ -44,6 +44,8 @@ The implementation of Zero Trust is still evolving, and each organization's jour
 
 **Use a trusted, standards-based authentication library.** Using a library will save you the time of developing a solution on your own. But more importantly, it will stay up to date and be responsive to the latest technologies and threats. Microsoft has many libraries available including the Microsoft authentication libraries (MSAL), Microsoft.Identity.Web, and the Azure SDK for managed identities. These give you access to features such as conditional access, device registration and management, and the latest innovations such as passwordless and FIDO2 authentication without needing to write any extra code.
 
+**Follow the** [Azure AD application registration security best practices](/azure/active-directory/develop/security-best-practices-for-app-registration). An Azure Active Directory (Azure AD) application registration is a critical part of your business application. Any misconfiguration or lapse in hygiene of your application can result in downtime or compromise.
+
 **Keep credentials out of your code.** This enables credential rotation by IT administrators without bringing down or redeploying an app. You can use a service such as [Azure Key Vault](/azure/key-vault/general/authentication-fundamentals) or [Azure Managed Identities](/azure/active-directory/managed-identities-azure-resources/overview).
 
 **Design for least privileged access.** This is a key tenant of Zero Trust. You should always provide the least amount privilege required for the user to do their job. For example, you can use [incremental consent](/azure/active-directory/azuread-dev/azure-ad-endpoint-comparison#incremental-and-dynamic-consent) to only request permissions when they are necessary. Another example is using [granular scopes in Microsoft Graph](/graph/permissions-reference). You can explore scopes using the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to call an API and examine which permissions are required. They are displayed in order from lowest to highest privilege. Picking the lowest possible privilege will make your application less vulnerable to attacks.
@@ -57,3 +59,4 @@ The implementation of Zero Trust is still evolving, and each organization's jour
 ## Next Steps
 
 [Microsoft identity platform documentation](/azure/active-directory/develop/publisher-verification-overview)
+[Zero Trust for the Microsoft identity platform developer](https://www.microsoft.com/security/content-library/Search?SearchDataFor=OJZgGWbHnB3Ll5hblDBugaEMQAchNfvkzk5X5AmPM4tK43NHpbF5%2Bky%2Fnuivl7plZz89b%2FuLMMZsMqKeYbhPPw%3D%3D&IsKeywordSearch=evXIpssXVY6lIm6X2K9ieA%3D%3D)

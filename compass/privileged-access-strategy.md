@@ -74,7 +74,7 @@ The paths attackers prioritize in actual practice are a combination of:
 Because of the diversity of technology involved, this strategy requires a complete strategy that combines multiple technologies and follows [Zero Trust principles](https://docs.microsoft.com/security/zero-trust/). 
 
  > [!IMPORTANT]
- > You must adopt a strategy that includes multiple technologies to defend against these attacks. Simply implementing a prvileged identity management / privileged access management (PIM/PAM) solution is not sufficient. For more information see, [Privileged access Intermediaries](/privileged-access-intermediaries.md#security-guidance-for-each-intermediary-type).
+ > You must adopt a strategy that includes multiple technologies to defend against these attacks. Simply implementing a prvileged identity management / privileged access management (PIM/PAM) solution is not sufficient. For more information see, [Privileged access Intermediaries](privileged-access-intermediaries.md#security-guidance-for-each-intermediary-type).
 
 - The attackers are goal-oriented and technology agnostic, using any type of attack that works.
 - The access control backbone you are defending is integrated into most or all systems in the enterprise environment.

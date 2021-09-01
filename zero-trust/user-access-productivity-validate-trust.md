@@ -13,15 +13,19 @@ This step includes using Zero Trust to explicitly validate trust for all access 
 
 - User Accounts
 
-  Require Passwordless or MFA for all users + measure risk with threat intelligence & behavior analytics
+  Require Passwordless or multi-factor authentication (MFA) for all users and measure risk with threat intelligence and behavior analytics.
 
 - Devices
 
-  Require device integrity for access (configuration compliance first, then XDR signals)
+  Require device integrity and health compliance for access.
+
+After completing this step, you will have built out this part of the Zero Trust architecture.
+
+![The identities and devices sections of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-and-devices.png)
 
 ## User accounts
 
-description
+Verify and secure each identity with strong authentication across your entire digital estate with Azure Active Directory (Azure AD), a complete identity and access management solution with integrated security that connects 425 Million people to their apps, devices, and data each month.
 
 ### Program and project member accountabilities
 
@@ -51,9 +55,13 @@ Meet these deployment objectives to protect your accounts with Zero Trust.
 | <input type="checkbox" /> | 7. Microsoft Defender for Identity | IT implementer | Deploy and enable [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is#whats-next). Review and mitigate any open alerts. |
 | <input type="checkbox" /> | 8. Passwordless credential deployment | IT implementer | [Plan a passwordless authentication deployment in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-deployment) |
 
+You have now built out the identities section of the Zero Trust architecture.
+
+![The identities section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-users.png)
+
 ## Devices
 
-description
+Ensure compliance and health status before granting access to your devices (endpoint) and gain visibility into how they are accessing the network. 
 
 ### Program and project member accountabilities
 
@@ -79,3 +87,12 @@ Meet these deployment objectives to protect your devices with Zero Trust.
 | <input type="checkbox" /> |  |  | link |
 | <input type="checkbox" /> |  |  | link |
 |
+
+You have now built out the devices section of the Zero Trust architecture.
+
+![The devices section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-devices.png)
+
+## Next step
+
+Continue your Zero Trust deployment journey with [Step 2. Increase security for accessing key resources](user-access-productivity-increase-security-access.md).
+

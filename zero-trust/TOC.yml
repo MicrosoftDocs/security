@@ -51,7 +51,7 @@
     href: https://www.microsoft.com/security/blog/zero-trust/
   - name: Microsoft Intelligent Security Association
     href: https://www.microsoft.com/security/business/intelligent-security-association
-- name: Zero Trust RAMP pillars 
+- name: Zero Trust RaMP pillars 
   expanded: false
   items: 
     - name: Overview

@@ -82,11 +82,11 @@ Meet these deployment objectives to protect your devices with Zero Trust.
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1.   |  | link |
-| <input type="checkbox" /> |  |  | link |
-| <input type="checkbox" /> |  |  | link |
-| <input type="checkbox" /> |  |  | link |
-|
+| <input type="checkbox" /> | 1. Register devices with Azure AD |  | [Device identities](https://docs.microsoft.com//azure/active-directory/devices/overview) |
+| <input type="checkbox" /> | 2. Enroll devices into management and configure configuration profiles |  | [Device management overview](https://docs.microsoft.com/mem/intune/fundamentals/what-is-device-management) |
+| <input type="checkbox" /> | 3. Connect Defender for Endpoint to Intune |  | [Configure Microsoft Defender for Endpoint in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure) |
+| <input type="checkbox" /> | 4. Monitor device compliance/risk as a signal for Conditional Access |  | [Use compliance policies to set rules for devices you manage with Intune](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) |
+| <input type="checkbox" /> | 5. Implement Microsoft Information Protection and integrate with Conditional Access polciies |  | link |
 
 You have now built out the devices section of the Zero Trust architecture.
 

@@ -69,11 +69,16 @@ Microsoft 365 Defender:
 
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
+Microsoft Cloud App Security:
+
+-  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+
 Microsoft Azure:
 
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
+- [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
 Microsoft Security team blog posts:
 

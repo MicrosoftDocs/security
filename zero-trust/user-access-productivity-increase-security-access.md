@@ -10,5 +10,8 @@ ms.topic: conceptual
 
 # Step 2. Increase security for accessing key resources
 
+Placeholder article
+
+Content TBD
 
 

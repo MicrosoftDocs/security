@@ -10,5 +10,6 @@ ms.topic: conceptual
 
 # Step 3. Governance
 
-Content TBD
+Placeholder article
 
+Content TBD

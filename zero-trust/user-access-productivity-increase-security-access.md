@@ -66,21 +66,65 @@ This table describes the overall protection of your organization data from ranso
 
 ### Deployment objectives
 
-Meet these deployment objectives to protect your accounts with Zero Trust.
+Meet these deployment objectives to protect your data with Zero Trust.
 
-| Done | Deployment objective | Owner | Documentation |
+| Done | Deployment objective | Owner | Link to steps |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1.  | IT implementer |  |
-| <input type="checkbox" /> | 2.  | IT implementer |  |
-| <input type="checkbox" /> | 3.  | IT implementer |  |
-| <input type="checkbox" /> | 4.  | IT implementer |  |
-| <input type="checkbox" /> | 5.  | IT implementer |  |
-| <input type="checkbox" /> | 6.  | IT implementer |  |
-| <input type="checkbox" /> | 7.  | IT implementer |  |
+| <input type="checkbox" /> | 1. Know your data |  |  |
+| <input type="checkbox" /> | 2. Protect your data |  |  |
+| <input type="checkbox" /> | 3. Prevent data loss |  |  |
 
 You have now built out the data section of the Zero Trust architecture.
 
 ![The data section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-increase-security-key-resources-data.png)
+
+
+#### 1. Know your data
+
+Perform these implementation steps to meet deployment objective **1. Know your data**.
+
+| Done | Step objective and results | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | 1.  |  |  |
+| <input type="checkbox" /> | 2.  |  |  |
+| <input type="checkbox" /> | 3.  |  |  |
+| <input type="checkbox" /> | 4.  |  |  |
+| <input type="checkbox" /> | 5.  |  |  |
+| <input type="checkbox" /> | 6.  |  |  |
+| <input type="checkbox" /> | 7.  |  |  |
+
+
+
+#### Protect your data
+
+Perform these implementation steps to meet deployment objective **2. Protect your data**.
+
+| Done | Step objective and results | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | 1.  |  |  |
+| <input type="checkbox" /> | 2.  |  |  |
+| <input type="checkbox" /> | 3.  |  |  |
+| <input type="checkbox" /> | 4.  |  |  |
+| <input type="checkbox" /> | 5.  |  |  |
+| <input type="checkbox" /> | 6.  |  |  |
+| <input type="checkbox" /> | 7.  |  |  |
+
+
+### Prevent data loss
+
+Perform these implementation steps to meet deployment objective **3. Prevent data loss**.
+
+| Done | Step objective and results | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | 1.  |  |  |
+| <input type="checkbox" /> | 2.  |  |  |
+| <input type="checkbox" /> | 3.  |  |  |
+| <input type="checkbox" /> | 4.  |  |  |
+| <input type="checkbox" /> | 5.  |  |  |
+| <input type="checkbox" /> | 6.  |  |  |
+| <input type="checkbox" /> | 7.  |  |  |
+
+
 
 ## Next step
 

@@ -29,10 +29,22 @@ After completing this step, you will have built out this part of the Zero Trust 
 
 Content TBD
 
+![The apps section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png)
+
+
 ## Data
 
+Verify and secure each identity with strong authentication across your entire digital estate with Azure Active Directory (Azure AD), a complete identity and access management solution with integrated security that connects 425 Million people to their apps, devices, and data each month.
+
+<!--
 Discover and protect sensitive data (via Cloud App Security, CA App Control, Microsoft Info Protection)
 
+https://docs.microsoft.com/en-us/microsoft-365/compliance/information-protection?view=o365-worldwide
+
+https://docs.microsoft.com/en-us/security/compass/protect-against-ransomware-phase1#data-protection
+
+https://review.docs.microsoft.com/en-us/microsoft-365/solutions/protect-against-ransomware-microsoft-365-step5?view=o365-21vianet&branch=Josephd-M365-ransomware-solution
+--> 
 
 - Know your data
 
@@ -73,59 +85,60 @@ Meet these deployment objectives to protect your data with Zero Trust.
 | <input type="checkbox" /> | 1. Know your data |  |  |
 | <input type="checkbox" /> | 2. Protect your data |  |  |
 | <input type="checkbox" /> | 3. Prevent data loss |  |  |
+| <input type="checkbox" /> | 4. Use tight permissions |  |  |
 
-You have now built out the data section of the Zero Trust architecture.
+After completing these deployment objectives, you will have built out the data section of the Zero Trust architecture.
 
 ![The data section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-increase-security-key-resources-data.png)
 
 
 #### 1. Know your data
 
-Perform these implementation steps to meet deployment objective **1. Know your data**.
+Perform these implementation steps to meet the **Know your data** deployment objective .
 
 | Done | Step objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1.  |  |  |
-| <input type="checkbox" /> | 2.  |  |  |
+| <input type="checkbox" /> | 1. Determine data classification levels |  |  |
+| <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types |  |  |
 | <input type="checkbox" /> | 3.  |  |  |
-| <input type="checkbox" /> | 4.  |  |  |
-| <input type="checkbox" /> | 5.  |  |  |
-| <input type="checkbox" /> | 6.  |  |  |
-| <input type="checkbox" /> | 7.  |  |  |
 
+#### 2. Protect your data
 
-
-#### Protect your data
-
-Perform these implementation steps to meet deployment objective **2. Protect your data**.
+Perform these implementation steps to meet the **Protect your data** deployment objective.
 
 | Done | Step objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1.  |  |  |
-| <input type="checkbox" /> | 2.  |  |  |
-| <input type="checkbox" /> | 3.  |  |  |
-| <input type="checkbox" /> | 4.  |  |  |
+| <input type="checkbox" /> | 1. Determine use and design of sensitivity labels |  |  |
+| <input type="checkbox" /> | 2. Enable double key encryption |  |  |
+| <input type="checkbox" /> | 3. Enable Office Message Encryption (OME) |  |  |
+| <input type="checkbox" /> | 4. Enable and configure Microsoft Cloud App Security |  |  |
 | <input type="checkbox" /> | 5.  |  |  |
-| <input type="checkbox" /> | 6.  |  |  |
-| <input type="checkbox" /> | 7.  |  |  |
 
 
-### Prevent data loss
+### 3. Prevent data loss
 
-Perform these implementation steps to meet deployment objective **3. Prevent data loss**.
+Perform these implementation steps to meet the **Prevent data loss** deployment objective.
 
 | Done | Step objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1.  |  |  |
-| <input type="checkbox" /> | 2.  |  |  |
-| <input type="checkbox" /> | 3.  |  |  |
-| <input type="checkbox" /> | 4.  |  |  |
-| <input type="checkbox" /> | 5.  |  |  |
-| <input type="checkbox" /> | 6.  |  |  |
-| <input type="checkbox" /> | 7.  |  |  |
+| <input type="checkbox" /> | 1. Design and create data loss prevention (DLP) policies |  |  |
+| <input type="checkbox" /> | 2. Enable and configure endpoint data loss prevention |  |  |
+| <input type="checkbox" /> | 3. Enable and configure Microsoft Cloud App Security |  |  |
+| <input type="checkbox" /> | 4. Configure access policies for Cloud App Security Conditional Access App Control |  |  |
 
 
+### 4. Use tight permissions
+
+Perform these implementation steps to meet the **Use tight permissions** deployment objective.
+
+| Done | Step objective and results | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | 1. From the **Know your data** deployment objective, review the permissions for the locations of sensitive and critical information. |  |  |
+| <input type="checkbox" /> | 2. Implement strict permissions for the sensitive and critical information while meeting collaboration and business requirements and inform the users that are affected. |  |  |
+| <input type="checkbox" /> | 3. Perform change management for your users so that future locations for sensitive and critical information are created and maintained with strict permissions. |  |  |
+| <input type="checkbox" /> | 4. Audit and monitor the locations for sensitive and critical information to ensure that broad permissions aren't being granted |  |  |
 
 ## Next step
 
 Continue your Zero Trust deployment journey with [Step 3. Governance](user-access-productivity-governance.md).
+

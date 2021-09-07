@@ -30,7 +30,7 @@ Security of privileged access is critically important because it is foundational
 These attack techniques were initially used in targeted data theft attacks that resulted in many high profile breaches at familliar brands (and many unreported incidents). More recently these techniques have been adopted by ransomware attackers, fueling an explosive growth of highly profitable human operated ransomware attacks that intentionally disrupt business operations across industry.
 
 > [!IMPORTANT]
-> [Human operated ransomware](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster) is different from commodity single computer ransowmare attacks that target a single workstation or device.
+> [Human operated ransomware](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster) is different from commodity single computer ransomware attacks that target a single workstation or device.
 
 This graphic describes how this extortion based attack is growing in impact and likelihood using privileged access:
 

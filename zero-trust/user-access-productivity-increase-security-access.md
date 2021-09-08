@@ -12,13 +12,13 @@ ms.topic: conceptual
 
 This step includes using Zero Trust to explicitly validate trust for all access requests for:
 
-- Apps
+- [Apps](#apps)
 
-  Enable Azure AD for all SaaS, for VPN authentication, and publish legacy on-premises/IaaS via App Proxy.
+  Enable Azure AD for all SaaS apps, for VPN authentication, and publish legacy on-premises and IaaS-based Web servive with Azure AD Application Proxy.
 
-- Devices
+- [Data](#data)
 
-  Discover and protect sensitive data (via Cloud App Security, CA App Control, Microsoft Info Protection).
+  Discover and protect sensitive data with Microsoft Info Protection, compliance features, and Microsoft Cloud App Security.
 
 After completing this step, you will have built out this part of the Zero Trust architecture.
 
@@ -29,12 +29,18 @@ After completing this step, you will have built out this part of the Zero Trust 
 
 Content TBD
 
+After completing these deployment objectives, you will have built out the **apps** section of the Zero Trust architecture.
+
 ![The apps section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png)
 
 
 ## Data
 
-Verify and secure each identity with strong authentication across your entire digital estate with Azure Active Directory (Azure AD), a complete identity and access management solution with integrated security that connects 425 Million people to their apps, devices, and data each month.
+Your cloud data is a primary target of cyber attackers. Once they have access to your data, they can delete, alter, exfiltrate, and encrypt it, leaving you open to a ransomware attack. You must take the necessary steps identify it, protect it in place, ensure that does not get deleted or exfiltrated, and configure access permissions to only those with a business purpose.
+
+Protecting your data is part of the "assume breach" security principle. Even with all the user account and device protections in place, you must assume that an attacker could find their way in and begin traversing your environment, searching for the most valuable data for your organization.
+
+Therefore, you must:
 
 <!--
 Discover and protect sensitive data (via Cloud App Security, CA App Control, Microsoft Info Protection)
@@ -42,6 +48,8 @@ Discover and protect sensitive data (via Cloud App Security, CA App Control, Mic
 https://docs.microsoft.com/en-us/microsoft-365/compliance/information-protection?view=o365-worldwide
 
 https://docs.microsoft.com/en-us/security/compass/protect-against-ransomware-phase1#data-protection
+
+https://docs.microsoft.com/en-us/microsoft-365/solutions/information-protection-deploy-protect-information?view=o365-worldwide#managing-information-protection-in-microsoft-365
 
 https://review.docs.microsoft.com/en-us/microsoft-365/solutions/protect-against-ransomware-microsoft-365-step5?view=o365-21vianet&branch=Josephd-M365-ransomware-solution
 --> 
@@ -58,11 +66,10 @@ https://review.docs.microsoft.com/en-us/microsoft-365/solutions/protect-against-
 
   Apply a consistent set of data loss prevention policies across the cloud, on-premises environments, and endpoints to monitor, prevent, and remediate risky activities with sensitive data.
 
-You must implement data protection to ensure rapid and reliable recovery from a ransomware attack and to block some techniques of attackers.
 
 ### Program and project member accountabilities
 
-This table describes the overall protection of your organization data from ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+This table describes the overall protection of your organization data in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
 | Lead | Implementor | Accountability |
 |:-------|:-------|:-----|
@@ -80,58 +87,54 @@ This table describes the overall protection of your organization data from ranso
 
 Meet these deployment objectives to protect your data with Zero Trust.
 
-| Done | Deployment objective | Owner | Link to steps |
-|:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Know your data |  |  |
-| <input type="checkbox" /> | 2. Protect your data |  |  |
-| <input type="checkbox" /> | 3. Prevent data loss |  |  |
-| <input type="checkbox" /> | 4. Use tight permissions |  |  |
+| Done | Deployment objective | Owner |
+|:-------|:-------|:-----|
+| <input type="checkbox" /> | [1. Know your data](#know) |  |
+| <input type="checkbox" /> | [2. Protect your data](#protect) |  |
+| <input type="checkbox" /> | [3. Prevent data loss](#prevent) |  |
+| <input type="checkbox" /> | [4. Use tight permissions]($tighten) |  |
 
-After completing these deployment objectives, you will have built out the data section of the Zero Trust architecture.
+After completing these deployment objectives, you will have built out the **data** section of the Zero Trust architecture.
 
 ![The data section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-increase-security-key-resources-data.png)
 
+#### <a id="know">1. Know your data</a>
 
-#### 1. Know your data
+Perform these implementation steps to meet the **Know your data** deployment objective.
 
-Perform these implementation steps to meet the **Know your data** deployment objective .
-
-| Done | Step objective and results | Owner | Documentation |
+| Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. Determine data classification levels |  |  |
 | <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types |  |  |
-| <input type="checkbox" /> | 3.  |  |  |
 
-#### 2. Protect your data
+#### <a id="protect">2. Protect your data</a>
 
 Perform these implementation steps to meet the **Protect your data** deployment objective.
 
-| Done | Step objective and results | Owner | Documentation |
+| Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Determine use and design of sensitivity labels |  |  |
+| <input type="checkbox" /> | 1. Determine the use and design of sensitivity labels |  |  |
 | <input type="checkbox" /> | 2. Enable double key encryption |  |  |
 | <input type="checkbox" /> | 3. Enable Office Message Encryption (OME) |  |  |
 | <input type="checkbox" /> | 4. Enable and configure Microsoft Cloud App Security |  |  |
-| <input type="checkbox" /> | 5.  |  |  |
 
 
-### 3. Prevent data loss
+#### <a id="prevent">3. Prevent data loss</a>
 
 Perform these implementation steps to meet the **Prevent data loss** deployment objective.
 
-| Done | Step objective and results | Owner | Documentation |
+| Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. Design and create data loss prevention (DLP) policies |  |  |
 | <input type="checkbox" /> | 2. Enable and configure endpoint data loss prevention |  |  |
-| <input type="checkbox" /> | 3. Enable and configure Microsoft Cloud App Security |  |  |
-| <input type="checkbox" /> | 4. Configure access policies for Cloud App Security Conditional Access App Control |  |  |
+| <input type="checkbox" /> | 3. Configure access policies for Cloud App Security Conditional Access App Control |  |  |
 
 
-### 4. Use tight permissions
+#### <a id="tighten">4. Use tight permissions</a>
 
 Perform these implementation steps to meet the **Use tight permissions** deployment objective.
 
-| Done | Step objective and results | Owner | Documentation |
+| Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. From the **Know your data** deployment objective, review the permissions for the locations of sensitive and critical information. |  |  |
 | <input type="checkbox" /> | 2. Implement strict permissions for the sensitive and critical information while meeting collaboration and business requirements and inform the users that are affected. |  |  |

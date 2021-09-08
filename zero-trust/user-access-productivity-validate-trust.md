@@ -11,11 +11,11 @@ ms.topic: conceptual
 
 This step includes using Zero Trust to explicitly validate trust for all access requests for:
 
-- User Accounts
+- [User Accounts](#user-accounts)
 
   Require Passwordless or multi-factor authentication (MFA) for all users and measure risk with threat intelligence and behavior analytics.
 
-- Devices
+- [Devices](#devices)
 
   Require device integrity and health compliance for access.
 
@@ -55,7 +55,7 @@ Meet these deployment objectives to protect your accounts with Zero Trust.
 | <input type="checkbox" /> | 7. Microsoft Defender for Identity | IT implementer | Deploy and enable [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is#whats-next). Review and mitigate any open alerts. |
 | <input type="checkbox" /> | 8. Passwordless credential deployment | IT implementer | [Plan a passwordless authentication deployment in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-deployment) |
 
-You have now built out the identities section of the Zero Trust architecture.
+You have now built out the **identities** section of the Zero Trust architecture.
 
 ![The identities section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-users.png)
 
@@ -88,7 +88,7 @@ Meet these deployment objectives to protect your devices with Zero Trust.
 | <input type="checkbox" /> | 4. Monitor device compliance/risk as a signal for Conditional Access |  | [Use compliance policies to set rules for devices you manage with Intune](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) |
 | <input type="checkbox" /> | 5. Implement Microsoft Information Protection and integrate with Conditional Access polciies |  | link |
 
-You have now built out the devices section of the Zero Trust architecture.
+You have now built out the **devices** section of the Zero Trust architecture.
 
 ![The devices section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-devices.png)
 

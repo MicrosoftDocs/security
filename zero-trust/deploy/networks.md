@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Secure networks with Zero Trust
 
-:::image type="icon" source="./media/icon-networks-medium.png":::
+:::image type="icon" source="../media/icon-networks-medium.png":::
 
 Big data presents new opportunities to derive new insights and gain a competitive edge. We are moving away from an era where networks were clearly defined and usually specific to a certain location. The cloud, mobile devices, and other [endpoints](https://aka.ms/ZTEndpoints) expand the boundaries and change the paradigm. Now there isn't necessarily a contained/defined network to secure. Instead, there is a vast portfolio of devices and networks, all linked by the cloud.
 
@@ -61,7 +61,7 @@ To make this happen, we follow three Zero Trust principles:
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+		 <p><img src="../media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
 		 <p><b>I.</b> <a href="#i-network-segmentation-many-ingressegress-cloud-micro-perimeters-with-some-micro-segmentation">Network segmentation: Many ingress/egress cloud micro-perimeters with some micro-segmentation.</a></p>
@@ -76,7 +76,7 @@ To make this happen, we follow three Zero Trust principles:
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+		 <p><img src="../media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
          <p><b>IV.</b> <a href="#iv-network-segmentation-fully-distributed-ingressegress-cloud-micro-perimeters-and-deeper-micro-segmentation">Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation.</a></p>
@@ -93,7 +93,7 @@ This guide will walk you through the steps required to secure your networks foll
 
 <br/><br/>
 <!-- H2 heading, "Initial deployment objectives" -->
-[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
+[!INCLUDE [H2 heading, Initial deployment objectives](../includes/deployment-objectives-initial.md)]
 
 
 
@@ -110,7 +110,7 @@ With micro-segmentation, organizations can move beyond simple centralized networ
 
 #### Applications are partitioned to different Azure Virtual Networks (VNets) and connected using a hub-spoke model
 
-:::image type="content" source="./media/diagram-network-hub-spoke-two-regions.png" alt-text="Diagram of two virtual networks connected in a hub-and-spoke model." border="false":::
+:::image type="content" source="../media/diagram-network-hub-spoke-two-regions.png" alt-text="Diagram of two virtual networks connected in a hub-and-spoke model." border="false":::
 
 Follow these steps:
 
@@ -194,7 +194,7 @@ Follow these steps:
 
 <br/><br/>
 <!-- H2 heading, "Additional deployment objectives" -->
-[!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
+[!INCLUDE [H2 heading, Additional deployment objectives](../includes/deployment-objectives-additional.md)]
 
 
 
@@ -205,7 +205,7 @@ Once you've accomplished your initial three objectives, the next step is to furt
 
 #### Partition app components to different subnets
 
-:::image type="content" source="./media/diagram-azure-region-virtual-network-servers.png" alt-text="Diagram of a virtual network of servers in the Azure region." border="true":::
+:::image type="content" source="../media/diagram-azure-region-virtual-network-servers.png" alt-text="Diagram of a virtual network of servers in the Azure region." border="true":::
 
 
 Follow these steps:
@@ -217,7 +217,7 @@ Follow these steps:
 
 #### Segment and enforce the external boundaries
 
-:::image type="content" source="./media/diagram-servers-devices-boundaries-azure-vpn.png" alt-text="Diagram of a servers and devices with connections across boundaries." border="true":::
+:::image type="content" source="../media/diagram-servers-devices-boundaries-azure-vpn.png" alt-text="Diagram of a servers and devices with connections across boundaries." border="true":::
 
 Follow these steps, depending on the type of boundary:
 
@@ -302,4 +302,4 @@ Securing networks is central to a successful Zero Trust strategy. For further in
 
 <br/><br/>
 <!-- Include the nav bar. -->
-[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
+[!INCLUDE [navbar, bottom](../includes/navbar-bottom.md)]

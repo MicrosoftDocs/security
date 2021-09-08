@@ -95,7 +95,7 @@ In addition to the getting started guidance above, ISVs who are creating identit
 [Secure hybrid access integrations](secure-hybrid-access.md)
 Many business applications were created to work inside of a protected corporate network, and some of these applications make use of legacy authentication methods. As companies look to build a Zero Trust strategy and support hybrid and cloud-first work environments, they need solutions that connect apps to Azure Active Directory and provide modern authentication solutions for legacy applications. Use this guide to create solutions that provide modern cloud authentication for legacy on-premises applications.
 
-[Become a Microsoft-compatible FIDO2 security key vendor](fido2-hardware-vendor.md)
+[Become a Microsoft-compatible FIDO2 security key vendor](/azure/active-directory/authentication/concept-fido2-hardware-vendor)
 FIDO2 security keys can replace weak credentials with strong hardware-backed public/private-key credentials which cannot be reused, replayed, or shared across services. You can become a Microsoft-compatible FIDO2 security key vendor by following the process in this document.
 
 ## Next steps

@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Secure data with Zero Trust
 
-:::image type="icon" source="./media/icon-data-medium.png":::
+:::image type="icon" source="../media/icon-data-medium.png":::
 
 **Background**
 
@@ -30,7 +30,7 @@ The three core elements of a data protection strategy are:
 
     You should continuously monitor sensitive data to detect policy violations and risky user behavior. This allows you to take appropriate action, such as revoking access, blocking users, and refining your protection policies.
 
-:::image type="content" source="./media/diagram-monitor-remediate-data.png" alt-text="Diagram of monitoring activiting and remediation." border="false":::
+:::image type="content" source="../media/diagram-monitor-remediate-data.png" alt-text="Diagram of monitoring activiting and remediation." border="false":::
 
 When data and sensitive content is understood, labeled, and classified, organizations can:
 
@@ -86,7 +86,7 @@ activities in this guide. For more information, see:
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+		 <p><img src="../media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
 	     <p><b>I.</b> <a href="#i-access-decisions-are-governed-by-encryption">Access decisions are governed by encryption.</a></p>
@@ -100,7 +100,7 @@ activities in this guide. For more information, see:
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+		 <p><img src="../media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
          <p><b>III.</b> <a href="#iii-classification-is-augmented-by-smart-machine-learning-models">Classification is augmented by smart machine learning models.</a></p>
@@ -113,7 +113,7 @@ activities in this guide. For more information, see:
 
 **Capabilities**
 
-:::image type="content" source="./media/table-data-capabilities.png" alt-text="Table of capabilities." border="false":::
+:::image type="content" source="../media/table-data-capabilities.png" alt-text="Table of capabilities." border="false":::
 
 
 ## Data Zero Trust deployment guide
@@ -123,7 +123,7 @@ This guide will walk you step-by-step through a Zero Trust approach to data prot
 
 <br/><br/>
 <!-- H2 heading, "Initial deployment objectives" -->
-[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
+[!INCLUDE [H2 heading, Initial deployment objectives](../includes/deployment-objectives-initial.md)]
 
 
 
@@ -170,7 +170,7 @@ Take this step:
 
 <br/><br/>
 <!-- H2 heading, "Additional deployment objectives" -->
-[!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
+[!INCLUDE [H2 heading, Additional deployment objectives](../includes/deployment-objectives-additional.md)]
 
 
 
@@ -227,7 +227,7 @@ These activities help address risk by identifying and marking sensitive informat
 
 The following guidance will help you get started with sensitivity labels.
 
-:::image type="content" source="./media/diagram-steps-box-identity-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
+:::image type="content" source="../media/diagram-steps-box-identity-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
 
 
 #### Sensitivity labels are applied manually
@@ -288,7 +288,7 @@ Take this step:
 
 After a sensitivity label is created and applied to an email or document, any configured protection settings for that label are enforced on the content. When you use Office apps, watermarks can be applied to headers or footers of emails or documents that have the label applied.
 
-:::image type="content" source="./media/screenshot-office-document-header-watermark-highly-confidential.png" alt-text="Screenshot of an Office document with a watermark and header about confidentiality." border="false":::
+:::image type="content" source="../media/screenshot-office-document-header-watermark-highly-confidential.png" alt-text="Screenshot of an Office document with a watermark and header about confidentiality." border="false":::
 
 Take this step:
 
@@ -321,11 +321,11 @@ Follow these steps:
 
 [Microsoft Information Protection](https://www.microsoft.com/security/business/information-protection) (MIP) is a comprehensive, flexible, integrated, and extensible approach to protecting sensitive data.
 
-:::image type="content" source="./media/diagram-microsoft-information-protection-corporate-egress-highlighted.png" alt-text="Diagram of Microsoft Information Protection for data with Corporate Egress highlighted." border="false":::
+:::image type="content" source="../media/diagram-microsoft-information-protection-corporate-egress-highlighted.png" alt-text="Diagram of Microsoft Information Protection for data with Corporate Egress highlighted." border="false":::
 
 For further information or help with implementation, please contact your Customer Success team.
 
 
 <br/><br/>
 <!-- Include the nav bar. -->
-[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
+[!INCLUDE [navbar, bottom](../includes/navbar-bottom.md)]

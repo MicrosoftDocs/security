@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Secure applications with Zero Trust
 
-:::image type="icon" source="./media/icon-applications-medium.png":::
+:::image type="icon" source="../media/icon-applications-medium.png":::
 
 **Background**
 
@@ -44,7 +44,7 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+		 <p><img src="../media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
 		 <p><b>I.</b> <a href="#i-gain-visibility-into-the-activities-and-data-in-your-applications-by-connecting-them-via-apis">Gain visibility into the activities and data in your applications by connecting them via APIs.</a></p>
@@ -59,7 +59,7 @@ The **Zero Trust** model helps organizations ensure that apps, and the data t
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+		 <p><img src="../media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
          <p><b>IV.</b> <a href="#iv-deploy-adaptive-access-and-session-controls-for-all-apps">Deploy adaptive access and session controls for all apps.</a></p>
@@ -82,7 +82,7 @@ This guide will walk you through the steps required to secure applications and A
 
 <br/><br/>
 <!-- H2 heading, "Initial deployment objectives" -->
-[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
+[!INCLUDE [H2 heading, Initial deployment objectives](../includes/deployment-objectives-initial.md)]
 
 
 
@@ -174,7 +174,7 @@ Follow these steps:
 
 <br/><br/>
 <!-- H2 heading, "Additional deployment objectives" -->
-[!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
+[!INCLUDE [H2 heading, Additional deployment objectives](../includes/deployment-objectives-additional.md)]
 
 
 
@@ -244,4 +244,4 @@ Regardless of where the cloud resource or application resides, Zero Trust princi
 
 <br/><br/>
 <!-- Include the nav bar. -->
-[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
+[!INCLUDE [navbar, bottom](../includes/navbar-bottom.md)]

@@ -14,11 +14,11 @@ This step includes using Zero Trust to explicitly validate trust for all access 
 
 - [Apps](#apps)
 
-  Enable Azure AD for all SaaS apps, for VPN authentication, and publish legacy on-premises and IaaS-based Web servive with Azure AD Application Proxy.
+  Enable Azure Active Directory (Azure AD) for all SaaS apps and VPN authentication and publish legacy on-premises and IaaS-based Web services with Azure AD Application Proxy.
 
 - [Data](#data)
 
-  Discover and protect sensitive data with Microsoft Info Protection, compliance features, and Microsoft Cloud App Security.
+  Discover and protect sensitive data with Microsoft Information Protection, Microsoft 365 compliance features, and Microsoft Cloud App Security.
 
 After completing this step, you will have built out this part of the Zero Trust architecture.
 
@@ -40,8 +40,6 @@ Your cloud data is a primary target of cyber attackers. Once they have access to
 
 Protecting your data is part of the "assume breach" security principle. Even with all the user account and device protections in place, you must assume that an attacker could find their way in and begin traversing your environment, searching for the most valuable data for your organization.
 
-Therefore, you must:
-
 <!--
 Discover and protect sensitive data (via Cloud App Security, CA App Control, Microsoft Info Protection)
 
@@ -53,6 +51,7 @@ https://docs.microsoft.com/en-us/microsoft-365/solutions/information-protection-
 
 https://review.docs.microsoft.com/en-us/microsoft-365/solutions/protect-against-ransomware-microsoft-365-step5?view=o365-21vianet&branch=Josephd-M365-ransomware-solution
 --> 
+Therefore, you must:
 
 - Know your data
 
@@ -85,7 +84,7 @@ This table describes the overall protection of your organization data in terms o
 
 ### Deployment objectives
 
-Meet these deployment objectives to protect your data with Zero Trust.
+Meet these deployment objectives to protect your data for Zero Trust.
 
 | Done | Deployment objective | Owner |
 |:-------|:-------|:-----|

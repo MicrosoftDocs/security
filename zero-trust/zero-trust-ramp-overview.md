@@ -51,7 +51,7 @@ The guidance for deployment of Zero Trust in your organization is organized in R
 
 For every organization, the top priority Zero Trust RaAMP pillars are:
 
-- [User Access and Productivity](user-access-productivity-validate-trust.md)
+- [User Access and Productivity](user-access-productivity-overview.md)
 - Modernize Security Operations
 
 Zero Trust RaMP pillars based on need for the use of Operations Technology (OT) and Industrial IoT, on-premises cloud adoption, and security for in-house app development are:

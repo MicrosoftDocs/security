@@ -92,7 +92,7 @@ Meet these deployment objectives to protect your data with Zero Trust.
 | <input type="checkbox" /> | [1. Know your data](#know) |  |
 | <input type="checkbox" /> | [2. Protect your data](#protect) |  |
 | <input type="checkbox" /> | [3. Prevent data loss](#prevent) |  |
-| <input type="checkbox" /> | [4. Use tight permissions]($tighten) |  |
+| <input type="checkbox" /> | [4. Use tight permissions](#tighten) |  |
 
 After completing these deployment objectives, you will have built out the **data** section of the Zero Trust architecture.
 

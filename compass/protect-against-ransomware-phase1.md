@@ -55,6 +55,8 @@ Most organizations don’t protect backup and restoration procedures against thi
 >This preparation also improves resilience to natural disasters and rapid attacks like WannaCry and (Not)Petya.
 >
 
+[Backup and restore plan to protect against ransomware](backup-plan-to-protect-against-ransomware.md) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations.
+
 ### Program and project member accountabilities
 
 This table describes the overall protection of your data from ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.

@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 Endpoints are devices that access an organization's resources and applications. Modern workplaces include a variety of devices that request access from both inside and outside the corporate network.
 
-Endpoint Zero Trust solutions are about verifying the security of the devices that access work data, including the applications that are running on the devices.
+Endpoint Zero Trust solutions are about verifying the security of the devices that access work data, including the applications that are running on the devices. Partners can integrate with Microsoft's endpoint solutions to verify device and app security, enforce least privileged policies, and prepare in advance for breaches.
 
 This guidance is for software providers and technology partners who want to enhance their endpoint security solutions by integrating with Microsoft products.
 
@@ -31,7 +31,10 @@ This integration guide includes instructions for integrating with the following 
 
 Defender for Endpoint [supports third-party applications](/microsoft-365/security/defender-endpoint/partner-applications) to help enhance the detection, investigation, and threat intelligence capabilities of the platform. In addition, partners can [extend their existing security offerings](/microsoft-365/security/defender-endpoint/partner-integration) on top of the open framework and a rich and complete set of APIs to build extensions and integrations with Defender for Endpoint.
 
-The [Microsoft Defender for Endpoint partner opportunities and scenarios](/microsoft-365/security/defender-endpoint/partner-integration) page explains key integration scenarios.
+The [Microsoft Defender for Endpoint partner opportunities and scenarios](/microsoft-365/security/defender-endpoint/partner-integration) page describes several categories of integrations that are supported. In addition, other ideas for integration scenarios can include:
+
+- Streamlining threat remediation: Microsoft Defender for Endpoint can take immediate or operator-assisted responses to address alerts. Partners can leverage the endpoint response actions such as machine isolation, file quarantine to block IoC across the managed endpoint.
+- Combine network access control with device security: Risk or exposure scores can be used  to implement and enforce policies for network and application access.
 
 To become a Defender for Endpoint solution partner, you'll need to follow and complete the  steps found at Become a [Microsoft Defender for Endpoint partner](/microsoft-365/security/defender-endpoint/get-started-partner-integration).
 

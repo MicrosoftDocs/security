@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 Keeping data protected is a central objective of a Zero Trust strategy. Where possible, data should remain safe even if it leaves the devices, apps, infrastructure, and networks the organization controls. To ensure protection and that data access is restricted to authorized users, data should be inventoried, classified, labeled, and, where appropriate, encrypted.
 
-Zero Trust data solutions help customers classify and label data based on assessed risk, and ensure that the data management is following the organizations compliance requirements.
+Zero Trust data solutions help customers classify and label data based on assessed risk, and ensure that the data management is following the organization's compliance requirements.
 
 This guidance is for software providers and technology partners who want to enhance their data security solutions by integrating with Microsoft products.
 

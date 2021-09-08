@@ -30,13 +30,11 @@ Independent software vendors (ISVs) can integrate with the MIP SDK to build solu
 
 [Microsoft Information Protection (MIP)](/information-protection/develop/overview) is the unification of Microsoft's classification, labeling, and protection services. Third parties can use the MIP SDK to integrate with applications, using a standard, consistent data labeling schema and protection service.
 
-ISVs can use the MIP SDK to help customers understand their data landscape, apply flexible protection actions, detect risky behavior to prevent data loss, and maintain data compliance through automatic actions.
+ISVs can use the MIP SDK to help customers understand their data landscape, apply flexible protection actions, detect risky behavior to prevent data loss, and maintain data compliance through automatic actions. For example:
 
-Some examples of applications that could make use of the MIP SDK include:
-
-- A line-of-business application that applies classification labels to files on export.
-- A computer-aided design (CAD) application that provides native support for Microsoft Information Protection labeling.
-- A cloud access security broker or data loss prevention solution which reasons over data encrypted with Azure Information Protection.
+- Applying labels automatically to documents based on content
+- Enforcing protection and controls based on labels
+- Automatically classifying and protecting data coming out of apps to prevent data theft
 
 The [Microsoft Information Protection SDK - API concepts](/information-protection/develop/concept-apis-use-cases) page includes more examples of how you can integrate with the MIP SDK.
 

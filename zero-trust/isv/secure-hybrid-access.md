@@ -3,8 +3,8 @@ title: Secure hybrid access integrations
 description: Help customers discover and migrate SaaS applications into Azure AD and connect apps that use legacy authentication methods with Azure AD.
 ms.date: 04/20/2021
 ms.service: security
-author: knicholasa
-ms.author: nichola
+author: gargi-sinha
+ms.author: gasinh
 ms.topic: conceptual
 ---
 

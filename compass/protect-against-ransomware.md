@@ -63,6 +63,9 @@ To help you understand how to protect your organization from ransomware, this gu
 
 The items in the implementation checklists are in the recommended order of prioritization, not a technical dependency order. Use the checklists to confirm and modify your existing configuration as needed and in a way that works within your organization. For example, in the most important backup element, you backup some systems, but they may not be offline/immutable, or you may not test the full enterprise restore procedures, or you may not have backups of critical business systems or critical IT systems like Active Directory Domain Services (AD DS) domain controllers. 
 
+>[!Note]
+>See the [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/) Microsoft security blog post for an additional summary of this process.
+>
 
 ### Phase 1. Prepare your recovery plan
 

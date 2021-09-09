@@ -52,7 +52,7 @@ poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d
 
 ## Additional resources
 
-Key industry information:
+Key industry information from Microsoft:
 
 - [The latest Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
 
@@ -75,12 +75,16 @@ Microsoft Cloud App Security:
 
 Microsoft Azure:
 
+- [Backup and restore plan to protect against ransomware](backup-plan-to-protect-against-ransomware.md)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
 - [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
 Microsoft Security team blog posts:
+
+- [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+
 
 - [Becoming resilient by understanding cybersecurity risks: Part 4—navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 

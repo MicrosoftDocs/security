@@ -81,7 +81,7 @@ Apply these best practices to secure your backup infrastructure.
 | <input type="checkbox" /> | Backup all critical systems automatically on a regular schedule. | Allows you to recover data up to the last backup. |
 | <input type="checkbox" /> | Regularly exercise your business continuity/disaster recovery (BC/DR) plan. | Ensures rapid recovery of business operations by treating a ransomware or extortion attack with the same importance as a natural disaster. |
 | <input type="checkbox" /> | Protect backups against deliberate erasure and encryption: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site. | Backups that are accessible by attackers can be rendered unusable for business recovery. |
-| <input type="checkbox" /> | Protect supporting documents required for recovery such as restoration procedure documents, CMDB, and network diagrams. | Attackers deliberately target these resources because it impacts your ability to recover. |
+| <input type="checkbox" /> | Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | Attackers deliberately target these resources because it impacts your ability to recover. |
 
 
 ### Implementation results and timelines

@@ -51,12 +51,12 @@
     href: https://www.microsoft.com/security/blog/zero-trust/
   - name: Microsoft Intelligent Security Association
     href: https://www.microsoft.com/security/business/intelligent-security-association
-- name: Zero Trust RaMP pillars 
+- name: Zero Trust Rapid Modernization Plan (RaMP)
   expanded: false
   items: 
     - name: Overview
       href: zero-trust-ramp-overview.md
-    - name: User Access and Productivity
+    - name: User access and productivity
       expanded: false
       items:
       - name: Overview

@@ -1,6 +1,6 @@
 ---
-title: User Access and Productivity Overview
-description: User Access and Productivity Overview 
+title: User access and productivity
+description: User access and productivity area of RaMP for Zero Trust
 ms.service: security
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -8,13 +8,13 @@ manager: dansimp
 ms.topic: conceptual
 ---
 
-# User Access and Productivity Overview
+# User access and productivity
 
-In this Zero Trust RaMP pillar, you will build out the following part of the Zero Trust RaMP story.
+In this Zero Trust RaMP area, you will build out the following part of the Zero Trust RaMP story.
 
-![RaMP pillars for Zero Trust](./media/user-access-productivity-overview/zero-trust-ramp-pillar-user-access-productivity.png)
+![RaMP areas for Zero Trust](./media/user-access-productivity-overview/zero-trust-ramp-pillar-user-access-productivity.png)
 
-This pillar is composed of these RaMP pillar scenarios:
+This area is composed of these steps:
 
 - [Step 1. Explicitly validate trust for all access requests](user-access-productivity-validate-trust.md)
 
@@ -24,5 +24,5 @@ This pillar is composed of these RaMP pillar scenarios:
 
 ## Next step
 
-Begin the User Access and Productivity Zero Trust RaMP pillar with [Step 1. Explicitly validate trust for all access requests](user-access-productivity-validate-trust.md).
+Begin the user access and productivity area with [Step 1. Explicitly validate trust for all access requests](user-access-productivity-validate-trust.md).
 

@@ -6,6 +6,7 @@ ms.service: security
 author: gargi-sinha
 ms.author: gasinh
 ms.topic: conceptual
+ROBOTS: NOINDEX
 ---
 
 # Secure hybrid access integrations

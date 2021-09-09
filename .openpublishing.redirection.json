@@ -44,7 +44,7 @@
       {
         "source_path": "zero-trust/isv/secure-hybrid-access.md",
         "redirect_url": "/active-directory/manage-apps/secure-hybrid-access-integrations",
-        "redirect_document_id": true
+        "redirect_document_id": false
       }
   ] 
   } 

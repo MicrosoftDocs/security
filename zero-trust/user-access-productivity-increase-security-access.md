@@ -70,7 +70,7 @@ Therefore, you must:
 
 This table describes the overall protection of your organization data in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
-| Lead | Implementor | Accountability |
+| Lead | Implementer | Accountability |
 |:-------|:-------|:-----|
 | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Operations or CIO | | Executive sponsorship |
 | Program lead from [Data Security](/azure/cloud-adoption-framework/organize/cloud-security-data-security) | | Drive results and cross-team collaboration |

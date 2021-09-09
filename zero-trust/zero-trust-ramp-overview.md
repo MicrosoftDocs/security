@@ -43,6 +43,8 @@ Here is the overall architecture for Zero Trust.
 
 ![The overall architecture for Zero Trust](./media/zero-trust-ramp-overview/zero-trust-architecture.png)
 
+
+
 ## RaMP pillars for Zero Trust
 
 The guidance for deployment of Zero Trust in your organization is organized in RaMP pillars.
@@ -61,5 +63,5 @@ Zero Trust RaMP pillars based on need for the use of Operations Technology (OT) 
 
 ## Next step
 
-Begin your Zero Trust deployment journey with the [User Access and Productivity](user-access-productivity-overview.md) pillar.
+Begin your Zero Trust RaMP deployment journey with [User Access and Productivity](user-access-productivity-overview.md).
 

@@ -31,7 +31,7 @@ Verify and secure each identity with strong authentication across your entire di
 
 This table describes the overall protection of your user accounts in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
-| Lead | Implementor | Accountability |
+| Lead | Implementer | Accountability |
 |:-------|:-------|:-----|
 | [Central IT](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) sponsored by CISO, CIO, or Director of Identity | | Executive sponsorship |
 | Program lead from [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture) | | Drive results and cross-team collaboration |
@@ -67,7 +67,7 @@ Ensure compliance and health status before granting access to your devices (endp
 
 This table describes the overall protection of your devices in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
-| Lead | Implementor | Accountability |
+| Lead | Implementer | Accountability |
 |:-------|:-------|:-----|
 | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Operations or CIO | | Executive sponsorship |
 | Program lead from [Central IT](/azure/cloud-adoption-framework/organize/central-it) infrastructure | | Drive results and cross-team collaboration |

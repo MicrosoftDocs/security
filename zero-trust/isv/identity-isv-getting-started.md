@@ -64,5 +64,5 @@ Going in the other direction, Azure AD continually evaluates user risk based on 
 
 ## Next steps
 
-[Secure hybrid access integrations](secure-hybrid-access.md)
-[Become a Microsoft-compatible FIDO2 security key vendor](fido2-hardware-vendor.md)
+- [Secure hybrid access integrations](secure-hybrid-access.md)
+- [Become a Microsoft-compatible FIDO2 security key vendor](fido2-hardware-vendor.md)

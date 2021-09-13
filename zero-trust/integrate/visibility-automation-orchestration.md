@@ -51,6 +51,7 @@ Azure Sentinel Solutions allows partners to deliver combined product, domain, or
 :::image type="content" source="../media/integrate/visibility-automation-orchestration/package-solutions.png" alt-text="Visualization of the three steps for creating a solution. First, create content. Then, package that content. Finally, publish the solution.":::
 
 ## Next steps
+
 - [Integration Opportunities Guide for Azure Sentinel](foo.md)
 - [Integration Components for Azure Sentinel](https://github.com/Azure/Azure-Sentinel/wiki#get-started)
 - [Guide to Building Azure Sentinel Solutions](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions#readme)

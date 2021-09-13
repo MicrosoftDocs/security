@@ -156,4 +156,5 @@ To view the security posture of **Amazon Web Services** machines in Security Cen
 To view the security posture of **Google Cloud Platform** machines in Security Center, onboard GCP accounts into Security Center. This will integrate GCP Security Command and Azure Security Center for a unified view of Security Center recommendations and GCP Security Command Center findings and provide a range of benefits as described in [Connect your GCP accounts to Azure Security Center](/azure/security-center/quickstart-onboard-gcp).
 
 ## Next steps
+
 To learn more about Azure Security Center and Azure Defender, see the complete [Security Center documentation](/azure/security-center/).

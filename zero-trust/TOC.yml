@@ -19,7 +19,7 @@
       href: deploy/networks.md
     - name: Visibility, automation, and orchestration
       href: deploy/visibility-automation-orchestration.md
-- name: Integration guidance
+- name: Partner integration guidance
   expanded: false
   items: 
     - name: Overview
@@ -38,7 +38,7 @@
       href: integrate/networks.md
     - name: Visibility, automation, and orchestration
       href: integrate/visibility-automation-orchestration.md
-- name: App development guidance
+- name: App development best practices
   expanded: false
   items: 
     - name: Overview

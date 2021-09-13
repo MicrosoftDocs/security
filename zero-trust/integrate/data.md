@@ -51,6 +51,7 @@ This document describes common use cases for the MIP SDK, including how to get s
 This resource contains sample implementations showing the use of the MIP SDK in code. For example, the [.NET File Quickstart](/samples/azure-samples/mipsdk-dotnet-file-quickstart/mipsdk-dotnet-file-quickstart/) demonstrates labeling and reading labels on files.
 
 ## Next steps
+
 - [Microsoft Information Protection SDK - Classification label concepts](/information-protection/develop/concept-classification-labels)
 - [Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager)
 - [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection)

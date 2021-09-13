@@ -35,4 +35,5 @@ The supported security partners are Zscaler, Check Point, and iboss.
 If your solution will connect with Microsoft 365, you can use the guidance from the [Microsoft 365 Networking Partner Program](/en-us/microsoft-365/enterprise/microsoft-365-networking-partner-program) to ensure that your solution follows [Microsoft 365 network connectivity principles]((/microsoft-365/enterprise/microsoft-365-network-connectivity-principles). The purpose of this program is to facilitate great customer experience with Microsoft 365 through easy discovery of validated partner solutions that consistently demonstrate alignment to key principles for optimal Microsoft 365 connectivity in customer deployments.
 
 ## Next steps
+
 - [Azure Firewall Manager documentation](/azure/firewall-manager/)

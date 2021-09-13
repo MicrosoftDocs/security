@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 Applications are core productivity tools for employees. In a modern workplace, adoption of cloud based Software as a Service (SaaS) applications has created new challenges for IT. Lack of visibility and control over applications, the way users interact with them, and the data that is exposed through them creates security and compliance risks.
 
-Applications Zero Trust solutions are about providing visibility and control over data, and analytics that identify and combat cyber threats across cloud apps and services.
+Zero Trust solutions for the applications pillar are about providing visibility and control over app usage data and analytics that identify and combat cyber threats across cloud apps and services.
 
 This guidance is for software providers and technology partners who want to enhance their applications security solutions by integrating with Microsoft products.
 
@@ -40,7 +40,7 @@ This allows ISVs to:
 - Easily deploy app connectors that take advantage of provider APIs, for deeper visibility and granular governance of apps that you connect to.
 - Use Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
 
-To get started, check out the inctroduction to the [Cloud App Security REST API](/cloud-app-security/api-introduction).
+To get started, check out the introduction to the [Cloud App Security REST API](/cloud-app-security/api-introduction).
 
 ### Shadow IT partner integration
 
@@ -70,6 +70,7 @@ When uploading the log, choose one of the following parser options:
 1. If your log format is a standard CEF, W3C, LEEF, select it in the dropdown of existing log formats
 1. If not, [configure a custom log parser](/cloud-app-security/custom-log-parser)
 
-## Next Steps
+## Next steps
+
 - [Microsoft Cloud App Security overview](/cloud-app-security/what-is-cloud-app-security)
 - [Cloud App Security REST API](/cloud-app-security/api-introduction)

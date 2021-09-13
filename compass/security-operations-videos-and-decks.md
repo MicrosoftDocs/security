@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Security Best Practices module: Security operations"
-ms.author: dansimp
-author: dansimp
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: dansimp
 audience: Admin
 ms.topic: article

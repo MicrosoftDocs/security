@@ -103,8 +103,8 @@ Perform these implementation steps to meet the **Know your data** deployment obj
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Determine data classification levels | Data Security Architect | /microsoft-365/compliance/data-classification-overview |
-| <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types | Data Security Architect | /microsoft-365/compliance/sensitive-information-type-learn-about |
+| <input type="checkbox" /> | 1. Determine data classification levels. | Data Security Architect | /microsoft-365/compliance/data-classification-overview |
+| <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types. | Data Security Architect | /microsoft-365/compliance/sensitive-information-type-learn-about |
 
 #### <a id="protect">2. Protect your data</a>
 
@@ -112,10 +112,10 @@ Perform these implementation steps to meet the **Protect your data** deployment 
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Determine the use and design of sensitivity labels | Security Architect | /microsoft-365/compliance/get-started-with-sensitivity-labels |
-| <input type="checkbox" /> | 2. Enable double key encryption | Data Security Engineer | /microsoft-365/compliance/double-key-encryption |
-| <input type="checkbox" /> | 3. Enable Office Message Encryption (OME) | Data Security Engineer | /microsoft-365/compliance/ome |
-| <input type="checkbox" /> | 4. Enable and configure Microsoft Cloud App Security | Data Security Engineer | /cloud-app-security/getting-started-with-cloud-app-security |
+| <input type="checkbox" /> | 1. Determine the use and design of sensitivity labels. | Security Architect | /microsoft-365/compliance/get-started-with-sensitivity-labels |
+| <input type="checkbox" /> | 2. Enable double key encryption | Data Security Engineer. | /microsoft-365/compliance/double-key-encryption |
+| <input type="checkbox" /> | 3. Enable Office Message Encryption (OME). | Data Security Engineer | /microsoft-365/compliance/ome |
+| <input type="checkbox" /> | 4. Enable and configure Microsoft Cloud App Security. | Data Security Engineer | /cloud-app-security/getting-started-with-cloud-app-security |
 
 
 #### <a id="prevent">3. Prevent data loss</a>
@@ -124,9 +124,9 @@ Perform these implementation steps to meet the **Prevent data loss** deployment 
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Design and create data loss prevention (DLP) policies | Security Architect | /microsoft-365/compliance/dlp-learn-about-dlp |
-| <input type="checkbox" /> | 2. Enable and configure endpoint data loss prevention | Data Security Engineer | /microsoft-365/compliance/endpoint-dlp-learn-about |
-| <input type="checkbox" /> | 3. Configure access policies for Cloud App Security Conditional Access App Control | Data Security Engineer | /cloud-app-security/proxy-intro-aad |
+| <input type="checkbox" /> | 1. Design and create data loss prevention (DLP) policies. | Security Architect | /microsoft-365/compliance/dlp-learn-about-dlp |
+| <input type="checkbox" /> | 2. Enable and configure endpoint data loss prevention. | Data Security Engineer | /microsoft-365/compliance/endpoint-dlp-learn-about |
+| <input type="checkbox" /> | 3. Configure access policies for Cloud App Security Conditional Access App Control. | Data Security Engineer | /cloud-app-security/proxy-intro-aad |
 
 
 #### <a id="tighten">4. Use tight permissions</a>
@@ -138,7 +138,7 @@ Perform these implementation steps to meet the **Use tight permissions** deploym
 | <input type="checkbox" /> | 1. From the **Know your data** deployment objective, review the permissions for the locations of sensitive and critical information. | Data Security Engineer |
 | <input type="checkbox" /> | 2. Implement strict permissions for the sensitive and critical information while meeting collaboration and business requirements and inform the users that are affected. | Data Security Engineer |
 | <input type="checkbox" /> | 3. Perform change management for your users so that future locations for sensitive and critical information are created and maintained with strict permissions. | User Education Team |
-| <input type="checkbox" /> | 4. Audit and monitor the locations for sensitive and critical information to ensure that broad permissions aren't being granted | Data Security Engineer |
+| <input type="checkbox" /> | 4. Audit and monitor the locations for sensitive and critical information to ensure that broad permissions aren't being granted. | Data Security Engineer |
 
 ## Next step
 

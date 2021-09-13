@@ -1,7 +1,7 @@
 ---
 title: "Security operations capabilities"
-ms.author: dansimp
-author: dansimp
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: dansimp
 audience: Admin
 ms.prod: m365-security

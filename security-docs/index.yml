@@ -94,7 +94,7 @@ additionalContent:
       summary: Microsoft security best practices that help you improve your security posture
       items:
         # Card
-        - title: Human operated ransomware
+        - title: Human-operated ransomware
           links:
             - text: Overview
               url: /security/compass/human-operated-ransomware

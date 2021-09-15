@@ -52,7 +52,7 @@ highlightedContent:
       url: https://docs.microsoft.com/microsoft-365/security/defender/eval-overview
     # Card
     - title: Past news and highlights
-      itemType: overview
+      itemType: reference
       url: ./engineering/news-and-highlights.md
 
 

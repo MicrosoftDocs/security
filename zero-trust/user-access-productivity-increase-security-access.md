@@ -51,6 +51,7 @@ https://docs.microsoft.com/en-us/microsoft-365/solutions/information-protection-
 
 https://review.docs.microsoft.com/en-us/microsoft-365/solutions/protect-against-ransomware-microsoft-365-step5?view=o365-21vianet&branch=Josephd-M365-ransomware-solution
 --> 
+
 Therefore, you must:
 
 - Know your data
@@ -72,14 +73,14 @@ This table describes the overall protection of your organization data in terms o
 
 | Lead | Implementer | Accountability |
 |:-------|:-------|:-----|
-| [Central IT](/azure/cloud-adoption-framework/organize/central-it) Operations or CIO | | Executive sponsorship |
-| Program lead from [Data Security](/azure/cloud-adoption-framework/organize/cloud-security-data-security) | | Drive results and cross-team collaboration |
-|  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Productivity / End User |  Implement changes to Microsoft 365 tenant for OneDrive and Protected Folders |
-|  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Infrastructure/Backup | Enable Infrastructure backup |
+| [Central IT](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Operations or CIO | | Executive sponsorship |
+| Program lead from [Data Security](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-data-security) | | Drive results and cross-team collaboration |
+|  | [Central IT](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Productivity / End User |  Implement changes to Microsoft 365 tenant for OneDrive and Protected Folders |
+|  | [Central IT](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Infrastructure/Backup | Enable Infrastructure backup |
 |  | Business / Application | Identify critical business assets |
-|  | [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture)  | Advise on configuration and standards |
-|  | [Security Policy and Standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) | Update standards and policy documents |
-|  | [Security Compliance Management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) | Monitor to ensure compliance |
+|  | [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture)  | Advise on configuration and standards |
+|  | [Security Policy and Standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) | Update standards and policy documents |
+|  | [Security Compliance Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) | Monitor to ensure compliance |
 |  | User Education Team | Ensure guidance for users reflects policy updates |
 
 ### Deployment objectives
@@ -103,8 +104,8 @@ Perform these implementation steps to meet the **Know your data** deployment obj
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Determine data classification levels. | Data Security Architect | /microsoft-365/compliance/data-classification-overview |
-| <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types. | Data Security Architect | /microsoft-365/compliance/sensitive-information-type-learn-about |
+| <input type="checkbox" /> | 1. Determine data classification levels. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview) |
+| <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about) |
 
 #### <a id="protect">2. Protect your data</a>
 
@@ -112,10 +113,10 @@ Perform these implementation steps to meet the **Protect your data** deployment 
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Determine the use and design of sensitivity labels. | Security Architect | /microsoft-365/compliance/get-started-with-sensitivity-labels |
-| <input type="checkbox" /> | 2. Enable double key encryption | Data Security Engineer. | /microsoft-365/compliance/double-key-encryption |
-| <input type="checkbox" /> | 3. Enable Office Message Encryption (OME). | Data Security Engineer | /microsoft-365/compliance/ome |
-| <input type="checkbox" /> | 4. Enable and configure Microsoft Cloud App Security. | Data Security Engineer | /cloud-app-security/getting-started-with-cloud-app-security |
+| <input type="checkbox" /> | 1. Determine the use and design of sensitivity labels. | Security Architect | [Get started](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels) |
+| <input type="checkbox" /> | 2. Enable double key encryption | Data Security Engineer. | [Overview](https://docs.microsoft.com/microsoft-365/compliance/double-key-encryption) |
+| <input type="checkbox" /> | 3. Enable Office Message Encryption (OME). | Data Security Engineer | [Overview](https://docs.microsoft.com/microsoft-365/compliance/ome) |
+| <input type="checkbox" /> | 4. Enable and configure Microsoft Cloud App Security. | Data Security Engineer | [Get started](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
 
 
 #### <a id="prevent">3. Prevent data loss</a>
@@ -124,9 +125,9 @@ Perform these implementation steps to meet the **Prevent data loss** deployment 
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Design and create data loss prevention (DLP) policies. | Security Architect | /microsoft-365/compliance/dlp-learn-about-dlp |
-| <input type="checkbox" /> | 2. Enable and configure endpoint data loss prevention. | Data Security Engineer | /microsoft-365/compliance/endpoint-dlp-learn-about |
-| <input type="checkbox" /> | 3. Configure access policies for Cloud App Security Conditional Access App Control. | Data Security Engineer | /cloud-app-security/proxy-intro-aad |
+| <input type="checkbox" /> | 1. Design and create data loss prevention (DLP) policies. | Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/dlp-learn-about-dlp) |
+| <input type="checkbox" /> | 2. Enable and configure endpoint data loss prevention. | Data Security Engineer | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about) |
+| <input type="checkbox" /> | 3. Configure access policies for Cloud App Security Conditional Access App Control. | Data Security Engineer | [Overview](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad) |
 
 
 #### <a id="tighten">4. Use tight permissions</a>

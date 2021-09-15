@@ -51,7 +51,6 @@ The guidance for deployment of Zero Trust in your organization is organized in m
 
 TABLE=========================================================
 
-
 | Area | Steps |
 |:-------|:-----|
 | **Top priorities** | **Critical security modernization areas:** |

@@ -39,6 +39,12 @@
         "source_path": "compass/howto-azure-managed-workstation.md",
         "redirect_url": "/security/compass/privileged-access-deployment",
         "redirect_document_id": true
+      },
+
+      {
+        "source_path": "zero-trust/isv/secure-hybrid-access.md",
+        "redirect_url": "/azure/active-directory/manage-apps/secure-hybrid-access-integrations",
+        "redirect_document_id": false
       }
   ] 
   } 

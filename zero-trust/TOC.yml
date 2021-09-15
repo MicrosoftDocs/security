@@ -30,8 +30,6 @@
         items:
         - name: Getting started
           href: isv/identity-isv-getting-started.md
-        - name: Secure hybrid access integrations
-          href: isv/secure-hybrid-access.md
 - name: App development guidance
   expanded: false
   items: 

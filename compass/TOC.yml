@@ -105,6 +105,8 @@
               href: protect-against-ransomware-phase2.md
             - name: Phase 3. Make it hard to get in 
               href: protect-against-ransomware-phase3.md
+        - name: Backup and restore plan for ransomware
+          href: backup-plan-to-protect-against-ransomware.md 
     - name: Information protection and storage
       items:
         - name: Videos and slides

@@ -55,6 +55,8 @@ Most organizations don’t protect backup and restoration procedures against thi
 >This preparation also improves resilience to natural disasters and rapid attacks like WannaCry and (Not)Petya.
 >
 
+[Backup and restore plan to protect against ransomware](backup-plan-to-protect-against-ransomware.md) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations.
+
 ### Program and project member accountabilities
 
 This table describes the overall protection of your data from ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
@@ -79,7 +81,7 @@ Apply these best practices to secure your backup infrastructure.
 | <input type="checkbox" /> | Backup all critical systems automatically on a regular schedule. | Allows you to recover data up to the last backup. |
 | <input type="checkbox" /> | Regularly exercise your business continuity/disaster recovery (BC/DR) plan. | Ensures rapid recovery of business operations by treating a ransomware or extortion attack with the same importance as a natural disaster. |
 | <input type="checkbox" /> | Protect backups against deliberate erasure and encryption: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site. | Backups that are accessible by attackers can be rendered unusable for business recovery. |
-| <input type="checkbox" /> | Protect supporting documents required for recovery such as restoration procedure documents, CMDB, and network diagrams. | Attackers deliberately target these resources because it impacts your ability to recover. |
+| <input type="checkbox" /> | Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | Attackers deliberately target these resources because it impacts your ability to recover. |
 
 
 ### Implementation results and timelines
@@ -125,3 +127,52 @@ Apply these best practices to protect your organization data.
 [![Phase 2. Limit the scope of damage](media/protect-against-ransomware/protect-against-ransomware-phase2.png)](protect-against-ransomware-phase2.md)
 
 Continue with [Phase 2](protect-against-ransomware-phase2.md) to limit the scope of damage of an attack by protecting privileged roles.
+
+## Additional ransomware resources
+
+Key information from Microsoft:
+
+- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
+- [Human-operated ransomware](human-operated-ransomware.md)
+- [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
+- [The latest Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
+- **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal (see these [licensing requirements](/microsoft-365/security/defender/prerequisites#licensing-requirements))
+
+Microsoft 365:
+
+- [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware)
+- [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
+- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+
+Microsoft 365 Defender:
+
+- [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
+
+Microsoft Azure:
+
+- [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Backup and restore plan to protect against ransomware](backup-plan-to-protect-against-ransomware.md)
+- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
+- [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
+- [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
+- [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+
+Microsoft Cloud App Security:
+
+-  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+
+Microsoft Security team blog posts:
+
+- [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Becoming resilient by understanding cybersecurity risks: Part 4—navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+
+  See the **Ransomware** section.
+
+- [Human-operated ransomware attacks: A preventable disaster (March 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+
+  Includes attack chain analyses of actual attacks.
+
+- [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+

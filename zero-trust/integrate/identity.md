@@ -72,7 +72,7 @@ When you integrate User Provisioning, you can keep your application up to date w
 
 ISVs can take advantage of conditional access by surfacing the option to apply conditional access policies when relevant to the customers. For example, if a user is especially risky, you can suggest the customer enable Conditional Access for that user through your UI, and programmatically enable it in Azure Active Directory.
 
-:::image type="content" source="../media/integrate/identity/diagram-access-control.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to set conditions for a conditional access policy based on the user activity." border="true" lightbox="../media/diagram-access-control.png":::
+:::image type="content" source="../media/integrate/identity/diagram-access-control.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to set conditions for a conditional access policy based on the user activity." border="true" lightbox="../media/integrate/identity/diagram-access-control-expanded.png":::
 
 For more, check out the [configure conditional access policies using the Microsoft Graph API](https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/01-configure/graphapi) sample on GitHub.
 
@@ -80,7 +80,7 @@ For more, check out the [configure conditional access policies using the Microso
 
 Sometimes ISVs may become aware of compromise that is outside of the scope of Azure Active Directory. For any security event, especially those including account compromise, Microsoft and the ISV can collaborate by sharing information from both parties. The [confirm compromise API](/graph/api/riskyusers-confirmcompromised) allows you to set a targeted user’s risk level to high. This lets Azure Active Directory respond appropriately, for example by requiring the user to reauthenticate or by restricting their access to sensitive data.
 
-:::image type="content" source="../media/integrate/identity/diagram-confirm-compromise.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to set user risk level to high." border="true" lightbox="../media/integrate/identity/diagram-access-control.png":::
+:::image type="content" source="../media/integrate/identity/diagram-confirm-compromise.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to set user risk level to high." border="true" lightbox="../media/integrate/identity/diagram-confirm-compromise-expanded.png":::
 
 Going in the other direction, Azure AD continually evaluates user risk based on various signals and machine learning. The Risky User API provides programmatic access to all at-risk users in the app’s Azure Active Directory tenant. ISVs can make use of this API to ensure they are handling users appropriately to their current level of risk. [riskyUser resource type](/graph/api/resources/riskyuser).
 
@@ -90,7 +90,7 @@ Going in the other direction, Azure AD continually evaluates user risk based on 
 
 In addition to the getting started guidance above, ISVs who are creating identity solutions can integrate with Azure AD to expand what they offer to customers. The following guidance is for ISVs who offer specific kinds of solutions and wish to integrate with Azure AD.
 
-[Secure hybrid access integrations](secure-hybrid-access.md)
+[Secure hybrid access integrations](/azure/active-directory/manage-apps/secure-hybrid-access-integrations)
 Many business applications were created to work inside of a protected corporate network, and some of these applications make use of legacy authentication methods. As companies look to build a Zero Trust strategy and support hybrid and cloud-first work environments, they need solutions that connect apps to Azure Active Directory and provide modern authentication solutions for legacy applications. Use this guide to create solutions that provide modern cloud authentication for legacy on-premises applications.
 
 [Become a Microsoft-compatible FIDO2 security key vendor](/azure/active-directory/authentication/concept-fido2-hardware-vendor)

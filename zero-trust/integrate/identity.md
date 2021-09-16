@@ -22,15 +22,13 @@ This guidance is for software providers and technology partners who want to enha
 
 This integration guide includes instructions for integrating with Azure Active Directory, which provides single sign-on authentication, conditional access, passwordless and multi-factor authentication, automated user provisioning and many more features that enable companies to protect and automate identity processes at scale.
 
-:::image type="content" source="../media/integrate/identity/integration-visualization.png" alt-text="Test visual" lightbox="../media/integrate/identity/integration-visualization.png":::
-
 The guidance in this article will help you get started integrating with Azure AD to enhance your own product or service. There are also [advanced integration scenario](#advanced-integration-scenarios) guides linked at the end of the article that provide guidance on specific integration scenarios.
 
 ### Azure Active Directory
 
 Azure Active Directory (Azure AD) is Microsoft’s cloud enterprise identity service. As an ISV, you can integrate with many of Azure AD’s features by using [Microsoft Graph](/graph/overview) and the [Microsoft identity platform](/azure/active-directory/develop/app-resilience-continuous-access-evaluation). You can also gain access to the risk signals Azure AD calculates based on myriad data sources and policies and feed your own information back into the system to create a safer environment for all.
 
-:::image type="content" source="../media/diagram-conditional-access-policies-small.png" alt-text="Diagram of conditional access, showing machine learning, policies, and a real time evaluation engine making decisions about how to allow access." lightbox="../media/diagram-conditional-access-policies-white-background.png":::
+:::image type="content" source="../media/integrate/identity/diagram-conditional-access-policies.png" alt-text="Diagram of conditional access, showing machine learning, policies, and a real time evaluation engine making decisions about how to allow access." border="true":::
 
 In addition, there are other ways to provide value on top of Azure AD - such as publishing your app to the Azure AD gallery or becoming an approved passwordless hardware vendor.
 
@@ -74,7 +72,7 @@ When you integrate User Provisioning, you can keep your application up to date w
 
 ISVs can take advantage of conditional access by surfacing the option to apply conditional access policies when relevant to the customers. For example, if a user is especially risky, you can suggest the customer enable Conditional Access for that user through your UI, and programmatically enable it in Azure Active Directory.
 
-:::image type="content" source="../media/diagram-access-control.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to set conditions for a conditional access policy based on the user activity." border="true" lightbox="../media/diagram-access-control.png":::
+:::image type="content" source="../media/integrate/identity/diagram-access-control.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to set conditions for a conditional access policy based on the user activity." border="true" lightbox="../media/diagram-access-control.png":::
 
 For more, check out the [configure conditional access policies using the Microsoft Graph API](https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/01-configure/graphapi) sample on GitHub.
 
@@ -82,11 +80,11 @@ For more, check out the [configure conditional access policies using the Microso
 
 Sometimes ISVs may become aware of compromise that is outside of the scope of Azure Active Directory. For any security event, especially those including account compromise, Microsoft and the ISV can collaborate by sharing information from both parties. The [confirm compromise API](/graph/api/riskyusers-confirmcompromised) allows you to set a targeted user’s risk level to high. This lets Azure Active Directory respond appropriately, for example by requiring the user to reauthenticate or by restricting their access to sensitive data.
 
-:::image type="content" source="../media/diagram-confirm-compromise.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to set user risk level to high." border="true" lightbox="../media/diagram-access-control.png":::
+:::image type="content" source="../media/integrate/identity/diagram-confirm-compromise.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to set user risk level to high." border="true" lightbox="../media/integrate/identity/diagram-access-control.png":::
 
 Going in the other direction, Azure AD continually evaluates user risk based on various signals and machine learning. The Risky User API provides programmatic access to all at-risk users in the app’s Azure Active Directory tenant. ISVs can make use of this API to ensure they are handling users appropriately to their current level of risk. [riskyUser resource type](/graph/api/resources/riskyuser).
 
-:::image type="content" source="../media/diagram-risky-user.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to retrieve the user's risk level." border="true" lightbox="../media/diagram-access-control.png":::
+:::image type="content" source="../media/integrate/identity/diagram-risky-user.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to retrieve the user's risk level." border="true" lightbox="../media/integrate/identity/diagram-risky-user-expanded.png":::
 
 ### Advanced integration scenarios
 

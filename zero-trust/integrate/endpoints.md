@@ -36,7 +36,7 @@ The [Microsoft Defender for Endpoint partner opportunities and scenarios](/micro
 - Streamlining threat remediation: Microsoft Defender for Endpoint can take immediate or operator-assisted responses to address alerts. Partners can leverage the endpoint response actions such as machine isolation, file quarantine to block IoC across the managed endpoint.
 - Combine network access control with device security: Risk or exposure scores can be used  to implement and enforce policies for network and application access.
 
-To become a Defender for Endpoint solution partner, you'll need to follow and complete the  steps found at Become a [Microsoft Defender for Endpoint partner](/microsoft-365/security/defender-endpoint/get-started-partner-integration).
+To become a Defender for Endpoint solution partner, you'll need to follow and complete the  steps found at [Become a Microsoft Defender for Endpoint partner](/microsoft-365/security/defender-endpoint/get-started-partner-integration).
 
 ### Microsoft Endpoint Manager
 

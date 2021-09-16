@@ -20,13 +20,13 @@ This guidance is for software providers and technology partners who want to enha
 
 ## Identity Zero Trust integration guide
 
-This integration guide includes instructions for integrating with Azure Active Directory, which provides single sign-on authentication, conditional access, passwordless and multi-factor authentication, automated user provisioning and many more features that enable companies to protect and automate identity processes at scale.
+This integration guide includes instructions for integrating with Azure Active Directory (Azure AD), which provides single sign-on authentication, conditional access, passwordless and multi-factor authentication, automated user provisioning and many more features that enable companies to protect and automate identity processes at scale.
 
 The guidance in this article will help you get started integrating with Azure AD to enhance your own product or service. There are also [advanced integration scenario](#advanced-integration-scenarios) guides linked at the end of the article that provide guidance on specific integration scenarios.
 
 ### Azure Active Directory
 
-Azure Active Directory (Azure AD) is Microsoft’s cloud enterprise identity service. It provides conditional access to resources by using myriad input signals and enforcing policies set by organizations. As an ISV, you can integrate with many of Azure AD’s features by using [Microsoft Graph](/graph/overview) and the [Microsoft identity platform](/azure/active-directory/develop/app-resilience-continuous-access-evaluation). You can also gain access to the risk signals Azure AD calculates and feed your own information back into the system to create a safer environment for all.
+Azure Active Directory (Azure AD) is Microsoft’s cloud enterprise identity service. It provides conditional access to resources by using myriad input signals and enforcing policies set by organizations. As an independent software vendor (ISV) or technology partner, you can integrate with many of Azure AD’s features by using [Microsoft Graph](/graph/overview) and the [Microsoft identity platform](/azure/active-directory/develop/app-resilience-continuous-access-evaluation). You can also gain access to the risk signals Azure AD calculates and feed your own information back into the system to create a safer environment for all.
 
 :::image type="content" source="../media/integrate/identity/diagram-conditional-access-policies.png" alt-text="Diagram of Zero Trust access control. Azure Active Directory sits in the middle, and is connected to input signals from partners and other Microsoft products. It makes policy decisions, and then allows access to 3rd party SaaS apps and devices directly or through other Microsoft products." border="true" lightbox="../media/integrate/identity/diagram-conditional-access-policies-expanded.png":::
 
@@ -42,7 +42,7 @@ You can use this section as inspiration and a starting point. The top level guid
 - Integrate user provisioning
 - Integrate with key security APIs
 
-After this, you will find advanced integration guidance for deeper integrations on specific solutions.
+After this, you will find [advanced integration scenario](#advanced-integration-scenarios) guidance for deeper integrations on specific solutions.
 
 #### List your app in the Azure AD App Gallery
 

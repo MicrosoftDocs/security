@@ -20,7 +20,7 @@ This guidance is for software providers and technology partners who want to enha
 
 ## Visibility, automation, and orchestration Zero Trust integration guide
 
-This integration guide includes instructions for integrating with Azure Sentinel. Azure Sentinel is Microsoft’s cloud-native Security Information and Event Management (SIEM)service. Independent software vendors (ISVs) can integrate with Azure Sentinel to enable new use-cases for customers with data connectors, analytics rules, interactive workbooks, and automation playbooks to deliver end-to-end product or domain or industry vertical value for customers.
+This integration guide includes instructions for integrating with [Azure Sentinel](/azure/sentinel). Azure Sentinel is Microsoft’s cloud-native Security Information and Event Management (SIEM) service. Independent software vendors (ISVs) can integrate with Azure Sentinel to enable new use-cases for customers with data connectors, analytics rules, interactive workbooks, and automation playbooks to deliver end-to-end product or domain or industry vertical value for customers.
 
 ### Azure Sentinel
 

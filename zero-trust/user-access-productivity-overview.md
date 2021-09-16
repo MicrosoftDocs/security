@@ -1,6 +1,6 @@
 ---
 title: User access and productivity
-description: User access and productivity area of RaMP for Zero Trust
+description: User access and productivity initiative of RaMP for Zero Trust
 ms.service: security
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -10,11 +10,9 @@ ms.topic: conceptual
 
 # User access and productivity
 
-In this Zero Trust RaMP area, you will build out the following part of the Zero Trust RaMP story.
+The first initiative at many organizations is focused on security visibility and control for newer productivity resources (cloud and mobile) and assets outside of the traditional corporate network security perimeter. 
 
-![RaMP areas for Zero Trust](./media/user-access-productivity-overview/zero-trust-ramp-pillar-user-access-productivity.png)
-
-This area is composed of these steps:
+The user access and productivity initiative for Zero Trust RaMP consists of these steps:
 
 - [Step 1. Explicitly validate trust for all access requests](user-access-productivity-validate-trust.md)
 
@@ -22,5 +20,5 @@ This area is composed of these steps:
 
 ## Next step
 
-Begin the user access and productivity area with [Step 1. Explicitly validate trust for all access requests](user-access-productivity-validate-trust.md).
+Begin the user access and productivity initiative with [Step 1. Explicitly validate trust for all access requests](user-access-productivity-validate-trust.md).
 

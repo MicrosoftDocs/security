@@ -45,18 +45,18 @@ Here is the overall architecture for Zero Trust.
 
 
 
-## RaMP areas for Zero Trust
+## RaMP initiatives for Zero Trust
 
-The guidance for deployment of Zero Trust in your organization is organized in main areas.
+The guidance for deployment of Zero Trust in your organization is organized in main initiatives.
 
 TABLE=========================================================
 
-| Area | Steps |
+| Initiative | Steps |
 |:-------|:-----|
-| **Top priorities** | **Critical security modernization areas:** |
+| **Top priorities** | **Critical security modernization initiatives:** |
 | ![User Access and Productivity](./media/zero-trust-ramp-overview/user-access-icon.png) <br> [User access and productivity](user-access-productivity-overview.md) | <ol><li>[Explicitly validate trust for all access requests](user-access-productivity-validate-trust.md)<br><ul><li>[User Accounts](user-access-productivity-validate-trust.md#user-accounts)</li><li>[Devices](user-access-productivity-validate-trust.md#devices)</li></ul></li><li>[Increase security for accessing key resources](user-access-productivity-increase-security-access.md)<br><ul><li>[Apps](user-access-productivity-increase-security-access.md#apps)</li><li>[Data](user-access-productivity-increase-security-access.md#data)</li></ul></ol> |
 | ![Modernize Security Operations](./media/zero-trust-ramp-overview/modernize-security-icon.png) <br> [Modernize security operations](modernize-security-operations-overview.md)  | <ol start="3"><li>[Streamine response](modernize-security-operations-streamline-response.md)</li><li>[Unify visibility](modernize-security-operations-unify-visibility.md)</li><li>[Reduce manual effort](modernize-security-operations-reduce-manual-effort.md)</li></li></ol>|
-| **As needed** | **Additional areas based on Operational Technology (OT) or IoT usage, on-premises and cloud adoption, and security for in-house app development:** |
+| **As needed** | **Additional initiatives based on Operational Technology (OT) or IoT usage, on-premises and cloud adoption, and security for in-house app development:** |
 | ![OT and Industrial IoT](./media/zero-trust-ramp-overview/ot-iot-icon.png) <br> OT and Industrial IoT | <ul><li>Discover</li><li>Protect</li><li>Monitor</li></ul> |
 | ![Datacenter & DevOps Security](./media/zero-trust-ramp-overview/dc-devops-icon.png) <br> Datacenter & DevOps Security | <ul><li>Security Hygiene</li><li>Reduce Legacy Risk</li><li>DevOps Integration</li><li>Microsegmentation</li></ul> |
 
@@ -85,15 +85,15 @@ The guidance for deployment of Zero Trust in your organization is organized in m
 
 --> 
 
-For every organization, the top priority Zero Trust RaAMP areas are:
+For every organization, the top priority Zero Trust RaAMP initiatives are:
 
 - [User access and productivity](user-access-productivity-overview.md)
 - [Modernize security operations](modernize-security-operations-overview.md)
 
-Zero Trust RaMP areas based on need for the use of Operations Technology (OT) and Industrial IoT, on-premises and cloud adoption, and security for in-house app development are:
+Zero Trust RaMP initiatives based on need for the use of Operations Technology (OT) and Industrial IoT, on-premises and cloud adoption, and security for in-house app development are:
 
-- OT and Industrial IoT
-- Datacenter & DevOps Security
+- OT and industrial IoT
+- Datacenter & DevOps security
 
 ## Next step
 

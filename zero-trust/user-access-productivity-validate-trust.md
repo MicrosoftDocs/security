@@ -95,5 +95,5 @@ You have now built out the **devices** section of the Zero Trust architecture.
 
 ## Next step
 
-Continue your Zero Trust deployment journey with [Step 2. Increase security for accessing key resources](user-access-productivity-increase-security-access.md).
+Continue the user access and productivity initiative with [Step 2. Increase security for accessing key resources](user-access-productivity-increase-security-access.md).
 

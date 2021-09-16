@@ -92,7 +92,7 @@ Meet these deployment objectives to protect your data for Zero Trust.
 | <input type="checkbox" /> | [1. Know your data](#know) | Data Security Architect |
 | <input type="checkbox" /> | [2. Protect your data](#protect) | Data Security Engineer |
 | <input type="checkbox" /> | [3. Prevent data loss](#prevent) | Data Security Engineer |
-| <input type="checkbox" /> | [4. Use tight permissions](#tighten) | Data Security Engineer |
+| <input type="checkbox" /> | [4. Use strict permissions](#strict) | Data Security Engineer |
 
 After completing these deployment objectives, you will have built out the **data** section of the Zero Trust architecture.
 
@@ -130,9 +130,9 @@ Perform these implementation steps to meet the **Prevent data loss** deployment 
 | <input type="checkbox" /> | 3. Configure access policies for Cloud App Security Conditional Access App Control. | Data Security Engineer | [Overview](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad) |
 
 
-#### <a id="tighten">4. Use tight permissions</a>
+#### <a id="strict">4. Use strict permissions</a>
 
-Perform these implementation steps to meet the **Use tight permissions** deployment objective.
+Perform these implementation steps to ensure that your workers and admins use the principle of least privilege to meet the **Use strict permissions** deployment objective.
 
 | Done | Implementation objective and results | Owner |
 |:-------|:-------|:-----|
@@ -143,5 +143,5 @@ Perform these implementation steps to meet the **Use tight permissions** deploym
 
 ## Next step
 
-Continue your Zero Trust deployment journey with the [Modernize security operations area](modernize-security-operations-overview.md).
+Continue your Zero Trust deployment journey with the [Modernize security operations initiative](modernize-security-operations-overview.md).
 

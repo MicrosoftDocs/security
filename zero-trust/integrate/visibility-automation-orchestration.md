@@ -52,6 +52,6 @@ Azure Sentinel Solutions allows partners to deliver combined product, domain, or
 
 ## Next steps
 
-- [Integration Opportunities Guide for Azure Sentinel](foo.md)
+- [Integration Opportunities Guide for Azure Sentinel](https://azure.microsoft.com/resources/integration-opportunities-with-azure-sentinel-september-2021/)
 - [Integration Components for Azure Sentinel](https://github.com/Azure/Azure-Sentinel/wiki#get-started)
 - [Guide to Building Azure Sentinel Solutions](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions#readme)

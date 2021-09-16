@@ -1,6 +1,6 @@
 ---
-title: Step 3. Governance
-description: Governance 
+title: Step 5. Reduce manual effort
+description: Modernize security operations - Step 5. Reduce manual effort
 ms.service: security
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -8,7 +8,7 @@ manager: dansimp
 ms.topic: conceptual
 ---
 
-# Step 3. Governance
+# Step 5. Reduce manual effort
 
 Placeholder article
 

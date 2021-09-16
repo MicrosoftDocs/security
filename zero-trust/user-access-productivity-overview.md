@@ -20,8 +20,6 @@ This area is composed of these steps:
 
 - [Step 2. Increase security for accessing key resources](user-access-productivity-increase-security-access.md)
 
-- [Step 3. Governance](user-access-productivity-governance.md)
-
 ## Next step
 
 Begin the user access and productivity area with [Step 1. Explicitly validate trust for all access requests](user-access-productivity-validate-trust.md).

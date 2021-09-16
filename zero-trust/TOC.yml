@@ -52,7 +52,7 @@
 - name: Zero Trust Rapid Modernization Plan (RaMP)
   expanded: false
   items: 
-    - name: Overview
+    - name: Zero Trust RaMP Overview
       href: zero-trust-ramp-overview.md
     - name: User access and productivity
       expanded: false
@@ -63,5 +63,14 @@
         href: user-access-productivity-validate-trust.md
       - name: Step 2. Increase security for accessing key resources
         href: user-access-productivity-increase-security-access.md
-      - name: Step 3. Governance
-        href: user-access-productivity-governance.md
+    - name: Modernize security operations
+      expanded: false
+      items:
+      - name: Overview
+        href: modernize-security-operations-overview.md
+      - name: Step 3. Streamline response
+        href: modernize-security-operations-streamline-response.md
+      - name: Step 4. Unify visibility
+        href: modernize-security-operations-unify-visibility.md
+      - name: Step 5. Reduce manual effort
+        href: modernize-security-operations-reduce-manual-effort.md

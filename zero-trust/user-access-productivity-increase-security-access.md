@@ -143,5 +143,5 @@ Perform these implementation steps to meet the **Use tight permissions** deploym
 
 ## Next step
 
-Continue your Zero Trust deployment journey with [Step 3. Governance](user-access-productivity-governance.md).
+Continue your Zero Trust deployment journey with the [Modernize security operations area](modernize-security-operations-overview.md).
 

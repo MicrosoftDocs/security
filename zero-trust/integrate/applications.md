@@ -22,7 +22,7 @@ This guidance is for software providers and technology partners who want to enha
 
 This integration guide includes instructions for integrating with [Microsoft Cloud App Security (MCAS)](/cloud-app-security/). Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services.
 
-:::image type="content" source="../media/integrate/applications/microsoft-cloud-app-security-architecture.png" alt-text="Architectural diagram showing both protected and unprotected apps in a cloud. The cloud has a bi-directional connection to an organization. The protected apps are connected via an API to Cloud App Security App connectors. The organization sends cloud traffic logs to the Cloud App Security's Cloud Discovery tool, and receives configuration scripts. Both the organization and the app cloud are connected to the Proxy Access and Sessions part of Cloud App Security.":::
+:::image type="content" source="../media/integrate/applications/microsoft-cloud-app-security-architecture.png" alt-text="Architectural diagram showing how an organization uses Microsoft Cloud App Security features including app connectors, cloud discovery, and proxy access. App connectors connect to protected cloud apps via APIs. Cloud discovery consumes traffic logs and provides configuration scripts. Proxy access sits in between the organization and its protected apps in the cloud.":::
 
 ### Microsoft Cloud App Security
 

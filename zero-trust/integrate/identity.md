@@ -28,7 +28,7 @@ The guidance in this article will help you get started integrating with Azure AD
 
 Azure Active Directory (Azure AD) is Microsoft’s cloud enterprise identity service. It provides conditional access to resources by using myriad input signals and enforcing policies set by organizations. As an ISV, you can integrate with many of Azure AD’s features by using [Microsoft Graph](/graph/overview) and the [Microsoft identity platform](/azure/active-directory/develop/app-resilience-continuous-access-evaluation). You can also gain access to the risk signals Azure AD calculates and feed your own information back into the system to create a safer environment for all.
 
-:::image type="content" source="../media/integrate/identity/diagram-conditional-access-policies.png" alt-text="Diagram of conditional access, showing machine learning, policies, and a real time evaluation engine making decisions about how to allow access." border="true" lightbox="../media/integrate/identity/diagram-conditional-access-policies-expanded.png":::
+:::image type="content" source="../media/integrate/identity/diagram-conditional-access-policies.png" alt-text="Diagram of Zero Trust access control. Azure Active Directory sits in the middle, and is connected to input signals from partners and other Microsoft products. It makes policy decisions, and then allows access to 3rd party SaaS apps and devices directly or through other Microsoft products." border="true" lightbox="../media/integrate/identity/diagram-conditional-access-policies-expanded.png":::
 
 In addition, there are other ways to provide value on top of Azure AD - such as publishing your app to the Azure AD gallery or becoming an approved passwordless hardware vendor.
 

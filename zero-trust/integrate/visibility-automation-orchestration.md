@@ -36,7 +36,7 @@ The following guidance will help you create solutions that integrate with Azure 
 
 Partners can engage with Azure Sentinel in several key scenarios to deliver mutual customer value. This article outlines these scenario opportunities and technical integrations, how to decide what integrations to build, how to get started, how to deliver to Azure Sentinel customers, and finally how to promote Azure Sentinel Integrations.
 
-:::image type="content" source="../media/integrate/visibility-automation-orchestration/integration-opportunities.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="../media/integrate/visibility-automation-orchestration/integration-opportunities.png" alt-text="Illustration of the categories of integration opportunities. The opportunities are as follows. Collecting data. Monitoring and detecting with visibility, intelligence, analytics, and hunting. Investigating incidents. Finally, responding with automation.":::
 
 **How to build it**: [Integration Components for Azure Sentinel](https://github.com/Azure/Azure-Sentinel/wiki#get-started)
 
@@ -48,7 +48,7 @@ Once you have created a solution, you will want to publish it. This guide provid
 
 Azure Sentinel Solutions allows partners to deliver combined product, domain, or vertical value via solutions in Azure Sentinel and be able to productize investments. It supports discoverability, deployment, and enablement of scenarios in Azure Sentinel. It is powered by [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/) as well as the [Microsoft Partner Center](/partner-center/overview).
 
-:::image type="content" source="../media/integrate/visibility-automation-orchestration/package-solutions.png" alt-text="Visualization of the three steps for creating a solution. First, create content. Then, package that content. Finally, publish the solution.":::
+:::image type="content" source="../media/integrate/visibility-automation-orchestration/package-solutions.png" alt-text="Value propositions of packaged Azure Sentinel Solutions. For customers, they provide discovery of new value, easy deployment, and enablement. For Partners they build combined value, productize investments, and expand customer reach with marketplace offerings.":::
 
 ## Next steps
 

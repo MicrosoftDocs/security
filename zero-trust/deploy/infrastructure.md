@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Secure infrastructure with Zero Trust
 
-:::image type="icon" source="./media/icon-infrastructure-medium.png":::
+:::image type="icon" source="../media/icon-infrastructure-medium.png":::
 
 Infrastructure represents a critical threat vector. IT Infrastructure, whether on-premises or multi-cloud, is defined as all the hardware (physical, virtual, containerized), software (open source, first- and third-party, PaaS, SaaS), micro-services (functions, APIs), networking infrastructure, facilities, etc. that are required to develop, test,
 deliver, monitor, control, or support IT services. It is an area where Microsoft has invested tremendous resources to develop a comprehensive set of capabilities to secure your future cloud and on-premises infrastructure.
@@ -27,7 +27,7 @@ Just as importantly, Microsoft Azure Blueprints and related capabilities ensure 
 
 Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azure Sphere can greatly contribute to improving the security of your deployed infrastructure and enable a different approach to defining, designing, provisioning, deploying, and monitoring your infrastructure.
 
-:::image type="content" source="./media/diagram-infrastructure-5-elements.png" alt-text="A repeating circular diagram of 5 elements: Assess compliance, Observe gaps, Author, Test, and Deploy." border="false":::
+:::image type="content" source="../media/diagram-infrastructure-5-elements.png" alt-text="A repeating circular diagram of 5 elements: Assess compliance, Observe gaps, Author, Test, and Deploy." border="false":::
 
 
 ## Infrastructure Zero Trust deployment objectives
@@ -48,7 +48,7 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+		 <p><img src="../media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
 		 <p><b>I.</b> <a href="#i-workloads-are-monitored-and-alerted-to-abnormal-behavior">Workloads are monitored and alerted to abnormal behavior.</a></p>
@@ -63,7 +63,7 @@ Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azu
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+		 <p><img src="../media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
          <p><b>IV.</b> <a href="#iv-unauthorized-deployments-are-blocked-and-alert-is-triggered">Unauthorized deployments are blocked, and alert is triggered.</a></p>
@@ -160,7 +160,7 @@ to scan your VMs for vulnerabilities, and have those reflected directly in ASC. 
 
 <br/><br/>
 <!-- H2 heading, "Initial deployment objectives" -->
-[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
+[!INCLUDE [H2 heading, Initial deployment objectives](../includes/deployment-objectives-initial.md)]
 
 
 Once you've met the baseline infrastructure objectives, you can focus on implementing a modern infrastructure with an end-to-end Zero Trust strategy.
@@ -206,7 +206,7 @@ All of these items help an organization become more aware of how administrative 
 
 <br/><br/>
 <!-- H2 heading, "Additional deployment objectives" -->
-[!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
+[!INCLUDE [H2 heading, Additional deployment objectives](../includes/deployment-objectives-additional.md)]
 
 
 Once you've accomplished your initial three objectives, you can focus on additional objectives such as blocking unauthorized deployments.
@@ -257,4 +257,4 @@ Infrastructure is central to a successful Zero Trust strategy. For further infor
 
 <br/><br/>
 <!-- Include the nav bar. -->
-[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
+[!INCLUDE [navbar, bottom](../includes/navbar-bottom.md)]

@@ -45,6 +45,18 @@
         "source_path": "zero-trust/isv/secure-hybrid-access.md",
         "redirect_url": "/azure/active-directory/manage-apps/secure-hybrid-access-integrations",
         "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/isv/identity-isv-integration-overview.md",
+        "redirect_url": "zero-trust/integrate/identity.md",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/isv/identity-isv-getting-started.md",
+        "redirect_url": "zero-trust/integrate/identity.md",
+        "redirect_document_id": false
       }
   ] 
   } 

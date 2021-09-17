@@ -10,13 +10,13 @@ ms.topic: conceptual
 
 # Visibility, automation, and orchestration with Zero Trust
 
-:::image type="icon" source="./media/icon-visibility-automation-orchestration-medium.png":::
+:::image type="icon" source="../media/icon-visibility-automation-orchestration-medium.png":::
 
 One of the significant changes in perspectives that is a hallmark of a Zero Trust security frameworks is moving away from trust-by-default toward trust-by-exception. However, you need some reliable way to establish trust once trust is needed. Since you no longer assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires the ability to gain visibility into the activities on and around the request.
 
 In our other Zero Trust guides, we defined the approach to implementing an end-to-end Zero Trust approach across [identities](https://aka.ms/ZTIdentity), [endpoints](https://aka.ms/ZTEndpoints) and devices, [data](https://aka.ms/ZTData), [apps](https://aka.ms/ZTApplications), [infrastructure](https://aka.ms/ZTInfrastructure), and [network](https://aka.ms/ZTNetwork). All these investments increase your visibility, which gives you better data for making trust decisions. However, by adopting a Zero Trust approach in these six areas, you necessarily increase the number of incidents Security Operation Centers (SOC) analysts need to mitigate. Your analysts become busier than ever, at a time when there is already a talent shortage. This can lead to chronic alert fatigue and analysts missing critical alerts.
 
-:::image type="content" source="./media/diagram-provide-integrated-capabilities-manage-threats.png" alt-text="Diagram of integrated capabilities to manage threats." border="true":::
+:::image type="content" source="../media/diagram-provide-integrated-capabilities-manage-threats.png" alt-text="Diagram of integrated capabilities to manage threats." border="true":::
 
 With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
 
@@ -68,7 +68,7 @@ It is through this hierarchy that we enable our customers to maximize their focu
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+		 <p><img src="../media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
 		 <p><b>I.</b> <a href="#i-establish-visibility">Establish visibility.</a></p>
@@ -82,7 +82,7 @@ It is through this hierarchy that we enable our customers to maximize their focu
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+		 <p><img src="../media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
          <p><b>III.</b> <a href="#iii-enable-additional-protection-and-detection-controls">Enable additional protection and detection controls.</a></p>
@@ -97,7 +97,7 @@ This guide will walk you through the steps required to manage visibility, automa
 
 <br/><br/>
 <!-- H2 heading, "Initial deployment objectives" -->
-[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
+[!INCLUDE [H2 heading, Initial deployment objectives](../includes/deployment-objectives-initial.md)]
 
 
 
@@ -146,7 +146,7 @@ Although machine learning and fusion analytics are provided out of the box, it i
 
 <br/><br/>
 <!-- H2 heading, "Additional deployment objectives" -->
-[!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
+[!INCLUDE [H2 heading, Additional deployment objectives](../includes/deployment-objectives-additional.md)]
 
 
 
@@ -171,4 +171,4 @@ Enabling additional controls improves the signal coming in to MTP and Sentinel t
 
 <br/><br/>
 <!-- Include the nav bar. -->
-[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
+[!INCLUDE [navbar, bottom](../includes/navbar-bottom.md)]

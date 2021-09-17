@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Secure endpoints with Zero Trust
 
-:::image type="icon" source="./media/icon-endpoints-medium.png":::
+:::image type="icon" source="../media/icon-endpoints-medium.png":::
 
 **Background**
 
@@ -58,7 +58,7 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
+		 <p><img src="../media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
       </td>
       <td>
 	     <p><b>I.</b> <a href="#i-endpoints-are-registered-with-a-cloud-identity-providers">Endpoints are registered with cloud identity providers.</a> In order to monitor security and risk across multiple endpoints used by any one person, you need <a href="https://aka.ms/ZTCrossPillars">visibility</a> in all devices and access points that may be accessing your resources.</p>
@@ -73,7 +73,7 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
    </tr>
    <tr>
       <td>
-		 <p><img src="./media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
+		 <p><img src="../media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
          <p><b>IV.</b> <a href="#iv-endpoint-threat-detection-is-used-to-monitor-device-risk">Endpoint threat detection is used to monitor device risk.</a> Use a single pane of glass to manage all endpoints in a consistent way, and use a SIEM to route endpoint logs and transactions such that you get fewer, but actionable, alerts.</p>
@@ -89,7 +89,7 @@ This guide will walk you through the steps required to secure your devices follo
 
 <br/><br/>
 <!-- H2 heading, "Initial deployment objectives" -->
-[!INCLUDE [H2 heading, Initial deployment objectives](./includes/deployment-objectives-initial.md)]
+[!INCLUDE [H2 heading, Initial deployment objectives](../includes/deployment-objectives-initial.md)]
 
 
 
@@ -99,7 +99,7 @@ To help limit risk exposure, you need to monitor every endpoint to ensure each o
 
 After a device is registered, users can access your organization's restricted resources using their corporate username and password to sign in (or Windows Hello for Business).
 
-:::image type="content" source="./media/diagram-steps-box-endpoints-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
+:::image type="content" source="../media/diagram-steps-box-endpoints-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
 
 
 #### Register corporate devices with Azure Active Directory (AD)
@@ -126,11 +126,11 @@ Follow these steps:
 
 2.  Select **Access work or school,** and then select **Connect**.  
  
-    :::image type="content" source="./media/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
+    :::image type="content" source="../media/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
 
 3.  On the **Set up a work or school account** screen, select **Join this device to Azure AD**.
 
-    :::image type="content" source="./media/screenshot-set-up-work-school-account-settings.png" alt-text="Set up a work or school account in Settings." border="false":::
+    :::image type="content" source="../media/screenshot-set-up-work-school-account-settings.png" alt-text="Set up a work or school account in Settings." border="false":::
 
 4.  On the **Let's get you signed in** screen, type your email address (for example, _alain\@contoso.com_), and then select **Next**.
 
@@ -151,7 +151,7 @@ Follow these steps:
 
 2.  Select **Access work or school**, and then select **Connect** from the **Access work or school** screen.
 
-    :::image type="content" source="./media/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
+    :::image type="content" source="../media/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
 
 1.  On the **Add a work or school account** screen, type in your email address for your work or school account, and then select **Next**. For example, _alain\@contoso.com_.
 
@@ -170,7 +170,7 @@ Start by creating a Windows Hello for Business enrollment policy in Microsoft In
 
 1.  Go to Devices &gt; Enrollment &gt; Enroll devices &gt; Windows enrollment &gt; Windows Hello for Business.
 
-    :::image type="content" source="./media/screenshot-windows-hello-business-settings.png" alt-text="Windows Hello for Business in Microsoft Intune." border="true":::
+    :::image type="content" source="../media/screenshot-windows-hello-business-settings.png" alt-text="Windows Hello for Business in Microsoft Intune." border="true":::
 
 1.  Select from the following options for Configure Windows Hello for Business:
 
@@ -204,11 +204,11 @@ After configuring the settings that apply to all enrolled Windows 10 devices and
 
 1.  Select **Devices &gt; Configuration profiles &gt; Create profile &gt; Windows 10 and Later &gt; Identity Protection**.
 
-    :::image type="content" source="./media/screenshot-create-profile-windows-10-identity-protection.png" alt-text="Screenshot of Create a profile with platform set to Windows 10 and profile set to Identity protection." border="true":::
+    :::image type="content" source="../media/screenshot-create-profile-windows-10-identity-protection.png" alt-text="Screenshot of Create a profile with platform set to Windows 10 and profile set to Identity protection." border="true":::
 
 1.  Configure Windows Hello for Business. Choose how you want to configure Windows Hello for Business.
 
-    :::image type="content" source="./media/screenshot-identity-protection-windows-10-configuration-settings.png" alt-text="Screenshot of Configuration settings under Identity protection in Configuration profiles." border="true":::
+    :::image type="content" source="../media/screenshot-identity-protection-windows-10-configuration-settings.png" alt-text="Screenshot of Configuration settings under Identity protection in Configuration profiles." border="true":::
 
     1.  Minimum PIN length.
 
@@ -245,7 +245,7 @@ After establishing compliance policies to gate access of corporate resources to 
 
 Also, [set remediation rules](/mem/intune/protect/actions-for-noncompliance) for noncompliant devices, such as blocking a noncompliant device or offering the user a grace period to get compliant.
 
-:::image type="content" source="./media/diagram-steps-box-endpoints-2.png" alt-text="Diagram of the steps within phase 2 of the initial deployment objectives." border="true":::
+:::image type="content" source="../media/diagram-steps-box-endpoints-2.png" alt-text="Diagram of the steps within phase 2 of the initial deployment objectives." border="true":::
 
 
 #### Create a compliance policy with Microsoft Intune (all platforms)
@@ -258,29 +258,29 @@ Follow these steps to [create a compliance policy](/mem/intune/protect/create-co
 
 1.  Select the desired Device Health configuration.
 
-    :::image type="content" source="./media/screenshot-windows-10-compliance-policy-device-health-settings.png" alt-text="Screenshot of Device Health in Windows 10 compliance policy settings." border="true":::
+    :::image type="content" source="../media/screenshot-windows-10-compliance-policy-device-health-settings.png" alt-text="Screenshot of Device Health in Windows 10 compliance policy settings." border="true":::
 
 1.  Configure minimum or maximum Device Properties.
 
-    :::image type="content" source="./media/screenshot-windows-10-compliance-policy-device-properties-settings.png" alt-text="Screenshot of Device Properties in Windows 10 compliance policy settings." border="true":::
+    :::image type="content" source="../media/screenshot-windows-10-compliance-policy-device-properties-settings.png" alt-text="Screenshot of Device Properties in Windows 10 compliance policy settings." border="true":::
 
 1.  Configure Configuration Manager Compliance. This requires all compliance evaluations in Configuration Manager to be compliant and is only applicable for comanaged Windows 10 devices. All Intune-only devices will return N/A.
 
 1.  Configure System Security Settings.
 
-    :::image type="content" source="./media/screenshot-windows-10-compliance-policy-system-security-settings.png" alt-text="Screenshot of System Security in Windows 10 compliance policy settings." border="true":::
+    :::image type="content" source="../media/screenshot-windows-10-compliance-policy-system-security-settings.png" alt-text="Screenshot of System Security in Windows 10 compliance policy settings." border="true":::
 
 1.  Configure Microsoft Defender Antimalware.
 
-    :::image type="content" source="./media/screenshot-windows-10-compliance-policy-defender-settings.png" alt-text="Screenshot of Microsoft Defender in Windows 10 compliance policy settings." border="true":::
+    :::image type="content" source="../media/screenshot-windows-10-compliance-policy-defender-settings.png" alt-text="Screenshot of Microsoft Defender in Windows 10 compliance policy settings." border="true":::
 
 1.  Configure the required Microsoft Defender for Endpoint machine risk score.
 
-    :::image type="content" source="./media/screenshot-windows-10-compliance-policy-defender-atp-settings.png" alt-text="Screenshot of Defender for Endpoint in Windows 10 compliance policy settings." border="true":::
+    :::image type="content" source="../media/screenshot-windows-10-compliance-policy-defender-atp-settings.png" alt-text="Screenshot of Defender for Endpoint in Windows 10 compliance policy settings." border="true":::
 
 1.  On the Actions for noncompliance tab, specify a sequence of actions to apply automatically to devices that do not meet this compliance policy.
 
-    :::image type="content" source="./media/screenshot-actions-noncompliance-settings.png" alt-text="Screenshot of Actions for noncompliance in compliance policy settings." border="true":::
+    :::image type="content" source="../media/screenshot-actions-noncompliance-settings.png" alt-text="Screenshot of Actions for noncompliance in compliance policy settings." border="true":::
 
 
 #### Automate notification email and add additional remediation actions for noncompliant devices in Intune (all platforms)
@@ -293,7 +293,7 @@ Take these steps:
 
 1.  Create a notification message template.
 
-    :::image type="content" source="./media/screenshot-create-notifications-message-template.png" alt-text="Screenshot of Create notification in compliance policy settings." border="true":::
+    :::image type="content" source="../media/screenshot-create-notifications-message-template.png" alt-text="Screenshot of Create notification in compliance policy settings." border="true":::
 
 1.  Select **Devices &gt; Compliance policies &gt; Policies**, select one of your policies, and then select **Properties**.
 
@@ -301,7 +301,7 @@ Take these steps:
 
 1.  Add actions for noncompliance:
 
-    :::image type="content" source="./media/screenshot-actions-noncompliance-settings.png" alt-text="Screenshot of Actions for noncompliance in compliance policy settings." border="true":::
+    :::image type="content" source="../media/screenshot-actions-noncompliance-settings.png" alt-text="Screenshot of Actions for noncompliance in compliance policy settings." border="true":::
 
     1.  Set up an automated email to users with noncompliant devices.
 
@@ -314,7 +314,7 @@ Take these steps:
 
 Once data access is granted, you want to control what the user can do with the data. For example, if a user accesses a document with a corporate identity, you want to prevent that document from being saved in an unprotected consumer storage location, or from being shared with a consumer communication or chat app.
 
-:::image type="content" source="./media/diagram-steps-box-endpoints-3.png" alt-text="Diagram of the steps within phase 3 of the initial deployment objectives." border="true":::
+:::image type="content" source="../media/diagram-steps-box-endpoints-3.png" alt-text="Diagram of the steps within phase 3 of the initial deployment objectives." border="true":::
 
 
 #### Apply recommended security settings
@@ -337,7 +337,7 @@ Follow these steps:
 
     1.  Reconfigure the default settings to meet your business needs.  
 
-        :::image type="content" source="./media/screenshot-create-profile-application-management-settings.png" alt-text="Screenshot of Application Management settings in Create Profile." border="false":::
+        :::image type="content" source="../media/screenshot-create-profile-application-management-settings.png" alt-text="Screenshot of Application Management settings in Create Profile." border="false":::
 
 4.  On the Assignments tab, select groups to include and then assign the baseline to one or more groups. To fine-tune the assignment, use Select groups to exclude.
 
@@ -356,7 +356,7 @@ Follow these steps:
 
     1.  Under **Update ring settings**, configure settings for your business needs.
 
-        :::image type="content" source="./media/screenshot-update-settings-user-experience-settings.png" alt-text="Screenshot of Update settings and User experience settings." border="true":::
+        :::image type="content" source="../media/screenshot-update-settings-user-experience-settings.png" alt-text="Screenshot of Update settings and User experience settings." border="true":::
 
     1.  Under **Assignments**, choose + Select groups to include, and then assign the update ring to one or more groups. To fine-tune the assignment, use + Select groups to exclude.
 
@@ -397,7 +397,7 @@ Follow these steps:
 
     1.  Weekly schedule: If you choose a schedule type other than update at next check-in, configure the following options:
 
-        :::image type="content" source="./media/screenshot-create-profile-update-policy-settings.png" alt-text="Screenshot of Update policy settings in Create profile." border="true":::
+        :::image type="content" source="../media/screenshot-create-profile-update-policy-settings.png" alt-text="Screenshot of Update policy settings in Create profile." border="true":::
 
 1.  Choose a time zone.
 
@@ -416,11 +416,11 @@ Follow these steps:
 
     1.  Profile type: Endpoint protection  
 
-        :::image type="content" source="./media/screenshot-devices-configuration-profiles-create-profile-windows.png" alt-text="Screenshot of Create a profile in Devices Configuration profiles for Windows 10." border="false":::
+        :::image type="content" source="../media/screenshot-devices-configuration-profiles-create-profile-windows.png" alt-text="Screenshot of Create a profile in Devices Configuration profiles for Windows 10." border="false":::
 
 3.  Select **Settings &gt; Windows Encryption**.
 
-    :::image type="content" source="./media/screenshot-devices-configuration-create-profile-endpoint-protection.png" alt-text="Screenshot of Endpoint protection in Create profile." border="false":::
+    :::image type="content" source="../media/screenshot-devices-configuration-create-profile-endpoint-protection.png" alt-text="Screenshot of Endpoint protection in Create profile." border="false":::
 
 4.  Configure settings for BitLocker to meet your business needs, and then select **OK**.
 
@@ -434,11 +434,11 @@ Follow these steps:
 
     1.  Profile type: Endpoint protection.  
 
-        :::image type="content" source="./media/screenshot-devices-configuration-profiles-create-profile-macos.png" alt-text="Screenshot of Create a profile in Devices Configuration profiles for mac OS." border="false":::
+        :::image type="content" source="../media/screenshot-devices-configuration-profiles-create-profile-macos.png" alt-text="Screenshot of Create a profile in Devices Configuration profiles for mac OS." border="false":::
 
 3.  Select **Settings &gt; FileVault**. 
 
-    :::image type="content" source="./media/screenshot-create-profile-Endpoint-protection-filevault.png" alt-text="Screenshot of File Vault under Endpoint protection in Create profile." border="false":::
+    :::image type="content" source="../media/screenshot-create-profile-Endpoint-protection-filevault.png" alt-text="Screenshot of File Vault under Endpoint protection in Create profile." border="false":::
 
 4.  For FileVault, select **Enable**.
 
@@ -495,7 +495,7 @@ Follow these steps:
 
 <br/><br/>
 <!-- H2 heading, "Additional deployment objectives" -->
-[!INCLUDE [H2 heading, Additional deployment objectives](./includes/deployment-objectives-additional.md)]
+[!INCLUDE [H2 heading, Additional deployment objectives](../includes/deployment-objectives-additional.md)]
 
 
 
@@ -535,7 +535,7 @@ Choose the option to import or get data from an Odata feed.
 
 5.  Select **Organization account**, and then sign in with your Intune credentials.
 
-    :::image type="content" source="./media/screenshot-powerbi-basic-organizational-account-odata-feed.png" alt-text="Screenshot of OData feed setting in Organizational account." border="false":::
+    :::image type="content" source="../media/screenshot-powerbi-basic-organizational-account-odata-feed.png" alt-text="Screenshot of OData feed setting in Organizational account." border="false":::
 
 1.  Select **Connect**. The Navigator will open and show you the list of tables in the Intune Data Warehouse.
 
@@ -586,4 +586,4 @@ A Zero Trust approach can significantly strengthen the security posture of your 
 
 <br/><br/>
 <!-- Include the nav bar. -->
-[!INCLUDE [navbar, bottom](./includes/navbar-bottom.md)]
+[!INCLUDE [navbar, bottom](../includes/navbar-bottom.md)]

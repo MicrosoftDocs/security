@@ -55,8 +55,7 @@ poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d
 Key information from Microsoft:
 
 - [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
-- [Human-operated ransomware](/security/compass/human-operated-ransomware)
-- [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
+- [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [The latest Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
 - **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal (see these [licensing requirements](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 

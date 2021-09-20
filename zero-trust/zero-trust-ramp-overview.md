@@ -43,13 +43,9 @@ Here is the overall architecture for Zero Trust.
 
 ![The overall architecture for Zero Trust](./media/zero-trust-ramp-overview/zero-trust-architecture.png)
 
-
-
 ## RaMP initiatives for Zero Trust
 
 The guidance for deployment of Zero Trust in your organization is organized in main initiatives.
-
-TABLE=========================================================
 
 | Initiative | Steps |
 |:-------|:-----|
@@ -61,6 +57,7 @@ TABLE=========================================================
 | ![Datacenter & DevOps Security](./media/zero-trust-ramp-overview/dc-devops-icon.png) <br> Datacenter & DevOps Security | <ul><li>Security Hygiene</li><li>Reduce Legacy Risk</li><li>DevOps Integration</li><li>Microsegmentation</li></ul> |
 
 <!--
+
 User Access and Productivity
 
 <ol><li>Explicitly validate trust for all access requests<br><ul><li>User Accounts</li><li>Devices</li></ul></li><li>Increase security for accessing key resources<br><ul><li>Apps</li><li>Data</li></ul><li>Governance</li></ol>
@@ -98,4 +95,3 @@ Zero Trust RaMP initiatives based on need for the use of Operations Technology (
 ## Next step
 
 Begin your Zero Trust RaMP deployment journey with [User access and productivity](user-access-productivity-overview.md).
-

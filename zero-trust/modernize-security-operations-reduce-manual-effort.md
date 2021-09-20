@@ -10,11 +10,15 @@ ms.topic: conceptual
 
 # Step 5. Reduce manual effort
 
-At all times, SecOps should be focused on reducing the toil and suffering from manual and repetitive tasks such as switching tools, typing commands, and coping and pasting data. Focusing on giving analysts a streamlined end-to-end integrated experience with Security Orchestration, Automation and Response (SOAR) technology will increase both effectiveness and morale. SOAR technology is built into both Microsoft 365 Defender and Azure Sentinel.
+At all times, SecOps should be focused on reducing the toil and suffering from manual and repetitive tasks such as switching tools, typing commands, and coping and pasting data. 
+
+Focusing on giving analysts a streamlined end-to-end integrated experience with Security Orchestration, Automation and Response (SOAR) technology will increase both effectiveness and morale. 
+
+SOAR technology is built into both Microsoft 365 Defender and Azure Sentinel.
 
 ### Program and project member accountabilities
 
-This table describes the overall protection of SOAR implementation in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+This table describes a SOAR implementation in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
 | Lead | Implementer | Accountability |
 |:-------|:-------|:-----|

@@ -16,7 +16,7 @@ Streamlining the processes for these common attacks and focusing the triage (Tie
 
 ### Program and project member accountabilities
 
-This table describes the overall protection of XYZ in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+This table describes the implementation of an XDR in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
 | Lead | Implementer | Accountability |
 |:-------|:-------|:-----|

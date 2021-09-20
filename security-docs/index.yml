@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 09/15/2021
+  ms.date: 09/20/2021
 
 
 # Maximum of 8 items
@@ -110,8 +110,8 @@ additionalContent:
               url: https://aka.ms/ZTGuide
             - text: Securing identity with Zero Trust
               url: /security/zero-trust/identity
-            - text: Getting started with Zero Trust identity integrations
-              url: /security/zero-trust/isv/identity-isv-getting-started
+            - text: Get started with Zero Trust identity integrations
+              url: /security/zero-trust/integrate/identity
 
         # Card
         - title: Governance and strategy

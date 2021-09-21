@@ -49,13 +49,13 @@
 
       {
         "source_path": "zero-trust/isv/identity-isv-integration-overview.md",
-        "redirect_url": "integrate/identity",
+        "redirect_url": "../integrate/identity",
         "redirect_document_id": false
       },
 
       {
         "source_path": "zero-trust/isv/identity-isv-getting-started.md",
-        "redirect_url": "integrate/identity",
+        "redirect_url": "../integrate/identity",
         "redirect_document_id": false
       },
 

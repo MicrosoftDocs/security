@@ -61,6 +61,7 @@ Key information from Microsoft:
 
 Microsoft 365:
 
+- [Deploy ransomware protection for your Microsoft 365 tenant](/microsoft-365/solutions/ransomware-protection-microsoft-365)
 - [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
@@ -70,6 +71,10 @@ Microsoft 365 Defender:
 
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
+Microsoft Cloud App Security:
+
+-  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+
 Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
@@ -78,10 +83,6 @@ Microsoft Azure:
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
 - [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
-
-Microsoft Cloud App Security:
-
--  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Security team blog posts:
 
@@ -96,3 +97,4 @@ Microsoft Security team blog posts:
 
 - [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+

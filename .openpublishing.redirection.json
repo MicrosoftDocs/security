@@ -45,6 +45,66 @@
         "source_path": "zero-trust/isv/secure-hybrid-access.md",
         "redirect_url": "/azure/active-directory/manage-apps/secure-hybrid-access-integrations",
         "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/isv/identity-isv-integration-overview.md",
+        "redirect_url": "../integrate/identity",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/isv/identity-isv-getting-started.md",
+        "redirect_url": "../integrate/identity",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/applications.md",
+        "redirect_url": "deploy/applications",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/data.md",
+        "redirect_url": "deploy/data",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/endpoints.md",
+        "redirect_url": "deploy/endpoints",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/identity.md",
+        "redirect_url": "deploy/identity",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/infrastructure.md",
+        "redirect_url": "deploy/infrastructure",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/networks.md",
+        "redirect_url": "deploy/networks",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/visibility-automation-orchestration.md",
+        "redirect_url": "deploy/visibility-automation-orchestration",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/identity-developer.md",
+        "redirect_url": "develop/identity",
+        "redirect_document_id": false
       }
   ] 
   } 

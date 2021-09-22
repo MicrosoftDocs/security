@@ -3,39 +3,49 @@
 - name: Deployment guidance
   expanded: false
   items:
+    - name: Overview
+      href: deploy/overview.md
     - name: Identity
-      href: identity.md
+      href: deploy/identity.md
     - name: Endpoints
-      href: endpoints.md
+      href: deploy/endpoints.md
     - name: Applications
-      href: applications.md
+      href: deploy/applications.md
     - name: Data
-      href: data.md
+      href: deploy/data.md
     - name: Infrastructure
-      href: infrastructure.md
+      href: deploy/infrastructure.md
     - name: Networks
-      href: networks.md
+      href: deploy/networks.md
     - name: Visibility, automation, and orchestration
-      href: visibility-automation-orchestration.md
-- name: Integration guidance
+      href: deploy/visibility-automation-orchestration.md
+- name: Partner integration guidance
   expanded: false
   items: 
+    - name: Overview
+      href: integrate/overview.md
     - name: Identity
-      expanded: false
-      items:
-      - name: ISV integration overview
-        href: isv/identity-isv-integration-overview.md
-      - name: Integrations
-        expanded: true
-        items:
-        - name: Getting started
-          href: isv/identity-isv-getting-started.md
-- name: App development guidance
+      href: integrate/identity.md
+    - name: Endpoints
+      href: integrate/endpoints.md
+    - name: Applications
+      href: integrate/applications.md
+    - name: Data
+      href: integrate/data.md
+    - name: Infrastructure
+      href: integrate/infrastructure.md
+    - name: Networks
+      href: integrate/networks.md
+    - name: Visibility, automation, and orchestration
+      href: integrate/visibility-automation-orchestration.md
+- name: App development best practices
   expanded: false
   items: 
+    - name: Overview
+      href: develop/overview.md
     - name: Identity
       expanded: false
-      href: identity-developer.md
+      href: develop/identity.md
 - name: Resources
   expanded: true
   items:

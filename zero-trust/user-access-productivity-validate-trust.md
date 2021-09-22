@@ -10,7 +10,9 @@ ms.topic: conceptual
 
 # Step 1. Explicitly validate trust for all access requests
 
-This step includes using Zero Trust to explicitly validate trust for all access requests for:
+Establish an identity security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access.
+
+This includes using Zero Trust to explicitly validate trust for all access requests for:
 
 - [User Accounts](#user-accounts)
 
@@ -32,6 +34,18 @@ Verify and secure each identity with strong authentication across your entire di
 
 This table describes the overall protection of your user accounts in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
+| Lead | Owner | Accountability |
+|:-------|:-------|:-----|
+|  CISO, CIO, or Director of Identity Security | | Executive sponsorship |
+| Program lead from Identity Security and/or an Identity Architect | | Drive results and cross-team collaboration |
+| | Security Architect  | Advise on configuration and standards |
+| | Identity Security and/or an Identity Architect | Implement configuration changes |
+| | Identity Admin | Update standards and policy documents |
+| | Security Governance and/or Identity Admin | Monitor to ensure compliance |
+| | User Education | Ensure guidance for users reflects policy updates |
+
+<!--
+
 | Lead | Implementer | Accountability |
 |:-------|:-------|:-----|
 | [Central IT](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) sponsored by CISO, CIO, or Director of Identity | | Executive sponsorship |
@@ -40,6 +54,8 @@ This table describes the overall protection of your user accounts in terms of a 
 | | [Security Policy and Standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) | Update standards and policy documents |
 | | [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) | To implement any changes |
 | | [Security Compliance Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) | Monitor to ensure compliance |
+
+--> 
 
 ### Deployment objectives
 
@@ -62,11 +78,23 @@ You have now built out the **identities** section of the Zero Trust architecture
 
 ## Devices
 
-Ensure compliance and health status before granting access to your devices (endpoint) and gain visibility into how they are accessing the network. 
+Ensure compliance and health status before granting access to your devices (endpoints) and gain visibility into how they are accessing the network. 
 
 ### Program and project member accountabilities
 
 This table describes the overall protection of your devices in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+
+| Lead | Owner | Accountability |
+|:-------|:-------|:-----|
+| CISO, CIO, or Director of Identity Security | | Executive sponsorship |
+| Program lead from Identity Security and/or an Identity Architect | | Drive results and cross-team collaboration |
+| | Security Architect  | Advise on configuration and standards |
+| | Identity Security and/or an Infrastructure Security | Implement configuration changes |
+| | MDM Admin | Update standards and policy documents |
+| | Security Governance and/or MDM Admin | Monitor to ensure compliance |
+| | User Education | Ensure guidance for users reflects policy updates |
+
+<!--
 
 | Lead | Implementer | Accountability |
 |:-------|:-------|:-----|
@@ -75,7 +103,8 @@ This table describes the overall protection of your devices in terms of a sponso
 |  | [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture)  | Advise on configuration and standards |
 | | [Security Policy and Standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) | Update standards and policy documents |
 | | [Security Compliance Management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) | Monitor to ensure compliance |
-|
+
+--> 
 
 ### Deployment objectives
 

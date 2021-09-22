@@ -14,6 +14,8 @@ The other top priority initiative that you can run in parallel to user access an
 
 Modernizing security operations with Zero Trust requires rigorous prioritization to ensure that SecOps teams are focused on the greatest risk to the organization, aren’t wasting time on false alarms and positives, and have the broad and deep visibility across the entire estate they need to be effective. 
 
+Continue your [Zero Trust Rapid Modernization Plan (RaMP)](zero-trust-ramp-overview.md#ramp-initiatives-for-zero-trust) deployment with these continued steps:
+
 3. [Streamline responses](modernize-security-operations-streamline-response.md)
  
    The first priority for SecOps is to master threat response and remediation on commonly attacked resources using Extended Detection and Response (XDR) technology provide high quality alerts for these new resource types, bypassing the manual effort and delays when trying to build every alert in a security information and event management (SIEM). 

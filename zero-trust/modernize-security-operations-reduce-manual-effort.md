@@ -20,14 +20,14 @@ SOAR technology is built into both Microsoft 365 Defender and Azure Sentinel.
 
 This table describes a SOAR implementation in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
-| Lead | Implementer | Accountability |
+| Lead | Owner | Accountability |
 |:-------|:-------|:-----|
-| [Central IT](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) sponsored by CISO, CIO, or Director of Identity | | Executive sponsorship |
-| Program lead from [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture) | | Drive results and cross-team collaboration |
-|  | [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture)  | Advise on configuration and standards |
-| | [Security Policy and Standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) | Update standards and policy documents |
-| | [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) | To implement any changes |
-| | [Security Compliance Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) | Monitor to ensure compliance |
+|  CISO, CIO, or Director of Identity Security | | Executive sponsorship |
+| Program lead from SecOps Leadership| | Drive results and cross-team collaboration |
+| | Security Architect  | Advise on configuration and standards |
+| | SecOps Analysts | Implement configuration changes |
+| | SecOps Analysts | Update standards and policy documents |
+| | Security Governance | Monitor to ensure compliance |
 
 ### Deployment objectives
 

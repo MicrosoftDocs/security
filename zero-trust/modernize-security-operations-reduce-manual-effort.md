@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Step 5. Reduce manual effort
 
-At all times, SecOps should be focused on reducing the toil and suffering from manual and repetitive tasks such as switching tools, typing commands, and coping and pasting data. 
+At all times, SecOps should be focused on reducing the toil and suffering from manual and repetitive tasks such as switching tools, typing commands, and copying and pasting data. 
 
 Focusing on giving analysts a streamlined end-to-end integrated experience with Security Orchestration, Automation and Response (SOAR) technology will increase both effectiveness and morale. 
 

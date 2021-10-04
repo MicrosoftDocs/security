@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Step 1. Explicitly validate trust for all access requests
 
-Establish an identity security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access.
+Your first step is to establish an identity security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access.
 
 This includes using Zero Trust to explicitly validate trust for all access requests for:
 

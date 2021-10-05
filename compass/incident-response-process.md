@@ -11,6 +11,15 @@ ms.prod: m365-security
 
 # Incident response process
 
+
+THIS comes back to that first decision: What is our purpose: RTS or Legal? If all I care about is RTS, then I don’t care about legally admissible forensics.
+
+Prior to an incident, KNOW what your plan is. This will help with the “Keep Calm” part below.
+The Plan needs to be prioritized by the business value of the system affected. If the Café menu web site goes down is different than if BillG’s laptop goes down.
+
+have never seen organisations respond to an incident successfully where they didn't already have a response plan and test regularly against it.  Should we say something like preparation is key to a successful IR? aka, a step before this.  Another point: detection remains the weakest of the PDR (protect,detect,respond) triad - one of the reasons we talk about integrated signal across the kill-chain and having a platform approach for rapid detection and automated response.
+
+
 Although each organization’s incident response process may be different based on organizational structure and capabilities, consider this set of recommendations and best practices for responding to security incidents.
 
 During an incident, it is critical to:
@@ -19,13 +28,23 @@ During an incident, it is critical to:
 
    Incidents are extremely disruptive and can become emotionally charged. Stay calm and focus on prioritizing your efforts on the most impactful actions first. 
 
+I would like us to expand on this quite a bit. Customers need to FIRST decide their objective: Return to service, or legal prosecution. The tasks will be different for each scenario.
+
+Second, they need to prioritize the work that needs to get done. There will be only so many people working the incident. Prioritize their tasks prior to the incident
+
 - Do no harm
 
    Confirm that your response is designed and executed in a way that avoids loss of data, loss of business-critical functionality, and loss of evidence. Avoid decisions can damage your ability to create forensic timelines, identify root cause, and learn critical lessons.
 
+
+
+- Involve your legal department
+
+   Determine whether they plan to involve law enforcement so you can plan your investigation and recovery procedures appropriately. 
+
 - Be accurate when sharing publicly
 
-   Confirm that anything you share with the public and customers is correct and truthful. 
+   Confirm that anything you share with your customers and the public is based on the advice of your legal department. 
 
 - Get help when needed
 
@@ -44,7 +63,7 @@ During an incident, you must strike these critical balances:
 
 - Sharing information
 
-   Inform investigators, stakeholders, and customers while limiting liability and unrealistic expectations. 
+   Inform investigators, stakeholders, and customers based on the advice of your legal department to limit liability and avoid setting unrealistic expectations. 
 
 This article is designed to lower risk to your organization for a cybersecurity incident by identifying common errors to avoid and providing guidance on what actions you can rapidly take that both reduce risk and meet stakeholder needs. 
 
@@ -58,9 +77,9 @@ Responding to incidents can be done effectively from both technical and operatio
 
 ### Technical
 
-For the technical aspects of incident response, here are some critical success factors:
+For the technical aspects of incident response, here are some goals to consider:
 
-- You must identify the scope of the attack operation.
+- Try to identify the scope of the attack operation.
 
    Most adversaries use multiple persistence mechanisms.
 
@@ -69,10 +88,6 @@ For the technical aspects of incident response, here are some critical success f
    Persistent attackers will frequently return for their objective (data/systems) in a future attack.
 
 Here are some useful tips:
-
-- Don’t upload files to online scanners
-
-   Many adversaries monitor instance count on services like VirusTotal for discovery of targeted malware.
 
 - Don’t make modifications
 
@@ -84,7 +99,7 @@ Here are some useful tips:
 
 - Share information
 
-   Confirm that all investigation teams, including all internal teams and external investigators, are fully sharing their data with each other. 
+   Confirm that all investigation teams, including all internal teams and external investigators, are sharing their data with each other, based on the advice of your legal department. 
 
 - Access the right expertise
 
@@ -102,7 +117,7 @@ A key expectation to manage with stakeholders is that you may never be able to i
 
 ### Operations
 
-For security operations aspects of incident response, here are some critical success factors:
+For security operations aspects of incident response, here are some goals to consider:
 
 - Staying focused
 
@@ -128,7 +143,7 @@ Here are some useful tips:
 
 - Avoid wasteful spending 
 
-   Many major incidents result in the purchase of expensive security tools in a panic that are never deployed or used. If you can’t deploy and use a tool during the investigation&mdash;which can include hiring and training for additional staff with the skill sets needed to operate the tool&mdash;defer acquisition until after you finish the investigation. 
+   Many major incidents result in the purchase of expensive security tools under pressure that are never deployed or used. If you can’t deploy and use a tool during the investigation&mdash;which can include hiring and training for additional staff with the skill sets needed to operate the tool&mdash;defer acquisition until after you finish the investigation. 
 
 - Access deep expertise 
 
@@ -145,7 +160,7 @@ Recovering from incidents can be done effectively from both technical and operat
 
 ### Technical
 
-For the technical aspects of recovering from an incident, here are some critical success factors:
+For the technical aspects of recovering from an incident, here are some goals to consider:
 
 - Don’t boil the ocean
 
@@ -175,11 +190,10 @@ Here are some helpful tips:
 
   Microsoft’s Security Operations Center (SOC) has used a non-production Microsoft 365 tenant for secure communication and collaboration for members of the incident response team. 
 
-A key expectation to manage is that your first recovery attempt may not fully succeed, so you may have to try again. 
 
 ### Operations
 
-For the operations aspects of recovering from an incident, here are some critical success factors:
+For the operations aspects of recovering from an incident, here are some goals to consider:
 
 - Have a clear plan and limited scope
 

@@ -11,16 +11,26 @@ ms.prod: m365-security
 
 # Incident response process
 
+<!--
+detection remains the weakest of the PDR (protect,detect,respond) triad - one of the reasons we talk about integrated signal across the kill-chain and having a platform approach for rapid detection and automated response.
+--> 
 
-THIS comes back to that first decision: What is our purpose: RTS or Legal? If all I care about is RTS, then I don’t care about legally admissible forensics.
+The first step is to **have an incident response plan in place** that encompasses both internal and external processes for responding to cybersecurity incidents. The plan should include how to:
 
-Prior to an incident, KNOW what your plan is. This will help with the “Keep Calm” part below.
-The Plan needs to be prioritized by the business value of the system affected. If the Café menu web site goes down is different than if BillG’s laptop goes down.
+- Address attacks that vary with the business risk and impact of the incident, which can vary from an isolated web site that is no longer available to the compromise of administrator-level credentials. 
+- Define the purpose of the response, such as a return to service or to handle legal or public relations aspects of the attack.
+- Prioritize the work that needs to get done in terms of how many people should be working on the incident and their tasks.
 
-have never seen organisations respond to an incident successfully where they didn't already have a response plan and test regularly against it.  Should we say something like preparation is key to a successful IR? aka, a step before this.  Another point: detection remains the weakest of the PDR (protect,detect,respond) triad - one of the reasons we talk about integrated signal across the kill-chain and having a platform approach for rapid detection and automated response.
+See the [incident response planning article](incident-response-planning.md) for a checklist of activities to consider including in your incident response plan. Once your incident response plan is in place, test it regularly for the most serious types of cyberattacks to ensure that your organization can respond quickly and efficiently.
 
+Although each organization’s incident response process may be different based on organizational structure and capabilities, consider the set of recommendations and best practices in this article for responding to security incidents.
 
-Although each organization’s incident response process may be different based on organizational structure and capabilities, consider this set of recommendations and best practices for responding to security incidents.
+<!--
+I would like us to expand on this quite a bit. Customers need to FIRST decide their objective: Return to service, or legal prosecution. The tasks will be different for each scenario.
+
+Second, they need to prioritize the work that needs to get done. There will be only so many people working the incident. Prioritize their tasks prior to the incident
+--> 
+
 
 During an incident, it is critical to:
 
@@ -28,21 +38,15 @@ During an incident, it is critical to:
 
    Incidents are extremely disruptive and can become emotionally charged. Stay calm and focus on prioritizing your efforts on the most impactful actions first. 
 
-I would like us to expand on this quite a bit. Customers need to FIRST decide their objective: Return to service, or legal prosecution. The tasks will be different for each scenario.
-
-Second, they need to prioritize the work that needs to get done. There will be only so many people working the incident. Prioritize their tasks prior to the incident
-
 - Do no harm
 
    Confirm that your response is designed and executed in a way that avoids loss of data, loss of business-critical functionality, and loss of evidence. Avoid decisions can damage your ability to create forensic timelines, identify root cause, and learn critical lessons.
-
-
 
 - Involve your legal department
 
    Determine whether they plan to involve law enforcement so you can plan your investigation and recovery procedures appropriately. 
 
-- Be accurate when sharing publicly
+- Be careful when sharing information about the incident publicly
 
    Confirm that anything you share with your customers and the public is based on the advice of your legal department. 
 
@@ -65,7 +69,7 @@ During an incident, you must strike these critical balances:
 
    Inform investigators, stakeholders, and customers based on the advice of your legal department to limit liability and avoid setting unrealistic expectations. 
 
-This article is designed to lower risk to your organization for a cybersecurity incident by identifying common errors to avoid and providing guidance on what actions you can rapidly take that both reduce risk and meet stakeholder needs. 
+This article is designed to lower the risk to your organization for a cybersecurity incident by identifying common errors to avoid and providing guidance on what actions you can rapidly take that both reduce risk and meet stakeholder needs. 
 
 ## Response best practices
 

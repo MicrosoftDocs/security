@@ -31,7 +31,6 @@ I would like us to expand on this quite a bit. Customers need to FIRST decide th
 Second, they need to prioritize the work that needs to get done. There will be only so many people working the incident. Prioritize their tasks prior to the incident
 --> 
 
-
 During an incident, it is critical to:
 
 - Keep calm
@@ -93,9 +92,15 @@ For the technical aspects of incident response, here are some goals to consider:
 
 Here are some useful tips:
 
-- Don’t make modifications
+- Don’t upload files to online scanners
 
-   Unless you face an imminent threat of losing business-critical data&mdash;such as deletion, encryption, and exfiltration&mdash;don’t start recovery operations until the investigation is complete. 
+   Many adversaries monitor instance count on services like VirusTotal for discovery of targeted malware.
+
+- Carefully consider modifications
+
+   Unless you face an imminent threat of losing business-critical data&mdash;such as deletion, encryption, and exfiltration&mdash;balance the risk of not making the modification with the projected business impact. For example, temporarily shutting down your organization's internet access may be necessary to protect business-critical assets during an active attack.
+
+   If changes are necessary where the risk of not doing an action is higher than the risk of doing it, document the action in a change log. Changes made during incident response are focused on disrupting the attacker and may impact the business adversely. You will need to roll these changes back after the recovery process.
 
 - Don’t investigate forever
 
@@ -103,15 +108,11 @@ Here are some useful tips:
 
 - Share information
 
-   Confirm that all investigation teams, including all internal teams and external investigators, are sharing their data with each other, based on the advice of your legal department. 
+   Confirm that all investigation teams, including all internal teams and external investigators or insurance providers, are sharing their data with each other, based on the advice of your legal department.  
 
 - Access the right expertise
 
-   Confirm that you integrate people with deep knowledge of the systems into the investigation&mdash;such as internal staff or external entities  like vendors&mdash;not just security generalists. 
-
-- Check with your legal department
-
-   Determine whether they plan to involve law enforcement so you can plan your investigation and recovery procedures appropriately. 
+   Confirm that you integrate people with deep knowledge of the systems into the investigation&mdash;such as internal staff or external entities like vendors&mdash;not just security generalists. 
 
 - Anticipate reduced response capability
 
@@ -193,7 +194,6 @@ Here are some helpful tips:
    As practical, you should take steps to limit the information available to adversaries about the recovery operation. Adversaries typically have access to all production data and email in a major cybersecurity incident. But in reality, most attackers don’t have time to monitor all your communications. 
 
   Microsoft’s Security Operations Center (SOC) has used a non-production Microsoft 365 tenant for secure communication and collaboration for members of the incident response team. 
-
 
 ### Operations
 

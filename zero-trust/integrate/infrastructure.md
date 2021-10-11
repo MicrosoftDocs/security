@@ -35,7 +35,7 @@ Our [Zero Trust infrastructure deployment guidance](../deploy/infrastructure.md)
 1. Set up threat detection and protections
 1. Automatically block and flag risky behavior and take protective actions
 
-There's a clear mapping from the goals we've described in the infrastructure deployment guidance to the core aspects of Security Center.
+There's a clear mapping from the goals we've described in the [infrastructure deployment guidance](../deploy/infrastructure.md) to the core aspects of Security Center.
 
 |Zero Trust goal  | Security Center feature  |
 |---------|---------|

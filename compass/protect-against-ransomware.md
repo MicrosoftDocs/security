@@ -1,5 +1,6 @@
 ---
 title: "Rapidly protect against ransomware and extortion"
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, extortionware, malicious encryption
 ms.author: josephd
 author: JoeDavies-MSFT
 f1.keywords:

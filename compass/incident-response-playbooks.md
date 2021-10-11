@@ -1,7 +1,7 @@
 ---
 title: Incident response playbooks
 description: Use these playbooks to quickly respond to security incidents in the Microsoft cloud.
-keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance
+keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, microsoft 365 defender
 search.product: DART
 search.appverid: met150
 ms.prod: m365-security

@@ -1,6 +1,7 @@
 ---
 title: Incident response overview | Microsoft Docs
-description: Understand the role of incident response in security operations.
+description: Understand the role of incident response in your security operations center.
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, incident response, cyber-attack, respond
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: dansimp
@@ -23,7 +24,8 @@ If you are new-to-role as a security analyst, see these resources to get you sta
 
 | Topic | Resource |
 |:-------|:-----|
-| Overview of incident response | [Incident Response Reference Guide](https://download.microsoft.com/download/4/f/f/4ff621f9-6f44-437a-80c7-2624e3d2ce80/IR-Reference-Guide.pdf) for preparing your organization and what to do during an incident. |
+| SecOps planning for incident response | [Incident response planning](incident-response-planning.md) for preparing your organization for an incident. |
+| SecOps incident response process | [Incident response process](incident-response-process.md) for best practices on responding to an incident. |
 | Incident response workflow  | [Example incident response workflow for Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview#example-incident-response-workflow-for-microsoft-365-defender) |
 | Periodic security operations | [Example periodic security operations for Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview#example-security-operations-for-microsoft-365-defender) |
 | Investigation for Azure Sentinel | [Incidents in Azure Sentinel](/azure/sentinel/tutorial-investigate-cases) |

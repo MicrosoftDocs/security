@@ -11,10 +11,6 @@ ms.prod: m365-security
 
 # Incident response process
 
-<!--
-detection remains the weakest of the PDR (protect,detect,respond) triad - one of the reasons we talk about integrated signal across the kill-chain and having a platform approach for rapid detection and automated response.
---> 
-
 The first step is to **have an incident response plan in place** that encompasses both internal and external processes for responding to cybersecurity incidents. The plan should include how to:
 
 - Address attacks that vary with the business risk and impact of the incident, which can vary from an isolated web site that is no longer available to the compromise of administrator-level credentials. 
@@ -24,12 +20,6 @@ The first step is to **have an incident response plan in place** that encompasse
 See the [incident response planning article](incident-response-planning.md) for a checklist of activities to consider including in your incident response plan. Once your incident response plan is in place, test it regularly for the most serious types of cyberattacks to ensure that your organization can respond quickly and efficiently.
 
 Although each organization’s incident response process may be different based on organizational structure and capabilities, consider the set of recommendations and best practices in this article for responding to security incidents.
-
-<!--
-I would like us to expand on this quite a bit. Customers need to FIRST decide their objective: Return to service, or legal prosecution. The tasks will be different for each scenario.
-
-Second, they need to prioritize the work that needs to get done. There will be only so many people working the incident. Prioritize their tasks prior to the incident
---> 
 
 During an incident, it is critical to:
 
@@ -325,28 +315,3 @@ Review your response processes to identify and resolve any gaps found during the
 | [Microsoft security documentation](/security/) | Additional security guidance from Microsoft. |
 |||
 
-
-<!--
-
-Here are some general steps in the incident response process:
-
-
-3. Examine the endpoints
-
-   Typically, the first priority is to identify affected endpoints so your analysts can rapidly get deep insight. For example, use the Endpoint Detection and Response (EDR) functionality in Azure Sentinel or Microsoft Defender 365 for this.
-
-4. Scope out and fill in the timeline
-
-   The analyst then builds a full picture and timeline of the related chain of events that led to the alert (which may be an adversary’s attack operation or false alarm positive) by following leads from the first host alert. The analyst travels along the timeline:
-
-   - Backward in time: Track backward to identify the entry point into your environment.
-
-   - Forward in time: Follow leads to any endpoints (devices) or assets an attacker may have accessed or attempted to access.
-
-Your analysts can build this picture using the [MITRE ATT&CK™ model](https://attack.mitre.org/) or the [Lockheed Martin Cyber Kill Chain®](https://www.lockheedmartin.com/capabilities/cyber/cyber-kill-chain.html).
-
-
-
-When we last left our heroes in the previous entry, our analyst had built a timeline of the potential adversary attack operation. Of course, knowing what happened doesn’t actually stop the adversary or reduce organizational risk, so let’s remediate this attack!
-
---> 

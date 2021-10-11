@@ -70,6 +70,10 @@ During an incident, you must strike these critical balances:
 
 This article is designed to lower the risk to your organization for a cybersecurity incident by identifying common errors to avoid and providing guidance on what actions you can rapidly take that both reduce risk and meet stakeholder needs. 
 
+>[!Note]
+>For additional guidance on preparing your organization for ransomware and other types of multi-stage attacks, see [Prepare your recovery plan](protect-against-ransomware-phase1.md).
+>
+
 ## Response best practices
 
 Responding to incidents can be done effectively from both technical and operations perspectives with these recommendations. 

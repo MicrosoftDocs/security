@@ -1,18 +1,20 @@
 ---
 title: Building Zero Trust ready apps with the Microsoft identity platform
-description: Developers have an important role to play in building trustworthy applications that adhere to Zero Trust principles. **Identity** is the backbone of secure app development, acting as the control plane for managing access to your applications to keep users and data safe. This document explains identity best practices for building Zero Trust ready applications using the Microsoft identity platform can help.
+description: Learn how to build trustworthy, Zero Trust ready applications using the Microsoft identity platform features.
 ms.date: 04/20/2021
 ms.service: security
 author: knicholasa
 ms.author: nichola
 ms.topic: conceptual
+
+# Customer intent: As a developer, I want to learn how to build Zero Trust compliant apps using Microsoft identity platform features, so I can ensure that my applications are trustworthy and more secure.
 ---
 
 # Building Zero Trust ready apps with the Microsoft identity platform
 
 :::image type="icon" source="../media/icon-identity-medium.png":::
 
-Applications are rapidly moving into the cloud and their users are working from a variety of devices and locations. Companies want to support employees collaborating with partners who are outside of their organization. At the same time, the threat landscape is evolving constantly, with new exploits and vulnerabilities being disclosed every day. As a result of this shift, traditional approaches to secure application development are no longer enough.
+Applications are rapidly moving into the cloud and their users are working from a variety of devices and locations. Companies want to support employees collaborating with partners who are outside of their organization. At the same time, the threat landscape is evolving constantly, with new exploits and vulnerabilities being disclosed every day. As a result of this shift, traditional approaches to secure application development are no longer sufficient.
 
 Identity is the backbone of secure app development, acting as the control plane for managing access to your applications to keep users and data safe.
 This article explains identity best practices for building **Zero Trust** ready applications using the Microsoft identity platform. We have also published [a whitepaper](https://www.microsoft.com/security/content-library/Search?SearchDataFor=OJZgGWbHnB3Ll5hblDBugaEMQAchNfvkzk5X5AmPM4tK43NHpbF5%2Bky%2Fnuivl7plZz89b%2FuLMMZsMqKeYbhPPw%3D%3D&IsKeywordSearch=evXIpssXVY6lIm6X2K9ieA%3D%3D) with specific action items you can take as you develop your apps.

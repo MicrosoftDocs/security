@@ -41,11 +41,11 @@ The implementation of Zero Trust is still evolving, and each organization's jour
 - **Organizations are restricting user consent to low-risk permissions for publisher verified apps**. IT admins are embracing the principle of verify explicitly by requiring  [publisher verification](/azure/active-directory/develop/publisher-verification-overview), and the principle of least privilege by only allowing user consent for low risk permissions. Before your organization or your customer grants consent, admins will evaluate permissions your app is requesting and the trustworthiness of your app.
 - **Organizations are setting up credential hygiene and rotation policies for apps and services**. If an app's credential gets compromised, the attacker can then acquire tokens under the guise of that app's identity, allowing it to get access to sensitive data, move laterally, or establish persistence.
 - **Organizations are rolling out strong auth**. IT administrators expect to be able to set polices requiring multi-factor authentication and passwordless FIDO2 devices.
-- **Organizations are blocking legacy protocols and APIs**. This includes blocking older authentication protocols such as "*Basic authentication*" and requiring modern protocols like **OpenID Connect** and **OAuth 2.0**. Microsoft announced an end of life of June 30, 2022 for Azure Active Directory (Azure AD) Graph and the legacy ADAL authentication library. Organizations are ensuring applications they depend on are prepared.
+- **Organizations are blocking legacy protocols and APIs**. This includes blocking older authentication protocols such as "*Basic authentication*" and requiring modern protocols like **OpenID Connect** and **OAuth 2.0**. Microsoft [announced an end of life of June 30, 2022](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363) for Azure Active Directory (Azure AD) Graph and the legacy Azure Active Directory Authentication Library (ADAL). Organizations are ensuring applications they depend on are prepared.
 
 ## Best practices for developing with Zero Trust
 
-**Use a trusted, standards-based authentication library.** Using a library will save you the time of developing a solution on your own. But more importantly, it will stay up to date and be responsive to the latest technologies and threats. Microsoft has many libraries available including the Microsoft authentication libraries (**MSAL**), *Microsoft.Identity.Web*, and the Azure SDK for managed identities. These give you access to features such as conditional access, device registration and management, and the latest innovations such as passwordless and FIDO2 authentication without needing to write any extra code.
+**Use a trusted, standards-based authentication library.** Using a library will save you the time of developing a solution on your own. But more importantly, it will stay up to date and be responsive to the latest technologies and threats. Microsoft has many libraries available including the Microsoft Authentication Library (**MSAL**), *Microsoft.Identity.Web*, and the Azure SDK for managed identities. These give you access to features such as conditional access, device registration and management, and the latest innovations such as passwordless and FIDO2 authentication without needing to write any extra code.
 
 **Follow the** [Azure AD application registration security best practices](/azure/active-directory/develop/security-best-practices-for-app-registration). An Azure AD application registration is a critical part of your business application. Any misconfiguration or lapse in hygiene of your application can result in downtime or compromise.
 
@@ -59,7 +59,7 @@ The implementation of Zero Trust is still evolving, and each organization's jour
 
 **Become a** [**verified publisher**](/azure/active-directory/develop/publisher-verification-overview). When an application is marked as publisher verified, it means that the publisher has verified their identity using a Microsoft Partner Network account that has completed an established verification process. This is great for developers of multi-tenant apps, as it helps build trust with IT administrators in customer tenants.
 
-## Next Steps
+## Next steps
 
 - [Embrace proactive security with Zero Trust](https://www.microsoft.com/security/business/zero-trust)
 - [Migrate applications to the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-migration)

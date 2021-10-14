@@ -1,13 +1,13 @@
 ---
-title: Building Zero Trust ready apps with the Microsoft identity platform
-description: Learn how to build trustworthy, Zero Trust ready applications using the Microsoft identity platform features.
-ms.date: 04/20/2021
+title: Building Zero Trust-ready apps with the Microsoft identity platform
+description: Learn how to build trustworthy, Zero Trust-ready applications by using features of the Microsoft identity platform.
+ms.date: 10/14/2021
 ms.service: security
 author: knicholasa
 ms.author: nichola
 ms.topic: conceptual
 
-# Customer intent: As a developer, I want to learn how to build Zero Trust compliant apps using Microsoft identity platform features, so I can ensure that my applications are trustworthy and more secure.
+# Customer intent: As a developer, I want to learn how to build Zero Trust-compliant apps using Microsoft identity platform features, so I can ensure that my applications are trustworthy and more secure.
 ---
 
 # Building Zero Trust ready apps with the Microsoft identity platform
@@ -45,7 +45,7 @@ The implementation of Zero Trust is still evolving, and each organization's jour
 
 ## Best practices for developing with Zero Trust
 
-**Use a trusted, standards-based authentication library.** Using a library will save you the time of developing a solution on your own. But more importantly, it will stay up to date and be responsive to the latest technologies and threats. Microsoft has many libraries available including the Microsoft Authentication Library (**MSAL**), *Microsoft.Identity.Web*, and the Azure SDK for managed identities. These give you access to features such as conditional access, device registration and management, and the latest innovations such as passwordless and FIDO2 authentication without needing to write any extra code.
+**Use a trusted, standards-based authentication library.** Using a library will save you the time of developing a solution on your own. But more importantly, it will stay up to date and be responsive to the latest technologies and threats. Microsoft provides several authentication libraries, including the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview), [Microsoft Identity Web authentication library](/azure/active-directory/develop/microsoft-identity-web), and the [Azure SDKs for managed identities](/azure/active-directory/managed-identities-azure-resources/qs-configure-sdk-windows-vm#azure-sdks-with-managed-identities-for-azure-resources-support). These give you access to features such as conditional access, device registration and management, and the latest innovations such as passwordless and FIDO2 authentication without needing to write any extra code.
 
 **Follow the** [Azure AD application registration security best practices](/azure/active-directory/develop/security-best-practices-for-app-registration). An Azure AD application registration is a critical part of your business application. Any misconfiguration or lapse in hygiene of your application can result in downtime or compromise.
 

@@ -21,7 +21,7 @@ This is the core of **Zero Trust**. Instead of believing everything behind the c
 
 ## Guiding principles of Zero Trust
 
-| Verify explicitly | Use least privileged access | Assume breach |
+| Verify explicitly | Use least privilege access | Assume breach |
 |------|-------|------|
 | Always authenticate and authorize based on all available data points. | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. |
 

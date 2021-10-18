@@ -30,7 +30,7 @@ Zero Trust operates on these security principles:
 
   Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and anomalies.
 
-- Use least privileged access
+- Use least privilege access
 
   Limit user access with just-in-time and just-enough-access (JIT/JEA), risk-based adaptive polices, and data protection to help secure both data and productivity.
 

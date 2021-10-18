@@ -68,7 +68,7 @@ Therefore, you must:
 
   Apply a consistent set of data loss prevention policies across the cloud, on-premises environments, and endpoints to monitor, prevent, and remediate risky activities with sensitive data.
 
-- Use least privileged access
+- Use least privilege access
 
   Apply minimal permissions consisting of who is allowed to access and what they are allowed to do with data to meet business and productivity requirements.
 
@@ -115,7 +115,7 @@ Meet these deployment objectives to protect your data for Zero Trust.
 | <input type="checkbox" /> | [1. Know your data](#know) | Data Security Architect |
 | <input type="checkbox" /> | [2. Protect your data](#protect) | Data Security Engineer |
 | <input type="checkbox" /> | [3. Prevent data loss](#prevent) | Data Security Engineer |
-| <input type="checkbox" /> | [4. Use least privileged access](#strict) | Data Security Engineer |
+| <input type="checkbox" /> | [4. Use least privilege access](#strict) | Data Security Engineer |
 
 After completing these deployment objectives, you will have built out the **data** section of the Zero Trust architecture.
 
@@ -153,9 +153,9 @@ Perform these implementation steps to meet the **Prevent data loss** deployment 
 | <input type="checkbox" /> | 3. Configure access policies for Cloud App Security Conditional Access App Control. | Data Security Engineer | [Overview](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad) |
 
 
-#### <a id="strict">4. Use least privileged access</a>
+#### <a id="strict">4. Use least privilege access</a>
 
-Perform these implementation steps to ensure that your workers and admins meet the **Use least privileged access** deployment objective.
+Perform these implementation steps to ensure that your workers and admins meet the **Use least privilege access** deployment objective.
 
 | Done | Implementation objective and results | Owner |
 |:-------|:-------|:-----|

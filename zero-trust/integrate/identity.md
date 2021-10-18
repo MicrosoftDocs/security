@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 Identities represent people, services, devices and the permissions that they obtain to access protected data. Identity solutions are the key control plane for managing access in the modern workplace and are essential to implementing Zero Trust.
 
-Identity Zero Trust solutions enable customers to verify explicitly with strong authentication and access policies, use least privileged access with granular permission and access, and assume breach with controls and policies that manage access to secure resources and minimize the blast radius of attacks.
+Identity Zero Trust solutions enable customers to verify explicitly with strong authentication and access policies, use least privilege access with granular permission and access, and assume breach with controls and policies that manage access to secure resources and minimize the blast radius of attacks.
 
 This guidance is for software providers and technology partners who want to enhance their identity security solutions by integrating with Microsoft products.
 

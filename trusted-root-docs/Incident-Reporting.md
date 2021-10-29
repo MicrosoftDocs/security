@@ -4,7 +4,7 @@ description: This document provides details about the Incident Response requirem
 ms.date: 02/04/2020
 ms.service: security
 ms.author: kasirota
-author:kasirota
+author: kasirota
 ms.topic: conceptual
 ---
 

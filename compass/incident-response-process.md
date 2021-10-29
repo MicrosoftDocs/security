@@ -11,7 +11,15 @@ ms.prod: m365-security
 
 # Incident response process
 
-Although each organization’s incident response process may be different based on organizational structure and capabilities, consider this set of recommendations and best practices for responding to security incidents.
+The first step is to **have an incident response plan in place** that encompasses both internal and external processes for responding to cybersecurity incidents. The plan should include how to:
+
+- Address attacks that vary with the business risk and impact of the incident, which can vary from an isolated web site that is no longer available to the compromise of administrator-level credentials. 
+- Define the purpose of the response, such as a return to service or to handle legal or public relations aspects of the attack.
+- Prioritize the work that needs to get done in terms of how many people should be working on the incident and their tasks.
+
+See the [incident response planning article](incident-response-planning.md) for a checklist of activities to consider including in your incident response plan. Once your incident response plan is in place, test it regularly for the most serious types of cyberattacks to ensure that your organization can respond quickly and efficiently.
+
+Although each organization’s incident response process may be different based on organizational structure and capabilities, consider the set of recommendations and best practices in this article for responding to security incidents.
 
 During an incident, it is critical to:
 
@@ -23,9 +31,13 @@ During an incident, it is critical to:
 
    Confirm that your response is designed and executed in a way that avoids loss of data, loss of business-critical functionality, and loss of evidence. Avoid decisions can damage your ability to create forensic timelines, identify root cause, and learn critical lessons.
 
-- Be accurate when sharing publicly
+- Involve your legal department
 
-   Confirm that anything you share with the public and customers is correct and truthful. 
+   Determine whether they plan to involve law enforcement so you can plan your investigation and recovery procedures appropriately. 
+
+- Be careful when sharing information about the incident publicly
+
+   Confirm that anything you share with your customers and the public is based on the advice of your legal department. 
 
 - Get help when needed
 
@@ -44,9 +56,13 @@ During an incident, you must strike these critical balances:
 
 - Sharing information
 
-   Inform investigators, stakeholders, and customers while limiting liability and unrealistic expectations. 
+   Inform investigators, stakeholders, and customers based on the advice of your legal department to limit liability and avoid setting unrealistic expectations. 
 
-This article is designed to lower risk to your organization for a cybersecurity incident by identifying common errors to avoid and providing guidance on what actions you can rapidly take that both reduce risk and meet stakeholder needs. 
+This article is designed to lower the risk to your organization for a cybersecurity incident by identifying common errors to avoid and providing guidance on what actions you can rapidly take that both reduce risk and meet stakeholder needs. 
+
+>[!Note]
+>For additional guidance on preparing your organization for ransomware and other types of multi-stage attacks, see [Prepare your recovery plan](protect-against-ransomware-phase1.md).
+>
 
 ## Response best practices
 
@@ -58,9 +74,9 @@ Responding to incidents can be done effectively from both technical and operatio
 
 ### Technical
 
-For the technical aspects of incident response, here are some critical success factors:
+For the technical aspects of incident response, here are some goals to consider:
 
-- You must identify the scope of the attack operation.
+- Try to identify the scope of the attack operation.
 
    Most adversaries use multiple persistence mechanisms.
 
@@ -74,9 +90,11 @@ Here are some useful tips:
 
    Many adversaries monitor instance count on services like VirusTotal for discovery of targeted malware.
 
-- Don’t make modifications
+- Carefully consider modifications
 
-   Unless you face an imminent threat of losing business-critical data&mdash;such as deletion, encryption, and exfiltration&mdash;don’t start recovery operations until the investigation is complete. 
+   Unless you face an imminent threat of losing business-critical data&mdash;such as deletion, encryption, and exfiltration&mdash;balance the risk of not making the modification with the projected business impact. For example, temporarily shutting down your organization's internet access may be necessary to protect business-critical assets during an active attack.
+
+   If changes are necessary where the risk of not doing an action is higher than the risk of doing it, document the action in a change log. Changes made during incident response are focused on disrupting the attacker and may impact the business adversely. You will need to roll these changes back after the recovery process.
 
 - Don’t investigate forever
 
@@ -84,15 +102,11 @@ Here are some useful tips:
 
 - Share information
 
-   Confirm that all investigation teams, including all internal teams and external investigators, are fully sharing their data with each other. 
+   Confirm that all investigation teams, including all internal teams and external investigators or insurance providers, are sharing their data with each other, based on the advice of your legal department.  
 
 - Access the right expertise
 
-   Confirm that you integrate people with deep knowledge of the systems into the investigation&mdash;such as internal staff or external entities  like vendors&mdash;not just security generalists. 
-
-- Check with your legal department
-
-   Determine whether they plan to involve law enforcement so you can plan your investigation and recovery procedures appropriately. 
+   Confirm that you integrate people with deep knowledge of the systems into the investigation&mdash;such as internal staff or external entities like vendors&mdash;not just security generalists. 
 
 - Anticipate reduced response capability
 
@@ -102,7 +116,7 @@ A key expectation to manage with stakeholders is that you may never be able to i
 
 ### Operations
 
-For security operations aspects of incident response, here are some critical success factors:
+For security operations aspects of incident response, here are some goals to consider:
 
 - Staying focused
 
@@ -128,7 +142,7 @@ Here are some useful tips:
 
 - Avoid wasteful spending 
 
-   Many major incidents result in the purchase of expensive security tools in a panic that are never deployed or used. If you can’t deploy and use a tool during the investigation&mdash;which can include hiring and training for additional staff with the skill sets needed to operate the tool&mdash;defer acquisition until after you finish the investigation. 
+   Many major incidents result in the purchase of expensive security tools under pressure that are never deployed or used. If you can’t deploy and use a tool during the investigation&mdash;which can include hiring and training for additional staff with the skill sets needed to operate the tool&mdash;defer acquisition until after you finish the investigation. 
 
 - Access deep expertise 
 
@@ -145,7 +159,7 @@ Recovering from incidents can be done effectively from both technical and operat
 
 ### Technical
 
-For the technical aspects of recovering from an incident, here are some critical success factors:
+For the technical aspects of recovering from an incident, here are some goals to consider:
 
 - Don’t boil the ocean
 
@@ -175,11 +189,9 @@ Here are some helpful tips:
 
   Microsoft’s Security Operations Center (SOC) has used a non-production Microsoft 365 tenant for secure communication and collaboration for members of the incident response team. 
 
-A key expectation to manage is that your first recovery attempt may not fully succeed, so you may have to try again. 
-
 ### Operations
 
-For the operations aspects of recovering from an incident, here are some critical success factors:
+For the operations aspects of recovering from an incident, here are some goals to consider:
 
 - Have a clear plan and limited scope
 
@@ -295,6 +307,7 @@ Review your response processes to identify and resolve any gaps found during the
 
 | Resource | Description |
 |:-------|:-----|
+| [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) | A report that encompasses learnings from security experts, practitioners, and defenders at Microsoft to empower people everywhere to defend against cyberthreats. |
 | [Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra) | A set of visual architecture diagrams that show Microsoft’s cybersecurity capabilities and their integration with Microsoft cloud platforms such as Microsoft 365 and Microsoft Azure and third-party cloud platforms and apps. |
 | [Minutes matter infographic](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf) download | An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks.  |
 | [Azure Cloud Adoption Framework security operations](/azure/cloud-adoption-framework/secure/security-operations) | Strategic guidance for leaders establishing or modernizing a security operation function. |
@@ -303,28 +316,3 @@ Review your response processes to identify and resolve any gaps found during the
 | [Microsoft security documentation](/security/) | Additional security guidance from Microsoft. |
 |||
 
-
-<!--
-
-Here are some general steps in the incident response process:
-
-
-3. Examine the endpoints
-
-   Typically, the first priority is to identify affected endpoints so your analysts can rapidly get deep insight. For example, use the Endpoint Detection and Response (EDR) functionality in Azure Sentinel or Microsoft Defender 365 for this.
-
-4. Scope out and fill in the timeline
-
-   The analyst then builds a full picture and timeline of the related chain of events that led to the alert (which may be an adversary’s attack operation or false alarm positive) by following leads from the first host alert. The analyst travels along the timeline:
-
-   - Backward in time: Track backward to identify the entry point into your environment.
-
-   - Forward in time: Follow leads to any endpoints (devices) or assets an attacker may have accessed or attempted to access.
-
-Your analysts can build this picture using the [MITRE ATT&CK™ model](https://attack.mitre.org/) or the [Lockheed Martin Cyber Kill Chain®](https://www.lockheedmartin.com/capabilities/cyber/cyber-kill-chain.html).
-
-
-
-When we last left our heroes in the previous entry, our analyst had built a timeline of the potential adversary attack operation. Of course, knowing what happened doesn’t actually stop the adversary or reduce organizational risk, so let’s remediate this attack!
-
---> 

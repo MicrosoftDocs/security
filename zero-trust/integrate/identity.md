@@ -20,11 +20,13 @@ This guidance is for software providers and technology partners who want to enha
 
 ## Identity Zero Trust integration guide
 
-This integration guide includes instructions for integrating with Azure Active Directory (Azure AD), which provides single sign-on authentication, conditional access, passwordless and multi-factor authentication, automated user provisioning and many more features that enable companies to protect and automate identity processes at scale.
+This integration guide covers Azure Active Directory as well as Azure Active Directory B2C.
 
-The guidance in this article will help you get started integrating with Azure AD to enhance your own product or service. There are also [advanced integration scenario](#advanced-integration-scenarios) guides linked at the end of the article that provide guidance on specific integration scenarios.
+Azure Active Directory is Microsoft's cloud-based identity and access management service. It provides single sign-on authentication, conditional access, passwordless and multi-factor authentication, automated user provisioning and many more features that enable enterprises to protect and automate identity processes at scale.
 
-### Azure Active Directory
+Azure Active Directory B2C is a business-to-customer identity access management (CIAM) solution which customers use to implement secure white-label authentication solutions that scale easily and blend in with branded web and mobile application experiences. The integration guidance is available be in the [Azure AD B2C](#azure-ad-b2c) section below.
+
+## Azure Active Directory
 
 Azure Active Directory (Azure AD) is Microsoft’s cloud enterprise identity service. It provides conditional access to resources by using myriad input signals and enforcing policies set by organizations. As an independent software vendor (ISV) or technology partner, you can integrate with many of Azure AD’s features by using [Microsoft Graph](/graph/overview) and the [Microsoft identity platform](/azure/active-directory/develop/app-resilience-continuous-access-evaluation). You can also gain access to the risk signals Azure AD calculates and feed your own information back into the system to create a safer environment for all.
 
@@ -96,6 +98,33 @@ Many business applications were created to work inside of a protected corporate 
 [Become a Microsoft-compatible FIDO2 security key vendor](/azure/active-directory/authentication/concept-fido2-hardware-vendor)
 FIDO2 security keys can replace weak credentials with strong hardware-backed public/private-key credentials which cannot be reused, replayed, or shared across services. You can become a Microsoft-compatible FIDO2 security key vendor by following the process in this document.
 
+## Azure AD B2C
+
+Azure AD B2C is a customer identity and access management (CIAM) solution capable of supporting millions of users and billions of authentications per day. It is a white-label authentication solution that enables user experiences which blend seamlessly with branded web and mobile applications.
+
+Independent software vendors (ISVs) can integrate their own products and services with the identity and access management capabilities of Azure AD B2C. As with Azure AD, partners can integrate with Azure AD B2C by using [Microsoft Graph](/azure/active-directory-b2c/microsoft-graph-operations) and key security APIs such as the Conditional Access, confirm compromise, and risky user APIs. In addition, this section includes several other integration opportunities ISV partners can support.
+
+We highly recommend customers using Azure AD B2C (and solutions that are integrated with it) activate [Identity Protection and Conditional Access in Azure AD B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+
+### Integrate with RESTful endpoints
+
+ISVs can integrate their solutions via RESTful endpoints to enable multifactor authentication (MFA) , do role-based access control (RBAC), enable identity verification and proofing, improve security with bot detection and fraud protection, and meet Payment Services Directive 2 (PSD2) Secure Customer Authentication (SCA) requirements.
+
+You can find [guidance on how to use our RESTful endpoints](/azure/active-directory-b2c/api-connectors-overview?pivots=b2c-user-flow) to integrate your applications with B2C capabilities in the B2C documentation. In addition, we have published detailed sample walkthroughs of partners who have integrated using the RESTful APIs:
+
+- [Identity verification and proofing](/azure/active-directory-b2c/partner-gallery#identity-verification-and-proofing), which enables customers to verify the identity of their end users
+- [Role-based access control](/azure/active-directory-b2c/partner-gallery#role-based-access-control), which enables granular access control to end users
+- [Secure hybrid access to on-premises application](/azure/active-directory-b2c/partner-gallery#role-based-access-control), which enables end users to access on-premises and legacy applications with modern authentication protocols
+- [Fraud protection](/azure/active-directory-b2c/partner-gallery#fraud-protection), which enables customers to protect their applications and end users from fraudulent login attempts and bot attacks
+
+### Web application firewall
+
+Web Application Firewall (WAF) provides centralized protection for web applications from common exploits and vulnerabilities. Azure AD B2C enables ISVs to integrate their WAF service such that all traffic to Azure AD B2C custom domains (for example, login.contoso.com) always pass through the WAF service, providing an additional layer of security.
+
+Implementing a WAF solution requires that you configure Azure AD B2C custom domains. You can read how to do this in our [tutorial on enabling custom domains](/azure/active-directory-b2c/custom-domain?pivots=b2c-user-flow). You can also [see existing partners who have created WAF solutions that integrate with Azure AD B2C](/azure/active-directory-b2c/partner-gallery#web-application-firewall).
+
 ## Next steps
 
 - [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
+- [ISV Partner gallery for Azure AD B2C](/azure/active-directory-b2c/partner-gallery)
+- [Identity Protection and Conditional Access for Azure AD B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview)

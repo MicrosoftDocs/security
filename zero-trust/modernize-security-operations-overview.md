@@ -16,19 +16,19 @@ Modernizing security operations with Zero Trust requires rigorous prioritization
 
 Continue your [Zero Trust Rapid Modernization Plan (RaMP)](zero-trust-ramp-overview.md#ramp-initiatives-for-zero-trust) deployment with these continued steps:
 
-3. [Streamline responses](modernize-security-operations-streamline-response.md)
+4. [Streamline responses](modernize-security-operations-streamline-response.md)
  
    The first priority for SecOps is to master threat response and remediation on commonly attacked resources using Extended Detection and Response (XDR) technology provide high quality alerts for these new resource types, bypassing the manual effort and delays when trying to build every alert in a security information and event management (SIEM). 
 
    Streamlining the processes for these common attacks. Focusing the triage (Tier 1) and investigation (Tier 2) analyst teams on mastering these attacks will catch both commodity and advanced attackers earlier in the process, reducing risk to the organization. 
  
-4. [Unify visibility](modernize-security-operations-unify-visibility.md)
+5. [Unify visibility](modernize-security-operations-unify-visibility.md)
 
    While it’s difficult to create high-quality individual alerts from raw data in SIEMs, they are very useful for bringing all the data and context together for investigations and for threat hunting. 
 
    This provides you a broad view across your entire estate and reduces blind spots where attackers may dwell. 
 
-5. [Reduce manual effort](modernize-security-operations-reduce-manual-effort.md)
+6. [Reduce manual effort](modernize-security-operations-reduce-manual-effort.md)
 
    At all times, security operations should be focused on reducing the toil and suffering from manual and repetitive tasks such as switching tools, typing commands, and copying and pasting data. 
 
@@ -36,4 +36,4 @@ Continue your [Zero Trust Rapid Modernization Plan (RaMP)](zero-trust-ramp-overv
 
 ## Next step
 
-Begin the modernize security operations initiative with [Step 3. Streamline response](modernize-security-operations-streamline-response.md).
+Begin the modernize security operations initiative with [Step 4. Streamline response](modernize-security-operations-streamline-response.md).

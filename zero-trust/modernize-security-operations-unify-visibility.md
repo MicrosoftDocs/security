@@ -1,5 +1,5 @@
 ---
-title: Step 4. Unify visibility
+title: Step 5. Unify visibility
 description: Modernize security operations - Step 4. Unify visibility 
 ms.service: security
 ms.author: josephd
@@ -8,7 +8,7 @@ manager: dansimp
 ms.topic: conceptual
 ---
 
-# Step 4. Unify visibility
+# Step 5. Unify visibility
 
 While it’s difficult to create a high-quality individual alerts from raw data in security information and event management (SIEM) solutions, they are extraordinarily useful for bringing all the data and context together for investigations and for threat hunting, allowing for a broad view across your entire estate, reducing blind spots where attackers may dwell.
 
@@ -42,4 +42,4 @@ Meet these deployment objectives to unify visibility in your SecOps for Zero Tru
 
 ## Next step
 
-Complete to modernize your security operations for Zero Trust with [Step 5. Reduce manual effort](modernize-security-operations-reduce-manual-effort.md).
+Complete to modernize your security operations for Zero Trust with [Step 6. Reduce manual effort](modernize-security-operations-reduce-manual-effort.md).

@@ -71,16 +71,23 @@
         href: user-access-productivity-overview.md
       - name: Step 1. Explicitly validate trust for all access requests
         href: user-access-productivity-validate-trust.md
-      - name: Step 2. Increase security for accessing key resources
-        href: user-access-productivity-increase-security-access.md
+    - name: Data, compliance, and governance
+      expanded: false
+      items:
+      - name: Overview
+        href: data-compliance-governance-overview.md
+      - name: Step 2. Ransomware recovery readiness
+        href: data-compliance-gov-ransomware-recovery-readiness.md
+      - name: Step 3. Data
+        href: data-compliance-gov-data.md
     - name: Modernize security operations
       expanded: false
       items:
       - name: Overview
         href: modernize-security-operations-overview.md
-      - name: Step 3. Streamline response
+      - name: Step 4. Streamline response
         href: modernize-security-operations-streamline-response.md
-      - name: Step 4. Unify visibility
+      - name: Step 5. Unify visibility
         href: modernize-security-operations-unify-visibility.md
-      - name: Step 5. Reduce manual effort
+      - name: Step 6. Reduce manual effort
         href: modernize-security-operations-reduce-manual-effort.md

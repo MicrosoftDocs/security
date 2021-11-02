@@ -1,6 +1,6 @@
 ---
-title: Step 6. Reduce manual effort
-description: Modernize security operations - Step 5. Reduce manual effort
+title: Step 2. Ransomware recovery readiness
+description: Ransomware recovery readiness 
 ms.service: security
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -8,17 +8,14 @@ manager: dansimp
 ms.topic: conceptual
 ---
 
-# Step 6. Reduce manual effort
+# Step 2. Ransomware recovery readiness
 
-At all times, SecOps should be focused on reducing the toil and suffering from manual and repetitive tasks such as switching tools, typing commands, and copying and pasting data. 
+TBD
 
-Focusing on giving analysts a streamlined end-to-end integrated experience with Security Orchestration, Automation and Response (SOAR) technology will increase both effectiveness and morale. 
-
-SOAR technology is built into both Microsoft 365 Defender and Azure Sentinel.
 
 ### Program and project member accountabilities
 
-This table describes a SOAR implementation in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+This table describes ransomware recovery readiness in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
 | Lead | Owner | Accountability |
 |:-------|:-------|:-----|
@@ -31,7 +28,7 @@ This table describes a SOAR implementation in terms of a sponsorship/program man
 
 ### Deployment objectives
 
-Meet these deployment objectives to reduce manual effort in your SecOps for Zero Trust.
+Meet these deployment objectives to prepare your organization for recovering from a ransomware attack.
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
@@ -43,4 +40,9 @@ Meet these deployment objectives to reduce manual effort in your SecOps for Zero
 | <input type="checkbox" /> | 6.  | |  |
 | <input type="checkbox" /> | 7.  | |  |
 | <input type="checkbox" /> | 8.  | |  |
+
+
+## Next step
+
+Continue the user access and productivity initiative with [Step 3. Data](data-compliance-gov-data.md).
 

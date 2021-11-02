@@ -1,5 +1,5 @@
 ---
-title: Step 3. Streamline response
+title: Step 4. Streamline response
 description: Modernize security operations - Step 3. Streamline response 
 ms.service: security
 ms.author: josephd
@@ -8,7 +8,7 @@ manager: dansimp
 ms.topic: conceptual
 ---
 
-# Step 3. Streamline response
+# Step 4. Streamline response
 
 Your SecOps must master threat response and remediation on commonly-attacked resources using Extended Detection and Response (XDR) technology provide high quality alerts for these new resource types, bypassing the manual effort and delays when trying to build every alert in a security information and event management (SIEM) solution. 
 
@@ -45,4 +45,4 @@ Meet these deployment objectives to streamline your SecOps for Zero Trust.
 
 ## Next step
 
-Continue to modernize your security operations for Zero Trust with [Step 4. Unify visibility](modernize-security-operations-unify-visibility.md).
+Continue to modernize your security operations for Zero Trust with [Step 5. Unify visibility](modernize-security-operations-unify-visibility.md).

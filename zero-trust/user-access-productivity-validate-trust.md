@@ -22,6 +22,10 @@ This includes using Zero Trust to explicitly validate trust for all access reque
 
   Require device integrity and health compliance for access.
 
+- [Apps](#apps)
+
+  Enable Azure Active Directory (Azure AD) for all SaaS apps and VPN authentication and publish legacy on-premises and IaaS-based Web services with Azure AD Application Proxy.
+
 After completing this step, you will have built out this part of the Zero Trust architecture.
 
 ![The identities and devices sections of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-and-devices.png)
@@ -122,7 +126,17 @@ You have now built out the **devices** section of the Zero Trust architecture.
 
 ![The devices section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-devices.png)
 
+
+## Apps
+
+Content TBD
+
+After completing these deployment objectives, you will have built out the **apps** section of the Zero Trust architecture.
+
+![The apps section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png)
+
+
 ## Next step
 
-Continue the user access and productivity initiative with [Step 2. Increase security for accessing key resources](user-access-productivity-increase-security-access.md).
+Continue the user access and productivity initiative with [Data, Compliance, and Governance](data-compliance-governance-overview.md).
 

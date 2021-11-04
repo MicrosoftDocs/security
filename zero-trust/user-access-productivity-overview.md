@@ -16,8 +16,6 @@ The user access and productivity initiative for Zero Trust RaMP consists of thes
 
 - [Step 1. Explicitly validate trust for all access requests](user-access-productivity-validate-trust.md)
 
-- [Step 2. Increase security for accessing key resources](user-access-productivity-increase-security-access.md)
-
 ## Next step
 
 Begin the user access and productivity initiative with [Step 1. Explicitly validate trust for all access requests](user-access-productivity-validate-trust.md).

@@ -26,6 +26,11 @@ This includes using Zero Trust to explicitly validate trust for all access reque
 
   Enable Azure Active Directory (Azure AD) for all SaaS apps and VPN authentication and publish legacy on-premises and IaaS-based Web services with Azure AD Application Proxy.
 
+- [Network](#network)
+
+  Apply additional traffic filtering and segmentation to private networks to protect business critical data and applications.
+
+
 After completing this step, you will have built out this part of the Zero Trust architecture.
 
 ![The identities and devices sections of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-and-devices.png)
@@ -48,18 +53,6 @@ This table describes the overall protection of your user accounts in terms of a 
 | | Security Governance and/or Identity Admin | Monitor to ensure compliance |
 | | User Education | Ensure guidance for users reflects policy updates |
 
-<!--
-
-| Lead | Implementer | Accountability |
-|:-------|:-------|:-----|
-| [Central IT](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) sponsored by CISO, CIO, or Director of Identity | | Executive sponsorship |
-| Program lead from [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture) | | Drive results and cross-team collaboration |
-|  | [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture)  | Advise on configuration and standards |
-| | [Security Policy and Standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) | Update standards and policy documents |
-| | [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) | To implement any changes |
-| | [Security Compliance Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) | Monitor to ensure compliance |
-
---> 
 
 ### Deployment objectives
 
@@ -98,17 +91,6 @@ This table describes the overall protection of your devices in terms of a sponso
 | | Security Governance and/or MDM Admin | Monitor to ensure compliance |
 | | User Education | Ensure guidance for users reflects policy updates |
 
-<!--
-
-| Lead | Implementer | Accountability |
-|:-------|:-------|:-----|
-| [Central IT](/azure/cloud-adoption-framework/organize/central-it) Operations or CIO | | Executive sponsorship |
-| Program lead from [Central IT](/azure/cloud-adoption-framework/organize/central-it) infrastructure | | Drive results and cross-team collaboration |
-|  | [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture)  | Advise on configuration and standards |
-| | [Security Policy and Standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) | Update standards and policy documents |
-| | [Security Compliance Management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) | Monitor to ensure compliance |
-
---> 
 
 ### Deployment objectives
 
@@ -128,6 +110,8 @@ You have now built out the **devices** section of the Zero Trust architecture.
 
 
 ## Apps
+
+From Mark's Ignite deck:
 
 SaaS apps:
 
@@ -158,7 +142,28 @@ This table describes a Zero Trust implementation for apps in terms of a sponsors
 
 ### Deployment objectives
 
-Meet these deployment objectives to ensure Zero Trust protection for your apps.
+From App protection section of cloud security model for SaaS and PaaS apps:
+
+Acquisition
+
+1. 	Verify registration and certificate.
+2. 	Register app in tenant.
+3. 	Restrict user consent operations with an app consent policy.
+
+Deployment
+
+1. Azure AD Conditional Access policies: Add app to the list of allowed apps.
+2. Intune: Add app to MAM and APP policies.
+3. Try the app for 30 days in a test tenant.
+4. Sign-off for the app in your production tenant.
+5. First 60 days in production tenant. 
+
+Run state
+
+1. Monitor Azure AD identity Protection alerts for compromised credentials.
+2. Update Conditional Access and Intune policies as needed.
+
+Meet these deployment objectives to ensure Zero Trust protection for your SaaS and PaaS apps that use Azure AD.
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
@@ -171,6 +176,25 @@ Meet these deployment objectives to ensure Zero Trust protection for your apps.
 | <input type="checkbox" /> | 7.  | |  |
 | <input type="checkbox" /> | 8.  | |  |
 
+Update and modernize authentication security for applications that don’t directly support modern protocols like OAuth/OIDC and SAML by modernizing and then going beyond VPN authentication in a two-step process
+
+Improve VPN Security - By connecting your VPN appliance to Azure AD authentication, VPN sessions benefit from the added security of explicit validation of user account/session and device trustworthiness. 
+Publish Applications – Move applications off of VPN by publishing existing on-premises (and IaaS) applications through Azure AD App proxy, enabling you to take advantages of strong Azure AD authentication from step 1, improve user experience, and limit accounts to accessing a single application at a time (instead of a VPN that typically provides access to all ports/protocols of the whole network).
+
+Meet these deployment objectives to ensure Zero Trust protection for your on-premises apps.
+
+| Done | Deployment objective | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | 1.  | |  |
+| <input type="checkbox" /> | 2.  | |  |
+| <input type="checkbox" /> | 3.  | |  |
+| <input type="checkbox" /> | 4.  | |  |
+| <input type="checkbox" /> | 5.  | |  |
+| <input type="checkbox" /> | 6.  | |  |
+| <input type="checkbox" /> | 7.  | |  |
+| <input type="checkbox" /> | 8.  | |  |
+
+
 After completing these deployment objectives, you will have built out the **apps** section of the Zero Trust architecture.
 
 ![The apps section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png)
@@ -178,7 +202,7 @@ After completing these deployment objectives, you will have built out the **apps
 
 ## Network
 
-Content TBD
+From Mark's Ignite deck:
 
 Ensure devices and users are not trusted just because they are on an internal network. Encrypt all internal communications, limit access by policy, and employ microsegmentation and real-time threat detection.
 
@@ -216,8 +240,20 @@ Meet these deployment objectives to ensure Zero Trust protection for your on-pre
 | <input type="checkbox" /> | 7.  | |  |
 | <input type="checkbox" /> | 8.  | |  |
 
-After completing these deployment objectives, you will have built out the **network** section of the Zero Trust architecture.
+From the Zero Trust stack diagram:
 
+SaaS and PaaS
+Deploy cloud native filtering and protection for known threats
+
+IaaS with Azure AD DS
+Deploy cloud network segmentation with fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
+Use Azure DDoS Protection Standard for ML-based threat protection and filtering with context-based signals
+
+Across SaaS/PaaS/IaaS
+Deploy on-premises network segmentation with many ingress/egress cloud micro-perimeters and some micro-segmentation
+Require encryption for all traffic connections, between IaaS components, and between on-premises users and apps (including over ExpressRoute, if used)
+
+After completing these deployment objectives, you will have built out the **network** section of the Zero Trust architecture.
 
 ## Next step
 

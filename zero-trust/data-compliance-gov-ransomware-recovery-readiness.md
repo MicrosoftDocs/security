@@ -34,7 +34,7 @@ Identifying the most sensitive assets and protecting them at a higher level of a
 
 ## Secure backups
 
-You must ensure that critical systems and their data are backed up and backups are protected against deliberate erasure or encryption by an attacker.
+You must ensure that critical systems and their data are backed up and backups are immutable to protect against deliberate erasure or encryption by an attacker.
 
 Attacks on your backups focus on crippling your organization’s ability to respond without paying, frequently targeting backups and key documentation required for recovery to force you into paying extortion demands. 
 
@@ -55,22 +55,26 @@ This table describes the overall protection of your data from ransomware in term
 | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Operations or CIO | | Executive sponsorship |
 | Program lead from [Central IT](/azure/cloud-adoption-framework/organize/central-it) infrastructure | | Drive results and cross-team collaboration |
 |  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Infrastructure/Backup | Enable Infrastructure backup |
-|  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Productivity / End User | Enable OneDrive Backup |
+|  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Productivity/End User | Enable OneDrive Backup |
 |  | [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture)  | Advise on configuration and standards |
 | | [Security Policy and Standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) | Update standards and policy documents |
 | | [Security Compliance Management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) | Monitor to ensure compliance |
 |  |  |  |
 
-### Implementation checklist
 
-Apply these best practices to secure your backup infrastructure.
+### Deployment objectives
 
-| Done| Task | Description |
-|:-------|:-------|:-----|
-| <input type="checkbox" /> | Backup all critical systems automatically on a regular schedule. | Allows you to recover data up to the last backup. |
-| <input type="checkbox" /> | Regularly exercise your business continuity/disaster recovery (BC/DR) plan. | Ensures rapid recovery of business operations by treating a ransomware or extortion attack with the same importance as a natural disaster. |
-| <input type="checkbox" /> | Protect backups against deliberate erasure and encryption: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site. | Backups that are accessible by attackers can be rendered unusable for business recovery. |
-| <input type="checkbox" /> | Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | Attackers deliberately target these resources because it impacts your ability to recover. |
+Meet these deployment objectives to to secure your backup infrastructure.
+
+| Done | Deployment objective | Owner |
+|:-------|:-------|:-----|:--------|
+| <input type="checkbox" /> | 1. Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | IT architect or implementator |
+| <input type="checkbox" /> | 2. Establish process to backup all critical systems automatically on a regular schedule and monitor adherance. | IT backup administrator  |
+| <input type="checkbox" /> | 3. Establish process and schedule to regularly exercise your business continuity/disaster recovery (BC/DR) plan. | IT architect |
+| <input type="checkbox" /> | 4. Include protecting backups against deliberate erasure and encryption in your backup plan: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site.  | IT backup administrator |
+
+
+<!--
 
 ### Implementation results and timelines
 
@@ -109,6 +113,8 @@ Apply these best practices to protect your organization data.
 | <input type="checkbox" /> | Designate [Protected Folders](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). | Makes it more difficult for unauthorized applications to modify the data in these folders. |
 | <input type="checkbox" /> | Review your permissions: <br><br> - Discover broad write/delete permissions on file shares, SharePoint, and other solutions. Broad is defined as many users having write/delete permissions for business-critical data. <br><br> - Reduce broad permissions while meeting business collaboration requirements.  <br><br> - Audit and monitor to ensure broad permissions don’t reappear. | Reduces risk from broad access-enabling ransomware activities. |
 |  |  |  |
+
+--> 
 
 ## Next step
 

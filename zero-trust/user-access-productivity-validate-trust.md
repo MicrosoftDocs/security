@@ -70,7 +70,7 @@ Meet these deployment objectives to protect your accounts with Zero Trust.
 | <input type="checkbox" /> | 1. Self-service password reset (SSPR) has been enabled, which gives you credential reset capabilities | IT implementer | [Plan an Azure Active Directory self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment) |
 | <input type="checkbox" /> | 2. Multi-Factor Authentication (MFA) has been enabled and appropriate methods for MFA have been selected | IT implementer | [Plan an Azure Active Directory Multi-Factor Authentication deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) |
 | <input type="checkbox" /> | 3. Combined User Registration has been enabled for your directory, allows users to register for SSPR and MFA in one step | IT implementer | [Enable combined security information registration in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined) |
-| <input type="checkbox" /> | 4. Configure a Conditional Access policy to require MFA registration. | IT implementer | [How To: Configure the Azure AD Multi-Factor Authentication registration policy](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) |
+| <input type="checkbox" /> | 4. Configure a Conditional Access policy to require MFA registration. | IT implementer | [How To: Configure the Azure AD Multi-Factor Authentication registration policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) |
 | <input type="checkbox" /> | 5. Enable user and sign-in risk-based policies to protect user access to resources. | IT implementer | [How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) |
 | <input type="checkbox" /> | 6. Detect and block known weak passwords and their variants, and block additional weak terms specific to your organization. | IT implementer | [Eliminate bad passwords using Azure Active Directory Password Protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) |
 | <input type="checkbox" /> | 7. Microsoft Defender for Identity | IT implementer | Deploy and enable [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is#whats-next). Review and mitigate any open alerts. |
@@ -129,11 +129,94 @@ You have now built out the **devices** section of the Zero Trust architecture.
 
 ## Apps
 
-Content TBD
+SaaS apps:
+
+Ensure all your SaaS apps are using Azure AD for authentication.
+
+Improve access security across your estate by using the Azure AD authentication security you configured in step 1, starting with your SaaS applications.
+
+On-premises applications
+
+Update and modernize authentication security for applications that don’t directly support modern protocols like OAuth/OIDC and SAML by modernizing and then going beyond VPN authentication in a two-step process
+
+Improve VPN Security - By connecting your VPN appliance to Azure AD authentication, VPN sessions benefit from the added security of explicit validation of user account/session and device trustworthiness. 
+Publish Applications – Move applications off of VPN by publishing existing on-premises (and IaaS) applications through Azure AD App proxy, enabling you to take advantages of strong Azure AD authentication from step 1, improve user experience, and limit accounts to accessing a single application at a time (instead of a VPN that typically provides access to all ports/protocols of the whole network).
+
+
+### Program and project member accountabilities
+
+This table describes a Zero Trust implementation for apps in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+
+| Lead | Owner | Accountability |
+|:-------|:-------|:-----|
+|  CISO, CIO, or Director of Identity Security | | Executive sponsorship |
+| Program lead from SecOps Leadership| | Drive results and cross-team collaboration |
+| | Security Architect  | Advise on configuration and standards |
+| | SecOps Analysts | Implement configuration changes |
+| | SecOps Analysts | Update standards and policy documents |
+| | Security Governance | Monitor to ensure compliance |
+
+### Deployment objectives
+
+Meet these deployment objectives to ensure Zero Trust protection for your apps.
+
+| Done | Deployment objective | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | 1.  | |  |
+| <input type="checkbox" /> | 2.  | |  |
+| <input type="checkbox" /> | 3.  | |  |
+| <input type="checkbox" /> | 4.  | |  |
+| <input type="checkbox" /> | 5.  | |  |
+| <input type="checkbox" /> | 6.  | |  |
+| <input type="checkbox" /> | 7.  | |  |
+| <input type="checkbox" /> | 8.  | |  |
 
 After completing these deployment objectives, you will have built out the **apps** section of the Zero Trust architecture.
 
 ![The apps section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png)
+
+
+## Network
+
+Content TBD
+
+Ensure devices and users are not trusted just because they are on an internal network. Encrypt all internal communications, limit access by policy, and employ microsegmentation and real-time threat detection.
+
+Enable good user experience over both public and private network. Apply additional traffic filtering and segmentation to private networks to protect business critical data and applications. 
+
+Establish basic traffic filtering and segmentation to isolate business-critical or highly vulnerable resources
+
+Microsegmentation – this group of users can access from these devices. Networking: physical, virtual; what traffic is allowed to flow. / Additional identity and network restrictions (dynamic trust-based and/or static rules)
+
+### Program and project member accountabilities
+
+This table describes a Zero Trust implementation for public and on-premises networks in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+
+| Lead | Owner | Accountability |
+|:-------|:-------|:-----|
+|  CISO, CIO, or Director of Identity Security | | Executive sponsorship |
+| Program lead from SecOps Leadership| | Drive results and cross-team collaboration |
+| | Security Architect  | Advise on configuration and standards |
+| | SecOps Analysts | Implement configuration changes |
+| | SecOps Analysts | Update standards and policy documents |
+| | Security Governance | Monitor to ensure compliance |
+
+### Deployment objectives
+
+Meet these deployment objectives to ensure Zero Trust protection for your on-premises network and cloud-based traffic.
+
+| Done | Deployment objective | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | 1.  | |  |
+| <input type="checkbox" /> | 2.  | |  |
+| <input type="checkbox" /> | 3.  | |  |
+| <input type="checkbox" /> | 4.  | |  |
+| <input type="checkbox" /> | 5.  | |  |
+| <input type="checkbox" /> | 6.  | |  |
+| <input type="checkbox" /> | 7.  | |  |
+| <input type="checkbox" /> | 8.  | |  |
+
+After completing these deployment objectives, you will have built out the **network** section of the Zero Trust architecture.
 
 
 ## Next step

@@ -111,21 +111,7 @@ You have now built out the **devices** section of the Zero Trust architecture.
 
 ## Apps
 
-From Mark's Ignite deck:
-
-SaaS apps:
-
-Ensure all your SaaS apps are using Azure AD for authentication.
-
-Improve access security across your estate by using the Azure AD authentication security you configured in step 1, starting with your SaaS applications.
-
-On-premises applications
-
-Update and modernize authentication security for applications that don’t directly support modern protocols like OAuth/OIDC and SAML by modernizing and then going beyond VPN authentication in a two-step process
-
-Improve VPN Security - By connecting your VPN appliance to Azure AD authentication, VPN sessions benefit from the added security of explicit validation of user account/session and device trustworthiness. 
-Publish Applications – Move applications off of VPN by publishing existing on-premises (and IaaS) applications through Azure AD App proxy, enabling you to take advantages of strong Azure AD authentication from step 1, improve user experience, and limit accounts to accessing a single application at a time (instead of a VPN that typically provides access to all ports/protocols of the whole network).
-
+Because apps can be used my malicious users to infiltrate your organization, you need to ensure that your apps are using services, such as Azure AD and Intune, that provide Zero Trust protection.
 
 ### Program and project member accountabilities
 
@@ -141,6 +127,19 @@ This table describes a Zero Trust implementation for apps in terms of a sponsors
 | | Security Governance | Monitor to ensure compliance |
 
 ### Deployment objectives
+
+Meet these deployment objectives to ensure Zero Trust protection for your SaaS, PaaS, and on-premises apps.
+
+| Done | Type of app or app usage | Deployment objectives | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | SaaS and PaaS apps that are part of your Microsoft cloud subscriptions | Use Azure AD app registration and certification and app consent policies. |  | [Application management in Azure AD](/azure/active-directory/manage-apps/what-is-application-management). Use Azure AD Conditional Access policies and Intune MAM and APP policies to allow app usage. |
+| <input type="checkbox" /> | SaaS and PaaS apps that are **NOT** part of your Microsoft cloud subscriptions | Ensure that they are using Azure AD for authentication. This means that all sign-ins to the app are subject to user and device security requirements such as multifactor authentication and meeting defined requirements for device compliance. |  | [Integrating all your apps with Azure AD](/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad) |
+| <input type="checkbox" /> | On-premises users accessing on-premises applications, which includes applications running on both on-premises and IaaS-based servers | Ensure that your apps support modern authentication protocols such as OAuth/OIDC and SAML. Contact your application vendor for updates to protect user sign-in. |  | See your vendor documentation. |
+| <input type="checkbox" /> | Remote users accessing on-premises applications through a VPN connection | configure your VPN appliance so that it uses Azure AD as its identity provider |  | See your vendor documentation. |
+| <input type="checkbox" /> | Temote users accessing on-premises **web** applications through a VPN connection | Publish the applications through Azure AD Application Proxy. Remote users only need to access the individual published application, which is routed to the on-premises web server through an application proxy connector. <br><br> Connections take advantage of strong Azure AD authentication and limits users and their devices to accessing a single application at a time. In contrast, the scope of a typical remote access VPN is all locations, protocols, and ports of the entire on-premises network. |  | [Remote access to on-premises applications through Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy) |
+
+<!--
+
 
 From App protection section of cloud security model for SaaS and PaaS apps:
 
@@ -163,18 +162,15 @@ Run state
 1. Monitor Azure AD identity Protection alerts for compromised credentials.
 2. Update Conditional Access and Intune policies as needed.
 
-Meet these deployment objectives to ensure Zero Trust protection for your SaaS and PaaS apps that use Azure AD.
+For your SaaS and PaaS apps, ensure that they are using Azure AD for authentication. This means that all sign-ins to the app are subject to user and device security requirements such as multifactor authentication and meeting defined requirements for device compliance. For your SaaS and PaaS apps that are part of a Microsoft cloud subscription, use Azure AD app registration and certification
 
-| Done | Deployment objective | Owner | Documentation |
-|:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1.  | |  |
-| <input type="checkbox" /> | 2.  | |  |
-| <input type="checkbox" /> | 3.  | |  |
-| <input type="checkbox" /> | 4.  | |  |
-| <input type="checkbox" /> | 5.  | |  |
-| <input type="checkbox" /> | 6.  | |  |
-| <input type="checkbox" /> | 7.  | |  |
-| <input type="checkbox" /> | 8.  | |  |
+For on-premises users accessing on-premises applications, which includes applications running on both on-premises and IaaS-based servers, ensure that your apps support modern authentication protocols such as OAuth/OIDC and SAML. Contact your application vendor for updates to protect user sign-in.
+
+For remote users accessing on-premises applications through a VPN connection, configure your VPN appliance so that it uses Azure AD as its identity provider. 
+
+For remote users accessing on-premises **web** applications through a VPN connection, publish the applications through Azure AD Application Proxy. Remote users only need to access the individual published application, which is routed to the on-premises web server through an application proxy connector. Connections take advantage of strong Azure AD authentication and limits users and their devices to accessing a single application at a time. In contrast, the scope of a typical remote access VPN is all locations, protocols, and ports of the entire on-premises network.
+
+
 
 Update and modernize authentication security for applications that don’t directly support modern protocols like OAuth/OIDC and SAML by modernizing and then going beyond VPN authentication in a two-step process
 
@@ -194,6 +190,7 @@ Meet these deployment objectives to ensure Zero Trust protection for your on-pre
 | <input type="checkbox" /> | 7.  | |  |
 | <input type="checkbox" /> | 8.  | |  |
 
+--> 
 
 After completing these deployment objectives, you will have built out the **apps** section of the Zero Trust architecture.
 

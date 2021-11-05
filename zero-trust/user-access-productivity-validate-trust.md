@@ -213,7 +213,7 @@ This table describes a Zero Trust implementation for public and on-premises netw
 |:-------|:-------|:-----|
 |  CISO, CIO, or Director of Network Security | | Executive sponsorship |
 | Program lead from Networking Leadership| | Drive results and cross-team collaboration |
-| | Security Architect  | Advise on encryption configuration and standards |
+| | Security Architect  | Advise on encryption and access policy configuration and standards |
 | | Network Architect  | Advise on traffic filtering and network architecture changes |
 | | Network Engineers | Design segmentation configuration changes |
 | | Network Implementers | Change networking equipment configuration and update configuration documents |
@@ -225,10 +225,10 @@ Meet these deployment objectives to ensure Zero Trust protection for your on-pre
 
 | Done | Deployment objective | Owner |
 |:-------|:-------|:-----|
-| <input type="checkbox" /> | Require encryption for all traffic connections, between IaaS components, and between on-premises users and apps. | Security Architect |
+| <input type="checkbox" /> | Require encryption for all traffic connections, including between IaaS components and between on-premises users and apps. | Security Architect |
 | <input type="checkbox" /> | Limit access to critical data and applications by policy (user or device identity) or traffic filtering. | Security Architect and/or Network Architect|
 | <input type="checkbox" /> | Deploy on-premises network segmentation with many ingress and egress cloud micro-perimeters and some micro-segmentation. | Network Architect and/or Network Engineer |
-| <input type="checkbox" /> | Use real-time threat detection for on-premises traffic | Security Architect |
+| <input type="checkbox" /> | Use real-time threat detection for on-premises traffic. | SecOps Analysts |
 
 
 <!--

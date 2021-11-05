@@ -98,7 +98,7 @@ Meet these deployment objectives to protect your devices with Zero Trust.
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Register devices with Azure AD |  | [Device identities](https://docs.microsoft.com//azure/active-directory/devices/overview) |
+| <input type="checkbox" /> | 1. Register devices with Azure AD |  | [Device identities](https://docs.microsoft.com/azure/active-directory/devices/overview) |
 | <input type="checkbox" /> | 2. Enroll devices into management and configure configuration profiles |  | [Device management overview](https://docs.microsoft.com/mem/intune/fundamentals/what-is-device-management) |
 | <input type="checkbox" /> | 3. Connect Defender for Endpoint to Intune |  | [Configure Microsoft Defender for Endpoint in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure) |
 | <input type="checkbox" /> | 4. Monitor device compliance/risk as a signal for Conditional Access |  | [Use compliance policies to set rules for devices you manage with Intune](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) |
@@ -111,7 +111,7 @@ You have now built out the **devices** section of the Zero Trust architecture.
 
 ## Apps
 
-Because apps can be used my malicious users to infiltrate your organization, you need to ensure that your apps are using services, such as Azure AD and Intune, that provide Zero Trust protection.
+Because apps are used by malicious users to infiltrate your organization, you need to ensure that your apps are using services, such as Azure AD and Intune, that provide Zero Trust protection or are hardened against attack.
 
 ### Program and project member accountabilities
 
@@ -119,11 +119,13 @@ This table describes a Zero Trust implementation for apps in terms of a sponsors
 
 | Lead | Owner | Accountability |
 |:-------|:-------|:-----|
-|  CISO, CIO, or Director of Identity Security | | Executive sponsorship |
-| Program lead from SecOps Leadership| | Drive results and cross-team collaboration |
-| | Security Architect  | Advise on configuration and standards |
-| | SecOps Analysts | Implement configuration changes |
-| | SecOps Analysts | Update standards and policy documents |
+|  CISO, CIO, or Director of Application Security | | Executive sponsorship |
+| Program lead from Apps Management| | Drive results and cross-team collaboration |
+| | Identity Architect  | Advise on Azure AD configuration for apps |
+| | Developer Architect  | Advise on configuration and standards for in-house on-premises and cloud apps |
+| | Datacenter Architects | Update authentication standards for on-premises apps |
+| | Remote Access Architect | Implement VPN configuration changes |
+| | Azure Network Architect | Deploy Azure AD Application Proxy |
 | | Security Governance | Monitor to ensure compliance |
 
 ### Deployment objectives
@@ -131,12 +133,12 @@ This table describes a Zero Trust implementation for apps in terms of a sponsors
 Meet these deployment objectives to ensure Zero Trust protection for your SaaS, PaaS, and on-premises apps.
 
 | Done | Type of app or app usage | Deployment objectives | Owner | Documentation |
-|:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | SaaS and PaaS apps that are part of your Microsoft cloud subscriptions | Use Azure AD app registration and certification and app consent policies. |  | [Application management in Azure AD](/azure/active-directory/manage-apps/what-is-application-management). Use Azure AD Conditional Access policies and Intune MAM and APP policies to allow app usage. |
-| <input type="checkbox" /> | SaaS and PaaS apps that are **NOT** part of your Microsoft cloud subscriptions | Ensure that they are using Azure AD for authentication. This means that all sign-ins to the app are subject to user and device security requirements such as multifactor authentication and meeting defined requirements for device compliance. |  | [Integrating all your apps with Azure AD](/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad) |
-| <input type="checkbox" /> | On-premises users accessing on-premises applications, which includes applications running on both on-premises and IaaS-based servers | Ensure that your apps support modern authentication protocols such as OAuth/OIDC and SAML. Contact your application vendor for updates to protect user sign-in. |  | See your vendor documentation. |
-| <input type="checkbox" /> | Remote users accessing on-premises applications through a VPN connection | configure your VPN appliance so that it uses Azure AD as its identity provider |  | See your vendor documentation. |
-| <input type="checkbox" /> | Temote users accessing on-premises **web** applications through a VPN connection | Publish the applications through Azure AD Application Proxy. Remote users only need to access the individual published application, which is routed to the on-premises web server through an application proxy connector. <br><br> Connections take advantage of strong Azure AD authentication and limits users and their devices to accessing a single application at a time. In contrast, the scope of a typical remote access VPN is all locations, protocols, and ports of the entire on-premises network. |  | [Remote access to on-premises applications through Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy) |
+|:-------|:-------|:-----|:-----|:-----|
+| <input type="checkbox" /> | SaaS and PaaS apps that are part of your Microsoft cloud subscriptions | Use Azure AD app registration and certification and app consent policies. <br>  Use Azure AD Conditional Access policies and Intune MAM and APP policies to allow app usage. | Identity Architect | [Application management in Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management)  |
+| <input type="checkbox" /> | SaaS and PaaS apps that are **NOT** part of your Microsoft cloud subscriptions | Ensure that they are using Azure AD for authentication. This means that all sign-ins to the app are subject to user and device security requirements such as multifactor authentication and meeting defined requirements for device compliance. | Apps Architect | [Integrating all your apps with Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad) |
+| <input type="checkbox" /> | On-premises users accessing on-premises applications, which includes applications running on both on-premises and IaaS-based servers | Ensure that your apps support modern authentication protocols such as OAuth/OIDC and SAML. Contact your application vendor for updates to protect user sign-in. | Datacenter Architect | See your vendor documentation |
+| <input type="checkbox" /> | Remote users accessing on-premises applications through a VPN connection | Configure your VPN appliance so that it uses Azure AD as its identity provider | Remote Access Architect | See your vendor documentation |
+| <input type="checkbox" /> | Remote users accessing on-premises **web** applications through a VPN connection | Publish the applications through Azure AD Application Proxy. Remote users only need to access the individual published application, which is routed to the on-premises web server through an application proxy connector. <br><br> Connections take advantage of strong Azure AD authentication and limits users and their devices to accessing a single application at a time. In contrast, the scope of a typical remote access VPN is all locations, protocols, and ports of the entire on-premises network. | Azure Network Architect | [Remote access to on-premises applications through Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/app-proxy/application-proxy) |
 
 <!--
 
@@ -199,15 +201,9 @@ After completing these deployment objectives, you will have built out the **apps
 
 ## Network
 
-From Mark's Ignite deck:
+The Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Although it's easy to understand this for cloud services and remote devices, this also applies on your organization network that is firewalled from the public Internet.
 
-Ensure devices and users are not trusted just because they are on an internal network. Encrypt all internal communications, limit access by policy, and employ microsegmentation and real-time threat detection.
-
-Enable good user experience over both public and private network. Apply additional traffic filtering and segmentation to private networks to protect business critical data and applications. 
-
-Establish basic traffic filtering and segmentation to isolate business-critical or highly vulnerable resources
-
-Microsegmentation – this group of users can access from these devices. Networking: physical, virtual; what traffic is allowed to flow. / Additional identity and network restrictions (dynamic trust-based and/or static rules)
+To adhere to Zero Trust, your organization must also address security vulnerabilities on your private network and ensure that you verify explicitly, use least privilege access, and assume breach. Devices, users, and apps are not trusted just because they are on your private network.
 
 ### Program and project member accountabilities
 
@@ -215,40 +211,47 @@ This table describes a Zero Trust implementation for public and on-premises netw
 
 | Lead | Owner | Accountability |
 |:-------|:-------|:-----|
-|  CISO, CIO, or Director of Identity Security | | Executive sponsorship |
-| Program lead from SecOps Leadership| | Drive results and cross-team collaboration |
-| | Security Architect  | Advise on configuration and standards |
-| | SecOps Analysts | Implement configuration changes |
-| | SecOps Analysts | Update standards and policy documents |
-| | Security Governance | Monitor to ensure compliance |
+|  CISO, CIO, or Director of Network Security | | Executive sponsorship |
+| Program lead from Networking Leadership| | Drive results and cross-team collaboration |
+| | Security Architect  | Advise on encryption configuration and standards |
+| | Network Architect  | Advise on traffic filtering and network architecture changes |
+| | Network Engineers | Design segmentation configuration changes |
+| | Network Implementers | Change networking equipment configuration and update configuration documents |
+| | Networking Governance | Monitor to ensure compliance |
 
 ### Deployment objectives
 
 Meet these deployment objectives to ensure Zero Trust protection for your on-premises network and cloud-based traffic.
 
-| Done | Deployment objective | Owner | Documentation |
-|:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1.  | |  |
-| <input type="checkbox" /> | 2.  | |  |
-| <input type="checkbox" /> | 3.  | |  |
-| <input type="checkbox" /> | 4.  | |  |
-| <input type="checkbox" /> | 5.  | |  |
-| <input type="checkbox" /> | 6.  | |  |
-| <input type="checkbox" /> | 7.  | |  |
-| <input type="checkbox" /> | 8.  | |  |
+| Done | Deployment objective | Owner |
+|:-------|:-------|:-----|
+| <input type="checkbox" /> | Require encryption for all traffic connections, between IaaS components, and between on-premises users and apps. | Security Architect |
+| <input type="checkbox" /> | Limit access to critical data and applications by policy (user or device identity) or traffic filtering. | Security Architect and/or Network Architect|
+| <input type="checkbox" /> | Deploy on-premises network segmentation with many ingress and egress cloud micro-perimeters and some micro-segmentation. | Network Architect and/or Network Engineer |
+| <input type="checkbox" /> | Use real-time threat detection for on-premises traffic | Security Architect |
 
-From the Zero Trust stack diagram:
 
-SaaS and PaaS
-Deploy cloud native filtering and protection for known threats
+<!--
 
-IaaS with Azure AD DS
-Deploy cloud network segmentation with fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation
-Use Azure DDoS Protection Standard for ML-based threat protection and filtering with context-based signals
+From Mark's Ignite deck:
+
+. , , and employ  and .
+
+Enable good user experience over both public and private network. 
+
+Apply additional traffic filtering and segmentation to private networks to protect business critical data and applications. 
+Establish basic traffic filtering and segmentation to isolate business-critical or highly vulnerable resources
+
+Microsegmentation – this group of users can access from these devices. Networking: physical, virtual; what traffic is allowed to flow. / 
+
+Additional identity and network restrictions (dynamic trust-based and/or static rules)
 
 Across SaaS/PaaS/IaaS
 Deploy on-premises network segmentation with many ingress/egress cloud micro-perimeters and some micro-segmentation
-Require encryption for all traffic connections, between IaaS components, and between on-premises users and apps (including over ExpressRoute, if used)
+ (including over ExpressRoute, if used)
+
+--> 
+
 
 After completing these deployment objectives, you will have built out the **network** section of the Zero Trust architecture.
 

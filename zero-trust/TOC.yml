@@ -49,7 +49,7 @@
 - name: Zero Trust Rapid Modernization Plan (RaMP)
   expanded: false
   items: 
-    - name: Zero Trust RaMP Overview
+    - name: Overview
       href: zero-trust-ramp-overview.md
     - name: User access and productivity
       expanded: false

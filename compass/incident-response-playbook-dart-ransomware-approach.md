@@ -1,6 +1,6 @@
 ---
 title: Microsoft’s DART ransomware approach and best practices
-description: Understand how Microsoft's Detection and Response Team (DART) responds to  ransomware attacks and their recommendations for containment and post-incident activities.
+description: Understand how Microsoft's Detection and Response Team (DART) responds to ransomware attacks and their recommendations for containment and post-incident activities.
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, microsoft 365 defender
 search.product: DART
 search.appverid: met150
@@ -43,7 +43,7 @@ This article describes:
 - [DART recommendations and best practices](#dart-recommendations-and-best-practices)
 
 >[!Note]
->This article content was derived from the [A guide to combatting human-operated ransomware: Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [A guide to combatting human-operated ransomware: Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)  Microsoft Security team blog posts.
+>This article content was derived from the [A guide to combatting human-operated ransomware: Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [A guide to combatting human-operated ransomware: Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) Microsoft Security team blog posts.
 >
 
 ## How DART uses Microsoft security services

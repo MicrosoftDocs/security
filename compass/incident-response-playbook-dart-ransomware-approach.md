@@ -204,7 +204,7 @@ Other tactical containment actions include:
 
 - Check that every external facing application, including VPN access, is protected by multifactor authentication, preferably using an authentication application that is running on a secured device.
 
-- For devices not using Defender for Endpoint as their primary antivirus software, run a full scan with [Microsoft Safety Scanner](https://docs.microsoft.com/windows/security/threat-protection/intelligence/safety-scanner-download) on isolated known good systems before reconnecting them to the network.
+- For devices not using Defender for Endpoint as their primary antivirus software, run a full scan with [Microsoft Safety Scanner](/windows/security/threat-protection/intelligence/safety-scanner-download) on isolated known good systems before reconnecting them to the network.
 
 - For any legacy operating systems, upgrade to a supported OS or decommission these devices. If these options are not available, take every possible measure to isolate these devices, including network/VLAN isolation, Internet protocol security (IPsec rules), and login restrictions, so they are only accessible to the applications by the users/devices to provide business continuity.
 

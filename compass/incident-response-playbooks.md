@@ -41,6 +41,8 @@ Each playbook includes:
 - **Checklist:** A list of tasks for the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done.
 - **Investigation steps:** Detailed step-by-step guidance for the specific investigation.
 
+Also see [Microsoft’s DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach) for information on how the Detection and Response Team (DART) at Microsoft deals with ransomware attacks.
+
 ## Incident response resources
 
 - [Overview](incident-response-overview.md) for Microsoft security products and resources for new-to-role and experienced analysts

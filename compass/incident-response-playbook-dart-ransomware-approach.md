@@ -42,6 +42,10 @@ This article describes:
 - [The DART approach to conducting ransomware incident investigations](#the-dart-approach-to-conducting-ransomware-incident-investigations)
 - [DART recommendations and best practices](#dart-recommendations-and-best-practices)
 
+>[!Note]
+>This article content was derived from the [A guide to combatting human-operated ransomware: Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [A guide to combatting human-operated ransomware: Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)  Microsoft Security team blog posts.
+>
+
 ## How DART uses Microsoft security services
 
 DART leverages cross-functional teams, such as internal threat intelligence teams, who track adversary activities and behaviors, customer support, and product development teams behind Microsoft products and services. DART also collaborates with other incident response vendors you may have engaged and will share findings whenever possible.
@@ -86,7 +90,7 @@ Here's an example of the Defender for Cloud Apps dashboard, which allows analysi
 
 ### Microsoft Secure Score
 
-The set of Microsoft 365 Defender services provides live remediation recommendations to reduce the attack surface. Microsoft Secure Score is a measurement of an organization’s security posture, with a higher number indicating that more improvement actions have been taken. Refer to the documentation to find out more about how your organization can leverage this feature to prioritize remediation actions that are based on their environment.
+The set of Microsoft 365 Defender services provides live remediation recommendations to reduce the attack surface. Microsoft Secure Score is a measurement of an organization’s security posture, with a higher number indicating that more improvement actions have been taken. See the [Secure Score](/microsoft-365/security/defender/microsoft-secure-score) documentation to find out more about how your organization can leverage this feature to prioritize remediation actions that are based on their environment.
 
 ## The DART approach to conducting ransomware incident investigations
 
@@ -100,7 +104,7 @@ The following are three key steps in DART ransomware investigations:
 |:-------|:-----|:-------|:-------|
 | 1. Assess the current situation | Understand the scope | What initially made you aware of a ransomware attack? <BR><BR> What time/date did you first learn of the incident? <BR><BR> What logs are available and is there any indication that the actor is currently accessing systems? | Investigation and assistance |
 | 2. Identify the affected line-of-business (LOB) apps | Get systems back online | Does the application require an identity? <BR><BR> Are backups of the application, configuration, and data available? <BR><BR> Are the content and integrity of backups regularly verified using a restore exercise? | Investigation and assistance |
-| 3. Explain compromise recovery (CR) process | Remove attacker control from the environment | N/A | Follow-up engagement as needed |
+| 3. Explain the compromise recovery (CR) process | Remove attacker control from the environment | N/A | Follow-up engagement as needed |
 
 ### Step 1. Assess the current situation
 
@@ -124,12 +128,12 @@ Establishing the initial activity date and time is important because it helps na
 
 Logs—such as AV, EDR, and virtual private network (VPN)—are an indicator of suspected compromise. Follow-up questions may include:
 
-- Are logs being aggregated in a Security Information and Event Management (SIEM) solution—such as Microsoft Azure Sentinel, Splunk, ArcSight, and others—and current? What is the retention period of this data?
+- Are logs being aggregated in a Security Information and Event Management (SIEM) solution—such as [Microsoft Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/), Splunk, ArcSight, and others—and current? What is the retention period of this data?
  - Are there any suspected compromised systems that are experiencing unusual activity?
  - Are there any suspected compromised accounts that appear to be actively used by the adversary?
  - Is there any evidence of active command and controls (C2s) in EDR, firewall, VPN, web proxy, and other logs?
 
-As part of assessing the current situation, DART may require an Active Directory Domain Services (AD DS) domain controller that was not compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. DART also asks whether multifactor authentication (MFA) was required for everyone in the company and if Microsoft Azure Active Directory (Azure AD) was used.
+As part of assessing the current situation, DART may require an Active Directory Domain Services (AD DS) domain controller that was not compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. DART also asks whether [multifactor authentication (MFA)](https://www.microsoft.com/security/business/identity-access-management/mfa-multi-factor-authentication/) was required for everyone in the company and if [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) was used.
 
 ### Step 2. Identify the LOB apps that are unavailable due to the incident
 

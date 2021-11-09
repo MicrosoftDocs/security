@@ -43,6 +43,8 @@
                   href: incident-response-playbook-password-spray.md
                 - name: App consent grant
                   href: incident-response-playbook-app-consent.md
+                - name: DART approach to ransomware
+                  href: incident-response-playbook-dart-ransomware-approach.md
     - name: Identity and access management
       items:
         - name: Videos and slides

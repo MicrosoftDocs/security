@@ -98,9 +98,9 @@ The following are three key steps in DART ransomware investigations:
 
 | Step | Goal | Initial questions | DART provides: |
 |:-------|:-----|:-------|:-------|
-| 1. Assess current situation | Understand the scope | What initially made you aware of a ransomware attack? <BR><BR> What time/date did you first learn of the incident? <BR><BR> What logs are available and is there any indication that the actor is currently accessing systems? | Investigation and assistance |
-| 2. Identify line-of-business (LOB) apps | Get systems back online | Does the application require an identity? <BR><BR> Are backups of the application, configuration, and data available? <BR><BR> Are the content and integrity of backups regularly verified using a restore exercise? | Investigation and assistance |
-| 3. Explain compromise recovery process | Remove attacker control from the environment | N/A | Follow-up engagement as needed |
+| 1. Assess the current situation | Understand the scope | What initially made you aware of a ransomware attack? <BR><BR> What time/date did you first learn of the incident? <BR><BR> What logs are available and is there any indication that the actor is currently accessing systems? | Investigation and assistance |
+| 2. Identify the affected line-of-business (LOB) apps | Get systems back online | Does the application require an identity? <BR><BR> Are backups of the application, configuration, and data available? <BR><BR> Are the content and integrity of backups regularly verified using a restore exercise? | Investigation and assistance |
+| 3. Explain compromise recovery (CR) process | Remove attacker control from the environment | N/A | Follow-up engagement as needed |
 
 ### Step 1. Assess the current situation
 
@@ -131,10 +131,9 @@ Logs—such as AV, EDR, and virtual private network (VPN)—are an indicator of 
 
 As part of assessing the current situation, DART may require an Active Directory Domain Services (AD DS) domain controller that was not compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. DART also asks whether multifactor authentication (MFA) was required for everyone in the company and if Microsoft Azure Active Directory (Azure AD) was used.
 
-### Step 2. Identify line-of-business (LOB) apps that are unavailable due to the incident
+### Step 2. Identify the LOB apps that are unavailable due to the incident
 
 This step is critical in figuring out the quickest way to get systems back online while obtaining the evidence required.
-
 
 #### Does the application require an identity?
 
@@ -145,13 +144,11 @@ This step is critical in figuring out the quickest way to get systems back onlin
 
 Are the contents and integrity of backups regularly verified using a restore exercise? This is particularly important after configuration management changes or version upgrades.
 
-### Step 3. Explain the compromise recovery (CR) process
+### Step 3. Explain the CR process
 
 This is a follow-up engagement that may be necessary if DART determines that the control plane, which is typically AD DS, has been compromised.
 
-
 DART’s investigation always has a goal of providing output that feeds directly into the CR process. CR is the process that removes attacker control from an environment and tactically increase security posture within a set period. CR takes place post-security breach. To learn more about CR, read the Microsoft Compromise Recovery Security Practice team’s [CRSP: The emergency team fighting cyber attacks beside customers](https://www.microsoft.com/security/blog/2021/06/09/crsp-the-emergency-team-fighting-cyber-attacks-beside-customers/) blog article.
-
 
 Once DART has gathered the responses to the questions above, they can build a list of tasks and assign owners. A key factor in a successful incident response engagement is thorough, detailed documentation of each work item (such as the owner, status, findings, date, and time), making the compilation of findings at the end of the engagement a straightforward process.
 
@@ -223,7 +220,7 @@ DART recommends implementing the following security recommendations and best pra
 
   - For cloud and forest/domain administrative access, use Microsoft’s [privileged access model (PAM)](#pam).
 
-  - For endpoint administrative management, use [local administrative password solution (LAPS)](#laps).
+  - For endpoint administrative management, use the [local administrative password solution (LAPS)](#laps).
 
 - Implement data protection to block ransomware techniques and to confirm rapid and reliable recovery from an attack.
 

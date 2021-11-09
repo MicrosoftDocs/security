@@ -203,7 +203,7 @@ After completing these deployment objectives, you will have built out the **apps
 
 The Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Although it's easy to understand this for cloud services and remote devices, this also applies on your organization network that is firewalled from the public Internet.
 
-To adhere to Zero Trust, your organization must also address security vulnerabilities on your private network and ensure that you verify explicitly, use least privilege access, and assume breach. Devices, users, and apps are not trusted just because they are on your private network.
+To adhere to Zero Trust, your organization must also address security vulnerabilities on your private network and ensure that you verify explicitly, use least privilege access, and assume breach. Devices, users, and apps are not to be trusted just because they are on your private network.
 
 ### Program and project member accountabilities
 

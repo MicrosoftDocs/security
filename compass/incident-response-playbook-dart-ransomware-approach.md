@@ -39,8 +39,8 @@ The Microsoft Detection and Response Team (DART) responds to security compromise
 This article describes:
 
 - [How DART uses Microsoft security services](#how-dart-uses-microsoft-security-services)
-- [The DART approach to conducting ransomware incident investigations](the-dart-approach-to-conducting-ransomware-incident-investigations)
-- [DART recommendations and best practices](dart-recommendations-and-best-practices)
+- [The DART approach to conducting ransomware incident investigations](#the-dart-approach-to-conducting-ransomware-incident-investigations)
+- [DART recommendations and best practices](#dart-recommendations-and-best-practices)
 
 ## How DART uses Microsoft security services
 
@@ -200,7 +200,7 @@ Other tactical containment actions include:
 
 - Check that every external facing application, including VPN access, is protected by multifactor authentication, preferably using an authentication application that is running on a secured device.
 
-- For devices not using Defender for Endpoint as their primary antivirus software, run a full scan with [Microsoft Safety Scanner](https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download) on isolated known good systems before reconnecting them to the network.
+- For devices not using Defender for Endpoint as their primary antivirus software, run a full scan with [Microsoft Safety Scanner](https://docs.microsoft.com/windows/security/threat-protection/intelligence/safety-scanner-download) on isolated known good systems before reconnecting them to the network.
 
 - For any legacy operating systems, upgrade to a supported OS or decommission these devices. If these options are not available, take every possible measure to isolate these devices, including network/VLAN isolation, Internet protocol security (IPsec rules), and login restrictions, so they are only accessible to the applications by the users/devices to provide business continuity.
 
@@ -268,7 +268,7 @@ Microsoft’s [LAPS](/defender-for-identity/cas-isp-laps) mitigates this by usin
 
 LAPS requires the AD DS schema to be extended to allow for the additional attribute, the LAPS Group Policy templates to be installed, and a small client-side extension to be installed on every workstation and member server to provide the client-side functionality.
 
-You can get LAPS from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=46899).
+You can get LAPS from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=46899).
 
 ## Incident response playbooks
 

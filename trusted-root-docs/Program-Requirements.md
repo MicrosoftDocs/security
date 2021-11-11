@@ -128,15 +128,4 @@ Program.
 
 ### F. Windows 10 Kernel Mode Code Signing (KMCS) Requirements
 
-Windows 10 has heightened requirements to validate kernel-mode drivers.  Drivers must be signed by both Microsoft and a Program partner using Extended Validation requirements.  All developers who wish to have their kernel-mode drivers included in Windows must follow the procedures outlined by the Microsoft Hardware Development Team.  Program documentation can be found [here](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
-
-
-
-
-
-
-
-
-
-
-
+Windows 10 has heightened requirements to validate kernel-mode drivers.  Drivers must be signed by both Microsoft and a Program partner using Extended Validation requirements.  All developers who wish to have their kernel-mode drivers included in Windows must follow the procedures outlined by the Microsoft Hardware Development Team.  Program documentation can be found [here](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)

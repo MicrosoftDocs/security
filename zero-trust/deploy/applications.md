@@ -16,16 +16,16 @@ ms.topic: conceptual
 **Background**
 
 
-To get the full benefit of cloud apps and services, organizations must find the right balance of providing access while maintaining control to protect critical data accessed via applications and APIs.
+To get the full benefit of cloud apps and services, organizations must find the right balance of providing access while maintaining control to protect critical data accessed via applications and APIs.
 
-The **Zero Trust** model helps organizations ensure that apps, and the data they contain, are protected by:
+The **Zero Trust** model helps organizations ensure that apps, and the data they contain, are protected by:
 
--   Applying controls and technologies to discover Shadow IT.
--   Ensuring appropriate in-app permissions. 
--   Limiting access based on real-time analytics. 
--   Monitoring for abnormal behavior. 
--   Controlling user actions. 
--   Validating secure configuration options. 
+-   Applying controls and technologies to discover Shadow IT.
+-   Ensuring appropriate in-app permissions. 
+-   Limiting access based on real-time analytics. 
+-   Monitoring for abnormal behavior. 
+-   Controlling user actions. 
+-   Validating secure configuration options. 
 
 ## Applications Zero Trust deployment objectives
 
@@ -114,9 +114,9 @@ Follow these steps:
 
 2.  [Discover and identify shadow IT](/cloud-app-security/tutorial-shadow-it#phase-1-discover-and-identify-shadow-it) to find out what apps are being used, following one of three options:
 
-    1.  Integrate with [Microsoft Defender for Endpoint](/cloud-app-security/wdatp-integration) to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
+    1.  Integrate with [Microsoft Defender for Endpoint](/cloud-app-security/wdatp-integration) to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
 
-    1.  Deploy the [Cloud App Security log collector](/cloud-app-security/discovery-docker) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
+    1.  Deploy the [Cloud App Security log collector](/cloud-app-security/discovery-docker) on your firewalls and other proxies to collect data from your endpoints and send it to Cloud App Security for analysis.
 
     1.  Integrate Cloud App Security with your proxy.
 
@@ -140,9 +140,9 @@ Follow these steps:
 
     1.  Create new custom app tags in order to classify each app according to its business status or justification. These tags can then be used for specific monitoring purposes.
 
-    1.  App tags can be managed under Cloud Discovery settings App tags. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
+    1.  App tags can be managed under Cloud Discovery settings App tags. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
 
-    1.  Manage discovered apps using [Azure Active Directory (Azure AD) Gallery](/azure/active-directory/manage-apps/add-gallery-app). For apps that already appear in the Azure AD Gallery, apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
+    1.  Manage discovered apps using [Azure Active Directory (Azure AD) Gallery](/azure/active-directory/manage-apps/add-gallery-app). For apps that already appear in the Azure AD Gallery, apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork).
@@ -161,15 +161,15 @@ Follow these steps:
 
 3.  Configure policies to monitor shadow IT apps and provide control:
 
-    1.  Create an [app discovery policy](/cloud-app-security/cloud-discovery-policies) that lets you know when there is a spike in downloads or traffic from an app you\'re concerned about. Enable **Anomalous behavior in discovered users' policy, Cloud storage app compliance check,** and **New risky app.**
+    1.  Create an [app discovery policy](/cloud-app-security/cloud-discovery-policies) that lets you know when there is a spike in downloads or traffic from an app you\'re concerned about. Enable **Anomalous behavior in discovered users' policy, Cloud storage app compliance check,** and **New risky app.**
 
     1.  Keep updating policies, and using the Cloud Discovery dashboard, check what (new) apps your users are using, as well as their usage and behavior patterns.
 
 4.  [Control what's sanctioned](/cloud-app-security/tutorial-shadow-it#phase-5-control-sanctioned-apps) and block undesirable apps using this option:
 
-    1.  [Connect apps via API](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) for continuous monitoring.
+    1.  [Connect apps via API](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) for continuous monitoring.
 
-5.  Protect apps using [Conditional Access App Control](/cloud-app-security/proxy-intro-aad) and [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security).
+5.  Protect apps using [Conditional Access App Control](/cloud-app-security/proxy-intro-aad) and [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security).
 
 
 <br/><br/>

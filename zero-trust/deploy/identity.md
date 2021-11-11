@@ -144,7 +144,7 @@ Azure AD Conditional Access (CA) analyzes signals such as user, device, and loca
 
 :::image type="content" source="../media/diagram-conditional-access-policies.png" alt-text="Diagram of Conditional Access policies in Zero Trust." border="false":::
 
-Microsoft provides standard conditional policies called [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that ensure a basic level of security. However, your organization may need more flexibility than security defaults offer. You can use Conditional Access to customize security defaults with more granularity and to configure new policies that meet your requirements.
+Microsoft provides standard conditional policies called [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that ensure a basic level of security. However, your organization may need more flexibility than security defaults offer. You can use Conditional Access to customize security defaults with more granularity and to configure new policies that meet your requirements.
 
 Planning your Conditional Access policies in advance and having a set of active and fallback policies is a foundational pillar of your Access Policy enforcement in a Zero Trust deployment. Take the time to configure your trusted IP locations in your environment. Even if you do not use them in a Conditional Access policy, configuring these IPs informs the risk of Identity Protection mentioned above.
 

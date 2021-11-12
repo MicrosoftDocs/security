@@ -204,9 +204,9 @@ Other tactical containment actions can include:
 
 - For devices not using Defender for Endpoint as their primary antivirus software, run a full scan with [Microsoft Safety Scanner](/windows/security/threat-protection/intelligence/safety-scanner-download) on isolated known good systems before reconnecting them to the network.
 
-- For any legacy operating systems, upgrade to a supported OS or decommission these devices. If these options are not available, take every possible measure to isolate these devices, including network/VLAN isolation, Internet protocol security (IPsec) rules, and login restrictions, so they are only accessible to the applications by the users/devices to provide business continuity.
+- For any legacy operating systems, upgrade to a supported OS or decommission these devices. If these options are not available, take every possible measure to isolate these devices, including network/VLAN isolation, Internet Protocol security (IPsec) rules, and login restrictions, so they are only accessible to the applications by the users/devices to provide business continuity.
 
-The riskiest configurations consist of running mission critical systems on legacy operating systems as old as Windows NT 4.0 and applications, all on legacy hardware. Not only are these operating systems and applications insecure and vulnerable, if that hardware fails, backups typically cannot be restored on modern hardware. Unless replacement legacy hardware is available, these applications will cease to function. Strongly consider coverting these applications to run on current operating systems and hardware.
+The riskiest configurations consist of running mission critical systems on legacy operating systems as old as Windows NT 4.0 and applications, all on legacy hardware. Not only are these operating systems and applications insecure and vulnerable, if that hardware fails, backups typically cannot be restored on modern hardware. Unless replacement legacy hardware is available, these applications will cease to function. Strongly consider converting these applications to run on current operating systems and hardware.
 
 ### Post-incident activities
 

@@ -74,10 +74,6 @@ Meet these deployment objectives to protect your data for Zero Trust.
 | <input type="checkbox" /> | [3. Prevent data loss](#prevent) | Data Security Engineer |
 | <input type="checkbox" /> | [4. Use least privilege access](#strict) | Data Security Engineer |
 
-After completing these deployment objectives, you will have built out the **data** section of the Zero Trust architecture.
-
-![The data section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-increase-security-key-resources-data.png)
-
 #### <a id="know">1. Know your data</a>
 
 Perform these implementation steps to meet the **Know your data** deployment objective.
@@ -121,6 +117,9 @@ Perform these implementation steps to ensure that your workers and admins meet t
 | <input type="checkbox" /> | 3. Perform change management for your users so that future locations for sensitive and critical information are created and maintained with minimal permissions. | User Education Team |
 | <input type="checkbox" /> | 4. Audit and monitor the locations for sensitive and critical information to ensure that broad permissions aren't being granted. | Data Security Engineer and/or Security Governance |
 
+After completing these deployment objectives, you will have built out the **Data** section of the Zero Trust architecture.
+
+:::image type="content" source="./media/user-access-productivity-overview/data-compliance-gov-data.png" alt-text="The Data section of the Zero Trust architecture" lightbox="./media/data-compliance-gov-data.png":::
 
 ## Next step
 

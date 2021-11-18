@@ -14,13 +14,13 @@ Your first step is to establish an identity security perimeter for cloud applica
 
 This includes using Zero Trust to explicitly validate trust for all access requests for:
 
-- [User Accounts](#user-accounts)
+- [Identities](#identities)
 
   Require Passwordless or multi-factor authentication (MFA) for all users and measure risk with threat intelligence and behavior analytics.
 
-- [Devices](#devices)
+- [Endpoints](#endpoints)
 
-  Require device integrity and health compliance for access.
+  Require endpoint (device) integrity and health compliance for access.
 
 - [Apps](#apps)
 
@@ -33,9 +33,9 @@ This includes using Zero Trust to explicitly validate trust for all access reque
 
 After completing this step, you will have built out this part of the Zero Trust architecture.
 
-![The identities and devices sections of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-and-devices.png)
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png)" alt-text="The identities, endpoints, apps, and network sections of the Zero Trust architecture]" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png":::
 
-## User accounts
+## Identities
 
 Verify and secure each identity with strong authentication across your entire digital estate with Azure Active Directory (Azure AD), a complete identity and access management solution with integrated security that connects 425 Million people to their apps, devices, and data each month.
 
@@ -56,7 +56,7 @@ This table describes the overall protection of your user accounts in terms of a 
 
 ### Deployment objectives
 
-Meet these deployment objectives to protect your accounts with Zero Trust.
+Meet these deployment objectives to protect your identities with Zero Trust.
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
@@ -69,17 +69,17 @@ Meet these deployment objectives to protect your accounts with Zero Trust.
 | <input type="checkbox" /> | 7. Microsoft Defender for Identity | IT implementer | Deploy and enable [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is#whats-next). Review and mitigate any open alerts. |
 | <input type="checkbox" /> | 8. Passwordless credential deployment | IT implementer | [Plan a passwordless authentication deployment in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-deployment) |
 
-You have now built out the **identities** section of the Zero Trust architecture.
+You have now built out the **Identities** section of the Zero Trust architecture.
 
-![The identities section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-users.png)
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-identities.png" alt-text="The Identities section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-identities.png":::
 
-## Devices
+## Endpoints
 
-Ensure compliance and health status before granting access to your devices (endpoints) and gain visibility into how they are accessing the network. 
+Ensure compliance and health status before granting access to your endpoints (devices) and gain visibility into how they are accessing the network. 
 
 ### Program and project member accountabilities
 
-This table describes the overall protection of your devices in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+This table describes the overall protection of your endpoints in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
 | Lead | Owner | Accountability |
 |:-------|:-------|:-----|
@@ -91,10 +91,9 @@ This table describes the overall protection of your devices in terms of a sponso
 | | Security Governance and/or MDM Admin | Monitor to ensure compliance |
 | | User Education | Ensure guidance for users reflects policy updates |
 
-
 ### Deployment objectives
 
-Meet these deployment objectives to protect your devices with Zero Trust.
+Meet these deployment objectives to protect your endpoints (devices) with Zero Trust.
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
@@ -104,10 +103,9 @@ Meet these deployment objectives to protect your devices with Zero Trust.
 | <input type="checkbox" /> | 4. Monitor device compliance/risk as a signal for Conditional Access |  | [Use compliance policies to set rules for devices you manage with Intune](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) |
 | <input type="checkbox" /> | 5. Implement Microsoft Information Protection and integrate with Conditional Access polciies |  | link |
 
-You have now built out the **devices** section of the Zero Trust architecture.
+You have now built out the **Endpoints** section of the Zero Trust architecture.
 
-![The devices section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-devices.png)
-
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-endpoints.png" alt-text="The Endpoints section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-endpoints.png":::
 
 ## Apps
 
@@ -194,9 +192,9 @@ Meet these deployment objectives to ensure Zero Trust protection for your on-pre
 
 --> 
 
-After completing these deployment objectives, you will have built out the **apps** section of the Zero Trust architecture.
+After completing these deployment objectives, you will have built out the **Apps** section of the Zero Trust architecture.
 
-![The apps section of the Zero Trust architecture](./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png)
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png" alt-text="The Apps section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png":::
 
 
 ## Network
@@ -252,8 +250,9 @@ Deploy on-premises network segmentation with many ingress/egress cloud micro-per
 
 --> 
 
+After completing these deployment objectives, you will have built out the **Network** section of the Zero Trust architecture.
 
-After completing these deployment objectives, you will have built out the **network** section of the Zero Trust architecture.
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-network.png" alt-text="The Network section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-network.png":::
 
 ## Next step
 

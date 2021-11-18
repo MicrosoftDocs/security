@@ -1,5 +1,5 @@
 ---
-title: "Step 2. Enroll devices into management with Intune"
+title: "Step 5. Connect Defender for Endpoint with Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,5 +16,5 @@ keywords:
 description: 
 ---
 
-# Step 2. Enroll devices into management with Intune
+# Step 5. Connect Defender for Endpoint to Intune
 

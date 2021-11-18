@@ -119,7 +119,7 @@ Perform these implementation steps to ensure that your workers and admins meet t
 
 After completing these deployment objectives, you will have built out the **Data** section of the Zero Trust architecture.
 
-:::image type="content" source="./media/user-access-productivity-overview/data-compliance-gov-data.png" alt-text="The Data section of the Zero Trust architecture" lightbox="./media/data-compliance-gov-data.png":::
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-overview/data-compliance-gov-data.png" alt-text="The Data section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/data-compliance-gov-data.png":::
 
 ## Next step
 

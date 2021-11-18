@@ -40,7 +40,7 @@ Zero Trust operates on these security principles:
 
 Here is the overall architecture for Zero Trust.
 
-![The overall architecture for Zero Trust](./media/zero-trust-ramp-overview/zero-trust-architecture.png)
+:::image type="content" source="./media/zero-trust-ramp-overview/zero-trust-architecture.png" alt-text="The overall architecture for Zero Trust" lightbox="./media/zero-trust-ramp-overview/zero-trust-architecture.png":::
 
 ## RaMP initiatives for Zero Trust
 

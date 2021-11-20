@@ -27,7 +27,7 @@ Just as importantly, Microsoft Azure Blueprints and related capabilities ensure 
 
 Azure Blueprints, Azure Policies, Azure Security Center, Azure Sentinel, and Azure Sphere can greatly contribute to improving the security of your deployed infrastructure and enable a different approach to defining, designing, provisioning, deploying, and monitoring your infrastructure.
 
-:::image type="content" source="../media/diagram-infrastructure-5-elements.png" alt-text="A repeating circular diagram of 5 elements: Assess compliance, Observe gaps, Author, Test, and Deploy." border="false":::
+:::image type="content" source="../media/diagram-infrastructure-5-elements-white-background.png" alt-text="A repeating circular diagram of 5 elements: Assess compliance, Observe gaps, Author, Test, and Deploy." border="false":::
 
 
 ## Infrastructure Zero Trust deployment objectives

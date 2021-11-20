@@ -227,7 +227,7 @@ These activities help address risk by identifying and marking sensitive informat
 
 The following guidance will help you get started with sensitivity labels.
 
-:::image type="content" source="../media/diagram-steps-box-identity-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
+:::image type="content" source="../media/diagram-steps-box-data-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
 
 
 #### Sensitivity labels are applied manually

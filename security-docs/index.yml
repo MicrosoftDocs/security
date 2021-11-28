@@ -181,11 +181,11 @@ additionalContent:
             - url: https://docs.microsoft.com/azure/security/
               text: Azure security fundamentals
             - url: https://docs.microsoft.com/azure/security-center/
-              text: Azure Security Center
+              text: Microsoft Defender for Cloud
             - url: https://docs.microsoft.com/azure/sentinel/
-              text: Azure Sentinel
+              text: Microsoft Sentinel
             - url: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview
-              text: Azure DDoS Protection
+              text: Azure DDoS Protection Standard
             - url: https://docs.microsoft.com/azure/active-directory/
               text: Azure Active Directory
             - url: https://docs.microsoft.com/azure/firewall/
@@ -193,7 +193,7 @@ additionalContent:
             - url: https://docs.microsoft.com/azure/web-application-firewall/
               text: Web Application Firewall
             - url: https://docs.microsoft.com/azure/key-vault/
-              text: Azure Key vault
+              text: Azure Key Vault
             - url: https://docs.microsoft.com/azure/azure-sql/
               text: Azure SQL
         # Card

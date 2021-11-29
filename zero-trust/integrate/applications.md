@@ -1,6 +1,6 @@
 ---
 title: Applications Zero Trust integration overview
-description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Cloud Appsty to help customers adopt a Zero Trust model and keep their organizations secure.
+description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Cloud Apps to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 09/17/2021
 ms.service: security
 author: knicholasa

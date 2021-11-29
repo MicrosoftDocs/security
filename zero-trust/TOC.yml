@@ -37,7 +37,11 @@
     - name: Networks
       href: integrate/networks.md
     - name: Visibility, automation, and orchestration
-      href: integrate/visibility-automation-orchestration.md
+      items:
+      - name: Overview
+        href: integrate/visibility-automation-orchestration.md
+      - name: Microsoft Sentinel zero trust workbook
+        href: integrate/sentinel-workbook.md
 - name: Developer guidance
   expanded: false
   items: 

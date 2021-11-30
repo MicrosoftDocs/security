@@ -96,7 +96,7 @@ Install-Module -Name AzureAD -Verbose
 
 #### Download the AzureADPSPermissions Script from GitHub
 
-1. Download the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub to a folder from which you will run the script. The output file "*permissions.csv*" will also be written to this same folder.
+1. Download the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub to a folder from which you will run the script. The output file "*permissions.csv*" will also be written to this same folder.
 2. Open a PowerShell instance as an administrator and open the folder in which you saved the script.
 3. Connect to your directory using the `Connect-AzureAD` cmdlet. Here's an example.
 
@@ -143,8 +143,8 @@ To be able to grant **tenant-wide admin consent**, you must sign in as one of th
 - **Administrator -** Indicates the consent was provided by the administrator (on behalf of the organization)
 - **Individual user -** Indicates the consent was granted by the user and only has access to that user’s information
 - **Accepted values**
-  - *AllPrincipals -* Consented by an administrator for the entire tenancy
-  - *Principal –* Consented by the individual user for data only related to that account
+  - *AllPrincipals -* Consented by an administrator for the entire tenancy
+  - *Principal –* Consented by the individual user for data only related to that account
 
 ### Consent and permissions
 
@@ -158,7 +158,7 @@ The actual user experience of granting consent will differ depending on the poli
 
 Delegated permissions are used by apps that have a signed-in user present and can have consents applied by the administrator or user.
 
-Application permissions are used by apps that run without a signed-in user present. For example, apps that run as background services or daemons. Application permissions can be consented only by an administrator.
+Application permissions are used by apps that run without a signed-in user present. For example, apps that run as background services or daemons. Application permissions can be consented only by an administrator.
 
 For more information see:
 
@@ -181,7 +181,7 @@ At a high level, we have observed the following “root” delegated (App+User) 
 7. *Directory.AccessAsUser.All*
 8. *User\_Impersonation*
 
-The first seven permissions in the list above are for Microsoft Graph and the “legacy” API equivalents, such as Azure Active Directory (Azure AD) Graph and Outlook REST. The eighth permission is for Azure Resource Manager (ARM), and could also be dangerous on any API that exposes sensitive data with this blanket impersonation scope.
+The first seven permissions in the list above are for Microsoft Graph and the “legacy” API equivalents, such as Azure Active Directory (Azure AD) Graph and Outlook REST. The eighth permission is for Azure Resource Manager (ARM), and could also be dangerous on any API that exposes sensitive data with this blanket impersonation scope.
 
 As per our observation, attackers have used a combination of the first six permissions in the in 99% of the consent phishing attacks. Most people don’t think of the delegated version of *Mail.Read* or *Files.Read* as a high-risk permission, however, the attacks we’ve seen are generally widespread attacks targeting end users, rather than spear phishing against admins who can actually consent to the dangerous permissions. It is recommended to bubble apps with these “critical” level of impact permissions. Even if the applications do not have malicious intent, and if a bad actor were to compromise the app identity, then your entire organization could be at risk.
 
@@ -241,7 +241,7 @@ As per our observation, attackers have used a combination of the first six permi
 
 8. You can now assign or review these permissions.
 
-    For more information, read  [Graph Permissions](/graph/permissions-reference).
+    For more information, read  [Graph Permissions](/graph/permissions-reference).
 
 ## Workflow
 
@@ -352,23 +352,23 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
     >The script may take hours to complete, depending on the size and permissions configured as well as your connection.
     >
 
-5. The script creates a file named *Permissions.csv*.
+5. The script creates a file named *Permissions.csv*.
 6. Open the file, filter or format the data into a table and save as an *.xlxs* file (for filtering).
 
     The **column headers** for output are shown in this image.
 
     ![Example of column headers](./media/incident-response-playbook-app-consent/columnheaders.png)
 
-7. In the **ConsentType** column **(G),** search for the value **AllPrinciples**. The **AllPrincipals** permission allows the client application to access everyone's content in the tenancy. Native Microsoft 365 applications need this permission to work correctly. ***Every non-Microsoft application with this permission should be reviewed carefully***.
+7. In the **ConsentType** column **(G),** search for the value **AllPrinciples**. The **AllPrincipals** permission allows the client application to access everyone's content in the tenancy. Native Microsoft 365 applications need this permission to work correctly. ***Every non-Microsoft application with this permission should be reviewed carefully***.
 
-8. In the **Permission** column **(F)**, review the permissions that each delegated application has. Look for **Read** and **Write** permission or __*. All__ permission, and review these carefully because they may not be appropriate.
+8. In the **Permission** column **(F)**, review the permissions that each delegated application has. Look for **Read** and **Write** permission or __*. All__ permission, and review these carefully because they may not be appropriate.
 ![Example of Permission column F](./media/incident-response-playbook-app-consent/columnf.png)
 
     >[!Note]
     >Review the specific users that have consents granted. If high profile or high impact users have inappropriate consents granted, you should investigate further.
     >
 
-9. In the **ClientDisplayName** column **(C)**, look for apps that seem suspicious, such as:
+9. In the **ClientDisplayName** column **(C)**, look for apps that seem suspicious, such as:
     - Apps with misspelled names
         ![Example of a misspelled name](./media/incident-response-playbook-app-consent/misspeltnames.png)
 
@@ -378,7 +378,7 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
     - Hacker-sounding names. You must review these names carefully.
         ![Example of a hacker name](./media/incident-response-playbook-app-consent/hackernames.png)
 
-**Example Output:** AllPrincipals and read write all. Applications may not have anything suspicious like bland names and are using MS graph. However, perform research and determine the purpose of the applications and the actual permissions the applications have in the tenant, as shown in this example.
+**Example Output:** AllPrincipals and read write all. Applications may not have anything suspicious like bland names and are using MS graph. However, perform research and determine the purpose of the applications and the actual permissions the applications have in the tenant, as shown in this example.
 
 ![Example of applications with the AllPrincipals ConsentType](./media/incident-response-playbook-app-consent/Exampleoutput.png)
 
@@ -398,7 +398,7 @@ Here are some useful tips to review information security policy (ISP) investigat
 
 ### Attack techniques
 
-While [each attack tends to vary, the core attack techniques are](https://attack.mitre.org/techniques/T1550/001/):
+While [each attack tends to vary, the core attack techniques are](https://attack.mitre.org/techniques/T1550/001/):
 
 - An attacker registers an app with an OAuth 2.0 provider, such as Azure AD.
 - The app is configured in a way that makes it seem legitimate. For example, attackers might use the name of a popular product available in the same ecosystem.
@@ -425,13 +425,13 @@ While [each attack tends to vary, the core attack techniques are](https://attac
 
 5. If you have activity under consent to grant, continue as directed below.
 6. Select the result to see the details of the activity. Select **More Information** to get details of the activity.
-7. Check whether IsAdminContent is set to ‘True’.
+7. Check whether IsAdminContent is set to ‘True’.
 
     >[!Note]
     >This process can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs.
     >
 
-    The extent of time that an audit record is retained and is searchable in the audit log depends on your Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user. **If this value is true, it indicates that someone with Global Administrator access may have granted broad access to data. If this is unexpected, take immediate steps to confirm an attack.**
+    The extent of time that an audit record is retained and is searchable in the audit log depends on your Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user. **If this value is true, it indicates that someone with Global Administrator access may have granted broad access to data. If this is unexpected, take immediate steps to confirm an attack.**
 
 ## How to confirm an attack?
 
@@ -460,7 +460,7 @@ You can use the Azure Active Directory portal to see the list of apps to which a
 
 After you have finished inventorying application access, review the audit log to determine the full scope of the breach. Search on the affected users, the time frames that the illicit application had access to your organization, and the permissions the app had. You can search the audit log in the Microsoft 365 Security and Compliance Center.
 
-**Important:** If auditing was not enabled prior to the possible attack, you will **not** be able to investigate as auditing data will not be available.
+**Important:** If auditing was not enabled prior to the possible attack, you will **not** be able to investigate as auditing data will not be available.
 
 ## How to prevent attacks and mitigate risks?
 
@@ -470,8 +470,8 @@ After you have finished inventorying application access, review the audit log to
 
 If your organization has the appropriate license:
 
-- Use additional [OAuth application](/cloud-app-security/investigate-risky-oauth)  auditing features in Microsoft Cloud App Security.
-- Use [Azure Monitor Workbooks](/azure/active-directory/reports-monitoring/howto-use-azure-monitor-workbooks)  to monitor permissions and consent related activity. The Consent Insights workbook provides a view of apps by number of failed consent requests. This can be helpful to prioritize applications for administrators to review and decide whether to grant them admin consent.
+- Use additional [OAuth application](/cloud-app-security/investigate-risky-oauth)  auditing features in Microsoft Cloud App Security.
+- Use [Azure Monitor Workbooks](/azure/active-directory/reports-monitoring/howto-use-azure-monitor-workbooks)  to monitor permissions and consent related activity. The Consent Insights workbook provides a view of apps by number of failed consent requests. This can be helpful to prioritize applications for administrators to review and decide whether to grant them admin consent.
 
 ## How to stop and remediate an illicit consent grant attack?
 
@@ -501,7 +501,7 @@ Here's an example of the output.
 
 ![Example of the Get-ADOAuth2PermissionGrantoAuth command output](./media/incident-response-playbook-app-consent/output.png)
 
-**You can use PowerShell to revoke the Service App Role Assignment by following the steps in [Remove-AzureADServiceAppRoleAssignment](/powershell/module/azuread/remove-azureadoauth2permissiongrant)**.
+**You can use PowerShell to revoke the Service App Role Assignment by following the steps in [Remove-AzureADServiceAppRoleAssignment](/powershell/module/azuread/remove-azureadoauth2permissiongrant)**.
 
 Here's an example.
 
@@ -523,7 +523,7 @@ You can also deactivate sign-in for the affected account altogether, which will 
 
 There are various consent attack types, but if you follow these recommended defenses, which will mitigate all types of attacks, especially consent phishing, where attackers trick users into granting a malicious app access to sensitive data or other resources. Instead of trying to steal the user’s password, an attacker is seeking permission for an attacker-controlled app to access valuable data.
 
-To help prevent consent attacks from affecting Azure AD and Office 365, see the following recommendations:
+To help prevent consent attacks from affecting Azure AD and Office 365, see the following recommendations:
 
 ### Set policies
 
@@ -535,10 +535,10 @@ To help prevent consent attacks from affecting Azure AD and Office 365, see the
     >
 
     **Configure risk-based step-up consent - Enabled by default if user consent to grants is enabled**
-- Risk-based step-up consent helps reduce user exposure to malicious apps that make illicit consent requests. If Microsoft detects a risky end-user consent request, the request will require a "step-up" to admin consent instead. This capability is enabled by **default**, but it will only result in a behavior change when **end-user consent is enabled**.
+- Risk-based step-up consent helps reduce user exposure to malicious apps that make illicit consent requests. If Microsoft detects a risky end-user consent request, the request will require a "step-up" to admin consent instead. This capability is enabled by **default**, but it will only result in a behavior change when **end-user consent is enabled**.
 - When a risky consent request is detected, the consent prompt will display a message indicating that admin approval is needed. If the admin consent request workflow is enabled, the user can send the request to the admin for further review directly from the consent prompt. If it's not enabled, the following message is displayed:
 
-    *AADSTS90094: &lt;clientAppDisplayName&gt; needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it. In this case, an audit event will also be logged with a Category of **"ApplicationManagement"** Activity Type of **"Consent to application"**, and Status Reason of **"Risky application detected"**.*
+    *AADSTS90094: &lt;clientAppDisplayName&gt; needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it. In this case, an audit event will also be logged with a Category of **"ApplicationManagement"** Activity Type of **"Consent to application"**, and Status Reason of **"Risky application detected"**.*
 
 >[!Note]
 >Any tasks that require administrator’s approval will have operational overhead. The "**Consent and permissions, User consent settings**" is in **Preview** currently. Once it is ready for general availability (GA), the "**Allow user consent from verified publishers, for selected permissions**" feature should reduce administrators’ overhead and it is recommended for most organizations.
@@ -547,13 +547,13 @@ To help prevent consent attacks from affecting Azure AD and Office 365, see the
 :::image type="content" source="./media/incident-response-playbook-app-consent/consentpermissions.png" alt-text="consent":::
 
 **Educate your application developers to follow the trustworthy app ecosystem.**  
-To help developers build high-quality and secure integrations, we’re also announcing [public preview of the Integration Assistant in Azure AD app registrations.](/azure/active-directory/develop/identity-platform-integration-checklist)
+To help developers build high-quality and secure integrations, we’re also announcing [public preview of the Integration Assistant in Azure AD app registrations.](/azure/active-directory/develop/identity-platform-integration-checklist)
 
 - The Integration Assistant analyzes your app registration and benchmarks it against a set of recommended security best practices.
 - The Integration Assistant highlights best practices that are relevant during each phase of your integration’s lifecycle—from development all the way to monitoring—and ensures every stage is properly configured.
 - It’s designed to make your job easier, whether you’re integrating your first app or you’re an expert looking to improve your skills.
 
-**Educate your organization on consent tactics ([phishing tactics, admin and user consents](/azure/active-directory/develop/application-consent-experience) ):**
+**Educate your organization on consent tactics ([phishing tactics, admin and user consents](/azure/active-directory/develop/application-consent-experience) ):**
 
 - Check for poor spelling and grammar. If an email message or the application’s consent screen has spelling and grammatical errors, it’s likely to be a suspicious application.
 - Keep a watchful eye on app names and domain URLs. Attackers like to spoof app names that make it appear to come from legitimate applications or companies but drive you to consent to a malicious app.
@@ -563,7 +563,7 @@ To help developers build high-quality and secure integrations, we’re also anno
 
 - Promote the use of applications that have been publisher verified. Publisher verification helps admins and end users understand the authenticity of application developers. Over 660 applications by 390 publishers have been verified thus far.
 - Configure application consent policies by allowing users to only consent to specific applications you trust, such as applications developed by your organization or from verified publishers.
-- Educate your organization on how our permissions and consent [framework works](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
+- Educate your organization on how our permissions and consent [framework works](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
 - Understand the data and permissions an application is asking for and understand how permissions and consent work within our platform.
 - Ensure administrators know how to manage and evaluate consent requests.
 

@@ -54,10 +54,3 @@ CAs will need to provide:
 > * Microsoft will determine at its sole discretion which CA certificates are included the Program.
 > * Microsoft will not charge any fee for including a CA's certificates in the Program.
 > * Microsoft reserves the right to not include a CA into the Program for any reason or no reason at all. 
-
-
-
- 
-
-
-

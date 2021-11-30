@@ -311,7 +311,7 @@ Follow these steps:
 
 **Microsoft Azure**
 
-[Azure Information Protection](https://azure.microsoft.com/services/information-protection/) with Unified Labeling Client and Scanner 
+[Azure Information Protection](https://azure.microsoft.com/services/information-protection/) with Unified Labeling Client and Scanner 
 
 **Microsoft 365**
 

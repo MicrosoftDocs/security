@@ -162,7 +162,7 @@ Despite the nascent state of this project, we believe the evidence compiled to d
 The [Asilomar AI Principles](https://futureoflife.org/ai-principles/) illustrate the complexity of delivering on AI in a fashion that consistently benefits humanity. Future AIs will need to interact with other AIs to deliver rich, compelling user experiences. That means it simply is not good enough for Microsoft to “get AI right” from a security perspective – the *world* has to. We need industry alignment and collaboration with greater visibility brought to the issues in this document in a fashion similar to our worldwide push for a Digital Geneva Convention [9]. By addressing the issues presented here, we can begin guiding our customers and industry partners down a path where AI is truly democratized and augments the intelligence of all humanity.
 
 ## Bibliography
-  [1] *Taleb, Nassim Nicholas (2007),* The Black Swan: The Impact of the Highly Improbable, Random House, [ISBN 978-1400063512](https://en.wikipedia.org/wiki/Special:BookSources/978-1400063512)
+  [1] *Taleb, Nassim Nicholas (2007),* The Black Swan: The Impact of the Highly Improbable, Random House, [ISBN 978-1400063512](https://en.wikipedia.org/wiki/Special:BookSources/978-1400063512)
 
   [2] *Florian Tramèr, Fan Zhang, Ari Juels, Michael K. Reiter, Thomas Ristenpart,* [Stealing Machine Learning Models via Prediction APIs]( <https://arxiv.org/abs/1609.02943>)
 

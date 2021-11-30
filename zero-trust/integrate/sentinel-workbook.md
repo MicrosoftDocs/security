@@ -1,7 +1,7 @@
 ---
 title: Install the Microsoft Sentinel Zero Trust (TIC 3.0) workbook
 description: Install and learn how to use the Microsoft Sentinel Zero Trust (TIC3.0) workbook for an automated visualization of Zero Trust principles, cross-walked to the Trusted Internet Connections framework.
-ms.date: 09/17/2021
+ms.date: 11/30/2021
 ms.service: security
 author: batamig
 ms.author: bagol
@@ -12,20 +12,21 @@ ms.topic: how-to
 
 The Microsoft Sentinel Zero Trust (TIC 3.0) workbook provides an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, and helps organizations to monitor configurations over time.
 
-The Zero Trust workbook uses the full breadth of Microsoft Security offerings across Azure, Microsoft 365, Teams, Intune, Windows Virtual Desktop, and more, and enables users across your teams to gain  situational awareness for cloud workloads' security posture. The workbook is designed to augment staffing through automation, artificial intelligence, machine learning, query/alerting generation, visualizations, tailored recommendations, and respective documentation references.
+The Zero Trust workbook uses the full breadth of Microsoft Security offerings across Azure, Microsoft 365, Teams, Intune, Windows Virtual Desktop, and more. It uses automation to visualize your Zero Trust security architecture and helps users across your teams to gain situational awareness for cloud workloads' security posture. The workbook is designed to augment staffing through automation, artificial intelligence, machine learning, query/alerting generation, visualizations, tailored recommendations, and respective documentation references.
 
 This article describes how to install and use the Microsoft Sentinel Zero Trust workbook in your Microsoft Sentinel workspace.
 
-> [!IMPORTANT]
-> While the Microsoft Sentinel Zero Trust (TIC 3.0) workbook provides best practice guidance, Microsoft does not guarantee nor imply compliance. All TIC requirements, validations, and controls are governed by the [Cybersecurity & Infrastructure Security Agency](https://www.cisa.gov/trusted-internet-connections).
->
-> The Zero Trust workbook provides visibility and situational awareness for control requirements delivered with Microsoft technologies in predominantly cloud-based environments. Customer experience will vary by user, and some panels may require additional configurations and query modification for operation.
->
-> Recommendations do not imply coverage of respective controls, as they are often one of several courses of action for approaching requirements, which is unique to each customer. Recommendations should be considered a starting point for planning full or partial coverage of respective control requirements.
->
+## The Zero Trust workbook and the Trusted Internet Connections framework
 
-This workbook leverages automation to visualize your Zero Trust security architecture. Is Zero Trust the same as TIC 3.0? No, they’re not the same, but they share numerous common themes which provide a powerful story. The workbook offers detailed crosswalks of Microsoft's Zero Trust model with the Trusted Internet Connections (TIC3.0) framework to better understand the overlaps.
+While the Microsoft Sentinel Zero Trust (TIC 3.0) workbook provides best practice guidance, Microsoft does not guarantee nor imply compliance. All Trusted Internet Connection (TIC) requirements, validations, and controls are governed by the [Cybersecurity & Infrastructure Security Agency](https://www.cisa.gov/trusted-internet-connections).
 
+The Zero Trust workbook provides visibility and situational awareness for control requirements delivered with Microsoft technologies in predominantly cloud-based environments. Customer experience will vary by user, and some panels may require additional configurations and query modification for operation.
+
+Recommendations do not imply coverage of respective controls, as they are often one of several courses of action for approaching requirements, which is unique to each customer. Recommendations should be considered a starting point for planning full or partial coverage of respective control requirements.
+
+> [!NOTE]
+> Zero Trust and TIC 3.0 are not the same, but they share many common themes and together provide a common story. The Microsoft Sentinel Zero Trust workbook offers detailed crosswalks between the Microsoft Zero Trust model with the TIC 3.0 framework and helps users to better understand the overlaps between the two.
+>
 
 ## Workbook use cases and user types
 
@@ -40,7 +41,9 @@ The Microsoft Sentinel Zero Trust (TIC 3.0) workbook is useful for any of the fo
 
 For example, the following image shows how a security operations analyst can use the workbook to review requirements, explore queries, configure alerts, and implement automation.
 
-## Deploy the workbook
+## Prerequisites
+
+### Install and verify relevant data connectors
 
 Before you use the Zero Trust (TIC 3.0) workbook, we recommend that you have the following log sources connected via Microsoft Sentinel data connectors, and have verified that you have logs streaming into Microsoft Sentinel:
 
@@ -67,9 +70,11 @@ Before you use the Zero Trust (TIC 3.0) workbook, we recommend that you have the
    :::column-end:::
 :::row-end:::
 
-Many data connectors are available both as standalone data connectors, and as Microsoft Sentinel solutions. For more information, see [Centrall discovery and deploy out-of-the-box content and solutions](/azure/sentinel/sentinel-solutions-deploy).
+Many data connectors are available both as standalone data connectors, and as Microsoft Sentinel solutions. For more information, see [Connect Microsoft Sentinel to Azure, Windows, Microsoft, and Amazon services](/azure/sentinel/connect-azure-windows-microsoft-services) and [Centrally discovery and deploy out-of-the-box content and solutions](/azure/sentinel/sentinel-solutions-deploy).
 
-Additionally, you must have access to your Microsoft Sentinel workspace with [Security Reader](/azure/active-directory/roles/permissions-reference#security-reader) permissions.
+### Required user permissions
+
+To perform this procedure, you must have access to your Microsoft Sentinel workspace with [Security Reader](/azure/active-directory/roles/permissions-reference#security-reader) permissions.
 
 ## Deploy and navigate the workbook
 
@@ -79,58 +84,81 @@ To deploy the Zero Trust (TIC 3.0) workbook from the Azure portal;
 
 1. Search for Zero Trust, and then select **Save** to install the workbook in your Microsoft Sentinel workspace.
 
-Once installed in your workspace, you can navigate the following areas of the Zero Trust workbook:
+After your workbook is installed, navigate through the panes using the following legend:
 
-### Workbook legend
-
-The Legend Panel provides a helpful reference for navigating the workbook with respective colors, features, and reference indicators.
-
-### Show or guide workbook guides
-
-Workbook Navigation
-
-The Guide Toggle is available in the top left of the workbook. This toggle allows you to view panels such as recommendations and guides, which will help you first access the workbook but can be hidden once you’ve grasped respective concepts.
+- **Green panels** provide definitions, guides, and references
+- **Blue panels** list controls, best practices, and recommendations
+- **Red panels** list customer responsibilities and items not covered in the workbook
+- **Items with a green star** provide links to get started with other Microsoft products
+- **Items with a blue diamond** list requirements, such as required logs for that panel
+- **Yellow light bulbs** list extra references for more information
 
 
-### Resource parameter options
+> [!TIP]
+> At the top left of the workbook, use the **Guides** toggle to view recommendation and guide panels or hide them. Recommendation and guide panels help most when you first access the workbook, and you may want to hide them once you've understood the relevant concepts.
+>
 
-The Resource Parameter Options provide configuration options to sort control cards by Subscription, Workspace, and Time Range. The Parameter Options are beneficial for Managed Security Service Providers (MSSP) or large enterprises that leverage Azure Lighthouse for visibility into multiple workspaces. It facilitates assessment from both the aggregate and individual workspace perspectives. Time range parameters allow options for daily, monthly, quarterly, and even custom time range visibility.
+### Sort control cards
 
-### Capabilities ribbon
+Use the **Resource Parameter** options to sort the control cards displayed by Subscription, Workspace, and Time Range. For example, Parameter Options are helpful for MSSPs or large enterprises using Azure Lighthouse to view multiple workspaces and assess data from the perspective of both the aggregate and individual workspace.
 
-The Capabilities Ribbon provides a mechanism for navigating the desired security capabilities sections highlighted in the TIC3.0 framework. Selecting a capability tab will display Control Cards in the respective area. An Overview tab provides more granular detail of the overlaps between the Microsoft Zero Trust model and the TIC3.0 framework.
+Time range parameters allow options for daily, monthly, quarterly, and even custom time ranges.
+
+For more information, see [Azure Monitor workbook parameters](/azure/azure-monitor/visualize/workbooks-parameters).
 
 
- 
-The Microsoft Sentinel Zero Trust (TIC3.0) Workbook displays each control in a Capability Card. The Capability Card provides respective control details to understand requirements, view your data, adjust SIEM queries, export artifacts, onboard Microsoft controls, navigate configuration blades, access reference materials, and view correlated compliance frameworks.
+### TIC 3.0 capability cards
+
+Capabilities highlighted in the TIC 3.0 framework are represented by Capability Cards in the Zero Trust workbook, where each card provides details for the following tasks:
+
+- Understanding requirements
+- Viewing your data
+- Adjusting SIEM queries
+- Exporting artifacts
+- Onboarding Microsoft controls
+- Navigating configuration pages
+- Accessing reference materials
+- Viewing correlated compliance frameworks
+
+Use the Capabilities ribbon to navigate through the relevant security capabilities sections. Select a capability from the list to display control cards in the selected area.
+
+> [!TIP]
+> The **Overview** tab provides more details about the overlaps between the Microsoft Zero Trust model and the TIC 3.0 framework.
+>
 
 ## Configure and troubleshoot your workbook
 
-Configurations & Troubleshooting
-It's important to note that this workbook provides visibility and situational awareness for control requirements delivered with Microsoft technologies in predominantly cloud-based environments. Customer experience will vary by user, and some panels may require additional configurations and query modification for operation. It’s unlikely that all 76+ panels will populate data, but this is expected as panels without data highlight respective areas for evaluation in maturing cybersecurity capabilities. Capability Cards without data will display the custom error message below. Most issues are resolved by confirming the log source's licensing/availability/health, ensuring the log source is connected to the Sentinel workspace, and adjusting time thresholds for larger data sets. Ultimately this workbook is customer-controlled content, so panels are configurable per customer requirements. You can edit/adjust Control Card queries as follows:
+The Zero Trust workbook provides visibility and situational awareness for control requirements delivered with Microsoft technologies in mostly cloud-based environments. Depending on your system configuration, you may need to perform additional configurations and modify queries in order for the data to show correctly.
 
- 
+Many issues can be resolved by confirming the log source's licensing, availability, and health, ensuring that the log source is connected to your Microsoft Sentinel workspace correctly, and adjusting time thresholds for larger data sets.
 
-Zero Trust (TIC3.0) Workbook > Edit > Edit Panel > Adjust Panel KQL Query > Save
-thumbnail image 11 captioned Custom Error Messaging
-Custom Error Messaging
+It is unlikely that all panels in the workbook will populate data for every customer. When you see panels without any data, you might want to consider evaluating these areas of maturing cybersecurity capabilities.
 
-While using Microsoft offerings for the Zero Trust (TIC3.0) Workbook is recommended, it’s not a set requirement as customers often rely on many security providers and solutions. Below is a use-case example for adjusting a Control Card to include third-party tooling. The default KQL query provides a framework for target data, and it is readily adjusted with the desired customer controls/solutions.
 
- 
+### Edit or adjust control card queries
 
-thumbnail image 12 captioned 3rd Party Tool Use-Case
+Ultimately, the Zero Trust workbook is customer-controlled content, and each panel is customizable for your own requirements.
+
+**To customize the query for a specific panel in the workbook**:
+
+1. In the Zero Trust (TIC3.0) workbook, select **Edit > Edit Panel > Adjust Panel KQL Query**.
+1. Make the required changes to the query, and then select **Save**.
+
+### Customize panel texts
+
+While we recommend using the out-of-the-box Microsoft offerings for the Zero Trust workbook, you may rely on many security providers and solutions and therefore want to adjust your control card text to include notes about third-party tooling.
+
+For example:
+
+Capability cards without data will also display error messages that you can customize to fit your needs.
 
 ## Next steps
 
-3rd Party Tool Use-Case
+For more information, see:
 
-Get Started with Microsoft Sentinel and Learn More About Zero Trust with Microsoft
-Below are additional resources for learning more about Zero Trust (TIC3.0) with Microsoft. Bookmark the Security blog to keep up with our expert coverage on security matters and follow us at @MSFTSecurity or visit our website for the latest news and cybersecurity updates.
-
-Get Started with Microsoft Sentinel
-Tutorial: Visualize and Monitor your Data with Workbooks
-Microsoft Zero Trust Model
-Zero Trust Deployment Center
-Zero Trust: 7 Adoption Strategies from Security Leaders
-Microsoft Zero Trust Video
+- [Get Started with Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
+- [Visualize and monitor your data with workbooks](/azure/sentinel/monitor-your-data)
+- [Microsoft Zero Trust Model](https://www.microsoft.com/security/business/zero-trust)
+- [Zero Trust Deployment Center](/security/zero-trust/?WT.mc_id=Portal-fx)
+- [Zero Trust: 7 Adoption Strategies from Security Leaders](https://www.microsoft.com/security/blog/2021/03/31/zero-trust-7-adoption-strategies-from-security-leaders/)
+- [Microsoft Zero Trust Video](https://www.microsoft.com/videoplayer/embed/RE4J3ms)

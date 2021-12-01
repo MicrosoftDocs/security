@@ -354,7 +354,7 @@ The endpoints listed in the ProxyOverride list are limited to those endpoints ne
 
 ## Enable Microsoft Cloud Application Security, URLs restricted list to approved URLs (Allow most)
 
-In our roles deployment it is recommended that for Enterprise, and Specialized deployments, where a strict *deny all* web browsing is not desirable, that using the capabilities of a Cloud Access Security Broker (CASB) such as [Microsoft Cloud App. Security (MCAS)](/cloud-app-security/what-is-cloud-app-security) be utilized to block access to risky, and questionable web sites. The solution addresses a simple way to block applications and websites that have been curated. This solution is similar to getting access to the block list from sites such as the Spamhaus Project who maintains [the Domain Block List (DBL)](https://www.spamhaus.org/dbl/): a good resource to use as an advanced set of rules to implement for blocking sites. 
+In our roles deployment it is recommended that for Enterprise, and Specialized deployments, where a strict *deny all* web browsing is not desirable, that using the capabilities of a cloud access security broker (CASB) such as [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) be utilized to block access to risky, and questionable web sites. The solution addresses a simple way to block applications and websites that have been curated. This solution is similar to getting access to the block list from sites such as the Spamhaus Project who maintains [the Domain Block List (DBL)](https://www.spamhaus.org/dbl/): a good resource to use as an advanced set of rules to implement for blocking sites.
 
 The solution will provide you:
 
@@ -363,11 +363,11 @@ The solution will provide you:
 * Threat protection: offer adaptive access control (AAC); provide user and entity behavior analysis (UEBA); mitigate malware
 * Compliance: supply reports and dashboards to demonstrate cloud governance; assist efforts to conform to data residency and regulatory compliance requirements
 
-Enable MCAS and connect to Defender ATP to block access the risky URLs:
+Enable Defender for Cloud Apps and connect to Defender ATP to block access the risky URLs:
 
-* In [Microsoft Defender Security Center](https://securitycenter.windows) > Settings > Advanced features, set Microsoft Cloud App Security integration > **ON**
+* In [Microsoft Defender Security Center](https://securitycenter.windows) > Settings > Advanced features, set Microsoft Defender for Cloud Apps integration > **ON**
 * In [Microsoft Defender Security Center](https://securitycenter.windows)  > Settings > Advanced features, set Custom network indicators >  **ON**
-* In [Microsoft Cloud App Security portal](https://portal.cloudappsecurity.com) > Settings > Microsoft Defender ATP integration > Select **Block unsanctioned apps**  
+* In [Microsoft Defender for Cloud Apps portal](https://portal.cloudappsecurity.com) > Settings > Microsoft Defender ATP integration > Select **Block unsanctioned apps**  
 
 ## Manage local applications
 

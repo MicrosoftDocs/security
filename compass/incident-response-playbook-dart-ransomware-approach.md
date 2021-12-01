@@ -82,11 +82,11 @@ Here's an example of how Defender for Identity sends alerts for known malicious 
 
 ### Defender for Cloud Apps
 
-Defender for Cloud Apps (previously known as Microsoft Cloud App Security) allows your analysts to detect unusual behavior across cloud apps to identify ransomware, compromised users, or rogue applications. Defender for Cloud Apps is Microsoft’s cloud access security broker (CASB) solution that allows for monitoring of cloud services and data access in cloud services by users.
+Defender for Cloud Apps (previously known as Microsoft Defender for Cloud Apps) allows your analysts to detect unusual behavior across cloud apps to identify ransomware, compromised users, or rogue applications. Defender for Cloud Apps is Microsoft’s cloud access security broker (CASB) solution that allows for monitoring of cloud services and data access in cloud services by users.
 
 Here's an example of the Defender for Cloud Apps dashboard, which allows analysis to detect unusual behavior across cloud apps.
 
-:::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/example-defender-for-cloud-apps-dashboard.png" alt-text="An an example of the Defender for Cloud Apps dashboard." lightbox="./media/incident-response-playbook-dart-ransomware-approach/example-defender-for-cloud-apps-dashboard.png":::
+:::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/example-defender-for-cloud-apps-dashboard.png" alt-text="an example of the Defender for Cloud Apps dashboard." lightbox="./media/incident-response-playbook-dart-ransomware-approach/example-defender-for-cloud-apps-dashboard.png":::
 
 ### Microsoft Secure Score
 
@@ -126,10 +126,10 @@ Establishing the initial activity date and time is important because it helps na
 
 Logs—such as antivirus, EDR, and virtual private network (VPN)—are an indicator of suspected compromise. Follow-up questions may include:
 
-- Are logs being aggregated in a Security Information and Event Management (SIEM) solution—such as [Microsoft Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/), Splunk, ArcSight, and others—and current? What is the retention period of this data?
- - Are there any suspected compromised systems that are experiencing unusual activity?
- - Are there any suspected compromised accounts that appear to be actively used by the adversary?
- - Is there any evidence of active command and controls (C2s) in EDR, firewall, VPN, web proxy, and other logs?
+- Are logs being aggregated in a Security Information and Event Management (SIEM) solution—such as [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/), Splunk, ArcSight, and others—and current? What is the retention period of this data?
+- Are there any suspected compromised systems that are experiencing unusual activity?
+- Are there any suspected compromised accounts that appear to be actively used by the adversary?
+- Is there any evidence of active command and controls (C2s) in EDR, firewall, VPN, web proxy, and other logs?
 
 As part of assessing the current situation, you might need an Active Directory Domain Services (AD DS) domain controller that was not compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. Also determine whether [multifactor authentication (MFA)](https://www.microsoft.com/security/business/identity-access-management/mfa-multi-factor-authentication/) was required for everyone in the company and if [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) was used.
 
@@ -286,4 +286,4 @@ Examine guidance for identifying and investigating these types of attacks:
 - [Planning](incident-response-planning.md) for your Security Operations Center (SOC)
 - [Process](incident-response-process.md) for incident response process recommendations and best practices
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
-- [Azure Sentinel](/azure/sentinel/investigate-cases) incident response
+- [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response

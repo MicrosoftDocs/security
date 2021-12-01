@@ -97,7 +97,7 @@ Once Azure AD Connect Health for ADFS is configured, you should set the threshol
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/Thresholdsettings.png" alt-text="riskyiplalerts"::: 
 
-### Set up SIEM tool alerts on Azure Sentinel
+### Set up SIEM tool alerts on Microsoft Sentinel
 
 To set up SIEM tool alerts, go through the tutorial on [out of the box alerting](/azure/sentinel/tutorial-detect-threats-built-in).
 
@@ -558,7 +558,7 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 
 - [Configure Sign-In risk](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)
 - [Configure User Risk](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)
-- [Configure policy alerts in Cloud App Security](/cloud-app-security/cloud-discovery-policies)
+- [Configure policy alerts in Defender for Cloud Apps](/cloud-app-security/cloud-discovery-policies)
 
 ## Recommended defenses
 

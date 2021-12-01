@@ -20,7 +20,7 @@ This guidance is for software providers and technology partners who want to enha
 
 ## Applications Zero Trust integration guide
 
-This integration guide includes instructions for integrating with [Microsoft Defender for Cloud Apps)](/cloud-app-security/). Defender for Cloud Apps is a Cloud Access Security Broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services.
+This integration guide includes instructions for integrating with [Microsoft Defender for Cloud Apps)](/cloud-app-security/). Defender for Cloud Apps is a cloud access security broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services.
 
 :::image type="content" source="../media/integrate/applications/microsoft-cloud-app-security-architecture.png" alt-text="Architectural diagram showing how an organization uses Defender for Cloud Apps features including app connectors, cloud discovery, and proxy access. App connectors connect to protected cloud apps via APIs. Cloud discovery consumes traffic logs and provides configuration scripts. Proxy access sits in between the organization and its protected apps in the cloud.":::
 

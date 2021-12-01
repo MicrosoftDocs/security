@@ -111,9 +111,9 @@ For more information, see [Generic SIEM Integration](/cloud-app-security/siem).
 
 You can connect SIEM with the Microsoft Graph Security API by using any of the following options:
 
-- **Directly using the supported integration options** – Refer to the list of supported integration options like writing code to directly connect your application to derive rich insights. Leverage samples to get started.
-- **Use native integrations and connectors built by Microsoft partners** – Refer to the Microsoft Graph Security API partner solutions to use these integrations.
-- **Use connectors built by Microsoft** – Refer to the list of connectors that you can use to connect with the API through a variety of solutions for Security Incident and Event Management (SIEM), Security Response and Orchestration (SOAR), Incident Tracking and Service Management (ITSM), reporting, and so on.
+- **Directly using the supported integration options** – Refer to the list of supported integration options like writing code to directly connect your application to derive rich insights. Leverage samples to get started.
+- **Use native integrations and connectors built by Microsoft partners** – Refer to the Microsoft Graph Security API partner solutions to use these integrations.
+- **Use connectors built by Microsoft** – Refer to the list of connectors that you can use to connect with the API through a variety of solutions for Security Incident and Event Management (SIEM), Security Response and Orchestration (SOAR), Incident Tracking and Service Management (ITSM), reporting, and so on.
 
 For more information, see [security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
 
@@ -192,9 +192,9 @@ You can also download the password spray and other incident playbook checklists 
 
 Let’s understand a few password spray attack techniques before proceeding with the investigation.
 
-**Password compromise:** An attacker has successfully guessed the user’s password but has not been able to access the account due to other controls such as multi-factor authentication (MFA).
+**Password compromise:** An attacker has successfully guessed the user’s password but has not been able to access the account due to other controls such as multi-factor authentication (MFA).
 
-**Account compromise:** An attacker has successfully guessed the user’s password and has successfully gained access to the account.
+**Account compromise:** An attacker has successfully guessed the user’s password and has successfully gained access to the account.
 
 ### Environment discovery
 
@@ -202,7 +202,7 @@ Let’s understand a few password spray attack techniques before proceeding with
 
 As the very first step, you need to check what authentication type is used for a tenant/verified domain that you are investigating.
 
-To obtain the authentication status for a specific domain name, use the [Get-MsolDomain](/powershell/module/msonline/get-msoldomain) PowerShell command. Here's an example:
+To obtain the authentication status for a specific domain name, use the [Get-MsolDomain](/powershell/module/msonline/get-msoldomain) PowerShell command. Here's an example:
 
 ```powershell
 Connect-MsolService
@@ -211,24 +211,24 @@ Get-MsolDomain -DomainName "contoso.com"
 
 ### Is the authentication federated or managed?
 
-If the authentication is federated, then successful sign-ins will be stored in Azure AD. The failed sign-ins will be in their Identity Provider (IDP). For more information, see  [ADFS troubleshooting and event logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
+If the authentication is federated, then successful sign-ins will be stored in Azure AD. The failed sign-ins will be in their Identity Provider (IDP). For more information, see  [ADFS troubleshooting and event logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
 
 If the authentication type is managed, (Cloud only, password hash sync (PHS) or pass-through authentication (PTA)), then successful and failed sign-ins will be stored in the Azure AD sign-in logs.
 
 >[!Note]
->The [Staged Rollout](/azure/active-directory/hybrid/how-to-connect-staged-rollout) feature allows the tenant domain name to be federated but specific users to be managed. Determine if any users are members of this group.
+>The [Staged Rollout](/azure/active-directory/hybrid/how-to-connect-staged-rollout) feature allows the tenant domain name to be federated but specific users to be managed. Determine if any users are members of this group.
 >
 
 ### Is Azure AD Connect Health enabled for ADFS?
 
-- The [RiskyIP report](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip)  will provide suspect IPs and date/time. Notifications should be enabled.
-- Also check the [federated sign-ins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
+- The [RiskyIP report](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip)  will provide suspect IPs and date/time. Notifications should be enabled.
+- Also check the [federated sign-ins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
 
 ### Is the advanced logging enabled in ADFS?
 
 - This is a requirement for ADFS Connect Health but it can be enabled independently
 - See how to [enable ADFS Health Connect](/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs))
-- Also check the [Federated sign-ins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
+- Also check the [Federated sign-ins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
 
 ### Are the logs stored in SIEM?
 
@@ -500,12 +500,12 @@ If data has been breached, then you should inform additional agencies, such as t
 
 ## Immediate remedial actions
 
-1. Change the password of any account that is suspected to have been breached or if the account password has been discovered. Additionally, block the user. Make sure you follow the guidelines for [revoking emergency access](/azure/active-directory/enterprise-users/users-revoke-access).
+1. Change the password of any account that is suspected to have been breached or if the account password has been discovered. Additionally, block the user. Make sure you follow the guidelines for [revoking emergency access](/azure/active-directory/enterprise-users/users-revoke-access).
 2. Mark any account that has been compromised as “*compromised*” in Azure Identity Protection.
 3. Block the IP address of the attacker. Be cautious while performing this action as attackers can use legitimate VPNs and this could create more risk as they change IP addresses as well. If you are using Cloud Authentication, then block the IP address in MCAS or Azure AD. If federated, you need to block the IP address at the firewall level in front of the ADFS service.
-4. [Block legacy](/azure/active-directory/conditional-access/block-legacy-authentication) authentication if it is being used (this action, however, could impact business).
-5. [Enable MFA](/azure/active-directory/authentication/tutorial-enable-azure-mfa) if it is not already done.
-6. [Enable Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) for the user risk and sign-in risk
+4. [Block legacy](/azure/active-directory/conditional-access/block-legacy-authentication) authentication if it is being used (this action, however, could impact business).
+5. [Enable MFA](/azure/active-directory/authentication/tutorial-enable-azure-mfa) if it is not already done.
+6. [Enable Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) for the user risk and sign-in risk
 7. Check the data that has been compromised (emails, SharePoint, OneDrive, apps). See how to use the [activity filter in MCAS](/cloud-app-security/activity-filters).
 8. Maintain password hygiene. For more information, see [Azure AD password protection](https://www.microsoft.com/research/publication/password-guidance/).
 9. You can also refer to [ADFS Help](https://adfshelp.microsoft.com/TroubleshootingGuides/Workflow/a73d5843-9939-4c03-80a1-adcbbf3ccec8).
@@ -540,7 +540,7 @@ In MCAS, “tag” IP address for the IP scope and set up an alert for this IP r
 
 Depending on your organization needs, you can configure alerts.
 
-[Set up alerting in your SIEM tool](/microsoft-365/security/office-365-security/siem-server-integration)  and look at improving logging gaps. Integrate ADFS, Azure AD, Office 365 and MCAS logging.
+[Set up alerting in your SIEM tool](/microsoft-365/security/office-365-security/siem-server-integration)  and look at improving logging gaps. Integrate ADFS, Azure AD, Office 365 and MCAS logging.
 
 Configure the threshold and alerts in ADFS Health Connect and Risky IP portal.
 
@@ -565,7 +565,7 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 - Educate end users, key stakeholders, front line operations, technical teams, cyber security and communications teams
 - Review security control and make necessary changes to improve or strengthen security control within your organization
 - Suggest Azure AD configuration assessment
-- Run regular [attack simulator](/microsoft-365/security/office-365-security/attack-simulator) exercises
+- Run regular [attack simulator](/microsoft-365/security/office-365-security/attack-simulator) exercises
 
 ## References
 

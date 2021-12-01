@@ -171,7 +171,7 @@ Additionally, one can troubleshoot and test this feature with Netsh:
 
      netsh http show sslcert \<regular parameters\>
 
-     Watch for Disable Legacy TLS Versions  : Set/Not Set
+     Watch for Disable Legacy TLS Versions  : Set/Not Set
 
 ### Option \#3: C++ HTTP.sys APIs (Available Now)
 

@@ -566,17 +566,17 @@ enforcement, Security teams at Microsoft, and others.
 
 There are two places where you review reported risk events:
 
--   **Azure AD reporting** - Risk events are part of Azure AD's security
-    reports. For more information, see the [users at risk security
-    report](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-user-at-risk) and
-    the [risky sign-ins security
+-   **Azure AD reporting** - Risk events are part of Azure AD's security
+    reports. For more information, see the [users at risk security
+    report](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-user-at-risk) and
+    the [risky sign-ins security
     report](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risky-sign-ins).
 
--   **Azure AD Identity Protection** - Risk events are also part of the
-    reporting capabilities of [Azure Active Directory Identity
+-   **Azure AD Identity Protection** - Risk events are also part of the
+    reporting capabilities of [Azure Active Directory Identity
     Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
 
-In addition, you can use the [Identity Protection risk events API](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/identityriskevent) to
+In addition, you can use the [Identity Protection risk events API](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/identityriskevent) to
 gain programmatic access to security detections using Microsoft Graph.
 
 Remediate these risks by manually addressing each reported account or by setting

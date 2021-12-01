@@ -55,8 +55,8 @@ specific attacks as well as specific mitigation steps in use today to
 protect Microsoft products and services against these threats.  This section is primarily targeted at data scientists who may need to implement specific threat mitigations as an output of the threat modeling/security review process.
 
 This guidance is organized around an Adversarial Machine Learning Threat
-Taxonomy created by Ram Shankar Siva Kumar, David O’Brien, Kendra
-Albert, Salome Viljoen, and Jeffrey Snover entitled “[Failure Modes in
+Taxonomy created by Ram Shankar Siva Kumar, David O’Brien, Kendra
+Albert, Salome Viljoen, and Jeffrey Snover entitled “[Failure Modes in
 Machine Learning](https://docs.microsoft.com/security/failure-modes-in-machine-learning).” For incident management guidance on triaging
 security threats detailed in this document, refer to the [SDL Bug Bar
 for AI/ML Threats.](https://docs.microsoft.com/security/bug-bar-aiml)  All of these are living documents which will evolve over time with the threat landscape.
@@ -335,8 +335,8 @@ class="anchor"></span></span></span></span></span></span></span></span></span></
 
 #### Description
 
-In perturbation-style attacks, the attacker stealthily modifies
-the query to get a desired response from a production-deployed model[1].
+In perturbation-style attacks, the attacker stealthily modifies
+the query to get a desired response from a production-deployed model[1].
 This is a breach of model input integrity which leads to fuzzing-style
 attacks where the end result isn’t necessarily an access violation or
 EOP, but instead compromises the model’s classification performance.
@@ -638,7 +638,7 @@ Important
 ##### Description
 
 The private features used in machine learning models can be
-recovered [1]. This includes reconstructing private training data that
+recovered [1]. This includes reconstructing private training data that
 the attacker does not have access to. Also known as hill climbing
 attacks in the biometric community [16, 17] This is accomplished by
 finding the input which maximizes the confidence level returned, subject
@@ -675,9 +675,9 @@ critical.
 
 ##### Description
 
-The attacker can determine whether a given data record was part of the
+The attacker can determine whether a given data record was part of the
 model’s training dataset or not[1]. Researchers were able to predict a
-patient’s main procedure (e.g: Surgery the patient went through) based
+patient’s main procedure (e.g: Surgery the patient went through) based
 on the attributes (e.g: age, gender, hospital) [1].
 
 ![](./media/threat-modeling-aiml/tm10.jpg)[12]
@@ -718,7 +718,7 @@ would be driven by Privacy, not Security.
 The attackers recreate the underlying model by legitimately querying the
 model. The functionality of the new model is same as that of the
 underlying model[1]. Once the model is recreated, it can be inverted to
-recover feature information or make inferences on training data. 
+recover feature information or make inferences on training data. 
 
 - Equation solving – For a model that returns class probabilities via
     API output, an attacker can craft queries to determine unknown
@@ -799,12 +799,12 @@ offender’s account.
 
 Important to Critical
 
-## \#7 Adversarial Example in the Physical domain (bits-\>atoms)
+## \#7 Adversarial Example in the Physical domain (bits-\>atoms)
 
 Description
 
 An adversarial example is an input/query from a malicious entity sent
-with the sole aim of misleading the machine learning system [1]
+with the sole aim of misleading the machine learning system [1]
 
 ##### Examples
 
@@ -812,7 +812,7 @@ These examples can manifest in the physical domain, like a self-driving
 car being tricked into running a stop sign because of a certain color of
 light (the adversarial input) being shone on the stop sign, forcing the
 image recognition system to no longer see the stop sign as a stop
-sign.  
+sign.  
 
 ##### Traditional Parallels
 
@@ -833,12 +833,12 @@ traditional software.
 
 Critical
 
-## \#8 Malicious ML providers who can recover training data 
+## \#8 Malicious ML providers who can recover training data 
 
 ##### Description
 
 A malicious provider presents a backdoored algorithm, wherein the
-private training data is recovered. They were able to reconstruct faces
+private training data is recovered. They were able to reconstruct faces
 and texts, given the model alone.
 
 ##### Traditional Parallels
@@ -865,11 +865,11 @@ Important if data is PII, Moderate otherwise
 
 Owing to large resources (data + computation) required to train
 algorithms, the current practice is to reuse models trained by
-large corporations and modify them slightly for task at hand (e.g:
+large corporations and modify them slightly for task at hand (e.g:
 ResNet is a popular image recognition model from Microsoft). These
 models are curated in a Model Zoo (Caffe hosts popular image recognition
 models). In this attack, the adversary attacks the models hosted in
-Caffe, thereby poisoning the well for anyone else. [1]
+Caffe, thereby poisoning the well for anyone else. [1]
 
 ##### Traditional Parallels
 
@@ -936,7 +936,7 @@ scenarios.
 
 Critical
 
-## \#11 Exploit software dependencies of the ML system
+## \#11 Exploit software dependencies of the ML system
 
 ##### Description
 
@@ -966,7 +966,7 @@ vulnerability.
 ## Bibliography
 
 [1] Failure Modes in Machine Learning, Ram Shankar Siva
-Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover,
+Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover,
 <https://docs.microsoft.com/security/failure-modes-in-machine-learning>
 
 [2] AETHER Security Engineering Workstream, Data Provenance/Lineage

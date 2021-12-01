@@ -28,7 +28,7 @@ If you are new-to-role as a security analyst, see these resources to get you sta
 | SecOps incident response process | [Incident response process](incident-response-process.md) for best practices on responding to an incident. |
 | Incident response workflow  | [Example incident response workflow for Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview#example-incident-response-workflow-for-microsoft-365-defender) |
 | Periodic security operations | [Example periodic security operations for Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview#example-security-operations-for-microsoft-365-defender) |
-| Investigation for Azure Sentinel | [Incidents in Azure Sentinel](/azure/sentinel/tutorial-investigate-cases) |
+| Investigation for Microsoft Sentinel | [Incidents in Microsoft Sentinel](/azure/sentinel/tutorial-investigate-cases) |
 | Investigation for Microsoft 365 Defender | [Incidents in Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) |
 |||
 
@@ -38,13 +38,13 @@ If you are an experienced security analyst, see these resources to quickly ramp 
 
 | Topic | Resource |
 |:-------|:-----|
-| Azure Sentinel | [How to investigate incidents](/azure/sentinel/tutorial-investigate-cases) |
+| Microsoft Sentinel | [How to investigate incidents](/azure/sentinel/tutorial-investigate-cases) |
 | Microsoft 365 Defender | [How to investigate incidents](/microsoft-365/security/defender/incidents-overview) |
 | Security operations establishment or modernization | Azure Cloud Adoption Framework articles for [SecOps](/azure/cloud-adoption-framework/secure/security-operations) and [SecOps functions](/azure/cloud-adoption-framework/organize/cloud-security-operations-center)|
 | Microsoft security best practices  | [How to best use your SecOps center](/security/compass/security-operations) |
 | Incident response playbooks |  Overview at [https://aka.ms/IRplaybooks](https://aka.ms/IRplaybooks) <br> - [Phishing](incident-response-playbook-phishing.md) <br> - [Password spray](incident-response-playbook-password-spray.md) <br> - [App consent grant](incident-response-playbook-app-consent.md) |
-| SOC Process Framework | [Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-azure-sentinel-soc-process-framework-workbook/ba-p/2339315) |
-| MSTICPy and Jupyter Notebooks | [Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/msticpy-and-jupyter-notebooks-in-azure-sentinel-an-update/ba-p/2279661) |
+| SOC Process Framework | [Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-azure-sentinel-soc-process-framework-workbook/ba-p/2339315) |
+| MSTICPy and Jupyter Notebooks | [Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/msticpy-and-jupyter-notebooks-in-azure-sentinel-an-update/ba-p/2279661) |
 |||
 
 ## Blog series about SecOps within Microsoft
@@ -65,10 +65,10 @@ See this blog series about how the SecOps team at Microsoft works.
 [Simuland](https://www.microsoft.com/security/blog/2021/05/20/simuland-understand-adversary-tradecraft-and-improve-detection-strategies/) is an open-source initiative to deploy lab environments and end-to-end simulations that:
 
 - Reproduce well-known techniques used in real attack scenarios.
-- Actively test and verify the effectiveness of related Microsoft 365 Defender, Azure Defender, and Azure Sentinel detections.
+- Actively test and verify the effectiveness of related Microsoft 365 Defender, Microsoft Defender for Cloud, and Microsoft Sentinel detections.
 - Extend threat research using telemetry and forensic artifacts generated after each simulation exercise.
 
-Simuland lab environments provide use cases from a variety of data sources including telemetry from  Microsoft 365 Defender security products, Azure Defender, and other integrated data sources through Azure Sentinel data connectors.
+Simuland lab environments provide use cases from a variety of data sources including telemetry from  Microsoft 365 Defender security products, Microsoft Defender for Cloud, and other integrated data sources through Microsoft Sentinel data connectors.
 
 In the safety of a trial or paid sandbox subscription, you can:
 
@@ -90,7 +90,7 @@ After reading an overview of [Simuland](https://www.microsoft.com/security/blog/
 - [Process](incident-response-process.md) for incident response process recommendations and best practices
 - [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
-- [Azure Sentinel](/azure/sentinel/investigate-cases) incident response
+- [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 
 
 ## Key Microsoft security resources 
@@ -105,4 +105,3 @@ After reading an overview of [Simuland](https://www.microsoft.com/security/blog/
 | [Microsoft cloud security for IT architects model](https://aka.ms/cloudarchsecurity) | Security across Microsoft cloud services and platforms for identity and device access, threat protection, and information protection. |
 | [Microsoft security documentation](/security/) | Additional security guidance from Microsoft. |
 |||
-

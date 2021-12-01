@@ -223,7 +223,7 @@ Consider this general guidance about the incident response process for your secu
 
 ### 1. Decide and act
 
-After a threat detection tool such as Azure Sentinel or Microsoft 365 Defender detects a likely attack, it creates an incident. The Mean Time to Acknowledge (MTTA) measurement of SOC responsiveness begins with the time this attack is noticed by your security staff. 
+After a threat detection tool such as Microsoft Sentinel or Microsoft 365 Defender detects a likely attack, it creates an incident. The Mean Time to Acknowledge (MTTA) measurement of SOC responsiveness begins with the time this attack is noticed by your security staff.
 
 An analyst on shift is either delegated or takes ownership of the incident and performs an initial analysis. The timestamp for this is the end of the MTTA responsiveness measurement and begins the Mean Time to Remediate (MTTR) measurement.
 
@@ -257,7 +257,7 @@ The specific response steps are dependent on the nature of the attack, but the m
 
 - User accounts
 
-   Reclaim control by disabling the account and resetting password for compromised accounts. These procedures could evolve as your users transition to passwordless authentication using Windows Hello or another form of multi-factor authentication (MFA). A separate step is to expire all authentication tokens for the account with [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
+   Reclaim control by disabling the account and resetting password for compromised accounts. These procedures could evolve as your users transition to passwordless authentication using Windows Hello or another form of multi-factor authentication (MFA). A separate step is to expire all authentication tokens for the account with [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security).
 
    Your analysts can also review the MFA method phone number and device enrollment to ensure it hasn’t been hijacked by contacting the user and reset this information as needed.
 
@@ -301,7 +301,7 @@ Review your response processes to identify and resolve any gaps found during the
 - [Planning](incident-response-planning.md) for your SOC
 - [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
-- [Azure Sentinel](/azure/sentinel/investigate-cases) incident response
+- [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 
 ## Key Microsoft security resources 
 
@@ -315,4 +315,3 @@ Review your response processes to identify and resolve any gaps found during the
 | [Microsoft cloud security for IT architects model](https://aka.ms/cloudarchsecurity) | Security across Microsoft cloud services and platforms for identity and device access, threat protection, and information protection. |
 | [Microsoft security documentation](/security/) | Additional security guidance from Microsoft. |
 |||
-

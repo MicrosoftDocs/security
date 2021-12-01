@@ -36,11 +36,10 @@ The following videos provide guidance on security operations.
 - See security operations [best practices](security-operations.md) and [capabilities](security-operations-capabilities.md) for more information.
 - Review the [PowerPoint slides](/microsoft-365/downloads/security-compass-presentation.pptx) for the Microsoft Azure Security Compass Workshop.
 
-
 ## See also
 
 - [Security operations functions](/azure/cloud-adoption-framework/organize/cloud-security-operations-center) from the Cloud Adoption Framework for Azure
-- [SOC Process Framework Workbook for Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-azure-sentinel-soc-process-framework-workbook/ba-p/2339315)
+- [SOC Process Framework Workbook for Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-azure-sentinel-soc-process-framework-workbook/ba-p/2339315)
 - [Additional security guidance from Microsoft](/security/)
 
 ## Key Microsoft security resources 

@@ -72,15 +72,15 @@ Specialized accounts are a higher protection level suitable for sensitive users.
 
 Specialized security builds on the strong MFA in enterprise security by identifying the most sensitive accounts and ensuring alerts and response processes are prioritized:
 
-1. Identify Sensitive Accounts - See specialized security level guidance for identifying these accounts. 
+1. Identify Sensitive Accounts - See specialized security level guidance for identifying these accounts.
 1. Tag Specialized Accounts - Ensure each sensitive account is tagged
-   1. [Configure Azure Sentinel Watchlists](https://docs.microsoft.com/azure/sentinel/watchlists) to identify these sensitive accounts 
+   1. [Configure Microsoft Sentinel Watchlists](https://docs.microsoft.com/azure/sentinel/watchlists) to identify these sensitive accounts 
    1. [Configure Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385) and designate specialized and privileged accounts as priority accounts - 
 1. Update Security Operations processes - to ensure these alerts are given the highest priority
 1. Set up Governance - Update or create governance process to ensure that
    1. All new roles to are evaluated for specialized or privileged classifications as they are created or changed
    1. All new accounts are tagged as they are created
-   1. Continuous or periodic out of band checks to ensure that roles and accounts didn't get missed by normal governance processes. 
+   1. Continuous or periodic out of band checks to ensure that roles and accounts didn't get missed by normal governance processes.
 
 ### Privileged accounts
 

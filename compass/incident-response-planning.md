@@ -37,7 +37,7 @@ Use this table as a checklist to prepare your Security Operations Center (SOC) t
 - [Process](incident-response-process.md) for incident response process recommendations and best practices
 - [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
-- [Azure Sentinel](/azure/sentinel/investigate-cases) incident response
+- [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 
 ## Key Microsoft security resources 
 
@@ -51,4 +51,3 @@ Use this table as a checklist to prepare your Security Operations Center (SOC) t
 | [Microsoft cloud security for IT architects model](https://aka.ms/cloudarchsecurity) | Security across Microsoft cloud services and platforms for identity and device access, threat protection, and information protection. |
 | [Microsoft security documentation](/security/) | Additional security guidance from Microsoft. |
 |||
-

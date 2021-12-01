@@ -129,14 +129,14 @@ To deploy the Zero Trust (TIC 3.0) workbook from the Azure portal:
         - Viewing your data
         - Adjusting SIEM queries
         - Exporting artifacts
-   :::column-end:::
-   :::column span="":::
+       :::column-end:::
+       :::column span="":::
         - Onboarding Microsoft controls
         - Navigating configuration pages
         - Accessing reference materials
         - Viewing correlated compliance frameworks
-   :::column-end:::
-:::row-end:::
+       :::column-end:::
+    :::row-end:::
 
     > [!TIP]
     > Select **Overview** to view information about the overlaps between the Microsoft Zero Trust model and the TIC 3.0 framework.

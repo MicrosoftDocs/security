@@ -1,5 +1,5 @@
 ---
-title: Visualize Zero Trust in your environment with Microsoft Sentinel
+title: View Zero Trust in your environment with Microsoft Sentinel
 description: Install and learn how to use the Microsoft Sentinel Zero Trust (TIC3.0) workbook for an automated visualization of Zero Trust principles, cross-walked to the Trusted Internet Connections framework.
 ms.date: 11/30/2021
 ms.service: security
@@ -8,7 +8,7 @@ ms.author: bagol
 ms.topic: how-to
 ---
 
-# Visualize Zero Trust in your environment with Microsoft Sentinel
+# View Zero Trust in your environment with Microsoft Sentinel
 
 The Microsoft Sentinel Zero Trust (TIC 3.0) workbook provides an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, and helps organizations to monitor configurations over time.
 

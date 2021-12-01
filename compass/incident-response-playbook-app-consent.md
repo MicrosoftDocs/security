@@ -470,7 +470,7 @@ After you have finished inventorying application access, review the audit log to
 
 If your organization has the appropriate license:
 
-- Use additional [OAuth application](/cloud-app-security/investigate-risky-oauth)  auditing features in Microsoft Cloud App Security.
+- Use additional [OAuth application](/cloud-app-security/investigate-risky-oauth)  auditing features in Microsoft Defender for Cloud Apps.
 - Use [Azure Monitor Workbooks](/azure/active-directory/reports-monitoring/howto-use-azure-monitor-workbooks)  to monitor permissions and consent related activity. The Consent Insights workbook provides a view of apps by number of failed consent requests. This can be helpful to prioritize applications for administrators to review and decide whether to grant them admin consent.
 
 ## How to stop and remediate an illicit consent grant attack?

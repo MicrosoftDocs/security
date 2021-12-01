@@ -25,9 +25,9 @@ This guidance defines three security levels for interface security that you can 
 The security requirements for inbound sessions to interfaces apply to accounts and the source device, whether it’s a direct connection from [physical devices](privileged-access-devices.md) or a Remote Desktop / Jump server [intermediary](privileged-access-intermediaries.md). Intermediaries can accept sessions from personal devices to provide enterprise security level (for some scenarios), but specialized or privileged intermediaries should not allow connections from lower levels because of the security sensitive nature of their roles. 
 
 > [!NOTE]
-> These technologies provide strong end to end access control to the application interface, but the resource itself must also be secured from out of band attacks on the application code/functionality, unpatched vulnerabilities or configuration errors in the underlying operating system or firmware, on data at rest or in transit, supply chains, or other means. 
-> 
-> Ensure to assess and discover risks to the assets themselves for complete protection. Microsoft provides tooling and guidance to help you with that including [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-introduction), [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score), and [threat modelling guidance](https://www.microsoft.com/securityengineering/sdl/threatmodeling).  
+> These technologies provide strong end to end access control to the application interface, but the resource itself must also be secured from out of band attacks on the application code/functionality, unpatched vulnerabilities or configuration errors in the underlying operating system or firmware, on data at rest or in transit, supply chains, or other means.
+>
+> Ensure to assess and discover risks to the assets themselves for complete protection. Microsoft provides tooling and guidance to help you with that including [Microsoft Defender for Cloud](https://docs.microsoft.com/azure/security-center/security-center-introduction), [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score), and [threat modelling guidance](https://www.microsoft.com/securityengineering/sdl/threatmodeling).
 
 ## Interface examples
 

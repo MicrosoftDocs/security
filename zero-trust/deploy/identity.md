@@ -252,19 +252,19 @@ Get more granular session/user risk signal with Identity Protection. You'll be a
 
 Take this step:
 
- - [Enable Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
+- [Enable Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
-#### Enable Microsoft Cloud App Security integration with Identity Protection
+#### Enable Microsoft Defender for Cloud Apps integration with Identity Protection
 
-Microsoft Cloud App Security (MCAS) monitors user behavior inside SaaS and modern applications. This informs Azure AD about what happened to the user after they authenticated and received a token. If the user pattern starts to look suspicious (e.g., a user starts to download gigabytes of data from OneDrive or starts to send spam emails in Exchange Online), then a signal can be fed to Azure AD notifying it that the user seems to be compromised or high risk. On the next access request from this user, Azure AD can correctly take action to verify the user or block them.
+Microsoft Defender for Cloud Apps monitors user behavior inside SaaS and modern applications. This informs Azure AD about what happened to the user after they authenticated and received a token. If the user pattern starts to look suspicious (e.g., a user starts to download gigabytes of data from OneDrive or starts to send spam emails in Exchange Online), then a signal can be fed to Azure AD notifying it that the user seems to be compromised or high risk. On the next access request from this user, Azure AD can correctly take action to verify the user or block them.
 
 Take this step:
 
- - [Enable MCAS monitoring](/cloud-app-security/azip-integration) to enrich the Identity Protection signal.
+- [Enable Defender for Cloud Apps monitoring](/cloud-app-security/azip-integration) to enrich the Identity Protection signal.
 
-#### Enable Conditional Access integration with Microsoft Cloud App Security
+#### Enable Conditional Access integration with Microsoft Defender for Cloud Apps
 
-Using signals emitted after authentication and with MCAS proxying requests to applications, you will be able to monitor sessions going to SaaS applications and enforce restrictions.
+Using signals emitted after authentication and with Defender for Cloud Apps proxying requests to applications, you will be able to monitor sessions going to SaaS applications and enforce restrictions.
 
 Follow these steps:
 
@@ -285,15 +285,15 @@ Take this step:
 
 Finally, other security solutions can be integrated for greater effectiveness.
 
-#### Integrate Microsoft Defender for Identity with Microsoft Cloud App Security
+#### Integrate Microsoft Defender for Identity with Microsoft Defender for Cloud Apps
 
 Integration with Microsoft Defender for Identity enables Azure AD to know that a user is indulging in risky behavior while accessing on-premises, non-modern resources (like File Shares). This can then be factored into overall user risk to block further access in the cloud.
 
 Follow these steps:
 
-1.  [Enable Microsoft Defender for Identity](/cloud-app-security/aatp-integration) with Microsoft Cloud App Security to bring on-premises signals into the risk signal we know about the user.
+1. [Enable Microsoft Defender for Identity](/cloud-app-security/aatp-integration) with Microsoft Defender for Cloud Apps to bring on-premises signals into the risk signal we know about the user.
 
-2.  Check the [combined Investigation Priority score](https://techcommunity.microsoft.com/t5/enterprise-mobility-security/introducing-investigation-priority-built-on-user-and-entity/ba-p/360853) for each user at risk to give a holistic view of which ones your SOC should focus on.
+2. Check the [combined Investigation Priority score](https://techcommunity.microsoft.com/t5/enterprise-mobility-security/introducing-investigation-priority-built-on-user-and-entity/ba-p/360853) for each user at risk to give a holistic view of which ones your SOC should focus on.
 
 #### Enable Microsoft Defender for Endpoint
 

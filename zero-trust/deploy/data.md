@@ -65,10 +65,7 @@ The initial deployment objectives for information protection are:
 
 1.  Reviewing the Microsoft product roadmap to be aware of features that are coming that will align to your organization's information protection journey.
 
-The above activities are consistent for all organizations planning an
-information protection project, not just those focused on implementing a
-Zero Trust approach to securing data. We won't further discuss these
-activities in this guide. For more information, see:
+The above activities are consistent for all organizations planning an information protection project, not just those focused on implementing a Zero Trust approach to securing data. We won't further discuss these activities in this guide. For more information, see:
 
 -   Microsoft Documents: [Getting started with sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-worldwide&preserve-view=true)
 
@@ -191,7 +188,7 @@ Follow these steps:
 
 ### IV. Access decisions are governed by a cloud security policy engine
 
-For data stored in Exchange, SharePoint, and OneDrive, automatic classification with sensitivity labels can be deployed via policies to targeted locations. Microsoft Cloud App Security provides additional capabilities to manage sensitive files, including:
+For data stored in Exchange, SharePoint, and OneDrive, automatic classification with sensitivity labels can be deployed via policies to targeted locations. Microsoft Defender for Cloud Apps provides additional capabilities to manage sensitive files, including:
 
 -   The removal of collaborators to prevent excessive privilege and data leakage.
 
@@ -203,8 +200,7 @@ Follow these steps:
 
 1.  [Configure auto-labeling policies](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide&preserve-view=true#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) for SharePoint, OneDrive, and Exchange.
 
-2.  [Integrate Microsoft Cloud App
-Security](/cloud-app-security/azip-integration) and Microsoft Information Protection and use it to also protect data in third-party environments such as Box or G-Suite. 
+2.  [Integrate Microsoft Defender for Cloud Apps](/cloud-app-security/azip-integration) and Microsoft Information Protection and use it to also protect data in third-party environments such as Box or G-Suite. 
 
 
 ### V. Prevent data leakage through DLP policies based on a sensitivity label and content inspection
@@ -315,7 +311,7 @@ Follow these steps:
 
 **Microsoft 365**
 
-[Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
+[Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
 
 ## Conclusion
 

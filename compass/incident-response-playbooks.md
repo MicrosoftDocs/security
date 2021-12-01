@@ -49,4 +49,4 @@ Also see [Microsoft’s DART ransomware approach and best practices](incident-re
 - [Planning](incident-response-planning.md) for your Security Operations Center (SOC)
 - [Process](incident-response-process.md) for incident response process recommendations and best practices
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
-- [Azure Sentinel](/azure/sentinel/investigate-cases) incident response
+- [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response

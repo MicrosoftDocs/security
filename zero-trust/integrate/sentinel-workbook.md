@@ -1,5 +1,5 @@
 ---
-title: Install the Microsoft Sentinel Zero Trust (TIC 3.0) workbook
+title: Visualize Zero Trust in your environment with Microsoft Sentinel
 description: Install and learn how to use the Microsoft Sentinel Zero Trust (TIC3.0) workbook for an automated visualization of Zero Trust principles, cross-walked to the Trusted Internet Connections framework.
 ms.date: 11/30/2021
 ms.service: security
@@ -8,7 +8,7 @@ ms.author: bagol
 ms.topic: how-to
 ---
 
-# Visualize Zero Trust in your environment with the Microsoft Sentinel
+# Visualize Zero Trust in your environment with Microsoft Sentinel
 
 The Microsoft Sentinel Zero Trust (TIC 3.0) workbook provides an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, and helps organizations to monitor configurations over time.
 
@@ -16,7 +16,7 @@ The Zero Trust workbook uses the full breadth of Microsoft Security offerings ac
 
 This article describes how to install and use the Microsoft Sentinel Zero Trust workbook in your Microsoft Sentinel workspace.
 
-## The Zero Trust workbook and the Trusted Internet Connections framework
+## The Zero Trust workbook and the TIC framework
 
 While the Microsoft Sentinel Zero Trust (TIC 3.0) workbook provides best practice guidance, Microsoft does not guarantee nor imply compliance. All Trusted Internet Connection (TIC) requirements, validations, and controls are governed by the [Cybersecurity & Infrastructure Security Agency](https://www.cisa.gov/trusted-internet-connections).
 
@@ -75,9 +75,9 @@ Before you use the Zero Trust (TIC 3.0) workbook, we recommend that you have the
       - [Azure Firewall](/azure/sentinel/data-connectors-reference#azure-firewall)
       - [Azure Information Protection](/azure/sentinel/data-connectors-reference#azure-information-protection)
       - [Azure Web Application Firewall](/azure/sentinel/data-connectors-reference#azure-web-application-firewall-waf)
+      - [Microsoft 365 Defender](/azure/sentinel/connect-microsoft-365-defender)
    :::column-end:::
    :::column span="":::
-      - [Microsoft 365 Defender](/azure/sentinel/connect-microsoft-365-defender)
       - [Microsoft Defender for Cloud](/azure/sentinel/connect-defender-for-cloud)
       - [Microsoft Defender for Cloud Apps](/azure/sentinel/data-connectors-reference#microsoft-defender-for-cloud-apps)
       - [Microsoft Defender for Office 365](/azure/sentinel/data-connectors-reference#microsoft-defender-for-office-365)
@@ -123,14 +123,20 @@ To deploy the Zero Trust (TIC 3.0) workbook from the Azure portal:
 
     For example, for each capability selected, the workbook may show the following types of information, and more:
 
-    - Understanding requirements
-    - Viewing your data
-    - Adjusting SIEM queries
-    - Exporting artifacts
-    - Onboarding Microsoft controls
-    - Navigating configuration pages
-    - Accessing reference materials
-    - Viewing correlated compliance frameworks
+    :::row:::
+       :::column span="":::
+        - Understanding requirements
+        - Viewing your data
+        - Adjusting SIEM queries
+        - Exporting artifacts
+   :::column-end:::
+   :::column span="":::
+        - Onboarding Microsoft controls
+        - Navigating configuration pages
+        - Accessing reference materials
+        - Viewing correlated compliance frameworks
+   :::column-end:::
+:::row-end:::
 
     > [!TIP]
     > Select **Overview** to view information about the overlaps between the Microsoft Zero Trust model and the TIC 3.0 framework.
@@ -141,7 +147,7 @@ To deploy the Zero Trust (TIC 3.0) workbook from the Azure portal:
 Use the following legend to navigate through the Zero Trust workbook template.
 
 - **Green panes** provide definitions, guides, and references. For example:
-    :::image type="content" source="../media/integrate/sentinel-workbook/example-info.png" alt-text="Screenshot of a sample green pane showing guide information.":::
+    :::image type="content" source="../media/integrate/sentinel-workbook/example-guides.png" alt-text="Screenshot of a sample green pane showing guide information.":::
 
 - **Blue panes** list controls, best practices, and recommendations. For example:
 
@@ -160,10 +166,6 @@ Use the following legend to navigate through the Zero Trust workbook template.
 - :::image type="icon" source="../media/integrate/sentinel-workbook/icon-references.png" border="false"::: **Yellow light bulbs** list extra references for more information.
 
 - :::image type="icon" source="../media/integrate/sentinel-workbook/icon-permissions.png" border="false"::: **Items with a magnifying glass** indicate recommended roles or permissions.
-
-### Watch a demo
-
-:::image type="content" source="../media/integrate/sentinel-workbook/zero-trust-overview.gif" alt-text="Gif file showing a quick tour of the Zero Trust workbook.":::
 
 ## Configure and troubleshoot your workbook
 

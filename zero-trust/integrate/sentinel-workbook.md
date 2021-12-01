@@ -144,8 +144,9 @@ To deploy the Zero Trust (TIC 3.0) workbook from the Azure portal:
 
 ### Zero Trust workbook template legend
 
-Use the following legend to navigate through the Zero Trust workbook template.
+Use the following legend to navigate through the Zero Trust workbook template. Panes are no longer colored after you've saved the workbook in your workspace.
 
+In the workbook template:
 - **Green panes** provide definitions, guides, and references. For example:
 
     :::image type="content" source="../media/integrate/sentinel-workbook/example-guides.png" alt-text="Screenshot of a sample green pane showing guide information.":::
@@ -157,6 +158,8 @@ Use the following legend to navigate through the Zero Trust workbook template.
 - **Red panes** list customer responsibilities and items not covered in the workbook. For example:
 
     :::image type="content" source="../media/integrate/sentinel-workbook/example-not-included.png" alt-text="Screenshot of a sample red pane for items not included in the workbook.":::
+
+In both the workbook template and the saved workbook:
 
 - :::image type="icon" source="../media/integrate/sentinel-workbook/icon-requirement.png" border="false"::: **Items with a blue diamond** list requirements, such as required logs for that pane.
 

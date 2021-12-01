@@ -101,9 +101,9 @@ Once Azure AD Connect Health for ADFS is configured, you should set the threshol
 
 To set up SIEM tool alerts, go through the tutorial on [out of the box alerting](/azure/sentinel/tutorial-detect-threats-built-in).
 
-### SIEM integration into MCAS
+### SIEM integration into Microsoft Defender for Cloud Apps
 
-Connect the Security Information and Event Management (SIEM) tool to the Microsoft Cloud App Security (MCAS), which currently supports Micro Focus ArcSight and generic common event format (CEF).
+Connect the Security Information and Event Management (SIEM) tool to Microsoft Defender for Cloud Apps, which currently supports Micro Focus ArcSight and generic common event format (CEF).
 
 For more information, see [Generic SIEM Integration](/cloud-app-security/siem).
 
@@ -153,7 +153,7 @@ You can also:
 - Determine the IP address(es) of the attack.
 - Filter on successful sign-ins for this time period and IP address, including successful password but failed MFA
 - Check [MFA reporting](/azure/active-directory/authentication/howto-mfa-reporting)
-- Is there anything out of the ordinary on the account, such as new device, new OS, new IP address used? Use MCAS or Azure Information Protection to detect suspicious activity.
+- Is there anything out of the ordinary on the account, such as new device, new OS, new IP address used? Use Defender for Cloud Apps or Azure Information Protection to detect suspicious activity.
 - Inform local authorities/third parties for assistance.
 - If you suspect a compromise, check for data exfiltration.
 - Check associated account for suspicious behavior and look to correlate to other possible accounts and services as well as other malicious IP addresses.
@@ -175,11 +175,11 @@ Check the [References](#references) section for guidance on how to enable featur
 
 #### Recovery
 
-- Tag bad IP address in MCAS, SIEM, ADFS and Azure AD
+- Tag bad IP address in Defender for Cloud Apps, SIEM, ADFS and Azure AD
 - Check for other forms of mailbox persistence such as forwarding rules or additional delegations added 
 - [MFA as primary authentication](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)
 - [Configure SIEM integrations with Cloud](/microsoft-365/security/office-365-security/siem-server-integration)
-- Configure Alerting - Identity Protection, ADFS Health Connect, SIEM and Cloud App Security
+- Configure Alerting - Identity Protection, ADFS Health Connect, SIEM and Defender for Cloud Apps
 - Lessons Learnt (include key stakeholders, third parties, communication teams)
 - Security posture review/improvements
 - [Plan to run regular attack simulators](/microsoft-365/security/office-365-security/attack-simulator)
@@ -490,10 +490,10 @@ It is important to also check MFA logs as an attacker could have successfully gu
 
 ### Additional checks
 
-In MCAS, investigate activities and file access of the compromised account. For more information, see:
+In Defender for Cloud Apps, investigate activities and file access of the compromised account. For more information, see:
 
-- [Investigate compromise with MCAS](/cloud-app-security/investigate)
-- [Investigate anomalies with MCAS](/cloud-app-security/investigate-anomaly-alerts)
+- [Investigate compromise with Defender for Cloud Apps](/cloud-app-security/investigate)
+- [Investigate anomalies with Defender for Cloud Apps](/cloud-app-security/investigate-anomaly-alerts)
 
 Check whether the user has access to additional resources, such as virtual machines (VMs), domain account permissions, storage, among others.  
 If data has been breached, then you should inform additional agencies, such as the police.
@@ -502,11 +502,11 @@ If data has been breached, then you should inform additional agencies, such as t
 
 1. Change the password of any account that is suspected to have been breached or if the account password has been discovered. Additionally, block the user. Make sure you follow the guidelines for [revoking emergency access](/azure/active-directory/enterprise-users/users-revoke-access).
 2. Mark any account that has been compromised as “*compromised*” in Azure Identity Protection.
-3. Block the IP address of the attacker. Be cautious while performing this action as attackers can use legitimate VPNs and this could create more risk as they change IP addresses as well. If you are using Cloud Authentication, then block the IP address in MCAS or Azure AD. If federated, you need to block the IP address at the firewall level in front of the ADFS service.
+3. Block the IP address of the attacker. Be cautious while performing this action as attackers can use legitimate VPNs and this could create more risk as they change IP addresses as well. If you are using Cloud Authentication, then block the IP address in Defender for Cloud Apps or Azure AD. If federated, you need to block the IP address at the firewall level in front of the ADFS service.
 4. [Block legacy](/azure/active-directory/conditional-access/block-legacy-authentication) authentication if it is being used (this action, however, could impact business).
 5. [Enable MFA](/azure/active-directory/authentication/tutorial-enable-azure-mfa) if it is not already done.
 6. [Enable Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) for the user risk and sign-in risk
-7. Check the data that has been compromised (emails, SharePoint, OneDrive, apps). See how to use the [activity filter in MCAS](/cloud-app-security/activity-filters).
+7. Check the data that has been compromised (emails, SharePoint, OneDrive, apps). See how to use the [activity filter in Defender for Cloud Apps](/cloud-app-security/activity-filters).
 8. Maintain password hygiene. For more information, see [Azure AD password protection](https://www.microsoft.com/research/publication/password-guidance/).
 9. You can also refer to [ADFS Help](https://adfshelp.microsoft.com/TroubleshootingGuides/Workflow/a73d5843-9939-4c03-80a1-adcbbf3ccec8).
 
@@ -524,13 +524,13 @@ For more information, see [how to defend against password spray attacks](https:/
 
 ### Tagging IP address
 
-Tag the IP addresses in MCAS to receive alerts related to future use:
+Tag the IP addresses in Defender for Cloud Apps to receive alerts related to future use:
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/IPaddresstag.jpg" alt-text="Example of tagging an IP address"::: 
 
 *Tagging IP addresses*
 
-In MCAS, “tag” IP address for the IP scope and set up an alert for this IP range for future reference and accelerated response.
+In Defender for Cloud Apps, “tag” IP address for the IP scope and set up an alert for this IP range for future reference and accelerated response.
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/ipaddressalert.png" alt-text="Example of setting up an IP address alert"::: 
 
@@ -540,7 +540,7 @@ In MCAS, “tag” IP address for the IP scope and set up an alert for this IP r
 
 Depending on your organization needs, you can configure alerts.
 
-[Set up alerting in your SIEM tool](/microsoft-365/security/office-365-security/siem-server-integration)  and look at improving logging gaps. Integrate ADFS, Azure AD, Office 365 and MCAS logging.
+[Set up alerting in your SIEM tool](/microsoft-365/security/office-365-security/siem-server-integration)  and look at improving logging gaps. Integrate ADFS, Azure AD, Office 365 and Defender for Cloud Apps logging.
 
 Configure the threshold and alerts in ADFS Health Connect and Risky IP portal.
 
@@ -572,7 +572,7 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 ### Prerequisites
 
 - [Sentinel Alerting](/azure/sentinel/tutorial-detect-threats-built-in)
-- [SIEM integration into MCAS](/cloud-app-security/siem)
+- [SIEM integration into Defender for Cloud Apps](/cloud-app-security/siem)
 - [SIEM integration with Graph API](/graph/security-integration#list-of-connectors-from-microsoft)
 - [Splunk alerting video](https://www.splunk.com/view/SP-CAAAGYG)
 - [Splunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview)
@@ -601,7 +601,7 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 ### Recovery
 
 - [SIEM tool integrations](/microsoft-365/security/office-365-security/siem-server-integration)
-- [Create MCAS alerts](/cloud-app-security/cloud-discovery-policies)
+- [Create Defender for Cloud Apps alerts](/cloud-app-security/cloud-discovery-policies)
 - [Create Risky IP and ADFS Health Connect Alerts](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip)
 - [Identity Protection alerts](/azure/active-directory/identity-protection/howto-identity-protection-configure-notifications)
 - [Attack simulator](/microsoft-365/security/office-365-security/attack-simulator)

@@ -1,7 +1,7 @@
 ---
 title: View Zero Trust in your environment with Microsoft Sentinel
 description: Install and learn how to use the Microsoft Sentinel Zero Trust (TIC3.0) workbook for an automated visualization of Zero Trust principles, cross-walked to the Trusted Internet Connections framework.
-ms.date: 11/30/2021
+ms.date: 12/07/2021
 ms.service: security
 author: batamig
 ms.author: bagol
@@ -15,6 +15,8 @@ The Microsoft Sentinel Zero Trust (TIC 3.0) workbook provides an automated visua
 The Zero Trust workbook uses the full breadth of Microsoft Security offerings across Azure, Microsoft 365, Teams, Intune, Windows Virtual Desktop, and more. It uses automation to visualize your Zero Trust security architecture and helps users across your teams to gain situational awareness for cloud workloads' security posture. The workbook is designed to augment staffing through automation, artificial intelligence, machine learning, query/alerting generation, visualizations, tailored recommendations, and respective documentation references.
 
 This article describes how to install and use the Microsoft Sentinel Zero Trust workbook in your Microsoft Sentinel workspace.
+
+For more information, see [Guiding principles of Zero Trust](../index.md#guiding-principles-of-zero-trust).
 
 ## The Zero Trust workbook and the TIC framework
 
@@ -202,9 +204,9 @@ For more information, see the [Azure Monitor workbook documentation](/azure/azur
 
 For more information, see:
 
+- [Watch a video about the Zero Trust (TIC 3.0) workbook](https://www.youtube.com/watch?v=RpDas8fXzdU&feature=youtu.be)
 - [Get Started with Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
 - [Visualize and monitor your data with workbooks](/azure/sentinel/monitor-your-data)
 - [Microsoft Zero Trust Model](https://www.microsoft.com/security/business/zero-trust)
 - [Zero Trust Deployment Center](/security/zero-trust/?WT.mc_id=Portal-fx)
 - [Zero Trust: 7 Adoption Strategies from Security Leaders](https://www.microsoft.com/security/blog/2021/03/31/zero-trust-7-adoption-strategies-from-security-leaders/)
-- [Microsoft Zero Trust Video](https://www.microsoft.com/videoplayer/embed/RE4J3ms)

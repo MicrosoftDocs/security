@@ -65,9 +65,26 @@ For example, the following process show how a security operations analyst can us
 
 ## Prerequisites
 
-### Install and verify relevant data connectors
+### Onboard Microsoft services
 
-Before you use the Zero Trust (TIC 3.0) workbook, we recommend that you have the following log sources connected via Microsoft Sentinel data connectors, and have verified that you have logs streaming into Microsoft Sentinel:
+In order to use the Zero Trust workbook, you must have both Microsoft Sentinel and Microsoft Defender for Cloud enabled in your Azure subscription.
+
+For more information, see:
+
+- [Onboard to Microsoft Sentinel](/azure/sentinel/quickstart-onboard)
+- [Onboard to Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started)
+
+### Microsoft Defender for Cloud requirements
+
+In Microsoft Defender for Cloud:
+
+- **Add required regulatory standards to your dashboard**: Make sure to add both the *Azure Security Benchmark* and *NIST SP 800-53 R5 Assessments* to your Microsoft Defender for Cloud dashboard. For more information, see [add a regulatory standard to your dashboard](/azure/security-center/update-regulatory-compliance-packages?WT.mc_id=Portal-fx#add-a-regulatory-standard-to-your-dashboard) in the Microsoft Defender for Cloud documentation.
+
+- **Continuously export Microsoft Defender for Cloud data to your Log Analytics workspace**. For more information, see [Continuously export Microsoft Defender for Cloud data](/azure/defender-for-cloud/continuous-export?tabs=azure-portal).
+
+### Install and verify relevant Microsoft Sentinel data connectors
+
+Before you use the Zero Trust (TIC 3.0) workbook, we recommend that you have the following log sources connected to Microsoft Sentinel via data connectors, and have verified that you have logs streaming into Microsoft Sentinel:
 
 :::row:::
    :::column span="":::
@@ -109,9 +126,9 @@ To deploy the Zero Trust workbook, you must have access to your Microsoft Sentin
 
 To deploy the Zero Trust (TIC 3.0) workbook from the Azure portal:
 
-1. In Microsoft Sentinel, select **Workbooks > Templates**.
+1. In Microsoft Sentinel, select **Content hub** and locate the **Microsoft Sentinel Zero Trust (TIC 3.0)** solution.
 
-1. Search for Zero Trust, and then select **Save** to install the workbook in your Microsoft Sentinel workspace.
+1. Select **Configure deployment options > Create** to install the solution in your Microsoft Sentinel workspace and deploy the Zero Trust workbook. For more information, see [Deploy out-of-the-box content and solutions](/azure/sentinel/sentinel-solutions-deploy).
 
 1. After your workbook is deployed in your workspace, use the **Guides** toggle at the top left to view or hide recommendations and guide panes. For example, these may be helpful when you first access the workbook, but unnecessary once you've understood the relevant concepts.
 

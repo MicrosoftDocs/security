@@ -221,9 +221,18 @@ For more information, see the [Azure Monitor workbook documentation](/azure/azur
 
 For more information, see:
 
-- [Watch a video about the Zero Trust (TIC 3.0) workbook](https://www.youtube.com/watch?v=RpDas8fXzdU&feature=youtu.be)
 - [Get Started with Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
 - [Visualize and monitor your data with workbooks](/azure/sentinel/monitor-your-data)
 - [Microsoft Zero Trust Model](https://www.microsoft.com/security/business/zero-trust)
 - [Zero Trust Deployment Center](/security/zero-trust/?WT.mc_id=Portal-fx)
+
+Watch our videos:
+
+- [About the Zero Trust (TIC 3.0) workbook](https://www.youtube.com/watch?v=RpDas8fXzdU&feature=youtu.be)
+- [Demo: Microsoft Sentinel Zero Trust (TIC 3.0) solution](https://www.youtube.com/watch?v=OVGgRIzAvCI)
+
+Read our blogs!
+
 - [Zero Trust: 7 Adoption Strategies from Security Leaders](https://www.microsoft.com/security/blog/2021/03/31/zero-trust-7-adoption-strategies-from-security-leaders/)
+- [Announcing the Microsoft Sentinel: Zero Trust (TIC3.0) Solution](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/announcing-the-microsoft-sentinel-zero-trust-tic3-0-solution/ba-p/3031685)
+- [Building and monitoring Zero Trust (TIC 3.0) workloads for federal information systems with Microsoft Sentinel](https://devblogs.microsoft.com/azuregov/building-and-monitoring-zero-trust-tic-3-0-workloads-for-federal-information-systems-with-microsoft-sentinel/)

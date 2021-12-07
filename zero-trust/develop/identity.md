@@ -1,6 +1,6 @@
 ---
-title: Building Zero Trust-ready apps with the Microsoft identity platform
-description: Learn how to build trustworthy, Zero Trust-ready applications by using features of the Microsoft identity platform.
+title: Building apps using a Zero Trust approach to identities
+description: Learn how to build trustworthy, Zero Trust-ready applications with secure authentication and authorization.
 ms.date: 10/14/2021
 ms.service: security
 author: knicholasa
@@ -10,31 +10,27 @@ ms.topic: conceptual
 # Customer intent: As a developer, I want to learn how to build Zero Trust-compliant apps using Microsoft identity platform features, so I can ensure that my applications are trustworthy and more secure.
 ---
 
-# Building Zero Trust ready apps with the Microsoft identity platform
+# Building apps using a Zero Trust approach to identities
 
 :::image type="icon" source="../media/icon-identity-medium.png":::
 
-Applications are rapidly moving into the cloud and their users are working from a variety of devices and locations. Companies want to support employees collaborating with partners who are outside of their organization. At the same time, the threat landscape is evolving constantly, with new exploits and vulnerabilities being disclosed every day. As a result of this shift, traditional approaches to secure application development are no longer sufficient.
+Zero Trust is a security framework that helps organizations stay secure. It is designed for modern workplaces that need to support a variety of devices and work scenarios, like working from home or collaborating with external users.
 
-Identity is the backbone of secure app development, acting as the control plane for managing access to your applications to keep users and data safe.
-This article explains identity best practices for building **Zero Trust** ready applications using the Microsoft identity platform. We have also published [a whitepaper](https://www.microsoft.com/security/content-library/Search?SearchDataFor=OJZgGWbHnB3Ll5hblDBugaEMQAchNfvkzk5X5AmPM4tK43NHpbF5%2Bky%2Fnuivl7plZz89b%2FuLMMZsMqKeYbhPPw%3D%3D&IsKeywordSearch=evXIpssXVY6lIm6X2K9ieA%3D%3D) with specific action items you can take as you develop your apps.
+For those who are designing and building applications, supporting Zero Trust means using the latest security best practices that keep your application from being the launching point of a costly cybersecurity breach. It also means supporting the evolving needs of your customers and users, who will expect that your application meets their security requirements.
 
-## What is the Microsoft identity platform?
+Identity includes authentication, authorization, and identity management. It is the backbone of secure app development, acting as the control plane for managing access to your applications to keep users and data safe. This article provides an overview of how you can implement secure identity solutions for your applications that follow **Zero Trust**.
 
-The Microsoft identity platform is the unification of Microsoft's identity offerings for developers. The platform supports open industry standards. It includes:
+## How to use this guidance
 
-- One portal to register all your applications
-- One set of Microsoft Authentication libraries for building web, mobile and desktop apps with your favorite framework or programming language
-- One endpoint to sign-in any Microsoft identity, which is standards-compliant, allowing compatibility with third-party libraries
-- Secure access to APIs – from Microsoft Graph to Azure or to your own protected web APIs
+The rest of this article includes an overview of industry trends and best practices. We also have the following scenario-based resources.
 
-The identity platform gives you the ability to authenticate any Microsoft identity, including work or school accounts and personal accounts. Your application can also sign in external identities including users from other organizations, social accounts (like Facebook and Google) or sign up with just an email.
+[Designing secure SaaS applications with the Microsoft identity platform]() Specific guidance for securing identities in SaaS applications.
 
-The unified platform makes it even easier to develop for any user and connect every identity to your apps.
+[Designing secure line of business apps with the Microsoft identity platform]() Line of business apps are applications used by employees as part of their day-to-day work within an organization, which are developed by or specifically for the organization. If this is the scenario you are building for, this guidance is the best place to start.
 
-> [!VIDEO https://www.youtube.com/embed/uDU1QTSw7Ps]
+[Zero Trust for the Microsoft identity platform developer](https://www.microsoft.com/security/content-library/Search?SearchDataFor=OJZgGWbHnB3Ll5hblDBugaEMQAchNfvkzk5X5AmPM4tK43NHpbF5%2Bky%2Fnuivl7plZz89b%2FuLMMZsMqKeYbhPPw%3D%3D&IsKeywordSearch=evXIpssXVY6lIm6X2K9ieA%3D%3D) is a 12 page guide that explains best practices for using the Microsoft identity platform and how they map to Zero Trust best practices. This is a comprehensive guide that will support those who want a checklist of best practices or want to understand how the Microsoft identity platform wholistically supports Zero Trust.
 
-## IT is rolling out Zero Trust
+## Industry security trends impact application requirements
 
 The implementation of Zero Trust is still evolving, and each organization's journey is unique. But a logical place to start for most customers is identity. The following are some of the polices and controls we see organizations prioritizing as they roll out Zero Trust:
 
@@ -43,7 +39,7 @@ The implementation of Zero Trust is still evolving, and each organization's jour
 - **Organizations are rolling out strong auth**. IT administrators expect to be able to set polices requiring multi-factor authentication and passwordless FIDO2 devices.
 - **Organizations are blocking legacy protocols and APIs**. This includes blocking older authentication protocols such as "*Basic authentication*" and requiring modern protocols like **OpenID Connect** and **OAuth 2.0**. Microsoft [announced an end of life of June 30, 2022](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363) for Azure Active Directory (Azure AD) Graph and the legacy Azure Active Directory Authentication Library (ADAL). Organizations are ensuring applications they depend on are prepared.
 
-## Best practices for developing with Zero Trust
+## Top best practices for developing with Zero Trust
 
 **Use a trusted, standards-based authentication library.** Using a library will save you the time of developing a solution on your own. But more importantly, it will stay up to date and be responsive to the latest technologies and threats. Microsoft provides several authentication libraries, including the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview), [Microsoft Identity Web authentication library](/azure/active-directory/develop/microsoft-identity-web), and the [Azure SDKs for managed identities](/azure/active-directory/managed-identities-azure-resources/qs-configure-sdk-windows-vm#azure-sdks-with-managed-identities-for-azure-resources-support). These give you access to features such as conditional access, device registration and management, and the latest innovations such as passwordless and FIDO2 authentication without needing to write any extra code.
 

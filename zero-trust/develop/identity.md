@@ -24,8 +24,6 @@ This article is about the Identity pillar of Zero Trust. Identity includes authe
 
 You can continue reading for an overview of industry trends as well as core Zero Trust best practices. However, these scenario-based resources may be more useful if they cover your specific development goals.
 
-[Designing secure SaaS applications with the Microsoft identity platform]() Specific guidance for securing identities in SaaS applications.
-
 [Designing secure line of business apps with the Microsoft identity platform]() Line of business apps are applications used by employees as part of their day-to-day work within an organization, which are developed by or specifically for the organization. If this is the scenario you are building for, this guidance is the best place to start.
 
 [Zero Trust for the Microsoft identity platform developer](https://www.microsoft.com/security/content-library/Search?SearchDataFor=OJZgGWbHnB3Ll5hblDBugaEMQAchNfvkzk5X5AmPM4tK43NHpbF5%2Bky%2Fnuivl7plZz89b%2FuLMMZsMqKeYbhPPw%3D%3D&IsKeywordSearch=evXIpssXVY6lIm6X2K9ieA%3D%3D) is a 12 page guide that explains best practices for using the Microsoft identity platform and how they map to Zero Trust best practices. This will support those who want a checklist of best practices or want to understand how the Microsoft identity platform wholistically supports Zero Trust.

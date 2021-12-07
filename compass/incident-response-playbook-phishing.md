@@ -550,7 +550,7 @@ If the user has clicked the link in the email (on-purpose or not), then this act
 You can investigate these events using Microsoft Defender for Endpoint.
 
 1. **VPN/proxy logs**  
-    Depending on the vendor of the proxy and VPN solutions, you need to check the relevant logs. Ideally you are forwarding the events to your SIEM or to Azure Sentinel.
+    Depending on the vendor of the proxy and VPN solutions, you need to check the relevant logs. Ideally you are forwarding the events to your SIEM or to Microsoft Sentinel.
 
 2. **Using Microsoft Defender for Endpoint**  
     This is the best-case scenario, because you can use our threat intelligence and automated analysis to help your investigation. For more details, see [how to investigate alerts in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/investigate-alerts). 

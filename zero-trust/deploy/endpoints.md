@@ -272,7 +272,7 @@ Follow these steps to [create a compliance policy](/mem/intune/protect/create-co
 
 1.  Configure Microsoft Defender Antimalware.
 
-    :::image type="content" source="../media/screenshot-windows-10-compliance-policy-defender-settings.png" alt-text="Screenshot of Microsoft Defender in Windows 10 compliance policy settings." border="true":::
+    :::image type="content" source="../media/screenshot-windows-10-compliance-policy-defender-settings.png" alt-text="Screenshot of Microsoft Defender for Cloud in Windows 10 compliance policy settings." border="true":::
 
 1.  Configure the required Microsoft Defender for Endpoint machine risk score.
 

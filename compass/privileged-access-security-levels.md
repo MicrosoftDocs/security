@@ -28,7 +28,7 @@ The recommended privileged access security strategy implements a simple three le
 
 ![Increase attacker cost with each level of security investment](./media/privileged-access-security-levels/drive-attacker-cost-with-strategic-investments.png)
 
-Each successive level drives up attacker costs, with additional level of defender investment. The levels are designed to target the 'sweet spots' where defenders get the most return (attacker cost increase) for each security investment they make.
+Each successive level drives up attacker costs, with additional level of Defender for Cloud investment. The levels are designed to target the 'sweet spots' where defenders get the most return (attacker cost increase) for each security investment they make.
 
 Each role in your environment should be mapped to one of these levels (and optionally increased over time as part of a security improvement plan).  Each profile is clearly defined as a technical configuration and automated where possible to ease deployment and speed up security protections. For implementation details see the article, [Privileged access roadmap](security-rapid-modernization-plan.md).
 

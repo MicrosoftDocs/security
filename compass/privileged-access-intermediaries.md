@@ -81,7 +81,7 @@ These security controls should be applied to all types of intermediaries:
    - **Secure configuration** - Follow manufacturer or industry security configuration baselines and best practices for both the application and any underlying operating systems, cloud services, or other dependencies. Applicable guidance from Microsoft includes the Azure Security Baseline and Windows Baselines.
    - **Rapid patching** - Security updates and patches from the vendors must be applied rapidly after release. 
 - **Role-Based Access Control (RBAC)** models can be abused by attackers to escalate privileges. The RBAC model of the intermediary must be carefully review to ensure that only authorized personnel that are protected at a specialized or privileged level are granted administrative privileges. This model must include any underlying operating systems or cloud services (root account password, local administrator users/groups, tenant administrators, etc.).
-- **Endpoint detection and response (EDR) and outbound trust signal** - Devices that include a full operating system should be monitored and protected with an EDR like Microsoft Defender for Endpoints. This control should be configured to provides device compliance signals to Conditional Access so that policy can enforce this requirement for interfaces. 
+- **Endpoint detection and response (EDR) and outbound trust signal** - Devices that include a full operating system should be monitored and protected with an EDR like Microsoft Defender for Endpoint. This control should be configured to provides device compliance signals to Conditional Access so that policy can enforce this requirement for interfaces.
 
 Privileged Intermediaries require additional security controls:
 
@@ -153,7 +153,7 @@ For guidance on integrating, see
    - **Emergency processes** to rapidly deploy critical security updates
    - **Governance** to continually discover and remediate any missed items
 - **Secure configuration** - The capabilities from each VPN vendor vary on how to secure them, so review and follow your vendor's specific security configuration recommendations and best practices
-- **Go beyond VPN** - Replace VPNs over time with more secure options like Azure AD App Proxy or Azure Bastion as these provide only direct application/server access rather than full network access. Additionally Azure AD App Proxy allows session monitoring for additional security with Microsoft Cloud App Security.
+- **Go beyond VPN** - Replace VPNs over time with more secure options like Azure AD App Proxy or Azure Bastion as these provide only direct application/server access rather than full network access. Additionally Azure AD App Proxy allows session monitoring for additional security with Microsoft Defender for Cloud Apps.
 
 ![Modernize VPN authentication and move apps to modern access](./media/privileged-access-intermediaries/modernize-vpn-access.png)
 
@@ -169,7 +169,7 @@ This solution is suitable for publishing legacy end-user productivity applicatio
 
 Azure AD App proxy effectively retrofits modern Zero Trust policy enforcement to existing applications. For more information, see Security considerations for Azure AD Application Proxy 
 
-Azure AD Application Proxy can also integrate with Microsoft Cloud App Security to add Conditional Access App Control session security to:
+Azure AD Application Proxy can also integrate with Microsoft Defender for Cloud Apps to add Conditional Access App Control session security to:
 
 - Prevent data exfiltration
 - Protect on download
@@ -178,7 +178,7 @@ Azure AD Application Proxy can also integrate with Microsoft Cloud App Security 
 - Block access
 - Block custom activities
 
-For more information, see [Deploy Cloud App Security Conditional Access App Control for Azure AD apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad)
+For more information, see [Deploy Defender for Cloud Apps Conditional Access App Control for Azure AD apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad)
 
 As you publish applications via the Azure AD Application Proxy, Microsoft recommends having application owners work with security teams to follow least privilege and ensure access to each application is made available to only the users that require it. As you deploy more apps this way, you may be able to offset some end-user point to site VPN usage.
 

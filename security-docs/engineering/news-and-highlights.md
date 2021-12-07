@@ -29,7 +29,7 @@ Below are past news and highlights that you may have missed or would like to rev
 
 - [Cybersecurity roles and responsibilities](https://www.microsoft.com/security/blog/2020/08/06/organize-security-team-evolution-cybersecurity-roles-responsibilities/)
 - [Networking up (to the cloud) - One architect's viewpoint](/microsoft-365/solutions/networking-design-principles)
-- [Become an Azure Sentinel Ninja - level 400 training](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310)
+- [Become a Microsoft Sentinel Ninja - level 400 training](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310)
 - [Cloud Adoption Framework for Azure - Define a security strategy](/azure/cloud-adoption-framework/strategy/define-security-strategy)
 - [Migrate from Symantec to Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration)
 - [Cloud Adoption Framework: Implement security across the enterprise environment](/azure/cloud-adoption-framework/get-started/security)
@@ -43,6 +43,6 @@ Below are past news and highlights that you may have missed or would like to rev
 - [New videos providing Microsoft security architecture recommendations](/security/compass/microsoft-security-compass-introduction)
 - [Identifying Security Bug Reports Based Solely on Report Titles and Noisy Data](identifying-security-bug-reports.md)
 - [Solving the TLS 1.0 Problem, 2nd Edition](solving-tls1-problem.md)
-- [What is Azure Security Center](/azure/security-center/security-center-intro)
+- [What is Microsoft Defender for Cloud?](/azure/security-center/security-center-intro)
 - [Securing the Future of Artificial Intelligence and Machine Learning at Microsoft](securing-artificial-intelligence-machine-learning.md)
 - [Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score)

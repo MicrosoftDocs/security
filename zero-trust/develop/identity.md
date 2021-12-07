@@ -1,5 +1,5 @@
 ---
-title: Building apps using a Zero Trust approach to identities
+title: Building apps with a Zero Trust approach to identity
 description: Learn how to build trustworthy, Zero Trust-ready applications with secure authentication and authorization.
 ms.date: 10/14/2021
 ms.service: security
@@ -10,25 +10,25 @@ ms.topic: conceptual
 # Customer intent: As a developer, I want to learn how to build Zero Trust-compliant apps using Microsoft identity platform features, so I can ensure that my applications are trustworthy and more secure.
 ---
 
-# Building apps using a Zero Trust approach to identities
+# Building apps with a Zero Trust approach to identity
 
 :::image type="icon" source="../media/icon-identity-medium.png":::
 
-Zero Trust is a security framework that helps organizations stay secure. It is designed for modern workplaces that need to support a variety of devices and work scenarios, like working from home or collaborating with external users.
+Zero Trust is a security framework that is designed for modern workplaces, which increasingly need to support a variety of devices and work scenarios like remote collaboration.
 
 For those who are designing and building applications, supporting Zero Trust means using the latest security best practices that keep your application from being the launching point of a costly cybersecurity breach. It also means supporting the evolving needs of your customers and users, who will expect that your application meets their security requirements.
 
-Identity includes authentication, authorization, and identity management. It is the backbone of secure app development, acting as the control plane for managing access to your applications to keep users and data safe. This article provides an overview of how you can implement secure identity solutions for your applications that follow **Zero Trust**.
+This article is about the Identity pillar of Zero Trust. Identity includes authentication, authorization, and identity management. It is the backbone of secure app development.
 
 ## How to use this guidance
 
-The rest of this article includes an overview of industry trends and best practices. We also have the following scenario-based resources.
+You can continue reading for an overview of industry trends as well as core Zero Trust best practices. However, these scenario-based resources may be more useful if they cover your specific development goals.
 
 [Designing secure SaaS applications with the Microsoft identity platform]() Specific guidance for securing identities in SaaS applications.
 
 [Designing secure line of business apps with the Microsoft identity platform]() Line of business apps are applications used by employees as part of their day-to-day work within an organization, which are developed by or specifically for the organization. If this is the scenario you are building for, this guidance is the best place to start.
 
-[Zero Trust for the Microsoft identity platform developer](https://www.microsoft.com/security/content-library/Search?SearchDataFor=OJZgGWbHnB3Ll5hblDBugaEMQAchNfvkzk5X5AmPM4tK43NHpbF5%2Bky%2Fnuivl7plZz89b%2FuLMMZsMqKeYbhPPw%3D%3D&IsKeywordSearch=evXIpssXVY6lIm6X2K9ieA%3D%3D) is a 12 page guide that explains best practices for using the Microsoft identity platform and how they map to Zero Trust best practices. This is a comprehensive guide that will support those who want a checklist of best practices or want to understand how the Microsoft identity platform wholistically supports Zero Trust.
+[Zero Trust for the Microsoft identity platform developer](https://www.microsoft.com/security/content-library/Search?SearchDataFor=OJZgGWbHnB3Ll5hblDBugaEMQAchNfvkzk5X5AmPM4tK43NHpbF5%2Bky%2Fnuivl7plZz89b%2FuLMMZsMqKeYbhPPw%3D%3D&IsKeywordSearch=evXIpssXVY6lIm6X2K9ieA%3D%3D) is a 12 page guide that explains best practices for using the Microsoft identity platform and how they map to Zero Trust best practices. This will support those who want a checklist of best practices or want to understand how the Microsoft identity platform wholistically supports Zero Trust.
 
 ## Industry security trends impact application requirements
 

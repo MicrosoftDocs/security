@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 :::image type="icon" source="../media/icon-identity-medium.png":::
 
-Zero Trust is a security framework that is designed for modern workplaces, which increasingly need to support a variety of devices and work scenarios like remote collaboration.
+Zero Trust is a framework for organizational security that supports the move from traditional perimeter-based security to one that supports modern work scenarios like remote collaboration and working from home.
 
 For those who are designing and building applications, supporting Zero Trust means using the latest security best practices that keep your application from being the launching point of a costly cybersecurity breach. It also means supporting the evolving needs of your customers and users, who will expect that your application meets their security requirements.
 

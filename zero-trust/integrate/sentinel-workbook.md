@@ -76,9 +76,11 @@ For more information, see:
 
 ### Microsoft Defender for Cloud requirements
 
-In Microsoft Defender for Cloud:
+In Microsoft Defender for Cloud, make sure that you have the following requirements before using the Zero Trust workbook:
 
-- **Add required regulatory standards to your dashboard**: Make sure to add both the *Azure Security Benchmark* and *NIST SP 800-53 R5 Assessments* to your Microsoft Defender for Cloud dashboard. For more information, see [add a regulatory standard to your dashboard](/azure/security-center/update-regulatory-compliance-packages?WT.mc_id=Portal-fx#add-a-regulatory-standard-to-your-dashboard) in the Microsoft Defender for Cloud documentation.
+- **Add required regulatory standards to your dashboard**: Make sure to add both the *Azure Security Benchmark* and *NIST SP 800-53 R5 Assessments* to your Microsoft Defender for Cloud dashboard. 
+
+    For more information, see [add a regulatory standard to your Microsoft Defender for Cloud dashboard](/azure/security-center/update-regulatory-compliance-packages?WT.mc_id=Portal-fx#add-a-regulatory-standard-to-your-dashboard).
 
 - **Continuously export Microsoft Defender for Cloud data to your Log Analytics workspace**. For more information, see [Continuously export Microsoft Defender for Cloud data](/azure/defender-for-cloud/continuous-export?tabs=azure-portal).
 
@@ -112,11 +114,9 @@ Before you use the Zero Trust (TIC 3.0) workbook, we recommend that you have the
    :::column-end:::
 :::row-end:::
 
-
-Many data connectors are available both as standalone data connectors, and as Microsoft Sentinel solutions. For more information, see:
-
-- [Connect Microsoft Sentinel to Azure, Windows, Microsoft, and Amazon services](/azure/sentinel/connect-azure-windows-microsoft-services)
-- [Centrally discovery and deploy out-of-the-box content and solutions](/azure/sentinel/sentinel-solutions-deploy)
+> [!NOTE]
+> Many data connectors are available both as standalone data connectors, and as Microsoft Sentinel solutions. For more information, see [Connect Microsoft Sentinel to Azure, Windows, Microsoft, and Amazon services](/azure/sentinel/connect-azure-windows-microsoft-services) and [Centrally discovery and deploy out-of-the-box content and solutions](/azure/sentinel/sentinel-solutions-deploy).
+>
 
 ### Required user permissions
 
@@ -136,7 +136,7 @@ To deploy the Zero Trust (TIC 3.0) workbook from the Azure portal:
 
     For example, these options might be most helpful for MSSPs or large enterprises using Azure Lighthouse to view multiple workspaces and assess data from the perspective of both the aggregate and individual workspace. Time range parameters allow options for daily, monthly, quarterly, and even custom time ranges.
 
-    For more information, see [Azure Monitor workbook parameters].
+    For more information, see [Azure Monitor workbook parameters](/azure/azure-monitor/visualize/workbooks-parameters).
 
 1. From the **TIC 3.0 Capabilities** options, select the capabilities you want to view data for.  Each area displayed in the workbook shows relevant data and links for more information or for performing specific tasks relevant to the selected capability.
 

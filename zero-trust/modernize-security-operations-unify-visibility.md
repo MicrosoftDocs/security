@@ -29,6 +29,10 @@ This table describes the implementation of a central SIEM alaysis in terms of a 
 
 Meet these deployment objectives to unify visibility in your SecOps for Zero Trust.
 
+<!--
+2.1.	Setting up SIEM:  This section will contain the deployment objectives and technical deployment instructions for Microsoft Sentinel (previously Azure Sentinel). This step “levels up” in maturity from XDR, as now we can gather events from multiple sources and contextualize / cross-reference them.
+--> 
+
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1.  | |  |

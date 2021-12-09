@@ -44,7 +44,7 @@ Therefore, you must:
 
   Apply minimal permissions consisting of who is allowed to access and what they are allowed to do with data to meet business and productivity requirements.
 
-### Program and project member accountabilities
+## Program and project member accountabilities
 
 This table describes the overall protection of your organization data in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
@@ -63,7 +63,7 @@ This table describes the overall protection of your organization data in terms o
 | | User Education | Ensure guidance for users reflects policy updates |
 
 
-### Deployment objectives
+## Deployment objectives
 
 Meet these deployment objectives to protect your data for Zero Trust.
 
@@ -74,7 +74,8 @@ Meet these deployment objectives to protect your data for Zero Trust.
 | <input type="checkbox" /> | [3. Prevent data loss](#prevent) | Data Security Engineer |
 | <input type="checkbox" /> | [4. Use least privilege access](#strict) | Data Security Engineer |
 
-#### <a id="know">1. Know your data</a>
+<a id="know"></a>
+### 1. Know your data
 
 Perform these implementation steps to meet the **Know your data** deployment objective.
 
@@ -83,7 +84,8 @@ Perform these implementation steps to meet the **Know your data** deployment obj
 | <input type="checkbox" /> | 1. Determine data classification levels. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview) |
 | <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about) |
 
-#### <a id="protect">2. Protect your data</a>
+<a id="protect"></a>
+### 2. Protect your data
 
 Perform these implementation steps to meet the **Protect your data** deployment objective.
 
@@ -95,7 +97,8 @@ Perform these implementation steps to meet the **Protect your data** deployment 
 | <input type="checkbox" /> | 4. Enable and configure Microsoft Cloud App Security. | Data Security Engineer | [Get started](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
 
 
-#### <a id="prevent">3. Prevent data loss</a>
+<a id="prevent"></a>
+### 3. Prevent data loss
 
 Perform these implementation steps to meet the **Prevent data loss** deployment objective.
 
@@ -106,7 +109,8 @@ Perform these implementation steps to meet the **Prevent data loss** deployment 
 | <input type="checkbox" /> | 3. Configure access policies for Cloud App Security Conditional Access App Control. | Data Security Engineer | [Overview](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad) |
 
 
-#### <a id="strict">4. Use least privilege access</a>
+<a id="strict"></a>
+### 4. Use least privilege access
 
 Perform these implementation steps to ensure that your workers and admins meet the **Use least privilege access** deployment objective.
 
@@ -116,6 +120,8 @@ Perform these implementation steps to ensure that your workers and admins meet t
 | <input type="checkbox" /> | 2. Implement minimal permissions for the sensitive and critical information while meeting collaboration and business requirements and inform the users that are affected. | Data Security Engineer |
 | <input type="checkbox" /> | 3. Perform change management for your users so that future locations for sensitive and critical information are created and maintained with minimal permissions. | User Education Team |
 | <input type="checkbox" /> | 4. Audit and monitor the locations for sensitive and critical information to ensure that broad permissions aren't being granted. | Data Security Engineer and/or Security Governance |
+
+## Results
 
 After completing these deployment objectives, you will have built out the **Data** section of the Zero Trust architecture.
 

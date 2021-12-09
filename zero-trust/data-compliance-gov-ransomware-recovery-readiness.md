@@ -29,7 +29,7 @@ To avoid being forced into payment (the profitable situation for attackers), the
 Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other areas in phases 1 or 2, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
 
 - What business assets would be the most damaging if compromised? For example, what assets would business leadership would be willing to pay an extortion demand if attackers controlled them? 
-- How do these business assets translate to IT assets (files, applications, databases, servers, etc.)?
+- How do these business assets translate to IT assets such as files, applications, databases, and servers?
 - How can we protect or isolate these assets so that attackers with access to the general IT environment can’t access them? 
 
 ## Secure backups
@@ -50,15 +50,15 @@ Most organizations don’t protect backup and restoration procedures against thi
 
 This table describes the overall protection of your data from ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
-| Lead | Implementor | Accountability |
+| Lead | Implementer | Accountability |
 |:-------|:-------|:-----|
-| [Central IT](/azure/cloud-adoption-framework/organize/central-it) Operations or CIO | | Executive sponsorship |
-| Program lead from [Central IT](/azure/cloud-adoption-framework/organize/central-it) infrastructure | | Drive results and cross-team collaboration |
-|  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Infrastructure/Backup | Enable Infrastructure backup |
-|  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Productivity/End User | Enable OneDrive Backup |
-|  | [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture)  | Advise on configuration and standards |
-| | [Security Policy and Standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) | Update standards and policy documents |
-| | [Security Compliance Management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) | Monitor to ensure compliance |
+| Central IT Operations or CIO | | Executive sponsorship |
+| Program lead from Central IT infrastructure | | Drive results and cross-team collaboration |
+|  | Central IT Infrastructure/Backup | Enable Infrastructure backup |
+|  | Central IT Productivity/End User | Enable OneDrive Backup |
+|  | Security Architecture  | Advise on configuration and standards |
+| | Security Policy and Standards | Update standards and policy documents |
+| | Security Compliance Management | Monitor to ensure compliance |
 |  |  |  |
 
 
@@ -68,10 +68,10 @@ Meet these deployment objectives to to secure your backup infrastructure.
 
 | Done | Deployment objective | Owner |
 |:-------|:-------|:-----|:--------|
-| <input type="checkbox" /> | 1. Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | IT architect or implementator |
-| <input type="checkbox" /> | 2. Establish process to backup all critical systems automatically on a regular schedule and monitor adherance. | IT backup administrator  |
+| <input type="checkbox" /> | 1. Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | IT architect or implementer |
+| <input type="checkbox" /> | 2. Establish process to backup all critical systems automatically on a regular schedule and monitor adherence. | IT backup administrator  |
 | <input type="checkbox" /> | 3. Establish process and schedule to regularly exercise your business continuity/disaster recovery (BC/DR) plan. | IT architect |
-| <input type="checkbox" /> | 4. Include protecting backups against deliberate erasure and encryption in your backup plan: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site.  | IT backup administrator |
+| <input type="checkbox" /> | 4. Include protecting backups against deliberate erasure and encryption in your backup plan: <br><br> - Strong Protection – Require out of band steps (such as multifactor authentication or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site.  | IT backup administrator |
 
 ## Next step
 

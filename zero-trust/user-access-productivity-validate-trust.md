@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Step 1. Explicitly validate trust for all access requests
 
-Your first step is to establish an identity security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access.
+Your first step is to establish a security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access, for both internal network and cloud traffic..
 
 This includes using Zero Trust to explicitly validate trust for all access requests for:
 
@@ -37,7 +37,7 @@ After completing this step, you will have built out this part of the Zero Trust 
 
 ## Identities
 
-Verify and secure each identity with strong authentication across your entire digital estate with Azure Active Directory (Azure AD), a complete identity and access management solution with integrated security that connects 425 Million people to their apps, devices, and data each month.
+Verify and secure each identity with strong authentication across your entire digital estate with Azure Active Directory (Azure AD), a complete identity and access management solution with integrated security that connects 425 million people to their apps, devices, and data each month.
 
 ### Program and project member accountabilities
 
@@ -46,11 +46,11 @@ This table describes the overall protection of your user accounts in terms of a 
 | Lead | Owner | Accountability |
 |:-------|:-------|:-----|
 |  CISO, CIO, or Director of Identity Security | | Executive sponsorship |
-| Program lead from Identity Security and/or an Identity Architect | | Drive results and cross-team collaboration |
+| Program lead from Identity Security or an Identity Architect | | Drive results and cross-team collaboration |
 | | Security Architect  | Advise on configuration and standards |
-| | Identity Security and/or an Identity Architect | Implement configuration changes |
+| | Identity Security or an Identity Architect | Implement configuration changes |
 | | Identity Admin | Update standards and policy documents |
-| | Security Governance and/or Identity Admin | Monitor to ensure compliance |
+| | Security Governance or Identity Admin | Monitor to ensure compliance |
 | | User Education | Ensure guidance for users reflects policy updates |
 
 
@@ -84,11 +84,11 @@ This table describes the overall protection of your endpoints in terms of a spon
 | Lead | Owner | Accountability |
 |:-------|:-------|:-----|
 | CISO, CIO, or Director of Identity Security | | Executive sponsorship |
-| Program lead from Identity Security and/or an Identity Architect | | Drive results and cross-team collaboration |
+| Program lead from Identity Security or an Identity Architect | | Drive results and cross-team collaboration |
 | | Security Architect  | Advise on configuration and standards |
-| | Identity Security and/or an Infrastructure Security | Implement configuration changes |
-| | MDM Admin | Update standards and policy documents |
-| | Security Governance and/or MDM Admin | Monitor to ensure compliance |
+| | Identity Security or an Infrastructure Security Architect | Implement configuration changes |
+| | Mobile device management (MDM) Admin | Update standards and policy documents |
+| | Security Governance or MDM Admin | Monitor to ensure compliance |
 | | User Education | Ensure guidance for users reflects policy updates |
 
 ### Deployment objectives
@@ -101,7 +101,7 @@ Meet these deployment objectives to protect your endpoints (devices) with Zero T
 | <input type="checkbox" /> | 2. Enroll devices into management and configure configuration profiles |  | [Device management overview](https://docs.microsoft.com/mem/intune/fundamentals/what-is-device-management) |
 | <input type="checkbox" /> | 3. Connect Defender for Endpoint to Intune |  | [Configure Microsoft Defender for Endpoint in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure) |
 | <input type="checkbox" /> | 4. Monitor device compliance/risk as a signal for Conditional Access |  | [Use compliance policies to set rules for devices you manage with Intune](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) |
-| <input type="checkbox" /> | 5. Implement Microsoft Information Protection and integrate with Conditional Access polciies |  | link |
+| <input type="checkbox" /> | 5. Implement Microsoft Information Protection and integrate with Conditional Access policies |  | [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) |
 
 You have now built out the **Endpoints** section of the Zero Trust architecture.
 
@@ -132,7 +132,7 @@ Meet these deployment objectives to ensure Zero Trust protection for your SaaS, 
 
 | Done | Type of app or app usage | Deployment objectives | Owner | Documentation |
 |:-------|:-------|:-----|:-----|:-----|
-| <input type="checkbox" /> | SaaS and PaaS apps that are part of your Microsoft cloud subscriptions | Use Azure AD app registration and certification and app consent policies. <br>  Use Azure AD Conditional Access policies and Intune MAM and APP policies to allow app usage. | Identity Architect | [Application management in Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management)  |
+| <input type="checkbox" /> | SaaS and PaaS apps that are part of your Microsoft cloud subscriptions | Use Azure AD app registration and certification and app consent policies. <br>  Use Azure AD Conditional Access policies and Intune MAM and Application Protection Policies (APP) policies to allow app usage. | Identity Architect | [Application management in Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management)  |
 | <input type="checkbox" /> | SaaS and PaaS apps that are **NOT** part of your Microsoft cloud subscriptions | Ensure that they are using Azure AD for authentication. This means that all sign-ins to the app are subject to user and device security requirements such as multifactor authentication and meeting defined requirements for device compliance. | Apps Architect | [Integrating all your apps with Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad) |
 | <input type="checkbox" /> | On-premises users accessing on-premises applications, which includes applications running on both on-premises and IaaS-based servers | Ensure that your apps support modern authentication protocols such as OAuth/OIDC and SAML. Contact your application vendor for updates to protect user sign-in. | Datacenter Architect | See your vendor documentation |
 | <input type="checkbox" /> | Remote users accessing on-premises applications through a VPN connection | Configure your VPN appliance so that it uses Azure AD as its identity provider | Remote Access Architect | See your vendor documentation |
@@ -224,8 +224,8 @@ Meet these deployment objectives to ensure Zero Trust protection for your on-pre
 | Done | Deployment objective | Owner |
 |:-------|:-------|:-----|
 | <input type="checkbox" /> | Require encryption for all traffic connections, including between IaaS components and between on-premises users and apps. | Security Architect |
-| <input type="checkbox" /> | Limit access to critical data and applications by policy (user or device identity) or traffic filtering. | Security Architect and/or Network Architect|
-| <input type="checkbox" /> | Deploy on-premises network segmentation with many ingress and egress cloud micro-perimeters and some micro-segmentation. | Network Architect and/or Network Engineer |
+| <input type="checkbox" /> | Limit access to critical data and applications by policy (user or device identity) or traffic filtering. | Security Architect or Network Architect|
+| <input type="checkbox" /> | Deploy on-premises network segmentation with many ingress and egress cloud micro-perimeters and some micro-segmentation. | Network Architect or Network Engineer |
 | <input type="checkbox" /> | Use real-time threat detection for on-premises traffic. | SecOps Analysts |
 
 
@@ -242,7 +242,7 @@ Establish basic traffic filtering and segmentation to isolate business-critical 
 
 Microsegmentation – this group of users can access from these devices. Networking: physical, virtual; what traffic is allowed to flow. / 
 
-Additional identity and network restrictions (dynamic trust-based and/or static rules)
+Additional identity and network restrictions (dynamic trust-based or static rules)
 
 Across SaaS/PaaS/IaaS
 Deploy on-premises network segmentation with many ingress/egress cloud micro-perimeters and some micro-segmentation

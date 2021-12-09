@@ -24,7 +24,7 @@ This integration guide covers Azure Active Directory as well as Azure Active Dir
 
 Azure Active Directory is Microsoft's cloud-based identity and access management service. It provides single sign-on authentication, conditional access, passwordless and multi-factor authentication, automated user provisioning and many more features that enable enterprises to protect and automate identity processes at scale.
 
-Azure Active Directory B2C is a business-to-customer identity access management (CIAM) solution which customers use to implement secure white-label authentication solutions that scale easily and blend in with branded web and mobile application experiences. The integration guidance is available in the [Azure Active Directory B2C](#azure-ad-b2c) section.
+Azure Active Directory B2C is a business-to-customer identity access management (CIAM) solution which customers use to implement secure white-label authentication solutions that scale easily and blend in with branded web and mobile application experiences. The integration guidance is available in the [Azure Active Directory B2C](#azure-active-directory-b2c) section.
 
 ## Azure Active Directory
 
@@ -54,7 +54,7 @@ In our experience, many independent software vendors have found these APIs to be
 
 #### User and group APIs
 
-If your application needs to make updates to the users and groups in the tenant, you can use the user and group APIs through Microsoft Graph to write back to the Azure Active Directory tenant. You can read more about using the API in the [Microsoft Graph REST API v1.0 reference](/graph/api/overview) and the reference documentation for the [user resource type](/graph/api/resources/user?view=graph-rest-1.0)
+If your application needs to make updates to the users and groups in the tenant, you can use the user and group APIs through Microsoft Graph to write back to the Azure Active Directory tenant. You can read more about using the API in the [Microsoft Graph REST API v1.0 reference](/graph/api/overview) and the reference documentation for the [user resource type](/graph/api/resources/user)
 
 #### Conditional Access API
 

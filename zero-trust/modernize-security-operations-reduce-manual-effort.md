@@ -10,6 +10,8 @@ ms.topic: conceptual
 
 # Step 6. Reduce manual effort
 
+NOTE TO REVIEWERS: This article is in progress and not complete.
+
 At all times, SecOps should be focused on reducing the toil and suffering from manual and repetitive tasks such as switching tools, typing commands, and copying and pasting data. 
 
 Focusing on giving analysts a streamlined end-to-end integrated experience with Security Orchestration, Automation and Response (SOAR) technology will increase both effectiveness and morale. 
@@ -39,15 +41,12 @@ Meet these deployment objectives to reduce manual effort in your SecOps for Zero
 | <input type="checkbox" /> | [2. Operationalize threat hunting](#threathunting) | Security Engineer |
 | <input type="checkbox" /> | [3. Enforce Alert Quality](#alertqual) | Security Engineer |
 
-
 <a id="soar"></a>
 ### 1. Implement SOAR
 
-<!--
-This section will contain the deployment objectives and technical deployment instructions to automate response to security events.
---> 
+NOTES: This section will contain the deployment objectives and technical deployment instructions to automate response to security events.
 
-intro text
+TBD:
 
 Perform these implementation steps to meet minimize the number of alert queues.
 
@@ -62,11 +61,9 @@ Perform these implementation steps to meet minimize the number of alert queues.
 <a id="threathunting"></a>
 ### 2. Operationalize threat hunting
 
-<!--
-This section will contain guidance on how to use the threat hunting feature of SIEM and M365 XDR (called Advanced Hunting). We will need to find a clear path on how these two are different from each other, and how to tie them together.
---> 
+NOTES: This section will contain guidance on how to use the threat hunting feature of SIEM and M365 XDR (called Advanced Hunting). We will need to find a clear path on how these two are different from each other, and how to tie them together.
 
-intro text
+TBD:
 
 Perform these implementation steps to set up threat hunting for Microsoft 365 Defender and Azure Sentinel.
 
@@ -79,15 +76,13 @@ Perform these implementation steps to set up threat hunting for Microsoft 365 De
 
 
 <a id="alertqual"></a>
-### 3. Enforce Alert Quality
+### 3. Enforce alert quality
 
-<!--
-In this section, we will discuss how to improve the quality and fidelity of threat hunting findings, with the goal to allow threat hunters to use their time more wisely.
---> 
-
-intro text
+NOTES: In this section, we will discuss how to improve the quality and fidelity of threat hunting findings, with the goal to allow threat hunters to use their time more wisely.
 
 Perform these implementation steps to set up Microsoft Defender for Cloud.
+
+TBD:
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|

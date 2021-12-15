@@ -1,7 +1,7 @@
 ---
 title: View Zero Trust in your environment with Microsoft Sentinel
 description: Install and learn how to use the Microsoft Sentinel Zero Trust (TIC3.0) workbook for an automated visualization of Zero Trust principles, cross-walked to the Trusted Internet Connections framework.
-ms.date: 12/07/2021
+ms.date: 12/15/2021
 ms.service: security
 author: batamig
 ms.author: bagol
@@ -10,54 +10,69 @@ ms.topic: how-to
 
 # View Zero Trust in your environment with Microsoft Sentinel
 
-The Microsoft Sentinel Zero Trust (TIC 3.0) workbook provides an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, and helps organizations to monitor configurations over time.
-
-The Zero Trust workbook uses the full breadth of Microsoft Security offerings across Azure, Microsoft 365, Teams, Intune, Windows Virtual Desktop, and more. It uses automation to visualize your Zero Trust security architecture and helps users across your teams to gain situational awareness for cloud workloads' security posture. The workbook is designed to augment staffing through automation, artificial intelligence, machine learning, query/alerting generation, visualizations, tailored recommendations, and respective documentation references.
+The Microsoft Sentinel **Zero TrustTIC30** solution enables governance and compliance teams to design, build, monitor, and respond to Zero Trust (TIC 3.0) requirements. The solution includes a workbook, analytics rules, and a playbook, which provide an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, helping organizations to monitor configurations over time.
 
 This article describes how to install and use the Microsoft Sentinel Zero Trust workbook in your Microsoft Sentinel workspace.
 
+While only Microsoft Sentinel is required to get started, the solution is enhanced by integrations with other Microsoft Services, such as:
+
+- [Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
+- [Microsoft Information Protection](/microsoft-365/compliance/information-protection)
+- [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
+- [Microsoft Defender for Cloud](https://azure.microsoft.com/services/active-directory/)
+- [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/security/endpoint-defender)
+- [Microsoft Defender for Identity](https://www.microsoft.com/microsoft-365/security/identity-defender)
+- [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
+- [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/security/office-365-defender)
+
 For more information, see [Guiding principles of Zero Trust](../index.md#guiding-principles-of-zero-trust).
 
-## The Zero Trust workbook and the TIC framework
+## The Zero Trust solution and the TIC 3.0 framework
 
-While the Microsoft Sentinel Zero Trust (TIC 3.0) workbook provides best practice guidance, Microsoft does not guarantee nor imply compliance. All Trusted Internet Connection (TIC) requirements, validations, and controls are governed by the [Cybersecurity & Infrastructure Security Agency](https://www.cisa.gov/trusted-internet-connections).
+Zero Trust and TIC 3.0 are not the same, but they share many common themes and together provide a common story. The Microsoft Sentinel Zero Trust solution offers detailed crosswalks between the Microsoft Zero Trust model with the TIC 3.0 framework and helps users to better understand the overlaps between the two.
 
-The Zero Trust workbook provides visibility and situational awareness for control requirements delivered with Microsoft technologies in predominantly cloud-based environments. Customer experience will vary by user, and some panes may require additional configurations and query modification for operation.
+While the Microsoft Sentinel **Zero TrustTIC30** solution provides best practice guidance, Microsoft does not guarantee nor imply compliance. All Trusted Internet Connection (TIC) requirements, validations, and controls are governed by the [Cybersecurity & Infrastructure Security Agency](https://www.cisa.gov/trusted-internet-connections).
+
+The Zero Trust solution provides visibility and situational awareness for control requirements delivered with Microsoft technologies in predominantly cloud-based environments. Customer experience will vary by user, and some panes may require additional configurations and query modification for operation.
 
 Recommendations do not imply coverage of respective controls, as they are often one of several courses of action for approaching requirements, which is unique to each customer. Recommendations should be considered a starting point for planning full or partial coverage of respective control requirements.
 
-> [!NOTE]
-> Zero Trust and TIC 3.0 are not the same, but they share many common themes and together provide a common story. The Microsoft Sentinel Zero Trust workbook offers detailed crosswalks between the Microsoft Zero Trust model with the TIC 3.0 framework and helps users to better understand the overlaps between the two.
->
+The Microsoft Sentinel **Zero TrustTIC30** solution is useful for any of the following users and use cases:
 
-## Workbook use cases and user types
+- **Security governance, risk, and compliance professionals**, for compliance posture assessment and reporting
+- **Engineers and architects**, who need to design Zero Trust and TIC 3.0-aligned workloads
+- **Security analysts**, for alert and automation building
+- **Managed security service providers (MSSPs)** for consulting services
+- **Security managers**, who need to review requirements, analyze reporting, evaluating capabilities
 
-The Microsoft Sentinel Zero Trust (TIC 3.0) workbook is useful for any of the following users and use cases:
 
-- **Security architect**: Build and design a cloud security architecture to compliance requirements.
-- **Managed security services provider** (MSSP): Use the workbook for Zero Trust (TIC3.0) Assessments.
-- **Security operations analyst**: Review activity in query, configure alerts, deploy SOAR automation.
-- **IT professional**: Identify performance issues, investigate issues, set alerts for remediation monitoring.
-- **Security Engineer**: Assess security controls, review alerting thresholds, adjust configurations.
-- **Security Manager**: Review requirements, analyze reporting, evaluate capabilities, adjust accordingly.
+## Install the Zero TrustTIC30 solution
 
-For example, the following process show how a security operations analyst can use the workbook to review requirements, explore queries, configure alerts, and implement automation.
+## Sample usage scenario
 
-1. **Review current query output**, for example for Adaptive Access Control:
+The following process shows how a security operations analyst could use the resources deployed with the Zero TrustTIC30 solution to review requirements, explore queries, configure alerts, and implement automation.
+
+1. In Microsoft Sentinel navigate to the **Workbooks** > **Zero Trust (TIC 3.0)** workbook, and select **View saved workbook**.
+
+    In the **Zero Trust (TIC 3.0)** workbook, select TIC 3.0 capabilities to view. For this procedure, select **Intrusion Detection**.
+
+1. **Review control cards**. For example, scroll down to view the Adaptive Access Control card:
 
     :::image type="content" source="../media/integrate/sentinel-workbook/review-query-output-sample.png" alt-text="Screenshot of the Adaptive Access Control card.":::
 
-1. **Explore query**. At the top right of the pane, select the options **:** menu > **Open the last run query in the Logs view.**
+1. **Explore query**. At the top right of the Adaptive Access Control card, select the **:** More button, and then select the :::image type="icon" source="../media/integrate/sentinel-workbook/icon-open-in-logs.png" border="false"::: **Open the last run query in the Logs view.** option.
+
+    The query is opened in the Microsoft Sentinel **Logs** page:
 
     :::image type="content" source="../media/integrate/sentinel-workbook/explore-query-logs.png" alt-text="Screenshot of the selected query in the Microsoft Sentinel Logs page.":::
 
-3. **Configure alert**. In the Microsoft Sentinel **Analytics** area, configure a new alert or update an existing alert as needed. For example:
+1. **Configure alert**. Close the **Logs** page and the workbook, and go to the Microsoft Sentinel **Analytics** area. There, view out-of-the-box analytics rules deployed with the **Zero TrustTIC30** solution by searching for **TIC3.0**. Update the rules as needed or configure a new one.
 
-    :::image type="content" source="../media/integrate/sentinel-workbook/create-a-new-rule.png" alt-text="Screenshot of the Analytics rule wizard.":::
+    :::image type="content" source="../media/integrate/sentinel-workbook/edit-rule.png" alt-text="Screenshot of the Analytics rule wizard.":::
 
     For more information, see [Create custom analytics rules to detect threats](/azure/sentinel/detect-threats-custom).
 
-4. **Respond with SOAR**. In the Microsoft Sentinel **Automation** area, create or update an automation playbook to take required actions automatically. For example, in the Logic app designer:
+4. **Respond with SOAR**. In the Microsoft Sentinel **Automation** > **Active playbooks** tab, find the the out-of-the-box **Notify-GovernanceComplianceTeam** playbook, which was deployed with the you can use  to have the governance compliance team automatically notified for any risks in the environment. create or update an automation playbook to take required actions automatically. For example, in the Logic app designer:
 
     :::image type="content" source="../media/integrate/sentinel-workbook/logic-app-sample.png" alt-text="Screenshot of the Logic app designer showing a sample playbook.":::
 
@@ -65,68 +80,23 @@ For example, the following process show how a security operations analyst can us
 
 ## Prerequisites
 
-### Onboard Microsoft services
+Before installing the **Zero TrustTIC30** solution, make sure you have the following prerequisites:
 
-In order to use the Zero Trust workbook, you must have both Microsoft Sentinel and Microsoft Defender for Cloud enabled in your Azure subscription.
+- **Onboard Microsoft services**: Make sure that you have both [Microsoft Sentinel](/azure/sentinel/quickstart-onboard) and [Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started) enabled in your Azure subscription.
 
-For more information, see:
+- **Microsoft Defender for Cloud requirements**: In Microsoft Defender for Cloud:
 
-- [Onboard to Microsoft Sentinel](/azure/sentinel/quickstart-onboard)
-- [Onboard to Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started)
+    - Add required regulatory standards to your dashboard. Make sure to add both the *Azure Security Benchmark* and *NIST SP 800-53 R5 Assessments* to your Microsoft Defender for Cloud dashboard. For more information, see [add a regulatory standard to your dashboard](/azure/security-center/update-regulatory-compliance-packages?WT.mc_id=Portal-fx#add-a-regulatory-standard-to-your-dashboard) in the Microsoft Defender for Cloud documentation.
 
-### Microsoft Defender for Cloud requirements
+    - Continuously export Microsoft Defender for Cloud data to your Log Analytics workspace. For more information, see [Continuously export Microsoft Defender for Cloud data](/azure/defender-for-cloud/continuous-export?tabs=azure-portal).
 
-In Microsoft Defender for Cloud:
-
-- **Add required regulatory standards to your dashboard**: Make sure to add both the *Azure Security Benchmark* and *NIST SP 800-53 R5 Assessments* to your Microsoft Defender for Cloud dashboard. For more information, see [add a regulatory standard to your dashboard](/azure/security-center/update-regulatory-compliance-packages?WT.mc_id=Portal-fx#add-a-regulatory-standard-to-your-dashboard) in the Microsoft Defender for Cloud documentation.
-
-- **Continuously export Microsoft Defender for Cloud data to your Log Analytics workspace**. For more information, see [Continuously export Microsoft Defender for Cloud data](/azure/defender-for-cloud/continuous-export?tabs=azure-portal).
-
-### Install and verify relevant Microsoft Sentinel data connectors
-
-Before you use the Zero Trust (TIC 3.0) workbook, we recommend that you have the following log sources connected to Microsoft Sentinel via data connectors, and have verified that you have logs streaming into Microsoft Sentinel:
-
-:::row:::
-   :::column span="":::
-      - [Azure Active Directory](/azure/sentinel/data-connectors-reference#azure-active-directory)
-      - [Azure Activity](/azure/sentinel/data-connectors-reference#azure-activity)
-      - [Azure DDoS Protection](/azure/sentinel/data-connectors-reference#azure-ddos-protection)
-      - [Azure Firewall](/azure/sentinel/data-connectors-reference#azure-firewall)
-      - [Azure Information Protection](/azure/sentinel/data-connectors-reference#azure-information-protection)
-      - [Azure Web Application Firewall](/azure/sentinel/data-connectors-reference#azure-web-application-firewall-waf)
-      - [Microsoft 365 Defender](/azure/sentinel/connect-microsoft-365-defender)
-   :::column-end:::
-   :::column span="":::
-      - [Microsoft Defender for Cloud](/azure/sentinel/connect-defender-for-cloud)
-      - [Microsoft Defender for Cloud Apps](/azure/sentinel/data-connectors-reference#microsoft-defender-for-cloud-apps)
-      - [Microsoft Defender for Office 365](/azure/sentinel/data-connectors-reference#microsoft-defender-for-office-365)
-      - [Security events](/azure/sentinel/data-connectors-reference#security-events-via-legacy-agent-windows) via Legacy Agent (Windows)
-      - [Syslog](/azure/sentinel/connect-syslog)
-   :::column-end:::
-   :::column span="":::
-      - [Threat Intelligence](/azure/sentinel/connect-threat-intelligence-tip#enable-the-threat-intelligence-platforms-data-connector-in-microsoft-sentinel)
-      - [Threat Intelligence - TAXII](/azure/sentinel/connect-threat-intelligence-taxii#enable-the-threat-intelligence---taxii-data-connector-in-microsoft-sentinel)
-      - [Windows DNS Server](/azure/sentinel/data-connectors-reference#windows-dns-server)
-      - [Windows Firewall](/azure/sentinel/data-connectors-reference#windows-firewall)
-      - [Windows Security Events](/azure/sentinel/data-connectors-reference#windows-security-events-via-ama) via AMA
-   :::column-end:::
-:::row-end:::
-
-
-Many data connectors are available both as standalone data connectors, and as Microsoft Sentinel solutions. For more information, see:
-
-- [Connect Microsoft Sentinel to Azure, Windows, Microsoft, and Amazon services](/azure/sentinel/connect-azure-windows-microsoft-services)
-- [Centrally discovery and deploy out-of-the-box content and solutions](/azure/sentinel/sentinel-solutions-deploy)
-
-### Required user permissions
-
-To deploy the Zero Trust workbook, you must have access to your Microsoft Sentinel workspace with [Security Reader](/azure/active-directory/roles/permissions-reference#security-reader) permissions.
+- **Required user permissions**. To install the **Zero TrustTIC30** solution, you must have access to your Microsoft Sentinel workspace with [Security Reader](/azure/active-directory/roles/permissions-reference#security-reader) permissions.
 
 ## Deploy and navigate the workbook
 
-To deploy the Zero Trust (TIC 3.0) workbook from the Azure portal:
+To deploy the **Zero TrustTIC30** solution from the Azure portal:
 
-1. In Microsoft Sentinel, select **Content hub** and locate the **Microsoft Sentinel Zero Trust (TIC 3.0)** solution.
+1. In Microsoft Sentinel, select **Content hub** and locate the **Zero TrustTIC30** solution
 
 1. Select **Configure deployment options > Create** to install the solution in your Microsoft Sentinel workspace and deploy the Zero Trust workbook. For more information, see [Deploy out-of-the-box content and solutions](/azure/sentinel/sentinel-solutions-deploy).
 

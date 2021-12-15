@@ -41,7 +41,7 @@
       - name: Overview
         href: integrate/visibility-automation-orchestration.md
       - name: View Zero Trust with Microsoft Sentinel
-        href: integrate/sentinel-workbook.md
+        href: integrate/sentinel-solution.md
 - name: Developer guidance
   expanded: false
   items: 

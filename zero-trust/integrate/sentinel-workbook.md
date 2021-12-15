@@ -106,7 +106,7 @@ To deploy the **Zero TrustTIC30** solution from the Azure portal:
 
     For example, these options might be most helpful for MSSPs or large enterprises using Azure Lighthouse to view multiple workspaces and assess data from the perspective of both the aggregate and individual workspace. Time range parameters allow options for daily, monthly, quarterly, and even custom time ranges.
 
-    For more information, see [Azure Monitor workbook parameters].
+    For more information, see [Azure Monitor workbook parameters](/azure/azure-monitor/visualize/workbooks-parameters).
 
 1. From the **TIC 3.0 Capabilities** options, select the capabilities you want to view data for.  Each area displayed in the workbook shows relevant data and links for more information or for performing specific tasks relevant to the selected capability.
 

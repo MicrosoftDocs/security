@@ -77,11 +77,13 @@ For more information, see [Deploy out-of-the-box content and solutions](/azure/s
 
 ## Sample usage scenario
 
-The following process shows how a security operations analyst could use the resources deployed with the Zero TrustTIC30 solution to review requirements, explore queries, configure alerts, and implement automation.
+The following sections shows how a security operations analyst could use the resources deployed with the **Zero TrustTIC30** solution to review requirements, explore queries, configure alerts, and implement automation.
 
-**After installing the *Zero TrustTIC30* solution in your Microsoft Sentinel workspace**:
+After [installing](#install-the-zero-trusttic30-solution) the **Zero TrustTIC30** solution, use the workbook, analytics rules, and playbook deployed to your Microsoft Sentinel workspace to manage Zero Trust in your network.
 
-1. Navigate to the Microsoft Sentinel **Workbooks** > **Zero Trust (TIC 3.0)** workbook, which was installed with the [Zero TrustTIC30 solution](#install-the-zero-trusttic30-solution), and select **View saved workbook**.
+### Visualize Zero Trust data
+
+1. Navigate to the Microsoft Sentinel **Workbooks** > **Zero Trust (TIC 3.0)** workbook, and select **View saved workbook**.
 
     In the **Zero Trust (TIC 3.0)** workbook page, select the TIC 3.0 capabilities you want to view. For this procedure, select **Intrusion Detection**.
 
@@ -103,25 +105,29 @@ The following process shows how a security operations analyst could use the reso
 
     :::image type="content" source="../media/integrate/sentinel-workbook/explore-query-logs.png" alt-text="Screenshot of the selected query in the Microsoft Sentinel Logs page.":::
 
-1. **Configure alerts**. Close the **Logs** page and the workbook, and then go to the Microsoft Sentinel **Analytics** area. View out-of-the-box analytics rules deployed with the **Zero TrustTIC30** solution by searching for **TIC3.0**.
+### Configure Zero Trust-related alerts
 
-    By default, the **Zero TrustTIC30** solution installs a set of analytics rules that are configured to monitor Zero Trust (TIC3.0) posture by control family, and you can customize thresholds for alerting compliance teams to changes in posture.
+In Microsoft Sentinel, navigate to the **Analytics** area. View out-of-the-box analytics rules deployed with the **Zero TrustTIC30** solution by searching for **TIC3.0**.
 
-    For example, if your workload's resiliency posture falls below a specified percentage in a week, Microsoft Sentinel will generate an alert to detail the respective policy status (pass/fail), the assets identified, the last assessment time, and provide deep links to Microsoft Defender for Cloud for remediation actions.
+By default, the **Zero TrustTIC30** solution installs a set of analytics rules that are configured to monitor Zero Trust (TIC3.0) posture by control family, and you can customize thresholds for alerting compliance teams to changes in posture.
 
-    Update the rules as needed or configure a new one:
+For example, if your workload's resiliency posture falls below a specified percentage in a week, Microsoft Sentinel will generate an alert to detail the respective policy status (pass/fail), the assets identified, the last assessment time, and provide deep links to Microsoft Defender for Cloud for remediation actions.
 
-    :::image type="content" source="../media/integrate/sentinel-workbook/edit-rule.png" alt-text="Screenshot of the Analytics rule wizard.":::
+ Update the rules as needed or configure a new one:
 
-    For more information, see [Create custom analytics rules to detect threats](/azure/sentinel/detect-threats-custom).
+:::image type="content" source="../media/integrate/sentinel-workbook/edit-rule.png" alt-text="Screenshot of the Analytics rule wizard.":::
 
-1. **Respond with SOAR**. In the Microsoft Sentinel **Automation** > **Active playbooks** tab, locate the **Notify-GovernanceComplianceTeam** playbook, which was deployed with the [Zero TrustTIC30 solution](#install-the-zero-trusttic30-solution).
+For more information, see [Create custom analytics rules to detect threats](/azure/sentinel/detect-threats-custom).
 
-    Use this playbook to automatically monitor CMMC alerts, and notify the governance compliance team with relevant details via both email and Microsoft Teams messages. Modify the playbook as needed:
+### Respond with SOAR
 
-    :::image type="content" source="../media/integrate/sentinel-workbook/logic-app-sample.png" alt-text="Screenshot of the Logic app designer showing a sample playbook.":::
+In Microsoft Sentinel, navigate to the **Automation** > **Active playbooks** tab, and locate the **Notify-GovernanceComplianceTeam** playbook.
 
-    For more information, see [Use triggers and actions in Microsoft Sentinel playbooks](/azure/sentinel/playbook-triggers-actions).
+Use this playbook to automatically monitor CMMC alerts, and notify the governance compliance team with relevant details via both email and Microsoft Teams messages. Modify the playbook as needed:
+
+:::image type="content" source="../media/integrate/sentinel-workbook/logic-app-sample.png" alt-text="Screenshot of the Logic app designer showing a sample playbook.":::
+
+For more information, see [Use triggers and actions in Microsoft Sentinel playbooks](/azure/sentinel/playbook-triggers-actions).
 
 ## Frequently asked questions
 

@@ -1,2 +1,2 @@
-{:allowed-branchname-matches ["master"]
+{:allowed-branchname-matches ["main" "master"]
  :allowed-filename-matches ["simulation-labs"]}

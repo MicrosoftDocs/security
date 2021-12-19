@@ -40,7 +40,7 @@
       items:
       - name: Overview
         href: integrate/visibility-automation-orchestration.md
-      - name: View Zero Trust with Microsoft Sentinel
+      - name: Build and monitor Zero Trust (TIC 3.0) with Microsoft Sentinel
         href: integrate/sentinel-solution.md
 - name: Developer guidance
   expanded: false

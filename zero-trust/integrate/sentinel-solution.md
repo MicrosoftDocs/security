@@ -159,7 +159,7 @@ Yes. Both workbooks and analytics rules are customizable for integrations with p
 
 For more information, see [Use Azure Monitor workbooks to visualize and monitor your data](/azure/sentinel/monitor-your-data) and [Surface custom event details in alerts](/azure/sentinel/surface-custom-details-in-alerts).
 
-### Is this available in government regions
+### Is this available in government regions?
 
 Yes. The **Zero Trust (TIC 3.0)** solution is in Public Preview and deployable to Commercial/Government regions. For more information, see [Cloud feature availability for commercial and US Government customers](/azure/security/fundamentals/feature-availability).
 

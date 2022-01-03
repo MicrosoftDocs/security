@@ -157,7 +157,7 @@ Follow these steps:
 
 1. [Use out-of-the box policies](/cloud-app-security/control-cloud-apps-with-policies) that have already been tested for many activities and files. Apply governance actions such as revoking permissions and suspending users, quarantining files, and applying sensitivity labels.
 
-2. Build new policies that Microsoft Cloud Apps Security suggests for you.
+2. Build new policies that Microsoft Defender for Cloud Apps suggests for you.
 
 3. Configure policies to monitor shadow IT apps and provide control:
 

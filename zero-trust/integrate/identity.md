@@ -12,11 +12,7 @@ ms.topic: conceptual
 
 :::image type="icon" source="../media/icon-identity-medium.png":::
 
-Identities represent people, services, devices and the permissions that they obtain to access protected data. Identity solutions are the key control plane for managing access in the modern workplace and are essential to implementing Zero Trust.
-
-Identity Zero Trust solutions enable customers to verify explicitly with strong authentication and access policies, use least privileged access with granular permission and access, and assume breach with controls and policies that manage access to secure resources and minimize the blast radius of attacks.
-
-This guidance is for software providers and technology partners who want to enhance their identity security solutions by integrating with Microsoft products.
+Identity is the key control plane for managing access in the modern workplace and is essential to implementing Zero Trust. Identity solutions support Zero Trust through strong authentication and access policies, least privileged access with granular permission and access, and controls and policies that manage access to secure resources and minimize the blast radius of attacks.
 
 ## Identity Zero Trust integration guide
 
@@ -28,11 +24,7 @@ Azure Active Directory B2C is a business-to-customer identity access management 
 
 ## Azure Active Directory
 
-As an independent software vendor or technology partner, there are many ways to integrate your solution with Azure Active Directory. Publishing your solution to the Azure Active Directory's app gallery will increase customer trust and the number of customers you reach. You can integrate with many of Azure Active Directory’s features by using [Microsoft Graph](/graph/overview) and the [Microsoft identity platform](/azure/active-directory/develop/app-resilience-continuous-access-evaluation). You can also gain access to the risk signals Azure Active Directory calculates and feed your own information back into the system to create a safer environment for all.
-
-:::image type="content" source="../media/integrate/identity/diagram-conditional-access-policies.png" alt-text="Diagram of Zero Trust access control. Azure Active Directory sits in the middle, and is connected to input signals from partners and other Microsoft products. It makes policy decisions, and then allows access to 3rd party SaaS apps and devices directly or through other Microsoft products." border="true" lightbox="../media/integrate/identity/diagram-conditional-access-policies-expanded.png":::
-
-There are other ways to provide value on top of Azure Active Directory, such as publishing your app to the Azure Active Directory gallery or becoming an approved passwordless hardware vendor.
+There are many ways to integrate your solution with Azure Active Directory. This section includes basic integrations that will improve the security of most apps as well as links to in-depth guidance for specific scenarios.
 
 ### List your app in the Azure Active Directory App Gallery
 

@@ -1,6 +1,6 @@
 ---
 title: Building apps with a Zero Trust approach to identity
-description: Learn how to build trustworthy, Zero Trust-ready applications with secure authentication and authorization.
+description: Learn how to build trustworthy, Zero Trust-ready applications with secure authentication and authorization using the Microsoft identity platform.
 ms.date: 10/14/2021
 ms.service: security
 author: knicholasa

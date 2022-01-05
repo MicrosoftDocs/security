@@ -14,9 +14,9 @@ ms.topic: conceptual
 
 :::image type="icon" source="../media/icon-identity-medium.png":::
 
-Zero Trust is a security framework that does not rely on the implicit trust afforded to interactions behind a secure network perimeter. Instead, it uses the principles of explicit verification, least privileged access, and assuming breach to keep users and data secure while allowing for common scenarios like access to applications from outside the network perimeter. App developers can improve app security, minimize the impact of breaches, and ensure that their applications meet their customers' security requirements by adopting Zero Trust principles.
+Zero Trust is a security framework that does not rely on the implicit trust afforded to interactions behind a secure network perimeter. Instead, it uses the principles of explicit verification, least privileged access, and assuming breach to keep users and data secure while allowing for common scenarios like access to applications from outside the network perimeter.
 
-This document is about how Zero Trust can be applied to identity, which includes authentication, authorization, and identity management.
+App developers can improve app security, minimize the impact of breaches, and ensure that their applications meet their customers' security requirements by adopting Zero Trust principles. This document is about how developers can use a Zero Trust approach to identity, which includes authentication, authorization, and identity management.
 
 ## Industry security trends impact application requirements
 

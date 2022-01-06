@@ -37,10 +37,14 @@
     - name: Networks
       href: integrate/networks.md
     - name: Visibility, automation, and orchestration
-      href: integrate/visibility-automation-orchestration.md
+      items:
+      - name: Overview
+        href: integrate/visibility-automation-orchestration.md
+      - name: Build and monitor Zero Trust
+        href: integrate/sentinel-solution.md
 - name: Developer guidance
   expanded: false
-  items: 
+  items:
     - name: Overview
       href: develop/overview.md
     - name: Identity

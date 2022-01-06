@@ -52,6 +52,7 @@ Microsoft Sentinel Solutions allows partners to deliver combined product, domain
 
 ## Next steps
 
+- [Build and monitor Zero Trust (TIC 3.0) security architectures with Microsoft Sentinel](sentinel-solution.md)
 - [Integration Opportunities Guide for Microsoft Sentinel](https://azure.microsoft.com/resources/integration-opportunities-with-azure-sentinel-september-2021/)
 - [Integration Components for Microsoft Sentinel](https://github.com/Azure/Azure-Sentinel/wiki#get-started)
 - [Guide to Building Microsoft Sentinel Solutions](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions#readme)

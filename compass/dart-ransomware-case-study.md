@@ -29,6 +29,7 @@ Human-operated ransomware continues to maintain its position as one of the most 
 The [Microsoft Detection and Response Team (DART)]( https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. DART provides onsite reactive incident response and remote proactive investigations. DART leverages Microsoft’s strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
 
 This article describes how DART investigated a recent ransomware incident with details on the attack tactics and detection mechanisms.
+
 For additional information on how Microsoft DART helps customers with human-operated ransomware, see [Part 1]( https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [Part 2]( https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) of DART’s guide to combatting human-operated ransomware.
 
 ## The attack
@@ -45,7 +46,7 @@ After initial access was gained, the threat actor used the Mimikatz credential h
 
 For this case study, here is the highlighted path that the attacker took.
 
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-path.png" alt-text="The path the ransomware attacker took for this case study." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-path.png":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-path.png" alt-text="The path the ransomware attacker took for this case study.":::
 
 The following sections describe additional details based on the MITRE ATT&CK tactics and include examples of how the threat actor activities were detected with the Microsoft 365 Defender portal.
 
@@ -57,7 +58,7 @@ For this incident, DART was able to locate a device that had TCP port 3389 for R
 
 Defender for Endpoint used threat intelligence to determine that there were numerous sign-ins from known brute-force sources and displayed them in the Microsoft 365 Defender portal. Here is an example.
 
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-brute-force-sign-in.png" alt-text="An example of known brute-force sign-ins in the Microsoft 365 Defender portal." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-brute-force-sign-in.png":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-brute-force-sign-in.png" alt-text="An example of known brute-force sign-ins in the Microsoft 365 Defender portal.":::
 
 ## Reconnaissance
 
@@ -67,7 +68,7 @@ The threat actor leveraged Advanced IP Scanner, an IP address scanning tool, to 
 
 This activity was detected in Defender for Endpoint and used as an indicator of compromise (IoC) for further investigation. Here is an example.
 
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-port-scan.png" alt-text="An example of port scanning in the Microsoft 365 Defender portal." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-port-scan.png":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-port-scan.png" alt-text="An example of port scanning in the Microsoft 365 Defender portal.":::
 
 ## Credential theft
 
@@ -75,7 +76,7 @@ After gaining initial access, the threat actors performed credential harvesting 
 
 Here is an example of the detected use of the Mimikatz in the Microsoft 365 Defender portal.
  
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-mimikatz.png" alt-text="An example of Mimikatz detection in the Microsoft 365 Defender portal" lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-mimikatz.png":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-mimikatz.png" alt-text="An example of Mimikatz detection in the Microsoft 365 Defender portal":::
 
 ## Lateral movement
 
@@ -83,7 +84,7 @@ Movement across endpoints can vary between different organizations, but there is
 
 Using Microsoft Defender for Identity, DART was able to map out the path that the threat actor took between devices, displaying the accounts that were used and accessed. Here is an example.
  
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-threat-actor-path.png" alt-text="The path that the threat actor took between devices in Microsoft Defender for Identity." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-threat-actor-path.png":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-threat-actor-path.png" alt-text="The path that the threat actor took between devices in Microsoft Defender for Identity.":::
 
 ## Defense evasion
 
@@ -93,7 +94,7 @@ The threat actor for this incident used PowerShell to disable real-time protecti
 
 Defender for Endpoint, however, cannot be disabled from the local device and was able to detect this activity. Here is an example.
 
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-mde-detect-powershell.png" alt-text="An example of detecting the use of PowerShell to disable real-time protection for Microsoft Defender." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-mde-detect-powershell.png":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-mde-detect-powershell.png" alt-text="An example of detecting the use of PowerShell to disable real-time protection for Microsoft Defender.":::
 
 ## Persistence
 
@@ -103,7 +104,7 @@ The threat actors for this incident used the Sticky Keys hack because it allows 
 
 Here is an example of the detection of the Sticky Keys hack in the Microsoft 365 Defender portal.
 
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-detect-sticky-keys.png" alt-text="An example of detecting the Sticky Keys hack in the Microsoft 365 Defender portal." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-detect-sticky-keys.png":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-detect-sticky-keys.png" alt-text="An example of detecting the Sticky Keys hack in the Microsoft 365 Defender portal.":::
 
 ## Impact
 
@@ -126,7 +127,7 @@ Ransomware execution is one of the primary methods that a threat actor uses to m
 
 Here’s an example of a ransomware note.
 
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-ransom-note-example.png" alt-text="An example of a ransomware note." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-ransom-note-example.png":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-ransom-note-example.png" alt-text="An example of a ransomware note.":::
 
 <!--
 

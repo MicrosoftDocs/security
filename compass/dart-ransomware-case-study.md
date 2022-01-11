@@ -34,13 +34,13 @@ For additional information on how Microsoft DART helps customers with human-oper
 
 ## The attack
 
-DART leverages [incident response tools and tactics](incident-response-process.md) to identify threat actor behaviors for human operated ransomware. Public information regarding ransomware events focuses on the end impact, but rarely highlights the details of the operation and how threat actors were able to escalate their access undetected to monetize and extort.
+DART leverages [incident response tools and tactics](incident-response-process.md) to identify threat actor behaviors for human operated ransomware. Public information regarding ransomware events focuses on the end impact, but rarely highlights the details of the operation and how threat actors were able to escalate their access undetected to discover, monetize, and extort.
 
 Here are some common techniques that attackers use for ransomware attacks based on [MITRE ATT&CK tactics](https://attack.mitre.org/).
  
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-methods.png" alt-text="Common techniques that attackers use for ransomware attacks." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-methods.png":::
 
-DART used Microsoft Defender for Endpoint to track the attacker through the environment, create a story depicting the incident, and then eradicate the threat and remediate. Once deployed, Defender for Endpoint began detecting successful logons from a brute force attack. Upon discovering this, DART reviewed the security data and found several vulnerable internet-facing devices using the Remote Desktop Protocol (RDP). 
+DART used Microsoft Defender for Endpoint to track the attacker through the environment, create a story depicting the incident, and then eradicate the threat and remediate. Once deployed, Defender for Endpoint began detecting successful logons from a brute force attack. Upon discovering this, DART reviewed the security data and found several vulnerable Internet-facing devices using the Remote Desktop Protocol (RDP). 
 
 After initial access was gained, the threat actor used the Mimikatz credential harvesting tool to dump password hashes, scanned for credentials stored in plaintext, created backdoors with Sticky Key manipulation, and moved laterally throughout the network using remote desktop sessions.
 
@@ -52,9 +52,9 @@ The following sections describe additional details based on the MITRE ATT&CK tac
 
 ## Initial access
 
-Ransomware campaigns use well-known vulnerabilities for their initial entry, typically using phishing emails or weaknesses in perimeter defense such as devices with the enabled Remote Desktop service exposed towards the Internet.
+Ransomware campaigns use well-known vulnerabilities for their initial entry, typically using phishing emails or weaknesses in perimeter defense such as devices with the enabled Remote Desktop service exposed on the Internet.
 
-For this incident, DART was able to locate a device that had TCP port 3389 for RDP exposed to the Internet, which allowed threat actors to perform a brute-force authentication attack and gain the initial foothold.
+For this incident, DART was able to locate a device that had TCP port 3389 for RDP exposed to the Internet. This allowed threat actors to perform a brute-force authentication attack and gain the initial foothold.
 
 Defender for Endpoint used threat intelligence to determine that there were numerous sign-ins from known brute-force sources and displayed them in the Microsoft 365 Defender portal. Here is an example.
 
@@ -108,7 +108,7 @@ Here is an example of the detection of the Sticky Keys hack in the Microsoft 365
 
 ## Impact
 
-Threat actors typically encrypt files using applications or features that already exist within the environment. The use of PSEXEC, Group Policy, and Microsoft Endpoint Configuration Management are methods of deployment that allow the actor to quickly reach endpoints with systems without disrupting normal operations.  
+Threat actors typically encrypt files using applications or features that already exist within the environment. The use of PsExec, Group Policy, and Microsoft Endpoint Configuration Management are methods of deployment that allow the actor to quickly reach endpoints with systems without disrupting normal operations.  
 
 The threat actor for this incident leveraged PsExec to remotely launch an interactive PowerShell Script from various remote shares. This attack method randomizes distribution points and makes remediation more difficult during the final phase of the ransomware attack. 
 

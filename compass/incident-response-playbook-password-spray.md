@@ -91,7 +91,7 @@ The Azure Active Directory (Azure AD) Connect Health for ADFS agent allows you t
 
 To install ADFS Connect Health, go through the [requirements for using Azure AD Connect Health](/azure/active-directory/hybrid/how-to-connect-health-agent-install#requirements), and then install the [Azure ADFS Connect Health Agent](https://go.microsoft.com/fwlink/?LinkID=518973).
 
-### Set up risky IP alerts using the [ADFS Risky IP Report Workbook](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip-workbook#:~:text=The%20risky%20IP%20workbook%20analyzes%20data%20from%20ADFSSignInLogs,on%20designated%20error%20thresholds%20and%20detection%20window%20length.)
+### Set up risky IP alerts using the [ADFS Risky IP Report Workbook](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip-workbook#:~:text=The%20risky%20IP%20workbook%20analyzes%20data%20from%20ADFSSignInLogs,on%20designated%20error%20thresholds%20and%20detection%20window%20length.)
 
 After Azure AD Connect Health for ADFS is configured, you should monitor and set up alerting using the ADFS Risky IP report workbook and Azure Monitor. The benefits of using this report are:
 

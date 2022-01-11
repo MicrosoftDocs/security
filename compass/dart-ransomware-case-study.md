@@ -1,6 +1,6 @@
 ---
 title: Microsoft DART ransomware case study
-description: Understand how Microsoft's Detection and Response Team (DART) responds to ransomware attacks and their recommendations for containment and post-incident activities.
+description: Understand how Microsoft's Detection and Response Team (DART) detected and responded to a ransomware attack.
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, microsoft 365 defender
 search.product: DART
 search.appverid: met150

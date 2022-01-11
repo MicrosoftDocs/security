@@ -26,7 +26,7 @@ Azure Active Directory B2C is a business-to-customer identity access management 
 
 ## Azure Active Directory
 
-There are many ways to integrate your solution with Azure Active Directory. Foundational integrations are about protecting your customers using Azure Active Directory's built-in security capabilities. Advanced integrations will take your solution even one step further.
+There are many ways to integrate your solution with Azure Active Directory. Foundational integrations are about protecting your customers using Azure Active Directory's built-in security capabilities. Advanced integrations will take your solution one step further with enhanced security capabilities.
 
 :::image type="icon" source="../media/integrate/identity/azure-active-directory-zero-trust-levels.png":::
 
@@ -34,21 +34,21 @@ There are many ways to integrate your solution with Azure Active Directory. Foun
 
 Foundational integrations protect your customers with Azure Active Directory's built-in security capabilities.
 
-#### List your app in the Azure Active Directory App Gallery
+#### Enable single sign-on and publisher verification
 
 To enable single sign-on, we recommend publishing your app in [the app gallery](https://www.microsoft.com/security/business/identity-access-management/integrated-apps-azure-ad). This will increase customer trust, because they know that your application has been validated as compatible with Azure Active Directory, and you can become a [verified publisher](/azure/active-directory/develop/publisher-verification-overview) so that customers are certain you are the publisher of the app they are adding to their tenant.
 
-Add details about mobile SSO
-
 Publishing in the app gallery will make it easy for IT admins to integrate the solution into their tenant with automated app registration. Manual registrations are a common cause of support issues with applications. Adding your app to the gallery will avoid these issues with your app.
+
+For mobile apps, we recommend you use the Microsoft authentication library and a system browser to [implement single sign-on](/azure/active-directory/develop/mobile-sso-support-overview).
 
 #### Integrate user provisioning
 
-Managing identities and access for organizations with thousands of users is challenging. If your solution will be used by large organizations, synchronizing information about users and access between your application and Azure Active Directory is essential. This allows you to effectively scale your identity management systems on both cloud-only and hybrid environments as customers increase their dependence on the cloud.
+Managing identities and access for organizations with thousands of users is challenging. If your solution will be used by large organizations, consider synchronizing information about users and access between your application and Azure Active Directory. This helps keep user access consistent when changes occur.
 
 SCIM (System for Cross-Domain Identity Management) is an open standard for exchanging user identity information. You can use the SCIM user management API to automatically provision users and groups between your application and Azure Active Directory.
 
-Our tutorial on the subject, [develop a SCIM endpoint for user provisioning to apps from Azure Active Directory](/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups), describes how to build a SCIM endpoint and integrate with the Azure Active Directory provisioning service. The SCIM specification provides a common user schema for provisioning. When used in conjunction with federation standards like SAML or OpenID Connect, SCIM gives administrators an end-to-end, standards-based solution for access management.
+Our tutorial on the subject, [develop a SCIM endpoint for user provisioning to apps from Azure Active Directory](/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups), describes how to build a SCIM endpoint and integrate with the Azure Active Directory provisioning service.
 
 ### Advanced integrations
 

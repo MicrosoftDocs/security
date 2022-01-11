@@ -145,7 +145,7 @@ To block unauthorized devices from being able to access cloud management interfa
  > [!NOTE]
  > You will need to create a user group, and include your emergency user that can bypass the Conditional Access policy. For our example we have a security group called **Emergency BreakGlass**
 
-This policy set will ensure that your Administrators must use a device that is able to present a specific device attribute value, that that MFA is satisfied, and the device is marked as compliant by Microsoft Endpoint Manager and Microsoft Defender for Endpoint.
+This policy set will ensure that your Administrators must use a device that is able to present a specific device attribute value, that MFA is satisfied, and the device is marked as compliant by Microsoft Endpoint Manager and Microsoft Defender for Endpoint.
 
 Organizations should also consider blocking legacy authentication protocols in their environments. There are multiple ways to accomplish this task, for more information about blocking legacy authentication protocols, see the article, [How to: Block legacy authentication to Azure AD with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).
 
@@ -279,7 +279,7 @@ To successfully complete the hardening of the solution, download and execute the
 
 | Profile | Download location | Filename |
 | --- | --- | --- |
-| Enterprise | https://aka.ms/securedworkstationgit| Enterprise-Workstation-Windows10-(20H2).ps1 |
+| Enterprise | https://aka.ms/securedworkstationgit | Enterprise-Workstation-Windows10-(20H2).ps1 |
 | Specialized | https://aka.ms/securedworkstationgit | Specialized - Windows10-(20H2).ps1 |
 | Privileged | https://aka.ms/securedworkstationgit | Privileged-Windows10-(20H2).ps1 |
 

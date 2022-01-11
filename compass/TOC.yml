@@ -109,6 +109,8 @@
               href: protect-against-ransomware-phase3.md
         - name: Backup and restore plan for ransomware
           href: backup-plan-to-protect-against-ransomware.md 
+        - name: Microsoft DART ransomware case study
+          href: dart-ransomware-case-study.md 
     - name: Information protection and storage
       items:
         - name: Videos and slides

@@ -279,7 +279,7 @@ To successfully complete the hardening of the solution, download and execute the
 
 | Profile | Download location | Filename |
 | --- | --- | --- |
-| Enterprise | https://aka.ms/securedworkstationgit| Enterprise-Workstation-Windows10-(20H2).ps1 |
+| Enterprise | https://aka.ms/securedworkstationgit | Enterprise-Workstation-Windows10-(20H2).ps1 |
 | Specialized | https://aka.ms/securedworkstationgit | Specialized - Windows10-(20H2).ps1 |
 | Privileged | https://aka.ms/securedworkstationgit | Privileged-Windows10-(20H2).ps1 |
 

@@ -91,11 +91,16 @@ The Azure Active Directory (Azure AD) Connect Health for ADFS agent allows you t
 
 To install ADFS Connect Health, go through the [requirements for using Azure AD Connect Health](/azure/active-directory/hybrid/how-to-connect-health-agent-install#requirements), and then install the [Azure ADFS Connect Health Agent](https://go.microsoft.com/fwlink/?LinkID=518973).
 
-### Set up [risky IP alerts](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/monitor-your-adfs-sign-in-activity-using-azure-ad-connect-health/ba-p/245395)
+### Set up risky IP alerts using [ADFS Risky IP Report Workbook](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip-workbook#:~:text=The%20risky%20IP%20workbook%20analyzes%20data%20from%20ADFSSignInLogs,on%20designated%20error%20thresholds%20and%20detection%20window%20length.)
 
-Once Azure AD Connect Health for ADFS is configured, you should set the thresholds for alerting based on what is suitable for their environment.
+Once Azure AD Connect Health for ADFS is configured you should monitor and set up alerting using the ADFS Risky IP report workbook and Azure Monitor. The benefits of using this report are:
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/Thresholdsettings.png" alt-text="riskyiplalerts"::: 
+- Detection of IP addresses that exceed a threshold of failed password-based logins
+- Supports failed logins due to bad password or due to extranet lockout state
+- Supports enabling alerts through Azure Alerts
+- Customizable threshold settings that match with the security policy of an organization
+- Customizable queries and expanded visualizations for further analysis
+- Expanded functionality from the previous Risky IP report, which will be deprecated after January 24, 2022.
 
 ### Set up SIEM tool alerts on Microsoft Sentinel
 

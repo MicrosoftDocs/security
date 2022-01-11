@@ -32,7 +32,7 @@ Continue your [Zero Trust Rapid Modernization Plan (RaMP)](zero-trust-ramp-overv
 
    At all times, security operations should be focused on reducing the toil and suffering from manual and repetitive tasks such as switching tools, typing commands, and copying and pasting data. 
 
-   Focusing on giving analysts a streamlined end-to-end integrated experience with Security Orchestration, Automation and Response (SOAR) technology will increase both effectiveness and morale. SOAR technology is built into both Microsoft 365 Defender and Azure Sentinel. 
+   Focusing on giving analysts a streamlined end-to-end integrated experience with Security Orchestration, Automation and Response (SOAR) technology will increase both effectiveness and morale. SOAR technology is built into both Microsoft 365 Defender and Microsoft Sentinel. 
 
 ## Next step
 

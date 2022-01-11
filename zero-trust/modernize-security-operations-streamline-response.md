@@ -38,7 +38,7 @@ Meet these deployment objectives to streamline your SecOps for Zero Trust.
 | Done | Deployment objective | Owner |
 |:-------|:-------|:-----|
 | <input type="checkbox" /> | [1. Use minimal number of alert queues](#singlequeue) | Security Architect |
-| <input type="checkbox" /> | [2a. (in parallel with step 2b) Set up Microsoft 365 Defender](#m365xdr) | Security Engineer |
+| <input type="checkbox" /> | [2a. (in parallel with step 2b) Set up Microsoft 365 Defender and AutoIR](#m365xdr) | Security Engineer |
 | <input type="checkbox" /> | [2b. (in parallel with step 2b) Set up Microsoft Defender for Cloud](#azurexdr) | Security Engineer |
 
 <a id="singlequeue"></a>

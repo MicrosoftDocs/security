@@ -18,7 +18,7 @@ At all times, SecOps should be focused on reducing the toil and suffering from m
 
 Focusing on giving analysts a streamlined end-to-end integrated experience with Security Orchestration, Automation and Response (SOAR) technology will increase both effectiveness and morale. 
 
-SOAR technology is built into both Microsoft 365 Defender and Azure Sentinel.
+SOAR technology is built into both Microsoft 365 Defender and Microsoft Sentinel.
 
 ### Program and project member accountabilities
 
@@ -65,7 +65,7 @@ Perform these implementation steps to meet minimize the number of alert queues.
 
 NOTES: This section will contain guidance on how to use the threat hunting feature of SIEM and M365 XDR (called Advanced Hunting). We will need to find a clear path on how these two are different from each other, and how to tie them together.
 
-Perform these implementation steps to set up threat hunting for Microsoft 365 Defender and Azure Sentinel.
+Perform these implementation steps to set up threat hunting for Microsoft 365 Defender and Microsoft Sentinel.
 
 NEEDED BY CONTRIBUTORS:
 

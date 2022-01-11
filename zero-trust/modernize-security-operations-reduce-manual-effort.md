@@ -10,6 +10,8 @@ ms.topic: conceptual
 
 # Step 6. Reduce manual effort
 
+NOTE TO CONTRIBUTORS: Please see the "NEEDED BY CONTRIBUTORS" tags and help flesh out the needed information.
+
 NOTE TO REVIEWERS: This article is in progress and not complete.
 
 At all times, SecOps should be focused on reducing the toil and suffering from manual and repetitive tasks such as switching tools, typing commands, and copying and pasting data. 
@@ -46,16 +48,16 @@ Meet these deployment objectives to reduce manual effort in your SecOps for Zero
 
 NOTES: This section will contain the deployment objectives and technical deployment instructions to automate response to security events.
 
-TBD:
+NEEDED BY CONTRIBUTORS:
 
 Perform these implementation steps to meet minimize the number of alert queues.
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. . | Security Architect | [link](URL) |
-| <input type="checkbox" /> | 2. . | Security Architect | [link](URL) |
-| <input type="checkbox" /> | 3. . | Security Architect | [link](URL) |
-| <input type="checkbox" /> | 4. . | Security Architect | [link](URL) |
+| <input type="checkbox" /> | 1. | Security Architect | link |
+| <input type="checkbox" /> | 2. | Security Architect | link |
+| <input type="checkbox" /> | 3. | Security Architect | link |
+| <input type="checkbox" /> | 4. | Security Architect | link |
 
 
 <a id="threathunting"></a>
@@ -63,16 +65,16 @@ Perform these implementation steps to meet minimize the number of alert queues.
 
 NOTES: This section will contain guidance on how to use the threat hunting feature of SIEM and M365 XDR (called Advanced Hunting). We will need to find a clear path on how these two are different from each other, and how to tie them together.
 
-TBD:
-
 Perform these implementation steps to set up threat hunting for Microsoft 365 Defender and Azure Sentinel.
+
+NEEDED BY CONTRIBUTORS:
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. . | Security Architect | [link](URL) |
-| <input type="checkbox" /> | 2. . | Security Architect | [link](URL) |
-| <input type="checkbox" /> | 3. . | Security Architect | [link](URL) |
-| <input type="checkbox" /> | 4. . | Security Architect | [link](URL) |
+| <input type="checkbox" /> | 1. | Security Architect | link |
+| <input type="checkbox" /> | 2. | Security Architect | link |
+| <input type="checkbox" /> | 3. | Security Architect | link |
+| <input type="checkbox" /> | 4. | Security Architect | link |
 
 
 <a id="alertqual"></a>
@@ -80,15 +82,13 @@ Perform these implementation steps to set up threat hunting for Microsoft 365 De
 
 NOTES: In this section, we will discuss how to improve the quality and fidelity of threat hunting findings, with the goal to allow threat hunters to use their time more wisely.
 
-Perform these implementation steps to set up Microsoft Defender for Cloud.
-
-TBD:
+NEEDED BY CONTRIBUTORS:
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. . | Security Architect | [link](URL) |
-| <input type="checkbox" /> | 2. . | Security Architect | [link](URL) |
-| <input type="checkbox" /> | 3. . | Security Architect | [link](URL) |
-| <input type="checkbox" /> | 4. . | Security Architect | [link](URL) |
+| <input type="checkbox" /> | 1. | Security Architect | link |
+| <input type="checkbox" /> | 2. | Security Architect | link |
+| <input type="checkbox" /> | 3. | Security Architect | link |
+| <input type="checkbox" /> | 4. | Security Architect | link |
 
 

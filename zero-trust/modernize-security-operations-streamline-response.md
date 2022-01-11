@@ -10,6 +10,8 @@ ms.topic: conceptual
 
 # Step 4. Streamline response
 
+NOTE TO CONTRIBUTORS: Please see the "NEEDED BY CONTRIBUTORS" tags and help flesh out the needed information.
+
 NOTE TO REVIEWERS: This article is in progress and not ready for technical review.
 
 Your SecOps must master threat response and remediation on commonly-attacked resources using Extended Detection and Response (XDR) technology provide high quality alerts for these new resource types, bypassing the manual effort and delays when trying to build every alert in a security information and event management (SIEM) solution. 
@@ -33,8 +35,6 @@ This table describes the implementation of an XDR in terms of a sponsorship/prog
 
 Meet these deployment objectives to streamline your SecOps for Zero Trust.
 
-TBD:
-
 | Done | Deployment objective | Owner |
 |:-------|:-------|:-----|
 | <input type="checkbox" /> | [1. Use minimal number of alert queues](#singlequeue) | Security Architect |
@@ -48,48 +48,48 @@ NOTES: This section is not about technical deployment for a specific product. It
 
 Perform these implementation steps to meet minimize the number of alert queues.
 
-TBD:
+NEEDED BY CONTRIBUTORS:
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. . | Security Architect |  |
-| <input type="checkbox" /> | 2. . | Security Architect |  |
-| <input type="checkbox" /> | 3. . | Security Architect |  |
-| <input type="checkbox" /> | 4. . | Security Architect |  |
+| <input type="checkbox" /> | 1.  | Security Architect | link |
+| <input type="checkbox" /> | 2.  | Security Architect | link |
+| <input type="checkbox" /> | 3.  | Security Architect | link |
+| <input type="checkbox" /> | 4.  | Security Architect | link |
 
 
 <a id="m365xdr"></a>
-### 2a. (in parallel with step 2b) Set up Microsoft 365 Defender
+### 2a. (in parallel with step 2b) Set up Microsoft 365 Defender and AutoIR
 
-NOTES: This section will contain the deployment objectives and technical deployment instructions for Microsoft 365 Defender (previously Microsoft Threat Protection). It should include Endpoint, Email (O365), and Identity. This section will also contain the deployment objectives and technical deployment instructions for the “Automated investigation and response” feature in Microsoft 365 Defender.
+NOTES: This section will contain the deployment objectives and technical deployment instructions for Microsoft 365 Defender (previously Microsoft Threat Protection). It should include Endpoint, Email (O365), and Identity. This section will also contain the deployment objectives and technical deployment instructions for the Automated investigation and response (AutoIR) feature in Microsoft 365 Defender.
 
-Perform these implementation steps to set up Microsoft 365 Defender.
+Perform these implementation steps to set up Microsoft 365 Defender and AutoIR.
 
-TBD:
+NEEDED BY CONTRIBUTORS:
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. . | Security Architect |  |
-| <input type="checkbox" /> | 2. . | Security Architect |  |
-| <input type="checkbox" /> | 3. . | Security Architect |  |
-| <input type="checkbox" /> | 4. . | Security Architect |  |
+| <input type="checkbox" /> | 1.  | Security Architect | link |
+| <input type="checkbox" /> | 2.  | Security Architect | link |
+| <input type="checkbox" /> | 3.  | Security Architect | link |
+| <input type="checkbox" /> | 4.  | Security Architect | link |
 
 
 <a id="azurexdr"></a>
 ### 2b. (in parallel with step 2a) Set up Microsoft Defender for Cloud
 
-NOTES: This section will contain the deployment objectives and technical deployment instructions for Azure Defender (previously Azure Security Center). This deployment objective does not have any dependencies with 1.2 Setting up M365 XDR or 1.3 Setting up AutoIR, so customers can choose to deploy it in parallel if desired.
+NOTES: This section will contain the deployment objectives and technical deployment instructions for Azure Defender for Cloud (previously Azure Defender or Azure Security Center). This deployment objective does not have any dependencies with 2a Setting up M365 XDR and setting up AutoIR, so customers can choose to deploy it in parallel if desired.
 
 Perform these implementation steps to set up Microsoft Defender for Cloud.
 
-TBD:
+NEEDED BY CONTRIBUTORS:
 
 | Done | Implementation objective and results | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. . | Security Architect |  |
-| <input type="checkbox" /> | 2. . | Security Architect |  |
-| <input type="checkbox" /> | 3. . | Security Architect |  |
-| <input type="checkbox" /> | 4. . | Security Architect |  |
+| <input type="checkbox" /> | 1.  | Security Architect | link |
+| <input type="checkbox" /> | 2.  | Security Architect | link |
+| <input type="checkbox" /> | 3.  | Security Architect | link |
+| <input type="checkbox" /> | 4.  | Security Architect | link |
 
 
 ## Next step

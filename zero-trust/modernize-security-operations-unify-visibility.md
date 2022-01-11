@@ -10,6 +10,8 @@ ms.topic: conceptual
 
 # Step 5. Unify visibility
 
+NOTE TO CONTRIBUTORS: Please see the "NEEDED BY CONTRIBUTORS" tags and help flesh out the needed information.
+
 NOTE TO REVIEWERS: This article is in progress and not ready for technical review.
 
 While it’s difficult to create a high-quality individual alerts from raw data in security information and event management (SIEM) solutions, they are extraordinarily useful for bringing all the data and context together for investigations and for threat hunting, allowing for a broad view across your entire estate, reducing blind spots where attackers may dwell.
@@ -33,7 +35,7 @@ Meet these deployment objectives to unify visibility in your SecOps for Zero Tru
 
 NOTES: Setting up SIEM:  This section will contain the deployment objectives and technical deployment instructions for Microsoft Sentinel (previously Azure Sentinel). This step “levels up” in maturity from XDR, as now we can gather events from multiple sources and contextualize / cross-reference them.
 
-TBD:
+NEEDED BY CONTRIBUTORS:
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
@@ -45,6 +47,21 @@ TBD:
 | <input type="checkbox" /> | 6.  | |  |
 | <input type="checkbox" /> | 7.  | |  |
 | <input type="checkbox" /> | 8.  | |  |
+
+
+### 1. Deployment objective placeholder section
+
+NEEDED BY CONTRIBUTORS FOR EACH DEPLOYMENT OBJECTIVE:
+
+Perform these implementation steps to realize the deployment objective.
+
+| Done | Implementation objective and results | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | 1.  | Security Architect/other | link |
+| <input type="checkbox" /> | 2.  | Security Architect/other | link |
+| <input type="checkbox" /> | 3.  | Security Architect/other | link |
+| <input type="checkbox" /> | 4.  | Security Architect/other | link |
+
 
 ## Next step
 

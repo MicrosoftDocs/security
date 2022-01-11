@@ -26,31 +26,51 @@ Azure Active Directory B2C is a business-to-customer identity access management 
 
 ## Azure Active Directory
 
-There are many ways to integrate your solution with Azure Active Directory. This section includes basic integrations that will improve the security of most apps as well as links to in-depth guidance for specific scenarios.
+There are many ways to integrate your solution with Azure Active Directory. Foundational integrations are about protecting your customers using Azure Active Directory's built-in security capabilities. Advanced integrations will take your solution one step further with enhanced security capabilities.
 
-### List your app in the Azure Active Directory App Gallery
+:::image source="../media/integrate/identity/azure-active-directory-zero-trust-levels.png" alt-text="A curved path showing the foundational and advanced integrations. Foundational integrations include single sign-on and publisher verification. Advanced integrations include conditional access authentication context, continuous access evaluation, and advanced security API integrations." lightbox="../media/integrate/identity/azure-active-directory-zero-trust-levels.png":::
 
-Publishing your app in [the app gallery](https://www.microsoft.com/security/business/identity-access-management/integrated-apps-azure-ad) will increase customer trust. Customers will know that your application has been validated as compatible with Azure Active Directory, and you can become a [verified publisher](/azure/active-directory/develop/publisher-verification-overview) so that customers are certain you are the publisher of the app they are adding to their tenant.
+### Foundational integrations
+
+Foundational integrations protect your customers with Azure Active Directory's built-in security capabilities.
+
+#### Enable single sign-on and publisher verification
+
+To enable single sign-on, we recommend publishing your app in [the app gallery](https://www.microsoft.com/security/business/identity-access-management/integrated-apps-azure-ad). This will increase customer trust, because they know that your application has been validated as compatible with Azure Active Directory, and you can become a [verified publisher](/azure/active-directory/develop/publisher-verification-overview) so that customers are certain you are the publisher of the app they are adding to their tenant.
 
 Publishing in the app gallery will make it easy for IT admins to integrate the solution into their tenant with automated app registration. Manual registrations are a common cause of support issues with applications. Adding your app to the gallery will avoid these issues with your app.
 
-### Integrate user provisioning
+For mobile apps, we recommend you use the Microsoft authentication library and a system browser to [implement single sign-on](/azure/active-directory/develop/mobile-sso-support-overview).
 
-Managing identities and access for organizations with thousands of users is challenging. If your solution will be used by large organizations, synchronizing information about users and access between your application and Azure Active Directory is essential. This allows you to effectively scale your identity management systems on both cloud-only and hybrid environments as customers increase their dependence on the cloud.
+#### Integrate user provisioning
+
+Managing identities and access for organizations with thousands of users is challenging. If your solution will be used by large organizations, consider synchronizing information about users and access between your application and Azure Active Directory. This helps keep user access consistent when changes occur.
 
 SCIM (System for Cross-Domain Identity Management) is an open standard for exchanging user identity information. You can use the SCIM user management API to automatically provision users and groups between your application and Azure Active Directory.
 
-Our tutorial on the subject, [develop a SCIM endpoint for user provisioning to apps from Azure Active Directory](/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups), describes how to build a SCIM endpoint and integrate with the Azure Active Directory provisioning service. The SCIM specification provides a common user schema for provisioning. When used in conjunction with federation standards like SAML or OpenID Connect, SCIM gives administrators an end-to-end, standards-based solution for access management.
+Our tutorial on the subject, [develop a SCIM endpoint for user provisioning to apps from Azure Active Directory](/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups), describes how to build a SCIM endpoint and integrate with the Azure Active Directory provisioning service.
 
-### Integrate with key security APIs
+### Advanced integrations
+
+Advanced integrations will increase the security of your application even further.
+
+#### Conditional Access authentication context
+
+[Conditional Access authentication context](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/conditional-access-authentication-context-now-in-public-preview/ba-p/1942484) allows apps to trigger policy enforcement when a user accesses sensitive data or actions, keeping users more productive and your sensitive resources secure.
+
+#### Continuous access evaluation
+
+[Continuous access evaluation (CAE)](/azure/active-directory/conditional-access/concept-continuous-access-evaluation) allows access tokens to be revoked based on critical events and policy evaluation rather than relying on token expiry based on lifetime. For some resource APIs, because risk and policy are evaluated in real time, this can increase token lifetime up to 28 hours, which will make your application more resilient and performant.
+
+#### Security APIs
 
 In our experience, many independent software vendors have found these APIs to be particularly useful.
 
-#### User and group APIs
+##### User and group APIs
 
 If your application needs to make updates to the users and groups in the tenant, you can use the user and group APIs through Microsoft Graph to write back to the Azure Active Directory tenant. You can read more about using the API in the [Microsoft Graph REST API v1.0 reference](/graph/api/overview) and the reference documentation for the [user resource type](/graph/api/resources/user)
 
-#### Conditional Access API
+##### Conditional Access API
 
 [Conditional access](/azure/active-directory/conditional-access/overview) is a key part of Zero Trust because it helps to ensure the right user has the right access to the right resources. Enabling Conditional Access allows Azure Active Directory to make access decision based on computed risk and pre-configured policies.
 
@@ -60,7 +80,7 @@ Independent software vendors can take advantage of conditional access by surfaci
 
 For more, check out the [configure conditional access policies using the Microsoft Graph API](https://github.com/Azure-Samples/azure-ad-conditional-access-apis/tree/main/01-configure/graphapi) sample on GitHub.
 
-#### Confirm compromise and risky user APIs
+##### Confirm compromise and risky user APIs
 
 Sometimes independent software vendors may become aware of compromise that is outside of the scope of Azure Active Directory. For any security event, especially those including account compromise, Microsoft and the independent software vendor can collaborate by sharing information from both parties. The [confirm compromise API](/graph/api/riskyusers-confirmcompromised) allows you to set a targeted user’s risk level to high. This lets Azure Active Directory respond appropriately, for example by requiring the user to reauthenticate or by restricting their access to sensitive data.
 
@@ -70,9 +90,9 @@ Going in the other direction, Azure Active Directory continually evaluates user 
 
 :::image type="content" source="../media/integrate/identity/diagram-risky-user.png" alt-text="Diagram showing a user using an application, which then calls Azure Active Directory to retrieve the user's risk level." border="true" lightbox="../media/integrate/identity/diagram-risky-user-expanded.png":::
 
-### Advanced integration scenarios
+#### Unique product scenarios
 
-The following guidance is for independent software vendors who offer specific kinds of solutions and wish to integrate with Azure Active Directory.
+The following guidance is for independent software vendors who offer specific kinds of solutions.
 
 [Secure hybrid access integrations](/azure/active-directory/manage-apps/secure-hybrid-access-integrations)
 Many business applications were created to work inside of a protected corporate network, and some of these applications make use of legacy authentication methods. As companies look to build a Zero Trust strategy and support hybrid and cloud-first work environments, they need solutions that connect apps to Azure Active Directory and provide modern authentication solutions for legacy applications. Use this guide to create solutions that provide modern cloud authentication for legacy on-premises applications.

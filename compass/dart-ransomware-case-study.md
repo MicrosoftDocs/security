@@ -46,7 +46,7 @@ After initial access was gained, the threat actor used the Mimikatz credential h
 
 For this case study, here is the highlighted path that the attacker took.
 
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-path.png" alt-text="The path the ransomware attacker took for this case study.":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-path.png" alt-text="The path the ransomware attacker took for this case study." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-path.png":::
 
 The following sections describe additional details based on the MITRE ATT&CK tactics and include examples of how the threat actor activities were detected with the Microsoft 365 Defender portal.
 

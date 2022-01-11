@@ -28,7 +28,7 @@ Azure Active Directory B2C is a business-to-customer identity access management 
 
 There are many ways to integrate your solution with Azure Active Directory. Foundational integrations are about protecting your customers using Azure Active Directory's built-in security capabilities. Advanced integrations will take your solution one step further with enhanced security capabilities.
 
-:::image source="../media/integrate/identity/azure-active-directory-zero-trust-levels.png" alt-text="A curved line with foundational and advanced integrations. Foundational integrations include single sign-on and publisher verification. Advanced integrations include conditional access authentication context, continuous access evaluation, and advanced security API integrations." lightbox="../media/integrate/identity/azure-active-directory-zero-trust-levels.png":::
+:::image source="../media/integrate/identity/azure-active-directory-zero-trust-levels.png" alt-text="A curved path showing the foundational and advanced integrations. Foundational integrations include single sign-on and publisher verification. Advanced integrations include conditional access authentication context, continuous access evaluation, and advanced security API integrations." lightbox="../media/integrate/identity/azure-active-directory-zero-trust-levels.png":::
 
 ### Foundational integrations
 

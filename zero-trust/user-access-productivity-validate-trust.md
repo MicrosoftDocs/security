@@ -199,13 +199,13 @@ After completing these deployment objectives, you will have built out the **Apps
 
 ## Network
 
-The Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Although it's easy to understand this for cloud services and remote devices, this also applies on your organization network that is firewalled from the public Internet.
+The Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Although this is a common practice for public networks, it also applies to your organization’s internal networks which are generally firewalled from the public Internet.
 
-To adhere to Zero Trust, your organization must also address security vulnerabilities on your private network and ensure that you verify explicitly, use least privilege access, and assume breach. Devices, users, and apps are not to be trusted just because they are on your private network.
+To adhere to Zero Trust, your organization must address security vulnerabilities on both public and private networks, whether on-premises or in the cloud, and ensure that you verify explicitly, use least privilege access, and assume breach. Devices, users, and apps are not to be inherently trusted because they are on your private networks.
 
 ### Program and project member accountabilities
 
-This table describes a Zero Trust implementation for public and on-premises networks in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+This table describes a Zero Trust implementation for public and private networks in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
 | Lead | Owner | Accountability |
 |:-------|:-------|:-----|
@@ -219,14 +219,14 @@ This table describes a Zero Trust implementation for public and on-premises netw
 
 ### Deployment objectives
 
-Meet these deployment objectives to ensure Zero Trust protection for your on-premises network and cloud-based traffic.
+Meet these deployment objectives to ensure Zero Trust protection for your public and private networks, for both on-premises and cloud-based traffic. These objectives can be done in parallel.
 
-| Done | Deployment objective | Owner |
-|:-------|:-------|:-----|
-| <input type="checkbox" /> | Require encryption for all traffic connections, including between IaaS components and between on-premises users and apps. | Security Architect |
-| <input type="checkbox" /> | Limit access to critical data and applications by policy (user or device identity) or traffic filtering. | Security Architect or Network Architect|
-| <input type="checkbox" /> | Deploy on-premises network segmentation with many ingress and egress cloud micro-perimeters and some micro-segmentation. | Network Architect or Network Engineer |
-| <input type="checkbox" /> | Use real-time threat detection for on-premises traffic. | SecOps Analysts |
+| Done | Deployment objective | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | Require encryption for all traffic connections, including between IaaS components and between on-premises users and apps. | Security Architect | [Azure IaaS components](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell) <br><br> [IPsec for on-premises Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/securing-end-to-end-ipsec-connections-by-using-ikev2) |
+| <input type="checkbox" /> | Limit access to critical data and applications by policy (user or device identity) or traffic filtering. | Security Architect or Network Architect| [Access policies for Cloud App Security Conditional Access App Control](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad) <br><br> [Windows Firewall for Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) |
+| <input type="checkbox" /> | Deploy on-premises network segmentation with many ingress and egress cloud micro-perimeters and some micro-segmentation. | Network Architect or Network Engineer | See your on-premises and edge device doumentation. |
+| <input type="checkbox" /> | Use real-time threat detection for on-premises traffic. | SecOps Analysts | [Windows threat protection](https://docs.microsoft.com/windows/security/threat-protection/) <br><br> [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide) |
 
 
 <!--

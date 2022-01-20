@@ -15,20 +15,9 @@ Your first step is to establish a security perimeter for cloud applications and 
 This includes using Zero Trust to explicitly validate trust for all access requests for:
 
 - [Identities](#identities)
-
-  Require Passwordless or multi-factor authentication (MFA) for all users and measure risk with threat intelligence and behavior analytics.
-
 - [Endpoints](#endpoints)
-
-  Require endpoint (device) integrity and health compliance for access.
-
 - [Apps](#apps)
-
-  Enable Azure Active Directory (Azure AD) for all SaaS apps and VPN authentication and publish legacy on-premises and IaaS-based Web services with Azure AD Application Proxy.
-
 - [Network](#network)
-
-  Apply additional traffic filtering and segmentation to private networks to protect business critical data and applications.
 
 
 After completing this step, you will have built out this part of the Zero Trust architecture.
@@ -97,11 +86,11 @@ Meet these deployment objectives to protect your endpoints (devices) with Zero T
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Register devices with Azure AD |  | [Device identities](https://docs.microsoft.com/azure/active-directory/devices/overview) |
-| <input type="checkbox" /> | 2. Enroll devices into management and configure configuration profiles |  | [Device management overview](https://docs.microsoft.com/mem/intune/fundamentals/what-is-device-management) |
-| <input type="checkbox" /> | 3. Connect Defender for Endpoint to Intune |  | [Configure Microsoft Defender for Endpoint in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure) |
-| <input type="checkbox" /> | 4. Monitor device compliance/risk as a signal for Conditional Access |  | [Use compliance policies to set rules for devices you manage with Intune](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) |
-| <input type="checkbox" /> | 5. Implement Microsoft Information Protection and integrate with Conditional Access policies |  | [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) |
+| <input type="checkbox" /> | 1. Register devices with Azure AD. | MDM Admin | [Device identities](https://docs.microsoft.com/azure/active-directory/devices/overview) |
+| <input type="checkbox" /> | 2. Enroll devices and create configuration profiles. | MDM Admin | [Device management overview](https://docs.microsoft.com/mem/intune/fundamentals/what-is-device-management) |
+| <input type="checkbox" /> | 3. Connect Defender for Endpoint to Intune. | Identity Security Admin | [Configure Microsoft Defender for Endpoint in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure) |
+| <input type="checkbox" /> | 4. Monitor device compliance and risk for Conditional Access. | Identity Security Admin | [Use compliance policies to set rules for devices you manage with Intune](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) |
+| <input type="checkbox" /> | 5. Implement Microsoft Information Protection and integrate with Conditional Access policies. | Identity Security Admin | [Use sensitivity labels to protect content](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) |
 
 You have now built out the **Endpoints** section of the Zero Trust architecture.
 

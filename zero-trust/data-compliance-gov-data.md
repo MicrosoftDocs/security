@@ -79,7 +79,7 @@ Meet these deployment objectives to protect your data for Zero Trust.
 
 Perform these implementation steps to meet the **Know your data** deployment objective.
 
-| Done | Implementation objective and results | Owner | Documentation |
+| Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. Determine data classification levels. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview#sensitive-information-types-used-most-in-your-content) |
 | <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about) |
@@ -91,7 +91,7 @@ Perform these implementation steps to meet the **Know your data** deployment obj
 
 Perform these implementation steps to meet the **Protect your data** deployment objective.
 
-| Done | Implementation objective and results | Owner | Documentation |
+| Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. Determine the use and design of sensitivity labels. | Security Architect | [Get started](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels) |
 | <input type="checkbox" /> | 2. Label and protect items for Microsoft 365 apps and services. | Data Security Engineer | [Manage sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps) |
@@ -107,7 +107,7 @@ Perform these implementation steps to meet the **Protect your data** deployment 
 
 Perform these implementation steps to meet the **Prevent data loss** deployment objective.
 
-| Done | Implementation objective and results | Owner | Documentation |
+| Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. Design and create data loss prevention (DLP) policies. | Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/dlp-learn-about-dlp) |
 | <input type="checkbox" /> | 2. Enable and configure endpoint data loss prevention. | Data Security Engineer | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about) |
@@ -119,7 +119,7 @@ Perform these implementation steps to meet the **Prevent data loss** deployment 
 
 Perform these implementation steps to ensure that your workers and admins meet the **Use least privilege access** deployment objective.
 
-| Done | Implementation objective and results | Owner |
+| Done | Implementation step | Owner |
 |:-------|:-------|:-----|
 | <input type="checkbox" /> | 1. From the **Know your data** deployment objective, review the permissions for the locations of sensitive and critical information. | Data Security Engineer |
 | <input type="checkbox" /> | 2. Implement minimal permissions for the sensitive and critical information while meeting collaboration and business requirements and inform the users that are affected. | Data Security Engineer |

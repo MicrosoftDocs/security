@@ -42,7 +42,7 @@ Meet these deployment objectives to streamline your SecOps for Zero Trust.
 | <input type="checkbox" /> | [2b. (in parallel with step 2b) Set up Microsoft Defender for Cloud](#azurexdr). | Security Engineer |
 
 <a id="singlequeue"></a>
-### 1. Use the minimal number of alert queues
+## 1. Use the minimal number of alert queues
 
 NOTES FROM THE OUTLINE: This section is not about technical deployment for a specific product. It’s guidance on a best practice to ensure analysts / SOC can look at a single tool for alert and response. We know that this guidance unfortunately conflicts with our own offerings as we have an XDR for M365 and another different one for Cloud/Azure, but for customers who have SIEM, they may be able to unify it with this as a long-term strategy.)
 
@@ -59,7 +59,7 @@ NEEDED BY CONTRIBUTORS:
 
 
 <a id="m365xdr"></a>
-### 2a. (in parallel with step 2b) Set up Microsoft 365 Defender and AutoIR
+## 2a. (in parallel with step 2b) Set up Microsoft 365 Defender and AutoIR
 
 NOTES FROM THE OUTLINE: This section will contain the deployment objectives and technical deployment instructions for Microsoft 365 Defender (previously Microsoft Threat Protection). It should include Endpoint, Email (O365), and Identity. This section will also contain the deployment objectives and technical deployment instructions for the Automated investigation and response (AutoIR) feature in Microsoft 365 Defender.
 
@@ -79,7 +79,7 @@ Perform these implementation steps to set up Microsoft 365 Defender and AutoIR.
 
 
 <a id="azurexdr"></a>
-### 2b. (in parallel with step 2a) Set up Microsoft Defender for Cloud
+## 2b. (in parallel with step 2a) Set up Microsoft Defender for Cloud
 
 NOTES FROM THE OUTLINE: This section will contain the deployment objectives and technical deployment instructions for Azure Defender for Cloud (previously Azure Defender or Azure Security Center). This deployment objective does not have any dependencies with 2a Setting up M365 XDR and setting up AutoIR, so customers can choose to deploy it in parallel if desired.
 

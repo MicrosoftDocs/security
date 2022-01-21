@@ -16,7 +16,7 @@ NOTE TO REVIEWERS: This article is in progress and not ready for technical revie
 
 While it’s difficult to create a high-quality individual alerts from raw data in security information and event management (SIEM) solutions, they are extraordinarily useful for bringing all the data and context together for investigations and for threat hunting, allowing for a broad view across your entire estate, reducing blind spots where attackers may dwell.
 
-### Program and project member accountabilities
+## Program and project member accountabilities
 
 This table describes the implementation of a central SIEM alaysis in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
@@ -29,7 +29,7 @@ This table describes the implementation of a central SIEM alaysis in terms of a 
 | | SecOps Analysts | Update standards and policy documents |
 | | Security Governance | Monitor to ensure compliance |
 
-### Deployment objectives
+## Deployment objectives
 
 Meet these deployment objectives to unify visibility in your SecOps for Zero Trust.
 
@@ -49,7 +49,7 @@ NEEDED BY CONTRIBUTORS:
 | <input type="checkbox" /> | 8.  | |  |
 
 
-### 1. Deployment objective placeholder section
+## 1. Deployment objective placeholder section
 
 NEEDED BY CONTRIBUTORS FOR EACH DEPLOYMENT OBJECTIVE:
 

@@ -20,7 +20,7 @@ Focusing on giving analysts a streamlined end-to-end integrated experience with 
 
 SOAR technology is built into both Microsoft 365 Defender and Microsoft Sentinel.
 
-### Program and project member accountabilities
+## Program and project member accountabilities
 
 This table describes a SOAR implementation in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
@@ -33,7 +33,7 @@ This table describes a SOAR implementation in terms of a sponsorship/program man
 | | SecOps Analysts | Update standards and policy documents |
 | | Security Governance | Monitor to ensure compliance |
 
-### Deployment objectives
+## Deployment objectives
 
 Meet these deployment objectives to reduce manual effort in your SecOps for Zero Trust.
 
@@ -44,7 +44,7 @@ Meet these deployment objectives to reduce manual effort in your SecOps for Zero
 | <input type="checkbox" /> | [3. Enforce Alert Quality](#alertqual). | Security Engineer |
 
 <a id="soar"></a>
-### 1. Implement SOAR
+## 1. Implement SOAR
 
 NOTES FROM THE OUTLINE: This section will contain the deployment objectives and technical deployment instructions to deploy a SOAR solution.
 
@@ -61,7 +61,7 @@ Perform these implementation steps to deploy your SOAR solution.
 
 
 <a id="threathunting"></a>
-### 2. Operationalize threat hunting
+## 2. Operationalize threat hunting
 
 NOTES FROM THE OUTLINE: This section will contain guidance on how to use the threat hunting feature of SIEM and M365 XDR (called Advanced Hunting). We will need to find a clear path on how these two are different from each other, and how to tie them together.
 
@@ -94,7 +94,7 @@ Perform these implementation steps to set up threat hunting for Microsoft Sentin
 
 
 <a id="alertqual"></a>
-### 3. Enforce alert quality
+## 3. Enforce alert quality
 
 NOTES FROM THE OUTLINE: In this section, we will discuss how to improve the quality and fidelity of threat hunting findings, with the goal to allow threat hunters to use their time more wisely.
 

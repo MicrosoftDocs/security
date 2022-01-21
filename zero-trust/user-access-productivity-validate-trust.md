@@ -49,8 +49,8 @@ Meet these deployment objectives to protect your privileged identities with Zero
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Secured privileged access has been deployed to protect administrative user accounts.  | IT implementer | [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/roles/security-planning) |
-| <input type="checkbox" /> | 2. Privileged Identity Management (PIM) has been deployed to a provide a time-bound, just-in-time approval process for the use of privileged user accounts. | IT implementer | [Plan a Privileged Identity Management deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) |
+| <input type="checkbox" /> | 1. Deploy secured privileged access to protect administrative user accounts.  | IT implementer | [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/roles/security-planning) |
+| <input type="checkbox" /> | 2. Deploy Azure AD Privileged Identity Management (PIM) for a time-bound, just-in-time approval process for the use of privileged user accounts. | IT implementer | [Plan a Privileged Identity Management deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) |
 
 Meet these deployment objectives to protect your user identities with Zero Trust.
 

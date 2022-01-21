@@ -83,7 +83,7 @@ Perform these implementation steps to meet the **Know your data** deployment obj
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. Determine data classification levels. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview#sensitive-information-types-used-most-in-your-content) |
 | <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about) |
-| <input type="checkbox" /> | 3. Determine the use of pre-trained and custom trainable classifiers. | Data Security Architect | [Learn about](https://docs.microsoft.com/en-us/microsoft-365/compliance/classifier-learn-about) |
+| <input type="checkbox" /> | 3. Determine the use of pre-trained and custom trainable classifiers. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/classifier-learn-about) |
 | <input type="checkbox" /> | 4. Discover and classify sensitive data. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview) |
 
 <a id="protect"></a>

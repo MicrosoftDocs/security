@@ -80,7 +80,6 @@ The guidance for deployment of Zero Trust in your organization is organized in m
 
 ![RaMP areas for Zero Trust](./media/zero-trust-ramp-overview/zero-trust-ramp-pillars.png)
 
---> 
 
 For every organization, the top priority Zero Trust RaAMP initiatives are:
 
@@ -92,6 +91,8 @@ Zero Trust RaMP initiatives based on need for the use of Operations Technology (
 
 - OT and industrial IoT
 - Datacenter & DevOps security
+
+--> 
 
 ## Next step
 

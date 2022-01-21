@@ -39,18 +39,18 @@ Meet these deployment objectives to reduce manual effort in your SecOps for Zero
 
 | Done | Deployment objective | Owner |
 |:-------|:-------|:-----|
-| <input type="checkbox" /> | [1. Implement SOAR](#soar) | Security Architect |
-| <input type="checkbox" /> | [2. Operationalize threat hunting](#threathunting) | Security Engineer |
-| <input type="checkbox" /> | [3. Enforce Alert Quality](#alertqual) | Security Engineer |
+| <input type="checkbox" /> | [1. Implement SOAR](#soar). | Security Architect |
+| <input type="checkbox" /> | [2. Operationalize threat hunting](#threathunting). | Security Engineer |
+| <input type="checkbox" /> | [3. Enforce Alert Quality](#alertqual). | Security Engineer |
 
 <a id="soar"></a>
 ### 1. Implement SOAR
 
-NOTES: This section will contain the deployment objectives and technical deployment instructions to automate response to security events.
+NOTES FROM THE OUTLINE: This section will contain the deployment objectives and technical deployment instructions to deploy a SOAR solution.
 
 NEEDED BY CONTRIBUTORS:
 
-Perform these implementation steps to meet minimize the number of alert queues.
+Perform these implementation steps to deploy your SOAR solution.
 
 | Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
@@ -63,11 +63,27 @@ Perform these implementation steps to meet minimize the number of alert queues.
 <a id="threathunting"></a>
 ### 2. Operationalize threat hunting
 
-NOTES: This section will contain guidance on how to use the threat hunting feature of SIEM and M365 XDR (called Advanced Hunting). We will need to find a clear path on how these two are different from each other, and how to tie them together.
+NOTES FROM THE OUTLINE: This section will contain guidance on how to use the threat hunting feature of SIEM and M365 XDR (called Advanced Hunting). We will need to find a clear path on how these two are different from each other, and how to tie them together.
 
-Perform these implementation steps to set up threat hunting for Microsoft 365 Defender and Microsoft Sentinel.
+The enormous number of security signals that your various systems and security appliances generate can be difficult to parse and filter into meaningful events. To proactively look for security threats in this mountain of content, Azure Sentinel and Microsoft 365 Defender support advanced hunting.
 
-NEEDED BY CONTRIBUTORS:
+Advanced hunting is a query-based threat hunting tool that lets you explore and inspect events in your network to locate threat indicators and entities. This flexible and customizable analysis tool enables unconstrained hunting for both known and potential threats.
+
+Microsoft Sentinel supports built-in queries, a hunting dashboard, and custom queries. Microsoft 365 Defender supports custom queries that can also be used to create custom detection rules.
+
+Perform these implementation steps to set up threat hunting for Microsoft 365 Defender.
+
+| Done | Implementation step | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | 1. Ramp up SecOps staff on Microsoft 365 Defender advanced hunting (Kusto language, schema, query training and practice). | SecOps manager | [Get started](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview#get-started-with-advanced-hunting) |
+| <input type="checkbox" /> | 2. Assemble a catalog of advanced hunting queries for identity, endpoint, apps, data, and ransomware attacks. | Security Analysts | [Threat analytics reports](https://security.microsoft.com/threatanalytics), [GitHub](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries), [ransomware](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-find-ransomware) |
+| <input type="checkbox" /> | 3. Create custom detection rules for advanced hunting queries. | Security Analysts | [Custom detection rules](https://docs.microsoft.com/microsoft-365/security/defender/custom-detection-rules) |
+| <input type="checkbox" /> | 4. Determine the set of operational tasks, such as running daily/weekly/monthly advanced hunting queries and updating queries and custom detection rules. | SecOps Manager | [SOC maintenance tasks](https://docs.microsoft.com/microsoft-365/security/defender/integrate-microsoft-365-defender-secops-tasks) |
+
+
+NEEDED BY CONTRIBUTORS FOR MICROSOFT SENTINEL:
+
+Perform these implementation steps to set up threat hunting for Microsoft Sentinel.
 
 | Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
@@ -80,7 +96,7 @@ NEEDED BY CONTRIBUTORS:
 <a id="alertqual"></a>
 ### 3. Enforce alert quality
 
-NOTES: In this section, we will discuss how to improve the quality and fidelity of threat hunting findings, with the goal to allow threat hunters to use their time more wisely.
+NOTES FROM THE OUTLINE: In this section, we will discuss how to improve the quality and fidelity of threat hunting findings, with the goal to allow threat hunters to use their time more wisely.
 
 NEEDED BY CONTRIBUTORS:
 

@@ -55,7 +55,7 @@ NEEDED BY CONTRIBUTORS FOR EACH DEPLOYMENT OBJECTIVE:
 
 Perform these implementation steps to realize the deployment objective.
 
-| Done | Implementation objective and results | Owner | Documentation |
+| Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1.  | Security Architect/other | link |
 | <input type="checkbox" /> | 2.  | Security Architect/other | link |

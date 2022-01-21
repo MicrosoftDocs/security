@@ -52,7 +52,7 @@ NEEDED BY CONTRIBUTORS:
 
 Perform these implementation steps to meet minimize the number of alert queues.
 
-| Done | Implementation objective and results | Owner | Documentation |
+| Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. | Security Architect | link |
 | <input type="checkbox" /> | 2. | Security Architect | link |
@@ -69,7 +69,7 @@ Perform these implementation steps to set up threat hunting for Microsoft 365 De
 
 NEEDED BY CONTRIBUTORS:
 
-| Done | Implementation objective and results | Owner | Documentation |
+| Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. | Security Architect | link |
 | <input type="checkbox" /> | 2. | Security Architect | link |
@@ -84,7 +84,7 @@ NOTES: In this section, we will discuss how to improve the quality and fidelity 
 
 NEEDED BY CONTRIBUTORS:
 
-| Done | Implementation objective and results | Owner | Documentation |
+| Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. | Security Architect | link |
 | <input type="checkbox" /> | 2. | Security Architect | link |

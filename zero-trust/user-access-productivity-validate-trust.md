@@ -10,12 +10,12 @@ ms.topic: conceptual
 
 # Step 1. Explicitly validate trust for all access requests
 
-Your first step is to establish a security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access, for both internal network and cloud traffic..
+Your first step is to establish a security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access, for both internal network and cloud traffic.
 
 This includes using Zero Trust to explicitly validate trust for all access requests for:
 
 - [Identities](#identities)
-- [Endpoints](#endpoints)
+- [Endpoints (devices)](#endpoints)
 - [Apps](#apps)
 - [Network](#network)
 
@@ -45,18 +45,25 @@ This table describes the overall protection of your user accounts in terms of a 
 
 ### Deployment objectives
 
-Meet these deployment objectives to protect your identities with Zero Trust.
+Meet these deployment objectives to protect your privileged identities with Zero Trust.
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Self-service password reset (SSPR) has been enabled, which gives you credential reset capabilities | IT implementer | [Plan an Azure Active Directory self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment) |
-| <input type="checkbox" /> | 2. Multi-Factor Authentication (MFA) has been enabled and appropriate methods for MFA have been selected | IT implementer | [Plan an Azure Active Directory Multi-Factor Authentication deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) |
-| <input type="checkbox" /> | 3. Combined User Registration has been enabled for your directory, allows users to register for SSPR and MFA in one step | IT implementer | [Enable combined security information registration in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined) |
+| <input type="checkbox" /> | 1. Secured privileged access has been deployed to protect administrative user accounts.  | IT implementer | [Securing privileged access for hybrid and cloud deployments in Azure AD](https://docs.microsoft.com/azure/active-directory/roles/security-planning) |
+| <input type="checkbox" /> | 2. Privileged Identity Management (PIM) has been deployed to a provide a time-bound, just-in-time approval process for the use of privileged user accounts. | IT implementer | [Plan a Privileged Identity Management deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) |
+
+Meet these deployment objectives to protect your user identities with Zero Trust.
+
+| Done | Deployment objective | Owner | Documentation |
+|:-------|:-------|:-----|:-----|
+| <input type="checkbox" /> | 1. Enable self-service password reset (SSPR), which gives you credential reset capabilities | IT implementer | [Plan an Azure AD self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment) |
+| <input type="checkbox" /> | 2. Enable Multi-Factor Authentication (MFA) and select appropriate methods for MFA | IT implementer | [Plan an Azure AD Multi-Factor Authentication deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) |
+| <input type="checkbox" /> | 3. Enable combined User Registration for your directory to allow users to register for SSPR and MFA in one step | IT implementer | [Enable combined security information registration in Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined) |
 | <input type="checkbox" /> | 4. Configure a Conditional Access policy to require MFA registration. | IT implementer | [How To: Configure the Azure AD Multi-Factor Authentication registration policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) |
 | <input type="checkbox" /> | 5. Enable user and sign-in risk-based policies to protect user access to resources. | IT implementer | [How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) |
-| <input type="checkbox" /> | 6. Detect and block known weak passwords and their variants, and block additional weak terms specific to your organization. | IT implementer | [Eliminate bad passwords using Azure Active Directory Password Protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) |
-| <input type="checkbox" /> | 7. Microsoft Defender for Identity | IT implementer | Deploy and enable [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is#whats-next). Review and mitigate any open alerts. |
-| <input type="checkbox" /> | 8. Passwordless credential deployment | IT implementer | [Plan a passwordless authentication deployment in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-deployment) |
+| <input type="checkbox" /> | 6. Detect and block known weak passwords and their variants, and block additional weak terms specific to your organization. | IT implementer | [Eliminate bad passwords using Azure AD Password Protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) |
+| <input type="checkbox" /> | 7. Deploy Microsoft Defender for Identity and review and mitigate any open alerts.| Security operations team  | [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is#whats-next)  |
+| <input type="checkbox" /> | 8. Deploy passwordless credentials. | IT implementer | [Plan a passwordless authentication deployment in Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-deployment) |
 
 You have now built out the **Identities** section of the Zero Trust architecture.
 

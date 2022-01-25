@@ -26,7 +26,7 @@ You must prepare your organization so that it has a viable alternative to paying
 
 To avoid being forced into payment (the profitable situation for attackers), the most immediate and effective action you can take is to ensure your organization can restore your entire enterprise from immutable storage that has not already been infected or encrypted by a ransomware attack, which neither the attacker nor you can modify. 
 
-Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other areas in phases 1 or 2, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
+Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other areas, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
 
 - What business assets would be the most damaging if compromised? For example, what assets would business leadership would be willing to pay an extortion demand if attackers controlled them? 
 - How do these business assets translate to IT assets such as files, applications, databases, and servers?
@@ -34,7 +34,7 @@ Identifying the most sensitive assets and protecting them at a higher level of a
 
 ## Secure backups
 
-You must ensure that critical systems and their data are backed up and backups are immutable to protect against deliberate erasure or encryption by an attacker.
+You must ensure that critical systems and their data are backed up and are immutable to protect against deliberate erasure or encryption by an attacker. The backups **must have not already been infected or encrypted by a ransomware attack**, otherwise you are restoring a set of files that could contain entry points for the attackers to exploit after the recovery.
 
 Attacks on your backups focus on crippling your organization’s ability to respond without paying, frequently targeting backups and key documentation required for recovery to force you into paying extortion demands. 
 
@@ -44,7 +44,7 @@ Most organizations don’t protect backup and restoration procedures against thi
 >This preparation also improves resilience to natural disasters and rapid attacks like WannaCry and (Not)Petya.
 >
 
-[Backup and restore plan to protect against ransomware](https://docs.microsoft.com/security/compass/backup-plan-to-protect-against-ransomware) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations.
+[Backup and restore plan to protect against ransomware](https://docs.microsoft.com/security/compass/backup-plan-to-protect-against-ransomware) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations using Azure Backup and other Microsoft cloud services.
 
 ### Program and project member accountabilities
 
@@ -59,8 +59,6 @@ This table describes the overall protection of your data from ransomware in term
 |  | Security Architecture  | Advise on configuration and standards |
 | | Security Policy and Standards | Update standards and policy documents |
 | | Security Compliance Management | Monitor to ensure compliance |
-|  |  |  |
-
 
 ### Deployment objectives
 
@@ -69,11 +67,11 @@ Meet these deployment objectives to to secure your backup infrastructure.
 | Done | Deployment objective | Owner |
 |:-------|:-------|:-----|:--------|
 | <input type="checkbox" /> | 1. Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | IT architect or implementer |
-| <input type="checkbox" /> | 2. Establish process to backup all critical systems automatically on a regular schedule and monitor adherence. | IT backup administrator  |
+| <input type="checkbox" /> | 2. Establish process to backup all critical systems automatically on a regular schedule and monitor adherence. | IT backup administrator |
 | <input type="checkbox" /> | 3. Establish process and schedule to regularly exercise your business continuity/disaster recovery (BC/DR) plan. | IT architect |
-| <input type="checkbox" /> | 4. Include protecting backups against deliberate erasure and encryption in your backup plan: <br><br> - Strong Protection – Require out of band steps (such as multifactor authentication or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site.  | IT backup administrator |
+| <input type="checkbox" /> | 4. Include protecting backups against deliberate erasure and encryption in your backup plan: <br><br> - Strong Protection – Require out-of-band steps (such as multifactor authentication or a PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site.  | IT backup administrator |
 
 ## Next step
 
-Continue the user access and productivity initiative with [Step 3. Data](data-compliance-gov-data.md).
+Continue the data, compliance, and governance initiative with [Step 3. Data](data-compliance-gov-data.md).
 

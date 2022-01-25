@@ -100,8 +100,6 @@ Perform these implementation steps to meet the **Protect your data** deployment 
 | <input type="checkbox" /> | 5. Discover, label, and protect sensitive items that reside in on-premises data stores. | Data Security Engineer | [Azure Information Protection (AIP) unified labeling scanner](https://docs.microsoft.com//azure/information-protection/deploy-aip-scanner-configure-install) |
 | <input type="checkbox" /> | 6. Extend your sensitivity labels to Azure resources Azure Purview | Data Security Engineer | [Labeling in Azure Purview](https://docs.microsoft.com//purview/create-sensitivity-label) |
 
-
-
 <a id="prevent"></a>
 ### 3. Prevent data loss
 

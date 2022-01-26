@@ -344,7 +344,7 @@ This can also be manifested by trolls using certain target words in a
 way that the AI will ban them, effectively denying service to legitimate
 users with a name matching a “banned” word.
 
-![](./media/threat-modeling-aiml/tm1.jpg)[24]
+![A chart showing increasing attack difficulty when complexity is increasing and capability is decreasing.](./media/threat-modeling-aiml/tm1.jpg)[24]
 
 ## Variant \#1a: Targeted misclassification
 
@@ -359,7 +359,7 @@ system classifies it as a legitimate class.
 
 #### Examples
 
-![](./media/threat-modeling-aiml/tm2.jpg)[6]
+![A diagram showing that a photo of targeted noise is incorrectly classified by an image classifier resulting in a photo of a bus.](./media/threat-modeling-aiml/tm2.jpg)[6]
 
 #### Mitigations
 
@@ -380,7 +380,7 @@ system classifies it as a legitimate class.
     learning model on the adversarial examples. In contrast, the natural
     inputs are robust in attribution space.
 
-    ![](./media/threat-modeling-aiml/tm3.jpg)[20]
+    ![An illustration showing two approaches to determining how input values 9,9 becomes misclassified as 9,4.](./media/threat-modeling-aiml/tm3.jpg)[20]
 
 These approaches can make machine learning models more resilient to
 adversarial attacks because fooling this two-layer cognition system
@@ -449,7 +449,7 @@ Proactive/Protective Actions
     function of the classifier smoother (increasing the input margin).
     This includes correct classifications with lower confidence rates.
 
-![](./media/threat-modeling-aiml/tm4.jpg)
+![A graph showing the change in the slope of the prediction function with adversarial training.](./media/threat-modeling-aiml/tm4.jpg)
 
 Invest in developing monotonic classification with selection of
 monotonic features. This ensures that the adversary will not be able
@@ -468,9 +468,9 @@ class [13].
     and selecting a threshold value, system can output the correct
     prediction for legitimate examples and rejects adversarial inputs.
 
-    ![](./media/threat-modeling-aiml/tm5.jpg)
+    ![An illustration showing the result of feature squeezing.](./media/threat-modeling-aiml/tm5.jpg)
 
-    ![](./media/threat-modeling-aiml/tm6.jpg)[18]
+    ![A diagram showing the flow of input through a feature-squeezing framework.](./media/threat-modeling-aiml/tm6.jpg)[18]
 
 - Certified Defenses against Adversarial Examples [22]: The authors
     propose a method based on a semi-definite relaxation that outputs a
@@ -504,7 +504,7 @@ classification being used in the future [3].
 
 ##### Examples
 
-![](./media/threat-modeling-aiml/tm7.jpg)
+![Two photos of a cat. The photo on the left is classified as a tabby cat. After adversarial perturbation, photo on the right is classified as guacamole. ](./media/threat-modeling-aiml/tm7.jpg)
 
 ##### Mitigations
 
@@ -528,7 +528,7 @@ indistinguishable from legitimate alerts [3].
 
 ##### Examples
 
-![](./media/threat-modeling-aiml/tm8.jpg)
+![Two photos of a stop sign. The photo on the left shows a confidence level of 96%. After adversarial perturbation, the photo on the right shows a confidence level of 13%.](./media/threat-modeling-aiml/tm8.jpg)
 
 ##### Mitigations
 
@@ -646,7 +646,7 @@ to the classification matching the target [4].
 
 ##### Examples
 
-![](./media/threat-modeling-aiml/tm9.jpg)[4]
+![Two images of a person, the image on the left is blurry and the image on the right is clear.](./media/threat-modeling-aiml/tm9.jpg)[4]
 
 ##### Mitigations
 
@@ -680,7 +680,7 @@ model’s training dataset or not[1]. Researchers were able to predict a
 patient’s main procedure (e.g: Surgery the patient went through) based
 on the attributes (e.g: age, gender, hospital) [1].
 
-![](./media/threat-modeling-aiml/tm10.jpg)[12]
+![An illustration that shows the complexity of a membership inference attack, it is difficult to determine if an attacker is altering data from a training set. From left to right, arrows show that data flows from input, to a prediction box. An arrow flows from the prediction box with classification information. Another arrow shows that data flows back and forth between prediction and the model. On the right side of the illustration, an arrow indicates that data flows to a training box and then to the same model as prediction data.](./media/threat-modeling-aiml/tm10.jpg)[12]
 
 ##### Mitigations
 
@@ -900,15 +900,15 @@ mis-classifications, such as classifying a certain virus as
 non-malicious[1]. This is a risk in ML-as-a-Service model-generation
 scenarios.
 
-![](./media/threat-modeling-aiml/tm11.jpg)[12]
+![A diagram showing an example of how mis-classifications can adversely affect training data. The training data on the left shows a correctly classified stop sign. The training data on the right was poisoned and the stop sign is labeled as a speed limit. The photo at the bottom shows a stop sign labelled as a speed limit sign. ](./media/threat-modeling-aiml/tm11.jpg)[12]
 
 ##### Traditional Parallels
 
--   Compromise of third-party security dependency
+- Compromise of third-party security dependency
 
--   Compromised Software Update mechanism
+- Compromised Software Update mechanism
 
--   Certificate Authority compromise
+- Certificate Authority compromise
 
 ##### Mitigations
 

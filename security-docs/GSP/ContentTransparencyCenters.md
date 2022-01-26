@@ -17,7 +17,7 @@ Microsoft is committed to providing an unprecedented level of transparency throu
  - Brazil
  - China
  
-![](../media/security-gsp/contentTransparencyCenters.png)
+![Photo showing a corner view of a transparency center.](../media/security-gsp/contentTransparencyCenters.png)
 
 ## A Secure Facility for Inspection and Analysis
 

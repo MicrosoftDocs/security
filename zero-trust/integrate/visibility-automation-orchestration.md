@@ -32,7 +32,7 @@ Microsoft Sentinel has many integrations with partner solutions, including other
 
 The following guidance will help you create solutions that integrate with Microsoft Sentinel.
 
-**What you can build**: [Integration Opportunities Guide for Microsoft Sentinel](https://azure.microsoft.com/resources/integration-opportunities-with-azure-sentinel-september-2021/)
+**What you can build**: [Integration Opportunities Guide for Microsoft Sentinel](https://azure.microsoft.com/resources/integration-opportunities-with-microsoft-sentinel-december-2021/)
 
 Partners can engage with Microsoft Sentinel in several key scenarios to deliver mutual customer value. This article outlines these scenario opportunities and technical integrations, how to decide what integrations to build, how to get started, how to deliver to Microsoft Sentinel customers, and finally how to promote Microsoft Sentinel Integrations.
 

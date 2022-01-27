@@ -344,7 +344,11 @@ This can also be manifested by trolls using certain target words in a
 way that the AI will ban them, effectively denying service to legitimate
 users with a name matching a “banned” word.
 
+<<<<<<< HEAD
 ![A diagram showing increasing attack difficulty when complexity is increasing and capability is decreasing.](./media/threat-modeling-aiml/tm1.jpg)[24]
+=======
+![Diagram that shows increasing attack difficulty when complexity is increasing and capability is decreasing.](./media/threat-modeling-aiml/tm1.jpg)[24]
+>>>>>>> 389cada1e243e894274a1702cd080e91fe3719d2
 
 ## Variant \#1a: Targeted misclassification
 
@@ -504,7 +508,11 @@ classification being used in the future [3].
 
 ##### Examples
 
+<<<<<<< HEAD
 ![Two photos of a cat. One photo is classified as a tabby cat. After adversarial perturbation, the other photo is classified as guacamole. ](./media/threat-modeling-aiml/tm7.jpg)
+=======
+![Two photos of a cat. One photo is classified as a tabby cat. After adversarial perturbation, the other photo is classified as guacamole.](./media/threat-modeling-aiml/tm7.jpg)
+>>>>>>> 389cada1e243e894274a1702cd080e91fe3719d2
 
 ##### Mitigations
 
@@ -528,7 +536,11 @@ indistinguishable from legitimate alerts [3].
 
 ##### Examples
 
+<<<<<<< HEAD
 ![Two photos of a stop sign. One photo shows a confidence level of 96 percent. After adversarial perturbation, the other photo shows a confidence level of 13 percent.](./media/threat-modeling-aiml/tm8.jpg)
+=======
+![Two photos of a stop sign. The photo on the left shows a confidence level of 96 percent. After adversarial perturbation, the photo on the right shows a confidence level of 13 percent.](./media/threat-modeling-aiml/tm8.jpg)
+>>>>>>> 389cada1e243e894274a1702cd080e91fe3719d2
 
 ##### Mitigations
 
@@ -967,7 +979,7 @@ vulnerability.
 
 [1] Failure Modes in Machine Learning, Ram Shankar Siva
 Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover,
-</security/failure-modes-in-machine-learning>
+[https://docs.microsoft.com/security/failure-modes-in-machine-learning](/security/failure-modes-in-machine-learning)
 
 [2] AETHER Security Engineering Workstream, Data Provenance/Lineage
 v-team

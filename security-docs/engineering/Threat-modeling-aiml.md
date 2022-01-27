@@ -528,7 +528,7 @@ indistinguishable from legitimate alerts [3].
 
 ##### Examples
 
-![Two photos of a stop sign. The photo on the left shows a confidence level of 96%. After adversarial perturbation, the photo on the right shows a confidence level of 13%.](./media/threat-modeling-aiml/tm8.jpg)
+![Two photos of a stop sign. The photo on the left shows a confidence level of 96 percent. After adversarial perturbation, the photo on the right shows a confidence level of 13 percent.](./media/threat-modeling-aiml/tm8.jpg)
 
 ##### Mitigations
 

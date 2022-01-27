@@ -504,7 +504,7 @@ classification being used in the future [3].
 
 ##### Examples
 
-![Two photos of a cat. The photo on the left is classified as a tabby cat. After adversarial perturbation, photo on the right is classified as guacamole. ](./media/threat-modeling-aiml/tm7.jpg)
+![Two photos of a cat. One photo is classified as a tabby cat. After adversarial perturbation, the other photo is classified as guacamole.](./media/threat-modeling-aiml/tm7.jpg)
 
 ##### Mitigations
 

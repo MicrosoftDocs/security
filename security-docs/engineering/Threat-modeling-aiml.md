@@ -344,7 +344,7 @@ This can also be manifested by trolls using certain target words in a
 way that the AI will ban them, effectively denying service to legitimate
 users with a name matching a “banned” word.
 
-![A chart showing increasing attack difficulty when complexity is increasing and capability is decreasing.](./media/threat-modeling-aiml/tm1.jpg)[24]
+![A diagram showing increasing attack difficulty when complexity is increasing and capability is decreasing.](./media/threat-modeling-aiml/tm1.jpg)[24]
 
 ## Variant \#1a: Targeted misclassification
 
@@ -504,7 +504,7 @@ classification being used in the future [3].
 
 ##### Examples
 
-![Two photos of a cat. The photo on the left is classified as a tabby cat. After adversarial perturbation, photo on the right is classified as guacamole. ](./media/threat-modeling-aiml/tm7.jpg)
+![Two photos of a cat. One photo is classified as a tabby cat. After adversarial perturbation, the other photo is classified as guacamole. ](./media/threat-modeling-aiml/tm7.jpg)
 
 ##### Mitigations
 
@@ -528,7 +528,7 @@ indistinguishable from legitimate alerts [3].
 
 ##### Examples
 
-![Two photos of a stop sign. The photo on the left shows a confidence level of 96%. After adversarial perturbation, the photo on the right shows a confidence level of 13%.](./media/threat-modeling-aiml/tm8.jpg)
+![Two photos of a stop sign. One photo shows a confidence level of 96 percent. After adversarial perturbation, the other photo shows a confidence level of 13 percent.](./media/threat-modeling-aiml/tm8.jpg)
 
 ##### Mitigations
 
@@ -646,7 +646,7 @@ to the classification matching the target [4].
 
 ##### Examples
 
-![Two images of a person, the image on the left is blurry and the image on the right is clear.](./media/threat-modeling-aiml/tm9.jpg)[4]
+![Two images of a person. One image is blurry and the other image is clear.](./media/threat-modeling-aiml/tm9.jpg)[4]
 
 ##### Mitigations
 
@@ -680,7 +680,7 @@ model’s training dataset or not[1]. Researchers were able to predict a
 patient’s main procedure (e.g: Surgery the patient went through) based
 on the attributes (e.g: age, gender, hospital) [1].
 
-![An illustration that shows the complexity of a membership inference attack, it is difficult to determine if an attacker is altering data from a training set. From left to right, arrows show that data flows from input, to a prediction box. An arrow flows from the prediction box with classification information. Another arrow shows that data flows back and forth between prediction and the model. On the right side of the illustration, an arrow indicates that data flows to a training box and then to the same model as prediction data.](./media/threat-modeling-aiml/tm10.jpg)[12]
+![An illustration showing the complexity of a membership inference attack. Arrows show the flow and relationship between training data prediction data.](./media/threat-modeling-aiml/tm10.jpg)[12]
 
 ##### Mitigations
 
@@ -900,7 +900,7 @@ mis-classifications, such as classifying a certain virus as
 non-malicious[1]. This is a risk in ML-as-a-Service model-generation
 scenarios.
 
-![A diagram showing an example of how mis-classifications can adversely affect training data. The training data on the left shows a correctly classified stop sign. The training data on the right was poisoned and the stop sign is labeled as a speed limit. The photo at the bottom shows a stop sign labelled as a speed limit sign. ](./media/threat-modeling-aiml/tm11.jpg)[12]
+![An example showing how mis-classifications can adversely affect training data. One photo is a correctly classified stop sign. After poisoning, the second photo is labeled as a speed limit sign.](./media/threat-modeling-aiml/tm11.jpg)[12]
 
 ##### Traditional Parallels
 

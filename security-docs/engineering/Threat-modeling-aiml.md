@@ -646,7 +646,7 @@ to the classification matching the target [4].
 
 ##### Examples
 
-![Two images of a person, the image on the left is blurry and the image on the right is clear.](./media/threat-modeling-aiml/tm9.jpg)[4]
+![Two images of a person. One image is blurry and the other image is clear.](./media/threat-modeling-aiml/tm9.jpg)[4]
 
 ##### Mitigations
 

@@ -344,7 +344,7 @@ This can also be manifested by trolls using certain target words in a
 way that the AI will ban them, effectively denying service to legitimate
 users with a name matching a “banned” word.
 
-![A chart showing increasing attack difficulty when complexity is increasing and capability is decreasing.](./media/threat-modeling-aiml/tm1.jpg)[24]
+![Diagram that shows increasing attack difficulty when complexity is increasing and capability is decreasing.](./media/threat-modeling-aiml/tm1.jpg)[24]
 
 ## Variant \#1a: Targeted misclassification
 

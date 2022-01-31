@@ -45,7 +45,7 @@ The following best practices are key to keeping your apps secure. We have also p
 
 **Become a** [**verified publisher**](/azure/active-directory/develop/publisher-verification-overview). When an application is marked as publisher verified, it means that the publisher has verified their identity using a Microsoft Partner Network account that has completed an established verification process. This is great for developers of multi-tenant apps, as it helps build trust with IT administrators in customer tenants.
 
-**Use** [**managed identities**](/azure/active-directory/managed-identities-azure-resources/overview) when accessing resources in Azure. Managed identities are one of key  elements to have less shared secrets in the code and those should be used instead of service principals. You do not need either anymore remember to roll your service principal secrets from time to time. While using managed identities, remember to follow least privilege principal when giving permissions to resources.
+**Use** [**managed identities**](/azure/active-directory/managed-identities-azure-resources/overview) when accessing resources in Azure. Managed identities are one of key elements to have less shared secrets in the code and those should be used instead of service principals. You do not need either anymore remember to roll your service principal secrets from time to time. While using managed identities, remember to follow least privilege principal when giving permissions to resources.
 
 ## Next steps
 

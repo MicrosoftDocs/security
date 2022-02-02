@@ -190,7 +190,7 @@ security dependencies for critical impact accounts
     -   Native Azure AD Accounts -*Create Native Azure AD Accounts that are
         not synchronized with on-premises active directory
 
-    -   Synchronize from On Premises Active Directory (Not Recommended see [Don’t synchronize on-premises admin accounts to cloud identity providers](/azure/architecture/security/identity#dont-synchronize-on-premises-admin-accounts-to-cloud-identity-providers))- Leverage existing accounts hosted in the on premises active
+    -   Synchronize from On Premises Active Directory (Not Recommended see [Don’t synchronize on-premises admin accounts to cloud identity providers](identity#dont-synchronize-on-premises-admin-accounts-to-cloud-identity-providers))- Leverage existing accounts hosted in the on premises active
         directory.
 
 -   **Workstations** – Choose how you will manage and secure the workstations

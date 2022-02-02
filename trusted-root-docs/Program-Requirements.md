@@ -23,7 +23,7 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 ## 2. Continuing Program Requirements
 ### Audit Requirements
 
-1.  Program Participants must provide to Microsoft evidence of a Qualified Audit (see <https://aka.ms/auditreqs>) for each root, unconstrained subordinate CA, , and cross-signed certificate, before conducting commercial operations and thereafter on an annual basis.
+1.  Program Participants must provide to Microsoft evidence of a Qualifying Audit (see <https://aka.ms/auditreqs>) for each root, unconstrained subordinate CA, , and cross-signed certificate, before conducting commercial operations and thereafter on an annual basis.
 2.  Program Participants must assume responsibility to ensure that all unconstrained subordinate CAs and cross-signed certificates meet the Program Audit Requirements.
 3. CAs must publicly disclose all audit reports for unconstrained subordinate CAs.
 

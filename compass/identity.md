@@ -23,7 +23,7 @@ A single authoritative source for identities increases clarity and consistency f
 
 For Azure, designate a single Azure AD tenant as the authoritative source for your organization's accounts.
 
-For more information, see [What is hybrid identity?](/azure/active-directory/hybrid/whatis-hybrid-identity).
+For more information, see [What is hybrid identity?](/azure/active-directory/hybrid/whatis-hybrid-identity)
  
 
 ## Synchronized identity systems
@@ -32,12 +32,9 @@ For more information, see [What is hybrid identity?](/azure/active-directory/hyb
 
 Consistency of identities across cloud and on-premises will reduce human errors and resulting security risk. Teams managing resources in both environments need a consistent authoritative source to achieve security assurances.
 
-For Azure, synchronize Azure AD with your existing authoritative on premises Active Directory Domain Services (AD DS) using [What is hybrid identity?](/azure/active-directory/hybrid/whatis-hybrid-identity).
+For Azure, synchronize Azure AD with your existing authoritative on premises Active Directory Domain Services (AD DS) using [hybrid identity](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 This is also required for an Office 365 migration, so it is often already done before Azure migration and development projects begin. 
-
-Note that administrator accounts should be excepted from synchronization as described in [Don’t synchronize on-premises admin accounts to cloud identity providers](/azure/architecture/security/identity#dont-synchronize-on-premises-admin-accounts-to-cloud-identity-providers) and 
-[Critical impact account dependencies](/azure/architecture/security/critical-impact-accounts#critical-impact-admin-dependencies--accountworkstation).
 
 ## Cloud provider identity source for third parties
 
@@ -48,8 +45,8 @@ This reduces risk by granting the appropriate level of access to external entiti
 For example, these capabilities natively integrate into the same Azure AD identity and permission model used by Azure and Office 365:
 
 - [Azure AD](/azure/active-directory/) for employees and enterprise resources.
-- [Azure AD B2B](/azure/active-directory/b2b/) for business partners.
-- [Azure AD B2C](/azure/active-directory-b2c/) customers or citizens.
+- [Azure AD B2B](/azure/active-directory/external-identities/what-is-b2b) for business partners.
+- [Azure AD B2C](/azure/active-directory-b2c/overview) customers or citizens.
 
 For more information, see the [Azure AD federation compatibility list](/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
 
@@ -57,7 +54,7 @@ For more information, see the [Azure AD federation compatibility list](/azure/ac
 
 **Best practice:** All users should be converted to use passwordless authentication or multi-factor authentication (MFA) over time. 
 
-The details of this recommendation are in the administration section [Passwordless Or multi-factor authentication for admins](/azure/architecture/security/critical-impact-accounts#passwordless-or-multi-factor-authentication-for-admins) 
+The details of this recommendation are in the administration section [passwordless or multi-factor authentication for admins](/azure/active-directory/authentication/concept-authentication-passwordless) 
 
 The same recommendation applies to all users but should be applied first and strongest to accounts with administrative privileges.
 
@@ -81,11 +78,11 @@ This mitigates the risk of an adversary pivoting to full control of on-premises 
 
 For Azure, don’t synchronize accounts to Azure AD that have high privileges in your existing AD DS. This is blocked by default in the default Azure AD Connect configuration, so you only need to confirm you haven’t customized this configuration.
 
-This is related to the [critical impact account dependencies](/azure/architecture/security/critical-impact-accounts#critical-impact-admin-dependencies--accountworkstation) guidance in the administration section that mitigates the inverse risk of pivoting from on-premises to cloud assets.
+This is related to the [critical impact account dependencies](/security/compass/critical-impact-accounts) guidance that mitigates the inverse risk of pivoting from on-premises to cloud assets.
 
 ## Modern password protection
 
-**Best practice:** Provide modern and effective protections for accounts that cannot go passwordless ([Passwordless Or multi-factor authentication for admins](/azure/architecture/security/critical-impact-accounts#passwordless-or-multi-factor-authentication-for-admins)).
+**Best practice:** Provide modern and effective protections for accounts that cannot go passwordless ([passwordless or multi-factor authentication for admins](/azure/active-directory/authentication/concept-authentication-passwordless)).
 
 Legacy identity providers mostly checked to make sure passwords had a good mix of character types and minimum length, but we have learned that these controls in practice led to passwords with less entropy that could be cracked easier:
 
@@ -99,12 +96,12 @@ Additionally, synchronizing passwords to the cloud to support these checks also 
 
 For Azure, enable modern protections in Azure AD with these steps:
 
-1.  [Configure Azure AD Connect to synchronize password hashes](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
+1.  [Implement password hash synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 2.  Choose whether to automatically remediate these issues or manually remediate
     them based on a report:
 
-    a.  **Automatic Enforcement -** Automatically remediate high risk passwords with Conditional Access [leveraging Azure AD Identity Protection risk assessments](/azure/active-directory/identity-protection/overview)
+    a.  **Automatic Enforcement -** Automatically remediate high risk passwords with Conditional Access [leveraging Azure AD Identity Protection risk assessments](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)
 
     b.  **Report & Manually Remediate -** View reports and manually remediate
         accounts
@@ -136,7 +133,7 @@ For example, Azure AD can be used to authenticate:
 
 **Best practice:** Authentication for all users should include measurement and enforcement of key security attributes to support a Zero Trust strategy. 
 
-The details of this recommendation are in the administration section [Enforce conditional access for ADMINS (Zero Trust)](/azure/architecture/security/critical-impact-accounts#enforce-conditional-access-for-admins---zero-trust). The same recommendation applies to all users, but should be applied first to accounts with administrative privileges.
+The details of this recommendation are in [Common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies). The same recommendation applies to all users, but should be applied first to accounts with administrative privileges.
 
 You can also reduce use of passwords by applications using [Managed Identities](/azure/active-directory/managed-identities-azure-resources/overview) to grant access to resources in Azure.
 

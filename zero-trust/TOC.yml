@@ -46,7 +46,7 @@
     - name: Identity
       expanded: false
       href: develop/identity.md
-- name: Zero Trust Rapid Modernization Plan (RaMP)
+- name: Rapid Modernization Plan (RaMP)
   expanded: false
   items: 
     - name: Overview

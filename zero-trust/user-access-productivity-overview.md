@@ -1,6 +1,6 @@
 ---
 title: User access and productivity
-description: User access and productivity initiative of RaMP for Zero Trust
+description: User access and productivity initiative for the Zero Trust Rapid Modernization Plan (RaMP).
 ms.service: security
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -10,7 +10,14 @@ ms.topic: conceptual
 
 # User access and productivity
 
-The first initiative at many organizations is focused on security visibility and control for newer productivity resources (cloud and mobile) and assets outside of the traditional corporate network security perimeter. 
+To be productive, your employees (users) must be able to use:
+
+- Their account credentials to verify their identity.
+- Their endpoint (device), such as a PC, tablet, or phone.
+- The applications you have provided them to do their jobs. 
+- A network over which traffic flows between them and either on-premises or cloud applications.
+
+Each one of these elements are the targets of attackers and must be protected with the "never trust, always verify" central principle of Zero Trust.
 
 ## Next step
 

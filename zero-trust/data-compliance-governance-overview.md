@@ -14,7 +14,7 @@ Data is the lifeblood and intrinsic value of many organizations, even for those 
 
 - Protected from internal and external attackers who would profit from its content or the leveraging and extortion of its value (ransomware).
 - Compliant with organization policies and governmental regulations.
-- Governed over time to ensure its protection and compliance and for a planned obsolesence.
+- Governed over time to ensure its protection and compliance and for a planned obsolescence.
 
 Use these steps in the Zero Trust Rapid Modernization Plan (RaMP) for your data:
 

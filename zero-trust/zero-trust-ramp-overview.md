@@ -15,7 +15,7 @@ As an alternative to [deployment guidance](./deploy/overview.md) that provides d
 RaMP guidance takes a project management and checklist approach:
 
 - By providing a suggested mapping of key stakeholders, implementers, and their accountabilities, you can more quickly organize an internal project and define the tasks and owners to drive them to conclusion.
-- By providing a checklist of deployment objectives and implementation steps, you can see the bigger picture of infrastructure requirements and track your progess.
+- By providing a checklist of deployment objectives and implementation steps, you can see the bigger picture of infrastructure requirements and track your progress.
 
 <!--
 

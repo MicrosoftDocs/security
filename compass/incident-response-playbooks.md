@@ -41,10 +41,12 @@ Each playbook includes:
 - **Checklist:** A list of tasks for the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done.
 - **Investigation steps:** Detailed step-by-step guidance for the specific investigation.
 
+Also see [Microsoft’s DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md) for information on how the Detection and Response Team (DART) at Microsoft deals with ransomware attacks.
+
 ## Incident response resources
 
 - [Overview](incident-response-overview.md) for Microsoft security products and resources for new-to-role and experienced analysts
 - [Planning](incident-response-planning.md) for your Security Operations Center (SOC)
 - [Process](incident-response-process.md) for incident response process recommendations and best practices
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
-- [Azure Sentinel](/azure/sentinel/investigate-cases) incident response
+- [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response

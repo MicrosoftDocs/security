@@ -54,7 +54,7 @@ Please refer to the [definitions of terms](#Definition_of_Terms) in this section
 <ul>
 <li><p>Denial of service: Must be &quot;easy to exploit&quot; by sending a small amount of data or be otherwise quickly induced</p>
 <ul>
-<li><p> Anonymous</p>
+<li><p> Anonymous</p>
 <ul>
 <li><p>Persistent DoS</p>
 <ul>
@@ -489,16 +489,16 @@ reaching less than 10 percent of users.
 Computer that is configured to run software that awaits and fulfills
 requests from client processes that run on other computers.  
 
-      **Critical.** *A security vulnerability that would be rated as
+      **Critical.** *A security vulnerability that would be rated as
 having the highest potential for damage.*  
 
-      **Important.** *A security vulnerability that would be rated as
+      **Important.** *A security vulnerability that would be rated as
 having significant potential for damage, but less than Critical.*  
 
-      **Moderate.** *A security vulnerability that would be rated as
+      **Moderate.** *A security vulnerability that would be rated as
 having moderate potential for damage, but less than Important.*  
 
-      **Low.** *A security vulnerability that would be rated as having
+      **Low.** *A security vulnerability that would be rated as having
 low potential for damage.*  
 
 **targeted information disclosure**  
@@ -546,7 +546,7 @@ DoS.
 
 ## Denial of Service (Server) Matrix
 
-| **Authenticated vs. Anonymous attack** | **Default/Common vs. Scenario** | **Temporary DoS vs. Permanent**  | **Rating** |
+| **Authenticated vs. Anonymous attack** | **Default/Common vs. Scenario** | **Temporary DoS vs. Permanent**  | **Rating** |
 | -------------------------------------- | ------------------------------- | -------------------------------- | ---------- |
 | Authenticated                          | Default/Common                  | Permanent                        | Moderate   |
 | Authenticated                          | Default/Common                  | Temporary DoS with amplification | Moderate   |

@@ -47,15 +47,13 @@ Another key component in the assessment of threats is incorporating known threat
 
 In the [infrastructure](https://aka.ms/ZTInfrastructure) pillar, time was spent on addressing vulnerabilities. If a system is known to be vulnerable and a threat took advantage of that vulnerability, this is something that could be detected, investigated, and remediated.
 
-In order to use these tactics to manage threats, you should have a central console to allow SOC administrators to detect, investigate, remediate, hunt, utilize threat intelligence, understand known vulnerabilities, lean on threat experts and block threats across any of the six pillars. The tools needed to support these phases work best if
-converged into a single workflow, providing a seamless experience that increases the effectiveness of the SOC analyst.
+In order to use these tactics to manage threats, you should have a central console to allow SOC administrators to detect, investigate, remediate, hunt, utilize threat intelligence, understand known vulnerabilities, lean on threat experts and block threats across any of the six pillars. The tools needed to support these phases work best if converged into a single workflow, providing a seamless experience that increases the effectiveness of the SOC analyst.
 
-Security Operation Centers often deploy a combination of SIEM and SOAR technologies to collect, detect, investigate, and respond to threats. Microsoft offers Azure Sentinel as its SIEM-as-a-service offering. Azure Sentinel ingests all Microsoft Defender for Identity and third-party data.
+Security Operation Centers often deploy a combination of SIEM and SOAR technologies to collect, detect, investigate, and respond to threats. Microsoft offers Microsoft Sentinel as its SIEM-as-a-service offering. Microsoft Sentinel ingests all Microsoft Defender for Identity and third-party data.
 
-Microsoft Threat Protection (MTP), a key feed into Azure Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context- aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration
-tools, identities, and applications.
+Microsoft Threat Protection (MTP), a key feed into Microsoft Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context- aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration tools, identities, and applications.
 
-It is through this hierarchy that we enable our customers to maximize their focus. Though context-awareness and automated remediation, MTP can detect and stop many threats without adding additional alert-fatigue to already overloaded SOC personnel. Advanced hunting inside of MTP brings that context to the hunt to focus on many key attack points. And hunting and orchestration across the entire ecosystem through Azure Sentinel provides the ability to gain the right visibility into all aspects of a heterogeneous environment, all while minimizing the cognitive overload of the operator.
+It is through this hierarchy that we enable our customers to maximize their focus. Though context-awareness and automated remediation, MTP can detect and stop many threats without adding additional alert-fatigue to already overloaded SOC personnel. Advanced hunting inside of MTP brings that context to the hunt to focus on many key attack points. And hunting and orchestration across the entire ecosystem through Microsoft Sentinel provides the ability to gain the right visibility into all aspects of a heterogeneous environment, all while minimizing the cognitive overload of the operator.
 
 ## Visibility, automation, and orchestration Zero Trust deployment objectives
 
@@ -132,16 +130,16 @@ Follow these steps:
 3.  Gradually transition to automatic approval for all devices to reduce the time to detection and response.
 
 
-#### Link Microsoft data connectors and relevant third-party products to Azure Sentinel
+#### Link Microsoft data connectors and relevant third-party products to Microsoft Sentinel
 
-In order to gain visibility into the incidents that result from deploying a Zero Trust model, it is important to connect MTP, other Microsoft data connectors, and relevant third party products to [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.  
+In order to gain visibility into the incidents that result from deploying a Zero Trust model, it is important to connect MTP, other Microsoft data connectors, and relevant third party products to [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.  
   
 As part of the data connection process, relevant analytics can be enabled to trigger incidents and workbooks can be created for a graphical representation of the data over time.
 
 
-#### Link threat intelligence data to Azure Sentinel
+#### Link threat intelligence data to Microsoft Sentinel
 
-Although machine learning and fusion analytics are provided out of the box, it is also beneficial to ingest threat intelligence data into Azure Sentinel to help identify events that relate to known bad entities.
+Although machine learning and fusion analytics are provided out of the box, it is also beneficial to ingest threat intelligence data into Microsoft Sentinel to help identify events that relate to known bad entities.
 
 
 <br/><br/>
@@ -162,7 +160,7 @@ Enabling additional controls improves the signal coming in to MTP and Sentinel t
 
 [Microsoft Defender for Identity](https://www.microsoft.com/security/business/threat-protection/identity-defender)
 
-[Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
+[Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
 
 **Microsoft 365**
 

@@ -51,7 +51,7 @@ Verify *mailbox auditing on by default* is turned on. To make sure that mailbox 
 Get-OrganizationConfig | Format-List AuditDisabled
 ```
 
-The value **False** indicates that mailbox auditing on by default is enabled for the organization. This *on by default* organizational value overrides the mailbox auditing setting on specific mailboxes. For example, if mailbox auditing is disabled for a mailbox (the *AuditEnabled* property is **False** on the mailbox), the default mailbox actions will still be audited for the mailbox, because mailbox auditing on by default is enabled for the organization.
+The value **False** indicates that mailbox auditing on by default is enabled for the organization. This *on by default* organizational value overrides the mailbox auditing setting on specific mailboxes. For example, if mailbox auditing is disabled for a mailbox (the *AuditEnabled* property is **False** on the mailbox), the default mailbox actions will still be audited for the mailbox, because mailbox auditing on by default is enabled for the organization.
 
 >[!Note]
 >If the tenant was created BEFORE 2019, then you should enable the *mailbox auditing* and *ALL auditing* settings. See how to [enable mailbox auditing](/office365/securitycompliance/enable-mailbox-auditing).
@@ -100,8 +100,8 @@ Since most of the Azure Active Directory (Azure AD) sign-in and audit data will 
 
 We recommend the following roles are enabled for the account you will use to perform the investigation:
 
-- [Global Reader ](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)
-- [Security Reader ](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) 
+- [Global Reader ](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)
+- [Security Reader ](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) 
 - As a last resort, you can always fall back to the role of a [Global Administrator / Company Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)
 
 ### Roles in Microsoft 365 security and compliance center
@@ -118,7 +118,7 @@ If you have implemented the role-based access control (RBAC) in Exchange or if y
 $Perms | foreach {Get-ManagementRoleAssignment -Role $_.Name -Delegating $false | Format-Table -Auto Role,RoleAssigneeType,RoleAssigneeName}
 ```
 
-For more information, see [permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions). 
+For more information, see [permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions). 
 
 ### Microsoft Defender for Endpoint
 
@@ -190,7 +190,7 @@ To install the MSOnline PowerShell module, follow these steps:
 
 Please follow the steps on [how to get the Exchange PowerShell installed with multi-factor authentication (MFA)](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell). You must have access to a tenant, so you can download the Exchange Online PowerShell module from the **Hybrid** tab in the Exchange admin center (EAC).
 
- Once you have configured the required settings, you can proceed with the investigation.
+ Once you have configured the required settings, you can proceed with the investigation.
 
 ### Install the Azure AD Incident Response module
 
@@ -248,7 +248,7 @@ You can also download the phishing and other incident playbook checklists as an 
 
 ## Investigation steps
 
-For this investigation, it is assumed that you either have a sample phishing email, or parts of it like the sender’s address, subject of the email, or parts of the message to start the investigation. Please also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
+For this investigation, it is assumed that you either have a sample phishing email, or parts of it like the sender’s address, subject of the email, or parts of the message to start the investigation. Please also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
 
 This playbook is created with the intention that not all Microsoft customers and their investigation teams will have the full Microsoft 365 E5 or Azure AD Premium P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
 
@@ -272,7 +272,7 @@ The following example query returns messages that were received by users between
 (Received:4/13/2016..4/14/2016) AND (Subject:'Action required')
 ```
 
-The following example query returns messages that were sent by *chatsuwloginsset12345@outlook\[.\]com* and that contain the exact phrase "*Update your account information*" in the subject line.
+The following example query returns messages that were sent by *chatsuwloginsset12345@outlook\[.\]com* and that contain the exact phrase "*Update your account information*" in the subject line.
 
 ```SearchFilter
 (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
@@ -280,7 +280,7 @@ The following example query returns messages that were sent by *chatsuwloginsse
 
 For more details, see how to [search for and delete messages in your organization](/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
 
-###  Use the Search-Mailbox cmdlet
+###  Use the Search-Mailbox cmdlet
 
 You can use the `Search-mailbox` cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.  
 
@@ -300,7 +300,7 @@ Get-Mailbox | Search-Mailbox -SearchQuery 'InvoiceUrgent vote' -TargetMailbox "I
 
 See how to check whether [delegated access is configured on the mailbox](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/DumpDelegatesandForwardingRules.ps1).
 
-To create this report, run a small PowerShell script that gets a list of all your users. Then, use the Get-MailboxPermission cmdlet to create a CSV file of all the mailbox delegates in your tenancy.
+To create this report, run a small PowerShell script that gets a list of all your users. Then, use the Get-MailboxPermission cmdlet to create a CSV file of all the mailbox delegates in your tenancy.
 
 Look for unusual names or permission grants. If you see something unusual, contact the mailbox owner to check whether it is legitimate.
 
@@ -341,7 +341,7 @@ Look for inbox rules that were removed, consider the timestamps in proximity to 
 There are two ways to obtain the list of transport rules.
 
 1. In the Exchange admin center, navigate to **Mail &gt; Flow &gt; Rules**.
-2.  In the Office 365 Security & Compliance Center, navigate to [Dashboard Report Viewer &gt; Security & Compliance - Exchange Transport Rule report](https://protection.office.com/reportv2?id=ETRRuleReport&pivot=Direction) and create a report.
+2.  In the Office 365 Security & Compliance Center, navigate to [Dashboard Report Viewer &gt; Security & Compliance - Exchange Transport Rule report](https://protection.office.com/reportv2?id=ETRRuleReport&pivot=Direction) and create a report.
 
 The summary view of the report shows you a list of all the mail transport rules you have configured for your tenancy. When you select any given rule, you'll see details of the rule in a **Summary** pane to the right, which includes the qualifying criteria and action taken when the rule condition matches.
 
@@ -351,7 +351,7 @@ Look for new rules, or rules that have been modified to redirect the mail to ext
 
 In the Office 365 security & compliance center, navigate to [unified audit log](https://protection.office.com/#/unifiedauditlog). Under **Activities** in the drop-down list, you can filter by **Exchange Mailbox Activities**.
 
-The capability to list compromised users is available in the [Microsoft 365 security & compliance center](/microsoft-365/security/office-365-security/view-email-security-reports#compromised-users-report-new). 
+The capability to list compromised users is available in the [Microsoft 365 security & compliance center](/microsoft-365/security/office-365-security/view-email-security-reports#compromised-users-report-new). 
 
 This report shows activities that could indicate a mailbox is being accessed illicitly. It includes created or received messages, moved or deleted messages, copied or purged messages, sent messages using send on behalf or send as, and all mailbox sign ins. The data includes date, IP address, user, activity performed, the item affected, and any extended details.
 
@@ -472,15 +472,15 @@ You should start by looking at the email headers. For example, in Outlook 365, o
 
 When viewing an email header, it is recommended to copy and paste the header information into an email header analyzer provided by [MXToolbox](https://mxtoolbox.com/EmailHeaders.aspx) or [Azure](https://mha.azurewebsites.net/) for readability.
 
-- **Headers Routing Information:** The routing information provides the route of an email as its being transferred between computers.
-- **Sender Policy Framework (SPF):** An email validation to help prevent/detect spoofing. In the SPF record, you can determine which IP addresses and domains can send emails on behalf of the domain.
+- **Headers Routing Information:** The routing information provides the route of an email as its being transferred between computers.
+- **Sender Policy Framework (SPF):** An email validation to help prevent/detect spoofing. In the SPF record, you can determine which IP addresses and domains can send emails on behalf of the domain.
 - **SPF = Pass:** The SPF TXT record determined the sender is permitted to send on behalf of a domain.
     - SPF = Neutral
     - SPF = Fail: The policy configuration determines the outcome of the message  
         Sender IP
     - SMTP Mail: Validate if this is a legitimate domain
 
-- **Common Values:** Here is a breakdown of the most commonly used and viewed headers, and their values. This is valuable information and you can use them in the **Search** fields in Threat Explorer.
+- **Common Values:** Here is a breakdown of the most commonly used and viewed headers, and their values. This is valuable information and you can use them in the **Search** fields in Threat Explorer.
     - From address
     - Subject
     - Message ID
@@ -513,7 +513,7 @@ The SPF record is stored within a DNS database and is bundled with the DNS looku
 
 ### Check if DKIM is enabled on your custom domains in Office 365
 
-You need to publish two CNAME records for every domain they want to add the domain keys identified mail (DKIM). See how to [use DKIM to validate outbound email sent from your custom domain](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email).
+You need to publish two CNAME records for every domain they want to add the domain keys identified mail (DKIM). See how to [use DKIM to validate outbound email sent from your custom domain](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email).
 
 ### Check for domain-based message authentication, reporting, and conformance (DMARC)
 
@@ -526,9 +526,9 @@ To verify or investigate IP addresses that have been identified from the previou
 - VirusTotal
 - Microsoft Defender for Endpoint
 - Public Sources:
-    - [Ipinfo.io](http://ipinfo.io/) - Has a free option to obtain geo-location
-    - [Censys.io](http://censys.io/) - Has a free option to obtain information about what their passive scans of the internet know
-    - [AbuseIPDB.com](https://www.abuseipdb.com/)  - Has a free option that provides some geolocation
+    - [Ipinfo.io](http://ipinfo.io/) - Has a free option to obtain geo-location
+    - [Censys.io](http://censys.io/) - Has a free option to obtain information about what their passive scans of the internet know
+    - [AbuseIPDB.com](https://www.abuseipdb.com/)  - Has a free option that provides some geolocation
     - Ask Bing and Google - Search on the IP address
 
 ### URL reputation
@@ -538,7 +538,7 @@ You can use any Windows 10 device and Microsoft Edge browser which leverages the
 Here are a few third-party URL reputation examples
 
 - [Trend Micro Site Safety Check](https://global.sitesafety.trendmicro.com/)
-- [Google Transparency Report](https://transparencyreport.google.com/safe-browsing/search?hl=en) 
+- [Google Transparency Report](https://transparencyreport.google.com/safe-browsing/search?hl=en) 
 - [Talos Intelligency](https://talosintelligence.com/reputation_center/)
 
 As you investigate the IP addresses and URLs, look for and correlate IP addresses to indicators of compromise (IOCs) or other indicators, depending on the output or results and add them to a list of sources from the adversary.
@@ -550,10 +550,10 @@ If the user has clicked the link in the email (on-purpose or not), then this act
 You can investigate these events using Microsoft Defender for Endpoint.
 
 1. **VPN/proxy logs**  
-    Depending on the vendor of the proxy and VPN solutions, you need to check the relevant logs. Ideally you are forwarding the events to your SIEM or to Azure Sentinel.
+    Depending on the vendor of the proxy and VPN solutions, you need to check the relevant logs. Ideally you are forwarding the events to your SIEM or to Microsoft Sentinel.
 
 2. **Using Microsoft Defender for Endpoint**  
-    This is the best-case scenario, because you can use our threat intelligence and automated analysis to help your investigation. For more details, see [how to investigate alerts in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/investigate-alerts). 
+    This is the best-case scenario, because you can use our threat intelligence and automated analysis to help your investigation. For more details, see [how to investigate alerts in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/investigate-alerts). 
 
     The **Alert process tree** takes alert triage and investigation to the next level, displaying the aggregated alerts and surrounding evidences that occurred within the same execution context and time period.  
     ![Example of the alert process tree](./media/incident-response-playbook-phishing/alertprocesstree.png)
@@ -569,19 +569,19 @@ You can investigate these events using Microsoft Defender for Endpoint.
 
 ### On what endpoint was the email opened?
 
-The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
+The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
 
 ### Was the attached payload executed?
 
-The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
+The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
 
 ### Was the destination IP / URL touched or opened?
 
-The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
+The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
 
 ### Was malicious code executed?
 
-The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
+The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
 
 ### What sign-ins happened with the account?
 

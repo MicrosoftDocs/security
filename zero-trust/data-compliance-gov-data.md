@@ -10,21 +10,15 @@ ms.topic: conceptual
 
 # Step 3. Data
 
-Your cloud data is a primary target of cyber attackers. Once they have access to your data, they can delete, alter, exfiltrate, and encrypt it, leaving you open to a ransomware attack. You must take the necessary steps to identify it, protect it in place, ensure that does not get deleted or exfiltrated, and configure access permissions to only those with a business purpose.
+Your on-premises and cloud data must be protected from both inadvertent and malicious access. 
+
+- Inadvertent access occurs when a user gains access to data that, based on their roles and responsibilities, they should not have. The result can be unintended data leakage, data destruction, or violations of data security and privacy regulations.
+
+- Malicious access occurs when an external attacker or a malicious insider intentionally tries to access data. Malicious insiders can use your data for profit or to harm your organization. External attackers can delete, alter, exfiltrate, and encrypt your most sensitive data, leaving you open to a ransomware attack.
+
+For both types of attacks, you must take the necessary steps to identify your data, protect it, prevent its destruction or exfiltration, and ensure that only user to only those with a business purpose have access to it.
 
 Protecting your data is part of the "assume breach" Zero Trust principle. Even with all the user account and device protections in place, you must assume that an attacker could find their way in and begin traversing your environment, searching for the most valuable data for your organization.
-
-<!--
-Discover and protect sensitive data (via Cloud App Security, CA App Control, Microsoft Info Protection)
-
-https://docs.microsoft.com/en-us/microsoft-365/compliance/information-protection?view=o365-worldwide
-
-https://docs.microsoft.com/en-us/security/compass/protect-against-ransomware-phase1#data-protection
-
-https://docs.microsoft.com/en-us/microsoft-365/solutions/information-protection-deploy-protect-information?view=o365-worldwide#managing-information-protection-in-microsoft-365
-
-https://review.docs.microsoft.com/en-us/microsoft-365/solutions/protect-against-ransomware-microsoft-365-step5?view=o365-21vianet&branch=Josephd-M365-ransomware-solution
---> 
 
 Therefore, you must:
 

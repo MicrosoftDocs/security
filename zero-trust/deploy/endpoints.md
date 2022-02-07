@@ -164,7 +164,7 @@ Follow these steps:
 
 To allow users an alternative sign-in method that replaces a password, such as PIN, biometric authentication, or fingerprint reader, [enable Windows Hello for Business on users' Windows 10 devices](/mem/intune/protect/windows-hello).
 
-The following Microsoft Intune and Azure AD actions are completed in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home):
+The following Microsoft Intune and Azure AD actions are completed in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home):
 
 Start by creating a Windows Hello for Business enrollment policy in Microsoft Intune.
 
@@ -243,7 +243,7 @@ Once you have identities for all the endpoints accessing corporate resources and
 
 After establishing compliance policies to gate access of corporate resources to trusted endpoints and mobile and desktop [applications](https://aka.ms/ZTApplications), all users can access organizational data on mobile devices and a minimum or maximum operating system version is installed on all devices. Devices are not jail-broken or rooted.
 
-Also, [set remediation rules](/mem/intune/protect/actions-for-noncompliance) for noncompliant devices, such as blocking a noncompliant device or offering the user a grace period to get compliant.
+Also, [set remediation rules](/mem/intune/protect/actions-for-noncompliance) for noncompliant devices, such as blocking a noncompliant device or offering the user a grace period to get compliant.
 
 :::image type="content" source="../media/diagram-steps-box-endpoints-2.png" alt-text="Diagram of the steps within phase 2 of the initial deployment objectives." border="true":::
 
@@ -272,7 +272,7 @@ Follow these steps to [create a compliance policy](/mem/intune/protect/create-co
 
 1.  Configure Microsoft Defender Antimalware.
 
-    :::image type="content" source="../media/screenshot-windows-10-compliance-policy-defender-settings.png" alt-text="Screenshot of Microsoft Defender in Windows 10 compliance policy settings." border="true":::
+    :::image type="content" source="../media/screenshot-windows-10-compliance-policy-defender-settings.png" alt-text="Screenshot of Microsoft Defender for Cloud in Windows 10 compliance policy settings." border="true":::
 
 1.  Configure the required Microsoft Defender for Endpoint machine risk score.
 
@@ -418,7 +418,7 @@ Follow these steps:
 
         :::image type="content" source="../media/screenshot-devices-configuration-profiles-create-profile-windows.png" alt-text="Screenshot of Create a profile in Devices Configuration profiles for Windows 10." border="false":::
 
-3.  Select **Settings &gt; Windows Encryption**.
+3.  Select **Settings &gt; Windows Encryption**.
 
     :::image type="content" source="../media/screenshot-devices-configuration-create-profile-endpoint-protection.png" alt-text="Screenshot of Endpoint protection in Create profile." border="false":::
 
@@ -436,7 +436,7 @@ Follow these steps:
 
         :::image type="content" source="../media/screenshot-devices-configuration-profiles-create-profile-macos.png" alt-text="Screenshot of Create a profile in Devices Configuration profiles for mac OS." border="false":::
 
-3.  Select **Settings &gt; FileVault**. 
+3.  Select **Settings &gt; FileVault**. 
 
     :::image type="content" source="../media/screenshot-create-profile-Endpoint-protection-filevault.png" alt-text="Screenshot of File Vault under Endpoint protection in Create profile." border="false":::
 
@@ -453,41 +453,41 @@ To ensure your data remains safe or contained in a managed app, [create app prot
 
 The APP data protection framework is organized into three distinct configuration levels, with each level building off the previous level:
 
--   **Enterprise basic data protection** (Level 1) ensures that apps are protected with a PIN and encrypted, and performs selective wipe operations. For Android devices, this level validates Android device attestation. This is an entry-level configuration that provides similar data protection control in Exchange Online mailbox policies and introduces IT and the user population to APP.
+-   **Enterprise basic data protection** (Level 1) ensures that apps are protected with a PIN and encrypted, and performs selective wipe operations. For Android devices, this level validates Android device attestation. This is an entry-level configuration that provides similar data protection control in Exchange Online mailbox policies and introduces IT and the user population to APP.
 
--   **Enterprise enhanced data protection** (Level 2) introduces APP data leakage prevention mechanisms and minimum OS requirements. This is the configuration that is applicable to most mobile users accessing work or school data.
+-   **Enterprise enhanced data protection** (Level 2) introduces APP data leakage prevention mechanisms and minimum OS requirements. This is the configuration that is applicable to most mobile users accessing work or school data.
 
--   **Enterprise high data protection** (Level 3) introduces advanced data protection mechanisms, enhanced PIN configuration, and APP Mobile Threat Defense. This configuration is desirable for users that are accessing high-risk data.
+-   **Enterprise high data protection** (Level 3) introduces advanced data protection mechanisms, enhanced PIN configuration, and APP Mobile Threat Defense. This configuration is desirable for users that are accessing high-risk data.
 
 Follow these steps:
 
-1.  In Intune portal, choose **Apps** &gt; **App protection policies**. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
+1.  In Intune portal, choose **Apps** &gt; **App protection policies**. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
 
-2.  Select **Create policy** and select either **iOS/iPadOS** or **Android**. The **Create policy** pane is displayed.
+2.  Select **Create policy** and select either **iOS/iPadOS** or **Android**. The **Create policy** pane is displayed.
 
 3.  Choose the apps that you would like to apply the App Protection Policy to.
 
 4.  Configure Data Protection Settings:
 
-    1.  **iOS/iPadOS data protection.** For information, see [iOS/iPadOS app protection policy settings - Data protection](/mem/intune/apps/app-protection-policy-settings-ios#data-protection).
+    1.  **iOS/iPadOS data protection.** For information, see [iOS/iPadOS app protection policy settings - Data protection](/mem/intune/apps/app-protection-policy-settings-ios#data-protection).
 
-    1.  **Android data protection.** For information, see [Android app protection policy settings - Data protection](/mem/intune/apps/app-protection-policy-settings-android#data-protection).
+    1.  **Android data protection.** For information, see [Android app protection policy settings - Data protection](/mem/intune/apps/app-protection-policy-settings-android#data-protection).
 
 5.  Configure Access Requirement Settings:
 
-    1.  **iOS/iPadOS access requirements**. For information, see [iOS/iPadOS app protection policy settings - Access requirements](/mem/intune/apps/app-protection-policy-settings-ios#access-requirements).
+    1.  **iOS/iPadOS access requirements**. For information, see [iOS/iPadOS app protection policy settings - Access requirements](/mem/intune/apps/app-protection-policy-settings-ios#access-requirements).
 
-    1.  **Android access requirements.** For information, see [Android app protection policy settings - Access requirements](/mem/intune/apps/app-protection-policy-settings-android#access-requirements).
+    1.  **Android access requirements.** For information, see [Android app protection policy settings - Access requirements](/mem/intune/apps/app-protection-policy-settings-android#access-requirements).
 
 6.  Configure Conditional Launch Settings:
 
-    1.  **iOS/iPadOS conditional launch**. For information, see [iOS/iPadOS app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-ios#conditional-launch).
+    1.  **iOS/iPadOS conditional launch**. For information, see [iOS/iPadOS app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-ios#conditional-launch).
 
-    1.  **Android conditional launch**. For information, see [Android app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-android#conditional-launch).
+    1.  **Android conditional launch**. For information, see [Android app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-android#conditional-launch).
 
-7.  Click **Next** to display the **Assignments** page.
+7.  Click **Next** to display the **Assignments** page.
 
-8.  When you are done, click **Create** to create the app protection policy in Intune.
+8.  When you are done, click **Create** to create the app protection policy in Intune.
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for data](https://aka.ms/ZTData).

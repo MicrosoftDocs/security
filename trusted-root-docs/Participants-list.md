@@ -14,13 +14,13 @@ ms.topic: conceptual
 
 You can view the complete and up-to-date list here: https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT. 
 
-You can download the complete, most recent list here as a CSV: https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFTCSV.
+You can download the complete, most recent list here as a CSV: https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFTCSV.
 
 You can download the complete, most recent list here as a machine readable XML: https://download.microsoft.com/download/9/b/9/9b9c7b91-fcee-4d8c-bf3c-98f4ed8a8452/TRPRelease.xml. 
 
 Both of these lists are created from the data in the Common CA Database, of which Microsoft is a partner. More information can be found here: https://www.ccadb.org/. 
 
- 
+ 
 ## Legacy Lists
 
 - [Microsoft Trusted
@@ -70,4 +70,3 @@ Root Program Participants as of March
     9, 2017)](https://gallery.technet.microsoft.com/Trusted-Root-Certificate-092f2761)
 -   [Microsoft Trusted Root Certificate Program: Participants (17
     November 2016)](https://gallery.technet.microsoft.com/Trusted-Root-Certificate-209e0e9f?redir=0)
-

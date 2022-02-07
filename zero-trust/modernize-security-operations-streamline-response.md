@@ -10,11 +10,9 @@ ms.topic: conceptual
 
 # Step 4. Streamline response
 
-NOTE TO CONTRIBUTORS: Please see the "NEEDED BY CONTRIBUTORS" tags and help flesh out the needed information.
-
 NOTE TO REVIEWERS: This article is in progress and not ready for technical review.
 
-Your SecOps must master threat response and remediation on commonly-attacked resources using Extended Detection and Response (XDR) technology provide high quality alerts for these new resource types, bypassing the manual effort and delays when trying to build every alert in a security information and event management (SIEM) solution. 
+Your security operations (SecOps) must master threat response and remediation on commonly-attacked resources using Extended Detection and Response (XDR) technology provide high quality alerts for these new resource types, bypassing the manual effort and delays when trying to build every alert in a security information and event management (SIEM) solution. 
 
 Streamlining the processes for these common attacks and focusing the triage (Tier 1) and investigation (Tier 2) analyst teams on mastering these attacks will catch both commodity and advanced attackers earlier in the process, reducing risk to your organization. 
 
@@ -44,24 +42,20 @@ Meet these deployment objectives to streamline your SecOps for Zero Trust.
 <a id="singlequeue"></a>
 ## 1. Use the minimal number of alert queues
 
-NOTES FROM THE OUTLINE: This section is not about technical deployment for a specific product. It’s guidance on a best practice to ensure analysts / SOC can look at a single tool for alert and response. We know that this guidance unfortunately conflicts with our own offerings as we have an XDR for M365 and another different one for Cloud/Azure, but for customers who have SIEM, they may be able to unify it with this as a long-term strategy.)
+This is a strategic deployment objective for modernizing your security operations. There are no specific implementation steps to follow because it is not something done on its own. Instead, it is a concept that must be intentionally assessed and applied alongside each of the upcoming deployment objectives and implementation steps within this initiative.
 
-Perform these implementation steps to meet minimize the number of alert queues.
+When you maintain a minimal number of alert queues, you have a strategy that will:
 
-NEEDED BY CONTRIBUTORS:
-
-| Done | Implementation step | Owner | Documentation |
-|:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1.  | Security Architect | link |
-| <input type="checkbox" /> | 2.  | Security Architect | link |
-| <input type="checkbox" /> | 3.  | Security Architect | link |
-| <input type="checkbox" /> | 4.  | Security Architect | link |
+- Allow for better contextualization and correlation of alerts or incidents, because inbound events from all sources feed into a single tool
+- Improve the overall efficiency of security operations teams, regardless of role or level, because they can follow a standardized response process and work within the same tool
 
 
 <a id="m365xdr"></a>
 ## 2a. (in parallel with step 2b) Set up Microsoft 365 Defender and AutoIR
 
+<!--
 NOTES FROM THE OUTLINE: This section will contain the deployment objectives and technical deployment instructions for Microsoft 365 Defender (previously Microsoft Threat Protection). It should include Endpoint, Email (O365), and Identity. This section will also contain the deployment objectives and technical deployment instructions for the Automated investigation and response (AutoIR) feature in Microsoft 365 Defender.
+--> 
 
 Microsoft 365 Defender is the integrated solution for detecting and responding to attacks on mailboxes, endpoints, user identities, and applications. Microsoft 365 Defender stitches together the threat signals and alerts of attacks into incidents so your security analysts can quickly determine the full scope, impact, and targets of the attack and respond with remediation and recovery steps.
 
@@ -81,18 +75,20 @@ Perform these implementation steps to set up Microsoft 365 Defender and AutoIR.
 <a id="azurexdr"></a>
 ## 2b. (in parallel with step 2a) Set up Microsoft Defender for Cloud
 
+<!--
 NOTES FROM THE OUTLINE: This section will contain the deployment objectives and technical deployment instructions for Azure Defender for Cloud (previously Azure Defender or Azure Security Center). This deployment objective does not have any dependencies with 2a Setting up M365 XDR and setting up AutoIR, so customers can choose to deploy it in parallel if desired.
+--> 
 
 Perform these implementation steps to set up Microsoft Defender for Cloud.
 
-NEEDED BY CONTRIBUTORS:
-
 | Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1.  | Security Architect | link |
-| <input type="checkbox" /> | 2.  | Security Architect | link |
-| <input type="checkbox" /> | 3.  | Security Architect | link |
-| <input type="checkbox" /> | 4.  | Security Architect | link |
+| <input type="checkbox" /> | 1. Deploy Defender for Cloud pre-requisites. | Security Architect | a. [Permissions](https://docs.microsoft.com/azure/defender-for-cloud/permissions)  <BR><BR> b. [Best practices for designing Defender for Cloud workspace](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/best-practices-for-designing-a-microsoft-sentinel-or-azure/ba-p/832574) <BR><br> c. [Designing your workspace](https://docs.microsoft.com/azure/azure-monitor/logs/design-logs-deployment#important-considerations-for-an-access-control-strategy) |
+| <input type="checkbox" /> | 2. Set up Microsoft Defender for Cloud | Security Architect | [Set up Microsoft Defender for Cloud](https://docs.microsoft.com/azure/defender-for-cloud/get-started) |
+| <input type="checkbox" /> | 3.  Enable all Microsoft Defender plans  | Security Architect | [Enable all Defender plans ](https://docs.microsoft.com/azure/defender-for-cloud/enable-enhanced-security) <BR><BR> a. [Policy to enable Defender for Cloud](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Pricing%20&%20Settings/Azure%20Policy%20definitions/Azure%20Defender%20Plans) <BR><BR> b. [Configure email notifications](https://docs.microsoft.com/azure/defender-for-cloud/configure-email-notifications) <BR><BR> c. [Auto-deploy agents](https://docs.microsoft.com/azure/defender-for-cloud/enable-data-collection?tabs=autoprovision-feature) |
+| <input type="checkbox" /> | 4. Connect hybrid and multi-cloud machines | Security Architect | [Connect non-Azure machines](https://docs.microsoft.com/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) |
+| <input type="checkbox" /> | 5. Customize the set of standards in your regulatory compliance dashboard | Security Architect | [Customize regulatory compliance](https://docs.microsoft.com/azure/defender-for-cloud/update-regulatory-compliance-packages) |
+| <input type="checkbox" /> | 6. Deploy management capabilities: <BR><BR>  a. Export Microsoft Defender for Cloud data to Microsoft Sentinel (recommended) <BR><BR> Export Microsoft Defender for Cloud data to other SIEM or ITSM solutions (optional) <BR><BR>  b. Export data for additional reporting  <BR><BR> c. Prepare and deploy Logic Apps (recommended)  <BR><BR>  d. Configure alert suppression rules (optional)  | Security Architect | a. [Connect Defender for Cloud alerts to Microsoft Sentinel](https://docs.microsoft.com/azure/sentinel/connect-defender-for-cloud) <BR><BR> [Stream your alerts to Security Information and Event Management (SIEM) systems and other monitoring solutions](https://docs.microsoft.com/azure/defender-for-cloud/export-to-siem) <br><BR> b. [Setup Continuous export](https://docs.microsoft.com/azure/defender-for-cloud/continuous-export?tabs=azure-portal) <br><BR> c. [Automations](https://docs.microsoft.com/azure/defender-for-cloud/quickstart-automation-alert) <BR><BR> d. [Alert suppression rules](https://docs.microsoft.com/azure/defender-for-cloud/alerts-suppression-rules) |
 
 
 ## Next step

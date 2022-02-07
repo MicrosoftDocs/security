@@ -16,7 +16,7 @@ Your on-premises and cloud data must be protected from both inadvertent and mali
 
 - Malicious access occurs when an external attacker or a malicious insider intentionally tries to access data. Malicious insiders can use your data for profit or to harm your organization. External attackers can delete, alter, exfiltrate, and encrypt your most sensitive data, leaving you open to a ransomware attack.
 
-For both types of attacks, you must take the necessary steps to identify your data, protect it, prevent its destruction or exfiltration, and ensure that only user to only those with a business purpose have access to it.
+For both types of attacks, you must take the necessary steps to identify your data, protect it, prevent its destruction or exfiltration, and ensure that only users with a business purpose have access to it.
 
 Protecting your data is part of the "assume breach" Zero Trust principle. Even with all the user account and device protections in place, you must assume that an attacker could find their way in and begin traversing your environment, searching for the most valuable data for your organization.
 
@@ -48,7 +48,7 @@ This table describes the overall protection of your organization data in terms o
 |  CISO, CIO, or Director of Data Security | | Executive sponsorship |
 | Program lead from Data Security | | Drive results and cross-team collaboration |
 | | Security Architect  | Advise on configuration and standards |
-| | Application Owners |  Implement changes to Microsoft 365 tenant for OneDrive and Protected Folders |
+| | Microsoft 365 Admins |  Implement changes to Microsoft 365 tenant for OneDrive and Protected Folders |
 | | Data Security Engineer and/or Infrastructure Security Engineer | Enable infrastructure backup |
 | | Application Owners | Identify critical business assets |
 | | Data Security Admin | Implement configuration changes |
@@ -116,7 +116,7 @@ Perform these implementation steps to ensure that your users and admins meet the
 | <input type="checkbox" /> | 1. From the **Know your data** deployment objective, review the permissions for the locations of sensitive and critical information. | Data Security Engineer |
 | <input type="checkbox" /> | 2. Implement minimal permissions for the sensitive and critical information while meeting collaboration and business requirements and inform the users who are affected. | Data Security Engineer |
 | <input type="checkbox" /> | 3. Perform change management for your employees so that future locations for sensitive and critical information are created and maintained with minimal permissions. | User Education Team |
-| <input type="checkbox" /> | 4. Audit and monitor the locations for sensitive and critical information to ensure that broad permissions aren't being granted. | Data Security Engineer and/or Security Governance |
+| <input type="checkbox" /> | 4. Audit and monitor the locations for sensitive and critical information to ensure that broad permissions aren't being granted. | Data Security Engineer and/or Security Governance Admin |
 
 ## Results
 

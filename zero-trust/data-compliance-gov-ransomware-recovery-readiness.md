@@ -44,21 +44,22 @@ Most organizations don’t protect backup and restoration procedures against thi
 >This preparation also improves resilience to natural disasters and rapid attacks like WannaCry and (Not)Petya.
 >
 
-[Backup and restore plan to protect against ransomware](https://docs.microsoft.com/security/compass/backup-plan-to-protect-against-ransomware) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations using Azure Backup and other Microsoft cloud services.
+[Backup and restore plan to protect against ransomware](https://docs.microsoft.com/security/compass/backup-plan-to-protect-against-ransomware) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations using Azure Backup and other Microsoft cloud services. If you are using an offsite backup solution provided by a third-party, please consult their documentation.
 
 ### Program and project member accountabilities
 
 This table describes the overall protection of your data from ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
-| Lead | Implementer | Accountability |
+| Lead | Owner | Accountability |
 |:-------|:-------|:-----|
 | Central IT Operations or CIO | | Executive sponsorship |
 | Program lead from Central IT infrastructure | | Drive results and cross-team collaboration |
-|  | Central IT Infrastructure/Backup | Enable Infrastructure backup |
-|  | Central IT Productivity/End User | Enable OneDrive Backup |
-|  | Security Architecture  | Advise on configuration and standards |
-| | Security Policy and Standards | Update standards and policy documents |
-| | Security Compliance Management | Monitor to ensure compliance |
+|  | Infrastructure/Backup Engineer | Enable Infrastructure backup |
+|  | Microsoft 365 Admins | Implement changes to Microsoft 365 tenant for [OneDrive](/microsoft-365/enterprise/microsoft-365-malware-and-ransomware-protection#sharepoint-online-and-onedrive-for-business-protection-against-ransomware) and Protected Folders |
+|  | Security Engineer | Advise on configuration and standards |
+|  | IT Admin | Update standards and policy documents |
+|  | Security Governance and/or IT Admin | Monitor to ensure compliance |
+|  | User Education Team | Ensure guidance for users recommends the use of OneDrive and Protected Folders |
 
 ### Deployment objectives
 
@@ -70,6 +71,8 @@ Meet these deployment objectives to secure your backup infrastructure.
 | <input type="checkbox" /> | 2. Establish process to backup all critical systems automatically on a regular schedule and monitor adherence. | IT backup administrator |
 | <input type="checkbox" /> | 3. Establish process and schedule to regularly exercise your business continuity/disaster recovery (BC/DR) plan. | IT architect |
 | <input type="checkbox" /> | 4. Include protecting backups against deliberate erasure and encryption in your backup plan: <br><br> - Strong Protection – Require out-of-band steps (such as multifactor authentication or a PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site.  | IT backup administrator |
+| <input type="checkbox" /> | 5. Have your users configure [OneDrive backup](https://support.microsoft.com/office/back-up-your-documents-pictures-and-desktop-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057) and [Protected Folders](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders).  | Microsoft 365 productivity administrator |
+
 
 ## Next step
 

@@ -10,9 +10,9 @@ ms.topic: conceptual
 
 # Step 3. Data
 
-Your cloud data is a primary target of cyber attackers. Once they have access to your data, they can delete, alter, exfiltrate, and encrypt it, leaving you open to a ransomware attack. You must take the necessary steps identify it, protect it in place, ensure that does not get deleted or exfiltrated, and configure access permissions to only those with a business purpose.
+Your cloud data is a primary target of cyber attackers. Once they have access to your data, they can delete, alter, exfiltrate, and encrypt it, leaving you open to a ransomware attack. You must take the necessary steps to identify it, protect it in place, ensure that does not get deleted or exfiltrated, and configure access permissions to only those with a business purpose.
 
-Protecting your data is part of the "assume breach" security principle. Even with all the user account and device protections in place, you must assume that an attacker could find their way in and begin traversing your environment, searching for the most valuable data for your organization.
+Protecting your data is part of the "assume breach" Zero Trust principle. Even with all the user account and device protections in place, you must assume that an attacker could find their way in and begin traversing your environment, searching for the most valuable data for your organization.
 
 <!--
 Discover and protect sensitive data (via Cloud App Security, CA App Control, Microsoft Info Protection)
@@ -55,12 +55,12 @@ This table describes the overall protection of your organization data in terms o
 | Program lead from Data Security | | Drive results and cross-team collaboration |
 | | Security Architect  | Advise on configuration and standards |
 | | Application Owners |  Implement changes to Microsoft 365 tenant for OneDrive and Protected Folders |
-| | Data Security and/or Infrastructure Security | Enable infrastructure backup |
+| | Data Security Engineer and/or Infrastructure Security Engineer | Enable infrastructure backup |
 | | Application Owners | Identify critical business assets |
-| | Data Security | Implement configuration changes |
+| | Data Security Admin | Implement configuration changes |
 | | IT Admin | Update standards and policy documents |
 | | Security Governance and/or IT Admin | Monitor to ensure compliance |
-| | User Education | Ensure guidance for users reflects policy updates |
+| | User Education Team | Ensure guidance for users reflects policy updates |
 
 
 ## Deployment objectives
@@ -84,7 +84,7 @@ Perform these implementation steps to meet the **Know your data** deployment obj
 | <input type="checkbox" /> | 1. Determine data classification levels. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview#sensitive-information-types-used-most-in-your-content) |
 | <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about) |
 | <input type="checkbox" /> | 3. Determine the use of pre-trained and custom trainable classifiers. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/classifier-learn-about) |
-| <input type="checkbox" /> | 4. Discover and classify sensitive data. | Data Security Architect | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview) |
+| <input type="checkbox" /> | 4. Discover and classify sensitive data. | Data Security Architect and/or Data Security Engineer | [Learn about](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview) |
 
 <a id="protect"></a>
 ### 2. Protect your data
@@ -115,12 +115,12 @@ Perform these implementation steps to meet the **Prevent data loss** deployment 
 <a id="strict"></a>
 ### 4. Use least privilege access
 
-Perform these implementation steps to ensure that your workers and admins meet the **Use least privilege access** deployment objective.
+Perform these implementation steps to ensure that your users and admins meet the **Use least privilege access** deployment objective.
 
 | Done | Implementation step | Owner |
 |:-------|:-------|:-----|
 | <input type="checkbox" /> | 1. From the **Know your data** deployment objective, review the permissions for the locations of sensitive and critical information. | Data Security Engineer |
-| <input type="checkbox" /> | 2. Implement minimal permissions for the sensitive and critical information while meeting collaboration and business requirements and inform the users that are affected. | Data Security Engineer |
+| <input type="checkbox" /> | 2. Implement minimal permissions for the sensitive and critical information while meeting collaboration and business requirements and inform the users who are affected. | Data Security Engineer |
 | <input type="checkbox" /> | 3. Perform change management for your employees so that future locations for sensitive and critical information are created and maintained with minimal permissions. | User Education Team |
 | <input type="checkbox" /> | 4. Audit and monitor the locations for sensitive and critical information to ensure that broad permissions aren't being granted. | Data Security Engineer and/or Security Governance |
 

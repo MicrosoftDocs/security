@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Step 1. Explicitly validate trust for all access requests
 
-Your first step is to establish a security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access, for both internal network and cloud traffic.
+Your first step is to establish a security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access, for both public and private networks.
 
 This includes using Zero Trust to explicitly validate trust for all access requests for:
 
@@ -18,7 +18,6 @@ This includes using Zero Trust to explicitly validate trust for all access reque
 - [Endpoints (devices)](#endpoints)
 - [Apps](#apps)
 - [Network](#network)
-
 
 After completing this step, you will have built out this part of the Zero Trust architecture.
 
@@ -35,12 +34,12 @@ This table describes the overall protection of your user accounts in terms of a 
 | Lead | Owner | Accountability |
 |:-------|:-------|:-----|
 |  CISO, CIO, or Director of Identity Security | | Executive sponsorship |
-| Program lead from Identity Security or an Identity Architect | | Drive results and cross-team collaboration |
+| Program lead from Identity Security or Identity Architect | | Drive results and cross-team collaboration |
 | | Security Architect  | Advise on configuration and standards |
 | | Identity Security or an Identity Architect | Implement configuration changes |
 | | Identity Admin | Update standards and policy documents |
 | | Security Governance or Identity Admin | Monitor to ensure compliance |
-| | User Education | Ensure guidance for users reflects policy updates |
+| | User Education Team | Ensure guidance for users reflects policy updates |
 
 
 ### Deployment objectives
@@ -61,7 +60,7 @@ Meet these deployment objectives to protect your user identities with Zero Trust
 | <input type="checkbox" /> | 3. Enable combined User Registration for your directory to allow users to register for SSPR and MFA in one step | IT implementer | [Enable combined security information registration in Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined) |
 | <input type="checkbox" /> | 4. Configure a Conditional Access policy to require MFA registration. | IT implementer | [How To: Configure the Azure AD Multi-Factor Authentication registration policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) |
 | <input type="checkbox" /> | 5. Enable user and sign-in risk-based policies to protect user access to resources. | IT implementer | [How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) |
-| <input type="checkbox" /> | 6. Detect and block known weak passwords and their variants, and block additional weak terms specific to your organization. | IT implementer | [Eliminate bad passwords using Azure AD Password Protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) |
+| <input type="checkbox" /> | 6. Detect and block known weak passwords and their variants and block additional weak terms specific to your organization. | IT implementer | [Eliminate bad passwords using Azure AD Password Protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) |
 | <input type="checkbox" /> | 7. Deploy Microsoft Defender for Identity and review and mitigate any open alerts.| Security operations team  | [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is#whats-next)  |
 | <input type="checkbox" /> | 8. Deploy passwordless credentials. | IT implementer | [Plan a passwordless authentication deployment in Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-deployment) |
 
@@ -85,7 +84,7 @@ This table describes the overall protection of your endpoints in terms of a spon
 | | Identity Security or an Infrastructure Security Architect | Implement configuration changes |
 | | Mobile device management (MDM) Admin | Update standards and policy documents |
 | | Security Governance or MDM Admin | Monitor to ensure compliance |
-| | User Education | Ensure guidance for users reflects policy updates |
+| | User Education Team | Ensure guidance for users reflects policy updates |
 
 ### Deployment objectives
 
@@ -115,11 +114,10 @@ This table describes a Zero Trust implementation for apps in terms of a sponsors
 |:-------|:-------|:-----|
 |  CISO, CIO, or Director of Application Security | | Executive sponsorship |
 | Program lead from Apps Management| | Drive results and cross-team collaboration |
-| | Identity Architect  | Advise on Azure AD configuration for apps |
+| | Identity Architect  | Advise on Azure AD configuration for apps <br> Update authentication standards for on-premises apps |
 | | Developer Architect  | Advise on configuration and standards for in-house on-premises and cloud apps |
-| | Datacenter Architects | Update authentication standards for on-premises apps |
-| | Remote Access Architect | Implement VPN configuration changes |
-| | Azure Network Architect | Deploy Azure AD Application Proxy |
+| | Network Architect | Implement VPN configuration changes |
+| | Cloud Network Architect | Deploy Azure AD Application Proxy |
 | | Security Governance | Monitor to ensure compliance |
 
 ### Deployment objectives
@@ -131,63 +129,10 @@ Meet these deployment objectives to ensure Zero Trust protection for your SaaS, 
 | <input type="checkbox" /> | SaaS and PaaS apps that are part of your Microsoft cloud subscriptions | Use Azure AD app registration and certification and app consent policies. <br>  Use Azure AD Conditional Access policies and Intune MAM and Application Protection Policies (APP) policies to allow app usage. | Identity Architect | [Application management in Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management)  |
 | <input type="checkbox" /> | Apps in your Microsoft cloud subscriptions that are OAuth-enabled and access Microsoft 365 data through the Graph APIs | Use the app governance add-on to Defender for Cloud Apps for app behavior visibility, governance with policy enforcement, and detection and remediation of app-based attacks. | Security Engineer | [Overview](https://docs.microsoft.com/defender-cloud-apps/app-governance-manage-app-governance) |
 | <input type="checkbox" /> | SaaS and PaaS apps that are **NOT** part of your Microsoft cloud subscriptions | Ensure that they are using Azure AD for authentication. This means that all sign-ins to the app are subject to user and device security requirements such as multifactor authentication and meeting defined requirements for device compliance. | Apps Architect | [Integrating all your apps with Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad) |
-| <input type="checkbox" /> | On-premises users accessing on-premises applications, which includes applications running on both on-premises and IaaS-based servers | Ensure that your apps support modern authentication protocols such as OAuth/OIDC and SAML. Contact your application vendor for updates to protect user sign-in. | Datacenter Architect | See your vendor documentation |
-| <input type="checkbox" /> | Remote users accessing on-premises applications through a VPN connection | Configure your VPN appliance so that it uses Azure AD as its identity provider | Remote Access Architect | See your vendor documentation |
-| <input type="checkbox" /> | Remote users accessing on-premises **web** applications through a VPN connection | Publish the applications through Azure AD Application Proxy. Remote users only need to access the individual published application, which is routed to the on-premises web server through an application proxy connector. <br><br> Connections take advantage of strong Azure AD authentication and limits users and their devices to accessing a single application at a time. In contrast, the scope of a typical remote access VPN is all locations, protocols, and ports of the entire on-premises network. | Azure Network Architect | [Remote access to on-premises applications through Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/app-proxy/application-proxy) |
+| <input type="checkbox" /> | On-premises users accessing on-premises applications, which includes applications running on both on-premises and IaaS-based servers | Ensure that your apps support modern authentication protocols such as OAuth/OIDC and SAML. Contact your application vendor for updates to protect user sign-in. | Identity Architect | See your vendor documentation |
+| <input type="checkbox" /> | Remote users accessing on-premises applications through a VPN connection | Configure your VPN appliance so that it uses Azure AD as its identity provider | Network Architect | See your vendor documentation |
+| <input type="checkbox" /> | Remote users accessing on-premises **web** applications through a VPN connection | Publish the applications through Azure AD Application Proxy. Remote users only need to access the individual published application, which is routed to the on-premises web server through an application proxy connector. <br><br> Connections take advantage of strong Azure AD authentication and limits users and their devices to accessing a single application at a time. In contrast, the scope of a typical remote access VPN is all locations, protocols, and ports of the entire on-premises network. | Cloud Network Architect | [Remote access to on-premises applications through Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/app-proxy/application-proxy) |
 
-<!--
-
-
-From App protection section of cloud security model for SaaS and PaaS apps:
-
-Acquisition
-
-1. 	Verify registration and certificate.
-2. 	Register app in tenant.
-3. 	Restrict user consent operations with an app consent policy.
-
-Deployment
-
-1. Azure AD Conditional Access policies: Add app to the list of allowed apps.
-2. Intune: Add app to MAM and APP policies.
-3. Try the app for 30 days in a test tenant.
-4. Sign-off for the app in your production tenant.
-5. First 60 days in production tenant. 
-
-Run state
-
-1. Monitor Azure AD identity Protection alerts for compromised credentials.
-2. Update Conditional Access and Intune policies as needed.
-
-For your SaaS and PaaS apps, ensure that they are using Azure AD for authentication. This means that all sign-ins to the app are subject to user and device security requirements such as multifactor authentication and meeting defined requirements for device compliance. For your SaaS and PaaS apps that are part of a Microsoft cloud subscription, use Azure AD app registration and certification
-
-For on-premises users accessing on-premises applications, which includes applications running on both on-premises and IaaS-based servers, ensure that your apps support modern authentication protocols such as OAuth/OIDC and SAML. Contact your application vendor for updates to protect user sign-in.
-
-For remote users accessing on-premises applications through a VPN connection, configure your VPN appliance so that it uses Azure AD as its identity provider. 
-
-For remote users accessing on-premises **web** applications through a VPN connection, publish the applications through Azure AD Application Proxy. Remote users only need to access the individual published application, which is routed to the on-premises web server through an application proxy connector. Connections take advantage of strong Azure AD authentication and limits users and their devices to accessing a single application at a time. In contrast, the scope of a typical remote access VPN is all locations, protocols, and ports of the entire on-premises network.
-
-
-
-Update and modernize authentication security for applications that don’t directly support modern protocols like OAuth/OIDC and SAML by modernizing and then going beyond VPN authentication in a two-step process
-
-Improve VPN Security - By connecting your VPN appliance to Azure AD authentication, VPN sessions benefit from the added security of explicit validation of user account/session and device trustworthiness. 
-Publish Applications – Move applications off of VPN by publishing existing on-premises (and IaaS) applications through Azure AD App proxy, enabling you to take advantages of strong Azure AD authentication from step 1, improve user experience, and limit accounts to accessing a single application at a time (instead of a VPN that typically provides access to all ports/protocols of the whole network).
-
-Meet these deployment objectives to ensure Zero Trust protection for your on-premises apps.
-
-| Done | Deployment objective | Owner | Documentation |
-|:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1.  | |  |
-| <input type="checkbox" /> | 2.  | |  |
-| <input type="checkbox" /> | 3.  | |  |
-| <input type="checkbox" /> | 4.  | |  |
-| <input type="checkbox" /> | 5.  | |  |
-| <input type="checkbox" /> | 6.  | |  |
-| <input type="checkbox" /> | 7.  | |  |
-| <input type="checkbox" /> | 8.  | |  |
-
---> 
 
 After completing these deployment objectives, you will have built out the **Apps** section of the Zero Trust architecture.
 
@@ -222,8 +167,10 @@ Meet these deployment objectives to ensure Zero Trust protection for your public
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | Require encryption for all traffic connections, including between IaaS components and between on-premises users and apps. | Security Architect | [Azure IaaS components](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell) <br><br> [IPsec for on-premises Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/securing-end-to-end-ipsec-connections-by-using-ikev2) |
 | <input type="checkbox" /> | Limit access to critical data and applications by policy (user or device identity) or traffic filtering. | Security Architect or Network Architect| [Access policies for Cloud App Security Conditional Access App Control](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad) <br><br> [Windows Firewall for Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) |
-| <input type="checkbox" /> | Deploy on-premises network segmentation with many ingress and egress cloud micro-perimeters and some micro-segmentation. | Network Architect or Network Engineer | See your on-premises and edge device doumentation. |
-| <input type="checkbox" /> | Use real-time threat detection for on-premises traffic. | SecOps Analysts | [Windows threat protection](https://docs.microsoft.com/windows/security/threat-protection/) <br><br> [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide) |
+| <input type="checkbox" /> | Deploy on-premises network segmentation with ingress and egress traffic controls with micro-perimeters and micro-segmentation. | Network Architect or Network Engineer | See your on-premises network and edge devices documentation. |
+| <input type="checkbox" /> | Use real-time threat detection for on-premises traffic. | SecOps Analysts | [Windows threat protection](https://docs.microsoft.com/windows/security/threat-protection/) <br><br> [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) |
+| <input type="checkbox" /> | Deploy cloud network segmentation with ingress and egress traffic controls with micro-perimeters and micro-segmentation. | Network Architect or Network Engineer | [Implement network segmentation patterns on Azure](/azure/architecture/framework/security/design-network-segmentation) |
+| <input type="checkbox" /> | Use real-time threat detection for cloud traffic. | Network Architect or Network Engineer | [Azure Firewall threat intelligence-based filtering](/azure/firewall/threat-intel) <br><br> [Azure Firewall Premium network intrusion detection and prevention system (IDPS)](/azure/firewall/premium-features#idps) |
 
 
 <!--

@@ -28,7 +28,7 @@ To avoid being forced into payment (the profitable situation for attackers), the
 
 Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other areas, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
 
-- What business assets would be the most damaging if compromised? For example, what assets would business leadership would be willing to pay an extortion demand if attackers controlled them? 
+- What business assets would be the most damaging if compromised? For example, what assets would business leadership be willing to pay an extortion demand if attackers controlled them? 
 - How do these business assets translate to IT assets such as files, applications, databases, and servers?
 - How can we protect or isolate these assets so that attackers with access to the general IT environment can’t access them? 
 
@@ -62,7 +62,7 @@ This table describes the overall protection of your data from ransomware in term
 
 ### Deployment objectives
 
-Meet these deployment objectives to to secure your backup infrastructure.
+Meet these deployment objectives to secure your backup infrastructure.
 
 | Done | Deployment objective | Owner |
 |:-------|:-------|:-----|:--------|

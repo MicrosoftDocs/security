@@ -15,7 +15,7 @@ ms.topic: conceptual
 
 Infrastructure is the hardware, software, micro-services, networking infrastructure, and facilities required to support IT services for an organization. Zero Trust infrastructure solutions assess, monitor, and prevent security threats to these services.
 
-Zero Trust infrastructure solutions support the principles of Zero Trust by ensuring that access to infrastructure resources is verified explicitly, access is granted using principles of least privileged access, and mechanisms are in place that assume breach and look for and remediate security threats in infrastructure.
+Zero Trust infrastructure solutions support the principles of Zero Trust by ensuring that access to infrastructure resources is verified explicitly, access is granted using principles of least privilege access, and mechanisms are in place that assume breach and look for and remediate security threats in infrastructure.
 
 This guidance is for software providers and technology partners who want to enhance their infrastructure security solutions by integrating with Microsoft products.
 

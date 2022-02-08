@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Zero Trust Rapid Modernization Plan
 
-As an alternative to [deployment guidance](./deploy/overview.md) that provides detailed configuration steps for each of the technology pillarsbeing protected by Zero Trust principles, Rapid Modernization Plan (RaMP) guidance is based on initiatives and gives you a set of deployment paths to more quickly implement key layers of protection.
+As an alternative to [deployment guidance](./deploy/overview.md) that provides detailed configuration steps for each of the technology pillars being protected by Zero Trust principles, Rapid Modernization Plan (RaMP) guidance is based on initiatives and gives you a set of deployment paths to more quickly implement key layers of protection.
 
 RaMP guidance takes a project management and checklist approach:
 
@@ -35,7 +35,7 @@ Here is the overall architecture for Zero Trust.
 
 :::image type="content" source="./media/zero-trust-ramp-overview/zero-trust-architecture.png" alt-text="The overall architecture for Zero Trust" lightbox="./media/zero-trust-ramp-overview/zero-trust-architecture.png":::
 
-The RaMP initiatives for Zero Trust address all of the elements of this architecture. As you step through the initiatives, we will show which parts are being covered.
+The RaMP initiatives for Zero Trust address all of the elements of this architecture. As you step through the initiatives, we'll show which parts are being covered.
 
 ## Next step
 

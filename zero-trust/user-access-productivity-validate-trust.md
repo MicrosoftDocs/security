@@ -61,7 +61,7 @@ Meet these deployment objectives to protect your user identities with Zero Trust
 | <input type="checkbox" /> | 4. Configure a Conditional Access policy to require MFA registration. | IT implementer | [How To: Configure the Azure AD Multi-Factor Authentication registration policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) |
 | <input type="checkbox" /> | 5. Enable user and sign-in risk-based policies to protect user access to resources. | IT implementer | [How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) |
 | <input type="checkbox" /> | 6. Detect and block known weak passwords and their variants and block additional weak terms specific to your organization. | IT implementer | [Eliminate bad passwords using Azure AD Password Protection](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) |
-| <input type="checkbox" /> | 7. Deploy Microsoft Defender for Identity and review and mitigate any open alerts.| Security operations team  | [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is#whats-next)  |
+| <input type="checkbox" /> | 7. Deploy Microsoft Defender for Identity and review and mitigate any open alerts (in parallel with your security operations).| Security operations team  | [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is#whats-next)  |
 | <input type="checkbox" /> | 8. Deploy passwordless credentials. | IT implementer | [Plan a passwordless authentication deployment in Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-deployment) |
 
 You have now built out the **Identities** section of the Zero Trust architecture.
@@ -94,7 +94,7 @@ Meet these deployment objectives to protect your endpoints (devices) with Zero T
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. Register devices with Azure AD. | MDM Admin | [Device identities](https://docs.microsoft.com/azure/active-directory/devices/overview) |
 | <input type="checkbox" /> | 2. Enroll devices and create configuration profiles. | MDM Admin | [Device management overview](https://docs.microsoft.com/mem/intune/fundamentals/what-is-device-management) |
-| <input type="checkbox" /> | 3. Connect Defender for Endpoint to Intune. | Identity Security Admin | [Configure Microsoft Defender for Endpoint in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure) |
+| <input type="checkbox" /> | 3. Connect Defender for Endpoint to Intune (in parallel with your security operations). | Identity Security Admin | [Configure Microsoft Defender for Endpoint in Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure) |
 | <input type="checkbox" /> | 4. Monitor device compliance and risk for Conditional Access. | Identity Security Admin | [Use compliance policies to set rules for devices you manage with Intune](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started) |
 | <input type="checkbox" /> | 5. Implement Microsoft Information Protection and integrate with Conditional Access policies. | Identity Security Admin | [Use sensitivity labels to protect content](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) |
 
@@ -172,27 +172,6 @@ Meet these deployment objectives to ensure Zero Trust protection for your public
 | <input type="checkbox" /> | Deploy cloud network segmentation with ingress and egress traffic controls with micro-perimeters and micro-segmentation. | Network Architect or Network Engineer | [Implement network segmentation patterns on Azure](/azure/architecture/framework/security/design-network-segmentation) |
 | <input type="checkbox" /> | Use real-time threat detection for cloud traffic. | Network Architect or Network Engineer | [Azure Firewall threat intelligence-based filtering](/azure/firewall/threat-intel) <br><br> [Azure Firewall Premium network intrusion detection and prevention system (IDPS)](/azure/firewall/premium-features#idps) |
 
-
-<!--
-
-From Mark's Ignite deck:
-
-. , , and employ  and .
-
-Enable good user experience over both public and private network. 
-
-Apply additional traffic filtering and segmentation to private networks to protect business critical data and applications. 
-Establish basic traffic filtering and segmentation to isolate business-critical or highly vulnerable resources
-
-Microsegmentation – this group of users can access from these devices. Networking: physical, virtual; what traffic is allowed to flow. / 
-
-Additional identity and network restrictions (dynamic trust-based or static rules)
-
-Across SaaS/PaaS/IaaS
-Deploy on-premises network segmentation with many ingress/egress cloud micro-perimeters and some micro-segmentation
- (including over ExpressRoute, if used)
-
---> 
 
 After completing these deployment objectives, you will have built out the **Network** section of the Zero Trust architecture.
 

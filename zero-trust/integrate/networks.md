@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 Traditional enterprise networks are designed to provide users access to applications and data hosted in company operated data centers with strong perimeter security. However, the modern workplace increasingly uses services and data outside the corporate firewall. Apps and services have moved to the cloud, and users need to be able to access them from a variety of work and personal devices.
 
-Network solutions are an important piece of Zero Trust. They verify that the ingress and egress at the edge of the network is allowable and inspect traffic for malicious content. They support least privileged access and the principle of "assume breach" by allowing organizations to segment networks and only connect users to the segment of the network they need access to.
+Network solutions are an important piece of Zero Trust. They verify that the ingress and egress at the edge of the network is allowable and inspect traffic for malicious content. They support least privilege access and the principle of "assume breach" by allowing organizations to segment networks and only connect users to the segment of the network they need access to.
 
 ## Networks Zero Trust integration guidance
 

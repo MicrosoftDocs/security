@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 Endpoints are devices that access an organization's resources and applications. Modern workplaces include a variety of devices that request access from both inside and outside the corporate network.
 
-Endpoint Zero Trust solutions are about verifying the security of the devices that access work data, including the applications that are running on the devices. Partners can integrate with Microsoft's endpoint solutions to verify device and app security, enforce least privileged policies, and prepare in advance for breaches.
+Endpoint Zero Trust solutions are about verifying the security of the devices that access work data, including the applications that are running on the devices. Partners can integrate with Microsoft's endpoint solutions to verify device and app security, enforce least privilege policies, and prepare in advance for breaches.
 
 This guidance is for software providers and technology partners who want to enhance their endpoint security solutions by integrating with Microsoft products.
 
@@ -101,7 +101,7 @@ See [Device compliance policies in Microsoft Intune](/mem/intune/protect/device-
 
 #### Follow the least privilege access principle
 
-An ISV integrating with Endpoint Manager will also want to ensure their application supports the Zero Trust principle to Apply Least Privileged Access. Endpoint Manager integration supports two important methods of access control – delegated permissions or application permissions. The ISV's application must use one of the permission models. Delegated permissions give you fine grained control over the specific objects in Endpoint Manager the application has access to but requires that an administrator log in with their credentials.  By comparison, application permissions allow the ISV's app to access or control classes of data and objects, rather than specific individual objects, but does not require a user to log in.
+An ISV integrating with Endpoint Manager will also want to ensure their application supports the Zero Trust principle to Apply Least Privilege Access. Endpoint Manager integration supports two important methods of access control – delegated permissions or application permissions. The ISV's application must use one of the permission models. Delegated permissions give you fine grained control over the specific objects in Endpoint Manager the application has access to but requires that an administrator log in with their credentials.  By comparison, application permissions allow the ISV's app to access or control classes of data and objects, rather than specific individual objects, but does not require a user to log in.
 
 In addition to creating your application as a single-tenant or multi-tenant (preferred) application, you must declare the delegated or application permissions required by your application to access Endpoint Manager information and perform actions against Endpoint Manager. View information about getting started with permissions here: [Quickstart: Configure an app to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
 

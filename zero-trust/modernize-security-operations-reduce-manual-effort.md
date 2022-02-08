@@ -96,7 +96,7 @@ After SOAR and threat hunting is in place, you need to operationalize the ongoin
 - What threat hunting queries and capabilities are the most effective at finding threats.
 - How threat hunting queries and capabilities can be improved to:
 
-   - Be more efficient to finding active threats.
+   - Be more efficient for finding active threats.
 
    - Be tuned to find new types of threats.
 

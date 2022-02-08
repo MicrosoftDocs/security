@@ -16,7 +16,7 @@ While it’s difficult to create a high-quality individual alerts from raw data 
 
 ## Program and project member accountabilities
 
-This table describes the implementation of a central SIEM alaysis in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+This table describes the implementation of a central SIEM analysis in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
 | Lead | Owner | Accountability |
 |:-------|:-------|:-----|

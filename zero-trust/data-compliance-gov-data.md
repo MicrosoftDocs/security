@@ -124,6 +124,3 @@ After completing these deployment objectives, you will have built out the **Data
 
 :::image type="content" source="./media/user-access-productivity-overview/data-compliance-gov-data.png" alt-text="The Data section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/data-compliance-gov-data.png":::
 
-## Next step
-
-Continue your Zero Trust deployment journey with the [Modernize security operations initiative](modernize-security-operations-overview.md).

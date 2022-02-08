@@ -14,13 +14,7 @@ ms.topic: conceptual
 
 Identity is the key control plane for managing access in the modern workplace and is essential to implementing Zero Trust. Identity solutions support Zero Trust through strong authentication and access policies, least privileged access with granular permission and access, and controls and policies that manage access to secure resources and minimize the blast radius of attacks.
 
-<<<<<<< HEAD
-Identity Zero Trust solutions enable customers to verify explicitly with strong authentication and access policies, use least privilege access with granular permission and access, and assume breach with controls and policies that manage access to secure resources and minimize the blast radius of attacks.
-
-This guidance is for software providers and technology partners who want to enhance their identity security solutions by integrating with Microsoft products.
-=======
 This integration guide explains how independent software vendors (ISVs) and technology partners can integrate with Azure Active Directory to create secure Zero Trust solutions for customers.
->>>>>>> master
 
 ## Identity Zero Trust integration guide
 

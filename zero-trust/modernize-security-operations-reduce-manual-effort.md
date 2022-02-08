@@ -48,8 +48,8 @@ Perform these implementation steps to meet minimize the number of alert queues.
 
 | Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Automate incident handling in Microsoft Sentinel with automation rules. | Security Architect | [Automate incident handling in Microsoft Sentinel](https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules) |
-| <input type="checkbox" /> | 2. Automate threat response with playbooks in Microsoft Sentinel. | Security Architect | [Automate threat response with playbooks in Microsoft Sentinel](https://docs.microsoft.com/azure/sentinel/automate-responses-with-playbooks) |
+| <input type="checkbox" /> | 1. Automate incident handling in Microsoft Sentinel with automation rules. | Security Architect | [Automate incident handling in Microsoft Sentinel](/azure/sentinel/automate-incident-handling-with-automation-rules) |
+| <input type="checkbox" /> | 2. Automate threat response with playbooks in Microsoft Sentinel. | Security Architect | [Automate threat response with playbooks in Microsoft Sentinel](/azure/sentinel/automate-responses-with-playbooks) |
 
 
 <a id="threathunting"></a>
@@ -69,20 +69,20 @@ Perform these implementation steps to set up threat hunting for Microsoft 365 De
 
 | Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Ramp up SecOps staff on Microsoft 365 Defender advanced hunting (Kusto language, schema, query training and practice). | SecOps manager | [Get started](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview#get-started-with-advanced-hunting) |
-| <input type="checkbox" /> | 2. Assemble a catalog of advanced hunting queries for identity, endpoint, apps, data, and ransomware attacks. | Security Analysts | [Threat analytics reports](https://security.microsoft.com/threatanalytics), [GitHub](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries), [ransomware](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-find-ransomware) |
-| <input type="checkbox" /> | 3. Create custom detection rules for advanced hunting queries. | Security Analysts | [Custom detection rules](https://docs.microsoft.com/microsoft-365/security/defender/custom-detection-rules) |
-| <input type="checkbox" /> | 4. Determine the set of operational tasks, such as running daily/weekly/monthly advanced hunting queries and updating queries and custom detection rules. | SecOps Manager | [SOC maintenance tasks](https://docs.microsoft.com/microsoft-365/security/defender/integrate-microsoft-365-defender-secops-tasks) |
+| <input type="checkbox" /> | 1. Ramp up SecOps staff on Microsoft 365 Defender advanced hunting (Kusto language, schema, query training and practice). | SecOps manager | [Get started](/microsoft-365/security/defender/advanced-hunting-overview#get-started-with-advanced-hunting) |
+| <input type="checkbox" /> | 2. Assemble a catalog of advanced hunting queries for identity, endpoint, apps, data, and ransomware attacks. | Security Analysts | [Threat analytics reports](https://security.microsoft.com/threatanalytics), [GitHub](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries), [ransomware](/microsoft-365/security/defender/advanced-hunting-find-ransomware) |
+| <input type="checkbox" /> | 3. Create custom detection rules for advanced hunting queries. | Security Analysts | [Custom detection rules](/microsoft-365/security/defender/custom-detection-rules) |
+| <input type="checkbox" /> | 4. Determine the set of operational tasks, such as running daily/weekly/monthly advanced hunting queries and updating queries and custom detection rules. | SecOps Manager | [SOC maintenance tasks](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops-tasks) |
 
 Perform these implementation steps to set up threat hunting for Microsoft Sentinel.
 
 | Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. | Security Architect | [Advanced KQL Framework Workbook](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/advanced-kql-framework-workbook-empowering-you-to-become-kql/ba-p/3033766) |
-| <input type="checkbox" /> | 2. Review built-in hunting queries and create custom hunting queries based on organizational risk tolerance and security posture. | Security Architect | [Hunting capabilities in Microsoft Sentinel](https://docs.microsoft.com/azure/sentinel/hunting) |
-| <input type="checkbox" /> | 3. Build proactive threat hunting activities into SOC operational processes using the hunting dashboard. | SecOps Manager/Security Architect | [Hunting capabilities in Microsoft Sentinel](https://docs.microsoft.com/azure/sentinel/hunting) |
-| <input type="checkbox" /> | 4. Create hunting Livestreams to baseline activities in your environment. | Security Architect | [Use hunting Livestream in Microsoft Sentinel to detect threats](https://docs.microsoft.com/azure/sentinel/livestream) |
-| <input type="checkbox" /> | 5. Use Notebooks for larger, more complex hunting investigations. | Security Analysts | [Hunting capabilities in Microsoft Sentinel](https://docs.microsoft.com/azure/sentinel/hunting) <BR><BR> [Azure Sentinel notebook ninja - the series!](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/becoming-a-microsoft-sentinel-notebooks-ninja-the-series/ba-p/2693491) <BR><BR> [Use notebooks with Microsoft Sentinel for security hunting](https://docs.microsoft.com/azure/sentinel/notebooks?tabs=public-endpoint) |
+| <input type="checkbox" /> | 2. Review built-in hunting queries and create custom hunting queries based on organizational risk tolerance and security posture. | Security Architect | [Hunting capabilities in Microsoft Sentinel](/azure/sentinel/hunting) |
+| <input type="checkbox" /> | 3. Build proactive threat hunting activities into SOC operational processes using the hunting dashboard. | SecOps Manager/Security Architect | [Hunting capabilities in Microsoft Sentinel](/azure/sentinel/hunting) |
+| <input type="checkbox" /> | 4. Create hunting Livestreams to baseline activities in your environment. | Security Architect | [Use hunting Livestream in Microsoft Sentinel to detect threats](/azure/sentinel/livestream) |
+| <input type="checkbox" /> | 5. Use Notebooks for larger, more complex hunting investigations. | Security Analysts | [Hunting capabilities in Microsoft Sentinel](/azure/sentinel/hunting) <BR><BR> [Azure Sentinel notebook ninja - the series!](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/becoming-a-microsoft-sentinel-notebooks-ninja-the-series/ba-p/2693491) <BR><BR> [Use notebooks with Microsoft Sentinel for security hunting](/azure/sentinel/notebooks?tabs=public-endpoint) |
 
 <a id="alertqual"></a>
 ## 3. Enforce alert quality

@@ -22,13 +22,13 @@ description: Deploy ransomware protection to limit the scope of damage of an att
 
 # Phase 2: Limit the scope of damage
 
-In this phase, you prevent attackers from obtaining a large scope of access for potential damage to data and systems by protecting privileged roles.
+In this phase, you protect privileged roles to prevent attackers from obtaining a large scope of access for potential damage to data and systems.
 
 ## Privileged access strategy
 
 You must implement a comprehensive strategy to reduce the risk of privileged access compromise.
 
-All other security controls can easily be invalidated by an attacker with privileged access in your environment. Ransomware attackers use privileged access as a quick path to control all critical assets in the organization for their extortion. 
+All other security controls can easily be invalidated by an attacker with privileged access in your environment. Ransomware attackers use privileged access as a quick path to control all critical assets in the organization for attack and subsequent extortion. 
 
 ### Program and project member accountabilities
 
@@ -52,7 +52,7 @@ Build a multi-part strategy using the guidance at [https://aka.ms/SPA](https://a
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
-| <input type="checkbox" /> | Enforce end-to-end session security. | Explicitly validates the trust of users and devices before allowing access to administrative interfaces (using [Azure AD Conditional Access](/azure/active-directory/conditional-access/overview)). |
+| <input type="checkbox" /> | Enforce end-to-end session security. | Explicitly validates the trust of users and devices before allowing access to administrative interfaces (using [Azure Active Directory Conditional Access](/azure/active-directory/conditional-access/overview)). |
 | <input type="checkbox" /> |  Protect and monitor identity systems. | Prevents privilege escalation attacks including directories, identity management, administrator accounts and groups, and consent grant configuration. |
 | <input type="checkbox" /> | Mitigate lateral traversal. | Ensures that compromising a single device does not immediately lead to control of many or all other devices using local account passwords, service account passwords, or other secrets. |
 | <input type="checkbox" /> | Ensure rapid threat response. | Limits an adversary's access and time in the environment. See [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response) for more information. |
@@ -63,9 +63,9 @@ Build a multi-part strategy using the guidance at [https://aka.ms/SPA](https://a
 
 Try to achieve these results in 30-90 days:
 
-- 100 % of admins required to use secure workstations
-- 100 % local workstation/server passwords randomized
-- 100 % deployment of privilege escalation mitigations
+- 100 % of admins are required to use secure workstations
+- 100 % local workstation/server passwords are randomized
+- 100 % privilege escalation mitigations are deployed
 
 ## Detection and response
 
@@ -95,10 +95,10 @@ Apply these best practices for improving your detection and response.
 | Done| Task | Description |
 |:-------|:-------|:-----|
 | <input type="checkbox" /> | Prioritize common entry points: <br><br> - Use integrated Extended Detection and Response (XDR) tools like [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection) to provide high quality alerts and minimize friction and manual steps during response. <br><br> - Monitor for brute-force attempts like [password spray](/defender-for-identity/compromised-credentials-alerts). | Ransomware (and other) operators favor endpoint, email, identity, and RDP as entry points. |
-| <input type="checkbox" /> | Monitor for an adversary disabling security (this is often part of an attack chain), such as: <br><br> - Event log clearing, especially the Security Event log and PowerShell Operational logs. <br><br> - Disabling of security tools and controls (associated with some groups). | Attackers target security detection facilities to more safely continue their attack. |
+| <input type="checkbox" /> | Monitor for an adversary disabling security (this is often part of an attack chain), such as: <br><br> - Event log clearing, especially the Security Event log and PowerShell Operational logs. <br><br> - Disabling of security tools and controls. | Attackers target security detection facilities to continue their attack more safely. |
 | <input type="checkbox" /> | Don’t ignore commodity malware. | Ransomware attackers regularly purchase access to target organizations from dark markets. |
 | <input type="checkbox" /> | Integrate outside experts into processes to supplement expertise, such as the [Microsoft Detection and Response Team (DART)](https://aka.ms/dart). | Experience counts for detection and recovery. |
-| <input type="checkbox" /> | Rapidly isolate compromised computers using [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network). | Windows 10 integration makes this easy. |
+| <input type="checkbox" /> | Rapidly isolate compromised computers using [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network). | Windows 11 and 10 integration makes this easy. |
 |  |  |  |
 
 
@@ -117,8 +117,7 @@ Key information from Microsoft:
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
-- [Microsoft’s DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
-- [Microsoft DART ransomware case study](dart-ransomware-case-study.md)
+- Microsoft's Detection and Response Team (DART) ransomware [approach](incident-response-playbook-dart-ransomware-approach.md) and [case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
 

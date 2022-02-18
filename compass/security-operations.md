@@ -11,25 +11,25 @@ ms.prod: m365-security
 
 # Microsoft security best practices for security operations
 
-Security operations maintain and restore the security assurances of the system as live adversaries attack it. The tasks of security operations are described well by the NIST Cybersecurity Framework functions of Detect, Respond, and Recover.
+Security operations (SecOps) maintain and restore the security assurances of the system as live adversaries attack it. The tasks of SecOps are described well by the NIST Cybersecurity Framework functions of Detect, Respond, and Recover.
 
-- **Detect** - Security operations must detect the presence of adversaries in the system, who are incentivized to stay hidden in most cases as this allows them to achieve their objectives unimpeded. This can take the form of reacting to an alert of suspicious activity or proactively hunting for anomalous events in the enterprise activity logs.
+- **Detect** - SecOps must detect the presence of adversaries in the system, who are incentivized to stay hidden in most cases as this allows them to achieve their objectives unimpeded. This can take the form of reacting to an alert of suspicious activity or proactively hunting for anomalous events in the enterprise activity logs.
 
-- **Respond** – Upon detection of potential adversary action or campaign, security operations must rapidly investigate to identify whether it is an actual attack (true positive) or a false alarm (false positive) and then enumerate the scope and goal of the adversary operation.
+- **Respond** – Upon detection of potential adversary action or campaign, SecOps must rapidly investigate to identify whether it is an actual attack (true positive) or a false alarm (false positive) and then enumerate the scope and goal of the adversary operation.
 
-- **Recover** – The ultimate goal of security operations is to preserve or restore the security assurances (confidentiality, integrity, availability) of business services during and after an attack.
+- **Recover** – The ultimate goal of SecOps is to preserve or restore the security assurances (confidentiality, integrity, availability) of business services during and after an attack.
 
 The most significant security risk most organizations face is from human attack operators (of varying skill levels). This is because risk from automated/repeated attacks have been mitigated significantly for most organizations by signature and machine learning based approaches built into anti-malware (though there are notable exceptions like Wannacrypt and NotPetya, which moved faster than these defenses).
 
 While human attack operators are challenging to face because of their adaptability (vs. automated/repeated logic), they are operating at the same “human speed” as defenders, which help level the playing field.
 
-Security Operations (sometimes referred to as a Security Operations Center (SOC)) has a critical role to play in limiting the time and access an attacker can get to valuable systems and data. Each minute that an attacker has in the environment allows them to continue to conduct attack operations and access sensitive or valuable systems.
+SecOps (sometimes referred to as a Security Operations Center (SOC)) has a critical role to play in limiting the time and access an attacker can get to valuable systems and data. Each minute that an attacker has in the environment allows them to continue to conduct attack operations and access sensitive or valuable systems.
 
 ## Objective and metrics
 
-The metrics you measure will have a significant effect on the behaviors and outcomes of security operations. Focusing on the right measurements will help drive continuous improvement in the right areas that meaningfully reduce risk.
+The metrics you measure will have a significant effect on the behaviors and outcomes of SecOps. Focusing on the right measurements will help drive continuous improvement in the right areas that meaningfully reduce risk.
 
-To ensure that security operations are effectively containing attackers access, the objectives should focus on:
+To ensure that SecOps are effectively containing attackers access, the objectives should focus on:
 
 - Reducing **time to acknowledge** an alert to ensure that detected adversaries are not ignored while defenders are spending time investigating false positives.
 
@@ -39,16 +39,15 @@ To ensure that security operations are effectively containing attackers access, 
 
 - Increasing focus on **proactively hunting** for adversaries as your program matures and reactive incidents get under control. This is focused on reducing the time that a higher skilled adversary can operate in the environment (for example, skilled enough to evade reactive alerts).
 
-For more information on how Microsoft’s SOC uses these metrics, see
-[https://aka.ms/ITSOC](https://aka.ms/ITSOC).
+For more information on how Microsoft’s SOC uses these metrics, see [https://aka.ms/ITSOC](https://aka.ms/ITSOC).
 
 ## Hybrid enterprise view
 
-Security operations should ensure their tooling, processes, and analyst skill sets enable visibility across the full span of their hybrid estate.
+SecOps should ensure their tooling, processes, and analyst skill sets enable visibility across the full span of their hybrid estate.
 
 Attackers don’t restrict their actions to a particular environment when targeting an organization, they will attack resources on any platform using any method available. Enterprise organizations adopting cloud services like Azure and AWS are effectively operating a hybrid of cloud and on-premises assets.
 
-Security operations tooling and processes should be designed for attacks on cloud and on-premises assets as well as attackers pivoting between cloud and on-premises resources using identity or other means. This enterprise-wide view will enable security operations teams to rapidly detect, respond, and recover from attacks, reducing organizational risk.
+SecOps tooling and processes should be designed for attacks on cloud and on-premises assets as well as attackers pivoting between cloud and on-premises resources using identity or other means. This enterprise-wide view will enable SecOps teams to rapidly detect, respond, and recover from attacks, reducing organizational risk.
 
 ## Leverage native detections and controls
 

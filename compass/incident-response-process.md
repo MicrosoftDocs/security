@@ -11,15 +11,15 @@ ms.prod: m365-security
 
 # Incident response process
 
-The first step is to **have an incident response plan in place** that encompasses both internal and external processes for responding to cybersecurity incidents. The plan should include how to:
+The first step is to **have an incident response plan in place** that encompasses both internal and external processes for responding to cybersecurity incidents. The plan should detail how your organization should:
 
 - Address attacks that vary with the business risk and impact of the incident, which can vary from an isolated web site that is no longer available to the compromise of administrator-level credentials. 
 - Define the purpose of the response, such as a return to service or to handle legal or public relations aspects of the attack.
 - Prioritize the work that needs to get done in terms of how many people should be working on the incident and their tasks.
 
-See the [incident response planning article](incident-response-planning.md) for a checklist of activities to consider including in your incident response plan. Once your incident response plan is in place, test it regularly for the most serious types of cyberattacks to ensure that your organization can respond quickly and efficiently.
+See the [incident response planning article](incident-response-planning.md) for a checklist of activities you should consider including in your incident response plan. Once your incident response plan is in place, test it regularly for the most serious types of cyberattacks to ensure that your organization can respond quickly and efficiently.
 
-Although each organization’s incident response process may be different based on organizational structure and capabilities, consider the set of recommendations and best practices in this article for responding to security incidents.
+Although each organization’s incident response process may be different based on organizational structure and capabilities and historical experience, consider the set of recommendations and best practices in this article for responding to security incidents.
 
 During an incident, it is critical to:
 
@@ -98,7 +98,7 @@ Here are some useful tips:
 
 - Don’t investigate forever
 
-   You must ruthlessly prioritize your investigation efforts. For example, only perform forensic analysis on endpoints that attackers have actually used or modified. In a major incident where an attacker has administrative privileges, it is practically impossible to investigate all potentially compromised resources (which may include all organization resources). 
+   You must ruthlessly prioritize your investigation efforts. For example, only perform forensic analysis on endpoints that attackers have actually used or modified. For example, in a major incident where an attacker has administrative privileges, it is practically impossible to investigate all potentially compromised resources (which may include all organization resources). 
 
 - Share information
 
@@ -116,7 +116,7 @@ A key expectation to manage with stakeholders is that you may never be able to i
 
 ### Operations
 
-For security operations aspects of incident response, here are some goals to consider:
+For security operations (SecOps) aspects of incident response, here are some goals to consider:
 
 - Staying focused
 
@@ -138,11 +138,11 @@ Here are some useful tips:
 
 - Keep ongoing daily operations intact
 
-   Ensure that normal security operations are not completely sidelined to support incident investigations. This work still needs to be done.
+   Ensure that normal SecOps are not completely sidelined to support incident investigations. This work still needs to be done.
 
 - Avoid wasteful spending 
 
-   Many major incidents result in the purchase of expensive security tools under pressure that are never deployed or used. If you can’t deploy and use a tool during the investigation&mdash;which can include hiring and training for additional staff with the skill sets needed to operate the tool&mdash;defer acquisition until after you finish the investigation. 
+   Many major incidents result in the purchase of expensive security tools under pressure that are never deployed or used. If you can’t deploy and use a tool during the investigation, which can include hiring and training for additional staff with the skill sets needed to operate the tool, defer acquisition until after you finish the investigation. 
 
 - Access deep expertise 
 
@@ -213,13 +213,13 @@ Here are some helpful tips:
 
 - Capture the lessons learned
 
-  Build and continually improve role-specific handbooks for security operations, even if it’s your first incident without any written procedures.
+  Build and continually improve role-specific handbooks for SecOps, even if it’s your first incident without any written procedures.
 
 Executive and board-level communications for incident response can be challenging if not practiced or anticipated. Make sure you have a communication plan to manage progress reporting and expectations for recovery.
 
 ## Incident response process
 
-Consider this general guidance about the incident response process for your security operations and staff.
+Consider this general guidance about the incident response process for your SecOps and staff.
 
 ### 1. Decide and act
 
@@ -275,7 +275,7 @@ The specific response steps are dependent on the nature of the attack, but the m
 
 ### 2. Post-incident cleanup
 
-Because you don’t benefit from learned lessons until you change future actions, always integrate any useful information learned from the investigation back into your security operations. 
+Because you don’t benefit from learned lessons until you change future actions, always integrate any useful information learned from the investigation back into your SecOps. 
 
 Determine the connections between past and future incidents by the same threat actors or methods and capture these learnings to avoid repeating manual work and analysis delays in the future. 
 
@@ -301,6 +301,7 @@ Review your response processes to identify and resolve any gaps found during the
 - [Planning](incident-response-planning.md) for your SOC
 - [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
+- [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 
 ## Key Microsoft security resources 

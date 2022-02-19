@@ -25,7 +25,7 @@ description: Deploy ransomware protection to make it hard for an attacker to get
 In this phase, you make the attackers work a lot harder to get into your on-premises or cloud infrastructures by incrementally removing the risks at the points of entry.
 
 >[!Important]
->While many of these will be familiar and/or easy to quickly accomplish, it’s critically important that **your work on Phase 3 should not slow down your progress on phases 1 and 2**!
+>While many of these will be familiar and easy to quickly accomplish, it’s critically important that **your work on Phase 3 should not slow down your progress on phases 1 and 2**!
 >
 
 See these sections:
@@ -37,7 +37,7 @@ See these sections:
 
 ## Remote access
 
-Gaining access to your organization's intranet through a remote access connection is an attack vector for ransomware attackers. Once an on-premises user account is compromised, an attacker is free to roam on an intranet to gather intelligence, elevate privileges, and install ransomware code. The recent Colonial Pipeline cyberattack is an example.
+Gaining access to your organization's intranet through a remote access connection is an attack vector for ransomware attackers. Once an on-premises user account is compromised, an attacker is free to roam on an intranet to gather intelligence, elevate privileges, and install ransomware. The Colonial Pipeline cyberattack in 2021 is an example.
 
 ### Program and project member accountabilities
 
@@ -63,18 +63,18 @@ Apply these best practices to protect your remote access infrastructure from ran
 | Done| Task | Description |
 |:-------|:-------|:-----|
 | <input type="checkbox" /> | Maintain software and appliance updates. Avoid missing or neglecting manufacturer protections (security updates, supported status). | Attackers use well-known vulnerabilities that have not yet been patched as attack vectors. |
-| <input type="checkbox" /> | Configure Azure AD for existing remote access by including enforcing [Zero Trust](https://www.microsoft.com/security/business/zero-trust) user and device validation with Conditional Access. | Zero Trust provides multiple levels of securing access to your organization. |
+| <input type="checkbox" /> | Configure Azure Active Directory (Azure AD) for existing remote access by including enforcing [Zero Trust](https://www.microsoft.com/security/business/zero-trust) user and device validation with Conditional Access. | Zero Trust provides multiple levels of securing access to your organization. |
 | <input type="checkbox" /> | Configure security for existing third-party VPN solutions (Cisco [AnyConnect](/azure/active-directory/saas-apps/cisco-anyconnect), Palo Alto Networks [GlobalProtect](/azure/active-directory/saas-apps/palo-alto-networks-globalprotect-tutorial) & [Captive Portal](/azure/active-directory/saas-apps/paloaltonetworks-captiveportal-tutorial), Fortinet [FortiGate SSL VPN](/azure/active-directory/saas-apps/fortigate-ssl-vpn-tutorial), Citrix [NetScaler](/azure/active-directory/saas-apps/citrix-netscaler-tutorial), [Zscaler Private Access (ZPA)](/azure/active-directory/saas-apps/zscalerprivateaccess-tutorial), and [more](/azure/active-directory/saas-apps/tutorial-list)). | Take advantage of the built-in security of your remote access solution. |
 | <input type="checkbox" /> | Deploy [Azure Point-to-Site (P2S) VPN](/azure/vpn-gateway/openvpn-azure-ad-tenant#enable-authentication) to provide remote access. | Take advantage of integration with Azure AD and your existing Azure subscriptions. |
 | <input type="checkbox" /> | Publish on-premises web apps with [Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services). | Apps published with Azure AD Application Proxy do not need a remote access connection. |
 | <input type="checkbox" /> | Secure access to Azure resources with [Azure Bastion](/azure/bastion/bastion-overview). | Securely and seamlessly connect to your Azure virtual machines over SSL. |
-| <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)).  |  Reduces risk from ransomware activities that probe baseline security features and settings. |
+| <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)).  |  Reduce risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
 
 
 ## Email and collaboration
 
-Implement best practices for email and collaboration solutions to make it more difficult for attackers to abuse them, while allowing your workers to easily and safely access external content.
+Implement best practices for email and collaboration solutions to make it more difficult for attackers to abuse them, while allowing your workers to access external content easily and safely.
 
 Attackers frequently enter the environment by transferring malicious content in with authorized collaboration tools such as email and file sharing and convincing users to run it. Microsoft has invested in enhanced mitigations that vastly increase protection against these attack vectors. 
 
@@ -109,9 +109,9 @@ Apply these best practices to protect your email and collaboration solutions fro
 
 ## Endpoints
 
-Implement relevant security features and rigorously follow software maintenance best practices for computers and applications, prioritizing applications and server/client operating systems directly exposed to Internet traffic and content.
+Implement relevant security features and rigorously follow software maintenance best practices for endpoints (devices) and applications, prioritizing applications and server/client operating systems directly exposed to Internet traffic and content.
 
-Internet-exposed endpoints are a common entry vector that provides attackers access to the organization's assets. Prioritize blocking common OS and application with preventive controls to slow or stop them from executing the next stages. 
+Internet-exposed endpoints are a common entry vector that provides attackers access to the organization's assets. Prioritize blocking common OS and application vulnerabilities with preventive controls to slow or stop them from executing the next stages. 
 
 ### Program and project member accountabilities
 
@@ -136,11 +136,11 @@ Apply these best practices to all Windows, Linux, MacOS, Android, iOS, and other
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
-| <input type="checkbox" /> | Block known threats with [attack surface reduction](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction) rules, [tamper protection](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Tamper-protection-now-generally-available-for-Microsoft-Defender/ba-p/911482), and [block at first site](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus). | Don't let lack of use of these built-in security features be the reason an attacker entered your organization. |
+| <input type="checkbox" /> | Block known threats with [attack surface reduction](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) rules, [tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection), and [block at first site](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus). | Don't let lack of use of these built-in security features be the reason an attacker entered your organization. |
 | <input type="checkbox" /> | Apply [Security Baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) to harden internet-facing Windows servers and clients and Office applications. | Protect your organization with the minimum level of security and build from there. |
 | <input type="checkbox" /> | Maintain your software so that it is: <br><br> - Updated: Rapidly deploy critical security updates for operating systems, browsers, & email clients <br><br> - Supported:  Upgrade operating systems and software for versions supported by your vendors. | Attackers are counting on you missing or neglecting manufacturer updates and upgrades. |
 | <input type="checkbox" /> | Isolate, disable, or retire insecure systems and protocols, including [unsupported operating systems](/lifecycle/) and [legacy protocols](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/retire-those-old-legacy-protocols/ba-p/259396). | Attackers use known vulnerabilities of legacy devices, systems, and protocols as entry points into your organization. |
-| <input type="checkbox" /> | Block unexpected traffic with host-based firewall and network defenses. | Some malware attacks reply on unsolicited inbound traffic to hosts as a way of making a connection for an attack. |
+| <input type="checkbox" /> | Block unexpected traffic with host-based firewall and network defenses. | Some malware attacks rely on unsolicited inbound traffic to hosts as a way of making a connection for an attack. |
 | <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)). | Reduces risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
 
@@ -171,7 +171,7 @@ Apply these best practices to protect your accounts from ransomware attackers.
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
-| <input type="checkbox" /> | Enforce strong MFA or passwordless sign-in for all users. Start with administrator and priority accounts using one or more of: <br><br> - Passwordless authentication with [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) or the [Microsoft Authenticator app](/azure/active-directory/authentication/howto-authentication-phone-sign-in). <br><br> - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-userstates). <br><br> - Third-party MFA solution. | Make it harder for an attacker to perform a credential compromise. |
+| <input type="checkbox" /> | Enforce strong MFA or passwordless sign-in for all users. Start with administrator and [priority](/microsoft-365/admin/setup/priority-accounts) accounts using one or more of: <br><br> - Passwordless authentication with [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) or the [Microsoft Authenticator app](/azure/active-directory/authentication/howto-authentication-phone-sign-in). <br><br> - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-userstates). <br><br> - A third-party MFA solution. | Make it harder for an attacker to perform a credential compromise by just determining a user account password. |
 | <input type="checkbox" /> | Increase password security: <br><br> - For Azure AD accounts, use [Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad) to detect and block known weak passwords and additional weak terms that are specific to your organization. <br><br> - For on-premises Active Directory Domain Services (AD DS) accounts, [Extend Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises) to AD DS accounts. | Ensure that attackers can't determine common passwords or passwords based on your organization name. |
 | <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)). | Reduces risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
@@ -192,8 +192,7 @@ Key information from Microsoft:
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
-- [Microsoft’s DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
-- [Microsoft DART ransomware case study](dart-ransomware-case-study.md)
+- Microsoft's Detection and Response Team (DART) ransomware [approach](incident-response-playbook-dart-ransomware-approach.md) and [case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
 

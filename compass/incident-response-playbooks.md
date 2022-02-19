@@ -26,7 +26,7 @@ ms.technology: m365d
 
 You need to respond quickly to detected security attacks to contain and remediate its damage. As new widespread cyberattacks happen, such as [Nobellium](https://msrc-blog.microsoft.com/2020/12/21/december-21st-2020-solorigate-resource-center/) and the [Exchange Server vulnerability](https://msrc-blog.microsoft.com/2021/03/16/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/), Microsoft will respond with detailed incident response guidance. 
 
-You also need detailed guidance for common attack methods that malicious users employ every day. To address this need, use the incident response playbooks for these types of attacks:
+You also need detailed guidance for common attack methods that malicious users employ every day. To address this need, use incident response playbooks for these types of attacks:
 
 - [Phishing](incident-response-playbook-phishing.md)
 
@@ -38,10 +38,10 @@ Each playbook includes:
 
 - **Prerequisites:** The specific requirements you need to complete before starting the investigation. For example, logging that should be turned on and roles and permissions that are required.
 - **Workflow:** The logical flow that you should follow to perform the investigation.
-- **Checklist:** A list of tasks for the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done.
+- **Checklist:** A list of tasks for the steps in the flow chart. This checklist can be helpful in highly-regulated environments to verify what you have done.
 - **Investigation steps:** Detailed step-by-step guidance for the specific investigation.
 
-Also see [Microsoft’s DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md) for information on how the Detection and Response Team (DART) at Microsoft deals with ransomware attacks.
+Also see [Microsoft DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md) for information about how the Microsoft Detection and Response Team (DART) deals with ransomware attacks.
 
 ## Incident response resources
 
@@ -49,4 +49,5 @@ Also see [Microsoft’s DART ransomware approach and best practices](incident-re
 - [Planning](incident-response-planning.md) for your Security Operations Center (SOC)
 - [Process](incident-response-process.md) for incident response process recommendations and best practices
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
+- [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response

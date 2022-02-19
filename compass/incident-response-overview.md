@@ -12,7 +12,7 @@ ms.prod: m365-security
 
 # Incident response overview
 
-Incident response is the practice of investigating and remediating active attack campaigns on your organization. This is part of the [security operations](/azure/cloud-adoption-framework/secure/security-operations) discipline and is primarily reactive in nature.
+Incident response is the practice of investigating and remediating active attack campaigns on your organization. This is part of the [security operations (SecOps)](/azure/cloud-adoption-framework/secure/security-operations) discipline and is primarily reactive in nature.
  
 Incident response has the largest direct influence on the overall mean time to acknowledge (MTTA) and mean time to remediate (MTTR) that measure how well security operations are able to reduce organizational risk. Incident response teams heavily rely on good working relationships between threat hunting, intelligence, and incident management teams (if present) to actually reduce risk. See [SecOps metrics](/azure/cloud-adoption-framework/secure/security-operations#secops-metrics) for more information.
  
@@ -20,7 +20,7 @@ For more information on security operations roles and responsibilities, see [Clo
 
 ## New-to-role resources
 
-If you are new-to-role as a security analyst, see these resources to get you started.
+If you're new-to-role as a security analyst, see these resources to get you started.
 
 | Topic | Resource |
 |:-------|:-----|
@@ -34,15 +34,16 @@ If you are new-to-role as a security analyst, see these resources to get you sta
 
 ## Experienced security analyst resources
 
-If you are an experienced security analyst, see these resources to quickly ramp up your SecOps team for Microsoft security services.
+If you're an experienced security analyst, see these resources to quickly ramp up your SecOps team for Microsoft security services.
 
 | Topic | Resource |
 |:-------|:-----|
 | Microsoft Sentinel | [How to investigate incidents](/azure/sentinel/tutorial-investigate-cases) |
+| Microsoft Defender for Cloud (Azure resources) | [How to investigate alerts](/azure/defender-for-cloud/managing-and-responding-alerts) |
 | Microsoft 365 Defender | [How to investigate incidents](/microsoft-365/security/defender/incidents-overview) |
 | Security operations establishment or modernization | Azure Cloud Adoption Framework articles for [SecOps](/azure/cloud-adoption-framework/secure/security-operations) and [SecOps functions](/azure/cloud-adoption-framework/organize/cloud-security-operations-center)|
 | Microsoft security best practices  | [How to best use your SecOps center](/security/compass/security-operations) |
-| Incident response playbooks |  Overview at [https://aka.ms/IRplaybooks](https://aka.ms/IRplaybooks) <br> - [Phishing](incident-response-playbook-phishing.md) <br> - [Password spray](incident-response-playbook-password-spray.md) <br> - [App consent grant](incident-response-playbook-app-consent.md) |
+| Incident response playbooks |  Overview at [https://aka.ms/IRplaybooks](https://aka.ms/IRplaybooks) <br><br> - [Phishing](incident-response-playbook-phishing.md) <br> - [Password spray](incident-response-playbook-password-spray.md) <br> - [App consent grant](incident-response-playbook-app-consent.md) |
 | SOC Process Framework | [Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-azure-sentinel-soc-process-framework-workbook/ba-p/2339315) |
 | MSTICPy and Jupyter Notebooks | [Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/msticpy-and-jupyter-notebooks-in-azure-sentinel-an-update/ba-p/2279661) |
 |||
@@ -81,7 +82,7 @@ In the safety of a trial or paid sandbox subscription, you can:
 
 The learnings from Simuland lab environment scenarios can then be implemented in your production environment and security processes.
 
-After reading an overview of [Simuland](https://www.microsoft.com/security/blog/2021/05/20/simuland-understand-adversary-tradecraft-and-improve-detection-strategies/), see the [Simuland GitHub repository](https://github.com/Azure/SimuLand).
+See this overview of [Simuland](https://www.microsoft.com/security/blog/2021/05/20/simuland-understand-adversary-tradecraft-and-improve-detection-strategies/) and the resources at the [Simuland GitHub repository](https://github.com/Azure/SimuLand).
 
 
 ## Incident response resources
@@ -90,6 +91,7 @@ After reading an overview of [Simuland](https://www.microsoft.com/security/blog/
 - [Process](incident-response-process.md) for incident response process recommendations and best practices
 - [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
+- [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 
 

@@ -40,8 +40,8 @@ To avoid being forced into payment (the profitable situation for attackers), the
 
 Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other areas in phases 1 or 2, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
 
-- What business assets would be the most damaging if compromised? For example, what assets would business leadership would be willing to pay an extortion demand if attackers controlled them? 
-- How do these business assets translate to IT assets (files, applications, databases, servers, etc.)?
+- What business assets would be the most damaging if compromised? For example, what assets would our business leadership be willing to pay an extortion demand if attackers controlled them? 
+- How do these business assets translate to IT assets (such as files, applications, databases, servers, and control systems)?
 - How can we protect or isolate these assets so that attackers with access to the general IT environment can’t access them? 
 
 ## Secure backups
@@ -79,10 +79,10 @@ Apply these best practices to secure your backup infrastructure.
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
-| <input type="checkbox" /> | Backup all critical systems automatically on a regular schedule. | Allows you to recover data up to the last backup. |
+| <input type="checkbox" /> | Backup all critical data automatically on a regular schedule. | Allows you to recover data up to the last backup. |
 | <input type="checkbox" /> | Regularly exercise your business continuity/disaster recovery (BC/DR) plan. | Ensures rapid recovery of business operations by treating a ransomware or extortion attack with the same importance as a natural disaster. |
-| <input type="checkbox" /> | Protect backups against deliberate erasure and encryption: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site. | Backups that are accessible by attackers can be rendered unusable for business recovery. |
-| <input type="checkbox" /> | Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | Attackers deliberately target these resources because it impacts your ability to recover. |
+| <input type="checkbox" /> | Protect backups against deliberate erasure and encryption: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site. | Backups that are accessible by attackers can be rendered unusable for business recovery.  Implement stronger security to access backups and the inability to change the data stored in backups. |
+| <input type="checkbox" /> | Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | Attackers deliberately target these resources because it impacts your ability to recover. Make sure they survive a ransomware attack. |
 
 
 ### Implementation results and timelines
@@ -120,7 +120,7 @@ Apply these best practices to protect your organization data.
 |:-------|:-------|:-----|
 | <input type="checkbox" /> | Migrate your organization to the cloud: <br><br> - Move user data to cloud solutions like OneDrive/SharePoint to take advantage of [versioning and recycle bin capabilities](/microsoft-365/enterprise/microsoft-365-malware-and-ransomware-protection#sharepoint-online-and-onedrive-for-business-protection-against-ransomware). <br><br> - Educate users on how to [recover their files](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15) by themselves to reduce delays and cost of recovery. | User data in the Microsoft cloud can be protected by built-in security and data management features. |
 | <input type="checkbox" /> | Designate [Protected Folders](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders). | Makes it more difficult for unauthorized applications to modify the data in these folders. |
-| <input type="checkbox" /> | Review your permissions: <br><br> - Discover broad write/delete permissions on file shares, SharePoint, and other solutions. Broad is defined as many users having write/delete permissions for business-critical data. <br><br> - Reduce broad permissions while meeting business collaboration requirements.  <br><br> - Audit and monitor to ensure broad permissions don’t reappear. | Reduces risk from broad access-enabling ransomware activities. |
+| <input type="checkbox" /> | Review your permissions: <br><br> - Discover broad write/delete permissions on file shares, SharePoint, and other solutions. Broad is defined as many users having write/delete permissions for business-critical data. <br><br> - Reduce broad permissions for critical data locations while meeting business collaboration requirements.  <br><br> - Audit and monitor critical data locations to ensure broad permissions don’t reappear. | Reduces risk from ransomware activities that rely on broad access. |
 |  |  |  |
 
 ## Next step
@@ -138,8 +138,7 @@ Key information from Microsoft:
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
-- [Microsoft’s DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
-- [Microsoft DART ransomware case study](dart-ransomware-case-study.md)
+- Microsoft's Detection and Response Team (DART) ransomware [approach](incident-response-playbook-dart-ransomware-approach.md) and [case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
 

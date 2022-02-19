@@ -1,8 +1,9 @@
 ---
 title: Identity and Access Management in Azure | Microsoft Docs
 description: Manage access based on identity authentication and authorization 
-author: MarkSimos
-ms.author: josephd
+ms.author: dansimp
+author: dansimp
+manager: dansimp
 ms.topic: article
 ms.prod: m365-security
 ---

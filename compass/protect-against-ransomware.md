@@ -28,7 +28,7 @@ description: Rapidly protect your organization against ransomware and extortion.
 
 Mitigating ransomware and extortion attacks is an urgent priority for organizations because of the high impact of these attacks and high likelihood an organization will experience one. 
 
-Ransomware is a type of extortion attack that encrypts files and folders, preventing access to important data. Criminals use ransomware to extort money from victims by demanding money, usually in form of cryptocurrencies, in exchange for a decryption key. Criminals also often use ransomware to extort money from victims in exchange for not releasing sensitive data to the dark web or the public internet.
+Ransomware is a type of extortion attack that encrypts files and folders, preventing access to important data. Criminals use ransomware to extort money from victims by demanding money, usually in form of cryptocurrency, in exchange for a decryption key. Criminals also often use ransomware to extort money from victims in exchange for not releasing sensitive data to the dark web or the public internet.
 
 While early ransomware mostly used malware that spread with phishing or between devices, human-operated ransomware has emerged where a gang of active attackers, driven by human intelligence, target an organization rather than a single device or set of devices and leverage the attackers’ knowledge of common system and security misconfigurations and vulnerabilities to infiltrate the organization, navigate the enterprise network, and adapt to the environment and its weaknesses as they go.
 
@@ -36,7 +36,7 @@ These attacks can be catastrophic to business operations and are difficult to cl
 
 ## Sophistication of ransomware and extortion attacks
 
-Technical hallmarks of these human-operated ransomware attacks typically include credential theft and lateral movement and can result in deployment of ransomware payloads to many high-value resources in order to encourage payment of the ransom. The attacker model is often effective and highly tuned, including targeting destruction or encryption of backups, network and enterprise documentation, and other artifacts that would let the organization rebuild without paying the ransom.
+Technical hallmarks of these human-operated ransomware attacks typically include credential theft and lateral movement and can result in deployment of ransomware payloads to many high-value resources to encourage payment of the ransom. The attacker model is often effective and highly tuned, including targeting destruction or encryption of backups, network and enterprise documentation, and other artifacts that would let the organization rebuild without paying the ransom.
 
 The attacks also have sophisticated business models, with attackers setting their ransom prices based on internal financial documentation from the company, cyber-insurance coverage levels, and typical regulatory compliance fines the company would have to pay. 
 
@@ -52,7 +52,7 @@ To help you understand how to protect your organization from ransomware, this gu
 
 1. **Stick with the recommended priorities** 
 
-    Use the phases as a starting plan for what to do first, next, and later so you get the most impactful elements first. These recommendations have been prioritized using the [Zero Trust](https://www.microsoft.com/security/business/zero-trust) principle of assume breach, which focuses on minimizing business risk by assuming the attackers can successfully gain access to your environment through one or more methods.
+    Use the phases as a starting plan for what to do first, next, and later so you get the most impactful elements first. These recommendations have been prioritized using the [Zero Trust](https://www.microsoft.com/security/business/zero-trust) principle of assuming a breach. This forces you to focus on minimizing business risk by assuming the attackers can successfully gain access to your environment through one or more methods.
 
 2. **Be proactive and flexible (but don’t skip important tasks)**
 
@@ -81,13 +81,13 @@ This phase is designed to [minimize the monetary incentive from ransomware attac
 
 ### Phase 2. Limit the scope of damage
 
-Make the attackers work a lot harder to [gain access to multiple business critical systems via privileged access roles](protect-against-ransomware-phase2.md). Limiting the attacker’s ability to get privileged access makes it much harder to profit off of an attack on your organization, making it more likely they will give up and go elsewhere.
+Make the attackers work a lot harder to [gain access to multiple business critical systems through privileged access roles](protect-against-ransomware-phase2.md). Limiting the attacker’s ability to get privileged access makes it much harder to profit off of an attack on your organization, making it more likely they will give up and go elsewhere.
 
 ### Phase 3. Make it hard to get in
 
-This last set of tasks is important to raise friction for entry but will take time to complete as part of a larger security journey. The goal of this phase is for attackers to have to work a lot harder to [obtain access to your on-premises or cloud infrastructures](protect-against-ransomware-phase3.md) at the various common points of entry for attacks. There are a lot of these tasks, so it’s important to prioritize your work here based on how fast you can accomplish these with your current resources. 
+This last set of tasks is important to raise friction for entry but will take time to complete as part of a larger security journey. The goal of this phase is for attackers to have to work a lot harder to [obtain access to your on-premises or cloud infrastructures](protect-against-ransomware-phase3.md) at the various common points of entry. There are a lot of these tasks, so it’s important to prioritize your work here based on how fast you can accomplish these with your current resources. 
 
-While many of these will be familiar and/or easy to quickly accomplish, it’s critically important that ***your work on phase 3 should not slow down your progress on phases 1 and 2!***
+While many of these will be familiar and easy to quickly accomplish, it’s critically important that ***your work on phase 3 should not slow down your progress on phases 1 and 2!***
 
 ## At a glance
 
@@ -109,8 +109,7 @@ Key information from Microsoft:
 - [Human-operated ransomware](human-operated-ransomware.md)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
-- [Microsoft’s DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
-- [Microsoft DART ransomware case study](dart-ransomware-case-study.md)
+- Microsoft's Detection and Response Team (DART) ransomware [approach](incident-response-playbook-dart-ransomware-approach.md) and [case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
 

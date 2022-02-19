@@ -111,7 +111,7 @@
           href: backup-plan-to-protect-against-ransomware.md 
         - name: DART approach to ransomware
           href: incident-response-playbook-dart-ransomware-approach.md
-        - name: Microsoft DART ransomware case study
+        - name: DART ransomware case study
           href: dart-ransomware-case-study.md 
     - name: Information protection and storage
       items:

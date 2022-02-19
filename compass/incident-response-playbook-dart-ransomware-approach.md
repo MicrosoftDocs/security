@@ -1,5 +1,5 @@
 ---
-title: Microsoft’s DART ransomware approach and best practices
+title: Microsoft DART ransomware approach and best practices
 description: Understand how Microsoft's Detection and Response Team (DART) responds to ransomware attacks and their recommendations for containment and post-incident activities.
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, microsoft 365 defender
 search.product: DART
@@ -22,7 +22,7 @@ ms.topic: article
 ms.technology: m365d
 ---
 
-# Microsoft’s DART ransomware approach and best practices
+# Microsoft DART ransomware approach and best practices
 
 [Human-operated ransomware](human-operated-ransomware.md) is not a malicious software problem—it’s a human criminal problem. The solutions used to address commodity problems aren’t enough to prevent a threat that more closely resembles a nation-state threat actor who:
 
@@ -108,13 +108,13 @@ The following are three key steps in DART ransomware investigations:
 
 An assessment of the current situation is critical to understanding the scope of the incident and for determining the best people to assist and to plan and scope the investigation and remediation tasks. Asking the following initial questions is crucial in helping to determine the situation.
 
-### What initially made you aware of the ransomware attack?
+#### What initially made you aware of the ransomware attack?
 
 If the initial threat was identified by IT staff—such as noticing backups being deleted, antivirus alerts, endpoint detection and response (EDR) alerts, or suspicious system changes—it is often possible to take quick decisive measures to thwart the attack, typically by disabling all inbound and outbound Internet communication. This may temporarily affect business operations, but that would typically be much less impactful than an adversary deploying ransomware.
 
 If the threat was identified by a user call to the IT helpdesk, there may be enough advance warning to take defensive measures to prevent or minimize the effects of the attack. If the threat was identified by an external entity (like law enforcement or a financial institution), it is likely that the damage is already done, and you will see evidence in your environment that the threat actor has already gained administrative control of your network. This can range from ransomware notes, locked screens, or ransom demands.
 
-### What date/time did you first learn of the incident?
+#### What date/time did you first learn of the incident?
 
 Establishing the initial activity date and time is important because it helps narrow the scope of the initial triage for quick wins by the attacker. Additional questions may include:
 
@@ -122,7 +122,7 @@ Establishing the initial activity date and time is important because it helps na
 - What accounts were used on that date?
 - What new accounts have been created since that date?
 
-### What logs are available, and is there any indication that the actor is currently accessing systems?
+#### What logs are available, and is there any indication that the actor is currently accessing systems?
 
 Logs—such as antivirus, EDR, and virtual private network (VPN)—are an indicator of suspected compromise. Follow-up questions may include:
 
@@ -137,14 +137,14 @@ As part of assessing the current situation, you might need an Active Directory D
 
 This step is critical in figuring out the quickest way to get systems back online while obtaining the evidence required.
 
-#### Does the application require an identity?
+Does the application require an identity?
 
 - How is authentication performed?
 - How are credentials such as certificates or secrets stored and managed?
 
-#### Are tested backups of the application, configuration, and data available?
+Are tested backups of the application, configuration, and data available?
 
-Are the contents and integrity of backups regularly verified using a restore exercise? This is particularly important after configuration management changes or version upgrades.
+- Are the contents and integrity of backups regularly verified using a restore exercise? This is particularly important after configuration management changes or version upgrades.
 
 ### Step 3. Determine the compromise recovery process
 
@@ -162,27 +162,22 @@ Here are DART’s recommendations and best practices for containment and post-in
 
 Containment can only happen once the analysis has determined what needs to be contained. In the case of ransomware, the adversary’s goal is to obtain credentials that allow administrative control over a highly available server and then deploy the ransomware. In some cases, the threat actor identifies sensitive data and exfiltrates it to a location they control.
 
-Tactical recovery will be unique for your organization’s environment, industry, and level of IT expertise and experience. The steps outlined below are recommended for short-term and tactical containment steps your organization can take. To learn more about for long-term guidance, see [securing privileged access](https://aka.ms/SPA). For a comprehensive view of ransomware and extortion and how to prepare and protect your organization, see [Human-operated ransomware](https://aka.ms/ransomware).
+Tactical recovery will be unique for your organization’s environment, industry, and level of IT expertise and experience. The steps outlined below are recommended for short-term and tactical containment steps your organization can take. To learn more about for long-term guidance, see [securing privileged access](https://aka.ms/SPA). For a comprehensive view of ransomware and extortion and how to prepare and protect your organization, see [Human-operated ransomware](human-operated-ransomware.md).
 
-These containment steps can be done concurrently as new threat vectors are discovered:
+The following containment steps can be done concurrently as new threat vectors are discovered.
 
-- Step 1: Assess the scope of the situation
+Step 1: Assess the scope of the situation
 
-  - Which user accounts were compromised?
+- Which user accounts were compromised?
+- Which devices are affected?
+- Which applications are affected?
 
-  - Which devices are affected?
+Step 2: Preserve existing systems
 
-  - Which applications are affected?
-
-- Step 2: Preserve existing systems
-
-  - Disable all privileged user accounts except for a small number of accounts used by your admins to assist in resetting the integrity of your AD DS infrastructure. If a user account is believed to be compromised, disable it immediately.
-
-  - Isolate compromised systems from the network, but do not shut them off.
-
-  - Isolate at least one known good domain controller in every domain—two is even better. Either disconnect them from the network or shut them down entirely. The object here is to stop the spread of ransomware to critical systems—identity being among the most vulnerable. If all your domain controllers are virtual, ensure that the virtualization platform’s system and data drives are backed up to offline external media that is not connected to the network, in case the virtualization platform itself is compromised.
-
-  - Isolate critical known good application servers, for example SAP, configuration management database (CMDB), billing, and accounting systems.
+- Disable all privileged user accounts except for a small number of accounts used by your admins to assist in resetting the integrity of your AD DS infrastructure. If a user account is believed to be compromised, disable it immediately.
+- Isolate compromised systems from the network, but do not shut them off.
+- Isolate at least one known good domain controller in every domain—two is even better. Either disconnect them from the network or shut them down entirely. The object here is to stop the spread of ransomware to critical systems—identity being among the most vulnerable. If all your domain controllers are virtual, ensure that the virtualization platform’s system and data drives are backed up to offline external media that is not connected to the network, in case the virtualization platform itself is compromised.
+- Isolate critical known good application servers, for example SAP, configuration management database (CMDB), billing, and accounting systems.
 
 These two steps can be done concurrently as new threat vectors are discovered. Disable those threat vectors and then try to find a known good system to isolate from the network.
 
@@ -196,7 +191,7 @@ Other tactical containment actions can include:
 
   - For Windows 10 (or higher) devices, confirm that the current version (or n-1) is running on every device.
 
-  - Apply [attack surface reduction (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) rules to prevent malware infection.
+  - Deploy [attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) to prevent malware infection.
 
   - Enable all [Windows 10 security features](/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10).
 
@@ -286,4 +281,67 @@ Examine guidance for identifying and investigating these types of attacks:
 - [Planning](incident-response-planning.md) for your Security Operations Center (SOC)
 - [Process](incident-response-process.md) for incident response process recommendations and best practices
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
+- [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
+
+
+## Additional ransomware resources
+
+Key information from Microsoft:
+
+- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
+- [Human-operated ransomware](/security/compass/human-operated-ransomware)
+- [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
+- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
+- [Microsoft DART ransomware case study](dart-ransomware-case-study.md)
+
+Microsoft 365:
+
+- [Deploy ransomware protection for your Microsoft 365 tenant](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
+- [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware)
+- [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
+- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+- [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft 365 Defender portal
+
+Microsoft 365 Defender:
+
+- [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
+
+Microsoft Azure:
+
+- [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
+- [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
+- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minute video)
+- [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
+- [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
+- [Fusion Detection for Ransomware in Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+
+Microsoft Defender for Cloud Apps:
+
+-  [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
+
+Microsoft Security team blog posts:
+
+- [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  Key steps on how Microsoft's DART conducts ransomware incident investigations.
+
+- [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  Recommendations and best practices.
+
+- [Becoming resilient by understanding cybersecurity risks: Part 4—navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+
+  See the **Ransomware** section.
+
+- [Human-operated ransomware attacks: A preventable disaster (March 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+
+  Includes attack chain analyses of actual attacks.
+
+- [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)

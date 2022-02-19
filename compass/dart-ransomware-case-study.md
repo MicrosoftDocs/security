@@ -30,7 +30,7 @@ The [Microsoft Detection and Response Team (DART)](https://www.microsoft.com/sec
 
 This article describes how DART investigated a recent ransomware incident with details on the attack tactics and detection mechanisms.
 
-For additional information on how Microsoft DART helps customers with human-operated ransomware, see [Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) of DART’s guide to combatting human-operated ransomware.
+See [Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) of DART’s guide to combatting human-operated ransomware for more information.
 
 ## The attack
 
@@ -56,7 +56,7 @@ Ransomware campaigns use well-known vulnerabilities for their initial entry, typ
 
 For this incident, DART was able to locate a device that had TCP port 3389 for RDP exposed to the Internet. This allowed threat actors to perform a brute-force authentication attack and gain the initial foothold.
 
-Defender for Endpoint used threat intelligence to determine that there were numerous sign-ins from known brute-force sources and displayed them in the Microsoft 365 Defender portal. Here is an example.
+Defender for Endpoint used threat intelligence to determine that there were numerous sign-ins from known brute-force sources and displayed them in the Microsoft 365 Defender portal. Here’s an example.
 
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-brute-force-sign-in.png" alt-text="An example of known brute-force sign-ins in the Microsoft 365 Defender portal.":::
 
@@ -66,7 +66,7 @@ Once the initial access was successful, environment enumeration and device disco
 
 The threat actor leveraged Advanced IP Scanner, an IP address scanning tool, to enumerate the IP addresses used in the environment and perform subsequent port scanning. By scanning for open ports, the threat actor discovered devices that were accessible from the initially compromised device. 
 
-This activity was detected in Defender for Endpoint and used as an indicator of compromise (IoC) for further investigation. Here is an example.
+This activity was detected in Defender for Endpoint and used as an indicator of compromise (IoC) for further investigation. Here’s an example.
 
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-port-scan.png" alt-text="An example of port scanning in the Microsoft 365 Defender portal.":::
 
@@ -74,41 +74,41 @@ This activity was detected in Defender for Endpoint and used as an indicator of 
 
 After gaining initial access, the threat actors performed credential harvesting using the Mimikatz password retrieval tool and by searching for files containing “password” on initially compromised systems. These actions enabled the threat actors to access additional systems with legitimate credentials. In many situations, threat actors use these accounts to create additional accounts to maintain persistence after the initial compromised accounts are identified and remediated.  
 
-Here is an example of the detected use of the Mimikatz in the Microsoft 365 Defender portal.
+Here’s an example of the detected use of the Mimikatz in the Microsoft 365 Defender portal.
  
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-mimikatz.png" alt-text="An example of Mimikatz detection in the Microsoft 365 Defender portal":::
 
 ## Lateral movement
 
-Movement across endpoints can vary between different organizations, but there is a common tactic of threat actors using different varieties of remote management software that already exists on the device. By utilizing methods of remote access that the IT department commonly uses in their day-to-day activities, threat actors can fly under the radar for extended periods of time. 
+Movement across endpoints can vary between different organizations, but threat actors commonly use different varieties of remote management software that already exists on the device. By utilizing methods of remote access that the IT department commonly uses in their day-to-day activities, threat actors can fly under the radar for extended periods of time. 
 
-Using Microsoft Defender for Identity, DART was able to map out the path that the threat actor took between devices, displaying the accounts that were used and accessed. Here is an example.
+Using Microsoft Defender for Identity, DART was able to map out the path that the threat actor took between devices, displaying the accounts that were used and accessed. Here’s an example.
  
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-threat-actor-path.png" alt-text="The path that the threat actor took between devices in Microsoft Defender for Identity.":::
 
 ## Defense evasion
 
-To avoid detection, the threat actors used defense evasion techniques to avoid identification and achieve their objectives throughout the attack cycle. These techniques include disabling or tampering with anti-virus products, uninstalling or disabling security products or features, modifying firewall rules, and using obfuscation techniques to hide the artifacts of an intrusion from security products. 
+To avoid detection, the threat actors used defense evasion techniques to avoid identification and achieve their objectives throughout the attack cycle. These techniques include disabling or tampering with anti-virus products, uninstalling or disabling security products or features, modifying firewall rules, and using obfuscation techniques to hide the artifacts of an intrusion from security products and services. 
 
 The threat actor for this incident used PowerShell to disable real-time protection for Microsoft Defender on Windows 11 and Windows 10 devices and local networking tools to open TCP port 3389 and allow RDP connections. These changes decreased the chances of detection in an environment because they modified system services that detect and alert on malicious activity. 
 
-Defender for Endpoint, however, cannot be disabled from the local device and was able to detect this activity. Here is an example.
+Defender for Endpoint, however, cannot be disabled from the local device and was able to detect this activity. Here’s an example.
 
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-mde-detect-powershell.png" alt-text="An example of detecting the use of PowerShell to disable real-time protection for Microsoft Defender.":::
 
 ## Persistence
 
-Persistence techniques include actions by threat actors to maintain consistent access to systems after efforts are made by security staff to regain control of systems that have been compromised.  
+Persistence techniques include actions by threat actors to maintain consistent access to systems after efforts are made by security staff to regain control of compromised systems.  
 
 The threat actors for this incident used the Sticky Keys hack because it allows for remote execution of a binary inside the Windows operating system without authentication. They then used this capability to execute a Command Prompt and perform further attacks. 
 
-Here is an example of the detection of the Sticky Keys hack in the Microsoft 365 Defender portal.
+Here’s an example of the detection of the Sticky Keys hack in the Microsoft 365 Defender portal.
 
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-detect-sticky-keys.png" alt-text="An example of detecting the Sticky Keys hack in the Microsoft 365 Defender portal.":::
 
 ## Impact
 
-Threat actors typically encrypt files using applications or features that already exist within the environment. The use of PsExec, Group Policy, and Microsoft Endpoint Configuration Management are methods of deployment that allow the actor to quickly reach endpoints with systems without disrupting normal operations.  
+Threat actors typically encrypt files using applications or features that already exist within the environment. The use of PsExec, Group Policy, and Microsoft Endpoint Configuration Management are methods of deployment that allow an actor to quickly reach endpoints and systems without disrupting normal operations.  
 
 The threat actor for this incident leveraged PsExec to remotely launch an interactive PowerShell Script from various remote shares. This attack method randomizes distribution points and makes remediation more difficult during the final phase of the ransomware attack. 
 
@@ -139,7 +139,7 @@ Key information from Microsoft:
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
-- [Microsoft’s DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
+- [Microsoft DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
 
 Microsoft 365:
 
@@ -190,11 +190,3 @@ Microsoft Security team blog posts:
 
 - [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-
-<!--
-
-## Next steps
-
-additional learnings or Go Do’s for customers based on the case. In the intro we point to the general guidance but I am wondering if there are some additional learnings or even repeated learnings we should call out in the closing section
-
---> 

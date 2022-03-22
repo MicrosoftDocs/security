@@ -46,7 +46,7 @@ Before starting the investigation, make sure you have detailed information on th
   - Global administrator
   - Security administrator
 
-- Familiarize yourself with the [application auditing concepts](7azure/active-directory/fundamentals/security-operations-applications) (part of https://aka.ms/AzureADSecOps)
+- Familiarize yourself with the [application auditing concepts](/azure/active-directory/fundamentals/security-operations-applications) (part of https://aka.ms/AzureADSecOps)
 
 - Make sure application owners have the set of ALL Enterprise apps in your tenant. Review the concepts [here](/azure/active-directory/manage-apps/overview-assign-app-owners) and [here](/azure/active-directory/manage-apps/assign-app-owners).
 

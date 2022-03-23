@@ -11,7 +11,7 @@ ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
-author: dansimp
+author: RatulaC
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -36,21 +36,21 @@ This article provides guidance on identifying and investigating malicious attack
 
 Before starting the investigation, make sure you have detailed information on the applications that you suspect to be compromised by the malicious attack.
 
-- To leverage Identity protection signals, the tenant must be licensed for P2
+- To leverage Identity protection signals, the tenant must be licensed for Azure AD Premium P2.
   - Understanding of the [Identity Protection risk concepts](/azure/active-directory/identity-protection/concept-identity-protection-risks)
   - Understanding of the [Identity protection investigation concepts](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
 
-- Ability to use Graph Explorer and be familiar (to some extend) with the Microsoft Graph API
+- Ability to use Graph Explorer and be familiar (to some extend) with the Microsoft Graph API.
 
 - An account with the following directory roles:
   - Global administrator
   - Security administrator
 
-- Familiarize yourself with the [application auditing concepts](/azure/active-directory/fundamentals/security-operations-applications) (part of https://aka.ms/AzureADSecOps)
+- Familiarize yourself with the [application auditing concepts](/azure/active-directory/fundamentals/security-operations-applications) (part of https://aka.ms/AzureADSecOps).
 
 - Make sure application owners have the set of ALL Enterprise apps in your tenant. Review the concepts [here](/azure/active-directory/manage-apps/overview-assign-app-owners) and [here](/azure/active-directory/manage-apps/assign-app-owners).
 
-- Familiarize yourself with the concepts of the [App Consent grant investigation](/security/compass/incident-response-playbook-app-consent) (part of https://aka.ms/IRPlaybooks)
+- Familiarize yourself with the concepts of the [App Consent grant investigation](/security/compass/incident-response-playbook-app-consent) (part of https://aka.ms/IRPlaybooks).
 
 - Make sure you understand the following Azure AD permissions: 
   - [Risky permissions](/security/compass/incident-response-playbook-app-consent#classifying-risky-permissions)
@@ -64,3 +64,96 @@ For an effective investigation, install the following PowerShell module and the 
 - [Azure AD Toolkit](https://github.com/microsoft/AzureADToolkit)
 
 ## Workflow
+
+[Add screenshot of the Visio diagram]
+
+## Investigation steps
+
+For this investigation, it is assumed that you either have a indication for a potential application compromise in the form of a user report, Azure AD sign-in logs example, or Identity protection detection. Make sure to complete and enable all required prerequisite steps.
+
+This playbook is created with the intention that not all Microsoft customers and their investigation teams will have the full Microsoft 365 E5 or Azure AD Premium P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
+
+### Determine application type
+
+It is important to determine the type of application (multi or single tenant) early in the investigation phase to get the correct information needed to reach out to the application owner. For more information, see [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps).
+
+#### Multi-tenant applications
+
+For Multi-tenant applications, the application is hosted and managed by a third party. Identify the process needed to reach out and report issues to the application owner.
+
+#### Single-tenant applications
+
+Find the contact details of the application owner within your organization. You can find it under the **Owners** tab on the **Enterprise Applications** section, or your organization may have a database that has this information.
+
+### Check Identity Protection - Risky workload identities
+
+This feature is in preview at the time of writing this playbook and licensing requirements will apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - Risky workload identities** tab, or you can use Graph API.
+
+### Check for unusual sign-in behavior
+
+The first step of the investigation is to look for evidence of unusual authentications patterns in the usage of the Service Principal. Within the Azure portal, Azure Monitor, Azure Sentinel, or the Security Information and Event Management (SEIM) system of your organization's choice, look for the following in the "Service principal sign-ins":
+
+- Location - is the Service Principal authenticating from locations\IP addresses that you would not expect?
+- Failures - are there a large number of authentication failures for the Service Principal?
+- Timestamps - are there successful authentications that are occurring at times that you would not expect?
+- Frequency - is there an increased frequency of authentications for the Service Principal?
+
+### Check the target resource
+
+Within Service principal sign-ins, also check the **Resource** that the Service Principal was accessing during the authentication. Is it an expected resource? It is important to have input from the application owner as they will be familiar with which resources the Service Principal should be accessing.
+
+### Check for abnormal credential changes
+
+- All the required information can be found in the Audit logs.
+- Filter for **Category** by **Application Management**, and **Activity** by **Update Application – Certificates and secrets management**.
+- Check to see if there was an unauthorized change to credentials on the account.
+- Also check whether there are more credentials than warranted, assigned to the service principal.
+- Finally, when checking for credentials, check both the application and associated service principal objects.
+
+### Search for anomalous app configuration changes
+
+- Check Audit logs (filter **Activity** by **Update Application** or **Update Service Principal**).
+- Confirm whether the connection strings are consistent and whether has the sign-out URL has been modified.
+- Confirm whether the domains in the URL are in-line with those registered.
+- Determine whether anyone has added an unauthorized redirect URL.
+- Confirm ownership of the redirect URI that you own to ensure it did not expire and was claimed by an adversary.
+
+### Check for suspicious application roles
+
+- This can also be investigated using the Audit logs. Filter **Activity** by **Add app role assignment to service principal**.
+- Confirm whether the assigned roles have high privilege.
+- Confirm whether those privileges are necessary.
+
+### Check for unverified commercial apps
+
+- Check whether commercial gallery (published and verified versions) applications are being used.
+
+### Check UAL for phishing indications 
+
+Typically, when attackers use malicious or compromised applications as a means of persistence or to exfiltrate data, a phishing campaign is involved. Based on the findings from the previous steps, you should review the identities of:
+
+- Application Owners
+- Consent Admins
+
+Review the identities for indications of phishing attacks in the last 24 hours. Increase this time span if needed to 7, 14, and 30 days if there are no immediate indications. For a detailed phishing investigation playbook, see the [Phishing Investigation Playbook](incident-response-playbook-phishing.md).
+
+### Search for malicious application consents 
+
+To get an application added to a tenant, attackers spoof users or admins to consent to applications. To know more about the signs of an attack, see the [Application Consent Grant Investigation Playbook](incident-response-playbook-app-consent#finding-signs-of-an-attack). 
+
+### Check application consent for the flagged application
+
+- Check Audit logs. To see all consent grants for that application, filter **Activity** by **Consent to application**. Follow the steps described [here](incident-response-playbook-app-consent#finding-signs-of-an-attack).
+  An example using Graph API:
+  
+```HTTP
+GET https://graph.microsoft.com/v1.0/auditLogs/auditLogs/directoryAudits?&$filter=activityDateTime le 2022-01-24
+```
+
+- Determine if there was suspicious end-user consent to the application.
+- Check Audit logs to find whether the permissions granted are too broad (tenant-wide or admin-consented).
+- Check whether the permissions were granted by user identities that should not have the ability to do this, or whether the actions were performed at strange dates and times.
+- Dismiss/Confirm Risk: Once you determine whether the application was compromised, call the API to dismiss the risk or confirm compromised per the above guidance.
+
+## Recovery steps
+

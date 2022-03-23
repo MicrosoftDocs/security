@@ -139,11 +139,11 @@ Review the identities for indications of phishing attacks in the last 24 hours. 
 
 ### Search for malicious application consents 
 
-To get an application added to a tenant, attackers spoof users or admins to consent to applications. To know more about the signs of an attack, see the [Application Consent Grant Investigation Playbook](incident-response-playbook-app-consent#finding-signs-of-an-attack). 
+To get an application added to a tenant, attackers spoof users or admins to consent to applications. To know more about the signs of an attack, see the [Application Consent Grant Investigation Playbook](incident-response-playbook-app-consent.md#finding-signs-of-an-attack). 
 
 ### Check application consent for the flagged application
 
-- Check Audit logs. To see all consent grants for that application, filter **Activity** by **Consent to application**. Follow the steps described [here](incident-response-playbook-app-consent#finding-signs-of-an-attack).
+- Check Audit logs. To see all consent grants for that application, filter **Activity** by **Consent to application**. Follow the steps described [here](incident-response-playbook-app-consent.md#finding-signs-of-an-attack).
   An example using Graph API:
   
 ```HTTP

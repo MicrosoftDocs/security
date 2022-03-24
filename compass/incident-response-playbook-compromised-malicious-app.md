@@ -36,7 +36,7 @@ This article provides guidance on identifying and investigating malicious attack
 
 Before starting the investigation, make sure you have detailed information on the applications that you suspect to be compromised by the malicious attack.
 
-- To leverage Identity protection signals, the tenant must be licensed for Azure AD Premium P2.
+- To leverage Identity protection signals, the tenant must be licensed for Azure Active Directory (Azure AD) Premium P2.
   - Understanding of the [Identity Protection risk concepts](/azure/active-directory/identity-protection/concept-identity-protection-risks)
   - Understanding of the [Identity protection investigation concepts](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
 
@@ -91,7 +91,7 @@ This feature is in preview at the time of writing this playbook and licensing re
 
 ### Check for unusual sign-in behavior
 
-The first step of the investigation is to look for evidence of unusual authentications patterns in the usage of the Service Principal. Within the Azure portal, Azure Monitor, Azure Sentinel, or the Security Information and Event Management (SEIM) system of your organization's choice, look for the following in the "Service principal sign-ins":
+The first step of the investigation is to look for evidence of unusual authentications patterns in the usage of the Service Principal. Within the Azure portal, Azure Monitor, Azure Sentinel, or the Security Information and Event Management (SEIM) system of your organization's choice, look for the following in the **Service principal sign-ins** section:
 
 - Location - is the Service Principal authenticating from locations\IP addresses that you would not expect?
 - Failures - are there a large number of authentication failures for the Service Principal?
@@ -157,3 +157,55 @@ GET https://graph.microsoft.com/v1.0/auditLogs/auditLogs/directoryAudits?&$filte
 
 ## Recovery steps
 
+### Remediate Service Principals
+
+1. List all credentials assigned to the **Risky Service Principal**. The best way to do this is to perform a Microsoft Graph call using GET ~/application/{id} where id passed is the application object ID.
+
+    - Parse the output for credentials. The output may contain passwordCredentials or keyCredentials. Record the keyIds for all. 
+
+      ```
+      "keyCredentials": [],
+           "parentalControlSettings": {
+               "countriesBlockedForMinors": [],
+               "legalAgeGroupRule": "Allow"
+           },
+           "passwordCredentials": [
+               {
+                   "customKeyIdentifier": null,
+                   "displayName": "Test",
+                   "endDateTime": "2021-12-16T19:19:36.997Z",
+                   "hint": "7~-",
+                   "keyId": "9f92041c-46b9-4ebc-95fd-e45745734bef",
+                   "secretText": null,
+                   "startDateTime": "2021-06-16T18:19:36.997Z"
+               }
+           ],
+      ```
+
+2. Add a new (x509) certificate credential to the application object using the application addKey API.
+
+  ```
+  POST ~/applications/{id}/addKey
+  ```
+
+3. Immediately remove all old Credentials. For each old password credential, remove it by using:
+
+  ```
+  POST ~/applications/{id}/removePassword
+  ```
+
+For each old key credential, remove it by using:
+
+  ```
+  POST ~/applications/{id}/removeKey
+  ```
+
+4. Remediate all Service Principals associated with the application. Follow this if your tenant hosts/registers a multi-tenant application, and/or registers multiple service principals associated to the application. Perform similar steps to what is listed above:
+
+- GET ~/servicePrincipals/{id}
+- Find passwordCredentials and keyCredentials in the response, record all OLD keyIds
+- Remove all old password and key credentials. Use:
+  
+  ```
+  POST ~/servicePrincipals/{id}/removePassword and POST ~/servicePrincipals/{id}/removeKey for this, respectively.
+  ```

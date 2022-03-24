@@ -184,26 +184,26 @@ GET https://graph.microsoft.com/v1.0/auditLogs/auditLogs/directoryAudits?&$filte
 
 2. Add a new (x509) certificate credential to the application object using the application addKey API.
 
-  ```
-  POST ~/applications/{id}/addKey
-  ```
+   ```
+   POST ~/applications/{id}/addKey
+   ```
 
-3. Immediately remove all old Credentials. For each old password credential, remove it by using:
+3. Immediately remove all old credentials. For each old password credential, remove it by using:
 
-  ```
-  POST ~/applications/{id}/removePassword
-  ```
+   ```
+   POST ~/applications/{id}/removePassword
+   ```
 
 For each old key credential, remove it by using:
 
-  ```
-  POST ~/applications/{id}/removeKey
-  ```
+   ```
+   POST ~/applications/{id}/removeKey
+   ```
 
 4. Remediate all Service Principals associated with the application. Follow this if your tenant hosts/registers a multi-tenant application, and/or registers multiple service principals associated to the application. Perform similar steps to what is listed above:
 
 - GET ~/servicePrincipals/{id}
-- Find passwordCredentials and keyCredentials in the response, record all OLD keyIds
+- Find passwordCredentials and keyCredentials in the response, record all old keyIds
 - Remove all old password and key credentials. Use:
   
   ```

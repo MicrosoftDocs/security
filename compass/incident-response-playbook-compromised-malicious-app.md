@@ -220,7 +220,7 @@ Remediate KeyVault secrets that the Service Principal has access to by rotating 
 
 For more information, see [Interactively removing and rolling over the certificates and secrets of a Service Principal or Application](https://github.com/microsoft/azureadtoolkit#interactively-removing-and-rolling-over-the-certificates-and-secrets-of-a-service-principal-or-application).
 
-For Azure AD toolkit, see [here](https://github.com/microsoft/AzureADToolkit). For Azure AD SecOps guidance on applications, see [Azure Active Directory security operations guide for Applications](/azure/active-directory/fundamentals/security-operations-applications).
+For Azure AD SecOps guidance on applications, see [Azure Active Directory security operations guide for Applications](/azure/active-directory/fundamentals/security-operations-applications).
 
 In order of priority, this scenario would be:
 

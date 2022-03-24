@@ -209,3 +209,110 @@ For each old key credential, remove it by using:
   ```
   POST ~/servicePrincipals/{id}/removePassword and POST ~/servicePrincipals/{id}/removeKey for this, respectively.
   ```
+
+### Remediate affected Service Principal resources
+
+Remediate KeyVault secrets that the Service Principal has access to by rotating them, in the following priority:
+
+- Secrets directly exposed with GetSecret calls.
+- The rest of the secrets in exposed KeyVaults.
+- The rest of the secrets across exposed subscriptions.
+
+For more information, see [Interactively removing and rolling over the certificates and secrets of a Service Principal or Application](https://github.com/microsoft/azureadtoolkit#interactively-removing-and-rolling-over-the-certificates-and-secrets-of-a-service-principal-or-application).
+
+For Azure AD toolkit, see [here](https://github.com/microsoft/AzureADToolkit). For Azure AD SecOps guidance on applications, see [Azure Active Directory security operations guide for Applications](/azure/active-directory/fundamentals/security-operations-applications).
+
+In order of priority, this scenario would be:
+
+- Update Graph PowerShell cmdlets (Add/Remove ApplicationKey + ApplicationPassword) doc to include examples for credential roll-over.
+- Add custom cmdlets to Graph PowerShell that simplifies this scenario.
+
+### Disable or delete malicious applications
+
+An application can either be disabled or deleted. To disable the application, under **Enabled for users to sign in**, move the toggle to **No**.
+
+[image] 
+
+You can delete the application, either temporarily or permanently, in the portal or through the Graph API. When you soft delete, the application can be recovered up to 30 days after deletion.
+
+```
+DELETE /applications/{id}
+```
+
+To permanently delete the application, use this Graph API call:
+
+```
+DELETE /directory/deletedItems/{id}
+```
+
+If you disable or if you soft delete the application, set up monitoring in Azure AD Audit logs to learn if the state changes back to enabled or recovered.
+
+**Logging for enabled:**
+
+**Service** - Core Directory
+**Activity Type** - Update Service Principle
+**Category** - Application Management
+**Initiated by (actor)** - UPN of actor
+**Targets** - App ID and Display Name
+**Modified Properties** - Property Name = account enabled, new value = true
+
+**Logging for recovered:**
+
+**Service** - Core Directory
+**Activity Type** - Add Service Principle
+**Category** - Application Management
+**Initiated by (actor)** - UPN of actor
+**Targets** - App ID and Display Name
+**Modified Properties** - Property name = account enabled, new value = true
+
+### Implement Identity Protection for workload identities
+
+When risk detection indicates unusual sign-in properties or patterns, as well as unusual addition of credentials to an OAuth App, that may be an indicator of compromise. The detection baselines sign-in behavior between 2 and 60 days, and fires if one or more of the following unfamiliar properties occur during a subsequent sign-in:
+
+a. IP address / ASN
+b. Target resource
+c. User agent
+d. Hosting/non-hosting IP change
+e. IP country
+f. Credential type
+
+When this detection is fired, the account is marked as high risk because this can indicate account takeover for the subject application. Note that the legitimate changes to an application’s configuration will sometimes trigger this detection. 
+
+For more information, see [Securing workload identities with Identity Protection](/azure/active-directory/identity-protection/concept-workload-identity-risk).
+
+These alerts appear in the Identity Protection portal and can be exported into SIEM tools through the [Identity Protection APIs](/graph/api/resources/identityprotection-overview?view=graph-rest-beta&preserve-view=true).
+
+[image]
+
+### Conditional Access for risky workload identities
+
+Conditional Access allows you to block access for specific accounts that you designate when Identity Protection marks them as “at risk.” Note that the enforcement through Conditional Access is currently limited to single-tenant applications only.
+
+[image]
+
+- AuthN strengths - when one elevates into Cloud Admin role -> require FIDO only.
+- Move the identified SPs to an AU, restrict access to this AU, and then cycle the credentials.
+
+For more information, see [Conditional Access for workload identities](/azure/active-directory/conditional-access/workload-identity).
+
+## Additional incident response playbooks
+
+Examine guidance for identifying and investigating these additional types of attacks:
+
+- [Phishing](incident-response-playbook-phishing.md)
+- [Password spray](incident-response-playbook-password-spray.md)
+- [App consent](incident-response-playbook-app-consent.md)
+- [Microsoft DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
+
+## Incident response resources
+
+- [Overview](incident-response-overview.md) for Microsoft security products and resources for new-to-role and experienced analysts
+- [Planning](incident-response-planning.md) for your Security Operations Center (SOC)
+- [Process](incident-response-process.md) for incident response process recommendations and best practices
+- [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
+- [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
+- [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
+- [Azure AD Identity Protection risks](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+- [Azure AD SecOps introduction](/azure/active-directory/fundamentals/security-operations-introduction)
+- [Configure how users consent to applications](/azure/active-directory/manage-apps/configure-user-consent)
+- [Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow)

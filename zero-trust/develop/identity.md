@@ -45,6 +45,8 @@ The following best practices are key to keeping your apps secure. We have also p
 
 **Become a** [**verified publisher**](/azure/active-directory/develop/publisher-verification-overview). When an application is marked as publisher verified, it means that the publisher has verified their identity using a Microsoft Partner Network account that has completed an established verification process. This is great for developers of multi-tenant apps, as it helps build trust with IT administrators in customer tenants.
 
+**Use** [**managed identities**](/azure/active-directory/managed-identities-azure-resources/overview) when accessing resources in Azure. Managed identities are one key element used to reduce shared secrets in the code and should be used instead of service principals. While using managed identities, remember to follow the least privilege principal when giving permissions to resources.
+
 ## Next steps
 
 - [Build Zero Trust-ready apps using Microsoft identity platform features and tools](/azure/active-directory/develop/zero-trust-for-developers) maps features of the Microsoft identity platform to the principles of Zero Trust.

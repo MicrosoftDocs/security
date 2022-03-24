@@ -85,9 +85,9 @@ For Multi-tenant applications, the application is hosted and managed by a third 
 
 Find the contact details of the application owner within your organization. You can find it under the **Owners** tab on the **Enterprise Applications** section, or your organization may have a database that has this information.
 
-### Check Identity Protection - Risky workload identities
+### Check Identity Protection - risky workload identities
 
-This feature is in preview at the time of writing this playbook and licensing requirements will apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - Risky workload identities** tab, or you can use Graph API.
+This feature is in preview at the time of writing this playbook and licensing requirements will apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Graph API.
 
 ### Check for unusual sign-in behavior
 
@@ -194,7 +194,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/auditLogs/directoryAudits?&$filte
    POST ~/applications/{id}/removePassword
    ```
 
-For each old key credential, remove it by using:
+   For each old key credential, remove it by using:
 
    ```
    POST ~/applications/{id}/removeKey
@@ -249,32 +249,32 @@ If you disable or if you soft delete the application, set up monitoring in Azure
 
 **Logging for enabled:**
 
-**Service** - Core Directory
-**Activity Type** - Update Service Principle
-**Category** - Application Management
-**Initiated by (actor)** - UPN of actor
-**Targets** - App ID and Display Name
-**Modified Properties** - Property Name = account enabled, new value = true
+- **Service** - Core Directory
+- **Activity Type** - Update Service Principle
+- **Category** - Application Management
+- **Initiated by (actor)** - UPN of actor
+- **Targets** - App ID and Display Name
+- **Modified Properties** - Property Name = account enabled, new value = true
 
 **Logging for recovered:**
 
-**Service** - Core Directory
-**Activity Type** - Add Service Principle
-**Category** - Application Management
-**Initiated by (actor)** - UPN of actor
-**Targets** - App ID and Display Name
-**Modified Properties** - Property name = account enabled, new value = true
+- **Service** - Core Directory
+- **Activity Type** - Add Service Principle
+- **Category** - Application Management
+- **Initiated by (actor)** - UPN of actor
+- **Targets** - App ID and Display Name
+- **Modified Properties** - Property name = account enabled, new value = true
 
 ### Implement Identity Protection for workload identities
 
 When risk detection indicates unusual sign-in properties or patterns, as well as unusual addition of credentials to an OAuth App, that may be an indicator of compromise. The detection baselines sign-in behavior between 2 and 60 days, and fires if one or more of the following unfamiliar properties occur during a subsequent sign-in:
 
-a. IP address / ASN
-b. Target resource
-c. User agent
-d. Hosting/non-hosting IP change
-e. IP country
-f. Credential type
+- IP address / ASN
+- Target resource
+- User agent
+- Hosting/non-hosting IP change
+- IP country
+- Credential type
 
 When this detection is fired, the account is marked as high risk because this can indicate account takeover for the subject application. Note that the legitimate changes to an application’s configuration will sometimes trigger this detection. 
 

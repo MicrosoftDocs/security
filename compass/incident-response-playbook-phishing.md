@@ -51,14 +51,16 @@ Verify that *mailbox auditing on by default* is turned on by running the followi
 Get-OrganizationConfig | Format-List AuditDisabled
 ```
 
-The value **False** indicates that mailbox auditing is enable for all mailboxes in the organization, regardless of the value of the *AuditEnabled* property on individual mailboxes. For more information, see [Verify mailbox auditing on by default is turned on](/microsoft-365/compliance/enable-mailbox-auditing#verify-mailbox-auditing-on-by-default-is-turned-on).
-
+The value **False** indicates that mailbox auditing is enabled for all mailboxes in the organization, regardless of the value of the *AuditEnabled* property on individual mailboxes. For more information, see [Verify mailbox auditing on by default is turned on](/microsoft-365/compliance/enable-mailbox-auditing#verify-mailbox-auditing-on-by-default-is-turned-on).
 
 ### Message trace
 
-Message trace logs are invaluable components that help to find the original source of the message as well as the intended recipients. You can use the *MessageTrace* functionality through the Microsoft [Exchange Online portal](/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results) or the [Get-MessageTrace PowerShell cmdlet](/powershell/module/exchange/mail-flow/get-messagetrace).
+Message trace logs are invaluable components that help to find the original source of the message as well as the intended recipients. You can use the *message trace* functionality in Exchange admin center (EAC) at <https://admin.exchange.microsoft.com/#/messagetrace> or with the [Get-MessageTrace](/powershell/module/exchange/mail-flow/get-messagetrace) cmdlet in Exchange Online PowerShell.
 
-Several components of the *MessageTrace* functionality are self-explanatory but *Message-ID* is a unique identifier for an email message and requires thorough understanding. To obtain the *Message-ID* for an email of interest we need to examine the raw email headers.
+> [!NOTE]
+> Message trace is also available in the Microsoft 365 Defender portal at <https://security.microsoft.com> under **Email & collaboration** \> **Exchange message trace**, but that's just a passthrough link to message trace in the EAC.
+
+Several components of the *message trace* functionality are self-explanatory but *Message-ID* is a unique identifier for an email message and requires thorough understanding. To obtain the *Message-ID* for an email of interest we need to examine the raw email headers.
 
 ### Microsoft 365 security and compliance center
 
@@ -93,7 +95,7 @@ If you have implemented the role-based access control (RBAC) in Exchange or if y
 $Perms | foreach {Get-ManagementRoleAssignment -Role $_.Name -Delegating $false | Format-Table -Auto Role,RoleAssigneeType,RoleAssigneeName}
 ```
 
-For more information, see [permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
+For more information, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
 
 ### Microsoft Defender for Endpoint
 

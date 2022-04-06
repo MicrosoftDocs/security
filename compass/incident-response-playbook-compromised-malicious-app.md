@@ -59,8 +59,8 @@ Before starting the investigation, make sure you have detailed information on th
 
 - Familiarize yourself with the concepts of [Workload identity risk detections](/azure/active-directory/identity-protection/concept-workload-identity-risk).
 
-- You must have full Microsoft 365 E5 license to leverage Microsoft defender for Cloud Apps. 
-  - Understand the concepts of [anomaly detection alert investigation](/defender-cloud-apps/app-governance-anomaly-detection-alerts) in Defender for Cloud Apps.  
+- You must have full Microsoft 365 E5 license to leverage Microsoft Defender for Cloud Apps. 
+  - Understand the concepts of [anomaly detection alert investigation](/defender-cloud-apps/app-governance-anomaly-detection-alerts).  
 
 ### Required tools
 

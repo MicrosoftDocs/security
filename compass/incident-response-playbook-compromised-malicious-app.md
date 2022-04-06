@@ -29,6 +29,7 @@ This article provides guidance on identifying and investigating malicious attack
 - **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation. For example, logging that should be turned on, roles and permissions required, among others.
 - **Workflow:** Shows the logical flow that you should follow to perform this investigation.
 - **Investigation steps:** Includes a detailed step-by-step guidance for this specific investigation.
+- **Containment steps:** Contains steps on how to disable the compromised applications. 
 - **Recovery steps:** Contains high-level steps on how to recover/mitigate from a malicious attack on compromised applications.
 - **References:** Contains additional reading and reference materials.
 
@@ -40,21 +41,26 @@ Before starting the investigation, make sure you have detailed information on th
   - Understanding of the [Identity Protection risk concepts](/azure/active-directory/identity-protection/concept-identity-protection-risks)
   - Understanding of the [Identity protection investigation concepts](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
 
-- Ability to use Graph Explorer and be familiar (to some extend) with the Microsoft Graph API.
-
 - An account with the following directory roles:
   - Global administrator
   - Security administrator
 
+- Ability to use [Graph Explorer](/graph/graph-explorer) and be familiar (to some extend) with the Microsoft Graph API.
+
 - Familiarize yourself with the [application auditing concepts](/azure/active-directory/fundamentals/security-operations-applications) (part of https://aka.ms/AzureADSecOps).
 
-- Make sure application owners have the set of ALL Enterprise apps in your tenant. Review the concepts [here](/azure/active-directory/manage-apps/overview-assign-app-owners) and [here](/azure/active-directory/manage-apps/assign-app-owners).
+- Make sure application owners have the set of all Enterprise apps in your tenant. Review the concepts [here](/azure/active-directory/manage-apps/overview-assign-app-owners) and [here](/azure/active-directory/manage-apps/assign-app-owners).
 
-- Familiarize yourself with the concepts of the [App Consent grant investigation](/security/compass/incident-response-playbook-app-consent) (part of https://aka.ms/IRPlaybooks).
+- Familiarize yourself with the concepts of the [App Consent grant investigation](incident-response-playbook-app-consent.md) (part of https://aka.ms/IRPlaybooks).
 
 - Make sure you understand the following Azure AD permissions: 
-  - [Risky permissions](/security/compass/incident-response-playbook-app-consent#classifying-risky-permissions)
+  - [Risky permissions](incident-response-playbook-app-consent.md#classifying-risky-permissions)
   - [Consent model and the Admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow)
+
+- Familiarize yourself with the concepts of [Workload identity risk detections](/azure/active-directory/identity-protection/concept-workload-identity-risk).
+
+- You must have full Microsoft 365 E5 license to leverage Microsoft defender for Cloud Apps. 
+  - Understand the concepts of [anomaly detection alert investigation](/defender-cloud-apps/app-governance-anomaly-detection-alerts) in Defender for Cloud Apps.  
 
 ### Required tools
 
@@ -155,6 +161,36 @@ GET https://graph.microsoft.com/v1.0/auditLogs/auditLogs/directoryAudits?&$filte
 - Check whether the permissions were granted by user identities that should not have the ability to do this, or whether the actions were performed at strange dates and times.
 - Dismiss/Confirm Risk: Once you determine whether the application was compromised, call the API to dismiss the risk or confirm compromised per the above guidance.
 
+## Containment steps
+
+Once you have identified one or more applications or workload identities as either malicious or compromised, you may not immediately want to roll the credentials for this application, nor you want to immediately delete the application. It is highly recommended, that you follow the best practice guidance for [incidence response](incident-response-process.md).
+
+>[!Important]
+>Before you delete the compromised application, you need to assess the business impact of disabling an application. Your organization must weigh up the security impact and the business impact of disabling an application. If the business impact of disabling an application is too great, then consider preparing and moving to the recovery stage of this process.
+
+### Disable compromised application
+
+A typical containment strategy involves the disabling of sign-ins to the application identified, to give your incident response team or the affected business unit time to evaluate the impact of deletion or key rolling.
+
+[add image]
+
+You can also use the following PowerShell code to disable the sign-in to the app:
+
+```powershell
+# The AppId of the app to be disabled
+$appId = "{AppId}"
+
+# Check if a service principal already exists for the app
+$servicePrincipal = Get-AzureADServicePrincipal -Filter "appId eq '$appId'"
+if ($servicePrincipal) {
+   # Service principal exists already, disable it
+   Set-AzureADServicePrincipal -ObjectId $servicePrincipal.ObjectId -AccountEnabled $false
+} else {
+   # Service principal does not yet exist, create it and disable it at the same time
+   $servicePrincipal = New-AzureADServicePrincipal -AppId $appId -AccountEnabled $false
+}
+```
+
 ## Recovery steps
 
 ### Remediate Service Principals
@@ -220,7 +256,7 @@ Remediate KeyVault secrets that the Service Principal has access to by rotating 
 
 For more information, see [Interactively removing and rolling over the certificates and secrets of a Service Principal or Application](https://github.com/microsoft/azureadtoolkit#interactively-removing-and-rolling-over-the-certificates-and-secrets-of-a-service-principal-or-application).
 
-For Azure AD SecOps guidance on applications, see [Azure Active Directory security operations guide for Applications](/azure/active-directory/fundamentals/security-operations-applications).
+ For Azure AD SecOps guidance on applications, see [Azure Active Directory security operations guide for Applications](/azure/active-directory/fundamentals/security-operations-applications).
 
 In order of priority, this scenario would be:
 
@@ -282,13 +318,13 @@ For more information, see [Securing workload identities with Identity Protection
 
 These alerts appear in the Identity Protection portal and can be exported into SIEM tools through the [Identity Protection APIs](/graph/api/resources/identityprotection-overview?view=graph-rest-beta&preserve-view=true).
 
-[image]
+[add image]
 
 ### Conditional Access for risky workload identities
 
 Conditional Access allows you to block access for specific accounts that you designate when Identity Protection marks them as “at risk.” Note that the enforcement through Conditional Access is currently limited to single-tenant applications only.
 
-[image]
+[add image]
 
 - AuthN strengths - when one elevates into Cloud Admin role -> require FIDO only.
 - Move the identified SPs to an AU, restrict access to this AU, and then cycle the credentials.

@@ -71,7 +71,7 @@ For an effective investigation, install the following PowerShell module and the 
 
 ## Workflow
 
-[Add screenshot of the Visio diagram]
+![Detailed flow of the investigation steps](/media/compromised-malicious-apps/IR_playbook_compromised_apps_flow.png)
 
 ## Investigation steps
 
@@ -91,6 +91,14 @@ For Multi-tenant applications, the application is hosted and managed by a third 
 
 Find the contact details of the application owner within your organization. You can find it under the **Owners** tab on the **Enterprise Applications** section, or your organization may have a database that has this information.
 
+[add image]
+
+You can also use this Graph code:
+
+```HTTP
+GET https://graph.microsoft.com/v1.0/applications/{id}/owners
+```
+
 ### Check Identity Protection - risky workload identities
 
 This feature is in preview at the time of writing this playbook and licensing requirements will apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Graph API.
@@ -103,10 +111,17 @@ The first step of the investigation is to look for evidence of unusual authentic
 - Failures - are there a large number of authentication failures for the Service Principal?
 - Timestamps - are there successful authentications that are occurring at times that you would not expect?
 - Frequency - is there an increased frequency of authentications for the Service Principal?
+- Leak Credentials - are the source depots like GitHub, where credentials are hard coded and could be leaked?
+
+If you have deployed Identity Protection - risky workload identities, check the **Suspicious Sign-ins and Leak Credentials detections**. For more information, see [workload identity risk detentions](/azure/active-directory/identity-protection/concept-workload-identity-risk#workload-identity-risk-detections).
+
+Also, if you have deployed Microsoft Defender for Cloud Apps, check the portal for alerts relating to the application you are currently investigating.
 
 ### Check the target resource
 
-Within Service principal sign-ins, also check the **Resource** that the Service Principal was accessing during the authentication. Is it an expected resource? It is important to have input from the application owner as they will be familiar with which resources the Service Principal should be accessing.
+Within Service principal sign-ins, also check the **Resource** that the Service Principal was accessing during the authentication. It is important to have input from the application owner as they will be familiar with which resources the Service Principal should be accessing.
+
+[add image]
 
 ### Check for abnormal credential changes
 
@@ -114,7 +129,18 @@ Within Service principal sign-ins, also check the **Resource** that the Service 
 - Filter for **Category** by **Application Management**, and **Activity** by **Update Application – Certificates and secrets management**.
 - Check to see if there was an unauthorized change to credentials on the account.
 - Also check whether there are more credentials than warranted, assigned to the service principal.
-- Finally, when checking for credentials, check both the application and associated service principal objects.
+- Check both the application and associated service principal objects.
+- Check any [custom role](/azure/active-directory/roles/custom-enterprise-apps) that maybe have been created or modified. Note the Permissions marked below:
+
+[add image]
+
+If you have deployed the app governance add-on,, check the portal for alerts relating to the application. For more information, see [Unusual addition of credentials to an OAuth app](/defender-cloud-apps/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app). 
+
+If you have deployed Identity Protection, check the "Risk detections" report and in the user or workload identity “risk history”.
+
+[add image]
+
+Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-beta&tabs=http) and user [riskDetections APIs](/graph/api/resources/riskdetection?view=graph-rest-beta) to retrieve these risk detections.
 
 ### Search for anomalous app configuration changes
 
@@ -134,7 +160,7 @@ Within Service principal sign-ins, also check the **Resource** that the Service 
 
 - Check whether commercial gallery (published and verified versions) applications are being used.
 
-### Check UAL for phishing indications 
+### Check M365 Unified Audit Log (UAL) for phishing indications for the past 7 days
 
 Typically, when attackers use malicious or compromised applications as a means of persistence or to exfiltrate data, a phishing campaign is involved. Based on the findings from the previous steps, you should review the identities of:
 
@@ -143,23 +169,109 @@ Typically, when attackers use malicious or compromised applications as a means o
 
 Review the identities for indications of phishing attacks in the last 24 hours. Increase this time span if needed to 7, 14, and 30 days if there are no immediate indications. For a detailed phishing investigation playbook, see the [Phishing Investigation Playbook](incident-response-playbook-phishing.md).
 
-### Search for malicious application consents 
+### Search for malicious application consents for the past 7 days
 
 To get an application added to a tenant, attackers spoof users or admins to consent to applications. To know more about the signs of an attack, see the [Application Consent Grant Investigation Playbook](incident-response-playbook-app-consent.md#finding-signs-of-an-attack). 
 
 ### Check application consent for the flagged application
 
-- Check Audit logs. To see all consent grants for that application, filter **Activity** by **Consent to application**. Follow the steps described [here](incident-response-playbook-app-consent.md#finding-signs-of-an-attack).
-  An example using Graph API:
+#### Check Audit logs 
+
+To see all consent grants for that application, filter **Activity** by **Consent to application**. 
+
+- Use the Azure AD Portal Audit Logs
+
+    [add image]
+
+- Use Microsoft Graph to query the Audit logs
+
+  a) Filter for a specific time frame:
   
 ```HTTP
 GET https://graph.microsoft.com/v1.0/auditLogs/auditLogs/directoryAudits?&$filter=activityDateTime le 2022-01-24
 ```
 
-- Determine if there was suspicious end-user consent to the application.
-- Check Audit logs to find whether the permissions granted are too broad (tenant-wide or admin-consented).
-- Check whether the permissions were granted by user identities that should not have the ability to do this, or whether the actions were performed at strange dates and times.
-- Dismiss/Confirm Risk: Once you determine whether the application was compromised, call the API to dismiss the risk or confirm compromised per the above guidance.
+  b) Filter the Audit Logs for 'Consent to Applications' audit log entries:
+
+```http
+https://graph.microsoft.com/v1.0/auditLogs/directoryAudits?directoryAudits?$filter=ActivityType eq 'Consent to application'
+
+
+"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditLogs/directoryAudits",
+"value": [
+    {
+        "id": "Directory_0da73d01-0b6d-4c6c-a083-afc8c968e655_78XJB_266233526",
+        "category": "ApplicationManagement",
+        "correlationId": "0da73d01-0b6d-4c6c-a083-afc8c968e655",
+        "result": "success",
+        "resultReason": "",
+        "activityDisplayName": "Consent to application",
+        "activityDateTime": "2022-03-25T21:21:37.9452149Z",
+        "loggedByService": "Core Directory",
+        "operationType": "Assign",
+       "initiatedBy": {
+            "app": null,
+            "user": {
+                "id": "8b3f927e-4d89-490b-aaa3-e5d4577f1234",
+                "displayName": null,
+                "userPrincipalName": "admin@contoso.com",
+                "ipAddress": "55.154.250.91",
+                "userType": null,
+                "homeTenantId": null,
+                "homeTenantName": null
+            }
+        },
+        "targetResources": [
+            {
+                "id": "d23d38a1-02ae-409d-884c-60b03cadc989",
+                "displayName": "Graph explorer (official site)",
+                "type": "ServicePrincipal",
+                "userPrincipalName": null,
+                "groupType": null,
+                "modifiedProperties": [
+                    {
+                        "displayName": "ConsentContext.IsAdminConsent",
+                        "oldValue": null,
+                        "newValue": "\"True\""
+                    },
+```
+
+  c) Use Log Analytics
+
+    [add image]
+
+For more information, see the [Application Consent Grant Investigation Playbook](incident-response-playbook-app-consent.md#finding-signs-of-an-attack).
+
+#### Determine if there was suspicious end-user consent to the application
+
+A user can authorize an application to access some data at the protected resource, while acting as that user. The permissions that allow this type of access are called "delegated permissions" or [user consent](/azure/active-directory/manage-apps/consent-and-permissions-overview#user-consent).
+
+To find apps that have been consented by users, use LogAnalytics to search the Audit logs:
+
+```
+AuditLogs
+| where ActivityDisplayName == "Consent to application" and (parse_json(tostring(parse_json(tostring(TargetResources[0].modifiedProperties))[0].newValue)) <> "True")
+```
+
+#### Check Audit logs to find whether the permissions granted are too broad (tenant-wide or admin-consented)
+
+Reviewing the permissions granted to an application or Service Principal can be a time-consuming task. Start with understanding the potentially [risky permissions](incident-response-playbook-app-consent.md#classifying-risky-permissions) in Azure AD.
+
+Now, follow the guidance on how to enumerate and review permissions in the [App consent grant investigation](incident-response-playbook-app-consent.md#method-2---using-powershell).
+
+#### Check whether the permissions were granted by user identities that should not have the ability to do this, or whether the actions were performed at strange dates and times
+
+Review using Audit Logs:
+
+```
+AuditLogs
+| where OperationName == "Consent to application" 
+//| where parse_json(tostring(TargetResources[0].modifiedProperties))[4].displayName == "ConsentAction.Permissions"
+```
+
+You can also use the Azure AD Audit logs, filter by **Consent to application**. In the Audit Log details section, click **Modified Properties**, and then review the **ConsentAction.Permissions**:
+
+[add image]
 
 ## Containment steps
 
@@ -250,7 +362,7 @@ if ($servicePrincipal) {
 
 Remediate KeyVault secrets that the Service Principal has access to by rotating them, in the following priority:
 
-- Secrets directly exposed with GetSecret calls.
+- Secrets directly exposed with [GetSecret](/java/api/com.microsoft.azure.keyvault.keyvaultclient.getsecret?view=azure-java-legacy) calls.
 - The rest of the secrets in exposed KeyVaults.
 - The rest of the secrets across exposed subscriptions.
 
@@ -303,7 +415,7 @@ If you disable or if you soft delete the application, set up monitoring in Azure
 
 ### Implement Identity Protection for workload identities
 
-When risk detection indicates unusual sign-in properties or patterns, as well as unusual addition of credentials to an OAuth App, that may be an indicator of compromise. The detection baselines sign-in behavior between 2 and 60 days, and fires if one or more of the following unfamiliar properties occur during a subsequent sign-in:
+**Suspicious sign-ins**: When risk detection indicates unusual sign-in properties or patterns, as well as unusual addition of credentials to an OAuth App, that may be an indicator of compromise. The detection baselines sign-in behavior between 2 and 60 days, and fires if one or more of the following unfamiliar properties occur during a subsequent sign-in:
 
 - IP address / ASN
 - Target resource
@@ -326,10 +438,42 @@ Conditional Access allows you to block access for specific accounts that you des
 
 [add image]
 
-- AuthN strengths - when one elevates into Cloud Admin role -> require FIDO only.
-- Move the identified SPs to an AU, restrict access to this AU, and then cycle the credentials.
-
 For more information, see [Conditional Access for workload identities](/azure/active-directory/conditional-access/workload-identity).
+
+### Implement application risk policies
+
+#### Review user consent settings
+
+[add image]
+
+To review configuration options, see [Configure how users consent to apps](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal).
+
+#### Implement admin consent flow
+
+When an application developer directs users to the admin consent endpoint with the intent to record consent for the entire tenant, it is known as admin consent flow. To ensure the admin consent flow works properly, application developers must list all permissions in the RequiredResourceAccess property in the application manifest.
+
+Most organizations disable the ability for their users to consent to applications. To give users the ability to still request consent for applications and to have an administrative review capability, it is recommended to implement the admin consent workflow. Follow the [admin consent workflow steps](/azure/active-directory/manage-apps/configure-admin-consent-workflow) to configure it in your tenant.
+
+For high privileged operations such as admin consent, you have a privileged access strategy defined as per our [guidance](overview.md). 
+
+### Configure risk-based step-up consent
+
+Risk-based step-up consent helps reduce user exposure to malicious apps. For example, consent requests for newly registered multi-tenant apps that are not publisher verified and require non-basic permissions are considered risky. If a risky user consent request is detected, the request requires a "step-up" to admin consent instead. This step-up capability is enabled by default, but it results in a behavior change only when user consent is enabled.
+
+To enable it, follow the steps outlined [here](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).
+
+## References
+
+- [Incident Response Playbooks](incident-response-overview.md)
+- [App consent grant](incident-response-playbook-app-consent.md)
+- [Azure AD Identity Protection risks](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+- [Azure AD security monitoring guide](/azure/active-directory/fundamentals/security-operations-introduction)
+- [Application auditing concepts](/azure/active-directory/fundamentals/security-operations-applications)
+- [Configure how users consent to applications](/azure/active-directory/manage-apps/configure-user-consent)
+- [Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow)
+- [Unusual addition of credentials to an OAuth app](/defender-cloud-apps/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app)
+- [Securing workload identities with Identity Protection](/azure/active-directory/identity-protection/concept-workload-identity-risk)
+- [Holistic compromised identity signals from Microsoft](/azure-active-directory-identity/holistic-compromised-identity-signals-from-microsoft/ba-p/2365683)
 
 ## Additional incident response playbooks
 
@@ -337,7 +481,7 @@ Examine guidance for identifying and investigating these additional types of att
 
 - [Phishing](incident-response-playbook-phishing.md)
 - [Password spray](incident-response-playbook-password-spray.md)
-- [App consent](incident-response-playbook-app-consent.md)
+- [App consent grant](incident-response-playbook-app-consent.md)
 - [Microsoft DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
 
 ## Incident response resources
@@ -348,7 +492,3 @@ Examine guidance for identifying and investigating these additional types of att
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
 - [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
-- [Azure AD Identity Protection risks](/azure/active-directory/identity-protection/concept-identity-protection-risks)
-- [Azure AD SecOps introduction](/azure/active-directory/fundamentals/security-operations-introduction)
-- [Configure how users consent to applications](/azure/active-directory/manage-apps/configure-user-consent)
-- [Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow)

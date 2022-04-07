@@ -238,9 +238,9 @@ https://graph.microsoft.com/v1.0/auditLogs/directoryAudits?directoryAudits?$filt
 
   c) Use Log Analytics
 
-    [add image]
+[add image]
 
-For more information, see the [Application Consent Grant Investigation Playbook](incident-response-playbook-app-consent.md#finding-signs-of-an-attack).
+For more information, see the [Application Consent Grant Investigation Playbook](incident-response-playbook-app-consent.md).
 
 #### Determine if there was suspicious end-user consent to the application
 
@@ -362,7 +362,7 @@ if ($servicePrincipal) {
 
 Remediate KeyVault secrets that the Service Principal has access to by rotating them, in the following priority:
 
-- Secrets directly exposed with [GetSecret](/java/api/com.microsoft.azure.keyvault.keyvaultclient.getsecret?view=azure-java-legacy) calls.
+- Secrets directly exposed with [GetSecret](/java/api/com.microsoft.azure.keyvault.keyvaultclient.getsecret) calls.
 - The rest of the secrets in exposed KeyVaults.
 - The rest of the secrets across exposed subscriptions.
 

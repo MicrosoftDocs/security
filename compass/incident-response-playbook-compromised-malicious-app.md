@@ -140,7 +140,7 @@ If you have deployed Identity Protection, check the "Risk detections" report and
 
 [add image]
 
-Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-beta&tabs=http) and user [riskDetections APIs](/graph/api/resources/riskdetection?view=graph-rest-beta) to retrieve these risk detections.
+Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/identityprotectionroot-list-serviceprincipalriskdetections) and user [riskDetections APIs](/graph/api/resources/riskdetection) to retrieve these risk detections.
 
 ### Search for anomalous app configuration changes
 

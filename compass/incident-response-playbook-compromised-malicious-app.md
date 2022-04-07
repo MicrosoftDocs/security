@@ -464,7 +464,7 @@ To enable it, follow the steps outlined [here](/azure/active-directory/manage-ap
 
 ## References
 
-- [Incident Response Playbooks](incident-response-overview.md)
+- [Incident Response Playbooks](incident-response-playbooks.md)
 - [App consent grant](incident-response-playbook-app-consent.md)
 - [Azure AD Identity Protection risks](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 - [Azure AD security monitoring guide](/azure/active-directory/fundamentals/security-operations-introduction)

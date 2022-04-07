@@ -34,6 +34,8 @@ You also need detailed guidance for common attack methods that malicious users e
 
 - [App consent grant](incident-response-playbook-app-consent.md)
 
+- [Compromised and malicious applications](incident-response-playbook-compromised-malicious-app.md)
+
 Each playbook includes:
 
 - **Prerequisites:** The specific requirements you need to complete before starting the investigation. For example, logging that should be turned on and roles and permissions that are required.

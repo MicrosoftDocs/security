@@ -35,7 +35,7 @@ Security best practices are ideally applied proactively and completely to all sy
 We recommend applying as many as of the best practices as early as possible, and then working to retrofit any gaps over time as you mature your security program.
 We recommend evaluating the following considerations when prioritizing which to follow first:
 
--   **High business impact and highly exposed systems –** These include systems with direct intrinsic value as well as the systems that provide attackers a path to them. For more information, see [Identify and classify business critical applications](/azure/architecture/security/applications-services#identify-and-classify-business-critical-applications).
+-   **High business impact and highly exposed systems –** These include systems with direct intrinsic value as well as the systems that provide attackers a path to them. For more information, see [Identify and classify business critical applications](/azure/architecture/framework/security/design-apps-services).
 
 -   **Easiest to implement Mitigations**– Identify quick wins by prioritizing the best practices, which your organization can execute quickly because you already have the required skills, tools, and knowledge to do it (for example, implementing a Web App Firewall (WAF) to protect a legacy application).  
     Be careful not to exclusively use (or overuse) this short-term prioritization method. Doing so can increase your risk by preventing your program from growing and leaving critical risks exposed for extended periods.
@@ -85,7 +85,7 @@ This resulted in overwhelming complexity that generates support issues and often
 Creating a unified enterprise segmentation strategy enables to guide all technical teams stakeholders (IT, Security, Applications, etc.) Business Units that is built around the business risks and needs will increase alignment to and understand and support sustainability of the security containment promises.
 This clarity and alignment will also reduce s the risk of human errors and automation failures that can lead to security vulnerabilities, operational downtime, or both.
 
-While network micro-segmentation also offers promise to reduce risk (discussed more in [Network Security and Containment](/azure/architecture/security/network-security-containment) section), it doesn’t eliminate the need to align technical teams. Micro segmentation should be considered after to and plans to ensure the ensuring technical teams are aligned so you can avoid a recurrence of the internal conflicts that plagued and confusion of the on-premises network generation segmentation strategies.
+While network micro-segmentation also offers promise to reduce risk (discussed more in [Network Security and Containment](/security/compass/network-security-containment) section), it doesn’t eliminate the need to align technical teams. Micro segmentation should be considered after to and plans to ensure the ensuring technical teams are aligned so you can avoid a recurrence of the internal conflicts that plagued and confusion of the on-premises network generation segmentation strategies.
 
 Here are Microsoft's recommendations for prioritizing initiatives on containment and segmentation (based on Zero Trust principles). These recommendations are listed in priority order by highest importance.
 

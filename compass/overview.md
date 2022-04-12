@@ -32,7 +32,7 @@ Building this strategy requires a holistic approach combining multiple technolog
 
 |   |   |   |   |
 | --- | --- | --- | --- |
-| ![Rapid Modernization Plan](./media/overview/ramp.png) | [Rapid Modernization Plan (RaMP)](security-rapid-modernization-plan.md) <br/> - Plan and implement the most impactful quick wins | ![Best practices checklist](./media/overview/checklist.png) | [Best practices](/security/compass/critical-impact-accounts) <br/> [Videos and Slides](https://docs.microsoft.com/security/compass/administration-videos-and-decks) |
+| ![Rapid Modernization Plan](./media/overview/ramp.png) | [Rapid Modernization Plan (RaMP)](security-rapid-modernization-plan.md) <br/> - Plan and implement the most impactful quick wins | ![Best practices checklist](./media/overview/checklist.png) | [Best practices](/security/compass/critical-impact-accounts) <br/> [Videos and Slides](/security/compass/administration-videos-and-decks) |
 
 ## Industry references
 

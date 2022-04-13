@@ -24,7 +24,7 @@ This roadmap builds on the technical controls established in the [privileged acc
 > Many of these steps will have a green/brownfield dynamic as organizations often have security risks in the way they are already deployed or configured accounts. 
 > This roadmap prioritizes stopping the accumulation of new security risks first, and then later cleans up the remaining items that have already accumulated.
 
-As you progress through the roadmap, you can utilize Microsoft Secure Score to track and compare many items in the journey with others in similar organizations over time. Learn more about Microsoft Secure Score in the article [Secure score overview](https://docs.microsoft.com/security/mtp/microsoft-secure-score).
+As you progress through the roadmap, you can utilize Microsoft Secure Score to track and compare many items in the journey with others in similar organizations over time. Learn more about Microsoft Secure Score in the article [Secure score overview](/microsoft-365/security/defender/microsoft-secure-score).
 
 Each item in this RAMP is structured as an initiative that will be tracked and managed using a format that builds on the objectives and key results (OKR) methodology. Each item includes what (objective), why, who, how, and how to measure (key results). Some items require changes to processes and people's knoweldge/skills, while others are simpler technology changes. Many of these initiatives will include members outside of the traditional IT Department that should be included in the decision making and implementation of these changes to ensure they are successfully integrated in your organization. 
 

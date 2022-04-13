@@ -36,13 +36,13 @@ It is critical to work together as an organization, create partnerships, and edu
 
 - **What**: Ensure that you are not accidentally locked out of your Azure Active Directory (Azure AD) organization in an emergency situation. 
 - **Why**: Emergency access accounts rarely used and highly damaging to the organization if compromised, but their availability to the organization is also critically important for the few scenarios when they are required. Ensure you have a plan for continuity of access that accommodates both expected and unexpected events. 
-- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
-     - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards
-     - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement any changes
-     - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-- **How**: Follow the guidance in [Manage emergency access accounts in Azure AD](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access).
+     - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards
+     - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
+     - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
+- **How**: Follow the guidance in [Manage emergency access accounts in Azure AD](/azure/active-directory/roles/security-emergency-access).
 - **Measure key results:**
    - **Established** Emergency access process has been designed based on Microsoft guidance that meets organizational needs
    - **Maintained** Emergency access has been reviewed and tested within the past 90 days
@@ -51,32 +51,32 @@ It is critical to work together as an organization, create partnerships, and edu
 
 - **What**: Use Azure AD Privileged Identity Management (PIM) in your Azure AD production environment to discover and secure privileged accounts
 - **Why**: Privileged Identity Management provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions.
-- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
-     - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
-     - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement any changes
-     - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-- **How**: Deploy and Configure Azure AD Privileged Identity Management using the guidance in the article, [Deploy Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-deployment-plan).
+     - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
+     - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
+     - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
+- **How**: Deploy and Configure Azure AD Privileged Identity Management using the guidance in the article, [Deploy Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-deployment-plan).
 - **Measure key results**: 100% of applicable privileged access roles are using Azure AD PIM
 
 ### Identify and categorize privileged accounts (Azure AD)
 
 - **What**: Identify all roles and groups with high business impact that will require privileged security level (immediately or over time). Additional specialized roles will be identified in later stages. 
 - **Why**: This step is required to identify and minimize the number of people that require separate accounts and privileged access protection
-- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
-     - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
-     - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement any changes
-     - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
+     - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
+     - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
+     - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
 - **How**: After turning on Azure AD Privileged Identity Management, view the users who are in the following Azure AD roles:
   - Global administrator
   - Privileged role administrator
   - Exchange administrator
   - SharePoint administrator
   
-  For a complete list of administrator roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
+  For a complete list of administrator roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/roles/permissions-reference).
 
    > Remove any accounts that are no longer needed in those roles. Then, categorize the remaining accounts that are assigned to admin roles:
    >
@@ -99,12 +99,12 @@ If you don't have Azure AD Privileged Identity Management in your organization, 
 
 - **Why**: Hardening the accounts used for administrative tasks. The administrator accounts should have mail disabled and no personal Microsoft accounts should be allowed.
 
-- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
-     - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
-     - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement any changes
-     - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
+     - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
+     - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
+     - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
 
 - **How**: All personnel that are authorized to possess administrative privileges must have separate accounts for administrative functions that are distinct from user accounts. **Do not share these accounts between users.**
    - *Standard user accounts* - Granted standard user privileges for standard user tasks, such as email, web browsing, and using line-of-business applications. These accounts are not granted administrative privileges.
@@ -121,14 +121,14 @@ If you don't have Azure AD Privileged Identity Management in your organization, 
 
 - **Why**: Modern attackers may stay undetected for long periods of time. Many threats are hard to find without a cohesive picture of your entire identity environment.
 
-- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
-     - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
-     - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement any changes
-     - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
+     - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
+     - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
+     - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
 
-- **How**: Deploy and enable [Microsoft Defender for Identity](https://docs.microsoft.com/defender-for-identity/what-is#whats-next) and review any open alerts.
+- **How**: Deploy and enable [Microsoft Defender for Identity](/defender-for-identity/what-is#whats-next) and review any open alerts.
 - **Measure key results**: All open alerts reviewed and mitigated by the appropriate teams.
 
 ## Improve credential management experience
@@ -137,28 +137,28 @@ If you don't have Azure AD Privileged Identity Management in your organization, 
 
 - **What**: Enable and configure self-service password reset (SSPR) in your organization and enable the combined security information registration experience.
 - **Why**: Users are able to reset their own passwords once they have registered. The combined security information registration experience provides a better user experience allowing registration for Azure AD Multi-Factor Authentication and self-service password reset. These tools when used together contribute to lower helpdesk costs and more satisfied users.
-- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
-     - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
-     - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement any changes
-     - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-     - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
-- **How**: To enable and deploy SSPR, see the article [Plan an Azure Active Directory self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
+     - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
+     - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
+     - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
+     - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
+- **How**: To enable and deploy SSPR, see the article [Plan an Azure Active Directory self-service password reset deployment](/azure/active-directory/authentication/howto-sspr-deployment).
 - **Measure key results**: Self-service password reset is fully configured and available to the organization
 
 ### Protect admin accounts - Enable and require MFA / Passwordless for Azure AD privileged users
 
 - **What**: Require all privileged accounts in Azure AD to use strong multi-factor authentication
 - **Why**: To protect access to data and services in Microsoft 365.
-- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
-     - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
-     - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement any changes
-     - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-     - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
-     - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
+     - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
+     - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
+     - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
+     - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
+     - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
 - **How**: Turn on Azure AD Multi-Factor Authentication (MFA) and register all other highly privileged single-user non-federated admin accounts. Require multi-factor authentication at sign-in for all individual users who are permanently assigned to one or more of the Azure AD admin roles like:
 
    - Global administrator
@@ -168,8 +168,8 @@ If you don't have Azure AD Privileged Identity Management in your organization, 
 
    Require administrators to use passwordless sign-in methods such as FIDO2 security keys or Windows Hello for Business in conjunction with unique, long, complex passwords. Enforce this change with an organizational policy document.
 
-Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Authentication deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) and 
-[Plan a passwordless authentication deployment in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-deployment).
+Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted) and 
+[Plan a passwordless authentication deployment in Azure Active Directory](/azure/active-directory/authentication/howto-authentication-passwordless-deployment).
 - **Measure key results**: 100% of privileged users are using passwordless authentication or a strong form of multi-factor authentication for all logons. See [Privileged Access Accounts](privileged-access-accounts.md) for description of multi-factor authentication
 
 ### Block legacy authentication protocols for privileged user accounts
@@ -178,13 +178,13 @@ Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Au
 
 - **Why**: Organizations should block these legacy authentication protocols because multi-factor authentication cannot be enforced against them. Leaving legacy authentication protocols enabled can create an entry point for attackers. Some legacy applications may rely on these protocols and organizations have the option to create specific exceptions for certain accounts. These exceptions should be tracked and additional monitoring controls implemented.
 
-- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
-     - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards): establish clear requirements
-     - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or Central IT Operations [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement the policy
-     - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-- **How**: To block legacy authentication protocols in your organization, follow the guidance in the article [How to: Block legacy authentication to Azure AD with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication).
+     - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards): establish clear requirements
+     - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or Central IT Operations [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement the policy
+     - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
+- **How**: To block legacy authentication protocols in your organization, follow the guidance in the article [How to: Block legacy authentication to Azure AD with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).
 - **Measure key results**: 
    - **Legacy protocols blocked:** All legacy protocols are blocked for all users, with only authorized exceptions
    - **Exceptions** are reviewed every 90 days and expire permanently within one year. Application owners must fix all exceptions within one year of first exception approval 
@@ -195,29 +195,29 @@ Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Au
 > [!NOTE]
 > This change will require centralizing the decision-making process with your organization's security and identity administration teams.
 - **Why**: Users can inadvertently create organizational risk by providing consent for an app that can maliciously access organizational data. 
-- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
-     - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
-     - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement any changes
-     - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-     - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
-     - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
-- **How**: Establish a centralized consent process to maintain centralized visibility and control of the applications that have access to data by following the guidance in the article, [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests).
+     - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
+     - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
+     - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
+     - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
+     - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
+- **How**: Establish a centralized consent process to maintain centralized visibility and control of the applications that have access to data by following the guidance in the article, [Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests).
 - **Measure key results**: End users are not able to consent to Azure AD application access
 
 ### Clean up account and sign-in risks
 
 - **What**: Enable Azure AD Identity Protection and cleanup any risks that it finds.
 - **Why**: Risky user and sign-in behavior can be a source of attacks against your organization.
-- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
-     - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
-     - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement any changes
-     - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-     - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated for related support calls and personnel has been trained on them
-- **How**: Create a process that monitors and manages user and sign-in risk. Decide if you will automate remediation, using Azure AD Multi-Factor Authentication and SSPR, or block and require administrator intervention.Follow the guidance in the article [How To: Configure and enable risk policies](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
+     - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
+     - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
+     - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
+     - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated for related support calls and personnel has been trained on them
+- **How**: Create a process that monitors and manages user and sign-in risk. Decide if you will automate remediation, using Azure AD Multi-Factor Authentication and SSPR, or block and require administrator intervention.Follow the guidance in the article [How To: Configure and enable risk policies](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
 - **Measure key results**: The organization has zero unaddressed user and sign-in risks. 
 > [!NOTE]
 > Conditional Access policies are required to block accrual of new sign-in risks. See the Conditional access section of [Privileged Access Deployment](privileged-access-deployment.md#azure-active-directory-configuration)
@@ -226,14 +226,14 @@ Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Au
 
 - **What**: Privileged accounts such as Global Administrators  have dedicated workstations to perform administrative tasks from.
 - **Why**: Devices where privileged administration tasks are completed are a target of attackers. Securing not only the account but these assets are critical in reducing your attack surface area. This separation limits their exposure to common attacks directed at productivity-related tasks like email and web browsing.
-- **Who**: This initiative is typically led by [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture).
+- **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
-     - [Policy and standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
-     - [Identity and Key Management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) to implement any changes
-     - [Security Compliance management](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-     - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
-     - [Central IT Operations](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
+     - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
+     - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
+     - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
+     - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
+     - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
 - **How**: Initial deployment should be to the Enterprise level as described in the article [Privileged Access Deployment](privileged-access-deployment.md)
 - **Measure key results**: Every privileged account has a dedicated workstation to perform sensitive tasks from.
 > [!NOTE]

@@ -1,5 +1,6 @@
 - name: Zero Trust Overview
   href: index.yml
+  expanded: true
 - name: Deployment guidance
   expanded: false
   items:

@@ -24,22 +24,30 @@ landingContent:
   # Card (optional)
   - title: Zero Trust implementation guidance
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
         - text: What is Zero Trust?
           url:  zero-trust-overview.md
   # Card
-  - title: Start with free trials
+  - title: Microsoft 365 Zero Trust deployment plan
     linkLists:
       - linkListType: get-started
         links:
-          - text: Evaluate Microsoft 365 Defender
-            url: defender/eval-overview.md
-          - text: Microsoft 365 Defender pilot playbook
-            url: defender/eval-overview.md
+          - text: Deploy your identity infrastructure for Microsoft 365
+            url: 
+          - text: Zero Trust identity and device configurations
+            url: 
+          - text: Evaluate, pilot, and deploy Microsoft 365 Defender
+            url: 
+          - text: Deploy a Microsoft Information Protection solution
+            url: 
+          - text: Deploy information protection for data privacy regulations
+            url: 
+          - text: Integrate SaaS apps for Zero Trust with Microsoft 365
+            url: 
   
   # Card
-  - title: Secure your remote workforce
+  - title: Microsoft Azure and Infrastructure deployment plans
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -47,24 +55,24 @@ landingContent:
           url: /enterprise-mobility-security/remote-work/
 
   # Card
-  - title: Microsoft Defender for Identity
+  - title: Technology partner integrations
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft Defender for Identity?
-            url: /azure-advanced-threat-protection/what-is-atp
-          - text: Microsoft Defender for Identity architecture
-            url: /azure-advanced-threat-protection/atp-architecture
+          - text: A
+            url: 
+          - text: B
+            url: 
 
    # Card
-  - title: Defender for Office 365
+  - title: Rapid Modernization Plan (RaMP)
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Defender for Office 365?
-            url: office-365-security/defender-for-office-365.md
-          - text: Defender for Office 365 service description
-            url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+          - text: User access and productivity
+            url: zero-trust/user-access-productivity-overview.md
+          - text: Data, compliance, and governance
+            url: zero-trust/data-compliance-governance-overview.md
             
   # Card
   - title: Microsoft Defender for Endpoint

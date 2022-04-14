@@ -35,9 +35,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: User access and productivity
-            url: zero-trust/user-access-productivity-overview
+            url: user-access-productivity-overview.md
           - text: Data, compliance, and governance
-            url: /zero-trust/data-compliance-governance-overview
+            url: data-compliance-governance-overview.md
 
 
   # Card
@@ -54,7 +54,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Integrate with Microsoft's Zero Trust solutions
-            url: /zero-trust/integrate/overview.md
+            url: /zero-trust/integrate/overview
 
  # Card
   - title: Microsoft 365 Zero Trust deployment plan

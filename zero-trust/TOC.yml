@@ -1,6 +1,9 @@
-- name: Zero Trust asdfasdfasdf
+- name: Zero Trust implementation guidance
   href: index.yml
-  expanded: true
+- name: Overview
+  items:
+  - name: What is Zero Trust?
+    href: zero-trust-overview.md
 - name: Concepts and deployment objectives
   expanded: false
   items:

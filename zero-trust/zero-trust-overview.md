@@ -1,5 +1,5 @@
 ---
-title: Zero Trust Guidance Center
+title: Zero Trust Guidance Overview
 description: Learn how to create Zero Trust solutions. The Zero Trust model assumes a breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to never trust and to always verify.
 ms.date: 04/30/2021
 ms.service: security
@@ -8,7 +8,7 @@ ms.author: v-gmoor
 ms.topic: conceptual
 ---
 
-# Zero Trust Guidance Center
+# Zero Trust Overview
 
 :::image type="icon" source="./media/icon-introduction-medium.png":::
 

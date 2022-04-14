@@ -35,9 +35,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: User access and productivity
-            url: zero-trust-overview.md
+            url: zero-trust/user-access-productivity-overview
           - text: Data, compliance, and governance
-            url: zero-trust-overview.md
+            url: /zero-trust/data-compliance-governance-overview
 
 
   # Card
@@ -84,6 +84,6 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Develop using Zero Trust principles
-            url: /zero-trust/develop/overview.md
+            url: /zero-trust/develop/overview
 
              

@@ -1,7 +1,7 @@
-- name: Zero Trust Overview
+- name: Zero Trust asdfasdfasdf
   href: index.yml
   expanded: true
-- name: Deployment guidance
+- name: Concepts and deployment objectives
   expanded: false
   items:
     - name: Overview

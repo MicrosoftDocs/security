@@ -34,17 +34,17 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Deploy your identity infrastructure for Microsoft 365
-            url: 
+            url: zero-trust-overview.md
           - text: Zero Trust identity and device configurations
-            url: 
+            url: zero-trust-overview.md
           - text: Evaluate, pilot, and deploy Microsoft 365 Defender
-            url: 
+            url: zero-trust-overview.md
           - text: Deploy a Microsoft Information Protection solution
-            url: 
+            url: zero-trust-overview.md
           - text: Deploy information protection for data privacy regulations
-            url: 
+            url: zero-trust-overview.md
           - text: Integrate SaaS apps for Zero Trust with Microsoft 365
-            url: 
+            url: zero-trust-overview.md
   
   # Card
   - title: Microsoft Azure and Infrastructure deployment plans
@@ -60,9 +60,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: A
-            url: 
+            url: zero-trust-overview.md
           - text: B
-            url: 
+            url: zero-trust-overview.md
 
    # Card
   - title: Rapid Modernization Plan (RaMP)
@@ -70,9 +70,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: User access and productivity
-            url: zero-trust/user-access-productivity-overview.md
+            url: zero-trust-overview.md
           - text: Data, compliance, and governance
-            url: zero-trust/data-compliance-governance-overview.md
+            url: zero-trust-overview.md
             
   # Card
   - title: Microsoft Defender for Endpoint
@@ -80,9 +80,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Defender for Endpoint?
-            url: defender-endpoint/microsoft-defender-endpoint.md
+            url: zero-trust-overview.md
           - text: Microsoft Defender Security Center portal overview
-            url: defender-endpoint/portal-overview.md
+            url: zero-trust-overview.md
              
   # Card (optional)
   - title: Microsoft Defender for Cloud
@@ -108,17 +108,6 @@ landingContent:
       - linkListType: overview
         links:
           - text: Secure score
-            url: defender/microsoft-secure-score.md
+            url: zero-trust-overview.md
 
-  # Card
-  - title: Microsoft Sentinel 
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Microsoft Sentinel? 
-            url: /azure/sentinel/overview
-
-
-
-  
-              
+ 

@@ -27,7 +27,7 @@ landingContent:
       - linkListType: overview
         links:
         - text: What is Zero Trust?
-          url:  zero-trust/zero-trust-overview.md
+          url:  zero-trust-overview.md
   # Card
   - title: Start with free trials
     linkLists:

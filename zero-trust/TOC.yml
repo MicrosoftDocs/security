@@ -24,6 +24,7 @@
     - name: Visibility, automation, and orchestration
       href: deploy/visibility-automation-orchestration.md
 - name: Microsoft 365 Zero Trust deployment plan
+  expanded: false
   items:
     - Overview
       href: /microsoft-365/security/microsoft-365-zero-trust.md
@@ -39,7 +40,7 @@
       href: /microsoft-365/compliance/information-protection-solution.md
     - Deploy information protection for data privacy regulations
       href: /microsoft-365/solutions/information-protection-deploy.md
-      
+
 - name: Microsoft Azure and Infrastructure deployment plans
   expanded: false
   items:

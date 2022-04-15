@@ -1,6 +1,6 @@
 ---
 title: Zero Trust overview
-description: Understand the Zero Trust security model 
+description: Understand the Zero Trust security model, learn about the principles, and apply the Zero Trust architecture using Microsoft 365 and Microsoft Azure .  
 ms.date: 04/15/2022
 ms.service: security
 author: mjcaparas
@@ -12,18 +12,11 @@ ms.topic: conceptual
 
 :::image type="icon" source="./media/icon-introduction-medium.png":::
 
-*What is Zero Trust?* Zero Trust is a security a framework. It is not a product or a service, but an approach on how to design and implement the following set of security principles:
+*What is Zero Trust?* Zero Trust is a security a framework. It is not a product or a service, but an approach in designing and implementing the following set of security principles:
 
 - Verify explicitly
 - Use least privilege access
 - Assume breach
-
-It is designed to adapt to the complexity of the modern environment that embraces the mobile workforce, protects people, devices, applications, and data wherever they are located.
-
-This is the core of **Zero Trust**. Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
-
-:::image type="content" source="./media/diagram-zero-trust-security-elements.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
-
 
 ## Guiding principles of Zero Trust
 
@@ -31,11 +24,19 @@ This is the core of **Zero Trust**. Instead of believing everything behind the c
 |------|-------|------|
 | Always authenticate and authorize based on all available data points. | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. |
 
+This is the core of **Zero Trust**. Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
+
+It is designed to adapt to the complexities of the modern environment that embraces the mobile workforce, protects people, devices, applications, and data wherever they are located.
+
+
 A Zero Trust approach should extend throughout the entire digital estate
 and serve as an integrated security philosophy and end-to-end strategy.
 This is done by implementing Zero Trust controls and technologies across
 six foundational elements. Each of these is a source of signal, a
 control plane for enforcement, and a critical resource to be defended.
+
+:::image type="content" source="./media/diagram-zero-trust-security-elements.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
+
 
 Different organizational requirements, existing technology
 implementations, and security stages all affect how a Zero Trust

@@ -1,18 +1,24 @@
 ---
-title: Zero Trust Guidance Overview
-description: Learn how to create Zero Trust solutions. The Zero Trust model assumes a breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to never trust and to always verify.
-ms.date: 04/30/2021
+title: Zero Trust overview
+description: Understand the Zero Trust security model 
+ms.date: 04/15/2022
 ms.service: security
-author: garycentric
-ms.author: v-gmoor
+author: mjcaparas
+ms.author: macapara
 ms.topic: conceptual
 ---
 
-# Zero Trust Overview
+# Zero Trust overview
 
 :::image type="icon" source="./media/icon-introduction-medium.png":::
 
-Today, organizations need a new security model that effectively adapts to the complexity of the modern environment, embraces the mobile workforce, and protects people, devices, applications, and data wherever they are located.
+*What is Zero Trust?* Zero Trust is a security a framework. It is not a product or a service, but an approach on how to design and implement the following set of security principles:
+
+- Verify explicitly
+- Use least privilege access
+- Assume breach
+
+It is designed to adapt to the complexity of the modern environment that embraces the mobile workforce, protects people, devices, applications, and data wherever they are located.
 
 This is the core of **Zero Trust**. Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 

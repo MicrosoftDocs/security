@@ -24,7 +24,7 @@ landingContent:
   # Card (optional)
   - title: Zero Trust implementation guidance
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: concept
         links:
         - text: What is Zero Trust?
           url:  zero-trust-overview.md
@@ -47,8 +47,6 @@ landingContent:
             url: zero-trust-overview.md
 
   
-
-
   # Card
   - title: Microsoft Azure and Infrastructure deployment plans
     linkLists:

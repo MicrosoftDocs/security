@@ -46,9 +46,18 @@ landingContent:
           - text: Integrate SaaS apps for Zero Trust with Microsoft 365
             url: zero-trust-overview.md
 
+  
 
 
   # Card
+  - title: Microsoft Azure and Infrastructure deployment plans
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+        - text: A
+          url: zero-trust-overview.md
+
+# Card
   - title: Rapid Modernization Plan (RaMP)
     linkLists:
       - linkListType: overview
@@ -59,13 +68,7 @@ landingContent:
             url: data-compliance-governance-overview.md
 
 
-  # Card
-  - title: Microsoft Azure and Infrastructure deployment plans
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-        - text: A
-          url: zero-trust-overview.md
+
 
   # Card
   - title: Technology partner integrations

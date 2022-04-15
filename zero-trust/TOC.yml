@@ -26,7 +26,7 @@
 - name: Microsoft 365 Zero Trust deployment plan
   expanded: false
   items:
-    - Overview
+    - name: Overview
       href: /microsoft-365/security/microsoft-365-zero-trust.md
     - Deploy your identity infrastructure for Microsoft 365
       href: /microsoft-365/enterprise/deploy-identity-solution-overview.md

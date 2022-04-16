@@ -62,40 +62,32 @@ Message trace logs are invaluable components that help to find the original sour
 
 Several components of the *message trace* functionality are self-explanatory but *Message-ID* is a unique identifier for an email message and requires thorough understanding. To obtain the *Message-ID* for an email of interest we need to examine the raw email headers.
 
-### Microsoft 365 security and compliance center
+### Audit log search
 
-To check whether a user viewed a specific document or purged an item in their mailbox, you can use the [Office 365 Security & Compliance Center](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center#:~:text=The%20Security%20%26%20Compliance%20Center%20is%20designed%20to,features%20bring%20together%20compliance%20capabilities%20across%20Office%20365.) and [check the permissions and roles of users and administrators](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
-
-You can also search the [unified audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) and view all the activities of the user and administrator in your Office 365 organization.
+You search the [unified audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) and view all the activities of the user and admin in your Microsoft 365 organization.
 
 ### Are the sign-in logs and/or audit logs exported to an external system?
 
-Since most of the Azure Active Directory (Azure AD) sign-in and audit data will get overwritten after 30 or 90 days, Microsoft recommends that you leverage Sentinel, Azure Monitor or an external SIEM.
+Since most of the Azure Active Directory (Azure AD) [sign-in](/azure/active-directory/reports-monitoring/concept-sign-ins) and audit data will get overwritten after 30 or 90 days, Microsoft recommends that you leverage Sentinel, Azure Monitor or an external SIEM.
 
 ## Roles and permissions required
 
-### Roles in Azure AD
+### Permissions in Azure AD
 
-We recommend the following roles are enabled for the account you will use to perform the investigation:
+We recommend membership in the following roles for the account that does the investigation:
 
 - [Global Reader](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)
 - [Security Reader](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader)
 - As a last resort, you can always fall back to the role of a [Global Administrator / Company Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)
 
-### Roles in Microsoft 365 security and compliance center
+### Permissions in Microsoft 365
 
 Generally speaking, the [Global Reader](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) or the [Security Reader](/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security#security-reader) role should give you sufficient permissions to search the relevant logs.
 
 > [!NOTE]
-> If a user has the **View-Only Audit Logs** or **Audit Logs** role on the **Permissions** page in the Security & Compliance Center, they won't be able to search the Office 365 audit log. In this scenario, you must assign the permissions in Exchange Online because an [Exchange Online cmdlet](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) is used to search the log.
+> Accounts that are members of the **View-Only Audit Logs** or **Audit Logs** role groups only in the the Microsoft 365 Defender portal or the Microsoft 365 compliance center won't be able to search the Office 365 audit log. In this scenario, you must assign the permissions in Exchange Online. For more information, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#before-you-search-the-audit-log).
 
-If you have implemented the role-based access control (RBAC) in Exchange or if you are unsure which role you need in Exchange, you can use PowerShell to get the roles required for an individual Exchange PowerShell cmdlet:
-
-```powershell
-$Perms | foreach {Get-ManagementRoleAssignment -Role $_.Name -Delegating $false | Format-Table -Auto Role,RoleAssigneeType,RoleAssigneeName}
-```
-
-For more information, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
+if you're unsure about the role groups to use, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
 
 ### Microsoft Defender for Endpoint
 
@@ -111,76 +103,15 @@ The system should be able to run PowerShell.
 
 The following PowerShell modules are required for the investigation of the cloud environment:
 
-- Azure AD
-- Azure AD preview in some cases
-- MS Online for Office 365
-- Exchange connecting to Exchange for utilizing the unified audit log searches (inbox rules, message traces, forwarding rules, mailbox delegations, among others)
-- Azure AD Incident Response
+- Azure AD PowerShell for Graph module. For instructions, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/
 
-When you use Azure AD commands that are not part of the built-in modules in Azure, you need the MSOnline module - which is the same module that is used for Office 365. To work with Azure AD (which contains a set of functions) from PowerShell, install the Azure AD module.
+  When you use Azure AD commands that are not part of the built-in modules in Azure, you need the MSOnline module, which is the same module that's used for Microsoft 365. For instructions, see [Azure Active Directory (MSOnline)](/powershell/azure/active-directory/install-msonlinev1).
 
-## Installing various PowerShell modules
+  To work with Azure AD (which contains a set of functions) from PowerShell, install the Azure AD module.
 
-### Install the Azure AD PowerShell module
+- Exchange Online PowerShell V2 module: For instructions, see [Install and maintain the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module).
 
-To install the Azure AD PowerShell module, follow these steps:
-
-1. Run the **Windows PowerShell** app with elevated privileges (run as administrator).
-
-2. To allow PowerShell to run signed scripts, run the following command:
-
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    ```
-
-3. To install the Azure AD module, run the following command:
-
-    ```powershell
-    Install-Module -Name AzureAD -Verbose
-    ```
-
-    > [!NOTE]
-    > If you are prompted to install modules from an untrusted repository, type **Y** and press **Enter**.
-
-### Install the MSOnline PowerShell module
-
-To install the MSOnline PowerShell module, follow these steps:
-
-1. Run the **Windows PowerShell** app with elevated privileges (run as administrator).
-2. To allow PowerShell to run signed scripts, run the following command:
-
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    ```
-
-3. To install the MSOnline module, run the following command:
-
-    ```powershell
-    Install-Module -Name MSOnline -Verbose
-    ```
-
-    > [!NOTE]
-    > If you are prompted to install modules from an untrusted repository, type **Y** and press **Enter**.
-
-### Install the Exchange Online PowerShell V2 module
-
-Follow the steps in on [how to get the Exchange PowerShell installed with multi-factor authentication (MFA)](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell). You must have access to a tenant, so you can download the Exchange Online PowerShell module from the **Hybrid** tab in the Exchange admin center (EAC).
-
- Once you have configured the required settings, you can proceed with the investigation.
-
-### Install the Azure AD Incident Response module
-
-The new [AzureADIncidentResponse](https://www.powershellgallery.com/packages/AzureADIncidentResponse/4.0) PowerShell module provides rich filtering capabilities for Azure AD incidents. Use these steps to install it.
-
-1. Open an elevated **Windows PowerShell** window (run as administrator).
-2. Run the following command:
-
-    ```powershell
-    Install-Module -Name AzureADIncidentResponse -RequiredVersion 4.0
-    ```
-
-    > [!NOTE]
-    > If you are prompted to install modules from an untrusted repository, type **Y** and press **Enter**.
+- Azure AD Incident Response PowerShell module: For instructions, see [Azure AD Incident Response PowerShell Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
 
 ## Workflow
 

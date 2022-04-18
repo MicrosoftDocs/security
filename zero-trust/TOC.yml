@@ -98,7 +98,7 @@
       href: develop/identity.md
 
  - name: Resources
-   expanded: true
+   expanded: false
    items:
     - name: Zero Trust Essentials Video Series
       href: https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu

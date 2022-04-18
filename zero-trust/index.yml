@@ -34,7 +34,7 @@ landingContent:
       - linkListType: deploy
         links:
           - text: Deploy your identity infrastructure for Microsoft 365
-            url: zero-trust-overview.md
+            url: /microsoft-365/enterprise/deploy-identity-solution-overview
           - text: Zero Trust identity and device configurations
             url: zero-trust-overview.md
           - text: Evaluate, pilot, and deploy Microsoft 365 Defender

@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft Zero Trust Guidance Center # < 60 chars
-summary: Learn what the Zero Trust security model is and how to implement deployment steps to apply the security model in your organization.   # < 160 chars
+summary: Learn the concepts around the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using the deployment plans.  # < 160 chars
 
 metadata:
   title: Microsoft Zero Trust Guidance Center # Required; page title displayed in search results. Include the brand. < 60 chars.

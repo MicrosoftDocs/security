@@ -64,15 +64,6 @@
     - name: Deploy information protection for data privacy regulations
       href: /microsoft-365/solutions/information-protection-deploy?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
 
-- name: Microsoft Azure and Infrastructure deployment plans
-  expanded: false
-  items:
-    - name: Overview
-      href:
-    - name: Rapid Modernization Plan (RaMP) checklists 
-      href:
-
-
 
 - name: Technology partner integrations
   expanded: false

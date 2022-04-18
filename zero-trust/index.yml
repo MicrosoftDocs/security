@@ -36,24 +36,16 @@ landingContent:
           - text: Deploy your identity infrastructure for Microsoft 365
             url: /microsoft-365/enterprise/deploy-identity-solution-overview
           - text: Zero Trust identity and device configurations
-            url: zero-trust-overview.md
+            url: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations
+          - text: Manage endpoints with Microsft 365 Defender
+            url: /microsoft-365/solutions/manage-devices-with-intune-overview
           - text: Evaluate, pilot, and deploy Microsoft 365 Defender
-            url: zero-trust-overview.md
+            url: /microsoft-365/security/defender/eval-overview
           - text: Deploy a Microsoft Information Protection solution
-            url: zero-trust-overview.md
+            url: /microsoft-365/compliance/information-protection-solution
           - text: Deploy information protection for data privacy regulations
-            url: zero-trust-overview.md
-          - text: Integrate SaaS apps for Zero Trust with Microsoft 365
-            url: zero-trust-overview.md
+            url: /microsoft-365/solutions/information-protection-deploy
 
-  
-  # Card
-  - title: Microsoft Azure and Infrastructure deployment plans
-    linkLists:
-      - linkListType: deploy
-        links:
-        - text: A
-          url: zero-trust-overview.md
 
 # Card
   - title: Rapid Modernization Plan (RaMP)

@@ -50,7 +50,7 @@
   expanded: false
   items:
     - name: Overview
-      href: /microsoft-365/security/microsoft-365-zero-trust
+      href: /microsoft-365/security/microsoft-365-zero-trust?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Deploy your identity infrastructure for Microsoft 365
       href: /microsoft-365/enterprise/deploy-identity-solution-overview?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Zero Trust identity and device configurations

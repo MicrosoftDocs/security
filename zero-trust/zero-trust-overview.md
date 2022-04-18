@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 :::image type="icon" source="./media/icon-introduction-medium.png":::
 
-*What is Zero Trust?* Zero Trust is a security a framework. It is not a product or a service, but an approach in designing and implementing the following set of security principles:
+*What is Zero Trust?* Zero Trust is a security a model. It is not a product or a service, but an approach in designing and implementing the following set of security principles:
 
 - Verify explicitly
 - Use least privilege access

@@ -71,7 +71,7 @@ For an effective investigation, install the following PowerShell module and the 
 
 ## Workflow
 
-![Detailed flow of the investigation steps](/media/compromised-malicious-apps/IR_playbook_compromised_apps_flow.png)
+![Detailed flow of the investigation steps](./media/compromised-malicious-apps/IR_playbook_compromised_apps_flow.png)
 
 ## Investigation steps
 

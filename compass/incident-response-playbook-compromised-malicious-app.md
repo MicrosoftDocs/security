@@ -53,7 +53,7 @@ Before starting the investigation, make sure you have detailed information on th
 
 - Familiarize yourself with the concepts of the [App Consent grant investigation](incident-response-playbook-app-consent.md) (part of https://aka.ms/IRPlaybooks).
 
-- Make sure you understand the following Azure AD permissions: 
+- Make sure you understand the following Azure AD permissions:
   - [Risky permissions](incident-response-playbook-app-consent.md#classifying-risky-permissions)
   - [Consent model and the Admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow)
 

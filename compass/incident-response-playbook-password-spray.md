@@ -8,14 +8,14 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
 ms.topic: article
@@ -55,16 +55,16 @@ Get-AdfsProperties
 
 This table contains the auditing levels that are available.
 
-| **Audit level** | **PowerShell syntax** | **Description** |
-|-----------------|-----------------------|---------------------------------|
-| None            | Set-AdfsProperties -AuditLevel - None    | Auditing is disabled and no events will be logged                                         |
-| Basic (Default) | Set-AdfsProperties -AuditLevel - Basic   | No more than 5 events will be logged for a single request                                 |
-| Verbose         | Set-AdfsProperties -AuditLevel - Verbose | All events will be logged. This will log a significant amount of information per request. |
+|Audit level|PowerShell syntax|Description|
+|---|---|---|
+|None|`Set-AdfsProperties -AuditLevel None`|Auditing is disabled and no events will be logged|
+|Basic (Default)|`Set-AdfsProperties -AuditLevel Basic`|No more than 5 events will be logged for a single request|
+|Verbose|`Set-AdfsProperties -AuditLevel Verbose`|All events will be logged. This will log a significant amount of information per request.|
 
 To raise or lower the auditing level, use this PowerShell command:
 
 ```powershell
-Set-AdfsProperties -AuditLevel
+Set-AdfsProperties -AuditLevel <None | Basic | Verbose>
 ```
 
 ### Set up ADFS 2012 R2/2016/2019 security logging
@@ -74,7 +74,7 @@ Set-AdfsProperties -AuditLevel
 3. On the **Local Security Setting** tab, verify that the ADFS service account is listed. If it is not present, click **Add User** or **Group** and add it to the list, and then click **OK**.
 4. To enable auditing, open a command prompt with elevated privileges and run the following command:
 
-    ```powershell
+    ```DOS
     auditpol.exe /set /subcategory:"Application Generated" /failure:enable /success:enable
     ```
 
@@ -138,10 +138,9 @@ You can also:
 - Download the password spray and other incident response playbook workflows as a [PDF](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.pdf).
 - Download the password spray and other incident response playbook workflows as a [Visio file](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.vsdx).
 
-
 ## Checklist
 
-#### Investigation triggers
+### Investigation triggers
 
 - Received a trigger from SIEM, firewall logs, or Azure AD
 - Azure AD Identity Protection Password Spray feature or Risky IP
@@ -169,19 +168,19 @@ You can also:
 
 Check the [References](#references) section for guidance on how to enable features.
 
-- [Block IP address of attacker](/azure/active-directory/conditional-access/block-legacy-authentication)  (keep an eye out for changes to another IP address)
-- Changed user’s password of suspected compromise
+- [Block IP address of attacker](/azure/active-directory/conditional-access/block-legacy-authentication) (keep an eye out for changes to another IP address)
+- Changed user's password of suspected compromise
 - [Enable ADFS Extranet Lockout](/windows-server/identity/ad-fs/operations/configure-ad-fs-extranet-soft-lockout-protection)
 - [Disabled Legacy authentication](/azure/active-directory/conditional-access/block-legacy-authentication)
-- [Enabled Azure Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)  (sign in and user risk policies)
-- [Enabled MFA](/azure/active-directory/authentication/tutorial-enable-azure-mfa)  (if not already)
+- [Enabled Azure Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) (sign in and user risk policies)
+- [Enabled MFA](/azure/active-directory/authentication/tutorial-enable-azure-mfa) (if not already)
 - [Enabled Password Protection](/azure/active-directory/authentication/howto-password-ban-bad-on-premises-operations)
-- [Deploy Azure AD Connect Health for ADFS](/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs)  (if not already)
+- [Deploy Azure AD Connect Health for ADFS](/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs) (if not already)
 
 #### Recovery
 
 - Tag bad IP address in Defender for Cloud Apps, SIEM, ADFS and Azure AD
-- Check for other forms of mailbox persistence such as forwarding rules or additional delegations added 
+- Check for other forms of mailbox persistence such as forwarding rules or additional delegations added
 - [MFA as primary authentication](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)
 - [Configure SIEM integrations with Cloud](/microsoft-365/security/office-365-security/siem-server-integration)
 - Configure Alerting - Identity Protection, ADFS Health Connect, SIEM and Defender for Cloud Apps
@@ -195,11 +194,11 @@ You can also download the password spray and other incident playbook checklists 
 
 ### Password spray incident response
 
-Let’s understand a few password spray attack techniques before proceeding with the investigation.
+Let's understand a few password spray attack techniques before proceeding with the investigation.
 
-**Password compromise:** An attacker has successfully guessed the user’s password but has not been able to access the account due to other controls such as multi-factor authentication (MFA).
+**Password compromise:** An attacker has successfully guessed the user's password but has not been able to access the account due to other controls such as multi-factor authentication (MFA).
 
-**Account compromise:** An attacker has successfully guessed the user’s password and has successfully gained access to the account.
+**Account compromise:** An attacker has successfully guessed the user's password and has successfully gained access to the account.
 
 ### Environment discovery
 
@@ -216,7 +215,7 @@ Get-MsolDomain -DomainName "contoso.com"
 
 ### Is the authentication federated or managed?
 
-If the authentication is federated, then successful sign-ins will be stored in Azure AD. The failed sign-ins will be in their Identity Provider (IDP). For more information, see  [ADFS troubleshooting and event logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
+If the authentication is federated, then successful sign-ins will be stored in Azure AD. The failed sign-ins will be in their Identity Provider (IDP). For more information, see [ADFS troubleshooting and event logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
 
 If the authentication type is managed, (Cloud only, password hash sync (PHS) or pass-through authentication (PTA)), then successful and failed sign-ins will be stored in the Azure AD sign-in logs.
 
@@ -226,7 +225,7 @@ If the authentication type is managed, (Cloud only, password hash sync (PHS) or 
 
 ### Is Azure AD Connect Health enabled for ADFS?
 
-- The [RiskyIP report](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip)  will provide suspect IPs and date/time. Notifications should be enabled.
+- The [RiskyIP report](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip) will provide suspect IPs and date/time. Notifications should be enabled.
 - Also check the [federated sign-ins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
 
 ### Is the advanced logging enabled in ADFS?
@@ -262,8 +261,8 @@ An incident trigger is an event or a series of events that causes predefined ale
 - Date/time
 - Anomalies
 - Bad password attempts
-    
-    :::image type="content" source="./media/incident-response-playbook-password-spray/Badpwdattempt.jpg" alt-text="pwdattempts"::: 
+
+    :::image type="content" source="./media/incident-response-playbook-password-spray/Badpwdattempt.jpg" alt-text="pwdattempts":::
     *Graph depicting number of bad password attempts*
 
 Unusual spikes in activity are key indicators through Azure AD Health Connect (assuming this is installed). Other indicators are:
@@ -326,52 +325,52 @@ Low and slow attack indicators are those where thresholds for account lockout or
 6. To collect the *Audit Event 411 - failed authentication requests,* use the following [script](/samples/browse/?redirectedfrom=TechNet-Gallery):
 
     ```powershell
-    PARAM ($PastDays = 1, $PastHours) 
-    #************************************************ 
-    #ADFSBadCredsSearch.ps1 
-    #Version 1.0 
-    #Date: 6-20-2016 
-    #Author: Tim Springston [MSFT] 
-    #Description: This script will parse the ADFS server's (not proxy) security ADFS 
-    #for events which indicate an incorrectly entered username or password. The script can specify a 
-    #past period to search the log for and it defaults to the past 24 hours. Results >#will be placed into a CSV for  
-    #review of UPN, IP address of submitter, and timestamp.  
-    #************************************************ 
-    cls 
-    if ($PastHours -gt 0) 
-    {$PastPeriod = (Get-Date).AddHours(-($PastHours))} 
-    else 
-    {$PastPeriod = (Get-Date).AddDays(-($PastDays))    } 
-    $Outputfile = $Pwd.path + "\BadCredAttempts.csv" 
-    $CS = get-wmiobject -class win32_computersystem 
-    $Hostname = $CS.Name + '.' + $CS.Domain 
-    $Instances = @{} 
-    $OSVersion = gwmi win32_operatingsystem 
-    [int]$BN = $OSVersion.Buildnumber  
-    if ($BN -lt 9200){$ADFSLogName = "AD FS 2.0/Admin"} 
-    else {$ADFSLogName = "AD FS/Admin"} 
-    $Users = @() 
-    $IPAddresses = @() 
-    $Times = @() 
-    $AllInstances = @() 
-    Write-Host "Searching event log for bad credential events..." 
-    if ($BN -ge 9200) {Get-Winevent  -FilterHashTable @{LogName= "Security"; >StartTime=$PastPeriod; ID=411} -ErrorAction SilentlyContinue | Where-Object{$_.Message -match "The user name or password is incorrect"} |  % { 
-    $Instance = New-Object PSObject 
-    $UPN = $_.Properties[2].Value 
-    $UPN = $UPN.Split("-")[0] 
-    $IPAddress = $_.Properties[4].Value 
-    $Users += $UPN 
-    $IPAddresses += $IPAddress 
-    $Times += $_.TimeCreated 
-    add-member -inputobject $Instance -membertype noteproperty -name >"UserPrincipalName" -value $UPN 
-    add-member -inputobject $Instance -membertype noteproperty -name "IP Address" ->value $IPAddress 
-    add-member -inputobject $Instance -membertype noteproperty -name "Time" -value >($_.TimeCreated).ToString() 
-    $AllInstances += $Instance 
-    $Instance = $null 
-    } 
-    } 
-    $AllInstances | select * | Export-Csv -Path $Outputfile -append -force ->NoTypeInformation  
-    Write-Host "Data collection finished. The output file can be found at >$outputfile`." 
+    PARAM ($PastDays = 1, $PastHours)
+    #************************************************
+    #ADFSBadCredsSearch.ps1
+    #Version 1.0
+    #Date: 6-20-2016
+    #Author: Tim Springston [MSFT]
+    #Description: This script will parse the ADFS server's (not proxy) security ADFS
+    #for events which indicate an incorrectly entered username or password. The script can specify a
+    #past period to search the log for and it defaults to the past 24 hours. Results >#will be placed into a CSV for
+    #review of UPN, IP address of submitter, and timestamp.
+    #************************************************
+    cls
+    if ($PastHours -gt 0)
+    {$PastPeriod = (Get-Date).AddHours(-($PastHours))}
+    else
+    {$PastPeriod = (Get-Date).AddDays(-($PastDays))}
+    $Outputfile = $Pwd.path + "\BadCredAttempts.csv"
+    $CS = get-wmiobject -class win32_computersystem
+    $Hostname = $CS.Name + '.' + $CS.Domain
+    $Instances = @{}
+    $OSVersion = gwmi win32_operatingsystem
+    [int]$BN = $OSVersion.Buildnumber
+    if ($BN -lt 9200){$ADFSLogName = "AD FS 2.0/Admin"}
+    else {$ADFSLogName = "AD FS/Admin"}
+    $Users = @()
+    $IPAddresses = @()
+    $Times = @()
+    $AllInstances = @()
+    Write-Host "Searching event log for bad credential events..."
+    if ($BN -ge 9200) {Get-Winevent -FilterHashTable @{LogName= "Security"; >StartTime=$PastPeriod; ID=411} -ErrorAction SilentlyContinue | Where-Object{$_.Message -match "The user name or password is incorrect"} | % {
+    $Instance = New-Object PSObject
+    $UPN = $_.Properties[2].Value
+    $UPN = $UPN.Split("-")[0]
+    $IPAddress = $_.Properties[4].Value
+    $Users += $UPN
+    $IPAddresses += $IPAddress
+    $Times += $_.TimeCreated
+    add-member -inputobject $Instance -membertype noteproperty -name >"UserPrincipalName" -value $UPN
+    add-member -inputobject $Instance -membertype noteproperty -name "IP Address" ->value $IPAddress
+    add-member -inputobject $Instance -membertype noteproperty -name "Time" -value >($_.TimeCreated).ToString()
+    $AllInstances += $Instance
+    $Instance = $null
+    }
+    }
+    $AllInstances | select * | Export-Csv -Path $Outputfile -append -force ->NoTypeInformation
+    Write-Host "Data collection finished. The output file can be found at >$outputfile`."
     $AllInstances = $null
     ```
 
@@ -384,13 +383,13 @@ Along with the above event IDs, collate the *Audit Event 1203 – Fresh Credenti
 
 ### Monitor and collate Event IDs from Azure AD
 
-See how to find the [meaning of error logs](https://login.microsoftonline.com/error).  
+See how to find the [meaning of error logs](https://login.microsoftonline.com/error).
 
 The following Event IDs from Azure AD are relevant:
 
 - 50057 - User account was disabled
 - 50055 - Password expired
-- 50072 – User prompted to provide MFA
+- 50072 - User prompted to provide MFA
 - 50074 - MFA required
 - 50079 - user needs to register security info
 - 53003 - User blocked by Conditional Access
@@ -424,7 +423,7 @@ Get-WinEvent -ProviderName 'ADFS' | Where-Object { $_.ID -eq '412' -or $_.ID -eq
 
 Azure AD Sign-In reports include ADFS sign-in activity when you use Azure AD Connect Health. Filter sign-in logs by Token Issuer Type "Federated".
 
-Here’s an example PowerShell command to retrieve sign-in logs for a specific IP address:
+Here's an example PowerShell command to retrieve sign-in logs for a specific IP address:
 
 ```powershell
 Get-AzureADIRSignInDetail -TenantId b446a536-cb76-4360-a8bb-6593cf4d9c7f -IpAddress 131.107.128.76
@@ -432,15 +431,15 @@ Get-AzureADIRSignInDetail -TenantId b446a536-cb76-4360-a8bb-6593cf4d9c7f -IpAddr
 
 Also, search the Azure portal for time frame, IP address and successful and interrupted sign-in as shown in these images.
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/Selectingtimeframe.jpg" alt-text="timeframe"::: 
+:::image type="content" source="./media/incident-response-playbook-password-spray/Selectingtimeframe.jpg" alt-text="timeframe":::
 
 *Searching for sign-ins within a specific time frame*
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/Selectingipaddress.jpg" alt-text="ipaddress"::: 
+:::image type="content" source="./media/incident-response-playbook-password-spray/Selectingipaddress.jpg" alt-text="ipaddress":::
 
 *Searching for sign-ins on a specific IP address*
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/Selectingstatus.jpg" alt-text="status"::: 
+:::image type="content" source="./media/incident-response-playbook-password-spray/Selectingstatus.jpg" alt-text="status":::
 
 *Searching for sign-ins based on the status*
 
@@ -462,13 +461,13 @@ Most attacks use legacy authentication. There are a number of ways to determine 
 1. In Azure AD, navigate to **Sign-Ins** and filter on **Client App.**
 2. Select all the legacy authentication protocols that are listed.
 
-    :::image type="content" source="./media/incident-response-playbook-password-spray/Legacyauthenticationchecks.jpg" alt-text="authenticationcheck"::: 
- 
+    :::image type="content" source="./media/incident-response-playbook-password-spray/Legacyauthenticationchecks.jpg" alt-text="authenticationcheck":::
+
     *List of legacy protocols*
 
 3. Or if you have an Azure workspace, you can use the pre-built legacy authentication workbook located in the Azure Active Directory portal under **Monitoring and Workbooks**.
 
-    :::image type="content" source="./media/incident-response-playbook-password-spray/authenticationbook.png" alt-text="workbook"::: 
+    :::image type="content" source="./media/incident-response-playbook-password-spray/authenticationbook.png" alt-text="workbook":::
 
     *Legacy authentication workbook*
 
@@ -476,7 +475,7 @@ Most attacks use legacy authentication. There are a number of ways to determine 
 
 1. Navigate to **New named locations**.
 
-    :::image type="content" source="./media/incident-response-playbook-password-spray/Namedlocation.jpg" alt-text="Example of a new named location"::: 
+    :::image type="content" source="./media/incident-response-playbook-password-spray/Namedlocation.jpg" alt-text="Example of a new named location":::
 
 2. Create a CA policy to target all applications and block for this named location only.
 
@@ -484,9 +483,9 @@ Most attacks use legacy authentication. There are a number of ways to determine 
 
 If the user has not used them before and this activity is unusual, then flag the user and investigate all of their activities.
 
-### Is the IP marked as “risky”?  
+### Is the IP marked as "risky"?
 
-Ensure you record successful passwords but failed multi-factor authentication (MFA) responses, as this activity indicates that the attacker is getting the password but not passing MFA.  
+Ensure you record successful passwords but failed multi-factor authentication (MFA) responses, as this activity indicates that the attacker is getting the password but not passing MFA.
 Set aside any account that appears to be a normal sign-in, for example, passed MFA, location and IP not out of the ordinary.
 
 ### MFA reporting
@@ -500,13 +499,13 @@ In Defender for Cloud Apps, investigate activities and file access of the compro
 - [Investigate compromise with Defender for Cloud Apps](/cloud-app-security/investigate)
 - [Investigate anomalies with Defender for Cloud Apps](/cloud-app-security/investigate-anomaly-alerts)
 
-Check whether the user has access to additional resources, such as virtual machines (VMs), domain account permissions, storage, among others.  
+Check whether the user has access to additional resources, such as virtual machines (VMs), domain account permissions, storage, among others.
 If data has been breached, then you should inform additional agencies, such as the police.
 
 ## Immediate remedial actions
 
 1. Change the password of any account that is suspected to have been breached or if the account password has been discovered. Additionally, block the user. Make sure you follow the guidelines for [revoking emergency access](/azure/active-directory/enterprise-users/users-revoke-access).
-2. Mark any account that has been compromised as “*compromised*” in Azure Identity Protection.
+2. Mark any account that has been compromised as "*compromised*" in Azure Identity Protection.
 3. Block the IP address of the attacker. Be cautious while performing this action as attackers can use legitimate VPNs and this could create more risk as they change IP addresses as well. If you are using Cloud Authentication, then block the IP address in Defender for Cloud Apps or Azure AD. If federated, you need to block the IP address at the firewall level in front of the ADFS service.
 4. [Block legacy](/azure/active-directory/conditional-access/block-legacy-authentication) authentication if it is being used (this action, however, could impact business).
 5. [Enable MFA](/azure/active-directory/authentication/tutorial-enable-azure-mfa) if it is not already done.
@@ -521,7 +520,7 @@ If data has been breached, then you should inform additional agencies, such as t
 
 Implement password protection on Azure AD and on-premises by enabling the custom-banned password lists. This configuration will prevent users from setting weak passwords or passwords associated with your organization:
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/Passwordprotection.jpg" alt-text="pwdprotection"::: 
+:::image type="content" source="./media/incident-response-playbook-password-spray/Passwordprotection.jpg" alt-text="pwdprotection":::
 
 *Enabling password protection*
 
@@ -531,13 +530,13 @@ For more information, see [how to defend against password spray attacks](https:/
 
 Tag the IP addresses in Defender for Cloud Apps to receive alerts related to future use:
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/IPaddresstag.jpg" alt-text="Example of tagging an IP address"::: 
+:::image type="content" source="./media/incident-response-playbook-password-spray/IPaddresstag.jpg" alt-text="Example of tagging an IP address":::
 
 *Tagging IP addresses*
 
-In Defender for Cloud Apps, “tag” IP address for the IP scope and set up an alert for this IP range for future reference and accelerated response.
+In Defender for Cloud Apps, "tag" IP address for the IP scope and set up an alert for this IP range for future reference and accelerated response.
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/ipaddressalert.png" alt-text="Example of setting up an IP address alert"::: 
+:::image type="content" source="./media/incident-response-playbook-password-spray/ipaddressalert.png" alt-text="Example of setting up an IP address alert":::
 
 *Setting alerts for a specific IP address*
 
@@ -545,11 +544,11 @@ In Defender for Cloud Apps, “tag” IP address for the IP scope and set up an 
 
 Depending on your organization needs, you can configure alerts.
 
-[Set up alerting in your SIEM tool](/microsoft-365/security/office-365-security/siem-server-integration)  and look at improving logging gaps. Integrate ADFS, Azure AD, Office 365 and Defender for Cloud Apps logging.
+[Set up alerting in your SIEM tool](/microsoft-365/security/office-365-security/siem-server-integration) and look at improving logging gaps. Integrate ADFS, Azure AD, Office 365 and Defender for Cloud Apps logging.
 
 Configure the threshold and alerts in ADFS Health Connect and Risky IP portal.
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/thresholdsettings.png" alt-text="Example of configuring threshold settings"::: 
+:::image type="content" source="./media/incident-response-playbook-password-spray/thresholdsettings.png" alt-text="Example of configuring threshold settings":::
 
 *Configure threshold settings*
 
@@ -610,7 +609,6 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 - [Create Risky IP and ADFS Health Connect Alerts](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip)
 - [Identity Protection alerts](/azure/active-directory/identity-protection/howto-identity-protection-configure-notifications)
 - [Attack simulator](/microsoft-365/security/office-365-security/attack-simulator)
-
 
 ## Additional incident response playbooks
 

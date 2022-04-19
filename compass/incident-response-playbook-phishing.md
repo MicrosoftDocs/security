@@ -154,7 +154,7 @@ You can also download the phishing and other incident playbook checklists as an 
 
 ## Investigation steps
 
-For this investigation, it is assumed that you either have a sample phishing email, or parts of it like the sender’s address, subject of the email, or parts of the message to start the investigation. Please also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
+For this investigation, it is assumed that you either have a sample phishing email, or parts of it like the sender's address, subject of the email, or parts of the message to start the investigation. Please also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
 
 This playbook is created with the intention that not all Microsoft customers and their investigation teams will have the full Microsoft 365 E5 or Azure AD Premium P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
 
@@ -247,7 +247,7 @@ Look for inbox rules that were removed, consider the timestamps in proximity to 
 There are two ways to obtain the list of transport rules.
 
 1. In the Exchange admin center, navigate to **Mail &gt; Flow &gt; Rules**.
-2.  In the Office 365 Security & Compliance Center, navigate to [Dashboard Report Viewer &gt; Security & Compliance - Exchange Transport Rule report](https://protection.office.com/reportv2?id=ETRRuleReport&pivot=Direction) and create a report.
+2. In the Office 365 Security & Compliance Center, navigate to [Dashboard Report Viewer &gt; Security & Compliance - Exchange Transport Rule report](https://protection.office.com/reportv2?id=ETRRuleReport&pivot=Direction) and create a report.
 
 The summary view of the report shows you a list of all the mail transport rules you have configured for your tenancy. When you select any given rule, you'll see details of the rule in a **Summary** pane to the right, which includes the qualifying criteria and action taken when the rule condition matches.
 
@@ -276,7 +276,7 @@ There are two main cases here:
 #### Microsoft Exchange Online
 
 Use the `Search-Mailbox` cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.
-The following example query searches Janes Smith’s mailbox for an email that contains the phrase *Invoice* in the subject and copies the results to *IRMailbox* in a folder named *Investigation.*
+The following example query searches Janes Smith's mailbox for an email that contains the phrase *Invoice* in the subject and copies the results to *IRMailbox* in a folder named *Investigation.*
 
 ```powershell
 Search-Mailbox -Identity "Jane Smith" -SearchQuery "Subject:Invoice" -TargetMailbox "IRMailbox" -TargetFolder "Investigation" LogLevel Full
@@ -302,7 +302,7 @@ For information about parameter sets, see the [Exchange cmdlet syntax](/powershe
 
 There are two main cases here: You have Exchange Online or Hybrid Exchange with on-premises Exchange servers. The workflow is essentially the same as explained in the topic <a name ="findemail">Get the list of users/identities who got the email.</a>
 
-#### Exchange Online
+#### Find the email in Exchange Online
 
 Use the **Search-Mailbox** cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.
 
@@ -312,7 +312,7 @@ This sample query searches all tenant mailboxes for an email that contains the s
 Get-Mailbox | Search-Mailbox -SearchQuery "Subject:InvoiceUrgent" -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
-#### Exchange on-premises
+#### Fin the email in on-premises Exchange
 
 Use the `Get-MessageTrackingLog` cmdlet to search for message delivery information stored in the message tracking log. Here's an example:
 
@@ -327,7 +327,7 @@ You have two options for Exchange Online:
 1. Use the classic `Search-Mailbox` cmdlet
 2. Use the `New-ComplianceSearch` cmdlet
 
-#### Exchange Online
+#### Find the message with attachments in Exchange Online
 
 Use the `Search-Mailbox` cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox. Here's an example:
 
@@ -341,7 +341,7 @@ The other option is to use the `New-ComplianceSearch` cmdlet. Here's an example:
 New-ComplianceSearch -Name "Investigation" -ExchangeLocation "Research Department" -ContentMatchQuery "from:pilar@contoso.com AND hasattachment:true"
 ```
 
-#### Exchange on-premises
+#### Find the message with attachments in on-premises Exchange
 
 Use the `Search-Mailbox` cmdlet to search for message delivery information stored in the message tracking log. Here's an example:
 
@@ -358,7 +358,7 @@ In this step, look for potential malicious content in the attachment, for exampl
 
 The **Malware Detections** report shows the number of incoming and outgoing messages that were detected as containing malware for your organization.
 
-To view this report, in the security & compliance center, go to [Reports >  Dashboard > Malware Detections](/microsoft-365/security/office-365-security/view-email-security-reports#malware-detections-report).
+To view this report, in the security & compliance center, go to [Reports > Dashboard > Malware Detections](/microsoft-365/security/office-365-security/view-email-security-reports#malware-detections-report).
 
 Similar to the **Threat Protection Status** report, this report also displays data for the past seven days by default. However, you can choose filters to change the date range for up to 90 days to view the details. (If you are using a trial subscription, you might be limited to 30 days of data.) To see the details, select **View details table** or export the report.
 
@@ -429,7 +429,7 @@ To verify or investigate IP addresses that have been identified from the previou
 - Public Sources:
   - [Ipinfo.io](http://ipinfo.io/) - Has a free option to obtain geo-location
   - [Censys.io](http://censys.io/) - Has a free option to obtain information about what their passive scans of the internet know
-  - [AbuseIPDB.com](https://www.abuseipdb.com/)  - Has a free option that provides some geolocation
+  - [AbuseIPDB.com](https://www.abuseipdb.com/) - Has a free option that provides some geolocation
   - Ask Bing and Google - Search on the IP address
 
 ### URL reputation
@@ -496,9 +496,9 @@ The audit log settings and events differ based on the operating system (OS) Leve
 
 See the following sections for different server versions.
 
-#### Server 2012R2
+#### Server 2012 R2
 
-By default, security events are not audited on Server 2012R2. You need to enable this feature on each ADFS Server in the Farm. In the ADFS Management console and select **Edit Federation Service Properties**.
+By default, security events are not audited on Server 2012 R2. You need to enable this feature on each ADFS Server in the Farm. In the ADFS Management console and select **Edit Federation Service Properties**.
 
 ![federatedproperties](./media/incident-response-playbook-phishing/Federatedservices.png)
 
@@ -507,7 +507,7 @@ You also need to enable the **OS Auditing Policy**.
 Open the command prompt, and run the following command as an administrator.
 
 ```DOS
-auditpol.exe /set /subcategory:”Application Generated” /failure:enable /success:enable
+auditpol.exe /set /subcategory:"Application Generated" /failure:enable /success:enable
 ```
 
 For more details, see [how to configure ADFS servers for troubleshooting](/previous-versions/windows/it-pro/windows-server-2003/cc738766(v=ws.10)?redirectedfrom=MSDN#BKMK_97).
@@ -533,7 +533,7 @@ If you have Azure AD Connect Health installed, you should also look into the Ris
 
 For more details, see [Risky IP report](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip).
 
-#### Server 2012R2
+#### Server 2012 R2
 
 **Event ID 342** – "The user name or password are incorrect" in the ADFS admin logs.
 

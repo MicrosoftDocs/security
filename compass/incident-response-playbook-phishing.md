@@ -82,10 +82,10 @@ We recommend membership in the following roles for the account that does the inv
 
 ### Permissions in Microsoft 365
 
-Generally speaking, the [Global Reader](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) or the [Security Reader](/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security#security-reader) role should give you sufficient permissions to search the relevant logs.
+Generally speaking, the [Global Reader](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) or the [Security Reader](/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security#security-reader) role groups in the Microsoft 365 Defender portal or the Microsoft Purview compliance portal should give you sufficient permissions to search the relevant logs.
 
 > [!NOTE]
-> Accounts that are members of the **View-Only Audit Logs** or **Audit Logs** role groups only in the the Microsoft 365 Defender portal or the Microsoft 365 compliance center won't be able to search the Office 365 audit log. In this scenario, you must assign the permissions in Exchange Online. For more information, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#before-you-search-the-audit-log).
+> Accounts that are members of the **View-Only Audit Logs** or **Audit Logs** role groups only in the the Microsoft 365 Defender portal or the Microsoft Purview compliance portal won't be able to search the Microsoft 365 audit log. In this scenario, you must assign permissions in Exchange Online. For more information, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#before-you-search-the-audit-log).
 
 if you're unsure about the role groups to use, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
 
@@ -103,15 +103,13 @@ The system should be able to run PowerShell.
 
 The following PowerShell modules are required for the investigation of the cloud environment:
 
-- Azure AD PowerShell for Graph module. For instructions, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/
+- Azure AD PowerShell for Graph module. For installation instructions, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/
 
-  When you use Azure AD commands that are not part of the built-in modules in Azure, you need the MSOnline module, which is the same module that's used for Microsoft 365. For instructions, see [Azure Active Directory (MSOnline)](/powershell/azure/active-directory/install-msonlinev1).
+  If you need older cmdlets in the MSOnline (v1) Azure AD module, see [Azure Active Directory (MSOnline)](/powershell/azure/active-directory/install-msonlinev1).
 
-  To work with Azure AD (which contains a set of functions) from PowerShell, install the Azure AD module.
+- Exchange Online PowerShell V2 module: For installation instructions, see [Install and maintain the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module).
 
-- Exchange Online PowerShell V2 module: For instructions, see [Install and maintain the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module).
-
-- Azure AD Incident Response PowerShell module: For instructions, see [Azure AD Incident Response PowerShell Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
+- Azure AD Incident Response PowerShell module: For installation instructions, see [Azure AD Incident Response PowerShell Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
 
 ## Workflow
 
@@ -126,69 +124,69 @@ You can also:
 
 This checklist will help you evaluate your investigation process and verify whether you have completed all the steps during investigation:
 
-- Review initial phishing email
-- Get the list of users who got this email
-- Get the latest dates when the user had access to the mailbox
-- Is delegated access configured on the mailbox?
-- Is there a forwarding rule configured for the mailbox?
-- Review your Mail Transport Rules
-- Find the email(s)
-- Did the user read or open the email?
-- Who else got the same email?
-- Did the email contain an attachment?
-- Was there payload in the attachment?
-- Check email header for true source of the sender
-- Verify IP addresses to attackers/campaigns
-- Did the user click the link in the email?
-- On what endpoint was the email opened?
-- Was the attachment payload executed?
-- Was the destination IP or URL touched or opened?
-- Was malicious code executed?
-- What sign-ins happened with the account for the federated scenario?
-- What sign-ins happened with the account for the managed scenario?
-- Investigate the source IP address
-- Investigate the device ID found
-- Investigate each App ID
+|&nbsp;|&nbsp;|
+|---|---|
+|☐|Review initial phishing email|
+|☐|Get the list of users who got this email|
+|☐|Get the latest dates when the user had access to the mailbox|
+|☐|Is delegated access configured on the mailbox?|
+|☐|Are there forwarding rules configured on the mailbox?|
+|☐|Review your Exchange mail flow rules (transport rules|
+|☐|Find the email messages|
+|☐|Did the user read or open the email?|
+|☐|Who else got the same email?|
+|☐|Did the email contain an attachment?|
+|☐|Was there a payload in the attachment?|
+|☐|Check email header for true source of the sender|
+|☐|Verify IP addresses to attackers/campaigns|
+|☐|Did the user click links in the email?|
+|☐|On what endpoint was the email opened?|
+|☐|Was the attachment payload executed?|
+|☐|Was the destination IP or URL touched or opened?|
+|☐|Was malicious code executed?|
+|☐|What sign-ins happened with the account for the federated scenario?|
+|☐|What sign-ins happened with the account for the managed scenario?|
+|☐|Investigate the source IP address|
+|☐|Investigate the device ID found|
+|☐|Investigate each App ID|
 
 You can also download the phishing and other incident playbook checklists as an [Excel file](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Checklists.xlsx).
 
 ## Investigation steps
 
-For this investigation, it is assumed that you either have a sample phishing email, or parts of it like the sender's address, subject of the email, or parts of the message to start the investigation. Please also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
+For this investigation, it is assumed that you either have a sample phishing email, or parts of it like the sender's address, subject of the email, or parts of the message to start the investigation. Also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
 
 This playbook is created with the intention that not all Microsoft customers and their investigation teams will have the full Microsoft 365 E5 or Azure AD Premium P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
 
-### [Get the list of users / identities who got the email](#findemail)
+### Get the list of users / identities who got the email
 
-As the very first step, you need to get a list of users / identities who received the phishing email. The objective of this step is to record a list of potential users / identities that you will later use to iterate through for additional investigation steps. Please refer to the [Workflow](#workflow) section for a high-level flow diagram of the steps you need to follow during this investigation.
+As the very first step, you need to get a list of users / identities who received the phishing email. The objective of this step is to record a list of potential users / identities that you'll later use to iterate through for additional investigation steps. Refer to the [Workflow](#workflow) section for a high-level flow diagram of the steps you need to follow during this investigation.
 
 We do not give any recommendations in this playbook on how you want to record this list of potential users / identities. Depending on the size of the investigation, you can leverage an Excel book, a CSV file, or even a database for larger investigations. There are multiple ways to obtain the list of identities in a given tenant, and here are some examples.
 
-### Create a search filter within the security & compliance center
+### Create a Content search in the Microsoft Purview compliance portal
 
-Navigate to the security & compliance center in Microsoft 365 and create a new search filter, using the indicators you have been provided. Follow the guidance on [how to create a search filter](/microsoft-365/compliance/content-search#create-a-search).
+Use the indicators that you've collected to create and run a Content search. For instructions, see [Create a content search](/microsoft-365/compliance/content-search#create-a-search).
 
-For a full list of searchable patterns in the security & compliance center, refer to the article on [searchable email properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties).
+For a full list of searchable email properties, see [searchable email properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties).
 
-#### Sample search patterns
-
-The following example query returns messages that were received by users between April 13, 2016 and April 14, 2016 and that contain the words "action" and "required" in the subject line:
+The following example returns messages that were received by users between April 13, 2022 and April 14, 2022 and that contain the words "action" and "required" in the subject line:
 
 ```SearchFilter
-(Received:4/13/2016..4/14/2016) AND (Subject:'Action required')
+(Received:4/13/2022..4/14/2022) AND (Subject:'Action required')
 ```
 
-The following example query returns messages that were sent by *chatsuwloginsset12345@outlook\[.\]com* and that contain the exact phrase "*Update your account information*" in the subject line.
+The following example query returns messages that were sent by `chatsuwloginsset12345@outlook.com` and that contain the exact phrase "*Update your account information*" in the subject line.
 
 ```SearchFilter
 (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
 ```
 
-For more details, see how to [search for and delete messages in your organization](/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
+For more information, see how to [search for and delete messages in your organization](/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
 
-### Use the Search-Mailbox cmdlet
+#### Use the Search-Mailbox cmdlet in Exchange Online PowerShell
 
-You can use the `Search-mailbox` cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.
+You can also use the **Search-Mailbox** cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to perform a specific query against a target mailbox of interest and copy the results to an unrelated destination mailbox.
 
 The following example query searches Jane Smith mailbox for an email that contains the phrase Invoice in the subject and copies the results to IRMailbox in a folder named "Investigation."
 
@@ -202,60 +200,61 @@ In this example command, the query searches all tenant mailboxes for an email th
 Get-Mailbox | Search-Mailbox -SearchQuery 'InvoiceUrgent vote' -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
+For detailed syntax and parameter information, see [Search-Mailbox](/powershell/module/exchange/search-mailbox).
+
 ### Is delegated access configured on the mailbox?
 
-See how to check whether [delegated access is configured on the mailbox](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/DumpDelegatesandForwardingRules.ps1).
+<--- This will stop working on 10/1/22 as the script uses basic auth to connect! --->
+
+Use the following script to check whether delegated access is configured on the mailbox: <https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/DumpDelegatesandForwardingRules.ps1>.
 
 To create this report, run a small PowerShell script that gets a list of all your users. Then, use the Get-MailboxPermission cmdlet to create a CSV file of all the mailbox delegates in your tenancy.
 
 Look for unusual names or permission grants. If you see something unusual, contact the mailbox owner to check whether it is legitimate.
 
-### Are there forwarding rule(s) configured for the mailbox?
+### Are there forwarding rules configured for the mailbox?
 
-In this step, you need to check each mailbox that was previously identified for forwarding rules or inbox rules. For forwarding rules, use the following PowerShell command:
+You need to check each identified mailbox for mailbox forwarding (also known as *SMTP forwarding*) or Inbox rules that forward email messages (typically, newly-created Inbox rules).
+
+- To check all mailboxes for mailbox forwarding, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+
+  ```powershell
+  Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize unlimited | Format-Table -Auto MicrosoftOnlineServicesID,ForwardingSmtpAddress,DeliverToMailboxAndForward | Export-csv C:\Temp\Forwarding.csv -NoTypeInformation
+  ```
+
+- To check for Inbox rules that were created in mailboxes between the specified dates, run the following command in Exchange Online PowerShell:
+
+  ```powershell
+  Search-UnifiedAuditLog -StartDate 12/16/2021 -EndDate 03/16/2022 -ResultSize 5000 -RecordType exchangeadmin -Operations New-InboxRule | Export-csv NoTypeInformation -Path c:\temp\Inboxrulesoutput.csv
+  ```
+
+- You can also use the **Auto-forwarded messages** report in the Exchange admin center (EAC). For instructions, see [Auto forwarded messages report in Exchange Online](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report).
+
+  **Notes**:
+
+  - Look for unusual target locations, or any kind of external addressing.
+  - Look for forwarding rules with unusual key words in the criteria such as *all mail with the word invoice in the subject*. Contact the mailbox owner to check whether it is legitimate.
+
+### Review Inbox rules
+
+Check for the removal of Inbox rules, considering the timestamps in proximity to your investigation. As an example, use the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
-Get-Mailbox | select UserPrincipalName,ForwardingSmtpAddress,DeliverToMailboxAndForward | Export-csv c:\temp\Forwarding.csv -NoTypeInformation
+Search-UnifiedAuditLog -StartDate 12/16/2021 -EndDate 03/16/2022 -Operations Remove-InboxRule | Export-CSV NoTypeInformation -Path c:\temp\removedInboxRules.csv
 ```
 
-Here's an example query:
+### Review Exchange mail flow rules (transport rules)
 
-```powershell
-Search-UnifiedAuditLog -startdate 12/16/2019 -EndDate 03/16/2019 -ResultSize 5000 -recordtype exchangeadmin -Operations New-InboxRule |Export-csv NoTypeInformation -Path c:\temp\Inboxrulesoutput.csv
-```
+There are two ways to get the list of Exchange mail flow rules (also known as transport rules) in your organization:
 
-Additionally, you can also utilize the *Inbox and Forwarding Rules* report in the Office 365 security & compliance center.
+1. In the Exchange admin center or Exchange Online PowerShell. For instructions, see [View or modify a mail flow rule](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+2. The **Exchange transport rule** report in the Exchange admin center. For instructions, see [Exchange transport rule report in Exchange Online](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
-1. Navigate to [Dashboard &gt; Report Viewer - Security & Compliance](https://protection.office.com/reportv2?id=MailFlowForwarding&pivot=Name).
-
-2. Look for unusual target locations, or any kind of external addressing.
-
-3. Also look for forwarding rules with unusual key words in the criteria such as *all mail with the word invoice in the subject*. Contact the mailbox owner to check whether it is legitimate.
-
-### Review inbox rules
-
-Additionally, check for the removal of Inbox rules. As an example, use the following PowerShell commmand:
-
-```powershell
-Search-UnifiedAuditLog -startDate 12/16/2019 -EndDate 03/16/2020 -Operations Remove-InboxRule |Export-CSV NoTypeInformation -Path c:\temp\removedInboxRules.csv
-```
-
-Look for inbox rules that were removed, consider the timestamps in proximity to your investigations.
-
-### Review mail transport rules
-
-There are two ways to obtain the list of transport rules.
-
-1. In the Exchange admin center, navigate to **Mail &gt; Flow &gt; Rules**.
-2. In the Office 365 Security & Compliance Center, navigate to [Dashboard Report Viewer &gt; Security & Compliance - Exchange Transport Rule report](https://protection.office.com/reportv2?id=ETRRuleReport&pivot=Direction) and create a report.
-
-The summary view of the report shows you a list of all the mail transport rules you have configured for your tenancy. When you select any given rule, you'll see details of the rule in a **Summary** pane to the right, which includes the qualifying criteria and action taken when the rule condition matches.
-
-Look for new rules, or rules that have been modified to redirect the mail to external domains. The number of rules should be relatively small such that you can maintain a list of known good rules. If you a create a new rule, then you should make a new entry in the Audit report for that event. You can search the report to determine who created the rule and from where they created it. If you see something unusual, contact the creator to determine if it is legitimate.
+Look for new rules, or rules that have been modified to redirect the mail to external domains. The number of rules should be known and relatively small. You can do an audit log search to determine who created the rule and from where they created it. If you see something unusual, contact the creator to determine if it is legitimate.
 
 ### Get the latest dates when the user had access to the mailbox
 
-In the Office 365 security & compliance center, navigate to [unified audit log](https://protection.office.com/#/unifiedauditlog). Under **Activities** in the drop-down list, you can filter by **Exchange Mailbox Activities**.
+In the Microsoft 365 security & compliance center, navigate to [unified audit log](https://protection.office.com/#/unifiedauditlog). Under **Activities** in the drop-down list, you can filter by **Exchange Mailbox Activities**.
 
 The capability to list compromised users is available in the [Microsoft 365 security & compliance center](/microsoft-365/security/office-365-security/view-email-security-reports#compromised-users-report-new).
 
@@ -270,37 +269,43 @@ The volume of data included here could be very substantial, so focus your search
 
 There are two main cases here:
 
-- Microsoft Exchange Online
-- Hybrid Exchange with on-premises Exchange servers.
+- The mailbox is in Exchange Online.
+- The mailbox is in on-premises Exchange (Exchange hybrid).
 
-#### Microsoft Exchange Online
+#### Did the Exchange Online user open the email
 
-Use the `Search-Mailbox` cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.
+Use the **Search-Mailbox** cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to do a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox.
+
 The following example query searches Janes Smith's mailbox for an email that contains the phrase *Invoice* in the subject and copies the results to *IRMailbox* in a folder named *Investigation.*
 
 ```powershell
 Search-Mailbox -Identity "Jane Smith" -SearchQuery "Subject:Invoice" -TargetMailbox "IRMailbox" -TargetFolder "Investigation" LogLevel Full
 ```
 
-The following sample query searches all tenant mailboxes for an email that contains the phrase *InvoiceUrgent* in the subject and copies the results to I*RMailbox* in a folder named *Investigation*.
+The following sample query searches all tenant mailboxes for an email that contains the phrase *InvoiceUrgent* in the subject and copies the results to *IRMailbox* in a folder named *Investigation*.
 
 ```powershell
 Get-Mailbox | Search-Mailbox -SearchQuery 'InvoiceUrgent vote' -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
-#### Exchange on-premises
+#### Did the user open the email in Exchange hybrid
 
-Use the `Get-MessageTrackingLog` cmdlet to search for message delivery information stored in the message tracking log. Here's an example:
+Use the **Get-MessageTrackingLog** cmdlet to search for message delivery information stored in the message tracking log. Here's an example:
 
 ```powershell
-Get-MessageTrackingLog -Server Mailbox01 -Start "03/13/2018 09:00:00" -End "03/15/2018 17:00:00" -Sender "john@contoso.com"
+Get-MessageTrackingLog -Server Mailbox01 -Start "03/13/2022 09:00:00" -End "03/15/2022 17:00:00" -Sender "john@contoso.com"
 ```
 
-For information about parameter sets, see the [Exchange cmdlet syntax](/powershell/exchange/exchange-server/exchange-cmdlet-syntax).
+For detailed syntax and parameter information, see [Get-MessageTrackingLog](/powershell/module/exchange/get-messagetrackinglog).
 
 ### Who else got the same email?
 
-There are two main cases here: You have Exchange Online or Hybrid Exchange with on-premises Exchange servers. The workflow is essentially the same as explained in the topic <a name ="findemail">Get the list of users/identities who got the email.</a>
+There are two main cases here:
+
+- The mailbox is in Exchange Online.
+- The mailbox is in on-premises Exchange (Exchange hybrid).
+
+The workflow is essentially the same as explained in the [Get the list of users / identities who got the email](#get-the-list-of-users--identities-who-got-the-email) section earlier in this article.
 
 #### Find the email in Exchange Online
 
@@ -312,76 +317,82 @@ This sample query searches all tenant mailboxes for an email that contains the s
 Get-Mailbox | Search-Mailbox -SearchQuery "Subject:InvoiceUrgent" -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
-#### Fin the email in on-premises Exchange
+#### Find the email in on-premises Exchange
 
-Use the `Get-MessageTrackingLog` cmdlet to search for message delivery information stored in the message tracking log. Here's an example:
+Use the **Get-MessageTrackingLog** cmdlet to search for message delivery information stored in the message tracking log. Here's an example:
 
 ```powershell
 Get-MessageTrackingLog -Server Mailbox01 -Start "03/13/2018 09:00:00" -End "03/15/2018 17:00:00" -MessageSubject "InvoiceUrgent"
 ```
 
+For detailed syntax and parameter information, see [Get-MessageTrackingLog](/powershell/module/exchange/get-messagetrackinglog).
+
 ### Did the email contain an attachment?
 
-You have two options for Exchange Online:
+There are two main cases here:
 
-1. Use the classic `Search-Mailbox` cmdlet
-2. Use the `New-ComplianceSearch` cmdlet
+- The mailbox is in Exchange Online.
+- The mailbox is in on-premises Exchange (Exchange hybrid).
 
-#### Find the message with attachments in Exchange Online
+#### Find out if the message contained an attachment in Exchange Online
 
-Use the `Search-Mailbox` cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox. Here's an example:
+If the mailbox is in Exchange Online, you have two options:
+
+- Use the classic **Search-Mailbox** cmdlet
+- Use the **New-ComplianceSearch** cmdlet
+
+Use the **Search-Mailbox** cmdlet to perform a specific search query against a target mailbox of interest and copy the results to an unrelated destination mailbox. Here's an example:
 
 ```powershell
 Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:trojan* -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
-The other option is to use the `New-ComplianceSearch` cmdlet. Here's an example:
+For detailed syntax and parameter information, see [Search-Mailbox](/powershell/module/exchange/search-mailbox).
+
+The other option is to use the **New-ComplianceSearch** cmdlet. Here's an example:
 
 ```powershell
 New-ComplianceSearch -Name "Investigation" -ExchangeLocation "Research Department" -ContentMatchQuery "from:pilar@contoso.com AND hasattachment:true"
 ```
 
-#### Find the message with attachments in on-premises Exchange
+For detailed syntax and parameter information, see [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch).
 
-Use the `Search-Mailbox` cmdlet to search for message delivery information stored in the message tracking log. Here's an example:
+#### Find out if the message contained an attachment in in on-premises Exchange
+
+> [!NOTE]
+> In Exchange Server 2013, this procedure requires Cumulative Update 12 (CU12) or later. For more information, see [this article](https://support.microsoft.com/topic/search-mailbox-cmdlet-with-attachment-keyword-lists-all-items-that-contain-the-query-string-of-attachment-b0422602-9f14-e85a-434f-81a14549574d).
+
+Use the **Search-Mailbox** cmdlet to search for message delivery information stored in the message tracking log. Here's an example:
 
 ```powershell
 Search-Mailbox -Identity "Jane Smith"-SearchQuery AttachmentNames:attachment_name -TargetMailbox "IRMailbox" -TargetFolder "Investigation" -LogLevel Full
 ```
 
-> [!NOTE]
->For Exchange 2013, you need CU12 to have this [cmdlet](https://support.microsoft.com/topic/search-mailbox-cmdlet-with-attachment-keyword-lists-all-items-that-contain-the-query-string-of-attachment-b0422602-9f14-e85a-434f-81a14549574d) running.
+For detailed syntax and parameter information, see [Search-Mailbox](/powershell/module/exchange/search-mailbox).
 
-### Was there payload in the attachment?
+### Was there a payload in the attachment?
 
-In this step, look for potential malicious content in the attachment, for example, PDF files, obfuscated PowerShell, or other script codes.
+Look for potential malicious content in the attachment. For example, PDF files, obfuscated PowerShell, or other script codes.
 
-The **Malware Detections** report shows the number of incoming and outgoing messages that were detected as containing malware for your organization.
-
-To view this report, in the security & compliance center, go to [Reports > Dashboard > Malware Detections](/microsoft-365/security/office-365-security/view-email-security-reports#malware-detections-report).
-
-Similar to the **Threat Protection Status** report, this report also displays data for the past seven days by default. However, you can choose filters to change the date range for up to 90 days to view the details. (If you are using a trial subscription, you might be limited to 30 days of data.) To see the details, select **View details table** or export the report.
+The **View data by Email \> Malware** view in the **Threat protection status** report shows the number of incoming and outgoing messages that were detected as containing malware for your organization. For more information, see [Threat protection status report: View data by Email \> Malware](/microsoft-365/security/office-365-security/view-email-security-reports#view-data-by-email--malware-and-chart-breakdown-by-detection-technology).
 
 ### Check email header for true source of the sender
 
 Many of the components of the message trace functionality are self-explanatory but you need to thoroughly understand about *Message-ID*. The *Message-ID* is a unique identifier for an email message.
 
-To obtain the *Message-ID* for an email of interest, you need to examine the raw email headers. Examination of the email headers will vary according to the email client being used. However, typically within Office 365, open the email message and from the **Reading** pane, select **View Original Message** to identify the email client. If in doubt, a simple search on how to view the message headers in the respective email client should provide further guidance.
-
-You should start by looking at the email headers. For example, in Outlook 365, open the message, navigate to **File > Info > Properties**:
-
-:::image type="content" source="./media/incident-response-playbook-phishing/checkemail.png" alt-text="Example of a properties screen showing email headers":::
-*Properties screen showing email headers*
+To obtain the *Message-ID* for an email of interest, you need to examine the raw email headers. For instructions on how to do this in Microsoft Outlook or Outlook on the Web (formerly known as Outlook Web App or OWA) see [View internet message headers in Outlook](https://support.microsoft.com/office/view-internet-message-headers-in-outlook-cd039382-dc6e-4264-ac74-c048563d212c)
 
 When viewing an email header, it is recommended to copy and paste the header information into an email header analyzer provided by [MXToolbox](https://mxtoolbox.com/EmailHeaders.aspx) or [Azure](https://mha.azurewebsites.net/) for readability.
 
 - **Headers Routing Information:** The routing information provides the route of an email as its being transferred between computers.
-- **Sender Policy Framework (SPF):** An email validation to help prevent/detect spoofing. In the SPF record, you can determine which IP addresses and domains can send emails on behalf of the domain.
+- **Sender Policy Framework (SPF):** An email validation to help prevent/detect spoofing. In the SPF record, you can determine which IP addresses and domains can send email on behalf of the domain.
 - **SPF = Pass:** The SPF TXT record determined the sender is permitted to send on behalf of a domain.
   - SPF = Neutral
   - SPF = Fail: The policy configuration determines the outcome of the message
     Sender IP
   - SMTP Mail: Validate if this is a legitimate domain
+
+  For more information about SPF, see [How Microsoft 365 uses SPF to prevent spoofing](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)
 
 - **Common Values:** Here is a breakdown of the most commonly used and viewed headers, and their values. This is valuable information and you can use them in the **Search** fields in Threat Explorer.
   - From address
@@ -402,7 +413,7 @@ When viewing an email header, it is recommended to copy and paste the header inf
 
 The SPF record is stored within a DNS database and is bundled with the DNS lookup information. You can manually check the Sender Policy Framework (SPF) record for a domain by using the *nslookup* command:
 
-1. Open the command prompt (**Start > Run > cmd**).
+1. Open the command prompt (**Start \> Run \> cmd**).
 2. Type the command as: `nslookup -type=txt"` a space, and then the domain/host name. For example:
 
     ```DOS
@@ -412,13 +423,13 @@ The SPF record is stored within a DNS database and is bundled with the DNS looku
 > [!NOTE]
 > *-all* (reject or fail them - don't deliver the email if anything does not match), this is recommended.
 
-### Check if DKIM is enabled on your custom domains in Office 365
+### Check if DKIM is enabled on your custom domains in Microsoft 365
 
 You need to publish two CNAME records for every domain they want to add the domain keys identified mail (DKIM). See how to [use DKIM to validate outbound email sent from your custom domain](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email).
 
 ### Check for domain-based message authentication, reporting, and conformance (DMARC)
 
-You can use this feature to [validate outbound emails in Office 365](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email#CreateDMARCRecord).
+You can use this feature to [validate outbound email in Microsoft 365](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email#CreateDMARCRecord).
 
 ### Verify IP addresses to attackers/campaigns
 
@@ -444,7 +455,7 @@ Here are a few third-party URL reputation examples
 
 As you investigate the IP addresses and URLs, look for and correlate IP addresses to indicators of compromise (IOCs) or other indicators, depending on the output or results and add them to a list of sources from the adversary.
 
-### [Did the user click the link in the email?](#clicklink)
+### Did the user click links in the email?
 
 If the user has clicked the link in the email (on-purpose or not), then this action typically leads to a new process creation on the device itself. Depending on the device this was performed, you need perform device-specific investigations. For example, Windows vs Android vs iOS. In this article, we have described a general approach along with some details for Windows-based devices. If you are using Microsoft Defender for Endpoint (MDE), then you can also leverage it for iOS and soon Android.
 
@@ -470,19 +481,19 @@ You can investigate these events using Microsoft Defender for Endpoint.
 
 ### On what endpoint was the email opened?
 
-The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
+The tasks here are similar to the previous investigation step: [Did the user click links in the email?](#did-the-user-click-links-in-the-email)
 
 ### Was the attached payload executed?
 
-The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
+The tasks here are similar to the previous investigation step: [Did the user click links in the email?](#did-the-user-click-links-in-the-email)
 
 ### Was the destination IP / URL touched or opened?
 
-The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
+The tasks here are similar to the previous investigation step: [Did the user click links in the email?](#did-the-user-click-links-in-the-email)
 
 ### Was malicious code executed?
 
-The tasks here are similar to the previous investigation step: <a name="clicklink"> Did the user click the link in the email?</a>
+The tasks here are similar to the previous investigation step: [Did the user click links in the email?](#did-the-user-click-links-in-the-email)
 
 ### What sign-ins happened with the account?
 
@@ -608,7 +619,7 @@ Or you can use this command from the AzureADIncidentResponse PowerShell module:
 Get-AzureADIRSignInDetail -IpAddress 1.2.3.4 -TenantId 536279f6-1234-2567-be2d-61e352b51eef -RangeFromDaysAgo 29 -RangeToDaysAgo 3 -OutGridView
 ```
 
-When you look into the results list, navigate to the **Device info** tab. Depending on the device used, you will get varying output. Here are a few examples:
+When you look into the results list, navigate to the **Device info** tab. Depending on the device used, you'll get varying output. Here are a few examples:
 
 - Example 1 - Un-managed device (BYOD):
 

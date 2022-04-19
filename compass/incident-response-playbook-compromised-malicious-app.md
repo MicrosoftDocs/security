@@ -160,6 +160,10 @@ Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/iden
 
 - Check whether commercial gallery (published and verified versions) applications are being used.
 
+### Evidence of compromise
+
+If you discover evidence of compromise, then it is important to take the steps highlighted in the containment and recovery sections. This will help address the risk, but will need further investigation to understand the source of the compromise to avoid further impact and ensure bad actors are removed. 
+
 ### Check M365 Unified Audit Log (UAL) for phishing indications for the past 7 days
 
 Typically, when attackers use malicious or compromised applications as a means of persistence or to exfiltrate data, a phishing campaign is involved. Based on the findings from the previous steps, you should review the identities of:
@@ -278,7 +282,7 @@ You can also use the Azure AD Audit logs, filter by **Consent to application**. 
 Once you have identified one or more applications or workload identities as either malicious or compromised, you may not immediately want to roll the credentials for this application, nor you want to immediately delete the application. It is highly recommended, that you follow the best practice guidance for [incidence response](incident-response-process.md).
 
 >[!Important]
->Before you delete the compromised application, you need to assess the business impact of disabling an application. Your organization must weigh up the security impact and the business impact of disabling an application. If the business impact of disabling an application is too great, then consider preparing and moving to the recovery stage of this process.
+>Before you perform the following step, you need to assess the business impact of disabling an application. Your organization must weigh up the security impact and the business impact of disabling an application. If the business impact of disabling an application is too great, then consider preparing and moving to the Recovery stage of this process.
 
 ### Disable compromised application
 

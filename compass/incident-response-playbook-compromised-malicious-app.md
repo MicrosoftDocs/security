@@ -1,5 +1,5 @@
 ---
-title: Compromised and malicious applications
+title: Compromised and malicious applications investigation
 description: Learn how to investigate if one or more applications in a customer tenant are compromised.
 keywords: compromise, malicious, applications, investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, incident response, playbook, guidance, Microsoft 365 Defender
 search.product: DART
@@ -22,7 +22,7 @@ ms.topic: article
 ms.technology: m365d
 ---
 
-# Compromised and malicious applications
+# Compromised and malicious applications investigation
 
 This article provides guidance on identifying and investigating malicious attacks on one or more applications in a customer tenant that are compromised. The step-by-step instructions will help you take the required remedial action to protect information and minimize further risks.
 

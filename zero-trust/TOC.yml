@@ -1,9 +1,8 @@
 - name: Zero Trust implementation guidance
   href: index.yml
-- name: Overview
-  items:
-  - name: What is Zero Trust?
-    href: zero-trust-overview.md
+
+- name: What is Zero Trust?
+  href: zero-trust-overview.md
 - name: Concepts and deployment objectives
   expanded: false
   items:

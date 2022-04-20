@@ -25,7 +25,7 @@ While only Microsoft Sentinel is required to get started, the solution is enhanc
 - [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
 - [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/security/office-365-defender)
 
-For more information, see [Guiding principles of Zero Trust](../index.md#guiding-principles-of-zero-trust).
+For more information, see [Guiding principles of Zero Trust](../zero-trust-overview.md#guiding-principles-of-zero-trust).
 
 > [!NOTE]
 > Microsoft Sentinel solutions are sets of bundled content, pre-configured for a specific set of data. For more information, see [Microsoft Sentinel solutions documentation](/azure/sentinel/sentinel-solutions).

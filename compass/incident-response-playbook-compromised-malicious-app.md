@@ -91,8 +91,6 @@ For Multi-tenant applications, the application is hosted and managed by a third 
 
 Find the contact details of the application owner within your organization. You can find it under the **Owners** tab on the **Enterprise Applications** section, or your organization may have a database that has this information.
 
-[add image]
-
 You can also use this Graph code:
 
 ```HTTP
@@ -185,8 +183,6 @@ To see all consent grants for that application, filter **Activity** by **Consent
 
 - Use the Azure AD Portal Audit Logs
 
-    [add image]
-
 - Use Microsoft Graph to query the Audit logs
 
   a) Filter for a specific time frame:
@@ -242,8 +238,6 @@ https://graph.microsoft.com/v1.0/auditLogs/directoryAudits?directoryAudits?$filt
 
   c) Use Log Analytics
 
-[add image]
-
 For more information, see the [Application Consent Grant Investigation Playbook](incident-response-playbook-app-consent.md).
 
 #### Determine if there was suspicious end-user consent to the application
@@ -288,7 +282,8 @@ Once you have identified one or more applications or workload identities as eith
 
 A typical containment strategy involves the disabling of sign-ins to the application identified, to give your incident response team or the affected business unit time to evaluate the impact of deletion or key rolling.
 
-[add image]
+:::image type="content" source="./media/compromised-malicious-apps/DisabledAppExample.png" alt-text="Toggle to disable users to sign-in":::
+*Properties screen showing how to disable users to sign in*
 
 You can also use the following PowerShell code to disable the sign-in to the app:
 
@@ -383,8 +378,6 @@ In order of priority, this scenario would be:
 
 An application can either be disabled or deleted. To disable the application, under **Enabled for users to sign in**, move the toggle to **No**.
 
-[image] 
-
 You can delete the application, either temporarily or permanently, in the portal or through the Graph API. When you soft delete, the application can be recovered up to 30 days after deletion.
 
 ```
@@ -434,13 +427,15 @@ For more information, see [Securing workload identities with Identity Protection
 
 These alerts appear in the Identity Protection portal and can be exported into SIEM tools through the [Identity Protection APIs](/graph/api/resources/identityprotection-overview?view=graph-rest-beta&preserve-view=true).
 
-[add image]
+:::image type="content" source="./media/compromised-malicious-apps/IR_playbook_workload_identity_detections.png" alt-text="Review risks and alerts in the Identity Protection portal":::
+*Image showing workload identity detection*
 
 ### Conditional Access for risky workload identities
 
 Conditional Access allows you to block access for specific accounts that you designate when Identity Protection marks them as “at risk.” Note that the enforcement through Conditional Access is currently limited to single-tenant applications only.
 
-[add image]
+:::image type="content" source="./media/compromised-malicious-apps/RiskbasedCAPolicySample.png" alt-text="Control user access based on conditional access policy":::
+*Image showing conditional access policy*
 
 For more information, see [Conditional Access for workload identities](/azure/active-directory/conditional-access/workload-identity).
 
@@ -448,7 +443,8 @@ For more information, see [Conditional Access for workload identities](/azure/ac
 
 #### Review user consent settings
 
-[add image]
+:::image type="content" source="./media/compromised-malicious-apps/UserConsentSettings.png" alt-text="Select Allow user consent for apps from the options":::
+*User consent for applications options*
 
 To review configuration options, see [Configure how users consent to apps](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal).
 

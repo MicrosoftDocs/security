@@ -101,6 +101,15 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/owners
 
 This feature is in preview at the time of writing this playbook and licensing requirements will apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Graph API.
 
+:::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal_2.png" alt-text="Risk Detection portal":::
+*Image showing the risk detection portal*
+
+:::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal.png" alt-text="Risk Detection details":::
+*Image showing risk detection details*
+
+:::image type="content" source="./media/compromised-malicious-apps/SPRiskDetectionGraphSample.png" alt-text="A sample of Service Principal Risk Detection Graph API":::
+*A sample of Service Principal risk detection graph API*
+
 ### Check for unusual sign-in behavior
 
 The first step of the investigation is to look for evidence of unusual authentications patterns in the usage of the Service Principal. Within the Azure portal, Azure Monitor, Azure Sentinel, or the Security Information and Event Management (SEIM) system of your organization's choice, look for the following in the **Service principal sign-ins** section:
@@ -119,7 +128,8 @@ Also, if you have deployed Microsoft Defender for Cloud Apps, check the portal f
 
 Within Service principal sign-ins, also check the **Resource** that the Service Principal was accessing during the authentication. It is important to have input from the application owner as they will be familiar with which resources the Service Principal should be accessing.
 
-[add image]
+:::image type="content" source="./media/compromised-malicious-apps/TargetResource.png" alt-text="Check the Resource for Service Principal":::
+*Image of the resource that is being accessed*
 
 ### Check for abnormal credential changes
 
@@ -130,13 +140,15 @@ Within Service principal sign-ins, also check the **Resource** that the Service 
 - Check both the application and associated service principal objects.
 - Check any [custom role](/azure/active-directory/roles/custom-enterprise-apps) that maybe have been created or modified. Note the Permissions marked below:
 
-[add image]
+:::image type="content" source="./media/compromised-malicious-apps/CustomRolesToCheck.png" alt-text="Check custom roles that may be created or modified":::
+*Image showing custom roles to check*
 
 If you have deployed the app governance add-on,, check the portal for alerts relating to the application. For more information, see [Unusual addition of credentials to an OAuth app](/defender-cloud-apps/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app). 
 
 If you have deployed Identity Protection, check the "Risk detections" report and in the user or workload identity “risk history”.
 
-[add image]
+:::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal_2.png" alt-text="Risk Detection portal":::
+*Image showing the risk detection portal*
 
 Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/identityprotectionroot-list-serviceprincipalriskdetections) and user [riskDetections APIs](/graph/api/resources/riskdetection) to retrieve these risk detections.
 
@@ -269,7 +281,8 @@ AuditLogs
 
 You can also use the Azure AD Audit logs, filter by **Consent to application**. In the Audit Log details section, click **Modified Properties**, and then review the **ConsentAction.Permissions**:
 
-[add image]
+:::image type="content" source="./media/compromised-malicious-apps/AuditLogDetails-ConsentPermissions.png" alt-text="Use the Azure AD Audit Logs":::
+*Image showing the Azure AD Audit Logs*
 
 ## Containment steps
 

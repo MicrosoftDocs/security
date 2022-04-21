@@ -1,6 +1,9 @@
-- name: Zero Trust Overview
-  href: index.md
-- name: Deployment guidance
+- name: Zero Trust implementation guidance
+  href: index.yml
+
+- name: What is Zero Trust?
+  href: zero-trust-overview.md
+- name: Concepts and deployment objectives
   expanded: false
   items:
     - name: Overview
@@ -19,6 +22,48 @@
       href: deploy/networks.md
     - name: Visibility, automation, and orchestration
       href: deploy/visibility-automation-orchestration.md
+
+- name: Rapid Modernization Plan (RaMP)
+  expanded: false
+  items: 
+    - name: Overview
+      href: zero-trust-ramp-overview.md
+    - name: User access and productivity
+      expanded: false
+      items:
+      - name: Overview
+        href: user-access-productivity-overview.md
+      - name: Step 1. Explicitly validate trust for all access requests
+        href: user-access-productivity-validate-trust.md
+    - name: Data, compliance, and governance
+      expanded: false
+      items:
+      - name: Overview
+        href: data-compliance-governance-overview.md
+      - name: Step 2. Ransomware recovery readiness
+        href: data-compliance-gov-ransomware-recovery-readiness.md
+      - name: Step 3. Data
+        href: data-compliance-gov-data.md
+
+- name: Microsoft 365 Zero Trust deployment plan
+  expanded: false
+  items:
+    - name: Overview
+      href: /microsoft-365/security/microsoft-365-zero-trust?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+    - name: Deploy your identity infrastructure for Microsoft 365
+      href: /microsoft-365/enterprise/deploy-identity-solution-overview?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+    - name: Zero Trust identity and device configurations
+      href: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+    - name: Manage endpoints with Intune and Microsoft 365
+      href: /microsoft-365/solutions/manage-devices-with-intune-overview?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+    - name: Evaluate, pilot, and deploy Microsoft 365 Defender
+      href: /microsoft-365/security/defender/eval-overview?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+    - name: Deploy a Microsoft Information Protection solution 
+      href: /microsoft-365/compliance/information-protection-solution?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+    - name: Deploy information protection for data privacy regulations
+      href: /microsoft-365/solutions/information-protection-deploy?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+
+
 - name: Technology partner integrations
   expanded: false
   items: 
@@ -50,37 +95,17 @@
     - name: Identity
       expanded: false
       href: develop/identity.md
-- name: Rapid Modernization Plan (RaMP)
-  expanded: false
-  items: 
-    - name: Overview
-      href: zero-trust-ramp-overview.md
-    - name: User access and productivity
-      expanded: false
-      items:
-      - name: Overview
-        href: user-access-productivity-overview.md
-      - name: Step 1. Explicitly validate trust for all access requests
-        href: user-access-productivity-validate-trust.md
-    - name: Data, compliance, and governance
-      expanded: false
-      items:
-      - name: Overview
-        href: data-compliance-governance-overview.md
-      - name: Step 2. Ransomware recovery readiness
-        href: data-compliance-gov-ransomware-recovery-readiness.md
-      - name: Step 3. Data
-        href: data-compliance-gov-data.md
+
 - name: Resources
-  expanded: true
+  expanded: false
   items:
-  - name: Zero Trust Essentials Video Series
-    href: https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu
-  - name: Resources for your Zero Trust journey
-    href: https://www.microsoft.com/security/blog/2021/05/24/resources-for-accelerating-your-zero-trust-journey/
-  - name: Zero Trust Assessment
-    href: https://info.microsoft.com/ww-landing-Zero-Trust-Assessment.html
-  - name: Microsoft Zero Trust Security Blog
-    href: https://www.microsoft.com/security/blog/zero-trust/
-  - name: Microsoft Intelligent Security Association
-    href: https://www.microsoft.com/security/business/intelligent-security-association
+    - name: Zero Trust Essentials Video Series
+      href: https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu
+    - name: Resources for your Zero Trust journey
+      href: https://www.microsoft.com/security/blog/2021/05/24/resources-for-accelerating-your-zero-trust-journey/
+    - name: Zero Trust Assessment
+      href: https://info.microsoft.com/ww-landing-Zero-Trust-Assessment.html
+    - name: Microsoft Zero Trust Security Blog
+      href: https://www.microsoft.com/security/blog/zero-trust/
+    - name: Microsoft Intelligent Security Association
+      href: https://www.microsoft.com/security/business/intelligent-security-association

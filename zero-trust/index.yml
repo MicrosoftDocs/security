@@ -1,0 +1,79 @@
+### YamlMime:Landing
+
+title: Microsoft Zero Trust Guidance Center # < 60 chars
+summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using the deployment plans.  # < 160 chars
+
+metadata:
+  title: Microsoft Zero Trust Guidance Center # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn what the Zero Trust security model is and how to implement deployment steps to apply the security architecture in your organization.  # Required; article description that is displayed in search results. < 160 chars.
+  services: na
+  ms.prod: m365-security
+  ms.technology: m365d
+  ms.topic: landing-page # Required
+  ms.collection: na
+  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
+  ms.author: macapara #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/14/2021 #Required; mm/dd/yyyy format.
+  
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Zero Trust implementation guidance
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: What is Zero Trust?
+          url:  zero-trust-overview.md
+ # Card
+  - title: Microsoft 365 Zero Trust deployment plan
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Deploy your identity infrastructure for Microsoft 365
+            url: /microsoft-365/enterprise/deploy-identity-solution-overview
+          - text: Zero Trust identity and device configurations
+            url: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations
+          - text: Manage endpoints with Microsft 365 Defender
+            url: /microsoft-365/solutions/manage-devices-with-intune-overview
+          - text: Evaluate, pilot, and deploy Microsoft 365 Defender
+            url: /microsoft-365/security/defender/eval-overview
+          - text: Deploy a Microsoft Information Protection solution
+            url: /microsoft-365/compliance/information-protection-solution
+          - text: Deploy information protection for data privacy regulations
+            url: /microsoft-365/solutions/information-protection-deploy
+
+
+
+ # Card
+  - title: Technology partner integrations
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Integrate with Microsoft's Zero Trust solutions
+            url: /security/zero-trust/integrate/overview
+
+
+# Card
+  - title: Rapid Modernization Plan (RaMP)
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: User access and productivity
+            url: user-access-productivity-overview.md
+          - text: Data, compliance, and governance
+            url: data-compliance-governance-overview.md
+   
+            
+  # Card
+  - title: Developer guidance
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Develop using Zero Trust principles
+            url: /zero-trust/develop/overview
+
+             

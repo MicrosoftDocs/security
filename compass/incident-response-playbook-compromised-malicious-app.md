@@ -102,13 +102,10 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/owners
 This feature is in preview at the time of writing this playbook and licensing requirements will apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Graph API.
 
 :::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal_2.png" alt-text="Risk Detection portal":::
-*Image showing the risk detection portal*
 
 :::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal.png" alt-text="Risk Detection details":::
-*Image showing risk detection details*
 
 :::image type="content" source="./media/compromised-malicious-apps/SPRiskDetectionGraphSample.png" alt-text="A sample of Service Principal Risk Detection Graph API":::
-*A sample of Service Principal risk detection graph API*
 
 ### Check for unusual sign-in behavior
 
@@ -129,7 +126,6 @@ Also, if you have deployed Microsoft Defender for Cloud Apps, check the portal f
 Within Service principal sign-ins, also check the **Resource** that the Service Principal was accessing during the authentication. It is important to have input from the application owner as they will be familiar with which resources the Service Principal should be accessing.
 
 :::image type="content" source="./media/compromised-malicious-apps/TargetResource.png" alt-text="Check the Resource for Service Principal":::
-*Image of the resource that is being accessed*
 
 ### Check for abnormal credential changes
 
@@ -141,14 +137,12 @@ Within Service principal sign-ins, also check the **Resource** that the Service 
 - Check any [custom role](/azure/active-directory/roles/custom-enterprise-apps) that maybe have been created or modified. Note the Permissions marked below:
 
 :::image type="content" source="./media/compromised-malicious-apps/CustomRolesToCheck.png" alt-text="Check custom roles that may be created or modified":::
-*Image showing custom roles to check*
 
 If you have deployed the app governance add-on,, check the portal for alerts relating to the application. For more information, see [Unusual addition of credentials to an OAuth app](/defender-cloud-apps/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app). 
 
 If you have deployed Identity Protection, check the "Risk detections" report and in the user or workload identity “risk history”.
 
 :::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal_2.png" alt-text="Risk Detection portal":::
-*Image showing the risk detection portal*
 
 Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/identityprotectionroot-list-serviceprincipalriskdetections) and user [riskDetections APIs](/graph/api/resources/riskdetection) to retrieve these risk detections.
 
@@ -282,7 +276,6 @@ AuditLogs
 You can also use the Azure AD Audit logs, filter by **Consent to application**. In the Audit Log details section, click **Modified Properties**, and then review the **ConsentAction.Permissions**:
 
 :::image type="content" source="./media/compromised-malicious-apps/AuditLogDetails-ConsentPermissions.png" alt-text="Use the Azure AD Audit Logs":::
-*Image showing the Azure AD Audit Logs*
 
 ## Containment steps
 
@@ -296,7 +289,6 @@ Once you have identified one or more applications or workload identities as eith
 A typical containment strategy involves the disabling of sign-ins to the application identified, to give your incident response team or the affected business unit time to evaluate the impact of deletion or key rolling.
 
 :::image type="content" source="./media/compromised-malicious-apps/DisabledAppExample.png" alt-text="Toggle to disable users to sign-in":::
-*Properties screen showing how to disable users to sign in*
 
 You can also use the following PowerShell code to disable the sign-in to the app:
 
@@ -441,14 +433,12 @@ For more information, see [Securing workload identities with Identity Protection
 These alerts appear in the Identity Protection portal and can be exported into SIEM tools through the [Identity Protection APIs](/graph/api/resources/identityprotection-overview?view=graph-rest-beta&preserve-view=true).
 
 :::image type="content" source="./media/compromised-malicious-apps/IR_playbook_workload_identity_detections.png" alt-text="Review risks and alerts in the Identity Protection portal":::
-*Image showing workload identity detection*
 
 ### Conditional Access for risky workload identities
 
 Conditional Access allows you to block access for specific accounts that you designate when Identity Protection marks them as “at risk.” Note that the enforcement through Conditional Access is currently limited to single-tenant applications only.
 
 :::image type="content" source="./media/compromised-malicious-apps/RiskbasedCAPolicySample.png" alt-text="Control user access based on conditional access policy":::
-*Image showing conditional access policy*
 
 For more information, see [Conditional Access for workload identities](/azure/active-directory/conditional-access/workload-identity).
 
@@ -457,7 +447,6 @@ For more information, see [Conditional Access for workload identities](/azure/ac
 #### Review user consent settings
 
 :::image type="content" source="./media/compromised-malicious-apps/UserConsentSettings.png" alt-text="Select Allow user consent for apps from the options":::
-*User consent for applications options*
 
 To review configuration options, see [Configure how users consent to apps](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal).
 

@@ -35,11 +35,11 @@ This article provides guidance on identifying and investigating malicious attack
 
 ## Prerequisites
 
-Before starting the investigation, make sure you have detailed information on the applications that you suspect to be compromised by the malicious attack.
+Before starting the investigation, make sure you have the correct tools and permissions to gather detailed information on the applications that you suspect to be compromised by the malicious attack.
 
 - To leverage Identity protection signals, the tenant must be licensed for Azure Active Directory (Azure AD) Premium P2.
   - Understanding of the [Identity Protection risk concepts](/azure/active-directory/identity-protection/concept-identity-protection-risks)
-  - Understanding of the [Identity protection investigation concepts](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
+  - Understanding of the [Identity Protection investigation concepts](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
 
 - An account with the following directory roles:
   - Global administrator
@@ -164,7 +164,7 @@ Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/iden
 
 - Check whether commercial gallery (published and verified versions) applications are being used.
 
->[!Warning]
+>[!Important]
 >**Evidence of compromise:**
 >If you discover evidence of compromise, then it is important to take the steps highlighted in the containment and recovery sections. This will help address the risk, but will need further investigation to understand the source of the compromise to avoid further impact and ensure bad actors are removed. 
 

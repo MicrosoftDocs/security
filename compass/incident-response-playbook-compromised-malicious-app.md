@@ -24,7 +24,7 @@ ms.technology: m365d
 
 # Compromised and malicious applications investigation
 
-This article provides guidance on identifying and investigating malicious attacks on one or more applications in a customer tenant that are compromised. The step-by-step instructions will help you take the required remedial action to protect information and minimize further risks.
+This article provides guidance on identifying and investigating malicious attacks on one or more applications in a customer tenant. The step-by-step instructions will help you take the required remedial action to protect information and minimize further risks.
 
 - **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation. For example, logging that should be turned on, roles and permissions required, among others.
 - **Workflow:** Shows the logical flow that you should follow to perform this investigation.
@@ -91,7 +91,7 @@ For Multi-tenant applications, the application is hosted and managed by a third 
 
 Find the contact details of the application owner within your organization. You can find it under the **Owners** tab on the **Enterprise Applications** section, or your organization may have a database that has this information.
 
-You can also use this Graph code:
+You can also execute this Graph query:
 
 ```HTTP
 GET https://graph.microsoft.com/v1.0/applications/{id}/owners
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/owners
 
 ### Check Identity Protection - risky workload identities
 
-This feature is in preview at the time of writing this playbook and licensing requirements will apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Graph API.
+This feature is in preview at the time of writing this playbook and licensing requirements will apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but can also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Graph API.
 
 :::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal_2.png" alt-text="Risk Detection portal":::
 
@@ -109,7 +109,7 @@ This feature is in preview at the time of writing this playbook and licensing re
 
 ### Check for unusual sign-in behavior
 
-The first step of the investigation is to look for evidence of unusual authentications patterns in the usage of the Service Principal. Within the Azure portal, Azure Monitor, Azure Sentinel, or the Security Information and Event Management (SEIM) system of your organization's choice, look for the following in the **Service principal sign-ins** section:
+The first step of the investigation is to look for evidence of unusual authentications patterns in the usage of the Service Principal. Within the Azure portal, Azure Monitor, Azure Sentinel, or the Security Information and Event Management (SIEM) system of your organization's choice, look for the following in the **Service principal sign-ins** section:
 
 - Location - is the Service Principal authenticating from locations\IP addresses that you would not expect?
 - Failures - are there a large number of authentication failures for the Service Principal?
@@ -138,7 +138,7 @@ Within Service principal sign-ins, also check the **Resource** that the Service 
 
 :::image type="content" source="./media/compromised-malicious-apps/CustomRolesToCheck.png" alt-text="Check custom roles that may be created or modified":::
 
-If you have deployed the app governance add-on,, check the portal for alerts relating to the application. For more information, see [Unusual addition of credentials to an OAuth app](/defender-cloud-apps/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app). 
+If you have deployed the app governance add-on, check the portal for alerts relating to the application. For more information, see [Unusual addition of credentials to an OAuth app](/defender-cloud-apps/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app). 
 
 If you have deployed Identity Protection, check the "Risk detections" report and in the user or workload identity “risk history”.
 
@@ -164,9 +164,9 @@ Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/iden
 
 - Check whether commercial gallery (published and verified versions) applications are being used.
 
-### Evidence of compromise
-
-If you discover evidence of compromise, then it is important to take the steps highlighted in the containment and recovery sections. This will help address the risk, but will need further investigation to understand the source of the compromise to avoid further impact and ensure bad actors are removed. 
+>[!Warning]
+>**Evidence of compromise:**
+>If you discover evidence of compromise, then it is important to take the steps highlighted in the containment and recovery sections. This will help address the risk, but will need further investigation to understand the source of the compromise to avoid further impact and ensure bad actors are removed. 
 
 ### Check M365 Unified Audit Log (UAL) for phishing indications for the past 7 days
 
@@ -244,6 +244,11 @@ https://graph.microsoft.com/v1.0/auditLogs/directoryAudits?directoryAudits?$filt
 
   c) Use Log Analytics
 
+```
+AuditLogs
+| where ActivityDisplayName == "Consent to application"
+```
+
 For more information, see the [Application Consent Grant Investigation Playbook](incident-response-playbook-app-consent.md).
 
 #### Determine if there was suspicious end-user consent to the application
@@ -279,7 +284,7 @@ You can also use the Azure AD Audit logs, filter by **Consent to application**. 
 
 ## Containment steps
 
-Once you have identified one or more applications or workload identities as either malicious or compromised, you may not immediately want to roll the credentials for this application, nor you want to immediately delete the application. It is highly recommended, that you follow the best practice guidance for [incidence response](incident-response-process.md).
+Once you have identified one or more applications or workload identities as either malicious or compromised, you may not immediately want to roll the credentials for this application, nor you want to immediately delete the application. It is highly recommended, that you follow the best practice guidance for [incident response](incident-response-process.md).
 
 >[!Important]
 >Before you perform the following step, you need to assess the business impact of disabling an application. Your organization must weigh up the security impact and the business impact of disabling an application. If the business impact of disabling an application is too great, then consider preparing and moving to the Recovery stage of this process.
@@ -445,6 +450,8 @@ For more information, see [Conditional Access for workload identities](/azure/ac
 ### Implement application risk policies
 
 #### Review user consent settings
+
+Review the user consent settings under **Azure Active Directory** > **Enterprise applications** > **Consent and permissions** > **User consent settings**.
 
 :::image type="content" source="./media/compromised-malicious-apps/UserConsentSettings.png" alt-text="Select Allow user consent for apps from the options":::
 

@@ -17,7 +17,7 @@ This is the core of **Zero Trust**. Instead of believing everything behind the c
 :::image type="content" source="../media/diagram-zero-trust-security-elements.png" alt-text="Diagram of elements of visibility, automation, and orchestration in Zero Trust." border="false":::
 
 
-Organizations may differ in terms of where they are in the zero trust journey. The Zero Trust Guidance Center aims to provide you with various options to implement the framework depending on what stage you're in.
+Organizations may differ in terms of where they are in the Zero Trust journey. The Zero Trust Guidance Center aims to provide various options to implement the framework depending on what stage you're in.
 
 
 

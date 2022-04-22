@@ -1,6 +1,5 @@
 ---
 title: "Phase 3: Make it hard to get in"
-keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, extortionware, malicious encryption
 ms.author: josephd
 author: JoeDavies-MSFT
 f1.keywords:

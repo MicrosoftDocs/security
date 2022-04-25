@@ -115,7 +115,7 @@ The first step of the investigation is to look for evidence of unusual authentic
 - Failures - are there a large number of authentication failures for the Service Principal?
 - Timestamps - are there successful authentications that are occurring at times that you would not expect?
 - Frequency - is there an increased frequency of authentications for the Service Principal?
-- Leak Credentials - are the source depots like GitHub, where credentials are hard coded and could be leaked?
+- Leak Credentials - are any application credentials hard coded and published on a public source like GitHub?
 
 If you have deployed Identity Protection - risky workload identities, check the **Suspicious Sign-ins and Leak Credentials detections**. For more information, see [workload identity risk detentions](/azure/active-directory/identity-protection/concept-workload-identity-risk#workload-identity-risk-detections).
 

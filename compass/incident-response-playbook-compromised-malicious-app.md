@@ -1,6 +1,6 @@
 ---
 title: Compromised and malicious applications investigation
-description: Learn how to investigate if one or more applications in a customer tenant are compromised.
+description: Learn how to conduct an investigation if one or more applications in a customer tenant are compromised.
 keywords: compromise, malicious, applications, investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, incident response, playbook, guidance, Microsoft 365 Defender
 search.product: DART
 search.appverid: met150
@@ -45,7 +45,7 @@ Before starting the investigation, make sure you have the correct tools and perm
   - Global administrator
   - Security administrator
 
-- Ability to use [Graph Explorer](/graph/graph-explorer) and be familiar (to some extend) with the Microsoft Graph API.
+- Ability to use [Graph Explorer](/graph/graph-explorer) and be familiar (to some extent) with the Microsoft Graph API.
 
 - Familiarize yourself with the [application auditing concepts](/azure/active-directory/fundamentals/security-operations-applications) (part of https://aka.ms/AzureADSecOps).
 
@@ -85,11 +85,11 @@ It is important to determine the type of application (multi or single tenant) ea
 
 #### Multi-tenant applications
 
-For Multi-tenant applications, the application is hosted and managed by a third party. Identify the process needed to reach out and report issues to the application owner.
+For multi-tenant applications, the application is hosted and managed by a third party. Identify the process needed to reach out and report issues to the application owner.
 
 #### Single-tenant applications
 
-Find the contact details of the application owner within your organization. You can find it under the **Owners** tab on the **Enterprise Applications** section, or your organization may have a database that has this information.
+Find the contact details of the application owner within your organization. You can find it under the **Owners** tab on the **Enterprise Applications** section. Alternatively, your organization may have a database that has this information.
 
 You can also execute this Graph query:
 
@@ -119,8 +119,6 @@ The first step of the investigation is to look for evidence of unusual authentic
 
 If you have deployed Identity Protection - risky workload identities, check the **Suspicious Sign-ins and Leak Credentials detections**. For more information, see [workload identity risk detentions](/azure/active-directory/identity-protection/concept-workload-identity-risk#workload-identity-risk-detections).
 
-Also, if you have deployed Microsoft Defender for Cloud Apps, check the portal for alerts relating to the application you are currently investigating.
-
 ### Check the target resource
 
 Within Service principal sign-ins, also check the **Resource** that the Service Principal was accessing during the authentication. It is important to have input from the application owner as they will be familiar with which resources the Service Principal should be accessing.
@@ -129,30 +127,36 @@ Within Service principal sign-ins, also check the **Resource** that the Service 
 
 ### Check for abnormal credential changes
 
-- All the required information can be found in the Audit logs.
-- Filter for **Category** by **Application Management**, and **Activity** by **Update Application – Certificates and secrets management**.
-- Check to see if there was an unauthorized change to credentials on the account.
-- Also check whether there are more credentials than warranted, assigned to the service principal.
+All the required information can be found in the Audit logs. Filter for **Category** by **Application Management**, and **Activity** by **Update Application – Certificates and secrets management**.
+
+- Check whether there are newly created or unexpected credentials assigned to the service principal.
 - Check both the application and associated service principal objects.
 - Check any [custom role](/azure/active-directory/roles/custom-enterprise-apps) that maybe have been created or modified. Note the Permissions marked below:
 
 :::image type="content" source="./media/compromised-malicious-apps/CustomRolesToCheck.png" alt-text="Check custom roles that may be created or modified":::
 
-If you have deployed the app governance add-on, check the portal for alerts relating to the application. For more information, see [Unusual addition of credentials to an OAuth app](/defender-cloud-apps/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app). 
+If you have deployed the app governance add-on, check the portal for alerts relating to the application. For more information, see [Get started with app threat detection and remediation](https://docs.microsoft.com/en-us/defender-cloud-apps/app-governance-detect-remediate-get-started)
 
 If you have deployed Identity Protection, check the "Risk detections" report and in the user or workload identity “risk history”.
 
 :::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal_2.png" alt-text="Risk Detection portal":::
 
+If you have deployed Microsoft Defender for Cloud Apps, ensure that the "Unusual addition of credentials to an OAuth app" policy is enabled, and check for open alerts.
+For more information, see [Unusual addition of credentials to an OAuth app](/defender-cloud-apps/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app). 
+
 Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/identityprotectionroot-list-serviceprincipalriskdetections) and user [riskDetections APIs](/graph/api/resources/riskdetection) to retrieve these risk detections.
 
 ### Search for anomalous app configuration changes
 
+- Check the API permissions assigned to the app to ensure that the permissions are consistent with what is expected for the app.
 - Check Audit logs (filter **Activity** by **Update Application** or **Update Service Principal**).
 - Confirm whether the connection strings are consistent and whether has the sign-out URL has been modified.
 - Confirm whether the domains in the URL are in-line with those registered.
 - Determine whether anyone has added an unauthorized redirect URL.
 - Confirm ownership of the redirect URI that you own to ensure it did not expire and was claimed by an adversary.
+
+Also, if you have deployed Microsoft Defender for Cloud Apps, check the portal for alerts relating to the application you are currently investigating. Not all alert policies are enabled by default for OAuth apps, so ensure that these are all enabled. For more information, see [OAuth app policies](https://docs.microsoft.com/en-us/defender-cloud-apps/app-permission-policy). You can also view information about the apps prevalance and recent activity under the Investigation>OAuth Apps tab.
+
 
 ### Check for suspicious application roles
 
@@ -168,9 +172,15 @@ Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/iden
 >**Evidence of compromise:**
 >If you discover evidence of compromise, then it is important to take the steps highlighted in the containment and recovery sections. This will help address the risk, but will need further investigation to understand the source of the compromise to avoid further impact and ensure bad actors are removed. 
 
+There are two primary methods of gaining access to systems via the use of applications. The first involves an application being consented to by an administrator or user, usually via a phishing attack. This would be part of initial access to a system and is often referred to as "consent phishing".
+
+The second method involves an already compromised administrator account creating a new app for the purposes of persistence, data collection and to stay under the radar. For example, an OAuth app could be created by a compromised administrator with a seemingly innocuous name, avoiding detection and allowing long term access to data without the need for an account. This is often seen in nation state attacks.
+
+Below are some of the steps which can be taken to investigate further. 
+
 ### Check M365 Unified Audit Log (UAL) for phishing indications for the past 7 days
 
-Typically, when attackers use malicious or compromised applications as a means of persistence or to exfiltrate data, a phishing campaign is involved. Based on the findings from the previous steps, you should review the identities of:
+Sometimes, when attackers use malicious or compromised applications as a means of persistence or to exfiltrate data, a phishing campaign is involved. Based on the findings from the previous steps, you should review the identities of:
 
 - Application Owners
 - Consent Admins
@@ -287,11 +297,11 @@ You can also use the Azure AD Audit logs, filter by **Consent to application**. 
 Once you have identified one or more applications or workload identities as either malicious or compromised, you may not immediately want to roll the credentials for this application, nor you want to immediately delete the application. It is highly recommended, that you follow the best practice guidance for [incident response](incident-response-process.md).
 
 >[!Important]
->Before you perform the following step, you need to assess the business impact of disabling an application. Your organization must weigh up the security impact and the business impact of disabling an application. If the business impact of disabling an application is too great, then consider preparing and moving to the Recovery stage of this process.
+>Before you perform the following step, your organization must weigh up the security impact and the business impact of disabling an application. If the business impact of disabling an application is too great, then consider preparing and moving to the Recovery stage of this process.
 
 ### Disable compromised application
 
-A typical containment strategy involves the disabling of sign-ins to the application identified, to give your incident response team or the affected business unit time to evaluate the impact of deletion or key rolling.
+A typical containment strategy involves the disabling of sign-ins to the application identified, to give your incident response team or the affected business unit time to evaluate the impact of deletion or key rolling. If your investigation leads you to believe that administrator account credentials have also been compromised, this type of activity should be coordinated with an eviction event to ensure that all routes to accessing the tenant are cut off simultaneously. 
 
 :::image type="content" source="./media/compromised-malicious-apps/DisabledAppExample.png" alt-text="Toggle to disable users to sign-in":::
 
@@ -459,7 +469,7 @@ To review configuration options, see [Configure how users consent to apps](/azur
 
 #### Implement admin consent flow
 
-When an application developer directs users to the admin consent endpoint with the intent to record consent for the entire tenant, it is known as admin consent flow. To ensure the admin consent flow works properly, application developers must list all permissions in the RequiredResourceAccess property in the application manifest.
+When an application developer directs users to the admin consent endpoint with the intent to give consent for the entire tenant, it is known as admin consent flow. To ensure the admin consent flow works properly, application developers must list all permissions in the RequiredResourceAccess property in the application manifest.
 
 Most organizations disable the ability for their users to consent to applications. To give users the ability to still request consent for applications and to have an administrative review capability, it is recommended to implement the admin consent workflow. Follow the [admin consent workflow steps](/azure/active-directory/manage-apps/configure-admin-consent-workflow) to configure it in your tenant.
 

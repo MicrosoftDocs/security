@@ -1,6 +1,6 @@
 ---
 title: Compromised and malicious applications investigation
-description: Learn how to conduct an investigation if one or more applications in a customer tenant are compromised.
+description: Learn how to investigate if one or more applications in a customer tenant are compromised.
 keywords: compromise, malicious, applications, investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, incident response, playbook, guidance, Microsoft 365 Defender
 search.product: DART
 search.appverid: met150
@@ -45,11 +45,11 @@ Before starting the investigation, make sure you have the correct tools and perm
   - Global administrator
   - Security administrator
 
-- Ability to use [Graph Explorer](/graph/graph-explorer) and be familiar (to some extent) with the Microsoft Graph API.
+- Ability to use [Microsoft Graph Explorer](/graph/graph-explorer) and be familiar (to some extent) with the Microsoft Graph API.
 
 - Familiarize yourself with the [application auditing concepts](/azure/active-directory/fundamentals/security-operations-applications) (part of https://aka.ms/AzureADSecOps).
 
-- Make sure all Enterprise apps in your tenant have an owner set for the purposes of accountability. Review the concepts [here](/azure/active-directory/manage-apps/overview-assign-app-owners) and [here](/azure/active-directory/manage-apps/assign-app-owners).
+- Make sure all Enterprise apps in your tenant have an owner set for the purposes of accountability. Review the concepts on [overview of app owners](/azure/active-directory/manage-apps/overview-assign-app-owners) and [assigning app owners](/azure/active-directory/manage-apps/assign-app-owners).
 
 - Familiarize yourself with the concepts of the [App Consent grant investigation](incident-response-playbook-app-consent.md) (part of https://aka.ms/IRPlaybooks).
 
@@ -91,7 +91,7 @@ For multi-tenant applications, the application is hosted and managed by a third 
 
 Find the contact details of the application owner within your organization. You can find it under the **Owners** tab on the **Enterprise Applications** section. Alternatively, your organization may have a database that has this information.
 
-You can also execute this Graph query:
+You can also execute this Microsoft Graph query:
 
 ```HTTP
 GET https://graph.microsoft.com/v1.0/applications/{id}/owners
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/owners
 
 ### Check Identity Protection - risky workload identities
 
-This feature is in preview at the time of writing this playbook and licensing requirements will apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but can also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Graph API.
+This feature is in preview at the time of writing this playbook and licensing requirements will apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but can also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Microsoft Graph API.
 
 :::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal_2.png" alt-text="Risk Detection portal":::
 
@@ -127,15 +127,16 @@ Within Service principal sign-ins, also check the **Resource** that the Service 
 
 ### Check for abnormal credential changes
 
-All the required information can be found in the Audit logs. Filter for **Category** by **Application Management**, and **Activity** by **Update Application – Certificates and secrets management**.
+Use Audit logs to get information on credential changes on applications and service principals. Filter for **Category** by **Application Management**, and **Activity** by **Update Application – Certificates and secrets management**.
 
 - Check whether there are newly created or unexpected credentials assigned to the service principal.
+- Check for credentials on Service Principal using Microsoft Graph API.
 - Check both the application and associated service principal objects.
-- Check any [custom role](/azure/active-directory/roles/custom-enterprise-apps) that maybe have been created or modified. Note the Permissions marked below:
+- Check any [custom role](/azure/active-directory/roles/custom-enterprise-apps) that maybe have been created or modified. Note the permissions marked below:
 
 :::image type="content" source="./media/compromised-malicious-apps/CustomRolesToCheck.png" alt-text="Check custom roles that may be created or modified":::
 
-If you have deployed the app governance add-on, check the portal for alerts relating to the application. For more information, see [Get started with app threat detection and remediation](https://docs.microsoft.com/en-us/defender-cloud-apps/app-governance-detect-remediate-get-started)
+If you have deployed the app governance add-on, check the Azure portal for alerts relating to the application. For more information, see [Get started with app threat detection and remediation](/defender-cloud-apps/app-governance-detect-remediate-get-started).
 
 If you have deployed Identity Protection, check the "Risk detections" report and in the user or workload identity “risk history”.
 
@@ -155,7 +156,7 @@ Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/iden
 - Determine whether anyone has added an unauthorized redirect URL.
 - Confirm ownership of the redirect URI that you own to ensure it did not expire and was claimed by an adversary.
 
-Also, if you have deployed Microsoft Defender for Cloud Apps, check the portal for alerts relating to the application you are currently investigating. Not all alert policies are enabled by default for OAuth apps, so ensure that these are all enabled. For more information, see [OAuth app policies](https://docs.microsoft.com/en-us/defender-cloud-apps/app-permission-policy). You can also view information about the apps prevalance and recent activity under the Investigation>OAuth Apps tab.
+Also, if you have deployed Microsoft Defender for Cloud Apps, check the Azure portal for alerts relating to the application you are currently investigating. Not all alert policies are enabled by default for OAuth apps, so ensure that these are all enabled. For more information, see the [OAuth app policies](/defender-cloud-apps/app-permission-policy). You can also view information about the apps prevalance and recent activity under the **Investigation** > **OAuth Apps** tab.
 
 
 ### Check for suspicious application roles
@@ -167,6 +168,12 @@ Also, if you have deployed Microsoft Defender for Cloud Apps, check the portal f
 ### Check for unverified commercial apps
 
 - Check whether commercial gallery (published and verified versions) applications are being used.
+
+### Check for indications of keyCredential property information disclosure
+
+Review your tenant for potential keyCredential property information disclosure as outlined in [CVE-2021-42306](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42306).
+ 
+To identify and remediate impacted Azure AD applications associated with impacted Automation Run-As accounts, please navigate to the [remediation guidance Github Repo](https://github.com/microsoft/aad-app-credential-tools/blob/main/azure-automation/azure-automation-runas-credential-remediation.md). 
 
 >[!Important]
 >**Evidence of compromise:**
@@ -392,19 +399,19 @@ For more information, see [Interactively removing and rolling over the certifica
 In order of priority, this scenario would be:
 
 - Update Graph PowerShell cmdlets (Add/Remove ApplicationKey + ApplicationPassword) doc to include examples for credential roll-over.
-- Add custom cmdlets to Graph PowerShell that simplifies this scenario.
+- Add custom cmdlets to Microsoft Graph PowerShell that simplifies this scenario.
 
 ### Disable or delete malicious applications
 
 An application can either be disabled or deleted. To disable the application, under **Enabled for users to sign in**, move the toggle to **No**.
 
-You can delete the application, either temporarily or permanently, in the portal or through the Graph API. When you soft delete, the application can be recovered up to 30 days after deletion.
+You can delete the application, either temporarily or permanently, in the Azure portal or through the Microsoft Graph API. When you soft delete, the application can be recovered up to 30 days after deletion.
 
 ```
 DELETE /applications/{id}
 ```
 
-To permanently delete the application, use this Graph API call:
+To permanently delete the application, use this Microsoft Graph API call:
 
 ```
 DELETE /directory/deletedItems/{id}

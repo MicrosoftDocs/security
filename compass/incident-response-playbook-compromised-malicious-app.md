@@ -158,7 +158,6 @@ Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/iden
 
 Also, if you have deployed Microsoft Defender for Cloud Apps, check the Azure portal for alerts relating to the application you are currently investigating. Not all alert policies are enabled by default for OAuth apps, so ensure that these are all enabled. For more information, see the [OAuth app policies](/defender-cloud-apps/app-permission-policy). You can also view information about the apps prevalance and recent activity under the **Investigation** > **OAuth Apps** tab.
 
-
 ### Check for suspicious application roles
 
 - This can also be investigated using the Audit logs. Filter **Activity** by **Add app role assignment to service principal**.
@@ -172,7 +171,7 @@ Also, if you have deployed Microsoft Defender for Cloud Apps, check the Azure po
 ### Check for indications of keyCredential property information disclosure
 
 Review your tenant for potential keyCredential property information disclosure as outlined in [CVE-2021-42306](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42306).
- 
+
 To identify and remediate impacted Azure AD applications associated with impacted Automation Run-As accounts, please navigate to the [remediation guidance Github Repo](https://github.com/microsoft/aad-app-credential-tools/blob/main/azure-automation/azure-automation-runas-credential-remediation.md). 
 
 >[!Important]

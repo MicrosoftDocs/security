@@ -63,8 +63,8 @@ Before starting the investigation, make sure you have the correct tools and perm
   - Understand the concepts of [anomaly detection alert investigation](/defender-cloud-apps/app-governance-anomaly-detection-alerts).  
 
 - Familiarize yourself with the following application management policies:
-  - [Azure AD application authentication methods API overview (preview)](/graph/api/resources/applicationauthenticationmethodpolicy?view=graph-rest-beta)
-  - [appManagementPolicy resource type](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta)
+  - [Azure AD application authentication methods API overview (preview)](/graph/api/resources/applicationauthenticationmethodpolicy)
+  - [appManagementPolicy resource type](/graph/api/resources/appmanagementpolicy)
 
 - Familiarize yourself with the following App Governance policies:
   - [The App Governance blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-public-preview-of-app-governance/ba-p/2543768)

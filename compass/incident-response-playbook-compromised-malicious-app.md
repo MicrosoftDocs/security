@@ -62,6 +62,14 @@ Before starting the investigation, make sure you have the correct tools and perm
 - You must have full Microsoft 365 E5 license to leverage Microsoft Defender for Cloud Apps. 
   - Understand the concepts of [anomaly detection alert investigation](/defender-cloud-apps/app-governance-anomaly-detection-alerts).  
 
+- Familiarize yourself with the following application management policies:
+  - [Azure AD application authentication methods API overview (preview)](/graph/api/resources/applicationauthenticationmethodpolicy?view=graph-rest-beta)
+  - [appManagementPolicy resource type](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta)
+
+- Familiarize yourself with the following App Governance policies:
+  - [The App Governance blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-public-preview-of-app-governance/ba-p/2543768)
+  - [App governance add-on to Defender for Cloud Apps](/defender-cloud-apps/app-governance-manage-app-governance)
+
 ### Required tools
 
 For an effective investigation, install the following PowerShell module and the toolkit on your investigation machine:

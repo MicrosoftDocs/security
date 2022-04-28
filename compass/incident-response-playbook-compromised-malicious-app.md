@@ -60,7 +60,7 @@ Before starting the investigation, make sure you have the correct tools and perm
 - Familiarize yourself with the concepts of [Workload identity risk detections](/azure/active-directory/identity-protection/concept-workload-identity-risk).
 
 - You must have full Microsoft 365 E5 license to leverage Microsoft Defender for Cloud Apps. 
-  - Understand the concepts of [anomaly detection alert investigation](/defender-cloud-apps/app-governance-anomaly-detection-alerts).  
+  - Understand the concepts of [anomaly detection alert investigation](/defender-cloud-apps/app-governance-anomaly-detection-alerts)  
 
 - Familiarize yourself with the following application management policies:
   - [Azure AD application authentication methods API overview (preview)](/graph/api/resources/applicationauthenticationmethodpolicy)
@@ -489,11 +489,11 @@ Most organizations disable the ability for their users to consent to application
 
 For high privileged operations such as admin consent, you have a privileged access strategy defined as per our [guidance](overview.md). 
 
-### Configure risk-based step-up consent
+### Review risk-based step-up consent settings
 
 Risk-based step-up consent helps reduce user exposure to malicious apps. For example, consent requests for newly registered multi-tenant apps that are not publisher verified and require non-basic permissions are considered risky. If a risky user consent request is detected, the request requires a "step-up" to admin consent instead. This step-up capability is enabled by default, but it results in a behavior change only when user consent is enabled.
 
-To enable it, follow the steps outlined [here](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).
+Make sure it is enabled in your tenant and review the configuration settings outlined [here](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).
 
 ## References
 

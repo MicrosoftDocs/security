@@ -5,6 +5,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
+ms.service: security
 localization_priority: Normal
 description: "Learn how to rapidly increase your security posture with prescriptive Microsoft Security Best Practices."
 

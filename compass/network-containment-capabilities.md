@@ -5,6 +5,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
+ms.service: security
 localization_priority: Normal
 description: "Lists capabilities that can help with network traffic and containment."
 ---

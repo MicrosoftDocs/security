@@ -5,6 +5,7 @@ description: This document presents guidance on rapidly identifying and removing
 ms.date: 02/18/2020
 ms.service: security
 ms.author: amarshal
+author: amarshal
 ms.topic: conceptual
 ---
 
@@ -186,7 +187,10 @@ The recommended solution in all cases above is to remove the hardcoded protocol 
 Windows PowerShell uses .NET Framework 4.5, which does not include TLS 1.2 as an available protocol.  To work around this, two solutions are available:
 
     1.  Modify the script in question to include the following:
+
+        ```powershell
         [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;
+        ```
 
     2.  Add a system-wide registry key (e.g. via group policy) to any machine that needs to make TLS 1.2 connections from a .NET app. This will cause .NET to use the "System Default" TLS versions which adds TLS 1.2 as an available protocol AND it will allow the scripts to use future TLS Versions when the OS supports them. (e.g. TLS 1.3)  
 

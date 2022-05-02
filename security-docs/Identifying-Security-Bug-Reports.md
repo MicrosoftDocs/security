@@ -5,6 +5,7 @@ description: This research papers shares some of Microsoft's lessons-learned fro
 ms.date: 03/06/2020
 ms.service: security
 ms.author: bcowper
+author: bcowper
 ms.topic: conceptual
 ---
 

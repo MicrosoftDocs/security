@@ -5,6 +5,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
+ms.service: security
 localization_priority: Normal
 description: "Provides guidance on information protection and storage."
 ---

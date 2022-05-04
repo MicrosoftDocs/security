@@ -1,25 +1,25 @@
 ---
 title: Zero Trust Deployment Overview
 description: Learn how to deploy Zero Trust solutions to keep your organization secure.
-ms.date: 07/20/2021
+ms.date: 05/04/2022
 ms.service: security
-author: knicholasa
-ms.author: nichola
+author: mjcaparas
+ms.author: macapara
 ms.topic: conceptual
 ---
 
 # Deploying Zero Trust solutions
 
-Organizations may differ in terms of where they are in the Zero Trust journey. The Zero Trust Guidance center provides foundational information to get you started in your Zero Trust journey, and provides various plans to guide you in rolling out Zero Trust wherever you may be in the journey. 
+Organizations may differ in terms of where they are in the Zero Trust journey. The Zero Trust Guidance center provides foundational information to get you started in your Zero Trust journey, and various plans to guide you in rolling out Zero Trust wherever you may be in the journey. 
 
 First, you'll be guided through some conceptual information on the following technology components to help you better understand how they relate to Zero Trust: 
 
-- [Identity]
-- [Applications]
-- [Data]
-- [Infrastructure]
-- [Networks]
-- [Visibility, automation, and orchestration]
+- [Identity](identity.md)
+- [Applications](applications.md)
+- [Data](data.md)
+- [Infrastructure](infrastructure.md)
+- [Networks](networks.md)
+- [Visibility, automation, and orchestration](visibility-automation-orchestration.md)
 
  Use the conceptual topics in this section  to assess your Zero Trust readiness and build a plan to adopt a Zero Trust approach to security in your organization.
 

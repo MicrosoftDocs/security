@@ -77,7 +77,7 @@ Disabling legacy authentication can be difficult, as some users may not want to 
 
 This mitigates the risk of an adversary pivoting to full control of on-premises assets following a successful compromise of a cloud account. This helps contain the scope of an incident from growing significantly.
 
-For Azure, don’t synchronize accounts to Azure AD that have high privileges in your existing AD DS. This is blocked by default in the default Azure AD Connect configuration, so you only need to confirm you haven’t customized this configuration.
+For Azure, don’t synchronize accounts to Azure AD that have high privileges in your existing AD DS.
 
 This is related to the [critical impact account dependencies](/security/compass/critical-impact-accounts) guidance that mitigates the inverse risk of pivoting from on-premises to cloud assets.
 

@@ -181,4 +181,4 @@ Examples of network logs that provide visibility include:
 
 ## Next steps
 
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

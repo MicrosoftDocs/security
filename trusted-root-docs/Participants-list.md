@@ -44,7 +44,7 @@ Root Program Participants as of March
     June
     26, 2018)](https://gallery.technet.microsoft.com/Trusted-Root-Certificate-dee8ae24)
 -   [Microsoft Trusted Root Certificate Program: Participants (as of May
-    29, 2018)](https://gallery.technet.microsoft.com/Trusted-Root-Certificate-6b557df0)[](https://gallery.technet.microsoft.com/Trusted-Root-Certificate-7e584dc2)
+    29, 2018)](https://gallery.technet.microsoft.com/Trusted-Root-Certificate-6b557df0)
 -   [Microsoft Trusted Root Certificate Program: Participants (as of
     April
     25, 2018)](https://gallery.technet.microsoft.com/Trusted-Root-Certificate-7e584dc2)

@@ -1,5 +1,5 @@
 ---
-title: Program Requirements - Microsoft Trusted Root Program 
+title: New CA application - Microsoft Trusted Root Program
 description: This document provides details about the requirements all Certificate Authorities are required to adhere to in order to be compliant with our program. 
 ms.date: 02/18/2020
 ms.service: security

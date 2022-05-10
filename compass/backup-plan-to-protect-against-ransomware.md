@@ -58,7 +58,7 @@ You should assume that at some point in time you will fall victim to a ransomwar
 
 ### Azure Backup
 
-[Azure Backup](/azure/backup/backup-overview) provides security to your backup environment, both when your data is in transit and at rest. With Azure Backup, [you can back up](/azure/backup/backup-overview.md#what-can-i-back-up):
+[Azure Backup](/azure/backup/backup-overview) provides security to your backup environment, both when your data is in transit and at rest. With Azure Backup, [you can back up](/azure/backup/backup-overview#what-can-i-back-up):
 
 - On-premises files, folders, and system state
 - Entire Windows/Linux VMs

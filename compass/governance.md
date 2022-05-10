@@ -108,7 +108,7 @@ A good enterprise segmentation strategy meets these criteria:
 
 -   **Monitored** – Security Operations should monitor for potential violations of the integrity of the segments (account usage, unexpected traffic, etc.)
 
-![Diagram of an enterprise segmentation strategy, illustrating the relationship between Subscriptions, Core Services, and Segments.](images/enterprise-tenant.png)
+![Diagram of an enterprise segmentation strategy, showing the relationship between Subscriptions, Core Services, and Segments.](images/enterprise-tenant.png)
 
 ## Security team visibility
 
@@ -138,7 +138,7 @@ Providing clear guidance that follows a reference model will reduce risk because
 
 Microsoft recommends starting from these Microsoft reference models and adapting to your organization.
 
-![Diagram showing the Core Services Reference Permissions, illustrating enterprise and resource role permissions.](images/ref-perms.png)
+![Diagram showing the Core Services Reference Permissions, showing enterprise and resource role permissions.](images/ref-perms.png)
 
 ### Core Services Reference Permissions
 This segment hosts shared services utilized across the organization. These shared services typically include Active Directory Domain Services, DNS/DHCP, System Management Tools hosted on Azure Infrastructure as a Service (IaaS) virtual machines.
@@ -156,7 +156,7 @@ This segment hosts shared services utilized across the organization. These share
 
 **Service admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/architecture/security/critical-impact-accounts#emergency-access-or-break-glass-accounts) for more details.
 
-![Diagram of the reference permissions, illustrating the relationship between the Enterprise Role Permissions and Subscriptions.](images/ref-segment.png)
+![Diagram of the reference permissions, showing the relationship between the Enterprise Role Permissions and Subscriptions.](images/ref-segment.png)
 
 ### Segment reference permissions
 

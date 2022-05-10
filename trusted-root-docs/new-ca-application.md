@@ -1,6 +1,6 @@
 ---
 title: New CA application - Microsoft Trusted Root Program
-description: This document provides details about the requirements all Certificate Authorities are required to adhere to in order to be compliant with our program. 
+description: Describes the application process to become a new certificate authority in the Microsoft Trusted Root Program.
 ms.date: 02/18/2020
 ms.service: security
 ms.author: kasirota

@@ -209,7 +209,7 @@ The Enrollment Status Page (ESP) displays provisioning progress after a new devi
 
 ### Configure Windows Update
 
-Keeping Windows 10 up to date is one of the most important things you can do. To maintain Windows in a secure state, you deploy an [update ring](/deployment/update/waas-deployment-rings-windows-10-updates) to manage the pace that updates are applied to workstations. 
+Keeping Windows 10 up to date is one of the most important things you can do. To maintain Windows in a secure state, you deploy an [update ring](/en-us/windows/deployment/update/waas-quick-start) to manage the pace that updates are applied to workstations. 
 
 This guidance recommends that you create a new update ring and change the following default settings:
 

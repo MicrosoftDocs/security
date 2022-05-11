@@ -149,11 +149,11 @@ This segment hosts shared services utilized across the organization. These share
 
 **Central IT operations across all resources** – Grant permissions to the central IT department (often the infrastructure team) to create, modify, and delete resources like virtual machines and storage.
 
-**Central networking group across network resources** – To ensure consistency and avoid technical conflicts, assign network resource responsibilities to a single central networking organization. These resources should include virtual networks, subnets, Network Security Groups (NSG), and the virtual machines hosting virtual network appliances. See [Centralize Network Management And Security](/azure/architecture/security/network-security-containment#centralize-network-management-and-security) for more details
+**Central networking group across network resources** – To ensure consistency and avoid technical conflicts, assign network resource responsibilities to a single central networking organization. These resources should include virtual networks, subnets, Network Security Groups (NSG), and the virtual machines hosting virtual network appliances. See [Centralize Network Management And Security](/security/compass/network-security-containment) for more details
 
 **Resource Role Permissions** – For most core services, administrative privileges required to manage them are granted via the application itself (Active Directory, DNS/DHCP, System Management Tools, etc.), so no additional Azure resource permissions are required. If your organizational model requires these teams to manage their own VMs, storage, or other Azure resources, you can assign these permissions to those roles.
 
-**Service admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/architecture/security/critical-impact-accounts#emergency-access-or-break-glass-accounts) for more details.
+**Service admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/active-directory/roles/security-emergency-access) for more details.
 
 ![A screenshot of a cell phone Description automatically generated](images/ref-segment.png)
 
@@ -175,11 +175,11 @@ will depend on your organization structure.
 
 -   Segments with autonomous DevOps teams don’t need to grant permissions across all resources because the resource role (below) grants permissions to application teams. For emergencies, use the service admin account (break-glass account).
 
-**Central networking group across network resources** – To ensure consistency and avoid technical conflicts, assign network resource responsibilities to a single central networking organization. These resources should include virtual networks, subnets, Network Security Groups (NSG), and the virtual machines hosting virtual network appliances. See [Centralize Network Management And Security](/azure/architecture/security/network-security-containment#centralize-network-management-and-security).
+**Central networking group across network resources** – To ensure consistency and avoid technical conflicts, assign network resource responsibilities to a single central networking organization. These resources should include virtual networks, subnets, Network Security Groups (NSG), and the virtual machines hosting virtual network appliances. See [Centralize Network Management And Security](/security/compass/network-security-containment).
 
 **Resource Role Permissions** – Segments with autonomous DevOps teams will manage the resources associated with each application. The actual roles and their permissions depend on the application size and complexity, the application team size and complexity, and the culture of the organization and application team.
 
-**Service Admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/architecture/security/critical-impact-accounts#emergency-access-or-break-glass-accounts) for more details.
+**Service Admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/active-directory/roles/security-emergency-access) for more details.
 
 
 
@@ -325,7 +325,7 @@ There are two places where you review reported risk events:
 
 -   **Azure AD Identity Protection** - Risk events are also part of the reporting capabilities of [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection).
 
-In addition, you can use the [Identity Protection risk events API](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/identityriskevent) to gain programmatic access to security detections using Microsoft Graph.
+In addition, you can use the [Identity Protection risk events API](/graph/api/resources/riskdetection) to gain programmatic access to security detections using Microsoft Graph.
 
 Remediate these risks by manually addressing each reported account or by setting up a [user risk policy](/azure/active-directory/identity-protection/howto-user-risk-policy)
 to require a password change for these high risk events.

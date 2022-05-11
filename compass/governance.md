@@ -35,13 +35,13 @@ Security best practices are ideally applied proactively and completely to all sy
 We recommend applying as many as of the best practices as early as possible, and then working to retrofit any gaps over time as you mature your security program.
 We recommend evaluating the following considerations when prioritizing which to follow first:
 
--   **High business impact and highly exposed systems –** These include systems with direct intrinsic value as well as the systems that provide attackers a path to them. For more information, see [Identify and classify business critical applications](/azure/architecture/security/applications-services#identify-and-classify-business-critical-applications).
+-   **High business impact and highly exposed systems –** These include systems with direct intrinsic value as well as the systems that provide attackers a path to them. For more information, see [Identify and classify business critical applications](/azure/architecture/framework/security/design-apps-services).
 
 -   **Easiest to implement Mitigations**– Identify quick wins by prioritizing the best practices, which your organization can execute quickly because you already have the required skills, tools, and knowledge to do it (for example, implementing a Web App Firewall (WAF) to protect a legacy application).  
     Be careful not to exclusively use (or overuse) this short-term prioritization method. Doing so can increase your risk by preventing your program from growing and leaving critical risks exposed for extended periods.
 
 Microsoft has provided some prioritized lists of security initiatives to help organizations start with these decisions based on our experience with threats and mitigation initiatives in our own environments and across our customers. See
-[Module 4a](https://docs.microsoft.com/office365/securitycompliance/ciso-workshop-module-4a)
+[Module 4a](/office365/securitycompliance/ciso-workshop-module-4a)
 of the [Microsoft CISO Workshop](https://aka.ms/cisoworkshop)
 
 ## Manage connected tenants
@@ -85,7 +85,7 @@ This resulted in overwhelming complexity that generates support issues and often
 Creating a unified enterprise segmentation strategy enables to guide all technical teams stakeholders (IT, Security, Applications, etc.) Business Units that is built around the business risks and needs will increase alignment to and understand and support sustainability of the security containment promises.
 This clarity and alignment will also reduce s the risk of human errors and automation failures that can lead to security vulnerabilities, operational downtime, or both.
 
-While network micro-segmentation also offers promise to reduce risk (discussed more in [Network Security and Containment](/azure/architecture/security/network-security-containment) section), it doesn’t eliminate the need to align technical teams. Micro segmentation should be considered after to and plans to ensure the ensuring technical teams are aligned so you can avoid a recurrence of the internal conflicts that plagued and confusion of the on-premises network generation segmentation strategies.
+While network micro-segmentation also offers promise to reduce risk (discussed more in [Network Security and Containment](/security/compass/network-security-containment) section), it doesn’t eliminate the need to align technical teams. Micro segmentation should be considered after to and plans to ensure the ensuring technical teams are aligned so you can avoid a recurrence of the internal conflicts that plagued and confusion of the on-premises network generation segmentation strategies.
 
 Here are Microsoft's recommendations for prioritizing initiatives on containment and segmentation (based on Zero Trust principles). These recommendations are listed in priority order by highest importance.
 
@@ -351,7 +351,7 @@ Here are ways to reduce your risk:
 
 -  Restrict or Disable use of these protocols by following guidance for
     [SMB](https://support.microsoft.com/help/2696547/detect-enable-disable-smbv1-smbv2-smbv3-in-windows-and-windows-server),
-    [NTLM](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-ntlm-authentication-in-this-domain),
+    [NTLM](/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-ntlm-authentication-in-this-domain),
     [WDigest](https://support.microsoft.com/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-a)
 
 We recommend implementing changes using pilot or other testing method to mitigate risk of operational interruption.
@@ -371,4 +371,4 @@ We recommend careful consideration and judicious use of these security measures 
     [Confidential Computing may help meet regulatory or security requirements](https://azure.microsoft.com/blog/azure-confidential-computing/).
 
 ## Next steps
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

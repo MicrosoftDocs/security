@@ -53,6 +53,6 @@ This resource contains sample implementations showing the use of the MIP SDK in 
 ## Next steps
 
 - [Microsoft Information Protection SDK - Classification label concepts](/information-protection/develop/concept-classification-labels)
-- [Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager)
+- [Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-manager)
 - [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection)
 - [(Video) Develop Compliance Powered LOB Applications with Microsoft Information Protection](https://www.youtube.com/watch?v=DS_xN-dspKI)

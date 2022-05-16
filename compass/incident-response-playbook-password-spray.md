@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -39,11 +39,13 @@ This article contains the following sections:
 
 Before starting the investigation, make sure you have completed the setup for logs and alerts and additional system requirements.
 
+For Azure AD monitoring follow our recommendations and guidance in our [Azure AD SecOps Guide](/azure/active-directory/fundamentals/security-operations-introduction).
+
 ### Set up [ADFS logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging)
 
 #### Event logging on ADFS 2016
 
-By default, the Microsoft Active Directory Federation Services (ADFS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request.
+By default, the Microsoft Active Directory Federation Services (ADFS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request. Set logging to the highest level and send the AD FS (& security) logs to a SIEM to correlate with AD authentication as well as Azure AD.
 
 To view the current auditing level, you can use this PowerShell command:
 

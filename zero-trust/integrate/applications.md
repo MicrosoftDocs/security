@@ -1,5 +1,5 @@
 ---
-title: Applications Zero Trust integration overview
+title: Zero Trust integration for Applications overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Cloud Apps to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 09/17/2021
 ms.service: security
@@ -18,7 +18,7 @@ Zero Trust solutions for the applications pillar are about providing visibility 
 
 This guidance is for software providers and technology partners who want to enhance their applications security solutions by integrating with Microsoft products.
 
-## Applications Zero Trust integration guide
+## Zero Trust integration with Applications guide
 
 This integration guide includes instructions for integrating with [Microsoft Defender for Cloud Apps)](/cloud-app-security/). Defender for Cloud Apps is a cloud access security broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services.
 

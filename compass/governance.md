@@ -1,8 +1,8 @@
 ---
 title: Governance, risk, and compliance in Azure | Microsoft Docs
 description: Define the security priorities around governance, risk, and compliance
-ms.author: MarkSimos
-author: MarkSimos
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2019
 ms.topic: article
 ms.service: security
@@ -42,7 +42,7 @@ We recommend evaluating the following considerations when prioritizing which to 
     Be careful not to exclusively use (or overuse) this short-term prioritization method. Doing so can increase your risk by preventing your program from growing and leaving critical risks exposed for extended periods.
 
 Microsoft has provided some prioritized lists of security initiatives to help organizations start with these decisions based on our experience with threats and mitigation initiatives in our own environments and across our customers. See
-[Module 4a](https://docs.microsoft.com/office365/securitycompliance/ciso-workshop-module-4a)
+[Module 4a](/office365/securitycompliance/ciso-workshop-module-4a)
 of the [Microsoft CISO Workshop](https://aka.ms/cisoworkshop)
 
 ## Manage connected tenants
@@ -156,7 +156,7 @@ This segment hosts shared services utilized across the organization. These share
 
 **Service admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/architecture/security/critical-impact-accounts#emergency-access-or-break-glass-accounts) for more details.
 
-![A screenshot of a cell phone Description automatically generated](images/ref-segment.png)
+![Cell phone Description automatically generated](images/ref-segment.png)
 
 ### Segment reference permissions
 
@@ -352,7 +352,7 @@ Here are ways to reduce your risk:
 
 -  Restrict or Disable use of these protocols by following guidance for
     [SMB](https://support.microsoft.com/help/2696547/detect-enable-disable-smbv1-smbv2-smbv3-in-windows-and-windows-server),
-    [NTLM](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-ntlm-authentication-in-this-domain),
+    [NTLM](/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-ntlm-authentication-in-this-domain),
     [WDigest](https://support.microsoft.com/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-a)
 
 We recommend implementing changes using pilot or other testing method to mitigate risk of operational interruption.
@@ -372,4 +372,4 @@ We recommend careful consideration and judicious use of these security measures 
     [Confidential Computing may help meet regulatory or security requirements](https://azure.microsoft.com/blog/azure-confidential-computing/).
 
 ## Next steps
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

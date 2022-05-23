@@ -9,7 +9,7 @@ ms.service: security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "Learn more about security principles and recommendations for modernizing security in your organization."
+description: "This training workshop is a combination of experiences from Microsoft security teams and learnings from customers."
 ---
 
 # Chief Information Security Officer (CISO) Workshop Training

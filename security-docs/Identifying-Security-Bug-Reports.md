@@ -4,8 +4,8 @@ title: Identifying Security Bug Reports Based Solely on Report Titles and Noisy 
 description: This research papers shares some of Microsoft's lessons-learned from using machine learning to improve the accuracy of labeling in security bug reports (SCRs).
 ms.date: 03/06/2020
 ms.service: security
-ms.author: bcowper
-author: bcowper
+ms.author: terrylan
+author: TerryLanfear
 ms.topic: conceptual
 ---
 
@@ -145,7 +145,7 @@ We compare the performance of our three classifiers for the case where the train
 
 In Table III we observe a decrease in the AUC-ROC for every noise increment in the experiment. The AUC-ROC measured from a model trained on noiseless data compared to a AUC-ROC of model trained with class-independent noise with p<sub>br</sub> = 0.25 differs by 0.011 for logistic regression, 0.008 for naive Bayes, and 0.0038 for AdaBoost. We observe that label noise does not impact the AUC of naive Bayes and AdaBoost classifiers significantly when noise levels are lower than 40%. On the other hand, logistic regression Classifier experiences an impact in AUC measure for label noise levels above 30%.
 
-![AUC](./media/AUC.png)
+![AUC Variation Impact](./media/AUC.png)
 
 Fig. 1. Variation of AUC-ROC in class-independent noise. For a noise level p<sub>br</sub> =0.5 the classifier acts like a random classifier, i.e. AUC≈0.5. But we can observe that for lower noise levels (p<sub>br</sub> ≤0.30), the logistic regression learner presents a better performance compared to the other two models. However, for 0.35≤ p<sub>br</sub> ≤0.45 naive Bayes learner presents better AUCROC metrics.
 

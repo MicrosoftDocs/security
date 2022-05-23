@@ -1,8 +1,8 @@
 ---
 title: Welcome to simulation-labs!
 description: Learn about simulation-labs
-ms.author: MarkSimos
-author: MarkSimos
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2019
 ms.topic: article
 ms.service: security

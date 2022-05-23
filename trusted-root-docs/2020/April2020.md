@@ -1,12 +1,11 @@
 ---
 title: April 2020 Deployment Notice - Microsoft Trusted Root Program
-description: This document provides details about the changes made in April 2020 to the root store.
+description: Learn the details about the changes made in April 2020 to the root store.
 ms.date: 04/01/2020
 ms.service: security
 author: kasirota
 ms.author: kasirota
 ms.topic: conceptual
-ms.service: security
 ---
 
 # April 2020 Deployment Notice: Microsoft Trusted Root Program 

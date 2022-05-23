@@ -7,10 +7,11 @@ audience: Admin
 ms.topic: article
 ms.service: security
 localization_priority: Normal
-description: "Capabilities"
+description: "Learn about the capabilities that can help with administration."
 ---
 
 # Administration capabilities
+
 This article lists the capabilities that can help with administration.
 
 ## Category 1

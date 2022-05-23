@@ -1,11 +1,12 @@
 ---
 title: Governance, risk, and compliance in Azure | Microsoft Docs
 description: Define the security priorities around governance, risk, and compliance
+ms.author: dansimp
 author: dansimp
 ms.date: 07/09/2019
 ms.topic: article
 ms.service: security
-ms.subservice: cloud-design-principles
+ms.subservice: security-fundamentals
 ---
 
 # Governance, risk, and compliance
@@ -107,7 +108,7 @@ A good enterprise segmentation strategy meets these criteria:
 
 -   **Monitored** – Security Operations should monitor for potential violations of the integrity of the segments (account usage, unexpected traffic, etc.)
 
-![A screenshot of a cell phone Description automatically generated](images/enterprise-tenant.png)
+![Cell phone Description automatically generated](images/enterprise-tenant.png)
 
 ## Security team visibility
 

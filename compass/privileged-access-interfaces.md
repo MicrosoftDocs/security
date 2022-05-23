@@ -81,7 +81,7 @@ For implementation guidance, see the [rapid modernization plan](security-rapid-m
 Enterprise interface security is suitable for all enterprise users and productivity scenarios. Enterprise also serves as a starting point for higher sensitivity workloads that you can incrementally build on to reach specialized and privileged access levels of assurance. 
 
 - Zero Trust policy enforcement - on inbound sessions using Conditional Access to ensure that users and devices are secured at the enterprise or higher level
-   - To support, bring your own device (BYOD) scenarios, personal devices, and partner-managed devices may be allowed connect if they use an enterprise intermediary such as a dedicated [Windows Virtual Desktop (WVD)](https://docs.microsoft.com/azure/virtual-desktop/security-guide) or similar Remote Desktop / Jump server solution. 
+   - To support, bring your own device (BYOD) scenarios, personal devices, and partner-managed devices may be allowed connect if they use an enterprise intermediary such as a dedicated [Windows Virtual Desktop (WVD)](/azure/virtual-desktop/security-guide) or similar Remote Desktop / Jump server solution. 
 - Role-Based Access Control (RBAC) - Model should ensure that the application is administered only by roles at the specialized or privileged security level
 
 ### Specialized interface 

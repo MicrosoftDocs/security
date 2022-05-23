@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 localization_priority: Normal
 ms.service: security
-description: "Capabilities"
+description: "Learn about capabilities that can help with endpoint security."
 ---
 
 # Endpoint security capabilities

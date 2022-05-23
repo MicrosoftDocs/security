@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: security
 localization_priority: Normal
-description: "Capabilities"
+description: "Learn about capabilities that can help with applications and cloud services."
 ---
 
 # Applications and cloud services capabilities

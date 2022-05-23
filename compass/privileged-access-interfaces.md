@@ -27,7 +27,7 @@ The security requirements for inbound sessions to interfaces apply to accounts a
 > [!NOTE]
 > These technologies provide strong end to end access control to the application interface, but the resource itself must also be secured from out of band attacks on the application code/functionality, unpatched vulnerabilities or configuration errors in the underlying operating system or firmware, on data at rest or in transit, supply chains, or other means.
 >
-> Ensure to assess and discover risks to the assets themselves for complete protection. Microsoft provides tooling and guidance to help you with that including [Microsoft Defender for Cloud](https://docs.microsoft.com/azure/security-center/security-center-introduction), [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score), and [threat modelling guidance](https://www.microsoft.com/securityengineering/sdl/threatmodeling).
+> Ensure to assess and discover risks to the assets themselves for complete protection. Microsoft provides tooling and guidance to help you with that including [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction), [Microsoft Secure Score](/microsoft-365/security/mtp/microsoft-secure-score), and [threat modelling guidance](https://www.microsoft.com/securityengineering/sdl/threatmodeling).
 
 ## Interface examples
 
@@ -59,13 +59,13 @@ Establishing interface security assurances requires a combination of security co
    - Device Trust to ensure the device at minimum:
       - Is managed by the enterprise
       - Has endpoint detection and response on it
-      - Is [compliant with organizations configuration requirements](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started)
+      - Is [compliant with organizations configuration requirements](/mem/intune/protect/device-compliance-get-started)
       - Isn't infected or under attack during the session
    - User Trust is high enough based on signals including:
       - Multi-factor authentication usage during initial logon (or added later to increase trust)
       - Whether this session matches historical behavior patterns
       - Whether the account or current session triggers any alerts based on threat intelligence
-      - [Azure AD Identity Protection risk](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection#risk-detection-and-remediation)
+      - [Azure AD Identity Protection risk](/azure/active-directory/identity-protection/overview-identity-protection#risk-detection-and-remediation)
 - Role-based access control (RBAC) model that combines enterprise directory groups/permissions and application-specific roles, groups, and permissions
 - Just in time access workflows that ensure specific requirements for privileges (peer approvals, audit trail, privileged expiration, etc.) are enforced before allowing privileges the account is eligible for. 
 

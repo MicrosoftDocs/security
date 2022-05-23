@@ -18,5 +18,5 @@ Introduction...
 ## Part 2: 
 
 ## Next steps
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
 
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

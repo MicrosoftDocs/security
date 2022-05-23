@@ -1,7 +1,7 @@
 ---
 title: Network security and containment in Azure | Microsoft Docs
 description: Secure assets through network-based access
-author: MarkSimos
+author: dansimp
 ms.date: 07/09/2019
 ms.topic: article
 ms.service: security

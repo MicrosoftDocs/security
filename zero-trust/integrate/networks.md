@@ -1,5 +1,5 @@
 ---
-title: Network Zero Trust integration overview
+title: Zero Trust integration with Networks overview
 description: Independent software vendors (ISVs) integrate their solutions with Azure Firewall Manager to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 09/17/2021
 ms.service: security
@@ -16,7 +16,7 @@ Traditional enterprise networks are designed to provide users access to applicat
 
 Network solutions are an important piece of Zero Trust. They verify that the ingress and egress at the edge of the network is allowable and inspect traffic for malicious content. They support least privilege access and the principle of "assume breach" by allowing organizations to segment networks and only connect users to the segment of the network they need access to.
 
-## Networks Zero Trust integration guidance
+## Zero Trust integration with Networks guidance
 
 Independent Software Vendor (ISV) partners integrate with Microsoft's network solutions and bring their own security expertise to enhance the products.
 

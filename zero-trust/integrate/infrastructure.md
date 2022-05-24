@@ -1,5 +1,5 @@
 ---
-title: Infrastructure Zero Trust integration overview
+title: Zero Trust integration for Infrastructure overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Cloud to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 09/17/2021
 ms.service: security
@@ -19,7 +19,7 @@ Zero Trust infrastructure solutions support the principles of Zero Trust by ensu
 
 This guidance is for software providers and technology partners who want to enhance their infrastructure security solutions by integrating with Microsoft products.
 
-## Infrastructure Zero Trust integration guide
+## Zero Trust integration for Infrastructure guide
 
 This integration guide includes strategy and instructions for integrating with [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) and its integrated cloud workload protection platform (CWPP), [Microsoft Defender for Cloud](/azure/security-center/azure-defender).
 

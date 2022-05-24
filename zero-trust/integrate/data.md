@@ -1,5 +1,5 @@
 ---
-title: Data Zero Trust integration overview
+title: Zero Trust integration for Data overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Information Protection SDK to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 09/17/2021
 ms.service: security
@@ -18,7 +18,7 @@ Zero Trust data solutions help customers classify and label data based on assess
 
 This guidance is for software providers and technology partners who want to enhance their data security solutions by integrating with Microsoft products.
 
-## Data Zero Trust integration guide
+## Zero Trust integration for Data guide
 
 This integration guide includes instructions for [integrating with the Microsoft Information Protection (MIP) SDK](#microsoft-information-protection-sdk), which is the unification of Microsoft's classification, labeling, and protection services.
 

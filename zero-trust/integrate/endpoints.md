@@ -1,5 +1,5 @@
 ---
-title: Endpoint Zero Trust integration overview
+title: Endpoint integration overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Endpoint and Microsoft Endpoint Manager to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 09/17/2021
 ms.service: security
@@ -14,11 +14,11 @@ ms.topic: conceptual
 
 Endpoints are devices that access an organization's resources and applications. Modern workplaces include a variety of devices that request access from both inside and outside the corporate network.
 
-Endpoint Zero Trust solutions are about verifying the security of the devices that access work data, including the applications that are running on the devices. Partners can integrate with Microsoft's endpoint solutions to verify device and app security, enforce least privilege policies, and prepare in advance for breaches.
+Zero Trust solutions for endpoints are about verifying the security of the devices that access work data, including the applications that are running on the devices. Partners can integrate with Microsoft's endpoint solutions to verify device and app security, enforce least privilege policies, and prepare in advance for breaches.
 
 This guidance is for software providers and technology partners who want to enhance their endpoint security solutions by integrating with Microsoft products.
 
-## Endpoint Zero Trust integration guide
+## Zero Trust integration for Endpoints guide
 
 This integration guide includes instructions for integrating with the following products:
 

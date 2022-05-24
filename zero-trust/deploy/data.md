@@ -262,7 +262,7 @@ Follow these steps:
 
 #### Labels and classifications available to Office users on any device and manually applied to content
 
-Once sensitivity labels have been published from Microsoft 365 Compliance Center or equivalent labeling center, there are client apps that users can leverage to classify and protect data as it is created or edited, such as the native Microsoft Office built-in labeling client or the [Azure Information Protection Unified Labeling](/azure/information-protection/rms-client/aip-clientv2) client.
+Once sensitivity labels have been published from Microsoft Purview compliance portal or equivalent labeling center, there are client apps that users can leverage to classify and protect data as it is created or edited, such as the native Microsoft Office built-in labeling client or the [Azure Information Protection Unified Labeling](/azure/information-protection/rms-client/aip-clientv2) client.
 
 Follow these steps:
 
@@ -295,7 +295,7 @@ Take this step:
 
 Once sensitivity labels have been published to your organization, you can use [data classification](/microsoft-365/compliance/data-classification-overview?view=o365-worldwide&preserve-view=true) to identify sensitive content, where it's located, and exposure from user activities.
 
-The **content explorer** tab in the Microsoft 365 Compliance Center provides a view of data at risk by displaying the amount and types of sensitive data in a particular document which can be filtered by label or sensitivity type to get a detailed view of locations where sensitive data is stored. The **Activity explorer** tab provides a view of activities related to sensitive data, sensitivity, and retention labels (such as decreased protection due to label downgrade or changes). Activity explorer also helps investigate events that could be leading towards a data leak scenario (e.g., removal of labels). Understanding these activities provides the ability to identify the right policies for protection or data loss prevention to ensure your most sensitive data is secure.
+The **content explorer** tab in the Microsoft Purview compliance portal provides a view of data at risk by displaying the amount and types of sensitive data in a particular document which can be filtered by label or sensitivity type to get a detailed view of locations where sensitive data is stored. The **Activity explorer** tab provides a view of activities related to sensitive data, sensitivity, and retention labels (such as decreased protection due to label downgrade or changes). Activity explorer also helps investigate events that could be leading towards a data leak scenario (e.g., removal of labels). Understanding these activities provides the ability to identify the right policies for protection or data loss prevention to ensure your most sensitive data is secure.
 
 Follow these steps:
 

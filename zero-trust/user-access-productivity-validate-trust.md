@@ -96,7 +96,7 @@ Meet these deployment objectives to protect your endpoints (devices) with Zero T
 | <input type="checkbox" /> | 2. Enroll devices and create configuration profiles. | MDM Admin | [Device management overview](/mem/intune/fundamentals/what-is-device-management) |
 | <input type="checkbox" /> | 3. Connect Defender for Endpoint to Intune (in parallel with your security operations). | Identity Security Admin | [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure) |
 | <input type="checkbox" /> | 4. Monitor device compliance and risk for Conditional Access. | Identity Security Admin | [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started) |
-| <input type="checkbox" /> | 5. Implement Microsoft Information Protection and integrate with Conditional Access policies. | Identity Security Admin | [Use sensitivity labels to protect content](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) |
+| <input type="checkbox" /> | 5. Implement Microsoft Purview Information Protection and integrate with Conditional Access policies. | Identity Security Admin | [Use sensitivity labels to protect content](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) |
 
 You have now built out the **Endpoints** section of the Zero Trust architecture.
 

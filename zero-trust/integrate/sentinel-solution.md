@@ -17,7 +17,7 @@ This article describes how to install and use the Microsoft Sentinel **Zero Trus
 While only Microsoft Sentinel is required to get started, the solution is enhanced by integrations with other Microsoft Services, such as:
 
 - [Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
-- [Microsoft Information Protection](https://azure.microsoft.com/services/information-protection/)
+- [Microsoft Purview Information Protection](https://azure.microsoft.com/services/information-protection/)
 - [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
 - [Microsoft Defender for Cloud](https://azure.microsoft.com/services/active-directory/)
 - [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/security/endpoint-defender)

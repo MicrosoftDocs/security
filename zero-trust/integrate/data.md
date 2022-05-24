@@ -20,7 +20,7 @@ This guidance is for software providers and technology partners who want to enha
 
 ## Data Zero Trust integration guide
 
-This integration guide includes instructions for [integrating with the Microsoft Information Protection (MIP) SDK](#microsoft-information-protection-sdk), which is the unification of Microsoft's classification, labeling, and protection services.
+This integration guide includes instructions for [integrating with the Microsoft Purview Information Protection SDK](#microsoft-information-protection-sdk), which is the unification of Microsoft's classification, labeling, and protection services.
 
 Independent software vendors (ISVs) can integrate with the MIP SDK to build solutions that help customers understand and protect data, prevent data loss, and govern data storage and access.
 
@@ -28,7 +28,7 @@ Independent software vendors (ISVs) can integrate with the MIP SDK to build solu
 
 ### Microsoft Information Protection SDK
 
-[Microsoft Information Protection (MIP)](/information-protection/develop/overview) is the unification of Microsoft's classification, labeling, and protection services. Third parties can use the MIP SDK to integrate with applications, using a standard, consistent data labeling schema and protection service.
+[Microsoft Purview Information Protection](/information-protection/develop/overview) is the unification of Microsoft's classification, labeling, and protection services. Third parties can use the MIP SDK to integrate with applications, using a standard, consistent data labeling schema and protection service.
 
 ISVs can use the MIP SDK to help customers understand their data landscape, apply flexible protection actions, detect risky behavior to prevent data loss, and maintain data compliance through automatic actions. For example:
 
@@ -54,5 +54,5 @@ This resource contains sample implementations showing the use of the MIP SDK in 
 
 - [Microsoft Information Protection SDK - Classification label concepts](/information-protection/develop/concept-classification-labels)
 - [Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager)
-- [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection)
-- [(Video) Develop Compliance Powered LOB Applications with Microsoft Information Protection](https://www.youtube.com/watch?v=DS_xN-dspKI)
+- [Microsoft Purview Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection)
+- [(Video) Develop Compliance Powered LOB Applications with Microsoft Purview Information Protection](https://www.youtube.com/watch?v=DS_xN-dspKI)

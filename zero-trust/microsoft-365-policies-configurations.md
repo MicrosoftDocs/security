@@ -218,4 +218,4 @@ After you have configured Zero Trust identity and device access, see the [Azure 
 
 ## Next step
 
-[Prerequisite work for implementing Zero Trust identity and device access policies](identity-access-prerequisites.md)
+[Prerequisite work for implementing Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-prerequisites?view=o365-worldwide)

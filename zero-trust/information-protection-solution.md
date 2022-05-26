@@ -91,6 +91,6 @@ Learning modules for consultants and admins:
 - [Protect information in Microsoft 365](/learn/modules/m365-compliance-information-protect-information)
 - [Prevent data loss in Microsoft 365](/learn/modules/m365-compliance-information-prevent-data-loss)
 
-To help train your users to apply and use the sensitivity labels that you configure for them, see [End-user documentation for sensitivity labels](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
+To help train your users to apply and use the sensitivity labels that you configure for them, see [End-user documentation for sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels?view=o365-worldwide).
 
 When you deploy data loss prevention policies for Teams, you might find useful the following end-user guidance as an introduction to this technology with some potential messages that they might see: [Teams messages about data loss prevention (DLP) and communication compliance policies ](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).

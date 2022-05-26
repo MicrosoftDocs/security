@@ -21,7 +21,7 @@ Additional information is also provided on the use of Microsoft 365 identity, de
 Watch this video for an overview of the deployment process.
 <br>
 <br>
-> [!VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE4NHCQ>]
+> [<https://www.microsoft.com/en-us/videoplayer/embed/RE4NHCQ>]
 
 These Microsoft 365 capabilities and features help you meet the criteria for protecting information.
 
@@ -103,7 +103,7 @@ These training modules from Microsoft Learn can help you learn about how capabil
 
 |Training:|Protect enterprise information with Microsoft 365|
 |:---|:---|
-|:::image type="content" source="media/protect-enterprise-information-microsoft-365.svg" alt-text="Teams info protection training icon.":::|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 hr - Learning Path - 5 Modules|
+|:::image type="content" source="media/protect-enterprise-information-microsoft-365.png" alt-text="Teams info protection training icon.":::|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 hr - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
 > [Start >](/learn/modules/m365-security-info-overview/introduction/)
@@ -112,7 +112,7 @@ These training modules from Microsoft Learn can help you learn about how capabil
 
 |Training:|Protect identity and access with Azure Active Directory|
 |:---|:---|
-|:::image type="content" source="media/protect-identity-and-access-with-microsoft-365.svg" alt-text="Identity and access training icon.":::|The Identity and Access learning path covers the latest identity and access technologies, tools for strengthening authentication, and guidance on identity protection within your organization. Microsoft access and identity technologies enable you to secure your organization’s identity, whether it is on-premises or in the cloud, and empower your users to work securely from any location. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>2 hr 52 min - Learning Path - 6 Modules|
+|:::image type="content" source="media/protect-identity-and-access-with-microsoft-365.png" alt-text="Identity and access training icon.":::|The Identity and Access learning path covers the latest identity and access technologies, tools for strengthening authentication, and guidance on identity protection within your organization. Microsoft access and identity technologies enable you to secure your organization’s identity, whether it is on-premises or in the cloud, and empower your users to work securely from any location. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>2 hr 52 min - Learning Path - 6 Modules|
 
 > [!div class="nextstepaction"]
 > [Start >](/learn/modules/m365-identity-overview/introduction/)

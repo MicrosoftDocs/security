@@ -1,6 +1,5 @@
 - name: Zero Trust implementation guidance
   href: index.yml
-
 - name: What is Zero Trust?
   href: zero-trust-overview.md
 - name: Concepts and deployment objectives
@@ -22,7 +21,6 @@
       href: deploy/networks.md
     - name: Visibility, automation, and orchestration
       href: deploy/visibility-automation-orchestration.md
-
 - name: Rapid Modernization Plan (RaMP)
   expanded: false
   items: 
@@ -44,8 +42,7 @@
         href: data-compliance-gov-ransomware-recovery-readiness.md
       - name: Step 3. Data
         href: data-compliance-gov-data.md
-
-- name: Microsoft 365 Zero Trust deployment plan
+- name: Zero Trust deployment plans for Microsoft 365
   expanded: false
   items:
     - name: Overview
@@ -62,8 +59,6 @@
       href: information-protection-solution.md
     - name: Deploy information protection for data privacy regulations
       href: information-protection-deploy.md
-
-
 - name: Technology partner integrations
   expanded: false
   items: 
@@ -95,7 +90,6 @@
     - name: Identity
       expanded: false
       href: develop/identity.md
-
 - name: Resources
   expanded: false
   items:

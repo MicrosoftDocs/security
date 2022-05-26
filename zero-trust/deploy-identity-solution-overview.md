@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Zero Trust deployment plan
-description: Learn how to deploy Microsoft 365 Zero Trust security into your environment to defend against threats and protect sensitive data.
-ms.date: 05/25/2022
+title: Deploy your identity infrastructure for Microsoft 365
+description: Deploy your identity infrastructure for Microsoft 365.
+ms.date: 05/26/2022
 ms.service: security
 author: brendacarter
 ms.author: bcarter
@@ -12,9 +12,9 @@ ms.topic: conceptual
 
 In Microsoft 365 for enterprise, a well-planned and executed identity infrastructure paves the way for stronger security, including restricting access to your productivity workloads and their data to only authenticated users and devices. Security for identities is a key element of a Zero Trust deployment, in which all attempts to access resources both on-premises and in the cloud are authenticated and authorized.
 
-For information about the identity features of each Microsoft 365 for enterprise, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](../downloads/m365e-identity-infra.pdf).
+For information about the identity features of each Microsoft 365 for enterprise, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf).
 
-[:::image type="content" source="media/m365e-identity-infra.png" alt-text="The Identity Infrastructure poster.":::](../downloads/m365e-identity-infra.pdf)
+[:::image type="content" source="media/m365e-identity-infra.png" alt-text="The Identity Infrastructure poster.":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf)
 
 Review this two-page poster to quickly ramp up on identity concepts and configurations for Microsoft 365 for enterprise.
 
@@ -34,10 +34,10 @@ This solution steps you through the deployment of an identity infrastructure for
 
 The steps in this solution are:
 
-1. [Determine your identity model.](deploy-identity-solution-identity-model.md)
-2. [Protect your Microsoft 365 privileged accounts.](protect-your-global-administrator-accounts.md)
-3. [Protect your Microsoft 365 user accounts.](microsoft-365-secure-sign-in.md)
-4. [Deploy your identity model.](cloud-only-identities.md)
+1. [Determine your identity model.](/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide)
+2. [Protect your Microsoft 365 privileged accounts.](/microsoft-365/enterprise/protect-your-global-administrator-accounts?view=o365-worldwide)
+3. [Protect your Microsoft 365 user accounts.](/microsoft-365/enterprise/microsoft-365-secure-sign-in?view=o365-worldwide)
+4. [Deploy your identity model.](/microsoft-365/enterprise/cloud-only-identities?view=o365-worldwide)
 
 This solution supports the key principles of [Zero Trust](https://www.microsoft.com/security/business/zero-trust/):
 
@@ -65,12 +65,12 @@ Azure AD provides a full suite of identity management and security capabilities 
 
 Use these steps to deploy an identity model and authentication infrastructure for your Microsoft 365 tenant:
 
-1. [Determine your cloud identity model.](deploy-identity-solution-identity-model.md)
-2. [Protect your Microsoft 365 privileged accounts.](protect-your-global-administrator-accounts.md)
-3. [Protect your Microsoft 365 user accounts.](microsoft-365-secure-sign-in.md)
-4. Deploy your cloud identity model: [cloud-only](cloud-only-identities.md) or [hybrid](prepare-for-directory-synchronization.md).
+1. [Determine your cloud identity model.](/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide)
+2. [Protect your Microsoft 365 privileged accounts.](/microsoft-365/enterprise/protect-your-global-administrator-accounts?view=o365-worldwide)
+3. [Protect your Microsoft 365 user accounts.](/microsoft-365/enterprise/microsoft-365-secure-sign-in?view=o365-worldwide)
+4. Deploy your cloud identity model: [cloud-only](/microsoft-365/enterprise/cloud-only-identities?view=o365-worldwide) or [hybrid.](/microsoft-365/enterprise/prepare-for-directory-synchronization?view=o365-worldwide)
 
-[:::image type="content" source="media/identity-solution-identity-model.png" alt-text="Determine the identity model to use for your Microsoft 365 tenant":::](deploy-identity-solution-identity-model.md)
+[:::image type="content" source="media/identity-solution-identity-model.png" alt-text="Determine the identity model to use for your Microsoft 365 tenant":::](/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide)
   
 ## Additional Microsoft cloud identity resources
 
@@ -78,12 +78,12 @@ Use these steps to deploy an identity model and authentication infrastructure fo
 
 To manage your Microsoft cloud identity deployment, see:
 
-- [User accounts](manage-microsoft-365-accounts.md)
-- [Licenses](assign-licenses-to-user-accounts.md)
-- [Passwords](manage-microsoft-365-passwords.md)
-- [Groups](manage-microsoft-365-groups.md)
-- [Governance](manage-microsoft-365-identity-governance.md)
-- [Directory synchronization](view-directory-synchronization-status.md)
+- [User accounts](/microsoft-365/enterprise/manage-microsoft-365-accounts?view=o365-worldwide)
+- [Licenses](/microsoft-365/enterprise/assign-licenses-to-user-accounts?view=o365-worldwide)
+- [Passwords](/microsoft-365/enterprise/manage-microsoft-365-passwords?view=o365-worldwide)
+- [Groups](/microsoft-365/enterprise/manage-microsoft-365-groups?view=o365-worldwide)
+- [Governance](/microsoft-365/enterprise/manage-microsoft-365-identity-governance?view=o365-worldwide)
+- [Directory synchronization](/microsoft-365/enterprise/view-directory-synchronization-status?view=o365-worldwide)
 
 ### How Microsoft does identity for Microsoft 365
 
@@ -95,7 +95,7 @@ Learn how IT experts at Microsoft [manage identities and secure access](https://
 
 ### How Contoso did identity for Microsoft 365
 
-For an example of how a fictional but representative multinational organization has deployed a hybrid identity infrastructure for Microsoft 365 cloud services, see [Identity for the Contoso Corporation](contoso-identity.md).
+For an example of how a fictional but representative multinational organization has deployed a hybrid identity infrastructure for Microsoft 365 cloud services, see [Identity for the Contoso Corporation.](/microsoft-365/enterprise/contoso-identity?view=o365-worldwide)
 
 <!--
 
@@ -123,4 +123,4 @@ To help ensure a secure and productive workforce, Microsoft provides a set of re
 - [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
 - [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 
---> 
+-->

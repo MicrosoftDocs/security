@@ -51,7 +51,7 @@ Zero Trust identity and device access settings and policies are recommended in t
 These capabilities and their recommendations:
 
 - Are supported in Microsoft 365 E3 and Microsoft 365 E5.
-- Are aligned with [Microsoft Secure Score](../defender/microsoft-secure-score.md) as well as [identity score in Azure AD](/azure/active-directory/fundamentals/identity-secure-score), and will increase these scores for your organization.
+- Are aligned with [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score?view=o365-worldwide) as well as [identity score in Azure AD](/azure/active-directory/fundamentals/identity-secure-score), and will increase these scores for your organization.
 - Will help you implement these [five steps to securing your identity infrastructure](/azure/security/azure-ad-secure-steps).
 
 If your organization has unique environment requirements or complexities, use these recommendations as a starting point. However, most organizations can implement these recommendations as prescribed.
@@ -106,7 +106,7 @@ The **Zero Trust identity and device protection for Microsoft 365** architecture
 
 --> 
 
-Additionally, see the [Deploy information protection for data privacy regulations](../../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
+Additionally, see the [Deploy information protection for data privacy regulations](/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide) solution to protect information stored in Microsoft 365.
 
 ## Security and productivity trade-offs
 
@@ -157,11 +157,11 @@ This guidance shows you how to create recommended policies to enforce the use of
 
 This guidance shows you how to implement a set of policies to protect access to Microsoft 365 cloud services, including Microsoft Teams, Exchange, SharePoint, and OneDrive. In addition to implementing these policies, we recommend you also raise the level of protection for your tenant using these resources:
 
-- [Configure your tenant for increased security](tenant-wide-setup-for-increased-security.md)
+- [Configure your tenant for increased security](/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security?view=o365-worldwide)
 
   Recommendations that apply to starting point security for your tenant.
 
-- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md)
+- [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](/microsoft-365/security/office-365-security/security-roadmap?view=o365-worldwide)
 
   Recommendations that include logging, data governance, admin access, and threat protection.
 

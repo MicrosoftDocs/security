@@ -49,6 +49,25 @@
       href: overview.md
     - name: Deploy your identity infrastructure for Microsoft 365
       href: deploy-identity-solution-overview.md
+      items:
+        - name: Step 1. Determine your identity model
+          href: deploy-identity-solution-identity-model.md
+        - name: Step 2. Protect your privileged accounts
+          href: protect-your-global-administrator-accounts.md
+        - name: Step 3. Protect your user accounts
+          href: microsoft-365-secure-sign-in.md
+        - name: Step 4. Deploy your identity model
+          items:
+            - name: Cloud-only identity
+              href: cloud-only-identities.md
+            - name: Hybrid identity
+              items: 
+              - name: Prepare for directory synchronization
+                href: prepare-for-directory-synchronization.md
+              - name: Prepare a non-routable domain for directory synchronization
+                href: prepare-a-non-routable-domain-for-directory-synchronization.md
+              - name: Set up directory synchronization
+                href: set-up-directory-synchronization.md
     - name: Zero Trust identity and device configurations
       href: microsoft-365-policies-configurations.md
     - name: Manage endpoints with Intune and Microsoft 365

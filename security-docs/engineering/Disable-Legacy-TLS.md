@@ -3,13 +3,13 @@
 
 # Mandatory fields.
 title: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
-description: Threat Mitigation/Security Feature Technical Guidance
-author: AMarshal
-ms.author: AMarshal
+description: Threat Mitigation & Security Feature Technical Guidance
+author: BruceCowper
+ms.author: bcowper
 ms.date: 8/14/2019
 ms.topic: article
 # Use ms.service for services or ms.prod for on-prem products. Remove the # before the relevant field.
-# ms.service: service-name-from-white-list
+# ms.service: service-name-from-allowlist
 ms.prod: security
 
 # Optional fields. Don't forget to remove # if you need a field.
@@ -123,37 +123,47 @@ shown below, then check “Disable Legacy TLS” and click OK.
 
 In PowerShell you can reference SSL flags like this:
 
-    [Microsoft.Web.Administration.SslFlags]::DisableLegacyTLS
+```powershell
+[Microsoft.Web.Administration.SslFlags]::DisableLegacyTLS
+```
 
-It’s convenient to create shorter named variables for them:
+It's convenient to create shorter named variables for them:
 
-    $Sni = [Microsoft.Web.Administration.SslFlags]::Sni
+```powershell
+$Sni = [Microsoft.Web.Administration.SslFlags]::Sni
 
-    $Sni\_CCS = [Microsoft.Web.Administration.SslFlags]::Sni + [Microsoft.Web.Administration.SslFlags]::CentralCertStore
+$Sni\_CCS = [Microsoft.Web.Administration.SslFlags]::Sni + [Microsoft.Web.Administration.SslFlags]::CentralCertStore
 
-    $CCS = [Microsoft.Web.Administration.SslFlags]::CentralCertStore
+$CCS = [Microsoft.Web.Administration.SslFlags]::CentralCertStore
 
-    $DisableLegacyTLS = [Microsoft.Web.Administration.SslFlags]::DisableLegacyTLS
+$DisableLegacyTLS = [Microsoft.Web.Administration.SslFlags]::DisableLegacyTLS
 
-    $storeLocation = "Cert:\\LocalMachine\\My"
+$storeLocation = "Cert:\\LocalMachine\\My"
+```
 
 An example of creating a site binding to a new site and disabling legacy
 TLS:
 
-    $BindingInformation = "\*:443:"
+```powershell
+$BindingInformation = "\*:443:"
 
-    $siteName = "contoso"
+$siteName = "contoso"
 
-    $Thumbprint = $certificate.ThumbPrint
+$Thumbprint = $certificate.ThumbPrint
+```
 
 New-IISSite with Sslflag DisableLegacyTLS property value:
 
-    New-IISSite $siteName "$env:systemdrive\\inetpub\\wwwroot" "\*:443:secure.contoso.com" https $certificate.Thumbprint $DisableLegacyTLS $storeLocation -passthru
+```powershell
+New-IISSite $siteName "$env:systemdrive\\inetpub\\wwwroot" "\*:443:secure.contoso.com" https $certificate.Thumbprint $DisableLegacyTLS $storeLocation -passthru
+```
 
 An example of adding a site binding to an existing site and disabling
 legacy TLS:
 
-    New-IISSiteBinding -Name "Default Web Site" -BindingInformation $BindingInformation -CertificateThumbPrint $certificate.Thumbprint -Protocol https -SslFlag $DisableLegacyTLS, $CCS -Force -verbose
+```powershell
+New-IISSiteBinding -Name "Default Web Site" -BindingInformation $BindingInformation -CertificateThumbPrint $certificate.Thumbprint -Protocol https -SslFlag $DisableLegacyTLS, $CCS -Force -verbose
+```
 
 Additionally, one can troubleshoot and test this feature with Netsh:
 

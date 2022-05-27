@@ -34,10 +34,10 @@ This solution steps you through the deployment of an identity infrastructure for
 
 The steps in this solution are:
 
-1. [Determine your identity model.](/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide)
-2. [Protect your Microsoft 365 privileged accounts.](/microsoft-365/enterprise/protect-your-global-administrator-accounts?view=o365-worldwide)
-3. [Protect your Microsoft 365 user accounts.](/microsoft-365/enterprise/microsoft-365-secure-sign-in?view=o365-worldwide)
-4. [Deploy your identity model.](/microsoft-365/enterprise/cloud-only-identities?view=o365-worldwide)
+1. [Determine your identity model.](deploy-identity-solution-identity-model.md)
+2. [Protect your Microsoft 365 privileged accounts.](protect-your-global-administrator-accounts.md)
+3. [Protect your Microsoft 365 user accounts.](microsoft-365-secure-sign-in.md)
+4. [Deploy your identity model.](cloud-only-identities.md)
 
 This solution supports the key principles of [Zero Trust](https://www.microsoft.com/security/business/zero-trust/):
 
@@ -65,13 +65,14 @@ Azure AD provides a full suite of identity management and security capabilities 
 
 Use these steps to deploy an identity model and authentication infrastructure for your Microsoft 365 tenant:
 
-1. [Determine your cloud identity model.](/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide)
-2. [Protect your Microsoft 365 privileged accounts.](/microsoft-365/enterprise/protect-your-global-administrator-accounts?view=o365-worldwide)
-3. [Protect your Microsoft 365 user accounts.](/microsoft-365/enterprise/microsoft-365-secure-sign-in?view=o365-worldwide)
-4. Deploy your cloud identity model: [cloud-only](/microsoft-365/enterprise/cloud-only-identities?view=o365-worldwide) or [hybrid.](/microsoft-365/enterprise/prepare-for-directory-synchronization?view=o365-worldwide)
+1. [Determine your cloud identity model.](deploy-identity-solution-identity-model.md)
+2. [Protect your Microsoft 365 privileged accounts.](protect-your-global-administrator-accounts.md)
+3. [Protect your Microsoft 365 user accounts.](microsoft-365-secure-sign-in.md)
+4. Deploy your cloud identity model: [cloud-only](cloud-only-identities.md) or [hybrid](prepare-for-directory-synchronization.md).
 
-[:::image type="content" source="media/identity-solution-identity-model.png" alt-text="Determine the identity model to use for your Microsoft 365 tenant":::](/microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide)
-  
+[:::image type="content" source="media/identity-solution-identity-model.png" alt-text="Determine the identity model to use for your Microsoft 365 tenant":::](deploy-identity-solution-identity-model.md)
+
+
 ## Additional Microsoft cloud identity resources
 
 ### Manage

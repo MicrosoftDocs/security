@@ -48,8 +48,10 @@
     - name: Overview
       href: overview.md
     - name: Deploy your identity infrastructure for Microsoft 365
-      href: deploy-identity-solution-overview.md
       items:
+      - name: Overview
+        href: deploy-identity-solution-overview.md
+        items:
         - name: Step 1. Determine your identity model
           href: deploy-identity-solution-identity-model.md
         - name: Step 2. Protect your privileged accounts

@@ -48,6 +48,7 @@
     - name: Overview
       href: overview.md
     - name: Deploy your identity infrastructure for Microsoft 365
+      expanded: false
       items:
       - name: Overview
         href: deploy-identity-solution-overview.md

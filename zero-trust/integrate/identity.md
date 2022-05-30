@@ -1,5 +1,5 @@
 ---
-title: Identity Zero Trust integration overview
+title: Overview of Zero Trust integration for Identity
 description: Independent software vendors and technology partners can integrate their solutions with Azure Active Directory to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 09/17/2021
 ms.service: security
@@ -16,7 +16,7 @@ Identity is the key control plane for managing access in the modern workplace an
 
 This integration guide explains how independent software vendors (ISVs) and technology partners can integrate with Azure Active Directory to create secure Zero Trust solutions for customers.
 
-## Identity Zero Trust integration guide
+## Zero Trust for Identity integration guide
 
 This integration guide covers Azure Active Directory as well as Azure Active Directory B2C.
 

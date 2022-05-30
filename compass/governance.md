@@ -126,7 +126,7 @@ For enterprise security groups with broad responsibility for security of Azure, 
 
 -   *Segment management group(s)* – for teams with limited scope of responsibility (typically required because of organizational boundaries or regulatory requirements)
 
-Because security will have broad access to the environment (and visibility into potentially exploitable vulnerabilities), you should consider them critical impact accounts and apply the same protections as administrators. The [Administration](/azure/architecture/security/critical-impact-accounts)
+Because security will have broad access to the environment (and visibility into potentially exploitable vulnerabilities), you should consider them critical impact accounts and apply the same protections as administrators. The [Administration](/azure/architecture/framework/security/design-admins)
 section details these controls for Azure.
 
 ## Assign privileges for managing the environment 
@@ -197,7 +197,7 @@ Structure management groups into a simple design that guides the enterprise segm
 
 Management groups offer the ability to consistently and efficiently manage resources (including multiple subscriptions as needed). However, because of their flexibility, it's possible to create an overly complex design. Complexity creates confusion and negatively impacts both operations and security (as illustrated by overly complex Organizational Unit (OU) and Group Policy Object (GPO) designs for Active Directory).
 
-Microsoft recommends aligning the top level of management groups (MGs) into a simple [enterprise segmentation strategy](/azure/architecture/security/governance#enterprise-segmentation-strategy) limited to 1 or 2 levels. 
+Microsoft recommends aligning the top level of management groups (MGs) into a simple [enterprise segmentation strategy](/azure/architecture/framework/security/design-segmentation) limited to 1 or 2 levels.
 
 ## Use root management group carefully
 

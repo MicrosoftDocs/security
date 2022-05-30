@@ -5,11 +5,7 @@ author: AMarshal
 ms.author: AMarshal
 ms.date: 05/27/2022
 ms.topic: article
-<<<<<<< HEAD
 ms.prod: security
-=======
-ms.topic: security
->>>>>>> 19de8239901f2b7603d673697e223404ae29aae5
 ---
 
 TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
@@ -156,8 +152,8 @@ New-IISSite $siteName "$env:systemdrive\\inetpub\\wwwroot" "\*:443:secure.contos
 An example of adding a site binding to an existing site and disabling
 legacy TLS:
    
-```powershell
-New-IISSiteBinding -Name "Default Web Site" -BindingInformation $BindingInformation -CertificateThumbPrint $certificate.Thumbprint -Protocol https -SslFlag $DisableLegacyTLS, $CCS -Force -verbose    
+
+`New-IISSiteBinding -Name "Default Web Site" -BindingInformation $BindingInformation -CertificateThumbPrint $certificate.Thumbprint -Protocol https -SslFlag $DisableLegacyTLS, $CCS -Force -verbose`   
 
 Additionally, one can troubleshoot and test this feature with Netsh:
 

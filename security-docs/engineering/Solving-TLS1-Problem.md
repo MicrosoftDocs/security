@@ -108,11 +108,11 @@ Since the v1 release of this document, Microsoft has shipped a number of softwar
   - [IIS custom logging](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) to correlate client IP/user agent string, service URI, TLS protocol version and cipher suite.
 
      - With this logging, admins can finally quantify their customers' exposure to weak TLS.
-  - [SecureScore](https://securescore.microsoft.com/) - To help Office 365 tenant admins identify their own weak TLS usage, the SecureScore portal has been built to share this information as TLS 1.0 exited support in Office 365 in October 2018. 
+  - [SecureScore](https://security.microsoft.com/securescore) - To help Office 365 tenant admins identify their own weak TLS usage, the SecureScore portal has been built to share this information as TLS 1.0 exited support in Office 365 in October 2018. 
 
      - This portal provides Office 365 tenant admins with the valuable information they need to reach out to their own customers who may be unaware of their own TLS 1.0 dependencies. 
 
-     - Please visit https://securescore.microsoft.com/ for more information.
+     - Please visit [https://securescore.microsoft.com/](https://security.microsoft.com/securescore) for more information.
 
   - .Net Framework updates to eliminate app-level hardcoding and prevent framework-inherited TLS 1.0 dependencies.
 

@@ -29,7 +29,7 @@ The implementation of Zero Trust is still evolving, and each organization's jour
 
 ## Top recommendations for Zero Trust
 
-The following best practices are key to keeping your apps secure. We have also published a [whitepaper](https://azure.microsoft.com/en-us/resources/zero-trust-for-the-microsoft-identity-platform-developer/) that walks through these best practices in detail.
+The following best practices are key to keeping your apps secure. We have also published a [whitepaper](https://azure.microsoft.com/resources/zero-trust-for-the-microsoft-identity-platform-developer/) that walks through these best practices in detail.
 
 **Use a trusted, standards-based authentication library.** Using a library will save you the time of developing a solution on your own. But more importantly, it will stay up to date and be responsive to the latest technologies and threats. Microsoft provides several authentication libraries, including the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview), [Microsoft Identity Web authentication library](/azure/active-directory/develop/microsoft-identity-web), and the [Azure SDKs for managed identities](/azure/active-directory/managed-identities-azure-resources/qs-configure-sdk-windows-vm#azure-sdks-with-managed-identities-for-azure-resources-support). These give you access to features such as conditional access, device registration and management, and the latest innovations such as passwordless and FIDO2 authentication without needing to write any extra code.
 

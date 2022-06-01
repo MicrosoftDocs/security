@@ -78,7 +78,7 @@ version:
 
 *TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
 
-For more information on TLS 1.0/1.1 deprecation in IE/Edge, see [Modernizing TLS connections in Microsoft Edge and Internet Explorer 11](https://blogs.windows.com/msedgedev/2018/10/15/modernizing-tls-edge-ie11/),  [Site compatibility-impacting changes coming to Microsoft Edge](https://docs.microsoft.com/microsoft-edge/web-platform/site-impacting-changes) and [Disabling TLS/1.0 and TLS/1.1 in the new Edge Browser](https://textslashplain.com/2020/01/13/disabling-tls-1-0-and-tls-1-1-in-the-new-edge-browser/)
+For more information on TLS 1.0/1.1 deprecation in IE/Edge, see [Modernizing TLS connections in Microsoft Edge and Internet Explorer 11](https://blogs.windows.com/msedgedev/2018/10/15/modernizing-tls-edge-ie11/),  [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes) and [Disabling TLS/1.0 and TLS/1.1 in the new Edge Browser](https://textslashplain.com/2020/01/13/disabling-tls-1-0-and-tls-1-1-in-the-new-edge-browser/)
 
 A quick way to determine what TLS version will be requested by various
 clients when connecting to your online services is by referring to the
@@ -108,15 +108,15 @@ Since the v1 release of this document, Microsoft has shipped a number of softwar
   - [IIS custom logging](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) to correlate client IP/user agent string, service URI, TLS protocol version and cipher suite.
 
      - With this logging, admins can finally quantify their customers' exposure to weak TLS.
-  - [SecureScore](https://securescore.microsoft.com/) - To help Office 365 tenant admins identify their own weak TLS usage, the SecureScore portal has been built to share this information as TLS 1.0 exited support in Office 365 in October 2018. 
+  - [SecureScore](https://security.microsoft.com/securescore) - To help Office 365 tenant admins identify their own weak TLS usage, the SecureScore portal has been built to share this information as TLS 1.0 exited support in Office 365 in October 2018. 
 
      - This portal provides Office 365 tenant admins with the valuable information they need to reach out to their own customers who may be unaware of their own TLS 1.0 dependencies. 
 
-     - Please visit https://securescore.microsoft.com/ for more information.
+     - Please visit [https://securescore.microsoft.com/](https://security.microsoft.com/securescore) for more information.
 
   - .Net Framework updates to eliminate app-level hardcoding and prevent framework-inherited TLS 1.0 dependencies.
 
-  - Developer Guidance and software updates have been released to help customers identify and eliminate .Net dependencies on weak TLS: [Transport Layer Security (TLS) best practices with the .NET Framework](https://docs.microsoft.com/dotnet/framework/network-programming/tls)
+  - Developer Guidance and software updates have been released to help customers identify and eliminate .Net dependencies on weak TLS: [Transport Layer Security (TLS) best practices with the .NET Framework](/dotnet/framework/network-programming/tls)
 
      - FYI: All apps targeting .NET 4.5 or below are likely going to have to be modified in order to support TLS 1.2.
 

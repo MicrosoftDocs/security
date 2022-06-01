@@ -46,19 +46,38 @@
   expanded: false
   items:
     - name: Overview
-      href: /microsoft-365/security/microsoft-365-zero-trust?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      href: overview.md
     - name: Deploy your identity infrastructure for Microsoft 365
-      href: /microsoft-365/enterprise/deploy-identity-solution-overview?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      href: deploy-identity-solution-overview.md
+      items:
+        - name: Step 1. Determine your identity model
+          href: deploy-identity-solution-identity-model.md
+        - name: Step 2. Protect your privileged accounts
+          href: protect-your-global-administrator-accounts.md
+        - name: Step 3. Protect your user accounts
+          href: microsoft-365-secure-sign-in.md
+        - name: Step 4. Deploy your identity model
+          items:
+            - name: Cloud-only identity
+              href: cloud-only-identities.md
+            - name: Hybrid identity
+              items: 
+              - name: Prepare for directory synchronization
+                href: prepare-for-directory-synchronization.md
+              - name: Prepare a non-routable domain for directory synchronization
+                href: prepare-a-non-routable-domain-for-directory-synchronization.md
+              - name: Set up directory synchronization
+                href: set-up-directory-synchronization.md
     - name: Zero Trust identity and device configurations
-      href: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      href: microsoft-365-policies-configurations.md
     - name: Manage endpoints with Intune and Microsoft 365
-      href: /microsoft-365/solutions/manage-devices-with-intune-overview?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      href: manage-devices-with-intune-overview.md
     - name: Evaluate, pilot, and deploy Microsoft 365 Defender
-      href: /microsoft-365/security/defender/eval-overview?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      href: eval-overview.md
     - name: Deploy a Microsoft Information Protection solution 
-      href: /microsoft-365/compliance/information-protection-solution?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      href: information-protection-solution.md
     - name: Deploy information protection for data privacy regulations
-      href: /microsoft-365/solutions/information-protection-deploy?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      href: information-protection-deploy.md
 - name: Technology partner integrations
   expanded: false
   items: 

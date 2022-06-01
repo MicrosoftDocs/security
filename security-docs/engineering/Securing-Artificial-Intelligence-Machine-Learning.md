@@ -2,7 +2,7 @@
 layout: Conceptual
 title: Securing the Future of AI and ML at Microsoft
 description: This research papers shares some of Microsoft’s security lessons-learned from designing products and operating online services built on AI.
-ms.date: 12/04/2018
+ms.date: 05/27/2022
 ms.service: security
 ms.author: bcowper
 author: BruceCowper
@@ -10,6 +10,7 @@ ms.topic: conceptual
 ---
 
 # Securing the Future of Artificial Intelligence and Machine Learning at Microsoft
+
 By Andrew Marshall, Raul Rojas, Jay Stokes and Donald Brinkman
 
 Special Thanks to Mark Cartwright and Graham Calladine

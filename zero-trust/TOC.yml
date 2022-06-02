@@ -70,7 +70,7 @@
               - name: Set up directory synchronization
                 href: /microsoft-365/enterprise/set-up-directory-synchronization?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Zero Trust identity and device configurations
-      href: 
+      items: 
       - name: Overview
         href: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations?bc=%2security%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Prerequisite work

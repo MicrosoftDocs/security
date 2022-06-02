@@ -14,7 +14,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-ransomware
 - m365solution-overview
-ms.custom: 
+ms.custom: cxdef-zt-ransomware 
 description: Deploy ransomware protection to limit the scope of damage of an attacker by protecting privileged roles.
 
 ---

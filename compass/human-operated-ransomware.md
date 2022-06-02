@@ -9,6 +9,7 @@ ms.prod: m365-security
 ms.collection:
 - m365solution-ransomware
 - m365solution-overview
+ms.custom: cxdef-zt-ransomware
 ms.topic: article
 localization_priority: Normal
 description: "Learn about ransomware prevention and methods to stop human-operated ransomware attacks, with links to configure your cyber security to help stop ransomware."

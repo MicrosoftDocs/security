@@ -20,7 +20,7 @@ This guidance is for software providers and technology partners who want to enha
 
 ## Data Zero Trust integration guide
 
-This integration guide includes instructions for [integrating with the Microsoft Purview Information Protection SDK](#microsoft-information-protection-sdk), which is the unification of Microsoft's classification, labeling, and protection services.
+This integration guide includes instructions for [integrating with the Microsoft Information Protection (MIP) SDK](#microsoft-information-protection-sdk), which is the unification of Microsoft's classification, labeling, and protection services.
 
 Independent software vendors (ISVs) can integrate with the MIP SDK to build solutions that help customers understand and protect data, prevent data loss, and govern data storage and access.
 

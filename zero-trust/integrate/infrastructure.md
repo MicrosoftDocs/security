@@ -1,5 +1,5 @@
 ---
-title: Infrastructure Zero Trust integration overview
+title: Zero Trust integration for Infrastructure overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Cloud to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 09/17/2021
 ms.service: security
@@ -13,19 +13,19 @@ ms.topic: conceptual
 
 :::image type="icon" source="../media/icon-infrastructure-medium.png":::
 
-Infrastructure is the hardware, software, micro-services, networking infrastructure, and facilities required to support IT services for an organization. Zero Trust infrastructure solutions assess, monitor, and prevent security threats to these services.
+Infrastructure comprises the hardware, software, micro-services, networking infrastructure, and facilities required to support IT services for an organization. Zero Trust infrastructure solutions assess, monitor, and prevent security threats to these services.
 
 Zero Trust infrastructure solutions support the principles of Zero Trust by ensuring that access to infrastructure resources is verified explicitly, access is granted using principles of least privilege access, and mechanisms are in place that assume breach and look for and remediate security threats in infrastructure.
 
 This guidance is for software providers and technology partners who want to enhance their infrastructure security solutions by integrating with Microsoft products.
 
-## Infrastructure Zero Trust integration guide
+## Zero Trust integration for Infrastructure guide
 
 This integration guide includes strategy and instructions for integrating with [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) and its integrated cloud workload protection platform (CWPP), [Microsoft Defender for Cloud](/azure/security-center/azure-defender).
 
 The guidance includes integrations with the most popular Security Information and Event Management (SIEM), Security Orchestration Automated Response (SOAR), Endpoint Detection and Response (EDR), and IT Service Management (ITSM) solutions.
 
-### Defender for Cloud's zero trust features
+### Zero Trust and Defender for Cloud
 
 Our [Zero Trust infrastructure deployment guidance](../deploy/infrastructure.md) provides key stages of the Zero Trust strategy for infrastructure. These are:
 
@@ -39,7 +39,7 @@ There's a clear mapping from the goals we've described in the [infrastructure de
 
 |Zero Trust goal  | Defender for Cloud feature  |
 |---------|---------|
-|Assess compliance | In Defender for Cloud, every subscription automatically has the [Azure Security Benchmark security initiative assigned](/azure/security-center/security-policy-concept).<br>Using the [secure score tools](/azure/security-center/secure-score-security-controls) and the [regulatory compliance dashboard](/azure/security-center/update-regulatory-compliance-packages) you can very easily get a deep understanding of your customer's security posture. |
+|Assess compliance | In Defender for Cloud, every subscription automatically has the [Azure Security Benchmark security initiative assigned](/azure/security-center/security-policy-concept).<br>Using the [secure score tools](/azure/security-center/secure-score-security-controls) and the [regulatory compliance dashboard](/azure/security-center/update-regulatory-compliance-packages) you can get a deep understanding of your customer's security posture. |
 |Harden configuration | Assigning security initiatives to subscriptions, and reviewing the secure score, leads you to the [hardening recommendations](/azure/security-center/recommendations-reference) built into Defender for Cloud. Defender for Cloud periodically analyzes the compliance status of resources to identify potential security misconfigurations and weaknesses. It then provides recommendations on how to remediate those issues.    |
 |Employ hardening mechanisms | As well as one-time fixes to security misconfigurations, Defender for Cloud offers tools to ensure continued hardening such as:<br>[Just-in-time (JIT) virtual machine (VM) access](/azure/security-center/just-in-time-explained)<br>[Adaptive network hardening](/azure/security-center/security-center-adaptive-network-hardening)<br>[Adaptive application controls](/azure/security-center/security-center-adaptive-application). |
 |Set up threat detection  | Defender for Cloud offers an integrated cloud workload protection platform (CWPP), Microsoft Defender for Cloud.<br>Microsoft Defender for Cloud provides advanced, intelligent, protection of Azure and hybrid resources and workloads.<br>One of the Microsoft Defender plans, Microsoft Defender for servers, includes a native integration with [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/).<br>Learn more in [Introduction to Microsoft Defender for Cloud](/azure/security-center/azure-defender). |

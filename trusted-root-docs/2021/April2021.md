@@ -30,7 +30,7 @@ This release will **NotBefore** the following roots:
 2. DATEV eG	\\ CA DATEV BT 02	\\ 39410BC2303748066069A72A664DE4C743481296
 3. DATEV eG	\\ CA DATEV STD 02	\\ AB9D58C03F54B1DAE3F7C2D4C6C1EC3694559C37
 4. DATEV eG	\\ CA DATEV INT 02	\\ 93F7F48B1261943F6A78210C52E626DFBFBBE260
-5. Government of Spain, Ministerio de Trabajo e InmigraciÃ³n (MTIN) \\	AC1 RAIZ MTIN	\\ 6AD23B9DC48E375F859AD9CAB585325C23894071
+5. Government of Spain, Ministerio de Trabajo e Inmigracion (MTIN) \\	AC1 RAIZ MTIN	\\ 6AD23B9DC48E375F859AD9CAB585325C23894071
 6. Macao Post and Telecommunications eSignTrust Certification Authority \\	Macao Post eSign Trust	\\ 06143151E02B45DDBADD5D8E56530DAAE328CF90
 7. QuoVadis	\\ QuoVadis Root Certification Authority	\\ DE3F40BD5093D39B6C60F6DABC076201008976C9
 8. Comodo	\\ Sectigo (UTN Object)	\\ E12DFB4B41D7D9C32B30514BAC1D81D8385E2D46
@@ -41,9 +41,9 @@ This release will **NotBefore** the following roots:
 
 
 This release will **remove the EV policy OID** to the following roots:
-1. Google Trust Services (GTS)	Google Trust Services - GlobalSign Root CA-R2	75E0ABB6138512271C04F85FDDDE38E4B7242EFE
-2. Google Trust Services (GTS)	Google Trust Services - GlobalSign ECC Root CA - R4	6969562E4080F424A1E7199F14BAF3EE58AB6ABB
-3. Telia Company (formerly TeliaSonera)	TeliaSonera Root CA v1	4313BB96F1D5869BC14E6A92F6CFF63469878237
+1. Google Trust Services (GTS)	\\ Google Trust Services - GlobalSign Root CA-R2	\\ 75E0ABB6138512271C04F85FDDDE38E4B7242EFE
+2. Google Trust Services (GTS)	\\ Google Trust Services - GlobalSign ECC Root CA - R4	\\ 6969562E4080F424A1E7199F14BAF3EE58AB6ABB
+3. Telia Company (formerly TeliaSonera)	\\ TeliaSonera Root CA v1	\\ 4313BB96F1D5869BC14E6A92F6CFF63469878237
 
 
 

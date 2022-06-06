@@ -2,10 +2,11 @@
 title: Governance, risk, and compliance in Azure | Microsoft Docs
 description: Define the security priorities around governance, risk, and compliance
 author: MarkSimos
+ms.author: mas
 ms.date: 07/09/2019
 ms.topic: article
 ms.service: security
-ms.subservice: cloud-design-principles
+ms.subservice: security-develop
 ---
 
 # Governance, risk, and compliance
@@ -107,7 +108,7 @@ A good enterprise segmentation strategy meets these criteria:
 
 -   **Monitored** – Security Operations should monitor for potential violations of the integrity of the segments (account usage, unexpected traffic, etc.)
 
-![A screenshot of a cell phone Description automatically generated](images/enterprise-tenant.png)
+![Diagram of an enterprise segmentation strategy, showing the relationship between Subscriptions, Core Services, and Segments.](images/enterprise-tenant.png)
 
 ## Security team visibility
 
@@ -137,7 +138,7 @@ Providing clear guidance that follows a reference model will reduce risk because
 
 Microsoft recommends starting from these Microsoft reference models and adapting to your organization.
 
-![image showing core services reference permissions](images/ref-perms.png)
+![Diagram showing the Core Services Reference Permissions, showing enterprise and resource role permissions.](images/ref-perms.png)
 
 ### Core Services Reference Permissions
 This segment hosts shared services utilized across the organization. These shared services typically include Active Directory Domain Services, DNS/DHCP, System Management Tools hosted on Azure Infrastructure as a Service (IaaS) virtual machines.
@@ -155,7 +156,7 @@ This segment hosts shared services utilized across the organization. These share
 
 **Service admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/active-directory/roles/security-emergency-access) for more details.
 
-![A screenshot of a cell phone Description automatically generated](images/ref-segment.png)
+![Diagram of the reference permissions, showing the relationship between the Enterprise Role Permissions and Subscriptions.](images/ref-segment.png)
 
 ### Segment reference permissions
 

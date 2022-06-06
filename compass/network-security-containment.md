@@ -2,10 +2,11 @@
 title: Network security and containment in Azure | Microsoft Docs
 description: Secure assets through network-based access
 author: MarkSimos
+ms.author: mas
 ms.date: 07/09/2019
 ms.topic: article
 ms.service: security
-ms.subservice: cloud-design-principles
+ms.subservice: security-develop
 ---
 
 # Network security and containment
@@ -92,7 +93,7 @@ represents network connectivity between your assets in the cloud and the Interne
 
 There are two primary choices that can provide Internet edge security controls and monitoring:
 
-- Cloud Service Provider Native Controls ([Azure Firewall](/services/azure-firewall/) + [Web Application Firewall (WAF)](/azure/application-gateway/waf-overview))
+- Cloud Service Provider Native Controls ([Azure Firewall](https://azure.microsoft.com/services/azure-firewall/) + [Web Application Firewall (WAF)](/azure/application-gateway/waf-overview))
 
 - Partner Virtual Network Appliances (Firewall and WAF Vendors available in [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/))
 

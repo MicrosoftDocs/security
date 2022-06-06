@@ -9,7 +9,7 @@ ms.service: security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "Learn more about security principles and recommendations for modernizing security in your organization."
+description: "Learn more about key learnings about threat protection, security evolution, strategies, and security road maps."
 ---
 
 # CISO Workshop Module 4a: Threat Protection Strategy

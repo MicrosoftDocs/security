@@ -9,7 +9,7 @@ ms.service: security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "Learn more about security principles and recommendations for modernizing security in your organization."
+description: "Learn more about the evolution and trajectory of the Microsoft Security Operations Centers (SOC), powered by trillions of signals in the Microsoft Intelligent Security Graph."
 ---
 
 # CISO Workshop Module 4b: Threat Protection Strategy 

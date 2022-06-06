@@ -9,7 +9,7 @@ ms.service: security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "Learn more about security principles and recommendations for modernizing security in your organization."
+description: "This module covers overviews on critical security hygiene, Microsoft cybersecurity reference architecture, cybersecurity resilience, Internet of Things (IoT), and operational tech."
 ---
 
 # CISO Workshop Module 1: Microsoft Cybersecurity Briefing

@@ -1,12 +1,11 @@
 ---
 title: September 2020 Deployment Notice for Microsoft Trusted Root Program 
-description: This document provides details about the changes made in August 2020 to the root store.
+description: This document provides details about the changes made to the root store in September 2020.
 ms.date: 08/18/2020
 ms.service: security
 ms.author: dansimp
 author: dansimp
 ms.topic: conceptual
-ms.service: security
 ---
 
 # September 2020 Deployment Notice for Microsoft Trusted Root Program 

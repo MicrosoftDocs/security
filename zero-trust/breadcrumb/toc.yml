@@ -6,6 +6,6 @@
     href: /security
     topicHref: /security/index
     items:
-    - name: Microsoft Zero Trust
+    - name: Zero Trust
       href: /security/zero-trust/
       topicHref: /security/zero-trust

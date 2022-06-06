@@ -22,7 +22,7 @@ Please note, the changes listed are accurate at the time of posting but are subj
 
 A list of Root Store participants, updated monthly, can be found here: <https://aka.ms/trustcertpartners>. 
 
-## 2021
+## 2022
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
 | June | June 28 | [Deployment Notice for June 2022](2022/June2022.md) |

@@ -1,5 +1,5 @@
 ---
-title: "Capabilities"
+title: Capabilities
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: security
 localization_priority: Normal
-description: "Learn about the capabilities that can help with administration."
+description: Learn about the capabilities that can help with administration.
 ---
 
 # Administration capabilities

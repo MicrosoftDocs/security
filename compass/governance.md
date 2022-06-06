@@ -138,7 +138,7 @@ Providing clear guidance that follows a reference model will reduce risk because
 
 Microsoft recommends starting from these Microsoft reference models and adapting to your organization.
 
-![Diagram showing the Core Services Reference Permissions, showing enterprise and resource role permissions.](images/ref-perms.png)
+![Diagram of the Core Services Reference Permissions, showing enterprise and resource role permissions.](images/ref-perms.png)
 
 ### Core Services Reference Permissions
 This segment hosts shared services utilized across the organization. These shared services typically include Active Directory Domain Services, DNS/DHCP, System Management Tools hosted on Azure Infrastructure as a Service (IaaS) virtual machines.

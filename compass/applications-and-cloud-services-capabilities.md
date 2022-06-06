@@ -1,5 +1,5 @@
 ---
-title: "Applications and cloud services capabilities"
+title: Applications and cloud services capabilities
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: security
 localization_priority: Normal
-description: "Learn about capabilities that can help with applications and cloud services."
+description: Learn about capabilities that can help with applications and cloud services.
 ---
 
 # Applications and cloud services capabilities

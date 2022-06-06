@@ -4,7 +4,8 @@ title: Solving the TLS 1.0 Problem
 description: This document presents guidance on rapidly identifying and removing Transport Layer Security (TLS) protocol version 1.0 dependencies in software built on top of Microsoft operating systems. It is intended to be used as a starting point for building a migration plan to a TLS 1.2+ network environment.
 ms.date: 02/18/2020
 ms.service: security
-ms.author: amarshal
+ms.author: dansimp
+author: dansimp
 ms.topic: conceptual
 ---
 
@@ -181,18 +182,20 @@ hardcoded TLS 1.0 usage in your applications:
 
 The recommended solution in all cases above is to remove the hardcoded protocol version selection and defer to the operating system default. If you are using [DevSkim](https://github.com/Microsoft/DevSkim/), [click here](https://github.com/Microsoft/DevSkim/blob/4ac9214f84f517fb2d83c362720fa33fe93e6dc8/rules/default/security/cryptography/protocol.json) to see rules covering the above checks which you can use with your own code.
 
-
 ## Update Windows PowerShell scripts or related registry settings
 Windows PowerShell uses .NET Framework 4.5, which does not include TLS 1.2 as an available protocol.  To work around this, two solutions are available:
 
-    1.  Modify the script in question to include the following:
-        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;
+1. Modify the script in question to include the following:
 
-    2.  Add a system-wide registry key (e.g. via group policy) to any machine that needs to make TLS 1.2 connections from a .NET app. This will cause .NET to use the "System Default" TLS versions which adds TLS 1.2 as an available protocol AND it will allow the scripts to use future TLS Versions when the OS supports them. (e.g. TLS 1.3)  
+   ```powershell
+   [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;
+   ```
 
-        reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:64
+2. Add a system-wide registry key (e.g. via group policy) to any machine that needs to make TLS 1.2 connections from a .NET app. This will cause .NET to use the "System Default" TLS versions which adds TLS 1.2 as an available protocol AND it will allow the scripts to use future TLS Versions when the OS supports them. (e.g. TLS 1.3)  
 
-        reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:32
+      reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:64
+
+      reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:32
 
 Solutions (1) and (2) are mutually-exclusive, meaning they need not be implemented together. 
 

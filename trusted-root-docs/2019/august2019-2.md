@@ -1,5 +1,5 @@
 ---
-title: August 2019 Deployment Notice - Microsoft Trusted Root Program
+title: August 2019 Deployment Notice: Microsoft Trusted Root Program
 description: This document provides details about the changes made monthly to the root store.
 ms.date: 08/14/2019
 ms.service: security
@@ -8,7 +8,7 @@ ms.author: kasirota
 ms.topic: conceptual
 ---
 
-# August 2019 Deployment Notice - Microsoft Trusted Root Program
+# August 2019 Deployment Notice: Microsoft Trusted Root Program
 
 On Wednesday, August 14th, 2019, Microsoft’s Trusted Root Certificate Program released an update to the Untrusted CTL to disallow the following intermediate certificates.
 

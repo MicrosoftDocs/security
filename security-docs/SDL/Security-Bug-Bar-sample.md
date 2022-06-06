@@ -489,16 +489,16 @@ reaching less than 10 percent of users.
 Computer that is configured to run software that awaits and fulfills
 requests from client processes that run on other computers.  
 
-      **Critical.** *A security vulnerability that would be rated as
+  **Critical.** *A security vulnerability that would be rated as
 having the highest potential for damage.*  
 
-      **Important.** *A security vulnerability that would be rated as
+  **Important.** *A security vulnerability that would be rated as
 having significant potential for damage, but less than Critical.*  
 
-      **Moderate.** *A security vulnerability that would be rated as
+  **Moderate.** *A security vulnerability that would be rated as
 having moderate potential for damage, but less than Important.*  
 
-      **Low.** *A security vulnerability that would be rated as having
+  **Low.** *A security vulnerability that would be rated as having
 low potential for damage.*  
 
 **targeted information disclosure**  

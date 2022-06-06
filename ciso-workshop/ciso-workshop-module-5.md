@@ -5,7 +5,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: tutorial
-ms.service: o365-seccomp
+ms.service: security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance

@@ -1,14 +1,15 @@
 ---
 layout: Conceptual
-title: Identifying Security Bug Reports Based Solely on Report Titles and Noisy Data
+title: Identifying Security Bug Reports Based on Report Titles and Noisy Data
+ms.author: dansimp
+author: dansimp
 description: This research papers shares some of Microsoft's lessons-learned from using machine learning to improve the accuracy of labeling in security bug reports (SCRs).
 ms.date: 03/06/2020
 ms.service: security
-ms.author: bcowper
 ms.topic: conceptual
 ---
 
-# Identifying Security Bug Reports Based Solely on Report Titles and Noisy Data
+# Identifying Security Bug Reports Based on Report Titles and Noisy Data
 
 <table style="text-align:left" border="0">
   

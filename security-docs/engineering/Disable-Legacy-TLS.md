@@ -1,21 +1,11 @@
 ---
-# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
-
-# Mandatory fields.
 title: TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
 description: Learn how Windows Server 2019 now allows you to block weak TLS versions from being used with individual certificates you designate.
 author: TerryLanfear
 ms.author: terrylan
 ms.date: 8/14/2019
 ms.topic: article
-# Use ms.service for services or ms.prod for on-prem products. Remove the # before the relevant field.
 ms.prod: security
-
-# Optional fields. Don't forget to remove # if you need a field.
-# ms.custom: can-be-multiple-comma-separated
-# ms.reviewer: MSFT-alias-of-reviewer
-# manager: MSFT-alias-of-manager-or-PM-counterpart
-
 ---
 
 TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
@@ -159,6 +149,7 @@ New-IISSite $siteName "$env:systemdrive\\inetpub\\wwwroot" "\*:443:secure.contos
 
 An example of adding a site binding to an existing site and disabling
 legacy TLS:
+   
 
 ```powershell
 New-IISSiteBinding -Name "Default Web Site" -BindingInformation $BindingInformation -CertificateThumbPrint $certificate.Thumbprint -Protocol https -SslFlag $DisableLegacyTLS, $CCS -Force -verbose

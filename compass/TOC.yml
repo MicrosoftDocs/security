@@ -43,6 +43,10 @@
                   href: incident-response-playbook-password-spray.md
                 - name: App consent grant
                   href: incident-response-playbook-app-consent.md
+                - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
+                  href: /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
+                - name: Responding to ransomware attacks
+                  href: /microsoft-365/security/defender/playbook-responding-ransomware-m365-defender
                 - name: DART approach to ransomware
                   href: incident-response-playbook-dart-ransomware-approach.md
                 - name: Compromised and malicious applications

@@ -23,21 +23,25 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Human-operated ransomware
+    - title: Learn about the Microsoft Entra family of multicloud identity and access solutions
       itemType: overview
-      url: /security/compass/human-operated-ransomware
+      url: https://docs.microsoft.com/entra/
     # Card
-    - title: 3 steps to prevent and recover from ransomware
-      itemType: get-started
-      url: https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/
+    - title: Learn how to rapidly protect against ransomware and extortion
+      itemType: concept
+      url: /security/compass/protect-against-ransomware
     # Card
     - title: Azure defenses for ransomware attack
       itemType: download
       url: https://azure.microsoft.com/en-us/resources/azure-defenses-for-ransomware-attack/
     # Card
-    - title: Zero Trust essentials video series
-      itemType: video
-      url: https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu
+    - title: Evaluate and pilot Microsoft 365 Defender
+      itemType: overview
+      url: https://docs.microsoft.com/microsoft-365/security/defender/eval-overview
+    # Card
+    - title: Guiding principles of Zero Trust, a security strategy
+      itemType: overview
+      url: /security/zero-trust/zero-trust-overview
     # Card
     - title: Resources for accelerating your Zero Trust journey
       itemType: reference
@@ -46,10 +50,6 @@ highlightedContent:
     - title: Rapidly modernize your security infrastructure
       itemType: concept
       url: /security/compass/security-rapid-modernization-plan
-    # Card
-    - title: Evaluate and pilot Microsoft 365 Defender
-      itemType: overview
-      url: https://docs.microsoft.com/microsoft-365/security/defender/eval-overview
     # Card
     - title: Past news and highlights
       itemType: reference

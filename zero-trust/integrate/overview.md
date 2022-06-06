@@ -8,7 +8,7 @@ ms.author: nichola
 ms.topic: conceptual
 ---
 
-# Integrate with Microsoft's Zero Trust solutions
+# Integrate with Zero Trust solutions
 
 Zero Trust is an approach to security that adapts to the complexity of the modern environment, embraces the mobile workforce, and protects people, devices, applications, and data wherever they are located.
 

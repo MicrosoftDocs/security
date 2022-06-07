@@ -208,8 +208,6 @@ Win32/64
 
   - Use
     [<span class="underline">RNGCryptoServiceProvider</span>](https://msdn.microsoft.com/library/system.security.cryptography.rngcryptoserviceprovider.aspx)
-    or
-    [<span class="underline">RNGCng</span>.](https://clrsecurity.codeplex.com/wikipage?title=Security.Cryptography.RNGCng&referringTitle=Security.Cryptography.dll)
 
 Windows Store Apps
 

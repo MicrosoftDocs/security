@@ -7,6 +7,7 @@ ms.date: 07/03/2019
 ms.topic: article
 ms.service: security
 ms.subservice: security-fundamentals
+
 ---
 
 # Storage, data, and encryption
@@ -108,3 +109,4 @@ An example of service-specific service provider encryption is [Azure Storage Ser
 
 ## Next steps
 For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).
+

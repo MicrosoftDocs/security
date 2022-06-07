@@ -1,12 +1,12 @@
 ---
 title: Application security in Azure | Microsoft Docs
 description: How to secure your applications and services in Azure 
-author: MarkSimos
-ms.author: mas
+ms.author: dansimp
+author: dansimp
 ms.date: 07/08/2019
 ms.topic: article
 ms.service: security
-ms.subservice: security-develop
+ms.subservice: security-fundamentals
 ---
 
 # Applications and services

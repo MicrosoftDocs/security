@@ -1,12 +1,13 @@
 ---
 title: Governance, risk, and compliance in Azure | Microsoft Docs
 description: Define the security priorities around governance, risk, and compliance
-author: MarkSimos
-ms.author: mas
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2019
 ms.topic: article
 ms.service: security
-ms.subservice: security-develop
+ms.subservice: security-fundamentals
+
 ---
 
 # Governance, risk, and compliance
@@ -156,7 +157,9 @@ This segment hosts shared services utilized across the organization. These share
 
 **Service admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/active-directory/roles/security-emergency-access) for more details.
 
+
 ![Diagram of the reference permissions, showing the relationship between the Enterprise Role Permissions and Subscriptions.](images/ref-segment.png)
+
 
 ### Segment reference permissions
 

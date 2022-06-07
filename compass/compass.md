@@ -5,6 +5,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
+ms.service: security
 localization_priority: Normal
 description: "Learn how to rapidly increase your security posture with prescriptive Microsoft Security Best Practices."
 
@@ -25,14 +26,14 @@ In this guidance:
 - [Information protection and storage](information-protection-and-storage-videos-and-decks.md)
 - [Applications and services](applications-and-cloud-services-videos-and-decks.md)
 
-This guidance is presented in a series of videos. To download the PowerPoint slides associated with these videos, click [download presentation slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx).
+This guidance is presented in a series of videos. To download the PowerPoint slides associated with these videos, click [download presentation slides](/microsoft-365/downloads/security-compass-presentation.pptx).
 
 :::image type="content" source="media/security-compass-presentation-example-slide.png" alt-text="Example slide":::
 
 ## Related topics
-[Security design principles for cloud architecture](https://docs.microsoft.com/azure/architecture/framework/security/security-principles)
+[Security design principles for cloud architecture](/azure/architecture/framework/security/security-principles)
 
 [Security reference architectures and design](https://gallery.technet.microsoft.com/Cybersecurity-Reference-883fb54c)
 
 ## Next steps
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

@@ -6,7 +6,9 @@ ms.service: security
 ms.author: kasirota
 author: kasirota
 ms.topic: conceptual
+
 ---
+
 # New CA application - Microsoft Trusted Root Program
 
 ## 1. Introduction

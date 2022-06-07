@@ -90,9 +90,9 @@ Perform these implementation steps to meet the **Protect your data** deployment 
 | <input type="checkbox" /> | 1. Determine the use and design of sensitivity labels. | Security Architect | [Get started](/microsoft-365/compliance/get-started-with-sensitivity-labels) |
 | <input type="checkbox" /> | 2. Label and protect items for Microsoft 365 apps and services. | Data Security Engineer | [Manage sensitivity labels](/microsoft-365/compliance/sensitivity-labels-office-apps) |
 | <input type="checkbox" /> | 3. Enable and configure Microsoft Cloud App Security. | Data Security Engineer | [Get started](/cloud-app-security/getting-started-with-cloud-app-security) |
-| <input type="checkbox" /> | 4. Discover, label, and protect sensitive items that reside in data stores in the cloud.  | Data Security Engineer | [Best practices](//defender-cloud-apps/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud) |
-| <input type="checkbox" /> | 5. Discover, label, and protect sensitive items that reside in on-premises data stores. | Data Security Engineer | [Azure Information Protection (AIP) unified labeling scanner](//azure/information-protection/deploy-aip-scanner-configure-install) |
-| <input type="checkbox" /> | 6. Extend your sensitivity labels to Azure resources Azure Purview | Data Security Engineer | [Labeling in Azure Purview](//purview/create-sensitivity-label) |
+| <input type="checkbox" /> | 4. Discover, label, and protect sensitive items that reside in data stores in the cloud.  | Data Security Engineer | [Best practices](/defender-cloud-apps/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud) |
+| <input type="checkbox" /> | 5. Discover, label, and protect sensitive items that reside in on-premises data stores. | Data Security Engineer | [Azure Information Protection (AIP) unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install) |
+| <input type="checkbox" /> | 6. Extend your sensitivity labels to Azure resources Azure Purview | Data Security Engineer | [Labeling in Azure Purview](/purview/create-sensitivity-label) |
 
 <a id="prevent"></a>
 ### 3. Prevent data loss

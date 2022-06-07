@@ -17,7 +17,6 @@ This article lists the capabilities that can help with information protection an
 
 Microsoft 365 and Office 365 include capabilities that can be applied to specific types of data to protect information across Microsoft 365 tools, including OneDrive, SharePoint Online, and mail. Some capabilities, like sensitive information types, can be used with Microsoft Defender for Cloud Apps to protect information across other SaaS apps in your environment.
 
-
 |**Capability**|**More information**|
 |:-----|:-----|
 |[Sensitivity labels](/microsoft-365/compliance/sensitivity-labels) <br/> |With sensitivity labels you can classify and help protect your sensitive content. Protection options include labels, watermarks, and encryption. Sensitivity labels use Azure Information Protection. If you are using Azure Information Protection labels, for now we recommend that you avoid creating new labels in other admin centers until after you've completed your migration. See [Azure Information Protection migration](/azure/information-protection/configure-policy-migrate-labels). <br/> [Retention labels](/microsoft-365/compliance/retention-policies) are different than sensitivity labels. Retention labels help you retain or delete content based on policies that you define. These help organizations comply with industry regulations and internal policies.|
@@ -40,7 +39,6 @@ Microsoft 365 and Office 365 include capabilities that can be applied to specifi
 |---------|---------|---------|
 | Azure SQL Database| Azure SQL Database is a general-purpose relational database, provided as a managed service. With it, you can create a highly available and high-performance data storage layer for the applications and solutions in Azure. |[Azure SQL Database documentation](/azure/sql-database/) |
 | Azure SQL Database security capabilities| Security capabilities for data include Always encrypted and Transparent Data Encryption (TDE)| [An overview of Azure SQL Database security capabilities](/azure/sql-database/sql-database-security-overview)|
-| | | |
 
 ## Next steps
 

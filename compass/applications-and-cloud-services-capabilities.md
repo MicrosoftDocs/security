@@ -11,6 +11,7 @@ description: Learn about capabilities that can help with applications and cloud 
 ---
 
 # Applications and cloud services capabilities
+
 This article lists the capabilities that can help with applications and cloud services.
 
 ## Category 1

@@ -5,7 +5,7 @@ author: TerryLanfear
 ms.author: terrylan
 ms.date: 8/14/2019
 ms.topic: article
-ms.prod: security
+ms.service: security
 ---
 
 TLS version enforcement capabilities now available per certificate binding on Windows Server 2019
@@ -178,7 +178,7 @@ Additionally, one can troubleshoot and test this feature with Netsh:
 Along with Disable Legacy TLS, the following additions have been made to
 HTTP.sys:
 
-- [HTTP\_SERVICE\_CONFIG\_SSL\_PARAM](/windows/win32/http/http-server-api-version-1-0-structures).DefaultFlags
+- [HTTP\_SERVICE\_CONFIG\_SSL\_PARAM](/windows/win32/api/http/ns-http-_http_service_config_ssl_param).DefaultFlags
     now supports the following new values:
 
 - HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_ENABLE\_SESSION\_TICKET:

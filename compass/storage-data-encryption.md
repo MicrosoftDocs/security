@@ -1,11 +1,13 @@
 ---
 title: Storage, data, and encryption in Azure | Microsoft Docs
 description: How to secure data storage in Azure 
-author: MarkSimos
+ms.author: dansimp
+author: dansimp
 ms.date: 07/03/2019
 ms.topic: article
 ms.service: security
-ms.subservice: cloud-design-principles
+ms.subservice: security-fundamentals
+
 ---
 
 # Storage, data, and encryption
@@ -65,7 +67,7 @@ over storage resources.
 
 We recommend that you use an identity-based option for storage access control.
 
-An example of this is [Azure Active Directory Authentication to Azure blob and queue services](https://docs.microsoft.com/rest/api/storageservices/authenticate-with-azure-active-directory).
+An example of this is [Azure Active Directory Authentication to Azure blob and queue services](/rest/api/storageservices/authenticate-with-azure-active-directory).
 
 ## Encrypt virtual disk files
 
@@ -88,7 +90,7 @@ they will not be able to because of the encryption.
 We recommend that you enable virtual disk encryption.
 
 An example of virtual disk encryption is [Azure Disk
-Encryption](https://docs.microsoft.com/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
+Encryption](/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
 
 ## Enable platform encryption services
 
@@ -103,7 +105,8 @@ by the cloud service provider.
 We recommend that for each service that supports service provider encryption
 that you enable that option.
 
-An example of service-specific service provider encryption is [Azure Storage Service encryption](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
+An example of service-specific service provider encryption is [Azure Storage Service encryption](/azure/storage/common/storage-service-encryption).
 
 ## Next steps
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).
+

@@ -3,7 +3,7 @@ title: GSP Program Overview
 description: This document provides an overview of the Government Security Program.
 ms.date: 02/19/2019
 ms.service: security
-ms.author: kellieac
+ms.author: mbaldwin
 author: kellieac
 ms.topic: conceptual
 ---

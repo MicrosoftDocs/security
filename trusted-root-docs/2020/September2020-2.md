@@ -1,6 +1,6 @@
 ---
 title: September 2020 Deployment Notice for Microsoft Trusted Root Program 
-description: This document provides details about the changes made to the root store in September 2020.
+description: Describes what is included in the September 3, 2020 update to the Microsoft Trusted Root Certificate Program.
 ms.date: 08/18/2020
 ms.service: security
 ms.author: dansimp

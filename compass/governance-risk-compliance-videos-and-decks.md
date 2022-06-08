@@ -5,6 +5,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
+ms.service: security
 localization_priority: Normal
 description: "Provides guidance on governance, risk, and compliance for security professionals."
 ---
@@ -14,7 +15,7 @@ Governance, Risk, and Compliance (GRC) activities help reduce organizational ris
 
 See the [Governance, risk, and compliance](governance.md) and [Capabilities](governance-risk-compliance-capabilities.md) topics for more information.
 
-The following videos provide guidance on governance, risk, and compliance. You can also download the [PowerPoint slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx) associated with these videos.
+The following videos provide guidance on governance, risk, and compliance. You can also download the [PowerPoint slides](/microsoft-365/downloads/security-compass-presentation.pptx) associated with these videos.
 
 ## Part 1: Introduction + Manage Connected Tenants (08:45)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qbBk]
@@ -65,4 +66,4 @@ The following videos provide guidance on governance, risk, and compliance. You c
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q3E9]
 
 ## Next steps
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

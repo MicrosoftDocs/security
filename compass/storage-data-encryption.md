@@ -3,6 +3,8 @@ title: Storage, data, and encryption in Azure | Microsoft Docs
 ms.author: dansimp
 author: dansimp
 description: How to secure data storage in Azure 
+ms.author: dansimp
+author: dansimp
 ms.date: 07/03/2019
 ms.topic: article
 ms.service: security
@@ -106,4 +108,5 @@ that you enable that option.
 An example of service-specific service provider encryption is [Azure Storage Service encryption](/azure/storage/common/storage-service-encryption).
 
 ## Next steps
+
 For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

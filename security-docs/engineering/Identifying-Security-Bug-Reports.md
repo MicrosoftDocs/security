@@ -9,7 +9,7 @@ ms.service: security
 ms.topic: conceptual
 ---
 
-# Identifying Security Bug Reports Based on Report Titles and Noisy Data
+# Identify Security Bug Reports Based Solely on Report Titles and Noisy Data
 
 <table style="text-align:left" border="0">
   

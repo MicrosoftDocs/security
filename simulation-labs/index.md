@@ -1,13 +1,13 @@
 ---
 layout: Conceptual
 title: Welcome to simulation-labs!
+description: Learn about simulation-labs
 ms.author: dansimp
 author: dansimp
-description: Learn about simulation-labs.
-ms.date: 03/06/2020
+ms.date: 07/09/2019
+ms.topic: article
 ms.service: security
-ms.topic: conceptual
+ms.subservice: security-fundamentals
 ---
-
 
 # Welcome to simulation-labs!

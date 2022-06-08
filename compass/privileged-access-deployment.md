@@ -365,8 +365,8 @@ The solution will provide you:
 
 Enable Defender for Cloud Apps and connect to Defender ATP to block access the risky URLs:
 
-* In [Microsoft Defender Security Center](https://securitycenter.windows) > Settings > Advanced features, set Microsoft Defender for Cloud Apps integration > **ON**
-* In [Microsoft Defender Security Center](https://securitycenter.windows)  > Settings > Advanced features, set Custom network indicators >  **ON**
+* In [Microsoft Defender Security Center](https://securitycenter.windows.com) > Settings > Advanced features, set Microsoft Defender for Cloud Apps integration > **ON**
+* In [Microsoft Defender Security Center](https://securitycenter.windows.com)  > Settings > Advanced features, set Custom network indicators >  **ON**
 * In [Microsoft Defender for Cloud Apps portal](https://portal.cloudappsecurity.com) > Settings > Microsoft Defender ATP integration > Select **Block unsanctioned apps**  
 
 ## Manage local applications

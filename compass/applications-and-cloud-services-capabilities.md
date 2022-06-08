@@ -7,10 +7,11 @@ audience: Admin
 ms.topic: article
 ms.service: security
 localization_priority: Normal
-description: "Capabilities"
+description: "Learn about the capabilities that can help with applications and cloud services."
 ---
 
 # Applications and cloud services capabilities
+
 This article lists the capabilities that can help with applications and cloud services.
 
 ## Category 1
@@ -22,5 +23,5 @@ This article lists the capabilities that can help with applications and cloud se
 ## Category 3
 
 ## Next steps
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).
 

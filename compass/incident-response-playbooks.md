@@ -20,6 +20,7 @@ ms.collection:
   - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
+ms.custom: cxdef-zt-ransomware 
 ---
 
 # Incident response playbooks

@@ -1,4 +1,5 @@
 ---
+layout: Conceptual
 title: Welcome to simulation-labs!
 description: Learn about simulation-labs
 ms.author: dansimp

@@ -112,48 +112,48 @@ shown below, then check “Disable Legacy TLS” and click OK.
 
 In PowerShell you can reference SSL flags like this:
 
-  ```powershell
-  [Microsoft.Web.Administration.SslFlags]::DisableLegacyTLS
-  ```
+```powershell
+[Microsoft.Web.Administration.SslFlags]::DisableLegacyTLS
+```
 
 It’s convenient to create shorter named variables for them:
 
-  ```powershell
-  $Sni = [Microsoft.Web.Administration.SslFlags]::Sni
-  
-  $Sni\_CCS = [Microsoft.Web.Administration.SslFlags]::Sni + [Microsoft.Web.Administration.SslFlags]::CentralCertStore
-  
-  $CCS = [Microsoft.Web.Administration.SslFlags]::CentralCertStore
-  
-  $DisableLegacyTLS = [Microsoft.Web.Administration.SslFlags]::DisableLegacyTLS
-  
-  $storeLocation = "Cert:\\LocalMachine\\My"
-  ```
+```powershell
+$Sni = [Microsoft.Web.Administration.SslFlags]::Sni
+    
+$Sni\_CCS = [Microsoft.Web.Administration.SslFlags]::Sni + [Microsoft.Web.Administration.SslFlags]::CentralCertStore
+    
+$CCS = [Microsoft.Web.Administration.SslFlags]::CentralCertStore
+    
+$DisableLegacyTLS = [Microsoft.Web.Administration.SslFlags]::DisableLegacyTLS
+    
+ $storeLocation = "Cert:\\LocalMachine\\My"
+```
 
 An example of creating a site binding to a new site and disabling legacy
 TLS:
 
-  ```powershell
-  $BindingInformation = "\*:443:"
-  
-  $siteName = "contoso"
-  
-  $Thumbprint = $certificate.ThumbPrint
-  ```
+```powershell
+$BindingInformation = "\*:443:"
+
+$siteName = "contoso"
+
+$Thumbprint = $certificate.ThumbPrint
+```
 
 New-IISSite with Sslflag DisableLegacyTLS property value:
 
-  ```powershell
-  New-IISSite $siteName "$env:systemdrive\\inetpub\\wwwroot" "\*:443:secure.contoso.com" https $certificate.Thumbprint $DisableLegacyTLS $storeLocation -passthru
-  ```
+```powershell
+New-IISSite $siteName "$env:systemdrive\\inetpub\\wwwroot" "\*:443:secure.contoso.com" https $certificate.Thumbprint $DisableLegacyTLS $storeLocation -passthru
+```
 
 An example of adding a site binding to an existing site and disabling
 legacy TLS:
    
 
-  ```powershell
-  New-IISSiteBinding -Name "Default Web Site" -BindingInformation $BindingInformation -CertificateThumbPrint $certificate.Thumbprint -Protocol https -SslFlag $DisableLegacyTLS, $CCS -Force -verbose
-  ```
+```powershell
+New-IISSiteBinding -Name "Default Web Site" -BindingInformation $BindingInformation -CertificateThumbPrint $certificate.Thumbprint -Protocol https -SslFlag $DisableLegacyTLS, $CCS -Force -verbose
+```
 
 Additionally, one can troubleshoot and test this feature with Netsh:
 

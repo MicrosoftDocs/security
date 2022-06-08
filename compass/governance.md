@@ -7,7 +7,6 @@ ms.date: 07/09/2019
 ms.topic: article
 ms.service: security
 ms.subservice: security-fundamentals
-
 ---
 
 # Governance, risk, and compliance
@@ -109,7 +108,7 @@ A good enterprise segmentation strategy meets these criteria:
 
 -   **Monitored** – Security Operations should monitor for potential violations of the integrity of the segments (account usage, unexpected traffic, etc.)
 
-![Diagram of an enterprise segmentation strategy, showing the relationship between Subscriptions, Core Services, and Segments.](images/enterprise-tenant.png)
+![Cell phone Description automatically generated](images/enterprise-tenant.png)
 
 ## Security team visibility
 

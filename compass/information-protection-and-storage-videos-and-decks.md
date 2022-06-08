@@ -26,4 +26,5 @@ For more information about information protection capabilities across Microsoft 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q9Eg]
 
 ## Next steps
+
 For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

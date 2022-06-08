@@ -1,13 +1,12 @@
 ---
 title: Storage, data, and encryption in Azure | Microsoft Docs
-description: How to secure data storage in Azure 
 ms.author: dansimp
 author: dansimp
+description: How to secure data storage in Azure 
 ms.date: 07/03/2019
 ms.topic: article
 ms.service: security
 ms.subservice: security-fundamentals
-
 ---
 
 # Storage, data, and encryption
@@ -89,8 +88,7 @@ they will not be able to because of the encryption.
 
 We recommend that you enable virtual disk encryption.
 
-An example of virtual disk encryption is [Azure Disk
-Encryption](/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
+An example of virtual disk encryption is [Azure Disk Encryption](/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
 
 ## Enable platform encryption services
 
@@ -108,5 +106,5 @@ that you enable that option.
 An example of service-specific service provider encryption is [Azure Storage Service encryption](/azure/storage/common/storage-service-encryption).
 
 ## Next steps
-For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).
 
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

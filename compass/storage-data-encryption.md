@@ -3,8 +3,6 @@ title: Storage, data, and encryption in Azure | Microsoft Docs
 ms.author: dansimp
 author: dansimp
 description: How to secure data storage in Azure 
-ms.author: dansimp
-author: dansimp
 ms.date: 07/03/2019
 ms.topic: article
 ms.service: security

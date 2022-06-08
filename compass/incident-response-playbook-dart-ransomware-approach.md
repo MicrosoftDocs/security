@@ -10,16 +10,17 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
 manager: dansimp
+localization_priority: Normal
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
+ms.custom: cxdef-zt-ransomware 
 ---
 
 # Microsoft DART ransomware approach and best practices
@@ -207,7 +208,7 @@ The riskiest configurations consist of running mission critical systems on legac
 
 DART recommends implementing the following security recommendations and best practices after each incident.
 
-- Ensure that best practices are in place for [email and collaboration solutions](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide) to make it more difficult for attackers to abuse them while allowing internal users to access external content easily and safely.
+- Ensure that best practices are in place for [email and collaboration solutions](/microsoft-365/security/office-365-security/defender-for-office-365) to make it more difficult for attackers to abuse them while allowing internal users to access external content easily and safely.
 
 - Follow [Zero Trust](https://www.microsoft.com/security/business/zero-trust) security best practices for remote access solutions to internal organizational resources.
 

@@ -12,14 +12,15 @@ f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
 manager: dansimp
+localization_priority: Normal
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
+ms.custom: cxdef-zt-ransomware 
 ---
 
 # Microsoft DART ransomware approach and best practices

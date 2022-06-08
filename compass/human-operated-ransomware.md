@@ -12,7 +12,7 @@ ms.collection:
 ms.custom: cxdef-zt-ransomware
 ms.topic: article
 localization_priority: Normal
-description: "Learn about ransomware prevention and methods to stop human-operated ransomware attacks, with links to configure your cyber security to help stop ransomware."
+description: Learn about ransomware prevention and methods to stop human-operated ransomware attacks, with links to configure your cyber security to help stop ransomware.
 ---
 
 # What is ransomware

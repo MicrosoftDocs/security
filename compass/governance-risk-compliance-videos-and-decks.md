@@ -66,4 +66,5 @@ The following videos provide guidance on governance, risk, and compliance. You c
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q3E9]
 
 ## Next steps
+
 For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

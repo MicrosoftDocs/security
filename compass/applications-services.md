@@ -537,4 +537,5 @@ learned and best practices have become clear:
     monitor for anomalous behavior and enable investigation of incidents.
 
 ## Next steps
+
 For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

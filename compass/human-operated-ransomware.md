@@ -1,6 +1,6 @@
 ---
-title: What is Human-operated ransomware
-keywords: ransomware, automated ransomware, automated ransomware
+title: "Human-operated ransomware"
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, extortionware, malicious encryption
 ms.author: dansimp
 author: dansimp
 manager: dansimp

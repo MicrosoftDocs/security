@@ -59,4 +59,5 @@ View slides for Top 10 Azure Security best practices.
 [PowerPoint](/microsoft-365/downloads/top-10-azure-security-best-practices.pptx) | [PDF](/microsoft-365/downloads/top-10-azure-security-best-practices.pdf)
 
 ## Next steps
+
 For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

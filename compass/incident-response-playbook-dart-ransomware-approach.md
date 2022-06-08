@@ -10,10 +10,10 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
 manager: dansimp
+localization_priority: Normal
 audience: ITPro
 ms.collection: 
   - M365-security-compliance

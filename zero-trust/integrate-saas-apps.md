@@ -18,12 +18,15 @@ This solution steps through the deployment of key layers for integrating Softwar
 To ensure that access and productivity is secure, implementation of SaaS needs to align with the Zero Trust security model which is based on these guiding principles:
 
 - Verify explicitly
+
 Always authenticate and authorize based on all available data points. This is where Zero Trust identity and device access policies are crucial to sign-in and ongoing validation.
 
 - Use least privilege access
+
 Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
 
 - Assume breach
+
 Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
 
 Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps your users interact with.

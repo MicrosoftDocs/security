@@ -11,9 +11,7 @@ ms.topic: conceptual
 # Integrate SaaS apps for Zero Trust with Microsoft 365 overview
 
 
-The way people work has dramatically evolved in the last couple of years. The widespread adoption of remote work has created a shift in the way people access corporate resources. This shift highlights the reliance of organizations on cloud-based apps to ensure business continuity. Software-as-a-service (SaaS)  plays a key role in fulfilling this requirement, ensuring that applications and resources are available and accessible from any device with an Internet connection.
-
-This solution steps through the deployment of key layers for integrating Software as a Service (SaaS) for Zero Trust with Microsoft 365. 
+The way people work has dramatically evolved in the last couple of years. The widespread adoption of remote work has created a shift in the way people access corporate resources. This shift highlights the reliance of organizations on cloud-based apps to ensure business continuity. Software-as-a-service (SaaS)  plays a key role in this workflow, ensuring that applications and resources are available and accessible from any device with an Internet connection.
 
 To ensure that access and productivity is secure, implementation of SaaS needs to align with the Zero Trust security model which is based on these guiding principles:
 
@@ -29,8 +27,10 @@ Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based
 
 Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
 
-Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps your users interact with.
 
+This solution steps through the deployment of key layers to integrate SaaS apps for Zero Trust with Microsoft 365. 
+
+Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps. You are likely already aware of the primary cloud apps used by your organization. Azure AD includes a gallery of apps you can add to your directory. You can also use Defender for Cloud App to discover additional cloud your users interact with. 
 
 
 ## Implementing the layers of protection for SaaS apps
@@ -38,9 +38,12 @@ Microsoft 365 helps you manage your SaaS applications giving you control and opt
 Protecting SaaS apps is a multi-layer process. 
 
 
-
-
-
-
 The following diagram illustrates building blocks to integrate SaaS apps that complies with the Zero Trust security model. The elements related to achieving this are numbered 3, 10, and 13. These are the layers of protection device admins will coordinate with other administrators to accomplish.
 
+
+ >[!div class="mx-imgBorder"]
+ >![Image of Zero Trust deployment guidance](media/saas-zt.png)
+
+
+
+:::image type="content" source="media/saas-zt.png" alt-text="Image of Zero Trust deployment guidance" lightbox="media/saas-zt.png":::

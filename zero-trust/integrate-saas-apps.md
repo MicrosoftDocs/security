@@ -27,18 +27,32 @@ To ensure that access and productivity is secure, implementation of SaaS needs t
 
     Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
 
-
-This solution steps through the deployment of key layers to integrate SaaS apps for Zero Trust with Microsoft 365. 
-
-Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps. You are likely already aware of the primary cloud apps used by your organization. Azure AD includes a gallery of apps you can add to your directory. You can also use Defender for Cloud App to discover additional cloud your users interact with. 
-
-
 ## Implementing the layers of protection for SaaS apps
 
 Protecting SaaS apps is a multi-layer process. 
 
 
-The following diagram illustrates building blocks to integrate SaaS apps that complies with the Zero Trust security model. The elements related to achieving this are numbered 3, 10, and 13. These are the layers of protection device admins will coordinate with other administrators to accomplish.
+The following diagram illustrates building blocks to integrate SaaS apps that aligns with the Zero Trust security model. The elements related to achieving this are numbered 3, 10, and 13. These are the layers of protection device admins will coordinate with other administrators to accomplish.
 
 
 :::image type="content" source="media/saas-zt.png" alt-text="Image of Zero Trust deployment guidance" lightbox="media/saas-zt.png":::
+
+For more information, see the [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust).
+
+
+## What's in this solution
+This solution steps through the deployment of key layers to integrate SaaS apps for Zero Trust with Microsoft 365. 
+
+Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps. You are likely already aware of the primary cloud apps used by your organization. Azure AD includes a gallery of apps you can add to your directory. You can also use Defender for Cloud App to discover additional cloud your users interact with. 
+
+
+:::image type="content" source="saas-zt-steps.png" alt-text="Image of Zero Trust SaaS guidance":::
+
+
+
+|&nbsp;|Step|Description|Licensing requirements|
+|---|---|---|---|
+|3|Add SaaS apps to Azure Active Directory |W|E3, E5, F1, F3, F5|
+|10|Create Defender for Cloud apps policies ||E3, E5, F1, F3, F5|
+|13|Deploy information protection for SaaS apps |Y.|E3, E5, F3, F5|
+

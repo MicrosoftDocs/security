@@ -46,7 +46,7 @@ This solution steps through the deployment of key layers to integrate SaaS apps 
 Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps. You are likely already aware of the primary cloud apps used by your organization. Azure AD includes a gallery of apps you can add to your directory. You can also use Defender for Cloud App to discover additional cloud your users interact with. 
 
 
-:::image type="content" source="saas-zt-steps.png" alt-text="Image of Zero Trust SaaS guidance":::
+:::image type="content" source="media/saas-zt-steps.png" alt-text="Image of Zero Trust SaaS guidance" :::
 
 
 

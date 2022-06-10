@@ -17,15 +17,15 @@ To ensure that access and productivity is secure, implementation of SaaS needs t
 
 - Verify explicitly
 
-Always authenticate and authorize based on all available data points. This is where Zero Trust identity and device access policies are crucial to sign-in and ongoing validation.
+    Always authenticate and authorize based on all available data points. This is where Zero Trust identity and device access policies are crucial to sign-in and ongoing validation.
 
 - Use least privilege access
 
-Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
+    Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
 
 - Assume breach
 
-Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
+    Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
 
 
 This solution steps through the deployment of key layers to integrate SaaS apps for Zero Trust with Microsoft 365. 
@@ -39,11 +39,6 @@ Protecting SaaS apps is a multi-layer process.
 
 
 The following diagram illustrates building blocks to integrate SaaS apps that complies with the Zero Trust security model. The elements related to achieving this are numbered 3, 10, and 13. These are the layers of protection device admins will coordinate with other administrators to accomplish.
-
-
- >[!div class="mx-imgBorder"]
- >![Image of Zero Trust deployment guidance](media/saas-zt.png)
-
 
 
 :::image type="content" source="media/saas-zt.png" alt-text="Image of Zero Trust deployment guidance" lightbox="media/saas-zt.png":::

@@ -68,11 +68,3 @@ The steps in this solutions are:
 3. [Deploy information protection for SaaS apps]().
 
 
-
-
-|&nbsp;|Step|Description|Licensing requirements|
-|---|---|---|---|
-|3|Add SaaS apps to Azure Active Directory ||E3, E5, F1, F3, F5|
-|10|Create Defender for Cloud apps policies ||E3, E5, F1, F3, F5|
-|13|Deploy information protection for SaaS apps ||E3, E5, F3, F5|
-

@@ -46,141 +46,141 @@
   expanded: false
   items:
     - name: Overview
-      href: /microsoft-365/security/microsoft-365-zero-trust?view=o365-worldwide
+      href: /microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Deploy your identity infrastructure for Microsoft 365
       items:
         - name: Overview
-          href: /microsoft-365/enterprise/deploy-identity-solution-overview?view=o365-worldwide
+          href: /microsoft-365/enterprise/deploy-identity-solution-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
         - name: Step 1. Determine your identity model
-          href: /microsoft-365/enterprise/deploy-identity-solution-identity-model?view=o365-worldwide
+          href: /microsoft-365/enterprise/deploy-identity-solution-identity-model?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
         - name: Step 2. Protect your privileged accounts
-          href: /microsoft-365/enterprise/protect-your-global-administrator-accounts?view=o365-worldwide
+          href: /microsoft-365/enterprise/protect-your-global-administrator-accounts?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
         - name: Step 3. Protect your user accounts
-          href: /microsoft-365/enterprise/microsoft-365-secure-sign-in?view=o365-worldwide
+          href: /microsoft-365/enterprise/microsoft-365-secure-sign-in?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
         - name: Step 4. Deploy your identity model
           items:
             - name: Cloud-only identity
-              href: /microsoft-365/enterprise/cloud-only-identities?view=o365-worldwide
+              href: /microsoft-365/enterprise/cloud-only-identities?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Hybrid identity
               items: 
               - name: Prepare for directory synchronization
-                href: /microsoft-365/enterprise/prepare-for-directory-synchronization?view=o365-worldwide
+                href: /microsoft-365/enterprise/prepare-for-directory-synchronization?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
               - name: Prepare a non-routable domain for directory synchronization
-                href: /microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?view=o365-worldwide
+                href: /microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
               - name: Set up directory synchronization
-                href: /microsoft-365/enterprise/set-up-directory-synchronization?view=o365-worldwide
+                href: /microsoft-365/enterprise/set-up-directory-synchronization?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Zero Trust identity and device configurations
       items: 
       - name: Overview
-        href: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations?view=o365-worldwide
+        href: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Prerequisite work
-        href: /microsoft-365/security/office-365-security/identity-access-prerequisites?view=o365-worldwide
+        href: /microsoft-365/security/office-365-security/identity-access-prerequisites?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Common identity and device access policies
-        href: /microsoft-365/security/office-365-security/identity-access-policies?view=o365-worldwide
+        href: /microsoft-365/security/office-365-security/identity-access-policies?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Policies for guest and external users
-        href: /microsoft-365/security/office-365-security/identity-access-policies-guest-access?view=o365-worldwide
+        href: /microsoft-365/security/office-365-security/identity-access-policies-guest-access?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Recommended Teams access policies
-        href: /microsoft-365/security/office-365-security/teams-access-policies?view=o365-worldwide
+        href: /microsoft-365/security/office-365-security/teams-access-policies?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Recommended Exchange access policies
-        href: /microsoft-365/security/office-365-security/secure-email-recommended-policies?view=o365-worldwide
+        href: /microsoft-365/security/office-365-security/secure-email-recommended-policies?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Recommended SharePoint access policies
-        href: /microsoft-365/security/office-365-security/sharepoint-file-access-policies?view=o365-worldwide
+        href: /microsoft-365/security/office-365-security/sharepoint-file-access-policies?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Recommended Defender for Cloud Apps policies for SaaS apps
-        href: /microsoft-365/security/office-365-security/mcas-saas-access-policies?view=o365-worldwide
+        href: /microsoft-365/security/office-365-security/mcas-saas-access-policies?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Continuous access evaluation
-        href: /microsoft-365/security/office-365-security/microsoft-365-continuous-access-evaluation?view=o365-worldwide
+        href: /microsoft-365/security/office-365-security/microsoft-365-continuous-access-evaluation?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Manage endpoints with Intune and Microsoft 365
       items:
       - name: Overview
-        href: /microsoft-365/solutions/manage-devices-with-intune-overview?view=o365-worldwide
+        href: /microsoft-365/solutions/manage-devices-with-intune-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 1. Implement App Protection policies
-        href: /microsoft-365/solutions/manage-devices-with-intune-app-protection?view=o365-worldwide
+        href: /microsoft-365/solutions/manage-devices-with-intune-app-protection?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 2. Enroll devices into management
-        href: /microsoft-365/solutions/manage-devices-with-intune-enroll?view=o365-worldwide
+        href: /microsoft-365/solutions/manage-devices-with-intune-enroll?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 3. Set up compliance policies
-        href: /microsoft-365/solutions/manage-devices-with-intune-compliance-policies?view=o365-worldwide
+        href: /microsoft-365/solutions/manage-devices-with-intune-compliance-policies?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 4. Require healthy and compliant devices
-        href: /microsoft-365/solutions/manage-devices-with-intune-require-compliance?view=o365-worldwide
+        href: /microsoft-365/solutions/manage-devices-with-intune-require-compliance?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 5. Deploy device profiles
-        href: /microsoft-365/solutions/manage-devices-with-intune-configuration-profiles?view=o365-worldwide
+        href: /microsoft-365/solutions/manage-devices-with-intune-configuration-profiles?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 6. Monitor device risk and compliance to security baselines
-        href: /microsoft-365/solutions/manage-devices-with-intune-monitor-risk?view=o365-worldwide
+        href: /microsoft-365/solutions/manage-devices-with-intune-monitor-risk?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 7. Implement data loss prevention (DLP) with information protection capabilities
-        href: /microsoft-365/solutions/manage-devices-with-intune-dlp-mip?view=o365-worldwide
+        href: /microsoft-365/solutions/manage-devices-with-intune-dlp-mip?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Evaluate, pilot, and deploy Microsoft 365 Defender
       items: 
         - name: Overview
-          href: /microsoft-365/security/defender/eval-overview?view=o365-worldwide
+          href: /microsoft-365/security/defender/eval-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
         - name: Step 1. Create the eval environment
-          href: /microsoft-365/security/defender/eval-create-eval-environment?view=o365-worldwide
+          href: /microsoft-365/security/defender/eval-create-eval-environment?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
         - name: Step 2. Defender for Identity
           items:
             - name: Overview
-              href: /microsoft-365/security/defender/eval-defender-identity-overview?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-identity-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Review architecture requirements
-              href: /microsoft-365/security/defender/eval-defender-identity-architecture?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-identity-architecture?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Enable the evaluation 
-              href: /microsoft-365/security/defender/eval-defender-identity-enable-eval?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-identity-enable-eval?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Pilot Defender for Identity
-              href: /microsoft-365/security/defender/eval-defender-identity-pilot?view=o365-worldwide                     
+              href: /microsoft-365/security/defender/eval-defender-identity-pilot?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json                     
         - name: Step 3. Defender for Office 365
           items:
             - name: Overview
-              href: /microsoft-365/security/defender/eval-defender-office-365-overview?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-office-365-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Review architecture requirements
-              href: /microsoft-365/security/defender/eval-defender-office-365-architecture?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-office-365-architecture?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Enable the evaluation 
-              href: /microsoft-365/security/defender/eval-defender-office-365-enable-eval?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-office-365-enable-eval?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Pilot Defender for Office
-              href: /microsoft-365/security/defender/eval-defender-office-365-pilot?view=o365-worldwide        
+              href: /microsoft-365/security/defender/eval-defender-office-365-pilot?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json       
         - name: Step 4. Defender for Endpoint
           items: 
             - name: Overview
-              href: /microsoft-365/security/defender/eval-defender-endpoint-overview?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-endpoint-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Review architecture requirements
-              href: /microsoft-365/security/defender/eval-defender-endpoint-architecture?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-endpoint-architecture?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Enable the evaluation
-              href: /microsoft-365/security/defender/eval-defender-endpoint-enable-eval?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-endpoint-enable-eval?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Pilot Defender for Endpoint
-              href: /microsoft-365/security/defender/eval-defender-endpoint-pilot?view=o365-worldwide         
+              href: /microsoft-365/security/defender/eval-defender-endpoint-pilot?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json         
         - name: Step 5. Microsoft Defender for Cloud Apps
           items:
             - name: Overview
-              href: /microsoft-365/security/defender/eval-defender-mcas-overview?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-mcas-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Review architecture requirements
-              href: /microsoft-365/security/defender/eval-defender-mcas-architecture?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-mcas-architecture?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Enable the evaluation 
-              href: /microsoft-365/security/defender/eval-defender-mcas-enable-eval?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-mcas-enable-eval?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Pilot Microsoft Defender for Cloud Apps
-              href: /microsoft-365/security/defender/eval-defender-mcas-pilot?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-mcas-pilot?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
         - name: Step 6. Investigate and respond    
           items:
             - name: Overview
-              href: /microsoft-365/security/defender/eval-defender-investigate-respond?view=o365-worldwide
+              href: /microsoft-365/security/defender/eval-defender-investigate-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
             - name: Simulate an attack
-              href: /microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack?view=o365-worldwide  
+              href: /microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json  
             - name: Try capabilities
-              href: /microsoft-365/security/defender/eval-defender-investigate-respond-additional?view=o365-worldwide    
+              href: /microsoft-365/security/defender/eval-defender-investigate-respond-additional?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json    
         - name: Step 7. Promote the trial to production
-          href: /microsoft-365/security/defender/eval-defender-promote-to-production?view=o365-worldwide
+          href: /microsoft-365/security/defender/eval-defender-promote-to-production?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Deploy a Microsoft Information Protection solution 
-      href: /microsoft-365/compliance/information-protection-solution?view=o365-worldwide
+      href: /microsoft-365/compliance/information-protection-solution?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Deploy information protection for data privacy regulations
       items: 
       - name: Overview
-        href: /microsoft-365/solutions/information-protection-deploy?view=o365-worldwide
+        href: /microsoft-365/solutions/information-protection-deploy?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Plan
-        href: /microsoft-365/solutions/information-protection-deploy-assess?view=o365-worldwide
+        href: /microsoft-365/solutions/information-protection-deploy-assess?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Track
-        href: /microsoft-365/solutions/information-protection-deploy-compliance?view=o365-worldwide
+        href: /microsoft-365/solutions/information-protection-deploy-compliance?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Prevent
-        href: /microsoft-365/solutions/information-protection-deploy-identity-device-threat?view=o365-worldwide
+        href: /microsoft-365/solutions/information-protection-deploy-identity-device-threat?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Protect
-        href: /microsoft-365/solutions/information-protection-deploy-protect-information?view=o365-worldwide
+        href: /microsoft-365/solutions/information-protection-deploy-protect-information?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Retain
-        href: /microsoft-365/solutions/information-protection-deploy-govern?view=o365-worldwide
+        href: /microsoft-365/solutions/information-protection-deploy-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Investigate
-        href: /microsoft-365/solutions/information-protection-deploy-monitor-respond?view=o365-worldwide
+        href: /microsoft-365/solutions/information-protection-deploy-monitor-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
 
 - name: Integrate SaaS apps for Zero Trust with Microsoft 365 
   expanded: false
@@ -193,6 +193,7 @@
       href: create-policies.md
     - name: Step 3. Deploy information protection for SaaS Apps
       href: deploy-information-protection-saas.md
+        
 - name: Technology partner integrations
   expanded: false
   items: 

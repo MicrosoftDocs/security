@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 The widespread adoption of remote work has created a shift in the way people access corporate resources. This shift highlights the reliance of organizations on cloud-based apps to ensure business continuity. Software-as-a-service (SaaS)  plays a key role in ensuring that applications and resources are available and accessible from any device with an Internet connection.
 
-While SaaS apps can provide this convenience, the large amount of sensitive data and the flexibility it affords users can also potentially pose a security risk.  
+While SaaS apps can provide this convenience, the large amount of sensitive data and the flexibility it affords users can potentially pose a security risk.  
 
 To ensure that access and productivity is secure, implementation of SaaS needs to align with the Zero Trust security model which is based on these guiding principles:
 

@@ -39,6 +39,17 @@ The following diagram illustrates building blocks to integrate SaaS apps that al
 
 :::image type="content" source="media/saas-zt.png" alt-text="Image of Zero Trust deployment guidance" lightbox="media/saas-zt.png":::
 
+In this illustration:
+
+
+|&nbsp;|Step|Description|Licensing requirements|
+|---|---|---|---|
+|3|Add SaaS apps to Azure Active Directory ||E3, E5, F1, F3, F5|
+|10|Create Defender for Cloud apps policies ||E3, E5, F1, F3, F5|
+|13|Deploy information protection for SaaS apps ||E3, E5, F3, F5|
+
+
+
 For more information, see the [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust).
 
 
@@ -49,6 +60,13 @@ Microsoft 365 helps you manage your SaaS applications giving you control and opt
 
 
 :::image type="content" source="media/saas-zt-steps.png" alt-text="Image of Zero Trust SaaS guidance" :::
+
+
+The steps in this solutions are:
+1. [Add SaaS apps in Azure Active Directory]().
+2. [Create Defender for Cloud Apps policies]().
+3. [Deploy information protection for SaaS apps]().
+
 
 
 

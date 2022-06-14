@@ -8,7 +8,7 @@ ms.author: macapara
 ms.topic: conceptual
 ---
 
-# Integrate SaaS apps for Zero Trust with Microsoft 365 overview
+# Integrate SaaS apps for Zero Trust with Microsoft 365 
 
 
 The widespread adoption of remote work has created a shift in the way people access corporate resources. This shift highlights the reliance of organizations on cloud-based apps to ensure business continuity. Software-as-a-service (SaaS)  plays a key role in ensuring that applications and resources are available and accessible from any device with an Internet connection.

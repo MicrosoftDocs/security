@@ -10,10 +10,10 @@ ms.topic: conceptual
 
 # Integrate SaaS apps for Zero Trust with Microsoft 365 
 
-The widespread increase in cloud adoption is transforming how organizations achieve business outcomes.  This shift highlights the reliance of organizations on cloud-based apps and consequently, increasing the demand for cloud-based services such as Software as a service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), and app development platforms. 
+The widespread increase in cloud adoption is transforming how organizations achieve business outcomes.  This shift highlights the increasing reliance of companies on cloud-based apps. Consequently, there is an acceleration of demand for cloud-based services such as Software as a service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), and app development platforms. 
 
 
-While a multicloud environment can help organizations reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure that resources hosted in the cloud are protected. 
+While a multicloud environment can help reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure to ensure that resources hosted in the cloud are protected. 
 
 This solution guides you on using Microsoft 365 to help manage your digital estate of cloud apps, with a focus on SaaS. SaaS apps play a key role in ensuring that applications and resources are available and accessible from any device with an Internet connection.
 
@@ -46,7 +46,7 @@ In this illustration:
 
 |&nbsp;|Step|Description|Licensing requirements|
 |---|---|---|---|
-|1|Add SaaS apps to Azure Active Directory |Add applications to Azure Active Directory (Azure AD) so that authorized users can securely access it. Many types of applications can be registered with Azure AD|E3, E5, F1, F3, F5|
+|1|Add SaaS apps to Azure Active Directory |Add applications to Azure Active Directory (Azure AD) so that authorized users can securely access it. Many types of applications can be registered with Azure AD.|E3, E5, F1, F3, F5|
 |2|Create Defender for Cloud apps policies |You want to make sure that policies are in place to ensure that only authorized users and specific conditions are met before users are able to access resources.   |E3, E5, F1, F3, F5|
 |3|Deploy information protection for SaaS apps | Organizations need to protect proprietary information, ensure that information protection is in place so that sensitive data is protected.|E3, E5, F3, F5|
 
@@ -58,7 +58,7 @@ For more information, see the [Microsoft 365 Zero Trust deployment plan](/micros
 ## What's in this solution
 This solution steps through the deployment of key layers to integrate SaaS apps for Zero Trust with Microsoft 365. 
 
-Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps. You are likely already aware of the primary cloud apps used by your organization. Azure AD includes a gallery of apps you can add to your directory. You can also use Defender for Cloud App to discover additional cloud your users interact with. See [Discover and assess cloud apps](/defender-cloud-apps/best-practices#discover-and-assess-cloud-apps) for more information.  
+Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps. You are likely already aware of the primary cloud apps used by your organization. Azure AD includes a gallery of apps you can add to your directory. You can also use Defender for Cloud App to discover additional cloud your users interact with. For more information, see [Discover and assess cloud apps](/defender-cloud-apps/best-practices#discover-and-assess-cloud-apps). After knowing your digital estate, you'll need to make sure that only authorized users and that certain conditions are met before they are accessed and that the information is properly protected.
 
 
 :::image type="content" source="media/saas-zt-steps.png" alt-text="Image of Zero Trust SaaS guidance":::

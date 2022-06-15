@@ -10,10 +10,12 @@ ms.topic: conceptual
 
 # Integrate SaaS apps for Zero Trust with Microsoft 365 
 
+The widespread increase in cloud adoption is transforming how organizations achieve business outcomes.  This shift highlights the reliance of organizations on cloud-based apps and consequently, increasing the demand for cloud-based services such as Software as a service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), and app development platforms. 
 
-The widespread adoption of remote work has created a shift in the way people access corporate resources. This shift highlights the reliance of organizations on cloud-based apps to ensure business continuity. Software-as-a-service (SaaS)  plays a key role in ensuring that applications and resources are available and accessible from any device with an Internet connection.
 
-While SaaS apps can provide this convenience, the large amount of sensitive data and the flexibility it affords users can potentially pose a security risk.  
+While a multi-cloud environment can help organizations reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. 
+
+This solution guides you on using Microsoft 365 to help manage your digital estate of cloud apps, with a focus on SaaS. SaaS apps play a key role in ensuring that applications and resources are available and accessible from any device with an Internet connection.
 
 To ensure that access and productivity is secure, implementation of SaaS needs to align with the Zero Trust security model which is based on these guiding principles:
 
@@ -34,7 +36,7 @@ To ensure that access and productivity is secure, implementation of SaaS needs t
 Protecting SaaS apps is a multi-layer process. 
 
 
-The following diagram illustrates building blocks to integrate SaaS apps that aligns with the Zero Trust security model. The elements related to achieving this are numbered 3, 10, and 13. These are the layers of protection device admins will coordinate with other administrators to accomplish.
+The following diagram illustrates building blocks to integrate SaaS apps that aligns with the Zero Trust security model. The elements related to achieving this are numbered 1, 2, and 3. These are the layers of protection device admins will coordinate with other administrators to accomplish.
 
 
 :::image type="content" source="media/saas-zt.png" alt-text="Image of Zero Trust deployment guidance" lightbox="media/saas-zt.png":::

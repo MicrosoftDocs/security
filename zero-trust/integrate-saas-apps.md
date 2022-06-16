@@ -77,7 +77,7 @@ Microsoft 365 helps you manage your SaaS applications giving you control and opt
 
 
 The steps in this solutions are:
-1. [Add SaaS apps in Azure Active Directory]().
+1. [Add SaaS apps in Azure Active Directory](add-saas-apps.md).
 2. [Create Defender for Cloud Apps policies]().
 3. [Deploy information protection for SaaS apps]().
 

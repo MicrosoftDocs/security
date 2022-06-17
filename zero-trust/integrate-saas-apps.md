@@ -82,3 +82,13 @@ The steps in this solutions are:
 3. [Deploy information protection for SaaS apps]().
 
 
+## Learning for administrators
+
+The following resources help administrators learn concepts about SaaS. 
+
+**[Design a strategy for securing PaaS, IaaS, and SaaS services](/learn/modules/design-strategy-for-secure-paas-iaas-saas-services/)**<br>
+Description: Learn how to design a cybersecurity strategy which will secure cloud services in the SaaS, PaaS and IaaS service models.
+
+> [!div class="nextstepaction"]
+> [Start >](/learn/modules/design-strategy-for-secure-paas-iaas-saas-services/)
+

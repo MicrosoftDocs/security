@@ -1,7 +1,7 @@
 ---
 title: Integrate SaaS apps for Zero Trust with Microsoft 365
 description: Learn how to integrate SaaS apps for Zero Trust with Microsoft 365
-ms.date: 06/08/2022
+ms.date: 06/06/2022
 ms.service: security
 author: mjcaparas
 ms.author: macapara
@@ -10,10 +10,10 @@ ms.topic: conceptual
 
 # Integrate SaaS apps for Zero Trust with Microsoft 365 
 
-The widespread increase in cloud adoption is transforming how organizations achieve business outcomes.  This shift highlights the increasing reliance of companies on cloud-based apps. Consequently, there is an acceleration of demand for cloud-based services such as Software as a service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), and app development platforms. 
+The widespread increase in cloud adoption is transforming how organizations achieve business outcomes.  This shift highlights the  reliance of companies on cloud-based apps. Consequently, there is an accelerated demand for cloud-based services such as Software as a service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), and app development platforms. 
 
 
-While a multicloud environment can help reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure to ensure that resources hosted in the cloud are protected. 
+While a multicloud environment can help reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure that resources hosted in the cloud are protected. 
 
 This solution guides you on using Microsoft 365 to help manage your digital estate of cloud apps, with a focus on SaaS. SaaS apps play a key role in ensuring that applications and resources are available and accessible from any device with an Internet connection.
 
@@ -23,7 +23,7 @@ To ensure that access and productivity is secure, implementation of SaaS needs t
 
     Always authenticate and authorize based on all available data points. This is where Zero Trust identity and device access policies are crucial to sign-in and ongoing validation.
 
-- Use least privilege access
+- Use least privileged access
 
     Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
 
@@ -87,8 +87,12 @@ The steps in this solutions are:
 The following resources help administrators learn concepts about SaaS. 
 
 **[Design a strategy for securing PaaS, IaaS, and SaaS services](/learn/modules/design-strategy-for-secure-paas-iaas-saas-services/)**<br>
-Description: Learn how to design a cybersecurity strategy which will secure cloud services in the SaaS, PaaS and IaaS service models.
+Description: Learn how to design a cybersecurity strategy which will secure cloud services in the SaaS, PaaS and IaaS service models.<br>
+1 hr 42 min - 13 units
 
 > [!div class="nextstepaction"]
 > [Start >](/learn/modules/design-strategy-for-secure-paas-iaas-saas-services/)
+
+
+
 

@@ -39,7 +39,7 @@ Microsoft 365 capabilities help you bring your SaaS apps into management to meet
 In the illustration:
 - A collection of SaaS apps is pictured.
 - You can add these SaaS apps to Azure Active Directory and include these apps in the scope of your multi-factor authentication and conditional access policies.
-- Using Microsoft Cloud App Security, you can discover other cloud apps your organization uses. You can sanction apps and apply session controls. Of course, you can add newly discovered cloud apps to Azure AD to enforce multi-factor authentication and other policies.
+- Using Microsoft Defender for Cloud Apps, you can discover other cloud apps your organization uses. You can approve apps and apply session controls. Of course, you can add newly discovered cloud apps to Azure AD to enforce multi-factor authentication and other policies.
 - Microsoft Purview Information Protection capabilities can be extended out to these cloud apps to discover sensitive data, protect data, and prevent data loss.
 
 
@@ -59,7 +59,7 @@ In this illustration:
 |&nbsp;|Step|Description|Licensing requirements|
 |---|---|---|---|
 |1|Add SaaS apps to Azure Active Directory |Add applications to Azure Active Directory (Azure AD) so that authorized users can securely access it. Many types of applications can be registered with Azure AD.|E3, E5, F1, F3, F5|
-|2|Create Defender for Cloud apps policies |You want to make sure that policies are in place to ensure that only authorized users and specific conditions are met before users are able to access resources.   |E3, E5, F1, F3, F5|
+|2|Create Microsoft Defender for Cloud Apps policies |You want to make sure that policies are in place to ensure that only authorized users and specific conditions are met before users are able to access resources.   |E3, E5, F1, F3, F5|
 |3|Deploy information protection for SaaS apps | Organizations need to protect proprietary information, ensure that information protection is in place so that sensitive data is protected.|E3, E5, F3, F5|
 
 
@@ -70,7 +70,7 @@ For more information, see the [Microsoft 365 Zero Trust deployment plan](/micros
 ## What's in this solution
 This solution steps through the deployment of key layers to integrate SaaS apps for Zero Trust with Microsoft 365. 
 
-Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps. You're likely already aware of the primary cloud apps used by your organization. Azure AD includes a gallery of apps you can add to your directory. You can also use Defender for Cloud App to discover other cloud your users interact with. For more information, see [Discover and assess cloud apps](/defender-cloud-apps/best-practices#discover-and-assess-cloud-apps). After knowing your digital estate, you'll need to make sure that only authorized users and that certain conditions are met before they're accessed and that the information is properly protected.
+Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps. You're likely already aware of the primary cloud apps used by your organization. Azure AD includes a gallery of apps you can add to your directory. You can also use Microsoft Defender for Cloud Apps to discover other cloud your users interact with. For more information, see [Discover and assess cloud apps](/defender-cloud-apps/best-practices#discover-and-assess-cloud-apps). After knowing your digital estate, you'll need to make sure that only authorized users and that certain conditions are met before they're accessed and that the information is properly protected.
 
 
 :::image type="content" source="media/saas-zt-steps.png" alt-text="Image of Zero Trust SaaS guidance":::
@@ -78,7 +78,7 @@ Microsoft 365 helps you manage your SaaS applications giving you control and opt
 
 The steps in this solutions are:
 1. [Add SaaS apps in Azure Active Directory](add-saas-apps.md).
-2. [Create Defender for Cloud Apps policies]().
+2. [Create Microsoft Defender for Cloud Apps policies]().
 3. [Deploy information protection for SaaS apps]().
 
 

@@ -5,11 +5,11 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: tutorial
-ms.service: o365-seccomp
+ms.service: security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "Learn more about security principles and recommendations for modernizing security in your organization."
+description: "Learn how to protect sensitive information wherever it goes with automatic classification and persistent encryption across devices."
 ---
 
 # CISO Workshop Module 5: Information Protection

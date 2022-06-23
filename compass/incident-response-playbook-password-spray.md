@@ -20,6 +20,7 @@ ms.collection:
   - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
+ms.custom: cxdef-zt-ransomware 
 ---
 
 # Password spray investigation
@@ -128,7 +129,7 @@ For more information, see [security solution integrations using the Microsoft Gr
 
 You can also use the Splunk platform to set up alerts.
 
-- Watch this video tutorial on how to create [Splunk alerts](https://www.splunk.com/view/SP-CAAAGYG)
+- Watch this video tutorial on how to create [Splunk alerts](https://www.splunk.com/en_us/resources/videos/splunk-tutorial-creating-alerts-in-splunk-enterprise-6.html)
 - For more information, see [Splunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview)
 
 ## Workflow
@@ -527,7 +528,7 @@ Implement password protection on Azure AD and on-premises by enabling the custom
 
 *Enabling password protection*
 
-For more information, see [how to defend against password spray attacks](https://www.microsoft.com/en-u/microsoft-365/blog/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/).
+For more information, see [how to defend against password spray attacks](https://www.microsoft.com/en-us/microsoft-365/blog/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/).
 
 ### Tagging IP address
 

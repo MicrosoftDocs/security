@@ -1,8 +1,8 @@
 ---
-title: "What is Human-operated ransomware"
-keywords:
-ms.author: josephd
-author: JoeDavies-MSFT
+title: "Human-operated ransomware"
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, extortionware, malicious encryption
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: Admin
 ms.prod: m365-security
@@ -12,7 +12,7 @@ ms.collection:
 ms.custom: cxdef-zt-ransomware
 ms.topic: article
 localization_priority: Normal
-description: "Learn about ransomware prevention and methods to stop human-operated ransomware attacks, with links to configure your cyber security to help stop ransomware."
+description: Learn about ransomware prevention and methods to stop human-operated ransomware attacks, with links to configure your cyber security to help stop ransomware.
 ---
 
 # What is ransomware

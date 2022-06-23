@@ -178,7 +178,7 @@ msroot\@microsoft.com to have the EKU status set to "NotBefore."
 
 
 
-|  | WebTrust for CA v2.1 | SSL Baseline with Network Security v2.3 | Extended Validation SSL v1.6.2 | Extended Validation Code Signing v1.4.1 | Publicly Trusted Code Signing Certificates v1.0.1 |
+| Criteria | WebTrust for CA v2.1 | SSL Baseline with Network Security v2.3 | Extended Validation SSL v1.6.2 | Extended Validation Code Signing v1.4.1 | Publicly Trusted Code Signing Certificates v1.0.1 |
 | --- | --- | --- | --- | --- | --- |
 | Server Authentication (Non-EV) | X | X |  |  |  |
 | Server Authentication (non-EV) and Client Authentication only | X | X |  |  |  |
@@ -199,7 +199,7 @@ Note 1: If a CA uses an ETSI-based audit, it must perform a **full**
 audit annually, and Microsoft will not accept surveillance audits. 
 Note 2: All ETSI audits statements must be audited against the CA/Browser Forum requirements and compliance to these requirements must be stated in the audit letter. The ACAB'c [https://acab-c.com] has provided guidance that meets the Microsoft requirements.  
 
-| | EN 319 411-1: DVCP, OVCP or PTC-BR policies | EN 319 411-1: EVCP policy | EN 319 411-2: QCP-w policy (based on EN 319 411-1, EVCP) | EN 319 411-1: LCP, NCP, NCP+ policies | EN 319 411-2: QCP-n, QCP-n-qscd, QCP-l, QCP-l-qscd policies (based on EN 319 411-1, NCP/NCP+)  |
+| Criteria | EN 319 411-1: DVCP, OVCP or PTC-BR policies | EN 319 411-1: EVCP policy | EN 319 411-2: QCP-w policy (based on EN 319 411-1, EVCP) | EN 319 411-1: LCP, NCP, NCP+ policies | EN 319 411-2: QCP-n, QCP-n-qscd, QCP-l, QCP-l-qscd policies (based on EN 319 411-1, NCP/NCP+)  |
 | --- | --- | --- | --- | --- | --- |
 | Server Authentication (Non-EV) | X |  |  |  |  |
 | Server Authentication (non-EV) and Client Authentication only | X |  |  |  |  |

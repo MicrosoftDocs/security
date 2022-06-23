@@ -15,7 +15,7 @@ Administrative accounts with privileged access to the environment (and associate
 
 See the [Administration](critical-impact-accounts.md) topic for more information.
 
-The following videos provide guidance on administration. You can also download the [PowerPoint slides](https://docs.microsoft.com/microsoft-365/downloads/security-compass-presentation.pptx) associated with these videos.
+The following videos provide guidance on administration. You can also download the [PowerPoint slides]/microsoft-365/downloads/security-compass-presentation.pptx) associated with these videos.
 
 ## Part 1: Introduction (05:40)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qbw1]
@@ -48,4 +48,4 @@ The following videos provide guidance on administration. You can also download t
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qlSH]
 
 ## Next steps
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

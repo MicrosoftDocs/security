@@ -43,7 +43,7 @@ There's a clear mapping from the goals we've described in the [infrastructure de
 |Harden configuration | Assigning security initiatives to subscriptions, and reviewing the secure score, leads you to the [hardening recommendations](/azure/security-center/recommendations-reference) built into Defender for Cloud. Defender for Cloud periodically analyzes the compliance status of resources to identify potential security misconfigurations and weaknesses. It then provides recommendations on how to remediate those issues.    |
 |Employ hardening mechanisms | As well as one-time fixes to security misconfigurations, Defender for Cloud offers tools to ensure continued hardening such as:<br>[Just-in-time (JIT) virtual machine (VM) access](/azure/security-center/just-in-time-explained)<br>[Adaptive network hardening](/azure/security-center/security-center-adaptive-network-hardening)<br>[Adaptive application controls](/azure/security-center/security-center-adaptive-application). |
 |Set up threat detection  | Defender for Cloud offers an integrated cloud workload protection platform (CWPP), Microsoft Defender for Cloud.<br>Microsoft Defender for Cloud provides advanced, intelligent, protection of Azure and hybrid resources and workloads.<br>One of the Microsoft Defender plans, Microsoft Defender for servers, includes a native integration with [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/).<br>Learn more in [Introduction to Microsoft Defender for Cloud](/azure/security-center/azure-defender). |
-|Automatically block suspicious behavior | Many of the hardening recommendations in Defender for Cloud offer a *deny* option. This feature lets you prevent the creation of resources that don't satisfy defined hardening criteria. Learn more in [Prevent misconfigurations with Enforce/Deny recommendations](/azure/security-center/prevent-misconfigurations).  |
+|Automatically block suspicious behavior | Many of the hardening recommendations in Defender for Cloud offer a *deny* option. This feature lets you prevent the creation of resources that don't satisfy defined hardening criteria. Learn more in [Prevent misconfigurations with Enforce/Deny recommendations](/azure/defender-for-cloud/prevent-misconfigurations).  |
 |Automatically flag suspicious behavior | Microsoft Defender for Cloud's security alerts are triggered by advanced detections. Defender for Cloud prioritizes and lists the alerts, along with the information needed for you to quickly investigate the problem. Defender for Cloud also provides detailed steps to help you remediate attacks. For a full list of the available alerts, see [Security alerts - a reference guide](/azure/security-center/alerts-reference).|
 |||
 
@@ -79,17 +79,17 @@ There are two approaches to ensuring your Defender for Cloud data is represented
 
 - **Sentinel connectors** - Microsoft Sentinel includes built-in connectors for Microsoft Defender for Cloud at the subscription and tenant levels:
 
-  - [Stream alerts to Microsoft Sentinel at the subscription level](/azure/sentinel/connect-azure-security-center.md)
+  - [Stream alerts to Microsoft Sentinel at the subscription level](/azure/sentinel/connect-azure-security-center)
   - [Connect all subscriptions in your tenant to Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/azure-security-center-auto-connect-to-sentinel/ba-p/1387539)
 
   > [!TIP]
-  > Learn more in [Connect security alerts from Microsoft Defender for Cloud](/azure/sentinel/connect-azure-security-center.md).
+  > Learn more in [Connect security alerts from Microsoft Defender for Cloud](/azure/sentinel/connect-azure-security-center).
 
 - **Stream your audit logs** - An alternative way to investigate Defender for Cloud alerts in Microsoft Sentinel is to stream your audit logs into Microsoft Sentinel:
 
-  - [Connect Windows security events](/azure/sentinel/connect-windows-security-events.md)
-  - [Collect data from Linux-based sources using Syslog](/azure/sentinel/connect-syslog.md)
-  - [Connect data from Azure Activity log](/azure/sentinel/connect-azure-activity.md)
+  - [Connect Windows security events](/azure/sentinel/connect-windows-security-events)
+  - [Collect data from Linux-based sources using Syslog](/azure/sentinel/connect-syslog)
+  - [Connect data from Azure Activity log](/azure/sentinel/connect-azure-activity)
 
 #### Stream alerts with Microsoft Graph Security API
 

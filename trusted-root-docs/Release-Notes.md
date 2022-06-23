@@ -22,9 +22,23 @@ Please note, the changes listed are accurate at the time of posting but are subj
 
 A list of Root Store participants, updated monthly, can be found here: <https://aka.ms/trustcertpartners>. 
 
+## 2022
+| Month |	Date of Release	| Release Notes |
+|---|---|---|
+| June | June 28 | [Deployment Notice for June 2022](2022/June2022.md) |
+| May | May 17 | [Deployment Notice for May 2022](2022/May2022.md) |
+| April | April 26 | [Deployment Notice for April 2022](2022/April2022.md) |
+| February | February 22 | [Deployment Notice for February 2022](2022/February2022.md) |
+
 ## 2021
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
+| October | October 26 | [Deployment Notice for October 2021](2021/October2021.md) |
+| September | September 28 | [Deployment Notice for September 2021](2021/September2021.md) |
+| August | August 24 | [Deployment Notice for August 2021](2021/August2021.md) |
+| June | June 22 | [Deployment Notice for June 2021](2021/June2021.md) |
+| May | May 25 | [Deployment Notice for May 2021](2021/May2021.md) |
+| April | April 29 | [Deployment Notice for April 2021](2021/April2021.md) |
 | February | March 3 | [Deployment Notice for February 2021](2021/Feb2021.md) |
 | January | January 26 | [Deployment Notice for January 2021](2021/January2021.md) |
 

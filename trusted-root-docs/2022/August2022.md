@@ -13,13 +13,13 @@ ms.topic: conceptual
 On Tuesday, August 23, 2022, Microsoft released an update to the Microsoft Trusted Root Certificate Program.
 
 This release will **NotBefore** the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
-1. Nets DanId	\\ Nets DanID \\ 5CFB1F5DB732E4084C0DD4978574E0CBC093BEB3
-2. Solutions Notarius Inc. \\	Notarius Root Certificate Authority	\\ 1F3F1486B531882802E87B624D420295A0FC721A
-3. TrustFactory (Pty) Ltd	\\ TrustFactory SSL Root Certificate Authority \\	D11478E8E5FB62540593D22C51570D014EAC76D8
+1. TrustFactory (Pty) Ltd	\\ TrustFactory SSL Root Certificate Authority \\	D11478E8E5FB62540593D22C51570D014EAC76D8
 
 This release will **Disable** the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
 1. A-Trust	\\ A-Trust-Root-05	\\ 2E66C9841181C08FB1DFABD4FF8D5CC72BE08F02
 2. A-Trust	\\ A-Trust-nQual-03	\\ 4CAEE38931D19AE73B31AA75CA33D621290FA75E
+3. China Internet Network Information Center (CNNIC)	\\ China Internet Network Information Center EV Certificates Root \\	4F99AA93FB2BD13726A1994ACE7FF005F2935D1E
+4. China Internet Network Information Center (CNNIC)	\\ CNNIC Root	\\ 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F
 
 This release will **NotBefore Server Authentiation EKU** to the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
 1. OISTE	\\ OISTE WISeKey Global Root GA CA	\\ 5922A1E15AEA163521F898396A4646B0441B0FA9

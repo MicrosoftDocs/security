@@ -10,8 +10,16 @@ ms.topic: conceptual
 
 # Step 1: Add SaaS apps to Azure Active Directory and apply access policies
 
+The ubiquitous nature of Software as a service (SaaS) apps means that it's likely that they will be accessed from outside the network perimeter. 
 
-Register apps in Azure Active Directory (Azure AD) so that you can monitor and configure access for applications in the cloud. Azure Active Directory also includes an application gallery which is a collection of SaaS apps that have been pre-integrated with Azure AD. 
+
+ This 
+Add apps in Azure Active Directory (Azure AD) so that you can monitor and configure access for applications in the cloud. 
+
+Adding apps in Azure AD allows you to leverage the built in  security capabilities such as Multi Factor Authentication (MFA) and conditional access. 
+
+
+Azure Active Directory also includes an application gallery which is a collection of SaaS apps that have been pre-integrated with Azure AD. 
 
 
 After adding apps to Azure AD, you can configure how apps are accessed by including them in the scope of your multifactor authentication (MFA) and conditional access policies. 

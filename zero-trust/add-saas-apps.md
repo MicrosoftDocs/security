@@ -38,7 +38,7 @@ For more information, see  [Request to publish your application in the Azure Act
 
 
 
-## Multifactor authentication and conditional access
+## Applyingm multifactor authentication and conditional access
 Azure AD multifactor authentication (MFA) helps safeguard access to data and applications, providing another layer of security by using a second form of authentication.It provides additional security by requiring a second form of verification and delivers strong authentication. There are many methods that can be used for a second-factor authentication.
 
 For more information, see [Manage application access and security](/azure/active-directory/manage-apps/tutorial-manage-access-security#create-a-conditional-access-policy).

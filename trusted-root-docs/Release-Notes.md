@@ -4,7 +4,7 @@ description: This document provides details about the changes made monthly to th
 ms.date: 6/15/2022
 ms.service: security
 author: hasokol-ms
-ms.author: hasokol-ms
+ms.author: hasokol
 ms.topic: conceptual
 ---
 

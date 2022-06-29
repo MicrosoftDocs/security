@@ -24,8 +24,7 @@ After adding apps to Azure AD, you can configure how apps are accessed by includ
 
 
 ## Adding apps in Azure AD
-There are several ways to manage apps in Azure AD. The easiest way to start managing an
-application is to the pre-integrated application from the Azure AD gallery.
+Azure AD has comprehensive security built in to help you manage SaaS apps. There are several ways to manage apps in Azure AD. The easiest way to start managing an application is to the pre-integrated application from the Azure AD gallery.
 
 For more information, see [Add an enterprise application](/azure/active-directory/manage-apps/add-application-portal#add-an-enterprise-application) and [Overview of Azure Active Directory application gallery](/azure/active-directory/manage-apps/overview-application-gallery).
 
@@ -40,7 +39,7 @@ For more information, see  [Request to publish your application in the Azure Act
 
 
 ## Multifactor authentication and conditional access
-Azure AD MFA helps safeguard access to data and applications, providing another layer of security by using a second form of authentication.There are many methods that can be used for a second-factor authentication.
+Azure AD multifactor authentication (MFA) helps safeguard access to data and applications, providing another layer of security by using a second form of authentication.It provides additional security by requiring a second form of verification and delivers strong authentication. There are many methods that can be used for a second-factor authentication.
 
 For more information, see [Manage application access and security](/azure/active-directory/manage-apps/tutorial-manage-access-security#create-a-conditional-access-policy).
 

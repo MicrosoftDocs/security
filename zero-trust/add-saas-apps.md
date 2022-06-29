@@ -24,7 +24,10 @@ After adding apps to Azure AD, you can configure how apps are accessed by includ
 
 
 ## Adding apps in Azure AD
-Azure AD has comprehensive security built in to help you manage SaaS apps. There are several ways to manage apps in Azure AD. The easiest way to start managing an application is to the pre-integrated application from the Azure AD gallery.
+Azure AD has an application gallery that contains a collection of SaaS apps that have been pre-integrated with Azure AD. This is the easiest way to start managing apps. All you'll need to do is sign into Azure Active Directory and choose from using applications from specific cloud platforms, featured applications, or you search for the application that you want to use.
+
+
+
 
 For more information, see [Add an enterprise application](/azure/active-directory/manage-apps/add-application-portal#add-an-enterprise-application) and [Overview of Azure Active Directory application gallery](/azure/active-directory/manage-apps/overview-application-gallery).
 

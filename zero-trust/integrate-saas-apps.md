@@ -15,7 +15,7 @@ The widespread increase in cloud adoption is transforming how organizations achi
 
 While a multicloud environment can help reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure that resources hosted in the cloud are protected. 
 
-This solution guides you on using Microsoft 365 to help manage your digital estate of cloud apps, with a focus on SaaS. SaaS apps play a key role in ensuring that applications and resources are available and accessible from any device with an Internet connection.
+This solution guides you on applying Zero Trust principles using Microsoft 365 to help manage your digital estate of cloud apps, with a focus on SaaS. SaaS apps play a key role in ensuring that applications and resources are available and accessible from any device with an Internet connection.
 
 To ensure that access and productivity is secure, implementation of SaaS needs to align with the Zero Trust security model, which is based on these guiding principles:
 

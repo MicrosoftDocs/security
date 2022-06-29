@@ -10,19 +10,17 @@ ms.topic: conceptual
 
 # Step 1: Add SaaS apps to Azure Active Directory and apply access policies
 
-SaaS apps play an essential role in organizations. 
-
-Many organizations rely on SaaS apps to run important business workflows. Because of the advantages it provides, Saa
-
-SaaS provides organizations with conveniences such as 
 
 
-It's important to ensure that apps are protected. 
+Many organizations rely on SaaS apps to run business workflows. Its ease of use, cost effectiveness, and scalability makes it easy for organizations to adopt the use of SaaS apps. Because of the amount information and access to valuable resources, proper measures must be in place to secure these business-critical apps.
+
+:::image type="content" source="media/step-1-add-saas-apps.png" alt-text="Overview image of adding SaaS apps to Azure AD and adding access policies":::
 
 Add apps in Azure Active Directory (Azure AD) so that you can monitor and configure access for applications in the cloud. Azure Active Directory also includes an application gallery which is a collection of SaaS apps that have been pre-integrated with Azure AD. 
 
 
 After adding apps to Azure AD, you can configure how apps are accessed by including them in the scope of your multifactor authentication (MFA) and conditional access policies. 
+
 
 
 ## Adding apps in Azure AD

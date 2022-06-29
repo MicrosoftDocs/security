@@ -30,16 +30,18 @@ For more information, see [Add an enterprise application](/azure/active-director
 
 
 ## Adding custom apps in Azure AD app gallery
-You can develop your own application and register it in Azure AD. Registering it with Azure AD lets you leverage the security features that the tenant provides. You can register your application in **App Registrations**, or you can register it
-using the **Create your own application** link when adding a new application in **Enterprise applications**.
+You can develop your own application and register it in Azure AD. Registering it with Azure AD lets you leverage the security features that the tenant provides. You can register your application in **App Registrations**, or you can register it using the **Create your own application** link when adding a new application in **Enterprise applications**.
 
 
 For more information, see  [Request to publish your application in the Azure Active Directory application gallery](/azure/active-directory/manage-apps/v2-howto-app-gallery-listing).
 
 
 
-## Applyingm multifactor authentication and conditional access
+## Applying  multifactor authentication and conditional access
 Azure AD multifactor authentication (MFA) helps safeguard access to data and applications, providing another layer of security by using a second form of authentication.It provides additional security by requiring a second form of verification and delivers strong authentication. There are many methods that can be used for a second-factor authentication.
+
+
+Conditional access policies allow administrators to assign controls to specific applications, actions, or authentication context.
 
 For more information, see [Manage application access and security](/azure/active-directory/manage-apps/tutorial-manage-access-security#create-a-conditional-access-policy).
 

@@ -27,7 +27,16 @@ After adding apps to Azure AD, you can configure how apps are accessed by includ
 Azure AD has an application gallery that contains a collection of SaaS apps that have been pre-integrated with Azure AD. This is the easiest way to start managing apps. All you need to do is sign into Azure Active Directory and choose from applications from specific cloud platforms, featured applications, or you search for the application that you want to use.
 
 
-Using the pre-integrated apps in Azure AD helps you leverage the conveniences of easy configuration, 
+Adding apps in Azure AD helps you leverage one or more of the services it provides including:
+
+* Application authentication and authorization
+* User authentication and authorization
+* SSO using federation or password
+* User provisioning and synchronization
+* Role-based access control - Use the directory to define application roles to perform role-based authorization checks in an application
+* OAuth authorization services - Used by Microsoft 365 and other Microsoft applications to authorize access to APIs/resources
+* Application publishing and proxy - Publish an application from a private network to the internet
+* Directory schema extension attributes to store additional data in Azure AD 
 
 
 For more information, see [Add an enterprise application](/azure/active-directory/manage-apps/add-application-portal#add-an-enterprise-application) and [Overview of Azure Active Directory application gallery](/azure/active-directory/manage-apps/overview-application-gallery).

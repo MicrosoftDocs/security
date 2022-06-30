@@ -9,3 +9,5 @@ ms.topic: conceptual
 ---
 
 # Step 2: Create Defender for Cloud App policies
+
+

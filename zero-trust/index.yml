@@ -74,6 +74,6 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Develop using Zero Trust principles
-            url: /zero-trust/develop/overview
+            url: /security/zero-trust/develop/overview
 
              

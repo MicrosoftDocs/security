@@ -466,7 +466,7 @@ This method works for Virtual Machines or physical devices that have not been pr
 1. Press `SHIFT + F10` to display command prompt
 1. Type `PowerShell`, hit Enter
 1. Type `Set-ExecutionPolicy RemoteSigned`, hit Enter
-1. Type `Install-Script GetWindowsAutopilotInfo`, hit Enter
+1. Type `Install-Script Get-WindowsAutopilotInfo`, hit Enter
 1. Type `Y` and click Enter to accept PATH environment change
 1. Type `Y` and click Enter to install NuGet provider
 1. Type `Y` to trust the repository 

@@ -220,7 +220,17 @@
   expanded: false
   items:
     - name: Overview
-      href: develop/overview.md
+      items:
+      - name: Zero Trust development
+        href: develop/overview.md
+      - name: Application security and Zero Trust
+        href: develop/identity-zero-trust-compliance.md
+      - name: IAM development best practices
+        href: develop/identity-iam-development-best-practices.md
+      - name: Standards-based development
+        href: develop/identity-standards-based-development-methodologies.md
+      - name: Developer and IT Pro responsibilities
+        href: develop/identity-developer-administrator-responsibilities.md
     - name: Identity
       expanded: false
       href: develop/identity.md

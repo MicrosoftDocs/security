@@ -239,7 +239,7 @@ For more information about Windows Update policies, see [Policy CSP - Update](/w
 To configure integration of Windows Defender for Endpoint and Microsoft Endpoint Manager:
 
 1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Endpoint Security** > **Microsoft Defender ATP**.
-1. In step 1 under **Configuring Windows Defender ATP**, select **Connect Windows Defender ATP to Microsoft Intune in the Windows Defender Security Center​**.
+1. In step 1 under **Configuring Windows Defender ATP**, select **Connect Windows Defender ATP to Microsoft Intune in the Windows Defender Security Center**.
 1. In the Windows Defender Security Center:
 
    1. Select **Settings** > **Advanced features**.

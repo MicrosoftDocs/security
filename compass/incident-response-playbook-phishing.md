@@ -60,15 +60,15 @@ Message trace logs are invaluable components that help to find the original sour
 > [!NOTE]
 > Message trace is also available in the Microsoft 365 Defender portal at <https://security.microsoft.com> under **Email & collaboration** \> **Exchange message trace**, but that's just a passthrough link to message trace in the EAC.
 
-Several components of the *message trace* functionality are self-explanatory but *Message-ID* is a unique identifier for an email message and requires thorough understanding. To obtain the *Message-ID* for an email of interest we need to examine the raw email headers.
+Several components of the *message trace* functionality are self-explanatory but *Message-ID* is a unique identifier for an email message and requires thorough understanding. To get the *Message-ID* for an email of interest, you need to examine the raw email headers.
 
 ### Audit log search
 
-You search the [unified audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) and view all the activities of the user and admin in your Microsoft 365 organization.
+You search the [unified audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) to view all the activities of the user and admin in your Microsoft 365 organization.
 
 ### Are the sign-in logs and/or audit logs exported to an external system?
 
-Since most of the Azure Active Directory (Azure AD) [sign-in](/azure/active-directory/reports-monitoring/concept-sign-ins) and audit data will get overwritten after 30 or 90 days, Microsoft recommends that you leverage Sentinel, Azure Monitor or an external SIEM.
+Since most of the Azure Active Directory (Azure AD) [sign-in](/azure/active-directory/reports-monitoring/concept-sign-ins) and audit data will get overwritten after 30 or 90 days, we recommend that you leverage Sentinel, Azure Monitor or an external security information and event management (SIEM) system.
 
 ## Roles and permissions required
 
@@ -91,7 +91,7 @@ if you're unsure about the role groups to use, see [Find the permissions require
 
 ### Microsoft Defender for Endpoint
 
-If you have Microsoft Defender for Endpoint (MDE) enabled and rolled out already, you should leverage it for this flow. See [Tackling phishing with signal-sharing and machine learning](https://www.microsoft.com/security/blog/2018/12/19/tackling-phishing-with-signal-sharing-and-machine-learning/).
+If you have Microsoft Defender for Endpoint (MDE), you should leverage it for this flow. For more information, see [Tackling phishing with signal-sharing and machine learning](https://www.microsoft.com/security/blog/2018/12/19/tackling-phishing-with-signal-sharing-and-machine-learning/).
 
 ## System requirements
 
@@ -103,7 +103,7 @@ The system should be able to run PowerShell.
 
 The following PowerShell modules are required for the investigation of the cloud environment:
 
-- Azure AD PowerShell for Graph module. For installation instructions, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/
+- Azure AD PowerShell for Graph module. For installation instructions, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/).
 
   If you need older cmdlets in the MSOnline (v1) Azure AD module, see [Azure Active Directory (MSOnline)](/powershell/azure/active-directory/install-msonlinev1).
 
@@ -204,7 +204,7 @@ For detailed syntax and parameter information, see [Search-Mailbox](/powershell/
 
 ### Is delegated access configured on the mailbox?
 
-<--- This will stop working on 10/1/22 as the script uses basic auth to connect! --->
+<!--- This will stop working on 10/1/22 as the script uses basic auth to connect! --->
 
 Use the following script to check whether delegated access is configured on the mailbox: <https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/DumpDelegatesandForwardingRules.ps1>.
 
@@ -214,7 +214,7 @@ Look for unusual names or permission grants. If you see something unusual, conta
 
 ### Are there forwarding rules configured for the mailbox?
 
-You need to check each identified mailbox for mailbox forwarding (also known as *SMTP forwarding*) or Inbox rules that forward email messages (typically, newly-created Inbox rules).
+You need to check each identified mailbox for mailbox forwarding (also known as *SMTP forwarding*) or Inbox rules that forward email messages to external recipients (typically, newly-created Inbox rules).
 
 - To check all mailboxes for mailbox forwarding, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 

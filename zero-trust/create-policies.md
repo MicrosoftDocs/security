@@ -71,6 +71,6 @@ For more information , see [Protect apps with Microsoft Defender for Cloud Apps 
 
 ## Next step
 
-:::image type="content" source="media/saas-zt-step-2.png" alt-text="Image of Zero Trust SaaS guidance with step 2 highlighted":::
+:::image type="content" source="media/saas-zt-step-3.png" alt-text="Image of Zero Trust SaaS guidance with step 3 highlighted":::
 
 Continue with [Step 3](deploy-information-protection-saas.md) to deploy information protection for SaaS apps.

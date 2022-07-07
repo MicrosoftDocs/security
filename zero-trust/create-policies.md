@@ -14,12 +14,13 @@ Apps form an integral part of many organizations. Many employees use apps to tac
 
 It's important to have visibility into the apps that are being used in your organization so that you can properly manage and protect important resources.
 
+This article provides guidance on how to discover apps, connect them to Azure Active Directory (Azure AD), and use Conditional Access App Control to protect apps.
 
 Microsoft Defender for Cloud Apps keeps you in control through comprehensive visibility, auditing, and granular controls over your sensitive data.
 
 Defender for Cloud Apps has tools that help uncover shadow IT and assess risk while enabling you to enforce policies and investigate activities. It helps you control access in real time and stop threats so your organization can more safely move to the cloud.
 
-This article provides guidance on how to discover apps, connect them to Azure Active Directory (Azure AD), and use Conditional Access App Control to protect apps.
+
 
 ## Discover cloud apps
 Without visibility into the apps being used in your organization, you will not be able to properly manage and control how users use and access important resources with them.  

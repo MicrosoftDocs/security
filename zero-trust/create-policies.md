@@ -33,15 +33,21 @@ Use the following guidance to leverage the built-in capabilities in Defender for
 - [Discover and identify Shadow IT](/defender-cloud-apps/tutorial-shadow-it#phase-1-discover-and-identify-shadow-it)
 
 
-
-
-
 ## Connect apps
 
-Now that you've discovered apps, you'll need to connect them to Azure Active Directory (Azure AD).
+Now that you've discovered the apps being used in your organization, you'll need to connect them to Azure Active Directory (Azure AD) to get visibility and protection. App connectors use the APIs of app providers to enable greater visibility and control by Microsoft Defender for Cloud Apps over the apps you connect to.
 
+Depending on the app to which you're connecting, API connection enables the following items:
 
+- **Account information** - Visibility into users, accounts, profile information, status (suspended, active, disabled) groups, and privileges.
+- **Audit trail** - Visibility into user activities, admin activities, sign-in activities.
+- **Account governance** - Ability to suspend users, revoke passwords, etc.
+- **App permissions** - Visibility into issued tokens and their permissions.
+- **App permission governance** - Ability to remove tokens.
+- **Data scan** - Scanning of unstructured data using two processes -periodically (every 12 hours) and in real-time scan (triggered each time a change is detected).
+- **Data governance** - Ability to quarantine files, including files in trash, and overwrite files.
 
+For more information, see [Connect apps](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
 
 
 
@@ -58,7 +64,7 @@ In conjunction with conditional access policies, you can further augment the sec
 Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user.
 
 
-To summarize, conditional access dictates the conditions for when a user can access a certain resource. Conditional Access App Control dictates what a user can access and the set of actions that a user can take during a session **after** they've been granted access. 
+To summarize, conditional access dictates the requirements for when a user can access a certain resource. Conditional Access App Control dictates what a user can access and the set of actions that a user can take during a session **after** they've been granted access. 
 
 
 For more information , see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad).

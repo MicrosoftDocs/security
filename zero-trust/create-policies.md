@@ -19,6 +19,7 @@ Microsoft Defender for Cloud Apps keeps you in control through comprehensive vis
 
 Defender for Cloud Apps has tools that help uncover shadow IT and assess risk while enabling you to enforce policies and investigate activities. It helps you control access in real time and stop threats so your organization can more safely move to the cloud.
 
+This article provides guidance on how to discover apps, connect them to Azure Active Directory (Azure AD), and use Conditional Access App Control to protect apps.
 
 ## Discover cloud apps
 Without visibility into the apps being used in your organization, you will not be able to properly manage and control how users use and access important resources with them.  
@@ -35,7 +36,7 @@ Use the following guidance to leverage the built-in capabilities in Defender for
 
 ## Connect apps
 
-Now that you've discovered the apps being used in your organization, you'll need to connect them to Azure Active Directory (Azure AD) to get visibility and protection. App connectors use the APIs of app providers to enable greater visibility and control by Microsoft Defender for Cloud Apps over the apps you connect to.
+Now that you've discovered the apps being used in your organization, you'll need to connect them to Azure AD to get visibility and protection. App connectors use the APIs of app providers to enable greater visibility and control by Microsoft Defender for Cloud Apps over the apps you connect to.
 
 Depending on the app to which you're connecting, API connection enables the following items:
 

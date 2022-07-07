@@ -62,7 +62,7 @@ In conjunction with conditional access policies, you can further augment the sec
 Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user.
 
 
-To summarize, conditional access dictates the requirements that must be fulfilled before a user can access a certain resource. Conditional Access App Control dictates what apps user can access and the set of actions that a user can take during a session **after** they've been granted access. 
+To summarize, conditional access dictates the requirements that must be fulfilled before a user can access apps. Conditional Access App Control dictates what apps a user can access and the set of actions that a user can take during a session **after** they've been granted access. 
 
 
 For more information , see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad).

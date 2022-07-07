@@ -1,6 +1,6 @@
 ---
-title: Add SaaS apps to Azure Active Directory and apply access policies
-description: 
+title: Add SaaS apps to Azure Active Directory and to the scope of policies 
+description: Learn steps to add SaaS apps to Azure AD and to the scope of identity and device policies
 ms.date: 04/15/2022
 ms.service: security
 author: mjcaparas
@@ -8,13 +8,13 @@ ms.author: macapara
 ms.topic: conceptual
 ---
 
-# Step 1: Add SaaS apps to Azure Active Directory and to the scope of  policies 
+# Step 1: Add SaaS apps to Azure Active Directory and to the scope of policies 
 
-Many organizations rely on SaaS apps to run business workflows. The ease of use, cost effectiveness, and scalability makes it a viable solution for organizations to adopt. Because of the amount information and access to valuable resources, proper measures must be in place to secure these business-critical apps.
+Many organizations rely on SaaS apps to run business workflows. The ease of use, cost effectiveness, and scalability makes it a viable solution for organizations to adopt. Because of the amount information and access to valuable resources these apps have, proper measures must be in place to secure these business-critical apps.
 
 :::image type="content" source="media/step-1-add-saas-apps.png" alt-text="Overview image of adding SaaS apps to Azure AD and adding access policies":::
 
-Add apps in Azure Active Directory (Azure AD) so that you can monitor and configure access for applications in the cloud. Azure Active Directory has an application gallery which is a collection of SaaS apps that have been pre-integrated with Azure AD. You can also choose to add your own custom apps. 
+Add apps in Azure Active Directory (Azure AD) so that you can monitor and configure access for applications in the cloud. Azure AD has an application gallery which is a collection of SaaS apps that have been pre-integrated with Azure AD. You can also choose to add your own custom apps. 
 
 
 After adding apps to Azure AD, you can configure how apps are accessed by including them in the scope of your Zero Trust identity and device access policies. 
@@ -60,7 +60,7 @@ After adding apps in Azure AD, you'll need to add them to the scope your identit
 
 Conditional access policies allow administrators to assign controls to specific applications, actions, or authentication context. Multifactor authentication (MFA) is part of these policies. 
 
-MFA helps safeguard access to data and applications,  by providing additional security by requiring a second form of verification and delivers strong authentication. 
+MFA helps safeguard access to data and applications, by providing additional security by requiring a second form of verification and delivers strong authentication. 
 
 
 For more information, see [Common Zero Trust identity and device access policies](/security/office-365-security/identity-access-policies).

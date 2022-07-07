@@ -53,18 +53,14 @@ For more information, see [Connect apps](/defender-cloud-apps/enable-instant-vis
 
 ## Use Conditional Access App Control to protect apps
 
-In the previous step [Step 1: Add SaaS apps to Azure Active Directory and to the scope of policies ](add-saas-apps.md), conditional access was described as policies that allow administrators to assign controls to specific applications, actions, or authentication context. You have the ability to define where a conditional access policy is applied to: 
-
-- Who - Which users or user groups can access the cloud apps
-- What - Which cloud apps users can access
-- Where - Which locations and networks a user can access
+In the previous step [Step 1: Add SaaS apps to Azure Active Directory and to the scope of policies ](add-saas-apps.md), conditional access was described as policies that allow administrators to assign controls to specific applications, actions, or authentication context. You have the ability to define which users or user groups can access the cloud apps, which cloud apps users can access, and which locations and networks a user has access to using conditional access policy.
 
 In conjunction with conditional access policies, you can further augment the security of cloud apps by applying access and session controls using Conditional Access App Control.
 
 Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user.
 
 
-To summarize, conditional access dictates the requirements for when a user can access a certain resource. Conditional Access App Control dictates what a user can access and the set of actions that a user can take during a session **after** they've been granted access. 
+To summarize, conditional access dictates the requirements that must be fulfilled before a user can access a certain resource. Conditional Access App Control dictates what apps user can access and the set of actions that a user can take during a session **after** they've been granted access. 
 
 
 For more information , see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad).
@@ -75,4 +71,4 @@ For more information , see [Protect apps with Microsoft Defender for Cloud Apps 
 
 :::image type="content" source="media/saas-zt-step-2.png" alt-text="Image of Zero Trust SaaS guidance with step 2 highlighted":::
 
-Continue with [Step 3](create-policies.md) to create Defender for Cloud Apps policies.
+Continue with [Step 3](deploy-information-protection-saas.md) to deploy information protection for SaaS apps.

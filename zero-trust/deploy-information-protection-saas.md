@@ -9,5 +9,15 @@ ms.topic: conceptual
 ---
 
 # Step 3: Deploy information protection for SaaS apps
-description
+
+
+While protecting access to apps and session activities are important, the data that SaaS apps access may be the most critical resource that must be protected. 
+
+
+Data exfiltration is typically the last stages of an attack and oftentimes, a malicious attacker's main objective. Deploying information protection for SaaS apps is a key step in preventing inadvertent exposure of sensitive information to bad actors. 
+
+Microsoft Defender for Cloud Apps integrates seamlessly with Microsoft Purview Information Protection and delivers on the required information protection for SaaS apps.  
+
+
+
 

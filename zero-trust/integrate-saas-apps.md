@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Integrate SaaS apps for Zero Trust with Microsoft 365 
 
-The widespread increase in cloud adoption is transforming how organizations achieve business outcomes.  This shift highlights the  reliance of companies on cloud-based apps resulting in higher demand for cloud-based services such as Software as a service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), and app development platforms. 
+The widespread increase in cloud adoption is transforming how organizations achieve business outcomes.  This shift highlights the  reliance of companies on cloud-based apps resulting in higher demand for services such as Software as a service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), and app development platforms. 
 
 
 While a multicloud environment can help reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure that resources hosted in the cloud are protected. 

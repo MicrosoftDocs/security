@@ -19,5 +19,16 @@ Data exfiltration is typically the last stages of an attack and oftentimes, a ma
 Microsoft Defender for Cloud Apps integrates seamlessly with Microsoft Purview Information Protection and delivers on the required information protection for SaaS apps.  
 
 
+Microsoft Purview Information Protection helps you discover, classify, and protect sensitive information. 
 
 
+
+
+
+## Learning
+
+
+https://docs.microsoft.com/en-us/learn/modules/create-configure-data-loss-prevention-policies/
+
+
+https://docs.microsoft.com/en-us/learn/modules/create-configure-data-loss-prevention-policies/3-integrate-data-loss-prevention-with-microsoft-cloud-app-security

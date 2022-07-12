@@ -63,7 +63,7 @@ Conditional access policies allow administrators to assign controls to specific 
 MFA helps safeguard access to data and applications, by providing additional security by requiring a second form of verification and delivers strong authentication. 
 
 
-:::image type="content" source="/media/identity-access-ruleset-teams.png" alt-text="The summary of policy updates for the protection of access to Teams and its dependent services" lightbox="/media/identity-access-ruleset-teams.png":::
+:::image type="content" source="media/identity-access-ruleset-teams.png" alt-text="The summary of policy updates for the protection of access to Teams and its dependent services" lightbox="media/identity-access-ruleset-teams.png":::
 
 ### Updating common policies to include Teams
 The following diagram illustrates which policies to update from the common identity and device access policies. For each policy to update, make sure that Teams and dependent services are included in the assignment of cloud apps.

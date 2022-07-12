@@ -186,7 +186,7 @@
       items:
       - name: Overview
         href: integrate-saas-apps.md
-      - name: Step 1. Add SaaS apps to Azure AD and MFA
+      - name: Step 1. Add SaaS apps to Azure AD and to the scope of policies
         href: add-saas-apps.md
       - name: Step 2. Create Defender for Cloud apps policies
         href: create-policies.md

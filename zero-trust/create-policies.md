@@ -73,6 +73,8 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 To summarize, conditional access dictates the requirements that must be fulfilled before a user can access apps. Conditional Access App Control dictates what apps a user can access and the set of actions that a user can take during a session **after** they've been granted access. 
 
+For more information, see [](). 
+
 
 ## Use app connectors
 

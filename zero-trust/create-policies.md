@@ -69,7 +69,7 @@ In conjunction with conditional access policies, you can further augment the sec
 
 Microsoft Defender for Cloud Apps natively integrates with Azure AD. All you have to do is configure a policy in Azure AD to use Conditional Access App Control in Defender for Cloud Apps. This routes network traffic for these managed SaaS apps through Defender for Cloud Apps as a proxy, which allows Defender for Cloud Apps to monitor this traffic and to apply session controls. 
 
-:::image type="content" source="media/defender/m365-defender-mcas-architecture-e.png" alt-text="The architecture for the Microsoft Defender for Cloud Apps - SaaS apps" lightbox="media/defender/m365-defender-mcas-architecture-e.png":::
+:::image type="content" source="media/m365-defender-mcas-architecture-e.png" alt-text="The architecture for the Microsoft Defender for Cloud Apps - SaaS apps" lightbox="media/m365-defender-mcas-architecture-e.png":::
 
 In this illustration:
 - SaaS apps are integrated with the Azure AD tenant. This integration allows Azure AD to enforce conditional access policies, including multi-factor authentication.
@@ -79,7 +79,9 @@ In this illustration:
 
 To summarize, conditional access dictates the requirements that must be fulfilled before a user can access apps. Conditional Access App Control dictates what apps a user can access and the set of actions that a user can take during a session **after** they've been granted access. 
 
-For more information, see [](). 
+Use the following references for more information:
+-  [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad).
+- [Integrating Azure AD with Conditional Access App Control](/microsoft-365/security/defender/eval-defender-mcas-architecture#integrating-with-azure-ad-with-conditional-access-app-control)
 
 
 ## Use app connectors
@@ -99,18 +101,11 @@ Depending on the app to which you're connecting, API connection enables the foll
 For more information, see [Connect apps](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
 
 
-
 ## Apply session controls
 
 Session controls allow you to apply parameters to how cloud apps are used by your organization. For example, if your organization is using Salesforce, you can configure a session policy that allows only managed devices to access your organization's data at Salesforce. A simpler example could be configuring a policy to monitor traffic from unmanaged devices so you can analyze the risk of this traffic before applying stricter policies.
 
-
-Use the following references for more information:
--  [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad).
-- [Integrating Azure AD with Conditional Access App Control](/microsoft-365/security/defender/eval-defender-mcas-architecture#integrating-with-azure-ad-with-conditional-access-app-control)
-
-
-In addition, Microsoft Defender for Cloud Apps documentation includes a series of tutorials to help you discover risk and protect your environment.
+Microsoft Defender for Cloud Apps documentation includes a series of tutorials to help you discover risk and protect your environment.
 
 
 Try out Defender for Cloud Apps tutorials:

@@ -66,7 +66,13 @@ MFA helps safeguard access to data and applications, by providing additional sec
 :::image type="content" source="media/identity-access-ruleset-teams.png" alt-text="The summary of policy updates for the protection of access to Teams and its dependent services" lightbox="media/identity-access-ruleset-teams.png":::
 
 ### Updating common policies to include Teams
-The following diagram illustrates which policies to update from the common identity and device access policies. For each policy to update, make sure that Teams and dependent services are included in the assignment of cloud apps.
+The following diagram illustrates which policies to update from the common identity and device access policies.
+
+
+As an example, policies are being added to Microsoft Teams.
+
+
+For each policy to update, make sure that Teams and dependent services are included in the assignment of cloud apps.
 
 This table lists the policies that need to be revisited and links to each policy in the [common identity and device access policies](/microsoft-365/security/office-365-securityidentity-access-policies), which has the wider policy set for all Office applications.
 
@@ -80,8 +86,6 @@ This table lists the policies that need to be revisited and links to each policy
 ||[Define device compliance policies](/microsoft-365/security/office-365-security/identity-access-policies#define-device-compliance-policies)|Include Teams and dependent services in this policy.|
 ||[Require compliant PCs *and* mobile devices](/microsoft-365/security/office-365-security/identity-access-policies#require-compliant-pcs-and-mobile-devices)|Include Teams and dependent services in this policy.|
 |**Specialized security**|[*Always* require MFA](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization. Include Teams and dependent services in this policy. |
-
-
 
 
 

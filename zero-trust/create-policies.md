@@ -58,20 +58,12 @@ After you've reviewed the list of discovered apps in your environment,you can se
 approving safe apps (Sanctioned) or prohibiting unwanted apps (Unsanctioned).
 
 
-
-
-
-
 For more information, see [Sanctioning/unsanctioning an app](/defender-cloud-apps/governance-discovery#BKMK_SanctionApp).
-
-
-
-Now that you've discovered the apps being used in your organization, you'll need to connect them to Azure AD to get visibility and protection. 
 
 
 ## Configure Conditional Access App Control to protect apps
 
-In the previous step [Step 1: Add SaaS apps to Azure Active Directory and to the scope of policies ](add-saas-apps.md), conditional access was described as policies that allow administrators to assign controls to specific applications, actions, or authentication context. You have the ability to define which users or user groups can access the cloud apps, which cloud apps users can access, and which locations and networks a user has access to using conditional access policy.
+In the previous step [Step 1: Add SaaS apps to Azure Active Directory and to the scope of policies](add-saas-apps.md), conditional access was described as policies that allow administrators to assign controls to specific applications, actions, or authentication context. You have the ability to define which users or user groups can access the cloud apps, which cloud apps users can access, and which locations and networks a user has access to using conditional access policy.
 
 In conjunction with conditional access policies, you can further augment the security of cloud apps by applying access and session controls using Conditional Access App Control. Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user.
 

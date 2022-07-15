@@ -58,7 +58,7 @@ For more information, see  [Request to publish your application in the Azure Act
 ## Add to the scope of your Zero Trust identity and device access policies
 After adding apps in Azure AD, you'll need to add them to the scope your identity and device access policies. 
 
-Conditional access policies allow administrators to assign controls to specific applications, actions, or authentication context. Multifactor authentication (MFA) is part of these policies. 
+Conditional access policies allow administrators to assign controls to specific applications, actions, or authentication context. You can define conditions such as what device type can access a resource, user risk levels, trusted locations, as well as other conditions. Multifactor authentication (MFA) is also part of these policies. 
 
 MFA helps safeguard access to data and applications, by providing additional security by requiring a second form of verification and delivers strong authentication. 
 

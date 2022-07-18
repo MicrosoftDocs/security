@@ -27,11 +27,3 @@ By integrating Microsoft Purview Information Protection into Defender for Cloud 
 
 
 
-
-## Learning
-
-
-https://docs.microsoft.com/en-us/learn/modules/create-configure-data-loss-prevention-policies/
-
-
-https://docs.microsoft.com/en-us/learn/modules/create-configure-data-loss-prevention-policies/3-integrate-data-loss-prevention-with-microsoft-cloud-app-security

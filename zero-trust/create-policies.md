@@ -27,7 +27,7 @@ Microsoft Defender for Cloud Apps keeps you in control through comprehensive vis
 
 Defender for Cloud Apps has tools that help uncover shadow IT and assess risk while enabling you to enforce policies and investigate activities. It helps you control access in real time and stop threats so your organization can more safely move to the cloud.
 
-If you haven't already set up Defender for Cloud Apps, you can get started by using the guidance in [Evaluate Microsoft Defender for Cloud](/microsoft-365/security/defender/eval-defender-mcas-overview).
+If you haven't already set up Defender for Cloud Apps, you can get started by using the guidance in [Evaluate Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-overview).
 
 
 
@@ -100,6 +100,9 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 For more information, see [Connect apps](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
 
+Defender for Cloud Apps provides end-to-end protection for connected apps using Cloud-to-Cloud integration, [API connectors](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps), and real-time access and session [controls leveraging our Conditional](/defender-cloud-apps/proxy-intro-aad) App Access Controls.
+
+For more information, see [Protecting connected apps](/defender-cloud-apps/protect-connected-apps).
 
 ## Apply session controls
 

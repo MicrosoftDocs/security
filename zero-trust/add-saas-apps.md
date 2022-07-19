@@ -65,24 +65,24 @@ MFA helps safeguard access to data and applications, by providing additional sec
 
 :::image type="content" source="media/identity-access-ruleset-saas.png" alt-text="The summary of policy updates for the protection of access to SaaS apps" lightbox="media/identity-access-ruleset-saas.png":::
 
-### Updating common policies to include Teams
+### Updating common policies 
 The following diagram illustrates which policies to update from the common identity and device access policies for SaaS apps.
 
 For each policy to update, make sure that apps and dependent services are included in the assignment of cloud apps.
 
 This table lists the policies that need to be revisited and links to each policy in the [common identity and device access policies](/microsoft-365/security/office-365-securityidentity-access-policies).
 
-|Protection level|Policies|Further information for Teams implementation|
+|Protection level|Policies|Further information|
 |---|---|---|
-|**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)|Be sure apps and dependent services are included in the list of apps. Teams has Guest Access and External Access rules to consider as well, you'll learn more about these rules later in this article.|
-||[Block clients that don't support modern authentication](/microsoft-365/security/office-365-security/identity-access-policies#block-clients-that-dont-support-multi-factor)|Include Teams and dependent services in the assignment of cloud apps.|
-||[High risk users must change password](/microsoft-365/security/office-365-security/identity-access-policies#high-risk-users-must-change-password)|Forces Teams users to change their password when signing in if high-risk activity is detected for their account. Be sure Teams and dependent services are included in the list of apps.|
-||[Apply APP data protection policies](/microsoft-365/security/office-365-security/identity-access-policies#apply-app-data-protection-policies)|Be sure Teams and dependent services are included in the list of apps. Update the policy for each platform (iOS, Android, Windows).|
-|**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)|Teams has Guest Access and External Access rules to consider as well, you'll learn more about these rules later in this article. Include Teams and dependent services in this policy.|
-||[Require compliant PCs *and* mobile devices](/microsoft-365/security/office-365-security/identity-access-policies#require-compliant-pcs-and-mobile-devices)|Include Teams and dependent services in this policy.|
-|**Specialized security**|[*Always* require MFA](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization. Include Teams and dependent services in this policy. |
+|**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)|Be sure apps and dependent services are included in the list of apps. |
+||[Block clients that don't support modern authentication](/microsoft-365/security/office-365-security/identity-access-policies#block-clients-that-dont-support-multi-factor)|Include apps and dependent services in the assignment of cloud apps.|
+||[High risk users must change password](/microsoft-365/security/office-365-security/identity-access-policies#high-risk-users-must-change-password)|Forces app users to change their password when signing in if high-risk activity is detected for their account. |
+||[Apply APP data protection policies](/microsoft-365/security/office-365-security/identity-access-policies#apply-app-data-protection-policies)|Be sure apps and dependent services are included in the list of apps. Update the policy for each platform (iOS, Android, Windows).|
+|**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)| Include apps and dependent services in this policy.|
+||[Require compliant PCs *and* mobile devices](/microsoft-365/security/office-365-security/identity-access-policies#require-compliant-pcs-and-mobile-devices)|Include apps and dependent services in this policy.|
+|**Specialized security**|[*Always* require MFA](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization.  |
 
-
+For more information, see [Recommended Microsoft Defender for Cloud Apps policies for SaaS apps](/microsoft-365/security/office-365-security/mcas-saas-access-policies). 
 
 ## Next step
 

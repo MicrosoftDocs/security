@@ -8,8 +8,10 @@ ms.author: macapara
 ms.topic: conceptual
 ---
 
-# Step 3: Deploy information protection for SaaS apps
+# Step 3: Deploy information protection for SaaS apps 
  
+
+## !WORK IN PROGRESS!
 
 While protecting access to apps and session activities are important, the data that SaaS apps access may be the most critical resource that must be protected. Deploying information protection for SaaS apps is a key step in preventing inadvertent exposure of sensitive information.
 

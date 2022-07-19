@@ -1,5 +1,5 @@
 ---
-title: "Chief Information Security Officer (CISO) Workshop"
+title: "The Chief Information Security Officer (CISO) Workshop"
 ms.author: mas
 author: mas
 manager: mas
@@ -9,17 +9,16 @@ ms.service: security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "This training workshop is a combination of experiences from Microsoft security teams and learnings from customers."
+description: "The Chief Information Security Office (CISO) workshop helps accelerate security program modernization with reference strategies built using Zero Trust principles."
 ---
 
-# Chief Information Security Officer (CISO) Workshop Training
+# The Chief Information Security Officer (CISO) Workshop Training
 
 The Chief Information Security Office (CISO) workshop helps accelerate security program modernization with reference strategies built using Zero Trust principles. 
 
 The workshop covers all aspects of a comprehensive security program including strategic initiatives, roles and responsibilities, success metrics, maturity models, and more. !!!!!Videos and PDF of slides are here .  
 
-!!!!Insert CISO Workshop Image #1 here - use this syntax
-:::image type="content" source="./media/roles-and-responsibilities.png" alt-text="View of the responsibilities/functions of an enterprise security team" lightbox="./media/roles-and-responsibilities-popout.png":::
+:::image type="content" source="ciso-workshop-overview.png" alt-text="Overview of the CISO workshop" lightbox="ciso-workshop-overview-popout.png":::
 
 ## Why should you make time to watch this workshop? 
 You'll get actionable advice on how to quickly increase your security program maturity, security posture, and ability to rapidly respond to attacks. 
@@ -40,7 +39,7 @@ Guidance on how to align security to continuously changing business priorities, 
 The workshop videos (about 4 hours total) and slides (link to PDF) are organized into these discussions: 
 
 -	**Introduction and Overview** of the CISO Workshop 
--	**Part A - Key Context and Fundamentals**
+-	**[Part A - Key Context and Fundamentals](the-ciso-workshop-videos.md#Part-A---Key-Context-and-Fundamentals)**
      - **Trends impacting security** from the threat environment, technology, and business transformations
      - **Evolution of security roles and responsibilities,** including key best practices and trends to monitor
      - **Recommended strategy** and strategic initiatives to improve your program: the role of Zero Trust in strategy, the (low) cost for attackers to purchasebuy tools and passwords, learnings on getting reliable information, and a business analysis of ransomware attacks.

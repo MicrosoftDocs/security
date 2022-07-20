@@ -12,7 +12,6 @@ ms.topic: conceptual
 
 Many organizations rely on SaaS apps to run business workflows. The ease of use, cost effectiveness, and scalability makes it a viable solution for organizations to adopt. Because of the amount information and access to valuable resources these apps have, proper measures must be in place to secure these business-critical apps.
 
-:::image type="content" source="media/step-1-add-saas-apps.png" alt-text="Overview image of adding SaaS apps to Azure AD and adding access policies":::
 
 Add apps in Azure Active Directory (Azure AD) so that you can monitor and configure access for applications in the cloud. Azure AD has an application gallery which is a collection of SaaS apps that have been pre-integrated with Azure AD. You can also choose to add your own custom apps. 
 
@@ -86,6 +85,6 @@ For more information, see [Recommended Microsoft Defender for Cloud Apps policie
 
 ## Next step
 
-:::image type="content" source="media/saas-zt-step-2.png" alt-text="Image of Zero Trust SaaS guidance with step 2 highlighted":::
+:::image type="content" source="media/saas-zt-steps-2.png" alt-text="Image of Zero Trust SaaS guidance with step 2 highlighted":::
 
 Continue with [Step 2](create-policies.md) to create Defender for Cloud Apps policies.

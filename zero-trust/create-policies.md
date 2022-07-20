@@ -125,6 +125,6 @@ Try out Defender for Cloud Apps tutorials:
 
 ## Next step
 
-:::image type="content" source="media/saas-zt-step-3.png" alt-text="Image of Zero Trust SaaS guidance with step 3 highlighted":::
+:::image type="content" source="media/saas-zt-steps-3.png" alt-text="Image of Zero Trust SaaS guidance with step 3 highlighted":::
 
 Continue with [Step 3](deploy-information-protection-saas.md) to deploy information protection for SaaS apps.

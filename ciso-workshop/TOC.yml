@@ -1,5 +1,4 @@
 - name: Chief Information Security Officer (CISO) Workshop Training
-  href: ciso-workshop.md
   items:
   - name: The CISO Workshop
     href: the-ciso-workshop.md
@@ -7,6 +6,8 @@
     href: the-ciso-workshop-videos.md
 - name: Archive
 items:
+  - name: The CISO Workshop (Archived)
+  href: ciso-workshop.md
      - name: Module 1 - Microsoft cybersecurity briefing
        href: ciso-workshop-module-1.md
      - name: Module 2 - Security management

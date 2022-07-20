@@ -1,6 +1,6 @@
  - name: Chief Information Security Officer (CISO) Workshop Training
    items:
-    - name: The CISO Workshop
+    - name: Chief Information Security Officer (CISO) Workshop Training
       href: the-ciso-workshop.md
     - name: CISO Workshop videos
       href: the-ciso-workshop-videos.md
@@ -17,6 +17,6 @@
       - name: Module 4a -  Threat protection strategy, Part I
         href: ciso-workshop-module-4a.md
       - name: Module 4b -  Threat protection strategy, Part II
-        href: ciso-workshop-module-4b.mdmd
+        href: ciso-workshop-module-4b.md
       - name: Module 5 -  Information protection
         href: ciso-workshop-module-5.md

@@ -5,8 +5,8 @@
     href: the-ciso-workshop.md
   - name: CISO Workshop videos
     href: the-ciso-workshop-videos.md
-  - name: Archive
-      items:
+- name: Archive
+items:
      - name: Module 1 - Microsoft cybersecurity briefing
        href: ciso-workshop-module-1.md
      - name: Module 2 - Security management

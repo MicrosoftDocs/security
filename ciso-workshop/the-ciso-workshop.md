@@ -26,9 +26,9 @@ These best practices, references, and other guidance are based on real world les
 
 ## Who should watch this workshop?
 The workshop is useful for Security Teams, IT Teams, Business Leaders, and Cloud Teams, but is primarily focused on:
--	CISO + Security Directors - modernize security strategy and program components, integrate security into larger organization.
--	CIO + IT Directors - integrate security into technology program, cloud, and other initiatives.
--	Enterprise + Security Architects – and other roles with broad strategy/technology responsibilities.
+-	**CISO + Security Directors** - modernize security strategy and program components, integrate security into larger organization.
+-	**CIO + IT Directors** - integrate security into technology program, cloud, and other initiatives.
+-	**Enterprise + Security Architects** – and other roles with broad strategy/technology responsibilities.
 
 > [!NOTE]
 > The CISO workshop videos are modular so you can jump to any section of interest or start at the beginning and watch all the way through. 
@@ -38,11 +38,11 @@ Guidance on how to align security to continuously changing business priorities, 
 
 The workshop videos (about 4 hours total) and slides (link to PDF) are organized into these discussions: 
 
--	**Introduction and Overview** of the CISO Workshop 
+-	**[Introduction and Overview](the-ciso-workshop.md)** of the CISO Workshop 
 -	**[Part A - Key Context and Fundamentals](the-ciso-workshop-videos.md#part-a---key-context-and-fundamentals)**
      - **[Trends impacting security](the-ciso-workshop-videos.md#threat-environment-and-trends)** from the threat environment, technology, and business transformations
      - **[Evolution of security roles and responsibilities,](the-ciso-workshop-videos.md#roles--responsibilities)** including key best practices and trends to monitor
-     - **[Recommended strategy](the-ciso-workshop-videos.md#strategy-and-recommended-initiatives)** and strategic initiatives to improve your program: the role of Zero Trust in strategy, the (low) cost for attackers to purchasebuy tools and passwords, learnings on getting reliable information, and a business analysis of ransomware attacks.
+     - **[Recommended strategy](the-ciso-workshop-videos.md#strategy-and-recommended-initiatives)** and strategic initiatives to improve your program: the role of Zero Trust in strategy, the (low) cost for attackers to buy tools and passwords, learnings on getting reliable information, and a business analysis of ransomware attacks.
 -	**[Part B - Business Alignment](the-ciso-workshop-videos.md#part-b---business-alignment)**
     -	**[Engaging business leaders on security](the-ciso-workshop-videos.md#engaging-business-leaders-on-security)** – guidance to have a conversation in the language of leaders to explain security, key metrics to measure success of a program, and how to get support for security goals. 
     -	**[Risk Insights](the-ciso-workshop-videos.md#risk-insights)** – Discusses the dual mission of security to reduce risk to the organization and enable business goals, shares tips on aligning security business goals and business risk, and shares insights on the types of attacker motivations organization’s face. 
@@ -55,7 +55,7 @@ The workshop videos (about 4 hours total) and slides (link to PDF) are organized
     - **[Asset Protection](the-ciso-workshop-videos.md#asset-protection)** – Discusses two key imperatives for teams that manage and secure assets (often IT Operations or Workload operations in DevOps). These teams must prioritize security work based on business criticality and must strive to efficiently scale security across the large, growing, and continuously evolving set of assets in the technical estate.
     - **[Security Governance](the-ciso-workshop-videos.md#security-governance)** – Discusses the role of Security Governance as a bridge between the world of business goals and technology and how this is changing with the advent of cloud, digital and zero trust transformations. This also covers key components of security governance including risk, compliance, security architecture, posture management, (strategic) threat intelligence, and more.
     - **[Innovation Security](the-ciso-workshop-videos.md#innovation-security)** - Discussion of how application security evolves into a modern approach (including DevSecOps) and key focus areas to drive success of this capability.
-    - **[Security Governance Maturity models](the-ciso-workshop-videos.md#maturity-model---security-governance)** describing real world journeys for Security Architecture, Posture Management, and IT Security Maintenance– including specific concrete actions to help you move up to the next level
+    - **[Security Governance Maturity models](the-ciso-workshop-videos.md#maturity-model---security-governance)** describing real world journeys for *Security Architecture, Posture Management, and IT Security Maintenance* – including specific concrete actions to help you move up to the next level
     - **[Next Steps/Closing](the-ciso-workshop-videos.md#summary--next-steps)** – wraps up the workshop with key quick wins and next steps
 
 > [!NOTE]

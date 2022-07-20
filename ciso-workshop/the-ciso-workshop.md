@@ -16,7 +16,7 @@ description: "The Chief Information Security Office (CISO) workshop helps accele
 
 The Chief Information Security Office (CISO) workshop helps accelerate security program modernization with reference strategies built using Zero Trust principles. 
 
-The workshop covers all aspects of a comprehensive security program including strategic initiatives, roles and responsibilities, success metrics, maturity models, and more. [Videos](./the-ciso-workshop-videos.md) and [PDF of slides](./media/Microsoft%20CISO%20Workshop%20-%20Security%20Strategy%20and%20Program.pdf) are here .  
+The workshop covers all aspects of a comprehensive security program including strategic initiatives, roles and responsibilities, success metrics, maturity models, and more. [Videos](./the-ciso-workshop-videos.md) and [PDF of slides](./media/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) are here.  
 
 :::image type="content" source="./media/ciso-workshop-overview.png" alt-text="Overview of the CISO workshop" lightbox="./media/ciso-workshop-overview-popout.png":::
 

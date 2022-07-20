@@ -28,7 +28,7 @@ This video introduces the CISO workshop and provides an overview of its content.
 
 These videos discuss threat trends, security role & responsibility evolution, and the recommended strategy and the strategic initiatives to structure your security transformation.
 
-:::image type="content" source="./media/ciso-workshop-part-a.png" alt-text="Overview of the CISO workshop" lightbox="./media/ciso-workshop-part-a-popout.png":::
+:::image type="content" source="./media/ciso-workshop-part-a.png" alt-text="The CISO workshop part A - Context and Fundamentals" lightbox="./media/ciso-workshop-part-a-popout.png":::
 
 ### Threat Environment and Trends
 Both threats and the environments are complex and constantly changing. Security must keep up with business and technology transformation, especially as we see ransomware and "as a service" models impacting business.
@@ -55,7 +55,7 @@ Discussion of a modern security strategy and Zero Trust Transformation that alig
 ## Part B - Business Alignment
 These videos discuss how to engage business leaders on security, align to business priorities and risk management, integrate security in IT/Business and build business resilience
 
-:::image type="content" source="./media/ciso-workshop-part-b.png" alt-text="Overview of the CISO workshop" lightbox="./media/ciso-workshop-part-b-popout.png":::
+:::image type="content" source="./media/ciso-workshop-part-b.png" alt-text="The CISO workshop part B - Business Alignment" lightbox="./media/ciso-workshop-part-b-popout.png":::
 
 ### Engaging Business Leaders on Security
 Engaging business leaders on security topics can be tricky. This discussion helps Security leaders take a straightforward approach, covering topics like ransomware and destructive attacks in business language, recommendations for measuring security program success, and support that security teams need from business leaders. This helps you position security as an enabler and a partner to the larger organization. 
@@ -96,7 +96,7 @@ Review maturity model describing the real-world journey to improve Risk Insights
 ## Part C - Security Disciplines 
 These videos discuss how to provide a clear structure for your security program using five key disciplines
  
-:::image type="content" source="./media/ciso-workshop-part-c.png" alt-text="Overview of the CISO workshop" lightbox="./media/ciso-workshop-part-c-popout.png":::
+:::image type="content" source="./media/ciso-workshop-part-c.png" alt-text="Overview of the CISO workshop - Part C - Security Disciplines" lightbox="./media/ciso-workshop-part-c-popout.png":::
  
 ### Access Control
 Discussion of the Zero Trust approach to access control that includes strong authentication, blending identity and network access into a single approach, and the Known-Trusted-Allowed model. 

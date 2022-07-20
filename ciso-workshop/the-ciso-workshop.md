@@ -18,7 +18,7 @@ The Chief Information Security Office (CISO) workshop helps accelerate security 
 
 The workshop covers all aspects of a comprehensive security program including strategic initiatives, roles and responsibilities, success metrics, maturity models, and more. !!!!!Videos and PDF of slides are here .  
 
-:::image type="content" source="ciso-workshop-overview.png" alt-text="Overview of the CISO workshop" lightbox="ciso-workshop-overview-popout.png":::
+:::image type="content" source="./media/ciso-workshop-overview.png" alt-text="Overview of the CISO workshop" lightbox="./media/ciso-workshop-overview-popout.png":::
 
 ## Why should you make time to watch this workshop? 
 You'll get actionable advice on how to quickly increase your security program maturity, security posture, and ability to rapidly respond to attacks. 

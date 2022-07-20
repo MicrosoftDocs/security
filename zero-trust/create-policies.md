@@ -41,8 +41,8 @@ Defender for Cloud Apps has a capability called Cloud Discovery which analyzes y
 :::image type="content" source="media/m365-defender-mcas-architecture-b.png" alt-text="Image of Microsoft 365 Defender and cloud apps":::
 
 In this illustration, there are two methods that can be used to monitor network traffic and discover cloud apps that are being used by your organization.
-- A. Cloud App Discovery integrates with Microsoft Defender for Endpoint natively. Defender for Endpoint reports cloud apps and services being accessed from IT-managed Windows 10 and Windows 11 devices. 
-- B. For coverage on all devices connected to a network, the Defender for Cloud Apps log collector is installed on firewalls and other proxies to collect data from endpoints. This data is sent to Defender for Cloud Apps for analysis.
+- Cloud App Discovery integrates with Microsoft Defender for Endpoint natively. Defender for Endpoint reports cloud apps and services being accessed from IT-managed Windows 10 and Windows 11 devices. 
+- For coverage on all devices connected to a network, the Defender for Cloud Apps log collector is installed on firewalls and other proxies to collect data from endpoints. This data is sent to Defender for Cloud Apps for analysis.
 
 
 
@@ -100,7 +100,7 @@ Depending on the app to which you're connecting, API connection enables the foll
 
 For more information, see [Connect apps](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
 
-Defender for Cloud Apps provides end-to-end protection for connected apps using Cloud-to-Cloud integration, [API connectors](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps), and real-time access and session [controls leveraging our Conditional](/defender-cloud-apps/proxy-intro-aad) App Access Controls.
+Defender for Cloud Apps provides end-to-end protection for connected apps using Cloud-to-Cloud integration, [API connectors](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps), and real-time access and session controls leveraging our [Conditional App Access Controls](/defender-cloud-apps/proxy-intro-aad).
 
 For more information, see [Protecting connected apps](/defender-cloud-apps/protect-connected-apps).
 

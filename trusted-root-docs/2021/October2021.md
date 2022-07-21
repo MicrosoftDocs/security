@@ -3,7 +3,7 @@ title: October 2021 Deployment Notice - Microsoft Trusted Root Program
 description: This document provides details about the changes made in October 2021 to the root store.
 ms.date: 6/3/2022
 ms.service: security
-author: hasokol
+author: hasokol-ms
 ms.author: hasokol
 ms.topic: conceptual
 ---

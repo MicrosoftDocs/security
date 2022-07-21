@@ -3,7 +3,7 @@ title: April 2022 Deployment Notice - Microsoft Trusted Root Program
 description: This document provides details about the changes made in April 2022 to the root store.
 ms.date: 6/3/2022
 ms.service: security
-author: hasokol
+author: hasokol-ms
 ms.author: hasokol
 ms.topic: conceptual
 ---

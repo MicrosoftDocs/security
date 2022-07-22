@@ -64,6 +64,15 @@ Steps:
 
 
 
-## Scenario for using MCAS instead of Microsoft Information Protection
+## Discover and classify sensitive information in SaaS apps
 
-If the capability is not available in Purview, use Defender for Cloud Apps.
+
+
+
+## Apply sensitivity labels to SaaS apps
+
+
+
+
+## Extend DLP policies to cloud apps
+

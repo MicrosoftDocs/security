@@ -13,6 +13,9 @@ ms.topic: conceptual
 
 While protecting access to apps and session activities are important, the data that SaaS apps access may be one of the most critical resources that must be protected. Deploying information protection for SaaS apps is a key step in preventing inadvertent exposure of sensitive information.
 
+This solution builds on the Microsoft Information Protection solution guidance and guides you on how to use Defender for Cloud App to extend information protection to data in SaaS apps.
+
+
 Microsoft Purview Information Protection helps you discover, classify, and protect sensitive information wherever it lives or travels. These information protection capabilities give you the tools to know your data, protect your data, and prevent data loss.
 
 :::image type="content" source="media/powered-by-intelligent-platform.png" alt-text="Image of how Microsoft Purview Information Protection helps you discover, classify, and protect sensitive data" lightbox="media/powered-by-intelligent-platform.png":::
@@ -32,6 +35,7 @@ After identifying and classifying your data, you can then proceed to protect you
 
 
 
+:::image type="content" source="media/information-protection-saas.png" alt-text="Image of flow chart of using information protection to protect data on SaaS apps" lightbox="media/information-protection-saas.png":::
 
 
 

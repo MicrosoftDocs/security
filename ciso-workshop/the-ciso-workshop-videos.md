@@ -106,7 +106,7 @@ Discussion of how application security evolves into a modern approach (including
 ### Maturity Model - Security Governance
 Review maturity model describing the real-world journey to improve Security Architecture, Posture Management, and IT Security Maintenance. This includes a discussion of specific concrete actions to help you move these disciplines up to the next level.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50XOv]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50XO6]
 
 ### Summary & Next Steps
 Wrap-up of the workshop with key quick wins and next steps

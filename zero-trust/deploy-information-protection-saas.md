@@ -20,7 +20,7 @@ Microsoft Purview Information Protection helps you discover, classify, and prote
 
 :::image type="content" source="media/powered-by-intelligent-platform.png" alt-text="Image of how Microsoft Purview Information Protection helps you discover, classify, and protect sensitive data" lightbox="media/powered-by-intelligent-platform.png":::
 
-To know your data you must identify and classify your data. To identify your data, you must define what is considered to be sensitive information for your organization. Define sensitive information using the Microsoft Purview Information Protection portal to create sensitive types and labels, and once defined they will be available in Defender for Cloud Apps.
+To know your data you must identify and classify your data. To identify your data, you need to define what is considered to be sensitive information for your organization. Define sensitive information using the Microsoft Purview Information Protection portal to create sensitive types and labels, and once defined they will be available in Defender for Cloud Apps.
 
 
 Defender for Cloud Apps is natively integrated with Microsoft Purview Information Protection and the same sensitive types and labels are available throughout both services. You can also use advanced classifications types such as fingerprint or Exact Data Match (EDM).

@@ -18,7 +18,7 @@ This solution builds on the Microsoft Information Protection solution guidance a
 
 Microsoft Purview Information Protection helps you discover, classify, and protect sensitive information wherever it lives or travels. These information protection capabilities give you the tools to know your data, protect your data, and prevent data loss.
 
-:::image type="content" source="media/powered-by-intelligent-platform.png" alt-text="Image of how Microsoft Purview Information Protection helps you discover, classify, and protect sensitive data" lightbox="media/powered-by-intelligent-platform.png":::
+:::image type="content" source="media/information-protection-saas-flow.png" alt-text="Image of how to deploy information protection on SaaS apps using Microsoft 365" lightbox="media/information-protection-saas-flow.png":::
 
 To know your data you must identify and classify your data. To identify your data, you need to define what is considered to be sensitive information for your organization. Define sensitive information using the Microsoft Purview Information Protection portal to create sensitive types and labels, and once defined they will be available in Defender for Cloud Apps.
 

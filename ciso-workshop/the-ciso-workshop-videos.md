@@ -96,7 +96,7 @@ Discussion of key imperatives for teams that manage and secure assets, including
 ### Security Governance
 Discussion of how Security Governance is being modernized and bridges the world of business goals and technology. This also covers the different components of security governance including risk, compliance, security architecture, posture management, (strategic) threat intelligence, and more. 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50XOH]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50XOv]
 
 ### Innovation Security
 Discussion of how application security evolves into a modern approach (including DevSecOps) and key focus areas to drive success of this capability. 

@@ -56,7 +56,7 @@ We've also covered these steps in [Step 2. Create Defender for Cloud Apps polici
 
 
 ## Apply sensitivity labels to SaaS apps
-After discovering and classifying sensitive information, you need to apply sensitivity labels on them so that appropriate action can be applied to protect file. For example, a file that is labeled "Confidential" may be encrypted and have a "Confidential" watermark applied to it.
+After discovering and classifying sensitive information, you need to apply sensitivity labels on them so that appropriate action can be applied to protect files. For example, a file that is labeled "Confidential" may be encrypted and have a "Confidential" watermark applied to it.
 
 
 Defender for Cloud Apps is natively integrated with Microsoft Purview Information Protection and the same sensitive types and labels are available throughout both services. So when you want to define sensitive information, head over to the Microsoft Purview Information Protection portal to create them, and once defined they will be available in Defender for Cloud Apps.
@@ -64,5 +64,11 @@ Defender for Cloud Apps is natively integrated with Microsoft Purview Informatio
 For more information, see [Apply Microsoft Information Protection labels automatically](/defender-cloud-apps/use-case-information-protection).
 
 
-## Extend DLP policies to cloud apps
+## Extend DLP policies to SaaS apps
 
+For apps with connectors, 
+
+
+You can scope DLP policies to Microsoft Defender for Cloud Apps to monitor, detect and take actions when sensitive items are used and shared via non-Microsoft cloud apps.
+
+For more information, see [Use data loss prevention policies for non-Microsoft cloud apps](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps).

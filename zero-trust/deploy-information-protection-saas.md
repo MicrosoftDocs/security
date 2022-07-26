@@ -23,7 +23,7 @@ This solution builds on the Microsoft Information Protection solution guidance a
 :::image type="content" source="media/information-protection-saas-flow.png" alt-text="Image of how to deploy information protection on SaaS apps using Microsoft 365" lightbox="media/information-protection-saas-flow.png":::
 
 
-To protect data in SaaS apps, you must first identify and classify data. To identify your data, you need to define what is considered to be sensitive information for your organization. You can define sensitive information using the Microsoft Purview Information Protection portal and create sensitive types and labels. Once they have been defined they will be available in Defender for Cloud Apps. Defender for Cloud Apps is natively integrated with Microsoft Purview Information Protection and the same sensitive types and labels are available throughout both services.
+To protect data in SaaS apps, you must first identify and classify data. To identify your data, you need to define what is considered to be sensitive information for your organization. You can define sensitive information using the Microsoft Purview Information Protection portal and create sensitive information types and labels. Defender for Cloud Apps is natively integrated with Microsoft Purview Information Protection and the same sensitive types and labels are available throughout both services after they are created.
 
 
 After identifying and classifying your data, you can then proceed to protect your data by applying sensitivity labels out to SaaS apps. 

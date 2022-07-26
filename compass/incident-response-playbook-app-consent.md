@@ -58,7 +58,7 @@ To start the investigation process, you need the following data:
 
 Ensure you complete the following installations and configuration requirements:
 
-1. The AzureAD and MSOnline PowerShell modules are installed.
+1. The AzureAD PowerShell module is installed.
 2. You have global administrator rights on the tenant that the script will be run against.
 3. You are assigned local administrator role on the computer that you will use to run the scripts.
 
@@ -72,27 +72,6 @@ Install-Module -Name AzureAD -Verbose
 
 >[!Note]
 >If you are prompted to install the modules from an untrusted repository, type **Y** and press **Enter**.
->
-
-
-#### Install the MSOnline PowerShell module
-
-1. Run the Windows PowerShell app with elevated privileges (run as administrator).
-2. Run this command to allow PowerShell to run signed scripts.
-
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    ```
-
-3. Install the MSOnline module with this command.
-
-    ```powershell
-    Install-Module -Name MSOnline -Verbose
-    ```
-
-    >[!Note]
-    >If you are prompted to install the modules from an untrusted repository, type **Y** and press **Enter**.
-    >
 
 #### Download the AzureADPSPermissions Script from GitHub
 

@@ -45,12 +45,23 @@ Use the following steps to guide you in using Microsoft 365 products so that you
 
 ## Discover and classify sensitive information in SaaS apps
 
+The first step in discovering which data is being used in your organization, is to connect cloud apps used in your organization to Defender for Cloud Apps. Once connected, Defender for Cloud Apps can scan data, add classifications, and enforce policies and controls. 
+
+You can use one of the following steps to connect apps:
+- [Use an app connector](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
+- [Use Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad)
+
+We've also covered these steps in [Step 2. Create Defender for Cloud Apps policies](create-policies.md).
 
 
 
 ## Apply sensitivity labels to SaaS apps
+After discovering and classifying sensitive information, you need to apply sensitivity labels on them so that appropriate action can be applied to protect file. For example, a file that is labeled "Confidential" may be encrypted and have a "Confidential" watermark applied to it.
 
 
+Defender for Cloud Apps is natively integrated with Microsoft Purview Information Protection and the same sensitive types and labels are available throughout both services. So when you want to define sensitive information, head over to the Microsoft Purview Information Protection portal to create them, and once defined they will be available in Defender for Cloud Apps.
+
+For more information, see [Apply Microsoft Information Protection labels automatically](/defender-cloud-apps/use-case-information-protection).
 
 
 ## Extend DLP policies to cloud apps

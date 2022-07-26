@@ -188,7 +188,7 @@
         href: integrate-saas-apps.md
       - name: Step 1. Add SaaS apps to Azure AD and to the scope of policies
         href: add-saas-apps.md
-      - name: Step 2. Create Defender for Cloud apps policies
+      - name: Step 2. Create Defender for Cloud Apps policies
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md

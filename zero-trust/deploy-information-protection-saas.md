@@ -15,6 +15,9 @@ While protecting access to apps and session activities are important, the data t
 
 This solution builds on the Microsoft Information Protection solution guidance and guides you on how to use Defender for Cloud Apps to extend information protection to data in SaaS apps.
 
+The key concepts surrounding information protection involves knowing your data, protecting your data, and preventing data loss. 
+
+:::image type="content" source="media/saas-know-protect-detect.png" alt-text="Image of how to deploy information protection on SaaS apps using Microsoft 365 by knowing, protecting, and preventing data loss" lightbox="media/saas-know-protect-detect.png":::
 
 
 :::image type="content" source="media/saas-information-protection-flow.png" alt-text="Image of how to deploy information protection on SaaS apps using Microsoft 365" lightbox="media/saas-information-protection-flow.png":::
@@ -45,14 +48,15 @@ Use the following steps to guide you in using Microsoft 365 products so that you
 
 ## Discover and classify sensitive information in SaaS apps
 
-The first step in discovering which data is being used in your organization, is to connect cloud apps used in your organization to Defender for Cloud Apps. Once connected, Defender for Cloud Apps can scan data, add classifications, and enforce policies and controls. 
+The first step in discovering which data is being used in your organization, is to connect cloud apps to Defender for Cloud Apps. Once connected, Defender for Cloud Apps can scan data, add classifications, and enforce policies and controls. 
 
 You can use one of the following steps to connect apps:
 - [Use an app connector](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
 - [Use Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad)
 
-We've also covered these steps in [Step 2. Create Defender for Cloud Apps policies](create-policies.md).
 
+
+For more information, see [Learn about sensitivity labels]().
 
 
 ## Apply sensitivity labels to SaaS apps

@@ -17,7 +17,7 @@ This solution builds on the Microsoft Information Protection solution guidance a
 
 The key concepts surrounding information protection involves knowing your data, protecting your data, and preventing data loss. 
 
-:::image type="content" source="media/saas-know-protect-prevent.png" alt-text="Image of how to deploy information protection on SaaS apps using Microsoft 365 by knowing, protecting, and preventing data loss" lightbox="media/saas-know-protect-detect.png":::
+:::image type="content" source="media/saas-know-protect-prevent.png" alt-text="Image of how to deploy information protection on SaaS apps using Microsoft 365 by knowing, protecting, and preventing data loss" lightbox="media/saas-know-protect-prevent.png":::
 
 
 :::image type="content" source="media/saas-information-protection-flow.png" alt-text="Image of how to deploy information protection on SaaS apps using Microsoft 365" lightbox="media/saas-information-protection-flow.png":::

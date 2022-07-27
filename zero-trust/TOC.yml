@@ -220,8 +220,13 @@
       - name: Developer and IT Pro responsibilities
         href: develop/identity-developer-administrator-responsibilities.md
     - name: Identity
-      expanded: false
-      href: develop/identity.md
+      items:
+      - name: Zero Trust approach to identity
+        href: develop/identity.md
+      - name: Identity and account types for apps
+        href: develop/identity-supported-account-types.md
+      - name: Non-user application identity
+        href: develop/identity-non-user-applications.md
 - name: Resources
   expanded: false
   items:

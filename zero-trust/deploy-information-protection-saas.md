@@ -49,7 +49,7 @@ You can use one of the following steps to connect apps:
 
 
 
-For more information, see [Learn about sensitivity labels]().
+For more information, see [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
 
 
 ## Apply sensitivity labels to SaaS apps
@@ -63,9 +63,13 @@ For more information, see [Apply Microsoft Information Protection labels automat
 
 ## Extend DLP policies to SaaS apps
 
+With data loss prevention (DLP) policies, you can identify, monitor, and automatically protect sensitive information. 
+
+Data loss prevention policies can use sensitivity labels and sensitive information types to identify sensitive information.
+
 You can scope DLP policies to Microsoft Defender for Cloud Apps to monitor, detect and take actions when sensitive items are used and shared via non-Microsoft cloud apps.
 
-For more information, see [Use data loss prevention policies for non-Microsoft cloud apps](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps).f
+For more information, see [Use data loss prevention policies for non-Microsoft cloud apps](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps).
 
  
 

@@ -33,13 +33,13 @@ Use the following steps to guide you in using Microsoft 365 products so that you
 
 |Step  |Description  |
 |---------|---------|
-|1     |  Discover and classify sensitive data in SaaS apps       |
+|1     |  Discover sensitive information in SaaS apps       |
 |2     |  Apply sensitivity labels to SaaS apps   |
 |3     |  Extend DLP policies to cloud apps |
 
 
 
-## Discover and classify sensitive information in SaaS apps
+## Discover sensitive information in SaaS apps
 
 The first step in discovering which data is being used in your organization, is to connect cloud apps to Defender for Cloud Apps. Once connected, Defender for Cloud Apps can scan data, add classifications, and enforce policies and controls. 
 
@@ -62,10 +62,31 @@ For more information, see [Apply Microsoft Information Protection labels automat
 
 
 ## Extend DLP policies to SaaS apps
+In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
 
-With data loss prevention (DLP) policies, you can identify, monitor, and automatically protect sensitive information. 
+- Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
+- Office applications such as Word, Excel, and PowerPoint
+- Windows 10, Windows 11 and macOS (Catalina 10.15 and higher) endpoints
+- non-Microsoft cloud apps
+- on-premises file shares and on-premises SharePoint.
+
+
+
+
+With data loss prevention (DLP) policies, you can identify, monitor, and automatically protect sensitive information.
+
+
+
+
 
 Data loss prevention policies can use sensitivity labels and sensitive information types to identify sensitive information.
+
+
+To protect information on sensitive information beyond the listed items, use Microsoft Defender for Cloud Apps....to....
+
+
+
+
 
 You can scope DLP policies to Microsoft Defender for Cloud Apps to monitor, detect and take actions when sensitive items are used and shared via non-Microsoft cloud apps.
 

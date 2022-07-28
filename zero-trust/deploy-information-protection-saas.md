@@ -11,9 +11,9 @@ ms.topic: conceptual
 # Step 3: Deploy information protection for SaaS apps 
  
 
-While protecting access to apps and session activities are important, the data that SaaS apps access may be one of the most critical resources that must be protected. Deploying information protection for SaaS apps is a key step in preventing inadvertent exposure of sensitive information.
+While protecting access to apps and session activities are important, the data that SaaS apps contain may be one of the most critical resources that must be protected. Deploying information protection for SaaS apps is a key step in preventing inadvertent exposure of sensitive information.
 
-This solution builds on the Microsoft Information Protection solution guidance and guides you on how to use Defender for Cloud Apps to extend information protection to data in SaaS apps.
+This solution builds on the Microsoft Information Protection solution guidance and guides you on how to use Defender for Cloud Apps to extend information protection to data in SaaS apps. You may want to review the guidance to gain better understanding of the overall workflow. For more information, see [Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution).
 
 The key concepts surrounding information protection involves knowing your data, protecting your data, and preventing data loss. 
 

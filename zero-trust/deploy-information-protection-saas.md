@@ -37,6 +37,8 @@ Use the following steps to guide you in using Microsoft 365 products so that you
 |1     |  Discover sensitive information in SaaS apps       |
 |2     |  Apply sensitivity labels to SaaS apps   |
 |3     |  Extend DLP policies to cloud apps |
+|4     | Protect your data  |
+|5     | Monitor and report on your data |
 
 
 
@@ -56,7 +58,7 @@ By integrating Microsoft Purview Information Protection into Defender for Cloud 
 - The ability to create policies to make sure classified files are being handled properly
 
 
-For more information, see []().
+For more information, see [Microsoft Purview Information Protection integration](/defender-cloud-apps/azip-integration).
 
 
 Once you know the kinds of information you want to protect, it's time to create policies to detect them. 
@@ -64,10 +66,10 @@ Once you know the kinds of information you want to protect, it's time to create 
 You can create policies for **files** and for **sessions**. File policies scan the content of files stored in your API connected cloud apps. Session policies scan and protect files in real time on access to prevent data exfiltration, protect files on download, prevent the upload of unlabeled files.
 
 
-Files are scanned using one of our supported inspection methods. You can use Data Classification Services which uses classification decisions you've made across Office 365, Microsoft Purview Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
+Files are scanned using one of our supported inspection methods such as Data Classification Services. You can use Data Classification Services which uses classification decisions you've made across Office 365, Microsoft Purview Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
 
 
-For more information, see []().
+For more information, see [Microsoft Data Classification Services integration](/defender-cloud-apps/dcs-inspection).
 
 
 ## Apply sensitivity labels to SaaS apps
@@ -113,3 +115,13 @@ For more information, see [Use data loss prevention policies for non-Microsoft c
  
 
 You can also apply sensitivity labels from Microsoft Purview Information Protection. For more information, see [Apply Microsoft Purview Information Protection labels automatically](/defender-cloud-apps/use-case-information-protection).
+
+
+
+
+## Protect your data
+
+
+
+
+## Monitor your data

@@ -62,7 +62,7 @@ It is critical to work together as an organization, create partnerships, and edu
 
 ### Identify and categorize privileged accounts (Azure AD)
 
-- **What**: Identify all roles and groups with high business impact that will require privileged security level (immediately or over time). Additional specialized roles will be identified in later stages. 
+- **What**: Identify all roles and groups with high business impact that will require privileged security level (immediately or over time). These administrators will require sparate accounts in a later step [Privileged access administration](critical-impact-accounts.md#separate-accounts-for-admins).
 - **Why**: This step is required to identify and minimize the number of people that require separate accounts and privileged access protection
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
@@ -70,7 +70,7 @@ It is critical to work together as an organization, create partnerships, and edu
      - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
      - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-- **How**: After turning on Azure AD Privileged Identity Management, view the users who are in the following Azure AD roles:
+- **How**: After turning on Azure AD Privileged Identity Management, view the users who are in the following Azure AD roles at a minimum based on your organizations risk policies:
   - Global administrator
   - Privileged role administrator
   - Exchange administrator

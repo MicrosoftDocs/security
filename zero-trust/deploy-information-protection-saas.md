@@ -56,6 +56,18 @@ By integrating Microsoft Purview Information Protection into Defender for Cloud 
 - The ability to create policies to make sure classified files are being handled properly
 
 
+For more information, see []().
+
+
+Once you know the kinds of information you want to protect, it's time to create policies to detect them. 
+
+You can create policies for **files** and for **sessions**. File policies scan the content of files stored in your API connected cloud apps. Session policies scan and protect files in real time on access to prevent data exfiltration, protect files on download, prevent the upload of unlabeled files.
+
+
+Files are scanned using one of our supported inspection methods. You can use Data Classification Services which uses classification decisions you've made across Office 365, Microsoft Purview Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.
+
+
+For more information, see []().
 
 
 ## Apply sensitivity labels to SaaS apps

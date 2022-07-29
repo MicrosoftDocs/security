@@ -1,5 +1,5 @@
 ---
-title: Step 1. Explicitly validate trust for all access requests
+title: RaMP Checklist — Explicitly validate trust for all access requests
 description: Explicitly validate trust for all access requests 
 ms.service: security
 ms.author: josephd
@@ -8,7 +8,7 @@ manager: dansimp
 ms.topic: conceptual
 ---
 
-# Checklist — Explicitly validate trust for all access requests
+# RaMP Checklist — Explicitly validate trust for all access requests
 
 This Rapid Modernization Plan (RaMP) checklist helps you establish a security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access, for both public and private networks.
 

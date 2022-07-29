@@ -1,5 +1,5 @@
 ---
-title: Step 3. Data
+title: RaMP checklist — Data protection
 description: Data
 ms.service: security
 ms.author: josephd

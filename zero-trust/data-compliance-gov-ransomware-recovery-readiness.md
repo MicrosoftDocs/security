@@ -1,5 +1,5 @@
 ---
-title: Step 2. Ransomware recovery readiness
+title: RaMP checklist —  Ransomware recovery readiness
 description: Ransomware recovery readiness 
 ms.service: security
 ms.author: josephd

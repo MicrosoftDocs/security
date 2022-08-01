@@ -73,7 +73,7 @@ Disabling legacy authentication can be difficult, as some users may not want to 
 
 ## No on-premises admin accounts in cloud identity providers
 
-**Best practice:** Don’t synchronize higly privileged Active Directory Domain Services accounts (like Domain, Enterprise, and Schema admins) to Azure AD.
+**Best practice:** Don’t synchronize highly privileged Active Directory Domain Services accounts (like Domain, Enterprise, and Schema admins) to Azure AD.
 
 This mitigates the risk of an adversary pivoting to full control of on-premises assets following a successful compromise of a cloud account. This helps contain the scope of an incident from growing significantly.
 

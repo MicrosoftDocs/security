@@ -58,7 +58,7 @@ By integrating Microsoft Purview Information Protection into Defender for Cloud 
 - The ability to create policies to make sure classified files are being handled properly
 
 
-For more information, see [Microsoft Purview Information Protection integration](/defender-cloud-apps/azip-integration).
+For more information, see [How to integrate Microsoft Purview Information Protection with Defender for Cloud Apps](/defender-cloud-apps/azip-integration#how-to-integrate-microsoft-purview-information-protection-with-defender-for-cloud-apps).
 
 
 Once you know the kinds of information you want to protect, it's time to create policies to detect them. 
@@ -82,15 +82,34 @@ For more information, see [Apply Microsoft Information Protection labels automat
 
 
 ## Extend DLP policies to SaaS apps
-In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
 
-- Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
-- Office applications such as Word, Excel, and PowerPoint
-- Windows 10, Windows 11 and macOS (Catalina 10.15 and higher) endpoints
-- non-Microsoft cloud apps
-- on-premises file shares and on-premises SharePoint.
+Depending on the SaaS apps that you have in your environment, you have various DLP solution options. Use the following table to guide you in your decision making process:
 
 
+
+Scenario | Tool 
+:---|:---
+If your environment has the following products:<br> <br> - Exchange Online email <br> - SharePoint Online sites <br>- OneDrive accounts <br>- Teams chat and channel messages <br>  - Microsoft Defender for Cloud Apps<br>  - Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices <br> - On-premises repositories<br>- PowerBI sites | Use Microsoft Purview. <br> You implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items |
+Your organization uses other apps that are not covered in Microsoft Purview, but can be connected to Microsoft Defender for Cloud Apps. For more information on what apps can be connected, see [Connect apps](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps).<br> | Use Microsoft Defender for Cloud Apps. <br><br> Defender for Cloud Apps has a built-in DLP solution which inspects files for sensitive information using a built-in DLP content instpection engine. 
+
+
+
+
+
+
+
+In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items, You can apply DLP policies to data at rest, data in use, and data in motion in locations. 
+
+
+
+
+
+
+
+
+
+
+If your SaaS apps is not 
 
 
 With data loss prevention (DLP) policies, you can identify, monitor, and automatically protect sensitive information.

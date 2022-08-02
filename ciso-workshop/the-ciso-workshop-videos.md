@@ -29,37 +29,37 @@ These videos discuss threat trends, security role & responsibility evolution, an
 :::image type="content" source="./media/ciso-workshop-part-a.png" alt-text="The CISO workshop part A - Context and Fundamentals" lightbox="./media/ciso-workshop-part-a-popout.png":::
 
 ### Threat Environment and Trends
-Both threats and the environments are complex and constantly changing. Security must keep up with business and technology transformation, especially as we see ransomware and "as a service" models impacting business.
+Both the threat environment and the technical estates we operate are complex and constantly changing. Security must keep up with business and technology transformation, especially as we see ransomware and "as a service" models impacting business.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50rYg]
 
 ### Roles & Responsibilities
-Technology risks are changing, and organizations must manage many different functions to keep up - Prevent, respond, govern, architect, compliance, and more
+This video discusses how the jobs to be done in security are evolving
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50XM1]
 
 ### Strategy and Recommended Initiatives
-Discussion of a modern security strategy and Zero Trust Transformation that aligns to business goals, digital transformation, and cloud transformation. This includes 5 strategic initiatives to modernize your security program and capabilities using Zero Trust principles. This also includes guidance on avoiding extreme approaches that result in increased risk – skipping security completely and overly restrictive security. 
+This video discusses the Zero Trust Transformation and modern security strategy that align to business goals, digital transformation, and cloud transformation. The 5 strategic initiatives in this video describe how to modernize your security program and capabilities using Zero Trust principles. This also includes guidance on avoiding extreme approaches that result in increased risk – skipping security completely and overly restrictive security. 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50zLL]
 
 ## Part B - Business Alignment
-These videos discuss how to engage business leaders on security, align to business priorities and risk management, integrate security in IT/Business and build business resilience
+These videos discuss how to engage business leaders on security, align to business priorities and risks, integrate security in IT/Business and build business resilience
 
 :::image type="content" source="./media/ciso-workshop-part-b.png" alt-text="The CISO workshop part B - Business Alignment" lightbox="./media/ciso-workshop-part-b-popout.png":::
 
 ### Engaging Business Leaders on Security
-Engaging business leaders on security topics can be tricky. This discussion helps Security leaders take a straightforward approach, covering topics like ransomware and destructive attacks in business language, recommendations for measuring security program success, and support that security teams need from business leaders. This helps you position security as an enabler and a partner to the larger organization. 
+Engaging business leaders on security topics can be tricky. This video uses a role playing approach to help security leaders take a straightforward approach with business leaders in their language. The conversation covers topics like ransomware and destructive attacks in business language, recommendations for measuring security program success, and asking for key business leader support that security teams need. This conversation helps you position security as an enabler and a partner to the larger organization.  
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50F9t]
 
 ### Risk Insights
-Discussion on how to align security priorities to business goals and existing risk management frameworks. This includes a discussion on security’s dual goal of enabling business and reducing risk, as well as the various cybersecurity risk sources (and how these threats mirror legitimate organizations). 
+This video discusses how to align security priorities to business goals and existing risk management frameworks. This covers security’s dual goal of enabling business and reducing risk, as well as the various cybersecurity risk sources (and how these threats mirror legitimate organizations). 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50XNA]
 
 ### Security Integration
-Discussion on how to successfully integrate security into IT and business processes and how to structure collaboration between security functions. This includes analysis on a critically important emerging discipline of security posture management, an operational function focused on reducing risk with visibility and preventative controls (in partnership with asset owners). 
+Discussion on how to successfully integrate security into IT and business processes and how to structure collaboration between security functions. This includes details on an emerging but critically important discipline of security posture management that focuses on reducing risk with visibility and preventative controls.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50zM5]
 
@@ -69,42 +69,42 @@ Business resilience is the North Star of security programs, reducing business im
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50SQv]
 
 ### Maturity Model - Business Alignment
-Review maturity model describing the real-world journey to improve Risk Insights, Security Integration, and Business Resilience. This includes a discussion of specific concrete actions to help you move up to the next level.
+This video provides a review of maturity models describing the real-world journey to improve Risk Insights, Security Integration, and Business Resilience. This includes a discussion of specific concrete actions to help you move up to the next level.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50zM8]
 
 ## Part C - Security Disciplines 
-These videos discuss how to provide a clear structure for your security program using five key disciplines
+These videos discuss how to provide a clear structure for your security program using five key security disciplines
  
 :::image type="content" source="./media/ciso-workshop-part-c.png" alt-text="Overview of the CISO workshop - Part C - Security Disciplines" lightbox="./media/ciso-workshop-part-c-popout.png":::
  
 ### Access Control
-Discussion of the Zero Trust approach to access control that includes strong authentication, blending identity and network access into a single approach, and the Known-Trusted-Allowed model. 
+This video is a discussion of the Zero Trust approach to access control that includes strong authentication, blending identity and network access into a single approach, and the Known-Trusted-Allowed model. 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50SQQ] 
 
 ### Security Operations
-Discussion of modern security operations including key success metrics, key touchpoints with business leaders and functions, and key cultural elements. 
+This video discusses modern security operations including key success metrics, key touchpoints with business leaders and functions, and key cultural elements. 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50XOt]
 
 ### Asset Protection
-Discussion of key imperatives for teams that manage and secure assets, including prioritizing security based on business criticality and scaling efficiently across the large and growing set of assets in the technical estate. 
+This is a discussion of key imperatives for teams that manage and secure assets, including prioritizing security based on business criticality and scaling efficiently across the large and growing set of assets in the technical estate. 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50XOu]
 
 ### Security Governance
-Discussion of how Security Governance is being modernized and bridges the world of business goals and technology. This also covers the different components of security governance including risk, compliance, security architecture, posture management, (strategic) threat intelligence, and more. 
+This video describes Security Governance modernization and bridges the world of business goals and technology. This also covers the different components of security governance including risk, compliance, security architecture, posture management, (strategic) threat intelligence, and more. 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50XOv]
 
 ### Innovation Security
-Discussion of how application security evolves into a modern approach (including DevSecOps) and key focus areas to drive success of this capability. 
+This video discusses how application security evolves into a modern approach (including DevSecOps) and key focus areas to drive success of this capability. 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50PhV]
 
 ### Maturity Model - Security Governance
-Review maturity model describing the real-world journey to improve Security Architecture, Posture Management, and IT Security Maintenance. This includes a discussion of specific concrete actions to help you move these disciplines up to the next level.
+This video provides a review of maturity model for the real-world journey to improve Security Architecture, Posture Management, and IT Security Maintenance. This includes a discussion of specific concrete actions to help you move these disciplines up to the next level.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50XO6]
 

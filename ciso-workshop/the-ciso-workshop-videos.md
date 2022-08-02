@@ -49,7 +49,7 @@ These videos discuss how to engage business leaders on security, align to busine
 :::image type="content" source="./media/ciso-workshop-part-b.png" alt-text="The CISO workshop part B - Business Alignment" lightbox="./media/ciso-workshop-part-b-popout.png":::
 
 ### Engaging Business Leaders on Security
-Engaging business leaders on security topics can be tricky. This video uses a role playing approach to help security leaders take a straightforward approach with business leaders in their language. The conversation covers topics like ransomware and destructive attacks in business language, recommendations for measuring security program success, and asking for key business leader support that security teams need. This conversation helps you position security as an enabler and a partner to the larger organization.  
+Engaging business leaders on security topics can be tricky. This video uses a role playing approach to help security leaders take a straightforward approach with business leaders in their language. This discusses attacks and risks in business language, recommendations for measuring security program success, and asking for key business leader support that security teams need. This conversation helps you position security as an enabler and a partner to the larger organization.  
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50F9t]
 

@@ -75,8 +75,10 @@ For more information, see [Microsoft Data Classification Services integration](/
 ## Apply sensitivity labels to SaaS apps
 After discovering and classifying sensitive information, you need to apply sensitivity labels on them so that appropriate action can be taken to protect files. For example, a file that is labeled "Confidential" may be encrypted and have a "Confidential" watermark applied to it.
 
-
 Defender for Cloud Apps is natively integrated with Microsoft Purview Information Protection and the same sensitive types and labels are available throughout both services. So when you want to define sensitive information, head over to the Microsoft Purview Information Protection portal to create them, and once defined they will be available in Defender for Cloud Apps.
+
+
+Defender for Cloud Apps lets you automatically apply sensitivity labels from Microsoft Purview Information Protection. These labels will be applied to files as a file policy governance action, and depending on the label configuration, can apply encryption for additional protection.
 
 For more information, see [Apply Microsoft Information Protection labels automatically](/defender-cloud-apps/use-case-information-protection).
 
@@ -96,7 +98,6 @@ For more information see, [File governance actions](/defender-cloud-apps/governa
 Depending on the SaaS apps that you have in your environment, you have various options to choose from to deploy a DLP solution. Use the following table to guide you in your decision making process:
 
 
-
 Scenario | Tool 
 :---|:---
 Your environment has the following products:<br> <br> - Exchange Online email <br> - SharePoint Online sites <br>- OneDrive accounts <br>- Teams chat and channel messages <br>  - Microsoft Defender for Cloud Apps<br>  - Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices <br> - On-premises repositories<br>- PowerBI sites | Use Microsoft Purview.  <br><br> <br><br> For more information, see [Learn about DLP](/microsoft-365/compliance/dlp-learn-about-dlp). |
@@ -107,12 +108,12 @@ For more information, see [Use data loss prevention policies for non-Microsoft c
 
 
  
-
-
-
-
-
-
-
-
 ## Monitor your data
+
+Now that your policies are in place, you'll want to check your Microsoft Defender for Cloud Apps dashboard daily to see and investigate new alerts. The information presented in the dashboard is an overview of all the most important information about your organization.
+
+
+For more information, see [Check the dashboard](/defender-cloud-apps/daily-activities-to-protect-your-cloud-environment#check-the-dashboard).
+
+
+

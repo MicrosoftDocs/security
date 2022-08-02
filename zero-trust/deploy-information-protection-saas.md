@@ -82,7 +82,7 @@ For more information, see [Apply Microsoft Information Protection labels automat
 
 
 ## Protect your data
-After applying sensitivity labels and identifying files with sensitive information you'll want to take action on the files to protect them.  Actions include, but are not limited to, Microsoft Purview Information Protection native controls, API provided actions, and real-time monitoring. The kind of governance you can apply depends on the type of policy you are configuring. 
+After applying sensitivity labels and identifying files with sensitive information, you'll want to take action on the files to protect them.  Actions include, but are not limited to, Microsoft Purview Information Protection native controls, API provided actions, and real-time monitoring. The kind of governance you can apply depends on the type of policy you are configuring. 
 
 
 You can apply file governance actions which uses cloud app provider's API and our native integrations to secure files. You can also use session policy controls which uses reverse proxy capabilities to protect files. 

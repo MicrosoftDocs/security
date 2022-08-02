@@ -26,7 +26,7 @@ To protect data in SaaS apps, you must first identify and classify data. To iden
 After identifying and classifying your data, you can then proceed to protect your data by applying sensitivity labels out to SaaS apps. 
 
 
-To prevent data loss, you can create and apply data loss prevention (DLP) policies protection actions that such as encryption, access restrictions, and other actions. 
+To prevent data loss, you can create and apply data loss prevention (DLP) policies protection actions such as encryption, access restrictions, and other actions. 
 
 
 Use the following steps to guide you in using Microsoft 365 products so that you can apply information protection capabilities on SaaS apps:
@@ -73,7 +73,7 @@ For more information, see [Microsoft Data Classification Services integration](/
 
 
 ## Apply sensitivity labels to SaaS apps
-After discovering and classifying sensitive information, you need to apply sensitivity labels on them so that appropriate action can be taken to protect files. For example, a file that is labeled "Confidential" may be encrypted and have a "Confidential" watermark applied to it.
+After discovering and classifying sensitive information, you need to apply sensitivity labels. When a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. For example, a file that is labeled "Confidential" may be encrypted and have a "Confidential" watermark applied to it.
 
 Defender for Cloud Apps is natively integrated with Microsoft Purview Information Protection and the same sensitive types and labels are available throughout both services. So when you want to define sensitive information, head over to the Microsoft Purview Information Protection portal to create them, and once defined they will be available in Defender for Cloud Apps.
 
@@ -84,7 +84,7 @@ For more information, see [Apply Microsoft Information Protection labels automat
 
 
 ## Protect your data
-After applying sensitivity labels and identifying files with sensitive information, you'll want to take action on the files to protect them.  Actions include, but are not limited to, Microsoft Purview Information Protection native controls, API provided actions, and real-time monitoring. The kind of governance you can apply depends on the type of policy you are configuring. 
+After applying sensitivity labels and identifying files with sensitive information, you'll want to take action on the files to protect them.   Actions include, but are not limited to, Microsoft Purview Information Protection native controls, API provided actions, and real-time monitoring. The kind of governance you can apply depends on the type of policy you are configuring. 
 
 
 You can apply file governance actions which uses cloud app provider's API and our native integrations to secure files. You can also use session policy controls which uses reverse proxy capabilities to protect files. 
@@ -101,11 +101,8 @@ Depending on the SaaS apps that you have in your environment, you have various o
 Scenario | Tool 
 :---|:---
 Your environment has the following products:<br> <br> - Exchange Online email <br> - SharePoint Online sites <br>- OneDrive accounts <br>- Teams chat and channel messages <br>  - Microsoft Defender for Cloud Apps<br>  - Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices <br> - On-premises repositories<br>- PowerBI sites | Use Microsoft Purview.  <br><br> <br><br> For more information, see [Learn about DLP](/microsoft-365/compliance/dlp-learn-about-dlp). |
-Your organization uses other apps that are not covered in Microsoft Purview, but can be connected to Microsoft Defender for Cloud Apps such as: - Atlassian <br> - Azure  <br> - AWS <br> - Box  <br> - DocuSign <br>-Egnyte  <br> - GitHub  <br> - Google Workspace  <br> - GCP  <br> - NetDocuments  <br> - Office 365  <br> - Okta  <br> - OneLogin  <br> - Salesfoce  <br> - ServiceNow  <br> - Slack  <br> - Smartsheet  <br> - Webex  <br> - Workday  <br> - Zendesk| Use Microsoft Defender for Cloud Apps. <br><br> To use a DLP policy thats scoped to a specific non-Microsoft cloud app, the app must be connected to Defender for Cloud Apps. 
-
-
-For more information, see [Use data loss prevention policies for non-Microsoft cloud apps](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps).
-
+Your organization uses other apps that are not covered in Microsoft Purview, but can be connected to Microsoft Defender for Cloud Apps such as:<br> - Atlassian <br> - Azure  <br> - AWS <br> - Box  <br> - DocuSign <br>-Egnyte  <br> - GitHub  <br> - Google Workspace  <br> - GCP  <br> - NetDocuments  <br> - Office 365  <br> - Okta  <br> - OneLogin  <br> - Salesfoce  <br> - ServiceNow  <br> - Slack  <br> - Smartsheet  <br> - Webex  <br> - Workday  <br> - Zendesk| Use Microsoft Defender for Cloud Apps. <br><br> To use a DLP policy thats scoped to a specific non-Microsoft cloud app, the app must be connected to Defender for Cloud Apps. For more information, see [Connect apps](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+The apps that your organization uses are not yet supported in Microsoft Purvue but can be added using app connectors. | Use Microsoft Defender for Cloud Apps. <br><br> For more information, see [Connect apps](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps) and [Use data loss prevention policies for non-Microsoft cloud apps](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps).
 
  
 ## Monitor your data

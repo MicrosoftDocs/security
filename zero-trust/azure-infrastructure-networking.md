@@ -1,5 +1,5 @@
 ---
-title: Scenario 1. Secure Azure storage with Zero Trust
+title: Scenario 4. Secure networking across Azure and other workloads with Zero Trust
 description:   
 ms.date: 
 ms.service: security
@@ -12,5 +12,5 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# Scenario 1. Secure Azure storage with Zero Trust
+# Scenario 4. Secure networking across Azure and other workloads with Zero Trust
 

@@ -25,8 +25,8 @@ Description
 
 This illustration represents the work of . . .
 
-placeholder image
-:::image type="content" source="media/modernize-access-control-deployment-stack-foundation.png" alt-text="Units of work for modernizing identity and access for Zero Trust." lightbox="media/modernize-access-control-deployment-stack-foundation.png":::
+image
+
 
 In this illustration:
 

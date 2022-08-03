@@ -22,10 +22,10 @@ The key concepts surrounding information protection involves knowing your data, 
 In this illustration:
 
 
-- To protect data in SaaS apps, you must first identify what is considered to be sensitive information in you organization by defining sensitive information types. You can define sensitive information using the Microsoft Purview Information Protection portal and create sensitive information types.
+- To protect data in SaaS apps, you must first identify what is considered to be sensitive information in your organization by defining sensitive information types. You can define sensitive information types using the Microsoft Purview Information Protection portal.
 - Using the defined sensitive information types, you can discover sensitive data in SaaS apps.
-- After discovering the sensitive data, you can apply sensitivity labels and extend labels out to SaaS apps
-- To prevent data loss, you can define, apply, then extend data loss prevention (DLP) policies protection actions such as encryption, access restrictions, and other actions. 
+- After discovering the sensitive data, you can apply sensitivity labels and extend labels out to SaaS apps.
+- To prevent data loss, you can define then extend data loss prevention (DLP) policies protection actions such as encryption, access restrictions, and other actions. 
 
 
 Use the following steps to guide you in using Microsoft 365 products so that you can apply information protection capabilities on SaaS apps:
@@ -62,7 +62,14 @@ For more information, see [How to integrate Microsoft Purview Information Protec
 
 Once you know the kinds of information you want to protect, it's time to create policies to detect them. 
 
-You can create policies for **files** and for **sessions**. File policies scan the content of files stored in your API connected cloud apps. Session policies scan and protect files in real time on access to prevent data exfiltration, protect files on download, prevent the upload of unlabeled files.
+You can create policies for:
+- Files
+- Sessions
+
+
+File policies scan the content of files stored in your API connected cloud apps. 
+
+Session policies scan and protect files in real time on access to prevent data exfiltration, protect files on download, prevent the upload of unlabeled files.
 
 
 Files are scanned using one of our supported inspection methods such as Data Classification Services. You can use Data Classification Services which uses classification decisions you've made across Office 365, Microsoft Purview Information Protection, and Defender for Cloud Apps to provide a unified labeling experience. This is the preferred content inspection method as it provides a consistent and unified experience across Microsoft products.

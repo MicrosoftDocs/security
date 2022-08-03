@@ -19,26 +19,25 @@ The key concepts surrounding information protection involves knowing your data, 
 
 :::image type="content" source="media/saas-know-protect-prevent.png" alt-text="Image of how to deploy information protection on SaaS apps using Microsoft 365 by knowing, protecting, and preventing data loss" lightbox="media/saas-know-protect-prevent.png":::
 
-
-To protect data in SaaS apps, you must first identify and classify data. To identify your data, you need to define what is considered to be sensitive information for your organization. You can define sensitive information using the Microsoft Purview Information Protection portal and create sensitive information types and labels. Defender for Cloud Apps is natively integrated with Microsoft Purview Information Protection and the same sensitive types and labels are available throughout both services after they are created.
-
-
-After identifying and classifying your data, you can then proceed to protect your data by applying sensitivity labels out to SaaS apps. 
+In this illustration:
 
 
-To prevent data loss, you can create and apply data loss prevention (DLP) policies protection actions such as encryption, access restrictions, and other actions. 
+- To protect data in SaaS apps, you must first identify what is considered to be sensitive information in you organization by defining sensitive information types. You can define sensitive information using the Microsoft Purview Information Protection portal and create sensitive information types.
+- Using the defined sensitive information types, you can discover sensitive data in SaaS apps.
+- After discovering the sensitive data, you can apply sensitivity labels and extend labels out to SaaS apps
+- To prevent data loss, you can define, apply, then extend data loss prevention (DLP) policies protection actions such as encryption, access restrictions, and other actions. 
 
 
 Use the following steps to guide you in using Microsoft 365 products so that you can apply information protection capabilities on SaaS apps:
 
 
-|Step  |Description  |
-|---------|---------|
-|1     |  Discover sensitive information in SaaS apps       |
-|2     |  Apply sensitivity labels to SaaS apps   |
-|3     |  Protect your data  |
-|4     |  Extend DLP policies to cloud apps |
-|5     |  Monitor and report on your data |
+|Step  |Description  | License
+|---------|---------|---------|
+|1     |  Discover sensitive information in SaaS apps       |  E5
+|2     |  Apply sensitivity labels to SaaS apps   |     E5
+|3     |  Protect your data  |    E5
+|4     |  Extend DLP policies to cloud apps | E5
+|5     |  Monitor and report on your data | E5
 
 
 

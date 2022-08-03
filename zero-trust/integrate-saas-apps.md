@@ -59,7 +59,7 @@ In this illustration:
 |&nbsp;|Step|Description|Licensing requirements|
 |---|---|---|---|
 |1|Add SaaS apps to Azure Active Directory |Add applications to Azure Active Directory (Azure AD) so that authorized users can securely access it. Many types of applications can be registered with Azure AD.| P1, P2 |
-|2|Create Microsoft Defender for Cloud Apps policies |You want to make sure that policies are in place to ensure that only authorized users and specific conditions are met before users are able to access resources.   | A5, E5, F5, P2 |
+|2|Create Microsoft Defender for Cloud Apps policies |You want to make sure that policies are in place to ensure that only authorized users and specific conditions are met before users are able to access resources.   | A3, A5, E3, E5, F5, P1, P2 |
 |3|Deploy information protection for SaaS apps | Organizations need to protect proprietary information, ensure that information protection is in place so that sensitive data is protected.|A5, E5, F5, P2|
 
 

@@ -33,11 +33,11 @@ Use the following steps to guide you in using Microsoft 365 products so that you
 
 |Step  |Description  | License
 |---------|---------|---------|
-|1     |  Discover sensitive information in SaaS apps       |  E5
-|2     |  Apply sensitivity labels to SaaS apps   |     E5
-|3     |  Protect your data  |    E5
-|4     |  Extend DLP policies to cloud apps | E5
-|5     |  Monitor and report on your data | E5
+|1     |  Discover sensitive information in SaaS apps       |  A3, A5, E3, E5
+|2     |  Apply sensitivity labels to SaaS apps   |     A3, A5, E3, E5
+|3     |  Protect your data  |    A5, E5, F5, P2
+|4     |  Extend DLP policies to cloud apps | Microsoft Purview: <br>A3, A5, E3, E5 <br><br> Defender for Cloud Apps: <br> A5, E5, F5, P2
+|5     |  Monitor and report on your data | A5, E5, F5, P2
 
 
 

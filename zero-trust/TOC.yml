@@ -181,6 +181,24 @@
         href: /microsoft-365/solutions/information-protection-deploy-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Investigate
         href: /microsoft-365/solutions/information-protection-deploy-monitor-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+- name: Zero Trust deployment plans for Microsoft Azure and infrastructure
+  expanded: false
+  items: 
+    - name: Overview
+      href: azure-infrastructure-deployment-plans.md
+    - name: Secure infrastructure in Azure
+      expanded: false
+      items: 
+      - name: Overview
+        href: azure-infrastructure-overview.md
+      - name: Scenario 1. Azure storage
+        href: azure-infrastructure-storage.md
+      - name: Scenario 2. Virtual machines
+        href: azure-infrastructure-virtual-machines.md
+      - name: Scenario 3. Azure IaaS environments
+        href: azure-infrastructure-iaas.md
+      - name: Scenario 4. Networking across workloads
+        href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false
   items: 

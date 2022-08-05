@@ -91,7 +91,8 @@ Next, use [best practices](/azure/storage/common/storage-sas-overview) when gran
 ## Step 3. Logically separate or segregate critical data with network Controls
 
 intro
-illustration
+
+--illustration--
 
 
 |Task |Description  |

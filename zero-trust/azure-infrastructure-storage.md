@@ -24,7 +24,7 @@ Zero trust principles for Azure Storage are applied across the logical architect
 The following illustration provides a reference of logical architecture components.
 
 
-:::image type="content" source="media/azure-infrastructure-storage-logical-architecture-1.png" alt-text="Units of work for modernizing identity and access for Zero Trust." lightbox="media/modernize-access-control-deployment-stack-foundation.png":::
+:::image type="content" source="media/azure-infrastructure-storage-logical-architecture-1.png" alt-text="Units of work for modernizing identity and access for Zero Trust." lightbox="media/azure-infrastructure-storage-logical-architecture-1.png":::
 
 In the illustration:
 - Tenant = an instance of Azure AD. It's at the "top" of a hierarchy, or Level 1 in the diagram. 
@@ -37,7 +37,7 @@ This article walks through the steps to apply the principles of Zero Trust acros
 
 |Step     |Task    |Description |
 |---------|---------|---------|
-|Step 1    |  Protect Data in all three modes: data at rest, data in transit, data in use     | These protections are configured at the Storage account level|
+|Step 1    |  Protect Data in all three modes: data at rest, data in transit, data in use     | These protections are configured at the Storage account level.|
 |Step 2    | Verify users and control access to storage data with least Privilege  | Accounts are configured in Azure AD. Use Role-base Access Control with Storage Accounts to configure granular access to components within the storage account. This step also includes recommendations for configuring shared access signatures (SAS) which allow granular control over how a client can access data. |
 |Step 3    | Logically separate or segregate critical data with network Controls        | |
 |Step 4    | Use Defender for Storage for automated threat detection and protection    |Microsoft Defender for Storage provides an additional layer of security intelligence that detects unusual and potentially harmful attempts to access or exploit storage accounts. |

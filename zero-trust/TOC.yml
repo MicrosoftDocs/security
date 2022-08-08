@@ -191,13 +191,13 @@
       items: 
       - name: Overview
         href: azure-infrastructure-overview.md
-      - name: Scenario 1. Azure storage
+      - name: 1. Azure storage
         href: azure-infrastructure-storage.md
-      - name: Scenario 2. Virtual machines
+      - name: 2. Virtual machines
         href: azure-infrastructure-virtual-machines.md
-      - name: Scenario 3. Azure IaaS environments
+      - name: 3. Azure IaaS environments
         href: azure-infrastructure-iaas.md
-      - name: Scenario 4. Networking across workloads
+      - name: 4. Networking across workloads
         href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false

@@ -210,7 +210,7 @@
     - name: Overview
       items:
       - name: Zero Trust development
-        href: /azure/active-directory/develop/zero-trust-for-developers.md
+        href: develop/overview.md
       - name: Application security and Zero Trust
         href: develop/identity-zero-trust-compliance.md
       - name: IAM development best practices

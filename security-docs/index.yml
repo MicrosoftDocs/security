@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 09/20/2021
+  ms.date: 08/09/2022
 
 
 # Maximum of 8 items
@@ -67,7 +67,7 @@ additionalContent:
         # Card
         - title: Cybersecurity training - Chief Information Security Officer (CISO) workshop
           summary: If you're new to Microsoft Security, start here! Includes principles and recommendations for modernizing security in your organization.
-          url: /security/ciso-workshop/ciso-workshop
+          url: /security/ciso-workshop/the-ciso-workshop
         # Card
         - title: Microsoft Security Best Practices
           summary: Are you a security professional? Microsoft Security Best Practices is a collection of best practices with actionable guidance for your security architecture.

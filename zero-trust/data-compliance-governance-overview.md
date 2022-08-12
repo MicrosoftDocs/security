@@ -8,7 +8,7 @@ manager: dansimp
 ms.topic: conceptual
 ---
 
-# Data, compliance, and governance
+# RaMP checklist —  Data, compliance, and governance
 
 Data is the lifeblood and intrinsic value of many organizations, even for those whose business is primarily material goods and services instead of information. That data needs to be:
 

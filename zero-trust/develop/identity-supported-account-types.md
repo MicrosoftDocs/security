@@ -1,13 +1,13 @@
 ---
 title: Supported identity and account types for single- and multi-tenant apps
-description: In this article, we explain how developers can determine, during app registration, which users their app allows from single tenants and multitenants.
+description: In this article, we explain how developers can determine, during app registration, which users their app allows from single- and multi-tenants.
 author: janicericketts
 ms.author: jricketts
 ms.service: security
 ms.topic: conceptual
 ms.date: 07/27/2022
 ms.custom: template-concept
-# Customer intent: As a developer, I want to understand how to determine which users my app allows, during app registration, from single tenants and multitenants.
+# Customer intent: As a developer, I want to understand how to determine which users my app allows, during app registration, from single tenants and multi-tenants.
 ---
 # Identity and account types for single- and multi-tenant apps
 
@@ -17,11 +17,11 @@ The Microsoft identity platform provides support for specific [identity types](/
 
 - Work or school accounts when the entity has an account in an Azure Active Directory (AD)
 
-- Microsoft personal accounts (MSA ) for anyone who has account in outlook.com, Hotmail, Live, Skype, Xbox, etc.
+- Microsoft personal accounts (MSA ) for anyone who has account in Outlook.com, Hotmail, Live, Skype, Xbox, etc.
 
 - [External identities](/azure/active-directory/external-identities/) in Azure AD for partners (users outside of your organization)
 
-- [Azure AD Business to Customer (B2C)](/azure/active-directory-b2c/overview) that allows you to create a solution that will let your customers bring in their other identities providers.
+- [Azure AD Business to Customer (B2C)](/azure/active-directory-b2c/overview) that allows you to create a solution that will let your customers bring in their other identity providers. Applications that use Azure AD B2C and those subscribed to [Microsoft Dynamics 365 Fraud Protection with Azure Active Directory B2C](/azure/active-directory-b2c/partner-dynamics-365-fraud-protection) can assess if attempts to create new accounts and attempts to login to client's ecosystem are fraudulent.
 
 A required part of application registration in Azure AD is your [selection of supported account types](/azure/active-directory/develop/quickstart-register-app). While IT Pros in administrator roles decide who can consent to apps in their tenant, you, as a developer, specify who can use your app based on account type. When a tenant does not allow you to register your application in Azure AD, administrators will provide you with a way to communicate those details to them through another mechanism.
 

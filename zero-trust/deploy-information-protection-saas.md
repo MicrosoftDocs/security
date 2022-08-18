@@ -25,19 +25,20 @@ In this illustration:
 - To protect data in SaaS apps, you must first determine what information in your organization has that's considered to be sensitive information. After doing that, check to see if any of the sensitive information types (SIT) map to the type of information. If none of the information types meet your needs, you can modify them or create your custom SIT. You can define sensitive information types using the Microsoft Purview compliance portal.
 - Using the defined sensitive information types, you can discover items that contain sensitive data in SaaS apps.
 - After discovering items that contain sensitive data, you can extend labels out to SaaS apps and then apply them.
-- To prevent data loss, you can define then extend data loss prevention (DLP) policies protection actions such as encryption, access restrictions, and other actions. For more information, see [Microsoft Defender for Cloud Apps actions](/microsoft-365/compliance/dlp-policy-reference#microsoft-defender-for-cloud-apps-actions) for supported actions. 
+- To prevent data loss, you can define then extend data loss prevention (DLP) policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across services. Some examples of the protective actions of DLP policies include showing a pop-up policy tip to a user when a user tries to share a sensitive item inappropriately. Other examples include block the sharing of data, and  sensitive items being locked and moved to a secure quarantine location. 
 
 
 Use the following steps to guide you in using Microsoft 365 products so that you can apply information protection capabilities on SaaS apps:
 
 
-|Step  |Description  | License
+|Step  |Description  
 |---------|---------|---------|
-|1     |  Discover sensitive information in SaaS apps       |  A3, A5, E3, E5
-|2     |  Apply sensitivity labels to SaaS apps   |     A3, A5, E3, E5
-|3     |  Protect your data  |    A5, E5, F5, P2
-|4     |  Extend DLP policies to cloud apps | Microsoft Purview: <br>A3, A5, E3, E5 <br><br> Defender for Cloud Apps: <br> A5, E5, F5, P2
-|5     |  Monitor and report on your data | A5, E5, F5, P2
+|1     |  Discover sensitive information in SaaS apps       
+|2     |  Apply sensitivity labels to protect data  
+|3    |  Extend DLP policies to cloud apps 
+|4    |  Monitor and report on your data 
+
+
 
 
 
@@ -69,7 +70,7 @@ Session policies scan and protect files in real time on access to prevent data e
 For more information, see [Microsoft Data Classification Services integration](/defender-cloud-apps/dcs-inspection).
 
 
-## Apply sensitivity labels to SaaS apps
+## Apply sensitivity labels to protect data
 After discovering and sorting sensitive information, you need to apply sensitivity labels. When a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. For example, a file that is labeled "Confidential" may be encrypted and have a "Confidential" watermark applied to it.
 
 Defender for Cloud Apps is natively integrated with Microsoft Purview Information Protection and the same sensitive types and labels are available throughout both services. So when you want to define sensitive information, head over to the Microsoft Purview Information Protection portal to create them, and once defined they will be available in Defender for Cloud Apps.
@@ -78,16 +79,6 @@ Defender for Cloud Apps is natively integrated with Microsoft Purview Informatio
 Defender for Cloud Apps lets you automatically apply sensitivity labels from Microsoft Purview Information Protection. These labels will be applied to files as a file policy governance action, and depending on the label configuration, can apply encryption for additional protection.
 
 For more information, see [Apply Microsoft Purview Information Protection labels automatically](/defender-cloud-apps/use-case-information-protection).
-
-
-## Protect your data
-After applying sensitivity labels and identifying files with sensitive information, you'll want to take action on the files to protect them.   Actions include, but are not limited to, Microsoft Purview Information Protection native controls, API provided actions, and real-time monitoring. The kind of governance you can apply depends on the type of policy you are configuring. 
-
-
-You can apply file governance actions which uses cloud app provider's API and our native integrations to secure files. You can also use session policy controls which uses reverse proxy capabilities to protect files. 
-
-For more information see, [File governance actions](/defender-cloud-apps/governance-actions#file-governance-actions) and [Session policies](/defender-cloud-apps/session-policy-aad).
-
 
 
 ## Extend DLP policies to SaaS apps

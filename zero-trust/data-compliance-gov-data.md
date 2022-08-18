@@ -1,5 +1,5 @@
 ---
-title: Step 3. Data
+title: RaMP checklist — Data protection
 description: Data
 ms.service: security
 ms.author: josephd
@@ -8,9 +8,9 @@ manager: dansimp
 ms.topic: conceptual
 ---
 
-# Step 3. Data
+# RaMP checklist — Data protection
 
-Your on-premises and cloud data must be protected from both inadvertent and malicious access. 
+This Rapid Modernization Plan (RaMP) checklist helps you protect your on-premises and cloud data from both inadvertent and malicious access. 
 
 - Inadvertent access occurs when a user gains access to data that, based on their roles and responsibilities, they should not have. The result can be unintended data leakage, data destruction, or violations of data security and privacy regulations.
 

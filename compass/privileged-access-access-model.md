@@ -9,7 +9,7 @@ ms.date: 04/27/2021
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: mas
 ---
 # Enterprise access model

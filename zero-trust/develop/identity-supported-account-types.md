@@ -5,34 +5,28 @@ author: janicericketts
 ms.author: jricketts
 ms.service: security
 ms.topic: conceptual
-ms.date: 07/27/2022
+ms.date: 08/18/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to understand how to determine which users my app allows, during app registration, from single tenants and multi-tenants.
 ---
 # Identity and account types for single- and multi-tenant apps
 
-This article will explain how you, as a developer, can choose if your app allows only users from your Azure Active Directory (Azure AD) tenant, any Azure AD tenant, or users with personal Microsoft accounts by configuring your app to be either single tenant or multitenant during app registration in Azure and ensure the [Zero Trust](../zero-trust-overview.md) principle of least privilege access so that your app only requests permissions it needs.
+This article will explain how you, as a developer, can choose if your app allows only users from your Azure Active Directory (Azure AD) tenant, any Azure AD tenant, or users with personal Microsoft accounts by configuring your app to be either [single tenant or multitenant](/azure/active-directory/develop/single-and-multi-tenant-apps) during [app registration](/azure/active-directory/develop/quickstart-register-app) in Azure and ensure the [Zero Trust](overview.md) principle of least privilege access so that your app only requests permissions it needs.
 
-The Microsoft identity platform provides support for specific [identity types](/azure/active-directory/develop/single-and-multi-tenant-apps):
+The Microsoft identity platform provides support for specific [identity types](identity-supported-account-types.md):
 
 - Work or school accounts when the entity has an account in an Azure Active Directory (AD)
-
 - Microsoft personal accounts (MSA ) for anyone who has account in Outlook.com, Hotmail, Live, Skype, Xbox, etc.
-
 - [External identities](/azure/active-directory/external-identities/) in Azure AD for partners (users outside of your organization)
-
 - [Azure AD Business to Customer (B2C)](/azure/active-directory-b2c/overview) that allows you to create a solution that will let your customers bring in their other identity providers. Applications that use Azure AD B2C and those subscribed to [Microsoft Dynamics 365 Fraud Protection with Azure Active Directory B2C](/azure/active-directory-b2c/partner-dynamics-365-fraud-protection) can assess if attempts to create new accounts and attempts to login to client's ecosystem are fraudulent.
 
-A required part of application registration in Azure AD is your [selection of supported account types](/azure/active-directory/develop/quickstart-register-app). While IT Pros in administrator roles decide who can consent to apps in their tenant, you, as a developer, specify who can use your app based on account type. When a tenant does not allow you to register your application in Azure AD, administrators will provide you with a way to communicate those details to them through another mechanism.
+A required part of application registration in Azure AD is your selection of supported account types. While IT Pros in administrator roles decide who can consent to apps in their tenant, you, as a developer, specify who can use your app based on account type. When a tenant does not allow you to register your application in Azure AD, administrators will provide you with a way to communicate those details to them through another mechanism.
 
 You will choose from the following supported account type options when registering your application.
 
 - Accounts in this organizational directory only (O365 only - Single tenant)
-
 - Accounts in any organizational directory (Any Azure AD directory - Multitenant)
-
 - Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)
-
 - Personal Microsoft accounts only
 
 ## Accounts in this organizational directory only - single tenant
@@ -93,15 +87,13 @@ When a guest user needs to authenticate, they sign in to their home tenant, a pe
 As a developer, keep these considerations in mind when your application supports guest users:
 
 - You must use a tenant specific endpoint when signing in the guest user. You cannot use the common, organization, or consumer endpoints.
-
 - The guest user identity is different from the user's identity in their home tenant or other IDP. This means that the oid claim in the token for a guest user will be different from the same individual's oid in their home tenant.
 
 ## Next steps
 
-- [How and why apps are added to Azure AD - Microsoft Entra \| Microsoft Docs](/azure/active-directory/develop/active-directory-how-applications-are-added) explains how application objects describe the application to Azure AD that issues tokens to the application based on its settings.
-
-- [Supported account types - Microsoft Entra \| Microsoft Docs](/azure/active-directory/develop/v2-supported-account-types) describes the account types (sometimes called audiences) that Microsoft identity platform applications support.
-
-- [Single and multi-tenant apps in Azure AD - Microsoft Entra \| Microsoft Docs](/azure/active-directory/develop/single-and-multi-tenant-apps) shows how Azure AD organizes objects like users and apps into groups called tenants where administrators set policies to meet security and operational policies.
-
-- [Best practices for Azure AD application registration configuration - Microsoft Entra \| Microsoft Docs](/azure/active-directory/develop/security-best-practices-for-app-registration) describes security best practices for application properties such as redirect URI, access tokens (used for implicit flows), certificates and secrets, application ID URI, and application ownership.
+- [How and why apps are added to Azure AD](/azure/active-directory/develop/active-directory-how-applications-are-added) explains how application objects describe the application to Azure AD that issues tokens to the application based on its settings.
+- [Security best practices for application properties in Azure Active Directory](/azure/active-directory/develop/security-best-practices-for-app-registration) covers application properties such as redirect URI, access tokens (used for implicit flows), certificates and secrets, application ID URI, and application ownership.
+- [Building apps with a Zero Trust approach to identity](identity.md) helps you to use a Zero Trust approach to identity, which includes authentication, authorization, and identity management.
+- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
+- [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application.
+- [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to determine your application permission approach to credential management.

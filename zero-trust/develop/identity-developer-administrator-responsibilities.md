@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: security
 ms.topic: conceptual
-ms.date: 06/27/2022
+ms.date: 08/18/2022
 ms.custom: template-concept
 # Customer intent: As a developer creating applications in the Microsoft identity platform, I want to know what my IT Pros need from me, and what I need from them, so that I can streamline my zero-trust development workflow.
 ---
@@ -15,7 +15,7 @@ As a developer creating applications in the Microsoft identity platform, you wil
 
 ## Developers and IT Pros must work together
 
-IT organizations are increasingly blocking apps with vulnerabilities. As IT departments embrace a [Zero Trust approach](../zero-trust-overview.md), developers who do not provide applications that follow Zero Trust principles risk not having their apps adopted. Following Zero Trust principles can help ensure that your application is eligible for adoption in a Zero Trust world.
+IT organizations are increasingly blocking apps with vulnerabilities. As IT departments embrace a [Zero Trust approach](overview.md), developers who do not provide applications that follow Zero Trust principles risk not having their apps adopted. Following Zero Trust principles can help ensure that your application is eligible for adoption in a Zero Trust world.
 
 App developers will usually implement, evaluate, and validate aspects of Zero Trust before working with an organization's IT Pros to achieve full compliance and adherence. Developers are responsible for building and integrating apps so that IT Pros can use their tools to further secure the applications. Partnering with IT Pros can help to
 
@@ -27,17 +27,17 @@ The following table summarizes the decisions and tasks required for developer an
 :::row:::
    :::column span="":::
       **Developer**
-      - Register app in Microsoft Azure
+      - [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
+      - [Register an application with Azure AD and create a service principal](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal)
       - [Define supported account types](identity-supported-account-types.md)
       - Is the app working on behalf of [itself](identity-non-user-applications.md) or the user
-      - What resources your application requires and when it needs them
-      - When to ask for permission to a resource
+      - [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
    :::column-end:::
    :::column span="":::
       **IT Pro Administrator**
-      - Who can register apps in the tenant(s)
+      - Who can register apps in a tenant
       - Application user, group, and role assignments
-      - Permissions granted to the application
+      - Permissions granted to an application
       - Policies including conditional access policy and token lifespan
       - Alternate local settings for an application
    :::column-end:::
@@ -51,8 +51,6 @@ IT Pros determine which conditional access policies will apply to your applicati
 
 ## Next steps
 
-* [Best practices for Azure AD application registration configuration - Microsoft Entra \| Microsoft Docs](/azure/active-directory/develop/security-best-practices-for-app-registration) describes security best practices for the following application properties: Redirect URI, Access tokens (used for implicit flows), Certificates and secrets, Application ID URI, and Application ownership.
-
-* [Best practices for the Microsoft identity platform - Microsoft Entra \| Microsoft Docs](/azure/active-directory/develop/identity-platform-integration-checklist) highlights best practices, recommendations, and common oversights when integrating with the Microsoft identity platform.
-
-* [Securing identity with Zero Trust \| Microsoft Docs](../deploy/identity.md) describes how identities function as a powerful, flexible, and granular way to control access to data.
+* [What do we mean by Zero Trust compliance?](identity-zero-trust-compliance.md) provides overview of application security from a developer's perspective to address the guiding principles of Zero Trust.
+* [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) will help you to understand best practices for your application development lifecycle so that you can create secure applications that are Zero Trust compliant.
+* [Using standards-based development methodologies](identity-standards-based-development-methodologies.md) provides an overview of supported standards (OAuth 2.0, OpenID Connect, SAML, WS-Federation, and SCIM) and the benefits of using them with MSAL and the Microsoft identity platform.

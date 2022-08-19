@@ -209,14 +209,22 @@
         href: develop/identity-standards-based-development-methodologies.md
       - name: Developer and IT Pro responsibilities
         href: develop/identity-developer-administrator-responsibilities.md
-    - name: Identity
+    - name: Permissions and access
       items:
       - name: Zero Trust approach to identity
         href: develop/identity.md
       - name: Identity and account types for apps
         href: develop/identity-supported-account-types.md
+      - name: Resource access authorization
+        href: develop/acquire-application-authorization-to-access-resources.md
+      - name: Delegated permissions
+        href: develop/developer-strategy-delegated-permission.md
+      - name: Application permissions
+        href: develop/developer-strategy-application-permissions.md
       - name: Non-user application identity
         href: develop/identity-non-user-applications.md
+      - name: Authorization best practices
+        href: develop/developer-strategy-authorization-best-practices.md
 - name: Resources
   expanded: false
   items:

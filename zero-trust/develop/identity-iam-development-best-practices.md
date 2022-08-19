@@ -1,17 +1,17 @@
 ---
 title: Zero Trust identity and access management development best practices
-description: To create a secure application that follows Zero Trust principles, Microsoft recommends that you incorporate several best practices throughout your application development lifecycle, some of which are provided in this article.
+description: To create secure applications that follow Zero Trust principles, Microsoft recommends that you incorporate best practices throughout your application development lifecycle.
 author: janicericketts
 ms.author: jricketts
 ms.service: security
 ms.topic: conceptual
-ms.date: 06/27/2022
+ms.date: 08/18/2022
 ms.custom: template-concept
-# Customer intent: As a developer, I want to know best practices for my application development lifecycle, so that I can create secure applications that follows Zero Trust principles.
+# Customer intent: As a developer, I want to understand best practices for my application development lifecycle so that I can create secure applications that follow Zero Trust principles.
 ---
 # Zero Trust identity and access management development best practices
 
-Customers are adopting Zero Trust principles, starting with identity and access management (IAM). While Zero Trust implementation continues to evolve, each organization's journey is unique and many begin with user and application identity.
+This article will help you, as a developer, to understand best practices for your application development lifecycle so that you can create secure applications that are [Zero Trust compliant](identity-zero-trust-compliance.md). Customers are adopting Zero Trust principles, starting with identity and access management (IAM). While Zero Trust implementation continues to evolve, each organization's journey is unique and many begin with user and application identity.
 
 Here are policies and controls that organizations prioritize as they roll out Zero Trust:
 
@@ -44,9 +44,10 @@ Your application will request tokens from Azure AD. Managing these tokens involv
 
 ## Next steps
 
-* [What do we mean by Zero Trust compliance?](identity-zero-trust-compliance.md)
-* [Using standards-based development methodologies](identity-standards-based-development-methodologies.md)
-* [Developer and administrator responsibilities for application registration, authorization, and access](identity-developer-administrator-responsibilities.md)
-* [Building apps with a Zero Trust approach to identity](identity.md)
-* [Identity and account types for single- and multi-tenant apps](identity-supported-account-types.md)
-* [Providing application identity credentials when there is no user](identity-non-user-applications.md)
+* The [Identity integrations](../integrate/identity.md) guide explains how independent software vendors and technology partners can integrate their security solutions with Microsoft products to create Zero Trust solutions for customers.
+* [What do we mean by Zero Trust compliance?](identity-zero-trust-compliance.md) provides overview of application security from a developer's perspective to address the guiding principles of Zero Trust.
+* [Using standards-based development methodologies](identity-standards-based-development-methodologies.md) provides an overview of supported standards (OAuth 2.0, OpenID Connect, SAML, WS-Federation, and SCIM) and the benefits of using them with MSAL and the Microsoft identity platform.
+* [Developer and administrator responsibilities for application registration, authorization, and access](identity-developer-administrator-responsibilities.md) helps you to understand what your IT Pros need from your, and what your need from them, so that your can streamline your zero-trust development workflow.
+* [Building apps with a Zero Trust approach to identity](identity.md) helps you to use a Zero Trust approach to identity, which includes authentication, authorization, and identity management.
+* [Identity and account types for single- and multi-tenant apps](identity-supported-account-types.md) helps you to determine which users your app allows, during app registration, from single tenants and multi-tenants.
+* [Providing application identity credentials when there is no user](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (non-user applications) on Azure is Managed Identities for Azure Resources.

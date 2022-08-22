@@ -26,22 +26,12 @@
   items: 
     - name: Overview
       href: zero-trust-ramp-overview.md
-    - name: User access and productivity
-      expanded: false
-      items:
-      - name: Overview
-        href: user-access-productivity-overview.md
-      - name: Step 1. Explicitly validate trust for all access requests
-        href: user-access-productivity-validate-trust.md
-    - name: Data, compliance, and governance
-      expanded: false
-      items:
-      - name: Overview
-        href: data-compliance-governance-overview.md
-      - name: Step 2. Ransomware recovery readiness
-        href: data-compliance-gov-ransomware-recovery-readiness.md
-      - name: Step 3. Data
-        href: data-compliance-gov-data.md
+    - name: Explicitly validate trust for all access requests
+      href: user-access-productivity-validate-trust.md
+    - name: Ransomware recovery readiness
+      href: data-compliance-gov-ransomware-recovery-readiness.md
+    - name: Data protection
+      href: data-compliance-gov-data.md
 - name: Zero Trust deployment plans for Microsoft 365
   expanded: false
   items:

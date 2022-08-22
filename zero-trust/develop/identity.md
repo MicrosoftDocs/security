@@ -1,7 +1,7 @@
 ---
 title: Building apps with a Zero Trust approach to identity
 description: Learn how to build trustworthy, Zero Trust-ready applications with secure authentication and authorization using the Microsoft identity platform.
-ms.date: 10/14/2021
+ms.date: 08/18/2022
 ms.service: security
 author: knicholasa
 ms.author: nichola
@@ -12,11 +12,9 @@ ms.topic: conceptual
 
 # Building apps with a Zero Trust approach to identity
 
-:::image type="icon" source="../media/icon-identity-medium.png":::
+[Zero Trust](overview.md) is a security framework that does not rely on the implicit trust afforded to interactions behind a secure network perimeter. Instead, it uses the principles of explicit verification, least privileged access, and assuming breach to keep users and data secure while allowing for common scenarios like access to applications from outside the network perimeter.
 
-Zero Trust is a security framework that does not rely on the implicit trust afforded to interactions behind a secure network perimeter. Instead, it uses the principles of explicit verification, least privileged access, and assuming breach to keep users and data secure while allowing for common scenarios like access to applications from outside the network perimeter.
-
-App developers can improve app security, minimize the impact of breaches, and ensure that their applications meet their customers' security requirements by adopting Zero Trust principles. This document is about how developers can use a Zero Trust approach to identity, which includes authentication, authorization, and identity management.
+App developers can improve app security, minimize the impact of breaches, and ensure that their applications meet their customers' security requirements by adopting Zero Trust principles. This describes how you, as a developer, can implement a Zero Trust approach to identity, which includes authentication, authorization, and identity management.
 
 ## Industry security trends impact application requirements
 
@@ -29,9 +27,9 @@ The implementation of Zero Trust is still evolving, and each organization's jour
 
 ## Top recommendations for Zero Trust
 
-The following best practices are key to keeping your apps secure. We have also published a [whitepaper](https://azure.microsoft.com/resources/zero-trust-for-the-microsoft-identity-platform-developer/) that walks through these best practices in detail.
+The following best practices are key to keeping your apps secure.
 
-**Use a trusted, standards-based authentication library.** Using a library will save you the time of developing a solution on your own. But more importantly, it will stay up to date and be responsive to the latest technologies and threats. Microsoft provides several authentication libraries, including the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview), [Microsoft Identity Web authentication library](/azure/active-directory/develop/microsoft-identity-web), and the [Azure SDKs for managed identities](/azure/active-directory/managed-identities-azure-resources/qs-configure-sdk-windows-vm#azure-sdks-with-managed-identities-for-azure-resources-support). These give you access to features such as conditional access, device registration and management, and the latest innovations such as passwordless and FIDO2 authentication without needing to write any extra code.
+**Use a trusted, standards-based authentication library.** Using a library will save you the time of developing a solution on your own. But more importantly, it will stay up to date and be responsive to the latest technologies and threats. Microsoft provides several authentication libraries, including the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview), [Microsoft Identity Web authentication library](/azure/active-directory/develop/microsoft-identity-web), and the [Azure SDKs for managed identities](/azure/active-directory/managed-identities-azure-resources/qs-configure-sdk-windows-vm#azure-sdks-with-managed-identities-for-azure-resources-support). These give you access to features such as conditional access, device registration and management, and the latest innovations such as passwordless and FIDO2 authentication without needing to write extra code.
 
 **Follow the** [Azure AD application registration security best practices](/azure/active-directory/develop/security-best-practices-for-app-registration). An Azure AD application registration is a critical part of your business application. Any misconfiguration or lapse in hygiene of your application can result in downtime or compromise.
 
@@ -48,7 +46,7 @@ The following best practices are key to keeping your apps secure. We have also p
 ## Next steps
 
 - [Build Zero Trust-ready apps using Microsoft identity platform features and tools](/azure/active-directory/develop/zero-trust-for-developers) maps features of the Microsoft identity platform to the principles of Zero Trust.
-- The [Adopting Zero Trust into your apps](https://www.microsoft.com/en-us/security/content-library/SkillingPath/Details/6541ecb8-fb85-44a5-bdd4-397bf2bb52f9) skilling path includes two useful  whitepapers:
-  - [Zero Trust for the Microsoft identity platform developer](https://azure.microsoft.com/resources/zero-trust-for-the-microsoft-identity-platform-developer/), which explains in detail how to approach Zero Trust identity using the Microsoft identity platform.
-  - [Adopting a Zero Trust approach to Identity in line-of-business apps](https://azure.microsoft.com/resources/zero-trust-identity-line-of-business-apps/) provides guidance that is tailored to apps that are built by or for a company for use within that same company. 
 - The [Identity integrations](../integrate/identity.md) guide explains how independent software vendors and technology partners can integrate their security solutions with Microsoft products to create Zero Trust solutions for customers.
+- [Identity and account types for single- and multi-tenant apps](identity-supported-account-types.md) helps you to determine which users your app allows, during app registration, from single tenants and multi-tenants.
+- [Providing application identity credentials when there is no user](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (non-user applications) on Azure is Managed Identities for Azure Resources.
+- [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.

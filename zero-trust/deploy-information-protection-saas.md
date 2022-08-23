@@ -96,10 +96,10 @@ The apps that your organization uses are not yet supported in Microsoft Purview 
  
 ## Monitor your data
 
-Now that your policies are in place, you'll want to check your Microsoft Defender for Cloud Apps dashboard daily to see and investigate new alerts. The information presented in the dashboard is an overview of all the most important information about your organization.
+Now that your policies are in place, you'll want to check Microsoft Defender for Endpoint to monitor the impact of the policies you've put into place and remediate incidents. Endpoint detection and response capabilities in Defender for Endpoint provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats.
 
 
-For more information, see [Check the dashboard](/defender-cloud-apps/daily-activities-to-protect-your-cloud-environment#check-the-dashboard).
+For more information, see [Endpoint detection and response overview](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response).
 
 
 

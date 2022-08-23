@@ -1,5 +1,5 @@
 ---
-title: Scenario 3. Secure Azure IaaS environments with Zero Trust
+title: Scenario 3. Secure network components for an Azure IaaS app with Zero Trust
 description:   
 ms.date: 
 ms.service: security
@@ -12,5 +12,5 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# Scenario 3. Secure Azure IaaS environments with Zero Trust
+# Secure network components for an Azure IaaS app with Zero Trust
 

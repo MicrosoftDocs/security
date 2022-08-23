@@ -1,5 +1,6 @@
 ---
-title: Scenario 4. Secure networking across Azure and other workloads with Zero Trust
+title: Scenario 4. Securing network access to Azure IaaS apps with Zero Trust
+
 description:   
 ms.date: 
 ms.service: security
@@ -12,5 +13,5 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# Scenario 4. Secure networking across Azure and other workloads with Zero Trust
+# Securing network access to Azure IaaS apps with Zero Trust
 

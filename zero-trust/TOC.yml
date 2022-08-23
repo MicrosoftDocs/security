@@ -185,9 +185,9 @@
         href: azure-infrastructure-storage.md
       - name: 2. Virtual machines
         href: azure-infrastructure-virtual-machines.md
-      - name: 3. Azure IaaS environments
+      - name: 3. Networking for IaaS apps
         href: azure-infrastructure-iaas.md
-      - name: 4. Networking across workloads
+      - name: 4. Network access to IaaS apps
         href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false

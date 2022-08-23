@@ -9,7 +9,7 @@ ms.date: 12/15/2020
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: amycolannino
+manager: daveba
 ms.reviewer: frasim
 ---
 # Securing devices as part of the privileged access story

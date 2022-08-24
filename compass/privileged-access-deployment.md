@@ -9,7 +9,7 @@ ms.date: 06/07/2021
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: amycolannino
+manager: daveba
 ms.reviewer: frasim
 ---
 # Privileged access deployment

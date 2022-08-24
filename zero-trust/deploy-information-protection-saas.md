@@ -17,7 +17,13 @@ This solution builds on the Microsoft Purview Information Protection solution gu
 
 The scope of this article focuses on protecting Office and PDF files and document repositories within SaaS applications. 
 
-The key concepts surrounding information protection involves knowing your data, protecting your data, and preventing data loss. 
+>[!TIP]
+> While the scope of this article is focused on protecting files within SaaS applications, there are also developer related information available. For more information about developer related content such as building applications that use Microsoft Information Protection (MIP) SDK, see [About Microsoft Information Protection SDK](/information-protection/develop/overview).
+
+
+The key concepts surrounding information protection involves knowing your data, protecting your data, and preventing data loss.
+
+
 
 :::image type="content" source="media/ip-saas-apps.png" alt-text="Image of how to deploy information protection on SaaS apps using Microsoft 365 by knowing, protecting, and preventing data loss" lightbox="media/ip-saas-apps.png":::
 

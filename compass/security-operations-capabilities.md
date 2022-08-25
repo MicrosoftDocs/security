@@ -1,10 +1,10 @@
 ---
 title: "Security operations capabilities"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: Admin
-ms.prod: m365-security
+ms.service: m365-security
 ms.topic: article
 localization_priority: Normal
 description: "Lists capabilities that you can use for your security operations"

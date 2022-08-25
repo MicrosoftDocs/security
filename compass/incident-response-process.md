@@ -6,7 +6,7 @@ author: dansimp
 manager: dansimp
 localization_priority: Normal
 ms.topic: article
-ms.prod: m365-security
+ms.service: m365-security
 ms.custom: cxdef-zt-ransomware 
 ---
 

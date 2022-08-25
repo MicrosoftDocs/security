@@ -1,12 +1,12 @@
 ---
 title: "Microsoft Security Best Practices module: Security operations"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-ms.prod: m365-security
+ms.service: m365-security
 description: "Learn how to establish security operations to rapidly identify and remediate risk from active attacks."
 ---
 

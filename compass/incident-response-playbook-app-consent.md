@@ -4,7 +4,7 @@ description: Learn how to identify and investigate app consent attacks, protect 
 keywords: app consent grant, investigation, attack, illicit consent grant, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, Microsoft 365 Defender
 search.product: DART
 search.appverid: met150
-ms.prod: m365-security
+ms.service: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,7 +19,7 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
+ms.subservice:: m365d
 ---
 
 # App consent grant investigation

@@ -5,7 +5,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.prod: m365-security
+ms.service: m365-security
 localization_priority: Normal
 description: "This article lists capabilities that can help with identity."
 ---

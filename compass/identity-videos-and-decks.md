@@ -6,7 +6,7 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-ms.prod: m365-security
+ms.service: m365-security
 description: "Provides guidance on identity and access management."
 ---
 

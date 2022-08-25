@@ -5,7 +5,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
-ms.prod: m365-security
+ms.service: m365-security
 ms.collection:
 - m365solution-ransomware
 - m365solution-overview

@@ -4,7 +4,7 @@ description: Learn how to identify and investigate password spray attacks, prote
 keywords: password spray, password, investigation, attack, email, microsoft threat protection, microsoft 365, search, security, query, telemetry, security events, antivirus, firewall, Microsoft 365 Defender
 search.product: DART
 search.appverid: met150
-ms.service: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

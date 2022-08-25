@@ -6,7 +6,7 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 localization_priority: Normal
-ms.service: m365-security
+ms.service: microsoft-365-security
 description: "Learn how to establish security operations to rapidly identify and remediate risk from active attacks."
 ---
 

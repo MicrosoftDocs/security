@@ -4,7 +4,7 @@ description: Understand how Microsoft's Detection and Response Team (DART) respo
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, microsoft 365 defender
 search.product: DART
 search.appverid: met150
-ms.service: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

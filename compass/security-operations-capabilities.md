@@ -4,7 +4,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
-ms.service: m365-security
+ms.service: microsoft-365-security
 ms.topic: article
 localization_priority: Normal
 description: "Lists capabilities that you can use for your security operations"

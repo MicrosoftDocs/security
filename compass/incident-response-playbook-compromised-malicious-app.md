@@ -4,7 +4,7 @@ description: Learn how to investigate if one or more applications in a customer 
 keywords: compromise, malicious, applications, investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, incident response, playbook, guidance, Microsoft 365 Defender
 search.product: DART
 search.appverid: met150
-ms.service: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

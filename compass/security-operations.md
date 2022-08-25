@@ -6,7 +6,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 ms.topic: article
-ms.service: m365-security
+ms.service: microsoft-365-security
 ---
 
 # Microsoft security best practices for security operations

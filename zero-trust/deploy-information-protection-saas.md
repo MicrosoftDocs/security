@@ -25,16 +25,14 @@ The key concepts surrounding information protection involves knowing your data, 
 
 
 
-:::image type="content" source="media/ip-saas-apps.png" alt-text="Image of how to deploy information protection on SaaS apps using Microsoft 365 by knowing, protecting, and preventing data loss" lightbox="media/ip-saas-apps.png":::
+:::image type="content" source="media/saas-know-protect-prevent.png" alt-text="Image of how to deploy information protection on SaaS apps using Microsoft 365 by knowing, protecting, and preventing data loss" lightbox="media/saas-know-protect-prevent.png":::
 
 In this illustration:
 
-- Illustrates a typical information protection workflow of knowing your data, protecting your data, and preventing data loss.
-- To protect data in SaaS apps, you must first determine what information in your organization has that's considered to be sensitive information. After doing that, check to see if any of the sensitive information types (SIT) map to the type of information. If none of the information types meet your needs, you can modify them or create your custom SIT. 
-- To protect your data, you can define sensitivity labels.
-- To prevent data loss, you can define data loss prevention (DLP) policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across services. Some examples of the protective actions of DLP policies include showing a pop-up policy tip to a user when a user tries to share a sensitive item inappropriately. Other examples include block the sharing of data, and  sensitive items being locked and moved to a secure quarantine location. 
-- After identifying sensitive information, defining sensitivity labels, and defining DLP policies on native cloud apps you extend them to SaaS apps.
-- Using the defined sensitivity labels, you can extend discovery to sensitive data, labels, and DLP policies out to SaaS apps.
+- To protect data in SaaS apps, you must first determine what information in your organization has that's considered to be sensitive information. After doing that, check to see if any of the sensitive information types (SIT) map to the type of information. If none of the information types meet your needs, you can modify them or create your custom SIT. You can define sensitive information types using the Microsoft Purview compliance portal.
+- Using the defined sensitive information types, you can discover items that contain sensitive data in SaaS apps.
+- After discovering items that contain sensitive data, you can extend labels out to SaaS apps and then apply them.
+- To prevent data loss, you can define then extend data loss prevention (DLP) policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across services. Some examples of the protective actions of DLP policies include showing a pop-up policy tip to a user when a user tries to share a sensitive item inappropriately. Other examples include block the sharing of data, and  sensitive items being locked and moved to a secure quarantine location.
 
 
 Use the following steps to guide you in using Microsoft 365 products so that you can apply information protection capabilities on SaaS apps:

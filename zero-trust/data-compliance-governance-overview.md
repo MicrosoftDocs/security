@@ -1,7 +1,7 @@
 ---
 title: Data, compliance, and governance
 description: Data, compliance, and governance initiative of RaMP for Zero Trust
-ms.service: security
+ms.service: network-access
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: dansimp

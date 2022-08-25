@@ -3,7 +3,7 @@ title: Zero Trust identity and access management development best practices
 description: To create a secure application that follows Zero Trust principles, Microsoft recommends that you incorporate several best practices throughout your application development lifecycle, some of which are provided in this article.
 author: janicericketts
 ms.author: jricketts
-ms.service: security
+ms.service: network-access
 ms.topic: conceptual
 ms.date: 06/27/2022
 ms.custom: template-concept

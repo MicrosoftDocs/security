@@ -5,7 +5,7 @@ author: mas
 manager: mas
 audience: Admin
 ms.topic: tutorial
-ms.service: security
+ms.service: information-protection
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance

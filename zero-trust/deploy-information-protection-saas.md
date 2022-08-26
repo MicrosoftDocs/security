@@ -13,7 +13,11 @@ ms.topic: conceptual
 
 While protecting access to apps and session activities are important, the data that SaaS apps contain may be one of the most critical resources that must be protected. Deploying information protection for SaaS apps is a key step in preventing inadvertent exposure of sensitive information.
 
-This solution builds on the Microsoft Purview Information Protection solution guidance and guides you on how to use Defender for Cloud Apps to extend information protection to data in SaaS apps. You may want to review the guidance to gain better understanding of the overall workflow. For more information, see [Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution). 
+
+There are various ways you can deploy information protection. You can use Defender for Cloud Apps to integrate labeling with apps or have an app developer integrate directly using a SDK. For more information see, [About Microsoft Information Protection SDK](/information-protection/develop/overview). 
+  
+
+This solution builds on the Microsoft Purview Information Protection solution guidance and is scoped to guide you on how to use Defender for Cloud Apps to extend information protection to data in SaaS apps. You may want to review the guidance to gain better understanding of the overall workflow. For more information, see [Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution). 
 
 The scope of this article focuses on protecting Office and PDF files and document repositories within SaaS applications. 
 

@@ -86,7 +86,7 @@ For more information, see [Microsoft Data Classification Services integration](/
 
 
 ## Apply sensitivity labels to protect data
-After discovering and sorting sensitive information, you can apply sensitivity labels. When a sensitivity label is applied to a document, any configured protection settings for that label are enforced on the content. For example, a file that is labeled “Confidential” may be encrypted, and access may be limited such as,  to a specific group of people, or just employees.
+After discovering and sorting sensitive information, you can apply sensitivity labels. When a sensitivity label is applied to a document, any configured protection settings for that label are enforced on the content. For example, a file that is labeled "Confidential" may be encrypted, and access may be limited such as,  to a specific group of people, or just employees.
 
 Defender for Cloud Apps is natively integrated with Microsoft Purview Information Protection and the same sensitive types and labels are available throughout both services. So when you want to define sensitive information, head over to the Microsoft Purview compliance portal to create them, and once defined they will be available in Defender for Cloud Apps.
 

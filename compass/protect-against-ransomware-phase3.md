@@ -1,7 +1,7 @@
 ---
 title: "Phase 3: Make it hard to get in"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 f1.keywords:
 - NOCSH
 manager: dansimp

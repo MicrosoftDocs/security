@@ -1,7 +1,7 @@
 ---
 title: "Quickly configure for ransomware prevention in your organization to help stop ransomware cybercriminals."
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 f1.keywords:
 - NOCSH
 manager: dansimp

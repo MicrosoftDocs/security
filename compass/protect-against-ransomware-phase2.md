@@ -1,7 +1,7 @@
 ---
 title: "Phase 2: Limit the scope of damage"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 f1.keywords:
 - NOCSH
 manager: dansimp

@@ -35,7 +35,7 @@ If you haven't already set up Defender for Cloud Apps, you can get started by us
 Without visibility into the apps being used in your organization, you will not be able to properly manage and control how users use and access important resources with them.  
 
 
-Defender for Cloud Apps has a capability called Cloud Discovery which analyzes your traffic logs against the Microsoft Defender for Cloud Apps catalog of over 25,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization. 
+Defender for Cloud Apps has a capability called Cloud Discovery which analyzes your traffic logs against the Microsoft Defender for Cloud Apps catalog of over 31,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization. 
 
 
 :::image type="content" source="media/m365-defender-mcas-architecture-b.png" alt-text="Image of Microsoft 365 Defender and cloud apps":::

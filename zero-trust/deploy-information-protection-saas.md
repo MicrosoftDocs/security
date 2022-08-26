@@ -108,6 +108,11 @@ Your organization uses other apps that are not covered in Microsoft Purview, but
 The apps that your organization uses are not yet supported in Microsoft Defender for Cloud via API, but can be added using app connectors, and you can use session policies to apply DLP policies in real time. | Use Microsoft Defender for Cloud Apps. <br><br> For more information, see [Connect apps](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps) and [Use data loss prevention policies for non-Microsoft cloud apps](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps).
 
  
+For guidance on licensing, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+
+
+
+
 ## Monitor your data
 
 Now that your policies are in place, you'll want to check the Microsoft 365 Defender portal to monitor the impact of the policies you've put into place and remediate incidents. Microsoft 365 Defender gives you visibility into DLP alerts and incidents from Microsoft Purview as well as Defender for Cloud apps in a single pane of glass.

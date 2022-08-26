@@ -39,8 +39,8 @@ Microsoft 365 capabilities help you bring your SaaS apps into management to meet
 In the illustration:
 - A collection of SaaS apps is pictured.
 - You can add these SaaS apps to Azure Active Directory and include these apps in the scope of your multi-factor authentication and conditional access policies. For more information, [Integrating all your apps with Azure AD](/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad).
-- Using Microsoft Defender for Cloud Apps, you can discover other cloud apps your organization uses. You can approve apps and apply session controls. Of course, you can add newly discovered cloud apps to Azure AD to enforce multi-factor authentication and other policies.
-- Microsoft Purview Information Protection capabilities can be extended out to these cloud apps to discover sensitive data, protect data, and prevent data loss.
+- Using Microsoft Defender for Cloud Apps, you can discover other cloud apps your organization uses. You can approve apps and apply session controls. For newly discovered enterprise cloud apps that supports federation you can add them to Azure AD to enforce multi-factor authentication and other policies.
+- Microsoft Purview Information Protection capabilities can be extended through Microsoft Defender for Cloud apps to these cloud apps to discover sensitive data, protect data, and prevent data loss.
 
 
 ## Implementing the layers of protection for SaaS apps
@@ -56,13 +56,13 @@ The following diagram illustrates building blocks to integrate SaaS apps that al
 In this illustration:
 
 
-|&nbsp;|Step|Description|Licensing requirements|
+|&nbsp;|Step|Description
 |---|---|---|---|
-|1|Add SaaS apps to Azure Active Directory |Add applications to Azure Active Directory (Azure AD) so that authorized users can securely access it. Many types of applications can be registered with Azure AD.| Azure Active Directory (Free) |
-|2|Create Microsoft Defender for Cloud Apps policies |You want to make sure that policies are in place to ensure that only authorized users and specific conditions are met before users are able to access resources.   | A3, A5, E3, E5, F5, P1, P2 |
-|3|Deploy information protection for SaaS apps | Organizations need to protect proprietary information, ensure that information protection is in place so that sensitive data is protected.|A5, E5, F5, P2|
+|1|Add SaaS apps to Azure Active Directory |Add applications to Azure Active Directory (Azure AD) so that authorized users can securely access it. Many types of applications can be registered with Azure AD.
+|2|Create Microsoft Defender for Cloud Apps policies |You want to make sure that policies are in place to ensure that only authorized users and specific conditions are met before users are able to access resources.   
+|3|Deploy information protection for SaaS apps | Organizations need to protect proprietary information, ensure that information protection is in place so that sensitive data is protected.
 
-
+For guidance on licensing, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 For more information, see the [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust).
 

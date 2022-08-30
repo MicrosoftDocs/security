@@ -171,6 +171,18 @@
         href: /microsoft-365/solutions/information-protection-deploy-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Investigate
         href: /microsoft-365/solutions/information-protection-deploy-monitor-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+
+    - name: Integrate SaaS apps for Zero Trust with Microsoft 365 
+      items:
+      - name: Overview
+        href: integrate-saas-apps.md
+      - name: Step 1. Add SaaS apps to Azure AD and to the scope of policies
+        href: add-saas-apps.md
+      - name: Step 2. Create Defender for Cloud Apps policies
+        href: create-policies.md
+      - name: Step 3. Deploy information protection for SaaS Apps
+        href: deploy-information-protection-saas.md
+            
 - name: Technology partner integrations
   expanded: false
   items: 

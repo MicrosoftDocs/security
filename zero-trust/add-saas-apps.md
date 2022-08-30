@@ -1,11 +1,17 @@
 ---
 title: Add SaaS apps to Azure Active Directory and to the scope of policies 
 description: Learn steps to add SaaS apps to Azure AD and to the scope of identity and device policies
-ms.date: 04/15/2022
+ms.date: 08/30/2022
 ms.service: security
 author: mjcaparas
 ms.author: macapara
 ms.topic: conceptual
+ms.collection:
+  -	m365solution-saas
+  -	m365solution-scenario
+  -	m365solution-zero-trust
+  -	zerotrust-solution
+  - highpri
 ---
 
 # Step 1: Add SaaS apps to Azure Active Directory and to the scope of policies 

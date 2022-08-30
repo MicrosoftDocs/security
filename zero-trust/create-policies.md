@@ -1,11 +1,17 @@
 ---
 title: Create Defender for Cloud App policies
-description: 
-ms.date: 04/15/2022
+description: Learn how to create Defender for Cloud Apps policies so that you can properly manage and protect important resources
+ms.date: 08/30/2022
 ms.service: security
 author: mjcaparas
 ms.author: macapara
 ms.topic: conceptual
+ms.collection:
+  -	m365solution-saas
+  -	m365solution-scenario
+  -	m365solution-zero-trust
+  -	zerotrust-solution
+  - highpri
 ---
 
 # Step 2: Create Defender for Cloud App policies

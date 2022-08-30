@@ -1,11 +1,17 @@
 ---
 title: Deploy information protection for SaaS apps
-description: 
-ms.date: 04/15/2022
+description: Learn how to deploy information protection for SaaS apps to prevent inadvertent exposure of sensitive information
+ms.date: 08/30/2022
 ms.service: security
 author: mjcaparas
 ms.author: macapara
 ms.topic: conceptual
+ms.collection:
+  -	m365solution-saas
+  -	m365solution-scenario
+  -	m365solution-zero-trust
+  -	zerotrust-solution
+  - highpri
 ---
 
 # Step 3: Deploy information protection for SaaS apps 

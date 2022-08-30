@@ -14,6 +14,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-ransomware
 - m365solution-overview
+- highpri
 ms.custom: cxdef-zt-ransomware
 description: Quickly configure for ransomware prevention in your organization to help stop ransomware cybercriminals from extorting your business.
 

@@ -14,6 +14,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-ransomware
 - m365solution-overview
+- highpri
 ms.custom: cxdef-zt-ransomware 
 description: Deploy ransomware protection to make it hard for an attacker to get into your environment by incrementally removing the risks.
 

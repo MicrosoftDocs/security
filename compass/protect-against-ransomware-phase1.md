@@ -15,6 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-ransomware
 - m365solution-overview
+- highpri
 ms.custom: cxdef-zt-ransomware 
 description: Prepare your organization so that you can recover from an attack without having to pay the ransom.
 

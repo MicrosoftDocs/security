@@ -6,6 +6,7 @@ ms.service: security
 author: mjcaparas
 ms.author: macapara
 ms.topic: conceptual
+ms.collection: highpri
 ---
 
 # What is Zero Trust?

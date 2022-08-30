@@ -39,8 +39,8 @@ Microsoft 365 capabilities help you bring your SaaS apps into management to meet
 In the illustration:
 - A collection of SaaS apps is pictured.
 - You can add these SaaS apps to Azure Active Directory and include these apps in the scope of your multi-factor authentication and conditional access policies. For more information, [Integrating all your apps with Azure AD](/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad).
-- Using Microsoft Defender for Cloud Apps, you can discover other cloud apps your organization uses. You can approve apps and apply session controls. For newly discovered enterprise cloud apps that supports federation you can add them to Azure AD to enforce multi-factor authentication and other policies.
-- Microsoft Purview Information Protection capabilities can be extended through Microsoft Defender for Cloud apps to these cloud apps to discover sensitive data, protect data, and prevent data loss.
+- Using Microsoft Defender for Cloud Apps, you can discover other cloud apps your organization uses. You can approve apps, apply session controls, and discover sensitive data . For newly discovered enterprise cloud apps that supports federation you can add them to Azure AD to enforce multi-factor authentication and other policies.
+- Microsoft Purview Information Protection capabilities can be extended through Microsoft Defender for Cloud apps to these cloud apps to protect data, and prevent data loss.
 
 
 ## Implementing the layers of protection for SaaS apps

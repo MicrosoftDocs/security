@@ -2,7 +2,7 @@
 title: Develop using Zero Trust principles
 description: Learn how to develop your apps using Zero Trust principles. 
 ms.date: 07/20/2021
-ms.service: security
+ms.service: network-access
 author: knicholasa
 ms.author: nichola
 ms.topic: conceptual

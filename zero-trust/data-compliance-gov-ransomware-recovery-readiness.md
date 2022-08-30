@@ -2,8 +2,8 @@
 title: RaMP checklist —  Ransomware recovery readiness
 description: Ransomware recovery readiness 
 ms.service: network-access
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ---

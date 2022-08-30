@@ -7,8 +7,8 @@ metadata:
   title: Zero Trust Guidance Center # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn what the Zero Trust security model is and how to implement deployment steps to apply the security architecture in your organization.  # Required; article description that is displayed in search results. < 160 chars.
   services: na
-  ms.prod: m365-security
-  ms.technology: m365d
+  ms.service: microsoft-365-security
+  ms.subservice:: m365d
   ms.topic: landing-page # Required
   ms.collection: na
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.

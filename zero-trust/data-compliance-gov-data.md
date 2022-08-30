@@ -2,8 +2,8 @@
 title: RaMP checklist — Data protection
 description: Data
 ms.service: security
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ---

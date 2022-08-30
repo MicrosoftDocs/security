@@ -3,7 +3,7 @@ title: Using standards-based development methodologies
 description: In this article, we provide an overview of supported standards (OAuth 2.0, OpenID Connect, SAML, WS-Federation, and SCIM) and the benefits of using them with MSAL and the Microsoft identity platform, along with links to more detailed articles. 
 author: janicericketts
 ms.author: jricketts
-ms.service: security
+ms.service: network-access
 ms.topic: conceptual
 ms.date: 06/27/2022
 ms.custom: template-concept

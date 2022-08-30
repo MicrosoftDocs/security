@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Integrate SaaS apps for Zero Trust with Microsoft 365 
 
-The widespread increase in cloud adoption is transforming how organizations achieve business outcomes.  This shift highlights the  reliance of companies on cloud-based apps resulting in higher demand for services such as Software as a service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), and app development platforms. 
+The widespread increase in cloud adoption is transforming how organizations achieve business outcomes.  This shift highlights the  reliance on cloud-based apps resulting in higher demand for services such as Software as a service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), and app development platforms. 
 
 
 While a multicloud environment can help reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure that resources hosted in the cloud are protected. 
@@ -39,7 +39,7 @@ Microsoft 365 capabilities help you bring your SaaS apps into management to meet
 In the illustration:
 - A collection of SaaS apps is pictured.
 - You can add these SaaS apps to Azure Active Directory and include these apps in the scope of your multi-factor authentication and conditional access policies. For more information, [Integrating all your apps with Azure AD](/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad).
-- Using Microsoft Defender for Cloud Apps, you can discover other cloud apps your organization uses. You can approve apps, apply session controls, and discover sensitive data . For newly discovered enterprise cloud apps that supports federation you can add them to Azure AD to enforce multi-factor authentication and other policies.
+- Using Microsoft Defender for Cloud Apps, you can discover other cloud apps your organization uses. You can approve apps, apply session controls, and discover sensitive data. For newly discovered enterprise cloud apps that supports federation you can add them to Azure AD to enforce multi-factor authentication and other policies.
 - Microsoft Purview Information Protection capabilities can be extended through Microsoft Defender for Cloud apps to these cloud apps to protect data, and prevent data loss.
 
 
@@ -70,13 +70,13 @@ For more information, see the [Microsoft 365 Zero Trust deployment plan](/micros
 ## What's in this solution
 This solution steps through the deployment of key layers to integrate SaaS apps for Zero Trust with Microsoft 365. 
 
-Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps. You're likely already aware of the primary cloud apps used by your organization. Azure AD includes a gallery of apps you can add to your directory. You can also use Microsoft Defender for Cloud Apps to discover other cloud your users interact with. For more information, see [Discover and assess cloud apps](/defender-cloud-apps/best-practices#discover-and-assess-cloud-apps). After knowing your digital estate, you'll need to make sure that only authorized users and that certain conditions are met before they're accessed and that the information is properly protected.
+Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps. You're likely already aware of the primary cloud apps used by your organization. Azure AD includes a gallery of apps you can add to your directory. You can also use Microsoft Defender for Cloud Apps to discover other cloud your users interact with. For more information, see [Discover and assess cloud apps](/defender-cloud-apps/best-practices#discover-and-assess-cloud-apps). After knowing your digital estate, you'll need to make sure that only authorized users and that certain conditions are met before they're accessed, and that the information is properly protected.
 
 
 :::image type="content" source="media/saas-zt-steps.png" alt-text="Image of Zero Trust SaaS guidance":::
 
 
-The steps in this solutions are:
+The steps in this solution are:
 1. [Add SaaS apps in Azure Active Directory](add-saas-apps.md).
 2. [Create Microsoft Defender for Cloud Apps policies]().
 3. [Deploy information protection for SaaS apps]().

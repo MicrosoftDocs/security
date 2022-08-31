@@ -1,10 +1,10 @@
 ---
 title: Building apps with a Zero Trust approach to identity
 description: Learn how to build trustworthy, Zero Trust-ready applications with secure authentication and authorization using the Microsoft identity platform.
-ms.date: 10/14/2021
-ms.service: security
-author: knicholasa
-ms.author: nichola
+ms.date: 08/31/2022
+ms.service: identity
+author: janicericketts
+ms.author: jricketts
 ms.topic: conceptual
 
 # Customer intent: As a developer, I want to learn how to build Zero Trust-compliant apps using Microsoft identity platform features, so I can ensure that my applications are trustworthy and more secure.
@@ -48,7 +48,7 @@ The following best practices are key to keeping your apps secure. We have also p
 ## Next steps
 
 - [Build Zero Trust-ready apps using Microsoft identity platform features and tools](/azure/active-directory/develop/zero-trust-for-developers) maps features of the Microsoft identity platform to the principles of Zero Trust.
-- The [Adopting Zero Trust into your apps](https://www.microsoft.com/en-us/security/content-library/SkillingPath/Details/6541ecb8-fb85-44a5-bdd4-397bf2bb52f9) skilling path includes two useful  whitepapers:
+- The [Adopting Zero Trust into your apps](https://www.microsoft.com/security/content-library/SkillingPath/Details/6541ecb8-fb85-44a5-bdd4-397bf2bb52f9) skilling path includes two useful  whitepapers:
   - [Zero Trust for the Microsoft identity platform developer](https://azure.microsoft.com/resources/zero-trust-for-the-microsoft-identity-platform-developer/), which explains in detail how to approach Zero Trust identity using the Microsoft identity platform.
   - [Adopting a Zero Trust approach to Identity in line-of-business apps](https://azure.microsoft.com/resources/zero-trust-identity-line-of-business-apps/) provides guidance that is tailored to apps that are built by or for a company for use within that same company. 
 - The [Identity integrations](../integrate/identity.md) guide explains how independent software vendors and technology partners can integrate their security solutions with Microsoft products to create Zero Trust solutions for customers.

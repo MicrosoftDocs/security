@@ -5,7 +5,7 @@ author: TerryLanfear
 ms.author: terrylan
 ms.date: 8/14/2019
 ms.topic: article
-ms.service: security
+ms.service: information-protection
 ---
 
 TLS version enforcement capabilities now available per certificate binding on Windows Server 2019

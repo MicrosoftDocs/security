@@ -2,7 +2,7 @@
 title: Why are privileged access devices important
 description: Securing devices as part of the overall privileged access story
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: conceptual
 ms.date: 12/15/2020

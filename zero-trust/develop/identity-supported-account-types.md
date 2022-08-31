@@ -3,7 +3,7 @@ title: Supported identity and account types for single- and multi-tenant apps
 description: In this article, we explain how developers can determine, during app registration, which users their app allows from single tenants and multitenants.
 author: janicericketts
 ms.author: jricketts
-ms.service: security
+ms.service: network-access
 ms.topic: conceptual
 ms.date: 07/27/2022
 ms.custom: template-concept

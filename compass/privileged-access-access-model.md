@@ -2,7 +2,7 @@
 title: Securing privileged access Enterprise access model
 description: Securing privileged access is part of an enterprise access model
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: conceptual
 ms.date: 04/27/2021

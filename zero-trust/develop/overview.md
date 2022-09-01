@@ -26,7 +26,7 @@ While Zero Trust is not a replacement for security fundamentals, with work origi
 
 * We've seen a rise in the level of sophistication of cybersecurity attacks.
 * The "work from anywhere" workforce has redefined the security perimeter. Data is being accessed outside the corporate network and shared with external collaborators such as partners and vendors.
-* Corporate applications and data are moving from on-prem to hybrid and cloud environments. Traditional network controls can no longer be relied on for security. Controls need to move to where the data is: on devices and inside apps.
+* Corporate applications and data are moving from on-premises to hybrid and cloud environments. Traditional network controls can no longer be relied on for security. Controls need to move to where the data is: on devices and inside apps.
 
 The development guidance in this section will help you to increase security, reduce the blast radius of a security incident, and swiftly recover by leveraging Microsoft technology.
 

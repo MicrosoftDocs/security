@@ -141,6 +141,6 @@
     #    - name: Videos and slides
     #      href: endpoint-security-videos-and-decks.md
     #    - name: Article
-    #      href: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
+    #      href: /azure/architecture/framework/security/critical-impact-accounts
     #    - name: Capabilities
     #      href: 

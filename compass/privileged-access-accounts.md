@@ -9,7 +9,7 @@ ms.date: 01/20/2021
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: mas
 ---
 # Privileged access: Accounts

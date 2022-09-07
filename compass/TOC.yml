@@ -129,8 +129,6 @@
           href: information-protection-and-storage-capabilities.md
     - name: Applications and services
       items:
-    #   - name: Videos and slides
-    #     href: applications-and-cloud-services-videos-and-decks.md
         - name: Article
           href: applications-services.md
     #   - name: Capabilities

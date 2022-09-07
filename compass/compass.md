@@ -25,7 +25,6 @@ In this guidance:
 - [Identity and access management](identity-videos-and-decks.md)
 - [Network security and containment](network-containment-videos-and-decks.md)
 - [Information protection and storage](information-protection-and-storage-videos-and-decks.md)
-- [Applications and services](applications-and-cloud-services-videos-and-decks.md)
 
 This guidance is presented in a series of videos. To download the PowerPoint slides associated with these videos, click [download presentation slides](/microsoft-365/downloads/security-compass-presentation.pptx).
 

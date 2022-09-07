@@ -21,7 +21,7 @@
         "redirect_document_id": true
       },
       {
-        "source_path": "security-docs/compass/applications-and-cloud-services-videos-and-decks.md",
+        "source_path": "compass/applications-and-cloud-services-videos-and-decks.md",
         "redirect_url": "/security/compass/overview",
         "redirect_document_id": false
       },

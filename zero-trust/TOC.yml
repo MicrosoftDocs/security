@@ -233,10 +233,14 @@
         href: develop/developer-strategy-delegated-permission.md
       - name: Application permissions
         href: develop/developer-strategy-application-permissions.md
+      - name: Permissions that require admin consent
+        href: develop/permissions-require-admin-consent.md  
       - name: Non-user application identity
         href: develop/identity-non-user-applications.md
       - name: Authorization best practices
         href: develop/developer-strategy-authorization-best-practices.md
+      - name: Protected API example
+        href: develop/protected-api-example.md  
 - name: Resources
   expanded: false
   items:

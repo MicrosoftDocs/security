@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 08/31/2022
+ms.date: 09/09/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to implement the best authorization, permission, and consent models for my applications.
 ---
@@ -43,7 +43,7 @@ Microsoft customers sometimes describe difficulty in deciding when to allow an a
 
 Becoming a [Microsoft Verified Publisher](/azure/active-directory/develop/publisher-verification-overview) helps you to give your customers an easier experience in accepting your application requests. When an application comes from a verified publisher, users, IT Pros, and customers know that it comes from someone with whom Microsoft has a business relationship. A blue checkmark appears next to the publisher's name (component #5 in the **Permissions requested** consent prompt example below; see component table at [Azure AD application consent experience](/azure/active-directory/develop/application-consent-experience#building-blocks-of-the-consent-prompt)). The user can select the verified publisher from the consent prompt to view more information.
 
-:::image type="complex" source="../media/screenshot-application-permissions-requested-consent-prompt-inline.png" alt-text="Screenshot of Permissions requested dialog shows component building blocks as described in linked Azure AD application consent experience article." lightbox="../media/screenshot-application-permissions-requested-consent-prompt-expanded.png":::
+:::image type="complex" source="../media/develop/screenshot-application-permissions-requested-consent-prompt-inline.png" alt-text="Screenshot of Permissions requested dialog shows component building blocks as described in linked Azure AD application consent experience article." lightbox="../media/develop/screenshot-application-permissions-requested-consent-prompt-expanded.png":::
    "Screenshot of the consent experience Permissions requested dialog shows component building blocks as described in linked Azure AD application consent experience article. Emphasized is component number 5 which is the name of the verified publisher and a blue checkmark that the user can click to get more information about the publisher."
 :::image-end:::
 

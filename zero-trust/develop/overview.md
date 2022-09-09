@@ -1,13 +1,12 @@
 ---
 title: Develop using Zero Trust principles
 description: As a developer, learn how to implement the the guiding principles of Zero Trust so that you can improve your application security.
-ms.date: 08/31/2022
+ms.date: 09/09/2022
 ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
 ---
-
 # Develop using Zero Trust principles
 
 This article will help you, as a developer, to understand the guiding principles of Zero Trust so that you can improve your application security. You play a key role in organizational security; applications and their developers can no longer assume that the network perimeter is secure. Compromised applications can impact the entire organization.
@@ -41,5 +40,7 @@ The development guidance in this section will help you to increase security, red
 * [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 * [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application.
 * [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to determine your application permission approach to credential management.
+* [Requesting permissions that require administrative consent](permissions-require-admin-consent.md) will help you to better collaborate with tenant admins to implement the Zero Trust principle of least privilege in your applications.
 * [Providing application identity credentials when there is no user](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (non-user applications) on Azure is Managed Identities for Azure Resources.
 * [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.
+* [Example of API protected by Microsoft identity consent framework](protected-api-example.md) will help you to design a permissions and consent strategy that will provide the best experience for your users and tenant admins while implementing the Zero Trust principle of least privilege.

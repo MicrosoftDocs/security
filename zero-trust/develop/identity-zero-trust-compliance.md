@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 08/31/2022
+ms.date: 09/09/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to understand application security so that I can address the guiding principles of Zero Trust.
 ---
@@ -25,7 +25,7 @@ At a fundamental level, two of the keys to your application's compliance with Ze
 
 With the [Microsoft identity platform](/azure/active-directory/develop/v2-overview) and Zero Trust enabling technologies (as shown in the following diagram), using Azure AD tokens enables your application to integrate with Microsoft's entire suite of security technologies.
 
-:::image type="complex" source="../media/diagram-microsoft-zero-trust-enabling-technologies-inline.png" alt-text="Diagram shows the technologies that enable Microsoft Zero Trust." lightbox="../media/diagram-microsoft-zero-trust-enabling-technologies-expanded.png":::
+:::image type="complex" source="../media/develop/diagram-microsoft-zero-trust-enabling-technologies-inline.png" alt-text="Diagram shows the technologies that enable Microsoft Zero Trust." lightbox="../media/develop/diagram-microsoft-zero-trust-enabling-technologies-expanded.png":::
    "Diagram title: Microsoft's Zero Trust enabling technologies. At the center is Azure AD Conditional Access. Microsoft Technologies on the periphery include (from top left corner and following clockwise) Azure Active Directory and Defender for Identity, Information Protection, Defender for Cloud Apps, Azure Security, Azure Networking, Azure Sentinel and Defender XDR, Endpoint Manager, Defender for Endpoint."
 :::image-end:::
 

@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 08/31/2022
+ms.date: 09/09/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to implement the best approach for managing permissions in my application and develop using Zero Trust.
 ---
@@ -17,11 +17,11 @@ The permission and consent models refer primarily to an application. The permiss
 
 Referencing the following Venn diagram, with delegated permissions there's an intersection between what the user is allowed to do and what the application is allowed to do. That's the effective permission by which the application is bound. Any time you use a delegated permission, it's bounded by the effective permissions.
 
-:::image type="complex" source="../media/diagram-effective-permissions-inline.png" alt-text="Venn diagram shows effective permissions as intersection of app permissions and user capabilities." lightbox="../media/diagram-effective-permissions-expanded.png":::
+:::image type="complex" source="../media/develop/diagram-effective-permissions-inline.png" alt-text="Venn diagram shows effective permissions as intersection of app permissions and user capabilities." lightbox="../media/develop/diagram-effective-permissions-expanded.png":::
    "Venn diagram description: Left circle text: Apps are granted consent for the app's range of operation. Right circle text: Users have permissions for operations managed by their organization. Intersection of circles text: Effective permissions: intersection of app permissions and user capabilities."
 :::image-end:::
 
-For example, your application that has users in front of the app gets permission to update every user's profile in the tenant. That doesn't mean that anyone running your application can update anyone else's profile. If the admin decides to grant your application `User.ReadWrite.All`, then they believe that your application is doing the right things when updating any users profile. Your app might log the changes and properly safeguard the information. The admin makes a value judgment about the application, not about the user.
+For example, your application that has users in front of the app gets permission to update every user's profile in the tenant. That doesn't mean that anyone running your application can update anyone else's profile. If the admin decides to grant your application *User.ReadWrite.All*, then they believe that your application is doing the right things when updating any users profile. Your app might log the changes and properly safeguard the information. The admin makes a value judgment about the application, not about the user.
 
 ## Least privilege approach
 

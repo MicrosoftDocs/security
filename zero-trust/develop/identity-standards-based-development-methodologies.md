@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 08/31/2022
+ms.date: 09/15/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to know about the benefits of using supported standards with MSAL in the Microsoft identity platform, so that I can have the most efficient and effective way to achieve Zero Trust.
 ---
@@ -38,7 +38,7 @@ OpenID Connect constructs allow Azure AD extensions to enhance security, the mos
 - [Conditional Access authentication context](/azure/active-directory/develop/developer-guide-conditional-access-authentication-context) allows apps to apply granular policies to protect sensitive data and actions instead of just at the app level.
 - [Continuous Access Evaluation (CAE)](/azure/active-directory/conditional-access/concept-continuous-access-evaluation) enables Azure AD applications to subscribe to critical events that can then be evaluated and enforced. This includes evaluation of events such as user accounts being disabled or deleted, password changes, token revocations, and users detected as being risky.
 
-Your applications that use enhanced security features like CAE and Conditional Access authentication context must include code to handle claims challenges. Open protocols enable you to use claims challenges and claims requests to invoke additional client capabilities such as indicating to apps that they need to re-interact with Azure AD (e.g., in case of an anomaly or if the user no longer satisfies conditions under which they had earlier authenticated). You can code for these extensions without disturbing primary authentication code flows.
+Your applications that use enhanced security features like CAE and Conditional Access authentication context must include code to handle claims challenges. Open protocols enable you to use claims challenges and claims requests to invoke additional client capabilities such as indicating to apps that they need to re-interact with Azure AD (for example, in case of an anomaly or if the user no longer satisfies conditions under which they had earlier authenticated). You can code for these extensions without disturbing primary authentication code flows.
 
 ### Security Assertions Markup Language (SAML)
 
@@ -53,9 +53,9 @@ Using MSAL, you can acquire tokens for application types that include web applic
 ## Next steps
 
 - [Microsoft identity platform authentication libraries](/azure/active-directory/develop/reference-v2-libraries) provides MSAL support for several application types with links to library source code, where to get the package for your app's project, and whether the library supports user sign-in (authentication), access to protected web APIs (authorization), or both.
-- [Develop using Zero Trust principles](overview.md) will help you, as a developer, to understand the guiding principles of Zero Trust so that you can improve your application security.
-- [What do we mean by Zero Trust compliance?](identity-zero-trust-compliance.md) provides overview of application security from a developer's perspective to address the guiding principles of Zero Trust.
-- [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) will help you to understand best practices for your application development lifecycle so that you can create secure applications that are Zero Trust compliant.
+- [Develop using Zero Trust principles](overview.md) helps you to understand the guiding principles of Zero Trust so that you can improve your application security.
+- [What do we mean by Zero Trust compliance?](identity-zero-trust-compliance.md) provides an overview of application security from a developer's perspective to address the guiding principles of Zero Trust.
+- Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle so that you can create secure applications that are [Zero Trust compliant](identity-zero-trust-compliance.md).
+- [Building apps with a Zero Trust approach to identity](identity.md) continues from the [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) article to help you use a Zero Trust approach to identity in your software development lifecyle (SDLC).
 - [Using standards-based development methodologies](identity-standards-based-development-methodologies.md) provides an overview of supported standards (OAuth 2.0, OpenID Connect, SAML, WS-Federation, and SCIM) and the benefits of using them with MSAL and the Microsoft identity platform.
-- [Developer and administrator responsibilities for application registration, authorization, and access](identity-developer-administrator-responsibilities.md) helps you to understand what your IT Pros need from your, and what your need from them, so that your can streamline your zero-trust development workflow.
-- [Building apps with a Zero Trust approach to identity](identity.md) helps you to use a Zero Trust approach to identity, which includes authentication, authorization, and identity management.
+- [Developer and administrator responsibilities for application registration, authorization, and access](identity-developer-administrator-responsibilities.md) helps you to understand what your IT Pros need from you, and what your need from them, so that you can streamline your zero-trust development workflow.

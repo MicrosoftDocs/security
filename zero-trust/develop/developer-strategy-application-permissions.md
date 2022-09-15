@@ -1,29 +1,30 @@
 ---
 title: Developing application permissions strategy
-description: As a developer, decide upon your application permission approach to credential management when you use the Microsoft identity platform to authenticate and authorize your applications and manage permissions and consent.
+description: Learn how to define an application permission approach to credential management when you use the Microsoft identity platform to authenticate and authorize your applications and manage permissions and consent.
 author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 09/09/2022
+ms.date: 09/15/2022
 ms.custom: template-concept
-# Customer intent: As a developer, I want to decide upon my application permission approach to credential management when I use the Microsoft identity platform to authenticate and authorize my applications and manage permissions and consent.
+# Customer intent: As a developer, I want to learn how to define my application permission approach to credential management when I use the Microsoft identity platform to authenticate and authorize my applications and manage permissions and consent.
 ---
 # Developing application permissions strategy
 
-As you learn to [develop using Zero Trust principles](overview.md), reference this article after reviewing [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) and [Developing delegated permissions strategy](developer-strategy-delegated-permission.md). It will help you to decide upon your application permissions approach to credential management when you use the Microsoft identity platform to [authenticate and authorize](/azure/active-directory/develop/authentication-vs-authorization) your applications and manage [permissions and consent](/azure/active-directory/develop/permissions-consent-overview).
+As you learn to [develop using Zero Trust principles](overview.md), reference this article after reviewing [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) and [Developing delegated permissions strategy](developer-strategy-delegated-permission.md). It will help you to define your application permissions approach to credential management when you use the Microsoft identity platform to [authenticate and authorize](/azure/active-directory/develop/authentication-vs-authorization) your applications and manage [permissions and consent](/azure/active-directory/develop/permissions-consent-overview).
 
 When [no user is involved](../develop/identity-non-user-applications.md), you won't have an [effective permission model](developer-strategy-delegated-permission.md) because your application is always granted the same permissions that the specific user of your application has been granted.
 
-- **App proves it is the app requesting permission.** Your application will [prove its own identity](../develop/identity-non-user-applications.md) with one of the following:
+- **App proves it's the app requesting permission.** Your application will [prove its own identity](../develop/identity-non-user-applications.md) with one of the following methods:
   - a certificate, which is the best option, or
-  - a secret in a sophisticated secret management system or when you're developing your services on Azure and using [Managed Identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/overview) as described in the below [Managing application credentials section](#managing-applications-credentials).
+  - a secret in a sophisticated secret management system, or
+  - a secret when you're developing your services on Azure and using [Managed Identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/overview) as described in the below [Managing application credentials section](#managing-applications-credentials).
 
 - **App always requires advance admin consent.** Your application will request this permission with the `.default` scope. It will request the permissions the admin assigns to the application. Regardless of the naming for any particular scope, these permissions apply across all users by default.
 
 - **Trans user functionality.** By default, *User.ReadWrite.All* allows your application to update every user's profile, even *Calendar.Read*. As an application permission, it allows your application to read the Calendar of every user in the tenant.
 
-- **Permissions granted the app are always the permissions used.** Unlike a [delegated permission](developer-strategy-delegated-permission.md), application permissions are not bounded by what any particular user can do.
+- **Permissions granted the app are always the permissions used.** Unlike a [delegated permission](developer-strategy-delegated-permission.md), application permissions aren't bounded by what any particular user can do.
 
 ## Limiting application permissions
 
@@ -39,7 +40,7 @@ There are three ways of limiting an application to less than global access.
 
 Credential hygiene can ensure that your application quickly recovers from a potential breach. The following best practices will guide you in developing applications that carry out detection and remediation while avoiding downtime and affecting legitimate users. These recommendations support the [Zero Trust principle of assume breach](../zero-trust-overview.md) in preparing you to respond to a security incident.
 
-- **Remove all secrets from code and configuration**. When you are using the Azure platform, place secrets in [Key vault](/azure/key-vault/general/basic-concepts) and access them via [Managed Identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/overview) to make your code resilient to handle secret rotations if a compromise occurs. IT admins can remove and rotate secrets and certificates without taking down your application or affecting legitimate users.
+- **Remove all secrets from code and configuration**. When you're using the Azure platform, place secrets in [Key vault](/azure/key-vault/general/basic-concepts) and access them via [Managed Identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/overview) to make your code resilient to handle secret rotations if a compromise occurs. IT admins can remove and rotate secrets and certificates without taking down your application or affecting legitimate users.
 
 - **Use certificates instead of client secrets unless a secure process is in place to manage secrets**. Attackers know that client secrets tend to be less securely handled and leaked secret usage is difficult to track. Certificates can be better managed and revoked if compromised. When you use secrets, build or use a secure no-touch deployment and rollover process for them. Use secrets with a set expiry time period (for example, one year, two years) and avoid *never expires*.
 
@@ -47,9 +48,9 @@ Credential hygiene can ensure that your application quickly recovers from a pote
 
 ## Next steps
 
-- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
-- [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application.
+- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application. To access protected resources like email or calendar data, your application needs the resource owner's authorization.
+- [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop using Zero Trust principles.
 - [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.
-- [Requesting permissions that require administrative consent](permissions-require-admin-consent.md) will help you to better collaborate with tenant admins to implement the Zero Trust principle of least privilege in your applications.
-- [Example of API protected by Microsoft identity consent framework](protected-api-example.md) will help you to design a permissions and consent strategy that will provide the best experience for your users and tenant admins while implementing the Zero Trust principle of least privilege.
-- [Providing application identity credentials when no user is involved](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (non-user applications) on Azure is Managed Identities for Azure Resources.
+- [Requesting permissions that require administrative consent](permissions-require-admin-consent.md) describes the permission and consent experience for a scenario where you're writing your application code to request application permissions that will require administrative consent.
+- The demonstrations in [Example of API protected by Microsoft identity consent framework](protected-api-example.md) help you to design your application permissions strategy to provide the best experience for your users and tenant admins when you implement the Zero Trust principle of least privilege.
+- When you're building non-user applications, you don't have a user whom you can prompt for a username and password or Multifactor Authentication (MFA). You need to provide the application's identity on its own. [Providing application identity credentials when there's no user](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (non-user applications) on Azure is Managed Identities for Azure resources.

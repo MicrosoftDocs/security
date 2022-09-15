@@ -5,19 +5,19 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 08/31/2022
+ms.date: 09/15/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to understand how to best ensure Zero Trust when acquiring resource access permissions for my application.
 ---
 # Acquiring authorization to access resources
 
-This article will help you, as a developer, to understand how to best ensure [Zero Trust](overview.md) when acquiring resource access permissions for your application. To access protected resources like email or calendar data, your application needs the resource owner's *authorization*. The resource owner can *consent* to or deny your app's request. Your app will receive an access token when the resource owner grants consent; your app will not receive an access token when the resource owner denies access.
+This article will help you, as a developer, to understand how to best ensure [Zero Trust](overview.md) when acquiring resource access permissions for your application. To access protected resources like email or calendar data, your application needs the resource owner's *authorization*. The resource owner can *consent* to or deny your app's request. Your app will receive an access token when the resource owner grants consent; your app won't receive an access token when the resource owner denies access.
 
 ## Conceptual review
 
 To describe how you can use the Microsoft identity platform to [authenticate and authorize](/azure/active-directory/develop/authentication-vs-authorization) your applications and manage [permissions and consent](/azure/active-directory/develop/permissions-consent-overview), we'll start with some concepts:
 
-- *Authentication* (sometimes shortened to *AuthN*) is the process of proving that you are who you say you are. The Microsoft identity platform uses the [OpenID Connect](https://openid.net/connect/) protocol for handling authentication. *Authorization* (sometimes shortened to *AuthZ*) grants an authenticated party permission to do something. It specifies what data the authenticated party can access. The Microsoft identity platform uses the [OAuth2.0](https://oauth.net/2/) protocol for handling authorization. [Authorization options](/azure/active-directory/develop/authorization-basics) include access control lists (ACL), role-based access control (RBAC), and attribute access control (ABAC). Authentication is often a factor of authorization.
+- *Authentication* (sometimes shortened to *AuthN*) is the process of proving that you're who you say you're. The Microsoft identity platform uses the [OpenID Connect](https://openid.net/connect/) protocol for handling authentication. *Authorization* (sometimes shortened to *AuthZ*) grants an authenticated party permission to do something. It specifies what data the authenticated party can access. The Microsoft identity platform uses the [OAuth2.0](https://oauth.net/2/) protocol for handling authorization. [Authorization options](/azure/active-directory/develop/authorization-basics) include access control lists (ACL), role-based access control (RBAC), and attribute access control (ABAC). Authentication is often a factor of authorization.
 
 - To access data, your application can use *delegated access* (acting on behalf of a signed-in user) or *direct access* (acting only as the application's own identity). [Delegated access](/azure/active-directory/develop/permissions-consent-overview#delegated-access-access-on-behalf-of-a-user) requires delegated permissions (also known as [scopes](/azure/active-directory/develop/v2-permissions-and-consent#scopes-and-permissions)); the client and the user must be separately authorized to make the request. [Direct access](/azure/active-directory/develop/permissions-consent-overview#direct-access-app-only-access) may require application permissions (also known as [app roles](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps)); when app roles are granted to applications, they can be called applications permissions.
 
@@ -29,7 +29,7 @@ To describe how you can use the Microsoft identity platform to [authenticate and
 
 ## Difference between delegated and application permission
 
-Applications work in two modes: when a user is present (delegated permission) and [when there is no user](identity-non-user-applications.md) (application permission). When there is a user in front of an application, you're compelled to act on behalf of that user; you shouldn't be acting on behalf of the application itself. When a user is directing your application, you are acting as the delegate for that user. You're getting permission to act on behalf of the user that the token identifies.
+Applications work in two modes: when a user is present (delegated permission) and [when there's no user](identity-non-user-applications.md) (application permission). When there's a user in front of an application, you're compelled to act on behalf of that user; you shouldn't be acting on behalf of the application itself. When a user is directing your application, you're acting as the delegate for that user. You're getting permission to act on behalf of the user that the token identifies.
 
 Service type applications (background tasks, daemons, server-to-server processes) don't have users who can identify themselves or type in a password. They require an application permission to act on behalf of itself (on behalf of the service application).
 
@@ -41,9 +41,9 @@ When you need to allow your application to call an API or authorize your applica
 
 ## Next steps
 
-- [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application.
-- [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to determine your application permission approach to credential management.
-- [Providing application identity credentials when there is no user](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (non-user applications) on Azure is Managed Identities for Azure Resources.
+- [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop using Zero Trust principles.
+- [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management when you use the Microsoft identity platform to authenticate and authorize your applications and manage permissions and consent.
+- When you're building non-user applications, you don't have a user whom you can prompt for a username and password or Multifactor Authentication (MFA). You need to provide the application's identity on its own. [Providing application identity credentials when there's no user](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (non-user applications) on Azure is Managed Identities for Azure resources.
 - [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.
-- [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) will help you to understand best practices for your application development lifecycle so that you can create secure applications that are [Zero Trust compliant](identity-zero-trust-compliance.md).
-- [Building apps with a Zero Trust approach to identity](identity.md) helps you to use a Zero Trust approach to identity, which includes authentication, authorization, and identity management.
+- Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle so that you can create secure applications that are [Zero Trust compliant](identity-zero-trust-compliance.md).
+- [Building apps with a Zero Trust approach to identity](identity.md) continues from the [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) article to help you use a Zero Trust approach to identity in your software development lifecyle (SDLC).

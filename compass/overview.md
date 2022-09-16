@@ -2,14 +2,14 @@
 title: Securing privileged access overview
 description: How can organizations secure privileged with Azure resources?
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: overview
 ms.date: 12/15/2020
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: mas
 ---
 # Securing privileged access
@@ -30,23 +30,22 @@ Building this strategy requires a holistic approach combining multiple technolog
 
 ## Get started and measure progress
 
-|   |   |   |   |
+| Image | Description | Image | Description |
 | --- | --- | --- | --- |
-| ![Rapid Modernization Plan](./media/overview/ramp.png) | [Rapid Modernization Plan (RaMP)](security-rapid-modernization-plan.md) <br/> - Plan and implement the most impactful quick wins | ![Best practices checklist](./media/overview/checklist.png) | [Best practices](https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts) <br/> [Videos and Slides](https://docs.microsoft.com/security/compass/administration-videos-and-decks) |
+| ![Rapid Modernization Plan](./media/overview/ramp.png) | [Rapid Modernization Plan (RaMP)](security-rapid-modernization-plan.md) <br/> - Plan and implement the most impactful quick wins | ![Best practices checklist](./media/overview/checklist.png) | [Best practices](/security/compass/critical-impact-accounts) <br/> [Videos and Slides](/security/compass/administration-videos-and-decks) |
 
 ## Industry references
 
-Securing privileged access is also addresses by these industry standards and best practices.
+Securing privileged access is also addressed by these industry standards and best practices.
 
-|   |   |   |
-| --- | --- | --- |
 | [UK National Cyber Security Center (NCSC)](https://www.ncsc.gov.uk/collection/secure-system-administration) | [Australian Cyber Security Center (ACSC)](https://www.cyber.gov.au/acsc/view-all-content/publications/secure-administration) | [MITRE ATT&CK](https://attack.mitre.org/mitigations/M1026/) |
+| --- | --- | --- |
 
 ## Next steps
 
 Strategy, design, and implementation resources to help you rapidly secure privileged access for your environment.
 
-| | Article | Description |
+| Image | Article | Description |
 | :---: | --- | --- |
 | ![Strategy doc](./media/overview/strategy.png) | [Strategy](privileged-access-strategy.md) | Overview of privileged access strategy |
 | ![Success criteria doc](./media/overview/success.png) | [Success criteria](privileged-access-success-criteria.md) | Strategic success criteria |

@@ -4,14 +4,14 @@ description: Understand how Microsoft's Detection and Response Team (DART) detec
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, microsoft 365 defender
 search.product: DART
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,7 +19,7 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
+ms.subservice:: m365d
 ---
 
 # Microsoft DART ransomware case study

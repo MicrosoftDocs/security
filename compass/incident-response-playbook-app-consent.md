@@ -4,14 +4,14 @@ description: Learn how to identify and investigate app consent attacks, protect 
 keywords: app consent grant, investigation, attack, illicit consent grant, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, Microsoft 365 Defender
 search.product: DART
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,7 +19,7 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
+ms.subservice:: m365d
 ---
 
 # App consent grant investigation
@@ -58,7 +58,7 @@ To start the investigation process, you need the following data:
 
 Ensure you complete the following installations and configuration requirements:
 
-1. The AzureAD and MSOnline PowerShell modules are installed.
+1. The AzureAD PowerShell module is installed.
 2. You have global administrator rights on the tenant that the script will be run against.
 3. You are assigned local administrator role on the computer that you will use to run the scripts.
 
@@ -467,47 +467,12 @@ If your organization has the appropriate license:
 
 ## How to stop and remediate an illicit consent grant attack?
 
-After you have identified an application with illicit permissions, you have several ways to remove that access.
+After you have identified an application with illicit permissions, **immediately disable the application** following the instructions in [Disable an application](/azure/active-directory/manage-apps/disable-user-sign-in-portal). Then, contact Microsoft Support to report the malicious application.
 
-**You can revoke the application's permission in the Azure Active Directory portal.**
+Once an application has been disabled in your Azure AD tenant, it cannot obtain new tokens to access data, and other users will not be able to sign in to or grant consent to the app.
 
-1. Navigate to the affected user in the **Azure Active Directory User** tab.
-2. Select **Applications**.
-
-    :::image type="content" source="./media/incident-response-playbook-app-consent/applications1.png" alt-text="applications":::
-
-3. Select the illicit application.
-4. Select **Remove**.
-
-    :::image type="content" source="./media/incident-response-playbook-app-consent/assignmentdetail.png" alt-text="removeapp":::
-
-**You can use PowerShell to revoke the OAuth consent grant by following the steps in [Remove-AzureADOAuth2PermissionGrant](/powershell/module/azuread/remove-azureadoauth2permissiongrant)**.
-
-First, run this command to gather information that you have in Azure AD, for permissions of consent grants.
-
-```powershell
-Get-ADOAuth2PermissionGrantoAuth
-```
-
-Here's an example of the output.
-
-![Example of the Get-ADOAuth2PermissionGrantoAuth command output](./media/incident-response-playbook-app-consent/output.png)
-
-**You can use PowerShell to revoke the Service App Role Assignment by following the steps in [Remove-AzureADServiceAppRoleAssignment](/powershell/module/azuread/remove-azureadoauth2permissiongrant)**.
-
-Here's an example.
-
-```powershell
-Remove-AzureADOAuth2PermissionGrant -ObjectId "GbrSwpsCB0ar6c7N7PRvD1bNACUj4C9IspcKu5YkdoE"
-```
-
-Here's an example of the output.
-
-![Example of the Remove-AzureADOAuth2PermissionGrant command output](./media/incident-response-playbook-app-consent/output2.png)
-
-You can also deactivate sign-in for the affected account altogether, which will in turn deactivate app access to data in that account. This option isn't ideal for the end user's productivity, but it can be a viable short-term remediation.
-
-:::image type="content" source="./media/incident-response-playbook-app-consent/Testuser3.png" alt-text="deactivateuser":::
+> [!NOTE]
+> If you suspect you have encountered a malicious application in your organization, it is better to disable it than to delete it. If you only delete the application, it might return later if another user grants consent. Instead, disable the application to ensure it can't come back later.
 
 ## Recommended defenses
 
@@ -564,10 +529,7 @@ Audit apps and consented permissions in your organization to ensure applications
 - Educate the customer and provide awareness and training on securing application consent grants
 - Tighten the application consent grants process with organizational policy and technical controls
 - Set up **Create schedule** to review **Consented** applications
-- You can use PowerShell to revoke the OAuth consent grant by following the steps in *Remove-AzureADOAuth2PermissionGrant*.
-- You can use PowerShell to revoke the Service App Role assignment by following the steps in *Remove-AzureADServiceAppRoleAssignment*.
-- You can also deactivate sign-in for the affected account altogether, which will in turn deactivate application access to data in that account.
-- You can turn off integrated applications for your tenancy. This is a drastic step that prevents end users from granting consent to third-party applications on a tenant-wide basis. However, this option is not recommended.
+- You can use PowerShell to disable suspected or malicious apps by [disabling the app](/azure/active-directory/manage-apps/disable-user-sign-in-portal)
 
 ## References
 

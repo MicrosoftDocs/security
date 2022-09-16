@@ -2,14 +2,14 @@
 title: Enhanced Security Admin Environment (ESAE) architecture mainstream retirement
 description: Retiring the red forest as a legacy security mechanism
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: conceptual
 ms.date: 01/12/2021
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: mas
 ---
 # Enhanced Security Admin Environment
@@ -20,7 +20,7 @@ Microsoft’s recommendation to use this architectural pattern has been replaced
 
 ## What if I already have ESAE?
 
-For customers that have already deployed this architecture to enhance security and/or simplify multi-forest management, there is no urgency to retire or replace an ESAE implementation if it's being operated as designed and intended. As with any enterprise systems, you should maintain the software in it by applying security updates and ensuring software is within [support lifecycle](https://docs.microsoft.com/lifecycle/).
+For customers that have already deployed this architecture to enhance security and/or simplify multi-forest management, there is no urgency to retire or replace an ESAE implementation if it's being operated as designed and intended. As with any enterprise systems, you should maintain the software in it by applying security updates and ensuring software is within [support lifecycle](/lifecycle/).
 
 Microsoft also recommends organizations with ESAE / hardened forests adopt the modern [privileged access strategy](privileged-access-strategy.md) using the [rapid modernization plan (RAMP)](security-rapid-modernization-plan.md) guidance. This complements an existing ESAE implementation and provides appropriate security for roles not already protected by ESAE including Azure AD Global Administrators, sensitive business users, and standard enterprise users. For more information, see the article [Securing privileged access security levels](privileged-access-security-levels.md).
 

@@ -2,12 +2,13 @@
 title: Incident response overview | Microsoft Docs
 description: Understand the role of incident response in your security operations center.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, incident response, cyber-attack, respond
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 localization_priority: Normal
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.custom: cxdef-zt-ransomware 
 ---
 
 # Incident response overview

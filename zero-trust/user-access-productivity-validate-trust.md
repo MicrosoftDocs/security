@@ -1,25 +1,34 @@
 ---
-title: Step 1. Explicitly validate trust for all access requests
+title: RaMP Checklist — Explicitly validate trust for all access requests
 description: Explicitly validate trust for all access requests 
-ms.service: security
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.service: network-access
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ---
 
-# Step 1. Explicitly validate trust for all access requests
+# RaMP Checklist — Explicitly validate trust for all access requests
 
-Your first step is to establish a security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access, for both public and private networks.
+This Rapid Modernization Plan (RaMP) checklist helps you establish a security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access, for both public and private networks.
 
-This includes using Zero Trust to explicitly validate trust for all access requests for:
+To be productive, your employees (users) must be able to use:
+
+- Their account credentials to verify their identity.
+- Their endpoint (device), such as a PC, tablet, or phone.
+- The applications you have provided them to do their jobs.
+- A network over which traffic flows between devices and applications, whether they are on premises or in the cloud.
+
+Each one of these elements are the targets of attackers and must be protected with the "never trust, always verify" central principle of Zero Trust.
+
+This checklist includes using Zero Trust to explicitly validate trust for all access requests for:
 
 - [Identities](#identities)
 - [Endpoints (devices)](#endpoints)
 - [Apps](#apps)
 - [Network](#network)
 
-After completing this step, you will have built out this part of the Zero Trust architecture.
+After completing this work, you will have built out this part of the Zero Trust architecture.
 
 :::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png" alt-text="The identities, endpoints, apps, and network sections of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png":::
 

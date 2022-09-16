@@ -2,14 +2,14 @@
 title: Securing privileged access intermediaries
 description: Securing intermediaries is only one part of the privileged access story
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: conceptual
 ms.date: 12/15/2020
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: mas
 ---
 # Privileged access: Intermediaries
@@ -137,16 +137,16 @@ Microsoft recommends a combination of controls for VPN intermediaries:
 
 - **Integrate Azure AD authentication** - to reduce or eliminate risk of locally stored credentials (and any overhead burden to maintain them) and enforce Zero Trust policies on inbound accounts/devices with conditional access. 
 For guidance on integrating, see
-   - [Azure VPN AAD integration](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-radius-mfa-nsp)
-   - [Enable Azure AD Authentication on the VPN gateway](https://docs.microsoft.com/azure/vpn-gateway/openvpn-azure-ad-tenant#enable-authentication)
+   - [Azure VPN AAD integration](/azure/vpn-gateway/vpn-gateway-radius-mfa-nsp)
+   - [Enable Azure AD Authentication on the VPN gateway](/azure/vpn-gateway/openvpn-azure-ad-tenant#enable-authentication)
    - Integrating third-party VPNs 
-      - [Cisco AnyConnect](https://docs.microsoft.com/azure/active-directory/saas-apps/cisco-anyconnect)
-      - Palo Alto Networks [GlobalProtect](https://docs.microsoft.com/azure/active-directory/saas-apps/palo-alto-networks-globalprotect-tutorial) and [Captive Portal](https://docs.microsoft.com/azure/active-directory/saas-apps/paloaltonetworks-captiveportal-tutorial)
-      - [F5](https://docs.microsoft.com/azure/active-directory/saas-apps/headerf5-tutorial)
-      - [Fortinet FortiGate SSL VPN](https://docs.microsoft.com/azure/active-directory/saas-apps/fortigate-ssl-vpn-tutorial)
-      - [Citrix NetScaler](https://docs.microsoft.com/azure/active-directory/saas-apps/citrix-netscaler-tutorial)
-      - [Zscaler Private Access (ZPA)](https://docs.microsoft.com/azure/active-directory/saas-apps/zscalerprivateaccess-tutorial)
-      - and [more](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list)
+      - [Cisco AnyConnect](/azure/active-directory/saas-apps/cisco-anyconnect)
+      - Palo Alto Networks [GlobalProtect](/azure/active-directory/saas-apps/palo-alto-networks-globalprotect-tutorial) and [Captive Portal](/azure/active-directory/saas-apps/paloaltonetworks-captiveportal-tutorial)
+      - [F5](/azure/active-directory/saas-apps/headerf5-tutorial)
+      - [Fortinet FortiGate SSL VPN](/azure/active-directory/saas-apps/fortigate-ssl-vpn-tutorial)
+      - [Citrix NetScaler](/azure/active-directory/saas-apps/citrix-netscaler-tutorial)
+      - [Zscaler Private Access (ZPA)](/azure/active-directory/saas-apps/zscalerprivateaccess-tutorial)
+      - and [more](/azure/active-directory/saas-apps/tutorial-list)
 - **Rapid patching** - Ensure that all organizational elements support rapid patching including: 
    - **Organizational sponsorship** and leadership support for requirement
    - **Standard technical processes** for updating VPNs with minimal or zero downtime. This process should include VPN software, appliances, and any underlying operating systems or firmware
@@ -178,7 +178,7 @@ Azure AD Application Proxy can also integrate with Microsoft Defender for Cloud 
 - Block access
 - Block custom activities
 
-For more information, see [Deploy Defender for Cloud Apps Conditional Access App Control for Azure AD apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad)
+For more information, see [Deploy Defender for Cloud Apps Conditional Access App Control for Azure AD apps](/cloud-app-security/proxy-deployment-aad)
 
 As you publish applications via the Azure AD Application Proxy, Microsoft recommends having application owners work with security teams to follow least privilege and ensure access to each application is made available to only the users that require it. As you deploy more apps this way, you may be able to offset some end-user point to site VPN usage.
 
@@ -212,7 +212,7 @@ Azure Bastion is an intermediary that is designed to provide secure access to Az
 
 #### Use cases and scenarios for Azure Bastion
 
-[Azure Bastion](https://docs.microsoft.com/azure/bastion/bastion-overview) effectively provides a flexible solution that can be used by IT Operations personnel and workload administrators outside of IT to manage resources hosted in Azure without requiring a full VPN connection to the environment. 
+[Azure Bastion](/azure/bastion/bastion-overview) effectively provides a flexible solution that can be used by IT Operations personnel and workload administrators outside of IT to manage resources hosted in Azure without requiring a full VPN connection to the environment. 
 
 #### Security risks and recommendations for Azure Bastion
 

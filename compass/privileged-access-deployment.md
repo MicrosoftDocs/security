@@ -2,14 +2,14 @@
 title: Deploying a privileged access solution
 description: Configuring and deploying components of a privileged access solution
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: how-to
 ms.date: 06/07/2021
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: frasim
 ---
 # Privileged access deployment
@@ -42,7 +42,7 @@ Require multi-factor authentication, at least for your administrators. See [Cond
    * **Name** - Secure Workstation Administrator
    * **User name** - `secure-ws-user@contoso.com`
    * **Directory role** - **Limited administrator** and select the **Intune Administrator** role.
-   * **Usage Location** - **United Kingdom**
+   * **Usage Location** - For example **United Kingdom**, or your desired location form the list.
 
 1. Select **Create**.
 
@@ -53,6 +53,7 @@ Create your device administrator user.
    * **Name** - Secure Workstation Administrator
    * **User name** - `secure-ws-admin@contoso.com`
    * **Directory role** - **Limited administrator** and select the **Intune Administrator** role.
+   * **Usage Location** - For example **United Kingdom**, or your desired location form the list.
 
 1. Select **Create**.
 
@@ -209,7 +210,7 @@ The Enrollment Status Page (ESP) displays provisioning progress after a new devi
 
 ### Configure Windows Update
 
-Keeping Windows 10 up to date is one of the most important things you can do. To maintain Windows in a secure state, you deploy an [update ring](/deployment/update/waas-deployment-rings-windows-10-updates) to manage the pace that updates are applied to workstations. 
+Keeping Windows 10 up to date is one of the most important things you can do. To maintain Windows in a secure state, you deploy an [update ring](/en-us/windows/deployment/update/waas-quick-start) to manage the pace that updates are applied to workstations. 
 
 This guidance recommends that you create a new update ring and change the following default settings:
 
@@ -365,8 +366,8 @@ The solution will provide you:
 
 Enable Defender for Cloud Apps and connect to Defender ATP to block access the risky URLs:
 
-* In [Microsoft Defender Security Center](https://securitycenter.windows) > Settings > Advanced features, set Microsoft Defender for Cloud Apps integration > **ON**
-* In [Microsoft Defender Security Center](https://securitycenter.windows)  > Settings > Advanced features, set Custom network indicators >  **ON**
+* In [Microsoft Defender Security Center](https://securitycenter.windows.com) > Settings > Advanced features, set Microsoft Defender for Cloud Apps integration > **ON**
+* In [Microsoft Defender Security Center](https://securitycenter.windows.com)  > Settings > Advanced features, set Custom network indicators >  **ON**
 * In [Microsoft Defender for Cloud Apps portal](https://portal.cloudappsecurity.com) > Settings > Microsoft Defender ATP integration > Select **Block unsanctioned apps**  
 
 ## Manage local applications

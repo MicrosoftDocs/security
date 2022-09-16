@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 localization_priority: Normal
 ms.service: security
-description: "Capabilities"
+description: "Learn about capabilities that can help with endpoint security."
 ---
 
 # Endpoint security capabilities
@@ -19,7 +19,4 @@ This article lists the capabilities that can help with endpoint security.
 ## Category 2
 
 ## Next steps
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
-
-
-
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

@@ -4,22 +4,23 @@ description: Understand how Microsoft's Detection and Response Team (DART) respo
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, microsoft 365 defender
 search.product: DART
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
 manager: dansimp
+localization_priority: Normal
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
+ms.subservice:: m365d
+ms.custom: cxdef-zt-ransomware 
 ---
 
 # Microsoft DART ransomware approach and best practices
@@ -206,7 +207,7 @@ The riskiest configurations consist of running mission critical systems on legac
 
 DART recommends implementing the following security recommendations and best practices after each incident.
 
-- Ensure that best practices are in place for [email and collaboration solutions](/security/business/threat-protection/office-365-defender) to make it more difficult for attackers to abuse them while allowing internal users to access external content easily and safely.
+- Ensure that best practices are in place for [email and collaboration solutions](/microsoft-365/security/office-365-security/defender-for-office-365) to make it more difficult for attackers to abuse them while allowing internal users to access external content easily and safely.
 
 - Follow [Zero Trust](https://www.microsoft.com/security/business/zero-trust) security best practices for remote access solutions to internal organizational resources.
 

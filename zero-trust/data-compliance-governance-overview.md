@@ -1,14 +1,14 @@
 ---
 title: Data, compliance, and governance
 description: Data, compliance, and governance initiative of RaMP for Zero Trust
-ms.service: security
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.service: network-access
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ---
 
-# Data, compliance, and governance
+# RaMP checklist —  Data, compliance, and governance
 
 Data is the lifeblood and intrinsic value of many organizations, even for those whose business is primarily material goods and services instead of information. That data needs to be:
 

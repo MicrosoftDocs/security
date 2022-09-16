@@ -1,12 +1,13 @@
 ---
 title: Incident response process | Microsoft Docs
 description: Understand how to perform incident response in your security operations.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 localization_priority: Normal
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.custom: cxdef-zt-ransomware 
 ---
 
 # Incident response process

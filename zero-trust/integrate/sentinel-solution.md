@@ -2,7 +2,7 @@
 title: Build and monitor Zero Trust (TIC 3.0) security architectures with Microsoft Sentinel
 description: Install and learn how to use the Microsoft Sentinel Zero Trust (TIC3.0) solution for an automated visualization of Zero Trust principles, cross-walked to the Trusted Internet Connections framework.
 ms.date: 12/15/2021
-ms.service: security
+ms.service: network-access
 author: batamig
 ms.author: bagol
 ms.topic: how-to
@@ -10,9 +10,9 @@ ms.topic: how-to
 
 # Build and monitor Zero Trust (TIC 3.0) security architectures with Microsoft Sentinel
 
-The Microsoft Sentinel **Zero Trust (TIC 3.0)** solution enables governance and compliance teams to design, build, monitor, and respond to Zero Trust (TIC 3.0) requirements. The solution includes a workbook, analytics rules, and a playbook, which provide an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, helping organizations to monitor configurations over time.
+The Microsoft Sentinel solution for **Zero Trust (TIC 3.0)** enables governance and compliance teams to design, build, monitor, and respond to Zero Trust (TIC 3.0) requirements. This solution includes a workbook, analytics rules, and a playbook, which provide an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, helping organizations to monitor configurations over time.
 
-This article describes how to install and use the Microsoft Sentinel **Zero Trust (TIC 3.0)** solution in your Microsoft Sentinel workspace.
+This article describes how to install and use the Microsoft Sentinel solution for **Zero Trust (TIC 3.0)** in your Microsoft Sentinel workspace.
 
 While only Microsoft Sentinel is required to get started, the solution is enhanced by integrations with other Microsoft Services, such as:
 
@@ -25,7 +25,7 @@ While only Microsoft Sentinel is required to get started, the solution is enhanc
 - [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
 - [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/security/office-365-defender)
 
-For more information, see [Guiding principles of Zero Trust](../index.md#guiding-principles-of-zero-trust).
+For more information, see [Guiding principles of Zero Trust](../zero-trust-overview.md#guiding-principles-of-zero-trust).
 
 > [!NOTE]
 > Microsoft Sentinel solutions are sets of bundled content, pre-configured for a specific set of data. For more information, see [Microsoft Sentinel solutions documentation](/azure/sentinel/sentinel-solutions).
@@ -33,15 +33,15 @@ For more information, see [Guiding principles of Zero Trust](../index.md#guiding
 
 ## The Zero Trust solution and the TIC 3.0 framework
 
-Zero Trust and TIC 3.0 are not the same, but they share many common themes and together provide a common story. The Microsoft Sentinel **Zero Trust (TIC 3.0)** solution offers detailed crosswalks between the Microsoft Zero Trust model with the TIC 3.0 framework and helps users to better understand the overlaps between the two.
+Zero Trust and TIC 3.0 are not the same, but they share many common themes and together provide a common story. The Microsoft Sentinel solution for **Zero Trust (TIC 3.0)** offers detailed crosswalks between Microsoft Sentinel and the Zero Trust model with the TIC 3.0 framework. These crosswalks help users to better understand the overlaps between the two.
 
-While the Microsoft Sentinel **Zero Trust (TIC 3.0)** solution provides best practice guidance, Microsoft does not guarantee nor imply compliance. All Trusted Internet Connection (TIC) requirements, validations, and controls are governed by the [Cybersecurity & Infrastructure Security Agency](https://www.cisa.gov/trusted-internet-connections).
+While the Microsoft Sentinel solution for **Zero Trust (TIC 3.0)** provides best practice guidance, Microsoft does not guarantee nor imply compliance. All Trusted Internet Connection (TIC) requirements, validations, and controls are governed by the [Cybersecurity & Infrastructure Security Agency](https://www.cisa.gov/trusted-internet-connections).
 
 The **Zero Trust (TIC 3.0)** solution provides visibility and situational awareness for control requirements delivered with Microsoft technologies in predominantly cloud-based environments. Customer experience will vary by user, and some panes may require additional configurations and query modification for operation.
 
 Recommendations do not imply coverage of respective controls, as they are often one of several courses of action for approaching requirements, which is unique to each customer. Recommendations should be considered a starting point for planning full or partial coverage of respective control requirements.
 
-The Microsoft Sentinel **Zero Trust (TIC 3.0)** solution is useful for any of the following users and use cases:
+The Microsoft Sentinel solution for **Zero Trust (TIC 3.0)** is useful for any of the following users and use cases:
 
 - **Security governance, risk, and compliance professionals**, for compliance posture assessment and reporting
 - **Engineers and architects**, who need to design Zero Trust and TIC 3.0-aligned workloads

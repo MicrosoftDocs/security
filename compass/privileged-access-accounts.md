@@ -2,14 +2,14 @@
 title: Securing privileged access accounts
 description: Securing accounts is only one part of the privileged access story
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: conceptual
 ms.date: 01/20/2021
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: mas
 ---
 # Privileged access: Accounts
@@ -48,16 +48,16 @@ The combination of controls also enables you to improve both security and usabil
 
 The security controls for enterprise accounts are designed to create a secure baseline for all users and provide a secure foundation for specialized and privileged security:
 
-- Enforce strong multi-factor authentication (MFA) - Ensure that the user is authenticated with strong MFA provided by an enterprise-managed identity system (detailed in the diagram below). For more information about multi-factor authentication, see [Azure security best practice 6](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#6-technology-require-passwordless-or-multi-factor-authentication-mfa).
+- Enforce strong multi-factor authentication (MFA) - Ensure that the user is authenticated with strong MFA provided by an enterprise-managed identity system (detailed in the diagram below). For more information about multi-factor authentication, see [Azure security best practice 6](/azure/cloud-adoption-framework/security/security-top-10#6-technology-require-passwordless-or-multi-factor-authentication-mfa).
 
    > [!NOTE]
    > While your organization may choose to use an existing weaker form of MFA during a transition period, attackers are increasingly evading the weaker MFA protections, so all new investment into MFA should be on the strongest forms. 
 
 - Enforce account/session risk - ensure that the account is not able to authenticate unless it is at a low (or medium?) risk level. See Interface Security Levels for details on conditional enterprise account security. 
 - Monitor and respond to alerts - Security operations should integrate account security alerts and get sufficient training on how these protocols and systems work to ensure they are able to rapidly comprehend what an alert means and react accordingly. 
-   - Enable [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-   - [Investigate risk Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
-   - [Troubleshoot/Investigate Conditional Access Sign-in failures](https://docs.microsoft.com/azure/active-directory/conditional-access/troubleshoot-conditional-access)
+   - Enable [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
+   - [Investigate risk Azure AD Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
+   - [Troubleshoot/Investigate Conditional Access Sign-in failures](/azure/active-directory/conditional-access/troubleshoot-conditional-access)
 
 The following diagram provides a comparison to different forms of MFA and passwordless authentication. Each option in the best box is considered both high security and high usability. Each has different hardware requirements so you may want to mix and match which ones apply to different roles or individuals. All Microsoft passwordless solutions are recognized by Conditional Access as multi-factor authentication because they require combining something you have with either biometrics, something you know, or both.  
 
@@ -74,7 +74,7 @@ Specialized security builds on the strong MFA in enterprise security by identify
 
 1. Identify Sensitive Accounts - See specialized security level guidance for identifying these accounts.
 1. Tag Specialized Accounts - Ensure each sensitive account is tagged
-   1. [Configure Microsoft Sentinel Watchlists](https://docs.microsoft.com/azure/sentinel/watchlists) to identify these sensitive accounts 
+   1. [Configure Microsoft Sentinel Watchlists](/azure/sentinel/watchlists) to identify these sensitive accounts 
    1. [Configure Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385) and designate specialized and privileged accounts as priority accounts - 
 1. Update Security Operations processes - to ensure these alerts are given the highest priority
 1. Set up Governance - Update or create governance process to ensure that

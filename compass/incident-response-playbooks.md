@@ -1,17 +1,17 @@
 ---
 title: Incident response playbooks
 description: Use these playbooks to quickly respond to security incidents in the Microsoft cloud.
-keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, microsoft 365 defender
+keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, compromise, microsoft 365 defender
 search.product: DART
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,7 +19,8 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
+ms.subservice:: m365d
+ms.custom: cxdef-zt-ransomware 
 ---
 
 # Incident response playbooks
@@ -33,6 +34,8 @@ You also need detailed guidance for common attack methods that malicious users e
 - [Password spray](incident-response-playbook-password-spray.md)
 
 - [App consent grant](incident-response-playbook-app-consent.md)
+
+- [Compromised and malicious applications](incident-response-playbook-compromised-malicious-app.md)
 
 Each playbook includes:
 

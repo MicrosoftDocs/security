@@ -1,11 +1,12 @@
 ---
 title: Governance, risk, and compliance in Azure | Microsoft Docs
 description: Define the security priorities around governance, risk, and compliance
-author: MarkSimos
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2019
 ms.topic: article
 ms.service: security
-ms.subservice: cloud-design-principles
+ms.subservice: security-fundamentals
 ---
 
 # Governance, risk, and compliance
@@ -35,13 +36,13 @@ Security best practices are ideally applied proactively and completely to all sy
 We recommend applying as many as of the best practices as early as possible, and then working to retrofit any gaps over time as you mature your security program.
 We recommend evaluating the following considerations when prioritizing which to follow first:
 
--   **High business impact and highly exposed systems –** These include systems with direct intrinsic value as well as the systems that provide attackers a path to them. For more information, see [Identify and classify business critical applications](/azure/architecture/security/applications-services#identify-and-classify-business-critical-applications).
+-   **High business impact and highly exposed systems –** These include systems with direct intrinsic value as well as the systems that provide attackers a path to them. For more information, see [Identify and classify business critical applications](/azure/architecture/framework/security/design-apps-services).
 
 -   **Easiest to implement Mitigations**– Identify quick wins by prioritizing the best practices, which your organization can execute quickly because you already have the required skills, tools, and knowledge to do it (for example, implementing a Web App Firewall (WAF) to protect a legacy application).  
     Be careful not to exclusively use (or overuse) this short-term prioritization method. Doing so can increase your risk by preventing your program from growing and leaving critical risks exposed for extended periods.
 
 Microsoft has provided some prioritized lists of security initiatives to help organizations start with these decisions based on our experience with threats and mitigation initiatives in our own environments and across our customers. See
-[Module 4a](https://docs.microsoft.com/office365/securitycompliance/ciso-workshop-module-4a)
+[Module 4a](/office365/securitycompliance/ciso-workshop-module-4a)
 of the [Microsoft CISO Workshop](https://aka.ms/cisoworkshop)
 
 ## Manage connected tenants
@@ -85,7 +86,7 @@ This resulted in overwhelming complexity that generates support issues and often
 Creating a unified enterprise segmentation strategy enables to guide all technical teams stakeholders (IT, Security, Applications, etc.) Business Units that is built around the business risks and needs will increase alignment to and understand and support sustainability of the security containment promises.
 This clarity and alignment will also reduce s the risk of human errors and automation failures that can lead to security vulnerabilities, operational downtime, or both.
 
-While network micro-segmentation also offers promise to reduce risk (discussed more in [Network Security and Containment](/azure/architecture/security/network-security-containment) section), it doesn’t eliminate the need to align technical teams. Micro segmentation should be considered after to and plans to ensure the ensuring technical teams are aligned so you can avoid a recurrence of the internal conflicts that plagued and confusion of the on-premises network generation segmentation strategies.
+While network micro-segmentation also offers promise to reduce risk (discussed more in [Network Security and Containment](/security/compass/network-security-containment) section), it doesn’t eliminate the need to align technical teams. Micro segmentation should be considered after to and plans to ensure the ensuring technical teams are aligned so you can avoid a recurrence of the internal conflicts that plagued and confusion of the on-premises network generation segmentation strategies.
 
 Here are Microsoft's recommendations for prioritizing initiatives on containment and segmentation (based on Zero Trust principles). These recommendations are listed in priority order by highest importance.
 
@@ -107,7 +108,7 @@ A good enterprise segmentation strategy meets these criteria:
 
 -   **Monitored** – Security Operations should monitor for potential violations of the integrity of the segments (account usage, unexpected traffic, etc.)
 
-![A screenshot of a cell phone Description automatically generated](images/enterprise-tenant.png)
+![Cell phone Description automatically generated](images/enterprise-tenant.png)
 
 ## Security team visibility
 
@@ -126,7 +127,7 @@ For enterprise security groups with broad responsibility for security of Azure, 
 
 -   *Segment management group(s)* – for teams with limited scope of responsibility (typically required because of organizational boundaries or regulatory requirements)
 
-Because security will have broad access to the environment (and visibility into potentially exploitable vulnerabilities), you should consider them critical impact accounts and apply the same protections as administrators. The [Administration](/azure/architecture/security/critical-impact-accounts)
+Because security will have broad access to the environment (and visibility into potentially exploitable vulnerabilities), you should consider them critical impact accounts and apply the same protections as administrators. The [Administration](/azure/architecture/framework/security/design-admins)
 section details these controls for Azure.
 
 ## Assign privileges for managing the environment 
@@ -137,7 +138,7 @@ Providing clear guidance that follows a reference model will reduce risk because
 
 Microsoft recommends starting from these Microsoft reference models and adapting to your organization.
 
-![image showing core services reference permissions](images/ref-perms.png)
+![Diagram of the Core Services Reference Permissions, showing enterprise and resource role permissions.](images/ref-perms.png)
 
 ### Core Services Reference Permissions
 This segment hosts shared services utilized across the organization. These shared services typically include Active Directory Domain Services, DNS/DHCP, System Management Tools hosted on Azure Infrastructure as a Service (IaaS) virtual machines.
@@ -149,13 +150,15 @@ This segment hosts shared services utilized across the organization. These share
 
 **Central IT operations across all resources** – Grant permissions to the central IT department (often the infrastructure team) to create, modify, and delete resources like virtual machines and storage.
 
-**Central networking group across network resources** – To ensure consistency and avoid technical conflicts, assign network resource responsibilities to a single central networking organization. These resources should include virtual networks, subnets, Network Security Groups (NSG), and the virtual machines hosting virtual network appliances. See [Centralize Network Management And Security](/azure/architecture/security/network-security-containment#centralize-network-management-and-security) for more details
+**Central networking group across network resources** – To ensure consistency and avoid technical conflicts, assign network resource responsibilities to a single central networking organization. These resources should include virtual networks, subnets, Network Security Groups (NSG), and the virtual machines hosting virtual network appliances. See [Centralize Network Management And Security](/security/compass/network-security-containment) for more details
 
 **Resource Role Permissions** – For most core services, administrative privileges required to manage them are granted via the application itself (Active Directory, DNS/DHCP, System Management Tools, etc.), so no additional Azure resource permissions are required. If your organizational model requires these teams to manage their own VMs, storage, or other Azure resources, you can assign these permissions to those roles.
 
-**Service admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/architecture/security/critical-impact-accounts#emergency-access-or-break-glass-accounts) for more details.
+**Service admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/active-directory/roles/security-emergency-access) for more details.
 
-![A screenshot of a cell phone Description automatically generated](images/ref-segment.png)
+
+![Diagram of the reference permissions, showing the relationship between the Enterprise Role Permissions and Subscriptions.](images/ref-segment.png)
+
 
 ### Segment reference permissions
 
@@ -175,11 +178,11 @@ will depend on your organization structure.
 
 -   Segments with autonomous DevOps teams don’t need to grant permissions across all resources because the resource role (below) grants permissions to application teams. For emergencies, use the service admin account (break-glass account).
 
-**Central networking group across network resources** – To ensure consistency and avoid technical conflicts, assign network resource responsibilities to a single central networking organization. These resources should include virtual networks, subnets, Network Security Groups (NSG), and the virtual machines hosting virtual network appliances. See [Centralize Network Management And Security](/azure/architecture/security/network-security-containment#centralize-network-management-and-security).
+**Central networking group across network resources** – To ensure consistency and avoid technical conflicts, assign network resource responsibilities to a single central networking organization. These resources should include virtual networks, subnets, Network Security Groups (NSG), and the virtual machines hosting virtual network appliances. See [Centralize Network Management And Security](/security/compass/network-security-containment).
 
 **Resource Role Permissions** – Segments with autonomous DevOps teams will manage the resources associated with each application. The actual roles and their permissions depend on the application size and complexity, the application team size and complexity, and the culture of the organization and application team.
 
-**Service Admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/architecture/security/critical-impact-accounts#emergency-access-or-break-glass-accounts) for more details.
+**Service Admin (Break Glass Account)** – Use the service admin role only for emergencies (and initial setup if required). Do not use this role for daily tasks. See [Emergency Access (‘Break Glass’ Accounts)](/azure/active-directory/roles/security-emergency-access) for more details.
 
 
 
@@ -197,7 +200,7 @@ Structure management groups into a simple design that guides the enterprise segm
 
 Management groups offer the ability to consistently and efficiently manage resources (including multiple subscriptions as needed). However, because of their flexibility, it's possible to create an overly complex design. Complexity creates confusion and negatively impacts both operations and security (as illustrated by overly complex Organizational Unit (OU) and Group Policy Object (GPO) designs for Active Directory).
 
-Microsoft recommends aligning the top level of management groups (MGs) into a simple [enterprise segmentation strategy](/azure/architecture/security/governance#enterprise-segmentation-strategy) limited to 1 or 2 levels. 
+Microsoft recommends aligning the top level of management groups (MGs) into a simple [enterprise segmentation strategy](/azure/architecture/framework/security/design-segmentation) limited to 1 or 2 levels.
 
 ## Use root management group carefully
 
@@ -325,7 +328,7 @@ There are two places where you review reported risk events:
 
 -   **Azure AD Identity Protection** - Risk events are also part of the reporting capabilities of [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection).
 
-In addition, you can use the [Identity Protection risk events API](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/identityriskevent) to gain programmatic access to security detections using Microsoft Graph.
+In addition, you can use the [Identity Protection risk events API](/graph/api/resources/riskdetection) to gain programmatic access to security detections using Microsoft Graph.
 
 Remediate these risks by manually addressing each reported account or by setting up a [user risk policy](/azure/active-directory/identity-protection/howto-user-risk-policy)
 to require a password change for these high risk events.
@@ -351,7 +354,7 @@ Here are ways to reduce your risk:
 
 -  Restrict or Disable use of these protocols by following guidance for
     [SMB](https://support.microsoft.com/help/2696547/detect-enable-disable-smbv1-smbv2-smbv3-in-windows-and-windows-server),
-    [NTLM](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-ntlm-authentication-in-this-domain),
+    [NTLM](/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-ntlm-authentication-in-this-domain),
     [WDigest](https://support.microsoft.com/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-a)
 
 We recommend implementing changes using pilot or other testing method to mitigate risk of operational interruption.
@@ -371,4 +374,4 @@ We recommend careful consideration and judicious use of these security measures 
     [Confidential Computing may help meet regulatory or security requirements](https://azure.microsoft.com/blog/azure-confidential-computing/).
 
 ## Next steps
-For additional security guidance from Microsoft, see [Microsoft security documentation](https://docs.microsoft.com/security/).
+For additional security guidance from Microsoft, see [Microsoft security documentation](/security/).

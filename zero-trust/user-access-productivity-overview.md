@@ -2,8 +2,8 @@
 title: User access and productivity
 description: User access and productivity initiative for the Zero Trust Rapid Modernization Plan (RaMP).
 ms.service: security
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ---

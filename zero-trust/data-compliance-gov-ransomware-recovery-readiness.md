@@ -1,16 +1,16 @@
 ---
-title: Step 2. Ransomware recovery readiness
+title: RaMP checklist —  Ransomware recovery readiness
 description: Ransomware recovery readiness 
-ms.service: security
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.service: network-access
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ---
 
-# Step 2. Ransomware recovery readiness
+# RaMP checklist —  Ransomware recovery readiness
 
-You must prepare your organization so that it has a viable alternative to paying the ransom demanded by ransomware attackers. While attackers in control of your organization have a variety of ways to pressure you into paying, the demands primarily focus on two categories:
+This Rapid Modernization Plan (RaMP) checklist helps you prepare your organization so that it has a viable alternative to paying the ransom demanded by ransomware attackers. While attackers in control of your organization have a variety of ways to pressure you into paying, the demands primarily focus on two categories:
 
 - **Pay to regain access**
 

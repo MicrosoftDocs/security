@@ -35,7 +35,7 @@ reference during security design reviews of the following:
 
 Traditional security threat mitigation is more important than ever. The
 requirements established by the [Security Development
-Lifecycle](/securityengineering/sdl/) are
+Lifecycle](/windows/security/threat-protection/msft-security-dev-lifecycle) are
 essential to establishing a product security foundation that this
 guidance builds upon. Failure to address traditional security threats
 helps enable the AI/ML-specific attacks covered in this document in both

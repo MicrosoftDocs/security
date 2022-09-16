@@ -5,11 +5,11 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: tutorial
-ms.service: o365-seccomp
+ms.service: security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: "Learn more about security principles and recommendations for modernizing security in your organization."
+description: Learn how to increase visibility and control over your hybrid enterprise estate with integrated guidance, automated policy enforcement, and monitoring.
 ---
 
 # CISO Workshop Module 2: Security Management

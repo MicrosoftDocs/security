@@ -1,5 +1,5 @@
 ---
-title: Endpoint Zero Trust integration overview
+title: Endpoint integration overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Endpoint and Microsoft Endpoint Manager to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 09/17/2021
 ms.service: security
@@ -14,11 +14,11 @@ ms.topic: conceptual
 
 Endpoints are devices that access an organization's resources and applications. Modern workplaces include a variety of devices that request access from both inside and outside the corporate network.
 
-Endpoint Zero Trust solutions are about verifying the security of the devices that access work data, including the applications that are running on the devices. Partners can integrate with Microsoft's endpoint solutions to verify device and app security, enforce least privilege policies, and prepare in advance for breaches.
+Zero Trust solutions for endpoints are about verifying the security of the devices that access work data, including the applications that are running on the devices. Partners can integrate with Microsoft's endpoint solutions to verify device and app security, enforce least privilege policies, and prepare in advance for breaches.
 
 This guidance is for software providers and technology partners who want to enhance their endpoint security solutions by integrating with Microsoft products.
 
-## Endpoint Zero Trust integration guide
+## Zero Trust integration for Endpoints guide
 
 This integration guide includes instructions for integrating with the following products:
 
@@ -50,7 +50,7 @@ To integrate with Microsoft Endpoint Manager, ISVs will use Microsoft Graph and 
 
 ISV solutions can leverage Endpoint Manager’s device compliance and policy information to support the Zero Trust principle of Verify Explicitly. The compliance data about users and devices from Endpoint Manager allows the ISV's application to determine a device's risk posture as it relates to use of the application. By doing these verifications, the ISV ensures that devices using the service are compliant with the customers’ security and compliance standards and policies.
 
-The Microsoft Graph API allows ISVs to integrate with Endpoint Manager (Intune) through a set of RESTful APIs. These APIs are the same ones used by the Endpoint Manager console to view, create, manage, deploy, and report on all actions, data and activity in Intune. Items of specific interest for ISVs supporting Zero Trust initiatives are the ability to view device compliance state and configure compliance rules and policies. See Microsoft’s Zero Trust recommendations for using Azure AD and Endpoint Manager for Zero Trust configuration and compliance: [Secure endpoints with Zero Trust](/security/zero-trust/endpoints). Endpoint Manager’s compliance rules are foundational for device based Conditional Access support through Azure Active Directory. ISVs should also view the Conditional Access feature and APIs to understand how to complete scenarios for user and device compliance and Conditional Access.
+The Microsoft Graph API allows ISVs to integrate with Endpoint Manager (Intune) through a set of RESTful APIs. These APIs are the same ones used by the Endpoint Manager console to view, create, manage, deploy, and report on all actions, data and activity in Intune. Items of specific interest for ISVs supporting Zero Trust initiatives are the ability to view device compliance state and configure compliance rules and policies. See Microsoft's recommendations for using Azure AD and Endpoint Manager for Zero Trust configuration and compliance: [Secure endpoints with Zero Trust](/security/zero-trust/endpoints). Endpoint Manager’s compliance rules are foundational for device based Conditional Access support through Azure Active Directory. ISVs should also view the Conditional Access feature and APIs to understand how to complete scenarios for user and device compliance and Conditional Access.
 
 Ideally as an ISV, your application connects to the Microsoft Graph APIs as a cloud application and establishes a service-to-service connection. Multi-tenant applications provide ISVs with centralized application definition and control and enable customers to individually consent to the ISV application operating against their tenant data. Review the information on [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps) for registering and creating single or multi-tenant Azure AD Applications. Your application’s authentication can leverage Azure AD for single sign on.
 

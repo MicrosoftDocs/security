@@ -4,14 +4,14 @@ description: Learn how to identify and investigate password spray attacks, prote
 keywords: password spray, password, investigation, attack, email, microsoft threat protection, microsoft 365, search, security, query, telemetry, security events, antivirus, firewall, Microsoft 365 Defender
 search.product: DART
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,7 +19,8 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
+ms.subservice:: m365d
+ms.custom: cxdef-zt-ransomware 
 ---
 
 # Password spray investigation
@@ -39,11 +40,13 @@ This article contains the following sections:
 
 Before starting the investigation, make sure you have completed the setup for logs and alerts and additional system requirements.
 
+For Azure AD monitoring follow our recommendations and guidance in our [Azure AD SecOps Guide](/azure/active-directory/fundamentals/security-operations-introduction).
+
 ### Set up [ADFS logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging)
 
 #### Event logging on ADFS 2016
 
-By default, the Microsoft Active Directory Federation Services (ADFS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request.
+By default, the Microsoft Active Directory Federation Services (ADFS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request. Set logging to the highest level and send the AD FS (& security) logs to a SIEM to correlate with AD authentication as well as Azure AD.
 
 To view the current auditing level, you can use this PowerShell command:
 
@@ -126,7 +129,7 @@ For more information, see [security solution integrations using the Microsoft Gr
 
 You can also use the Splunk platform to set up alerts.
 
-- Watch this video tutorial on how to create [Splunk alerts](https://www.splunk.com/view/SP-CAAAGYG)
+- Watch this video tutorial on how to create [Splunk alerts](https://www.splunk.com/en_us/resources/videos/splunk-tutorial-creating-alerts-in-splunk-enterprise-6.html)
 - For more information, see [Splunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview)
 
 ## Workflow
@@ -524,7 +527,7 @@ Implement password protection on Azure AD and on-premises by enabling the custom
 
 *Enabling password protection*
 
-For more information, see [how to defend against password spray attacks](https://www.microsoft.com/en-u/microsoft-365/blog/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/).
+For more information, see [how to defend against password spray attacks](https://www.microsoft.com/en-us/microsoft-365/blog/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/).
 
 ### Tagging IP address
 

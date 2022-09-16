@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 09/15/2020
+ms.date: 06/01/2022
 ---
 
 # Security news and highlights
@@ -14,6 +14,12 @@ ms.date: 09/15/2020
 The security documentation site provides you with current news and highlights from across Microsoft. News and highlights are updated regularly to bring you the most relevant security information.
 
 Below are past news and highlights that you may have missed or would like to revisit.
+
+2022
+
+- [3 steps to prevent and recover from ransomware](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Zero Trust essentials video series](https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu)
+- [Human-operated ransomware](/security/compass/human-operated-ransomware)
 
 2021
 

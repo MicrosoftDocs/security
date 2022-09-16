@@ -43,8 +43,14 @@
                   href: incident-response-playbook-password-spray.md
                 - name: App consent grant
                   href: incident-response-playbook-app-consent.md
+                - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
+                  href: /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
+                - name: Responding to ransomware attacks
+                  href: /microsoft-365/security/defender/playbook-responding-ransomware-m365-defender
                 - name: DART approach to ransomware
                   href: incident-response-playbook-dart-ransomware-approach.md
+                - name: Compromised and malicious applications
+                  href: incident-response-playbook-compromised-malicious-app.md
     - name: Identity and access management
       items:
         - name: Videos and slides
@@ -123,8 +129,6 @@
           href: information-protection-and-storage-capabilities.md
     - name: Applications and services
       items:
-    #   - name: Videos and slides
-    #     href: applications-and-cloud-services-videos-and-decks.md
         - name: Article
           href: applications-services.md
     #   - name: Capabilities
@@ -135,6 +139,6 @@
     #    - name: Videos and slides
     #      href: endpoint-security-videos-and-decks.md
     #    - name: Article
-    #      href: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
+    #      href: /azure/architecture/framework/security/critical-impact-accounts
     #    - name: Capabilities
     #      href: 

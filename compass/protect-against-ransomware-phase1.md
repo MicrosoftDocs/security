@@ -8,7 +8,7 @@ f1.keywords:
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-security
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance

@@ -92,13 +92,9 @@ The steps in this solution are:
 
 The following resources help administrators learn concepts about SaaS. 
 
-**[Design a strategy for securing PaaS, IaaS, and SaaS services](/learn/modules/design-strategy-for-secure-paas-iaas-saas-services/)**<br>
+**[Design a strategy for securing PaaS, IaaS, and SaaS services](/training/modules/design-strategy-for-secure-paas-iaas-saas-services/)**<br>
 Description: Learn how to design a cybersecurity strategy, which will secure cloud services in the SaaS, PaaS, and IaaS service models.<br>
 1 hr 42 min - 13 units
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/design-strategy-for-secure-paas-iaas-saas-services/)
-
-
-
-
+> [Start >](/training/modules/design-strategy-for-secure-paas-iaas-saas-services/)

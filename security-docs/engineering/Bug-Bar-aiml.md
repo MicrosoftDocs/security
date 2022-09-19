@@ -1,5 +1,5 @@
 ---
-# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
+# This basic template provides core metadata fields for Markdown articles on learn.microsoft.com.
 
 # Mandatory fields.
 title: AI/ML Pivots to the Security Development Lifecycle Bug Bar

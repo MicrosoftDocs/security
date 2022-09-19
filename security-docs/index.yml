@@ -83,7 +83,7 @@ additionalContent:
         # Card
         - title: Security learning paths and modules
           summary: Learn new skills and discover the power of Microsoft products with step-by-step guidance.
-          url: /learn/browse/?term=security
+          url: /training/browse/?term=security
         # Card
         - title: Security roles and responsibilities
           summary: Organizational functions required to manage information security risk in an enterprise.
@@ -255,7 +255,7 @@ additionalContent:
             - text: Microsoft Detection and Response Team
               url: https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/
 #            - text: MCS and Premier Catalog
-#              url: file3b.md OR https://docs.microsoft.com/file3b
+#              url: file3b.md OR https://learn.microsoft.com/file3b
             - text: Microsoft cybersecurity reference architectures
               url: /security/cybersecurity-reference-architecture/mcra
         # Card

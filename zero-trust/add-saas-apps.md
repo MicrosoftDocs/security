@@ -77,7 +77,7 @@ The following diagram illustrates which policies to update from the common ident
 
 For each policy to update, make sure that apps and dependent services are included in the assignment of cloud apps.
 
-This table lists the policies that need to be revisited and links to each policy in the [common identity and device access policies](/microsoft-365/security/office-365-security-identity-access-policies).
+This table lists the policies that need to be revisited and links to each policy in the [common identity and device access policies](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations).
 
 |Protection level|Policies|Further information|
 |---|---|---|

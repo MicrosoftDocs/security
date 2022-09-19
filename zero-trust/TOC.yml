@@ -223,7 +223,7 @@
         href: develop/identity-developer-administrator-responsibilities.md
     - name: Permissions and access
       items:
-      - name: Zero Trust approach to identity
+      - name: Overview
         href: develop/identity.md
       - name: Identity and account types for apps
         href: develop/identity-supported-account-types.md

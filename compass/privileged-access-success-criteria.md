@@ -2,14 +2,14 @@
 title: Success criteria for privileged access strategy
 description: How can organizations measure success in their privileged access strategy?
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: conceptual
 ms.date: 12/15/2020
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: mas
 ---
 # Success criteria for privileged access strategy
@@ -28,7 +28,7 @@ A successful strategy must address the all points attackers can use to intercept
 - **Application interfaces** where zero trust access policy is enforced and role-based access control (RBAC) is configured to grant privileges 
 
  >[!NOTE]
- > A complete security strategy also includes asset protections that are beyond the scope of access control, such as data backups and protections against attacks on the application itself, the underlying operating system and hardware, on service accounts used by the application or service, and on data while at rest or in transit. For more information on modernizing a security strategy for cloud, see the article [Define a security strategy](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy).
+ > A complete security strategy also includes asset protections that are beyond the scope of access control, such as data backups and protections against attacks on the application itself, the underlying operating system and hardware, on service accounts used by the application or service, and on data while at rest or in transit. For more information on modernizing a security strategy for cloud, see [Define a security strategy](/azure/cloud-adoption-framework/strategy/define-security-strategy).
 
 An attack consists of human attackers leveraging automation and scripts to attack an organization is composed of humans, the processes they follow, and the technology they use. Because of this complexity of both attackers and defenders, the strategy must be multi-faceted to guard against all the people, process, and technology ways that the security assurances could inadvertently be undermined.
 
@@ -57,7 +57,7 @@ Balancing security avoids the extremes that create risk for the organization by:
 - Avoiding overly strict security that causes users to go outside the secure policies, pathways, and systems.
 - Avoiding weak security that harms productivity by allowing adversaries to easily compromise the organization.
 
-For more information about security strategy, see the article [Defining a security strategy](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy).
+For more information about security strategy, see [Defining a security strategy](/azure/cloud-adoption-framework/strategy/define-security-strategy).
 
 To minimize negative business impact from security controls, you should prioritize invisible security controls that improve user workflows, or at least don't impede or change user workflows. While security sensitive roles may need visible security measures that change their daily workflows to provide security assurances, this implementation should be done thoughtfully to limit the usability impact and scope as much as possible. 
 
@@ -71,7 +71,7 @@ Security must work to build partnerships within the organization to be successfu
 
 Security should **always work as a partner** in support of business and mission objectives. While security should not shy away from giving direct advice like recommending against accepting a high risk, security should also always frame that advice in terms of the business risk relative to other risks and opportunities managed by the resource owners.  
 
-While some parts of security can be planned and executed successfully mostly within security organization, many like securing privileged access require working closely with IT and business organizations to understand which roles to protect, and help update and redesign workflows to ensure they are both secure and allow people to do their jobs. For more information on this idea, see the section [Transformations, mindsets, and expectations](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy#transformations-mindsets-and-expectations) in the security strategy guidance article.
+While some parts of security can be planned and executed successfully mostly within security organization, many like securing privileged access require working closely with IT and business organizations to understand which roles to protect, and help update and redesign workflows to ensure they are both secure and allow people to do their jobs. For more information on this idea, see the section [Transformations, mindsets, and expectations](/azure/cloud-adoption-framework/strategy/define-security-strategy#transformations-mindsets-and-expectations) in the security strategy guidance article.
 
 ## Disrupt attacker return on investment
 
@@ -86,7 +86,7 @@ Disrupt attacker return on investment (ROI) by increasing their cost of attack a
  > [!IMPORTANT]
  > A privileged access strategy should be comprehensive and provide defense in depth, but must avoid the Expense in depth fallacy where defenders simply pile on more same (familiar) type controls (often network firewalls/filters) past the point where they add any meaningful security value.
 
-For more information on attacker ROI, see the short video and in-depth discussion [Disrupting attacker return on investment](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-2#part-1-disrupting-attacker-return-on-investment-1431).
+For more information on attacker ROI, see the short video and in-depth discussion [Disrupting attacker return on investment](/security/ciso-workshop/ciso-workshop-module-2#part-1-disrupting-attacker-return-on-investment-1431).
 
 ## Clean source principle
 

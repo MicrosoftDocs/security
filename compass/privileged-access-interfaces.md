@@ -2,14 +2,14 @@
 title: Securing privileged access interfaces
 description: Securing interfaces is only one part of the privileged access story
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: conceptual
 ms.date: 12/15/2020
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: mas
 ---
 # Privileged access: Interfaces

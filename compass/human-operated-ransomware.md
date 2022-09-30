@@ -5,10 +5,11 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.collection:
 - m365solution-ransomware
 - m365solution-overview
+- highpri
 ms.custom: cxdef-zt-ransomware
 ms.topic: article
 localization_priority: Normal

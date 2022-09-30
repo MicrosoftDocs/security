@@ -2,10 +2,11 @@
 title: Zero Trust implementation guidance
 description: Understand the Zero Trust security model, learn about the principles, and apply the Zero Trust architecture using Microsoft 365 and Microsoft Azure services.  
 ms.date: 04/15/2022
-ms.service: security
+ms.service: network-access
 author: mjcaparas
 ms.author: macapara
 ms.topic: conceptual
+ms.collection: highpri
 ---
 
 # What is Zero Trust?

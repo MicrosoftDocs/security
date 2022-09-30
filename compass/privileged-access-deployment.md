@@ -2,14 +2,14 @@
 title: Deploying a privileged access solution
 description: Configuring and deploying components of a privileged access solution
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: how-to
 ms.date: 06/07/2021
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: frasim
 ---
 # Privileged access deployment

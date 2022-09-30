@@ -5,7 +5,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ---
 
 # Microsoft security best practices for identity and access management

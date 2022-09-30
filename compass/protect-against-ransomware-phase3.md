@@ -1,19 +1,20 @@
 ---
 title: "Phase 3: Make it hard to get in"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 f1.keywords:
 - NOCSH
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-security
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-ransomware
 - m365solution-overview
+- highpri
 ms.custom: cxdef-zt-ransomware 
 description: Deploy ransomware protection to make it hard for an attacker to get into your environment by incrementally removing the risks.
 

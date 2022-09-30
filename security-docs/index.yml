@@ -25,7 +25,7 @@ highlightedContent:
     # Card
     - title: Learn about the Microsoft Entra family of multicloud identity and access solutions
       itemType: overview
-      url: https://docs.microsoft.com/entra/
+      url: /entra/
     # Card
     - title: Learn how to rapidly protect against ransomware and extortion
       itemType: concept
@@ -37,7 +37,7 @@ highlightedContent:
     # Card
     - title: Evaluate and pilot Microsoft 365 Defender
       itemType: overview
-      url: https://docs.microsoft.com/microsoft-365/security/defender/eval-overview
+      url: /microsoft-365/security/defender/eval-overview
     # Card
     - title: Guiding principles of Zero Trust, a security strategy
       itemType: overview
@@ -75,7 +75,7 @@ additionalContent:
         # Card
         - title: Security benchmarks
           summary: Security recommendations provide a strong starting point for your own planning and deployment.
-          url: https://docs.microsoft.com/azure/security/benchmarks/introduction
+          url: /azure/security/benchmarks/introduction
         # Card
         - title: Microsoft security engineering
           summary: Security related documentation and information from across Microsoft.
@@ -83,11 +83,11 @@ additionalContent:
         # Card
         - title: Security learning paths and modules
           summary: Learn new skills and discover the power of Microsoft products with step-by-step guidance.
-          url: https://docs.microsoft.com/en-us/learn/browse/?term=security
+          url: /training/browse/?term=security
         # Card
         - title: Security roles and responsibilities
           summary: Organizational functions required to manage information security risk in an enterprise.
-          url: https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security
+          url: /azure/cloud-adoption-framework/organize/cloud-security
 
 #  Section 2
     - title: Security disciplines
@@ -119,7 +119,7 @@ additionalContent:
             - text: Overview
               url: /security/compass/governance
             - text: Modernize security strategy
-              url: https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
+              url: /azure/cloud-adoption-framework/strategy/define-security-strategy
             - text: Videos and slides
               url: /security/compass/governance-risk-compliance-videos-and-decks
             - text: Capabilities
@@ -192,38 +192,38 @@ additionalContent:
         # Card
         - title: Security documentation for Microsoft Azure
           links:
-            - url: https://docs.microsoft.com/azure/security/
+            - url: /azure/security/
               text: Azure security fundamentals
-            - url: https://docs.microsoft.com/azure/security-center/
+            - url: /azure/security-center/
               text: Microsoft Defender for Cloud
-            - url: https://docs.microsoft.com/azure/sentinel/
+            - url: /azure/sentinel/
               text: Microsoft Sentinel
-            - url: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview
+            - url: /azure/virtual-network/ddos-protection-overview
               text: Azure DDoS Protection Standard
-            - url: https://docs.microsoft.com/azure/active-directory/
+            - url: /azure/active-directory/
               text: Azure Active Directory
-            - url: https://docs.microsoft.com/azure/firewall/
+            - url: /azure/firewall/
               text: Azure Firewall
-            - url: https://docs.microsoft.com/azure/web-application-firewall/
+            - url: /azure/web-application-firewall/
               text: Web Application Firewall
-            - url: https://docs.microsoft.com/azure/key-vault/
+            - url: /azure/key-vault/
               text: Azure Key Vault
-            - url: https://docs.microsoft.com/azure/azure-sql/
+            - url: /azure/azure-sql/
               text: Azure SQL
         # Card
         - title: Security documentation for Microsoft 365
           links:
-            - url: https://docs.microsoft.com/microsoft-365/security/
+            - url: /microsoft-365/security/
               text: Microsoft 365 security
-            - url: https://docs.microsoft.com/microsoft-365/security/defender/microsoft-365-defender/
+            - url: /microsoft-365/security/defender/microsoft-365-defender/
               text: Microsoft 365 Defender
-            - url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
+            - url: /enterprise-mobility-security/remote-work/
               text: Secure your remote workforce
-            - url: https://docs.microsoft.com/windows/security/
+            - url: /windows/security/
               text: Windows security
-            - url: https://docs.microsoft.com/enterprise-mobility-security/
+            - url: /enterprise-mobility-security/
               text: Enterprise Mobility + Security
-            - url: https://docs.microsoft.com/sql/?view=sql-server-ver15
+            - url: /sql/?view=sql-server-ver15
               text: Microsoft SQL
         # Card
         - title: Security reference
@@ -237,7 +237,7 @@ additionalContent:
             - text: Microsoft Security Risk Detection
               url: https://www.microsoft.com/en-us/security-risk-detection/
             - text: Azure secure development
-              url: https://docs.microsoft.com/azure/security/develop/index
+              url: /azure/security/develop/index
         # Card
         - title: Security programs
           links:
@@ -255,7 +255,7 @@ additionalContent:
             - text: Microsoft Detection and Response Team
               url: https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/
 #            - text: MCS and Premier Catalog
-#              url: file3b.md OR https://docs.microsoft.com/file3b
+#              url: file3b.md OR https://learn.microsoft.com/file3b
             - text: Microsoft cybersecurity reference architectures
               url: /security/cybersecurity-reference-architecture/mcra
         # Card
@@ -268,4 +268,4 @@ additionalContent:
             - text: Privacy
               url: https://www.microsoft.com/trust-center/privacy
             - text: Azure governance
-              url: https://docs.microsoft.com/azure/governance/
+              url: /azure/governance/

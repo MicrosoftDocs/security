@@ -129,8 +129,6 @@
           href: information-protection-and-storage-capabilities.md
     - name: Applications and services
       items:
-    #   - name: Videos and slides
-    #     href: applications-and-cloud-services-videos-and-decks.md
         - name: Article
           href: applications-services.md
     #   - name: Capabilities
@@ -141,6 +139,6 @@
     #    - name: Videos and slides
     #      href: endpoint-security-videos-and-decks.md
     #    - name: Article
-    #      href: https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts
+    #      href: /azure/architecture/framework/security/critical-impact-accounts
     #    - name: Capabilities
     #      href: 

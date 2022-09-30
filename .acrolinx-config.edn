@@ -1,2 +1,2 @@
 {:allowed-branchname-matches ["main" "master"]
- :allowed-filename-matches ["simulation-labs"]}
+ :allowed-filename-matches ["simulation-labs" "compass" "security-docs" "trusted-root-docs" "ciso-workshop" "operations" "zero-trust"]}

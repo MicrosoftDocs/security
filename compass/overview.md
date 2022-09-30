@@ -2,14 +2,14 @@
 title: Securing privileged access overview
 description: How can organizations secure privileged with Azure resources?
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: overview
 ms.date: 12/15/2020
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: mas
 ---
 # Securing privileged access
@@ -36,7 +36,7 @@ Building this strategy requires a holistic approach combining multiple technolog
 
 ## Industry references
 
-Securing privileged access is also addresses by these industry standards and best practices.
+Securing privileged access is also addressed by these industry standards and best practices.
 
 | [UK National Cyber Security Center (NCSC)](https://www.ncsc.gov.uk/collection/secure-system-administration) | [Australian Cyber Security Center (ACSC)](https://www.cyber.gov.au/acsc/view-all-content/publications/secure-administration) | [MITRE ATT&CK](https://attack.mitre.org/mitigations/M1026/) |
 | --- | --- | --- |

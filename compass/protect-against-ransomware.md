@@ -1,19 +1,20 @@
 ---
 title: "Quickly configure for ransomware prevention in your organization to help stop ransomware cybercriminals."
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 f1.keywords:
 - NOCSH
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-security
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-ransomware
 - m365solution-overview
+- highpri
 ms.custom: cxdef-zt-ransomware
 description: Quickly configure for ransomware prevention in your organization to help stop ransomware cybercriminals from extorting your business.
 

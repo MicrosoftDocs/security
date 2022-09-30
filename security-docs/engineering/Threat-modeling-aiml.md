@@ -1,5 +1,5 @@
 ---
-# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
+# This basic template provides core metadata fields for Markdown articles on learn.microsoft.com.
 
 # Mandatory fields.
 title: Threat Modeling AI/ML Systems and Dependencies
@@ -967,7 +967,7 @@ vulnerability.
 
 [1] Failure Modes in Machine Learning, Ram Shankar Siva
 Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover,
-[https://docs.microsoft.com/security/failure-modes-in-machine-learning](/security/failure-modes-in-machine-learning)
+[https://learn.microsoft.com/security/failure-modes-in-machine-learning](/security/failure-modes-in-machine-learning)
 
 [2] AETHER Security Engineering Workstream, Data Provenance/Lineage
 v-team

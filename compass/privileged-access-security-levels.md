@@ -2,14 +2,14 @@
 title: Securing privileged access security levels
 description: Defining the security levels of a privileged access strategy
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: conceptual
 ms.date: 12/15/2020
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: mas
 ---
 # Privileged access security levels
@@ -20,7 +20,7 @@ These levels are primarily designed to provide simple and straightforward techni
 
 ![Defining three security levels](./media/privileged-access-security-levels/prescriptive-security-levels.png)
 
-Making things simple helps people understand it and lowers the risk they will be confused and make mistakes. While the underlying technology is almost always complex, it is critical to keep things simple rather than creating custom solutions that are difficult to support. For more information, see the article [Security design principles](https://docs.microsoft.com/azure/architecture/framework/security/security-principles).
+Making things simple helps people understand it and lowers the risk they will be confused and make mistakes. While the underlying technology is almost always complex, it is critical to keep things simple rather than creating custom solutions that are difficult to support. For more information, see [Security design principles](/azure/architecture/framework/security/security-principles).
 
 Designing solutions that are focused on the needs of the administrators and end users, will keep it simple for them. Designing solutions that are simple for security and IT personnel to build, assess, and maintain (with automation where possible) leads to less security mistakes and more reliable security assurances. 
 
@@ -59,7 +59,7 @@ The security levels used throughout this strategy are:
 
    Privileged access security roles typically include:
 
-   - Azure AD Global Administrators and [related roles](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference)
+   - Azure AD Global Administrators and [related roles](/azure/active-directory/roles/permissions-reference)
    - Other identity management roles with administrative rights to an enterprise directory, identity synchronization systems, federation solution, virtual directory, privileged identity/access management system, or similar.  
    - Roles with membership in these on-premises Active Directory groups
       - Enterprise Admins

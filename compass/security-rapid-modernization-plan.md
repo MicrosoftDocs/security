@@ -2,14 +2,14 @@
 title: Rapidly modernize your security infrastructure
 description: Key initiatives to rapidly secure your environment
 
-ms.service: security
+ms.service: information-protection
 ms.subservice: 
 ms.topic: how-to
 ms.date: 12/15/2020
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
-manager: daveba
+manager: amycolannino
 ms.reviewer: mas
 ---
 # Security rapid modernization plan

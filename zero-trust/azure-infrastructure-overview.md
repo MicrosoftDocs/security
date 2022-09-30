@@ -1,6 +1,6 @@
 ---
 title: Secure Azure infrastructure with Zero Trust overview
-description:   
+description: Learn how to secure Azure infrastructure with Zero Trust.  
 ms.date: 
 ms.service: security
 author: brendacarter
@@ -14,11 +14,18 @@ ms.collection:
 
 # Secure Azure infrastructure with Zero Trust
 
---business case -- 
+This series of articles helps you apply the principles of Zero Trust to your workloads in Azure. These articles take a multi-disciplinary approach to applying the principles. This work is broken into units of work that can be configured together: 
+- Azure Storage 
+- Virtual machines (VMs) 
+- Spoke Vnet for VM-based workloads  
+- Hub Vnet to support access to many workloads in Azure 
 
+Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles: 
+- Verify explicitly 
+- Use least privilege access 
+- Assume breach 
 
-
---graphic--
+Zero Trust is a mindset shift to “never trust, always verify” and will require changes to cloud infrastructure, deployment strategy, and implementation. 
 
 ## What's in this solution?
 Description

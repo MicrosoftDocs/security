@@ -25,6 +25,8 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 ## 2022
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
+| October | October 25 | [Deployment Notice for October 2022](2022/October2022.md) |
+| September | September 27 | [Deployment Notice for September 2022](2022/September2022.md) |
 | August | August 23 | [Deployment Notice for August 2022](2022/August2022.md) |
 | June | June 28 | [Deployment Notice for June 2022](2022/June2022.md) |
 | May | May 17 | [Deployment Notice for May 2022](2022/May2022.md) |

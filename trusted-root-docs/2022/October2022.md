@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 On Tuesday, October 25, 2022, Microsoft released an update to the Microsoft Trusted Root Certificate Program.
 
-This release will **NotBefore Removed** the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
+This release will **Remove NotBefore Property** from the following root (CA \ Root Certificate \ SHA-1 Thumbprint):
 1. A-Trust	\\ A-Trust-Root-07 \\	1B1815AF925D140EFC5AF9A1AA55EEBB4FFBC561
 
 This release will **Modify** the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
@@ -20,7 +20,7 @@ This release will **Modify** the following roots (CA \ Root Certificate \ SHA-1 
 2. E-Tugra	\\ E-Tugra Global Root CA ECC v3	\\ 8A2FAF5753B1B0E6A104EC5B6A69716DF61CE284
 3. Carillon Information Security Inc.	\\ Carillon PKI Services G2 Root CA 1 \\	EB9237B72076F8CC8BC13E7046F2FCABC18199D3
 
-This release will **NotBefore Server Authentiation EKU** to the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
+This release will **Add** the following roots (CA \ Root Certificate \ SHA-1 Thumbprint):
 1. Government of India, Ministry of Communications & Information Technology, Controller of Certifying Authorities (CCA)	\\ CCA India 2022	\\ a79e41380bab3ed7f5188d9a5209cefcb3ca6991
 2. První certifikační autorita, a.s.	\\ I.CA Root CA/ECC 05/2022	\\ 702723132527203947e0a97829a0731372b03917
 3. První certifikační autorita, a.s.	\\ I.CA TLS Root CA/RSA 05/2022	\\ 83e5e5de325414970b263011084456e5faa13ffa

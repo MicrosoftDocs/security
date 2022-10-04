@@ -16,6 +16,11 @@
         - name: Article
           href: governance.md
 
+    - name: Security operations
+      items:
+        - name: Videos and slides
+          href: security-operations-videos-and-decks.md
+
     - name: Identity and access management
       items:
         - name: Videos and slides

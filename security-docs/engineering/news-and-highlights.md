@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 06/01/2022
+ms.date: 10/05/2022
 ---
 
 # Security news and highlights
@@ -17,6 +17,8 @@ Below are past news and highlights that you may have missed or would like to rev
 
 2022
 
+- [Resources for accelerating your Zero Trust journey](https://www.microsoft.com/security/blog/2021/05/24/resources-for-accelerating-your-zero-trust-journey/)
+- [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [3 steps to prevent and recover from ransomware](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [Zero Trust essentials video series](https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu)
 - [Human-operated ransomware](/security/compass/human-operated-ransomware)

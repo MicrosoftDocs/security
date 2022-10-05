@@ -203,7 +203,7 @@ additionalContent:
               text: Azure Active Directory
             - url: /azure/key-vault/
               text: Azure Key Vault
-            - url: /azure/virtual-network/ddos-protection-overview
+            - url: /azure/networking/
               text: Azure networking security services
 
         # Card

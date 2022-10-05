@@ -33,8 +33,7 @@ highlightedContent:
     # Card
     - title: Ransomware protection in Azure
       itemType: concept
-      url: azure/security/fundamentals/ransomware-protection.md?toc=%2Fazure%2Fsecurity%2Fjourney%2Ftoc.json&bc=%2Fazure%2Fsecurity%2Fbreadcrumb%2Ftoc.json
-    # Card
+      url: azure/security/fundamentals/ransomware-protection
     - title: Evaluate and pilot Microsoft 365 Defender
       itemType: overview
       url: /microsoft-365/security/defender/eval-overview

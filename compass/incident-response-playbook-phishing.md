@@ -86,7 +86,7 @@ We recommend membership in the following roles for the account that does the inv
 Generally speaking, the [Global Reader](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) or the [Security Reader](/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security#security-reader) role groups in the Microsoft 365 Defender portal or the Microsoft Purview compliance portal should give you sufficient permissions to search the relevant logs.
 
 > [!NOTE]
-> Accounts that are members of the **View-Only Audit Logs** or **Audit Logs** role groups only in the the Microsoft 365 Defender portal or the Microsoft Purview compliance portal won't be able to search the Microsoft 365 audit log. In this scenario, you must assign permissions in Exchange Online. For more information, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#before-you-search-the-audit-log).
+> Accounts that are members of the **View-Only Audit Logs** or **Audit Logs** role groups only in the the Microsoft 365 Defender portal or the Microsoft Purview compliance portal won't be able to search the Microsoft 365 audit log. In this scenario, you must assign permissions in Exchange Online. For more information, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log).
 
 if you're unsure about the role groups to use, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
 
@@ -108,7 +108,7 @@ The following PowerShell modules are required for the investigation of the cloud
 
   If you need older cmdlets in the MSOnline (v1) Azure AD module, see [Azure Active Directory (MSOnline)](/powershell/azure/active-directory/install-msonlinev1).
 
-- Exchange Online PowerShell V2 module: For installation instructions, see [Install and maintain the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module).
+- Exchange Online PowerShell module: For installation instructions, see [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 - Azure AD Incident Response PowerShell module: For installation instructions, see [Azure AD Incident Response PowerShell Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
 
@@ -127,29 +127,29 @@ This checklist will help you evaluate your investigation process and verify whet
 
 |&nbsp;|&nbsp;|
 |---|---|
-|☐|Review initial phishing email|
-|☐|Get the list of users who got this email|
-|☐|Get the latest dates when the user had access to the mailbox|
-|☐|Is delegated access configured on the mailbox?|
-|☐|Are there forwarding rules configured on the mailbox?|
-|☐|Review your Exchange mail flow rules (transport rules|
-|☐|Find the email messages|
-|☐|Did the user read or open the email?|
-|☐|Who else got the same email?|
-|☐|Did the email contain an attachment?|
-|☐|Was there a payload in the attachment?|
-|☐|Check email header for true source of the sender|
-|☐|Verify IP addresses to attackers/campaigns|
-|☐|Did the user click links in the email?|
-|☐|On what endpoint was the email opened?|
-|☐|Was the attachment payload executed?|
-|☐|Was the destination IP or URL touched or opened?|
-|☐|Was malicious code executed?|
-|☐|What sign-ins happened with the account for the federated scenario?|
-|☐|What sign-ins happened with the account for the managed scenario?|
-|☐|Investigate the source IP address|
-|☐|Investigate the device ID found|
-|☐|Investigate each App ID|
+|<input type="checkbox" />|Review initial phishing email|
+|<input type="checkbox" />|Get the list of users who got this email|
+|<input type="checkbox" />|Get the latest dates when the user had access to the mailbox|
+|<input type="checkbox" />|Is delegated access configured on the mailbox?|
+|<input type="checkbox" />|Are there forwarding rules configured on the mailbox?|
+|<input type="checkbox" />|Review your Exchange mail flow rules (transport rules|
+|<input type="checkbox" />|Find the email messages|
+|<input type="checkbox" />|Did the user read or open the email?|
+|<input type="checkbox" />|Who else got the same email?|
+|<input type="checkbox" />|Did the email contain an attachment?|
+|<input type="checkbox" />|Was there a payload in the attachment?|
+|<input type="checkbox" />|Check email header for true source of the sender|
+|<input type="checkbox" />|Verify IP addresses to attackers/campaigns|
+|<input type="checkbox" />|Did the user click links in the email?|
+|<input type="checkbox" />|On what endpoint was the email opened?|
+|<input type="checkbox" />|Was the attachment payload executed?|
+|<input type="checkbox" />|Was the destination IP or URL touched or opened?|
+|<input type="checkbox" />|Was malicious code executed?|
+|<input type="checkbox" />|What sign-ins happened with the account for the federated scenario?|
+|<input type="checkbox" />|What sign-ins happened with the account for the managed scenario?|
+|<input type="checkbox" />|Investigate the source IP address|
+|<input type="checkbox" />|Investigate the device ID found|
+|<input type="checkbox" />|Investigate each App ID|
 
 You can also download the phishing and other incident playbook checklists as an [Excel file](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Checklists.xlsx).
 

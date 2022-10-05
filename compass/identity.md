@@ -25,7 +25,6 @@ A single authoritative source for identities increases clarity and consistency f
 For Azure, designate a single Azure AD tenant as the authoritative source for your organization's accounts.
 
 For more information, see [What is hybrid identity?](/azure/active-directory/hybrid/whatis-hybrid-identity)
- 
 
 ## Synchronized identity systems
 
@@ -86,8 +85,7 @@ This is related to the [critical impact account dependencies](/security/compass/
 Legacy identity providers mostly checked to make sure passwords had a good mix of character types and minimum length, but we have learned that these controls in practice led to passwords with less entropy that could be cracked easier:
 
 - **Microsoft** - <https://www.microsoft.com/research/publication/password-guidance/>
-
-- **NIST** - https://pages.nist.gov/800-63-3/sp800-63b.html
+- **NIST** - <https://pages.nist.gov/800-63-3/sp800-63b.html>
 
 Identity solutions today need to be able to respond to types of attacks that didn't even exist one or two decades ago such as password sprays, breach replays (also called *“credential stuffing*”) that test username/password pairs from other sites’ breaches, and phishing man-in-the-middle attacks. Cloud identity providers are uniquely positioned to offer protection against these attacks. Since they handle such large volumes of sign-ons, they can apply better anomaly detection and use a variety of data sources to both proactively notify companies if their users’ passwords have been found in other breaches, as well as validate that any given sign in appears legitimate and is not coming from an unexpected or known-malicious host.
 
@@ -95,14 +93,14 @@ Additionally, synchronizing passwords to the cloud to support these checks also 
 
 For Azure, enable modern protections in Azure AD with these steps:
 
-1.  [Implement password hash synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
+1. [Implement password hash synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
-2.  Choose whether to automatically remediate these issues or manually remediate
+2. Choose whether to automatically remediate these issues or manually remediate
     them based on a report:
 
-    a.  **Automatic Enforcement -** Automatically remediate high risk passwords with Conditional Access [leveraging Azure AD Identity Protection risk assessments](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)
+    a. **Automatic Enforcement -** Automatically remediate high risk passwords with Conditional Access [leveraging Azure AD Identity Protection risk assessments](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)
 
-    b.  **Report & Manually Remediate -** View reports and manually remediate
+    b. **Report & Manually Remediate -** View reports and manually remediate
         accounts
 
        -   **Azure AD reporting** - Risk events are part of Azure AD's security reports. For more information, see the [users at risk security report](/azure/active-directory/reports-monitoring/concept-user-at-risk) and the [risky sign-ins security report](/azure/active-directory/reports-monitoring/concept-risky-sign-ins).
@@ -143,7 +141,7 @@ You can also reduce use of passwords by applications using [Managed Identities](
 People are a critical part of your defense, so ensure they have the knowledge and skills to avoid and resist attacks will reduce your overall organizational
 risk.
 
-You can use [Attack Simulator in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulator) or any number of third-party offerings.
+You can use [Attack simulation training in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulation-training-get-started) or any number of third-party offerings.
 
 ## Next step
 

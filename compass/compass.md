@@ -21,10 +21,20 @@ In this guidance:
 
 - [Introduction](microsoft-security-compass-introduction.md)
 - [Governance, risk, and compliance](governance-risk-compliance-videos-and-decks.md)
-- [Security operations](security-operations-videos-and-decks.md)
 - [Identity and access management](identity-videos-and-decks.md)
 - [Network security and containment](network-containment-videos-and-decks.md)
 - [Information protection and storage](information-protection-and-storage-videos-and-decks.md)
+- [Application and services](applications-services.md)
+
+
+For information on other key resources, see:
+
+- [Security operations](/security/operations/overview)
+- [Privileged administration]()
+- [Ransomware and extortion]()
+
+
+
 
 This guidance is presented in a series of videos. To download the PowerPoint slides associated with these videos, click [download presentation slides](/microsoft-365/downloads/security-compass-presentation.pptx).
 

@@ -12,7 +12,7 @@ ms.service: microsoft-365-security
 
 In cloud-based architecture, identity provides the basis of a large percentage of security assurances. While legacy IT infrastructure often heavily relied on firewalls and network security solutions at the internet egress points for protection against outside threats, these controls are less effective in cloud architectures with shared services being accessed across cloud provider networks or the internet.
 
-It is challenging or impossible to write concise firewall rules when you don’t control the networks where these services are hosted, different cloud resources spin up and down dynamically, cloud customers may share common infrastructure, and employees and users expect to be able to access data and services from anywhere. To enable all these capabilities, you must manage access based on identity authentication and authorization controls in the cloud services to protect data and resources and to decide which requests should be permitted.
+It is challenging or impossible to write concise firewall rules when you don't control the networks where these services are hosted, different cloud resources spin up and down dynamically, cloud customers may share common infrastructure, and employees and users expect to be able to access data and services from anywhere. To enable all these capabilities, you must manage access based on identity authentication and authorization controls in the cloud services to protect data and resources and to decide which requests should be permitted.
 
 Additionally, using a cloud-based identity solution like Azure Active Directory (Azure AD) offers additional security features that legacy identity services cannot because they can apply threat intelligence from their visibility into a large volume of access requests and threats across many customers.
 
@@ -64,15 +64,15 @@ You can also reduce use of passwords by applications using [Managed Identities](
 
 **Best practice:** Disable insecure legacy protocols for internet-facing services.
 
-Legacy authentication methods are among the top attack vectors for cloud-hosted services. Created before multifactor-authentication existed, legacy protocols don’t support additional factors beyond passwords and are therefore prime targets for password spraying, dictionary, or brute force attacks. As an example, nearly 100% of all password spray attacks against Office 365 customers use legacy protocols. Additionally, these older protocols frequently lack other attack countermeasures, such as account lockouts or back-off timers. Services running on Microsoft’s cloud that block legacy protocols have observed a 66% reduction in successful account compromises.
+Legacy authentication methods are among the top attack vectors for cloud-hosted services. Created before multifactor-authentication existed, legacy protocols don't support additional factors beyond passwords and are therefore prime targets for password spraying, dictionary, or brute force attacks. As an example, nearly 100% of all password spray attacks against Office 365 customers use legacy protocols. Additionally, these older protocols frequently lack other attack countermeasures, such as account lockouts or back-off timers. Services running on Microsoft's cloud that block legacy protocols have observed a 66% reduction in successful account compromises.
 
 For Azure and other Azure AD-based accounts, configure [Conditional Access to block legacy protocols](/azure/active-directory/conditional-access/block-legacy-authentication).
 
-Disabling legacy authentication can be difficult, as some users may not want to move to new client software that supports modern authentication methods. However, moving away from legacy authentication can be done gradually. Start by using metrics and logging from your authentication provider to determine the how many users still authenticate with old clients. Next, disable any down-level protocols that aren’t in use, and set up Conditional Access for all users who aren’t using legacy protocols. Finally, give plenty of notice and guidance to users on how to upgrade before blocking legacy authentication for all users on all services at a protocol level.
+Disabling legacy authentication can be difficult, as some users may not want to move to new client software that supports modern authentication methods. However, moving away from legacy authentication can be done gradually. Start by using metrics and logging from your authentication provider to determine the how many users still authenticate with old clients. Next, disable any down-level protocols that aren't in use, and set up Conditional Access for all users who aren't using legacy protocols. Finally, give plenty of notice and guidance to users on how to upgrade before blocking legacy authentication for all users on all services at a protocol level.
 
 ## No on-premises admin accounts in cloud identity providers
 
-**Best practice:** Don’t synchronize highly privileged Active Directory Domain Services accounts (like Domain, Enterprise, and Schema admins) to Azure AD.
+**Best practice:** Don't synchronize highly privileged Active Directory Domain Services accounts (like Domain, Enterprise, and Schema admins) to Azure AD.
 
 This mitigates the risk of an adversary pivoting to full control of on-premises assets following a successful compromise of a cloud account. This helps contain the scope of an incident from growing significantly.
 
@@ -87,7 +87,7 @@ Legacy identity providers mostly checked to make sure passwords had a good mix o
 - **Microsoft** - <https://www.microsoft.com/research/publication/password-guidance/>
 - **NIST** - <https://pages.nist.gov/800-63-3/sp800-63b.html>
 
-Identity solutions today need to be able to respond to types of attacks that didn't even exist one or two decades ago such as password sprays, breach replays (also called *“credential stuffing*”) that test username/password pairs from other sites’ breaches, and phishing man-in-the-middle attacks. Cloud identity providers are uniquely positioned to offer protection against these attacks. Since they handle such large volumes of sign-ons, they can apply better anomaly detection and use a variety of data sources to both proactively notify companies if their users’ passwords have been found in other breaches, as well as validate that any given sign in appears legitimate and is not coming from an unexpected or known-malicious host.
+Identity solutions today need to be able to respond to types of attacks that didn't even exist one or two decades ago such as password sprays, breach replays (also called *credential stuffing*) that test username/password pairs from other sites' breaches, and phishing man-in-the-middle attacks. Cloud identity providers are uniquely positioned to offer protection against these attacks. Since they handle such large volumes of sign-ons, they can apply better anomaly detection and use a variety of data sources to both proactively notify companies if their users' passwords have been found in other breaches, as well as validate that any given sign in appears legitimate and is not coming from an unexpected or known-malicious host.
 
 Additionally, synchronizing passwords to the cloud to support these checks also add resiliency during some attacks. Customers affected by (Not)Petya attacks were able to continue business operations when password hashes were synchronized to Azure AD (vs. near zero communications and IT services for customers affected organizations that had not synchronized passwords).
 
@@ -95,17 +95,15 @@ For Azure, enable modern protections in Azure AD with these steps:
 
 1. [Implement password hash synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
-2. Choose whether to automatically remediate these issues or manually remediate
-    them based on a report:
+2. Choose whether to automatically remediate these issues or manually remediate them based on a report:
 
-    a. **Automatic Enforcement -** Automatically remediate high risk passwords with Conditional Access [leveraging Azure AD Identity Protection risk assessments](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)
+   - **Automatic Enforcement -** Automatically remediate high risk passwords with Conditional Access [leveraging Azure AD Identity Protection risk assessments](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)
 
-    b. **Report & Manually Remediate -** View reports and manually remediate
-        accounts
+   - **Report & Manually Remediate -** View reports and manually remediate accounts
 
-       -   **Azure AD reporting** - Risk events are part of Azure AD's security reports. For more information, see the [users at risk security report](/azure/active-directory/reports-monitoring/concept-user-at-risk) and the [risky sign-ins security report](/azure/active-directory/reports-monitoring/concept-risky-sign-ins).
+     - **Azure AD reporting** - Risk events are part of Azure AD's security reports. For more information, see the [users at risk security report](/azure/active-directory/reports-monitoring/concept-user-at-risk) and the [risky sign-ins security report](/azure/active-directory/reports-monitoring/concept-risky-sign-ins).
 
-       -   **Azure AD Identity Protection** - Risk events are also part of the reporting capabilities of [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection).
+     - **Azure AD Identity Protection** - Risk events are also part of the reporting capabilities of [Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection).
 
 Use the [Identity Protection risk events API](/graph/api/resources/identityprotection-root) to gain programmatic access to security detections using Microsoft Graph.
 
@@ -128,7 +126,7 @@ For example, Azure AD can be used to authenticate:
 
 ## Conditional Access for users with Zero Trust
 
-**Best practice:** Authentication for all users should include measurement and enforcement of key security attributes to support a Zero Trust strategy. 
+**Best practice:** Authentication for all users should include measurement and enforcement of key security attributes to support a Zero Trust strategy.
 
 The details of this recommendation are in [Common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies). The same recommendation applies to all users, but should be applied first to accounts with administrative privileges.
 
@@ -138,8 +136,7 @@ You can also reduce use of passwords by applications using [Managed Identities](
 
 **Best practice:** Regularly simulate attacks against your users to educate and empower them.
 
-People are a critical part of your defense, so ensure they have the knowledge and skills to avoid and resist attacks will reduce your overall organizational
-risk.
+People are a critical part of your defense, so ensure they have the knowledge and skills to avoid and resist attacks will reduce your overall organizational risk.
 
 You can use [Attack simulation training in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulation-training-get-started) or any number of third-party offerings.
 

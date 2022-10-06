@@ -17,6 +17,11 @@ See the [Governance, risk, and compliance](governance.md) and [Capabilities](gov
 
 The following videos provide guidance on governance, risk, and compliance. You can also download the [PowerPoint slides](/microsoft-365/downloads/security-compass-presentation.pptx) associated with these videos.
 
+
+>[!NOTE]
+>The following videos and slides were created on October 2019. 
+
+
 ## Part 1: Introduction + Manage Connected Tenants (08:45)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qbBk]
 

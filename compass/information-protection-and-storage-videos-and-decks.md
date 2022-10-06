@@ -19,6 +19,10 @@ The following videos provide guidance on information protection and storage. You
 
 For more information about information protection capabilities across Microsoft 365 and SQL databases, see [CISO Workshop Module 5: Information Protection](/security/ciso-workshop/ciso-workshop-module-5) and [Information protection and storage capabilities](information-protection-and-storage-capabilities.md). 
 
+>[!NOTE]
+>The following videos and slides were created on October 2019. 
+
+
 ## Part 1: Introduction (13:39)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qm6e]
 

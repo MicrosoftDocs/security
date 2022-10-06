@@ -14,7 +14,15 @@ description: "Learn how to establish security operations to rapidly identify and
 
 Security operations monitor an enterprise environment to rapidly identify and remediate risk from active attack operations, sharing insights and threat intelligence from these attacks to the rest of the organization.
 
+For more information on how to modernize security operations, see [Modernize security operations](/security/operations/).
+
 The following videos provide guidance on security operations.
+
+
+>[!NOTE]
+>The following videos and slides were created on October 2019. 
+
+
 
 ## Part 1: Introduction - SOC Learnings, Strategies, and Technical Integration (24:30 long)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qjuW]
@@ -33,7 +41,7 @@ The following videos provide guidance on security operations.
 
 ## Next steps
 
-- See security operations [best practices](security-operations.md) and [capabilities](security-operations-capabilities.md) for more information.
+- See [Security operations overview](/security/operations/overview) for more information.
 - Review the [PowerPoint slides](/microsoft-365/downloads/security-compass-presentation.pptx) for the Microsoft Azure Security Compass Workshop.
 
 ## See also

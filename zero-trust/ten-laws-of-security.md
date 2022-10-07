@@ -34,15 +34,15 @@ As we followed this journey to a higher level of abstraction, patterns of common
 
 ## Reference
 
-### Immutable Laws of Security v2 (Technical Focus)
+### Immutable Laws of Security v2
 
-Law #1: If a bad guy can persuade you to run their program on your computer, it's not solely your computer anymore.
-Law #2: If a bad guy can alter the operating system on your computer, it's not your computer anymore.
-Law #3: If a bad guy has unrestricted physical access to your computer, it's not your computer anymore.
-Law #4: If you allow a bad guy to run active content in your website, it's not your website anymore.
-Law #5: Weak passwords trump strong security.
-Law #6: A computer is only as secure as the administrator is trustworthy.
-Law #7: Encrypted data is only as secure as its decryption key.
-Law #8: An out-of-date antimalware scanner is only marginally better than no scanner at all.
-Law #9: Absolute anonymity isn't practically achievable, online or offline.
-Law #10: Technology is not a panacea.
+- **Law #1:** If a bad guy can persuade you to run their program on your computer, it's not solely your computer anymore.
+- **Law #2:** If a bad guy can alter the operating system on your computer, it's not your computer anymore.
+- **Law #3:** If a bad guy has unrestricted physical access to your computer, it's not your computer anymore.
+- **Law #4:** If you allow a bad guy to run active content in your website, it's not your website anymore.
+- **Law #5:** Weak passwords trump strong security.
+- **Law #6:** A computer is only as secure as the administrator is trustworthy.
+- **Law #7:** Encrypted data is only as secure as its decryption key.
+- **Law #8:** An out-of-date antimalware scanner is only marginally better than no scanner at all.
+- **Law #9:** Absolute anonymity isn't practically achievable, online or offline.
+- **Law #10:** Technology is not a panacea.

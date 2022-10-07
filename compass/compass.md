@@ -30,6 +30,7 @@ In this guidance:
 For information on other key resources, see:
 
 - [Security operations](/security/operations/overview)
+- [Azure Active Directory security operations guide](/azure/active-directory/fundamentals/security-operations-introduction)
 - [Privileged administration]()
 - [Ransomware and extortion]()
 

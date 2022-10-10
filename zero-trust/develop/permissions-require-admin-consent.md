@@ -5,13 +5,13 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 09/15/2022
+ms.date: 10/10/2022
 ms.custom: template-concept 
 # Customer intent: As a developer, I want to learn about the permission and consent experience when my application requires administrative consent so that I can better collaborate with admins to implement the Zero Trust principle of least privilege in my applications.
 ---
 # Requesting permissions that require administrative consent
 
-In this article, we'll describe the permission and consent experience for a scenario where you, as a developer, are writing your application code to request [application permissions](developer-strategy-application-permissions.md) that will require administrative consent. Example screenshots of permission and consent dialogs and the Microsoft Entra admin center give you an idea of what your users and tenant admins experience so that you can better collaborate with admins and implement the [Zero Trust](overview.md) principle of least privilege in your applications.
+In this article, we'll describe the permission and consent experience for a scenario where you, as a developer, are writing your application code to request [application permissions](developer-strategy-application-permissions.md) that will require administrative consent. Example screenshots of permission and consent dialogs and the Microsoft Entra admin center give you an idea of what your users and tenant admins experience. Improve collaboration with admins to implement the [Zero Trust](overview.md) principle of least privilege in your applications.
 
 As you develop your application, you'll write code that requests [access to a resource](acquire-application-authorization-to-access-resources.md) by requesting an access token with a specific scope (or permission). You'll use the scope parameter as described in the [OAuth 2.0](/azure/active-directory/fundamentals/auth-oauth2) standard that some people describe as a permission. A resource owner will grant or deny each request for permission. In Azure Active Directory (Azure AD), the resource owner is either the user of the app or an admin who has the rights to grant consent to that resource on behalf of all users.
 
@@ -25,7 +25,7 @@ In the above example dialog, the user grants consent to allow the app to read th
 
 ## Admin consent experience
 
-For some access requests, only an admin can grant consent. If the requested access is powerful (for example, delete all instances of the resource in the tenant) or the access involves resources whose owners are users other than the current users, you'll code so that only an admin can grant the permission request.
+For some access requests, only an admin can grant consent. If the requested access is powerful or involves resources whose owners aren't the current users, code so that only an admin can grant requests.
 
 However, you never know which permissions will require admin consent and which allow a regular user to grant consent because tenant admins can configure their tenant with **Do not allow user consent** (all permissions require admin consent) as shown in the following example screenshot of **User consent settings** in the [Microsoft Entra admin center](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal).
 
@@ -43,7 +43,7 @@ When your app requests a permission that requires admin consent (by design or ad
 
 :::image type="content" source="../media/develop/screenshot-app-perm-req-need-admin-approval-inline.png" alt-text="Screenshot of 'Need admin approval' dialog that describes how requested permissions can be granted only by an admin." lightbox="../media/develop/screenshot-app-perm-req-need-admin-approval-expanded.png":::
 
-The above example dialog shows the default (out of the box) experience for permissions that require admin consent. Most users don't know what to do here; they don't know who their admin is, they don't know who to go to for approval, so it can limit the user's ability to achieve desired results.
+The above example dialog shows the default (out of the box) experience for permissions that require admin consent. Most users don't know what to do in this scenario. They don't know who their admin is, they don't know who to go to for approval. This uncertainty can limit the user's ability to achieve desired results.
 
 ## Improving the permissions and consent experience
 
@@ -85,10 +85,10 @@ Requesting admin consent ahead of time is an excellent choice for line of busine
 
 ## Next steps
 
-- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application. To access protected resources like email or calendar data, your application needs the resource owner's authorization.
-- The demonstrations in [Example of API protected by Microsoft identity consent framework](protected-api-example.md) help you to design your application permissions strategy to provide the best experience for your users and tenant admins when you implement the Zero Trust principle of least privilege.
+- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
+- [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
 - [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.
-- [Overview of permissions and consent in the Microsoft identity platform](/azure/active-directory/develop/permissions-consent-overview) helps you to understand the foundational concepts of access and authorization so that you can build more secure and trustworthy applications that request only the access they need, when they need it, from its users and administrators.
-- [Overview of consent and permissions](/azure/active-directory/manage-apps/consent-and-permissions-overview) helps you to learn the foundational concepts and scenarios around consent and permissions in Azure Active Directory (Azure AD).
-- Learn module: [Permissions and consent framework](/learn/modules/identity-permissions-consent/) helps you to learn the different types of permissions and consent framework models for obtaining permissions from users to use them in apps.
-- Learn Live: [Microsoft Identity: Permissions and Consent Framework](/shows/learn-live/permissions-and-consent-framework) helps you to learn the basics of Microsoft identity including the different types of tokens, account types, and supported topologies.
+- [Overview of permissions and consent in the Microsoft identity platform](/azure/active-directory/develop/permissions-consent-overview) helps you to understand foundational concepts of access and authorization.
+- [Overview of consent and permissions](/azure/active-directory/manage-apps/consent-and-permissions-overview) helps you to learn foundational concepts and scenarios around consent and permissions in Azure AD.
+- Learn module: [Permissions and consent framework](/learn/modules/identity-permissions-consent/) helps you to learn permissions and consent framework models.
+- Learn Live: [Microsoft Identity: Permissions and Consent Framework](/shows/learn-live/permissions-and-consent-framework) helps you to learn the basics of Microsoft identity including tokens, account types, and topologies.

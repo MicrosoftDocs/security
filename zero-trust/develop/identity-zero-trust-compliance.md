@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 09/15/2022
+ms.date: 10/10/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to understand application security so that I can address the guiding principles of Zero Trust.
 ---
@@ -25,8 +25,7 @@ At a fundamental level, two of the keys to your application's compliance with Ze
 
 With the [Microsoft identity platform](/azure/active-directory/develop/v2-overview) and Zero Trust enabling technologies (as shown in the following diagram), using Azure AD tokens enables your application to integrate with Microsoft's entire suite of security technologies.
 
-:::image type="complex" source="../media/develop/diagram-microsoft-zero-trust-enabling-technologies-inline.png" alt-text="Diagram shows the technologies that enable Microsoft Zero Trust." lightbox="../media/develop/diagram-microsoft-zero-trust-enabling-technologies-expanded.png":::
-   "Diagram title: Microsoft's Zero Trust enabling technologies. At the center is Azure AD Conditional Access. Microsoft Technologies on the periphery include (from top left corner and following clockwise) Azure Active Directory and Defender for Identity, Information Protection, Defender for Cloud Apps, Azure Security, Azure Networking, Azure Sentinel and Defender XDR, Endpoint Manager, Defender for Endpoint."
+:::image type="content" source="../media/develop/diagram-microsoft-zero-trust-enabling-technologies-inline.png" alt-text="Diagram shows the technologies that enable Microsoft Zero Trust." lightbox="../media/develop/diagram-microsoft-zero-trust-enabling-technologies-expanded.png":::
 :::image-end:::
 
 If your application requires passwords, you may be exposing your customers to avoidable risk. Bad actors view the shift to working from any location with any device as an opportunity to access corporate data by perpetrating activities such as password spray attacks. A password spray attack occurs when a bad actor chooses a promising password and tries that password across a set of user accounts. For example, they might try GoSeaHawks2022! against user accounts in the Seattle area. This type of attack has been successful and is one reason for the movement in cybersecurity towards passwordless authentication.
@@ -42,6 +41,7 @@ Ensure that your customers understand all corporate resources that your applicat
 ## Next steps
 
 - [Using standards-based development methodologies](identity-standards-based-development-methodologies.md) provides an overview of supported standards (OAuth 2.0, OpenID Connect, SAML, WS-Federation, and SCIM) and the benefits of using them with MSAL and the Microsoft identity platform.
-- [Building apps with a Zero Trust approach to identity](identity.md) continues from the [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) article to help you use a Zero Trust approach to identity in your software development lifecyle (SDLC).
-- [Supported identity and account types for single- and multi-tenant apps](identity-supported-account-types.md) explains how you can choose if your app allows only users from your Azure Active Directory (Azure AD) tenant, any Azure AD tenant, or users with personal Microsoft accounts by configuring your app to be either single tenant or multitenant during app registration in Azure and ensure the Zero Trust principle of least privilege access so that your app only requests permissions it needs.
-- When you're building non-user applications, you don't have a user whom you can prompt for a username and password or Multifactor Authentication (MFA). You need to provide the application's identity on its own. [Providing application identity credentials when there's no user](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (non-user applications) on Azure is Managed Identities for Azure resources.
+- [Building apps with a Zero Trust approach to identity](identity.md) provides an overview of permissions and access best practices.
+- [Supported identity and account types for single- and multi-tenant apps](identity-supported-account-types.md) explains how you can choose if your app allows only users from your Azure Active Directory (Azure AD) tenant, any Azure AD tenant, or users with personal Microsoft accounts.
+- [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
+- [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.

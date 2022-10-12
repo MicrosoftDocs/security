@@ -110,6 +110,12 @@
         "source_path": "zero-trust/identity-developer.md",
         "redirect_url": "develop/identity",
         "redirect_document_id": false
+      },
+
+      {
+        "source_path": "compass/backup-plan-to-protect-against-ransomware.md",
+        "redirect_url": "/azure/security/fundamentals/backup-plan-to-protect-against-ransomware",
+        "redirect_document_id": false
       }
   ] 
   } 

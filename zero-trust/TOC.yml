@@ -237,10 +237,14 @@
         href: develop/permissions-require-admin-consent.md  
       - name: Non-user application identity
         href: develop/identity-non-user-applications.md
-      - name: Authorization best practices
-        href: develop/developer-strategy-authorization-best-practices.md
+      - name: API protection
+        href: develop/protect-api.md
       - name: Protected API example
         href: develop/protected-api-example.md  
+      - name: API call to another API
+        href: develop/api-calls-api.md
+      - name: Authorization best practices
+        href: develop/developer-strategy-authorization-best-practices.md
 - name: Resources
   expanded: false
   items:

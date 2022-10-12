@@ -116,6 +116,15 @@
         "source_path": "compass/backup-plan-to-protect-against-ransomware.md",
         "redirect_url": "/azure/security/fundamentals/backup-plan-to-protect-against-ransomware",
         "redirect_document_id": false
-      }
+      },
+
+       {
+         "source_path": "compass/governance.md",
+         "redirect_url": "/azure/architecture/framework/security/design-governance",
+         "redirect_document_id": false
+      },
+
+
+
   ] 
   } 

@@ -13,8 +13,6 @@
       items:
         - name: Videos and slides
           href: governance-risk-compliance-videos-and-decks.md
-        - name: Article
-          href: governance.md
 
     - name: Security operations
       items:

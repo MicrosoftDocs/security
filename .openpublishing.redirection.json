@@ -118,13 +118,101 @@
         "redirect_document_id": false
       },
 
-       {
+      {
          "source_path": "compass/governance.md",
          "redirect_url": "/azure/architecture/framework/security/design-governance",
          "redirect_document_id": false
       },
+      {
+         "source_path": "compass/governance-risk-compliance-capabilities.md",
+         "redirect_url": "https://azure.microsoft.com/solutions/governance/#solution-overview",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/security-operations.md",
+         "redirect_url": "operations/security-operations",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/security-operations-capabilities.md",
+         "redirect_url": "operations/security-operations",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/incident-response-overview.md",
+         "redirect_url": "operations/incident-response-overview",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/incident-response-planning.md",
+         "redirect_url": "operations/incident-response-planning",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/incident-response-process.md",
+         "redirect_url": "operations/incident-response-process",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/incident-response-playbooks.md",
+         "redirect_url": "operations/incident-response-playbooks",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/incident-response-playbook-phishing.md",
+         "redirect_url": "operations/incident-response-playbook-phishing",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/incident-response-playbook-password-spray.md",
+         "redirect_url": "operations/incident-response-playbook-password-spray",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/incident-response-playbook-app-consent.md",
+         "redirect_url": "operations/incident-response-playbook-app-consent",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/incident-response-playbook-dart-ransomware-approach.md",
+         "redirect_url": "operations/incident-response-playbook-dart-ransomware-approach",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/incident-response-playbook-compromised-malicious-app.md",
+         "redirect_url": "operations/incident-response-playbook-compromised-malicious-app",
+         "redirect_document_id": false
+      },
 
-
-
+      {
+         "source_path": "compass/identity.md",
+         "redirect_url": "/azure/security/fundamentals/identity-management-best-practices",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/identity-capabilities.md",
+         "redirect_url": "/azure/security/fundamentals/identity-management-best-practices",
+         "redirect_document_id": false
+      },      
+      {
+         "source_path": "compass/network-security-containment.md",
+         "redirect_url": "",
+         "redirect_document_id": false
+      },  
+      {
+         "source_path": "compass/network-containment-capabilities.md",
+         "redirect_url": "",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/network-containment-capabilities.md",
+         "redirect_url": "",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/applications-services.md",
+         "redirect_url": "/azure/architecture/framework/security/design-apps-services",
+         "redirect_document_id": false
+      },
   ] 
   } 

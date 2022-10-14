@@ -23,9 +23,6 @@
       items:
         - name: Videos and slides
           href: identity-videos-and-decks.md
-        - name: Article
-          href: identity.md
-
 
     - name: Network security & containment
       items:
@@ -41,8 +38,4 @@
         - name: Article
           href: storage-data-encryption.md
 
-    - name: Applications and services
-      items:
-        - name: Article
-          href: applications-services.md
 

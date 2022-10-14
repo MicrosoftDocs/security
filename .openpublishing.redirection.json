@@ -135,7 +135,7 @@
       },
       {
          "source_path": "compass/security-operations-capabilities.md",
-         "redirect_url": "operations/security-operations",
+         "redirect_url": "operations/security-operations-capabilities",
          "redirect_document_id": false
       },
       {
@@ -199,11 +199,6 @@
          "redirect_url": "",
          "redirect_document_id": false
       },  
-      {
-         "source_path": "compass/network-containment-capabilities.md",
-         "redirect_url": "",
-         "redirect_document_id": false
-      },
       {
          "source_path": "compass/network-containment-capabilities.md",
          "redirect_url": "",

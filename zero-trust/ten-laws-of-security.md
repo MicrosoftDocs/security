@@ -16,13 +16,7 @@ ms.reviewer: mas
 
 The original immutable laws of security (v2 updated below) identified key technical truths that busted prevalent security myths of those times. In that spirit, we're publishing a new complementary set of laws focused on busting prevalent myths in today’s world of ubiquitous cybersecurity risk.
 
-Since the original immutable laws were written, information security has grown into a cybersecurity risk management discipline that includes:
-
-- Cloud
-- IoT and OT devices
-- Business risk discussions
-- Elections
-- ...and more of fabric of our daily lives
+Since the time of the original immutable laws, the technical discipline of information security has grown up into a cybersecurity risk management discipline that includes cloud, IoT and OT devices, while simultaneously being weaved into the fabric of our daily lives, business risk discussions, elections, and more.
 
 As many of us in the industry followed this journey to a higher level of abstraction, we saw patterns of common myths, biases, and blind spots emerge at the risk management layer. We decided to create a new list of laws for cybersecurity risk while retaining the original laws (v2) as is (with a single slight change of “bad guy” to “bad actor” to be fully correct and inclusive).
 

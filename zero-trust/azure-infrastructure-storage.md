@@ -27,7 +27,7 @@ Zero trust principles for Azure Storage are applied across the architecture, fro
 
 The following illustration provides a reference of logical architecture components.
 
-![](RackMultipart20221007-1-ohxua8_html_6c8185e3c1104ac6.gif)
+Illustration
 
 In the illustration:
 
@@ -68,7 +68,7 @@ By default, public blob access is prohibited, but a user with proper permissions
 
 This configuration will force the storage account to drop all requests made with a shared key and require Azure AD authorization instead. Azure AD is a more secure choice as you can leverage risk-based access mechanisms to harden access to data tiers. See [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent?tabs=portal)
 
-![](RackMultipart20221007-1-ohxua8_html_9315143250a94f8d.png)
+Illustration
 
 ### Enforce a minimum required version of transport layer security (TLS)
 
@@ -80,13 +80,13 @@ Define the scope for copy operations: Restrict copy operations to only those fro
 
 Limiting copy operations to source storage accounts with private endpoints is the most restrictive option. Source storage account must have private endpoints enabled.
 
-![](RackMultipart20221007-1-ohxua8_html_4912e7f99581c11e.png)
+Illustration
 
 ### Understand how encryption at rest works
 
 All data written to Azure Storage is automatically encrypted by [Storage Service Encryption (SSE)](/azure/security/fundamentals/encryption-atrest) with a 256-bit Advanced Encryption Standard (AES) cipher. SSE automatically encrypts data when writing it to Azure Storage. When you read data from Azure Storage, Azure Storage decrypts the data before returning it. This process incurs no additional charges and doesn't degrade performance. Using customer-managed keys (CMKs) provides additional capabilities to control rotation of the encryption key or cryptographically erase data.
 
-![](RackMultipart20221007-1-ohxua8_html_15e9f282a7037eae.png)
+Illustration
 
 > [!NOTE]
 > In order to utilize a Customer Managed Key for Storage Account Encryption, you must enable it during account creation. You should also have a Key Vault with Key and Managed Identity with appropriate permissions already provisioned. Optionally, 256-bit AES encryption at the Azure Storage infrastructure level can also be enabled.
@@ -117,7 +117,7 @@ List of Storage Account Roles for granular access:
 
 RBAC assignments can be done through the Access Control option on the Storage Account and can be assigned at various scopes.
 
-![](RackMultipart20221007-1-ohxua8_html_c4c454cceef06fc2.png)
+Illustration
 
 Another way to provide permissions that can be time-bound is through Shared Access Signatures. [Best Practices when using SAS](/azure/storage/common/storage-sas-overview#best-practices-when-using-sas) at a high level are:
 
@@ -133,7 +133,7 @@ In this step, use the recommended controls to protect the network connections to
 
 The following illustration highlights the network connections to the Azure Storage services in the reference architecture.
 
-![](RackMultipart20221007-1-ohxua8_html_1857ad30ca492bb9.png)
+Illustration
 
 | Task | Description |
 | --- | --- |
@@ -141,7 +141,7 @@ The following illustration highlights the network connections to the Azure Stora
 |Use [Azure Private Link](/azure/private-link/private-link-overview) | Use Azure Private Link to access Azure Storage over a private endpoint in your virtual network. Use the [approval workflow](/azure/private-link/private-endpoint-overview) to automatically approve or manually request, as appropriate. |
 | Prevent public access to your data sources using [Service Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview) | Network segmentation can be achieved using Service Endpoints by enabling private IP addresses in a VNET to reach an endpoint without using Public IP addresses. |
 
-![](RackMultipart20221007-1-ohxua8_html_988215443e80f38f.png)
+Illustration
 
 ## Step 4. Use Defender for Storage for automated threat detection and protection
 
@@ -165,4 +165,4 @@ For more information on the architecture for threat protection across the refere
 
 Once enabled, Storage Advanced Threat Protection will notify you of security alerts and recommendations for improving the security posture of your Azure Storage Accounts.
 
-![](RackMultipart20221007-1-ohxua8_html_fb909df7089cab2a.png)
+Illustration

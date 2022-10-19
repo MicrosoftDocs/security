@@ -27,7 +27,7 @@ Zero trust principles for virtual machines are applied across the logical archit
 
 The following illustration provides a reference of logical architecture components.
 
-![](RackMultipart20221007-1-rn2blj_html_8a911184c3c30812.gif)
+Illustration
 
 In this illustration:
 
@@ -36,7 +36,7 @@ In this illustration:
 
 This article walks through the steps to apply the principles of Zero Trust across this logical architecture. The steps are illustrated and described below.
 
-![](RackMultipart20221007-1-rn2blj_html_35ba6fa3041ad9da.gif)
+Illustration
 
 The following table describes the tasks that are numbered in the illustration.
 
@@ -61,7 +61,7 @@ For more information on creating and managing resource groups, see [Manage Azure
 
 You assign a virtual machine to a resource group when you first create the virtual machine, as called out in the screen capture below.
 
-![](RackMultipart20221007-1-rn2blj_html_7a9a92905e76404a.gif)
+Illustration
 
 # Step 2. Leverage Role Based Access Control (RBAC)
 
@@ -79,7 +79,7 @@ When this custom role is leveraged in conjunction with Managed Identity and Cond
 
 To extend your realm of control beyond the system and allow your Azure AD tenant with Microsoft Intelligent Security Graph to support secure access, go to the Management blade of the virtual machine and turn on System Assigned Managed Identity.
 
-![](RackMultipart20221007-1-rn2blj_html_ed6897c0a9f72b32.gif)
+Illusatration
 
 NOTE: This feature is only available for Azure Virtual Desktop, Windows SVR 2019, and Windows 10, and with Linux Distros using certificate-based access.
 
@@ -94,7 +94,7 @@ When you create the virtual machine, be sure you configure security for the boot
 
 Enhanced deployment of virtual machines allows you to select security type and use Secure boot and vTPM. See callout #2 in the screen capture below.
 
-![](RackMultipart20221007-1-rn2blj_html_37609c9d76c60cac.gif)
+Illusatration
 
 ## Step 4. Enable customer-managed keys and double encryption
 
@@ -106,7 +106,7 @@ After this is complete, you can begin using your customer-managed encryption key
 
 In the screen shot below, you select the encryption type on the Disks section for the virtual machine configuration. Select "Double encryption with platform-managed and customer-managed keys."
 
-![](RackMultipart20221007-1-rn2blj_html_97a158f502df6ea3.png)
+Illustration
 
 [Enable server-side encryption of Azure Disk Storage](/azure/virtual-machines/disk-encryption)
 
@@ -129,7 +129,7 @@ It's important to control the applications that can be installed on your virtual
 
 You can use the VM Applications feature to control the applications that are installed on virtual machines. With this feature, you select which VM applications to install. This feature leverages the Azure Compute Gallery to simplify management of applications for virtual machines. When used together with RBAC, you can ensure only trusted applications are available for users.
 
-![](RackMultipart20221007-1-rn2blj_html_8ff411d2ff599cb5.gif)
+Illustration
 
 ## Step 6. Configure secure access
 
@@ -139,7 +139,7 @@ To configure secure access:
 - Set up multi-factor authentication with conditional access
 - Use privileged access workstations (PAWS)
 
-![](RackMultipart20221007-1-rn2blj_html_f67653c922af7f09.gif)
+Illustration
 
 In the illustration:
 
@@ -154,7 +154,7 @@ In the reference architecture, [Azure Bastion](/azure/bastion/bastion-overview#k
 
 Comms between storage services and VMs?
 
-![](RackMultipart20221007-1-rn2blj_html_77691af2b7722d97.gif)
+Illustration
 
 ## Set up multi-factor authentication with conditional access
 
@@ -164,7 +164,7 @@ When configuring multi-factor authentication with conditional access and related
 
 The following diagram illustrates the recommended policies for Zero Trust.
 
-![](RackMultipart20221007-1-rn2blj_html_e25aeacb4e0ece1f.png)
+Illustration
 
 Remember, username and passwords are 100% able to be compromised. Using multi-factor authentication, you reduce your risk of compromise by 99.9%. (This requires Azure AD P1 license).
 
@@ -226,7 +226,7 @@ Additional guidance:
 
 Threat protection for Azure infrastructure is provided by Defender for Cloud. This protection is extended to virtual machines when you provision [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 
-![](RackMultipart20221007-1-rn2blj_html_994780f32f3d820f.gif)
+Illustration
 
 In the illustration:
 

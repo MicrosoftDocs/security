@@ -190,15 +190,15 @@
       expanded: false
       items: 
       - name: Overview
-        href: azure-infra-zt-overview.md
+        href: azure-infrastructure-overview.md
       - name: 1. Azure storage
-        href: azure-infra-zt-storage.md
+        href: azure-infrastructure-storage.md
       - name: 2. Virtual machines
-        href: azure-infra-zt-virtual-machines.md
+        href: azure-infrastructure-virtual-machines.md
       - name: 3. Spoke virtual network for IaaS workloads
-        href: azure-infra-zt-iaas.md
+        href: azure-infrastructure-iaas.md
       - name: 4. Hub virtual network
-        href: azure-infra-zt-hub-vnet.md
+        href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false
   items: 

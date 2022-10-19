@@ -1,6 +1,6 @@
 ---
-title: Overview of how to secure Azure infrastructure with Zero Trust
-description: This article gives an overview of how to secure Azure infrastructure with Zero Trust.  
+title: Overview - Apply Zero Trust principles to Azure infrastructure
+description: This article gives an overview of how to apply Zero Trust principles to Azure infrastructure.  
 ms.date:     
 ms.service: security
 author: brendacarter
@@ -12,7 +12,7 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# Overview - Secure Azure infrastructure with Zero Trust
+# Overview – Apply Zero Trust principles to Azure infrastructure 
 
 The following series of articles help you to apply the principles of Zero Trust to your workloads in Azure based on a multi-disciplinary approach of applying the Zero Trust principles.
 

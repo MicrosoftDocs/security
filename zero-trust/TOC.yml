@@ -171,27 +171,6 @@
         href: /microsoft-365/solutions/information-protection-deploy-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Investigate
         href: /microsoft-365/solutions/information-protection-deploy-monitor-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-<<<<<<< HEAD
-- name: Zero Trust deployment plans for Microsoft Azure and infrastructure
-  expanded: false
-  items: 
-    - name: Overview
-      href: azure-infrastructure-deployment-plans.md
-    - name: Secure infrastructure in Azure
-      expanded: false
-      items: 
-      - name: Overview
-        href: azure-infrastructure-overview.md
-      - name: 1. Azure storage
-        href: azure-infrastructure-storage.md
-      - name: 2. Virtual machines
-        href: azure-infrastructure-virtual-machines.md
-      - name: 3. Networking for IaaS apps
-        href: azure-infrastructure-iaas.md
-      - name: 4. Network access to IaaS apps
-        href: azure-infrastructure-networking.md
-=======
-
     - name: Integrate SaaS apps for Zero Trust with Microsoft 365 
       items:
       - name: Overview
@@ -202,8 +181,24 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-            
->>>>>>> upstream/main
+- name: Zero Trust deployment plans for Microsoft Azure infrastructure
+  expanded: false
+  items: 
+    - name: Overview
+      href: azure-infrastructure-deployment-plans.md
+    - name: Secure infrastructure in Azure
+      expanded: false
+      items: 
+      - name: Overview
+        href: azure-infra-zt-overview.md
+      - name: 1. Azure storage
+        href: azure-infra-zt-storage.md
+      - name: 2. Virtual machines
+        href: azure-infra-zt-virtual-machines.md
+      - name: 3. Spoke virtual network for IaaS workloads
+        href: azure-infra-zt-iaas.md
+      - name: 4. Hub virtual network
+        href: azure-infra-zt-hub-vnet.md
 - name: Technology partner integrations
   expanded: false
   items: 

@@ -1,7 +1,7 @@
 ---
 title: Overview of how to secure Azure infrastructure with Zero Trust
 description: This article gives an overview of how to secure Azure infrastructure with Zero Trust.  
-ms.date: 10-01-2022
+ms.date:     
 ms.service: security
 author: brendacarter
 ms.author: bcarter
@@ -51,7 +51,7 @@ For more information about CAF and ELSZ best practices, refer:
 
 The reference architecture for this Zero Trust guidance is illustrated below.
 
-![](RackMultipart20221017-1-6wgzsm_html_c3e80f028421e16e.png)
+Illustration
 
 It’s important to note that the guidance in this series of articles is more specific for this type of architecture than the guidance provided in the Cloud Adoption Framework and Azure landing zone architectures. If you have applied the guidance in either of these resources, be sure to also review this set of articles for additional recommendations.  
 
@@ -63,7 +63,7 @@ The architecture also contains some of the most used PaaS services on Azure that
 Storage Blobs and Storage Files complete this example environment by providing object storage for the applications and files shared by users.
 This series of articles walk through the recommendations for implementing Zero Trust for the reference article by addressing each of these larger pieces illustrated below. 
 
-![](RackMultipart20221017-1-6wgzsm_html_b72cd0ecbd0168ae.png)
+Image
 
 The illustration outlines the larger areas of the architecture that are addressed by each article in this series: 
 1. Azure Storage Service 
@@ -97,7 +97,7 @@ For more information about configuring management groups and enabling Defender f
 - [Organize subscriptions into management groups and assign roles to users](/azure/defender-for-cloud/management-groups-roles)
 - [Enable Defender for Cloud on all subscriptions in a management group](/azure/defender-for-cloud/onboard-management-group)
 
-![](RackMultipart20221017-1-6wgzsm_html_253d738a66e3a875.gif)
+image
 
 ## Security solutions in this series of articles
 
@@ -147,14 +147,14 @@ Zero Trust involves applying multiple disciplines of security and information pr
 - Configure Storage security 
 - Configure Azure Firewall 
 
-# Next Steps
+## Next Steps
 
 - Article 2 (link to be added)
 - Article 3 (link to be added)
 - Article 4 (link to be added)
 - Article 5 (link to be added)
 
-# References
+## References
 
 See links below for the related services and technologies:
 
@@ -165,14 +165,14 @@ See links below for the related services and technologies:
 - Service 5
 - Service 6
 
-# Technical illustrations
+## Technical illustrations
 
 You can download the illustrations used in this series of articles. Use the Visio file to modify these illustrations for your own use.
 
-\<placeholder thumb image\>
+
 Illustration
 
-[![](RackMultipart20221017-1-6wgzsm_html_fb5cf84f384f622a.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf)
+Image
 [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) | [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx)
 Updated October 2022
 

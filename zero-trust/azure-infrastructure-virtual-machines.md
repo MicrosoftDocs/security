@@ -63,7 +63,7 @@ You assign a virtual machine to a resource group when you first create the virtu
 
 Illustration
 
-# Step 2. Leverage Role Based Access Control (RBAC)
+## Step 2. Leverage Role Based Access Control (RBAC)
 
 Zero Trust requires configuring least privileged access. To do so, you need to limit user access with just-in-time and just-enough access (JIT/JEA) based on their role, workload, and data classification.
 

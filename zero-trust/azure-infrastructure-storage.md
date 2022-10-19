@@ -33,7 +33,7 @@ In the illustration:
 
 - The storage account for the reference architecture is contained in a dedicated resource group. You can isolate each storage account in a different resource group for more granular permission control.
 - Azure storage services for the reference architecture are contained within a dedicated storage account. You can have one storage account for each type of storage workload.
-- For a broader look at the reference architecture, see [Overview-Secure Azure infrastructure with Zero Trust](azure-infra-zt-overview.md).
+- For a broader look at the reference architecture, see [Overview-Secure Azure infrastructure with Zero Trust](azure-infrastructure-overview.md).
 
 The illustration doesn't show Azure Queues and Azure Tables. Use the guidance in this article to secure these resources.
 
@@ -72,7 +72,7 @@ Illustration
 
 ### Enforce a minimum required version of transport layer security (TLS)
 
-The highest version Azure Storage currently supports is TLS 1.2. Enforcing a minimum TLS version will reject requests from clients using older versions. See [Prevent Shared Key authorization for an Azure Storage account](https://learn.microsoft.com/en-us/azure/storage/common/shared-key-authorization-prevent?tabs=portal).
+The highest version Azure Storage currently supports is TLS 1.2. Enforcing a minimum TLS version will reject requests from clients using older versions. See [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent).
 
 ### Define the scope for copy operations
 

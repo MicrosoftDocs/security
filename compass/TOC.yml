@@ -30,6 +30,59 @@
           href: network-containment-videos-and-decks.md
         - name: Article
           href: network-security-containment.md
+    - name: Privileged administration
+      items:
+        - name: Securing privileged access
+          href: overview.md
+        - name: Privileged access strategy
+          href: privileged-access-strategy.md
+        - name: Measuring success
+          href: privileged-access-success-criteria.md
+        - name: Security levels
+          href: privileged-access-security-levels.md
+        - name: Privileged access accounts
+          href: privileged-access-accounts.md
+        - name: Intermediaries
+          href: privileged-access-intermediaries.md
+        - name: Interfaces
+          href: privileged-access-interfaces.md
+        - name: Privileged access devices
+          href: privileged-access-devices.md
+        - name: Enterprise access model
+          href: privileged-access-access-model.md
+        - name: Privileged access implementation
+          href: privileged-access-deployment.md
+        - name: Modernization plan
+          href: security-rapid-modernization-plan.md
+        - name: ESAE Retirement
+          href: esae-retirement.md
+        - name: Videos and slides
+          href: administration-videos-and-decks.md
+        - name: Privileged access administration
+          href: critical-impact-accounts.md
+    #   - name: Capabilities
+    #     href: administration-capabilities.md
+
+    - name: Ransomware and extortion
+      items:
+        - name: Human operated ransomware
+          href: human-operated-ransomware.md 
+        - name: Rapidly protect against ransomware and extortion
+          items:
+            - name: Overview
+              href: protect-against-ransomware.md
+            - name: Phase 1. Prepare your recovery plan
+              href: protect-against-ransomware-phase1.md
+            - name: Phase 2. Limit the scope of damage 
+              href: protect-against-ransomware-phase2.md
+            - name: Phase 3. Make it hard to get in 
+              href: protect-against-ransomware-phase3.md
+        - name: Backup and restore plan for ransomware
+          href: backup-plan-to-protect-against-ransomware.md 
+        - name: DART approach to ransomware
+          href: incident-response-playbook-dart-ransomware-approach.md
+        - name: DART ransomware case study
+          href: dart-ransomware-case-study.md 
 
     - name: Information protection and storage
       items:

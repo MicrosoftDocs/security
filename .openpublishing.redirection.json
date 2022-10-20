@@ -174,11 +174,6 @@
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/incident-response-playbook-dart-ransomware-approach.md",
-         "redirect_url": "operations/incident-response-playbook-dart-ransomware-approach",
-         "redirect_document_id": false
-      },
-      {
          "source_path": "compass/incident-response-playbook-compromised-malicious-app.md",
          "redirect_url": "operations/incident-response-playbook-compromised-malicious-app",
          "redirect_document_id": false

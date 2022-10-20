@@ -139,6 +139,11 @@
          "redirect_document_id": false
       },
       {
+         "source_path": "compass/security-operations-videos-and-decks.md",
+         "redirect_url": "operations/security-operations-videos-and-decks",
+         "redirect_document_id": false
+      },
+      {
          "source_path": "compass/incident-response-overview.md",
          "redirect_url": "operations/incident-response-overview",
          "redirect_document_id": false

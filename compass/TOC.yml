@@ -28,8 +28,8 @@
       items:
         - name: Videos and slides
           href: network-containment-videos-and-decks.md
-        - name: Article
-          href: network-security-containment.md
+
+
     - name: Privileged administration
       items:
         - name: Securing privileged access

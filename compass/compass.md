@@ -23,17 +23,17 @@ In this guidance:
 - [Governance, risk, and compliance](governance-risk-compliance-videos-and-decks.md)
 - [Identity and access management](identity-videos-and-decks.md)
 - [Network security and containment](network-containment-videos-and-decks.md)
+- [Privileged administration](overview.md)
+- [Ransomware and extortion](human-operated-ransomware.md)
 - [Information protection and storage](information-protection-and-storage-videos-and-decks.md)
-- [Application and services](applications-services.md)
+
 
 
 For information on other key resources, see:
 
 - [Security operations](/security/operations/overview)
 - [Azure Active Directory security operations guide](/azure/active-directory/fundamentals/security-operations-introduction)
-- [Privileged administration]()
-- [Ransomware and extortion]()
-
+- [Application and services](/azure/architecture/framework/security/design-apps-services)
 
 
 

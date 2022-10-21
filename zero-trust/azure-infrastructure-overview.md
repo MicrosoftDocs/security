@@ -144,35 +144,35 @@ The following are the recommended training modules for Zero Trust:
 ### Azure management and governance
 |Training  |[Describe Azure management and governance](/training/paths/describe-azure-management-governance/)  |
 |---------|---------|
-|:::image type="icon" source="media/icon-describe-azure-management-governance.svg" border="false":::     | The Microsoft Azure Fundamentals training is composed of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance. Microsoft Azure Fundamentals: Describe Azure management and governance is the third learning path in Microsoft Azure Fundamentals. This learning path explores the management and governance resources available to help you manage your cloud and on-premises resources.<br>This learning path helps prepare you for [Exam AZ-900: Microsoft Azure Fundamentals.](/certifications/exams/az-900)|
+|:::image type="icon" source="media/icon-azure-fundamentals.png" border="false":::    | The Microsoft Azure Fundamentals training is composed of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance. Microsoft Azure Fundamentals: Describe Azure management and governance is the third learning path in Microsoft Azure Fundamentals. This learning path explores the management and governance resources available to help you manage your cloud and on-premises resources.<br>This learning path helps prepare you for [Exam AZ-900: Microsoft Azure Fundamentals.](/certifications/exams/az-900)|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/describe-cost-management-azure/1-introduction)
 
 ### Configure Azure Policy
 |Training  |[Configure Azure Policy](/training/modules/configure-azure-policy/)|
 |---------|---------|
-|:::image type="icon" source="media/icon-azure-policy-configure.svg" border="false"::: | Learn how to configure Azure Policy to implement compliance requirements.<br> In this module, you learn how to: <li>Create management groups to target policies and spending budgets.<li>Implement Azure Policy with policy and initiative definitions.<li>Scope Azure policies and determine compliance.|
+|:::image type="icon" source="media/icon-configure-azure-policy.png" border="false"::: | Learn how to configure Azure Policy to implement compliance requirements.<br> In this module, you learn how to: <li>Create management groups to target policies and spending budgets.<li>Implement Azure Policy with policy and initiative definitions.<li>Scope Azure policies and determine compliance.|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-azure-policy/1-introduction)
 
 ### Manage Security operation 
 |Training  |[Manage Security operation](/training/paths/manage-security-operation/)|
 |---------|---------|
-| :::image type="icon" source="media/icon-operation-manage-security.svg" border="false":::    | Once you have deployed and secured your Azure environment, learn to monitor, operate, and continuously improve the security of your solutions.<br> This learning path helps prepare you for [Exam AZ-500: Microsoft Azure Security Technologies](/certifications/exams/az-500).|
+| :::image type="icon" source="media/icon-manage-security-operation.png" border="false":::   | Once you have deployed and secured your Azure environment, learn to monitor, operate, and continuously improve the security of your solutions.<br> This learning path helps prepare you for [Exam AZ-500: Microsoft Azure Security Technologies](/certifications/exams/az-500).|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/azure-monitor/1-introduction)
 
 ### Configure Storage security  
 |Training  |[Configure Storage security](/training/modules/configure-storage-security/)|
 |---------|---------|
-|:::image type="icon" source="media/icon-storage-security-configure.svg" border="false"::: | Learn how to configure common Azure Storage security features like storage access signatures.<br>In this module, you learn how to:<li>Configure a shared access signature (SAS), including the uniform resource identifier (URI) and SAS parameters.<li>Configure Azure Storage encryption.<li>Implement customer-managed keys.<li>Recommend opportunities to improve Azure Storage security.|
+|:::image type="icon" source="media/icon-configure-azure-storage-security.png" border="false"::: | Learn how to configure common Azure Storage security features like storage access signatures.<br>In this module, you learn how to:<li>Configure a shared access signature (SAS), including the uniform resource identifier (URI) and SAS parameters.<li>Configure Azure Storage encryption.<li>Implement customer-managed keys.<li>Recommend opportunities to improve Azure Storage security.|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-storage-security/1-introduction)
 
 ### Configure Azure Firewall  
 |Training  |[Configure Azure Firewall](/training/modules/configure-azure-firewall/)|
 |---------|---------|
-|:::image type="icon" source="media/icon-azure-firewall-configure.svg" border="false"::: | You will learn how to configure the Azure Firewall including firewall rules.<br>After completing this module, you will be able to:<li>Determine when to use Azure Firewall.<li>Implement Azure Firewall including firewall rules|
+|:::image type="icon" source="media/icon-configure-azure-firewall.png" border="false"::: | You will learn how to configure the Azure Firewall including firewall rules.<br>After completing this module, you will be able to:<li>Determine when to use Azure Firewall.<li>Implement Azure Firewall including firewall rules|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-azure-firewall/1-introduction)
 

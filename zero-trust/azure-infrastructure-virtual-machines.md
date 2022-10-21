@@ -1,5 +1,5 @@
 ---
-title: Secure virtual machines in Azure with Zero Trust
+title: Apply Zero Trust principles to virtual machines in Azure 
 description: Learn how to secure virtual machines in Azure with Zero Trust.  
 ms.date: 
 ms.service: security
@@ -11,7 +11,7 @@ ms.collection:
   - msftsolution-scenario
   - zerotrust-solution
 ---
-# Secure virtual machines with Zero Trust
+# Apply Zero Trust principles to virtual machines in Azure 
 
 In this article, we apply the principles of zero trust to virtual machines in Azure:
 

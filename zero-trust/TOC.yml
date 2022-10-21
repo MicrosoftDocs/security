@@ -186,7 +186,7 @@
   items: 
     - name: Overview
       href: azure-infrastructure-deployment-plans.md
-    - name: Secure infrastructure in Azure
+    - name: Secure IaaS infrastructure in Azure
       expanded: false
       items: 
       - name: Overview
@@ -195,9 +195,9 @@
         href: azure-infrastructure-storage.md
       - name: 2. Virtual machines
         href: azure-infrastructure-virtual-machines.md
-      - name: 3. Spoke virtual network for IaaS workloads
+      - name: 3. Azure Spoke VNet
         href: azure-infrastructure-iaas.md
-      - name: 4. Hub virtual network
+      - name: 4. Azure hub VNet
         href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false

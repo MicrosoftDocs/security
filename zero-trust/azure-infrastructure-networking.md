@@ -1,5 +1,5 @@
 ---
-title: Secure a hub virtual network with Zero Trust 
+title: Apply Zero Trust principles to Hub Virtual network in Azure 
 description: Learn how to secure a hub virtual network with Zero Trust for access to Azure infrastructure.  
 ms.date: 
 ms.service: security
@@ -12,5 +12,5 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# Securing network access to Azure IaaS apps with Zero Trust
+# Apply Zero Trust principles to Hub Virtual network in Azure 
 

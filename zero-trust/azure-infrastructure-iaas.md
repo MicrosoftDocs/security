@@ -1,5 +1,5 @@
 ---
-title: Secure network components for an Azure IaaS app with Zero Trust
+title: Apply Zero Trust principles to spoke virtual network in Azure
 description: Learn how to secure a spoke virtual network for IaaS workloads with Zero Trust.   
 ms.date: 
 ms.service: security
@@ -12,5 +12,5 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# Secure network components for an Azure IaaS app with Zero Trust
+# Apply Zero Trust principles to spoke virtual network in Azure
 

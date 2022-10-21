@@ -1,5 +1,5 @@
 ---
-title: Secure Azure storage with Zero Trust
+title: Apply Zero Trust principles to Storage in Azure
 description: Learn how to secure Azure storage with Zero Trust.  
 ms.date: 
 ms.service: security
@@ -11,7 +11,7 @@ ms.collection:
   - msftsolution-scenario
   - zerotrust-solution
 ---
-# Secure Azure storage with Zero Trust
+# Apply Zero Trust principles to Storage in Azure
 
 In this article, we apply the principles of Zero Trust to Azure Storage:
 
@@ -33,7 +33,7 @@ In the illustration:
 
 - The storage account for the reference architecture is contained in a dedicated resource group. You can isolate each storage account in a different resource group for more granular permission control.
 - Azure storage services for the reference architecture are contained within a dedicated storage account. You can have one storage account for each type of storage workload.
-- For a broader look at the reference architecture, see [Overview-Secure Azure infrastructure with Zero Trust](azure-infrastructure-overview.md).
+- For a broader look at the reference architecture, see [Overview-Apply Zero Trust principles to Azure infrastructure](azure-infrastructure-overview.md).
 
 The illustration doesn't show Azure Queues and Azure Tables. Use the guidance in this article to secure these resources.
 
@@ -66,7 +66,7 @@ By default, public blob access is prohibited, but a user with proper permissions
 
 ### Prevent shared key authorization
 
-This configuration will force the storage account to drop all requests made with a shared key and require Azure AD authorization instead. Azure AD is a more secure choice as you can leverage risk-based access mechanisms to harden access to data tiers. See [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent?tabs=portal)
+This configuration will force the storage account to drop all requests made with a shared key and require Azure AD authorization instead. Azure AD is a more secure choice as you can leverage risk-based access mechanisms to harden access to data tiers. See [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent)
 
 Illustration
 
@@ -76,7 +76,7 @@ The highest version Azure Storage currently supports is TLS 1.2. Enforcing a min
 
 ### Define the scope for copy operations
 
-Define the scope for copy operations: Restrict copy operations to only those from source storage accounts that are within the same Azure AD tenant or that have a [Private Link](/azure/storage/common/storage-network-security?tabs=azure-portal) to the same virtual network as the destination storage account.
+Define the scope for copy operations: Restrict copy operations to only those from source storage accounts that are within the same Azure AD tenant or that have a [Private Link](/azure/storage/common/storage-network-security) to the same virtual network as the destination storage account.
 
 Limiting copy operations to source storage accounts with private endpoints is the most restrictive option. Source storage account must have private endpoints enabled.
 

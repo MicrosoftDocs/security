@@ -183,6 +183,24 @@
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
             
+- name: Zero Trust deployment plans for Microsoft Azure and infrastructure
+  expanded: false
+  items: 
+    - name: Overview
+      href: azure-infrastructure-deployment-plans.md
+    - name: Secure infrastructure in Azure
+      expanded: false
+      items: 
+      - name: Overview
+        href: azure-infrastructure-overview.md
+      - name: 1. Azure storage
+        href: azure-infrastructure-storage.md
+      - name: 2. Virtual machines
+        href: azure-infrastructure-virtual-machines.md
+      - name: 3. Networking for IaaS apps
+        href: azure-infrastructure-iaas.md
+      - name: 4. Network access to IaaS apps
+        href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false
   items: 

@@ -153,7 +153,7 @@ In the reference architecture, [Azure Bastion](/azure/bastion/bastion-overview#k
 
 ### Set up multi-factor authentication with conditional access
 
-In Step 2, Leverage Role Based Access Control, you configured Azure Active Directory Integration and Managed Identity. This allows you to set up [Azure multifactor authentication for Azure Virtual Desktop](/azure/virtual-desktop/set-up-mfa)or for [Windows Servers 2019 or newer](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows). You can also [Log in to a Linux VM with Azure Active Directory credentials](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux). The added benefit of this is the machine that connects to the virtual machine must also be registered to your Azure AD tenant to be allowed to connect.
+In Step 2, Leverage Role Based Access Control, you configured Azure Active Directory Integration and Managed Identity. This allows you to set up [Azure multifactor authentication for Azure Virtual Desktop](/azure/virtual-desktop/set-up-mfa) or for [Windows Servers 2019 or newer](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows). You can also [Log in to a Linux VM with Azure Active Directory credentials](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux). The added benefit of this is the machine that connects to the virtual machine must also be registered to your Azure AD tenant to be allowed to connect.
 
 When configuring multi-factor authentication with conditional access and related policies, use the recommended policy set for Zero Trust as a guide. This includes "Starting point" policies that don't require managing devices. Ideally, the devices accessing your virtual machines are managed and you can implement the "Enterprise" level, which is recommended for Zero Trust. For more information, see [Common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies).
 
@@ -210,7 +210,7 @@ Concentrate on [Azure Virtual Machine Maintenance and Updates](/azure/virtual-ma
 
 Additional guidance:
 - [Plan deployment for updating Windows VMs in Azure - Azure Example Scenarios.](/azure/architecture/example-scenario/wsus/)
-- [Use Azure Private Link to securely connect networks to Azure Automation.](/azure/automation/how-to/private-link-security):Ensures VMs connect in an isolated controlled fashion and not over the internet for updates.
+- [Use Azure Private Link to securely connect networks to Azure Automation](/azure/automation/how-to/private-link-security): Ensures VMs connect in an isolated controlled fashion and not over the internet for updates.
 
 ## Step 8. Enable advanced threat detection and protection
 

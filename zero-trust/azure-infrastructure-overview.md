@@ -77,11 +77,11 @@ In this illustration, the Azure infrastructure is contained within one Azure ten
 
 |Section |Description  |
 |---------|---------|
-| Azure Subscription    |  You can distribute the resources in more than one subscription, where each subscription may hold different roles, such as network subscription, security subscription, etc. This is described in the Cloud Adoption Framework and Azure Landing Zone documentation described earlier in this article. <p> The different subscriptions may also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you will have in each. One or more subscriptions can be managed together using a Management group. This will give you the ability to apply permission (Role based access control (RBAC)) and Azure policies to a group of subscriptions instead of you setting up each subscription individually.       |
-| Virtual machines Resource Group     | Virtual machines are contained in one resource group. You can have each virtual machine type of workload like front end, application, and database in a different resource group to further isolate access control.        |
-| Storage Resource group     | The storage account is contained in a dedicated resource group. You can isolate each storage account in a different resource group for more granular permission control.        |
-| Storage accounts     | Azure storage services are contained within a dedicated storage account. You can have one storage account for each type of storage workload, for example an Object Storage (also called “Blob”) and Azure Files. This provides more granular access control and might improve performance.         |
-| Network and Security Resource group    | The network and other resources for each of the virtual networks in the reference architecture are isolated within a resource group for each virtual network. This organization works well when responsibility for these live on different teams. Another option is to organize these components by putting all network resources in one resource group and security resources in another. It depends on how your organization is set up to manage these resources.          |
+| Azure Subscription (1)   |  You can distribute the resources in more than one subscription, where each subscription may hold different roles, such as network subscription, security subscription, etc. This is described in the Cloud Adoption Framework and Azure Landing Zone documentation described earlier in this article. <p> The different subscriptions may also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you will have in each. One or more subscriptions can be managed together using a Management group. This will give you the ability to apply permission (Role based access control (RBAC)) and Azure policies to a group of subscriptions instead of you setting up each subscription individually.       |
+| Virtual machines Resource Group (3)    | Virtual machines are contained in one resource group. You can have each virtual machine type of workload like front end, application, and database in a different resource group to further isolate access control.        |
+| Storage Resource group (2)    | The storage account is contained in a dedicated resource group. You can isolate each storage account in a different resource group for more granular permission control.        |
+| Storage accounts (4)    | Azure storage services are contained within a dedicated storage account. You can have one storage account for each type of storage workload, for example an Object Storage (also called “Blob”) and Azure Files. This provides more granular access control and might improve performance.         |
+| Network and Security Resource group (5)   | The network and other resources for each of the virtual networks in the reference architecture are isolated within a resource group for each virtual network. This organization works well when responsibility for these live on different teams. Another option is to organize these components by putting all network resources in one resource group and security resources in another. It depends on how your organization is set up to manage these resources.          |
 | Azure Monitor and Microsoft Defender for Cloud (MDC)   | For each Azure subscription, a set of Azure Monitor solutions and a Microsoft Defender for Cloud (MDC) is available. If you manage these subscriptions through Management Group, you will be able to consolidate in a single panel (same screen) all the functionalities of Azure Monitor and Microsoft Defender for Cloud. For example, Secure Score, provided by MDC, will be consolidated for all your subscriptions, using Management Group as the scope.  |
 
 ## Threat Protection with Microsoft Defender for Cloud
@@ -144,35 +144,35 @@ The following are the recommended training modules for Zero Trust:
 ### Azure management and governance
 |Training  |[Describe Azure management and governance](/training/paths/describe-azure-management-governance/)  |
 |---------|---------|
-|:::image type="icon" source="media/icon-azure-fundamentals.png" border="false":::    | The Microsoft Azure Fundamentals training is composed of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance. Microsoft Azure Fundamentals: Describe Azure management and governance is the third learning path in Microsoft Azure Fundamentals. This learning path explores the management and governance resources available to help you manage your cloud and on-premises resources.<br>This learning path helps prepare you for [Exam AZ-900: Microsoft Azure Fundamentals.](/certifications/exams/az-900)|
+|:::image type="icon" source="media/describe-azure-management-governance-resized.png" border="false":::    | The Microsoft Azure Fundamentals training is composed of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance. Microsoft Azure Fundamentals: Describe Azure management and governance is the third learning path in Microsoft Azure Fundamentals. This learning path explores the management and governance resources available to help you manage your cloud and on-premises resources.<br>This learning path helps prepare you for [Exam AZ-900: Microsoft Azure Fundamentals.](/certifications/exams/az-900)|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/describe-cost-management-azure/1-introduction)
 
 ### Configure Azure Policy
 |Training  |[Configure Azure Policy](/training/modules/configure-azure-policy/)|
 |---------|---------|
-|:::image type="icon" source="media/icon-configure-azure-policy.png" border="false"::: | Learn how to configure Azure Policy to implement compliance requirements.<br> In this module, you learn how to: <li>Create management groups to target policies and spending budgets.<li>Implement Azure Policy with policy and initiative definitions.<li>Scope Azure policies and determine compliance.|
+|:::image type="icon" source="media/azure-policy-configure.png" border="false"::: | Learn how to configure Azure Policy to implement compliance requirements.<br> In this module, you learn how to: <li>Create management groups to target policies and spending budgets.<li>Implement Azure Policy with policy and initiative definitions.<li>Scope Azure policies and determine compliance.|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-azure-policy/1-introduction)
 
 ### Manage Security operation 
 |Training  |[Manage Security operation](/training/paths/manage-security-operation/)|
 |---------|---------|
-| :::image type="icon" source="media/icon-manage-security-operation.png" border="false":::   | Once you have deployed and secured your Azure environment, learn to monitor, operate, and continuously improve the security of your solutions.<br> This learning path helps prepare you for [Exam AZ-500: Microsoft Azure Security Technologies](/certifications/exams/az-500).|
+| :::image type="icon" source="media/operation-manage-security-resized.png" border="false":::   | Once you have deployed and secured your Azure environment, learn to monitor, operate, and continuously improve the security of your solutions.<br> This learning path helps prepare you for [Exam AZ-500: Microsoft Azure Security Technologies](/certifications/exams/az-500).|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/azure-monitor/1-introduction)
 
 ### Configure Storage security  
 |Training  |[Configure Storage security](/training/modules/configure-storage-security/)|
 |---------|---------|
-|:::image type="icon" source="media/icon-configure-azure-storage-security.png" border="false"::: | Learn how to configure common Azure Storage security features like storage access signatures.<br>In this module, you learn how to:<li>Configure a shared access signature (SAS), including the uniform resource identifier (URI) and SAS parameters.<li>Configure Azure Storage encryption.<li>Implement customer-managed keys.<li>Recommend opportunities to improve Azure Storage security.|
+|:::image type="icon" source="media/storage-security-configure.png" border="false"::: | Learn how to configure common Azure Storage security features like storage access signatures.<br>In this module, you learn how to:<li>Configure a shared access signature (SAS), including the uniform resource identifier (URI) and SAS parameters.<li>Configure Azure Storage encryption.<li>Implement customer-managed keys.<li>Recommend opportunities to improve Azure Storage security.|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-storage-security/1-introduction)
 
 ### Configure Azure Firewall  
 |Training  |[Configure Azure Firewall](/training/modules/configure-azure-firewall/)|
 |---------|---------|
-|:::image type="icon" source="media/icon-configure-azure-firewall.png" border="false"::: | You will learn how to configure the Azure Firewall including firewall rules.<br>After completing this module, you will be able to:<li>Determine when to use Azure Firewall.<li>Implement Azure Firewall including firewall rules|
+|:::image type="icon" source="media/azure-firewall-configure.png" border="false"::: | You will learn how to configure the Azure Firewall including firewall rules.<br>After completing this module, you will be able to:<li>Determine when to use Azure Firewall.<li>Implement Azure Firewall including firewall rules|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-azure-firewall/1-introduction)
 

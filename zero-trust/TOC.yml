@@ -181,7 +181,7 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-- name: Zero Trust deployment plans for Microsoft Azure infrastructure
+- name: Zero Trust deployment plans for Microsoft Azure and infrastructure
   expanded: false
   items: 
     - name: Overview
@@ -191,13 +191,16 @@
       items: 
       - name: Overview
         href: azure-infrastructure-overview.md
-      - name: 1. Azure storage
+      - name: Azure storage
         href: azure-infrastructure-storage.md
-      - name: 2. Virtual machines
+      - name: Virtual machines
         href: azure-infrastructure-virtual-machines.md
-      - name: 3. Azure Spoke VNet
+      - name: Azure Spoke VNet
         href: azure-infrastructure-iaas.md
-      - name: 4. Azure hub VNet
+      - name: Azure hub VNet
+      - name: Networking for IaaS apps
+        href: azure-infrastructure-iaas.md
+      - name: Network access to IaaS apps
         href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false
@@ -253,10 +256,14 @@
         href: develop/permissions-require-admin-consent.md  
       - name: Non-user application identity
         href: develop/identity-non-user-applications.md
-      - name: Authorization best practices
-        href: develop/developer-strategy-authorization-best-practices.md
+      - name: API protection
+        href: develop/protect-api.md
       - name: Protected API example
         href: develop/protected-api-example.md  
+      - name: API call to another API
+        href: develop/api-calls-api.md
+      - name: Authorization best practices
+        href: develop/developer-strategy-authorization-best-practices.md
 - name: Resources
   expanded: false
   items:

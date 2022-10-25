@@ -14,3 +14,4 @@ ms.collection:
 
 # Apply Zero Trust principles to spoke virtual network in Azure
 
+

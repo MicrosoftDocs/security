@@ -125,6 +125,7 @@ Another way to provide permissions that can be time-bound is through Shared Acce
 - Have a revocation plan
 - Configure SAS expiration policies
 - Validate permissions
+
 - Use a user delegation SAS where possible. This SAS is signed with Azure AD credentials.
 
 ## Step 3. Logically separate or segregate critical data with network Controls

@@ -119,16 +119,6 @@ In the screen shot below, you select the encryption type on the Disks section fo
 
 :::image type="content" source="media/vm/vm-step4.png" alt-text="Screenshot of vm step 4." lightbox="media/vm/vm-step4.png":::
 
-[Enable server-side encryption of Azure Disk Storage](/azure/virtual-machines/disk-encryption)
-- FIPS 140-2 compliant transparent encryption with  [AES 256 encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
-- Greater flexibility to manage controls
-- Can be hardware (HSM) or software defined
-
-[Enable server-side encryption](/azure/virtual-machines/disks-enable-host-based-encryption-portal#prerequisites) at the host for end-to-end encryption of your VM data:
-- Encryption starts on the physical host, your virtual machine is allocated to
-- Encrypts the OS and temporary disks that are provisioned on the host; an - -d carries it over to the storage service
-- Double encryption on OS disks, Data disks, snapshots, and images
-
 ## Step 5. Control the applications installed on virtual machines
 
 It's important to control the applications that can be installed on your virtual machines:

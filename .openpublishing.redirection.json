@@ -196,12 +196,17 @@
       },      
       {
          "source_path": "compass/network-security-containment.md",
-         "redirect_url": "",
+         "redirect_url": "zero-trust/deploy/networks",
          "redirect_document_id": false
       },  
       {
          "source_path": "compass/network-containment-capabilities.md",
-         "redirect_url": "",
+         "redirect_url": "zero-trust/deploy/networks",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "compass/storage-data-encryption.md",
+         "redirect_url": "zero-trust/deploy/data",
          "redirect_document_id": false
       },
       {

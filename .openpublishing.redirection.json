@@ -186,12 +186,12 @@
 
       {
          "source_path": "compass/identity.md",
-         "redirect_url": "/azure/security/fundamentals/identity-management-best-practices",
+         "redirect_url": "/zero-trust/deploy/identity",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/identity-capabilities.md",
-         "redirect_url": "/azure/security/fundamentals/identity-management-best-practices",
+         "redirect_url": "/zero-trust/deploy/identity",
          "redirect_document_id": false
       },      
       {
@@ -211,7 +211,7 @@
       },
       {
          "source_path": "compass/applications-services.md",
-         "redirect_url": "/azure/architecture/framework/security/design-apps-services",
+         "redirect_url": "/zero-trust/deploy/applications",
          "redirect_document_id": false
       },
   ] 

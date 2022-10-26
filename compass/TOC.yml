@@ -74,7 +74,7 @@
             - name: Phase 3. Make it hard to get in 
               href: protect-against-ransomware-phase3.md
         - name: Backup and restore plan for ransomware
-          href: backup-plan-to-protect-against-ransomware.md 
+          href: /azure/security/fundamentals/backup-plan-to-protect-against-ransomware 
         - name: DART approach to ransomware
           href: incident-response-playbook-dart-ransomware-approach.md
         - name: DART ransomware case study

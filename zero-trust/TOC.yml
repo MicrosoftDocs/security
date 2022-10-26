@@ -248,6 +248,8 @@
 - name: Resources
   expanded: false
   items:
+    - name: United States memo 20-09 requirements
+      href: /azure/active-directory/standards/memo-22-09-meet-identity-requirements?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Zero Trust Essentials Video Series
       href: https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu
     - name: Resources for your Zero Trust journey

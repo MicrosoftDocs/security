@@ -3,8 +3,8 @@ title: Zero Trust Integration Overview
 description: Learn how to integrate with Microsoft technology to create Zero Trust solutions for your customers.
 ms.date: 09/17/2021
 ms.service: security
-author: knicholasa
-ms.author: nichola
+author: janicericketts
+ms.author: jricketts
 ms.topic: conceptual
 ---
 

@@ -42,7 +42,7 @@ The workshop is useful for security teams, IT teams, business leaders, and cloud
 
 Guidance on how to align security to continuously changing business priorities, technology platforms, threat landscape, and security tools. The workshop includes reference strategies and plans, lessons learned, and antipatterns/gotchas based on real world projects.
 
-The workshop videos (about 4 hours total) and slides (link to PDF) are organized into these discussions:
+The workshop videos (about 4 hours total) and [slides](https://github.com/MicrosoftDocs/security/blob/main/ciso-workshop/media/Microsoft-CISO-Workshop-Security-Strategy-and-Program.pdf) are organized into these discussions:
 
 - **[Introduction and Overview](the-ciso-workshop.md)** of the CISO Workshop
 - **[Part A - Key Context and Fundamentals](the-ciso-workshop-videos.md#part-a---key-context-and-fundamentals)**

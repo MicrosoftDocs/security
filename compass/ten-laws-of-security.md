@@ -1,11 +1,11 @@
 ---
 title: The immutable laws of security
-description: Learn how to assign Azure roles to the local administrators group of a Windows device.
+description: The ten laws of cybersecurity.
 
 ms.service: security
-
+ms.subservice: security-fundamentals
 ms.topic: conceptual
-ms.date: 10/26/2022
+ms.date: 10/27/2022
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -26,13 +26,13 @@ Because it's difficult to make predictions (especially about the future), we sus
 
 ## 10 Laws of Cybersecurity Risk
 
-1. **Security success is ruining the attacker ROI** - Security can’t achieve an absolutely secure state so deter them by disrupting and degrading their  Return on Investment (ROI). Increase the attacker’s cost and decreasing the attacker’s return for your most important assets.
+1. **Security success is ruining the attacker ROI** - Security can’t achieve an absolutely secure state so deter them by disrupting and degrading their Return on Investment (ROI). Increase the attacker’s cost and decreasing the attacker’s return for your most important assets.
 1. **Not keeping up is falling behind** – Security is a continuous journey,  you must keep moving forward because it will continually get cheaper and cheaper for attackers to successfully take control of your assets. You must continually update your security patches, security strategies, threat awareness, inventory, security tooling, security hygiene, security monitoring, permission models, platform coverage, and anything else that changes over time.
 1. **Productivity always wins** – If security isn’t easy for users, they'll work around it to get their job done. Always make sure solutions are secure **and** usable.
 1. **Attackers don't care** - Attackers will use any available method to get into your environment and increase access to your assets including compromising a networked printer, a fish tank thermometer, a cloud service, a PC, a Server, a Mac, a mobile device, influence or trick a user, exploit a configuration mistake or insecure operational process, or just ask for passwords in a phishing email. Your job is to understand and take away the easiest and cheapest options as well as the most useful ones (for example, anything that leads to administrative privileges across many systems).
 1. **Ruthless Prioritization is a survival skill** – Nobody has enough time and resources to eliminate all risks to all resources. Always start with what is most important to your organization, most interesting to attackers, and continuously update this prioritization.
-1. **Cybersecurity is a team sport** – Nobody can do it all, so always focus on the things that only you (or your organization) can do to protect your organization's mission. For things that others can do better or cheaper, have them do it (security vendors, cloud providers, community)
-1. **Your network isn’t a trustworthy as you think it is** - A security strategy that relies on passwords and trusting any intranet device is only marginally better than no security strategy at all. Attackers easily evade these defenses so the trust level of each device, user, and application must be proven and validated continuously starting with a level of zero trust
+1. **Cybersecurity is a team sport** – Nobody can do it all, so always focus on the things that only you (or your organization) can do to protect your organization's mission. For things that others can do better or cheaper, have them do it (security vendors, cloud providers, community).
+1. **Your network isn’t as trustworthy as you think it is** - A security strategy that relies on passwords and trusting any intranet device is only marginally better than no security strategy at all. Attackers easily evade these defenses so the trust level of each device, user, and application must be proven and validated continuously starting with a level of zero trust.
 1. **Isolated networks aren’t automatically secure** - While air-gapped networks can offer strong security when maintained correctly, successful examples are extremely rare because each node must be completely isolated from outside risk. If security is critical enough to place resources on an isolated network, you should invest in mitigations to address potential connectivity via methods such as USB media (for example, required for patches), bridges to intranet network, and external devices (for example, vendor laptops on a production line), and insider threats that could circumvent all technical controls.
 1. **Encryption alone isn’t a data protection solution** - Encryption protects against out of band attacks (on network packets, files, storage, etc.), but data is only as secure as the decryption key (key strength + protections from theft/copying) and other authorized means of access.
 1. **Technology doesn't solve people and process problems** - While machine learning, artificial intelligence, and other technologies offer amazing leaps forward in security (when applied correctly), cybersecurity is a human challenge and will never be solved by technology alone.

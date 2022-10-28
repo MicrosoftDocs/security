@@ -336,7 +336,7 @@ Screenshot
 
 Azure Firewall is recommended to be set up under a hub virtual network, as demonstrated in this article. Microsoft Defender for Cloud can manage multiple Azure Firewall policies centrally. In addition to "Azure Firewall policies", you will be able to manage other features related to Azure Firewall, as shown in the screenshot below.
 
-:::image type="content" source="media/hub/hub-firewall-manager.png" alt-text="Screenshot of firewall manager.":::
+:::image type="content" source="media/hub/hub-firewall-1.png" alt-text="Screenshot of firewall manager.":::
 
 For more information about Microsoft Defender for Cloud and how you can use it to get your network environment better protected against threats, see:
 [What is Microsoft Defender for Cloud? - Microsoft Defender for Cloud | Microsoft Learn](/azure/defender-for-cloud/defender-for-cloud-introduction)

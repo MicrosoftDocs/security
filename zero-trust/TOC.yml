@@ -234,7 +234,9 @@
       - name: Application permissions
         href: develop/developer-strategy-application-permissions.md
       - name: Permissions that require admin consent
-        href: develop/permissions-require-admin-consent.md  
+        href: develop/permissions-require-admin-consent.md
+      - name: Overprivileged permissions
+        href: develop/overprivileged-permissions.md
       - name: Non-user application identity
         href: develop/identity-non-user-applications.md
       - name: API protection

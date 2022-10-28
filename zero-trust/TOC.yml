@@ -249,7 +249,7 @@
   expanded: false
   items:
     - name: US Federal Zero Trust memo 22-09
-      href: https://learn.microsoft.com/azure/active-directory/standards/memo-22-09-meet-identity-requirements
+      href: /azure/active-directory/standards/memo-22-09-meet-identity-requirements
     - name: Zero Trust Essentials Video Series
       href: https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu
     - name: Resources for your Zero Trust journey

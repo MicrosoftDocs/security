@@ -189,7 +189,7 @@
     - name: Secure IaaS infrastructure in Azure
       expanded: false
       items: 
-      - name: Overview
+      - name: Overview and reference architecture
         href: azure-infrastructure-overview.md
       - name: Azure storage
         href: azure-infrastructure-storage.md
@@ -198,9 +198,6 @@
       - name: Azure Spoke VNet
         href: azure-infrastructure-iaas.md
       - name: Azure hub VNet
-      - name: Networking for IaaS apps
-        href: azure-infrastructure-iaas.md
-      - name: Network access to IaaS apps
         href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false

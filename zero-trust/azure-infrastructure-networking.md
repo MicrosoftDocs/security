@@ -71,7 +71,7 @@ In the illustration:
 Depending on your deployment, you may also note that there can be a deployment of an array for Private DNS Zones used for Private Link DNS resolution. These are used to secure PaaS resources with Private Endpoints, which will be detailed in a future section.<br>
 Note that it deploys both a VPN Gateway and an ExpressRoute Gateway. You may not need both, so feel free to delete whichever one is not needed for your scenario, or turn off during deployment.
 
-## In this article
+## What's in this article?
 
 This article provides recommendations for securing the components of a hub virtual network.
 

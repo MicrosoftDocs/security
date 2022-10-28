@@ -293,7 +293,7 @@ Azure Policies are rules written in JavaScript Object Notation (JSON) that hold 
 
 To view all the Azure policies used by Microsoft Defender for Cloud, the ones that provide network recommendations, follow the steps below:
 
-Screenshot
+:::image type="content" source="media/hub/azure-policies-mdc.jpg" alt-text="Screenshot of Azure policies by MDC." lightbox="media/hub/azure-policies-mdc.jpg":::
 
 1. Open **Microsoft Defender for Cloud**, by selecting the Microsoft Defender for Cloud icon in the left menu.
 
@@ -309,8 +309,7 @@ Screenshot
 
 Follow the steps below to view some of the network recommendations, based on the Microsoft cloud security benchmark:
 
-Screenshot
-
+:::image type="content" source="media/hub/network-rec-mdc.jpg" alt-text="Screenshot of network recommendations by MDC." lightbox="media/hub/network-rec-mdc.jpg":::
 
 1. Open **Microsoft Defender for Cloud**.
 
@@ -330,13 +329,13 @@ On the left menu, select **Security Alerts** to review alerts based on network r
 
 In the next screenshot, you may check options to get a better secure posture for your network environment by hardening your network environment in an effortless way by mapping your network environment for a better understanding of your network topology. Those recommendations are done through **Workload protection** option in the left menu.
 
-Screenshot
+:::image type="content" source="media/hub/mapping-mdc.jpg" alt-text="Screenshot of mapping azure network by mdc." lightbox="media/hub/mapping-mdc.jpg":::
 
 ### Managing Azure Firewall policies through Microsoft Defender for Cloud
 
 Azure Firewall is recommended to be set up under a hub virtual network, as demonstrated in this article. Microsoft Defender for Cloud can manage multiple Azure Firewall policies centrally. In addition to "Azure Firewall policies", you will be able to manage other features related to Azure Firewall, as shown in the screenshot below.
 
-:::image type="content" source="media/hub/hub-firewall-1.png" alt-text="Screenshot of firewall manager.":::
+:::image type="content" source="media/hub/firewall-manager-mdc.jpg" alt-text="Screenshot of Azure firewall policies through MDC.":::
 
 For more information about Microsoft Defender for Cloud and how you can use it to get your network environment better protected against threats, see:
 [What is Microsoft Defender for Cloud? - Microsoft Defender for Cloud | Microsoft Learn](/azure/defender-for-cloud/defender-for-cloud-introduction)

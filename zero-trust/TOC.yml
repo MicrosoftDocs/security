@@ -171,7 +171,6 @@
         href: /microsoft-365/solutions/information-protection-deploy-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Investigate
         href: /microsoft-365/solutions/information-protection-deploy-monitor-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-
     - name: Integrate SaaS apps for Zero Trust with Microsoft 365 
       items:
       - name: Overview
@@ -182,7 +181,24 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-            
+- name: Zero Trust deployment plans for Microsoft Azure and infrastructure
+  expanded: false
+  items: 
+    - name: Overview
+      href: azure-infrastructure-deployment-plans.md
+    - name: Secure IaaS infrastructure in Azure
+      expanded: false
+      items: 
+      - name: Overview and reference architecture
+        href: azure-infrastructure-overview.md
+      - name: Azure storage
+        href: azure-infrastructure-storage.md
+      - name: Virtual machines
+        href: azure-infrastructure-virtual-machines.md
+      - name: Azure Spoke VNet
+        href: azure-infrastructure-iaas.md
+      - name: Azure hub VNet
+        href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false
   items: 
@@ -237,10 +253,14 @@
         href: develop/permissions-require-admin-consent.md  
       - name: Non-user application identity
         href: develop/identity-non-user-applications.md
-      - name: Authorization best practices
-        href: develop/developer-strategy-authorization-best-practices.md
+      - name: API protection
+        href: develop/protect-api.md
       - name: Protected API example
         href: develop/protected-api-example.md  
+      - name: API call to another API
+        href: develop/api-calls-api.md
+      - name: Authorization best practices
+        href: develop/developer-strategy-authorization-best-practices.md
 - name: Resources
   expanded: false
   items:

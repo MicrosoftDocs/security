@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 09/15/2022
+ms.date: 10/10/2022
 ms.custom: template-concept
 # Customer intent: As a developer creating applications in the Microsoft identity platform, I want to know what my IT Pros need from me, and what I need from them, so that I can streamline my zero-trust development workflow.
 ---
@@ -27,30 +27,31 @@ The following table summarizes the decisions and tasks required for developer an
 :::row:::
    :::column span="":::
       **Developer**
-      - [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
-      - [Register an application with Azure AD and create a service principal](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal)
-      - [Define supported account types](identity-supported-account-types.md)
-      - Is the app working on behalf of [itself](identity-non-user-applications.md) or the user
-      - [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
+      - [Register app](/azure/active-directory/develop/quickstart-register-app) in Microsoft identity platform
+      - [Register app and create service principal](/azure/active-directory/develop/howto-create-service-principal-portal#register-an-application-with-azure-ad-and-create-a-service-principal) in Azure AD
+      - Define [supported account types](identity-supported-account-types.md)
+      - Determine if app works on behalf of [itself](identity-non-user-applications.md) or user
+      - Define [resources](acquire-application-authorization-to-access-resources.md) required and how/when to request permission
    :::column-end:::
    :::column span="":::
       **IT Pro Administrator**
-      - Who can register apps in a tenant
-      - Application user, group, and role assignments
-      - Permissions granted to an application
-      - Policies including conditional access policy and token lifespan
-      - Alternate local settings for an application
+      - Configure who can register apps in tenant
+      - Assign application users, groups, and roles
+      - Grant permissions to applications
+      - Define policies (including conditional access policy and token lifespan)
+      - Configure alternate local settings for applications
    :::column-end:::
 :::row-end:::
 
 ## Zero Trust considerations
 
-When entities (individuals, applications, devices) need to access resources in your application, you'll work with IT Pros who have administrator privileges to look at Zero Trust and security policy enforcement options and decide which policies to implement and enforce for access. Microsoft's policy enforcement engine needs to be in touch with things like threat intelligence, signal processing, and the policies that are already in place for the organization. Every time an entity needs to access a resource, it will go through the policy enforcement engine.
+When entities (individuals, applications, devices) need to access resources in your application, you'll work with IT Pros who have administrator privileges to look at Zero Trust and security policy enforcement options. Together, you'll decide which access policies to implement and enforce. Microsoft's policy enforcement engine needs to be in touch with things like threat intelligence, signal processing, and the policies that are already in place for the organization. Every time an entity needs to access a resource, it will go through the policy enforcement engine.
 
 IT Pros determine which conditional access policies will apply to your application (SAML) or the resources your application is accessing (OAuth 2.0). They can apply conditional access policies to Security Assertions Markup Language (SAML) apps at authentication. For OAuth 2.0 applications, they can apply policies when an application attempts to access a resource.
 
 ## Next steps
 
 * [What do we mean by Zero Trust compliance?](identity-zero-trust-compliance.md) provides an overview of application security from a developer's perspective to address the guiding principles of Zero Trust.
-* Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle so that you can create secure applications that are [Zero Trust compliant](identity-zero-trust-compliance.md).
+* Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle to create secure applications.
 * [Using standards-based development methodologies](identity-standards-based-development-methodologies.md) provides an overview of supported standards (OAuth 2.0, OpenID Connect, SAML, WS-Federation, and SCIM) and the benefits of using them with MSAL and the Microsoft identity platform.
+* [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.

@@ -111,12 +111,12 @@ Most significant are the following TLS inspection options:
 
 The Inbound TLS inspection for resources should be used whenever possible. As Application Gateway provides HTTP and HTTPS traffic only, for some scenarios it can't be used - such as SQL or RDP traffic. Other services often have their own threat protection options that should be used to provide _verify explicitly_ controls for those services. You can review [Security baselines for Azure overview | Microsoft Learn](/security/benchmark/azure/security-baselines-overview) to understand the threat protection options for these services.
 
-Azure Application Gateway is not recommended to be placed in the hub, and should instead reside in the spoke network or a dedicated virtual network.  See [Apply Zero Trust principles to spoke virtual network in Azure](./azure-infrastructure-iaas.md) for guidance to the spoke network, or [Zero-trust network for web applications](https://learn.microsoft.com/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) for additional general guidance.
+Azure Application Gateway is not recommended to be placed in the hub, and should instead reside in the spoke network or a dedicated virtual network.  See [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md) for guidance to the spoke network, or [Zero-trust network for web applications](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) for additional general guidance.
 
 These scenarios have specific certificate considerations. You can read more about them in the article on [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).<br>
 Without TLS inspection, Azure Firewall has no visibility into the data that flows in the encrypted TLS tunnel, and so its protection is more limited.
 
-For example, Azure Virtual Desktop does [not support SSL termination](https://learn.microsoft.com/azure/virtual-desktop/proxy-server-support#dont-use-ssl-termination-on-the-proxy-server).  You should review your specific workloads to understand how TLS inspection can be provided.
+For example, Azure Virtual Desktop does not support [SSL termination](/azure/virtual-desktop/proxy-server-support#dont-use-ssl-termination-on-the-proxy-server). You should review your specific workloads to understand how TLS inspection can be provided.
 
 In addition to the customer defined allow/deny rules, the Azure Firewall is still able to apply [threat intelligence-based filtering](/azure/firewall/threat-intel). Threat intelligence-based filtering uses known-bad Ips and domains to identify traffic that poses a risk. This filtering occurs prior to any other rules, which means even if the access was allowed by your defined rules, the traffic can be stopped.
 

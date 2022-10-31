@@ -4,8 +4,8 @@
 # Mandatory fields.
 title: Failure Modes in Machine Learning
 description: Machine Learning Threat Taxonomy
-author: AMarshal
-ms.author: AMarshal
+author: dansimp
+ms.author: dansimp
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: security
@@ -13,7 +13,7 @@ ms.prod: security
 
 # Failure Modes in Machine Learning
 
-<table style="text-align:left" border="0">
+<table border="0">
   <tr>
     <th>Microsoft Corporation</th>
     <th>Berkman Klein Center for Internet and Society at Harvard University</th>
@@ -249,7 +249,7 @@ fields:
 ## Details on Intentionally-Motivated Failures
 
 <p>
-<table  width="100%"  border="1"  style="text-align:center" margin="0 auto" padding="0">
+<table  width="100%"  border="1">
   <tr>
     <th>Scenario #</th>
     <th>Attack Class</th>
@@ -355,7 +355,7 @@ fields:
 ## Details on Unintended Failures
 <p>
 
-<table   width="100%"  border="1"  style="text-align:center" margin="0 auto" padding="0">
+<table   width="100%"  border="1">
   <tr>
     <th>Scenario #</th>
     <th>Attack Class</th>

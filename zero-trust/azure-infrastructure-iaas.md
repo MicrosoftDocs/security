@@ -51,7 +51,7 @@ In the illustration, all components of the spoke virtual network are contained i
 
 ## What's in this article
 
-Zero trust principles are applied across the architecture, from the tenant and directory level down to the assignment of virtual machines to application security groups. The following table describes the recommendations for securing this architecture.
+Zero Trust principles are applied across the architecture, from the tenant and directory level down to the assignment of virtual machines to application security groups. The following table describes the recommendations for securing this architecture.
 
 | Step | Task |
 | --- | --- |
@@ -59,7 +59,7 @@ Zero trust principles are applied across the architecture, from the tenant and d
 | 2 | Isolate infrastructure into its own resource group. |
 | 3 | Create a network security group for each subnet. |
 | 4 | Create an application security group for each virtual machine role. |
-| 5 | Secure traffic and resources within the virtual network: <li> Deploy baseline deny rules for network security groups <li>Deploy application specific rules for application security groups <li> Plan for management traffic into the virtual network <li> Deploy network security group flow logging. |
+| 5 | Secure traffic and resources within the virtual network: <li> Deploy baseline deny rules for network security groups <li>Deploy application specific rules for application security groups <li> Plan for management traffic into the virtual network <li> Deploy network security group flow logging |
 | 6 | Secure access to the virtual network and application. |
 | 7 | Enable advanced threat detection, alerting, and protection. |
 
@@ -67,7 +67,7 @@ Zero trust principles are applied across the architecture, from the tenant and d
 
 You can leverage [Azure AD RBAC built-in roles](/azure/role-based-access-control/built-in-roles#network-contributor) for network contributors. However, another approach is to leverage custom roles. Spoke network managers don't need full access to networking resources granted by the Azure AD RBAC Network Contributor role, but need more permissions than other common roles. A custom role can be used to scope access to just what is needed.
 
-One easy way to implement this is to deploy the custom roles found in the Azure Landing Zone Reference Architecture: [ALZ-Bicep/infra-as-code/bicep/modules/customRoleDefinitions at main · Azure/ALZ-Bicep (github.com)](https://github.com/Azure/ALZ-Bicep/tree/main/infra-as-code/bicep/modules/customRoleDefinitions).
+One easy way to implement this is to deploy the custom roles found in the [Azure Landing Zone Reference Architecture](https://github.com/Azure/ALZ-Bicep/tree/main/infra-as-code/bicep/modules/customRoleDefinitions).
 
 The specific role that can be used is the **Network Management** custom role has the following permissions:
 
@@ -99,7 +99,7 @@ If you are not using policies that enforce log forwarding on resource groups, co
 Navigate to **Activity log -\> Export Activity Logs** and then select **+ Add diagnostic setting**.<br>
 On the Diagnostic setting screen, select all log categories (especially Security) and send them to the appropriate logging sources, such as a Log Analytics workspace for observability, or a storage account for long term storage.
 
-## Subscription Democratization
+### Subscription Democratization
 
 While not directly related to networking, you should plan your subscription RBAC in a similar way. In addition to isolating resources logically by resource group, you should also isolate the subscription based on business areas and portfolio owners. The subscription as a management unit should be narrowly scoped.<br>You can read more about subscription democratization here: [Azure landing zone design principles - Cloud Adoption Framework | Microsoft Learn](/azure/cloud-adoption-framework/ready/landing-zone/design-principles#subscription-democratization)
 
@@ -153,7 +153,7 @@ This section covers the following recommendations:
 
 ### Deploy baseline deny rules for network security groups
 
-A key element of zero trust is using the least level of access needed. By default, network security groups have allowed rules. By adding a baseline of deny rules, you can enforce the least level of access.
+A key element of Zero Trust is using the least level of access needed. By default, network security groups have allowed rules. By adding a baseline of deny rules, you can enforce the least level of access.
 
 Once provisioned, create a deny all rule in each of the inbound and outbound rules, with a priority of 4096. This is the last custom priority available, which means you still have the remaining scope to configure allow actions.
 

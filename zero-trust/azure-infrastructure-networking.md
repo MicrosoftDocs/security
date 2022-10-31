@@ -107,12 +107,16 @@ Most significant are the following TLS inspection options:
 
 - **Outbound TLS Inspection** which protects against malicious traffic that is sent from an internal client to the internet. This helps identify when a client has been breached, and if it is trying to ship data outside of your network or establish a connection to a remote controller.
 - **East-West TLS Inspection** which protects against malicious traffic sent from within Azure to other parts of Azure or to your non-Azure networks. This helps identify attempts for a breach to expand and spread from one blast radius to another.
-- **Inbound TLS Inspection**  which protects resources in Azure from malicious requests that arrive from outside the Azure network. Azure Application Gateway is needed to make this available.
+- **Inbound TLS Inspection**  which protects resources in Azure from malicious requests that arrive from outside the Azure network. Azure Application Gateway with Web Application Firewall is needed to make this available.
 
 The Inbound TLS inspection for resources should be used whenever possible. As Application Gateway provides HTTP and HTTPS traffic only, for some scenarios it can't be used - such as SQL or RDP traffic. Other services often have their own threat protection options that should be used to provide _verify explicitly_ controls for those services. You can review [Security baselines for Azure overview | Microsoft Learn](/security/benchmark/azure/security-baselines-overview) to understand the threat protection options for these services.
 
+Azure Application Gateway is not recommended to be placed in the hub, and should instead reside in the spoke network or a dedicated virtual network.  See [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md) for guidance to the spoke network, or [Zero-trust network for web applications](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) for additional general guidance.
+
 These scenarios have specific certificate considerations. You can read more about them in the article on [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).<br>
 Without TLS inspection, Azure Firewall has no visibility into the data that flows in the encrypted TLS tunnel, and so its protection is more limited.
+
+For example, Azure Virtual Desktop does not support [SSL termination](/azure/virtual-desktop/proxy-server-support#dont-use-ssl-termination-on-the-proxy-server). You should review your specific workloads to understand how TLS inspection can be provided.
 
 In addition to the customer defined allow/deny rules, the Azure Firewall is still able to apply [threat intelligence-based filtering](/azure/firewall/threat-intel). Threat intelligence-based filtering uses known-bad Ips and domains to identify traffic that poses a risk. This filtering occurs prior to any other rules, which means even if the access was allowed by your defined rules, the traffic can be stopped.
 
@@ -149,6 +153,15 @@ To configure Azure Firewall Premium to a Zero Trust configuration, make the foll
     1. Then select **Apply**.
 
 :::image type="content" source="media/hub/hub-idps.png" alt-text="Screenshot of enable IDPS." lightbox="media/hub/hub-idps.png":::
+
+4. Next, you will need to create an application rule for the traffic.
+
+    1. In the Firewall Policy, navigate to **Application Rules**.
+    1. Select **Add a rule collection**.
+    1. Create an application rule with the source of your Application Gateway subnet, and a destination of the domain name of the web app that is being protected.
+    1. Ensure that TLS inspection is enabled.
+
+![Placeholder diagram for Adding Rule](./media/ApplicationRuleExample.gif)
 
 ### Additional configuration
 
@@ -190,13 +203,24 @@ As there are no "Zero Trust Specific" configurations for DDoS Protection Standar
 - [Configure Diagnostic Logging](/azure/ddos-protection/diagnostic-logging)
 - [Configure Telemetry](/azure/ddos-protection/telemetry)
 
+It is important to know that in the current incarnation, you must apply Azure DDoS protection per Virtual Network.  Additional instructions can be found in this [DDoS Quickstart](https://learn.microsoft.com/azure/ddos-protection/manage-ddos-protection)
+
+![DDoS Configuration Placeholder](./media/DDoS%20Placeholder.jpg)
+
+In addition, the following public IPs should be protected:
+
+- Azure Firewall Public IPs
+- Azure Bastion Public IPs
+- Azure Network Gateway Public IPs
+- Application Gateway Public IPs
+
 ## Step 3. Configure network gateway routing to the firewall
 
 This configuration contributes to Zero Trust in the following ways.
 
 |Zero Trust Principle | Met by |
 | --- | --- |
-| Verify explicitly  | By inspecting traffic flowing to and from the VPN, you are ensuring that only verified traffic is able to pass through the boundary.  |
+| Verify explicitly  | By inspecting traffic flowing to and from the network gateway (VPN or ExpressRoute), you are ensuring that only verified traffic is able to pass through the boundary.  |
 | Use least privileged access  | Only resources that need connectivity to the on-prem environment will have that access.  |
 | Assume breach  | A breach in one network segment will not be able to cross over to on-prem resources.  |
 
@@ -216,9 +240,9 @@ By routing the traffic to the firewall, you increase the inspection and as a res
 
 There are two main ways to ensure that gateway traffic is being routed to the Azure firewall:
 
-- Deploy the Azure VPN Gateway in a dedicated virtual network (often called a Transit or Gateway virtual network), peer it to the hub network, and then create a broad routing rule that covers your planned Azure networking address spaces routing to the firewall.
+- Deploy the Azure Network Gateway (either for VPN or ExpressRoute connections) in a dedicated virtual network (often called a Transit or Gateway virtual network), peer it to the hub network, and then create a broad routing rule that covers your planned Azure networking address spaces routing to the firewall.
 
-- Deploy the Azure VPN Gateway in the hub network, configure routing on the Gateway subnet, and configure routing on the spoke subnets.
+- Deploy the Azure Network Gateway in the hub network, configure routing on the Gateway subnet, and configure routing on the spoke subnets.
 
 This guide details the second option as it is more compatible with the reference architectures discussed above.
 

@@ -111,7 +111,7 @@ Most significant are the following TLS inspection options:
 
 The Inbound TLS inspection for resources should be used whenever possible. As Application Gateway provides HTTP and HTTPS traffic only, for some scenarios it can't be used - such as SQL or RDP traffic. Other services often have their own threat protection options that should be used to provide _verify explicitly_ controls for those services. You can review [Security baselines for Azure overview | Microsoft Learn](/security/benchmark/azure/security-baselines-overview) to understand the threat protection options for these services.
 
-Azure Application Gateway is not recommended to be placed in the hub, and should instead reside in the spoke network or a dedicated virtual network.  See [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md) for guidance to the spoke network, or [Zero-trust network for web applications](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) for additional general guidance.
+Azure Application Gateway is not recommended to be placed in the hub, and should instead reside in the spoke network or a dedicated virtual network. See [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md) for guidance to the spoke network, or [Zero-trust network for web applications](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) for additional general guidance.
 
 These scenarios have specific certificate considerations. You can read more about them in the article on [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).<br>
 Without TLS inspection, Azure Firewall has no visibility into the data that flows in the encrypted TLS tunnel, and so its protection is more limited.
@@ -161,7 +161,7 @@ To configure Azure Firewall Premium to a Zero Trust configuration, make the foll
     1. Create an application rule with the source of your Application Gateway subnet, and a destination of the domain name of the web app that is being protected.
     1. Ensure that TLS inspection is enabled.
 
-![Placeholder diagram for Adding Rule](./media/ApplicationRuleExample.gif)
+    ![Placeholder diagram for Adding Rule](./media/ApplicationRuleExample.gif)
 
 ### Additional configuration
 
@@ -203,7 +203,7 @@ As there are no "Zero Trust Specific" configurations for DDoS Protection Standar
 - [Configure Diagnostic Logging](/azure/ddos-protection/diagnostic-logging)
 - [Configure Telemetry](/azure/ddos-protection/telemetry)
 
-It is important to know that in the current incarnation, you must apply Azure DDoS protection per Virtual Network.  Additional instructions can be found in this [DDoS Quickstart](https://learn.microsoft.com/azure/ddos-protection/manage-ddos-protection)
+It is important to know that in the current incarnation, you must apply Azure DDoS protection per Virtual Network. Additional instructions can be found in [DDoS Quickstart.](/azure/ddos-protection/manage-ddos-protection)
 
 ![DDoS Configuration Placeholder](./media/DDoS%20Placeholder.jpg)
 

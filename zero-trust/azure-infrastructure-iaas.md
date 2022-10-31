@@ -49,7 +49,7 @@ In the illustration, all components of the spoke virtual network are contained i
 - Three network security groups, one for each application tier
 - Three application security groups, one for each tier
 
-# What's in this article
+## What's in this article
 
 Zero trust principles are applied across the architecture, from the tenant and directory level down to the assignment of virtual machines to application security groups. The following table describes the recommendations for securing this architecture.
 
@@ -307,8 +307,6 @@ With these three rules, you have defined the Zero Trust connectivity pattern for
 In addition to the application specific traffic, you need to plan for management traffic. However, management traffic generally originates outside of the spoke virtual network. Additional rules are required. First, you will need to understand the specific ports and sources that management traffic will be coming from. Generally, all management traffic should flow from a firewall or other NVA located in the hub network for the spoke.<br> See the full reference architecture in the [Overview – Apply Zero Trust principles to Azure infrastructure](azure-infrastructure-overview.md) article.
 
 This will vary based on your specific management needs. However, rules on the firewall appliances and rules on the NSG should be used to explicitly allow connections on both the platform networking side and the workload networking side.
-
-Some specific management rules for Azure virtual machines may be whitelisted in the future releases.
 
 ### Deploy network security group flow logging
 

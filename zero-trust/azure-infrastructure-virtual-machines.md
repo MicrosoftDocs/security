@@ -95,7 +95,7 @@ Follow  the steps given below:
 
 Enhanced deployment of virtual machines allows you to select security type and use Secure boot and vTPM. See callout #2 in the screen capture below.
 
-:::image type="content" source="media/vm/vm-step3.png" alt-text="Screenshot of vm step 3." lightbox="media/vm/vm-step3.png":::
+:::image type="content" source="media/vm/vm-create-vm-step3.png" alt-text="Screenshot of create vm step3." lightbox="media/vm/vm-create-vm-step3.png":::
 
 ## Step 4. Enable customer-managed keys and double encryption
 

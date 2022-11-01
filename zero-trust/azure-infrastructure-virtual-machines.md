@@ -236,6 +236,35 @@ Microsoft Defender for Servers includes the following:
 - [Adaptive application controls in Defender for Cloud](/azure/defender-for-cloud/adaptive-application-controls) provides an automated solution for creating and defining allow list for known safe applications and generates security alerts if a new application runs other than those you define as safe for use.
 - [Adaptive network hardening in Defender for Cloud](/azure/defender-for-cloud/adaptive-network-hardening?WT.mc_id=Portal-Microsoft_Azure_Security) uses machine learning algorithms that calculate your current traffic, threat intelligence, indicators of compromise, and known trusted configurations to provide recommendations for hardening your Network Security Groups.
 
-## What's next?
+## Recommended Training
 
-If you are creating an app in Azure using virtual machines, see [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md).
+https://learn.microsoft.com/en-us/training/modules/secure-your-azure-virtual-machine-disks/
+https://learn.microsoft.com/en-us/training/paths/implement-host-security/
+
+## Next Steps
+
+- [Apply Zero Trust principles to Storage in Azure](azure-infrastructure-storage.md)
+- [Apply Zero Trust principles to Spoke Virtual Network in Azure](azure-infrastructure-iaas.md)
+- [Apply Zero Trust principles to Hub Virtual network in Azure](azure-infrastructure-networking.md)
+  
+## References 
+- [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal)
+- [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot)
+- [Overview of vTPM](/windows/security/information-protection/tpm/trusted-platform-module-overview)
+- [attestation](/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)
+- [Enable server-side encryption of Azure Disk Storage](/azure/virtual-machines/disk-encryption)
+- [AES 256 encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+- [Azure Bastion](/azure/bastion/bastion-overview#key-features)
+- [Azure multifactor authentication for Azure Virtual Desktop](/azure/virtual-desktop/set-up-mfa)
+- [Windows Servers 2019 or newer](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows)
+- [Log in to a Linux VM with Azure Active Directory credentials](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux)
+- [Common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies)
+- [Privileged Access Workstations (PAW)](/security/compass/privileged-access-devices)
+- [Privileged access deployment](/security/compass/privileged-access-deployment)
+- [Microsoft Antimalware](/azure/security/fundamentals/antimalware)
+- [Virtual Machine Agent](/azure/virtual-machines/extensions/agent-windows)
+- [Plan deployment for updating Windows VMs in Azure - Azure Example Scenarios.](/azure/architecture/example-scenario/wsus/)
+- [Use Azure Private Link to securely connect networks to Azure Automation.](/azure/automation/how-to/private-link-security)
+- [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction)
+- [Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint?rtc=1)
+- [Defender for Cloud's integrated vulnerability assessment](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management)

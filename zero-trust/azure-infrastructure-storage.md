@@ -148,3 +148,37 @@ For more information on the architecture for threat protection across the refere
 Once enabled, Defender for Storage will notify you of security alerts and recommendations for improving the security posture of your Azure storage accounts.
 
 :::image type="content" source="media/secure-storage/storage-6.png" alt-text="Screenshot of Security Alert." lightbox="media/secure-storage/storage-6.png":::
+
+## Recommended Training
+
+### Configure Storage Security  
+|Training  |[Configure Storage Security](/training/modules/configure-storage-security/)|
+|---------|---------|
+|:::image type="icon" source="media/icon-configure-azure-storage-security.png" border="false"::: | Learn how to configure common Azure Storage security features like storage access signatures.<br>In this module, you learn how to:<li>Configure a shared access signature (SAS), including the uniform resource identifier (URI) and SAS parameters.<li>Configure Azure Storage encryption.<li>Implement customer-managed keys.<li>Recommend opportunities to improve Azure Storage security.|
+> [!div class="nextstepaction"]
+> [Start >](/training/modules/configure-storage-security/1-introduction)
+
+For more training on Security on Azure, see the entire Microsoft catalog:<br> 
+[Browse all - Training | Microsoft Learn](/training/browse)
+
+## Next Steps
+- [Apply Zero Trust principles to Virtual Machines in Azure](azure-infrastructure-virtual-machines.md)
+- [Apply Zero Trust principles to Spoke Virtual Networks in Azure](azure-infrastructure-iaas.md)
+- [Apply Zero Trust principles to Hub Virtual Networks in Azure](azure-infrastructure-networking.md)
+  
+## References 
+
+Refer to the links below to learn about the various services and technologies mentioned in this article.
+
+- [Secure transfer for Azure Storage Acounts](/azure/storage/common/storage-require-secure-transfer)
+- [Prevent anonymous public read access to containers and blobs](/azure/storage/blobs/anonymous-read-access-prevent)
+- [Prevent Shared Key authorization for an Azure Storage Account](/azure/storage/common/shared-key-authorization-prevent)
+- [Network security for Storage Accounts](/azure/storage/common/storage-network-security)
+- [Private Endpoints and Private Link for Storage Accounts](/azure/storage/common/storage-private-endpoints)
+- [Storage Service Encryption (SSE)](/azure/security/fundamentals/encryption-atrest) 
+- [Role-based Access Control for Storage Accounts](/azure/storage/blobs/authorize-access-azure-active-directory)
+- [Azure Blob Backup](/azure/backup/blob-backup-configure-manage)
+- [Best Practices when using SAS](/azure/storage/common/storage-sas-overview#best-practices-when-using-sas)
+- [Review of Private Endpoints](/azure/private-link/private-endpoint-overview)
+- [Review of Service Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview)
+- [Microsoft Defender for Storage](/azure/storage/common/azure-defender-storage-configure?tabs=azure-security-center)

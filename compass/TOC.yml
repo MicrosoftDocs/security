@@ -9,6 +9,8 @@
     #     href: new-in-microsoft-security-compass.md
         - name: Progress and role tracking worksheets
           href: progress-and-role-tracking-worksheets.md
+        - name: The immutable laws of security
+          href: ten-laws-of-security.md
     - name: Governance, risk, and compliance
       items:
         - name: Videos and slides

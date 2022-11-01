@@ -32,7 +32,7 @@
       href: data-compliance-gov-ransomware-recovery-readiness.md
     - name: Data protection
       href: data-compliance-gov-data.md
-- name: Zero Trust deployment plans for Microsoft 365
+- name: Zero Trust deployment plans with Microsoft 365
   expanded: false
   items:
     - name: Overview

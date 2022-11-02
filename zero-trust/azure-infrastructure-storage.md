@@ -1,10 +1,10 @@
 ---
 title: Apply Zero Trust principles to Storage in Azure
 description: Learn how to secure Azure storage with Zero Trust.  
-ms.date: 
+ms.date: 10/20/2022
 ms.service: security
-author: brendacarter
-ms.author: bcarter
+author: sikovatc
+ms.author: sikovatc
 ms.topic: conceptual
 ms.collection: 
   - msftsolution-accesscontrol
@@ -149,12 +149,12 @@ Once enabled, Defender for Storage will notify you of security alerts and recomm
 
 :::image type="content" source="media/secure-storage/storage-6.png" alt-text="Screenshot of Security Alert." lightbox="media/secure-storage/storage-6.png":::
 
-## Recommended Training
+## Recommended training
 
-### Configure Storage Security  
-|Training  |[Configure Storage Security](/training/modules/configure-storage-security/)|
+### Configure Storage security  
+|Training  |[Configure Storage security](/training/modules/configure-storage-security/)|
 |---------|---------|
-|:::image type="icon" source="media/icon-configure-azure-storage-security.png" border="false"::: | Learn how to configure common Azure Storage security features like storage access signatures.<br>In this module, you learn how to:<li>Configure a shared access signature (SAS), including the uniform resource identifier (URI) and SAS parameters.<li>Configure Azure Storage encryption.<li>Implement customer-managed keys.<li>Recommend opportunities to improve Azure Storage security.|
+|:::image type="icon" source="media/storage-security-configure.png" border="false"::: | Learn how to configure common Azure Storage security features like storage access signatures.<br>In this module, you learn how to:<li>Configure a shared access signature (SAS), including the uniform resource identifier (URI) and SAS parameters.<li>Configure Azure Storage encryption.<li>Implement customer-managed keys.<li>Recommend opportunities to improve Azure Storage security.|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-storage-security/1-introduction)
 
@@ -170,7 +170,7 @@ For more training on Security on Azure, see the entire Microsoft catalog:<br>
 
 Refer to the links below to learn about the various services and technologies mentioned in this article.
 
-- [Secure transfer for Azure Storage Acounts](/azure/storage/common/storage-require-secure-transfer)
+- [Secure transfer for Azure Storage Accounts](/azure/storage/common/storage-require-secure-transfer)
 - [Prevent anonymous public read access to containers and blobs](/azure/storage/blobs/anonymous-read-access-prevent)
 - [Prevent Shared Key authorization for an Azure Storage Account](/azure/storage/common/shared-key-authorization-prevent)
 - [Network security for Storage Accounts](/azure/storage/common/storage-network-security)

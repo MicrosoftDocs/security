@@ -1,10 +1,10 @@
 ---
 title: Apply Zero Trust principles to virtual machines in Azure 
 description: Learn how to secure virtual machines in Azure with Zero Trust.  
-ms.date: 
+ms.date: 10/20/2022
 ms.service: security
-author: brendacarter
-ms.author: bcarter
+author: sikovatc
+ms.author: sikovatc
 ms.topic: conceptual
 ms.collection: 
   - msftsolution-accesscontrol
@@ -55,7 +55,7 @@ The following table describes the tasks that are numbered in the illustration.
 
 Begin by isolating virtual machines within a dedicated resource group. You can isolate virtual machines into different resource groups based on purpose, data classification, and governance requirements, such as the need to control permissions and monitoring.
 
-Using dedicated resource groups allows you to set policies and permissions that apply to all of the virtual machines within the resource group. This is also where you use Role Based Access Control (RBAC) to create least privilege access to the Azure resources contained in the resource group.
+Using dedicated resource groups allows you to set policies and permissions that apply to all the virtual machines within the resource group. This is also where you use Role Based Access Control (RBAC) to create least privilege access to the Azure resources contained in the resource group.
 
 For more information on creating and managing resource groups, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
@@ -82,7 +82,7 @@ To extend your realm of control beyond the system and allow your Azure AD tenant
 :::image type="content" source="media/vm/vm-create-id-azuread.png" alt-text="Screenshot of create vm identity azure ad." lightbox="media/vm/vm-create-id-azuread.png":::
 
 > [!NOTE]
-> This feature is only available for Azure Virtual Desktop, Windows SVR 2019, and Windows 10, and with Linux Distros using certificate-based access.
+> This feature is only available for Azure Virtual Desktop, Windows SVR 2019, Windows 10, and Linux Distros using certificate-based access.
 
 ## Step 3. Secure virtual machine boot components
 
@@ -110,12 +110,12 @@ For information on how to configure a customer-managed encryption key with Azure
 
 [Enable server-side encryption](/azure/virtual-machines/disks-enable-host-based-encryption-portal#prerequisites) at the host for end-to-end encryption of your VM data
 - Encryption starts on the physical host, your VM is allocated to
-- Encrypts the OS and Temporary disks that are provisioned on the host; an --d carries it over to the storage service
+- Encrypts the OS and Temporary disks that are provisioned on the host; a ```--d``` carries it over to the storage service
 - Double encryption on OS disks, Data disks, snapshots, and images
 
 After this is complete, you can begin using your customer-managed encryption key to encrypt the disks within your virtual machine.
 
-In the screen shot below, you select the encryption type on the Disks section for the virtual machine configuration. Select "Double encryption with platform-managed and customer-managed keys."
+In the screen shot below, you select the encryption type on the Disks section for the virtual machine configuration. Select **Double encryption with platform-managed and customer-managed keys.**
 
 :::image type="content" source="media/vm/vm-step4.png" alt-text="Screenshot of vm step 4." lightbox="media/vm/vm-step4.png":::
 
@@ -123,9 +123,9 @@ In the screen shot below, you select the encryption type on the Disks section fo
 
 It's important to control the applications that can be installed on your virtual machines:
 - Browser extensions (APIs) are difficult to secure which can lead to malicious URL delivery.
-- Unsanctioned apps can go unpatched as they are shadow IT objects (the IT teams are not prepared or have no knowledge these are installed).
+- Unsanctioned apps can go unpatched as they are shadow IT objects (the IT teams are not prepared or have no knowledge that these are installed).
 
-You can use the VM Applications feature to control the applications that are installed on virtual machines. With this feature, you select which VM applications to install. This feature leverages the Azure Compute Gallery to simplify management of applications for virtual machines. When used together with RBAC, you can ensure only trusted applications are available for users.
+You can use the VM Applications feature to control the applications that are installed on virtual machines. With this feature, you select which VM applications to install. This feature leverages the Azure Compute Gallery to simplify management of applications for virtual machines. When used together with RBAC, you can ensure that only trusted applications are available for users.
 
 :::image type="content" source="media/vm/vm-step5.png" alt-text="Screenshot of vm step5." lightbox="media/vm/vm-step5.png":::
 
@@ -236,10 +236,10 @@ Microsoft Defender for Servers includes the following:
 - [Adaptive application controls in Defender for Cloud](/azure/defender-for-cloud/adaptive-application-controls) provides an automated solution for creating and defining allow list for known safe applications and generates security alerts if a new application runs other than those you define as safe for use.
 - [Adaptive network hardening in Defender for Cloud](/azure/defender-for-cloud/adaptive-network-hardening?WT.mc_id=Portal-Microsoft_Azure_Security) uses machine learning algorithms that calculate your current traffic, threat intelligence, indicators of compromise, and known trusted configurations to provide recommendations for hardening your Network Security Groups.
 
-## Recommended Training
+## Recommended training
 
-https://learn.microsoft.com/en-us/training/modules/secure-your-azure-virtual-machine-disks/
-https://learn.microsoft.com/en-us/training/paths/implement-host-security/
+- [Secure your Azure virtual machine disks](/training/modules/secure-your-azure-virtual-machine-disks)
+- [Implement virtual machine host security in Azure](/training/paths/implement-host-security)
 
 ## Next Steps
 

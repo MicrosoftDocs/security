@@ -3,8 +3,8 @@ title: Apply Zero Trust principles to a hub virtual network in Azure
 description: Learn how to secure a hub virtual network with Zero Trust for access to Azure infrastructure.  
 ms.date: 10/27/2022
 ms.service: security
-author: brendacarter
-ms.author: bcarter
+author: brsteph
+ms.author: bstephenson
 ms.topic: conceptual
 ms.collection: 
   - msftsolution-accesscontrol
@@ -18,7 +18,7 @@ The best way to deploy a hub network for Zero Trust is to leverage the Azure Lan
 
 This article provides steps for how to take an existing hub network and ensure you are ready for a Zero Trust methodology. It assumes that you have used the the ALZ-Bicep [hubNetworking](https://github.com/Azure/ALZ-Bicep/tree/main/infra-as-code/bicep/modules/hubNetworking) module to rapidly deploy a hub network, or have deployed some other hub network with similar resources.
 
-Using a separate connectivity hub connected to isolated workplace spokes is an anchor pattern in Azure secure networking, and helps support the Zero Trust principles in play.<br>
+Using a separate connectivity hub connected to isolated workplace spokes is an anchor pattern in Azure secure networking and helps support the Zero Trust principles in play.<br>
 This article is a part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes a hub virtual network to support an IaaS workload. For more information, see [Overview – Apply Zero Trust principles to Azure infrastructure](azure-infrastructure-overview.md).
 
 This article describes how to deploy a hub network for Zero Trust by mapping the principles of Zero Trust in the following ways.
@@ -26,7 +26,7 @@ This article describes how to deploy a hub network for Zero Trust by mapping the
 |Zero Trust Principle | Met by |
 | --- | --- |
 | Verify explicitly  | Use Azure Firewall with SSL inspection to verify risk and threats based on all available data.  |
-| Use least privileged access  | Each spoke has no access to other spokes unless the traffic is routed through the Firewall. The Firewall is set to deny by default, allowing only authorized rules to execute.  |
+| Use least privileged access  | Each spoke has no access to other spokes unless the traffic is routed through the firewall. The firewall is set to deny by default, allowing only authorized rules to execute.  |
 | Assume breach  | In the event of a compromise or breach of one application/workload, it will have limited ability to spread due to the Azure Firewall performing inspection and only allowing approved rules. Only resources in the same workload would be exposed to the breach in the same application.  |
 
 ## Reference architecture
@@ -97,7 +97,7 @@ Azure Firewall Premium plays a starring role in helping you secure your Azure in
 | Assume breach  | Because of this segmentation, individual network segments become their own blast radius. The firewall can prevent a compromise in one network segment from spreading into others.  |
 
 As a part of the deployment, select Azure Firewall Premium as the SKU for Azure Firewall. This will require the management policy generated to be deployed as a premium policy as well.<br>
-Changing the SKU of the firewall involves recreating the firewall, and often the policy as well. As a result, start with Azure Firewall if possible. Or, be prepared for redeployment activities to replace the existing firewall.
+Changing the SKU of the firewall involves recreating the firewall and often the policy as well. As a result, start with Azure Firewall if possible, or be prepared for redeployment activities to replace the existing firewall.
 
 ### Why Azure Firewall Premium?
 
@@ -111,10 +111,10 @@ Most significant are the following TLS inspection options:
 
 The Inbound TLS inspection for resources should be used whenever possible. As Application Gateway provides HTTP and HTTPS traffic only, for some scenarios it can't be used - such as SQL or RDP traffic. Other services often have their own threat protection options that should be used to provide _verify explicitly_ controls for those services. You can review [Security baselines for Azure overview | Microsoft Learn](/security/benchmark/azure/security-baselines-overview) to understand the threat protection options for these services.
 
-Azure Application Gateway is not recommended to be placed in the hub, and should instead reside in the spoke network or a dedicated virtual network. See [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md) for guidance to the spoke network, or [Zero-trust network for web applications](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) for additional general guidance.
+Azure Application Gateway is not recommended to be placed in the hub. It should instead reside in the spoke network or a dedicated virtual network. See [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md) for guidance to the spoke network, or [Zero-trust network for web applications](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) for additional general guidance.
 
 These scenarios have specific certificate considerations. You can read more about them in the article on [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).<br>
-Without TLS inspection, Azure Firewall has no visibility into the data that flows in the encrypted TLS tunnel, and so its protection is more limited.
+Without TLS inspection, Azure Firewall has no visibility in the data that flows in the encrypted TLS tunnel, and so not that secure.
 
 For example, Azure Virtual Desktop does not support [SSL termination](/azure/virtual-desktop/proxy-server-support#dont-use-ssl-termination-on-the-proxy-server). You should review your specific workloads to understand how TLS inspection can be provided.
 
@@ -161,8 +161,8 @@ To configure Azure Firewall Premium to a Zero Trust configuration, make the foll
     1. Create an application rule with the source of your Application Gateway subnet, and a destination of the domain name of the web app that is being protected.
     1. Ensure that TLS inspection is enabled.
 
-    ![Placeholder diagram for Adding Rule](./media/ApplicationRuleExample.gif)
-
+    :::image type="content" source="media/ApplicationRuleExample.gif" alt-text="Diagram for Adding Rule." lightbox="media/ApplicationRuleExample.gif":::
+    
 ### Additional configuration
 
 With the Azure Firewall Premium configured, you can now perform the following configurations:
@@ -178,8 +178,8 @@ As a part of the deployment, you will want to deploy an Azure DDoS Protection St
 
 | Zero Trust Principle  | Met by   |
 | --- | --- |
-| Verify explicitly  | Monitors traffic and uses ML-based frameworks to detect traffic floods.  |
-| Use least privileged access  | Prevent traffic flooding without controlled authorization.  |
+| Verify explicitly  | Monitors traffic and uses ML-based frameworks to detect traffic floods  |
+| Use least privileged access  | Prevent traffic flooding without controlled authorization      |
 | Assume breach  | Can monitor traffic to protect from different attack scenarios  |
 
 As the policy that is created can be deployed to existing resources, you can add this protection after the initial deployment without requiring the redeployment of resources.
@@ -205,7 +205,7 @@ As there are no "Zero Trust Specific" configurations for DDoS Protection Standar
 
 It is important to know that in the current incarnation, you must apply Azure DDoS protection per Virtual Network. Additional instructions can be found in [DDoS Quickstart.](/azure/ddos-protection/manage-ddos-protection)
 
-![DDoS Configuration Placeholder](./media/DDoS%20Placeholder.jpg)
+:::image type="content" source="media/DDoS%20Placeholder.jpg" alt-text="Diagram for DDoS Configuration Placeholder." lightbox="media/DDoS%20Placeholder.jpg":::
 
 In addition, the following public IPs should be protected:
 
@@ -221,10 +221,10 @@ This configuration contributes to Zero Trust in the following ways.
 |Zero Trust Principle | Met by |
 | --- | --- |
 | Verify explicitly  | By inspecting traffic flowing to and from the network gateway (VPN or ExpressRoute), you are ensuring that only verified traffic is able to pass through the boundary.  |
-| Use least privileged access  | Only resources that need connectivity to the on-prem environment will have that access.  |
-| Assume breach  | A breach in one network segment will not be able to cross over to on-prem resources.  |
+| Use least privileged access  | Only resources that need connectivity to the on-premise environment will have that access.  |
+| Assume breach  | A breach in one network segment will not be able to cross over to on-premise resources.  |
 
-Post deployment, you will need to configure Route Tables on various subnets to ensure that traffic between spoke networks and the on-prem networks are inspected by the Azure Firewall.
+Post deployment, you will need to configure Route Tables on various subnets to ensure that traffic between spoke networks and the on-premise networks are inspected by the Azure Firewall.
 
 This activity can be performed in an existing environment without a requirement of redeployment, but you will have to author the necessary firewall rules to allow access.
 
@@ -232,7 +232,7 @@ If you configure only one side of this - either just the spoke subnets, or the g
 
 ### Why Route Network Gateway Traffic to the Firewall?
 
-A key element of Zero Trust is to not assume that just because something is in your environment, that it should have access to other things in your environment. A default configuration will often allow for routing between resources in Azure to the on-prem networks, controlled only by the Network Security Groups.
+A key element of Zero Trust is to not assume that just because something is in your environment, that it should have access to other things in your environment. A default configuration will often allow for routing between resources in Azure to the on-premise networks, controlled only by the Network Security Groups.
 
 By routing the traffic to the firewall, you increase the inspection and as a result the security. You are alerted to suspicious activity and can take action sooner.
 
@@ -247,12 +247,12 @@ There are two main ways to ensure that gateway traffic is being routed to the Az
 This guide details the second option as it is more compatible with the reference architectures discussed above.
 
 > [!NOTE]
-> [Azure Virtual Network Manager](/azure/virtual-network-manager/overview) is a service that simplifies this process. When this services is Generally Available, it should be used to manage the routing.
+> [Azure Virtual Network Manager](/azure/virtual-network-manager/overview) is a service that simplifies this process. When this service is Generally Available, it should be used to manage the routing.
 
 ### Configure Gateway Subnet Routing
 
 To configure the Gateway Subnet Route table to forward internal traffic to the Azure Firewall, follow this process:
-1. Create a new Route Table:
+1. Create a new Route Table.
 1. Navigate to **Create a Route Table** in the Azure Portal.
 1. Place the Route Table in a Resource Group, select a Region and Name.
 1. Select **Review and Create** and then **Create**.
@@ -273,7 +273,7 @@ To configure the Gateway Subnet Route table to forward internal traffic to the A
 
 :::image type="content" source="media/hub/hub-add-route.png" alt-text="Screenshot of add route." lightbox="media/hub/hub-add-route.png":::
 
-### Associate the Route Table to the Gateway subnet:
+#### Associate the Route Table to the Gateway subnet:
 
 1. Navigate to **Subnets**, and select **Associate**.
 1. Select the Hub virtual network in the **Virtual network** drop-down list.
@@ -290,9 +290,10 @@ This process assumes that you already have a route table attached to your spoke 
 
 :::image type="content" source="media/hub/hub-spoke-routing.png" alt-text="Screenshot of configure spoke subnet routing." lightbox="media/hub/hub-spoke-routing.png":::
 
-This process disables the propagation of routes from the gateway, which will enable the default route to take traffic intended to the on-prem networks.
+This process disables the propagation of routes from the gateway, which will enable the default route to take traffic intended to the on-premise networks.
 
-Note that resources (such as Application Gateways) that require internet access to function should not receive this route table. They should have their own route table to allow their necessary functions, such as what is outlined in the article [Zero-trust network for web applications with Azure Firewall and Application Gateway - Azure Architecture Center | Microsoft Learn](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall).
+> [!NOTE]
+> Resources (such as Application Gateways) that require internet access to function should not receive this route table. They should have their own route table to allow their necessary functions, such as what is outlined in the article [Zero-trust network for web applications with Azure Firewall and Application Gateway - Azure Architecture Center | Microsoft Learn](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall).
 
 To configure spoke subnet routing:
 1. Navigate to the Route Table associated with your subnet, and select **Configuration** on the left hand menu bar.
@@ -309,7 +310,7 @@ Your hub virtual network built on Azure may be protected by Microsoft Defender f
 
 As mentioned in the other articles from this series, Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection (CWP) that offers a secure score system to help your company build an IT environment with a better secure posture. It also includes some features to protect your network environment against threats. You will learn about it in this section.
 
-This article is not going to cover Microsoft Defender for Cloud in detail, but it is important to understand that Microsoft Defender for Cloud works based on Azure Policies and logs ingested on a Log Analytics workspace.
+This article is not going to cover Microsoft Defender for Cloud in detail. However, it is important to understand that Microsoft Defender for Cloud works based on Azure Policies and logs ingested on a Log Analytics workspace.
 
 Azure Policies are rules written in JavaScript Object Notation (JSON) that hold different analysis of Azure resource properties, including network services and resources. That said, it is easy for Microsoft Defender for Cloud to check a property under a network resource and provide a recommendation to your subscription if you are protected or exposed to a threat.
 

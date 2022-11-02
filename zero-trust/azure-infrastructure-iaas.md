@@ -1,10 +1,10 @@
 ---
 title: Apply Zero Trust principles to spoke virtual network in Azure
 description: Learn how to secure a spoke virtual network for IaaS workloads with Zero Trust.   
-ms.date: 
+ms.date: 20/20/2022
 ms.service: security
-author: brendacarter
-ms.author: bcarter
+author: brsteph
+ms.author: bstephenson
 ms.topic: conceptual
 ms.collection: 
   - msftsolution-accesscontrol
@@ -187,10 +187,10 @@ This message gives the following two warnings:
 - Azure Load Balancers will not, by default, be able to access resources using this NSG.
 - Other resources on this virtual network will not, by default, be able to access resources using this NSG.
 
-For our purpose     in Zero Trust, this is _excellent_. It means that just because something is on this virtual network, does not mean that it will have immediate access to your resources! For each traffic pattern, you will need to create a rule explicitly allowing it, and you should do so with the least amount of permissions.<br>
+For our purpose in Zero Trust, this is _excellent_. It means that just because something is on this virtual network, doesn't mean that it will have immediate access to your resources! For each traffic pattern, you will need to create a rule explicitly allowing it, and you should do so with the least amount of permissions.<br>
 Thus if you have specific outbound connections for management, such as to Active Directory Domain Controllers, private DNS VMs, or to specific external websites, they need to be controlled here.
 
-### **Alternative Deny Rules**
+### Alternative Deny Rules
 
 If you are using Azure Firewall to manage your outbound connections, then instead of performing a deny outbound all, you can leave all outbound open. As a part of the Azure Firewall implementation, you will set up a route table that will send the default route (0.0.0.0/0) to the firewall. This will handle traffic outside of the virtual network.
 
@@ -198,7 +198,7 @@ You can then either create a deny all vnet outbound, or instead allow all outbou
 
 Read more about [Azure Firewall](/azure/firewall/overview) and [Route Tables](/azure/virtual-network/manage-route-table) to understand how they can be used to further increase the security of the environment.
 
-### **VM Management Rules**
+### VM Management Rules
 
 To configure VMs with Azure AD Login, Anti-Malware, and automatic updates enabled, you will need to allow the following outbound connections. Many of these are by FQDN, meaning that either Azure Firewall is needed for FQDN rules, or you will make a more complex plan.<br>
 Azure Firewall is recommended.<br>
@@ -221,7 +221,7 @@ The outbound connections are:
 
 ### Deploy application specific rules for application security groups
 
-Define traffic patterns with the least amount of permissions, and only following explicitly allowed paths. Using the application security groups in this example, define networking patterns in the network security groups.
+Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Using the application security groups in this example, define networking patterns in the network security groups.
 
 :::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.png" alt-text="Diagram of networking patters in NSG." lightbox="media/spoke/azure-infra-spoke-tiers-6.png":::
 
@@ -241,10 +241,10 @@ Configure the SQL pattern first, and then repeat this process with the remaining
 In the NSG, navigate to **Inbound Security Rules**, and select **Add**. Populate the list with the following:
 - Source: Application Security Group
 - Source application security groups: Select your business tier ASG
-- Source port ranges: 1433 (Sometimes source traffic can come from different ports, and if this pattern occurs you can add source port ranges to \* to allow any source port. Destination port is more significant, and some recommendations are to always use \* for source port)
+- Source port ranges: 1433 (Sometimes source traffic can come from different ports and if this pattern occurs you can add source port ranges to \* to allow any source port. Destination port is more significant and some recommendations are to always use \* for source port)
 - Destination: IP addresses
 - Destination IP addresses/CIDR ranges: the explicit IP of the load balancer
-  - We need to use the explicit IP here because we cannot associate a load balancer with an ASG.
+  - You need to use the explicit IP here because you cannot associate a load balancer with an ASG.
   - You can plan for this in your IP schema or deploy the load balancer and refer to the IP it is assigned.
 - Service: MS SQL
 - Destination Port Ranges: This will be automatically filled in for port 1433
@@ -357,11 +357,11 @@ As mentioned in the other articles from this series, Microsoft Defender for Clou
 
 This article is not going to cover Microsoft Defender for Cloud in detail, but it is important to understand that Microsoft Defender for Cloud works based on Azure Policies and logs ingested in a Log Analytics workspace. Once enabled on the subscription(s) with your spoke virtual network and associated resources, you will be able to see Recommendations to improve their Security Posture. You can filter these Recommendations further by MITRE tactic, Resource Group, etc. Consider prioritizing to resolve Recommendations that have a greater impact on your organization's Secure score.
 
-screen shot 
+:::image type="content" source="media/spoke/dfc-recs.png" alt-text="Screenshot of MDC recommendations." lightbox="media/spoke/dfc-recs.png"::: 
 
 If you choose to onboard one of the Defender for Cloud plans that offer Advanced Workload Protections, it will include Adaptive Network Hardening Recommendations to improve your existing Network Security Group rules.
 
-screenshot
+:::image type="content" source="media\spoke\network-hardening.png" alt-text="Screenshot of network hardening recommendations." lightbox="media\spoke\network-hardening.png"::: 
 
 You can accept the recommendation by selecting **Enforce** which will either create a new NSG rule or modify an existing one.
 

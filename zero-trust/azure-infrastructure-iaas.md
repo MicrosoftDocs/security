@@ -365,7 +365,7 @@ If you choose to onboard one of the Defender for Cloud plans that offer Advanced
 
 You can accept the recommendation by selecting **Enforce** which will either create a new NSG rule or modify an existing one.
 
-## Recommended Training Based on content in this article
+## Recommended training 
 
 - [Secure your Azure resources with Azure role-based access control (Azure RBAC)](/training/modules/secure-azure-resources-with-rbac/)
 - [Configure and manage Azure Monitor](/training/modules/azure-monitor/)

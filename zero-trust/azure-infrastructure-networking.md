@@ -365,7 +365,7 @@ Azure Firewall is recommended to be set up under a hub virtual network, as demon
 For more information about Microsoft Defender for Cloud and how you can use it to get your network environment better protected against threats, see:
 [What is Microsoft Defender for Cloud? - Microsoft Defender for Cloud | Microsoft Learn](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
-## Recommended training based on the content in this article
+## Recommended training 
 
 The following Microsoft training is recommended to you in your journey with Zero Trust for Network.
 

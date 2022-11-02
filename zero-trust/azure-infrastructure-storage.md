@@ -111,7 +111,7 @@ Another way to provide permissions that can be time-bound is through Shared Acce
 - Validate permissions
 - Use a user delegation SAS wherever possible. This SAS is signed with Azure AD credentials.
 
-## Step 3. Logically separate or segregate critical data with network Controls
+## Step 3. Logically separate or segregate critical data with network controls
 
 In this step, use the recommended controls to protect the network connections to and from Azure Storage services.<br>
 The following illustration highlights the network connections to the Azure Storage services in the reference architecture.

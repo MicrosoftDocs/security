@@ -53,9 +53,9 @@ It’s important to note that the guidance in this series of articles is more sp
 
 ## Infrastructure components covered in this series
 
-This is an environment with multiple IaaS components and elements, including different types of users and IT consumers accessing the app from different sites — Azure, on-premises, internet, and branch offices.<br> 
+This is an environment with multiple IaaS components and elements, including different types of users and IT consumers accessing the app from different sites - Azure, on-premises, internet, and branch offices.<br> 
 This is a common three-tier application containing a web server tier, application tier, and data tier. All tiers run on virtual machines within a VNet called Spoke. Access to the app is protected by another VNet called Hub that contains security services that are a part of the environment.<br> 
-The architecture also contains some of the most used PaaS services on Azure that support IaaS applications, including RBAC and Azure AD. These contribute to the Zero Trust security approach.<br> 
+The architecture also contains some of the most used PaaS services on Azure that support IaaS applications, including Role based access control(RBAC) and Azure AD. These contribute to the Zero Trust security approach.<br> 
 Storage Blobs and Storage Files complete this example environment by providing object storage for the applications and files shared by users.<br>
 This series of articles walk through the recommendations for implementing Zero Trust for the reference article by addressing each of these larger pieces illustrated below. 
 
@@ -172,7 +172,7 @@ The following are the recommended training modules for Zero Trust:
 ### Configure Azure Firewall  
 |Training  |[Configure Azure Firewall](/training/modules/configure-azure-firewall/)|
 |---------|---------|
-|:::image type="icon" source="media/azure-firewall-configure.png" border="false"::: | You will learn how to configure the Azure Firewall including firewall rules.<br>After completing this module, you will be able to:<li>Determine when to use Azure Firewall.<li>Implement Azure Firewall including firewall rules|
+|:::image type="icon" source="media/azure-firewall-configure.png" border="false"::: | You will learn how to configure the Azure Firewall including firewall rules.<br>After completing this module, you will be able to:<li>Determine when to use Azure Firewall.<li>Implement Azure Firewall including firewall rules.|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-azure-firewall/1-introduction)
 
@@ -189,7 +189,7 @@ For more training on Security on Azure, see the entire Microsoft catalog:<br>
 ## References
 
 Refer to the links below to learn about the various services and technologies mentioned in this article. 
-- [What is Azure—Microsoft Cloud Services | Microsoft Azure](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/)
+- [What is Azure - Microsoft Cloud Services | Microsoft Azure](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/)
 - [Azure Infrastructure as a Service (IaaS) I Microsoft Azure](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/azure-iaas/#benefits)
 - [Virtual Machines (VMs) for Linux and Windows | Microsoft Azure](https://azure.microsoft.com/products/virtual-machines/) 
 - [Introduction to Azure Storage - Cloud storage on Azure | Microsoft Learn](/azure/storage/common/storage-introduction) 

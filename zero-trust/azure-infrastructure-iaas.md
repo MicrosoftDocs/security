@@ -148,7 +148,7 @@ This section covers the following recommendations:
 
 - Deploy baseline deny rules for network security groups
 - Deploy application specific rules for application security groups
-- Plan for management traffic into the virtual network
+- Plan for management traffic in the virtual network
 - Deploy network security group flow logging
 
 ### Deploy baseline deny rules for network security groups
@@ -178,7 +178,7 @@ You will notice that on the Inbound security rules tab, you will see a warning s
 
 :::image type="content" source="media/spoke/outbound-sec-rules-1.png" alt-text="Screenshot of inbound security rules." lightbox="media/spoke/outbound-sec-rules-1.png":::
 
-If you click on the rule and scroll to the bottom, you will see more details:
+If you click the rule and scroll to the bottom, you will see more details:
 
 :::image type="content" source="media/spoke/rule-details.png" alt-text="Screenshot of rule details.":::
 
@@ -187,7 +187,7 @@ This message gives the following two warnings:
 - Azure Load Balancers will not, by default, be able to access resources using this NSG.
 - Other resources on this virtual network will not, by default, be able to access resources using this NSG.
 
-For our purpose in Zero Trust, this is _excellent_. It means that just because something is on this virtual network, doesn't mean that it will have immediate access to your resources! For each traffic pattern, you will need to create a rule explicitly allowing it, and you should do so with the least amount of permissions.<br>
+For our purpose in Zero Trust, this is how it should be. It means that just because something is on this virtual network, doesn't mean that it will have immediate access to your resources! For each traffic pattern, you will need to create a rule explicitly allowing it and you should do so with the least amount of permissions.<br>
 Thus if you have specific outbound connections for management, such as to Active Directory Domain Controllers, private DNS VMs, or to specific external websites, they need to be controlled here.
 
 ### Alternative Deny Rules
@@ -234,7 +234,7 @@ This results in the following rules:
 
 Presumably, the SQL servers need to communicate with each other over SQL 1433.
 
-Configure the SQL pattern first, and then repeat this process with the remaining tiers.
+Configure the SQL pattern first and then repeat this process with the remaining tiers.
 
 #### Rule 1 - Allow traffic from Business tier VMs to Data tier Load Balancer (SQL 1433)
 
@@ -327,7 +327,7 @@ Securing access to the virtual network and application includes:
 
 The following diagram illustrates both these access modes across the reference architecture.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-network-7.png" alt-text="Diagram of access modes in reference architecture.":::
+:::image type="content" source="media/spoke/azure-infra-spoke-network-7.png" alt-text="Diagram of access modes in reference architecture." lightbox="media/spoke/azure-infra-spoke-network-7.png":::
 
 ### Secure traffic within Azure environment for the virtual network and application
 

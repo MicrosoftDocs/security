@@ -166,7 +166,7 @@ Remember, username and passwords can be compromised 100%. Using multi-factor aut
 > [!NOTE]
 > VPNs can be used to connect to virtual machines in Azure as well. However, you should be sure to use methods to verify explicitly. Creating a tunnel that is "trusted" regardless of how they are used can be riskier than having specific connections that are highly verified.
 
-No amount of security at the Network, Transport of Application layers will matter if you are not coming from a trusted, verified and secure source.
+No amount of security at the Network and Transport of Application layers will matter if you are not coming from a trusted, verified, and secure source.
 
 ### Use privileged access workstations (PAWs)
 
@@ -186,7 +186,7 @@ Antimalware helps protect your virtual machine from threats such as malicious fi
 
 [Microsoft Antimalware](/azure/security/fundamentals/antimalware) is a no cost resource that provides real-time protection capability to assist in detection, quarantining and eradicating malicious software, spyware, and viruses:
 - Runs in the background with the need of user interaction
-- Provide alerts when unwanted or malicious software is downloaded, installed, or run
+- Provides alerts when unwanted or malicious software is downloaded, installed, or run
 - Offers secure-by-default configuration and antimalware monitoring
 - Scheduled scanning
 - Signature updates

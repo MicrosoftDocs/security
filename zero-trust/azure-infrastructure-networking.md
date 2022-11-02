@@ -93,7 +93,7 @@ Azure Firewall Premium plays a starring role in helping you secure your Azure in
 | Zero Trust Principle   | Met by   |
 | --- | --- |
 | Verify explicitly  | By inspecting both the traffic source and the nature of the traffic, Azure Firewall verifies explicitly that traffic itself is safe (in addition to applying access control rules).  |
-| Use least privileged access  | By providing a firewall between distinct applications, and inspecting all traffic regardless of its source, Azure Firewall can reduce access between network segments.  |
+| Use least privileged access  | By providing a firewall between distinct applications and inspecting all traffic regardless of its source, Azure Firewall can reduce access between network segments.  |
 | Assume breach  | Because of this segmentation, individual network segments become their own blast radius. The firewall can prevent a compromise in one network segment from spreading into others.  |
 
 As a part of the deployment, select Azure Firewall Premium as the SKU for Azure Firewall. This will require the management policy generated to be deployed as a premium policy as well.<br>
@@ -122,7 +122,7 @@ In addition to the customer defined allow/deny rules, the Azure Firewall is stil
 
 Azure Firewall Premium also has enhanced options for URL filtering and web category filtering, allowing for more fine tuned roles.
 
-Threat intelligence can be set to Alert, to notify you when this traffic occurs, but to allow it through. However, for this Zero Trust deployment, it should be set to Deny.
+Threat intelligence can be set to Alert to notify you when this traffic occurs, but to allow it through. However for this Zero Trust deployment, it should be set to Deny.
 
 ### Configure Azure Firewall Premium for Zero Trust
 
@@ -138,7 +138,7 @@ To configure Azure Firewall Premium to a Zero Trust configuration, make the foll
 
 2. Enable TLS inspection:
 
-    1. Prepare a certificate to be used, stored in a Key Vault, or plan to auto-generate a certificate with a managed identity. You can review these options for [Azure Firewall Premium certificates](/azure/firewall/premium-certificates) to select the option for your scenario.
+    1. Prepare a certificate to be used stored in a Key Vault, or plan to auto-generate a certificate with a managed identity. You can review these options for [Azure Firewall Premium certificates](/azure/firewall/premium-certificates) to select the option for your scenario.
     1. Navigate to the Firewall Policy and select **TLS Inspection**.
     1. Select **Enabled**.
     1. Either select a Managed Identity to be used to generate certificates, or select the Key Vault and Certificate.

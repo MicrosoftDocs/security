@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to spoke virtual network in Azure
 description: Learn how to secure a spoke virtual network for IaaS workloads with Zero Trust.   
-ms.date: 20/20/2022
+ms.date: 10/20/2022
 ms.service: security
 author: brsteph
 ms.author: bstephenson

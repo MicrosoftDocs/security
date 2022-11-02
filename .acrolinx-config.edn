@@ -1,2 +1,2 @@
-{:allowed-branchname-matches ["main" "master" "azure-infrastructure-working"]
+{:allowed-branchname-matches ["main" "master" "azure-infrastructure-working" "release-.*"]]
  :allowed-filename-matches ["simulation-labs" "compass" "security-docs" "trusted-root-docs" "ciso-workshop" "operations" "zero-trust"]}

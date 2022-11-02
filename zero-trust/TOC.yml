@@ -171,7 +171,6 @@
         href: /microsoft-365/solutions/information-protection-deploy-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Investigate
         href: /microsoft-365/solutions/information-protection-deploy-monitor-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-
     - name: Integrate SaaS apps for Zero Trust with Microsoft 365 
       items:
       - name: Overview
@@ -182,24 +181,21 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-            
-- name: Zero Trust deployment plans for Microsoft Azure and infrastructure
+- name: Zero Trust deployment plans with Microsoft Azure and infrastructure
   expanded: false
   items: 
-    - name: Overview
-      href: azure-infrastructure-deployment-plans.md
-    - name: Secure infrastructure in Azure
+    - name: Secure IaaS infrastructure in Azure
       expanded: false
       items: 
-      - name: Overview
+      - name: Overview and reference architecture
         href: azure-infrastructure-overview.md
-      - name: 1. Azure storage
+      - name: Azure storage
         href: azure-infrastructure-storage.md
-      - name: 2. Virtual machines
+      - name: Virtual machines
         href: azure-infrastructure-virtual-machines.md
-      - name: 3. Networking for IaaS apps
+      - name: Azure Spoke VNet
         href: azure-infrastructure-iaas.md
-      - name: 4. Network access to IaaS apps
+      - name: Azure hub VNet
         href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false

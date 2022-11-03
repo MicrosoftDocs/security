@@ -216,7 +216,7 @@ Additional guidance:
 
 Threat protection for Azure infrastructure is provided by Defender for Cloud. This protection is extended to virtual machines when you provision [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 
-:::image type="content" source="media/vm/azure-infra-vm-threat-protection-6.png" alt-text="Diagram of enable threat protection." lightbox="media/vm/azure-infra-vm-threat-protection-6.png":::
+:::image type="content" source="media/vm/azure-infra-vm-threat-protection-6.svg" alt-text="Diagram of enable threat protection." lightbox="media/vm/azure-infra-vm-threat-protection-6.png":::
 
 In the illustration:
 

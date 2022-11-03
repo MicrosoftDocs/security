@@ -5,13 +5,15 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 10/28/2022
+ms.date: 11/03/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to understand why applications should not request more permissions than they need (overprivileged) and how to limit privilege so that I can manage access and improve security.
 ---
 # Reducing overprivileged permissions and apps
 
-In this article, you, as a developer, will learn why applications shouldn't request more permissions than they need. You'll understand the term *overprivileged* and discover recommendations and best practices for limiting privilege in your applications to manage access and improve security.
+As a developer aiming to design and implement applications that follow the [guiding principles of Zero Trust](overview.md), you want to [increase application security with least privilege](/azure/active-directory/develop/secure-least-privileged-access). It's imperative that you reduce the attack surface of your application and the effect of a security breach.
+
+In this article, you'll learn why applications shouldn't request more permissions than they need. You'll understand the term *overprivileged* and discover recommendations and best practices for limiting privilege in your applications to manage access and improve security.
 
 ## What is overprivileged?
 

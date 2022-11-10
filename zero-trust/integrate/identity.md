@@ -3,8 +3,8 @@ title: Zero Trust for Identity integration overview
 description: Independent software vendors and technology partners can integrate their solutions with Azure Active Directory to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 09/17/2021
 ms.service: security
-author: knicholasa
-ms.author: nichola
+author: janicericketts
+ms.author: jricketts
 ms.topic: conceptual
 ---
 

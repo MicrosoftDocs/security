@@ -303,6 +303,10 @@ Take this step:
 
  - [Configure Conditional Access in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-conditional-access).
 
+## Securing Identity in accordance with Executive Order 14028 on Cybersecurity & OMB Memorandum 22-09
+
+The [Executive Order 14028 on Improving the Nations Cyber Security](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity) & [OMB Memorandum 22-09](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) includes specific actions on Zero Trust. Identity actions include employing centralized identity management systems, use of strong phishing-resistant MFA, and incorporating at least one device-level signal in authorization decision(s). For detailed guidance on implemening these actions with Azure Active Directory see [Meet identity requirements of memorandum 22-09 with Azure Active Directory](/azure/active-directory/standards/memo-22-09-meet-identity-requirements).
+
 ## Products covered in this guide
 
 **Microsoft Azure**

@@ -32,7 +32,7 @@
       href: data-compliance-gov-ransomware-recovery-readiness.md
     - name: Data protection
       href: data-compliance-gov-data.md
-- name: Zero Trust deployment plans for Microsoft 365
+- name: Zero Trust deployment plans with Microsoft 365
   expanded: false
   items:
     - name: Overview
@@ -171,7 +171,6 @@
         href: /microsoft-365/solutions/information-protection-deploy-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Investigate
         href: /microsoft-365/solutions/information-protection-deploy-monitor-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-
     - name: Integrate SaaS apps for Zero Trust with Microsoft 365 
       items:
       - name: Overview
@@ -182,7 +181,22 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-            
+- name: Zero Trust deployment plans with Microsoft Azure and infrastructure
+  expanded: false
+  items: 
+    - name: Secure IaaS infrastructure in Azure
+      expanded: false
+      items: 
+      - name: Overview and reference architecture
+        href: azure-infrastructure-overview.md
+      - name: Azure storage
+        href: azure-infrastructure-storage.md
+      - name: Virtual machines
+        href: azure-infrastructure-virtual-machines.md
+      - name: Azure Spoke VNet
+        href: azure-infrastructure-iaas.md
+      - name: Azure hub VNet
+        href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false
   items: 
@@ -234,7 +248,9 @@
       - name: Application permissions
         href: develop/developer-strategy-application-permissions.md
       - name: Permissions that require admin consent
-        href: develop/permissions-require-admin-consent.md  
+        href: develop/permissions-require-admin-consent.md
+      - name: Overprivileged permissions
+        href: develop/overprivileged-permissions.md
       - name: Non-user application identity
         href: develop/identity-non-user-applications.md
       - name: API protection
@@ -248,6 +264,8 @@
 - name: Resources
   expanded: false
   items:
+    - name: US Federal Zero Trust memo 22-09
+      href: /azure/active-directory/standards/memo-22-09-meet-identity-requirements
     - name: Zero Trust Essentials Video Series
       href: https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu
     - name: Resources for your Zero Trust journey

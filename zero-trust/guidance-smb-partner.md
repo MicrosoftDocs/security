@@ -35,3 +35,4 @@ This article also includes information and resources for Microsoft partners.
 
 This guidance applies the principles of Zero Trust in an end-to-end configuration process using the capabilities provided in Microsoft Business Premium.
 
+**[Microsoft 365 Business Premium – productivity and cybersecurity for small business](/microsoft-365/business-premium/)**

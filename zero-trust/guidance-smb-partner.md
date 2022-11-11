@@ -36,3 +36,16 @@ This article also includes information and resources for Microsoft partners.
 This guidance applies the principles of Zero Trust in an end-to-end configuration process using the capabilities provided in Microsoft Business Premium.
 
 **[Microsoft 365 Business Premium – productivity and cybersecurity for small business](/microsoft-365/business-premium/)**
+
+
+|Cybersecurity playbook  | Description  |
+|---------|---------|
+| :::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="Screenshot of cybersecurity playbook for small business"::: | In this library: <ul><li>Downloadable poster that guides you through the process of configuring Microsoft 365 Business Premium for Zero Trust.</li><li>Guidance for small and medium-sized businesses who aren’t security experts and need some help getting started</li><li>Steps to secure unmanaged (bring your own device, or BYOD) and managed devices.</li><li>Recommendations and best practices for all employees, including tenant admins, security operations, and all employees.</li></ul> |
+
+
+| Zero Trust principle | Met by |
+|---------|---------|
+| Verify explicitly  | Multi-factor authentication is turned on by using security defaults. This requires users to register for multi-factor authentication (MFA). It also disables access through legacy authentication (devices that don’t support modern authentication) and requires admins to authenticate every time they sign in. 
+For organizations requiring more granular control, guidance is provided for configuring Conditional Access policies. <p>See [Security defaults and multi-factor authentication](/microsoft-365/business-premium/m365bp-conditional-access?view=o365-worldwide).  |
+|Row2     |         |
+

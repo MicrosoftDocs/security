@@ -50,3 +50,10 @@ For organizations requiring more granular control, guidance is provided for conf
 | Use least privileged access | Guidance is provided for protecting administrative accounts and not using these accounts for user tasks. <p>See [Protect your administrator accounts in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-protect-admin-accounts). |
 | Assume breach | Protection against malware and other cybersecurity threats is dialed up by using preset security policies. Guidance is provided for training your team to set up unmanaged (bring-your-own-device, or BYOD) devices, use email securely, and collaborate and share more securely. Additional guidance is provided to secure managed devices (devices that your organization owns).<p>See the following articles:<ul><li>[Review and apply preset security policies](/microsoft-365/business-premium/m365bp-increase-protection)</li><li>[Set up unmanaged (BYOD) devices](/microsoft-365/business-premium/m365bp-devices-overview)</li><li>[Protect all email](/microsoft-365/business-premium/m365bp-protect-email-overview)</li><li>[Collaborate and share securely](/microsoft-365/business-premium/m365bp-collaborate-share-securely)</li><li>[Set up and secure managed devices](/microsoft-365/business-premium/m365bp-protect-devices)</li></ul> |
 
+## Threat protection
+
+This guidance helps protect your organization’s devices, email and collaboration content, and network. 
+
+| Zero Trust principle | Met by |
+|---------|---------|
+| Verify explicitly | Guidance is provided to help ensure that all devices used to access company data are enrolled in MFA. Recommendations include installing and using Microsoft 365 Apps, such as Outlook, Word, Excel, and PowerPoint, on devices. <p>See the following articles:<ul><li>Set up MFA</li><li>Install Microsoft 365 Apps</li></ul> |

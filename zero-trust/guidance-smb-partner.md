@@ -59,3 +59,16 @@ This guidance helps protect your organization’s devices, email and collaborati
 |  Use least privileged access | Guidance is provided for using Microsoft Teams for meetings and collaboration. Recommendations include storing files in Teams and using links to share those files appropriately instead of sending attachments in email. Guidance is provided to adjust the sharing levels in SharePoint and OneDrive to prevent accidental oversharing, and for setting up external users as guests in Microsoft Teams.<br/><br/>See the following articles:<ul><li>[Collaborate and share securely](/microsoft-365/business-premium/m365bp-collaborate-share-securely)</li><li>[Use Microsoft Teams for collaboration](/microsoft-365/business-premium/create-teams-for-collaboration)</li><li>[Set sharing settings for SharePoint and OneDrive files and folders](/microsoft-365/business-premium/m365bp-increase-protection)</li><li>[Manage calendar sharing](/microsoft-365/business-premium/m365bp-increase-protection)</li></ul> |
 | Assume breach | Preset security policies for anti-spam, anti-malware, and anti-phishing protection are included. Guidance is provided to increase the level of protection from built-in protection to standard or strict protection. Security admins can also define custom policies to protect devices, email, and documents. When threats are detected, reports, recommendations, and guidance are provided to help review and address threat detections. <br/><br/>See the following articles: <ul><li>[Protect against malware and other cyberthreats with Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-increase-protection) </li><li>[Top 10 ways to secure your data](/microsoft-365/admin/security-and-compliance/secure-your-business-data) (for small and medium-sized businesses)</li><li>[Security incident management](/microsoft-365/business-premium/m365bp-security-incident-management) </li></ul> |
 
+## Partner guidance and tools
+
+If you’re a Microsoft partner, you have several options and resources available to help you manage security for your business customers. 
+
+| Zero Trust principle | Met by |
+|---------|---------|
+| Verify explicitly | The Solutions Partner for Security designation enables customers to identify you as a partner they can trust for integrated security, compliance, and identity solutions. <br/><br/>See Solutions Partner for Security Learning Path (Microsoft Partner Center). |
+|  Use least privileged access | Guidance is available to help customers review permissions and administrative access granted to partners. Guidance is also available to help Microsoft Managed Service Providers (MSPs) integrate with their business customers’ tenants. <br/><br/>See the following articles: <ul><li>Review partner administrative privileges </li><li>Configure MSP integration </li></ul> |
+
+
+
+
+

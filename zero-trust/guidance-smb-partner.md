@@ -65,8 +65,8 @@ If you’re a Microsoft partner, you have several options and resources availabl
 
 | Zero Trust principle | Met by |
 |---------|---------|
-| Verify explicitly | The Solutions Partner for Security designation enables customers to identify you as a partner they can trust for integrated security, compliance, and identity solutions. <br/><br/>See Solutions Partner for Security Learning Path (Microsoft Partner Center). |
-|  Use least privileged access | Guidance is available to help customers review permissions and administrative access granted to partners. Guidance is also available to help Microsoft Managed Service Providers (MSPs) integrate with their business customers’ tenants. <br/><br/>See the following articles: <ul><li>Review partner administrative privileges </li><li>Configure MSP integration </li></ul> |
+| Verify explicitly | The Solutions Partner for Security designation enables customers to identify you as a partner they can trust for integrated security, compliance, and identity solutions. <br/><br/>See [Solutions Partner for Security Learning Path](https://partner.microsoft.com/en-us/training/assets/collection/solutions-partner-for-security#/) (Microsoft Partner Center). |
+|  Use least privileged access | Guidance is available to help customers review permissions and administrative access granted to partners. Guidance is also available to help Microsoft Managed Service Providers (MSPs) integrate with their business customers’ tenants. <br/><br/>See the following articles: <ul><li>[Review partner administrative privileges](/microsoft-365/commerce/review-partner-admin-privileges) (guidance for small and medium-sized businesses)</li><li>[Configure MSP integration](/microsoft-365/security/defender-endpoint/configure-mssp-support) </li></ul> |
 
 
 

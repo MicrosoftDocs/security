@@ -69,7 +69,9 @@ If you’re a Microsoft partner, you have several options and resources availabl
 |  Use least privileged access | Guidance is available to help customers review permissions and administrative access granted to partners. Guidance is also available to help Microsoft Managed Service Providers (MSPs) integrate with their business customers’ tenants. See the following articles: <ul><li>[Review partner administrative privileges](/microsoft-365/commerce/review-partner-admin-privileges) (guidance for small and medium-sized businesses)</li><li>[Configure MSP integration](/microsoft-365/security/defender-endpoint/configure-mssp-support) </li></ul> |
 | Assume breach | Resources are available to help Microsoft partners manage their customers’ security settings and protect their devices and data. Microsoft 365 Lighthouse integrates with Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft Defender for Endpoint. The Defender for Endpoint APIs can be used to integrate device security capabilities in Microsoft 365 Business Premium with remote monitoring and management (RMM) tools and professional service automation (PSA) software. See the following articles:<ul><li>[Integrate Microsoft endpoint security with your RMM tools and PSA software](/microsoft-365/security/defender-business/mdb-partners)</li><li>[Use Microsoft 365 Lighthouse to secure and manage your customers’ devices and data](/microsoft-365/security/defender-business/mdb-partners)</li><li>[Help for partners](https://support.microsoft.com/topic/help-for-partners-ae811622-b838-4f62-b7e9-659627374963) (general information and support)</li></ul> |
 
+## Protect other SaaS apps you or your customers use
 
+CONTENT COMING SOON!
 
 
 

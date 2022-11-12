@@ -14,11 +14,11 @@ ms.reviewer: mas
 ---
 # Securing privileged access
 
-Organization's should make securing privileged access the top security priority because of the significant potential business impact (and high likelihood) of attackers compromising this level of access.
+Organizations should make securing privileged access the top security priority because of the significant potential business impact, and high likelihood, of attackers compromising this level of access.
 
-Privileged access includes IT administrators with control of large portions of the enterprise estate and other users with access to business critical assets. 
+Privileged access includes IT administrators with control of large portions of the enterprise estate and other users with access to business-critical assets. 
 
-Attackers frequently exploit weaknesses in privileged access security during [human operated ransomware attacks](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) and targeted data theft. Privileged access accounts and workstations are so attractive to attackers because these targets allow them to rapidly gain broad access to the business assets in the enterprise, often resulting in rapid and significant business impact.
+Attackers frequently exploit weaknesses in privileged access security during [human-operated ransomware attacks](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) and targeted data theft. Privileged access accounts and workstations are so attractive to attackers because these targets allow them to rapidly gain broad access to the business assets in the enterprise, often resulting in rapid and significant business impact.
 
 The following diagram summarizes the recommended privileged access strategy to create an isolated virtual zone that these sensitive accounts can operate in with low risk. 
 

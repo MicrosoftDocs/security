@@ -72,22 +72,6 @@ See the following resources:
 |  Use least privileged access | Guidance is provided for using roles to assign permissions and security policies to prevent unauthorized access. |
 | Assume breach | Advanced protection is provided for devices, email, and collaboration content. Remediation actions are taken when threats are detected. |
 
-## Protect other SaaS apps you or your customers use
-
-You or your small business customers likely use other Software as a Service (SaaS) applications, like Salesforce, Adobe Creative Cloud, and DocuSign. You can integrate these with Azure Active Directory and include these in your multi-factor authentication and conditional access policies. 
-
-The Azure Active Directory (Azure AD) application gallery is a collection of software as a service (SaaS) applications that have been pre-integrated with Azure AD. All you need to do is find the application in the gallery and add it to your environment. Then, the application will be available for you to include in the scope of your multi-factor authentication and conditional access rules. See [Overview of the Azure AD application gallery](/azure/active-directory/manage-apps/overview-application-gallery).
-
-After you add SaaS apps to your environment, these apps will automatically be protected with multi-factor authentication and the other protections provided by security defaults. If you are not using security defaults and are instead configuring your own Conditional Access rules, you need to add these apps to the scope of your conditional access and related policies. See [Security defaults and multi-factor authentication](/microsoft-365/business-premium/m365bp-conditional-access).
-
-Azure Active directory decides when a user will be prompted for multifactor authentication based on factors such as location, device, role, and task. This functionality protects all applications registered with Azure AD, including SaaS applications. See [Providing a default level of security in Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#require-users-to-do-multifactor-authentication-when-necessary).
-
-| Zero Trust principle | Met by |
-|---------|---------|
-| Verify explicitly | All SaaS apps you add require multi-factor authentication for access. |
-| Use least privileged access | Users must meet authentication requirements to use apps that access company data. |
-| Assume breach | Factors, such as location, device, role, and task are considered when users are authenticated. Multi-factor authentication is used when necessary. |
-
 ## Partner guidance and tools
 
 If you’re a Microsoft partner, you have several resources available to help you manage security for your business customers. These resources include learning paths, guidance, and integration.
@@ -110,3 +94,20 @@ Resources are available to help Microsoft partners manage their customers’ sec
 | Verify explicitly | Partner resources are available to help Microsoft partners configure and manage their customers’ identity and access methods and policies. |
 |  Use least privileged access | Partners can configure integration with customer tenants. Customers can review permissions and administrative access granted to partners. |
 | Assume breach | Microsoft 365 Lighthouse integrates with Microsoft threat protection capabilities for small businesses. |
+
+## Protect other SaaS apps you or your customers use
+
+You or your small business customers likely use other Software as a Service (SaaS) applications, like Salesforce, Adobe Creative Cloud, and DocuSign. You can integrate these with Azure Active Directory and include these in your multi-factor authentication and conditional access policies. 
+
+The Azure Active Directory (Azure AD) application gallery is a collection of software as a service (SaaS) applications that have been pre-integrated with Azure AD. All you need to do is find the application in the gallery and add it to your environment. Then, the application will be available for you to include in the scope of your multi-factor authentication and conditional access rules. See [Overview of the Azure AD application gallery](/azure/active-directory/manage-apps/overview-application-gallery).
+
+After you add SaaS apps to your environment, these apps will automatically be protected with multi-factor authentication and the other protections provided by security defaults. If you are not using security defaults and are instead configuring your own Conditional Access rules, you need to add these apps to the scope of your conditional access and related policies. See [Security defaults and multi-factor authentication](/microsoft-365/business-premium/m365bp-conditional-access).
+
+Azure Active directory decides when a user will be prompted for multifactor authentication based on factors such as location, device, role, and task. This functionality protects all applications registered with Azure AD, including SaaS applications. See [Providing a default level of security in Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#require-users-to-do-multifactor-authentication-when-necessary).
+
+| Zero Trust principle | Met by |
+|---------|---------|
+| Verify explicitly | All SaaS apps you add require multi-factor authentication for access. |
+| Use least privileged access | Users must meet authentication requirements to use apps that access company data. |
+| Assume breach | Factors, such as location, device, role, and task are considered when users are authenticated. Multi-factor authentication is used when necessary. |
+

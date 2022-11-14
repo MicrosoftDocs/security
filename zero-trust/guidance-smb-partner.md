@@ -92,7 +92,7 @@ Azure Active directory decides when a user will be prompted for multifactor auth
 
 If you’re a Microsoft partner, you have several resources available to help you manage security for your business customers. These resources include learning paths, guidance, and integration.
 
-The Solutions Partner for Security designation enables customers to identify you as a partner they can trust for integrated security, compliance, and identity solutions. See [Solutions Partner for Security Learning Path (Microsoft Partner Center)](https://partner.microsoft.com/en-us/training/assets/collection/solutions-partner-for-security#/).
+The Solutions Partner for Security designation enables customers to identify you as a partner they can trust for integrated security, compliance, and identity solutions. See [Solutions Partner for Security Learning Path (Microsoft Partner Center)](https://partner.microsoft.com/training/assets/collection/solutions-partner-for-security#/).
 
 Guidance is available to help customers review permissions and administrative access granted to partners. Guidance is also available to help Microsoft Managed Service Providers (MSPs) integrate with their business customers’ tenants. See the following articles: 
 

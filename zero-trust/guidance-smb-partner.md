@@ -45,8 +45,8 @@ This guidance applies the principles of Zero Trust in an end-to-end configuratio
 See the following resources:
 
 - [Microsoft 365 Business Premium - Productivity and cybersecurity for small business](/microsoft-365/business-premium/)
-- [Cybersecurity playbook for Microsoft 365 Business Premium](/microsoft-365/business-premium/?view=o365-worldwide)
-- [Microsoft 365 Business Premium resources for partners and small business](/microsoft-365/business/?view=o365-worldwide)
+- [Cybersecurity playbook for Microsoft 365 Business Premium](/microsoft-365/business-premium/)
+- [Microsoft 365 Business Premium resources for partners and small business](/microsoft-365/business/)
 
 | Zero Trust principle | Met by |
 |---------|---------|
@@ -62,7 +62,7 @@ Microsoft 365 Business Premium also includes advanced anti-phishing, anti-spam, 
 
 See the following resources:
 
-- [What is Microsoft Defender for Business?](/microsoft-365/security/defender-business/mdb-overview?view=o365-worldwide)
+- [What is Microsoft Defender for Business?](/microsoft-365/security/defender-business/mdb-overview)
 - [Microsoft Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet)
 
 

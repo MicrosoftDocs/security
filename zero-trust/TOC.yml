@@ -21,6 +21,11 @@
       href: deploy/networks.md
     - name: Visibility, automation, and orchestration
       href: deploy/visibility-automation-orchestration.md
+- name: Zero Trust with Microsoft 365 for small and medium-sized business
+  expanded: false
+  items:
+    - name: Small Business Zero Trust guidance
+      href: guidance-smb-partner.md
 - name: Rapid Modernization Plan (RaMP)
   expanded: false
   items: 

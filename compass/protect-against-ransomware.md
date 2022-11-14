@@ -112,7 +112,7 @@ Microsoft 365:
 - [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft 365 Defender portal
 
 Microsoft 365 Defender:
-
+- [Built in protection against ransomware](/microsoft-365/security/defender-endpoint/built-in-protection)
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
 Microsoft Azure:

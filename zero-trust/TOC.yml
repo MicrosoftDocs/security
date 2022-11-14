@@ -181,6 +181,11 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
+- name: Zero Trust with Microsoft 365 for small and medium-sized business
+  expanded: false
+  items:
+    - name: Small Business Zero Trust guidance
+      href: guidance-smb-partner.md
 - name: Zero Trust deployment plans with Microsoft Azure and infrastructure
   expanded: false
   items: 

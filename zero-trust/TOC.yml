@@ -266,6 +266,16 @@
         href: develop/api-calls-api.md
       - name: Authorization best practices
         href: develop/developer-strategy-authorization-best-practices.md
+    - name: Zero Trust DevSecOps
+      items:
+      - name: Overview
+        href: develop/secure-devops-environments-zero-trust.md
+      - name: Secure DevOps platform environment
+        href: develop/secure-devops-platform-environment-zero-trust.md
+      - name: Secure development environment
+        href: develop/secure-dev-environment-zero-trust.md
+      - name: Embed Zero Trust into developer workflow
+        href: develop/embed-zero-trust-dev-workflow.md
 - name: Resources
   expanded: false
   items:

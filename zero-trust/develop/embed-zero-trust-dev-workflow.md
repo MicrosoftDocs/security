@@ -139,7 +139,7 @@ Our recommended Workload Identity Federation workflow, illustrated in the follow
 
 Watch April Edwards, Senior Cloud Advocate and DevOps Practice Lead, demo the Workload Identity Federation workflow. The demonstration begins at the 19:14 mark in the [Accelerate and secure your code to cloud development](https://mybuild.microsoft.com/en-US/sessions/84ff7d8d-64da-4a5e-9c84-92f7b6387225?source=sessions) Microsoft Build 2022 session that is [also available on YouTube](https://youtu.be/1fMdA3pSBaY?t=1154) (embedded below).
 
-> [!VIDEO <https://www.youtube.com/embed/1fMdA3pSBaY>]
+> [!VIDEO https://www.youtube.com/embed/1fMdA3pSBaY]
 
 ## Next steps
 

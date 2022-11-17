@@ -4,7 +4,7 @@ description: This document provides an overview of the Government Security Progr
 ms.date: 11/15/2022
 ms.service: security
 ms.author: bcowper
-author: bcowper
+author: BruceCowper
 ms.topic: conceptual
 ---
 

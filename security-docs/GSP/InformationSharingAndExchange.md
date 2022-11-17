@@ -4,7 +4,7 @@ description: This document provides details of the Information Sharing and Excha
 ms.date: 11/15/2022
 ms.service: security
 ms.author: bcowper
-author: bcowper
+author: BruceCowper
 ms.topic: conceptual
 ---
 

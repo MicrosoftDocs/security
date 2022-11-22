@@ -93,7 +93,7 @@ Resources are available to help you as a Microsoft partner to manage your custom
 |---------|---------|
 | Verify explicitly | Partner resources are available to help Microsoft partners configure and manage their customers’ identity and access methods and policies. |
 |  Use least privileged access | Partners can configure integration with customer tenants. Customers can review permissions and administrative access granted to partners. |
-| Assume breach | Microsoft 365 Lighthouse integrates with Microsoft threat protection capabilities for small businesses. |
+| Assume breach | Microsoft 365 Lighthouse integrates with Microsoft threat protection capabilities for small and medium-sized businesses. |
 
 ## Protect other SaaS apps you or your customers use
 

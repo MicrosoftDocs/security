@@ -103,7 +103,7 @@ The Azure AD application gallery is a collection of software as a service (SaaS)
 
 After you add SaaS apps to your environment, these apps will automatically be protected with Azure AD Multi-Factor Authentication and the other protections provided by security defaults. If you're using Conditional Access policies instead of security defaults, you need to add these apps to the scope of your Conditional Access and related policies. See [Security defaults and multi-factor authentication](/microsoft-365/business-premium/m365bp-conditional-access).
 
-Azure AD determines when a user will be prompted for Azure AD Multi-Factor Authentication based on factors such as location, device, role, and task. This functionality protects all applications registered with Azure AD, including SaaS applications. See [Providing a default level of security in Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#require-users-to-do-multifactor-authentication-when-necessary).
+Azure AD determines when a user will be prompted for multi-factor authentication based on factors such as location, device, role, and task. This functionality protects all applications registered with Azure AD, including SaaS applications. See [Providing a default level of security in Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#require-users-to-do-multifactor-authentication-when-necessary).
 
 | Zero Trust principle | Met by |
 |---------|---------|

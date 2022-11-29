@@ -9,6 +9,8 @@
       href: failure-modes-in-machine-learning.md
     - name: Threat Modeling AI/ML systems and dependencies
       href: threat-modeling-aiml.md
+    - name: Threat Modeling with DevOps 
+      href: threat-modeling-with-dev-ops.md 
     - name: AI/ML pivots to the Security Development Lifecycle bug bar
       href: bug-bar-aiml.md
     - name: Securing the future of AI/ML at Microsoft

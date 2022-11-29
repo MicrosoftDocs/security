@@ -9,7 +9,7 @@ author: simonec73
 ms.topic: conceptual
 ---
 
-# Integrating Threat Modeling with DevOps   
+# Integrating threat modeling with DevOps   
     
 This post is authored by Simone Curzi, Anthony Nevico, Jonathan Davis, and Rafael Pazos Rodriguez
   
@@ -27,7 +27,7 @@ Analogously, if you already have adopted Threat Modeling, you may still find pra
 
 Nevertheless, the paper is designed to introduce ideas to improve current processes or to successfully adopt Threat Modeling as a part of your DevOps process. It does not introduce specific tools or products, even if it is our hope to see those ideas implemented by some tools or products in the future. Therefore, you will not find announcements of new tools or previews of upcoming features, here.
 
-## Why Threat Modeling is important?
+## Why Threat modeling is important?
 
 Threat Modeling is one of the primary approaches to designing software solutions securely. Through Threat Modeling, you analyze a system identify attack vectors, and develop actions for mitigating risks brought by those attacks. Appropriately done, Threat modeling is an excellent component of any Risk Management process. It can also help reduce costs by identifying and fixing design issues early. An old study from NIST estimated the cost of fixing a design issue in production code to be around 40 times higher than repairing it during the design phase. It also saves from incurring costs due to security incidents for the eventual design issues. Consider that the [2022 Cost of Data Breach Report](https://www.ibm.com/account/reg/us-en/signup?formid=urx-51643) from IBM Security and the Ponemon Institute estimates the average cost of a data breach to be \$ 4.35M. For the so-called Mega Breaches, involving the compromise of over 50 million records, the average cost reaches \$ 387M!
 
@@ -35,7 +35,7 @@ Threat Modeling is the first activity you can do to secure your solution because
 
 Microsoft has a long history with Threat Modeling. In 1999, two (then) Microsoft employees, Loren Kohnfelder and Praerit Garg, wrote a document, [The threats to our products](https://www.microsoft.com/security/blog/2009/08/27/the-threats-to-our-products/). This paper introduced the STRIDE approach, a synonym for the Microsoft Threat Modeling process.
 
-## Threat Modeling is an evolutionary process
+## Threat modeling is an evolutionary process
 
 Threat Modeling is not a static process; it evolves as needs and technologies change.
 
@@ -91,7 +91,7 @@ We have already highlighted how important it is to ensure that Threat Modeling i
 
 We can employ various techniques to align Threat Modeling with the current DevOps practice.
 
-### Threats and Mitigations
+### Threats and mitigations
 
 First, we must focus the Threat Modeling process on what needs to be done. Threats, which are the attack patterns and how they may happen, are necessary to explain why the team needs to implement a security control. They are also a factor in determining when mitigations should be implemented. Still, the real goal is to determine what needs to be done: the mitigations. Therefore, the approach must lead to the rapid identification of required mitigations and must inform the decision process so that it is easier to determine what to do and when. The main deliverable of this decision process is to have the selected mitigations in the Backlog to make them a part of the standard process. Ideally, the Threat Modeling tool and the Task & Bug Tracking tool should be synchronized to reflect the updates to the mitigation status in the Threat Model. This would allow revision of the residual risk dynamically and automatically, which is vital to support informed decisions as part of the usual choreographies of the adopted Agile methodology, like the Sprint Planning meeting.
 
@@ -101,7 +101,7 @@ First, we must focus the Threat Modeling process on what needs to be done. Threa
 >
 > As a Developer, you should focus on the security controls that are identified as necessary. The process should be designed to provide them to you in the same way you expect to receive any other activity.
 
-### Features, User Stories, and Tasks
+### Features, user stories, and tasks
 
 We have already stated that the mitigations represent the most important artifact produced by the Threat Model concerning DevOps integration. Therefore, it is important to clearly define the type of objects created out of those mitigations on the Task & Bug Tracking tool of choice. Some mitigations may last more than a Sprint. Therefore, it may be best to create them as Features. But many are easier and could be implemented in a single Sprint; thus, it would be possible to represent them as User Stories or Tasks. While generating different work item types may be possible, this may result in a complicated process that may lead to mistakes and confusion. For this reason, it seems more practical to stick with a single work item type. Given that mitigations may be considered children of User Stories, you may consider representing them as Tasks, which implies relaxing the requirement of having the said work item type executed in a single Sprint.
 
@@ -109,7 +109,7 @@ We have already stated that the mitigations represent the most important artifac
 >
 > Ensure that mitigations identified by the Threat Model are represented in the backlog. Identify a way to clearly represent them.
 
-### User Stories
+### User stories
 
 The mitigations are not the only artifacts part of a Threat Model, which could and should be aligned with what you have in your Task & Bug Tracking tool. For example, you may want to represent threats as well. This goal could be achieved by extending the User Stories through the addition of a WITHOUT clause to the usual "As a \[who am I\] I want to \[what I want\] so that I can \[do something\]." For example: "As a user, I want to pay with my credit card so that I can buy some goods, WITHOUT having my credit card stolen data stolen". The WITHOUT clause can be mapped to one or more Threats and sometimes allowed to express Security Requirements. By ensuring that this alignment between Threats and WITHOUT clauses is made explicit within the Threat Model, we can ensure that possible risks are reflected and taken care of by the team because they are included as part of the User Stories. You can also use this relationship to map every Security Requirement identified as part of the User Stories to at least a Threat.
 
@@ -166,7 +166,7 @@ Once we start thinking about how we could link the artifacts composing the Threa
 >
 > Regularly verify that there are no unmapped Threats or User Stories with WITHOUT clauses.
 
-### Threat Modeling and the Operations
+### Threat modeling and the operations
 
 All those ideas are mainly focused on the development side of DevOps. Can we do something to improve Operations as well? We do think so. For example, it would be possible to use Threat Modeling as a tool to facilitate Root Cause Analysis because it provides a comprehensive view of the system from a security perspective and thus can provide a better understanding of the implications of some attacks. To achieve that, it would be necessary to integrate the Threat Model with the existing feeds from the chosen Monitoring tools. This approach may represent a complement for the chosen SIEM.
 

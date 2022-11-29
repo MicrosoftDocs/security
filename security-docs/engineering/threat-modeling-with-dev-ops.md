@@ -4,13 +4,15 @@ title: Integrating Threat Modeling with DevOps
 description: Reflections on how it is possible to adopt Threat Modeling more effectively and efficiently, integrating it with modern DevOps methodologies and tools, and focusing on the value provided to all the various actors involved with the Software Development Lifecycle.
 ms.date: 11/07/2022
 ms.service: security
-ms.author: simonec73, aionic, limbic, rafapazos 
-author: Simone Curzi, Anthony Nevico, Jonathan Davis, Rafael Pazos Rodriguez
+ms.author: simonec
+author: simonec73
 ms.topic: conceptual
 ---
 
-# Integrating Threat Modeling with DevOps 
-
+# Integrating Threat Modeling with DevOps   
+    
+By Simone Curzi, Anthony Nevico, Jonathan Davis, Rafael Pazos Rodriguez  
+  
 ## Introduction
   
 Threat Modeling is an important security method that helps identifying and prioritizing the most important risk mitigations for an application or system. This paper contains some reflections on how it is possible to adopt Threat Modeling more effectively and efficiently, integrating it with modern DevOps methodologies and tools, and focusing on the value provided to all the various actors involved with the Software Development Lifecycle.
@@ -31,17 +33,17 @@ Threat Modeling is one of the primary approaches to designing software solutions
 
 Threat Modeling is the first activity you can do to secure your solution because it operates on the solution design. This characteristic makes it the most effective security practice you can apply to your SDLC.
 
-Microsoft has a long history with Threat Modeling. In 1999, two (then) Microsoft employees, Loren Kohnfelder and Praerit Garg, wrote a document, [The threats to our products](https://www.microsoft.com/en-us/security/blog/2009/08/27/the-threats-to-our-products/). This paper introduced the STRIDE approach, a synonym for the Microsoft Threat Modeling process.
+Microsoft has a long history with Threat Modeling. In 1999, two (then) Microsoft employees, Loren Kohnfelder and Praerit Garg, wrote a document, [The threats to our products](https://www.microsoft.com/security/blog/2009/08/27/the-threats-to-our-products/). This paper introduced the STRIDE approach, a synonym for the Microsoft Threat Modeling process.
 
 ## Threat Modeling is an evolutionary process
 
 Threat Modeling is not a static process; it evolves as needs and technologies change.
 
-- Supply Chain attacks like the recent one targeting [SolarWinds](https://www.microsoft.com/en-us/security/blog/2020/12/18/analyzing-solorigate-the-compromised-dll-file-that-started-a-sophisticated-cyberattack-and-how-microsoft-defender-helps-protect/) demonstrate the need to cover with Threat Modeling more scenarios than the solution itself, including development and deployment.
+- Supply Chain attacks like the recent one targeting [SolarWinds](https://www.microsoft.com/security/blog/2020/12/18/analyzing-solorigate-the-compromised-dll-file-that-started-a-sophisticated-cyberattack-and-how-microsoft-defender-helps-protect/) demonstrate the need to cover with Threat Modeling more scenarios than the solution itself, including development and deployment.
 
-- [Open Source vulnerabilities](https://www.microsoft.com/en-us/security/blog/2020/07/20/open-source-security-managing-risk-software-composition-analysis/) like the recent one for [Log4j](https://www.cisa.gov/uscert/apache-log4j-vulnerability-guidance) have demonstrated the need to supplement the current approach based on the adoption of Software Composition Analysis tools to scan for vulnerable components by designing the solution defensively to limit its exposure.
+- [Open Source vulnerabilities](https://www.microsoft.com/security/blog/2020/07/20/open-source-security-managing-risk-software-composition-analysis/) like the recent one for [Log4j](https://www.cisa.gov/uscert/apache-log4j-vulnerability-guidance) have demonstrated the need to supplement the current approach based on the adoption of Software Composition Analysis tools to scan for vulnerable components by designing the solution defensively to limit its exposure.
 
-- The application of new technologies like [Machine Learning](https://learn.microsoft.com/en-us/security/engineering/threat-modeling-aiml) introduces new attack vectors which must be understood and controlled. Consider, for example, the possibility of playing maliciously crafted sounds inaudible by human ears to cause the execution of commands by AI services, as discussed in <https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/carlini>.
+- The application of new technologies like [Machine Learning](https://learn.microsoft.com/security/engineering/threat-modeling-aiml) introduces new attack vectors which must be understood and controlled. Consider, for example, the possibility of playing maliciously crafted sounds inaudible by human ears to cause the execution of commands by AI services, as discussed in <https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/carlini>.
 
 At Microsoft, different product groups practice different variants of threat modeling based on their specific security requirements. Each variant aims to guarantee an adequate level of security assurance to the scenarios it is applied to, but what "adequate" means changes depending on the specific context.
 
@@ -114,7 +116,7 @@ The mitigations are not the only artifacts part of a Threat Model, which could a
 > **Nice to know**
 >
 > The WITHOUT clause is not an original idea by the team who has produced this page. We are not sure about who first introduced it, but we are grateful to whoever came with this idea.
-![A diagram mapping Threats with User Stories and WITHOUT clauses.](media/AligningRequirements.png)  
+![A diagram mapping Threats with User Stories and WITHOUT clauses.](media\aligningrequirements.png)  
 _Figure 1: Aligning requirements_  
   
 For example, the previous picture shows the following situations:
@@ -147,7 +149,7 @@ You can apply the same idea to other scenarios. For example, the Threat Model co
 
 You can use the same links between the artifacts in the Task & Bug Tracking tool and the threats and mitigations identified by the Threat Model to facilitate the prioritization of the security activities. Security is usually implemented last, sometimes to address reactively vulnerabilities identified by some tool or a Penetration Test. On the contrary, it would be most effective to implement the mitigations along with the related User Stories or Features. Why wait to implement the controls to secure the credit card details when you should implement them along with the related payment functions? The Threat Model should highlight those relationships and provide a simple way to determine when implementing some feature during a Sprint requires the implementation of some related security feature. This information could be used, for example, during the Sprint Planning meeting to have a meaningful discussion and drive an informed prioritization. The mechanism is simple. Let's suppose that the Product Owner for a project we work on decides to plan a User Story for the next Sprint. The said User Story has a WITHOUT clause that is linked to threat. The threat model identifies several mitigations for the same threat. Therefore, we can immediately deduce that we should prioritize one or more of the identified mitigations.  
   
-![A diagram showing how the link between Threats and Mitigations can be used for prioritizing security.](media/PrioritizingRequirements.png) 
+![A diagram showing how the link between Threats and Mitigations can be used for prioritizing security.](media\prioritizingsecurity.png) 
 _Figure 2: Prioritizing security_
   
 For example, in the picture above, we can see that User Story 1 is linked to Threat 1, which in turn is linked to Mitigations A and B. Therefore, we should also consider implementing one or both of those mitigations.

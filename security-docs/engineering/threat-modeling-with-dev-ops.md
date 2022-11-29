@@ -11,7 +11,11 @@ ms.topic: conceptual
 
 # Integrating Threat Modeling with DevOps   
     
-By Simone Curzi, Anthony Nevico, Jonathan Davis, Rafael Pazos Rodriguez  
+This post is authored by 
+Simone Curzi, Principle Cyber Consultant
+Anthony Nevico, Senior Cloud Solution Architect
+Jonathan Davis, Principle Program Manager 
+Rafael Pazos Rodriguez, xxxx 
   
 ## Introduction
   
@@ -43,7 +47,7 @@ Threat Modeling is not a static process; it evolves as needs and technologies ch
 
 - [Open Source vulnerabilities](https://www.microsoft.com/security/blog/2020/07/20/open-source-security-managing-risk-software-composition-analysis/) like the recent one for [Log4j](https://www.cisa.gov/uscert/apache-log4j-vulnerability-guidance) have demonstrated the need to supplement the current approach based on the adoption of Software Composition Analysis tools to scan for vulnerable components by designing the solution defensively to limit its exposure.
 
-- The application of new technologies like [Machine Learning](https://learn.microsoft.com/security/engineering/threat-modeling-aiml) introduces new attack vectors which must be understood and controlled. Consider, for example, the possibility of playing maliciously crafted sounds inaudible by human ears to cause the execution of commands by AI services, as discussed in <https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/carlini>.
+- The application of new technologies like [Machine Learning](/security/engineering/threat-modeling-aiml) introduces new attack vectors which must be understood and controlled. Consider, for example, the possibility of playing maliciously crafted sounds inaudible by human ears to cause the execution of commands by AI services, as discussed in <https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/carlini>.
 
 At Microsoft, different product groups practice different variants of threat modeling based on their specific security requirements. Each variant aims to guarantee an adequate level of security assurance to the scenarios it is applied to, but what "adequate" means changes depending on the specific context.
 

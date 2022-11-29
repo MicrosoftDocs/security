@@ -4,8 +4,8 @@ title: Integrating Threat Modeling with DevOps
 description: Reflections on how it is possible to adopt Threat Modeling more effectively and efficiently, integrating it with modern DevOps methodologies and tools, and focusing on the value provided to all the various actors involved with the Software Development Lifecycle.
 ms.date: 11/07/2022
 ms.service: security
-ms.author: simone.curzi
-author: simone.curzi
+ms.author: simonec73, aionic, limbic, rafapazos 
+author: Simone Curzi, Anthony Nevico, Jonathan Davis, Rafael Pazos Rodriguez
 ms.topic: conceptual
 ---
 

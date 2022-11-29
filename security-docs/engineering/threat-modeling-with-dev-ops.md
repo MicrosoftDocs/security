@@ -11,11 +11,7 @@ ms.topic: conceptual
 
 # Integrating Threat Modeling with DevOps   
     
-This post is authored by 
-Simone Curzi, Principle Cyber Consultant
-Anthony Nevico, Senior Cloud Solution Architect
-Jonathan Davis, Principle Program Manager 
-Rafael Pazos Rodriguez, xxxx 
+This post is authored by Simone Curzi, Anthony Nevico, Jonathan Davis, and Rafael Pazos Rodriguez
   
 ## Introduction
   

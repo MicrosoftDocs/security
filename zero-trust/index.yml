@@ -72,10 +72,12 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: User access and productivity
-            url: user-access-productivity-overview.md
-          - text: Data, compliance, and governance
-            url: data-compliance-governance-overview.md
+          - text: Explicitly validate trust for all access requests
+            url: user-access-productivity-validate-trust.md
+          - text: Ransomware recovery readiness
+            url: data-compliance-gov-ransomware-recovery-readiness.md
+          - text: Data protection
+            url: data-compliance-gov-data.md
    
             
   # Card

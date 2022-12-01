@@ -28,6 +28,8 @@ landingContent:
         links:
         - text: What is Zero Trust?
           url:  zero-trust-overview.md
+        - text: Concepts and deployment objectives
+          url: /security/zero-trust/deploy/overview
         - text: Small business guidance 
           url: guidance-smb-partner.md
  # Card
@@ -65,6 +67,8 @@ landingContent:
         links:
           - text: Integrate with Microsoft's Zero Trust solutions
             url: /security/zero-trust/integrate/overview
+          - text: Visibility, automation, and orchestration
+            url: /zero-trust/integrate/visibility-automation-orchestration
 
 # Card
   - title: Developer guidance

@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Integrating threat modeling with DevOps   
     
-This post is authored by Simone Curzi, Anthony Nevico, Jonathan Davis, and Rafael Pazos Rodriguez
+This post is authored by Simone Curzi, Anthony Nevico, Jonathan Davis, Rafael Pazos Rodriguez, and Ben Hanson
   
 ## Introduction
   
@@ -115,7 +115,8 @@ The mitigations are not the only artifacts part of a Threat Model, which could a
 
 > **Nice to know**
 >
-> The WITHOUT clause is not an original idea by the team who has produced this page. We are not sure about who first introduced it, but we are grateful to whoever came with this idea.
+> The WITHOUT clause is not an original idea by the team who has produced this page. We are not sure about who first introduced it, but we are grateful to whoever came with this idea.  
+  
 ![A diagram mapping Threats with User Stories and WITHOUT clauses.](media\aligningrequirements.png)  
 _Figure 1: Aligning requirements_  
   
@@ -147,8 +148,8 @@ We rarely identify Security Requirements as part of the Threat Model. Therefore,
 
 You can apply the same idea to other scenarios. For example, the Threat Model could link the Security Requirements with artifacts inside the Threat Model itself – like threats and mitigations – and those in the Track & Bug Tracking tool. For example, the requirement to implement monitoring for identifying attacks in progress should be mapped to all those mitigations related to monitoring and then to the corresponding artifacts in the Task & Bug Tracking tool. As a result, it would be easy to identify situations where a Security Requirement is not realized: in fact, it would not be linked to anything.
 
-You can use the same links between the artifacts in the Task & Bug Tracking tool and the threats and mitigations identified by the Threat Model to facilitate the prioritization of the security activities. Security is usually implemented last, sometimes to address reactively vulnerabilities identified by some tool or a Penetration Test. On the contrary, it would be most effective to implement the mitigations along with the related User Stories or Features. Why wait to implement the controls to secure the credit card details when you should implement them along with the related payment functions? The Threat Model should highlight those relationships and provide a simple way to determine when implementing some feature during a Sprint requires the implementation of some related security feature. This information could be used, for example, during the Sprint Planning meeting to have a meaningful discussion and drive an informed prioritization. The mechanism is simple. Let's suppose that the Product Owner for a project we work on decides to plan a User Story for the next Sprint. The said User Story has a WITHOUT clause that is linked to threat. The threat model identifies several mitigations for the same threat. Therefore, we can immediately deduce that we should prioritize one or more of the identified mitigations.  
-  
+You can use the same links between the artifacts in the Task & Bug Tracking tool and the threats and mitigations identified by the Threat Model to facilitate the prioritization of the security activities. Security is usually implemented last, sometimes to address reactively vulnerabilities identified by some tool or a Penetration Test. On the contrary, it would be most effective to implement the mitigations along with the related User Stories or Features. Why wait to implement the controls to secure the credit card details when you should implement them along with the related payment functions? The Threat Model should highlight those relationships and provide a simple way to determine when implementing some feature during a Sprint requires the implementation of some related security feature. This information could be used, for example, during the Sprint Planning meeting to have a meaningful discussion and drive an informed prioritization. The mechanism is simple. Let's suppose that the Product Owner for a project we work on decides to plan a User Story for the next Sprint. The said User Story has a WITHOUT clause that is linked to threat. The threat model identifies several mitigations for the same threat. Therefore, we can immediately deduce that we should prioritize one or more of the identified mitigations.   
+    
 ![A diagram showing how the link between Threats and Mitigations can be used for prioritizing security.](media\prioritizingsecurity.png) 
 _Figure 2: Prioritizing security_
   

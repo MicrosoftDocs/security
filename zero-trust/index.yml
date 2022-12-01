@@ -66,6 +66,13 @@ landingContent:
           - text: Integrate with Microsoft's Zero Trust solutions
             url: /security/zero-trust/integrate/overview
 
+# Card
+  - title: Developer guidance
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Develop using Zero Trust principles
+            url: /security/zero-trust/develop/overview
 
 # Card
   - title: Rapid Modernization Plan (RaMP)
@@ -80,12 +87,6 @@ landingContent:
             url: data-compliance-gov-data.md
    
             
-  # Card
-  - title: Developer guidance
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Develop using Zero Trust principles
-            url: /security/zero-trust/develop/overview
+
 
              

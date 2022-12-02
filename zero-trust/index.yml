@@ -28,6 +28,10 @@ landingContent:
         links:
         - text: What is Zero Trust?
           url:  zero-trust-overview.md
+        - text: Concepts and deployment objectives
+          url: /security/zero-trust/deploy/overview
+        - text: Small business guidance 
+          url: guidance-smb-partner.md
  # Card
   - title: Microsoft 365 Zero Trust deployment plan
     linkLists:
@@ -45,8 +49,16 @@ landingContent:
             url: /microsoft-365/compliance/information-protection-solution
           - text: Deploy information protection for data privacy regulations
             url: /microsoft-365/solutions/information-protection-deploy
+          - text: Integrate SaaS apps for Zero Trust with Microsoft 365 
+            url: integrate-saas-apps.md
 
-
+ # Card
+  - title: Zero Trust deployment plans with Microsoft Azure and infrastructure
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Secure IaaS infrastructure in Azure
+            url: azure-infrastructure-overview.md
 
  # Card
   - title: Technology partner integrations
@@ -55,25 +67,30 @@ landingContent:
         links:
           - text: Integrate with Microsoft's Zero Trust solutions
             url: /security/zero-trust/integrate/overview
-
+          - text: Visibility, automation, and orchestration
+            url: /zero-trust/integrate/visibility-automation-orchestration
 
 # Card
-  - title: Rapid Modernization Plan (RaMP)
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: User access and productivity
-            url: user-access-productivity-overview.md
-          - text: Data, compliance, and governance
-            url: data-compliance-governance-overview.md
-   
-            
-  # Card
   - title: Developer guidance
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Develop using Zero Trust principles
             url: /security/zero-trust/develop/overview
+
+# Card
+  - title: Rapid Modernization Plan (RaMP)
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Explicitly validate trust for all access requests
+            url: user-access-productivity-validate-trust.md
+          - text: Ransomware recovery readiness
+            url: data-compliance-gov-ransomware-recovery-readiness.md
+          - text: Data protection
+            url: data-compliance-gov-data.md
+   
+            
+
 
              

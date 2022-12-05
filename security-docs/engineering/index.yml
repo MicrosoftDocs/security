@@ -28,8 +28,6 @@ landingContent:
             url: failure-modes-in-machine-learning.md
           - text: Threat modeling AI/ML systems and dependencies
             url: threat-modeling-aiml.md
-          - text: Threat Modeling with DevOps
-            url: threat-modeling-with-dev-ops.md
           - text: Video (RSA 2020) - AI Security Engineering—Modeling/Detecting/Mitigating New Vulnerabilities
             url: https://www.youtube.com/watch?v=SiACfPJblAs
           - text: AI/ML pivots to the Security Development Lifecycle bug bar
@@ -76,6 +74,8 @@ landingContent:
             url: ../SDL/Security-Bug-Bar-Sample.md
           - text: Cryptographic recommendations
             url: ../SDL/Cryptographic-Recommendations.md
+          - text: Threat Modeling with DevOps
+            url: threat-modeling-with-dev-ops.md
 
   # Card
   - title: About Microsoft's Cyber Defense Operations Center

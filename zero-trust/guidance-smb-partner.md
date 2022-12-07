@@ -111,3 +111,6 @@ Azure AD determines when a user will be prompted for multi-factor authentication
 | Use least privileged access | Users must meet authentication requirements to use apps that access company data. |
 | Assume breach | Factors, such as location, device, role, and task are considered when users are authenticated. Multi-factor authentication is used when necessary. |
 
+## See also
+
+[Microsoft 365 Business Premium – productivity and cybersecurity for small business](/microsoft-365/business-premium/)

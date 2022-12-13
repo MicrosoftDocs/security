@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 12/13/2022
 ms.custom: template-concept 
 # Customer intent: As a developer, I want to learn about the permission and consent experience when my application requires administrative consent so that I can better collaborate with admins to implement the Zero Trust principle of least privilege in my applications.
 ---
@@ -88,6 +88,7 @@ Requesting admin consent ahead of time is an excellent choice for line of busine
 - [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
 - [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Overview of permissions and consent in the Microsoft identity platform](/azure/active-directory/develop/permissions-consent-overview) helps you to understand foundational concepts of access and authorization.
 - [Overview of consent and permissions](/azure/active-directory/manage-apps/consent-and-permissions-overview) helps you to learn foundational concepts and scenarios around consent and permissions in Azure AD.
 - Learn module: [Permissions and consent framework](/learn/modules/identity-permissions-consent/) helps you to learn permissions and consent framework models.

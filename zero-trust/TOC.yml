@@ -255,6 +255,10 @@
         href: develop/overprivileged-permissions.md
       - name: Non-user application identity
         href: develop/identity-non-user-applications.md
+      - name: Token customization
+        href: develop/zero-trust-token-customization.md
+      - name: Group claims and app roles in tokens
+        href: develop/configure-tokens-group-claims-app-roles.md
       - name: API protection
         href: develop/protect-api.md
       - name: Protected API example

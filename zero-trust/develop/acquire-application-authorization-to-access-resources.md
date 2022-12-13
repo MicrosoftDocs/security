@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 12/13/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to understand how to best ensure Zero Trust when acquiring resource access permissions for my application.
 ---
@@ -41,6 +41,8 @@ When you need to allow your application to call an API or authorize your applica
 
 ## Next steps
 
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop using Zero Trust principles.
 - [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.
 - [Providing application identity credentials when there's no user](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (non-user applications) on Azure is Managed Identities for Azure resources.

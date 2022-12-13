@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 12/13/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to learn best practices for my application development lifecycle so that I can create secure applications that are Zero Trust compliant, starting with identity and access management (IAM).
 ---
@@ -81,7 +81,7 @@ When you support CAE, tokens that Microsoft Graph issues are valid for 24 hours 
 
 ## Define app roles for IT to assign to users and groups
 
-[App roles](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) help you to implement role-based access control in your applications. Common examples of app roles include Administrator, Reader, and Contributor. Role-based access control allows your application to restrict sensitive actions to users or groups based on their defined roles.
+[App roles](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) help you to implement role-based access control in your applications. Common examples of app roles include Administrator, Reader, and Contributor. Role-based access control allows your application to restrict sensitive actions to [users or groups based on their defined roles](configure-tokens-group-claims-app-roles.md).
 
 App roles enable features such as Azure AD [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) that provides users with just-in-time and time-bound access to sensitive roles. PIM reduces the likelihood of malicious actors gaining access or unauthorized users inadvertently impacting sensitive resources.
 
@@ -91,6 +91,8 @@ When you're a [verified publisher](/azure/active-directory/develop/publisher-ver
 
 ## Next steps
 
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Building apps with a Zero Trust approach to identity](identity.md) provides an overview of permissions and access best practices.
 - The [Identity integrations](../integrate/identity.md) guide explains how to integrate security solutions with Microsoft products to create Zero Trust solutions.
 - [Developer and administrator responsibilities for application registration, authorization, and access](identity-developer-administrator-responsibilities.md) helps you to better collaborate with your IT Pros.

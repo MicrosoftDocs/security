@@ -1,7 +1,7 @@
 ---
 title: RaMP Checklist — Explicitly validate trust for all access requests
 description: Explicitly validate trust for all access requests 
-ms.service: network-access
+ms.service: security
 ms.author: dansimp
 author: dansimp
 manager: dansimp

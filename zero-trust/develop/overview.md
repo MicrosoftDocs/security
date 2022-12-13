@@ -32,7 +32,7 @@ The development guidance in this section will help you to increase security, red
 
 ## Next steps
 
-[Subscribe](https://learn.microsoft.com/api/search/rss?search=%22Develop+using+Zero+Trust+principles%22&locale=en-us) to  our *Develop using Zero Trust principles* RSS feed for notification of new articles.
+[Subscribe](/api/search/rss?search=%22Develop+using+Zero+Trust+principles%22&locale=en-us) to  our *Develop using Zero Trust principles* RSS feed for notification of new articles.
 
 ### Developer guidance overview
 

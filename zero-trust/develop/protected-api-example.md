@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 12/13/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to to design a permissions and consent strategy so that I can provide the best user experience when I implement least privilege.
 ---
@@ -78,6 +78,8 @@ As demonstrated in the [Requesting permissions that require administrative conse
 
 - [Calling an API from another API](api-calls-api.md) helps you to ensure Zero Trust when you have one API that needs to call another API and securely develop your application when it's working on behalf of a user.
 - [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Requesting permissions that require administrative consent](permissions-require-admin-consent.md) describes the permission and consent experience when application permissions will require administrative consent.
 - In this [Quickstart: Protect a web API with the Microsoft identity platform](/azure/active-directory/develop/web-api-quickstart?pivots=devlang-aspnet), download and run a code sample that demonstrates how to protect an ASP.NET web API.
 - In this [Tutorial - Transform and protect your API in Azure API Management](/azure/api-management/transform-api), learn about configuring common policies to hide technology stack info and original URLs in the API HTTP response body.

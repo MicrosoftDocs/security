@@ -5,7 +5,7 @@ ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 11/11/2022
+ms.date: 12/13/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to develop using Zero Trust principles so that I can innovate quickly and securely.
 ---
@@ -137,7 +137,7 @@ Our recommended Workload Identity Federation workflow, illustrated in the follow
 1. Azure AD accesses and issues the token.
 1. The deploy action uses the Azure AD access token to deploy to resources in Azure.
 
-Watch April Edwards, Senior Cloud Advocate and DevOps Practice Lead, demo the Workload Identity Federation workflow. The demonstration begins at the 19:14 mark in the [Accelerate and secure your code to cloud development](https://mybuild.microsoft.com/en-US/sessions/84ff7d8d-64da-4a5e-9c84-92f7b6387225?source=sessions) Microsoft Build 2022 session that is [also available on YouTube](https://youtu.be/1fMdA3pSBaY?t=1154) (embedded below).
+Watch April Edwards, Senior Cloud Advocate and DevOps Practice Lead, demo the Workload Identity Federation workflow. The demonstration begins at the 19:14 mark in the [Accelerate and secure your code to cloud development](https://mybuild.microsoft.com/en-US/sessions/84ff7d8d-64da-4a5e-9c84-92f7b6387225?source=sessions) Microsoft Build 2022 session that is [also available on YouTube](https://www.youtube.com/watch?v=1fMdA3pSBaY&t=1154s) (embedded below).
 
 > [!VIDEO https://www.youtube.com/embed/1fMdA3pSBaY]
 
@@ -149,3 +149,5 @@ Watch April Edwards, Senior Cloud Advocate and DevOps Practice Lead, demo the Wo
 - [Accelerate and secure your code with Azure DevOps](/events/resources/build-2022/accelerate-secure-devops) with tools that give developers the fastest and most secure code to cloud experience.
 - [Securing the developer environment](secure-dev-environment-zero-trust.md) helps you to implement Zero Trust principles in your development environments with best practices for least privilege, branch security, and trusting tools, extensions, and integrations.
 - [Securing DevOps environments for Zero Trust](secure-devops-environments-zero-trust.md) describes best practices for securing your DevOps environments for preventing hackers from compromising developer boxes, infecting release pipelines with malicious scripts, and gaining access to production data via test environments.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.

@@ -33,7 +33,7 @@ landingContent:
         - text: Small business guidance 
           url: guidance-smb-partner.md
  # Card
-  - title: Microsoft 365 Zero Trust deployment plan
+  - title: Microsoft 365 deployment plan for Zero Trust
     linkLists:
       - linkListType: deploy
         links:
@@ -41,7 +41,7 @@ landingContent:
             url: /microsoft-365/enterprise/deploy-identity-solution-overview
           - text: Zero Trust identity and device configurations
             url: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations
-          - text: Manage endpoints with Microsft 365 Defender
+          - text: Manage endpoints with Microsoft 365 Defender
             url: /microsoft-365/solutions/manage-devices-with-intune-overview
           - text: Evaluate, pilot, and deploy Microsoft 365 Defender
             url: /microsoft-365/security/defender/eval-overview
@@ -67,6 +67,18 @@ landingContent:
         links:
           - text: Integrate with Microsoft's Zero Trust solutions
             url: /security/zero-trust/integrate/overview
+          - text: Identity
+            url: /zero-trust/integrate/identity
+          - text: Endpoints
+            url: /zero-trust/integrate/endpoints
+          - text: Applications
+            url: /zero-trust/integrate/applications
+          - text: Data
+            url: /zero-trust/integrate/data
+          - text: Infrastructure
+            url: /zero-trust/integrate/infrastructure
+          - text: Networks
+            url: /zero-trust/integrate/networks
           - text: Visibility, automation, and orchestration
             url: /zero-trust/integrate/visibility-automation-orchestration
 
@@ -77,6 +89,10 @@ landingContent:
         links:
           - text: Develop using Zero Trust principles
             url: /security/zero-trust/develop/overview
+          - text: Building apps that secure identity through permissions and consent
+            url: /security/zero-trust/develop/identity
+          - text: Securing DevOps environments for Zero Trust
+            url: /security/zero-trust/develop/secure-devops-environments-zero-trust
 
 # Card
   - title: Rapid Modernization Plan (RaMP)

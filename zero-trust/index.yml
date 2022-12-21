@@ -28,8 +28,20 @@ landingContent:
         links:
         - text: What is Zero Trust?
           url:  zero-trust-overview.md
-        - text: Concepts and deployment objectives
-          url: /security/zero-trust/deploy/overview
+        - text: Identity
+          url: /zero-trust/deploy/identity
+        - text: Endpoints
+          url: /zero-trust/deploy/endpoints
+        - text: Applications
+          url: /zero-trust/deploy/applications
+        - text: Data
+          url: /zero-trust/deploy/data
+        - text: Infrastructure
+          url: /zero-trust/deploy/infrastructure
+        - text: Networks
+          url: /zero-trust/deploy/networks
+        - text: Visibility, automation, and orchestration
+          url: /zero-trust/deploy/visibility-automation-orchestration
         - text: Small business guidance 
           url: guidance-smb-partner.md
  # Card

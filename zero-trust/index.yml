@@ -29,19 +29,19 @@ landingContent:
         - text: What is Zero Trust?
           url:  zero-trust-overview.md
         - text: Identity
-          url: /zero-trust/deploy/identity
+          url: /security/zero-trust/deploy/identity
         - text: Endpoints
-          url: /zero-trust/deploy/endpoints
+          url: /security/zero-trust/deploy/endpoints
         - text: Applications
-          url: /zero-trust/deploy/applications
+          url: /security/zero-trust/deploy/applications
         - text: Data
-          url: /zero-trust/deploy/data
+          url: /security/zero-trust/deploy/data
         - text: Infrastructure
-          url: /zero-trust/deploy/infrastructure
+          url: /security/zero-trust/deploy/infrastructure
         - text: Networks
-          url: /zero-trust/deploy/networks
+          url: /security/zero-trust/deploy/networks
         - text: Visibility, automation, and orchestration
-          url: /zero-trust/deploy/visibility-automation-orchestration
+          url: /security/zero-trust/deploy/visibility-automation-orchestration
         - text: Small business guidance 
           url: guidance-smb-partner.md
  # Card
@@ -80,19 +80,19 @@ landingContent:
           - text: Integrate with Microsoft's Zero Trust solutions
             url: /security/zero-trust/integrate/overview
           - text: Identity
-            url: /zero-trust/integrate/identity
+            url: /security/zero-trust/integrate/identity
           - text: Endpoints
-            url: /zero-trust/integrate/endpoints
+            url: /security/zero-trust/integrate/endpoints
           - text: Applications
-            url: /zero-trust/integrate/applications
+            url: /security/zero-trust/integrate/applications
           - text: Data
-            url: /zero-trust/integrate/data
+            url: /security/zero-trust/integrate/data
           - text: Infrastructure
-            url: /zero-trust/integrate/infrastructure
+            url: /security/zero-trust/integrate/infrastructure
           - text: Networks
-            url: /zero-trust/integrate/networks
+            url: /security/zero-trust/integrate/networks
           - text: Visibility, automation, and orchestration
-            url: /zero-trust/integrate/visibility-automation-orchestration
+            url: /security/zero-trust/integrate/visibility-automation-orchestration
 
 # Card
   - title: Developer guidance

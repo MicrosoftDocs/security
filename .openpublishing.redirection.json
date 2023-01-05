@@ -116,6 +116,12 @@
         "source_path": "compass/backup-plan-to-protect-against-ransomware.md",
         "redirect_url": "/azure/security/fundamentals/backup-plan-to-protect-against-ransomware",
         "redirect_document_id": false
+      },
+
+      {
+        "source_path": "zero-trust/integrate/sentinel-solution.md",
+        "redirect_url": "/azure/sentinel/sentinel-solution",
+        "redirect_document_id": false
       }
   ] 
   } 

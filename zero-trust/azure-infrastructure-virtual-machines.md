@@ -7,7 +7,7 @@ author: sikovatc
 ms.author: sikovatc
 ms.topic: conceptual
 ms.collection: 
-  - msftsolution-accesscontrol
+  - msftsolution-azureiaas
   - msftsolution-scenario
   - zerotrust-solution
 ---

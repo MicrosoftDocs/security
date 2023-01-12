@@ -7,7 +7,7 @@ author: brsteph
 ms.author: bstephenson
 ms.topic: conceptual
 ms.collection: 
-  - msftsolution-accesscontrol
+  - msftsolution-azureiaas
   - msftsolution-scenario
   - zerotrust-solution
 ---

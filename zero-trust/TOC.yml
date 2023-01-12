@@ -157,22 +157,18 @@
           href: /microsoft-365/security/defender/eval-defender-promote-to-production?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Deploy a Microsoft Information Protection solution 
       href: /microsoft-365/compliance/information-protection-solution?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-    - name: Deploy information protection for data privacy regulations
+    - name: Manage data privacy and data protection with Microsoft Priva and Microsoft Purview
       items: 
       - name: Overview
-        href: /microsoft-365/solutions/information-protection-deploy?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Plan
-        href: /microsoft-365/solutions/information-protection-deploy-assess?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Track
-        href: /microsoft-365/solutions/information-protection-deploy-compliance?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Prevent
-        href: /microsoft-365/solutions/information-protection-deploy-identity-device-threat?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Protect
-        href: /microsoft-365/solutions/information-protection-deploy-protect-information?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Retain
-        href: /microsoft-365/solutions/information-protection-deploy-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Investigate
-        href: /microsoft-365/solutions/information-protection-deploy-monitor-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        href: /microsoft-365/solutions/data-privacy-protection?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 1. Assess data and risks
+        href: /microsoft-365/solutions/data-privacy-protection-assess?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 2. Protect and govern data
+        href: /microsoft-365/solutions/data-privacy-protection-protect-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 3. Stay on track
+        href: /microsoft-365/solutions/data-privacy-protection-regulations?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 4. Respond to incidents and subject requests
+        href: /microsoft-365/solutions/data-privacy-protection-respond-requests?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Integrate SaaS apps for Zero Trust with Microsoft 365 
       items:
       - name: Overview

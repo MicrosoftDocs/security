@@ -42,7 +42,7 @@ Require multi-factor authentication, at least for your administrators. See [Cond
    * **Name** - Secure Workstation Administrator
    * **User name** - `secure-ws-user@contoso.com`
    * **Directory role** - **Limited administrator** and select the **Intune Administrator** role.
-   * **Usage Location** - For example **United Kingdom**, or your desired location form the list.
+   * **Usage Location** - For example **United Kingdom**, or your desired location from the list.
 
 1. Select **Create**.
 
@@ -53,7 +53,7 @@ Create your device administrator user.
    * **Name** - Secure Workstation Administrator
    * **User name** - `secure-ws-admin@contoso.com`
    * **Directory role** - **Limited administrator** and select the **Intune Administrator** role.
-   * **Usage Location** - For example **United Kingdom**, or your desired location form the list.
+   * **Usage Location** - For example **United Kingdom**, or your desired location from the list.
 
 1. Select **Create**.
 

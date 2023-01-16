@@ -216,7 +216,7 @@
       items:
       - name: Overview
         href: integrate/visibility-automation-orchestration.md
-      - name: Monitor Zero Trust with Sentinel
+      - name: Monitor Zero Trust with Microsoft Sentinel
         href: /azure/sentinel/sentinel-solution?toc=/security/zero-trust/integrate/TOC.json&bc=/security/zero-trust/breadcrumb/toc.json
 - name: Developer guidance
   expanded: false

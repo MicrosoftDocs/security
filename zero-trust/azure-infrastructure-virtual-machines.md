@@ -276,8 +276,8 @@ For more training on Azure, see the entire Microsoft catalog:<br>
 > [!div class="nextstepaction"]
 > [Start >](/training/paths/implement-host-security)
 
-For more training on Azure, see the entire Microsoft catalog:<br> 
-[Browse all - Training | Microsoft Learn](/training/browse)
+For more training on virtual machines in Azure, see these resources in the Microsoft catalog:<br> 
+[Virtual machines in Azure | Microsoft Learn](/training/browse/?products=azure&subjects=virtual-machine&expanded=infrastructure)
 
 ## Next Steps
 

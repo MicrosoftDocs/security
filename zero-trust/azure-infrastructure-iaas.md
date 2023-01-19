@@ -38,18 +38,18 @@ In the illustration:
 - Each virtual machine role is assigned to an application security group corresponding to its role.
 - Access to the application is provided through an Application Gateway contained in its own subnet.
 
-The application illustrated by the reference architecture follows the [N-tier architecture style - Azure Architecture Center](/azure/architecture/guide/architecture-styles/n-tier)
+The application illustrated by the reference architecture follows the [N-tier architecture style](/azure/architecture/guide/architecture-styles/n-tier)
 
-The following diagram shows the logical architecture of these components within an Azure subscription.
+The following diagram shows the components of a resource group for a spoke VNet in an Azure subscription.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="Diagram of logical architecture components within an Azure subscription.":::
+:::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="Diagram of the components of a resource group for a spoke VNet.":::
 
-In the illustration, all components of the spoke virtual network are contained in a dedicated resource group:
+In the diagram, all the components of the spoke VNet are contained in a dedicated resource group:
 
-- One virtual network
+- One VNet
 - One Azure Application Gateway (App GW), including a Web Application Firewall (WAF)
 - Three network security groups, one for each application tier
-- Three application security groups, one for each tier
+- Three application security groups, one for each application tier
 
 ## What's in this article
 
@@ -115,7 +115,7 @@ See [Diagnostic Settings](/azure/azure-monitor/essentials/diagnostic-settings) t
 
 ## Step 3. Create a network security group for each subnet
 
-Azure network security groups (NSGs) are used to filter network traffic between Azure resources in an Azure virtual network. It is recommended to apply a NSG to each subnet. This is enforced through Azure policy by default when deploying Azure Landing Zones. A network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, several types of Azure resources. For each rule, you can specify source and destination, port, and protocol.
+Azure network security groups are used to filter network traffic between Azure resources in an Azure virtual network. It is recommended to apply a network security group to each subnet. This is enforced through Azure policy by default when deploying Azure Landing Zones. A network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, several types of Azure resources. For each rule, you can specify source and destination, port, and protocol.
 
 For a multi-tier virtual-machine based application, the recommendation is to create a dedicated network security group (NSG in the following figure) for each subnet that hosts a virtual machine role.
 
@@ -124,7 +124,7 @@ For a multi-tier virtual-machine based application, the recommendation is to cre
 In the illustration:
 
 - Each tier of the application is hosted in a dedicated subnet such as, web tier, app tier, and data tier.
-- A network security group (NSG) is configured for each of these subnets.
+- A network security group is configured for each of these subnets.
 
 Configuring network security groups in a different way than illustrated above can result in incorrect configuration of some or all of the network security groups and can create issues in troubleshooting. It can also make it difficult to monitor and log.
 
@@ -136,7 +136,7 @@ Read more about [Network security groups](/azure/virtual-network/network-securit
 
 Application security groups enable you to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses. The platform handles the complexity of explicit IP addresses and multiple rule sets, allowing you to focus on your business logic.
 
-Inside your workload, identify the specific virtual machine roles. Then, build an application security group for each role. In the reference architecture, three application security groups (ASGs) are represented.
+Inside your workload, identify the specific virtual machine roles. Then, build an application security group for each role. In the reference architecture, three application security groups are represented.
 
 :::image type="content" source="media/spoke/azure-infra-spoke-asg-5.png" alt-text="Diagram of example application security groups for different virtual machine roles.":::
 
@@ -148,7 +148,7 @@ In the illustration:
 For more information about application security groups and how to assign these to virtual machines, see [Azure application security groups overview | Microsoft Learn](/azure/virtual-network/application-security-groups).
 
 > [!NOTE]
-> If you are using load balancers, using IP address of the load balancer in the NSGs is required as ASGs cannot scope a load balancer.
+> If you are using load balancers, using IP address of the load balancer in the network security groups is required as application security groups cannot scope a load balancer.
 
 ## Step 5. Secure traffic and resources within the virtual network
 
@@ -192,8 +192,8 @@ If you click the rule and scroll to the bottom, you will see more details, as sh
 
 This message gives the following two warnings:
 
-- Azure Load Balancers will not, by default, be able to access resources using this NSG.
-- Other resources on this virtual network will not, by default, be able to access resources using this NSG.
+- Azure Load Balancers will not, by default, be able to access resources using this network security group.
+- Other resources on this virtual network will not, by default, be able to access resources using this network security group.
 
 For our purpose in Zero Trust, this is how it should be. It means that just because something is on this virtual network, doesn't mean that it will have immediate access to your resources. For each traffic pattern, you will need to create a rule explicitly allowing it and you should do so with the least amount of permissions. Thus if you have specific outbound connections for management, such as to Active Directory Domain Services (AD DS) domain controllers, private DNS VMs, or to specific external websites, they need to be controlled here.
 
@@ -283,7 +283,7 @@ In the network security group for the data tier subnet, navigate to **Inbound Se
 - Source IP Address: The IP address of the load balancer
 - Source port ranges: 1433
 - Destination: Application security group
-- Destination application security groups: Select your data tier ASG
+- Destination application security groups: Select your data tier application security group
 - Service: MS SQL
 - Destination Port Ranges: This will be automatically filled in for port 1433.
 - Protocol: This will be automatically selected for TCP.
@@ -299,10 +299,10 @@ In the same network security group, navigate to **Outbound Security Rules** and 
 In the network security group for the data tier subnet, navigate to **Inbound Security Rules** and select **Add**. Populate the list with the following:
 
 - Source: Application security group
-- Destination application security groups: Select your data tier ASG
+- Destination application security groups: Select your data tier application security group
 - Source port ranges: 1433
 - Destination: Application security groups
-- Destination application security groups: Select your data tier ASG
+- Destination application security groups: Select your data tier application security group
 - Service: MS SQL
 - Destination Port Ranges: This will be automatically filled in for port 1433.
 - Protocol: This will be automatically selected for TCP.
@@ -321,7 +321,7 @@ In addition to the application specific traffic, you need to plan for management
 
 See the full reference architecture in the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md) article.
 
-This will vary based on your specific management needs. However, rules on the firewall appliances and rules on the NSG should be used to explicitly allow connections on both the platform networking side and the workload networking side.
+This will vary based on your specific management needs. However, rules on the firewall appliances and rules on the network security group should be used to explicitly allow connections on both the platform networking side and the workload networking side.
 
 ### Deploy network security group flow logging
 
@@ -383,7 +383,7 @@ If you choose to onboard one of the Defender for Cloud plans that offer Advanced
 
 :::image type="content" source="media\spoke\network-hardening.png" alt-text="Screenshot of example network hardening recommendations." lightbox="media\spoke\network-hardening.png"::: 
 
-You can accept the recommendation by selecting **Enforce**, which will either create a new NSG rule or modify an existing one.
+You can accept the recommendation by selecting **Enforce**, which will either create a new network security group rule or modify an existing one.
 
 ## Recommended training
 

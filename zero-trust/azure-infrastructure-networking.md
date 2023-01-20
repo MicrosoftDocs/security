@@ -43,7 +43,7 @@ In the figure, a hub VNet includes components to support access to other apps an
 - VPN Gateway
 - DDOS Protection
 
-The hub VNet provides access from these components to an IaaS-based app hosted on virtual machines in the spoke VNet.
+The hub VNet provides access from these components to an IaaS-based app hosted on virtual machines in a spoke VNet.
 
 For guidance on organizing for cloud adoption, see [Manage organization alignment](/azure/cloud-adoption-framework/organize/) in the The Cloud Adoption Framework.
 
@@ -61,9 +61,9 @@ The following diagram shows the components of a resource group for a hub VNet in
 In the diagram:
 
 - The resources for the hub VNet are contained within a dedicated resource group. If you selected Azure DDoS Plan to be deployed as a part of the resources, that will be included as well.
-- The resources within the spoke VNet are contained within a separate dedicated resource group.
+- The resources within a spoke VNet are contained within a separate dedicated resource group.
 
-Depending on your deployment, you may also note that there can be a deployment of an array for Private DNS Zones used for Private Link DNS resolution. These are used to secure PaaS resources with Private Endpoints, which will be detailed in a future section. Note that it deploys both a VPN Gateway and an ExpressRoute Gateway. You may not need both, so you can remove whichever one is not needed for your scenario, or turn it off during deployment.
+Depending on your deployment, you may also note that there can be a deployment of an array for Private DNS Zones used for Private Link DNS resolution. These are used to secure PaaS resources with Private Endpoints, which will be detailed in a future section. Note that it deploys both a VPN Gateway and an ExpressRoute Gateway. You may not need both, so you can remove whichever one is not needed for your scenario or turn it off during deployment.
 
 ## What's in this article?
 
@@ -133,7 +133,7 @@ To configure Azure Firewall Premium to a Zero Trust configuration, make the foll
     1. Prepare a certificate to be used stored in a Key Vault, or plan to auto-generate a certificate with a managed identity. You can review these options for [Azure Firewall Premium certificates](/azure/firewall/premium-certificates) to select the option for your scenario.
     1. Navigate to the Firewall Policy and select **TLS Inspection**.
     1. Select **Enabled**.
-    1. Either select a Managed Identity to be used to generate certificates, or select the Key Vault and Certificate.
+    1. Either select a Managed Identity to be used to generate certificates, or select the key vault and certificate.
     1. Then select **Save**.
 
    :::image type="content" source="media/hub/hub-tls-inspection.png" alt-text="Screenshot of enabling TLS inspection." lightbox="media/hub/hub-tls-inspection.png":::
@@ -151,9 +151,9 @@ To configure Azure Firewall Premium to a Zero Trust configuration, make the foll
     1. In the Firewall Policy, navigate to **Application Rules**.
     1. Select **Add a rule collection**.
     1. Create an application rule with the source of your Application Gateway subnet, and a destination of the domain name of the web app that is being protected.
-    1. Ensure that TLS inspection is enabled.
+    1. Ensure that **TLS inspection** is enabled.
 
-    :::image type="content" source="media/ApplicationRuleExample.gif" alt-text="Diagram for create an application rule." lightbox="media/ApplicationRuleExample.gif":::
+    :::image type="content" source="media/ApplicationRuleExample.gif" alt-text="Diagram for creating an application rule." lightbox="media/ApplicationRuleExample.gif":::
 
 ### Additional configuration
 
@@ -162,11 +162,11 @@ With the Azure Firewall Premium configured, you can now perform the following:
 - Configure Application Gateways to route traffic to your Azure Firewall by assigning the appropriate route tables and [following this guidance](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall#hub-and-spoke-example).
 - Create alerts for firewall events and metrics by [following these instructions](/azure/firewall/firewall-diagnostics).
 - Deploy the [Azure Firewall Workbook](/azure/firewall/firewall-workbook) to visualize events.
-- Configure URL and [Web category filtering](/azure/firewall/web-categories), if needed. Because Azure Firewall is deny by default, this configuration is needed only if the Azure Firewall needs to grant outbound internet access broadly. However, use additional verifications to determine connections.
+- Configure URL and [Web category filtering](/azure/firewall/web-categories), if needed. Because Azure Firewall denies by default, this configuration is needed only if the Azure Firewall needs to grant outbound internet access broadly. However, use additional verifications to determine connections.
 
 ## Step 2. Deploy Azure DDoS Protection Standard
 
-As a part of the deployment, you will want to deploy an Azure DDoS Protection Standard Policy. This increases Zero Trust protection provided on the Azure Platform, as described in the following table.
+As a part of the deployment, you will want to deploy an Azure DDoS Protection Standard Policy. This increases Zero Trust protection provided on the Azure Platform.
 
 | Zero Trust principle | Met by |
 | --- | --- |
@@ -236,11 +236,11 @@ This guide details the second option because it is more compatible with the refe
 > [!NOTE]
 > [Azure Virtual Network Manager](/azure/virtual-network-manager/overview) is a service that simplifies this process. When this service is Generally Available, it should be used to manage the routing.
 
-### Configure Gateway Subnet Routing
+### Configure gateway subnet routing
 
 To configure the Gateway Subnet route table to forward internal traffic to the Azure Firewall, create and configure a new Route Table:
 
-1. Navigate to **Create a Route Table** in the Azure Portal.
+1. Navigate to **Create a Route Table** in the Microsoft Azure portal.
 1. Place the Route Table in a resource group, select a region, and specify a name.
 1. Select **Review + Create** and then  **Create**.
 
@@ -259,11 +259,9 @@ To configure the Gateway Subnet route table to forward internal traffic to the A
    1. Provide the Azure Firewall's private IP address in the **Next hop address** field.
    1. Select **Add**.
 
-Here is an example.
+   :::image type="content" source="media/hub/hub-add-route.png" alt-text="Screenshot of adding an example route." lightbox="media/hub/hub-add-route.png":::
 
-:::image type="content" source="media/hub/hub-add-route.png" alt-text="Screenshot of adding an example route." lightbox="media/hub/hub-add-route.png":::
-
-#### Associate the Route Table to the Gateway subnet
+#### Associate the route table to the gateway subnet
 
 1. Navigate to **Subnets**, and select **Associate**.
 1. Select the Hub VNet in the **Virtual network** drop-down list.
@@ -272,7 +270,7 @@ Here is an example.
 
 Here is an example.
 
-:::image type="content" source="media/hub/hub-associate-subnet.png" alt-text="Screenshot of associate Subnets." lightbox="media/hub/hub-associate-subnet.png":::
+:::image type="content" source="media/hub/hub-associate-subnet.png" alt-text="Screenshot of associating Subnets." lightbox="media/hub/hub-associate-subnet.png":::
 
 Your gateway will now forward traffic intended for spoke VNets to the Azure Firewall.
 
@@ -321,7 +319,7 @@ To view all the Azure policies that provide network recommendation used by Micro
 
 1. Select **Security policy**.
 
-1. If you click in the ASC Default, you will be able to review all the policies available, including the policies that evaluate network resources.
+1. If you select in the ASC Default, you will be able to review all the policies available, including the policies that evaluate network resources.
 
 1. Additionally, there will be network resources evaluated by other regulatory compliances including PCI, ISO and the Microsoft cloud security benchmark. You can enable any of them and track for network recommendations.
 
@@ -353,9 +351,9 @@ You can also check options to get a better security posture by hardening your ne
 
 Azure Firewall is recommended for a hub VNet, as described in this article. Microsoft Defender for Cloud can manage multiple Azure Firewall policies centrally. In addition to Azure Firewall policies, you will be able to manage other features related to Azure Firewall, as shown here.
 
-:::image type="content" source="media/hub/firewall-manager-mdc.jpg" alt-text="Screenshot of Azure firewall policies through Microsoft Defender for Cloud.":::
+:::image type="content" source="media/hub/firewall-manager-mdc.jpg" alt-text="Screenshot of managing Azure firewall policies through Microsoft Defender for Cloud.":::
 
-For more information about Microsoft Defender for Cloud and how you can use it to get your network environment better protected against threats, see [What is Microsoft Defender for Cloud? - Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
+For more information about Microsoft Defender for Cloud and how you can better protect your network environment against threats, see [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
 ## Recommended training
 

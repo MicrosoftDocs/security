@@ -7,7 +7,7 @@ author: rudneir2
 ms.author: ruolivei
 ms.topic: conceptual
 ms.collection: 
-  - msftsolution-accesscontrol
+  - msftsolution-azureiaas
   - msftsolution-overview
   - zerotrust-solution
 ---

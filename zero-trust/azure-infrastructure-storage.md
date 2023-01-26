@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to storage in Azure
 description: Learn how to secure Azure storage with Zero Trust.  
-ms.date: 10/20/2022
+ms.date: 01/27/2023
 ms.service: security
 author: sikovatc
 ms.author: sikovatc

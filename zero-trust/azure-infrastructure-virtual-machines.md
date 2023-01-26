@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to virtual machines in Azure 
 description: Learn how to secure virtual machines in Azure with Zero Trust.  
-ms.date: 10/20/2022
+ms.date: 01/27/2023
 ms.service: security
 author: sikovatc
 ms.author: sikovatc

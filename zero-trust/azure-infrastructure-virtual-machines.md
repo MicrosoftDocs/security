@@ -19,26 +19,24 @@ This article helps you apply the principles of Zero Trust to virtual machines in
 - Use least privileged access
 - Assume breach
 
-This article is part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes a spoke VNet hosting a virtual machine-based workload. For an overview, see [Apply Zero Trust principles to Azure infrastructure.](azure-infrastructure-overview.md)
+This article is part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes a spoke VNet hosting a virtual machine-based workload. For an overview, see [Apply Zero Trust principles to Azure infrastructure](azure-infrastructure-overview.md).
 
 ## Logical architecture for virtual machines
 
 Zero Trust principles for virtual machines are applied across the logical architecture, from the tenant and directory level down to the data and application layer within each virtual machine.
 
-The following illustration provides a reference of logical architecture components.
+The following diagram the logical architecture components.
 
-:::image type="content" source="media/vm/vm-security-configure.png" alt-text="Diagram of storage security configuration." lightbox="media/vm/storage-security-configure.png":::
+:::image type="content" source="media/vm/vm-security-configure.png" alt-text="Diagram of the virtual machine logical architecture." lightbox="media/vm/vm-security-configure.png":::
 
-In this illustration:
+In this diagram:
 
-- The **A** box is a set of virtual machines isolated within a dedicated resource group that resides within an Azure subscription.
-- The **B** box is the logical architecture for a single virtual machine with the following components called out: applications, operating system, disks, boot loaders, OS Kernel, drivers, and the Trusted Platform Module (TPM) component.
+- **A** is a set of virtual machines isolated within a dedicated resource group that resides within an Azure subscription.
+- **B** is the logical architecture for a single virtual machine with the following components called out: applications, operating system, disks, boot loaders, OS Kernel, drivers, and the Trusted Platform Module (TPM) component.
 
-This article walks through the steps to apply the principles of Zero Trust across this logical architecture. The steps are illustrated and described below.
+This article walks through the steps to apply the principles of Zero Trust across this logical architecture, using these steps.
 
 :::image type="content" source="media/vm/azure-infra-vm-subscription-architecture-2.png" alt-text="Diagram of virtual machines logical architecture components." lightbox="media/vm/azure-infra-vm-subscription-architecture-2.png":::
-
-The following table describes the tasks that are numbered in the illustration.
 
 | Step | Task |
 | --- | --- |
@@ -55,7 +53,7 @@ The following table describes the tasks that are numbered in the illustration.
 
 Begin by isolating virtual machines within a dedicated resource group. You can isolate virtual machines into different resource groups based on purpose, data classification, and governance requirements, such as the need to control permissions and monitoring.
 
-Using dedicated resource groups allows you to set policies and permissions that apply to all the virtual machines within the resource group. This is also where you use Role Based Access Control (RBAC) to create least privileged access to the Azure resources contained in the resource group.
+Using dedicated resource groups allows you to set policies and permissions that apply to all the virtual machines within the resource group. This is also where you use role based access control (RBAC) to create least privileged access to the Azure resources contained in the resource group.
 
 For more information on creating and managing resource groups, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
@@ -67,17 +65,17 @@ You assign a virtual machine to a resource group when you first create the virtu
 
 Zero Trust requires configuring least privileged access. To do so, you need to limit user access with just-in-time and just-enough access (JIT/JEA) based on their role, workload, and data classification.
 
-The following built-in roles are commonly used for virtual machine (VM) access:
+The following built-in roles are commonly used for virtual machine access:
 
 - **Virtual Machine User Login:**  View virtual machines in the portal and sign-in as a regular user.
 - **Virtual Machine Administration Login:**  View virtual machines in the portal and sign-in to virtual machines as an Administrator.
-- **Virtual Machine Contributor:**  Create and manage virtual machines, including reset root user's password and managed disks. Does not grant access to the management virtual network or the ability to assign permissions to the resources.
+- **Virtual Machine Contributor:**  Create and manage virtual machines, including reset root user's password and managed disks. Does not grant access to the management virtual network (VNet) or the ability to assign permissions to the resources.
 
-To join a VM to a virtual network, you can use the custom permission **Microsoft.Network/virtualNetworks/subnets/join/action** to make a custom role.
+To join a virtual machine to a VNet, you can use the custom permission **Microsoft.Network/virtualNetworks/subnets/join/action** to make a custom role.
 
 When this custom role is leveraged in conjunction with Managed Identity and Conditional Access Policy, you can use device state, data classification, anomalies, location, and identity to force multi-factor authentication and granularly allow access based on verified trust.
 
-To extend your realm of control beyond the system and allow your Azure AD tenant with Microsoft Intelligent Security Graph to support secure access, go to the **Management** blade of the virtual machine and turn on **System Assigned Managed Identity**, as shown here.
+To extend your realm of control beyond the system and allow your Azure Active Directory (Azure AD) tenant with Microsoft Intelligent Security Graph to support secure access, go to the **Management** blade of the virtual machine and turn on **System Assigned Managed Identity**, as shown here.
 
 :::image type="content" source="media/vm/vm-create-vm-step2.png" alt-text="Screenshot of enabling system assigned managed identity." lightbox="media/vm/vm-create-vm-step2.png":::
 
@@ -88,15 +86,15 @@ To extend your realm of control beyond the system and allow your Azure AD tenant
 
 Follow  the steps given below:
 
-- When you create the virtual machine, be sure you configure security for the boot components. Enhanced deployment of VMs allows you to select security type and use [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) and [vTPM](/windows/security/information-protection/tpm/trusted-platform-module-overview).
+- When you create the virtual machine, be sure you configure security for the boot components. Enhanced deployment of virtual machines allows you to select security type and use [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) and [vTPM](/windows/security/information-protection/tpm/trusted-platform-module-overview).
 - Securely deploy virtual machines with verified boot loaders, OS kernels, and drivers that are signed by trusted publishers to establish a "root of trust". If the image is not signed by a trusted publisher, the virtual machine will not boot.
 - Securely protect keys, certificates, and secrets in the virtual machines in a Trusted Platform Module.
 - Gain insights and confidence of the entire boot chain's integrity.
-- Ensure workloads are trusted and verifiable. The vTPM enables [attestation](/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation) by measuring the entire boot chain of your VM (UEFI, OS, system, and drivers).
+- Ensure workloads are trusted and verifiable. The vTPM enables [attestation](/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation) by measuring the entire boot chain of your virtual machine (UEFI, OS, system, and drivers).
 
 Enhanced deployment of virtual machines allows you to select security type and use secure boot and vTPM when you create them, as shown here.
 
-:::image type="content" source="media/vm/vm-create-vm-step3.png" alt-text="Screenshot of specifying security features for a virtual machine." lightbox="media/vm/vm-create-vm-step3.png":::
+:::image type="content" source="media/virtual machine/vm-create-vm-step3.png" alt-text="Screenshot of specifying security features for a virtual machine." lightbox="media/vm/vm-create-vm-step3.png":::
 
 ## Step 4. Enable customer-managed keys and double encryption
 
@@ -104,15 +102,15 @@ Using customer-managed keys and double encryption ensures that if a disk is expo
 
 For information on how to configure a customer-managed encryption key with Azure Key Vault, see [Use the Azure portal to enable server-side encryption with customer-managed keys for managed disks](/azure/virtual-machines/disks-enable-customer-managed-keys-portal). There is an additional cost for using Azure Key Vault.
 
-[Enable server-side encryption of Azure Disk Storage](/azure/virtual-machines/disk-encryption)
+[Enable server-side encryption of Azure Disk Storage](/azure/virtual-machines/disk-encryption) for:
 
-- FIPS 140-2 compliant transparent encryption with [AES 256 encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
-- Greater flexibility to manage controls
-- Can be hardware (HSM) or software defined
+- FIPS 140-2 compliant transparent encryption with [AES 256 encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard).
+- Greater flexibility to manage controls.
+- Hardware (HSM) or software-defined encryption.
 
-[Enable server-side encryption](/azure/virtual-machines/disks-enable-host-based-encryption-portal#prerequisites) at the host for end-to-end encryption of your VM data
+[Enable server-side encryption](/azure/virtual-machines/disks-enable-host-based-encryption-portal#prerequisites) at the host for end-to-end encryption of your virtual machine data.
 
-- Encryption starts on the physical host, your VM is allocated to
+- Encryption starts on the physical host, your virtual machine is allocated to
 - Encrypts the OS and Temporary disks that are provisioned on the host; a ```--d``` carries it over to the storage service
 - Double encryption on OS disks, Data disks, snapshots, and images
 
@@ -129,17 +127,17 @@ It's important to control the applications that can be installed on your virtual
 - Browser extensions (APIs) are difficult to secure which can lead to malicious URL delivery.
 - Unsanctioned apps can go unpatched as they are shadow IT objects (the IT teams are not prepared or have no knowledge that these are installed).
 
-You can use the VM Applications feature to control the applications that are installed on virtual machines. With this feature, you select which VM applications to install. This feature leverages the Azure Compute Gallery to simplify management of applications for virtual machines. When used together with RBAC, you can ensure that only trusted applications are available for users.
+You can use the Virtual Machine Applications feature to control the applications that are installed on virtual machines. With this feature, you select which virtual machine applications to install. This feature leverages the Azure Compute Gallery to simplify management of applications for virtual machines. When used together with RBAC, you can ensure that only trusted applications are available for users.
 
-You select the VM applications on the **Advanced** blade for the virtual machine configuration.
+You select the virtual machine applications on the **Advanced** blade for the virtual machine configuration, as show here.
 
-:::image type="content" source="media/vm/vm-create-vm-step5.png" alt-text="Screenshot for configuring applications for a virtual machine." lightbox="media/vm/vm-create-vm-step5.png":::
+:::image type="content" source="media/vm/vm-create-vm-step5.png" alt-text="Screenshot for configuring applications of a virtual machine." lightbox="media/vm/vm-create-vm-step5.png":::
 
 ## Step 6. Configure secure access
 
 To configure secure access:
 
-- Configure secure communication within the Azure environment between components that are accessing virtual machines directly.
+- Configure secure communication within the Azure environment between components that are accessing virtual machines directly
 - Set up multi-factor authentication with conditional access
 - Use privileged access workstations (PAWs)
 
@@ -148,7 +146,7 @@ To configure secure access:
 In the diagram:
 
 - Multi-factor authentication with conditional access is set up within Azure AD and related portals.
-- Admins use PAWs to access virtual machines directly.
+- Admins use privileged access workstations (PAWs) to access virtual machines directly.
 
 ### Configure secure communication within the Azure environment for virtual machines
 
@@ -177,12 +175,12 @@ Remember that usernames and passwords can be 100% compromised. Using multi-facto
 
 No amount of security at the Network, Transport, or Application layers will matter if you are not coming from a trusted, verified, and secure source.
 
-### Use privileged access workstations (PAWs)
+### Use PAWs
 
-Use [Privileged Access Workstations (PAWs)](/security/compass/privileged-access-devices) to ensure devices that access virtual machines are healthy. PAWs are configured specifically for privileged access to ensure that admins use a device that has:
+Use [Privileged Access Workstations (PAWs)](/security/compass/privileged-access-devices) to ensure devices that access virtual machines are healthy. PAWs are configured specifically for privileged access so that admins use a device that has:
 
 - Security controls and policies that restrict local administrative access.
-- Productivity tools to minimize the attack surface to only what is absolutely required for performing sensitive job tasks.
+- Productivity tools to minimize the attack surface to only what is absolutely required for performing sensitive administrative tasks.
 
 For more information on deployment options, see [Privileged access deployment](/security/compass/privileged-access-deployment).
 
@@ -197,7 +195,7 @@ Secure maintenance of virtual machines includes:
 
 Anti-malware helps protect your virtual machine from threats such as malicious files and adware, etc. You can use anti-malware software from an option of vendors such as Microsoft, Symantec, Trend Micro, and Kaspersky.
 
-[Microsoft Antimalware](/azure/security/fundamentals/antimalware) is a no cost resource that provides real-time protection capability to assist in detection, quarantining and eradicating malicious software, spyware, and viruses:
+[Microsoft Antimalware](/azure/security/fundamentals/antimalware) is a no-cost resource that provides real-time protection capability to assist in detection, quarantining and eradicating malicious software, spyware, and viruses:
 
 - Runs in the background with the need of user interaction
 - Provides alerts when unwanted or malicious software is downloaded, installed, or run
@@ -224,25 +222,24 @@ Concentrate on [Azure Virtual Machine Maintenance and Updates](/azure/virtual-ma
 - Each Windows virtual machine - Update Management does a scan twice a day for each machine.
 - Each Linux virtual machine - Update Management does a scan every hour.
 
-Additional guidance:
+See this additional guidance:
 
-- [Plan deployment for updating Windows VMs in Azure - Azure Example Scenarios.](/azure/architecture/example-scenario/wsus/)
+- [Plan deployment for updating Windows VMs in Azure - Azure Example Scenarios](/azure/architecture/example-scenario/wsus/)
 - [Use Azure Private Link to securely connect networks to Azure Automation](/azure/automation/how-to/private-link-security)
-  
-  Ensures VMs connect in an isolated controlled fashion and not over the internet for updates.
+   Ensures virtual machines connect in an isolated controlled fashion and not over the internet for updates.
 
 ## Step 8. Enable advanced threat detection and protection
 
-Threat protection for Azure infrastructure is provided by Defender for Cloud. This protection is extended to virtual machines when you provision [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+Threat protection for Azure infrastructure is provided by Microsoft Defender for Cloud. This protection is extended to virtual machines when you provision [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction), as shown in the following diagram.
 
 :::image type="content" source="media/vm/azure-infra-vm-threat-protection.svg" alt-text="Diagram of enabling threat protection." lightbox="media/vm/azure-infra-vm-threat-protection.png":::
 
 In the diagram:
 
-- As described in the [Overview – Apply Zero Trust principles to Azure infrastructure](azure-infrastructure-overview.md) article, Microsoft Defender for Cloud is enabled at the level of an Azure subscription or at the level of an Azure management group that includes multiple Azure subscriptions.
+- As described in the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md) article, Defender for Cloud is enabled at the level of an Azure subscription or at the level of an Azure management group that includes multiple Azure subscriptions.
 - In addition to enabling Defender for Cloud, Defender for Servers is provisioned.
 
-Advanced threat protection verifies the activities occurring on virtual machines based on Microsoft's threat intelligence. It looks for specific configurations and activities that suggest that there could be a breach. It enables the _verify explicitly_ and _assume breach_ principles.
+Advanced threat protection verifies the activities occurring on virtual machines based on Microsoft's threat intelligence. It looks for specific configurations and activities that suggest that there could be a breach. It enables the _verify explicitly_ and _assume breach_ Zero Trust principles.
 
 Microsoft Defender for Servers includes the following:
 
@@ -261,7 +258,7 @@ Microsoft Defender for Servers includes the following:
 
 |Training  | [Secure your Azure virtual machine disks](/training/modules/secure-your-azure-virtual-machine-disks) |
 |---------|---------|
-|:::image type="icon" source="media/secure-your-azure-virtual-machine-disks.svg" border="false"::: | Learn how to use Azure Disk Encryption (ADE) to encrypt OS and data disks on existing and new VMs. <br>In this module, you learn how to: <li>Determine which encryption method is best for your VM. <li>Encrypt existing virtual machine disks using the Azure portal. <li>Encrypt existing virtual machine disks using PowerShell. <li>Modify Azure Resource Manager templates to automate disk encryption on new VMs.|
+|:::image type="icon" source="media/secure-your-azure-virtual-machine-disks.svg" border="false"::: | Learn how to use Azure Disk Encryption (ADE) to encrypt OS and data disks on existing and new virtual machines. <br>In this module, you learn how to: <li>Determine which encryption method is best for your virtual machine. <li>Encrypt existing virtual machine disks using the Azure portal. <li>Encrypt existing virtual machine disks using PowerShell. <li>Modify Azure Resource Manager templates to automate disk encryption on new virtual machines.|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/secure-your-azure-virtual-machine-disks/)
 
@@ -281,9 +278,9 @@ For more training on virtual machines in Azure, see these resources in the Micro
 
 ## Next Steps
 
-- [Apply Zero Trust principles to Storage in Azure](azure-infrastructure-storage.md)
-- [Apply Zero Trust principles to Spoke Virtual Network in Azure](azure-infrastructure-iaas.md)
-- [Apply Zero Trust principles to Hub Virtual network in Azure](azure-infrastructure-networking.md)
+- [Apply Zero Trust principles to storage in Azure](azure-infrastructure-storage.md)
+- [Apply Zero Trust principles to spoke virtual networks in Azure](azure-infrastructure-iaas.md)
+- [Apply Zero Trust principles to hub virtual networks in Azure](azure-infrastructure-networking.md)
   
 ## References
 
@@ -302,7 +299,7 @@ For more training on virtual machines in Azure, see these resources in the Micro
 - [Privileged access deployment](/security/compass/privileged-access-deployment)
 - [Microsoft Anti-malware](/azure/security/fundamentals/antimalware)
 - [Virtual Machine Agent](/azure/virtual-machines/extensions/agent-windows)
-- [Plan deployment for updating Windows VMs in Azure - Azure Example Scenarios.](/azure/architecture/example-scenario/wsus/)
+- [Plan deployment for updating Windows VMs in Azure - Azure Example Scenarios](/azure/architecture/example-scenario/wsus/)
 - [Use Azure Private Link to securely connect networks to Azure Automation](/azure/automation/how-to/private-link-security)
 - [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction)
 - [Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint?rtc=1)

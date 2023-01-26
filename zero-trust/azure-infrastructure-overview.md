@@ -12,22 +12,22 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# Overview – Apply Zero Trust principles to Azure infrastructure 
+# Overview – Apply Zero Trust principles to Azure infrastructure
 
 This series of articles help you apply the principles of Zero Trust to your workloads in Azure based on a multi-disciplinary approach to applying the Zero Trust principles. Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles:
 
 - Verify explicitly
-- Use least privilege access
+- Use least privileged access
 - Assume breach
 
 Implementing the Zero Trust mindset to “assume breach, never trust, always verify” requires changes to cloud infrastructure, deployment strategy, and implementation.
 
 These initial series of five articles (including this introduction) show you how to apply Zero Trust approach to a very common IT business scenario based on infrastructure services. The work is broken into units that can be configured together as follows:
 
-- Azure Storage
+- Azure storage
 - Virtual machines
-- Spoke virtual network (VNet) for virtual machine-based workloads
-- Hub VNet to support access to many workloads in Azure
+- Spoke virtual networks (VNets) for virtual machine-based workloads
+- Hub VNets to support access to many workloads in Azure
 
 > [!NOTE]
 > Additional articles will be added to this series in the future, including how organizations can apply a Zero Trust approach to applications, virtual desktop, data and DevOps services based on real IT business environments.
@@ -37,9 +37,9 @@ These initial series of five articles (including this introduction) show you how
 > - [Microsoft Cloud Security Benchmark](/security/benchmark/azure/introduction)
 > - [Microsoft Cloud Security Baseline](/security/benchmark/azure/security-baselines-overview)
 
-To describe how to apply a Zero Trust approach, this guidance targets a common pattern used in production by many organizations: a virtual-machine-based application hosted in a VNet (and IaaS application). This is a common pattern for organizations migrating on-premises applications to Azure, which is sometimes referred to as "lift-n-shift". The reference architecture includes all components necessary to support this application, including storage services and a hub VNet.
+To describe how to apply a Zero Trust approach, this guidance targets a common pattern used in production by many organizations: a virtual-machine-based application hosted in a VNet (and IaaS application). This is a common pattern for organizations migrating on-premises applications to Azure, which is sometimes referred to as "lift-and-shift". The reference architecture includes all components necessary to support this application, including storage services and a hub VNet.
 
-The reference architecture reflects a common deployment pattern in production environments. It is not based on the enterprise-scale landing zones recommended in the Cloud Adoption Framework(CAF), although many of the best practices in CAF are included in the reference architecture, such as using a dedicated VNet to host components that broker access to the application (hub VNet).
+The reference architecture reflects a common deployment pattern in production environments. It is not based on the enterprise-scale landing zones recommended in the Cloud Adoption Framework (CAF), although many of the best practices in CAF are included in the reference architecture, such as using a dedicated VNet to host components that broker access to the application (hub VNet).
 
 If you are interested in learning about the guidance recommended in the Cloud Adoption Framework Azure landing zones, see these resources:
 
@@ -55,7 +55,7 @@ The following figure shows the reference architecture for this Zero Trust guidan
 This architecture contains:
 
 - Multiple IaaS components and elements, including different types of users and IT consumers accessing the app from different sites. such as Azure, the internet, on-premises, and branch offices.
-- A common three-tier application containing a web server tier, application tier, and data tier. All tiers run on virtual machines within a VNet named SPOKE. Access to the app is protected by another VNet named HUB that contains additional security services.
+- A common three-tier application containing a front end tier, application tier, and data tier. All tiers run on virtual machines within a VNet named SPOKE. Access to the app is protected by another VNet named HUB that contains additional security services.
 - Some of the most used PaaS services on Azure that support IaaS applications, including role-based access control (RBAC) and Azure Active Directory (Azure AD). These contribute to the Zero Trust security approach.
 - Storage Blobs and Storage Files that provide object storage for the applications and files shared by users.
 
@@ -67,14 +67,14 @@ The diagram outlines the larger areas of the architecture that are addressed by 
 
 1. [Azure Storage Services](azure-infrastructure-storage.md)
 2. [Virtual machines](azure-infrastructure-virtual-machines.md)
-3. [Spoke VNet](azure-infrastructure-iaas.md)
-4. [Hub VNet](azure-infrastructure-networking.md)
+3. [Spoke VNets](azure-infrastructure-iaas.md)
+4. [Hub VNets](azure-infrastructure-networking.md)
 
 It’s important to note that the guidance in this series of articles is more specific for this type of architecture than the guidance provided in the Cloud Adoption Framework and Azure landing zone architectures. If you have applied the guidance in either of these resources, be sure to also review this series of articles for additional recommendations.  
 
 ## Understanding Azure components
 
-The previous diagram of the reference architecture provides a topology view of the environment. It’s also valuable to see logically how each of the components can be organized within the Azure environment. The following diagram provides a way to organize your subscriptions and resource groups. Your Azure subscriptions might be organized differently.
+The reference architecture diagram provides a topological view of the environment. It’s also valuable to see logically how each of the components can be organized within the Azure environment. The following diagram provides a way to organize your subscriptions and resource groups. Your Azure subscriptions might be organized differently.
 
 :::image type="content" source="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.png" alt-text="Diagram of components in Azure infrastructure." lightbox="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.png":::
 
@@ -82,11 +82,11 @@ In this diagram, the Azure infrastructure is contained within one Azure AD tenan
 
 - Azure subscription
 
-   You can distribute the resources in more than one subscription, where each subscription may hold different roles, such as network subscription, or security subscription. This is described in the Cloud Adoption Framework and Azure Landing Zone documentation described earlier in this article. The different subscriptions may also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you will have in each. One or more subscriptions can be managed together using a Management Group. This will give you the ability to apply permissions with role-based access control (RBAC) and Azure policies to a group of subscriptions instead of setting up each subscription individually.
+   You can distribute the resources in more than one subscription, where each subscription may hold different roles, such as network subscription, or security subscription. This is described in the Cloud Adoption Framework and Azure Landing Zone documentation described earlier in this article. The different subscriptions may also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you will have in each. One or more subscriptions can be managed together using a Management Group. This will give you the ability to apply permissions with role based access control (RBAC) and Azure policies to a group of subscriptions instead of setting up each subscription individually.
 
-- Microsoft Defender for Cloud (MDC) and Azure Monitor
+- Microsoft Defender for Cloud and Azure Monitor
 
-   For each Azure subscription, a set of Azure Monitor solutions and MDC is available. If you manage these subscriptions through a Management Group, you will be able to consolidate in a single portal for all the functionality of Azure Monitor and Microsoft MDC. For example, Secure Score, provided by MDC, will be consolidated for all your subscriptions, using a Management Group as the scope.
+   For each Azure subscription, a set of Azure Monitor solutions and Defender for Cloud is available. If you manage these subscriptions through a Management Group, you will be able to consolidate in a single portal for all the functionality of Azure Monitor and Defender for Cloud. For example, Secure Score, provided by Defender for Cloud, will be consolidated for all your subscriptions, using a Management Group as the scope.
 
 - Storage resource group (1)
 
@@ -94,7 +94,7 @@ In this diagram, the Azure infrastructure is contained within one Azure AD tenan
 
 - Virtual machines resource group (2)
 
-   Virtual machines are contained in one resource group. You can also have each virtual machine type for workload tiers such as web server, application, and data in different resource groups to further isolate access control.
+   Virtual machines are contained in one resource group. You can also have each virtual machine type for workload tiers such as front end, application, and data in different resource groups to further isolate access control.
 
 - Spoke (3) and hub (4) VNet resource groups
 
@@ -102,16 +102,16 @@ In this diagram, the Azure infrastructure is contained within one Azure AD tenan
 
 ## Threat Protection with Microsoft Defender for Cloud
 
-**Microsoft Defender for Cloud (MDC)** is an extended detection and response (XDR) solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your environment. Defender for Cloud is intended to be used together with Microsoft 365 Defender to provide a greater breadth of correlated protection of your environment, as shown in the following diagram.
+**Microsoft Defender for Cloud** is an extended detection and response (XDR) solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your environment. Defender for Cloud is intended to be used together with Microsoft 365 Defender to provide a greater breadth of correlated protection of your environment, as shown in the following diagram.
 
 :::image type="content" source="media/azure-infra-overview/azure-infra-overview-threat-protection.png" alt-text="Diagram of threat protection with Microsoft Defender for Cloud." lightbox="media/azure-infra-overview/azure-infra-overview-threat-protection.png":::
 
 In the diagram:
 
-- MDC is enabled for a management group that includes multiple Azure subscriptions. 
+- Defender for Cloud is enabled for a management group that includes multiple Azure subscriptions. 
 - Microsoft 365 Defender is enabled for Microsoft 365 apps and data, SaaS apps that are integrated with Azure AD, and on-premises Active Directory Domain Services (AD DS) servers.
 
-For more information about configuring management groups and enabling MDC, see:
+For more information about configuring management groups and enabling Defender for Cloud, see:
 
 - [Organize subscriptions into management groups and assign roles to users](/azure/defender-for-cloud/management-groups-roles)
 - [Enable Defender for Cloud on all subscriptions in a management group](/azure/defender-for-cloud/onboard-management-group)

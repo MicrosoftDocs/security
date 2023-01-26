@@ -36,7 +36,7 @@ The following diagram shows the reference architecture. The hub VNet is highligh
 
 For this reference architecture, there are a number of ways you can deploy the resources across the Azure subscription. The reference architecture shows the recommendation of isolating all resources for the hub VNet within a dedicated resource group. The resources for the spoke VNet are also shown for comparison. This model works well if different teams are given responsibility for these different areas.
 
-In the figure, a hub VNet includes components to support access to other apps and services within the Azure environment. These resources include:
+In the diagram, a hub VNet includes components to support access to other apps and services within the Azure environment. These resources include:
 
 - Azure Firewall Premium
 - Azure Bastion
@@ -74,7 +74,7 @@ This article provides recommendations for securing the components of a hub VNet 
 | 1 | Secure Azure Firewall Premium. |
 | 2 | Deploy Azure DDoS Protection Standard. |
 | 3 | Configure network gateway routing to the firewall. |
-| 4.| Configure threat protection. |
+| 4| Configure threat protection. |
 
 As a part of your deployment, you will want to make specific selections that are not the defaults for automated deployments due to their additional costs. Prior to the deployment, you should review the costs.
 
@@ -171,7 +171,7 @@ As a part of the deployment, you will want to deploy an Azure DDoS Protection St
 | Zero Trust principle | Met by |
 | --- | --- |
 | Verify explicitly | Monitors traffic and uses machine language-based frameworks to detect traffic floods. |
-| Use least privileged access | Prevent traffic flooding without controlled authorization. |
+| Use least privileged access | Prevents traffic flooding without controlled authorization. |
 | Assume breach | Can monitor traffic to protect from different attack scenarios. |
 
 As the policy that is created can be deployed to existing resources, you can add this protection after the initial deployment without requiring the redeployment of resources.
@@ -220,7 +220,7 @@ If you configure only one side, either just the spoke subnets or the gateway sub
 
 ### Why route network gateway traffic to the firewall?
 
-A key element of Zero Trust is to not assume that just because something is in your environment, that it should have access to other resources in your environment. A default configuration will often allow for routing between resources in Azure to your on-premise networks, controlled only by Network Security Groups.
+A key element of Zero Trust is to not assume that just because something is in your environment, that it should have access to other resources in your environment. A default configuration will often allow for routing between resources in Azure to your on-premise networks, controlled only by network security groups.
 
 By routing the traffic to the firewall, you increase the level of inspection and increase the security of your environment. You are also alerted to suspicious activity and can take action.
 
@@ -246,11 +246,11 @@ To configure the Gateway Subnet route table to forward internal traffic to the A
 
    :::image type="content" source="media/hub/hub-create-route-table.png" alt-text="Screenshot of creating a route table." lightbox="media/hub/hub-create-route-table.png":::
 
-5. Navigate to the new route table, and select **Routes**.
+1. Navigate to the new route table, and select **Routes**.
 
    :::image type="content" source="media/hub/hub-routes.png" alt-text="Screenshot of selecting a route table." lightbox="media/hub/hub-routes.png":::
 
-6. Select **Add** and then add a route to one of the spoke VNets:
+1. Select **Add** and then add a route to one of the spoke VNets:
 
    1. In **Route name**, specify the name of the route field.
    1. Select **IP Addresses** in the **Address prefix destination** drop-down.
@@ -270,7 +270,7 @@ To configure the Gateway Subnet route table to forward internal traffic to the A
 
 Here is an example.
 
-:::image type="content" source="media/hub/hub-associate-subnet.png" alt-text="Screenshot of associating Subnets." lightbox="media/hub/hub-associate-subnet.png":::
+:::image type="content" source="media/hub/hub-associate-subnet.png" alt-text="Screenshot of associating subnets." lightbox="media/hub/hub-associate-subnet.png":::
 
 Your gateway will now forward traffic intended for spoke VNets to the Azure Firewall.
 
@@ -369,7 +369,6 @@ For more training on security in Azure, see these resources in the Microsoft cat
 
 ## Next Steps
 
-- [Overview – Apply Zero Trust principles to Azure infrastructure](azure-infrastructure-overview.md)
 - [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md)
 - [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md)
 - [Apply Zero Trust principles to spoke virtual networks in Azure](azure-infrastructure-iaas.md)

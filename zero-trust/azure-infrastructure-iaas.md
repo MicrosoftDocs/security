@@ -33,7 +33,7 @@ The following diagram shows a common reference architecture for IaaS-based workl
 In the diagram:
 
 - A spoke VNet includes components to support an IaaS application comprised of virtual machines.
-- The IaaS application is a three-tier application comprised of two virtual machines for each tier—front end, application, and data.
+- The IaaS application is a three-tier application comprised of two virtual machines for each tier: front end, application, and data.
 - Each tier is contained within a dedicated subnet with a dedicated network security group.
 - Each virtual machine role is assigned to an application security group corresponding to its role.
 - Access to the application is provided through an Application Gateway contained in its own subnet.
@@ -124,7 +124,7 @@ For a multi-tier virtual-machine based application, the recommendation is to cre
 
 In the diagram:
 
-- Each tier of the application is hosted in a dedicated subnet such as, web tier, app tier, and data tier.
+- Each tier of the application is hosted in a dedicated subnet such as, front end tier, app tier, and data tier.
 - A network security group is configured for each of these subnets.
 
 Configuring network security groups in a different way than shown above can result in incorrect configuration of some or all of the network security groups and can create issues in troubleshooting. It can also make it difficult to monitor and log.
@@ -143,7 +143,7 @@ Inside your workload, identify the specific virtual machine roles. Then, build a
 
 In the diagram:
 
-- Three application security groups are created to support this app, one for each tier web, app, and data.
+- Three application security groups are created to support this app, one for each tier: front end, app, and data.
 - Each virtual machine is assigned to the corresponding application security group for its role (red text in the diagram).
 
 For more information about application security groups and how to assign these to virtual machines, see [Azure application security groups overview](/azure/virtual-network/application-security-groups).

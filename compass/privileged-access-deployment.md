@@ -39,7 +39,7 @@ Require multi-factor authentication, at least for your administrators. See [Cond
 1. From the Azure portal, browse to **Azure Active Directory** > **Users** > **New user**.
 1. Create your device user by following the steps in the [create user tutorial](/Intune/quickstart-create-user).
 1. Enter:
-   * **Name** - Secure Workstation Administrator
+   * **Name** - Secure Workstation User
    * **User name** - `secure-ws-user@contoso.com`
    * **Directory role** - **Limited administrator** and select the **Intune Administrator** role.
    * **Usage Location** - For example **United Kingdom**, or your desired location form the list.

@@ -11,7 +11,8 @@ ms.collection:
   - msftsolution-scenario
   - zerotrust-solution
 ---
-# Apply Zero Trust principles to virtual machines
+
+# Apply Zero Trust principles to virtual machines in Azure
 
 This article helps you apply the principles of Zero Trust to virtual machines in Azure:
 
@@ -27,7 +28,7 @@ Zero Trust principles for virtual machines are applied across the logical archit
 
 The following diagram the logical architecture components.
 
-:::image type="content" source="media/vm/vm-security-configure.png" alt-text="Diagram of the virtual machine logical architecture." lightbox="media/vm/vm-security-configure.png":::
+:::image type="content" source="media/vm/vm-security-configure.png" alt-text="Diagram of the virtual machine logical architecture.":::
 
 In this diagram:
 
@@ -141,7 +142,7 @@ To configure secure access:
 - Set up multi-factor authentication with conditional access
 - Use privileged access workstations (PAWs)
 
-:::image type="content" source="media/vm/azure-infra-vm-secure-access.png" alt-text="Figure for configuring secure access to a virtual machine." lightbox="media/vm/azure-infra-vm-secure-access.png":::
+:::image type="content" source="media/vm/azure-infra-vm-secure-access.png" alt-text="Figure for configuring secure access to a virtual machine.":::
 
 In the diagram:
 

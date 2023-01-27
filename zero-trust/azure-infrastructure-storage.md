@@ -28,7 +28,7 @@ Zero Trust principles for Azure Storage are applied across the architecture, fro
 
 The following diagram shows the logical architecture components.
 
-:::image type="content" source="media/secure-storage/azure-infra-storage-subscription-architecture-1.png" alt-text="Diagram of logical architecture components for Azure Storage services." lightbox="media/secure-storage/azure-infra-storage-subscription-architecture-1.png":::
+:::image type="content" source="media/secure-storage/azure-infra-storage-subscription-architecture-1.png" alt-text="Diagram of logical architecture components for Azure Storage services.":::
 
 In the diagram:
 
@@ -189,9 +189,9 @@ For more training on security in Azure, see these resources in the Microsoft cat
 
 ## Next Steps
 
-- [Apply Zero Trust principles to Virtual Machines in Azure](azure-infrastructure-virtual-machines.md)
-- [Apply Zero Trust principles to Spoke Virtual Networks in Azure](azure-infrastructure-iaas.md)
-- [Apply Zero Trust principles to Hub Virtual Networks in Azure](azure-infrastructure-networking.md)
+- [Apply Zero Trust principles to virtual machines in Azure](azure-infrastructure-virtual-machines.md)
+- [Apply Zero Trust principles to spoke virtual networks in Azure](azure-infrastructure-iaas.md)
+- [Apply Zero Trust principles to hub virtual networks in Azure](azure-infrastructure-networking.md)
   
 ## References
 

@@ -33,7 +33,7 @@ These initial series of five articles (including this introduction) show you how
 > Additional articles will be added to this series in the future, including how organizations can apply a Zero Trust approach to applications, virtual desktop, data and DevOps services based on real IT business environments.
 
 > [!IMPORTANT]
-> This Zero Trust guidance describes how to use and configure several security solutions and features available on Azure for a reference architecture. Several other resources also provide security guidance for these solutions and features, including: 
+> This Zero Trust guidance describes how to use and configure several security solutions and features available on Azure for a reference architecture. Several other resources also provide security guidance for these solutions and features, including:
 > - [Microsoft Cloud Security Benchmark](/security/benchmark/azure/introduction)
 > - [Microsoft Cloud Security Baseline](/security/benchmark/azure/security-baselines-overview)
 
@@ -120,46 +120,42 @@ For more information about configuring management groups and enabling Defender f
 
 Zero Trust involves applying multiple disciplines of security and information protection together. In this series of articles, this multi-discipline approach is applied to each of the units of work for infrastructure components as follows:
 
-**[Apply Zero Trust principles to storage in Azure](azure-infrastructure-storage.md)**
+**[Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md)**
 
-- Protect data in all three modes: data at rest, data in transit, and data in use.
-- Verify users and control access to storage data with the least privilege.
-- Logically separate or segregate critical data with network controls.
-- Use Defender for Storage for automated threat detection and protection.
+1. Protect data in all three modes: data at rest, data in transit, and data in use
+1. Verify users and control access to storage data with the least privileges
+1. Logically separate or segregate critical data with network controls
+1. Use Defender for Storage for automated threat detection and protection
 
 **[Apply Zero Trust principles to virtual machines in Azure](azure-infrastructure-virtual-machines.md)**
 
-- Configure logical isolation by deploying virtual machines to a dedicated resource group.
-- Leverage Role Based Access Control (RBAC).
-- Secure virtual machine boot components such as boot loaders, OS kernels, and drivers. Securely protect keys, certificates, and secrets in the Trusted Platform Module (TPM).
-- Enable customer-managed keys and double encryption.
-- Control the applications that are installed on virtual machines.
-- Configure secure access.
-- Set up secure maintenance of virtual machines.
-- Enable advanced threat detection and protection.
+1. Configure logical isolation for virtual machines
+1. Leverage Role Based Access Control (RBAC)
+1. Secure virtual machine boot components
+1. Enable customer-managed keys and double encryption
+1. Control the applications installed on virtual machines
+1. Configure secure access
+1. Set up secure maintenance of virtual machines
+1. Enable advanced threat detection and protection
 
 **[Apply Zero Trust principles to a spoke VNet in Azure](azure-infrastructure-iaas.md)**
 
-- Leverage Azure AD RBAC or set up custom roles for networking resources.
-- Isolate infrastructure into its own resource group.
-- Create a network security group for each subnet.
-- Create an application security group for each virtual machine role.
-- Secure traffic and resources within the VNet.
-- Deploy baseline deny rules for network security groups.
-- Deploy application specific rules for application security groups.
-- Plan for management traffic into the VNet. 
-- Deploy network security group flow logging.
-- Secure access to the VNet and application.
-- Enable advanced threat detection and protection.
+1. Leverage Azure AD RBAC or set up custom roles for networking resources
+1. Isolate infrastructure into its own resource group
+1. Create a network security group for each subnet
+1. Create an application security group for each virtual machine role
+1. Secure traffic and resources within the VNet
+1. Secure access to the VNet and application
+1. Enable advanced threat detection and protection
 
 **[Apply Zero Trust principles to a hub VNet in Azure](azure-infrastructure-networking.md)**
 
-- Secure Azure Firewall Premium
-- Deploy Azure DDoS Protection Standard
-- Configure network gateway routing to the firewall
-- Threat protection
+1. Secure Azure Firewall Premium
+1. Deploy Azure DDoS Protection Standard
+1. Configure network gateway routing to the firewall
+1. Configure threat protection
 
-## Recommended training for Zero Trust 
+## Recommended training for Zero Trust
 
 The following are the recommended training modules for Zero Trust.
 

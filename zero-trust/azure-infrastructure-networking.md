@@ -1,6 +1,6 @@
 ---
 title: Apply Zero Trust principles to a hub virtual network in Azure 
-description: Learn how to secure a hub virtual network with Zero Trust for access to Azure infrastructure.  
+description: Learn how to secure a hub virtual network for IaaS workloads with Zero Trust.  
 ms.date: 01/27/2023
 ms.service: security
 author: brsteph
@@ -12,7 +12,7 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# Apply Zero Trust principles to a hub virtual network in Azure 
+# Apply Zero Trust principles to a hub virtual network in Azure
 
 The best way to deploy an Azure-based hub virtual network (VNet) for Zero Trust is to leverage the Azure Landing Zone materials to deploy a feature-complete hub VNet, and then tailor it to your specific configuration expectations.
 
@@ -297,7 +297,7 @@ To configure spoke subnet routing:
 
 Now your default route will send traffic intended for the gateway to the Azure Firewall.
 
-## Step 4. Threat protection
+## Step 4. Configure threat protection
 
 Your hub VNet built on Azure may be protected by Microsoft Defender for Cloud, just as other resources from your IT business environment running on Azure or on-premises may also be protected.
 

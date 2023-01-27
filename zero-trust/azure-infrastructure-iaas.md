@@ -12,7 +12,7 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# Apply Zero Trust Principles to a spoke virtual network in Azure
+# Apply Zero Trust principles to a spoke virtual network in Azure
 
 This article will help you apply the principles of Zero Trust to a spoke virtual network (VNet) for IaaS workloads in Azure in the following ways:
 
@@ -28,7 +28,7 @@ This article is a part of a series of articles that demonstrate how to apply the
 
 The following diagram shows a common reference architecture for IaaS-based workloads.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-architecture-1.png" alt-text="Diagram of the reference architecture for IaaS-based workloads." lightbox="media/spoke/azure-infra-spoke-architecture-1.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-architecture-1.png" alt-text="Diagram of the reference architecture for IaaS-based workloads.":::
 
 In the diagram:
 

@@ -191,9 +191,9 @@
         href: azure-infrastructure-storage.md
       - name: Virtual machines
         href: azure-infrastructure-virtual-machines.md
-      - name: Azure Spoke VNet
+      - name: Azure spoke virtual networks
         href: azure-infrastructure-iaas.md
-      - name: Azure hub VNet
+      - name: Azure hub virtual networks
         href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false

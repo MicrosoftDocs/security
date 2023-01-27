@@ -191,9 +191,9 @@
         href: azure-infrastructure-storage.md
       - name: Virtual machines
         href: azure-infrastructure-virtual-machines.md
-      - name: Azure Spoke VNet
+      - name: Azure spoke virtual networks
         href: azure-infrastructure-iaas.md
-      - name: Azure hub VNet
+      - name: Azure hub virtual networks
         href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false
@@ -237,10 +237,14 @@
       items:
       - name: Overview
         href: develop/identity.md
+      - name: App integration
+        href: develop/integrate-apps-with-azure-ad-microsoft-identity-platform.md
       - name: Identity and account types for apps
         href: develop/identity-supported-account-types.md
       - name: Resource access authorization
         href: develop/acquire-application-authorization-to-access-resources.md
+      - name: Secure apps with Continuous Access Evaluation
+        href: develop/secure-with-cae.md
       - name: Delegated permissions
         href: develop/developer-strategy-delegated-permission.md
       - name: Application permissions

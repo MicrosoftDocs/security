@@ -34,6 +34,7 @@ These initial series of five articles (including this introduction) show you how
 
 > [!IMPORTANT]
 > This Zero Trust guidance describes how to use and configure several security solutions and features available on Azure for a reference architecture. Several other resources also provide security guidance for these solutions and features, including:
+
 > - [Microsoft Cloud Security Benchmark](/security/benchmark/azure/introduction)
 > - [Microsoft Cloud Security Baseline](/security/benchmark/azure/security-baselines-overview)
 
@@ -108,7 +109,7 @@ In this diagram, the Azure infrastructure is contained within one Azure AD tenan
 
 In the diagram:
 
-- Defender for Cloud is enabled for a management group that includes multiple Azure subscriptions. 
+- Defender for Cloud is enabled for a management group that includes multiple Azure subscriptions.
 - Microsoft 365 Defender is enabled for Microsoft 365 apps and data, SaaS apps that are integrated with Azure AD, and on-premises Active Directory Domain Services (AD DS) servers.
 
 For more information about configuring management groups and enabling Defender for Cloud, see:
@@ -163,7 +164,7 @@ The following are the recommended training modules for Zero Trust.
 
 |Training  |[Describe Azure management and governance](/training/paths/describe-azure-management-governance/)  |
 |---------|---------|
-|:::image type="icon" source="media/describe-azure-management-governance-resized.png" border="false":::    | The Microsoft Azure Fundamentals training is composed of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance. Microsoft Azure Fundamentals: Describe Azure management and governance is the third learning path in Microsoft Azure Fundamentals. This learning path explores the management and governance resources available to help you manage your cloud and on-premises resources.<br>This learning path helps prepare you for [Exam AZ-900: Microsoft Azure Fundamentals.](/certifications/exams/az-900)|
+|:::image type="icon" source="media/describe-azure-management-governance-resized.png" border="false":::    | The Microsoft Azure Fundamentals training is composed of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance. Microsoft Azure Fundamentals: Describe Azure management and governance is the third learning path in Microsoft Azure Fundamentals. This learning path explores the management and governance resources available to help you manage your cloud and on-premises resources. <br>This learning path helps prepare you for [Exam AZ-900: Microsoft Azure Fundamentals.](/certifications/exams/az-900)|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/describe-cost-management-azure/1-introduction)
 
@@ -171,7 +172,7 @@ The following are the recommended training modules for Zero Trust.
 
 |Training  |[Configure Azure Policy](/training/modules/configure-azure-policy/)|
 |---------|---------|
-|:::image type="icon" source="media/azure-policy-configure.png" border="false"::: | Learn how to configure Azure Policy to implement compliance requirements.<br> In this module, you learn how to: <li>Create management groups to target policies and spending budgets.<li>Implement Azure Policy with policy and initiative definitions.<li>Scope Azure policies and determine compliance.|
+|:::image type="icon" source="media/azure-policy-configure.png" border="false"::: | Learn how to configure Azure Policy to implement compliance requirements.<br> In this module, you learn how to: <li>Create management groups to target policies and spending budgets. <li>Implement Azure Policy with policy and initiative definitions. <li>Scope Azure policies and determine compliance.|
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-azure-policy/1-introduction)
 
@@ -199,8 +200,8 @@ The following are the recommended training modules for Zero Trust.
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/configure-azure-firewall/1-introduction)
 
-For more training on Security on Azure, see the entire Microsoft catalog:<br> 
-[Browse all - Training | Microsoft Learn](/training/browse)
+For more training on security in Azure, see these resources in the Microsoft catalog:<br> 
+[Security in Azure | Microsoft Learn](/training/browse/?subjects=security&products=azure)
 
 ## Next Steps
 
@@ -229,9 +230,11 @@ Refer to the links below to learn about the various services and technologies me
 
 ## Technical diagrams
 
-You can download the diagrams used in this series of articles. Use the Visio file to modify these diagrams for your own use.
+You can download the diagrams used in this series of articles. Use the PDF file to see all the figures and links to the articles. Use the Visio file to modify these diagrams for your own use.
 
-[PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) | [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx)
-Updated October 2022
+[PDF](https://download.microsoft.com/download/f/d/b/123456/apply-zero-trust-to-Azure-IaaS-figures.pdf) | [Visio](https://download.microsoft.com/download/f/d/b/123456/m365-zero-trust-deployment-plan.vsdx)
+Updated February 2023
+
+Links TBD
 
 -->

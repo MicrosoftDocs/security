@@ -5,7 +5,7 @@ ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 12/13/2022
+ms.date: 11/11/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to develop using Zero Trust principles so that I can innovate quickly and securely.
 ---

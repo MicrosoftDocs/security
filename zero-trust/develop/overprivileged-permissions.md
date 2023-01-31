@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 12/13/2022
+ms.date: 10/28/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to understand why applications should not request more permissions than they need (overprivileged) and how to limit privilege so that I can manage access and improve security.
 ---

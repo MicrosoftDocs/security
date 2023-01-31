@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 12/13/2022
+ms.date: 10/10/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to ensure Zero Trust when I have one API that needs to call another API so that I can securely develop my application when it is working on behalf of a user.
 ---

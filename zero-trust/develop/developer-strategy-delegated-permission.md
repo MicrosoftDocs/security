@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 12/13/2022
+ms.date: 08/19/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to implement the best approach for managing permissions in my application and develop using Zero Trust.
 ---

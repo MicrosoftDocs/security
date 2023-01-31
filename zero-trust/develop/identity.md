@@ -1,7 +1,7 @@
 ---
 title: Building apps that secure identity through permissions and access
 description: Learn about authentication, authorization, and identity management so that you can use a Zero Trust approach to identity in your software development lifecycle (SDLC).
-ms.date: 01/27/2023
+ms.date: 09/12/2022
 ms.service: identity
 author: janicericketts
 ms.author: jricketts

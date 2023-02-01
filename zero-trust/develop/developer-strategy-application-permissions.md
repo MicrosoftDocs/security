@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 08/19/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to learn how to define my application permission approach to credential management to authenticate, authorize, and manage permissions and consent.
 ---

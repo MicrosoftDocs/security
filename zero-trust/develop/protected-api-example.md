@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 12/13/2022
+ms.date: 09/12/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to to design a permissions and consent strategy so that I can provide the best user experience when I implement least privilege.
 ---

@@ -18,12 +18,13 @@ ms.collection:
 
 Intro TBD
 
+- Use the PDF file to print a copy for your IT department.
+- Use the Visio file to modify the illustrations for your own use.
+- Use the PowerPoint file for presentations and to modify slides for your own use.
+
 ## Zero Trust for Microsoft 365
 
 You can download the illustrations used in the [Zero Trust for Microsoft 365 series of articles](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json).
-
-- Use the PDF file to print a copy for your IT department.
-- Use the Visio file to modify these illustrations for your own use.
 
 Summary poster for deploying Zero Trust for Microsoft 365:
 
@@ -32,26 +33,23 @@ Updated October 2022
 
 ## Zero Trust for Azure IaaS services
 
-You can download the illustrations used in the [Zero Trust for Azure IaaS series of articles)[azure-infrastructure-overview.md].
-
-- Use PDF files to print a copy for your IT department.
-- Use Visio files to modify these illustrations for your own use.
+You can download the illustrations used in the [Zero Trust for Azure IaaS series of articles](azure-infrastructure-overview.md).
 
 Summary poster for deploying Zero Trust for Azure IaaS:
 
 [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) | [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx)
-Updated October 2022
+Updated February 2023
 
 Technical diagrams in the Zero Trust for Azure IaaS articles:
 
 [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) | [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx)
-Updated October 2022
+Updated February 2023
 
 ## Ransomware
 
 Download the [Protect your organization from ransomware poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf) for an overview of the three phases as layers of protection against ransomware attackers.
 
-[![The "Protect your organization from ransomware" poster](media/human-operated-ransomware/ransomware-poster-thumbnail.png)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
+[![The "Protect your organization from ransomware" poster](../compass/media/human-operated-ransomware/ransomware-poster-thumbnail.png)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
 
 ## Additional Microsoft security posters and illustrations
 
@@ -69,7 +67,7 @@ Updated October 2022
 
 [PowerPoint](/microsoft-365/downloads/top-10-azure-security-best-practices.pptx) | [PDF](/microsoft-365/downloads/top-10-azure-security-best-practices.pdf)
 
-[PowerPoint](/microsoft-365/downloads/top-10-azure-security-best-practices.pptx) | [PDF]((/microsoft-365/downloads/top-10-azure-security-best-practices.pdf)
+[PowerPoint](/microsoft-365/downloads/top-10-azure-security-best-practices.pptx) | [PDF](/microsoft-365/downloads/top-10-azure-security-best-practices.pdf)
 Updated October 2022
 
 The app consent grant and other incident response playbook workflows:
@@ -77,4 +75,3 @@ The app consent grant and other incident response playbook workflows:
 [PDF](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.pdf) | [Visio](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.vsdx)
 
 ## Next step
-

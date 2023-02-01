@@ -230,7 +230,7 @@ The outbound connections are:
 
 ### Deploy application specific rules for application security groups
 
-Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here is an example diagram of using the application security groups to define network traffic patterns in the network security groups.
+Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here is an example diagram of using application security groups to define network traffic patterns in the network security groups.
 
 :::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.png" alt-text="Diagram of networking patterns for a three-tier web application." lightbox="media/spoke/azure-infra-spoke-tiers-6.png":::
 

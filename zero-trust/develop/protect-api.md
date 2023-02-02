@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 12/13/2022
+ms.date: 10/10/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to learn best practices for protecting my API through registration, defining permissions and consent, and enforcing access to achieve my Zero Trust goals.
 ---

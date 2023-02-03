@@ -67,7 +67,7 @@ Item | Description
 
 
 
-<center><h2>Zero Trust Guidance center</center></h2>
+<center><h3>Zero Trust Guidance center</center></h3>
 <table>
 <tr>
 <td><a href="#strategy"><center><img src="./media/strategy-icons.png" alt="Strategy"> <br><b> Strategy</b></center></a></td>

@@ -95,7 +95,7 @@ See this overview of [Simuland](https://www.microsoft.com/security/blog/2021/05/
 
 |Resource|Description|
 |---|---|
-|[2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report)|A report that encompasses learnings from security experts, practitioners, and defenders at Microsoft to empower people everywhere to defend against cyberthreats.|
+|[2022 Microsoft Digital Defense Report](https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022)|A report that encompasses learnings from security experts, practitioners, and defenders at Microsoft to empower people everywhere to defend against cyberthreats.|
 |[Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra)|A set of visual architecture diagrams that show Microsoft's cybersecurity capabilities and their integration with Microsoft cloud platforms such as Microsoft 365 and Microsoft Azure and third-party cloud platforms and apps.|
 |[Minutes matter infographic](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf) download|An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks.|
 |[Azure Cloud Adoption Framework security operations](/azure/cloud-adoption-framework/secure/security-operations)|Strategic guidance for leaders establishing or modernizing a security operation function.|

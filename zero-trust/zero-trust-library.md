@@ -65,10 +65,10 @@ Item | Description
 <center><h2>Zero Trust Guidance center</center></h2>
 <table>
 <tr>
-<td><a href="#strategy"><center><img src="media/strategy-icons.png" alt="Strategy"> <br><b> Strategy</b></center></a></td>
-<td><a href="#architecture"><center><img src="media/archi-icons.png" alt="architecture"><br><b>Architecture</b></center></a></td>
-<td><center><a href="#implementation"><img src="media/implementation-icons.png" alt="implementation"><br> <b>Implementation</b></a></center></td>
-<td><center><a href="#operation"><img src="media/operation-icons.png" alt="Operation"><br> <b>Operation</b></a></center></td>
+<td><a href="#strategy"><center><img src="./media/strategy-icons.png" alt="Strategy"> <br><b> Strategy</b></center></a></td>
+<td><a href="#architecture"><center><img src="./media/archi-icons.png" alt="architecture"><br><b>Architecture</b></center></a></td>
+<td><center><a href="#implementation"><img src="./media/implementation-icons.png" alt="implementation"><br> <b>Implementation</b></a></center></td>
+<td><center><a href="#operation"><img src="./media/operation-icons.png" alt="Operation"><br> <b>Operation</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">

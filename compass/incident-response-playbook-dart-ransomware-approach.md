@@ -45,9 +45,8 @@ See these sections for the details:
 - [The DART approach to conducting ransomware incident investigations](#the-dart-approach-to-conducting-ransomware-incident-investigations)
 - [DART recommendations and best practices](#dart-recommendations-and-best-practices)
 
->[!Note]
->This article content was derived from the [A guide to combatting human-operated ransomware: Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [A guide to combatting human-operated ransomware: Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) Microsoft Security team blog posts.
->
+> [!NOTE]
+> This article content was derived from the [A guide to combatting human-operated ransomware: Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [A guide to combatting human-operated ransomware: Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) Microsoft Security team blog posts.
 
 ## How DART uses Microsoft security services
 
@@ -99,11 +98,11 @@ You should make every effort to determine how the adversary gained access to you
 
 The following are three key steps in DART ransomware investigations:
 
-| Step | Goal | Initial questions |
-|:-------|:-----|:-------|
-| 1. Assess the current situation | Understand the scope | What initially made you aware of a ransomware attack? <BR><BR> What time/date did you first learn of the incident? <BR><BR> What logs are available and is there any indication that the actor is currently accessing systems? |
-| 2. Identify the affected line-of-business (LOB) apps | Get systems back online | Does the application require an identity? <BR><BR> Are backups of the application, configuration, and data available? <BR><BR> Are the content and integrity of backups regularly verified using a restore exercise? |
-| 3. Determine the compromise recovery (CR) process | Remove attacker control from the environment | N/A |
+|Step|Goal|Initial questions|
+|---|---|---|
+|1. Assess the current situation|Understand the scope|What initially made you aware of a ransomware attack? <BR><BR> What time/date did you first learn of the incident? <BR><BR> What logs are available and is there any indication that the actor is currently accessing systems?|
+|2. Identify the affected line-of-business (LOB) apps|Get systems back online|Does the application require an identity? <BR><BR> Are backups of the application, configuration, and data available? <BR><BR> Are the content and integrity of backups regularly verified using a restore exercise?|
+|3. Determine the compromise recovery (CR) process|Remove attacker control from the environment|N/A|
 
 ### Step 1. Assess the current situation
 
@@ -236,19 +235,19 @@ Using the [PAM](/security/compass/privileged-access-access-model) (formerly know
 
   - Breaking out administrative accounts in a "planed" environment-one account for each level, usually four:
 
-  - Control Plane (formerly Tier 0): Administration of domain controllers and other crucial identity services, such as Active Directory Federation Services (ADFS) or Azure AD Connect. This also includes server applications that require administrative permissions to AD DS, such as Exchange Server.
+- Control Plane (formerly Tier 0): Administration of domain controllers and other crucial identity services, such as Active Directory Federation Services (ADFS) or Azure AD Connect. This also includes server applications that require administrative permissions to AD DS, such as Exchange Server.
 
-  - The next two planes were formerly Tier 1:
+- The next two planes were formerly Tier 1:
 
-    - Management Plane: Asset management, monitoring, and security.
+  - Management Plane: Asset management, monitoring, and security.
 
-    - Data/Workload Plane: Applications and application servers.
+  - Data/Workload Plane: Applications and application servers.
 
-  - The next two planes were formerly Tier 2:
+- The next two planes were formerly Tier 2:
 
-    - User Access: Access rights for users (such as accounts).
+  - User Access: Access rights for users (such as accounts).
 
-    - App Access: Access rights for applications.
+  - App Access: Access rights for applications.
 
 - Each one of these planes will have a *separate administrative workstation for each plane* and will only have access to systems in that plane. Other accounts from other planes will be denied access to workstations and servers in the other planes through user rights assignments set to those machines.
 
@@ -284,7 +283,6 @@ Examine guidance for identifying and investigating these types of attacks:
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
 - [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
-
 
 ## Additional ransomware resources
 
@@ -323,7 +321,7 @@ Microsoft Azure:
 
 Microsoft Defender for Cloud Apps:
 
--  [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
+- [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Security team blog posts:
 

@@ -74,6 +74,8 @@ landingContent:
             url: ../SDL/Security-Bug-Bar-Sample.md
           - text: Cryptographic recommendations
             url: ../SDL/Cryptographic-Recommendations.md
+          - text: Threat Modeling with DevOps
+            url: threat-modeling-with-dev-ops.md
 
   # Card
   - title: About Microsoft's Cyber Defense Operations Center

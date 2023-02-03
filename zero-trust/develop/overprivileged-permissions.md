@@ -11,7 +11,9 @@ ms.custom: template-concept
 ---
 # Reducing overprivileged permissions and apps
 
-In this article, you, as a developer, will learn why applications shouldn't request more permissions than they need. You'll understand the term *overprivileged* and discover recommendations and best practices for limiting privilege in your applications to manage access and improve security.
+As a developer aiming to design and implement applications that follow the [guiding principles of Zero Trust](overview.md), you want to [increase application security with least privilege](/azure/active-directory/develop/secure-least-privileged-access). It's imperative that you reduce the attack surface of your application and the effect of a security breach.
+
+In this article, you'll learn why applications shouldn't request more permissions than they need. You'll understand the term *overprivileged* and discover recommendations and best practices for limiting privilege in your applications to manage access and improve security.
 
 ## What is overprivileged?
 
@@ -111,6 +113,8 @@ Two major incentives for maintaining least privilege permission with your applic
 
 - [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [Building apps with a Zero Trust approach to identity](identity.md) provides an overview of permissions and access best practices.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Achieving Zero Trust readiness in your apps: Designing for Least Privilege](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/achieving-zero-trust-readiness-in-your-apps-2-designing-for/ba-p/2959986) helps you to design apps using the principle of least privileged access with the Microsoft identity platform.
 - [Increase application security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access) helps you to reduce the attack surface of an application and the effect of a security breach (the blast radius) should one occur in a Microsoft identity platform-integrated application.
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) and [Microsoft Graph permissions reference](/graph/permissions-reference) helps you to select Microsoft Graph API calls to enable your app scenario and find corresponding permissions from least to most privileged.

@@ -244,6 +244,10 @@
          "redirect_url": "/zero-trust/zero-trust-library",
          "redirect_document_id": false
       },
-
+      {
+        "source_path": "zero-trust/integrate/sentinel-solution.md",
+        "redirect_url": "/azure/sentinel/sentinel-solution",
+        "redirect_document_id": false
+      },
   ] 
   } 

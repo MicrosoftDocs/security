@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 07/28/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to implement the best authorization, permission, and consent models for my applications.
 ---
@@ -51,7 +51,7 @@ While access to data in APIs like Microsoft Graph allows you to build rich appli
 
 Becoming a [Microsoft Verified Publisher](/azure/active-directory/develop/publisher-verification-overview) helps you to give your customers an easier experience in accepting your application requests. When an application comes from a verified publisher, users, IT Pros, and customers know that it comes from someone with whom Microsoft has a business relationship. A blue checkmark appears next to the publisher's name (component #5 in the **Permissions requested** consent prompt example below; see component table at [Azure AD application consent experience](/azure/active-directory/develop/application-consent-experience#building-blocks-of-the-consent-prompt)). The user can select the verified publisher from the consent prompt to view more information.
 
-:::image type="complex" source="../media/develop/screenshot-application-permissions-requested-consent-prompt-inline.png" alt-text="Screenshot of Permissions requested dialog shows component building blocks as described in linked Azure AD application consent experience article." lightbox="../media/develop/screenshot-application-permissions-requested-consent-prompt-expanded.png":::
+:::image type="complex" source="../media/develop/developer-strategy-authorization-best-practices/screenshot-application-permissions-requested-consent-prompt-inline.png" alt-text="Screenshot of Permissions requested dialog shows component building blocks as described in linked Azure AD application consent experience article." lightbox="../media/develop/developer-strategy-authorization-best-practices/screenshot-application-permissions-requested-consent-prompt-expanded.png":::
    "Screenshot of the consent experience Permissions requested dialog shows component building blocks as described in linked Azure AD application consent experience article. Emphasized is component number 5, which is the name of the verified publisher, and a blue checkmark that the user can select to get more information about the publisher."
 :::image-end:::
 
@@ -64,5 +64,7 @@ customers.
 - [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.
 - Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle to create secure applications.
 - [Security best practices for application properties](/azure/active-directory/develop/security-best-practices-for-app-registration) describes redirect URI, access tokens, certificates and secrets, application ID URI, and application ownership.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
 - [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.

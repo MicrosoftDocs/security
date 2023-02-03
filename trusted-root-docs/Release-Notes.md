@@ -1,7 +1,7 @@
 ---
 title: Release notes - Microsoft Trusted Root Certificate Program
-description: This document provides details about the changes made monthly to the root store.
-ms.date: 6/15/2022
+description: This document gives details about the changes made monthly to the root store.
+ms.date: 1/25/2023
 ms.service: security
 author: hasokol-ms
 ms.author: hasokol
@@ -22,9 +22,15 @@ Please note, the changes listed are accurate at the time of posting but are subj
 
 A list of Root Store participants, updated monthly, can be found here: <https://aka.ms/trustcertpartners>. 
 
+## 2023
+| Month |	Date of Release	| Release Notes |
+|---|---|---|
+| February | February 28 | [Deployment Notice for February 2023](2023/Feb2023.md) |
+
 ## 2022
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
+| November | November 29 | [Deployment Notice for November 2022](2022/November2022.md) |
 | October | October 25 | [Deployment Notice for October 2022](2022/October2022.md) |
 | September | September 27 | [Deployment Notice for September 2022](2022/September2022.md) |
 | August | August 23 | [Deployment Notice for August 2022](2022/August2022.md) |

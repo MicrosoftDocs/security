@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 08/19/2022
 ms.custom: template-concept
 # Customer intent: As a developer, I want to implement the best approach for managing permissions in my application and develop using Zero Trust.
 ---
@@ -17,7 +17,7 @@ The permission and consent models refer primarily to an application. The permiss
 
 Reference the following Venn diagram. With delegated permissions, there's an intersection between what the user is allowed to do and what the application is allowed to do. That intersection is the effective permission by which the application is bound. Anytime you use a delegated permission, it's bounded by the effective permissions.
 
-:::image type="complex" source="../media/develop/diagram-effective-permissions-inline.png" alt-text="Venn diagram shows effective permissions as intersection of app permissions and user capabilities." lightbox="../media/develop/diagram-effective-permissions-expanded.png":::
+:::image type="complex" source="../media/develop/developer-strategy-delegated-permission/diagram-effective-permissions-inline.png" alt-text="Venn diagram shows effective permissions as intersection of app permissions and user capabilities." lightbox="../media/develop/developer-strategy-delegated-permission/diagram-effective-permissions-expanded.png":::
    "Venn diagram description: Left circle text: Apps are granted consent for the app's range of operation. Right circle text: Users have permissions for operations managed by their organization. Intersection of circles text: Effective permissions: intersection of app permissions and user capabilities."
 :::image-end:::
 
@@ -129,7 +129,9 @@ A primary step in an enterprise's journey to Zero Trust is to adopt stronger aut
 
 - [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
-- [Calling an API from another API](api-calls-api.md) helps you to ensure Zero Trust when you have one API that needs to call another API and securely develop your application when it is working on behalf of a user.
+- [Calling an API from another API](api-calls-api.md) helps you to ensure Zero Trust when you have one API that needs to call another API and securely develop your application when it's working on behalf of a user.
 - [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.
 - Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle to create secure applications.

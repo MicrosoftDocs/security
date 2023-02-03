@@ -23,6 +23,8 @@
       href: deploy/networks.md
     - name: Visibility, automation, and orchestration
       href: deploy/visibility-automation-orchestration.md
+- name: Small business Zero Trust guidance
+  href: guidance-smb-partner.md
 - name: Rapid Modernization Plan (RaMP)
   expanded: false
   items: 
@@ -34,7 +36,7 @@
       href: data-compliance-gov-ransomware-recovery-readiness.md
     - name: Data protection
       href: data-compliance-gov-data.md
-- name: Zero Trust deployment plans for Microsoft 365
+- name: Zero Trust deployment plans with Microsoft 365
   expanded: false
   items:
     - name: Overview
@@ -157,23 +159,18 @@
           href: /microsoft-365/security/defender/eval-defender-promote-to-production?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Deploy a Microsoft Information Protection solution 
       href: /microsoft-365/compliance/information-protection-solution?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-    - name: Deploy information protection for data privacy regulations
+    - name: Manage data privacy and data protection with Microsoft Priva and Microsoft Purview
       items: 
       - name: Overview
-        href: /microsoft-365/solutions/information-protection-deploy?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Plan
-        href: /microsoft-365/solutions/information-protection-deploy-assess?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Track
-        href: /microsoft-365/solutions/information-protection-deploy-compliance?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Prevent
-        href: /microsoft-365/solutions/information-protection-deploy-identity-device-threat?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Protect
-        href: /microsoft-365/solutions/information-protection-deploy-protect-information?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Retain
-        href: /microsoft-365/solutions/information-protection-deploy-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Investigate
-        href: /microsoft-365/solutions/information-protection-deploy-monitor-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-
+        href: /microsoft-365/solutions/data-privacy-protection?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 1. Assess data and risks
+        href: /microsoft-365/solutions/data-privacy-protection-assess?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 2. Protect and govern data
+        href: /microsoft-365/solutions/data-privacy-protection-protect-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 3. Stay on track
+        href: /microsoft-365/solutions/data-privacy-protection-regulations?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 4. Respond to incidents and subject requests
+        href: /microsoft-365/solutions/data-privacy-protection-respond-requests?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
     - name: Integrate SaaS apps for Zero Trust with Microsoft 365 
       items:
       - name: Overview
@@ -184,7 +181,22 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-            
+- name: Zero Trust deployment plans with Microsoft Azure and infrastructure
+  expanded: false
+  items: 
+    - name: Secure IaaS infrastructure in Azure
+      expanded: false
+      items: 
+      - name: Overview and reference architecture
+        href: azure-infrastructure-overview.md
+      - name: Azure storage
+        href: azure-infrastructure-storage.md
+      - name: Virtual machines
+        href: azure-infrastructure-virtual-machines.md
+      - name: Azure spoke virtual networks
+        href: azure-infrastructure-iaas.md
+      - name: Azure hub virtual networks
+        href: azure-infrastructure-networking.md
 - name: Technology partner integrations
   expanded: false
   items: 
@@ -206,8 +218,8 @@
       items:
       - name: Overview
         href: integrate/visibility-automation-orchestration.md
-      - name: Build and monitor Zero Trust
-        href: integrate/sentinel-solution.md
+      - name: Monitor Zero Trust with Microsoft Sentinel
+        href: /azure/sentinel/sentinel-solution?toc=/security/zero-trust/integrate/TOC.json&bc=/security/zero-trust/breadcrumb/toc.json
 - name: Developer guidance
   expanded: false
   items:
@@ -227,10 +239,14 @@
       items:
       - name: Overview
         href: develop/identity.md
+      - name: App integration
+        href: develop/integrate-apps-with-azure-ad-microsoft-identity-platform.md
       - name: Identity and account types for apps
         href: develop/identity-supported-account-types.md
       - name: Resource access authorization
         href: develop/acquire-application-authorization-to-access-resources.md
+      - name: Secure apps with Continuous Access Evaluation
+        href: develop/secure-with-cae.md
       - name: Delegated permissions
         href: develop/developer-strategy-delegated-permission.md
       - name: Application permissions
@@ -241,6 +257,10 @@
         href: develop/overprivileged-permissions.md
       - name: Non-user application identity
         href: develop/identity-non-user-applications.md
+      - name: Token customization
+        href: develop/zero-trust-token-customization.md
+      - name: Group claims and app roles in tokens
+        href: develop/configure-tokens-group-claims-app-roles.md
       - name: API protection
         href: develop/protect-api.md
       - name: Protected API example
@@ -249,6 +269,16 @@
         href: develop/api-calls-api.md
       - name: Authorization best practices
         href: develop/developer-strategy-authorization-best-practices.md
+    - name: Zero Trust DevSecOps
+      items:
+      - name: Overview
+        href: develop/secure-devops-environments-zero-trust.md
+      - name: Secure DevOps platform environment
+        href: develop/secure-devops-platform-environment-zero-trust.md
+      - name: Secure development environment
+        href: develop/secure-dev-environment-zero-trust.md
+      - name: Embed Zero Trust into developer workflow
+        href: develop/embed-zero-trust-dev-workflow.md
 - name: Resources
   expanded: false
   items:

@@ -9,23 +9,6 @@
     #     href: new-in-microsoft-security-compass.md
         - name: Progress and role tracking worksheets
           href: progress-and-role-tracking-worksheets.md
-        - name: The immutable laws of security
-          href: ten-laws-of-security.md
-    - name: Governance, risk, and compliance
-      items:
-        - name: Videos and slides
-          href: governance-risk-compliance-videos-and-decks.md
-
-
-    - name: Identity and access management
-      items:
-        - name: Videos and slides
-          href: identity-videos-and-decks.md
-
-    - name: Network security & containment
-      items:
-        - name: Videos and slides
-          href: network-containment-videos-and-decks.md
 
 
     - name: Privileged administration
@@ -81,12 +64,4 @@
           href: incident-response-playbook-dart-ransomware-approach.md
         - name: DART ransomware case study
           href: dart-ransomware-case-study.md 
-
-    - name: Information protection and storage
-      items:
-        - name: Videos and slides
-          href: information-protection-and-storage-videos-and-decks.md
-        - name: Article
-          href: storage-data-encryption.md
-
 

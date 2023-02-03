@@ -45,7 +45,7 @@ Microsoft Purview proposes five core elements for a data defense in depth strate
 <table border="0">
    <tr>
       <td colspan="2">
-         <p>When implementing an end-to-end Zero Trust framework for data, we recommend you focus first on these <b>initial deployment objectives</b>:</p>
+         <p>We recommend you focus on these initial deployment objectives when implementing an end-to-end Zero Trust framework for data:</p>
 	  </td>
    </tr>
    <tr>
@@ -60,7 +60,7 @@ Microsoft Purview proposes five core elements for a data defense in depth strate
    </tr>
    <tr>
       <td colspan="2">
-         <p>After these are completed, focus on these <b>additional deployment objectives</b>:</p>
+         <p>As you make progress achieving the above objectives, add these additional deployment objectives:</p>
       </td>
    </tr>
    <tr>
@@ -102,31 +102,31 @@ Classifications and sensitivity labels let you understand where your sensitive d
 
 Follow these steps:
 
--   [Learn about sensitive information types](https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitive-information-type-learn-about?view=o365-worldwide)
+-   [Learn about sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about)
 
--   [Learn about trainable classifiers](https://learn.microsoft.com/en-us/microsoft-365/compliance/classifier-learn-about?view=o365-worldwide)
+-   [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about)
 
--   [Learn about sensitivity labels](https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
+-   [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
 
 Once you have configured and tested classification and labeling, scale up data discovery across your data estate.
 
 Follow these steps to extend discovery beyond Microsoft 365 services:
 
--   [Get started with the Microsoft Purview on-premises scanner](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-on-premises-scanner-get-started?view=o365-worldwide)
+-   [Get started with the Microsoft Purview on-premises scanner](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
 
--   [Discover and protect sensitive information in SaaS applications](https://learn.microsoft.com/en-us/defender-cloud-apps/tutorial-dlp?source=recommendations)
+-   [Discover and protect sensitive information in SaaS applications](/defender-cloud-apps/tutorial-dlp)
 
--   [Learn about scans and ingestion in the Microsoft Purview governance portal](https://learn.microsoft.com/en-us/azure/purview/concept-scans-and-ingestion#scanning)
+-   [Learn about scans and ingestion in the Microsoft Purview governance portal](/azure/purview/concept-scans-and-ingestion#scanning)
 
 As you discover, classify and label your data, use those insights to remediate risk and inform your policy management initiatives.
 
 Follow these steps:
 
--   [Get started with Content Explorer](https://microsoft.sharepoint-df.com/microsoft-365/compliance/data-classification-content-explorer?view=o365-worldwide&preserve-view=true)
+-   [Get started with Content Explorer](/microsoft-365/compliance/data-classification-content-explorer)
 
--   [Review labeling activity with Activity Explorer](https://microsoft.sharepoint-df.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide&preserve-view=true)
+-   [Review labeling activity with Activity Explorer](/microsoft-365/compliance/data-classification-activity-explorer)
 
--   [Learn about Data Insights](https://learn.microsoft.com/en-us/azure/purview/concept-insights)
+-   [Learn about Data Insights](/azure/purview/concept-insights)
 
 
 ### II. Apply encryption, access control and content markings
@@ -139,8 +139,8 @@ Microsoft Purview Information Protection enables access and usage control based 
 
 Follow these steps:
 
--   [Review encryption options in Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365/compliance/encryption?view=o365-worldwide)
--   [Restrict access to content and usage by using sensitivity labels](https://learn.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide)
+-   [Review encryption options in Microsoft 365](/microsoft-365/compliance/encryption)
+-   [Restrict access to content and usage by using sensitivity labels](/microsoft-365/compliance/encryption-sensitivity-labels)
 
 #### Protect documents in Exchange, SharePoint, and OneDrive
 
@@ -148,15 +148,15 @@ For data stored in Exchange, SharePoint, and OneDrive, automatic classification 
 
 Take this step:
 
--   [Configure auto-labeling policies](https://microsoft.sharepoint-df.com/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide&preserve-view=true#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) for SharePoint, OneDrive, and Exchange.
+-   [Configure auto-labeling policies](/microsoft-365/compliance/apply-sensitivity-label-automatically#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange for SharePoint, OneDrive, and Exchange.
 
-#### Control data access and sharing in Teams, M365 Groups and SharePoint sites
+#### Control data access and sharing in Teams, Microsoft 365 Groups and SharePoint sites
 
 Use container sensitivity labels to implement conditional access and sharing restrictions to Microsoft Teams, Microsoft 365 Groups or SharePoint sites.
 
 Take this step:
 
--   [Use sensitivity labels with Microsoft Teams, Microsoft 365 Groups, and SharePoint sites](https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-worldwide#how-to-configure-groups-and-site-settings)
+-   [Use sensitivity labels with Microsoft Teams, Microsoft 365 Groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#how-to-configure-groups-and-site-settings)
 
 #### Control access to data in SaaS applications
 
@@ -170,7 +170,11 @@ Microsoft Defender for Cloud Apps provides additional capabilities for condition
 
 Follow these steps:
 
--   Integrate Microsoft Defender for Cloud Apps and Microsoft Information Protection and use it to also protect data in third-party environments such as Box or G-Suite.
+-   [Integrate Microsoft Purview Information Protection](/defender-cloud-apps/azip-integration)
+
+
+>[!TIP]
+>Check out [Integrate SaaS apps for Zero Trust with Microsoft 365](/security/zero-trust/integrate-saas-apps) to learn how to apply Zero Trust principles to help manage your digital estate of cloud apps. 
 
 #### Control access to in IaaS/PaaS storage
 
@@ -178,7 +182,7 @@ Deploy mandatory access control policies to IaaS/PaaS resources that contain sen
 
 Take this step:
 
--   [Learn about Microsoft Purview DevOps policies](https://learn.microsoft.com/en-us/azure/purview/concept-policies-devops)
+-   [Learn about Microsoft Purview DevOps policies](/azure/purview/concept-policies-devops)
 
 ### III. Enable Data Loss Prevention
 
@@ -198,13 +202,13 @@ Use Microsoft Purview DLP policies to identify, check, and automatically protect
 
 Follow these steps:
 
--   [Plan for data loss prevention](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-overview-plan-for-dlp?view=o365-worldwide)
+-   [Plan for data loss prevention](/microsoft-365/compliance/dlp-overview-plan-for-dlp)
 
--   [Create, test, and tune DLP policies](https://learn.microsoft.com/en-us/microsoft-365/compliance/create-test-tune-dlp-policy?view=o365-worldwide)
+-   [Create, test, and tune DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy)
 
--   [Learn about the data loss prevention Alerts dashboard](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-alerts-dashboard-learn?view=o365-worldwide)
+-   [Learn about the data loss prevention Alerts dashboard](/microsoft-365/compliance/dlp-alerts-dashboard-learn)
 
--   [Review data activity with Activity Explorer](https://microsoft.sharepoint-df.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide&preserve-view=true)
+-   [Review data activity with Activity Explorer](/microsoft-365/compliance/data-classification-activity-explorer)
 
 ### IV. Manage insider risks
 
@@ -212,9 +216,9 @@ Least privilege implementations help minimize known risks, but it is also import
 
 Take these steps:
 
--   [Learn about Insider Risk Management](https://learn.microsoft.com/en-us/microsoft-365/compliance/insider-risk-management-solution-overview?view=o365-worldwide)
+-   [Learn about Insider Risk Management](/microsoft-365/compliance/insider-risk-management-solution-overview)
 
--   [Investigate insider risk management activities](https://learn.microsoft.com/en-us/microsoft-365/compliance/insider-risk-management-activities?view=o365-worldwide)
+-   [Investigate insider risk management activities](/microsoft-365/compliance/insider-risk-management-activities)
 
 ### V. Delete unnecessary sensitive information
 
@@ -230,31 +234,15 @@ Minimize duplication of sensitive data by favoring in-place sharing and use rath
 
 Take this step:
 
--   [Learn about in-place data sharing with Microsoft Purview](https://learn.microsoft.com/en-GB/azure/purview/concept-data-share)
+-   [Learn about in-place data sharing with Microsoft Purview](/azure/purview/concept-data-share)
 
 ## Products covered in this guide
 
-[Microsoft Purview](https://www.microsoft.com/en-us/security/business/microsoft-purview)
+[Microsoft Purview](/security/business/microsoft-purview)
 
-[Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security)
+[Microsoft Defender for Cloud Apps](/microsoft-365/enterprise-mobility-security/cloud-app-security)
 
 For further information or help with implementation, please contact your Customer Success team.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

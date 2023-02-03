@@ -54,8 +54,8 @@ Microsoft Purview proposes five core elements for a data defense in depth strate
       </td>
       <td>
 	     <p><b>I.</b> <a href="#i-classify-label-and-discover-sensitive-data">Classify and label data. </a>Automatically classify and label data where possible. Apply manually where it is not.</p>
-         <p><b>II.</b> <a href="#ii-data-is-automatically-classified-and-labeled">Apply encryption where protection and access control are insufficient.</a></p>
-        <p><b>III.</b> <a href="#ii-data-is-automatically-classified-and-labeled">Ensure that access and usage policy decisions are inclusive of data sensitivity.</a></p>
+         <p><b>II.</b> <a href="#ii-apply-encryption-access-control-and-content-markings">Apply encryption where protection and access control are insufficient.</a></p>
+        <p><b>III.</b> <a href="#iii-enable-data-loss-prevention">Control access to data.</a>Ensure that access and usage policy decisions are inclusive of data sensitivity.</p>
       </td>
    </tr>
    <tr>
@@ -68,7 +68,7 @@ Microsoft Purview proposes five core elements for a data defense in depth strate
 		 <p><img src="../media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
       </td>
       <td>
-         <p><b>IV.</b> <a href="#iv-classification-is-augmented-by-smart-machine-learning-models">Prevent data leakage. </a>Use DLP policies that are driven by risky signals and data sensitivity.</p>
+         <p><b>IV.</b> <a href="#iv-manage-insider-risks">Prevent data leakage. </a>Use DLP policies that are driven by risky signals and data sensitivity.</p>
          <p><b>V.</b> <a href="#v-access-decisions-are-governed-by-a-cloud-security-policy-engine">Manage risks.</a> Manage risks that may lead to a data security incident by checking risky security related user activities and data activity patterns that may result in a data security or compliance incident.</p>
          <p><b>VI.</b> <a href="#vi-prevent-data-leakage-through-dlp-policies-based-on-a-sensitivity-label-and-content-inspection">Reduce data exposure.</a> Reduce data exposure through data governance and continual data minimization</p>
       </td>
@@ -150,6 +150,7 @@ Take this step:
 
 -   [Configure auto-labeling policies](/microsoft-365/compliance/apply-sensitivity-label-automatically#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange for SharePoint, OneDrive, and Exchange.
 
+
 #### Control data access and sharing in Teams, Microsoft 365 Groups and SharePoint sites
 
 Use container sensitivity labels to implement conditional access and sharing restrictions to Microsoft Teams, Microsoft 365 Groups or SharePoint sites.
@@ -157,6 +158,9 @@ Use container sensitivity labels to implement conditional access and sharing res
 Take this step:
 
 -   [Use sensitivity labels with Microsoft Teams, Microsoft 365 Groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#how-to-configure-groups-and-site-settings)
+
+### III. Control access to data 
+Providing access to sensitive data must be controlled so that they are better protected. Ensure that access and usage policy decisions are inclusive of data sensitivity.
 
 #### Control access to data in SaaS applications
 
@@ -184,7 +188,7 @@ Take this step:
 
 -   [Learn about Microsoft Purview DevOps policies](/azure/purview/concept-policies-devops)
 
-### III. Enable Data Loss Prevention
+### IV. Enable Data Loss Prevention
 
 Controlling access to data is necessary but insufficient in exerting control over data movement and in preventing inadvertent or unauthorized data leakage or loss. That is the role of data loss prevention and insider risk management, which is described in section IV.
 
@@ -210,7 +214,7 @@ Follow these steps:
 
 -   [Review data activity with Activity Explorer](/microsoft-365/compliance/data-classification-activity-explorer)
 
-### IV. Manage insider risks
+### V. Manage insider risks
 
 Least privilege implementations help minimize known risks, but it is also important to correlate additional security related user behavioral signals, check sensitive data access patterns, and to broad detection, investigation and hunting capabilities.
 
@@ -220,7 +224,7 @@ Take these steps:
 
 -   [Investigate insider risk management activities](/microsoft-365/compliance/insider-risk-management-activities)
 
-### V. Delete unnecessary sensitive information
+### VI. Delete unnecessary sensitive information
 
 Organizations can reduce their data exposure by managing the lifecycle of their sensitive data.
 

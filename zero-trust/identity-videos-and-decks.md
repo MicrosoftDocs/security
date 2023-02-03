@@ -37,9 +37,6 @@ The following videos provide guidance on identity and access management.
 ## Part 6: General Guidance (2:38 long)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qbKi]
 
-## Next steps
-
-See the [Identity and access management](identity.md) and [Capabilities](identity-capabilities.md) topics.
 
 ## See also
 

@@ -69,7 +69,7 @@ Microsoft Purview proposes five core elements for a data defense in depth strate
       </td>
       <td>
          <p><b>IV.</b> <a href="#iv-prevent-data-leakage">Prevent data leakage. </a>Use DLP policies that are driven by risky signals and data sensitivity.</p>
-         <p><b>V.</b> <a href="#manage-insider-risks">Manage risks.</a> Manage risks that may lead to a data security incident by checking risky security related user activities and data activity patterns that may result in a data security or compliance incident.</p>
+         <p><b>V.</b> <a href="#v-manage-insider-risks">Manage risks.</a> Manage risks that may lead to a data security incident by checking risky security related user activities and data activity patterns that may result in a data security or compliance incident.</p>
          <p><b>VI.</b> <a href="#vi-delete-unnecessary-sensitive-information">Reduce data exposure.</a> Reduce data exposure through data governance and continual data minimization</p>
       </td>
    </tr>

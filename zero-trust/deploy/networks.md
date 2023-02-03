@@ -82,7 +82,7 @@ To make this happen, we follow three Zero Trust principles:
          <p><b>IV.</b> <a href="#iv-network-segmentation-fully-distributed-ingressegress-cloud-micro-perimeters-and-deeper-micro-segmentation">Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation.</a></p>
          <p><b>V.</b> <a href="#v-threat-protection-machine-learning-based-threat-protection-and-filtering-with-context-based-signals">Threat protection: Machine learning-based threat protection and filtering with context-based signals.</a></p>
          <p><b>VI.</b> <a href="#vi-encryption-all-traffic-is-encrypted">Encryption: All traffic is encrypted.</a></p>
-        <p><b>VII.</b> <a href="#discontinue-legacy-network-security-technology">Discontinue legacy network security technology.</a></p>
+        <p><b>VII.</b> <a href="#vii-discontinue-legacy-network-security-technology">Discontinue legacy network security technology.</a></p>
       </td>
    </tr>
 </table>

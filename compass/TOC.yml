@@ -1,16 +1,6 @@
 - name: Microsoft Security Best Practices
   href: compass.md
   items: 
-    - name: Introduction
-      items:
-        - name: What's inside Microsoft Security Best Practices?
-          href: microsoft-security-compass-introduction.md
-    #   - name: What's new in Microsoft Security Compass?
-    #     href: new-in-microsoft-security-compass.md
-        - name: Progress and role tracking worksheets
-          href: progress-and-role-tracking-worksheets.md
-
-
     - name: Privileged administration
       items:
         - name: Securing privileged access

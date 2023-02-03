@@ -22,18 +22,21 @@ The Zero Trust guidance center is organized to help you in creating a Zero Trust
 Learn about the strategies to advance your security infrastructure to align with the Zero Trust principles. 
 
 ## Architecture
-Learn about the strategies to advance your security infrastructure to align with the Zero Trust architecture. 
+
+Architect your environment to align to the Zero Trust princples.
+ 
 
 
 ## Implementation
 
- Learn about the strategies to advance your security infrastructure to align with the Zero Trust architecture.
+Implement Zero Trust principles to advance your security infrastructure to align with the Zero Trust architecture.
+
 
 
 
 ## Operation
 
-Learn asdfasdfabout ways to run security operations. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+Learn how to use Zero Trust principles to apply in your operations, including people, processes, and technology. 
 
 ## Best practices
 

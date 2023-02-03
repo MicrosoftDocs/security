@@ -13,59 +13,38 @@ ms.collection: highpri
 
 The Zero Trust guidance center is organized to help you in creating a Zero Trust strategy, provide architecture guidance, help you implement the Zero Trust framework, and guide you on security operations using the principles. Best practices and learning resources are also provided to further guide you in your journey of implementing the Zero Trust framework. 
 
-![IMagessss](./media/zt-landing-small.png)
-
-
-
-![IMagessss](./media/zt-landing-medium.png)
-
-
-![IMagessss](./media/zt-landing-ml.png)
 	
-:::image type="content" source="./media/zt-landing-small.png" alt-text="Diagram of Zero Trust guidance center with tiles for strategy, architecture, implementation, operation, best practices, and learning." border="false":::
+:::image type="content" source="./media/zt-landing-medium.png" alt-text="Diagram of Zero Trust guidance center with tiles for strategy, architecture, implementation, operation, best practices, and learning." border="false":::
 
 
 ## Strategy
 
-
-Item | Description
-:---|:---
-:::image type="content" source="./media/strategy.png" alt-text="Diagram of Zero Trust guidance strategy." border="true"::: | Learn about the strategies to advance your security infrastructure to align with the Zero Trust principles. 
-
+Learn about the strategies to advance your security infrastructure to align with the Zero Trust principles. 
 
 ## Architecture
-
-Item | Description
-:---|:---
-:::image type="content" source="./media/architecture.png" alt-text="Diagram of Zero Trust guidance architecture." border="true"::: | Learn about the strategies to advance your security infrastructure to align with the Zero Trust architecture. 
+Learn about the strategies to advance your security infrastructure to align with the Zero Trust architecture. 
 
 
 ## Implementation
 
+ Learn about the strategies to advance your security infrastructure to align with the Zero Trust architecture.
 
 
-
-Item | Description
-:---|:---
-:::image type="content" source="./media/implementation.png" alt-text="Diagram of Zero Trust guidance implementation." border="true"::: | Learn about the strategies to advance your security infrastructure to align with the Zero Trust architecture.
 
 ## Operation
 
-
-Item | Description
-:---|:---
-:::image type="content" source="./media/operation.png" alt-text="Diagram of Zero Trust guidance implementation." border="true"::: | Learn asdfasdfabout ways to run security operations. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-
+Learn asdfasdfabout ways to run security operations. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
 
 ## Best practices
 
+Find resources such as videos and slides about best practices. 
 
 
 
 
 ## Learning
 
-
+Find resources to learn more about Zero Trust. 
 
 <center><h3>Zero Trust Guidance center</center></h3>
 <table>

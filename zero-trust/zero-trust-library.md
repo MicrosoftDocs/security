@@ -13,7 +13,7 @@ ms.collection: highpri
 
 The Zero Trust guidance center is organized to help you in creating a Zero Trust strategy, provide architecture guidance, help you implement the Zero Trust framework, and guide you on security operations using the principles. Best practices and learning resources are also provided to further guide you in your journey of implementing the Zero Trust framework. 
 	
-:::image type="content" source="./media/zt-landing.png" alt-text="Diagram of Zero Trust guidance center with tiles for strategy, architecture, implementation, operation, best practices, and learning." border="false":::
+
 	
 :::image type="content" source="./media/zt-landing-small.png" alt-text="Diagram of Zero Trust guidance center with tiles for strategy, architecture, implementation, operation, best practices, and learning." border="false":::
 
@@ -47,7 +47,7 @@ Item | Description
 
 Item | Description
 :---|:---
-:::image type="content" source="./media/implementation.png" alt-text="Diagram of Zero Trust guidance implementation." border="true"::: | Learn about ways to run security operations. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+:::image type="content" source="./media/operation.png" alt-text="Diagram of Zero Trust guidance implementation." border="true"::: | Learn about ways to run security operations. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
 
 
 ## Best practices

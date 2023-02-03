@@ -47,7 +47,7 @@ Item | Description
 
 Item | Description
 :---|:---
-:::image type="content" source="./media/operation.png" alt-text="Diagram of Zero Trust guidance implementation." border="true"::: | Learn about ways to run security operations. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+:::image type="content" source="./media/operation.png" alt-text="Diagram of Zero Trust guidance implementation." border="true"::: | Learn asdfasdfabout ways to run security operations. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
 
 
 ## Best practices

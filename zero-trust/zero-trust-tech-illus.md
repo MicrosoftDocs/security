@@ -22,6 +22,9 @@ Intro TBD
 - Use the Visio file to modify the illustrations for your own use.
 - Use the PowerPoint file for presentations and to modify slides for your own use.
 
+
+
+
 ## Zero Trust for Microsoft 365
 
 You can download the illustrations used in the [Zero Trust for Microsoft 365 series of articles](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json).
@@ -62,12 +65,10 @@ Security Best Practices presentation slides:
 [PowerPoint](/microsoft-365/downloads/security-compass-presentation.pptx) | [PDF](/microsoft-365/downloads/security-compass-presentation.pdf)
 Updated October 2022
 
-
 [![Thumb image of top 10 Azure Security best practices](/microsoft-365/downloads/top-10-azure-security-best-practices-thumb.png)](/microsoft-365/downloads/top-10-azure-security-best-practices.pdf)
 
 [PowerPoint](/microsoft-365/downloads/top-10-azure-security-best-practices.pptx) | [PDF](/microsoft-365/downloads/top-10-azure-security-best-practices.pdf)
 
-[PowerPoint](/microsoft-365/downloads/top-10-azure-security-best-practices.pptx) | [PDF](/microsoft-365/downloads/top-10-azure-security-best-practices.pdf)
 Updated October 2022
 
 The app consent grant and other incident response playbook workflows:

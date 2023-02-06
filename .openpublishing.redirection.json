@@ -259,5 +259,40 @@
         "redirect_url": "/azure/sentinel/sentinel-solution",
         "redirect_document_id": false
       },
+      {
+        "source_path": "compass/human-operated-ransomware.md",
+        "redirect_url": "/ransomware/human-operated-ransomware",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "compass/protect-against-ransomware.md",
+        "redirect_url": "/ransomware/protect-against-ransomware",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "compass/human-operated-ransomware.md",
+        "redirect_url": "/ransomware/protect-against-ransomware-phase1",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "compass/protect-against-ransomware-phase2.md",
+        "redirect_url": "/ransomware/protect-against-ransomware-phase2",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "compass/protect-against-ransomware-phase3.md",
+        "redirect_url": "/ransomware/protect-against-ransomware-phase3",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "compass/incident-response-playbook-dart-ransomware-approach.md",
+        "redirect_url": "/ransomware/incident-response-playbook-dart-ransomware-approach",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "compass/dart-ransomware-case-study.md",
+        "redirect_url": "/ransomware/dart-ransomware-case-study",
+        "redirect_document_id": false
+      },
   ] 
   } 

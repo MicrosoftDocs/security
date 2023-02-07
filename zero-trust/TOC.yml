@@ -277,7 +277,7 @@
         href: develop/secure-dev-environment-zero-trust.md
       - name: Embed Zero Trust into developer workflow
         href: develop/embed-zero-trust-dev-workflow.md
-- name: Technical illustrations
+- name: Zero Trust illustrations for IT architects and implementers
   href: zero-trust-tech-illus.md
 - name: Resources
   expanded: false

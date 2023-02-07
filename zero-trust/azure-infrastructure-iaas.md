@@ -40,7 +40,7 @@ In the diagram:
 
 The application shown in the reference architecture follows the [N-tier architecture style](/azure/architecture/guide/architecture-styles/n-tier)
 
-The following diagram shows the components of a resource group for a spoke VNet in an Azure subscription.
+The following diagram shows the components of a resource group for a spoke VNet in an Azure subscription separate from the subscription for the hub VNet.
 
 :::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="Diagram of the components of a resource group for a spoke VNet.":::
 

@@ -97,7 +97,7 @@ In this diagram, the Azure infrastructure is contained within one Azure AD tenan
 
    Virtual machines are contained in one resource group. You can also have each virtual machine type for workload tiers such as front end, application, and data in different resource groups to further isolate access control.
 
-- Spoke (3) and hub (4) VNet resource groups
+- Spoke (3) and hub (4) VNet resource groups in separate subscriptions
 
    The network and other resources for each of the VNets in the reference architecture are isolated within dedicated resource groups for spoke and hub VNets. This organization works well when responsibility for these live on different teams. Another option is to organize these components by putting all network resources in one resource group and security resources in another. It depends on how your organization is set up to manage these resources.
 

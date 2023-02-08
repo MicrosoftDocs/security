@@ -38,8 +38,6 @@ landingContent:
           url: incident-response-overview.md
         - text: Planning
           url: incident-response-planning.md
-        - text: Process
-          url: incident-response-process.md
         - text: Playbooks
           url: incident-response-playbooks.md
 

@@ -24,7 +24,6 @@ If you're new-to-role as a security analyst, see these resources to get you star
 |Topic|Resource|
 |---|---|
 |SecOps planning for incident response|[Incident response planning](incident-response-planning.md) for preparing your organization for an incident.|
-|SecOps incident response process|[Incident response process](incident-response-process.md) for best practices on responding to an incident.|
 
 
 

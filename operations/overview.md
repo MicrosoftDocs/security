@@ -90,7 +90,6 @@ If you are new-to-role as a security analyst, see these resources to get you sta
 | Topic | Resource |
 |:-------|:-----|
 | SecOps planning for incident response | [Incident response planning](incident-response-planning.md) for preparing your organization for an incident. |
-| SecOps incident response process | [Incident response process](incident-response-process.md) for best practices on responding to an incident. |
 | Incident response workflow  | [Example incident response workflow for Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview#example-incident-response-workflow-for-microsoft-365-defender) |
 | Periodic security operations | [Example periodic security operations for Microsoft 365 Defender](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops-tasks) |
 | Investigation for Microsoft Sentinel | [Incidents in Microsoft Sentinel](/azure/sentinel/tutorial-investigate-cases) |

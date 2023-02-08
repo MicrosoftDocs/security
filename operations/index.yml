@@ -1,0 +1,52 @@
+### YamlMime:Landing
+
+title: Security operations guidance #< 60 chars
+summary: Learn how to run a security operations team  # < 160 chars
+
+metadata:
+  title: Security operations guidance # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to run a security operations team.  # Required; article description that is displayed in search results. < 160 chars.
+  services: na
+  ms.service: microsoft-365-security
+  ms.subservice:: m365d
+  ms.topic: landing-page # Required
+  ms.collection: na
+  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
+  ms.author: macapara #Required; microsoft alias of author; optional team alias.
+  ms.date: 02/15/2023 #Required; mm/dd/yyyy format.
+  
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Security operations guidance
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Security operations overview
+          url:  overview.md
+
+# Card
+  - title: Incident response
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Overview
+          url: incident-response-overview.md
+        - text: Planning
+          url: incident-response-planning.md
+        - text: Process
+          url: incident-response-process.md
+        - text: Playbooks
+          url: incident-response-playbooks.md
+
+ # Card (optional)
+  - title: SIEM + XDR
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Responding to incidents using SIEM and XDR tools
+          url:  siem-xdr-overview.md

@@ -1,6 +1,6 @@
 ---
 title: Incident response tutorial
-description: 
+description: Incident response tutorial
 ms.author: macapara
 author: mjcaparas
 localization_priority: Normal

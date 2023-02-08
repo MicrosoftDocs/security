@@ -1,6 +1,6 @@
 ﻿---
 title: Implement Microsoft Sentinel and XDR for a Zero Trust approach
-description: 
+description: Implement Microsoft Sentinel and XDR for a Zero Trust approach
 ms.author: macapara
 author: mjcaparas
 localization_priority: Normal

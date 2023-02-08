@@ -1,6 +1,6 @@
 ---
 title: Ingest data sources
-description: 
+description: Ingest data sources
 ms.author: macapara
 author: mjcaparas
 localization_priority: Normal

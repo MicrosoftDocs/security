@@ -1,6 +1,6 @@
 ---
 title: Setup XDR tools
-description: 
+description: Setup XDR tools
 ms.author: macapara
 author: mjcaparas
 localization_priority: Normal

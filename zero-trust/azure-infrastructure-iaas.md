@@ -14,13 +14,27 @@ ms.collection:
 
 # Apply Zero Trust principles to a spoke virtual network in Azure
 
+<!---
+
+| Zero Trust principle | Definition | Met by |
+| --- | --- | --- |
+| Verify explicitly | Always authenticate and authorize based on all available data points. | MET |
+| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | MET |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | MET |
+
+| Step | Task | Zero Trust principle(s) applied |
+| --- | --- | --- |
+| 1 | TASK | Verify explicitly <br> Use least privileged access <br> Assume breach |
+
+--->
+
 This article will help you apply the principles of Zero Trust to a spoke virtual network (VNet) for IaaS workloads in Azure in the following ways:
 
-| Zero Trust principle | Met by |
-| --- | --- |
-| Verify explicitly | Use application security groups to verify that individual NICs have permissions to communicate over specific channels. |
-| Use least privileged access | Do not enable 3389/RDP access by default on any channel. Use correct role permissions for the spoke context. |
-| Assume breach | Limit unnecessary communication between resources. Ensure that you are able to log in to network security groups and that you have proper visibility into anomalous traffic. Track changes to network security groups. |
+| Zero Trust principle | Definition | Met by |
+| --- | --- | --- |
+| Verify explicitly |Always authenticate and authorize based on all available data points. | Use application security groups to verify that individual NICs have permissions to communicate over specific channels. |
+| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Do not enable 3389/RDP access by default on any channel. Use correct role permissions for the spoke context. |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Limit unnecessary communication between resources. Ensure that you are able to log in to network security groups and that you have proper visibility into anomalous traffic. Track changes to network security groups. |
 
 This article is a part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes a spoke VNet hosting a virtual machine-based workload. For more information, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
 
@@ -55,15 +69,15 @@ In the diagram, all the components of the spoke VNet are contained in a dedicate
 
 Zero Trust principles are applied across the architecture, from the tenant and directory level down to the assignment of virtual machines to application security groups. The following table describes the recommendations for securing this architecture.
 
-| Step | Task |
-| --- | --- |
-| 1 | Leverage Azure Active Directory (Azure AD) role-based access control (RBAC) or set up custom roles for networking resources. |
-| 2 | Isolate infrastructure into its own resource group. |
-| 3 | Create a network security group for each subnet. |
-| 4 | Create an application security group for each virtual machine role. |
-| 5 | Secure traffic and resources within the VNet: <li> Deploy baseline deny rules for network security groups <li> Deploy application specific rules for application security groups <li> Plan for management traffic into the VNet <li> Deploy network security group flow logging |
-| 6 | Secure access to the VNet and application. |
-| 7 | Enable advanced threat detection, alerting, and protection. |
+| Step | Task | Zero Trust principle(s) applied |
+| --- | --- | --- |
+| 1 | Leverage Azure Active Directory (Azure AD) role-based access control (RBAC) or set up custom roles for networking resources. | Use least privileged access |
+| 2 | Isolate infrastructure into its own resource group. | Assume breach |
+| 3 | Create a network security group for each subnet. | Use least privileged access <br> Assume breach |
+| 4 | Create an application security group for each virtual machine role. | Verify explicitly <br> Use least privileged access <br> Assume breach |
+| 5 | Secure traffic and resources within the VNet: <li> Deploy baseline deny rules for network security groups <li> Deploy application specific rules for application security groups <li> Plan for management traffic into the VNet <li> Deploy network security group flow logging | Verify explicitly <br> Use least privileged access <br> Assume breach |
+| 6 | Secure access to the VNet and application. | Use least privileged access <br> Assume breach |
+| 7 | Enable advanced threat detection, alerting, and protection. | Assume breach |
 
 ## Step 1. Leverage Azure AD RBAC or set up custom roles for networking resources
 

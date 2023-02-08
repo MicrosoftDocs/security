@@ -16,9 +16,11 @@ ms.collection:
 
 In this article, you will learn to apply the principles of Zero Trust to Azure Storage:
 
-- Verify explicitly
-- Use least privileged access
-- Assume breach
+| Zero Trust principle | Definition | Met by |
+| --- | --- | --- |
+| Verify explicitly | Always authenticate and authorize based on all available data points. | Verify user credentials and access. |
+| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Control access to storage data with least privileges. |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Protect data at rest, data in transit, and data in use. Separate critical data with network controls. Use Defender for Storage for automated threat detection and protection. |
 
 This article is part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes Azure Storage services to support an IaaS workload. For an overview, see [Apply Zero Trust principles to Azure infrastructure](azure-infrastructure-overview.md).
 
@@ -42,12 +44,12 @@ Azure Queues and Azure Tables are not included in the diagram. Use the same guid
 
 This article walks through the steps to apply the principles of Zero Trust across the reference architecture.
 
-| **Step** | **Task** |
-| --- | --- |
-| 1 | Protect data in all three modes: data at rest, data in transit, data in use. |
-| 2 | Verify users and control access to storage data with least privileges. |
-| 3 | Logically separate or segregate critical data with network controls. |
-| 4 | Use Defender for Storage for automated threat detection and protection. |
+| Step | Task | Zero Trust principle(s) applied |
+| --- | --- | --- |
+| 1 | Protect data in all three modes: data at rest, data in transit, data in use. | Assume breach |
+| 2 | Verify users and control access to storage data with least privileges. | Verify explicitly <br> Use least privileged access |
+| 3 | Logically separate or segregate critical data with network controls. | Assume breach |
+| 4 | Use Defender for Storage for automated threat detection and protection. | Assume breach |
 
 ## Step 1. Protect data in all three modes: data at rest, data in transit, data in use
 

@@ -16,9 +16,11 @@ ms.collection:
 
 This article helps you apply the principles of Zero Trust to virtual machines in Azure:
 
-- Verify explicitly
-- Use least privileged access
-- Assume breach
+| Zero Trust principle | Definition | Met by |
+| --- | --- | --- |
+| Verify explicitly | Always authenticate and authorize based on all available data points. | Use secure access. |
+| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Leverage Role Based Access Control (RBAC) and control the applications running on virtual machines. |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Isolate virtual machines with resource groups, secure their components, use double encryption, and enable advanced threat detection and protection. |
 
 This article is part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes a spoke VNet hosting a virtual machine-based workload. For an overview, see [Apply Zero Trust principles to Azure infrastructure](azure-infrastructure-overview.md).
 
@@ -39,16 +41,16 @@ This article walks through the steps to apply the principles of Zero Trust acros
 
 :::image type="content" source="media/vm/azure-infra-vm-subscription-architecture-2.png" alt-text="Diagram of virtual machines logical architecture components." lightbox="media/vm/azure-infra-vm-subscription-architecture-2.png":::
 
-| Step | Task |
-| --- | --- |
-| 1 | Configure logical isolation by deploying virtual machines to a dedicated resource group. |
-| 2 | Leverage Role Based Access Control (RBAC). |
-| 3 | Secure virtual machine boot components — boot loaders, OS kernels, and drivers. Securely protect keys, certificates and secrets in the Trusted Platform Module (TPM). |
-| 4 | Enable customer-managed keys and double encryption. |
-| 5 | Control the applications that are installed on virtual machines. |
-| 6 | Configure secure access (not shown on the logical architecture figure). |
-| 7 | Set up secure maintenance of virtual machines (not shown on the logical architecture figure). |
-| 8 | Enable advanced threat detection and protection (not shown on the logical architecture figure). |
+| Step | Task | Zero Trust principle(s) applied |
+| --- | --- | --- |
+| 1 | Configure logical isolation by deploying virtual machines to a dedicated resource group. | Assume breach |
+| 2 | Leverage Role Based Access Control (RBAC). | Verify explicitly <br> Use least privileged access |
+| 3 | Secure virtual machine boot components — boot loaders, OS kernels, and drivers. Securely protect keys, certificates and secrets in the Trusted Platform Module (TPM). | Assume breach |
+| 4 | Enable customer-managed keys and double encryption. | Assume breach |
+| 5 | Control the applications that are installed on virtual machines. | Use least privileged access |
+| 6 | Configure secure access (not shown on the logical architecture figure). | Verify explicitly <br> Use least privileged access <br> Assume breach |
+| 7 | Set up secure maintenance of virtual machines (not shown on the logical architecture figure). | Assume breach |
+| 8 | Enable advanced threat detection and protection (not shown on the logical architecture figure). | Assume breach |
 
 ## Step 1. Configure logical isolation for virtual machines
 

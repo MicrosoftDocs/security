@@ -20,11 +20,11 @@ This article provides steps for how to take an existing hub VNet and ensure you 
 
 This article describes how to deploy a hub VNet for Zero Trust by mapping the principles of Zero Trust in the following ways.
 
-|Zero Trust principle | Met by |
-| --- | --- |
-| Verify explicitly  | Use Azure Firewall with Transport Layer Security (TLS) inspection to verify risk and threats based on all available data.  |
-| Use least privileged access  | Each spoke VNet has no access to other spoke VNets unless the traffic is routed through the firewall. The firewall is set to deny by default, allowing only traffic allowed by specified rules.  |
-| Assume breach  | In the event of a compromise or breach of one application/workload, it will have limited ability to spread due to the Azure Firewall performing traffic inspection and only forwarding allowed traffic. Only resources in the same workload would be exposed to the breach in the same application.  |
+| Zero Trust principle | Definition | Met by |
+| --- | --- | --- |
+| Verify explicitly | Always authenticate and authorize based on all available data points. | Use Azure Firewall with Transport Layer Security (TLS) inspection to verify risk and threats based on all available data. |
+| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Each spoke VNet has no access to other spoke VNets unless the traffic is routed through the firewall. The firewall is set to deny by default, allowing only traffic allowed by specified rules. |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | In the event of a compromise or breach of one application/workload, it will have limited ability to spread due to the Azure Firewall performing traffic inspection and only forwarding allowed traffic. Only resources in the same workload would be exposed to the breach in the same application. |
 
 This article is a part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes a hub VNet to support an IaaS workload. For more information, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
 
@@ -69,12 +69,22 @@ Depending on your deployment, you may also note that there can be a deployment o
 
 This article provides recommendations for securing the components of a hub VNet for Zero Trust principles.
 
-| **Step** | **Task** |
-| --- | --- |
-| 1 | Secure Azure Firewall Premium. |
-| 2 | Deploy Azure DDoS Protection Standard. |
-| 3 | Configure network gateway routing to the firewall. |
-| 4| Configure threat protection. |
+<!--
+
+| Zero Trust principle | Definition | Met by |
+| --- | --- | --- |
+| Verify explicitly | Always authenticate and authorize based on all available data points. | Use Azure Firewall with Transport Layer Security (TLS) inspection to verify risk and threats based on all available data. |
+| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Each spoke VNet has no access to other spoke VNets unless the traffic is routed through the firewall. The firewall is set to deny by default, allowing only traffic allowed by specified rules. |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | In the event of a compromise or breach of one application/workload, it will have limited ability to spread due to the Azure Firewall performing traffic inspection and only forwarding allowed traffic. Only resources in the same workload would be exposed to the breach in the same application. |
+
+| Step | Task | Zero Trust principle(s) applied |
+| --- | --- | --- |
+| 1 | Secure Azure Firewall Premium. | Verify explicitly <br> Use least privileged access <br> Assume breach |
+| 2 | Deploy Azure DDoS Protection Standard. | Verify explicitly <br> Use least privileged access <br> Assume breach |
+| 3 | Configure network gateway routing to the firewall. | Verify explicitly <br> Use least privileged access <br> Assume breach |
+| 4 | Configure threat protection. | Assume breach |
+
+-->
 
 As a part of your deployment, you will want to make specific selections that are not the defaults for automated deployments due to their additional costs. Prior to the deployment, you should review the costs.
 

@@ -80,7 +80,6 @@ See this overview of [Simuland](https://www.microsoft.com/security/blog/2021/05/
 ## Incident response resources
 
 - [Planning](incident-response-planning.md) for your SOC
-- [Process](incident-response-process.md) for incident response process recommendations and best practices
 - [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
 - [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)

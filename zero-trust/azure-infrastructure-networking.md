@@ -54,7 +54,7 @@ The resources that are deployed for the hub VNet are:
 - Bastion
 - VPN gateway with a public IP address and route table
 
-The following diagram shows the components of a resource group for a hub VNet in an Azure subscription. This is one way of organizing these elements within the subscription. Your organization might choose to organize these in a different way.
+The following diagram shows the components of a resource group for a hub VNet in an Azure subscription separate from the subscription for the spoke VNet. This is one way of organizing these elements within the subscription. Your organization might choose to organize these in a different way.
 
 :::image type="content" source="media/hub/azure-infra-hub-subscription-architecture-2.png" alt-text="Diagram of the components of a resource group for a hub virtual network.":::
 

@@ -131,10 +131,10 @@ Just as we have managed our on-prem data center environment, we must also ensure
 
 ##### Apply security baselines through Azure Policy, including application of in-guest policies
 
-Enabling [Defender for Cloud Standard](/azure/security-center/security-center-get-started) will let you incorporate a set of baseline controls through Azure Policy by incorporating the [Azure Policy built-in policy definitions for Microsoft Defender for Cloud](/azure/security-center/policy-samples).
+By enabling [Defender for Cloud](/azure/security-center/security-center-get-started), you will be able to incorporate a set of baseline controls through [Azure Policy's built-in policy definitions for Microsoft Defender for Cloud](/azure/security-center/policy-samples).
 The set of baseline policies will be reflected in the [Defender for Cloud secure score](/azure/security-center/security-center-secure-score), where you can measure your compliance to those policies.
 
-You can extend your coverage of policies beyond the Defender for Cloud set and create custom policies if a built-in is not available. You and can also incorporate [Guest Configuration policies](/azure/governance/policy/how-to/guest-configuration-create) which will measure compliance inside your guest VMs within your subscriptions.
+You can extend your coverage of policies beyond the Defender for Cloud set and create custom policies if a built-in is not available. You can also incorporate [Guest Configuration policies](/azure/governance/policy/how-to/guest-configuration-create) which will measure compliance inside your guest VMs within your subscriptions.
 
 
 ##### Apply Defender for Cloud Endpoint Protection and Vulnerability Management controls
@@ -148,7 +148,7 @@ Endpoint protection is essential to ensuring infrastructure remains secure and a
 </div>
 
 
-Additionally, as part of Defender for Cloud Standard, you can use the policy [Enable the built-in vulnerability assessment solution on virtual machines (powered by Qualys)](/azure/security-center/built-in-vulnerability-assessment)
+Additionally, as part of Defender for Servers, you can use the policy [Enable the built-in vulnerability assessment solution on virtual machines (powered by Qualys)](/azure/security-center/built-in-vulnerability-assessment)
 to scan your VMs for vulnerabilities, and have those reflected directly in Defender for Cloud. If you already have a Vulnerability scanning solution deployed in your enterprise, you can use the alternate policy Vulnerability assessment solution, which should be installed on your virtual machines for [Deploying a partner vulnerability scanning solution](/azure/security-center/partner-vulnerability-assessment).
 
 > [!TIP]

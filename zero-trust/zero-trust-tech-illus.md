@@ -25,13 +25,13 @@ As an IT architect or implementer, you can use these resources for deployment st
 - Microsoft 365
 - Azure IaaS
 
-The illustrations can be downloaded in the form of:
+You can download these illustrations in the form of:
 
-- A PDF file to print a copy for your IT department.
-- If available, a Visio file to modify the illustrations for your own use.
+- A PDF file to print for your IT department.
+- If available, a Microsoft Visio file to modify the illustrations for your own use.
 - If available, a PowerPoint file for presentations and to modify slides for your own use.
 
-To download and use the same set of icons and templates, see [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates.md).
+To use the same set of icons and templates in Visio or PowerPoint files, get the downloads in [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates.md).
 
 <!---
 
@@ -70,22 +70,17 @@ This illustration shows the elements of Azure IaaS as reference and logical arch
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/f/d/b//b1d75933-7dde-4de4-ae17-952cf6c132c9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b//b1d75933-7dde-4de4-ae17-952cf6c132c9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b//b1d75933-7dde-4de4-ae17-952cf6c132c9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Secure IaaS infrastructure in Azure overview and reference architecture](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke virtual networks (VNets)](azure-infrastructure-iaas.md)</li><li>[Hub Vnets](azure-infrastructure-networking.md)</li></ul>|
+|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Secure IaaS infrastructure in Azure overview and reference architecture](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke virtual networks (VNets)](azure-infrastructure-iaas.md)</li><li>[Hub Vnets](azure-infrastructure-networking.md)</li></ul>|
 
-You can download the technical diagrams used in the [Zero Trust for Azure IaaS series of articles](azure-infrastructure-overview.md) as an easier way of viewing the illustrations in the articles or to modify them for your own use.
+You can also download the technical diagrams used in the [Zero Trust for Azure IaaS series of articles](azure-infrastructure-overview.md) as an easier way of viewing the illustrations in the articles or to modify them for your own use.
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/f/d/b/f3ccd2be-b5af-4034-aaa2-1a744b16e8e3/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/f3ccd2be-b5af-4034-aaa2-1a744b16e8e3/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/f3ccd2be-b5af-4034-aaa2-1a744b16e8e3/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Secure IaaS infrastructure in Azure overview and reference architecture](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke virtual networks (VNets)](azure-infrastructure-iaas.md)</li><li>[Hub Vnets](azure-infrastructure-networking.md)</li></ul>|
+|[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Secure IaaS infrastructure in Azure overview and reference architecture](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke virtual networks (VNets)](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
 
 ### Additional Microsoft security posters and illustrations
 
-See these additional Microsoft security posters and illustrations:
-
-- An overview of the three phases as layers of protection against ransomware attackers: [PDF](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf). Use this poster together with the [What is ransomware](../compass/human-operated-ransomware.md) article.
-
 <!---
-
 
 | Item | Description |
 |:-----|:-----|
@@ -96,11 +91,16 @@ Download the [Protect your organization from ransomware poster](https://download
 [![The "Protect your organization from ransomware" poster](../compass/media/human-operated-ransomware/ransomware-poster-thumbnail.png)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
 
 --->
-- An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks: [PDF](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf)
+
+See these additional Microsoft security posters and illustrations:
+
+- An overview of the three phases as layers of protection against ransomware attackers: [PDF](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf). Use this poster together with the [What is ransomware](../compass/human-operated-ransomware.md) article.
 
 - An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks: [PDF](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf)
 
-- The Security Best Practices slide presentation: [PowerPoint](/microsoft-365/downloads/security-compass-presentation.pptx) | [PDF](/microsoft-365/downloads/security-compass-presentation.pdf)
+- An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks: [PDF](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf)
+
+- The Security Best Practices slide presentation: [PDF](/microsoft-365/downloads/security-compass-presentation.pdf) | [PowerPoint](/microsoft-365/downloads/security-compass-presentation.pptx)
 
 - The top 10 Azure Security best practices: [PDF](/microsoft-365/downloads/top-10-azure-security-best-practices.pdf) | [PowerPoint](/microsoft-365/downloads/top-10-azure-security-best-practices.pptx)
 

@@ -25,7 +25,7 @@ ms.custom: cxdef-zt-ransomware
 
 # Microsoft DART ransomware approach and best practices
 
-[Human-operated ransomware](human-operated-ransomware.md) is not a malicious software problem—it's a human criminal problem. The solutions used to address commodity problems aren't enough to prevent a threat that more closely resembles a nation-state threat actor who:
+[Human-operated ransomware](/security/ransomware/human-operated-ransomware) is not a malicious software problem—it's a human criminal problem. The solutions used to address commodity problems aren't enough to prevent a threat that more closely resembles a nation-state threat actor who:
 
 - Disables or uninstalls your antivirus software before encrypting files
 - Disables security services and logging to avoid detection

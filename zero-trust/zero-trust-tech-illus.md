@@ -31,7 +31,7 @@ You can download these illustrations in the form of:
 - If available, a Microsoft Visio file to modify the illustrations for your own use.
 - If available, a PowerPoint file for presentations and to modify slides for your own use.
 
-To use the same set of icons and templates in Visio or PowerPoint files, get the downloads in [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates.md).
+To use the same set of icons and templates in Visio or PowerPoint files, get the downloads in [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates).
 
 <!---
 
@@ -62,7 +62,7 @@ This illustration provides a deployment plan for building Zero Trust security wi
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of the Microsoft 365 Zero Trust deployment plan.](media/tech-illus/m365-zero-trust-deployment-plan-thumb.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Recommended identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview.md)</li><li>[Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview.md)</li><li>[Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution.md)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](/microsoft-365/solutions/data-privacy-protection.md)</li></ul>|
+|[![Illustration of the Microsoft 365 Zero Trust deployment plan.](media/tech-illus/m365-zero-trust-deployment-plan-thumb.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust) <br/><br/>**Related solution guides** <br/> <ul><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Recommended identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li><li>[Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview)</li><li>[Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](/microsoft-365/solutions/data-privacy-protection)</li></ul>|
 
 ### Zero Trust for Azure IaaS services
 
@@ -94,7 +94,7 @@ Download the [Protect your organization from ransomware poster](https://download
 
 See these additional Microsoft security posters and illustrations:
 
-- An overview of the three phases as layers of protection against ransomware attackers: [PDF](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf). Use this poster together with the [What is ransomware](/security/compass/human-operated-ransomware.md) article.
+- An overview of the three phases as layers of protection against ransomware attackers: [PDF](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf). Use this poster together with the [What is ransomware](/security/compass/human-operated-ransomware) article.
 
 - An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks: [PDF](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf)
 
@@ -108,6 +108,6 @@ See these additional Microsoft security posters and illustrations:
 
 ## Next steps
 
-- [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust.md)
+- [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust)
 
 - [Apply Zero Trust principles to Azure infrastructure](azure-infrastructure-overview.md)

@@ -2,7 +2,7 @@
   href: index.yml
   items: 
     - name: Overview
-      href: security-operations.md
+      href: overview.md
     
     - name: Incident response
       items:

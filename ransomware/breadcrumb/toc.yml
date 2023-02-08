@@ -6,6 +6,6 @@
     href: /security
     topicHref: /security/index
     items:
-    - name: Microsoft Security operations
+    - name: Ransomware guidance
       href: /security/ransomware/
-      topicHref: /security/ransomware/overview
+      topicHref: /security/ransomware/human-operated-ransomware

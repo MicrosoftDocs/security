@@ -1,6 +1,6 @@
 ---
 title: Incident response overview | Microsoft Docs
-description: Understand the role of incident response in your security operations center.
+description: Understand the role of incident response and the process of responding to an incident.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, incident response, cyber-attack, respond
 ms.author: dansimp
 author: dansimp
@@ -72,7 +72,7 @@ During an incident, you must strike these critical balances:
 This article is designed to lower the risk to your organization for a cybersecurity incident by identifying common errors to avoid and providing guidance on what actions you can rapidly take that both reduce risk and meet stakeholder needs.
 
 > [!NOTE]
-> For additional guidance on preparing your organization for ransomware and other types of multi-stage attacks, see [Prepare your recovery plan](protect-against-ransomware-phase1.md).
+> For additional guidance on preparing your organization for ransomware and other types of multi-stage attacks, see [Prepare your recovery plan](/security/ransomware/protect-against-ransomware-phase1).
 
 ## Response best practices
 

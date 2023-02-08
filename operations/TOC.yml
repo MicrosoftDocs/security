@@ -10,8 +10,7 @@
           href: incident-response-overview.md
         - name: Planning
           href: incident-response-planning.md
-        - name: Process
-          href: incident-response-process.md        
+
 
     - name: Combine Sentinel with Microsoft 365 Defender for incident response and hunting
       items:

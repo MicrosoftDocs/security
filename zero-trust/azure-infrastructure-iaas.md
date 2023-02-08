@@ -40,7 +40,7 @@ In the diagram:
 
 The application shown in the reference architecture follows the [N-tier architecture style](/azure/architecture/guide/architecture-styles/n-tier)
 
-The following diagram shows the components of a resource group for a spoke VNet in an Azure subscription.
+The following diagram shows the components of a resource group for a spoke VNet in an Azure subscription separate from the subscription for the hub VNet.
 
 :::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="Diagram of the components of a resource group for a spoke VNet.":::
 
@@ -230,22 +230,23 @@ The outbound connections are:
 
 ### Deploy application specific rules for application security groups
 
-Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here is an example diagram of using the application security groups to define network traffic patterns in the network security groups.
+Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here is an example diagram of using application security groups to define network traffic patterns in the network security groups.
 
 :::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.png" alt-text="Diagram of networking patterns for a three-tier web application." lightbox="media/spoke/azure-infra-spoke-tiers-6.png":::
 
 This results in the following network security group rules:
 
 1. Allowing internet traffic into the APP GW subnet (HTTPS 443).
-2. Allowing traffic from the APP GW subnet to the load balancer for the front end tier virtual machines (HTTPS 433).
+2. Allowing traffic from the APP GW subnet to the front end tier virtual machines (HTTPS 433).
 3. Allowing traffic from the front end tier virtual machines to the app tier load balancer (HTTPS 443).
-4. Allowing traffic from the app tier virtual machines to the data tier load balancer (SQL 1433).
-5. Allowing traffic from the data tier load balancer to the data tier virtual machines (SQL 1433).
-6. Allowing traffic between data tier virtual machines (SQL 1433)
+4. Allowing traffic from the app tier load balancer to the app tier virtual machines (HTTPS 443).
+5. Allowing traffic from the app tier virtual machines to the data tier load balancer (SQL 1433).
+6. Allowing traffic from the data tier load balancer to the data tier virtual machines (SQL 1433).
+7. Allowing traffic between data tier virtual machines (SQL 1433)
 
 Configure the SQL pattern first and then repeat this process with the remaining tiers. Here are the configurations for the rules that confine network traffic for a single application tier.
 
-#### Rule 4 - Allow traffic from app tier virtual machines to the data tier load balancer (SQL 1433)
+#### Rule 5 - Allow traffic from app tier virtual machines to the data tier load balancer (SQL 1433)
 
 In the network security group for the app tier subnet, navigate to **Inbound Security Rules**, and select **Add**. Populate the list with the following:
 
@@ -276,7 +277,7 @@ Thus, the rule will only be applied when this application security group is used
 
 Finally, in the same network security group, navigate to **Outbound Security Rules** and select **Add**. Populate the list similar to the above, changing **Inbound** to **Outbound**.
 
-#### Rule 5 - Allow traffic from data tier load balancer to data tier virtual machines (SQL 1433)
+#### Rule 6 - Allow traffic from data tier load balancer to data tier virtual machines (SQL 1433)
 
 In the network security group for the data tier subnet, navigate to **Inbound Security Rules** and select **Add**. Populate the list with the following:
 
@@ -295,7 +296,7 @@ In the network security group for the data tier subnet, navigate to **Inbound Se
 
 In the same network security group, navigate to **Outbound Security Rules** and select **Add**. Populate the list as done above, changing **Inbound** to **Outbound**.
 
-#### Rule 6 — Allow traffic between data tier virtual machines (SQL 1433)
+#### Rule 7 — Allow traffic between data tier virtual machines (SQL 1433)
 
 In the network security group for the data tier subnet, navigate to **Inbound Security Rules** and select **Add**. Populate the list with the following:
 

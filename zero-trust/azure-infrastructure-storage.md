@@ -83,7 +83,7 @@ These settings cannot be changed after you create the storage account.
 
 ### Enforce a minimum required version of transport layer security (TLS)
 
-The highest version Azure Storage currently supports is TLS 1.2. Enforcing a minimum TLS version will reject requests from clients using older versions. For more information, see [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent?tabs=portal).
+The highest version Azure Storage currently supports is TLS 1.2. Enforcing a minimum TLS version will reject requests from clients using older versions. For more information, see [Enforce a minimum required version of TLS for requests to a storage account](/azure/storage/common/transport-layer-security-configure-minimum-version).
 
 ### Define the scope for copy operations
 

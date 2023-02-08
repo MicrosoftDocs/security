@@ -16,7 +16,7 @@ localization_priority: Normal
 description: Learn about ransomware prevention and methods to stop human-operated ransomware attacks, with links to configure your cyber security to help stop ransomware.
 ---
 
-# What is ransomware
+# What is ransomware?
 
 *Ransomware* is a type of cyber security attack that destroys or encrypts files and folders, preventing the owner of the effected device from accessing their data. The cybercriminal can then extort money from the business owner in exchange for a key to unlock the encrypted data. But, even when paid, cybercriminals may not provide the key to return access to the business owner.
 

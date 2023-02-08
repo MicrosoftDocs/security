@@ -1,6 +1,6 @@
 ---
 title: Architect SIEM workspace
-description: 
+description: Architect SIEM workspace
 ms.author: macapara
 author: mjcaparas
 localization_priority: Normal

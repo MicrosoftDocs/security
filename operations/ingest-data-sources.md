@@ -25,6 +25,7 @@ Once Sentinel is deployed to the environment, data connectors are configured to 
 
 ## Next steps
 
-Continue to [Step 4](respond-incident.md) to respond to incident. 
+Continue to [Step 4](respond-incident.md) to respond to an incident.
+ 
 ![Image of Microsoft Sentinel and XDR solution steps with step 4 highlighted](./media/siem-xdr-solution-4.png)
 

@@ -34,4 +34,5 @@ Single Tenant with a single Microsoft Sentinel workspace. In this case the works
 ## Next steps
 
 Continue to [Step 3](ingest-data-sources.md). 
+
 ![Image of Microsoft Sentinel and XDR solution steps with step 3 highlighted](./media/siem-xdr-solution-3.png)

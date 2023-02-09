@@ -65,12 +65,16 @@ Azure activity logs
 
 
 ## Key capabilities
+To implement a Zero trust approach in managing incidents, use these Microsoft Sentinel and XDR features.
+
+
+
 
 
 ## What's in this solution
 This solution steps you through the implementation of Microsoft Sentinel and XDR for a Zero Trust so your SecOps team can effectively remediate incidents. 
 
-
+![Image of Microsoft Sentinel and XDR solution steps](./media/siem-xdr-solution.png)
 
 
 

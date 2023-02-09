@@ -21,7 +21,7 @@
             - name: Step 3. Ingest data sources 
               href: ingest-data-sources.md
             - name: Step 4. Incident response tutorial
-              href: incident-response-tutorial.md
+              href: respond-incident.md
                
     - name: Playbooks
       items:

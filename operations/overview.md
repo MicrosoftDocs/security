@@ -25,6 +25,45 @@ While human attack operators are challenging to face because of their adaptabili
 
 SecOps (sometimes referred to as a Security Operations Center (SOC)) has a critical role to play in limiting the time and access an attacker can get to valuable systems and data. Each minute that an attacker has in the environment allows them to continue to conduct attack operations and access sensitive or valuable systems.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Objective and metrics
 
 The metrics you measure will have a significant effect on the behaviors and outcomes of SecOps. Focusing on the right measurements will help drive continuous improvement in the right areas that meaningfully reduce risk.

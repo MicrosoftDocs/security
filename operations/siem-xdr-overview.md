@@ -18,6 +18,16 @@ ms.service: microsoft-365-security
 This solution guide walks through the process of setting up Microsoft XDR tools together with Microsoft Sentinel to accelerate your organization’s ability to respond to and remediate cybersecurity attacks. As a proof of concept, this guidance walks through the process of responding to a ransomware attack, starting with discovery in Microsoft Sentinel.  
 
 
+With Microsoft Sentinel you can connect to any of the security sources using built-in connectors and industry standards. With its artificial intelligence you can correlate multiple low fidelity signals spanning multiple sources to create a complete view of ransomware kill chain and prioritized alerts. 
+
+Microsoft 365 Defender is an extended detection and response (XDR) solution that complements Microsoft Sentinel. An XDR pulls raw telemetry data from across multiple tools like cloud applications, email security, identity, and access management. 
+
+Using AI and machine learning, the XDR then performs automatic analysis, investigation, and response in real time. The XDR solution also correlates security alerts into larger incidents, providing security teams greater visibility into attacks, and provides incident prioritization, helping analysts understand the risk level of the threat. 
+
+
+
+
+
 This guidance helps you mature your Zero Trust architecture by mapping the principles of Zero Trust in the following ways.    
 
 
@@ -30,9 +40,12 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 
 ## Reference architecture
 
+JUST FOR ILLUSTRATION PURPOSES / PLACEHOLDER:
+
 ![Image of Microsoft Sentinel and XDR architecture](./media/sentinel-xdr.png)
 
 
+JUST FOR ILLUSTRATION PURPOSES / PLACEHOLDER:
 
 Microsoft Sentinel is a cloud-native SIEM tool; Microsoft 365 Defender provides XDR capabilities for end-user environments (email, documents, identity, apps, and endpoint); and Microsoft Defender for Cloud provides XDR capabilities for infrastructure and multi-cloud platforms including virtual machines, databases, containers, and IoT.
 
@@ -65,10 +78,9 @@ Capability or feature | Description | Licensing
 
 
 ## What's in this solution
-This solution steps you through the implementation of Microsoft Sentinel and XDR for a Zero Trust so your SecOps team can effectively remediate incidents using a Zero Trust approach. 
+This solution steps you through the implementation of Microsoft Sentinel and XDR so that your security operations team can effectively remediate incidents using a Zero Trust approach. 
 
 ![Image of Microsoft Sentinel and XDR solution steps](./media/siem-xdr-solution.png)
-
 
 
 
@@ -76,7 +88,7 @@ This solution steps you through the implementation of Microsoft Sentinel and XDR
 
 Use these steps to implement Microsoft Sentinel and XDR for a Zero Trust approach:
 
-1. Set up your XDT tools
-2. Architect a Sentinel workspace
-3. Ingest data sources
-4. Respond to an incident
+1. [Set up your XDR tools](setup-xdr-tools.md)
+2. [Architect a Sentinel workspace](siem-workspace.md)
+3. [Ingest data sources](ingest-data-sources.md)
+4. [Respond to an incident](respond-incident.md)

@@ -12,7 +12,6 @@ ms.service: microsoft-365-security
 # Implement Microsoft Sentinel and XDR for a Zero Trust approach
 
 
-## Introduction 
 
 
 This solution guide walks through the process of setting up Microsoft XDR tools together with Microsoft Sentinel to accelerate your organization’s ability to respond to and remediate cybersecurity attacks. 

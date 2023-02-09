@@ -26,3 +26,5 @@ Single Tenant with a single Microsoft Sentinel workspace. In this case the works
 
 
 ## Sentinel onboarding
+
+## Configure RBAC?

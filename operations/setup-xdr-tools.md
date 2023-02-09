@@ -68,3 +68,13 @@ Although Microsoft Defender for Cloud is not included in the reference architect
 
 
 ![Image of Microsoft 365 Defender and Microsoft Defender for Cloud](./media/m365d-cloud.png)
+
+Use the following guidance to enable Defender for Cloud and integrate capabilities.
+
+|       Task  |     Description  |     See . . .  |
+|:---|:---|:---|
+|Set up Defender for Cloud |	Recommended steps to enable Microsoft Defender for Cloud and the enhanced security features | [Quickstart: Set up Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started)
+|Protect your server resources | With Microsoft Defender for Servers (included with Defender for Cloud), you gain access to and can deploy Microsoft Defender for Endpoint to your server resources. | [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint?WT.mc_id=Portal-Microsoft_Azure_Security_CloudNativeCompute)
+
+
+## Additional guidance??

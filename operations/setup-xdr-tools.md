@@ -19,7 +19,7 @@ The Microsoft Defender products are best in class for a security suite. Mature o
 
 ## Pilot and deploy Microsoft 365 Defender
 
-Microsoft provides guidance to help you set up and get started with Microsoft 365 Defender components. If you haven’t already set up Microsoft 365 Defender components, Microsoft recommends enabling the components in the order illustrated:
+Microsoft provides guidance to help you set up and get started with Microsoft 365 Defender components. If you haven't already set up Microsoft 365 Defender components, Microsoft recommends enabling the components in the order illustrated:
 
 ![Image of evaluate and pilot Microsoft 365 Defender](./media/m365-defender-eval-process.png) 
 

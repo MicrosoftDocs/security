@@ -23,7 +23,7 @@ This solution guide walks through the process of setting up Microsoft XDR tools 
 
 
 
-This guidance walks through the process of responding to a incident, starting with discovery in Microsoft Sentinel.  
+This guidance walks through the process of responding to a incident, starting with discovery and triage in Microsoft Sentinel.  
 
 With Microsoft Sentinel you can connect to any of the security sources using built-in connectors and industry standards. With its artificial intelligence you can correlate multiple low fidelity signals spanning multiple sources to create a complete view of ransomware kill chain and prioritized alerts. 
 
@@ -37,6 +37,7 @@ Using AI and machine learning, the XDR then performs automatic analysis, investi
 
 This guidance helps you mature your Zero Trust architecture by mapping the principles of Zero Trust in the following ways.    
 
+### NEED HELP!
 
 |     Zero   Trust Principle             |     Met by      |
 |----------------------------------------|-----------------|
@@ -46,8 +47,8 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 
 
 ## Reference architecture
-
-JUST FOR ILLUSTRATION PURPOSES / PLACEHOLDER:
+### NEED HELP!
+JUST FOR ILLUSTRATION PURPOSES ONLY !!! / PLACEHOLDER:
 
 ![Image of Microsoft Sentinel and XDR architecture](./media/sentinel-xdr.png)
 
@@ -77,6 +78,8 @@ Data sources:
 
 ## Key capabilities
 To implement a Zero trust approach in managing incidents, use these Microsoft Sentinel and XDR features.
+
+### NEED HELP FOR SENTINEL CAPABILITIES AND VERIFY THE LIST ADDED ALREADY!!
 
 Capability or feature | Description | Licensing
 :---|:---|:---

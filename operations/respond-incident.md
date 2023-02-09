@@ -11,10 +11,10 @@ ms.service: microsoft-365-security
 
 # Step 4. Respond to incident - JOEY C + AUSTIN
 
-This article guides you in addressing an incident using Microsoft Sentinel and Microsoft 365 to mitigate an incident. In this tutorial, we’ll look into a phishing attack and conduct an investigation to resolve the incident. 
+This article guides you in addressing an incident using Microsoft Sentinel and Microsoft 365 to mitigate an incident. In this tutorial, we'll look into a phishing attack and conduct an investigation to resolve the incident. 
 
 
-INSERT ATTACK KILL CHAIN OF PHISHING
+INSERT IMAGE OF ATTACK KILL CHAIN OF PHISHING
 
 
 In this illustration:

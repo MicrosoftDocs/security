@@ -1,38 +1,5 @@
 - name: Microsoft Security Best Practices
   href: compass.md
-  items: 
-    - name: Privileged administration
-      items:
-        - name: Securing privileged access
-          href: overview.md
-        - name: Privileged access strategy
-          href: privileged-access-strategy.md
-        - name: Measuring success
-          href: privileged-access-success-criteria.md
-        - name: Security levels
-          href: privileged-access-security-levels.md
-        - name: Privileged access accounts
-          href: privileged-access-accounts.md
-        - name: Intermediaries
-          href: privileged-access-intermediaries.md
-        - name: Interfaces
-          href: privileged-access-interfaces.md
-        - name: Privileged access devices
-          href: privileged-access-devices.md
-        - name: Enterprise access model
-          href: privileged-access-access-model.md
-        - name: Privileged access implementation
-          href: privileged-access-deployment.md
-        - name: Modernization plan
-          href: security-rapid-modernization-plan.md
-        - name: ESAE Retirement
-          href: esae-retirement.md
-        - name: Videos and slides
-          href: administration-videos-and-decks.md
-        - name: Privileged access administration
-          href: critical-impact-accounts.md
-    #   - name: Capabilities
-    #     href: administration-capabilities.md
 
     
 

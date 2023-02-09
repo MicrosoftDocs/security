@@ -56,7 +56,7 @@ Azure AD Identity Protection is licensed separately from Microsoft 365 Defender.
 
 Azure AD Identity Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Azure AD to allow or prevent account access, depending on how Conditional Access policies are configured.  
 
-For this solution and target scenario, we’ll also ingest the signals from Azure AD Identity Protection into Sentinel. To enable Azure AD Identity Protection, use the following resources. 
+For this solution and target scenario, we'll also ingest the signals from Azure AD Identity Protection into Sentinel. To enable Azure AD Identity Protection, use the following resources. 
 
 |       Task  |     Description  |     See . . .  |
 |:---|:---|:---|

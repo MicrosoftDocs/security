@@ -30,49 +30,42 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 
 ## Reference architecture
 
+![Image of Microsoft Sentinel and XDR architecture](./media/sentinel-xdr.png)
+
+
 
 Microsoft Sentinel is a cloud-native SIEM tool; Microsoft 365 Defender provides XDR capabilities for end-user environments (email, documents, identity, apps, and endpoint); and Microsoft Defender for Cloud provides XDR capabilities for infrastructure and multi-cloud platforms including virtual machines, databases, containers, and IoT.
 
 
-
-
-
-Illustration & description 
-
 In scope for the reference architecture: 
 
-Defender 365 
+- Defender 365 
 
-Sentinel 
+- Sentinel 
 
-Data sources 
+Data sources:
 
-Azure AD Identity Protection 
-
-Office 365 
-
-Microsoft Defender for Cloud 
-
-Microsoft 365 Defender 
-
-Microsoft Defender for Endpoint 
-
-Microsoft Defender for Identity 
-
-Microsoft Defender for Cloud Apps 
-
-Azure activity logs 
+- Azure AD Identity Protection 
+- Office 365 
+- Microsoft Defender for Cloud 
+- Microsoft 365 Defender 
+- Microsoft Defender for Endpoint 
+- Microsoft Defender for Identity 
+- Microsoft Defender for Cloud Apps 
+- Azure activity logs 
 
 
 ## Key capabilities
 To implement a Zero trust approach in managing incidents, use these Microsoft Sentinel and XDR features.
 
-
-
+Capability or feature | Description | Licensing
+:---|:---|:---
+ |  ||
+ | | |
 
 
 ## What's in this solution
-This solution steps you through the implementation of Microsoft Sentinel and XDR for a Zero Trust so your SecOps team can effectively remediate incidents. 
+This solution steps you through the implementation of Microsoft Sentinel and XDR for a Zero Trust so your SecOps team can effectively remediate incidents using a Zero Trust approach. 
 
 ![Image of Microsoft Sentinel and XDR solution steps](./media/siem-xdr-solution.png)
 
@@ -86,4 +79,4 @@ Use these steps to implement Microsoft Sentinel and XDR for a Zero Trust approac
 1. Set up your XDT tools
 2. Architect a Sentinel workspace
 3. Ingest data sources
-4. Incident response tutorial
+4. Respond to an incident

@@ -19,7 +19,7 @@ This solution guide walks through the process of setting up Microsoft XDR tools 
 
 
 
-![Image of incident investigation using Sentinel and Microsoft 365 Defender]()
+![Image of incident investigation using Sentinel and Microsoft 365 Defender](./media/investigation-flow.png)
 
 
 

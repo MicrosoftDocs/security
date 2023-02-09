@@ -9,4 +9,12 @@ ms.topic: article
 ms.service: microsoft-365-security
 ---
 
-# Step 3. Ingest data sources
+# Step 3. Ingest data sources - JAY + AUSTIN
+
+Once Sentinel is deployed to the environment, data connectors are configured to enable data ingestion into the workspace.  
+
+## Turning on data connectors
+
+
+### Prerequisites 
+

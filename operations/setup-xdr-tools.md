@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-security
 ---
 
-# Step 1. Setup XDR tools
+# Step 1. Setup XDR tools - RUDNEI + JOEY C.
 
 
 This article guides you to the best approaches for setting up Microsoft Defender 365 and other Microsoft XDR tools. This is the first step in setting up an integrated environment with Microsoft Sentinel for security operations.  

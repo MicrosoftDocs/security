@@ -15,7 +15,18 @@ ms.service: microsoft-365-security
 ## Introduction 
 
 
-This solution guide walks through the process of setting up Microsoft XDR tools together with Microsoft Sentinel to accelerate your organization’s ability to respond to and remediate cybersecurity attacks. As a proof of concept, this guidance walks through the process of responding to a ransomware attack, starting with discovery in Microsoft Sentinel.  
+This solution guide walks through the process of setting up Microsoft XDR tools together with Microsoft Sentinel to accelerate your organization’s ability to respond to and remediate cybersecurity attacks. This guidance walks through the process of responding to a incident, starting with discovery in Microsoft Sentinel.  
+
+
+
+![Image of incident investigation using Sentinel and Microsoft 365 Defender]()
+
+
+
+
+
+
+
 
 
 With Microsoft Sentinel you can connect to any of the security sources using built-in connectors and industry standards. With its artificial intelligence you can correlate multiple low fidelity signals spanning multiple sources to create a complete view of ransomware kill chain and prioritized alerts. 

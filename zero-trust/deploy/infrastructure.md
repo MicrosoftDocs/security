@@ -134,7 +134,7 @@ Just as we have managed our on-prem data center environment, we must also ensure
 Enabling [Defender for Cloud Standard](/azure/security-center/security-center-get-started) will let you incorporate a set of baseline controls through Azure Policy by incorporating the [Azure Policy built-in policy definitions for Microsoft Defender for Cloud](/azure/security-center/policy-samples).
 The set of baseline policies will be reflected in the [Defender for Cloud secure score](/azure/security-center/security-center-secure-score), where you can measure your compliance to those policies.
 
-You can extend your coverage of policies beyond the Defender for Cloud set and create custom policies if a built-in is not available. You and can also incorporate [Guest Configuration policies](/azure/governance/policy/how-to/guest-configuration-create) which will measure compliance inside your guest VMs within your subscriptions.
+You can extend your coverage of policies beyond the Defender for Cloud set and create custom policies if a built-in is not available. You can also incorporate [Guest Configuration policies](/azure/governance/policy/how-to/guest-configuration-create) which will measure compliance inside your guest VMs within your subscriptions.
 
 
 ##### Apply Defender for Cloud Endpoint Protection and Vulnerability Management controls

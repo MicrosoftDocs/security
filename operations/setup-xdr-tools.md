@@ -27,7 +27,7 @@ In the illustration:
 
 1. Create the evaluation environment 
 2. Set up and pilot Defender for Identity 
-3. Set up defender for Office 365 
+3. Set up Defender for Office 365 
 4. Set up Defender for Endpoint 
 5. Set up Defender for Cloud apps 
 6. Investigate and respond to threats 

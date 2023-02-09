@@ -102,6 +102,17 @@ This solution steps you through the implementation of Microsoft Sentinel and XDR
 
 
 
+## Learning for analysts
+
+
+**[Connect Microsoft 365 Defender to Microsoft Sentinel](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/)**<br>
+Description:Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft 365 Defender.<br>
+29 min - 8 units
+
+> [!div class="nextstepaction"]
+> [Start >](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/)
+
+
 ## Next steps
 
 Use these steps to implement Microsoft Sentinel and XDR for a Zero Trust approach:

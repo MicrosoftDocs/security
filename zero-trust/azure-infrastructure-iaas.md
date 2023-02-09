@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to spoke virtual network in Azure
 description: Learn how to secure a spoke virtual network for IaaS workloads with Zero Trust.   
-ms.date: 01/27/2023
+ms.date: 02/09/2023
 ms.service: security
 author: brsteph
 ms.author: bstephenson
@@ -28,7 +28,7 @@ ms.collection:
 
 --->
 
-This article will help you apply the principles of Zero Trust to a spoke virtual network (VNet) for IaaS workloads in Azure in the following ways:
+This article will help you apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to a spoke virtual network (VNet) for IaaS workloads in Azure in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |

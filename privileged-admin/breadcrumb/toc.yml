@@ -1,0 +1,11 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Security
+    href: /security
+    topicHref: /security/index
+    items:
+    - name: Securing privileged access
+      href: /security/privileged-admin/
+      topicHref: /security/privileged-admin/overview

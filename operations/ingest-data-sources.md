@@ -18,3 +18,13 @@ Once Sentinel is deployed to the environment, data connectors are configured to 
 
 ### Prerequisites 
 
+
+
+
+
+
+## Next steps
+
+Continue to [Step 4](respond-incident.md) to respond to incident. 
+![Image of Microsoft Sentinel and XDR solution steps with step 4 highlighted](./media/siem-xdr-solution-4.png)
+

@@ -42,9 +42,21 @@ landingContent:
           url: incident-response-playbooks.md
 
  # Card (optional)
-  - title: SIEM + XDR
+  - title: Responding to incidents
     linkLists:
       - linkListType: overview
         links:
-        - text: Responding to incidents using SIEM and XDR tools
+        - text: Implement Microsoft Sentinel and XDR for a Zero Trust approach
           url:  siem-xdr-overview.md
+        - text: Set up XDR tools
+          url: setup-xdr-tools.md
+        - text: Architect a Sentinel workspace
+          url: siem-workspace.md
+        - text: Ingest data sources
+          url: ingest-data-sources.md
+        - text: Respond to an incident 
+          url: respond-incident.md
+
+
+
+

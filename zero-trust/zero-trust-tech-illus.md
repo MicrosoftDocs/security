@@ -78,6 +78,14 @@ You can also download the technical diagrams used in the [Zero Trust for Azure I
 |:-----|:-----|
 |[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Secure IaaS infrastructure in Azure overview and reference architecture](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke virtual networks (VNets)](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
 
+### Zero Trust Identity and Device Access Policies
+
+This illustration shows the set of Zero Trust identity and device access policies for three levels of protection.
+
+| Item | Description |
+|:-----|:-----|
+|[![Illustration of the Zero Trust Identity and Device Access Policies.](media/tech-illus/zero-trust-identity-device-access-policies-thumb.png)](https://download.microsoft.com/download/TBD/zero-trust-identity-device-access-policies.pdf) <br/> [PDF](https://download.microsoft.com/download/TBD/m365-zero-trust-deployment-plan.pdf) <br/> Updated February 2023 | Use this illustration together with this article: [Recommended identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations)<br/><br/>**Related solution guides** <br/> <ul><li>[Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust)</li><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li><li>[Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview)</li><li>[Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](/microsoft-365/solutions/data-privacy-protection)</li></ul>|
+
 ### Additional Microsoft security posters and illustrations
 
 <!---
@@ -93,6 +101,10 @@ Download the [Protect your organization from ransomware poster](https://download
 --->
 
 See these additional Microsoft security posters and illustrations:
+
+- Microsoft Intune enrollment options: [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx)
+
+- Common attacks and Microsoft capabilities that protect your organization: [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx)
 
 - An overview of the three phases as layers of protection against ransomware attackers: [PDF](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf). Use this poster together with the [What is ransomware](/security/compass/human-operated-ransomware) article.
 

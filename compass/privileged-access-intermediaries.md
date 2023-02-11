@@ -107,7 +107,7 @@ While features vary between PIM/PAM vendors, many solutions provide security cap
 - Record and monitor administrative sessions
 
    > [!IMPORTANT]
-   > PIM/PAM capabilities provide excellent mitigations for some attacks, but do not address many privielged access risks, notably risk of device compromise. While some vendors advocate that their PIM/PAM solution is a 'silver bullet' solution that can mitigate device risk, our experience investigating customer incidents has consistently proven that this does not work in practice.
+   > PIM/PAM capabilities provide excellent mitigations for some attacks, but do not address many privileged access risks, notably risk of device compromise. While some vendors advocate that their PIM/PAM solution is a 'silver bullet' solution that can mitigate device risk, our experience investigating customer incidents has consistently proven that this does not work in practice.
    >
    > An attacker with control of a workstation or device can use those credentials (and privileges assigned to them) while the user is logged on (and can often steal credentials for later use as well). A PIM/PAM solution alone cannot consistently and reliably see and mitigate these device risks, so you must have discrete device and account protections that complement each other. 
 

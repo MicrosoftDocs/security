@@ -267,22 +267,6 @@ LAPS requires the AD DS schema to be extended to allow for the additional attrib
 
 You can get LAPS from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=46899).
 
-## Incident response playbooks
-
-Examine guidance for identifying and investigating these types of attacks:
-
-- [Phishing](incident-response-playbook-phishing.md)
-- [Password spray](incident-response-playbook-password-spray.md)
-- [App consent grant](incident-response-playbook-app-consent.md)
-
-## Incident response resources
-
-- [Overview](incident-response-overview.md) for Microsoft security products and resources for new-to-role and experienced analysts
-- [Planning](incident-response-planning.md) for your Security Operations Center (SOC)
-- [Process](incident-response-process.md) for incident response process recommendations and best practices
-- [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
-- [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
-- [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 
 ## Additional ransomware resources
 

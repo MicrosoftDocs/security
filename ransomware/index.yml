@@ -26,7 +26,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: What is ransomware
+        - text: What is ransomware?
           url:  human-operated-ransomware.md
 
 # Card
@@ -43,3 +43,12 @@ landingContent:
         - text: Make it hard to get in
           url: protect-against-ransomware-phase3.md
 
+# Card
+  - title: DART ransomware resources
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: Microsoft DART ransomware approach 
+          url: incident-response-playbook-dart-ransomware-approach.md
+        - text: Microsoft DART ransomware case study
+          url: dart-ransomware-case-study.md

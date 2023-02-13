@@ -31,7 +31,7 @@ You can download these illustrations in the form of:
 - If available, a Microsoft Visio file to modify the illustrations for your own use.
 - If available, a PowerPoint file for presentations and to modify slides for your own use.
 
-To use the same set of icons and templates in Visio or PowerPoint files, get the downloads in [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates).
+To use the same set of icons and templates in the Visio or PowerPoint files, get the downloads in [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates).
 
 <!---
 
@@ -84,7 +84,7 @@ This illustration shows the set of Zero Trust identity and device access policie
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of the Zero Trust Identity and Device Access Policies.](media/tech-illus/zero-trust-identity-device-access-policies-thumb.png)](https://download.microsoft.com/download/TBD/zero-trust-identity-device-access-policies.pdf) <br/> [PDF](https://download.microsoft.com/download/TBD/m365-zero-trust-deployment-plan.pdf) <br/> Updated February 2023 | Use this illustration together with this article: [Recommended identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations)<br/><br/>**Related solution guides** <br/> <ul><li>[Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust)</li><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li><li>[Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview)</li><li>[Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](/microsoft-365/solutions/data-privacy-protection)</li></ul>|
+|[![Illustration of the Zero Trust Identity and Device Access Policies.](media/tech-illus/zero-trust-identity-device-access-policies-thumb.png)](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) <br/> [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) <br/> Updated February 2023 | Use this illustration together with this article: [Recommended identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations)<br/><br/>**Related solution guides** <br/> <ul><li>[Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust)</li><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li><li>[Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview)</li><li>[Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](/microsoft-365/solutions/data-privacy-protection)</li></ul>|
 
 ### Additional Microsoft security posters and illustrations
 

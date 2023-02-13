@@ -67,7 +67,14 @@ Depending on your deployment, you may also note that there can be a deployment o
 
 ## What's in this article?
 
-This article provides recommendations for securing the components of a hub VNet for Zero Trust principles.
+This article provides recommendations for securing the components of a hub VNet for Zero Trust principles. The following table describes the recommendations for securing this architecture.
+
+| Step | Task | Zero Trust principle(s) applied |
+| --- | --- | --- |
+| 1 | Secure Azure Firewall Premium. | Verify explicitly <br> Use least privileged access <br> Assume breach |
+| 2 | Deploy Azure DDoS Protection Standard. | Verify explicitly <br> Use least privileged access <br> Assume breach |
+| 3 | Configure network gateway routing to the firewall. | Verify explicitly <br> Use least privileged access <br> Assume breach |
+| 4 | Configure threat protection. | Assume breach |
 
 As a part of your deployment, you will want to make specific selections that are not the defaults for automated deployments due to their additional costs. Prior to the deployment, you should review the costs.
 
@@ -75,13 +82,7 @@ Operating the connectivity hub as deployed still provides significant value for 
 
 ## Step 1. Secure Azure Firewall Premium
 
-Azure Firewall Premium plays a vital role in helping you secure your Azure infrastructure for Zero Trust, as described in the following table.
-
-| Zero Trust principle | Met by |
-| --- | --- |
-| Verify explicitly | By inspecting both the traffic source and the nature of the traffic, Azure Firewall verifies that traffic itself is safe (in addition to applying access control rules). |
-| Use least privileged access | By providing a firewall between distinct applications and inspecting all traffic regardless of its source, Azure Firewall can reduce access between network segments to only the traffic required to enable the application. |
-| Assume breach | Because of this segmentation, individual network segments, such as spoke VNets, become their own blast radius. The Azure Firewall can prevent a compromise in one spoke VNet from spreading into others. |
+Azure Firewall Premium plays a vital role in helping you secure your Azure infrastructure for Zero Trust.
 
 As a part of the deployment, use Azure Firewall Premium. This will require the management policy generated to be deployed as a premium policy as well. Changing to Azure Firewall Premium involves recreating the firewall and often the policy as well. As a result, start with Azure Firewall if possible, or be prepared for redeployment activities to replace the existing firewall.
 
@@ -161,12 +162,6 @@ With the Azure Firewall Premium configured, you can now perform the following:
 
 As a part of the deployment, you will want to deploy an Azure DDoS Protection Standard Policy. This increases Zero Trust protection provided on the Azure Platform.
 
-| Zero Trust principle | Met by |
-| --- | --- |
-| Verify explicitly | Monitors traffic and uses machine language-based frameworks to detect traffic floods. |
-| Use least privileged access | Prevents traffic flooding without controlled authorization. |
-| Assume breach | Can monitor traffic to protect from different attack scenarios. |
-
 As the policy that is created can be deployed to existing resources, you can add this protection after the initial deployment without requiring the redeployment of resources.
 
 ### Why Azure DDoS Protection Standard?
@@ -198,14 +193,6 @@ In addition, the following public IP addresses should be protected:
 - Application Gateway public IP addresses
 
 ## Step 3. Configure network gateway routing to the firewall
-
-This configuration contributes to Zero Trust in the following ways.
-
-|Zero Trust principle | Met by |
-| --- | --- |
-| Verify explicitly | By inspecting traffic flowing to and from the network gateway (VPN or ExpressRoute), you are ensuring that only verified traffic is able to pass through. |
-| Use least privileged access | Only resources that need connectivity to the on-premise environment will have that access. |
-| Assume breach | A breach in one network segment will not be able to spread to on-premise resources. |
 
 After deployment, you will need to configure route tables on various subnets to ensure that traffic between spoke VNets and the on-premise networks are inspected by the Azure Firewall. This activity can be performed in an existing environment without a requirement of redeployment, but you will have to author the necessary firewall rules to allow access.
 

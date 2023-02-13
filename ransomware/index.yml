@@ -24,7 +24,7 @@ landingContent:
   # Card (optional)
   - title: Human operated ransomware
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
         - text: What is ransomware?
           url:  human-operated-ransomware.md
@@ -32,7 +32,7 @@ landingContent:
 # Card
   - title: Rapidly protect against ransomware and extortion
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
         - text: Overview
           url: protect-against-ransomware.md

@@ -3,7 +3,7 @@ title: Apply Zero Trust principles to Azure Virtual Desktop
 description: Learn how to secure an Azure Virtual Desktop deployment with Zero Trust.   
 ms.date: 02/17/2023
 ms.service: security
-author: v-joedavies
+author: JoeDavies-TechWriter
 ms.author: v-joedavies
 ms.topic: conceptual
 ms.collection: 
@@ -12,7 +12,7 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# Apply Zero Trust principles to a spoke virtual network in Azure
+# Apply Zero Trust principles to an Azure Virtual Desktop deployment
 
 This article will help you apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to an Azure Virtual Desktop deployment in the following ways:
 
@@ -124,7 +124,7 @@ Use the instructions [here](/azure/firewall/protect-azure-virtual-desktop?tabs=a
 
 Session hosts are virtual machines that run inside a spoke VNet. Implement the steps in [Apply Zero Trust principles to virtual machines in Azure](azure-infrastructure-virtual-machines.md) for the virtual machines being created for your session hosts.
 
-[Host pools](/azure/virtual-desktop/environment-setup#host-pools) should have separator OUs if managed by [group policies](/windows-server/remote/remote-desktop-services/clients/rdp-files?context=%2Fazure%2Fvirtual-desktop%2Fcontext%2Fcontext) on [Active Directory Domain Services (AD DS)](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview). Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. You can use Microsoft Defender for Endpoint for session hosts. See [virtual desktop infrastructure (VDI) devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi) for more information.
+[Host pools](/azure/virtual-desktop/environment-setup#host-pools) should have separator OUs if managed by [group policies](/windows-server/remote/remote-desktop-services/clients/rdp-files?context=%2Fazure%2Fvirtual-desktop%2Fcontext%2Fcontext) on [Active Directory Domain Services (AD DS)](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview). Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. You can use Microsoft Defender for Endpoint for session hosts. See [virtual desktop infrastructure (VDI) devices](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi) for more information.
 
 ## Step 6. Deploy security, governance, and compliance of session hosts
 

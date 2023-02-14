@@ -50,7 +50,7 @@ Find resources that provide clear actionable guidance for security related decis
 
 ## Learning
 
-Find resources to learn how to build a security strategy and architecture centered on Zero Trust principles. 
+Learn new skills and discover concepts centered on Zero Trust principles. 
 
 <center><h3>Zero Trust Guidance center</center></h3>
 <table>

@@ -38,7 +38,9 @@ After creating a strategy and architecture, you can then proceed to advance your
 
 
 ## Operation
-At its core, operations focus on functions of detect, respond, and recover. Operations play a critical role in making sure that an organization's assets are protected. Learn how to use Zero Trust principles to apply in your operations, including people, processes, and technology. 
+Operations play a critical role in making sure that an organization's assets are protected. Learn how to use Zero Trust principles to apply in your operations, including people, processes, and technology.
+
+Building a modern security operation requires modernization of incident response, increase coverage across infrastructure, apps, data, and more, including multi-tool operations. It also requires advanced functions and tooling. 
 
  
 ## Best practices

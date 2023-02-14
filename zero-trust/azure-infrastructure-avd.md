@@ -51,7 +51,7 @@ This reference architecture aligns to the architecture described in the Cloud Ad
 
 In this diagram, the Azure infrastructure for an Azure Virtual Desktop deployment is contained within one Azure Active Directory (Azure AD) tenant.
 
-:::image type="content" source="media/logical-arch-avd/placeholder.png" alt-text="Diagram of the components of a resource group for Azure Virtual Desktop." lightbox="media/logical-arch-/placeholder.png":::
+:::image type="content" source="media/avd/logical-arch-avd.png" alt-text="Diagram of the components of a resource group for Azure Virtual Desktop." lightbox="media/avd/logical-arch-avd.png":::
 
 The elements of the logical architecture are:
 

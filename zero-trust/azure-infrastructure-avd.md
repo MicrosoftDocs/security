@@ -33,7 +33,22 @@ In this article, we'll use the following reference architecture for Hub and Spok
 
 The Azure environment for Azure Virtual Desktop includes:
 
-<ol type="a">
+A. Azure Storage Services for Azure Virtual Desktop user profiles
+
+B. A connectivity hub virtual VNet
+
+C. A spoke VNet with Azure Virtual Desktop session host virtual machine-based workloads
+
+D. An Azure Virtual Desktop Control Plane
+
+E. An Azure Virtual Desktop Management Plane
+
+F. Dependent PaaS services (including Azure AD, Microsoft Defender for Cloud, RBAC, and Azure Monitor).
+
+G. Azure Compute Gallery
+
+<!--
+<ol style="list-style-type: upper-alpha">
   <li>Azure Storage Services for Azure Virtual Desktop user profiles</li>
   <li>A connectivity hub virtual VNet</li>
   <li>A spoke VNet with Azure Virtual Desktop session host virtual machine-based workloads</li>
@@ -42,6 +57,7 @@ The Azure environment for Azure Virtual Desktop includes:
   <li>Dependent PaaS services (including Azure AD, Microsoft Defender for Cloud, RBAC, and Azure Monitor).</li>
   <li>Azure Compute Gallery</li>
 </ol>
+-->
 
 Users or admins that access the Azure environment can originate from the internet, office locations, or on-premises datacenters.
 
@@ -196,7 +212,7 @@ See these additional articles for Zero Trust deployment plans:
 Refer to the links below to learn about the various services and technologies mentioned in this article.
 
 - [What is Azure - Microsoft Cloud Services](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/)
-- [Azure Infrastructure as a Service (IaaS) I Microsoft Azure](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/azure-iaas/#benefits)
+- [Azure Infrastructure as a Service (IaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/azure-iaas/)
 - [Virtual Machines (VMs) for Linux and Windows](https://azure.microsoft.com/products/virtual-machines/)
 - [Introduction to Azure Storage - Cloud storage on Azure](/azure/storage/common/storage-introduction)
 - [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview)

@@ -16,31 +16,8 @@ ms.collection: highpri
 The Zero Trust guidance center provides information and resources to guide organizations in their Zero Trust journey. Throughout the various workflows, you'll be provided with guidance on strategy, architecture, implementation, and operation. Best practices and learning resources are also provided to further guide you in your journey of implementing the Zero Trust framework. 
 
 
-:::image type="content" source="./media/zt-landing-medium.png" alt-text="Diagram of Zero Trust guidance center with tiles for strategy, architecture, implementation, operation, best practices, and learning." border="false":::
+:::image type="content" source="./media/zt-banner.png" alt-text="Diagram of Zero Trust guidance center with tiles for strategy, architecture, implementation, operation, best practices, and learning." border="false":::
 
-
-**Zero Trust guidance** 
-
-:::row:::
-   :::column:::
-[![Icon for the strategy](./media/strategy.png)](#strategy)
-   :::column-end:::
-   :::column:::
-[![Icon for architecture](./media/architecture.png)](#architecture)
-   :::column-end:::
-   :::column:::
-[![Icon for implementation](./media/implementation.png)](#implementation)
-   :::column-end:::
-   :::column:::
-[![Icon for operation](./media/operation.png)](#operations)
-   :::column-end:::
-:::row-end:::
-:::row:::
-[Best practices]()
-:::row-end:::
-:::row:::
-[Learning]()
-:::row-end:::
 
 
 ## Strategy
@@ -53,9 +30,6 @@ Implementing a Zero Trust strategy can be a complex undertaking and an iterative
 A Zero Trust architecture must be centered around the principles of assuming breach, using least privileged access, and verifying requests explicitly. 
 
 A holistic approach to Zero Trust should extend to your entire digital estate - inclusive of identities, endpoints, network, data, apps, and infrastructure. Zero Trust architecture serves as a comprehensive end-to-end strategy and requires integration across the elements.
-
-:::image type="content" source="./media/zero-trust-ramp-overview/zero-trust-architecture.png" alt-text="The overall architecture for Zero Trust" lightbox="./media/zero-trust-ramp-overview/zero-trust-architecture.png":::
-
 
 ## Implementation
 After creating a strategy and architecture, you can then proceed to advance your security infrastructure by implementing the plan. Depending on where your organization is in its Zero Trust journey, implementing a Zero Trust strategy may require a multi-stage approach to achieve a state of optimal maturity.
@@ -75,23 +49,5 @@ Find resources that provide clear actionable guidance for security related decis
 ## Learning
 
 Learn new skills and discover concepts centered on Zero Trust principles. 
-
-<center><h3>Zero Trust Guidance center</center></h3>
-<table>
-<tr>
-<td><a href="#strategy"><center><img src="./media/strategy-icons.png" alt="Strategy"> <br><b> Strategy</b></center></a></td>
-<td><a href="#architecture"><center><img src="./media/archi-icons.png" alt="architecture"><br><b>Architecture</b></center></a></td>
-<td><center><a href="#implementation"><img src="./media/implementation-icons.png" alt="implementation"><br> <b>Implementation</b></a></center></td>
-<td><center><a href="#operation"><img src="./media/operation-icons.png" alt="Operation"><br> <b>Operation</b></a></center></td>
-</tr>
-<tr>
-<td colspan="7">
-<a href="#best-practices"><center><b>Best practices</a></b></center></td>
-</tr>
-<tr>
-<td colspan="7"><a href="#learning"><center><b>Learning</a></center></b></td>
-</tr>
-</table>
-<br>
 
 

@@ -23,16 +23,16 @@ The Zero Trust guidance center provides information and resources to guide organ
 
 :::row:::
    :::column:::
-[![Icon for the strategy](./media/strategy-icons.png)](#strategy)
+[![Icon for the strategy](./media/strategy.png)](#strategy)
    :::column-end:::
    :::column:::
-[![Icon for architecture](./media/archi-icons.png)](#architecture)
+[![Icon for architecture](./media/architecture.png)](#architecture)
    :::column-end:::
    :::column:::
-[![Icon for implementation](./media/implementation-icons.png)](#implementation)
+[![Icon for implementation](./media/implementation.png)](#implementation)
    :::column-end:::
    :::column:::
-[![Icon for operation](./media/operation-icons.png)](#operations)
+[![Icon for operation](./media/operation.png)](#operations)
    :::column-end:::
 :::row-end:::
 :::row:::

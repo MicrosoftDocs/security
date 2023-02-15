@@ -36,10 +36,10 @@ The Zero Trust guidance center provides information and resources to guide organ
    :::column-end:::
 :::row-end:::
 :::row:::
-Best practices
+[Best practices]()
 :::row-end:::
 :::row:::
-Learning
+[Learning]()
 :::row-end:::
 
 

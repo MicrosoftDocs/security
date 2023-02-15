@@ -11,13 +11,13 @@ ms.collection: highpri
 ---
 
 
-# What's inside Zero Trust Guidance center
+# What's inside the Zero Trust guidance center
 
-The Zero Trust guidance center provides information and resources to guide organizations in their Zero Trust journey. Throughout the various workflows, you'll be provided with guidance on strategy, architecture, implementation, and operation. Best practices and learning resources are also provided to further guide you in your journey of implementing the Zero Trust framework. 
+The Zero Trust guidance center provides information and resources for organizations to implement the Zero Trust strategy.
 
+Throughout the various workflows, you'll be provided with guidance on strategy, architecture, implementation, and operation. Best practices and learning resources are also provided to further guide you in your journey of implementing the Zero Trust framework. 
 
-:::image type="content" source="./media/zt-banner-slim.png" alt-text="Diagram of Zero Trust guidance center with tiles for strategy, architecture, implementation, operation, best practices, and learning." border="false":::
-
+:::image type="content" source="./media/zt-banner-complete.png" alt-text="Diagram of Zero Trust guidance center with tiles for strategy, architecture, implementation, operation, best practices, and learning." border="false":::
 
 
 ## Strategy

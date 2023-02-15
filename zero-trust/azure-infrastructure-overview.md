@@ -226,7 +226,7 @@ Refer to the links below to learn about the various services and technologies me
 - [Building the first layer of defense with Azure security services](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)
 - [Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra)
 
-## Technical illustrationss
+## Technical illustrations
 
 This poster provides a single-page, at-a-glance view of the components of Azure IaaS for Zero Trust application as reference and logical architectures, along with the steps to ensure that these components have the "never trust, always verify" principles of the Zero Trust model applied.
 

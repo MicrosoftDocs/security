@@ -14,17 +14,17 @@ ms.collection:
 
 # Apply Zero Trust principles to a hub virtual network in Azure
 
-The best way to deploy an Azure-based hub virtual network (VNet) for Zero Trust is to leverage the Azure Landing Zone materials to deploy a feature-complete hub VNet, and then tailor it to your specific configuration expectations.
+The best way to deploy an Azure-based hub virtual network (VNet) for Zero Trust is to use the Azure Landing Zone materials to deploy a feature-complete hub VNet, and then tailor it to your specific configuration expectations.
 
-This article provides steps for how to take an existing hub VNet and ensure you are ready for a Zero Trust methodology. It assumes that you have used the ALZ-Bicep [hubNetworking](https://github.com/Azure/ALZ-Bicep/tree/main/infra-as-code/bicep/modules/hubNetworking) module to rapidly deploy a hub VNet, or have deployed some other hub VNet with similar resources. Using a separate connectivity hub connected to isolated workplace spokes is an anchor pattern in Azure secure networking and helps support the Zero Trust principles.
+This article provides steps for how to take an existing hub VNet and ensure you're ready for a Zero Trust methodology. It assumes that you have used the ALZ-Bicep [hubNetworking](https://github.com/Azure/ALZ-Bicep/tree/main/infra-as-code/bicep/modules/hubNetworking) module to rapidly deploy a hub VNet, or have deployed some other hub VNet with similar resources. Using a separate connectivity hub connected to isolated workplace spokes is an anchor pattern in Azure secure networking and helps support the Zero Trust principles.
 
 This article describes how to deploy a hub VNet for Zero Trust by mapping the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) in the following ways.
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
 | Verify explicitly | Always authenticate and authorize based on all available data points. | Use Azure Firewall with Transport Layer Security (TLS) inspection to verify risk and threats based on all available data. |
-| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Each spoke VNet has no access to other spoke VNets unless the traffic is routed through the firewall. The firewall is set to deny by default, allowing only traffic allowed by specified rules. |
-| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | In the event of a compromise or breach of one application/workload, it will have limited ability to spread due to the Azure Firewall performing traffic inspection and only forwarding allowed traffic. Only resources in the same workload would be exposed to the breach in the same application. |
+| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Each spoke VNet has no access to other spoke VNets unless the traffic gets routed through the firewall. The firewall is set to deny by default, allowing only traffic allowed by specified rules. |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | In the event of a compromise or breach of one application/workload, it has limited ability to spread due to the Azure Firewall performing traffic inspection and only forwarding allowed traffic. Only resources in the same workload would be exposed to the breach in the same application. |
 
 This article is a part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes a hub VNet to support an IaaS workload. For more information, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
 
@@ -34,7 +34,7 @@ The following diagram shows the reference architecture. The hub VNet is highligh
 
 :::image type="content" source="media/hub/azure-infra-hub-architecture-1.png" alt-text="The Zero Trust for Azure reference architecture with the hub VNet highlighted." lightbox="media/hub/azure-infra-hub-architecture-1.png":::
 
-For this reference architecture, there are a number of ways you can deploy the resources across the Azure subscription. The reference architecture shows the recommendation of isolating all resources for the hub VNet within a dedicated resource group. The resources for the spoke VNet are also shown for comparison. This model works well if different teams are given responsibility for these different areas.
+For this reference architecture, there are many ways you can deploy the resources across the Azure subscription. The reference architecture shows the recommendation of isolating all resources for the hub VNet within a dedicated resource group. The resources for the spoke VNet are also shown for comparison. This model works well if different teams are given responsibility for these different areas.
 
 In the diagram, a hub VNet includes components to support access to other apps and services within the Azure environment. These resources include:
 
@@ -45,7 +45,7 @@ In the diagram, a hub VNet includes components to support access to other apps a
 
 The hub VNet provides access from these components to an IaaS-based app hosted on virtual machines in a spoke VNet.
 
-For guidance on organizing for cloud adoption, see [Manage organization alignment](/azure/cloud-adoption-framework/organize/) in the The Cloud Adoption Framework.
+For guidance on organizing for cloud adoption, see [Manage organization alignment](/azure/cloud-adoption-framework/organize/) in the Cloud Adoption Framework.
 
 The resources that are deployed for the hub VNet are:
 
@@ -60,10 +60,10 @@ The following diagram shows the components of a resource group for a hub VNet in
 
 In the diagram:
 
-- The resources for the hub VNet are contained within a dedicated resource group. If you selected Azure DDoS Plan to be deployed as a part of the resources, that will be included as well.
+- The resources for the hub VNet are contained within a dedicated resource group. If you're deploying Azure DDoS Plan a part of the resources, you need to include that in the resource group.
 - The resources within a spoke VNet are contained within a separate dedicated resource group.
 
-Depending on your deployment, you may also note that there can be a deployment of an array for Private DNS Zones used for Private Link DNS resolution. These are used to secure PaaS resources with Private Endpoints, which will be detailed in a future section. Note that it deploys both a VPN Gateway and an ExpressRoute Gateway. You may not need both, so you can remove whichever one is not needed for your scenario or turn it off during deployment.
+Depending on your deployment, you may also note that there can be a deployment of an array for Private DNS Zones used for Private Link DNS resolution. These are used to secure PaaS resources with Private Endpoints, which are detailed in a future section. Note that it deploys both a VPN Gateway and an ExpressRoute Gateway. You may not need both, so you can remove whichever one isn't needed for your scenario or turn it off during deployment.
 
 ## What's in this article?
 
@@ -76,15 +76,15 @@ This article provides recommendations for securing the components of a hub VNet 
 | 3 | Configure network gateway routing to the firewall. | Verify explicitly <br> Use least privileged access <br> Assume breach |
 | 4 | Configure threat protection. | Assume breach |
 
-As a part of your deployment, you will want to make specific selections that are not the defaults for automated deployments due to their additional costs. Prior to the deployment, you should review the costs.
+As a part of your deployment, you'll want to make specific selections that aren't the defaults for automated deployments due to their additional costs. Prior to the deployment, you should review the costs.
 
-Operating the connectivity hub as deployed still provides significant value for isolation and inspection. If your organization is not ready to incur the costs of these advanced features, you can deploy a reduced functionality hub and make these adjustments later.
+Operating the connectivity hub as deployed still provides significant value for isolation and inspection. If your organization isn't ready to incur the costs of these advanced features, you can deploy a reduced functionality hub and make these adjustments later.
 
 ## Step 1. Secure Azure Firewall Premium
 
 Azure Firewall Premium plays a vital role in helping you secure your Azure infrastructure for Zero Trust.
 
-As a part of the deployment, use Azure Firewall Premium. This will require the management policy generated to be deployed as a premium policy as well. Changing to Azure Firewall Premium involves recreating the firewall and often the policy as well. As a result, start with Azure Firewall if possible, or be prepared for redeployment activities to replace the existing firewall.
+As a part of the deployment, use Azure Firewall Premium. This requires that you deploy the generated management policy as a premium policy. Changing to Azure Firewall Premium involves recreating the firewall and often the policy as well. As a result, start with Azure Firewall if possible, or be prepared for redeployment activities to replace the existing firewall.
 
 ### Why Azure Firewall Premium?
 
@@ -94,21 +94,21 @@ Azure Firewall Premium provides [advanced features](/azure/firewall/premium-fe
 - **East-West TLS Inspection** protects against malicious traffic sent from within Azure to other parts of Azure or to your non-Azure networks. This helps identify attempts for a breach to expand and spread its blast radius.
 - **Inbound TLS Inspection**  protects resources in Azure from malicious requests that arrive from outside the Azure network. Azure Application Gateway with Web Application Firewall provides this protection.
 
-The Inbound TLS Inspection for resources should be used whenever possible. Azure Application Gateway only provides protection for HTTP and HTTPS traffic. For some scenarios it can't be used, such as those that use SQL or RDP traffic. Other services often have their own threat protection options that could be used to provide _explicit verification_ controls for those services. You can review [Security baselines for Azure overview](/security/benchmark/azure/security-baselines-overview) to understand the threat protection options for these services.
+You should use the Inbound TLS Inspection for resources whenever possible. Azure Application Gateway only provides protection for HTTP and HTTPS traffic. It can't be used for some scenarios, such as those that use SQL or RDP traffic. Other services often have their own threat protection options that could be used to provide _explicit verification_ controls for those services. You can review [Security baselines for Azure overview](/security/benchmark/azure/security-baselines-overview) to understand the threat protection options for these services.
 
-Azure Application Gateway is not recommended for the hub VNet. It should instead reside in a spoke VNet or a dedicated VNet. See [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md) for guidance on the spoke VNet or [Zero-trust network for web applications](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall) for additional general guidance.
+Azure Application Gateway isn't recommended for the hub VNet. It should instead reside in a spoke VNet or a dedicated VNet. For more information, see [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md) for guidance on the spoke VNet or [Zero-trust network for web applications](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall).
 
 These scenarios have specific digital certificate considerations. For more information, see [Azure Firewall Premium certificates](/azure/firewall/premium-certificates).
 
 Without TLS inspection, Azure Firewall has no visibility in the data that flows in the encrypted TLS tunnel, and so it is less secure.
 
-For example, Azure Virtual Desktop does not support [SSL termination](/azure/virtual-desktop/proxy-server-support#dont-use-ssl-termination-on-the-proxy-server). You should review your specific workloads to understand how TLS inspection can be provided.
+For example, Azure Virtual Desktop doesn't support [SSL termination](/azure/virtual-desktop/proxy-server-support#dont-use-ssl-termination-on-the-proxy-server). You should review your specific workloads to understand how to provide TLS inspection.
 
-In addition to the customer defined allow/deny rules, the Azure Firewall is still able to apply [threat intelligence-based filtering](/azure/firewall/threat-intel). Threat intelligence-based filtering uses known-bad IP addresses and domains to identify traffic that poses a risk. This filtering occurs prior to any other rules, which means even if the access was allowed by your defined rules, the traffic can be stopped.
+In addition to the customer defined allow/deny rules, the Azure Firewall is still able to apply [threat intelligence-based filtering](/azure/firewall/threat-intel). Threat intelligence-based filtering uses known-bad IP addresses and domains to identify traffic that poses a risk. This filtering occurs prior to any other rules, which means even if the access was allowed by your defined rules, Azure Firewall can stop the traffic.
 
 Azure Firewall Premium also has enhanced options for URL filtering and web category filtering, allowing for more fine-tuning for roles.
 
-Threat intelligence can be set to notify you with an alert when this traffic occurs, but to allow it through. However for Zero Trust, it should be set to Deny.
+You can set threat intelligence to notify you with an alert when this traffic occurs, but to allow it through. However for Zero Trust, set it to Deny.
 
 ### Configure Azure Firewall Premium for Zero Trust
 
@@ -124,10 +124,10 @@ To configure Azure Firewall Premium to a Zero Trust configuration, make the foll
 
 2. Enable TLS inspection:
 
-    1. Prepare a certificate to be used stored in a Key Vault, or plan to auto-generate a certificate with a managed identity. You can review these options for [Azure Firewall Premium certificates](/azure/firewall/premium-certificates) to select the option for your scenario.
+    1. Prepare a certificate to store in a Key Vault, or plan to auto-generate a certificate with a managed identity. You can review these options for [Azure Firewall Premium certificates](/azure/firewall/premium-certificates) to select the option for your scenario.
     1. Navigate to the Firewall Policy and select **TLS Inspection**.
     1. Select **Enabled**.
-    1. Either select a Managed Identity to be used to generate certificates, or select the key vault and certificate.
+    1. Either select a Managed Identity to generate certificates, or select the key vault and certificate.
     1. Then select **Save**.
 
    :::image type="content" source="media/hub/hub-tls-inspection.png" alt-text="Screenshot of enabling TLS inspection." lightbox="media/hub/hub-tls-inspection.png":::
@@ -140,18 +140,18 @@ To configure Azure Firewall Premium to a Zero Trust configuration, make the foll
 
    :::image type="content" source="media/hub/hub-idps.png" alt-text="Screenshot of enabling IDPS." lightbox="media/hub/hub-idps.png":::
 
-4. Next, you will need to create an application rule for the traffic.
+4. Next, you'll need to create an application rule for the traffic.
 
     1. In the Firewall Policy, navigate to **Application Rules**.
     1. Select **Add a rule collection**.
     1. Create an application rule with the source of your Application Gateway subnet, and a destination of the domain name of the web app that is being protected.
-    1. Ensure that **TLS inspection** is enabled.
+    1. Ensure that you enable **TLS inspection**.
 
     :::image type="content" source="media/ApplicationRuleExample.gif" alt-text="Diagram for creating an application rule." lightbox="media/ApplicationRuleExample.gif":::
 
 ### Additional configuration
 
-With the Azure Firewall Premium configured, you can now perform the following:
+With the Azure Firewall Premium configured, you can now perform the following configuration:
 
 - Configure Application Gateways to route traffic to your Azure Firewall by assigning the appropriate route tables and [following this guidance](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall#hub-and-spoke-example).
 - Create alerts for firewall events and metrics by [following these instructions](/azure/firewall/firewall-diagnostics).
@@ -160,9 +160,9 @@ With the Azure Firewall Premium configured, you can now perform the following:
 
 ## Step 2. Deploy Azure DDoS Protection Standard
 
-As a part of the deployment, you will want to deploy an Azure DDoS Protection Standard Policy. This increases Zero Trust protection provided on the Azure Platform.
+As a part of the deployment, you'll want to deploy an Azure DDoS Protection Standard Policy. This increases Zero Trust protection provided on the Azure Platform.
 
-As the policy that is created can be deployed to existing resources, you can add this protection after the initial deployment without requiring the redeployment of resources.
+Because you can deploy the created policy to existing resources, you can add this protection after the initial deployment without requiring the redeployment of resources.
 
 ### Why Azure DDoS Protection Standard?
 
@@ -185,7 +185,7 @@ Because there are no Zero Trust-specific configurations for DDoS Protection Stan
 
 In the current version of Azure DDoS Protection, you must apply Azure DDoS Protection per VNet. See additional instructions in [DDoS Quickstart](/azure/ddos-protection/manage-ddos-protection).
 
-In addition, the following public IP addresses should be protected:
+In addition, protect the following public IP addresses:
 
 - Azure Firewall public IP addresses
 - Azure Bastion public IP addresses
@@ -194,15 +194,15 @@ In addition, the following public IP addresses should be protected:
 
 ## Step 3. Configure network gateway routing to the firewall
 
-After deployment, you will need to configure route tables on various subnets to ensure that traffic between spoke VNets and the on-premise networks are inspected by the Azure Firewall. This activity can be performed in an existing environment without a requirement of redeployment, but you will have to author the necessary firewall rules to allow access.
+After deployment, you'll need to configure route tables on various subnets to ensure that traffic between spoke VNets and the on-premises networks are inspected by the Azure Firewall. You can perform this activity in an existing environment without a requirement of redeployment, but you have to author the necessary firewall rules to allow access.
 
-If you configure only one side, either just the spoke subnets or the gateway subnets, then you will have asynchronous routing that will prevent connections from working.
+If you configure only one side, either just the spoke subnets or the gateway subnets, then you have asynchronous routing that prevents connections from working.
 
 ### Why route network gateway traffic to the firewall?
 
-A key element of Zero Trust is to not assume that just because something is in your environment, that it should have access to other resources in your environment. A default configuration will often allow for routing between resources in Azure to your on-premise networks, controlled only by network security groups.
+A key element of Zero Trust is to not assume that just because something is in your environment, that it should have access to other resources in your environment. A default configuration often allows for routing between resources in Azure to your on-premises networks, controlled only by network security groups.
 
-By routing the traffic to the firewall, you increase the level of inspection and increase the security of your environment. You are also alerted to suspicious activity and can take action.
+By routing the traffic to the firewall, you increase the level of inspection and increase the security of your environment. You're also alerted to suspicious activity and can take action.
 
 ### Configure gateway routing
 
@@ -214,7 +214,7 @@ There are two main ways to ensure that gateway traffic is being routed to the Az
 This guide details the second option because it is more compatible with the reference architecture.
 
 > [!NOTE]
-> [Azure Virtual Network Manager](/azure/virtual-network-manager/overview) is a service that simplifies this process. When this service is Generally Available, it should be used to manage the routing.
+> [Azure Virtual Network Manager](/azure/virtual-network-manager/overview) is a service that simplifies this process. When this service is Generally Available, used it to manage the routing.
 
 ### Configure gateway subnet routing
 
@@ -248,21 +248,21 @@ To configure the Gateway Subnet route table to forward internal traffic to the A
 1. Select the GatewaySubnet in the **Subnet** drop-down.
 1. Select **OK**.
 
-Here is an example.
+Here's an example.
 
 :::image type="content" source="media/hub/hub-associate-subnet.png" alt-text="Screenshot of associating subnets." lightbox="media/hub/hub-associate-subnet.png":::
 
-Your gateway will now forward traffic intended for spoke VNets to the Azure Firewall.
+The gateway now forwards traffic intended for spoke VNets to the Azure Firewall.
 
 ### Configure spoke subnet routing
 
 This process assumes that you already have a route table attached to your spoke VNet subnets, with a default route to forward traffic to the Azure Firewall. This is most often accomplished by a rule that forwards traffic for CIDR range 0.0.0.0/0, often called a quad-zero route.
 
-Here is an example.
+Here's an example.
 
 :::image type="content" source="media/hub/hub-spoke-routing.png" alt-text="Screenshot of configuring spoke subnet routing for default route traffic." lightbox="media/hub/hub-spoke-routing.png":::
 
-This process disables the propagation of routes from the gateway, which will enable the default route to take traffic intended to the on-premise networks.
+This process disables the propagation of routes from the gateway, which enables the default route to take traffic intended to the on-premises networks.
 
 > [!NOTE]
 > Resources, such as Application Gateways, that require internet access to function should not receive this route table. They should have their own route table to allow their necessary functions, such as what is outlined in the article [Zero-trust network for web applications with Azure Firewall and Application Gateway](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall).
@@ -275,17 +275,17 @@ To configure spoke subnet routing:
 
 :::image type="content" source="media/hub/hub-gateway-routes.png" alt-text="Screenshot of setting Propagate gateway routes to No." lightbox="media/hub/hub-gateway-routes.png":::
 
-Now your default route will send traffic intended for the gateway to the Azure Firewall.
+Your default route now forwards traffic intended for the gateway to the Azure Firewall.
 
 ## Step 4. Configure threat protection
 
-Your hub VNet built on Azure may be protected by Microsoft Defender for Cloud, just as other resources from your IT business environment running on Azure or on-premises may also be protected.
+Microsoft Defender for Cloud can protect your hub VNet built on Azure, just like other resources from your IT business environment running on Azure or on-premises.
 
 Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection (CWP) that offers a secure score system to help your company build an IT environment with a better security posture. It also includes features to protect your network environment against threats.
 
-This article will not cover Microsoft Defender for Cloud in detail. However, it is important to understand that Microsoft Defender for Cloud works based on Azure Policies and logs that are ingested on a Log Analytics workspace.
+This article won't cover Microsoft Defender for Cloud in detail. However, it is important to understand that Microsoft Defender for Cloud works based on Azure Policies and logs that it ingests in a Log Analytics workspace.
 
-Azure Policies are rules written in JavaScript Object Notation (JSON) that hold different analysis of Azure resource properties, including network services and resources. That said, it is easy for Microsoft Defender for Cloud to check a property under a network resource and provide a recommendation to your subscription if you are protected or exposed to a threat.
+You write Azure Policies in JavaScript Object Notation (JSON) to hold different analysis of Azure resource properties, including network services and resources. That said, it is easy for Microsoft Defender for Cloud to check a property under a network resource and provide a recommendation to your subscription if you're protected or exposed to a threat.
 
 ### How to check all network recommendations available through Microsoft Defender for Cloud
 
@@ -299,13 +299,13 @@ To view all the Azure policies that provide network recommendation used by Micro
 
 1. Select **Security policy**.
 
-1. If you select in the ASC Default, you will be able to review all the policies available, including the policies that evaluate network resources.
+1. If you select in the ASC Default, you'll be able to review all the policies available, including the policies that evaluate network resources.
 
-1. Additionally, there will be network resources evaluated by other regulatory compliances including PCI, ISO and the Microsoft cloud security benchmark. You can enable any of them and track for network recommendations.
+1. Additionally, there are network resources evaluated by other regulatory compliances including PCI, ISO and the Microsoft cloud security benchmark. You can enable any of them and track for network recommendations.
 
 ### Network recommendations
 
-Follow the steps below to view some of the network recommendations, based on the Microsoft cloud security benchmark:
+Follow these steps to view some of the network recommendations, based on the Microsoft cloud security benchmark:
 
 :::image type="content" source="media/hub/network-rec-mdc.jpg" alt-text="Screenshot of network recommendations by MDC." lightbox="media/hub/network-rec-mdc.jpg":::
 
@@ -329,11 +329,11 @@ You can also check options to get a better security posture by hardening your ne
 
 ### Managing Azure Firewall policies through Microsoft Defender for Cloud
 
-Azure Firewall is recommended for a hub VNet, as described in this article. Microsoft Defender for Cloud can manage multiple Azure Firewall policies centrally. In addition to Azure Firewall policies, you will be able to manage other features related to Azure Firewall, as shown here.
+Azure Firewall is recommended for a hub VNet, as described in this article. Microsoft Defender for Cloud can manage multiple Azure Firewall policies centrally. In addition to Azure Firewall policies, you'll be able to manage other features related to Azure Firewall, as shown here.
 
 :::image type="content" source="media/hub/firewall-manager-mdc.jpg" alt-text="Screenshot of managing Azure firewall policies through Microsoft Defender for Cloud.":::
 
-For more information about Microsoft Defender for Cloud and how you can better protect your network environment against threats, see [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction)
+For more information about how Microsoft Defender for Cloud protects your network environment against threats, see [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
 ## Recommended training
 
@@ -355,7 +355,7 @@ For more training on security in Azure, see these resources in the Microsoft cat
 
 ## References
 
-Refer to the links below to learn about the various services and technologies mentioned in this article.
+Refer to these links to learn about the various services and technologies mentioned in this article.
 
 - [Azure Virtual Networks](/azure/virtual-network/virtual-networks-overview)
 

@@ -14,7 +14,7 @@ ms.collection:
 
 # Apply Zero Trust principles to virtual machines in Azure
 
-This article helps you apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to virtual machines in Azure:
+This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to virtual machines in Azure:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
@@ -22,7 +22,7 @@ This article helps you apply the [principles of Zero Trust](zero-trust-overview.
 | Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Leverage Role Based Access Control (RBAC) and control the applications running on virtual machines. |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Isolate virtual machines with resource groups, secure their components, use double encryption, and enable advanced threat detection and protection. |
 
-This article is part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes a spoke VNet hosting a virtual machine-based workload. For an overview, see [Apply Zero Trust principles to Azure infrastructure](azure-infrastructure-overview.md).
+This article is part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes a spoke virtual network (VNet) hosting a virtual machine-based workload. For an overview, see [Apply Zero Trust principles to Azure infrastructure](azure-infrastructure-overview.md).
 
 ## Logical architecture for virtual machines
 
@@ -76,7 +76,7 @@ The following built-in roles are commonly used for virtual machine access:
 
 To join a virtual machine to a VNet, you can use the custom permission **Microsoft.Network/virtualNetworks/subnets/join/action** to make a custom role.
 
-When this custom role is leveraged in conjunction with Managed Identity and Conditional Access Policy, you can use device state, data classification, anomalies, location, and identity to force multi-factor authentication and granularly allow access based on verified trust.
+When this custom role is used in conjunction with Managed Identity and Conditional Access Policy, you can use device state, data classification, anomalies, location, and identity to force multi-factor authentication and granularly allow access based on verified trust.
 
 To extend your realm of control beyond the system and allow your Azure Active Directory (Azure AD) tenant with Microsoft Intelligent Security Graph to support secure access, go to the **Management** blade of the virtual machine and turn on **System Assigned Managed Identity**, as shown here.
 
@@ -90,7 +90,7 @@ To extend your realm of control beyond the system and allow your Azure Active Di
 Follow  the steps given below:
 
 - When you create the virtual machine, be sure you configure security for the boot components. Enhanced deployment of virtual machines allows you to select security type and use [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) and [vTPM](/windows/security/information-protection/tpm/trusted-platform-module-overview).
-- Securely deploy virtual machines with verified boot loaders, OS kernels, and drivers that are signed by trusted publishers to establish a "root of trust". If the image is not signed by a trusted publisher, the virtual machine will not boot.
+- Securely deploy virtual machines with verified boot loaders, OS kernels, and drivers that are signed by trusted publishers to establish a "root of trust". If the image is not signed by a trusted publisher, the virtual machine won't boot.
 - Securely protect keys, certificates, and secrets in the virtual machines in a Trusted Platform Module.
 - Gain insights and confidence of the entire boot chain's integrity.
 - Ensure workloads are trusted and verifiable. The vTPM enables [attestation](/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation) by measuring the entire boot chain of your virtual machine (UEFI, OS, system, and drivers).
@@ -117,7 +117,7 @@ For information on how to configure a customer-managed encryption key with Azure
 - Encrypts the OS and Temporary disks that are provisioned on the host; a ```--d``` carries it over to the storage service
 - Double encryption on OS disks, Data disks, snapshots, and images
 
-After this is complete, you can begin using your customer-managed encryption key to encrypt the disks within your virtual machine.
+After this is complete, you use your customer-managed encryption key to encrypt the disks within your virtual machine.
 
 You select the encryption type on the **Disks** blade for the virtual machine configuration. For **Encryption type**, select **Double encryption with platform-managed and customer-managed keys**, as shown here.
 
@@ -125,12 +125,12 @@ You select the encryption type on the **Disks** blade for the virtual machine co
 
 ## Step 5. Control the applications installed on virtual machines
 
-It's important to control the applications that can be installed on your virtual machines:
+It's important to control the applications that are installed on your virtual machines:
 
 - Browser extensions (APIs) are difficult to secure which can lead to malicious URL delivery.
-- Unsanctioned apps can go unpatched as they are shadow IT objects (the IT teams are not prepared or have no knowledge that these are installed).
+- Unsanctioned apps can go unpatched as they are shadow IT objects (the IT teams aren't prepared or have no knowledge that these are installed).
 
-You can use the Virtual Machine Applications feature to control the applications that are installed on virtual machines. With this feature, you select which virtual machine applications to install. This feature leverages the Azure Compute Gallery to simplify management of applications for virtual machines. When used together with RBAC, you can ensure that only trusted applications are available for users.
+You can use the Virtual Machine Applications feature to control the applications that are installed on virtual machines. With this feature, you select which virtual machine applications to install. This feature uses the Azure Compute Gallery to simplify management of applications for virtual machines. When used together with RBAC, you can ensure that only trusted applications are available for users.
 
 You select the virtual machine applications on the **Advanced** blade for the virtual machine configuration, as show here.
 
@@ -169,21 +169,21 @@ When configuring multi-factor authentication with conditional access and related
 
 The following diagram shows the recommended policies for Zero Trust.
 
-:::image type="content" source="media/vm/identity-device-access-policies-byplan.png" alt-text="Diagram of Zero Trust identity and device access policies." lightbox="media/vm/identity-device-access-policies-byplan.png":::
+:::image type="content" source="media/identity-device-access-policies-byplan.png" alt-text="Diagram of Zero Trust identity and device access policies." lightbox="media/identity-device-access-policies-byplan.png":::
 
 Remember that usernames and passwords can be 100% compromised. Using multi-factor authentication, you reduce your risk of compromise by 99.9%. This requires Azure AD Premium P1 licenses.
 
 > [!NOTE]
-> VPNs can be used to connect to virtual machines in Azure as well. However, you should be sure to use methods to verify explicitly. Creating a tunnel that is "trusted" regardless of how they are used can be riskier than having specific connections that are highly verified.
+> You can use VPNs used to connect to virtual machines in Azure as well. However, you should be sure to use methods to verify explicitly. Creating a tunnel that is "trusted" regardless of how they are used can be riskier than having specific connections that are highly verified.
 
-No amount of security at the Network, Transport, or Application layers will matter if you are not coming from a trusted, verified, and secure source.
+No amount of security at the Network, Transport, or Application layers matters if you aren't coming from a trusted, verified, and secure source.
 
 ### Use PAWs
 
 Use [Privileged Access Workstations (PAWs)](/security/compass/privileged-access-devices) to ensure devices that access virtual machines are healthy. PAWs are configured specifically for privileged access so that admins use a device that has:
 
 - Security controls and policies that restrict local administrative access.
-- Productivity tools to minimize the attack surface to only what is absolutely required for performing sensitive administrative tasks.
+- Productivity tools to minimize the attack surface to only what's absolutely required for performing sensitive administrative tasks.
 
 For more information on deployment options, see [Privileged access deployment](/security/compass/privileged-access-deployment).
 
@@ -213,7 +213,7 @@ Anti-malware helps protect your virtual machine from threats such as malicious f
 
 ### Automate virtual machine updates
 
-Automating updates to systems will ensure they are protected from the latest malware and misconfiguration exploits. There is automatic updating with aid in the trusted platform verification process.
+Automating updates to systems ensures they are protected from the latest malware and misconfiguration exploits. There is automatic updating with aid in the trusted platform verification process.
 
 Concentrate on [Azure Virtual Machine Maintenance and Updates](/azure/virtual-machines/maintenance-and-updates) to ensure your systems are hardened against configuration insecurities:
 

@@ -14,7 +14,7 @@ ms.collection:
 
 # Apply Zero Trust principles to Azure storage
 
-In this article, you will learn to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to Azure Storage:
+This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to Azure Storage:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
@@ -26,7 +26,7 @@ This article is part of a series of articles that demonstrate how to apply the p
 
 ## Storage architecture in Azure
 
-Zero Trust principles for Azure Storage are applied across the architecture, from the tenant and directory level down to the storage container at the data layer.
+You apply Zero Trust principles for Azure Storage across the architecture, from the tenant and directory level down to the storage container at the data layer.
 
 The following diagram shows the logical architecture components.
 
@@ -34,11 +34,11 @@ The following diagram shows the logical architecture components.
 
 In the diagram:
 
-- The storage account for the reference architecture is contained in a dedicated resource group. You can isolate each storage account in a different resource group for more granular role-based access controls (RBAC). You can assign RBAC permissions to manage the storage account at the resource group or resource group level and audit these with Azure Active Directory (Azure AD) logging and tools such as Privileged Identity Management (PIM). If you are running multiple applications or workloads with multiple corresponding storage accounts in one Azure subscription, it is important to limit each storage account's RBAC permissions to its corresponding owners, data custodians, controllers, etc.
+- The storage account for the reference architecture is contained in a dedicated resource group. You can isolate each storage account in a different resource group for more granular role-based access controls (RBAC). You can assign RBAC permissions to manage the storage account at the resource group or resource group level and audit these with Azure Active Directory (Azure AD) logging and tools such as Privileged Identity Management (PIM). If you're running multiple applications or workloads with multiple corresponding storage accounts in one Azure subscription, it is important to limit each storage account's RBAC permissions to its corresponding owners, data custodians, controllers, etc.
 - Azure storage services for this diagram are contained within a dedicated storage account. You can have one storage account for each type of storage workload.
 - For a broader look at the reference architecture, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
 
-Azure Queues and Azure Tables are not included in the diagram. Use the same guidance in this article to secure these resources.
+The diagram doesn't include Azure Queues and Azure Tables. Use the same guidance in this article to secure these resources.
 
 ## What's in this article?
 
@@ -53,7 +53,7 @@ This article walks through the steps to apply the principles of Zero Trust acros
 
 ## Step 1. Protect data in all three modes: data at rest, data in transit, data in use
 
-Most of the settings for protecting data at rest, in transit, and in use are configured when you create the storage account. Use the following recommendations to be sure these protections are configured. Also consider enabling Microsoft Defender for Cloud to automatically evaluate your storage accounts against the [Microsoft cloud security benchmark](/security/benchmark/azure/introduction) that outlines a security baseline for each Azure service.
+You configure most of the settings for protecting data at rest, in transit, and in use, when you create the storage account. Use the following recommendations to be sure you configure these protections. Also consider enabling Microsoft Defender for Cloud to automatically evaluate your storage accounts against the [Microsoft cloud security benchmark](/security/benchmark/azure/introduction) that outlines a security baseline for each Azure service.
 
 For more information on these storage security controls, see [here](/security/benchmark/azure/baselines/storage-security-baseline).
 
@@ -75,23 +75,23 @@ For more information, see [Prevent anonymous public read access to containers an
 
 ### Prevent shared key authorization
 
-This configuration will force the storage account to reject all requests made with a shared key and require Azure AD authorization instead. Azure AD is a more secure choice as you can leverage risk-based access mechanisms to harden access to data tiers. For more information, see [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent?tabs=portal).
+This configuration forces the storage account to reject all requests made with a shared key and require Azure AD authorization instead. Azure AD is a more secure choice as you can use risk-based access mechanisms to harden access to data tiers. For more information, see [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent?tabs=portal).
 
 You configure data protection for all three modes from the configuration settings of a storage account, as shown here.
 
 :::image type="content" source="media/secure-storage/storage-1.png" alt-text="Screenshot of configuring data protection for all three modes for a storage account." lightbox="media/secure-storage/storage-1.png":::
 
-These settings cannot be changed after you create the storage account.
+These settings can't be changed after you create the storage account.
 
 ### Enforce a minimum required version of transport layer security (TLS)
 
-The highest version Azure Storage currently supports is TLS 1.2. Enforcing a minimum TLS version will reject requests from clients using older versions. For more information, see [Enforce a minimum required version of TLS for requests to a storage account](/azure/storage/common/transport-layer-security-configure-minimum-version).
+The highest version Azure Storage currently supports is TLS 1.2. Enforcing a minimum TLS version rejects requests from clients using older versions. For more information, see [Enforce a minimum required version of TLS for requests to a storage account](/azure/storage/common/transport-layer-security-configure-minimum-version).
 
 ### Define the scope for copy operations
 
 Define the scope for copy operations to restrict copy operations to only those from source storage accounts that are within the same Azure AD tenant or that have a [Private Link](/azure/storage/common/storage-network-security) to the same virtual network (VNet) as the destination storage account.
 
-Limiting copy operations to source storage accounts with private endpoints is the most restrictive option and will require that the source storage account has private endpoints enabled.
+Limiting copy operations to source storage accounts with private endpoints is the most restrictive option and requires that the source storage account has private endpoints enabled.
 
 You configure a scope for copy operations from the configuration settings of a storage account, as shown here.
 
@@ -105,18 +105,18 @@ You enable CMK from the **Encryption** blade when creating a storage account, as
 
 :::image type="content" source="media/secure-storage/storage-3.png" alt-text="Screenshot of enabling CMK for a storage account." lightbox= "media/secure-storage/storage-3.png":::
 
-You can also enable infrastructure encryption, which provides double encryption at both the service and infrastructure levels. This setting cannot be changed after you create the storage account.
+You can also enable infrastructure encryption, which provides double encryption at both the service and infrastructure levels. This setting can't be changed after you create the storage account.
 
 > [!NOTE]
 > In order to utilize a customer-managed key for storage account encryption, you must enable it during account creation and you should have a Key Vault with Key and Managed Identity with appropriate permissions already provisioned. Optionally, 256-bit AES encryption at the Azure Storage infrastructure level can also be enabled.
 
 ## Step 2. Verify users and control access to storage data with the least privileges
 
-First, use Azure AD to govern access to storage accounts. Using [Role-based Access Control with Storage Accounts](/azure/storage/blobs/authorize-access-azure-active-directory) allows you to granularly define access based job function leveraging OAuth 2.0. You can align your granular access to your Conditional Access Policy.
+First, use Azure AD to govern access to storage accounts. Using [Role-based Access Control with Storage Accounts](/azure/storage/blobs/authorize-access-azure-active-directory) allows you to granularly define access based job function using OAuth 2.0. You can align your granular access to your Conditional Access Policy.
 
-It is important to note that roles for storage accounts must be assigned at either the management or data level. Thus, if you are using Azure AD as the authentication and authorization method, a user should be assigned the appropriate combination of roles to give them the least amount of privilege necessary to complete their job function.
+It is important to note that roles for storage accounts must be assigned at either the management or data level. Thus, if you're using Azure AD as the authentication and authorization method, a user should be assigned the appropriate combination of roles to give them the least amount of privilege necessary to complete their job function.
 
-For a list of Storage Account Roles for granular access see [Azure built-in roles for Storage](/azure/role-based-access-control/built-in-roles#storage). RBAC assignments can be done through the Access Control option on the Storage Account and can be assigned at various scopes.
+For a list of Storage Account Roles for granular access see [Azure built-in roles for Storage](/azure/role-based-access-control/built-in-roles#storage). RBAC assignments are done through the Access Control option on the Storage Account and can be assigned at various scopes.
 
 You configure access control from the **Access Control (IAM)** settings of a storage account, as shown here.
 
@@ -124,7 +124,7 @@ You configure access control from the **Access Control (IAM)** settings of a sto
 
 You can check the access levels of users, groups, service principals, or managed identities and add a role assignment.
 
-Another way to provide permissions that can be time-bound is through Shared Access Signatures (SAS). [Best Practices when using SAS](/azure/storage/common/storage-sas-overview#best-practices-when-using-sas) at a high level are:
+Another way to provide permissions that are time-bound is through Shared Access Signatures (SAS). [Best Practices when using SAS](/azure/storage/common/storage-sas-overview#best-practices-when-using-sas) at a high level are the following:
 
 - Always use HTTPS. If you have deployed the [suggested Azure Policies for Azure landing zones](https://github.com/Azure/Enterprise-Scale/wiki/ALZ-Policies), secure transfer via HTTPS will be audited.
 - Have a revocation plan.
@@ -142,9 +142,9 @@ The following diagram highlights the network connections to the Azure Storage se
 
 |Task | Description |
 | --- | --- |
-| Prevent public access, create network segmentation with [Private Endpoint](/azure/private-link/private-endpoint-overview) and Private Link. | Private endpoint allows you to connect to services with the use of a single private IP address on the VNet leveraging Azure Private Link. <li> Enabling private endpoints allows the Azure platform to validate network connections and allow only the connection with explicit access to the private-link resource to gain access to subsequent resources. <li> You will need a separate private endpoint for each service on the Azure Storage Account.
+| Prevent public access, create network segmentation with [Private Endpoint](/azure/private-link/private-endpoint-overview) and Private Link. | Private endpoint allows you to connect to services with the use of a single private IP address on the VNet using Azure Private Link. <li> Enabling private endpoints allows the Azure platform to validate network connections and allow only the connection with explicit access to the private-link resource to gain access to subsequent resources. <li> You'll need a separate private endpoint for each service on the Azure Storage Account.
 | Use [Azure Private Link](/azure/private-link/private-link-overview) | Use Azure Private Link to access Azure Storage over a private endpoint in your VNet. Use the [approval workflow](/azure/private-link/private-endpoint-overview) to automatically approve or manually request, as appropriate. |
-| Prevent public access to your data sources using [Service Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview) | Network segmentation can be achieved using Service Endpoints by enabling private IP addresses in a VNet to reach an endpoint without using public IP addresses. |
+| Prevent public access to your data sources using [Service Endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview) | You can do network segmentation using Service Endpoints by enabling private IP addresses in a VNet to reach an endpoint without using public IP addresses. |
 
 You configure private endpoints from the **Networking** settings of a storage account, as shown here.
 
@@ -154,7 +154,7 @@ You configure private endpoints from the **Networking** settings of a storage ac
 
 [Microsoft Defender for Storage](/azure/storage/common/azure-defender-storage-configure?tabs=azure-security-center) provides that additional level of intelligence that detects unusual and potentially harmful attempts to exploit your storage services. Microsoft Defender for Storage is built into Microsoft Defender for Cloud.
 
-Defender for Storage will detect anomalous access pattern alerts such as:
+Defender for Storage detects anomalous access pattern alerts such as:
 
 - Access from unusual locations
 - Application Anomaly
@@ -170,9 +170,9 @@ Defender for Storage will detect anomalous access pattern alerts such as:
 
 For more information about threat protection across the reference architecture, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
 
-Once enabled, Defender for Storage will notify you of security alerts and recommendations for improving the security posture of your Azure storage accounts.
+Once enabled, Defender for Storage notifies you of security alerts and recommendations for improving the security posture of your Azure storage accounts.
 
-Here is an example security alert for a storage account with a description of the alert and prevention measures highlighted.
+Here's an example security alert for a storage account with a description of the alert and prevention measures highlighted.
 
 :::image type="content" source="media/secure-storage/storage-6.png" alt-text="Screenshot of an example security alert for a storage account." lightbox="media/secure-storage/storage-6.png":::
 

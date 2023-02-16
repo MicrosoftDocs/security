@@ -381,7 +381,7 @@ When configuring multi-factor authentication with conditional access and related
 
 The following diagram shows the recommended policies for Zero Trust.
 
-:::image type="content" source="media/identity-device-access-policies-byplan.png" alt-text="Diagram of Zero Trust identity and device access policies." lightbox="media/vm/identity-device-access-policies-byplan.png":::
+:::image type="content" source="media/identity-device-access-policies-byplan.png" alt-text="Diagram of Zero Trust identity and device access policies." lightbox="media/identity-device-access-policies-byplan.png":::
 
 ## Step 7. Enable advanced threat detection and protection
 

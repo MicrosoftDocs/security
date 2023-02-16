@@ -45,7 +45,7 @@ This article walks through the steps to apply the principles of Zero Trust acros
 | --- | --- | --- |
 | 1 | Configure logical isolation by deploying virtual machines to a dedicated resource group. | Assume breach |
 | 2 | Leverage Role Based Access Control (RBAC). | Verify explicitly <br> Use least privileged access |
-| 3 | Secure virtual machine boot components — boot loaders, OS kernels, and drivers. Securely protect keys, certificates and secrets in the Trusted Platform Module (TPM). | Assume breach |
+| 3 | Secure virtual machine boot components — boot loaders, OS kernels, and drivers. Securely protect keys, certificates, and secrets in the Trusted Platform Module (TPM). | Assume breach |
 | 4 | Enable customer-managed keys and double encryption. | Assume breach |
 | 5 | Control the applications that are installed on virtual machines. | Use least privileged access |
 | 6 | Configure secure access (not shown on the logical architecture figure). | Verify explicitly <br> Use least privileged access <br> Assume breach |

@@ -32,12 +32,18 @@ Each successive level drives up attacker costs, with additional level of Defende
 
 Each role in your environment should be mapped to one of these levels (and optionally increased over time as part of a security improvement plan).  Each profile is clearly defined as a technical configuration and automated where possible to ease deployment and speed up security protections. For implementation details see the article, [Privileged access roadmap](security-rapid-modernization-plan.md).
 
+## Security levels
+
 The security levels used throughout this strategy are:
+
+### Enterprise
 
 - **Enterprise security** is suitable for all enterprise users and productivity scenarios. In the progression of the rapid modernization plan, enterprise also serves as the starting point for specialized and privileged access as they progressively build on the security controls in enterprise security.
 
    > [!NOTE]
    > Weaker security configurations do exist, but aren't recommended by Microsoft for enterprise organizations today because of the skills and resources attackers have available. For information on what attackers can buy from each other on the dark markets and average prices, see the video [Top 10 Best Practices for Azure Security](https://techcommunity.microsoft.com/t5/video-hub/top-10-best-practices-for-azure-security/m-p/1698837)
+
+### Specialized
 
 - **Specialized security** provides increased security controls for roles with an elevated business impact (if compromised by an attacker or malicious insider).
 
@@ -52,6 +58,8 @@ The security levels used throughout this strategy are:
    - **Sensitive IT Admins** with a significant privileges and impact, but are not enterprise-wide. This group typically includes administrators of individual high impact workloads. (for example, enterprise resource planning administrators, banking administrators, help desk /tech support roles, etc.)
 
    Specialized Account security also serves as an interim step for privileged security, which further builds on these controls. See [privileged access roadmap](security-rapid-modernization-plan.md) for details on recommended order of progression.
+
+## Privileged
 
 - **Privileged security** is the highest level of security designed for roles that could easily cause a major incident and potential material damage to the organization in the hands of an attacker or malicious insider. This level typically includes technical roles with administrative permissions on most or all enterprise systems (and sometimes includes a select few business critical roles)
 

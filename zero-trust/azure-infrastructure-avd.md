@@ -27,7 +27,7 @@ For more information about how to apply the principles of Zero Trust across an A
 
 ## Reference architecture
 
-In this article, we'll use the following reference architecture for Hub and Spoke to demonstrate a commonly deployed environment and how to apply the principles of Zero Trust for Azure Virtual Desktop with users’ access over the Internet. [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) architecture is also supported in addition to private access over a managed network with [RDP Shortpath for Azure Virtual Desktop](/azure/virtual-desktop/rdp-shortpath?tabs=managed-networks).
+In this article, we use the following reference architecture for Hub and Spoke to demonstrate a commonly deployed environment and how to apply the principles of Zero Trust for Azure Virtual Desktop with users’ access over the Internet. [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) architecture is also supported in addition to private access over a managed network with [RDP Shortpath for Azure Virtual Desktop](/azure/virtual-desktop/rdp-shortpath?tabs=managed-networks).
 
 :::image type="content" source="media/avd/ref-arch-avd.png" alt-text="Diagram of the reference architecture for Azure Virtual Desktop." lightbox="media/avd/ref-arch-avd.png":::
 
@@ -45,7 +45,7 @@ The Azure environment for Azure Virtual Desktop includes:
 
 Users or admins that access the Azure environment can originate from the internet, office locations, or on-premises datacenters.
 
-This reference architecture aligns to the architecture described in the [Enterprise-scale landing zone for Azure Virtual Desktop](/azure/cloud-adoption-framework/scenarios/wvd/enterprise-scale-landing-zone) Cloud Adoption Framework.
+The reference architecture aligns to the architecture described in the [Enterprise-scale landing zone for Azure Virtual Desktop](/azure/cloud-adoption-framework/scenarios/wvd/enterprise-scale-landing-zone) Cloud Adoption Framework.
 
 ## Logical architecture
 
@@ -57,23 +57,23 @@ The elements of the logical architecture are:
 
 - Azure subscription for your Azure Virtual Desktop
 
-  You can distribute the resources in more than one subscription, where each subscription may hold different roles, such as network subscription, or security subscription. This is described in [Cloud Adoption Framework and Azure Landing Zone](/azure/cloud-adoption-framework/scenarios/wvd/enterprise-scale-landing-zone). The different subscriptions may also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you will have in each. One or more subscriptions can be managed together using a Management Group. This will give you the ability to apply permissions with RBAC and Azure policies to a group of subscriptions instead of setting up each subscription individually.
+  You can distribute the resources in more than one subscription, where each subscription may hold different roles, such as network subscription, or security subscription. This is described in [Cloud Adoption Framework and Azure Landing Zone](/azure/cloud-adoption-framework/scenarios/wvd/enterprise-scale-landing-zone). The different subscriptions may also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you have in each. One or more subscriptions can be managed together using a Management Group. This gives you the ability to apply permissions with RBAC and Azure policies to a group of subscriptions instead of setting up each subscription individually.
 
 - Azure Virtual Desktop resource group
 
-  A separate resource group for a Key Vault and service objects are isolated with an Azure Virtual Desktop resource group.
+  An Azure Virtual Desktop resource group isolates Key Vault and service objects.
 
 - Storage resource group
 
-  Resources provided by the Azure Files service private endpoints and data sets are isolated with a storage resource group.
+  A storage resource group isolates Azure Files service private endpoints and data sets.
 
 - Session host virtual machines resource group
 
-  The virtual machines for their session hosts and an Application Security Group are isolated with a dedicated resource group.
+  A dedicated resource group isolates the virtual machines for their session hosts and an Application Security Group.
 
 - Spoke VNet resource group
 
-  The spoke VNet resources and a Network Security Group are isolated within a dedicated resource group, which can then be managed by networking specialists in your organization.
+  A dedicated resource group isolates the spoke VNet resources and a Network Security Group, which networking specialists in your organization can manage.
 
 ## What’s in this article?
 
@@ -94,7 +94,7 @@ This article walks through the steps to apply the principles of Zero Trust acros
 To apply Zero Trust principles to the identities used in Azure Virtual Desktop:
 
 - Azure Virtual Desktop supports different types of [identities](/azure/virtual-desktop/prerequisites#supported-identity-scenarios). Use the information in [Securing identity with Zero Trust](/security/zero-trust/deploy/identity) to ensure that your chosen identity types adhere to Zero Trust principles.
-- Create a dedicated user account with least privileges that you will need to join session hosts to an Azure AD DS or AD DS domain during session host [deployment](/azure/virtual-desktop/prerequisites#deployment-parameters).
+- Create a dedicated user account with least privileges to join session hosts to an Azure AD DS or AD DS domain during session host [deployment](/azure/virtual-desktop/prerequisites#deployment-parameters).
 
 ## Step 2. Secure your endpoints with Zero Trust
 
@@ -118,7 +118,7 @@ Implement the steps in [Apply Zero Trust principles to Storage in Azure](azure-i
 
 A hub VNet is a central point of connectivity for multiple spoke virtual networks. Implement the steps in [Apply Zero Trust principles to a hub virtual network in Azure](azure-infrastructure-networking.md) for the hub VNet being used to filter outbound traffic from your session hosts.
 
-A spoke VNet isolates the Azure Virtual Desktop workload and contains the session host virtual machines. Implement the steps in [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md) for the spoke VNet that contain the session host/virtual machines.
+A spoke VNet isolates the Azure Virtual Desktop workload and contains the session host virtual machines. Implement the steps in [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md) for the spoke VNet that contains the session host/virtual machines.
 
 Isolate different host pools on separate VNets using [NSG](/azure/virtual-network/network-security-groups-overview) with the required URL necessary for Azure Virtual Desktop. Azure Firewall or a network virtual appliance (NVA) firewall can be used to control and restrict outbound traffic for Azure Virtual Desktop session hosts.
 

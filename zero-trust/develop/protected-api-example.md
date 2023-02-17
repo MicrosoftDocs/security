@@ -17,14 +17,14 @@ Let's take a look at how an API that is protected by the Microsoft identity plat
 
 ## Naming convention for permission names
 
-The Microsoft Graph team created a naming convention for permission names to make it easier to connect the permission to the resource access that the permission enables. [Microsoft Graph permission names](/graph/permissions-reference#microsoft-graph-permission-names) adhere to a simple *resource.operation.constraint* pattern. The two primary operations are *Read* and *ReadWrite* (which includes update and delete).
+The Microsoft Graph team created a naming convention for permission names to make it easier to connect the permission to the resource access that the permission enables. [Microsoft Graph permission names](/graph/permissions-reference#microsoft-graph-permission-names) adhere to a simple *resource.operation.constraint* pattern. The two primary operations are *Read* and *ReadWrite* (which includes update and delete).
 
-The *constraint* element affects the degree of access that your app has within the directory. Microsoft Graph supports these constraints:
+The *constraint* element affects the degree of access that your app has within the directory. Microsoft Graph supports these constraints:
 
-- *All* grants permission for your app to perform the operations on all of the resources of the specified type in a directory.
-- *Shared* grants permission for your app to perform the operations on resources that other users have shared with the signed-in user.
-- *AppFolder* grants permission for your app to read and write files in a dedicated folder in OneDrive. This constraint is exposed only on the [Files permissions](/graph/permissions-reference#files-permissions) object and is only valid for Microsoft accounts.
-- If you specify *No constraint*, your app can only perform the operations on the resources that the signed-in user owns.
+- *All* grants permission for your app to perform the operations on all of the resources of the specified type in a directory.
+- *Shared* grants permission for your app to perform the operations on resources that other users have shared with the signed-in user.
+- *AppFolder* grants permission for your app to read and write files in a dedicated folder in OneDrive. This constraint is exposed only on the [Files permissions](/graph/permissions-reference#files-permissions) object and is only valid for Microsoft accounts.
+- If you specify *No constraint*, your app can only perform the operations on the resources that the signed-in user owns.
 
 ## Access and operations against specific resources
 
@@ -77,10 +77,10 @@ As demonstrated in the [Requesting permissions that require administrative conse
 ## Next steps
 
 - [Calling an API from another API](api-calls-api.md) helps you to ensure Zero Trust when you have one API that needs to call another API and securely develop your application when it's working on behalf of a user.
-- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
+- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
-- [Requesting permissions that require administrative consent](permissions-require-admin-consent.md) describes the permission and consent experience when application permissions will require administrative consent.
+- [Requesting permissions that require administrative consent](permissions-require-admin-consent.md) describes the permission and consent experience when application permissions will require administrative consent.
 - In this [Quickstart: Protect a web API with the Microsoft identity platform](/azure/active-directory/develop/web-api-quickstart?pivots=devlang-aspnet), download and run a code sample that demonstrates how to protect an ASP.NET web API.
 - In this [Tutorial - Transform and protect your API in Azure API Management](/azure/api-management/transform-api), learn about configuring common policies to hide technology stack info and original URLs in the API HTTP response body.
 - [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.

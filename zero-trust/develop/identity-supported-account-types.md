@@ -97,6 +97,6 @@ As a developer, keep these considerations in mind when your application supports
 - [How and why apps are added to Azure AD](/azure/active-directory/develop/active-directory-how-applications-are-added) explains how application objects describe an application to Azure AD.
 - [Security best practices for application properties in Azure Active Directory](/azure/active-directory/develop/security-best-practices-for-app-registration) covers properties such as redirect URI, access tokens, certificates and secrets, application ID URI, and application ownership.
 - [Building apps with a Zero Trust approach to identity](identity.md) provides an overview of permissions and access best practices.
-- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
-- [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop using Zero Trust principles.
+- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
+- [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop using Zero Trust principles.
 - [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.

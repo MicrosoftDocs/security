@@ -244,9 +244,13 @@ The outbound connections are:
 
 ### Deploy application specific rules for application security groups
 
-Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here's an example diagram of using application security groups to define network traffic patterns in the network security groups.
+Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here's an example diagram of using application security groups to define network traffic patterns in the network security groups for a spoke VNet that is used along with a hub VNet. This is the recommended configuration.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.png" alt-text="Diagram of networking patterns for a three-tier web application." lightbox="media/spoke/azure-infra-spoke-tiers-6.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.png" alt-text="Diagram of networking patterns for a three-tier web application in a hub-spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-7.png":::
+
+As another example, here is a configuration for a stand-alone spoke VNet in which the Web Application Firewall is placed in the Application Gateway subnet of the spoke VNet.
+
+:::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.png" alt-text="Diagram of networking patterns for a three-tier web application in a standalone spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-6.png":::
 
 You need the following network security group rules:
 
@@ -258,7 +262,7 @@ You need the following network security group rules:
 6. Allowing traffic from the data tier load balancer to the data tier virtual machines (SQL 1433).
 7. Allowing traffic between data tier virtual machines (SQL 1433)
 
-Configure the SQL pattern first and then repeat the process with the remaining tiers. Here are the configurations for the rules that confine network traffic for a single application tier.
+Configure the SQL pattern first and then repeat the process with the remaining tiers. The following sections are the configurations for the rules that confine network traffic for a single application tier.
 
 #### Rule 5 - Allow traffic from app tier virtual machines to the data tier load balancer (SQL 1433)
 

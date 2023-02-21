@@ -353,7 +353,7 @@ Restrictive URL traffic management includes:
 
 The endpoints listed in the ProxyOverride list are limited to those endpoints needed to authenticate to Azure AD and access Azure or Office 365 management interfaces.  To extend to other cloud services, add their administration URL to the list. This approach is designed to limit access to the wider internet to protect privileged users from internet-based attacks. If this approach is deemed too restrictive, then consider using the approach described below for the privileged role.
 
-## Enable Microsoft Cloud Application Security, URLs restricted list to approved URLs (Allow most)
+## Enable Microsoft Defender for Cloud Apps, URLs restricted list to approved URLs (Allow most)
 
 In our roles deployment it is recommended that for Enterprise, and Specialized deployments, where a strict *deny all* web browsing is not desirable, that using the capabilities of a cloud access security broker (CASB) such as [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) be utilized to block access to risky, and questionable web sites. The solution addresses a simple way to block applications and websites that have been curated. This solution is similar to getting access to the block list from sites such as the Spamhaus Project who maintains [the Domain Block List (DBL)](https://www.spamhaus.org/dbl/): a good resource to use as an advanced set of rules to implement for blocking sites.
 

@@ -246,11 +246,11 @@ The outbound connections are:
 
 Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here's an example diagram of using application security groups to define network traffic patterns in the network security groups for a spoke VNet that is used along with a hub VNet. This is the recommended configuration.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.png" alt-text="Diagram of networking patterns for a three-tier web application." lightbox="media/spoke/azure-infra-spoke-tiers-6.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.png" alt-text="Diagram of networking patterns for a three-tier web application in a hub-spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-7.png":::
 
 As another example, here is a configuration for a stand-alone spoke VNet in which the Web Application Firewall is placed in the Application Gateway subnet of the spoke VNet.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.png" alt-text="Diagram of networking patterns for a three-tier web application." lightbox="media/spoke/azure-infra-spoke-tiers-6.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.png" alt-text="Diagram of networking patterns for a three-tier web application in a standalone spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-6.png":::
 
 You need the following network security group rules:
 

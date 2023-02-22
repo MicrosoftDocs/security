@@ -1,4 +1,4 @@
-- name: Security operations guidance
+- name: Implementing security operations
   href: index.yml
   items: 
     - name: Overview
@@ -10,18 +10,6 @@
           href: incident-response-overview.md
         - name: Planning
           href: incident-response-planning.md
-        - name: Responding to incidents
-          items:
-            - name: Implement Microsoft Sentinel and XDR for a Zero Trust approach
-              href: siem-xdr-overview.md
-            - name: Step 1. Set up XDR tools
-              href: setup-xdr-tools.md
-            - name: Step 2. Architect a Sentinel workspace
-              href: siem-workspace.md
-            - name: Step 3. Ingest data sources 
-              href: ingest-data-sources.md
-            - name: Step 4. Incident response tutorial
-              href: respond-incident.md
                
     - name: Playbooks
       items:

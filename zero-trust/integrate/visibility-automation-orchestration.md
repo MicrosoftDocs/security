@@ -1,7 +1,7 @@
 ---
 title: Visibility, automation, and orchestration Zero Trust integration overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Sentinel to help customers adopt a Zero Trust model and keep their organizations secure.
-ms.date: 09/17/2021
+ms.date: 02/22/2023
 ms.service: security
 author: janicericketts
 ms.author: jricketts

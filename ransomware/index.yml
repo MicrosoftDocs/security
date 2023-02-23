@@ -29,6 +29,7 @@ landingContent:
         - text: What is ransomware?
           url:  human-operated-ransomware.md
         - text: Backup and restore plan for ransomware
+          url: /azure/security/fundamentals/backup-plan-to-protect-against-ransomware
 
 # Card
   - title: Rapidly protect against ransomware and extortion

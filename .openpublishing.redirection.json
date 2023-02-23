@@ -183,7 +183,6 @@
          "redirect_url": "/operations/incident-response-playbook-compromised-malicious-app",
          "redirect_document_id": false
       },
-
       {
          "source_path": "compass/identity.md",
          "redirect_url": "/zero-trust/deploy/identity",
@@ -260,11 +259,6 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/incident-response-overview.md",
-        "redirect_url": "/operations/incident-response-overview",
-        "redirect_document_id": false
-      },
-      {
         "source_path": "compass/incident-response-process.md",
         "redirect_url": "/operations/incident-response-overview",
         "redirect_document_id": false
@@ -272,11 +266,6 @@
       {
         "source_path": "compass/incident-response-planning.md",
         "redirect_url": "/operations/incident-response-planning",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "compass/incident-response-playbook-compromised-malicious-app.md",
-        "redirect_url": "/operations/incident-response-playbook-compromised-malicious-app",
         "redirect_document_id": false
       },
       {
@@ -302,26 +291,6 @@
       {
         "source_path": "compass/protect-against-ransomware-phase3.md",
         "redirect_url": "/ransomware/protect-against-ransomware-phase3",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "compass/incident-response-playbook-password-spray.md",
-        "redirect_url": "/operations/incident-response-playbook-password-spray",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "compass/incident-response-playbook-phishing.md",
-        "redirect_url": "/operations/incident-response-playbook-phishing",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "compass/incident-response-playbooks.md",
-        "redirect_url": "/operations/incident-response-playbooks",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "compass/incident-response-playbook-app-consent.md ",
-        "redirect_url": "/operations/incident-response-playbook-app-consent",
         "redirect_document_id": false
       },
       {    

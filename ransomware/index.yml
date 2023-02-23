@@ -22,12 +22,13 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Human operated ransomware
+  - title: Ransomware
     linkLists:
       - linkListType: concept
         links:
         - text: What is ransomware?
           url:  human-operated-ransomware.md
+        - text: Backup and restore plan for ransomware
 
 # Card
   - title: Rapidly protect against ransomware and extortion

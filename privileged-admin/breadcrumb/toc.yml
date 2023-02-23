@@ -6,6 +6,6 @@
     href: /security
     topicHref: /security/index
     items:
-    - name: Ransomware guidance
-      href: /security/ransomware/
-      topicHref: /security/ransomware/human-operated-ransomware
+    - name: Securing privileged access
+      href: /security/privileged-admin/
+      topicHref: /security/privileged-admin/overview

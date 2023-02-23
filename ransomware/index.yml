@@ -1,0 +1,54 @@
+### YamlMime:Landing
+
+title: Ransomware and extortion # < 60 chars
+summary: Learn how to better protect your organization from ransomware and extortion  # < 160 chars
+
+metadata:
+  title: Ransomware and extortion # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to better protect your organization from ransomware and extortion  # Required; article description that is displayed in search results. < 160 chars.
+  services: na
+  ms.service: microsoft-365-security
+  ms.subservice:: m365d
+  ms.topic: landing-page # Required
+  ms.collection: na
+  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
+  ms.author: macapara #Required; microsoft alias of author; optional team alias.
+  ms.date: 02/02/2023 #Required; mm/dd/yyyy format.
+  
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Human operated ransomware
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: What is ransomware?
+          url:  human-operated-ransomware.md
+
+# Card
+  - title: Rapidly protect against ransomware and extortion
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+        - text: Overview
+          url: protect-against-ransomware.md
+        - text: Prepare your recovery plan
+          url: protect-against-ransomware-phase1.md
+        - text: Limit the scope of damage
+          url: protect-against-ransomware-phase2.md
+        - text: Make it hard to get in
+          url: protect-against-ransomware-phase3.md
+
+# Card
+  - title: DART ransomware resources
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: Microsoft DART ransomware approach 
+          url: incident-response-playbook-dart-ransomware-approach.md
+        - text: Microsoft DART ransomware case study
+          url: dart-ransomware-case-study.md

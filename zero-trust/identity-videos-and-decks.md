@@ -16,6 +16,9 @@ Identity and access management is critical to both security assurances as an acc
 
 The following videos provide guidance on identity and access management.
 
+>[!NOTE]
+>The following videos and slides were created on October 2019. 
+
 ## Part 1: Introduction - Identity Attacks & Key Capabilities (5:44 long)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q6Dr]
 
@@ -34,9 +37,6 @@ The following videos provide guidance on identity and access management.
 ## Part 6: General Guidance (2:38 long)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qbKi]
 
-## Next steps
-
-See the [Identity and access management](identity.md) and [Capabilities](identity-capabilities.md) topics.
 
 ## See also
 

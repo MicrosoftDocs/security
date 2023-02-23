@@ -25,7 +25,11 @@ ms.custom: cxdef-zt-ransomware
 
 # Microsoft DART ransomware approach and best practices
 
+<<<<<<<< HEAD:operations/incident-response-playbook-dart-ransomware-approach.md
 [Human-operated ransomware](/security/ransomware/human-operated-ransomware) is not a malicious software problem—it's a human criminal problem. The solutions used to address commodity problems aren't enough to prevent a threat that more closely resembles a nation-state threat actor who:
+========
+[Human-operated ransomware](human-operated-ransomware.md) is not a malicious software problem - it's a human criminal problem. The solutions used to address commodity problems aren't enough to prevent a threat that more closely resembles a nation-state threat actor who:
+>>>>>>>> compass-deprecate:ransomware/incident-response-playbook-dart-ransomware-approach.md
 
 - Disables or uninstalls your antivirus software before encrypting files
 - Disables security services and logging to avoid detection
@@ -110,7 +114,7 @@ An assessment of the current situation is critical to understanding the scope of
 
 #### What initially made you aware of the ransomware attack?
 
-If the initial threat was identified by IT staff—such as noticing backups being deleted, antivirus alerts, endpoint detection and response (EDR) alerts, or suspicious system changes—it is often possible to take quick decisive measures to thwart the attack, typically by disabling all inbound and outbound Internet communication. This may temporarily affect business operations, but that would typically be much less impactful than an adversary deploying ransomware.
+If the initial threat was identified by IT staff-such as noticing backups being deleted, antivirus alerts, endpoint detection and response (EDR) alerts, or suspicious system changes-it is often possible to take quick decisive measures to thwart the attack, typically by disabling all inbound and outbound Internet communication. This may temporarily affect business operations, but that would typically be much less impactful than an adversary deploying ransomware.
 
 If the threat was identified by a user call to the IT helpdesk, there may be enough advance warning to take defensive measures to prevent or minimize the effects of the attack. If the threat was identified by an external entity (like law enforcement or a financial institution), it is likely that the damage is already done, and you will see evidence in your environment that the threat actor has already gained administrative control of your network. This can range from ransomware notes, locked screens, or ransom demands.
 
@@ -124,9 +128,9 @@ Establishing the initial activity date and time is important because it helps na
 
 #### What logs are available, and is there any indication that the actor is currently accessing systems?
 
-Logs—such as antivirus, EDR, and virtual private network (VPN)—are an indicator of suspected compromise. Follow-up questions may include:
+Logs - such as antivirus, EDR, and virtual private network (VPN)-are an indicator of suspected compromise. Follow-up questions may include:
 
-- Are logs being aggregated in a Security Information and Event Management (SIEM) solution—such as [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/), Splunk, ArcSight, and others—and current? What is the retention period of this data?
+- Are logs being aggregated in a Security Information and Event Management (SIEM) solution-such as [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/), Splunk, ArcSight, and others-and current? What is the retention period of this data?
 - Are there any suspected compromised systems that are experiencing unusual activity?
 - Are there any suspected compromised accounts that appear to be actively used by the adversary?
 - Is there any evidence of active command and controls (C2s) in EDR, firewall, VPN, web proxy, and other logs?
@@ -176,7 +180,7 @@ Step 2: Preserve existing systems
 
 - Disable all privileged user accounts except for a small number of accounts used by your admins to assist in resetting the integrity of your AD DS infrastructure. If a user account is believed to be compromised, disable it immediately.
 - Isolate compromised systems from the network, but do not shut them off.
-- Isolate at least one known good domain controller in every domain—two is even better. Either disconnect them from the network or shut them down entirely. The object here is to stop the spread of ransomware to critical systems—identity being among the most vulnerable. If all your domain controllers are virtual, ensure that the virtualization platform's system and data drives are backed up to offline external media that is not connected to the network, in case the virtualization platform itself is compromised.
+- Isolate at least one known good domain controller in every domain-two is even better. Either disconnect them from the network or shut them down entirely. The object here is to stop the spread of ransomware to critical systems-identity being among the most vulnerable. If all your domain controllers are virtual, ensure that the virtualization platform's system and data drives are backed up to offline external media that is not connected to the network, in case the virtualization platform itself is compromised.
 - Isolate critical known good application servers, for example SAP, configuration management database (CMDB), billing, and accounting systems.
 
 These two steps can be done concurrently as new threat vectors are discovered. Disable those threat vectors and then try to find a known good system to isolate from the network.
@@ -187,7 +191,7 @@ Other tactical containment actions can include:
 
 - Deploy a Group Policy to the entire domain(s) that prevents privileged login (Domain Admins) to anything but domain controllers and privileged administrative-only workstations (if any).
 
-- Install all missing security updates for operating systems and applications. Every missing update is a potential threat vector that adversaries can quickly identify and exploit. Microsoft Defender for Endpoint's [Threat and Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) provides an easy way to see exactly what is missing—as well as the potential impact of the missing updates.
+- Install all missing security updates for operating systems and applications. Every missing update is a potential threat vector that adversaries can quickly identify and exploit. Microsoft Defender for Endpoint's [Threat and Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) provides an easy way to see exactly what is missing-as well as the potential impact of the missing updates.
 
   - For Windows 10 (or higher) devices, confirm that the current version (or n-1) is running on every device.
 
@@ -233,7 +237,7 @@ DART recommends implementing the following security recommendations and best pra
 
 Using the [PAM](/security/compass/privileged-access-access-model) (formerly known as the tiered administration model) enhances Azure AD's security posture. This involves:
 
-- Breaking out administrative accounts in a "planed" environment—one account for each level, usually four:
+  - Breaking out administrative accounts in a "planed" environment-one account for each level, usually four:
 
 - Control Plane (formerly Tier 0): Administration of domain controllers and other crucial identity services, such as Active Directory Federation Services (ADFS) or Azure AD Connect. This also includes server applications that require administrative permissions to AD DS, such as Exchange Server.
 
@@ -267,6 +271,7 @@ LAPS requires the AD DS schema to be extended to allow for the additional attrib
 
 You can get LAPS from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=46899).
 
+<<<<<<<< HEAD:operations/incident-response-playbook-dart-ransomware-approach.md
 ## Incident response playbooks
 
 Examine guidance for identifying and investigating these types of attacks:
@@ -282,6 +287,8 @@ Examine guidance for identifying and investigating these types of attacks:
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
 - [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
+========
+>>>>>>>> compass-deprecate:ransomware/incident-response-playbook-dart-ransomware-approach.md
 
 ## Additional ransomware resources
 
@@ -333,7 +340,7 @@ Microsoft Security team blog posts:
 
   Recommendations and best practices.
 
-- [Becoming resilient by understanding cybersecurity risks: Part 4—navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
+- [Becoming resilient by understanding cybersecurity risks: Part 4-navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   See the **Ransomware** section.
 
@@ -341,5 +348,5 @@ Microsoft Security team blog posts:
 
   Includes attack chain analyses of actual attacks.
 
-- [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [Ransomware response-to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)

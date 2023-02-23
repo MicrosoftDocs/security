@@ -24,17 +24,17 @@ ms.subservice:: m365d
 
 # Microsoft DART ransomware case study
 
-Human-operated ransomware continues to maintain its position as one of the most impactful cyberattack trends world-wide and is a significant threat that many organizations have faced in recent years. These attacks take advantage of network misconfigurations and thrive on an organization’s weak interior security. Although these attacks pose a clear and present danger to organizations and their IT infrastructure and data, they are a [preventable disaster](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/).
+Human-operated ransomware continues to maintain its position as one of the most impactful cyberattack trends world-wide and is a significant threat that many organizations have faced in recent years. These attacks take advantage of network misconfigurations and thrive on an organization's weak interior security. Although these attacks pose a clear and present danger to organizations and their IT infrastructure and data, they are a [preventable disaster](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/).
 
-The [Microsoft Detection and Response Team (DART)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. DART provides onsite reactive incident response and remote proactive investigations. DART leverages Microsoft’s strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
+The [Microsoft Detection and Response Team (DART)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. DART provides onsite reactive incident response and remote proactive investigations. DART leverages Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
 
 This article describes how DART investigated a recent ransomware incident with details on the attack tactics and detection mechanisms.
 
-See [Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) of DART’s guide to combatting human-operated ransomware for more information.
+See [Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) of DART's guide to combatting human-operated ransomware for more information.
 
 ## The attack
 
-DART leverages [incident response tools and tactics](incident-response-process.md) to identify threat actor behaviors for human operated ransomware. Public information regarding ransomware events focuses on the end impact, but rarely highlights the details of the operation and how threat actors were able to escalate their access undetected to discover, monetize, and extort.
+DART leverages incident response tools and tactics to identify threat actor behaviors for human operated ransomware. Public information regarding ransomware events focuses on the end impact, but rarely highlights the details of the operation and how threat actors were able to escalate their access undetected to discover, monetize, and extort.
 
 Here are some common techniques that attackers use for ransomware attacks based on [MITRE ATT&CK tactics](https://attack.mitre.org/).
  
@@ -56,17 +56,17 @@ Ransomware campaigns use well-known vulnerabilities for their initial entry, typ
 
 For this incident, DART was able to locate a device that had TCP port 3389 for RDP exposed to the Internet. This allowed threat actors to perform a brute-force authentication attack and gain the initial foothold.
 
-Defender for Endpoint used threat intelligence to determine that there were numerous sign-ins from known brute-force sources and displayed them in the Microsoft 365 Defender portal. Here’s an example.
+Defender for Endpoint used threat intelligence to determine that there were numerous sign-ins from known brute-force sources and displayed them in the Microsoft 365 Defender portal. Here's an example.
 
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-brute-force-sign-in.png" alt-text="An example of known brute-force sign-ins in the Microsoft 365 Defender portal.":::
 
 ## Reconnaissance
 
-Once the initial access was successful, environment enumeration and device discovery began. These activities allowed the threat actors to identify information about the organization’s internal network and target critical systems such as domain controllers, backup servers, databases, and cloud resources. After the enumeration and device discovery, the threat actors performed similar activities to identify vulnerable user accounts, groups, permissions, and software.
+Once the initial access was successful, environment enumeration and device discovery began. These activities allowed the threat actors to identify information about the organization's internal network and target critical systems such as domain controllers, backup servers, databases, and cloud resources. After the enumeration and device discovery, the threat actors performed similar activities to identify vulnerable user accounts, groups, permissions, and software.
 
 The threat actor leveraged Advanced IP Scanner, an IP address scanning tool, to enumerate the IP addresses used in the environment and perform subsequent port scanning. By scanning for open ports, the threat actor discovered devices that were accessible from the initially compromised device. 
 
-This activity was detected in Defender for Endpoint and used as an indicator of compromise (IoC) for further investigation. Here’s an example.
+This activity was detected in Defender for Endpoint and used as an indicator of compromise (IoC) for further investigation. Here's an example.
 
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-port-scan.png" alt-text="An example of port scanning in the Microsoft 365 Defender portal.":::
 
@@ -74,7 +74,7 @@ This activity was detected in Defender for Endpoint and used as an indicator of 
 
 After gaining initial access, the threat actors performed credential harvesting using the Mimikatz password retrieval tool and by searching for files containing “password” on initially compromised systems. These actions enabled the threat actors to access additional systems with legitimate credentials. In many situations, threat actors use these accounts to create additional accounts to maintain persistence after the initial compromised accounts are identified and remediated.  
 
-Here’s an example of the detected use of the Mimikatz in the Microsoft 365 Defender portal.
+Here's an example of the detected use of the Mimikatz in the Microsoft 365 Defender portal.
  
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-mimikatz.png" alt-text="An example of Mimikatz detection in the Microsoft 365 Defender portal":::
 
@@ -82,7 +82,7 @@ Here’s an example of the detected use of the Mimikatz in the Microsoft 365 Def
 
 Movement across endpoints can vary between different organizations, but threat actors commonly use different varieties of remote management software that already exists on the device. By utilizing methods of remote access that the IT department commonly uses in their day-to-day activities, threat actors can fly under the radar for extended periods of time. 
 
-Using Microsoft Defender for Identity, DART was able to map out the path that the threat actor took between devices, displaying the accounts that were used and accessed. Here’s an example.
+Using Microsoft Defender for Identity, DART was able to map out the path that the threat actor took between devices, displaying the accounts that were used and accessed. Here's an example.
  
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-threat-actor-path.png" alt-text="The path that the threat actor took between devices in Microsoft Defender for Identity.":::
 
@@ -92,7 +92,7 @@ To avoid detection, the threat actors used defense evasion techniques to avoid i
 
 The threat actor for this incident used PowerShell to disable real-time protection for Microsoft Defender on Windows 11 and Windows 10 devices and local networking tools to open TCP port 3389 and allow RDP connections. These changes decreased the chances of detection in an environment because they modified system services that detect and alert on malicious activity. 
 
-Defender for Endpoint, however, cannot be disabled from the local device and was able to detect this activity. Here’s an example.
+Defender for Endpoint, however, cannot be disabled from the local device and was able to detect this activity. Here's an example.
 
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-mde-detect-powershell.png" alt-text="An example of detecting the use of PowerShell to disable real-time protection for Microsoft Defender.":::
 
@@ -102,7 +102,7 @@ Persistence techniques include actions by threat actors to maintain consistent a
 
 The threat actors for this incident used the Sticky Keys hack because it allows for remote execution of a binary inside the Windows operating system without authentication. They then used this capability to execute a Command Prompt and perform further attacks. 
 
-Here’s an example of the detection of the Sticky Keys hack in the Microsoft 365 Defender portal.
+Here's an example of the detection of the Sticky Keys hack in the Microsoft 365 Defender portal.
 
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-detect-sticky-keys.png" alt-text="An example of detecting the Sticky Keys hack in the Microsoft 365 Defender portal.":::
 
@@ -125,7 +125,7 @@ Ransomware execution is one of the primary methods that a threat actor uses to m
 - Encrypt files, potentially specifying custom exclusions
 - Create a ransomware note 
 
-Here’s an example of a ransomware note.
+Here's an example of a ransomware note.
 
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-ransom-note-example.png" alt-text="An example of a ransomware note.":::
 
@@ -163,7 +163,7 @@ Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
-- [Backup and restore plan to protect against ransomware](backup-plan-to-protect-against-ransomware.md)
+- [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)

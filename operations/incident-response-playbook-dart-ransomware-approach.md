@@ -25,8 +25,7 @@ ms.custom: cxdef-zt-ransomware
 
 # Microsoft DART ransomware approach and best practices
 
-[Human-operated ransomware](/security/ransomware/human-operated-ransomware) is not a malicious software problem—it's a human criminal problem. The solutions used to address commodity problems aren't enough to prevent a threat that more closely resembles a nation-state threat actor who:
-
+[Human-operated ransomware](human-operated-ransomware.md) is not a malicious software problem - it's a human criminal problem. The solutions used to address commodity problems aren't enough to prevent a threat that more closely resembles a nation-state threat actor who:
 
 - Disables or uninstalls your antivirus software before encrypting files
 - Disables security services and logging to avoid detection
@@ -163,7 +162,7 @@ Here are DART's recommendations and best practices for containment and post-inci
 
 Containment can only happen once the analysis has determined what needs to be contained. In the case of ransomware, the adversary's goal is to obtain credentials that allow administrative control over a highly available server and then deploy the ransomware. In some cases, the threat actor identifies sensitive data and exfiltrates it to a location they control.
 
-Tactical recovery will be unique for your organization's environment, industry, and level of IT expertise and experience. The steps outlined below are recommended for short-term and tactical containment steps your organization can take. To learn more about for long-term guidance, see [securing privileged access](https://aka.ms/SPA). For a comprehensive view of ransomware and extortion and how to prepare and protect your organization, see [Human-operated ransomware](/security/ransomware/human-operated-ransomware).
+Tactical recovery will be unique for your organization's environment, industry, and level of IT expertise and experience. The steps outlined below are recommended for short-term and tactical containment steps your organization can take. To learn more about for long-term guidance, see [securing privileged access](https://aka.ms/SPA). For a comprehensive view of ransomware and extortion and how to prepare and protect your organization, see [Human-operated ransomware](human-operated-ransomware.md).
 
 The following containment steps can be done concurrently as new threat vectors are discovered.
 
@@ -268,24 +267,6 @@ LAPS requires the AD DS schema to be extended to allow for the additional attrib
 
 You can get LAPS from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=46899).
 
-<<<<<<<< HEAD:operations/incident-response-playbook-dart-ransomware-approach.md
-## Incident response playbooks
-
-Examine guidance for identifying and investigating these types of attacks:
-
-- [Phishing](incident-response-playbook-phishing.md)
-- [Password spray](incident-response-playbook-password-spray.md)
-- [App consent grant](incident-response-playbook-app-consent.md)
-
-## Incident response resources
-
-- [Overview](incident-response-overview.md) for Microsoft security products and resources for new-to-role and experienced analysts
-- [Planning](incident-response-planning.md) for your Security Operations Center (SOC)
-- [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
-- [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
-- [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
-========
->>>>>>>> compass-deprecate:ransomware/incident-response-playbook-dart-ransomware-approach.md
 
 ## Additional ransomware resources
 
@@ -296,7 +277,7 @@ Key information from Microsoft:
 - [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
-- [Microsoft DART ransomware case study](/security/ransomware/dart-ransomware-case-study)
+- [Microsoft DART ransomware case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
 

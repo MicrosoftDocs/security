@@ -17,6 +17,6 @@
     - name: Backup and restore plan for ransomware
       href: /azure/security/fundamentals/backup-plan-to-protect-against-ransomware 
     - name: DART approach to ransomware
-      href: incident-response-playbook-dart-ransomware-approach.md
+      href: /security/operations/incident-response-playbook-dart-ransomware-approach
     - name: DART ransomware case study
       href: dart-ransomware-case-study.md 

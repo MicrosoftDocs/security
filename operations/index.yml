@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Implementing security operations #< 60 chars
+title: Implementing security operations processes #< 60 chars
 summary: Learn how to implement security operations  # < 160 chars
 
 metadata:
-  title: Implementing security operations # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Implementing security operations processes # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn how to implement security operations.  # Required; article description that is displayed in search results. < 160 chars.
   services: na
   ms.service: microsoft-365-security
@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Implementing security operations
+  - title: Implementing security operations processes
     linkLists:
       - linkListType: overview
         links:

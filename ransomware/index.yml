@@ -49,6 +49,6 @@ landingContent:
       - linkListType: reference
         links:
         - text: Microsoft DART ransomware approach 
-          url: incident-response-playbook-dart-ransomware-approach.md
+          url: /security/operations/incident-response-playbook-dart-ransomware-approach
         - text: Microsoft DART ransomware case study
           url: dart-ransomware-case-study.md

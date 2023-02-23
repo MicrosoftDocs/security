@@ -154,11 +154,6 @@
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/incident-response-process.md",
-         "redirect_url": "/operations/incident-response-process",
-         "redirect_document_id": false
-      },
-      {
          "source_path": "compass/incident-response-playbooks.md",
          "redirect_url": "/operations/incident-response-playbooks",
          "redirect_document_id": false
@@ -261,11 +256,6 @@
       {
         "source_path": "compass/incident-response-process.md",
         "redirect_url": "/operations/incident-response-overview",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "compass/incident-response-planning.md",
-        "redirect_url": "/operations/incident-response-planning",
         "redirect_document_id": false
       },
       {

@@ -27,10 +27,12 @@ These initial series of five articles (including this introduction) show you how
 - [Azure storage](azure-infrastructure-storage.md)
 - [Virtual machines](azure-infrastructure-virtual-machines.md)
 - [Spoke virtual networks (VNets) for virtual machine-based workloads](azure-infrastructure-iaas.md)
-- [Hub VNets to support access to many workloads in Azure](azure-infrastructure-virtual-networking.md)
+- [Hub VNets to support access to many workloads in Azure](azure-infrastructure-networking.md)
+
+See [Apply Zero Trust principles to Azure Virtual Desktop](azure-infrastructure-avd.md) for additional guidance.
 
 > [!NOTE]
-> Additional articles will be added to this series in the future, including how organizations can apply a Zero Trust approach to applications, virtual desktops, data and DevOps services based on real IT business environments.
+> Additional articles will be added to this series in the future, including how organizations can apply a Zero Trust approach to applications, networking, data, and DevOps services based on real IT business environments.
 
 > [!IMPORTANT]
 > This Zero Trust guidance describes how to use and configure several security solutions and features available on Azure for a reference architecture. Several other resources also provide security guidance for these solutions and features, including:

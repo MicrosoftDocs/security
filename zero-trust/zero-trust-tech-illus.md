@@ -1,7 +1,7 @@
 ---
 title: Zero Trust illustrations for IT architects and implementers 
 description: Get the technical illustrations in the Zero Trust library to print or customize for your deployment.
-ms.date: 02/01/2023
+ms.date: 02/23/2023
 ms.service: security
 author: JoeDavies-TechWriter
 ms.author: v-joedavies
@@ -16,20 +16,20 @@ ms.collection:
 
 # Zero Trust illustrations for IT architects and implementers
 
-These posters and technical diagrams give you information about deployment and implementation steps to apply Zero Trust principles to Microsoft cloud services, including Microsoft 365 and Azure.
+These posters and technical diagrams give you information about deployment and implementation steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to Microsoft cloud services, including Microsoft 365 and Microsoft Azure.
 
 Zero Trust is a new security model that assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 
-As an IT architect or implementer, you can use these resources for deployment steps and reference and logical architectures. With these resources, you can more quickly apply adapt Zero Trust principles to your existing environment for these Microsoft cloud services:
+As an IT architect or implementer, you can use these resources for deployment steps, reference architectures, and logical architectures to more quickly apply Zero Trust principles to your existing environment for:
 
-- Microsoft 365
-- Azure IaaS
+- [Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)
+- [Azure IaaS](azure-infrastructure-overview.md)
 
 You can download these illustrations in the form of:
 
-- A PDF file to print for your IT department.
+- A PDF file for easier viewing, links to articles, and to print for your IT department.
 - If available, a Microsoft Visio file to modify the illustrations for your own use.
-- If available, a PowerPoint file for presentations and to modify slides for your own use.
+- If available, a Microsoft PowerPoint file for presentations and to modify the slides for your own use.
 
 To use the same set of icons and templates in the Visio or PowerPoint files, get the downloads in [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates).
 
@@ -66,17 +66,17 @@ This illustration provides a deployment plan for building Zero Trust security wi
 
 ### Zero Trust for Azure IaaS services
 
-This illustration shows the elements of Azure IaaS as reference and logical architectures, along with the steps to ensure that these elements have the "never trust, always verify" principles of the Zero Trust model applied.
+This illustration shows the components of Azure IaaS as reference and logical architectures, along with the steps to ensure that these components have the "never trust, always verify" principles of the Zero Trust model applied.
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Secure IaaS infrastructure in Azure overview and reference architecture](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke virtual networks (VNets)](azure-infrastructure-iaas.md)</li><li>[Hub Vnets](azure-infrastructure-networking.md)</li></ul>|
+|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Secure IaaS infrastructure in Azure overview and reference architecture](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke virtual networks (VNets)](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
 
 You can also download the technical diagrams used in the [Zero Trust for Azure IaaS series of articles](azure-infrastructure-overview.md) as an easier way of viewing the illustrations in the articles or to modify them for your own use.
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Secure IaaS infrastructure in Azure overview and reference architecture](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke virtual networks (VNets)](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
+|[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Secure IaaS infrastructure in Azure overview and reference architecture](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
 
 ### Zero Trust Identity and Device Access Policies
 

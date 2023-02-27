@@ -214,7 +214,7 @@
     - name: Data
       href: integrate/data.md
     - name: Infrastructure
-      href: /azure/defender-for-cloud/zero-trust/?toc=/security/zero-trust/integrate/TOC.json&bc=/security/zero-trust/breadcrumb/toc.json
+      href: integrate/infrastructure.md
     - name: Networks
       href: integrate/networks.md
     - name: Visibility, automation, and orchestration

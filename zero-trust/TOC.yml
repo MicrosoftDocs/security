@@ -182,7 +182,7 @@
 - name: Zero Trust deployment plans with Microsoft Azure and infrastructure
   expanded: false
   items: 
-    - name: Secure IaaS infrastructure in Azure
+    - name: Apply Zero Trust to Azure IaaS
       expanded: false
       items: 
       - name: Overview and reference architecture
@@ -195,7 +195,7 @@
         href: azure-infrastructure-iaas.md
       - name: Azure hub virtual networks
         href: azure-infrastructure-networking.md
-    - name: Secure PaaS infrastructure in Azure
+    - name: Apply Zero Trust to Azure PaaS
       expanded: false
       items: 
       - name: Azure Virtual Desktop
@@ -282,6 +282,8 @@
         href: develop/secure-dev-environment-zero-trust.md
       - name: Embed Zero Trust into developer workflow
         href: develop/embed-zero-trust-dev-workflow.md
+- name: Zero Trust illustrations for IT architects and implementers
+  href: zero-trust-tech-illus.md
 - name: Resources
   expanded: false
   items:

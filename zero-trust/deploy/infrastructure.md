@@ -118,8 +118,7 @@ From the tenant level down to the individual resources within each resource grou
 
 #### Configuration management of VMS and servers on which workloads are running
 
-Just as we have managed our on-prem data center environment, we must also ensure that we are effectively managing our cloud resources. The benefit of leveraging Azure is the ability to manage all your VMs from one platform using [Azure Arc](https://azure.microsoft.com/services/azure-arc/) (preview). Using Azure Arc, you can extend your Security Baselines from [Azure Policy](/azure/governance/policy/overview), your [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center)
-(Defender for Cloud) policies, and Secure Score evaluations, as well as logging and monitoring all your resources in one place. Below are some actions for getting started.
+Just as we have managed our on-prem data center environment, we must also ensure that we are effectively managing our cloud resources. The benefit of leveraging Azure is the ability to manage all your VMs from one platform using [Azure Arc](https://azure.microsoft.com/services/azure-arc/) (preview). Using Azure Arc, you can extend your Security Baselines from [Azure Policy](/azure/governance/policy/overview), your [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center) policies, and Secure Score evaluations, as well as logging and monitoring all your resources in one place. Below are some actions for getting started.
 
 
 ##### Implement [Azure Arc (preview)](https://azure.microsoft.com/services/azure-arc/)
@@ -131,8 +130,8 @@ Just as we have managed our on-prem data center environment, we must also ensure
 
 ##### Apply security baselines through Azure Policy, including application of in-guest policies
 
-By enabling [Defender for Cloud](/azure/security-center/security-center-get-started), you will be able to incorporate a set of baseline controls through [Azure Policy's built-in policy definitions for Microsoft Defender for Cloud](/azure/security-center/policy-samples).
-The set of baseline policies will be reflected in the [Defender for Cloud secure score](/azure/security-center/security-center-secure-score), where you can measure your compliance to those policies.
+By enabling [Defender for Cloud](/azure/security-center/security-center-get-started), you'll be able to incorporate a set of baseline controls through [Azure Policy's built-in policy definitions for Microsoft Defender for Cloud](/azure/security-center/policy-samples).
+The set of baseline policies will be reflected in the [Defender for Cloud secure score](/azure/security-center/security-center-secure-score), where you can measure your compliance with those policies.
 
 You can extend your coverage of policies beyond the Defender for Cloud set and create custom policies if a built-in is not available. You can also incorporate [Guest Configuration policies](/azure/governance/policy/how-to/guest-configuration-create) which will measure compliance inside your guest VMs within your subscriptions.
 
@@ -167,7 +166,7 @@ Once you've met the baseline infrastructure objectives, you can focus on impleme
 
 When you create new infrastructure, you need to ensure that you also establish rules for monitoring and raising alerts. This is key for identifying when a resource is displaying unexpected behavior. 
 
-**Enabling [Microsoft Defender for Cloud with Standard Tier](/azure/security-center/security-center-get-started) (Defender for Cloud)**, including the relevant bundles to cover your various resources (e.g., Container Registry, Kubernetes, IoT, Virtual Machines, etc.) is highly recommended.
+We recommend **enabling Microsoft Defender for Cloud and its [plans to protect the supported resource types](/azure/defender-for-cloud/defender-for-cloud-introduction)**, including [Defender for Servers](/azure/defender-for-cloud/plan-defender-for-servers-select-plan), [Defender for Storage](/azure/defender-for-cloud/defender-for-storage-introduction), [Defender for Containers](/azure/defender-for-cloud/defender-for-containers-introduction), [Defender for SQL](/azure/defender-for-cloud/quickstart-enable-database-protections), etc.
 
 For monitoring identities, we recommend **enabling [Microsoft Defender for Identity](/defender-for-identity/what-is) and [Advanced Threat Analytics](/advanced-threat-analytics/what-is-ata)** in order to enable signal collection to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 
@@ -179,7 +178,7 @@ Integrating these signals from Defender for Cloud, Defender for Identity, Advanc
 
 ### II. Every workload is assigned an app identity—and configured and deployed consistently
 
-Microsoft recommends customers use a [policy](/azure/governance/policy/tutorials/create-and-manage) that is assigned and enforced when creating resources/workloads. Policies can require tags be to applied to a resource upon creation, mandate resource group assignment, as well as restrict/direct technical characteristics, such as regions allowed, VM specifications (e.g., VM type, disks, network policies applied).
+We recommend you use a [policy](/azure/governance/policy/tutorials/create-and-manage) that is assigned and enforced when creating resources/workloads. Policies can require tags be to applied to a resource upon creation, mandate resource group assignment, as well as restrict/direct technical characteristics, such as regions allowed, VM specifications (e.g., VM type, disks, network policies applied).
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
@@ -239,7 +238,7 @@ Microsoft Azure offers many ways to segment workloads to manage user and resourc
 
 [Azure Arc](https://azure.microsoft.com/services/azure-arc)
 
-[Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center)
+[Microsoft Defender for Cloud](https://azure.microsoft.com/en-us/products/defender-for-cloud/)
 
 [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
 

@@ -25,18 +25,18 @@ ms.custom: cxdef-zt-ransomware
 
 # Compromised and malicious applications investigation
 
-This article provides guidance on identifying and investigating malicious attacks on one or more applications in a customer tenant. The step-by-step instructions will help you take the required remedial action to protect information and minimize further risks.
+This article provides guidance on identifying and investigating malicious attacks on one or more applications in a customer tenant. The step-by-step instructions helps you take the required remedial action to protect information and minimize further risks.
 
 - **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation. For example, logging that should be turned on, roles and permissions required, among others.
 - **Workflow:** Shows the logical flow that you should follow to perform this investigation.
 - **Investigation steps:** Includes a detailed step-by-step guidance for this specific investigation.
 - **Containment steps:** Contains steps on how to disable the compromised applications. 
 - **Recovery steps:** Contains high-level steps on how to recover/mitigate from a malicious attack on compromised applications.
-- **References:** Contains additional reading and reference materials.
+- **References:** Contains other reading and reference materials.
 
 ## Prerequisites
 
-Before starting the investigation, make sure you have the correct tools and permissions to gather detailed information on the applications that you suspect to be compromised by the malicious attack.
+Before starting the investigation, make sure you have the correct tools and permissions to gather detailed information.
 
 - To leverage Identity protection signals, the tenant must be licensed for Azure Active Directory (Azure AD) Premium P2.
   - Understanding of the [Identity Protection risk concepts](/azure/active-directory/identity-protection/concept-identity-protection-risks)
@@ -84,13 +84,13 @@ For an effective investigation, install the following PowerShell module and the 
 
 ## Investigation steps
 
-For this investigation, it is assumed that you either have a indication for a potential application compromise in the form of a user report, Azure AD sign-in logs example, or Identity protection detection. Make sure to complete and enable all required prerequisite steps.
+For this investigation, it's assumed that you either have an indication for a potential application compromise in the form of a user report, Azure AD sign-in logs example, or Identity protection detection. Make sure to complete and enable all required prerequisite steps.
 
-This playbook is created with the intention that not all Microsoft customers and their investigation teams will have the full Microsoft 365 E5 or Azure AD Premium P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
+This playbook is created with the intention that not all Microsoft customers and their investigation teams have the full Microsoft 365 E5 or Azure AD Premium P2 license suite available or configured. We'll however highlight other automation capabilities when appropriate.
 
 ### Determine application type
 
-It is important to determine the type of application (multi or single tenant) early in the investigation phase to get the correct information needed to reach out to the application owner. For more information, see [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps).
+It's important to determine the type of application (multi or single tenant) early in the investigation phase to get the correct information needed to reach out to the application owner. For more information, see [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
 #### Multi-tenant applications
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/owners
 
 ### Check Identity Protection - risky workload identities
 
-This feature is in preview at the time of writing this playbook and licensing requirements will apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but can also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Microsoft Graph API.
+This feature is in preview at the time of writing this playbook and licensing requirements apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but can also be used to further investigate into other triggers you may have identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Microsoft Graph API.
 
 :::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal_2.png" alt-text="Risk Detection portal":::
 
@@ -120,9 +120,9 @@ This feature is in preview at the time of writing this playbook and licensing re
 
 The first step of the investigation is to look for evidence of unusual authentications patterns in the usage of the Service Principal. Within the Azure portal, Azure Monitor, Azure Sentinel, or the Security Information and Event Management (SIEM) system of your organization's choice, look for the following in the **Service principal sign-ins** section:
 
-- Location - is the Service Principal authenticating from locations\IP addresses that you would not expect?
-- Failures - are there a large number of authentication failures for the Service Principal?
-- Timestamps - are there successful authentications that are occurring at times that you would not expect?
+- Location - is the Service Principal authenticating from locations\IP addresses that you wouldn't expect?
+- Failures - 's there a large number of authentication failures for the Service Principal?
+- Timestamps - are there successful authentications that are occurring at times that you wouldn't expect?
 - Frequency - is there an increased frequency of authentications for the Service Principal?
 - Leak Credentials - are any application credentials hard coded and published on a public source like GitHub?
 
@@ -141,7 +141,7 @@ Use Audit logs to get information on credential changes on applications and serv
 - Check whether there are newly created or unexpected credentials assigned to the service principal.
 - Check for credentials on Service Principal using Microsoft Graph API.
 - Check both the application and associated service principal objects.
-- Check any [custom role](/azure/active-directory/roles/custom-enterprise-apps) that maybe have been created or modified. Note the permissions marked below:
+- Check any [custom role](/azure/active-directory/roles/custom-enterprise-apps) that may have been created or modified. Note the permissions marked below:
 
 :::image type="content" source="./media/compromised-malicious-apps/CustomRolesToCheck.png" alt-text="Check custom roles that may be created or modified":::
 
@@ -160,7 +160,7 @@ Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/iden
 
 - Check the API permissions assigned to the app to ensure that the permissions are consistent with what is expected for the app.
 - Check Audit logs (filter **Activity** by **Update Application** or **Update Service Principal**).
-- Confirm whether the connection strings are consistent and whether has the sign-out URL has been modified.
+- Confirm whether the connection strings are consistent and whether has the sign out URL has been modified.
 - Confirm whether the domains in the URL are in-line with those registered.
 - Determine whether anyone has added an unauthorized redirect URL.
 - Confirm ownership of the redirect URI that you own to ensure it did not expire and was claimed by an adversary.
@@ -181,7 +181,7 @@ Also, if you have deployed Microsoft Defender for Cloud Apps, check the Azure po
 
 Review your tenant for potential keyCredential property information disclosure as outlined in [CVE-2021-42306](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42306).
 
-To identify and remediate impacted Azure AD applications associated with impacted Automation Run-As accounts, please navigate to the [remediation guidance Github Repo](https://github.com/microsoft/aad-app-credential-tools/blob/main/azure-automation/azure-automation-runas-credential-remediation.md). 
+To identify and remediate impacted Azure AD applications associated with impacted Automation Run-As accounts, please navigate to the [remediation guidance GitHub Repo](https://github.com/microsoft/aad-app-credential-tools/blob/main/azure-automation/azure-automation-runas-credential-remediation.md). 
 
 >[!Important]
 >**Evidence of compromise:**
@@ -191,9 +191,9 @@ There are two primary methods of gaining access to systems via the use of applic
 
 The second method involves an already compromised administrator account creating a new app for the purposes of persistence, data collection and to stay under the radar. For example, an OAuth app could be created by a compromised administrator with a seemingly innocuous name, avoiding detection and allowing long term access to data without the need for an account. This is often seen in nation state attacks.
 
-Below are some of the steps which can be taken to investigate further. 
+Below are some of the steps that can be taken to investigate further. 
 
-### Check M365 Unified Audit Log (UAL) for phishing indications for the past 7 days
+### Check Microsoft 365 Unified Audit Log (UAL) for phishing indications for the past seven days
 
 Sometimes, when attackers use malicious or compromised applications as a means of persistence or to exfiltrate data, a phishing campaign is involved. Based on the findings from the previous steps, you should review the identities of:
 
@@ -456,7 +456,7 @@ If you disable or if you soft delete the application, set up monitoring in Azure
 - IP country
 - Credential type
 
-When this detection is fired, the account is marked as high risk because this can indicate account takeover for the subject application. Note that the legitimate changes to an application’s configuration will sometimes trigger this detection. 
+When this detection is fired, the account is marked as high risk because this can indicate account takeover for the subject application. The legitimate changes to an application’s configuration will sometimes trigger this detection. 
 
 For more information, see [Securing workload identities with Identity Protection](/azure/active-directory/identity-protection/concept-workload-identity-risk).
 

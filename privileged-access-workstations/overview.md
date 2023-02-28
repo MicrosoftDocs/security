@@ -12,6 +12,7 @@ author: MicrosoftGuyJFlo
 manager: amycolannino
 ms.reviewer: mas
 ---
+
 # Securing privileged access
 
 Organizations should make securing privileged access the top security priority because of the significant potential business impact (and high likelihood) of attackers compromising this level of access.

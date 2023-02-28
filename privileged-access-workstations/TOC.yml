@@ -1,5 +1,6 @@
 - name: Securing privileged administration
   href: overview.md
+  expanded: true
   items: 
     - name: Privileged access strategy
       href: privileged-access-strategy.md

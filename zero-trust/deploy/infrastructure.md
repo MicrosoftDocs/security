@@ -238,7 +238,7 @@ Microsoft Azure offers many ways to segment workloads to manage user and resourc
 
 [Azure Arc](https://azure.microsoft.com/services/azure-arc)
 
-[Microsoft Defender for Cloud](https://azure.microsoft.com/en-us/products/defender-for-cloud/)
+[Microsoft Defender for Cloud](https://azure.microsoft.com/products/defender-for-cloud/)
 
 [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)
 

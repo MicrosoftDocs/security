@@ -36,7 +36,7 @@ In the diagram:
 
 - The storage account for the reference architecture is contained in a dedicated resource group. You can isolate each storage account in a different resource group for more granular role-based access controls (RBAC). You can assign RBAC permissions to manage the storage account at the resource group or resource group level and audit these with Azure Active Directory (Azure AD) logging and tools such as Privileged Identity Management (PIM). If you're running multiple applications or workloads with multiple corresponding storage accounts in one Azure subscription, it is important to limit each storage account's RBAC permissions to its corresponding owners, data custodians, controllers, etc.
 - Azure storage services for this diagram are contained within a dedicated storage account. You can have one storage account for each type of storage workload.
-- For a broader look at the reference architecture, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
+- For a broader look at the reference architecture, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
 The diagram doesn't include Azure Queues and Azure Tables. Use the same guidance in this article to secure these resources.
 
@@ -168,7 +168,7 @@ Defender for Storage detects anomalous access pattern alerts such as:
 - Access Inspection
 - Data Exploration
 
-For more information about threat protection across the reference architecture, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
+For more information about threat protection across the reference architecture, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
 Once enabled, Defender for Storage notifies you of security alerts and recommendations for improving the security posture of your Azure storage accounts.
 
@@ -194,7 +194,24 @@ For more training on security in Azure, see these resources in the Microsoft cat
 - [Apply Zero Trust principles to virtual machines in Azure](azure-infrastructure-virtual-machines.md)
 - [Apply Zero Trust principles to spoke virtual networks in Azure](azure-infrastructure-iaas.md)
 - [Apply Zero Trust principles to hub virtual networks in Azure](azure-infrastructure-networking.md)
-  
+
+## Technical illustrations
+
+This poster provides a single-page, at-a-glance view of the components of Azure IaaS as reference and logical architectures, along with the steps to ensure that these components have the "never trust, always verify" principles of the Zero Trust model applied.
+
+| Item | Description |
+|:-----|:-----|
+|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
+
+
+This poster provides the reference and logical architectures and the detailed configurations of the separate components of Zero Trust for Azure IaaS. Use the pages of this poster for separate IT departments or specialties or, with the Microsoft Visio version of the file, customize the diagrams for your infrastructure.
+
+| Item | Description |
+|:-----|:-----|
+|[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
+
+For additional technical illustrations, click [here](zero-trust-tech-illus.md).
+
 ## References
 
 Refer to the links below to learn about the various services and technologies mentioned in this article.

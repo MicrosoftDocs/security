@@ -23,7 +23,7 @@ This article provides steps to apply the [principles of Zero Trust](zero-trust-o
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | <ul><li> Isolate the components of an Azure Virtual Desktop deployment. </li><li> Storage: Use Defender for Storage for automated threat detection and protection. </li><li> VNets: Prevent traffic flows between workloads with Azure Firewall. </li><li> Virtual machines: Use double encryption for end-to-end encryption, enable encryption at host, secure maintenance for virtual machines, and Microsoft Defender for Servers for threat detection. </li><li> 	Azure Virtual Desktop: Use Azure Virtual Desktop security, governance, management, and monitoring features to improve defenses and collect session host analytics. </li></ul>
  |
 
-For more information about how to apply the principles of Zero Trust across an Azure IaaS environment, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
+For more information about how to apply the principles of Zero Trust across an Azure IaaS environment, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
 ## Reference architecture
 
@@ -192,7 +192,7 @@ For more training on security in Azure, see these resources in the Microsoft cat
 
 See these additional articles for applying Zero Trust principles to Azure IaaS:
 
-- [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md)
+- [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md)
 - [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md)
 - [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md)
 - [Apply Zero Trust principles to a spoke virtual network in Azure](azure-infrastructure-iaas.md)

@@ -1,6 +1,6 @@
 ---
-title: Apply Zero Trust principles to a hub virtual network in Azure 
-description: Learn how to secure a hub virtual network for IaaS workloads with Zero Trust.  
+title: Apply Zero Trust principles to hub virtual networks in Azure 
+description: Learn how to secure hub virtual networks for IaaS workloads with Zero Trust.  
 ms.date: 02/09/2023
 ms.service: security
 author: brsteph
@@ -26,11 +26,11 @@ This article describes how to deploy a hub VNet for Zero Trust by mapping the [p
 | Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Each spoke VNet has no access to other spoke VNets unless the traffic gets routed through the firewall. The firewall is set to deny by default, allowing only traffic allowed by specified rules. |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | In the event of a compromise or breach of one application/workload, it has limited ability to spread due to the Azure Firewall performing traffic inspection and only forwarding allowed traffic. Only resources in the same workload would be exposed to the breach in the same application. |
 
-This article is a part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes a hub VNet to support an IaaS workload. For more information, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
+This article is a part of a series of articles that demonstrate how to apply the principles of Zero Trust across an environment in Azure that includes a hub VNet to support an IaaS workload. For more information, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
 ## Reference architecture
 
-The following diagram shows the reference architecture. The hub VNet is highlighted in red. For more information about this architecture, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
+The following diagram shows the reference architecture. The hub VNet is highlighted in red. For more information about this architecture, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
 :::image type="content" source="media/hub/azure-infra-hub-architecture-1.png" alt-text="The Zero Trust for Azure reference architecture with the hub VNet highlighted." lightbox="media/hub/azure-infra-hub-architecture-1.png":::
 
@@ -352,6 +352,23 @@ For more training on security in Azure, see these resources in the Microsoft cat
 - [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md)
 - [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md)
 - [Apply Zero Trust principles to spoke virtual networks in Azure](azure-infrastructure-iaas.md)
+
+## Technical illustrations
+
+This poster provides a single-page, at-a-glance view of the components of Azure IaaS as reference and logical architectures, along with the steps to ensure that these components have the "never trust, always verify" principles of the Zero Trust model applied.
+
+| Item | Description |
+|:-----|:-----|
+|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li></ul>|
+
+
+This poster provides the reference and logical architectures and the detailed configurations of the separate components of Zero Trust for Azure IaaS. Use the pages of this poster for separate IT departments or specialties or, with the Microsoft Visio version of the file, customize the diagrams for your infrastructure.
+
+| Item | Description |
+|:-----|:-----|
+|[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li></ul>|
+
+For additional technical illustrations, click [here](zero-trust-tech-illus.md).
 
 ## References
 

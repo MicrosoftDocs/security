@@ -11,7 +11,7 @@ ms.custom: template-concept
 ---
 # Developing delegated permissions strategy
 
-This article will help you, as a developer, to implement the best approach for managing permissions in your application and [develop using Zero Trust principles](overview.md). As described in [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md), *delegated permissions* are used with delegated access to allow an application to act on behalf of a user, accessing only what the user can access. *Application permissions* are used with direct access to allow an application to access any data with which the permission is associated. Only administrators and owners of [service principals](/azure/active-directory/develop/active-directory-how-applications-are-added#what-are-service-principals-and-where-do-they-come-from) can consent to application permissions.
+This article will help you, as a developer, to implement the best approach for managing permissions in your application and [develop using Zero Trust principles](overview.md). As described in [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md), *delegated permissions* are used with delegated access to allow an application to act on behalf of a user, accessing only what the user can access. *Application permissions* are used with direct access to allow an application to access any data with which the permission is associated. Only administrators and owners of [service principals](/azure/active-directory/develop/active-directory-how-applications-are-added#what-are-service-principals-and-where-do-they-come-from) can consent to application permissions.
 
 The permission and consent models refer primarily to an application. The permission and consent process has no control over what a user can do. It controls what actions the application is allowed to perform.
 
@@ -113,7 +113,7 @@ function getTokenPopup(request) {
                         console.error(error);
                     });
             } else {
-                console.warn(error);   
+                console.warn(error);
             }
     });
 }
@@ -127,7 +127,7 @@ A primary step in an enterprise's journey to Zero Trust is to adopt stronger aut
 
 ## Next steps
 
-- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
+- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.
 - [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.

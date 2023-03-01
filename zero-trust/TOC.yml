@@ -182,7 +182,7 @@
 - name: Zero Trust deployment plans with Microsoft Azure and infrastructure
   expanded: false
   items: 
-    - name: Secure IaaS infrastructure in Azure
+    - name: Apply Zero Trust to Azure IaaS
       expanded: false
       items: 
       - name: Overview and reference architecture
@@ -195,7 +195,7 @@
         href: azure-infrastructure-iaas.md
       - name: Azure hub virtual networks
         href: azure-infrastructure-networking.md
-    - name: Secure PaaS infrastructure in Azure
+    - name: Apply Zero Trust to Azure PaaS
       expanded: false
       items: 
       - name: Azure Virtual Desktop
@@ -244,12 +244,14 @@
         href: develop/identity.md
       - name: App integration
         href: develop/integrate-apps-with-azure-ad-microsoft-identity-platform.md
+      - name: App registration
+        href: develop/app-registration.md
       - name: Identity and account types for apps
         href: develop/identity-supported-account-types.md
+      - name: User authentication
+        href: develop/user-authentication.md
       - name: Resource access authorization
         href: develop/acquire-application-authorization-to-access-resources.md
-      - name: Secure apps with Continuous Access Evaluation
-        href: develop/secure-with-cae.md
       - name: Delegated permissions
         href: develop/developer-strategy-delegated-permission.md
       - name: Application permissions
@@ -262,6 +264,8 @@
         href: develop/identity-non-user-applications.md
       - name: Token customization
         href: develop/zero-trust-token-customization.md
+      - name: Secure apps with Continuous Access Evaluation
+        href: develop/secure-with-cae.md
       - name: Group claims and app roles in tokens
         href: develop/configure-tokens-group-claims-app-roles.md
       - name: API protection
@@ -282,6 +286,8 @@
         href: develop/secure-dev-environment-zero-trust.md
       - name: Embed Zero Trust into developer workflow
         href: develop/embed-zero-trust-dev-workflow.md
+- name: Zero Trust illustrations for IT architects and implementers
+  href: zero-trust-tech-illus.md
 - name: Resources
   expanded: false
   items:

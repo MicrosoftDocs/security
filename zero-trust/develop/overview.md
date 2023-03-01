@@ -1,17 +1,16 @@
 ---
 title: Develop using Zero Trust principles
 description: As a developer, learn how to implement the guiding principles of Zero Trust so that you can improve your application security.
-ms.date: 08/19/2022
+ms.date: 12/13/2022
 ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.custom: template-concept
 # Customer intent: As a developer, I want to learn how to implement the guiding principles of Zero Trust so that I can improve your application security.
 ---
 # Develop using Zero Trust principles
 
-This article will help you, as a developer, to understand the guiding principles of Zero Trust so that you can improve your application security. You play a key role in organizational security; applications and their developers can no longer assume that the network perimeter is secure. Compromised applications can affect the entire organization.
+This article helps you, as a developer, to understand the guiding principles of Zero Trust so that you can improve your application security. You play a key role in organizational security; applications and their developers can no longer assume that the network perimeter is secure. Compromised applications can affect the entire organization.
 
 Organizations are deploying new security models that adapt to complex modern environments and embrace the mobile workforce. New models are designed protect people, devices, applications, and data wherever they're located. Organizations are striving to achieve [Zero Trust](../zero-trust-overview.md), a security strategy and approach for designing and implementing applications that follow these guiding principles:
 
@@ -29,7 +28,7 @@ Understand that Zero Trust isn't a replacement for security fundamentals. With w
 * The "work from anywhere" workforce has redefined the security perimeter. Data is being accessed outside the corporate network and shared with external collaborators such as partners and vendors.
 * Corporate applications and data are moving from on-premises to hybrid and cloud environments. Traditional network controls can no longer be relied on for security. Controls need to move to where the data is: on devices and inside apps.
 
-The development guidance in this section will help you to increase security, reduce the blast radius of a security incident, and swiftly recover by using Microsoft technology.
+The development guidance in this section helps you to increase security, reduce the blast radius of a security incident, and swiftly recover by using Microsoft technology.
 
 ## Next steps
 
@@ -44,24 +43,26 @@ The development guidance in this section will help you to increase security, red
 
 ### Permissions and access
 
-* [Building apps with a Zero Trust approach to identity](identity.md) provides an overview of permissions and access best practices.
+* [Building apps that secure identity through permissions and consent](identity.md) provides an overview of permissions and access best practices.
 * [Integrating applications with Azure AD and the Microsoft identity platform](integrate-apps-with-azure-ad-microsoft-identity-platform.md) helps developers to build and integrate apps that IT pros can secure in the enterprise by securely integrate apps with Azure Active Directory (Azure AD) and the Microsoft identity platform.
+* [Registering applications](app-registration.md) introduces developers to the application registration process and its requirements. It helps them to ensure that apps satisfy Zero Trust principles of use least privileged access and assume breach.
 * [Supported identity and account types for single- and multi-tenant apps](identity-supported-account-types.md) explains how you can choose if your app allows only users from your Azure Active Directory (Azure AD) tenant, any Azure AD tenant, or users with personal Microsoft accounts.
+* [Authenticating users for Zero Trust](user-authentication.md) helps developers to learn best practices for authenticating application users in Zero Trust application development. It describes how to enhance application security with the Zero Trust principles of least privilege and verify explicitly.
 * [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
-* [Securing applications with Continuous Access Evaluation](secure-with-cae.md) helps developers to improve application security with Continuous Access Evaluation. Learn how to [ensure Zero Trust support](overview.md) in your apps that receive authorization to access resources when they acquire access tokens from Azure Active Directory (Azure AD).
 * [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop using Zero Trust principles.
 * [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.
-* [Requesting permissions that require administrative consent](permissions-require-admin-consent.md) describes the permission and consent experience when application permissions will require administrative consent.
+* [Requesting permissions that require administrative consent](permissions-require-admin-consent.md) describes the permission and consent experience when application permissions require administrative consent.
 * [Reducing overprivileged permissions and apps](overprivileged-permissions.md) helps you to understand why applications shouldn't request more permissions than they need (overprivileged) and how to limit privilege to manage access and improve security.
 * [Providing application identity credentials when there's no user](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (non-user applications) on Azure is Managed Identities for Azure resources.
-* [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
-* [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
+* [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how you can customize tokens.
+* [Securing applications with Continuous Access Evaluation](secure-with-cae.md) helps developers to improve application security with Continuous Access Evaluation. Learn how to [ensure Zero Trust support](overview.md) in your apps that receive authorization to access resources when they acquire access tokens from Azure Active Directory (Azure AD).
+* [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups.
 * [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
-* [Calling an API from another API](api-calls-api.md) helps you to ensure Zero Trust when you have one API that needs to call another API and securely develop your application when it's working on behalf of a user.
 * [Example of API protected by Microsoft identity consent framework](protected-api-example.md) helps you to design least privilege application permissions strategies for the best user experience.
+* [Calling an API from another API](api-calls-api.md) helps you to ensure Zero Trust when you have one API that needs to call another API. You'll learn how to securely develop your application when it's working on behalf of a user.
 * [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.
 
-### Zero Trust DevSecOps
+## Zero Trust DevSecOps
 
 * [Securing DevOps environments for Zero Trust](secure-devops-environments-zero-trust.md) describes best practices for securing your DevOps environments with a Zero Trust approach to prevent hackers from compromising developer boxes, infecting release pipelines with malicious scripts, and gaining access to production data via test environments.
 * [Securing the DevOps platform environment](secure-devops-platform-environment-zero-trust.md) helps you to implement Zero Trust principles in your DevOps platform environment and highlights best practices for secret and certificate management.

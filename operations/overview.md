@@ -27,8 +27,4 @@ SecOps (sometimes referred to as a Security Operations Center (SOC)) has a criti
 
 
 
-## Implementing a modern security operation
-
-CROSS LINK TO THE WORK THAT RAYNE AND TEAM ARE BUILDING - MODERNIZE SECURITY OPERATIONS
-
 

@@ -36,20 +36,18 @@ Using AI and machine learning, the XDR then performs automatic analysis, investi
 
 This guidance helps you mature your Zero Trust architecture by mapping the principles of Zero Trust in the following ways.    
 
-### NEED HELP!
 
-|     Zero   Trust Principle             |     Met by      |
-|----------------------------------------|-----------------|
-|     Verify   explicitly                |                 |
-|     Use least   privileged access      |                 |
-|     Assume   breach                    |                 |
+
+|       Zero Trust Principle         |                                                                                                                                                                                                                                                                                                            Met by                                                                                                                                                                                                                                                                                                          |
+|------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Verify explicitly              |   Sentinel - Collects data from across the environment, performs analysis of threats and anomalies, and can respond with automation.  <br><br>   Microsoft 365 Defender - Provides extended detection and response across users, identities, devices, apps, and emails.  Risk-based signals captured by Microsoft  365 Defender can be used by Sentinel to take actions.                                                                                                                                                                                                                                                           |
+|     Use least privileged access    |   Threat Intelligence with Sentinel - Sentinel can import threat intelligence data from Microsoft or third-party providers to detect new, emerging threats and provide extra context for investigations.  <br><br>   Microsoft 365 Defender has Azure Active Directory Identity Protection  which can block users based on the level of risk with identity.  Data can be fed into Sentinel for further analysis and automation.                                                                                                                                                                                                    |
+|     Assume breach                  |   Microsoft 365 Defender continuously scans the environment for threats and vulnerabilities.       Sentinel analyzes collected data, behavioral trend of entities to detect suspicious activity, anomalies and multi-stage threats across enterprise.   <br><br>  Sentinel has workbook visualizations that can help organizations harden the environment, such as: Zero Trust workbook.   <br><br>  Microsoft 365 Defender and Sentinel can implement automated remediation tasks, including automated investigations, device isolation, and data quarantine.     Device risk can be used as a signal to feed into Conditional Access.    |
+|                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 
 ## Reference architecture
-### NEED HELP!
-JUST FOR ILLUSTRATION PURPOSES ONLY !!! / PLACEHOLDER:
 
-![Image of Microsoft Sentinel and XDR architecture](./media/sentinel-xdr.png)
 
 
 JUST FOR ILLUSTRATION PURPOSES / PLACEHOLDER:
@@ -90,9 +88,22 @@ Capability or feature | Description | Licensing
 | [Device response capabilities](/microsoft-365/security/defender-endpoint/respond-machine-alerts) | Quickly respond to detected attacks by isolating devices or collecting an investigation package | E5
 | [Live response](/microsoft-365/security/defender-endpoint/live-response) |Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. | E5?
 |[Vulnerability management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management)| Leveraging Microsoft threat intelligence, breach likelihood predictions, business contexts, and devices assessments, Defender Vulnerability Management rapidly and continuously prioritizes the biggest vulnerabilities on your most critical assets and provides security recommendations to mitigate risk. | E5?
-| | | 
-| | | 
-| | | 
+| User and Entity Behavioral Analytics (UEBA |Analyzes behavior of an organization entities (such as users, hosts, iP Addresses, applications)  | Included
+| Fusion |A correlation engine based on scalable machine learning algorithms, to automatically detect multistage attacks (also known as advanced persistent threats or APT) by identifying combinations of anomalous behaviors and suspicious activities that are observed at various stages of the kill chain.  | 
+|Threat Intelligence  |Use Microsoft of 3rd-party providers to enrich data to provide extra context around activities, alerts, logs in your environment  | 
+| Automation |Automation rules are a way to centrally manage automation in Microsoft Sentinel, by allowing you to define and coordinate a small set of rules that can apply across different scenarios.  | 
+|Anomaly Rules  |Anomaly rule templates use machine learning to detect specific types of anomalous behavior.  | 
+|Scheduled queries  | Built-in rules written by Microsoft security experts that search through logs collected by Sentinel for suspicious activity chains, known threats. | 
+|Near-real-time(NRT) rules  | NRT rules are limited set of scheduled rules, designed to run once every minute, in order to supply you with information as up-to-the-minute as possible.  | 
+|Hunting | To help security analysts look proactively for new anomalies that weren't detected by your security apps or even by your scheduled analytics rules, Microsoft Sentinel's built-in hunting queries guide you into asking the right questions to find issues in the data you already have on your network. | 
+| Microsoft 365 Defender Connector | Microsoft 365 Defender Connector sync logs and incidents to Sentinel| 
+|Data Connectors  |Allow for the ingestion of data for analysis into sentinel  | 
+|Content hub solution -Zero Trust (TIC 3.0)   | Zero Trust (TIC 3.0)  includes a workbook, analytics rules, and a playbook, which provide an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, helping organizations to monitor configurations over time. | 
+|Security Orchestration, Automation, and Response (SOAR)   |Leverage automation rules and playbooks in response to security threats increases your SOC's effectiveness and saves you time and resources. | Playbooks incur additional costs 
+
+
+
+
 
 
 ## What's in this solution

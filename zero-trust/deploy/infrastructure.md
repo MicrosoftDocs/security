@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 :::image type="icon" source="../media/icon-infrastructure-medium.png":::
 
-Infrastructure represents a critical threat vector. IT Infrastructure, whether on-premises or multi-cloud, is defined as all the hardware (physical, virtual, containerized), software (open source, first- and third-party, PaaS, SaaS), micro-services (functions, APIs), networking infrastructure, facilities, etc. that are required to develop, test, deliver, monitor, control, or support IT services. It is an area where Microsoft has invested tremendous resources to develop a comprehensive set of capabilities to secure your future cloud and on-premises infrastructure.
+Infrastructure represents a critical threat vector. IT Infrastructure, whether on-premises or multicloud, is defined as all the hardware (physical, virtual, containerized), software (open source, first- and third-party, PaaS, SaaS), micro-services (functions, APIs), networking infrastructure, facilities, and so on, that is required to develop, test, deliver, monitor, control, or support IT services. It's an area where Microsoft has invested tremendous resources to develop a comprehensive set of capabilities to secure your future cloud and on-premises infrastructure.
 
 Modern security with an end-to-end Zero Trust strategy makes it easier for you to: 
 
@@ -24,9 +24,9 @@ Modern security with an end-to-end Zero Trust strategy makes it easier for you t
 
 Just as importantly, Microsoft Azure Blueprints and related capabilities ensure that resources are designed, implemented, and sustained in ways that conform to an organization's policies, standards, and requirements.
 
-Azure Blueprints, Azure Policies, Microsoft Defender for Cloud, Microsoft Sentinel, and Azure Sphere can greatly contribute to improving the security of your deployed infrastructure and enable a different approach to defining, designing, provisioning, deploying, and monitoring your infrastructure.
+Azure Blueprints, Azure Policies, Microsoft Defender for Cloud, Microsoft Sentinel, and Azure Sphere can greatly contribute to improving the security of your deployed infrastructure. Together, they enable a different approach to defining, designing, provisioning, deploying, and monitoring your infrastructure.
 
-:::image type="content" source="../media/diagram-infrastructure-5-elements-white-background.png" alt-text="A repeating circular diagram of 5 elements: Assess compliance, Observe gaps, Author, Test, and Deploy." border="false":::
+:::image type="content" source="../media/diagram-infrastructure-5-elements-white-background.png" alt-text="A repeating circular diagram of five elements: Assess compliance, Observe gaps, Author, Test, and Deploy." border="false":::
 
 
 ## Infrastructure Zero Trust deployment objectives
@@ -57,7 +57,7 @@ Azure Blueprints, Azure Policies, Microsoft Defender for Cloud, Microsoft Sentin
    </tr>
    <tr>
       <td colspan="2">
-         <p>After these are completed, focus on these <b>additional deployment objectives</b>:</p>
+         <p>After the initial objectives are completed, focus on these <b>additional deployment objectives</b>:</p>
       </td>
    </tr>
    <tr>
@@ -74,13 +74,13 @@ Azure Blueprints, Azure Policies, Microsoft Defender for Cloud, Microsoft Sentin
 
 ## Infrastructure Zero Trust deployment guide
 
-This guide will walk you through the steps required to secure your infrastructure following the principles of a Zero Trust security framework.
+This guide walks you through the steps required to secure your infrastructure following the principles of a Zero Trust security framework.
 
 Before you get started, ensure you've met these baseline infrastructure deployment objectives.  
   
 <div class="alert">
    <p><b>Setting the Microsoft Tenant Baseline</b></p>
-   <p>A prioritized baseline should be set for how your Infrastructure is managed. Leveraging industry guidance such as NIST 800-53, you can derive a set of requirements for managing your infrastructure. At Microsoft, we have set a minimal baseline to the following list of requirements:</p>
+   <p>A prioritized baseline should be set for how your Infrastructure is managed. Applying industry guidance such as NIST 800-53, you can derive a set of requirements for managing your infrastructure. At Microsoft, we have set a minimal baseline to the following list of requirements:</p>
    <ul>
       <li>
          <p>Access to data, networks, services, utilities, tools, and applications must be controlled by authentication and authorization mechanisms.</p>
@@ -104,7 +104,7 @@ Before you get started, ensure you've met these baseline infrastructure deployme
          <p>Vulnerability scans must be performed, and vulnerabilities remediated, according to prescribed organizational guidance.</p>
       </li>
    </ul>
-   <p>In order to measure and drive compliance to this minimal—or our expanded—baseline, we start with getting visibility at the Tenant level, and across your on-prem environments, by applying a Security Reader role across the Azure Tenant. With the Security Reader role in place, it can gain additional visibility through Microsoft Defender for Cloud and Azure Policies that can be used to apply industry baselines (e.g., Azure CIS, PCI, ISO 27001) or a custom baseline that your organization has defined.</p>
+   <p>In order to measure and drive compliance to this minimal—or our expanded—baseline, we start with getting visibility at the Tenant level, and across your on-premises environments, by applying a Security Reader role across the Azure Tenant. With the Security Reader role in place, it can gain further visibility through Microsoft Defender for Cloud and Azure Policies that can be used to apply industry baselines (for example, Azure CIS, PCI, ISO 27001) or a custom baseline that your organization has defined.</p>
 </div>
 
 
@@ -118,12 +118,12 @@ From the tenant level down to the individual resources within each resource grou
 
 #### Configuration management of VMS and servers on which workloads are running
 
-Just as we have managed our on-prem data center environment, we must also ensure that we are effectively managing our cloud resources. The benefit of leveraging Azure is the ability to manage all your VMs from one platform using [Azure Arc](https://azure.microsoft.com/services/azure-arc/) (preview). Using Azure Arc, you can extend your Security Baselines from [Azure Policy](/azure/governance/policy/overview), your [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center) policies, and Secure Score evaluations, as well as logging and monitoring all your resources in one place. Below are some actions for getting started.
+Just as we've managed our on-prem data center environment, we must also ensure that we're effectively managing our cloud resources. The benefit of leveraging Azure is the ability to manage all your VMs from one platform using [Azure Arc](https://azure.microsoft.com/services/azure-arc/) (preview). Using Azure Arc, you can extend your Security Baselines from [Azure Policy](/azure/governance/policy/overview), your [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center) policies, and Secure Score evaluations, as well as logging and monitoring all your resources in one place. Below are some actions for getting started.
 
 
 ##### Implement [Azure Arc (preview)](https://azure.microsoft.com/services/azure-arc/)
 
-[Azure Arc](https://azure.microsoft.com/services/azure-arc/) allows organizations to extend the familiar security controls of Azure to on-premises and the edge of the organization's infrastructure. Administrators have several options for connecting on-premises resources to Azure Arc. These include Azure Portal, PowerShell, and Windows Installation with Service Principal scripting. 
+[Azure Arc](https://azure.microsoft.com/services/azure-arc/) allows organizations to extend the familiar security controls of Azure to on-premises and the edge of the organization's infrastructure. Administrators have several options for connecting on-premises resources to Azure Arc. These include Azure portal, PowerShell, and Windows Installation with Service Principal scripting. 
 
 [Learn more about these techniques](/azure/azure-arc/).
 
@@ -133,12 +133,12 @@ Just as we have managed our on-prem data center environment, we must also ensure
 By enabling [Defender for Cloud](/azure/security-center/security-center-get-started), you'll be able to incorporate a set of baseline controls through [Azure Policy's built-in policy definitions for Microsoft Defender for Cloud](/azure/security-center/policy-samples).
 The set of baseline policies will be reflected in the [Defender for Cloud secure score](/azure/security-center/security-center-secure-score), where you can measure your compliance with those policies.
 
-You can extend your coverage of policies beyond the Defender for Cloud set and create custom policies if a built-in is not available. You can also incorporate [Guest Configuration policies](/azure/governance/policy/how-to/guest-configuration-create) which will measure compliance inside your guest VMs within your subscriptions.
+You can extend your coverage of policies beyond the Defender for Cloud set and create custom policies if a built-in isn't available. You can also incorporate [Guest Configuration policies](/azure/governance/policy/how-to/guest-configuration-create), which measure compliance inside your guest VMs within your subscriptions.
 
 
 ##### Apply Defender for Cloud Endpoint Protection and Vulnerability Management controls
 
-Endpoint protection is essential to ensuring infrastructure remains secure and available. As part of any endpoint protection and vulnerability management strategy, you will be able to measure compliance centrally to ensure malware protection is enabled and configured through the [Endpoint protection assessment and recommendations in Microsoft Defender for Cloud](/azure/security-center/security-center-endpoint-protection). 
+Endpoint protection is essential to ensuring infrastructure remains secure and available. As part of any strategy for endpoint protection and vulnerability management, you'll be able to measure compliance centrally to ensure malware protection is enabled and configured through the [Endpoint protection assessment and recommendations in Microsoft Defender for Cloud](/azure/security-center/security-center-endpoint-protection). 
 
 
 <div class="alert">
@@ -178,7 +178,7 @@ Integrating these signals from Defender for Cloud, Defender for Identity, Advanc
 
 ### II. Every workload is assigned an app identity—and configured and deployed consistently
 
-We recommend you use a [policy](/azure/governance/policy/tutorials/create-and-manage) that is assigned and enforced when creating resources/workloads. Policies can require tags be to applied to a resource upon creation, mandate resource group assignment, as well as restrict/direct technical characteristics, such as regions allowed, VM specifications (e.g., VM type, disks, network policies applied).
+We recommend you use a [policy](/azure/governance/policy/tutorials/create-and-manage) that is assigned and enforced when creating resources/workloads. Policies can require tags be to applied to a resource upon creation, mandate resource group assignment, and restrict/direct technical characteristics, such as regions allowed, VM specifications (for example, VM type, disks, network policies applied).
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
@@ -209,14 +209,14 @@ Once you've accomplished your initial three objectives, you can focus on additio
 
 ### IV. Unauthorized deployments are blocked, and alert is triggered
 
-When organizations move to the cloud, the possibilities are limitless. That's not always a good thing. For a variety of reasons, organizations need to be able to block unauthorized deployments and trigger alerts to make leaders and managers aware of the issues.
+When organizations move to the cloud, the possibilities are limitless. That's not always a good thing. For various reasons, organizations need to be able to block unauthorized deployments and trigger alerts to make leaders and managers aware of the issues.
 
-Microsoft Azure offers [Azure Blueprints](/azure/governance/blueprints/overview) to govern how resources are deployed, ensuring that only approved resources (e.g., ARM templates) can be deployed. Blueprints can ensure that resources which do not meet the Blueprint's policies or other rules are blocked from deployment. Actual or attempted Blueprint violation can raise alerts as needed and make notifications, activate webhooks or automation runbooks, or even create service management tickets.
+Microsoft Azure offers [Azure Blueprints](/azure/governance/blueprints/overview) to govern how resources are deployed, ensuring that only approved resources (for example, ARM templates) can be deployed. Blueprints can ensure that resources which do not meet the Blueprint's policies or other rules are blocked from deployment. Actual or attempted Blueprint violation can raise alerts as needed and make notifications, activate webhooks or automation runbooks, or even create service management tickets.
 
 
 ### V. Granular visibility and access control are available across workloads
 
-Microsoft Azure offers a variety of methods to achieve resource [visibility](https://aka.ms/ZTCrossPillars). From the Azure Portal, resource owners can set up many metric and log collection and analysis capabilities. This visibility can be used not only to feed security operations but can also to support computing efficiency and organizational objectives. These include capabilities like [VM Scale Sets](/azure/virtual-machine-scale-sets/overview), which allow for the secure and efficient scaling out and scaling in of resources based on metrics.
+Microsoft Azure offers a variety of methods to achieve resource [visibility](https://aka.ms/ZTCrossPillars). From the Azure Portal, resource owners can set up many metric and log collection and analysis capabilities. This visibility can be used not only to feed security operations but can also to support computing efficiency and organizational objectives. These include capabilities like [Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/overview), which allow for the secure and efficient scaling out and scaling in of resources based on metrics.
 
 On the access control side, [Role-Based Access Control (RBAC)](/azure/role-based-access-control/overview) can be employed to assign permissions to resources. This allows permissions to be assigned and revoked uniformly at the individual and group levels by using a variety of built-in or custom roles.
 

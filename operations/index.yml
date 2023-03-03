@@ -1,0 +1,58 @@
+### YamlMime:Landing
+
+title: Implementing security operations processes #< 60 chars
+summary: Learn how to implement security operations processes  # < 160 chars
+
+metadata:
+  title: Implementing security operations processes # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to implement security operations.  # Required; article description that is displayed in search results. < 160 chars.
+  services: na
+  ms.service: microsoft-365-security
+  ms.subservice:: m365d
+  ms.topic: landing-page # Required
+  ms.collection: na
+  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
+  ms.author: macapara #Required; microsoft alias of author; optional team alias.
+  ms.date: 02/15/2023 #Required; mm/dd/yyyy format.
+  
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Implementing security operations processes
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Security operations overview
+          url:  overview.md
+
+# Card
+  - title: Incident response
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Overview
+          url: incident-response-overview.md
+        - text: Planning
+          url: incident-response-planning.md
+        - text: Playbooks
+          url: incident-response-playbooks.md
+
+ # Card (optional)
+  - title: Security operations guides
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Integrating Microsoft 365 Defender into your security operations
+          url: /microsoft-365/security/defender/integrate-microsoft-365-defender-secops
+        - text: Microsoft Defender for Office 365 security operations guide
+          url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
+        - text: Azure Active Directory security operations guide
+          url: /azure/active-directory/fundamentals/security-operations-introduction
+
+
+
+

@@ -16,6 +16,7 @@ Organizations may differ in terms of where they are in the Zero Trust journey. T
 First, you'll be guided through some conceptual information on the following technology components to help you better understand how they relate to Zero Trust: 
 
 - [Identity](identity.md)
+- [Endpoints](endpoints.md)
 - [Applications](applications.md)
 - [Data](data.md)
 - [Infrastructure](infrastructure.md)

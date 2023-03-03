@@ -12,15 +12,15 @@ ms.service: microsoft-365-security
 
 #Step 3. Ingest data sources and configure incident detection
 
-After you’ve completed designing and implementing your Microsoft Sentinel workspaces, you can proceed to ingest data sources and configure incident detection.
+After you've completed designing and implementing your Microsoft Sentinel workspaces, you can proceed to ingest data sources and configure incident detection.
 
 Data connectors are configured to enable data ingestion into the workspace. After enabling key data points to be ingested into Sentinel, UEBA and Analytic Rules must also be enabled to capture anomalous and malicious activities; furthermore, Analytic Rules dictate how Alerts and Incidents are generated in your Sentinel instance.
 
 ## Before you begin
 
-You’ll need to confirm the installation method, roles required, and licenses needed to turn on data connectors. For more information, see [Find your Microsoft Sentinel data connector \| Microsoft Learn](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference).
+Confirm the installation method, roles required, and licenses needed to turn on data connectors. For more information, see [Find your Microsoft Sentinel data connector \| Microsoft Learn](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference).
 
-The following table is a summary of the prerequisites required for key Azure and Microsoft data connectors:
+The following table is a summary of the prerequisites required for key Azure and data connectors:
 
 <table>
 <colgroup>
@@ -122,7 +122,7 @@ The following table is a summary of the prerequisites required for key Azure and
 
 ## Step 1. Turn on data connectors
 
-To get started with configuring data connectors, we recommend the following:
+Use the following recommendations to get started with configuring data connectors:
 
 1.  Focus on setting up with free data sources to ingest:
 
@@ -134,7 +134,7 @@ To get started with configuring data connectors, we recommend the following:
 
     3.  Security alerts, including alerts from Microsoft Defender for Cloud, Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Identity, and Microsoft Defender for Endpoint:
 
-        1.  Ingesting security alerts into Sentinel enables it to be the “central pane of incident management” across the environment.
+        1.  Ingesting security alerts into Sentinel enables it to be the "central pane of incident management" across the environment.
 
         2.  Incident investigation starts in Sentinel and should continue in the M365D or Defender for Cloud, if deeper analysis is required.
 
@@ -164,7 +164,7 @@ The following table lists the free data sources you can enable in Microsoft Sent
 2.  To provide broader monitoring and alerting coverage, focus on the following data connectors:
 
 >[!NOTE]
->There’s a charge for ingesting data from the sources listed in the section
+>There's a charge for ingesting data from the sources listed in the section
 
 1.  Azure Active Directory
 
@@ -176,7 +176,7 @@ The following table lists the free data sources you can enable in Microsoft Sent
 
             1.  Fusion correlates data sources from multiple products to detect multi-stage attacks across the environment
 
-        2.  Longer Retention than what’s offered in Microsoft 365 Defender
+        2.  Longer Retention than what's offered in Microsoft 365 Defender
 
         3.  Automation not covered by the built-in remediations offered by Microsoft Defender for Endpoint
 
@@ -201,7 +201,7 @@ The following table lists the free data sources you can enable in Microsoft Sent
 
 
 
-4.  For virtual machines hosted on-prem or in other clouds that require their logs collected, use:
+4.  For virtual machines hosted on-premises or in other clouds that require their logs collected, use:
 
     1.  Windows Security Events using AMA
 
@@ -211,7 +211,7 @@ The following table lists the free data sources you can enable in Microsoft Sent
 
     4.  Syslog connector
 
-5.  For Network Virtual Appliances or other on-prem sources that generate CEF or SYSLOG logs, use the following connector:
+5.  For Network Virtual Appliances or other on-premises sources that generate CEF or SYSLOG logs, use the following connector:
 
     1.  Common Event Format (CEF) via AMA
 
@@ -241,9 +241,9 @@ Data Sources required:
 
 -   Security Events
 
--   Signin Logs
+-   Sign in Logs
 
-Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organization’s entities across time and peer group to identify anomalous activity. This added utility will aid in an expedition of determining if an asset has been compromised. Since it identifies peer group association this can also aid in determining the blast radius of said compromise.
+Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organization's entities across time and peer group to identify anomalous activity. This added utility aids in an expedition of determining if an asset has been compromised. Since it identifies peer group association this can also aid in determining the blast radius of said compromise.
 
 **Leveraging Microsoft Security suite with [Fusion technology to detect Ransomware](https://learn.microsoft.com/en-us/azure/sentinel/fusion#fusion-for-ransomware).**
 

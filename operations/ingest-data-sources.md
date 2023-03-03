@@ -1,6 +1,6 @@
 ---
-title: Architect SIEM workspace
-description: Architect SIEM workspace
+title: Ingest data sources and configure incident detection
+description: Learn how to ingest data srouces and configure incident detection in Sentinel 
 ms.author: macapara
 author: mjcaparas
 localization_priority: Normal
@@ -10,7 +10,7 @@ ms.service: microsoft-365-security
 ---
 
 
-#Step 3. Ingest data sources and configure incident detection
+# Step 3. Ingest data sources and configure incident detection
 
 After you've completed designing and implementing your Microsoft Sentinel workspaces, you can proceed to ingest data sources and configure incident detection.
 
@@ -18,7 +18,7 @@ Data connectors are configured to enable data ingestion into the workspace. Afte
 
 ## Before you begin
 
-Confirm the installation method, roles required, and licenses needed to turn on data connectors. For more information, see [Find your Microsoft Sentinel data connector \| Microsoft Learn](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference).
+Confirm the installation method, roles required, and licenses needed to turn on data connectors. For more information, see [Find your Microsoft Sentinel data connector \| Microsoft Learn](/azure/sentinel/data-connectors-reference).
 
 The following table is a summary of the prerequisites required for key Azure and data connectors:
 
@@ -142,7 +142,7 @@ Use the following recommendations to get started with configuring data connector
 
     5.  For more information, visit:
 
-        1.  [https://learn.microsoft.com/en-us/azure/sentinel/billing?tabs=commitment-tier#free-data-sources](#free-data-sources")
+        1.  [Free data sources](/azure/sentinel/billing?tabs=commitment-tier#free-data-sources)
 
 The following table lists the free data sources you can enable in Microsoft Sentinel:
 
@@ -227,7 +227,7 @@ The following table lists the free data sources you can enable in Microsoft Sent
 
 ## Step 2. Enable User Entity Behavior Analytics 
 
-<u>Leveraging</u> [User Entity Behavior Analysis to identify suspicious behavior](https://docs.microsoft.com/en-us/azure/sentinel/identify-threats-with-entity-behavior-analytics) <u>that could lead to Ransomware.</u>
+<u>Leveraging</u> [User Entity Behavior Analysis to identify suspicious behavior](/azure/sentinel/identify-threats-with-entity-behavior-analytics) <u>that could lead to Ransomware.</u>
 
 Data Sources required:
 
@@ -245,7 +245,7 @@ Data Sources required:
 
 Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organization's entities across time and peer group to identify anomalous activity. This added utility aids in an expedition of determining if an asset has been compromised. Since it identifies peer group association this can also aid in determining the blast radius of said compromise.
 
-**Leveraging Microsoft Security suite with [Fusion technology to detect Ransomware](https://learn.microsoft.com/en-us/azure/sentinel/fusion#fusion-for-ransomware).**
+**Leveraging Microsoft Security suite with [Fusion technology to detect Ransomware](/azure/sentinel/fusion#fusion-for-ransomware).**
 
 Microsoft Sentinel enables the Advanced multistage attack detection analytic rule by default to automatically identify multistage attacks. Leveraging anomalous behavior and suspicious activity events observed across the cyber kill chain, Microsoft Sentinel generates incidents that allow you to see the compromise incidents with two or more alert activities in it with a high degree of confidence.
 
@@ -275,11 +275,11 @@ Fusion detections take the anomaly rule templates and the scheduled queries you 
 
 ## Recommended training
 
-[Connect data to Microsoft Sentinel using data connectors - Training \| Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/connect-data-to-azure-sentinel-with-data-connectors/)
+[Connect data to Microsoft Sentinel using data connectors - Training \| Microsoft Learn](https://learn.microsoft.com/training/modules/connect-data-to-azure-sentinel-with-data-connectors/)
 
-[Ingest log data with data connectors - Training \| Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/connect-data-to-azure-sentinel-with-data-connectors/2-ingest-log-data-with-data-connectors)
+[Ingest log data with data connectors - Training \| Microsoft Learn](https://learn.microsoft.com/training/modules/connect-data-to-azure-sentinel-with-data-connectors/2-ingest-log-data-with-data-connectors)
 
-[Identify threats with Behavioral Analytics - Training \| Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/use-entity-behavior-analytics-azure-sentinel/)
+[Identify threats with Behavioral Analytics - Training \| Microsoft Learn](https://learn.microsoft.com/training/modules/use-entity-behavior-analytics-azure-sentinel/)
 
 ## Next steps
 

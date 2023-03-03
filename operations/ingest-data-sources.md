@@ -1,6 +1,6 @@
 ---
-title: Architect SIEM workspace
-description: Architect SIEM workspace
+title: Ingest data sources
+description: Ingest data sources
 ms.author: macapara
 author: mjcaparas
 localization_priority: Normal
@@ -9,30 +9,14 @@ ms.topic: article
 ms.service: microsoft-365-security
 ---
 
-# Step 2. Architect SIEM workspace - SIMRAN + AUSTIN
-
-To use Microsoft Sentinel, the first step is to create Log Analytics Workspace. A T Log Analytics workspace might be sufficient for many environments, but many organizations will create multiple workspaces to optimize costs and better meet different business requirements. 
-
-It is best practice to create separate workspaces for the operational and security data for data ownership and cost management for Microsoft Sentinel. 
-For a single tenant, there are two ways Microsoft Sentinel workspace can be configured: 
-Single Tenant with a single Microsoft Sentinel workspace. In this case the workspace becomes the central repository for logs across all resources within the same tenant. 
+# Step 3. Ingest data sources
 
 
-
-
-
-
-## Create a Log Analytics Workspace
-
-
-## Sentinel onboarding
-
-## Configure RBAC?
 
 
 
 ## Next steps
 
-Continue to [Step 3](ingest-data-sources.md). 
-
-![Image of Microsoft Sentinel and XDR solution steps with step 3 highlighted](./media/siem-xdr-solution-3.png)
+Continue to [Step 4](respond-incident.md) to respond to an incident.
+ 
+![Image of Microsoft Sentinel and XDR solution steps with step 4 highlighted](./media/siem-xdr-solution-4.png)

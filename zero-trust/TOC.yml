@@ -303,3 +303,16 @@
       href: https://www.microsoft.com/security/blog/zero-trust/
     - name: Microsoft Intelligent Security Association
       href: https://www.microsoft.com/security/business/intelligent-security-association
+- name: Best practices resources
+  expanded: false
+  items:
+    - name: The immutable laws of security
+      href: ten-laws-of-security.md
+    - name: Governance, risk, and compliance videos and slides
+      href: governance-risk-compliance-videos-and-decks.md
+    - name: Identity and access management videos and slides
+      href: identity-videos-and-decks.md
+    - name: Network security and containment videos and slides
+      href: network-containment-videos-and-decks.md
+    - name: Information protection and storage videos and slides
+      href: information-protection-and-storage-videos-and-decks.md

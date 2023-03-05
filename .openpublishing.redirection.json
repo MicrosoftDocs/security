@@ -245,7 +245,7 @@
       },
       {
          "source_path": "compass/progress-and-role-tracking-worksheets.md",
-         "redirect_url": "/zero-trust/zero-trust-overview",
+         "redirect_url": "/security/zero-trust/zero-trust-overview",
          "redirect_document_id": false
       },
       {
@@ -255,122 +255,122 @@
       },
       {
         "source_path": "compass/incident-response-process.md",
-        "redirect_url": "/operations/incident-response-overview",
+        "redirect_url": "/security/operations/incident-response-overview",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/human-operated-ransomware.md",
-        "redirect_url": "/ransomware/human-operated-ransomware",
+        "redirect_url": "/security/ransomware/human-operated-ransomware",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/protect-against-ransomware.md",
-        "redirect_url": "/ransomware/protect-against-ransomware",
+        "redirect_url": "/security/ransomware/protect-against-ransomware",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/protect-against-ransomware-phase1.md",
-        "redirect_url": "/ransomware/protect-against-ransomware-phase1",
+        "redirect_url": "/security/ransomware/protect-against-ransomware-phase1",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/protect-against-ransomware-phase2.md",
-        "redirect_url": "/ransomware/protect-against-ransomware-phase2",
+        "redirect_url": "/security/ransomware/protect-against-ransomware-phase2",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/protect-against-ransomware-phase3.md",
-        "redirect_url": "/ransomware/protect-against-ransomware-phase3",
+        "redirect_url": "/security/ransomware/protect-against-ransomware-phase3",
         "redirect_document_id": false
       },
       {    
         "source_path": "compass/incident-response-playbook-dart-ransomware-approach.md ",
-        "redirect_url": "/ransomware/incident-response-playbook-dart-ransomware-approach",
+        "redirect_url": "/security/ransomware/incident-response-playbook-dart-ransomware-approach",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/dart-ransomware-case-study.md",
-        "redirect_url": "/ransomware/dart-ransomware-case-study",
+        "redirect_url": "/security/ransomware/dart-ransomware-case-study",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/overview.md",
-        "redirect_url": "/privileged-admin/overview",
+        "redirect_url": "/security/privileged-access-workstations/overview",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/privileged-access-strategy.md",
-        "redirect_url": "/privileged-admin/privileged-access-strategy",
+        "redirect_url": "/security/privileged-access-workstations/privileged-access-strategy",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/privileged-access-success-criteria.md",
-        "redirect_url": "/privileged-admin/privileged-access-success-criteria",
+        "redirect_url": "/security/privileged-access-workstations/privileged-access-success-criteria",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/privileged-access-security-levels.md",
-        "redirect_url": "/privileged-admin/privileged-access-security-levels",
+        "redirect_url": "/security/privileged-access-workstations/privileged-access-security-levels",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/privileged-access-accounts.md",
-        "redirect_url": "/privileged-admin/privileged-access-accounts",
+        "redirect_url": "/security/privileged-access-workstations/privileged-access-accounts",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/privileged-access-intermediaries.md",
-        "redirect_url": "/privileged-admin/privileged-access-intermediaries",
+        "redirect_url": "/security/privileged-access-workstations/privileged-access-intermediaries",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/privileged-access-interfaces.md",
-        "redirect_url": "/privileged-admin/privileged-access-interfaces",
+        "redirect_url": "/security/privileged-access-workstations/privileged-access-interfaces",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/privileged-access-devices.md",
-        "redirect_url": "/privileged-admin/privileged-access-devices",
+        "redirect_url": "/security/privileged-access-workstations/privileged-access-devices",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/privileged-access-access-model.md",
-        "redirect_url": "/privileged-admin/privileged-access-access-model",
+        "redirect_url": "/security/privileged-access-workstations/privileged-access-access-model",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/privileged-access-deployment.md",
-        "redirect_url": "/privileged-admin/privileged-access-deployment",
+        "redirect_url": "/security/privileged-access-workstations/privileged-access-deployment",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/security-rapid-modernization-plan.md",
-        "redirect_url": "/privileged-admin/security-rapid-modernization-plan",
+        "redirect_url": "/security/privileged-access-workstations/security-rapid-modernization-plan",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/esae-retirement .md",
-        "redirect_url": "/privileged-admin/esae-retirement ",
+        "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/administration-videos-and-decks.md",
-        "redirect_url": "/privileged-admin/administration-videos-and-decks",
+        "redirect_url": "/security/privileged-access-workstations/administration-videos-and-decks",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/critical-impact-accounts.md",
-        "redirect_url": "/privileged-admin/critical-impact-accounts",
+        "redirect_url": "/security/privileged-access-workstations/critical-impact-accounts",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/administration-capabilities.md",
-        "redirect_url": "/privileged-admin/critical-impact-accounts",
+        "redirect_url": "/security/privileged-access-workstations/critical-impact-accounts",
         "redirect_document_id": false
       },
       {
         "source_path": "compass/applications-and-cloud-services-capabilities.md",
-        "redirect_url": "/privileged-admin/applications-and-cloud-services-capabilities",
+        "redirect_url": "/security/privileged-access-workstations/applications-and-cloud-services-capabilities",
         "redirect_document_id": false
       },
       {

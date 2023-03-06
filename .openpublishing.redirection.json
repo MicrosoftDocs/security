@@ -130,92 +130,92 @@
       },
       {
          "source_path": "compass/security-operations.md",
-         "redirect_url": "/operations/security-operations",
+         "redirect_url": "/security/operations/security-operations",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/security-operations-capabilities.md",
-         "redirect_url": "/operations/security-operations-capabilities",
+         "redirect_url": "/security/operations/security-operations-capabilities",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/security-operations-videos-and-decks.md",
-         "redirect_url": "/operations/security-operations-videos-and-decks",
+         "redirect_url": "/security/operations/security-operations-videos-and-decks",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/incident-response-overview.md",
-         "redirect_url": "/operations/incident-response-overview",
+         "redirect_url": "/security/operations/incident-response-overview",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/incident-response-planning.md",
-         "redirect_url": "/operations/incident-response-planning",
+         "redirect_url": "/security/operations/incident-response-planning",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/incident-response-playbooks.md",
-         "redirect_url": "/operations/incident-response-playbooks",
+         "redirect_url": "/security/operations/incident-response-playbooks",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/incident-response-playbook-phishing.md",
-         "redirect_url": "/operations/incident-response-playbook-phishing",
+         "redirect_url": "/security/operations/incident-response-playbook-phishing",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/incident-response-playbook-password-spray.md",
-         "redirect_url": "/operations/incident-response-playbook-password-spray",
+         "redirect_url": "/security/operations/incident-response-playbook-password-spray",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/incident-response-playbook-app-consent.md",
-         "redirect_url": "/operations/incident-response-playbook-app-consent",
+         "redirect_url": "/security/operations/incident-response-playbook-app-consent",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/incident-response-playbook-compromised-malicious-app.md",
-         "redirect_url": "/operations/incident-response-playbook-compromised-malicious-app",
+         "redirect_url": "/security/operations/incident-response-playbook-compromised-malicious-app",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/identity.md",
-         "redirect_url": "/zero-trust/deploy/identity",
+         "redirect_url": "/security/zero-trust/deploy/identity",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/identity-capabilities.md",
-         "redirect_url": "/zero-trust/deploy/identity",
+         "redirect_url": "/security/zero-trust/deploy/identity",
          "redirect_document_id": false
       },      
       {
          "source_path": "compass/network-security-containment.md",
-         "redirect_url": "/zero-trust/deploy/networks",
+         "redirect_url": "/security/zero-trust/deploy/networks",
          "redirect_document_id": false
       },  
       {
          "source_path": "compass/network-containment-capabilities.md",
-         "redirect_url": "/zero-trust/deploy/networks",
+         "redirect_url": "/security/zero-trust/deploy/networks",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/storage-data-encryption.md",
-         "redirect_url": "/zero-trust/deploy/data",
+         "redirect_url": "/security/zero-trust/deploy/data",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/applications-services.md",
-         "redirect_url": "/zero-trust/deploy/applications",
+         "redirect_url": "/security/zero-trust/deploy/applications",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/ten-laws-of-security.md",
-         "redirect_url": "/zero-trust/ten-laws-of-security",
+         "redirect_url": "/security/zero-trust/ten-laws-of-security",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/governance-risk-compliance-videos-and-decks.md",
-         "redirect_url": "/zero-trust/governance-risk-compliance-videos-and-decks",
+         "redirect_url": "/security/zero-trust/governance-risk-compliance-videos-and-decks",
          "redirect_document_id": false
       },
       {
@@ -395,7 +395,7 @@
       },
       {
         "source_path": "compass/esae-retirement.md",
-        "redirect_url": "/privileged-admin/esae-retirement ",
+        "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
         "redirect_document_id": false
       },
   ] 

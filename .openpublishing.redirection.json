@@ -220,27 +220,27 @@
       },
       {
          "source_path": "compass/identity-videos-and-decks.md",
-         "redirect_url": "/zero-trust/identity-videos-and-decks",
+         "redirect_url": "/security/zero-trust/identity-videos-and-decks",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/network-containment-videos-and-decks.md",
-         "redirect_url": "/zero-trust/network-containment-videos-and-decks",
+         "redirect_url": "/security/zero-trust/network-containment-videos-and-decks",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/information-protection-and-storage-videos-and-decks.md",
-         "redirect_url": "/zero-trust/information-protection-and-storage-videos-and-decks",
+         "redirect_url": "/security/zero-trust/information-protection-and-storage-videos-and-decks",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/microsoft-security-compass-introduction.md",
-         "redirect_url": "/zero-trust/zero-trust-library",
+         "redirect_url": "/security/zero-trust/zero-trust-overview",
          "redirect_document_id": false
       },
       {
          "source_path": "compass/compass.md",
-         "redirect_url": "/zero-trust/zero-trust-overview",
+         "redirect_url": "/security/zero-trust/zero-trust-overview",
          "redirect_document_id": false
       },
       {

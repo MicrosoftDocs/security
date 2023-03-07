@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: microsoft-365-security
 ---
 
-# Security operations 
+# Security operations overview
 
 Security operations (SecOps) maintain and restore the security assurances of the system as live adversaries attack it. The NIST Cybersecurity Framework describes the SecOps functions of Detect, Respond, and Recover well.
 

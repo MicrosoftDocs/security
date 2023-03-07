@@ -1,6 +1,6 @@
 ---
 title: Security operations  | Microsoft Docs
-description: Detect, respond, and recover the system when it's attacked.
+description: Learn about security operations and how they detect, respond, and recover the system when it's attacked.
 ms.author: dansimp
 author: dansimp
 localization_priority: Normal

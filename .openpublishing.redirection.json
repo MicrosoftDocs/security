@@ -130,7 +130,7 @@
       },
       {
          "source_path": "compass/security-operations.md",
-         "redirect_url": "/security/operations/security-operations",
+         "redirect_url": "/security/operations/overview",
          "redirect_document_id": false
       },
       {
@@ -285,7 +285,7 @@
       },
       {    
         "source_path": "compass/incident-response-playbook-dart-ransomware-approach.md ",
-        "redirect_url": "/security/ransomware/incident-response-playbook-dart-ransomware-approach",
+        "redirect_url": "/security/operations/incident-response-playbook-dart-ransomware-approach",
         "redirect_document_id": false
       },
       {

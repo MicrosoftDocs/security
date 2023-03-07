@@ -10,7 +10,7 @@ ms.service: microsoft-365-security
 description: "Learn how to establish security operations to rapidly identify and remediate risk from active attacks."
 ---
 
-# Security operations
+# Security operations videos and decks
 
 Security operations monitor an enterprise environment to rapidly identify and remediate risk from active attack operations, sharing insights and threat intelligence from these attacks to the rest of the organization.
 

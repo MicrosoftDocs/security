@@ -52,7 +52,7 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 
 In this diagram:
 
-Signals are feed into Microsoft 365 Defender and Microsoft Defender for Cloud.  Microsoft 365 Defender provides XDR capabilities for end-user environments (email, documents, identity, apps, and endpoint); and Microsoft Defender for Cloud provides XDR capabilities for infrastructure and multi-cloud platforms including virtual machines, databases, containers, and IoT. Microsoft 365 Defender and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors. Microsoft Sentinel is a cloud-native SIEM tool that helps secops teams analyze and respond to threats.
+Signals are feed into Microsoft 365 Defender and Microsoft Defender for Cloud.  Microsoft 365 Defender provides XDR capabilities for end-user environments (email, documents, identity, apps, and endpoint); and Microsoft Defender for Cloud provides XDR capabilities for infrastructure and multi-cloud platforms including virtual machines, databases, containers, and IoT. Microsoft 365 Defender and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors. Microsoft Sentinel is a cloud-native SIEM tool that can can work with multi-cloud environments and integrate with third-party and partner platforms, helping secops teams analyze and respond to threats.
 
 
 ## Key capabilities

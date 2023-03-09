@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 10/05/2022
+  ms.date: 03/09/2022
 
 
 # Maximum of 8 items
@@ -27,13 +27,14 @@ highlightedContent:
       itemType: overview
       url: /entra/
     # Card
-    - title: Learn how to rapidly protect against ransomware and extortion
+    - title: Set up secure file sharing and collaboration with Microsoft Teams
       itemType: concept
-      url: /security/compass/protect-against-ransomware
+      url: /microsoft-365/solutions/setup-secure-collaboration-with-teams
     # Card
-    - title: Ransomware protection in Azure
+    - title: Apply Zero Trust principles to Azure IaaS
       itemType: concept
-      url: /azure/security/fundamentals/ransomware-protection?toc=%2Fazure%2Fsecurity%2Fjourney%2Ftoc.json&bc=%2Fazure%2Fsecurity%2Fbreadcrumb%2Ftoc.json
+      url: /security/zero-trust/azure-infrastructure-overview
+    # Card
     - title: Evaluate and pilot Microsoft 365 Defender
       itemType: overview
       url: /microsoft-365/security/defender/eval-overview
@@ -42,13 +43,13 @@ highlightedContent:
       itemType: overview
       url: /security/zero-trust/zero-trust-overview
     # Card
-    - title: Microsoft 365 Zero Trust deployment plan
+    - title: Cloud adoption assessments
       itemType: deploy
-      url: /microsoft-365/security/microsoft-365-zero-trust?bc=%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json&toc=%2Fsecurity%2Fzero-trust%2Ftoc.json&view=o365-worldwide
+      url: /assessments/93dfb79b-71af-404d-897e-3928ecfb92b1/
     # Card
-    - title: Rapidly modernize your security infrastructure
+    - title: The immutable laws of security
       itemType: concept
-      url: /security/compass/security-rapid-modernization-plan
+      url: /security/zero-trust/ten-laws-of-security
     # Card
     - title: Past news and highlights
       itemType: reference
@@ -69,7 +70,7 @@ additionalContent:
           url: /security/ciso-workshop/the-ciso-workshop
         # Card
         - title: Microsoft Security Best Practices
-          summary: Are you a security professional? Microsoft Security Best Practices is a collection of best practices with actionable guidance for your security architecture.
+          summary: Are you a security professional? The Zero Trust implementation guidance contains a collection of best practices with actionable guidance for your security architecture.
           url: /security/compass/compass
         # Card
         - title: Security benchmarks
@@ -121,8 +122,6 @@ additionalContent:
               url: /azure/cloud-adoption-framework/strategy/define-security-strategy
             - text: Best practices (videos & slides)
               url: /security/compass/governance-risk-compliance-videos-and-decks
-            - text: Capabilities
-              url: /security/compass/governance-risk-compliance-capabilities
 
         # Card
         - title: Network security
@@ -131,8 +130,8 @@ additionalContent:
               url: /security/compass/network-security-containment
             - text: Best practices (videos & slides)
               url: /security/compass/network-containment-videos-and-decks
-            - text: Capabilities
-              url: /security/compass/network-containment-capabilities
+            - text: Network integrations
+              url: /security/zero-trust/integrate/networks
 
         # Card
         - title: Identity and access management
@@ -141,8 +140,8 @@ additionalContent:
               url: /security/compass/identity
             - text: Best practices (videos & slides)
               url: /security/compass/identity-videos-and-decks
-            - text: Capabilities
-              url: /security/compass/identity-capabilities
+            - text: Identity integrations
+              url: /security/zero-trust/integrate/identity
 
         # Card
         - title: Storage, data, and encryption
@@ -151,16 +150,16 @@ additionalContent:
               url: /security/compass/storage-data-encryption
             - text: Best practices (videos & slides)
               url: /security/compass/information-protection-and-storage-videos-and-decks
-            - text: Capabilities
-              url: /security/compass/information-protection-and-storage-capabilities
+            - text: Data integrations
+              url: /security/zero-trust/integrate/data
 
         # Card
         - title: Applications and services
           links:
             - text: Overview
               url: /security/compass/applications-services
-            - text: Best practices for container security
-              url: /security/compass/applications-services#follow-best-practices-for-container-security
+            - text: Secure development best practices
+              url: /azure/security/develop/secure-dev-overview
             - text: DevSecOps controls
               url: /azure/cloud-adoption-framework/secure/devsecops-controls
 
@@ -169,10 +168,10 @@ additionalContent:
           links:
             - text: Overview
               url: /security/compass/security-operations
-            - text: Best practices (videos & slides)
-              url: /security/compass/security-operations-videos-and-decks
-            - text: Capabilities
-              url: /security/compass/security-operations-capabilities
+            - text: Best practices
+              url: /security/operations/security-operations-videos-and-decks
+            - text: Incident response
+              url: /security/operations/incident-response-overview
 
         # Card
         - title: Privileged access
@@ -199,7 +198,7 @@ additionalContent:
               text: Microsoft Defender for Cloud
             - url: /azure/sentinel/
               text: Microsoft Sentinel
-            - url: /azure/networking/
+            - url: /azure/active-directory/
               text: Azure Active Directory
             - url: /azure/key-vault/
               text: Azure Key Vault
@@ -241,7 +240,7 @@ additionalContent:
               url: https://www.microsoft.com/msrc
             - text: Cyber Defense Operations Center
               url: https://www.microsoft.com/msrc/cdoc
-            - text: Digital Crimes Unit
+            - text: Cybersecurity - Digital Crimes Unit
               url: https://news.microsoft.com/on-the-issues/topic/cybersecurity/
             - text: Government Security Program
               url: https://www.microsoft.com/en-us/securityengineering/gsp
@@ -258,7 +257,7 @@ additionalContent:
         - title: Security principles
           links:
             - text: Microsoft Trust Center
-              url: https://servicetrust.microsoft.com/ViewPage/HomePage
+              url: https://www.microsoft.com/trust-center
             - text: Compliance
               url: https://www.microsoft.com/trust-center/compliance/compliance-overview
             - text: Privacy

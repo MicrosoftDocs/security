@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 10/05/2022
+ms.date: 03/09/2023
 ---
 
 # Security news and highlights
@@ -14,6 +14,13 @@ ms.date: 10/05/2022
 The security documentation site provides you with current news and highlights from across Microsoft. News and highlights are updated regularly to bring you the most relevant security information.
 
 Below are past news and highlights that you may have missed or would like to revisit.
+
+2023
+
+- [Quickly deploy ransomware preventions](/security/ransomware/protect-against-ransomware)
+- [Security rapid modernization plan](/security/privileged-access-workstations/security-rapid-modernization-plan)
+- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)
+- [Ransomware protection in Azure](/azure/security/fundamentals/ransomware-protection)
 
 2022
 

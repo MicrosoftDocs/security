@@ -449,19 +449,11 @@ Note: Microsoft globally disables applications found to be violating its Terms o
 
 ### Implement Identity Protection for workload identities
 
-**Suspicious sign-ins**: When risk detection indicates unusual sign-in properties or patterns, as well as unusual addition of credentials to an OAuth App, that may be an indicator of compromise. The detection baselines sign-in behavior between 2 and 60 days, and fires if one or more of the following unfamiliar properties occur during a subsequent sign-in:
-
-- IP address / ASN
-- Target resource
-- User agent
-- IP country
-- Credential type
-
-When this detection is fired, the account is marked as high risk because this can indicate account takeover for the subject application. The legitimate changes to an application’s configuration will sometimes trigger this detection. 
+Microsoft detects risk on workload identities across sign-in behavior and offline indicators of compromise.
 
 For more information, see [Securing workload identities with Identity Protection](/azure/active-directory/identity-protection/concept-workload-identity-risk).
 
-These alerts appear in the Identity Protection portal and can be exported into SIEM tools through the [Identity Protection APIs](/graph/api/resources/identityprotection-overview?view=graph-rest-beta&preserve-view=true).
+These alerts appear in the Identity Protection portal and can be exported into SIEM tools through [Diagnostic Settings](/azure/active-directory/identity-protection/howto-export-risk-data) or the [Identity Protection APIs](/graph/api/resources/identityprotection-overview?view=graph-rest-1.0).
 
 :::image type="content" source="./media/compromised-malicious-apps/IR_playbook_workload_identity_detections.png" alt-text="Review risks and alerts in the Identity Protection portal":::
 

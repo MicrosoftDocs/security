@@ -155,24 +155,25 @@ The following table lists the free data sources you can enable in Microsoft Sent
 
 2.  To provide broader monitoring and alerting coverage, focus on the following data connectors:
 
-  >[!NOTE]
-  >There's a charge for ingesting data from the sources listed in the section
+    >[!NOTE]
+    >There's a charge for ingesting data from the sources listed in the section
 
-   a.  Azure Active Directory.
-   
-   b.  Microsoft 365 Defender connector
-       i.  Send Microsoft 365 Defender logs to Sentinel, if any of the following are required:
-           1.  Leverage Fusion Alerts with Sentinel.                 
-                      1. Fusion correlates data sources from multiple products to detect multi-stage attacks across the environment.
-           2. Longer retention than what's offered in Microsoft 365 Defender.
+    - Azure Active Directory.
+    - Microsoft 365 Defender connector
+           
+        -  Send Microsoft 365 Defender logs to Sentinel, if any of the following are required:
+        
+            1.  Leverage Fusion Alerts with Sentinel.                 
+                - Fusion correlates data sources from multiple products to detect multi-stage attacks across the environment.
+            2. Longer retention than what's offered in Microsoft 365 Defender.
 
-           3.  Automation not covered by the built-in remediations offered by Microsoft Defender for Endpoint.  
+            3.  Automation not covered by the built-in remediations offered by Microsoft Defender for Endpoint.  For more information, see [Remediation actions in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-remediation-actions).
 
 3.  If deployed in Azure, use the following connectors:
 
     - Azure Firewall
-     - Azure Application Gateway
-     - Keyvault
+    - Azure Application Gateway
+    - Keyvault
     - Azure Kubernetes Service
     - Azure SQL
     - Network Security Groups
@@ -190,12 +191,13 @@ The following table lists the free data sources you can enable in Microsoft Sent
     - Common Event Format (CEF) via AMA
     - Common Event Format (CEF) via Legacy Agent
     - Syslog
+    - [Deploy a log forwarder to ingest Syslog and CEF logs to Microsoft Sentinel](/azure/sentinel/connect-log-forwarder).
 
 6.  Search in content hub for other devices, SaaS apps that require logs to be sent to Sentinel. For more information, see [Discover and manage Microsoft Sentinel out-of-the-box content ](/azure/sentinel/sentinel-solutions-deploy).
 
 ## Step 2. Enable User Entity Behavior Analytics 
 
-<u>Leveraging</u> [User Entity Behavior Analysis to identify suspicious behavior](/azure/sentinel/identify-threats-with-entity-behavior-analytics) <u>that could lead to Ransomware.</u>
+Leveraging [User Entity Behavior Analysis to identify suspicious behavior](/azure/sentinel/identify-threats-with-entity-behavior-analytics) that could lead to Ransomware.
 
 Data Sources required:
 

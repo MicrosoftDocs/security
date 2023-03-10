@@ -20,7 +20,7 @@ ms.collection:
   - m365initiative-m365-defender
 ms.topic: article
 ms.subservice:: m365d
-ms.custom: cxdef-zt-ransomware 
+ms.custom: cxdef-zt-ransomware
 ---
 
 # Compromised and malicious applications investigation
@@ -445,6 +445,8 @@ If you disable or if you soft delete the application, set up monitoring in Azure
 - **Targets** - App ID and Display Name
 - **Modified Properties** - Property name = account enabled, new value = true
 
+Note: Microsoft globally disables applications found to be violating its Terms of Service. In those cases, these applications will show `DisabledDueToViolationOfServicesAgreement` on the `disabledByMicrosoftStatus` property on the related [application](/graph/api/resources/application) and [service principal](/graph/api/resources/serviceprincipal) resource types in Microsoft Graph. To prevent them from being instantiated in your organization again in the future, you cannot delete these objects.
+
 ### Implement Identity Protection for workload identities
 
 **Suspicious sign-ins**: When risk detection indicates unusual sign-in properties or patterns, as well as unusual addition of credentials to an OAuth App, that may be an indicator of compromise. The detection baselines sign-in behavior between 2 and 60 days, and fires if one or more of the following unfamiliar properties occur during a subsequent sign-in:
@@ -452,7 +454,6 @@ If you disable or if you soft delete the application, set up monitoring in Azure
 - IP address / ASN
 - Target resource
 - User agent
-- Hosting/non-hosting IP change
 - IP country
 - Credential type
 
@@ -525,3 +526,4 @@ Examine guidance for identifying and investigating these additional types of att
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
 - [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
+

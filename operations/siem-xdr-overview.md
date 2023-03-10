@@ -52,7 +52,39 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 
 In this diagram:
 
-Signals feed into Microsoft 365 Defender and Microsoft Defender for Cloud.  Microsoft 365 Defender provides XDR capabilities for end-user environments (email, documents, identity, apps, and endpoint); and Microsoft Defender for Cloud provides XDR capabilities for infrastructure and multi-cloud platforms including virtual machines, databases, containers, and IoT. Microsoft 365 Defender and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors. Microsoft Sentinel is a cloud-native SIEM tool that can can work with multi-cloud environments and integrate with third-party and partner platforms, helping secops teams analyze and respond to threats.
+- Signals feed into Microsoft 365 Defender and Microsoft Defender for Cloud.
+- Microsoft 365 Defender provides XDR capabilities for end-user environments (email, documents, identity, apps, and endpoint)
+- Microsoft Defender for Cloud provides XDR capabilities for infrastructure and multi-cloud platforms including virtual machines, databases, containers, and IoT. 
+- Microsoft 365 Defender and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors. 
+- Microsoft Sentinel is a cloud-native SIEM tool that can can work with multi-cloud environments and integrate with third-party and partner platforms, helping secops teams analyze and respond to threats.
+
+
+
+ALTERNATIVE:
+
+
+
+
+
+![Image of a common attack scenario and defense from Microsoft security products](./media/common-attack-defense.png)
+
+In this diagram:
+
+A common attack order of a phishing scenario is demonstrated and the corresponding Microsoft security products in place in defend assets from the attack.
+
+
+Summary of the attack order:
+
+| Attack step | Summary | Defense in place
+| --- | --- | ---
+|1 | A phishing mail is sent. | Microsoft Defender for Office 365 is in place to protect Exchange online. |
+|2 | The attachment is opened. | Microsoft Defender for Office 365 is in place to protect Exchange online.
+|3 | The malware is installed. | Microsoft Endpoint Manager and Microsoft Defender for Endpoint protects computers.
+|4 | Credential theft. | Microsoft Defender for Identity in place to protect identities.
+|5 | Adversary moves laterally. | Microsoft Defender for Cloud apps protects Azure AD. 
+|6 | Sensitive data is exfiltrated. |  Microsoft Defender for Cloud apps prevents data exfiltration. 
+
+
 
 
 ## Key capabilities

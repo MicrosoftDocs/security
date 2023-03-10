@@ -231,11 +231,33 @@ Fusion detections take the anomaly rule templates and the scheduled queries you 
 
 ## Recommended training
 
-[Connect data to Microsoft Sentinel using data connectors - Training \| Microsoft Learn](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/)
 
-[Ingest log data with data connectors - Training \| Microsoft Learn](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/2-ingest-log-data-with-data-connectors)
 
-[Identify threats with Behavioral Analytics - Training \| Microsoft Learn](/training/modules/use-entity-behavior-analytics-azure-sentinel/)
+
+
+### Connect data to Microsoft Sentinel using data connectors
+
+**[Connect data to Microsoft Sentinel using data connectors](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/)**<br>
+Description: Learn how to connect data to Microsoft Sentinel using data connectors
+
+> [!div class="nextstepaction"]
+> [Start >](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/)
+
+
+
+**[Ingest log data with data connectors](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/2-ingest-log-data-with-data-connectors)**<br>
+Description: Learn how to connect data to Microsoft Sentinel using data connectors
+
+> [!div class="nextstepaction"]
+> [Start >](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/2-ingest-log-data-with-data-connectors)
+
+
+**[Identify threats with Behavioral Analytics| Microsoft Learn](/training/modules/use-entity-behavior-analytics-azure-sentinel/)**<br>
+Description: Learn how to identiy threats with Behavioral Analytics
+
+> [!div class="nextstepaction"]
+> [Start >](/training/modules/use-entity-behavior-analytics-azure-sentinel/)
+
 
 ## Next steps
 

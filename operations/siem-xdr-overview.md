@@ -52,7 +52,7 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 
 In this diagram:
 
-A common attack order of a phishing scenario is demonstrated and the corresponding Microsoft security products in place in defend assets from the attack.
+A common attack order of a phishing scenario is demonstrated and the corresponding Microsoft security products in place to defend assets from the attack.
 
 
 Summary of the attack order:

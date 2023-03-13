@@ -59,12 +59,12 @@ Summary of the attack order:
 
 | Attack step | Summary | Defense in place
 | --- | --- | ---
-|1 | A phishing mail is sent. | Microsoft Defender for Office 365 is in place to protect Exchange online. |
-|2 | The attachment is opened. | Microsoft Defender for Office 365 is in place to protect Exchange online.
-|3 | The malware is installed. | Microsoft Endpoint Manager and Microsoft Defender for Endpoint protects computers.
-|4 | Credential theft. | Microsoft Defender for Identity in place to protect identities.
-|5 | Adversary moves laterally. | Microsoft Defender for Cloud apps protects Azure AD. 
-|6 | Sensitive data is exfiltrated. |  Microsoft Defender for Cloud apps prevents data exfiltration. 
+|1 | A phishing mail is sent. | Microsoft Defender for Office 365 protects mailboxes with advanced anti-phishing features that can protect against malicious impersonation-based phishing attacks and other types of phishing attacks. |
+|2 | The attachment is opened. | Microsoft Defender for Office 365 Safe Attachments feature opens   attachments in an isolated environment for additional scanning of threats (detonation).
+|3 | The malware is installed. | Microsoft Defender for Endpoint protects endpoints from malware with its next generation protection features, such as: cloud-delivered protection and   Behavior-based/heuristic/real-time antivirus protection.
+|4 | Credential theft. | Microsoft Defender for Identity protects identities by: monitoring user behavior and activities, detecting lateral movement and alerting on anomalous activity.
+|5 | Adversary moves laterally. | Microsoft Defender for Cloud Apps can detect anomalous activity of users accessing cloud apps.
+|6 | Sensitive data is exfiltrated. |  Microsoft Defender for Cloud can detect and respond to mass download events of files from Sharepoint. 
 
 
 

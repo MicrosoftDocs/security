@@ -1,6 +1,6 @@
 ---
 title: Step 2. Architect an Azure Sentinel workspace
-description: Learn how to address an incident using both Microsoft Sentinel and Microsoft 365 Defender, which includes triage, investigation, and resolution. 
+description: Learn how to design for and implement Zero Trust principles for your Microsoft Sentinel workspaces. 
 ms.date: 03/15/2023
 ms.service: security
 author: JoeDavies-TechWriter
@@ -27,13 +27,13 @@ If your organization has many Azure subscriptions, you may need a way to efficie
 
 For example, the Microsoft Sentinel workspace in the following diagram belongs to the Security subscription under the Platform management group, which is part of the Azure Active Directory (Azure AD) tenant.
 
-:::image type="content" source="media/sentinel-workspaces.png" alt-text="Example of a Microsoft Sentinel workspace in an Azure AD tenant.":::
+:::image type="content" source="./media/sentinel-workspaces.png" alt-text="Example of a Microsoft Sentinel workspace in an Azure AD tenant.":::
 
 The Security Azure subscription and the Microsoft Sentinel workspace inherit the role-based access control (RBAC) and Azure policies that are applied to the Platform management group.
 
 ## Step 2. Create Log Analytics workspaces
 
-To use Microsoft Sentinel, the first step is to create your Log Analytics workspaces. A single Log Analytics workspace might be sufficient for many environments, but many organizations will create multiple workspaces to optimize costs and better meet different business requirements. 
+To use Microsoft Sentinel, the first step is to create your Log Analytics workspaces. A single Log Analytics workspace might be sufficient for many environments, but many organizations create multiple workspaces to optimize costs and better meet different business requirements. 
 
 It is a best practice to create separate workspaces for the operational and security data for data ownership and cost management for Microsoft Sentinel. For example, if there’s more than one person administering operational and security roles, your first decision for Zero Trust is whether to create separate workspaces for those roles. The following table describes this recommendation.
 
@@ -45,7 +45,7 @@ For an example of separate workspaces for operation and security roles, see [Con
 
 For a single tenant, there are two ways Microsoft Sentinel workspaces can be configured:
 
-1. Single tenant with a single Microsoft Sentinel workspace. In this case the workspace becomes the central repository for logs across all resources within the tenant.
+1. Single tenant with a single Microsoft Sentinel workspace. In this case, the workspace becomes the central repository for logs across all resources within the tenant.
 
     - Advantages:
 
@@ -84,7 +84,7 @@ Onboarding Microsoft Sentinel requires selecting a Log Analytics workspace. The 
 - Create a Log Analytics workspace in the “Security” resource group and onboard Microsoft Sentinel into it. 
 This automatically gives you [31 days of data ingestion up to 10 Gb a day](/azure/sentinel/billing?tabs=commitment-tier#free-trial) free as part of a free trial. 
 - Set your Log Analytics Workspace supporting Microsoft Sentinel to [90 day retention](/azure/sentinel/billing?tabs=commitment-tier#data-retention-and-archived-logs-costs) at a minimum.
-Once you onboard Microsoft Sentinel to a Log Analytics workspace, you get 90 days of data retention at no additional cost. After 90 days costs will be incurred for the total amount of data in the workspace. Setting it to 90 days ensures a 90-day roll over of log data. You may consider retaining log data for longer based on governmental requirements. See [Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard) for more information.
+Once you onboard Microsoft Sentinel to a Log Analytics workspace, you get 90 days of data retention at no additional cost. You will incur costs for the total amount of data in the workspace after 90 days. Setting it to 90 days ensures a 90-day rollover of log data. You may consider retaining log data for longer based on governmental requirements. See [Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard) for more information.
 
 ### Zero Trust with Microsoft Sentinel
 
@@ -114,7 +114,7 @@ When you assign Microsoft Sentinel-specific Azure roles, you may come across oth
 
 Azure Lighthouse enables multi-tenant management with scalability, higher automation, and enhanced governance across resources. With Azure Lighthouse you can manage multiple Microsoft Sentinel instances across Azure AD tenants at scale. Here’s an example.
 
-:::image type="content" source="media/sentinel-workspaces-multi-tenant.png" alt-text="Example of a Microsoft Sentinel workspace in an Azure AD tenant.":::
+:::image type="content" source="./media/sentinel-workspaces-multi-tenant.png" alt-text="Example of a Microsoft Sentinel workspace in an Azure AD tenant.":::
 
 With Azure Lighthouse, you can run queries across multiple workspaces or create workbooks to visualize and monitor data from your connected data sources and gain additional insight. It’s important to consider Zero Trust principles. See [Recommended security practices](/azure/lighthouse/concepts/recommended-security-practices) to implement least privileges access controls for Azure Lighthouse.
 
@@ -123,9 +123,9 @@ Consider the following questions when implementing security best practices for A
 - Who is responsible for data ownership?
 - What are the data isolation and compliance requirements?
 - How to implement least privileges across tenants.
-- How will multiple data connectors in multiple Microsoft Sentinel workspace be managed?
+- How will multiple data connectors in multiple Microsoft Sentinel workspaces be managed?
 - How to monitor office 365 environments?
-- How to protect intellectual properties e.g., playbooks, notebooks, analytics rules across tenants?
+- How to protect intellectual properties&ndash;for example, playbooks, notebooks, analytics rules&ndash;across tenants?
 
 See [Manage Microsoft Sentinel workspaces at scale: Granular Azure RBAC](/azure/lighthouse/how-to/manage-sentinel-workspaces#granular-azure-role-based-access-control-azure-rbac) for the security best practices of Microsoft Sentinel and Azure Lighthouse.
 
@@ -137,7 +137,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Introduction to Microsoft Sentinel](/training/modules/intro-to-azure-sentinel/)|
 |---------|---------|
-|:::image type="icon" source="media/intro-to-azure-sentinel.svg" border="false"::: | Learn how Microsoft Sentinel enables you to start getting valuable security insights from your cloud and on-premises data quickly. |
+|:::image type="icon" source="./media/intro-to-azure-sentinel.svg" border="false"::: | Learn how Microsoft Sentinel enables you to start getting valuable security insights from your cloud and on-premises data quickly. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/intro-to-azure-sentinel/)
 
@@ -145,7 +145,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Configure your Microsoft Sentinel environment](/training/paths/sc-200-configure-azure-sentinel-environment/)|
 |---------|---------|
-|:::image type="icon" source="media/configure-your-azure-sentinel-environment.svg" border="false"::: | Get started with Microsoft Sentinel by properly configuring the Microsoft Sentinel workspace. |
+|:::image type="icon" source="./media/configure-your-azure-sentinel-environment.svg" border="false"::: | Get started with Microsoft Sentinel by properly configuring the Microsoft Sentinel workspace. |
 > [!div class="nextstepaction"]
 > [Start >](/training/paths/sc-200-configure-azure-sentinel-environment/)
 
@@ -153,7 +153,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Create and manage Microsoft Sentinel workspaces](/training/modules/create-manage-azure-sentinel-workspaces/)|
 |---------|---------|
-|:::image type="icon" source="media/create-and-manage-azure-sentinel-workspaces.svg" border="false"::: | Learn about the architecture of Microsoft Sentinel workspaces to ensure you configure your system to meet your organization's security operations requirements. |
+|:::image type="icon" source="./media/create-and-manage-azure-sentinel-workspaces.svg" border="false"::: | Learn about the architecture of Microsoft Sentinel workspaces to ensure you configure your system to meet your organization's security operations requirements. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/create-manage-azure-sentinel-workspaces/)
 
@@ -165,7 +165,7 @@ Continue with Step 3 to configure Microsoft Sentinel to ingest data sources and 
 :::image type="content" source="./media/siem-xdr-solution-3.png" alt-text="Image of Microsoft Sentinel and XDR solution steps with step 3 highlighted.":::
 
 ## References
-Refer to the links below to learn about the various services and technologies mentioned in this article.
+Refer to these links to learn about the services and technologies mentioned in this article.
 
 Microsoft Sentinel:
 

@@ -114,7 +114,7 @@ When you assign Microsoft Sentinel-specific Azure roles, you may come across oth
 
 Azure Lighthouse enables multi-tenant management with scalability, higher automation, and enhanced governance across resources. With Azure Lighthouse you can manage multiple Microsoft Sentinel instances across Azure AD tenants at scale. Here’s an example.
 
-:::image type="content" source="./media/sentinel-workspaces-multi-tenant.png" alt-text="Example of a Microsoft Sentinel workspace in an Azure AD tenant.":::
+:::image type="content" source="./media/sentinel-workspaces-multi-tenant.png" alt-text="Example of using Azure Lighthouse across multiple Azure AD tenants.":::
 
 With Azure Lighthouse, you can run queries across multiple workspaces or create workbooks to visualize and monitor data from your connected data sources and gain additional insight. It’s important to consider Zero Trust principles. See [Recommended security practices](/azure/lighthouse/concepts/recommended-security-practices) to implement least privileges access controls for Azure Lighthouse.
 
@@ -137,7 +137,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Introduction to Microsoft Sentinel](/training/modules/intro-to-azure-sentinel/)|
 |---------|---------|
-|:::image type="icon" source="./media/intro-to-azure-sentinel.svg" border="false"::: | Learn how Microsoft Sentinel enables you to start getting valuable security insights from your cloud and on-premises data quickly. |
+|:::image type="icon" source="media/intro-to-azure-sentinel.svg" border="false"::: | Learn how Microsoft Sentinel enables you to start getting valuable security insights from your cloud and on-premises data quickly. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/intro-to-azure-sentinel/)
 
@@ -145,7 +145,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Configure your Microsoft Sentinel environment](/training/paths/sc-200-configure-azure-sentinel-environment/)|
 |---------|---------|
-|:::image type="icon" source="./media/configure-your-azure-sentinel-environment.svg" border="false"::: | Get started with Microsoft Sentinel by properly configuring the Microsoft Sentinel workspace. |
+|:::image type="icon" source="media/configure-your-azure-sentinel-environment.svg" border="false"::: | Get started with Microsoft Sentinel by properly configuring the Microsoft Sentinel workspace. |
 > [!div class="nextstepaction"]
 > [Start >](/training/paths/sc-200-configure-azure-sentinel-environment/)
 
@@ -153,7 +153,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Create and manage Microsoft Sentinel workspaces](/training/modules/create-manage-azure-sentinel-workspaces/)|
 |---------|---------|
-|:::image type="icon" source="./media/create-and-manage-azure-sentinel-workspaces.svg" border="false"::: | Learn about the architecture of Microsoft Sentinel workspaces to ensure you configure your system to meet your organization's security operations requirements. |
+|:::image type="icon" source="media/create-and-manage-azure-sentinel-workspaces.svg" border="false"::: | Learn about the architecture of Microsoft Sentinel workspaces to ensure you configure your system to meet your organization's security operations requirements. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/create-manage-azure-sentinel-workspaces/)
 

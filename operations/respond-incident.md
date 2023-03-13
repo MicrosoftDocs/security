@@ -21,19 +21,19 @@ Microsoft Sentinel and Microsoft 365 Defender share:
 - Updates on lifecycle (status, owner, classification) are shared between the products
 - Evidence gathered during an investigation is shown in the Microsoft Sentinel incident
 
-Both the Microsoft Sentinel portal and the Microsoft 365 Defender portal are needed to fully investigate and respond to an incident because the Microsoft 365 Defender and Microsoft Defender for Cloud services cover different parts of the Microsoft cloud.
+The Microsoft 365 Defender and Microsoft Defender for Cloud services cover different parts of the Microsoft cloud. Therefore, both the Microsoft Sentinel portal and the Microsoft 365 Defender portal are needed to fully investigate and respond to an incident.
 
 :::image type="content" source="media/defender-coverage-of-m365d-azure.png" alt-text="Coverage of Microsoft 365 Defender and Microsoft Defender for Cloud for different parts of an Azure AD tenant.":::
 
 Because an attack can target or use entities and resources across the Azure Active Directory (Azure AD) tenant, both portals are needed:
 
 1. The Azure Sentinel portal for the initial identification and triaging of the incident.
-2. The Microsoft 365 Defender portal for the investigation of the incident and its effected entities.
+2. The Microsoft 365 Defender portal for the investigation of the incident and its affected entities.
 3. The Azure Sentinel portal for additional investigation of entities in Azure as needed.
 4. The Azure Sentinel portal to resolve the incident.
 
-For more information about the integration of Microsoft Defender with Microsoft Sentinel, see [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration) . Also see this [interactive guide](https://mslearn.cloudguides.com/guides/Investigate%20security%20incidents%20in%20a%20hybrid%20environment%20with%20Azure%20Sentinel)
-that steps you through detecting and responding to modern attacks with Microsoft’s unified security information and event management (SIEM) and extended detection and response (XDR) capabilities.
+For more information about the integration of Microsoft Defender with Microsoft Sentinel, see [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration) . This [interactive guide](https://mslearn.cloudguides.com/guides/Investigate%20security%20incidents%20in%20a%20hybrid%20environment%20with%20Azure%20Sentinel)
+steps you through detecting and responding to modern attacks with Microsoft’s unified security information and event management (SIEM) and extended detection and response (XDR) capabilities.
 
 This article also describes an example of the incident response process for an Adversary in the Middle (AiTM) incident.
 
@@ -126,18 +126,18 @@ When your investigation has reached its conclusion and you have remediated the i
    - False Positive – incorrect data
    - Undetermined
 
-1. You will also be prompted to provide a comment on the incident. You can add details such as:
+1. You are then prompted to provide a comment on the incident. You can add details such as:
 
    - The type of attack with a standard description or with codes or abbreviations used on your security team.
    - The names of the people who worked on the incident.
-   - The key entities were affected by the attack.
+   - The key entities that the attack affected.
    - Notes on remediation tasks and strategies.
 
     Here’s an example.
 
    :::image type="content" source="media/example-resolving-incident.png" alt-text="Example of resolving an incident in the Microsoft Sentinel portal.":::
 
-3. Select **Apply** to resolve the incident. Once you close the incident in Microsoft Sentinel, it will synchronize the incident status to Microsoft 365 Defender and Microsoft Defender for Cloud.
+3. Select **Apply** to resolve the incident. Once you close the incident in Microsoft Sentinel, it synchronizes the incident status to Microsoft 365 Defender and Microsoft Defender for Cloud.
 4. As needed, report the incident to your incident response lead for possible follow-up to determine additional actions, such as: 
 
    - Inform your Tier 1 security analysts to better detect the attack early.
@@ -150,7 +150,7 @@ When your investigation has reached its conclusion and you have remediated the i
 
 This section steps you through an Adversary in the Middle (AiTM) incident as an example of how to do incident triage, investigation, and resolution using Microsoft Sentinel and Microsoft 365 Defender.
 
-An AiTM attack uses a combination of phishing sites to steal passwords, hijack a user’s sign-in session, or uses a proxy to obtain session cookies to gain access, skipping the authentication process even if the user performs multi-factor authentication (MFA). The attacker then uses the stolen credentials or session cookies to access affected users’ mailboxes and perform follow-on business email compromise (BEC) campaigns against other targets.
+An AiTM attack uses a combination of phishing sites to steal passwords, hijack a user’s sign-in session, or uses a proxy to obtain session cookies to gain access. The attack skips the authentication process even if the user performs multi-factor authentication (MFA). The attacker then uses the stolen credentials or session cookies to access affected users’ mailboxes and perform follow-on business email compromise (BEC) campaigns against other targets.
 
 For more information, see [From cookie theft to BEC: Attackers use AiTM phishing sites as entry point to further financial fraud](https://www.microsoft.com/security/blog/2022/07/12/from-cookie-theft-to-bec-attackers-use-aitm-phishing-sites-as-entry-point-to-further-financial-fraud/).
 
@@ -169,7 +169,7 @@ An attacker creates:
 
 #### B. Deploy the first bait to steal authenticated session cookies
 
-The attacker sends a spear phishing email to Polly Watkins, who is working as a cloud architect in the Azure Infrastructure department. The email is sent from the impersonated email address of a co-worker.
+The attacker sends a spear phishing email to Polly Watkins, who is working as a cloud architect in the Azure Infrastructure department. The email is sent from the impersonated email address of a coworker.
 
 Polly opens the email and clicks on a link in the message, which redirects to the attacker’s proxy web site and prompts Polly to sign in using an emulated Microsoft sign-in window.
 
@@ -227,14 +227,14 @@ The following sections describe how security analysts used the Microsoft Sentine
 
 ### Step 1. Triage the alert in the Microsoft Sentinel portal
 
-A Tier-1 SOC analyst sees a multi-stage incident in the Microsoft Sentinel portal and notes the following:
+A Tier-1 SOC analyst sees a multi-stage incident in the Microsoft Sentinel portal and notes that:
 
 - The incident affects all of the Microsoft 365 Defender stack and the alerts cover all the MITRE categories. 
 - From the **Entities** list, Microsoft Azure is part of this incident, which needs to be investigated using Microsoft Sentinel. 
 - Top insights provide detailed information for entities of the incident, including VIP information from the watchlist, IP address reputation, and anomalies seen for accounts.
 - In the **Incident Comments**, output results of the following playbooks are included:
 
-  - IP reputation: Get virus total IP reputation of all external IPs associated with the incident, and the geo-location of each IPs. Reputation is the IP's score calculated from the votes of the VirusTotal's community.
+  - IP reputation: Get virus total IP reputation of all external IPs associated with the incident, and the geo-location of each IP. Reputation is the IP's score calculated from the votes of the VirusTotal's community.
 
   - User Account Risk Details: Get risk details from the IdentityInfo table of all users associated with the incident.
 
@@ -306,7 +306,7 @@ The analyst sees the additional alerts regarding the execution of a base64-encod
 
 The analyst notes that the PowerShell script:
 
-- Created a persistence mechanism by downloading a binary and hiding it into a NTFS Alternate Data Stream (ADS). ADSs are used in Windows to store additional information about files but attackers also use them to hide content.
+- Created a persistence mechanism by downloading a binary and hiding it into an NTFS Alternate Data Stream (ADS). ADSs are used in Windows to store additional information about files but attackers also use them to hide content.
 - Launched the binary and configured it to be launched at every startup using a scheduled task. 
 
 Once launched, the binary creates a network connection to an IP address that has been declared as malicious.
@@ -332,11 +332,11 @@ The analyst then took response actions by running playbooks from automatic tasks
 
 - Get User Confirmation on Incident (Alert Trigger)
 
-  This automatic task obtains a confirmation on whether this suspicious activity was conducted by the user or not. The playbook **SIEMXDR-Request-UserConfirmation** sent an email notification to Polly and her manager to get acknowledgement for Polly’s activity. The playbook completed the task and created an incident comment for the result.
+  This automatic task obtains a confirmation on whether this suspicious activity was conducted by the user or not. The playbook **SIEMXDR-Request-UserConfirmation** sent an email notification to Polly and her manager to get acknowledgment for Polly’s activity. The playbook completed the task and created an incident comment for the result.
 
 - Block Suspicious IP in Microsoft 365 Defender (Entity Trigger)
 
-  The analyst determined that the IP address recorded in the alerts for the incident is a phishing website, so they wanted to blacklist the IP address in Microsoft Defender for Endpoint. The playbook **SIEMXDR-Block-IP-Entity-M365D** added the IP address to the Microsoft Defender for Endpoint Indicator and created an incident comment for the result.
+  The analyst determined that the IP address recorded in the alerts for the incident is a phishing website, so they wanted to add the IP address in Microsoft Defender for Endpoint. The playbook **SIEMXDR-Block-IP-Entity-M365D** added the IP address to the blocklist in Microsoft Defender for Endpoint Indicator and created an incident comment for the result.
 
 - Delete-FilefromBlobStorage-Incident (Alert Trigger)
 
@@ -364,21 +364,11 @@ The AiTM attack has been identified, investigated, resolved, and the additional 
 
 The following are the recommended training modules for this step.
 
-### title
-
-|Training  |[title](link)|
-|---------|---------|
-|:::image type="icon" source="media/filename.svg" border="false"::: | desc |
-> [!div class="nextstepaction"]
-> [Start >](link)
-
-
-
 ### Security incident management in Microsoft Sentinel
 
 |Training  |[Security incident management in Microsoft Sentinel](/training/modules/incident-management-sentinel/)|
 |---------|---------|
-|:::image type="icon" source="media/incident-management-sentinel.svg" border="false"::: | In this module, you'll investigate Microsoft Sentinel incident management, learn about Microsoft Sentinel events and entities, and discover ways to resolve incidents. |
+|:::image type="icon" source=./"media/incident-management-sentinel.svg" border="false"::: | In this module, you'll investigate Microsoft Sentinel incident management, learn about Microsoft Sentinel events and entities, and discover ways to resolve incidents. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/incident-management-sentinel/)
 
@@ -386,7 +376,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Training Improve your reliability with modern operations practices: Incident response](/training/modules/improve-reliability-incidents/)|
 |---------|---------|
-|:::image type="icon" source="media/improve-reliability-incidents.svg" border="false"::: | Learn the fundamentals of efficient incident response and the Azure tools that make them possible. |
+|:::image type="icon" source="./media/improve-reliability-incidents.svg" border="false"::: | Learn the fundamentals of efficient incident response and the Azure tools that make them possible. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/improve-reliability-incidents/)
 
@@ -394,7 +384,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Understand Microsoft 365 security incident management](/training/modules/audit-incident-management/)|
 |---------|---------|
-|:::image type="icon" source="media/understand-microsoft-365-security-incident-management.svg" border="false"::: | Learn how Microsoft 365 investigates, manages, and responds to security concerns to protect customers and the Microsoft 365 cloud environment. |
+|:::image type="icon" source="./media/understand-microsoft-365-security-incident-management.svg" border="false"::: | Learn how Microsoft 365 investigates, manages, and responds to security concerns to protect customers and the Microsoft 365 cloud environment. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/audit-incident-management/)
 

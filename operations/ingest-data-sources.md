@@ -22,103 +22,20 @@ Confirm the installation method, roles required, and licenses needed to turn on 
 
 The following table is a summary of the prerequisites required for key Azure and data connectors:
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 37%" />
-<col style="width: 38%" />
-<col style="width: 3%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Resource Type</strong></th>
-<th><strong>Installation Method</strong></th>
-<th colspan="2"><strong>Role/Permissions/License Needed</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Azure Active Directory</td>
-<td>Native Data connector</td>
-<td><p>Security Admin/Global Admin</p>
-<p>Sign-in Logs require AAD P1 or P2 license</p>
-<p>Other logs do not require P1/P2</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Azure Active Directory Identity Protection</td>
-<td>Native Data Connector</td>
-<td><p>Security Admin/Global Admin</p>
-<p>License: Azure AD Premium P2</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Azure Activity</td>
-<td>Azure Policy</td>
-<td>Owner role required on subscriptions</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Microsoft Defender for Cloud</td>
-<td>Native Data Connector</td>
-<td><p>Security Reader</p>
-<p>To enable bi-directional sync, Contributor/Security Admin role is required on the subscription.</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Microsoft Defender for Identity</td>
-<td>Native Data Connector</td>
-<td><p>Security Admin/Global admin</p>
-<p>License: Microsoft Defender for Identity</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Microsoft Defender for Office 365</td>
-<td>Native Data Connector</td>
-<td><p>Security Admin/Global admin</p>
-<p>License: Microsoft Defender for Office 365 Plan 2</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Office 365</td>
-<td>Native Data Connector</td>
-<td>Security Admin/Global admin</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Microsoft Defender for IoT</td>
-<td></td>
-<td>Contributor to subscription with IoT hubs</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Microsoft Defender for Cloud Apps</td>
-<td>Native Data Connector</td>
-<td><p>Security Admin/Global admin</p>
-<p>License: Microsoft Defender for Cloud Apps</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Microsoft Defender for Endpoint</td>
-<td>Native Data Connector</td>
-<td><p>Security Admin/Global admin</p>
-<p>License: Microsoft Defender for Endpoint</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Windows Security Events via AMA</td>
-<td>Native Data Connector with Agent</td>
-<td>Read/Write Workspace</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Syslog</td>
-<td>Native Data Connector with Agent</td>
-<td>Read/Write Workspace</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| Resource Type                              | Installation Method              | Role/Permissions/License Needed                                                                                    |
+|--------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| Azure Active Directory                     | Native Data connector            | Security Admin/Global Admin<br>Sign-in Logs require AAD P1 or P2 license<br>Other logs do not require P1/P2        |
+| Azure Active Directory Identity Protection | Native Data Connector            | Security Admin/Global Admin<br>License: Azure AD Premium P2                                                        |
+| Azure Activity                             | Azure Policy                     | Owner role required on subscriptions                                                                               |
+| Microsoft Defender for Cloud               | Native Data Connector            | Security Reader<br>To enable bi-directional sync, Contributor/Security Admin role is required on the subscription. |
+| Microsoft Defender for Identity            | Native Data Connector            | Security Admin/Global admin<br>License: Microsoft Defender for Identity                                            |
+| Microsoft Defender for Office 365          | Native Data Connector            | Security Admin/Global admin<br>License: Microsoft Defender for Office 365 Plan 2                                   |
+| Office 365                                 | Native Data Connector            | Security Admin/Global admin                                                                                        |
+| Microsoft Defender for IoT                 |                                  | Contributor to subscription with IoT hubs                                                                          |
+| Microsoft Defender for Cloud Apps          | Native Data Connector            | Security Admin/Global admin<br>License: Microsoft Defender for Cloud Apps                                          |
+| Microsoft Defender for Endpoint            | Native Data Connector            | Security Admin/Global admin<br>License: Microsoft Defender for Endpoint                                            |
+| Windows Security Events via AMA            | Native Data Connector with Agent | Read/Write Workspace                                                                                               |
+| Syslog                                     | Native Data Connector with Agent | Read/Write Workspace                                                                                               |
 
 ## Step 1. Turn on data connectors
 

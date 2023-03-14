@@ -48,6 +48,22 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 
 ## Reference architecture
 
+The integrated threat protection provided by SIEM and XDR combined helps to better protect your organization.
+
+
+:::image type="content" source="./media/sentinel-xdr.png" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.png":::
+
+
+
+In this diagram:
+
+- Insights from signals across your entire organization feed into Microsoft 365 Defender and Microsoft Defender for Cloud.
+- Microsoft 365 Defender and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors.
+- SecOps teams can then analyze and respond to threats. 
+- Microsoft Sentinel provides suppoort for multi-cloud environments and integrates with third-party apps and partners.
+
+
+
 :::image type="content" source="./media/common-attack-defense.png" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.png":::
 
 In this diagram:

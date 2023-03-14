@@ -368,7 +368,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Security incident management in Microsoft Sentinel](/training/modules/incident-management-sentinel/)|
 |---------|---------|
-|:::image type="icon" source="media/incident-management-sentinel.svg" border="false"::: | In this module, you'll investigate Microsoft Sentinel incident management, learn about Microsoft Sentinel events and entities, and discover ways to resolve incidents. |
+|:::image type="icon" source="./media/incident-management-sentinel.svg" border="false"::: | In this module, you'll investigate Microsoft Sentinel incident management, learn about Microsoft Sentinel events and entities, and discover ways to resolve incidents. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/incident-management-sentinel/)
 
@@ -376,7 +376,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Training Improve your reliability with modern operations practices: Incident response](/training/modules/improve-reliability-incidents/)|
 |---------|---------|
-|:::image type="icon" source="media/improve-reliability-incidents.svg" border="false"::: | Learn the fundamentals of efficient incident response and the Azure tools that make them possible. |
+|:::image type="icon" source="./media/improve-reliability-incidents.svg" border="false"::: | Learn the fundamentals of efficient incident response and the Azure tools that make them possible. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/improve-reliability-incidents/)
 
@@ -384,7 +384,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Understand Microsoft 365 security incident management](/training/modules/audit-incident-management/)|
 |---------|---------|
-|:::image type="icon" source="media/understand-microsoft-365-security-incident-management.svg" border="false"::: | Learn how Microsoft 365 investigates, manages, and responds to security concerns to protect customers and the Microsoft 365 cloud environment. |
+|:::image type="icon" source="./media/understand-microsoft-365-security-incident-management.svg" border="false"::: | Learn how Microsoft 365 investigates, manages, and responds to security concerns to protect customers and the Microsoft 365 cloud environment. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/audit-incident-management/)
 

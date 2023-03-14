@@ -137,7 +137,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Introduction to Microsoft Sentinel](/training/modules/intro-to-azure-sentinel/)|
 |---------|---------|
-|:::image type="icon" source="media/intro-to-azure-sentinel.svg" border="false"::: | Learn how Microsoft Sentinel enables you to start getting valuable security insights from your cloud and on-premises data quickly. |
+|:::image type="icon" source="./media/intro-to-azure-sentinel.svg" border="false"::: | Learn how Microsoft Sentinel enables you to start getting valuable security insights from your cloud and on-premises data quickly. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/intro-to-azure-sentinel/)
 
@@ -145,7 +145,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Configure your Microsoft Sentinel environment](/training/paths/sc-200-configure-azure-sentinel-environment/)|
 |---------|---------|
-|:::image type="icon" source="media/configure-your-azure-sentinel-environment.svg" border="false"::: | Get started with Microsoft Sentinel by properly configuring the Microsoft Sentinel workspace. |
+|:::image type="icon" source="./media/configure-your-azure-sentinel-environment.svg" border="false"::: | Get started with Microsoft Sentinel by properly configuring the Microsoft Sentinel workspace. |
 > [!div class="nextstepaction"]
 > [Start >](/training/paths/sc-200-configure-azure-sentinel-environment/)
 
@@ -153,7 +153,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Create and manage Microsoft Sentinel workspaces](/training/modules/create-manage-azure-sentinel-workspaces/)|
 |---------|---------|
-|:::image type="icon" source="media/create-and-manage-azure-sentinel-workspaces.svg" border="false"::: | Learn about the architecture of Microsoft Sentinel workspaces to ensure you configure your system to meet your organization's security operations requirements. |
+|:::image type="icon" source="./media/create-and-manage-azure-sentinel-workspaces.svg" border="false"::: | Learn about the architecture of Microsoft Sentinel workspaces to ensure you configure your system to meet your organization's security operations requirements. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/create-manage-azure-sentinel-workspaces/)
 

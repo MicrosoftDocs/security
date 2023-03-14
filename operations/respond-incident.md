@@ -368,7 +368,7 @@ The following are the recommended training modules for this step.
 
 |Training  |[Security incident management in Microsoft Sentinel](/training/modules/incident-management-sentinel/)|
 |---------|---------|
-|:::image type="icon" source="./media/incident-management-sentinel.svg" border="false"::: | In this module, you'll investigate Microsoft Sentinel incident management, learn about Microsoft Sentinel events and entities, and discover ways to resolve incidents. |
+|:::image type="icon" source="media/investigation-flow.png" border="false"::: | In this module, you'll investigate Microsoft Sentinel incident management, learn about Microsoft Sentinel events and entities, and discover ways to resolve incidents. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/incident-management-sentinel/)
 

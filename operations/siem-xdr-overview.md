@@ -17,8 +17,7 @@ ms.service: microsoft-365-security
 This solution guide walks through the process of setting up Microsoft XDR tools together with Microsoft Sentinel to accelerate your organization’s ability to respond to and remediate cybersecurity attacks. 
 
 
-
-![Image of incident investigation using Sentinel and Microsoft 365 Defender](./media/investigation-flow.png)
+:::image type="content" source="./media/investigation-flow.svg" alt-text="Image of incident investigation using Sentinel and Microsoft 365 Defender" lightbox="./media/investigation-flow.svg":::
 
 
 

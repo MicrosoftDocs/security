@@ -5,7 +5,7 @@
       href: overview.md
     
 
-    - name: Incident response with Microsoft Sentinel and Microsoft 365 Defender
+    - name: Respond to incidents with Microsoft Sentinel and Microsoft 365 Defender
       items:
         - name: Implement Microsoft Sentinel and Microsoft 365 Defender for Zero Trust
           href: siem-xdr-overview.md

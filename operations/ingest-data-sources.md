@@ -151,31 +151,33 @@ Fusion detections take the anomaly rule templates and the scheduled queries you 
 ## Recommended training
 
 
-
-
-
 ### Connect data to Microsoft Sentinel using data connectors
 
-**[Connect data to Microsoft Sentinel using data connectors](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/)**<br>
-Description: Learn how to connect data to Microsoft Sentinel using data connectors
-
+|Training  |[Connect data to Microsoft Sentinel using data connectors](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/)|
+|---------|---------|
+|:::image type="icon" source="media/connect-data-to-azure-sentinel-with-data-connectors.svg" border="false"::: |The primary approach to connect log data is using the Microsoft Sentinel provided data connectors. This module provides an overview of the available data connectors. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/)
 
+### Ingest log data with data connectors
 
 
-**[Ingest log data with data connectors](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/2-ingest-log-data-with-data-connectors)**<br>
-Description: Learn how to connect data to Microsoft Sentinel using data connectors
-
+|Training  |[Ingest log data with data connectors](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/2-ingest-log-data-with-data-connectors)|
+|---------|---------|
+|:::image type="icon" source="media/connect-data-to-azure-sentinel-with-data-connectors.svg" border="false"::: |The primary approach to connect log data is using the Microsoft Sentinel provided data connectors. This module provides an overview of the available data connectors. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/2-ingest-log-data-with-data-connectors)
 
 
-**[Identify threats with Behavioral Analytics| Microsoft Learn](/training/modules/use-entity-behavior-analytics-azure-sentinel/)**<br>
-Description: Learn how to identiy threats with Behavioral Analytics
 
+### Identify threats with Behavioral Analytics
+
+|Training  |[Identify threats with Behavioral Analytics| Microsoft Learn](/training/modules/use-entity-behavior-analytics-azure-sentinel/)|
+|---------|---------|
+|:::image type="icon" source="media/azure-sentinel-behavior-analytics.svg" border="false"::: |The primary approach to connect log data is using the Microsoft Sentinel provided data connectors. This module provides an overview of the available data connectors. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/use-entity-behavior-analytics-azure-sentinel/)
+
 
 
 ## Next steps

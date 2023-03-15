@@ -50,7 +50,7 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 The integrated threat protection provided by SIEM and XDR combined helps to better protect your organization.
 
 
-:::image type="content" source="./media/sentinel-xdr.png" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.png":::
+:::image type="content" source="./media/sentinel-xdr.svg" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.svg":::
 
 
 

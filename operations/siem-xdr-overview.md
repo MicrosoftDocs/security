@@ -113,8 +113,6 @@ Capability or feature | Description
 
 
 
-
-
 ## What's in this solution
 This solution steps you through the implementation of Microsoft Sentinel and XDR so that your security operations team can effectively remediate incidents using a Zero Trust approach. 
 
@@ -122,10 +120,7 @@ This solution steps you through the implementation of Microsoft Sentinel and XDR
 
 
 
-## Learning for analysts
-
-
-
+## Recommended training
 
 
 |Training  |[Connect Microsoft 365 Defender to Microsoft Sentinel](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/)|
@@ -134,21 +129,6 @@ This solution steps you through the implementation of Microsoft Sentinel and XDR
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/)
 
-
-
-
-
-
-
-
-connect-microsoft-defender-365-to-azure-sentinel.svg
-
-
-Description:Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft 365 Defender.<br>
-29 min - 8 units
-
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/)
 
 
 ## Next steps

@@ -162,7 +162,9 @@ The following are the recommended training modules for this step.
  
 Continue with Step 3 to configure Microsoft Sentinel to ingest data sources and configure incident detection.
 
-:::image type="content" source="./media/siem-xdr-solution-3.png" alt-text="Image of Microsoft Sentinel and XDR solution steps with step 3 highlighted.":::
+[![Image of Microsoft Sentinel and XDR solution steps with step 3 highlighted](./media/siem-xdr-solution-3.png)](ingest-data-sources.md)
+
+
 
 ## References
 Refer to these links to learn about the services and technologies mentioned in this article.

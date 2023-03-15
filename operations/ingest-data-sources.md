@@ -181,5 +181,7 @@ Description: Learn how to identiy threats with Behavioral Analytics
 ## Next steps
 
 Continue to [Step 4](respond-incident.md) to respond to an incident.
+
+
+[![Image of Microsoft Sentinel and XDR solution steps with step 4 highlighted](./media/siem-xdr-solution-4.png)](respond-incident.md)
  
-![Image of Microsoft Sentinel and XDR solution steps with step 4 highlighted](./media/siem-xdr-solution-4.png)

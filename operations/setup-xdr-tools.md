@@ -81,4 +81,8 @@ Use the following guidance to enable Defender for Cloud and integrate capabiliti
 ## Next steps
 
 Continue to [Step 2](siem-workspace.md) to architect a Sentinel workspace. 
-![Image of Microsoft Sentinel and XDR solution steps with step 2 highlighted](./media/siem-xdr-solution-2.png)
+
+
+[![Image of Microsoft Sentinel and XDR solution steps with step 2 highlighted](./media/siem-xdr-solution-2.png)](siem-workspace.md)
+
+

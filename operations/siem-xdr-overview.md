@@ -63,7 +63,7 @@ In this diagram:
 
 ### Common attack order and defense in place
 
-:::image type="content" source="./media/common-attack-defense.png" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.png":::
+:::image type="content" source="./media/common-attack-defense.svg" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.svg":::
 
 In this diagram:
 
@@ -118,7 +118,7 @@ Capability or feature | Description
 ## What's in this solution
 This solution steps you through the implementation of Microsoft Sentinel and XDR so that your security operations team can effectively remediate incidents using a Zero Trust approach. 
 
-![Image of Microsoft Sentinel and XDR solution steps](./media/siem-xdr-solution.png)
+[![Image of Microsoft Sentinel and XDR solution steps](./media/siem-xdr-solution.png)](setup-xdr-tools.md)
 
 
 

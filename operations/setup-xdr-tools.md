@@ -86,21 +86,13 @@ Use the following guidance to enable Defender for Cloud and integrate capabiliti
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/explore-security-solutions-microsoft-365-defender/)
 
-### Introduction to Microsoft 365 Defender
+### Enable and manage Microsoft Defender for Cloud
 
-|Training  |[Introduction to Microsoft 365 Defender](/training/modules/defender-introduction/)|
+|Training  |[Enable and manage Microsoft Defender for Cloud](/training/modules/azure-security-center/)|
 |---------|---------|
-|:::image type="icon" source="media/m365-defender-introduction.svg" border="false"::: | Understand what Microsoft 365 Defender is and how it can help to improve your security posture by empowering your Security Operations Center (SOC) or security teams with the tools they need to identify, control, and remediate security threats. |
+|:::image type="icon" source="media/azure-security-center.svg" border="false"::: | Use Microsoft Defender for Cloud to strengthen security posture and protect workloads against modern threats. |
 > [!div class="nextstepaction"]
-> [Start >](/training/modules/defender-introduction/)
-
-### Defend against threats with Microsoft 365
-
-|Training  |[Defend against threats with Microsoft 365](/training/paths/m365-security-threat-protection/)|
-|---------|---------|
-|:::image type="icon" source="media/defend-against-threats-m365-microsoft-threat-protection.svg" border="false"::: | Microsoft 365 includes security technologies that enterprises can use to secure email, data, devices, and identities against the risk of cyber threats. This learning path provides an introduction to Microsoft 365 Defender, Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Office 365. |
-> [!div class="nextstepaction"]
-> [Start >](/training/paths/m365-security-threat-protection/)
+> [Start >](/training/modules/azure-security-center/)
 
 
 ## Next steps

@@ -62,7 +62,7 @@ In this diagram:
 - SecOps teams can then analyze and respond to threats. 
 - Microsoft Sentinel provides suppoort for multi-cloud environments and integrates with third-party apps and partners.
 
-
+### Common attack order and defense in place
 
 :::image type="content" source="./media/common-attack-defense.png" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.png":::
 

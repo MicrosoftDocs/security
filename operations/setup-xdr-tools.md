@@ -90,7 +90,7 @@ Use the following guidance to enable Defender for Cloud and integrate capabiliti
 
 |Training  |[Introduction to Microsoft 365 Defender](/training/modules/defender-introduction/)|
 |---------|---------|
-|:::image type="icon" source="m365-defender-introduction.svg" border="false"::: | Understand what Microsoft 365 Defender is and how it can help to improve your security posture by empowering your Security Operations Center (SOC) or security teams with the tools they need to identify, control, and remediate security threats. |
+|:::image type="icon" source="media/m365-defender-introduction.svg" border="false"::: | Understand what Microsoft 365 Defender is and how it can help to improve your security posture by empowering your Security Operations Center (SOC) or security teams with the tools they need to identify, control, and remediate security threats. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/defender-introduction/)
 

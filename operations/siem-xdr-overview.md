@@ -1,5 +1,5 @@
 ﻿---
-title: Implement Microsoft Sentinel and XDR for a Zero Trust approach
+title: Implement Microsoft Sentinel and Microsoft 365 Defender for Zero Trust
 description: Implement Microsoft Sentinel and XDR for a Zero Trust approach
 ms.author: macapara
 author: mjcaparas

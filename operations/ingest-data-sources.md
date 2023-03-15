@@ -162,9 +162,9 @@ Fusion detections take the anomaly rule templates and the scheduled queries you 
 ### Connect logs to Microsoft Sentinel
 
 
-|Training  |[Ingest log data with data connectors](/training/paths/sc-200-connect-logs-to-azure-sentinel/)|
+|Training  |[Connect logs to Microsoft Sentinel](/training/paths/sc-200-connect-logs-to-azure-sentinel/)|
 |---------|---------|
-|:::image type="icon" source="media/connect-logs-to-azure-sentinel.svg" border="false"::: |Connect data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds to Microsoft Sentinel. |
+|:::image type="icon" source="media/connect-windows-hosts-to-azure-sentinel.svg" border="false"::: |Connect data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds to Microsoft Sentinel. |
 > [!div class="nextstepaction"]
 > [Start >](/training/paths/sc-200-connect-logs-to-azure-sentinel/)
 

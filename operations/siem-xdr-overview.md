@@ -47,7 +47,7 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 
 ## Reference architecture
 
-The integrated threat protection provided by SIEM and XDR combined helps to better protect your organization.
+Microsoft Sentinel is a cloud-native solution that provides security information and event management (SIEM) and security orchestration, automation, and response (SOAR) capabilities. Microsoft 365 Defender is an eXtended detection and response solution (XDR) that automatically collects, correlates, and analyzes signal, threat, and alert data from across your Microsoft 365 environment. Together, Sentinel and XDR provide a comprehensive solution to help organizations defendd against modern attacks.
 
 
 :::image type="content" source="./media/sentinel-xdr.svg" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.svg":::
@@ -125,7 +125,25 @@ This solution steps you through the implementation of Microsoft Sentinel and XDR
 ## Learning for analysts
 
 
-**[Connect Microsoft 365 Defender to Microsoft Sentinel](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/)**<br>
+
+
+
+|Training  |[Connect Microsoft 365 Defender to Microsoft Sentinel](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/)|
+|---------|---------|
+|:::image type="icon" source="media/connect-microsoft-defender-365-to-azure-sentinel.svg" border="false"::: | Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft 365 Defender. |
+> [!div class="nextstepaction"]
+> [Start >](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/)
+
+
+
+
+
+
+
+
+connect-microsoft-defender-365-to-azure-sentinel.svg
+
+
 Description:Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft 365 Defender.<br>
 29 min - 8 units
 

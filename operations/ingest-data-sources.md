@@ -159,14 +159,14 @@ Fusion detections take the anomaly rule templates and the scheduled queries you 
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/)
 
-### Ingest log data with data connectors
+### Connect logs to Microsoft Sentinel
 
 
-|Training  |[Ingest log data with data connectors](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/2-ingest-log-data-with-data-connectors)|
+|Training  |[Ingest log data with data connectors](/training/paths/sc-200-connect-logs-to-azure-sentinel/)|
 |---------|---------|
-|:::image type="icon" source="media/connect-data-to-azure-sentinel-with-data-connectors.svg" border="false"::: |The primary approach to connect log data is using the Microsoft Sentinel provided data connectors. This module provides an overview of the available data connectors. |
+|:::image type="icon" source="media/connect-logs-to-azure-sentinel.svg" border="false"::: |Connect data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds to Microsoft Sentinel. |
 > [!div class="nextstepaction"]
-> [Start >](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/2-ingest-log-data-with-data-connectors)
+> [Start >](/training/paths/sc-200-connect-logs-to-azure-sentinel/)
 
 
 

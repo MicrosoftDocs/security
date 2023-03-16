@@ -14,7 +14,7 @@ ms.service: microsoft-365-security
 
 After you've completed designing and implementing your Microsoft Sentinel workspaces, you can proceed to ingest data sources and configure incident detection.
 
-Data connectors are configured to enable data ingestion into the workspace. After enabling key data points to be ingested into Sentinel, User and Entity Behavior Analytics (UEBA) and Analytic Rules must also be enabled to capture anomalous and malicious activities; furthermore, Analytic Rules dictate how Alerts and Incidents are generated in your Sentinel instance.
+Data connectors are configured to enable data ingestion into the workspace. After enabling key data points to be ingested into Sentinel, User and Entity Behavior Analytics (UEBA) and Analytic Rules must also be enabled. Enable the rules to capture anomalous and malicious activities. Furthermore, Analytic Rules dictate how Alerts and Incidents are generated in your Sentinel instance.
 
 ## Before you begin
 
@@ -24,7 +24,7 @@ The following table is a summary of the prerequisites required for key Azure and
 
 | Resource Type                              | Installation Method              | Role/Permissions/License Needed                                                                                    |
 |--------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Azure Active Directory                     | Native Data connector            | Security Admin/Global Admin<br>Sign-in Logs require AAD P1 or P2 license<br>Other logs do not require P1/P2        |
+| Azure Active Directory                     | Native Data connector            | Security Admin/Global Admin<br>Sign-in Logs require Azure AD P1 or P2 license<br>Other logs don't require P1/P2        |
 | Azure Active Directory Identity Protection | Native Data Connector            | Security Admin/Global Admin<br>License: Azure AD Premium P2                                                        |
 | Azure Activity                             | Azure Policy                     | Owner role required on subscriptions                                                                               |
 | Microsoft Defender for Cloud               | Native Data Connector            | Security Reader<br>To enable bi-directional sync, Contributor/Security Admin role is required on the subscription. |
@@ -54,21 +54,21 @@ Use the following recommendations to get started with configuring data connector
 
     4.  Microsoft Defender for Cloud Apps Alerts.
 
-For more information, see [Free data sources](/azure/sentinel/billing?tabs=commitment-tier#free-data-sources).
+    For more information, see [Free data sources](/azure/sentinel/billing?tabs=commitment-tier#free-data-sources).
 
-The following table lists the free data sources you can enable in Microsoft Sentinel:
-
-| **Microsoft Sentinel data connector** | **Free data type**                      |
-|---------------------------------------|-----------------------------------------|
-| Azure Activity Logs                   | AzureActivity                           |
-| Azure AD Identity Protection          | SecurityAlert (IPC)                     |
-| Office 365                            | OfficeActivity (SharePoint)  <br> OfficeActivity (Exchange) <br>  OfficeActivity (Teams)           |
-| Microsoft Defender for Cloud          | SecurityAlert (Defender for Cloud)      |
-| Microsoft Defender for IoT            | SecurityAlert (Defender for IoT)        |
-| Microsoft 365 Defender                | SecurityIncident       <br>       SecurityAlert              |
-| Microsoft Defender for Endpoint       | SecurityAlert (Microsoft Defender Advanced Threat Protection (MDATP))                   |
-| Microsoft Defender for Identity       | SecurityAlert (Azure Advanced Threat Protection (AATP))                    |
-| Microsoft Defender for Cloud Apps     | SecurityAlert (Defender for Cloud Apps) |
+    The following table lists the free data sources you can enable in Microsoft Sentinel:
+    
+    | **Microsoft Sentinel data connector** | **Free data type**                      |
+    |---------------------------------------|-----------------------------------------|
+    | Azure Activity Logs                   | AzureActivity                           |
+    | Azure AD Identity Protection          | SecurityAlert (IPC)                     |
+    | Office 365                            | OfficeActivity (SharePoint)  <br> OfficeActivity (Exchange) <br>  OfficeActivity (Teams)           |
+    | Microsoft Defender for Cloud          | SecurityAlert (Defender for Cloud)      |
+    | Microsoft Defender for IoT            | SecurityAlert (Defender for IoT)        |
+    | Microsoft 365 Defender                | SecurityIncident       <br>       SecurityAlert              |
+    | Microsoft Defender for Endpoint       | SecurityAlert (Microsoft Defender Advanced Threat Protection (MDATP))                   |
+    | Microsoft Defender for Identity       | SecurityAlert (Azure Advanced Threat Protection (AATP))                    |
+    | Microsoft Defender for Cloud Apps     | SecurityAlert (Defender for Cloud Apps) |
 
 2.  To provide broader monitoring and alerting coverage, focus on the following data connectors:
 
@@ -86,7 +86,7 @@ The following table lists the free data sources you can enable in Microsoft Sent
 
             3.  Automation not covered by the built-in remediations offered by Microsoft Defender for Endpoint.  For more information, see [Remediation actions in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-remediation-actions).
 
-3.  If deployed in Azure, use the following connectors:
+3.  If deployed in Azure, use the following connectors to send these resources' Diagnostic Logs to Sentinel. The recommended method is setting up Azure Policy to require that their logs be forwarded to the underlying Log Analytics workspace. For more on information, see [Create diagnostic settings at scale using Azure Policy](/azure/azure-monitor/essentials/diagnostic-settings-policy): 
 
     - Azure Firewall
     - Azure Application Gateway
@@ -129,10 +129,12 @@ Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organi
 
 ## Step 3. Enable Analytic Rules
 
-The brains of Sentinel come from the Analytic Rules. These are rules you set to tell Sentinel to alert you to events with a set of conditions that you consider to be important. The out-of-the-box decisions Sentinel makes are based on User Entity Behavioral Analytics (UEBA) as well as on correlations of data across multiple data sources. 
+The brains of Sentinel come from the Analytic Rules. These are rules you set to tell Sentinel to alert you to events with a set of conditions that you consider to be important. The out-of-the-box decisions Sentinel makes are based on User Entity Behavioral Analytics (UEBA) and on correlations of data across multiple data sources. 
 
 
-Microsoft Sentinel enables the Fusion Advanced multistage attack detection analytic rule by default to automatically identify multistage attacks. Leveraging anomalous behavior and suspicious activity events observed across the cyber kill chain, Microsoft Sentinel generates incidents that allow you to see the compromise incidents with two or more alert activities in it with a high degree of confidence. Fusion alert technology correlates broad points of data signals with extended machine learning (ML) analysis to help determine known, unknown and emerging threats. For example, Fusion detection can take the Anomaly Rule templates and the scheduled queries created for the [Ransomware scenario](/azure/sentinel/fusion#fusion-for-ransomware) and pair them with alerts from Microsoft Security Suite products: 
+Microsoft Sentinel enables the Fusion Advanced multistage attack detection analytic rule by default to automatically identify multistage attacks. Leveraging anomalous behavior and suspicious activity events observed across the cyber kill chain, Microsoft Sentinel generates incidents that allow you to see the compromise incidents with two or more alert activities in it with a high degree of confidence.
+
+Fusion alert technology correlates broad points of data signals with extended machine learning (ML) analysis to help determine known, unknown and emerging threats. For example, Fusion detection can take the Anomaly Rule templates and the scheduled queries created for the [Ransomware scenario](/azure/sentinel/fusion#fusion-for-ransomware) and pair them with alerts from Microsoft Security Suite products: 
 
 -   Azure Active Directory Identity Protection
 -   Microsoft Defender for Cloud
@@ -143,7 +145,7 @@ Microsoft Sentinel enables the Fusion Advanced multistage attack detection analy
 -   Microsoft Defender for Identity
 -   Microsoft Defender for Office 365
 
-Another set of out-of-the-box rules enabled by default are Anomaly Rules in Sentinel. These are based on Machine Learning models and  UEBA that train on the data in your workspace to flag anomalous behavior across users, hosts, and others. Often a phishing attack will lead to an execution step such as local or cloud account manipulation/control or malicious script execution. Anomaly Rules look exactly for those types of activities: 
+Another set of out-of-the-box rules enabled by default are Anomaly Rules in Sentinel. These are based on Machine Learning models and  UEBA that train on the data in your workspace to flag anomalous behavior across users, hosts, and others. Often a phishing attack leads to an execution step such as local or cloud account manipulation/control or malicious script execution. Anomaly Rules look exactly for those types of activities: 
 
 -   [Anomalous Account Access Removal](/azure/sentinel/anomalies-reference#anomalous-account-access-removal)
 -   [Anomalous Account Creation](/azure/sentinel/anomalies-reference#anomalous-account-creation)
@@ -157,9 +159,9 @@ Another set of out-of-the-box rules enabled by default are Anomaly Rules in Sent
 -   [Anomalous Privilege Granted](/azure/sentinel/anomalies-reference#anomalous-privilege-granted)
 -   [Anomalous Sign-in](/azure/sentinel/anomalies-reference#anomalous-sign-in)
 
-Review the Anomaly Rules and Anomaly Score Threshold for each one; if you are observing false positives for example, consider duplicating the rule and modifying the threshold by following the steps outlined [here](/Azure/sentinel/work-with-anomaly-rules#tune-anomaly-rules).
+Review the Anomaly Rules and Anomaly Score Threshold for each one. If you're observing false positives for example, consider duplicating the rule and modifying the threshold by following the steps outlined in [Tune anomaly rules](/Azure/sentinel/work-with-anomaly-rules#tune-anomaly-rules).
 
-After reviewing and modifying Fusion and Anomaly rules, enable the out-of-the-box Microsoft Threat Intelligence Analytics Rule. [This rule matches your log data with Microsoft-generated threat intelligence](/azure/sentinel/understand-threat-intelligence#detect-threats-with-threat-indicator-analytics). Microsoft has a vast repository of threat intelligence data, and this Analytic Rule uses a subset of it to generate high fidelity alerts and incidents for SOC (security operations centers) teams to triage.
+After reviewing and modifying Fusion and Anomaly rules, enable the out-of-the-box Microsoft Threat Intelligence Analytics Rule. Verify that [this rule matches your log data with Microsoft-generated threat intelligence](/azure/sentinel/understand-threat-intelligence#detect-threats-with-threat-indicator-analytics). Microsoft has a vast repository of threat intelligence data, and this Analytic Rule uses a subset of it to generate high fidelity alerts and incidents for SOC (security operations centers) teams to triage.
 
 With Fusion, Anomaly, and Threat Intelligence Analytic Rules enabled, you should conduct a [MITRE Att&ck crosswalk](/azure/sentinel/mitre-coverage) to help you decide which remaining Analytic Rules to enable and to finish implementing a mature XDR (extended detection and response) process. This will empower you to detect and respond throughout the lifecycle of an attack.
 

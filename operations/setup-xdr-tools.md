@@ -12,9 +12,9 @@ ms.service: microsoft-365-security
 # Step 1. Setup XDR tools
 
 
-This article guides you to the best approaches for setting up Microsoft Defender 365 and other Microsoft XDR tools. This is the first step in setting up an integrated environment with Microsoft Sentinel for security operations.  
+This article guides you to the best approaches for setting up Microsoft Defender 365 and other Microsoft XDR tools, which is the first step in setting up an integrated environment with Microsoft Sentinel.
 
-The Microsoft Defender products are best in class for a security suite. Mature organizations unify their security platforms to ensure these are sharing information with each other for a more granular threat detection. Microsoft XDR tools have settings that allow the utilities to forward their information to each other. Additionally, each tool is designed to enrich data to each other.  
+The Microsoft Defender products are best in class for a security suite. Mature organizations unify their security platforms to ensure solutions are sharing information with each other for a more granular threat detection. Microsoft XDR tools have settings that allow the utilities to forward their information to each other. Additionally, each tool is designed to enrich data to each other.  
 
 
 ## Pilot and deploy Microsoft 365 Defender
@@ -33,7 +33,7 @@ In the illustration:
 6. Investigate and respond to threats 
 7. Promote your evaluation to production 
 
-This order is commonly recommended and designed to leverage the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Of course, you should prioritize the components to meet your business needs, and can enable these in a different order. 
+This order is commonly recommended and designed to apply the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. You should prioritize the components to meet your business needs, and can enabled in a different order. 
 
 Use the following guidance to enable Microsoft 365 capabilities and integrate these with other components. 
 
@@ -64,7 +64,7 @@ For this solution and target scenario, we'll also ingest the signals from Azure 
 
 
 ## Enable Microsoft Defender for Cloud
-Although Microsoft Defender for Cloud is not included in the reference architecture, you can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include these signals in your Sentinel workspace, if desired.  
+Although Microsoft Defender for Cloud is not included in the reference architecture, you can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include these signals in your Sentinel workspace.  
 
 
 ![Image of Microsoft 365 Defender and Microsoft Defender for Cloud](./media/m365d-cloud.png)

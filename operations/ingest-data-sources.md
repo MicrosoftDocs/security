@@ -161,12 +161,14 @@ Review the Anomaly Rules and Anomaly Score Threshold for each one; if you are ob
 
 After reviewing and modifying Fusion and Anomaly rules, enable the out-of-the-box Microsoft Threat Intelligence Analytics Rule. [This rule matches your log data with Microsoft-generated threat intelligence](/azure/sentinel/understand-threat-intelligence#detect-threats-with-threat-indicator-analytics). Microsoft has a vast repository of threat intelligence data, and this Analytic Rule uses a subset of it to generate high fidelity alerts and incidents for SOC (security operations centers) teams to triage. 
 
- 
-With Fusion, Anomaly, and Threat Intelligence Analytic Rules enabled, you should conduct a [MITRE Att&ck crosswalk](/azure/sentinel/mitre-coverage) to help you decide which remaining Analytic Rules to enable and to finish implementing a mature XDR (extended detection and response) process. This will empower you to detect and respond throughout the lifecycle of an attack.  
+With Fusion, Anomaly, and Threat Intelligence Analytic Rules enabled, you should conduct a [MITRE Att&ck crosswalk](/azure/sentinel/mitre-coverage) to help you decide which remaining Analytic Rules to enable and to finish implementing a mature XDR (extended detection and response) process. This will empower you to detect and respond throughout the lifecycle of an attack.
 
- The [MITRE Att&ck research department](https://attack.mitre.org/matrices/enterprise/) created the MITRE method, and it is provided as part of Microsoft Sentinel to ease your implementation. You should ensure you have Analytic rules that stretch the length and breadth of the attack vectors approach. Start by reviewing the MITRE techniques that are covered by your existing ‘Active’ Analytic Rules, and then select ‘**Analytic rule templates**’ and ‘**Anomaly Rules**’ in the **Simulated** dropdown. Now, it will show you where you have the adversary tactic and/or technique covered and where there are available Analytic Rules you should consider enabling to improve your coverage. For example, to detect potential phishing attacks, review the **Analytic rule templates** for the Phishing technique, and prioritize enabling the rules that specifically query the data sources you have onboarded to Sentinel.  
+The [MITRE Att&ck research department](https://attack.mitre.org/matrices/enterprise/) created the MITRE method, and it is provided as part of Microsoft Sentinel to ease your implementation. You should ensure you have Analytic rules that stretch the length and breadth of the attack vectors approach. Start by reviewing the MITRE techniques that are covered by your existing 'Active' Analytic Rules, and then select '**Analytic rule templates**' and '**Anomaly Rules**' in the **Simulated** dropdown. Now, it will show you where you have the adversary tactic and/or technique covered and where there are available Analytic Rules you should consider enabling to improve your coverage. For example, to detect potential phishing attacks, review the **Analytic rule templates** for the Phishing technique, and prioritize enabling the rules that specifically query the data sources you have onboarded to Sentinel.
 
-In summary, when turning on Analytic rules for Sentinel, prioritize enabling by connected data sources, organizational risk, and MITRE tactic.  
+:::image type="content" source="./media/sentinel-dashboard.svg" alt-text="Image of the Sentinel dashboard" lightbox="./media/sentinel-dashboard.svg":::
+
+
+In summary, when turning on Analytic rules for Sentinel, prioritize enabling by connected data sources, organizational risk, and MITRE tactic.
 
 ## Recommended training
 

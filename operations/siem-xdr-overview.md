@@ -1,6 +1,6 @@
 ﻿---
-title: Implement Microsoft Sentinel and Microsoft 365 Defender for Zero Trust
-description: Implement Microsoft Sentinel and XDR for a Zero Trust approach
+title: Implement Sentinel and Microsoft 365 Defender for Zero Trust
+description: Learn how to use Microsoft Sentinel (SIEM) with Microsoft 365 Defender and Microsoft Defender for Cloud, an XDR solution for Zero Trust
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
@@ -23,7 +23,7 @@ This solution guide walks through the process of setting up Microsoft XDR tools 
 
 
 
-This guidance walks through the process of responding to an incident, starting with discovery and triage in Microsoft Sentinel.  
+You will be guided through the process of responding to an incident, starting with discovery and triage in Microsoft Sentinel.  
 
 With Microsoft Sentinel, you can connect to any of the security sources using built-in connectors and industry standards. With its artificial intelligence you can correlate multiple low fidelity signals spanning multiple sources to create a complete view of ransomware kill chain and prioritized alerts. 
 

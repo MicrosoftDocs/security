@@ -90,7 +90,7 @@ Use the following guidance to enable Defender for Cloud and integrate capabiliti
 
 |Training  |[Enable and manage Microsoft Defender for Cloud](/training/modules/azure-security-center/)|
 |---------|---------|
-|:::image type="icon" source="media/azure-security-center.svg" border="false"::: | Use Microsoft Defender for Cloud to strengthen security posture and protect workloads against modern threats. |
+|:::image type="icon" source="media/microsoft-cloud-app-security.svg" border="false"::: | Use Microsoft Defender for Cloud to strengthen security posture and protect workloads against modern threats. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/azure-security-center/)
 

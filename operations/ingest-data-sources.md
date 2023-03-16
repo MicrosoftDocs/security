@@ -157,9 +157,9 @@ Another set of out-of-the-box rules enabled by default are Anomaly Rules in Sent
 -   [Anomalous Privilege Granted](/azure/sentinel/anomalies-reference#anomalous-privilege-granted)
 -   [Anomalous Sign-in](/azure/sentinel/anomalies-reference#anomalous-sign-in)
 
-Review the Anomaly Rules and Anomaly Score Threshold for each one; if you are observing false positives for example, consider duplicating the rule and modifying the threshold by following the steps outlined [here](/Azure/sentinel/work-with-anomaly-rules#tune-anomaly-rules).  
+Review the Anomaly Rules and Anomaly Score Threshold for each one; if you are observing false positives for example, consider duplicating the rule and modifying the threshold by following the steps outlined [here](/Azure/sentinel/work-with-anomaly-rules#tune-anomaly-rules).
 
-After reviewing and modifying Fusion and Anomaly rules, enable the out-of-the-box Microsoft Threat Intelligence Analytics Rule. [This rule matches your log data with Microsoft-generated threat intelligence](/azure/sentinel/understand-threat-intelligence#detect-threats-with-threat-indicator-analytics). Microsoft has a vast repository of threat intelligence data, and this Analytic Rule uses a subset of it to generate high fidelity alerts and incidents for SOC (security operations centers) teams to triage. 
+After reviewing and modifying Fusion and Anomaly rules, enable the out-of-the-box Microsoft Threat Intelligence Analytics Rule. [This rule matches your log data with Microsoft-generated threat intelligence](/azure/sentinel/understand-threat-intelligence#detect-threats-with-threat-indicator-analytics). Microsoft has a vast repository of threat intelligence data, and this Analytic Rule uses a subset of it to generate high fidelity alerts and incidents for SOC (security operations centers) teams to triage.
 
 With Fusion, Anomaly, and Threat Intelligence Analytic Rules enabled, you should conduct a [MITRE Att&ck crosswalk](/azure/sentinel/mitre-coverage) to help you decide which remaining Analytic Rules to enable and to finish implementing a mature XDR (extended detection and response) process. This will empower you to detect and respond throughout the lifecycle of an attack.
 

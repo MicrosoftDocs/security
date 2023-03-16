@@ -2,7 +2,6 @@
 title: Step 2. Architect an Azure Sentinel workspace
 description: Learn how to design for and implement Zero Trust principles for your Microsoft Sentinel workspaces. 
 ms.date: 03/15/2023
-ms.service: security
 author: JoeDavies-TechWriter
 ms.author: v-joedavies
 ms.topic: article

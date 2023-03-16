@@ -64,7 +64,7 @@ For this solution and target scenario, we'll also ingest the signals from Azure 
 
 
 ## Enable Microsoft Defender for Cloud
-Although Microsoft Defender for Cloud is not included in the reference architecture, you can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include these signals in your Sentinel workspace.  
+You can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include these signals in your Sentinel workspace.  
 
 
 ![Image of Microsoft 365 Defender and Microsoft Defender for Cloud](./media/m365d-cloud.png)

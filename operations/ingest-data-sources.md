@@ -1,12 +1,17 @@
 ---
-title: Ingest data sources and configure incident detection in Sentinel
-description: Learn how to ingest data sources and configure incident detection in Sentinel 
-ms.author: macapara
+title: Ingest data sources and configure incident detection in Microsoft Sentinel
+description: Learn how to configure Sentinel to ingest data sources and incident detection
 author: mjcaparas
-localization_priority: Normal
+ms.author: macapara
 manager: dansimp
+ms.date: 3/16/2023
 ms.topic: article
 ms.service: microsoft-365-security
+ms.localization_priority: Normal
+ms.collection: 
+  - msftsolution-sentinel-xdr
+  - msftsolution-scenario
+  - zerotrust-solution
 ---
 
 
@@ -122,7 +127,7 @@ After setting up data connectors in Sentinel, make sure to enable [User Entity B
 
 Data Sources required:
 
--   Active Directory logs (Microsoft Defender for Identity\*\*)
+-   Active Directory logs (Microsoft Defender for Identity)
 -   Azure Active Directory
     -   Audit Logs
     -   Azure Activity

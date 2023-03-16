@@ -13,7 +13,7 @@
           href: setup-xdr-tools.md
         - name: Step 2. Architect a Sentinel workspace
           href: siem-workspace.md
-        - name: Step 3. Ingest data sources
+        - name: Step 3. Ingest data sources and configure incident detection in Sentinel
           href: ingest-data-sources.md
         - name: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender
           href: respond-incident.md

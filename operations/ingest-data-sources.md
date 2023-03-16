@@ -127,7 +127,7 @@ Data Sources required:
 
 Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organization's entities across time and peer group to identify anomalous activity. This added utility aids in an expedition of determining if an asset has been compromised. Since it identifies peer group association this can also aid in determining the blast radius of said compromise.
 
-## Enabling Analytic Rules
+## Step 3. Enable Analytic Rules
 
 The brains of Sentinel come from the Analytic Rules. These are rules you set to tell Sentinel to alert you to events with a set of conditions that you consider to be important. The out-of-the-box decisions Sentinel makes are based on User Entity Behavioral Analytics (UEBA) as well as on correlations of data across multiple data sources. 
 
@@ -145,17 +145,17 @@ Microsoft Sentinel enables the Fusion Advanced multistage attack detection analy
 
 Another set of out-of-the-box rules enabled by default are Anomaly Rules in Sentinel. These are based on Machine Learning models and  UEBA that train on the data in your workspace to flag anomalous behavior across users, hosts, and others. Often a phishing attack will lead to an execution step such as local or cloud account manipulation/control or malicious script execution. Anomaly Rules look exactly for those types of activities: 
 
--   [Anomalous Account Access Removal](/azure/sentinel/anomalies-reference#anomalous-account-access-removal) 
--   [Anomalous Account Creation](/azure/sentinel/anomalies-reference#anomalous-account-creation) 
--   [Anomalous Account Deletion](/azure/sentinel/anomalies-reference#anomalous-account-deletion) 
--   [Anomalous Account Manipulation](/azure/sentinel/anomalies-reference#anomalous-account-manipulation) 
--   [Anomalous Code Execution (UEBA)](/azure/sentinel/anomalies-reference#anomalous-code-execution-ueba) 
--   [Anomalous Data Destruction](/azure/sentinel/anomalies-reference#anomalous-data-destruction) 
--   [Anomalous Defensive Mechanism Modification](/azure/sentinel/anomalies-reference#anomalous-defensive-mechanism-modification) 
--   [Anomalous Failed Sign-in](/azure/sentinel/anomalies-reference#anomalous-failed-sign-in) 
--   [Anomalous Password Reset](/azure/sentinel/anomalies-reference#anomalous-password-reset) 
--   [Anomalous Privilege Granted](/azure/sentinel/anomalies-reference#anomalous-privilege-granted) 
--   [Anomalous Sign-in](/azure/sentinel/anomalies-reference#anomalous-sign-in) 
+-   [Anomalous Account Access Removal](/azure/sentinel/anomalies-reference#anomalous-account-access-removal)
+-   [Anomalous Account Creation](/azure/sentinel/anomalies-reference#anomalous-account-creation)
+-   [Anomalous Account Deletion](/azure/sentinel/anomalies-reference#anomalous-account-deletion)
+-   [Anomalous Account Manipulation](/azure/sentinel/anomalies-reference#anomalous-account-manipulation)
+-   [Anomalous Code Execution (UEBA)](/azure/sentinel/anomalies-reference#anomalous-code-execution-ueba)
+-   [Anomalous Data Destruction](/azure/sentinel/anomalies-reference#anomalous-data-destruction)
+-   [Anomalous Defensive Mechanism Modification](/azure/sentinel/anomalies-reference#anomalous-defensive-mechanism-modification)
+-   [Anomalous Failed Sign-in](/azure/sentinel/anomalies-reference#anomalous-failed-sign-in)
+-   [Anomalous Password Reset](/azure/sentinel/anomalies-reference#anomalous-password-reset)
+-   [Anomalous Privilege Granted](/azure/sentinel/anomalies-reference#anomalous-privilege-granted)
+-   [Anomalous Sign-in](/azure/sentinel/anomalies-reference#anomalous-sign-in)
 
 Review the Anomaly Rules and Anomaly Score Threshold for each one; if you are observing false positives for example, consider duplicating the rule and modifying the threshold by following the steps outlined [here](/Azure/sentinel/work-with-anomaly-rules#tune-anomaly-rules).  
 

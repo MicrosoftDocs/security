@@ -18,19 +18,33 @@ ms.collection:
 
 This solution guide walks through the process of setting up Microsoft XDR tools together with Microsoft Sentinel to accelerate your organization’s ability to respond to and remediate cybersecurity attacks. 
 
+ Microsoft 365 Defender is an eXtended detection and response solution (XDR) that automatically collects, correlates, and analyzes signal, threat, and alert data from across your Microsoft 365 environment.
 
-:::image type="content" source="./media/investigation-flow.svg" alt-text="Image of incident investigation using Sentinel and Microsoft 365 Defender" lightbox="./media/investigation-flow.svg":::
+Microsoft Sentinel is a cloud-native solution that provides security information and event management (SIEM) and security orchestration, automation, and response (SOAR) capabilities. Together, Sentinel and XDR provide a comprehensive solution to help organizations defend against modern attacks.
 
 
+## Microsoft Sentinel and XDR architecture
 
-You will be guided through the process of responding to an incident, starting with discovery and triage in Microsoft Sentinel.  
+The following illustration provides a representation of how the XDR solution seamlessly integrates with Microsoft Sentinel.
 
-With Microsoft Sentinel, you can connect to any of the security sources using built-in connectors and industry standards. With its artificial intelligence you can correlate multiple low fidelity signals spanning multiple sources to create a complete view of ransomware kill chain and prioritized alerts. 
+
+:::image type="content" source="./media/sentinel-xdr.svg" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.svg":::
+
+
+In this diagram:
+
+- Insights from signals across your entire organization feed into Microsoft 365 Defender and Microsoft Defender for Cloud.
+- Microsoft 365 Defender and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors.
+- SecOps teams can then analyze and respond to threats. 
+- Microsoft Sentinel provides support for multicloud environments and integrates with third-party apps and partners.
+
+## Implementing Microsoft Sentinel and Microsoft 365 Defender for Zero Trust
 
 Microsoft 365 Defender is an extended detection and response (XDR) solution that complements Microsoft Sentinel. An XDR pulls raw telemetry data from across multiple tools like cloud applications, email security, identity, and access management. 
 
 Using AI and machine learning, the XDR then performs automatic analysis, investigation, and response in real time. The XDR solution also correlates security alerts into larger incidents, providing security teams greater visibility into attacks, and provides incident prioritization, helping analysts understand the risk level of the threat. 
 
+With Microsoft Sentinel, you can connect to any of the security sources using built-in connectors and industry standards. With its artificial intelligence you can correlate multiple low fidelity signals spanning multiple sources to create a complete view of ransomware kill chain and prioritized alerts. 
 
 
 
@@ -47,29 +61,20 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 
 
 
-## Reference architecture
 
-Microsoft Sentinel is a cloud-native solution that provides security information and event management (SIEM) and security orchestration, automation, and response (SOAR) capabilities. Microsoft 365 Defender is an eXtended detection and response solution (XDR) that automatically collects, correlates, and analyzes signal, threat, and alert data from across your Microsoft 365 environment. Together, Sentinel and XDR provide a comprehensive solution to help organizations defend against modern attacks.
+## Leveraging SIEM and XDR capabilities
 
+In this section, we'll look into a typical attack scenario involving a phishing attack then proceed with how to respond to the incident with Microsoft Sentinel and Microsoft 365 Defender. 
 
-:::image type="content" source="./media/sentinel-xdr.svg" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.svg":::
+### Common attack order
 
+The following illustration is a common attack order of a phishing scenario. The illustration also demonstrates the corresponding Microsoft security products in place to defend assets from the attack.
 
-
-In this diagram:
-
-- Insights from signals across your entire organization feed into Microsoft 365 Defender and Microsoft Defender for Cloud.
-- Microsoft 365 Defender and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors.
-- SecOps teams can then analyze and respond to threats. 
-- Microsoft Sentinel provides support for multicloud environments and integrates with third-party apps and partners.
-
-### Common attack order and defense in place
 
 :::image type="content" source="./media/common-attack-defense.svg" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.svg":::
 
-In this diagram:
 
-A common attack order of a phishing scenario is demonstrated and the corresponding Microsoft security products in place to defend assets from the attack.
+In this diagram:
 
 
 Summary of the attack order:
@@ -83,6 +88,15 @@ Summary of the attack order:
 |5 | Adversary moves laterally. | Microsoft Defender for Cloud Apps can detect anomalous activity of users accessing cloud apps.
 |6 | Sensitive data is exfiltrated. |  Microsoft Defender for Cloud can detect and respond to mass download events of files from Sharepoint. 
 
+
+### Incident response using Microsoft Sentinel and Microsoft 365 Defender
+
+Now that we've seen how a common attack takes place, let's look into leveraging the integration of Microsoft Sentinel and Microsoft 365 Defender.
+
+This illustration guides you through the process of responding to an incident, starting with discovery and triage in Microsoft Sentinel.
+
+
+:::image type="content" source="./media/investigation-flow.svg" alt-text="Image of incident investigation using Sentinel and Microsoft 365 Defender" lightbox="./media/investigation-flow.svg":::
 
 
 
@@ -111,7 +125,6 @@ Capability or feature | Description
 |[Data connectors](/azure/sentinel/connect-data-sources)  |Allow for the ingestion of data for analysis into sentinel  
 |[Content hub solution -Zero Trust (TIC 3.0)](/azure/sentinel/sentinel-solution)   | Zero Trust (TIC 3.0)  includes a workbook, analytics rules, and a playbook, which provide an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, helping organizations to monitor configurations over time. 
 |[Security Orchestration, Automation, and Response (SOAR) ](/azure/sentinel/sentinel-soar-content)  |Leverage automation rules and playbooks in response to security threats increases your SOC's effectiveness and saves you time and resources. 
-
 
 
 

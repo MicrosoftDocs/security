@@ -1,5 +1,5 @@
 ---
-title: Ingest data sources and configure incident detection in Microsoft Sentinel
+title: Step 3. Ingest data sources and configure incident detection in Microsoft Sentinel
 description: Learn how to turn on data connectors, enable UEBA, and analytic rules in Sentinel to ingest data sources and incident detection
 author: mjcaparas
 ms.author: macapara

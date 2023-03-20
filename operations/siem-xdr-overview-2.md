@@ -46,10 +46,7 @@ Using AI and machine learning, the XDR then performs automatic analysis, investi
 
 With Microsoft Sentinel, you can connect to any of the security sources using built-in connectors and industry standards. With its artificial intelligence you can correlate multiple low fidelity signals spanning multiple sources to create a complete view of ransomware kill chain and prioritized alerts. 
 
-This illustration guides you through the process of responding to an incident, starting with discovery and triage in Microsoft Sentinel.
 
-
-:::image type="content" source="./media/investigation-flow.svg" alt-text="Image of incident investigation using Sentinel and Microsoft 365 Defender" lightbox="./media/investigation-flow.svg":::
 
 
 This guidance helps you mature your Zero Trust architecture by mapping the principles of Zero Trust in the following ways.    
@@ -65,9 +62,13 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 
 
 
-## Common attack order and defense in place
+## Leveraging SIEM and XDR capabilities
 
-The following illustion is a common attack order of a phishing scenario. The illustration also demonstrates the corresponding Microsoft security products in place to defend assets from the attack.
+In this section, we'll look into a typical attack scenario involving a phishing attack then proceed with how to respond to the incident with Microsoft Sentinel and Microsoft 365 Defender. 
+
+### Common attack order
+
+The following illustration is a common attack order of a phishing scenario. The illustration also demonstrates the corresponding Microsoft security products in place to defend assets from the attack.
 
 
 :::image type="content" source="./media/common-attack-defense.svg" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.svg":::
@@ -86,6 +87,16 @@ Summary of the attack order:
 |4 | Credential theft. | Microsoft Defender for Identity protects identities by: monitoring user behavior and activities, detecting lateral movement and alerting on anomalous activity.
 |5 | Adversary moves laterally. | Microsoft Defender for Cloud Apps can detect anomalous activity of users accessing cloud apps.
 |6 | Sensitive data is exfiltrated. |  Microsoft Defender for Cloud can detect and respond to mass download events of files from Sharepoint. 
+
+
+### Incident response using Microsoft Sentinel and Microsoft 365 Defender
+
+Now that we've seen how a common attack takes place, let's look into leveraging the integration of Microsoft Sentinel and Microsoft 365 Defender.
+
+This illustration guides you through the process of responding to an incident, starting with discovery and triage in Microsoft Sentinel.
+
+
+:::image type="content" source="./media/investigation-flow.svg" alt-text="Image of incident investigation using Sentinel and Microsoft 365 Defender" lightbox="./media/investigation-flow.svg":::
 
 
 

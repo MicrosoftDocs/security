@@ -63,7 +63,7 @@ After creating your application, you will need to access the device and complian
 
 This diagram shows how device compliance information flows from the device to your ISV solution. End user devices receive policies from Intune, a mobile threat defense (MTD) partner, or an mobile device management (MDM) compliance partner. Once the compliance information is gathered from the devices, Intune calculates the overall compliance state of each device and stores that in Azure AD. By using the Microsoft Graph API, your solution can read and respond to the device compliance state, applying the principles of Zero Trust.
 
-When enrolled with Intune, a device record is created in Intune with additional device details, including the device compliance state. Intune forwards the device compliance state to Azure AD, where Azure AD also stores the compliance state with each device. By making a GET on <https://graph.microsoft.com/v1.0/deviceManagement/managedDevices> you can see all the enrolled devices for a tenant and their compliance state. Or you can query <https://graph.microsoft.com/v1.0/devices> to get a list of the Azure AD registered and enrolled devices and their compliance state.
+When enrolled with Intune, a device record is created in Intune with additional device details, including the device compliance state. Intune forwards the device compliance state to Azure AD, where Azure AD also stores the compliance state with each device. By making a GET on `https://graph.microsoft.com/v1.0/deviceManagement/managedDevices` you can see all the enrolled devices for a tenant and their compliance state. Or you can query `https://graph.microsoft.com/v1.0/devices` to get a list of the Azure AD registered and enrolled devices and their compliance state.
 
 For example, this request:
 
@@ -112,7 +112,7 @@ Microsoft Defender for IoT is a unified security solution built specifically to 
 
 Defender for IoT network sensors deployed in your network perform deep packet inspection (DPI) across your network traffic and provide OT-aware behavioral analytics. Data about devices and traffic detected by Defender for IoT's network sensors are sent to Defender for IoT, including details about detected vulnerabilities and threats in your network.
 
-:::image type="content" source="../media/integrate/endpoints/defender-for-iot.png" alt-text="Diagram of Defender for IoT deployed in an OT network.":::
+:::image type="content" source="../media/integrate/endpoints/defender-for-iot.png" alt-text="Diagram of Defender for IoT deployed in an OT network." border="false":::
 
 Additionally:
 

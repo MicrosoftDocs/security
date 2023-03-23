@@ -262,7 +262,12 @@
     - name: Identity
       href: integrate/identity.md
     - name: Endpoints
-      href: integrate/endpoints.md
+      items:
+      - name: Overview
+        href: integrate/endpoints.md
+      - name: Monitor for Zero Trust with Microsoft Defender for IoT
+        href: /azure/defender-for-iot/organizations/monitor-zero-trust?toc=/security/zero-trust/integrate/TOC.json&bc=/security/zero-trust/breadcrumb/toc.json
+        maintainContext: true
     - name: Applications
       href: integrate/applications.md
     - name: Data

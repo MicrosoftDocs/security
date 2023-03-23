@@ -1,7 +1,7 @@
 ---
 title: Endpoint integration overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Endpoint and Microsoft Endpoint Manager to help customers adopt a Zero Trust model and keep their organizations secure.
-ms.date: 02/22/2023
+ms.date: 03/23/2023
 ms.service: security
 author: janicericketts
 ms.author: jricketts
@@ -24,6 +24,7 @@ This integration guide includes instructions for integrating with the following 
 
 - [Microsoft Defender for Endpoint](#microsoft-defender-for-endpoint), which helps enterprise networks prevent, detect, investigate, and respond to advanced threats.
 - [Microsoft Endpoint Manager](#microsoft-endpoint-manager), which provides protection and security for the devices that employees use and the applications that run on those devices.
+- [Microsoft Defender for IoT](#microsoft-defender-for-iot), which provides security across your operational technology (OT) networks.
 
 ### Microsoft Defender for Endpoint
 
@@ -105,7 +106,27 @@ An ISV integrating with Endpoint Manager will also want to ensure their applicat
 
 In addition to creating your application as a single-tenant or multi-tenant (preferred) application, you must declare the delegated or application permissions required by your application to access Endpoint Manager information and perform actions against Endpoint Manager. View information about getting started with permissions here: [Quickstart: Configure an app to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
 
+### Microsoft Defender for IoT
+
+Microsoft Defender for IoT is a unified security solution built specifically to identify IoT and OT devices, vulnerabilities, and threats. Use Defender for IoT to apply security across your entire IoT/OT environment, including existing devices that may not have built-in security agents.
+
+Defender for IoT network sensors deployed in your network perform deep packet inspection (DPI) across your network traffic and provide OT-aware behavioral analytics. Data about devices and traffic detected by Defender for IoT's network sensors are sent to Defender for IoT, including details about detected vulnerabilities and threats in your network.
+
+:::image type="content" source="../media/integrate/endpoints/defender-for-iot.png" alt-text="Diagram of Defender for IoT deployed in an OT network.":::
+
+Additionally:
+
+- Connect Defender for IoT to Microsoft Sentinel or other, third-party systems to manage alerts, ticketing, and automation.
+- Deploy Defender for IoT network sensors across your entire environment, in separate sites for different locations around the world. Apply principles of zero trust by segmenting your sensors *sites* and *zones* and then tracking traffic across those zones.
+
+For more information, see:
+
+- [Zero Trust and your OT networks](/azure/defender-for-iot/organizations/concept-zero-trust)
+- [Monitor your OT networks with Zero Trust principles](/azure/defender-for-iot/organizations/monitor-zero-trust)
+- [Investigate Defender for IoT incidents with Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring)
+
 ## Next steps
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [Microsoft Endpoint Manager](/mem/)
+- [Microsoft Defender for IoT](/azure/defender-for-iot/organizations)

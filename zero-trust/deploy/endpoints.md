@@ -82,6 +82,24 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
    </tr>
 </table>
 
+### Zero Trust and your OT networks
+
+Operational technology (OT) network architectures often differ from traditional IT infrastructure. OT systems use unique technology with proprietary protocols, and may have aging platforms and limited connectivity and power. OT networks also may have specific safety requirements and unique exposures to physical or local attacks, such as via external contractors signing into your network.
+
+Implement Zero Trust principles across your OT networks to help you with challenges, such as:
+
+- **Controlling remote connections** into your OT systems, securing your network jump posts, and preventing lateral movement across your network
+
+- **Reviewing and reducing interconnections** between dependent systems, simplifying identity processes, such as for contractors signing into your network
+
+- **Finding single points of failure** in your network, identifying issues in specific network segments, and reducing delays and bandwidth bottlenecks
+
+Deploy [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) network sensors to detect devices and monitor traffic across your OT networks. Defender for IoT assesses your devices for vulnerabilities and provides risk-based mitigation steps, and continuously monitors your devices for anomalous or unauthorized behavior.
+
+Deploy network sensors in separate sites for different locations around the world, and apply principles of zero trust by segmenting your sensors *sites* and *zones* and then tracking traffic across those zones.
+
+For more information, see [Zero Trust in Defender for IoT](/azure/defender-for-iot/organizations/concept-zero-trust).
+
 ## Endpoint Zero Trust deployment guide
 
 This guide will walk you through the steps required to secure your devices following the principles of a Zero Trust security framework.
@@ -564,11 +582,23 @@ Building and maintaining customized operating system images is a time-consuming 
 
 -   [Configure Apple DEP](/mem/intune/enrollment/device-enrollment-program-enroll-ios) to automatically enroll iOS and iPadOS devices.
 
+### Configure traffic mirroring to Defender for IoT network sensors and monitor OT traffic
+
+If you're working with an OT network, we recommend that you deploy Defender for IoT to monitor your traffic for vulnerabilities and threats that are specific to OT environments. Monitor your traffic using air-gapped resources or connect to the cloud to share detected devices and alerts with other Microsoft services, such as Microsoft Sentinel.
+
+For more information, see:
+
+- [Get started with OT security monitoring](/azure/defender-for-iot/organizations/getting-started)
+- [Zero Trust and your OT networks](/azure/defender-for-iot/organizations/concept-zero-trust)
+- [Monitor with Zero Trust](/azure/defender-for-iot/organizations/monitor-zero-trust)
+
 ## Products covered in this guide
 
 **Microsoft Azure**
 
-[Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
+[Azure Active Directory](https://azure.microsoft.com/products/active-directory/)
+
+[Microsoft Defender for IoT](https://azure.microsoft.com/products/iot-defender/)
 
 **Microsoft 365**
 

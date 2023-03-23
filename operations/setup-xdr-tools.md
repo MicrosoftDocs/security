@@ -27,11 +27,10 @@ The Microsoft Defender products are best in class for a security suite. Mature o
 
 Microsoft provides guidance to help you set up and get started with Microsoft 365 Defender components. The component services that are part of the Microsoft 365 Defender stack are:
 
-- **Microsoft Defender for Endpoint**
-- **Microsoft Defender for Identity**
-- **Microsoft Defender for Office 365**
-- **Microsoft Defender for Cloud Apps**
-
+- [Microsoft Defender for Identity](/defender-for-identity/what-is)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security)
+- [Microsoft Defender for Cloud Apps](/defender-cloud-apps/)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)
 
 ### Recommended order of enabling Microsoft 365 Defender components
 
@@ -64,7 +63,9 @@ Use the following guidance to enable Microsoft 365 capabilities and integrate th
 
 ## Microsoft 365 Defender portal
 
-The [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage) combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. It includes:
+The [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage) combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Microsoft 365 Defender unified portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
+
+The unified portal includes:
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.

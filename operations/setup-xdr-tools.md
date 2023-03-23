@@ -25,10 +25,15 @@ The Microsoft Defender products are best in class for a security suite. Mature o
 
 ## Pilot and deploy Microsoft 365 Defender
 
-Microsoft provides guidance to help you set up and get started with Microsoft 365 Defender components. 
+Microsoft provides guidance to help you set up and get started with Microsoft 365 Defender components. The component services that are part of the Microsoft 365 Defender stack are:
+
+- **Microsoft Defender for Endpoint**
+- **Microsoft Defender for Identity**
+- **Microsoft Defender for Office 365**
+- **Microsoft Defender for Cloud Apps**
 
 
-### Recommended order of enabling  Microsoft 365 Defender components
+### Recommended order of enabling Microsoft 365 Defender components
 
 If you haven't already set up Microsoft 365 Defender components, Microsoft recommends enabling the components in the order illustrated:
 

@@ -1,3 +1,4 @@
+items:
 - name: Docs
   tocHref: /
   topicHref: /
@@ -9,24 +10,3 @@
     - name: Zero Trust
       href: /security/zero-trust/
       topicHref: /security/zero-trust
-    - name: Zero Trust
-      href: /azure/sentinel/
-      topicHref: /security/zero-trust/index
-    - name: Zero Trust
-      href: /microsoft-365/enterprise/
-      topicHref: /security/zero-trust/index
-    - name: Zero Trust
-      href: /microsoft-365/security/
-      topicHref: /security/zero-trust/index
-    - name: Zero Trust
-      href: /microsoft-365/security/office-365-security/
-      topicHref: /security/zero-trust/index
-    - name: Zero Trust
-      href: /microsoft-365/solutions/
-      topicHref: /security/zero-trust/index
-    - name: Zero Trust
-      href: /microsoft-365/security/defender/
-      topicHref: /security/zero-trust/index
-    - name: Zero Trust
-      href: /microsoft-365/compliance/
-      topicHref: /security/zero-trust/index

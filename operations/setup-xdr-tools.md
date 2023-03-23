@@ -25,7 +25,12 @@ The Microsoft Defender products are best in class for a security suite. Mature o
 
 ## Pilot and deploy Microsoft 365 Defender
 
-Microsoft provides guidance to help you set up and get started with Microsoft 365 Defender components. If you haven't already set up Microsoft 365 Defender components, Microsoft recommends enabling the components in the order illustrated:
+Microsoft provides guidance to help you set up and get started with Microsoft 365 Defender components. 
+
+
+### Recommended order of enabling  Microsoft 365 Defender components
+
+If you haven't already set up Microsoft 365 Defender components, Microsoft recommends enabling the components in the order illustrated:
 
 ![Image of evaluate and pilot Microsoft 365 Defender](./media/m365-defender-eval-process.png) 
 
@@ -52,7 +57,7 @@ Use the following guidance to enable Microsoft 365 capabilities and integrate th
 |     Integrate Microsoft Purview with Defender for Cloud Apps  |   Microsoft Defender for Cloud Apps lets you automatically apply sensitivity labels from Microsoft Purview Information Protection. You can then investigate files by using these labels.  |   [Microsoft Purview Information Protection integration](/defender-cloud-apps/azip-integration)  |
 
 
-### Microsoft 365 Defender portal
+## Microsoft 365 Defender portal
 
 The [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage) combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. It includes:
 

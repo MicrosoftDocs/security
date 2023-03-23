@@ -73,6 +73,8 @@ The unified portal includes:
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
 
+Watch this short video to learn about the Microsoft 365 Defender portal.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
 ## Enable Azure Identity Protection
 

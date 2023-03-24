@@ -45,7 +45,7 @@ For an example of separate workspaces for operation and security roles, see [Con
 
 For a single tenant, there are two ways Microsoft Sentinel workspaces can be configured:
 
-- Single tenant with a single Microsoft Sentinel workspace. In this case, the workspace becomes the central repository for logs across all resources within the tenant.
+- Single tenant with a single Log Analytics workspace. In this case, the workspace becomes the central repository for logs across all resources within the tenant.
 
     - Advantages:
 

@@ -594,15 +594,16 @@ Implement Zero Trust principles across your OT networks to help you with challen
 
 Deploy [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) to monitor your OT traffic for vulnerabilities and threats that are specific to OT environments. Defender for IoT assesses your devices and traffic for vulnerabilities and provides risk-based mitigation steps, and continuously monitors your devices for anomalous or unauthorized behavior.
 
-Deploy network sensors in separate sites for different locations around the world, and apply principles of zero trust by segmenting your sensors *sites* and *zones* and then tracking traffic across those zones.
+Detect traffic by deploying cloud-connected or air-gapped network sensors in separate sites for different locations around the world. Apply principles of zero trust by segmenting your sensors *sites* and *zones* and then tracking traffic across those zones.
 
-Defender for IoT supports air-gapped resources, or cloud connections that allow you to share data with other Microsoft services, such as Microsoft Sentinel.
+Speed operations by sharing Defender for IoT data across your security operations center (SOC) and other parts of your organization. Integrate with Microsoft services, such as [Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring) and other partner services, including both SIEM and ticketing systems.
 
 For more information, see:
 
 - [Get started with OT security monitoring](/azure/defender-for-iot/organizations/getting-started)
 - [Zero Trust and your OT networks](/azure/defender-for-iot/organizations/concept-zero-trust)
 - [Monitor with Zero Trust](/azure/defender-for-iot/organizations/monitor-zero-trust)
+- [Defender for IoT integration catalog](/azure/defender-for-iot/organizations/integrate-overview)
 
 ## Conclusion
 

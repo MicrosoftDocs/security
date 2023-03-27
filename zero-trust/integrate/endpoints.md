@@ -114,16 +114,16 @@ Defender for IoT network sensors deployed in your network perform deep packet in
 
 :::image type="content" source="../media/integrate/endpoints/defender-for-iot.png" alt-text="Diagram of Defender for IoT deployed in an OT network." border="false":::
 
-Additionally:
+Deploy Defender for IoT network sensors across your entire environment, in separate sites for different locations around the world. Apply principles of zero trust by segmenting your sensors *sites* and *zones* and then tracking traffic across those zones.
 
-- Connect Defender for IoT to Microsoft Sentinel or other, third-party systems to manage alerts, ticketing, and automation.
-- Deploy Defender for IoT network sensors across your entire environment, in separate sites for different locations around the world. Apply principles of zero trust by segmenting your sensors *sites* and *zones* and then tracking traffic across those zones.
+Integrate with Microsoft services, such as [Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring) and other partner services, including both SIEM and ticketing systems, to share Defender for IoT data across your organization.
 
 For more information, see:
 
 - [Zero Trust and your OT networks](/azure/defender-for-iot/organizations/concept-zero-trust)
 - [Monitor your OT networks with Zero Trust principles](/azure/defender-for-iot/organizations/monitor-zero-trust)
 - [Investigate Defender for IoT incidents with Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring)
+- 
 
 ## Next steps
 

@@ -123,7 +123,7 @@ For more information, see:
 - [Zero Trust and your OT networks](/azure/defender-for-iot/organizations/concept-zero-trust)
 - [Monitor your OT networks with Zero Trust principles](/azure/defender-for-iot/organizations/monitor-zero-trust)
 - [Investigate Defender for IoT incidents with Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring)
-- 
+- [Defender for IoT integration catalog](/azure/defender-for-iot/organizations/integrate-overview)
 
 ## Next steps
 

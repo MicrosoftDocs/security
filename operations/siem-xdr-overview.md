@@ -4,7 +4,7 @@ description: Learn how to use Microsoft Sentinel (SIEM) with Microsoft 365 Defen
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
-ms.date: 3/16/2023
+ms.date: 3/29/2023
 ms.topic: article
 ms.service: microsoft-365-security
 ms.localization_priority: Normal

@@ -4,7 +4,7 @@ description: Learn how to turn on data connectors, enable UEBA, and analytic rul
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
-ms.date: 3/16/2023
+ms.date: 3/29/2023
 ms.topic: article
 ms.service: microsoft-365-security
 ms.localization_priority: Normal
@@ -17,7 +17,7 @@ ms.collection:
 
 # Step 3. Ingest data sources and configure incident detection in Sentinel
 
-After you've completed designing and implementing your Microsoft Sentinel workspaces, you can proceed to ingest data sources and configure incident detection.
+After you've completed designing and implementing your Microsoft Sentinel workspace(s), you can proceed to ingest data sources and configure incident detection.
 
 
 Data connectors are configured to enable data ingestion into the workspace. After enabling key data points to be ingested into Sentinel, User and Entity Behavior Analytics (UEBA) and Analytic Rules must also be enabled to capture anomalous and malicious activities. Analytic Rules dictate how Alerts and Incidents are generated in your Sentinel instance. Tailoring Analytic Rules to your environment and organizational needs through entity mapping allows you to produce high-fidelity incidents and reduce alert fatigue.
@@ -26,7 +26,7 @@ Data connectors are configured to enable data ingestion into the workspace. Afte
 
 Confirm the installation method, roles required, and licenses needed to turn on data connectors. For more information, see [Find your Microsoft Sentinel data connector \| Microsoft Learn](/azure/sentinel/data-connectors-reference).
 
-The following table is a summary of the prerequisites required for key Azure and data connectors:
+The following table is a summary of the prerequisites required to ingest key Azure and data connectors:
 
 | Resource Type                              | Installation Method              | Role/Permissions/License Needed                                                                                    |
 |--------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -40,14 +40,14 @@ The following table is a summary of the prerequisites required for key Azure and
 | Microsoft Defender for IoT                 |                                  | Contributor to subscription with IoT hubs                                                                          |
 | Microsoft Defender for Cloud Apps          | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Cloud Apps                                          |
 | Microsoft Defender for Endpoint            | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Endpoint                                            |
-| Windows Security Events through Azure Monitor Agent (AMA)            | Native Data Connector with Agent | Read/Write Workspace                                                                                               |
-| Syslog                                     | Native Data Connector with Agent | Read/Write Workspace                                                                                               |
+| Windows Security Events through Azure Monitor Agent (AMA)            | Native Data Connector with Agent | Read/Write on Log Analytics Workspace                                                                                               |
+| Syslog                                     | Native Data Connector with Agent | Read/Write Log Analytics Workspace                                                                                               |
 
 ## Step 1. Turn on data connectors
 
 Use the following recommendations to get started with configuring data connectors:
 
-1.  Focus on setting up with free data sources to ingest:
+1.  Focus on setting up free data sources to ingest:
 
     1.  Azure Activity Logs:
         a.  Ingesting Azure Activity Logs is **critical** in enabling Sentinel to provide a single-pane of glass view across the environment.
@@ -56,7 +56,7 @@ Use the following recommendations to get started with configuring data connector
 
         1.  Ingesting security alerts into Sentinel enables it to be the "central pane of incident management" across the environment.
 
-        2.  Incident investigation starts in Sentinel and should continue in the Microsoft 365 Defender or Defender for Cloud, if deeper analysis is required.
+        2.  Incident investigation starts in Sentinel and should continue in the Microsoft 365 Defender portal or Defender for Cloud, if deeper analysis is required.
 
     4.  Microsoft Defender for Cloud Apps Alerts.
 
@@ -64,6 +64,9 @@ Use the following recommendations to get started with configuring data connector
 
     The following table lists the free data sources you can enable in Microsoft Sentinel:
     
+    >[!TIP]
+    >For more information on the most up-to-date Sentinel pricing, see [Microsoft Sentinel Pricing](https://azure.microsoft.com/pricing/details/microsoft-sentinel/).
+
     | **Microsoft Sentinel data connector** | **Free data type**                      |
     |---------------------------------------|-----------------------------------------|
     | Azure Activity Logs                   | AzureActivity                           |
@@ -75,6 +78,8 @@ Use the following recommendations to get started with configuring data connector
     | Microsoft Defender for Endpoint       | SecurityAlert (Microsoft Defender Advanced Threat Protection (MDATP))                   |
     | Microsoft Defender for Identity       | SecurityAlert (Azure Advanced Threat Protection (AATP))                    |
     | Microsoft Defender for Cloud Apps     | SecurityAlert (Defender for Cloud Apps) |
+
+    
 
 2.  To provide broader monitoring and alerting coverage, focus on the following data connectors:
 
@@ -119,11 +124,13 @@ Use the following recommendations to get started with configuring data connector
 
     For more information, see, [Deploy a log forwarder to ingest Syslog and CEF logs to Microsoft Sentinel](/azure/sentinel/connect-log-forwarder).
 
+    Consider migrating from the legacy agent to the new unified Azure Monitor Agent guidance. For more information, see [MIgrat from legacy agents to Azure Monitor Agent](/azure/azure-monitor/agents/azure-monitor-agent-migration).
+
 6.  Search in content hub for other devices, Software as a service (SaaS) apps that require logs to be sent to Sentinel. For more information, see [Discover and manage Microsoft Sentinel out-of-the-box content ](/azure/sentinel/sentinel-solutions-deploy).
 
 ## Step 2. Enable User Entity Behavior Analytics 
 
-After setting up data connectors in Sentinel, make sure to enable [User Entity Behavior Analysis](/azure/sentinel/identify-threats-with-entity-behavior-analytics) to identify suspicious behavior  that could lead to phishing exploits and eventually attacks such as ransomware.
+After setting up data connectors in Sentinel, make sure to enable [User Entity Behavior Analysis](/azure/sentinel/identify-threats-with-entity-behavior-analytics) to identify suspicious behavior  that could lead to phishing exploits and eventually attacks such as ransomware. Often, anomaly detection through UEBA is the best method for detecting Zero-day exploits early on. 
 
 Data Sources required:
 
@@ -175,6 +182,15 @@ After reviewing and modifying Fusion and Anomaly rules, enable the out-of-the-bo
 With Fusion, Anomaly, and Threat Intelligence Analytic Rules enabled, you should conduct a [MITRE Att&ck crosswalk](/azure/sentinel/mitre-coverage) to help you decide which remaining Analytic Rules to enable and to finish implementing a mature XDR (extended detection and response) process. This will empower you to detect and respond throughout the lifecycle of an attack.
 
 The [MITRE Att&ck research department](https://attack.mitre.org/matrices/enterprise/) created the MITRE method, and it is provided as part of Microsoft Sentinel to ease your implementation. You should ensure you have Analytic rules that stretch the length and breadth of the attack vectors approach. Start by reviewing the MITRE techniques that are covered by your existing 'Active' Analytic Rules, and then select '**Analytic rule templates**' and '**Anomaly Rules**' in the **Simulated** dropdown. Now, it will show you where you have the adversary tactic and/or technique covered and where there are available Analytic Rules you should consider enabling to improve your coverage. For example, to detect potential phishing attacks, review the **Analytic rule templates** for the Phishing technique, and prioritize enabling the rules that specifically query the data sources you have onboarded to Sentinel.
+
+In general, there are five phases to a human-operated Ransomware attack, and Phishing falls under Initial Access as can be seen in the screenshot below. Continue through the remaining steps to cover the entire kill chain with appropriate Analytic Rules:
+
+1. Initial access
+2. Credential theft
+3. Lateral movement
+4. Persistence
+5. Defense evasion
+6. Exfiltration (this is where ransomware itself is detected)
 
 :::image type="content" source="./media/sentinel-dashboard.svg" alt-text="Image of the Sentinel dashboard" lightbox="./media/sentinel-dashboard.svg":::
 

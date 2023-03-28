@@ -5,7 +5,7 @@ description: Learn how to setup Microsoft 365 Defender, an extended detection an
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
-ms.date: 3/16/2023
+ms.date: 3/29/2023
 ms.topic: article
 ms.service: microsoft-365-security
 ms.localization_priority: Normal

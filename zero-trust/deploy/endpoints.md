@@ -584,13 +584,11 @@ Building and maintaining customized operating system images is a time-consuming 
 
 Operational technology (OT) network architectures often differ from traditional IT infrastructure. OT systems use unique technology with proprietary protocols, and may have aging platforms with limited connectivity and power, or specific safety requirements and unique exposures to physical attacks.
 
-Deploy Defender for IoT to apply zero trust principles to your OT network, monitoring traffic for anomalous or unauthorized behavior, especially as traffic crosses sites and zones. Watch for threats and vulnerabilities specific to OT devices, mitigating risks as they're detected.
+Deploy Defender for IoT to apply zero trust principles to your OT network, monitoring traffic for anomalous or unauthorized behavior as traffic crosses sites and zones. Watch for threats and vulnerabilities specific to OT devices, mitigating risks as they're detected.
 
-Speed operations by sharing Defender for IoT data across your security operations center (SOC) and other parts of your organization. Integrate with Microsoft services, such as [Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring) and other partner services, including both SIEM and ticketing systems.
+Speed operations by sharing Defender for IoT data across your security operations center (SOC) and other parts of your organization. Integrate with Microsoft services, such as [Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring) and other partner services, including both SIEM and ticketing systems. For example:
 
-For example:
-
-- Send Defender for IoT alert data to SIEMs such as [Splunk](/azure/defender-for-iot/organizations/tutorial-splunk), [IBM QRadar](/azure/defender-for-iot/organizations/tutorial-qradar), and more. Splunk and IBM QRadar also support Event Hub ingestion, which you can use to [forward cloud alerts from Defender for IoT](/azure/defender-for-iot/organizations/integrations/send-cloud-data-to-partners).
+- Forward on-premises alert data directly to SIEMs such as [Splunk](/azure/defender-for-iot/organizations/tutorial-splunk), [IBM QRadar](/azure/defender-for-iot/organizations/tutorial-qradar), and [more](/azure/defender-for-iot/organizations/integrate-overview). Splunk and IBM QRadar also support Event Hub ingestion, which you can use to [forward cloud alerts from Defender for IoT](/azure/defender-for-iot/organizations/integrations/send-cloud-data-to-partners).
 
 - [Integrate with ServiceNow's Operational Technology Manager](/azure/defender-for-iot/organizations/tutorial-servicenow) to import Defender for IoT data to ServiceNow and risk-based action with production process context.
 

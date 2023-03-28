@@ -76,7 +76,7 @@ The unified portal includes:
 Watch this short video to learn about the Microsoft 365 Defender portal.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
-## Enable Azure Identity Protection
+## Enable Azure AD Identity Protection
 
 Microsoft 365 Defender also ingests and includes the signals of Azure AD Identity Protection, as illustrated below. 
 

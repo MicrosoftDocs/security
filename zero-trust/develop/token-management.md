@@ -11,7 +11,7 @@ ms.custom: template-concept
 ---
 # Managing tokens for Zero Trust
 
-In [Zero Trust application development](../develop/overview), it's important to specifically define your application's intention and its resource access requirements. Your app should request only the access it requires to function as intended. This article helps you, as a developer, to build security into your applications with [ID tokens](/azure/active-directory/develop/id-tokens), [access tokens](/azure/active-directory/develop/access-tokens), and [security tokens](/azure/active-directory/develop/security-tokens) that your app can receive from the [Microsoft identity platform](/azure/active-directory/develop/)*.*
+In [Zero Trust application development](overview.md), it's important to specifically define your application's intention and its resource access requirements. Your app should request only the access it requires to function as intended. This article helps you, as a developer, to build security into your applications with [ID tokens](/azure/active-directory/develop/id-tokens), [access tokens](/azure/active-directory/develop/access-tokens), and [security tokens](/azure/active-directory/develop/security-tokens) that your app can receive from the [Microsoft identity platform](/azure/active-directory/develop/)*.*
 
 Ensure that your application adheres to the Zero Trust [principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access) and prevents usage in ways that compromise your intention. Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. Separate your app's sensitive and powerful sections, providing only authorized user access to these areas. Limit users who can use your application and the capabilities that they have in your app.
 
@@ -78,7 +78,7 @@ In your code, check for error classes rather than individual error cases. For ex
 
 You may need to fall back to `AcquireTokenInteractive` and provide claims challenges that the `AcquireTokenSilent` call requires. Doing so ensures effective management of the interactive request.
 
-# Next steps
+## Next steps
 
 - [Customizing tokens](zero-trust-token-customization.md) helps you to understand how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Authenticating users for Zero Trust](user-authentication.md) helps developers to learn best practices for authenticating application users in Zero Trust application development. It describes how to enhance application security with the Zero Trust principles of least privilege and verify explicitly.

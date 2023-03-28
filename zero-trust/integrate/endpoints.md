@@ -108,13 +108,19 @@ In addition to creating your application as a single-tenant or multi-tenant (pre
 
 ### Microsoft Defender for IoT
 
-Microsoft Defender for IoT is a unified security solution built specifically to identify IoT and OT devices, vulnerabilities, and threats. Use Defender for IoT to apply security across your entire IoT/OT environment, including existing devices that may not have built-in security agents.
+[Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) is a unified security solution built specifically to identify devices, vulnerabilities, and threats across IoT and operational technology (OT) networks. Use Defender for IoT to apply security across your entire IoT/OT environment, including existing devices that may not have built-in security agents.
 
-Defender for IoT network sensors deployed in your network perform deep packet inspection (DPI) across your network traffic and provide OT-aware behavioral analytics. Data about devices and traffic detected by Defender for IoT's network sensors are sent to Defender for IoT, including details about detected vulnerabilities and threats in your network.
+OT networks often differ from traditional IT infrastructure, and need a specialized approach to zero trust. OT systems use unique technology with proprietary protocols, and may have aging platforms with limited connectivity and power, or specific safety requirements and unique exposures to physical attacks.
+
+Defender for IoT supports zero trust principles by addressing OT-specific challenges, such as:
+
+- Helping you control remote connections into your OT systems
+- Reviewing and helping you reduce interconnections between dependent systems
+- Finding single points of failure in your network
+
+Defender for IoT uses network sensors to detect devices and traffic and watch for OT-specific vulnerabilities. Defender for IoT also provides risk-based mitigation steps, and continuously monitors your devices for anomalous or unauthorized behavior. Segment your sensors into sites and zones across your network to monitor traffic between zones.
 
 :::image type="content" source="../media/integrate/endpoints/defender-for-iot.png" alt-text="Diagram of Defender for IoT deployed in an OT network." border="false":::
-
-Deploy Defender for IoT network sensors across your entire environment, in separate sites for different locations around the world. Apply principles of zero trust by segmenting your sensors *sites* and *zones* and then tracking traffic across those zones.
 
 Integrate with Microsoft services, such as [Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring) and other partner services, including both SIEM and ticketing systems, to share Defender for IoT data across your organization.
 

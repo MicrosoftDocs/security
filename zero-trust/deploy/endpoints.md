@@ -582,21 +582,17 @@ Building and maintaining customized operating system images is a time-consuming 
 
 ## Zero Trust and your OT networks
 
-Operational technology (OT) network architectures often differ from traditional IT infrastructure. OT systems use unique technology with proprietary protocols, and may have aging platforms and limited connectivity and power. OT networks also may have specific safety requirements and unique exposures to physical or local attacks, such as via external contractors signing into your network.
+Operational technology (OT) network architectures often differ from traditional IT infrastructure. OT systems use unique technology with proprietary protocols, and may have aging platforms with limited connectivity and power, or specific safety requirements and unique exposures to physical attacks.
 
-Implement Zero Trust principles across your OT networks to help you with challenges, such as:
-
-- **Controlling remote connections** into your OT systems, securing your network jump posts, and preventing lateral movement across your network
-
-- **Reviewing and reducing interconnections** between dependent systems, simplifying identity processes, such as for contractors signing into your network
-
-- **Finding single points of failure** in your network, identifying issues in specific network segments, and reducing delays and bandwidth bottlenecks
-
-Deploy [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) to monitor your OT traffic for vulnerabilities and threats that are specific to OT environments. Defender for IoT assesses your devices and traffic for vulnerabilities and provides risk-based mitigation steps, and continuously monitors your devices for anomalous or unauthorized behavior.
-
-Detect traffic by deploying cloud-connected or air-gapped network sensors in separate sites for different locations around the world. Apply principles of zero trust by segmenting your sensors *sites* and *zones* and then tracking traffic across those zones.
+Deploy Defender for IoT to apply zero trust principles to your OT network, monitoring traffic for anomalous or unauthorized behavior, especially as traffic crosses sites and zones. Watch for threats and vulnerabilities specific to OT devices, mitigating risks as they're detected.
 
 Speed operations by sharing Defender for IoT data across your security operations center (SOC) and other parts of your organization. Integrate with Microsoft services, such as [Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring) and other partner services, including both SIEM and ticketing systems.
+
+For example:
+
+- Send Defender for IoT alert data to SIEMs such as [Splunk](/azure/defender-for-iot/organizations/tutorial-splunk), [IBM QRadar](/azure/defender-for-iot/organizations/tutorial-qradar), and more. Splunk and IBM QRadar also support Event Hub ingestion, which you can use to [forward cloud alerts from Defender for IoT](/azure/defender-for-iot/organizations/integrations/send-cloud-data-to-partners).
+
+- [Integrate with ServiceNow's Operational Technology Manager](/azure/defender-for-iot/organizations/tutorial-servicenow) to import Defender for IoT data to ServiceNow and risk-based action with production process context.
 
 For more information, see:
 

@@ -24,7 +24,7 @@ Data connectors are configured to enable data ingestion into the workspace. Afte
 
 ## Before you begin
 
-Confirm the installation method, roles required, and licenses needed to turn on data connectors. For more information, see [Find your Microsoft Sentinel data connector \| Microsoft Learn](/azure/sentinel/data-connectors-reference).
+Confirm the installation method, roles required, and licenses needed to turn on data connectors. For more information, see [Find your Microsoft Sentinel data connector](/azure/sentinel/data-connectors-reference).
 
 The following table is a summary of the prerequisites required to ingest key Azure and data connectors:
 
@@ -32,7 +32,9 @@ The following table is a summary of the prerequisites required to ingest key Azu
 |--------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | Azure Active Directory                     | Native Data connector            | Security Admin/Global Admin<br>Sign-in Logs require Azure AD P1 or P2 license<br>Other logs don't require P1/P2        |
 | Azure Active Directory Identity Protection | Native Data Connector            | Security Admin/Global Admin<br>License: Azure AD Premium P2                                                        |
-| Azure Activity                             | Azure Policy                     | Owner role required on subscriptions                                                                               |
+| Azure Activity                             | Azure Policy                     | Owner role required on subscriptions                                  
+                                             |
+| Microsoft 365 Defender | Native Data Connector | Security Admin/Global Admin<br>License: Microsoft 365 Defender
 | Microsoft Defender for Cloud               | Native Data Connector            | Security Reader<br><br>To enable bi-directional sync, Contributor/Security Admin role is required on the subscription. |
 | Microsoft Defender for Identity            | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Identity                                            |
 | Microsoft Defender for Office 365          | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Office 365 Plan 2                                   |
@@ -57,6 +59,9 @@ Use the following recommendations to get started with configuring data connector
         1.  Ingesting security alerts into Sentinel enables it to be the "central pane of incident management" across the environment.
 
         2.  Incident investigation starts in Sentinel and should continue in the Microsoft 365 Defender portal or Defender for Cloud, if deeper analysis is required.
+
+        >[!NOTE]
+        >To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft 365 Defender-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Azure Active Directory Identity Protection) when connecting Microsoft 365 Defender. For more information, see [Microsoft 365 Defender incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
 
     4.  Microsoft Defender for Cloud Apps Alerts.
 
@@ -146,6 +151,7 @@ Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organi
 ## Step 3. Enable Analytic Rules
 
 The brains of Sentinel come from the Analytic Rules. These are rules you set to tell Sentinel to alert you to events with a set of conditions that you consider to be important. The out-of-the-box decisions Sentinel makes are based on User Entity Behavioral Analytics (UEBA) and on correlations of data across multiple data sources. 
+
 
 
 Microsoft Sentinel enables the Fusion Advanced multistage attack detection analytic rule by default to automatically identify multistage attacks. Leveraging anomalous behavior and suspicious activity events observed across the cyber kill chain, Microsoft Sentinel generates incidents that allow you to see the compromise incidents with two or more alert activities in it with a high degree of confidence.

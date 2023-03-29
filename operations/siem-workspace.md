@@ -11,6 +11,7 @@ ms.collection:
   - msftsolution-sentinel-xdr
   - msftsolution-scenario
   - zerotrust-solution
+  - msftsolution-secops
 ---
 
 # Step 2. Architect an Azure Sentinel workspace

@@ -12,6 +12,7 @@ ms.collection:
   - msftsolution-sentinel-xdr
   - msftsolution-scenario
   - zerotrust-solution
+  - msftsolution-secops
 ---
 
 # Implement Microsoft Sentinel and Microsoft 365 Defender for Zero Trust 

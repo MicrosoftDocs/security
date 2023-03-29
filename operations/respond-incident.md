@@ -10,6 +10,7 @@ ms.collection:
   - msftsolution-sentinel-xdr
   - msftsolution-scenario
   - zerotrust-solution
+  - msftsolution-secops
 ---
 
 # Step 4. Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender

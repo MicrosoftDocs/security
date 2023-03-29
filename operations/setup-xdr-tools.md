@@ -13,6 +13,7 @@ ms.collection:
   - msftsolution-sentinel-xdr
   - msftsolution-scenario
   - zerotrust-solution
+  - msftsolution-secops
 ---
 
 # Step 1. Setup XDR tools

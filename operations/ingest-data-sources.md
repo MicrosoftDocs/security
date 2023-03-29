@@ -12,6 +12,7 @@ ms.collection:
   - msftsolution-sentinel-xdr
   - msftsolution-scenario
   - zerotrust-solution
+  - msftsolution-secops
 ---
 
 

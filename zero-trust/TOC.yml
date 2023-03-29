@@ -330,6 +330,8 @@
         href: develop/overprivileged-permissions.md
       - name: Non-user application identity
         href: develop/identity-non-user-applications.md
+      - name: Token management
+        href: develop/token-management.md
       - name: Token customization
         href: develop/zero-trust-token-customization.md
       - name: Secure apps with Continuous Access Evaluation

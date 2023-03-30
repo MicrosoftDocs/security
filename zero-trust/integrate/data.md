@@ -6,6 +6,8 @@ ms.service: security
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-partner
 ---
 
 # Data integrations
@@ -48,7 +50,7 @@ We have included the following guidance to help you on the journey to integratin
 This document describes common use cases for the MIP SDK, including how to get started using the SDK and building integrations. The MIP SDK exposes the labeling and protection services from Microsoft 365 Security and Compliance Center to third-party applications and services. Partners can use the SDK to build solutions with native support for applying labels and protection to files as well as reasoning over MIP-encrypted information and which actions should be taken when specific labels are detected.
 
 [https://aka.ms/mipsdksamples](https://aka.ms/mipsdksamples)
-This resource contains sample implementations showing the use of the MIP SDK in code. For example, the [.NET File Quickstart](/samples/azure-samples/mipsdk-dotnet-file-quickstart/mipsdk-dotnet-file-quickstart/) demonstrates labeling and reading labels on files.
+This resource contains sample implementations showing the use of the MIP SDK in code. For example, the [.NET File Quickstart](/samples/azure-samples/mipsdk-dotnet-file-quickstart/mipsdk-file-dotnet-quickstart/) demonstrates labeling and reading labels on files.
 
 ## Next steps
 

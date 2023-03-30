@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 08/19/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to learn how to define my application permission approach to credential management to authenticate, authorize, and manage permissions and consent.
 ---
 # Developing application permissions strategy

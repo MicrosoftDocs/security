@@ -7,6 +7,8 @@ author: memildin
 manager: rkarlin
 ms.author: memildin
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-partner
 ---
 
 # Infrastructure integrations

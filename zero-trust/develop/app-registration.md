@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 02/28/2023
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to learn about the application registration process and its requirements so that I can ensure that my apps satisfy Zero Trust principles of use least privileged access and assume breach.
 ---
 # Registering applications

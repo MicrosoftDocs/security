@@ -6,6 +6,8 @@ ms.service: security
 author: Kellylorenebaker
 ms.author: v-kbaker
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-pillar
 ---
 
 # Secure infrastructure with Zero Trust

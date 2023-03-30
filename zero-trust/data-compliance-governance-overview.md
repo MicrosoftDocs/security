@@ -6,6 +6,8 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-ramp
 ---
 
 # RaMP checklist —  Data, compliance, and governance

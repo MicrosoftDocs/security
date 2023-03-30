@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 03/28/2023
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to secure my applications with ID tokens, access tokens, and security tokens so that I can enhance application security with the principles of least privilege and verify explicitly.
 ---
 # Managing tokens for Zero Trust

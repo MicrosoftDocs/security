@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 07/28/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to understand how to determine which users my app allows, during app registration, from single tenants and multi-tenants.
 ---
 # Identity and account types for single- and multi-tenant apps

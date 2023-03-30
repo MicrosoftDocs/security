@@ -4,6 +4,20 @@
     - name: Overview
       href: overview.md
     
+
+    - name: Defend against threats with Microsoft Sentinel and Microsoft 365 Defender
+      items:
+        - name: Implement Microsoft Sentinel and Microsoft 365 Defender for Zero Trust
+          href: siem-xdr-overview.md
+        - name: Step 1. Setup XDR tools
+          href: setup-xdr-tools.md
+        - name: Step 2. Architect a Sentinel workspace
+          href: siem-workspace.md
+        - name: Step 3. Ingest data sources and configure incident detection in Sentinel
+          href: ingest-data-sources.md
+        - name: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender
+          href: respond-incident.md
+
     - name: Incident response
       items:
         - name: Overview

@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 10/10/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to learn best practices for protecting my API through registration, defining permissions and consent, and enforcing access to achieve my Zero Trust goals.
 ---
 # Protecting APIs

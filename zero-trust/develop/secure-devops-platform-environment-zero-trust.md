@@ -7,6 +7,8 @@ ms.author: jricketts
 ms.topic: conceptual
 ms.date: 11/11/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a DevOps team member, I want learn best practices for secret and certificate management so that I can secure my DevOps platform environments.
 ---
 # Securing the DevOps platform environment for Zero Trust

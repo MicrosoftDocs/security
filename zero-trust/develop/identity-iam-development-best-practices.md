@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 06/29/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to learn best practices for my application development lifecycle so that I can create secure applications that are Zero Trust compliant, starting with identity and access management (IAM).
 ---
 # Zero Trust identity and access management development best practices

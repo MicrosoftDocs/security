@@ -6,6 +6,8 @@ ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to learn how to implement the guiding principles of Zero Trust so that I can improve your application security.
 ---
 # Develop using Zero Trust principles

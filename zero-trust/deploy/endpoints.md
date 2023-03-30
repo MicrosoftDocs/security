@@ -6,6 +6,8 @@ ms.service: security
 author: garycentric
 ms.author: v-gmoor
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-pillar
 ---
 
 

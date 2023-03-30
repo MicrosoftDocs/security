@@ -7,6 +7,8 @@ author: mjcaparas
 ms.author: macapara
 ms.topic: conceptual
 ms.collection: highpri
+ms.collection:
+  - zerotrust-pillar
 ---
 
 # Deploying Zero Trust solutions

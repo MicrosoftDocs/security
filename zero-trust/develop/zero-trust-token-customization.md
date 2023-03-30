@@ -7,6 +7,8 @@ ms.author: jricketts
 ms.topic: conceptual
 ms.date: 12/13/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to learn about the information that I can receive in Azure AD tokens and how I can customize tokens so that I can improve flexibility and control while increasing application security with least privilege.
 ---
 # Customizing tokens

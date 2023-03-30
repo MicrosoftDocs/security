@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 07/28/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to implement the best authorization, permission, and consent models for my applications.
 ---
 # Authorization best practices

@@ -7,6 +7,8 @@ ms.author: jricketts
 ms.topic: conceptual
 ms.date: 12/13/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to learn how to configure my apps with app role definitions and assign security groups to app roles so that I can improve flexibility and control while increasing application security with least privilege.
 ---
 # Configuring group claims and app roles in tokens

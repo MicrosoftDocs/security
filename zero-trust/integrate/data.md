@@ -6,6 +6,8 @@ ms.service: security
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-partner
 ---
 
 # Data integrations

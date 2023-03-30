@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 08/19/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to implement the best approach for managing permissions in my application and develop using Zero Trust.
 ---
 # Developing delegated permissions strategy

@@ -7,6 +7,8 @@ ms.author: jricketts
 ms.topic: conceptual
 ms.date: 11/11/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to develop using Zero Trust principles so that I can innovate quickly and securely.
 ---
 # Embedding Zero Trust security into your developer workflow

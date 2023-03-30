@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 06/29/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer creating applications in the Microsoft identity platform, I want to know what my IT Pros need from me, and what I need from them, so that I can streamline my zero-trust development workflow.
 ---
 # Developer and administrator responsibilities for application registration,  authorization, and access

@@ -7,11 +7,7 @@ author: JoeDavies-TechWriter
 ms.author: v-joedavies
 ms.topic: conceptual
 ms.collection:
-  -	m365solution-saas
-  -	m365solution-scenario
-  -	m365solution-zero-trust
-  -	zerotrust-solution
-  - highpri
+  - zerotrust-illustrations
 ---
 
 # Zero Trust illustrations for IT architects and implementers
@@ -32,29 +28,6 @@ You can download these illustrations in the form of:
 - If available, a Microsoft PowerPoint file for presentations and to modify the slides for your own use.
 
 To use the same set of icons and templates in the Visio or PowerPoint files, get the downloads in [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates).
-
-<!---
-
-https://learn.microsoft.com/en-us/microsoft-365/solutions/cloud-architecture-models?view=o365-worldwide#networking
-
-Common structure for 
-
-H2/H3 
-
-Table with Item/Description
-
-Item
-Thumbnail
-Links
-Update date
-
-Decription
-
-| Item | Description |
-|:-----|:-----|
-|[![Illustration of the desc.](../media/tech-illus/xyz-thumb.png) ](https://download.microsoft.com/download/f/d/b/xyz/name.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/xyz/name.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/xyz/name.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [name](../path/markdown-name.md) <br/>|
-
---->
 
 ### Zero Trust for Microsoft 365
 

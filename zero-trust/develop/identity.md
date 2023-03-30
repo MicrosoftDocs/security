@@ -6,6 +6,8 @@ ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to learn about authentication, authorization, and identity management so that I can use a Zero Trust approach to identity in my software development lifecyle (SDLC).
 ---
 # Building apps that secure identity through permissions and consent

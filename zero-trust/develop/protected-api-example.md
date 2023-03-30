@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 09/12/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to to design a permissions and consent strategy so that I can provide the best user experience when I implement least privilege.
 ---
 # Example of API protected by Microsoft identity consent framework

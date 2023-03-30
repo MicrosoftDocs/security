@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 12/13/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to understand application security so that I can address the guiding principles of Zero Trust.
 ---
 # What do we mean by Zero Trust compliance?

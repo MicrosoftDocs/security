@@ -25,22 +25,14 @@ In this article we discuss our Network integration partners so customers can use
 ### Gateway Load Balancer
 Gateway Load Balancer is a SKU of the Azure Load Balancer portfolio catered for high performance and high availability scenarios with third-party Network Virtual Appliances (NVAs). It enables you to easily deploy, scale, and manage NVAs. 
 
-The supported security partners are ...
-
 ### Virtual WAN
 Virtual WAN is a networking service that brings many networking, security, and routing functionalities together to provide a single operational interface. It provides a hub and spoke architecture with scale and performance built in for branches (VPN/SD-WAN devices), users (Azure VPN/OpenVPN/IKEv2 clients), ExpressRoute circuits, and virtual networks. It enables a global transit network architecture, where the cloud hosted network 'hub' enables transitive connectivity between endpoints that may be distributed across different types of 'spokes'.
-
-The supported security partners are ...
 
 ### Azure Web Application Firewall
 Azure Web Application Firewall (WAF) provides centralized protection of your web applications from common exploits and vulnerabilities. WAF can be deployed with Azure Application Gateway, Azure Front Door, and Azure Content Delivery Network (CDN) service from Microsoft. WAF on Azure CDN is currently under public preview. 
 
-The supported security partners are ...
-
 ### DDOS Protection
 Azure DDoS Protection, combined with application design best practices, provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network. Protection is simple to enable on any new or existing virtual network, and it requires no application or resource changes.
-
-The supported security partners are ...
 
 ### Azure Firewall Manager
 

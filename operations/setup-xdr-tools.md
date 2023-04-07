@@ -1,7 +1,7 @@
 ---
 title: Step 1. Setup XDR tools - Microsoft 365 Defender and Microsoft Defender for Cloud
 titleSuffix: Microsoft 365 Defender
-description: Learn how to setup Microsoft 365 Defender, an extended detection and response (XDR) solution  and integrate it with Microsoft Sentinel.
+description: Learn how to setup Microsoft 365 Defender and Microsoft Defender for Cloud, an extended detection and response (XDR) solution, and integrate it with Microsoft Sentinel.
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
@@ -58,7 +58,7 @@ Use the following guidance to enable Microsoft 365 capabilities and integrate th
 |:---|:---|:---|
 |     Pilot and deploy Microsoft 365 Defender  |   Use this methodical process to deploy the components of Microsoft 365 Defender.  |  [Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview)  |
 |     Integrate Microsoft Defender for Endpoints with Microsoft Defender for Cloud Apps  |   Defender for Cloud Apps uses the traffic information collected by Defender for Endpoint about the cloud apps and services being accessed from IT-managed devices specified in the prerequisites below. The integration doesn't require any additional deployment and can be enabled directly from the settings in Defender for Endpoint and Microsoft 365 Defender.  |   [Microsoft Defender for Endpoint integration with Microsoft Defender for Cloud Apps](/defender-cloud-apps/mde-integration)  |
-|     Integrate Microsoft Defender for Identity with Defender for Cloud Apps  |   Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Identity to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises  |   [Microsoft Defender for Identity integration](/defender-cloud-apps/mdi-integration) |
+|     Integrate Microsoft Defender for Identity with Defender for Cloud Apps  |   Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Identity to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises.  |   [Microsoft Defender for Identity integration](/defender-cloud-apps/mdi-integration) |
 |     Integrate Microsoft Purview with Defender for Cloud Apps  |   Microsoft Defender for Cloud Apps lets you automatically apply sensitivity labels from Microsoft Purview Information Protection. You can then investigate files by using these labels.  |   [Microsoft Purview Information Protection integration](/defender-cloud-apps/azip-integration)  |
 
 

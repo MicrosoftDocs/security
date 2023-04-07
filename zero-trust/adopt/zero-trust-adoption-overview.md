@@ -36,7 +36,7 @@ Many security architects and IT teams ask for help communicating to business lea
 
 ## Zero Trust requires buy-in at the highest level
 
-Zero Trust protects business assets wherever they are and wherever they go. Zero Trust is a proactive, integrated approach to security that requires knowing what business assets and processes are most important to protect, and securing these while preserving business agility.
+Zero Trust protects business assets wherever they're and wherever they go. Zero Trust is a proactive, integrated approach to security that requires knowing what business assets and processes are most important to protect, and securing these while preserving business agility.
 
 **Adopting a Zero Trust approach requires buy-in across the C-suite.** As the threat landscape expands, and critical attacks become more common, business leaders across functional areas are increasingly concerned with the cybersecurity approach their organization's take.
 
@@ -57,7 +57,7 @@ The following is a generalized view of the possible functions taken by various C
 | --- | --- | --- |
 | Chief Executive Officer (CEO) | Responsible for the business | Zero Trust provides integrated approach to security across all digital layers. |
 | Chief Marketing Officer (CMO) | Responsible for the marketing vision and execution | Zero Trust allows the rapid recovery from breach and empowers the responsible reporting function for a public-facing organization, allowing breaches to be contained without reputational loss. |
-| Chief Information Officer (CIO) | Responsible for IT as a whole | Zero Trust principles eliminate vertical security solutions that are not aligned to business outcomes and enables Security as a Platform, which does align to business outcomes. |
+| Chief Information Officer (CIO) | Responsible for IT as a whole | Zero Trust principles eliminate vertical security solutions that aren't aligned to business outcomes and enables Security as a Platform, which does align to business outcomes. |
 | Chief Information Security Officer (CISO) | Responsible for security program implementation | Zero Trust principles provide a sufficient foundation for the organization to comply with various security standards and enables the organization to secure data, assets, and infrastructure. |
 | Chief Technology Officer (CTO) | Chief Architect in the business | Zero Trust helps with defensible technology alignment aligned to business outcomes. Using Zero Trust, security is baked into every architecture. |
 | Chief Operations Officer (COO) | Responsible for operational execution | Zero Trust helps with operational governance; the “how to” of the security vision and the surfacing of who did what and when. Both are aligned to business outcomes. |
@@ -69,7 +69,7 @@ Zero Trust is a strategy and architecture based on three principles.
 
 | Principle | Technical description | Business description |
 | --- | --- | --- |
-| Verify explicitly | Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and anomalies. | This principle requires users to verify who they are, using more than one method, so that compromised accounts gained by hackers are not allowed to access your data and apps. <br<br> This approach also requires devices to be recognized as being allowed to access the environment and, ideally, to be managed and healthy (not compromised by malware). |
+| Verify explicitly | Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and anomalies. | This principle requires users to verify who they are, using more than one method, so that compromised accounts gained by hackers aren't allowed to access your data and apps. <br<br> This approach also requires devices to be recognized as being allowed to access the environment and, ideally, to be managed and healthy (not compromised by malware). |
 | Use least privileged access | Limit user access with just-in-time and just-enough-access (JIT/JEA), risk-based adaptive polices, and data protection to help secure both data and productivity. | This principle limits the blast radius of a potential breach so that if an account is compromised, the potential damage is limited. <br><br> For accounts with greater privileges, such as administrator accounts, this involves using capabilities that limit how much access these accounts have and when they have access. It also involves using higher-levels of risk-based authentication policies for these accounts. <br><br> This principle also involves identifying and protecting sensitive data. For example, a document folder associated with a sensitive project should only include access permissions for the team members who need it. <br><br> These protections together limit how much damage can be caused by a compromised user account. |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | This principle assumes the likelihood that an attacker will gain access to an account, identity, endpoint, application, API, or other asset. To respond, Microsoft protects all of the assets accordingly to limit the damage. <br><br> This principle also involves implementing tools for ongoing threat detection and rapid response. Ideally these tools have access to signals integrated across your environment and can take automated actions, such as disabling an account, to reduce the damage as soon as possible.|
 
@@ -77,7 +77,7 @@ Zero Trust is a strategy and architecture based on three principles.
 
 The three principles of Zero Trust are applied across defense areas. These are sometimes referred to as functional areas or disciplines of IT management. Many organizations are structured around these areas with teams of specialized individuals.
 
-Zero Trust requires taking an integrated approach across these areas and teams, which is why it is so important to have buy-in across the C-suite and a well-orchestrated strategy and plan across your organization.
+Zero Trust requires taking an integrated approach across these areas and teams, which is why it's so important to have buy-in across the C-suite and a well-orchestrated strategy and plan across your organization.
 
 | Functional area | Technical definition | Business translation |
 | --- | --- | --- |
@@ -85,8 +85,8 @@ Zero Trust requires taking an integrated approach across these areas and teams, 
 |Endpoints  | End user computing devices, including computers, laptops, mobile phones, and tablets. | The devices our users use to connect to your services and operate on your data. |
 | Apps | Cloud or datacenter-based applications that require users to sign in and consume those services or applications. | All apps that are used by your organization, including SaaS apps that you subscribe to and other applications, whether in the cloud or on-premises. |
 | Infrastructure | Infrastructure as a Service (IaaS) or datacenter-based infrastructure, including network components, servers, and data storage. | These are the technical foundations and components that support your organization, including physical and virtual servers hosted in your datacenter or a cloud service. |
-| Data | Structured, unstructured, and application- contained data. | Your businesses data contained in files, databases, or other applications (CRM, etc). |
-| Network | LAN, WAN, wireless, or internet connection, including mobile (3G, 5G etc) or even the coffee shop wireless network. | The network used to connect your users to the services they need. This may be a corporate-run local area network (LAN), the wider network encompassing access to your digital estate, or the internet connections used by your workers to connect. |
+| Data | Structured, unstructured, and application- contained data. | Your businesses data contained in files, databases, or other applications (such as CRM). |
+| Network | LAN, WAN, wireless, or internet connection, including mobile (such as 3G and 5G) or even the coffee shop wireless network. | The network used to connect your users to the services they need. This may be a corporate-run local area network (LAN), the wider network encompassing access to your digital estate, or the internet connections used by your workers to connect. |
 
 When applying Zero Trust strategy across a digital estate, it’s less helpful to think about tackling each of these domain areas independently. It’s not as if the identity team can accomplish all the recommendations and then the Zero Trust focus can move to the team that manages endpoints. Zero Trust strategy applies these functional areas together to secure an area within a digital estate and then broaden the scope of the protection across it. 
 
@@ -94,12 +94,12 @@ For example, the identity team can only make so much progress in utilizing Azure
 
 The following diagram integrates these functional areas into a unified Zero Trust architecture.
 
-:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.png" alt-text="The overall architecture for Zero Trust" lightbox="./media/zero-trust-ramp-overview/zero-trust-architecture.png":::
+:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.png" alt-text="The overall architecture for Zero Trust" lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.png":::
 
 In the diagram:
 
-- Each of the functional areas are represented — Identities, Endpoints, Network, Data, Apps, Infrastructure.
-- Zero Trust integrates protection across all the functional areas through policies — Policy Optimization.
+- Each of the functional areas are represented: Identities, Endpoints, Network, Data, Apps, Infrastructure
+- Zero Trust integrates protection across all the functional areas through policies and Policy Optimization.
 - Threat protection brings together signals across the organization in real-time to provide visibility into attacks and to streamline remediation through automated actions and incident response tracking.
 
 The next section discusses how to get started on the Zero Trust journey. We’ll use the **Identities** functional area as an example.  
@@ -119,11 +119,11 @@ Like the Cloud Adoption Framework for Azure, this Zero Trust adoption guidance a
 
 The following diagram summarizes the differences between these two types of adoption motions.
 
-:::image type="content" source="../media/adoption-guide/azure-and-zero-trust-frameworks.svg" alt-text="description" lightbox="azure-and-zero-trust-frameworks.svg":::
+:::image type="content" source="../media/adoption-guide/azure-and-zero-trust-frameworks.svg" alt-text="The differences between the Azure and Zero Trust adoption frameworks." lightbox="../media/adoption-guide/azure-and-zero-trust-frameworks.svg":::
 
 This Zero Trust adoption guidance uses the same lifecycle phases as the Cloud Adoption Framework for Azure, but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="description" lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Zero Trust adoption guidance uses the same lifecycle phases" lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
 
 The following table describes the lifecycle phases.
 
@@ -140,7 +140,7 @@ The following table describes the lifecycle phases.
 
 This Zero Trust adoption guidance recommends building a Zero Trust strategy and architecture through these business scenarios:
 
-- [Secure remote and hybrid work](microsoft-365-defender-device-inventory-example.md)
+- [Secure remote and hybrid work](secure-remote-hybrid-work.md)
 - Prevent or reduce business damage from a breach
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
 - Proactively meet regulatory requirements
@@ -150,15 +150,15 @@ Each business scenario is described in an article that describes how to progress
 
 Each of these business scenarios breaks down the work of Zero Trust into manageable pieces that can be implemented over four implementation stages. This helps you prioritize, move forward, and track work as you move through the different layers of implementing a Zero Trust architecture.
 
-This guidance includes a PowerPoint slide deck with progress slides that you can use to present the work and track your progress at a high level for business leaders and other stakeholders. The slides include features that help you keep track of and present progress to stakeholders. Here is an example.
+This guidance includes a PowerPoint slide deck with progress slides that you can use to present the work and track your progress at a high level for business leaders and other stakeholders. The slides include features that help you keep track of and present progress to stakeholders. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-progress-tracking-example.png" alt-text="description" lightbox="../media/adoption-guide/zero-trust-progress-tracking-example.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-progress-tracking-example.png" alt-text="Example of a progress slide." lightbox="../media/adoption-guide/zero-trust-progress-tracking-example.png":::
 
 Across the business scenarios, the implementation stages are roughly aligned so that accomplishing the objectives of Stage 1 across the scenarios help keep your organization progressing on all fronts together.
 
 ## Starting a Zero Trust journey
 
-If you are embarking on a Zero trust journey that is aligned to a business scenario or looking to embrace Zero Trust as a strategic defense doctrine, success can be difficult to measure. This is because security does not pass a simple pass/fail type of evaluation. Rather, security is a commitment and a journey, to which Zero Trust supplies guiding principles.
+If you are embarking on a Zero trust journey that is aligned to a business scenario or looking to embrace Zero Trust as a strategic defense doctrine, success can be difficult to measure. This is because security doesn't pass a simple pass/fail type of evaluation. Rather, security is a commitment and a journey, to which Zero Trust supplies guiding principles.
 
 Using this adoption guidance as a process framework, first establish and document our security strategy, very similar to a Project Initiation Document (PID).  Using the principles that apply to strategy, at minimum, you should document:
 
@@ -184,10 +184,17 @@ Microsoft recommends taking two approaches to tracking your progress:
 1. Measure your progress against mitigating risks to your business.
 2. Measure your progress towards achieving strategic objectives across the Zero Trust architecture.
 
-Many organizations use ISO (International Organization for Standardization) standards resources and tools to gauge an organization’s risk. Specifically:
+Many organizations use International Organization for Standardization (ISO) standards resources and tools to gauge an organization’s risk. Specifically:
 
-- ISO/IEC 27001:2022 — Information security, cybersecurity and privacy protection — Information security management systems — Requirements
-- ISO 31000 — Risk management
+- ISO/IEC 27001:2022 
+
+  - Information security, cybersecurity and privacy protection
+  - Information security management systems
+  - Requirements
+
+- ISO 31000
+
+    Risk management
 
 The requirements and guidelines in these standards are generic and can apply to any organization. They provide a structured and comprehensive way for you to review and gauge the risks that apply to your organization, as well as mitigations.
 
@@ -195,10 +202,10 @@ Identifying and understanding the specific risks that apply to your organization
 Once your organization has identified and prioritized your most strategic technical objectives, you can map out a staged roadmap for implementation. You can then track your progress by using various tools:
 
 - The PowerPoint deck with progress tracking slides (provided as a download with this guidance). These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
-- Secure Score — An aggregated score of technical controls that contribute to your current security posture. Secure Score gives your organization a global view of the controls that have and are still to be implemented.
+- Secure Score is an aggregated score of technical controls that contribute to your current security posture. Secure Score gives your organization a global view of the controls that have and are still to be implemented.
 - Cloud Security Posture Management (CSPM) tools provided within Microsoft Defender for Cloud.
 
-Note that the progress percentage provided by Secure Score might not be accurate for organizations that are not willing to implement all controls due to reasons such as:
+Note that the progress percentage provided by Secure Score might not be accurate for organizations that aren't willing to implement all controls due to reasons such as:
 
 - Scope of the business
 - Licensing
@@ -209,9 +216,9 @@ Additionally, several portals and reports can assist you in creating an overview
 - Reports within Microsoft 365 Defender provide information regarding security trends and track the protection status of your identities, data, devices, applications and infrastructure.
 - The Cloud Security Explorer allows you to proactively hunt for security risks.
 
-For example, within Microsoft 365 Defender, the device inventory provides a clear view into newly discovered devices in your network that aren't yet protected. At the top of each **Device inventory** tab, you can see the total number of devices that aren't onboarded. Here is an example.
+For example, within Microsoft 365 Defender, the device inventory provides a clear view into newly discovered devices in your network that aren't yet protected. At the top of each **Device inventory** tab, you can see the total number of devices that aren't onboarded. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png" alt-text="description" lightbox="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png":::
+:::image type="content" source="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png" alt-text="Example of the Inventory tab in the Microsoft 365 Defender portal" lightbox="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png":::
 
 For more information on using Microsoft 365 Defender to track your progress, see [Strengthen your security posture with Microsoft 365 Defender](/microsoft-365/security/security-posture-solution-overview).
 

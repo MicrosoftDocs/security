@@ -92,11 +92,11 @@ When applying Zero Trust strategy across a digital estate, it’s less helpful t
 
 For example, the identity team can only make so much progress in utilizing Azure Active Directory (Azure AD) Conditional Access policies before coordinating with the endpoints team to weave together protection.
 
-The following illustration integrates these functional areas into a unified Zero Trust architecture.
+The following diagram integrates these functional areas into a unified Zero Trust architecture.
 
-FIGURE: ZT marketing diagram
+:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.png" alt-text="The overall architecture for Zero Trust" lightbox="./media/zero-trust-ramp-overview/zero-trust-architecture.png":::
 
-In the illustration:
+In the diagram:
 
 - Each of the functional areas are represented — Identities, Endpoints, Network, Data, Apps, Infrastructure.
 - Zero Trust integrates protection across all the functional areas through policies — Policy Optimization.
@@ -119,11 +119,11 @@ Like the Cloud Adoption Framework for Azure, this Zero Trust adoption guidance a
 
 The following diagram summarizes the differences between these two types of adoption motions.
 
-FIGURE: Azure vs. ZT frameworks
+:::image type="content" source="../media/adoption-guide/azure-and-zero-trust-frameworks.svg" alt-text="description" lightbox="azure-and-zero-trust-frameworks.svg":::
 
-This Zero Trust adoption guidance uses the same lifecycle phases as the Cloud Adoption Framework for Azure, but adapted for Zero Trust. 
+This Zero Trust adoption guidance uses the same lifecycle phases as the Cloud Adoption Framework for Azure, but adapted for Zero Trust.
 
-FIGURE: ZT lifecycle phases
+:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="description" lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
 
 The following table describes the lifecycle phases.
 
@@ -140,9 +140,9 @@ The following table describes the lifecycle phases.
 
 This Zero Trust adoption guidance recommends building a Zero Trust strategy and architecture through these business scenarios:
 
-- Secure remote and hybrid work
+- [Secure remote and hybrid work](microsoft-365-defender-device-inventory-example.md)
 - Prevent or reduce business damage from a breach
-- Identify and protect sensitive business data
+- [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
 - Proactively meet regulatory requirements
 - Build confidence in your security posture and programs
 
@@ -152,7 +152,7 @@ Each of these business scenarios breaks down the work of Zero Trust into managea
 
 This guidance includes a PowerPoint slide deck with progress slides that you can use to present the work and track your progress at a high level for business leaders and other stakeholders. The slides include features that help you keep track of and present progress to stakeholders. Here is an example.
 
-FIGURE: Progress slide example
+:::image type="content" source="../media/adoption-guide/zero-trust-progress-tracking-example.png" alt-text="description" lightbox="../media/adoption-guide/zero-trust-progress-tracking-example.png":::
 
 Across the business scenarios, the implementation stages are roughly aligned so that accomplishing the objectives of Stage 1 across the scenarios help keep your organization progressing on all fronts together.
 
@@ -211,8 +211,8 @@ Additionally, several portals and reports can assist you in creating an overview
 
 For example, within Microsoft 365 Defender, the device inventory provides a clear view into newly discovered devices in your network that aren't yet protected. At the top of each **Device inventory** tab, you can see the total number of devices that aren't onboarded. Here is an example.
 
-FIGURE: M365D screenshot showing unprotected devices
- 
+:::image type="content" source="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png" alt-text="description" lightbox="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png":::
+
 For more information on using Microsoft 365 Defender to track your progress, see [Strengthen your security posture with Microsoft 365 Defender](/microsoft-365/security/security-posture-solution-overview).
 
 For more information about how to use Secure Score, see [Secure Score documentation](/microsoft-365/security/defender/microsoft-secure-score). 

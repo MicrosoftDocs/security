@@ -1,7 +1,7 @@
 ---
-title: Step 1. Setup XDR tools - Microsoft 365 Defender and Microsoft Defender for Cloud
+title: Step 1. Set up your XDR tools - Microsoft 365 Defender and Microsoft Defender for Cloud
 titleSuffix: Microsoft 365 Defender
-description: Learn how to setup Microsoft 365 Defender and Microsoft Defender for Cloud, an extended detection and response (XDR) solution, and integrate it with Microsoft Sentinel.
+description: Learn how to set up Microsoft 365 Defender and Microsoft Defender for Cloud, an extended detection and response (XDR) solution, and integrate it with Microsoft Sentinel.
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
@@ -16,7 +16,7 @@ ms.collection:
   - msftsolution-secops
 ---
 
-# Step 1. Setup XDR tools
+# Step 1. Set up your XDR tools
 
 
 This article guides you to the best approaches for setting up Microsoft Defender 365 and other Microsoft XDR tools, which is the first step in setting up an integrated environment with Microsoft Sentinel.

@@ -1,7 +1,7 @@
 ---
-title: secure-remote-hybrid-work 
-description: Learn how to secure-remote-hybrid-work.  
-ms.date: 02/09/2023
+title: Secure remote and hybrid work with Zero Trust 
+description: Learn how to Secure remote and hybrid work with Zero Trust.
+ms.date: 04/14/2023
 ms.service: security
 author: JoeDavies-TechWriter
 ms.author: v-joedavies
@@ -11,10 +11,7 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# secure-remote-hybrid-work
+# Secure remote and hybrid work with Zero Trust
 
 
-
-
-## References
 

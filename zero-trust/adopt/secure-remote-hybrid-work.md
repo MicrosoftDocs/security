@@ -7,7 +7,6 @@ author: JoeDavies-TechWriter
 ms.author: v-joedavies
 ms.topic: conceptual
 ms.collection: 
-  - msftsolution-overview
   - zerotrust-solution
 ---
 

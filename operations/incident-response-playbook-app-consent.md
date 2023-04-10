@@ -16,8 +16,8 @@ localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - zerotrust-solution
+  - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
 ---

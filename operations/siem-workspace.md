@@ -8,8 +8,6 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.localization_priority: Normal
 ms.collection: 
-  - msftsolution-sentinel-xdr
-  - msftsolution-scenario
   - zerotrust-solution
   - msftsolution-secops
 ---

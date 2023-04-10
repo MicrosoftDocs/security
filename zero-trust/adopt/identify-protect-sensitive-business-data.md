@@ -39,8 +39,8 @@ The following table provides reasons why business leaders across an organization
 | Chief Technology Officer (CTO) | Intellectual property can differentiate a successful business from a failing one. Protecting this data from oversharing, unauthorized access, and theft is key to ensure future growth of the organization. | 
 |Chief Operations Officer (COO) | Operations data, procedures, and production plans can be a key strategic advantage to an organization. These plans can also reveal strategic vulnerabilities that can be exploited by competitors. Protecting this data from theft, oversharing, and misuse is critical to the continued success of the business. |
 | Chief Financial Officer (CFO) | Publicly traded companies have a duty to protect specific financial data before it is made public. Other financial data can reveal plans and strategic strengths or weaknesses. This data must all be protected to both ensure compliance with existing regulations and maintain strategic advantages. |
-| Chief Compliance Officer (CCO) | Regulations across the world mandate protection of PII of customers or employees, as well as other sensitive data. The CCO is responsible for ensuring the organization abides by such regulations. A comprehensive information protection strategy is key to achieving that goal. |
-| Chief Privacy Officer (CPO) | In organizations that deal with large amounts of customer personal data, as well as organizations operating in regions with strict privacy regulations, a CPO is typically responsible for ensuring protection of personal data. Companies that fail to protect sensitive data might have to pay steep fines. They also risk losing customer trust as a consequence. Additionally, CPOs must prevent personal data from being misused in ways that violate customer agreements or laws. This can include improper sharing of the data within the organization and with partners. |
+| Chief Compliance Officer (CCO) | Regulations across the world mandate protection of PII of customers or employees and other sensitive data. The CCO is responsible for ensuring the organization abides by such regulations. A comprehensive information protection strategy is key to achieving that goal. |
+| Chief Privacy Officer (CPO) | In organizations that deal with large amounts of customer personal data and organizations operating in regions with strict privacy regulations, a CPO is typically responsible for ensuring protection of personal data. Companies that fail to protect sensitive data might have to pay steep fines. They also risk losing customer trust as a consequence. Additionally, CPOs must prevent personal data from being misused in ways that violate customer agreements or laws. This can include improper sharing of the data within the organization and with partners. |
 
 ## The adoption cycle for protecting critical business data
 
@@ -53,20 +53,20 @@ Read more about this Zero Trust adoption cycle in the [Zero Trust adoption frame
 ## Define strategy phase
 
 The **Define strategy** phase is critical to define and formalize our efforts – it formalizes the “Why?” of this scenario. In this phase, we understand the scenario through business, IT, operational and strategic lenses. 
-We define the outcomes against which to measure success in the scenario, understanding that security is an incremental as well as iterative journey.
+We define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
 
 This article suggests motivations and outcomes that are relevant to many organizations. Use these suggestions to hone the strategy for your organization based on your unique needs.
 
 ### Data protection motivations
 
-The motivations for identifying and protecting sensitive business data are straightforward, but different parts of your organization will have different incentives for doing this work. The following table summarizes some of these motivations.
+The motivations for identifying and protecting sensitive business data are straightforward, but different parts of your organization have different incentives for doing this work. The following table summarizes some of these motivations.
 
 | Area | Motivations |
 | --- | --- |
 | Business needs | To safeguard sensitive business data, especially when shared with partners. |
 | IT needs | A standardized data classification schema that can be applied consistently throughout the digital estate. |
 | Operational needs | Implement data protection in a consistent and standard way, using automation where possible. |
-| Strategic needs | Reduce the damage that can be caused by an insider (intentionally or unintentionally) or by a bad actor who gains access to the environment. |
+| Strategic needs | Reduce the damage that an insider can cause (intentionally or unintentionally) or by a bad actor who gains access to the environment. |
 
 Note that meeting regulatory requirements might be the primary driving motivation for some organizations. If this is true for you, go ahead and add this to your organization strategy and use this business scenario together with the **Proactively meet regulatory and compliance requirements** article in this series (under development).
 
@@ -78,8 +78,8 @@ The following table provides suggested objectives and outcomes.
 | Objective | Outcome |
 | --- | --- |
 | Productivity | Users can easily collaborate on creating business data or perform their job functions by using business data. |
-| Safe access | Access to data and apps is secured at the appropriate level. Highly sensitive data requires stricter safeguards, but these protections don’t unduly burden users who are expected to contribute to or use this data. <br><br> Sensitive business data is limited to those in need of using it and controls are put into place to limit or discourage users from sharing or replicating this data outside the intended usage group. |
-| Support end users | Controls for securing data are integrated into the overall Zero Trust architecture, including single sign-on, multifactor authentication (MFA), and Azure Active Directory (Azure AD) Conditional Access, so that users are not continually challenged with authentication and authorization requests. <br><br> Users receive training on how to classify and share data securely. Users are enabled to take control of their important data, allowing them to revoke access in case of need, or track usage of the information after it has been shared. <br><br> Data protection policies are automated where possible to lessen the burden on users. |  |
+| Safe access | Access to data and apps is secured at the appropriate level. Highly sensitive data requires stricter safeguards, but these protections shouldn't burden users who are expected to contribute to or use this data. <br><br> Sensitive business data is limited to those in need of using it and you have put controls in place to limit or discourage users from sharing or replicating this data outside the intended usage group. |
+| Support end users | Controls for securing data have been integrated into the overall Zero Trust architecture. These controls include single sign-on, multifactor authentication (MFA), and Azure Active Directory (Azure AD) Conditional Access, so that users aren't continually challenged with authentication and authorization requests. <br><br> Users receive training on how to classify and share data securely. Users are enabled to take control of their important data, allowing them to revoke access in case of need, or track usage of the information after it has been shared. <br><br> Data protection policies are automated where possible to lessen the burden on users. |  |
 | Increase security | The addition of data protection across the digital estate protects these critical business assets and helps reduce the potential damage from a data breach. <br><br> Data protections include safeguards to protect against intentional, unintentional, or negligent data breaches by current or former employees and partners. |
 | Empower IT | The IT team is empowered with a clear understanding of what qualifies as sensitive business data, have a well-reasoned schema to align with, and have the technology tools and capabilities to both implement the plans and to monitor status and success. |
 
@@ -87,7 +87,7 @@ The following table provides suggested objectives and outcomes.
 
 Adoption plans convert the principles of Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align them with your organization's business strategy.
 
-The motivations and outcomes you define, together with your business leaders and teams, support the “Why?” for your organization. These become the North Star for your strategy. Next comes the technical planning to achieve the objectives.
+The motivations and outcomes you define, together with your business leaders and teams, support the “Why?” for your organization and become the North Star for your strategy. Next comes the technical planning to achieve the objectives.
 
 Technical adoption for identifying and protecting sensitive business data involves:
 
@@ -99,7 +99,7 @@ Protecting your sensitive business data also involves a few related activities, 
 
 - Encrypting network communication.
 - Managing external access to Teams and projects where sensitive data is shared.
-- Setting up and using dedicated and isolated Teams for projects that include highly sensitive business data. This should be rare. Most organizations do not require this level of data security and isolation. 
+- Setting up and using dedicated and isolated teams in Microsoft Teams for projects that include highly sensitive business data, which should be rare. Most organizations do not require this level of data security and isolation.
 
 Many organizations can take a four-staged approach to these technical activities, summarized in the following table.
 
@@ -121,7 +121,7 @@ The following actions apply:
 
 - Inventory your data.
 
-  First, take stock of where all your data resides. This can be as simple as listing the apps and repositories with your data. After technologies like sensitivity labeling have been deployed, you may discover additional locations where sensitive data is being stored. These locations are sometimes referred to as dark or grey IT. It’s also helpful to estimate how much data you plan to inventory (the volume). Throughout the recommended technical process, you will use the tool set to discover and identify business data. You’ll learn what kinds of data you have and where this data resides across services and cloud apps, enabling you to correlate the sensitivity of the data with the level of exposure of the locations in which it is present. For example, Microsoft Defender for Cloud Apps helps you identify SaaS apps you might not have been aware of. The work of discovering where your sensitive data resides begins in Stage 1 of the technical implementation and cascades through all four stages.
+  First, take stock of where all your data resides, which can be as simple as listing the apps and repositories with your data. After technologies like sensitivity labeling have been deployed, you may discover other locations where sensitive data is being stored. These locations are sometimes referred to as dark or grey IT. It’s also helpful to estimate how much data you plan to inventory (the volume). Throughout the recommended technical process, you'll use the tool set to discover and identify business data. You’ll learn what kinds of data you have and where this data resides across services and cloud apps, enabling you to correlate the sensitivity of the data with the level of exposure of the locations in which it is present. For example, Microsoft Defender for Cloud Apps helps you identify SaaS apps you might not have been aware of. The work of discovering where your sensitive data resides begins in Stage 1 of the technical implementation and cascades through all four stages.
 - Document the goals and plan for incremental adoption based on priorities.
 
   The four stages recommended represent an incremental adoption plan. Adjust this plan based on your organization’s priorities and the composition of your digital estate. Be sure to take account of any timeline milestones or obligations for completing this work.
@@ -188,11 +188,11 @@ The Stage 1 objectives include the process of taking inventory of your data. Thi
 
 #### Discover and identify sensitive business data
 
-Starting with Microsoft 365, some of the primary tools you use to identify sensitive information that needs to be protected are sensitive information types (SITs) and other classifiers, including trainable classifiers and fingerprints. These identifiers help find common sensitive data types, such as credit card numbers or governmental identification numbers, as well as identifying sensitive documents and emails using machine learning and other methods. You can also create custom SITs to identify data that is unique to your environment, including using exact data matching to differentiate data pertaining to specific people—for example, customer PII—that needs special protection.
+Starting with Microsoft 365, some of the primary tools you use to identify sensitive information that needs to be protected are sensitive information types (SITs) and other classifiers, including trainable classifiers and fingerprints. These identifiers help find common sensitive data types, such as credit card numbers or governmental identification numbers, and identifying sensitive documents and emails using machine learning and other methods. You can also create custom SITs to identify data that is unique to your environment, including using exact data matching to differentiate data pertaining to specific people—for example, customer PII—that needs special protection.
 
 When data is added to your Microsoft 365 environment or modified, it is automatically analyzed for sensitive content using any SITs that are presently defined in your tenant.
 
-You can use content explorer in the Microsoft Purview compliance portal to see any occurrences of detected sensitive data across the environment. The results will let you know if you need to customize or tune the SITs for your environment for greater accuracy. The results will also give you a first picture of your data stock and your information protection status. For example, if you are receiving too many false positives for a SIT, or not finding known data, you’ll want to create custom copies of the standard SITs and modify them so they work better for your environment. You can also refine these using exact data matching.
+You can use content explorer in the Microsoft Purview compliance portal to see any occurrences of detected sensitive data across the environment. The results let you know if you need to customize or tune the SITs for your environment for greater accuracy. The results also give you a first picture of your data stock and your information protection status. For example, if you are receiving too many false positives for a SIT, or not finding known data, you’ll want to create custom copies of the standard SITs and modify them so they work better for your environment. You can also refine these using exact data matching.
 
 Additionally, you can use built-in trainable classifiers to identify documents that belong to certain categories, such as contracts or freight documents. If you have specific classes of documents you know you have to identify and potentially protect, you can use samples in the Microsoft Purview compliance portal to train your own classifiers, which can then be used to discover the presence of other documents with similar patterns of content.
 
@@ -267,7 +267,7 @@ For this stage, develop your sensitivity labels and start using them across data
 
 | Resource | Description |
 | --- | --- |
-| [Prevent data loss](/microsoft-365/compliance/information-protection-solution) | Get started with DLP policies. <br><br> It is recommended to start with “soft” DLP policies, which provide warnings but don't block actions, or at most block actions while allowing users to override the policy. This will allow you gauge the impact of these policies without harming productivity. You can fine-tune the policies to become stricter as you gain confidence in their accuracy and compatibility with the business needs. |
+| [Prevent data loss](/microsoft-365/compliance/information-protection-solution) | Get started with DLP policies. <br><br> It is recommended to start with “soft” DLP policies, which provide warnings but don't block actions, or at most block actions while allowing users to override the policy. This allows you gauge the impact of these policies without harming productivity. You can fine-tune the policies to become stricter as you gain confidence in their accuracy and compatibility with the business needs. |
 
  #### Set up secure teams for sharing data internally and externally with business partners
 
@@ -284,8 +284,8 @@ In this stage, you continue to roll out the data classification schema you refin
 
 Once you add protection to a label (such as encryption and rights management):
 
-- All documents that newly receive the label will include the protection.
-- Any document stored in SharePoint Online or OneDrive for Business that received the label before the protection was added will have the protection applied when the document is opened or downloaded. 
+- All documents that newly receive the label include the protection.
+- Any document stored in SharePoint Online or OneDrive for Business that received the label before the protection was added has the protection applied when the document is opened or downloaded. 
 
 Files at rest in the service or residing on a user’s computer will not receive the protection that was added to the label AFTER these files received the label. In other words, if the file was previously labeled and then you later add protection to the label, the protection will not affect these files.
 
@@ -327,7 +327,7 @@ In this stage, you extend the protections you developed in Microsoft 365 to data
 
 | Resource | Description |
 | --- | --- |
-| [Apply a sensitivity label to content automatically](/microsoft-365/compliance/apply-sensitivity-label-automatically) | Continue to roll out the automated methods for applying labels to your data, extending to documents at-rest in SharePoint, OneDrive, and Teams, as well as to emails being sent or received by users. |
+| [Apply a sensitivity label to content automatically](/microsoft-365/compliance/apply-sensitivity-label-automatically) | Continue to roll out the automated methods for applying labels to your data, extending to documents at-rest in SharePoint, OneDrive, and Teams, and to emails being sent or received by users. |
 
 #### Extend labels and protection to data in on-premises repositories
 
@@ -344,8 +344,8 @@ In this stage, you extend the protections you developed in Microsoft 365 to data
 ### Cloud adoption plan
 An adoption plan is an essential requirement for a successful cloud adoption. Key attributes of a successful adoption plan for protecting data include:
 
-- **Strategy and planning are aligned** — As you draw up your plans for testing, piloting, and rolling out data classification and protection capabilities across your digital estate, be sure to revisit your strategy and objectives to ensure your plans are aligned. This includes priority of data sets, goals for data protection, and target milestones. 
-- **The plan is iterative** — As you start to roll out your plan, you will learn many things about your environment as well as the capability set you are using. At each stage of your roll-out, revisit your results compared to the objectives and fine tune the plans. This can include revisiting earlier work to fine-tune policies, for example. 
+- **Strategy and planning are aligned** — As you draw up your plans for testing, piloting, and rolling out data classification and protection capabilities across your digital estate, be sure to revisit your strategy and objectives to ensure your plans are aligned. This includes priority of data sets, goals for data protection, and target milestones.
+- **The plan is iterative** — As you start to roll out your plan, you'll learn many things about your environment and the capability set you are using. At each stage of your roll-out, revisit your results compared to the objectives and fine tune the plans. This can include revisiting earlier work to fine-tune policies, for example. 
 - **Training your staff and users is well-planned** — From your administration staff to helpdesk and your users, everybody is trained to be successful with their data identification and protection responsibilities. 
 
 For more information from the Cloud Adoption Framework for Azure, see the [Plan for cloud adoption](/azure/cloud-adoption-framework/plan/plan-intro).
@@ -356,14 +356,14 @@ Use the resources above to prioritize your plan for identifying and protecting s
 
 The staged approach recommended in this article includes cascading the work in a methodical way across your digital estate. At this Ready phase, revisit these elements of the plan to be sure everything is ready to go:
 
-- Data that is sensitive for your organization is well defined. Granted, you will likely adjust this as you search for data and analyze the results. 
+- Data that is sensitive for your organization is well defined. Granted, you'll likely adjust this as you search for data and analyze the results. 
 - You have a clear map of which data sets and apps to start with and a prioritized plan for increasing the scope of your work until it encompasses your entire digital estate.
 - Adjustments to the prescribed technical guidance that are appropriate for your organization and environment have been identified and documented. 
 
 This list summarizes the high-level methodical process for doing this work:
 
 - Get to know the data classification capabilities—sensitive information types, trainable classifiers, sensitivity labels, and DLP policies. 
-- Begin using these capabilities with data in Microsoft 365 services. This experience will help you refine your schema. 
+- Begin using these capabilities with data in Microsoft 365 services. This experience helps you refine your schema.
 - Introduce classification into Office apps.
 - Move on to protection of data on devices by experimenting with and then rolling out endpoint DLP.
 - Extend the capabilities you’ve refined within your Microsoft 365 estate to data in cloud apps by using Defender for Cloud Apps.
@@ -383,7 +383,7 @@ As you finalize your adoption plans, be sure to revisit the [Information Protect
 
 ## Adopt phase
 
-Microsoft recommends a cascading, iterative approach to discovering and protecting sensitive data. This allows you to refine your strategy and policies as you go to increase the accuracy of the results. For example, begin working on a classification and protection schema as you discover and identify sensitive data. The data you discover will inform the schema and the schema will help you improve the tools and methods you use to discover sensitive data. Similarly, as you test and pilot the schema, the results will help you improve the protection policies you created earlier. There’s no need to wait until one phase is complete before beginning the next. Your results will be more effective if you iterate along the way.
+Microsoft recommends a cascading, iterative approach to discovering and protecting sensitive data. This allows you to refine your strategy and policies as you go to increase the accuracy of the results. For example, begin working on a classification and protection schema as you discover and identify sensitive data. The data you discover informs the schema and the schema helps you improve the tools and methods you use to discover sensitive data. Similarly, as you test and pilot the schema, the results help you improve the protection policies you created earlier. There’s no need to wait until one phase is complete before beginning the next. Your results are more effective if you iterate along the way.
 
 >> ADD FIGURE
 
@@ -391,7 +391,7 @@ Microsoft recommends a cascading, iterative approach to discovering and protecti
 
 Governance of your organization’s data is an iterative process. By thoughtfully creating your classification schema and rolling it out across your digital estate you have created a foundation. Use the following exercises to help you start building your initial governance plan for this foundation:
 
-- **Establish your methodology** — Establish a basic methodology for reviewing your schema, how it is applied across your digital estate, and the success of the results. Decide how you will monitor and evaluate the success of your information protection protocol, including your current state and future state.
+- **Establish your methodology** — Establish a basic methodology for reviewing your schema, how it is applied across your digital estate, and the success of the results. Decide how you'll monitor and evaluate the success of your information protection protocol, including your current state and future state.
 - **Establish an initial governance foundation** — Begin your governance journey with a small, easily implemented set of governance tools. This initial governance foundation is called a minimum viable product (MVP). 
 - **Improve your initial governance foundation** — Iteratively add governance controls to address tangible risks as you progress toward the end state.
 

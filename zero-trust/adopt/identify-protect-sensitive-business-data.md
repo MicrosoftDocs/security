@@ -46,7 +46,7 @@ The following table provides reasons why business leaders across an organization
 
 This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, Govern, and Manage—but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Zero Trust adoption guidance uses the same lifecycle phases" lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Zero Trust adoption guidance uses the same lifecycle phases." lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
@@ -241,7 +241,7 @@ Before translating your organization’s classification schema to labels and add
 
 So, for example, many organizations are well-served by a three-tier model of protection across data, devices, and identities. In this model, most data can be protected at a baseline level. A smaller amount of data might require increased protection. Some organizations have a very small amount of data that requires protection at much higher levels. Examples include trade-secret data or data that is highly regulated due to the extremely sensitive nature of the data or projects.
 
-:::image type="content" source="../media/adoption-guide/three-tiers-of-protection.png" alt-text="Zero Trust adoption guidance uses the same lifecycle phases" lightbox="../media/adoption-guide/three-tiers-of-protection.png":::
+:::image type="content" source="../media/adoption-guide/three-tiers-of-protection.png" alt-text="The three tiers of data protection." lightbox="../media/adoption-guide/three-tiers-of-protection.png":::
 
 If three tiers of protection work for your organization, this helps simplify how you translate this to labels and the protection you apply to labels.
 

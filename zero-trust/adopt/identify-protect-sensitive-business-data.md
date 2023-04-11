@@ -46,7 +46,7 @@ The following table provides reasons why business leaders across an organization
 
 This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, Govern, and Manage—but adapted for Zero Trust.
 
->> ADD FIGURE: Lifecycle
+:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Zero Trust adoption guidance uses the same lifecycle phases" lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
@@ -104,11 +104,13 @@ Many organizations can take a four-staged approach to these technical activities
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Discover and identify sensitive business data <br><br> Discover nonsanctioned SaaS apps <br><br> Encrypt network communication | Develop and test a classification schema <br><br> Apply labels to data across Microsoft 365 <br><br> Introduce basic DLP policies <br><br> Set up secure Microsoft Teams for sharing data internally and externally with business partners | Add protection to specific labels (encryption and other protection settings) <br><br> Introduce automatic and recommended labeling in Office apps and services <br><br> Enable mandatory labeling of new content <br><br> Extend DLP policies across Microsoft 365 services <br><br> Implement key insider risk management policies | Extend labels and protection to data in SaaS apps, including DLP <br><br> Extend automated classification to all services <br><br> Extend labels and protection to data at-rest in on-premises repositories <br><br> Protect organization data in your cloud infrastructure |
+| Discover and identify sensitive business data <br><br> Discover non-sanctioned SaaS apps <br><br> Encrypt network communication | Develop and test a classification schema <br><br> Apply labels to data across Microsoft 365 <br><br> Introduce basic DLP policies <br><br> Set up secure Microsoft Teams for sharing data internally and externally with business partners | Add protection to specific labels (encryption and other protection settings) <br><br> Introduce automatic and recommended labeling in Office apps and services <br><br> Enable mandatory labeling of new content <br><br> Extend DLP policies across Microsoft 365 services <br><br> Implement key insider risk management policies | Extend labels and protection to data in SaaS apps, including DLP <br><br> Extend automated classification to all services <br><br> Extend labels and protection to data at-rest in on-premises repositories <br><br> Protect organization data in your cloud infrastructure |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint deck](add link) and updating the slides that correspond to this business scenario. Here is an example.
 
->>ADD FIGURE and LINK TO PPT
+:::image type="content" source="../media/adoption-guide/zero-trust-protect-data-stakeholders.png" alt-text="PowerPoint slide to identify key stakeholders." lightbox="../media/adoption-guide/zero-trust-protect-data-stakeholders.png":::
+
+>>ADD LINK TO PPT
 
 ### Understand your organization
 
@@ -172,14 +174,11 @@ Before you embark on the technical work, Microsoft recommends getting to know th
 
 | Resource | Description |
 |:-----|:-----|
-| Deployment Acceleration Guide-[Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) | Learn best practices from the Microsoft Customer Engagement teams. This guidance leads organizations to maturity through a crawl, walk, run model, which aligns with the recommended stages in this adoption guidance.
- |
-| [RaMP checklist-Data protection](/security/zero-trust/data-compliance-gov-data) | Another resource for listing and prioritizing the recommended work, including stakeholders. |
-| Learn module-[Introduction to Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp) (beginner) | In this module, you learn about DLP in Microsoft Purview Information Protection. |
-| Learn module-[Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance/) (Intermediate) | Learn how Microsoft 365 information protection and data lifecycle management solutions help you protect and govern your data, throughout its lifecycle – wherever it lives and travels. |
-| Certifications-[Microsoft Certified: Information Protection Administrator Associate](/certifications/information-protection-administrator/) | Recommended learning paths for becoming a Certified Information Protection Administrator Associate. |
-
->>ADD ICONS
+| Deployment Acceleration Guide-[Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) | Learn best practices from the Microsoft Customer Engagement teams. This guidance leads organizations to maturity through a crawl, walk, run model, which aligns with the recommended stages in this adoption guidance.  |
+| [RaMP checklist-Data protection](/security/zero-trust/data-compliance-gov-data) ![Image of Rapid Modernization Plan](../media/ramp.png) | Another resource for listing and prioritizing the recommended work, including stakeholders. |
+| [Introduction to Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp) (beginner) | In this resource, you learn about DLP in Microsoft Purview Information Protection. |
+|  :::image type="icon" source="../media/adoption-guide/introduction-information-governance.svg" border="false"::: Learn module-[Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance/) (Intermediate) | Learn how Microsoft 365 information protection and data lifecycle management solutions help you protect and govern your data, throughout its lifecycle – wherever it lives and travels. |
+| :::image type="icon" source="../media/adoption-guide/microsoft-certified-associate-badge.svg" border="false"::: Certifications-[Microsoft Certified: Information Protection Administrator Associate](/certifications/information-protection-administrator/) | Recommended learning paths for becoming a Certified Information Protection Administrator Associate. |
 
 ### Stage 1
 
@@ -209,11 +208,11 @@ The following table lists resources for discovering sensitive business data.
 | [Content search](/microsoft-365/compliance/search-for-content) | Use Content search for advanced searches, including custom filters. You can use keywords and Boolean search operators. You can also build search queries using Keyword Query Language (KQL). |
 | [RaMP checklist-Data protection: Know your data](/security/zero-trust/data-compliance-gov-data#1-know-your-data) | A checklist of implementation steps with step owners and links to documentation. |
 
-#### Discover nonsanctioned SaaS apps
+#### Discover non-sanctioned SaaS apps
 
 Your organization likely subscribes to many SaaS apps, such as Salesforce or apps that are specific to your industry. The SaaS apps that you know about and manage are considered sanctioned. In later stages, you extend the data protection schema and DLP policies you create with Microsoft 365 to protect data in these sanctioned SaaS apps.
 
-However, at this stage it’s important to discover nonsanctioned SaaS apps that your organization is using. This enables you to monitor traffic to and from these apps to determine if your organization’s business data is being shared to these apps. If so, you can bring these apps into management and apply protection to this data, starting with enabling single sign-on with Azure AD. 
+However, at this stage it’s important to discover non-sanctioned SaaS apps that your organization is using. This enables you to monitor traffic to and from these apps to determine if your organization’s business data is being shared to these apps. If so, you can bring these apps into management and apply protection to this data, starting with enabling single sign-on with Azure AD. 
 
 The tool for discovering SaaS apps that your organization uses is Microsoft Defender for Cloud Apps.
 
@@ -242,7 +241,7 @@ Before translating your organization’s classification schema to labels and add
 
 So, for example, many organizations are well-served by a three-tier model of protection across data, devices, and identities. In this model, most data can be protected at a baseline level. A smaller amount of data might require increased protection. Some organizations have a very small amount of data that requires protection at much higher levels. Examples include trade-secret data or data that is highly regulated due to the extremely sensitive nature of the data or projects.
 
->> ADD FIGURE
+:::image type="content" source="../media/adoption-guide/three-tiers-of-protection.png" alt-text="Zero Trust adoption guidance uses the same lifecycle phases" lightbox="../media/adoption-guide/three-tiers-of-protection.png":::
 
 If three tiers of protection work for your organization, this helps simplify how you translate this to labels and the protection you apply to labels.
 
@@ -372,11 +371,11 @@ This list summarizes the high-level methodical process for doing this work:
 
 This diagram shows the process.
 
->> ADD FIGURE
+:::image type="content" source="../media/adoption-guide/process-for-data-identification.png" alt-text="Process for identifying and protecting your sensitive data." lightbox="../media/adoption-guide/process-for-data-identification.png":::
 
 Your priorities for data discovery and protection might differ.
 
-Note these dependencies on other business scenarios:
+Note the following dependencies on other business scenarios:
 
 - Extending information protection to endpoint devices requires coordination with Intune (included in the [Secure remote and hybrid work](secure-remote-hybrid-work.md) article).
 - Extending information protection to data in SaaS apps requires Microsoft Defender for Cloud Apps. Piloting and deploying Defender for Cloud Apps is included in the “Prevent or reduce business damage from a breach” scenario (coming soon). In the meantime, see [Evaluate Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-overview).
@@ -387,7 +386,7 @@ As you finalize your adoption plans, be sure to revisit the [Information Protect
 
 Microsoft recommends a cascading, iterative approach to discovering and protecting sensitive data. This allows you to refine your strategy and policies as you go to increase the accuracy of the results. For example, begin working on a classification and protection schema as you discover and identify sensitive data. The data you discover informs the schema and the schema helps you improve the tools and methods you use to discover sensitive data. Similarly, as you test and pilot the schema, the results help you improve the protection policies you created earlier. There’s no need to wait until one phase is complete before beginning the next. Your results are more effective if you iterate along the way.
 
->> ADD FIGURE
+:::image type="content" source="../media/adoption-guide/adoption-information-protection.png" alt-text="Process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.png":::
 
 ## Govern and Manage phases
 

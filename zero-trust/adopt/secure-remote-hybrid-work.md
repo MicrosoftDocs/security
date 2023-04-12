@@ -184,8 +184,8 @@ These resources include prescriptive guidance that you can use as recommended st
 |:-----|:-----|
 | [Rapid Modernization Plan (RaMP) checklist: Explicitly validate trust for all access requests](/security/zero-trust/data-compliance-gov-data) ![Image of Rapid Modernization Plan](../media/ramp.png) | This series of checklists enumerate the technical objectives of each security deployment area in priority order and documents the steps you'll need to take to achieving them. It also lists project members who need to be involved for each area. <br><br> Using this resource helps you to identify quick wins. |
 | [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations) ![Image of identity and device access policies](../media/identity-device-access-policies-byplan-thumb.png) | This solution guide recommends a set of [identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) that have been tested together. It includes: <ul><li>**Starting point** level policies that get you started and do not require managing devices.</li><li>**Enterprise** level policies are recommended for Zero Trust. This requires enrolling devices for endpoint management.</li></ul> Use these recommendations as a starting point and, if needed, adapt the policies for your unique environment and goals. |
-| [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) ![Image of identity and device access policies](../media/adoption-guide/manage-devices-with-intune.png) | This solution guide walks through the phases of managing devices, from actions that don’t require enrolling devices into management to fully managing devices. These recommendations are coordinated with the above resources. |
-| [Intune Enrollment Options](/microsoft-365/solutions/cloud-architecture-models#intune-enrollment-options) ![Image of identity and device access policies](../media/adoption-guide/msft-intune-enrollment-options-thumb-landscape.png) <br><br> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br> Updated June 2022 | This poster-set provides an easy-to-scan comparison of device enrollment options per platform. |
+| [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) ![Image of managing devices with Intune](../media/adoption-guide/manage-devices-with-intune.png) | This solution guide walks through the phases of managing devices, from actions that don’t require enrolling devices into management to fully managing devices. These recommendations are coordinated with the above resources. |
+| [Intune Enrollment Options](/microsoft-365/solutions/cloud-architecture-models#intune-enrollment-options) ![Image of Intune enrollment options](../media/adoption-guide/msft-intune-enrollment-options-thumb-landscape.png) <br><br> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br> Updated June 2022 | This poster-set provides an easy-to-scan comparison of device enrollment options per platform. |
 | [Multifactor authentication deployment plan](/azure/active-directory/authentication/howto-mfa-getstarted) | This deployment guide shows you how to plan and implement an Azure AD multifactor authentication roll-out. |
 
 In addition to these resources, the following sections highlight resources for specific tasks in the four stages previously defined.
@@ -218,7 +218,7 @@ In addition to these resources, the following sections highlight resources for s
 | Task | Resources |
 | --- | --- |
 | Monitor device configuration drift | [Deploy device profiles in Microsoft Intune](/microsoft-365/solutions/manage-devices-with-intune-configuration-profiles) <br><br> [Monitor device risk and compliance to security baselines](/microsoft-365/solutions/manage-devices-with-intune-monitor-risk) |
-| Implement passwordless authentication | [Increase sign-in security with passwordless authentication](/microsoft-365/solutions/ransomware-protection-microsoft-365-identities?view=o365-worldwide#increase-sign-in-security) |
+| Implement passwordless authentication | [Increase sign-in security with passwordless authentication](/microsoft-365/solutions/ransomware-protection-microsoft-365-identities#increase-sign-in-security) |
 
 ### Cloud adoption plan
 
@@ -352,4 +352,9 @@ Additional resources for day-to-day governance and operation include:
 - [Azure AD reports and monitoring documentation](/azure/active-directory/reports-monitoring/)
 - [Azure AD Identity Governance documentation](/azure/active-directory/governance/) 
 
-  Discusses other governance areas and tools that addresses several areas. Due to different organizational needs, not all of the governance features called out in this document are applicable to all organizations. 
+  Discusses other governance areas and tools that addresses several areas. Due to different organizational needs, not all of the governance features called out in this document are applicable to all organizations.
+
+## Next Steps
+
+- [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
+- [Identify and protect sensitive business data with Zero Trust](identify-protect-sensitive-business-data.md)

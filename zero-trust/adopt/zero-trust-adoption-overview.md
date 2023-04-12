@@ -143,8 +143,8 @@ This Zero Trust adoption guidance recommends building a Zero Trust strategy and 
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
 - Prevent or reduce business damage from a breach
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
-- Proactively meet regulatory requirements
-- Build confidence in your security posture and programs
+- Proactively meet regulatory requirements (in development)
+- Build confidence in your security posture and programs (in development)
 
 Each business scenario is described in an article that describes how to progress the technical work through each of the lifecycle phases, starting with building the business case. The most appropriate resources are provided along the way.
 
@@ -224,10 +224,7 @@ For more information on using Microsoft 365 Defender to track your progress, see
 
 For more information about how to use Secure Score, see [Secure Score documentation](/microsoft-365/security/defender/microsoft-secure-score). 
 
-<!---
+## Next Steps
 
-## References
-
-Refer to the links below to learn about the various services and technologies mentioned in this article.
-
---->
+- [Secure remote and hybrid work with Zero Trust](secure-remote-hybrid-work.md)
+- [Identify and protect sensitive business data with Zero Trust](identify-protect-sensitive-business-data.md)

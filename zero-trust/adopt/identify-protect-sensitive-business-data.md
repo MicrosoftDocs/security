@@ -241,7 +241,7 @@ Before translating your organization’s classification schema to labels and add
 
 So, for example, many organizations are well-served by a three-tier model of protection across data, devices, and identities. In this model, most data can be protected at a baseline level. A smaller amount of data might require increased protection. Some organizations have a very small amount of data that requires protection at much higher levels. Examples include trade-secret data or data that is highly regulated due to the extremely sensitive nature of the data or projects.
 
-:::image type="content" source="../media/adoption-guide/three-tiers-of-protection.png" alt-text="The three tiers of data protection." lightbox="../media/adoption-guide/three-tiers-of-protection.png":::
+:::image type="content" source="../media/adoption-guide/three-tiers-of-protection.svg" alt-text="The three tiers of data protection." lightbox="../media/adoption-guide/three-tiers-of-protection.svg":::
 
 If three tiers of protection work for your organization, this helps simplify how you translate this to labels and the protection you apply to labels.
 
@@ -371,7 +371,7 @@ This list summarizes the high-level methodical process for doing this work:
 
 This diagram shows the process.
 
-:::image type="content" source="../media/adoption-guide/process-for-data-identification.png" alt-text="Process for identifying and protecting your sensitive data." lightbox="../media/adoption-guide/process-for-data-identification.png":::
+:::image type="content" source="../media/adoption-guide/process-for-data-identification.svg" alt-text="Process for identifying and protecting your sensitive data." lightbox="../media/adoption-guide/process-for-data-identification.svg":::
 
 Your priorities for data discovery and protection might differ.
 
@@ -386,7 +386,7 @@ As you finalize your adoption plans, be sure to revisit the [Information Protect
 
 Microsoft recommends a cascading, iterative approach to discovering and protecting sensitive data. This allows you to refine your strategy and policies as you go to increase the accuracy of the results. For example, begin working on a classification and protection schema as you discover and identify sensitive data. The data you discover informs the schema and the schema helps you improve the tools and methods you use to discover sensitive data. Similarly, as you test and pilot the schema, the results help you improve the protection policies you created earlier. There’s no need to wait until one phase is complete before beginning the next. Your results are more effective if you iterate along the way.
 
-:::image type="content" source="../media/adoption-guide/adoption-information-protection.png" alt-text="Process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.png":::
+:::image type="content" source="../media/adoption-guide/adoption-information-protection.svg" alt-text="Process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.svg":::
 
 ## Govern and Manage phases
 
@@ -403,3 +403,8 @@ Microsoft Purview provides several capabilities to help you govern your data, in
 - Records management for more sophisticated retention and deletion policies and schedules
 
 See [Govern your data with Microsoft Purview](/microsoft-365/compliance/manage-data-governance). Additionally, [activity explorer](/microsoft-365/compliance/data-classification-activity-explorer) gives you visibility into what content has been discovered and labeled, and where that content is. For SaaS apps, Microsoft Defender for Cloud Apps provides rich reporting for sensitive data that is moving into and out of SaaS apps. See the many tutorials in the [Microsoft Defender for Cloud Apps content library](/defender-cloud-apps/).
+
+## Next Steps
+
+- [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
+- [Secure remote and hybrid work with Zero Trust](secure-remote-hybrid-work.md)

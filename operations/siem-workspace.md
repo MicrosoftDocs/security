@@ -1,5 +1,5 @@
 ---
-title: Step 2. Architect an Azure Sentinel workspace
+title: Step 2. Architect your Microsoft Sentinel workspace
 description: Learn how to design for and implement Zero Trust principles for your Microsoft Sentinel workspaces. 
 ms.date: 03/29/2023
 author: JoeDavies-TechWriter
@@ -14,7 +14,7 @@ ms.collection:
   - msftsolution-secops
 ---
 
-# Step 2. Architect an Azure Sentinel workspace
+# Step 2. Architect your Microsoft Sentinel workspace
 
 Deploying the Microsoft Sentinel environment involves designing a workspace configuration to meet your security and compliance requirements. The provisioning process includes creating Log Analytics workspaces and configuring the appropriate Microsoft Sentinel options.
 

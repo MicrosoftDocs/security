@@ -231,7 +231,7 @@ Secure remote and hybrid work solution planning considers that organizations hav
 An adoption plan also includes training your staff to work in a new way to understand what is required to support your organization, which can include:
 
 - Training administrators on new ways of working. Privileged access methods differ from standing admin access and can raise friction initially until universal acceptance is reached.
-- Equipping Helpdesk and IT personnel at all levels with the same benefits realisation message. Increasing security raises attacker friction, balanced by the benefits of working securely. Ensure that this message is understood and communicable at all levels. 
+- Equipping Helpdesk and IT personnel at all levels with the same benefits realization message. Increasing security raises attacker friction, balanced by the benefits of working securely. Ensure that this message is understood and communicable at all levels. 
 - Creating user adoption and training materials. Security is adopted pervasively as a shared responsibility and the security benefits aligned to business goals must be communicated to users. Ensure that user adoption for security is achieved to the same level as user adoption for new technology.
 
 For more information from the Cloud Adoption Framework, see the [Plan for cloud adoption](/azure/cloud-adoption-framework/plan/plan-intro).
@@ -352,7 +352,7 @@ Additional resources for day-to-day governance and operation include:
 - [Azure AD reports and monitoring documentation](/azure/active-directory/reports-monitoring/)
 - [Azure AD Identity Governance documentation](/azure/active-directory/governance/) 
 
-  Discusses other governance areas and tools that addresses several areas. Due to different organizational needs, not all of the governance features called out in this document are applicable to all organizations.
+  Discusses other governance areas and tools that address several areas. Due to different organizational needs, not all of the governance features called out in this document are applicable to all organizations.
 
 ## Next Steps
 

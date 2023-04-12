@@ -20,7 +20,7 @@ With hybrid work models, corporate assets and data are on the move. Your organiz
 
 | Traditional data protection with network controls | Modern data protection with Zero Trust |
 | --- | --- |
-| In traditional networks, network perimeter control governs critical data access, not data sensitivity. You typically apply labels on sensitive data manually, which can result in inconsistent data classification. | A Zero Trust model applies strong authentication to data access requests, using policy to verify every identity, and ensuring identities have access to apps and data. <br><br> A Zero Trust model involves identifying sensitive data and applying classification and protection, including data loss prevention (DLP). Zero Trust includes defenses that protect your data even after it has left your controlled environment. It also includes adaptive protection to reduce insider risk. <br><br> In addition to these protections, Zero Trust includes continuous monitoring and threat protection to prevent and limit the scope of a data breach. |
+| In traditional networks, network perimeter control governs critical data access, not data sensitivity. You typically apply labels on sensitive data manually, which can result in inconsistent data classification. | A Zero Trust model applies strong authentication to data access requests, using policies to verify every identity, and ensuring identities have access to apps and data. <br><br> A Zero Trust model involves identifying sensitive data and applying classification and protection, including data loss prevention (DLP). Zero Trust includes defenses that protect your data even after it has left your controlled environment. It also includes adaptive protection to reduce insider risk. <br><br> In addition to these protections, Zero Trust includes continuous monitoring and threat protection to prevent and limit the scope of a data breach. |
 
 The guidance in this article walks through how to get started with and progress your strategy for identifying and protecting sensitive data. If your organization is subject to regulations that protect data, use the **Proactively meet regulatory and compliance requirements** article in this series (under development) to learn how to apply what you learn in this article to protecting data that is regulated.
 
@@ -163,7 +163,7 @@ The [PowerPoint deck of resources](add link) for this adoption content includes 
 >> RESOLVE THIS LIST
 
 - CISO (remains the same)
-- Compliance Officer: Responsible for maintaining organizational compliance to legislative requirements related to both data privacy & residency.
+- Compliance Officer: Responsible for maintaining organizational compliance with legislative requirements related to both data privacy & residency.
 - Internal Audit: Ensures that controls identified within organizational policies & procedures related to sensitive data management, are regularly followed and adhered to. 
 - IT Manager: Determines the technological controls required to ensure sensitive data protection.  
 - Information Protection Admin: Create, edit, and delete DLP policies, sensitivity labels and their policies, and all classifier types.
@@ -177,8 +177,8 @@ Before you embark on the technical work, Microsoft recommends getting to know th
 | Deployment Acceleration Guide-[Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) | Learn best practices from the Microsoft Customer Engagement teams. This guidance leads organizations to maturity through a crawl, walk, run model, which aligns with the recommended stages in this adoption guidance.  |
 | [RaMP checklist-Data protection](/security/zero-trust/data-compliance-gov-data) ![Image of Rapid Modernization Plan](../media/ramp.png) | Another resource for listing and prioritizing the recommended work, including stakeholders. |
 | [Introduction to Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp) (beginner) | In this resource, you learn about DLP in Microsoft Purview Information Protection. |
-|  :::image type="icon" source="../media/adoption-guide/introduction-information-governance.svg" border="false"::: Learn module-[Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance/) (Intermediate) | Learn how Microsoft 365 information protection and data lifecycle management solutions help you protect and govern your data, throughout its lifecycle – wherever it lives and travels. |
-| :::image type="icon" source="../media/adoption-guide/microsoft-certified-associate-badge.svg" border="false"::: Certifications-[Microsoft Certified: Information Protection Administrator Associate](/certifications/information-protection-administrator/) | Recommended learning paths for becoming a Certified Information Protection Administrator Associate. |
+|  :::image type="icon" source="../media/adoption-guide/introduction-information-governance.svg" border="false"::: <br> Learn module-[Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance/) (Intermediate) | Learn how Microsoft 365 information protection and data lifecycle management solutions help you protect and govern your data, throughout its lifecycle – wherever it lives and travels. |
+| :::image type="icon" source="../media/adoption-guide/microsoft-certified-associate-badge.svg" border="false"::: <br> Certifications-[Microsoft Certified: Information Protection Administrator Associate](/certifications/information-protection-administrator/) | Recommended learning paths for becoming a Certified Information Protection Administrator Associate. |
 
 ### Stage 1
 
@@ -291,7 +291,7 @@ Files at rest in the service or residing on a user’s computer don't receive th
 
 | Resource | Description |
 | --- | --- |
-| [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels) | See this article for many ways you can configure specific labels to apply protection. <br><br> It's recommended that you start with basic policies like “encrypt only” for emails, and “all employees – full control” for documents. These policies provide strong levels of protection while providing easy ways out for users when they find situations in which the introduction of encryption causes compatibility problems or conflicts with business requirements. You can incrementally tightened restrictions later as you gain confidence and understanding in the way users need to consume the sensitive data. |
+| [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels) | See this article for many ways you can configure specific labels to apply protection. <br><br> It's recommended that you start with basic policies like “encrypt only” for emails, and “all employees – full control” for documents. These policies provide strong levels of protection while providing easy ways out for users when they find situations in which the introduction of encryption causes compatibility problems or conflicts with business requirements. You can incrementally tighten restrictions later as you gain confidence and understanding in the way users need to consume the sensitive data. |
 | [Common scenarios for sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels) | See this list of scenarios that are supported by sensitivity labels. |
 
 #### Introduce automatic labeling in Office apps 
@@ -347,7 +347,7 @@ An adoption plan is an essential requirement for a successful cloud adoption. Ke
 - **The plan is iterative:** As you start to roll out your plan, you'll learn many things about your environment and the capability set you're using. At each stage of your roll-out, revisit your results compared to the objectives and fine tune the plans. This can include revisiting earlier work to fine-tune policies, for example.
 - **Training your staff and users is well-planned:** From your administration staff to helpdesk and your users, everybody is trained to be successful with their data identification and protection responsibilities. 
 
-For more information from the Cloud Adoption Framework for Azure, see the [Plan for cloud adoption](/azure/cloud-adoption-framework/plan/plan-intro).
+For more information from the Cloud Adoption Framework for Azure, see [Plan for cloud adoption](/azure/cloud-adoption-framework/plan/plan-intro).
 
 ## Ready phase
 

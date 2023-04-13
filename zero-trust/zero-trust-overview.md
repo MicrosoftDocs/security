@@ -152,7 +152,7 @@ See these key resources to get started:
 
 These articles help you apply the principles of Zero Trust to your workloads and services in Microsoft Azure based on a multi-disciplinary approach to applying the Zero Trust principles.
 
-- [Azure IaaS](/azure-infrastructure-overview.md)
+- [Azure IaaS](azure-infrastructure-overview.md)
 - [Azure PaaS: Azure Virtual Desktop](azure-infrastructure-avd.md)
 
 ## Next steps
@@ -161,7 +161,7 @@ On this site you can find:
 
 - [Concepts and deployment objectives](deploy/overview.md)
 - [Zero Trust for small businesses](guidance-smb-partner.md)
-- [Rapid Modernization Plan (RaMP) guidance](zero-trust-ramp-overview) is based on initiatives and gives you a set of deployment paths to more quickly implement key layers of protection.
+- [Rapid Modernization Plan (RaMP) guidance](zero-trust-ramp-overview.md) is based on initiatives and gives you a set of deployment paths to more quickly implement key layers of protection.
 - [Integration guidance for ISVs](integrate/overview.md)
 - [Developer guidance](develop/overview.md)
 

@@ -123,6 +123,16 @@ additionalContent:
             - text: Architecture styles
               url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
         # Card
+        - title: Implementation
+          links:
+            - text: Implementation
+              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+        # Card
+        - title: Operation
+          links:
+            - text: Operation
+              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+        # Card
         - title: Continued learning
           links:
             - text: Secure your cloud operations
@@ -148,6 +158,16 @@ additionalContent:
             - text: Architecture styles
               url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
         # Card
+        - title: Implementation
+          links:
+            - text: Implementation
+              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+        # Card
+        - title: Operation
+          links:
+            - text: Operation
+              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+        # Card
         - title: Continued learning
           links:
             - text: Secure your cloud operations
@@ -171,6 +191,16 @@ additionalContent:
         - title: Cloud architecture
           links:
             - text: Architecture styles
+              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+        # Card
+        - title: Implementation
+          links:
+            - text: Implementation
+              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+        # Card
+        - title: Operation
+          links:
+            - text: Operation
               url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
         # Card
         - title: Continued learning

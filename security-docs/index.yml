@@ -48,7 +48,7 @@ highlightedContent:
       url: https://learn.microsoft.com/microsoft-365/security
     # Card
     - title: Microsoft Entra documentation
-      itemType: concept
+      itemType: overview
       url: https://learn.microsoft.com/entra/
     # Card
     - title: Past news and highlights
@@ -120,8 +120,8 @@ additionalContent:
         # Card
         - title: Cloud architecture
           links:
-            - text: link1a
-              url: https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
+            - text: Architecture styles
+              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
         # Card
         - title: Continued learning
           links:
@@ -145,8 +145,8 @@ additionalContent:
         # Card
         - title: Cloud architecture
           links:
-            - text: link1a
-              url: https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
+            - text: Architecture styles
+              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
         # Card
         - title: Continued learning
           links:
@@ -170,8 +170,8 @@ additionalContent:
         # Card
         - title: Cloud architecture
           links:
-            - text: link1a
-              url: https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
+            - text: Architecture styles
+              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
         # Card
         - title: Continued learning
           links:
@@ -179,8 +179,8 @@ additionalContent:
               url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
 
 #  Section 4
-    - title: Learning resources by role
-      summary: Begin your security journey here
+    - title: Security roles
+      summary: Learning resources by role
       items:
         # Card
         - title: Identity and access administrator

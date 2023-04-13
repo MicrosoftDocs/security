@@ -23,20 +23,20 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Learn about the Microsoft Entra family of multicloud identity and access solutions
-      itemType: overview
-      url: /entra/
+    - title: Cloud adoption assesments
+      itemType: deploy
+      url: https://learn.microsoft.com/en-us/assessments/93dfb79b-71af-404d-897e-3928ecfb92b1/
     # Card
     - title: Set up secure file sharing and collaboration with Microsoft Teams
       itemType: concept
       url: /microsoft-365/solutions/setup-secure-collaboration-with-teams
     # Card
-    - title: Apply Zero Trust principles to Azure IaaS
-      itemType: concept
-      url: /security/zero-trust/azure-infrastructure-overview
+    - title: Backup and restore plan to protect against ransomware
+      itemType: get-started
+      url: https://learn.microsoft.com/azure/security/fundamentals/backup-plan-to-protect-against-ransomware
     # Card
     - title: Evaluate and pilot Microsoft 365 Defender
-      itemType: overview
+      itemType: how-to-guide
       url: /microsoft-365/security/defender/eval-overview
     # Card
     - title: Azure security documentation
@@ -44,7 +44,7 @@ highlightedContent:
       url: https://learn.microsoft.com/azure/security/
     # Card
     - title: Microsoft 365 security
-      itemType: deploy
+      itemType: overview
       url: https://learn.microsoft.com/microsoft-365/security
     # Card
     - title: Microsoft Entra documentation

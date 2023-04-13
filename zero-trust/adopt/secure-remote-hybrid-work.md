@@ -20,7 +20,7 @@ As employees’ home networks stretch the corporate network perimeter, with diff
 
 | Traditional protection with network controls | Modern protection with Zero Trust |
 | --- | --- |
-| Traditional protection relies on network firewalls and virtual private networks (VPNs) to isolate and restrict corporate resources. <br><br> Employees physically ‘badge in’ to the office and use their user account and password to sign in with their device. Both the user account and the device are trusted by default. A Zero Trust model combines policies, processes, and technology to establish trust from cloud to edge, irrespective of where users access your network. | A Zero Trust model doesn’t presume any user identity or device is secure on any network. The approach mandates that you verify the user identity and device, and do so while continuously monitoring network, data, and application security in the office, at home, and across devices. |
+| Traditional protection relies on network firewalls and virtual private networks (VPNs) to isolate and restrict corporate resources. <br><br> Employees physically ‘badge in’ to the office and use their user account and password to sign in with their device. Both the user account and the device are trusted by default. | A Zero Trust model combines policies, processes, and technology to establish trust from cloud to edge, irrespective of where users access your network. <br><br> A Zero Trust model doesn’t presume any user identity or device is secure on any network. The approach mandates that you verify the user identity and device, and do so while continuously monitoring network, data, and application security in the office, at home, and across devices. |
 
 :::image type="content" source="../media/adoption-guide/on-premises-remote-devices.png" alt-text="Zero Trust applies to both known and unknown locations." lightbox="../media/adoption-guide/on-premises-remote-devices.png":::
 
@@ -119,7 +119,7 @@ Use the following exercises to help you plan the implementation of your organiza
 
 Technical adoption for securing remote and hybrid work involves taking a graduated approach to ensuring Zero Trust principles are applied to identities, devices, and applications by requiring that:
 
-- Multifactor authentication with Conditional Access is applied to all user identities that are accessing the environment.
+- Multifactor authentication (MFA) with Conditional Access is applied to all user identities that are accessing the environment.
 - Devices are enrolled in device management and monitored for health.
 - Access to applications and their data requires verifying identities, healthy devices, and appropriate data access.
 
@@ -132,8 +132,6 @@ Many organizations can take a four-staged approach to these technical activities
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint deck](add link) and updating the slides that corresponds to this business scenario. Here is an example.
 
 :::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="PowerPoint slide for the stages of your secure remote and hybrid work deployment." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
-
->>ADD LINK TO PPT
 
 If your organization subscribes to a specific Governance Risk & Compliance (GRC) or Security Operations Center (SOC) strategy, it is vitally important that the technical work incorporate configurations that meet these requirements.
 
@@ -172,8 +170,6 @@ The [PowerPoint deck of resources](add link) for this adoption content includes 
 
 :::image type="content" source="../media/adoption-guide/zero-trust-remote-work-stakeholders.png" alt-text="PowerPoint slide to identify key stakeholders." lightbox="../media/adoption-guide/zero-trust-remote-work-stakeholders.png":::
 
->>ADD LINK TO PPT
-
 ### Technical planning and skills readiness
 
 Microsoft provides resources to help you prioritize this work, get started, and mature your deployment. At this stage we use these resources as planning activities to understand the impact of the proposed changes and to create an implementation plan.
@@ -182,11 +178,11 @@ These resources include prescriptive guidance that you can use as recommended st
 
 | Resource | Description |
 |:-----|:-----|
-| [Rapid Modernization Plan (RaMP) checklist: Explicitly validate trust for all access requests](/security/zero-trust/data-compliance-gov-data) ![Image of Rapid Modernization Plan](../media/ramp.png) | This series of checklists enumerate the technical objectives of each security deployment area in priority order and documents the steps you'll need to take to achieving them. It also lists project members who need to be involved for each area. <br><br> Using this resource helps you to identify quick wins. |
+| Rapid Modernization Plan (RaMP) checklist: [Explicitly validate trust for all access requests](/security/zero-trust/data-compliance-gov-data) ![Image of Rapid Modernization Plan](../media/ramp.png) | This series of checklists enumerate the technical objectives of each security deployment area in priority order and documents the steps you'll need to take to achieving them. It also lists project members who need to be involved for each area. <br><br> Using this resource helps you to identify quick wins. |
 | [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations) ![Image of identity and device access policies](../media/identity-device-access-policies-byplan-thumb.png) | This solution guide recommends a set of [identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) that have been tested together. It includes: <ul><li>**Starting point** level policies that get you started and do not require managing devices.</li><li>**Enterprise** level policies are recommended for Zero Trust. This requires enrolling devices for endpoint management.</li></ul> Use these recommendations as a starting point and, if needed, adapt the policies for your unique environment and goals. |
 | [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) ![Image of managing devices with Intune](../media/adoption-guide/manage-devices-with-intune.png) | This solution guide walks through the phases of managing devices, from actions that don’t require enrolling devices into management to fully managing devices. These recommendations are coordinated with the above resources. |
 | [Intune Enrollment Options](/microsoft-365/solutions/cloud-architecture-models#intune-enrollment-options) ![Image of Intune enrollment options](../media/adoption-guide/msft-intune-enrollment-options-thumb-landscape.png) <br><br> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br> Updated June 2022 | This poster-set provides an easy-to-scan comparison of device enrollment options per platform. |
-| [Multifactor authentication deployment plan](/azure/active-directory/authentication/howto-mfa-getstarted) | This deployment guide shows you how to plan and implement an Azure AD multifactor authentication roll-out. |
+| [MFA deployment plan](/azure/active-directory/authentication/howto-mfa-getstarted) | This deployment guide shows you how to plan and implement an Azure AD MFA roll-out. |
 
 In addition to these resources, the following sections highlight resources for specific tasks in the four stages previously defined.
 
@@ -194,8 +190,8 @@ In addition to these resources, the following sections highlight resources for s
 
 | Task | Resources |
 | --- | --- |
-| Verify and secure every identity with strong authentication | [What authentication and verification methods are available in Azure Active Directory?](/azure/active-directory/authentication/concept-authentication-methods) |
-| Integrate SaaS apps with Azure AD for single sign-on | [Add SaaS apps to Azure Active Directory and to the scope of policies](/security/zero-trust/add-saas-apps) |
+| Verify and secure every identity with strong authentication | [What authentication and verification methods are available in Azure AD?](/azure/active-directory/authentication/concept-authentication-methods) |
+| Integrate SaaS apps with Azure AD for single sign-on | [Add SaaS apps to Azure AD and to the scope of policies](/security/zero-trust/add-saas-apps) |
 | New applications use modern authentication | [Checklist — How are you managing the identity for your workload?](/azure/architecture/framework/security/design-identity) |
 
 #### Stage 2
@@ -254,7 +250,7 @@ When enrolling devices, for example, the following guidance is recommended.
 | Pilot | Stage 2: Identify the next 50-100 endpoints in the production environment |
 | Full deployment | Stage 3: Enroll the rest of the endpoints in larger increments |
 
-Securing Identities starts with adopting multifactor authentication (MFA) and segmenting access using Azure AD Conditional Access. These features support the principle of verifying explicitly but require an incremental adoption process. Depending on the approach, the MFA methodology may need to be rolled out and communicated to users before the switch-on date, especially for an existing workforce used to using passwords only.
+Securing identities starts with adopting MFA and segmenting access using Azure AD Conditional Access. These features support the principle of verifying explicitly but require an incremental adoption process. Depending on the approach, the MFA methodology may need to be rolled out and communicated to users before the switch-on date, especially for an existing workforce used to using passwords only.
 
 Considered the following elements while planning for this scenario:
 

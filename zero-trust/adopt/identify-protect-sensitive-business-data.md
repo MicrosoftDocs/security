@@ -110,8 +110,6 @@ If this staged approach works for your organization, you can share your progress
 
 :::image type="content" source="../media/adoption-guide/zero-trust-protect-data-stakeholders.png" alt-text="PowerPoint slide to identify key stakeholders." lightbox="../media/adoption-guide/zero-trust-protect-data-stakeholders.png":::
 
->>ADD LINK TO PPT
-
 ### Understand your organization
 
 This recommended staged approach for technical implementation can help give context to the exercise of understanding your organization. Each organization’s needs for protecting sensitive business data and the composition and volume of data are different.
@@ -122,7 +120,12 @@ The following actions apply:
 
 - Inventory your data.
 
-  First, take stock of where all your data resides, which can be as simple as listing the apps and repositories with your data. After technologies like sensitivity labeling have been deployed, you may discover other locations where sensitive data is being stored. These locations are sometimes referred to as dark or grey IT. It’s also helpful to estimate how much data you plan to inventory (the volume). Throughout the recommended technical process, you use the tool set to discover and identify business data. You’ll learn what kinds of data you have and where this data resides across services and cloud apps, enabling you to correlate the sensitivity of the data with the level of exposure of the locations in which it's present. For example, Microsoft Defender for Cloud Apps helps you identify SaaS apps you might not have been aware of. The work of discovering where your sensitive data resides begins in Stage 1 of the technical implementation and cascades through all four stages.
+  First, take stock of where all your data resides, which can be as simple as listing the apps and repositories with your data. After technologies like sensitivity labeling have been deployed, you may discover other locations where sensitive data is being stored. These locations are sometimes referred to as dark or grey IT. 
+
+  It’s also helpful to estimate how much data you plan to inventory (the volume). Throughout the recommended technical process, you use the tool set to discover and identify business data. You’ll learn what kinds of data you have and where this data resides across services and cloud apps, enabling you to correlate the sensitivity of the data with the level of exposure of the locations in which it's present. 
+
+  For example, Microsoft Defender for Cloud Apps helps you identify SaaS apps you might not have been aware of. The work of discovering where your sensitive data resides begins in Stage 1 of the technical implementation and cascades through all four stages.
+
 - Document the goals and plan for incremental adoption based on priorities.
 
   The four stages recommended represent an incremental adoption plan. Adjust this plan based on your organization’s priorities and the composition of your digital estate. Be sure to take account of any timeline milestones or obligations for completing this work.
@@ -158,15 +161,7 @@ This table summarizes roles that are recommended when building a sponsorship pro
 
 The [PowerPoint deck of resources](add link) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
->> ADD LINK TO PPT DOWNLOAD
-
->> RESOLVE THIS LIST
-
-- CISO (remains the same)
-- Compliance Officer: Responsible for maintaining organizational compliance with legislative requirements related to both data privacy & residency.
-- Internal Audit: Ensures that controls identified within organizational policies & procedures related to sensitive data management, are regularly followed and adhered to. 
-- IT Manager: Determines the technological controls required to ensure sensitive data protection.  
-- Information Protection Admin: Create, edit, and delete DLP policies, sensitivity labels and their policies, and all classifier types.
+:::image type="content" source="../media/adoption-guide/zero-trust-protect-data-stakeholders.png" alt-text="PowerPoint slide to identify key stakeholders." lightbox="../media/adoption-guide/zero-trust-protect-data-stakeholders.png":::
 
 ### Technical planning and skills readiness
 
@@ -175,16 +170,16 @@ Before you embark on the technical work, Microsoft recommends getting to know th
 | Resource | Description |
 |:-----|:-----|
 | Deployment Acceleration Guide-[Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) | Learn best practices from the Microsoft Customer Engagement teams. This guidance leads organizations to maturity through a crawl, walk, run model, which aligns with the recommended stages in this adoption guidance.  |
-| [RaMP checklist-Data protection](/security/zero-trust/data-compliance-gov-data) ![Image of Rapid Modernization Plan](../media/ramp.png) | Another resource for listing and prioritizing the recommended work, including stakeholders. |
+| RaMP checklist: [Data protection](/security/zero-trust/data-compliance-gov-data) ![Image of Rapid Modernization Plan](../media/ramp.png) | Another resource for listing and prioritizing the recommended work, including stakeholders. |
 | [Introduction to Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp) (beginner) | In this resource, you learn about DLP in Microsoft Purview Information Protection. |
 |  :::image type="icon" source="../media/adoption-guide/introduction-information-governance.svg" border="false"::: <br> Learn module-[Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance/) (Intermediate) | Learn how Microsoft 365 information protection and data lifecycle management solutions help you protect and govern your data, throughout its lifecycle – wherever it lives and travels. |
 | :::image type="icon" source="../media/adoption-guide/microsoft-certified-associate-badge.svg" border="false"::: <br> Certifications-[Microsoft Certified: Information Protection Administrator Associate](/certifications/information-protection-administrator/) | Recommended learning paths for becoming a Certified Information Protection Administrator Associate. |
 
-### Stage 1
+#### Stage 1
 
 The Stage 1 objectives include the process of taking inventory of your data. This includes identifying unsanctioned SaaS apps your organization uses to store, process, and share data. You can either bring these unsanctioned apps into your app management process and apply protections, or you can prevent your business data from being used with these apps.
 
-#### Discover and identify sensitive business data
+##### Discover and identify sensitive business data
 
 Starting with Microsoft 365, some of the primary tools you use to identify sensitive information that needs to be protected are sensitive information types (SITs) and other classifiers, including trainable classifiers and fingerprints. These identifiers help find common sensitive data types, such as credit card numbers or governmental identification numbers, and identifying sensitive documents and emails using machine learning and other methods. You can also create custom SITs to identify data that is unique to your environment, including using exact data matching to differentiate data pertaining to specific people—for example, customer PII—that needs special protection.
 
@@ -206,9 +201,9 @@ The following table lists resources for discovering sensitive business data.
 | [Trainable classifiers](/microsoft-365/compliance/classifier-learn-about) | Trainable classifiers allow you to bring samples of the type of content you want to discover (seeding) and then let the machine learning engine learn how to discover more of this data. You participate in the classifier training by validating the results until the accuracy is improved. |
 | [Exact data matching](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview) | Exact data matching allows you to find sensitive data that matches existing records—for example, your customers’ PII as recorded in your line of business apps—which enables you to precisely target such data with information protection policies, virtually eliminating false positives. |
 | [Content search](/microsoft-365/compliance/search-for-content) | Use Content search for advanced searches, including custom filters. You can use keywords and Boolean search operators. You can also build search queries using Keyword Query Language (KQL). |
-| [RaMP checklist-Data protection: Know your data](/security/zero-trust/data-compliance-gov-data#1-know-your-data) | A checklist of implementation steps with step owners and links to documentation. |
+| RaMP checklist:[Data protection: Know your data](/security/zero-trust/data-compliance-gov-data#1-know-your-data) | A checklist of implementation steps with step owners and links to documentation. |
 
-#### Discover non-sanctioned SaaS apps
+##### Discover non-sanctioned SaaS apps
 
 Your organization likely subscribes to many SaaS apps, such as Salesforce or apps that are specific to your industry. The SaaS apps that you know about and manage are considered sanctioned. In later stages, you extend the data protection schema and DLP policies you create with Microsoft 365 to protect data in these sanctioned SaaS apps.
 
@@ -221,7 +216,7 @@ The tool for discovering SaaS apps that your organization uses is Microsoft Defe
 | [Integrate SaaS apps for Zero Trust with Microsoft 365](/security/zero-trust/integrate-saas-apps) | This solution guide walks through the process of protecting SaaS apps with Zero Trust principles. The first step in this solution includes adding your SaaS apps to Azure AD and to the scopes of policies. This should be a priority. |
 | [Evaluate Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-overview) | This guide helps you get Microsoft Defender for Cloud Apps up and running as quickly as possible. You can discover unsanctioned SaaS apps as early as the trial and pilot phases. |
 
-#### Encrypt network communication
+##### Encrypt network communication
 
 This task is more of a check to be sure your network traffic is encrypted. Check in with your networking team to make sure these recommendations are satisfied.
 
@@ -231,7 +226,7 @@ This task is more of a check to be sure your network traffic is encrypted. Check
 | [Secure networks with Zero Trust-Objective 6: All traffic is encrypted](/security/zero-trust/deploy/networks#vi-encryption-all-traffic-is-encrypted) | Encrypt application backend traffic between virtual networks.<br><br> Encrypt traffic between on-premises and cloud. |
 | [Networking up (to the cloud)-One architect's viewpoint](/microsoft-365/solutions/networking-design-principles) | For network architects, this article helps put recommended networking concepts into perspective. Ed Fisher, Security & Compliance Architect at Microsoft, describes how to optimize your network for cloud connectivity by avoiding the most common pitfalls. |
 
-### Stage 2
+#### Stage 2
 
 After you've taken inventory and discovered where your sensitive data resides, move on to Stage 2 in which you develop a classification schema and begin to test this with your organization data. This stage also includes identifying where data or projects require increased protection.
 
@@ -247,13 +242,13 @@ If three tiers of protection work for your organization, this helps simplify how
 
 For this stage, develop your sensitivity labels and start using them across data in Microsoft 365. Don’t worry about adding protection to the labels yet, that is preferably done at a later stage once users have become familiar with the labels and have been applying these without concerns regarding their constraints for some time. Adding protection to labels is included in the next stage. However, it's recommended to also get started with basic DLP policies. Finally, in this stage you apply specific protection to projects or data sets that require highly sensitive protection.
 
-#### Develop and test a classification schema
+##### Develop and test a classification schema
 
 | Resource | Description |
 | --- | --- |
 | [Sensitivity labels](/microsoft-365/compliance/sensitivity-labels) | Learn about and get started with sensitivity labels. <br><br> The most critical consideration in this phase is to ensure that the labels reflect both the needs of the business and the language used by users. If the names of the labels don't intuitively resonate with users or their meanings don't map consistently to their intended use, adoption of labeling can end up being hampered, and accuracy of label application is likely to suffer. |
 
-#### Apply labels to data across Microsoft 365
+##### Apply labels to data across Microsoft 365
 
 | Resource | Description |
 | --- | --- |
@@ -261,13 +256,13 @@ For this stage, develop your sensitivity labels and start using them across data
 | [Manage sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps) | Next, start introducing labels to users where they can see and apply them. When you've published sensitivity labels from the Microsoft Purview compliance portal, they start to appear in Office apps for users to classify and protect data as it's created or edited. |
 | [Apply labels to Microsoft Teams and Microsoft 365 groups](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) | When you’re ready, include Microsoft Teams and Microsoft 365 groups into the scope of your labeling deployment. |
 
-#### Introduce basic DLP policies
+##### Introduce basic DLP policies
 
 | Resource | Description |
 | --- | --- |
 | [Prevent data loss](/microsoft-365/compliance/information-protection-solution) | Get started with DLP policies. <br><br> It's recommended to start with “soft” DLP policies, which provide warnings but don't block actions, or at most block actions while allowing users to override the policy. This allows you gauge the impact of these policies without harming productivity. You can fine-tune the policies to become stricter as you gain confidence in their accuracy and compatibility with the business needs. |
 
- #### Set up secure teams for sharing data internally and externally with business partners
+##### Set up secure teams for sharing data internally and externally with business partners
 
 If you've identified projects or data that require highly sensitive protection, these resources describe how to set this up in Microsoft Teams. If the data is stored in SharePoint without an associated team, use the instructions in these resources for SharePoint settings.
 
@@ -276,7 +271,7 @@ If you've identified projects or data that require highly sensitive protection, 
 | [Configure teams with protection for highly sensitive data](/microsoft-365/solutions/configure-teams-highly-sensitive-protection) | Provides prescriptive recommendations for securing projects with highly sensitive data, including securing and managing guest access (your partners who might be collaborating with you on these projects). |
 | [Configure a team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation) | This article provides you with recommendations and steps to configure a private team in Microsoft Teams and use a unique sensitivity label to encrypt files so that only team members can decrypt them. |
 
-### Stage 3
+#### Stage 3
 
 In this stage, you continue to roll out the data classification schema you refined. You also apply the protections you planned.
 
@@ -287,54 +282,54 @@ Once you add protection to a label (such as encryption and rights management):
 
 Files at rest in the service or residing on a user’s computer don't receive the protection that was added to the label AFTER these files received the label. In other words, if the file was previously labeled and then you later add protection to the label, the protection isn't applied to these files.
 
-#### Add protection to labels
+##### Add protection to labels
 
 | Resource | Description |
 | --- | --- |
 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels) | See this article for many ways you can configure specific labels to apply protection. <br><br> It's recommended that you start with basic policies like “encrypt only” for emails, and “all employees – full control” for documents. These policies provide strong levels of protection while providing easy ways out for users when they find situations in which the introduction of encryption causes compatibility problems or conflicts with business requirements. You can incrementally tighten restrictions later as you gain confidence and understanding in the way users need to consume the sensitive data. |
 | [Common scenarios for sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels) | See this list of scenarios that are supported by sensitivity labels. |
 
-#### Introduce automatic labeling in Office apps 
+##### Introduce automatic labeling in Office apps 
 
 | Resource | Description |
 | --- | --- |
 | [Apply a sensitivity label to content automatically](/microsoft-365/compliance/apply-sensitivity-label-automatically) | Automatically assign a label to files and emails when it matches conditions that you specify. It's recommended that you initially configure the labels to provide an interactive labeling recommendation to users. Once you confirm these are generally accepted, switch them to automatically applying the label. |
 
-#### Extend DLP policies across Microsoft 365
+##### Extend DLP policies across Microsoft 365
 
 | Resource | Description |
 | --- | --- |
 | [Prevent data loss](/microsoft-365/compliance/information-protection-solution) | Continue to use these steps to apply DLP across your Microsoft 365 environment, extending the policies to more locations and services and tightening the rule actions by removing unnecessary exceptions. |
 
-#### Implement basic insider risk management policies
+##### Implement basic insider risk management policies
 
 | Resource | Description |
 | --- | --- |
 | [Insider risk management](/microsoft-365/compliance/insider-risk-management-solution-overview) | Get started with the recommended actions. You can begin by using policy templates to quickly get started, including data theft by departing users. |
 
-### Stage 4
+#### Stage 4
 
 In this stage, you extend the protections you developed in Microsoft 365 to data in your SaaS apps. You also transition to automation of as much of the data classification and governance as possible. 
 
-#### Extend labels and protection to data in SaaS apps, including DLP
+##### Extend labels and protection to data in SaaS apps, including DLP
 
 | Resource | Description |
 | --- | --- |
 | [Deploy information protection for SaaS apps](/security/zero-trust/deploy-information-protection-saas) | Using Microsoft Defender for Cloud Apps, you extend the classification schema you developed with Microsoft 365 capabilities to protect data in your SaaS apps. |
 
-#### Extend automated classification
+##### Extend automated classification
 
 | Resource | Description |
 | --- | --- |
 | [Apply a sensitivity label to content automatically](/microsoft-365/compliance/apply-sensitivity-label-automatically) | Continue to roll out the automated methods for applying labels to your data. Extend them to documents at-rest in SharePoint, OneDrive, and Teams, and to emails being sent or received by users. |
 
-#### Extend labels and protection to data in on-premises repositories
+##### Extend labels and protection to data in on-premises repositories
 
 | Resource | Description |
 | --- | --- |
 | [Microsoft 365 Purview Information Protection Scanner](/microsoft-365/compliance/deploy-scanner) | Scan data in on-premises repositories, including Microsoft Windows file shares and SharePoint Server. The information protection scanner can inspect any files that Windows can index. If you've configured sensitivity labels to apply automatic classification, the scanner can label discovered files to apply that classification, and optionally apply or remove protection. |
 
-#### Protect organization data in cloud infrastructure
+##### Protect organization data in cloud infrastructure
 
 | Resource | Description |
 | --- | --- |
@@ -378,7 +373,7 @@ Your priorities for data discovery and protection might differ.
 Note the following dependencies on other business scenarios:
 
 - Extending information protection to endpoint devices requires coordination with Intune (included in the [Secure remote and hybrid work](secure-remote-hybrid-work.md) article).
-- Extending information protection to data in SaaS apps requires Microsoft Defender for Cloud Apps. Piloting and deploying Defender for Cloud Apps is included in the “Prevent or reduce business damage from a breach” scenario (coming soon). In the meantime, see [Evaluate Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-overview).
+- Extending information protection to data in SaaS apps requires Microsoft Defender for Cloud Apps. Piloting and deploying Defender for Cloud Apps is included in the **Prevent or reduce business damage from a breach** scenario (coming soon). In the meantime, see [Evaluate Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-overview).
 
 As you finalize your adoption plans, be sure to revisit the [Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) Deployment Acceleration Guide to review the recommendations and fine-tune your strategy.
 

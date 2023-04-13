@@ -108,7 +108,7 @@ The next section discusses how to get started on the Zero Trust journey. We’ll
 
 Customers who are familiar with the Cloud Adoption Framework for Azure have asked, “Where’s the Zero Trust adoption framework?”
 
-The Cloud Adoption Framework for Azure is a methodical process for introducing new apps and services into an organization. The focus is primarily on a proven process an organization can follow to introduce an app or service into the environment. The scale motion is repeating the process for each app that is added to a digital estate.
+The [Cloud Adoption Framework for Azure](https://azure.microsoft.com/solutions/cloud-enablement/cloud-adoption-framework) is a methodical process for introducing new apps and services into an organization. The focus is primarily on a proven process an organization can follow to introduce an app or service into the environment. The scale motion is repeating the process for each app that is added to a digital estate.
 
 Adoption of a Zero Trust strategy and architecture requires a different scope. It is about introducing new security configurations *across an entire digital estate*. The scale motion is two dimensional:
 
@@ -131,7 +131,7 @@ The following table describes the lifecycle phases.
 | --- | --- |
 | Define strategy | Build a business case focused on the outcomes most closely aligned with your organization’s risks and strategic goals. |
 | Plan | <ul><li> Prioritize quick wins and incremental progress. </li><li> Embrace existing technologies already deployed or licensed. </li><li> Structure coherent initiatives with clear outcomes, benefits, and ownership. </li></ul> |
-| Ready |  |
+| Ready | <ul><li> Create a multi-layer strategy for your Zero Trust deployment and prioritize early actions based on business needs. </li><li> 	Identify adjustments to the prescriptive deployment guidance necessary for your environment.</li></ul>  |
 | Adopt | Incrementally implement the strategy across functional areas. |
 | Govern | Track and measure the success of your deployment. |
 | Manage | <ul><li> Use monitoring and detection technologies. </li><li> Incrementally mature each functional area. </li></ul> |
@@ -141,7 +141,7 @@ The following table describes the lifecycle phases.
 This Zero Trust adoption guidance recommends building a Zero Trust strategy and architecture through these business scenarios:
 
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
-- Prevent or reduce business damage from a breach
+- Prevent or reduce business damage from a breach (in development)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
 - Proactively meet regulatory requirements (in development)
 - Build confidence in your security posture and programs (in development)
@@ -175,7 +175,7 @@ Each business scenario encompasses a different set of assets with different tool
 
 Each business scenario recommends how to take inventory as well as how to protect the assets and report on progress. While there is inevitably some overlap across the business scenarios, this adoption guidance attempts to simplify as much as possible by addressing asset types in predominantly one business scenario.
 
-### Tracking progress
+## Tracking progress
 
 Tracking your progress throughout the Zero Trust adoption process is crucial as it allows your organization to monitor and measure strategic goals and objectives.
 
@@ -194,14 +194,15 @@ Many organizations use International Organization for Standardization (ISO) stan
 
 - ISO 31000
 
-    Risk management
+  - Risk management
 
 The requirements and guidelines in these standards are generic and can apply to any organization. They provide a structured and comprehensive way for you to review and gauge the risks that apply to your organization, as well as mitigations.
 
-Identifying and understanding the specific risks that apply to your organization will help you prioritize your most strategic objectives across the Zero Trust architecture. 
+Identifying and understanding the specific risks that apply to your organization will help you prioritize your most strategic objectives across the Zero Trust architecture.
+
 Once your organization has identified and prioritized your most strategic technical objectives, you can map out a staged roadmap for implementation. You can then track your progress by using various tools:
 
-- The PowerPoint deck with progress tracking slides (provided as a download with this guidance). These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
+- The PowerPoint deck with progress tracking slides ([this PowerPoint deck](add link)). These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
 - Secure Score is an aggregated score of technical controls that contribute to your current security posture. Secure Score gives your organization a global view of the controls that have and are still to be implemented.
 - Cloud Security Posture Management (CSPM) tools provided within Microsoft Defender for Cloud.
 

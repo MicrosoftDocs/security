@@ -39,228 +39,167 @@ highlightedContent:
       itemType: overview
       url: /microsoft-365/security/defender/eval-overview
     # Card
-    - title: Guiding principles of Zero Trust, a security strategy
+    - title: Azure security documentation
       itemType: overview
-      url: /security/zero-trust/zero-trust-overview
+      url: https://learn.microsoft.com/azure/security/
     # Card
-    - title: Cloud adoption assessments
+    - title: Microsoft 365 security
       itemType: deploy
-      url: /assessments/93dfb79b-71af-404d-897e-3928ecfb92b1/
+      url: https://learn.microsoft.com/microsoft-365/security
     # Card
-    - title: The immutable laws of security
+    - title: Microsoft Entra documentation
       itemType: concept
-      url: /security/zero-trust/ten-laws-of-security
+      url: https://learn.microsoft.com/entra/
     # Card
     - title: Past news and highlights
       itemType: reference
       url: ./engineering/news-and-highlights.md
 
+# conceptualContent section (Optional; Remove if not applicable.)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  # Supports up to 3 subsections
+  sections:
+    - title: Zero Trust
+      summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture.
+      items:
+        # Card
+        - title: Safeguard your most critical assets
+          links:
+            - url: https://learn.microsoft.com/microsoft-365/solutions/data-privacy-protection
+              itemType: deploy
+              text: Manage data privacy and data protection
+
+        # Card
+        - title: Secure work from anywhere
+          links:
+            - url: https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-365-policies-configurations
+              itemType: deploy
+              text: Identity and device access configurations
+
+        # Card
+        - title: Minimize the impact of external or bad actors
+          links:
+            - url: https://learn.microsoft.com/microsoft-365/security/office-365-security/identity-access-policies-guest-access
+              itemType: deploy
+              text: Policies for allowing guest access and B2B external user access
+
+        # Card
+        - title: Meet regulatory and compliance requirements
+          links:
+            - url: https://learn.microsoft.com/security/zero-trust/data-compliance-gov-data
+              itemType: deploy
+              text: Data protection
+
+        # Card
+        - title: Rapidly modernize your security posture
+          links:
+            - url: https://learn.microsoft.com/security/zero-trust/zero-trust-ramp-overview
+              itemType: deploy
+              text: Overview
+
 
 additionalContent:
-#  Maximum of 3 sections
+#  Maximum of 4 sections
   sections:
 
 #  Section 1
-    - title: Get started
+    - title: Modernize security operations
+      summary: Modernize security operations
+      items:
+        # Card
+        - title: Fundamentals
+          links:
+            - text: Shared responsibility
+              url: https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
+        # Card
+        - title: Strategy and planning
+          links:
+            - text: Define a security strategy
+              url: https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
+        # Card
+        - title: Cloud architecture
+          links:
+            - text: link1a
+              url: https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
+        # Card
+        - title: Continued learning
+          links:
+            - text: Secure your cloud operations
+              url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
+
+#  Section 2
+    - title: Compliance and privacy
+      summary: Compliance and privacy
+      items:
+        # Card
+        - title: Fundamentals
+          links:
+            - text: Shared responsibility
+              url: https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
+        # Card
+        - title: Strategy and planning
+          links:
+            - text: Define a security strategy
+              url: https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
+        # Card
+        - title: Cloud architecture
+          links:
+            - text: link1a
+              url: https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
+        # Card
+        - title: Continued learning
+          links:
+            - text: Secure your cloud operations
+              url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
+
+#  Section 3
+    - title: Secure access and identities
+      summary: Secure access and identities
+      items:
+        # Card
+        - title: Fundamentals
+          links:
+            - text: Shared responsibility
+              url: https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
+        # Card
+        - title: Strategy and planning
+          links:
+            - text: Define a security strategy
+              url: https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
+        # Card
+        - title: Cloud architecture
+          links:
+            - text: link1a
+              url: https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
+        # Card
+        - title: Continued learning
+          links:
+            - text: Secure your cloud operations
+              url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
+
+#  Section 4
+    - title: Learning resources by role
       summary: Begin your security journey here
       items:
         # Card
-        - title: Cybersecurity training - Chief Information Security Officer (CISO) workshop
-          summary: If you're new to Microsoft Security, start here! Includes principles and recommendations for modernizing security in your organization.
-          url: /security/ciso-workshop/the-ciso-workshop
-        # Card
-        - title: Microsoft Security Best Practices
-          summary: Are you a security professional? The Zero Trust implementation guidance contains a collection of best practices with actionable guidance for your security architecture.
-          url: /security/compass/compass
-        # Card
-        - title: Security benchmarks
-          summary: Security recommendations provide a strong starting point for your own planning and deployment.
-          url: /azure/security/benchmarks/introduction
-        # Card
-        - title: Microsoft security engineering
-          summary: Security related documentation and information from across Microsoft.
-          url: ./engineering/index.yml
-        # Card
-        - title: Security learning paths and modules
-          summary: Learn new skills and discover the power of Microsoft products with step-by-step guidance.
-          url: /training/browse/?term=security
-        # Card
-        - title: Security roles and responsibilities
-          summary: Organizational functions required to manage information security risk in an enterprise.
-          url: /azure/cloud-adoption-framework/organize/cloud-security
-
-#  Section 2
-    - title: Security disciplines
-      summary: Microsoft security best practices that help you improve your security posture
-      items:
-        # Card
-        - title: Human-operated ransomware
+        - title: Identity and access administrator
           links:
             - text: Overview
-              url: /security/compass/human-operated-ransomware
-            - text: Rapidly protect against ransomware
-              url: /security/compass/protect-against-ransomware
-            - text: Backup and restore plan for ransomware
-              url: /security/compass/backup-plan-to-protect-against-ransomware
-
+              url: https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
         # Card
-        - title: Zero Trust Guidance Center
-          links:
-            - text: Zero Trust overview
-              url: https://aka.ms/ZTGuide
-            - text: Securing identity with Zero Trust
-              url: /security/zero-trust/identity
-            - text: Get started with Zero Trust identity integrations
-              url: /security/zero-trust/integrate/identity
-
-        # Card
-        - title: Governance and strategy
+        - title: Information protection administrator
           links:
             - text: Overview
-              url: /security/compass/governance
-            - text: Modernize security strategy
-              url: /azure/cloud-adoption-framework/strategy/define-security-strategy
-            - text: Best practices (videos & slides)
-              url: /security/compass/governance-risk-compliance-videos-and-decks
-
+              url: https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
         # Card
-        - title: Network security
+        - title: Security operations analyst
           links:
             - text: Overview
-              url: /security/compass/network-security-containment
-            - text: Best practices (videos & slides)
-              url: /security/compass/network-containment-videos-and-decks
-            - text: Network integrations
-              url: /security/zero-trust/integrate/networks
-
+              url: https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
         # Card
-        - title: Identity and access management
+        - title: Security engineer
           links:
             - text: Overview
-              url: /security/compass/identity
-            - text: Best practices (videos & slides)
-              url: /security/compass/identity-videos-and-decks
-            - text: Identity integrations
-              url: /security/zero-trust/integrate/identity
+              url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
 
-        # Card
-        - title: Storage, data, and encryption
-          links:
-            - text: Overview
-              url: /security/compass/storage-data-encryption
-            - text: Best practices (videos & slides)
-              url: /security/compass/information-protection-and-storage-videos-and-decks
-            - text: Data integrations
-              url: /security/zero-trust/integrate/data
-
-        # Card
-        - title: Applications and services
-          links:
-            - text: Overview
-              url: /security/compass/applications-services
-            - text: Secure development best practices
-              url: /azure/security/develop/secure-dev-overview
-            - text: DevSecOps controls
-              url: /azure/cloud-adoption-framework/secure/devsecops-controls
-
-        # Card
-        - title: Security operations
-          links:
-            - text: Overview
-              url: /security/compass/security-operations
-            - text: Best practices
-              url: /security/operations/security-operations-videos-and-decks
-            - text: Incident response
-              url: /security/operations/incident-response-overview
-
-        # Card
-        - title: Privileged access
-          links:
-            - text: Overview
-              url: /security/compass/overview
-            - text: Best practices (videos & slides)
-              url: /security/compass/administration-videos-and-decks
-            - text: Rapid Modernization Plan
-              url: /security/compass/security-rapid-modernization-plan
-
-
-#  Section 3
-    - title: Additional security resources
-      items:
-        # Card
-        - title: Security documentation for Microsoft Azure
-          links:
-            - url: /azure/security/
-              text: Security, compliance, & identity
-            - url: /azure/security/journey/
-              text: Security fundamentals
-            - url: /azure/defender-for-cloud/
-              text: Microsoft Defender for Cloud
-            - url: /azure/sentinel/
-              text: Microsoft Sentinel
-            - url: /azure/active-directory/
-              text: Azure Active Directory
-            - url: /azure/key-vault/
-              text: Azure Key Vault
-            - url: /azure/networking/
-              text: Azure networking security services
-
-        # Card
-        - title: Security documentation for Microsoft 365
-          links:
-            - url: /microsoft-365/security/
-              text: Microsoft 365 security
-            - url: /microsoft-365/security/defender/microsoft-365-defender/
-              text: Microsoft 365 Defender
-            - url: /enterprise-mobility-security/remote-work/
-              text: Secure your remote workforce
-            - url: /windows/security/
-              text: Windows security
-            - url: /enterprise-mobility-security/
-              text: Enterprise Mobility + Security
-            - url: /sql/?view=sql-server-ver15
-              text: Microsoft SQL
-        # Card
-        - title: Security reference
-          links:
-            - text: Security Development Lifecycle (SDL)
-              url: https://www.microsoft.com/en-us/securityengineering/sdl/
-            - text: Operational Security Assurance
-              url: https://www.microsoft.com/en-us/securityengineering/osa/
-            - text: Secure DevOps
-              url: https://www.microsoft.com/en-us/securityengineering/devsecops
-            - text: Microsoft Security Risk Detection
-              url: https://www.microsoft.com/en-us/security-risk-detection/
-            - text: Azure secure development
-              url: /azure/security/develop/index
-        # Card
-        - title: Security programs
-          links:
-            - text: Microsoft Security Response Center
-              url: https://www.microsoft.com/msrc
-            - text: Cyber Defense Operations Center
-              url: https://www.microsoft.com/msrc/cdoc
-            - text: Cybersecurity - Digital Crimes Unit
-              url: https://news.microsoft.com/on-the-issues/topic/cybersecurity/
-            - text: Government Security Program
-              url: https://www.microsoft.com/en-us/securityengineering/gsp
-        # Card
-        - title: Professional services
-          links:
-            - text: Microsoft Detection and Response Team
-              url: https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/
-#            - text: MCS and Premier Catalog
-#              url: file3b.md OR https://learn.microsoft.com/file3b
-            - text: Microsoft cybersecurity reference architectures
-              url: /security/cybersecurity-reference-architecture/mcra
-        # Card
-        - title: Security principles
-          links:
-            - text: Microsoft Trust Center
-              url: https://www.microsoft.com/trust-center
-            - text: Compliance
-              url: https://www.microsoft.com/trust-center/compliance/compliance-overview
-            - text: Privacy
-              url: https://www.microsoft.com/trust-center/privacy
-            - text: Azure governance
-              url: /azure/governance/

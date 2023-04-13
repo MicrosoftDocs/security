@@ -23,7 +23,7 @@ This guidance is for software providers and technology partners who want to enha
 
 ## Zero Trust integration for Infrastructure guide
 
-This integration guide includes strategy and instructions for integrating with [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) and its integrated cloud workload protection platform (CWPP), [Microsoft Defender for Cloud](/azure/security-center/azure-defender).
+This integration guide includes strategy and instructions for integrating with [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) and its integrated cloud workload protection plans, **Microsoft Defender for ...** (Servers, Containers, Databases, Storage, App Services, and more).
 
 The guidance includes integrations with the most popular Security Information and Event Management (SIEM), Security Orchestration Automated Response (SOAR), Endpoint Detection and Response (EDR), and IT Service Management (ITSM) solutions.
 
@@ -126,11 +126,11 @@ This can also be done at the Management Group level using Azure Policy, see [Cre
 
 [Microsoft Defender for servers](/azure/security-center/defender-for-servers-introduction), includes an integrated license for [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/security/endpoint-defender). Together, they provide comprehensive endpoint detection and response (EDR) capabilities. For more information, see [Protect your endpoints](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=linux).
 
-When Defender for Endpoint detects a threat, it triggers an alert. The alert is shown in Defender for Cloud and you can pivot to the Defender for Endpoint console to perform a detailed investigation and uncover the scope of the attack. Learn more about [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+When Defender for Endpoint detects a threat, it triggers an alert. The alert is shown in Defender for Cloud and you can pivot to the Defender for Endpoint console to perform a detailed investigation and uncover the scope of the attack. [Learn more about Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
 #### Other EDR solutions
 
-Defender for Cloud provides hardening recommendations to ensure you're securing your organization's resources according to the guidance of [Microsoft cloud security benchmark (MCSB)](security/benchmark/azure/introduction). One of the controls in the benchmark relates to endpoint security: [ES-1: Use Endpoint Detection and Response (EDR)](/security/benchmark/azure/security-controls-v2-endpoint-security).
+Defender for Cloud provides hardening recommendations to ensure you're securing your organization's resources according to the guidance of [Microsoft cloud security benchmark (MCSB)](/security/benchmark/azure/introduction). One of the controls in the benchmark relates to endpoint security: [ES-1: Use Endpoint Detection and Response (EDR)](/security/benchmark/azure/security-controls-v2-endpoint-security).
 
 There are two recommendations in Defender for Cloud to ensure you've enabled endpoint protection and it's running well. These recommendations are checking for the presence and operational health of EDR solutions from:
 
@@ -155,10 +155,10 @@ Learn about how to connect machines in [Connect your non-Azure machines to Defen
 
 #### Integrate Defender for Cloud with other cloud environments
 
-To view the security posture of **Amazon Web Services** machines in Defender for Cloud, onboard  AWS accounts into Defender for Cloud. This will integrate AWS Security Hub and Microsoft Defender for Cloud for a unified view of Defender for Cloud recommendations and AWS Security Hub findings and provide a range of benefits as described in  [Connect your AWS accounts to Microsoft Defender for Cloud](/azure/security-center/quickstart-onboard-aws).
+To view the security posture of **Amazon Web Services** machines in Defender for Cloud, onboard  AWS accounts into Defender for Cloud. This will integrate AWS Security Hub and Microsoft Defender for Cloud for a unified view of Defender for Cloud recommendations and AWS Security Hub findings and provide a range of benefits as described in [Connect your AWS accounts to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-aws).
 
-To view the security posture of **Google Cloud Platform** machines in Defender for Cloud, onboard GCP accounts into Defender for Cloud. This will integrate GCP Security Command and Microsoft Defender for Cloud for a unified view of Defender for Cloud recommendations and GCP Security Command Center findings and provide a range of benefits as described in [Connect your GCP accounts to Microsoft Defender for Cloud](/azure/security-center/quickstart-onboard-gcp).
+To view the security posture of **Google Cloud Platform** machines in Defender for Cloud, onboard GCP accounts into Defender for Cloud. This will integrate GCP Security Command and Microsoft Defender for Cloud for a unified view of Defender for Cloud recommendations and GCP Security Command Center findings and provide a range of benefits as described in [Connect your GCP accounts to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-gcp).
 
 ## Next steps
 
-To learn more about Microsoft Defender for Cloud, see the complete [Defender for Cloud documentation](/azure/defender-for-cloud/).
+To learn more about Microsoft Defender for Cloud, see [the complete Defender for Cloud documentation](/azure/defender-for-cloud/).

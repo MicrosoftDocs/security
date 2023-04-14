@@ -202,9 +202,9 @@ Identifying and understanding the specific risks that apply to your organization
 
 Once your organization has identified and prioritized your most strategic technical objectives, you can map out a staged roadmap for implementation. You can then track your progress by using various tools:
 
-- The PowerPoint deck with progress tracking slides ([this PowerPoint deck](add link)). These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
-- Secure Score is an aggregated score of technical controls that contribute to your current security posture. Secure Score gives your organization a global view of the controls that have and are still to be implemented.
-- Cloud Security Posture Management (CSPM) tools provided within Microsoft Defender for Cloud.
+- This downloadable PowerPoint deck with progress tracking slides ([this PowerPoint deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx)). These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
+- [Secure Score](/microsoft-365/security/defender/microsoft-secure-score) is an aggregated score of technical controls that contribute to your current security posture. Secure Score gives your organization a global view of the controls that have and are still to be implemented.
+- [Cloud Security Posture Management (CSPM) tools](/azure/defender-for-cloud/concept-cloud-security-posture-management) provided with Microsoft Defender for Cloud.
 
 Note that the progress percentage provided by Secure Score might not be accurate for organizations that aren't willing to implement all controls due to reasons such as:
 

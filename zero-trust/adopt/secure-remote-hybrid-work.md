@@ -129,7 +129,7 @@ Many organizations can take a four-staged approach to these technical activities
 | --- | --- | --- | --- |
 | Verify and secure every identity with strong authentication <br><br> Integrate SaaS apps with Active Directory (Azure AD) for single sign-on <br><br> All new applications use modern authentication | Register devices with Azure AD <br><br> Implement **Starting point** Zero Trust identity and device access policies <br><br> Use Azure AD Application Proxy with on-premises apps for single sign-on | Enroll devices in your device management solution and apply recommended security protections <br><br> Allow only compliant and trusted devices to access data | Monitor device configuration drift <br><br> Implement passwordless authentication |
 
-If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint deck](add link) and updating the slides that corresponds to this business scenario. Here is an example.
+If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) and updating the slides that correspond to this business scenario. Here's an example.
 
 :::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="PowerPoint slide for the stages of your secure remote and hybrid work deployment." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
 
@@ -155,9 +155,8 @@ The implementation and governance of a secure access methodology affects several
 4. Network
 
 Protecting data is also important for securing remote and hybrid work. This topic is addressed more thoroughly in [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md).
- 
-This table summarizes roles that are recommended when building a sponsorship program and project management hierarchy to determine and drive results.
 
+This table summarizes roles that are recommended when building a sponsorship program and project management hierarchy to determine and drive results.
 
 | Area | Program leaders | Technical owner roles |
 | --- | --- | --- |

@@ -106,9 +106,9 @@ Many organizations can take a four-staged approach to these technical activities
 | --- | --- | --- | --- |
 | Discover and identify sensitive business data <br><br> Discover non-sanctioned SaaS apps <br><br> Encrypt network communication | Develop and test a classification schema <br><br> Apply labels to data across Microsoft 365 <br><br> Introduce basic DLP policies <br><br> Set up secure Microsoft Teams for sharing data internally and externally with business partners | Add protection to specific labels (encryption and other protection settings) <br><br> Introduce automatic and recommended labeling in Office apps and services <br><br> Enable mandatory labeling of new content <br><br> Extend DLP policies across Microsoft 365 services <br><br> Implement key insider risk management policies | Extend labels and protection to data in SaaS apps, including DLP <br><br> Extend automated classification to all services <br><br> Extend labels and protection to data at-rest in on-premises repositories <br><br> Protect organization data in your cloud infrastructure |
 
-If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) and updating the slides that correspond to this business scenario. Here's an example.
+If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) and updating the slides that correspond to this business scenario. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-protect-data-stakeholders.png" alt-text="PowerPoint slide to identify key stakeholders." lightbox="../media/adoption-guide/zero-trust-protect-data-stakeholders.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png" alt-text="PowerPoint slide to identify key stakeholders." lightbox="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png":::
 
 ### Understand your organization
 
@@ -159,7 +159,7 @@ This table summarizes roles that are recommended when building a sponsorship pro
 | Security Governance and/or IT Admin | Monitor to ensure compliance |
 | User Education Team | Ensure guidance for users reflects policy updates and provide insights into user acceptance of the labeling taxonomy  |
 
-The [PowerPoint deck of resources](add link) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
+The [PowerPoint deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
 :::image type="content" source="../media/adoption-guide/zero-trust-protect-data-stakeholders.png" alt-text="PowerPoint slide to identify key stakeholders." lightbox="../media/adoption-guide/zero-trust-protect-data-stakeholders.png":::
 
@@ -170,7 +170,7 @@ Before you embark on the technical work, Microsoft recommends getting to know th
 | Resource | Description |
 |:-----|:-----|
 | Deployment Acceleration Guide-[Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) | Learn best practices from the Microsoft Customer Engagement teams. This guidance leads organizations to maturity through a crawl, walk, run model, which aligns with the recommended stages in this adoption guidance.  |
-| RaMP checklist: [Data protection](/security/zero-trust/data-compliance-gov-data) ![Image of Rapid Modernization Plan](../media/ramp.png) | Another resource for listing and prioritizing the recommended work, including stakeholders. |
+| RaMP checklist: [Data protection](/security/zero-trust/data-compliance-gov-data) <br><br> ![Image of Rapid Modernization Plan](../media/ramp.png) | Another resource for listing and prioritizing the recommended work, including stakeholders. |
 | [Introduction to Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp) (beginner) | In this resource, you learn about DLP in Microsoft Purview Information Protection. |
 |  :::image type="icon" source="../media/adoption-guide/introduction-information-governance.svg" border="false"::: <br> Learn module-[Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance/) (Intermediate) | Learn how Microsoft 365 information protection and data lifecycle management solutions help you protect and govern your data, throughout its lifecycle – wherever it lives and travels. |
 | :::image type="icon" source="../media/adoption-guide/microsoft-certified-associate-badge.svg" border="false"::: <br> Certifications-[Microsoft Certified: Information Protection Administrator Associate](/certifications/information-protection-administrator/) | Recommended learning paths for becoming a Certified Information Protection Administrator Associate. |
@@ -201,7 +201,7 @@ The following table lists resources for discovering sensitive business data.
 | [Trainable classifiers](/microsoft-365/compliance/classifier-learn-about) | Trainable classifiers allow you to bring samples of the type of content you want to discover (seeding) and then let the machine learning engine learn how to discover more of this data. You participate in the classifier training by validating the results until the accuracy is improved. |
 | [Exact data matching](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview) | Exact data matching allows you to find sensitive data that matches existing records—for example, your customers’ PII as recorded in your line of business apps—which enables you to precisely target such data with information protection policies, virtually eliminating false positives. |
 | [Content search](/microsoft-365/compliance/search-for-content) | Use Content search for advanced searches, including custom filters. You can use keywords and Boolean search operators. You can also build search queries using Keyword Query Language (KQL). |
-| RaMP checklist:[Data protection: Know your data](/security/zero-trust/data-compliance-gov-data#1-know-your-data) | A checklist of implementation steps with step owners and links to documentation. |
+| RaMP checklist: [Data protection: Know your data](/security/zero-trust/data-compliance-gov-data#1-know-your-data) | A checklist of implementation steps with step owners and links to documentation. |
 
 ##### Discover non-sanctioned SaaS apps
 

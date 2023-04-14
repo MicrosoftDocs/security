@@ -32,7 +32,7 @@ Many security architects and IT teams ask for help communicating to business lea
 - A systematic way to track progress, scoped to business leaders.
 - Curation of the most relevant resources for adoption of Zero Trust from slides that are ready to present to business leaders to technical implementation guidance and user infographics.
 
-“Our goal is to help every organization strengthen its security capabilities through a Zero Trust architecture built on our comprehensive solutions that span identity, security, compliance, and device management across all clouds and platforms.” –Satya Nadella
+“Our goal is to help every organization strengthen its security capabilities through a Zero Trust architecture built on our comprehensive solutions that span identity, security, compliance, and device management across all clouds and platforms.” –Satya Nadella, executive chairman and CEO of Microsoft
 
 ## Zero Trust requires buy-in at the highest level
 
@@ -150,9 +150,9 @@ Each business scenario is described in an article that describes how to progress
 
 Each of these business scenarios breaks down the work of Zero Trust into manageable pieces that can be implemented over four implementation stages. This helps you prioritize, move forward, and track work as you move through the different layers of implementing a Zero Trust architecture.
 
-This guidance includes a PowerPoint slide deck with progress slides that you can use to present the work and track your progress at a high level for business leaders and other stakeholders. The slides include features that help you keep track of and present progress to stakeholders. Here's an example.
+This guidance includes a [PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) with progress slides that you can use to present the work and track your progress at a high level for business leaders and other stakeholders. The slides include features that help you keep track of and present progress to stakeholders. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-progress-tracking-example.png" alt-text="Example of a progress slide." lightbox="../media/adoption-guide/zero-trust-progress-tracking-example.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="Example of a progress slide." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
 
 Across the business scenarios, the implementation stages are roughly aligned so that accomplishing the objectives of Stage 1 across the scenarios help keep your organization progressing on all fronts together.
 
@@ -202,7 +202,7 @@ Identifying and understanding the specific risks that apply to your organization
 
 Once your organization has identified and prioritized your most strategic technical objectives, you can map out a staged roadmap for implementation. You can then track your progress by using various tools:
 
-- This downloadable PowerPoint deck with progress tracking slides ([this PowerPoint deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx)). These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
+- A downloadable [PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) with progress tracking slides. These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
 - [Secure Score](/microsoft-365/security/defender/microsoft-secure-score) is an aggregated score of technical controls that contribute to your current security posture. Secure Score gives your organization a global view of the controls that have and are still to be implemented.
 - [Cloud Security Posture Management (CSPM) tools](/azure/defender-for-cloud/concept-cloud-security-posture-management) provided with Microsoft Defender for Cloud.
 

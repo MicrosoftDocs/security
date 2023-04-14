@@ -22,6 +22,8 @@ As employees’ home networks stretch the corporate network perimeter, with diff
 | --- | --- |
 | Traditional protection relies on network firewalls and virtual private networks (VPNs) to isolate and restrict corporate resources. <br><br> Employees physically ‘badge in’ to the office and use their user account and password to sign in with their device. Both the user account and the device are trusted by default. | A Zero Trust model combines policies, processes, and technology to establish trust from cloud to edge, irrespective of where users access your network. <br><br> A Zero Trust model doesn’t presume any user identity or device is secure on any network. The approach mandates that you verify the user identity and device, and do so while continuously monitoring network, data, and application security in the office, at home, and across devices. |
 
+The following diagram shows how your devices can in known and unknown locations.
+
 :::image type="content" source="../media/adoption-guide/on-premises-remote-devices.png" alt-text="Zero Trust applies to both known and unknown locations." lightbox="../media/adoption-guide/on-premises-remote-devices.png":::
 
 The guidance in this article walks through how to get started with and implement your strategy for securing remote and hybrid work.
@@ -46,7 +48,7 @@ In addition to the motivations for business leaders, many employees expect flexi
 
 Microsoft is one of many enterprise-scale organizations that embraced remote and hybrid work at the start of the COVID-19 pandemic. On page 87 of the [Microsoft Digital Defense Report 2022](https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022), Microsoft emphasizes that this business opportunity introduces risk and must be paired with security measures to increase resiliency against attacks:
 
-- Cyber security is a key enabler of technological success. Innovation and enhanced productivity can only be achieved by introducing security measures that make organizations as resilient as possible against modern attacks. 
+- Cybersecurity is a key enabler of technological success. Innovation and enhanced productivity can only be achieved by introducing security measures that make organizations as resilient as possible against modern attacks. 
 - The pandemic has challenged us to pivot our security practices and technologies to protect Microsoft’s employees wherever they work. This past year, threat actors continued to take advantage of vulnerabilities exposed during the pandemic and the shift to a hybrid work environment.
 
 This report emphasizes that the vast majority of successful cyberattacks can be prevented by using basic security hygiene.
@@ -129,7 +131,7 @@ Many organizations can take a four-staged approach to these technical activities
 | --- | --- | --- | --- |
 | Verify and secure every identity with strong authentication <br><br> Integrate SaaS apps with Active Directory (Azure AD) for single sign-on <br><br> All new applications use modern authentication | Register devices with Azure AD <br><br> Implement **Starting point** Zero Trust identity and device access policies <br><br> Use Azure AD Application Proxy with on-premises apps for single sign-on | Enroll devices in your device management solution and apply recommended security protections <br><br> Allow only compliant and trusted devices to access data | Monitor device configuration drift <br><br> Implement passwordless authentication |
 
-If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) and updating the slides that correspond to this business scenario. Here's an example.
+If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) and updating the slides that correspond to this business scenario. Here's an example.
 
 :::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="PowerPoint slide for the stages of your secure remote and hybrid work deployment." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
 
@@ -165,7 +167,7 @@ This table summarizes roles that are recommended when building a sponsorship pro
 | Apps | CISO, CIO, or Director of Application Security <br><br> Program lead from Apps Management | Identity Architect <br><br> Developer Architect <br><br> Network Architect <br><br> Cloud Network Architect <br><br> Security Governance |
 | Network | CISO, CIO, or Director of Network Security <br><br> Program lead from Networking Leadership | Security Architect <br><br> Network Architect <br><br> Network Engineers <br><br> Network Implementers <br><br> Networking Governance |
 
-The [PowerPoint deck of resources](add link) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
+The [PowerPoint slide deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
 :::image type="content" source="../media/adoption-guide/zero-trust-remote-work-stakeholders.png" alt-text="PowerPoint slide to identify key stakeholders." lightbox="../media/adoption-guide/zero-trust-remote-work-stakeholders.png":::
 
@@ -177,10 +179,10 @@ These resources include prescriptive guidance that you can use as recommended st
 
 | Resource | Description |
 |:-----|:-----|
-| Rapid Modernization Plan (RaMP) checklist: [Explicitly validate trust for all access requests](/security/zero-trust/data-compliance-gov-data) ![Image of Rapid Modernization Plan](../media/ramp.png) | This series of checklists enumerate the technical objectives of each security deployment area in priority order and documents the steps you'll need to take to achieving them. It also lists project members who need to be involved for each area. <br><br> Using this resource helps you to identify quick wins. |
+| Rapid Modernization Plan (RaMP) checklist: [Explicitly validate trust for all access requests](/security/zero-trust/data-compliance-gov-data) <br><br> ![Image of Rapid Modernization Plan](../media/ramp.png) | This series of checklists enumerate the technical objectives of each security deployment area in priority order and documents the steps you'll need to take to achieving them. It also lists project members who need to be involved for each area. <br><br> Using this resource helps you to identify quick wins. |
 | [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations) ![Image of identity and device access policies](../media/identity-device-access-policies-byplan-thumb.png) | This solution guide recommends a set of [identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) that have been tested together. It includes: <ul><li>**Starting point** level policies that get you started and do not require managing devices.</li><li>**Enterprise** level policies are recommended for Zero Trust. This requires enrolling devices for endpoint management.</li></ul> Use these recommendations as a starting point and, if needed, adapt the policies for your unique environment and goals. |
-| [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) ![Image of managing devices with Intune](../media/adoption-guide/manage-devices-with-intune.png) | This solution guide walks through the phases of managing devices, from actions that don’t require enrolling devices into management to fully managing devices. These recommendations are coordinated with the above resources. |
-| [Intune Enrollment Options](/microsoft-365/solutions/cloud-architecture-models#intune-enrollment-options) ![Image of Intune enrollment options](../media/adoption-guide/msft-intune-enrollment-options-thumb-landscape.png) <br><br> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br> Updated June 2022 | This poster-set provides an easy-to-scan comparison of device enrollment options per platform. |
+| [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) <br><br> ![Image of managing devices with Intune](../media/adoption-guide/manage-devices-with-intune.png) | This solution guide walks through the phases of managing devices, from actions that don’t require enrolling devices into management to fully managing devices. These recommendations are coordinated with the above resources. |
+| [Intune Enrollment Options](/microsoft-365/solutions/cloud-architecture-models#intune-enrollment-options) <br><br>![Image of Intune enrollment options](../media/adoption-guide/msft-intune-enrollment-options-thumb-landscape.png) <br><br> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br> Updated June 2022 | This poster-set provides an easy-to-scan comparison of device enrollment options per platform. |
 | [MFA deployment plan](/azure/active-directory/authentication/howto-mfa-getstarted) | This deployment guide shows you how to plan and implement an Azure AD MFA roll-out. |
 
 In addition to these resources, the following sections highlight resources for specific tasks in the four stages previously defined.
@@ -279,7 +281,9 @@ To help with user education and adoption, Microsoft provides end-user rollout te
 
 After assembling your team, reviewing the recommended technical resources, and developing a plan to stage your projects and deployment, you'll hopefully have a well-documented plan. Before formally adopting the plan, be sure to build and test the configurations in a test environment.
 
-Each technical area, such as a Conditional Access policy set, can be secured by enabling functionality across the tenant. However, a wrongly configured policy can have far reaching consequences. For example, a badly written Conditional Access policy may lock all administrators out of a tenant. To mitigate risk, consider deploying a test or QA tenant to implement each feature as you become familiar with it, or roll it out for the first time. A test or QA tenant should be reasonably representative of your current user environment and be accurate enough for you to perform QA functions to test that the enabled functionality is understood and supportive of the function it is securing.
+Each technical area, such as a Conditional Access policy set, can be secured by enabling functionality across the tenant. However, a wrongly configured policy can have far reaching consequences. For example, a badly written Conditional Access policy may lock all administrators out of a tenant. 
+
+To mitigate risk, consider deploying a test or QA tenant to implement each feature as you become familiar with it, or roll it out for the first time. A test or QA tenant should be reasonably representative of your current user environment and be accurate enough for you to perform QA functions to test that the enabled functionality is understood and supportive of the function it is securing.
 
 The [RAMP Checklist](/security/zero-trust/user-access-productivity-validate-trust) can be used to track your progress. It lists both planning and implementation steps. The QA tenant is the test bed of the implementation actions as they are performed for the first time.
 
@@ -299,7 +303,7 @@ The very goal of Zero Trust is to incrementally increase security and implement 
 
 In the adoption phase, you incrementally implement your strategy and deployment plans across functional areas. The adoption phase is a larger implementation of the proof of concept. The deployment plan is executed, and rollout occurs in successive waves, based on user segmentation and the areas you are targeting across your digital estate.
 
-As recommended, deploy each new configuration into the production tenant as a limited proof of concept (labeled “Evaluate” in this illustration).
+As recommended, deploy each new configuration into the production tenant as a limited proof of concept (labeled “Evaluate” in the following diagram).
 
 :::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Adoption phases which includes pilot, evaluate, and full deployment." lightbox="../media/adoption-guide/adoption-phases.svg":::
 

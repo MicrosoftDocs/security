@@ -2,6 +2,15 @@
   href: index.yml
 - name: What is Zero Trust?
   href: zero-trust-overview.md
+- name: Adoption framework
+  expanded: false
+  items:
+    - name: Overview
+      href: adopt/zero-trust-adoption-overview.md
+    - name: Secure remote and hybrid work
+      href: adopt/secure-remote-hybrid-work.md
+    - name: Identify and protect sensitive business data
+      href: adopt/identify-protect-sensitive-business-data.md
 - name: Concepts and deployment objectives
   expanded: false
   items:

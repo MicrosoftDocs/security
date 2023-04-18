@@ -108,27 +108,21 @@ In addition to creating your application as a single-tenant or multi-tenant (pre
 
 ### Microsoft Defender for IoT
 
-[Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) is a unified security solution built specifically to identify devices, vulnerabilities, and threats across IoT and operational technology (OT) networks. Use Defender for IoT to apply security across your entire IoT/OT environment, including existing devices that may not have built-in security agents.
+Operational technology (OT) network architectures often differ from traditional IT infrastructure, using unique technology with proprietary protocols. OT devices may also have aging platforms with limited connectivity and power, or specific safety requirements and unique exposures to physical attacks.
 
-OT networks often differ from traditional IT infrastructure, and need a specialized approach to zero trust. OT systems use unique technology with proprietary protocols, and may have aging platforms with limited connectivity and power, or specific safety requirements and unique exposures to physical attacks.
+Deploy [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) to apply zero trust principles to your OT network, monitoring traffic for anomalous or unauthorized behavior as traffic crosses sites and zones. Watch for threats and vulnerabilities specific to OT devices, mitigating risks as they're detected.
 
-Defender for IoT supports zero trust principles by addressing OT-specific challenges, such as:
+Speed operations by sharing Defender for IoT data across your security operations center (SOC) and other parts of your organization. Integrate with Microsoft services, such as [Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring) and [Defender for Endpoint](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint), or other partner services, including both SIEM and ticketing systems. For example:
 
-- Helping you control remote connections into your OT systems
-- Reviewing and helping you reduce interconnections between dependent systems
-- Finding single points of failure in your network
+- Forward on-premises alert data directly to SIEMs such as [Splunk](/azure/defender-for-iot/organizations/tutorial-splunk), [IBM QRadar](/azure/defender-for-iot/organizations/tutorial-qradar), and [more](/azure/defender-for-iot/organizations/integrate-overview). Splunk and IBM QRadar also support Event Hub ingestion, which you can use to [forward cloud alerts from Defender for IoT](/azure/defender-for-iot/organizations/integrations/send-cloud-data-to-partners).
 
-Defender for IoT uses network sensors to detect devices and traffic and watch for OT-specific vulnerabilities. Defender for IoT also provides risk-based mitigation steps, and continuously monitors your devices for anomalous or unauthorized behavior. Segment your sensors into sites and zones across your network to monitor traffic between zones.
-
-:::image type="content" source="../media/integrate/endpoints/defender-for-iot.png" alt-text="Diagram of Defender for IoT deployed in an OT network." border="false":::
-
-Integrate with Microsoft services, such as [Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring) and other partner services, including both SIEM and ticketing systems, to share Defender for IoT data across your organization.
+- [Integrate with ServiceNow's Operational Technology Manager](/azure/defender-for-iot/organizations/tutorial-servicenow) to import Defender for IoT data to ServiceNow and risk-based action with production process context.
 
 For more information, see:
 
+- [Get started with OT security monitoring](/azure/defender-for-iot/organizations/getting-started)
 - [Zero Trust and your OT networks](/azure/defender-for-iot/organizations/concept-zero-trust)
-- [Monitor your OT networks with Zero Trust principles](/azure/defender-for-iot/organizations/monitor-zero-trust)
-- [Investigate Defender for IoT incidents with Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring)
+- [Monitor with Zero Trust](/azure/defender-for-iot/organizations/monitor-zero-trust)
 - [Defender for IoT integration catalog](/azure/defender-for-iot/organizations/integrate-overview)
 
 ## Next steps

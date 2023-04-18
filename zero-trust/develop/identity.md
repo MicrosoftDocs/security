@@ -6,11 +6,13 @@ ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to learn about authentication, authorization, and identity management so that I can use a Zero Trust approach to identity in my software development lifecyle (SDLC).
 ---
 # Building apps that secure identity through permissions and consent
 
-This article continues from the [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) article to help you use a Zero Trust approach to identity in your software development lifecycle (SDLC). 
+This article continues from the [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) article to help you use a Zero Trust approach to identity in your software development lifecycle (SDLC).
 
 Here's an overview of the **Permissions and access** articles in this [Developer Guide](overview.md) so that you can dive into identity components that include authentication, authorization, and identity management.
 
@@ -24,6 +26,7 @@ Here's an overview of the **Permissions and access** articles in this [Developer
 - [Requesting permissions that require administrative consent](permissions-require-admin-consent.md) describes the permission and consent experience when application permissions require administrative consent.
 - [Reducing overprivileged permissions and apps](overprivileged-permissions.md) helps you to understand why applications shouldn't request more permissions than they need (overprivileged). Learn how to limit privilege to manage access and improve security.
 - [Providing application identity credentials when there's no user](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (non-user applications) on Azure is Managed Identities for Azure resources.
+- [Managing tokens for Zero Trust](token-management.md) helps developers to build security into applications with ID tokens, access tokens, and security tokens that your they can receive from the Microsoft identity platform.
 - [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how you can customize tokens.
 - [Securing applications with Continuous Access Evaluation](secure-with-cae.md) helps developers to improve application security with Continuous Access Evaluation. Learn how to [ensure Zero Trust support](overview.md) in your apps that receive authorization to access resources when they acquire access tokens from Azure Active Directory (Azure AD).
 - [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups.

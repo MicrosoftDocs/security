@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 06/29/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to know about the benefits of using supported standards with MSAL in the Microsoft identity platform, so that I can have the most efficient and effective way to achieve Zero Trust.
 ---
 # Using standards-based development methodologies

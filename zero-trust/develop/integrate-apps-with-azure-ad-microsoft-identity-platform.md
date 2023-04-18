@@ -7,6 +7,8 @@ author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to build and integrate apps that IT pros can secure in the enterprise. To do so, I need to understand how to use Zero Trust principles to securely integrate my app with Azure Active Directory (Azure AD) and the Microsoft identity platform.
 ---
 # Integrating applications with Azure AD and the Microsoft identity platform

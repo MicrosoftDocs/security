@@ -6,6 +6,8 @@ ms.service: security
 author: garycentric
 ms.author: v-gmoor
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-pillar
 ---
 
 # Secure data with Zero Trust
@@ -245,9 +247,9 @@ Take this step:
 
 ## Products covered in this guide
 
-[Microsoft Purview](/security/business/microsoft-purview)
+[Microsoft Purview](/purview/purview)
 
-[Microsoft Defender for Cloud Apps](/microsoft-365/enterprise-mobility-security/cloud-app-security)
+[Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 
 For further information or help with implementation, please contact your Customer Success team.
 

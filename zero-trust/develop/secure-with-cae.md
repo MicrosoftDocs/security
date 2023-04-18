@@ -7,6 +7,8 @@ author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to improve application security with Continuous Access Evaluation. I want to learn how to ensure Zero Trust support in my apps that receive authorization to access resources when they acquire access tokens from Azure Active Directory (Azure AD).
 ---
 # Securing applications with Continuous Access Evaluation

@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 08/19/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to understand how to best ensure Zero Trust when acquiring resource access permissions for my application.
 ---
 # Acquiring authorization to access resources

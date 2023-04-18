@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 07/28/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to understand how to best identify non-user applications so that I can address the guiding principles of Zero Trust.
 ---
 # Providing application identity credentials when there's no user

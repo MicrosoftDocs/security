@@ -90,38 +90,6 @@ conceptualContent:
               itemType: overview
               url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
 
-#  Section 2
-    - title: Zero Trust
-      summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture
-      items:
-        # Card
-        - title: What is Zero Trust
-          links:
-            - url: https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview
-              itemType: concept
-              text: Guiding principles of Zero Trust
-
-        # Card
-        - title: Adopt Zero Trust
-          links:
-            - url: https://review.learn.microsoft.com/en-us/security/zero-trust/adopt/zero-trust-adoption-overview?branch=pr-en-us-876
-              itemType: get-started
-              text: Zero Trust adoption framework
-
-        # Card
-        - title: Deploy Zero Trust
-          links:
-            - url: https://learn.microsoft.com/en-us/microsoft-365/security/microsoft-365-zero-trust
-              itemType: deploy
-              text: Zero Trust deployment plan with Microsoft 365
-
-        # Card
-        - title: Help for small business
-          links:
-            - url: https://learn.microsoft.com/en-us/security/zero-trust/guidance-smb-partner
-              itemType: how-to-guide
-              text: Small business Zero Trust guidance
-
 additionalContent:
 #  Maximum of 4 sections
   sections:
@@ -258,5 +226,3 @@ additionalContent:
           links:
             - text: Secure your cloud operations
               url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
-
-

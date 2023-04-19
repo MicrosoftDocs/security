@@ -39,7 +39,7 @@ In this article, you'll learn how to integrate monitoring and logging of these A
 ## Reference Architecture
 The following architecture diagram shows the common services and resources needed to run an IaaS workload in an AWS environment. The diagram also shows the Azure services needed to ingest logs and data from the AWS environment into Azure.
 
-Need final diagram
+:::image type="content" source="media/secure-aws-iaas-apps.png" alt-text="Diagram of the reference architecture for securing IaaS applications in AWS.":::
 
 The diagram demonstrates ingestion of logs into Azure for the following AWS and Amazon resources and services:
 
@@ -89,7 +89,7 @@ For more information, see [Connect hybrid machines to Azure](/azure/azure-arc/se
 
 ### B. Install Azure Monitor Agent on to Amazon EC2 virtual machines to send logs to your Log Analytics workspace
 
-[Azure Monitor](/azure-monitor/best-practices-multicloud) provides complete monitoring for your resources and applications running in Azure and other clouds, including AWS. Azure Monitor collects, analyzes, and acts on telemetry from your cloud and on-premises environments. [VM insights](/azure/azure-monitor/vm/vminsights-overview) in Azure Monitor uses Azure Arc-enabled servers to provide a consistent experience between both Azure virtual machines and your Amazon EC2 virtual machines. You can view your Amazon EC2 virtual machines right alongside your Azure virtual machines. You can onboard your Amazon EC2 virtual machines using identical methods. This includes using standard Azure constructs such as Azure Policy and applying tags.
+[Azure Monitor](/azure/azure-monitor/best-practices-multicloud) provides complete monitoring for your resources and applications running in Azure and other clouds, including AWS. Azure Monitor collects, analyzes, and acts on telemetry from your cloud and on-premises environments. [VM insights](/azure/azure-monitor/vm/vminsights-overview) in Azure Monitor uses Azure Arc-enabled servers to provide a consistent experience between both Azure virtual machines and your Amazon EC2 virtual machines. You can view your Amazon EC2 virtual machines right alongside your Azure virtual machines. You can onboard your Amazon EC2 virtual machines using identical methods. This includes using standard Azure constructs such as Azure Policy and applying tags.
 
 When you enable VM insights for a machine, the [Azure Monitor Agent](/azure/azure-monitor/agents/agents-overview) (AMA) is installed. AMA collects monitoring data from the Amazon EC2 virtual machines and delivers it to Azure Monitor for use by features, insights, and other services, such as Microsoft Sentinel and Microsoft Defender for Cloud.
 
@@ -156,7 +156,7 @@ The AWS connector is available in two versions: the new Amazon Simple Storage Se
 To ingest logs from Amazon VPC, AWS CloudTrail, and Amazon GuardDuty using the Amazon S3 connector, see [Connect Microsoft Sentinel to AWS](/azure/sentinel/connect-aws).
 
 >[!Note]
->Microsoft recommends using the automatic setup script to deploy the Amazon S3 connector. If you prefer to perform each step manually, then follow the [manual setup](/azure/sentinel/connect-aws.md#manual-setup) to connect Microsoft Sentinel to AWS.
+>Microsoft recommends using the automatic setup script to deploy the Amazon S3 connector. If you prefer to perform each step manually, then follow the [manual setup](/azure/sentinel/connect-aws#manual-setup) to connect Microsoft Sentinel to AWS.
 
 ## Step 2: Configure metrics for your security data
 
@@ -177,7 +177,7 @@ The Azure Connected Machine agent installed on your Amazon EC2 VMs enables you t
 
 The [Azure Monitor Agent](/azure/azure-monitor/agents/agents-overview) (AMA) installed on your Amazon EC2 VMs collects monitoring data and delivers it to Azure Monitor. These logs become input for Microsoft Sentinel and Defender for Cloud.
 
-To collect logs from your Amazon EC2 VMs, see [create data collection rules](/azure/azure-monitor/essentials/data-collection-rule-overview.md#create-a-data-collection-rule).
+To collect logs from your Amazon EC2 VMs, see [create data collection rules](/azure/azure-monitor/essentials/data-collection-rule-overview#create-a-data-collection-rule).
 
 ### B. View and manage Microsoft Defender for Cloud security alerts and recommendations for Amazon EC2
 
@@ -206,7 +206,7 @@ Protect your endpoints with Defender for Cloud's integrated endpoint detection a
 - Automatic investigation and remediation
 - Managed hunting services
 
-For more information, see [Enable the Microsoft Defender for Endpoint integration](/azure/defender-for-cloud/integration-defender-for-endpoint.md#enable-the-microsoft-defender-for-endpoint-integration).
+For more information, see [Enable the Microsoft Defender for Endpoint integration](/azure/defender-for-cloud/integration-defender-for-endpoint#enable-the-microsoft-defender-for-endpoint-integration).
 
 ### D. Monitor Amazon EC2 data in Microsoft Sentinel
 
@@ -214,7 +214,7 @@ Once you install Azure Connected Machine agent and AMA, Amazon EC2 operating sys
 
 The image below demonstrates how Amazon EC2 operating system logs are ingested by Microsoft Sentinel. The Azure Connected Machine agent makes your Amazon EC2 VMs part of Azure. The Windows Security Events via AMA data connector collects data from your Amazon EC2 VMs.
 
-Insert image
+:::image type="content" source="media/logs-ingested-by-sentinel.png" alt-text="Diagram of operating system logs ingested by Microsoft Sentinel.":::
 
 >[!Note]
 >You don't need Microsoft Sentinel to ingest logs from Amazon EC2 but you do need to have a Log Analytics workspace previously set up.
@@ -345,7 +345,7 @@ When you deploy cloud-based solutions for your infrastructure deployments, secur
 To configure security:
 
 - In [Azure DevOps](/azure/cloud-adoption-framework/ready/considerations/security-considerations-tools#azure-devops-role-based-access-considerations), you can use security groups, policies, and settings at the organization/collection, project, or object level.
-- In [GitHub](/azure/cloud-adoption-framework/ready/considerations/security-considerations-tools.md#github-role-based-access-considerations), you can assign users access to resources by granting them roles at the repository level, team level, or organization level.
+- In [GitHub](/azure/cloud-adoption-framework/ready/considerations/security-considerations-tools#github-role-based-access-considerations), you can assign users access to resources by granting them roles at the repository level, team level, or organization level.
 
 ### C. Enable GitHub Advanced Security
 
@@ -379,3 +379,21 @@ For more information, see:
 - [Enable pull request annotations in GitHub and Azure DevOps](/azure/defender-for-cloud/enable-pull-request-annotations)
 
 ## Next steps
+
+Learn more about the Azure services discussed in this article:
+
+- [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
+- [Microsoft Sentinel](/azure/sentinel/overview)
+- [Azure Monitor](/azure/azure-monitor/overview)
+- [Azure ARC-enabled servers](/azure/azure-arc/servers/overview)
+- [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial)
+
+Learn more about AWS and Amazon services and resources discussed in this article:
+
+- [Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) (Amazon EC2)
+- [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
+- [Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) (Amazon VPC)
+- [Amazon GuardDuty](https://aws.amazon.com/guardduty/features/)
+- [Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) (Amazon S3)
+- [Amazon Simple Queue Service](https://aws.amazon.com/sqs/) (SQS)
+- [AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) (IAM)

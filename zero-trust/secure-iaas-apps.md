@@ -22,12 +22,11 @@ This article provides steps to apply the principles of Zero Trust to IaaS applic
 
 For more information about how to apply the principles of Zero Trust across an Azure IaaS environment, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
-## AWS
+## AWS and AWS components
 AWS is one of the public cloud providers available in the market, along with Microsoft Azure, Google Cloud Platform, and others. It's common for companies to have a multi-cloud architecture that consists of more than one cloud provider. In this article, we'll focus on multi-cloud architecture where Azure and AWS are integrated to run workloads and IT business solutions.
 
 This article shows you how to secure an AWS IaaS workload using Microsoft products, including Microsoft Defender for Cloud, Microsoft Sentinel, Microsoft 365 Defender, GitHub Advanced Security, Azure Arc, Microsoft Entra, and others.
 
-### AWS components
 AWS virtual machines, called Amazon Elastic Compute Cloud (Amazon EC2), usually run on top of an AWS virtual network, called Amazon Virtual Private Cloud (Amazon VPC). Users and cloud administrators set up an Amazon VPC in their AWS environment and add Amazon EC2 virtual machines.
 
 AWS CloudTrail logs AWS account activity in the AWS environment. Amazon EC2, Amazon VPC, and AWS CloudTrail are very common in AWS environments. Collecting logs from these services is essential to understanding what is going on in your AWS environment and the actions to take to avoid or mitigate attacks.

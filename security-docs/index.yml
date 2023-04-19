@@ -126,6 +126,38 @@ additionalContent:
 #  Maximum of 4 sections
   sections:
 
+# Section 0
+    - title: Zero Trust
+      summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture
+      items:
+        # Card
+        - title: What is Zero Trust
+          links:
+            - url: https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview
+              itemType: concept
+              text: Guiding principles of Zero Trust
+
+        # Card
+        - title: Adopt Zero Trust
+          links:
+            - url: https://review.learn.microsoft.com/en-us/security/zero-trust/adopt/zero-trust-adoption-overview?branch=pr-en-us-876
+              itemType: get-started
+              text: Zero Trust adoption framework
+
+        # Card
+        - title: Deploy Zero Trust
+          links:
+            - url: https://learn.microsoft.com/en-us/microsoft-365/security/microsoft-365-zero-trust
+              itemType: deploy
+              text: Zero Trust deployment plan with Microsoft 365
+
+        # Card
+        - title: Help for small business
+          links:
+            - url: https://learn.microsoft.com/en-us/security/zero-trust/guidance-smb-partner
+              itemType: how-to-guide
+              text: Small business Zero Trust guidance
+
 #  Section 1
     - title: Modernize security operations
       summary: Modernize security operations
@@ -231,28 +263,4 @@ additionalContent:
             - text: Secure your cloud operations
               url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
 
-#  Section 4
-    - title: Security roles
-      summary: Learning resources by role
-      items:
-        # Card
-        - title: Identity and access administrator
-          links:
-            - text: Overview
-              url: https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
-        # Card
-        - title: Information protection administrator
-          links:
-            - text: Overview
-              url: https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
-        # Card
-        - title: Security operations analyst
-          links:
-            - text: Overview
-              url: https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
-        # Card
-        - title: Security engineer
-          links:
-            - text: Overview
-              url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
 

@@ -17,7 +17,7 @@ This article provides steps to apply the principles of Zero Trust to IaaS applic
 | Zero Trust Principle | Definition | Met by |
 | --- | --- | --- |
 | Verify explicitly | Always authenticate and authorize based on all available data points. | Security in DevOps (DevSecOps), using GitHub advanced security and DevOps, scans and secures your infrastructure as code. |
-| Use least privileged access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | <ul><li> Microsoft Entra Permissions Management detects, right-sizes, and monitors unused and excessive permissions. </li><li> Privileged Identity Management (PIM), a service in Azure Active Directory (Azure AD) Premium P2, allows you to manage, control, and monitor access to important resources in your organization. </li><li> Assign users role-based access control (RBAC) to resources at the repository level, team level, or organization level. </li></ul> |
+| Use least privilege access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | <ul><li> Microsoft Entra Permissions Management detects, right-sizes, and monitors unused and excessive permissions. </li><li> Privileged Identity Management (PIM), a service in Azure Active Directory (Azure AD) Premium P2, allows you to manage, control, and monitor access to important resources in your organization. </li><li> Assign users role-based access control (RBAC) to resources at the repository level, team level, or organization level. </li></ul> |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | <ul><li> Microsoft Defender for Cloud and Microsoft Defender for Endpoint (Microsoft 365) continuously scan the environment for threats and vulnerabilities. </li><li> Microsoft Sentinel analyzes collected data, behavioral trend of entities, anomalies, and multi-stage threats across enterprises to detect suspicious activity, and can respond with automation. </li></ul> |
 
 For more information about how to apply the principles of Zero Trust across an Azure IaaS environment, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
@@ -274,7 +274,7 @@ For more information, see [detecting threats with built-in analytics rules in Mi
 
 ## Step 3: Improve your overall security posture
 
-In this section you'll learn how Microsoft Entra Permissions Management can help you monitor unused and excessive permissions. You'll step through how to configure, onboard, and view key data. The Zero Trust **use least privileged access** principle is achieved by managing, controlling, and monitoring access to your resources.
+In this section you'll learn how Microsoft Entra Permissions Management can help you monitor unused and excessive permissions. You'll step through how to configure, onboard, and view key data. The Zero Trust **use least privilege access** principle is achieved by managing, controlling, and monitoring access to your resources.
 
 | Steps | Task |
 | --- | --- |
@@ -286,13 +286,13 @@ In this section you'll learn how Microsoft Entra Permissions Management can help
 
 Permissions Management is a cloud infrastructure entitlement management (CIEM) solution that detects, automatically right-sizes, and continuously monitors unused and excessive permissions across your multi-cloud infrastructure.
 
-Permissions Management deepens Zero Trust security strategies by augmenting the **use least privileged access** principle, allowing customers to:
+Permissions Management deepens Zero Trust security strategies by augmenting the **use least privilege access** principle, allowing customers to:
 
 - Get comprehensive visibility: Discover which identity is doing what, where, and when.
 - Automate least privilege access: Use access analytics to ensure identities have the right permissions, at the right time.
 - Unify access policies across IaaS platforms: Implement consistent security policies across your cloud infrastructure.
 
-Permissions Management provides a summary of key statistics and data for AWS and Azure. The data includes metrics related to avoidable risk. These metrics allow the Permissions Management administrator to identify areas where risks related to the Zero Trust **use least privileged access** principle can be reduced.
+Permissions Management provides a summary of key statistics and data for AWS and Azure. The data includes metrics related to avoidable risk. These metrics allow the Permissions Management administrator to identify areas where risks related to the Zero Trust **use least privilege access** principle can be reduced.
 
 Data can be fed into Microsoft Sentinel for further analysis and automation.
 
@@ -309,7 +309,7 @@ For infrastructure as code, security and DevOps teams should monitor for misconf
 
 By implementing continuous checks on Azure Resource Manager (ARM), Bicep, or Terraform templates, you prevent breaches and exploits early in development, when they are less costly to fix. You will also want to maintain tight control of administrators and service account groups across Azure Active Directory (Azure AD) and your DevOps tool.  
 
-You'll implement the Zero Trust **use least privileged access** principle by:
+You'll implement the Zero Trust **use least privilege access** principle by:
 
 - Conducting robust reviews of your infrastructure configurations with least privilege identity access and networking set up.
 - Assigning users role-based access control (RBAC) to resources at the repository level, team level, or organization level.

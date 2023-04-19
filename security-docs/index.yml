@@ -69,21 +69,25 @@ conceptualContent:
         - title: Identity and access administrator
           links:
             - text: Overview
+              itemType: overview
               url: https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
         # Card
         - title: Information protection administrator
           links:
             - text: Overview
+              itemType: overview
               url: https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
         # Card
         - title: Security operations analyst
           links:
             - text: Overview
+              itemType: overview
               url: https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
         # Card
         - title: Security engineer
           links:
             - text: Overview
+              itemType: overview
               url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
 
 #  Section 2

@@ -60,44 +60,63 @@ conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   # Supports up to 3 subsections
   sections:
-    - title: Zero Trust
-      summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture.
+
+#  Section 1
+    - title: Security roles
+      summary: Learning resources by role
       items:
         # Card
-        - title: Safeguard your most critical assets
+        - title: Identity and access administrator
           links:
-            - url: https://learn.microsoft.com/microsoft-365/solutions/data-privacy-protection
-              itemType: deploy
-              text: Manage data privacy and data protection
+            - text: Overview
+              url: https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
+        # Card
+        - title: Information protection administrator
+          links:
+            - text: Overview
+              url: https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
+        # Card
+        - title: Security operations analyst
+          links:
+            - text: Overview
+              url: https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
+        # Card
+        - title: Security engineer
+          links:
+            - text: Overview
+              url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
+
+#  Section 2
+    - title: Zero Trust
+      summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture
+      items:
+        # Card
+        - title: What is Zero Trust
+          links:
+            - url: https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview
+              itemType: concept
+              text: Guiding principles of Zero Trust
 
         # Card
-        - title: Secure work from anywhere
+        - title: Adopt Zero Trust
           links:
-            - url: https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-365-policies-configurations
-              itemType: deploy
-              text: Identity and device access configurations
+            - url: https://review.learn.microsoft.com/en-us/security/zero-trust/adopt/zero-trust-adoption-overview?branch=pr-en-us-876
+              itemType: get-started
+              text: Zero Trust adoption framework
 
         # Card
-        - title: Minimize the impact of external or bad actors
+        - title: Deploy Zero Trust
           links:
-            - url: https://learn.microsoft.com/microsoft-365/security/office-365-security/identity-access-policies-guest-access
+            - url: https://learn.microsoft.com/en-us/microsoft-365/security/microsoft-365-zero-trust
               itemType: deploy
-              text: Policies for allowing guest access and B2B external user access
+              text: Zero Trust deployment plan with Microsoft 365
 
         # Card
-        - title: Meet regulatory and compliance requirements
+        - title: Help for small business
           links:
-            - url: https://learn.microsoft.com/security/zero-trust/data-compliance-gov-data
-              itemType: deploy
-              text: Data protection
-
-        # Card
-        - title: Rapidly modernize your security posture
-          links:
-            - url: https://learn.microsoft.com/security/zero-trust/zero-trust-ramp-overview
-              itemType: deploy
-              text: Overview
-
+            - url: https://learn.microsoft.com/en-us/security/zero-trust/guidance-smb-partner
+              itemType: how-to-guide
+              text: Small business Zero Trust guidance
 
 additionalContent:
 #  Maximum of 4 sections

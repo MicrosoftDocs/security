@@ -241,7 +241,7 @@ As per our observation, attackers have used a combination of the first six permi
 
 ## Workflow
 
-[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-app-consent/Appconsent_flow.png)
+[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)]
 
 You can also:
 

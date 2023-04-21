@@ -104,7 +104,7 @@ The system should be able to run PowerShell.
 
 The following PowerShell modules are required for the investigation of the cloud environment:
 
-- Azure AD PowerShell for Graph module. For installation instructions, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/).
+- Azure AD PowerShell for Graph module. For installation instructions, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true).
 
   If you need older cmdlets in the MSOnline (v1) Azure AD module, see [Azure Active Directory (MSOnline)](/powershell/azure/active-directory/install-msonlinev1).
 
@@ -114,7 +114,7 @@ The following PowerShell modules are required for the investigation of the cloud
 
 ## Workflow
 
-[![Phishing investigation workflow](./media/incident-response-playbook-phishing/PI_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-phishing/PI_flow.png)
+[![Phishing investigation workflow]](./media/incident-response-playbook-phishing/PI_flow.png)
 
 You can also:
 

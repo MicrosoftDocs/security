@@ -500,7 +500,7 @@ Make sure it is enabled in your tenant and review the configuration settings out
 - [Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow)
 - [Unusual addition of credentials to an OAuth app](/defender-cloud-apps/investigate-anomaly-alerts#unusual-addition-of-credentials-to-an-oauth-app)
 - [Securing workload identities with Identity Protection](/azure/active-directory/identity-protection/concept-workload-identity-risk)
-- [Holistic compromised identity signals from Microsoft]([/azure-active-directory-identity/holistic-compromised-identity-signals-from-microsoft/ba-p/2365683](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/holistic-compromised-identity-signals-from-microsoft/ba-p/2365683))
+- [Holistic compromised identity signals from Microsoft](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/holistic-compromised-identity-signals-from-microsoft/ba-p/2365683)
 
 ## Additional incident response playbooks
 

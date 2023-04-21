@@ -3,8 +3,8 @@ title: Identify and protect sensitive business data with Zero Trust
 description: Learn how to identify and protect sensitive business data with Zero Trust.  
 ms.date: 04/14/2023
 ms.service: security
-author: JoeDavies-TechWriter
-ms.author: v-joedavies
+author: BrendaCarter
+ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
   - zerotrust-solution
@@ -21,6 +21,10 @@ With hybrid work models, corporate assets and data are on the move. Your organiz
 | Traditional data protection with network controls | Modern data protection with Zero Trust |
 | --- | --- |
 | In traditional networks, network perimeter control governs critical data access, not data sensitivity. You typically apply labels on sensitive data manually, which can result in inconsistent data classification. | A Zero Trust model applies strong authentication to data access requests, using policies to verify every identity, and ensuring identities have access to apps and data. <br><br> A Zero Trust model involves identifying sensitive data and applying classification and protection, including data loss prevention (DLP). Zero Trust includes defenses that protect your data even after it has left your controlled environment. It also includes adaptive protection to reduce insider risk. <br><br> In addition to these protections, Zero Trust includes continuous monitoring and threat protection to prevent and limit the scope of a data breach. |
+
+The following diagram illustrates the shift from traditional protection with network controls on the left (from limited known locations) to modern protection with Zero Trust on the right (to unknown locations) in which protection is applied regardless of where users and devices are located.
+
+:::image type="content" source="../media/adoption-guide/on-premises-remote-data.svg" alt-text="Zero Trust applies to data regardless of where it lives or moves." lightbox="../media/adoption-guide/on-premises-remote-data.svg":::
 
 The guidance in this article walks through how to get started with and progress your strategy for identifying and protecting sensitive data. If your organization is subject to regulations that protect data, use the **Proactively meet regulatory and compliance requirements** article in this series (under development) to learn how to apply what you learn in this article to protecting data that is regulated.
 

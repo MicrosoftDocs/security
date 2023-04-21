@@ -3,8 +3,8 @@ title: Zero Trust adoption framework overview
 description: This article gives an overview of the Zero Trust adoption framework.
 ms.date: 01/27/2023    
 ms.service: security
-author: JoeDavies-TechWriter
-ms.author: v-joedavies
+author: BrendaCarter
+ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
   - msftsolution-overview
@@ -12,6 +12,8 @@ ms.collection:
 ---
 
 # Zero Trust adoption framework overview
+
+:::image type="content" source="../media/adoption-guide/zero-trust-working-group.jpg" alt-text="Zero Trust working group" lightbox="../media/adoption-guide/zero-trust-working-group.jpg":::
 
 Digital transformation is shaping a new normal. Organizations are embracing digital transformation to manage continuous business environment changes by tracking:
 
@@ -33,6 +35,8 @@ Many security architects and IT teams ask for help communicating to business lea
 - Curation of the most relevant resources for adoption of Zero Trust from slides that are ready to present to business leaders to technical implementation guidance and user infographics.
 
 “Our goal is to help every organization strengthen its security capabilities through a Zero Trust architecture built on our comprehensive solutions that span identity, security, compliance, and device management across all clouds and platforms.” –Satya Nadella, executive chairman and CEO of Microsoft
+
+As a Microsoft partner, NBConsult contributed to and provided material feedback to this adoption guidance.
 
 ## Zero Trust requires buy-in at the highest level
 

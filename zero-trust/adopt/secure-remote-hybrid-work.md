@@ -3,8 +3,8 @@ title: Secure remote and hybrid work with Zero Trust
 description: Learn how to Secure remote and hybrid work with Zero Trust.
 ms.date: 04/14/2023
 ms.service: security
-author: JoeDavies-TechWriter
-ms.author: v-joedavies
+author: BrendaCarter
+ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
   - zerotrust-solution
@@ -12,7 +12,7 @@ ms.collection:
 
 # Secure remote and hybrid work with Zero Trust
 
-As part of Zero Trust adoption guidance, this article describes the business scenario of securing remote and hybrid work. Note that securing your business data and infrastructure are the topics of separate business scenarios and isn't included in this guidance.
+As part of Zero Trust adoption guidance, this article describes the business scenario of securing remote and hybrid work. Note that securing your business data and infrastructure are the topics of separate business scenarios and are not included in this guidance.
 
 The shift to a hybrid workstyle has been forcing organizations to rapidly adapt. Remote employees are getting work done any way they can—using personal devices, collaborating through cloud services, and sharing data outside the corporate network perimeter. Hybrid employees work on both corporate and home networks, switching between business and personal devices.
 
@@ -22,7 +22,7 @@ As employees’ home networks stretch the corporate network perimeter, with diff
 | --- | --- |
 | Traditional protection relies on network firewalls and virtual private networks (VPNs) to isolate and restrict corporate resources. <br><br> Employees physically ‘badge in’ to the office and use their user account and password to sign in with their device. Both the user account and the device are trusted by default. | A Zero Trust model combines policies, processes, and technology to establish trust from cloud to edge, irrespective of where users access your network. <br><br> A Zero Trust model doesn’t presume any user identity or device is secure on any network. The approach mandates that you verify the user identity and device, and do so while continuously monitoring network, data, and application security in the office, at home, and across devices. |
 
-The following diagram shows how your devices can in known and unknown locations.
+The following diagram illustrates the shift from traditional protection with network controls on the left (from limited known locations) to modern protection with Zero Trust on the right (to unknown locations) in which protection is applied regardless of where users and devices are located.
 
 :::image type="content" source="../media/adoption-guide/on-premises-remote-devices.png" alt-text="Zero Trust applies to both known and unknown locations." lightbox="../media/adoption-guide/on-premises-remote-devices.png":::
 

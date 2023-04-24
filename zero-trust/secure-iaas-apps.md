@@ -39,7 +39,7 @@ In this article, you learn how to integrate monitoring and logging of these AWS 
 ## Reference Architecture
 The following architecture diagram shows the common services and resources needed to run an IaaS workload in an AWS environment. The diagram also shows the Azure services needed to ingest logs and data from the AWS environment into Azure and to provide threat monitoring and protection.
 
-:::image type="content" source="media/secure-aws-iaas-apps.png" alt-text="Diagram of the reference architecture for securing IaaS applications in Amazon Web Services (AWS)." lightbox="../media/adoption-guide/on-premises-remote-devices.png":::
+:::image type="content" source="media/secure-aws-iaas-apps.png" alt-text="Diagram of the reference architecture for securing IaaS applications in Amazon Web Services (AWS)." lightbox="media/secure-aws-iaas-apps.png":::
 
 The diagram demonstrates ingestion of logs into Azure for the following resources and services in the AWS environment:
 
@@ -214,13 +214,13 @@ Once you install Azure Connected Machine agent and AMA, Amazon EC2 operating sys
 
 The following image demonstrates how Amazon EC2 operating system logs are ingested by Microsoft Sentinel. The Azure Connected Machine agent makes your Amazon EC2 VMs part of Azure. The Windows Security Events via AMA data connector collects data from your Amazon EC2 VMs.
 
-:::image type="content" source="media/logs-ingested-by-sentinel.png" alt-text="Diagram of operating system logs ingested by Microsoft Sentinel." lightbox="../media/adoption-guide/on-premises-remote-devices.png":::
+:::image type="content" source="media/logs-ingested-by-sentinel.png" alt-text="Diagram of operating system logs ingested by Microsoft Sentinel." lightbox="media/logs-ingested-by-sentinel.png":::
 
 >[!Note]
 >You don't need Microsoft Sentinel to ingest logs from Amazon EC2 but you do need a Log Analytics workspace previously set-up.
 >
 
-For more information, see [Amazon EC2 Sentinel Ingestion using Arc and AMA](https://github.com/rudneir2/AWS_EC2_Sentinel-Ingestion_using_ARC_AMA), which is a GitHub document, for step-by-step guidance. The GitHub document addresses installing AMA, which you can skip because you installed AMA earlier in this solution guide.
+For step-by-step guidance, see [Amazon EC2 Sentinel Ingestion using Arc and AMA](https://github.com/rudneir2/AWS_EC2_Sentinel-Ingestion_using_ARC_AMA), which is a document in GitHub. The GitHub document addresses installing AMA, which you can skip because you installed AMA earlier in this solution guide.
 
 ### E. Monitor in Microsoft Sentinel logs from Amazon Virtual Private Cloud (Amazon VPC), AWS CloudTrail, and Amazon GuardDuty
 

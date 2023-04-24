@@ -7,8 +7,6 @@ author: JoeDavies-TechWriter
 ms.author: v-joedavies
 ms.topic: conceptual
 ms.collection: 
-  - msftsolution-sentinel-xdr
-  - msftsolution-scenario
   - zerotrust-solution
   - msftsolution-secops
 ---

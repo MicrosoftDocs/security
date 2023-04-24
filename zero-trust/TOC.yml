@@ -263,6 +263,11 @@
       items: 
       - name: Azure Virtual Desktop
         href: azure-infrastructure-avd.md
+    - name: Apply Zero Trust to IaaS applications in AWS
+      expanded: false
+      items: 
+      - name: Secure AWS applications with Azure 
+        href: secure-iaas-apps.md
     - name: Use SIEM and XDR to respond to incidents
       expanded: false
       items:

@@ -1,7 +1,7 @@
 ---
 title: Overview - Apply Zero Trust principles to IaaS applications in Amazon Web Services (AWS)
-description: This article gives an overview of how to apply Zero Trust principles to IaaS applications in AWS.
-ms.date: 04/17/2023
+description: This article gives an overview of how to apply Zero Trust principles to IaaS applications in Amazone Web Services (AWS).
+ms.date: 04/23/2023
 ms.service: security
 author: simona
 ms.author: terrylan
@@ -23,31 +23,32 @@ This article provides steps to apply the principles of Zero Trust to IaaS applic
 For more information about how to apply the principles of Zero Trust across an Azure IaaS environment, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
 ## AWS and AWS components
-AWS is one of the public cloud providers available in the market, along with Microsoft Azure, Google Cloud Platform, and others. It's common for companies to have a multi-cloud architecture that consists of more than one cloud provider. In this article, we'll focus on multi-cloud architecture where Azure and AWS are integrated to run workloads and IT business solutions.
+AWS is one of the public cloud providers available in the market, along with Microsoft Azure, Google Cloud Platform, and others. It's common for companies to have a multicloud architecture that consists of more than one cloud provider. In this article, we focus on a multicloud architecture where:
 
-This article shows you how to secure an AWS IaaS workload using Microsoft products, including Microsoft Defender for Cloud, Microsoft Sentinel, Microsoft 365 Defender, GitHub Advanced Security, Azure Arc, Microsoft Entra, and others.
+- Azure and AWS are integrated to run workloads and IT business solutions.
+- You secure an AWS IaaS workload using Microsoft products.
 
-AWS virtual machines, called Amazon Elastic Compute Cloud (Amazon EC2), usually run on top of an AWS virtual network, called Amazon Virtual Private Cloud (Amazon VPC). Users and cloud administrators set up an Amazon VPC in their AWS environment and add Amazon EC2 virtual machines.
+AWS virtual machines, called Amazon Elastic Compute Cloud (Amazon EC2), run on top of an AWS virtual network, called Amazon Virtual Private Cloud (Amazon VPC). Users and cloud administrators set up an Amazon VPC in their AWS environment and add Amazon EC2 virtual machines.
 
-AWS CloudTrail logs AWS account activity in the AWS environment. Amazon EC2, Amazon VPC, and AWS CloudTrail are very common in AWS environments. Collecting logs from these services is essential to understanding what is going on in your AWS environment and the actions to take to avoid or mitigate attacks.
+AWS CloudTrail logs AWS account activity in the AWS environment. Amazon EC2, Amazon VPC, and AWS CloudTrail are common in AWS environments. Collecting logs from these services is essential to understanding what is going on in your AWS environment and the actions to take to avoid or mitigate attacks.
 
 Amazon GuardDuty is a threat detection service that helps to protect AWS workloads by monitoring the AWS environment for malicious activities and unauthorized behavior.
 
-In this article, you'll learn how to integrate monitoring and logging of these AWS resources and services with Azure's monitoring solutions and the Microsoft security stack.
+In this article, you learn how to integrate monitoring and logging of these AWS resources and services with Azure's monitoring solutions and the Microsoft security stack.
 
 ## Reference Architecture
-The following architecture diagram shows the common services and resources needed to run an IaaS workload in an AWS environment. The diagram also shows the Azure services needed to ingest logs and data from the AWS environment into Azure.
+The following architecture diagram shows the common services and resources needed to run an IaaS workload in an AWS environment. The diagram also shows the Azure services needed to ingest logs and data from the AWS environment into Azure and to provide threat monitoring and protection.
 
-:::image type="content" source="media/secure-aws-iaas-apps.png" alt-text="Diagram of the reference architecture for securing IaaS applications in AWS.":::
+:::image type="content" source="media/secure-aws-iaas-apps.png" alt-text="Diagram of the reference architecture for securing IaaS applications in Amazon Web Services (AWS)." lightbox="../media/adoption-guide/on-premises-remote-devices.png":::
 
-The diagram demonstrates ingestion of logs into Azure for the following AWS and Amazon resources and services:
+The diagram demonstrates ingestion of logs into Azure for the following resources and services in the AWS environment:
 
 - Amazon Elastic Compute Cloud (Amazon EC2)
 - Amazon Virtual Private Cloud (Amazon VPC)
-- AWS CloudTrail
+- Amazon Web Services CloudTrail (AWS CloudTrail)
 - Amazon GuardDuty
 
-To ingest logs into Azure for the AWS and Amazon resources and services, you must have Amazon Simple Storage Service (Amazon S3) and Amazon Simple Queue Service (SQS) defined.
+To ingest logs into Azure for the resources and services in the AWS environment, you must have Amazon Simple Storage Service (Amazon S3) and Amazon Simple Queue Service (SQS) defined.
 
 Logs and data are ingested into Log Analytics in Azure Monitor.
 
@@ -58,7 +59,7 @@ The following Microsoft products use the ingested data to monitor:
 - Microsoft Defender for Endpoint
 
 >[!Note]
->You don't have to ingest logs into all of the Microsoft products listed above to monitor your AWS resources and services. Using all of the Microsoft products together, though, provides greater benefit from AWS log and data ingestion into Azure.
+>You don't have to ingest logs into all of the Microsoft products listed to monitor your AWS resources and services. Using all of the Microsoft products together, though, provides greater benefit from AWS log and data ingestion into Azure.
 >
 
 This article follows the architecture diagram and describes how to:
@@ -118,17 +119,17 @@ For more information, see:
 
 ### C. Connect an AWS account to Microsoft Defender for Cloud
 
-Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all your Azure, on-premises, and multi-cloud resources, including AWS. Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
+Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all your Azure, on-premises, and multicloud resources, including AWS. Defender for Cloud fills three vital needs as you manage the security of your resources and workloads in the cloud and on-premises:
 
 - Continuously assess - Know your security posture. Identify and track vulnerabilities.
 - Secure - Harden resources and services with the [Microsoft cloud security benchmark](/security/benchmark/azure/introduction) (MCSB) and [AWS Foundational Security Best Practices standard](https://aws.amazon.com/security-hub/getting-started/security-hub-fsbp/).
 - Defend - Detect and resolve threats to resources and services.
 
-Microsoft Defender for Servers is one of the paid plans provided by Microsoft Defender for Cloud. Defender for Servers extends protection to your Windows and Linux machines that run in Azure, AWS, Google Cloud Platform (GCP), and on-premises. Defender for Servers integrates with Microsoft Defender for Endpoint to provide endpoint detection and response (EDR) and other threat protection features.
+Microsoft Defender for Servers is one of the paid plans provided by Microsoft Defender for Cloud. Defender for Servers extends protection to your Windows and Linux machines that run in Azure, AWS, Google Cloud Platform, and on-premises. Defender for Servers integrates with Microsoft Defender for Endpoint to provide endpoint detection and response (EDR) and other threat protection features.
 
 For more information, see:
 
-- [Connect an AWS account to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-aws) to protect your AWS-based resources.
+- [Connect an AWS account to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-aws) to protect your AWS resources.
 - [Select a Defender for Servers plan in Microsoft Defender for Cloud](/azure/defender-for-cloud/plan-defender-for-servers-select-plan#review-plans) to compare different plans offered by Defender for Servers. Defender for Servers automatically provisions the Defender for Endpoint sensor on every supported machine that's connected to Defender for Cloud.
 
 >[!Note]
@@ -148,7 +149,7 @@ For setup instructions, see [Onboard Microsoft Sentinel](/azure/sentinel/quickst
 
 ### E. Use the AWS connectors to pull AWS service logs into Microsoft Sentinel
 
-To pull the AWS service logs into Microsoft Sentinel, you need to use a Microsoft Sentinel AWS connector. The connector works by granting Microsoft Sentinel access to your AWS resource logs. Setting up the connector establishes a trust relationship between AWS and Microsoft Sentinel. This is accomplished on AWS by creating a role that gives permission to Microsoft Sentinel to access your AWS logs.
+To pull the AWS service logs into Microsoft Sentinel, you need to use a Microsoft Sentinel AWS connector. The connector works by granting Microsoft Sentinel access to your AWS resource logs. Setting up the connector establishes a trust relationship between AWS and Microsoft Sentinel. On AWS a role is created that gives permission to Microsoft Sentinel to access your AWS logs.
 
 The AWS connector is available in two versions: the new Amazon Simple Storage Service (Amazon S3) connector that ingests logs by pulling them from an Amazon S3 bucket and the legacy connector for CloudTrail management and data logs. The Amazon S3 connector can ingest logs from Amazon Virtual Private Cloud (Amazon VPC), AWS CloudTrail, and Amazon GuardDuty. The Amazon S3 connector is in preview. We recommend using the Amazon S3 connector.
 
@@ -159,7 +160,7 @@ To ingest logs from Amazon VPC, AWS CloudTrail, and Amazon GuardDuty using the A
 
 ## Step 2: Configure metrics for your security data
 
-Now that Azure is ingesting logs from your Amazon Web Services (AWS) resources, you can create threat detection rules in your environment and monitor alerts. This article walks you through the steps to collect logs and data and monitor for suspicious activity. The Zero Trust **assume breach** principle is achieved by monitoring your environment for threats and vulnerabilities.
+Now that Azure is ingesting logs from your AWS resources, you can create threat detection rules in your environment and monitor alerts. This article walks you through the steps to collect logs and data and monitor for suspicious activity. The Zero Trust **assume breach** principle is achieved by monitoring your environment for threats and vulnerabilities.
 
 | Steps | Task |
 | --- | --- |
@@ -172,7 +173,7 @@ Now that Azure is ingesting logs from your Amazon Web Services (AWS) resources, 
 
 ### A. Collect Amazon Elastic Compute Cloud (Amazon EC2) logs in Azure Monitor
 
-The Azure Connected Machine agent installed on your Amazon EC2 VMs enables you to monitor your AWS resources as if they are Azure resources. For example, you can use Azure policies to govern and manage updates to your Amazon EC2 VMs.
+The Azure Connected Machine agent installed on your Amazon EC2 VMs enables you to monitor your AWS resources as if they're Azure resources. For example, you can use Azure policies to govern and manage updates to your Amazon EC2 VMs.
 
 The [Azure Monitor Agent](/azure/azure-monitor/agents/agents-overview) (AMA) installed on your Amazon EC2 VMs collects monitoring data and delivers it to Azure Monitor. These logs become input for Microsoft Sentinel and Defender for Cloud.
 
@@ -191,12 +192,12 @@ To view and manage Amazon EC2 alerts and recommendations:
 - Learn how to [access the asset inventory page](/azure/defender-for-cloud/asset-inventory) of Defender for Cloud.
 
 >[!Note]
->[Microsoft cloud security Benchmark](/security/benchmark/azure/introduction) (MCSB) includes a collection of high-impact security recommendations you can use to help secure your cloud services in a single or multi-cloud environment. Microsoft recommends using security benchmarks to help you quickly secure cloud deployments. Learn more about the MCSB.
+>[Microsoft cloud security Benchmark](/security/benchmark/azure/introduction) (MCSB) includes a collection of high-impact security recommendations you can use to help secure your cloud services in a single or multicloud environment. Microsoft recommends using security benchmarks to help you quickly secure cloud deployments. Learn more about the MCSB.
 >
 
 ### C. Integrate Microsoft Defender for Endpoint with Defender for Cloud
 
-Protect your endpoints with Defender for Cloud's integrated endpoint detection and response solution, Microsoft Defender for Endpoint. Microsoft Defender for Endpoint protects your Windows and Linux machines whether they're hosted in Azure, on-premises, or a multi-cloud environment. Microsoft Defender for Endpoint is a holistic, cloud-delivered, endpoint security solution. The main features include:
+Protect your endpoints with Defender for Cloud's integrated endpoint detection and response solution, Microsoft Defender for Endpoint. Microsoft Defender for Endpoint protects your Windows and Linux machines whether they're hosted in Azure, on-premises, or a multicloud environment. Microsoft Defender for Endpoint is a holistic, cloud-delivered, endpoint security solution. The main features include:
 
 - Risk-based vulnerability management and assessment
 - Attack surface reduction
@@ -211,12 +212,12 @@ For more information, see [Enable the Microsoft Defender for Endpoint integratio
 
 Once you install Azure Connected Machine agent and AMA, Amazon EC2 operating systems start sending logs into Azure Log Analytics tables that are automatically available to Microsoft Sentinel.
 
-The image below demonstrates how Amazon EC2 operating system logs are ingested by Microsoft Sentinel. The Azure Connected Machine agent makes your Amazon EC2 VMs part of Azure. The Windows Security Events via AMA data connector collects data from your Amazon EC2 VMs.
+The following image demonstrates how Amazon EC2 operating system logs are ingested by Microsoft Sentinel. The Azure Connected Machine agent makes your Amazon EC2 VMs part of Azure. The Windows Security Events via AMA data connector collects data from your Amazon EC2 VMs.
 
-:::image type="content" source="media/logs-ingested-by-sentinel.png" alt-text="Diagram of operating system logs ingested by Microsoft Sentinel.":::
+:::image type="content" source="media/logs-ingested-by-sentinel.png" alt-text="Diagram of operating system logs ingested by Microsoft Sentinel." lightbox="../media/adoption-guide/on-premises-remote-devices.png":::
 
 >[!Note]
->You don't need Microsoft Sentinel to ingest logs from Amazon EC2 but you do need to have a Log Analytics workspace previously set up.
+>You don't need Microsoft Sentinel to ingest logs from Amazon EC2 but you do need a Log Analytics workspace previously set-up.
 >
 
 For more information, see [Amazon EC2 Sentinel Ingestion using Arc and AMA](https://github.com/rudneir2/AWS_EC2_Sentinel-Ingestion_using_ARC_AMA), which is a GitHub document, for step-by-step guidance. The GitHub document addresses installing AMA, which you can skip because you installed AMA earlier in this solution guide.
@@ -250,7 +251,7 @@ AWSCloudTrail
 | where EventName == "CreateUser"
 | summarize count() by AWSRegion
  
-In Microsoft Sentinel, you utilize the Amazon S3 workbook to analyze additional details.
+In Microsoft Sentinel, you utilize the Amazon S3 workbook to analyze more details.
 
 For AWS CloudTrail you can analyze:
 
@@ -266,25 +267,25 @@ For Amazon GuardDuty, you can analyze:
 
 ### F. Use Microsoft Sentinel built in detection rules to create and investigate threat detection rules in your environment
 
-Now that you've connected your data sources to Microsoft Sentinel, use Microsoft Sentinels built-in detection rule templates to help you create and investigate threat detection rules in your environment. Microso'ft Sentinel provides out-of-the-box, built-in templates to help you create threat detection rules.
+Now that you've connected your data sources to Microsoft Sentinel, use Microsoft Sentinels built-in detection rule templates to help you create and investigate threat detection rules in your environment. Microsoft Sentinel provides out-of-the-box, built-in templates to help you create threat detection rules.
 
-Rule templates were designed by Microsoft's team of security experts and analysts based on known threats, common attack vectors, and suspicious activity escalation chains. Rules created from these templates will automatically search across your environment for any activity that looks suspicious. Many of the templates can be customized to search for activities, or filter them out, according to your needs. The alerts generated by these rules will create incidents that you can assign and investigate in your environment.
+Microsoft's team of security experts and analysts design rule templates based on known threats, common attack vectors, and suspicious activity escalation chains. Rules created from these templates automatically search across your environment for any activity that looks suspicious. Many of the templates can be customized to search for activities, or filter them out, according to your needs. The alerts generated by these rules create incidents that you can assign and investigate in your environment.
 
 For more information, see [detecting threats with built-in analytics rules in Microsoft Sentinel](/azure/sentinel/detect-threats-built-in).
 
 ## Step 3: Improve your overall security posture
 
-In this section you'll learn how Microsoft Entra Permissions Management can help you monitor unused and excessive permissions. You'll step through how to configure, onboard, and view key data. The Zero Trust **use least privilege access** principle is achieved by managing, controlling, and monitoring access to your resources.
+In this section, you learn how Microsoft Entra Permissions Management helps you monitor unused and excessive permissions. You step through how to configure, onboard, and view key data. The Zero Trust **use least privilege access** principle is achieved by managing, controlling, and monitoring access to your resources.
 
 | Steps | Task |
 | --- | --- |
 | A | Configure Permissions Management and Privileged Identity Management. |
-| B | Onboard an Amazon Web Services (AWS) account. |
+| B | Onboard an AWS account. |
 | C | View key statistics and data. |
 
 ### Configure Permissions Management
 
-Permissions Management is a cloud infrastructure entitlement management (CIEM) solution that detects, automatically right-sizes, and continuously monitors unused and excessive permissions across your multi-cloud infrastructure.
+Permissions Management is a cloud infrastructure entitlement management (CIEM) solution that detects, automatically right-sizes, and continuously monitors unused and excessive permissions across your multicloud infrastructure.
 
 Permissions Management deepens Zero Trust security strategies by augmenting the **use least privilege access** principle, allowing customers to:
 
@@ -307,9 +308,9 @@ C. [View key statistics and data](/azure/active-directory/cloud-infrastructure-e
 This section covers a key pillar of DevSecOps, scanning and securing your infrastructure as code.
 For infrastructure as code, security and DevOps teams should monitor for misconfigurations that can lead to vulnerabilities in your infrastructure deployments.
 
-By implementing continuous checks on Azure Resource Manager (ARM), Bicep, or Terraform templates, you prevent breaches and exploits early in development, when they are less costly to fix. You will also want to maintain tight control of administrators and service account groups across Azure Active Directory (Azure AD) and your DevOps tool.  
+By implementing continuous checks on Azure Resource Manager (ARM), Bicep, or Terraform templates, you prevent breaches and exploits early in development, when they're less costly to fix. You also want to maintain tight control of administrators and service account groups across Azure AD and your DevOps tool.  
 
-You'll implement the Zero Trust **use least privilege access** principle by:
+You implement the Zero Trust **use least privilege access** principle by:
 
 - Conducting robust reviews of your infrastructure configurations with least privilege identity access and networking set up.
 - Assigning users role-based access control (RBAC) to resources at the repository level, team level, or organization level.
@@ -328,7 +329,7 @@ You'll implement the Zero Trust **use least privilege access** principle by:
 
 ### A. Enable DevSecOps for IaC
 
-Defender for DevOps provides visibility into the security posture of your multi-pipeline environment, regardless of whether your code and pipelines are in Azure DevOps or GitHub.  It has the additional benefit of implementing a single pane of glass where security and DevOps teams can see scan results of all their repositories in one dashboard, as well as set up a pull request process to remediate any issues.
+Defender for DevOps provides visibility into the security posture of your multi-pipeline environment, regardless of whether your code and pipelines are in Azure DevOps or GitHub.  It has the extra benefit of implementing a single pane of glass where security and DevOps teams can see scan results of all their repositories in one dashboard, and set up a pull request process to remediate any issues.
 
 For more information, see:
 
@@ -337,7 +338,7 @@ For more information, see:
 
 ### B. Implement RBAC for DevOps tools
 
-You need to manage and implement sound [governance](/azure/cloud-adoption-framework/secure/best-practices/end-to-end-governance) practices for your team, such as role-based access control permissions. If this model isn't mirrored for DevOps automation, your organization might leave a security back-door open. Consider an example where a developer doesn't have access via ARM templates, but still has sufficient permissions to change application code or infrastructure as code and trigger an automation workflow. The developer, indirectly via DevOps, can access and make destructive changes to your ARM templates.
+You need to manage and implement sound [governance](/azure/cloud-adoption-framework/secure/best-practices/end-to-end-governance) practices for your team, such as role-based access control permissions. If this model isn't mirrored for DevOps automation, your organization might leave a security back-door open. Consider an example where a developer doesn't have access via ARM templates. The developer may still have sufficient permissions to change application code or infrastructure as code and trigger an automation workflow. The developer, indirectly via DevOps, can access and make destructive changes to your ARM templates.
 
 When you deploy cloud-based solutions for your infrastructure deployments, security should always be your most important concern. Microsoft keeps the underlying cloud infrastructure secure. You configure security in Azure DevOps or GitHub.
 
@@ -350,7 +351,7 @@ To configure security:
 
 To proactively secure environments, it's important to continuously monitor and strengthen DevOps security. GitHub Advanced Security automates checks in your pipeline to look for exposed secrets, dependency vulnerabilities, and more. GitHub makes extra security features available to customers under an Advanced Security license.
 
-By default, GitHub Advanced Security is enabled for public repositories. For your private repositories, you need to leverage the GitHub Advanced Security licensing. Once enabled, you can start leveraging the many features that come with the GitHub Advanced Security suite. This includes:
+By default, GitHub Advanced Security is enabled for public repositories. For your private repositories, you need to use the GitHub Advanced Security licensing. Once enabled, you can start using the many features that come with the GitHub Advanced Security suite:
 
 - Code scanning
 - Dependency scanning
@@ -369,7 +370,7 @@ For more information, see [Enable GitHub Advanced Security](https://docs.github.
 
 [Defender for DevOps](/azure/defender-for-cloud/defender-for-devops-introduction), a service available in Defender for Cloud, enables security teams to manage DevOps security across multi-pipeline environments. Defender for DevOps uses a central console to empower security teams with the ability to protect applications and resources from code to cloud across multi-pipeline environments, such as GitHub and Azure DevOps.
 
-Defender for DevOps exposes security findings as annotations in Pull Requests (PR). Security operators can enable PR annotations in Microsoft Defender for Cloud. Any exposed issues can then be remedied by developers. This process can prevent and fix potential security vulnerabilities and misconfigurations before they enter the production stage. You can configure PR annotations in Azure DevOps. You can get PR annotations in GitHub if you're a GitHub Advanced Security customer.
+Defender for DevOps exposes security findings as annotations in Pull Requests (PR). Security operators can enable PR annotations in Microsoft Defender for Cloud. Exposed issues can be remedied by developers. This process can prevent and fix potential security vulnerabilities and misconfigurations before they enter the production stage. You can configure PR annotations in Azure DevOps. You can get PR annotations in GitHub if you're a GitHub Advanced Security customer.
 
 For more information, see:
 

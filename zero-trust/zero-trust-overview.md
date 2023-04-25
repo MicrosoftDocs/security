@@ -83,18 +83,6 @@ Zero Trust.
       </tr>
       <tr>
          <td>
-            <p><img src="media/icon-applications-small.png" alt="Application window icon."></p>
-         </td>
-         <td>
-            <p><strong>Secure applications with Zero Trust</strong></p>
-            <p>Applications and APIs provide the interface by which data is consumed. They may be legacy on-premises, lifted-and-shifted to cloud workloads, or modern SaaS applications. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.</p>
-         </td>
-         <!--<td>
-            <p><img src="./media/video-image-placeholder-03.png" alt="Video placeholder 3."></p>
-         </td>-->
-      </tr>
-      <tr>
-         <td>
             <p><img src="media/icon-data-small.png" alt="Ones and zeroes icon."></p>
          </td>
          <td>
@@ -103,6 +91,18 @@ Zero Trust.
          </td>
          <!--<td>
             <p><img src="./media/video-image-placeholder-04.png" alt="Video placeholder 4."></p>
+         </td>-->
+      </tr>
+      <tr>
+         <td>
+            <p><img src="media/icon-applications-small.png" alt="Application window icon."></p>
+         </td>
+         <td>
+            <p><strong>Secure applications with Zero Trust</strong></p>
+            <p>Applications and APIs provide the interface by which data is consumed. They may be legacy on-premises, lifted-and-shifted to cloud workloads, or modern SaaS applications. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.</p>
+         </td>
+         <!--<td>
+            <p><img src="./media/video-image-placeholder-03.png" alt="Video placeholder 3."></p>
          </td>-->
       </tr>
       <tr>

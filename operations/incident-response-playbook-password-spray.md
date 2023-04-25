@@ -16,8 +16,8 @@ localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - zerotrust-solution
+  - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
 ms.custom: cxdef-zt-ransomware 
@@ -134,7 +134,7 @@ You can also use the Splunk platform to set up alerts.
 
 ## Workflow
 
-[![Password spray investigation workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media//incident-response-playbook-password-spray/Pwdsprayflow.png)
+[![Password spray investigation workflow](./media/incident-response-playbook-password-spray/Pwdsprayflow.png)]
 
 You can also:
 
@@ -581,7 +581,6 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 - [Sentinel Alerting](/azure/sentinel/tutorial-detect-threats-built-in)
 - [SIEM integration into Defender for Cloud Apps](/cloud-app-security/siem)
 - [SIEM integration with Graph API](/graph/security-integration#list-of-connectors-from-microsoft)
-- [Splunk alerting video](https://www.splunk.com/view/SP-CAAAGYG)
 - [Splunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview)
 - [Installing ADFS Health Connect](/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs)
 - [Understanding Azure AD sign-in logs](/azure/active-directory/reports-monitoring/concept-sign-ins)
@@ -589,7 +588,7 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 
 ### Mitigations
 
-- [Mitigations for password spray](https://www.microsoft.com/en-u/microsoft-365/blog/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/)
+- [Mitigations for password spray](https://www.microsoft.com/microsoft-365/blog/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/)
 - [Enable password protection](/azure/active-directory/authentication/howto-password-ban-bad-on-premises-operations)
 - [Block legacy authentication](/azure/active-directory/conditional-access/block-legacy-authentication)
 - [Block IP address on ADFS](/windows-server/identity/ad-fs/operations/configure-ad-fs-banned-ip)

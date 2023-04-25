@@ -16,8 +16,8 @@ localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - zerotrust-solution
+  - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
 ---
@@ -241,7 +241,7 @@ As per our observation, attackers have used a combination of the first six permi
 
 ## Workflow
 
-[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)](https://raw.githubusercontent.com/MicrosoftDocs/security/main/compass/media/incident-response-playbook-app-consent/Appconsent_flow.png)
+[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)]
 
 You can also:
 

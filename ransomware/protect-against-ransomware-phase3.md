@@ -10,11 +10,8 @@ ms.topic: article
 ms.service: microsoft-365-security
 localization_priority: Normal
 ms.collection:
-- M365-security-compliance
-- Strat_O365_Enterprise
-- m365solution-ransomware
-- m365solution-overview
-- highpri
+- zerotrust-solution
+- msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
 description: Deploy ransomware protection to make it hard for an attacker to get into your environment by incrementally removing the risks.
 

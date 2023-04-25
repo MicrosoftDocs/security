@@ -63,6 +63,10 @@ landingContent:
             url: /microsoft-365/solutions/information-protection-deploy
           - text: Integrate SaaS apps for Zero Trust with Microsoft 365 
             url: integrate-saas-apps.md
+          - text: Setup guide for Zero Trust with Microsoft 365 
+            url: https://go.microsoft.com/fwlink/?linkid=2222968
+          - text: Advanced deployment guide for Zero Trust with Microsoft 365 (requires sign-in)
+            url: https://go.microsoft.com/fwlink/?linkid=2224820
 
  # Card
   - title: Zero Trust deployment plans with Microsoft Azure and infrastructure

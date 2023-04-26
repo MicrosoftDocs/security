@@ -25,7 +25,7 @@ Additionally, COVID-19 remote work accelerated this transformation and is shifti
 
 Zero Trust is security for digital business. Digital transformation requires updating traditional security models because traditional security approaches don’t meet current requirements for business agility, user experiences, and continuously evolving threats. Organizations are implementing Zero Trust to address these challenges and enable the new normal of working anywhere, with anyone, at any time.
 
-However, shifting from a traditional security model to Zero Trust represents a significant transformation that requires buy-in, adoption, and change management across an entire organization. Updating a traditional security model to Zero Trust is a transformation that takes time and requires buy-in, adoption, and change management across an entire organization. Business leaders, technology leaders, security leaders, and security practitioners all play critical parts in creating an agile Zero Trust security approach. 
+However, shifting from a traditional security model to Zero Trust represents a significant transformation that requires buy-in, adoption, and change management across an entire organization. Business leaders, technology leaders, security leaders, and security practitioners all play critical parts in creating an agile Zero Trust security approach. 
 
 Many security architects and IT teams ask for help communicating to business leaders, tracking progress, and driving adoption. This guidance helps security and technology teams collaborate with business leaders on Zero Trust by providing:
 

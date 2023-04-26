@@ -1,7 +1,7 @@
 ---
 title: Overview - Apply Zero Trust principles to IaaS applications in Amazon Web Services (AWS)
 description: This article gives an overview of how to apply Zero Trust principles to IaaS applications in Amazone Web Services (AWS).
-ms.date: 04/23/2023
+ms.date: 04/26/2023
 ms.service: security
 author: simona
 ms.author: terrylan
@@ -299,9 +299,9 @@ Data can be fed into Microsoft Sentinel for further analysis and automation.
 
 To implement tasks, see:
 
-A. [Enable Permissions Management in your organization](/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant)
-B. [Onboard an AWS account on Permissions Management](/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
-C. [View key statistics and data](/azure/active-directory/cloud-infrastructure-entitlement-management/ui-dashboard)
+- A. [Enable Permissions Management in your organization](/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant)
+- B. [Onboard an AWS account on Permissions Management](/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
+- C. [View key statistics and data](/azure/active-directory/cloud-infrastructure-entitlement-management/ui-dashboard)
 
 ## Step 4: Secure infrastructure as code
 

@@ -1,7 +1,7 @@
 ---
 title: Overview - Apply Zero Trust principles to IaaS applications in Amazon Web Services (AWS)
 description: This article gives an overview of how to apply Zero Trust principles to IaaS applications in Amazone Web Services (AWS).
-ms.date: 04/23/2023
+ms.date: 04/26/2023
 ms.service: security
 author: simona
 ms.author: terrylan
@@ -39,7 +39,7 @@ In this article, you learn how to integrate monitoring and logging of these AWS 
 ## Reference Architecture
 The following architecture diagram shows the common services and resources needed to run an IaaS workload in an AWS environment. The diagram also shows the Azure services needed to ingest logs and data from the AWS environment into Azure and to provide threat monitoring and protection.
 
-:::image type="content" source="media/secure-aws-iaas-apps.png" alt-text="Diagram of the reference architecture for securing IaaS applications in Amazon Web Services (AWS)." lightbox="media/secure-aws-iaas-apps.png":::
+:::image type="content" source="media/secure-aws-iaas-apps.svg" alt-text="Diagram of the reference architecture for securing IaaS applications in Amazon Web Services (AWS)." lightbox="media/secure-aws-iaas-apps.svg":::
 
 The diagram demonstrates ingestion of logs into Azure for the following resources and services in the AWS environment:
 
@@ -299,9 +299,9 @@ Data can be fed into Microsoft Sentinel for further analysis and automation.
 
 To implement tasks, see:
 
-A. [Enable Permissions Management in your organization](/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant)
-B. [Onboard an AWS account on Permissions Management](/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
-C. [View key statistics and data](/azure/active-directory/cloud-infrastructure-entitlement-management/ui-dashboard)
+- A. [Enable Permissions Management in your organization](/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant)
+- B. [Onboard an AWS account on Permissions Management](/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
+- C. [View key statistics and data](/azure/active-directory/cloud-infrastructure-entitlement-management/ui-dashboard)
 
 ## Step 4: Secure infrastructure as code
 

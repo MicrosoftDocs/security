@@ -227,7 +227,7 @@ with this functionality enabled. Some of the considerations include:
     access point for users who need TLS 1.0?
 
 - Should my default, already-in-use
-    [www.contoso.com](http://www.contoso.com) certification use Disable
+    www.contoso.com certification use Disable
     Legacy TLS? If so, I may need to provide a legacy.contoso.com
     certificate and bind it to an endpoint allowing TLS 1.0.
 

@@ -3,7 +3,7 @@ title: TLS version enforcement capabilities now available per certificate bindin
 description: Learn how Windows Server 2019 now allows you to block weak TLS versions from being used with individual certificates you designate.
 author: TerryLanfear
 ms.author: terrylan
-ms.date: 8/14/2019
+ms.date: 04/27/2023
 ms.topic: article
 ms.service: information-protection
 ---
@@ -35,7 +35,7 @@ older operating
 systems](https://www.microsoft.com/security/blog/2017/07/20/tls-1-2-support-added-to-windows-server-2008/),
 by shipping [new logging formats in IIS for detecting weak TLS
 usage](https://www.microsoft.com/security/blog/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/)
-by clients, as well as providing the latest [technical guidance for
+by clients, and providing the latest [technical guidance for
 eliminating TLS 1.0
 dependencies](https://www.microsoft.com/security/blog/2019/02/11/solving-the-tls-1-0-problem/).
 
@@ -44,18 +44,13 @@ to make your transition to a TLS 1.2+ world easier. Beginning with
 [KB4490481](https://support.microsoft.com/help/4490481/windows-10-update-kb4490481),
 Windows Server 2019 now allows you to block weak TLS versions from being
 used with individual certificates you designate. We call this feature
-“Disable Legacy TLS” and it effectively enforces a TLS version and
+"Disable Legacy TLS" and it effectively enforces a TLS version and
 cipher suite floor on any certificate you select.
 
 Disable Legacy TLS also allows an online service to offer two distinct
-groupings of endpoints on the same hardware: one which allows only TLS
+groupings of endpoints on the same hardware: one that allows only TLS
 1.2+ traffic, and another which accommodates legacy TLS 1.0 traffic. The
-changes are implemented in HTTP.sys, and in conjunction with the
-issuance of additional certificates, allow traffic to be routed to the
-new endpoint with the appropriate TLS version. Prior to this change,
-deploying such capabilities would require an additional hardware
-investment because such settings were only configurable system-wide via
-registry.
+changes are implemented in HTTP.sys, and with the issuance of additional certificates, allow traffic to be routed to the new endpoint with the appropriate TLS version. Prior to this change, deploying such capabilities would require an additional hardware investment because such settings were only configurable system-wide via registry.
 
 Feature scenario details
 ------------------------
@@ -72,16 +67,11 @@ functionality:
 Figure 1: Default TLS Version selection and Certificate Binding
 Functionality
 
-- <https://secure.contoso.com> directs your customers to a service
-    endpoint supporting only TLS 1.2 and above.
+- secure.contoso.com directs your customers to a service endpoint supporting only TLS 1.2 and above.
 
-- <https://legacy.contoso.com> directs customers with legacy TLS 1.0
-    needs (like those still migrating to TLS 1.2) to an endpoint which
-    supports TLS 1.0 for a limited time. This allows customers to finish
-    readiness testing for TLS 1.2 without service disruption and without
-    blocking other customers who are ready for TLS 1.2.
+- legacy.contoso.com directs customers with legacy TLS 1.0 needs (like those still migrating to TLS 1.2) to an endpoint which supports TLS 1.0 for a limited time. This allows customers to finish readiness testing for TLS 1.2 without service disruption and without blocking other customers who are ready for TLS 1.2.
 
-Traditionally, you’d need two physically separate hosts to handle all
+Traditionally, you'd need two physically separate hosts to handle all
 the traffic and provide for TLS version enforcement, as servicing TLS
 requests with a minimum protocol version requires disabling weaker
 protocols via system-wide registry settings. We have made this
@@ -167,36 +157,36 @@ Additionally, one can troubleshoot and test this feature with Netsh:
      netsh http update sslcert \<regular parameters\>
         disablelegacytls=enable
 
-- Check whether it is set on a binding:
+- Check whether it's set on a binding:
 
      netsh http show sslcert \<regular parameters\>
 
-     Watch for Disable Legacy TLS Versions  : Set/Not Set
+     Watch for Disable Legacy TLS Versions: Set/Not Set
 
 ### Option \#3: C++ HTTP.sys APIs (Available Now)
 
 Along with Disable Legacy TLS, the following additions have been made to
 HTTP.sys:
 
-- [HTTP\_SERVICE\_CONFIG\_SSL\_PARAM](/windows/win32/api/http/ns-http-_http_service_config_ssl_param).DefaultFlags
+- [HTTP\_SERVICE\_CONFIG\_SSL\_PARAM](/windows/win32/api/http/ns-http-http_service_config_ssl_param).DefaultFlags
     now supports the following new values:
 
 - HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_ENABLE\_SESSION\_TICKET:
         Enable/Disable Session Ticket for a particular SSL endpoint.
 
-- HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_LOG\_EXTENDED\_EVENTS :
+- HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_LOG\_EXTENDED\_EVENTS:
         Enable/Disable extended event logging for a particular SSL
         endpoint. Additional events are logged to Windows Event Log.
-        There is only one event supported as of now which is logged when
+        There is only one event supported as of now that is logged when
         the SSL handshake fails.
 
 - HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_DISABLE\_LEGACY\_TLS:
         Enable/Disable legacy TLS versions for a particular SSL
-        endpoint. Setting this flag will disable TLS1.0/1.1 for that
-        endpoint and will also restrict cipher suites that can be used
+        endpoint. Setting this flag disables TLS1.0/1.1 for that
+        endpoint and restricts cipher suites that can be used
         to HTTP2 cipher suites.
 
-- HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_DISABLE\_TLS12 :
+- HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_DISABLE\_TLS12:
         Enable/Disable TLS1.2 for a particular SSL endpoint.
 
 - HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_DISABLE\_HTTP2: Enable/Disable
@@ -237,7 +227,7 @@ with this functionality enabled. Some of the considerations include:
     access point for users who need TLS 1.0?
 
 - Should my default, already-in-use
-    [www.contoso.com](http://www.contoso.com) certification use Disable
+    Contoso certification use Disable
     Legacy TLS? If so, I may need to provide a legacy.contoso.com
     certificate and bind it to an endpoint allowing TLS 1.0.
 
@@ -245,9 +235,9 @@ with this functionality enabled. Some of the considerations include:
     certificates to my customers?
 
 You can leverage this feature to meet the needs of large groups of
-customers – those with an obligation to use TLS 1.2+, and those still
+customers – those with an obligation to use TLS 1.2+ and those still
 working on the migration away from TLS 1.0, all without additional
-hardware expenditure. In addition to today’s availability of
+hardware expenditure. In addition to today's availability of
 per-certificate TLS version binding in Windows Server 2019, Microsoft
 will look to make Disable Legacy TLS available across its online
 services based on customer demand.

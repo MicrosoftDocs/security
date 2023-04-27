@@ -41,6 +41,8 @@ The following architecture diagram shows the common services and resources neede
 
 :::image type="content" source="media/secure-aws-iaas-apps.png" alt-text="Diagram of the reference architecture for securing IaaS applications in Amazon Web Services (AWS)." lightbox="media/secure-aws-iaas-apps.png":::
 
+:::image type="content" source="media/zero-trust-azure-aws-illustration.svg" alt-text="Diagram of the reference architecture for securing IaaS applications in Amazon Web Services (AWS)." lightbox="media/zero-trust-azure-aws-illustration.svg":::
+
 The diagram demonstrates ingestion of logs into Azure for the following resources and services in the AWS environment:
 
 - Amazon Elastic Compute Cloud (Amazon EC2)

@@ -35,7 +35,7 @@ older operating
 systems](https://www.microsoft.com/security/blog/2017/07/20/tls-1-2-support-added-to-windows-server-2008/),
 by shipping [new logging formats in IIS for detecting weak TLS
 usage](https://www.microsoft.com/security/blog/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/)
-by clients, as well as providing the latest [technical guidance for
+by clients, and providing the latest [technical guidance for
 eliminating TLS 1.0
 dependencies](https://www.microsoft.com/security/blog/2019/02/11/solving-the-tls-1-0-problem/).
 
@@ -48,14 +48,9 @@ used with individual certificates you designate. We call this feature
 cipher suite floor on any certificate you select.
 
 Disable Legacy TLS also allows an online service to offer two distinct
-groupings of endpoints on the same hardware: one which allows only TLS
+groupings of endpoints on the same hardware: one that allows only TLS
 1.2+ traffic, and another which accommodates legacy TLS 1.0 traffic. The
-changes are implemented in HTTP.sys, and in conjunction with the
-issuance of additional certificates, allow traffic to be routed to the
-new endpoint with the appropriate TLS version. Prior to this change,
-deploying such capabilities would require an additional hardware
-investment because such settings were only configurable system-wide via
-registry.
+changes are implemented in HTTP.sys, and with the issuance of additional certificates, allow traffic to be routed to the new endpoint with the appropriate TLS version. Prior to this change, deploying such capabilities would require an additional hardware investment because such settings were only configurable system-wide via registry.
 
 Feature scenario details
 ------------------------
@@ -162,11 +157,11 @@ Additionally, one can troubleshoot and test this feature with Netsh:
      netsh http update sslcert \<regular parameters\>
         disablelegacytls=enable
 
-- Check whether it is set on a binding:
+- Check whether it's set on a binding:
 
      netsh http show sslcert \<regular parameters\>
 
-     Watch for Disable Legacy TLS Versions  : Set/Not Set
+     Watch for Disable Legacy TLS Versions: Set/Not Set
 
 ### Option \#3: C++ HTTP.sys APIs (Available Now)
 
@@ -179,19 +174,19 @@ HTTP.sys:
 - HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_ENABLE\_SESSION\_TICKET:
         Enable/Disable Session Ticket for a particular SSL endpoint.
 
-- HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_LOG\_EXTENDED\_EVENTS :
+- HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_LOG\_EXTENDED\_EVENTS:
         Enable/Disable extended event logging for a particular SSL
         endpoint. Additional events are logged to Windows Event Log.
-        There is only one event supported as of now which is logged when
+        There is only one event supported as of now that is logged when
         the SSL handshake fails.
 
 - HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_DISABLE\_LEGACY\_TLS:
         Enable/Disable legacy TLS versions for a particular SSL
-        endpoint. Setting this flag will disable TLS1.0/1.1 for that
-        endpoint and will also restrict cipher suites that can be used
+        endpoint. Setting this flag disables TLS1.0/1.1 for that
+        endpoint and restricts cipher suites that can be used
         to HTTP2 cipher suites.
 
-- HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_DISABLE\_TLS12 :
+- HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_DISABLE\_TLS12:
         Enable/Disable TLS1.2 for a particular SSL endpoint.
 
 - HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_DISABLE\_HTTP2: Enable/Disable

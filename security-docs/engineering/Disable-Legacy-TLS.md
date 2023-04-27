@@ -3,7 +3,7 @@ title: TLS version enforcement capabilities now available per certificate bindin
 description: Learn how Windows Server 2019 now allows you to block weak TLS versions from being used with individual certificates you designate.
 author: TerryLanfear
 ms.author: terrylan
-ms.date: 8/14/2019
+ms.date: 04/27/2023
 ms.topic: article
 ms.service: information-protection
 ---
@@ -44,7 +44,7 @@ to make your transition to a TLS 1.2+ world easier. Beginning with
 [KB4490481](https://support.microsoft.com/help/4490481/windows-10-update-kb4490481),
 Windows Server 2019 now allows you to block weak TLS versions from being
 used with individual certificates you designate. We call this feature
-“Disable Legacy TLS” and it effectively enforces a TLS version and
+"Disable Legacy TLS" and it effectively enforces a TLS version and
 cipher suite floor on any certificate you select.
 
 Disable Legacy TLS also allows an online service to offer two distinct
@@ -72,16 +72,11 @@ functionality:
 Figure 1: Default TLS Version selection and Certificate Binding
 Functionality
 
-- <https://secure.contoso.com> directs your customers to a service
-    endpoint supporting only TLS 1.2 and above.
+- secure.contoso.com directs your customers to a service endpoint supporting only TLS 1.2 and above.
 
-- <https://legacy.contoso.com> directs customers with legacy TLS 1.0
-    needs (like those still migrating to TLS 1.2) to an endpoint which
-    supports TLS 1.0 for a limited time. This allows customers to finish
-    readiness testing for TLS 1.2 without service disruption and without
-    blocking other customers who are ready for TLS 1.2.
+- legacy.contoso.com directs customers with legacy TLS 1.0 needs (like those still migrating to TLS 1.2) to an endpoint which supports TLS 1.0 for a limited time. This allows customers to finish readiness testing for TLS 1.2 without service disruption and without blocking other customers who are ready for TLS 1.2.
 
-Traditionally, you’d need two physically separate hosts to handle all
+Traditionally, you'd need two physically separate hosts to handle all
 the traffic and provide for TLS version enforcement, as servicing TLS
 requests with a minimum protocol version requires disabling weaker
 protocols via system-wide registry settings. We have made this
@@ -178,7 +173,7 @@ Additionally, one can troubleshoot and test this feature with Netsh:
 Along with Disable Legacy TLS, the following additions have been made to
 HTTP.sys:
 
-- [HTTP\_SERVICE\_CONFIG\_SSL\_PARAM](/windows/win32/api/http/ns-http-_http_service_config_ssl_param).DefaultFlags
+- [HTTP\_SERVICE\_CONFIG\_SSL\_PARAM](/windows/win32/api/http/ns-http-http_service_config_ssl_param).DefaultFlags
     now supports the following new values:
 
 - HTTP\_SERVICE\_CONFIG\_SSL\_FLAG\_ENABLE\_SESSION\_TICKET:

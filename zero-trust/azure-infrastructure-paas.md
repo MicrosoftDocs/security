@@ -312,8 +312,6 @@ Securing access to the virtual network and application includes:
 
 The following diagram illustrates both these access modes across the reference architecture.
 
->TODO - Revise Image
-
 :::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-network-7.png" alt-text="Diagram of access modes in reference architecture." lightbox="media/spoke/azure-infra-spoke-network-7.png":::
 
 ### Secure traffic within Azure environment for the virtual network and application
@@ -381,3 +379,4 @@ This article is part of a series of articles. Given below are the links to the r
 - [Integrate your app with an Azure virtual network](https://learn.microsoft.com/azure/app-service/overview-vnet-integration)
 - [Using Private Endpoints for Azure Web App](https://learn.microsoft.com/azure/app-service/networking/private-endpoint)
 - [Connect to an Azure SQL server using an Azure Private Endpoint](https://learn.microsoft.com/azure/private-link/tutorial-private-endpoint-sql-portal)
+- 

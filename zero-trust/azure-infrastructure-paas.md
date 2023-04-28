@@ -48,9 +48,9 @@ This guide provides instructions for a specific reference architecture, but the 
 
 The following diagram illustrates a common reference architecture for PaaS-based workloads.
 
->TODO - Create Illustration
+:::image type="content" source="media/spoke-PaaS/azure-infra-spoke-subscription-paas-architecture-1.png" alt-text="Diagram of reference architecture for IaaS-based workloads.":::
 
-:::image type="content" source="media/spoke/azure-infra-spoke-architecture-1.png" alt-text="Diagram of reference architecture for IaaS-based workloads.":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-2.png" alt-text="Diagram of reference architecture for IaaS-based workloads.":::
 
 In the illustration:
 
@@ -62,9 +62,7 @@ In the illustration:
 
 The following diagram illustrates the logical architecture of these components within an Azure subscription.
 
->TODO - Create Illustration
-
-:::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="Diagram of components within an Azure subscription.":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.png" alt-text="Diagram of components within an Azure subscription.":::
 
 In the illustration, all components of the spoke virtual network are contained in a dedicated resource group:
 
@@ -72,6 +70,8 @@ In the illustration, all components of the spoke virtual network are contained i
 - One Azure Application Gateway (App GW), including a Web Application Firewall (WAF)
 - Three network security groups, one for the database tier and two for the application tier
 - Two private endpoints
+
+In addition, resources for the hub virtual network are deployed in the appropriate connectivity subscription.
 
 ## What's in this article
 
@@ -110,9 +110,7 @@ By isolating network resources from compute, data, or storage resources, you red
 
 Rather than having the spoke network resources available in multiple contexts in a shared resource group, create a dedicated resource group for it. The reference architecture that this article supports illustrates this concept.
 
->TODO - Create Illustration
-
-:::image type="content" source="media/spoke/azure-infra-spoke-dedicated-resource-group-3.png" alt-text="Diagram of isolate infrastructure into its own resource group." lightbox="media/spoke/azure-infra-spoke-dedicated-resource-group-3.png":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.png" alt-text="Diagram of isolate infrastructure into its own resource group." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.png":::
 
 In the illustration, resources and components across the reference architecture are divided into dedicated resource groups for application services, Azure SQL databases, storage accounts, hub virtual network resources, and spoke virtual network resources.
 
@@ -145,7 +143,7 @@ Azure network security groups (NSGs) are used to filter network traffic between 
 
 For a multi-tier applications, the recommendation is to create a dedicated network security group (NSG in the illustration below) for each subnet that hosts a a networking component.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-nsg-4.png" alt-text="Diagram of dedicated NSG.":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.png" alt-text="Diagram of dedicated NSG.":::
 
 In the illustration:
 
@@ -189,8 +187,6 @@ To do this, in the Network Security Group go to **Outbound Security Rules** and 
 
 The following screen capture provides an example.
 
->TODO - Create Illustrations
-
 :::image type="content" source="media/spoke/outbound-sec-rules.png" alt-text="Screenshot of Outbound security rules." lightbox="media/spoke/outbound-sec-rules.png":::
 
 Repeat this process with inbound rules, adjusting the name and description as appropriate.
@@ -226,9 +222,7 @@ Read more about [Azure Firewall](/azure/firewall/overview) and [Route Tables](/a
 
 Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Using subnets as sources, define networking patterns in the network security groups.
 
->TODO - Revise illustration
-
-:::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.png" alt-text="Diagram of networking patters in NSG." lightbox="media/spoke/azure-infra-spoke-tiers-6.png":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-tiers-6.png" alt-text="Diagram of networking patters in NSG." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-tiers-6.png":::
 
 Use the following process to add rules to your Network Security Groups: [Manage network security groups: Create a security rule](https://learn.microsoft.com/azure/virtual-network/manage-network-security-group?tabs=network-security-group-portal#create-a-security-rule)
 
@@ -244,7 +238,7 @@ To secure this scenario, you will need to add the following rules:
 
 >[!NOTE]For priority, use a value between 100 and 4000. You can start with 105.
 
-This addition to the NSG rules on your Application Gateway Subnet.
+This is in addition to the NSG rules on your Application Gateway Subnet.
 
 With these rules, you have defined the Zero Trust connectivity pattern for a single application tier. You can repeat this process as required for additional flows.
 
@@ -320,7 +314,7 @@ The following diagram illustrates both these access modes across the reference a
 
 >TODO - Revise Image
 
-:::image type="content" source="media/spoke/azure-infra-spoke-network-7.png" alt-text="Diagram of access modes in reference architecture." lightbox="media/spoke/azure-infra-spoke-network-7.png":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-network-7.png" alt-text="Diagram of access modes in reference architecture." lightbox="media/spoke/azure-infra-spoke-network-7.png":::
 
 ### Secure traffic within Azure environment for the virtual network and application
 
@@ -340,7 +334,7 @@ When configuring multi-factor authentication with conditional access and related
 
 The following diagram illustrates the recommended policies for Zero Trust.
 
-:::image type="content" source="media/vm/identity-device-access-policies-byplan.png" alt-text="Diagram of authentication with conditional access." lightbox="media/vm/identity-device-access-policies-byplan.png":::
+:::image type="content" source="media/identity-device-access-policies-byplan.png" alt-text="Diagram of authentication with conditional access." lightbox="media/vm/identity-device-access-policies-byplan.png":::
 
 ## Step 7. Enable advanced threat detection and protection
 

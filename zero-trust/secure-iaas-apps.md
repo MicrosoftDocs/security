@@ -39,7 +39,7 @@ In this article, you learn how to integrate monitoring and logging of these AWS 
 ## Reference Architecture
 The following architecture diagram shows the common services and resources needed to run an IaaS workload in an AWS environment. The diagram also shows the Azure services needed to ingest logs and data from the AWS environment into Azure and to provide threat monitoring and protection.
 
-:::image type="content" source="media/secure-aws-iaas-apps.png" alt-text="Diagram of the reference architecture for securing IaaS applications in Amazon Web Services (AWS)." lightbox="media/secure-aws-iaas-apps.png":::
+:::image type="content" source="media/zero-trust-azure-aws-illustration.svg" alt-text="Diagram of the reference architecture for securing IaaS applications in Amazon Web Services (AWS)." lightbox="media/zero-trust-azure-aws-illustration.svg":::
 
 The diagram demonstrates ingestion of logs into Azure for the following resources and services in the AWS environment:
 

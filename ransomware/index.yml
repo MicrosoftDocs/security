@@ -29,7 +29,7 @@ landingContent:
         - text: What are the stages in a ransomware attack?
           url:  human-operated-ransomware.md
         - text: How do I detect pre-ransom activities?
-          url:  human-operated-ransomware.md
+          url:  /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
         - text: How do I back-up and restore post ransomware attack?
           url:  azure/security/fundamentals/backup-plan-to-protect-against-ransomware
         - text: How do I proactively hunt for ransomware?
@@ -60,15 +60,15 @@ landingContent:
        - linkListType: reference
          links:
          - text: In Microsoft 365
-           url:  https://learn.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection
+           url:  /compliance/assurance/assurance-malware-and-ransomware-protection
          - text: In Azure
-           url:  https://learn.microsoft.com/azure/security/fundamentals/ransomware-protection
+           url:  /azure/security/fundamentals/ransomware-protection
          - text: In OneNote
            url:  dart-ransomware-case-study.md
          - text: In Sentinel
-           url:  https://learn.microsoft.com/azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
+           url:  /azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
          - text: In SharePoint
-           url:  https://learn.microsoft.com/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
+           url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
 
 # Card
   - title: Threat intelligence for Microsoft 365 Defender customers
@@ -111,6 +111,6 @@ landingContent:
         - text: Responding to ransomware attacks
           url:  playbook-responding-ransomware-m365-defender.md
         - text: Microsoft Incident Response approach
-          url:  https://learn.microsoft.com/security/operations/incident-response-playbook-dart-ransomware-approach
+          url:  /security/operations/incident-response-playbook-dart-ransomware-approach
         - text: Ransomware Incident Response playbook template
           url:  <link to downloadable PDF>

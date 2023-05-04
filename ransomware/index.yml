@@ -66,9 +66,9 @@ landingContent:
          - text: In OneNote
            url:  dart-ransomware-case-study.md
          - text: In Sentinel
-           url:  https://learn.microsoft.com/zure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
+           url:  https://learn.microsoft.com/azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
          - text: In SharePoint
-           url:  https://learn.microsoft.com/harepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
+           url:  https://learn.microsoft.com/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
 
 # Card
   - title: Threat intelligence for Microsoft 365 Defender customers

@@ -264,7 +264,7 @@ For this stage, develop your sensitivity labels and start using them across data
 
 | Resource | Description |
 | --- | --- |
-| [Prevent data loss](/microsoft-365/compliance/information-protection-solution) | Get started with DLP policies. <br><br> It's recommended to start with “soft” DLP policies, which provide warnings but don't block actions, or at most block actions while allowing users to override the policy. This allows you gauge the impact of these policies without harming productivity. You can fine-tune the policies to become stricter as you gain confidence in their accuracy and compatibility with the business needs. |
+| [Prevent data loss](/microsoft-365/compliance/information-protection-solution#prevent-data-loss) | Get started with DLP policies. <br><br> It's recommended to start with “soft” DLP policies, which provide warnings but don't block actions, or at most block actions while allowing users to override the policy. This allows you gauge the impact of these policies without harming productivity. You can fine-tune the policies to become stricter as you gain confidence in their accuracy and compatibility with the business needs. |
 
 ##### Set up secure teams for sharing data internally and externally with business partners
 
@@ -273,7 +273,6 @@ If you've identified projects or data that require highly sensitive protection, 
 | Resource | Description |
 | --- | --- |
 | [Configure teams with protection for highly sensitive data](/microsoft-365/solutions/configure-teams-highly-sensitive-protection) | Provides prescriptive recommendations for securing projects with highly sensitive data, including securing and managing guest access (your partners who might be collaborating with you on these projects). |
-| [Configure a team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation) | This article provides you with recommendations and steps to configure a private team in Microsoft Teams and use a unique sensitivity label to encrypt files so that only team members can decrypt them. |
 
 #### Stage 3
 
@@ -333,13 +332,14 @@ In this stage, you extend the protections you developed in Microsoft 365 to data
 | --- | --- |
 | [Microsoft 365 Purview Information Protection Scanner](/microsoft-365/compliance/deploy-scanner) | Scan data in on-premises repositories, including Microsoft Windows file shares and SharePoint Server. The information protection scanner can inspect any files that Windows can index. If you've configured sensitivity labels to apply automatic classification, the scanner can label discovered files to apply that classification, and optionally apply or remove protection. |
 
-##### Protect organization data in cloud infrastructure
+##### Protect organization data in your cloud infrastructure
 
 | Resource | Description |
 | --- | --- |
-| [Microsoft Purview data governance documentation](/en-us/azure/purview/) | Learn how to use the Microsoft Purview governance portal so your organization can find, understand, govern, and consume data sources. Tutorials, REST API reference, and other documentation show you how to plan and configure your data repository where you can discover available data sources and manage rights use. |
+| [Microsoft Purview data governance documentation](/azure/purview/) | Learn how to use the Microsoft Purview governance portal so your organization can find, understand, govern, and consume data sources. Tutorials, REST API reference, and other documentation show you how to plan and configure your data repository where you can discover available data sources and manage rights use. |
 
 ### Cloud adoption plan
+
 An adoption plan is an essential requirement for a successful cloud adoption. Key attributes of a successful adoption plan for protecting data include:
 
 - **Strategy and planning are aligned:** As you draw up your plans for testing, piloting, and rolling out data classification and protection capabilities across your digital estate, be sure to revisit your strategy and objectives to ensure your plans are aligned. This includes priority of data sets, goals for data protection, and target milestones.

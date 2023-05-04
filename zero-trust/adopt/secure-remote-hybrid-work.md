@@ -193,14 +193,14 @@ In addition to these resources, the following sections highlight resources for s
 | --- | --- |
 | Verify and secure every identity with strong authentication | [What authentication and verification methods are available in Azure AD?](/azure/active-directory/authentication/concept-authentication-methods) |
 | Integrate SaaS apps with Azure AD for single sign-on | [Add SaaS apps to Azure AD and to the scope of policies](/security/zero-trust/add-saas-apps) |
-| New applications use modern authentication | [Checklist — How are you managing the identity for your workload?](/azure/architecture/framework/security/design-identity) |
+| New applications use modern authentication | [Checklist — How are you managing the identity for your workload?](/azure/architecture/framework/security/design-identity#checklist) |
 
 #### Stage 2
 
 | Task | Resources |
 | --- | --- |
 | Register devices with Azure AD | [Azure AD registered devices](/azure/active-directory/devices/concept-azure-ad-register) <br><br> [Plan your Azure AD join implementation](/azure/active-directory/devices/azureadjoin-plan) |
-| Implement Zero Trust **Starting point** identity and device access policies | [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations) |
+| Implement Zero Trust identity and device access policies for the **Starting point** protection level  | [Protection levels for Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations#three-levels-of-protection) |
 | Use App Proxy with on-prem apps for single sign-on | [Azure AD Application Proxy documentation](/en-us/azure/active-directory/app-proxy/) |
 
 #### Stage 3

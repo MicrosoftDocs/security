@@ -31,7 +31,7 @@ landingContent:
         - text: How do I detect pre-ransom activities?
           url:  /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
         - text: How do I back-up and restore post ransomware attack?
-          url:  azure/security/fundamentals/backup-plan-to-protect-against-ransomware
+          url:  /azure/security/fundamentals/backup-plan-to-protect-against-ransomware
         - text: How do I proactively hunt for ransomware?
           url:  human-operated-ransomware.md
         - text: Where can I get a ransomware incident response playbook? 

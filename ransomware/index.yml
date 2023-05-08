@@ -35,7 +35,7 @@ landingContent:
         - text: How do I proactively hunt for ransomware?
           url:  human-operated-ransomware.md
         - text: Where can I get a ransomware incident response playbook? 
-          url:  https://www.microsoft.com/download/confirmation.aspx?id=105181
+          url:  //download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
         - text: What are common types of malware that are used in ransomware campaigns?
           url:  human-operated-ransomware.md
 

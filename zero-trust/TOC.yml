@@ -263,6 +263,8 @@
       items: 
       - name: Azure Virtual Desktop
         href: azure-infrastructure-avd.md
+    - name: Apply Zero Trust to Azure Virtual WAN
+      href: azure-virtual-wan.md
     - name: Apply Zero Trust to IaaS applications in AWS
       expanded: false
       items: 

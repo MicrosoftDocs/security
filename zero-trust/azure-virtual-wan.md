@@ -54,7 +54,7 @@ A Zero Trust approach for Azure Virtual WAN requires configuration of several un
 
 The following diagram shows a common reference architecture will be used to demonstrate a commonly deployed environment and how to apply the principles of Zero Trust to Azure Virtual WAN. 
 
-:::image type="content" source="media/vwan/ref-arch-vwan.png" alt-text="Diagram of the reference architecture for Azure Virtual Desktop." lightbox="media/vwan/ref-arch-vwan.png":::
+:::image type="content" source="media/vwan/ref-arch-vwan.svg" alt-text="Diagram of the reference architecture for Azure Virtual Desktop." lightbox="media/vwan/ref-arch-vwan.svg":::
 
 Azure Virtual WAN is deployable in [two types](/azure/virtual-wan/virtual-wan-about#basicstandard), Basic and Standard. Standard is required to leverage Zero Trust architecture with Virtual WAN with Azure Firewall or an NGFW.
 
@@ -101,7 +101,7 @@ Virtual WAN is a collection of hubs and services made available inside the hub. 
 
 The following diagram shows the logical architecture of Azure infrastructure for an Azure Virtual WAN deployment as depicted in the [Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/azure-best-practices/virtual-wan-network-topology).
 
-:::image type="content" source="media/vwan/logical-arch-vwan.png" alt-text="Diagram of the components of Azure vWAN in an Azure AD tenant." lightbox="media/vwan/logical-arch-vwan.png":::
+:::image type="content" source="media/vwan/logical-arch-vwan.svg" alt-text="Diagram of the components of Azure vWAN in an Azure AD tenant." lightbox="media/vwan/logical-arch-vwan.svg":::
 
 The majority of resources are contained inside the connectivity subscription. Deploy all Virtual WAN resources into a single resource group in the connectivity subscription, including when you're deploying across multiple regions. Azure VNet spokes instead, will be in the landing zone subscriptions. For Azure Firewall Policy, if policy [inheritance and hierarchy](/azure/firewall-manager/rule-hierarchy) is used, the parent policy and the child policy must be located in the same region. You can still apply a policy that was created in one region on a secured hub from another region.
 
@@ -162,14 +162,14 @@ Once upgraded all Azure Virtual WAN hubs to secure hubs, [Routing Intent and Pol
  
 :::image type="content" source="media/vwan/example-routing-policy-configuration.png" alt-text="Example of the Azure Firewall routing policy." lightbox="media/vwan/example-routing-policy-configuration.png":::
 
-When the Private Traffic Routing Policy is enabled, VNet traffic in and out of the Virtual WAN Hub, including inter-hub traffic, will be forwarded to the next hop Azure Firewall resource or NVA resource that was specified in the policy itself. Users with enough [Role-Based Access Control (RBAC)](/azure/role-based-access-control/overview) privileges could override Virtual WAN route programming for spoke VNets and associate a custom [User Defined Route (UDR)](/azure/virtual-network/virtual-networks-udr-overview#user-defined) to bypass the hub firewall. To prevent this possibility, [RBAC permissions](https://learn.microsoft.com/en-us/azure/virtual-network/manage-route-table#permissions) to assign UDR to spoke VNet subnets should be restricted to central network administrators and not delegated to the landing zone owners of the spoke VNets. In order to associate a UDR to a VNet or subnet, a user must have the [Network Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles?toc=/azure/virtual-network/toc.json#network-contributor) role or custom role with the required action/permission named “Microsoft.Network/routeTables/join/action”. 
+When the Private Traffic Routing Policy is enabled, VNet traffic in and out of the Virtual WAN Hub, including inter-hub traffic, will be forwarded to the next hop Azure Firewall resource or NVA resource that was specified in the policy itself. Users with enough [Role-Based Access Control (RBAC)](/azure/role-based-access-control/overview) privileges could override Virtual WAN route programming for spoke VNets and associate a custom [User Defined Route (UDR)](/azure/virtual-network/virtual-networks-udr-overview#user-defined) to bypass the hub firewall. To prevent this possibility, [RBAC permissions](/azure/virtual-network/manage-route-table#permissions) to assign UDR to spoke VNet subnets should be restricted to central network administrators and not delegated to the landing zone owners of the spoke VNets. In order to associate a UDR to a VNet or subnet, a user must have the [Network Contributor](/azure/role-based-access-control/built-in-roles?toc=/azure/virtual-network/toc.json#network-contributor) role or custom role with the required action/permission named “Microsoft.Network/routeTables/join/action”. 
 
 >[!Note]
 >In this document Azure Firewall will be primarily considered for both Internet traffic and Private traffic control. For the former, a [third party supported security NVA](/azure/virtual-wan/virtual-wan-locations-partners#partners-with-integrated-virtual-hub-offerings) can be used or [third party Security as a Service (SECaaS) provider](/azure/firewall-manager/deploy-trusted-security-partner). For the latter, [third party supported security NVA](/azure/virtual-wan/virtual-wan-locations-partners#partners-with-integrated-virtual-hub-offerings) can be used as an alternative to Azure Firewall.
 >
 
 >[!Note]
->[Custom Route Tables](https://learn.microsoft.com/en-us/azure/virtual-wan/scenario-isolate-vnets-custom) in Azure Virtual WAN cannot be used in conjunction with Routing Intent and Policies and should not be considered as a security mechanism.
+>[Custom Route Tables](/azure/virtual-wan/scenario-isolate-vnets-custom) in Azure Virtual WAN cannot be used in conjunction with Routing Intent and Policies and should not be considered as a security mechanism.
 >
 
 ## Step 4. Secure spoke VNets

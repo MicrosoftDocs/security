@@ -125,7 +125,7 @@ Technical adoption for securing remote and hybrid work involves taking a graduat
 - Devices are enrolled in device management and monitored for health.
 - Access to applications and their data requires verifying identities, healthy devices, and appropriate data access.
 
-Many organizations can take a four-staged approach to these technical activities, summarized in the following chart.
+Many organizations can take a four-staged approach to these deployment objectives, summarized in the following chart.
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
@@ -189,7 +189,7 @@ In addition to these resources, the following sections highlight resources for s
 
 #### Stage 1
 
-| Task | Resources |
+| Deployment objective | Resources |
 | --- | --- |
 | Verify and secure every identity with strong authentication | [What authentication and verification methods are available in Azure AD?](/azure/active-directory/authentication/concept-authentication-methods) |
 | Integrate SaaS apps with Azure AD for single sign-on | [Add SaaS apps to Azure AD and to the scope of policies](/security/zero-trust/add-saas-apps) |
@@ -197,22 +197,22 @@ In addition to these resources, the following sections highlight resources for s
 
 #### Stage 2
 
-| Task | Resources |
+| Deployment objective | Resources |
 | --- | --- |
 | Register devices with Azure AD | [Azure AD registered devices](/azure/active-directory/devices/concept-azure-ad-register) <br><br> [Plan your Azure AD join implementation](/azure/active-directory/devices/azureadjoin-plan) |
 | Implement Zero Trust identity and device access policies for the **Starting point** protection level  | [Protection levels for Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations#three-levels-of-protection) |
-| Use App Proxy with on-prem apps for single sign-on | [Azure AD Application Proxy documentation](/en-us/azure/active-directory/app-proxy/) |
+| Use Azure AD Application Proxy with on-premises apps for single sign-on | [How to configure single sign-on to an Application Proxy application](/azure/active-directory/app-proxy/application-proxy-config-sso-how-to) |
 
 #### Stage 3
 
-| Task | Resources |
+| Deployment objective | Resources |
 | --- | --- |
 | Enroll devices into management and apply recommended security protections | [Manage devices with Intune overview](/microsoft-365/solutions/manage-devices-with-intune-overview) <br><br> [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations) |
 | Allow only compliant and trusted devices to access data | [Set up compliance policies for devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-compliance-policies) <br><br> [Require healthy and compliant devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-require-compliance) |
 
 #### Stage 4
 
-| Task | Resources |
+| Deployment objective | Resources |
 | --- | --- |
 | Monitor device configuration drift | [Deploy device profiles in Microsoft Intune](/microsoft-365/solutions/manage-devices-with-intune-configuration-profiles) <br><br> [Monitor device risk and compliance to security baselines](/microsoft-365/solutions/manage-devices-with-intune-monitor-risk) |
 | Implement passwordless authentication | [Increase sign-in security with passwordless authentication](/microsoft-365/solutions/ransomware-protection-microsoft-365-identities#increase-sign-in-security) |

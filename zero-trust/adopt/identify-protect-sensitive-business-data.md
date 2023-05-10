@@ -104,7 +104,7 @@ Protecting your sensitive business data also involves a few related activities, 
 - Managing external access to Teams and projects where sensitive data is shared.
 - Setting up and using dedicated and isolated teams in Microsoft Teams for projects that include highly sensitive business data, which should be rare. Most organizations do not require this level of data security and isolation.
 
-Many organizations can take a four-staged approach to these technical activities, summarized in the following table.
+Many organizations can take a four-staged approach to these deployment objectives, summarized in the following table.
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
@@ -181,7 +181,7 @@ Before you embark on the technical work, Microsoft recommends getting to know th
 
 #### Stage 1
 
-The Stage 1 objectives include the process of taking inventory of your data. This includes identifying unsanctioned SaaS apps your organization uses to store, process, and share data. You can either bring these unsanctioned apps into your app management process and apply protections, or you can prevent your business data from being used with these apps.
+The Stage 1 deployment objectives include the process of taking inventory of your data. This includes identifying unsanctioned SaaS apps your organization uses to store, process, and share data. You can either bring these unsanctioned apps into your app management process and apply protections, or you can prevent your business data from being used with these apps.
 
 ##### Discover and identify sensitive business data
 
@@ -222,7 +222,7 @@ The tool for discovering SaaS apps that your organization uses is Microsoft Defe
 
 ##### Encrypt network communication
 
-This task is more of a check to be sure your network traffic is encrypted. Check in with your networking team to make sure these recommendations are satisfied.
+This objective is more of a check to be sure your network traffic is encrypted. Check in with your networking team to make sure these recommendations are satisfied.
 
 | Resource | Description |
 | --- | --- |

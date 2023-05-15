@@ -9,8 +9,6 @@ ms.topic: article
 ms.service: microsoft-365-security
 ms.localization_priority: Normal
 ms.collection: 
-  - msftsolution-sentinel-xdr
-  - msftsolution-scenario
   - zerotrust-solution
   - msftsolution-secops
 ---
@@ -54,7 +52,7 @@ With Microsoft Sentinel, you can connect to many security sources using built-in
 
 ## Leveraging SIEM and XDR capabilities
 
-In this section, we'll look into a typical attack scenario involving a phishing attack then proceed with how to respond to the incident with the Microsoft Sentinel and Microsoft 365 Defender portals.
+In this section, we'll look into a typical attack scenario involving a phishing attack then proceed with how to respond to the incident with Microsoft Sentinel and Microsoft 365 Defender.
 
 ### Common attack order
 
@@ -77,9 +75,18 @@ Summary of the attack order:
 
 Now that we've seen how a common attack takes place, let's look into leveraging the integration of Microsoft Sentinel and Microsoft 365 Defender for incident response.
 
-This illustration guides you through the process of responding to an incident, starting with discovery and triage in Microsoft Sentinel.
+Here is the process of responding to an incident with Microsoft 365 Defender and Microsoft Sentinel:
+
+1. Triage the incident in the Microsoft Sentinel portal.
+2. Move over to the Microsoft 365 Defender portal to start your investigation.
+3. Where needed, continue the investigation in the Microsoft Sentinel portal.
+4. Resolve the incident in the Microsoft Sentinel portal.
+
+The following diagram shows the process, starting with discovery and triage in Microsoft Sentinel.
 
 :::image type="content" source="./media/investigation-flow.svg" alt-text="Image of incident investigation using Sentinel and Microsoft 365 Defender" lightbox="./media/investigation-flow.svg":::
+
+For more information, see [Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender]( respond-incident.md).
 
 ## Key capabilities
 
@@ -95,6 +102,9 @@ Capability or feature | Description | Product |
 |[Endpoint detection and response (EDR) Block](/microsoft-365/security/defender-endpoint/edr-in-block-mode) | Provides added protection from malicious artifacts when Microsoft Defender Antivirus (MDAV) isn't the primary antivirus product and is running in passive mode. EDR in block mode works behind the scenes to remediate malicious artifacts that were detected by EDR capabilities. | Microsoft 365 Defender |
 | [Device response capabilities](/microsoft-365/security/defender-endpoint/respond-machine-alerts) | Quickly respond to detected attacks by isolating devices or collecting an investigation package | Microsoft 365 Defender |
 | [Live response](/microsoft-365/security/defender-endpoint/live-response) | Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. | Microsoft 365 Defender |
+| [Secure cloud applications](/azure/defender-for-cloud/defender-for-cloud-introduction#secure-cloud-applications) | A development security operations (DevSecOps) solution that unifies security management at the code level across multicloud and multiple-pipeline environments. | Microsoft Defender for Cloud |
+| [Improve your security posture](/azure/defender-for-cloud/defender-for-cloud-introduction#improve-your-security-posture) | A cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches. | Microsoft Defender for Cloud |
+| [Protect cloud workloads](/azure/defender-for-cloud/defender-for-cloud-introduction#protect-cloud-workloads) | A cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads. | Microsoft Defender for Cloud |
 | [User and Entity Behavioral Analytics (UEBA)](/azure/sentinel/enable-entity-behavior-analytics) |Analyzes behavior of organization entities such as users, hosts, IP addresses, and applications) | Microsoft Sentinel |
 | [Fusion](/azure/sentinel/configure-fusion-rules) | A correlation engine based on scalable machine learning algorithms. Automatically detects multistage attacks&nbsp;also known as advanced persistent threats (APT)&nbsp;by identifying combinations of anomalous behaviors and suspicious activities that are observed at various stages of the kill chain. | Microsoft Sentinel |
 |[Threat Intelligence](/azure/sentinel/threat-intelligence-integration) | Use Microsoft third-party providers to enrich data to provide extra context around activities, alerts, and logs in your environment. | Microsoft Sentinel |

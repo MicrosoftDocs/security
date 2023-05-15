@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to Azure Virtual WAN
 description: Learn how to secure an Azure Virtual WAN deployment with Zero Trust principles. 
-ms.date: 02/21/2023
+ms.date: 05/15/2023
 ms.service: security
 author: sikovatc
 ms.author: sikovatc
@@ -103,7 +103,7 @@ Azure Virtual WAN is a collection of hubs and services made available inside a h
 
 The following diagram shows the logical architecture of Azure infrastructure for an Azure Virtual WAN deployment as depicted in the [Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/azure-best-practices/virtual-wan-network-topology).
 
-:::image type="content" source="media/vwan/logical-arch-vwan.png" alt-text="Diagram of the components of Azure Virtual WAN topology and Azure subscriptions." lightbox="media/vwan/logical-arch-vwan.png":::
+:::image type="content" source="media/vwan/logical-arch-vwan.svg" alt-text="Diagram of the components of Azure Virtual WAN topology and Azure subscriptions." lightbox="media/vwan/logical-arch-vwan.svg":::
 
 The majority of resources are contained inside the connectivity subscription. You deploy all Virtual WAN resources into a single resource group in the connectivity subscription, including when you're deploying across multiple regions. Azure VNet spokes are in the landing zone subscriptions. If you use [inheritance and hierarchy](/azure/firewall-manager/rule-hierarchy)  Azure Firewall policy, the parent policy and the child policy must be located in the same region. You can still apply a policy that you created in one region on a secured hub from another region.
 

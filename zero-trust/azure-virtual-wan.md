@@ -42,7 +42,7 @@ Azure Virtual WAN is a networking service that brings many networking, security,
 - Security "bump-in-the-wire" integration through Azure Firewall or supported Network Virtual Appliances (NVAs) in the hub
 - Encrypted ExpressRoute
 
-A Zero Trust approach for Azure Virtual WAN requires configuration of several underlying services and components from the Zero Trust principle table previously listed. Here is a list of steps and actions:
+A Zero Trust approach for Azure Virtual WAN requires configuration of several underlying services and components from the Zero Trust principle table previously listed. Here's a list of steps and actions:
 
 - Deploy Azure Firewall or [supported Next Generation Firewall (NGFW)](/azure/virtual-wan/virtual-wan-locations-partners#partners-with-integrated-virtual-hub-offerings) NVAs inside each Virtual WAN hub.
 - Configure inter-VNet and on-premises branch routing to create a Zero Trust environment by sending all traffic to security appliances in the hubs for inspection. Configure the routing to provide filtering and protection for known threats.
@@ -89,7 +89,7 @@ The best way protect your network is configure your on-premises devices with app
 
   Under certain circumstances you could get some long IPv4 prefixes from Azure (network prefix length 30 to 32), which are typically included in other less specific prefixes and therefore not required. Dropping these prefixes prevents your on-premises routing tables from growing unnecessarily large.
 
-- Block inbound prefixes that aren't in Azure unless you are using Azure as a transit network.
+- Block inbound prefixes that aren't in Azure unless you're using Azure as a transit network.
 
   If you aren't using Azure to transport traffic between your on-premises locations (for example, with technologies such as ExpressRoute Global Reach), an on-premises prefix being advertised from Azure would indicate a routing loop. Only taking Azure prefixes in your on-premises routers would protect you from these types of routing loops.
 
@@ -131,7 +131,7 @@ Azure Firewall policies can be arranged in a [parent-child hierarchy](/azure/fir
 
 For Zero Trust, a [Premium Azure Firewall policy](/azure/firewall/premium-features) is required and should include the following settings:
 
-- [DNS Proxy](/azure/firewall-manager/dns-settings) – You should configure Azure Firewall as a custom DNS server for spoke VNets that protect the real DNS that resides in a shared service spoke or on-premises. Azure firewalls act as a DNS Proxy, listen on UDP port 53, and forward DNS requests to the DNS servers specified in the policy settings. For every spoke, you must configure a DNS server at the virtual network level pointing to the internal IP address of the Azure Firewall in the Virtual WAN Hub. You should not grant network access from spokes and branches to the custom DNS.
+- [DNS Proxy](/azure/firewall-manager/dns-settings) – You should configure Azure Firewall as a custom DNS server for spoke VNets that protect the real DNS that resides in a shared service spoke or on-premises. Azure firewalls act as a DNS Proxy, listen on UDP port 53, and forward DNS requests to the DNS servers specified in the policy settings. For every spoke, you must configure a DNS server at the virtual network level pointing to the internal IP address of the Azure Firewall in the Virtual WAN Hub. You shouldn't grant network access from spokes and branches to the custom DNS.
 
 - [TLS inspection](/azure/firewall/premium-features#tls-inspection) should be enabled for these scenarios:
 
@@ -159,7 +159,7 @@ For more information, see [Install Azure Firewall in a Virtual WAN hub](/azure/v
 
 ## Step 3. Secure your traffic
 
-Once you've upgraded all your Azure Virtual WAN hubs to secure hubs, you must configure [Routing Intent and Policies](/azure/virtual-wan/how-to-routing-policies) for Zero Trust principles. This configuration enables the Azure Firewall in each hub to attract and inspect traffic between spokes and branches in the same hub and across remote hubs. You should configure your policies to send both "Internet traffic" and "Private traffic" through the Azure Firewall or your third party NVA). The "Inter-hub" option must be also enabled. Here is an example.
+Once you've upgraded all your Azure Virtual WAN hubs to secure hubs, you must configure [Routing Intent and Policies](/azure/virtual-wan/how-to-routing-policies) for Zero Trust principles. This configuration enables the Azure Firewall in each hub to attract and inspect traffic between spokes and branches in the same hub and across remote hubs. You should configure your policies to send both "Internet traffic" and "Private traffic" through the Azure Firewall or your third party NVA). The "Inter-hub" option must be also enabled. Here's an example.
  
 :::image type="content" source="media/vwan/example-routing-policy-configuration.png" alt-text="Example of the Azure Firewall routing policy." lightbox="media/vwan/example-routing-policy-configuration.png":::
 
@@ -220,7 +220,7 @@ Azure Virtual WAN is a networking service that brings many networking, security,
 >Azure AD authentication is only available for gateways that use the OpenVPN protocol, which is supported only for OpenVPN protocol connections and requires the Azure VPN Client.
 >
 
-Azure Virtual WAN and Azure Firewall do not provide traffic routing and filtering based on user account or group names, but it's possible to [assign different groups of users different pools of IP addresses](/azure/virtual-wan/user-groups-about). You can then define rules on the integrated Azure Firewall to restrict users or groups based on their assigned P2S IP address pool.
+Azure Virtual WAN and Azure Firewall don't provide traffic routing and filtering based on user account or group names, but it's possible to [assign different groups of users different pools of IP addresses](/azure/virtual-wan/user-groups-about). You can then define rules on the integrated Azure Firewall to restrict users or groups based on their assigned P2S IP address pool.
 
 If you divide your P2S users into different groups based on network access requirements, we recommend that you differentiate them at the network level and ensure that they can access only a subset of the internal network. You can create multiple IP address pools for Azure Virtual WAN. For more information, see [Configure user groups and IP address pools for P2S User VPNs](/azure/virtual-wan/user-groups-create).
 

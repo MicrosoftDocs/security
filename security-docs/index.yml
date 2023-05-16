@@ -135,8 +135,8 @@ additionalContent:
               text: Best practices for securing your DevOps environment
 
 #  Section 1
-    - title: Modernize security operations
-      summary: Modernize security operations
+    - title: Defend against threats
+      # summary: Modernize security operations
       items:
         # Card
         - title: Fundamentals
@@ -170,8 +170,8 @@ additionalContent:
               url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
 
 #  Section 2
-    - title: Compliance and privacy
-      summary: Compliance and privacy
+    - title: Secure access and identities
+      # summary: Secure access and identitites
       items:
         # Card
         - title: Fundamentals
@@ -205,8 +205,8 @@ additionalContent:
               url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
 
 #  Section 3
-    - title: Secure access and identities
-      summary: Secure access and identities
+    - title: Protect and govern data
+      # summary: Compliance and privacy
       items:
         # Card
         - title: Fundamentals

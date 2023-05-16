@@ -258,11 +258,8 @@
         href: azure-infrastructure-iaas.md
       - name: Azure hub virtual networks
         href: azure-infrastructure-networking.md
-    - name: Apply Zero Trust to Azure PaaS
-      expanded: false
-      items: 
-      - name: Azure Virtual Desktop
-        href: azure-infrastructure-avd.md
+    - name: Apply Zero Trust to Azure Virtual Desktop
+      href: azure-infrastructure-avd.md
     - name: Apply Zero Trust to Azure Virtual WAN
       href: azure-virtual-wan.md
     - name: Apply Zero Trust to IaaS applications in AWS

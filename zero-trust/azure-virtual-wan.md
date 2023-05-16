@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to Azure Virtual WAN
 description: Learn how to secure an Azure Virtual WAN deployment with Zero Trust principles. 
-ms.date: 05/15/2023
+ms.date: 05/16/2023
 ms.service: security
 author: sikovatc
 ms.author: sikovatc
@@ -66,7 +66,7 @@ The Azure Virtual WAN with secured hubs reference architecture includes:
 - At least one Azure Firewall [Premium policy](/azure/firewall-manager/policy-overview#basic-standard-and-premium-policies).
 - Point-to-site (P2S) and site-to-site (S2S) VPN and ExpressRoute gateways.
 - P2S, S2S, and ExpressRoute-connected branches.
-- A shared services VNet containing core infrastructure resources that can't be deployed into a Virtual WAN hub, such as custom DNS VMs or Azure DNS Private Resolver, Active Directory Domain Services [AD DS] domain controllers, Azure Bastion, and other shared resource.
+- A shared services VNet containing core infrastructure resources that can't be deployed into a Virtual WAN hub, such as custom DNS VMs or Azure DNS Private Resolver, Active Directory Domain Services [AD DS] domain controllers, Azure Bastion, and other shared resources.
 - Workload VNets with Azure Application Gateway, Azure web application firewall (WAF), and Private Endpoints if needed.
 
 Azure Virtual WAN supports the integration of a limited set of [third party firewalls](/azure/virtual-wan/about-nva-hub) inside its hubs as an alternative to native Azure Firewall. This article only describes Azure Firewall. What is included in the **VNet-Shared Services** spoke in the reference architecture is just an example of what you could deploy. Microsoft manages Azure Virtual WAN hubs and you can't install anything else within them except what Azure Firewall and supported NVAs explicitly allow.
@@ -163,7 +163,7 @@ Once you've upgraded all your Azure Virtual WAN hubs to secure hubs, you must co
  
 :::image type="content" source="media/vwan/example-routing-policy-configuration.png" alt-text="Example of the Azure Firewall routing policy." lightbox="media/vwan/example-routing-policy-configuration.png":::
 
-When the "Private Traffic" routing policy is enabled, VNet traffic in and out of the Virtual WAN Hub, including inter-hub traffic, is forwarded to the next-hop Azure Firewall or NVA that was specified in the policy. Users with [Role-Based Access Control (RBAC)](/azure/role-based-access-control/overview) privileges could override Virtual WAN route programming for spoke VNets and associate a custom [User Defined Route (UDR)](/azure/virtual-network/virtual-networks-udr-overview#user-defined) to bypass the hub firewall. To prevent this vulnerability, [RBAC permissions](/azure/virtual-network/manage-route-table#permissions) to assign UDRs to spoke VNet subnets should be restricted to central network administrators and not delegated to the landing zone owners of the spoke VNets. To associate a UDR to a VNet or subnet, a user must have the **Network Contributor** role or a custom role with the "Microsoft.Network/routeTables/join/action" action or permission.
+When the "Private Traffic" routing policy is enabled, VNet traffic in and out of the Virtual WAN Hub, including inter-hub traffic, is forwarded to the next-hop Azure Firewall or NVA that was specified in the policy. Users with [Role-Based Access Control (RBAC)](/azure/role-based-access-control/overview) privileges could override Virtual WAN route programming for spoke VNets and associate a custom [User Defined Route (UDR)](/azure/virtual-network/virtual-networks-udr-overview#user-defined) to bypass the hub firewall. To prevent this vulnerability, [RBAC permissions](/azure/virtual-network/manage-route-table#permissions) to assign UDRs to spoke VNet subnets should be restricted to central network administrators and not delegated to the landing zone owners of the spoke VNets. To associate a UDR with a VNet or subnet, a user must have the **Network Contributor** role or a custom role with the "Microsoft.Network/routeTables/join/action" action or permission.
 
 >[!Note]
 >In this article, Azure Firewall is primarily considered for both Internet traffic and private traffic control. For Internet traffic, a third party, supported security NVA can be used or a [third party Security as a Service (SECaaS) provider](/azure/firewall-manager/deploy-trusted-security-partner). For private traffic, third party supported security NVAs can be used as an alternative to Azure Firewall.
@@ -337,8 +337,12 @@ Refer to these links to learn about the various services and technologies mentio
 - [Building the first layer of defense with Azure security services](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)
 - [Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra)
 
+<!---
+
 ## Technical illustrations
 
 You can download the illustrations used in this series of articles. Use the Visio file to modify these illustrations for your own use.
 
 [PDF](https://microsoft.sharepoint-df.com/:b:/t/ZeroTrustAdvisoryV-Team/EQevMdqqhf5Ln-mdhUApNH4Bpjyew9gFlj7fO5zHQbKsAw?e=dBeuTo) | [Visio](https://microsoft.sharepoint-df.com/:u:/t/ZeroTrustAdvisoryV-Team/Ef1Opv3Rx3FGjCuXqFcafm4BPKGuKDidT17TGlin4APguQ?e=G73ZIk)
+
+--->

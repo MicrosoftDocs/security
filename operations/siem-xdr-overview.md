@@ -56,9 +56,11 @@ In this section, we'll look into a typical attack scenario involving a phishing 
 
 ### Common attack order
 
-The following illustration is a common attack order of a phishing scenario. The illustration also demonstrates the corresponding Microsoft security products in place to defend assets from the attack.
+The following diagram shows a common attack order of a phishing scenario. 
 
 :::image type="content" source="./media/common-attack-defense.svg" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.svg":::
+
+The diagram also shows the Microsoft security products in place to detect each attack step and how attack signals and SIEM data flow to Microsoft 365 Defender and Microsoft Sentinel.
 
 Here is a summary of the attack.
 

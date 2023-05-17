@@ -56,20 +56,22 @@ In this section, we'll look into a typical attack scenario involving a phishing 
 
 ### Common attack order
 
-The following illustration is a common attack order of a phishing scenario. The illustration also demonstrates the corresponding Microsoft security products in place to defend assets from the attack.
+The following diagram shows a common attack order of a phishing scenario. 
 
 :::image type="content" source="./media/common-attack-defense.svg" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.svg":::
 
-Summary of the attack order:
+The diagram also shows the Microsoft security products in place to detect each attack step and how attack signals and SIEM data flow to Microsoft 365 Defender and Microsoft Sentinel.
 
-| Attack step | Summary | Defense in place |
+Here is a summary of the attack.
+
+| Attack step | Detection service and signal source | Defenses in place |
 | --- | --- | --- |
-|1 | A phishing mail is sent. | Microsoft Defender for Office 365 protects mailboxes with advanced anti-phishing features that can protect against malicious impersonation-based phishing attacks. |
-|2 | The attachment is opened. | The Microsoft Defender for Office 365 Safe Attachments feature opens attachments in an isolated environment for additional scanning of threats (detonation). |
-|3 | The malware is installed. | Microsoft Defender for Endpoint protects endpoints from malware with its next generation protection features, such as cloud-delivered protection and behavior-based/heuristic/real-time antivirus protection. |
-|4 | Credential theft. | Microsoft Defender for Identity protects identities by: monitoring user behavior and activities, detecting lateral movement and alerting on anomalous activity. |
-|5 | Adversary moves laterally. | Microsoft Defender for Cloud Apps can detect anomalous activity of users accessing cloud apps. |
-|6 | Sensitive data is exfiltrated. | Microsoft Defender for Cloud can detect and respond to mass download events of files from SharePoint. |
+| 1. Attacker sends phishing email  | Microsoft Defender for Office 365 | Protects mailboxes with advanced anti-phishing features that can protect against malicious impersonation-based phishing attacks. |
+| 2. User opens attachment | Microsoft Defender for Office 365 | The Microsoft Defender for Office 365 Safe Attachments feature opens attachments in an isolated environment for additional scanning of threats (detonation). |
+| 3. Attachment installs malware | Microsoft Defender for Endpoint | Protects endpoints from malware with its next generation protection features, such as cloud-delivered protection and behavior-based/heuristic/real-time antivirus protection. |
+| 4. Malware steals user credentials | Azure AD and Azure AD Identity Protection | Protects identities by monitoring user behavior and activities, detecting lateral movement, and alerting on anomalous activity. |
+| 5. Attacker moves laterally across Microsoft 365 apps and data | Microsoft Defender for Cloud Apps | Can detect anomalous activity of users accessing cloud apps. |
+| 6. Attacker downloads sensitive files from a SharePoint folder | Microsoft Defender for Cloud Apps | Can detect and respond to mass download events of files from SharePoint. |
 
 ### Incident response using Microsoft Sentinel and Microsoft 365 Defender
 

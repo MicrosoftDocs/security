@@ -176,28 +176,42 @@ additionalContent:
         # Card
         - title: Fundamentals
           links:
-            - text: Shared responsibility
-              url: https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
+            - text: Identity protection
+              url: https://learn.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection
+            - text: Secure your organization's identities
+              url: https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/concept-secure-remote-workers
+            - text: Identity governance
+              url: https://learn.microsoft.com/en-us/azure/active-directory/governance/identity-governance-overview
         # Card
         - title: Strategy and planning
           links:
-            - text: Define a security strategy
-              url: https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
+            - text: Azure Active Directory and hybrid identity
+              url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-active-directory-hybrid-identity
+            - text: Develop a privileged access strategy
+              url: https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-strategy
+            - text: Azure identity and access for landing zones
+              url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones
         # Card
         - title: Cloud architecture
           links:
-            - text: Architecture styles
-              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+            - text: Identity architecture design
+              url: https://learn.microsoft.com/en-us/azure/architecture/identity/identity-start-here
+            - text: Azure Active Directory architecture
+              url: https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-architecture
         # Card
         - title: Implementation
           links:
-            - text: Implementation
-              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+            - text: Deploy identity protection
+              url: https://learn.microsoft.com/en-us/azure/active-directory/identity-protection/how-to-deploy-identity-protection
+            - text: Guidance for Azure AD premium 2 customers
+              url: https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/concept-secure-remote-workers#guidance-for-azure-ad-premium-plan-2-customers
+            - text: Privilege access deployment
+              url: https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-deployment
         # Card
         - title: Operation
           links:
-            - text: Operation
-              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+            - text: How to investigate risk
+              url: https://learn.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk
         # Card
         - title: Continued learning
           links:

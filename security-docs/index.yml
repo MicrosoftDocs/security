@@ -141,13 +141,21 @@ additionalContent:
         # Card
         - title: Fundamentals
           links:
-            - text: Shared responsibility
-              url: https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
+            - text: Microsoft Defender for Cloud
+              url: https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction
+            - text: Zero Trust and Microsoft 365
+              url: https://learn.microsoft.com/en-us/microsoft-365/security/microsoft-365-zero-trust?view=o365-worldwide
+            - text: Azure threat protection
+              url: https://learn.microsoft.com/en-us/azure/security/fundamentals/threat-detection
         # Card
         - title: Strategy and planning
           links:
+            - text: Modernize in the cloud
+              url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/modernize/
             - text: Define a security strategy
-              url: https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
+              url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/define-security-strategy
+            - text: Security operations functions
+              url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-security-operations-center
         # Card
         - title: Cloud architecture
           links:
@@ -156,18 +164,26 @@ additionalContent:
         # Card
         - title: Implementation
           links:
-            - text: Implementation
-              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+            - text: Implement XDR and SIEM tools
+              url: https://learn.microsoft.com/en-us/security/operations/siem-xdr-overview
+            - text: Turn on Microsoft 365 Defender
+              url: https://learn.microsoft.com/en-us/microsoft-365/security/defender/m365d-enable
+            - text: Design your Microsoft Sentinel workspace
+              url: https://learn.microsoft.com/en-us/azure/sentinel/design-your-workspace-architecture
         # Card
         - title: Operation
           links:
-            - text: Operation
+            - text: Integration Microsoft 365 Defender into operations
               url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+            - text: Protect against ransomware
+              url: https://learn.microsoft.com/en-us/security/ransomware/protect-against-ransomware
+            - text: Incident response
+              url: https://learn.microsoft.com/en-us/security/operations/incident-response-overview
         # Card
         - title: Continued learning
           links:
-            - text: Secure your cloud operations
-              url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
+            - text: Microsoft Defender training
+              url: https://learn.microsoft.com/en-us/training/defender/
 
 #  Section 2
     - title: Secure access and identities

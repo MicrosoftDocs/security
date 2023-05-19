@@ -220,7 +220,7 @@ Concentrate on [Azure Virtual Machine Maintenance and Updates](/azure/virtual-ma
 - [Azure Automation Update Management](/azure/architecture/hybrid/azure-update-mgmt) can assist in the management of your update process. With this utility, you can check the update status of your systems, manage, schedule, and reboot servers.
 - The Azure [Virtual Machine Agent](/azure/virtual-machines/extensions/agent-windows) is used to manage your virtual machines and gives you the ability to use extensions for management.
 
-[Supported OS types for Update Management with Azure Automation](/azure/automation/automation-update-management#supported-client-types) include the following:
+[Operating systems supported by Update Management](/azure/automation/update-management/operating-system-requirements) include the following:
 
 - Each Windows virtual machine - Update Management does a scan twice a day for each machine.
 - Each Linux virtual machine - Update Management does a scan every hour.

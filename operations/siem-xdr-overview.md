@@ -152,5 +152,5 @@ Also see these additional articles for applying Zero Trust principles to Azure:
   - [Hub virtual networks](/security/zero-trust//azure-infrastructure-networking)
 
 - [Azure Virtual Desktop](/security/zero-trust/azure-infrastructure-avd)
-- [Azure Virtual WAN](/security/zero-trust//azure-virtual-wan)
-- [IaaS applications in Amazon Web Services](/security/zero-trust/zero-trust/secure-iaas-apps)
+- [Azure Virtual WAN](/security/zero-trust/azure-virtual-wan)
+- [IaaS applications in Amazon Web Services](/security/zero-trust/secure-iaas-apps)

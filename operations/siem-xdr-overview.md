@@ -145,12 +145,12 @@ Use these steps to implement Microsoft Sentinel and XDR for a Zero Trust approac
 
 Also see these additional articles for applying Zero Trust principles to Azure:
 
-- [Azure IaaS overview](azure-infrastructure-overview.md)
-  - [Azure storage](azure-infrastructure-storage.md)
-  - [Virtual machines](azure-infrastructure-virtual-machines.md)
-  - [Spoke virtual networks](azure-infrastructure-iaas.md)
-  - [Hub virtual networks](azure-infrastructure-networking.md)
+- [Azure IaaS overview](/security/zero-trust/azure-infrastructure-overview)
+  - [Azure storage](/security/zero-trust/azure-infrastructure-storage)
+  - [Virtual machines](/security/zero-trust/azure-infrastructure-virtual-machines)
+  - [Spoke virtual networks](/security/zero-trust//azure-infrastructure-iaas)
+  - [Hub virtual networks](/security/zero-trust//azure-infrastructure-networking)
 
-- [Azure Virtual Desktop](azure-infrastructure-avd.md)
-- [Azure Virtual WAN](azure-virtual-wan.md)
-- [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
+- [Azure Virtual Desktop](/security/zero-trust/azure-infrastructure-avd)
+- [Azure Virtual WAN](/security/zero-trust//azure-virtual-wan)
+- [IaaS applications in Amazon Web Services](/security/zero-trust/zero-trust/secure-iaas-apps)

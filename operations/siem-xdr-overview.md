@@ -142,3 +142,15 @@ Use these steps to implement Microsoft Sentinel and XDR for a Zero Trust approac
 2. [Architect your Microsoft Sentinel workspace](siem-workspace.md)
 3. [Ingest data sources](ingest-data-sources.md)
 4. [Respond to an incident](respond-incident.md)
+
+Also see these additional articles for applying Zero Trust principles to Azure:
+
+- [Azure IaaS overview](/security/zero-trust/azure-infrastructure-overview)
+  - [Azure storage](/security/zero-trust/azure-infrastructure-storage)
+  - [Virtual machines](/security/zero-trust/azure-infrastructure-virtual-machines)
+  - [Spoke virtual networks](/security/zero-trust//azure-infrastructure-iaas)
+  - [Hub virtual networks](/security/zero-trust//azure-infrastructure-networking)
+
+- [Azure Virtual Desktop](/security/zero-trust/azure-infrastructure-avd)
+- [Azure Virtual WAN](/security/zero-trust/azure-virtual-wan)
+- [IaaS applications in Amazon Web Services](/security/zero-trust/secure-iaas-apps)

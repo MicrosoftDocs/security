@@ -289,20 +289,16 @@ For more training on security in Azure, see these resources in the Microsoft cat
 
 ## Next Steps
 
-See these additional articles for applying Zero Trust principles to Azure IaaS:
+See these additional articles for applying Zero Trust principles to Azure:
 
-- [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md)
-
-  - [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md)
-
-  - [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md)
-
-  - [Apply Zero Trust principles to a spoke virtual network in Azure](azure-infrastructure-iaas.md)
-
-  - [Apply Zero Trust principles to a hub virtual network in Azure](azure-infrastructure-networking.md)
-
-- [Apply Zero Trust principles to Azure Virtual Desktop](azure-infrastructure-avd.md)
-- [Secure AWS applications with Azure](secure-iaas-apps.md)
+- [Azure IaaS overview](azure-infrastructure-overview.md)
+  - [Azure storage](azure-infrastructure-storage.md)
+  - [Virtual machines](azure-infrastructure-virtual-machines.md)
+  - [Spoke virtual networks](azure-infrastructure-iaas.md)
+  - [Hub virtual networks](azure-infrastructure-networking.md)
+- [Azure Virtual Desktop](azure-infrastructure-avd.md)
+- [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
+- [Microsoft Sentinel and Microsoft 365 Defender](../operations/siem-xdr-overview.md)
 
 ## References
 
@@ -343,6 +339,6 @@ Refer to these links to learn about the various services and technologies mentio
 
 You can download the illustrations used in this series of articles. Use the Visio file to modify these illustrations for your own use.
 
-[PDF](https://microsoft.sharepoint-df.com/:b:/t/ZeroTrustAdvisoryV-Team/EQevMdqqhf5Ln-mdhUApNH4Bpjyew9gFlj7fO5zHQbKsAw?e=dBeuTo) | [Visio](https://microsoft.sharepoint-df.com/:u:/t/ZeroTrustAdvisoryV-Team/Ef1Opv3Rx3FGjCuXqFcafm4BPKGuKDidT17TGlin4APguQ?e=G73ZIk)
+[PDF](https://vwan-download) | [Visio](vwan-download)
 
 --->

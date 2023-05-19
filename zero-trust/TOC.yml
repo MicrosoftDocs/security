@@ -242,7 +242,7 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-- name: Zero Trust deployment plans with Microsoft Azure and infrastructure
+- name: Zero Trust deployment plans with Microsoft Azure
   expanded: false
   items: 
     - name: Apply Zero Trust to Azure IaaS
@@ -262,11 +262,8 @@
       href: azure-infrastructure-avd.md
     - name: Apply Zero Trust to Azure Virtual WAN
       href: azure-virtual-wan.md
-    - name: Apply Zero Trust to IaaS applications in AWS
-      expanded: false
-      items: 
-      - name: Secure AWS applications with Azure 
-        href: secure-iaas-apps.md
+    - name: Apply Zero Trust to IaaS applications in AWS 
+      href: secure-iaas-apps.md
     - name: Use SIEM and XDR to respond to incidents
       expanded: false
       items:

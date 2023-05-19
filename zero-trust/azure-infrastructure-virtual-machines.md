@@ -281,9 +281,16 @@ For more training on virtual machines in Azure, see these resources in the Micro
 
 ## Next Steps
 
-- [Apply Zero Trust principles to storage in Azure](azure-infrastructure-storage.md)
-- [Apply Zero Trust principles to spoke virtual networks in Azure](azure-infrastructure-iaas.md)
-- [Apply Zero Trust principles to hub virtual networks in Azure](azure-infrastructure-networking.md)
+See these additional articles for applying Zero Trust principles to Azure:
+
+- [Azure IaaS overview](azure-infrastructure-overview.md)
+  - [Azure storage](azure-infrastructure-storage.md)
+  - [Spoke virtual networks](azure-infrastructure-iaas.md)
+  - [Hub virtual networks](azure-infrastructure-networking.md)
+- [Azure Virtual Desktop](azure-infrastructure-avd.md)
+- [Azure Virtual WAN](azure-virtual-wan.md)
+- [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
+- [Microsoft Sentinel and Microsoft 365 Defender](../operations/siem-xdr-overview.md)
 
 ## Technical illustrations
 
@@ -292,7 +299,6 @@ This poster provides a single-page, at-a-glance view of the components of Azure 
 | Item | Description |
 |:-----|:-----|
 |[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
-
 
 This poster provides the reference and logical architectures and the detailed configurations of the separate components of Zero Trust for Azure IaaS. Use the pages of this poster for separate IT departments or specialties or, with the Microsoft Visio version of the file, customize the diagrams for your infrastructure.
 

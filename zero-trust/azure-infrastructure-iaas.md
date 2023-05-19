@@ -14,20 +14,6 @@ ms.collection:
 
 # Apply Zero Trust principles to a spoke virtual network in Azure
 
-<!---
-
-| Zero Trust principle | Definition | Met by |
-| --- | --- | --- |
-| Verify explicitly | Always authenticate and authorize based on all available data points. | MET |
-| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | MET |
-| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | MET |
-
-| Step | Task | Zero Trust principle(s) applied |
-| --- | --- | --- |
-| 1 | TASK | Verify explicitly <br> Use least privileged access <br> Assume breach |
-
---->
-
 This article helps you apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to a spoke virtual network (VNet) for IaaS workloads in Azure in the following ways:
 
 | Zero Trust principle | Definition | Met by |
@@ -418,9 +404,16 @@ For more training on security in Azure, see these resources in the Microsoft cat
 
 ## Next Steps
 
-- [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md)
-- [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md)
-- [Apply Zero Trust principles to a hub virtual network in Azure](azure-infrastructure-networking.md)
+See these additional articles for applying Zero Trust principles to Azure:
+
+- [Azure IaaS overview](azure-infrastructure-overview.md)
+  - [Azure storage](azure-infrastructure-storage.md)
+  - [Virtual machines](azure-infrastructure-virtual-machines.md)
+  - [Hub virtual networks](azure-infrastructure-networking.md)
+- [Azure Virtual Desktop](azure-infrastructure-avd.md)
+- [Azure Virtual WAN](azure-virtual-wan.md)
+- [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
+- [Microsoft Sentinel and Microsoft 365 Defender](../operations/siem-xdr-overview.md)
 
 ## Technical illustrations
 

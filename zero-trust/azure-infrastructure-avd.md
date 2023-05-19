@@ -3,8 +3,8 @@ title: Apply Zero Trust principles to Azure Virtual Desktop
 description: Learn how to secure an Azure Virtual Desktop deployment with Zero Trust principles. 
 ms.date: 02/17/2023
 ms.service: security
-author: JoeDavies-TechWriter
-ms.author: v-joedavies
+author: sikovatc
+ms.author: sikovatc
 ms.topic: conceptual
 ms.collection: 
   - msftsolution-azurepaas
@@ -189,13 +189,16 @@ For more training on security in Azure, see these resources in the Microsoft cat
 
 ## Next Steps
 
-See these additional articles for applying Zero Trust principles to Azure IaaS:
+See these additional articles for applying Zero Trust principles to Azure:
 
-- [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md)
-- [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md)
-- [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md)
-- [Apply Zero Trust principles to a spoke virtual network in Azure](azure-infrastructure-iaas.md)
-- [Apply Zero Trust principles to a hub virtual network in Azure](azure-infrastructure-networking.md)
+- [Azure IaaS overview](azure-infrastructure-overview.md)
+  - [Azure storage](azure-infrastructure-storage.md)
+  - [Virtual machines](azure-infrastructure-virtual-machines.md)
+  - [Spoke virtual networks](azure-infrastructure-iaas.md)
+  - [Hub virtual networks](azure-infrastructure-networking.md)
+- [Azure Virtual WAN](azure-virtual-wan.md)
+- [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
+- [Microsoft Sentinel and Microsoft 365 Defender](../operations/siem-xdr-overview.md)
 
 ## References
 

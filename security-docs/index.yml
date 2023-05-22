@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 05/15/2023
+  ms.date: 05/22/2023
 
 
 # Maximum of 8 items
@@ -23,9 +23,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Cloud adoption assesments
-      itemType: deploy
-      url: https://learn.microsoft.com/en-us/assessments/93dfb79b-71af-404d-897e-3928ecfb92b1/
+    - title: Shared responsibilities for cloud computing
+      itemType: concept
+      url: https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility
     # Card
     - title: Set up secure file sharing and collaboration with Microsoft Teams
       itemType: concept
@@ -239,32 +239,67 @@ additionalContent:
       # summary: Compliance and privacy
       items:
         # Card
-        - title: Fundamentals
+        - title: What is Microsoft Purview
           links:
-            - text: Shared responsibility
-              url: https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
+            - text: What is Microsoft Purview?
+              url: https://learn.microsoft.com/en-us/purview/purview
+            - text: Deploy risk and compliance solutions
+              url: https://learn.microsoft.com/en-us/microsoft-365/compliance/purview-compliance
+            - text: Manage governance data
+              url: https://learn.microsoft.com/en-us/azure/purview/overview
+
         # Card
-        - title: Strategy and planning
+        - title: Discover and manage data assets
           links:
-            - text: Define a security strategy
-              url: https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
+            - text: Elastic data map in Microsoft Purview
+              url: https://learn.microsoft.com/en-us/azure/purview/concept-elastic-data-map
+            - text: Understand business glossary features
+              url: https://learn.microsoft.com/en-us/azure/purview/concept-business-glossary
+            - text: Insights into your data estate
+              url: https://learn.microsoft.com/en-us/azure/purview/concept-insights
+
         # Card
-        - title: Cloud architecture
+        - title: Protect data where it lives
           links:
-            - text: Architecture styles
-              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+            - text: Deploy information protection
+              url: https://learn.microsoft.com/en-us/microsoft-365/compliance/information-protection-solution
+            - text: Prevent data loss
+              url: https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp
+
         # Card
-        - title: Implementation
+        - title: Manage the data lifecycle
           links:
-            - text: Implementation
-              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+            - text: Deploy data governance
+              url: https://learn.microsoft.com/en-us/microsoft-365/compliance/data-governance-solution
+            - text: Learn about retention policies and labels
+              url: https://learn.microsoft.com/en-us/microsoft-365/compliance/retention
+            - text: Manage records and information
+              url: https://learn.microsoft.com/en-us/microsoft-365/compliance/records-management
+
         # Card
-        - title: Operation
+        - title: Identify and manage insider risk
           links:
-            - text: Operation
-              url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+            - text: Protect against insider risks
+              url: https://learn.microsoft.com/en-us/microsoft-365/compliance/insider-risk-solution-overview
+            - text: Protect against communications risks
+              url: https://learn.microsoft.com/en-us/microsoft-365/compliance/communication-compliance
+
         # Card
-        - title: Continued learning
+        - title: Improve your compliance posture
           links:
-            - text: Secure your cloud operations
-              url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
+            - text: What is Compliance Manager?
+              url: https://learn.microsoft.com/en-us/microsoft-365/compliance/compliance-manager
+            - text: Audit user and admin operations
+              url: https://learn.microsoft.com/en-us/microsoft-365/compliance/audit-solutions-overview
+            - text: Solutions for eDiscovery
+              url: https://learn.microsoft.com/en-us/microsoft-365/compliance/ediscovery
+
+        # Card
+        - title: Manage privacy risk
+          links:
+            - text: Learn about Microsoft Priva
+              url: https://learn.microsoft.com/en-us/privacy/priva/priva-overview
+            - text: Get started wtih Priva
+              url: https://learn.microsoft.com/en-us/privacy/priva/priva-setup
+            - text: Manage data privacy and data protection
+              url: https://learn.microsoft.com/en-us/microsoft-365/solutions/data-privacy-protection

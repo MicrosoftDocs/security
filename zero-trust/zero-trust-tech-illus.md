@@ -3,8 +3,8 @@ title: Zero Trust illustrations for IT architects and implementers
 description: Get the technical illustrations in the Zero Trust library to print or customize for your deployment.
 ms.date: 02/23/2023
 ms.service: security
-author: JoeDavies-TechWriter
-ms.author: v-joedavies
+author: sikovatc
+ms.author: sikovatc
 ms.topic: conceptual
 ms.collection:
   - zerotrust-illustrations
@@ -51,6 +51,14 @@ You can also download the technical diagrams used in the [Zero Trust for Azure I
 |:-----|:-----|
 |[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
 
+### Zero Trust for Azure Virtual WAN diagrams
+
+These diagrams show the reference and logical architectures for [applying Zero Trust to Azure Virtual WAN](azure-virtual-wan.md) as an easier way of viewing the illustrations in the article or to modify them for your own use.
+
+| Item | Description |
+|:-----|:-----|
+|[![Illustration of applying Zero Trust to Azure Virtual WAN.](media/tech-illus/apply-zero-trust-to-Azure-vWAN-diagrams-thumb.png)](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.vsdx) <br/> Updated May 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure Virtual WAN](azure-virtual-wan.md)</li></ul>|
+
 ### Zero Trust Identity and Device Access Policies
 
 This illustration shows the set of Zero Trust identity and device access policies for three levels of protection.
@@ -79,7 +87,7 @@ See these additional Microsoft security posters and illustrations:
 
 - Common attacks and Microsoft capabilities that protect your organization: [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx)
 
-- An overview of the three phases as layers of protection against ransomware attackers: [PDF](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf). Use this poster together with the [What is ransomware](/security/compass/human-operated-ransomware) article.
+- An overview of the three phases as layers of protection against ransomware attackers: [PDF](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf). Use this poster together with the [What is ransomware?](/security/compass/human-operated-ransomware) article.
 
 - An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks: [PDF](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf)
 

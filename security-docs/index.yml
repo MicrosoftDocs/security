@@ -27,9 +27,9 @@ highlightedContent:
       itemType: concept
       url: https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility
     # Card
-    - title: Set up secure file sharing and collaboration with Microsoft Teams
+    - title: What is ransomware?
       itemType: concept
-      url: /microsoft-365/solutions/setup-secure-collaboration-with-teams
+      url: https://learn.microsoft.com/en-us/security/ransomware/human-operated-ransomware
     # Card
     - title: Backup and restore plan to protect against ransomware
       itemType: get-started
@@ -239,9 +239,9 @@ additionalContent:
       # summary: Compliance and privacy
       items:
         # Card
-        - title: What is Microsoft Purview
+        - title: What is Microsoft Purview?
           links:
-            - text: What is Microsoft Purview?
+            - text: Learn about Microsoft Purview
               url: https://learn.microsoft.com/en-us/purview/purview
             - text: Deploy risk and compliance solutions
               url: https://learn.microsoft.com/en-us/microsoft-365/compliance/purview-compliance

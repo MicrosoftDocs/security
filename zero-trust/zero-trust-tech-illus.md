@@ -57,7 +57,7 @@ These diagrams show the reference and logical architectures for [applying Zero T
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of applying Zero Trust to Azure Virtual WAN.](media/tech-illus/apply-zero-trust-to-Azure-vWAN-diagrams-thumb.png)](vwan-download) <br/> [PDF](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.vsdx) <br/> Updated May 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure Virtual WAN](azure-virtual-wan.md)</li></ul>|
+|[![Illustration of applying Zero Trust to Azure Virtual WAN.](media/tech-illus/apply-zero-trust-to-Azure-vWAN-diagrams-thumb.png)](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.vsdx) <br/> Updated May 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure Virtual WAN](azure-virtual-wan.md)</li></ul>|
 
 ### Zero Trust Identity and Device Access Policies
 

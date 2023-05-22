@@ -333,12 +333,8 @@ Refer to these links to learn about the various services and technologies mentio
 - [Building the first layer of defense with Azure security services](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)
 - [Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra)
 
-<!---
-
 ## Technical illustrations
 
-You can download the illustrations used in this series of articles. Use the Visio file to modify these illustrations for your own use.
+You can download the illustrations used in this article. Use the Visio file to modify these illustrations for your own use.
 
-[PDF](https://vwan-download) | [Visio](vwan-download)
-
---->
+[PDF](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.pdf) | [Visio](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.vsdx)

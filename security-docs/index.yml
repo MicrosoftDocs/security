@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 05/22/2023
+  ms.date: 05/24/2023
 
 
 # Maximum of 8 items
@@ -245,7 +245,7 @@ additionalContent:
               url: https://learn.microsoft.com/en-us/purview/purview
             - text: Deploy risk and compliance solutions
               url: https://learn.microsoft.com/en-us/microsoft-365/compliance/purview-compliance
-            - text: Manage governance data
+            - text: Govern your data estate
               url: https://learn.microsoft.com/en-us/azure/purview/overview
 
         # Card
@@ -269,7 +269,7 @@ additionalContent:
         # Card
         - title: Manage the data lifecycle
           links:
-            - text: Deploy data governance
+            - text: Deploy data lifecycle management
               url: https://learn.microsoft.com/en-us/microsoft-365/compliance/data-governance-solution
             - text: Learn about retention policies and labels
               url: https://learn.microsoft.com/en-us/microsoft-365/compliance/retention

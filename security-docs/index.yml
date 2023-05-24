@@ -31,7 +31,7 @@ highlightedContent:
       itemType: concept
       url: https://learn.microsoft.com/en-us/security/ransomware/human-operated-ransomware
     # Card
-    - title: Backup and restore plan to protect against ransomware
+    - title: Back up and restore plan to protect against ransomware
       itemType: get-started
       url: https://learn.microsoft.com/azure/security/fundamentals/backup-plan-to-protect-against-ransomware
     # Card

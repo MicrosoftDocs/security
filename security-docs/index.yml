@@ -31,25 +31,25 @@ highlightedContent:
       itemType: concept
       url: https://learn.microsoft.com/en-us/security/ransomware/human-operated-ransomware
     # Card
-    - title: Back up and restore plan to protect against ransomware
-      itemType: get-started
-      url: https://learn.microsoft.com/azure/security/fundamentals/backup-plan-to-protect-against-ransomware
+    - title: Ransomware protection in Azure
+      itemType: concept
+      url: https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-protection
     # Card
     - title: Evaluate and pilot Microsoft 365 Defender
       itemType: how-to-guide
       url: /microsoft-365/security/defender/eval-overview
     # Card
-    - title: Azure security documentation
+    - title: Learn about Permissions Management, a CIEM solution
       itemType: overview
-      url: https://learn.microsoft.com/azure/security/
+      url: https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/overview
     # Card
-    - title: Microsoft 365 security
+    - title: What is Microsoft Sentinel?
       itemType: overview
-      url: https://learn.microsoft.com/microsoft-365/security
+      url: https://learn.microsoft.com/en-us/azure/sentinel/overview
     # Card
-    - title: Microsoft Entra documentation
-      itemType: overview
-      url: https://learn.microsoft.com/entra/
+    - title: Secure IaaS applications in Amazon Web Services
+      itemType: how-to-guide
+      url: https://learn.microsoft.com/en-us/security/zero-trust/secure-iaas-apps
     # Card
     - title: Past news and highlights
       itemType: reference

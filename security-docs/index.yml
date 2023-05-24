@@ -70,7 +70,7 @@ conceptualContent:
           links:
             - text: Career path
               itemType: overview
-              url: https://learn.microsoft.com/en-us/training/career-paths/identity-and-access-adminhttps://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
+              url: https://learn.microsoft.com/en-us/training/career-paths/identity-and-access-admin
         # Card
         - title: Information protection administrator
           links:
@@ -92,7 +92,7 @@ conceptualContent:
         # Card
         - title: Cloud security functions
           links:
-            - text: Roles and responsibilities (video)
+            - text: Roles and responsibilities
               itemType: overview
               url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-security
 

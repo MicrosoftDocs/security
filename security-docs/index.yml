@@ -68,27 +68,33 @@ conceptualContent:
         # Card
         - title: Identity and access administrator
           links:
-            - text: Overview
+            - text: Career path
               itemType: overview
-              url: https://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
+              url: https://learn.microsoft.com/en-us/training/career-paths/identity-and-access-adminhttps://learn.microsoft.com/azure/security/fundamentals/shared-responsibility
         # Card
         - title: Information protection administrator
           links:
-            - text: Overview
+            - text: Career path
               itemType: overview
-              url: https://learn.microsoft.com/azure/cloud-adoption-framework/strategy/define-security-strategy
+              url: https://learn.microsoft.com/en-us/training/career-paths/information-protection-admin
         # Card
         - title: Security operations analyst
           links:
-            - text: Overview
+            - text: Career path
               itemType: overview
-              url: https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/
+              url: https://learn.microsoft.com/en-us/training/career-paths/security-operations-analyst
         # Card
         - title: Security engineer
           links:
-            - text: Overview
+            - text: Career path
               itemType: overview
-              url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
+              url: https://learn.microsoft.com/en-us/training/career-paths/security-engineer
+        # Card
+        - title: Cloud security functions
+          links:
+            - text: Roles and responsibilities (video)
+              itemType: overview
+              url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-security
 
 additionalContent:
 #  Maximum of 4 sections
@@ -134,6 +140,18 @@ additionalContent:
             - url: https://learn.microsoft.com/en-us/security/zero-trust/develop/secure-devops-environments-zero-trust
               text: Best practices for securing your DevOps environment
 
+        # Card
+        - title: Zero Trust overview (video)
+          links:
+            - url: https://www.youtube.com/watch?v=KlEKAzMQEOw&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=13
+              text: Zero Trust definition, principles, core concepts, and rapid modernization plan (RaMP) quick wins
+
+        # Card
+        - title: Zero Trust - The Open Group (video)
+          links:
+            - url: https://www.youtube.com/watch?v=x0xlTVyX968&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=12
+              text: Perspective on Zero Trust from a standards organization​
+
 #  Section 1
     - title: Defend against threats
       # summary: Modernize security operations
@@ -161,6 +179,11 @@ additionalContent:
           links:
             - text: Architecture styles
               url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
+            - text: Security operations (video)
+              url: https://www.youtube.com/watch?v=6g-C_u8qg5Q&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=17
+            - text: SecOps integration (video)
+              url: https://www.youtube.com/watch?v=91gqkLnmiSc&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=11
+
         # Card
         - title: Implementation
           links:
@@ -207,6 +230,7 @@ additionalContent:
               url: https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-strategy
             - text: Azure identity and access for landing zones
               url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones
+
         # Card
         - title: Cloud architecture
           links:
@@ -214,6 +238,11 @@ additionalContent:
               url: https://learn.microsoft.com/en-us/azure/architecture/identity/identity-start-here
             - text: Azure Active Directory architecture
               url: https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-architecture
+            - text: Zero Trust user access (video)
+              url: https://www.youtube.com/watch?v=4alqTPMtSzU&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=16
+            - text: Beyond VPN (video)
+              url: https://www.youtube.com/watch?v=HqsqTttYJVY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=8
+
         # Card
         - title: Implementation
           links:

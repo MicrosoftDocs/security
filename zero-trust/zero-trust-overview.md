@@ -158,6 +158,17 @@ These articles help you apply the principles of Zero Trust to your workloads and
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
 - [Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)
 
+## Related links
+
+- [Zero Trust Overview](https://www.youtube.com/watch?v=KlEKAzMQEOw&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=13):  This video provides information about:
+
+    - Zero Trust definition
+    - Zero Trust principles
+    - Zero Trust core concepts
+    - Rapid modernization plan (RaMP) quick wins
+
+- [Zero Trust - The Open Group](https://www.youtube.com/watch?v=x0xlTVyX968&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=12): This video provides a perspective on Zero Trust from a standards organization.
+
 ## Next steps
 
 On this site you can find:

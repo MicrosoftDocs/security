@@ -43,7 +43,7 @@ During an incident, it is critical to:
 
 - Do no harm
 
-   Confirm that your response is designed and executed in a way that avoids loss of data, loss of business-critical functionality, and loss of evidence. Avoid decisions can damage your ability to create forensic timelines, identify root cause, and learn critical lessons.
+   Confirm that your response is designed and executed in a way that avoids loss of data, loss of business-critical functionality, and loss of evidence. Avoid decisions that can damage your ability to create forensic timelines, identify root cause, and learn critical lessons.
 
 - Involve your legal department
 

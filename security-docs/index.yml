@@ -95,48 +95,82 @@ additionalContent:
   sections:
 
 # Section 0
+#    - title: Adopt a Zero Trust architecture
+       # summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture
+#      items:
+        # Card
+#        - title: What is Zero Trust?
+#          links:
+#            - url: https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview
+#              text: Learn about the guiding principles of Zero Trust
+
+        # Card
+#        - title: Adoption framework
+#          links:
+#            - url: https://learn.microsoft.com/en-us/security/zero-trust/adopt/zero-trust-adoption-overview
+#              text: Get help driving strategy and implementation across your organization
+
+        # Card
+#        - title: Small business guidance
+#          links:
+#            - url: https://learn.microsoft.com/en-us/security/zero-trust/guidance-smb-partner
+#              text: Find resouirces for customers and partners working with Microsoft 365 for business
+
+        # Card
+#        - title: Deployment plan with Microsoft 365
+#          links:
+#            - url: https://learn.microsoft.com/en-us/microsoft-365/security/microsoft-365-zero-trust?bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json%3Fview%3Do365-worldwide&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json%3Fview%3Do365-worldwide&view=o365-worldwide
+#              text: Follow a deployment plan for building Zero Trust security with Microsoft 365
+
+        # Card
+#        - title: Deployment plan with Microsoft Azure and infrastructure
+#          links:
+#            - url: https://learn.microsoft.com/en-us/security/zero-trust/azure-infrastructure-overview
+#              text: Apply the principles of Zero Trust to apps and infrastructure in Azure and other cloud providers
+
+        # Card
+#        - title: Securing DevOps environments for Zero Trust
+#          links:
+#            - url: https://learn.microsoft.com/en-us/security/zero-trust/develop/secure-devops-environments-zero-trust
+#              text: Best practices for securing your DevOps environment
+
+# Section 0
     - title: Adopt a Zero Trust architecture
-      # summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture
+      summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture
       items:
         # Card
         - title: What is Zero Trust?
-          links:
-            - url: https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview
-              text: Learn about the guiding principles of Zero Trust
+          summary: Learn about the guiding principles of Zero Trust
+          url: https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview
 
         # Card
         - title: Adoption framework
-          links:
-            - url: https://learn.microsoft.com/en-us/security/zero-trust/adopt/zero-trust-adoption-overview
-              text: Get help driving strategy and implementation across your organization
+          url: https://learn.microsoft.com/en-us/security/zero-trust/adopt/zero-trust-adoption-overview
+          summary: Get help driving strategy and implementation across your organization
 
         # Card
         - title: Small business guidance
-          links:
-            - url: https://learn.microsoft.com/en-us/security/zero-trust/guidance-smb-partner
-              text: Find resouirces for customers and partners working with Microsoft 365 for business
+          url: https://learn.microsoft.com/en-us/security/zero-trust/guidance-smb-partner
+          summary: Find resouirces for customers and partners working with Microsoft 365 for business
 
-        # Card
+        #Card
         - title: Deployment plan with Microsoft 365
-          links:
-            - url: https://learn.microsoft.com/en-us/microsoft-365/security/microsoft-365-zero-trust?bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json%3Fview%3Do365-worldwide&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json%3Fview%3Do365-worldwide&view=o365-worldwide
-              text: Follow a deployment plan for building Zero Trust security with Microsoft 365
+          url: https://learn.microsoft.com/en-us/microsoft-365/security/microsoft-365-zero-trust?bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json%3Fview%3Do365-worldwide&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json%3Fview%3Do365-worldwide&view=o365-worldwide
+          summary: Follow a deployment plan for building Zero Trust security with Microsoft 365
 
         # Card
         - title: Deployment plan with Microsoft Azure and infrastructure
-          links:
-            - url: https://learn.microsoft.com/en-us/security/zero-trust/azure-infrastructure-overview
-              text: Apply the principles of Zero Trust to apps and infrastructure in Azure and other cloud providers
+          url: https://learn.microsoft.com/en-us/security/zero-trust/azure-infrastructure-overview
+          summary: Apply the principles of Zero Trust to apps and infrastructure in Azure and other cloud providers
 
         # Card
         - title: Securing DevOps environments for Zero Trust
-          links:
-            - url: https://learn.microsoft.com/en-us/security/zero-trust/develop/secure-devops-environments-zero-trust
-              text: Best practices for securing your DevOps environment
+          url: https://learn.microsoft.com/en-us/security/zero-trust/develop/secure-devops-environments-zero-trust
+          summary: Best practices for securing your DevOps environment
 
 #  Section 1
     - title: Defend against threats
-      # summary: Modernize security operations
+      summary: Learn how to monitor, identify, investigate, and respond to threats in multicloud environments
       items:
         # Card
         - title: Fundamentals
@@ -192,7 +226,7 @@ additionalContent:
 
 #  Section 2
     - title: Secure access and identities
-      # summary: Secure access and identitites
+      summary: Learn how to configure and manage authentication and authorization of identities for users, devices, resources, and applications
       items:
         # Card
         - title: Fundamentals
@@ -247,7 +281,7 @@ additionalContent:
 
 #  Section 3
     - title: Protect and govern data
-      # summary: Compliance and privacy
+      summary: Learn how to protect data and safeguard sensitive information across platforms, applications, and clouds
       items:
         # Card
         - title: What is Microsoft Purview?

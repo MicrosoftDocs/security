@@ -17,7 +17,7 @@ Below are past news and highlights that you may have missed or would like to rev
 
 2023
 
-- [Quickly deploy ransomware preventions](/security/ransomware/protect-against-ransomware)
+- [Quickly deploy ransomware protections](/security/ransomware/protect-against-ransomware)
 - [Security rapid modernization plan](/security/privileged-access-workstations/security-rapid-modernization-plan)
 - [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)
 - [Ransomware protection in Azure](/azure/security/fundamentals/ransomware-protection)
@@ -32,7 +32,7 @@ Below are past news and highlights that you may have missed or would like to rev
 
 - [Resources for accelerating your Zero Trust journey](https://www.microsoft.com/security/blog/2021/05/24/resources-for-accelerating-your-zero-trust-journey/)
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
-- [3 steps to prevent and recover from ransomware](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Three steps to prevent and recover from ransomware](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [Zero Trust essentials video series](https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu)
 - [Human-operated ransomware](/security/compass/human-operated-ransomware)
 

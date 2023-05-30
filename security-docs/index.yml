@@ -35,13 +35,17 @@ highlightedContent:
       itemType: concept
       url: https://learn.microsoft.com/en-us/azure/security/fundamentals/ransomware-protection
     # Card
+    - title: Both sides of bug hunting - BlueHat podcast
+      itemType: video
+      url: https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fbluehatpodcast.com%2F&data=05%7C01%7Cterrylan%40microsoft.com%7C658bda511b06465243e908db5d46045c%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638206327559083836%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=GkcxtotadCYGbOppUjzNMKYg255fQReuZwl6zPXF8Xc%3D&reserved=0
+    # Card
     - title: Evaluate and pilot Microsoft 365 Defender
       itemType: how-to-guide
       url: /microsoft-365/security/defender/eval-overview
     # Card
-    - title: Learn about Permissions Management, a CIEM solution
-      itemType: overview
-      url: https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/overview
+#    - title: Learn about Permissions Management, a CIEM solution
+#      itemType: overview
+#      url: https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/overview
     # Card
     - title: What is Microsoft Sentinel?
       itemType: overview
@@ -89,12 +93,6 @@ conceptualContent:
             - text: Career path
               itemType: overview
               url: https://learn.microsoft.com/en-us/training/career-paths/security-engineer
-        # Card
-        - title: Cloud security functions
-          links:
-            - text: Roles and responsibilities
-              itemType: overview
-              url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-security
 
 additionalContent:
 #  Maximum of 4 sections
@@ -139,18 +137,6 @@ additionalContent:
           links:
             - url: https://learn.microsoft.com/en-us/security/zero-trust/develop/secure-devops-environments-zero-trust
               text: Best practices for securing your DevOps environment
-
-        # Card
-        - title: Zero Trust overview (video)
-          links:
-            - url: https://www.youtube.com/watch?v=KlEKAzMQEOw&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=13
-              text: Zero Trust definition, principles, core concepts, and rapid modernization plan (RaMP) quick wins
-
-        # Card
-        - title: Zero Trust - The Open Group (video)
-          links:
-            - url: https://www.youtube.com/watch?v=x0xlTVyX968&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=12
-              text: Perspective on Zero Trust from a standards organization​
 
 #  Section 1
     - title: Defend against threats
@@ -205,8 +191,8 @@ additionalContent:
         # Card
         - title: Continued learning
           links:
-            - text: Microsoft Defender training
-              url: https://learn.microsoft.com/en-us/training/defender/
+            - text: Secure access and improve efficiency with Microsoft Entra
+              url: https://learn.microsoft.com/en-us/users/morganpadrnosaudienzllc-2094/collections/2xqpa0zyjdz848
 
 #  Section 2
     - title: Secure access and identities
@@ -260,8 +246,8 @@ additionalContent:
         # Card
         - title: Continued learning
           links:
-            - text: Secure your cloud operations
-              url: https://learn.microsoft.com/training/paths/secure-your-cloud-apps/
+            - text: Secure access and improve efficiency with Microsoft Entra
+              url: https://learn.microsoft.com/en-us/users/morganpadrnosaudienzllc-2094/collections/2xqpa0zyjdz848
 
 #  Section 3
     - title: Protect and govern data
@@ -332,3 +318,9 @@ additionalContent:
               url: https://learn.microsoft.com/en-us/privacy/priva/priva-setup
             - text: Manage data privacy and data protection
               url: https://learn.microsoft.com/en-us/microsoft-365/solutions/data-privacy-protection
+
+        # Card
+        - title: Continued learning
+          links:
+            - text: Data security for today’s world
+              url: https://learn.microsoft.com/en-us/users/morganpadrnosaudienzllc-2094/collections/d1gncgmwkr277k

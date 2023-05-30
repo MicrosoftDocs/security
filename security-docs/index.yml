@@ -107,7 +107,7 @@ additionalContent:
         # Card
         - title: Adoption framework
           links:
-            - url: https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-adoption-overview
+            - url: https://learn.microsoft.com/en-us/security/zero-trust/adopt/zero-trust-adoption-overview
               text: Get help driving strategy and implementation across your organization
 
         # Card

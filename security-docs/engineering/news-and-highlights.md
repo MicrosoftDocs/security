@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 03/09/2023
+ms.date: 05/29/2023
 ---
 
 # Security news and highlights
@@ -21,6 +21,12 @@ Below are past news and highlights that you may have missed or would like to rev
 - [Security rapid modernization plan](/security/privileged-access-workstations/security-rapid-modernization-plan)
 - [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)
 - [Ransomware protection in Azure](/azure/security/fundamentals/ransomware-protection)
+- [Learn about the Microsoft Entra family of multicloud identity and access solutions](/entra/)
+- [Set up secure file sharing and collaboration with Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams)
+- [Apply Zero Trust principles to Azure IaaS](/security/zero-trust/azure-infrastructure-overview)
+- [Guiding principles of Zero Trust](/security/zero-trust/zero-trust-overview)
+- [Cloud adoption assessments](/assessments/93dfb79b-71af-404d-897e-3928ecfb92b1/)
+- [The immutable laws of security](/security/zero-trust/ten-laws-of-security)
 
 2022
 

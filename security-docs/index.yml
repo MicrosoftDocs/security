@@ -187,8 +187,8 @@ additionalContent:
         # Card
         - title: Continued learning
           links:
-            - text: Secure access and improve efficiency with Microsoft Entra
-              url: https://learn.microsoft.com/en-us/users/morganpadrnosaudienzllc-2094/collections/2xqpa0zyjdz848
+            - text: Defend against threats
+              url: https://learn.microsoft.com/en-us/users/morganpadrnosaudienzllc-2094/collections/w7m3hn7mjwwmwk?wt.mc_id=wwlsecurityhub_threat_content_scimktg_csasci
 
 #  Section 2
     - title: Secure access and identities

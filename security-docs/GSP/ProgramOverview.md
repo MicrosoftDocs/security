@@ -16,7 +16,7 @@ The mission of Microsoft's Government Security Program (GSP) is to build trust t
 
 The GSP is designed to provide participants with the confidential security information and resources they need to trust Microsoft's products and services.  Participants currently include over 40 countries and international organizations represented by more than 100 agencies.  Participation enables controlled access to source code, exchange of threat and vulnerability information, engagement on technical content about Microsoft's products and services, and access to five globally-distributed Transparency Centers, which are located in the United States, Singapore, Brazil, China, and Ireland. 
 
-![offerings](../media/security-gsp/worldmap.jpg)
+![World Map](../media/security-gsp/worldmap.jpg)
 
 **The Purpose of the GSP is to help governments protect themselves and their citizens by**
 

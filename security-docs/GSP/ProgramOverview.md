@@ -1,7 +1,7 @@
 ---
 title: GSP Program Overview
 description: This document provides an overview of the Government Security Program.
-ms.date: 6/10/2023
+ms.date: 5/31/2023
 ms.service: security
 ms.author: xili13
 author: LaraMiller

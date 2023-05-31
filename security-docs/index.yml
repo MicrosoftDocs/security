@@ -23,6 +23,10 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
+    - title: Microsoft Build 2023
+      itemType: whats-new
+      url: https://www.microsoft.com/en-us/security/blog/
+    # Card
     - title: Shared responsibilities for cloud computing
       itemType: concept
       url: https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility
@@ -42,10 +46,6 @@ highlightedContent:
     - title: Learn about Permissions Management, a CIEM solution
       itemType: overview
       url: https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/overview
-    # Card
-    - title: What is Microsoft Sentinel?
-      itemType: overview
-      url: https://learn.microsoft.com/en-us/azure/sentinel/overview
     # Card
     - title: Secure IaaS applications in Amazon Web Services
       itemType: how-to-guide
@@ -114,7 +114,7 @@ additionalContent:
 #        - title: Small business guidance
 #          links:
 #            - url: https://learn.microsoft.com/en-us/security/zero-trust/guidance-smb-partner
-#              text: Find resouirces for customers and partners working with Microsoft 365 for business
+#              text: Find resources for customers and partners working with Microsoft 365 for business
 
         # Card
 #        - title: Deployment plan with Microsoft 365
@@ -151,7 +151,7 @@ additionalContent:
         # Card
         - title: Small business guidance
           url: https://learn.microsoft.com/en-us/security/zero-trust/guidance-smb-partner
-          summary: Find resouirces for customers and partners working with Microsoft 365 for business
+          summary: Find resources for customers and partners working with Microsoft 365 for business
 
         #Card
         - title: Deployment plan with Microsoft 365
@@ -170,7 +170,7 @@ additionalContent:
 
 #  Section 1
     - title: Defend against threats
-      summary: Learn how to monitor, identify, investigate, and respond to threats in multicloud environments
+      summary: Monitor, identify, investigate, and respond to threats in multicloud environments
       items:
         # Card
         - title: Fundamentals
@@ -226,7 +226,7 @@ additionalContent:
 
 #  Section 2
     - title: Secure access and identities
-      summary: Learn how to configure and manage authentication and authorization of identities for users, devices, resources, and applications
+      summary: Configure and manage authentication and authorization of identities for users, devices, resources, and applications
       items:
         # Card
         - title: Fundamentals
@@ -281,7 +281,7 @@ additionalContent:
 
 #  Section 3
     - title: Protect and govern data
-      summary: Learn how to protect data and safeguard sensitive information across platforms, applications, and clouds
+      summary: Protect data and safeguard sensitive information across platforms, applications, and clouds
       items:
         # Card
         - title: What is Microsoft Purview?

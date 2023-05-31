@@ -23,7 +23,7 @@ The GSP is designed to provide participants with the confidential security infor
  - Enabling trust and transparency
  - Providing access to security information about Microsoft products and services
  - Providing data to improve protection of government information technology against cyber threats
- - Fostering collaboration between Microsoft security teams and government cybersecurity experts
+ - Fostering collaboration between Microsoft security teams and government cybersecurity experts  
 
 ## GSP Offerings
 
@@ -46,7 +46,7 @@ Agencies work with local Microsoft representatives and the GSP team to ensure th
 </tr>
 <tr>
 <td>
-<p><a href="https://learn.microsoft.com/en-us/security/gsp/technicaldata"><strong>Technical Data</strong></a></p>
+<p><a href="TechnicalData.md"><strong>Technical Data</strong></a></p>
 </td>
 <td>
 <p>Offering provides access to information about products and services. This includes technical documentation about Microsoft&rsquo;s products and cloud services, opportunities to access Microsoft engineers to address specific topics, and security-specific technical trips to Microsoft facilities for in-depth face-to-face conversations.</p>
@@ -54,7 +54,7 @@ Agencies work with local Microsoft representatives and the GSP team to ensure th
 </tr>
 <tr>
 <td>
-<p><a href="https://learn.microsoft.com/en-us/security/gsp/informationsharingandexchange"><strong>Information Sharing and Exchange</strong></a></p>
+<p><a href="InformationSharingAndExchange.md"><strong>Information Sharing and Exchange</strong></a></p>
 </td>
 <td>
 <p>Offering provides data about threats and vulnerabilities and a communication channel with Microsoft security and response teams.</p>
@@ -62,7 +62,7 @@ Agencies work with local Microsoft representatives and the GSP team to ensure th
 </tr>
 <tr>
 <td>
-<p><a href="https://learn.microsoft.com/en-us/security/gsp/onlinesources"><strong>Online Source</strong>*</a></p>
+<p><a href="OnlineSources.md"><strong>Online Source</strong>*</a></p>
 </td>
 <td>
 <p>Offering enables online access to view source code. Access is provided through a secure web portal which provides select source code in a read-only format to Microsoft products such as Windows 11 and Office.</p>
@@ -70,7 +70,7 @@ Agencies work with local Microsoft representatives and the GSP team to ensure th
 </tr>
 <tr>
 <td>
-<p><a href="https://learn.microsoft.com/en-us/security/gsp/contenttransparencycenters"><strong>Transparency Center</strong>*</a></p>
+<p><a href="ContentTransparencyCenters.md"><strong>Transparency Center</strong>*</a></p>
 </td>
 <td>
 <p>Offering provides agencies with an opportunity to visit a secure facility to conduct deep levels of source code inspection and analysis. Microsoft&rsquo;s five Transparency Centers are located in the United States, Singapore, Brazil, China, and Ireland.</p>

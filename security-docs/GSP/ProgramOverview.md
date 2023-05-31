@@ -32,13 +32,54 @@ Agencies work with local Microsoft representatives and the GSP team to ensure th
 
 ![offerings](../media/security-gsp/programOverview.png)
 
-| GSP Authorization | Offering | 
-|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
-| [**Technical Data**](https://learn.microsoft.com/en-us/security/gsp/technicaldata)                 | offering provides access to information about products and services. This includes technical documentation about Microsoft’s products and cloud services, opportunities to access Microsoft engineers to address specific topics, and security-specific technical trips to Microsoft facilities for in-depth face-to-face conversations.      
-| [**Information Sharing and Exchange**](https://learn.microsoft.com/en-us/security/gsp/informationsharingandexchange) | offering provides data about threats and vulnerabilities and a communication channel with Microsoft security and response teams. 
-| [**Online Source***]( https://learn.microsoft.com/en-us/security/gsp/onlinesources)                 | offering enables online access to view source code. Access is provided through a secure web portal which provides select source code in a read-only format to Microsoft products such as Windows 11 and Office. 
-| [**Transparency Center***](https://learn.microsoft.com/en-us/security/gsp/contenttransparencycenters)    | offering provides agencies with an opportunity to visit a secure facility to conduct deep levels of source code inspection and analysis. Microsoft’s five Transparency Centers are located in the United States, Singapore, Brazil, China, and Ireland.                                                                             | 
-**Specific eligibility requirements*
+<p>&nbsp;</p>
+<table width="623">
+<tbody>
+<tr>
+<td>
+<p><strong>GSP Authorization</strong></p>
+</td>
+<td>
+<p><strong>Offering</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://learn.microsoft.com/en-us/security/gsp/technicaldata"><strong>Technical Data</strong></a></p>
+</td>
+<td>
+<p>Offering provides access to information about products and services. This includes technical documentation about Microsoft&rsquo;s products and cloud services, opportunities to access Microsoft engineers to address specific topics, and security-specific technical trips to Microsoft facilities for in-depth face-to-face conversations.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://learn.microsoft.com/en-us/security/gsp/informationsharingandexchange"><strong>Information Sharing and Exchange</strong></a></p>
+</td>
+<td>
+<p>Offering provides data about threats and vulnerabilities and a communication channel with Microsoft security and response teams.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://learn.microsoft.com/en-us/security/gsp/onlinesources"><strong>Online Source</strong>*</a></p>
+</td>
+<td>
+<p>Offering enables online access to view source code. Access is provided through a secure web portal which provides select source code in a read-only format to Microsoft products such as Windows 11 and Office.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://learn.microsoft.com/en-us/security/gsp/contenttransparencycenters"><strong>Transparency Center</strong>*</a></p>
+</td>
+<td>
+<p>Offering provides agencies with an opportunity to visit a secure facility to conduct deep levels of source code inspection and analysis. Microsoft&rsquo;s five Transparency Centers are located in the United States, Singapore, Brazil, China, and Ireland.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>*Specific eligibility requirements</em></p>
+<p>&nbsp;</p>
+
 
 ## Participation Criteria
 

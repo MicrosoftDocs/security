@@ -14,7 +14,7 @@ ms.topic: conceptual
 
 The mission of Microsoft's Government Security Program (GSP) is to build trust through transparency.  Microsoft recognizes that people will only use technology they trust and we strive to demonstrate our commitment to building this trust through our transparency, privacy, compliance, and security principles.  Since the program's inception in 2003, Microsoft has provided visibility into our technology which governments and international organizations can use to help protect themselves and their citizens.
 
-The GSP is designed to provide participants with the confidential security information and resources they need to trust Microsoft's products and services.  Participants currently include over 40 countries and international organizations represented by more than 100 agencies.  Participation enables controlled access to source code, exchange of threat and vulnerability information, engagement on technical content about Microsoft's products and services, and access to five globally-distributed Transparency Centers, which are located in the United States, Belgium, Singapore, Brazil, and China. 
+The GSP is designed to provide participants with the confidential security information and resources they need to trust Microsoft's products and services.  Participants currently include over 40 countries and international organizations represented by more than 100 agencies.  Participation enables controlled access to source code, exchange of threat and vulnerability information, engagement on technical content about Microsoft's products and services, and access to five globally-distributed Transparency Centers, which are located in the United States, Singapore, Brazil, China, and Ireland. 
 
 ![offerings](../media/security-gsp/worldmap.jpg)
 
@@ -31,6 +31,7 @@ Originally developed to ensure government confidence in the stability and integr
 Agencies work with local Microsoft representatives and the GSP team to ensure their goals are best supported by the right combination of GSP offerings.
 
 ![offerings](../media/security-gsp/programOverview.png)
+
 
 <p>&nbsp;</p>
 <table width="623">

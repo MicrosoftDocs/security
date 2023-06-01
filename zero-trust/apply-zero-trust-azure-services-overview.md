@@ -45,11 +45,13 @@ The following figure shows the content architecture for this Zero Trust guidance
 
 :::image type="content" source="media/apply-zero-trust-azure-services-overview/content-architecture.png" alt-text="Diagram of the content architecture for applying Zero Trust to Azure services." lightbox="media/apply-zero-trust-azure-services-overview/content-architecture.png":::
 
-This architecture contains:
+This architecture contains the set of platform and workload articles to apply Zero Trust principles to Azure services. You apply the guidance in the articles in a stack from the bottom up. The articles don't need to be followed in the order indicated in all cases but all of the platform articles should be implemented for the workload for Zero Trust-based protection.
 
-- desc
-
-This series of articles walk through the recommendations for implementing Zero Trust.
+| Workload | Platform set of articles |
+| --- | --- |
+| IaaS apps in Amazon Web Services (AWS) | Cloud identity infrastructure > Microsoft Sentinel and Microsoft 365 Defender |
+| Azure Virtual Desktop | Cloud identity infrastructure > Microsoft Sentinel and Microsoft 365 Defender > Hub VNets (traditional) OR vWAN (Microsoft-managed) |
+| Virtual machines | Cloud identity infrastructure > Microsoft Sentinel and Microsoft 365 Defender > Hub VNets (traditional) OR vWAN (Microsoft-managed) > Spoke VNets with Azure IaaS services > Storage <br><br> For Windows and Linux servers, onboard them to Microsoft Defender for Endpoint |
 
 It’s important to note that the guidance in this series of articles is more specific for this type of architecture than the guidance provided in the Cloud Adoption Framework and Azure landing zone architectures. If you have applied the guidance in either of these resources, be sure to also review this series of articles for additional recommendations.  
 

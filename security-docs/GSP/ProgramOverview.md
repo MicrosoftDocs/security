@@ -4,7 +4,7 @@ description: This document provides an overview of the Government Security Progr
 ms.date: 5/31/2023
 ms.service: security
 ms.author: xili13
-author: LaraMiller
+author: LaraMillerMSFT
 ms.topic: conceptual
 ---
 

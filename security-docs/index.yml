@@ -234,7 +234,7 @@ additionalContent:
             - text: Deploy identity protection
               url: /azure/active-directory/identity-protection/how-to-deploy-identity-protection
             - text: Guidance for Azure AD premium 2 customers
-              url: h/azure/active-directory/fundamentals/concept-secure-remote-workers#guidance-for-azure-ad-premium-plan-2-customers
+              url: /azure/active-directory/fundamentals/concept-secure-remote-workers#guidance-for-azure-ad-premium-plan-2-customers
             - text: Privilege access deployment
               url: /security/privileged-access-workstations/privileged-access-deployment
         # Card

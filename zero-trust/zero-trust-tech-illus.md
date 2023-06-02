@@ -31,11 +31,19 @@ To use the same set of icons and templates in the Visio or PowerPoint files, get
 
 ### Zero Trust for Microsoft 365
 
-This illustration provides a deployment plan for building Zero Trust security with Microsoft 365.
+This illustration provides a deployment plan for applying Zero Trust principles to Microsoft 365.
 
 | Item | Description |
 |:-----|:-----|
 |[![Illustration of the Microsoft 365 Zero Trust deployment plan.](media/tech-illus/m365-zero-trust-deployment-plan-thumb.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust) <br/><br/>**Related solution guides** <br/> <ul><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Recommended identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li><li>[Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview)</li><li>[Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](/microsoft-365/solutions/data-privacy-protection)</li></ul>|
+
+### Zero Trust for Microsoft Azure
+
+This illustration provides a deployment plan for applying Zero Trust principles to Microsoft Azure.
+
+| Item | Related solution guides |
+|:-----|:-----|
+|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-azure-services-poster-thumb.png)](https://microsoft.sharepoint-df.com/:u:/t/ZeroTrustAdvisoryV-Team/Eb5YW2wc2mVOvN6-pgj8hMsBT16-FdpybfnviQUEQaPMRQ?e=WVelVw) <br/> [PDF](https://microsoft.sharepoint-df.com/:u:/t/ZeroTrustAdvisoryV-Team/Eb5YW2wc2mVOvN6-pgj8hMsBT16-FdpybfnviQUEQaPMRQ?e=WVelVw) \| [Visio](https://microsoft.sharepoint-df.com/:u:/t/ZeroTrustAdvisoryV-Team/Eb5YW2wc2mVOvN6-pgj8hMsBT16-FdpybfnviQUEQaPMRQ?e=WVelVw) <br/> Updated June 2023 | Use this illustration together with this article: [Microsoft Azure Zero Trust deployment plan](apply-zero-trust-azure-services-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure IaaS services](azure-infrastructure-overview.md)</li><li>[Azure Virtual Desktop](azure-infrastructure-avd.md)</li><li>[Azure Virtual WAN](azure-virtual-wan.md)</li><li>[IaaS applications in Amazon Web Services](secure-iaas-apps.md)</li><li>[Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)</li></ul>|
 
 ### Zero Trust for Azure IaaS services
 

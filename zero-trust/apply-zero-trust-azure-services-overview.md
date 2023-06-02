@@ -36,52 +36,21 @@ These articles show you how to apply Zero Trust approach to these new or already
 
 For more information about recommendations in your Cloud Adoption Framework and Azure landing zones, see these resources:
 
-- [Get started with the Cloud Adoption Framework](/azure/cloud-adoption-framework/get-started/index)
-- [What is an Azure landing zone?](/azure/cloud-adoption-framework/ready/landing-zone/index)
-
 ## Content architecture
 
-The following figure shows the content architecture for this Zero Trust guidance.
+Here is the content architecture for this set of articles that contain the set of platform and workload articles to apply Zero Trust principles to Azure services.
 
-:::image type="content" source="media/apply-zero-trust-azure-services-overview/content-architecture.png" alt-text="Diagram of the content architecture for applying Zero Trust to Azure services." lightbox="media/apply-zero-trust-azure-services-overview/content-architecture.png":::
+:::image type="content" source="media/apply-zero-trust-azure-services-overview/content-architecture.svg" alt-text="Diagram of the content architecture for applying Zero Trust to Azure services." lightbox="media/apply-zero-trust-azure-services-overview/content-architecture.svg":::
 
-This architecture contains the set of platform and workload articles to apply Zero Trust principles to Azure services. You apply the guidance in the articles in a stack from the bottom up. The articles don't need to be followed in the order indicated in all cases but all of the platform articles should be implemented for the workload for Zero Trust-based protection.
+You apply the guidance in the articles in a stack from the bottom up. The articles don't need to be followed in the order indicated in all cases, but all of the platform articles should be implemented for the workload for Zero Trust-based protection.
 
 | Workload | Platform set of articles |
 | --- | --- |
-| IaaS apps in Amazon Web Services (AWS) | Cloud identity infrastructure > Microsoft Sentinel and Microsoft 365 Defender |
-| Azure Virtual Desktop | Cloud identity infrastructure > Microsoft Sentinel and Microsoft 365 Defender > Hub VNets (traditional) OR vWAN (Microsoft-managed) |
-| Virtual machines | Cloud identity infrastructure > Microsoft Sentinel and Microsoft 365 Defender > Hub VNets (traditional) OR vWAN (Microsoft-managed) > Spoke VNets with Azure IaaS services > Storage <br><br> For Windows and Linux servers, onboard them to Microsoft Defender for Endpoint |
+| IaaS apps in Amazon Web Services (AWS) | Cloud identity infrastructure <br> Microsoft Sentinel and Microsoft 365 Defender |
+| Azure Virtual Desktop | Cloud identity infrastructure <br> Microsoft Sentinel and Microsoft 365 Defender <br> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) <br> Spoke VNets with Azure IaaS services <br> Storage |
+| Virtual machines | Cloud identity infrastructure <br> Microsoft Sentinel and Microsoft 365 Defender <br> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) <br> Spoke VNets with Azure IaaS services <br> Storage <br><br> Additionally, for Windows and Linux servers, onboard them to Microsoft Defender for Endpoint. |
 
-It’s important to note that the guidance in this series of articles is more specific for this type of architecture than the guidance provided in the Cloud Adoption Framework and Azure landing zone architectures. If you have applied the guidance in either of these resources, be sure to also review this series of articles for additional recommendations.  
-
-## Recommended training for Zero Trust
-
-The following are the recommended training modules for Zero Trust.
-
-### Azure management and governance
-
-|Training  |[Describe Azure management and governance](/training/paths/describe-azure-management-governance/)  |
-|---------|---------|
-|:::image type="icon" source="media/describe-azure-management-governance-resized.png" border="false":::    | The Microsoft Azure Fundamentals training is composed of three learning paths: Microsoft Azure Fundamentals: Describe cloud concepts, Describe Azure architecture and services, and Describe Azure management and governance. Microsoft Azure Fundamentals: Describe Azure management and governance is the third learning path in Microsoft Azure Fundamentals. This learning path explores the management and governance resources available to help you manage your cloud and on-premises resources. <br>This learning path helps prepare you for [Exam AZ-900: Microsoft Azure Fundamentals.](/certifications/exams/az-900)|
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/describe-cost-management-azure/1-introduction)
-
-### Configure Azure Policy
-
-|Training  |[Configure Azure Policy](/training/modules/configure-azure-policy/)|
-|---------|---------|
-|:::image type="icon" source="media/azure-policy-configure.png" border="false"::: | Learn how to configure Azure Policy to implement compliance requirements.<br> In this module, you learn how to: <li>Create management groups to target policies and spending budgets. <li>Implement Azure Policy with policy and initiative definitions. <li>Scope Azure policies and determine compliance.|
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/configure-azure-policy/1-introduction)
-
-### Manage security operation
-
-|Training  |[Manage Security operation](/training/paths/manage-security-operation/)|
-|---------|---------|
-| :::image type="icon" source="media/operation-manage-security-resized.png" border="false":::   | Once you have deployed and secured your Azure environment, learn to monitor, operate, and continuously improve the security of your solutions.<br> This learning path helps prepare you for [Exam AZ-500: Microsoft Azure Security Technologies](/certifications/exams/az-500).|
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/azure-monitor/1-introduction)
+It’s important to note that the guidance in this series of articles is more specific for this type of architecture than the guidance provided in the [Cloud Adoption Framework](/azure/cloud-adoption-framework/get-started/index) and [Azure landing zone](/azure/cloud-adoption-framework/ready/landing-zone/index) architectures. If you have applied the guidance in either of these resources, be sure to also review this series of articles for additional recommendations.  
 
 ## Next Steps
 
@@ -106,12 +75,6 @@ This poster provides a single-page, at-a-glance view of the content architecture
 |[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-azure-services-poster-thumb.png)](https://microsoft.sharepoint-df.com/:u:/t/ZeroTrustAdvisoryV-Team/Eb5YW2wc2mVOvN6-pgj8hMsBT16-FdpybfnviQUEQaPMRQ?e=WVelVw) <br/> [PDF](https://microsoft.sharepoint-df.com/:u:/t/ZeroTrustAdvisoryV-Team/Eb5YW2wc2mVOvN6-pgj8hMsBT16-FdpybfnviQUEQaPMRQ?e=WVelVw) \| [Visio](https://microsoft.sharepoint-df.com/:u:/t/ZeroTrustAdvisoryV-Team/Eb5YW2wc2mVOvN6-pgj8hMsBT16-FdpybfnviQUEQaPMRQ?e=WVelVw) <br/> Updated June 2023 | <ul><li>[Azure IaaS services](azure-infrastructure-overview.md)</li><li>[Azure Virtual Desktop](azure-infrastructure-avd.md)</li><li>[Azure Virtual WAN](azure-virtual-wan.md)</li><li>[IaaS applications in Amazon Web Services](secure-iaas-apps.md)</li><li>[Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)</li></ul>|
 
 For additional technical illustrations, click [here](zero-trust-tech-illus.md).
-
-<!---
-
-TO DO: Add section to zero-trust-tech-illus.md. 
-
---->
 
 ## References
 

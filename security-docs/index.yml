@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 05/29/2023
+  ms.date: 06/02/2023
 
 
 # Maximum of 8 items
@@ -89,50 +89,19 @@ conceptualContent:
             - text: Career path
               itemType: overview
               url: https://learn.microsoft.com/en-us/training/career-paths/security-engineer
+        # Card
+        - title: Learn how organizational functions play an important role in security
+          links:
+            - text: Cloud security functions
+              itemType: overview
+              url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-security
+            - text: MCRA security roles
+              itemType: video
+              url: https://www.youtube.com/watch?v=GlqjvlX93gY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=14
 
 additionalContent:
 #  Maximum of 4 sections
   sections:
-
-# Section 0
-#    - title: Adopt a Zero Trust architecture
-       # summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture
-#      items:
-        # Card
-#        - title: What is Zero Trust?
-#          links:
-#            - url: https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview
-#              text: Learn about the guiding principles of Zero Trust
-
-        # Card
-#        - title: Adoption framework
-#          links:
-#            - url: https://learn.microsoft.com/en-us/security/zero-trust/adopt/zero-trust-adoption-overview
-#              text: Get help driving strategy and implementation across your organization
-
-        # Card
-#        - title: Small business guidance
-#          links:
-#            - url: https://learn.microsoft.com/en-us/security/zero-trust/guidance-smb-partner
-#              text: Find resources for customers and partners working with Microsoft 365 for business
-
-        # Card
-#        - title: Deployment plan with Microsoft 365
-#          links:
-#            - url: https://learn.microsoft.com/en-us/microsoft-365/security/microsoft-365-zero-trust?bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json%3Fview%3Do365-worldwide&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json%3Fview%3Do365-worldwide&view=o365-worldwide
-#              text: Follow a deployment plan for building Zero Trust security with Microsoft 365
-
-        # Card
-#        - title: Deployment plan with Microsoft Azure and infrastructure
-#          links:
-#            - url: https://learn.microsoft.com/en-us/security/zero-trust/azure-infrastructure-overview
-#              text: Apply the principles of Zero Trust to apps and infrastructure in Azure and other cloud providers
-
-        # Card
-#        - title: Securing DevOps environments for Zero Trust
-#          links:
-#            - url: https://learn.microsoft.com/en-us/security/zero-trust/develop/secure-devops-environments-zero-trust
-#              text: Best practices for securing your DevOps environment
 
 # Section 0
     - title: Adopt a Zero Trust architecture
@@ -169,8 +138,8 @@ additionalContent:
           summary: Best practices for securing your DevOps environment
 
 #  Section 1
-    - title: Defend against threats
-      summary: Monitor, identify, investigate, and respond to threats in multicloud environments
+    - title: Modernize Security Operations (SecOps/SOC)
+      summary: Defend against threats by rapidly detecting, responding, and recovering from attacks
       items:
         # Card
         - title: Fundamentals
@@ -191,7 +160,7 @@ additionalContent:
             - text: Security operations functions
               url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/organize/cloud-security-operations-center
         # Card
-        - title: Cloud architecture
+        - title: Architecture
           links:
             - text: Architecture styles
               url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
@@ -212,7 +181,7 @@ additionalContent:
         # Card
         - title: Operation
           links:
-            - text: Integration Microsoft 365 Defender into operations
+            - text: Integrate Microsoft 365 Defender into operations
               url: https://learn.microsoft.com/azure/architecture/guide/architecture-styles/
             - text: Protect against ransomware
               url: https://learn.microsoft.com/en-us/security/ransomware/protect-against-ransomware
@@ -248,7 +217,7 @@ additionalContent:
               url: https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones
 
         # Card
-        - title: Cloud architecture
+        - title: Architecture
           links:
             - text: Identity architecture design
               url: https://learn.microsoft.com/en-us/azure/architecture/identity/identity-start-here

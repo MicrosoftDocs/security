@@ -1,11 +1,13 @@
 ---
 title: Endpoint integration overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Endpoint and Microsoft Endpoint Manager to help customers adopt a Zero Trust model and keep their organizations secure.
-ms.date: 09/17/2021
+ms.date: 03/23/2023
 ms.service: security
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-partner
 ---
 
 # Endpoint integrations
@@ -24,6 +26,7 @@ This integration guide includes instructions for integrating with the following 
 
 - [Microsoft Defender for Endpoint](#microsoft-defender-for-endpoint), which helps enterprise networks prevent, detect, investigate, and respond to advanced threats.
 - [Microsoft Endpoint Manager](#microsoft-endpoint-manager), which provides protection and security for the devices that employees use and the applications that run on those devices.
+- [Microsoft Defender for IoT](#microsoft-defender-for-iot), which provides security across your operational technology (OT) networks.
 
 ### Microsoft Defender for Endpoint
 
@@ -62,7 +65,7 @@ After creating your application, you will need to access the device and complian
 
 This diagram shows how device compliance information flows from the device to your ISV solution. End user devices receive policies from Intune, a mobile threat defense (MTD) partner, or an mobile device management (MDM) compliance partner. Once the compliance information is gathered from the devices, Intune calculates the overall compliance state of each device and stores that in Azure AD. By using the Microsoft Graph API, your solution can read and respond to the device compliance state, applying the principles of Zero Trust.
 
-When enrolled with Intune, a device record is created in Intune with additional device details, including the device compliance state. Intune forwards the device compliance state to Azure AD, where Azure AD also stores the compliance state with each device. By making a GET on https://graph.microsoft.com/v1.0/deviceManagement/managedDevices you can see all the enrolled devices for a tenant and their compliance state. Or you can query https://graph.microsoft.com/v1.0/devices to get a list of the Azure AD registered and enrolled devices and their compliance state.
+When enrolled with Intune, a device record is created in Intune with additional device details, including the device compliance state. Intune forwards the device compliance state to Azure AD, where Azure AD also stores the compliance state with each device. By making a GET on `https://graph.microsoft.com/v1.0/deviceManagement/managedDevices` you can see all the enrolled devices for a tenant and their compliance state. Or you can query `https://graph.microsoft.com/v1.0/devices` to get a list of the Azure AD registered and enrolled devices and their compliance state.
 
 For example, this request:
 
@@ -87,7 +90,7 @@ Content-Length: 5095
   "enrolledDateTime": "2016-12-31T23:59:43.797191-08:00",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "complianceState": "compliant",
-…
+...
 }
 ```
 
@@ -105,7 +108,27 @@ An ISV integrating with Endpoint Manager will also want to ensure their applicat
 
 In addition to creating your application as a single-tenant or multi-tenant (preferred) application, you must declare the delegated or application permissions required by your application to access Endpoint Manager information and perform actions against Endpoint Manager. View information about getting started with permissions here: [Quickstart: Configure an app to access a web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
 
+### Microsoft Defender for IoT
+
+Operational technology (OT) network architectures often differ from traditional IT infrastructure, using unique technology with proprietary protocols. OT devices may also have aging platforms with limited connectivity and power, or specific safety requirements and unique exposures to physical attacks.
+
+Deploy [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) to apply zero trust principles to your OT network, monitoring traffic for anomalous or unauthorized behavior as traffic crosses sites and zones. Watch for threats and vulnerabilities specific to OT devices, mitigating risks as they're detected.
+
+Speed operations by sharing Defender for IoT data across your security operations center (SOC) and other parts of your organization. Integrate with Microsoft services, such as [Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring) and [Defender for Endpoint](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint), or other partner services, including both SIEM and ticketing systems. For example:
+
+- Forward on-premises alert data directly to SIEMs such as [Splunk](/azure/defender-for-iot/organizations/tutorial-splunk), [IBM QRadar](/azure/defender-for-iot/organizations/tutorial-qradar), and [more](/azure/defender-for-iot/organizations/integrate-overview). Splunk and IBM QRadar also support Event Hub ingestion, which you can use to [forward cloud alerts from Defender for IoT](/azure/defender-for-iot/organizations/integrations/send-cloud-data-to-partners).
+
+- [Integrate with ServiceNow's Operational Technology Manager](/azure/defender-for-iot/organizations/tutorial-servicenow) to import Defender for IoT data to ServiceNow and risk-based action with production process context.
+
+For more information, see:
+
+- [Get started with OT security monitoring](/azure/defender-for-iot/organizations/getting-started)
+- [Zero Trust and your OT networks](/azure/defender-for-iot/organizations/concept-zero-trust)
+- [Monitor with Zero Trust](/azure/defender-for-iot/organizations/monitor-zero-trust)
+- [Defender for IoT integration catalog](/azure/defender-for-iot/organizations/integrate-overview)
+
 ## Next steps
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [Microsoft Endpoint Manager](/mem/)
+- [Microsoft Defender for IoT](/azure/defender-for-iot/organizations)

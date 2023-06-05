@@ -6,6 +6,8 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-ramp
 ---
 
 # Zero Trust Rapid Modernization Plan

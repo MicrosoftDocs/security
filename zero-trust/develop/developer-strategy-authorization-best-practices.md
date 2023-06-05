@@ -5,15 +5,17 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 07/28/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to implement the best authorization, permission, and consent models for my applications.
 ---
 # Authorization best practices
 
 As you learn to [develop using Zero Trust principles](overview.md), this article continues from [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md), [Developing delegated permissions strategy](developer-strategy-delegated-permission.md), and [Developing application permissions strategy](developer-strategy-application-permissions.md). It will help you, as a developer, to implement the best authorization, permission, and consent models for your applications.
 
-You can [implement authorization](/azure/active-directory/develop/authorization-basics#implementing-authorization) logic within applications or solutions that require access control. When authorization approaches rely on information about an authenticated entity, an application can evaluate information that is exchanged during authentication (for example, information provided within a [security token](/azure/active-directory/develop/security-tokens)). When a security token doesn't contain information, an application can make calls to external resources.
+You can [implement authorization](/azure/active-directory/develop/authorization-basics#implementing-authorization) logic within applications or solutions that require access control. When authorization approaches rely on information about an authenticated entity, an application can evaluate information that is exchanged during authentication (for example, information provided within a [security token](/azure/active-directory/develop/security-tokens)). When a security token doesn't contain information, an application can make calls to external resources.
 
 You don't have to embed authorization logic entirely within your application. You can use dedicated authorization services to centralize authorization implementation and management.
 
@@ -23,7 +25,7 @@ The most widely adopted applications in Azure Active Directory (Azure AD) follow
 
 - **Apply [least privilege](/azure/active-directory/develop/secure-least-privileged-access).** Only request necessary permissions. Use incremental consent to request granular permissions just in time. Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
 
-- **Use the correct [permission type](/azure/active-directory/develop/permissions-consent-overview) based on scenarios**. Avoid using both application and delegated permissions in the same app. If you're building an interactive application where a signed-in user is present, your application should use *delegated permissions*. If, however, your application runs [without a signed-in user](identity-non-user-applications.md), such as a background service or daemon, your application should use *application permissions*.
+- **Use the correct [permission type](/azure/active-directory/develop/permissions-consent-overview) based on scenarios**. Avoid using both application and delegated permissions in the same app. If you're building an interactive application where a signed-in user is present, your application should use *delegated permissions*. If, however, your application runs [without a signed-in user](identity-non-user-applications.md), such as a background service or daemon, your application should use *application permissions*.
 
 - **Provide [terms of service and privacy statements](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement).** The user consent experience surfaces your terms of service and privacy statement to users to help them know that they can trust your app. They're especially critical for user-facing multi-tenant apps.
 
@@ -60,9 +62,11 @@ customers.
 
 ## Next steps
 
-- [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop using Zero Trust principles.
+- [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop using Zero Trust principles.
 - [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.
 - Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle to create secure applications.
 - [Security best practices for application properties](/azure/active-directory/develop/security-best-practices-for-app-registration) describes redirect URI, access tokens, certificates and secrets, application ID URI, and application ownership.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
-- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
+- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.

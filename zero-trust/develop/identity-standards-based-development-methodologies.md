@@ -5,8 +5,10 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 06/29/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to know about the benefits of using supported standards with MSAL in the Microsoft identity platform, so that I can have the most efficient and effective way to achieve Zero Trust.
 ---
 # Using standards-based development methodologies
@@ -58,3 +60,5 @@ Using MSAL, you can acquire tokens for application types that include web applic
 - [Building apps with a Zero Trust approach to identity](identity.md) provides an overview of permissions and access best practices.
 - [Developer and administrator responsibilities for application registration, authorization, and access](identity-developer-administrator-responsibilities.md) helps you to better collaborate with your IT Pros.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.

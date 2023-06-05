@@ -5,8 +5,10 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 10/10/2022
+ms.date: 09/12/2022
 ms.custom: template-concept 
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to learn about the permission and consent experience when my application requires administrative consent so that I can better collaborate with admins to implement the Zero Trust principle of least privilege in my applications.
 ---
 # Requesting permissions that require administrative consent
@@ -75,7 +77,7 @@ In the above **User consent** example, the admin can review the granted permissi
 
 ## Requesting admin consent in advance
 
-Your best [application permissions strategy](developer-strategy-application-permissions.md)  is to declare in advance all of the permissions that your app may need or will eventually request when you [register your app](/azure/active-directory/develop/quickstart-register-app). You don't have to request all permissions at the same time but, after you declare all of the permissions that your app may need, admins can select **Grant admin consent for** in your app's configuration in the tenant to display a dialog similar to this example.
+Your best [application permissions strategy](developer-strategy-application-permissions.md) is to declare in advance all of the permissions that your app may need or will eventually request when you [register your app](/azure/active-directory/develop/quickstart-register-app). You don't have to request all permissions at the same time but, after you declare all of the permissions that your app may need, admins can select **Grant admin consent for** in your app's configuration in the tenant to display a dialog similar to this example.
 
 :::image type="content" source="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-review-for-org-inline.png" alt-text="Screenshot of 'Permissions requested Review for your organization' dialog that describes the permissions the app is requesting with Cancel and Accept buttons." lightbox="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-review-for-org-expanded.png":::
 
@@ -85,9 +87,10 @@ Requesting admin consent ahead of time is an excellent choice for line of busine
 
 ## Next steps
 
-- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
+- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
 - [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Overview of permissions and consent in the Microsoft identity platform](/azure/active-directory/develop/permissions-consent-overview) helps you to understand foundational concepts of access and authorization.
 - [Overview of consent and permissions](/azure/active-directory/manage-apps/consent-and-permissions-overview) helps you to learn foundational concepts and scenarios around consent and permissions in Azure AD.
 - Learn module: [Permissions and consent framework](/learn/modules/identity-permissions-consent/) helps you to learn permissions and consent framework models.

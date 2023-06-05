@@ -77,7 +77,7 @@
 				<rect x="0" y="590.34" width="585" height="45" class="st3"/>
 				<text x="15.2" y="616.44" class="st4" v:langID="1033"><v:paragraph v:indentLeft="7.2"/><v:tabList/>Configure your cloud identity infrastructure</text>			</g>
 		</a>
-		<a xlink:href="https://learn.microsoft.com/en-us/security/operations/siem-xdr-overview">
+		<a xlink:href="https://learn.microsoft.com/security/operations/siem-xdr-overview">
 			<g id="shape2082-10" v:mID="2082" v:groupContext="shape" transform="translate(48.0095,-74.3502)">
 				<title>Rectangle.2506</title>
 				<desc>Implement Microsoft Sentinel and Microsoft 365 Defender</desc>
@@ -118,7 +118,7 @@
 				<text x="10" y="606.54" class="st6" v:langID="1033"><v:paragraph/><v:tabList/>Defender for <tspan x="10" dy="1.2em"
 							class="st8">Endpoint</tspan></text>			</g>
 		</a>
-		<a xlink:href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/onboard-configure">
+		<a xlink:href="https://learn.microsoft.com/microsoft-365/security/defender-endpoint/onboard-configure">
 			<g id="shape2085-21" v:mID="2085" v:groupContext="shape" transform="translate(467.414,-460.829)">
 				<title>Rectangle.2512</title>
 				<desc>Onboard Windows and Lunix servers to Microsoft Defender for E...</desc>
@@ -147,7 +147,7 @@
 							x="27.92" dy="1.2em" class="st8">(traditional)</tspan></text>			</g>
 		</a>
 		<a xlink:href="https://learn.microsoft.com/security/zero-trust/azure-infrastructure-iaas">
-			<g id="shape2103-32" v:mID="2103" v:groupContext="shape" transform="translate(287.414,-271.271)">
+			<g id="shape2103-32" v:mID="2103" v:groupContext="shape" transform="translate(287.414,-332.502)">
 				<title>Sheet.2103</title>
 				<desc>Spoke VNet with Azure IaaS services</desc>
 				<v:userDefs>
@@ -155,11 +155,11 @@
 				</v:userDefs>
 				<v:textBlock v:margins="rect(4,4,4,4)"/>
 				<v:textRect cx="172.44" cy="613.211" width="344.89" height="44.2579"/>
-				<rect x="0" y="591.082" width="344.881" height="44.2579" class="st11"/>
-				<text x="28.72" y="618.61" class="st10" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Spoke VNet with Azure IaaS services</text>			</g>
+				<rect x="0" y="591.082" width="344.881" height="44.2579" class="st12"/>
+				<text x="28.72" y="618.61" class="st13" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Spoke VNet with Azure IaaS services</text>			</g>
 		</a>
 		<a xlink:href="https://learn.microsoft.com/security/zero-trust/azure-infrastructure-storage">
-			<g id="shape2104-35" v:mID="2104" v:groupContext="shape" transform="translate(287.414,-325.671)">
+			<g id="shape2104-35" v:mID="2104" v:groupContext="shape" transform="translate(287.414,-268.759)">
 				<title>Sheet.2104</title>
 				<desc>Storage</desc>
 				<v:userDefs>
@@ -184,7 +184,7 @@
 							x="51.1" dy="1.2em" class="st8">Desktop</tspan></text>			</g>
 		</a>
 		<a xlink:href="https://learn.microsoft.com/security/zero-trust/secure-iaas-apps">
-			<g id="shape2106-42" v:mID="2106" v:groupContext="shape" transform="translate(49.5446,-387.147)">
+			<g id="shape2106-42" v:mID="2106" v:groupContext="shape" transform="translate(49.5446,-332.327)">
 				<title>Sheet.2106</title>
 				<desc>IaaS apps in Amazon Web Services</desc>
 				<v:userDefs>
@@ -208,7 +208,7 @@
 				<rect x="0" y="572.908" width="164.881" height="62.4324" class="st12"/>
 				<text x="16.47" y="609.52" class="st13" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Virtual Machines</text>			</g>
 		</a>
-		<g id="shape2108-49" v:mID="2108" v:groupContext="shape" transform="translate(48.0807,-376.759)">
+		<g id="shape2108-49" v:mID="2108" v:groupContext="shape" transform="translate(48.0807,-319.848)">
 			<title>Sheet.2108</title>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(116000):26"/>

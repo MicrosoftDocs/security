@@ -44,11 +44,11 @@ Here is the content architecture for this set of articles that contain the set o
 
 You apply the guidance in the articles in a stack from the bottom up. The articles don't need to be followed in the order indicated in all cases, but all of the platform articles should be implemented for the workload for Zero Trust-based protection.
 
-| Workload | Platform set of articles |
+| Workload | Platform set of articles (from the bottom up) |
 | --- | --- |
-| IaaS apps in Amazon Web Services (AWS) | Cloud identity infrastructure <br> Microsoft Sentinel and Microsoft 365 Defender |
-| Azure Virtual Desktop | Cloud identity infrastructure <br> Microsoft Sentinel and Microsoft 365 Defender <br> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) <br> Spoke VNets with Azure IaaS services <br> Storage |
-| Virtual machines | Cloud identity infrastructure <br> Microsoft Sentinel and Microsoft 365 Defender <br> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) <br> Spoke VNets with Azure IaaS services <br> Storage <br><br> Additionally, for Windows and Linux servers, onboard them to Microsoft Defender for Endpoint. |
+| IaaS apps in Amazon Web Services (AWS) | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft 365 Defender </li></ul> |
+| Azure Virtual Desktop | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft 365 Defender </li><li> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) </li><li> Storage </li></ul> |
+| Virtual machines | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft 365 Defender </li><li> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) </li><li> Storage  </li></ul><br> Additionally, for Windows and Linux servers, onboard them to Microsoft Defender for Endpoint. </li></ul> |
 
 It’s important to note that the guidance in this series of articles is more specific for this type of architecture than the guidance provided in the [Cloud Adoption Framework](/azure/cloud-adoption-framework/get-started/index) and [Azure landing zone](/azure/cloud-adoption-framework/ready/landing-zone/index) architectures. If you have applied the guidance in either of these resources, be sure to also review this series of articles for additional recommendations.  
 

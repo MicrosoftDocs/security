@@ -46,7 +46,7 @@ The development guidance in this section helps you to increase security, reduce 
 ### Permissions and access
 
 * [Building apps that secure identity through permissions and consent](identity.md) provides an overview of permissions and access best practices.
-* [Integrating applications with Azure AD and the Microsoft identity platform](integrate-apps-with-azure-ad-microsoft-identity-platform.md) helps developers to build and integrate apps that IT pros can secure in the enterprise by securely integrate apps with Azure Active Directory (Azure AD) and the Microsoft identity platform.
+* [Integrating applications with Azure AD and the Microsoft identity platform](integrate-apps-microsoft-identity-platform.md) helps developers to build and integrate apps that IT pros can secure in the enterprise by securely integrate apps with Azure Active Directory (Azure AD) and the Microsoft identity platform.
 * [Registering applications](app-registration.md) introduces developers to the application registration process and its requirements. It helps them to ensure that apps satisfy Zero Trust principles of use least privileged access and assume breach.
 * [Supported identity and account types for single- and multi-tenant apps](identity-supported-account-types.md) explains how you can choose if your app allows only users from your Azure Active Directory (Azure AD) tenant, any Azure AD tenant, or users with personal Microsoft accounts.
 * [Authenticating users for Zero Trust](user-authentication.md) helps developers to learn best practices for authenticating application users in Zero Trust application development. It describes how to enhance application security with the Zero Trust principles of least privilege and verify explicitly.

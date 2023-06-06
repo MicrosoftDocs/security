@@ -321,7 +321,7 @@
       - name: Overview
         href: develop/identity.md
       - name: App integration
-        href: develop/integrate-apps-with-azure-ad-microsoft-identity-platform.md
+        href: develop/integrate-apps-microsoft-identity-platform.md
       - name: App registration
         href: develop/app-registration.md
       - name: Identity and account types for apps

@@ -45,6 +45,11 @@
         "redirect_url": "/security/compass/privileged-access-deployment",
         "redirect_document_id": true
       },
+      {
+        "source_path": "zero-trust/develop/integrate-apps-with-azure-ad-microsoft-identity-platform.md",
+        "redirect_url": "/security/zero-trust/develop/integrate-apps-microsoft-identity-platform",
+        "redirect_document_id": true
+      },
 
       {
         "source_path": "zero-trust/isv/secure-hybrid-access.md",
@@ -397,6 +402,6 @@
         "source_path": "compass/esae-retirement.md",
         "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
         "redirect_document_id": false
-      },
+      }
   ] 
   } 

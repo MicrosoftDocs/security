@@ -44,7 +44,6 @@
     "globalMetadata": {
       "breadcrumb_path": "/security/zero-trust/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Security",
-      "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/security",
       "contributors_to_exclude": [

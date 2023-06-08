@@ -149,9 +149,7 @@ Also consider where you have staff maturity and the resources and can accelerate
 
 Another resource that is often used to help inform strategy and priorities is the shared responsibility model. Your responsibility for security is based on the type of cloud service. The following diagram summarizes the balance of responsibilities for both you and Microsoft.
 
-:::image type="content" source="../media/adoption-guide/xyz.svg" alt-text="Diagram of shared responsibility." lightbox="../media/adoption-guide/xyz.svg":::
-
->> Shared responsibility figure
+:::image type="content" source="../media/adoption-guide/shared-responsibilities.svg" alt-text="Diagram of shared responsibilities between Microsoft and your organization." lightbox="../media/adoption-guide/shared-responsibilities.svg":::
 
 For more information, see [Shared responsibility in the cloud](/azure/security/fundamentals/shared-responsibility) in the Azure Security Fundamentals library.
 
@@ -167,7 +165,7 @@ The nature or industry vertical of your business is a big driver of your strateg
 
 Finally, raising the cost of attack for attackers makes your organization more resilient to cybersecurity risk. Beyond meeting specific regulatory requirements, your budget spend should make it more expensive and difficult for an attacker to gain access to your environment and perform activities such as data exfiltration or ransom. In other words, you reduce the return on investment (ROI) of attackers, causing them to possibly move on to another organization. 
 
-:::image type="content" source="../media/adoption-guide/xyz.svg" alt-text="Diagram of attacker ROI." lightbox="../media/adoption-guide/xyz.svg":::
+:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of attacker ROI." lightbox="../media/adoption-guide/placeholder.svg":::
 
 >> Attacker ROI figure
 
@@ -214,7 +212,7 @@ Identify regulatory requirements <br><br> Set leadership expectations | Develop 
 
 If this staged approach works for your organization, you can use this [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/xyz.svg" alt-text="Diagram of 4 stages." lightbox="../media/adoption-guide/xyz.svg":::
+:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of 4 stages." lightbox="../media/adoption-guide/placeholder.svg":::
 
 >> 4-stage figure
 
@@ -236,7 +234,7 @@ Your stakeholder team for this business scenario includes leaders across your or
 
 The [PowerPoint slide deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/xyz.svg" alt-text="Diagram of stakeholders." lightbox="../media/adoption-guide/xyz.svg":::
+:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of stakeholders." lightbox="../media/adoption-guide/placeholder.svg":::
 
 >> stakeholder figure
 
@@ -405,7 +403,7 @@ This scenario article suggests different reports and dashboards you can use to a
 
 The following illustration lists example metrics.
 
-:::image type="content" source="../media/adoption-guide/xyz.svg" alt-text="Diagram of example metrics." lightbox="../media/adoption-guide/xyz.svg":::
+:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of example metrics." lightbox="../media/adoption-guide/placeholder.svg":::
 
 >> Example metrics diagram
 

@@ -40,7 +40,7 @@ As you build your organization’s capacity to deploy security configurations, y
 
 :::image type="content" source="../media/adoption-guide/staggered-implementation-example.svg" alt-text="Example of a staggered implementation." lightbox="../media/adoption-guide/staggered-implementation-example.svg":::
 
-Some business scenarios are broad, and you might want to prioritize specific elements of the scenario to work on first. Or you can prioritize specific zones of your digital estate for configuration deployment first. 
+Some business scenarios are broad, and you might want to prioritize specific elements of the scenario to work on first. Or you can prioritize specific zones of your digital estate for configuration deployment first.
 
 ## Define strategy phase
 
@@ -139,7 +139,7 @@ After taking stock of your risks and defensive areas of your digital estate wher
 
 #### This adoption guidance
 
-Whether you are taking a risk approach or defensive approach (or both), use this Zero Trust adoption guidance as a starting point and prioritize the work based on your organization’s priorities. This guidance provides a systematic approach to applying the principles of Zero Trust. It’s based on fortifying the most common targets attackers use to gain access to an environment (identities and devices) as well as applying protections to your internal environment (like least privileged access and network segmentation) to prevent or limit the damage of a breach.
+Whether you are taking a risk approach or defensive approach (or both), use the Zero Trust adoption guidance in this article as a starting point and prioritize the work based on your organization’s priorities. This guidance provides a systematic approach to applying the principles of Zero Trust. It’s based on fortifying the most common targets attackers use to gain access to an environment (identities and devices) as well as applying protections to your internal environment (like least privileged access and network segmentation) to prevent or limit the damage of a breach.
 
 #### Your current organization and resource strengths
 
@@ -163,11 +163,31 @@ The nature or industry vertical of your business is a big driver of your strateg
 
 #### Attacker return on investment
 
-Finally, raising the cost of attack for attackers makes your organization more resilient to cybersecurity risk. Beyond meeting specific regulatory requirements, your budget spend should make it more expensive and difficult for an attacker to gain access to your environment and perform activities such as data exfiltration or ransom. In other words, you reduce the return on investment (ROI) of attackers, causing them to possibly move on to another organization. 
+Finally, raising the cost of attack for attackers makes your organization more resilient to cybersecurity risk. Beyond meeting specific regulatory requirements, your budget spend should make it more expensive and difficult for an attacker to gain access to your environment and perform activities such as data exfiltration or data destruction. In other words, you reduce the return on investment (ROI) of attackers, causing them to possibly move on to another organization.
+
+Attackers are often categorized by level of sophistication and resources (such as existing tools and experienced staff), from lowest to highest: amateur, organized crime, and nation states.
+
+The principles of Zero Trust help your organization identify and prioritize how best to spend your security defense budget to raise the cost of an attack so you can defend against all levels of attackers.
+
+The following figure shows the qualitative relationship between your security defense budget with Zero Trust principles and your defensive strength.
+
+:::image type="content" source="../media/adoption-guide/budget-and-defensive-strength.png" alt-text="Diagram of security budget and defensive strength." lightbox="../media/adoption-guide/budget-and-defensive-strength.png":::
+
+Defensive strength can rapidly increase when you implement and practice basic security hygiene based on Zero Trust principles. Beyond the early gains, you get additional defensive strength by implementing more advanced security measures. Higher defensive strength provides protection against higher levels of attackers.
+
+The following figure shows the qualitative relationship between your defensive strength and the impact of the cost and ROI of an attacker.
+
+:::image type="content" source="../media/adoption-guide/attacker-impact.png" alt-text="Diagram of the impact of defensive strength on an attacker's ROI." lightbox="../media/adoption-guide/attacker-impact.png":::
+
+As your defensive strength increases, the cost to the attacker increases and reduces the ROI of the attack effort.
+
+The attacker ROI model helps leaders understand that there are few absolutes. A security posture is never considered perfect nor impenetrable. However, there is a lot of opportunity for your organization to be strategic and prioritize your budget and resources. It’s additional incentive for your team of business leaders to work together to protect your organization.
+
+<!---
 
 :::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of attacker ROI." lightbox="../media/adoption-guide/placeholder.svg":::
 
->> Attacker ROI figure
+Attacker ROI figure
 
 In this diagram:
 
@@ -175,7 +195,8 @@ In this diagram:
 - Attackers are often categorized by level of sophistication and resources from lowest to highest: amateur, organized crime, and sponsored by nation states.
 - The principles of Zero Trust help your organization identify and prioritize how best to spend your defender budget to raise the cost of an attack so you can defend against all levels of attackers.
 
-The attacker return on investment model helps leaders understand that there are few absolutes. A security posture is never considered perfect nor impenetrable. However, there is a lot of opportunity for your organization to be strategic and prioritize your budget and resources. It’s additional incentive for your team of business leaders to work together to protect your organization.
+--->
+
 
 ### Identify outcomes of your security posture
 
@@ -213,7 +234,7 @@ If this staged approach works for your organization, you can use this [downloada
 
 :::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of 4 stages." lightbox="../media/adoption-guide/placeholder.svg":::
 
->> 4-stage figure
+>> 4-stage figure from PowerPoint
 
 ### Stakeholder team
 
@@ -235,7 +256,7 @@ The [PowerPoint slide deck of resources](https://download.microsoft.com/download
 
 :::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of stakeholders." lightbox="../media/adoption-guide/placeholder.svg":::
 
->> stakeholder figure
+>> stakeholder figure from PowerPoint
 
 ### Technical plans and skills readiness
 
@@ -363,11 +384,11 @@ The Ready phase for this business scenario is a bit different than for other bus
 
 For example, for each objective:
 
-- Evaluate what is needed to accomplish the objective. This includes who is needed. 
+- Evaluate what is needed to accomplish the objective. This includes who is needed.
 - Begin with a reasonable approach and test it out. Adjust as needed.
 - Pilot the approach and adjust based on what you learn.
 
-For the first objective in Phase 1, the following table is an example of how this can work for the **Identify risks to your organization** objective.
+the following table is an example of how this can work for the **Identify risks to your organization** objective in Stage 1 of the [Plan phase](#plan-phase).
 
 | Ready task | Actions |
 | --- | --- |
@@ -399,11 +420,25 @@ Security governance is a constant process. As you transition to this phase, shif
 
 This scenario article suggests different reports and dashboards you can use to assess your status and measure progress. Ultimately you want to develop a set of metrics that you can use to show progress as well as to identify where a new vulnerability might be emerging. You can use the various reports and dashboards to gather the metrics that are most important for your organization.
 
+The following table lists some example metrics.
+
+| Business enablement | Security posture | Security response | Security improvement |
+| --- | --- | --- | --- |
+| Mean time for security review | # of new apps reviewed | Mean time to recover (MTTR) | # of modernization projects open |
+| # of days for application security review | Secure Score score | Mean time to acknowledge (MTTA) | # of modernization project milestones achieved in the last 60 days |
+| Average boot and sign-in time for managed devices | % of compliant apps | Time to restore critical systems | Number of repetitive manual steps removed from workflows |
+| Number of security interruptions in user workflow | # of privileged accounts meeting 100% of requirements | # of high-severity incidents | # of lessons learned from internal and external incidents |
+| % of IT helpdesk time spent on low-value security activities | # of accounts meeting 100% of requirements | Incident growth rate (overall) |  |
+
+<!---
+
 The following illustration lists example metrics.
 
 :::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of example metrics." lightbox="../media/adoption-guide/placeholder.svg":::
 
->> Example metrics diagram
+Example metrics diagram
+
+--->
 
 ### Monitor and detect
 
@@ -416,5 +451,5 @@ Implementing Zero Trust is a journey. In enterprise-scale organizations, it can 
 ## Next Steps
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
-- [Secure remote and hybrid work with Zero Trust](secure-remote-hybrid-work.md)
-- [Identify and protect sensitive business data with Zero Trust](identify-protect-sensitive-business-data.md)
+- [Secure remote and hybrid work](secure-remote-hybrid-work.md)
+- [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)

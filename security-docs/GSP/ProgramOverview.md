@@ -30,7 +30,7 @@ The GSP is designed to provide participants with the confidential security infor
 Originally developed to ensure government confidence in the stability and integrity of Windows, the GSP has expanded in both depth and breadth to address the changing cybersecurity landscape, along with changing technology. The GSP consists of four separate categories of service, or offerings, each addressing different needs and priorities. These offerings include access to technical information and documentation about our products and services (such as cloud services and Common Criteria certification artifacts); access to information on internet safety, cybersecurity threats, vulnerabilities, and guidance; access to controlled, online review of source code; and access to five globally distributed Transparency Centers located in the United States, Singapore, Brazil, China, and Ireland.
 Agencies work with local Microsoft representatives and the GSP team to ensure their goals are best supported by the right combination of GSP offerings.  
   
-<center><img src="../media/security-gsp/programoverview.png" width="60%" alt="offerings"/></center>  
+<center><img src="../media/security-gsp/programOverview.png" width="60%" alt="offerings"/></center>  
   
 <p>&nbsp;</p>
 <table width="623">

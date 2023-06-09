@@ -356,4 +356,5 @@ Additional resources for day-to-day governance and operation include:
 ## Next Steps
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
-- [Identify and protect sensitive business data with Zero Trust](identify-protect-sensitive-business-data.md)
+- [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)

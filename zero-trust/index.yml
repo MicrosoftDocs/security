@@ -52,6 +52,8 @@ landingContent:
         links:
         - text: Overview
           url:  adopt/zero-trust-adoption-overview.md
+        - text: Rapidly modernize your security posture
+          url:  adopt/rapidly-modernize-security-posture.md
         - text: Secure remote and hybrid work
           url:  adopt/secure-remote-hybrid-work.md
         - text: Identify and protect sensitive business data

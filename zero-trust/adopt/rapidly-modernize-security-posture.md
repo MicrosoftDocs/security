@@ -10,7 +10,7 @@ ms.collection:
   - zerotrust-solution
 ---
 
-# Rapidly modernize your security posture for Zero Trust
+# Rapidly modernize your security posture
 
 As part of Zero Trust adoption guidance, this article describes the business scenario of rapidly modernizing your security posture. Rather than focusing on the technical work required to implement a Zero Trust architecture, this scenario focuses on how to develop your strategy and priorities and then how to systematically implement your priorities, piece by piece, while measuring and reporting your progress.
 
@@ -207,8 +207,7 @@ Many organizations can take a four-staged approach to these technical activities
 
 | Stage 1| Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Identify risks to your organization <br><br> Identify gaps in your security posture <br><br> Capture your initial Secure Score status <br><br> 
-Identify regulatory requirements <br><br> Set leadership expectations | Develop a response readiness plan <br><br> Inventory your digital estate <br><br> Implement basic hygiene practices <br><br> Update your status for Secure Score <br><br> Capture your status in Compliance Manager| Visualize your security posture using audience-appropriate dashboards <br><br> Document and manage shadow IT using Microsoft Defender for Cloud Apps <br><br> Develop a methodology for patching and updating systems| Continuously educate your users <br><br> Evolve your organization’s SecOps capabilities <br><br> Continue to manage risk |
+| Identify risks to your organization <br><br> Identify gaps in your security posture <br><br> Capture your initial Secure Score status <br><br> Identify regulatory requirements <br><br> Set leadership expectations | Develop a response readiness plan <br><br> Inventory your digital estate <br><br> Implement basic hygiene practices <br><br> Update your status for Secure Score <br><br> Capture your status in Compliance Manager| Visualize your security posture using audience-appropriate dashboards <br><br> Document and manage shadow IT using Microsoft Defender for Cloud Apps <br><br> Develop a methodology for patching and updating systems| Continuously educate your users <br><br> Evolve your organization’s SecOps capabilities <br><br> Continue to manage risk |
 
 If this staged approach works for your organization, you can use this [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's an example.
 
@@ -220,7 +219,7 @@ If this staged approach works for your organization, you can use this [downloada
 
 Your stakeholder team for this business scenario includes leaders across your organization who are invested in your security posture and likely include the following roles and responsibilities:
 
-| col title | col title |
+| Stakeholder | Roles and responsibilities |
 | --- | --- |
 | Sponsor | Strategy, steering, escalation, approach, business alignment, and manage coordination.  |
 | Project lead | Overall engagement, resources, timeline and schedule, communications, and other elements. |
@@ -331,10 +330,10 @@ Assuming breach requires us to look for and instrument breach preparedness by im
 
 For example:
 
-- An executive summary view of risk, breach preparation, and current incidents
-- A CISO summary view for IT and OT security assets
-- Security Analyst views to respond to incidents
-- A historical view on security information and event management (SIEM) and security orchestration, automation, and response (SOAR) to comply with regulatory demands and long running threat hunting
+- An executive summary view of risk, breach preparation, and current incidents.
+- A CISO summary view for IT and OT security assets.
+- Security Analyst views to respond to incidents.
+- A historical view on security information and event management (SIEM) and security orchestration, automation, and response (SOAR) to comply with regulatory demands and long-running threat hunting.
 
 Creating and maintaining role-specific views create transparency with the status of the security posture with your stakeholders who are sharing the burden of security management, from executive leaders through to incident responders. 
 
@@ -350,14 +349,13 @@ Stage 3 also includes maturing the managing shadow IT and patching areas of hygi
 
 The objectives of Stage 4 are about maturing your organization’s ability to prevent and respond to attacks.
 
-| Objectives for Stage 4| Resources |
+| Objectives for Stage 4 | Resources |
 | --- | --- |
-| Continuously educate users| To help Microsoft customers deploy user training quickly, easily, and effectively, use the [Microsoft Cybersecurity Awareness Kit](https://www.microsoft.com/en-us/security/blog/2020/05/13/empowering-remote-workforce-security-training/), developed in partnership with Terranova Security. <br><br> You can use attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users. See [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started). <br><br> 
-Also see, [Microsoft 365 security tips infographic](/microsoft-365/solutions/infographics-for-users) and [Microsoft Entra end-user rollout templates and materials](https://www.microsoft.com/en-us/download/details.aspx?id=57600). |
+| Continuously educate users| To help Microsoft customers deploy user training quickly, easily, and effectively, use the [Microsoft Cybersecurity Awareness Kit](https://www.microsoft.com/en-us/security/blog/2020/05/13/empowering-remote-workforce-security-training/), developed in partnership with Terranova Security. <br><br> You can use attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users. See [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started). <br><br> Also see [Microsoft 365 security tips infographic](/microsoft-365/solutions/infographics-for-users) and [Microsoft Entra end-user rollout templates and materials](https://www.microsoft.com/en-us/download/details.aspx?id=57600). |
 | Evolve your organization’s security operations capability| [Integrating Microsoft 365 Defender into your security operations](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) provides guidance for building and training your Security Operations Center (SOC) team, including how to develop and formalize a process for responding to incidents. <br><br> See the [Microsoft Security Operations library](/security/operations/overview) for guidance on how to respond to incidents and playbooks for responding to specific attack types. |
 | Continue to manage risk| Develop a systematic way for your organization to evaluate and manage risk on an ongoing basis. Revisit the tabletop exercises or ISO standards to recalibrate where you are as well as what you have accomplished. |
 
-### Ready phase
+## Ready phase
 
 :::image type="content" source="../media/adoption-guide/ready-phase.svg" alt-text="The ready phase." lightbox="../media/adoption-guide/ready-phase.svg":::
 
@@ -371,7 +369,7 @@ For example, for each objective:
 
 For the first objective in Phase 1, the following table is an example of how this can work for the **Identify risks to your organization** objective.
 
-| Ready| Actions |
+| Ready task | Actions |
 | --- | --- |
 | Evaluate| Decide what resources you will use to evaluate risks and who should be included in the activities. This can include using the tabletop exercises or the ISO standards. Determine who in your organization should participate. |
 | Test| Using the resources you are targeting, review the recommended exercises with a small set of your stakeholders to gauge your readiness to engage your fuller team of stakeholders. |
@@ -379,25 +377,25 @@ For the first objective in Phase 1, the following table is an example of how thi
 
 By taking an agile approach like this, you allow opportunities to adjust and optimize your methodology and process. You also build confidence as you go.
 
-### Adopt phase
+## Adopt phase
 
 :::image type="content" source="../media/adoption-guide/adopt-phase.svg" alt-text="The adopt phase." lightbox="../media/adoption-guide/adopt-phase.svg":::
 
-In the adoption phase, you incrementally implement your strategy and deployment plans across functional areas. For this scenario, this involves accomplishing the objectives set out across the four stages, or the objectives and stages you have customized for your organization. 
+In the adopt phase, you incrementally implement your strategy and deployment plans across functional areas. For this scenario, this involves accomplishing the objectives set out across the four stages, or the objectives and stages you have customized for your organization.
 
-However, modernizing your security posture includes accomplishing the technical objectives recommended in the other business scenarios (or prioritized by your organization). These all accrue to your security posture. 
+However, modernizing your security posture includes accomplishing the technical objectives recommended in the other business scenarios (or prioritized by your organization). These all accrue to your security posture.
 
 As you transition to the adopt phase for this scenario and the others, be sure to communicate status, progress, and value.
 
 :::image type="content" source="../media/adoption-guide/rapid-modernize-sec-posture.svg" alt-text="Diagram of rapidly modernizing your security posture." lightbox="../media/adoption-guide/rapid-modernize-sec-posture.svg":::
 
-### Govern and manage
+## Govern and manage
 
 :::image type="content" source="../media/adoption-guide/govern-manage-phase.svg" alt-text="The govern and manage phase." lightbox="../media/adoption-guide/govern-manage-phase.svg":::
 
 Security governance is a constant process. As you transition to this phase, shift to tracking and measuring the results of each piece of the Zero Trust architecture you’ve implemented. Together with monitoring and detecting, you will identify opportunities to iterate for maturity.
 
-#### Track and measure
+### Track and measure
 
 This scenario article suggests different reports and dashboards you can use to assess your status and measure progress. Ultimately you want to develop a set of metrics that you can use to show progress as well as to identify where a new vulnerability might be emerging. You can use the various reports and dashboards to gather the metrics that are most important for your organization.
 
@@ -418,4 +416,5 @@ Implementing Zero Trust is a journey. In enterprise-scale organizations, it can 
 ## Next Steps
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
+- [Secure remote and hybrid work with Zero Trust](secure-remote-hybrid-work.md)
 - [Identify and protect sensitive business data with Zero Trust](identify-protect-sensitive-business-data.md)

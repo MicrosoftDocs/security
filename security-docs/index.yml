@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 10/05/2022
+  ms.date: 06/02/2023
 
 
 # Maximum of 8 items
@@ -23,245 +23,303 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Learn about the Microsoft Entra family of multicloud identity and access solutions
-      itemType: overview
-      url: /entra/
+    - title: Microsoft Build 2023
+      itemType: whats-new
+      url: https://www.microsoft.com/en-us/security/blog/
     # Card
-    - title: Learn how to rapidly protect against ransomware and extortion
+    - title: Shared responsibilities for cloud computing
       itemType: concept
-      url: /security/compass/protect-against-ransomware
+      url: /azure/security/fundamentals/shared-responsibility
     # Card
-    - title: Ransomware protection in Azure
+    - title: What is ransomware?
       itemType: concept
-      url: /azure/security/fundamentals/ransomware-protection?toc=%2Fazure%2Fsecurity%2Fjourney%2Ftoc.json&bc=%2Fazure%2Fsecurity%2Fbreadcrumb%2Ftoc.json
+      url: /security/ransomware/human-operated-ransomware
+    # Card
+    - title: Both sides of bug hunting - BlueHat podcast
+      itemType: reference
+      url: https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fbluehatpodcast.com%2F&data=05%7C01%7Cterrylan%40microsoft.com%7C658bda511b06465243e908db5d46045c%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638206327559083836%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=GkcxtotadCYGbOppUjzNMKYg255fQReuZwl6zPXF8Xc%3D&reserved=0
+    # Card
     - title: Evaluate and pilot Microsoft 365 Defender
-      itemType: overview
+      itemType: how-to-guide
       url: /microsoft-365/security/defender/eval-overview
     # Card
-    - title: Guiding principles of Zero Trust, a security strategy
+    - title: Learn about Permissions Management, a CIEM solution
       itemType: overview
-      url: /security/zero-trust/zero-trust-overview
+      url: /azure/active-directory/cloud-infrastructure-entitlement-management/overview
     # Card
-    - title: Microsoft 365 Zero Trust deployment plan
-      itemType: deploy
-      url: /microsoft-365/security/microsoft-365-zero-trust?bc=%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json&toc=%2Fsecurity%2Fzero-trust%2Ftoc.json&view=o365-worldwide
-    # Card
-    - title: Rapidly modernize your security infrastructure
-      itemType: concept
-      url: /security/compass/security-rapid-modernization-plan
+    - title: Secure IaaS applications in Amazon Web Services
+      itemType: how-to-guide
+      url: /security/zero-trust/secure-iaas-apps
     # Card
     - title: Past news and highlights
       itemType: reference
       url: ./engineering/news-and-highlights.md
 
-
-additionalContent:
-#  Maximum of 3 sections
+# conceptualContent section (Optional; Remove if not applicable.)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  # Supports up to 3 subsections
   sections:
 
 #  Section 1
-    - title: Get started
-      summary: Begin your security journey here
+    - title: Security roles
+      summary: Learning resources by role
       items:
         # Card
-        - title: Cybersecurity training - Chief Information Security Officer (CISO) workshop
-          summary: If you're new to Microsoft Security, start here! Includes principles and recommendations for modernizing security in your organization.
-          url: /security/ciso-workshop/the-ciso-workshop
+        - title: Identity and access administrator
+          links:
+            - text: Career path
+              itemType: overview
+              url: /training/career-paths/identity-and-access-admin
         # Card
-        - title: Microsoft Security Best Practices
-          summary: Are you a security professional? Microsoft Security Best Practices is a collection of best practices with actionable guidance for your security architecture.
-          url: /security/compass/compass
+        - title: Information protection administrator
+          links:
+            - text: Career path
+              itemType: overview
+              url: /training/career-paths/information-protection-admin
         # Card
-        - title: Security benchmarks
-          summary: Security recommendations provide a strong starting point for your own planning and deployment.
-          url: /azure/security/benchmarks/introduction
+        - title: Security operations analyst
+          links:
+            - text: Career path
+              itemType: overview
+              url: /training/career-paths/security-operations-analyst
         # Card
-        - title: Microsoft security engineering
-          summary: Security related documentation and information from across Microsoft.
-          url: ./engineering/index.yml
+        - title: Security engineer
+          links:
+            - text: Career path
+              itemType: overview
+              url: /training/career-paths/security-engineer
         # Card
-        - title: Security learning paths and modules
-          summary: Learn new skills and discover the power of Microsoft products with step-by-step guidance.
-          url: /training/browse/?term=security
+        - title: Learn how organizational functions play an important role in security
+          links:
+            - text: Cloud security functions
+              itemType: overview
+              url: /azure/cloud-adoption-framework/organize/cloud-security
+            - text: MCRA security roles
+              itemType: video
+              url: https://www.youtube.com/watch?v=GlqjvlX93gY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=14
+
+additionalContent:
+#  Maximum of 4 sections
+  sections:
+
+# Section 0
+    - title: Adopt a Zero Trust architecture
+      summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture
+      items:
         # Card
-        - title: Security roles and responsibilities
-          summary: Organizational functions required to manage information security risk in an enterprise.
-          url: /azure/cloud-adoption-framework/organize/cloud-security
+        - title: What is Zero Trust?
+          summary: Learn about the guiding principles of Zero Trust
+          url: /security/zero-trust/zero-trust-overview
+
+        # Card
+        - title: Adoption framework
+          url: /security/zero-trust/adopt/zero-trust-adoption-overview
+          summary: Get help driving strategy and implementation across your organization
+
+        # Card
+        - title: Small business guidance
+          url: /security/zero-trust/guidance-smb-partner
+          summary: Find resources for customers and partners working with Microsoft 365 for business
+
+        #Card
+        - title: Deployment plan with Microsoft 365
+          url: /microsoft-365/security/microsoft-365-zero-trust?bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json%3Fview%3Do365-worldwide&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json%3Fview%3Do365-worldwide&view=o365-worldwide
+          summary: Follow a deployment plan for building Zero Trust security with Microsoft 365
+
+        # Card
+        - title: Deployment plan with Microsoft Azure and infrastructure
+          url: /security/zero-trust/azure-infrastructure-overview
+          summary: Apply the principles of Zero Trust to apps and infrastructure in Azure and other cloud providers
+
+        # Card
+        - title: Securing DevOps environments for Zero Trust
+          url: /security/zero-trust/develop/secure-devops-environments-zero-trust
+          summary: Best practices for securing your DevOps environment
+
+#  Section 1
+    - title: Modernize Security Operations (SecOps/SOC)
+      summary: Defend against threats by rapidly detecting, responding, and recovering from attacks
+      items:
+        # Card
+        - title: Fundamentals
+          links:
+            - text: Microsoft Defender for Cloud
+              url: /azure/defender-for-cloud/defender-for-cloud-introduction
+            - text: Zero Trust and Microsoft 365
+              url: /microsoft-365/security/microsoft-365-zero-trust?view=o365-worldwide
+            - text: Azure threat protection
+              url: /azure/security/fundamentals/threat-detection
+        # Card
+        - title: Strategy and planning
+          links:
+            - text: Modernize in the cloud
+              url: /azure/cloud-adoption-framework/modernize/
+            - text: Define a security strategy
+              url: /azure/cloud-adoption-framework/strategy/define-security-strategy
+            - text: Security operations functions
+              url: /azure/cloud-adoption-framework/organize/cloud-security-operations-center
+        # Card
+        - title: Architecture
+          links:
+            - text: Architecture styles
+              url: /azure/architecture/guide/architecture-styles/
+            - text: Security operations (video)
+              url: https://www.youtube.com/watch?v=6g-C_u8qg5Q&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=17
+            - text: SecOps integration (video)
+              url: https://www.youtube.com/watch?v=91gqkLnmiSc&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=11
+
+        # Card
+        - title: Implementation
+          links:
+            - text: Implement XDR and SIEM tools
+              url: /security/operations/siem-xdr-overview
+            - text: Turn on Microsoft 365 Defender
+              url: /microsoft-365/security/defender/m365d-enable
+            - text: Design your Microsoft Sentinel workspace
+              url: /azure/sentinel/design-your-workspace-architecture
+        # Card
+        - title: Operation
+          links:
+            - text: Integrate Microsoft 365 Defender into operations
+              url: /azure/architecture/guide/architecture-styles/
+            - text: Protect against ransomware
+              url: /security/ransomware/protect-against-ransomware
+            - text: Incident response
+              url: /security/operations/incident-response-overview
+        # Card
+        - title: Continued learning
+          links:
+            - text: Defend against threats
+              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/w7m3hn7mjwwmwk?wt.mc_id=wwlsecurityhub_threat_content_scimktg_csasci
 
 #  Section 2
-    - title: Security disciplines
-      summary: Microsoft security best practices that help you improve your security posture
+    - title: Secure access and identities
+      summary: Configure and manage authentication and authorization of identities for users, devices, resources, and applications
       items:
         # Card
-        - title: Human-operated ransomware
+        - title: Fundamentals
           links:
-            - text: Overview
-              url: /security/compass/human-operated-ransomware
-            - text: Rapidly protect against ransomware
-              url: /security/compass/protect-against-ransomware
-            - text: Backup and restore plan for ransomware
-              url: /security/compass/backup-plan-to-protect-against-ransomware
+            - text: Identity protection
+              url: /azure/active-directory/identity-protection/overview-identity-protection
+            - text: Secure your organization's identities
+              url: /azure/active-directory/fundamentals/concept-secure-remote-workers
+            - text: Identity governance
+              url: /azure/active-directory/governance/identity-governance-overview
+        # Card
+        - title: Strategy and planning
+          links:
+            - text: Azure Active Directory and hybrid identity
+              url: /azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-active-directory-hybrid-identity
+            - text: Develop a privileged access strategy
+              url: /security/privileged-access-workstations/privileged-access-strategy
+            - text: Azure identity and access for landing zones
+              url: /azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones
 
         # Card
-        - title: Zero Trust Guidance Center
+        - title: Architecture
           links:
-            - text: Zero Trust overview
-              url: https://aka.ms/ZTGuide
-            - text: Securing identity with Zero Trust
-              url: /security/zero-trust/identity
-            - text: Get started with Zero Trust identity integrations
-              url: /security/zero-trust/integrate/identity
+            - text: Identity architecture design
+              url: /azure/architecture/identity/identity-start-here
+            - text: Azure Active Directory architecture
+              url: /azure/active-directory/fundamentals/active-directory-architecture
+            - text: Zero Trust user access (video)
+              url: https://www.youtube.com/watch?v=4alqTPMtSzU&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=16
+            - text: Beyond VPN (video)
+              url: https://www.youtube.com/watch?v=HqsqTttYJVY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=8
 
         # Card
-        - title: Governance and strategy
+        - title: Implementation
           links:
-            - text: Overview
-              url: /security/compass/governance
-            - text: Modernize security strategy
-              url: /azure/cloud-adoption-framework/strategy/define-security-strategy
-            - text: Best practices (videos & slides)
-              url: /security/compass/governance-risk-compliance-videos-and-decks
-            - text: Capabilities
-              url: /security/compass/governance-risk-compliance-capabilities
-
+            - text: Deploy identity protection
+              url: /azure/active-directory/identity-protection/how-to-deploy-identity-protection
+            - text: Guidance for Azure AD premium 2 customers
+              url: /azure/active-directory/fundamentals/concept-secure-remote-workers#guidance-for-azure-ad-premium-plan-2-customers
+            - text: Privilege access deployment
+              url: /security/privileged-access-workstations/privileged-access-deployment
         # Card
-        - title: Network security
+        - title: Operation
           links:
-            - text: Overview
-              url: /security/compass/network-security-containment
-            - text: Best practices (videos & slides)
-              url: /security/compass/network-containment-videos-and-decks
-            - text: Capabilities
-              url: /security/compass/network-containment-capabilities
-
+            - text: How to investigate risk
+              url: /azure/active-directory/identity-protection/howto-identity-protection-investigate-risk
         # Card
-        - title: Identity and access management
+        - title: Continued learning
           links:
-            - text: Overview
-              url: /security/compass/identity
-            - text: Best practices (videos & slides)
-              url: /security/compass/identity-videos-and-decks
-            - text: Capabilities
-              url: /security/compass/identity-capabilities
-
-        # Card
-        - title: Storage, data, and encryption
-          links:
-            - text: Overview
-              url: /security/compass/storage-data-encryption
-            - text: Best practices (videos & slides)
-              url: /security/compass/information-protection-and-storage-videos-and-decks
-            - text: Capabilities
-              url: /security/compass/information-protection-and-storage-capabilities
-
-        # Card
-        - title: Applications and services
-          links:
-            - text: Overview
-              url: /security/compass/applications-services
-            - text: Best practices for container security
-              url: /security/compass/applications-services#follow-best-practices-for-container-security
-            - text: DevSecOps controls
-              url: /azure/cloud-adoption-framework/secure/devsecops-controls
-
-        # Card
-        - title: Security operations
-          links:
-            - text: Overview
-              url: /security/compass/security-operations
-            - text: Best practices (videos & slides)
-              url: /security/compass/security-operations-videos-and-decks
-            - text: Capabilities
-              url: /security/compass/security-operations-capabilities
-
-        # Card
-        - title: Privileged access
-          links:
-            - text: Overview
-              url: /security/compass/overview
-            - text: Best practices (videos & slides)
-              url: /security/compass/administration-videos-and-decks
-            - text: Rapid Modernization Plan
-              url: /security/compass/security-rapid-modernization-plan
-
+            - text: Secure access and improve efficiency with Microsoft Entra
+              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/2xqpa0zyjdz848
 
 #  Section 3
-    - title: Additional security resources
+    - title: Protect and govern data
+      summary: Protect data and safeguard sensitive information across platforms, applications, and clouds
       items:
         # Card
-        - title: Security documentation for Microsoft Azure
+        - title: What is Microsoft Purview?
           links:
-            - url: /azure/security/
-              text: Security, compliance, & identity
-            - url: /azure/security/journey/
-              text: Security fundamentals
-            - url: /azure/defender-for-cloud/
-              text: Microsoft Defender for Cloud
-            - url: /azure/sentinel/
-              text: Microsoft Sentinel
-            - url: /azure/networking/
-              text: Azure Active Directory
-            - url: /azure/key-vault/
-              text: Azure Key Vault
-            - url: /azure/networking/
-              text: Azure networking security services
+            - text: Learn about Microsoft Purview
+              url: /purview/purview
+            - text: Deploy risk and compliance solutions
+              url: /microsoft-365/compliance/purview-compliance
+            - text: Govern your data estate
+              url: /azure/purview/overview
 
         # Card
-        - title: Security documentation for Microsoft 365
+        - title: Discover and manage data assets
           links:
-            - url: /microsoft-365/security/
-              text: Microsoft 365 security
-            - url: /microsoft-365/security/defender/microsoft-365-defender/
-              text: Microsoft 365 Defender
-            - url: /enterprise-mobility-security/remote-work/
-              text: Secure your remote workforce
-            - url: /windows/security/
-              text: Windows security
-            - url: /enterprise-mobility-security/
-              text: Enterprise Mobility + Security
-            - url: /sql/?view=sql-server-ver15
-              text: Microsoft SQL
+            - text: Elastic data map in Microsoft Purview
+              url: /azure/purview/concept-elastic-data-map
+            - text: Understand business glossary features
+              url: /azure/purview/concept-business-glossary
+            - text: Insights into your data estate
+              url: /azure/purview/concept-insights
+
         # Card
-        - title: Security reference
+        - title: Protect data where it lives
           links:
-            - text: Security Development Lifecycle (SDL)
-              url: https://www.microsoft.com/en-us/securityengineering/sdl/
-            - text: Operational Security Assurance
-              url: https://www.microsoft.com/en-us/securityengineering/osa/
-            - text: Secure DevOps
-              url: https://www.microsoft.com/en-us/securityengineering/devsecops
-            - text: Microsoft Security Risk Detection
-              url: https://www.microsoft.com/en-us/security-risk-detection/
-            - text: Azure secure development
-              url: /azure/security/develop/index
+            - text: Deploy information protection
+              url: /microsoft-365/compliance/information-protection-solution
+            - text: Prevent data loss
+              url: /microsoft-365/compliance/dlp-learn-about-dlp
+
         # Card
-        - title: Security programs
+        - title: Manage the data lifecycle
           links:
-            - text: Microsoft Security Response Center
-              url: https://www.microsoft.com/msrc
-            - text: Cyber Defense Operations Center
-              url: https://www.microsoft.com/msrc/cdoc
-            - text: Digital Crimes Unit
-              url: https://news.microsoft.com/on-the-issues/topic/cybersecurity/
-            - text: Government Security Program
-              url: https://www.microsoft.com/en-us/securityengineering/gsp
+            - text: Deploy data lifecycle management
+              url: /microsoft-365/compliance/data-governance-solution
+            - text: Learn about retention policies and labels
+              url: /microsoft-365/compliance/retention
+            - text: Manage records and information
+              url: /microsoft-365/compliance/records-management
+
         # Card
-        - title: Professional services
+        - title: Identify and manage insider risk
           links:
-            - text: Microsoft Detection and Response Team
-              url: https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/
-#            - text: MCS and Premier Catalog
-#              url: file3b.md OR https://learn.microsoft.com/file3b
-            - text: Microsoft cybersecurity reference architectures
-              url: /security/cybersecurity-reference-architecture/mcra
+            - text: Protect against insider risks
+              url: /microsoft-365/compliance/insider-risk-solution-overview
+            - text: Protect against communications risks
+              url: /microsoft-365/compliance/communication-compliance
+
         # Card
-        - title: Security principles
+        - title: Improve your compliance posture
           links:
-            - text: Microsoft Trust Center
-              url: https://servicetrust.microsoft.com/ViewPage/HomePage
-            - text: Compliance
-              url: https://www.microsoft.com/trust-center/compliance/compliance-overview
-            - text: Privacy
-              url: https://www.microsoft.com/trust-center/privacy
-            - text: Azure governance
-              url: /azure/governance/
+            - text: What is Compliance Manager?
+              url: /microsoft-365/compliance/compliance-manager
+            - text: Audit user and admin operations
+              url: /microsoft-365/compliance/audit-solutions-overview
+            - text: Solutions for eDiscovery
+              url: /microsoft-365/compliance/ediscovery
+
+        # Card
+        - title: Manage privacy risk
+          links:
+            - text: Learn about Microsoft Priva
+              url: /privacy/priva/priva-overview
+            - text: Get started wtih Priva
+              url: /privacy/priva/priva-setup
+            - text: Manage data privacy and data protection
+              url: /microsoft-365/solutions/data-privacy-protection
+
+        # Card
+        - title: Continued learning
+          links:
+            - text: Data security for today’s world
+              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/d1gncgmwkr277k

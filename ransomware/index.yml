@@ -1,0 +1,116 @@
+### YamlMime:Landing
+
+title: Ransomware and extortion # < 60 chars
+summary: Learn how to better protect your organization from ransomware and extortion  # < 160 chars
+
+metadata:
+  title: Ransomware and extortion # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to better protect your organization from ransomware and extortion  # Required; article description that is displayed in search results. < 160 chars.
+  services: na
+  ms.service: microsoft-365-security
+  ms.subservice: m365d
+  ms.topic: landing-page # Required
+  ms.collection: na
+  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
+  ms.author: macapara #Required; microsoft alias of author; optional team alias.
+  ms.date: 02/02/2023 #Required; mm/dd/yyyy format.
+  
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 
+  - title: Frequently asked questions
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: What are the stages in a ransomware attack?
+          url:  human-operated-ransomware.md
+        - text: How do I detect pre-ransom activities?
+          url:  /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
+        - text: How do I back-up and restore post ransomware attack?
+          url:  /azure/security/fundamentals/backup-plan-to-protect-against-ransomware
+        - text: How do I proactively hunt for ransomware?
+          url:  human-operated-ransomware.md
+        - text: Can I download a ransomware incident response playbook? 
+          url:  https://download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
+        - text: What are common types of malware that are used in ransomware campaigns?
+          url:  human-operated-ransomware.md
+
+# Card
+  - title: Protect against ransomware and extortion
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+        - text: Overview
+          url: protect-against-ransomware.md
+        - text: Prepare your recovery plan
+          url: protect-against-ransomware-phase1.md
+        - text: Limit the scope of damage
+          url: protect-against-ransomware-phase2.md
+        - text: Make it hard to get in
+          url: protect-against-ransomware-phase3.md
+
+
+# Card
+  - title: Defense against ransomware
+    linkLists:
+       - linkListType: reference
+         links:
+         - text: In Microsoft 365
+           url:  /compliance/assurance/assurance-malware-and-ransomware-protection
+         - text: In Azure
+           url:  /azure/security/fundamentals/ransomware-protection
+         - text: In OneNote
+           url:  dart-ransomware-case-study.md
+         - text: In Sentinel
+           url:  /azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
+         - text: In SharePoint
+           url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
+
+# Card
+  - title: Threat intelligence for Microsoft 365 Defender subscription holders
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: Threat analytics reports
+          url:  /microsoft-365/security/defender/threat-analytics
+        - text: Microsoft Defender Threat Intelligence 
+          url:  /microsoft-365/security/defender/defender-threat-intelligence
+
+# Card
+  - title: Blogs
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: Ransomware as a service. Understanding the cybercrime gig economy and how to protect yourself
+          url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
+        - text: Sharing how Microsoft protects against ransomware
+          url:  https://www.microsoft.com/insidetrack/blog/sharing-how-microsoft-protects-against-ransomware/
+        - text: Why Microsoft uses a playbook to guard against ransomware
+          url:  https://www.microsoft.com/insidetrack/blog/why-microsoft-uses-a-playbook-to-guard-against-ransomware/
+        - text: Building an anti-ransomware program at Microsoft focused on an Optimal Ransomware Resiliency State
+          url:  https://www.microsoft.com/insidetrack/blog/building-an-anti-ransomware-program-at-microsoft-focused-on-an-optimal-ransomware-resiliency-state/
+        - text: DEV-0569 finds new ways to deliver Royal ransomware, various payloads
+          url:  https://www.microsoft.com/security/blog/2022/11/17/dev-0569-finds-new-ways-to-deliver-royal-ransomware-various-payloads/
+        - text: Stopping C2 communications in human-operated ransomware through network protection
+          url:  https://www.microsoft.com/security/blog/2022/11/03/stopping-c2-communications-in-human-operated-ransomware-through-network-protection
+        - text: Raspberry Robin worm part of larger ecosystem facilitating pre-ransomware activity
+          url:  https://www.microsoft.com/security/blog/2022/10/27/raspberry-robin-worm-part-of-larger-ecosystem-facilitating-pre-ransomware-activity/
+        - text: DEV-0832 (Vice Society) opportunistic ransomware campaigns impacting US education sector
+          url:  https://www.microsoft.com/security/blog/2022/10/25/dev-0832-vice-society-opportunistic-ransomware-campaigns-impacting-us-education-sector/
+# Card
+  - title: Ransomware incident response playbooks
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: Detecting HumOr ransomware with Microsoft 365
+          url:  /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
+        - text: Responding to ransomware attacks
+          url:  /microsoft-365/security/defender/playbook-responding-ransomware-m365-defender
+        - text: Microsoft Incident Response approach
+          url:  /security/operations/incident-response-playbook-dart-ransomware-approach
+        - text: Ransomware Incident Response playbook template
+          url:  //download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf

@@ -6,6 +6,8 @@ ms.service: security
 author: garycentric
 ms.author: v-gmoor
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-pillar
 ---
 
 
@@ -81,6 +83,7 @@ Most importantly, the health and trustworthiness of apps that run on those endpo
       </td>
    </tr>
 </table>
+
 
 ## Endpoint Zero Trust deployment guide
 
@@ -568,7 +571,7 @@ Building and maintaining customized operating system images is a time-consuming 
 
 **Microsoft Azure**
 
-[Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
+[Azure Active Directory](https://azure.microsoft.com/products/active-directory/)
 
 **Microsoft 365**
 
@@ -578,6 +581,30 @@ Building and maintaining customized operating system images is a time-consuming 
 [Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/threat-protection/endpoint-defender)
 
 [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview)
+
+## Zero Trust and your OT networks
+
+[Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) is a unified security solution built specifically to identify devices, vulnerabilities, and threats across IoT and operational technology (OT) networks. Use Defender for IoT to apply security across your entire IoT/OT environment, including existing devices that may not have built-in security agents.
+
+OT networks often differ from traditional IT infrastructure, and need a specialized approach to zero trust. OT systems use unique technology with proprietary protocols, and may have aging platforms with limited connectivity and power, or specific safety requirements and unique exposures to physical attacks.
+
+Defender for IoT supports zero trust principles by addressing OT-specific challenges, such as:
+
+- Helping you control remote connections into your OT systems
+- Reviewing and helping you reduce interconnections between dependent systems
+- Finding single points of failure in your network
+
+Deploy Defender for IoT network sensors to detect devices and traffic and watch for OT-specific vulnerabilities. Segment your sensors into sites and zones across your network to monitor traffic between zones, and follow Defender for IoT's risk-based mitigation steps to lower risk across your OT environment. Defender for IoT then continuously monitors your devices for anomalous or unauthorized behavior. 
+
+:::image type="content" source="../media/integrate/endpoints/defender-for-iot.png" alt-text="Diagram of Defender for IoT deployed in an OT network." border="false":::
+
+Integrate with Microsoft services, such as [Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring) and other partner services, including both SIEM and ticketing systems, to share Defender for IoT data across your organization.
+
+For more information, see:
+
+- [Zero Trust and your OT networks](/azure/defender-for-iot/organizations/concept-zero-trust)
+- [Monitor your OT networks with Zero Trust principles](/azure/defender-for-iot/organizations/monitor-zero-trust)
+- [Investigate Defender for IoT incidents with Microsoft Sentinel](/azure/defender-for-iot/organizations/iot-advanced-threat-monitoring)
 
 ## Conclusion
 

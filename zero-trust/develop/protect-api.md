@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 10/10/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to learn best practices for protecting my API through registration, defining permissions and consent, and enforcing access to achieve my Zero Trust goals.
 ---
 # Protecting APIs
@@ -112,7 +114,7 @@ After you validate your token, your API will look at the claims in the token to 
 
 For delegated permission tokens, have your API inspect the scope (`scp`) claim to see what the application has consent to do. Inspect the object ID (`oid`) or subject key (`sub`) claims to see the user on whose behalf the application is working.
 
-Then have your API check to ensure that the user also has access to the requested operation. If your API has defined roles for assigning to users and groups, have your API check for any roles claims in the token and behave accordingly. For application permission tokens, there will be no scope (`scp`) claim. Instead, have your API determine what application permissions the workload has received by inspecting the roles claim.
+Then have your API check to ensure that the user also has access to the requested operation. If your API has [defined roles for assigning to users and groups](configure-tokens-group-claims-app-roles.md), have your API check for any roles claims in the token and behave accordingly. For application permission tokens, there will be no scope (`scp`) claim. Instead, have your API determine what application permissions the workload has received by inspecting the roles claim.
 
 After your API has validated the token and scopes and processed the object ID (`oid`), subject key (`sub`), and roles claims, your API can return the results.
 
@@ -120,6 +122,8 @@ After your API has validated the token and scopes and processed the object ID (`
 
 - [Example of API protected by Microsoft identity consent framework](protected-api-example.md) helps you to design least privilege application permissions strategies for the best user experience.
 - [Calling an API from another API](api-calls-api.md) helps you to ensure Zero Trust when you have one API that needs to call another API and securely develop your application when it's working on behalf of a user.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [Requesting permissions that require administrative consent](permissions-require-admin-consent.md) describes the permission and consent experience when application permissions will require administrative consent.
 - In this [Quickstart: Protect a web API with the Microsoft identity platform](/azure/active-directory/develop/web-api-quickstart?pivots=devlang-aspnet), learn how to protect an ASP.NET web API by restricting access to its resources to authorized accounts only.

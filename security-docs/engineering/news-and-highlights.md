@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 10/05/2022
+ms.date: 05/29/2023
 ---
 
 # Security news and highlights
@@ -15,11 +15,24 @@ The security documentation site provides you with current news and highlights fr
 
 Below are past news and highlights that you may have missed or would like to revisit.
 
+2023
+
+- [Quickly deploy ransomware protections](/security/ransomware/protect-against-ransomware)
+- [Security rapid modernization plan](/security/privileged-access-workstations/security-rapid-modernization-plan)
+- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)
+- [Ransomware protection in Azure](/azure/security/fundamentals/ransomware-protection)
+- [Learn about the Microsoft Entra family of multicloud identity and access solutions](/entra/)
+- [Set up secure file sharing and collaboration with Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams)
+- [Apply Zero Trust principles to Azure IaaS](/security/zero-trust/azure-infrastructure-overview)
+- [Guiding principles of Zero Trust](/security/zero-trust/zero-trust-overview)
+- [Cloud adoption assessments](/assessments/93dfb79b-71af-404d-897e-3928ecfb92b1/)
+- [The immutable laws of security](/security/zero-trust/ten-laws-of-security)
+
 2022
 
 - [Resources for accelerating your Zero Trust journey](https://www.microsoft.com/security/blog/2021/05/24/resources-for-accelerating-your-zero-trust-journey/)
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
-- [3 steps to prevent and recover from ransomware](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Three steps to prevent and recover from ransomware](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [Zero Trust essentials video series](https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu)
 - [Human-operated ransomware](/security/compass/human-operated-ransomware)
 

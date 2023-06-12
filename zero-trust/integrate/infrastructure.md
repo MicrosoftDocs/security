@@ -1,12 +1,14 @@
 ---
 title: Zero Trust integration for Infrastructure overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Cloud to help customers adopt a Zero Trust model and keep their organizations secure.
-ms.date: 09/17/2021
+ms.date: 02/22/2023
 ms.service: security
 author: memildin
 manager: rkarlin
 ms.author: memildin
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-partner
 ---
 
 # Infrastructure integrations
@@ -21,7 +23,7 @@ This guidance is for software providers and technology partners who want to enha
 
 ## Zero Trust integration for Infrastructure guide
 
-This integration guide includes strategy and instructions for integrating with [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) and its integrated cloud workload protection platform (CWPP), [Microsoft Defender for Cloud](/azure/security-center/azure-defender).
+This integration guide includes strategy and instructions for integrating with [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) and its integrated cloud workload protection plans, **Microsoft Defender for ...** (Servers, Containers, Databases, Storage, App Services, and more).
 
 The guidance includes integrations with the most popular Security Information and Event Management (SIEM), Security Orchestration Automated Response (SOAR), Endpoint Detection and Response (EDR), and IT Service Management (ITSM) solutions.
 
@@ -39,21 +41,21 @@ There's a clear mapping from the goals we've described in the [infrastructure de
 
 |Zero Trust goal  | Defender for Cloud feature  |
 |---------|---------|
-|Assess compliance | In Defender for Cloud, every subscription automatically has the [Azure Security Benchmark security initiative assigned](/azure/security-center/security-policy-concept).<br>Using the [secure score tools](/azure/security-center/secure-score-security-controls) and the [regulatory compliance dashboard](/azure/security-center/update-regulatory-compliance-packages) you can get a deep understanding of your customer's security posture. |
+|Assess compliance | In Defender for Cloud, every subscription automatically has the [Microsoft cloud security benchmark (MCSB)](/security/benchmark/azure/introduction) assigned as the [default security initiative](/azure/defender-for-cloud/security-policy-concept).<br>Using the [secure score tools](/azure/defender-for-cloud/secure-score-security-controls) and the [regulatory compliance dashboard](/azure/defender-for-cloud/update-regulatory-compliance-packages) you can get a deep understanding of your customer's security posture. |
 |Harden configuration | Assigning security initiatives to subscriptions, and reviewing the secure score, leads you to the [hardening recommendations](/azure/security-center/recommendations-reference) built into Defender for Cloud. Defender for Cloud periodically analyzes the compliance status of resources to identify potential security misconfigurations and weaknesses. It then provides recommendations on how to remediate those issues.    |
-|Employ hardening mechanisms | As well as one-time fixes to security misconfigurations, Defender for Cloud offers tools to ensure continued hardening such as:<br>[Just-in-time (JIT) virtual machine (VM) access](/azure/security-center/just-in-time-explained)<br>[Adaptive network hardening](/azure/security-center/security-center-adaptive-network-hardening)<br>[Adaptive application controls](/azure/security-center/security-center-adaptive-application). |
-|Set up threat detection  | Defender for Cloud offers an integrated cloud workload protection platform (CWPP), Microsoft Defender for Cloud.<br>Microsoft Defender for Cloud provides advanced, intelligent, protection of Azure and hybrid resources and workloads.<br>One of the Microsoft Defender plans, Microsoft Defender for servers, includes a native integration with [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/).<br>Learn more in [Introduction to Microsoft Defender for Cloud](/azure/security-center/azure-defender). |
+|Employ hardening mechanisms | As well as one-time fixes to security misconfigurations, Defender for Cloud includes features to further harden your resources such as:<br>[Just-in-time (JIT) virtual machine (VM) access](/azure/defender-for-cloud/just-in-time-access-usage)<br>[Adaptive network hardening](/azure/defender-for-cloud/adaptive-network-hardening)<br>[Adaptive application controls](/azure/defender-for-cloud/adaptive-application-controls). |
+|Set up threat detection  | Defender for Cloud offers integrated cloud workload protection plans, for threat detection and response. The plans provide advanced, intelligent, protection of Azure, hybrid, and multicloud resources and workloads.<br>One of the Microsoft Defender plans, Defender for servers, includes a native integration with [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/).<br>Learn more in [Introduction to Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction). |
 |Automatically block suspicious behavior | Many of the hardening recommendations in Defender for Cloud offer a *deny* option. This feature lets you prevent the creation of resources that don't satisfy defined hardening criteria. Learn more in [Prevent misconfigurations with Enforce/Deny recommendations](/azure/defender-for-cloud/prevent-misconfigurations).  |
-|Automatically flag suspicious behavior | Microsoft Defender for Cloud's security alerts are triggered by advanced detections. Defender for Cloud prioritizes and lists the alerts, along with the information needed for you to quickly investigate the problem. Defender for Cloud also provides detailed steps to help you remediate attacks. For a full list of the available alerts, see [Security alerts - a reference guide](/azure/security-center/alerts-reference).|
+|Automatically flag suspicious behavior | Microsoft Defender for Cloud's security alerts are triggered by advanced detections. Defender for Cloud prioritizes and lists the alerts, along with the information needed for you to quickly investigate the problem. Defender for Cloud also provides detailed steps to help you remediate attacks. For a full list of the available alerts, see [Security alerts - a reference guide](/azure/defender-for-cloud/alerts-reference).|
 |||
 
 ### Protect your  Azure PaaS services with Defender for Cloud
-With Defender for Cloud enabled on your subscription, and Microsoft Defender for Cloud enabled for all available resource types, you'll have a layer of intelligent threat protection - powered by [Microsoft Threat Intelligence](https://go.microsoft.com/fwlink/?linkid=2128684) - protecting  resources in Azure Key Vault, Azure Storage, Azure DNS, and other Azure PaaS services. For a full list, see [What resource types can Microsoft Defender for Cloud secure?](/azure/security-center/azure-defender#what-resource-types-can-azure-defender-secure).
+With Defender for Cloud enabled on your subscription, and the Defender workload protection plans enabled for all available resource types, you'll have a layer of intelligent threat protection - powered by [Microsoft Threat Intelligence](https://go.microsoft.com/fwlink/?linkid=2128684) - protecting  resources in Azure Key Vault, Azure Storage, Azure DNS, and other Azure PaaS services. For a full list, see the PaaS services listed in the [Support matrix](/azure/defender-for-cloud/support-matrix-defender-for-cloud#features-supported-in-different-azure-cloud-environments).
 
 ### Azure Logic Apps
 Use [Azure Logic Apps](/azure/logic-apps/) to build automated scalable workflows, business processes, and enterprise orchestrations to integrate your apps and data across cloud services and on-premises systems.
 
-Defender for Cloud's [workflow automation](/azure/security-center/workflow-automation) feature lets you automate responses to Defender for Cloud triggers. 
+Defender for Cloud's [workflow automation](/azure/defender-for-cloud/workflow-automation) feature lets you automate responses to Defender for Cloud triggers. 
 
 This is great way to define and respond in an automated, consistent manner when threats are discovered. For example, to notify relevant stakeholders, launch a change management process, and apply specific remediation steps when a threat is detected.
 
@@ -83,7 +85,7 @@ There are two approaches to ensuring your Defender for Cloud data is represented
   - [Connect all subscriptions in your tenant to Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/azure-security-center-auto-connect-to-sentinel/ba-p/1387539)
 
   > [!TIP]
-  > Learn more in [Connect security alerts from Microsoft Defender for Cloud](/azure/sentinel/connect-azure-security-center).
+  > Learn more in [Connect security alerts from Microsoft Defender for Cloud](/azure/sentinel/connect-defender-for-cloud).
 
 - **Stream your audit logs** - An alternative way to investigate Defender for Cloud alerts in Microsoft Sentinel is to stream your audit logs into Microsoft Sentinel:
 
@@ -107,11 +109,11 @@ You can use this API to stream alerts from the **entire tenant** (and data from 
 
 #### Stream alerts with Azure Monitor
 
-Use Defender for Cloud's [continuous export](/azure/security-center/continuous-export) feature to connect Defender for Cloud with Azure monitor via Azure Event Hubs and stream alerts into **ArcSight**, **SumoLogic**, Syslog servers, **LogRhythm**, **Logz.io Cloud Observability Platform**, and other monitoring solutions.
+Use Defender for Cloud's [continuous export](/azure/defender-for-cloud/continuous-export) feature to connect Defender for Cloud with Azure monitor via Azure Event Hubs and stream alerts into **ArcSight**, **SumoLogic**, Syslog servers, **LogRhythm**, **Logz.io Cloud Observability Platform**, and other monitoring solutions.
 
-Learn more in [Stream alerts with Azure Monitor](/azure/security-center/export-to-siem#stream-alerts-with-azure-monitor).
+Learn more in [Stream alerts with Azure Monitor](/azure/defender-for-cloud/export-to-siem#stream-alerts-with-azure-monitor).
 
-This can also be done at the Management Group level using Azure Policy, see [Create continuous export automation configurations at scale](/azure/security-center/continuous-export?tabs=azure-policy#configure-continuous-export-at-scale-using-the-supplied-policies).
+This can also be done at the Management Group level using Azure Policy, see [Create continuous export automation configurations at scale](/azure/defender-for-cloud/continuous-export?tabs=azure-policy#configure-continuous-export-at-scale-using-the-supplied-policies).
 
 > [!TIP]
 > To view the event schemas of the exported data types, visit the [Event Hub event schemas](https://aka.ms/ASCAutomationSchemas).
@@ -122,13 +124,13 @@ This can also be done at the Management Group level using Azure Policy, see [Cre
 
 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/) is a holistic, cloud-delivered endpoint security solution.
 
-Defender for Cloud's integrated CWPP for machines, [Microsoft Defender for servers](/azure/security-center/defender-for-servers-introduction), includes an integrated license for [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/security/endpoint-defender). Together, they provide comprehensive endpoint detection and response (EDR) capabilities. For more information, see [Protect your endpoints](/azure/security-center/security-center-wdatp?tabs=linux).
+[Microsoft Defender for servers](/azure/security-center/defender-for-servers-introduction), includes an integrated license for [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/security/endpoint-defender). Together, they provide comprehensive endpoint detection and response (EDR) capabilities. For more information, see [Protect your endpoints](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=linux).
 
-When Defender for Endpoint detects a threat, it triggers an alert. The alert is shown in Defender for Cloud. From Defender for Cloud, you can also pivot to the Defender for Endpoint console and perform a detailed investigation to uncover the scope of the attack. Learn more about [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+When Defender for Endpoint detects a threat, it triggers an alert. The alert is shown in Defender for Cloud and you can pivot to the Defender for Endpoint console to perform a detailed investigation and uncover the scope of the attack. [Learn more about Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
 #### Other EDR solutions
 
-Defender for Cloud provides hardening recommendations to ensure you're securing your organization's resources according to the guidance of [Azure Security Benchmark](/security/benchmark/azure/introduction). One of the controls in the benchmark relates to endpoint security: [ES-1: Use Endpoint Detection and Response (EDR)](/security/benchmark/azure/security-controls-v2-endpoint-security).
+Defender for Cloud provides hardening recommendations to ensure you're securing your organization's resources according to the guidance of [Microsoft cloud security benchmark (MCSB)](/security/benchmark/azure/introduction). One of the controls in the benchmark relates to endpoint security: [ES-1: Use Endpoint Detection and Response (EDR)](/security/benchmark/azure/security-controls-v2-endpoint-security).
 
 There are two recommendations in Defender for Cloud to ensure you've enabled endpoint protection and it's running well. These recommendations are checking for the presence and operational health of EDR solutions from:
 
@@ -147,16 +149,16 @@ Microsoft Defender for Cloud protects workloads wherever they're running: in Azu
 
 #### Integrate Defender for Cloud with on-premises machines
 
-To secure hybrid cloud workloads, you can extend Defender for Cloud's protections by connecting  on-premises machines to [Azure Arc enabled servers](/azure/azure-arc/servers/overview).
+To secure hybrid cloud workloads, you can extend Defender for Cloud's protections by connecting on-premises machines to [Azure Arc enabled servers](/azure/azure-arc/servers/overview).
 
 Learn about how to connect machines in [Connect your non-Azure machines to Defender for Cloud](/azure/security-center/quickstart-onboard-machines?pivots=azure-arc).
 
 #### Integrate Defender for Cloud with other cloud environments
 
-To view the security posture of **Amazon Web Services** machines in Defender for Cloud, onboard  AWS accounts into Defender for Cloud. This will integrate AWS Security Hub and Microsoft Defender for Cloud for a unified view of Defender for Cloud recommendations and AWS Security Hub findings and provide a range of benefits as described in  [Connect your AWS accounts to Microsoft Defender for Cloud](/azure/security-center/quickstart-onboard-aws).
+To view the security posture of **Amazon Web Services** machines in Defender for Cloud, onboard  AWS accounts into Defender for Cloud. This will integrate AWS Security Hub and Microsoft Defender for Cloud for a unified view of Defender for Cloud recommendations and AWS Security Hub findings and provide a range of benefits as described in [Connect your AWS accounts to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-aws).
 
-To view the security posture of **Google Cloud Platform** machines in Defender for Cloud, onboard GCP accounts into Defender for Cloud. This will integrate GCP Security Command and Microsoft Defender for Cloud for a unified view of Defender for Cloud recommendations and GCP Security Command Center findings and provide a range of benefits as described in [Connect your GCP accounts to Microsoft Defender for Cloud](/azure/security-center/quickstart-onboard-gcp).
+To view the security posture of **Google Cloud Platform** machines in Defender for Cloud, onboard GCP accounts into Defender for Cloud. This will integrate GCP Security Command and Microsoft Defender for Cloud for a unified view of Defender for Cloud recommendations and GCP Security Command Center findings and provide a range of benefits as described in [Connect your GCP accounts to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-gcp).
 
 ## Next steps
 
-To learn more about Microsoft Defender for Cloud and Microsoft Defender for Cloud, see the complete [Defender for Cloud documentation](/azure/security-center/).
+To learn more about Microsoft Defender for Cloud, see [the complete Defender for Cloud documentation](/azure/defender-for-cloud/).

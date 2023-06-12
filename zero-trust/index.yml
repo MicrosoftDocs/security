@@ -8,7 +8,7 @@ metadata:
   description: Learn what the Zero Trust security model is and how to implement deployment steps to apply the security architecture in your organization.  # Required; article description that is displayed in search results. < 160 chars.
   services: na
   ms.service: microsoft-365-security
-  ms.subservice:: m365d
+  ms.subservice: m365d
   ms.topic: landing-page # Required
   ms.collection: na
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
@@ -28,8 +28,37 @@ landingContent:
         links:
         - text: What is Zero Trust?
           url:  zero-trust-overview.md
+        - text: Identity
+          url: /security/zero-trust/deploy/identity
+        - text: Endpoints
+          url: /security/zero-trust/deploy/endpoints
+        - text: Applications
+          url: /security/zero-trust/deploy/applications
+        - text: Data
+          url: /security/zero-trust/deploy/data
+        - text: Infrastructure
+          url: /security/zero-trust/deploy/infrastructure
+        - text: Networks
+          url: /security/zero-trust/deploy/networks
+        - text: Visibility, automation, and orchestration
+          url: /security/zero-trust/deploy/visibility-automation-orchestration
+        - text: Small business guidance 
+          url: guidance-smb-partner.md
+ 
+  # Card (optional)
+  - title: Zero Trust adoption framework
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: Overview
+          url:  adopt/zero-trust-adoption-overview.md
+        - text: Secure remote and hybrid work
+          url:  adopt/secure-remote-hybrid-work.md
+        - text: Identify and protect sensitive business data
+          url:  adopt/identify-protect-sensitive-business-data.md
+
  # Card
-  - title: Microsoft 365 Zero Trust deployment plan
+  - title: Microsoft 365 deployment plan for Zero Trust
     linkLists:
       - linkListType: deploy
         links:
@@ -37,7 +66,7 @@ landingContent:
             url: /microsoft-365/enterprise/deploy-identity-solution-overview
           - text: Zero Trust identity and device configurations
             url: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations
-          - text: Manage endpoints with Microsft 365 Defender
+          - text: Manage endpoints with Microsoft 365 Defender
             url: /microsoft-365/solutions/manage-devices-with-intune-overview
           - text: Evaluate, pilot, and deploy Microsoft 365 Defender
             url: /microsoft-365/security/defender/eval-overview
@@ -45,8 +74,28 @@ landingContent:
             url: /microsoft-365/compliance/information-protection-solution
           - text: Deploy information protection for data privacy regulations
             url: /microsoft-365/solutions/information-protection-deploy
+          - text: Integrate SaaS apps for Zero Trust with Microsoft 365 
+            url: integrate-saas-apps.md
+          - text: Setup guide for Zero Trust with Microsoft 365 
+            url: https://go.microsoft.com/fwlink/?linkid=2222968
+          - text: Advanced deployment guide for Zero Trust with Microsoft 365 (requires sign-in)
+            url: https://go.microsoft.com/fwlink/?linkid=2224820
 
-
+ # Card
+  - title: Zero Trust deployment plans with Microsoft Azure
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Azure IaaS
+            url: azure-infrastructure-overview.md
+          - text: Azure Virtual Desktop
+            url: azure-infrastructure-avd.md
+          - text: Azure Virtual WAN
+            url: azure-virtual-wan.md
+          - text: IaaS applications in Amazon Web Services
+            url: secure-iaas-apps.md
+          - text: Microsoft Sentinel and Microsoft 365 Defender
+            url: /security/operations/siem-xdr-overview
 
  # Card
   - title: Technology partner integrations
@@ -55,25 +104,46 @@ landingContent:
         links:
           - text: Integrate with Microsoft's Zero Trust solutions
             url: /security/zero-trust/integrate/overview
-
+          - text: Identity
+            url: /security/zero-trust/integrate/identity
+          - text: Endpoints
+            url: /security/zero-trust/integrate/endpoints
+          - text: Applications
+            url: /security/zero-trust/integrate/applications
+          - text: Data
+            url: /security/zero-trust/integrate/data
+          - text: Infrastructure
+            url: /security/zero-trust/integrate/infrastructure
+          - text: Networks
+            url: /security/zero-trust/integrate/networks
+          - text: Visibility, automation, and orchestration
+            url: /security/zero-trust/integrate/visibility-automation-orchestration
 
 # Card
-  - title: Rapid Modernization Plan (RaMP)
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: User access and productivity
-            url: user-access-productivity-overview.md
-          - text: Data, compliance, and governance
-            url: data-compliance-governance-overview.md
-   
-            
-  # Card
   - title: Developer guidance
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Develop using Zero Trust principles
             url: /security/zero-trust/develop/overview
+          - text: Building apps that secure identity through permissions and consent
+            url: /security/zero-trust/develop/identity
+          - text: Securing DevOps environments for Zero Trust
+            url: /security/zero-trust/develop/secure-devops-environments-zero-trust
+
+# Card
+  - title: Rapid Modernization Plan (RaMP)
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Explicitly validate trust for all access requests
+            url: user-access-productivity-validate-trust.md
+          - text: Ransomware recovery readiness
+            url: data-compliance-gov-ransomware-recovery-readiness.md
+          - text: Data protection
+            url: data-compliance-gov-data.md
+   
+            
+
 
              

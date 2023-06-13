@@ -1,7 +1,7 @@
 ---
 title: Technical Data
 description: This document provides details of the Technical Data offering that provides access to a broad range of confidential technical information, exclusive of source code, which allows government agencies and international organizations to evaluate the trustworthiness of Microsoft products and services.
-ms.date: 06/05/2023
+ms.date: 06/12/2023
 ms.service: security
 ms.author: xili13
 author: laramillermsft
@@ -20,13 +20,13 @@ Have assurance questions? Need access? GSP participants can use the Technical Da
  - **Direct dialogue** with Microsoft engineers or security experts through coordinated meetings by the GSP team
  - **Early access** to documentation about Microsoft’s products and services
 
-![Photo showing a group of people attending a presentation. ](../media/security-gsp/technicaldata-1.jpg)
+<center><img src="../media/security-gsp/technicaldata-1.jpg" width="60%" alt="Photo showing a group of people attending a presentation." data-linktype="relative-path"/></center> 
 
  ## Technical Trips
 
 In-person focused conversations with Microsoft engineers and security experts to cover security questions and geared towards providing participants with a greater degree of confidence in Microsoft products and services. Technical trips are deep technical conversations (held in a meeting setting) with Microsoft product groups about specific security topics of interest. To plan and facilitate these, the GSP team works closely with the agency to understand the security assurance goals and assist with selecting the best Microsoft engineering teams to meet with the agency. Technical trips are accommodated based on Micrsoft engineering team availability.
 
-![Photo showing a person viewing a computer monitor.](../media/security-gsp/technicaldata-2.jpg)
+<center><img src="../media/security-gsp/technicaldata-2.jpg" width="60%" alt="Photo showing a person viewing a computer monitor." data-linktype="relative-path"/></center> 
 
 ---
 

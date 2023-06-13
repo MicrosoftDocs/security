@@ -1,11 +1,3 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
-  items:
-  - name: Security
-    href: /security
-    topicHref: /security/index
-    items:
-    - name: Microsoft Security operations
-      href: /security/operations/
-      topicHref: /security/operations/overview
+- name: Security
+  tocHref: /security/
+  topicHref: /security/index

@@ -42,7 +42,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/security/operations/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
+      "uhfHeaderId": "MSDocsHeader-Security",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/security"
     },

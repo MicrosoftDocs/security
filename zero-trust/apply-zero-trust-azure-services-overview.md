@@ -14,7 +14,7 @@ ms.collection:
 
 # Overview – Apply Zero Trust principles to Azure services
 
-This series of articles help you apply the principles of Zero Trust to your services in Microsoft Azure using a multi-disciplinary methodology. Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles:
+This series of articles helps you apply the principles of Zero Trust to your services in Microsoft Azure using a multi-disciplinary methodology. Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles:
 
 - Verify explicitly
 - Use least privileged access
@@ -34,21 +34,19 @@ These articles show you how to apply Zero Trust approach to these new or already
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
 - [Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)
 
-For more information about recommendations in your Cloud Adoption Framework and Azure landing zones, see these resources:
-
 ## Content architecture
 
 Here is the content architecture for this set of articles that contain the set of platform and workload articles to apply Zero Trust principles to Azure services.
 
 :::image type="content" source="media/apply-zero-trust-azure-services-overview/content-architecture.svg" alt-text="Diagram of the content architecture for applying Zero Trust to Azure services." lightbox="media/apply-zero-trust-azure-services-overview/content-architecture.svg":::
 
-You apply the guidance in the articles in a stack from the bottom up. The articles don't need to be followed in the order indicated in all cases, but all of the platform articles should be implemented for the workload for Zero Trust-based protection.
+You apply the guidance in the articles in a stack from the bottom up.
 
 | Workload | Platform set of articles (from the bottom up) |
 | --- | --- |
 | IaaS apps in Amazon Web Services (AWS) | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft 365 Defender </li></ul> |
-| Azure Virtual Desktop | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft 365 Defender </li><li> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) </li><li> Storage </li></ul> |
-| Virtual machines | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft 365 Defender </li><li> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) </li><li> Storage  </li></ul><br> Additionally, for Windows and Linux servers, onboard them to Microsoft Defender for Endpoint. </li></ul> |
+| Spoke VNet with Azure IaaS services | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft 365 Defender </li><li> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) </li><li> Storage </li></ul> |
+| Azure Virtual Desktop or virtual machines | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft 365 Defender </li><li> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) </li><li> Storage </li><li> Spoke VNet with Azure IaaS services </li></ul>  |
 
 It’s important to note that the guidance in this series of articles is more specific for this type of architecture than the guidance provided in the [Cloud Adoption Framework](/azure/cloud-adoption-framework/get-started/index) and [Azure landing zone](/azure/cloud-adoption-framework/ready/landing-zone/index) architectures. If you have applied the guidance in either of these resources, be sure to also review this series of articles for additional recommendations.  
 

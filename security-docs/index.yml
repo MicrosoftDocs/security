@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 06/02/2023
+  ms.date: 06/08/2023
 
 
 # Maximum of 8 items
@@ -35,8 +35,8 @@ highlightedContent:
       itemType: concept
       url: /security/ransomware/human-operated-ransomware
     # Card
-    - title: Both sides of bug hunting - BlueHat podcast
-      itemType: reference
+    - title: The BlueHat Podcast - Both sides of bug hunting
+      itemType: learn
       url: https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fbluehatpodcast.com%2F&data=05%7C01%7Cterrylan%40microsoft.com%7C658bda511b06465243e908db5d46045c%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638206327559083836%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=GkcxtotadCYGbOppUjzNMKYg255fQReuZwl6zPXF8Xc%3D&reserved=0
     # Card
     - title: Evaluate and pilot Microsoft 365 Defender

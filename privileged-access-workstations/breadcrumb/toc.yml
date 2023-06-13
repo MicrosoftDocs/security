@@ -1,11 +1,3 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
-  items:
-  - name: Security
-    href: /security
-    topicHref: /security/index
-    items:
-    - name: Securing privileged access workstations
-      href: /security/privileged-access-workstations/
-      topicHref: /security/privileged-access-workstations/overview
+- name: Security
+  tocHref: /security/
+  topicHref: /security/index

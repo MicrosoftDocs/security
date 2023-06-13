@@ -1,12 +1,3 @@
-items:
-- name: Docs
-  tocHref: /
-  topicHref: /
-  items:
-  - name: Security
-    href: /security
-    topicHref: /security/index
-    items:
-    - name: Zero Trust
-      href: /security/zero-trust/
-      topicHref: /security/zero-trust
+- name: Security
+  tocHref: /security/
+  topicHref: /security/index

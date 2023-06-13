@@ -232,9 +232,7 @@ Many organizations can take a four-staged approach to these technical activities
 
 If this staged approach works for your organization, you can use this [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of 4 stages." lightbox="../media/adoption-guide/placeholder.svg":::
-
->> 4-stage figure from PowerPoint
+:::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-tracking.png" alt-text="Example of the four stages to track progress." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-tracking.png":::
 
 ### Stakeholder team
 
@@ -254,9 +252,7 @@ Your stakeholder team for this business scenario includes leaders across your or
 
 The [PowerPoint slide deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of stakeholders." lightbox="../media/adoption-guide/placeholder.svg":::
-
->> stakeholder figure from PowerPoint
+:::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-stakeholders.png" alt-text="Example of stakeholders for modernizing your security posture." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-stakeholders.png":::
 
 ### Technical plans and skills readiness
 

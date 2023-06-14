@@ -63,6 +63,20 @@ This article walks through this business scenario using the same lifecycle phase
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
+<!---
+
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objectives." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+
+The following table is an accessible version of the illustration.
+
+| Define strategy| Plan| Ready| Adopt| Govern and manage |
+| --- | --- | --- | --- | --- |
+| Organizational alignment <br><br> Strategic goals <br><br> Outcomes| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
+
+--->
+
+
+
 ## Define strategy phase
 
 The **Define strategy** phase is critical to define and formalize our efforts to address the “Why?” of this scenario. In this phase, we understand the scenario through business, IT, operational, and strategic perspectives.

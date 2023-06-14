@@ -232,7 +232,7 @@ Many organizations can take a four-staged approach to these technical activities
 
 If this staged approach works for your organization, you can use this [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-tracking.png" alt-text="Example of the four stages to track progress." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-tracking.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png" alt-text="Example of the four stages to track progress." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-tracking.png":::
 
 ### Stakeholder team
 
@@ -325,7 +325,7 @@ Ideally you can accomplish the following:
 
 The following Zero Trust architecture diagram illustrates the relationship of these assets to each other.
 
-:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.png" alt-text="Diagram of ." lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-architecture.svg" alt-text="Diagram of Zero Trust architecture." lightbox="../media/adoption-guide/zero-trust-architecture.svg":::
 
 #### Implement basic hygiene
 

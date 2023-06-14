@@ -178,7 +178,7 @@ On this site you can find:
 - [Zero Trust for small businesses](guidance-smb-partner.md)
 - [Rapid Modernization Plan (RaMP) guidance](zero-trust-ramp-overview.md)
 - [Microsoft 365 deployment plans](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json)
-- [Microsoft Azure deployment plans](azure-infrastructure-overview)
+- [Microsoft Azure deployment plans](azure-infrastructure-overview.md)
 - [Integration guidance for ISVs](integrate/overview.md)
 - [Developer guidance](develop/overview.md)
 

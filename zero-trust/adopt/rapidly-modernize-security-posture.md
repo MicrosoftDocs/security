@@ -52,7 +52,7 @@ Defining security as a business-level imperative is the first step toward a mode
 
 | Traditional role of security as an extension of IT responsibility| Modern security posture with Zero Trust |
 | --- | --- |
-| Traditional protection relies on security specialists that are part of the IT team. Security is an IT function.| Security is a responsibility shared among all levels of the business. Accountability for security rests with the executive, while responsibility is shared using the three Zero trust principles of assume breach, verify explicitly, and least privilege.A Zero Trust model moves security from reactive (who did what and when based on logging) to least privilege (based on just-in-time access to systems as needed). It also implements architecture elements and security operations capabilities to limit the damage from a breach. |
+| Traditional protection relies on security specialists that are part of the IT team. Security is an IT function.| Security is a responsibility shared among all levels of the business. Accountability for security rests with the executive, while responsibility is shared using the three Zero trust principles of assume breach, verify explicitly, and least privilege. A Zero Trust model moves security from reactive (who did what and when based on logging) to least privilege (based on just-in-time access to systems as needed). It also implements architecture elements and security operations capabilities to limit the damage from a breach. |
 
 The Zero Trust adoption [overview article](zero-trust-adoption-overview.md) translates how Zero Trust applies to leadership roles across many organizations. This includes business descriptions of the Zero Trust principles and a business translation of the technical areas included in a Zero Trust architecture, including identities, devices, and app. These topics are good places to begin conversations with your team of leaders. Be sure to probe and gain insights into what motivates the leaders in your organization so you can more easily agree on priorities and gain alignment and participation.
 
@@ -89,7 +89,7 @@ Business alignment can be achieved using one or both of the following approaches
 
 - Take a risk-based approach in which you identify the top risks to your organization and the mitigations that are most appropriate.
 
-- Create a defensive strategy, based on understanding where your digital assets are, what they are composed of, and the relative risk profile based on exfiltration or loss of access to your digital assets.
+- Create a defensive strategy, based on understanding where your digital assets are, what they're composed of, and the relative risk profile based on exfiltration or loss of access to your digital assets.
 
 You can progress through this article using either approach. The technical objectives and work described in the other business scenarios support both approaches.
 
@@ -109,7 +109,7 @@ These tabletop exercises are designed to help organizations walk through differe
 
 These exercises guide participants through the process of a simulated incident and require departments and teams to respond. This helps you evaluate your preparedness in a cross-discipline manner.
 
-These exercises are representative and inclusive of different business units, not just IT or security. Consider working through and modifying the exercises, if needed, to ensure they are relevant for your organization and include representation from different parts of your organization, including marketing, executive leadership, and customer-facing roles that could be impacted by the scenario.
+These exercises are representative and inclusive of different business units, not just IT or security. Consider working through and modifying the exercises, if needed, to ensure they're relevant for your organization and include representation from different parts of your organization, including marketing, executive leadership, and customer-facing roles that could be impacted by the scenario.
 
 The output of these exercises feed into your overall strategy and priorities. The output helps you identify gaps and prioritize remediations. These priorities then inform your work in the plan phase. These exercises can also help create urgency and investment across your leadership team to mitigate the risks that you identify together. 
 
@@ -117,11 +117,11 @@ The output of these exercises feed into your overall strategy and priorities. Th
 
 Many organizations use International Organization for Standardization (ISO) standards resources and tools to gauge an organization’s risk. These provide a structured and comprehensive way for you to review and gauge the risks that apply to your organization, as well as mitigations. For more information, see the [Tracking progress section of the overview article](zero-trust-adoption-overview.md#tracking-progress).
 
-Like the tabletop exercises, the output from this more formal review of your organization’s risks feed into your overall strategy and priorities. This should also help create urgency and investment across your teams to participate in modernizing your security posture.
+Like the tabletop exercises, the output from this more formal review of your organization’s risks feeds into your overall strategy and priorities. This should also help create urgency and investment across your teams to participate in modernizing your security posture.
 
 ### Defensive strategy
 
-With a defensive strategy, you look across your digital estate to identify where your digital assets are, what they are composed of, and the relative risk profile based on the exfiltration or loss of access to your digital assets.
+With a defensive strategy, you look across your digital estate to identify where your digital assets are, what they're composed of, and the relative risk profile based on the exfiltration or loss of access to your digital assets.
 
 You prioritize defensive areas to focus on by taking each area and estimating the potential damage to your business for these common types of incidents:
 
@@ -163,7 +163,7 @@ The nature or industry vertical of your business is a big driver of your strateg
 
 #### Attacker return on investment
 
-Finally, raising the cost of attack for attackers makes your organization more resilient to cybersecurity risk. Beyond meeting specific regulatory requirements, your budget spend should make it more expensive and difficult for an attacker to gain access to your environment and perform activities such as data exfiltration or data destruction. In other words, you reduce the return on investment (ROI) of attackers, causing them to possibly move on to another organization.
+Finally, raising the cost of an attack for attackers makes your organization more resilient to cybersecurity risk. Beyond meeting specific regulatory requirements, your budget spend should make it more expensive and difficult for an attacker to gain access to your environment and perform activities such as data exfiltration or data destruction. In other words, you reduce the return on investment (ROI) of attackers, causing them to possibly move on to another organization.
 
 Attackers are often categorized by level of sophistication and resources (such as existing tools and experienced staff), from lowest to highest: amateur, organized crime, and nation states.
 
@@ -181,7 +181,7 @@ The following figure shows the qualitative relationship between your defensive s
 
 As your defensive strength increases, the cost to the attacker increases and reduces the ROI of the attack effort.
 
-The attacker ROI model helps leaders understand that there are few absolutes. A security posture is never considered perfect nor impenetrable. However, there is a lot of opportunity for your organization to be strategic and prioritize your budget and resources. It’s additional incentive for your team of business leaders to work together to protect your organization.
+The attacker ROI model helps leaders understand that there are few absolutes. A security posture is never considered perfect or impenetrable. However, there is a lot of opportunity for your organization to be strategic and prioritize your budget and resources. It’s additional incentive for your team of business leaders to work together to protect your organization.
 
 <!---
 
@@ -214,7 +214,7 @@ The following table lists common target outcomes to rapidly modernize your secur
 
 ### Document and report on your security posture
 
-Finally, it’s important that you report on your security posture in an ongoing manner, using one or more mechanisms, including Microsoft scoring mechanisms, as well as other dashboards. There are many methods and tools you can use. Through this scenario, you will identify reports and tools that are most helpful for your organization. You will also develop a method of documenting your security posture that works for your organization.
+Finally, it’s important that you report on your security posture in an ongoing manner, using one or more mechanisms, including Microsoft scoring mechanisms, as well as other dashboards. There are many methods and tools you can use. Through this scenario, you'll identify reports and tools that are most helpful for your organization. You'll also develop a method of documenting your security posture that works for your organization.
 
 ## Plan phase
 
@@ -341,7 +341,7 @@ This stage also includes implementing basic hygiene practices. According to the 
 
 ### Stage 3
 
-A security posture requires instrumentation to create visibility. You will want to unify your tools and methods into as few views or dashboards as possible for simplification. The first objective in this stage is to visualize your security posture using audience-appropriate dashboards. 
+A security posture requires instrumentation to create visibility. You'll want to unify your tools and methods into as few views or dashboards as possible for simplification. The first objective in this stage is to visualize your security posture using audience-appropriate dashboards. 
 
 Assuming breach requires us to look for and instrument breach preparedness by implementing and instrumenting continuous monitoring. In this step, document and review the number of portals or views that achieve this function. These can be reports that you compile manually or reports from your security tools, like Secure Score, Compliance Manager, Microsoft 365 Defender, Microsoft Defender for Cloud, Microsoft Sentinel, and other tools.
 
@@ -358,9 +358,9 @@ Stage 3 also includes maturing the managing shadow IT and patching areas of hygi
 
 | Objectives for Stage 3| Resources |
 | --- | --- |
-| Visualise your security posture using audience-appropriate dashboards| [The tracking progress section in the overview article](zero-trust-adoption-overview.md#tracking-progress) provides several examples. <br><br> As you deploy and configure additional security capabilities, look for additional audience-scoped views that are valuable for your organization. For example, see [Monitor Zero Trust (TIC 3.0) security architectures with Microsoft Sentinel](/azure/sentinel/sentinel-solution). |
+| Visualize your security posture using audience-appropriate dashboards| [The tracking progress section in the overview article](zero-trust-adoption-overview.md#tracking-progress) provides several examples. <br><br> As you deploy and configure additional security capabilities, look for additional audience-scoped views that are valuable for your organization. For example, see [Monitor Zero Trust (TIC 3.0) security architectures with Microsoft Sentinel](/azure/sentinel/sentinel-solution). |
 | Document and manage shadow IT using Defender for Cloud Apps| This is a hygiene area you can mature in this stage if you’ve deployed Defender for Cloud Apps. See [Integrate SaaS apps for Zero Trust with Microsoft 365](/security/zero-trust/integrate-saas-apps). |
-| Develop a methodology for patching and updating systems regularly and with time sensitivity| This task within this business scenario is not about how to patch and update systems. Rather, it is about developing a methodology to ensure patching and updating the various components of your digital estate happens on a regular basis with accountability, visibility, and good communication to all affected individuals. Look for opportunities to automate this, where possible. <br><br> [What are the best practices for patching and updating your IT systems?](https://www.linkedin.com/advice/1/what-best-practices-patching-updating) (LinkedIn article) <br><br> [Does Patching Make Perfect?](https://www.infosecurity-magazine.com/opinions/patching-perfect/) (Infosecurity Magazine) |
+| Develop a methodology for patching and updating systems regularly and with time sensitivity| This task within this business scenario isn't about how to patch and update systems. Rather, it is about developing a methodology to ensure patching and updating the various components of your digital estate happens on a regular basis with accountability, visibility, and good communication to all affected individuals. Look for opportunities to automate this, where possible. <br><br> [What are the best practices for patching and updating your IT systems?](https://www.linkedin.com/advice/1/what-best-practices-patching-updating) (LinkedIn article) <br><br> [Does Patching Make Perfect?](https://www.infosecurity-magazine.com/opinions/patching-perfect/) (Infosecurity Magazine) |
 
 ### Stage 4
 
@@ -388,7 +388,7 @@ the following table is an example of how this can work for the **Identify risks 
 
 | Ready task | Actions |
 | --- | --- |
-| Evaluate| Decide what resources you will use to evaluate risks and who should be included in the activities. This can include using the tabletop exercises or the ISO standards. Determine who in your organization should participate. |
+| Evaluate| Decide what resources you'll use to evaluate risks and who should be included in the activities. This can include using the tabletop exercises or the ISO standards. Determine who in your organization should participate. |
 | Test| Using the resources you are targeting, review the recommended exercises with a small set of your stakeholders to gauge your readiness to engage your fuller team of stakeholders. |
 | Pilot| If you are using the tabletop exercises, try out one of the scenarios with the chosen participants. Review the results and determine if you’re ready to proceed to the other exercises. If you’re using the ISO standards, target a portion of the standard to pilot the evaluation. |
 
@@ -410,7 +410,7 @@ As you transition to the adopt phase for this scenario and the others, be sure t
 
 :::image type="content" source="../media/adoption-guide/govern-manage-phase.svg" alt-text="The govern and manage phase." lightbox="../media/adoption-guide/govern-manage-phase.svg":::
 
-Security governance is a constant process. As you transition to this phase, shift to tracking and measuring the results of each piece of the Zero Trust architecture you’ve implemented. Together with monitoring and detecting, you will identify opportunities to iterate for maturity.
+Security governance is a constant process. As you transition to this phase, shift to tracking and measuring the results of each piece of the Zero Trust architecture you’ve implemented. Together with monitoring and detecting, you'll identify opportunities to iterate for maturity.
 
 ### Track and measure
 
@@ -438,7 +438,7 @@ Example metrics diagram
 
 ### Monitor and detect
 
-As you work through each business scenario, establish how you will monitor and detect changes to the environment and breaches. Many of the monitoring and detection capabilities are provided through the Extended Detection and Response (XDR) tools, including the suite of Microsoft Defender products and Microsoft Sentinel. These are implemented in the **Prevent or reduce business damage from a breach** business scenario (article is in progress).
+As you work through each business scenario, establish how you'll monitor and detect changes to the environment and breaches. Many of the monitoring and detection capabilities are provided through the Extended Detection and Response (XDR) tools, including the suite of Microsoft Defender products and Microsoft Sentinel. These are implemented in the **Prevent or reduce business damage from a breach** business scenario (article is in progress).
 
 ### Iterate for maturity
 

@@ -83,9 +83,9 @@ The Clean File Meta Data (CFMD) feed contains cryptographic signatures (SHA256 h
 The DCU provides compromised victim botnet data via the DCU ‘s CTIP threat intelligence service Infected device data feed, to enable network protection scenarios for CTIP subscribers, and to help facilitate remediation of the compromised systems with the goal of reducing the number of infected systems on the Internet. 
 Other feeds include the Command and Control (C2), IoT and Domains lists that are often used to restrict traffic flow to know malware networks via firewalls and protective DNS.
 
-<center><img src="../media/security-gsp/CTIP1.jpg" width="80%" alt="CTIP data" data-linktype="relative-path"/></center> 
+<center><img src="../media/security-gsp/CTIP1.jpg" width="80%" alt="CTIP data 1" data-linktype="relative-path"/></center> 
 <br/>
-<center><img src="../media/security-gsp/CTIP2.jpg" width="80%" alt="CTIP data" data-linktype="relative-path"/></center>   
+<center><img src="../media/security-gsp/CTIP2.jpg" width="80%" alt="CTIP data 2" data-linktype="relative-path"/></center>   
 
 
 ## Contact Us   

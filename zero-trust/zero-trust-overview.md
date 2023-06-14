@@ -173,8 +173,8 @@ These articles help you apply the principles of Zero Trust to your workloads and
 
 On this site you can find:
 
-- [Concepts and deployment objectives](deploy/overview.md)
 - [Adoption framework](adopt/zero-trust-adoption-overview.md)
+- [Concepts and deployment objectives](deploy/overview.md)
 - [Zero Trust for small businesses](guidance-smb-partner.md)
 - [Rapid Modernization Plan (RaMP) guidance](zero-trust-ramp-overview.md)
 - [Microsoft 365 deployment plans](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json)

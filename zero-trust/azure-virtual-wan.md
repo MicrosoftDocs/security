@@ -202,7 +202,7 @@ Azure Virtual WAN provides some traffic encryption capabilities through its own 
 
   - Only for ExpressRoute circuits that are provisioned on top of [ExpressRoute Direct](/azure/expressroute/expressroute-erdirect-about), it's possible to leverage platform-provided [MACsec encryption](/azure/expressroute/expressroute-howto-macsec) to secure the connections between your edge routers and Microsoft's edge routers.
 
-  - Encryption could be established using an [IPsec/IKE VPN connection](/azure/virtual-wan/vpn-over-expressroute) from your on-premises network to Azure over the private peering of an Azure ExpressRoute circuit, however this configuration is [not supported](/azure/virtual-wan/how-to-routing-policies#key-considerations) yet with secured hubs.
+  - Encryption could be established using an [IPsec/IKE VPN connection](/azure/virtual-wan/vpn-over-expressroute) from your on-premises network to Azure over the private peering of an Azure ExpressRoute circuit. Routing Intent and Policies now supports this configuration with additional configuration steps required, as explained in [Encrypted ExpressRoute](/azure/virtual-wan/how-to-routing-policies#encryptedER) yet with secured hubs.
 
 - For third party [Software-Defined WAN (SD-WAN) devices and NVAs](/azure/virtual-wan/about-nva-hub) integrated into Virtual WAN hub, specific encryption capabilities must be verified and configured according to the vendor's documentation.
 

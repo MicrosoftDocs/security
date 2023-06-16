@@ -98,7 +98,7 @@ For example, the identity team can only make so much progress in utilizing Azure
 
 The following diagram integrates these functional areas into a unified Zero Trust architecture.
 
-:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.png" alt-text="The overall architecture for Zero Trust" lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.png":::
+:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.svg" alt-text="The overall architecture for Zero Trust" lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.svg":::
 
 In the diagram:
 

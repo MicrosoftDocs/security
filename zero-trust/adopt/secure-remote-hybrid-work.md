@@ -1,6 +1,6 @@
 ---
 title: Secure remote and hybrid work with Zero Trust 
-description: Learn how to Secure remote and hybrid work with Zero Trust.
+description: Learn how to secure your remote and hybrid work with Zero Trust.
 ms.date: 04/14/2023
 ms.service: security
 author: BrendaCarter
@@ -69,6 +69,20 @@ The following table is an accessible version of the illustration.
 | Outcomes <br><br> Organizational alignment <br><br> Strategic goals| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
+
+<!---
+
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objectives." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+
+The following table is an accessible version of the illustration.
+
+| Define strategy| Plan| Ready| Adopt| Govern and manage |
+| --- | --- | --- | --- | --- |
+| Organizational alignment <br><br> Strategic goals <br><br> Outcomes| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
+
+--->
+
+
 
 ## Define strategy phase
 
@@ -373,4 +387,5 @@ Additional resources for day-to-day governance and operation include:
 ## Next Steps
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
-- [Identify and protect sensitive business data with Zero Trust](identify-protect-sensitive-business-data.md)
+- [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)

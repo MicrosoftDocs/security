@@ -98,7 +98,7 @@ For example, the identity team can only make so much progress in utilizing Azure
 
 The following diagram integrates these functional areas into a unified Zero Trust architecture.
 
-:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.png" alt-text="The overall architecture for Zero Trust" lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.png":::
+:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.svg" alt-text="The overall architecture for Zero Trust" lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.svg":::
 
 In the diagram:
 
@@ -144,11 +144,11 @@ The following table describes the lifecycle phases.
 
 This Zero Trust adoption guidance recommends building a Zero Trust strategy and architecture through these business scenarios:
 
+- [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
 - Prevent or reduce business damage from a breach (in development)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
 - Proactively meet regulatory requirements (in development)
-- Build confidence in your security posture and programs (in development)
 
 Each business scenario is described in an article that describes how to progress the technical work through each of the lifecycle phases, starting with building the business case. The most appropriate resources are provided along the way.
 
@@ -231,5 +231,6 @@ For more information about how to use Secure Score, see [Secure Score documentat
 
 ## Next Steps
 
+- [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work with Zero Trust](secure-remote-hybrid-work.md)
 - [Identify and protect sensitive business data with Zero Trust](identify-protect-sensitive-business-data.md)

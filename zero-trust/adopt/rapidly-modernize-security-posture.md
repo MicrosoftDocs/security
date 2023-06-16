@@ -248,7 +248,7 @@ Your stakeholder team for this business scenario includes leaders across your or
 | Device management architect | The strategy for protecting organization data on devices, including managing devices. |
 | App management lead | Prioritization and tech requirements for app investments, including bringing apps up to standards with modern authentication and Azure AD Conditional Access policies. |
 | Service admins |  Tenant environment (preparation, testing, configuration). |
-| Business unit representatives | Need and feedback of your business units. |
+| Business unit representatives | Need and feedback from your business units. |
 
 The [PowerPoint slide deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
@@ -280,7 +280,7 @@ In Stage 2, you continue to detail your current security posture, including:
 
 #### Develop a response readiness plan
 
-Zero Trust assumes breach, considers the impact of a long-running attack in our environment, and allows you to recover quickly from an incident. Your expectation of an attack should lead to the operational readiness to detect, respond, and recover.
+Zero Trust assumes breach, considers the impact of a long-running attack on your environment, and allows you to recover quickly from an incident. Your expectation of an attack should lead to the operational readiness to detect, respond, and recover.
 
 In this stage, you develop a response readiness plan for common types of attacks. This plan includes how to respond to your users, your customers, and how to communicate to the public if needed.
 
@@ -421,7 +421,7 @@ The following table lists some example metrics.
 | Business enablement | Security posture | Security response | Security improvement |
 | --- | --- | --- | --- |
 | Mean time for security review | # of new apps reviewed | Mean time to recover (MTTR) | # of modernization projects open |
-| # of days for application security review | Secure Score score | Mean time to acknowledge (MTTA) | # of modernization project milestones achieved in the last 60 days |
+| # of days for application security review | Score from Secure Score | Mean time to acknowledge (MTTA) | # of modernization project milestones achieved in the last 60 days |
 | Average boot and sign-in time for managed devices | % of compliant apps | Time to restore critical systems | Number of repetitive manual steps removed from workflows |
 | Number of security interruptions in user workflow | # of privileged accounts meeting 100% of requirements | # of high-severity incidents | # of lessons learned from internal and external incidents |
 | % of IT helpdesk time spent on low-value security activities | # of accounts meeting 100% of requirements | Incident growth rate (overall) |  |

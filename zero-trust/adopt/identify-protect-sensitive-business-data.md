@@ -407,4 +407,4 @@ See [Govern your data with Microsoft Purview](/microsoft-365/compliance/manage-d
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
-- [Secure remote and hybrid work with Zero Trust](secure-remote-hybrid-work.md)
+- [Secure remote and hybrid work](secure-remote-hybrid-work.md)

@@ -67,9 +67,9 @@ Before starting the investigation, make sure you have the correct tools and perm
   - [Azure AD application authentication methods API overview (preview)](/graph/api/resources/applicationauthenticationmethodpolicy)
   - [appManagementPolicy resource type](/graph/api/resources/appmanagementpolicy)
 
-- Familiarize yourself with the following App Governance policies:
+- Familiarize yourself with the following app governance policies:
   - [The App Governance blog](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-public-preview-of-app-governance/ba-p/2543768)
-  - [App governance add-on to Defender for Cloud Apps](/defender-cloud-apps/app-governance-manage-app-governance)
+  - [App governance in Defender for Cloud Apps](/defender-cloud-apps/app-governance-manage-app-governance)
 
 ### Required tools
 
@@ -145,7 +145,7 @@ Use Audit logs to get information on credential changes on applications and serv
 
 :::image type="content" source="./media/compromised-malicious-apps/CustomRolesToCheck.png" alt-text="Check custom roles that may be created or modified":::
 
-If you have deployed the app governance add-on, check the Azure portal for alerts relating to the application. For more information, see [Get started with app threat detection and remediation](/defender-cloud-apps/app-governance-detect-remediate-get-started).
+If you have deployed app governance in Microsoft Defender for Cloud Apps, check the Azure portal for alerts relating to the application. For more information, see [Get started with app threat detection and remediation](/defender-cloud-apps/app-governance-detect-remediate-get-started).
 
 If you have deployed Identity Protection, check the "Risk detections" report and in the user or workload identity “risk history”.
 

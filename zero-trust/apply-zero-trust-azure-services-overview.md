@@ -76,7 +76,6 @@ This poster provides a single-page, at-a-glance view of the content architecture
 For additional technical illustrations, click [here](zero-trust-tech-illus.md).
 --->
 
-
 ## References
 
 Refer to the links below to learn about the various services and technologies mentioned in this article.

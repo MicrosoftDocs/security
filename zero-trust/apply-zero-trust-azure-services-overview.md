@@ -64,15 +64,18 @@ See these additional articles for applying Zero Trust principles to Azure servic
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
 - [Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)
 
+<!---
 ## Technical illustrations
 
 This poster provides a single-page, at-a-glance view of the content architecture of applying the "never trust, always verify" principles of the Zero Trust to Azure services.
 
 | Item | Related solution guides |
 |:-----|:-----|
-|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-azure-services-poster-thumb.png)](https://microsoft.sharepoint-df.com/:u:/t/ZeroTrustAdvisoryV-Team/Eb5YW2wc2mVOvN6-pgj8hMsBT16-FdpybfnviQUEQaPMRQ?e=WVelVw) <br/> [PDF](https://microsoft.sharepoint-df.com/:u:/t/ZeroTrustAdvisoryV-Team/Eb5YW2wc2mVOvN6-pgj8hMsBT16-FdpybfnviQUEQaPMRQ?e=WVelVw) \| [Visio](https://microsoft.sharepoint-df.com/:u:/t/ZeroTrustAdvisoryV-Team/Eb5YW2wc2mVOvN6-pgj8hMsBT16-FdpybfnviQUEQaPMRQ?e=WVelVw) <br/> Updated June 2023 | <ul><li>[Azure IaaS services](azure-infrastructure-overview.md)</li><li>[Azure Virtual Desktop](azure-infrastructure-avd.md)</li><li>[Azure Virtual WAN](azure-virtual-wan.md)</li><li>[IaaS applications in Amazon Web Services](secure-iaas-apps.md)</li><li>[Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)</li></ul>|
+|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-azure-services-poster-thumb.png)](Microsoft Download Center link) <br/> [PDF](Microsoft Download Center link) \| [Visio](Microsoft Download Center link) <br/> Updated June 2023 | <ul><li>[Azure IaaS services](azure-infrastructure-overview.md)</li><li>[Azure Virtual Desktop](azure-infrastructure-avd.md)</li><li>[Azure Virtual WAN](azure-virtual-wan.md)</li><li>[IaaS applications in Amazon Web Services](secure-iaas-apps.md)</li><li>[Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)</li></ul>|
 
 For additional technical illustrations, click [here](zero-trust-tech-illus.md).
+--->
+
 
 ## References
 

@@ -1,11 +1,13 @@
 ---
 title: Data, compliance, and governance
 description: Data, compliance, and governance initiative of RaMP for Zero Trust
-ms.service: network-access
+ms.service: security
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-ramp
 ---
 
 # RaMP checklist —  Data, compliance, and governance

@@ -7,6 +7,8 @@ ms.service: identity
 ms.topic: conceptual
 ms.date: 10/10/2022
 ms.custom: template-concept
+ms.collection:
+  - zerotrust-dev
 # Customer intent: As a developer, I want to ensure Zero Trust when I have one API that needs to call another API so that I can securely develop my application when it is working on behalf of a user.
 ---
 # Calling an API from another API
@@ -112,6 +114,7 @@ When an API is acting on behalf of a user and needs to call another API, the API
 - [Microsoft identity platform authentication flows & app scenarios](/azure/active-directory/develop/authentication-flows-app-scenarios) describes authentication flows and the application scenarios in which they\'re used.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
 - [Example of API protected by Microsoft identity consent framework](protected-api-example.md) helps you to design least privilege application permissions strategies for the best user experience.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
 - The [Secure custom APIs with Microsoft Identity](/training/modules/identity-secure-custom-api/) Learn module explains how to secure a web API with Microsoft identity and how to call it from another application.
 - [Security best practices for application properties](/azure/active-directory/develop/security-best-practices-for-app-registration) describes redirect URI, access tokens (used for implicit flows), certificates and secrets, application ID URI, and application ownership.
 - [Microsoft identity platform authentication libraries](/azure/active-directory/develop/reference-v2-libraries) describes Microsoft Authentication Library support for various application types.

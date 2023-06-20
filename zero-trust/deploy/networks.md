@@ -6,6 +6,8 @@ ms.service: security
 author: Kellylorenebaker
 ms.author: v-kbaker
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-pillar
 ---
 
 # Secure networks with Zero Trust
@@ -82,6 +84,7 @@ To make this happen, we follow three Zero Trust principles:
          <p><b>IV.</b> <a href="#iv-network-segmentation-fully-distributed-ingressegress-cloud-micro-perimeters-and-deeper-micro-segmentation">Network segmentation: Fully distributed ingress/egress cloud micro-perimeters and deeper micro-segmentation.</a></p>
          <p><b>V.</b> <a href="#v-threat-protection-machine-learning-based-threat-protection-and-filtering-with-context-based-signals">Threat protection: Machine learning-based threat protection and filtering with context-based signals.</a></p>
          <p><b>VI.</b> <a href="#vi-encryption-all-traffic-is-encrypted">Encryption: All traffic is encrypted.</a></p>
+        <p><b>VII.</b> <a href="#vii-discontinue-legacy-network-security-technology">Discontinue legacy network security technology.</a></p>
       </td>
    </tr>
 </table>
@@ -271,6 +274,17 @@ Follow these steps:
     1.  [Configure a site-to-site VPN](/azure/expressroute/site-to-site-vpn-over-microsoft-peering) over ExpressRoute Microsoft peering.
 
     1.  [Configure IPsec transport mode](/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
+
+
+### VII. Discontinue legacy network security technology
+
+Discontinue the use of signature-based Network Intrusion Detection/Network Intrusion Prevention (NIDS/NIPS) Systems and Network Data Leakage/Loss Prevention (DLP).
+
+The major cloud service providers already filter for malformed packets and common network layer attacks, so there's no need for a NIDS/NIPS solution to detect those. In addition, traditional NIDS/NIPS solutions are typically driven by signature-based approaches (which are considered outdated) and are easily evaded by attackers and typically produce a high rate of false positives.
+
+Network-based DLP is decreasingly effective at identifying both inadvertent and deliberate data loss. The reason for this is that most modern protocols and attackers use network-level encryption for inbound and outbound communications. The only viable workaround for this is "SSL-bridging" which provides an "authorized man-in-the-middle" that terminates and then reestablishes encrypted network connections. The SSL-bridging approach has fallen out of favor because of the level of trust required for the partner running the solution and the technologies that are being used.
+
+Based on this rationale, we offer an all-up recommendation that you discontinue use of these legacy network security technologies. However, if your organizational experience is that these technologies have had a palpable impact on preventing and detecting real attacks, you can consider porting them to your cloud environment.
 
 ## Products covered in this guide
 

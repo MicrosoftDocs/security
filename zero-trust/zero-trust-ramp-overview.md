@@ -6,6 +6,8 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.topic: conceptual
+ms.collection:
+  - zerotrust-ramp
 ---
 
 # Zero Trust Rapid Modernization Plan
@@ -33,7 +35,7 @@ To rapidly adopt Zero Trust in your organization, RaMP offers technical deployme
 
 Here is the overall architecture for Zero Trust.
 
-:::image type="content" source="./media/zero-trust-ramp-overview/zero-trust-architecture.png" alt-text="The overall architecture for Zero Trust" lightbox="./media/zero-trust-ramp-overview/zero-trust-architecture.png":::
+:::image type="content" source="./media/zero-trust-ramp-overview/zero-trust-architecture.svg" alt-text="The overall architecture for Zero Trust" lightbox="./media/zero-trust-ramp-overview/zero-trust-architecture.svg":::
 
 The RaMP initiatives for Zero Trust address all of the elements of this architecture. As you step through the initiatives, we'll show which parts are being covered.
 

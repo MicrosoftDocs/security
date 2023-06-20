@@ -7,6 +7,8 @@
   items:
     - name: Overview
       href: adopt/zero-trust-adoption-overview.md
+    - name: Rapidly modernize your security posture
+      href: adopt/rapidly-modernize-security-posture.md
     - name: Secure remote and hybrid work
       href: adopt/secure-remote-hybrid-work.md
     - name: Identify and protect sensitive business data

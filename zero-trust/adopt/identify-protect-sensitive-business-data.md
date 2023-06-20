@@ -48,13 +48,22 @@ The following table provides reasons why business leaders across an organization
 
 ## The adoption cycle for protecting critical business data
 
-This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, Govern, and Manage—but adapted for Zero Trust.
+This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Zero Trust adoption guidance uses the same lifecycle phases." lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
+
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objectives." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+
+The following table is an accessible version of the illustration.
+
+| Define strategy| Plan| Ready| Adopt| Govern and manage |
+| --- | --- | --- | --- | --- |
+| Outcomes <br><br> Organizational alignment <br><br> Strategic goals| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
 ## Define strategy phase
+
+:::image type="content" source="../media/adoption-guide/define-strategy-phase.svg" alt-text="The define strategy phase." lightbox="../media/adoption-guide/define-strategy-phase.svg":::
 
 The **Define strategy** phase is critical to define and formalize our efforts – it formalizes the “Why?” of this scenario. In this phase, you understand the scenario through business, IT, operational and strategic perspectives. You define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
 
@@ -87,6 +96,8 @@ The following table provides suggested objectives and outcomes.
 | Empower IT | Your IT team is empowered with a clear understanding of what qualifies as sensitive business data. They have a well-reasoned schema to align with and the technology tools and capabilities to both implement the plans and monitor status and success. |
 
 ## Plan phase
+
+:::image type="content" source="../media/adoption-guide/plan-phase.svg" alt-text="The plan phase." lightbox="../media/adoption-guide/plan-phase.svg":::
 
 Adoption plans convert the principles of Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align them with your organization's business strategy.
 
@@ -350,6 +361,8 @@ For more information from the Cloud Adoption Framework for Azure, see [Plan for 
 
 ## Ready phase
 
+:::image type="content" source="../media/adoption-guide/ready-phase.svg" alt-text="The ready phase." lightbox="../media/adoption-guide/ready-phase.svg":::
+
 Use the resources previously listed to prioritize your plan for identifying and protecting sensitive data. The work of protecting sensitive business data represents one of the layers in your multi-layer Zero Trust deployment strategy.
 
 The staged approach recommended in this article includes cascading the work in a methodical way across your digital estate. At this Ready phase, revisit these elements of the plan to be sure everything is ready to go:
@@ -383,11 +396,15 @@ As you finalize your adoption plans, be sure to revisit the [Information Protect
 
 ## Adopt phase
 
+:::image type="content" source="../media/adoption-guide/adopt-phase.svg" alt-text="The adopt phase." lightbox="../media/adoption-guide/adopt-phase.svg":::
+
 Microsoft recommends a cascading, iterative approach to discovering and protecting sensitive data. This allows you to refine your strategy and policies as you go to increase the accuracy of the results. For example, begin working on a classification and protection schema as you discover and identify sensitive data. The data you discover informs the schema and the schema helps you improve the tools and methods you use to discover sensitive data. Similarly, as you test and pilot the schema, the results help you improve the protection policies you created earlier. There’s no need to wait until one phase is complete before beginning the next. Your results are more effective if you iterate along the way.
 
 :::image type="content" source="../media/adoption-guide/adoption-information-protection.svg" alt-text="Process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.svg":::
 
-## Govern and Manage phases
+## Govern and manage phases
+
+:::image type="content" source="../media/adoption-guide/govern-manage-phase.svg" alt-text="The govern and manage phase." lightbox="../media/adoption-guide/govern-manage-phase.svg":::
 
 Governance of your organization’s data is an iterative process. By thoughtfully creating your classification schema and rolling it out across your digital estate you have created a foundation. Use the following exercises to help you start building your initial governance plan for this foundation:
 
@@ -406,4 +423,5 @@ See [Govern your data with Microsoft Purview](/microsoft-365/compliance/manage-d
 ## Next Steps
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
-- [Secure remote and hybrid work with Zero Trust](secure-remote-hybrid-work.md)
+- [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Secure remote and hybrid work](secure-remote-hybrid-work.md)

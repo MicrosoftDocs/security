@@ -1,11 +1,3 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
-  items:
-  - name: Security
-    href: /security
-    topicHref: /security/index
-    items:
-    - name: Ransomware guidance
-      href: /security/ransomware/
-      topicHref: /security/ransomware/human-operated-ransomware
+- name: Security
+  tocHref: /security/
+  topicHref: /security/index

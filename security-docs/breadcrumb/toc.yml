@@ -1,11 +1,3 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
-  items:
-  - name: Security
-    href: /security
-    topicHref: /security/index
-    items:
-    - name: Engineering
-      href: /security/engineering
-      topicHref: /security/engineering/index
+- name: Security
+  tocHref: /security/
+  topicHref: /security/index

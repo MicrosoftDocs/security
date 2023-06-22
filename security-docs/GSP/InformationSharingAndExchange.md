@@ -52,46 +52,6 @@ This offering brings together groups and resources across the Microsoft environm
 </tbody>
 </table>
 
-
-## Data Feeds Delivery
-The feeds offered under the ISE authorization reside within several groups including the **Microsoft Security Response Center (MSRC)**, the **Digital Crimes Unit (DCU)**, **Bing** and **Product Release and Security Services (PRSS)**.
-
-The GSP team provides a **web-based application** that allows GSP agencies to access the ISE data feeds from a single interface. All communications containing sensitive data are encrypted.
-   
-<center><img src="../media/security-gsp/DataFeedDelivery.jpg" width="70%" alt="Data Feed delivery" data-linktype="relative-path"/></center> 
-
-
-## Data Use Descriptions
-**Advanced Security Update Notification**  
-  
-The notice package lists all the CVEs (Common Vulnerabilities and Exposures) being addressed in the release. Each CVE contains a set of information including the Vulnerability Description (including metrics), Exploitability Index, and Affected Software.
-<center><img src="../media/security-gsp/ContentforEachCVE.jpg" width="70%" alt="Content for each CVE" data-linktype="relative-path"/></center> 
-
-
-**Bing Malicious URLs**  
-  
-The Bing Malicious URL feed contains publicly facing servers or services which have been identified as being potentially malicious. New files are uploaded every three hours; full data sets are generated in 5 days. Many agencies import the JSON files directly into their existing threat intelligence analysis tools. 
-<center><img src="../media/security-gsp/BingMURL1.jpg" width="80%" alt="Geo map of IPs" data-linktype="relative-path"/></center> 
-<br/>
-<center><img src="../media/security-gsp/BingMURL2.jpg" width="80%" alt="Threat types" data-linktype="relative-path"/></center>     
-
-
-**Clean File Meta Data (CFMD)**
-
-The Clean File Meta Data (CFMD) feed contains cryptographic signatures (SHA256 hashes) for the files contained within Microsoft products. These are often used in forensic examinations of potentially compromised devices and for allow / disallow file execution in critical systems.
-<center><img src="../media/security-gsp/CleanFileMetaData.jpg" width="80%" alt="Clean File Metadata" data-linktype="relative-path"/></center>     
-
-
-**CTIP Botnet Feeds: Infected Data Feed**
-
-The DCU provides compromised victim botnet data via the DCU ‘s CTIP threat intelligence service Infected device data feed, to enable network protection scenarios for CTIP subscribers, and to help facilitate remediation of the compromised systems with the goal of reducing the number of infected systems on the Internet. 
-Other feeds include the Command and Control (C2), IoT and Domains lists that are often used to restrict traffic flow to know malware networks via firewalls and protective DNS.
-
-<center><img src="../media/security-gsp/CTIP1.jpg" width="80%" alt="CTIP data" data-linktype="relative-path"/></center> 
-<br/>
-<center><img src="../media/security-gsp/CTIP2.jpg" width="80%" alt="CTIP data" data-linktype="relative-path"/></center>   
-
-
 ## Data Feeds Delivery
 The feeds offered under the ISE authorization reside within several groups including the **Microsoft Security Response Center (MSRC)**, the **Digital Crimes Unit (DCU)**, **Bing** and **Product Release and Security Services (PRSS)**.
 

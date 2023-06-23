@@ -1,7 +1,7 @@
 ---
 title: Transparency Centers
 description: This document provides an overview of the transparency centers throughout the world for the Government Security Program.
-ms.date: 6/23/2022
+ms.date: 6/23/2023
 ms.service: security
 ms.author: bcowper
 author: BruceCowper

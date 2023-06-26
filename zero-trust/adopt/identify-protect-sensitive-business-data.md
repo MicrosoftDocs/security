@@ -26,7 +26,7 @@ The following diagram illustrates the shift from traditional protection with net
 
 :::image type="content" source="../media/adoption-guide/on-premises-remote-data.svg" alt-text="Zero Trust applies to data regardless of where it lives or moves." lightbox="../media/adoption-guide/on-premises-remote-data.svg":::
 
-The guidance in this article walks through how to get started with and progress your strategy for identifying and protecting sensitive data. If your organization is subject to regulations that protect data, use the **Proactively meet regulatory and compliance requirements** article in this series (under development) to learn how to apply what you learn in this article to protecting data that is regulated.
+The guidance in this article walks through how to get started with and progress your strategy for identifying and protecting sensitive data. If your organization is subject to regulations that protect data, use the [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md) article in this series to learn how to apply what you learn in this article to protecting data that is regulated.
 
 ## Why business leaders think about protecting sensitive data
 
@@ -80,7 +80,7 @@ The motivations for identifying and protecting sensitive business data are strai
 | Operational needs | Implement data protection in a consistent and standard way, using automation where possible. |
 | Strategic needs | Reduce the damage that an insider can cause (intentionally or unintentionally) or by a bad actor who gains access to the environment. |
 
-Note that meeting regulatory requirements might be the primary driving motivation for some organizations. If this is true for you, go ahead and add this to your organization strategy and use this business scenario together with the **Proactively meet regulatory and compliance requirements** article in this series (under development).
+Note that meeting regulatory requirements might be the primary driving motivation for some organizations. If this is true for you, go ahead and add this to your organization strategy and use this business scenario together with the [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md) article in this series.
 
 ### Data protection outcomes
 
@@ -424,4 +424,5 @@ See [Govern your data with Microsoft Purview](/microsoft-365/compliance/manage-d
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)

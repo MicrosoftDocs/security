@@ -58,6 +58,8 @@ landingContent:
           url:  adopt/secure-remote-hybrid-work.md
         - text: Identify and protect sensitive business data
           url:  adopt/identify-protect-sensitive-business-data.md
+        - text: Meet regulatory and compliance requirements
+          url:  adopt/meet-regulatory-compliance-requirements.md
 
  # Card
   - title: Microsoft 365 deployment plan for Zero Trust

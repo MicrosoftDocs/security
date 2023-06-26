@@ -1,7 +1,7 @@
 ---
 title: Online Access to Source Code
 description: This document provides details of the Online Source offering and CCP site that enables GSP participants to evaluate individual system component functions, component interaction, and security and reliability capabilities.
-ms.date: 6/20/2023
+ms.date: 6/23/2023
 ms.service: security
 ms.author: xili13
 author: laramillermsft

@@ -182,7 +182,7 @@ additionalContent:
         - title: Operation
           links:
             - text: Integrate Microsoft 365 Defender into operations
-              url: /azure/architecture/guide/architecture-styles/
+              url: /microsoft-365/security/defender/integrate-microsoft-365-defender-secops
             - text: Protect against ransomware
               url: /security/ransomware/protect-against-ransomware
             - text: Incident response

@@ -1,13 +1,12 @@
 ---
 title: Information Sharing and Exchange
 description: This document provides details of the Information Sharing and Exchange offering that enables Microsoft to share and exchange materials related to Microsoft products and services.
-ms.date: 6/15/2023
+ms.date: 6/20/2023
 ms.service: security
-ms.author: xili13
-author: LaraMillerMSFT
+ms.author: Grace Li
+author: laramillermsft
 ms.topic: conceptual
 ---
-
 
 # Information Sharing and Exchange
 
@@ -16,42 +15,42 @@ The mission of Microsoft’s Government Security Program (GSP) is to build trust
 This offering brings together groups and resources across the Microsoft environment to help governments protect citizens, infrastructure, and organizations.
 
 
-## The Information Sharing and Exchange offering provides      
-**Advance Notice of Security Vulnerabilities**
+## The Information Sharing and Exchange offering provides
 
-- 5-day advance notice of vulnerabilities with release notes and affected software tables
-- 24-hour advance of full notice including exploitability index
-
-**Malicious URLs**
-
-- Feed of potentially malicious publicly facing servers and services detected by the Bing crawlers
-- Updated every three hours, 5 day cycle of data
-
-**CTIP Botnet Feeds**
-
-- Provided by the Digital Crimes Unit’s Cyber Threat Intelligence Program
-- Botnet data is tailored to the agency (or country code top level domain in the case of CERTs)
-- 4 feeds: Infected device, Command & Control, IoT, and Domains
-- Delivered near real time, hourly or daily (deduped)
-
-**Threat Intelligence Alerts**
-
-- Microsoft Threat Intelligence Center alerts of potential nation state threats
-- Direct engagement with impacted agencies
-  
-**Clean File Meta Data**
-
-- Clean file hash data often used for allow-listing and forensics
-- Updated every 3 hours
-- Covers all Microsoft binaries on the Microsoft download center
-
-**Partnership**
-
-- Information exchange through a variety of forums
-- Access to the Digital Crimes Community Portal
-- Threat intelligence data sharing with the Digital Crimes Unit
-- Direct engagement with engineering groups and other Microsoft teams including the Microsoft Security Response Center and Windows Defender Security Intelligence
-
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Advance Notice of Security Vulnerabilities</strong></td>
+<td style="text-align:left"><li> 5-day advance notice of vulnerabilities with release notes and affected software tables <li> 24-hour advance of full notice including exploitability index</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Malicious URLs</strong></td>
+<td style="text-align:left"><li> Feed of potentially malicious publicly facing servers and services detected by the Bing crawlers <li> Updated every three hours, 5 day cycle of data</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>CTIP Botnet Feeds</strong></td>
+<td style="text-align:left"><li> Provided by the Digital Crimes Unit’s Cyber Threat Intelligence Program <li> Botnet data is tailored to the agency (or country code top level domain in the case of CERTs) <li> 4 feeds: Infected device, Command &amp; Control, IoT, and Domains <li> Delivered near real time, hourly or daily (deduped)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Threat Intelligence Alerts</strong></td>
+<td style="text-align:left"><li> Microsoft Threat Intelligence Center alerts of potential nation state threats <li> Direct engagement with impacted agencies</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Clean File Meta Data</strong></td>
+<td style="text-align:left"><li> Clean file hash data often used for allow-listing and forensics <li> Updated every 3 hours <li> Covers all Microsoft binaries on the Microsoft download center</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Partnership</strong></td>
+<td style="text-align:left"><li> Information exchange through a variety of forums <li> Access to the Digital Crimes Community Portal <li> Threat intelligence data sharing with the Digital Crimes Unit <li> Direct engagement with engineering groups and other Microsoft teams including the Microsoft Security Response Center and Windows Defender Security Intelligence</td>
+</tr>
+</tbody>
+</table>
 
 ## Data Feeds Delivery
 The feeds offered under the ISE authorization reside within several groups including the **Microsoft Security Response Center (MSRC)**, the **Digital Crimes Unit (DCU)**, **Bing** and **Product Release and Security Services (PRSS)**.

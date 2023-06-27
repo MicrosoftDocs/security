@@ -7,7 +7,7 @@ author: BrendaCarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
-  - zerotrust-solution
+  - zerotrust-adopt
 ---
 
 # Identify and protect sensitive business data

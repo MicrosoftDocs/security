@@ -1,24 +1,24 @@
 ---
 title: Meet regulatory and compliance requirements with Zero Trust
 description: Learn how to Meet regulatory and compliance requirements with Zero Trust.
-ms.date: 06/20/2023
+ms.date: 06/27/2023
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
-  - zerotrust-solution
+  - zerotrust-adopt
 ---
 
 # Meet regulatory and compliance requirements
 
-As part of [Zero Trust](zero-trust-adoption-overview.md) adoption guidance, this article describes the business scenario of meeting regulatory and compliance requirements that might be applicable to your organization. 
+As part of [Zero Trust](zero-trust-adoption-overview.md) adoption guidance, this article describes the business scenario of meeting regulatory and compliance requirements that might be applicable to your organization.
 
-Regardless of the complexity of your organization’s IT environment or the size of your organization, new regulatory requirements that might affect your business are continually adding up. These regulations include the European Union’s General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), a myriad of healthcare and financial information regulations as well as data residency requirements. 
+Regardless of the complexity of your organization’s IT environment or the size of your organization, new regulatory requirements that might affect your business are continually adding up. These regulations include the European Union’s General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), a myriad of healthcare and financial information regulations as well as data residency requirements.
 
 The process of meeting regulatory and compliance requirements can be long, complex, and tedious when not managed properly. This challenge has considerably increased the workload of security, compliance, and regulations teams to achieve and prove compliance, prepare for an audit, and put ongoing best practices into place.
 
-A Zero Trust approach often exceeds some types of requirements imposed by compliance regulations, for example, those controlling access to personal data. Organizations that have implemented a Zero Trust approach may find that they already meet some new conditions or can easily build upon their Zero Trust architecture to be compliant. 
+A Zero Trust approach often exceeds some types of requirements imposed by compliance regulations, for example, those controlling access to personal data. Organizations that have implemented a Zero Trust approach may find that they already meet some new conditions or can easily build upon their Zero Trust architecture to be compliant.
 
 | Traditional approaches to meeting regulatory and compliance requirements | Modern approach to meeting regulatory and compliance requirements with Zero Trust |
 | --- | --- |
@@ -35,7 +35,6 @@ The following table is an accessible version of the illustration.
 | Define strategy| Plan| Ready| Adopt| Govern and manage |
 | --- | --- | --- | --- | --- |
 | Organizational alignment <br><br> Strategic goals <br><br> Outcomes| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
-
 
 ## Define strategy phase
 
@@ -62,7 +61,7 @@ Gaining alignment begins with understanding what motivates your leaders and why 
 | Chief Information Security Officer (CISO) | Responsible for the adoption and conformance to industry standards that provide controls directly related to information security compliance. |
 | Chief Operations Officer (COO) | Ensures that company policies and procedures relating to information security, data privacy, and other regulatory practices are upheld on an operational level. |
 | Chief Financial Officer (CFO) | Assesses financial drawbacks and advantages to compliance, such as cyber insurance and tax compliance. |
-| Chief Risk Officer (CRO)| Owns the Risk component of the [Governance Risk and Compliance (GRC)](https://learn.microsoft.com/en-us/compliance/assurance/assurance-governance) framework within the organization. Mitigates threats to non-conformance and compliance. |
+| Chief Risk Officer (CRO)| Owns the Risk component of the [Governance Risk and Compliance (GRC)](/compliance/assurance/assurance-governance) framework within the organization. Mitigates threats to non-conformance and compliance. |
 
 Additionally, different parts of your organization will have different motivations and incentives for doing the work of regulatory and compliance requirements. The following table summarizes some of these motivations. Be sure to connect with your stakeholders to understand their motivations.
 
@@ -98,23 +97,23 @@ The following table describes how the different governance levels on the left si
 
 The governance pyramid model helps focus priorities:
 
-1. Legislative and legal requirements 
+1. Legislative and legal requirements
 
    Organizations can face serious repercussions if these are not followed.
 
-2. Industry-specific and security standards 
+2. Industry-specific and security standards
 
    Organizations may have an industry requirement to be compliant or certified with one or more of these standards. The Zero Trust framework can be mapped against various security, information security, and infrastructure management standards. 
 
-3. Policies and procedures 
+3. Policies and procedures
 
    Organization-specific and govern the more intrinsic processes within the business.
 
-4. Work instructions 
+4. Work instructions
 
    Detailed controls that are very technical and customized for organizations to fulfil the policies and procedures.
 
-There are several standards that add the most value to areas of the Zero Trust architecture. Focusing attention on the following standards that apply to you will yield more impact: 
+There are several standards that add the most value to areas of the Zero Trust architecture. Focusing attention on the following standards that apply to you will yield more impact:
 
 - The [Center for Internet Security (CIS) Benchmarks](https://www.cisecurity.org/cis-benchmarks) provide valuable guidance for device management and endpoint management policies. CIS Benchmarks include implementation guides for Microsoft 365 and Microsoft Azure. Organizations across all industries and verticals use CIS benchmarks to assist them in achieving security and compliance goals. especially those that operate in heavily regulated environments.
 
@@ -155,155 +154,92 @@ Many organizations can take a four-staged approach to these technical activities
 
 | **Stage 1**| **Stage 2**| **Stage 3**| **Stage 4** |
 | --- | --- | --- | --- |
-| Identify regulatory requirements that apply to your organization 
+| Identify regulatory requirements that apply to your organization. <br><br> Use Compliance Manager to identify regulations that might affect your business, assess compliance with the high-level requirements imposed by those regulations, and plan remediation for identified gaps. <br><br> Review current guidance for regulations that apply to your organization.| Use content explorer in Microsoft Purview to  identify data that is subject to regulation requirements and assess its risk and exposure. Define custom classifiers to adapt this capability to your business needs. <br><br> Assess requirements for information protection, such as data retention and records management policies, and then implement basic information protection and data governance policies using retention and sensitivity labels. <br><br> Implement basic DLP policies to control the flow of regulated information. <br><br> Implement [communication compliance policies](/microsoft-365/compliance/communication-compliance) if required by regulations.| Extend data lifecycle management policies with automation. <br><br> Set up partitioning and isolation controls using sensitivity labels, DLP or [information barriers](/microsoft-365/compliance/information-barriers) if required by regulations. <br><br> Expand information protection policies by implementing container labeling, automatic and mandatory labeling, and stricter DLP policies. Then expand these policies to on-premises data, devices (endpoints), and third-party cloud services using additional capabilities in Microsoft Purview. <br><br> Reassess compliance using Compliance Manager and identify and remediate remaining gaps.| Use Azure Sentinel to build reports based on the unified audit log to continuously assess and inventory the compliance status of your information. <br><br> Continue using Compliance Manager on an ongoing basis to identify and remediate remaining gaps and the requirements of new or updated regulations. |
 
-Use Compliance Manager to identify regulations that might affect your business, assess compliance with the high-level requirements imposed by those regulations, and plan remediation for identified gaps.
-
-Review current guidance for regulations that apply to your organization.| Use content explorer in Microsoft Purview to  identify data that is subject to regulation requirements and assess its risk and exposure. Define custom classifiers to adapt this capability to your business needs. 
-
-Assess requirements for information protection, such as data retention and records management policies, and then implement basic information protection and data governance policies using retention and sensitivity labels. 
-
-Implement basic DLP policies to control the flow of regulated information. 
-
-Implement [communication compliance policies](https://learn.microsoft.com/en-us/microsoft-365/compliance/communication-compliance?view=o365-worldwide) if required by regulations.| Extend data lifecycle management policies with automation.
-
-Set up partitioning and isolation controls using sensitivity labels, DLP or [information barriers](https://learn.microsoft.com/en-us/microsoft-365/compliance/information-barriers?view=o365-worldwide) if required by regulations. 
-
-Expand information protection policies by implementing container labeling, automatic and mandatory labeling, and stricter DLP policies. Then expand these policies to on-premises data, devices (endpoints), and third-party cloud services using additional capabilities in Microsoft Purview. 
-
-Reassess compliance using Compliance Manager and identify and remediate remaining gaps.| Use Azure Sentinel to build reports based on the unified audit log to continuously assess and inventory the compliance status of your information. 
-
-Continue using Compliance Manager on an ongoing basis to identify and remediate remaining gaps and the requirements of new or updated regulations. |
-
-If this staged approach works for your organization, you can use this downloadable PowerPoint slide deck to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
+If this staged approach works for your organization, you can use [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
 >> PowerPoint stages
-
-Description automatically generated](../media/article-5-meet-regulatory-and-compliance-requirements-02.png)
 
 ### Stakeholder team
 
 Your stakeholder team for this business scenario includes leaders across your organization who are invested in your security posture and are likely include the following roles:
 
-- Sponsor — Strategy, steering, escalation, approach, business alignment, and coordination management.
-
-- Project lead — Overall management of engagement, resources, timeline and schedule, communications, and others. 
-
-- CISO— Protection and governance of data assets and systems, such as risk and policy determination and tracking and reporting.
-
-- IT Compliance manager— Determination of required controls to address compliance and protection requirements.
-
-- End user security and usability (EUC) lead — Representation of your employees.
-
-- Investigation and audit roles — Investigation and reporting in cooperation with compliance and protection leads.
-
-- Information protection manager — Data classification and sensitive data identification, controls, and remediation.
-
-- Architecture lead — Technical requirements, architecture, reviews, decisions, and prioritization.
-
-- Microsoft 365 admins — Tenant and environment, preparation, configuration, testing.
+| Program leaders and technical owners | Accountability |
+| --- | --- |
+| Sponsor | Strategy, steering, escalation, approach, business alignment, and coordination management. |
+| Project lead | Overall management of engagement, resources, timeline and schedule, communications, and others. |
+| CISO | Protection and governance of data assets and systems, such as risk and policy determination and tracking and reporting. |
+| IT Compliance manager | Determination of required controls to address compliance and protection requirements. |
+| End user security and usability (EUC) lead | Representation of your employees. |
+| Investigation and audit roles | Investigation and reporting in cooperation with compliance and protection leads. |
+| Information protection manager | Data classification and sensitive data identification, controls, and remediation. |
+| Architecture lead | Technical requirements, architecture, reviews, decisions, and prioritization. |
+| Microsoft 365 admins | Tenant and environment, preparation, configuration, testing. |
 
 The [PowerPoint slide deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
 >> PowerPoint stakeholders
 
-Description automatically generated with low confidence](../media/article-5-meet-regulatory-and-compliance-requirements-03.png)
-
 ### Technical plans and skills readiness
 
-Microsoft provides resources to help you meet regulatory and compliance requirements. The following sections highlight resources for specific tasks in the four stages previously defined.
+Microsoft provides resources to help you meet regulatory and compliance requirements. The following sections highlight resources for specific objectives in the four stages previously defined.
 
-### Stage 1
+#### Stage 1
 
-In Stage 1, you identify the regulations that apply to your organization and begin using Compliance Manager. You also review [regulations that apply to your organization](https://learn.microsoft.com/en-us/microsoft-365/compliance/compliance-manager-templates-list?view=o365-worldwide). 
+In Stage 1, you identify the regulations that apply to your organization and begin using Compliance Manager. You also review [regulations that apply to your organization](/microsoft-365/compliance/compliance-manager-templates-list).
 
-| Objectives for Stage 1| Resources |
+| Objectives for Stage 1 | Resources |
 | --- | --- |
-| Identify compliance requirements using governance pyramid| [Compliance manager assessments](https://learn.microsoft.com/en-us/microsoft-365/compliance/compliance-manager-assessments?view=o365-worldwide) |
-| Use Compliance Manager to assess compliance and plan remediation for identified gaps| Visit the Microsoft Purview compliance portal and review all customer-managed improvement actions relevant to your organization. |
-| Review current guidance for regulations that apply to your organization| See the following table. |
+| Identify compliance requirements using governance pyramid. | [Compliance manager assessments](/microsoft-365/compliance/compliance-manager-assessments) |
+| Use Compliance Manager to assess compliance and plan remediation for identified gaps. | Visit the Microsoft Purview compliance portal and review all customer-managed improvement actions relevant to your organization. |
+| Review current guidance for regulations that apply to your organization. | See the following table. |
 
 This table lists common regulations or standards.
 
 | Regulation or standard| Resources |
 | --- | --- |
-| National Institute of Standards and Technology (NIST)| [Configure Azure AD to meet NIST authenticator assurance levels](https://learn.microsoft.com/en-us/azure/active-directory/standards/nist-overview) |
-| Federal Risk and Authorization Management Program (FedRAMP)| [Configure Azure AD to meet FedRAMP High Impact level](https://learn.microsoft.com/en-us/azure/active-directory/standards/configure-for-fedramp-high-impact) |
-| Cybersecurity Maturity Model Certification (CMMC)| [Configure Azure AD for CMMC compliance](https://learn.microsoft.com/en-us/azure/active-directory/standards/configure-for-cmmc-compliance) |
-| Executive Order on Improving the Nation’s Cybersecurity (EO 14028)| [Meet identity requirements of memorandum 22-09 with Azure AD](https://learn.microsoft.com/en-us/azure/active-directory/standards/memo-22-09-meet-identity-requirements) |
-| Health Insurance Portability and Accountability Act of 1996 (HIPAA)| [Configuring Azure AD for HIPAA compliance](https://learn.microsoft.com/en-us/azure/active-directory/standards/hipaa-configure-for-compliance) |
-| Payment Card Industry Security Standards Council (PCI SSC)| [Azure AD PCI-DSS guidance](https://learn.microsoft.com/en-us/azure/active-directory/standards/pci-dss-guidance) |
-| Financial services regulations| [Key compliance and security considerations for US banking and capital markets](https://learn.microsoft.com/en-us/microsoft-365/solutions/financial-services-secure-collaboration?view=o365-worldwide)
+| National Institute of Standards and Technology (NIST)| [Configure Azure AD to meet NIST authenticator assurance levels](/azure/active-directory/standards/nist-overview) |
+| Federal Risk and Authorization Management Program (FedRAMP)| [Configure Azure AD to meet FedRAMP High Impact level](/azure/active-directory/standards/configure-for-fedramp-high-impact) |
+| Cybersecurity Maturity Model Certification (CMMC)| [Configure Azure AD for CMMC compliance](/azure/active-directory/standards/configure-for-cmmc-compliance) |
+| Executive Order on Improving the Nation’s Cybersecurity (EO 14028)| [Meet identity requirements of memorandum 22-09 with Azure AD](/azure/active-directory/standards/memo-22-09-meet-identity-requirements) |
+| Health Insurance Portability and Accountability Act of 1996 (HIPAA)| [Configuring Azure AD for HIPAA compliance](/azure/active-directory/standards/hipaa-configure-for-compliance) |
+| Payment Card Industry Security Standards Council (PCI SSC)| [Azure AD PCI-DSS guidance](/azure/active-directory/standards/pci-dss-guidance) |
+| Financial services regulations| [Key compliance and security considerations for US banking and capital markets](/microsoft-365/solutions/financial-services-secure-collaboration) <ul><li> U.S. Securities and Exchange Commission (SEC) </li><li> Financial Industry Regulatory Authority (FINRA) </li><li> Federal Financial Institutions Examination Council (FFIEC) </li><li> Commodity Futures Trading Commission (CFTC) </li></ul> |
+| North America Electric Reliability Corporation (NERC)| [Key Compliance and Security Considerations for the Energy Industry](/microsoft-365/solutions/energy-secure-collaboration) |
 
-- U.S. Securities and Exchange Commission (SEC)
+#### Stage 2
 
-- Financial Industry Regulatory Authority (FINRA)
-
-- Federal Financial Institutions Examination Council (FFIEC)
-
-- Commodity Futures Trading Commission (CFTC) |
-| North America Electric Reliability Corporation (NERC)| [Key Compliance and Security Considerations for the Energy Industry](https://learn.microsoft.com/en-us/microsoft-365/solutions/energy-secure-collaboration?view=o365-worldwide) |
-
-
-### Stage 2
-
-In Stage 2, you begin implementing controls for data that are not already in place. Additional guidance for planning and deploying information protection controls are in the [Identify and protect sensitive business data](https://learn.microsoft.com/en-us/security/zero-trust/adopt/identify-protect-sensitive-business-data) Zero Trust adoption guide.
+In Stage 2, you begin implementing controls for data that are not already in place. Additional guidance for planning and deploying information protection controls are in the [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md) Zero Trust adoption guide.
 
 | Objectives for Stage 2| Resources |
 | --- | --- |
-| Use content explorer to identify regulated data| [Get started with content explorer](https://learn.microsoft.com/en-us/microsoft-365/compliance/data-classification-content-explorer?view=o365-worldwide) 
+| Use content explorer to identify regulated data. | [Get started with content explorer](/microsoft-365/compliance/data-classification-content-explorer) <br><br> Content explorer can assist you in reviewing the current exposure of regulated data and assess its compliance with regulations dictating where it must be stored and how it must be protected. <br><br> [Create custom sensitive information types](/microsoft-365/compliance/create-a-custom-sensitive-information-type) |
+| Implement basic data governance and information protection policies using retention and sensitivity labels. | [Learn about retention policies & labels to retain or delete](/microsoft-365/compliance/retention) <br><br> [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels) |
+| Verify your DLP and encryption policies. | [Purview data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp) <br><br> Encryption with [Sensitivity labelling](/microsoft-365/compliance/encryption-sensitivity-labels) <br><br> [Encryption for Office 365](/microsoft-365/compliance/encryption) |
+| Implement communication policies (if applicable). | [Create and manage communication compliance policies](/microsoft-365/compliance/communication-compliance-policies) |
 
-Content explorer can assist you in reviewing the current exposure of regulated data and assess its compliance with regulations dictating where it must be stored and how it must be protected. 
+#### Stage 3
 
-[Create custom sensitive information types](https://learn.microsoft.com/en-us/microsoft-365/compliance/create-a-custom-sensitive-information-type?view=o365-worldwide) |
-| Implement basic data governance and information protection policies using retention and sensitivity labels| [Learn about retention policies & labels to retain or delete](https://learn.microsoft.com/en-us/microsoft-365/compliance/retention?view=o365-worldwide)
-
-[Learn about sensitivity labels](https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) |
-| Verify your DLP and encryption policies| [Purview data loss prevention](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide) 
-
-Encryption with [Sensitivity labelling](https://learn.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide)
-
-[Encryption for Office 365](https://learn.microsoft.com/en-us/microsoft-365/compliance/encryption?view=o365-worldwide) |
-| Implement communication policies (if applicable)| [Create and manage communication compliance policies](https://learn.microsoft.com/en-us/microsoft-365/compliance/communication-compliance-policies?view=o365-worldwide) |
-
-### Stage 3
-
-In Stage 3, begin to automate your data governance policies for retention and deletion, including use of adaptive scopes. 
+In Stage 3, you begin to automate your data governance policies for retention and deletion, including use of adaptive scopes.
 
 This stage includes implementing controls for segregation and isolation. NIST, for example, prescribes hosting projects in an isolated environment if these projects relate to specific types of classified work for and with the United States government. In some scenarios, financial services regulations require partitioning environments to prevent employees of different parts of the business from communicating with each other.
 
 | Objectives for Stage 3| Resources |
 | --- | --- |
-| Extend data lifecycle management policies with automation| [Data lifecycle management](https://learn.microsoft.com/en-us/microsoft-365/compliance/data-lifecycle-management?view=o365-worldwide) |
-| Set up partitioning and isolation controls (if applicable)| [Information barriers](https://learn.microsoft.com/en-us/microsoft-365/compliance/information-barriers?view=o365-worldwide)
+| Extend data lifecycle management policies with automation. | [Data lifecycle management](/microsoft-365/compliance/data-lifecycle-management) |
+| Set up partitioning and isolation controls (if applicable). | [Information barriers](/microsoft-365/compliance/information-barriers) <br><br> [Data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp) <br><br> [Cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview) |
+| Expand information protection policies to additional workloads. | [Learn about the information protection scanner](/microsoft-365/compliance/deploy-scanner) <br><br> [Use data loss prevention policies for non-Microsoft cloud apps](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps) <br><br> [Data loss prevention and Microsoft Teams](/microsoft-365/compliance/dlp-microsoft-teams) <br><br> [Using Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using) <br><br> [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) |
+| Re-assess compliance using Compliance Manager, identify and remediate remaining gaps.| [Compliance Manager](/microsoft-365/compliance/compliance-manager) |
 
-[Data loss prevention](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp?view=o365-worldwide)
-
-[Cross-tenant access](https://learn.microsoft.com/en-us/azure/active-directory/external-identities/cross-tenant-access-overview) |
-| Expand information protection policies to additional workloads| [Learn about the information protection scanner](https://learn.microsoft.com/en-us/microsoft-365/compliance/deploy-scanner?view=o365-worldwide)
-
-[Use data loss prevention policies for non-Microsoft cloud apps](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps?view=o365-worldwide)
-
-[Data loss prevention and Microsoft Teams](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)
-
-[Using Endpoint data loss prevention](https://learn.microsoft.com/en-us/microsoft-365/compliance/endpoint-dlp-using?view=o365-worldwide)
-
-[Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-worldwide) |
-| Re-assess compliance using Compliance Manager, identify and remediate remaining gaps| [Compliance Manager](https://learn.microsoft.com/en-us/microsoft-365/compliance/compliance-manager?view=o365-worldwide) |
-
-### Stage 4
+#### Stage 4
 
 The objectives in Stage 4 are about operationalizing this scenario by moving to a continuous motion of evaluating the compliance of your assets to your applicable regulations and standards. 
 
 | Objectives for Stage 4| Resources |
 | --- | --- |
-| Continuously assess and inventory the compliance status of resources| This article has identified every required tool and for this objective, you form a repeatable, iterative process that allows for continuous monitoring of resources and assets within the digital estate. 
-
-[Search the audit log in the compliance portal](https://learn.microsoft.com/en-us/microsoft-365/compliance/audit-log-search?view=o365-worldwide) |
-| Use Azure Sentinel to build reports to measure compliance| Use [Azure Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/overview) to build reports based on the Unified Audit Log to assess and measure compliance and demonstrate the effectiveness of controls. 
-
-[Log analytics in Azure](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-overview) |
-| Utilize Compliance Manager to identify and remediate new gaps| [Compliance Manager](https://learn.microsoft.com/en-us/microsoft-365/compliance/compliance-manager?view=o365-worldwide) |
+| Continuously assess and inventory the compliance status of resources. | This article has identified every required tool and for this objective, you form a repeatable, iterative process that allows for continuous monitoring of resources and assets within the digital estate. <br><br> [Search the audit log in the compliance portal](/microsoft-365/compliance/audit-log-search) |
+| Use Azure Sentinel to build reports to measure compliance. | Use [Azure Sentinel](/azure/sentinel/overview) to build reports based on the Unified Audit Log to assess and measure compliance and demonstrate the effectiveness of controls. <br><br> [Log analytics in Azure](/azure/azure-monitor/logs/log-analytics-overview) |
+| Utilize Compliance Manager to identify and remediate new gaps. | [Compliance Manager](/microsoft-365/compliance/compliance-manager) |
 
 ## Ready phase
 
@@ -312,65 +248,87 @@ The objectives in Stage 4 are about operationalizing this scenario by moving to 
 The majority of compliance work happens through policy enforcement. You determine what conditions must be met to achieve compliance and then create a policy or set of policies to automate a set of controls. Policy enforcement with Zero Trust creates repeatable verification for specific compliance controls being implemented. By building controls into the operational technology that the organization interacts with every day, it becomes a much simpler task to achieve audit readiness. 
 
 During the **Ready** phase, you evaluate, test, and pilot the policies you are targeting to be sure these achieve the intended results. Be sure these do not introduce new risks. For this Zero Trust business scenario, it’s important to work with your stakeholders who are implementing access controls, data protection, and other infrastructure protections. For example, the recommendations for evaluating, testing, and piloting policies to enable remote and hybrid work are different than the recommendations for identifying and protecting sensitive data across your digital estate. 
- 
-## Adopt phase
-
-:::image type="content" source="../media/adoption-guide/adopt-phase.svg" alt-text="The adopt phase." lightbox="../media/adoption-guide/adopt-phase.svg":::
 
 ### Example controls
 
 Each pillar of Zero Trust can be mapped against specific controls within a regulatory or standards framework.
 
-**Example 1**
+#### Example 1
 
-Zero Trust for Identity is mapped to Access Control Management within the CIS (Center for Internet Security) Benchmark, as well as to Annexure A.9.2.2 User Access Provisioning in ISO 27001:2022. 
+Zero Trust for Identity is mapped to Access Control Management within the Center for Internet Security (CIS)) Benchmark, as well as to Annexure A.9.2.2 User Access Provisioning in ISO 27001:2022.
 
-In the preceding diagram, Access Control Management is defined in Annexure 9.2.2 of the ISO 27001 requirements standard, User Access Provisioning. The requirements for this section are satisfied by requiring multifactor authentication. 
+>> Example 1 diagram
+
+In this diagram, Access Control Management is defined in Annexure 9.2.2 of the ISO 27001 requirements standard, User Access Provisioning. The requirements for this section are satisfied by requiring multifactor authentication. 
 
 The execution of each control, like the enforcement of Conditional Access policies, is unique to each organization. Your organization’s risk profile along with an inventory of assets, should create an accurate surface area and scope of implementation. 
 
-**Example 2**
+#### Example 2
 
 One of the more obvious correlations between Zero Trust architecture and industry standards includes information classification. Annexure 8.2.1 from ISO 27001, dictates that: 
 
-Information must be classified in terms of legal requirements, value, criticality and sensitivity to any unauthorized disclosure or modification, ideally classified to reflect business activity rather than inhibit or complicate it.
+- Information must be classified in terms of legal requirements, value, criticality and sensitivity to any unauthorized disclosure or modification, ideally classified to reflect business activity rather than inhibit or complicate it.
 
-<placeholder illustration>
+>> Example 2 diagram
+>> placeholder illustration
 
-In the preceding diagram, the Microsoft Purview data classification service is used to define and apply sensitivity labels to emails, documents, and structured data. 
+In this diagram, the Microsoft Purview data classification service is used to define and apply sensitivity labels to emails, documents, and structured data. 
 
-**Example 3**
+#### Example 3
 
 Annexure 8.1.1 In ISO 27001:2022 (Inventory of assets) requires that “any assets associated with information and information processing facilities need to be identified and managed over the lifecycle, and are always up to date.”
 
-The fulfilment of this control requirement can be achieved through the implementation of Intune device management. This not only provides a clear account of inventory, it also reports the status of compliance for each device against defined company or industry policies. 
+The fulfillment of this control requirement can be achieved through the implementation of Intune device management. This not only provides a clear account of inventory, it also reports the status of compliance for each device against defined company or industry policies. 
 
-<placeholder illustration>
+>> Example 3 diagram
+>> placeholder illustration
 
-In the preceding diagram, you use Microsoft Intune to manage devices, including setting up compliance policies to report on the compliance of devices against the policies you set. You can additionally use Conditional Access policies to require device compliance during the authentication and authorization process. 
+In this, you use Microsoft Intune to manage devices, including setting up compliance policies to report on the compliance of devices against the policies you set. You can additionally use Conditional Access policies to require device compliance during the authentication and authorization process.
 
-**Example 4**
+#### Example 4
 
-The most comprehensive example of a pillar of Zero Trust that has been mapped to industry standards would be Threat intelligence and Incident response (**Refer to Appendix A** **A.5.7 Threat intelligence**). The entire Microsoft Defender and Azure Sentinel breadth of products become applicable in this scenario to provide in-depth analysis and execution of threat intelligence and real-time incident response.
+The most comprehensive example of a pillar of Zero Trust that has been mapped to industry standards would be Threat intelligence and Incident response. The entire Microsoft Defender and Azure Sentinel breadth of products become applicable in this scenario to provide in-depth analysis and execution of threat intelligence and real-time incident response.
 
-<placeholder illustration>
+>> Example 4 diagram
+>> placeholder illustration
 
-In the preceding diagram, Microsoft Sentinel together with Microsoft Defender tools provide threat intelligence. 
+In this diagram, Microsoft Sentinel together with Microsoft Defender tools provide threat intelligence. 
 
-## Govern and manage
+## Adopt phase
 
-:::image type="content" source="../media/adoption-guide/govern-manage-phase.svg" alt-text="The govern and manage phase." lightbox="../media/adoption-guide/govern-manage-phase.svg":::
+:::image type="content" source="../media/adoption-guide/adopt-phase.svg" alt-text="The adopt phase." lightbox="../media/adoption-guide/adopt-phase.svg":::
 
 In the adoption phase, you incrementally implement your technical plans across your digital estate. You’ll need to categorize the technical plans by area and work with the corresponding teams to accomplish this.
 
-For identity and device access, take a staged approach where you start with a small number of users and devices and then gradually increase the deployment to include your full environment. This is described in the [Secure remote and hybrid work](https://learn.microsoft.com/en-us/security/zero-trust/adopt/secure-remote-hybrid-work?view=o365-worldwide) adoption scenario. Here is an example.
+For identity and device access, take a staged approach where you start with a small number of users and devices and then gradually increase the deployment to include your full environment. This is described in the [Secure remote and hybrid work](secure-remote-hybrid-work.md) adoption scenario. Here is an example.
 
-![Picture 1438408742](../media/article-5-meet-regulatory-and-compliance-requirements-04.png)
+:::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Pilot, evaluate, and full deployment adoption phases." lightbox="../media/adoption-guide/adoption-phases.svg":::
 
-Adoption for protecting data involves cascading the work and iterating as you go to be sure the policies you create are appropriately honed for your environment. This is described in the [Identify and protect sensitive data](https://learn.microsoft.com/en-us/security/zero-trust/adopt/identify-protect-sensitive-business-data) adoption scenario. Here is an example.
+Adoption for protecting data involves cascading the work and iterating as you go to be sure the policies you create are appropriately honed for your environment. This is described in the [Identify and protect sensitive data](identify-protect-sensitive-business-data.md) adoption scenario. Here is an example.
 
-![Picture 1495556473](../media/article-5-meet-regulatory-and-compliance-requirements-05.png)
+:::image type="content" source="../media/adoption-guide/adoption-information-protection.svg" alt-text="Process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.svg":::
 
+## Govern and manage
+
+Meeting regulatory and compliance requirements is an ongoing process. As you transition to this phase, shift to tracking and monitoring. Microsoft provides a handful of tools to help.
+
+You can use content explorer to monitor the status of organizational compliance. For data classification, content explorer provides a view of the landscape and spread of sensitive information within your organization. From trainable classifiers to different types of sensitive data—either through adaptive scopes or manually created sensitivity labels—your administrators can see whether the prescribed sensitivity schema is being applied correctly throughout the organization. This is also an opportunity to identify specific areas of risk where sensitive information is consistently shared in Exchange, SharePoint, and OneDrive. Here is an example.
+
+![Picture 2](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png)
+
+By using the greater reporting functionality within the Microsoft Purview Compliance portal, you can create and quantify a macro-view of compliance. Here is an example.
+
+![Picture 4](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png)
+
+The same thinking and process can be applied for Azure. Use Defender for Cloud- Regulatory Compliance to determine a compliance score similar to the same score provided in the Purview Compliance Manager. The score is aligned to multiple regulatory standards and frameworks across various industry verticals. It is up to your organization to understand which of these regulatory standards and frameworks apply to the score. The status provided by this dashboard displays a constant real-time assessment of passing versus failing assessments with each standard. Here is an example.
+
+![Picture 11](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png)
+
+The Purview dashboards provide a broad assessment that can help inform your business leaders and be used in departmental reporting, such as a quarterly review. On a more operational note, you can leverage Microsoft Sentinel by creating a Log Analytics workspace for unified audit log data. This workspace can be connected to your Microsoft 365 data and provide insights on user activity. Here is an example.
+
+![Viewing data gathered in the Microsoft Sentinel workbook for Office 365](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png)
+
+This data is customizable and can be used in conjunction with the other dashboards to contextualize the regulatory requirement specifically aligned to your organization’s strategy, risk profile, goals, and objectives.
 
 ## Next Steps
 

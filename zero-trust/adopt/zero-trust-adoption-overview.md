@@ -8,7 +8,7 @@ ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
   - msftsolution-overview
-  - zerotrust-solution
+  - zerotrust-adopt
 ---
 
 # Zero Trust adoption framework overview

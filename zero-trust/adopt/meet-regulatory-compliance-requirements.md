@@ -26,7 +26,7 @@ A Zero Trust approach often exceeds some types of requirements imposed by compli
 
 The guidance in this article walks you through how to get started with Zero Trust as a framework for meeting your regulatory and compliance requirements with an emphasis on how to communicate and work with business leaders and teams across your organization.
 
-This article uses the same lifecycle phases as the Cloud Adoption Framework for Azure—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
+This article uses the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
 :::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objectives." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
 
@@ -162,7 +162,7 @@ If this staged approach works for your organization, you can use [this PowerPoin
 
 ### Stakeholder team
 
-Your stakeholder team for this business scenario includes leaders across your organization who are invested in your security posture and are likely include the following roles:
+Your stakeholder team for this business scenario includes leaders across your organization who are invested in your security posture and are likely to include the following roles:
 
 | Program leaders and technical owners | Accountability |
 | --- | --- |
@@ -261,7 +261,7 @@ Zero Trust for Identity is mapped to Access Control Management within the Center
 
 In this diagram, Access Control Management is defined in Annexure 9.2.2 of the ISO 27001 requirements standard, User Access Provisioning. The requirements for this section are satisfied by requiring multifactor authentication. 
 
-The execution of each control, like the enforcement of Conditional Access policies, is unique to each organization. Your organization’s risk profile along with an inventory of assets, should create an accurate surface area and scope of implementation.
+The execution of each control, like the enforcement of Conditional Access policies, is unique to each organization. Your organization’s risk profile along with an inventory of assets should create an accurate surface area and scope of implementation.
 
 #### Example 2
 
@@ -277,7 +277,7 @@ In this diagram, the Microsoft Purview data classification service is used to de
 
 Annexure 8.1.1 In ISO 27001:2022 (Inventory of assets) requires that “any assets associated with information and information processing facilities need to be identified and managed over the lifecycle, and are always up to date.”
 
-The fulfillment of this control requirement can be achieved through the implementation of Intune device management. This not only provides a clear account of inventory, it also reports the status of compliance for each device against defined company or industry policies. 
+The fulfillment of this control requirement can be achieved through the implementation of Intune device management. This requirement provides a clear account of inventory and reports the status of compliance for each device against defined company or industry policies.
 
 :::image type="content" source="../media/adoption-guide/regulatory-compliance-example-devices.svg" alt-text="Zero Trust for devices mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-devices.svg":::
 
@@ -311,27 +311,35 @@ Meeting regulatory and compliance requirements is an ongoing process. As you tra
 
 You can use content explorer to monitor the status of organizational compliance. For data classification, content explorer provides a view of the landscape and spread of sensitive information within your organization. From trainable classifiers to different types of sensitive data—either through adaptive scopes or manually created sensitivity labels—your administrators can see whether the prescribed sensitivity schema is being applied correctly throughout the organization. This is also an opportunity to identify specific areas of risk where sensitive information is consistently shared in Exchange, SharePoint, and OneDrive. Here is an example.
 
+<!---
 >> Replace screen shot
+--->
 
-![Picture 2](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png)
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png" alt-text="Example of a content explorer dashboard." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png":::
 
 By using the greater reporting functionality within the Microsoft Purview Compliance portal, you can create and quantify a macro-view of compliance. Here is an example.
 
+<!---
 >> Replace screen shot
+--->
 
-![Picture 4](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png)
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png" alt-text="Example of a macro-view dashboard for Microsoft Purview Compliance." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png":::
 
-The same thinking and process can be applied for Azure. Use Defender for Cloud- Regulatory Compliance to determine a compliance score similar to the same score provided in the Purview Compliance Manager. The score is aligned to multiple regulatory standards and frameworks across various industry verticals. It is up to your organization to understand which of these regulatory standards and frameworks apply to the score. The status provided by this dashboard displays a constant real-time assessment of passing versus failing assessments with each standard. Here is an example.
+The same thinking and process can be applied to Azure. Use Defender for Cloud-Regulatory Compliance to determine a compliance score similar to the same score provided in the Purview Compliance Manager. The score is aligned to multiple regulatory standards and frameworks across various industry verticals. It is up to your organization to understand which of these regulatory standards and frameworks apply to the score. The status provided by this dashboard displays a constant real-time assessment of passing versus failing assessments with each standard. Here is an example.
 
+<!---
 >> Replace screen shot
+--->
 
-![Picture 11](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png)
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png" alt-text="Example of the compliance score in the Microsoft Defender for Cloud portal." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png":::
 
 The Purview dashboards provide a broad assessment that can help inform your business leaders and be used in departmental reporting, such as a quarterly review. On a more operational note, you can leverage Microsoft Sentinel by creating a Log Analytics workspace for unified audit log data. This workspace can be connected to your Microsoft 365 data and provide insights on user activity. Here is an example.
 
+<!---
 >> Replace screen shot
+--->
 
-![Viewing data gathered in the Microsoft Sentinel workbook for Office 365](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png)
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png" alt-text="Example of data gathered in Microsoft Sentinel for Office 365." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png":::
 
 This data is customizable and can be used in conjunction with the other dashboards to contextualize the regulatory requirement specifically aligned to your organization’s strategy, risk profile, goals, and objectives.
 

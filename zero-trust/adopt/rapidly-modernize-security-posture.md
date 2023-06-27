@@ -24,7 +24,7 @@ Rapidly modernizing your security posture involves working within your organizat
 
 Rapidly modernizing your security posture depends on your ability to systematically lead each component piece of your Zero Trust architecture through the adoption lifecycle. Each Zero Trust business scenario article recommends objectives across four stages. You can think of each objective as a technical project that you can lead through the adoption process. A more granular representation of the adoption process for a single objective or set of objectives is illustrated here.
 
-:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objectives." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
 
 The following table is an accessible version of the illustration.
 

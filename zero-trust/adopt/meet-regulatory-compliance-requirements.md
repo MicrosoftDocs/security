@@ -78,7 +78,7 @@ The most important thing to remember with this business scenario is that the Zer
 
 A strategy model that is often used within regulatory compliance is the governance pyramid shown here.
 
->> Pyramid figure
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-governance-pyramid.svg" alt-text="The governance pyramid strategy model." lightbox="../media/adoption-guide/regulatory-compliance-governance-pyramid.svg":::
 
 This pyramid illustrates the different levels on which most organizations manage information technology (IT) governance. From the top of the pyramid to the bottom, these levels are legislation, standards, policies and procedures, and work instructions. 
 
@@ -154,11 +154,11 @@ Many organizations can take a four-staged approach to these technical activities
 
 | **Stage 1**| **Stage 2**| **Stage 3**| **Stage 4** |
 | --- | --- | --- | --- |
-| Identify regulatory requirements that apply to your organization. <br><br> Use Compliance Manager to identify regulations that might affect your business, assess compliance with the high-level requirements imposed by those regulations, and plan remediation for identified gaps. <br><br> Review current guidance for regulations that apply to your organization.| Use content explorer in Microsoft Purview to  identify data that is subject to regulation requirements and assess its risk and exposure. Define custom classifiers to adapt this capability to your business needs. <br><br> Assess requirements for information protection, such as data retention and records management policies, and then implement basic information protection and data governance policies using retention and sensitivity labels. <br><br> Implement basic DLP policies to control the flow of regulated information. <br><br> Implement [communication compliance policies](/microsoft-365/compliance/communication-compliance) if required by regulations.| Extend data lifecycle management policies with automation. <br><br> Set up partitioning and isolation controls using sensitivity labels, DLP or [information barriers](/microsoft-365/compliance/information-barriers) if required by regulations. <br><br> Expand information protection policies by implementing container labeling, automatic and mandatory labeling, and stricter DLP policies. Then expand these policies to on-premises data, devices (endpoints), and third-party cloud services using additional capabilities in Microsoft Purview. <br><br> Reassess compliance using Compliance Manager and identify and remediate remaining gaps.| Use Azure Sentinel to build reports based on the unified audit log to continuously assess and inventory the compliance status of your information. <br><br> Continue using Compliance Manager on an ongoing basis to identify and remediate remaining gaps and the requirements of new or updated regulations. |
+| Identify regulatory requirements that apply to your organization. <br><br> Use Compliance Manager to identify regulations that might affect your business, assess compliance with the high-level requirements imposed by those regulations, and plan remediation for identified gaps. <br><br> Review current guidance for regulations that apply to your organization.| Use content explorer in Microsoft Purview to  identify data that is subject to regulation requirements and assess its risk and exposure. Define custom classifiers to adapt this capability to your business needs. <br><br> Assess requirements for information protection, such as data retention and records management policies, and then implement basic information protection and data governance policies using retention and sensitivity labels. <br><br> Implement basic DLP policies to control the flow of regulated information. <br><br> Implement [communication compliance policies](/microsoft-365/compliance/communication-compliance) if required by regulations.| Extend data lifecycle management policies with automation. <br><br> Set up partitioning and isolation controls using sensitivity labels, DLP or [information barriers](/microsoft-365/compliance/information-barriers) if required by regulations. <br><br> Expand information protection policies by implementing container labeling, automatic and mandatory labeling, and stricter DLP policies. Then expand these policies to on-premises data, devices (endpoints), and third-party cloud services using additional capabilities in Microsoft Purview. <br><br> Reassess compliance using Compliance Manager and identify and remediate remaining gaps.| Use Azure Sentinel to build reports based on the unified audit log to continuously assess and inventory the compliance status of your information. <br><br> Continue using Compliance Manager on an ongoing basis to identify and remediate remaining gaps and meet the requirements of new or updated regulations. |
 
 If this staged approach works for your organization, you can use [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
->> PowerPoint stages
+:::image type="content" source="../media/adoption-guide/zero-trust-meet-regulatory-compliance-requirements-progress-tracking.png" alt-text="PowerPoint slide for the stages of your meet regulatory and compliance requirements deployment." lightbox="../media/adoption-guide/zero-trust-meet-regulatory-compliance-requirements-progress-tracking.png":::
 
 ### Stakeholder team
 
@@ -178,7 +178,7 @@ Your stakeholder team for this business scenario includes leaders across your or
 
 The [PowerPoint slide deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
->> PowerPoint stakeholders
+:::image type="content" source="../media/adoption-guide/zero-trust-meet-regulatory-compliance-requirements-stakeholders.png" alt-text="PowerPoint slide to identify key stakeholders for your meet regulatory and compliance requirements deployment." lightbox="../media/adoption-guide/zero-trust-meet-regulatory-compliance-requirements-stakeholders.png":::
 
 ### Technical plans and skills readiness
 
@@ -257,11 +257,11 @@ Each pillar of Zero Trust can be mapped against specific controls within a regul
 
 Zero Trust for Identity is mapped to Access Control Management within the Center for Internet Security (CIS)) Benchmark, as well as to Annexure A.9.2.2 User Access Provisioning in ISO 27001:2022.
 
->> Example 1 diagram
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-identities.svg" alt-text="Zero Trust for identity mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-identities.svg":::
 
 In this diagram, Access Control Management is defined in Annexure 9.2.2 of the ISO 27001 requirements standard, User Access Provisioning. The requirements for this section are satisfied by requiring multifactor authentication. 
 
-The execution of each control, like the enforcement of Conditional Access policies, is unique to each organization. Your organization’s risk profile along with an inventory of assets, should create an accurate surface area and scope of implementation. 
+The execution of each control, like the enforcement of Conditional Access policies, is unique to each organization. Your organization’s risk profile along with an inventory of assets, should create an accurate surface area and scope of implementation.
 
 #### Example 2
 
@@ -269,8 +269,7 @@ One of the more obvious correlations between Zero Trust architecture and industr
 
 - Information must be classified in terms of legal requirements, value, criticality and sensitivity to any unauthorized disclosure or modification, ideally classified to reflect business activity rather than inhibit or complicate it.
 
->> Example 2 diagram
->> placeholder illustration
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-data.svg" alt-text="Zero Trust for data mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-data.svg":::
 
 In this diagram, the Microsoft Purview data classification service is used to define and apply sensitivity labels to emails, documents, and structured data. 
 
@@ -280,8 +279,7 @@ Annexure 8.1.1 In ISO 27001:2022 (Inventory of assets) requires that “any asse
 
 The fulfillment of this control requirement can be achieved through the implementation of Intune device management. This not only provides a clear account of inventory, it also reports the status of compliance for each device against defined company or industry policies. 
 
->> Example 3 diagram
->> placeholder illustration
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-devices.svg" alt-text="Zero Trust for devices mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-devices.svg":::
 
 In this, you use Microsoft Intune to manage devices, including setting up compliance policies to report on the compliance of devices against the policies you set. You can additionally use Conditional Access policies to require device compliance during the authentication and authorization process.
 
@@ -289,10 +287,9 @@ In this, you use Microsoft Intune to manage devices, including setting up compli
 
 The most comprehensive example of a pillar of Zero Trust that has been mapped to industry standards would be Threat intelligence and Incident response. The entire Microsoft Defender and Azure Sentinel breadth of products become applicable in this scenario to provide in-depth analysis and execution of threat intelligence and real-time incident response.
 
->> Example 4 diagram
->> placeholder illustration
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-threat-intelligence.svg" alt-text="Zero Trust for threat intelligence mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-threat-intelligence.svg":::
 
-In this diagram, Microsoft Sentinel together with Microsoft Defender tools provide threat intelligence. 
+In this diagram, Microsoft Sentinel together with Microsoft Defender tools provide threat intelligence.
 
 ## Adopt phase
 
@@ -314,17 +311,25 @@ Meeting regulatory and compliance requirements is an ongoing process. As you tra
 
 You can use content explorer to monitor the status of organizational compliance. For data classification, content explorer provides a view of the landscape and spread of sensitive information within your organization. From trainable classifiers to different types of sensitive data—either through adaptive scopes or manually created sensitivity labels—your administrators can see whether the prescribed sensitivity schema is being applied correctly throughout the organization. This is also an opportunity to identify specific areas of risk where sensitive information is consistently shared in Exchange, SharePoint, and OneDrive. Here is an example.
 
+>> Replace screen shot
+
 ![Picture 2](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png)
 
 By using the greater reporting functionality within the Microsoft Purview Compliance portal, you can create and quantify a macro-view of compliance. Here is an example.
+
+>> Replace screen shot
 
 ![Picture 4](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png)
 
 The same thinking and process can be applied for Azure. Use Defender for Cloud- Regulatory Compliance to determine a compliance score similar to the same score provided in the Purview Compliance Manager. The score is aligned to multiple regulatory standards and frameworks across various industry verticals. It is up to your organization to understand which of these regulatory standards and frameworks apply to the score. The status provided by this dashboard displays a constant real-time assessment of passing versus failing assessments with each standard. Here is an example.
 
+>> Replace screen shot
+
 ![Picture 11](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png)
 
 The Purview dashboards provide a broad assessment that can help inform your business leaders and be used in departmental reporting, such as a quarterly review. On a more operational note, you can leverage Microsoft Sentinel by creating a Log Analytics workspace for unified audit log data. This workspace can be connected to your Microsoft 365 data and provide insights on user activity. Here is an example.
+
+>> Replace screen shot
 
 ![Viewing data gathered in the Microsoft Sentinel workbook for Office 365](../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png)
 

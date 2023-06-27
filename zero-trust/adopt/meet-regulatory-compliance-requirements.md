@@ -311,33 +311,17 @@ Meeting regulatory and compliance requirements is an ongoing process. As you tra
 
 You can use content explorer to monitor the status of organizational compliance. For data classification, content explorer provides a view of the landscape and spread of sensitive information within your organization. From trainable classifiers to different types of sensitive data—either through adaptive scopes or manually created sensitivity labels—your administrators can see whether the prescribed sensitivity schema is being applied correctly throughout the organization. This is also an opportunity to identify specific areas of risk where sensitive information is consistently shared in Exchange, SharePoint, and OneDrive. Here is an example.
 
-<!---
->> Replace screen shot
---->
-
 :::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png" alt-text="Example of a content explorer dashboard." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png":::
 
 By using the greater reporting functionality within the Microsoft Purview Compliance portal, you can create and quantify a macro-view of compliance. Here is an example.
-
-<!---
->> Replace screen shot
---->
 
 :::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png" alt-text="Example of a macro-view dashboard for Microsoft Purview Compliance." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png":::
 
 The same thinking and process can be applied to Azure. Use Defender for Cloud-Regulatory Compliance to determine a compliance score similar to the same score provided in the Purview Compliance Manager. The score is aligned to multiple regulatory standards and frameworks across various industry verticals. It is up to your organization to understand which of these regulatory standards and frameworks apply to the score. The status provided by this dashboard displays a constant real-time assessment of passing versus failing assessments with each standard. Here is an example.
 
-<!---
->> Replace screen shot
---->
-
 :::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png" alt-text="Example of the compliance score in the Microsoft Defender for Cloud portal." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png":::
 
 The Purview dashboards provide a broad assessment that can help inform your business leaders and be used in departmental reporting, such as a quarterly review. On a more operational note, you can leverage Microsoft Sentinel by creating a Log Analytics workspace for unified audit log data. This workspace can be connected to your Microsoft 365 data and provide insights on user activity. Here is an example.
-
-<!---
->> Replace screen shot
---->
 
 :::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png" alt-text="Example of data gathered in Microsoft Sentinel for Office 365." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png":::
 

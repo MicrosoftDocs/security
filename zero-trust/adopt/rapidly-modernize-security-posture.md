@@ -183,21 +183,6 @@ As your defensive strength increases, the cost to the attacker increases and red
 
 The attacker ROI model helps leaders understand that there are few absolutes. A security posture is never considered perfect or impenetrable. However, there is a lot of opportunity for your organization to be strategic and prioritize your budget and resources. It’s additional incentive for your team of business leaders to work together to protect your organization.
 
-<!---
-
-:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of attacker ROI." lightbox="../media/adoption-guide/placeholder.svg":::
-
-Attacker ROI figure
-
-In this diagram:
-
-- Your defender budget should be spent strategically to increase the resources required for attackers to wage an attack on your environment.
-- Attackers are often categorized by level of sophistication and resources from lowest to highest: amateur, organized crime, and sponsored by nation states.
-- The principles of Zero Trust help your organization identify and prioritize how best to spend your defender budget to raise the cost of an attack so you can defend against all levels of attackers.
-
---->
-
-
 ### Identify outcomes of your security posture
 
 After working together to gain business alignment and identify strategic priorities, be sure to identify specific outcomes. These can guide further prioritization and planning.
@@ -425,16 +410,6 @@ The following table lists some example metrics.
 | Average boot and sign-in time for managed devices | % of compliant apps | Time to restore critical systems | Number of repetitive manual steps removed from workflows |
 | Number of security interruptions in user workflow | # of privileged accounts meeting 100% of requirements | # of high-severity incidents | # of lessons learned from internal and external incidents |
 | % of IT helpdesk time spent on low-value security activities | # of accounts meeting 100% of requirements | Incident growth rate (overall) |  |
-
-<!---
-
-The following illustration lists example metrics.
-
-:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of example metrics." lightbox="../media/adoption-guide/placeholder.svg":::
-
-Example metrics diagram
-
---->
 
 ### Monitor and detect
 

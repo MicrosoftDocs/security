@@ -7,7 +7,7 @@ author: BrendaCarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
-  - zerotrust-solution
+  - zerotrust-adopt
 ---
 
 # Secure remote and hybrid work with Zero Trust
@@ -60,7 +60,7 @@ Securing remote and hybrid work with Zero Trust includes deploying security prot
 This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
 
-:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objectives." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
 
 The following table is an accessible version of the illustration.
 
@@ -69,20 +69,6 @@ The following table is an accessible version of the illustration.
 | Outcomes <br><br> Organizational alignment <br><br> Strategic goals| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
-
-<!---
-
-:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objectives." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
-
-The following table is an accessible version of the illustration.
-
-| Define strategy| Plan| Ready| Adopt| Govern and manage |
-| --- | --- | --- | --- | --- |
-| Organizational alignment <br><br> Strategic goals <br><br> Outcomes| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
-
---->
-
-
 
 ## Define strategy phase
 
@@ -156,7 +142,7 @@ Many organizations can take a four-staged approach to these deployment objective
 | --- | --- | --- | --- |
 | Verify and secure every identity with strong authentication <br><br> Integrate SaaS apps with Active Directory (Azure AD) for single sign-on <br><br> All new applications use modern authentication | Register devices with Azure AD <br><br> Implement **Starting point** Zero Trust identity and device access policies <br><br> Use Azure AD Application Proxy with on-premises apps for single sign-on | Enroll devices in your device management solution and apply recommended security protections <br><br> Allow only compliant and trusted devices to access data | Monitor device configuration drift <br><br> Implement passwordless authentication |
 
-If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) and updating the slides that correspond to this business scenario. Here's an example.
+If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
 :::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="PowerPoint slide for the stages of your secure remote and hybrid work deployment." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
 
@@ -388,4 +374,5 @@ Additional resources for day-to-day governance and operation include:
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)

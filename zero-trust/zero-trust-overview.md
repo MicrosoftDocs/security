@@ -181,9 +181,3 @@ On this site you can find:
 - [Microsoft Azure deployment plans](azure-infrastructure-overview.md)
 - [Integration guidance for ISVs](integrate/overview.md)
 - [Developer guidance](develop/overview.md)
-
-<!---
-
-For more resources and to learn more about Zero Trust, check out our [Resources for accelerating your Zero Trust journey](https://www.microsoft.com/security/blog/2021/05/24/resources-for-accelerating-your-zero-trust-journey/).
-
---->

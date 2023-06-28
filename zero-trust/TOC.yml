@@ -13,6 +13,8 @@
       href: adopt/secure-remote-hybrid-work.md
     - name: Identify and protect sensitive business data
       href: adopt/identify-protect-sensitive-business-data.md
+    - name: Meet regulatory and compliance requirements
+      href: adopt/meet-regulatory-compliance-requirements.md
 - name: Concepts and deployment objectives
   expanded: false
   items:

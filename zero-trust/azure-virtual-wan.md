@@ -275,15 +275,6 @@ The following training modules help your team with the skills necessary to apply
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/design-implement-network-security-monitoring/)
 
-<!---
-Training SVGs:
-
-introduction-to-azure-firewall.svg
-generic-badge.svg (FW manager)
-6-design-and-implement-network-security-and-monitoring.svg
-
---->
-
 For more training on security in Azure, see these resources in the Microsoft catalog:<br> 
 [Security in Azure](/training/browse/?subjects=security&products=azure)
 

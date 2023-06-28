@@ -7,7 +7,7 @@ author: BrendaCarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
-  - zerotrust-solution
+  - zerotrust-adopt
 ---
 
 # Rapidly modernize your security posture
@@ -24,7 +24,7 @@ Rapidly modernizing your security posture involves working within your organizat
 
 Rapidly modernizing your security posture depends on your ability to systematically lead each component piece of your Zero Trust architecture through the adoption lifecycle. Each Zero Trust business scenario article recommends objectives across four stages. You can think of each objective as a technical project that you can lead through the adoption process. A more granular representation of the adoption process for a single objective or set of objectives is illustrated here.
 
-:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objectives." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
 
 The following table is an accessible version of the illustration.
 
@@ -183,21 +183,6 @@ As your defensive strength increases, the cost to the attacker increases and red
 
 The attacker ROI model helps leaders understand that there are few absolutes. A security posture is never considered perfect or impenetrable. However, there is a lot of opportunity for your organization to be strategic and prioritize your budget and resources. It’s additional incentive for your team of business leaders to work together to protect your organization.
 
-<!---
-
-:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of attacker ROI." lightbox="../media/adoption-guide/placeholder.svg":::
-
-Attacker ROI figure
-
-In this diagram:
-
-- Your defender budget should be spent strategically to increase the resources required for attackers to wage an attack on your environment.
-- Attackers are often categorized by level of sophistication and resources from lowest to highest: amateur, organized crime, and sponsored by nation states.
-- The principles of Zero Trust help your organization identify and prioritize how best to spend your defender budget to raise the cost of an attack so you can defend against all levels of attackers.
-
---->
-
-
 ### Identify outcomes of your security posture
 
 After working together to gain business alignment and identify strategic priorities, be sure to identify specific outcomes. These can guide further prioritization and planning.
@@ -230,7 +215,7 @@ Many organizations can take a four-staged approach to these technical activities
 | --- | --- | --- | --- |
 | Identify risks to your organization <br><br> Identify gaps in your security posture <br><br> Capture your initial Secure Score status <br><br> Identify regulatory requirements <br><br> Set leadership expectations | Develop a response readiness plan <br><br> Inventory your digital estate <br><br> Implement basic hygiene practices <br><br> Update your status for Secure Score <br><br> Capture your status in Compliance Manager| Visualize your security posture using audience-appropriate dashboards <br><br> Document and manage shadow IT using Microsoft Defender for Cloud Apps <br><br> Develop a methodology for patching and updating systems| Continuously educate your users <br><br> Evolve your organization’s SecOps capabilities <br><br> Continue to manage risk |
 
-If this staged approach works for your organization, you can use this [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's an example.
+If this staged approach works for your organization, you can use this [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
 :::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png" alt-text="Example of the four stages to track progress." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png":::
 
@@ -426,16 +411,6 @@ The following table lists some example metrics.
 | Number of security interruptions in user workflow | # of privileged accounts meeting 100% of requirements | # of high-severity incidents | # of lessons learned from internal and external incidents |
 | % of IT helpdesk time spent on low-value security activities | # of accounts meeting 100% of requirements | Incident growth rate (overall) |  |
 
-<!---
-
-The following illustration lists example metrics.
-
-:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="Diagram of example metrics." lightbox="../media/adoption-guide/placeholder.svg":::
-
-Example metrics diagram
-
---->
-
 ### Monitor and detect
 
 As you work through each business scenario, establish how you'll monitor and detect changes to the environment and breaches. Many of the monitoring and detection capabilities are provided through the Extended Detection and Response (XDR) tools, including the suite of Microsoft Defender products and Microsoft Sentinel. These are implemented in the **Prevent or reduce business damage from a breach** business scenario (article is in progress).
@@ -449,3 +424,4 @@ Implementing Zero Trust is a journey. In enterprise-scale organizations, it can 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
+- [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)

@@ -14,7 +14,7 @@ ms.collection:
 
 # Overview – Apply Zero Trust principles to Azure services
 
-This series of articles helps you apply the principles of Zero Trust to your services in Microsoft Azure using a multi-disciplinary methodology. Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles:
+This series of articles helps you apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to your services in Microsoft Azure using a multi-disciplinary methodology. Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles:
 
 - Verify explicitly
 - Use least privileged access

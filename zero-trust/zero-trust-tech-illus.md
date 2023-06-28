@@ -79,18 +79,6 @@ This illustration shows the set of Zero Trust identity and device access policie
 
 ### Additional Microsoft security posters and illustrations
 
-<!---
-
-| Item | Description |
-|:-----|:-----|
-|[![The "Protect your organization from ransomware" poster](../compass/media/human-operated-ransomware/ransomware-poster-thumbnail.png)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf) <br/> [PDF](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf) <br/> Updated February 2023 | Use this poster together with this article: [What is ransomware](../compass/human-operated-ransomware.md) <br/>|
-
-Download the [Protect your organization from ransomware poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf) for 
-
-[![The "Protect your organization from ransomware" poster](../compass/media/human-operated-ransomware/ransomware-poster-thumbnail.png)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
-
---->
-
 See these additional Microsoft security posters and illustrations:
 
 - Microsoft Intune enrollment options: [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx)

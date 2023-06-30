@@ -75,6 +75,8 @@ landingContent:
         links:
           - text: Secure IaaS infrastructure in Azure
             url: azure-infrastructure-overview.md
+          - text: Spoke virtual networks with Azure PaaS services
+            url: azure-infrastructure-paas.md
 
  # Card
   - title: Technology partner integrations

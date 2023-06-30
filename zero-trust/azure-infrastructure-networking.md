@@ -352,6 +352,7 @@ For more training on security in Azure, see these resources in the Microsoft cat
 - [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md)
 - [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md)
 - [Apply Zero Trust principles to spoke virtual networks in Azure](azure-infrastructure-iaas.md)
+- [Apply Zero Trust principles to spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
 
 ## Technical illustrations
 

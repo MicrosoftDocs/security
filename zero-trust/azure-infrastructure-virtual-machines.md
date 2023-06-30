@@ -283,6 +283,7 @@ For more training on virtual machines in Azure, see these resources in the Micro
 
 - [Apply Zero Trust principles to storage in Azure](azure-infrastructure-storage.md)
 - [Apply Zero Trust principles to spoke virtual networks in Azure](azure-infrastructure-iaas.md)
+- [Apply Zero Trust principles to spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
 - [Apply Zero Trust principles to hub virtual networks in Azure](azure-infrastructure-networking.md)
 
 ## Technical illustrations

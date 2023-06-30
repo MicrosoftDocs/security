@@ -195,6 +195,7 @@ See these additional articles for applying Zero Trust principles to Azure IaaS:
 - [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md)
 - [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md)
 - [Apply Zero Trust principles to a spoke virtual network in Azure](azure-infrastructure-iaas.md)
+- [Apply Zero Trust principles to spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
 - [Apply Zero Trust principles to a hub virtual network in Azure](azure-infrastructure-networking.md)
 
 ## References

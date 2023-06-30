@@ -140,7 +140,7 @@ Azure network security groups are used to filter network traffic between Azure r
 
 For multi-tier applications, the recommendation is to create a dedicated network security group ("NSG" in the following diagram) for each subnet that hosts a networking component.
 
-:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.png" alt-text="Diagram of dedicated network security groups for each subnet." lightbox="media/spoke/azure-infra-spoke-subscription-paas-nsg-4.png":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.png" alt-text="Diagram of dedicated network security groups for each subnet." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.png":::
 
 In the diagram:
 

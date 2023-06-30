@@ -230,9 +230,11 @@ To secure this scenario, you'll need to add the following rules:
 | App Service Integration Subnet | Outbound | IP Addresses | Your App Service Integration Subnet's IP Address Range | 1433 | IP Addresses | The explicit IP address of your SQL DB's private endpoint | MS SQL | AllowApptoSQLDBOutbound | Allows outbound access to the SQL private endpoint from App Service Integration subnet.
 | Azure SQL Subnet | Inbound | IP Addresses | Your App Service Integration Subnet's IP Address Range | 1433 | IP Addresses | The explicit IP address of your SQL DB's private endpoint | MS SQL | AllowApptoSQLDBInbound | Allows inbound access to the SQL private endpoint from App Service Integration subnet.
 
->[!NOTE] Sometimes source traffic can come from different ports and if this pattern occurs you can add source port ranges to "\*" to allow any source port. The destination port is more significant, and some recommendations are to always use "\*" for the source port.
+>[!NOTE]
+>Sometimes source traffic can come from different ports and if this pattern occurs you can add source port ranges to "\*" to allow any source port. The destination port is more significant, and some recommendations are to always use "\*" for the source port.
 
->[!NOTE]For priority, use a value between 100 and 4000. You can start at 105.
+>[!NOTE]
+>For priority, use a value between 100 and 4000. You can start at 105.
 
 This is in addition to the network security group rules on your Application Gateway Subnet.
 
@@ -286,7 +288,7 @@ When deploying the private endpoints, configure them as follows:
 
 Also, as part of this deployment, you should ensure that the service-specific firewall is set to deny inbound traffic. This will deny any attempts at public ingress.
 
-For the Azure SQL database, you'll need to [manage its server-level IP firewall rules](/azure/azure-sql/database/firewall-configure?view=azuresql#use-the-azure-portal-to-manage-server-level-ip-firewall-rules). Ensure that *Public network access* is set to **Disable** from the networking panel in the Azure portal.
+For the Azure SQL database, you'll need to [manage its server-level IP firewall rules](/azure/azure-sql/database/firewall-configure). Ensure that *Public network access* is set to **Disable** from the networking panel in the Azure portal.
 
 For the Azure Application Service, adding the private endpoint sets its service level firewall to block inbound access by default. For more information, see [Using Private Endpoints for Azure Web Apps](/azure/app-service/networking/private-endpoint).
 

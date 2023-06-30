@@ -349,10 +349,16 @@ For more training on security in Azure, see these resources in the Microsoft cat
 
 ## Next Steps
 
-- [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md)
-- [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md)
-- [Apply Zero Trust principles to spoke virtual networks in Azure](azure-infrastructure-iaas.md)
-- [Apply Zero Trust principles to spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
+See these additional articles for applying Zero Trust principles to Azure:
+
+- [Azure IaaS overview](azure-infrastructure-overview.md)
+  - [Azure storage](azure-infrastructure-storage.md)
+  - [Virtual machines](azure-infrastructure-virtual-machines.md)
+  - [Spoke virtual networks](azure-infrastructure-iaas.md)
+- [Azure Virtual Desktop](azure-infrastructure-avd.md)
+- [Azure Virtual WAN](azure-virtual-wan.md)
+- [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
+- [Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)
 
 ## Technical illustrations
 

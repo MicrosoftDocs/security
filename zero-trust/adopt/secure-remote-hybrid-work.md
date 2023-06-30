@@ -1,13 +1,13 @@
 ---
 title: Secure remote and hybrid work with Zero Trust 
-description: Learn how to Secure remote and hybrid work with Zero Trust.
+description: Learn how to secure your remote and hybrid work with Zero Trust.
 ms.date: 04/14/2023
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
-  - zerotrust-solution
+  - zerotrust-adopt
 ---
 
 # Secure remote and hybrid work with Zero Trust
@@ -57,13 +57,22 @@ This report emphasizes that the vast majority of successful cyberattacks can be 
 
 Securing remote and hybrid work with Zero Trust includes deploying security protections that are basic and at the same time provide sophisticated protection. Technically, this objective involves policy enforcement and monitoring for all access to your organization’s resources with a full end-to-end lifecycle approach.
 
-This article walks through this business scenario using the same lifecycle phases as the Cloud Adoption Framework for Azure—Define strategy, Plan, Ready, Adopt, Govern, and Manage—but adapted for Zero Trust.
+This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Zero Trust adoption guidance uses the same lifecycle phases." lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
+
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+
+The following table is an accessible version of the illustration.
+
+| Define strategy| Plan| Ready| Adopt| Govern and manage |
+| --- | --- | --- | --- | --- |
+| Outcomes <br><br> Organizational alignment <br><br> Strategic goals| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
 ## Define strategy phase
+
+:::image type="content" source="../media/adoption-guide/define-strategy-phase.svg" alt-text="The define strategy phase." lightbox="../media/adoption-guide/define-strategy-phase.svg":::
 
 The **Define strategy** phase is critical to define and formalize our efforts to address the “Why?” of this scenario. In this phase, we understand the scenario through business, IT, operational, and strategic perspectives.
 
@@ -106,6 +115,8 @@ The following table provides objectives and their outcomes for the secure remote
 
 ## Plan phase
 
+:::image type="content" source="../media/adoption-guide/plan-phase.svg" alt-text="The plan phase." lightbox="../media/adoption-guide/plan-phase.svg":::
+
 Adoption plans convert the aspirational goals of a Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align them with your organization's business strategy.
 
 The motivations and outcomes you define, together with your business leaders and teams, support the “Why?” for your organization. These become the North Star, or guiding target, for your strategy. Next comes the technical planning to achieve the motivations and objectives.
@@ -125,13 +136,13 @@ Technical adoption for securing remote and hybrid work involves taking a graduat
 - Devices are enrolled in device management and monitored for health.
 - Access to applications and their data requires verifying identities, healthy devices, and appropriate data access.
 
-Many organizations can take a four-staged approach to these technical activities, summarized in the following chart.
+Many organizations can take a four-staged approach to these deployment objectives, summarized in the following chart.
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
 | Verify and secure every identity with strong authentication <br><br> Integrate SaaS apps with Active Directory (Azure AD) for single sign-on <br><br> All new applications use modern authentication | Register devices with Azure AD <br><br> Implement **Starting point** Zero Trust identity and device access policies <br><br> Use Azure AD Application Proxy with on-premises apps for single sign-on | Enroll devices in your device management solution and apply recommended security protections <br><br> Allow only compliant and trusted devices to access data | Monitor device configuration drift <br><br> Implement passwordless authentication |
 
-If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) and updating the slides that correspond to this business scenario. Here's an example.
+If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
 :::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="PowerPoint slide for the stages of your secure remote and hybrid work deployment." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
 
@@ -189,30 +200,30 @@ In addition to these resources, the following sections highlight resources for s
 
 #### Stage 1
 
-| Task | Resources |
+| Deployment objective | Resources |
 | --- | --- |
 | Verify and secure every identity with strong authentication | [What authentication and verification methods are available in Azure AD?](/azure/active-directory/authentication/concept-authentication-methods) |
 | Integrate SaaS apps with Azure AD for single sign-on | [Add SaaS apps to Azure AD and to the scope of policies](/security/zero-trust/add-saas-apps) |
-| New applications use modern authentication | [Checklist — How are you managing the identity for your workload?](/azure/architecture/framework/security/design-identity) |
+| New applications use modern authentication | [Checklist — How are you managing the identity for your workload?](/azure/architecture/framework/security/design-identity#checklist) |
 
 #### Stage 2
 
-| Task | Resources |
+| Deployment objective | Resources |
 | --- | --- |
 | Register devices with Azure AD | [Azure AD registered devices](/azure/active-directory/devices/concept-azure-ad-register) <br><br> [Plan your Azure AD join implementation](/azure/active-directory/devices/azureadjoin-plan) |
-| Implement Zero Trust **Starting point** identity and device access policies | [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations) |
-| Use App Proxy with on-prem apps for single sign-on | [Azure AD Application Proxy documentation](/en-us/azure/active-directory/app-proxy/) |
+| Implement Zero Trust identity and device access policies for the **Starting point** protection level  | [Protection levels for Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations#three-levels-of-protection) |
+| Use Azure AD Application Proxy with on-premises apps for single sign-on | [How to configure single sign-on to an Application Proxy application](/azure/active-directory/app-proxy/application-proxy-config-sso-how-to) |
 
 #### Stage 3
 
-| Task | Resources |
+| Deployment objective | Resources |
 | --- | --- |
 | Enroll devices into management and apply recommended security protections | [Manage devices with Intune overview](/microsoft-365/solutions/manage-devices-with-intune-overview) <br><br> [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations) |
 | Allow only compliant and trusted devices to access data | [Set up compliance policies for devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-compliance-policies) <br><br> [Require healthy and compliant devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-require-compliance) |
 
 #### Stage 4
 
-| Task | Resources |
+| Deployment objective | Resources |
 | --- | --- |
 | Monitor device configuration drift | [Deploy device profiles in Microsoft Intune](/microsoft-365/solutions/manage-devices-with-intune-configuration-profiles) <br><br> [Monitor device risk and compliance to security baselines](/microsoft-365/solutions/manage-devices-with-intune-monitor-risk) |
 | Implement passwordless authentication | [Increase sign-in security with passwordless authentication](/microsoft-365/solutions/ransomware-protection-microsoft-365-identities#increase-sign-in-security) |
@@ -234,6 +245,8 @@ An adoption plan also includes training your staff to work in a new way to under
 For more information from the Cloud Adoption Framework, see the [Plan for cloud adoption](/azure/cloud-adoption-framework/plan/plan-intro).
 
 ## Ready phase
+
+:::image type="content" source="../media/adoption-guide/ready-phase.svg" alt-text="The ready phase." lightbox="../media/adoption-guide/ready-phase.svg":::
 
 This scenario (securing remote and hybrid work) evaluates and secures identities, devices, and data over the networks that use them. Since the technologies may be potentially disruptive, a staged approach is recommended, starting with small projects offering quick wins that take advantage of your existing licensing and have minimal user impact.
 
@@ -301,7 +314,9 @@ The very goal of Zero Trust is to incrementally increase security and implement 
 
 ## Adopt phase
 
-In the adoption phase, you incrementally implement your strategy and deployment plans across functional areas. The adoption phase is a larger implementation of the proof of concept. The deployment plan is executed, and rollout occurs in successive waves, based on user segmentation and the areas you are targeting across your digital estate.
+:::image type="content" source="../media/adoption-guide/adopt-phase.svg" alt-text="The adopt phase." lightbox="../media/adoption-guide/adopt-phase.svg":::
+
+In the adoption phase, you incrementally implement your strategy and deployment plans across functional areas. The adopt phase is a larger implementation of the proof of concept. The deployment plan is executed, and rollout occurs in successive waves, based on user segmentation and the areas you are targeting across your digital estate.
 
 As recommended, deploy each new configuration into the production tenant as a limited proof of concept (labeled “Evaluate” in the following diagram).
 
@@ -322,7 +337,9 @@ A successful deployment plan includes the following elements:
 - Apps ranked by criticality and complexity of implementation
 - Draft updates for changes in day-to-day management and governance
 
-## Govern and Manage phases
+## Govern and manage phases
+
+:::image type="content" source="../media/adoption-guide/govern-manage-phase.svg" alt-text="The govern and manage phase." lightbox="../media/adoption-guide/govern-manage-phase.svg":::
 
 Security governance is an iterative process. For organizations with existing policies that govern security across a digital estate, adopting a Zero Trust strategy provides the incentive to evolve those policies. As security strategy and policies mature over time, so do cloud governance processes and policies.
 
@@ -356,4 +373,6 @@ Additional resources for day-to-day governance and operation include:
 ## Next Steps
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
-- [Identify and protect sensitive business data with Zero Trust](identify-protect-sensitive-business-data.md)
+- [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
+- [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)

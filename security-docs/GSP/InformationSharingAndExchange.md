@@ -1,46 +1,92 @@
 ---
 title: Information Sharing and Exchange
 description: This document provides details of the Information Sharing and Exchange offering that enables Microsoft to share and exchange materials related to Microsoft products and services.
-ms.date: 11/15/2022
+ms.date: 6/20/2023
 ms.service: security
-ms.author: bcowper
-author: BruceCowper
+ms.author: Grace Li
+author: laramillermsft
 ms.topic: conceptual
 ---
 
 # Information Sharing and Exchange
 
-The mission of Microsoft's Government Security Program (GSP) is to build trust through transparency. Since the program's inception in 2003, Microsoft has provided visibility into our technology and security artifacts which governments and international organizations can use to help protect themselves and their citizens. The Information Sharing and Exchange offering enables Microsoft to share and exchange materials about threats, vulnerabilities, anomalous behavior, malware information, and security issues against or related to Microsoft products and services. 
-This offering brings together groups and resources across the Microsoft environment to help governments protect citizens, infrastructure, and government agencies.
+The mission of Microsoft’s Government Security Program (GSP) is to build trust through transparency. Since the program’s inception in 2003, Microsoft has provided visibility into our technology and security artifacts which governments and international organizations can use to help protect themselves and their citizens. The Information Sharing and Exchange offering enables Microsoft to share and exchange materials about security threats, vulnerabilities, anomalous behavior, malware information, and security issues against or related to Microsoft products and services. 
 
-## The Information Sharing and Exchange offering provides      
-### Advance notification of security updates
+This offering brings together groups and resources across the Microsoft environment to help governments protect citizens, infrastructure, and organizations.
 
-5-day advance notice of vulnerabilities with release notes and the affected software tables and 24-hour advance notification of public vulnerability announcements.
 
-### IP Addresses of Infected Devices
+## The Information Sharing and Exchange offering provides
 
-Microsoft's Digital Crimes Unit (DCU) provides a sinkhole database of the malware-generated botnet feeds of infected hosts on a per-country basis.   
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Advance Notice of Security Vulnerabilities</strong></td>
+<td style="text-align:left"><li> 5-day advance notice of vulnerabilities with release notes and affected software tables <li> 24-hour advance of full notice including exploitability index</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Malicious URLs</strong></td>
+<td style="text-align:left"><li> Feed of potentially malicious publicly facing servers and services detected by the Bing crawlers <li> Updated every three hours, 5 day cycle of data</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>CTIP Botnet Feeds</strong></td>
+<td style="text-align:left"><li> Provided by the Digital Crimes Unit’s Cyber Threat Intelligence Program <li> Botnet data is tailored to the agency (or country code top level domain in the case of CERTs) <li> 4 feeds: Infected device, Command &amp; Control, IoT, and Domains <li> Delivered near real time, hourly or daily (deduped)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Threat Intelligence Alerts</strong></td>
+<td style="text-align:left"><li> Microsoft Threat Intelligence Center alerts of potential nation state threats <li> Direct engagement with impacted agencies</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Clean File Meta Data</strong></td>
+<td style="text-align:left"><li> Clean file hash data often used for allow-listing and forensics <li> Updated every 3 hours <li> Covers all Microsoft binaries on the Microsoft download center</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Partnership</strong></td>
+<td style="text-align:left"><li> Information exchange through a variety of forums <li> Access to the Digital Crimes Community Portal <li> Threat intelligence data sharing with the Digital Crimes Unit <li> Direct engagement with engineering groups and other Microsoft teams including the Microsoft Security Response Center and Windows Defender Security Intelligence</td>
+</tr>
+</tbody>
+</table>
 
-### Malicious URL Directory
+## Data Feeds Delivery
+The feeds offered under the ISE authorization reside within several groups including the **Microsoft Security Response Center (MSRC)**, the **Digital Crimes Unit (DCU)**, **Bing** and **Product Release and Security Services (PRSS)**.
 
-A malicious URL directory identified by Bing as being malicious is updated multiple times each day.  
+The GSP team provides a **web-based application** that allows GSP agencies to access the ISE data feeds from a single interface. All communications containing sensitive data are encrypted.
+   
+<center><img src="../media/security-gsp/DataFeedDelivery.jpg" width="70%" alt="Data Feed delivery" data-linktype="relative-path"/></center> 
 
-### Clean File Metadata
 
-Clean file metadata helps identify files that are truly from Microsoft by using the cryptographic signatures of all Microsoft files.   
+## Data Use Descriptions
 
-### Forums
+**Advanced Security Update Notification**
+The notice package lists all the CVEs (Common Vulnerabilities and Exposures) being addressed in the release. Each CVE contains a set of information including the Vulnerability Description (including metrics), Exploitability Index, and Affected Software.
+<center><img src="../media/security-gsp/ContentforEachCVE.jpg" width="70%" alt="Content for each CVE" data-linktype="relative-path"/></center> 
 
-Opportunities to work with and exchange information about cybersecurity threats and vulnerabilities through many different forums including community portals, conferences, digital communications, and direct engagement with a variety of Microsoft teams including engineering groups, as well as the Microsoft Security Response Center (MSRC) and Microsoft Malware Protection Center (MMPC).
+**Bing Malicious URLs**
+The Bing Malicious URL feed contains publicly facing servers or services which have been identified as being potentially malicious. New files are uploaded every three hours; full data sets are generated in 5 days. Many agencies import the JSON files directly into their existing threat intelligence analysis tools. 
+<center><img src="../media/security-gsp/BingMURL1.jpg" width="80%" alt="Geo map of IPs" data-linktype="relative-path"/></center> 
+<br/>
+<center><img src="../media/security-gsp/BingMURL2.jpg" width="80%" alt="Threat types" data-linktype="relative-path"/></center>     
 
-## Example of data use:  
+**Clean File Meta Data (CFMD)**
 
-A government CERT identifies IP addresses associated with the Simda botnet in the Cyber Threat Intelligence Program (CTIP) botnet feed for their country.   
-The CERT notifies the IP address owners that they are likely infected with Simda and provides clean-up instructions and remediation guidance.  
-![offerings](../media/security-gsp/informationSharingAndExchange-1.jpg)
+The Clean File Meta Data (CFMD) feed contains cryptographic signatures (SHA256 hashes) for the files contained within Microsoft products. These are often used in forensic examinations of potentially compromised devices and for allow / disallow file execution in critical systems.
+<center><img src="../media/security-gsp/CleanFileMetaData.jpg" width="80%" alt="Clean File Metadata" data-linktype="relative-path"/></center>     
+
+**CTIP Botnet Feeds: Infected Data Feed**
+
+The DCU provides compromised victim botnet data via the DCU ‘s CTIP threat intelligence service Infected device data feed, to enable network protection scenarios for CTIP subscribers, and to help facilitate remediation of the compromised systems with the goal of reducing the number of infected systems on the Internet. 
+Other feeds include the Command and Control (C2), IoT and Domains lists that are often used to restrict traffic flow to know malware networks via firewalls and protective DNS.
+
+<center><img src="../media/security-gsp/CTIP1.jpg" width="80%" alt="CTIP data 1" data-linktype="relative-path"/></center> 
+<br/>
+<center><img src="../media/security-gsp/CTIP2.jpg" width="80%" alt="CTIP data 2" data-linktype="relative-path"/></center>   
+
 
 ## Contact Us   
 
-Contact your local Microsoft representative to learn more about the Government Security Program   
-
+Contact your local Microsoft representative to learn more about the Government Security Program.   

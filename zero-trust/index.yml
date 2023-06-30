@@ -44,6 +44,23 @@ landingContent:
           url: /security/zero-trust/deploy/visibility-automation-orchestration
         - text: Small business guidance 
           url: guidance-smb-partner.md
+ 
+  # Card (optional)
+  - title: Zero Trust adoption framework
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: Overview
+          url:  adopt/zero-trust-adoption-overview.md
+        - text: Rapidly modernize your security posture
+          url:  adopt/rapidly-modernize-security-posture.md
+        - text: Secure remote and hybrid work
+          url:  adopt/secure-remote-hybrid-work.md
+        - text: Identify and protect sensitive business data
+          url:  adopt/identify-protect-sensitive-business-data.md
+        - text: Meet regulatory and compliance requirements
+          url:  adopt/meet-regulatory-compliance-requirements.md
+
  # Card
   - title: Microsoft 365 deployment plan for Zero Trust
     linkLists:
@@ -69,14 +86,20 @@ landingContent:
             url: https://go.microsoft.com/fwlink/?linkid=2224820
 
  # Card
-  - title: Zero Trust deployment plans with Microsoft Azure and infrastructure
+  - title: Zero Trust deployment plans with Microsoft Azure
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Secure IaaS infrastructure in Azure
+          - text: Azure IaaS
             url: azure-infrastructure-overview.md
-          - text: Spoke virtual networks with Azure PaaS services
-            url: azure-infrastructure-paas.md
+          - text: Azure Virtual Desktop
+            url: azure-infrastructure-avd.md
+          - text: Azure Virtual WAN
+            url: azure-virtual-wan.md
+          - text: IaaS applications in Amazon Web Services
+            url: secure-iaas-apps.md
+          - text: Microsoft Sentinel and Microsoft 365 Defender
+            url: /security/operations/siem-xdr-overview
 
  # Card
   - title: Technology partner integrations

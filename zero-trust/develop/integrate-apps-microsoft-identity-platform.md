@@ -26,7 +26,7 @@ The Microsoft cloud-based identity and access management service, Azure AD, prov
 - Application publishing and proxy
 - Directory schema extension attributes
 
-:::image type="complex" source="../media/develop/integrate-apps-with-azure-ad-microsoft-identity-platform/diagram-microsoft-identity-platform-for-developers-inline.png" alt-text="Diagram illustrates the unified toolkit of the Microsoft identity platform for developers that supports several identities and industry standards." lightbox="../media/develop/integrate-apps-with-azure-ad-microsoft-identity-platform/diagram-microsoft-identity-platform-for-developers-expanded.png":::
+:::image type="complex" source="../media/develop/integrate-apps-microsoft-identity-platform/diagram-microsoft-identity-platform-for-developers-inline.png" alt-text="Diagram illustrates the unified toolkit of the Microsoft identity platform for developers that supports several identities and industry standards." lightbox="../media/develop/integrate-apps-microsoft-identity-platform/diagram-microsoft-identity-platform-for-developers-expanded.png":::
    Diagram title: Microsoft identity platform for developers. Diagram subtitle: Build applications and integrate identity with one unified toolkit. Listed technologies and examples include endpoints such as OpenID Connect, libraries such as Microsoft Authentication Libraries - MSAL, web APIs such as Microsoft Graph, publisher verification with Microsoft Partner Network, user provisioning with System for Cross-domain Identity Management - SCIM, and auth brokers available via MSAL. Supported identities include Azure AD, MSA, and Azure AD External Identities including Azure AD B2C. Supported industry standards include OAuth 2.0, OpenID Connect, SAML, SCIM.
 :::image-end:::
 

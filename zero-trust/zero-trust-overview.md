@@ -153,20 +153,31 @@ See these key resources to get started:
 These articles help you apply the principles of Zero Trust to your workloads and services in Microsoft Azure based on a multi-disciplinary approach to applying the Zero Trust principles.
 
 - [Azure IaaS](azure-infrastructure-overview.md)
-- [Azure PaaS: Azure Virtual Desktop](azure-infrastructure-avd.md)
+- [Azure Virtual Desktop](azure-infrastructure-avd.md)
+- [Azure Virtual WAN](azure-virtual-wan.md)
+- [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
+- [Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)
+
+## Related links
+
+- [Zero Trust Overview](https://www.youtube.com/watch?v=KlEKAzMQEOw&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=13):  This video provides information about:
+
+    - Zero Trust definition
+    - Zero Trust principles
+    - Zero Trust core concepts
+    - Rapid modernization plan (RaMP) quick wins
+
+- [Zero Trust - The Open Group](https://www.youtube.com/watch?v=x0xlTVyX968&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=12): This video provides a perspective on Zero Trust from a standards organization.
 
 ## Next steps
 
 On this site you can find:
 
+- [Adoption framework](adopt/zero-trust-adoption-overview.md)
 - [Concepts and deployment objectives](deploy/overview.md)
 - [Zero Trust for small businesses](guidance-smb-partner.md)
-- [Rapid Modernization Plan (RaMP) guidance](zero-trust-ramp-overview.md) is based on initiatives and gives you a set of deployment paths to more quickly implement key layers of protection.
+- [Rapid Modernization Plan (RaMP) guidance](zero-trust-ramp-overview.md)
+- [Microsoft 365 deployment plans](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json)
+- [Microsoft Azure deployment plans](azure-infrastructure-overview.md)
 - [Integration guidance for ISVs](integrate/overview.md)
 - [Developer guidance](develop/overview.md)
-
-<!---
-
-For more resources and to learn more about Zero Trust, check out our [Resources for accelerating your Zero Trust journey](https://www.microsoft.com/security/blog/2021/05/24/resources-for-accelerating-your-zero-trust-journey/).
-
---->

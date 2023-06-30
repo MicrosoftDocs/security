@@ -7,7 +7,7 @@ author: BrendaCarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
-  - zerotrust-solution
+  - zerotrust-adopt
 ---
 
 # Identify and protect sensitive business data
@@ -26,7 +26,7 @@ The following diagram illustrates the shift from traditional protection with net
 
 :::image type="content" source="../media/adoption-guide/on-premises-remote-data.svg" alt-text="Zero Trust applies to data regardless of where it lives or moves." lightbox="../media/adoption-guide/on-premises-remote-data.svg":::
 
-The guidance in this article walks through how to get started with and progress your strategy for identifying and protecting sensitive data. If your organization is subject to regulations that protect data, use the **Proactively meet regulatory and compliance requirements** article in this series (under development) to learn how to apply what you learn in this article to protecting data that is regulated.
+The guidance in this article walks through how to get started with and progress your strategy for identifying and protecting sensitive data. If your organization is subject to regulations that protect data, use the [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md) article in this series to learn how to apply what you learn in this article to protecting data that is regulated.
 
 ## Why business leaders think about protecting sensitive data
 
@@ -48,13 +48,22 @@ The following table provides reasons why business leaders across an organization
 
 ## The adoption cycle for protecting critical business data
 
-This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, Govern, and Manage—but adapted for Zero Trust.
+This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Zero Trust adoption guidance uses the same lifecycle phases." lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
+
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+
+The following table is an accessible version of the illustration.
+
+| Define strategy| Plan| Ready| Adopt| Govern and manage |
+| --- | --- | --- | --- | --- |
+| Outcomes <br><br> Organizational alignment <br><br> Strategic goals| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
 ## Define strategy phase
+
+:::image type="content" source="../media/adoption-guide/define-strategy-phase.svg" alt-text="The define strategy phase." lightbox="../media/adoption-guide/define-strategy-phase.svg":::
 
 The **Define strategy** phase is critical to define and formalize our efforts – it formalizes the “Why?” of this scenario. In this phase, you understand the scenario through business, IT, operational and strategic perspectives. You define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
 
@@ -71,7 +80,7 @@ The motivations for identifying and protecting sensitive business data are strai
 | Operational needs | Implement data protection in a consistent and standard way, using automation where possible. |
 | Strategic needs | Reduce the damage that an insider can cause (intentionally or unintentionally) or by a bad actor who gains access to the environment. |
 
-Note that meeting regulatory requirements might be the primary driving motivation for some organizations. If this is true for you, go ahead and add this to your organization strategy and use this business scenario together with the **Proactively meet regulatory and compliance requirements** article in this series (under development).
+Note that meeting regulatory requirements might be the primary driving motivation for some organizations. If this is true for you, go ahead and add this to your organization strategy and use this business scenario together with the [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md) article in this series.
 
 ### Data protection outcomes
 
@@ -87,6 +96,8 @@ The following table provides suggested objectives and outcomes.
 | Empower IT | Your IT team is empowered with a clear understanding of what qualifies as sensitive business data. They have a well-reasoned schema to align with and the technology tools and capabilities to both implement the plans and monitor status and success. |
 
 ## Plan phase
+
+:::image type="content" source="../media/adoption-guide/plan-phase.svg" alt-text="The plan phase." lightbox="../media/adoption-guide/plan-phase.svg":::
 
 Adoption plans convert the principles of Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align them with your organization's business strategy.
 
@@ -104,13 +115,13 @@ Protecting your sensitive business data also involves a few related activities, 
 - Managing external access to Teams and projects where sensitive data is shared.
 - Setting up and using dedicated and isolated teams in Microsoft Teams for projects that include highly sensitive business data, which should be rare. Most organizations do not require this level of data security and isolation.
 
-Many organizations can take a four-staged approach to these technical activities, summarized in the following table.
+Many organizations can take a four-staged approach to these deployment objectives, summarized in the following table.
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Discover and identify sensitive business data <br><br> Discover non-sanctioned SaaS apps <br><br> Encrypt network communication | Develop and test a classification schema <br><br> Apply labels to data across Microsoft 365 <br><br> Introduce basic DLP policies <br><br> Set up secure Microsoft Teams for sharing data internally and externally with business partners | Add protection to specific labels (encryption and other protection settings) <br><br> Introduce automatic and recommended labeling in Office apps and services <br><br> Enable mandatory labeling of new content <br><br> Extend DLP policies across Microsoft 365 services <br><br> Implement key insider risk management policies | Extend labels and protection to data in SaaS apps, including DLP <br><br> Extend automated classification to all services <br><br> Extend labels and protection to data at-rest in on-premises repositories <br><br> Protect organization data in your cloud infrastructure |
+| Discover and identify sensitive business data <br><br> Discover non-sanctioned SaaS apps <br><br> Encrypt network communication | Develop and test a classification schema <br><br> Apply labels to data across Microsoft 365 <br><br> Introduce basic DLP policies <br><br> Set up secure Microsoft Teams for sharing data internally and externally with business partners | Add protection to specific labels (encryption and other protection settings) <br><br> Introduce automatic and recommended labeling in Office apps and services <br><br> Extend DLP policies across Microsoft 365 services <br><br> Implement key insider risk management policies | Extend labels and protection to data in SaaS apps, including DLP <br><br> Extend automated classification to all services <br><br> Extend labels and protection to data at-rest in on-premises repositories <br><br> Protect organization data in your cloud infrastructure |
 
-If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) and updating the slides that correspond to this business scenario. Here's an example.
+If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
 :::image type="content" source="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png" alt-text="PowerPoint slide for the stages of your identify and protect sensitive business data deployment." lightbox="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png":::
 
@@ -181,7 +192,7 @@ Before you embark on the technical work, Microsoft recommends getting to know th
 
 #### Stage 1
 
-The Stage 1 objectives include the process of taking inventory of your data. This includes identifying unsanctioned SaaS apps your organization uses to store, process, and share data. You can either bring these unsanctioned apps into your app management process and apply protections, or you can prevent your business data from being used with these apps.
+The Stage 1 deployment objectives include the process of taking inventory of your data. This includes identifying unsanctioned SaaS apps your organization uses to store, process, and share data. You can either bring these unsanctioned apps into your app management process and apply protections, or you can prevent your business data from being used with these apps.
 
 ##### Discover and identify sensitive business data
 
@@ -222,7 +233,7 @@ The tool for discovering SaaS apps that your organization uses is Microsoft Defe
 
 ##### Encrypt network communication
 
-This task is more of a check to be sure your network traffic is encrypted. Check in with your networking team to make sure these recommendations are satisfied.
+This objective is more of a check to be sure your network traffic is encrypted. Check in with your networking team to make sure these recommendations are satisfied.
 
 | Resource | Description |
 | --- | --- |
@@ -264,7 +275,7 @@ For this stage, develop your sensitivity labels and start using them across data
 
 | Resource | Description |
 | --- | --- |
-| [Prevent data loss](/microsoft-365/compliance/information-protection-solution) | Get started with DLP policies. <br><br> It's recommended to start with “soft” DLP policies, which provide warnings but don't block actions, or at most block actions while allowing users to override the policy. This allows you gauge the impact of these policies without harming productivity. You can fine-tune the policies to become stricter as you gain confidence in their accuracy and compatibility with the business needs. |
+| [Prevent data loss](/microsoft-365/compliance/information-protection-solution#prevent-data-loss) | Get started with DLP policies. <br><br> It's recommended to start with “soft” DLP policies, which provide warnings but don't block actions, or at most block actions while allowing users to override the policy. This allows you gauge the impact of these policies without harming productivity. You can fine-tune the policies to become stricter as you gain confidence in their accuracy and compatibility with the business needs. |
 
 ##### Set up secure teams for sharing data internally and externally with business partners
 
@@ -273,7 +284,6 @@ If you've identified projects or data that require highly sensitive protection, 
 | Resource | Description |
 | --- | --- |
 | [Configure teams with protection for highly sensitive data](/microsoft-365/solutions/configure-teams-highly-sensitive-protection) | Provides prescriptive recommendations for securing projects with highly sensitive data, including securing and managing guest access (your partners who might be collaborating with you on these projects). |
-| [Configure a team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation) | This article provides you with recommendations and steps to configure a private team in Microsoft Teams and use a unique sensitivity label to encrypt files so that only team members can decrypt them. |
 
 #### Stage 3
 
@@ -333,13 +343,14 @@ In this stage, you extend the protections you developed in Microsoft 365 to data
 | --- | --- |
 | [Microsoft 365 Purview Information Protection Scanner](/microsoft-365/compliance/deploy-scanner) | Scan data in on-premises repositories, including Microsoft Windows file shares and SharePoint Server. The information protection scanner can inspect any files that Windows can index. If you've configured sensitivity labels to apply automatic classification, the scanner can label discovered files to apply that classification, and optionally apply or remove protection. |
 
-##### Protect organization data in cloud infrastructure
+##### Protect organization data in your cloud infrastructure
 
 | Resource | Description |
 | --- | --- |
-| [Microsoft Purview data governance documentation](/en-us/azure/purview/) | Learn how to use the Microsoft Purview governance portal so your organization can find, understand, govern, and consume data sources. Tutorials, REST API reference, and other documentation show you how to plan and configure your data repository where you can discover available data sources and manage rights use. |
+| [Microsoft Purview data governance documentation](/azure/purview/) | Learn how to use the Microsoft Purview governance portal so your organization can find, understand, govern, and consume data sources. Tutorials, REST API reference, and other documentation show you how to plan and configure your data repository where you can discover available data sources and manage rights use. |
 
 ### Cloud adoption plan
+
 An adoption plan is an essential requirement for a successful cloud adoption. Key attributes of a successful adoption plan for protecting data include:
 
 - **Strategy and planning are aligned:** As you draw up your plans for testing, piloting, and rolling out data classification and protection capabilities across your digital estate, be sure to revisit your strategy and objectives to ensure your plans are aligned. This includes priority of data sets, goals for data protection, and target milestones.
@@ -349,6 +360,8 @@ An adoption plan is an essential requirement for a successful cloud adoption. Ke
 For more information from the Cloud Adoption Framework for Azure, see [Plan for cloud adoption](/azure/cloud-adoption-framework/plan/plan-intro).
 
 ## Ready phase
+
+:::image type="content" source="../media/adoption-guide/ready-phase.svg" alt-text="The ready phase." lightbox="../media/adoption-guide/ready-phase.svg":::
 
 Use the resources previously listed to prioritize your plan for identifying and protecting sensitive data. The work of protecting sensitive business data represents one of the layers in your multi-layer Zero Trust deployment strategy.
 
@@ -383,11 +396,15 @@ As you finalize your adoption plans, be sure to revisit the [Information Protect
 
 ## Adopt phase
 
+:::image type="content" source="../media/adoption-guide/adopt-phase.svg" alt-text="The adopt phase." lightbox="../media/adoption-guide/adopt-phase.svg":::
+
 Microsoft recommends a cascading, iterative approach to discovering and protecting sensitive data. This allows you to refine your strategy and policies as you go to increase the accuracy of the results. For example, begin working on a classification and protection schema as you discover and identify sensitive data. The data you discover informs the schema and the schema helps you improve the tools and methods you use to discover sensitive data. Similarly, as you test and pilot the schema, the results help you improve the protection policies you created earlier. There’s no need to wait until one phase is complete before beginning the next. Your results are more effective if you iterate along the way.
 
 :::image type="content" source="../media/adoption-guide/adoption-information-protection.svg" alt-text="Process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.svg":::
 
-## Govern and Manage phases
+## Govern and manage phases
+
+:::image type="content" source="../media/adoption-guide/govern-manage-phase.svg" alt-text="The govern and manage phase." lightbox="../media/adoption-guide/govern-manage-phase.svg":::
 
 Governance of your organization’s data is an iterative process. By thoughtfully creating your classification schema and rolling it out across your digital estate you have created a foundation. Use the following exercises to help you start building your initial governance plan for this foundation:
 
@@ -406,4 +423,6 @@ See [Govern your data with Microsoft Purview](/microsoft-365/compliance/manage-d
 ## Next Steps
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
-- [Secure remote and hybrid work with Zero Trust](secure-remote-hybrid-work.md)
+- [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
+- [Secure remote and hybrid work](secure-remote-hybrid-work.md)

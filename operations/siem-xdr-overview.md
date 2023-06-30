@@ -52,32 +52,43 @@ With Microsoft Sentinel, you can connect to many security sources using built-in
 
 ## Leveraging SIEM and XDR capabilities
 
-In this section, we'll look into a typical attack scenario involving a phishing attack then proceed with how to respond to the incident with the Microsoft Sentinel and Microsoft 365 Defender portals.
+In this section, we'll look into a typical attack scenario involving a phishing attack then proceed with how to respond to the incident with Microsoft Sentinel and Microsoft 365 Defender.
 
 ### Common attack order
 
-The following illustration is a common attack order of a phishing scenario. The illustration also demonstrates the corresponding Microsoft security products in place to defend assets from the attack.
+The following diagram shows a common attack order of a phishing scenario. 
 
 :::image type="content" source="./media/common-attack-defense.svg" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.svg":::
 
-Summary of the attack order:
+The diagram also shows the Microsoft security products in place to detect each attack step and how attack signals and SIEM data flow to Microsoft 365 Defender and Microsoft Sentinel.
 
-| Attack step | Summary | Defense in place |
+Here is a summary of the attack.
+
+| Attack step | Detection service and signal source | Defenses in place |
 | --- | --- | --- |
-|1 | A phishing mail is sent. | Microsoft Defender for Office 365 protects mailboxes with advanced anti-phishing features that can protect against malicious impersonation-based phishing attacks. |
-|2 | The attachment is opened. | The Microsoft Defender for Office 365 Safe Attachments feature opens attachments in an isolated environment for additional scanning of threats (detonation). |
-|3 | The malware is installed. | Microsoft Defender for Endpoint protects endpoints from malware with its next generation protection features, such as cloud-delivered protection and behavior-based/heuristic/real-time antivirus protection. |
-|4 | Credential theft. | Microsoft Defender for Identity protects identities by: monitoring user behavior and activities, detecting lateral movement and alerting on anomalous activity. |
-|5 | Adversary moves laterally. | Microsoft Defender for Cloud Apps can detect anomalous activity of users accessing cloud apps. |
-|6 | Sensitive data is exfiltrated. | Microsoft Defender for Cloud can detect and respond to mass download events of files from SharePoint. |
+| 1. Attacker sends phishing email  | Microsoft Defender for Office 365 | Protects mailboxes with advanced anti-phishing features that can protect against malicious impersonation-based phishing attacks. |
+| 2. User opens attachment | Microsoft Defender for Office 365 | The Microsoft Defender for Office 365 Safe Attachments feature opens attachments in an isolated environment for additional scanning of threats (detonation). |
+| 3. Attachment installs malware | Microsoft Defender for Endpoint | Protects endpoints from malware with its next generation protection features, such as cloud-delivered protection and behavior-based/heuristic/real-time antivirus protection. |
+| 4. Malware steals user credentials | Azure AD and Azure AD Identity Protection | Protects identities by monitoring user behavior and activities, detecting lateral movement, and alerting on anomalous activity. |
+| 5. Attacker moves laterally across Microsoft 365 apps and data | Microsoft Defender for Cloud Apps | Can detect anomalous activity of users accessing cloud apps. |
+| 6. Attacker downloads sensitive files from a SharePoint folder | Microsoft Defender for Cloud Apps | Can detect and respond to mass download events of files from SharePoint. |
 
 ### Incident response using Microsoft Sentinel and Microsoft 365 Defender
 
 Now that we've seen how a common attack takes place, let's look into leveraging the integration of Microsoft Sentinel and Microsoft 365 Defender for incident response.
 
-This illustration guides you through the process of responding to an incident, starting with discovery and triage in Microsoft Sentinel.
+Here is the process of responding to an incident with Microsoft 365 Defender and Microsoft Sentinel:
+
+1. Triage the incident in the Microsoft Sentinel portal.
+2. Move over to the Microsoft 365 Defender portal to start your investigation.
+3. Where needed, continue the investigation in the Microsoft Sentinel portal.
+4. Resolve the incident in the Microsoft Sentinel portal.
+
+The following diagram shows the process, starting with discovery and triage in Microsoft Sentinel.
 
 :::image type="content" source="./media/investigation-flow.svg" alt-text="Image of incident investigation using Sentinel and Microsoft 365 Defender" lightbox="./media/investigation-flow.svg":::
+
+For more information, see [Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender]( respond-incident.md).
 
 ## Key capabilities
 
@@ -93,6 +104,9 @@ Capability or feature | Description | Product |
 |[Endpoint detection and response (EDR) Block](/microsoft-365/security/defender-endpoint/edr-in-block-mode) | Provides added protection from malicious artifacts when Microsoft Defender Antivirus (MDAV) isn't the primary antivirus product and is running in passive mode. EDR in block mode works behind the scenes to remediate malicious artifacts that were detected by EDR capabilities. | Microsoft 365 Defender |
 | [Device response capabilities](/microsoft-365/security/defender-endpoint/respond-machine-alerts) | Quickly respond to detected attacks by isolating devices or collecting an investigation package | Microsoft 365 Defender |
 | [Live response](/microsoft-365/security/defender-endpoint/live-response) | Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. | Microsoft 365 Defender |
+| [Secure cloud applications](/azure/defender-for-cloud/defender-for-cloud-introduction#secure-cloud-applications) | A development security operations (DevSecOps) solution that unifies security management at the code level across multicloud and multiple-pipeline environments. | Microsoft Defender for Cloud |
+| [Improve your security posture](/azure/defender-for-cloud/defender-for-cloud-introduction#improve-your-security-posture) | A cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches. | Microsoft Defender for Cloud |
+| [Protect cloud workloads](/azure/defender-for-cloud/defender-for-cloud-introduction#protect-cloud-workloads) | A cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads. | Microsoft Defender for Cloud |
 | [User and Entity Behavioral Analytics (UEBA)](/azure/sentinel/enable-entity-behavior-analytics) |Analyzes behavior of organization entities such as users, hosts, IP addresses, and applications) | Microsoft Sentinel |
 | [Fusion](/azure/sentinel/configure-fusion-rules) | A correlation engine based on scalable machine learning algorithms. Automatically detects multistage attacks&nbsp;also known as advanced persistent threats (APT)&nbsp;by identifying combinations of anomalous behaviors and suspicious activities that are observed at various stages of the kill chain. | Microsoft Sentinel |
 |[Threat Intelligence](/azure/sentinel/threat-intelligence-integration) | Use Microsoft third-party providers to enrich data to provide extra context around activities, alerts, and logs in your environment. | Microsoft Sentinel |
@@ -128,3 +142,15 @@ Use these steps to implement Microsoft Sentinel and XDR for a Zero Trust approac
 2. [Architect your Microsoft Sentinel workspace](siem-workspace.md)
 3. [Ingest data sources](ingest-data-sources.md)
 4. [Respond to an incident](respond-incident.md)
+
+Also see these additional articles for applying Zero Trust principles to Azure:
+
+- [Azure IaaS overview](/security/zero-trust/azure-infrastructure-overview)
+  - [Azure storage](/security/zero-trust/azure-infrastructure-storage)
+  - [Virtual machines](/security/zero-trust/azure-infrastructure-virtual-machines)
+  - [Spoke virtual networks](/security/zero-trust//azure-infrastructure-iaas)
+  - [Hub virtual networks](/security/zero-trust//azure-infrastructure-networking)
+
+- [Azure Virtual Desktop](/security/zero-trust/azure-infrastructure-avd)
+- [Azure Virtual WAN](/security/zero-trust/azure-virtual-wan)
+- [IaaS applications in Amazon Web Services](/security/zero-trust/secure-iaas-apps)

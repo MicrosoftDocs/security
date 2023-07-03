@@ -368,7 +368,6 @@ Next, add the application to the scope of your identity and device access polici
 
 When configuring multi-factor authentication with conditional access and related policies, use the recommended policy set for Zero Trust as a guide. This includes "Starting point" policies that don't require managing devices. Ideally, the devices accessing your virtual machines are managed and you can implement the "Enterprise" level, which is recommended for Zero Trust. For more information, see [Common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies).
 
-
 The following diagram shows the recommended policies for Zero Trust.
 
 :::image type="content" source="media/identity-device-access-policies-byplan.png" alt-text="Diagram of Zero Trust identity and device access policies." lightbox="media/identity-device-access-policies-byplan.png":::
@@ -383,11 +382,11 @@ This article doesn't discuss Microsoft Defender for Cloud in detail, but it's im
 
 Here's an example in the Microsoft Defender for Cloud portal.
 
-:::image type="content" source="media/spoke/dfc-recs.png" alt-text="Screenshot of example Microsoft Defender for Cloud recommendations." lightbox="media/spoke/dfc-recs.png"::: 
+:::image type="content" source="media/spoke/dfc-recs.png" alt-text="Screenshot of example Microsoft Defender for Cloud recommendations." lightbox="media/spoke/dfc-recs.png":::
 
 If you choose to onboard one of the Defender for Cloud plans that offer Advanced Workload Protections, it includes Adaptive Network Hardening Recommendations to improve your existing network security group rules. Here's an example.
 
-:::image type="content" source="media\spoke\network-hardening.png" alt-text="Screenshot of example network hardening recommendations." lightbox="media\spoke\network-hardening.png"::: 
+:::image type="content" source="media\spoke\network-hardening.png" alt-text="Screenshot of example network hardening recommendations." lightbox="media\spoke\network-hardening.png":::
 
 You can accept the recommendation by selecting **Enforce**, which either creates a new network security group rule or modify an existing one.
 
@@ -409,6 +408,7 @@ See these additional articles for applying Zero Trust principles to Azure:
 - [Azure IaaS overview](azure-infrastructure-overview.md)
   - [Azure storage](azure-infrastructure-storage.md)
   - [Virtual machines](azure-infrastructure-virtual-machines.md)
+  - [Spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
   - [Hub virtual networks](azure-infrastructure-networking.md)
 - [Azure Virtual Desktop](azure-infrastructure-avd.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
@@ -422,7 +422,6 @@ This poster provides a single-page, at-a-glance view of the components of Azure 
 | Item | Description |
 |:-----|:-----|
 |[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
-
 
 This poster provides the reference and logical architectures and the detailed configurations of the separate components of Zero Trust for Azure IaaS. Use the pages of this poster for separate IT departments or specialties or, with the Microsoft Visio version of the file, customize the diagrams for your infrastructure.
 

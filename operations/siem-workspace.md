@@ -10,6 +10,8 @@ ms.localization_priority: Normal
 ms.collection: 
   - zerotrust-solution
   - msftsolution-secops
+  - msftsolution-scenario
+  - zerotrust-azure
 ---
 
 # Step 2. Architect your Microsoft Sentinel workspace

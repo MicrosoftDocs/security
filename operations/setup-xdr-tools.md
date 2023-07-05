@@ -12,6 +12,8 @@ ms.localization_priority: Normal
 ms.collection: 
   - zerotrust-solution
   - msftsolution-secops
+  - msftsolution-scenario
+  - zerotrust-azure
 ---
 
 # Step 1. Set up your XDR tools

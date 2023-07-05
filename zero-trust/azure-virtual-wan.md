@@ -10,6 +10,7 @@ ms.collection:
   - msftsolution-azurepaas
   - msftsolution-scenario
   - zerotrust-solution
+  - zerotrust-azure
 ---
 
 # Apply Zero Trust principles to an Azure Virtual WAN deployment

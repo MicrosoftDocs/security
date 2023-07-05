@@ -262,10 +262,11 @@
         href: azure-infrastructure-virtual-machines.md
       - name: Azure spoke virtual networks
         href: azure-infrastructure-iaas.md
-      - name: Spoke virtual networks with Azure PaaS services
-        href: azure-infrastructure-paas.md
+
       - name: Azure hub virtual networks
         href: azure-infrastructure-networking.md
+    - name: Spoke virtual networks with Azure PaaS services
+      href: azure-infrastructure-paas.md
     - name: Azure Virtual Desktop
       href: azure-infrastructure-avd.md
     - name: Azure Virtual WAN

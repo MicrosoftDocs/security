@@ -11,6 +11,8 @@ ms.localization_priority: Normal
 ms.collection: 
   - zerotrust-solution
   - msftsolution-secops
+  - msftsolution-overview
+  - zerotrust-azure
 ---
 
 # Implement Microsoft Sentinel and Microsoft 365 Defender for Zero Trust

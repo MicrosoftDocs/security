@@ -8,6 +8,9 @@ ms.author: terrylan
 ms.topic: conceptual
 ms.collection: 
   - zerotrust-solution
+  - msftsolution-awsiaas
+  - msftwolution-overview
+  - zerotrust-azure
 ---
 
 # Apply Zero Trust principles to IaaS applications in Amazon Web Services

@@ -10,6 +10,7 @@ ms.collection:
   - msftsolution-azureiaas
   - msftsolution-scenario
   - zerotrust-solution
+  - zerotrust-azure
 ---
 
 # Apply Zero Trust principles to Azure storage

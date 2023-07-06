@@ -96,7 +96,7 @@ productDirectory:
         - url: /azure/cloud-adoption-framework/organize/cloud-security
           text: Cloud security functions
         - url: https://www.youtube.com/watch?v=GlqjvlX93gY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=14
-          - text: MCRA security roles
+          text: MCRA security roles
 
 # conceptualContent section (Optional; Remove if not applicable.)
 conceptualContent:

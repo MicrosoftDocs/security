@@ -27,14 +27,14 @@
     items:
     - name: Program overview
       href: ../GSP/ProgramOverview.md
-    - name: Transparency centers
-      href: ../GSP/ContentTransparencyCenters.md
+    - name: Access to technical data
+      href: ../GSP/TechnicalData.md
     - name: Information sharing and exchange
       href: ../GSP/InformationSharingAndExchange.md
     - name: Access to source code
       href: ../GSP/OnlineSources.md 
-    - name: Access to technical data
-      href: ../GSP/TechnicalData.md
+    - name: Transparency centers
+      href: ../GSP/ContentTransparencyCenters.md
 
   - name: Security Development Lifecycle
     items:

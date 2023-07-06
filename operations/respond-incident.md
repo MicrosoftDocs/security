@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.collection: 
   - zerotrust-solution
   - msftsolution-secops
+  - msftsolution-scenario
+  - zerotrust-azure
 ---
 
 # Step 4. Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender

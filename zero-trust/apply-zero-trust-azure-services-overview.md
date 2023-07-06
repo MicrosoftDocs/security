@@ -10,6 +10,7 @@ ms.collection:
   - msftsolution-azureiaas
   - msftsolution-overview
   - zerotrust-solution
+  - zerotrust-azure
 ---
 
 # Overview – Apply Zero Trust principles to Azure services

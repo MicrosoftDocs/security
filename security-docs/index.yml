@@ -62,28 +62,28 @@ productDirectory:
     # Card
     - title: Identity and access administrator
       # imageSrc should be square in ratio with no white space
-      imageSrc: "./media/hubpage/id-admin.svg"
+      imageSrc: "./media/hubpage/id-admin.png"
       links:
         - url: /training/career-paths/identity-and-access-admin
           text: Career path training
 
     # Card
     - title: Information protection administrator
-      imageSrc: "./media/hubpage/info-prot.svg"
+      imageSrc: "./media/hubpage/info-prot.png"
       links:
         - url: /training/career-paths/information-protection-admin
           text: Career path training
 
     # Card
     - title: Security operations analyst
-      imageSrc: "./media/hubpage/sec-op.svg"
+      imageSrc: "./media/hubpage/sec-op.png"
       links:
         - url: /training/career-paths/security-operations-analyst
           text: Career path training
 
     # Card
     - title: Security engineer
-      imageSrc: "./media/hubpage/sec-eng.svg"
+      imageSrc: "./media/hubpage/sec-eng.png"
       links:
         - url: /training/career-paths/security-engineer
           text: Career path training

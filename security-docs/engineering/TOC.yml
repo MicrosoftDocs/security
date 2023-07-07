@@ -25,15 +25,15 @@
 
   - name: Government Security Program
     items:
-    - name: Program overview
+    - name: Program Overview
       href: ../GSP/ProgramOverview.md
-    - name: Access to technical data
+    - name: Technical Data
       href: ../GSP/TechnicalData.md
-    - name: Information sharing and exchange
+    - name: Information Sharing and Exchange
       href: ../GSP/InformationSharingAndExchange.md
-    - name: Access to source code
+    - name: Online Access to Source Code
       href: ../GSP/OnlineSources.md 
-    - name: Transparency centers
+    - name: Transparency Centers
       href: ../GSP/ContentTransparencyCenters.md
 
   - name: Security Development Lifecycle

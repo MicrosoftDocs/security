@@ -3,7 +3,7 @@
   href: index.yml
   expanded: true
   items:
-  - name: Artifical intelligence and machine learning security
+  - name: Artificial intelligence and machine learning security
     items:
     - name: Threat taxonomy - Failure modes in machine learning
       href: failure-modes-in-machine-learning.md
@@ -25,16 +25,16 @@
 
   - name: Government Security Program
     items:
-    - name: Program overview
+    - name: Program Overview
       href: ../GSP/ProgramOverview.md
-    - name: Transparency centers
-      href: ../GSP/ContentTransparencyCenters.md
-    - name: Information sharing and exchange
-      href: ../GSP/InformationSharingAndExchange.md
-    - name: Access to source code
-      href: ../GSP/OnlineSources.md 
-    - name: Access to technical data
+    - name: Technical Data
       href: ../GSP/TechnicalData.md
+    - name: Information Sharing and Exchange
+      href: ../GSP/InformationSharingAndExchange.md
+    - name: Online Access to Source Code
+      href: ../GSP/OnlineSources.md 
+    - name: Transparency Centers
+      href: ../GSP/ContentTransparencyCenters.md
 
   - name: Security Development Lifecycle
     items:

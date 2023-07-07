@@ -15,7 +15,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 07/06/2023
+  ms.date: 07/07/2023
 
 
 # Maximum of 8 items
@@ -63,35 +63,35 @@ productDirectory:
     # Card
     - title: Identity and access administrator
       # imageSrc should be square in ratio with no white space
-      imageSrc: ./media/hubpage/id-admin.svg
+      imageSrc: /media/hubpage/id-admin.svg
       links:
         - url: /training/career-paths/identity-and-access-admin
           text: Career path
 
     # Card
     - title: Information protection administrator
-      imageSrc: ./media/hubpage/id-admin.svg
+      imageSrc: /media/hubpage/id-admin.svg
       links:
         - url: /training/career-paths/information-protection-admin
           text: Career path
 
     # Card
     - title: Security operations analyst
-      imageSrc: ./media/hubpage/sec-op.svg
+      imageSrc: /media/hubpage/sec-op.svg
       links:
         - url: /training/career-paths/security-operations-analyst
           text: Career path
 
     # Card
     - title: Security engineer
-      imageSrc: ./media/hubpage/sec-eng.svg
+      imageSrc: /media/hubpage/sec-eng.svg
       links:
         - url: /training/career-paths/security-engineer
           text: Career path
 
     # Card
     - title: Learn how organizational functions play an important role in security
-      imageSrc: ./media/hubpage/learn.png
+      imageSrc: /media/hubpage/learn.png
       links:
         - url: /azure/cloud-adoption-framework/organize/cloud-security
           text: Cloud security functions

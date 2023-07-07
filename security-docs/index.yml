@@ -1,14 +1,13 @@
 ### YamlMime:Hub
 
 title: Security documentation
-summary: Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps
+summary: Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps. Read documentation, how-to guides, or browse certifications and trainings.
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 
 metadata:
-  title: Microsoft security documentation
-  description: Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps
-# services: service
-# ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  title: Microsoft Security documentation and training
+  description: Cybersecurity documentation, training, and certifications for security engineers, security operations analysts, and identity and access administrators.
+  ms.services: security
   ms.subservice: na
   ms.topic: hub-page
   ms.collection: na
@@ -51,47 +50,47 @@ highlightedContent:
       itemType: how-to-guide
       url: /security/zero-trust/secure-iaas-apps
     # Card
-    - title: Past news and highlights
+    - title: Cybersecurity news and highlights archive
       itemType: reference
       url: ./engineering/news-and-highlights.md
 
 # productDirectory section (Optional; Remove if not applicable.)
 productDirectory:
-  title: Security roles
-  summary: Learning resources by role
+  title: Security job roles
+  summary: Learning resources and certifications for security roles
   items:
     # Card
     - title: Identity and access administrator
       # imageSrc should be square in ratio with no white space
-      imageSrc: ../media/hubpage/id-admin.svg
+      imageSrc: "./media/hubpage/id-admin.svg"
       links:
         - url: /training/career-paths/identity-and-access-admin
-          text: Career path
+          text: Career path training
 
     # Card
     - title: Information protection administrator
-      imageSrc: ../media/hubpage/info-prot.svg
+      imageSrc: "./media/hubpage/info-prot.svg"
       links:
         - url: /training/career-paths/information-protection-admin
-          text: Career path
+          text: Career path training
 
     # Card
     - title: Security operations analyst
-      imageSrc: ../media/hubpage/sec-op.svg
+      imageSrc: "./media/hubpage/sec-op.svg"
       links:
         - url: /training/career-paths/security-operations-analyst
-          text: Career path
+          text: Career path training
 
     # Card
     - title: Security engineer
-      imageSrc: ../media/hubpage/sec-eng.svg
+      imageSrc: "./media/hubpage/sec-eng.svg"
       links:
         - url: /training/career-paths/security-engineer
-          text: Career path
+          text: Career path training
 
     # Card
     - title: Learn how organizational functions play an important role in security
-      imageSrc: ../media/hubpage/learn.png
+      imageSrc: "./media/hubpage/learn.png"
       links:
         - url: /azure/cloud-adoption-framework/organize/cloud-security
           text: Cloud security functions

@@ -3,7 +3,7 @@
   href: index.yml
   expanded: true
   items:
-  - name: Artifical intelligence and machine learning security
+  - name: Artificial intelligence and machine learning security
     items:
     - name: Threat taxonomy - Failure modes in machine learning
       href: failure-modes-in-machine-learning.md

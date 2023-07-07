@@ -97,50 +97,6 @@ productDirectory:
         - url: https://www.youtube.com/watch?v=GlqjvlX93gY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=14
           text: MCRA security roles
 
-# conceptualContent section (Optional; Remove if not applicable.)
-conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  # Supports up to 3 subsections
-  sections:
-
-#  Section 1
-    - title: Security roles
-      summary: Learning resources by role
-      items:
-        # Card
-        - title: Identity and access administrator
-          links:
-            - text: Career path
-              itemType: overview
-              url: /training/career-paths/identity-and-access-admin
-        # Card
-        - title: Information protection administrator
-          links:
-            - text: Career path
-              itemType: overview
-              url: /training/career-paths/information-protection-admin
-        # Card
-        - title: Security operations analyst
-          links:
-            - text: Career path
-              itemType: overview
-              url: /training/career-paths/security-operations-analyst
-        # Card
-        - title: Security engineer
-          links:
-            - text: Career path
-              itemType: overview
-              url: /training/career-paths/security-engineer
-        # Card
-        - title: Learn how organizational functions play an important role in security
-          links:
-            - text: Cloud security functions
-              itemType: overview
-              url: /azure/cloud-adoption-framework/organize/cloud-security
-            - text: MCRA security roles
-              itemType: video
-              url: https://www.youtube.com/watch?v=GlqjvlX93gY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=14
-
 additionalContent:
 #  Maximum of 4 sections
   sections:

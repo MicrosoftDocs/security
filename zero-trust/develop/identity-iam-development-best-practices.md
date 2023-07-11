@@ -13,7 +13,7 @@ ms.collection:
 ---
 # Zero Trust identity and access management development best practices
 
-This article helps you, as a developer, to understand best identity and access management practices for your application development lifecycle. You start developing secure, [Zero Trust compliant](identity-zero-trust-compliance.md)applications with identity and access management (IAM).
+This article helps you, as a developer, to understand identity and access management best practices for your application development lifecycle. You start developing secure, [Zero Trust compliant](identity-zero-trust-compliance.md) applications with identity and access management (IAM).
 
 The [Zero Trust](overview.md) security framework uses the principles of explicit verification, least privileged access, and assuming breach. Secure users and data while allowing for common scenarios like access to applications from outside the network perimeter. Reduce reliance upon implicit trust to interactions behind a secure network perimeter that can become vulnerable to security attacks.
 

@@ -14,7 +14,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 07/07/2023
+  ms.date: 07/13/2023
 
 
 # Maximum of 8 items
@@ -61,32 +61,30 @@ productDirectory:
   items:
     # Card
     - title: Identity and access administrator
-      # imageSrc should be square in ratio with no white space
       imageSrc: "./media/hubpage/id-admin.png"
-      links:
-        - url: /training/career-paths/identity-and-access-admin
-          text: Career path training
+      summary: Career path training
+      url: /training/career-paths/identity-and-access-admin
 
     # Card
     - title: Information protection administrator
       imageSrc: "./media/hubpage/info-prot.png"
-      links:
-        - url: /training/career-paths/information-protection-admin
-          text: Career path training
+      summary: Career path training
+      url: /training/career-paths/information-protection-admin
+          
 
     # Card
     - title: Security operations analyst
       imageSrc: "./media/hubpage/sec-op.png"
-      links:
-        - url: /training/career-paths/security-operations-analyst
-          text: Career path training
+      summary: Career path training
+      url: /training/career-paths/security-operations-analyst
+          
 
     # Card
     - title: Security engineer
       imageSrc: "./media/hubpage/sec-eng.png"
-      links:
-        - url: /training/career-paths/security-engineer
-          text: Career path training
+      summary: Career path training
+      url: /training/career-paths/security-engineer
+          
 
     # Card
     - title: Learn how organizational functions play an important role in security

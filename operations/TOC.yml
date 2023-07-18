@@ -43,6 +43,8 @@
           href: incident-response-playbook-dart-ransomware-approach.md
         - name: Compromised and malicious applications
           href: incident-response-playbook-compromised-malicious-app.md
+        - name: Token theft playbook
+          href: token-theft-playbook.md
 
     - name: Microsoft 365 Defender security operations guide
       items:

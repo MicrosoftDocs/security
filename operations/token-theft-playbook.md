@@ -401,7 +401,7 @@ Rotate secrets associated with the identified user or device credentials.
   * Review the leaked credentials. [See Workload identity risk detections](/azure/active-directory/identity-protection/concept-workload-identity-risk)
   * Run credential scanning. See [Credential Scanning](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/credential_scanning/)
 * Delete added or changed inbox rules in the Microsoft 365 portal:
-  * [Configure email forwarding in Microsoft 365](https://microsoft-365/admin/email/configure-email-forwarding)
+  * [Configure email forwarding in Microsoft 365](/microsoft-365/admin/email/configure-email-forwarding)
   * [Phishing investigation](incident-response-playbook-phishing.md)
 
 Secure identities in your environment

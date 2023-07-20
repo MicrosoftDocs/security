@@ -52,7 +52,7 @@ highlightedContent:
     # Card
     - title: Azure network security
       itemType: concept
-      url: /azure/networking/security/index.yml
+      url: /azure/networking/security
 
 
 # productDirectory section (Optional; Remove if not applicable.)

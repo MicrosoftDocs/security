@@ -61,7 +61,7 @@ The elements of the logical architecture are:
 
 - Azure Virtual Desktop resource group
 
-  An Azure Virtual Desktop resource group isolates Key Vault and service objects.
+  An Azure Virtual Desktop resource group isolates Key Vaults, Azure Virtual Desktop service objects and private endpoints.
 
 - Storage resource group
 
@@ -69,7 +69,7 @@ The elements of the logical architecture are:
 
 - Session host virtual machines resource group
 
-  A dedicated resource group isolates the virtual machines for their session hosts and an Application Security Group.
+  A dedicated resource group isolates the virtual machines for their session hosts Virtual Machines, Disk Encryption Set and an Application Security Group.
 
 - Spoke VNet resource group
 
@@ -120,9 +120,9 @@ A hub VNet is a central point of connectivity for multiple spoke virtual network
 
 A spoke VNet isolates the Azure Virtual Desktop workload and contains the session host virtual machines. Implement the steps in [Apply Zero Trust principles to spoke virtual network in Azure](azure-infrastructure-iaas.md) for the spoke VNet that contains the session host/virtual machines.
 
-Isolate different host pools on separate VNets using [NSG](/azure/virtual-network/network-security-groups-overview) with the required URL necessary for Azure Virtual Desktop. Azure Firewall or a network virtual appliance (NVA) firewall can be used to control and restrict outbound traffic for Azure Virtual Desktop session hosts.
+Isolate different host pools on separate VNets using [NSG](/azure/virtual-network/network-security-groups-overview) with the required URL necessary for Azure Virtual Desktop for each subnet. A network security group is configured for each of these subnets. When deploying the private endpoints place them in the appropriate subnet in the VNet based on their role. 
 
-Use the instructions [here](/azure/firewall/protect-azure-virtual-desktop?tabs=azure) for Azure Firewall to protect session hosts. Force the traffic through the firewall with [User-Defined Routes (UDRs)](/azure/virtual-network/virtual-networks-udr-overview#user-defined) linked to the host pool subnet. Review the full list of required [Azure Virtual Desktop URLs](/azure/virtual-desktop/safe-url-list?tabs=azure) to configure your firewall. Azure Firewall provides an Azure Virtual Desktop [FQDN Tag](/azure/firewall/fqdn-tags#current-fqdn-tags) to simplify this configuration.
+Azure Firewall or a network virtual appliance (NVA) firewall can be used to control and restrict outbound traffic Azure Virtual Desktop session hosts. Use the instructions [here](/azure/firewall/protect-azure-virtual-desktop?tabs=azure) for Azure Firewall to protect session hosts. Force the traffic through the firewall with [User-Defined Routes (UDRs)](/azure/virtual-network/virtual-networks-udr-overview#user-defined) linked to the host pool subnet. Review the full list of required [Azure Virtual Desktop URLs](/azure/virtual-desktop/safe-url-list?tabs=azure) to configure your firewall. Azure Firewall provides an Azure Virtual Desktop [FQDN Tag](/azure/firewall/fqdn-tags#current-fqdn-tags) to simplify this configuration.
 
 ## Step 5. Apply Zero Trust principles to Azure Virtual Desktop session hosts
 
@@ -133,6 +133,8 @@ Session hosts are virtual machines that run inside a spoke VNet. Implement the s
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. You can use Microsoft Defender for Endpoint for session hosts. for more information, see [virtual desktop infrastructure (VDI) devices](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi).
 
 ## Step 6. Deploy security, governance, and compliance to Azure Virtual Desktop
+
+Azure Virtual Desktop service allow you to use [Azure Private Link](/azure/virtual-desktop/private-link-overview) to privately connect to your resources by [creating private endpoints](/azure/virtual-desktop/private-link-setup). 
 
 Azure Virtual Desktop has built-in advanced security features to protect session hosts. However, see the following articles to improve the security defenses of your Azure Virtual Desktop environment and session hosts:
 

@@ -42,7 +42,7 @@ While not required, we recommend:
 * Access the Unified Access Log for additional signals
   * [Forensic artifacts in Office 365 and where to find them](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/forensic-artifacts-in-office-365-and-where-to-find-them/ba-p/3634865) provides explanations and tips for investigators to understand what data is available and in which portal.
 * Microsoft Entra ID [premium risk detections](/azure/active-directory/identity-protection/concept-identity-protection-risks) in Microsoft Entra ID P2 and E5 licenses enable more granular investigation triggers and instruction
-* Use a [managed authentication configuration](azure/active-directory/hybrid/connect/choose-ad-authn) with password hash synchronization (PHS), not federated, to access additional signals
+* Use a [managed authentication configuration](/azure/active-directory/hybrid/connect/choose-ad-authn) with password hash synchronization (PHS), not federated, to access additional signals
 
 ## Requirements
 
@@ -75,7 +75,7 @@ Learn more:
 
 Connect SIEM with the Microsoft Graph Security API.
 
-* **Supported integration options** - write code to connect your application to derive insights. The [Microsoft Graph security API overview](graph/security-concept-overview) describes key features and provides codes samples.
+* **Supported integration options** - write code to connect your application to derive insights. The [Microsoft Graph security API overview](/graph/security-concept-overview) describes key features and provides codes samples.
 * **Native integrations and connectors** - built by Microsoft partners
 * **Connectors** - for the API through SIEM solutions, security orchestration automated response (SOAR), incident tracking and service management (ITSM), reporting, and so on
   * [List of connectors from Microsoft](/graph/security-integration#list-of-connectors-from-microsoft) describes options for connecting with the Microsoft Graph Security API.

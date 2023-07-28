@@ -25,7 +25,7 @@ Learn more:
 
 ## Prerequisites
 
-* Access to the Microsoft Entra ID [sign in](/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit](/azure/active-directory/reports-monitoring/concept-audit-logs) logs for users and service principals
+* Access to the Microsoft Entra ID (formerly Azure AD) [sign in](/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit](/azure/active-directory/reports-monitoring/concept-audit-logs) logs for users and service principals
 * An account with one of the following Microsoft Entra roles assigned:
   * Security Administrator
   * Global Administrator
@@ -363,13 +363,13 @@ Delete credentials added with Microsoft Entra ID authentication methods Graph AP
 
 To delete a user email authentication method, run the following Graph call:
 
-```kusto
+```http
 DELETE /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ```
 
 Or, delete an added authenticator authentication method run:
 
-```kusto
+```http
 DELETE /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 
@@ -378,11 +378,11 @@ Learn more:
 
 Delete devices enrolled by the identified user account(s). Use the following Graph API calls:
 
-```kusto
+```http
 DELETE /devices/{id}
 ```
 
-```kusto
+```http
 DELETE /devices(deviceId='{deviceId}')
 ```
 

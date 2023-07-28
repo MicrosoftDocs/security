@@ -8,7 +8,7 @@ ms.service: security
 ms.workload: identity
 ms.subservice: security-fundamentals
 ms.topic: conceptual
-ms.date: 07/18/2023
+ms.date: 07/28/2023
 ms.author: jricketts
 ms.reviewer: jricketts
 ms.custom: "it-pro"
@@ -317,7 +317,7 @@ Query indicators of compromise for the entire environment. For example, more aff
 
 ## Containment state
 
-Your system is in a compromised state if application(s) or workload identities are malicious or compromised. If compromised, you might not immediately roll the application's credentials, nor delete it.
+Once you identified one more user, device, application(s), or workload identities are malicious or compromised, you should take actions to contain the attacker. If compromised, you might not immediately roll the application's credentials, nor delete it.
 
 Sometimes, it's more important to collect attacker details than to respond immediately to the attack. We recommend you consider the order of the following guidance. In this example, containment, or mitigation, is prioritized over information gathering.
 
@@ -433,6 +433,5 @@ Sometimes, it's not possible to discover the root cause. We recommended you comp
 * [From Strong to Stronger: Phishing Resistant authentication methods: The Blueprint Files](/events/ignite-nov-2021/security-compliance-and-identity/breakouts/brk244/)
 * [Conditional Access authentication strength](/azure/active-directory/authentication/concept-authentication-strengths)
 * [Conditional Access: Token protection (preview)](/azure/active-directory/conditional-access/concept-token-protection)
-* [Download the Token Theft Playbook decision tree](link from Janice)
 * [Token tactics: How to prevent, detect, and respond to cloud token theft](https://www.microsoft.com/security/blog/2022/11/16/token-tactics-how-to-prevent-detect-and-respond-to-cloud-token-theft/)
 * [2023 identity security trends and solutions from Microsoft](https://www.microsoft.com/security/blog/2023/01/26/2023-identity-security-trends-and-solutions-from-microsoft/)

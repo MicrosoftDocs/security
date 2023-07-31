@@ -16,7 +16,7 @@ ms.collection:
 ---
 # Token theft playbook
 
-This article, and its accompanying decision tree, provide guidance for security analysts and incident responders to identify and investigate token theft attacks in an organization. As organizations increase their security posture, threat actors use more sophisticated techniques to compromise resources. Quick response is needed to investigate, contain, and remediate damage resulting from token theft attacks.
+This article, and its accompanying [decision tree](https://aka.ms/tokentheftworkflow), provide guidance for security analysts and incident responders to identify and investigate token theft attacks in an organization. As organizations increase their security posture, threat actors use more sophisticated techniques to compromise resources. Quick response is needed to investigate, contain, and remediate damage resulting from token theft attacks.
 
 A token theft attack occurs when threat actors compromise and replay tokens issued to a user, even if that user has satisfied multifactor authentication. Because authentication requirements are met, the threat actor is granted access to organizational resources by using the stolen token.
 
@@ -82,7 +82,7 @@ Connect SIEM with the Microsoft Graph Security API.
 
 ## Investigations
 
-  Review the following sections for guidance on triggers, the investigation checklists, and more.
+  Review the following sections for guidance on triggers, the investigation checklists, and more. Use the token theft workflow [decision tree](https://aka.ms/tokentheftworkflow) to assist with your investigation and decision making.
 
 ### Investigation triggers
 
@@ -154,7 +154,7 @@ Learn more:
 
 If you believe an account or multiple user accounts were compromised, differentiate your investigation activities between two contexts: user-sessions and machine-device.
 
-### User investigation: user checklist
+### User investigation checklist
 
 Investigate logs that have user behavior. There's suspicious user activity if:
 
@@ -278,7 +278,7 @@ OfficeActivity
     | project TimeGenerated, Operation, OfficeObjectId
 ```
 
-### Device investigation: device checklist
+### Device investigation checklist
 
 Investigate logs that record device behavior. There's suspicious device activity if:
 
@@ -427,6 +427,7 @@ Sometimes, it's not possible to discover the root cause. We recommended you comp
 
 ## Next steps
 
+*[Token theft wokflow decision tree](https://aka.ms/tokentheftworkflow)
 * [What is Microsoft Entra ID Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
 * [Continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 * [Risk based access policies](/azure/active-directory/identity-protection/concept-identity-protection-policies)

@@ -154,7 +154,7 @@ Learn more:
 
 If you believe an account or multiple user accounts were compromised, differentiate your investigation activities between two contexts: user-sessions and machine-device.
 
-### User investigation: user checklist
+### User investigation checklist
 
 Investigate logs that have user behavior. There's suspicious user activity if:
 
@@ -278,7 +278,7 @@ OfficeActivity
     | project TimeGenerated, Operation, OfficeObjectId
 ```
 
-### Device investigation: device checklist
+### Device investigation checklist
 
 Investigate logs that record device behavior. There's suspicious device activity if:
 

@@ -160,7 +160,7 @@ The following guidance will configure Enrollment for deployments that will deny 
 
 ### Set enrollment restrictions preventing BYOD
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose > **Devices** > **Enrollment restrictions** > choose the default restriction **All Users**  
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose > **Devices** > **Enrollment device platform restrictions** > choose the default restriction **All Users**  
 1. Select **Properties** > Platform settings **Edit**
 1. Select **Block** for All types, except Windows MDM.
 1. Select **Block** for all Personally owned items.
@@ -169,7 +169,7 @@ The following guidance will configure Enrollment for deployments that will deny 
 
 After creating a device group, you must create a deployment profile to configure the Autopilot devices.
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
 1. Enter:
    * Name - **Secure workstation deployment profile**.
    * Description - **Deployment of secure workstations**.
@@ -199,7 +199,7 @@ The Enrollment Status Page (ESP) displays provisioning progress after a new devi
 
 #### Create and assign enrollment status page profile
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Windows** > **Windows enrollment** > **Enrollment Status Page** > **Create profile**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Windows** > **Windows enrollment** > **Enrollment Status Page** > **Create profile**.
 1. Provide a **Name** and **Description**.
 1. Choose **Create**.
 1. Choose the new profile in the **Enrollment Status Page** list.
@@ -214,7 +214,7 @@ Keeping Windows 10 up to date is one of the most important things you can do. To
 
 This guidance recommends that you create a new update ring and change the following default settings:
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Software updates** > **Windows 10 Update Rings**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Software updates** > **Windows 10 Update Rings**.
 1. Enter:
    * Name - **Azure-managed workstation updates**
    * Servicing channel - **Semi-annual channel**
@@ -239,7 +239,7 @@ For more information about Windows Update policies, see [Policy CSP - Update](/w
 
 To configure integration of Windows Defender for Endpoint and Microsoft Endpoint Manager:
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Endpoint Security** > **Microsoft Defender ATP**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Endpoint Security** > **Microsoft Defender ATP**.
 1. In step 1 under **Configuring Windows Defender ATP**, select **Connect Windows Defender ATP to Microsoft Intune in the Windows Defender Security Center**.
 1. In the Windows Defender Security Center:
 
@@ -253,7 +253,7 @@ To configure integration of Windows Defender for Endpoint and Microsoft Endpoint
 
 ### Create the device configuration profile to onboard Windows devices
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Endpoint security** > **Endpoint detection and response** > **Create profile**.
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Endpoint security** > **Endpoint detection and response** > **Create profile**.
 1. For **Platform**, select **Windows 10 and Later**.
 1. For **Profile type**, select **Endpoint detection and response**, and then select **Create**.
 1. On the **Basics** page, enter a *PAW - Defender for Endpoint* in the Name field and *Description* (optional) for the profile, then choose **Next**.

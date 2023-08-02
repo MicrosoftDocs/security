@@ -57,7 +57,7 @@ Microsoft Purview proposes five core elements for a data defense in depth strate
       <td>
 	     <p><b>I.</b> <a href="#i-classify-label-and-discover-sensitive-data">Classify and label data. </a>Automatically classify and label data where possible. Apply manually where it is not.</p>
          <p><b>II.</b> <a href="#ii-apply-encryption-access-control-and-content-markings">Apply encryption, access control, and content markings. </a> Apply encryption where protection and access control are insufficient.</p>
-        <p><b>III.</b> <a href="#i-control-access-to-data">Control access to data. </a>Control access to sensitivity data so they're better protected.</p>
+        <p><b>III.</b> <a href="#i-control-access-to-data">Control access to data. </a>Control access to sensitive data so they're better protected.</p>
       </td>
    </tr>
    <tr>

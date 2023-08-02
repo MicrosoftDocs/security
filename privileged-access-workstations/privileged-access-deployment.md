@@ -187,7 +187,7 @@ After creating a device group, you must create a deployment profile to configure
    * Select a scope tag if you have preconfigured one.
 
 1. Select **Next**.
-1. Choose **Assignments** > **Assign to** > **Selected Groups**. In **Select groups to include**, choose **Secure Workstations**.
+1. Choose **Assignments** > **Assign to** > **Selected Groups**. In **Select groups to include**, choose **Secure Workstations Devices**.
 1. Select **Next**.
 1. Select **Create** to create the profile. The Autopilot deployment profile is now available to assign to devices.
 

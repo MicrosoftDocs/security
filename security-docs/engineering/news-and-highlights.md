@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 05/29/2023
+ms.date: 08/23/2023
 ---
 
 # Security news and highlights
@@ -17,6 +17,8 @@ Below are past news and highlights that you may have missed or would like to rev
 
 2023
 
+- [Secure IaaS services in Amazon Web Services](/security/zero-trust/secure-iaas-apps)
+- [The BlueHat podcast](https://shows.acast.com/the-bluehat-podcast)
 - [Quickly deploy ransomware protections](/security/ransomware/protect-against-ransomware)
 - [Security rapid modernization plan](/security/privileged-access-workstations/security-rapid-modernization-plan)
 - [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)

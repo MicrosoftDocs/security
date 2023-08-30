@@ -20,7 +20,7 @@ ms.collection:
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
-ms.custom: cxdef-zt-ransomware
+ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref
 ---
 
 # Compromised and malicious applications investigation
@@ -518,4 +518,3 @@ Examine guidance for identifying and investigating these additional types of att
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
 - [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
-

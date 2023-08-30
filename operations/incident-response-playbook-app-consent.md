@@ -5,6 +5,7 @@ keywords: app consent grant, investigation, attack, illicit consent grant, micro
 search.product: DART
 search.appverid: met150
 ms.service: microsoft-365-security
+ms.custom: has-azure-ad-ps-ref
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

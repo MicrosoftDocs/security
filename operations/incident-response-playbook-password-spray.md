@@ -20,7 +20,7 @@ ms.collection:
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
-ms.custom: cxdef-zt-ransomware 
+ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref
 ---
 
 # Password spray investigation

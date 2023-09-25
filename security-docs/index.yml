@@ -14,7 +14,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 08/23/2023
+  ms.date: 09/25/2023
 
 
 # Maximum of 8 items
@@ -67,11 +67,16 @@ productDirectory:
       url: /training/career-paths/identity-and-access-admin
 
     # Card
-    - title: Information protection administrator
+    - title: Information protection and compliance administrator
       imageSrc: "./media/hubpage/info-prot.png"
       summary: Career path training
       url: /training/career-paths/information-protection-admin
-          
+
+    # Card
+    - title: Cybersecurity architect expert
+      imageSrc: "./media/hubpage/learn.png"
+      summary: Career path training
+      url: /credentials/certifications/cybersecurity-architect-expert
 
     # Card
     - title: Security operations analyst

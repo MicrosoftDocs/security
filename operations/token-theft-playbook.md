@@ -207,7 +207,7 @@ AuditLogs
 
 ### Authentication method changes for a privileged account
 
-Use the following query to determine signs of data access: mailitemsaccessed, downloads, etc.
+Use the following query to find any changes in the security information of users who have privileged admin roles assigned.
 
 ```kusto
 Query

@@ -4,8 +4,9 @@
 # Mandatory fields.
 title: Threat Modeling AI/ML Systems and Dependencies
 description: Threat Mitigation/Security Feature Technical Guidance
-author: dansimp
-ms.author: dansimp
+author: TerryLanfear
+ms.author: terrylan
+manager: rkarlin
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: security

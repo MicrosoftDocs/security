@@ -69,8 +69,6 @@ landingContent:
            url:  /azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
          - text: In SharePoint
            url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
-         - text: Azure Defenses for Ransomware Attack ebook
-           url:  https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/
 
 # Card
   - title: Threat intelligence for Microsoft 365 Defender subscription holders
@@ -116,3 +114,5 @@ landingContent:
           url:  /security/operations/incident-response-playbook-dart-ransomware-approach
         - text: Ransomware Incident Response playbook template
           url:  //download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
+        - text: Azure Defenses for Ransowmare Attack ebook
+          url:  https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/

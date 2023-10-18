@@ -40,7 +40,7 @@ The Azure environment for Azure Virtual Desktop includes:
 | C | A spoke VNet with Azure Virtual Desktop session host virtual machine-based workloads. |
 | D | An Azure Virtual Desktop Control Plane. |
 | E | An Azure Virtual Desktop Management Plane. |
-| F | Dependent PaaS services including Azure Active Directory (Azure AD), Microsoft Defender for Cloud, role-based access control (RBAC), and Azure Monitor. |
+| F | Dependent PaaS services including Microsoft Entra ID, Microsoft Defender for Cloud, role-based access control (RBAC), and Azure Monitor. |
 | G | Azure Compute Gallery. |
 
 Users or admins that access the Azure environment can originate from the internet, office locations, or on-premises datacenters.
@@ -49,9 +49,9 @@ The reference architecture aligns to the architecture described in the [Enterpri
 
 ## Logical architecture
 
-In this diagram, the Azure infrastructure for an Azure Virtual Desktop deployment is contained within one Azure AD tenant.
+In this diagram, the Azure infrastructure for an Azure Virtual Desktop deployment is contained within one Microsoft Entra tenant.
 
-:::image type="content" source="media/avd/logical-arch-avd.png" alt-text="Diagram of the components of Azure Virtual Desktop in an Azure AD tenant." lightbox="media/avd/logical-arch-avd.png":::
+:::image type="content" source="media/avd/logical-arch-avd.png" alt-text="Diagram of the components of Azure Virtual Desktop in a Microsoft Entra tenant." lightbox="media/avd/logical-arch-avd.png":::
 
 The elements of the logical architecture are:
 
@@ -89,18 +89,18 @@ This article walks through the steps to apply the principles of Zero Trust acros
 | 6 | Deploy security, governance, and compliance to Azure Virtual Desktop. | Assume breach |
 | 7 | Deploy secure management and monitoring to Azure Virtual Desktop. | Assume breach |
 
-## Step 1. Secure your identities with Zero Trust
+## Step 1: Secure your identities with Zero Trust
 
 To apply Zero Trust principles to the identities used in Azure Virtual Desktop:
 
 - Azure Virtual Desktop supports different types of [identities](/azure/virtual-desktop/prerequisites#supported-identity-scenarios). Use the information in [Securing identity with Zero Trust](/security/zero-trust/deploy/identity) to ensure that your chosen identity types adhere to Zero Trust principles.
-- Create a dedicated user account with least privileges to join session hosts to an Azure AD DS or AD DS domain during session host [deployment](/azure/virtual-desktop/prerequisites#deployment-parameters).
+- Create a dedicated user account with least privileges to join session hosts to a Microsoft Entra Domain Services or AD DS domain during session host [deployment](/azure/virtual-desktop/prerequisites#deployment-parameters).
 
-## Step 2. Secure your endpoints with Zero Trust
+## Step 2: Secure your endpoints with Zero Trust
 
 Endpoints are the devices through which users access the Azure Virtual Desktop environment and session host virtual machines. Use the instructions in the [Endpoint integration overview](/security/zero-trust/integrate/endpoints) and use Microsoft Defender for Endpoint and Microsoft Endpoint Manager to ensure that your endpoints adhere to your security and compliance requirements.
 
-## Step 3. Apply Zero Trust principles to Azure Virtual Desktop storage resources
+## Step 3: Apply Zero Trust principles to Azure Virtual Desktop storage resources
 
 Implement the steps in [Apply Zero Trust principles to Storage in Azure](azure-infrastructure-storage.md) for the storage resources being used in your Azure Virtual Desktop deployment. These steps ensure that you:
 
@@ -114,7 +114,7 @@ Implement the steps in [Apply Zero Trust principles to Storage in Azure](azure-i
 >In some designs, [Azure NetApp files](/azure/virtual-desktop/create-fslogix-profile-container) is the storage service of choice for FSLogix profiles for Azure Virtual Desktop via an SMB share. Azure NetApp Files provides built-in security features that include [delegated subnets](/azure/azure-netapp-files/azure-netapp-files-delegate-subnet) and [security benchmarks](/security/benchmark/azure/baselines/azure-netapp-files-security-baseline?toc=%2Fazure%2Fazure-netapp-files%2FTOC.json).
 >
 
-## Step 4. Apply Zero Trust principles to hub and spoke Azure Virtual Desktop VNets
+## Step 4: Apply Zero Trust principles to hub and spoke Azure Virtual Desktop VNets
 
 A hub VNet is a central point of connectivity for multiple spoke virtual networks. Implement the steps in [Apply Zero Trust principles to a hub virtual network in Azure](azure-infrastructure-networking.md) for the hub VNet being used to filter outbound traffic from your session hosts.
 
@@ -124,7 +124,7 @@ Isolate different host pools on separate VNets using [NSG](/azure/virtual-networ
 
 Azure Firewall or a network virtual appliance (NVA) firewall can be used to control and restrict outbound traffic Azure Virtual Desktop session hosts. Use the instructions [here](/azure/firewall/protect-azure-virtual-desktop?tabs=azure) for Azure Firewall to protect session hosts. Force the traffic through the firewall with [User-Defined Routes (UDRs)](/azure/virtual-network/virtual-networks-udr-overview#user-defined) linked to the host pool subnet. Review the full list of required [Azure Virtual Desktop URLs](/azure/virtual-desktop/safe-url-list?tabs=azure) to configure your firewall. Azure Firewall provides an Azure Virtual Desktop [FQDN Tag](/azure/firewall/fqdn-tags#current-fqdn-tags) to simplify this configuration.
 
-## Step 5. Apply Zero Trust principles to Azure Virtual Desktop session hosts
+## Step 5: Apply Zero Trust principles to Azure Virtual Desktop session hosts
 
 Session hosts are virtual machines that run inside a spoke VNet. Implement the steps in [Apply Zero Trust principles to virtual machines in Azure](azure-infrastructure-virtual-machines.md) for the virtual machines being created for your session hosts.
 
@@ -132,7 +132,7 @@ Session hosts are virtual machines that run inside a spoke VNet. Implement the s
 
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. You can use Microsoft Defender for Endpoint for session hosts. for more information, see [virtual desktop infrastructure (VDI) devices](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-vdi).
 
-## Step 6. Deploy security, governance, and compliance to Azure Virtual Desktop
+## Step 6: Deploy security, governance, and compliance to Azure Virtual Desktop
 
 Azure Virtual Desktop service allow you to use [Azure Private Link](/azure/virtual-desktop/private-link-overview) to privately connect to your resources by [creating private endpoints](/azure/virtual-desktop/private-link-setup). 
 
@@ -143,7 +143,7 @@ Azure Virtual Desktop has built-in advanced security features to protect session
 
 In addition, see the key design considerations and recommendations for [security, governance, and compliance](/azure/cloud-adoption-framework/scenarios/wvd/eslz-security-governance-and-compliance) in Azure Virtual Desktop landing zones in accordance with Microsoft's Cloud Adoption Framework.
 
-## Step 7. Deploy secure management and monitoring to Azure Virtual Desktop
+## Step 7: Deploy secure management and monitoring to Azure Virtual Desktop
 
 Management and continuous monitoring are important to ensure that your Azure Virtual Desktop environment is not engaging in malicious behavior. Use [Azure Virtual Desktop Insights](/azure/virtual-desktop/insights) to log data and report diagnostic and usage data.
 

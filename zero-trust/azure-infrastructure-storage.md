@@ -35,7 +35,7 @@ The following diagram shows the logical architecture components.
 
 In the diagram:
 
-- The storage account for the reference architecture is contained in a dedicated resource group. You can isolate each storage account in a different resource group for more granular role-based access controls (RBAC). You can assign RBAC permissions to manage the storage account at the resource group or resource group level and audit these with Azure Active Directory (Azure AD) logging and tools such as Privileged Identity Management (PIM). If you're running multiple applications or workloads with multiple corresponding storage accounts in one Azure subscription, it is important to limit each storage account's RBAC permissions to its corresponding owners, data custodians, controllers, etc.
+- The storage account for the reference architecture is contained in a dedicated resource group. You can isolate each storage account in a different resource group for more granular role-based access controls (RBAC). You can assign RBAC permissions to manage the storage account at the resource group or resource group level and audit these with Microsoft Entra ID logging and tools such as Privileged Identity Management (PIM). If you're running multiple applications or workloads with multiple corresponding storage accounts in one Azure subscription, it is important to limit each storage account's RBAC permissions to its corresponding owners, data custodians, controllers, etc.
 - Azure storage services for this diagram are contained within a dedicated storage account. You can have one storage account for each type of storage workload.
 - For a broader look at the reference architecture, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
@@ -52,7 +52,7 @@ This article walks through the steps to apply the principles of Zero Trust acros
 | 3 | Logically separate or segregate critical data with network controls. | Assume breach |
 | 4 | Use Defender for Storage for automated threat detection and protection. | Assume breach |
 
-## Step 1. Protect data in all three modes: data at rest, data in transit, data in use
+## Step 1: Protect data in all three modes: data at rest, data in transit, data in use
 
 You configure most of the settings for protecting data at rest, in transit, and in use, when you create the storage account. Use the following recommendations to be sure you configure these protections. Also consider enabling Microsoft Defender for Cloud to automatically evaluate your storage accounts against the [Microsoft cloud security benchmark](/security/benchmark/azure/introduction) that outlines a security baseline for each Azure service.
 
@@ -76,7 +76,7 @@ For more information, see [Prevent anonymous public read access to containers an
 
 ### Prevent shared key authorization
 
-This configuration forces the storage account to reject all requests made with a shared key and require Azure AD authorization instead. Azure AD is a more secure choice as you can use risk-based access mechanisms to harden access to data tiers. For more information, see [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent?tabs=portal).
+This configuration forces the storage account to reject all requests made with a shared key and require Microsoft Entra authorization instead. Microsoft Entra ID is a more secure choice as you can use risk-based access mechanisms to harden access to data tiers. For more information, see [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent?tabs=portal).
 
 You configure data protection for all three modes from the configuration settings of a storage account, as shown here.
 
@@ -90,7 +90,7 @@ The highest version Azure Storage currently supports is TLS 1.2. Enforcing a min
 
 ### Define the scope for copy operations
 
-Define the scope for copy operations to restrict copy operations to only those from source storage accounts that are within the same Azure AD tenant or that have a [Private Link](/azure/storage/common/storage-network-security) to the same virtual network (VNet) as the destination storage account.
+Define the scope for copy operations to restrict copy operations to only those from source storage accounts that are within the same Microsoft Entra tenant or that have a [Private Link](/azure/storage/common/storage-network-security) to the same virtual network (VNet) as the destination storage account.
 
 Limiting copy operations to source storage accounts with private endpoints is the most restrictive option and requires that the source storage account has private endpoints enabled.
 
@@ -111,11 +111,11 @@ You can also enable infrastructure encryption, which provides double encryption 
 > [!NOTE]
 > In order to utilize a customer-managed key for storage account encryption, you must enable it during account creation and you should have a Key Vault with Key and Managed Identity with appropriate permissions already provisioned. Optionally, 256-bit AES encryption at the Azure Storage infrastructure level can also be enabled.
 
-## Step 2. Verify users and control access to storage data with the least privileges
+## Step 2: Verify users and control access to storage data with the least privileges
 
-First, use Azure AD to govern access to storage accounts. Using [Role-based Access Control with Storage Accounts](/azure/storage/blobs/authorize-access-azure-active-directory) allows you to granularly define access based job function using OAuth 2.0. You can align your granular access to your Conditional Access Policy.
+First, use Microsoft Entra ID to govern access to storage accounts. Using [Role-based Access Control with Storage Accounts](/azure/storage/blobs/authorize-access-azure-active-directory) allows you to granularly define access based job function using OAuth 2.0. You can align your granular access to your Conditional Access Policy.
 
-It is important to note that roles for storage accounts must be assigned at either the management or data level. Thus, if you're using Azure AD as the authentication and authorization method, a user should be assigned the appropriate combination of roles to give them the least amount of privilege necessary to complete their job function.
+It is important to note that roles for storage accounts must be assigned at either the management or data level. Thus, if you're using Microsoft Entra ID as the authentication and authorization method, a user should be assigned the appropriate combination of roles to give them the least amount of privilege necessary to complete their job function.
 
 For a list of Storage Account Roles for granular access see [Azure built-in roles for Storage](/azure/role-based-access-control/built-in-roles#storage). RBAC assignments are done through the Access Control option on the Storage Account and can be assigned at various scopes.
 
@@ -131,9 +131,9 @@ Another way to provide permissions that are time-bound is through Shared Access 
 - Have a revocation plan.
 - Configure SAS expiration policies.
 - Validate permissions.
-- Use a user delegation SAS wherever possible. This SAS is signed with Azure AD credentials.
+- Use a user delegation SAS wherever possible. This SAS is signed with Microsoft Entra credentials.
 
-## Step 3. Logically separate or segregate critical data with network controls
+## Step 3: Logically separate or segregate critical data with network controls
 
 In this step, you use the recommended controls to protect the network connections to and from Azure Storage services.
 
@@ -151,7 +151,7 @@ You configure private endpoints from the **Networking** settings of a storage ac
 
 :::image type="content" source="media/secure-storage/storage-5.png" alt-text="Screenshot of configuring a private endpoint for a storage account." lightbox="media/secure-storage/storage-5.png":::
 
-## Step 4. Use Defender for Storage for automated threat detection and protection
+## Step 4: Use Defender for Storage for automated threat detection and protection
 
 [Microsoft Defender for Storage](/azure/storage/common/azure-defender-storage-configure?tabs=azure-security-center) provides that additional level of intelligence that detects unusual and potentially harmful attempts to exploit your storage services. Microsoft Defender for Storage is built into Microsoft Defender for Cloud.
 

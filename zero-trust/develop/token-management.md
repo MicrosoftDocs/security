@@ -19,7 +19,7 @@ Ensure that your application adheres to the Zero Trust [principle of least privi
 
 Build least privilege into how your application manages ID tokens that it receives from the Microsoft identity platform. Information in ID Tokens allows you to verify that a user is who they claim to be. The user or their organization may specify authentication conditions such as providing an MFA, using a managed device, and being in the correct location.
 
-Make it easy for your customers to manage authorizations to your app. Reduce their user provision overhead and the need for manual processes. [Automatic user provisioning](/azure/active-directory/app-provisioning/plan-auto-user-provisioning) allows IT admins to automate user identity creation, maintenance, and removal in target identity stores. Your customers can base automations on changes to users and groups with [app provisioning](/azure/active-directory/app-provisioning/user-provisioning) or [HR driven provisioning](/azure/active-directory/app-provisioning/what-is-hr-driven-provisioning) in Active Directory (Azure AD).
+Make it easy for your customers to manage authorizations to your app. Reduce their user provision overhead and the need for manual processes. [Automatic user provisioning](/azure/active-directory/app-provisioning/plan-auto-user-provisioning) allows IT admins to automate user identity creation, maintenance, and removal in target identity stores. Your customers can base automations on changes to users and groups with [app provisioning](/azure/active-directory/app-provisioning/user-provisioning) or [HR driven provisioning](/azure/active-directory/app-provisioning/what-is-hr-driven-provisioning) in Microsoft Entra ID.
 
 ## Using token claims in your apps
 
@@ -28,8 +28,8 @@ Use claims in ID tokens for UX inside your application, as keys in a database, a
 In the standard pattern for security token authorization, an issued ID token allows the application to receive information about the user. Don't use the ID token as an authorization process to access resources. The authorization server issues ID tokens that contain claims with user information that include the following.
 
 - The [audience](/azure/active-directory/develop/access-tokens#payload-claims) (`aud`) claim is your app's client ID. Accept only tokens for your API client ID.
-- The `tid` claim is the ID of the tenant that issued the token. The `oid` claim is an immutable value that uniquely identifies the user. Use the unique combination of the `tid` and `oid` claims as a key when you need to associate data with the user. You can use these claim values to connect your data back to the user's ID in Azure AD.
-- The `sub` claim is an immutable value that uniquely identities the user. The subject claim is also unique for your application. If you use the `sub` claim to associate data with the user, it's impossible to go from your data and connect it with a user in Azure AD.
+- The `tid` claim is the ID of the tenant that issued the token. The `oid` claim is an immutable value that uniquely identifies the user. Use the unique combination of the `tid` and `oid` claims as a key when you need to associate data with the user. You can use these claim values to connect your data back to the user's ID in Microsoft Entra ID.
+- The `sub` claim is an immutable value that uniquely identities the user. The subject claim is also unique for your application. If you use the `sub` claim to associate data with the user, it's impossible to go from your data and connect it with a user in Microsoft Entra ID.
 
 Your apps can use the `openid` scope to request an ID token from the Microsoft identity platform. The OIDC standard governs the `openid` scope along with the format and contents of the ID token. OIDC specifies these [scopes](/graph/permissions-reference#openid-connect-oidc-scopes):
 
@@ -40,7 +40,7 @@ Your apps can use the `openid` scope to request an ID token from the Microsoft i
 
 The [Microsoft Authentication Library](/azure/active-directory/develop/msal-overview) (MSAL) always adds the openid, email, and `profile` scopes to every token request. As a result, MSAL always returns an ID token and an access token on every call to `AcquireTokenSilent` or AcquireTokenInteractive. MSAL always requests the `offline_access` scope. The Microsoft identity platform always returns `offline_access` scope even when the requesting app doesn't specify the `offline_access` scope.
 
-Microsoft uses the OAuth2 standard to issue access tokens. The OAuth2 standard says that you receive a token, but it doesn't specify the token format or what needs to be in the token. When your application needs to access a resource that Azure AD protects, it should use a scope that the resource has defined.
+Microsoft uses the OAuth2 standard to issue access tokens. The OAuth2 standard says that you receive a token, but it doesn't specify the token format or what needs to be in the token. When your application needs to access a resource that Microsoft Entra ID protects, it should use a scope that the resource has defined.
 
 For example, Microsoft Graph defines the User.Read scope that authorizes the application to access the current user's full user profile and the tenant's name. Microsoft Graph defines [permissions](/graph/permissions-reference) across the full range of functionality available in that API.
 
@@ -48,13 +48,13 @@ Upon authorization, the Microsoft identity platform returns an access token to y
 
 ## Managing token lifetimes
 
-Applications can create a session for a user after the authentication successfully completes with Azure AD. User session management drives how frequently a user needs reauthentication. Its role in keeping an explicitly verified user in front of the app with the right privilege and for the right amount of time is crucial. Session lifetime must be based on the `exp` claim in the ID token. The `exp` claim is the time at which the ID token expires and the time after which you can no longer use the token to authenticate the user.
+Applications can create a session for a user after the authentication successfully completes with Microsoft Entra ID. User session management drives how frequently a user needs reauthentication. Its role in keeping an explicitly verified user in front of the app with the right privilege and for the right amount of time is crucial. Session lifetime must be based on the `exp` claim in the ID token. The `exp` claim is the time at which the ID token expires and the time after which you can no longer use the token to authenticate the user.
 
 Always respect the [token lifetime](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) as provided in the token response for access tokens or the `exp` claim in the ID token. Conditions that govern token lifetime can include sign-in frequency for an enterprise. Your application can't configure the token lifetime. You can't request a token lifetime.
 
 In general, tokens must be valid and unexpired. The audience claim (aud) must match your client ID. Make sure the token is coming from a trusted issuer. If you have a multitenant API, you may choose to filter so that only specific tenants can call your API. Make sure you enforce the token's lifetime. Check the `nbf` (not before) and the `exp` (expiration) claims to ensure the current time is within those two claims' values.
 
-Don't aim for exceptionally long or short session lifetimes. Let the granted [ID token lifetime](/azure/active-directory/develop/id-tokens#id-token-lifetime) drive this decision. Keeping your app's sessions active beyond token validity violates the rules, policies, and concerns that drove an IT admin to set a token validity duration to prevent unauthorized access. Short sessions degrade user experience and don't necessarily increase the security posture. Popular frameworks like ASP.NET allow you to set session and cookie timeouts from Azure AD's ID token's expiry time. Following the identity provider's token expiry time ensures that your user's sessions are never longer than the policies that the identity provider dictates.
+Don't aim for exceptionally long or short session lifetimes. Let the granted [ID token lifetime](/azure/active-directory/develop/id-tokens#id-token-lifetime) drive this decision. Keeping your app's sessions active beyond token validity violates the rules, policies, and concerns that drove an IT admin to set a token validity duration to prevent unauthorized access. Short sessions degrade user experience and don't necessarily increase the security posture. Popular frameworks like ASP.NET allow you to set session and cookie timeouts from Microsoft Entra ID's ID token's expiry time. Following the identity provider's token expiry time ensures that your user's sessions are never longer than the policies that the identity provider dictates.
 
 ## Caching and refreshing tokens
 
@@ -87,4 +87,4 @@ You may need to fall back to `AcquireTokenInteractive` and provide claims challe
 - [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [Configure how users consent to applications](/azure/active-directory/manage-apps/configure-user-consent)
 - [Providing application identity credentials when there's no user](identity-non-user-applications.md) explains why the best Zero Trust client credentials practice for services (nonuser applications) on Azure is Managed Identities for Azure resources.
-- [Troubleshoot Azure Active Directory access tokens: Validate an access token](/azure/databricks/dev-tools/api/latest/aad/troubleshoot-aad-token#validate-an-access-token)
+- [Troubleshoot Microsoft Entra access tokens: Validate an access token](/azure/databricks/dev-tools/api/latest/aad/troubleshoot-aad-token#validate-an-access-token)

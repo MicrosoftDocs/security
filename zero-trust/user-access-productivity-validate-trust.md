@@ -36,7 +36,7 @@ After completing this work, you will have built out this part of the Zero Trust 
 
 ## Identities
 
-Verify and secure each identity with strong authentication across your entire digital estate with Azure Active Directory (Azure AD), a complete identity and access management solution with integrated security that connects 425 million people to their apps, devices, and data each month.
+Verify and secure each identity with strong authentication across your entire digital estate with Microsoft Entra ID, a complete identity and access management solution with integrated security that connects 425 million people to their apps, devices, and data each month.
 
 ### Program and project member accountabilities
 
@@ -59,21 +59,21 @@ Meet these deployment objectives to protect your privileged identities with Zero
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Deploy secured privileged access to protect administrative user accounts.  | IT implementer | [Securing privileged access for hybrid and cloud deployments in Azure AD](/azure/active-directory/roles/security-planning) |
-| <input type="checkbox" /> | 2. Deploy Azure AD Privileged Identity Management (PIM) for a time-bound, just-in-time approval process for the use of privileged user accounts. | IT implementer | [Plan a Privileged Identity Management deployment](/azure/active-directory/authentication/howto-mfa-getstarted) |
+| <input type="checkbox" /> | 1. Deploy secured privileged access to protect administrative user accounts.  | IT implementer | [Securing privileged access for hybrid and cloud deployments in Microsoft Entra ID](/azure/active-directory/roles/security-planning) |
+| <input type="checkbox" /> | 2. Deploy Microsoft Entra Privileged Identity Management (PIM) for a time-bound, just-in-time approval process for the use of privileged user accounts. | IT implementer | [Plan a Privileged Identity Management deployment](/azure/active-directory/authentication/howto-mfa-getstarted) |
 
 Meet these deployment objectives to protect your user identities with Zero Trust.
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Enable self-service password reset (SSPR), which gives you credential reset capabilities | IT implementer | [Plan an Azure AD self-service password reset deployment](/azure/active-directory/authentication/howto-sspr-deployment) |
-| <input type="checkbox" /> | 2. Enable Multi-Factor Authentication (MFA) and select appropriate methods for MFA | IT implementer | [Plan an Azure AD Multi-Factor Authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted) |
-| <input type="checkbox" /> | 3. Enable combined User Registration for your directory to allow users to register for SSPR and MFA in one step | IT implementer | [Enable combined security information registration in Azure AD](/azure/active-directory/authentication/howto-registration-mfa-sspr-combined) |
-| <input type="checkbox" /> | 4. Configure a Conditional Access policy to require MFA registration. | IT implementer | [How To: Configure the Azure AD Multi-Factor Authentication registration policy](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) |
+| <input type="checkbox" /> | 1. Enable self-service password reset (SSPR), which gives you credential reset capabilities | IT implementer | [Plan a Microsoft Entra self-service password reset deployment](/azure/active-directory/authentication/howto-sspr-deployment) |
+| <input type="checkbox" /> | 2. Enable multifactor authentication (MFA) and select appropriate methods for MFA | IT implementer | [Plan a Microsoft Entra multifactor authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted) |
+| <input type="checkbox" /> | 3. Enable combined User Registration for your directory to allow users to register for SSPR and MFA in one step | IT implementer | [Enable combined security information registration in Microsoft Entra ID](/azure/active-directory/authentication/howto-registration-mfa-sspr-combined) |
+| <input type="checkbox" /> | 4. Configure a Conditional Access policy to require MFA registration. | IT implementer | [How To: Configure the Microsoft Entra multifactor authentication registration policy](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) |
 | <input type="checkbox" /> | 5. Enable user and sign-in risk-based policies to protect user access to resources. | IT implementer | [How To: Configure and enable risk policies](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) |
-| <input type="checkbox" /> | 6. Detect and block known weak passwords and their variants and block additional weak terms specific to your organization. | IT implementer | [Eliminate bad passwords using Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad) |
+| <input type="checkbox" /> | 6. Detect and block known weak passwords and their variants and block additional weak terms specific to your organization. | IT implementer | [Eliminate bad passwords using Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad) |
 | <input type="checkbox" /> | 7. Deploy Microsoft Defender for Identity and review and mitigate any open alerts (in parallel with your security operations).| Security operations team  | [Microsoft Defender for Identity](/defender-for-identity/what-is#whats-next)  |
-| <input type="checkbox" /> | 8. Deploy passwordless credentials. | IT implementer | [Plan a passwordless authentication deployment in Azure AD](/azure/active-directory/authentication/howto-authentication-passwordless-deployment) |
+| <input type="checkbox" /> | 8. Deploy passwordless credentials. | IT implementer | [Plan a passwordless authentication deployment in Microsoft Entra ID](/azure/active-directory/authentication/howto-authentication-passwordless-deployment) |
 
 You have now built out the **Identities** section of the Zero Trust architecture.
 
@@ -103,7 +103,7 @@ Meet these deployment objectives to protect your endpoints (devices) with Zero T
 
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Register devices with Azure AD. | MDM Admin | [Device identities](/azure/active-directory/devices/overview) |
+| <input type="checkbox" /> | 1. Register devices with Microsoft Entra ID. | MDM Admin | [Device identities](/azure/active-directory/devices/overview) |
 | <input type="checkbox" /> | 2. Enroll devices and create configuration profiles. | MDM Admin | [Device management overview](/mem/intune/fundamentals/what-is-device-management) |
 | <input type="checkbox" /> | 3. Connect Defender for Endpoint to Intune (in parallel with your security operations). | Identity Security Admin | [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure) |
 | <input type="checkbox" /> | 4. Monitor device compliance and risk for Conditional Access. | Identity Security Admin | [Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started) |
@@ -115,7 +115,7 @@ You have now built out the **Endpoints** section of the Zero Trust architecture.
 
 ## Apps
 
-Because apps are used by malicious users to infiltrate your organization, you need to ensure that your apps are using services, such as Azure AD and Intune, that provide Zero Trust protection or are hardened against attack.
+Because apps are used by malicious users to infiltrate your organization, you need to ensure that your apps are using services, such as Microsoft Entra ID and Intune, that provide Zero Trust protection or are hardened against attack.
 
 ### Program and project member accountabilities
 
@@ -125,10 +125,10 @@ This table describes a Zero Trust implementation for apps in terms of a sponsors
 |:-------|:-------|:-----|
 |  CISO, CIO, or Director of Application Security | | Executive sponsorship |
 | Program lead from Apps Management| | Drive results and cross-team collaboration |
-| | Identity Architect  | Advise on Azure AD configuration for apps <br> Update authentication standards for on-premises apps |
+| | Identity Architect  | Advise on Microsoft Entra configuration for apps <br> Update authentication standards for on-premises apps |
 | | Developer Architect  | Advise on configuration and standards for in-house on-premises and cloud apps |
 | | Network Architect | Implement VPN configuration changes |
-| | Cloud Network Architect | Deploy Azure AD Application Proxy |
+| | Cloud Network Architect | Deploy Microsoft Entra application proxy |
 | | Security Governance | Monitor to ensure compliance |
 
 ### Deployment objectives
@@ -137,12 +137,12 @@ Meet these deployment objectives to ensure Zero Trust protection for your Micros
 
 | Done | Type of app or app usage | Deployment objectives | Owner | Documentation |
 |:-------|:-------|:-----|:-----|:-----|
-| <input type="checkbox" /> | Third-party SaaS apps and custom PaaS apps that are registered with Azure AD | Azure AD app registration uses Azure AD authentication, certification, and app consent policies. <br><br>  Use Azure AD Conditional Access policies and Intune MAM and Application Protection Policies (APP) policies to allow app usage. | Identity Architect | [Application management in Azure AD](/azure/active-directory/manage-apps/what-is-application-management)  |
-| <input type="checkbox" /> | Cloud apps that are OAuth-enabled and registered in Azure AD, Google, and Salesforce | Use app governance in Microsoft Defender for Cloud Apps for app behavior visibility, governance with policy enforcement, and detection and remediation of app-based attacks. | Security Engineer | [Overview](/defender-cloud-apps/app-governance-manage-app-governance) |
-| <input type="checkbox" /> | Third-party SaaS apps and custom PaaS apps that are **NOT** registered with Azure AD | Register them with Azure AD for authentication, certification, and app consent policies. <br><br>  Use Azure AD Conditional Access policies and Intune MAM and APP policies. | Apps Architect | [Integrating all your apps with Azure AD](/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad) |
+| <input type="checkbox" /> | Third-party SaaS apps and custom PaaS apps that are registered with Microsoft Entra ID | Microsoft Entra app registration uses Microsoft Entra authentication, certification, and app consent policies. <br><br>  Use Microsoft Entra Conditional Access policies and Intune MAM and Application Protection Policies (APP) policies to allow app usage. | Identity Architect | [Application management in Microsoft Entra ID](/azure/active-directory/manage-apps/what-is-application-management)  |
+| <input type="checkbox" /> | Cloud apps that are OAuth-enabled and registered in Microsoft Entra ID, Google, and Salesforce | Use app governance in Microsoft Defender for Cloud Apps for app behavior visibility, governance with policy enforcement, and detection and remediation of app-based attacks. | Security Engineer | [Overview](/defender-cloud-apps/app-governance-manage-app-governance) |
+| <input type="checkbox" /> | Third-party SaaS apps and custom PaaS apps that are **NOT** registered with Microsoft Entra ID | Register them with Microsoft Entra ID for authentication, certification, and app consent policies. <br><br>  Use Microsoft Entra Conditional Access policies and Intune MAM and APP policies. | Apps Architect | [Integrating all your apps with Microsoft Entra ID](/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad) |
 | <input type="checkbox" /> | On-premises users accessing on-premises applications, which includes applications running on both on-premises and IaaS-based servers | Ensure that your apps support modern authentication protocols such as OAuth/OIDC and SAML. Contact your application vendor for updates to protect user sign-in. | Identity Architect | See your vendor documentation |
-| <input type="checkbox" /> | Remote users accessing on-premises applications through a VPN connection | Configure your VPN appliance so that it uses Azure AD as its identity provider | Network Architect | See your vendor documentation |
-| <input type="checkbox" /> | Remote users accessing on-premises **web** applications through a VPN connection | Publish the applications through Azure AD Application Proxy. Remote users only need to access the individual published application, which is routed to the on-premises web server through an application proxy connector. <br><br> Connections take advantage of strong Azure AD authentication and limits users and their devices to accessing a single application at a time. In contrast, the scope of a typical remote access VPN is all locations, protocols, and ports of the entire on-premises network. | Cloud Network Architect | [Remote access to on-premises applications through Azure AD Application Proxy](/azure/active-directory/app-proxy/application-proxy) |
+| <input type="checkbox" /> | Remote users accessing on-premises applications through a VPN connection | Configure your VPN appliance so that it uses Microsoft Entra ID as its identity provider | Network Architect | See your vendor documentation |
+| <input type="checkbox" /> | Remote users accessing on-premises **web** applications through a VPN connection | Publish the applications through Microsoft Entra application proxy. Remote users only need to access the individual published application, which is routed to the on-premises web server through an application proxy connector. <br><br> Connections take advantage of strong Microsoft Entra authentication and limits users and their devices to accessing a single application at a time. In contrast, the scope of a typical remote access VPN is all locations, protocols, and ports of the entire on-premises network. | Cloud Network Architect | [Remote access to on-premises applications through Microsoft Entra application proxy](/azure/active-directory/app-proxy/application-proxy) |
 
 
 After completing these deployment objectives, you will have built out the **Apps** section of the Zero Trust architecture.
@@ -191,4 +191,3 @@ After completing these deployment objectives, you will have built out the **Netw
 ## Next step
 
 Continue the user access and productivity initiative with [Data, Compliance, and Governance](data-compliance-governance-overview.md).
-

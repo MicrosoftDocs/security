@@ -22,7 +22,7 @@ The article provides an overview of security controls to provide a secure workst
 
 ![Workflow to acquire and deploy a secure workstation](./media/privileged-access-devices/secure-workstation-deployment-flow.png)
 
-This solution relies on core security capabilities in the Windows 10 operating system, Microsoft Defender for Endpoint, Azure Active Directory, and Microsoft InTune.
+This solution relies on core security capabilities in the Windows 10 operating system, Microsoft Defender for Endpoint, Microsoft Entra ID, and Microsoft InTune.
 
 ## Who benefits from a secure workstation?
 

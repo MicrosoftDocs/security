@@ -31,8 +31,8 @@ The following table is a summary of the prerequisites required to ingest key Azu
 
 | Resource Type                              | Installation Method              | Role/Permissions/License Needed                                                                                    |
 |--------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Azure Active Directory                     | Native Data connector            | Security Admin/Global Admin<br><br>Sign-in Logs require Azure AD P1 or P2 license<br>Other logs don't require P1/P2      |
-| Azure Active Directory Identity Protection | Native Data Connector            | Security Admin/Global Admin<br><br>License: Azure AD Premium P2                                                          |
+| Microsoft Entra ID                     | Native Data connector            | Security Admin/Global Admin<br><br>Sign-in Logs require Microsoft Entra ID P1 or P2 license<br>Other logs don't require P1 or P2      |
+| Microsoft Entra ID Protection | Native Data Connector            | Security Admin/Global Admin<br><br>License: Microsoft Entra ID P2                                                          |
 | Azure Activity                             | Azure Policy                     | Owner role required on subscriptions                                  
 | Microsoft 365 Defender                     | Native Data Connector            | Security Admin/Global Admin<br><br>License: Microsoft 365 E5, Microsoft 365 A5 or any other Microsoft 365 Defender eligible license
 | Microsoft Defender for Cloud               | Native Data Connector            | Security Reader<br><br>To enable bi-directional sync, Contributor/Security Admin role is required on the subscription. |
@@ -45,7 +45,7 @@ The following table is a summary of the prerequisites required to ingest key Azu
 | Windows Security Events through Azure Monitor Agent (AMA)            | Native Data Connector with Agent | Read/Write on Log Analytics Workspace                                                                                               |
 | Syslog                                     | Native Data Connector with Agent | Read/Write Log Analytics Workspace                                                                                               |
 
-## Step 1. Turn on data connectors
+## Step 1: Turn on data connectors
 
 Use the following recommendations to get started with configuring data connectors:
 
@@ -61,7 +61,7 @@ Use the following recommendations to get started with configuring data connector
         2.  Incident investigation starts in Sentinel and should continue in the Microsoft 365 Defender portal or Defender for Cloud, if deeper analysis is required.
 
         >[!NOTE]
-        >If you have enabled the Microsoft 365 Defender connector, a bi-directional sync between 365 Defender Incidents and Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft 365 Defender-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Azure Active Directory Identity Protection). For more information, see [Microsoft 365 Defender incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
+        >If you have enabled the Microsoft 365 Defender connector, a bi-directional sync between 365 Defender Incidents and Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft 365 Defender-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection). For more information, see [Microsoft 365 Defender incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
 
     4.  Microsoft Defender for Cloud Apps Alerts.
 
@@ -75,7 +75,7 @@ Use the following recommendations to get started with configuring data connector
     | **Microsoft Sentinel data connector** | **Free data type**                      |
     |---------------------------------------|-----------------------------------------|
     | Azure Activity Logs                   | AzureActivity                           |
-    | Azure AD Identity Protection          | SecurityAlert (IPC)                     |
+    | Microsoft Entra ID Protection          | SecurityAlert (IPC)                     |
     | Office 365                            | OfficeActivity (SharePoint)  <br> OfficeActivity (Exchange) <br>  OfficeActivity (Teams)           |
     | Microsoft Defender for Cloud          | SecurityAlert (Defender for Cloud)      |
     | Microsoft Defender for IoT            | SecurityAlert (Defender for IoT)        |
@@ -91,7 +91,7 @@ Use the following recommendations to get started with configuring data connector
     >[!NOTE]
     >There is a charge for ingesting data from the sources listed in the section
 
-    - Azure Active Directory
+    - Microsoft Entra ID
     - Microsoft 365 Defender connector
            
         -  Send Microsoft 365 Defender logs to Sentinel, if any of the following are required:
@@ -133,14 +133,14 @@ Use the following recommendations to get started with configuring data connector
 
 6.  Search in content hub for other devices, Software as a service (SaaS) apps that require logs to be sent to Sentinel. For more information, see [Discover and manage Microsoft Sentinel out-of-the-box content ](/azure/sentinel/sentinel-solutions-deploy).
 
-## Step 2. Enable User Entity Behavior Analytics 
+## Step 2: Enable User Entity Behavior Analytics 
 
 After setting up data connectors in Sentinel, make sure to enable [User Entity Behavior Analysis](/azure/sentinel/identify-threats-with-entity-behavior-analytics) to identify suspicious behavior  that could lead to phishing exploits and eventually attacks such as ransomware. Often, anomaly detection through UEBA is the best method for detecting Zero-day exploits early on. 
 
 Data Sources required:
 
 -   Active Directory logs (Microsoft Defender for Identity)
--   Azure Active Directory
+-   Microsoft Entra ID
     -   Audit Logs
     -   Azure Activity
 -   Security Events
@@ -148,18 +148,18 @@ Data Sources required:
 
 Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organization's entities across time and peer group to identify anomalous activity. This added utility aids in an expedition of determining if an asset has been compromised. Since it identifies peer group association this can also aid in determining the blast radius of said compromise.
 
-## Step 3. Enable Analytic Rules
+## Step 3: Enable Analytic Rules
 
 The brains of Sentinel come from the Analytic Rules. These are rules you set to tell Sentinel to alert you to events with a set of conditions that you consider to be important. The out-of-the-box decisions Sentinel makes are based on User Entity Behavioral Analytics (UEBA) and on correlations of data across multiple data sources. 
 
 >[!NOTE]
->If you have enabled the Microsoft 365 Defender connector, a bi-directional sync between 365 Defender Incidents and Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft 365 Defender-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Azure Active Directory Identity Protection). For more information, see [Microsoft 365 Defender incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
+>If you have enabled the Microsoft 365 Defender connector, a bi-directional sync between 365 Defender Incidents and Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft 365 Defender-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection). For more information, see [Microsoft 365 Defender incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
 
 Microsoft Sentinel enables the Fusion Advanced multistage attack detection analytic rule by default to automatically identify multistage attacks. Leveraging anomalous behavior and suspicious activity events observed across the cyber kill chain, Microsoft Sentinel generates incidents that allow you to see the compromise incidents with two or more alert activities in it with a high degree of confidence.
 
 Fusion alert technology correlates broad points of data signals with extended machine learning (ML) analysis to help determine known, unknown and emerging threats. For example, Fusion detection can take the Anomaly Rule templates and the scheduled queries created for the [Ransomware scenario](/azure/sentinel/fusion#fusion-for-ransomware) and pair them with alerts from Microsoft Security Suite products: 
 
--   Azure Active Directory Identity Protection
+-   Microsoft Entra ID Protection
 -   Microsoft Defender for Cloud
 -   Microsoft Defender for IoT
 -   Microsoft 365 Defender

@@ -303,10 +303,10 @@ You can use the following two methods to investigate application consent grants:
 
 ### Method 1 – Using the Azure portal
 
-You can use the Azure Active Directory portal to find applications to which any individual user has granted permissions.
+You can use the Microsoft Entra admin center to find applications to which any individual user has granted permissions.
 
 1. Sign in to the **Azure portal** as an administrator.
-2. Select the **Azure Active Directory** icon.
+2. Select the **Microsoft Entra ID** icon.
 3. Select **Users**.
 4. Select the user that you want to review.
 5. Select **Applications**.
@@ -337,7 +337,7 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
     Get-AzureADPSPermissions.ps1 | Export-csv c:\temp\consentgrants\Permissions.csv -NoTypeInformation
     ```
 
-4. Once the script completes, it is recommended to disconnect the Azure AD session with this command.
+4. Once the script completes, it is recommended to disconnect the Microsoft Entra session with this command.
 
     ```powershell
      Disconnect-AzureAD
@@ -393,7 +393,7 @@ Here are some useful tips to review information security policy (ISP) investigat
 
 While [each attack tends to vary, the core attack techniques are](https://attack.mitre.org/techniques/T1550/001/):
 
-- An attacker registers an app with an OAuth 2.0 provider, such as Azure AD.
+- An attacker registers an app with an OAuth 2.0 provider, such as Microsoft Entra ID.
 - The app is configured in a way that makes it seem legitimate. For example, attackers might use the name of a popular product available in the same ecosystem.
 - The attacker gets a link directly from users, which may be done through conventional email-based phishing, by compromising a non-malicious website, or through other techniques.
 - The user selects the link and is shown an authentic consent prompt asking them to grant the malicious app permissions to data.
@@ -431,18 +431,18 @@ If you have one or more instances of the IOCs listed above, you need to do furth
 
 ### Inventory apps with access in your organization
 
-You can inventory apps for your users using the Azure Active Directory portal, PowerShell, or have your users individually enumerate their application access.
+You can inventory apps for your users using the Microsoft Entra admin center, PowerShell, or have your users individually enumerate their application access.
 
-- Use the Azure Active Directory portal to inventory applications and their permissions. This method is thorough, but you can only check one user at a time, which can be time-consuming if you have to check the permissions of several users.
+- Use the Microsoft Entra admin center to inventory applications and their permissions. This method is thorough, but you can only check one user at a time, which can be time-consuming if you have to check the permissions of several users.
 - Use PowerShell to inventory applications and their permissions. This method is the fastest and most thorough, with the least amount of overhead.
 - Encourage your users to individually check their apps and permissions and report the results back to the administrators for remediation.
 
 #### Inventory apps assigned to users
 
-You can use the Azure Active Directory portal to see the list of apps to which any individual user has granted permissions.
+You can use the Microsoft Entra admin center to see the list of apps to which any individual user has granted permissions.
 
 1. Sign in to the **Azure Portal** with administrative rights.
-2. Select the **Azure Active Directory** icon.
+2. Select the **Microsoft Entra ID** icon.
 3. Select **Users**.
 4. Select the user that you want to review.
 5. Select **Applications**.
@@ -470,7 +470,7 @@ If your organization has the appropriate license:
 
 After you have identified an application with illicit permissions, **immediately disable the application** following the instructions in [Disable an application](/azure/active-directory/manage-apps/disable-user-sign-in-portal). Then, contact Microsoft Support to report the malicious application.
 
-Once an application has been disabled in your Azure AD tenant, it cannot obtain new tokens to access data, and other users will not be able to sign in to or grant consent to the app.
+Once an application has been disabled in your Microsoft Entra tenant, it cannot obtain new tokens to access data, and other users will not be able to sign in to or grant consent to the app.
 
 > [!NOTE]
 > If you suspect you have encountered a malicious application in your organization, it is better to disable it than to delete it. If you only delete the application, it might return later if another user grants consent. Instead, disable the application to ensure it can't come back later.
@@ -481,7 +481,7 @@ Once an application has been disabled in your Azure AD tenant, it cannot obtain 
 
 There are various consent attack types, but if you follow these recommended defenses, which will mitigate all types of attacks, especially consent phishing, where attackers trick users into granting a malicious app access to sensitive data or other resources. Instead of trying to steal the user's password, an attacker is seeking permission for an attacker-controlled app to access valuable data.
 
-To help prevent consent attacks from affecting Azure AD and Office 365, see the following recommendations:
+To help prevent consent attacks from affecting Microsoft Entra ID and Office 365, see the following recommendations:
 
 ### Set policies
 
@@ -503,7 +503,7 @@ To help prevent consent attacks from affecting Azure AD and Office 365, see the 
 :::image type="content" source="./media/incident-response-playbook-app-consent/consentpermissions.png" alt-text="consent":::
 
 **Educate your application developers to follow the trustworthy app ecosystem.**
-To help developers build high-quality and secure integrations, we're also announcing [public preview of the Integration Assistant in Azure AD app registrations.](/azure/active-directory/develop/identity-platform-integration-checklist)
+To help developers build high-quality and secure integrations, we're also announcing [public preview of the Integration Assistant in Microsoft Entra app registrations.](/azure/active-directory/develop/identity-platform-integration-checklist)
 
 - The Integration Assistant analyzes your app registration and benchmarks it against a set of recommended security best practices.
 - The Integration Assistant highlights best practices that are relevant during each phase of your integration's lifecycle—from development all the way to monitoring—and ensures every stage is properly configured.
@@ -540,15 +540,15 @@ The source of the content for this article is the following:
 - [Fostering a secure and trustworthy app ecosystem](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/build-2020-fostering-a-secure-and-trustworthy-app-ecosystem-for/ba-p/1257360)
 - [Investigate risky OAuth apps](/cloud-app-security/investigate-risky-oauth)
 - [Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests)
-- [Disable user sign-ins for an enterprise app in Azure Active Directory](/azure/active-directory/manage-apps/disable-user-sign-in-portal)
+- [Disable user sign-ins for an enterprise app in Microsoft Entra ID](/azure/active-directory/manage-apps/disable-user-sign-in-portal)
 - [Understand the permissions and consent framework in the Microsoft identity platform.](/azure/active-directory/develop/consent-framework)
 - [Understand the difference between delegated permissions and application permissions.](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)
 - [Configure how end-users consent to applications](/azure/active-directory/manage-apps/configure-user-consent)
 - [Unexpected application in my applications list](/azure/active-directory/manage-apps/application-types)
 - [Detect and Remediate Illicit Consent Grants](/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants)
-- [How and Why Azure AD Applications are Added](/azure/active-directory/develop/active-directory-how-applications-are-added)
-- [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
-- [Azure AD Config Documentor](https://github.com/microsoft/AADConnectConfigDocumenter)
+- [How and Why Microsoft Entra Applications are Added](/azure/active-directory/develop/active-directory-how-applications-are-added)
+- [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals)
+- [Microsoft Entra Config Documentor](https://github.com/microsoft/AADConnectConfigDocumenter)
 - [Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests)
 - [Get-AzureADServicePrincipal](/powershell/module/azuread/get-azureadserviceprincipal)
 - [Build 2020: Fostering a secure and trustworthy app ecosystem for all users](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/build-2020-fostering-a-secure-and-trustworthy-app-ecosystem-for/ba-p/1257360)

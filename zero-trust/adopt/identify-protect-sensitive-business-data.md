@@ -91,7 +91,7 @@ The following table provides suggested objectives and outcomes.
 | --- | --- |
 | Productivity | Users can easily collaborate on creating business data or perform their job functions by using business data. |
 | Safe access | Access to data and apps is secured at the appropriate level. Highly sensitive data requires stricter safeguards, but these protections shouldn't burden users who are expected to contribute to or use this data. <br><br> Sensitive business data is limited to those in need of using it and you've put controls in place to limit or discourage users from sharing or replicating this data outside the intended usage group. |
-| Support end users | Controls for securing data have been integrated into the overall Zero Trust architecture. These controls include single sign-on, multifactor authentication (MFA), and Azure Active Directory (Azure AD) Conditional Access, so that users aren't continually challenged with authentication and authorization requests. <br><br> Users receive training on how to classify and share data securely. Users are enabled to take control of their important data, allowing them to revoke access in case of need, or track usage of the information after it has been shared. <br><br> Data protection policies are automated where possible to lessen the burden on users. |
+| Support end users | Controls for securing data have been integrated into the overall Zero Trust architecture. These controls include single sign-on, multifactor authentication (MFA), and Microsoft Entra Conditional Access, so that users aren't continually challenged with authentication and authorization requests. <br><br> Users receive training on how to classify and share data securely. Users are enabled to take control of their important data, allowing them to revoke access in case of need, or track usage of the information after it has been shared. <br><br> Data protection policies are automated where possible to lessen the burden on users. |
 | Increase security | The addition of data protection across the digital estate protects these critical business assets and helps reduce the potential damage from a data breach. <br><br> Data protections include safeguards to protect against intentional, unintentional, or negligent data breaches by current or former employees and partners. |
 | Empower IT | Your IT team is empowered with a clear understanding of what qualifies as sensitive business data. They have a well-reasoned schema to align with and the technology tools and capabilities to both implement the plans and monitor status and success. |
 
@@ -107,7 +107,7 @@ Technical adoption for identifying and protecting sensitive business data involv
 
 - Discovering and identifying sensitive data across your digital estate.
 - Curating a classification and protection schema, including DLP.
-- Rolling out the schema across your digital estate, starting with data in Microsoft 365 and extending the protection to all SaaS apps, your cloud infrastructure, and data in on-premises repositories. SaaS apps are apps that are outside your Microsoft 365 subscription but are integrated with your Azure AD tenant.
+- Rolling out the schema across your digital estate, starting with data in Microsoft 365 and extending the protection to all SaaS apps, your cloud infrastructure, and data in on-premises repositories. SaaS apps are apps that are outside your Microsoft 365 subscription but are integrated with your Microsoft Entra tenant.
 
 Protecting your sensitive business data also involves a few related activities, including:
 
@@ -222,13 +222,13 @@ The following table lists resources for discovering sensitive business data.
 
 Your organization likely subscribes to many SaaS apps, such as Salesforce or apps that are specific to your industry. The SaaS apps that you know about and manage are considered sanctioned. In later stages, you extend the data protection schema and DLP policies you create with Microsoft 365 to protect data in these sanctioned SaaS apps.
 
-However, at this stage it’s important to discover non-sanctioned SaaS apps that your organization is using. This enables you to monitor traffic to and from these apps to determine if your organization’s business data is being shared to these apps. If so, you can bring these apps into management and apply protection to this data, starting with enabling single sign-on with Azure AD. 
+However, at this stage it’s important to discover non-sanctioned SaaS apps that your organization is using. This enables you to monitor traffic to and from these apps to determine if your organization’s business data is being shared to these apps. If so, you can bring these apps into management and apply protection to this data, starting with enabling single sign-on with Microsoft Entra ID. 
 
 The tool for discovering SaaS apps that your organization uses is Microsoft Defender for Cloud Apps.
 
 | Resource | Description |
 | --- | --- |
-| [Integrate SaaS apps for Zero Trust with Microsoft 365](/security/zero-trust/integrate-saas-apps) | This solution guide walks through the process of protecting SaaS apps with Zero Trust principles. The first step in this solution includes adding your SaaS apps to Azure AD and to the scopes of policies. This should be a priority. |
+| [Integrate SaaS apps for Zero Trust with Microsoft 365](/security/zero-trust/integrate-saas-apps) | This solution guide walks through the process of protecting SaaS apps with Zero Trust principles. The first step in this solution includes adding your SaaS apps to Microsoft Entra ID and to the scopes of policies. This should be a priority. |
 | [Evaluate Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-overview) | This guide helps you get Microsoft Defender for Cloud Apps up and running as quickly as possible. You can discover unsanctioned SaaS apps as early as the trial and pilot phases. |
 
 ##### Encrypt network communication

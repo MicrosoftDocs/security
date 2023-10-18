@@ -38,7 +38,7 @@ This article provides guidance on identifying and investigating malicious attack
 
 Before starting the investigation, make sure you have the correct tools and permissions to gather detailed information.
 
-- To leverage Identity protection signals, the tenant must be licensed for Azure Active Directory (Azure AD) Premium P2.
+- To leverage Identity protection signals, the tenant must be licensed for Microsoft Entra ID P2.
   - Understanding of the [Identity Protection risk concepts](/azure/active-directory/identity-protection/concept-identity-protection-risks)
   - Understanding of the [Identity Protection investigation concepts](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
 
@@ -54,7 +54,7 @@ Before starting the investigation, make sure you have the correct tools and perm
 
 - Familiarize yourself with the concepts of the [App Consent grant investigation](incident-response-playbook-app-consent.md) (part of https://aka.ms/IRPlaybooks).
 
-- Make sure you understand the following Azure AD permissions:
+- Make sure you understand the following Microsoft Entra permissions:
   - [Risky permissions](incident-response-playbook-app-consent.md#classifying-risky-permissions)
   - [Consent model and the Admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow)
 
@@ -64,7 +64,7 @@ Before starting the investigation, make sure you have the correct tools and perm
   - Understand the concepts of [anomaly detection alert investigation](/defender-cloud-apps/app-governance-anomaly-detection-alerts)  
 
 - Familiarize yourself with the following application management policies:
-  - [Azure AD application authentication methods API overview (preview)](/graph/api/resources/applicationauthenticationmethodpolicy)
+  - [Microsoft Entra application authentication methods API overview (preview)](/graph/api/resources/applicationauthenticationmethodpolicy)
   - [appManagementPolicy resource type](/graph/api/resources/appmanagementpolicy)
 
 - Familiarize yourself with the following app governance policies:
@@ -75,8 +75,8 @@ Before starting the investigation, make sure you have the correct tools and perm
 
 For an effective investigation, install the following PowerShell module and the toolkit on your investigation machine:
 
-- [Azure AD Incident Response PowerShell Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
-- [Azure AD Toolkit](https://github.com/microsoft/AzureADToolkit)
+- [Microsoft Entra Incident Response PowerShell Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
+- [Microsoft Entra Toolkit](https://github.com/microsoft/AzureADToolkit)
 
 ## Workflow
 
@@ -84,13 +84,13 @@ For an effective investigation, install the following PowerShell module and the 
 
 ## Investigation steps
 
-For this investigation, it's assumed that you either have an indication for a potential application compromise in the form of a user report, Azure AD sign-in logs example, or Identity protection detection. Make sure to complete and enable all required prerequisite steps.
+For this investigation, it's assumed that you either have an indication for a potential application compromise in the form of a user report, Microsoft Entra sign-in logs example, or Identity protection detection. Make sure to complete and enable all required prerequisite steps.
 
-This playbook is created with the intention that not all Microsoft customers and their investigation teams have the full Microsoft 365 E5 or Azure AD Premium P2 license suite available or configured. We'll however highlight other automation capabilities when appropriate.
+This playbook is created with the intention that not all Microsoft customers and their investigation teams have the full Microsoft 365 E5 or Microsoft Entra ID P2 license suite available or configured. We'll however highlight other automation capabilities when appropriate.
 
 ### Determine application type
 
-It's important to determine the type of application (multi or single tenant) early in the investigation phase to get the correct information needed to reach out to the application owner. For more information, see [Tenancy in Azure Active Directory](/azure/active-directory/develop/single-and-multi-tenant-apps).
+It's important to determine the type of application (multi or single tenant) early in the investigation phase to get the correct information needed to reach out to the application owner. For more information, see [Tenancy in Microsoft Entra ID](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
 #### Multi-tenant applications
 
@@ -181,7 +181,7 @@ Also, if you have deployed Microsoft Defender for Cloud Apps, check the Azure po
 
 Review your tenant for potential keyCredential property information disclosure as outlined in [CVE-2021-42306](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42306).
 
-To identify and remediate impacted Azure AD applications associated with impacted Automation Run-As accounts, please navigate to the [remediation guidance GitHub Repo](https://github.com/microsoft/aad-app-credential-tools/blob/main/azure-automation/azure-automation-runas-credential-remediation.md). 
+To identify and remediate impacted Microsoft Entra applications associated with impacted Automation Run-As accounts, please navigate to the [remediation guidance GitHub Repo](https://github.com/microsoft/aad-app-credential-tools/blob/main/azure-automation/azure-automation-runas-credential-remediation.md). 
 
 >[!Important]
 >**Evidence of compromise:**
@@ -212,7 +212,7 @@ To get an application added to a tenant, attackers spoof users or admins to cons
 
 To see all consent grants for that application, filter **Activity** by **Consent to application**. 
 
-- Use the Azure AD Portal Audit Logs
+- Use the Microsoft Entra admin center Audit Logs
 
 - Use Microsoft Graph to query the Audit logs
 
@@ -289,7 +289,7 @@ AuditLogs
 
 #### Check Audit logs to find whether the permissions granted are too broad (tenant-wide or admin-consented)
 
-Reviewing the permissions granted to an application or Service Principal can be a time-consuming task. Start with understanding the potentially [risky permissions](incident-response-playbook-app-consent.md#classifying-risky-permissions) in Azure AD.
+Reviewing the permissions granted to an application or Service Principal can be a time-consuming task. Start with understanding the potentially [risky permissions](incident-response-playbook-app-consent.md#classifying-risky-permissions) in Microsoft Entra ID.
 
 Now, follow the guidance on how to enumerate and review permissions in the [App consent grant investigation](incident-response-playbook-app-consent.md#method-2---using-powershell).
 
@@ -303,9 +303,9 @@ AuditLogs
 //| where parse_json(tostring(TargetResources[0].modifiedProperties))[4].displayName == "ConsentAction.Permissions"
 ```
 
-You can also use the Azure AD Audit logs, filter by **Consent to application**. In the Audit Log details section, click **Modified Properties**, and then review the **ConsentAction.Permissions**:
+You can also use the Microsoft Entra audit logs, filter by **Consent to application**. In the Audit Log details section, click **Modified Properties**, and then review the **ConsentAction.Permissions**:
 
-:::image type="content" source="./media/compromised-malicious-apps/AuditLogDetails-ConsentPermissions.png" alt-text="Use the Azure AD Audit Logs":::
+:::image type="content" source="./media/compromised-malicious-apps/AuditLogDetails-ConsentPermissions.png" alt-text="Use the Microsoft Entra audit logs":::
 
 ## Containment steps
 
@@ -402,7 +402,7 @@ Remediate KeyVault secrets that the Service Principal has access to by rotating 
 
 For more information, see [Interactively removing and rolling over the certificates and secrets of a Service Principal or Application](https://github.com/microsoft/azureadtoolkit#interactively-removing-and-rolling-over-the-certificates-and-secrets-of-a-service-principal-or-application).
 
- For Azure AD SecOps guidance on applications, see [Azure Active Directory security operations guide for Applications](/azure/active-directory/fundamentals/security-operations-applications).
+ For Microsoft Entra SecOps guidance on applications, see [Microsoft Entra security operations guide for Applications](/azure/active-directory/fundamentals/security-operations-applications).
 
 In order of priority, this scenario would be:
 
@@ -425,7 +425,7 @@ To permanently delete the application, use this Microsoft Graph API call:
 DELETE /directory/deletedItems/{id}
 ```
 
-If you disable or if you soft delete the application, set up monitoring in Azure AD Audit logs to learn if the state changes back to enabled or recovered.
+If you disable or if you soft delete the application, set up monitoring in Microsoft Entra audit logs to learn if the state changes back to enabled or recovered.
 
 **Logging for enabled:**
 
@@ -469,7 +469,7 @@ For more information, see [Conditional Access for workload identities](/azure/ac
 
 #### Review user consent settings
 
-Review the user consent settings under **Azure Active Directory** > **Enterprise applications** > **Consent and permissions** > **User consent settings**.
+Review the user consent settings under **Microsoft Entra ID** > **Enterprise applications** > **Consent and permissions** > **User consent settings**.
 
 :::image type="content" source="./media/compromised-malicious-apps/UserConsentSettings.png" alt-text="Select Allow user consent for apps from the options":::
 
@@ -493,8 +493,8 @@ Make sure it is enabled in your tenant and review the configuration settings out
 
 - [Incident Response Playbooks](incident-response-playbooks.md)
 - [App consent grant](incident-response-playbook-app-consent.md)
-- [Azure AD Identity Protection risks](/azure/active-directory/identity-protection/concept-identity-protection-risks)
-- [Azure AD security monitoring guide](/azure/active-directory/fundamentals/security-operations-introduction)
+- [Microsoft Entra ID Protection risks](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+- [Microsoft Entra security monitoring guide](/azure/active-directory/fundamentals/security-operations-introduction)
 - [Application auditing concepts](/azure/active-directory/fundamentals/security-operations-applications)
 - [Configure how users consent to applications](/azure/active-directory/manage-apps/configure-user-consent)
 - [Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow)

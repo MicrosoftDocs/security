@@ -26,17 +26,21 @@ The concepts covered in this guide assume you have Microsoft 365 Enterprise E5 o
 
 To automate license provisioning, consider [group-based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign) for your users.
 
-## Azure Active Directory configuration
+<a name='azure-active-directory-configuration'></a>
 
-Azure Active Directory (Azure AD) manages users, groups, and devices for your administrator workstations. Enable identity services and features with an [administrator account](/azure/active-directory/roles/permissions-reference).
+## Microsoft Entra configuration
+
+Microsoft Entra ID manages users, groups, and devices for your administrator workstations. Enable identity services and features with an [administrator account](/azure/active-directory/roles/permissions-reference).
 
 When you create the secured workstation administrator account, you expose the account to your current workstation. Make sure you use a known safe device to do this initial configuration and all global configuration. To reduce the attack exposure for the first-time experience, consider following the [guidance to prevent malware infections](/windows/security/threat-protection/intelligence/prevent-malware-infection).
 
 Require multi-factor authentication, at least for your administrators. See [Conditional Access: Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) for implementation guidance.
 
-### Azure AD users and groups
+<a name='azure-ad-users-and-groups'></a>
 
-1. From the Azure portal, browse to **Azure Active Directory** > **Users** > **New user**.
+### Microsoft Entra users and groups
+
+1. From the Azure portal, browse to **Microsoft Entra ID** > **Users** > **New user**.
 1. Create your device user by following the steps in the [create user tutorial](/Intune/quickstart-create-user).
 1. Enter:
    * **Name** - Secure Workstation Administrator
@@ -59,7 +63,7 @@ Create your device administrator user.
 
 Next, you create four groups: **Secure Workstation Users**, **Secure Workstation Admins**, **Emergency BreakGlass** and **Secure Workstation Devices**.
 
-From the Azure portal, browse to **Azure Active Directory** > **Groups** > **New group**.
+From the Azure portal, browse to **Microsoft Entra ID** > **Groups** > **New group**.
 
 1. For the workstation users group, you might want to configure [group-based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign) to automate provisioning of licenses to users.
 1. For the workstation users group, enter:
@@ -97,29 +101,33 @@ From the Azure portal, browse to **Azure Active Directory** > **Groups** > **New
 
 1. Select **Create**.
 
-### Azure AD device configuration
+<a name='azure-ad-device-configuration'></a>
 
-#### Specify who can join devices to Azure AD
+### Microsoft Entra device configuration
+
+<a name='specify-who-can-join-devices-to-azure-ad'></a>
+
+#### Specify who can join devices to Microsoft Entra ID
 
 Configure your devices setting in Active Directory to allow your administrative security group to join devices to your domain. To configure this setting from the Azure portal:
 
-1. Go to **Azure Active Directory** > **Devices** > **Device settings**.
-1. Choose **Selected** under **Users may join devices to Azure AD**, and then select the "Secure Workstation Users" group.
+1. Go to **Microsoft Entra ID** > **Devices** > **Device settings**.
+1. Choose **Selected** under **Users may join devices to Microsoft Entra ID**, and then select the "Secure Workstation Users" group.
 
 #### Remove local admin rights
 
 This method requires that users of the VIP, DevOps, and Privileged workstations have no administrator rights on their machines. To configure this setting from the Azure portal:
 
-1. Go to **Azure Active Directory** > **Devices** > **Device settings**.
-1. Select **None** under **Additional local administrators on Azure AD joined devices**.
+1. Go to **Microsoft Entra ID** > **Devices** > **Device settings**.
+1. Select **None** under **Additional local administrators on Microsoft Entra joined devices**.
 
-Refer to [How to manage the local administrators group on Azure AD joined devices](/azure/active-directory/devices/assign-local-admin) for details on how to manage members of the local administrators group.
+Refer to [How to manage the local administrators group on Microsoft Entra joined devices](/azure/active-directory/devices/assign-local-admin) for details on how to manage members of the local administrators group.
 
 #### Require multi-factor authentication to join devices
 
-To further strengthen the process of joining devices to Azure AD:
+To further strengthen the process of joining devices to Microsoft Entra ID:
 
-1. Go to **Azure Active Directory** > **Devices** > **Device settings**.
+1. Go to **Microsoft Entra ID** > **Devices** > **Device settings**.
 1. Select **Yes** under **Require Multi-Factor Auth to join devices**.
 1. Select **Save**.
 
@@ -127,15 +135,17 @@ To further strengthen the process of joining devices to Azure AD:
 
 From the Azure portal:
 
-1. Browse to **Azure Active Directory** > **Mobility (MDM and MAM)** > **Microsoft Intune**.
+1. Browse to **Microsoft Entra ID** > **Mobility (MDM and MAM)** > **Microsoft Intune**.
 1. Change the **MDM user scope** setting to **All**.
 1. Select **Save**.
 
 These steps allow you to manage any device with Microsoft Endpoint Manager. For more information, see [Intune Quickstart: Set up automatic enrollment for Windows 10 devices](/Intune/quickstart-setup-auto-enrollment). You create Intune configuration and compliance policies in a future step.
 
-### Azure AD Conditional Access
+<a name='azure-ad-conditional-access'></a>
 
-Azure AD Conditional Access can help restrict privileged administrative tasks to compliant devices. Predefined members of the **Secure Workstation Users** group are required to perform multi-factor authentication when signing in to cloud applications. A best practice is to exclude emergency access accounts from the policy. For more information, see [Manage emergency access accounts in Azure AD](/azure/active-directory/roles/security-emergency-access).
+### Microsoft Entra Conditional Access
+
+Microsoft Entra Conditional Access can help restrict privileged administrative tasks to compliant devices. Predefined members of the **Secure Workstation Users** group are required to perform multi-factor authentication when signing in to cloud applications. A best practice is to exclude emergency access accounts from the policy. For more information, see [Manage emergency access accounts in Microsoft Entra ID](/azure/active-directory/roles/security-emergency-access).
 
 #### Conditional Access only allowing secured workstation ability to access Azure portal
 
@@ -148,7 +158,7 @@ To block unauthorized devices from being able to access cloud management interfa
 
 This policy set will ensure that your Administrators must use a device that is able to present a specific device attribute value, that MFA is satisfied, and the device is marked as compliant by Microsoft Endpoint Manager and Microsoft Defender for Endpoint.
 
-Organizations should also consider blocking legacy authentication protocols in their environments. There are multiple ways to accomplish this task, for more information about blocking legacy authentication protocols, see the article, [How to: Block legacy authentication to Azure AD with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).
+Organizations should also consider blocking legacy authentication protocols in their environments. There are multiple ways to accomplish this task, for more information about blocking legacy authentication protocols, see the article, [How to: Block legacy authentication to Microsoft Entra ID with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).
 
 ## Microsoft Intune configuration
 
@@ -178,7 +188,7 @@ After creating a device group, you must create a deployment profile to configure
 1. Select **Next**.
 
    * For **Deployment mode**, choose [**Self-Deploying (Preview)**](/mem/autopilot/self-deploying). Devices with this profile are associated with the user who enrolls the device. During the deployment, it is advisable to use the Self-Deployment mode features to include:
-      * Enrolls the device in Intune Azure AD automatic MDM enrollment, and only allow for a device to be accessed until all policies, applications, certificates, and networking profiles are provisioned on the device.
+      * Enrolls the device in Intune Microsoft Entra automatic MDM enrollment, and only allow for a device to be accessed until all policies, applications, certificates, and networking profiles are provisioned on the device.
       * User credentials are required to enroll the device. It's essential to note that deploying a device in the **Self-Deploying** mode will allow you to deploy laptops in a shared model. No user assignment will happen until the device is assigned to a user for the first time. As a result, any user policies such as BitLocker will not be enabled until a user assignment is completed. For more information about how to log on to a secured device, see [selected profiles](/intune/device-profile-assign). 
    * Select your Language (Region), User account type **standard**. 
 
@@ -351,7 +361,7 @@ Restrictive URL traffic management includes:
 "AutoDetect"=dword:00000000
 ```
 
-The endpoints listed in the ProxyOverride list are limited to those endpoints needed to authenticate to Azure AD and access Azure or Office 365 management interfaces.  To extend to other cloud services, add their administration URL to the list. This approach is designed to limit access to the wider internet to protect privileged users from internet-based attacks. If this approach is deemed too restrictive, then consider using the approach described below for the privileged role.
+The endpoints listed in the ProxyOverride list are limited to those endpoints needed to authenticate to Microsoft Entra ID and access Azure or Office 365 management interfaces.  To extend to other cloud services, add their administration URL to the list. This approach is designed to limit access to the wider internet to protect privileged users from internet-based attacks. If this approach is deemed too restrictive, then consider using the approach described below for the privileged role.
 
 ## Enable Microsoft Defender for Cloud Apps, URLs restricted list to approved URLs (Allow most)
 

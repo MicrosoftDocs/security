@@ -67,7 +67,7 @@ The security levels used throughout this strategy are:
 
    Privileged access security roles typically include:
 
-   - Azure AD Global Administrators and [related roles](/azure/active-directory/roles/permissions-reference)
+   - Microsoft Entra Global Administrators and [related roles](/azure/active-directory/roles/permissions-reference)
    - Other identity management roles with administrative rights to an enterprise directory, identity synchronization systems, federation solution, virtual directory, privileged identity/access management system, or similar.  
    - Roles with membership in these on-premises Active Directory groups
       - Enterprise Admins

@@ -55,7 +55,7 @@ accounts with privileged access.
 -   [Securing Privileged Access (SPA) roadmap for administrators of on premises
     Active Directory](https://aka.ms/SPARoadmap)
 
--   [Guidance for securing administrators of Azure Active Directory](https://aka.ms/securitysteps)
+-   [Guidance for securing administrators of Microsoft Entra ID](https://aka.ms/securitysteps)
 
 ## Minimize number of critical impact admins
 
@@ -119,7 +119,7 @@ being detected and removed from the environment).
 
 Grant privileges required only as required using one of these methods:
 
--   **Just in Time -** Enable Azure AD Privileged Identity Management (PIM) or a
+-   **Just in Time -** Enable Microsoft Entra Privileged Identity Management (PIM) or a
     third party solution to require following an approval workflow to obtain
     privileges for critical impact accounts
 
@@ -136,7 +136,7 @@ emergency
 While rare, sometimes extreme circumstances arise where all normal means of
 administrative access are unavailable.
 
-We recommend following the instructions at [Managing emergency access administrative accounts in Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access)
+We recommend following the instructions at [Managing emergency access administrative accounts in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-emergency-access)
 and ensure that security operations monitor these accounts carefully.
 
 ## Admin workstation security
@@ -188,7 +188,7 @@ security dependencies for critical impact accounts
 
 -   **User Accounts** – Choose where to host the critical impact accounts
 
-    -   Native Azure AD Accounts -*Create Native Azure AD Accounts that are
+    -   Native Microsoft Entra accounts -*Create Native Microsoft Entra accounts that are
         not synchronized with on-premises active directory
 
     -   Synchronize from on-premises Active Directory (Not Recommended)- Leverage existing accounts hosted in the on premises active directory.
@@ -197,7 +197,7 @@ security dependencies for critical impact accounts
     used by critical admin accounts:
 
     -  Native Cloud Management & Security (Recommended) - Join workstations
-        to Azure AD & Manage/Patch them with Intune or other cloud services.
+        to Microsoft Entra ID & Manage/Patch them with Intune or other cloud services.
         Protect and Monitor with Windows Microsoft Defender ATP or another cloud
         service not managed by on premises based accounts.
 
@@ -267,7 +267,7 @@ Instead of assigning specific resource-specific permissions, use either
 -   Resource groups for permissions within subscriptions
 
 Instead of granting permissions to specific users, assign access to groups in
-Azure AD. If there isn’t an appropriate group, work with the identity team to
+Microsoft Entra ID. If there isn’t an appropriate group, work with the identity team to
 create one. This allows you to add and remove group members externally to Azure
 and ensure permissions are current, while also allowing the group to be used for
 other purposes such as mailing lists.

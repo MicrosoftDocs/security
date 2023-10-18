@@ -1,4 +1,4 @@
-﻿---
+---
 title: Implement Microsoft Sentinel and Microsoft 365 Defender for Zero Trust
 description: Learn how to use Microsoft Sentinel with Microsoft 365 Defender and Microsoft Defender for Cloud, an XDR solution for Zero Trust
 author: mjcaparas
@@ -28,8 +28,8 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 | Zero Trust Principle | Met by|
 |--|:--|
 | Verify explicitly | Microsoft Sentinel collects data from across the environment, performs analysis of threats and anomalies, and can respond with automation. <br><br> Microsoft 365 Defender provides extended detection and response across users, identities, devices, apps, and emails. Risk-based signals captured by Microsoft 365 Defender can be used by Microsoft Sentinel to take actions. |
-| Use least privileged access | Microsoft Sentinel can detect anomalous activity through its User Entity Behavioral Analytics (UEBA) engine. <br><br>Threat Intelligence with Microsoft Sentinel can import threat intelligence data from Microsoft or third-party providers to detect new, emerging threats and provide extra context for investigations. <br><br> Microsoft 365 Defender has Azure Active Directory (Azure AD) Identity Protection, which can block users based on the level of risk with identity. Data can be fed into Microsoft Sentinel for further analysis and automation. |
-| Assume breach | Microsoft 365 Defender continuously scans the environment for threats and vulnerabilities. Microsoft Sentinel analyzes collected data, behavioral trend of entities to detect suspicious activity, anomalies and multi-stage threats across enterprise.<br><br> Microsoft Sentinel has workbook visualizations that can help organizations harden the environment, such as the [Zero Trust workbook](/azure/sentinel/sentinel-solution). <br><br>Microsoft 365 Defender and Sentinel can implement automated remediation tasks, including automated investigations, device isolation, and data quarantine. Device risk can be used as a signal to feed into Azure AD Conditional Access. |
+| Use least privileged access | Microsoft Sentinel can detect anomalous activity through its User Entity Behavioral Analytics (UEBA) engine. <br><br>Threat Intelligence with Microsoft Sentinel can import threat intelligence data from Microsoft or third-party providers to detect new, emerging threats and provide extra context for investigations. <br><br> Microsoft 365 Defender has Microsoft Entra ID Protection, which can block users based on the level of risk with identity. Data can be fed into Microsoft Sentinel for further analysis and automation. |
+| Assume breach | Microsoft 365 Defender continuously scans the environment for threats and vulnerabilities. Microsoft Sentinel analyzes collected data, behavioral trend of entities to detect suspicious activity, anomalies and multi-stage threats across enterprise.<br><br> Microsoft Sentinel has workbook visualizations that can help organizations harden the environment, such as the [Zero Trust workbook](/azure/sentinel/sentinel-solution). <br><br>Microsoft 365 Defender and Sentinel can implement automated remediation tasks, including automated investigations, device isolation, and data quarantine. Device risk can be used as a signal to feed into Microsoft Entra Conditional Access. |
 
 ## Microsoft Sentinel and XDR architecture
 
@@ -71,7 +71,7 @@ Here is a summary of the attack.
 | 1. Attacker sends phishing email  | Microsoft Defender for Office 365 | Protects mailboxes with advanced anti-phishing features that can protect against malicious impersonation-based phishing attacks. |
 | 2. User opens attachment | Microsoft Defender for Office 365 | The Microsoft Defender for Office 365 Safe Attachments feature opens attachments in an isolated environment for additional scanning of threats (detonation). |
 | 3. Attachment installs malware | Microsoft Defender for Endpoint | Protects endpoints from malware with its next generation protection features, such as cloud-delivered protection and behavior-based/heuristic/real-time antivirus protection. |
-| 4. Malware steals user credentials | Azure AD and Azure AD Identity Protection | Protects identities by monitoring user behavior and activities, detecting lateral movement, and alerting on anomalous activity. |
+| 4. Malware steals user credentials | Microsoft Entra ID and Microsoft Entra ID Protection | Protects identities by monitoring user behavior and activities, detecting lateral movement, and alerting on anomalous activity. |
 | 5. Attacker moves laterally across Microsoft 365 apps and data | Microsoft Defender for Cloud Apps | Can detect anomalous activity of users accessing cloud apps. |
 | 6. Attacker downloads sensitive files from a SharePoint folder | Microsoft Defender for Cloud Apps | Can detect and respond to mass download events of files from SharePoint. |
 

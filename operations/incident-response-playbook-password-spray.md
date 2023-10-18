@@ -40,13 +40,13 @@ This article contains the following sections:
 
 Before starting the investigation, make sure you have completed the setup for logs and alerts and additional system requirements.
 
-For Azure AD monitoring follow our recommendations and guidance in our [Azure AD SecOps Guide](/azure/active-directory/fundamentals/security-operations-introduction).
+For Microsoft Entra monitoring follow our recommendations and guidance in our [Microsoft Entra SecOps Guide](/azure/active-directory/fundamentals/security-operations-introduction).
 
 ### Set up [ADFS logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging)
 
 #### Event logging on ADFS 2016
 
-By default, the Microsoft Active Directory Federation Services (ADFS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request. Set logging to the highest level and send the AD FS (& security) logs to a SIEM to correlate with AD authentication as well as Azure AD.
+By default, the Microsoft Active Directory Federation Services (ADFS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request. Set logging to the highest level and send the AD FS (& security) logs to a SIEM to correlate with AD authentication as well as Microsoft Entra ID.
 
 To view the current auditing level, you can use this PowerShell command:
 
@@ -88,15 +88,17 @@ Set-AdfsProperties -AuditLevel <None | Basic | Verbose>
 9. Select the **Success audits** and **Failure audits** check boxes.
 10. Click **OK** to finish and save the configuration.
 
-### Install Azure AD Connect Health for ADFS
+<a name='install-azure-ad-connect-health-for-adfs'></a>
 
-The Azure Active Directory (Azure AD) Connect Health for ADFS agent allows you to have greater visibility into your federation environment. It provides you with several pre-configured dashboards like usage, performance monitoring as well as risky IP reports.
+### Install Microsoft Entra Connect Health for ADFS
 
-To install ADFS Connect Health, go through the [requirements for using Azure AD Connect Health](/azure/active-directory/hybrid/how-to-connect-health-agent-install#requirements), and then install the [Azure ADFS Connect Health Agent](https://go.microsoft.com/fwlink/?LinkID=518973).
+The Microsoft Entra Connect Health for ADFS agent allows you to have greater visibility into your federation environment. It provides you with several pre-configured dashboards like usage, performance monitoring as well as risky IP reports.
+
+To install ADFS Connect Health, go through the [requirements for using Microsoft Entra Connect Health](/azure/active-directory/hybrid/how-to-connect-health-agent-install#requirements), and then install the [Azure ADFS Connect Health Agent](https://go.microsoft.com/fwlink/?LinkID=518973).
 
 ### Set up risky IP alerts using the [ADFS Risky IP Report Workbook](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip-workbook#:~:text=The%20risky%20IP%20workbook%20analyzes%20data%20from%20ADFSSignInLogs,on%20designated%20error%20thresholds%20and%20detection%20window%20length.)
 
-After Azure AD Connect Health for ADFS is configured, you should monitor and set up alerting using the ADFS Risky IP report workbook and Azure Monitor. The benefits of using this report are:
+After Microsoft Entra Connect Health for ADFS is configured, you should monitor and set up alerting using the ADFS Risky IP report workbook and Azure Monitor. The benefits of using this report are:
 
 - Detection of IP addresses that exceed a threshold of failed password-based logins.
 - Supports failed logins due to bad password or due to extranet lockout state.
@@ -145,10 +147,10 @@ You can also:
 
 ### Investigation triggers
 
-- Received a trigger from SIEM, firewall logs, or Azure AD
-- Azure AD Identity Protection Password Spray feature or Risky IP
+- Received a trigger from SIEM, firewall logs, or Microsoft Entra ID
+- Microsoft Entra ID Protection Password Spray feature or Risky IP
 - Large number of failed sign-ins (Event ID 411)
-- Spike in Azure AD Connect Health for ADFS
+- Spike in Microsoft Entra Connect Health for ADFS
 - Another security incident (for example, phishing)
 - Unexplained activity, such as a sign-in from unfamiliar location or a user getting unexpected MFA prompts
 
@@ -178,11 +180,11 @@ Check the [References](#references) section for guidance on how to enable featur
 - [Enabled Azure Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) (sign in and user risk policies)
 - [Enabled MFA](/azure/active-directory/authentication/tutorial-enable-azure-mfa) (if not already)
 - [Enabled Password Protection](/azure/active-directory/authentication/howto-password-ban-bad-on-premises-operations)
-- [Deploy Azure AD Connect Health for ADFS](/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs) (if not already)
+- [Deploy Microsoft Entra Connect Health for ADFS](/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs) (if not already)
 
 #### Recovery
 
-- Tag bad IP address in Defender for Cloud Apps, SIEM, ADFS and Azure AD
+- Tag bad IP address in Defender for Cloud Apps, SIEM, ADFS and Microsoft Entra ID
 - Check for other forms of mailbox persistence such as forwarding rules or additional delegations added
 - [MFA as primary authentication](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)
 - [Configure SIEM integrations with Cloud](/microsoft-365/security/office-365-security/siem-server-integration)
@@ -199,7 +201,7 @@ You can also download the password spray and other incident playbook checklists 
 
 Let's understand a few password spray attack techniques before proceeding with the investigation.
 
-**Password compromise:** An attacker has successfully guessed the user's password but has not been able to access the account due to other controls such as multi-factor authentication (MFA).
+**Password compromise:** An attacker has successfully guessed the user's password but has not been able to access the account due to other controls such as multifactor authentication (MFA).
 
 **Account compromise:** An attacker has successfully guessed the user's password and has successfully gained access to the account.
 
@@ -218,15 +220,17 @@ Get-MsolDomain -DomainName "contoso.com"
 
 ### Is the authentication federated or managed?
 
-If the authentication is federated, then successful sign-ins will be stored in Azure AD. The failed sign-ins will be in their Identity Provider (IDP). For more information, see [ADFS troubleshooting and event logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
+If the authentication is federated, then successful sign-ins will be stored in Microsoft Entra ID. The failed sign-ins will be in their Identity Provider (IDP). For more information, see [ADFS troubleshooting and event logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
 
-If the authentication type is managed, (Cloud only, password hash sync (PHS) or pass-through authentication (PTA)), then successful and failed sign-ins will be stored in the Azure AD sign-in logs.
+If the authentication type is managed, (Cloud only, password hash sync (PHS) or pass-through authentication (PTA)), then successful and failed sign-ins will be stored in the Microsoft Entra sign-in logs.
 
 >[!Note]
 >The [Staged Rollout](/azure/active-directory/hybrid/how-to-connect-staged-rollout) feature allows the tenant domain name to be federated but specific users to be managed. Determine if any users are members of this group.
 >
 
-### Is Azure AD Connect Health enabled for ADFS?
+<a name='is-azure-ad-connect-health-enabled-for-adfs'></a>
+
+### Is Microsoft Entra Connect Health enabled for ADFS?
 
 - The [RiskyIP report](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip) will provide suspect IPs and date/time. Notifications should be enabled.
 - Also check the [federated sign-ins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
@@ -247,9 +251,11 @@ To check whether you are storing and correlating logs in a Security Information 
 - Firewall logs
 - UAL if > 30 days
 
-### Understanding Azure AD and MFA reporting
+<a name='understanding-azure-ad-and-mfa-reporting'></a>
 
-It is important that you understand the logs that you are seeing to be able to determine compromise. Below are our quick guides to understanding Azure AD Sign-Ins and MFA reporting to help with this. Refer to these articles:
+### Understanding Microsoft Entra ID and MFA reporting
+
+It is important that you understand the logs that you are seeing to be able to determine compromise. Below are our quick guides to understanding Microsoft Entra Sign-Ins and MFA reporting to help with this. Refer to these articles:
 
 - [MFA reporting](</azure/active-directory/authentication/howto-mfa-reporting>)
 - [Understanding Sign Ins](/azure/active-directory/reports-monitoring/concept-sign-ins)
@@ -268,14 +274,16 @@ An incident trigger is an event or a series of events that causes predefined ale
     :::image type="content" source="./media/incident-response-playbook-password-spray/Badpwdattempt.jpg" alt-text="pwdattempts":::
     *Graph depicting number of bad password attempts*
 
-Unusual spikes in activity are key indicators through Azure AD Health Connect (assuming this is installed). Other indicators are:
+Unusual spikes in activity are key indicators through Microsoft Entra Health Connect (assuming this is installed). Other indicators are:
 
 - Alerting through SIEM shows a spike when you collate the logs.
 - Larger than normal log size for ADFS failed sign-ins (this can be an alert in SIEM tool).
 - Increased amounts of 342/411 event IDs – username or password is incorrect. Or 516 for extranet lockout.
-- Hit failed authentication request threshold – Risky IP in Azure AD or SIEM tool alert/both 342 and 411 errors (To be able to view this information, the advanced logging should be turned on.)
+- Hit failed authentication request threshold – Risky IP in Microsoft Entra ID or SIEM tool alert/both 342 and 411 errors (To be able to view this information, the advanced logging should be turned on.)
 
-### Risky IP in Azure AD Health Connect portal
+<a name='risky-ip-in-azure-ad-health-connect-portal'></a>
+
+### Risky IP in Microsoft Entra Health Connect portal
 
 Risky IP will alert when the customized threshold has been reached for bad passwords in an hour and bad password count in a day as well as extranet lockouts.
 
@@ -291,7 +299,7 @@ The details of failed attempts are available in the tabs **IP address** and **ex
 
 ### Detect password spray in Azure Identity Protection
 
-Azure Identity Protection is an Azure AD Premium P2 feature that has a password-spray detection risk alert and search feature that you can utilize to get additional information or set up automatic remediation.
+Azure Identity Protection is a Microsoft Entra ID P2 feature that has a password-spray detection risk alert and search feature that you can utilize to get additional information or set up automatic remediation.
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/Detectpwd.png" alt-text="Example of password spray attack":::
 
@@ -313,7 +321,7 @@ Low and slow attack indicators are those where thresholds for account lockout or
 
 1. Turn advanced logging on ADFS if it is not already turned on.
 2. Determine the date and time of start of the attack.
-3. Determine the attacker IP address (might be multiple sources and multiple IP addresses) from the firewall, ADFS, SIEM or Azure AD.
+3. Determine the attacker IP address (might be multiple sources and multiple IP addresses) from the firewall, ADFS, SIEM or Microsoft Entra ID.
 4. Once password spray confirmed, you might have to inform the local agencies (police, third parties, among others).
 5. Collate and monitor the following Event IDs for ADFS:
 
@@ -382,13 +390,15 @@ Low and slow attack indicators are those where thresholds for account lockout or
 Along with the above event IDs, collate the *Audit Event 1203 – Fresh Credential Validation Error*.
 
 1. Collate all successful sign-ins for this time on ADFS (if federated). A quick sign-in and logout (at the same second) can be an indicator of a password being guessed successfully and being tried by the attacker.
-2. Collate any Azure AD successful or interrupted events for this time-period for both federated and managed scenarios.
+2. Collate any Microsoft Entra successful or interrupted events for this time-period for both federated and managed scenarios.
 
-### Monitor and collate Event IDs from Azure AD
+<a name='monitor-and-collate-event-ids-from-azure-ad'></a>
+
+### Monitor and collate Event IDs from Microsoft Entra ID
 
 See how to find the [meaning of error logs](https://login.microsoftonline.com/error).
 
-The following Event IDs from Azure AD are relevant:
+The following Event IDs from Microsoft Entra ID are relevant:
 
 - 50057 - User account was disabled
 - 50055 - Password expired
@@ -406,7 +416,7 @@ You can get all the Event IDs from the Sentinel Playbook that is available on [G
 
 ### Isolate and confirm attack
 
-Isolate the ADFS and Azure AD successful and interrupted sign-in events. These are your accounts of interest.
+Isolate the ADFS and Microsoft Entra successful and interrupted sign-in events. These are your accounts of interest.
 
 Block the IP Address ADFS 2012R2 and above for federated authentication. Here's an example:
 
@@ -422,9 +432,11 @@ Collect multiple event IDs within a time frame. Here's an example:
 Get-WinEvent -ProviderName 'ADFS' | Where-Object { $_.ID -eq '412' -or $_.ID -eq '411' -or $_.ID -eq '342' -or $_.ID -eq '516' -and $_.TimeCreated -gt ((Get-Date).AddHours(-"8")) }
 ```
 
-### Collate ADFS logs in Azure AD
+<a name='collate-adfs-logs-in-azure-ad'></a>
 
-Azure AD Sign-In reports include ADFS sign-in activity when you use Azure AD Connect Health. Filter sign-in logs by Token Issuer Type "Federated".
+### Collate ADFS logs in Microsoft Entra ID
+
+Microsoft Entra Sign-In reports include ADFS sign-in activity when you use Microsoft Entra Connect Health. Filter sign-in logs by Token Issuer Type "Federated".
 
 Here's an example PowerShell command to retrieve sign-in logs for a specific IP address:
 
@@ -446,7 +458,7 @@ Also, search the Azure portal for time frame, IP address and successful and inte
 
 *Searching for sign-ins based on the status*
 
-You can then download this data as a *.csv* file for analysis. For more information, see [Sign-in activity reports in the Azure Active Directory portal](/azure/active-directory/reports-monitoring/concept-sign-ins).
+You can then download this data as a *.csv* file for analysis. For more information, see [Sign-in activity reports in the Microsoft Entra admin center](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
 ### Prioritize findings
 
@@ -461,20 +473,22 @@ It is important to be able to react to the most critical threat. This can be the
 
 Most attacks use legacy authentication. There are a number of ways to determine the protocol of the attack.
 
-1. In Azure AD, navigate to **Sign-Ins** and filter on **Client App.**
+1. In Microsoft Entra ID, navigate to **Sign-Ins** and filter on **Client App.**
 2. Select all the legacy authentication protocols that are listed.
 
     :::image type="content" source="./media/incident-response-playbook-password-spray/Legacyauthenticationchecks.jpg" alt-text="authenticationcheck":::
 
     *List of legacy protocols*
 
-3. Or if you have an Azure workspace, you can use the pre-built legacy authentication workbook located in the Azure Active Directory portal under **Monitoring and Workbooks**.
+3. Or if you have an Azure workspace, you can use the pre-built legacy authentication workbook located in the Microsoft Entra admin center under **Monitoring and Workbooks**.
 
     :::image type="content" source="./media/incident-response-playbook-password-spray/authenticationbook.png" alt-text="workbook":::
 
     *Legacy authentication workbook*
 
-### Block IP address Azure AD for managed scenario (PHS including staging)
+<a name='block-ip-address-azure-ad-for-managed-scenario-phs-including-staging'></a>
+
+### Block IP address Microsoft Entra ID for managed scenario (PHS including staging)
 
 1. Navigate to **New named locations**.
 
@@ -488,12 +502,12 @@ If the user has not used them before and this activity is unusual, then flag the
 
 ### Is the IP marked as "risky"?
 
-Ensure you record successful passwords but failed multi-factor authentication (MFA) responses, as this activity indicates that the attacker is getting the password but not passing MFA.
+Ensure you record successful passwords but failed multifactor authentication (MFA) responses, as this activity indicates that the attacker is getting the password but not passing MFA.
 Set aside any account that appears to be a normal sign-in, for example, passed MFA, location and IP not out of the ordinary.
 
 ### MFA reporting
 
-It is important to also check MFA logs as an attacker could have successfully guessed a password but be failing the MFA prompt. The Azure AD MFA logs shows authentication details for events when a user is prompted for multi-factor authentication. Check and make sure there are no large suspicious MFA logs in Azure AD. For more information, see [how to use the sign-ins report to review Azure AD Multi-Factor Authentication events](/azure/active-directory/authentication/howto-mfa-reporting).
+It is important to also check MFA logs as an attacker could have successfully guessed a password but be failing the MFA prompt. The Microsoft Entra multifactor authentication logs shows authentication details for events when a user is prompted for multifactor authentication. Check and make sure there are no large suspicious MFA logs in Microsoft Entra ID. For more information, see [how to use the sign-ins report to review Microsoft Entra multifactor authentication events](/azure/active-directory/authentication/howto-mfa-reporting).
 
 ### Additional checks
 
@@ -509,19 +523,19 @@ If data has been breached, then you should inform additional agencies, such as t
 
 1. Change the password of any account that is suspected to have been breached or if the account password has been discovered. Additionally, block the user. Make sure you follow the guidelines for [revoking emergency access](/azure/active-directory/enterprise-users/users-revoke-access).
 2. Mark any account that has been compromised as "*compromised*" in Azure Identity Protection.
-3. Block the IP address of the attacker. Be cautious while performing this action as attackers can use legitimate VPNs and this could create more risk as they change IP addresses as well. If you are using Cloud Authentication, then block the IP address in Defender for Cloud Apps or Azure AD. If federated, you need to block the IP address at the firewall level in front of the ADFS service.
+3. Block the IP address of the attacker. Be cautious while performing this action as attackers can use legitimate VPNs and this could create more risk as they change IP addresses as well. If you are using Cloud Authentication, then block the IP address in Defender for Cloud Apps or Microsoft Entra ID. If federated, you need to block the IP address at the firewall level in front of the ADFS service.
 4. [Block legacy](/azure/active-directory/conditional-access/block-legacy-authentication) authentication if it is being used (this action, however, could impact business).
 5. [Enable MFA](/azure/active-directory/authentication/tutorial-enable-azure-mfa) if it is not already done.
 6. [Enable Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) for the user risk and sign-in risk
 7. Check the data that has been compromised (emails, SharePoint, OneDrive, apps). See how to use the [activity filter in Defender for Cloud Apps](/cloud-app-security/activity-filters).
-8. Maintain password hygiene. For more information, see [Azure AD password protection](https://www.microsoft.com/research/publication/password-guidance/).
+8. Maintain password hygiene. For more information, see [Microsoft Entra password protection](https://www.microsoft.com/research/publication/password-guidance/).
 9. You can also refer to [ADFS Help](https://adfshelp.microsoft.com/TroubleshootingGuides/Workflow/a73d5843-9939-4c03-80a1-adcbbf3ccec8).
 
 ## Recovery
 
 ### Password protection
 
-Implement password protection on Azure AD and on-premises by enabling the custom-banned password lists. This configuration will prevent users from setting weak passwords or passwords associated with your organization:
+Implement password protection on Microsoft Entra ID and on-premises by enabling the custom-banned password lists. This configuration will prevent users from setting weak passwords or passwords associated with your organization:
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/Passwordprotection.jpg" alt-text="pwdprotection":::
 
@@ -547,7 +561,7 @@ In Defender for Cloud Apps, "tag" IP address for the IP scope and set up an aler
 
 Depending on your organization needs, you can configure alerts.
 
-[Set up alerting in your SIEM tool](/microsoft-365/security/office-365-security/siem-server-integration) and look at improving logging gaps. Integrate ADFS, Azure AD, Office 365 and Defender for Cloud Apps logging.
+[Set up alerting in your SIEM tool](/microsoft-365/security/office-365-security/siem-server-integration) and look at improving logging gaps. Integrate ADFS, Microsoft Entra ID, Office 365 and Defender for Cloud Apps logging.
 
 Configure the threshold and alerts in ADFS Health Connect and Risky IP portal.
 
@@ -571,7 +585,7 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 
 - Educate end users, key stakeholders, front line operations, technical teams, cyber security and communications teams
 - Review security control and make necessary changes to improve or strengthen security control within your organization
-- Suggest Azure AD configuration assessment
+- Suggest Microsoft Entra configuration assessment
 - Run regular [attack simulator](/microsoft-365/security/office-365-security/attack-simulator) exercises
 
 ## References
@@ -583,7 +597,7 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 - [SIEM integration with Graph API](/graph/security-integration#list-of-connectors-from-microsoft)
 - [Splunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview)
 - [Installing ADFS Health Connect](/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs)
-- [Understanding Azure AD sign-in logs](/azure/active-directory/reports-monitoring/concept-sign-ins)
+- [Understanding Microsoft Entra sign-in logs](/azure/active-directory/reports-monitoring/concept-sign-ins)
 - [Understanding MFA reporting](/azure/active-directory/authentication/howto-mfa-reporting)
 
 ### Mitigations
@@ -597,10 +611,10 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 - [Enable ADFS Extranet Lockout](/windows-server/identity/ad-fs/operations/configure-ad-fs-extranet-soft-lockout-protection)
 - [MFA as primary authentication](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)
 - [Enable Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
-- [Azure AD audit activity reference](/azure/active-directory/reports-monitoring/reference-audit-activities)
-- [Azure AD audit logs schema](/azure/active-directory/reports-monitoring/reference-azure-monitor-audit-log-schema)
-- [Azure AD sign-in logs schema](/azure/active-directory/reports-monitoring/reference-azure-monitor-sign-ins-log-schema)
-- [Azure AD audit log Graph API](/graph/api/resources/azure-ad-auditlog-overview)
+- [Microsoft Entra audit activity reference](/azure/active-directory/reports-monitoring/reference-audit-activities)
+- [Microsoft Entra audit logs schema](/azure/active-directory/reports-monitoring/reference-azure-monitor-audit-log-schema)
+- [Microsoft Entra sign-in logs schema](/azure/active-directory/reports-monitoring/reference-azure-monitor-sign-ins-log-schema)
+- [Microsoft Entra audit log Graph API](/graph/api/resources/azure-ad-auditlog-overview)
 - [Risky IP Alerts](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/monitor-your-adfs-sign-in-activity-using-azure-ad-connect-health/ba-p/245395)
 - [ADFS Help](https://adfshelp.microsoft.com/TroubleshootingGuides/Workflow/a73d5843-9939-4c03-80a1-adcbbf3ccec8)
 

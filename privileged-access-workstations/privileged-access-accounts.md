@@ -55,8 +55,8 @@ The security controls for enterprise accounts are designed to create a secure ba
 
 - Enforce account/session risk - ensure that the account is not able to authenticate unless it is at a low (or medium?) risk level. See Interface Security Levels for details on conditional enterprise account security.
 - Monitor and respond to alerts - Security operations should integrate account security alerts and get sufficient training on how these protocols and systems work to ensure they are able to rapidly comprehend what an alert means and react accordingly.
-  - Enable [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
-  - [Investigate risk Azure AD Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
+  - Enable [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
+  - [Investigate risk Microsoft Entra ID Protection](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
   - [Troubleshoot/Investigate Conditional Access Sign-in failures](/azure/active-directory/conditional-access/troubleshoot-conditional-access)
 
 The following diagram provides a comparison to different forms of MFA and passwordless authentication. Each option in the best box is considered both high security and high usability. Each has different hardware requirements so you may want to mix and match which ones apply to different roles or individuals. All Microsoft passwordless solutions are recognized by Conditional Access as multi-factor authentication because they require combining something you have with either biometrics, something you know, or both.

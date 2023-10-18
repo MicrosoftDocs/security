@@ -64,7 +64,7 @@ Within Microsoft Sentinel, you can take advantage of playbooks and automation ru
 
 The following sections describe the general incident response process using the Microsoft Sentinel and Microsoft 365 Defender portals.
 
-## Step 1. Triage the incident in the Microsoft Sentinel portal
+## Step 1: Triage the incident in the Microsoft Sentinel portal
 
 Use these steps as a general method to triage the incident with Microsoft Sentinel:
 
@@ -80,7 +80,7 @@ Use these steps as a general method to triage the incident with Microsoft Sentin
 
 For more information, see [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents).
 
-## Step 2. Investigate the incident in the Microsoft 365 Defender portal
+## Step 2: Investigate the incident in the Microsoft 365 Defender portal
 
 Use these steps as a general method to investigate the incident with Microsoft 365 Defender:
 
@@ -94,7 +94,7 @@ Use these steps as a general method to investigate the incident with Microsoft 3
 
 For more information, see [Incident response with Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview).
 
-## Step 3. Continue the investigation in the Microsoft Sentinel portal (as needed)
+## Step 3: Continue the investigation in the Microsoft Sentinel portal (as needed)
 
 Use these steps as a general method to continue the incident investigation with Microsoft Sentinel using the improved incidents page (Preview).
 
@@ -123,7 +123,7 @@ Use these steps as a general method to continue the incident investigation with 
 
 For more information, see [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents).
 
-## Step 4. Resolve the incident
+## Step 4: Resolve the incident
 
 When your investigation has reached its conclusion and you have remediated the incident within the portals, you can resolve the incident in the Microsoft Sentinel portal by setting the incident’s status to Closed.
 

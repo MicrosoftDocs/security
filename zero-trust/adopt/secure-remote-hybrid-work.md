@@ -140,7 +140,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Verify and secure every identity with strong authentication <br><br> Integrate SaaS apps with Active Directory (Azure AD) for single sign-on <br><br> All new applications use modern authentication | Register devices with Azure AD <br><br> Implement **Starting point** Zero Trust identity and device access policies <br><br> Use Azure AD Application Proxy with on-premises apps for single sign-on | Enroll devices in your device management solution and apply recommended security protections <br><br> Allow only compliant and trusted devices to access data | Monitor device configuration drift <br><br> Implement passwordless authentication |
+| Verify and secure every identity with strong authentication <br><br> Integrate SaaS apps with Microsoft Entra ID for single sign-on <br><br> All new applications use modern authentication | Register devices with Microsoft Entra ID <br><br> Implement **Starting point** Zero Trust identity and device access policies <br><br> Use Microsoft Entra application proxy with on-premises apps for single sign-on | Enroll devices in your device management solution and apply recommended security protections <br><br> Allow only compliant and trusted devices to access data | Monitor device configuration drift <br><br> Implement passwordless authentication |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
@@ -194,7 +194,7 @@ These resources include prescriptive guidance that you can use as recommended st
 | [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations) ![Image of identity and device access policies](../media/identity-device-access-policies-byplan-thumb.png) | This solution guide recommends a set of [identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) that have been tested together. It includes: <ul><li>**Starting point** level policies that get you started and do not require managing devices.</li><li>**Enterprise** level policies are recommended for Zero Trust. This requires enrolling devices for endpoint management.</li></ul> Use these recommendations as a starting point and, if needed, adapt the policies for your unique environment and goals. |
 | [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) <br><br> ![Image of managing devices with Intune](../media/adoption-guide/manage-devices-with-intune.png) | This solution guide walks through the phases of managing devices, from actions that don’t require enrolling devices into management to fully managing devices. These recommendations are coordinated with the above resources. |
 | [Intune Enrollment Options](/microsoft-365/solutions/cloud-architecture-models#intune-enrollment-options) <br><br>![Image of Intune enrollment options](../media/adoption-guide/msft-intune-enrollment-options-thumb-landscape.png) <br><br> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br> Updated June 2022 | This poster-set provides an easy-to-scan comparison of device enrollment options per platform. |
-| [MFA deployment plan](/azure/active-directory/authentication/howto-mfa-getstarted) | This deployment guide shows you how to plan and implement an Azure AD MFA roll-out. |
+| [MFA deployment plan](/azure/active-directory/authentication/howto-mfa-getstarted) | This deployment guide shows you how to plan and implement a Microsoft Entra multifactor authentication roll-out. |
 
 In addition to these resources, the following sections highlight resources for specific tasks in the four stages previously defined.
 
@@ -202,17 +202,17 @@ In addition to these resources, the following sections highlight resources for s
 
 | Deployment objective | Resources |
 | --- | --- |
-| Verify and secure every identity with strong authentication | [What authentication and verification methods are available in Azure AD?](/azure/active-directory/authentication/concept-authentication-methods) |
-| Integrate SaaS apps with Azure AD for single sign-on | [Add SaaS apps to Azure AD and to the scope of policies](/security/zero-trust/add-saas-apps) |
+| Verify and secure every identity with strong authentication | [What authentication and verification methods are available in Microsoft Entra ID?](/azure/active-directory/authentication/concept-authentication-methods) |
+| Integrate SaaS apps with Microsoft Entra ID for single sign-on | [Add SaaS apps to Microsoft Entra ID and to the scope of policies](/security/zero-trust/add-saas-apps) |
 | New applications use modern authentication | [Checklist — How are you managing the identity for your workload?](/azure/architecture/framework/security/design-identity#checklist) |
 
 #### Stage 2
 
 | Deployment objective | Resources |
 | --- | --- |
-| Register devices with Azure AD | [Azure AD registered devices](/azure/active-directory/devices/concept-azure-ad-register) <br><br> [Plan your Azure AD join implementation](/azure/active-directory/devices/azureadjoin-plan) |
+| Register devices with Microsoft Entra ID | [Microsoft Entra registered devices](/azure/active-directory/devices/concept-azure-ad-register) <br><br> [Plan your Microsoft Entra join implementation](/azure/active-directory/devices/azureadjoin-plan) |
 | Implement Zero Trust identity and device access policies for the **Starting point** protection level  | [Protection levels for Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations#three-levels-of-protection) |
-| Use Azure AD Application Proxy with on-premises apps for single sign-on | [How to configure single sign-on to an Application Proxy application](/azure/active-directory/app-proxy/application-proxy-config-sso-how-to) |
+| Use Microsoft Entra application proxy with on-premises apps for single sign-on | [How to configure single sign-on to an Application Proxy application](/azure/active-directory/app-proxy/application-proxy-config-sso-how-to) |
 
 #### Stage 3
 
@@ -264,7 +264,7 @@ When enrolling devices, for example, the following guidance is recommended.
 | Pilot | Stage 2: Identify the next 50-100 endpoints in the production environment |
 | Full deployment | Stage 3: Enroll the rest of the endpoints in larger increments |
 
-Securing identities starts with adopting MFA and segmenting access using Azure AD Conditional Access. These features support the principle of verifying explicitly but require an incremental adoption process. Depending on the approach, the MFA methodology may need to be rolled out and communicated to users before the switch-on date, especially for an existing workforce used to using passwords only.
+Securing identities starts with adopting MFA and segmenting access using Microsoft Entra Conditional Access. These features support the principle of verifying explicitly but require an incremental adoption process. Depending on the approach, the MFA methodology may need to be rolled out and communicated to users before the switch-on date, especially for an existing workforce used to using passwords only.
 
 Considered the following elements while planning for this scenario:
 
@@ -361,12 +361,12 @@ Zero Trust requires an increase of maturity in the resultant administration of t
 | Audience | Function | Reference |
 | --- | --- | --- |
 | Users | User-based object attestation review | [Manage user and guest user access with access reviews](/azure/active-directory/governance/manage-access-review) |
-| Administrators | The Identity and Access lifecycles of Azure AD Identity Governance | [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview) |
+| Administrators | The Identity and Access lifecycles of Microsoft Entra ID Governance | [What is Microsoft Entra ID Governance?](/azure/active-directory/governance/identity-governance-overview) |
 
 Additional resources for day-to-day governance and operation include:
 
-- [Azure AD reports and monitoring documentation](/azure/active-directory/reports-monitoring/)
-- [Azure AD Identity Governance documentation](/azure/active-directory/governance/) 
+- [Microsoft Entra reports and monitoring documentation](/azure/active-directory/reports-monitoring/)
+- [Microsoft Entra ID Governance documentation](/azure/active-directory/governance/) 
 
   Discusses other governance areas and tools that address several areas. Due to different organizational needs, not all of the governance features called out in this document are applicable to all organizations.
 

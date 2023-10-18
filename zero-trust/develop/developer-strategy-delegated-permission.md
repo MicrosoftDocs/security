@@ -91,7 +91,7 @@ function signIn() {
 
 Your app can get information about the user, such as their display name or user ID. Next, your app needs authorization to read the full profile of the user from Microsoft Graph by following a pattern that you'll use throughout our MSAL libraries.
 
-As shown in the example code below, your app attempts to get the authorization by calling `AcquireTokenSilent`. If Azure Active Directory (Azure AD) can issue the token without interacting with the user, then `AcquireTokenSilent` will return the token that your app needs to access Microsoft Graph on behalf of the user.
+As shown in the example code below, your app attempts to get the authorization by calling `AcquireTokenSilent`. If Microsoft Entra ID can issue the token without interacting with the user, then `AcquireTokenSilent` will return the token that your app needs to access Microsoft Graph on behalf of the user.
 
 ```javascript
 function getTokenPopup(request) {
@@ -121,9 +121,9 @@ function getTokenPopup(request) {
 }
 ```
 
-However, often Azure AD can't issue the token without interacting with the user (for example, the user changed their password or  they haven't granted consent). Therefore, `AcquireTokenSilent` will send an error back to the application it requires user interaction. When you're your app receives the error, you'll fall back to call `AcquireTokenPopup`.
+However, often Microsoft Entra ID can't issue the token without interacting with the user (for example, the user changed their password or  they haven't granted consent). Therefore, `AcquireTokenSilent` will send an error back to the application it requires user interaction. When you're your app receives the error, you'll fall back to call `AcquireTokenPopup`.
 
-At that point, Azure AD will have a conversation with the user so they can authenticate the user and authorize your app to act on the user's behalf (for example, do an MFA, provide their password, grant consent). Then your app will get the token needed to move forward.
+At that point, Microsoft Entra ID will have a conversation with the user so they can authenticate the user and authorize your app to act on the user's behalf (for example, do an MFA, provide their password, grant consent). Then your app will get the token needed to move forward.
 
 A primary step in an enterprise's journey to Zero Trust is to adopt stronger authentication methods instead of just a user ID and password. The example code described above fully enables an enterprise to move to the stronger authentication method that the enterprise chooses. For example, multifactor authentication, fully passwordless with a FIDO2 key, Microsoft Authenticator.
 
@@ -131,7 +131,7 @@ A primary step in an enterprise's journey to Zero Trust is to adopt stronger aut
 
 - [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.
-- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
 - [Calling an API from another API](api-calls-api.md) helps you to ensure Zero Trust when you have one API that needs to call another API and securely develop your application when it's working on behalf of a user.

@@ -124,7 +124,7 @@ This article walks through the steps to apply the principles of Zero Trust acros
 
 You must do Steps 1 and 2 in order. The other steps can be done in any order.
 
-## Step 1. Create Azure Firewall policy
+## Step 1: Create Azure Firewall policy
 
 For standalone Azure Firewall deployments in a classic hub and spoke architecture, at least one Azure policy must be created in Azure Firewall Manager and associated to the Azure Virtual WAN hubs. This policy must be created and made available before the conversion of any hub. Once the policy is defined, it's applied to Azure Firewall instances in [Step 2](#step-2-convert-your-azure-virtual-wan-hubs-to-secured-hubs).
 
@@ -146,7 +146,7 @@ For Zero Trust, a [Premium Azure Firewall policy](/azure/firewall/premium-featur
 
 As part of the policy creation, you must create the necessary Destination Network Address Translation (DNAT) rules, network rules, and application rules to enable only the network flows for explicitly permitted traffic. To enable TLS inspection for selected targets, the corresponding application rule must have "TLS inspection" setting enabled. When creating rules in Rules Collections, you should use the most restrictive "Destination" and "Destination Type".
 
-## Step 2. Convert your Azure Virtual WAN hubs to secured hubs
+## Step 2: Convert your Azure Virtual WAN hubs to secured hubs
 
 At the core of Zero Trust approach for Azure Virtual WAN  is the concept of Secured Virtual WAN hub (secure hub). A secure hub is an Azure Virtual WAN hub with an integrated Azure Firewall. Usage of supported security appliances from third parties is supported as an alternative to Azure Firewall but isn't described in this article. You can use these virtual appliances to inspect all North-South, East-West, and Internet-bound traffic.
 
@@ -158,7 +158,7 @@ We recommend Azure Firewall Premium for Zero Trust and that you configure it wit
 
 For more information, see [Install Azure Firewall in a Virtual WAN hub](/azure/virtual-wan/howto-firewall).
 
-## Step 3. Secure your traffic
+## Step 3: Secure your traffic
 
 Once you've upgraded all your Azure Virtual WAN hubs to secure hubs, you must configure [Routing Intent and Policies](/azure/virtual-wan/how-to-routing-policies) for Zero Trust principles. This configuration enables the Azure Firewall in each hub to attract and inspect traffic between spokes and branches in the same hub and across remote hubs. You should configure your policies to send both "Internet traffic" and "Private traffic" through the Azure Firewall or your third party NVA). The "Inter-hub" option must be also enabled. Here's an example.
  
@@ -174,7 +174,7 @@ When the "Private Traffic" routing policy is enabled, VNet traffic in and out of
 >[Custom Route Tables](/azure/virtual-wan/scenario-isolate-vnets-custom) in Azure Virtual WAN can't be used in conjunction with Routing Intent and Policies and should not be considered as a security option.
 >
 
-## Step 4. Secure your spoke VNets
+## Step 4: Secure your spoke VNets
 
 Each Azure Virtual WAN hub can have one or more VNets [connected](/azure/virtual-wan/virtual-wan-site-to-site-portal#vnet) with VNet peering. Based on the [landing zone](/azure/cloud-adoption-framework/ready/landing-zone/) model in the Cloud Adoption Framework, every VNet contains a landing zone workload, applications, and services supporting an organization. Azure Virtual WAN manages the connection, the route propagation and association, and the outbound and inbound routing, but can't affect intra-VNet security. Zero Trust principles must be applied inside each spoke VNet according to the guidance published in [Apply Zero Trust principles to a spoke virtual network](azure-infrastructure-iaas.md) and other articles depending on the resource type, such as virtual machines and storage. Consider the following elements:
 
@@ -193,7 +193,7 @@ Because the hub in Azure Virtual WAN is locked and managed by Azure, custom comp
 - **Private Endpoints:** This resource type [is compatible](/azure/virtual-wan/howto-private-link) with Virtual WAN but must be deployed inside a spoke VNet. This provides connectivity to any other virtual network or branch connected to the same Virtual WAN, if the integrated Azure Firewall allows the flow. Instructions on how to secure traffic to Private Endpoints using the Azure Firewall integrated inside a Virtual WAN hub can be found in [Secure traffic destined to private endpoints in Azure Virtual WAN](/azure/firewall-manager/private-link-inspection-secure-virtual-hub).
 - **Azure Private DNS Zone (links):** This type of resource doesn't live inside a virtual network but must be [linked](/azure/dns/private-dns-virtual-network-links) to them to function correctly. Private DNS Zones can't be linked to Virtual WAN hubs. Instead, they should be connected to the spoke VNet containing custom DNS servers or an Azure Private DNS Resolver ([recommended](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)) or directly to the spoke VNets that require the DNS records from that zone.
 
-## Step 5. Review your encryption
+## Step 5: Review your encryption
 
 Azure Virtual WAN provides some traffic encryption capabilities through its own gateways for traffic entering the Microsoft network. Whenever possible, encryption should be enabled, based on the gateway type. Consider the following default encryption behavior:
 
@@ -213,19 +213,19 @@ Once the traffic has entered the Azure network infrastructure through one of the
 >Virtual WAN spokes doesn't support VNet-to-VNet encryption using Azure VPN Gateway because a spoke is required to use Virtual WAN hub remote gateway.
 >
 
-## Step 6. Secure your P2S users
+## Step 6: Secure your P2S users
 
-Azure Virtual WAN is a networking service that brings many networking, security, and routing functionalities together to provide a single operational interface. From a user identity perspective, the only touch point with Virtual WAN is in the authentication method used to allow a [user P2S VPN](/azure/virtual-wan/virtual-wan-point-to-site-portal). Several [authentication methods](/azure/virtual-wan/virtual-wan-point-to-site-portal#p2sconfig) are available, but we recommend following general Zero Trust principles [Azure Active Directory (Azure AD) authentication](/azure/virtual-wan/virtual-wan-point-to-site-azure-ad). With Azure AD, you can require [Multi-Factor Authentication (MFA) and Conditional Access](/azure/virtual-wan/openvpn-azure-ad-mfa) apply Zero Trust principles to client devices and user identities.
+Azure Virtual WAN is a networking service that brings many networking, security, and routing functionalities together to provide a single operational interface. From a user identity perspective, the only touch point with Virtual WAN is in the authentication method used to allow a [user P2S VPN](/azure/virtual-wan/virtual-wan-point-to-site-portal). Several [authentication methods](/azure/virtual-wan/virtual-wan-point-to-site-portal#p2sconfig) are available, but we recommend following general Zero Trust principles [Microsoft Entra authentication](/azure/virtual-wan/virtual-wan-point-to-site-azure-ad). With Microsoft Entra ID, you can require [Multi-Factor Authentication (MFA) and Conditional Access](/azure/virtual-wan/openvpn-azure-ad-mfa) apply Zero Trust principles to client devices and user identities.
 
 >[!Note]
->Azure AD authentication is only available for gateways that use the OpenVPN protocol, which is supported only for OpenVPN protocol connections and requires the Azure VPN Client.
+>Microsoft Entra authentication is only available for gateways that use the OpenVPN protocol, which is supported only for OpenVPN protocol connections and requires the Azure VPN Client.
 >
 
 Azure Virtual WAN and Azure Firewall don't provide traffic routing and filtering based on user account or group names, but it's possible to [assign different groups of users different pools of IP addresses](/azure/virtual-wan/user-groups-about). You can then define rules on the integrated Azure Firewall to restrict users or groups based on their assigned P2S IP address pool.
 
 If you divide your P2S users into different groups based on network access requirements, we recommend that you differentiate them at the network level and ensure that they can access only a subset of the internal network. You can create multiple IP address pools for Azure Virtual WAN. For more information, see [Configure user groups and IP address pools for P2S User VPNs](/azure/virtual-wan/user-groups-create).
 
-## Step 7. Configure monitoring, auditing, and management
+## Step 7: Configure monitoring, auditing, and management
 
 Azure Virtual WAN provides extensive monitoring and diagnostic capabilities with [Azure Monitor](/azure/virtual-wan/monitor-virtual-wan). Additional details and topology can be obtained using a focused, prebuilt, monitoring dashboard in the Azure portal named [Azure Monitor Insights for Virtual WAN](/azure/virtual-wan/azure-monitor-insights). These monitoring tools aren't security specific. The Azure Firewall deployed inside each Virtual WAN hub provides the integration point for Zero Trust and security monitoring. You must configure [Diagnostics and logging for Azure Firewall](/azure/virtual-wan/monitor-virtual-wan-reference#azure-firewall) the same as Azure Firewalls outside Virtual WAN.
 

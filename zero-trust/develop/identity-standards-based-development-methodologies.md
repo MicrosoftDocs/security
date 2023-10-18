@@ -17,9 +17,9 @@ As a developer, you can make good use of industry standards for software develop
 
 ## What about protocols?
 
-When implementing protocols, consider costs that include time to write code that is fully up to date with all best practices and follows OAuth 2.0 best practices for secure implementation. Instead, we recommend that you use a well-maintained library (with a preference for MSAL) when you build directly to Azure Active Directory (Azure AD) or Microsoft Identity.
+When implementing protocols, consider costs that include time to write code that is fully up to date with all best practices and follows OAuth 2.0 best practices for secure implementation. Instead, we recommend that you use a well-maintained library (with a preference for MSAL) when you build directly to Microsoft Entra ID or Microsoft Identity.
 
-We optimize MSALs to build and work with Azure AD. If your environment hasn't implemented MSAL or has unlocked capabilities in its own library, develop your application with the Microsoft identity platform. Build on OAuth 2.0 capabilities and OpenID Connect. Consider costs of correctly falling back to a protocol.
+We optimize MSALs to build and work with Microsoft Entra ID. If your environment hasn't implemented MSAL or has unlocked capabilities in its own library, develop your application with the Microsoft identity platform. Build on OAuth 2.0 capabilities and OpenID Connect. Consider costs of correctly falling back to a protocol.
 
 ## How the Microsoft identity platform supports standards
 
@@ -32,16 +32,16 @@ To achieve Zero Trust most efficiently and effectively, develop applications wit
 
 As the industry protocol for authorization, OAuth 2.0 allows users to grant limited access to protected resources. OAuth 2.0 works with Hypertext Transfer Protocol (HTTP) to separate the client role from the resource owner. Clients use tokens to access protected resources on a resource server.
 
-OpenID Connect constructs allow Azure AD extensions to enhance security. These Azure AD extensions are the most common:
+OpenID Connect constructs allow Microsoft Entra extensions to enhance security. These Microsoft Entra extensions are the most common:
 
 - [Conditional Access authentication context](/azure/active-directory/develop/developer-guide-conditional-access-authentication-context) allows apps to apply granular policies to protect sensitive data and actions instead of only at the app level.
-- [Continuous Access Evaluation (CAE)](/azure/active-directory/conditional-access/concept-continuous-access-evaluation) enables Azure AD applications to subscribe to critical events for evaluation and enforcement. CAE includes risky event evaluation such as disabled or deleted user accounts, password changes, token revocations, and detected users.
+- [Continuous Access Evaluation (CAE)](/azure/active-directory/conditional-access/concept-continuous-access-evaluation) enables Microsoft Entra applications to subscribe to critical events for evaluation and enforcement. CAE includes risky event evaluation such as disabled or deleted user accounts, password changes, token revocations, and detected users.
 
-When your applications use enhanced security features like CAE and Conditional Access authentication context, they must include code to manage claims challenges. With open protocols, you use claims challenges and claims requests to invoke other client capabilities. For example, indicating to apps that they need to repeat interaction with Azure AD due to an anomaly. Another scenario is when the user no longer satisfies conditions under which they had earlier authenticated. You can code for these extensions without disturbing primary authentication code flows.
+When your applications use enhanced security features like CAE and Conditional Access authentication context, they must include code to manage claims challenges. With open protocols, you use claims challenges and claims requests to invoke other client capabilities. For example, indicating to apps that they need to repeat interaction with Microsoft Entra ID due to an anomaly. Another scenario is when the user no longer satisfies conditions under which they had earlier authenticated. You can code for these extensions without disturbing primary authentication code flows.
 
 ### Security Assertions Markup Language (SAML)
 
-The Microsoft identity platform uses SAML 2.0 to enable your Zero Trust applications to provide a single sign-on (SSO) user experience. SSO and Single Sign-Out SAML profiles in Azure AD explain how the identity provider service uses SAML assertions, protocols, and bindings. The SAML protocol requires the identity provider (Microsoft identity platform) and the service provider (your application) to exchange information about themselves. When you register your Zero Trust application with Azure AD, you register federation-related information that includes the Redirect URI and Metadata URI of the application with Azure AD.
+The Microsoft identity platform uses SAML 2.0 to enable your Zero Trust applications to provide a single sign-on (SSO) user experience. SSO and Single Sign-Out SAML profiles in Microsoft Entra ID explain how the identity provider service uses SAML assertions, protocols, and bindings. The SAML protocol requires the identity provider (Microsoft identity platform) and the service provider (your application) to exchange information about themselves. When you register your Zero Trust application with Microsoft Entra ID, you register federation-related information that includes the Redirect URI and Metadata URI of the application with Microsoft Entra ID.
 
 ## Benefits of MSAL over protocols
 
@@ -57,5 +57,5 @@ Using MSAL, you acquire tokens for application types that include web applicatio
 - [Building apps with a Zero Trust approach to identity](identity.md) provides an overview of permissions and access best practices.
 - [Developer and administrator responsibilities for application registration, authorization, and access](identity-developer-administrator-responsibilities.md) helps you to better collaborate with your IT Pros.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve Zero Trust goals.
-- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens. It explains how token customization improves flexibility and control while increasing application Zero Trust security with least privilege.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how token customization improves flexibility and control while increasing application Zero Trust security with least privilege.
 - [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) describes how to configure apps with app role definitions and assign security groups to app roles. This approach improves flexibility and control while increasing application Zero Trust security with least privilege.

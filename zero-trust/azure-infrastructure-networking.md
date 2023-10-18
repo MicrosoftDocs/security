@@ -81,7 +81,7 @@ As a part of your deployment, you'll want to make specific selections that aren'
 
 Operating the connectivity hub as deployed still provides significant value for isolation and inspection. If your organization isn't ready to incur the costs of these advanced features, you can deploy a reduced functionality hub and make these adjustments later.
 
-## Step 1. Secure Azure Firewall Premium
+## Step 1: Secure Azure Firewall Premium
 
 Azure Firewall Premium plays a vital role in helping you secure your Azure infrastructure for Zero Trust.
 
@@ -159,7 +159,7 @@ With the Azure Firewall Premium configured, you can now perform the following co
 - Deploy the [Azure Firewall Workbook](/azure/firewall/firewall-workbook) to visualize events.
 - Configure URL and [Web category filtering](/azure/firewall/web-categories), if needed. Because Azure Firewall denies by default, this configuration is needed only if the Azure Firewall needs to grant outbound internet access broadly. However, use additional verifications to determine connections.
 
-## Step 2. Deploy Azure DDoS Protection Standard
+## Step 2: Deploy Azure DDoS Protection Standard
 
 As a part of the deployment, you'll want to deploy an Azure DDoS Protection Standard Policy. This increases Zero Trust protection provided on the Azure Platform.
 
@@ -193,7 +193,7 @@ In addition, protect the following public IP addresses:
 - Azure Network Gateway public IP addresses
 - Application Gateway public IP addresses
 
-## Step 3. Configure network gateway routing to the firewall
+## Step 3: Configure network gateway routing to the firewall
 
 After deployment, you'll need to configure route tables on various subnets to ensure that traffic between spoke VNets and the on-premises networks are inspected by the Azure Firewall. You can perform this activity in an existing environment without a requirement of redeployment, but you have to author the necessary firewall rules to allow access.
 
@@ -278,7 +278,7 @@ To configure spoke subnet routing:
 
 Your default route now forwards traffic intended for the gateway to the Azure Firewall.
 
-## Step 4. Configure threat protection
+## Step 4: Configure threat protection
 
 Microsoft Defender for Cloud can protect your hub VNet built on Azure, just like other resources from your IT business environment running on Azure or on-premises.
 

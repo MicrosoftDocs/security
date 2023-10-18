@@ -37,13 +37,13 @@ Service type applications (background tasks, daemons, server-to-server processes
 
 ## Zero Trust application authorization best practices
 
-Your [authorization approach](/azure/active-directory/develop/authorization-basics) will have authentication as a component when you connect to a user present to the application and to the resource you're calling. When your application is acting on behalf of a user, we don't trust a calling application to tell us who the user is or let the application decide who the user is. Azure AD will verify and directly provide information about the user in the token.
+Your [authorization approach](/azure/active-directory/develop/authorization-basics) will have authentication as a component when you connect to a user present to the application and to the resource you're calling. When your application is acting on behalf of a user, we don't trust a calling application to tell us who the user is or let the application decide who the user is. Microsoft Entra ID will verify and directly provide information about the user in the token.
 
 When you need to allow your application to call an API or authorize your application so that the application can access a resource, modern authorization schemes can require authorization through a [permission and consent framework](/azure/active-directory/develop/consent-framework). Reference [Security best practices for application properties](/azure/active-directory/develop/security-best-practices-for-app-registration) that include redirect URI, access tokens (used for implicit flows), certificates and secrets, application ID URI, and application ownership.
 
 ## Next steps
 
-- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Developing delegated permissions strategy](developer-strategy-delegated-permission.md) helps you to implement the best approach for managing permissions in your application and develop using Zero Trust principles.
 - [Developing application permissions strategy](developer-strategy-application-permissions.md) helps you to decide upon your application permissions approach to credential management.

@@ -104,7 +104,7 @@ The following are three key steps in DART ransomware investigations:
 |2. Identify the affected line-of-business (LOB) apps|Get systems back online|Does the application require an identity? <BR><BR> Are backups of the application, configuration, and data available? <BR><BR> Are the content and integrity of backups regularly verified using a restore exercise?|
 |3. Determine the compromise recovery (CR) process|Remove attacker control from the environment|N/A|
 
-### Step 1. Assess the current situation
+### Step 1: Assess the current situation
 
 An assessment of the current situation is critical to understanding the scope of the incident and for determining the best people to assist and to plan and scope the investigation and remediation tasks. Asking the following initial questions is crucial in helping to determine the situation.
 
@@ -131,9 +131,9 @@ Logs - such as antivirus, EDR, and virtual private network (VPN)-are an indicato
 - Are there any suspected compromised accounts that appear to be actively used by the adversary?
 - Is there any evidence of active command and controls (C2s) in EDR, firewall, VPN, web proxy, and other logs?
 
-As part of assessing the current situation, you might need an Active Directory Domain Services (AD DS) domain controller that was not compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. Also determine whether [multifactor authentication (MFA)](https://www.microsoft.com/security/business/identity-access-management/mfa-multi-factor-authentication/) was required for everyone in the company and if [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) was used.
+As part of assessing the current situation, you might need an Active Directory Domain Services (AD DS) domain controller that was not compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. Also determine whether [multifactor authentication (MFA)](https://www.microsoft.com/security/business/identity-access-management/mfa-multi-factor-authentication/) was required for everyone in the company and if [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) was used.
 
-### Step 2. Identify the LOB apps that are unavailable due to the incident
+### Step 2: Identify the LOB apps that are unavailable due to the incident
 
 This step is critical in figuring out the quickest way to get systems back online while obtaining the evidence required.
 
@@ -146,7 +146,7 @@ Are tested backups of the application, configuration, and data available?
 
 - Are the contents and integrity of backups regularly verified using a restore exercise? This is particularly important after configuration management changes or version upgrades.
 
-### Step 3. Determine the compromise recovery process
+### Step 3: Determine the compromise recovery process
 
 This step may be necessary if you have determined that the control plane, which is typically AD DS, has been compromised.
 
@@ -231,11 +231,11 @@ DART recommends implementing the following security recommendations and best pra
 
 ### PAM
 
-Using the [PAM](/security/compass/privileged-access-access-model) (formerly known as the tiered administration model) enhances Azure AD's security posture. This involves:
+Using the [PAM](/security/compass/privileged-access-access-model) (formerly known as the tiered administration model) enhances Microsoft Entra ID's security posture. This involves:
 
   - Breaking out administrative accounts in a "planed" environment-one account for each level, usually four:
 
-- Control Plane (formerly Tier 0): Administration of domain controllers and other crucial identity services, such as Active Directory Federation Services (ADFS) or Azure AD Connect. This also includes server applications that require administrative permissions to AD DS, such as Exchange Server.
+- Control Plane (formerly Tier 0): Administration of domain controllers and other crucial identity services, such as Active Directory Federation Services (ADFS) or Microsoft Entra Connect. This also includes server applications that require administrative permissions to AD DS, such as Exchange Server.
 
 - The next two planes were formerly Tier 1:
 

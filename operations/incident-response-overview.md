@@ -302,7 +302,7 @@ These learnings can take a number of forms, but common practices include analysi
 
 - Internal actions such as enabling logging on assets covering your cloud-based and on-premises resources.
 
-   Review your existing security baselines and consider adding or changing security controls. For example, see the [Azure Active Directory security operations guide](/azure/active-directory/fundamentals/security-operations-introduction) for information on enabling the appropriate level of auditing in the directory before the next incident happens.
+   Review your existing security baselines and consider adding or changing security controls. For example, see the [Microsoft Entra security operations guide](/azure/active-directory/fundamentals/security-operations-introduction) for information on enabling the appropriate level of auditing in the directory before the next incident happens.
 
 Review your response processes to identify and resolve any gaps found during the incident.
 

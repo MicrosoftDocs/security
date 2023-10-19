@@ -44,7 +44,7 @@ The [Microsoft Information Protection SDK - API concepts](/information-protectio
 
 ### Getting started with the SDK
 
-We have included the following guidance to help you on the journey to integrating your solutions with Azure AD.
+We have included the following guidance to help you on the journey to integrating your solutions with Microsoft Entra ID.
 
 [Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)
 This document describes common use cases for the MIP SDK, including how to get started using the SDK and building integrations. The MIP SDK exposes the labeling and protection services from Microsoft 365 Security and Compliance Center to third-party applications and services. Partners can use the SDK to build solutions with native support for applying labels and protection to files as well as reasoning over MIP-encrypted information and which actions should be taken when specific labels are detected.

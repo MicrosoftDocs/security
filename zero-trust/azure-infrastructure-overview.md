@@ -60,7 +60,7 @@ This architecture contains:
 
 - Multiple IaaS components and elements, including different types of users and IT consumers accessing the app from different sites. such as Azure, the internet, on-premises, and branch offices.
 - A common three-tier application containing a front end tier, application tier, and data tier. All tiers run on virtual machines within a VNet named SPOKE. Access to the app is protected by another VNet named HUB that contains additional security services.
-- Some of the most used PaaS services on Azure that support IaaS applications, including role-based access control (RBAC) and Azure Active Directory (Azure AD). These contribute to the Zero Trust security approach.
+- Some of the most used PaaS services on Azure that support IaaS applications, including role-based access control (RBAC) and Microsoft Entra ID. These contribute to the Zero Trust security approach.
 - Storage Blobs and Storage Files that provide object storage for the applications and files shared by users.
 
 This series of articles walk through the recommendations for implementing Zero Trust for the reference article by addressing each of these larger pieces hosted in Azure, as shown here.
@@ -82,7 +82,7 @@ The reference architecture diagram provides a topological view of the environmen
 
 :::image type="content" source="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.png" alt-text="Diagram of components in Azure infrastructure." lightbox="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.png":::
 
-In this diagram, the Azure infrastructure is contained within one Azure AD tenant. The following table describes the different sections shown in the diagram.
+In this diagram, the Azure infrastructure is contained within one Microsoft Entra tenant. The following table describes the different sections shown in the diagram.
 
 - Azure subscriptions
 
@@ -113,7 +113,7 @@ In this diagram, the Azure infrastructure is contained within one Azure AD tenan
 In the diagram:
 
 - Defender for Cloud is enabled for a management group that includes multiple Azure subscriptions.
-- Microsoft 365 Defender is enabled for Microsoft 365 apps and data, SaaS apps that are integrated with Azure AD, and on-premises Active Directory Domain Services (AD DS) servers.
+- Microsoft 365 Defender is enabled for Microsoft 365 apps and data, SaaS apps that are integrated with Microsoft Entra ID, and on-premises Active Directory Domain Services (AD DS) servers.
 
 For more information about configuring management groups and enabling Defender for Cloud, see:
 
@@ -144,7 +144,7 @@ Zero Trust involves applying multiple disciplines of security and information pr
 
 **[Apply Zero Trust principles to a spoke VNet in Azure](azure-infrastructure-iaas.md)**
 
-1. Leverage Azure AD RBAC or set up custom roles for networking resources
+1. Leverage Microsoft Entra RBAC or set up custom roles for networking resources
 1. Isolate infrastructure into its own resource group
 1. Create a network security group for each subnet
 1. Create an application security group for each virtual machine role

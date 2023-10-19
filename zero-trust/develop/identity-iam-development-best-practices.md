@@ -36,11 +36,13 @@ Rather than using protocols that can have known vulnerabilities and extensive do
 - Device registration and management
 - Passwordless and FIDO2 authentication
 
-MSAL and [Microsoft Graph](/graph/overview) are your best choices for developing Azure Active Directory (Azure AD) applications. MSAL developers have done the work for you to ensure compliance with protocols. Microsoft optimizes MSAL for efficiency when working directly with Azure AD.
+MSAL and [Microsoft Graph](/graph/overview) are your best choices for developing Microsoft Entra applications. MSAL developers have done the work for you to ensure compliance with protocols. Microsoft optimizes MSAL for efficiency when working directly with Microsoft Entra ID.
 
-## Register your apps in Azure AD
+<a name='register-your-apps-in-azure-ad'></a>
 
-Follow the [Security best practices for application properties in Azure Active Directory](/azure/active-directory/develop/security-best-practices-for-app-registration). Application registration in Azure AD is critical because misconfiguration or lapse in your application's hygiene can result in downtime or compromise.
+## Register your apps in Microsoft Entra ID
+
+Follow the [Security best practices for application properties in Microsoft Entra ID](/azure/active-directory/develop/security-best-practices-for-app-registration). Application registration in Microsoft Entra ID is critical because misconfiguration or lapse in your application's hygiene can result in downtime or compromise.
 
 Application properties that improve security include redirect URI, access tokens (never use with implicit flows), certificates and secrets, application ID URI, and application ownership. Conduct periodical security and health assessments similar to Security Threat Model assessments for code.
 
@@ -62,7 +64,7 @@ Follow the guidance in [Enhance security with the principle of least privilege](
 
 ## Securely manage tokens
 
-When your application requests tokens from Azure AD, securely manage them:
+When your application requests tokens from Microsoft Entra ID, securely manage them:
 
 - Validate that they're properly scoped to your application.
 - Appropriately cache them.
@@ -79,7 +81,7 @@ When your application requests tokens from Azure AD, securely manage them:
 - Explicitly revoking a user's issued tokens.
 - Detecting a user moving to high-risk status.
 
-When you support CAE, tokens that Azure AD issues to call Microsoft Graph are valid for 24 hours instead of the standard 60 to 90 minutes. CAE adds resiliency to your app by requiring hourly token refresh and enabling MSAL to proactively refresh the token well before the token expires.
+When you support CAE, tokens that Microsoft Entra ID issues to call Microsoft Graph are valid for 24 hours instead of the standard 60 to 90 minutes. CAE adds resiliency to your app by requiring hourly token refresh and enabling MSAL to proactively refresh the token well before the token expires.
 
 ## Define app roles for IT to assign to users and groups
 
@@ -91,11 +93,11 @@ As a [verified publisher](/azure/active-directory/develop/publisher-verification
 
 ## Next steps
 
-- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens. Learn how to customize tokens to improve flexibility and control while increasing application Zero Trust security with least privilege.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. Learn how to customize tokens to improve flexibility and control while increasing application Zero Trust security with least privilege.
 - [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) describes how to configure your apps with app role definitions and assign security groups to app roles. This approach improves flexibility and control while increasing application Zero Trust security with least privilege.
 - [Building apps with a Zero Trust approach to identity](identity.md) provides an overview of permissions and access best practices.
 - The [Identity integrations](../integrate/identity.md) guide explains how to integrate security solutions with Microsoft products to create Zero Trust solutions.
 - [Developer and administrator responsibilities for application registration, authorization, and access](identity-developer-administrator-responsibilities.md) helps you to better collaborate with your IT Pros.
-- [Supported identity and account types for single- and multi-tenant apps](identity-supported-account-types.md) explains how you can choose if your app allows only users from your Azure AD) tenant, any Azure AD tenant, or users with personal Microsoft accounts.
+- [Supported identity and account types for single- and multi-tenant apps](identity-supported-account-types.md) explains how you can choose if your app allows only users from your Microsoft Entra ID) tenant, any Microsoft Entra tenant, or users with personal Microsoft accounts.
 - [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.
 - [API Protection](protect-api.md) describes best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.

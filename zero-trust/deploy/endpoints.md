@@ -105,7 +105,9 @@ After a device is registered, users can access your organization's restricted re
 :::image type="content" source="../media/diagram-steps-box-endpoints-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
 
 
-#### Register corporate devices with Azure Active Directory (AD)
+<a name='register-corporate-devices-with-azure-active-directory-ad'></a>
+
+#### Register corporate devices with Microsoft Entra ID
 
 Follow these steps:
 
@@ -131,7 +133,7 @@ Follow these steps:
  
     :::image type="content" source="../media/screenshot-access-work-school-settings.png" alt-text="Access work or school in Settings." border="false":::
 
-3.  On the **Set up a work or school account** screen, select **Join this device to Azure AD**.
+3.  On the **Set up a work or school account** screen, select **Join this device to Microsoft Entra ID**.
 
     :::image type="content" source="../media/screenshot-set-up-work-school-account-settings.png" alt-text="Set up a work or school account in Settings." border="false":::
 
@@ -146,7 +148,9 @@ Follow these steps:
 8.  On the **You\'re all set** screen, click **Done**.
 
 
-#### Register personal Windows devices with Azure AD
+<a name='register-personal-windows-devices-with-azure-ad'></a>
+
+#### Register personal Windows devices with Microsoft Entra ID
 
 Follow these steps:
 
@@ -167,7 +171,7 @@ Follow these steps:
 
 To allow users an alternative sign-in method that replaces a password, such as PIN, biometric authentication, or fingerprint reader, [enable Windows Hello for Business on users' Windows 10 devices](/mem/intune/protect/windows-hello).
 
-The following Microsoft Intune and Azure AD actions are completed in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home):
+The following Microsoft Intune and Microsoft Entra actions are completed in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home):
 
 Start by creating a Windows Hello for Business enrollment policy in Microsoft Intune.
 
@@ -177,7 +181,7 @@ Start by creating a Windows Hello for Business enrollment policy in Microsoft In
 
 1.  Select from the following options for Configure Windows Hello for Business:
 
-    1.  **Disabled.** If you don't want to use Windows Hello for Business, select this setting. If disabled, users can't provision Windows Hello for Business except on Azure AD-joined mobile phones where provisioning may be required.
+    1.  **Disabled.** If you don't want to use Windows Hello for Business, select this setting. If disabled, users can't provision Windows Hello for Business except on Microsoft Entra joined mobile phones where provisioning may be required.
 
     1.  **Enabled.** Select this setting if you want to configure Windows Hello for Business settings. When you select Enabled, additional settings for Windows Hello become visible.
 
@@ -199,7 +203,7 @@ If you selected Enabled, [configure the required settings](/mem/intune/protect/i
 
 5.  Use enhanced anti-spoofing, when available. This configures when the anti-spoofing features of Windows Hello are used on devices that support it. For example, detecting a photograph of a face instead of a real face.
 
-6.  Allow phone sign-in. If this option is set to Yes, users can use a remote passport to serve as a portable companion device for desktop computer authentication. The desktop computer must be Azure AD joined, and the companion device must be configured with a Windows Hello for Business PIN.
+6.  Allow phone sign-in. If this option is set to Yes, users can use a remote passport to serve as a portable companion device for desktop computer authentication. The desktop computer must be Microsoft Entra joined, and the companion device must be configured with a Windows Hello for Business PIN.
 
 After you configure these settings, select **Save.**
 
@@ -563,7 +567,7 @@ Building and maintaining customized operating system images is a time-consuming 
 
 -   Windows Autopilot is a collection of technologies used to set up and preconfigure new devices, getting them ready for productive use. You can also use Windows Autopilot to reset, repurpose, and recover devices.
 
--   [Configure Windows Autopilot to automate Azure AD Join](/windows/deployment/windows-autopilot/windows-autopilot) and enroll new corporate-owned devices into Intune.
+-   [Configure Windows Autopilot to automate Microsoft Entra join](/windows/deployment/windows-autopilot/windows-autopilot) and enroll new corporate-owned devices into Intune.
 
 -   [Configure Apple DEP](/mem/intune/enrollment/device-enrollment-program-enroll-ios) to automatically enroll iOS and iPadOS devices.
 
@@ -571,7 +575,7 @@ Building and maintaining customized operating system images is a time-consuming 
 
 **Microsoft Azure**
 
-[Azure Active Directory](https://azure.microsoft.com/products/active-directory/)
+[Microsoft Entra ID](https://azure.microsoft.com/products/active-directory/)
 
 **Microsoft 365**
 

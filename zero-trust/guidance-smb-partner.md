@@ -51,7 +51,7 @@ See the following resources:
 
 | Zero Trust principle | Met by |
 |---------|---------|
-| Verify explicitly  | Multi-factor authentication (MFA) is turned on by using security defaults (or Conditional Access). This configuration requires users to register for MFA. It also disables access through legacy authentication (devices that don’t support modern authentication) and requires admins to authenticate every time they sign in.  |
+| Verify explicitly  | Multifactor authentication (MFA) is turned on by using security defaults (or Conditional Access). This configuration requires users to register for MFA. It also disables access through legacy authentication (devices that don’t support modern authentication) and requires admins to authenticate every time they sign in.  |
 | Use least privileged access | Guidance is provided for protecting administrative accounts and not using these accounts for user tasks. |
 | Assume breach | Protection against malware and other cybersecurity threats is dialed up by using preset security policies. Guidance is provided for training your team to set up unmanaged (bring-your-own-device, or BYOD) devices, use email securely, and collaborate and share more securely. Additional guidance is provided to secure managed devices (devices that your organization owns).  |
 
@@ -98,17 +98,16 @@ Resources are available to help you as a Microsoft partner to manage your custom
 
 ## Protect other SaaS apps you or your customers use
 
-You or your small business customers likely use other Software as a Service (SaaS) applications, like Salesforce, Adobe Creative Cloud, and DocuSign. You can integrate these applications with Azure Active Directory (Azure AD) and include these in your multi-factor authentication and conditional access policies. 
+You or your small business customers likely use other Software as a Service (SaaS) applications, like Salesforce, Adobe Creative Cloud, and DocuSign. You can integrate these applications with Microsoft Entra ID and include these in your multifactor authentication and conditional access policies. 
 
-The Azure AD application gallery is a collection of software as a service (SaaS) applications that have been pre-integrated with Azure AD. All you need to do is find the application in the gallery and add it to your environment. Then, the application will be available for you to include in the scope of your multi-factor authentication and conditional access rules. See [Overview of the Azure AD application gallery](/azure/active-directory/manage-apps/overview-application-gallery).
+The Microsoft Entra application gallery is a collection of software as a service (SaaS) applications that have been pre-integrated with Microsoft Entra ID. All you need to do is find the application in the gallery and add it to your environment. Then, the application will be available for you to include in the scope of your multifactor authentication and conditional access rules. See [Overview of the Microsoft Entra application gallery](/azure/active-directory/manage-apps/overview-application-gallery).
 
-After you add SaaS apps to your environment, these apps will automatically be protected with Azure AD Multi-Factor Authentication and the other protections provided by security defaults. If you're using Conditional Access policies instead of security defaults, you need to add these apps to the scope of your Conditional Access and related policies. See [Security defaults and multi-factor authentication](/microsoft-365/business-premium/m365bp-conditional-access).
+After you add SaaS apps to your environment, these apps will automatically be protected with Microsoft Entra multifactor authentication and the other protections provided by security defaults. If you're using Conditional Access policies instead of security defaults, you need to add these apps to the scope of your Conditional Access and related policies. See [Security defaults and multifactor authentication](/microsoft-365/business-premium/m365bp-conditional-access).
 
-Azure AD determines when a user will be prompted for multi-factor authentication based on factors such as location, device, role, and task. This functionality protects all applications registered with Azure AD, including SaaS applications. See [Providing a default level of security in Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#require-users-to-do-multifactor-authentication-when-necessary).
+Microsoft Entra ID determines when a user will be prompted for multifactor authentication based on factors such as location, device, role, and task. This functionality protects all applications registered with Microsoft Entra ID, including SaaS applications. See [Providing a default level of security in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#require-users-to-do-multifactor-authentication-when-necessary).
 
 | Zero Trust principle | Met by |
 |---------|---------|
-| Verify explicitly | All SaaS apps you add require multi-factor authentication for access. |
+| Verify explicitly | All SaaS apps you add require multifactor authentication for access. |
 | Use least privileged access | Users must meet authentication requirements to use apps that access company data. |
-| Assume breach | Factors, such as location, device, role, and task are considered when users are authenticated. Multi-factor authentication is used when necessary. |
-
+| Assume breach | Factors, such as location, device, role, and task are considered when users are authenticated. Multifactor authentication is used when necessary. |

@@ -16,7 +16,7 @@ ms.reviewer: mas
 
 A critical component of [securing privileged access](overview.md) is the application of zero trust policy to ensure that devices, accounts, and intermediaries meet security requirements before providing access. 
 
-This policy ensures users and devices initiating the inbound session are known, trusted, and allowed to access the resource (via the interface). The policy enforcement is performed by the Azure AD Conditional Access policy engine that evaluates policy assigned to the specific application interface (such as Azure portal, Salesforce, Office 365, AWS, Workday, and others).
+This policy ensures users and devices initiating the inbound session are known, trusted, and allowed to access the resource (via the interface). The policy enforcement is performed by the Microsoft Entra Conditional Access policy engine that evaluates policy assigned to the specific application interface (such as Azure portal, Salesforce, Office 365, AWS, Workday, and others).
 	
 ![Protecting resources by protecting interfaces](./media/privileged-access-interfaces/control-access-using-interfaces.png)
 
@@ -37,7 +37,7 @@ Interfaces come in different forms, typically as:
 - Desktop Console managing an on-premises application (Microsoft Management Console (MMC) or custom application)
 - Scripting/Console Interface such as Secure Shell (SSH) or PowerShell 
 
-While some of these directly support Zero Trust enforcement via the Azure AD Conditional Access policy engine, some of them will need to be published via an [intermediary](privileged-access-intermediaries.md) such as Azure AD App Proxy or Remote Desktop / jump server. 
+While some of these directly support Zero Trust enforcement via the Microsoft Entra Conditional Access policy engine, some of them will need to be published via an [intermediary](privileged-access-intermediaries.md) such as Microsoft Entra application proxy or Remote Desktop / jump server. 
 
 ## Interface security 
 
@@ -65,7 +65,7 @@ Establishing interface security assurances requires a combination of security co
       - Multi-factor authentication usage during initial logon (or added later to increase trust)
       - Whether this session matches historical behavior patterns
       - Whether the account or current session triggers any alerts based on threat intelligence
-      - [Azure AD Identity Protection risk](/azure/active-directory/identity-protection/overview-identity-protection#risk-detection-and-remediation)
+      - [Microsoft Entra ID Protection risk](/azure/active-directory/identity-protection/overview-identity-protection#risk-detection-and-remediation)
 - Role-based access control (RBAC) model that combines enterprise directory groups/permissions and application-specific roles, groups, and permissions
 - Just in time access workflows that ensure specific requirements for privileges (peer approvals, audit trail, privileged expiration, etc.) are enforced before allowing privileges the account is eligible for. 
 

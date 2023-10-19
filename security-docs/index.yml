@@ -211,7 +211,7 @@ additionalContent:
         # Card
         - title: Strategy and planning
           links:
-            - text: Azure Active Directory and hybrid identity
+            - text: Microsoft Entra ID and hybrid identity
               url: /azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-active-directory-hybrid-identity
             - text: Develop a privileged access strategy
               url: /security/privileged-access-workstations/privileged-access-strategy
@@ -223,7 +223,7 @@ additionalContent:
           links:
             - text: Identity architecture design
               url: /azure/architecture/identity/identity-start-here
-            - text: Azure Active Directory architecture
+            - text: Microsoft Entra architecture
               url: /azure/active-directory/fundamentals/active-directory-architecture
             - text: Zero Trust user access (video)
               url: https://www.youtube.com/watch?v=4alqTPMtSzU&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=16
@@ -235,7 +235,7 @@ additionalContent:
           links:
             - text: Deploy identity protection
               url: /azure/active-directory/identity-protection/how-to-deploy-identity-protection
-            - text: Guidance for Azure AD premium 2 customers
+            - text: Guidance for Microsoft Entra ID P1 or P2 customers
               url: /azure/active-directory/fundamentals/concept-secure-remote-workers#guidance-for-azure-ad-premium-plan-2-customers
             - text: Privilege access deployment
               url: /security/privileged-access-workstations/privileged-access-deployment

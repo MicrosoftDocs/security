@@ -231,7 +231,7 @@ Your stakeholder team for this business scenario includes leaders across your or
 | Architecture lead | Technical requirements, architecture, reviews, decisions, and prioritization. |
 | End user security and usability (EUC) lead | Your users’ needs and feedback. |
 | Device management architect | The strategy for protecting organization data on devices, including managing devices. |
-| App management lead | Prioritization and tech requirements for app investments, including bringing apps up to standards with modern authentication and Azure AD Conditional Access policies. |
+| App management lead | Prioritization and tech requirements for app investments, including bringing apps up to standards with modern authentication and Microsoft Entra Conditional Access policies. |
 | Service admins |  Tenant environment (preparation, testing, configuration). |
 | Business unit representatives | Need and feedback from your business units. |
 
@@ -252,7 +252,7 @@ In Stage 1, you begin to understand your current security posture. You start the
 | Identify risks to your organization| [Implement security across the enterprise environment](/azure/cloud-adoption-framework/get-started/security) <br><br> This getting started guide outlines the key steps that can mitigate or avoid the business risk from cybersecurity attacks. It can help you rapidly establish essential security practices in the cloud and integrate security into your cloud adoption process. <br><br> Also see the resources earlier in this article: <br> <ul><li> Tabletop exercises </li><li> ISO standards </li></ul> |
 | Identify gaps in your security posture| [Zero Trust concepts and deployment objectives](/security/zero-trust/deploy/overview)  <br><br> This series of articles provides recommendations by area (such as identity and endpoints). You can use these articles to assess how many of the recommendations are already complete and which ones remain. <br><br> Also, the planning resources in the [other business scenarios](zero-trust-adoption-overview.md#business-scenarios) include recommended resources for doing this work. |
 | Capture your initial Secure Score status| [Assess your security posture with Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-improvement-actions) <br><br> Understanding your initial Secure Score enables you to set quantifiable security goals and measure progress over time. It also enables you to recognize downward trends in your posture, facilitating justification for more modern feature deployments. |
-| Identify regulatory requirements| Check in with your compliance team to learn about the regulations your organization is subject to. List the regulatory and governance frameworks and any audit findings or specific controls that must be met towards achieving secure compliance status. <br><br> Take a look at [Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-manager) to see if your organization has started tracking progress against specific requirements. Some of the most commonly required standards and how to configure Azure AD for compliance can be found in our [standards documentation library](/azure/active-directory/standards/azure-ad-pci-dss-mfa). |
+| Identify regulatory requirements| Check in with your compliance team to learn about the regulations your organization is subject to. List the regulatory and governance frameworks and any audit findings or specific controls that must be met towards achieving secure compliance status. <br><br> Take a look at [Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-manager) to see if your organization has started tracking progress against specific requirements. Some of the most commonly required standards and how to configure Microsoft Entra ID for compliance can be found in our [standards documentation library](/azure/active-directory/standards/azure-ad-pci-dss-mfa). |
 | Set leadership expectations | Use the [overview article](zero-trust-adoption-overview.md) as a resource to facilitate conversations with your leadership team on Zero Trust. It frames security as a business imperative and defines zero trust specific to leadership roles. Use the progress slides in the [Business Scenarios section](zero-trust-adoption-overview.md#business-scenarios) to present the work and track your progress at a high level for business leaders and other stakeholders. |
 
 ### Stage 2
@@ -271,7 +271,7 @@ In this stage, you develop a response readiness plan for common types of attacks
 
 For each of the following scenarios, consider a tabletop exercise that documents the current response to the loss of access to:
 
-- Authentication: Azure AD or your on-premises Active Directory Domain Services (AD DS)
+- Authentication: Microsoft Entra ID or your on-premises Active Directory Domain Services (AD DS)
 - Productivity: Tenant lockout
 - Data loss: Malicious deletion or encryption of data, random scenarios
 - Data leak: Exfiltration of data for industrial or nation state espionage, WikiLeaks

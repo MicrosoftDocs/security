@@ -20,7 +20,7 @@ This article provides steps to apply the principles of Zero Trust to IaaS applic
 | Zero Trust Principle | Definition | Met by |
 | --- | --- | --- |
 | Verify explicitly | Always authenticate and authorize based on all available data points. | Security in DevOps (DevSecOps), using GitHub advanced security and DevOps, scans and secures your infrastructure as code. |
-| Use least-privilege access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | <ul><li> Microsoft Entra Permissions Management detects, right-sizes, and monitors unused and excessive permissions. </li><li> Privileged Identity Management (PIM), a service in Azure Active Directory (Azure AD) Premium P2, allows you to manage, control, and monitor access to important resources in your organization. </li><li> Assign users role-based access control (RBAC) to resources at the repository level, team level, or organization level. </li></ul> |
+| Use least-privilege access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | <ul><li> Microsoft Entra Permissions Management detects, right-sizes, and monitors unused and excessive permissions. </li><li> Privileged Identity Management (PIM), a service in Microsoft Entra ID P2, allows you to manage, control, and monitor access to important resources in your organization. </li><li> Assign users role-based access control (RBAC) to resources at the repository level, team level, or organization level. </li></ul> |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | <ul><li> Microsoft Defender for Cloud and Microsoft Defender for Endpoint (Microsoft 365) continuously scan the environment for threats and vulnerabilities. </li><li> Microsoft Sentinel analyzes collected data, behavioral trend of entities, anomalies, and multi-stage threats across enterprises to detect suspicious activity, and can respond with automation. </li></ul> |
 
 For more information about how to apply the principles of Zero Trust across an Azure IaaS environment, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
@@ -311,7 +311,7 @@ To implement tasks, see:
 This section covers a key pillar of DevSecOps, scanning and securing your infrastructure as code.
 For infrastructure as code, security and DevOps teams should monitor for misconfigurations that can lead to vulnerabilities in your infrastructure deployments.
 
-By implementing continuous checks on Azure Resource Manager (ARM), Bicep, or Terraform templates, you prevent breaches and exploits early in development, when they're less costly to fix. You also want to maintain tight control of administrators and service account groups across Azure AD and your DevOps tool.  
+By implementing continuous checks on Azure Resource Manager (ARM), Bicep, or Terraform templates, you prevent breaches and exploits early in development, when they're less costly to fix. You also want to maintain tight control of administrators and service account groups across Microsoft Entra ID and your DevOps tool.  
 
 You implement the Zero Trust **use least-privilege access** principle by:
 

@@ -664,11 +664,12 @@ Note the differences between the Application (and ID) to the Resource (and ID). 
 With this AppID, you can now perform research in the tenant. Here's an example:
 
 ```powershell
-Get-MgApplication -Filter "AppId eq '30d4cbf1-c561-454e-bf01-528cd5eafd58'"
+Get-AzureADApplication -Filter "AppId eq '30d4cbf1-c561-454e-bf01-528cd5eafd58'"
+```
+```Output
+ObjectId                              |   AppId                                |    DisplayName
 
-Id                              |   AppId DisplayName
-
-3af6dc4e-b0e5-45ec-8272-56f3f3f875ad     30d4cbf1-c561-454e-bf01-528cd5eafd58 Claims X-Ray
+3af6dc4e-b0e5-45ec-8272-56f3f3f875ad     30d4cbf1-c561-454e-bf01-528cd5eafd58         Claims X-Ray
 ```
 
 With this information, you can search in the Enterprise Applications portal. Navigate to **All Applications** and search for the specific AppID.

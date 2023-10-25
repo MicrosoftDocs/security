@@ -39,6 +39,46 @@ landingContent:
         - text: What are common types of malware that are used in ransomware campaigns?
           url:  human-operated-ransomware.md
 
+  # Card 
+  - title: Prevalent ransomware trends
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: Recent Microsoft social media posts about ransomware
+          url:  https://twitter.com/MsftSecIntel/status/1717219375181152764?s=20
+        - text: Recent Microsoft Security ransomware blog
+          url:  https://www.microsoft.com/security/blog/2023/10/25/octo-tempest-crosses-boundaries-to-facilitate-extortion-encryption-and-destruction/
+        - text: Hands-on-keyboard (HOK) and pre-HOK attacks
+          url:  https://www.microsoft.com/security/blog/2021/11/15/ai-driven-adaptive-protection-against-human-operated-ransomware/
+        - text: Tampering
+          url:  https://www.microsoft.com/security/blog/2023/09/26/new-security-features-in-windows-11-protect-users-and-empower-it/
+        - text: Remote encryption 
+          url:  https://learn.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders?view=o365-worldwide
+        - text: Threat actor highlight - BlackCat
+          url:  https://www.microsoft.com/security/blog/2022/06/13/the-many-lives-of-blackcat-ransomware/
+
+# Card
+  - title: Blogs
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: Ransomware as a service. Understanding the cybercrime gig economy and how to protect yourself
+          url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
+        - text: Sharing how Microsoft protects against ransomware
+          url:  https://www.microsoft.com/insidetrack/blog/sharing-how-microsoft-protects-against-ransomware/
+        - text: Why Microsoft uses a playbook to guard against ransomware
+          url:  https://www.microsoft.com/insidetrack/blog/why-microsoft-uses-a-playbook-to-guard-against-ransomware/
+        - text: Building an anti-ransomware program at Microsoft focused on an Optimal Ransomware Resiliency State
+          url:  https://www.microsoft.com/insidetrack/blog/building-an-anti-ransomware-program-at-microsoft-focused-on-an-optimal-ransomware-resiliency-state/
+        - text: DEV-0569 finds new ways to deliver Royal ransomware, various payloads
+          url:  https://www.microsoft.com/security/blog/2022/11/17/dev-0569-finds-new-ways-to-deliver-royal-ransomware-various-payloads/
+        - text: Stopping C2 communications in human-operated ransomware through network protection
+          url:  https://www.microsoft.com/security/blog/2022/11/03/stopping-c2-communications-in-human-operated-ransomware-through-network-protection
+        - text: Raspberry Robin worm part of larger ecosystem facilitating pre-ransomware activity
+          url:  https://www.microsoft.com/security/blog/2022/10/27/raspberry-robin-worm-part-of-larger-ecosystem-facilitating-pre-ransomware-activity/
+        - text: DEV-0832 (Vice Society) opportunistic ransomware campaigns impacting US education sector
+          url:  https://www.microsoft.com/security/blog/2022/10/25/dev-0832-vice-society-opportunistic-ransomware-campaigns-impacting-us-education-sector/
+
 # Card
   - title: Protect against ransomware and extortion
     linkLists:
@@ -52,7 +92,6 @@ landingContent:
           url: protect-against-ransomware-phase2.md
         - text: Make it hard to get in
           url: protect-against-ransomware-phase3.md
-
 
 # Card
   - title: Defense against ransomware
@@ -80,27 +119,6 @@ landingContent:
         - text: Microsoft Defender Threat Intelligence 
           url:  /microsoft-365/security/defender/defender-threat-intelligence
 
-# Card
-  - title: Blogs
-    linkLists:
-      - linkListType: reference
-        links:
-        - text: Ransomware as a service. Understanding the cybercrime gig economy and how to protect yourself
-          url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
-        - text: Sharing how Microsoft protects against ransomware
-          url:  https://www.microsoft.com/insidetrack/blog/sharing-how-microsoft-protects-against-ransomware/
-        - text: Why Microsoft uses a playbook to guard against ransomware
-          url:  https://www.microsoft.com/insidetrack/blog/why-microsoft-uses-a-playbook-to-guard-against-ransomware/
-        - text: Building an anti-ransomware program at Microsoft focused on an Optimal Ransomware Resiliency State
-          url:  https://www.microsoft.com/insidetrack/blog/building-an-anti-ransomware-program-at-microsoft-focused-on-an-optimal-ransomware-resiliency-state/
-        - text: DEV-0569 finds new ways to deliver Royal ransomware, various payloads
-          url:  https://www.microsoft.com/security/blog/2022/11/17/dev-0569-finds-new-ways-to-deliver-royal-ransomware-various-payloads/
-        - text: Stopping C2 communications in human-operated ransomware through network protection
-          url:  https://www.microsoft.com/security/blog/2022/11/03/stopping-c2-communications-in-human-operated-ransomware-through-network-protection
-        - text: Raspberry Robin worm part of larger ecosystem facilitating pre-ransomware activity
-          url:  https://www.microsoft.com/security/blog/2022/10/27/raspberry-robin-worm-part-of-larger-ecosystem-facilitating-pre-ransomware-activity/
-        - text: DEV-0832 (Vice Society) opportunistic ransomware campaigns impacting US education sector
-          url:  https://www.microsoft.com/security/blog/2022/10/25/dev-0832-vice-society-opportunistic-ransomware-campaigns-impacting-us-education-sector/
 # Card
   - title: Ransomware incident response playbooks
     linkLists:

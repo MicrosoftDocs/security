@@ -56,6 +56,9 @@ landingContent:
           url:  https://learn.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders?view=o365-worldwide
         - text: Threat actor highlight - BlackCat
           url:  https://www.microsoft.com/security/blog/2022/06/13/the-many-lives-of-blackcat-ransomware/
+        - text: Insights on ransomware and extortion - Microsoft Digital - Defense Report 2023
+          url:  https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023
+
 
 # Card
   - title: Blogs

@@ -668,7 +668,7 @@ Get-MgApplication -Filter "AppId eq '30d4cbf1-c561-454e-bf01-528cd5eafd58'"
 ```
 
 ```Output
-Id                                 AppId                                    DisplayName
+Id                              |   AppId                                |    DisplayName
 
 3af6dc4e-b0e5-45ec-8272-56f3f3f875ad     30d4cbf1-c561-454e-bf01-528cd5eafd58         Claims X-Ray
 ```

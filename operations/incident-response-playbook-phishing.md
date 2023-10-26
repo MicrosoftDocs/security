@@ -20,7 +20,10 @@ ms.collection:
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
-ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref
+ms.custom: 
+  - cxdef-zt-ransomware
+  - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ---
 
 # Phishing investigation
@@ -663,11 +666,13 @@ Note the differences between the Application (and ID) to the Resource (and ID). 
 With this AppID, you can now perform research in the tenant. Here's an example:
 
 ```powershell
-Get-AzureADApplication -Filter "AppId eq '30d4cbf1-c561-454e-bf01-528cd5eafd58'"
+Get-MgApplication -Filter "AppId eq '30d4cbf1-c561-454e-bf01-528cd5eafd58'"
+```
 
-ObjectId                              |   AppId                                |    DisplayName
+```Output
+Id                                       AppId                                    DisplayName
 
-3af6dc4e-b0e5-45ec-8272-56f3f3f875ad     30d4cbf1-c561-454e-bf01-528cd5eafd58         Claims X-Ray
+3af6dc4e-b0e5-45ec-8272-56f3f3f875ad     30d4cbf1-c561-454e-bf01-528cd5eafd58     Claims X-Ray
 ```
 
 With this information, you can search in the Enterprise Applications portal. Navigate to **All Applications** and search for the specific AppID.

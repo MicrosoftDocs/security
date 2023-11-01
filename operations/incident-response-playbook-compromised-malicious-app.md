@@ -16,7 +16,6 @@ localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - zerotrust-solution
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d

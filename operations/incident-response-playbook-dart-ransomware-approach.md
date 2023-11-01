@@ -16,7 +16,6 @@ manager: dansimp
 localization_priority: Normal
 audience: ITPro
 ms.collection: 
-  - zerotrust-solution
   - msftsolution-ransomware
 ms.topic: article
 ms.subservice:: m365d

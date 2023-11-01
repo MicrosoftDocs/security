@@ -79,7 +79,7 @@ Microsoft 365 E3 includes Microsoft Entra ID P1 licenses. With this plan, Micros
 
 Ensure that you include Microsoft 365 Services and your other SaaS apps in the scope of these policies. 
 
-If your environment includes hybrid identities with on-premises Active Directory Domain Services, be sure to deploy [Microsoft Entra Password Protection](azure/active-directory/authentication/concept-password-ban-bad-on-premises). This capability detects and blocks known weak passwords and their variants and can also block additional weak terms within passwords that are specific to your organization. 
+If your environment includes hybrid identities with on-premises Active Directory Domain Services, be sure to deploy [Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises). This capability detects and blocks known weak passwords and their variants and can also block additional weak terms within passwords that are specific to your organization. 
 
 ### Next steps with E5
 
@@ -167,7 +167,7 @@ Microsoft Defender for Office 365 P1 includes Exchange Online Protection (EOP), 
 Microsoft 365 E3 includes Microsoft Defender for Endpoint P1, which includes the following capabilities:
 
 - [Next-generation protection](/microsoft-365/security/defender-endpoint/next-generation-protection) – Helps protect your devices from emerging threats in real-time. This capability includes Microsoft Defender Antivirus, which continually scans your device using file and process behavior monitoring. 
-- [Attack surface reduction](microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) – Prevents attacks from happening in the first place by configuring settings that automatically block potentially suspicious activity. 
+- [Attack surface reduction](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) – Prevents attacks from happening in the first place by configuring settings that automatically block potentially suspicious activity. 
 
 Use the following resources to configure Defender for Endpoint Plan 1:
 
@@ -277,7 +277,7 @@ For collaborating with people outside your organization, see these resources:
 - [Collaborate on documents](/microsoft-365/solutions/collaborate-on-documents) to share individual files or folders
 - [Collaborate on a site](/microsoft-365/solutions/collaborate-in-site) for guests in a SharePoint site
 - [Collaborate as a team](/microsoft-365/solutions/collaborate-as-team) for guests in a team
-- [Collaborate with external participants in a channel](/solutions/collaborate-teams-direct-connect) for people outside the organization in a shared channel
+- [Collaborate with external participants in a channel](/microsoft-365/solutions/collaborate-teams-direct-connect) for people outside the organization in a shared channel
 
 ## Step 7. Deploy or validate minimum user permissions to data
 
@@ -291,7 +291,7 @@ To detect existing oversharing:
 
 - At the file level 
 
-  Use [Microsoft Purview's Information Protection](/security/business/information-protection/microsoft-purview-information-protection), along with its data classification controls, integrated content labeling, and corresponding data loss prevention policies. 
+  Use [Microsoft Purview's Information Protection](https://www.microsoft.com/security/business/information-protection/microsoft-purview-information-protection), along with its data classification controls, integrated content labeling, and corresponding data loss prevention policies. 
 
   These can help you identify files in Microsoft Teams, SharePoint sites, OneDrive locations, within email, and in chat conversations either containing sensitive information or classified content, then automatically apply controls to limit their access.
 

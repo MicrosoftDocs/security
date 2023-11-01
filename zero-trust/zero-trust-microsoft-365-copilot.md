@@ -15,14 +15,14 @@ ms.collection:
 
 # Apply principles of Zero Trust to Microsoft 365 Copilot
 
-Before introducing Microsoft 365 Copilot into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
+Before you introduce Microsoft 365 Copilot into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
 
 This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) security to prepare your environment for Microsoft 365 Copilot in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
 | Verify explicitly | Always authenticate and authorize based on all available data points. | Enforce the validation of user credentials, device requirements, and app permissions and behaviors. |
-| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Validate JEA across your organization to eliminate oversharing by ensuring that correct permissions have been assigned to files, folders, Teams, and email. Use sensitivity labels and data loss prevention policies to protect data.  |
+| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Validate JEA across your organization to eliminate oversharing by ensuring that correct permissions are assigned to files, folders, Teams, and email. Use sensitivity labels and data loss prevention policies to protect data.  |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Use Exchange Online Protection (EOP) and Microsoft 365 Defender services to automatically prevent common attacks and to detect and respond to security incidents. |
 
 For the basics of Microsoft 365 Copilot, see the [overview](/microsoft-365-copilot/microsoft-365-copilot-overview) and [how to get started](/microsoft-365-copilot/microsoft-365-copilot-setup).
@@ -58,28 +58,28 @@ This article walks you through the steps to apply the principles of Zero Trust t
 
 Because different organizations can be at various stages of deploying Zero Trust protections, in each of these steps:
 
-- If you are NOT using any of the protections described in the step, take the time to pilot and deploy them prior to assigning Microsoft 365 Copilot licenses.
-- If you have deployed some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated and pilot and deploy them prior to assigning Microsoft 365 Copilot licenses.
+- If you're NOT using any of the protections described in the step, take the time to pilot and deploy them prior to assigning Microsoft 365 Copilot licenses.
+- If you're using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated and pilot and deploy them prior to assigning Microsoft 365 Copilot licenses.
 
 ## Step 1. Deploy or validate your Conditional Access policies
 
 To prevent bad actors from using Microsoft 365 Copilot to more quickly discover and access sensitive data, the first step is to prevent the bad actors from being authenticated. You must ensure that:
 
-- Users are required to use strong authentication that cannot be compromised by guessing user passwords alone.
-- Authentication attempts are evaluated for their risk and have additional requirements imposed.
+- Users are required to use strong authentication that can't be compromised by guessing user passwords alone.
+- Authentication attempts are evaluated for their risk and have more requirements imposed.
 - You can perform reviews of access granted to user accounts to prevent oversharing.
 
 ### Getting started with E3
 
 Microsoft 365 E3 includes Microsoft Entra ID P1 licenses. With this plan, Microsoft recommends using [common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation), which are the following:
 
-- [Require multi-factor authentication (MFA) for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [Require multifactor authentication (MFA) for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 - [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
 - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 
 Ensure that you include Microsoft 365 Services and your other SaaS apps in the scope of these policies. 
 
-If your environment includes hybrid identities with on-premises Active Directory Domain Services, be sure to deploy [Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises). This capability detects and blocks known weak passwords and their variants and can also block additional weak terms within passwords that are specific to your organization. 
+If your environment includes hybrid identities with on-premises Active Directory Domain Services, be sure to deploy [Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises). This capability detects and blocks known weak passwords and their variants and can also block more weak terms within passwords that are specific to your organization. 
 
 ### Next steps with E5
 
@@ -90,7 +90,7 @@ Microsoft 365 E5 includes Microsoft Entra ID P2 licenses. Begin implementing Mic
 
 For more information about implementing protection for identity and access based on your licensing plan, see [Increase sign-in security for hybrid workers with MFA](/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in).
 
-Microsoft 365 E5 and Microsoft Entra ID P2 both include additional protection for privileged accounts. Implement the capabilities summarized in the following table.
+Microsoft 365 E5 and Microsoft Entra ID P2 both include more protection for privileged accounts. Implement the capabilities summarized in the following table.
 
 | Capability | Resources |
 | --- | --- |
@@ -103,15 +103,15 @@ Finally, consider implementing [access reviews](/azure/active-directory/governan
 
 For both Microsoft 365 E3 and E5, use [Intune App Protection policies (APP)](/mem/intune/apps/app-protection-policy), which are rules that ensure an organization's data remains safe or contained within a managed app.
 
-With APP, Intune creates a wall between your organization data and personal data. APP ensure that organization data in the apps you specify cannot be copied and pasted to other apps on the device, even if the device is not managed.
+With APP, Intune creates a wall between your organization data and personal data. APP ensure that organization data in specified apps can't be copied and pasted to other apps on the device, even if the device is not managed.
 
-APP can prevent the inadvertent or intentional copying of Copilot-generated content to apps on a device that are not included in the list of permitted apps. This can limit the blast radius of an attacker using a compromised device.
+APP can prevent the inadvertent or intentional copying of Copilot-generated content to apps on a device that aren't included in the list of permitted apps. APP can limit the blast radius of an attacker using a compromised device.
 
 For more information, see [Create App Protection policies](/mem/intune/apps/app-protection-policies).
 
 ## Step 3. Deploy or validate your device management and protection
 
-To prevent bad actors from compromising devices or using compromised devices and subsequently gaining access to Microsoft 365 Copilot, the next step is to use Microsoft 365 features of device management and protection. You must ensure that:
+To prevent bad actors from compromising devices or using compromised devices and gaining access to Microsoft 365 Copilot, the next step is to use Microsoft 365 features of device management and protection. You must ensure that:
 
 - Devices are enrolled in Microsoft Intune and must meet health and compliance requirements.
 - You can administer settings and features on devices.
@@ -134,9 +134,9 @@ To deploy these protections, use the following set of articles.
 
 ### Next steps with E5
 
-Microsoft 365 E5 also includes Microsoft Defender for Endpoint. After your organization has deployed Microsoft Defender for Endpoint, you can gain greater insights and protection of your devices by integrating Microsoft Intune with Defender for Endpoint. For mobile devices, this includes the ability to monitor device risk as a condition for access. For Windows devices, you can monitor compliance of these devices to security baselines.
+Microsoft 365 E5 also includes Microsoft Defender for Endpoint. After you have deployed Microsoft Defender for Endpoint, you can gain greater insights and protection of your devices by integrating Microsoft Intune with Defender for Endpoint. For mobile devices, this includes the ability to monitor device risk as a condition for access. For Windows devices, you can monitor compliance of these devices to security baselines.
 
-Microsoft 365 E5 also includes endpoint data loss prevention (DLP). If your organization has already put the time into understanding your data, developing a data sensitivity schema, and applying the schema, you might be ready to extend elements of this schema to endpoints by using Microsoft Purview DLP policies.
+Microsoft 365 E5 also includes endpoint data loss prevention (DLP). If your organization already understands your data, has developed a data sensitivity schema, and applied the schema, you might be ready to extend elements of this schema to endpoints by using Microsoft Purview DLP policies.
 
 To deploy these device protection and management capabilities, use the following articles:
 
@@ -157,7 +157,7 @@ Microsoft 365 E3 includes several key capabilities in Defender for Office 365 an
 
 #### Microsoft Defender for Office 365 P1
 
-Microsoft Defender for Office 365 P1 includes Exchange Online Protection (EOP), which are included in Microsoft 365 E3. EOP helps protect your email and collaboration tools from phishing, impersonation, and other threats. Use the following resources to configure anti-malware, anti-spam, and anti-phishing protection:
+Microsoft Defender for Office 365 P1 includes Exchange Online Protection (EOP), which are included in Microsoft 365 E3. EOP helps protect your email and collaboration tools from phishing, impersonation, and other threats. Use these to configure anti-malware, anti-spam, and anti-phishing protection:
 
 - [EOP overview ](/microsoft-365/security/office-365-security/eop-about)
 - [Preset security policies ](/microsoft-365/security/office-365-security/preset-security-policies)
@@ -169,7 +169,7 @@ Microsoft 365 E3 includes Microsoft Defender for Endpoint P1, which includes the
 - [Next-generation protection](/microsoft-365/security/defender-endpoint/next-generation-protection) – Helps protect your devices from emerging threats in real-time. This capability includes Microsoft Defender Antivirus, which continually scans your device using file and process behavior monitoring. 
 - [Attack surface reduction](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) – Prevents attacks from happening in the first place by configuring settings that automatically block potentially suspicious activity. 
 
-Use the following resources to configure Defender for Endpoint Plan 1:
+Use these to configure Defender for Endpoint Plan 1:
 
 - [Overview of Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Set up and configure](/microsoft-365/security/defender-endpoint/mde-p1-setup-configuration)
@@ -188,7 +188,7 @@ By default, Windows includes strong security and protections across hardware, op
 | BitLocker | [Overview of BitLocker device encryption](/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-device-encryption-overview-windows-10) |
 | Microsoft Defender Application Guard for Edge | [Microsoft Defender Application Guard overview](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview) |
 
-These can be configured directly on the client, by using Group Policy Objects (GPOs), or by using a device management tool, including Intune. However, you can manage settings on devices in Intune only by deploying [configuration profiles](/microsoft-365/solutions/manage-devices-with-intune-configuration-profiles), which is a feature of Microsoft 365 E5.
+These capabilities can be configured directly on the client, by using Group Policy Objects (GPOs), or by using a device management tool, including Intune. However, you can manage settings on devices in Intune only by deploying [configuration profiles](/microsoft-365/solutions/manage-devices-with-intune-configuration-profiles), which is a feature of Microsoft 365 E5.
 
 ### Next steps with E5
 
@@ -205,7 +205,7 @@ Microsoft recommends enabling the components of Microsoft 365 in the order illus
  
 For more information and a description of this illustration, see [Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview#the-evaluation-process-for-microsoft-365-defender-cyber-security).
 
-After deploying Microsoft 365 Defender, integrate these eXtended detection and response (XDR) tools with Microsoft Sentinel. Microsoft Sentinel is licensed and billed separately from Microsoft 365 E5. See the following resources for more information:
+After deploying Microsoft 365 Defender, integrate these eXtended detection and response (XDR) tools with Microsoft Sentinel. Microsoft Sentinel is licensed and billed separately from Microsoft 365 E5. Use these for more information:
 
 - [Implement Microsoft Sentinel and Microsoft 365 Defender for Zero Trust](/security/operations/siem-xdr-overview)
 - [Plan costs and understanding Microsoft Sentinel pricing and billing](/azure/sentinel/billing?tabs=simplified%2Ccommitment-tiers)
@@ -215,16 +215,16 @@ After deploying Microsoft 365 Defender, integrate these eXtended detection and r
 To prevent bad actors accessing your organization’s data with Microsoft 365 Copilot, the next step is to protect the data in your Microsoft 365 tenant. You must ensure that:
 
 - Your data is categorized with sensitivity levels.
-- Your sensitivity levels are represented by sensitivity labels that are applied by users or automatically.
+- Sensitivity labels represent your sensitivity levels that are applied by users or automatically.
 - You can view how sensitivity labels are being used in your Microsoft 365 tenant.
 
 These data protection capabilities can also be used to ensure that your organization complies with data regulations, such as those dealing with protecting personal information.
 
 ### Getting started with E3
 
-[Sensitivity labels](/purview/sensitivity-labels) form the cornerstone of protecting your data. Before you create the labels to denote the sensitivity of items and the protection actions to be applied, you must understand your organization’s existing classification taxonomy and how it will map to labels that users will see and apply in apps. After you’ve created the sensitivity labels, publish them, and provide guidance to users how and when to apply them in Word, Excel, PowerPoint, and Outlook. 
+[Sensitivity labels](/purview/sensitivity-labels) form the cornerstone of protecting your data. Before you create the labels to denote the sensitivity of items and the protection actions that are applied, you must understand your organization’s existing classification taxonomy and how it maps to labels that users see and apply in apps. After creating the sensitivity labels, publish them, and provide guidance to users how and when to apply them in Word, Excel, PowerPoint, and Outlook. 
 
-For more information, see the following resources:
+For more information, see these resources:
 
 - [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels)
 - [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels)
@@ -236,7 +236,7 @@ See these additional steps to protect your organization’s data:
 
 - [Create DLP policies](/purview/dlp-learn-about-dlp) for files and email.
 - [Create retention policies](/purview/create-retention-policies) to keep what you need and delete what you don’t.
-- [Use content explorer](/purview/data-classification-content-explorer) to see and verify items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization.
+- [Use content explorer](/purview/data-classification-content-explorer) to see and verify items that have a sensitivity label, a retention label, or were classified as a sensitive information type in your organization.
 
 ### Next Steps with E5
 
@@ -264,9 +264,9 @@ See these resources for more information:
 
 ### External sharing
 
-Introducing Microsoft 365 Copilot is a good time to review your policies for sharing files with people outside your organization and for allowing external contributors. Note that guest accounts are not licensed to use Microsoft 365 Copilot.
+Introducing Microsoft 365 Copilot is a good time to review your policies for sharing files with people outside your organization and for allowing external contributors. Guest accounts aren't licensed to use Microsoft 365 Copilot.
 
-For sharing with people outside your organization, you may need to share information of any sensitivity. See these resources:
+For sharing with people outside your organization, you might need to share information of any sensitivity. See these resources:
 
 - [Apply best practices for sharing files and folders with unauthenticated users](/microsoft-365/solutions/best-practices-anonymous-sharing)
 - [Limit accidental exposure to files when sharing with people outside your organization](/microsoft-365/solutions/share-limit-accidental-exposure)
@@ -283,7 +283,7 @@ For collaborating with people outside your organization, see these resources:
 
 To prevent bad actors accessing your organization’s data with Microsoft 365 Copilot, you must ensure that all users have Just Enough Access (JEA) to perform their jobs and no more.
  
-A bad actor can take advantage of resource oversharing, which happens when users do not place adequate permissions on Microsoft 365 resources such as files, folders, or Teams. With oversharing, a bad actor has many more user accounts available to compromise and access possibly sensitive data. With JEA in place, a bad actor must compromise the right user accounts.
+A bad actor can take advantage of resource oversharing, which happens when users don't place adequate permissions on Microsoft 365 resources such as files, folders, or Teams. With oversharing, a bad actor has many more user accounts available to compromise and access possibly sensitive data. With JEA in place, a bad actor must compromise the right user accounts.
 
 To prevent oversharing, implement permissions requirements and organizational policies that all users must follow and train your users to use them. For example, put controls in place, like requiring site access reviews by site owners or restricting access to defined security groups from one central place.
 
@@ -291,13 +291,13 @@ To detect existing oversharing:
 
 - At the file level 
 
-  Use [Microsoft Purview's Information Protection](https://www.microsoft.com/security/business/information-protection/microsoft-purview-information-protection), along with its data classification controls, integrated content labeling, and corresponding data loss prevention policies. 
+  Use [Microsoft Purview's Information Protection](https://www.microsoft.com/security/business/information-protection/microsoft-purview-information-protection) and its data classification controls, integrated content labeling, and corresponding data loss prevention policies. 
 
-  These can help you identify files in Microsoft Teams, SharePoint sites, OneDrive locations, within email, and in chat conversations either containing sensitive information or classified content, then automatically apply controls to limit their access.
+  These features can help you identify files in Microsoft Teams, SharePoint sites, OneDrive locations, within email, and in chat conversations either containing sensitive information or classified content, then automatically apply controls to limit their access.
 
 - At the site team and container level within Microsoft Teams and SharePoint
 
-  You can audit access to shared content at the site and team level and enforce restrictions that will limit information discovery to only those who should have access.
+  You can audit access to shared content at the site and team level and enforce restrictions that limits information discovery to only those who should have access.
 
   To help automate this process even more, [Microsoft Syntex](/microsoft-365/syntex/syntex-overview) provides advanced management capabilities to help find potential oversharing with your SharePoint and Microsoft Teams files.
 
@@ -343,7 +343,7 @@ For a visual summary of the information in this article, see the **Microsoft 365
 
 Use the Visio file to customize these illustrations for your own use.
 
-For additional technical illustrations, click [here](zero-trust-tech-illus.md).
+For more technical illustrations, click [here](zero-trust-tech-illus.md).
 
 ## References
 

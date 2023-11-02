@@ -293,7 +293,7 @@ Also, as part of this deployment, you should ensure that the service-specific fi
 
 For the Azure SQL database, you'll need to [manage its server-level IP firewall rules](/azure/azure-sql/database/firewall-configure). Ensure that *Public network access* is set to **Disable** from the networking panel in the Azure portal.
 
-For the Azure Application Service, adding the private endpoint sets its service level firewall to block inbound access by default. For more information, see [Using Private Endpoints for App Service Apps](/azure/app-service/networking/private-endpoint).
+For the Azure Application Service, adding the private endpoint sets its service level firewall to block inbound access by default. For more information, see [Using Private Endpoints for App Service apps](/azure/app-service/networking/private-endpoint).
 
 ### Deploy VNet integration for egress
 

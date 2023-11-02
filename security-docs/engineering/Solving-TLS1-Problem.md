@@ -62,18 +62,18 @@ Many operating systems have outdated TLS version defaults or support ceilings th
 #### Figure 1: Security Protocol Support by OS Version
 | Windows OS              | SSLv2         | SSLv3    | TLS 1.0     | TLS 1.1 | TLS 1.2 | TLS 1.3 |
 | ----------------------- | ------------- | -------- | ----------- | ------ | ------------------------ | ------ |
-| Windows Vista           | Enabled       | Enabled  | **Default** | Not Supported  | Not Supported | Not Supported |
-| Windows Server 2008     | Enabled       | Enabled  | **Default** | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              | Not Supported |
-| Windows 7 (WS2008 R2)   | Enabled       | Enabled  | **Default** | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | Not Supported |
-| Windows 8 (WS2012)      | Disabled      | Enabled  | Enabled     | Enabled | **Default**   | Not Supported |
-| Windows 8.1 (WS2012 R2) | Disabled      | Enabled  | Enabled     | Enabled | **Default**| Not Supported |
-| Windows 10                     | Disabled      | Enabled  | Enabled     | Enabled | **Default** | Not Supported | 
-| Windows 11                     | Disabled      | Enabled  | Enabled     | Enabled | **Default** | Not Supported | 
-| Windows Server 2016            | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported |   
-| Windows Server 2016            | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported | 
-| Windows Server 2019            | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported |
-| Windows Server 2019 GS edition | Not Supported | Disabled | Disabled    | Disabled | **Default**| Not Supported |
-| Windows Server 2022            | Not Supported | Disabled | Disabled    | Disabled | Disabled   | **Default** |                                                                        
+| Windows Vista           | Enabled       | Enabled  | Enabled | Not Supported  | Not Supported | Not Supported |
+| Windows Server 2008     | Enabled       | Enabled  | Enabled | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              | Not Supported |
+| Windows 7 (WS2008 R2)   | Enabled       | Enabled  | Enabled | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | Not Supported |
+| Windows 8 (WS2012)      | Disabled      | Enabled  | Enabled     | Enabled | Enabled   | Not Supported |
+| Windows 8.1 (WS2012 R2) | Disabled      | Enabled  | Enabled     | Enabled | Enabled   | Not Supported |
+| Windows 10                     | Disabled      | Enabled  | Enabled     | Enabled | Enabled | Not Supported | 
+| Windows 11                     | Disabled      | Enabled  | Enabled     | Enabled | Enabled | Enabled | 
+| Windows Server 2016            | Not Supported | Disabled | Enabled     | Enabled | Enabled | Not Supported |   
+| Windows Server 2016            | Not Supported | Disabled | Enabled     | Enabled | Enabled | Not Supported | 
+| Windows Server 2019            | Not Supported | Disabled | Enabled     | Enabled | Enabled | Not Supported |
+| Windows Server 2019 GS edition | Not Supported | Disabled | Disabled    | Disabled | Enabled| Not Supported |
+| Windows Server 2022            | Not Supported | Disabled | Disabled    | Disabled | Disabled | Enabled |                                                                        
 
 Windows Server 2019 GS edition is Microsoft SDL compliant, TLS 1.2 only with a restricted set of cipher suites.
 

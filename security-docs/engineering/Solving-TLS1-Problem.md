@@ -2,7 +2,7 @@
 layout: Conceptual
 title: Solving the TLS 1.0 Problem
 description: This document presents guidance on rapidly identifying and removing Transport Layer Security (TLS) protocol version 1.0 dependencies in software built on top of Microsoft operating systems. It is intended to be used as a starting point for building a migration plan to a TLS 1.2+ network environment.
-ms.date: 08/18/2023
+ms.date: 11/02/2023
 ms.service: security
 ms.author: dansimp
 author: dansimp
@@ -73,11 +73,15 @@ version:
 | Windows Server 2008     | Enabled       | Enabled  | **Default** | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              |
 | Windows 7 (WS2008 R2)   | Enabled       | Enabled  | **Default** | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) |
 | Windows 8 (WS2012)      | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
-| Windows 8.1 (WS2012 R2) | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
+| Windows 8.1 (WS2012 R2) | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**|
 | Windows 10              | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
+| Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled                                                                                                                            | **Default**    
 | Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
+|Windows Server 2019 | Not Supported | Disabled | Enabled     | Enabled | **Default** | 
+| Windows Server 2019 GS Sku | Not Supported | Disabled | Enabled     | Enabled | **Default** |
+| Windows Server 2022 | Not Supported | Disabled | Enabled     | Enabled | **Default** |                                                                                              
 
-*TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
+TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
 
 For more information on TLS 1.0/1.1 deprecation in IE/Edge, see [Modernizing TLS connections in Microsoft Edge and Internet Explorer 11](https://blogs.windows.com/msedgedev/2018/10/15/modernizing-tls-edge-ie11/),  [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes) and [Disabling TLS/1.0 and TLS/1.1 in the new Edge Browser](https://textslashplain.com/2020/01/13/disabling-tls-1-0-and-tls-1-1-in-the-new-edge-browser/)
 

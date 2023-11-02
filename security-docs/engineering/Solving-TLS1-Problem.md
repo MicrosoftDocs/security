@@ -60,9 +60,8 @@ partners. Hardcoding here means that the TLS version is fixed to a version that 
 testing and supportability purposes as many different browsers and
 operating systems had varying levels of TLS support.  
 
-## Supported versions of TLS 1.2 in Windows
-Many operating systems have outdated TLS version defaults or support
-ceilings that need to be accounted for.
+## Supported versions of TLS in Windows
+Many operating systems have outdated TLS version defaults or support ceilings that need to be accounted for.
 
 #### Figure 1: Security Protocol Support by OS Version
 | Windows OS              | SSLv2         | SSLv3    | TLS 1.0     | TLS 1.1 | TLS 1.2 | TLS 1.3 |

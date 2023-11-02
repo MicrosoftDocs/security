@@ -75,10 +75,12 @@ ceilings that need to be accounted for.
 | Windows 10              | Disabled      | Enabled  | Enabled     | Enabled | **Default** | Not Supported | 
 | Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported |   
 | Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported | 
-|Windows Server 2019 | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported |
+| Windows Server 2019 | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported |
 | Windows Server 2019 GS Sku | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported |
 | Windows Server 2022 | Not Supported | Disabled | Enabled     | Enabled | Default |  **Default** |                                                                        
 
+Windows Server 2019 GS edition is Microsoft SDL compliant, TLS 1.2 only with a restricted set of cipher suites.
+Windows Server 2022 edition is Microsoft SDL compliant, TLS 1.2 and TLS 1.3 only with a restricted set of cipher suites.
 TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
 
 For more information on TLS 1.0/1.1 deprecation in IE/Edge, see [Modernizing TLS connections in Microsoft Edge and Internet Explorer 11](https://blogs.windows.com/msedgedev/2018/10/15/modernizing-tls-edge-ie11/),  [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes) and [Disabling TLS/1.0 and TLS/1.1 in the new Edge Browser](https://textslashplain.com/2020/01/13/disabling-tls-1-0-and-tls-1-1-in-the-new-edge-browser/)

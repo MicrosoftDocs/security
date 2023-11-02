@@ -81,7 +81,7 @@ Here's an example of how Defender for Identity sends alerts for known malicious 
 
 ### Defender for Cloud Apps
 
-Defender for Cloud Apps (previously known as Microsoft Defender for Cloud Apps) allows your analysts to detect unusual behavior across cloud apps to identify ransomware, compromised users, or rogue applications. Defender for Cloud Apps is Microsoft's cloud access security broker (CASB) solution that allows for monitoring of cloud services and data access in cloud services by users.
+Defender for Cloud Apps (previously known as Microsoft Cloud App Security) allows your analysts to detect unusual behavior across cloud apps to identify ransomware, compromised users, or rogue applications. Defender for Cloud Apps is Microsoft's cloud access security broker (CASB) solution that allows for monitoring of cloud services and data access in cloud services by users.
 
 Here's an example of the Defender for Cloud Apps dashboard, which allows analysis to detect unusual behavior across cloud apps.
 

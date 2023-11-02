@@ -307,7 +307,6 @@ Review your response processes to identify and resolve any gaps found during the
 
 ## Incident response resources
 
-- [Overview](incident-response-overview.md) for Microsoft security products and resources for new-to-role and experienced analysts
 - [Planning](incident-response-planning.md) for your SOC
 - [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
@@ -318,7 +317,7 @@ Review your response processes to identify and resolve any gaps found during the
 
 |Resource|Description|
 |---|---|
-|[2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report)|A report that encompasses learnings from security experts, practitioners, and defenders at Microsoft to empower people everywhere to defend against cyberthreats.|
+|[2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report)|A report that encompasses learnings from security experts, practitioners, and defenders at Microsoft to empower people everywhere to defend against cyberthreats.|
 |[Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra)|A set of visual architecture diagrams that show Microsoft's cybersecurity capabilities and their integration with Microsoft cloud platforms such as Microsoft 365 and Microsoft Azure and third-party cloud platforms and apps.|
 |[Minutes matter infographic](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf) download|An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks.|
 |[Azure Cloud Adoption Framework security operations](/azure/cloud-adoption-framework/secure/security-operations)|Strategic guidance for leaders establishing or modernizing a security operation function.|

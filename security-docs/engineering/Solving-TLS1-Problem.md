@@ -77,7 +77,7 @@ ceilings that need to be accounted for.
 | Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported | 
 |Windows Server 2019 | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported |
 | Windows Server 2019 GS Sku | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported |
-| Windows Server 2022 | Not Supported | Disabled | Enabled     | Enabled | **Default** |  Not Supported |                                                                        
+| Windows Server 2022 | Not Supported | Disabled | Enabled     | Enabled | Default |  **Default** |                                                                        
 
 TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
 

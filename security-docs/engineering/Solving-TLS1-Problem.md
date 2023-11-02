@@ -73,7 +73,7 @@ Many operating systems have outdated TLS version defaults or support ceilings th
 | Windows Server 2016            | Not Supported | Disabled | Enabled     | Enabled | Enabled | Not Supported | 
 | Windows Server 2019            | Not Supported | Disabled | Enabled     | Enabled | Enabled | Not Supported |
 | Windows Server 2019 GS edition | Not Supported | Disabled | Disabled    | Disabled | Enabled| Not Supported |
-| Windows Server 2022            | Not Supported | Disabled | Disabled    | Disabled | Disabled | Enabled |                                                                        
+| Windows Server 2022            | Not Supported | Disabled | Disabled    | Disabled | Enabled | Enabled |                                                                        
 
 Windows Server 2019 GS edition is Microsoft SDL compliant, TLS 1.2 only with a restricted set of cipher suites.
 

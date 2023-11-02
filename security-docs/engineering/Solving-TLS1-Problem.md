@@ -60,26 +60,24 @@ partners. Hardcoding here means that the TLS version is fixed to a version that 
 testing and supportability purposes as many different browsers and
 operating systems had varying levels of TLS support.  
 
-## Ensuring support for TLS 1.2 across deployed operating systems
+## Supported versions of TLS 1.2 in Windows
 Many operating systems have outdated TLS version defaults or support
-ceilings that need to be accounted for. Usage of Windows 8/Server 2012
-or later means that TLS 1.2 will be the default security protocol
-version:
+ceilings that need to be accounted for.
 
 #### Figure 1: Security Protocol Support by OS Version
-| Windows OS              | SSLv2         | SSLv3    | TLS 1.0     | TLS 1.1                                                                                                                            | TLS 1.2                                                                                                                            |
-| ----------------------- | ------------- | -------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Windows Vista           | Enabled       | Enabled  | **Default** | Not Supported                                                                                                                      | Not Supported                                                                                                                      |
-| Windows Server 2008     | Enabled       | Enabled  | **Default** | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              |
-| Windows 7 (WS2008 R2)   | Enabled       | Enabled  | **Default** | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) |
-| Windows 8 (WS2012)      | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
-| Windows 8.1 (WS2012 R2) | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**|
-| Windows 10              | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
-| Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled                                                                                                                            | **Default**    
-| Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
-|Windows Server 2019 | Not Supported | Disabled | Enabled     | Enabled | **Default** | 
-| Windows Server 2019 GS Sku | Not Supported | Disabled | Enabled     | Enabled | **Default** |
-| Windows Server 2022 | Not Supported | Disabled | Enabled     | Enabled | **Default** |                                                                                              
+| Windows OS              | SSLv2         | SSLv3    | TLS 1.0     | TLS 1.1 | TLS 1.2 | TLS 1.3 |
+| ----------------------- | ------------- | -------- | ----------- | ------ | ------------------------ | ------ |
+| Windows Vista           | Enabled       | Enabled  | **Default** | Not Supported  | Not Supported | Not Supported |
+| Windows Server 2008     | Enabled       | Enabled  | **Default** | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) | [Disabled*] https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              | Not Supported |
+| Windows 7 (WS2008 R2)   | Enabled       | Enabled  | **Default** | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | Not Supported |
+| Windows 8 (WS2012)      | Disabled      | Enabled  | Enabled     | Enabled | **Default**   | Not Supported |
+| Windows 8.1 (WS2012 R2) | Disabled      | Enabled  | Enabled     | Enabled | **Default**| Not Supported |
+| Windows 10              | Disabled      | Enabled  | Enabled     | Enabled | **Default** | Not Supported | 
+| Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported |   
+| Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported | 
+|Windows Server 2019 | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported |
+| Windows Server 2019 GS Sku | Not Supported | Disabled | Enabled     | Enabled | **Default** | Not Supported |
+| Windows Server 2022 | Not Supported | Disabled | Enabled     | Enabled | **Default** |  Not Supported |                                                                        
 
 TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
 

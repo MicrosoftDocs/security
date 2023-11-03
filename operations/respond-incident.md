@@ -2,7 +2,7 @@
 title: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender
 description: Learn how to resolve an incident using both Microsoft Sentinel and Microsoft 365 Defender, which includes triage, investigation, and resolution. 
 ms.date: 03/29/2023
-ms.service: security
+ms.service: microsoft-365-zero-trust
 author: mjcaparas
 ms.author: macapara
 ms.topic: conceptual

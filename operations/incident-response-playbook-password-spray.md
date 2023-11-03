@@ -30,38 +30,38 @@ This article contains the following sections:
 
 - **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation. For example, logging that should be turned on, roles and permissions required, among others.
 - **Workflow:** Shows the logical flow that you should follow to perform this investigation.
-- **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done or simply as a quality gate for yourself.
+- **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you did or simply as a quality gate for yourself.
 - **Investigation steps:** Includes a detailed step-by-step guidance for this specific investigation.
 - **Recovery:** Contains high-level steps on how to recover/mitigate from a password spray attack.
 - **References:** Contains additional reading and reference materials.
 
 ## Prerequisites
 
-Before starting the investigation, make sure you have completed the setup for logs and alerts and additional system requirements.
+Before starting the investigation, complete the setup for logs and alerts and additional system requirements.
 
-For Microsoft Entra monitoring follow our recommendations and guidance in our [Microsoft Entra SecOps Guide](/azure/active-directory/fundamentals/security-operations-introduction).
+For Microsoft Entra monitoring,  follow our recommendations and guidance in our [Microsoft Entra SecOps Guide](/azure/active-directory/fundamentals/security-operations-introduction).
 
-### Set up [ADFS logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging)
+### Set up [AD FS logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging)
 
 #### Event logging on ADFS 2016
 
-By default, the Microsoft Active Directory Federation Services (ADFS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request. Set logging to the highest level and send the AD FS (& security) logs to a SIEM to correlate with AD authentication as well as Microsoft Entra ID.
+By default, the Microsoft Active Directory Federation Services (AD FS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request. Set logging to the highest level and send the AD FS (& security) logs to a SIEM to correlate with AD DS and Microsoft Entra ID authentication.
 
-To view the current auditing level, you can use this PowerShell command:
+To view the current auditing level, use this PowerShell command:
 
 ```powershell
 Get-AdfsProperties
 ```
 
-![adfs](./media/incident-response-playbook-password-spray/adfsproperties.png)
+![Example of the Get-AdfsProperties PowerShell command](./media/incident-response-playbook-password-spray/adfsproperties.png)
 
-This table contains the auditing levels that are available.
+This table lists the auditing levels that are available.
 
 |Audit level|PowerShell syntax|Description|
 |---|---|---|
-|None|`Set-AdfsProperties -AuditLevel None`|Auditing is disabled and no events will be logged|
-|Basic (Default)|`Set-AdfsProperties -AuditLevel Basic`|No more than 5 events will be logged for a single request|
-|Verbose|`Set-AdfsProperties -AuditLevel Verbose`|All events will be logged. This will log a significant amount of information per request.|
+|None|`Set-AdfsProperties -AuditLevel None`|Auditing is disabled and no events are logged|
+|Basic (Default)|`Set-AdfsProperties -AuditLevel Basic`|No more than 5 events are logged for a single request|
+|Verbose|`Set-AdfsProperties -AuditLevel Verbose`|All events aer logged. This setting will log a significant amount of information per request.|
 
 To raise or lower the auditing level, use this PowerShell command:
 
@@ -91,7 +91,7 @@ Set-AdfsProperties -AuditLevel <None | Basic | Verbose>
 
 ### Install Microsoft Entra Connect Health for ADFS
 
-The Microsoft Entra Connect Health for ADFS agent allows you to have greater visibility into your federation environment. It provides you with several pre-configured dashboards like usage, performance monitoring as well as risky IP reports.
+The Microsoft Entra Connect Health for ADFS agent allows you to have greater visibility into your federation environment. It provides you with several pre-configured dashboards like usage, performance monitoring, and risky IP reports.
 
 To install ADFS Connect Health, go through the [requirements for using Microsoft Entra Connect Health](/azure/active-directory/hybrid/how-to-connect-health-agent-install#requirements), and then install the [Azure ADFS Connect Health Agent](https://go.microsoft.com/fwlink/?LinkID=518973).
 
@@ -120,18 +120,18 @@ For more information, see [Generic SIEM Integration](/cloud-app-security/siem).
 
 You can connect SIEM with the Microsoft Graph Security API by using any of the following options:
 
-- **Directly using the supported integration options** – Refer to the list of supported integration options like writing code to directly connect your application to derive rich insights. Leverage samples to get started.
+- **Directly using the supported integration options** – Refer to the list of supported integration options like writing code to directly connect your application to derive rich insights. Use the samples to get started.
 - **Use native integrations and connectors built by Microsoft partners** – Refer to the Microsoft Graph Security API partner solutions to use these integrations.
-- **Use connectors built by Microsoft** – Refer to the list of connectors that you can use to connect with the API through a variety of solutions for Security Incident and Event Management (SIEM), Security Response and Orchestration (SOAR), Incident Tracking and Service Management (ITSM), reporting, and so on.
+- **Use connectors built by Microsoft** – Refer to the list of connectors that you can use to connect with the API through various solutions for Security Incident and Event Management (SIEM), Security Response and Orchestration (SOAR), Incident Tracking and Service Management (ITSM), reporting, and so on.
 
-For more information, see [security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
+For more information, see [Security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
 
 ### Using Splunk
 
 You can also use the Splunk platform to set up alerts.
 
-- Watch this video tutorial on how to create [Splunk alerts](https://www.splunk.com/en_us/resources/videos/splunk-tutorial-creating-alerts-in-splunk-enterprise-6.html)
-- For more information, see [Splunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview)
+- Watch this video tutorial on how to create [Splunk alerts](https://www.splunk.com/en_us/resources/videos/splunk-tutorial-creating-alerts-in-splunk-enterprise-6.html).
+- For more information, see [Splunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview).
 
 ## Workflow
 
@@ -156,7 +156,7 @@ You can also:
 ### Investigation
 
 - What is being alerted?
-- Can you confirm this is a password spray?
+- Can you confirm this attack is a password spray?
 - Determine timeline for attack.
 - Determine the IP address(es) of the attack.
 - Filter on successful sign-ins for this time period and IP address, including successful password but failed MFA
@@ -170,7 +170,7 @@ You can also:
 
 #### Mitigations
 
-Check the [References](#references) section for guidance on how to enable features.
+Check the [References](#references) section for guidance on how to enable the following features:
 
 - [Block IP address of attacker](/azure/active-directory/conditional-access/block-legacy-authentication) (keep an eye out for changes to another IP address)
 - Changed user's password of suspected compromise
@@ -200,15 +200,15 @@ You can also download the password spray and other incident playbook checklists 
 
 Let's understand a few password spray attack techniques before proceeding with the investigation.
 
-**Password compromise:** An attacker has successfully guessed the user's password but has not been able to access the account due to other controls such as multifactor authentication (MFA).
+**Password compromise:** An attacker guessed the user's password but hasn't been able to access the account due to other controls such as multifactor authentication (MFA).
 
-**Account compromise:** An attacker has successfully guessed the user's password and has successfully gained access to the account.
+**Account compromise:** An attacker guessed the user's password and gained access to the account.
 
 ### Environment discovery
 
 #### Identify authentication type
 
-As the very first step, you need to check what authentication type is used for a tenant/verified domain that you are investigating.
+As the first step, you need to check what authentication type is used for a tenant/verified domain that you are investigating.
 
 To obtain the authentication status for a specific domain name, use the [Get-MsolDomain](/powershell/module/msonline/get-msoldomain) PowerShell command. Here's an example:
 
@@ -219,9 +219,9 @@ Get-MsolDomain -DomainName "contoso.com"
 
 ### Is the authentication federated or managed?
 
-If the authentication is federated, then successful sign-ins will be stored in Microsoft Entra ID. The failed sign-ins will be in their Identity Provider (IDP). For more information, see [ADFS troubleshooting and event logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
+If the authentication is federated, then successful sign-ins are stored in Microsoft Entra ID. The failed sign-ins will be in their Identity Provider (IDP). For more information, see [AD FS troubleshooting and event logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
 
-If the authentication type is managed, (Cloud only, password hash sync (PHS) or pass-through authentication (PTA)), then successful and failed sign-ins will be stored in the Microsoft Entra sign-in logs.
+If the authentication type is managed&ndash;cloud-only, password hash sync (PHS), or pass-through authentication (PTA)&ndash;then successful and failed sign-ins are stored in the Microsoft Entra sign-in logs.
 
 >[!Note]
 >The [Staged Rollout](/azure/active-directory/hybrid/how-to-connect-staged-rollout) feature allows the tenant domain name to be federated but specific users to be managed. Determine if any users are members of this group.
@@ -242,7 +242,7 @@ If the authentication type is managed, (Cloud only, password hash sync (PHS) or 
 
 ### Are the logs stored in SIEM?
 
-To check whether you are storing and correlating logs in a Security Information and Event Management (SIEM) or in any other system, check the following:
+To check whether you are storing and correlating logs in a Security Information and Event Management (SIEM) or in any other system:
 
 - Log analytics- pre-built queries
 - Sentinel- pre-built queries
@@ -251,10 +251,9 @@ To check whether you are storing and correlating logs in a Security Information 
 - UAL if > 30 days
 
 <a name='understanding-azure-ad-and-mfa-reporting'></a>
-
 ### Understanding Microsoft Entra ID and MFA reporting
 
-It is important that you understand the logs that you are seeing to be able to determine compromise. Below are our quick guides to understanding Microsoft Entra Sign-Ins and MFA reporting to help with this. Refer to these articles:
+It is important that you understand the logs that you are seeing to be able to determine compromise. Here are quick guides to understanding Microsoft Entra Sign-Ins and MFA reporting:
 
 - [MFA reporting](</azure/active-directory/authentication/howto-mfa-reporting>)
 - [Understanding Sign Ins](/azure/active-directory/reports-monitoring/concept-sign-ins)

@@ -543,7 +543,7 @@ The source of the content for this article is the following:
 - [Disable user sign-ins for an enterprise app in Microsoft Entra ID](/azure/active-directory/manage-apps/disable-user-sign-in-portal)
 - [Understand the permissions and consent framework in the Microsoft identity platform.](/azure/active-directory/develop/consent-framework)
 - [Understand the difference between delegated permissions and application permissions.](/azure/active-directory/develop/v2-permissions-and-consent#permission-types)
-- [Configure how end-users consent to applications](/azure/active-directconsentory/manage-apps/configure-user-consent)
+- [Configure how end-users consent to applications](/entra/identity/enterprise-apps/configure-user-consent)
 - [Unexpected application in my applications list](/azure/active-directory/manage-apps/application-types)
 - [Detect and Remediate Illicit Consent Grants](/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants)
 - [How and Why Microsoft Entra Applications are Added](/azure/active-directory/develop/active-directory-how-applications-are-added)

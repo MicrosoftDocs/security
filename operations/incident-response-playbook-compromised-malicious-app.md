@@ -327,13 +327,13 @@ You can also use the following PowerShell code to disable the sign-in to the app
 $appId = "{AppId}"
 
 # Check if a service principal already exists for the app
-$servicePrincipal = Get-AzureADServicePrincipal -Filter "appId eq '$appId'"
+$servicePrincipal = Get-MgServicePrincipal -Filter "appId eq '$appId'"
 if ($servicePrincipal) {
    # Service principal exists already, disable it
-   Set-AzureADServicePrincipal -ObjectId $servicePrincipal.ObjectId -AccountEnabled $false
+   Update-MgServicePrincipal -ObjectId $servicePrincipal.ObjectId -AccountEnabled $false
 } else {
    # Service principal does not yet exist, create it and disable it at the same time
-   $servicePrincipal = New-AzureADServicePrincipal -AppId $appId -AccountEnabled $false
+   $servicePrincipal = New-MgServicePrincipal -AppId $appId -AccountEnabled $false
 }
 ```
 

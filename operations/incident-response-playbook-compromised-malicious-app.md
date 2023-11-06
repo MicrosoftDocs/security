@@ -130,7 +130,7 @@ If you have deployed Identity Protection - risky workload identities, check the 
 
 ### Check the target resource
 
-Within Service principal sign-ins, also check the **Resource** that the Service Principal was accessing during the authentication. It is important to have input from the application owner as they will be familiar with which resources the Service Principal should be accessing.
+Within Service principal sign-ins, also check the **Resource** that the Service Principal was accessing during the authentication. It's important to have input from the application owner as they'll be familiar with which resources the Service Principal should be accessing.
 
 :::image type="content" source="./media/compromised-malicious-apps/TargetResource.png" alt-text="Check the Resource for Service Principal":::
 
@@ -163,9 +163,9 @@ Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/iden
 - Confirm whether the connection strings are consistent and whether has the sign out URL has been modified.
 - Confirm whether the domains in the URL are in-line with those registered.
 - Determine whether anyone has added an unauthorized redirect URL.
-- Confirm ownership of the redirect URI that you own to ensure it did not expire and was claimed by an adversary.
+- Confirm ownership of the redirect URI that you own to ensure it didn't expire and was claimed by an adversary.
 
-Also, if you have deployed Microsoft Defender for Cloud Apps, check the Azure portal for alerts relating to the application you are currently investigating. Not all alert policies are enabled by default for OAuth apps, so ensure that these are all enabled. For more information, see the [OAuth app policies](/defender-cloud-apps/app-permission-policy). You can also view information about the apps prevalance and recent activity under the **Investigation** > **OAuth Apps** tab.
+Also, if you have deployed Microsoft Defender for Cloud Apps, check the Azure portal for alerts relating to the application you're currently investigating. Not all alert policies are enabled by default for OAuth apps, so ensure that these are all enabled. For more information, see the [OAuth app policies](/defender-cloud-apps/app-permission-policy). You can also view information about the apps prevalance and recent activity under the **Investigation** > **OAuth Apps** tab.
 
 ### Check for suspicious application roles
 
@@ -202,7 +202,7 @@ Sometimes, when attackers use malicious or compromised applications as a means o
 
 Review the identities for indications of phishing attacks in the last 24 hours. Increase this time span if needed to 7, 14, and 30 days if there are no immediate indications. For a detailed phishing investigation playbook, see the [Phishing Investigation Playbook](incident-response-playbook-phishing.md).
 
-### Search for malicious application consents for the past 7 days
+### Search for malicious application consents for the past seven days
 
 To get an application added to a tenant, attackers spoof users or admins to consent to applications. To know more about the signs of an attack, see the [Application Consent Grant Investigation Playbook](incident-response-playbook-app-consent.md#finding-signs-of-an-attack). 
 
@@ -293,7 +293,7 @@ Reviewing the permissions granted to an application or Service Principal can be 
 
 Now, follow the guidance on how to enumerate and review permissions in the [App consent grant investigation](incident-response-playbook-app-consent.md#method-2---using-powershell).
 
-#### Check whether the permissions were granted by user identities that should not have the ability to do this, or whether the actions were performed at strange dates and times
+#### Check whether the permissions were granted by user identities that shouldn't have the ability to do this, or whether the actions were performed at strange dates and times
 
 Review using Audit Logs:
 
@@ -445,7 +445,7 @@ If you disable or if you soft delete the application, set up monitoring in Micro
 - **Targets** - App ID and Display Name
 - **Modified Properties** - Property name = account enabled, new value = true
 
-Note: Microsoft globally disables applications found to be violating its Terms of Service. In those cases, these applications will show `DisabledDueToViolationOfServicesAgreement` on the `disabledByMicrosoftStatus` property on the related [application](/graph/api/resources/application) and [service principal](/graph/api/resources/serviceprincipal) resource types in Microsoft Graph. To prevent them from being instantiated in your organization again in the future, you cannot delete these objects.
+Note: Microsoft globally disables applications found to be violating its Terms of Service. In those cases, these applications will show `DisabledDueToViolationOfServicesAgreement` on the `disabledByMicrosoftStatus` property on the related [application](/graph/api/resources/application) and [service principal](/graph/api/resources/serviceprincipal) resource types in Microsoft Graph. To prevent them from being instantiated in your organization again in the future, you can't delete these objects.
 
 ### Implement Identity Protection for workload identities
 
@@ -477,17 +477,17 @@ To review configuration options, see [Configure how users consent to apps](/azur
 
 #### Implement admin consent flow
 
-When an application developer directs users to the admin consent endpoint with the intent to give consent for the entire tenant, it is known as admin consent flow. To ensure the admin consent flow works properly, application developers must list all permissions in the RequiredResourceAccess property in the application manifest.
+When an application developer directs users to the admin consent endpoint with the intent to give consent for the entire tenant, it's known as admin consent flow. To ensure the admin consent flow works properly, application developers must list all permissions in the RequiredResourceAccess property in the application manifest.
 
-Most organizations disable the ability for their users to consent to applications. To give users the ability to still request consent for applications and to have an administrative review capability, it is recommended to implement the admin consent workflow. Follow the [admin consent workflow steps](/azure/active-directory/manage-apps/configure-admin-consent-workflow) to configure it in your tenant.
+Most organizations disable the ability for their users to consent to applications. To give users the ability to still request consent for applications and to have an administrative review capability, it's recommended to implement the admin consent workflow. Follow the [admin consent workflow steps](/azure/active-directory/manage-apps/configure-admin-consent-workflow) to configure it in your tenant.
 
 For high privileged operations such as admin consent, you have a privileged access strategy defined as per our [guidance](overview.md). 
 
 ### Review risk-based step-up consent settings
 
-Risk-based step-up consent helps reduce user exposure to malicious apps. For example, consent requests for newly registered multi-tenant apps that are not publisher verified and require non-basic permissions are considered risky. If a risky user consent request is detected, the request requires a "step-up" to admin consent instead. This step-up capability is enabled by default, but it results in a behavior change only when user consent is enabled.
+Risk-based step-up consent helps reduce user exposure to malicious apps. For example, consent requests for newly registered multi-tenant apps that aren't publisher verified and require non-basic permissions are considered risky. If a risky user consent request is detected, the request requires a "step-up" to admin consent instead. This step-up capability is enabled by default, but it results in a behavior change only when user consent is enabled.
 
-Make sure it is enabled in your tenant and review the configuration settings outlined [here](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).
+Make sure it's enabled in your tenant and review the configuration settings outlined [here](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).
 
 ## References
 

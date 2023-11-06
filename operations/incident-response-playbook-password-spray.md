@@ -20,7 +20,7 @@ ms.collection:
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
-ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref
+ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ---
 
 # Password spray investigation
@@ -215,7 +215,7 @@ To obtain the authentication status for a specific domain name, use the [Get-MgD
 
 ```powershell
 Connect-MgGraph
-Get-MgDomain -DomainName "contoso.com"
+Get-MgDomain -Name "contoso.com"
 ```
 
 ### Is the authentication federated or managed?

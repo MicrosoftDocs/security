@@ -211,11 +211,11 @@ Let's understand a few password spray attack techniques before proceeding with t
 
 As the very first step, you need to check what authentication type is used for a tenant/verified domain that you are investigating.
 
-To obtain the authentication status for a specific domain name, use the [Get-MsolDomain](/powershell/module/msonline/get-msoldomain) PowerShell command. Here's an example:
+To obtain the authentication status for a specific domain name, use the [Get-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain?view=graph-powershell-1.0) PowerShell command. Here's an example:
 
 ```powershell
-Connect-MsolService
-Get-MsolDomain -DomainName "contoso.com"
+Connect-MgGraph
+Get-MgDomain -DomainName "contoso.com"
 ```
 
 ### Is the authentication federated or managed?

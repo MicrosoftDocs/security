@@ -211,7 +211,7 @@ Let's understand a few password spray attack techniques before proceeding with t
 
 As the first step, you need to check what authentication type is used for a tenant/verified domain that you're investigating.
 
-To obtain the authentication status for a specific domain name, use the [Get-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain?view=graph-powershell-1.0) PowerShell command. Here's an example:
+To obtain the authentication status for a specific domain name, use the [Get-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain?view=graph-powershell-1.0&preserve-view=true) PowerShell command. Here's an example:
 
 ```powershell
 Connect-MgGraph

@@ -51,7 +51,7 @@ This article walks you through the steps to apply the principles of Zero Trust t
 | 1 | Deploy or validate your identity and access policies | Verify explicitly <br> Use least privileged access |
 | 2 | Deploy or validate your App Protection policies | Use least privileged access <br> Assume breach |
 | 3 | Deploy or validate device management and protection | Verify explicitly |
-| 4 | Deploy or validate your threat protection services	Assume breach |  Assume breach |
+| 4 | Deploy or validate your threat protection services |  Assume breach |
 | 5 | Deploy or validate your data protection | Verify explicitly <br> Use least privileged access |
 | 6 | Deploy or validate secure collaboration with Teams | Verify explicitly <br> Use least privileged access |
 | 7 | Deploy or validate user permissions to data | Use least privileged access |

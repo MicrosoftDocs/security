@@ -73,15 +73,15 @@ To prevent bad actors from using Microsoft 365 Copilot to more quickly discover 
 
 ### Getting started with E3
 
-Microsoft 365 E3 includes Microsoft Entra ID P1 licenses. With this plan, Microsoft recommends using [common Conditional Access policies](/entra/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation), which are the following:
+Microsoft 365 E3 includes Microsoft Entra ID P1 licenses. With this plan, Microsoft recommends using [common Conditional Access policies](/entra/identity/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation), which are the following:
 
-- [Require multifactor authentication (MFA) for administrators](/entra/conditional-access/howto-conditional-access-policy-admin-mfa)
-- [Require MFA for all users](/entra/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Block legacy authentication](/entra/conditional-access/howto-conditional-access-policy-block-legacy)
+- [Require multifactor authentication (MFA) for administrators](/entra/identity/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [Require MFA for all users](/entra/identity/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [Block legacy authentication](/entra/identity/conditional-access/howto-conditional-access-policy-block-legacy)
 
 Ensure that you include Microsoft 365 Services and your other SaaS apps in the scope of these policies. 
 
-If your environment includes hybrid identities with on-premises Active Directory Domain Services, be sure to deploy [Microsoft Entra Password Protection](/entra/authentication/concept-password-ban-bad-on-premises). This capability detects and blocks known weak passwords and their variants and can also block more weak terms within passwords that are specific to your organization. 
+If your environment includes hybrid identities with on-premises Active Directory Domain Services, be sure to deploy [Microsoft Entra Password Protection](/entra/identity/authentication/concept-password-ban-bad-on-premises). This capability detects and blocks known weak passwords and their variants and can also block more weak terms within passwords that are specific to your organization. 
 
 ### Next steps with E5
 
@@ -96,10 +96,10 @@ Microsoft 365 E5 and Microsoft Entra ID P2 both include more protection for priv
 
 | Capability | Resources |
 | --- | --- |
-| Privileged Identity Management (PIM) | Provides protections for privileged accounts that access resources, including resources in Microsoft Entra ID, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune. See [Plan a Privileged Identity Management deployment](/entra/privileged-identity-management/pim-deployment-plan). |
+| Privileged Identity Management (PIM) | Provides protections for privileged accounts that access resources, including resources in Microsoft Entra ID, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune. See [Plan a Privileged Identity Management deployment](/entra/identity/privileged-identity-management/pim-deployment-plan). |
 | Microsoft Purview Privileged Access Management | Allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. See [Privileged access management overview](/purview/privileged-access-management-solution-overview). |
 
-Finally, consider implementing [access reviews](/entra/governance/access-reviews-overview) as part of your overall JEA strategy. Access reviews enable your organization to efficiently manage group memberships, access to enterprise applications, and role assignments. User's access can be reviewed regularly to make sure only the right people have the appropriate continued access.
+Finally, consider implementing [access reviews](/entra/identity/governance/access-reviews-overview) as part of your overall JEA strategy. Access reviews enable your organization to efficiently manage group memberships, access to enterprise applications, and role assignments. User's access can be reviewed regularly to make sure only the right people have the appropriate continued access.
 
 ## Step 2. Deploy or validate your App Protection policies 
 

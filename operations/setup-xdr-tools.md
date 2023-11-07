@@ -7,7 +7,7 @@ ms.author: macapara
 manager: dansimp
 ms.date: 3/29/2023
 ms.topic: article
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.localization_priority: Normal
 ms.collection: 
   - zerotrust-solution

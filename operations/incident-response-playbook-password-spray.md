@@ -16,7 +16,6 @@ localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - zerotrust-solution
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
@@ -25,44 +24,44 @@ ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref
 
 # Password spray investigation
 
-This article provides guidance on identifying and investigating password spray attacks within your organization and take the required remedial action to protect information and minimize further risks.
+This article provides guidance on identifying and investigating password spray attacks within your organization and taking the required remediation actions to protect information and minimize further risks.
 
 This article contains the following sections:
 
 - **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation. For example, logging that should be turned on, roles and permissions required, among others.
 - **Workflow:** Shows the logical flow that you should follow to perform this investigation.
-- **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done or simply as a quality gate for yourself.
+- **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you did or simply as a quality gate for yourself.
 - **Investigation steps:** Includes a detailed step-by-step guidance for this specific investigation.
 - **Recovery:** Contains high-level steps on how to recover/mitigate from a password spray attack.
-- **References:** Contains additional reading and reference materials.
+- **References:** Contains more reading and reference materials.
 
 ## Prerequisites
 
-Before starting the investigation, make sure you have completed the setup for logs and alerts and additional system requirements.
+Before starting the investigation, complete the setup for logs and alerts and more system requirements.
 
-For Microsoft Entra monitoring follow our recommendations and guidance in our [Microsoft Entra SecOps Guide](/azure/active-directory/fundamentals/security-operations-introduction).
+For Microsoft Entra monitoring,  follow our recommendations and guidance in our [Microsoft Entra SecOps Guide](/azure/active-directory/fundamentals/security-operations-introduction).
 
-### Set up [ADFS logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging)
+### Set up [AD FS logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging)
 
 #### Event logging on ADFS 2016
 
-By default, the Microsoft Active Directory Federation Services (ADFS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request. Set logging to the highest level and send the AD FS (& security) logs to a SIEM to correlate with AD authentication as well as Microsoft Entra ID.
+By default, the Microsoft Active Directory Federation Services (AD FS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request. Set logging to the highest level and send the AD FS (& security) logs to a SIEM to correlate with AD DS and Microsoft Entra ID authentication.
 
-To view the current auditing level, you can use this PowerShell command:
+To view the current auditing level, use this PowerShell command:
 
 ```powershell
 Get-AdfsProperties
 ```
 
-![adfs](./media/incident-response-playbook-password-spray/adfsproperties.png)
+![Example of the Get-AdfsProperties PowerShell command](./media/incident-response-playbook-password-spray/adfsproperties.png)
 
-This table contains the auditing levels that are available.
+This table lists the auditing levels that are available.
 
 |Audit level|PowerShell syntax|Description|
 |---|---|---|
-|None|`Set-AdfsProperties -AuditLevel None`|Auditing is disabled and no events will be logged|
-|Basic (Default)|`Set-AdfsProperties -AuditLevel Basic`|No more than 5 events will be logged for a single request|
-|Verbose|`Set-AdfsProperties -AuditLevel Verbose`|All events will be logged. This will log a significant amount of information per request.|
+|None|`Set-AdfsProperties -AuditLevel None`|Auditing is disabled and no events are logged|
+|Basic (Default)|`Set-AdfsProperties -AuditLevel Basic`|No more than five events are logged for a single request|
+|Verbose|`Set-AdfsProperties -AuditLevel Verbose`|All events are logged. This setting creates logs a significant amount of information per request.|
 
 To raise or lower the auditing level, use this PowerShell command:
 
@@ -74,7 +73,7 @@ Set-AdfsProperties -AuditLevel <None | Basic | Verbose>
 
 1. Click **Start**, navigate to **Programs &gt; Administrative Tools**, and then click **Local Security Policy**.
 2. Navigate to the **Security Settings\\Local Policies\\User Rights Management** folder, and then double-click **Generate security audits**.
-3. On the **Local Security Setting** tab, verify that the ADFS service account is listed. If it is not present, click **Add User** or **Group** and add it to the list, and then click **OK**.
+3. On the **Local Security Setting** tab, verify that the ADFS service account is listed. If it isn't present, click **Add User** or **Group** and add it to the list, and then click **OK**.
 4. To enable auditing, open a command prompt with elevated privileges and run the following command:
 
     ```DOS
@@ -92,7 +91,7 @@ Set-AdfsProperties -AuditLevel <None | Basic | Verbose>
 
 ### Install Microsoft Entra Connect Health for ADFS
 
-The Microsoft Entra Connect Health for ADFS agent allows you to have greater visibility into your federation environment. It provides you with several pre-configured dashboards like usage, performance monitoring as well as risky IP reports.
+The Microsoft Entra Connect Health for ADFS agent allows you to have greater visibility into your federation environment. It provides you with several preconfigured dashboards like usage, performance monitoring, and risky IP reports.
 
 To install ADFS Connect Health, go through the [requirements for using Microsoft Entra Connect Health](/azure/active-directory/hybrid/how-to-connect-health-agent-install#requirements), and then install the [Azure ADFS Connect Health Agent](https://go.microsoft.com/fwlink/?LinkID=518973).
 
@@ -105,7 +104,7 @@ After Microsoft Entra Connect Health for ADFS is configured, you should monitor 
 - Supports enabling alerts through Azure Alerts.
 - Customizable threshold settings that match with the security policy of an organization.
 - Customizable queries and expanded visualizations for further analysis.
-- Expanded functionality from the previous Risky IP report, which will be deprecated after January 24, 2022.
+- Expanded functionality from the previous Risky IP report, which is deprecated as of January 24, 2022.
 
 ### Set up SIEM tool alerts on Microsoft Sentinel
 
@@ -121,18 +120,18 @@ For more information, see [Generic SIEM Integration](/cloud-app-security/siem).
 
 You can connect SIEM with the Microsoft Graph Security API by using any of the following options:
 
-- **Directly using the supported integration options** – Refer to the list of supported integration options like writing code to directly connect your application to derive rich insights. Leverage samples to get started.
+- **Directly using the supported integration options** – Refer to the list of supported integration options like writing code to directly connect your application to derive rich insights. Use the samples to get started.
 - **Use native integrations and connectors built by Microsoft partners** – Refer to the Microsoft Graph Security API partner solutions to use these integrations.
-- **Use connectors built by Microsoft** – Refer to the list of connectors that you can use to connect with the API through a variety of solutions for Security Incident and Event Management (SIEM), Security Response and Orchestration (SOAR), Incident Tracking and Service Management (ITSM), reporting, and so on.
+- **Use connectors built by Microsoft** – Refer to the list of connectors that you can use to connect with the API through various solutions for Security Incident and Event Management (SIEM), Security Response and Orchestration (SOAR), Incident Tracking and Service Management (ITSM), reporting, and so on.
 
-For more information, see [security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
+For more information, see [Security solution integrations using the Microsoft Graph Security API](/graph/security-integration#list-of-connectors-from-microsoft).
 
 ### Using Splunk
 
 You can also use the Splunk platform to set up alerts.
 
-- Watch this video tutorial on how to create [Splunk alerts](https://www.splunk.com/en_us/resources/videos/splunk-tutorial-creating-alerts-in-splunk-enterprise-6.html)
-- For more information, see [Splunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview)
+- Watch this video tutorial on how to create [Splunk alerts](https://www.splunk.com/en_us/resources/videos/splunk-tutorial-creating-alerts-in-splunk-enterprise-6.html).
+- For more information, see [Splunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview).
 
 ## Workflow
 
@@ -157,7 +156,7 @@ You can also:
 ### Investigation
 
 - What is being alerted?
-- Can you confirm this is a password spray?
+- Can you confirm this attack is a password spray?
 - Determine timeline for attack.
 - Determine the IP address(es) of the attack.
 - Filter on successful sign-ins for this time period and IP address, including successful password but failed MFA
@@ -165,13 +164,13 @@ You can also:
 - Is there anything out of the ordinary on the account, such as new device, new OS, new IP address used? Use Defender for Cloud Apps or Azure Information Protection to detect suspicious activity.
 - Inform local authorities/third parties for assistance.
 - If you suspect a compromise, check for data exfiltration.
-- Check associated account for suspicious behavior and look to correlate to other possible accounts and services as well as other malicious IP addresses.
-- Check accounts of anyone working in the same office/delegated access - password hygiene (make sure they are not using the same password as the compromised account)
+- Check associated account for suspicious behavior and look to correlate to other possible accounts and services and other malicious IP addresses.
+- Check accounts of anyone working in the same office/delegated access - password hygiene (make sure they aren't using the same password as the compromised account)
 - Run ADFS help
 
 #### Mitigations
 
-Check the [References](#references) section for guidance on how to enable features.
+Check the [References](#references) section for guidance on how to enable the following features:
 
 - [Block IP address of attacker](/azure/active-directory/conditional-access/block-legacy-authentication) (keep an eye out for changes to another IP address)
 - Changed user's password of suspected compromise
@@ -185,11 +184,11 @@ Check the [References](#references) section for guidance on how to enable featur
 #### Recovery
 
 - Tag bad IP address in Defender for Cloud Apps, SIEM, ADFS and Microsoft Entra ID
-- Check for other forms of mailbox persistence such as forwarding rules or additional delegations added
+- Check for other forms of mailbox persistence such as forwarding rules or more delegations added
 - [MFA as primary authentication](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)
 - [Configure SIEM integrations with Cloud](/microsoft-365/security/office-365-security/siem-server-integration)
-- Configure Alerting - Identity Protection, ADFS Health Connect, SIEM and Defender for Cloud Apps
-- Lessons Learnt (include key stakeholders, third parties, communication teams)
+- Configure alerting - Identity Protection, ADFS Health Connect, SIEM and Defender for Cloud Apps
+- Lessons learned (include key stakeholders, third parties, communication teams)
 - Security posture review/improvements
 - [Plan to run regular attack simulators](/microsoft-365/security/office-365-security/attack-simulator)
 
@@ -201,15 +200,15 @@ You can also download the password spray and other incident playbook checklists 
 
 Let's understand a few password spray attack techniques before proceeding with the investigation.
 
-**Password compromise:** An attacker has successfully guessed the user's password but has not been able to access the account due to other controls such as multifactor authentication (MFA).
+**Password compromise:** An attacker guessed the user's password but hasn't been able to access the account due to other controls such as multifactor authentication (MFA).
 
-**Account compromise:** An attacker has successfully guessed the user's password and has successfully gained access to the account.
+**Account compromise:** An attacker guessed the user's password and gained access to the account.
 
 ### Environment discovery
 
 #### Identify authentication type
 
-As the very first step, you need to check what authentication type is used for a tenant/verified domain that you are investigating.
+As the first step, you need to check what authentication type is used for a tenant/verified domain that you are investigating.
 
 To obtain the authentication status for a specific domain name, use the [Get-MsolDomain](/powershell/module/msonline/get-msoldomain) PowerShell command. Here's an example:
 
@@ -220,9 +219,9 @@ Get-MsolDomain -DomainName "contoso.com"
 
 ### Is the authentication federated or managed?
 
-If the authentication is federated, then successful sign-ins will be stored in Microsoft Entra ID. The failed sign-ins will be in their Identity Provider (IDP). For more information, see [ADFS troubleshooting and event logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
+If the authentication is federated, then successful sign-ins are stored in Microsoft Entra ID. The failed sign-ins are in their Identity Provider (IDP). For more information, see [AD FS troubleshooting and event logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging).
 
-If the authentication type is managed, (Cloud only, password hash sync (PHS) or pass-through authentication (PTA)), then successful and failed sign-ins will be stored in the Microsoft Entra sign-in logs.
+If the authentication type is managed&ndash;cloud-only, password hash sync (PHS), or pass-through authentication (PTA)&ndash;then successful and failed sign-ins are stored in the Microsoft Entra sign-in logs.
 
 >[!Note]
 >The [Staged Rollout](/azure/active-directory/hybrid/how-to-connect-staged-rollout) feature allows the tenant domain name to be federated but specific users to be managed. Determine if any users are members of this group.
@@ -232,37 +231,36 @@ If the authentication type is managed, (Cloud only, password hash sync (PHS) or 
 
 ### Is Microsoft Entra Connect Health enabled for ADFS?
 
-- The [RiskyIP report](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip) will provide suspect IPs and date/time. Notifications should be enabled.
+- The [RiskyIP report](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip) provides suspect IPs and date/time. Notifications should be enabled.
 - Also check the [federated sign-ins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
 
 ### Is the advanced logging enabled in ADFS?
 
-- This is a requirement for ADFS Connect Health but it can be enabled independently
+- This setting is a requirement for ADFS Connect Health, but it can be enabled independently
 - See how to [enable ADFS Health Connect](/azure/active-directory/hybrid/how-to-connect-health-agent-install#installing-the-azure-ad-connect-health-agent-for-ad-fs))
 - Also check the [Federated sign-ins investigation from the Phishing playbook](incident-response-playbook-phishing.md#federated-scenario)
 
 ### Are the logs stored in SIEM?
 
-To check whether you are storing and correlating logs in a Security Information and Event Management (SIEM) or in any other system, check the following:
+To check whether you are storing and correlating logs in a Security Information and Event Management (SIEM) or in any other system:
 
-- Log analytics- pre-built queries
-- Sentinel- pre-built queries
-- Splunk – pre-built queries
+- Log analytics- prebuilt queries
+- Sentinel- prebuilt queries
+- Splunk – prebuilt queries
 - Firewall logs
 - UAL if > 30 days
 
 <a name='understanding-azure-ad-and-mfa-reporting'></a>
-
 ### Understanding Microsoft Entra ID and MFA reporting
 
-It is important that you understand the logs that you are seeing to be able to determine compromise. Below are our quick guides to understanding Microsoft Entra Sign-Ins and MFA reporting to help with this. Refer to these articles:
+It's important that you understand the logs that you are seeing to be able to determine compromise. Here are quick guides to understanding Microsoft Entra Sign-Ins and MFA reporting:
 
 - [MFA reporting](</azure/active-directory/authentication/howto-mfa-reporting>)
 - [Understanding Sign Ins](/azure/active-directory/reports-monitoring/concept-sign-ins)
 
 ### Incident triggers
 
-An incident trigger is an event or a series of events that causes predefined alert to trigger. An example of this is the number of bad password attempts has gone above your predefined threshold. Below are further examples of triggers that can be alerted in password spray attacks and where these alerts are surfaced. Incident triggers include:
+An incident trigger is an event or a series of events that causes predefined alert to trigger. An example is the number of bad password attempts has gone above your predefined threshold. Here are further examples of triggers that can be alerted in password spray attacks and where these alerts are surfaced. Incident triggers include:
 
 - Users
 - IP
@@ -274,10 +272,10 @@ An incident trigger is an event or a series of events that causes predefined ale
     :::image type="content" source="./media/incident-response-playbook-password-spray/Badpwdattempt.jpg" alt-text="pwdattempts":::
     *Graph depicting number of bad password attempts*
 
-Unusual spikes in activity are key indicators through Microsoft Entra Health Connect (assuming this is installed). Other indicators are:
+Unusual spikes in activity are key indicators through Microsoft Entra Health Connect (assuming this component is installed). Other indicators are:
 
 - Alerting through SIEM shows a spike when you collate the logs.
-- Larger than normal log size for ADFS failed sign-ins (this can be an alert in SIEM tool).
+- Larger than normal log size for ADFS failed sign-ins, which can be an alert in SIEM tool).
 - Increased amounts of 342/411 event IDs – username or password is incorrect. Or 516 for extranet lockout.
 - Hit failed authentication request threshold – Risky IP in Microsoft Entra ID or SIEM tool alert/both 342 and 411 errors (To be able to view this information, the advanced logging should be turned on.)
 
@@ -285,7 +283,7 @@ Unusual spikes in activity are key indicators through Microsoft Entra Health Con
 
 ### Risky IP in Microsoft Entra Health Connect portal
 
-Risky IP will alert when the customized threshold has been reached for bad passwords in an hour and bad password count in a day as well as extranet lockouts.
+Risky IP alerts occur when the customized threshold has been reached for bad passwords in an hour and bad password count in a day and extranet lockouts.
 
 ![Example of risky IP report data](./media/incident-response-playbook-password-spray/RiskyIPReport.jpg)
 
@@ -299,7 +297,7 @@ The details of failed attempts are available in the tabs **IP address** and **ex
 
 ### Detect password spray in Azure Identity Protection
 
-Azure Identity Protection is a Microsoft Entra ID P2 feature that has a password-spray detection risk alert and search feature that you can utilize to get additional information or set up automatic remediation.
+Azure Identity Protection is a Microsoft Entra ID P2 feature that has a password-spray detection risk alert and search feature that provides more information or automatic remediation.
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/Detectpwd.png" alt-text="Example of password spray attack":::
 
@@ -307,7 +305,7 @@ Azure Identity Protection is a Microsoft Entra ID P2 feature that has a password
 
 ### Low and slow attack indicators
 
-Low and slow attack indicators are those where thresholds for account lockout or bad passwords are not being hit. You can detect these indicators through:
+Low and slow attack indicators are when thresholds for account lockout or bad passwords aren't being hit. You can detect these indicators through:
 
 - Failures in GAL order
 - Failures with repetitive attributes (UA, target AppID, IP block/location)
@@ -319,7 +317,7 @@ Low and slow attack indicators are those where thresholds for account lockout or
 >You can perform investigation and mitigation simultaneously during sustained/ongoing attacks.
 >
 
-1. Turn advanced logging on ADFS if it is not already turned on.
+1. Turn advanced logging on ADFS if it isn't already turned on.
 2. Determine the date and time of start of the attack.
 3. Determine the attacker IP address (might be multiple sources and multiple IP addresses) from the firewall, ADFS, SIEM or Microsoft Entra ID.
 4. Once password spray confirmed, you might have to inform the local agencies (police, third parties, among others).
@@ -462,7 +460,7 @@ You can then download this data as a *.csv* file for analysis. For more informat
 
 ### Prioritize findings
 
-It is important to be able to react to the most critical threat. This can be the attacker has successfully obtained access to an account and therefore can access/exfiltrate data. The attacker has the password but may not be able to access the account for example they have the password but are not passing the MFA challenge. Also, the attacker could not be guessing passwords correctly but continuing to try. During analysis, prioritize these findings:
+It's important to be able to react to the most critical threat. This threat can indicate that the attacker has successfully obtained access to an account and therefore can access/exfiltrate data; the attacker has the password but may not be able to access the account. For example, they have the password but aren't passing the MFA challenge. Also, the attacker couldn't be guessing passwords correctly but continuing to try. During analysis, prioritize these findings:
 
 - Successful sign-ins by known attacker IP address
 - Interrupted sign-in by known attacker IP address
@@ -471,7 +469,7 @@ It is important to be able to react to the most critical threat. This can be the
 
 ### Check legacy authentication
 
-Most attacks use legacy authentication. There are a number of ways to determine the protocol of the attack.
+Most attacks use legacy authentication. There are many ways to determine the protocol of the attack.
 
 1. In Microsoft Entra ID, navigate to **Sign-Ins** and filter on **Client App.**
 2. Select all the legacy authentication protocols that are listed.
@@ -480,7 +478,7 @@ Most attacks use legacy authentication. There are a number of ways to determine 
 
     *List of legacy protocols*
 
-3. Or if you have an Azure workspace, you can use the pre-built legacy authentication workbook located in the Microsoft Entra admin center under **Monitoring and Workbooks**.
+3. Or if you have an Azure workspace, you can use the prebuilt legacy authentication workbook located in the Microsoft Entra admin center under **Monitoring and Workbooks**.
 
     :::image type="content" source="./media/incident-response-playbook-password-spray/authenticationbook.png" alt-text="workbook":::
 
@@ -498,16 +496,17 @@ Most attacks use legacy authentication. There are a number of ways to determine 
 
 ### Has the user used this operating system, IP, ISP, device, or browser before?
 
-If the user has not used them before and this activity is unusual, then flag the user and investigate all of their activities.
+If they haven't and this activity is unusual, flag the user and investigate all of their activities.
 
 ### Is the IP marked as "risky"?
 
-Ensure you record successful passwords but failed multifactor authentication (MFA) responses, as this activity indicates that the attacker is getting the password but not passing MFA.
+Ensure you record successful passwords but failed MFA responses, as this activity indicates that the attacker is getting the password but not passing MFA.
+
 Set aside any account that appears to be a normal sign-in, for example, passed MFA, location and IP not out of the ordinary.
 
 ### MFA reporting
 
-It is important to also check MFA logs as an attacker could have successfully guessed a password but be failing the MFA prompt. The Microsoft Entra multifactor authentication logs shows authentication details for events when a user is prompted for multifactor authentication. Check and make sure there are no large suspicious MFA logs in Microsoft Entra ID. For more information, see [how to use the sign-ins report to review Microsoft Entra multifactor authentication events](/azure/active-directory/authentication/howto-mfa-reporting).
+It's important to also check MFA logs to determine if an attacker has successfully guessed a password but are failing the MFA prompt. The Microsoft Entra multifactor authentication logs show authentication details for events when a user is prompted for multifactor authentication. Check and make sure there are no large suspicious MFA logs in Microsoft Entra ID. For more information, see [how to use the sign-ins report to review Microsoft Entra multifactor authentication events](/azure/active-directory/authentication/howto-mfa-reporting).
 
 ### Additional checks
 
@@ -516,18 +515,18 @@ In Defender for Cloud Apps, investigate activities and file access of the compro
 - [Investigate compromise with Defender for Cloud Apps](/cloud-app-security/investigate)
 - [Investigate anomalies with Defender for Cloud Apps](/cloud-app-security/investigate-anomaly-alerts)
 
-Check whether the user has access to additional resources, such as virtual machines (VMs), domain account permissions, storage, among others.
-If data has been breached, then you should inform additional agencies, such as the police.
+Check whether the user has access to more resources, such as virtual machines (VMs), domain account permissions, storage, among others.
+If there is a data breach, you should inform more agencies, such as the police.
 
 ## Immediate remedial actions
 
-1. Change the password of any account that is suspected to have been breached or if the account password has been discovered. Additionally, block the user. Make sure you follow the guidelines for [revoking emergency access](/azure/active-directory/enterprise-users/users-revoke-access).
-2. Mark any account that has been compromised as "*compromised*" in Azure Identity Protection.
-3. Block the IP address of the attacker. Be cautious while performing this action as attackers can use legitimate VPNs and this could create more risk as they change IP addresses as well. If you are using Cloud Authentication, then block the IP address in Defender for Cloud Apps or Microsoft Entra ID. If federated, you need to block the IP address at the firewall level in front of the ADFS service.
-4. [Block legacy](/azure/active-directory/conditional-access/block-legacy-authentication) authentication if it is being used (this action, however, could impact business).
-5. [Enable MFA](/azure/active-directory/authentication/tutorial-enable-azure-mfa) if it is not already done.
+1. Change the password of any account that you suspect has been breached or the account password discovered. Additionally, block the user. Make sure you follow the guidelines for [revoking emergency access](/azure/active-directory/enterprise-users/users-revoke-access).
+2. Mark any compromised account as "*compromised*" in Azure Entra ID Identity Protection.
+3. Block the IP address of the attacker. Be cautious while performing this action as attackers can use legitimate VPNs and could create more risk as they change IP addresses as well. If you are using Cloud Authentication, then block the IP address in Defender for Cloud Apps or Microsoft Entra ID. If federated, you need to block the IP address at the firewall level in front of the ADFS service.
+4. [Block legacy authentication](/azure/active-directory/conditional-access/block-legacy-authentication) if it's being used (this action, however, could impact business).
+5. [Enable MFA](/azure/active-directory/authentication/tutorial-enable-azure-mfa) if it isn't already done.
 6. [Enable Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) for the user risk and sign-in risk
-7. Check the data that has been compromised (emails, SharePoint, OneDrive, apps). See how to use the [activity filter in Defender for Cloud Apps](/cloud-app-security/activity-filters).
+7. Check the compromised data (emails, SharePoint, OneDrive, apps). See how to use the [activity filter in Defender for Cloud Apps](/cloud-app-security/activity-filters).
 8. Maintain password hygiene. For more information, see [Microsoft Entra password protection](https://www.microsoft.com/research/publication/password-guidance/).
 9. You can also refer to [ADFS Help](https://adfshelp.microsoft.com/TroubleshootingGuides/Workflow/a73d5843-9939-4c03-80a1-adcbbf3ccec8).
 
@@ -535,7 +534,7 @@ If data has been breached, then you should inform additional agencies, such as t
 
 ### Password protection
 
-Implement password protection on Microsoft Entra ID and on-premises by enabling the custom-banned password lists. This configuration will prevent users from setting weak passwords or passwords associated with your organization:
+Implement password protection on Microsoft Entra ID and on-premises by enabling the custom-banned password lists. This configuration prevents users from setting weak passwords or passwords associated with your organization:
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/Passwordprotection.jpg" alt-text="pwdprotection":::
 

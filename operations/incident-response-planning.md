@@ -8,7 +8,6 @@ manager: dansimp
 localization_priority: Normal
 ms.topic: article
 ms.collection: 
-  - zerotrust-solution
   - msftsolution-secops
 ms.service: microsoft-365-security
 ms.custom: cxdef-zt-ransomware

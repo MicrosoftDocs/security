@@ -1,6 +1,6 @@
 ---
 title: Step 3. Ingest data sources and configure incident detection in Microsoft Sentinel
-description: Learn how to turn on data connectors, enable UEBA, and analytic rules in Sentinel to ingest data sources and incident detection
+description: Learn how to turn on data connectors and enable UEBA and analytic rules in Microsoft Sentinel to ingest data sources and incident detection.
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
@@ -16,7 +16,7 @@ ms.collection:
 ---
 
 
-# Step 3. Ingest data sources and configure incident detection in Sentinel
+# Step 3. Ingest data sources and configure incident detection in Microsoft Sentinel
 
 After you've completed designing and implementing your Microsoft Sentinel workspace(s), you can proceed to ingest data sources and configure incident detection.
 
@@ -52,7 +52,7 @@ Use the following recommendations to get started with configuring data connector
 1.  Focus on setting up free data sources to ingest:
 
     1.  Azure Activity Logs:
-        a.  Ingesting Azure Activity Logs is **critical** in enabling Sentinel to provide a single-pane of glass view across the environment.
+        Ingesting Azure Activity Logs is **critical** in enabling Sentinel to provide a single-pane of glass view across the environment.
     2.  Office 365 Audit Logs, including all SharePoint activity, Exchange admin activity, and Teams.
     3.  Security alerts, including alerts from Microsoft Defender for Cloud, Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Identity, and Microsoft Defender for Endpoint:
 

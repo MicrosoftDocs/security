@@ -60,7 +60,7 @@ Meet these deployment objectives to protect your privileged identities with Zero
 | Done | Deployment objective | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
 | <input type="checkbox" /> | 1. Deploy secured privileged access to protect administrative user accounts.  | IT implementer | [Securing privileged access for hybrid and cloud deployments in Microsoft Entra ID](/azure/active-directory/roles/security-planning) |
-| <input type="checkbox" /> | 2. Deploy Microsoft Entra Privileged Identity Management (PIM) for a time-bound, just-in-time approval process for the use of privileged user accounts. | IT implementer | [Plan a Privileged Identity Management deployment](/azure/active-directory/authentication/howto-mfa-getstarted) |
+| <input type="checkbox" /> | 2. Deploy Microsoft Entra Privileged Identity Management (PIM) for a time-bound, just-in-time approval process for the use of privileged user accounts. | IT implementer | [Plan a Privileged Identity Management deployment](/entra/id-governance/privileged-identity-management/pim-deployment-plan) |
 
 Meet these deployment objectives to protect your user identities with Zero Trust.
 

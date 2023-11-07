@@ -10,7 +10,6 @@ ms.topic: article
 ms.service: microsoft-365-security
 localization_priority: Normal
 ms.collection: 
-- zerotrust-solution
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
 description: Deploy ransomware protection to limit the scope of damage of an attacker by protecting privileged roles.

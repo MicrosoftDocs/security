@@ -10,7 +10,6 @@ ms.topic: article
 ms.service: microsoft-365-security
 localization_priority: Normal
 ms.collection: 
-- zerotrust-solution
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
 description: Quickly configure for ransomware prevention in your organization to help stop ransomware cybercriminals from extorting your business.

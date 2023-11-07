@@ -17,6 +17,7 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - zerotrust-smb
+- m365solution-zero-trust
 ms.custom: intro-overview
 ms.reviewer: bcarter
 f1.keywords: NOCSH 

@@ -61,9 +61,11 @@ Because different organizations can be at various stages of deploying Zero Trust
 - If you're NOT using any of the protections described in the step, take the time to pilot and deploy them prior to assigning Microsoft 365 Copilot licenses.
 - If you're using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated and pilot and deploy them prior to assigning Microsoft 365 Copilot licenses.
 
-## Step 1. Deploy or validate your Conditional Access policies
+For the latest Microsoft 365 Copilot support for security-related and other features of Microsoft 365, see [Microsoft 365 Copilot requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements).
 
-To prevent bad actors from using Microsoft 365 Copilot to more quickly discover and access sensitive data, the first step is to prevent the bad actors from being authenticated. You must ensure that:
+## Step 1. Deploy or validate your identity and access policies
+
+To prevent bad actors from using Microsoft 365 Copilot to more quickly discover and access sensitive data, the first step is to prevent them from gaining access. You must ensure that:
 
 - Users are required to use strong authentication that can't be compromised by guessing user passwords alone.
 - Authentication attempts are evaluated for their risk and have more requirements imposed.
@@ -71,22 +73,22 @@ To prevent bad actors from using Microsoft 365 Copilot to more quickly discover 
 
 ### Getting started with E3
 
-Microsoft 365 E3 includes Microsoft Entra ID P1 licenses. With this plan, Microsoft recommends using [common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation), which are the following:
+Microsoft 365 E3 includes Microsoft Entra ID P1 licenses. With this plan, Microsoft recommends using [common Conditional Access policies](/entra/conditional-access/concept-conditional-access-policy-common?tabs=secure-foundation), which are the following:
 
-- [Require multifactor authentication (MFA) for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
-- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [Require multifactor authentication (MFA) for administrators](/entra/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [Require MFA for all users](/entra/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [Block legacy authentication](/entra/conditional-access/howto-conditional-access-policy-block-legacy)
 
 Ensure that you include Microsoft 365 Services and your other SaaS apps in the scope of these policies. 
 
-If your environment includes hybrid identities with on-premises Active Directory Domain Services, be sure to deploy [Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises). This capability detects and blocks known weak passwords and their variants and can also block more weak terms within passwords that are specific to your organization. 
+If your environment includes hybrid identities with on-premises Active Directory Domain Services, be sure to deploy [Microsoft Entra Password Protection](/entra/authentication/concept-password-ban-bad-on-premises). This capability detects and blocks known weak passwords and their variants and can also block more weak terms within passwords that are specific to your organization. 
 
 ### Next steps with E5
 
 Microsoft 365 E5 includes Microsoft Entra ID P2 licenses. Begin implementing Microsoft's [recommended set of Conditional Access and related policies](/microsoft-365/security/office-365-security/identity-access-policies), including:
 
 - Requiring MFA when sign-in risk is medium or high.
-- Requiring that high risk users change their password.
+- Requiring that high risk users change their password (applicable when you are not using passwordless authentication).
 
 For more information about implementing protection for identity and access based on your licensing plan, see [Increase sign-in security for hybrid workers with MFA](/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in).
 
@@ -94,10 +96,10 @@ Microsoft 365 E5 and Microsoft Entra ID P2 both include more protection for priv
 
 | Capability | Resources |
 | --- | --- |
-| Privileged Identity Management (PIM) | Provides protections for privileged accounts that access resources, including resources in Microsoft Entra ID, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune. See [Plan a Privileged Identity Management deployment](/azure/active-directory/privileged-identity-management/pim-deployment-plan). |
+| Privileged Identity Management (PIM) | Provides protections for privileged accounts that access resources, including resources in Microsoft Entra ID, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune. See [Plan a Privileged Identity Management deployment](/entra/privileged-identity-management/pim-deployment-plan). |
 | Microsoft Purview Privileged Access Management | Allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. See [Privileged access management overview](/purview/privileged-access-management-solution-overview). |
 
-Finally, consider implementing [access reviews](/azure/active-directory/governance/access-reviews-overview) as part of your overall JEA strategy. Access reviews enable your organization to efficiently manage group memberships, access to enterprise applications, and role assignments. User's access can be reviewed regularly to make sure only the right people have the appropriate continued access.
+Finally, consider implementing [access reviews](/entra/governance/access-reviews-overview) as part of your overall JEA strategy. Access reviews enable your organization to efficiently manage group memberships, access to enterprise applications, and role assignments. User's access can be reviewed regularly to make sure only the right people have the appropriate continued access.
 
 ## Step 2. Deploy or validate your App Protection policies 
 
@@ -111,7 +113,7 @@ For more information, see [Create App Protection policies](/mem/intune/apps/app-
 
 ## Step 3. Deploy or validate your device management and protection
 
-To prevent bad actors from compromising devices or using compromised devices and gaining access to Microsoft 365 Copilot, the next step is to use Microsoft 365 features of device management and protection. You must ensure that:
+To prevent bad actors from compromising devices or using compromised devices to gain access to Microsoft 365 Copilot, the next step is to use Microsoft 365 features of device management and protection. You must ensure that:
 
 - Devices are enrolled in Microsoft Intune and must meet health and compliance requirements.
 - You can administer settings and features on devices.
@@ -212,7 +214,7 @@ After deploying Microsoft 365 Defender, integrate these eXtended detection and r
 
 ## Step 5. Deploy or validate your data protection
 
-To prevent bad actors accessing your organization’s data with Microsoft 365 Copilot, the next step is to protect the data in your Microsoft 365 tenant. You must ensure that:
+To prevent your organization’s data from being at risk of overexposure or oversharing due to the use of Microsoft 365 Copilot, the next step is to protect the data in your Microsoft 365 tenant. You must ensure that:
 
 - Your data is categorized with sensitivity levels.
 - Sensitivity labels represent your sensitivity levels that are applied by users or automatically.
@@ -258,7 +260,6 @@ Microsoft provides guidance for protecting your Teams at three different levels 
 
 See these resources for more information:
 
-- [Set up secure file sharing and collaboration with Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams)
 - [Compare levels of protection](/microsoft-365/solutions/setup-secure-collaboration-with-teams#securing-teams-for-sensitive-and-highly-sensitive-data)
 - [Configure Teams with three tiers of protection](/microsoft-365/solutions/setup-secure-collaboration-with-teams)
 
@@ -281,9 +282,7 @@ For collaborating with people outside your organization, see these resources:
 
 ## Step 7. Deploy or validate minimum user permissions to data
 
-To prevent bad actors accessing your organization’s data with Microsoft 365 Copilot, you must ensure that all users have Just Enough Access (JEA) to perform their jobs and no more.
- 
-A bad actor can take advantage of resource oversharing, which happens when users don't place adequate permissions on Microsoft 365 resources such as files, folders, or Teams. With oversharing, a bad actor has many more user accounts available to compromise and access possibly sensitive data. With JEA in place, a bad actor must compromise the right user accounts.
+To prevent your organization’s data from being at risk of overexposure or oversharing due to use of Microsoft 365 Copilot, the next step is to ensure that all users have Just Enough Access (JEA) to perform their jobs and no more. Users should not discover data they are not supposed to be able to view or share data that they should not be sharing. 
 
 To prevent oversharing, implement permissions requirements and organizational policies that all users must follow and train your users to use them. For example, put controls in place, like requiring site access reviews by site owners or restricting access to defined security groups from one central place.
 
@@ -293,13 +292,13 @@ To detect existing oversharing:
 
   Use [Microsoft Purview's Information Protection](https://www.microsoft.com/security/business/information-protection/microsoft-purview-information-protection) and its data classification controls, integrated content labeling, and corresponding data loss prevention policies. 
 
-  These features can help you identify files in Microsoft Teams, SharePoint sites, OneDrive locations, within email, and in chat conversations either containing sensitive information or classified content, then automatically apply controls to limit their access.
+  These features can help you identify files in Microsoft Teams, SharePoint sites, OneDrive locations, within email, in chat conversations, in your on-premises infrastructure, and on endpoint devices either containing sensitive information or classified content, then automatically apply controls to limit their access.
 
 - At the site team and container level within Microsoft Teams and SharePoint
 
   You can audit access to shared content at the site and team level and enforce restrictions that limits information discovery to only those who should have access.
 
-  To help automate this process even more, [Microsoft Syntex](/microsoft-365/syntex/syntex-overview) provides advanced management capabilities to help find potential oversharing with your SharePoint and Microsoft Teams files.
+  To help automate this process even more, [Microsoft Syntex – SharePoint Advanced Management](/sharepoint/advanced-management) helps you find potential oversharing with your SharePoint and Microsoft Teams files.
 
 ## Applying protections and deploying Copilot in parallel
 
@@ -360,4 +359,4 @@ Refer to these links to learn about the various services and technologies mentio
 - [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels)
 - [Create DLP policies](/purview/dlp-learn-about-dlp)
 - [Configure Teams with three tiers of protection](/microsoft-365/solutions/setup-secure-collaboration-with-teams)
-- [Microsoft Syntex](/microsoft-365/syntex/syntex-overview)
+- [Microsoft Syntex – SharePoint Advanced Management](/sharepoint/advanced-management)

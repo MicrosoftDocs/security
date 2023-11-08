@@ -31,6 +31,17 @@ The following table provides reasons why business leaders across an organization
 | Chief Compliance Officer (CCO) |  |
 | Chief Privacy Officer (CPO) |  |
 
+A Zero Trust approach solves several security problems arising from security breaches. You can emphasize the following benefits of a Zero Trust approach with your business leaders.
+
+| Role | Why preventing or reducing business damage from a breach is important |
+| --- | --- |
+| Ensure survival |  |
+| Control damage to reputation |  |
+| Reduce blast radius within your organization |  |
+| Demonstrate robust security and risk posture |  |
+| Lower cyber insurance premiums |  |
+| Increase security team efficiency and morale |  |
+
 ## The adoption cycle for preventing or reducing business damage from a breach
 
 This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
@@ -67,12 +78,16 @@ The motivations for preventing or reducing business damage from a breach are str
 
 ### Outcomes for preventing or reducing business damage from a breach
 
-Applying the overall goal of Zero Trust to “never trust, always verify” to your data adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection and usability for all teams involved, including your users. The following table provides suggested objectives and outcomes.
+Applying the overall goal of Zero Trust to “never trust, always verify” to your data adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes.
 
 | Objective | Outcome |
 | --- | --- |
-|  |  |
-|  |  |
+| Business outcomes |  |
+| Governance |  |
+| Organizational resilience |  |
+| Security |  |
+
+
 
 ## Plan phase
 

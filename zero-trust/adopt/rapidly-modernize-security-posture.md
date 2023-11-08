@@ -423,5 +423,6 @@ Implementing Zero Trust is a journey. In enterprise-scale organizations, it can 
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)

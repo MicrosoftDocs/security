@@ -424,5 +424,6 @@ See [Govern your data with Microsoft Purview](/microsoft-365/compliance/manage-d
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)

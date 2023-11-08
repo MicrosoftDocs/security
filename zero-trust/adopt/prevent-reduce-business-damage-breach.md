@@ -18,7 +18,7 @@ Intro
 
 Before starting any technical work, it’s important to understand the different motivations for investing in protecting business data as these help inform the strategy, objectives, and measures for success.
 
-The following table provides reasons why business leaders across an organization should invest in Zero Trust-based data protection.
+The following table provides reasons why business leaders across an organization should invest in preventing or reducing damage from a breach.
 
 | Role | Why preventing or reducing business damage from a breach is important |
 | --- | --- |
@@ -96,7 +96,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-|  <br><br>  |  <br><br>  |  <br><br>  |  <br><br>  |
+| Secure privileged accounts <br><br> Implement Azure Backup for critical business data <br><br> Implement Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Protect against ransomware <br><br> Create honeypot resources <br><br> Adopt a cybersecurity framework	 | Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data  <br><br> Gain visibility to network traffic <br><br> Skilling | Discontinue legacy network security technology <br><br> Practice threat and disaster recovery response <br><br> Gather industry specific threat intelligence |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
@@ -149,6 +149,31 @@ Before you embark on the technical work, Microsoft recommends getting to know th
 
 The Stage 1 deployment objectives include the process of...
 
+In this stage, you:
+
+- Secure privileged accounts
+- Implement Azure Backup for critical business data
+- Implement Site Recovery for critical workload continuity
+- Encrypt network communication
+
+##### Secure privileged accounts
+
+| Resource | Description |
+|:-----|:-----|
+|  |  |
+
+##### Implement Azure Backup for critical business data
+
+| Resource | Description |
+|:-----|:-----|
+|  |  |
+
+##### Implement Site Recovery for critical workload continuity
+
+| Resource | Description |
+|:-----|:-----|
+|  |  |
+
 ##### Encrypt network communication
 
 This objective is more of a check to be sure your network traffic is encrypted. Check in with your networking team to make sure these recommendations are satisfied.
@@ -161,15 +186,117 @@ This objective is more of a check to be sure your network traffic is encrypted. 
 
 #### Stage 2
 
-In this stage, you... 
+In this stage, you:
+
+- Segment your network
+- Implement a patching plan
+- Protect against ransomware
+- Create honeypot resources
+- Adopt a cybersecurity framework
+
+##### Segment your network
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
+
+##### Implement a patching plan
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
+
+##### Protect against ransomware
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
+
+##### Create honeypot resources
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
+
+##### Adopt a cybersecurity framework
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
 
 #### Stage 3
 
-In this stage, you... 
+In this stage, you:
+
+- Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data
+- Gain visibility into network traffic
+- Skilling
+
+##### Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
+
+##### Gain visibility into network traffic
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
+
+##### Skilling
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
 
 #### Stage 4
 
-In this stage, you... 
+In this stage, you:
+
+- Discontinue legacy network security technology
+- Practice threat and disaster recovery response
+- Gather industry-specific threat intelligence
+
+##### Discontinue legacy network security technology
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
+
+##### Practice threat and disaster recovery response
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
+
+##### Gather industry-specific threat intelligence
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
 
 ## Ready phase
 
@@ -196,10 +323,9 @@ There’s no need to wait until one phase is complete before beginning the next.
 
 Governance of your organization’s data is an iterative process. By thoughtfully creating your classification schema and rolling it out across your digital estate you have created a foundation. Use the following exercises to help you start building your initial governance plan for this foundation:
 
-- **Establish your methodology:** Establish a basic methodology for reviewing your schema, how it's applied across your digital estate, and the success of the results. Decide how you'll monitor and evaluate the success of your information protection protocol, including your current state and future state.
-- **Establish an initial governance foundation:** Begin your governance journey with a small, easily implemented set of governance tools. This initial governance foundation is called a minimum viable product (MVP). 
-- **Improve your initial governance foundation:** Iteratively add governance controls to address tangible risks as you progress toward the end state.
-
+- 
+-  
+- 
 
 ## Next Steps
 

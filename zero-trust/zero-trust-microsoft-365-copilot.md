@@ -88,7 +88,7 @@ If your environment includes hybrid identities with on-premises Active Directory
 Microsoft 365 E5 includes Microsoft Entra ID P2 licenses. Begin implementing Microsoft's [recommended set of Conditional Access and related policies](/microsoft-365/security/office-365-security/identity-access-policies), including:
 
 - Requiring MFA when sign-in risk is medium or high.
-- Requiring that high risk users change their password (applicable when you are not using passwordless authentication).
+- Requiring that high risk users change their password (applicable when you aren't using passwordless authentication).
 
 For more information about implementing protection for identity and access based on your licensing plan, see [Increase sign-in security for hybrid workers with MFA](/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in).
 
@@ -105,7 +105,7 @@ Finally, consider implementing [access reviews](/entra/id-governance/access-revi
 
 For both Microsoft 365 E3 and E5, use [Intune App Protection policies (APP)](/mem/intune/apps/app-protection-policy), which are rules that ensure an organization's data remains safe or contained within a managed app.
 
-With APP, Intune creates a wall between your organization data and personal data. APP ensure that organization data in specified apps can't be copied and pasted to other apps on the device, even if the device is not managed.
+With APP, Intune creates a wall between your organization data and personal data. APP ensure that organization data in specified apps can't be copied and pasted to other apps on the device, even if the device isn't managed.
 
 APP can prevent the inadvertent or intentional copying of Copilot-generated content to apps on a device that aren't included in the list of permitted apps. APP can limit the blast radius of an attacker using a compromised device.
 
@@ -136,7 +136,7 @@ To deploy these protections, use the following set of articles.
 
 ### Next steps with E5
 
-Microsoft 365 E5 also includes Microsoft Defender for Endpoint. After you have deployed Microsoft Defender for Endpoint, you can gain greater insights and protection of your devices by integrating Microsoft Intune with Defender for Endpoint. For mobile devices, this includes the ability to monitor device risk as a condition for access. For Windows devices, you can monitor compliance of these devices to security baselines.
+Microsoft 365 E5 also includes Microsoft Defender for Endpoint. After deploying Microsoft Defender for Endpoint, you can gain greater insights and protection of your devices by integrating Microsoft Intune with Defender for Endpoint. For mobile devices, this includes the ability to monitor device risk as a condition for access. For Windows devices, you can monitor compliance of these devices to security baselines.
 
 Microsoft 365 E5 also includes endpoint data loss prevention (DLP). If your organization already understands your data, has developed a data sensitivity schema, and applied the schema, you might be ready to extend elements of this schema to endpoints by using Microsoft Purview DLP policies.
 
@@ -159,7 +159,7 @@ Microsoft 365 E3 includes several key capabilities in Defender for Office 365 an
 
 #### Microsoft Defender for Office 365 P1
 
-Microsoft Defender for Office 365 P1 includes Exchange Online Protection (EOP), which are included in Microsoft 365 E3. EOP helps protect your email and collaboration tools from phishing, impersonation, and other threats. Use these to configure anti-malware, anti-spam, and anti-phishing protection:
+Microsoft Defender for Office 365 P1 includes Exchange Online Protection (EOP), which are included in Microsoft 365 E3. EOP helps protect your email and collaboration tools from phishing, impersonation, and other threats. Use these resources to configure anti-malware, anti-spam, and anti-phishing protection:
 
 - [EOP overview ](/microsoft-365/security/office-365-security/eop-about)
 - [Preset security policies ](/microsoft-365/security/office-365-security/preset-security-policies)
@@ -171,7 +171,7 @@ Microsoft 365 E3 includes Microsoft Defender for Endpoint P1, which includes the
 - [Next-generation protection](/microsoft-365/security/defender-endpoint/next-generation-protection) – Helps protect your devices from emerging threats in real-time. This capability includes Microsoft Defender Antivirus, which continually scans your device using file and process behavior monitoring. 
 - [Attack surface reduction](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) – Prevents attacks from happening in the first place by configuring settings that automatically block potentially suspicious activity. 
 
-Use these to configure Defender for Endpoint Plan 1:
+Use these resources to configure Defender for Endpoint Plan 1:
 
 - [Overview of Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Set up and configure](/microsoft-365/security/defender-endpoint/mde-p1-setup-configuration)
@@ -207,14 +207,14 @@ Microsoft recommends enabling the components of Microsoft 365 in the order illus
  
 For more information and a description of this illustration, see [Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview#the-evaluation-process-for-microsoft-365-defender-cyber-security).
 
-After deploying Microsoft 365 Defender, integrate these eXtended detection and response (XDR) tools with Microsoft Sentinel. Microsoft Sentinel is licensed and billed separately from Microsoft 365 E5. Use these for more information:
+After deploying Microsoft 365 Defender, integrate these eXtended detection and response (XDR) tools with Microsoft Sentinel. Microsoft Sentinel is licensed and billed separately from Microsoft 365 E5. Use these resources for more information:
 
 - [Implement Microsoft Sentinel and Microsoft 365 Defender for Zero Trust](/security/operations/siem-xdr-overview)
 - [Plan costs and understanding Microsoft Sentinel pricing and billing](/azure/sentinel/billing?tabs=simplified%2Ccommitment-tiers)
 
 ## Step 5. Deploy or validate your data protection
 
-To prevent your organization’s data from being at risk of overexposure or oversharing due to the use of Microsoft 365 Copilot, the next step is to protect the data in your Microsoft 365 tenant. You must ensure that:
+To prevent your organization’s data from being at risk of overexposure or oversharing, the next step is to protect the data in your Microsoft 365 tenant. You must ensure that:
 
 - Your data is categorized with sensitivity levels.
 - Sensitivity labels represent your sensitivity levels that are applied by users or automatically.
@@ -226,7 +226,7 @@ These data protection capabilities can also be used to ensure that your organiza
 
 [Sensitivity labels](/purview/sensitivity-labels) form the cornerstone of protecting your data. Before you create the labels to denote the sensitivity of items and the protection actions that are applied, you must understand your organization’s existing classification taxonomy and how it maps to labels that users see and apply in apps. After creating the sensitivity labels, publish them, and provide guidance to users how and when to apply them in Word, Excel, PowerPoint, and Outlook. 
 
-For more information, see these resources:
+For more information, see:
 
 - [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels)
 - [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels)
@@ -234,7 +234,7 @@ For more information, see these resources:
 
 Consider augmenting manual labeling by using the sensitivity label policy settings of a default label and mandatory labeling. A default label helps to set a base level of protection settings that you want applied to all your content. Mandatory labeling ensures users label documents and emails. However, without comprehensive user training and other controls, these settings can result in inaccurate labeling.
 
-See these additional steps to protect your organization’s data:
+See these additional resources to protect your organization’s data:
 
 - [Create DLP policies](/purview/dlp-learn-about-dlp) for files and email.
 - [Create retention policies](/purview/create-retention-policies) to keep what you need and delete what you don’t.
@@ -282,7 +282,7 @@ For collaborating with people outside your organization, see these resources:
 
 ## Step 7. Deploy or validate minimum user permissions to data
 
-To prevent your organization’s data from being at risk of overexposure or oversharing due to use of Microsoft 365 Copilot, the next step is to ensure that all users have Just Enough Access (JEA) to perform their jobs and no more. Users should not discover data they are not supposed to be able to view or share data that they should not be sharing. 
+To prevent your organization’s data from being at risk of overexposure or oversharing, the next step is to ensure that all users have Just Enough Access (JEA) to perform their jobs and no more. Users shouldn't discover data they aren't supposed to be able to view or share data that they shouldn't be sharing. 
 
 To prevent oversharing, implement permissions requirements and organizational policies that all users must follow and train your users to use them. For example, put controls in place, like requiring site access reviews by site owners or restricting access to defined security groups from one central place.
 
@@ -302,11 +302,11 @@ To detect existing oversharing:
 
 ## Applying protections and deploying Copilot in parallel
 
-To streamline the assignment of Microsoft 365 Copilot licenses in your tenant with the appropriate protections in place, you do both in parallel. The following diagram shows how you can move through the three phases of rolling out protections prior to assigning Microsoft 365 Copilot licenses to individual user accounts and their devices once they are protected.
+To streamline the assignment of Microsoft 365 Copilot licenses in your tenant with the appropriate protections in place, you do both in parallel. The following diagram shows how you can move through the three phases of rolling out protections prior to assigning Microsoft 365 Copilot licenses to individual user accounts and their devices once they're protected.
 
 :::image type="content" source="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg" alt-text="Diagram of applying protections and deploying Copilot in parallel." lightbox="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg":::
 
-As the diagram also shows, you can roll out information protection across your organization while you are deploying identity and device access protections.
+As the diagram also shows, you can roll out information protection across your organization while you're deploying identity and device access protections.
 
 ## Training 
 

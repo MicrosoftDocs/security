@@ -5,7 +5,7 @@ ms.date: 03/29/2023
 author: mjcaparas
 ms.author: macapara
 ms.topic: article
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.localization_priority: Normal
 ms.collection: 
   - zerotrust-solution

@@ -6,7 +6,6 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 ms.collection: 
-  - zerotrust-solution
   - msftsolution-secops
 ms.topic: article
 ms.service: microsoft-365-security

@@ -2,7 +2,7 @@
 layout: Conceptual
 title: Solving the TLS 1.0 Problem
 description: This document presents guidance on rapidly identifying and removing Transport Layer Security (TLS) protocol version 1.0 dependencies in software built on top of Microsoft operating systems. It is intended to be used as a starting point for building a migration plan to a TLS 1.2+ network environment.
-ms.date: 08/18/2023
+ms.date: 11/02/2023
 ms.service: security
 ms.author: dansimp
 author: dansimp
@@ -10,11 +10,7 @@ ms.topic: conceptual
 ---
 
 # Solving the TLS 1.0 Problem, 2nd Edition
-By Andrew Marshall  
-Principal Security Program Manager  
-Microsoft Corporation  
 
-## Executive Summary
 This document presents the latest guidance on rapidly identifying and removing Transport Layer Security (TLS) protocol version 1.0 dependencies in software built on top of Microsoft operating systems, following up with details on product changes and new features delivered by Microsoft to protect your own customers and online services.  It is intended to be used as a starting point for building a migration plan to a TLS 1.2+ network environment. While the solutions discussed here may carry over and help with removing TLS 1.0 usage in non-Microsoft operating systems or crypto libraries, they are not a focus of this document.
 
 TLS 1.0 is a security protocol first defined in 1999 for establishing encryption channels over computer networks. Microsoft has supported this protocol since Windows XP/Server 2003. While no longer the default security protocol in use by modern OSes, TLS 1.0 is still supported for backwards compatibility. Evolving regulatory requirements as well as new security vulnerabilities in TLS 1.0 provide corporations with the incentive to disable TLS 1.0 entirely.
@@ -60,24 +56,30 @@ partners. Hardcoding here means that the TLS version is fixed to a version that 
 testing and supportability purposes as many different browsers and
 operating systems had varying levels of TLS support.  
 
-## Ensuring support for TLS 1.2 across deployed operating systems
-Many operating systems have outdated TLS version defaults or support
-ceilings that need to be accounted for. Usage of Windows 8/Server 2012
-or later means that TLS 1.2 will be the default security protocol
-version:
+## Supported versions of TLS in Windows
+Many operating systems have outdated TLS version defaults or support ceilings that need to be accounted for.
 
 #### Figure 1: Security Protocol Support by OS Version
-| Windows OS              | SSLv2         | SSLv3    | TLS 1.0     | TLS 1.1                                                                                                                            | TLS 1.2                                                                                                                            |
-| ----------------------- | ------------- | -------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Windows Vista           | Enabled       | Enabled  | **Default** | Not Supported                                                                                                                      | Not Supported                                                                                                                      |
-| Windows Server 2008     | Enabled       | Enabled  | **Default** | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              |
-| Windows 7 (WS2008 R2)   | Enabled       | Enabled  | **Default** | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) |
-| Windows 8 (WS2012)      | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
-| Windows 8.1 (WS2012 R2) | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
-| Windows 10              | Disabled      | Enabled  | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
-| Windows Server 2016     | Not Supported | Disabled | Enabled     | Enabled                                                                                                                            | **Default**                                                                                                                        |
+| Windows OS              | SSLv2         | SSLv3    | TLS 1.0     | TLS 1.1 | TLS 1.2 | TLS 1.3 |
+| ----------------------- | ------------- | -------- | ----------- | ------ | ------------------------ | ------ |
+| Windows Vista           | Enabled       | Enabled  | Enabled | Not Supported  | Not Supported | Not Supported |
+| Windows Server 2008     | Enabled       | Enabled  | Enabled | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) | [Disabled*](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/)              | Not Supported |
+| Windows 7 (WS2008 R2)   | Enabled       | Enabled  | Enabled | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | [Disabled*](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) | Not Supported |
+| Windows 8 (WS2012)      | Disabled      | Enabled  | Enabled     | Enabled | Enabled   | Not Supported |
+| Windows 8.1 (WS2012 R2) | Disabled      | Enabled  | Enabled     | Enabled | Enabled   | Not Supported |
+| Windows 10                     | Disabled      | Enabled  | Enabled     | Enabled | Enabled | Not Supported | 
+| Windows 11                     | Disabled      | Enabled  | Enabled     | Enabled | Enabled | Enabled | 
+| Windows Server 2016            | Not Supported | Disabled | Enabled     | Enabled | Enabled | Not Supported |   
+| Windows Server 2016            | Not Supported | Disabled | Enabled     | Enabled | Enabled | Not Supported | 
+| Windows Server 2019            | Not Supported | Disabled | Enabled     | Enabled | Enabled | Not Supported |
+| Windows Server 2019 GS edition | Not Supported | Disabled | Disabled    | Disabled | Enabled| Not Supported |
+| Windows Server 2022            | Not Supported | Disabled | Disabled    | Disabled | Enabled | Enabled |                                                                        
 
-*TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
+Windows Server 2019 GS edition is Microsoft SDL compliant, TLS 1.2 only with a restricted set of cipher suites.
+
+Windows Server 2022 edition is Microsoft SDL compliant, TLS 1.2 and TLS 1.3 only with a restricted set of cipher suites.
+
+TLS 1.1/1.2 can be enabled on Windows Server 2008 via [this optional Windows Update package.](https://cloudblogs.microsoft.com/microsoftsecure/2017/07/20/tls-1-2-support-added-to-windows-server-2008/) 
 
 For more information on TLS 1.0/1.1 deprecation in IE/Edge, see [Modernizing TLS connections in Microsoft Edge and Internet Explorer 11](https://blogs.windows.com/msedgedev/2018/10/15/modernizing-tls-edge-ie11/),  [Site compatibility-impacting changes coming to Microsoft Edge](/microsoft-edge/web-platform/site-impacting-changes) and [Disabling TLS/1.0 and TLS/1.1 in the new Edge Browser](https://textslashplain.com/2020/01/13/disabling-tls-1-0-and-tls-1-1-in-the-new-edge-browser/)
 

@@ -1,7 +1,7 @@
 ---
 title: Prevent or reduce business damage from a breach with Zero Trust
 description: Prevent or reduce business damage from a breach with Zero Trust.  
-ms.date: 04/14/2023
+ms.date: 11/31/2023
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -14,9 +14,9 @@ ms.collection:
 
 Intro
 
-## How business leaders think about protecting sensitive data
+## How business leaders think about preventing breaches
 
-Before starting any technical work, it’s important to understand the different motivations for investing in protecting business data as these help inform the strategy, objectives, and measures for success.
+Before starting any technical work, it’s important to understand the different motivations for investing in preventing and reducing business damage from a breach as these help inform the strategy, objectives, and measures for success.
 
 The following table provides reasons why business leaders across an organization should invest in preventing or reducing damage from a breach.
 
@@ -78,7 +78,7 @@ The motivations for preventing or reducing business damage from a breach are str
 
 ### Outcomes for preventing or reducing business damage from a breach
 
-Applying the overall goal of Zero Trust to “never trust, always verify” to your data adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes.
+Applying the overall goal of Zero Trust to “never trust, always verify” adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes.
 
 | Objective | Outcome |
 | --- | --- |
@@ -111,11 +111,11 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Secure privileged accounts <br><br> Implement Azure Backup for critical business data <br><br> Implement Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Protect against ransomware <br><br> Create honeypot resources <br><br> Adopt a cybersecurity framework	 | Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data  <br><br> Gain visibility to network traffic <br><br> Skilling | Discontinue legacy network security technology <br><br> Practice threat and disaster recovery response <br><br> Gather industry specific threat intelligence |
+| Secure privileged accounts <br><br> Implement Azure Backup for critical business data <br><br> Implement Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Protect against ransomware <br><br> Create honeypot resources <br><br> Adopt a cybersecurity framework	 | Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data  <br><br> Gain visibility to network traffic <br><br> Update security team skills | Discontinue legacy network security technology <br><br> Practice threat and disaster recovery response <br><br> Gather industry specific threat intelligence |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
-:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="PowerPoint slide for the stages of your identify and protect sensitive business data deployment." lightbox="../media/adoption-guide/placeholder.svg":::
+:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="PowerPoint slide for the deployment stages of preventing or reducing business damage from a breach." lightbox="../media/adoption-guide/placeholder.svg":::
 
 ### Understand your organization
 
@@ -130,7 +130,7 @@ The following actions apply:
 
 ### Organizational planning and alignment
 
-The technical work ofpreventing or reducing business damage from a breach crosses several overlapping areas and roles:
+The technical work of preventing or reducing business damage from a breach crosses several overlapping areas and roles:
 
 - Network
 - Infrastructure
@@ -255,7 +255,7 @@ In this stage, you:
 
 - Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data
 - Gain visibility into network traffic
-- Skilling
+- Update security team skills
 
 ##### Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data
 
@@ -273,7 +273,7 @@ This objective is
 | --- | --- |
 |  |  |
 
-##### Skilling
+##### Update security team skills
 
 This objective is
 
@@ -328,7 +328,7 @@ This list summarizes the high-level methodical process for doing this work.
 
 :::image type="content" source="../media/adoption-guide/adopt-phase.svg" alt-text="The adopt phase." lightbox="../media/adoption-guide/adopt-phase.svg":::
 
-Microsoft recommends a cascading, iterative approach to discovering and protecting sensitive data. This allows you to refine your strategy and policies as you go to increase the accuracy of the results. 
+Microsoft recommends a cascading, iterative approach to preventing and reducing business damage from a breach. This allows you to refine your strategy and policies as you go to increase the accuracy of the results. 
 
 There’s no need to wait until one phase is complete before beginning the next. Your results are more effective if you iterate along the way.
 
@@ -336,7 +336,7 @@ There’s no need to wait until one phase is complete before beginning the next.
 
 :::image type="content" source="../media/adoption-guide/govern-manage-phase.svg" alt-text="The govern and manage phase." lightbox="../media/adoption-guide/govern-manage-phase.svg":::
 
-Governance of your organization’s data is an iterative process. By thoughtfully creating your classification schema and rolling it out across your digital estate you have created a foundation. Use the following exercises to help you start building your initial governance plan for this foundation:
+Use the following exercises to help you start building your foundation:
 
 - 
 -  

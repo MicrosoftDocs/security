@@ -15,7 +15,7 @@ ms.reviewer: mas
 
 The Security Adoption Framework (SAF) guides organizations through end-to-end security modernization from a strategic and programmatic level through architectural and technical planning.
 
-:::image type="content" source="media/adoption/workshops.png" alt-text="Diagram showing the components of the security adoption framework series workshops." lightbox="media/adoption/security-adoption-framework.png":::
+:::image type="content" source="media/adoption/security-workshops.png" alt-text="Diagram showing the components of the security adoption framework series workshops." lightbox="media/adoption/security-workshops.png":::
 
 Microsoft continues to invest in this guidance to help organizations as they navigate today's continuously changing security landscape. This guidance can be used in parts or as a whole to guide a full end-to-end security modernization across a 'hybrid of everything' multicloud and multi-platform technical estate.
 

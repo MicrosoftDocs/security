@@ -6,7 +6,7 @@
     - name: CISO Workshop videos
       href: the-ciso-workshop-videos.md
     - name: Microsoft Cybersecurity Reference Architectures
-      href: ../security-docs/cybersecurity-reference-architecture/MCRA.md
+      href: /security/cybersecurity-reference-architecture/mcra
     - name: Archive
       items:
       - name: The CISO Workshop (Archived)

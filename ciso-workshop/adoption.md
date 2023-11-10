@@ -33,7 +33,7 @@ The publicly available elements of this framework include:
 
 :::row:::
    :::column span="":::
-      :::image type="content" source="media/adoption/chief-information-security-officer-workshop.png" alt-text="ALT" lightbox="media/adoption/chief-information-security-officer-workshop.png":::
+      :::image type="content" source="media/adoption/chief-information-security-officer-workshop.png" alt-text="A diagram of the CISO Workshop at a high level" lightbox="media/adoption/chief-information-security-officer-workshop.png":::
    :::column-end:::
    :::column span="2":::
       [**The Chief Information Security Officer (CISO) Workshop**](ciso-workshop.md)
@@ -55,7 +55,7 @@ The publicly available elements of this framework include:
 
 :::row:::
    :::column span="":::
-      :::image type="content" source="media/adoption/zero-trust-diagram.png" alt-text="ALT" lightbox="media/adoption/zero-trust-diagram.png":::
+      :::image type="content" source="media/adoption/zero-trust-diagram.png" alt-text="A diagram of a Zero Trust architecture" lightbox="media/adoption/zero-trust-diagram.png":::
    :::column-end:::
    :::column span="2":::
       **Business guidance for security modernization** including multiple planning and execution guides for common focus areas.

@@ -44,7 +44,7 @@ The publicly available elements of this framework include:
 
 :::row:::
    :::column span="2":::
-      [**The Microsoft Cybersecurity Reference Architecture (MCRA)**](../security-docs/cybersecurity-reference-architecture/MCRA.md)
+      [**The Microsoft Cybersecurity Reference Architecture (MCRA)**](/security/cybersecurity-reference-architecture/mcra)
 
       This architecture shows you how Microsoft security capabilities can integrate with other Microsoft and 3rd party platforms. The MCRA is provided in the form of PowerPoint slides with notes.
    :::column-end:::

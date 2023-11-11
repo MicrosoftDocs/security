@@ -1,6 +1,8 @@
  - name: Security workshops
    href: adoption.md
    items:
+    - name: Security Adoption Resources
+      href: adoption.md
     - name: The CISO Workshop
       href: the-ciso-workshop.md
     - name: CISO Workshop videos

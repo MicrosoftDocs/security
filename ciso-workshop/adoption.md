@@ -1,6 +1,6 @@
 ---
-title: Security Adoption Framework
-description: Guiding organizations through security program modernization with reference strategies built using Zero Trust principles
+title: Security Adoption Resources
+description: Guiding organizations through security program modernization with reference strategies built on Zero Trust principles
 ms.service: 
 ms.subservice: 
 ms.topic: conceptual
@@ -11,13 +11,13 @@ author: MicrosoftGuyJFlo
 manager: amycolannino
 ms.reviewer: mas
 ---
-# Security Adoption Framework
+# Security Adoption Resources
 
-The Security Adoption Framework (SAF) guides organizations through end-to-end security modernization from a strategic and programmatic level through architectural and technical planning.
+Customers continue to ask for help with navigating the continuously changing security landscape. Microsoft is investing in this area with guidance based on industry standards and principles that help enable your organization to achieve more. This guidance can be used in parts or as a whole to guide a full end-to-end security modernization across a 'hybrid of everything' multicloud and multi-platform technical estate.
 
 :::image type="content" source="media/adoption/security-workshops.png" alt-text="Diagram showing the components of the security adoption framework series workshops." lightbox="media/adoption/security-workshops.png":::
 
-Microsoft continues to invest in this guidance to help organizations as they navigate today's continuously changing security landscape. This guidance can be used in parts or as a whole to guide a full end-to-end security modernization across a 'hybrid of everything' multicloud and multi-platform technical estate.
+The Security Adoption Framework (SAF) guides organizations through end-to-end security modernization from a strategic and programmatic level through architectural and technical planning.
 
 This guidance applies Zero Trust principles to all aspects of end-to-end security modernization.
 
@@ -92,31 +92,4 @@ A full Microsoft Unified engagement includes the following items:
 - [Microsoft Cybersecurity Reference Architecture (MCRA)](/security/cybersecurity-reference-architecture/mcra)
 - [The Chief Information Security Office (CISO) workshop](the-ciso-workshop.md)
 - [Zero Trust adoption framework](/security/zero-trust/adopt/zero-trust-adoption-overview)
-
-
-
-<!---
-Security Adoption Framework (SAF)**What**: The Security Adoption Framework (SAF) guides organizations through an end-to-end security modernization from strategy and program level through architecture and technical planning using Zero Trust principles.**Why**: Organizations often struggle with planning and prioritizing security modernization in the face of continuously changing threats, technology platforms, and business processes. These workshops help customers rapidly increase security posture & align security to business priorities in this challenging environment.  **How**: The SAF is a series of Microsoft Unified Engagements that help customers navigate the full set of challenges they face by providing guidance and references (strategy, plans, prioritization criteria, and more) based on best practices and lessons learned.  SAF engagements help customers decide what to do first, next, and later in security and allow organizations to start from multiple different perspectives including:​- **Getting Started** - Default starting point for customers (and account teams) who are not sure where to start on security- **Product Adoption** - Evaluate and plan Microsoft security product/feature usage (often focused on Microsoft 365 [E5] license usage) with the Security Capability - **End to End Security**  - **Technical Architecture** - Using Microsoft Cybersecurity Reference Architectures (MCRA), Zero Trust principles, and other security models, frameworks, and guidance.   - **Strategy and Program** - Using the CISO Workshop to guide an overall security modernization- **Architectures and Technical Plans** for Security Modernization Initiatives including:SAF engagements are based on general principles and approaches to security and use Microsoft technology as examples. This helps customers get value out of the engagements whether or not they are already familliar with Microsoft security technology. ﻿## Security Adoption Framework (SAF) EngagementsSAF engagements take the form of shorter engagements (1-4 hour _Topic Summaries_) and longer planning sessions (1-3 day _Security Architecture Design Sessions (ADSes)_)
-
-
-
-description of modernization inititaitves
-- bullet 1
-- bullet 2
-- bullet 3
-- bullet 4
-
-Based on this framework and your engagement you can expect to come away with:
-
-- A better understanding of security best practices:
-   - For strategy and programs through the Chief Information Security Officer (CISO) Workshop
-   - For architecture through the Microsoft Cybersecurity Reference Architectures (MCRA)
-   - For security modernization initiatives through the Security ADS modules​
-- Prioritized adoption plans for Microsoft security capabilities.
-
-Connect with a Microsoft expert to discuss:
-
-- Current security capabilities, plans, and the Microsoft maturity model​.
-- Up to date best practices based on lessons learned from Microsoft and other customers​.
-- Tailored reference plans for your organization's needs, environment, and priorities ​
-- Review Microsoft security product capabilities to prioritize adoption plans based on your needs​--->
+- [Microsoft Secure Future Initiative](https://www.microsoft.com/microsoft-cloud/resources/built-in-security)

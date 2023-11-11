@@ -39,4 +39,4 @@ Organizations find this architecture useful because it covers capabilities acros
 
 - [Download the file here](https://github.com/MicrosoftDocs/security/blob/main/Downloads/microsoft-cybersecurity-reference-architectures.pptx?raw=true)
 - [Watch a recorded version of this guidance on YouTube](https://aka.ms/MCRA-videos).
-- Continue your journey as part of the [Security Adoption Framework](../../ciso-workshop/adoption.md).
+- Continue your journey as part of the [Security Adoption Framework](/security/ciso-workshop/adoption).

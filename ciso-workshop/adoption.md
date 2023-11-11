@@ -4,7 +4,7 @@ description: Guiding organizations through security program modernization with r
 ms.service: 
 ms.subservice: 
 ms.topic: conceptual
-ms.date: 11/10/2023
+ms.date: 11/11/2023
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -13,17 +13,19 @@ ms.reviewer: mas
 ---
 # Security Adoption Resources
 
-Customers continue to ask for help with navigating the continuously changing security landscape. Microsoft is investing in this area with guidance based on industry standards and principles that help enable your organization to achieve more. This guidance can be used in parts or as a whole to guide a full end-to-end security modernization across a 'hybrid of everything' multicloud and multi-platform technical estate.
+Navigating the continuously changing threat landscape, technology platforms, and business requirements is often challenging for many organizations.
+
+The Security Adoption Framework (SAF) guides organizations through end-to-end security modernization across a 'hybrid of everything' multicloud and multi-platform technical estate.
 
 :::image type="content" source="media/adoption/security-workshops.png" alt-text="Diagram showing the components of the security adoption framework series workshops." lightbox="media/adoption/security-workshops.png":::
 
-The Security Adoption Framework (SAF) guides organizations through end-to-end security modernization from a strategic and programmatic level through architectural and technical planning.
+Each element of this guidance can be used individually or as part of holistic end-to-end security modernization from a strategic and programmatic level through architectural and technical planning.
 
 This guidance applies Zero Trust principles to all aspects of end-to-end security modernization.
 
 ## Objectives
 
-This content enables executive leaders, architects, and technical practitioners to build and execute an integrated strategy and architecture that aligns security to your organization through business, security, and technical platform needs. Organizations can accelerate both business enablement and security risk reduction by enabling an agile security approach. This agile approach to security provides flexibility to adapt to the continuously evolving attacks, changing business requirements, and technology platform changes you face today.
+The Security Adoption Framework enables executive leaders, architects, and technical practitioners to build and execute an integrated strategy and architecture that aligns security to your organization through business, security, and technical platform needs. Organizations can accelerate both business enablement and security risk reduction by enabling an agile security approach. This agile approach to security provides flexibility to adapt to the continuously evolving attacks, changing business requirements, and technology platform changes you face today.
 
 Stakeholders at all levels are included to help them understand how to guide and execute this security modernization journey. Organizations can accelerate their modernization using these best practices, lessons learned, and references based on real world examples.
 

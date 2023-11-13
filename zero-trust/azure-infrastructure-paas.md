@@ -15,7 +15,7 @@ ms.collection:
 
 # Apply Zero Trust principles to a spoke virtual network with Azure PaaS Services
 
-This article will help you apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) security model to a PaaS workload using Azure virtual networks (VNets) and private endpoints in the following ways:
+This article helps you apply the [principles of the Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) security model to a PaaS workload using Azure virtual networks (VNets) and private endpoints in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
@@ -25,12 +25,12 @@ This article will help you apply the [principles of Zero Trust](zero-trust-overv
 
 For more information about how to apply the principles of Zero Trust across an Azure IaaS environment, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
-## Zero Trust stand-alone or spoke network for Azure PaaS services
+## Zero Trust stand alone or spoke network for Azure PaaS services
 
 Many PaaS services contain their own, service-native ingress and egress control functionality. You can use these controls to secure network access to PaaS service resources without the need of infrastructure such as VNets. For example:
 
 - Azure SQL Database has its own firewall that can be used to allow specific client IP addresses that need to access the database server.
-- Azure storage accounts have the option to configure allowing connections from a specific VNet or to block public network access.
+- Azure storage accounts have a configuration option allow connections from a specific VNet or to block public network access.
 - Azure App Service supports access restrictions to define a priority-ordered allow/deny list that controls network access to your app.
 
 However, for Zero Trust guided implementations, these service-native access controls often fall short of being sufficient. This creates a diffusion of access controls and logging that can increase management and decrease visibility.
@@ -125,7 +125,7 @@ If you are not using policies that enforce log forwarding on resource groups, co
 
 1. Find the resource group in the Azure portal.
 2. Navigate to **Activity log -\> Export Activity Logs** and then select **+ Add diagnostic setting**.
-3. On the **Diagnostic setting** screen, select all log categories (especially Security) and send them to the appropriate logging sources, such as a Log Analytics workspace for observability, or a storage account for long term storage. Here's an example:
+3. On the **Diagnostic setting** screen, select all log categories (especially **Security**) and send them to the appropriate logging sources, such as a Log Analytics workspace for observability, or a storage account for long term storage. Here's an example:
 
 :::image type="content" source="media/spoke/diagnostic-setting.png" alt-text="Example of the Diagnostic setting." lightbox="media/spoke/diagnostic-setting.png":::
 
@@ -135,7 +135,7 @@ See [Diagnostic Settings](/azure/azure-monitor/essentials/diagnostic-settings) t
 
 While not directly related to networking, you should plan your subscription RBAC in a similar way. In addition to isolating resources logically by resource group, you should also isolate the subscription based on business areas and portfolio owners. The subscription as a management unit should be narrowly scoped.
 
-See the [Azure landing zone design principles-Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/landing-zone/design-principles#subscription-democratization) for more information.
+See the [Azure landing zone design principles](/azure/cloud-adoption-framework/ready/landing-zone/design-principles#subscription-democratization) for more information.
 
 ## Step 3: Create a network security group for each subnet
 
@@ -151,7 +151,7 @@ In the diagram:
 - Azure Application Services has a dedicated egress subnet for a specific application service.
 - A network security group is configured for each of these subnets.
 
-Configuring network security groups in a different way than illustrated above can result in incorrect configuration of some or all of the network security groups and can create issues in troubleshooting. It can also make it difficult to monitor and log.
+Configuring network security groups in a different way than in the diagram can result in incorrect configuration of some or all of the network security groups and can create issues in troubleshooting. It can also make it difficult to monitor and log.
 
 See [Create, change, or delete an Azure network security group](/azure/virtual-network/manage-network-security-group) to manage the settings of your network security groups.
 
@@ -170,7 +170,7 @@ This section describes the following recommendations:
 
 A key element of Zero Trust is using the least level of access needed. By default, network security groups have **allow** rules. By adding a baseline of **deny** rules, you can enforce the least level of access. Once provisioned, create a **deny all** rule in each of the inbound and outbound rules with a priority of 4096. This is the last custom priority available, which means you still have the remaining scope to configure allow actions.
 
-To do this, in the network security group go to **Outbound Security Rules** and select **Add**. Fill in the following:
+To do this, in the network security group, go to **Outbound Security Rules** and select **Add**. Fill in the following:
 
 - Source: Any
 - Source port ranges: \*
@@ -189,11 +189,11 @@ Here's an example.
 
 Repeat this process with inbound rules, adjusting the name and description as appropriate.
 
-You'll notice that on the **Inbound security rules** tab, you'll see a warning sign on the rule. Here's an example.
+The **Inbound security rules** tab displays warning sign on the rule. Here's an example.
 
 :::image type="content" source="media/spoke/outbound-sec-rules-1.png" alt-text="Example of inbound security rules." lightbox="media/spoke/outbound-sec-rules-1.png":::
 
-If you click the rule and scroll to the bottom, you'll see more details. Here's an example:
+Click the rule and scroll to the bottom to see more details. Here's an example:
 
 :::image type="content" source="media/spoke/rule-details.png" alt-text="Example of rule details." lightbox="media/spoke/rule-details.png":::
 
@@ -202,7 +202,7 @@ This message gives the following two warnings:
 - Azure Load Balancers won't, by default, be able to access resources using this network security group.
 - Other resources on this VNet won't, by default, be able to access resources using this network security group.
 
-For our purpose in Zero Trust, this is how it should be. It means that just because something is on this VNet, doesn't mean that it will have immediate access to your resources. For each traffic pattern, you'll need to create a rule explicitly allowing it and you should do so with the least amount of permissions.
+For our purpose in Zero Trust, this is how it should be. It means that just because something is on this VNet, doesn't mean that it will have immediate access to your resources. For each traffic pattern, create a rule explicitly allowing it and you should do so with the least amount of permissions.
 
 If you have specific outbound connections for management, such as to Active Directory Domain Services (AD DS) domain controllers, private DNS VMs, or to specific external websites, they need to be controlled here.
 
@@ -211,7 +211,7 @@ If you have specific outbound connections for management, such as to Active Dire
 > [!NOTE]
 > The recommendations in this section only apply to the web-egress subnet.
 
-If you are using Azure Firewall to manage your outbound connections, instead of performing a deny outbound all, you can create alternate rules for outbound connections. As a part of the Azure Firewall implementation, you set up a route table that sends default route (0.0.0.0/0) traffic to the firewall. This will handle traffic outside of the VNet.
+If you are using Azure Firewall to manage your outbound connections, instead of performing a deny-outbound-all, you can create alternate rules for outbound connections. As a part of the Azure Firewall implementation, you set up a route table that sends default route (0.0.0.0/0) traffic to the firewall. This will handle traffic outside of the VNet.
 
 You can then either create a deny all VNet outbound rule, or an allow all outbound rule but secure items with their inbound rules.
 
@@ -225,10 +225,10 @@ Define traffic patterns with the least amount of permissions and only following 
 
 Use the [Manage network security groups: Create a security rule](/azure/virtual-network/manage-network-security-group?tabs=network-security-group-portal#create-a-security-rule) process to add rules to your network security groups.
 
-To secure this scenario, you'll need to add the following rules:
+To secure this scenario, add the following rules:
 
 | Network security group for Subnet | Direction | Source | Source Details | Source Port | Destination | Destination Details | Service | Network security group Name | Network security group description |
-| - | - | - | - | - | - | - | - | - |- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | App Service Subnet | Inbound | IP Addresses | Your Application Gateway Subnet's Private IP Address Range | 443 | IP Addresses | The explicit IP address of your App Service's private endpoint | MS SQL | AllowGWtoAppInbound | Allows inbound access to the App Service from the Application Gateway. |
 | App Service Integration Subnet | Outbound | IP Addresses | Your App Service Integration Subnet's IP Address Range | 1433 | IP Addresses | The explicit IP address of your SQL DB's private endpoint | MS SQL | AllowApptoSQLDBOutbound | Allows outbound access to the SQL private endpoint from App Service Integration subnet.
 | Azure SQL Subnet | Inbound | IP Addresses | Your App Service Integration Subnet's IP Address Range | 1433 | IP Addresses | The explicit IP address of your SQL DB's private endpoint | MS SQL | AllowApptoSQLDBInbound | Allows inbound access to the SQL private endpoint from App Service Integration subnet.
@@ -245,21 +245,21 @@ With these rules, you have defined the Zero Trust connectivity pattern for a sin
 
 ### Plan for management traffic in the VNet
 
-In addition to the application-specific traffic, you need to plan for management traffic. However, because management traffic typically originates outside of the spoke VNet, more rules are required. First, you'll need to understand the specific ports and sources that management traffic will be coming from. Typically, all management traffic should flow from a firewall or other network virtual appliance (NVA) located in the hub network for the spoke.
+In addition to the application-specific traffic, plan for management traffic. However, because management traffic typically originates outside of the spoke VNet, more rules are required. First, understand the specific ports and sources that management traffic will be coming from. Typically, all management traffic should flow from a firewall or other network virtual appliance (NVA) located in the hub network for the spoke.
 
-See [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) for the full reference architecture.
+See [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md#reference-architecture) for the full reference architecture.
 
 Your configuration will vary based on your specific management needs. However, you should use rules on firewall appliances and rules on the network security group to explicitly allow connections on both the platform networking and workload networking sides.
 
 ### Planning for deployments
 
-Because your application services and databases are now using private networking, you'll need to plan for how deployments of code and data to these resources will operate. You'll need to add additional rules to allow your private build servers to access these endpoints.
+Because your application services and databases are now using private networking, plan for how deployments of code and data to these resources operate. Add rules to allow your private build servers to access these endpoints.
 
 ### Deploy network security group flow logging
 
 Even if your network security group is blocking unnecessary traffic it doesn't mean that your goals are met. To detect an attack, you still need to observe the traffic that is occurring outside of your explicit patterns.
 
-The traffic to the private endpoints will **not** be logged, but if other services are deployed to the subnets later this log will help detect the activities.
+The traffic to the private endpoints is **not** logged, but if other services are deployed to the subnets later this log will help detect the activities.
 
 To enable network security group flow Logging, follow the [Tutorial: Log network traffic flow to and from a virtual machine](/azure/network-watcher/network-watcher-nsg-flow-logging-portal#enable-nsg-flow-log) for the existing network security group for the private endpoints.
 
@@ -291,19 +291,19 @@ When deploying the private endpoints, configure them as follows:
 
 Also, as part of this deployment, you should ensure that the service-specific firewall is set to deny inbound traffic. This will deny any attempts at public ingress.
 
-For the Azure SQL database, you'll need to [manage its server-level IP firewall rules](/azure/azure-sql/database/firewall-configure). Ensure that *Public network access* is set to **Disable** from the networking panel in the Azure portal.
+For the Azure SQL database, [manage its server-level IP firewall rules](/azure/azure-sql/database/firewall-configure). Ensure that *Public network access* is set to **Disable** from the networking panel in the Azure portal.
 
-For the Azure Application Service, adding the private endpoint sets its service level firewall to block inbound access by default. For more information, see [Using Private Endpoints for Azure Web Apps](/azure/app-service/networking/private-endpoint).
+For the Azure Application Service, adding the private endpoint sets its service level firewall to block inbound access by default. For more information, see [Using Private Endpoints for App Service apps](/azure/app-service/networking/private-endpoint).
 
 ### Deploy VNet integration for egress
 
-In addition to the private endpoints for ingress, you'll also need to enable VNet integration. Each App Service Plan can have VNet integration enabled and doing so allocates a whole subnet for the App Service. For more information, see [Integrate your app with an Azure VNet](/azure/app-service/overview-VNet-integration).
+In addition to the private endpoints for ingress, enable VNet integration. Each App Service Plan can have VNet integration enabled and doing so allocates a whole subnet for the App Service. For more information, see [Integrate your app with an Azure VNet](/azure/app-service/overview-VNet-integration).
 
 To configure your App Service, see [Enable VNet integration in Azure App Service](/azure/app-service/configure-VNet-integration-enable). Ensure that you are placing it in your subnet designated for egress.
 
 ### DNS considerations
 
-As part of using private endpoints, you'll need to enable DNS resolution of the resources' FQDNs to their new private IP addresses. For the instructions to implement this in a variety of ways, see [Private Endpoint DNS configuration](/azure/private-link/private-endpoint-dns).
+As part of using private endpoints, enable DNS resolution of the resources' FQDNs to their new private IP addresses. For the instructions to implement this in a variety of ways, see [Private Endpoint DNS configuration](/azure/private-link/private-endpoint-dns).
 
 > [!NOTE]
 > DNS resolution needs to apply to all traffic. Resources in the same VNet won't be able to resolve unless they are using the correct DNS zones.
@@ -323,13 +323,11 @@ The following diagram shows both access modes across the reference architecture.
 
 Much of the work of security traffic within the Azure environment is already complete. See [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md) to configure secure connections between storage resources and the VMs.
 
-Secure connections between storage resources and the VMs are configured in the [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md) guidance.
-
 See [Apply Zero Trust principles to a hub VNet in Azure](azure-infrastructure-networking.md) to secure access from hub resources to the VNet.
 
 ### Using MFA and Conditional Access policies for user access to applications
 
-The article, [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md) recommends how to protect access requests directly to VMs with MFA and Conditional Access. These requests are most likely from administrators and developers. The next step is to secure access to applications with MFA and Conditional Access. This applies to all users who access the application.
+The [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md) article recommends how to protect access requests directly to VMs with MFA and Conditional Access. These requests are most likely from administrators and developers. The next step is to secure access to applications with MFA and Conditional Access. This applies to all users who access the application.
 
 First, if the application isn't yet integrated with Microsoft Entra ID, see [Application types for the Microsoft identity platform](/azure/active-directory/develop/v2-app-types#daemons-and-server-side-apps).
 
@@ -339,19 +337,19 @@ When configuring MFA with Conditional Access and related policies, use the recom
 
 The following diagram shows the recommended policies for Zero Trust.
 
-:::image type="content" source="media/identity-device-access-policies-byplan.png" alt-text="Diagram of recommended identity and device access policies for Zero Trust." lightbox="media/identity-device-access-policies-byplan.png":::
+:::image type="content" source="media/identity-device-access-policies-byplan.svg" alt-text="Diagram of recommended identity and device access policies for Zero Trust." lightbox="media/identity-device-access-policies-byplan.svg":::
 
 ## Step 7: Enable advanced threat detection and protection
 
-Your spoke VNet built on Azure may be protected by Microsoft Defender for Cloud as other resources from your IT business environment running on Azure or on-premises may also be protected.
+Your spoke VNet built on Azure may be protected by [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) as other resources from your IT business environment running on Azure or on-premises may also be protected.
 
-As mentioned in the other articles from this series, Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection (CWP) tool that offers security recommendations, alerts, and advanced features such as [adaptive network hardening](/azure/defender-for-cloud/adaptive-network-hardening) to assist you as you progress in your cloud security journey. To better visualize where Defender for Cloud fits into the greater Microsoft security landscape, see [Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra).
+As mentioned in the other articles from this series, Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection (CWP) tool that offers security recommendations, alerts, and advanced features such as [adaptive network hardening](/azure/defender-for-cloud/adaptive-network-hardening) to assist you as you progress in your cloud security journey.
 
-This article does not describe Defender for Cloud in detail, but it is important to understand that Defender for Cloud works based on Azure policies and logs ingested in a Log Analytics workspace. Once enabled on the subscriptions with your spoke VNet and associated resources, you'll be able to see recommendations to improve their security posture. You can filter these recommendations further by MITRE tactic, Resource Group, and others. Consider prioritizing to resolve recommendations that have a greater impact on your organization's Secure Score. Here's an example.
+This article does not describe Defender for Cloud in detail, but it is important to understand that Defender for Cloud works based on Azure policies and logs ingested in a Log Analytics workspace. Once enabled on the subscriptions with your spoke VNet and associated resources, you can see recommendations to improve their security posture. You can filter these recommendations further by MITRE tactic, Resource Group, and others. Consider prioritizing to resolve recommendations that have a greater impact on your organization's Secure Score. Here's an example.
 
 :::image type="content" source="media/spoke/dfc-recs.png" alt-text="Example of Microsoft Defender for Cloud recommendations." lightbox="media/spoke/dfc-recs.png":::
 
-If you choose to onboard one of the Defender for Cloud plans that offer advanced workload protections that includes adaptive network hardening recommendations to improve your existing network security group rules. Here's an example.
+There are Defender for Cloud plans that offer advanced workload protections that includes adaptive network hardening recommendations to improve your existing network security group rules. Here's an example.
 
 :::image type="content" source="media\spoke\network-hardening.png" alt-text="Example of network hardening recommendations." lightbox="media\spoke\network-hardening.png":::
 
@@ -363,26 +361,32 @@ You can accept the recommendation by selecting **Enforce**, which will either cr
 - [Configure and manage Azure Monitor](/training/modules/azure-monitor/)
 - [Configure network security groups](/training/modules/configure-network-security-groups/)
 - [Design and implement network security](/training/modules/design-implement-network-security-monitoring/)
-- [Secure access to your applications by using Azure identity services](/training/modules/secure-access-azure-identity-services/)
 - [Design and implement private access to Azure Services](/training/modules/design-implement-private-access-to-azure-services/)
 
 ## Next Steps
 
-This article is part of a series of articles. Given below are the links to the rest of the articles in this series:
+See these additional articles for applying Zero Trust principles to Azure:
 
-- [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md)
-- [Apply Zero Trust principles to Azure storage](azure-infrastructure-storage.md)
-- [Apply Zero Trust principles to a hub VNet in Azure](azure-infrastructure-networking.md)
+- For Azure IaaS:
+  - [Overview](azure-infrastructure-overview.md)
+  - [Azure storage](azure-infrastructure-storage.md)
+  - [Virtual machines](azure-infrastructure-virtual-machines.md)
+  - [Spoke virtual networks](azure-infrastructure-iaas.md)
+  - [Hub virtual networks](azure-infrastructure-networking.md)
+- [Azure Virtual Desktop](azure-infrastructure-avd.md)
+- [Azure Virtual WAN](azure-virtual-wan.md)
+- [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
+- [Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)
 
 ## References
 
 - [Embrace proactive security with Zero Trust](https://aka.ms/zerotrust)
 - [Secure networks with Zero Trust](/security/zero-trust/deploy/networks)
-- [Zero-trust network for web applications with Azure Firewall and Application Gateway - Azure Architecture Center](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall)
-- [Azure Landing Zone Policies](https://github.com/Azure/Enterprise-Scale/blob/main/docs/ESLZ-Policies.md)
+- [Zero-trust network for web applications with Azure Firewall and Application Gateway](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall)
+- [Azure Landing Zone Policies](https://github.com/Azure/Enterprise-Scale/wiki/ALZ-Policies)
 - [Common Zero Trust identity and device across policies](/microsoft-365/security/office-365-security/identity-access-policies)
-- [What are private endpoints?](/azure/private-link/private-endpoint-overview)
-- [Private Endpoint DNS configuration](/azure/private-link/private-endpoint-dns)
+- [What is a private endpoint?](/azure/private-link/private-endpoint-overview)
+- [Private endpoint DNS configuration](/azure/private-link/private-endpoint-dns)
 - [Integrate your app with an Azure VNet](/azure/app-service/overview-VNet-integration)
-- [Using Private Endpoints for Azure Web App](/azure/app-service/networking/private-endpoint)
-- [Connect to an Azure SQL server using an Azure Private Endpoint](/azure/private-link/tutorial-private-endpoint-sql-portal)
+- [Using private endpoints for App Service apps](/azure/app-service/networking/private-endpoint)
+- [Connect to an Azure SQL server using an Azure private endpoint](/azure/private-link/tutorial-private-endpoint-sql-portal)

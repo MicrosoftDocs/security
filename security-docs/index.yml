@@ -22,29 +22,29 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
+    - title: AI shared responsibility model
+      itemType: concept
+      url: /azure/security/fundamentals/shared-responsibility-ai
+    # Card
     - title: Microsoft Security Podcast - The future of security
       itemType: overview
       url: https://thecyberwire.com/podcasts/afternoon-cyber-tea/78/notes
     # Card
     - title: Microsoft Build 2023
       itemType: whats-new
-      url: https://www.microsoft.com/en-us/security/blog/
-    # Card
-    - title: Shared responsibilities for cloud computing
-      itemType: concept
-      url: /azure/security/fundamentals/shared-responsibility
+      url: https://build.microsoft.com/home
     # Card
     - title: What is ransomware?
       itemType: concept
       url: /security/ransomware/human-operated-ransomware
     # Card
-    - title: Evaluate and pilot Microsoft 365 Defender
-      itemType: how-to-guide
-      url: /microsoft-365/security/defender/eval-overview
+    - title: Configure SIEM security operations using Microsoft Sentinel
+      itemType: learn
+      url: /credentials/applied-skills/configure-siem-security-operations-using-microsoft-sentinel
     # Card
-    - title: Learn about Permissions Management, a CIEM solution
-      itemType: overview
-      url: /azure/active-directory/cloud-infrastructure-entitlement-management/overview
+    - title: Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls
+      itemType: learn
+      url: /credentials/applied-skills/secure-azure-services-and-workloads-with-microsoft-defender-for-cloud-regulatory-compliance-controls/
     # Card
     - title: Azure network security
       itemType: concept

@@ -337,7 +337,7 @@ When configuring MFA with Conditional Access and related policies, use the recom
 
 The following diagram shows the recommended policies for Zero Trust.
 
-:::image type="content" source="media/identity-device-access-policies-byplan.png" alt-text="Diagram of recommended identity and device access policies for Zero Trust." lightbox="media/identity-device-access-policies-byplan.png":::
+:::image type="content" source="media/identity-device-access-policies-byplan.svg" alt-text="Diagram of recommended identity and device access policies for Zero Trust." lightbox="media/identity-device-access-policies-byplan.svg":::
 
 ## Step 7: Enable advanced threat detection and protection
 

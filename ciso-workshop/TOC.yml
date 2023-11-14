@@ -1,10 +1,14 @@
- - name: Chief Information Security Officer (CISO) Workshop Training
-   href: the-ciso-workshop.md
+ - name: Security workshops
+   href: adoption.md
    items:
+    - name: Security Adoption Resources
+      href: adoption.md
     - name: The CISO Workshop
       href: the-ciso-workshop.md
     - name: CISO Workshop videos
       href: the-ciso-workshop-videos.md
+    - name: Microsoft Cybersecurity Reference Architectures
+      href: /security/cybersecurity-reference-architecture/mcra
     - name: Archive
       items:
       - name: The CISO Workshop (Archived)

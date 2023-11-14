@@ -28,7 +28,7 @@ The following diagram illustrates the shift from traditional protection with net
 
 The guidance in this article walks through how to get started with and progress your strategy for identifying and protecting sensitive data. If your organization is subject to regulations that protect data, use the [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md) article in this series to learn how to apply what you learn in this article to protecting data that is regulated.
 
-## Why business leaders think about protecting sensitive data
+## Hoe business leaders think about protecting sensitive data
 
 Before starting any technical work, it’s important to understand the different motivations for investing in protecting business data as these help inform the strategy, objectives, and measures for success.
 

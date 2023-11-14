@@ -305,7 +305,7 @@ Data loss is data destruction or leakage. Discover what the attacker accessed an
 
 ### Data loss procedure
 
-Use your disaster recovery plan's guidance on attacker access to corporate data. Use the following guidance to help prevent data loss, and to improve or create a disaster recovery plan.
+Use your disaster recovery plan's guidance on attacker access to corporate data. Use the following guidance to help prevent data loss, and to improve or create a  plan.
 
 * [Investigate data loss alerts with Microsoft 365 Defender](/microsoft-365/security/defender/dlp-investigate-alerts-defender)
 * [Investigate Microsoft Purview Data Loss Prevention alerts in Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/learn-how-to-investigate-microsoft-purview-data-loss-prevention/ba-p/3732758)

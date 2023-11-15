@@ -847,14 +847,14 @@
 						x="4" dy="1.2em" class="st40">installed on devices</tspan></text>		</g>
 		<g id="shape1653-214" v:mID="1653" v:groupContext="shape" transform="translate(349.633,-627.718)">
 			<title>Sheet.1653</title>
-			<desc>Microsoft 365 Copilot</desc>
+			<desc>Microsoft Copilot for Microsoft 365</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(137000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
-			<v:textRect cx="90" cy="829.236" width="180" height="27"/>
-			<rect x="0" y="815.736" width="180" height="27" rx="4.5" ry="4.5" class="st34"/>
-			<text x="4" y="833.44" class="st35" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Microsoft 365 Copilot</text>		</g>
+			<v:textRect cx="126.9" cy="829.236" width="253.8" height="27"/>
+			<rect x="0" y="815.736" width="253.8" height="27" rx="4.5" ry="4.5" class="st34"/>
+			<text x="4" y="833.44" class="st35" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Microsoft Copilot for Microsoft 365</text>		</g>
 		<g id="shape1654-218" v:mID="1654" v:groupContext="shape" transform="translate(556.368,-526.515)">
 			<title>Sheet.1654</title>
 			<desc>Semantic Index for Copilot</desc>
@@ -1276,15 +1276,15 @@
 		</g>
 		<g id="shape1763-330" v:mID="1763" v:groupContext="shape" transform="translate(19.6388,-608.978)">
 			<title>Sheet.1763</title>
-			<desc>Microsoft 365 Copilot and related components</desc>
+			<desc>Microsoft Copilot for Microsoft 365 and related components</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(203000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:verticalAlign="0"/>
 			<v:textRect cx="90" cy="810.496" width="180" height="64.4808"/>
 			<rect x="0" y="778.255" width="180" height="64.4808" rx="4.5" ry="4.5" class="st34"/>
-			<text x="4" y="796.66" class="st51" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Microsoft 365 Copilot <tspan
-						x="4" dy="1.2em" class="st40">and related </tspan><tspan x="4" dy="1.2em" class="st40">components</tspan></text>		</g>
+			<text x="4" y="796.66" class="st51" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Microsoft Copilot for <tspan
+						x="4" dy="1.2em" class="st40">Microsoft 365 and </tspan><tspan x="4" dy="1.2em" class="st40">related components</tspan></text>		</g>
 		<g id="group1765-336" transform="translate(170.133,-389.218)" v:mID="1765" v:groupContext="group">
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(206000):26"/>

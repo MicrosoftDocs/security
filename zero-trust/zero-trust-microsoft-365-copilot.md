@@ -1,6 +1,6 @@
 ---
-title: Apply principles of Zero Trust to Microsoft 365 Copilot
-description: Learn how to secure Microsoft 365 Copilot with Zero Trust principles. 
+title: Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
+description: Learn how to secure Microsoft Copilot for Microsoft 365 with Zero Trust principles. 
 ms.date: 11/01/2023
 ms.service: security
 author: bcarter
@@ -13,11 +13,11 @@ ms.collection:
   - zerotrust-azure
 ---
 
-# Apply principles of Zero Trust to Microsoft 365 Copilot
+# Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
 
-Before you introduce Microsoft 365 Copilot into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
+Before you introduce Microsoft Copilot for Microsoft 365 into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
 
-This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) security to prepare your environment for Microsoft 365 Copilot in the following ways:
+This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) security to prepare your environment for Microsoft Copilot for Microsoft 365 in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
@@ -25,26 +25,26 @@ This article provides steps to apply the [principles of Zero Trust](zero-trust-o
 | Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Validate JEA across your organization to eliminate oversharing by ensuring that correct permissions are assigned to files, folders, Teams, and email. Use sensitivity labels and data loss prevention policies to protect data.  |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Use Exchange Online Protection (EOP) and Microsoft 365 Defender services to automatically prevent common attacks and to detect and respond to security incidents. |
 
-For the basics of Microsoft 365 Copilot, see the [overview](/microsoft-365-copilot/microsoft-365-copilot-overview) and [how to get started](/microsoft-365-copilot/microsoft-365-copilot-setup).
+For the basics of Microsoft Copilot for Microsoft 365, see the [overview](/microsoft-365-copilot/microsoft-365-copilot-overview) and [how to get started](/microsoft-365-copilot/microsoft-365-copilot-setup).
 
 ## Logical architecture
 
-You apply Zero Trust principles for Microsoft 365 Copilot across the entire architecture, from users and devices to the application data that they have access to. The following diagram shows the logical architecture components.
+You apply Zero Trust principles for Microsoft Copilot for Microsoft 365 across the entire architecture, from users and devices to the application data that they have access to. The following diagram shows the logical architecture components.
 
-:::image type="content" source="media/copilot/logical-architecture-microsoft-365-copilot.svg" alt-text="Diagram of the logical architecture for Microsoft 365 Copilot." lightbox="media/copilot/logical-architecture-microsoft-365-copilot.svg":::
+:::image type="content" source="media/copilot/logical-architecture-microsoft-365-copilot.svg" alt-text="Diagram of the logical architecture for Microsoft Copilot for Microsoft 365." lightbox="media/copilot/logical-architecture-microsoft-365-copilot.svg":::
 
 In the diagram:
 
 - User devices have Microsoft 365 apps installed from which users can initiate Copilot prompts
-- Microsoft 365 Copilot components include:
-  - The Microsoft 365 Copilot service, which orchestrates the responses to user prompts
+- Microsoft Copilot for Microsoft 365 components include:
+  - The Microsoft Copilot for Microsoft 365 service, which orchestrates the responses to user prompts
   - A Semantic Index for the data in your Microsoft 365 tenant
   - An instance of the Microsoft Graph for the data your Microsoft 365 tenant
 - Your Microsoft 365 tenant that contains your organization data
 
 ## What’s in this article
 
-This article walks you through the steps to apply the principles of Zero Trust to prepare your Microsoft 365 environment for Microsoft 365 Copilot.
+This article walks you through the steps to apply the principles of Zero Trust to prepare your Microsoft 365 environment for Microsoft Copilot for Microsoft 365.
 
 | Step | Task | Zero Trust principle(s) applied |
 | --- | --- | --- |
@@ -58,14 +58,14 @@ This article walks you through the steps to apply the principles of Zero Trust t
 
 Because different organizations can be at various stages of deploying Zero Trust protections, in each of these steps:
 
-- If you're NOT using any of the protections described in the step, take the time to pilot and deploy them prior to assigning Microsoft 365 Copilot licenses.
-- If you're using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated and pilot and deploy them prior to assigning Microsoft 365 Copilot licenses.
+- If you're NOT using any of the protections described in the step, take the time to pilot and deploy them prior to assigning Microsoft Copilot for Microsoft 365 licenses.
+- If you're using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated and pilot and deploy them prior to assigning Microsoft Copilot for Microsoft 365 licenses.
 
-For the latest Microsoft 365 Copilot support for security-related and other features of Microsoft 365, see [Microsoft 365 Copilot requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements).
+For the latest Microsoft Copilot for Microsoft 365 support for security-related and other features of Microsoft 365, see [Microsoft Copilot for Microsoft 365 requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements).
 
 ## Step 1. Deploy or validate your identity and access policies
 
-To prevent bad actors from using Microsoft 365 Copilot to more quickly discover and access sensitive data, the first step is to prevent them from gaining access. You must ensure that:
+To prevent bad actors from using Microsoft Copilot for Microsoft 365 to more quickly discover and access sensitive data, the first step is to prevent them from gaining access. You must ensure that:
 
 - Users are required to use strong authentication that can't be compromised by guessing user passwords alone.
 - Authentication attempts are evaluated for their risk and have more requirements imposed.
@@ -113,7 +113,7 @@ For more information, see [Create App Protection policies](/mem/intune/apps/app-
 
 ## Step 3. Deploy or validate your device management and protection
 
-To prevent bad actors from compromising devices or using compromised devices to gain access to Microsoft 365 Copilot, the next step is to use Microsoft 365 features of device management and protection. You must ensure that:
+To prevent bad actors from compromising devices or using compromised devices to gain access to Microsoft Copilot for Microsoft 365, the next step is to use Microsoft 365 features of device management and protection. You must ensure that:
 
 - Devices are enrolled in Microsoft Intune and must meet health and compliance requirements.
 - You can administer settings and features on devices.
@@ -147,7 +147,7 @@ To deploy these device protection and management capabilities, use the following
 
 ## Step 4. Deploy or validate your threat protection services
 
-To detect the activities of bad actors and keep them from gaining access to Microsoft 365 Copilot, the next step is to use threat protection services of Microsoft 365. You must ensure that:
+To detect the activities of bad actors and keep them from gaining access to Microsoft Copilot for Microsoft 365, the next step is to use threat protection services of Microsoft 365. You must ensure that:
 
 - You can automatically prevent common types of email and device-based attacks.
 - You can use features to reduce the attack surface area of Windows devices.
@@ -252,7 +252,7 @@ Consider these additional Microsoft 365 E5 capabilities:
 
 ## Step 6. Deploy or validate secure collaboration for Microsoft Teams
 
-Microsoft provides guidance for protecting your Teams at three different levels – baseline, sensitive, and highly sensitive. Introducing Microsoft 365 Copilot is a good time to review your environment and ensure that appropriate protection is configured. Use these steps:
+Microsoft provides guidance for protecting your Teams at three different levels – baseline, sensitive, and highly sensitive. Introducing Microsoft Copilot for Microsoft 365 is a good time to review your environment and ensure that appropriate protection is configured. Use these steps:
 
 1. Identify Teams or projects that warrant highly sensitive protection. Configure protections for this level. Many organizations don’t have data that requires this level of protection.
 2. Identify Teams or projects that warrant sensitive protection and apply this protection.
@@ -265,7 +265,7 @@ See these resources for more information:
 
 ### External sharing
 
-Introducing Microsoft 365 Copilot is a good time to review your policies for sharing files with people outside your organization and for allowing external contributors. Guest accounts aren't licensed to use Microsoft 365 Copilot.
+Introducing Microsoft Copilot for Microsoft 365 is a good time to review your policies for sharing files with people outside your organization and for allowing external contributors. Guest accounts aren't licensed to use Microsoft Copilot for Microsoft 365.
 
 For sharing with people outside your organization, you might need to share information of any sensitivity. See these resources:
 
@@ -302,7 +302,7 @@ To detect existing oversharing:
 
 ## Applying protections and deploying Copilot in parallel
 
-To streamline the assignment of Microsoft 365 Copilot licenses in your tenant with the appropriate protections in place, you do both in parallel. The following diagram shows how you can move through the three phases of rolling out protections prior to assigning Microsoft 365 Copilot licenses to individual user accounts and their devices once they're protected.
+To streamline the assignment of Microsoft Copilot for Microsoft 365 licenses in your tenant with the appropriate protections in place, you do both in parallel. The following diagram shows how you can move through the three phases of rolling out protections prior to assigning Microsoft Copilot for Microsoft 365 licenses to individual user accounts and their devices once they're protected.
 
 :::image type="content" source="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg" alt-text="Diagram of applying protections and deploying Copilot in parallel." lightbox="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg":::
 
@@ -310,33 +310,33 @@ As the diagram also shows, you can roll out information protection across your o
 
 ## Training 
 
-### Get started with Microsoft 365 Copilot
+### Get started with Microsoft Copilot for Microsoft 365
 
-|Training  |[Get started with Microsoft 365 Copilot](/training/paths/get-started-with-microsoft-365-copilot/)|
+|Training  |[Get started with Microsoft Copilot for Microsoft 365](/training/paths/get-started-with-microsoft-365-copilot/)|
 |---------|---------|
-|:::image type="icon" source="media/generic-trophy.svg" border="false"::: | This learning path walks you through the basics of Microsoft 365 Copilot, showcases its versatility across various Microsoft 365 applications, and offers advice on maximizing its potential. |
+|:::image type="icon" source="media/generic-trophy.svg" border="false"::: | This learning path walks you through the basics of Microsoft Copilot for Microsoft 365, showcases its versatility across various Microsoft 365 applications, and offers advice on maximizing its potential. |
 > [!div class="nextstepaction"]
 > [Start >](/training/paths/get-started-with-microsoft-365-copilot/)
 
 
-|Training  |[Prepare your organization for Microsoft 365 Copilot](/training/paths/prepare-your-organization-microsoft-365-copilot/)|
+|Training  |[Prepare your organization for Microsoft Copilot for Microsoft 365](/training/paths/prepare-your-organization-microsoft-365-copilot/)|
 |---------|---------|
-|:::image type="icon" source="media/generic-trophy.svg" border="false"::: | This learning path examines the Microsoft 365 Copilot design, its security and compliance features, and provides instruction on how to implement Microsoft 365 Copilot. |
+|:::image type="icon" source="media/generic-trophy.svg" border="false"::: | This learning path examines the Microsoft Copilot for Microsoft 365 design, its security and compliance features, and provides instruction on how to implement Microsoft Copilot for Microsoft 365. |
 > [!div class="nextstepaction"]
 > [Start >](/training/paths/prepare-your-organization-microsoft-365-copilot/)
 
 
 ## Next steps
 
-See the [How to get ready for Microsoft 365 Copilot](https://www.youtube.com/watch?v=oeX0lsMA69U&t=2s) video.
+See the [How to get ready for Microsoft Copilot for Microsoft 365](https://www.youtube.com/watch?v=oeX0lsMA69U&t=2s) video.
 
-Use the [Microsoft 365 Copilot documentation](/microsoft-365-copilot/).
+Use the [Microsoft Copilot for Microsoft 365 documentation](/microsoft-365-copilot/).
 
 ## Summary poster
 
-For a visual summary of the information in this article, see the **Microsoft 365 Copilot architecture & deployment** poster. 
+For a visual summary of the information in this article, see the **Microsoft Copilot for Microsoft 365 architecture & deployment** poster. 
 
-[![Microsoft 365 Copilot architecture poster thumb](media/tech-illus/microsoft-365-copilot-architecture-thumb.png)](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf)
+[![Microsoft Copilot for Microsoft 365 architecture poster thumb](media/tech-illus/microsoft-365-copilot-architecture-thumb.png)](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf)
 
 [PDF](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf) | [Visio](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.vsdx)
 
@@ -348,8 +348,8 @@ For more technical illustrations, click [here](zero-trust-tech-illus.md).
 
 Refer to these links to learn about the various services and technologies mentioned in this article.
 
-- [Microsoft 365 Copilot overview](/microsoft-365-copilot/microsoft-365-copilot-overview)
-- [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy)
+- [Microsoft Copilot for Microsoft 365 overview](/microsoft-365-copilot/microsoft-365-copilot-overview)
+- [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)
 - [Common security policies for Microsoft 365 organizations](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common)
 - [Intune App Protection policies (APP)](/mem/intune/apps/app-protection-policy)
 - [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)

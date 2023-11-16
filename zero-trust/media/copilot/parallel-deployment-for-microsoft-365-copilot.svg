@@ -753,33 +753,32 @@
 			<text x="8.01" y="584.92" class="st39" v:langID="1033"><v:paragraph v:spAfter="6" v:horizAlign="2"/><v:tabList/>Identity and access</text>		</g>
 		<g id="shape1036-252" v:mID="1036" v:groupContext="shape" transform="translate(12.1528,-326.505)">
 			<title>Sheet.1036</title>
-			<desc>Microsoft Copilot for Microsoft 365 licenses</desc>
+			<desc>Copilot licenses</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(42000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:verticalAlign="0"/>
 			<v:textRect cx="74.9209" cy="591.718" width="149.85" height="50.4"/>
 			<rect x="0" y="566.518" width="149.842" height="50.4" rx="4.5" ry="4.5" class="st8"/>
-			<text x="18.9" y="584.92" class="st39" v:langID="1033"><v:paragraph v:spAfter="6" v:horizAlign="2"/><v:tabList/>Microsoft Copilot <tspan
-						x="19.64" dy="1.2em" class="st10">for Microsoft 365 </tspan><tspan x="89.83" dy="1.2em" class="st10">licenses</tspan></text>		</g>
-		<g id="shape1037-258" v:mID="1037" v:groupContext="shape" transform="translate(185.596,-332.049)">
+			<text x="32.6" y="584.92" class="st39" v:langID="1033"><v:paragraph v:spAfter="6" v:horizAlign="2"/><v:tabList/>Copilot licenses</text>		</g>
+		<g id="shape1037-256" v:mID="1037" v:groupContext="shape" transform="translate(185.596,-332.049)">
 			<title>Rectangle.1143</title>
-			<desc>Assign licenses for Microsoft Copilot for Microsoft 365 to us...</desc>
+			<desc>Assign Copilot licenses to users AFTER their account and devi...</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(43000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(5,0,5,5)" v:verticalAlign="0"/>
 			<v:textRect cx="183.375" cy="594.49" width="366.76" height="44.856"/>
-			<g id="shadow1037-259" v:groupContext="shadow" v:shadowOffsetX="1.22465E-16" v:shadowOffsetY="-2" v:shadowType="1"
+			<g id="shadow1037-257" v:groupContext="shadow" v:shadowOffsetX="1.22465E-16" v:shadowOffsetY="-2" v:shadowType="1"
 					v:shadowScale="1.01" transform="matrix(1.01,0,0,1.01,-1.83375,-3.9449)" class="st3">
 				<rect x="0" y="572.062" width="366.75" height="44.856" class="st29"/>
-				<text x="5" y="587.86" class="st30" v:langID="1033"><v:paragraph/><v:tabList/>Assign licenses for Microsoft Copilot for Microsoft 365 to users <tspan
-							x="5" dy="1.2em" class="st10">AFTER their account and devices are protected</tspan></text>			</g>
+				<text x="5" y="587.86" class="st30" v:langID="1033"><v:paragraph/><v:tabList/>Assign Copilot licenses to users AFTER their account and devices are <tspan
+							x="5" dy="1.2em" class="st10">protected</tspan></text>			</g>
 			<rect x="0" y="572.062" width="366.75" height="44.856" class="st31"/>
-			<text x="5" y="587.86" class="st13" v:langID="1033"><v:paragraph/><v:tabList/>Assign licenses for Microsoft Copilot for Microsoft 365 to users <tspan
-						x="5" dy="1.2em" class="st10">AFTER their account and devices are protected</tspan></text>		</g>
-		<g id="shape1038-268" v:mID="1038" v:groupContext="shape" transform="translate(12.1528,-400.269)">
+			<text x="5" y="587.86" class="st13" v:langID="1033"><v:paragraph/><v:tabList/>Assign Copilot licenses to users AFTER their account and devices are <tspan
+						x="5" dy="1.2em" class="st10">protected</tspan></text>		</g>
+		<g id="shape1038-266" v:mID="1038" v:groupContext="shape" transform="translate(12.1528,-400.269)">
 			<title>Sheet.1038</title>
 			<desc>Devices</desc>
 			<v:userDefs>
@@ -789,7 +788,7 @@
 			<v:textRect cx="74.9209" cy="591.718" width="149.85" height="50.4"/>
 			<rect x="0" y="566.518" width="149.842" height="50.4" rx="4.5" ry="4.5" class="st8"/>
 			<text x="90.65" y="584.92" class="st39" v:langID="1033"><v:paragraph v:spAfter="6" v:horizAlign="2"/><v:tabList/>Devices</text>		</g>
-		<g id="shape1039-272" v:mID="1039" v:groupContext="shape" transform="translate(185.596,-405.813)">
+		<g id="shape1039-270" v:mID="1039" v:groupContext="shape" transform="translate(185.596,-405.813)">
 			<title>Rectangle.1056</title>
 			<desc>Test device protections with the same 50 users</desc>
 			<v:userDefs>
@@ -798,7 +797,7 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(5,0,5,5)" v:verticalAlign="0"/>
 			<v:textRect cx="54.1938" cy="594.49" width="108.39" height="44.856"/>
-			<g id="shadow1039-273" v:groupContext="shadow" v:shadowOffsetX="1.22465E-16" v:shadowOffsetY="-2" v:shadowType="1"
+			<g id="shadow1039-271" v:groupContext="shadow" v:shadowOffsetX="1.22465E-16" v:shadowOffsetY="-2" v:shadowType="1"
 					v:shadowScale="1.01" transform="matrix(1.01,0,0,1.01,-0.541938,-3.9449)" class="st3">
 				<rect x="0" y="572.062" width="108.388" height="44.856" class="st29"/>
 				<text x="5" y="587.86" class="st30" v:langID="1033"><v:paragraph/><v:tabList/>Test device <tspan x="5" dy="1.2em"
@@ -806,7 +805,7 @@
 			<rect x="0" y="572.062" width="108.388" height="44.856" class="st31"/>
 			<text x="5" y="587.86" class="st13" v:langID="1033"><v:paragraph/><v:tabList/>Test device <tspan x="5" dy="1.2em"
 						class="st10">protections with </tspan><tspan x="5" dy="1.2em" class="st10">the same 50 users</tspan></text>		</g>
-		<g id="shape1040-284" v:mID="1040" v:groupContext="shape" transform="translate(464.659,-405.813)">
+		<g id="shape1040-282" v:mID="1040" v:groupContext="shape" transform="translate(464.659,-405.813)">
 			<title>Rectangle.1058</title>
 			<desc>Enroll the rest of the endpoints in larger increments</desc>
 			<v:userDefs>
@@ -815,7 +814,7 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(5,0,5,5)" v:verticalAlign="0"/>
 			<v:textRect cx="85.5167" cy="594.49" width="171.04" height="44.856"/>
-			<g id="shadow1040-285" v:groupContext="shadow" v:shadowOffsetX="1.22465E-16" v:shadowOffsetY="-2" v:shadowType="1"
+			<g id="shadow1040-283" v:groupContext="shadow" v:shadowOffsetX="1.22465E-16" v:shadowOffsetY="-2" v:shadowType="1"
 					v:shadowScale="1.01" transform="matrix(1.01,0,0,1.01,-0.855167,-3.9449)" class="st3">
 				<rect x="0" y="572.062" width="171.033" height="44.856" class="st29"/>
 				<text x="5" y="587.86" class="st30" v:langID="1033"><v:paragraph/><v:tabList/>Enroll the rest of the endpoints <tspan
@@ -823,7 +822,7 @@
 			<rect x="0" y="572.062" width="171.033" height="44.856" class="st31"/>
 			<text x="5" y="587.86" class="st13" v:langID="1033"><v:paragraph/><v:tabList/>Enroll the rest of the endpoints <tspan
 						x="5" dy="1.2em" class="st10">in larger increments</tspan></text>		</g>
-		<g id="shape1041-294" v:mID="1041" v:groupContext="shape" transform="translate(305.446,-405.813)">
+		<g id="shape1041-292" v:mID="1041" v:groupContext="shape" transform="translate(305.446,-405.813)">
 			<title>Rectangle.1059</title>
 			<desc>Apply device protections to the same users</desc>
 			<v:userDefs>
@@ -832,7 +831,7 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(5,0,5,5)" v:verticalAlign="0"/>
 			<v:textRect cx="54.1938" cy="594.49" width="108.39" height="44.856"/>
-			<g id="shadow1041-295" v:groupContext="shadow" v:shadowOffsetX="1.22465E-16" v:shadowOffsetY="-2" v:shadowType="1"
+			<g id="shadow1041-293" v:groupContext="shadow" v:shadowOffsetX="1.22465E-16" v:shadowOffsetY="-2" v:shadowType="1"
 					v:shadowScale="1.01" transform="matrix(1.01,0,0,1.01,-0.541938,-3.9449)" class="st3">
 				<rect x="0" y="572.062" width="108.388" height="44.856" class="st29"/>
 				<text x="5" y="587.86" class="st30" v:langID="1033"><v:paragraph/><v:tabList/>Apply device <tspan x="5" dy="1.2em"

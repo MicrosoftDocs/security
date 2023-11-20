@@ -20,30 +20,30 @@ This offering brings together groups and resources across the Microsoft environm
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Name</th>
-<th style="text-align:left">Detail</th>
+<th>Name</th>
+<th>Detail</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><strong>Advance Notice of Security Vulnerabilities</strong></td>
-<td style="text-align:left"><li> 5-day advance notice of vulnerabilities with release notes and affected software tables <li> 24-hour advance of full notice including exploitability index</td>
+<td><strong>Advance Notice of Security Vulnerabilities</strong></td>
+<td><li> 5-day advance notice of vulnerabilities with release notes and affected software tables <li> 24-hour advance of full notice including exploitability index</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Malicious URLs</strong></td>
-<td style="text-align:left"><li> Feed of potentially malicious publicly facing servers and services detected by the Bing crawlers <li> Updated every three hours, 5 day cycle of data</td>
+<td><strong>Malicious URLs</strong></td>
+<td><li> Feed of potentially malicious publicly facing servers and services detected by the Bing crawlers <li> Updated every three hours, 5 day cycle of data</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>CTIP Botnet Feeds</strong></td>
-<td style="text-align:left"><li> Provided by the Digital Crimes Unit’s Cyber Threat Intelligence Program <li> Botnet data is tailored to the agency (or country code top level domain in the case of CERTs) <li> 4 feeds: Infected device, Command &amp; Control, IoT, and Domains <li> Delivered near real time, hourly or daily (deduped)</td>
+<td><strong>CTIP Botnet Feeds</strong></td>
+<td><li> Provided by the Digital Crimes Unit’s Cyber Threat Intelligence Program <li> Botnet data is tailored to the agency (or country code top level domain in the case of CERTs) <li> 4 feeds: Infected device, Command &amp; Control, IoT, and Domains <li> Delivered near real time, hourly or daily (deduped)</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Clean File Meta Data</strong></td>
-<td style="text-align:left"><li> Clean file hash data often used for allow-listing and forensics <li> Updated every 3 hours <li> Covers all Microsoft binaries on the Microsoft download center</td>
+<td><strong>Clean File Meta Data</strong></td>
+<td><li> Clean file hash data often used for allow-listing and forensics <li> Updated every 3 hours <li> Covers all Microsoft binaries on the Microsoft download center</td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>Partnership</strong></td>
-<td style="text-align:left"><li> Information exchange through a variety of forums <li> Access to the Digital Crimes Community Portal <li> Threat intelligence data sharing with the Digital Crimes Unit <li> Direct engagement with engineering groups and other Microsoft teams including the Microsoft Security Response Center and Windows Defender Security Intelligence</td>
+<td><strong>Partnership</strong></td>
+<td><li> Information exchange through a variety of forums <li> Access to the Digital Crimes Community Portal <li> Threat intelligence data sharing with the Digital Crimes Unit <li> Direct engagement with engineering groups and other Microsoft teams including the Microsoft Security Response Center and Windows Defender Security Intelligence</td>
 </tr>
 </tbody>
 </table>

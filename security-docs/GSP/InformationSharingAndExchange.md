@@ -3,7 +3,7 @@ title: Information Sharing and Exchange
 description: This document provides details of the Information Sharing and Exchange offering that enables Microsoft to share and exchange materials related to Microsoft products and services.
 ms.date: 11/20/2023
 ms.service: security
-ms.author: Lara Miller
+ms.author: laramiller
 author: laramillermsft
 ms.topic: conceptual
 ---

@@ -12,7 +12,16 @@
     - name: Secure remote and hybrid work
       href: adopt/secure-remote-hybrid-work.md
     - name: Prevent or reduce business damage from a breach
-      href: adopt/prevent-reduce-business-damage-breach.md
+      items:
+        - name: Overview
+          href: adopt/prevent-reduce-business-damage-breach.md
+          maintainContext: true
+        - name: Prevent - Deploy threat protection
+          href: adopt/prevent-business-damage-breach.md
+          maintainContext: true
+        - name: Reduce - Deploy business damage mitigation and recovery
+          href: adopt/reduce-business-damage-breach.md
+          maintainContext: true
     - name: Identify and protect sensitive business data
       href: adopt/identify-protect-sensitive-business-data.md
     - name: Meet regulatory and compliance requirements

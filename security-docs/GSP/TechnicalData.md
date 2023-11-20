@@ -1,9 +1,9 @@
 ---
 title: Technical Data
 description: This document provides details of the Technical Data offering that provides access to a broad range of confidential technical information, exclusive of source code, which allows government agencies and international organizations to evaluate the trustworthiness of Microsoft products and services.
-ms.date: 06/12/2023
+ms.date: 11/20/2023
 ms.service: security
-ms.author: xili13
+ms.author: Lara Miller
 author: laramillermsft
 ms.topic: conceptual
 ---
@@ -37,7 +37,7 @@ In-person focused conversations with Microsoft engineers and security experts to
  - Cloud service security, privacy and compliance documentation such as audit reports and risk assessments
  - Common Criteria evaluation documents for Windows
  - Opportunities for focused conversations, such as technical trips and executive briefings. Trip sample topics:
-   -  Cyber Threat Intelligence (MSTIC/DCU)
+   -  Cyber Threat Intelligence (DCU)
    -  Vulnerability/Incident Response Process
    -  Product Security Features
    -  Telemetry

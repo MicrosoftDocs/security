@@ -3,7 +3,7 @@ title: Technical Data
 description: This document provides details of the Technical Data offering that provides access to a broad range of confidential technical information, exclusive of source code, which allows government agencies and international organizations to evaluate the trustworthiness of Microsoft products and services.
 ms.date: 11/20/2023
 ms.service: security
-ms.author: Lara Miller
+ms.author: laramiller
 author: laramillermsft
 ms.topic: conceptual
 ---

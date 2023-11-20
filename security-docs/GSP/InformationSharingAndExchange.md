@@ -1,9 +1,9 @@
 ---
 title: Information Sharing and Exchange
 description: This document provides details of the Information Sharing and Exchange offering that enables Microsoft to share and exchange materials related to Microsoft products and services.
-ms.date: 6/20/2023
+ms.date: 11/20/2023
 ms.service: security
-ms.author: Grace Li
+ms.author: Lara Miller
 author: laramillermsft
 ms.topic: conceptual
 ---
@@ -36,10 +36,6 @@ This offering brings together groups and resources across the Microsoft environm
 <tr>
 <td style="text-align:left"><strong>CTIP Botnet Feeds</strong></td>
 <td style="text-align:left"><li> Provided by the Digital Crimes Unit’s Cyber Threat Intelligence Program <li> Botnet data is tailored to the agency (or country code top level domain in the case of CERTs) <li> 4 feeds: Infected device, Command &amp; Control, IoT, and Domains <li> Delivered near real time, hourly or daily (deduped)</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Threat Intelligence Alerts</strong></td>
-<td style="text-align:left"><li> Microsoft Threat Intelligence Center alerts of potential nation state threats <li> Direct engagement with impacted agencies</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Clean File Meta Data</strong></td>

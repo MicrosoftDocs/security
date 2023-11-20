@@ -10,39 +10,11 @@ ms.collection:
   - zerotrust-adopt
 ---
 
-# Prevent business damage from a breach
+# Deploy additional security and threat protection (prevent business damage from a breach)
 
 Intro
 
-## How business leaders think about preventing breaches
-
-Before starting any technical work, it’s important to understand the different motivations for investing in preventing business damage from a breach as these help inform the strategy, objectives, and measures for success.
-
-The following table provides reasons why business leaders across an organization should invest in preventing damage from a breach.
-
-| Role | Why preventing business damage from a breach is important |
-| --- | --- |
-| Chief Executive Officer (CEO) |  |
-| Chief Marketing Officer (CMO) |  |
-| Chief Information Officer (CIO) |  |
-| Chief Information Security Officer (CISO) |  | 
-|Chief Operations Officer (COO) |  |
-| Chief Financial Officer (CFO) |  |
-| Chief Compliance Officer (CCO) |  |
-| Chief Privacy Officer (CPO) |  |
-
-A Zero Trust approach solves several security problems arising from security breaches. You can emphasize the following benefits of a Zero Trust approach with your business leaders.
-
-| Role | Why preventing business damage from a breach is important |
-| --- | --- |
-| Ensure survival |  |
-| Control damage to reputation |  |
-| Reduce blast radius within your organization |  |
-| Demonstrate robust security and risk posture |  |
-| Lower cyber insurance premiums |  |
-| Increase security team efficiency and morale |  |
-
-## The adoption cycle for preventing business damage from a breach
+## The adoption cycle for deploying additional security and threat protection
 
 This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
@@ -64,7 +36,7 @@ The **Define strategy** phase is critical to define and formalize our efforts �
 
 This article suggests motivations and outcomes that are relevant to many organizations. Use these suggestions to hone the strategy for your organization based on your unique needs.
 
-### Motivations for preventing business damage from a breach
+### Motivations for deploying additional security and threat protection
 
 The motivations for preventing business damage from a breach are straightforward, but different parts of your organization have different incentives for doing this work. The following table summarizes some of these motivations.
 
@@ -76,7 +48,7 @@ The motivations for preventing business damage from a breach are straightforward
 | Strategic needs |  |
 
 
-### Outcomes for preventing business damage from a breach
+### Outcomes for deploying additional security and threat protectionh
 
 Applying the overall goal of Zero Trust to “never trust, always verify” adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes.
 
@@ -102,7 +74,7 @@ Technical adoption for preventing business damage from a breach involves:
 - 
 - 
 
-preventing business damage from a breach also involves a few related activities, including:
+Preventing business damage from a breach also involves a few related activities, including:
 
 - 
 - 

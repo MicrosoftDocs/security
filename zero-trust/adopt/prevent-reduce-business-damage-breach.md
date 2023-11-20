@@ -56,6 +56,20 @@ The following table is an accessible version of the illustration.
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
+
+### Two separate tracks that can be done in parallel
+
+- Deploy additional security and threat protection
+
+  Prevent business damage from a breach
+
+- Deploy business damage mitigation and recovery
+
+  Reduce business damage from a breach
+
+
+<!---
+
 ## Define strategy phase
 
 :::image type="content" source="../media/adoption-guide/define-strategy-phase.svg" alt-text="The define strategy phase." lightbox="../media/adoption-guide/define-strategy-phase.svg":::
@@ -341,6 +355,10 @@ Use the following exercises to help you start building your foundation:
 - 
 -  
 - 
+
+
+--->
+
 
 ## Next Steps
 

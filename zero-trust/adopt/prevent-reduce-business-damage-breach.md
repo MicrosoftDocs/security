@@ -59,14 +59,22 @@ Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framew
 
 ### Two separate tracks that can be done in parallel
 
-- Deploy additional security and threat protection
+- [Deploy additional security and threat protection](prevent-business-damage-breach.md)
 
   Prevent business damage from a breach
 
-- Deploy business damage mitigation and recovery
+- [Deploy business damage mitigation and recovery](reduce-business-damage-breach.md)
 
   Reduce business damage from a breach
 
+
+## Next Steps
+
+- [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
+- [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Secure remote and hybrid work](secure-remote-hybrid-work.md)
+- [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
+- [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
 
 <!---
 
@@ -358,12 +366,3 @@ Use the following exercises to help you start building your foundation:
 
 
 --->
-
-
-## Next Steps
-
-- [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
-- [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
-- [Secure remote and hybrid work](secure-remote-hybrid-work.md)
-- [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
-- [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)

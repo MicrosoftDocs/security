@@ -1,6 +1,6 @@
 ---
-title: Prevent business damage from a breach with Zero Trust
-description: Prevent business damage from a breach with Zero Trust.  
+title: Implement security breach prevention and recovery infrastructure
+description: Implement security breach prevention and recovery infrastructure.  
 ms.date: 11/31/2023
 ms.service: security
 author: BrendaCarter
@@ -10,11 +10,11 @@ ms.collection:
   - zerotrust-adopt
 ---
 
-# Deploy additional security and threat protection (prevent business damage from a breach)
+# Implement security breach prevention and recovery infrastructure
 
 Intro
 
-## The adoption cycle for deploying additional security and threat protection
+## The adoption cycle for implementing security breach prevention and recovery infrastructure
 
 This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
@@ -83,7 +83,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Secure privileged accounts <br><br> Implement Azure Backup for critical business data <br><br> Implement Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Protect against ransomware <br><br> Create honeypot resources <br><br> Adopt a cybersecurity framework	 | Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data  <br><br> Gain visibility to network traffic <br><br> Update security team skills | Discontinue legacy network security technology <br><br> Practice threat and disaster recovery response <br><br> Gather industry specific threat intelligence |
+| Secure privileged accounts <br><br> Implement Azure Backup for critical business data <br><br> Implement Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Protect against ransomware <br><br> Create honeypot resources  | Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data  <br><br> Gain visibility to network traffic | Discontinue legacy network security technology <br><br> Practice threat and disaster recovery response |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
@@ -177,9 +177,7 @@ In this stage, you:
 
 - Segment your network
 - Implement a patching plan
-- Protect against ransomware
 - Create honeypot resources
-- Adopt a cybersecurity framework
 
 ##### Segment your network
 
@@ -197,23 +195,7 @@ This objective is
 | --- | --- |
 |  |  |
 
-##### Protect against ransomware
-
-This objective is
-
-| Resource | Description |
-| --- | --- |
-|  |  |
-
 ##### Create honeypot resources
-
-This objective is
-
-| Resource | Description |
-| --- | --- |
-|  |  |
-
-##### Adopt a cybersecurity framework
 
 This objective is
 
@@ -245,21 +227,12 @@ This objective is
 | --- | --- |
 |  |  |
 
-##### Update security team skills
-
-This objective is
-
-| Resource | Description |
-| --- | --- |
-|  |  |
-
 #### Stage 4
 
 In this stage, you:
 
 - Discontinue legacy network security technology
 - Practice threat and disaster recovery response
-- Gather industry-specific threat intelligence
 
 ##### Discontinue legacy network security technology
 
@@ -270,14 +243,6 @@ This objective is
 |  |  |
 
 ##### Practice threat and disaster recovery response
-
-This objective is
-
-| Resource | Description |
-| --- | --- |
-|  |  |
-
-##### Gather industry-specific threat intelligence
 
 This objective is
 

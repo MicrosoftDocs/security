@@ -59,13 +59,9 @@ Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framew
 
 ### Two separate tracks that can be done in parallel
 
-- [Deploy additional security and threat protection](prevent-business-damage-breach.md)
+- [Implement security breach prevention and recovery infrastructure](prevent-reduce-business-damage-breach-infrastructure.md)
 
-  Prevent business damage from a breach
-
-- [Deploy business damage mitigation and recovery](reduce-business-damage-breach.md)
-
-  Reduce business damage from a breach
+- [Implement threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md)
 
 
 ## Next Steps

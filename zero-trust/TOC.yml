@@ -16,11 +16,11 @@
         - name: Overview
           href: adopt/prevent-reduce-business-damage-breach.md
           maintainContext: true
-        - name: Prevent - Deploy threat protection
-          href: adopt/prevent-business-damage-breach.md
+        - name: Implement security breach prevention and recovery infrastructure
+          href: adopt/prevent-reduce-business-damage-breach-infrastructure.md
           maintainContext: true
-        - name: Reduce - Deploy business damage mitigation and recovery
-          href: adopt/reduce-business-damage-breach.md
+        - name: Implement threat protection and XDR
+          href: adopt/prevent-reduce-business-damage-breach-threat-protection.md
           maintainContext: true
     - name: Identify and protect sensitive business data
       href: adopt/identify-protect-sensitive-business-data.md

@@ -350,6 +350,7 @@ Refer to these links to learn about the various services and technologies mentio
 
 - [Copilot overview](/microsoft-365-copilot/microsoft-365-copilot-overview)
 - [Data, Privacy, and Security for Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy)
+- [Microsoft Purview data security and compliance protections for Copilot](/purview/ai-microsoft-purview)
 - [Common security policies for Microsoft 365 organizations](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common)
 - [Intune App Protection policies (APP)](/mem/intune/apps/app-protection-policy)
 - [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)

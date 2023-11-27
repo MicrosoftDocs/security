@@ -14,8 +14,8 @@ ms.collection:
 
 Intro
 
-[Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
-
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
+- [Implement threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md)
 
 ## The adoption cycle for implementing security breach prevention and recovery infrastructure
 
@@ -39,7 +39,7 @@ The **Define strategy** phase is critical to define and formalize our efforts �
 
 This article suggests motivations and outcomes that are relevant to many organizations. Use these suggestions to hone the strategy for your organization based on your unique needs.
 
-### Motivations for deploying additional security and threat protection
+### Motivations for implementing security breach prevention and recovery infrastructure
 
 The motivations for preventing business damage from a breach are straightforward, but different parts of your organization have different incentives for doing this work. The following table summarizes some of these motivations.
 
@@ -51,7 +51,7 @@ The motivations for preventing business damage from a breach are straightforward
 | Strategic needs |  |
 
 
-### Outcomes for deploying additional security and threat protectionh
+### Outcomes for implementing security breach prevention and recovery infrastructure
 
 Applying the overall goal of Zero Trust to “never trust, always verify” adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes.
 
@@ -86,7 +86,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Secure privileged accounts <br><br> Implement Azure Backup for critical business data <br><br> Implement Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Protect against ransomware <br><br> Create honeypot resources  | Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data  <br><br> Gain visibility to network traffic | Discontinue legacy network security technology <br><br> Practice threat and disaster recovery response |
+| Secure privileged accounts <br><br> Implement Microsoft 365 Backup and Azure Backup for critical business data <br><br> Implement Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Create honeypot resources <br><br> Get started with Microsoft Purview Insider Risk Management | Implement Microsoft 365 Backup and Azure Backups for **all** business data <br><br> Implement Azure Site Recovery for **all** workloads <br><br> Gain visibility to network traffic <br><br> Design threat and business continuity/disaster recovery (BC/DR) response | Discontinue legacy network security technology <br><br> Practice threat and BC/DR response |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
@@ -142,7 +142,7 @@ The Stage 1 deployment objectives include the process of...
 In this stage, you:
 
 - Secure privileged accounts
-- Implement Azure Backup for critical business data
+- Implement Microsoft 365 Backup and Azure Backup for critical business data
 - Implement Site Recovery for critical workload continuity
 - Encrypt network communication
 
@@ -181,6 +181,7 @@ In this stage, you:
 - Segment your network
 - Implement a patching plan
 - Create honeypot resources
+- Get started with Microsoft Purview Insider Risk Management
 
 ##### Segment your network
 
@@ -210,11 +211,20 @@ This objective is
 
 In this stage, you:
 
-- Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data
+- Implement Microsoft 365 Backup and Azure Backup for all business data
+- Implement Azure Site Recovery for all workloads
 - Gain visibility into network traffic
-- Update security team skills
+- Design threat and BC/DR response
 
-##### Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data
+##### Implement Microsoft 365 Backup and Azure Backup for all business data
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
+
+##### Implement Azure Site Recovery for all workloads
 
 This objective is
 
@@ -230,12 +240,20 @@ This objective is
 | --- | --- |
 |  |  |
 
+##### Design threat and BC/DR response
+
+This objective is
+
+| Resource | Description |
+| --- | --- |
+|  |  |
+
 #### Stage 4
 
 In this stage, you:
 
 - Discontinue legacy network security technology
-- Practice threat and disaster recovery response
+- Practice threat and BC/DR response
 
 ##### Discontinue legacy network security technology
 
@@ -245,7 +263,7 @@ This objective is
 | --- | --- |
 |  |  |
 
-##### Practice threat and disaster recovery response
+##### Practice threat and BC/DR response
 
 This objective is
 

@@ -14,8 +14,8 @@ ms.collection:
 
 Intro
 
-[Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
-
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
+- [Implement security breach prevention and recovery infrastructure](prevent-reduce-business-damage-breach-infrastructure.md)
 
 ## The adoption cycle for implementing threat protection and XDR
 
@@ -84,7 +84,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-|  | Monitor honeypot resources	|  |  |
+| Turn on XDR tools: <br> - Azure AD Identity Protection <br> - Defender for Identity <br> - Defender for Office 365 <br> - Defender for Cloud Apps <br><br> Investigate and respond to threats using Defender for Microsoft 365 | Turn on additional XDR tools: <br>- Defender for Endpoint <br>- Defender for Cloud <br><br> Define internal process for security operations (SecOps) <br><br> Monitor honeypot resources with XDR tools | Turn on Defender for IoT <br><br> Design an Azure Sentinel workspace and ingest XDR signals <br><br> Proactively hunt for threats | Evolve SecOps as a discipline in your organization <br><br> Leverage automation to reduce load on your SecOps analysts |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
@@ -139,7 +139,15 @@ The Stage 1 deployment objectives include the process of...
 
 In this stage, you:
 
-- 
+- Turn on XDR tools:
+
+  - Azure AD Identity Protection
+  - Defender for Identity
+  - Defender for Office 365
+  - Defender for Cloud Apps
+
+- Investigate and respond to threats using Defender for Microsoft 365
+
 
 ##### task title
 
@@ -166,7 +174,13 @@ In this stage, you:
 
 In this stage, you:
 
-- 
+- Turn on additional XDR tools:
+ 
+  - Defender for Endpoint
+  - Defender for Cloud
+ 
+- Define internal process for security operations (SecOps)
+- Monitor honeypot resources with XDR tools
 
 ##### task title
 
@@ -212,7 +226,9 @@ This objective is
 
 In this stage, you:
 
-- 
+- Turn on Defender for IoT
+- Design an Azure Sentinel workspace and ingest XDR signals
+- Proactively hunt for threats
 
 ##### task title
 
@@ -242,7 +258,9 @@ This objective is
 
 In this stage, you:
 
-- 
+
+- Evolve SecOps as a discipline in your organization
+- Leverage automation to reduce load on your SecOps analysts
 
 ##### task title
 

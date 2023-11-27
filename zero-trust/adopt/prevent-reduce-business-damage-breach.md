@@ -14,6 +14,9 @@ ms.collection:
 
 Intro
 
+## Assessing risk and your security posture
+
+
 ## How business leaders think about preventing breaches
 
 Before starting any technical work, it’s important to understand the different motivations for investing in preventing and reducing business damage from a breach as these help inform the strategy, objectives, and measures for success.

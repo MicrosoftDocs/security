@@ -56,11 +56,9 @@ The following table is an accessible version of the illustration.
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
-
 ### Two separate tracks that can be done in parallel
 
 - [Implement security breach prevention and recovery infrastructure](prevent-reduce-business-damage-breach-infrastructure.md)
-
 - [Implement threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md)
 
 

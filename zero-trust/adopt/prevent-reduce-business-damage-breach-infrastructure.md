@@ -14,6 +14,9 @@ ms.collection:
 
 Intro
 
+[Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
+
+
 ## The adoption cycle for implementing security breach prevention and recovery infrastructure
 
 This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
@@ -281,6 +284,8 @@ Use the following exercises to help you start building your foundation:
 
 ## Next Steps
 
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
+- [Implement threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md)
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)

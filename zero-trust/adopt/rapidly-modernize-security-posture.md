@@ -161,6 +161,7 @@ This can become part of your long-term strategy, starting with the acquisition o
 
 The nature or industry vertical of your business is a big driver of your strategy. It greatly influences the contents of your digital estate, your risks, and your legal compliance obligations. 
 
+<a name='attacker-roi'></a>
 #### Attacker return on investment
 
 Finally, raising the cost of an attack for attackers makes your organization more resilient to cybersecurity risk. Beyond meeting specific regulatory requirements, your budget spend should make it more expensive and difficult for an attacker to gain access to your environment and perform activities such as data exfiltration or data destruction. In other words, you reduce the return on investment (ROI) of attackers, causing them to possibly move on to another organization.

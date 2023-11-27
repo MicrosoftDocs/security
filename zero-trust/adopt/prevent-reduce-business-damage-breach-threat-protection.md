@@ -1,7 +1,7 @@
 ---
 title: Implement threat protection and XDR
 description: Implement threat protection and XDR.  
-ms.date: 11/31/2023
+ms.date: 11/30/2023
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter

@@ -1,7 +1,7 @@
 ---
 title: Implement security breach prevention and recovery infrastructure
 description: Implement security breach prevention and recovery infrastructure.  
-ms.date: 11/31/2023
+ms.date: 11/30/2023
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -61,8 +61,6 @@ Applying the overall goal of Zero Trust to “never trust, always verify” adds
 | Governance |  |
 | Organizational resilience |  |
 | Security |  |
-
-
 
 ## Plan phase
 

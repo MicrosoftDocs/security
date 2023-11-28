@@ -19,7 +19,7 @@ Intro
 
 ## The adoption cycle for implementing threat protection and XDR
 
-This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
+This article walks through implementing threat protection and XDR elements of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
 :::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
 
@@ -31,6 +31,11 @@ The following table is an accessible version of the illustration.
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
+For more information about the "Prevent or reduce business damage from a breach" business scenario, see:
+
+- The [overview](prevent-reduce-business-damage-breach.md)
+- The additional elements of [implementing security breach prevention and recovery infrastructure](prevent-reduce-business-damage-breach-infrastructure.md)
+
 ## Define strategy phase
 
 :::image type="content" source="../media/adoption-guide/define-strategy-phase.svg" alt-text="The define strategy phase." lightbox="../media/adoption-guide/define-strategy-phase.svg":::
@@ -41,7 +46,7 @@ This article suggests motivations and outcomes that are relevant to many organiz
 
 ### Motivations for implementing threat protection and XDR
 
-The motivations for reducing business damage from a breach are straightforward, but different parts of your organization have different incentives for doing this work. The following table summarizes some of these motivations.
+The motivations for implementing threat protection and XDR are straightforward, but different parts of your organization have different incentives for doing this work. The following table summarizes some of these motivations.
 
 | Area | Motivations |
 | --- | --- |
@@ -73,11 +78,9 @@ The motivations and outcomes you define, together with your business leaders and
 Technical adoption for reducing business damage from a breach involves:
 
 - 
-- 
 
 reducing business damage from a breach also involves a few related activities, including:
 
-- 
 - 
 
 Many organizations can take a four-staged approach to these deployment objectives, summarized in the following table.
@@ -98,7 +101,6 @@ A foundational step in the Zero Trust adoption lifecycle for every business scen
 
 The following actions apply:
 
-- 
 - 
 
 ### Organizational planning and alignment
@@ -149,25 +151,26 @@ In this stage, you:
 - Investigate and respond to threats using Defender for Microsoft 365
 
 
-##### task title
+##### Turn on XDR tools
+
+This objective is
 
 | Resource | Description |
 |:-----|:-----|
 |  |  |
+|  |  |
+|  |  |
 
-##### task title
+
+##### Investigate and respond to threats using Defender for Microsoft 365
+
+This objective is
 
 | Resource | Description |
 |:-----|:-----|
 |  |  |
-
-##### task title
-
-| Resource | Description |
-|:-----|:-----|
 |  |  |
-
-##### task title
+|  |  |
 
 
 #### Stage 2
@@ -182,45 +185,40 @@ In this stage, you:
 - Define internal process for security operations (SecOps)
 - Monitor honeypot resources with XDR tools
 
-##### task title
+##### Turn on additional XDR tools
+
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
+|:-----|:-----|
+|  |  |
+|  |  |
 |  |  |
 
-##### task title
+
+##### Define internal process for security operations (SecOps)
+
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
+|:-----|:-----|
+|  |  |
+|  |  |
 |  |  |
 
-##### task title
+
+##### Monitor honeypot resources with XDR tools
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
+|:-----|:-----|
+|  |  |
+|  |  |
 |  |  |
 
-##### task title
-
-This objective is
-
-| Resource | Description |
-| --- | --- |
-|  |  |
-
-##### task title
-
-This objective is
-
-| Resource | Description |
-| --- | --- |
-|  |  |
 
 #### Stage 3
 
@@ -230,29 +228,38 @@ In this stage, you:
 - Design an Azure Sentinel workspace and ingest XDR signals
 - Proactively hunt for threats
 
-##### task title
+##### Turn on Defender for IoT
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
+|:-----|:-----|
+|  |  |
+|  |  |
 |  |  |
 
-##### task title
+
+##### Design an Azure Sentinel workspace and ingest XDR signals
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
+|:-----|:-----|
+|  |  |
+|  |  |
 |  |  |
 
-##### task title
+
+##### Proactively hunt for threats
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
+|:-----|:-----|
 |  |  |
+|  |  |
+|  |  |
+
 
 #### Stage 4
 
@@ -261,29 +268,29 @@ In this stage, you:
 - Evolve SecOps as a discipline in your organization
 - Leverage automation to reduce load on your SecOps analysts
 
-##### task title
+##### Evolve SecOps as a discipline in your organization
+
+This objective is
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
+|:-----|:-----|
+|  |  |
+|  |  |
 |  |  |
 
-##### task title
+
+##### Leverage automation to reduce load on your SecOps analysts
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
+|:-----|:-----|
+|  |  |
+|  |  |
 |  |  |
 
-##### task title
-
-This objective is
-
-| Resource | Description |
-| --- | --- |
-|  |  |
 
 ## Ready phase
 
@@ -291,7 +298,6 @@ This objective is
 
 The staged approach recommended in this article includes cascading the work in a methodical way across your digital estate. At this Ready phase, revisit these elements of the plan to be sure everything is ready to go:
 
-- 
 - 
 
 This list summarizes the high-level methodical process for doing this work.
@@ -311,13 +317,16 @@ There’s no need to wait until one phase is complete before beginning the next.
 Use the following exercises to help you start building your foundation:
 
 - 
--  
-- 
 
 ## Next Steps
 
+For this business scenario:
+
 - [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Implement security breach prevention and recovery infrastructure](prevent-reduce-business-damage-breach-infrastructure.md)
+
+Additional articles in the Zero Trust adoption framework:
+
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)

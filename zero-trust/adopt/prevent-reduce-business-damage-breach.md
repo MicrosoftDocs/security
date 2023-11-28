@@ -201,7 +201,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Secure privileged accounts <br><br> Implement Azure Backup for critical business data <br><br> Implement Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Protect against ransomware <br><br> Create honeypot resources <br><br> Adopt a cybersecurity framework	 | Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data  <br><br> Gain visibility to network traffic <br><br> Update security team skills | Discontinue legacy network security technology <br><br> Practice threat and disaster recovery response <br><br> Gather industry specific threat intelligence |
+| Secure privileged accounts <br><br> Implement Azure Backup for critical business data <br><br> Implement Azure Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Protect against ransomware <br><br> Create honeypot resources <br><br> Adopt a cybersecurity framework	 | Implement Microsoft 365 Backups, Azure Backups, and Azure Site Recovery for all business data  <br><br> Gain visibility to network traffic <br><br> Update security team skills | Discontinue legacy network security technology <br><br> Practice threat and disaster recovery response <br><br> Gather industry specific threat intelligence |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
@@ -258,7 +258,7 @@ In this stage, you:
 
 - Secure privileged accounts
 - Implement Azure Backup for critical business data
-- Implement Site Recovery for critical workload continuity
+- Implement Azure Site Recovery for critical workload continuity
 - Encrypt network communication
 
 ##### Secure privileged accounts
@@ -273,7 +273,7 @@ In this stage, you:
 |:-----|:-----|
 |  |  |
 
-##### Implement Site Recovery for critical workload continuity
+##### Implement Azure Site Recovery for critical workload continuity
 
 | Resource | Description |
 |:-----|:-----|

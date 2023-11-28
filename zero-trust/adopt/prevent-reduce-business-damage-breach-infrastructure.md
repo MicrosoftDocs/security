@@ -19,7 +19,7 @@ Intro
 
 ## The adoption cycle for implementing security breach prevention and recovery infrastructure
 
-This article walks through the implementing security breach prevention and recovery infrastructure elements of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
+This article walks through implementing security breach prevention and recovery infrastructure elements of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
 :::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
 
@@ -31,7 +31,7 @@ The following table is an accessible version of the illustration.
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
-For the "Prevent or reduce business damage from a breach" business scenario, see: 
+For more information about the "Prevent or reduce business damage from a breach" business scenario, see:
 
 - The [overview](prevent-reduce-business-damage-breach.md)
 - The additional elements of [implementing threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md)
@@ -47,7 +47,7 @@ This article suggests motivations and outcomes that are relevant to many organiz
 
 ### Motivations for implementing security breach prevention and recovery infrastructure
 
-The motivations for preventing business damage from a breach are straightforward, but different parts of your organization have different incentives for doing this work. The following table summarizes some of these motivations.
+The motivations for security breach prevention and recovery infrastructure are straightforward, but different parts of your organization have different incentives for doing this work. The following table summarizes some of these motivations.
 
 | Area | Motivations |
 | --- | --- |
@@ -308,8 +308,13 @@ Use the following exercises to help you start building your foundation:
 
 ## Next Steps
 
+For this business scenario:
+
 - [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Implement threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md)
+
+Additional articles in the Zero Trust adoption framework:
+
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)

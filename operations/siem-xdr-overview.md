@@ -41,7 +41,7 @@ In this diagram:
 
 - Insights from signals across your entire organization feed into Microsoft Defender XDR and Microsoft Defender for Cloud.
 - Microsoft Defender XDR and Microsoft Defender for Cloud send SIEM log data through Microsoft Sentinel connectors.
-- SecOps teams can then analyze and respond to threats identified in the Microsoft Sentinel and Microsoft Defender XDR portals.
+- SecOps teams can then analyze and respond to threats identified in the Microsoft Sentinel and Microsoft Defender Portals.
 - Microsoft Sentinel provides support for multi-cloud environments and integrates with third-party apps and partners.
 
 ## Implementing Microsoft Sentinel and Microsoft Defender XDR for Zero Trust
@@ -82,7 +82,7 @@ Now that we've seen how a common attack takes place, let's look into leveraging 
 Here is the process of responding to an incident with Microsoft Defender XDR and Microsoft Sentinel:
 
 1. Triage the incident in the Microsoft Sentinel portal.
-2. Move over to the Microsoft Defender XDR portal to start your investigation.
+2. Move over to the Microsoft Defender Portal to start your investigation.
 3. Where needed, continue the investigation in the Microsoft Sentinel portal.
 4. Resolve the incident in the Microsoft Sentinel portal.
 

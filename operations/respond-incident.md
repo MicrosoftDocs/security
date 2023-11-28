@@ -40,7 +40,7 @@ steps you through detecting and responding to modern attacks with Microsoft’s 
 The process of incident response to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR is:
 
 1. Use Microsoft Sentinel portal to triage the potential incident, which includes understanding the details of the incident and taking immediate actions.
-1. Move over to the Microsoft Defender XDR portal to begin your investigation. This includes:
+1. Move over to the Microsoft Defender Portal to begin your investigation. This includes:
 
    - Understanding the incident and its scope and reviewing asset timelines.
    - Reviewing self-healing pending actions, manually remediating entities, performing live response.
@@ -62,7 +62,7 @@ Within Microsoft Sentinel, you can take advantage of playbooks and automation ru
 
 :::image type="content" source="media/incident-reponse-process.png" alt-text="The four-step incident response process and which portal you need to use.":::
 
-The following sections describe the general incident response process using the Microsoft Sentinel and Microsoft Defender XDR portals.
+The following sections describe the general incident response process using the Microsoft Sentinel and Microsoft Defender Portals.
 
 ## Step 1: Triage the incident in the Microsoft Sentinel portal
 
@@ -80,12 +80,12 @@ Use these steps as a general method to triage the incident with Microsoft Sentin
 
 For more information, see [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents).
 
-## Step 2: Investigate the incident in the Microsoft Defender XDR portal
+## Step 2: Investigate the incident in the Microsoft Defender Portal
 
 Use these steps as a general method to investigate the incident with Microsoft Defender XDR:
 
 1. From the **Incident** page of the Microsoft Sentinel portal (Preview), select **Investigate in Microsoft Defender XDR** in the summary pane. 
-1. From the **Attack story** tab in the Microsoft Defender XDR portal, begin your investigation with Microsoft Defender XDR. Consider using the following next steps for your own incident response workflow.
+1. From the **Attack story** tab in the Microsoft Defender Portal, begin your investigation with Microsoft Defender XDR. Consider using the following next steps for your own incident response workflow.
 1. View the attack story of the incident to understand its scope, severity, detection source, and what entities are affected.
 1. Begin analyzing the alerts to understand their origin, scope, and severity with the alert story within the incident.
 1. As needed, gather information on impacted devices, users, and mailboxes with the graph. Click on any entity to open a flyout with all the details.
@@ -188,7 +188,7 @@ The following are the recommended training modules for this step.
 
 ## Next steps
 
-- See [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents) and [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) for more details about incident response processes within the Microsoft Sentinel and Microsoft Defender XDR portals.
+- See [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents) and [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) for more details about incident response processes within the Microsoft Sentinel and Microsoft Defender Portals.
 - See [Incident response overview](/security/compass/incident-response-overview) for Microsoft security best practices.
 - See [Incident response playbooks](/security/compass/incident-response-playbooks) for workflows and checklists to respond to common cyberattacks.
 

@@ -117,13 +117,13 @@ For guidance on licensing, see [Microsoft 365 guidance for security & compliance
 
 ## Monitor your data
 
-Now that your policies are in place, you'll want to check the Microsoft Defender XDR portal to monitor the effect of the policies you've put into place and remediate incidents. Microsoft Defender XDR gives you visibility into DLP alerts and incidents from Microsoft Purview and Defender for Cloud apps in a single pane of glass.
+Now that your policies are in place, you'll want to check the Microsoft Defender Portal to monitor the effect of the policies you've put into place and remediate incidents. Microsoft Defender XDR gives you visibility into DLP alerts and incidents from Microsoft Purview and Defender for Cloud apps in a single pane of glass.
 
 
  Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats.
 
 
-For more information, see [Microsoft Defender XDR portal](/microsoft-365/security/defender/microsoft-365-defender-portal).
+For more information, see [Microsoft Defender Portal](/microsoft-365/security/defender/microsoft-365-defender-portal).
 
 
 

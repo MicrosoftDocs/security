@@ -282,7 +282,7 @@ OfficeActivity
 
 Investigate logs that record device behavior. There's suspicious device activity if:
 
-* Microsoft Defender XDR portal:
+* Microsoft Defender Portal:
   * The device has token theft-related alerts. Search for device ID: join AlertInfo on AlertId| where DeviceId is x
   * Attempts to access Primary Refresh Token (PRT)
   * User installed suspicious apps, extensions, or they recently browsed to suspicious websites. Search Microsoft Defender for Endpoints alerts for suspicious processes or files. Alerts can include suspicious: implant process from a known emerging threat, process name, process behavior, service launched, or scheduled task activity. For possible C2 comms, use Possible command-and-control activity.

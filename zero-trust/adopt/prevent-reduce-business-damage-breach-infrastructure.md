@@ -19,7 +19,7 @@ Intro
 
 ## The adoption cycle for implementing security breach prevention and recovery infrastructure
 
-This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
+This article walks through the implementing security breach prevention and recovery infrastructure elements of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
 :::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
 
@@ -30,6 +30,12 @@ The following table is an accessible version of the illustration.
 | Outcomes <br><br> Organizational alignment <br><br> Strategic goals| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
+
+For the "Prevent or reduce business damage from a breach" business scenario, see: 
+
+- The [overview](prevent-reduce-business-damage-breach.md)
+- The additional elements of [implementing threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md)
+
 
 ## Define strategy phase
 
@@ -84,7 +90,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Secure privileged accounts <br><br> Implement Microsoft 365 Backup and Azure Backup for critical business data <br><br> Implement Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Create honeypot resources <br><br> Get started with Microsoft Purview Insider Risk Management | Implement Microsoft 365 Backup and Azure Backups for **all** business data <br><br> Implement Azure Site Recovery for **all** workloads <br><br> Gain visibility to network traffic <br><br> Design threat and business continuity/disaster recovery (BC/DR) response | Discontinue legacy network security technology <br><br> Practice threat and BC/DR response |
+| Secure privileged accounts <br><br> Implement Microsoft 365 Backup and Azure Backup for critical business data <br><br> Implement Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Create honeypot resources <br><br> Get started with Microsoft Purview Insider Risk Management | Implement Microsoft 365 Backup and Azure Backups for **all** business data <br><br> Implement Azure Site Recovery for **all** workloads <br><br> Gain visibility to network traffic <br><br> Design your threat and business continuity/disaster recovery (BC/DR) response | Discontinue legacy network security technology <br><br> Practice threat and BC/DR response |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
@@ -103,10 +109,12 @@ The following actions apply:
 
 ### Organizational planning and alignment
 
-The technical work of preventing business damage from a breach crosses several overlapping areas and roles:
+The technical work of preventing business damage from a breach and implementing a recovery infrastructure crosses several overlapping areas and roles:
 
 - Network
 - Infrastructure
+
+>> Add
 
 This table summarizes roles that are recommended when building a sponsorship program and project management hierarchy to determine and drive results.
 
@@ -209,10 +217,10 @@ This objective is
 
 In this stage, you:
 
-- Implement Microsoft 365 Backup and Azure Backup for all business data
-- Implement Azure Site Recovery for all workloads
+- Implement Microsoft 365 Backup and Azure Backup for **all** business data
+- Implement Azure Site Recovery for **all** workloads
 - Gain visibility into network traffic
-- Design threat and BC/DR response
+- Design your threat and BC/DR response
 
 ##### Implement Microsoft 365 Backup and Azure Backup for all business data
 
@@ -238,7 +246,7 @@ This objective is
 | --- | --- |
 |  |  |
 
-##### Design threat and BC/DR response
+##### Design your threat and BC/DR response
 
 This objective is
 

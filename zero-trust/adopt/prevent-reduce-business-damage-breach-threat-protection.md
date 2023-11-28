@@ -258,7 +258,6 @@ This objective is
 
 In this stage, you:
 
-
 - Evolve SecOps as a discipline in your organization
 - Leverage automation to reduce load on your SecOps analysts
 

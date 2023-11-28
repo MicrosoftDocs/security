@@ -12,12 +12,81 @@ ms.collection:
 
 # Prevent or reduce business damage from a breach
 
-Intro
+As part of Zero Trust adoption guidance, this article describes the business scenario of preventing or reducing business damage from a cybersecurity breach. This scenario  addresses the “assume breach” Zero Trust guiding principle, which includes:
+
+- Minimize blast radius and segment access
+- Verify end-to-end encryption		
+- Use analytics to get visibility, drive threat detection, and improve defenses
+
+With hybrid IT infrastructure models, your organization’s assets and data are both on-premises and in the cloud and bad actors can employ many different methods to attack them. Your organization must be able to prevent these attacks as much as possible and, when breached, minimize the damage of the attack.
+
+Traditional approaches that focus on establishing perimeter-based security for on-premises, where you trust everyone inside your organization’s private network perimeter, are no longer relevant. If an attacker gains access to your private network, they can, with the appropriate permissions, access any data, applications, or resource within it. They may breach your network by stealing user credentials, taking advantage of a security vulnerability, or introducing a malware infection. Such attacks can result in loss of revenue and high cyber insurance premiums, which can be a significant setback for your organization’s financial health and market reputation.
+
+Forester concluded the following for 2021:
+
+   Nearly two-thirds of organizations were breached in the past year, and it cost them an average of $2.4 million per breach. – Forester, [The 2021 State of Enterprise Breaches (April 2022)](https://www.forrester.com/report/the-2021-state-of-enterprise-breaches/RES177333). 
+
+With the cloud, bad actors don’t need to physically breach your private network perimeter. They can attack your cloud digital assets from anywhere in the world. 
+
+Your organization’s health and reputation depend on your security strategy. With the widespread adoption of cloud-based enterprise environments and the growth of the mobile workforce, data footprints exist beyond the traditional boundaries of corporate networks. This table summarizes key differences between traditional and modern threat protection with Zero Trust.
+
+| Traditional threat protection with private network controls | Modern threat protection with Zero Trust |
+| --- | --- |
+| Traditional protection relies on perimeter-based security, where you trust everyone inside the private network. <br><br> Perimeter networks can include: <br><br> - Little network segmentation or security perimeters and open, flat networks. <br> - Minimal threat protection and static traffic filtering. <br> - Unencrypted internal traffic.	| The Zero Trust model moves network defenses from static, network-based perimeters to focus on users, devices, assets, and resources. <br><br> A Zero Trust model assumes that a breach can and will happen. Security risks can exist inside and outside your network, you are constantly under attack, and a security incident can happen at any time. <br><br> A Zero Trust approach minimizes the blast radius of security incidents with layers of protection that, together, reduce the extent of the damage and how fast it can spread. |
+
+To reduce the impact of a significant incident, all the following are essential:
+
+- Identify the business risk of a breach
+- Understand the resulting damage to your organization’s reputation and relationships with other organizations
+- Add defense-in-depth layers
+- Plan a risk-based approach for your breach response
+
+The guidance in this article walks through how you can get started on your strategy for preventing and reducing damage from a breach. Two additional articles give you the specifics of how to implement that strategy using:
+
+- [A security breach prevention and recovery infrastructure](prevent-reduce-business-damage-breach-infrastructure.md)
+- [Threat protection and eXtended detection and response (XDR) tools](prevent-reduce-business-damage-breach-threat-protection.md)
+
+The first step toward a robust security posture is determining how your organization is vulnerable through risk assessment. 
 
 ## Assessing risk and your security posture
 
+When you decide to adopt a strategy to prevent breach and reduce the damage caused from one, it is important to consider and quantify the metric of risk. Strategically, the exercise of quantifying risk allows you to set a metric to what your appetite for risk should be. This requires that you conduct a baseline risk assessment, along with an analysis of the business-critical breaches that may affect your business. The combination of the documented risk appetite against breach scenarios which you are willing to address forms the basis of a breach preparation and remediation strategy. 
 
-## How business leaders think about preventing breaches
+Note that it is virtually impossible to prevent breaches as an absolute. As described in [Attacker return on investment](rapidly-modernize-security-posture.md# attacker-roi), the aim is to incrementally increase cyberattack friction to a point where the attackers that you’re able or willing to defend against no longer gain a viable return on investment from their attacks. The kind of attacks and the economic viability to defend are captured as part of your risk analysis.
+
+Reducing damage from a breach gives considerable energy to options during and post breach, which allows your organization to recover quickly from an expected breach or type of breach. These breach types and the readiness to recover are defined following the risk analysis described in this article.
+
+Recognizing breach intent must be part of your breach preparation. All breaches have an element of malice or criminal intent attached, however financially driven breaches have the potential for much greater damage compared to “drive by” or opportunistic breaches.
+
+For more information on security posture and risk assessment, see [Rapidly modernize your security posture](rapidly-modernize-security-posture.md).
+
+### Examples of risks by business type
+
+Business requirements are dependent on the resulting business risk analysis. The following discusses several business verticals and how their specific needs drive the segmented risk analysis:
+
+- Mining 
+
+  The mining industry is looking more towards the mine of the future where Operational Technology (OT) systems use fewer manual processes. An example is the use of Human Machine Interfaces (HMI) that leverage an application interface to complete jobs and tasks within a processing plant. Because these HMIs are designed as applications, the cyber security risks for this industry vertical can be higher. 
+
+  The threat no longer becomes one of loss of data or theft of company assets. The threat becomes one of external actors who use identity theft to access critical systems and interfere with production processes. 
+
+-	Retail
+
+  The major risks related to breach within the retail industry can arise with there are multiple domains for multiple brands that live within the same tenant. The complexities of managing on-premises or cloud-based identities can create vulnerabilities. 
+
+- Health Sector
+
+  The major risks within the health sector are data loss. The unauthorized disclosure of confidential medical records may be a direct threat to data and information privacy laws that are reserved for patients and clients alike and, based on local regulations, can incur substantial penalties. 
+
+- Government Sector
+
+  Government sector organizations pose the highest risks for information security. Reputational damage, national security, and data loss are at stake. This is largely why government organizations are required to subscribe to stricter standards such as the [National Institute of Standards and Technology (NIST)](https://www.nist.gov/cyberframework).
+
+### Risks of common types of attacks
+
+>> Add
+
+## How business leaders think about preventing or reducing business damage from a breach
 
 Before starting any technical work, it’s important to understand the different motivations for investing in preventing and reducing business damage from a breach as these help inform the strategy, objectives, and measures for success.
 
@@ -25,29 +94,30 @@ The following table provides reasons why business leaders across an organization
 
 | Role | Why preventing or reducing business damage from a breach is important |
 | --- | --- |
-| Chief Executive Officer (CEO) |  |
-| Chief Marketing Officer (CMO) |  |
-| Chief Information Officer (CIO) |  |
-| Chief Information Security Officer (CISO) |  | 
-|Chief Operations Officer (COO) |  |
-| Chief Financial Officer (CFO) |  |
-| Chief Compliance Officer (CCO) |  |
-| Chief Privacy Officer (CPO) |  |
+| Chief Executive Officer (CEO) | The business must be empowered to achieve its strategic goals and objectives, irrespective of the cybersecurity climate. Business agility and business execution should not be constrained because of an incident or breach. Business leaders should understand that security is part of business imperatives and will invest in both breach prevention and breach preparedness, to ensure business continuity. The cost of a successful cyberattack can be a lot more than the price of implementing security measures. |
+| Chief Marketing Officer (CMO) | How the business is perceived both internally and externally should not be restricted based on a breach occurring or breach readiness. Learning how to communicate breach readiness and messaging internally and externally in response to a breach is a matter of preparation. A successful attack can become public knowledge, potentially harming brand value, unless a breach communication plan exists. |
+| Chief Information Officer (CIO) | The applications used by the company must be resilient to attack while securing the company's data. Security should be a measurable outcome and aligned with IT strategy. Breach prevention and breach management must be aligned with data integrity, privacy, and availability. |
+| Chief Information Security Officer (CISO) | The technologies used to prevent a breach do not scale to a zero-day attack, nor can they defend a poorly maintained IT infrastructure. For example, technology three years old or older cannot prevent attacks that use modern attack methods. | 
+|Chief Operations Officer (COO) | The incident response process hinges on the leadership and strategic guidance provided by this role. It is imperative that preventive and responsive actions are carried out as aligned to corporate strategy. |
+| Chief Financial Officer (CFO) | Breach preparation in an “assume breach” posture means that all disciplines reporting to the COO must function at a level of breach readiness, ensuring that a breach can be isolated and mitigated quickly without pausing your business. |
+| Chief Compliance Officer (CCO) | Breach preparation and mitigation is a function of budgeted security spend. Financial systems must be robust and can survive a breach. Financial data must be classified, secured, and backed up as a sensitive dataset. |
 
 A Zero Trust approach solves several security problems arising from security breaches. You can emphasize the following benefits of a Zero Trust approach with your business leaders.
 
-| Role | Why preventing or reducing business damage from a breach is important |
+| Benefits | Description |
 | --- | --- |
-| Ensure survival |  |
-| Control damage to reputation |  |
-| Reduce blast radius within your organization |  |
-| Demonstrate robust security and risk posture |  |
-| Lower cyber insurance premiums |  |
-| Increase security team efficiency and morale |  |
+| Ensure survival | Depending on the nature or motivation of the attacker, a breach may be designed to significantly impact or disrupt your organization’s ability to perform normal business activities. Preparing for a breach significantly improves the likelihood of your organization surviving a breach designed to cripple or disable. |
+| Control damage to your reputation | A breach that results in access to confidential data can have severe impacts, such as damage to brand reputation, loss of sensitive intellectual property, disruption to customers, regulatory fines, and financial harm to your business. Zero Trust security helps to reduce the attack area by continuously assessing, monitoring, and analyzing your IT infrastructure both on-premises and in the cloud. A Zero Trust architecture helps define policies that are updated automatically when risks are identified. |
+| Reduce blast radius within your organization | Deploying a Zero Trust model can help minimize the impact of an external or insider breach. It enhances your organization’s ability to detect and respond to threats in real time and reduces the blast zone of attacks by restricting lateral movement. |
+| Demonstrate robust security and risk posture | A Zero Trust approach allows triage alerts, correlation of additional threat signals, and remediation actions. Analyzing signals helps improve your posture by evaluating your security culture and identifying areas for improvement or best practices. Any change in your network automatically triggers analysis for potentially malicious activity. You gain complete visibility of all assets and resources within your networks and how they’re performing, which results in a significant overall reduction in risk exposure. |
+| Lower cyber insurance premiums | To evaluate the cost of cyber insurance, you need a robust and well-defined security model and architecture. By implementing Zero Trust security, you have control, visibility, and governance with real-time analysis for protecting your network and endpoints. Your security team can detect and overcome gaps in your overall security posture and prove to insurers that you have proactive strategies and systems. A Zero Trust approach also improves cyber-resilience and may even help pay for itself by reducing insurance premiums. |
+| Increase security team efficiency and morale | To evaluate the cost of cyber insurance, you need a robust and well-defined security model and architecture. By implementing Zero Trust security, you have control, visibility, and governance with real-time analysis for protecting your network and endpoints. Your security team can detect and overcome gaps in your overall security posture and prove to insurers that you have proactive strategies and systems. A Zero Trust approach also improves cyber-resilience and may even help pay for itself by reducing insurance premiums. |
+
+For additional information to share with business leaders, see the [Minimize the impact of internal or external bad actors e-book](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWZlng).
 
 ## The adoption cycle for preventing or reducing business damage from a breach
 
-This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
+This set of articles walk through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
 :::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
 
@@ -59,11 +129,12 @@ The following table is an accessible version of the illustration.
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
-### Two separate tracks that can be done in parallel
+To prevent or reduce business damage from a breach, use the information in these additional articles: 
 
 - [Implement security breach prevention and recovery infrastructure](prevent-reduce-business-damage-breach-infrastructure.md)
 - [Implement threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md)
 
+Note that the deployment recommendations for these two separate tracks require the participation of separate groups of your IT department and **the activities for each track can be done in parallel**.
 
 ## Next Steps
 

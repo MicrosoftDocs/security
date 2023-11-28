@@ -138,7 +138,7 @@
       - name: Step 7. Implement data loss prevention (DLP) with information protection capabilities
         href: /microsoft-365/solutions/manage-devices-with-intune-dlp-mip?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
         maintainContext: true
-    - name: Evaluate, pilot, and deploy Microsoft 365 Defender
+    - name: Evaluate, pilot, and deploy Microsoft Defender XDR
       items: 
         - name: Overview
           href: /microsoft-365/security/defender/eval-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
@@ -278,7 +278,7 @@
     - name: Use SIEM and XDR to respond to incidents
       expanded: false
       items:
-      - name: Implement Microsoft Sentinel and Microsoft 365 Defender for Zero trust
+      - name: Implement Microsoft Sentinel and Microsoft Defender XDR for Zero trust
         href: /security/operations/siem-xdr-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 1. Set up XDR tools
         href: /security/operations/setup-xdr-tools?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
@@ -286,7 +286,7 @@
         href: /security/operations/siem-workspace?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 3. Ingest data sources and configure incident detection
         href: /security/operations/ingest-data-sources?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender
+      - name: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
         href: /security/operations/respond-incident?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
 - name: Technology partner integrations
   expanded: false

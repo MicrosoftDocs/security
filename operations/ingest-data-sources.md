@@ -34,7 +34,7 @@ The following table is a summary of the prerequisites required to ingest key Azu
 | Microsoft Entra ID                     | Native Data connector            | Security Admin/Global Admin<br><br>Sign-in Logs require Microsoft Entra ID P1 or P2 license<br>Other logs don't require P1 or P2      |
 | Microsoft Entra ID Protection | Native Data Connector            | Security Admin/Global Admin<br><br>License: Microsoft Entra ID P2                                                          |
 | Azure Activity                             | Azure Policy                     | Owner role required on subscriptions                                  
-| Microsoft 365 Defender                     | Native Data Connector            | Security Admin/Global Admin<br><br>License: Microsoft 365 E5, Microsoft 365 A5 or any other Microsoft 365 Defender eligible license
+| Microsoft Defender XDR                     | Native Data Connector            | Security Admin/Global Admin<br><br>License: Microsoft 365 E5, Microsoft 365 A5 or any other Microsoft Defender XDR eligible license
 | Microsoft Defender for Cloud               | Native Data Connector            | Security Reader<br><br>To enable bi-directional sync, Contributor/Security Admin role is required on the subscription. |
 | Microsoft Defender for Identity            | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Identity                                            |
 | Microsoft Defender for Office 365          | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Office 365 Plan 2                                   |
@@ -54,14 +54,14 @@ Use the following recommendations to get started with configuring data connector
     1.  Azure Activity Logs:
         Ingesting Azure Activity Logs is **critical** in enabling Sentinel to provide a single-pane of glass view across the environment.
     2.  Office 365 Audit Logs, including all SharePoint activity, Exchange admin activity, and Teams.
-    3.  Security alerts, including alerts from Microsoft Defender for Cloud, Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Identity, and Microsoft Defender for Endpoint:
+    3.  Security alerts, including alerts from Microsoft Defender for Cloud, Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Defender for Identity, and Microsoft Defender for Endpoint:
 
         1.  Ingesting security alerts into Sentinel enables it to be the "central pane of incident management" across the environment.
 
-        2.  Incident investigation starts in Sentinel and should continue in the Microsoft 365 Defender portal or Defender for Cloud, if deeper analysis is required.
+        2.  Incident investigation starts in Sentinel and should continue in the Microsoft Defender XDR portal or Defender for Cloud, if deeper analysis is required.
 
         >[!NOTE]
-        >If you have enabled the Microsoft 365 Defender connector, a bi-directional sync between 365 Defender Incidents and Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft 365 Defender-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection). For more information, see [Microsoft 365 Defender incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
+        >If you have enabled the Microsoft Defender XDR connector, a bi-directional sync between 365 Defender Incidents and Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft Defender XDR-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection). For more information, see [Microsoft Defender XDR incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
 
     4.  Microsoft Defender for Cloud Apps Alerts.
 
@@ -79,7 +79,7 @@ Use the following recommendations to get started with configuring data connector
     | Office 365                            | OfficeActivity (SharePoint)  <br> OfficeActivity (Exchange) <br>  OfficeActivity (Teams)           |
     | Microsoft Defender for Cloud          | SecurityAlert (Defender for Cloud)      |
     | Microsoft Defender for IoT            | SecurityAlert (Defender for IoT)        |
-    | Microsoft 365 Defender                | SecurityIncident       <br>       SecurityAlert              |
+    | Microsoft Defender XDR                | SecurityIncident       <br>       SecurityAlert              |
     | Microsoft Defender for Endpoint       | SecurityAlert (Microsoft Defender Advanced Threat Protection (MDATP))                   |
     | Microsoft Defender for Identity       | SecurityAlert (Azure Advanced Threat Protection (AATP))                    |
     | Microsoft Defender for Cloud Apps     | SecurityAlert (Defender for Cloud Apps) |
@@ -92,15 +92,15 @@ Use the following recommendations to get started with configuring data connector
     >There is a charge for ingesting data from the sources listed in the section
 
     - Microsoft Entra ID
-    - Microsoft 365 Defender connector
+    - Microsoft Defender XDR connector
            
-        -  Send Microsoft 365 Defender logs to Sentinel, if any of the following are required:
+        -  Send Microsoft Defender XDR logs to Sentinel, if any of the following are required:
         
             1.  Leverage Fusion Alerts with Sentinel.                 
                 - Fusion correlates data sources from multiple products to detect multi-stage attacks across the environment.
-            2. Longer retention than what is offered in Microsoft 365 Defender.
+            2. Longer retention than what is offered in Microsoft Defender XDR.
 
-            3.  Automation not covered by the built-in remediations offered by Microsoft Defender for Endpoint.  For more information, see [Remediation actions in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-remediation-actions).
+            3.  Automation not covered by the built-in remediations offered by Microsoft Defender for Endpoint.  For more information, see [Remediation actions in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-remediation-actions).
 
 3.  If deployed in Azure, use the following connectors to send these resources' Diagnostic Logs to Sentinel: 
 
@@ -153,7 +153,7 @@ Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organi
 The brains of Sentinel come from the Analytic Rules. These are rules you set to tell Sentinel to alert you to events with a set of conditions that you consider to be important. The out-of-the-box decisions Sentinel makes are based on User Entity Behavioral Analytics (UEBA) and on correlations of data across multiple data sources. 
 
 >[!NOTE]
->If you have enabled the Microsoft 365 Defender connector, a bi-directional sync between 365 Defender Incidents and Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft 365 Defender-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection). For more information, see [Microsoft 365 Defender incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
+>If you have enabled the Microsoft Defender XDR connector, a bi-directional sync between 365 Defender Incidents and Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft Defender XDR-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection). For more information, see [Microsoft Defender XDR incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
 
 Microsoft Sentinel enables the Fusion Advanced multistage attack detection analytic rule by default to automatically identify multistage attacks. Leveraging anomalous behavior and suspicious activity events observed across the cyber kill chain, Microsoft Sentinel generates incidents that allow you to see the compromise incidents with two or more alert activities in it with a high degree of confidence.
 
@@ -162,7 +162,7 @@ Fusion alert technology correlates broad points of data signals with extended ma
 -   Microsoft Entra ID Protection
 -   Microsoft Defender for Cloud
 -   Microsoft Defender for IoT
--   Microsoft 365 Defender
+-   Microsoft Defender XDR
 -   Microsoft Defender for Cloud Apps
 -   Microsoft Defender for Endpoint
 -   Microsoft Defender for Identity

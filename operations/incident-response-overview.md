@@ -233,7 +233,7 @@ Consider this general guidance about the incident response process for your SecO
 
 ### 1. Decide and act
 
-After a threat detection tool such as Microsoft Sentinel or Microsoft 365 Defender detects a likely attack, it creates an incident. The Mean Time to Acknowledge (MTTA) measurement of SOC responsiveness begins with the time your security staff notices the attack.
+After a threat detection tool such as Microsoft Sentinel or Microsoft Defender XDR detects a likely attack, it creates an incident. The Mean Time to Acknowledge (MTTA) measurement of SOC responsiveness begins with the time your security staff notices the attack.
 
 An analyst on shift is either delegated or takes ownership of the incident and performs an initial analysis. The timestamp for this is the end of the MTTA responsiveness measurement and begins the Mean Time to Remediate (MTTR) measurement.
 
@@ -309,7 +309,7 @@ Review your response processes to identify and resolve any gaps found during the
 
 - [Planning](incident-response-planning.md) for your SOC
 - [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
-- [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
+- [Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) incident response
 - [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 

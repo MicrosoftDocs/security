@@ -23,7 +23,7 @@ This article provides steps to apply the [principles of Zero Trust](zero-trust-o
 | --- | --- | --- |
 | Verify explicitly | Always authenticate and authorize based on all available data points. | Enforce the validation of user credentials, device requirements, and app permissions and behaviors. |
 | Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Validate JEA across your organization to eliminate oversharing by ensuring that correct permissions are assigned to files, folders, Teams, and email. Use sensitivity labels and data loss prevention policies to protect data.  |
-| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Use Exchange Online Protection (EOP) and Microsoft 365 Defender services to automatically prevent common attacks and to detect and respond to security incidents. |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Use Exchange Online Protection (EOP) and Microsoft Defender XDR services to automatically prevent common attacks and to detect and respond to security incidents. |
 
 For the basics of Copilot, see the [overview](/microsoft-365-copilot/microsoft-365-copilot-overview) and [how to get started](/microsoft-365-copilot/microsoft-365-copilot-setup).
 
@@ -194,7 +194,7 @@ These capabilities can be configured directly on the client, by using Group Poli
 
 ### Next steps with E5
 
-For more comprehensive threat protection, pilot and deploy Microsoft 365 Defender, which includes:
+For more comprehensive threat protection, pilot and deploy Microsoft Defender XDR, which includes:
 
 - Defender for Identity
 - Defender for Office 365 P2
@@ -203,13 +203,13 @@ For more comprehensive threat protection, pilot and deploy Microsoft 365 Defende
 
 Microsoft recommends enabling the components of Microsoft 365 in the order illustrated:
 
-:::image type="content" source="media/copilot/m365-defender-eval-process.png" alt-text="Diagram of the process to evaluate and deploy Microsoft 365 Defender components." lightbox="media/copilot/m365-defender-eval-process.png":::
+:::image type="content" source="media/copilot/m365-defender-eval-process.png" alt-text="Diagram of the process to evaluate and deploy Microsoft Defender XDR components." lightbox="media/copilot/m365-defender-eval-process.png":::
  
-For more information and a description of this illustration, see [Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview#the-evaluation-process-for-microsoft-365-defender-cyber-security).
+For more information and a description of this illustration, see [Evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview#the-evaluation-process-for-microsoft-365-defender-cyber-security).
 
-After deploying Microsoft 365 Defender, integrate these eXtended detection and response (XDR) tools with Microsoft Sentinel. Microsoft Sentinel is licensed and billed separately from Microsoft 365 E5. Use these resources for more information:
+After deploying Microsoft Defender XDR, integrate these eXtended detection and response (XDR) tools with Microsoft Sentinel. Microsoft Sentinel is licensed and billed separately from Microsoft 365 E5. Use these resources for more information:
 
-- [Implement Microsoft Sentinel and Microsoft 365 Defender for Zero Trust](/security/operations/siem-xdr-overview)
+- [Implement Microsoft Sentinel and Microsoft Defender XDR for Zero Trust](/security/operations/siem-xdr-overview)
 - [Plan costs and understanding Microsoft Sentinel pricing and billing](/azure/sentinel/billing?tabs=simplified%2Ccommitment-tiers)
 
 ## Step 5. Deploy or validate your data protection
@@ -356,7 +356,7 @@ Refer to these links to learn about the various services and technologies mentio
 - [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)
 - [EOP overview](/microsoft-365/security/office-365-security/eop-about)
 - [Introduction to Windows security](/windows/security/introduction)
-- [Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview#the-evaluation-process-for-microsoft-365-defender-cyber-security)
+- [Evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview#the-evaluation-process-for-microsoft-365-defender-cyber-security)
 - [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels)
 - [Create DLP policies](/purview/dlp-learn-about-dlp)
 - [Configure Teams with three tiers of protection](/microsoft-365/solutions/setup-secure-collaboration-with-teams)

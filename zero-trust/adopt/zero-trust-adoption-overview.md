@@ -218,14 +218,14 @@ Note that the progress percentage provided by Secure Score might not be accurate
 
 Additionally, several portals and reports can assist you in creating an overview of risk within your business, including:
 
-- Reports within Microsoft 365 Defender provide information regarding security trends and track the protection status of your identities, data, devices, applications and infrastructure.
+- Reports within Microsoft Defender XDR provide information regarding security trends and track the protection status of your identities, data, devices, applications and infrastructure.
 - The Cloud Security Explorer allows you to proactively hunt for security risks.
 
-For example, within Microsoft 365 Defender, the device inventory provides a clear view into newly discovered devices in your network that aren't yet protected. At the top of each **Device inventory** tab, you can see the total number of devices that aren't onboarded. Here's an example.
+For example, within Microsoft Defender XDR, the device inventory provides a clear view into newly discovered devices in your network that aren't yet protected. At the top of each **Device inventory** tab, you can see the total number of devices that aren't onboarded. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png" alt-text="Example of the Inventory tab in the Microsoft 365 Defender portal" lightbox="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png":::
+:::image type="content" source="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png" alt-text="Example of the Inventory tab in the Microsoft Defender XDR portal" lightbox="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png":::
 
-For more information on using Microsoft 365 Defender to track your progress, see [Strengthen your security posture with Microsoft 365 Defender](/microsoft-365/security/security-posture-solution-overview).
+For more information on using Microsoft Defender XDR to track your progress, see [Strengthen your security posture with Microsoft Defender XDR](/microsoft-365/security/security-posture-solution-overview).
 
 For more information about how to use Secure Score, see [Secure Score documentation](/microsoft-365/security/defender/microsoft-secure-score). 
 

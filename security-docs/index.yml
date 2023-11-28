@@ -176,14 +176,14 @@ additionalContent:
           links:
             - text: Implement XDR and SIEM tools
               url: /security/operations/siem-xdr-overview
-            - text: Turn on Microsoft 365 Defender
+            - text: Turn on Microsoft Defender XDR
               url: /microsoft-365/security/defender/m365d-enable
             - text: Design your Microsoft Sentinel workspace
               url: /azure/sentinel/design-your-workspace-architecture
         # Card
         - title: Operation
           links:
-            - text: Integrate Microsoft 365 Defender into operations
+            - text: Integrate Microsoft Defender XDR into operations
               url: /azure/architecture/guide/architecture-styles/
             - text: Protect against ransomware
               url: /security/ransomware/protect-against-ransomware

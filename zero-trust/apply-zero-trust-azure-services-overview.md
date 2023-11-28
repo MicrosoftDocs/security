@@ -34,7 +34,7 @@ These articles show you how to apply Zero Trust approach to these new or already
 - [Azure Virtual Desktop](azure-infrastructure-avd.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
-- [Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)
+- [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
 
 ## Content architecture
 
@@ -46,9 +46,9 @@ You apply the guidance in the articles in a stack from the bottom up.
 
 | Workload | Platform set of articles (from the bottom up) |
 | --- | --- |
-| IaaS apps in Amazon Web Services (AWS) | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft 365 Defender </li></ul> |
-| Spoke VNet with Azure IaaS services | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft 365 Defender </li><li> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) </li><li> Storage </li></ul> |
-| Azure Virtual Desktop or virtual machines | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft 365 Defender </li><li> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) </li><li> Storage </li><li> Spoke VNet with Azure IaaS services </li></ul>  |
+| IaaS apps in Amazon Web Services (AWS) | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft Defender XDR </li></ul> |
+| Spoke VNet with Azure IaaS services | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft Defender XDR </li><li> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) </li><li> Storage </li></ul> |
+| Azure Virtual Desktop or virtual machines | <ul><li> Cloud identity infrastructure </li><li> Microsoft Sentinel and Microsoft Defender XDR </li><li> Hub VNets (traditional) OR Azure Virtual WAN (Microsoft-managed) </li><li> Storage </li><li> Spoke VNet with Azure IaaS services </li></ul>  |
 
 It’s important to note that the guidance in this series of articles is more specific for this type of architecture than the guidance provided in the [Cloud Adoption Framework](/azure/cloud-adoption-framework/get-started/index) and [Azure landing zone](/azure/cloud-adoption-framework/ready/landing-zone/index) architectures. If you have applied the guidance in either of these resources, be sure to also review this series of articles for additional recommendations.  
 
@@ -64,7 +64,7 @@ See these additional articles for applying Zero Trust principles to Azure servic
 - [Azure Virtual Desktop](azure-infrastructure-avd.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
-- [Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)
+- [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
 
 <!---
 ## Technical illustrations
@@ -73,7 +73,7 @@ This poster provides a single-page, at-a-glance view of the content architecture
 
 | Item | Related solution guides |
 |:-----|:-----|
-|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-azure-services-poster-thumb.png)](Microsoft Download Center link) <br/> [PDF](Microsoft Download Center link) \| [Visio](Microsoft Download Center link) <br/> Updated June 2023 | <ul><li>[Azure IaaS services](azure-infrastructure-overview.md)</li><li>[Azure Virtual Desktop](azure-infrastructure-avd.md)</li><li>[Azure Virtual WAN](azure-virtual-wan.md)</li><li>[IaaS applications in Amazon Web Services](secure-iaas-apps.md)</li><li>[Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)</li></ul>|
+|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-azure-services-poster-thumb.png)](Microsoft Download Center link) <br/> [PDF](Microsoft Download Center link) \| [Visio](Microsoft Download Center link) <br/> Updated June 2023 | <ul><li>[Azure IaaS services](azure-infrastructure-overview.md)</li><li>[Azure Virtual Desktop](azure-infrastructure-avd.md)</li><li>[Azure Virtual WAN](azure-virtual-wan.md)</li><li>[IaaS applications in Amazon Web Services](secure-iaas-apps.md)</li><li>[Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)</li></ul>|
 
 For additional technical illustrations, click [here](zero-trust-tech-illus.md).
 --->

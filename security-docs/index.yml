@@ -14,7 +14,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 09/25/2023
+  ms.date: 11/29/2023
 
 
 # Maximum of 8 items
@@ -30,9 +30,9 @@ highlightedContent:
       itemType: overview
       url: https://thecyberwire.com/podcasts/afternoon-cyber-tea/78/notes
     # Card
-    - title: Microsoft Build 2023
+    - title: Microsoft Ignite 2023
       itemType: whats-new
-      url: https://build.microsoft.com/home
+      url: https://ignite.microsoft.com/home
     # Card
     - title: What is ransomware?
       itemType: concept

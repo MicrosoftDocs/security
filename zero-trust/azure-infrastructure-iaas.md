@@ -58,7 +58,7 @@ Zero Trust principles are applied across the architecture, from the tenant and d
 
 | Step | Task | Zero Trust principle(s) applied |
 | --- | --- | --- |
-| 1 | Use Azure Active Directory (Azure AD) role-based access control (RBAC) or set up custom roles for networking resources. | Use least privileged access |
+| 1 | Use Microsoft Entra role-based access control (RBAC) or set up custom roles for networking resources. | Use least privileged access |
 | 2 | Isolate infrastructure into its own resource group. | Assume breach |
 | 3 | Create a network security group for each subnet. | Use least privileged access <br> Assume breach |
 | 4 | Create an application security group for each virtual machine role. | Verify explicitly <br> Use least privileged access <br> Assume breach |
@@ -66,9 +66,11 @@ Zero Trust principles are applied across the architecture, from the tenant and d
 | 6 | Secure access to the VNet and application. | Use least privileged access <br> Assume breach |
 | 7 | Enable advanced threat detection, alerting, and protection. | Assume breach |
 
-## Step 1. Use Azure AD RBAC or set up custom roles for networking resources
+<a name='step-1-use-azure-ad-rbac-or-set-up-custom-roles-for-networking-resources'></a>
 
-You can use [Azure AD RBAC built-in roles](/azure/role-based-access-control/built-in-roles#network-contributor) for network contributors. However, another approach is to use custom roles. Spoke network managers don't need full access to networking resources granted by the Azure AD RBAC Network Contributor role, but need more permissions than other common roles. You can use a custom role to scope the access to just what is needed.
+## Step 1: Use Microsoft Entra RBAC or set up custom roles for networking resources
+
+You can use [Microsoft Entra RBAC built-in roles](/azure/role-based-access-control/built-in-roles#network-contributor) for network contributors. However, another approach is to use custom roles. Spoke network managers don't need full access to networking resources granted by the Microsoft Entra RBAC Network Contributor role, but need more permissions than other common roles. You can use a custom role to scope the access to just what is needed.
 
 One easy way to implement this is to deploy the custom roles found in the [Azure Landing Zone Reference Architecture](https://github.com/Azure/ALZ-Bicep/tree/main/infra-as-code/bicep/modules/customRoleDefinitions).
 
@@ -79,9 +81,9 @@ The specific role is the **Network Management** custom role has the following pe
 - Any actions with the support provider
 - Any actions with the Resources provider
 
-You can create this role using the scripts for the custom roles or through Azure AD with the process described in [Azure custom roles - Azure RBAC](/azure/role-based-access-control/custom-roles).
+You can create this role using the scripts for the custom roles or through Microsoft Entra ID with the process described in [Azure custom roles - Azure RBAC](/azure/role-based-access-control/custom-roles).
 
-## Step 2. Isolate infrastructure into its own resource group
+## Step 2: Isolate infrastructure into its own resource group
 
 By isolating network resources from compute, data, or storage resources, you reduce the likelihood of permissions bleed. In addition, by ensuring that all related resources are in one resource group, you can make one security assignment and better manage logging and monitoring to these resources.
 
@@ -115,7 +117,7 @@ You configure diagnostics from the **Security** category of **Diagnostic setting
 
 See [Diagnostic Settings](/azure/azure-monitor/essentials/diagnostic-settings) to understand how to review these logs and alert on them.
 
-## Step 3. Create a network security group for each subnet
+## Step 3: Create a network security group for each subnet
 
 Azure network security groups are used to filter network traffic between Azure resources in an Azure VNet. It's recommended to apply a network security group to each subnet, which is enforced through Azure policy by default when deploying Azure Landing Zones. A network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, several types of Azure resources. For each rule, you can specify source and destination, port, and protocol.
 
@@ -134,7 +136,7 @@ Create a network security group using this process: [Create, change, or delete a
 
 See [network security groups](/azure/virtual-network/network-security-groups-overview) to understand how you can use them to secure the environment.
 
-## Step 4. Create an application security group for each virtual machine role
+## Step 4: Create an application security group for each virtual machine role
 
 Application security groups enable you to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses. The platform handles the complexity of explicit IP addresses and multiple rule sets, allowing you to focus on your business logic.
 
@@ -152,7 +154,7 @@ For more information about application security groups and how to assign these t
 > [!NOTE]
 > If you're using load balancers, using the IP address of the load balancer in the network security groups is required as application security groups can't scope a load balancer.
 
-## Step 5. Secure traffic and resources within the VNet
+## Step 5: Secure traffic and resources within the VNet
 
 This section covers the following recommendations:
 
@@ -209,7 +211,7 @@ Read more about [Azure Firewall](/azure/firewall/overview) and [Route Tables](/a
 
 ### Virtual machine management rules
 
-To configure virtual machines with Azure AD Login, Anti-Malware, and automatic updates enabled, you'll need to allow the following outbound connections. Many of these are by FQDN, meaning that either Azure Firewall is needed for FQDN rules, or you'll make a more complex plan. Azure Firewall is recommended.
+To configure virtual machines with Microsoft Entra Login, Anti-Malware, and automatic updates enabled, you'll need to allow the following outbound connections. Many of these are by FQDN, meaning that either Azure Firewall is needed for FQDN rules, or you'll make a more complex plan. Azure Firewall is recommended.
 
 The outbound connections are:
 
@@ -342,7 +344,7 @@ To enable Network Security Group Flow Logging, you can follow the [Tutorial: Log
 > - Access to the logs should be restricted as needed.
 > - They should also flow in to Log Analytics and Sentinel as needed.
 
-## Step 6. Secure access to the VNet and application
+## Step 6: Secure access to the VNet and application
 
 Securing access to the VNet and application includes:
 
@@ -363,7 +365,7 @@ To secure access from hub resources to the VNet, see [Apply Zero Trust principle
 
 The article, [Apply Zero Trust principles to virtual machines](azure-infrastructure-virtual-machines.md) recommends how to protect access requests directly to virtual machines with multi-factor authentication and conditional access. These requests are most likely from administrators and developers. The next step is to secure access to the application with multi-factor authentication and conditional access. This applies to all users who access the app.
 
-First, if the application isn't yet integrated with Azure AD, see [Application types for the Microsoft identity platform](/azure/active-directory/develop/v2-app-types#daemons-and-server-side-apps).
+First, if the application isn't yet integrated with Microsoft Entra ID, see [Application types for the Microsoft identity platform](/azure/active-directory/develop/v2-app-types#daemons-and-server-side-apps).
 
 Next, add the application to the scope of your identity and device access policies.
 
@@ -371,9 +373,9 @@ When configuring multi-factor authentication with conditional access and related
 
 The following diagram shows the recommended policies for Zero Trust.
 
-:::image type="content" source="media/identity-device-access-policies-byplan.png" alt-text="Diagram of Zero Trust identity and device access policies." lightbox="media/identity-device-access-policies-byplan.png":::
+:::image type="content" source="media/identity-device-access-policies-byplan.svg" alt-text="Diagram of Zero Trust identity and device access policies." lightbox="media/identity-device-access-policies-byplan.svg":::
 
-## Step 7. Enable advanced threat detection and protection
+## Step 7: Enable advanced threat detection and protection
 
 Your spoke VNet built on Azure may already be protected by Microsoft Defender for Cloud (MDC) as other resources from your IT business environment running on Azure or on-premises may also be protected.
 

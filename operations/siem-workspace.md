@@ -5,7 +5,7 @@ ms.date: 03/29/2023
 author: mjcaparas
 ms.author: macapara
 ms.topic: article
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.localization_priority: Normal
 ms.collection: 
   - zerotrust-solution
@@ -23,17 +23,17 @@ This article provides recommendations on how to design and implement Microsoft S
 > [!NOTE]
 > If you are new to Microsoft Sentinel workspaces, see design strategies and criteria in [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design).
 
-## Step 1. Design a governance strategy
+## Step 1: Design a governance strategy
 
 If your organization has many Azure subscriptions, you may need a way to efficiently manage access, policies, and compliance for those subscriptions. Management groups provide a governance scope for subscriptions. When you organize your subscriptions within management groups, the governance conditions you configure for a management group apply to the subscriptions it contains. For more information, see [Organize your resources with management groups](/azure/governance/management-groups/overview).
 
-For example, the Microsoft Sentinel workspace in the following diagram is in the **Security** subscription under the **Platform** management group, which is part of the Azure Active Directory (Azure AD) tenant.
+For example, the Microsoft Sentinel workspace in the following diagram is in the **Security** subscription under the **Platform** management group, which is part of the Microsoft Entra tenant.
 
-:::image type="content" source="./media/sentinel-workspaces.svg" alt-text="Example of a Microsoft Sentinel workspace in an Azure AD tenant." lightbox="./media/sentinel-workspaces.svg":::
+:::image type="content" source="./media/sentinel-workspaces.svg" alt-text="Example of a Microsoft Sentinel workspace in a Microsoft Entra tenant." lightbox="./media/sentinel-workspaces.svg":::
 
 The Security Azure subscription and the Microsoft Sentinel workspace inherit the role-based access control (RBAC) and Azure policies that are applied to the Platform management group.
 
-## Step 2. Create Log Analytics workspaces
+## Step 2: Create Log Analytics workspaces
 
 To use Microsoft Sentinel, the first step is to create your Log Analytics workspaces. A single Log Analytics workspace might be sufficient for many environments, but many organizations create multiple workspaces to optimize costs and better meet different business requirements. 
 
@@ -78,7 +78,7 @@ For a single tenant, there are two ways Microsoft Sentinel workspaces can be con
 
 To create your Log Analytics workspaces, see [Create Log Analytics workspaces](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
 
-## Step 3. Architect the Sentinel Workspace
+## Step 3: Architect the Sentinel Workspace
 
 Onboarding Microsoft Sentinel requires selecting a Log Analytics workspace. The following are considerations for setting up Log Analytics for Microsoft Sentinel:
 
@@ -95,7 +95,7 @@ To implement zero-trust architecture, consider extending the workspace to query 
 
 In addition, use the [Cloud Roles and Operations Management prescriptive guidance](https://github.com/Azure/cloud-rolesandops) and its Excel spreadsheet ([download](https://github.com/Azure/cloud-rolesandops/releases/download/v0.91b/cromv09.xlsx)). From this guide, the Zero Trust tasks to consider for Microsoft Sentinel are:
 
-- Define Microsoft Sentinel RBAC roles with associated Azure AD groups.
+- Define Microsoft Sentinel RBAC roles with associated Microsoft Entra groups.
 - Validate that implemented access practices to Microsoft Sentinel still meet your organization’s requirements.
 - Consider the use of customer-managed keys.
 
@@ -115,9 +115,9 @@ When you assign Microsoft Sentinel-specific Azure roles, you may come across oth
 
 ### Zero Trust in Multi-Tenant Architecture with Azure Lighthouse
 
-Azure Lighthouse enables multi-tenant management with scalability, higher automation, and enhanced governance across resources. With Azure Lighthouse you can manage multiple Microsoft Sentinel instances across Azure AD tenants at scale. Here’s an example.
+Azure Lighthouse enables multi-tenant management with scalability, higher automation, and enhanced governance across resources. With Azure Lighthouse you can manage multiple Microsoft Sentinel instances across Microsoft Entra tenants at scale. Here’s an example.
 
-:::image type="content" source="./media/sentinel-workspaces-multi-tenant.svg" alt-text="Example of using Azure Lighthouse across multiple Azure AD tenants." lightbox="./media/sentinel-workspaces-multi-tenant.svg":::
+:::image type="content" source="./media/sentinel-workspaces-multi-tenant.svg" alt-text="Example of using Azure Lighthouse across multiple Microsoft Entra tenants." lightbox="./media/sentinel-workspaces-multi-tenant.svg":::
 
 With Azure Lighthouse, you can run queries across multiple workspaces or create workbooks to visualize and monitor data from your connected data sources and gain additional insight. It’s important to consider Zero Trust principles. See [Recommended security practices](/azure/lighthouse/concepts/recommended-security-practices) to implement least privileges access controls for Azure Lighthouse.
 

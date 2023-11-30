@@ -15,13 +15,13 @@ ms.collection:
 
 [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles so that you can improve flexibility and control while increasing application security with least privilege.
 
-Azure Active Directory (Azure AD) supports sending a user's assigned [security groups](/azure/active-directory/develop/active-directory-optional-claims), Azure AD directory roles, and distribution groups as claims in a token. You can use this approach to drive authorization in apps. However, Azure AD limits security group support in a token by the size of the token. If the user is a member of too many groups, there will be no security groups in the token.
+Microsoft Entra ID supports sending a user's assigned [security groups](/azure/active-directory/develop/active-directory-optional-claims), Microsoft Entra directory roles, and distribution groups as claims in a token. You can use this approach to drive authorization in apps. However, Microsoft Entra ID limits security group support in a token by the size of the token. If the user is a member of too many groups, there will be no security groups in the token.
 
-In this article, you'll learn an alternative approach to getting user information in tokens using Azure AD security group support. Instead, you'll configure your apps with app role definitions and assign security groups to app roles. This [Zero Trust](overview.md) developer best practice will improve flexibility and control while [increasing application security with least privilege](/azure/active-directory/develop/secure-least-privileged-access).
+In this article, you'll learn an alternative approach to getting user information in tokens using Microsoft Entra security group support. Instead, you'll configure your apps with app role definitions and assign security groups to app roles. This [Zero Trust](overview.md) developer best practice will improve flexibility and control while [increasing application security with least privilege](/azure/active-directory/develop/secure-least-privileged-access).
 
 You can [configure group claims](/azure/active-directory/develop/active-directory-optional-claims#configuring-groups-optional-claims) in tokens that you can use within your applications for authorization. Remember that group information in the token is current only when you receive the token. Group claims support two main patterns:
 
-- Groups identified by their Azure AD object identifier (OID) attribute.
+- Groups identified by their Microsoft Entra object identifier (OID) attribute.
 - Groups identified by the `sAMAccountName` or `GroupSID` attribute for Active Directory-synchronized groups and users.
 
 Group membership can drive authorization decisions. For example, the following example shows some claims in a token. You can add group claims and roles to either ID or access tokens.
@@ -44,9 +44,9 @@ Group membership can drive authorization decisions. For example, the following e
  ]
 ```
 
-The `groups` claims array comprises the IDs of the groups to which this user is a member. The `wids` array comprises the IDs of the Azure AD roles assigned to this user. Here, `cf1c38e5-3621-4004-a7cb-879624dced7c` shows that this user's assigned roles include Application Developer and standard member as `3b2b0c93-acd8-4208-8eba-7a48db1cd4c0` indicates.
+The `groups` claims array comprises the IDs of the groups to which this user is a member. The `wids` array comprises the IDs of the Microsoft Entra roles assigned to this user. Here, `cf1c38e5-3621-4004-a7cb-879624dced7c` shows that this user's assigned roles include Application Developer and standard member as `3b2b0c93-acd8-4208-8eba-7a48db1cd4c0` indicates.
 
-Your app can make authorization decisions based on the presence or absence of these claims and their values. See [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) for a list of values for the `wids` claim.
+Your app can make authorization decisions based on the presence or absence of these claims and their values. See [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) for a list of values for the `wids` claim.
 
 To add the `groups` and `wids` claims to your tokens, select **All groups** as shown in the following example of the **App registrations** | **Token configuration** | **Optional claims** | **Edit groups claim** screen.
 
@@ -128,8 +128,8 @@ When you define app roles for your app, it is your responsibility to implement a
 
 ## Next steps
 
-- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
-- [Configure group claims for applications by using Azure Active Directory](/azure/active-directory/hybrid/how-to-connect-fed-group-claims) shows how Azure Active Directory (Azure AD) can provide a user's group membership information in tokens for use within applications.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configure group claims for applications by using Microsoft Entra ID](/azure/active-directory/hybrid/how-to-connect-fed-group-claims) shows how Microsoft Entra ID can provide a user's group membership information in tokens for use within applications.
 - [Security best practices for application properties](/azure/active-directory/develop/security-best-practices-for-app-registration) describes redirect URI, access tokens (used for implicit flows), certificates and secrets, application ID URI, and application ownership.
 - [Microsoft identity platform scopes, permissions, & consent](/azure/active-directory/develop/v2-permissions-and-consent) explains the foundational concepts of access and authorization to help you build more secure and trustworthy applications.
 - Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle to create secure applications.

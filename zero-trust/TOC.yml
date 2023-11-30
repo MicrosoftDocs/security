@@ -240,12 +240,14 @@
       items:
       - name: Overview
         href: integrate-saas-apps.md
-      - name: Step 1. Add SaaS apps to Azure AD and to the scope of policies
+      - name: Step 1. Add SaaS apps to Microsoft Entra ID and to the scope of policies
         href: add-saas-apps.md
       - name: Step 2. Create Defender for Cloud Apps policies
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
+- name: Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
+  href: zero-trust-microsoft-365-copilot.md
 - name: Zero Trust deployment plans with Microsoft Azure
   expanded: false
   items: 

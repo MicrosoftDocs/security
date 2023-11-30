@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Online Access to Source Code
 
-Since its launch in 2003, the Government Security Program (GSP) has provided governments and international organizations with the ability to access and inspect source code for a variety of Microsoft products. The Online Source offering provides greater security assurance evidence by enabling access to product source code using Code Center Premium (CCP), a secure web portal. Available products include **Windows**, **Office**, **SharePoint**, **Exchange** and **SQL Server**. Agency individuals using Azure Active Directory are granted read-only access to CCP to browse, search, and reference product source code.  
+Since its launch in 2003, the Government Security Program (GSP) has provided governments and international organizations with the ability to access and inspect source code for a variety of Microsoft products. The Online Source offering provides greater security assurance evidence by enabling access to product source code using Code Center Premium (CCP), a secure web portal. Available products include **Windows**, **Office**, **SharePoint**, **Exchange** and **SQL Server**. Agency individuals using Microsoft Entra ID are granted read-only access to CCP to browse, search, and reference product source code.  
 
 ## Code Center Premium
 The Online Source offering and CCP site enables GSP participants to evaluate individual system component functions, component interaction, and security and reliability capabilities. Agencies can use CCP to search source code trees using comprehensive search functionality. To improve the value of in-person visits, agencies are typically required to review source code remotely in CCP before visiting a Transparency Center.

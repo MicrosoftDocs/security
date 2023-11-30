@@ -16,11 +16,13 @@ manager: dansimp
 localization_priority: Normal
 audience: ITPro
 ms.collection:
-  - zerotrust-solution
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
-ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref
+ms.custom: 
+  - cxdef-zt-ransomware
+  - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ---
 
 # Phishing investigation
@@ -69,11 +71,13 @@ You search the [unified audit log](/microsoft-365/compliance/search-the-audit-lo
 
 ### Are the sign-in logs and/or audit logs exported to an external system?
 
-Since most of the Azure Active Directory (Azure AD) [sign-in](/azure/active-directory/reports-monitoring/concept-sign-ins) and audit data will get overwritten after 30 or 90 days, we recommend that you leverage Sentinel, Azure Monitor or an external security information and event management (SIEM) system.
+Since most of the Microsoft Entra ID [sign-in](/azure/active-directory/reports-monitoring/concept-sign-ins) and audit data will get overwritten after 30 or 90 days, we recommend that you leverage Sentinel, Azure Monitor or an external security information and event management (SIEM) system.
 
 ## Roles and permissions required
 
-### Permissions in Azure AD
+<a name='permissions-in-azure-ad'></a>
+
+### Permissions in Microsoft Entra ID
 
 We recommend membership in the following roles for the account that does the investigation:
 
@@ -106,11 +110,11 @@ The following PowerShell modules are required for the investigation of the cloud
 
 - Azure AD PowerShell for Graph module. For installation instructions, see [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0&preserve-view=true).
 
-  If you need older cmdlets in the MSOnline (v1) Azure AD module, see [Azure Active Directory (MSOnline)](/powershell/azure/active-directory/install-msonlinev1).
+  If you need older cmdlets in the MSOnline (v1) Azure AD module, see [Microsoft Entra ID (MSOnline)](/powershell/azure/active-directory/install-msonlinev1).
 
 - Exchange Online PowerShell module: For installation instructions, see [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
-- Azure AD Incident Response PowerShell module: For installation instructions, see [Azure AD Incident Response PowerShell Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
+- Microsoft Entra Incident Response PowerShell module: For installation instructions, see [Microsoft Entra Incident Response PowerShell Module](https://github.com/AzureAD/Azure-AD-Incident-Response-PowerShell-Module)
 
 ## Workflow
 
@@ -157,7 +161,7 @@ You can also download the phishing and other incident playbook checklists as an 
 
 For this investigation, it is assumed that you either have a sample phishing email, or parts of it like the sender's address, subject of the email, or parts of the message to start the investigation. Also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
 
-This playbook is created with the intention that not all Microsoft customers and their investigation teams will have the full Microsoft 365 E5 or Azure AD Premium P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
+This playbook is created with the intention that not all Microsoft customers and their investigation teams will have the full Microsoft 365 E5 or Microsoft Entra ID P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
 
 ### Get the list of users / identities who got the email
 
@@ -539,7 +543,7 @@ Set-AdfsProperties -AuditLevel Verbose
 
 For more details, see [auditing enhancements to ADFS in Windows server](/windows-server/identity/ad-fs/technical-reference/auditing-enhancements-to-ad-fs-in-windows-server).
 
-If you have Azure AD Connect Health installed, you should also look into the Risky IP report. The failed sign-in activity client IP addresses are aggregated through Web Application proxy servers. Each item in the Risky IP report shows aggregated information about failed AD FS sign-in activities that exceed the designated threshold.
+If you have Microsoft Entra Connect Health installed, you should also look into the Risky IP report. The failed sign-in activity client IP addresses are aggregated through Web Application proxy servers. Each item in the Risky IP report shows aggregated information about failed AD FS sign-in activities that exceed the designated threshold.
 
 :::image type="content" source="./media/incident-response-playbook-phishing/timestamp.png" alt-text="Example of the risky IP report":::
 
@@ -579,13 +583,13 @@ To get the full list of ADFS Event ID per OS Level, refer to [GetADFSEventList](
 
 ### Managed scenario
 
-Check the Azure AD sign-in logs for the user(s) you are investigating.
+Check the Microsoft Entra sign-in logs for the user(s) you are investigating.
 
-- Navigate to the [Azure AD portal > Sign-in](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen
+- Navigate to the [Microsoft Entra admin center > Sign-in](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen
 - Check the [sign-in activities](/graph/api/resources/signinactivity)
 - Check the [PowerShell function on GitHub](https://github.com/poshchap/Azure-AD-Users-PoSh/blob/master/Get-AzureADUserLastSignInActivity.ps1)
 
-In the Azure AD portal, navigate to the [Sign-ins](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen and add/modify the display filter for the timeframe you found in the previous investigation steps as well as add the user name as a filter, as shown in this image.
+In the Microsoft Entra admin center, navigate to the [Sign-ins](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen and add/modify the display filter for the timeframe you found in the previous investigation steps as well as add the user name as a filter, as shown in this image.
 
 :::image type="content" source="./media/incident-response-playbook-phishing/DisplayFilter.png" alt-text="Example of a display filter":::
 
@@ -606,7 +610,7 @@ Get-AzureADIRSignInDetail -UserId johcast@Contoso.com -TenantId 536279f6-1234-25
 
 ### Investigate source IP address
 
-Based on the source IP addresses that you found in the Azure AD sign-in logs or the ADFS/Federation Server log files, investigate further to know from where the traffic originated.
+Based on the source IP addresses that you found in the Microsoft Entra sign-in logs or the ADFS/Federation Server log files, investigate further to know from where the traffic originated.
 
 ### Managed user
 
@@ -626,7 +630,7 @@ When you look into the results list, navigate to the **Device info** tab. Depend
 
   :::image type="content" source="./media/incident-response-playbook-phishing/unmanageddevice.png" alt-text="Example of a unmanaged device":::
 
-- Example 2 - Managed device (Azure AD join or hybrid Azure AD join):
+- Example 2 - Managed device (Microsoft Entra join or Microsoft Entra hybrid join):
 
   :::image type="content" source="./media/incident-response-playbook-phishing/Manageddevice.png" alt-text="Example of a managed device":::
 
@@ -644,7 +648,7 @@ Look for and record the *DeviceID, OS Level, CorrelationID, RequestID.*
 
 ### Investigate the identified DeviceID
 
-This step is relevant for only those devices that are known to Azure AD. For example, from the previous steps, if you found one or more potential device IDs, then you can investigate further on this device. Look for and record the *DeviceID* and *Device Owner*.
+This step is relevant for only those devices that are known to Microsoft Entra ID. For example, from the previous steps, if you found one or more potential device IDs, then you can investigate further on this device. Look for and record the *DeviceID* and *Device Owner*.
 
 ### Investigate each AppID
 
@@ -656,16 +660,18 @@ From the previously found sign-in log details, check the *Application ID* under 
 
 :::image type="content" source="./media/incident-response-playbook-phishing/managedscenario1.png" alt-text="managedscenario":::
 
-Note the differences between the Application (and ID) to the Resource (and ID). The application is the client component involved, whereas the Resource is the service / application in Azure AD.
+Note the differences between the Application (and ID) to the Resource (and ID). The application is the client component involved, whereas the Resource is the service / application in Microsoft Entra ID.
 
 With this AppID, you can now perform research in the tenant. Here's an example:
 
 ```powershell
-Get-AzureADApplication -Filter "AppId eq '30d4cbf1-c561-454e-bf01-528cd5eafd58'"
+Get-MgApplication -Filter "AppId eq '30d4cbf1-c561-454e-bf01-528cd5eafd58'"
+```
 
-ObjectId                              |   AppId                                |    DisplayName
+```Output
+Id                                       AppId                                    DisplayName
 
-3af6dc4e-b0e5-45ec-8272-56f3f3f875ad     30d4cbf1-c561-454e-bf01-528cd5eafd58         Claims X-Ray
+3af6dc4e-b0e5-45ec-8272-56f3f3f875ad     30d4cbf1-c561-454e-bf01-528cd5eafd58     Claims X-Ray
 ```
 
 With this information, you can search in the Enterprise Applications portal. Navigate to **All Applications** and search for the specific AppID.

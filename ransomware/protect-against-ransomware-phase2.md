@@ -10,7 +10,6 @@ ms.topic: article
 ms.service: microsoft-365-security
 localization_priority: Normal
 ms.collection: 
-- zerotrust-solution
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
 description: Deploy ransomware protection to limit the scope of damage of an attacker by protecting privileged roles.
@@ -49,7 +48,7 @@ Build a multi-part strategy using the guidance at [https://aka.ms/SPA](https://a
 
 | Done| Task | Description |
 |:-------|:-------|:-----|
-| <input type="checkbox" /> | Enforce end-to-end session security. | Explicitly validates the trust of users and devices before allowing access to administrative interfaces (using [Azure Active Directory Conditional Access](/azure/active-directory/conditional-access/overview)). |
+| <input type="checkbox" /> | Enforce end-to-end session security. | Explicitly validates the trust of users and devices before allowing access to administrative interfaces (using [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/overview)). |
 | <input type="checkbox" /> |  Protect and monitor identity systems. | Prevents privilege escalation attacks including directories, identity management, administrator accounts and groups, and consent grant configuration. |
 | <input type="checkbox" /> | Mitigate lateral traversal. | Ensures that compromising a single device does not immediately lead to control of many or all other devices using local account passwords, service account passwords, or other secrets. |
 | <input type="checkbox" /> | Ensure rapid threat response. | Limits an adversary's access and time in the environment. See [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response) for more information. |
@@ -79,7 +78,7 @@ This table describes the improvement of your detection and response capability a
 |  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Infrastructure Team | Implement client and server agents/features |
 |  | [Security Operations](/azure/cloud-adoption-framework/organize/cloud-security-operations-center) | Integrate any new tools into security operations processes |
 |  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Productivity / End User Team | Enable features for Defender for Endpoint, Defender for Office 365, Defender for Identity, and Defender for Cloud Apps |
-|  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Identity Team | Implement Azure AD security and Defender for Identity |
+|  | [Central IT](/azure/cloud-adoption-framework/organize/central-it) Identity Team | Implement Microsoft Entra security and Defender for Identity |
 |  | [Security Architects](/azure/cloud-adoption-framework/organize/cloud-security-architecture) |  Advise on configuration, standards, and tooling |
 |  | [Security Policy and Standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) | Update standards and policy documents |
 |  | [Security Compliance Management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) | Monitor to ensure compliance |

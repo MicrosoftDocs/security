@@ -56,13 +56,13 @@ Security information and event management (SIEM) tools such as Microsoft Sentine
 * Configure relevant alerts
 
 Learn more:
-* [Connect Microsoft Entra ID data to Microsoft Sentinel](/azure/sentinel/connect-azure-active-directory)
+* [Connect Microsoft Entra data to Microsoft Sentinel](/azure/sentinel/connect-azure-active-directory)
 * [Access data from your event hub](/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub)
 
 Configure Microsoft Sentinel (or third-party SIEM) rules for threat detection and response by following guidance in [Detect threats out of the box](/azure/sentinel/detect-threats-built-in).
 
 Learn more:
-* Set up Microsoft Entra ID Protection alerts. [How To: Export risk data](/azure/active-directory/identity-protection/howto-export-risk-data) describes how to store data for longer periods by changing diagnostic settings in Azure AD to send RiskyUsers, UserRiskEvents, RiskyServicePrincipals, and ServicePrincipalRiskEvents data to a Log Analytics workspace, archive data to a storage account, stream data to an event hub, or send data to a partner solution.
+* Set up Microsoft Entra ID Protection alerts. [How To: Export risk data](/azure/active-directory/identity-protection/howto-export-risk-data) describes how to store data for longer periods by changing diagnostic settings in Microsoft Entra ID to send RiskyUsers, UserRiskEvents, RiskyServicePrincipals, and ServicePrincipalRiskEvents data to a Log Analytics workspace, archive data to a storage account, stream data to an event hub, or send data to a partner solution.
 
 ### Integrate a SIEM with Microsoft Defender for Cloud Apps
 
@@ -107,9 +107,9 @@ The Microsoft Entra ID Protection feature has the following triggers:
 * **Anomalous token (offline detection)** - atypical token characteristics detected, or a token used from an unfamiliar location. The algorithms detecting this behavior use data from Microsoft Entra ID with Microsoft 365 properties. This detection indicates if the attacker is replaying the token.
 * **Unfamiliar sign-in properties** - sign-in is anomalous when compared to sign-in history. This event occurs when user sign-in properties are unfamiliar.
 * **Unfamiliar sign-in** – a non-interactive sign-in occurs. Increase scrutiny on unfamiliar sign-ins, particularly if detected with suspicious devices. We recommend you give immediate attention to detection for non-interactive sign-ins.
-* **Attempted access of Primary Refresh Token (PRT)** - in Windows 10 and 11, Microsoft Defender for Endpoint detects suspicious access to PRT and associated artifacts. Detections feed into the Microsoft Entra ID risk score, which controls resource conditional access. This detection is low-volume and infrequent.
+* **Attempted access of Primary Refresh Token (PRT)** - in Windows 10 and 11, Microsoft Defender for Endpoint detects suspicious access to PRT and associated artifacts. Detections feed into the Microsoft Entra risk score, which controls resource conditional access. This detection is low-volume and infrequent.
 * **Microsoft 365 Defender detections** – integrate Microsoft Entra ID Protection and Microsoft 365 Defender to see detections in one portal.
-  * By default, the most relevant alerts for the security operation center (SOC) are enabled. For all Microsoft Entra ID IP risk detections, or to turn off the integration, make the change in Microsoft 365 Defender [Alert service setting](https://security.microsoft.com/settings/mtp_settings/service_alert_settings).
+  * By default, the most relevant alerts for the security operation center (SOC) are enabled. For all Microsoft Entra IP risk detections, or to turn off the integration, make the change in Microsoft 365 Defender [Alert service setting](https://security.microsoft.com/settings/mtp_settings/service_alert_settings).
 
    ![Screenshot of the Show high impact alerts only option.](./media/token-theft-playbook/alert-service-settings.png)
 
@@ -130,7 +130,7 @@ The Microsoft Entra ID Protection feature has the following triggers:
 For this investigation, it's assumed you have an indication of potential token-theft compromise in:
 
 * A user report
-* Microsoft Entra ID sign-in logs example
+* Microsoft Entra sign-in logs example
 * Microsoft Entra ID Protection detection
 
 ### Investigation checklist
@@ -182,7 +182,7 @@ If there's indication of phishing or other malicious email, [Investigate malicio
 
 The following queries refer to tables in Sentinel. Look for signs of persistence: multifactor authentication enrollment, device enrollment, mailbox forwarding rules, or inbox rules.
 
-Learn about rules in the [Microsoft Entra ID security operations guide](/azure/active-directory/fundamentals/security-operations-introduction).
+Learn about rules in the [Microsoft Entra security operations guide](/azure/active-directory/fundamentals/security-operations-introduction).
 
 ```kusto
 AADUserRiskEvents
@@ -246,7 +246,7 @@ SigninLogs
 ```
 
 > [!NOTE]
-> Not all Microsoft Entra ID activity-generating alerts have a corresponding entry in SigninLogs, as seen with anomalous token detection. We recommended you see other tables, such as **OfficeActivity** and **AuditLogs**.
+> Not all Microsoft Entra activity-generating alerts have a corresponding entry in SigninLogs, as seen with anomalous token detection. We recommended you see other tables, such as **OfficeActivity** and **AuditLogs**.
 
 ```kusto
 OfficeActivity
@@ -334,8 +334,8 @@ Sometimes, it's more important to collect attacker details than to respond immed
     > [!TIP]
     > Attackers can use legitimate virtual private networks (VPNs), which can create more risk as they change IP addresses. If you use Cloud Authentication, block the IP address in Defender for Cloud Apps, or Microsoft Entra ID. If federated, block the IP address at the firewall level in front of the Active Directory Federation Services (ADFS).
 
-5. Enable MFA. [Enable Microsoft Entra ID Multi-Factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa) describes how to prompt users for additional forms of identification during a sign-in event.
-6. Enable Microsoft Entra ID Protection for user and sign-in risk. [Risk policies: Microsoft Entra ID Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) describes risk policies in Azure Active Directory (Azure AD) Conditional Access that can automate the response to risks and allow users to self-remediate detected risks.
+5. Enable MFA. [Enable Microsoft Entra multifactor authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa) describes how to prompt users for additional forms of identification during a sign-in event.
+6. Enable Microsoft Entra ID Protection for user and sign-in risk. [Risk policies: Microsoft Entra ID Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies) describes risk policies in Microsoft Entra Conditional Access that can automate the response to risks and allow users to self-remediate detected risks.
 7. Determine compromised data: emails, SharePoint, OneDrive, apps. The Microsoft Defender for Cloud Apps [Activities](/cloud-app-security/activity-filters) filter can scan activities and update new activities.
 8. Maintain password hygiene. The [Password Guidance](https://www.microsoft.com/research/publication/password-guidance/) whitepaper provides recommendations for password management for end users and identity administrators.
 9. Iterate until you discover the affected accounts and devices, and the attack is stopped.
@@ -359,7 +359,7 @@ After you complete the investigation and containment, remediate the damage:
 ### Delete added credentials and devices
 
 Before you re-enable affected accounts, use the following guidance.
-Delete credentials added with Microsoft Entra ID authentication methods Graph API.
+Delete credentials added with Microsoft Entra authentication methods Graph API.
 
 To delete a user email authentication method, run the following Graph call:
 
@@ -374,7 +374,7 @@ DELETE /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMeth
 ```
 
 Learn more:
-* [Microsoft Entra ID authentication methods API overview](/graph/api/resources/authenticationmethods-overview)
+* [Microsoft Entra authentication methods API overview](/graph/api/resources/authenticationmethods-overview)
 
 Delete devices enrolled by the identified user account(s). Use the following Graph API calls:
 
@@ -417,7 +417,7 @@ The following articles provide more information about securing identities.
 * [Securing privileged access for hybrid and cloud deployments in Microsoft Entra ID](/azure/active-directory/roles/security-planning)
 * [Add or update a user's profile information and settings](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 * [Overview: Remove a former employee and secure data](/microsoft-365/admin/add-users/remove-former-employee)
-* [Microsoft Entra ID security operations guide](/azure/active-directory/fundamentals/security-operations-introduction)
+* [Microsoft Entra security operations guide](/azure/active-directory/fundamentals/security-operations-introduction)
 
 ## Token theft root cause
 

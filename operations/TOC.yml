@@ -66,7 +66,7 @@
     - name: Microsoft Defender for Office 365 security operations guide
       href: /microsoft-365/security/office-365-security/mdo-sec-ops-guide?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json        
 
-    - name: Azure Active Directory security operations guide
+    - name: Microsoft Entra security operations guide
       items:
         - name: Security operations overview
           href: /azure/active-directory/fundamentals/security-operations-introduction?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json

@@ -30,7 +30,7 @@ Embedding security into your workflow helps you to:
 Microsoft's unified solution, illustrated in the following diagram, bridges across DevOps and SecOps teams to help you accelerate and secure code-to-cloud development.
 
 :::image type="complex" source="../media/develop/embed-zero-trust-dev-workflow/diagram-code-to-cloud-dev-solution-inline.png" alt-text="Diagram shows the technologies that comprise the unified code-to-cloud development solution." lightbox="../media/develop/embed-zero-trust-dev-workflow/diagram-code-to-cloud-dev-solution-expanded.png":::
-   Diagram title: Microsoft provides a unified solution. Diagram subtitle: to help you accelerate and secure code-to-cloud development. Listed technologies: Visual Studio Code, GitHub Codespaces, Visual Studio, Microsoft DevBox, GitHub Advanced Security, Azure Pipelines, GitHub Actions, Azure AD, Azure.
+   Diagram title: Microsoft provides a unified solution. Diagram subtitle: to help you accelerate and secure code-to-cloud development. Listed technologies: Visual Studio Code, GitHub Codespaces, Visual Studio, Microsoft DevBox, GitHub Advanced Security, Azure Pipelines, GitHub Actions, Microsoft Entra ID, Azure.
 :::image-end:::
 
 Our solution to safeguard DevOps relies on two main components: providing developers with tooling to power innovation and securing the developer workflow as developers create code. Watch the [Accelerate and secure your code to cloud development](https://mybuild.microsoft.com/sessions/84ff7d8d-64da-4a5e-9c84-92f7b6387225) session from [Microsoft Build 2022](https://mybuild.microsoft.com/) to learn how these components can secure your development environment.
@@ -42,7 +42,7 @@ Implement the following best practices that work together in Azure and GitHub to
 - Simplify new developer onboarding and third-party collaboration with an entire development lifecycle tool in the cloud using [GitHub Codespaces](https://docs.github.com/codespaces) and [Microsoft Dev Box](/azure/dev-box/).
 - Include built-in intellectual property protection for code that you no longer disperse into multiple locations. Help your teams collaborate, develop, automate, and deploy code wherever they want with [GitHub Actions](https://docs.github.com/actions) and [Azure Pipelines](/azure/devops/pipelines/security/overview).
 - Get security guidance and continuous security feedback within the developer workflow with code scanning, secret scanning, and dependency review using [GitHub Advanced Security](https://docs.github.com/get-started/learning-about-github/about-github-advanced-security).
-- Instill zero-trust security throughout your organization using [identity management services](/azure/active-directory/develop/workload-identity-federation) in Azure Active Directory (Azure AD).
+- Instill zero-trust security throughout your organization using [identity management services](/azure/active-directory/develop/workload-identity-federation) in Microsoft Entra ID.
 
 ## Fit Zero Trust security into your development lifecycle
 
@@ -124,20 +124,22 @@ Get visibility into the activity of your [workload identities](/azure/active-dir
 
 To mitigate the potential for leaked secrets and credentials, periodically conduct access reviews. Require users to review their workload identities and remove unnecessary access privileges. Have users report overprivileged and underutilized access privileges. Discuss how you'll protect workload identities from breach. Enable conditional access to ensure that access is originating from expected resources.
 
-## Secure identities with GitHub OIDC and Azure AD Workload Identity Federation
+<a name='secure-identities-with-github-oidc-and-azure-ad-workload-identity-federation'></a>
 
-To further secure your organization, use [GitHub OpenID Connect](https://docs.github.com/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect) (OIDC) with Azure AD [Workload Identity Federation](/azure/active-directory/develop/workload-identity-federation) and minimize the need to store and access secrets. Securely manage Azure server principal secrets and other long-lived cloud credentials resources to minimize service downtime due to expired credentials. Integrate with developer platforms, like GitHub Actions, to securely build your apps.
+## Secure identities with GitHub OIDC and Microsoft Entra Workload ID Federation
+
+To further secure your organization, use [GitHub OpenID Connect](https://docs.github.com/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect) (OIDC) with Microsoft Entra [Workload Identity Federation](/azure/active-directory/develop/workload-identity-federation) and minimize the need to store and access secrets. Securely manage Azure server principal secrets and other long-lived cloud credentials resources to minimize service downtime due to expired credentials. Integrate with developer platforms, like GitHub Actions, to securely build your apps.
 
 Our recommended Workload Identity Federation workflow, illustrated in the following diagram, comprises six steps.
 
 :::image type="content" source="../media/develop/embed-zero-trust-dev-workflow/diagram-workload-identity-federation-inline.png" alt-text="Diagram illustrates the six Workload Identity Federation workflow steps that are described below." lightbox="../media/develop/embed-zero-trust-dev-workflow/diagram-workload-identity-federation-expanded.png":::
 
-1. Set up trust in Azure AD and request a token.
+1. Set up trust in Microsoft Entra ID and request a token.
 1. Configure the GitHub workflow to allow actions to get the token.
 1. GitHub workflow sends a request to Azure ID.
-1. Azure AD validates the trust on the application and fetches the keys to validate the token.
-1. Azure AD accesses and issues the token.
-1. The deploy action uses the Azure AD access token to deploy to resources in Azure.
+1. Microsoft Entra ID validates the trust on the application and fetches the keys to validate the token.
+1. Microsoft Entra ID accesses and issues the token.
+1. The deploy action uses the Microsoft Entra access token to deploy to resources in Azure.
 
 Watch April Edwards, Senior Cloud Advocate and DevOps Practice Lead, demo the Workload Identity Federation workflow. The demonstration begins at the 19:14 mark in the [Accelerate and secure your code to cloud development](https://mybuild.microsoft.com/en-US/sessions/84ff7d8d-64da-4a5e-9c84-92f7b6387225?source=sessions) Microsoft Build 2022 session that is [also available on YouTube](https://www.youtube.com/watch?v=1fMdA3pSBaY&t=1154s) (embedded below).
 
@@ -147,9 +149,9 @@ Watch April Edwards, Senior Cloud Advocate and DevOps Practice Lead, demo the Wo
 
 - Sign up for [Azure Developer CLI](/azure/developer/azure-developer-cli/overview), an open-source tool that accelerates the time it takes to get started on Azure.
 - Configure Azure to trust GitHub's OIDC as a federated identity. OpenID Connect (OIDC) allows your GitHub Actions workflows to [access resources in Azure](https://docs.github.com/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure) without needing to store the Azure credentials as long-lived GitHub secrets.
-- Implement Zero Trust principles as described in memorandum 22-09 (in support of US executive order 14028, Improving the Nation's Cyber Security) by using Azure Active Directory (Azure AD) as a [centralized identity management system](/azure/active-directory/standards/memo-22-09-meet-identity-requirements).
+- Implement Zero Trust principles as described in memorandum 22-09 (in support of US executive order 14028, Improving the Nation's Cyber Security) by using Microsoft Entra ID as a [centralized identity management system](/azure/active-directory/standards/memo-22-09-meet-identity-requirements).
 - [Accelerate and secure your code with Azure DevOps](/events/resources/build-2022/accelerate-secure-devops) with tools that give developers the fastest and most secure code to cloud experience.
 - [Securing the developer environment](secure-dev-environment-zero-trust.md) helps you to implement Zero Trust principles in your development environments with best practices for least privilege, branch security, and trusting tools, extensions, and integrations.
 - [Securing DevOps environments for Zero Trust](secure-devops-environments-zero-trust.md) describes best practices for securing your DevOps environments for preventing hackers from compromising developer boxes, infecting release pipelines with malicious scripts, and gaining access to production data via test environments.
-- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.

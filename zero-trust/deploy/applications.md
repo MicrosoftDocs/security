@@ -144,7 +144,7 @@ Follow these steps:
 
     1. App tags can be managed under Cloud Discovery settings App tags. These tags can then be used later for filtering in the Cloud Discovery pages and creating policies using them.
 
-    1. Manage discovered apps using [Azure Active Directory (Azure AD) Gallery](/azure/active-directory/manage-apps/add-gallery-app). For apps that already appear in the Azure AD Gallery, apply single sign-on and manage the app with Azure AD. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Azure AD**.
+    1. Manage discovered apps using [Microsoft Entra Gallery](/azure/active-directory/manage-apps/add-gallery-app). For apps that already appear in the Microsoft Entra Gallery, apply single sign-on and manage the app with Microsoft Entra ID. To do so, on the row where the relevant app appears, choose the three dots at the end of the row, and then choose **Manage app with Microsoft Entra ID**.
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for your network](https://aka.ms/ZTNetwork).
@@ -221,7 +221,7 @@ Follow these steps:
 
 **Microsoft Azure**
 
-[Microsoft Azure Active Directory](https://azure.microsoft.com/services/active-directory/)
+[Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/)
 
 **Microsoft 365**
 

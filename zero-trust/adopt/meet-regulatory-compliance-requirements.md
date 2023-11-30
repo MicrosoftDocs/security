@@ -93,7 +93,7 @@ The following table describes how the different governance levels on the left si
 | Legislation and laws, considered collectively | Passing legal audits can avoid fines and penalties and builds consumer trust and brand loyalty. |
 | Standards provide a reliable basis for people to share the same expectations about a product or service | Standards provide quality assurance through various industry quality controls. Some certifications have cyber insurance benefits as well. |
 | Policies and procedures document an organization’s day-to-day functions and operations | Many manual processes related to governance can be streamlined and automated. |
-| Work instructions describe how to perform a process based on the defined policies and procedures in detailed steps | The intricate details of manuals and instruction documents can be streamlined by technology. This can greatly reduce human error and save time. <br><br> An example is using Azure Active Directory (Azure AD) Conditional Access policies as part of the employee onboarding process. |
+| Work instructions describe how to perform a process based on the defined policies and procedures in detailed steps | The intricate details of manuals and instruction documents can be streamlined by technology. This can greatly reduce human error and save time. <br><br> An example is using Microsoft Entra Conditional Access policies as part of the employee onboarding process. |
 
 The governance pyramid model helps focus priorities:
 
@@ -198,12 +198,12 @@ This table lists common regulations or standards.
 
 | Regulation or standard| Resources |
 | --- | --- |
-| National Institute of Standards and Technology (NIST)| [Configure Azure AD to meet NIST authenticator assurance levels](/azure/active-directory/standards/nist-overview) |
-| Federal Risk and Authorization Management Program (FedRAMP)| [Configure Azure AD to meet FedRAMP High Impact level](/azure/active-directory/standards/configure-for-fedramp-high-impact) |
-| Cybersecurity Maturity Model Certification (CMMC)| [Configure Azure AD for CMMC compliance](/azure/active-directory/standards/configure-for-cmmc-compliance) |
-| Executive Order on Improving the Nation’s Cybersecurity (EO 14028)| [Meet identity requirements of memorandum 22-09 with Azure AD](/azure/active-directory/standards/memo-22-09-meet-identity-requirements) |
-| Health Insurance Portability and Accountability Act of 1996 (HIPAA)| [Configuring Azure AD for HIPAA compliance](/azure/active-directory/standards/hipaa-configure-for-compliance) |
-| Payment Card Industry Security Standards Council (PCI SSC)| [Azure AD PCI-DSS guidance](/azure/active-directory/standards/pci-dss-guidance) |
+| National Institute of Standards and Technology (NIST)| [Configure Microsoft Entra ID to meet NIST authenticator assurance levels](/azure/active-directory/standards/nist-overview) |
+| Federal Risk and Authorization Management Program (FedRAMP)| [Configure Microsoft Entra ID to meet FedRAMP High Impact level](/azure/active-directory/standards/configure-for-fedramp-high-impact) |
+| Cybersecurity Maturity Model Certification (CMMC)| [Configure Microsoft Entra ID for CMMC compliance](/azure/active-directory/standards/configure-for-cmmc-compliance) |
+| Executive Order on Improving the Nation’s Cybersecurity (EO 14028)| [Meet identity requirements of memorandum 22-09 with Microsoft Entra ID](/azure/active-directory/standards/memo-22-09-meet-identity-requirements) |
+| Health Insurance Portability and Accountability Act of 1996 (HIPAA)| [Configuring Microsoft Entra ID for HIPAA compliance](/azure/active-directory/standards/hipaa-configure-for-compliance) |
+| Payment Card Industry Security Standards Council (PCI SSC)| [Microsoft Entra PCI-DSS guidance](/azure/active-directory/standards/pci-dss-guidance) |
 | Financial services regulations| [Key compliance and security considerations for US banking and capital markets](/microsoft-365/solutions/financial-services-secure-collaboration) <ul><li> U.S. Securities and Exchange Commission (SEC) </li><li> Financial Industry Regulatory Authority (FINRA) </li><li> Federal Financial Institutions Examination Council (FFIEC) </li><li> Commodity Futures Trading Commission (CFTC) </li></ul> |
 | North America Electric Reliability Corporation (NERC)| [Key Compliance and Security Considerations for the Energy Industry](/microsoft-365/solutions/energy-secure-collaboration) |
 

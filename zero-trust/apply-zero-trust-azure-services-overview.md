@@ -29,6 +29,7 @@ These articles show you how to apply Zero Trust approach to these new or already
   - [Azure storage](azure-infrastructure-storage.md)
   - [Virtual machines](azure-infrastructure-virtual-machines.md)
   - [Spoke virtual networks](azure-infrastructure-iaas.md)
+  - [Spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
   - [Hub virtual networks](azure-infrastructure-networking.md)
 - [Azure Virtual Desktop](azure-infrastructure-avd.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)

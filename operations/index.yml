@@ -50,9 +50,5 @@ landingContent:
           url: /microsoft-365/security/defender/integrate-microsoft-365-defender-secops
         - text: Microsoft Defender for Office 365 security operations guide
           url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
-        - text: Azure Active Directory security operations guide
+        - text: Microsoft Entra security operations guide
           url: /azure/active-directory/fundamentals/security-operations-introduction
-
-
-
-

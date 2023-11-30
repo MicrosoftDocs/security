@@ -34,7 +34,7 @@ It is critical to work together as an organization, create partnerships, and edu
 
 ### Emergency access accounts
 
-- **What**: Ensure that you are not accidentally locked out of your Azure Active Directory (Azure AD) organization in an emergency situation. 
+- **What**: Ensure that you are not accidentally locked out of your Microsoft Entra organization in an emergency situation. 
 - **Why**: Emergency access accounts rarely used and highly damaging to the organization if compromised, but their availability to the organization is also critically important for the few scenarios when they are required. Ensure you have a plan for continuity of access that accommodates both expected and unexpected events. 
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
@@ -42,14 +42,16 @@ It is critical to work together as an organization, create partnerships, and edu
      - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards
      - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-- **How**: Follow the guidance in [Manage emergency access accounts in Azure AD](/azure/active-directory/roles/security-emergency-access).
+- **How**: Follow the guidance in [Manage emergency access accounts in Microsoft Entra ID](/azure/active-directory/roles/security-emergency-access).
 - **Measure key results:**
    - **Established** Emergency access process has been designed based on Microsoft guidance that meets organizational needs
    - **Maintained** Emergency access has been reviewed and tested within the past 90 days
 
-### Enable Azure AD Privileged Identity Management
+<a name='enable-azure-ad-privileged-identity-management'></a>
 
-- **What**: Use Azure AD Privileged Identity Management (PIM) in your Azure AD production environment to discover and secure privileged accounts
+### Enable Microsoft Entra Privileged Identity Management
+
+- **What**: Use Microsoft Entra Privileged Identity Management (PIM) in your Microsoft Entra production environment to discover and secure privileged accounts
 - **Why**: Privileged Identity Management provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions.
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
@@ -57,10 +59,12 @@ It is critical to work together as an organization, create partnerships, and edu
      - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
      - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-- **How**: Deploy and Configure Azure AD Privileged Identity Management using the guidance in the article, [Deploy Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-deployment-plan).
-- **Measure key results**: 100% of applicable privileged access roles are using Azure AD PIM
+- **How**: Deploy and Configure Microsoft Entra Privileged Identity Management using the guidance in the article, [Deploy Microsoft Entra Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-deployment-plan).
+- **Measure key results**: 100% of applicable privileged access roles are using Microsoft Entra PIM
 
-### Identify and categorize privileged accounts (Azure AD)
+<a name='identify-and-categorize-privileged-accounts-azure-ad'></a>
+
+### Identify and categorize privileged accounts (Microsoft Entra ID)
 
 - **What**: Identify all roles and groups with high business impact that will require privileged security level (immediately or over time). These administrators will require sparate accounts in a later step [Privileged access administration](critical-impact-accounts.md#separate-accounts-for-admins).
 - **Why**: This step is required to identify and minimize the number of people that require separate accounts and privileged access protection
@@ -70,13 +74,13 @@ It is critical to work together as an organization, create partnerships, and edu
      - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) team document clear requirements and standards (based on this guidance)
      - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-- **How**: After turning on Azure AD Privileged Identity Management, view the users who are in the following Azure AD roles at a minimum based on your organizations risk policies:
+- **How**: After turning on Microsoft Entra Privileged Identity Management, view the users who are in the following Microsoft Entra roles at a minimum based on your organizations risk policies:
   - Global administrator
   - Privileged role administrator
   - Exchange administrator
   - SharePoint administrator
   
-  For a complete list of administrator roles, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/roles/permissions-reference).
+  For a complete list of administrator roles, see [Administrator role permissions in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference).
 
    > Remove any accounts that are no longer needed in those roles. Then, categorize the remaining accounts that are assigned to admin roles:
    >
@@ -87,7 +91,7 @@ It is critical to work together as an organization, create partnerships, and edu
    > - For automated scripts
    > - For external users
 
-If you don't have Azure AD Privileged Identity Management in your organization, you can use the PowerShell API. Also start with the Global Administrator role, because a Global Administrator has the same permissions across all cloud services for which your organization has subscribed. These permissions are granted no matter where they were assigned: in the Microsoft 365 admin center, the Azure portal, or by the Azure AD module for Microsoft PowerShell.
+If you don't have Microsoft Entra Privileged Identity Management in your organization, you can use the PowerShell API. Also start with the Global Administrator role, because a Global Administrator has the same permissions across all cloud services for which your organization has subscribed. These permissions are granted no matter where they were assigned: in the Microsoft 365 admin center, the Azure portal, or by the Azure AD module for Microsoft PowerShell.
 - **Measure key results:** Review and Identification of privileged access roles has been completed within the past 90 days
 
 ### Separate accounts (On-premises AD accounts)
@@ -136,7 +140,7 @@ If you don't have Azure AD Privileged Identity Management in your organization, 
 ### Implement and document self-service password reset and combined security information registration
 
 - **What**: Enable and configure self-service password reset (SSPR) in your organization and enable the combined security information registration experience.
-- **Why**: Users are able to reset their own passwords once they have registered. The combined security information registration experience provides a better user experience allowing registration for Azure AD Multi-Factor Authentication and self-service password reset. These tools when used together contribute to lower helpdesk costs and more satisfied users.
+- **Why**: Users are able to reset their own passwords once they have registered. The combined security information registration experience provides a better user experience allowing registration for Microsoft Entra multifactor authentication and self-service password reset. These tools when used together contribute to lower helpdesk costs and more satisfied users.
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
@@ -144,12 +148,14 @@ If you don't have Azure AD Privileged Identity Management in your organization, 
      - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
      - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
-- **How**: To enable and deploy SSPR, see the article [Plan an Azure Active Directory self-service password reset deployment](/azure/active-directory/authentication/howto-sspr-deployment).
+- **How**: To enable and deploy SSPR, see the article [Plan a Microsoft Entra self-service password reset deployment](/azure/active-directory/authentication/howto-sspr-deployment).
 - **Measure key results**: Self-service password reset is fully configured and available to the organization
 
-### Protect admin accounts - Enable and require MFA / Passwordless for Azure AD privileged users
+<a name='protect-admin-accounts---enable-and-require-mfa--passwordless-for-azure-ad-privileged-users'></a>
 
-- **What**: Require all privileged accounts in Azure AD to use strong multi-factor authentication
+### Protect admin accounts - Enable and require MFA / Passwordless for Microsoft Entra ID privileged users
+
+- **What**: Require all privileged accounts in Microsoft Entra ID to use strong multifactor authentication
 - **Why**: To protect access to data and services in Microsoft 365.
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
@@ -159,7 +165,7 @@ If you don't have Azure AD Privileged Identity Management in your organization, 
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
      - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
      - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
-- **How**: Turn on Azure AD Multi-Factor Authentication (MFA) and register all other highly privileged single-user non-federated admin accounts. Require multi-factor authentication at sign-in for all individual users who are permanently assigned to one or more of the Azure AD admin roles like:
+- **How**: Turn on Microsoft Entra multifactor authentication (MFA) and register all other highly privileged single-user non-federated admin accounts. Require multifactor authentication at sign-in for all individual users who are permanently assigned to one or more of the Microsoft Entra admin roles like:
 
    - Global administrator
    - Privileged Role administrator
@@ -168,15 +174,15 @@ If you don't have Azure AD Privileged Identity Management in your organization, 
 
    Require administrators to use passwordless sign-in methods such as FIDO2 security keys or Windows Hello for Business in conjunction with unique, long, complex passwords. Enforce this change with an organizational policy document.
 
-Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted) and 
-[Plan a passwordless authentication deployment in Azure Active Directory](/azure/active-directory/authentication/howto-authentication-passwordless-deployment).
-- **Measure key results**: 100% of privileged users are using passwordless authentication or a strong form of multi-factor authentication for all logons. See [Privileged Access Accounts](privileged-access-accounts.md) for description of multi-factor authentication
+Follow the guidance in the following articles, [Plan a Microsoft Entra multifactor authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted) and 
+[Plan a passwordless authentication deployment in Microsoft Entra ID](/azure/active-directory/authentication/howto-authentication-passwordless-deployment).
+- **Measure key results**: 100% of privileged users are using passwordless authentication or a strong form of multifactor authentication for all logons. See [Privileged Access Accounts](privileged-access-accounts.md) for description of multifactor authentication
 
 ### Block legacy authentication protocols for privileged user accounts
 
 - **What**: Block legacy authentication protocol use for privileged user accounts.
 
-- **Why**: Organizations should block these legacy authentication protocols because multi-factor authentication cannot be enforced against them. Leaving legacy authentication protocols enabled can create an entry point for attackers. Some legacy applications may rely on these protocols and organizations have the option to create specific exceptions for certain accounts. These exceptions should be tracked and additional monitoring controls implemented.
+- **Why**: Organizations should block these legacy authentication protocols because multifactor authentication cannot be enforced against them. Leaving legacy authentication protocols enabled can create an entry point for attackers. Some legacy applications may rely on these protocols and organizations have the option to create specific exceptions for certain accounts. These exceptions should be tracked and additional monitoring controls implemented.
 
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
@@ -184,14 +190,14 @@ Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Au
      - [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards): establish clear requirements
      - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or Central IT Operations [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement the policy
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
-- **How**: To block legacy authentication protocols in your organization, follow the guidance in the article [How to: Block legacy authentication to Azure AD with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).
+- **How**: To block legacy authentication protocols in your organization, follow the guidance in the article [How to: Block legacy authentication to Microsoft Entra ID with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).
 - **Measure key results**: 
    - **Legacy protocols blocked:** All legacy protocols are blocked for all users, with only authorized exceptions
    - **Exceptions** are reviewed every 90 days and expire permanently within one year. Application owners must fix all exceptions within one year of first exception approval 
 
 ### Application consent process
 
-- **What**: Disable end-user consent to Azure AD applications. 
+- **What**: Disable end-user consent to Microsoft Entra applications. 
 > [!NOTE]
 > This change will require centralizing the decision-making process with your organization's security and identity administration teams.
 - **Why**: Users can inadvertently create organizational risk by providing consent for an app that can maliciously access organizational data. 
@@ -204,11 +210,11 @@ Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Au
      - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
      - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
 - **How**: Establish a centralized consent process to maintain centralized visibility and control of the applications that have access to data by following the guidance in the article, [Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests).
-- **Measure key results**: End users are not able to consent to Azure AD application access
+- **Measure key results**: End users are not able to consent to Microsoft Entra application access
 
 ### Clean up account and sign-in risks
 
-- **What**: Enable Azure AD Identity Protection and cleanup any risks that it finds.
+- **What**: Enable Microsoft Entra ID Protection and cleanup any risks that it finds.
 - **Why**: Risky user and sign-in behavior can be a source of attacks against your organization.
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
@@ -217,7 +223,7 @@ Follow the guidance in the following articles, [Plan an Azure AD Multi-Factor Au
      - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
      - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated for related support calls and personnel has been trained on them
-- **How**: Create a process that monitors and manages user and sign-in risk. Decide if you will automate remediation, using Azure AD Multi-Factor Authentication and SSPR, or block and require administrator intervention.Follow the guidance in the article [How To: Configure and enable risk policies](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
+- **How**: Create a process that monitors and manages user and sign-in risk. Decide if you will automate remediation, using Microsoft Entra multifactor authentication and SSPR, or block and require administrator intervention.Follow the guidance in the article [How To: Configure and enable risk policies](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
 - **Measure key results**: The organization has zero unaddressed user and sign-in risks. 
 > [!NOTE]
 > Conditional Access policies are required to block accrual of new sign-in risks. See the Conditional access section of [Privileged Access Deployment](privileged-access-deployment.md#azure-active-directory-configuration)

@@ -37,6 +37,15 @@ This illustration provides a deployment plan for applying Zero Trust principles 
 |:-----|:-----|
 |[![Illustration of the Microsoft 365 Zero Trust deployment plan.](media/tech-illus/m365-zero-trust-deployment-plan-thumb.png)](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust) <br/><br/>**Related solution guides** <br/> <ul><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Recommended identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li><li>[Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview)</li><li>[Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](/microsoft-365/solutions/data-privacy-protection)</li></ul>|
 
+### Zero Trust for Microsoft Copilot for Microsoft 365
+
+Adopting Microsoft Copilot for Microsoft 365 or Copilot is a great incentive for your organization to invest in Zero Trust. This set of illustrations introduces new logical architecture components for Copilot. It also includes security and deployment recommendations for preparing your environment for Copilot. These recommendations align with Zero Trust recommendations and help you begin this journey, even if your licenses are Microsoft 365 E3!  
+
+| Item | Description |
+|:-----|:-----|
+|[![Copilot architecture poster thumb](media/tech-illus/microsoft-365-copilot-architecture-thumb.png)](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf) <br/> [PDF](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf) \| [Visio](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.vsdx)  <br>Updated November 2023 | Copilot combines the power of large language models (LLMs) with your data in the Microsoft Graph — your calendar, emails, chats, documents, meetings, and more — and the Microsoft 365 apps to provide a powerful productivity tool. <br/><br/> This series of illustrations provides a view into new logical architecture components. It includes recommendations for preparing your environment for Copilot with security and information protection while assigning licenses. |
+
+
 <!---
 ### Zero Trust for Microsoft Azure
 

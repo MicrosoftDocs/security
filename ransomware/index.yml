@@ -39,48 +39,28 @@ landingContent:
         - text: What are common types of malware that are used in ransomware campaigns?
           url:  human-operated-ransomware.md
 
-# Card
-  - title: Protect against ransomware and extortion
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-        - text: Overview
-          url: protect-against-ransomware.md
-        - text: Prepare your recovery plan
-          url: protect-against-ransomware-phase1.md
-        - text: Limit the scope of damage
-          url: protect-against-ransomware-phase2.md
-        - text: Make it hard to get in
-          url: protect-against-ransomware-phase3.md
-
-
-# Card
-  - title: Defense against ransomware
-    linkLists:
-       - linkListType: reference
-         links:
-         - text: In Microsoft 365
-           url:  /compliance/assurance/assurance-malware-and-ransomware-protection
-         - text: In Azure
-           url:  /azure/security/fundamentals/ransomware-protection
-         - text: In OneNote
-           url:  dart-ransomware-case-study.md
-         - text: In Sentinel
-           url:  /azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
-         - text: In SharePoint
-           url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
-         - text: Azure Defenses for Ransomware Attack ebook
-           url:  https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/
-
-# Card
-  - title: Threat intelligence for Microsoft 365 Defender subscription holders
+  # Card 
+  - title: Prevalent ransomware trends
     linkLists:
       - linkListType: reference
         links:
-        - text: Threat analytics reports
-          url:  /microsoft-365/security/defender/threat-analytics
-        - text: Microsoft Defender Threat Intelligence 
-          url:  /microsoft-365/security/defender/defender-threat-intelligence
+        - text: Recent Microsoft social media posts about ransomware
+          url:  https://twitter.com/MsftSecIntel/status/1720489111717310697
+        - text: Recent Microsoft Security ransomware blog
+          url:  https://www.microsoft.com/security/blog/2023/10/25/octo-tempest-crosses-boundaries-to-facilitate-extortion-encryption-and-destruction/
+        - text: Hands-on-keyboard (HOK) and pre-HOK attacks
+          url:  https://www.microsoft.com/security/blog/2021/11/15/ai-driven-adaptive-protection-against-human-operated-ransomware/
+        - text: Tampering
+          url:  https://www.microsoft.com/security/blog/2023/09/26/new-security-features-in-windows-11-protect-users-and-empower-it/
+        - text: Remote encryption 
+          url:  https://learn.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders?view=o365-worldwide
+        - text: Automatic disruption
+          url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/
+        - text: Threat actor highlight - BlackCat
+          url:  https://www.microsoft.com/security/blog/2022/06/13/the-many-lives-of-blackcat-ransomware/
+        - text: Insights on ransomware and extortion - Microsoft Digital Defense Report 2023
+          url:  https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023
+
 
 # Card
   - title: Blogs
@@ -103,6 +83,47 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/2022/10/27/raspberry-robin-worm-part-of-larger-ecosystem-facilitating-pre-ransomware-activity/
         - text: DEV-0832 (Vice Society) opportunistic ransomware campaigns impacting US education sector
           url:  https://www.microsoft.com/security/blog/2022/10/25/dev-0832-vice-society-opportunistic-ransomware-campaigns-impacting-us-education-sector/
+
+# Card
+  - title: Protect against ransomware and extortion
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+        - text: Overview
+          url: protect-against-ransomware.md
+        - text: Prepare your recovery plan
+          url: protect-against-ransomware-phase1.md
+        - text: Limit the scope of damage
+          url: protect-against-ransomware-phase2.md
+        - text: Make it hard to get in
+          url: protect-against-ransomware-phase3.md
+
+# Card
+  - title: Defense against ransomware
+    linkLists:
+       - linkListType: reference
+         links:
+         - text: In Microsoft 365
+           url:  /compliance/assurance/assurance-malware-and-ransomware-protection
+         - text: In Azure
+           url:  /azure/security/fundamentals/ransomware-protection
+         - text: In OneNote
+           url:  dart-ransomware-case-study.md
+         - text: In Sentinel
+           url:  /azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
+         - text: In SharePoint
+           url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
+
+# Card
+  - title: Threat intelligence for Microsoft 365 Defender subscription holders
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: Threat analytics reports
+          url:  /microsoft-365/security/defender/threat-analytics
+        - text: Microsoft Defender Threat Intelligence 
+          url:  /microsoft-365/security/defender/defender-threat-intelligence
+
 # Card
   - title: Ransomware incident response playbooks
     linkLists:
@@ -116,3 +137,5 @@ landingContent:
           url:  /security/operations/incident-response-playbook-dart-ransomware-approach
         - text: Ransomware Incident Response playbook template
           url:  //download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
+        - text: Azure Defenses for Ransowmare Attack ebook
+          url:  https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/

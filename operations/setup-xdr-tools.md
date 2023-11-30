@@ -7,7 +7,7 @@ ms.author: macapara
 manager: dansimp
 ms.date: 3/29/2023
 ms.topic: article
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.localization_priority: Normal
 ms.collection: 
   - zerotrust-solution
@@ -77,22 +77,24 @@ The unified portal includes:
 Watch this short video to learn about the Microsoft 365 Defender portal.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
-## Enable Azure AD Identity Protection
+<a name='enable-azure-ad-identity-protection'></a>
 
-Microsoft 365 Defender also ingests and includes the signals of Azure AD Identity Protection, as illustrated below. 
+## Enable Microsoft Entra ID Protection
+
+Microsoft 365 Defender also ingests and includes the signals of Microsoft Entra ID Protection, as illustrated below. 
 
 
-![Image of enabling Azure AD Identity Protection](./media/m365-azure.png)
+![Image of enabling Microsoft Entra ID Protection](./media/m365-azure.png)
 
-Azure AD Identity Protection is licensed separately from Microsoft 365 Defender. It is included with Azure Active Directory Premium P2. 
+Microsoft Entra ID Protection is licensed separately from Microsoft 365 Defender. It is included with Microsoft Entra ID P2. 
 
-Azure AD Identity Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Azure AD to allow or prevent account access, depending on how Conditional Access policies are configured.  
+Microsoft Entra ID Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Microsoft Entra ID to allow or prevent account access, depending on how Conditional Access policies are configured.  
 
-For this solution and target scenario, we'll also ingest the signals from Azure AD Identity Protection into Sentinel. To enable Azure AD Identity Protection, use the following resources. 
+For this solution and target scenario, we'll also ingest the signals from Microsoft Entra ID Protection into Sentinel. To enable Microsoft Entra ID Protection, use the following resources. 
 
 |       Task  |     Description  |     See . . .  |
 |:---|:---|:---|
-| Integrate Azure AD Identity Protection with Defender for Cloud Apps  | Microsoft Defender for Cloud Apps integrates with Azure Active Directory Identity Protection to provide user entity behavioral analytics (UEBA) across a hybrid environment. | [Azure Active Directory Identity Protection](/defender-cloud-apps/aadip-integration) 
+| Integrate Microsoft Entra ID Protection with Defender for Cloud Apps  | Microsoft Defender for Cloud Apps integrates with Microsoft Entra ID Protection to provide user entity behavioral analytics (UEBA) across a hybrid environment. | [Microsoft Entra ID Protection](/defender-cloud-apps/aadip-integration) 
 
 
 ## Enable Microsoft Defender for Cloud
@@ -133,5 +135,3 @@ Continue to [Step 2](siem-workspace.md) to architect a Sentinel workspace.
 
 
 [![Image of Microsoft Sentinel and XDR solution steps with step 2 highlighted](./media/siem-xdr-solution-2.png)](siem-workspace.md)
-
-

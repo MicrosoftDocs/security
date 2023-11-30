@@ -94,7 +94,7 @@ Zero Trust requires taking an integrated approach across these areas and teams, 
 
 When applying Zero Trust strategy across a digital estate, it’s less helpful to think about tackling each of these domain areas independently. It’s not as if the identity team can accomplish all the recommendations and then the Zero Trust focus can move to the team that manages endpoints. Zero Trust strategy applies these functional areas together to secure an area within a digital estate and then broaden the scope of the protection across it. 
 
-For example, the identity team can only make so much progress in utilizing Azure Active Directory (Azure AD) Conditional Access policies before coordinating with the endpoints team to weave together protection.
+For example, the identity team can only make so much progress in utilizing Microsoft Entra Conditional Access policies before coordinating with the endpoints team to weave together protection.
 
 The following diagram integrates these functional areas into a unified Zero Trust architecture.
 

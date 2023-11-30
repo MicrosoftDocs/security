@@ -53,7 +53,7 @@ This article walks through the steps to apply the principles of Zero Trust acros
 | 7 | Set up secure maintenance of virtual machines (not shown on the logical architecture figure). | Assume breach |
 | 8 | Enable advanced threat detection and protection (not shown on the logical architecture figure). | Assume breach |
 
-## Step 1. Configure logical isolation for virtual machines
+## Step 1: Configure logical isolation for virtual machines
 
 Begin by isolating virtual machines within a dedicated resource group. You can isolate virtual machines into different resource groups based on purpose, data classification, and governance requirements, such as the need to control permissions and monitoring.
 
@@ -65,7 +65,7 @@ You assign a virtual machine to a resource group when you first create the virtu
 
 :::image type="content" source="media/vm/vm-create-vm-1.png" alt-text="Screenshot of assigning a virtual machine to a resource group." lightbox="media/vm/vm-create-vm-1.png":::
 
-## Step 2. Leverage Role Based Access Control (RBAC)
+## Step 2: Leverage Role Based Access Control (RBAC)
 
 Zero Trust requires configuring least privileged access. To do so, you need to limit user access with just-in-time and just-enough access (JIT/JEA) based on their role, workload, and data classification.
 
@@ -79,14 +79,14 @@ To join a virtual machine to a VNet, you can use the custom permission **Microso
 
 When this custom role is used in conjunction with Managed Identity and Conditional Access Policy, you can use device state, data classification, anomalies, location, and identity to force multi-factor authentication and granularly allow access based on verified trust.
 
-To extend your realm of control beyond the system and allow your Azure Active Directory (Azure AD) tenant with Microsoft Intelligent Security Graph to support secure access, go to the **Management** blade of the virtual machine and turn on **System Assigned Managed Identity**, as shown here.
+To extend your realm of control beyond the system and allow your Microsoft Entra tenant with Microsoft Intelligent Security Graph to support secure access, go to the **Management** blade of the virtual machine and turn on **System Assigned Managed Identity**, as shown here.
 
 :::image type="content" source="media/vm/vm-create-vm-step2.png" alt-text="Screenshot of enabling system assigned managed identity." lightbox="media/vm/vm-create-vm-step2.png":::
 
 > [!NOTE]
 > This feature is only available for Azure Virtual Desktop, Windows Server 2019, Windows 10, and Linux Distros using certificate-based access.
 
-## Step 3. Secure virtual machine boot components
+## Step 3: Secure virtual machine boot components
 
 Follow  the steps given below:
 
@@ -100,7 +100,7 @@ Enhanced deployment of virtual machines allows you to select security type and u
 
 :::image type="content" source="media/vm/vm-create-vm-step3.png" alt-text="Screenshot of specifying security features for a virtual machine." lightbox="media/vm/vm-create-vm-step3.png":::
 
-## Step 4. Enable customer-managed keys and double encryption
+## Step 4: Enable customer-managed keys and double encryption
 
 Using customer-managed keys and double encryption ensures that if a disk is exported, it is not readable or able to function. By ensuring that the keys are privately held and disks are double encrypted, you protect against breaches that attempt to extract disk information.
 
@@ -124,7 +124,7 @@ You select the encryption type on the **Disks** blade for the virtual machine co
 
 :::image type="content" source="media/vm/vm-create-vm-step4.png" alt-text="Screenshot for selecting the encryption type for a virtual machine." lightbox="media/vm/vm-create-vm-step4.png":::
 
-## Step 5. Control the applications installed on virtual machines
+## Step 5: Control the applications installed on virtual machines
 
 It's important to control the applications that are installed on your virtual machines:
 
@@ -137,7 +137,7 @@ You select the virtual machine applications on the **Advanced** blade for the vi
 
 :::image type="content" source="media/vm/vm-create-vm-step5.png" alt-text="Screenshot for configuring applications of a virtual machine." lightbox="media/vm/vm-create-vm-step5.png":::
 
-## Step 6. Configure secure access
+## Step 6: Configure secure access
 
 To configure secure access:
 
@@ -149,7 +149,7 @@ To configure secure access:
 
 In the diagram:
 
-- Multi-factor authentication with conditional access is set up within Azure AD and related portals.
+- Multi-factor authentication with conditional access is set up within Microsoft Entra ID and related portals.
 - Admins use privileged access workstations (PAWs) to access virtual machines directly.
 
 ### Configure secure communication within the Azure environment for virtual machines
@@ -164,15 +164,15 @@ The following diagram shows the components of secure communications for virtual 
 
 ### Set up multi-factor authentication with conditional access
 
-In [Step 2. Leverage Role Based Access Control](#step-2-leverage-role-based-access-control-rbac), you configured Azure AD integration and managed identity. This allows you to set up [Azure multi-factor authentication for Azure Virtual Desktop](/azure/virtual-desktop/set-up-mfa) or for servers running [Windows Server 2019 or newer](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows). You can also [Log in to a Linux VM with Azure Active Directory credentials](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux). The added benefit of this is the machine that connects to the virtual machine must also be registered to your Azure AD tenant to be allowed to connect.
+In [Step 2. Leverage Role Based Access Control](#step-2-leverage-role-based-access-control-rbac), you configured Microsoft Entra integration and managed identity. This allows you to set up [Azure multi-factor authentication for Azure Virtual Desktop](/azure/virtual-desktop/set-up-mfa) or for servers running [Windows Server 2019 or newer](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows). You can also [Log in to a Linux VM with Microsoft Entra credentials](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux). The added benefit of this is the machine that connects to the virtual machine must also be registered to your Microsoft Entra tenant to be allowed to connect.
 
 When configuring multi-factor authentication with conditional access and related policies, use the recommended policy set for Zero Trust as a guide. This includes **Starting point** policies that don't require managing devices. Ideally, the devices accessing your virtual machines are managed and you can implement the **Enterprise** policies, which is recommended for Zero Trust. For more information, see [Common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies).
 
 The following diagram shows the recommended policies for Zero Trust.
 
-:::image type="content" source="media/identity-device-access-policies-byplan.png" alt-text="Diagram of Zero Trust identity and device access policies." lightbox="media/identity-device-access-policies-byplan.png":::
+:::image type="content" source="media/identity-device-access-policies-byplan.svg" alt-text="Diagram of Zero Trust identity and device access policies." lightbox="media/identity-device-access-policies-byplan.svg":::
 
-Remember that usernames and passwords can be 100% compromised. Using multi-factor authentication, you reduce your risk of compromise by 99.9%. This requires Azure AD Premium P1 licenses.
+Remember that usernames and passwords can be 100% compromised. Using multi-factor authentication, you reduce your risk of compromise by 99.9%. This requires Microsoft Entra ID P1 licenses.
 
 > [!NOTE]
 > You can use VPNs used to connect to virtual machines in Azure as well. However, you should be sure to use methods to verify explicitly. Creating a tunnel that is "trusted" regardless of how they are used can be riskier than having specific connections that are highly verified.
@@ -188,7 +188,7 @@ Use [Privileged Access Workstations (PAWs)](/security/compass/privileged-access-
 
 For more information on deployment options, see [Privileged access deployment](/security/compass/privileged-access-deployment).
 
-## Step 7. Set up secure maintenance of virtual machines
+## Step 7: Set up secure maintenance of virtual machines
 
 Secure maintenance of virtual machines includes:
 
@@ -232,7 +232,7 @@ See this additional guidance:
 - [Use Azure Private Link to securely connect networks to Azure Automation](/azure/automation/how-to/private-link-security)
    Ensures virtual machines connect in an isolated controlled fashion and not over the internet for updates.
 
-## Step 8. Enable advanced threat detection and protection
+## Step 8: Enable advanced threat detection and protection
 
 Threat protection for Azure infrastructure is provided by Microsoft Defender for Cloud. This protection is extended to virtual machines when you provision [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction), as shown in the following diagram.
 
@@ -321,7 +321,7 @@ For additional technical illustrations, click [here](zero-trust-tech-illus.md).
 - [Azure Bastion](/azure/bastion/bastion-overview#key-features)
 - [Azure multi-factor authentication for Azure Virtual Desktop](/azure/virtual-desktop/set-up-mfa)
 - [Windows Servers 2019 or newer](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows)
-- [Log in to a Linux VM with Azure Active Directory credentials](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux)
+- [Log in to a Linux VM with Microsoft Entra credentials](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux)
 - [Common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies)
 - [Privileged Access Workstations (PAW)](/security/compass/privileged-access-devices)
 - [Privileged access deployment](/security/compass/privileged-access-deployment)

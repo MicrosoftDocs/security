@@ -41,7 +41,7 @@ Different intermediary types perform unique functions so they each require a dif
 
 The **attacker opportunity** is represented by the available attack surface an attack operator can target:
 
-- **Native cloud services** like Azure AD PIM, Azure Bastion, and Azure AD App Proxy offer a limited attack surface to attackers. While they are exposed to the public internet, customers (and attackers) have no access to underlying operating systems providing the services and they are typically maintained and monitored consistently via automated mechanisms at the cloud provider. This smaller attack surface limits the available options to attackers vs. classic on-premises applications and appliances that must be configured, patched, and monitored by IT personnel who are often overwhelmed by conflicting priorities and more security tasks than they have time to complete. 
+- **Native cloud services** like Microsoft Entra PIM, Azure Bastion, and Microsoft Entra application proxy offer a limited attack surface to attackers. While they are exposed to the public internet, customers (and attackers) have no access to underlying operating systems providing the services and they are typically maintained and monitored consistently via automated mechanisms at the cloud provider. This smaller attack surface limits the available options to attackers vs. classic on-premises applications and appliances that must be configured, patched, and monitored by IT personnel who are often overwhelmed by conflicting priorities and more security tasks than they have time to complete. 
 - **Virtual Private Networks (VPNs)** and **Remote Desktops** / **Jump servers** frequently have a significant attacker opportunity as they are exposed to the internet to provide remote access and the maintenance of these systems is frequently neglected. 
 While they only have a few network ports exposed, attackers only need access to one unpatched service for an attack. 
 - **Third-party PIM/PAM** services are frequently hosted on-premises or as a VM on Infrastructure as a Service (IaaS) and are typically only available to intranet hosts. While not directly internet exposed, a single compromised credential may allow attackers to access the service over VPN or another remote access medium. 
@@ -51,14 +51,14 @@ While they only have a few network ports exposed, attackers only need access to 
 The ingredients that attackers can collect from an intermediary for the next stage of their attack include:
 
 - **Get network connectivity** to communicate with most or all resource on enterprise networks.
-   This access is typically provided by VPNs and Remote Desktop / Jump server solutions. While Azure Bastion and Azure AD App Proxy (or similar third-party solutions) solutions also provide remote access, these solutions are typically application or server-specific connections and don’t provide general network access
+   This access is typically provided by VPNs and Remote Desktop / Jump server solutions. While Azure Bastion and Microsoft Entra application proxy (or similar third-party solutions) solutions also provide remote access, these solutions are typically application or server-specific connections and don’t provide general network access
 - **Impersonate device identity** - can defeat Zero Trust mechanisms if a device is required for authentication and/or be used by an attacker to gather intelligence on the targets networks. Security Operations teams often don't closely monitor device account activity and focus only on user accounts. 
 - **Steal account credentials** to authenticate to resources, which are the most valuable asset to attackers as it offers the ability to elevate privileges to access their ultimate goal or the next stage in the attack.
 Remote Desktop / Jump servers and third-party PIM/PAM are the most attractive targets and have the “All your eggs in one basket” dynamic with increased attacker value and security mitigations:
    - **PIM/PAM** solutions typically store the credentials for most or all privileged roles in the organization, making them a highly lucrative target to compromise or to weaponize. 
-   - **Azure AD PIM** doesn't offer attackers the ability to steal credentials because it unlocks privileges already assigned to an account using MFA or other workflows, but a poorly designed workflow could allow an adversary to escalate privileges.
+   - **Microsoft Entra PIM** doesn't offer attackers the ability to steal credentials because it unlocks privileges already assigned to an account using MFA or other workflows, but a poorly designed workflow could allow an adversary to escalate privileges.
    - **Remote Desktop / Jump servers** used by administrators provide a host where many or all sensitive sessions pass through, enabling attackers to use standard credential theft attack tools to steal and reuse these credentials.  
-   - **VPNs** can store credentials in the solution, providing attackers with a potential treasure trove of privilege escalation, leading to the strong recommendation to use Azure AD for authentication to mitigate this risk.
+   - **VPNs** can store credentials in the solution, providing attackers with a potential treasure trove of privilege escalation, leading to the strong recommendation to use Microsoft Entra ID for authentication to mitigate this risk.
 
 ## Intermediary security profiles
 
@@ -76,7 +76,7 @@ The common security elements for intermediaries are focused on maintaining good 
 
 These security controls should be applied to all types of intermediaries:
 
-- **Enforce inbound connection security** - Use Azure AD and Conditional Access to ensure  all inbound connections from devices and accounts are known, trusted, and allowed. For more information, see the article [Secuiting privileged interfaces](privileged-access-interfaces.md) for detailed definitions for device and account requirements for enterprise and specialized.
+- **Enforce inbound connection security** - Use Microsoft Entra ID and Conditional Access to ensure  all inbound connections from devices and accounts are known, trusted, and allowed. For more information, see the article [Secuiting privileged interfaces](privileged-access-interfaces.md) for detailed definitions for device and account requirements for enterprise and specialized.
 - **Proper system maintenance** - All intermediaries must follow good security hygiene practices including:
    - **Secure configuration** - Follow manufacturer or industry security configuration baselines and best practices for both the application and any underlying operating systems, cloud services, or other dependencies. Applicable guidance from Microsoft includes the Azure Security Baseline and Windows Baselines.
    - **Rapid patching** - Security updates and patches from the vendors must be applied rapidly after release. 
@@ -135,10 +135,10 @@ The most critical risks to VPN intermediaries are from maintenance neglect, conf
 
 Microsoft recommends a combination of controls for VPN intermediaries:
 
-- **Integrate Azure AD authentication** - to reduce or eliminate risk of locally stored credentials (and any overhead burden to maintain them) and enforce Zero Trust policies on inbound accounts/devices with conditional access. 
+- **Integrate Microsoft Entra authentication** - to reduce or eliminate risk of locally stored credentials (and any overhead burden to maintain them) and enforce Zero Trust policies on inbound accounts/devices with conditional access. 
 For guidance on integrating, see
-   - [Azure VPN AAD integration](/azure/vpn-gateway/vpn-gateway-radius-mfa-nsp)
-   - [Enable Azure AD Authentication on the VPN gateway](/azure/vpn-gateway/openvpn-azure-ad-tenant#enable-authentication)
+   - [Azure VPN Microsoft Entra integration](/azure/vpn-gateway/vpn-gateway-radius-mfa-nsp)
+   - [Enable Microsoft Entra authentication on the VPN gateway](/azure/vpn-gateway/openvpn-azure-ad-tenant#enable-authentication)
    - Integrating third-party VPNs 
       - [Cisco AnyConnect](/azure/active-directory/saas-apps/cisco-anyconnect)
       - Palo Alto Networks [GlobalProtect](/azure/active-directory/saas-apps/palo-alto-networks-globalprotect-tutorial) and [Captive Portal](/azure/active-directory/saas-apps/paloaltonetworks-captiveportal-tutorial)
@@ -153,23 +153,29 @@ For guidance on integrating, see
    - **Emergency processes** to rapidly deploy critical security updates
    - **Governance** to continually discover and remediate any missed items
 - **Secure configuration** - The capabilities from each VPN vendor vary on how to secure them, so review and follow your vendor's specific security configuration recommendations and best practices
-- **Go beyond VPN** - Replace VPNs over time with more secure options like Azure AD App Proxy or Azure Bastion as these provide only direct application/server access rather than full network access. Additionally Azure AD App Proxy allows session monitoring for additional security with Microsoft Defender for Cloud Apps.
+- **Go beyond VPN** - Replace VPNs over time with more secure options like Microsoft Entra application proxy or Azure Bastion as these provide only direct application/server access rather than full network access. Additionally Microsoft Entra application proxy allows session monitoring for additional security with Microsoft Defender for Cloud Apps.
 
 ![Modernize VPN authentication and move apps to modern access](./media/privileged-access-intermediaries/modernize-vpn-access.png)
 
-### Azure AD App Proxy
+<a name='azure-ad-app-proxy'></a>
 
-Azure AD App Proxy and similar third-party capabilities provide remote access to legacy and other applications hosted on-premises or on IaaS VMs in the cloud. 
+### Microsoft Entra application proxy
 
-#### Use cases and scenarios for Azure AD App Proxy
+Microsoft Entra application proxy and similar third-party capabilities provide remote access to legacy and other applications hosted on-premises or on IaaS VMs in the cloud. 
+
+<a name='use-cases-and-scenarios-for-azure-ad-app-proxy'></a>
+
+#### Use cases and scenarios for Microsoft Entra application proxy
 
 This solution is suitable for publishing legacy end-user productivity applications to authorized users over the internet. It can also be used for publishing some administrative applications. 
 
-#### Security risks and recommendations for Azure AD App Proxy
+<a name='security-risks-and-recommendations-for-azure-ad-app-proxy'></a>
 
-Azure AD App proxy effectively retrofits modern Zero Trust policy enforcement to existing applications. For more information, see Security considerations for Azure AD Application Proxy 
+#### Security risks and recommendations for Microsoft Entra application proxy
 
-Azure AD Application Proxy can also integrate with Microsoft Defender for Cloud Apps to add Conditional Access App Control session security to:
+Microsoft Entra application proxy effectively retrofits modern Zero Trust policy enforcement to existing applications. For more information, see Security considerations for Microsoft Entra application proxy 
+
+Microsoft Entra application proxy can also integrate with Microsoft Defender for Cloud Apps to add Conditional Access App Control session security to:
 
 - Prevent data exfiltration
 - Protect on download
@@ -178,9 +184,9 @@ Azure AD Application Proxy can also integrate with Microsoft Defender for Cloud 
 - Block access
 - Block custom activities
 
-For more information, see [Deploy Defender for Cloud Apps Conditional Access App Control for Azure AD apps](/cloud-app-security/proxy-deployment-aad)
+For more information, see [Deploy Defender for Cloud Apps Conditional Access App Control for Microsoft Entra apps](/cloud-app-security/proxy-deployment-aad)
 
-As you publish applications via the Azure AD Application Proxy, Microsoft recommends having application owners work with security teams to follow least privilege and ensure access to each application is made available to only the users that require it. As you deploy more apps this way, you may be able to offset some end-user point to site VPN usage.
+As you publish applications via the Microsoft Entra application proxy, Microsoft recommends having application owners work with security teams to follow least privilege and ensure access to each application is made available to only the users that require it. As you deploy more apps this way, you may be able to offset some end-user point to site VPN usage.
 
 ### Remote Desktop / jump server
 
@@ -196,10 +202,10 @@ This scenario provides a full desktop environment running one or more applicatio
 The most common configurations are:
 
 - Direct Remote Desktop Protocol (RDP) - This configuration is not recommended for internet connections because RDP is a protocol that has limited protections against modern attacks like password spray. Direct RDP should be converted to either:
-   - RDP through a gateway published by Azure AD App Proxy
+   - RDP through a gateway published by Microsoft Entra application proxy
    - Azure Bastion
 - RDP through a gateway using 
-   - Remote Desktop Services (RDS) included in Windows Server. Publish with Azure AD Application Proxy.
+   - Remote Desktop Services (RDS) included in Windows Server. Publish with Microsoft Entra application proxy.
    - Windows Virtual Desktop (WVD) - Follow Windows Virtual Desktop security best practices.
    - Third-party VDI - Follow manufacturer or industry best practices, or adapt WVD guidance to your solution
 - Secure Shell (SSH) server - providing remote shell and scripting for technology departments and workload owners. Securing this configuration should include:

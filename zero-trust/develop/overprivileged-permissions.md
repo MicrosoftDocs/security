@@ -62,7 +62,7 @@ Think carefully about what permissions your app actually requires. Beware of the
 
 Let's dive deeper into the risks that result from permission gaps with an example. This compromising scenario comprises two roles: IT admin and developer.
 
-- IT admin: Jeff is a tenant admin who ensures that applications in Azure AD are trustworthy and secure. Part of Jeff's job is to grant consent to permissions that app developers require.
+- IT admin: Jeff is a tenant admin who ensures that applications in Microsoft Entra ID are trustworthy and secure. Part of Jeff's job is to grant consent to permissions that app developers require.
 - Developer: Kelly is an app developer who uses Microsoft identity platform and owns apps. Kelly's job is to ensure that applications have the right permissions to perform required tasks.
 
 A common security compromise scenario for overprivileged typically has four stages as shown and described below.
@@ -115,7 +115,7 @@ Two major incentives for maintaining least privilege permission with your applic
 
 - [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [Building apps with a Zero Trust approach to identity](identity.md) provides an overview of permissions and access best practices.
-- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Azure AD tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Achieving Zero Trust readiness in your apps: Designing for Least Privilege](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/achieving-zero-trust-readiness-in-your-apps-2-designing-for/ba-p/2959986) helps you to design apps using the principle of least privileged access with the Microsoft identity platform.
 - [Increase application security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access) helps you to reduce the attack surface of an application and the effect of a security breach (the blast radius) should one occur in a Microsoft identity platform-integrated application.

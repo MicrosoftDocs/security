@@ -8,7 +8,6 @@ manager: dansimp
 localization_priority: Normal
 ms.topic: article
 ms.collection: 
-  - zerotrust-solution
   - msftsolution-secops
 ms.service: microsoft-365-security
 ms.custom: cxdef-zt-ransomware 
@@ -16,9 +15,9 @@ ms.custom: cxdef-zt-ransomware
 
 # Incident response overview
 
-Incident response is the practice of investigating and remediating active attack campaigns on your organization. This is part of the [security operations (SecOps)](/azure/cloud-adoption-framework/secure/security-operations) discipline and is primarily reactive in nature.
+Incident response is the practice of investigating and remediating active attack campaigns on your organization. Incident response is part of the [security operations (SecOps)](/azure/cloud-adoption-framework/secure/security-operations) discipline and is primarily reactive in nature.
 
-Incident response has the largest direct influence on the overall mean time to acknowledge (MTTA) and mean time to remediate (MTTR) that measure how well security operations are able to reduce organizational risk. Incident response teams heavily rely on good working relationships between threat hunting, intelligence, and incident management teams (if present) to actually reduce risk. See [SecOps metrics](/azure/cloud-adoption-framework/secure/security-operations#secops-metrics) for more information.
+Incident response has the largest direct influence on the overall mean time to acknowledge (MTTA) and mean time to remediate (MTTR) that measure how well security operations are able to reduce organizational risk. Incident response teams heavily rely on good working relationships between threat hunting, intelligence, and incident management teams (if present) to actually reduce risk. For more information, see [SecOps metrics](/azure/cloud-adoption-framework/secure/security-operations#secops-metrics).
 
 For more information on security operations roles and responsibilities, see [Cloud SOC functions](/azure/cloud-adoption-framework/organize/cloud-security-operations-center).
 
@@ -35,7 +34,7 @@ See the [incident response planning article](incident-response-planning.md) for 
 
 Although each organization's incident response process may be different based on organizational structure and capabilities and historical experience, consider the set of recommendations and best practices in this article for responding to security incidents.
 
-During an incident, it is critical to:
+During an incident, it's critical to:
 
 - Keep calm
 
@@ -75,14 +74,14 @@ During an incident, you must strike these critical balances:
 This article is designed to lower the risk to your organization for a cybersecurity incident by identifying common errors to avoid and providing guidance on what actions you can rapidly take that both reduce risk and meet stakeholder needs.
 
 > [!NOTE]
-> For additional guidance on preparing your organization for ransomware and other types of multi-stage attacks, see [Prepare your recovery plan](/security/ransomware/protect-against-ransomware-phase1).
+> For more guidance on preparing your organization for ransomware and other types of multi-stage attacks, see [Prepare your recovery plan](/security/ransomware/protect-against-ransomware-phase1).
 
 ## Response best practices
 
 Responding to incidents can be done effectively from both technical and operations perspectives with these recommendations.
 
 > [!NOTE]
-> For additional detailed industry guidance, see the [NIST Computer Security Incident Handling Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf).
+> For more detailed industry guidance, see the [NIST Computer Security Incident Handling Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf).
 
 ### Technical response best practices
 
@@ -106,11 +105,11 @@ Here are some useful tips:
 
    Unless you face an imminent threat of losing business-critical data—such as deletion, encryption, and exfiltration—balance the risk of not making the modification with the projected business impact. For example, temporarily shutting down your organization's internet access may be necessary to protect business-critical assets during an active attack.
 
-   If changes are necessary where the risk of not doing an action is higher than the risk of doing it, document the action in a change log. Changes made during incident response are focused on disrupting the attacker and may impact the business adversely. You will need to roll these changes back after the recovery process.
+   If changes are necessary where the risk of not doing an action is higher than the risk of doing it, document the action in a change log. Changes made during incident response are focused on disrupting the attacker and may impact the business adversely. You'll need to roll back these changes after the recovery process.
 
 - Don't investigate forever
 
-   You must ruthlessly prioritize your investigation efforts. For example, only perform forensic analysis on endpoints that attackers have actually used or modified. For example, in a major incident where an attacker has administrative privileges, it is practically impossible to investigate all potentially compromised resources (which may include all organization resources).
+   You must ruthlessly prioritize your investigation efforts. For example, only perform forensic analysis on endpoints that attackers have used or modified. For example, in a major incident where an attacker has administrative privileges, it's practically impossible to investigate all potentially compromised resources (which may include all organization resources).
 
 - Share information
 
@@ -124,7 +123,7 @@ Here are some useful tips:
 
    Plan for 50% of your staff operating at 50% of normal capacity due to situational stress.
 
-A key expectation to manage with stakeholders is that you may never be able to identify the initial attack because the data required for this may have been deleted before the investigation starts, such as an attacker covering their tracks by log rolling.
+A key expectation to manage with stakeholders is that you may never be able to identify the initial attack because the data required for identification has been deleted before the investigation starts, such as an attacker covering their tracks by log rolling.
 
 ### Operations response best practices
 
@@ -150,19 +149,19 @@ Here are some useful tips:
 
 - Keep ongoing daily operations intact
 
-   Ensure that normal SecOps are not completely sidelined to support incident investigations. This work still needs to be done.
+   Ensure that normal SecOps aren't completely sidelined to support incident investigations. This work still needs to be done.
 
 - Avoid wasteful spending
 
-   Many major incidents result in the purchase of expensive security tools under pressure that are never deployed or used. If you can't deploy and use a tool during the investigation, which can include hiring and training for additional staff with the skill sets needed to operate the tool, defer acquisition until after you finish the investigation.
+   Many major incidents result in the purchase of expensive security tools under pressure that are never deployed or used. If you can't deploy and use a tool during the investigation, which can include hiring and training for more staff with the skill sets needed to operate the tool, defer acquisition until after you finish the investigation.
 
 - Access deep expertise
 
-   Confirm you have the ability to escalate questions and issues to deep experts on critical platforms. This may require access to the operating system and application vendor for business-critical systems and enterprise-wide components such as desktops and servers.
+   Confirm you have the ability to escalate questions and issues to deep experts on critical platforms. This ability might require access to the operating system and application vendor for business-critical systems and enterprise-wide components such as desktops and servers.
 
 - Establish information flows
 
-   Set clear guidance and expectations for the flow of information between senior incident response leaders and organization stakeholders. See [incident response planning](incident-response-planning.md) for more information.
+   Set clear guidance and expectations for the flow of information between senior incident response leaders and organization stakeholders. For more information, see [incident response planning](incident-response-planning.md).
 
 ## Recovery best practices
 
@@ -178,7 +177,7 @@ For the technical aspects of recovering from an incident, here are some goals to
 
 - Avoid distractions
 
-   Defer long-term security investments like implementing large and complex new security systems or replacing anti-malware solutions until after the recovery operation. Anything that does not have direct and immediate impact on the current recovery operation is a distraction.
+   Defer long-term security investments like implementing large and complex new security systems or replacing anti-malware solutions until after the recovery operation. Anything that doesn't have direct and immediate impact on the current recovery operation is a distraction.
 
 Here are some helpful tips:
 
@@ -188,17 +187,17 @@ Here are some helpful tips:
 
 - Consolidate execution of recovery tasks
 
-   Unless you face an imminent threat of losing business-critical data, you should plan a consolidated operation to rapidly remediate all compromised resources (such as hosts and accounts) versus remediating compromised resources as you find them. Compressing this time window will make it difficult for attack operators to adapt and maintain persistence.
+   Unless you face an imminent threat of losing business-critical data, you should plan a consolidated operation to rapidly remediate all compromised resources (such as hosts and accounts) versus remediating compromised resources as you find them. Compressing this time window makes it difficult for attack operators to adapt and maintain persistence.
 
 - Use existing tools
 
-   Research and use the capabilities of tools you have already deployed before trying to deploy and learn a new tool during a recovery.
+   Research and use the capabilities of tools you deployed before trying to deploy and learn a new tool during a recovery.
 
 - Avoid tipping off your adversary
 
    As practical, you should take steps to limit the information available to adversaries about the recovery operation. Adversaries typically have access to all production data and email in a major cybersecurity incident. But in reality, most attackers don't have time to monitor all your communications.
 
-  Microsoft's Security Operations Center (SOC) has used a non-production Microsoft 365 tenant for secure communication and collaboration for members of the incident response team.
+  Microsoft's Security Operations Center (SOC) uses a non-production Microsoft 365 tenant for secure communication and collaboration for members of the incident response team.
 
 ### Operations recovery best practices
 
@@ -206,7 +205,7 @@ For the operations aspects of recovering from an incident, here are some goals t
 
 - Have a clear plan and limited scope
 
-   Work closely with your technical teams to build a clear plan with limited scope. While plans may change based on adversary activity or new information, you should work diligently to limit scope expansion and taking on additional tasks.
+   Work closely with your technical teams to build a clear plan with limited scope. While plans may change based on adversary activity or new information, you should work diligently to limit scope expansion and taking on more tasks.
 
 - Have clear plan ownership
 
@@ -234,7 +233,7 @@ Consider this general guidance about the incident response process for your SecO
 
 ### 1. Decide and act
 
-After a threat detection tool such as Microsoft Sentinel or Microsoft 365 Defender detects a likely attack, it creates an incident. The Mean Time to Acknowledge (MTTA) measurement of SOC responsiveness begins with the time this attack is noticed by your security staff.
+After a threat detection tool such as Microsoft Sentinel or Microsoft 365 Defender detects a likely attack, it creates an incident. The Mean Time to Acknowledge (MTTA) measurement of SOC responsiveness begins with the time your security staff notices the attack.
 
 An analyst on shift is either delegated or takes ownership of the incident and performs an initial analysis. The timestamp for this is the end of the MTTA responsiveness measurement and begins the Mean Time to Remediate (MTTR) measurement.
 
@@ -244,17 +243,17 @@ Depending on the nature and scope of the attack, your analysts can clean up atta
 
 - Clean as you go
 
-   For most typical incidents that are detected early in the attack operation, analysts can quickly clean up the artifacts as they find them. This puts the adversary at a disadvantage and prevents them from moving forward with the next stage of their attack.
+   For most typical incidents that are detected early in the attack operation, analysts can quickly clean up the artifacts as they find them. This practice puts the adversary at a disadvantage and prevents them from moving forward with the next stage of their attack.
 
 - Prepare for a Big Bang
 
-   This approach is appropriate for a scenario where an adversary has already settled in and established redundant access mechanisms to your environment. This is frequently seen in customer incidents investigated by [Microsoft's Detection and Response Team (DART)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/). In this approach, analysts should avoid tipping off the adversary until full discovery of the attacker's presence, because surprise can help with fully disrupting their operation.
+   This approach is appropriate for a scenario where an adversary has already settled in and established redundant access mechanisms to your environment. This practice is frequently seen in customer incidents investigated by [Microsoft's Detection and Response Team (DART)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/). In this approach, analysts should avoid tipping off the adversary until full discovery of the attacker's presence, because surprise can help with fully disrupting their operation.
 
-   Microsoft has learned that partial remediation often tips off an adversary, which gives them a chance to react and rapidly make the incident worse. For example, the attacker can spread the attack further, change their access methods to evade detection, cover their tracks, and inflict data and system damage and destruction for revenge.
+   Microsoft learned that partial remediation often tips off an adversary, which gives them a chance to react and rapidly make the incident worse. For example, the attacker can spread the attack further, change their access methods to evade detection, cover their tracks, and inflict data and system damage and destruction for revenge.
 
    Cleaning up phishing and malicious emails can often be done without tipping off the attacker but cleaning up host malware and reclaiming control of accounts has a high chance of discovery.
 
-These are not easy decisions to make and there is no substitute for experience in making these judgement calls. A collaborative work environment and culture in your SOC helps ensure that analysts can tap into each other's experience.
+These aren't easy decisions to make and there's no substitute for experience in making these judgment calls. A collaborative work environment and culture in your SOC helps ensure that analysts can tap into each other's experience.
 
 The specific response steps are dependent on the nature of the attack, but the most common procedures used by analysts can include:
 
@@ -270,7 +269,7 @@ The specific response steps are dependent on the nature of the attack, but the m
 
    Reclaim control by disabling the account and resetting password for compromised accounts. These procedures could evolve as your users transition to passwordless authentication using Windows Hello or another form of multi-factor authentication (MFA). A separate step is to expire all authentication tokens for the account with [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security).
 
-   Your analysts can also review the MFA method phone number and device enrollment to ensure it hasn't been hijacked by contacting the user and reset this information as needed.
+   Your analysts can also review the MFA method phone number and device enrollment to ensure it's not hijacked by contacting the user and reset this information as needed.
 
 - Service Accounts
 
@@ -290,7 +289,7 @@ Because you don't benefit from learned lessons until you change future actions, 
 
 Determine the connections between past and future incidents by the same threat actors or methods and capture these learnings to avoid repeating manual work and analysis delays in the future.
 
-These learnings can take a number of forms, but common practices include analysis of:
+These learnings can take many forms, but common practices include analysis of:
 
 - Indicators of Compromise (IoCs).
 
@@ -302,13 +301,12 @@ These learnings can take a number of forms, but common practices include analysi
 
 - Internal actions such as enabling logging on assets covering your cloud-based and on-premises resources.
 
-   Review your existing security baselines and consider adding or changing security controls. For example, see the [Azure Active Directory security operations guide](/azure/active-directory/fundamentals/security-operations-introduction) for information on enabling the appropriate level of auditing in the directory before the next incident happens.
+   Review your existing security baselines and consider adding or changing security controls. For example, see the [Microsoft Entra security operations guide](/azure/active-directory/fundamentals/security-operations-introduction) for information on enabling the appropriate level of auditing in the directory before the next incident happens.
 
 Review your response processes to identify and resolve any gaps found during the incident.
 
 ## Incident response resources
 
-- [Overview](incident-response-overview.md) for Microsoft security products and resources for new-to-role and experienced analysts
 - [Planning](incident-response-planning.md) for your SOC
 - [Playbooks](incident-response-playbooks.md) for detailed guidance on responding to common attack methods
 - [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
@@ -319,7 +317,7 @@ Review your response processes to identify and resolve any gaps found during the
 
 |Resource|Description|
 |---|---|
-|[2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report)|A report that encompasses learnings from security experts, practitioners, and defenders at Microsoft to empower people everywhere to defend against cyberthreats.|
+|[2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report)|A report that encompasses learnings from security experts, practitioners, and defenders at Microsoft to empower people everywhere to defend against cyberthreats.|
 |[Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra)|A set of visual architecture diagrams that show Microsoft's cybersecurity capabilities and their integration with Microsoft cloud platforms such as Microsoft 365 and Microsoft Azure and third-party cloud platforms and apps.|
 |[Minutes matter infographic](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf) download|An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks.|
 |[Azure Cloud Adoption Framework security operations](/azure/cloud-adoption-framework/secure/security-operations)|Strategic guidance for leaders establishing or modernizing a security operation function.|

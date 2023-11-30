@@ -16,7 +16,6 @@ manager: dansimp
 localization_priority: Normal
 audience: ITPro
 ms.collection: 
-  - zerotrust-solution
   - msftsolution-ransomware
 ms.topic: article
 ms.subservice:: m365d
@@ -25,7 +24,7 @@ ms.custom: cxdef-zt-ransomware
 
 # Microsoft DART ransomware approach and best practices
 
-[Human-operated ransomware](/security/ransomware/human-operated-ransomware) is not a malicious software problem - it's a human criminal problem. The solutions used to address commodity problems aren't enough to prevent a threat that more closely resembles a nation-state threat actor who:
+[Human-operated ransomware](/security/ransomware/human-operated-ransomware) isn't a malicious software problem - it's a human criminal problem. The solutions used to address commodity problems aren't enough to prevent a threat that more closely resembles a nation-state threat actor who:
 
 - Disables or uninstalls your antivirus software before encrypting files
 - Disables security services and logging to avoid detection
@@ -35,7 +34,7 @@ These actions are commonly done with legitimate programs that you might already 
 
 Responding to the increasing threat of ransomware requires a combination of modern enterprise configuration, up-to-date security products, and the vigilance of trained security staff to detect and respond to the threats before data is lost.
 
-The [Microsoft Detection and Response Team (DART)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. DART provides onsite reactive incident response and remote proactive investigations. DART leverages Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
+The [Microsoft Detection and Response Team (DART)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. DART provides onsite reactive incident response and remote proactive investigations. DART uses Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
 
 This article describes how DART handles ransomware attacks for Microsoft customers so that you can consider applying elements of their approach and best practices for your own security operations playbook.
 
@@ -66,7 +65,7 @@ Here's an example of how advanced hunting queries can be used to locate known at
 
 :::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/example-advanced-hunting-query.png" alt-text="An example of an advanced hunting query." lightbox="./media/incident-response-playbook-dart-ransomware-approach/example-advanced-hunting-query.png":::
 
-In Defender for Endpoint, you have access to a real-time expert-level monitoring and analysis service by Microsoft Threat Experts for ongoing suspected actor activity. You can also collaborate with experts on demand for additional insights into alerts and incidents.
+In Defender for Endpoint, you have access to a real-time expert-level monitoring and analysis service by Microsoft Threat Experts for ongoing suspected actor activity. You can also collaborate with experts on demand for more insights into alerts and incidents.
 
 Here's an example of how Defender for Endpoint shows detailed ransomware activity.
 
@@ -82,7 +81,7 @@ Here's an example of how Defender for Identity sends alerts for known malicious 
 
 ### Defender for Cloud Apps
 
-Defender for Cloud Apps (previously known as Microsoft Defender for Cloud Apps) allows your analysts to detect unusual behavior across cloud apps to identify ransomware, compromised users, or rogue applications. Defender for Cloud Apps is Microsoft's cloud access security broker (CASB) solution that allows for monitoring of cloud services and data access in cloud services by users.
+Defender for Cloud Apps (previously known as Microsoft Cloud App Security) allows your analysts to detect unusual behavior across cloud apps to identify ransomware, compromised users, or rogue applications. Defender for Cloud Apps is Microsoft's cloud access security broker (CASB) solution that allows for monitoring of cloud services and data access in cloud services by users.
 
 Here's an example of the Defender for Cloud Apps dashboard, which allows analysis to detect unusual behavior across cloud apps.
 
@@ -90,11 +89,11 @@ Here's an example of the Defender for Cloud Apps dashboard, which allows analysi
 
 ### Microsoft Secure Score
 
-The set of Microsoft 365 Defender services provides live remediation recommendations to reduce the attack surface. Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating that more improvement actions have been taken. See the [Secure Score](/microsoft-365/security/defender/microsoft-secure-score) documentation to find out more about how your organization can leverage this feature to prioritize remediation actions that are based on their environment.
+The set of Microsoft 365 Defender services provides live remediation recommendations to reduce the attack surface. Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating that more improvement actions have been taken. See the [Secure Score](/microsoft-365/security/defender/microsoft-secure-score) documentation to find out more about how your organization can use this feature to prioritize remediation actions that are based on their environment.
 
 ## The DART approach to conducting ransomware incident investigations
 
-You should make every effort to determine how the adversary gained access to your assets so that vulnerabilities can be remediated. Otherwise, it is highly likely that the same type of attack will take place again in the future. In some cases, the threat actor takes steps to cover their tracks and destroy evidence, so it is possible that the entire chain of events may not be evident.
+You should make every effort to determine how the adversary gained access to your assets so that vulnerabilities can be remediated. Otherwise, it is highly likely that the same type of attack happens again in the future. In some cases, the threat actor takes steps to cover their tracks and destroy evidence, so it is possible that the entire chain of events might not be evident.
 
 The following are three key steps in DART ransomware investigations:
 
@@ -104,36 +103,36 @@ The following are three key steps in DART ransomware investigations:
 |2. Identify the affected line-of-business (LOB) apps|Get systems back online|Does the application require an identity? <BR><BR> Are backups of the application, configuration, and data available? <BR><BR> Are the content and integrity of backups regularly verified using a restore exercise?|
 |3. Determine the compromise recovery (CR) process|Remove attacker control from the environment|N/A|
 
-### Step 1. Assess the current situation
+### Step 1: Assess the current situation
 
 An assessment of the current situation is critical to understanding the scope of the incident and for determining the best people to assist and to plan and scope the investigation and remediation tasks. Asking the following initial questions is crucial in helping to determine the situation.
 
 #### What initially made you aware of the ransomware attack?
 
-If the initial threat was identified by IT staff-such as noticing backups being deleted, antivirus alerts, endpoint detection and response (EDR) alerts, or suspicious system changes-it is often possible to take quick decisive measures to thwart the attack, typically by disabling all inbound and outbound Internet communication. This may temporarily affect business operations, but that would typically be much less impactful than an adversary deploying ransomware.
+If your IT staff identified the initial threat&ndash;such as noticing backups being deleted, antivirus alerts, endpoint detection and response (EDR) alerts, or suspicious system changes&ndash;it is often possible to take quick decisive measures to thwart the attack, typically by disabling all inbound and outbound Internet communication. This threat might temporarily affect business operations, but that would typically be much less impactful than an adversary deploying ransomware.
 
-If the threat was identified by a user call to the IT helpdesk, there may be enough advance warning to take defensive measures to prevent or minimize the effects of the attack. If the threat was identified by an external entity (like law enforcement or a financial institution), it is likely that the damage is already done, and you will see evidence in your environment that the threat actor has already gained administrative control of your network. This can range from ransomware notes, locked screens, or ransom demands.
+If a user call to the IT helpdesk identified the threat, there might be enough advance warning to take defensive measures to prevent or minimize the effects of the attack. If an external entity such as law enforcement or a financial institution identified the threat, it's likely that the damage is already done, and you'll see evidence in your environment that the threat actor has administrative control of your network. This evidence can range from ransomware notes, locked screens, or ransom demands.
 
 #### What date/time did you first learn of the incident?
 
-Establishing the initial activity date and time is important because it helps narrow the scope of the initial triage for quick wins by the attacker. Additional questions may include:
+Establishing the initial activity date and time is important because it helps narrow the scope of the initial triage for quick wins by the attacker. Additional questions might include:
 
-- What updates were missing on that date? This is important to understand what vulnerabilities may have been exploited by the adversary.
+- What updates were missing on that date? It's important to understand what vulnerabilities might have been exploited by the adversary.
 - What accounts were used on that date?
 - What new accounts have been created since that date?
 
 #### What logs are available, and is there any indication that the actor is currently accessing systems?
 
-Logs - such as antivirus, EDR, and virtual private network (VPN)-are an indicator of suspected compromise. Follow-up questions may include:
+Logs - such as antivirus, EDR, and virtual private network (VPN)-are an indicator of suspected compromise. Follow-up questions might include:
 
 - Are logs being aggregated in a Security Information and Event Management (SIEM) solution-such as [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/), Splunk, ArcSight, and others-and current? What is the retention period of this data?
 - Are there any suspected compromised systems that are experiencing unusual activity?
 - Are there any suspected compromised accounts that appear to be actively used by the adversary?
 - Is there any evidence of active command and controls (C2s) in EDR, firewall, VPN, web proxy, and other logs?
 
-As part of assessing the current situation, you might need an Active Directory Domain Services (AD DS) domain controller that was not compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. Also determine whether [multifactor authentication (MFA)](https://www.microsoft.com/security/business/identity-access-management/mfa-multi-factor-authentication/) was required for everyone in the company and if [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) was used.
+As part of assessing the current situation, you might need an Active Directory Domain Services (AD DS) domain controller that was not compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. Also determine whether [multifactor authentication (MFA)](https://www.microsoft.com/security/business/identity-access-management/mfa-multi-factor-authentication/) was required for everyone in the company and if [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) was used.
 
-### Step 2. Identify the LOB apps that are unavailable due to the incident
+### Step 2: Identify the LOB apps that are unavailable due to the incident
 
 This step is critical in figuring out the quickest way to get systems back online while obtaining the evidence required.
 
@@ -144,15 +143,15 @@ Does the application require an identity?
 
 Are tested backups of the application, configuration, and data available?
 
-- Are the contents and integrity of backups regularly verified using a restore exercise? This is particularly important after configuration management changes or version upgrades.
+- Are the contents and integrity of backups regularly verified using a restore exercise? This check is particularly important after configuration management changes or version upgrades.
 
-### Step 3. Determine the compromise recovery process
+### Step 3: Determine the compromise recovery process
 
-This step may be necessary if you have determined that the control plane, which is typically AD DS, has been compromised.
+This step might be necessary if you've determined that the control plane, which is typically AD DS, has been compromised.
 
 Your investigation should always have a goal of providing output that feeds directly into the CR process. CR is the process that removes attacker control from an environment and tactically increase security posture within a set period. CR takes place post-security breach. To learn more about CR, read the Microsoft Compromise Recovery Security Practice team's [CRSP: The emergency team fighting cyber attacks beside customers](https://www.microsoft.com/security/blog/2021/06/09/crsp-the-emergency-team-fighting-cyber-attacks-beside-customers/) blog article.
 
-Once you have gathered the responses to the questions above, you can build a list of tasks and assign owners. A key factor in a successful incident response engagement is thorough, detailed documentation of each work item (such as the owner, status, findings, date, and time), making the compilation of findings at the end of the engagement a straightforward process.
+After gathering the responses to the questions in steps 1 and 2, you can build a list of tasks and assign owners. A key factor in a successful incident response engagement is thorough, detailed documentation of each work item (such as the owner, status, findings, date, and time), making the compilation of findings at the end of the engagement a straightforward process.
 
 ## DART recommendations and best practices
 
@@ -160,9 +159,9 @@ Here are DART's recommendations and best practices for containment and post-inci
 
 ### Containment
 
-Containment can only happen once the analysis has determined what needs to be contained. In the case of ransomware, the adversary's goal is to obtain credentials that allow administrative control over a highly available server and then deploy the ransomware. In some cases, the threat actor identifies sensitive data and exfiltrates it to a location they control.
+Containment can only happen once you determine what needs to be contained. In the case of ransomware, the adversary's goal is to obtain credentials that allow administrative control over a highly available server and then deploy the ransomware. In some cases, the threat actor identifies sensitive data and exfiltrates it to a location they control.
 
-Tactical recovery will be unique for your organization's environment, industry, and level of IT expertise and experience. The steps outlined below are recommended for short-term and tactical containment steps your organization can take. To learn more about for long-term guidance, see [securing privileged access](https://aka.ms/SPA). For a comprehensive view of ransomware and extortion and how to prepare and protect your organization, see [Human-operated ransomware](/security/ransomware/human-operated-ransomware).
+Tactical recovery is unique for your organization's environment, industry, and level of IT expertise and experience. The steps outlined below are recommended for short-term and tactical containment steps your organization can take. To learn more about for long-term guidance, see [securing privileged access](https://aka.ms/SPA). For a comprehensive view of ransomware and extortion and how to prepare and protect your organization, see [Human-operated ransomware](/security/ransomware/human-operated-ransomware).
 
 The following containment steps can be done concurrently as new threat vectors are discovered.
 
@@ -174,9 +173,9 @@ Step 1: Assess the scope of the situation
 
 Step 2: Preserve existing systems
 
-- Disable all privileged user accounts except for a small number of accounts used by your admins to assist in resetting the integrity of your AD DS infrastructure. If a user account is believed to be compromised, disable it immediately.
-- Isolate compromised systems from the network, but do not shut them off.
-- Isolate at least one known good domain controller in every domain-two is even better. Either disconnect them from the network or shut them down entirely. The object here is to stop the spread of ransomware to critical systems-identity being among the most vulnerable. If all your domain controllers are virtual, ensure that the virtualization platform's system and data drives are backed up to offline external media that is not connected to the network, in case the virtualization platform itself is compromised.
+- Disable all privileged user accounts except for a small number of accounts used by your admins to assist in resetting the integrity of your AD DS infrastructure. If you believe a user account is compromised, disable it immediately.
+- Isolate compromised systems from the network, but don't shut them off.
+- Isolate at least one known good domain controller in every domain-two is even better. Either disconnect them from the network or shut them down entirely. The object is to stop the spread of ransomware to critical systems-identity being among the most vulnerable. If all your domain controllers are virtual, ensure that the virtualization platform's system and data drives are backed up to offline external media that isn't connected to the network, in case the virtualization platform itself is compromised.
 - Isolate critical known good application servers, for example SAP, configuration management database (CMDB), billing, and accounting systems.
 
 These two steps can be done concurrently as new threat vectors are discovered. Disable those threat vectors and then try to find a known good system to isolate from the network.
@@ -199,9 +198,9 @@ Other tactical containment actions can include:
 
 - For devices not using Defender for Endpoint as their primary antivirus software, run a full scan with [Microsoft Safety Scanner](/windows/security/threat-protection/intelligence/safety-scanner-download) on isolated known good systems before reconnecting them to the network.
 
-- For any legacy operating systems, upgrade to a supported OS or decommission these devices. If these options are not available, take every possible measure to isolate these devices, including network/VLAN isolation, Internet Protocol security (IPsec) rules, and login restrictions, so they are only accessible to the applications by the users/devices to provide business continuity.
+- For any legacy operating systems, upgrade to a supported OS or decommission these devices. If these options are not available, take every possible measure to isolate these devices, including network/VLAN isolation, Internet Protocol security (IPsec) rules, and sign-in restrictions, so they are only accessible to the applications by the users/devices to provide business continuity.
 
-The riskiest configurations consist of running mission critical systems on legacy operating systems as old as Windows NT 4.0 and applications, all on legacy hardware. Not only are these operating systems and applications insecure and vulnerable, if that hardware fails, backups typically cannot be restored on modern hardware. Unless replacement legacy hardware is available, these applications will cease to function. Strongly consider converting these applications to run on current operating systems and hardware.
+The riskiest configurations consist of running mission critical systems on legacy operating systems as old as Windows NT 4.0 and applications, all on legacy hardware. Not only are these operating systems and applications insecure and vulnerable, if that hardware fails, backups typically can't be restored on modern hardware. Unless replacement legacy hardware is available, these applications cease to function. Strongly consider converting these applications to run on current operating systems and hardware.
 
 ### Post-incident activities
 
@@ -231,11 +230,11 @@ DART recommends implementing the following security recommendations and best pra
 
 ### PAM
 
-Using the [PAM](/security/compass/privileged-access-access-model) (formerly known as the tiered administration model) enhances Azure AD's security posture. This involves:
+Using the [PAM](/security/compass/privileged-access-access-model) (formerly known as the tiered administration model) enhances Microsoft Entra ID's security posture, which involves:
 
   - Breaking out administrative accounts in a "planed" environment-one account for each level, usually four:
 
-- Control Plane (formerly Tier 0): Administration of domain controllers and other crucial identity services, such as Active Directory Federation Services (ADFS) or Azure AD Connect. This also includes server applications that require administrative permissions to AD DS, such as Exchange Server.
+- Control Plane (formerly Tier 0): Administration of domain controllers and other crucial identity services, such as Active Directory Federation Services (ADFS) or Microsoft Entra Connect, which also includes server applications that require administrative permissions to AD DS, such as Exchange Server.
 
 - The next two planes were formerly Tier 1:
 
@@ -249,17 +248,17 @@ Using the [PAM](/security/compass/privileged-access-access-model) (formerly know
 
   - App Access: Access rights for applications.
 
-- Each one of these planes will have a *separate administrative workstation for each plane* and will only have access to systems in that plane. Other accounts from other planes will be denied access to workstations and servers in the other planes through user rights assignments set to those machines.
+- Each one of these planes have a *separate administrative workstation for each plane* and only have access to systems in that plane. Other accounts from other planes are denied access to workstations and servers in the other planes through user rights assignments set to those machines.
 
 The net result of the PAM is that:
 
-- A compromised user account will only have access to the plane to which it belongs.
+- A compromised user account only has access to the plane to which it belongs.
 
-- More sensitive user accounts will not be logging into workstations and servers with a lower plane's security level, thereby reducing lateral movement.
+- More sensitive user accounts won't be logging into workstations and servers with a lower plane's security level, thereby reducing lateral movement.
 
 ### LAPS
 
-By default, Microsoft Windows and AD DS have no centralized management of local administrative accounts on workstations and member servers. This usually results in a common password that is given for all these local accounts, or at the very least in groups of machines. This enables would-be attackers to compromise one local administrator account, and then use that account to gain access to other workstations or servers in the organization.
+By default, Microsoft Windows and AD DS have no centralized management of local administrative accounts on workstations and member servers. This can result in a common password that is given for all these local accounts, or at the very least in groups of machines. This situation enables would-be attackers to compromise one local administrator account, and then use that account to gain access to other workstations or servers in the organization.
 
 Microsoft's [LAPS](/defender-for-identity/cas-isp-laps) mitigates this by using a Group Policy client-side extension that changes the local administrative password at regular intervals on workstations and servers according to the policy set. Each of these passwords are different and stored as an attribute in the AD DS computer object. This attribute can be retrieved from a simple client application, depending on the permissions assigned to that attribute.
 
@@ -309,7 +308,7 @@ Microsoft Defender for Cloud Apps:
 
 Microsoft Security team blog posts:
 
-- [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [Three steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
   Key steps on how Microsoft's DART conducts ransomware incident investigations.

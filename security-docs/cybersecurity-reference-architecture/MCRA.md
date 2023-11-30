@@ -23,7 +23,11 @@ The Microsoft Cybersecurity Reference Architectures (MCRA) are the component of 
 
 :::image type="content" source="./media/mcra-overview.png" alt-text="Screenshot of the updated Microsoft Cybersecurity Reference Architecture" lightbox="./media/mcra-overview.png":::
 
-The MCRA also includes other key information about:
+[Download the updated December 2023 version of the MCRA](https://github.com/MicrosoftDocs/security/blob/main/Downloads/mcra-december-2023.pptx?raw=true)
+
+## What does the MCRA include?
+
+The MCRA includes key information about:
 
 - Antipatterns (common mistakes) and best practices
 - Guiding rulesets for end to end architecture
@@ -35,7 +39,7 @@ The MCRA also includes other key information about:
 - Prioritizing using attacker return on investment (ROI)
 - ...and more
 
-MCRA includes detailed technical diagrams for:
+The MCRA also includes detailed technical diagrams for:
 
 - Microsoft cybersecurity capabilities
 - Zero trust user access
@@ -46,9 +50,7 @@ MCRA includes detailed technical diagrams for:
 - Infrastructure and Development Security
 - Security organizational functions
 
-[Download the updated December 2023 version of the MCRA](https://github.com/MicrosoftDocs/security/blob/main/Downloads/mcra-december-2023.pptx?raw=true)
-
-## Using the MCRA
+## How to use the MCRA
 
 We see this resource used for several purposes including
 

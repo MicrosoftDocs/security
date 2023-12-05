@@ -82,9 +82,55 @@ Business requirements are dependent on the resulting business risk analysis. The
 
   Government sector organizations pose the highest risks for information security. Reputational damage, national security, and data loss are at stake. This is largely why government organizations are required to subscribe to stricter standards such as the [National Institute of Standards and Technology (NIST)](https://www.nist.gov/cyberframework).
 
+As part of your breach preparation and response, take advantage of [Microsoft Defender Threat Intelligence](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-threat-intelligence) to search for and learn about the types of attacks and threat vectors that are most relevant to your vertical.
+
 ### Risks of common types of attacks
 
->> Add
+Preventing or reducing business damage from a cybersecurity breach includes awareness of the most common types of attacks. Although the following attack types are currently the most common, your cybersecurity team should also be aware of new types of attacks to augment or replace them.
+
+#### Identities
+
+Cyber security incidents typically begin with a credential theft of some sort. Credentials may be stolen using a variety of methods:
+
+- Phishing
+
+  An attacker masquerades as a trusted entity and dupes employees into opening emails, texts or IMs. Can also include spear-phishing, in which an attacker uses information specifically about a user to construct a more plausible phishing attack. Technical credential theft may occur due to a user clicking on a URL or an MFA phishing attack. 
+
+- Vishing
+
+  An attacker uses social engineering methods to target supporting infrastructure such as helpdesks to obtain or change credentials. 
+
+- Password spray
+
+  Attacker tries a large list of possible passwords for a given account or set of accounts. Possible passwords can be based on public data about a user, such as birthdates in social media profiles.
+
+In all these cases, skilling and education is essential for both users as the target of phishing attacks and helpdesks as the target of vishing attacks. Helpdesks should have protocols in place to authenticate requesting users before performing sensitive actions on user accounts or permissions.
+
+#### Devices
+
+User devices are another way in for attackers, who typically rely on device compromise to install malware such as viruses, spyware, ransomware, and other unwanted software that installs without consent.
+
+Attackers can also use the device's credentials to gain access to your applications and data.
+
+#### Network
+
+Attackers can also use your networks to either impact your systems or determine sensitive data. Common types of network attacks include:
+
+- Distributed denial of service (DDos)
+
+  Attacks that aim to overwhelm online services with traffic to make the service inoperable.
+
+- Eavesdropping
+
+  An attacker intercepts network traffic and aims to obtain passwords, credit card numbers, and other confidential information.
+
+- Code and SQL injection
+
+  An attacker transmits malicious code instead of data values over a form or through an API.
+
+- Cross site scripting
+
+  An attacker uses third-party web resources to run scripts in the victim’s web browser.
 
 ## How business leaders think about preventing or reducing business damage from a breach
 

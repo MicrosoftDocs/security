@@ -79,11 +79,9 @@ The motivations and outcomes you define, together with your business leaders and
 Technical adoption for preventing business damage from a breach involves:
 
 - 
-- 
 
 Preventing business damage from a breach also involves a few related activities, including:
 
-- 
 - 
 
 Many organizations can take a four-staged approach to these deployment objectives, summarized in the following table.
@@ -104,7 +102,6 @@ A foundational step in the Zero Trust adoption lifecycle for every business scen
 
 The following actions apply:
 
-- 
 - 
 
 ### Organizational planning and alignment
@@ -284,7 +281,6 @@ This objective is
 The staged approach recommended in this article includes cascading the work in a methodical way across your digital estate. At this Ready phase, revisit these elements of the plan to be sure everything is ready to go:
 
 - 
-- 
 
 This list summarizes the high-level methodical process for doing this work.
 
@@ -302,8 +298,6 @@ There’s no need to wait until one phase is complete before beginning the next.
 
 Use the following exercises to help you start building your foundation:
 
-- 
--  
 - 
 
 ## Next Steps

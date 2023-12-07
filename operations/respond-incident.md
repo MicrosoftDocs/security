@@ -188,7 +188,7 @@ The following are the recommended training modules for this step.
 
 ## Next steps
 
-- See [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents) and [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) for more details about incident response processes within the Microsoft Sentinel and Microsoft Defender Portals.
+- See [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents) and [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) for more details about incident response processes within the Microsoft Sentinel and Microsoft Defender portals.
 - See [Incident response overview](/security/compass/incident-response-overview) for Microsoft security best practices.
 - See [Incident response playbooks](/security/compass/incident-response-playbooks) for workflows and checklists to respond to common cyberattacks.
 

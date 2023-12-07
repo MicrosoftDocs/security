@@ -26,7 +26,7 @@ Forester concluded the following for 2021:
 
    Nearly two-thirds of organizations were breached in the past year, and it cost them an average of $2.4 million per breach. – Forester, [The 2021 State of Enterprise Breaches (April 2022)](https://www.forrester.com/report/the-2021-state-of-enterprise-breaches/RES177333). 
 
-With the cloud, bad actors don’t need to physically breach your private network perimeter. They can attack your cloud digital assets from anywhere in the world. 
+With the cloud, bad actors don’t need to physically breach your private network perimeter. They can attack your cloud-based digital assets from anywhere in the world. 
 
 Your organization’s health and reputation depend on your security strategy. With the widespread adoption of cloud-based enterprise environments and the growth of the mobile workforce, data footprints exist beyond the traditional boundaries of corporate networks. This table summarizes key differences between traditional and modern threat protection with Zero Trust.
 
@@ -86,7 +86,7 @@ As part of your breach preparation and response, take advantage of [Microsoft De
 
 ### Risks of common types of attacks
 
-Preventing or reducing business damage from a cybersecurity breach includes awareness of the most common types of attacks. Although the following attack types are currently the most common, your cybersecurity team should also be aware of new types of attacks to augment or replace them.
+Preventing or reducing business damage from a cybersecurity breach includes awareness of the most common types of attacks. Although the following attack types are currently the most common, your cybersecurity team should also be aware of new types of attacks, some of which may augment or replace them.
 
 #### Identities
 

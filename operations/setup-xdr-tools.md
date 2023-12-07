@@ -62,9 +62,9 @@ Use the following guidance to enable Microsoft 365 capabilities and integrate th
 |     Integrate Microsoft Purview with Defender for Cloud Apps  |   Microsoft Defender for Cloud Apps lets you automatically apply sensitivity labels from Microsoft Purview Information Protection. You can then investigate files by using these labels.  |   [Microsoft Purview Information Protection integration](/defender-cloud-apps/azip-integration)  |
 
 
-## Microsoft Defender Portal
+## Microsoft Defender portal
 
-The [Microsoft Defender Portal](https://sip.security.microsoft.com/homepage) combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Microsoft Defender XDR unified portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
+The [Microsoft Defender portal](https://sip.security.microsoft.com/homepage) combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Microsoft Defender XDR unified portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
 
 The unified portal includes:
 
@@ -74,7 +74,7 @@ The unified portal includes:
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
 
-Watch this short video to learn about the Microsoft Defender Portal.
+Watch this short video to learn about the Microsoft Defender portal.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
 <a name='enable-azure-ad-identity-protection'></a>

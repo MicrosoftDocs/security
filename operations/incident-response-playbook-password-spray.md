@@ -214,7 +214,7 @@ To obtain the authentication status for a specific domain name, use the [Get-MgD
 
 ```powershell
 Connect-MgGraph
-Get-MgDomain -Name "contoso.com"
+Get-MgDomain -DomainId "contoso.com"
 ```
 
 ### Is the authentication federated or managed?

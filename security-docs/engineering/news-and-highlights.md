@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 11/10/2023
+ms.date: 11/29/2023
 ---
 
 # Security news and highlights
@@ -17,6 +17,7 @@ Below are past news and highlights that you may have missed or would like to rev
 
 2023
 
+- [Microsoft Build 2023](https://build.microsoft.com/home)
 - [Shared responsibility in the cloiud](/azure/security/fundamentals/shared-responsibility)
 - [Evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview)
 - [Learn about Permissions Management, a CIEM solution](/azure/active-directory/cloud-infrastructure-entitlement-management/overview)

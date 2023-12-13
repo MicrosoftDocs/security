@@ -7,6 +7,7 @@ author: bcarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
+  - M365copilot 
   - msftsolution-copilot
   - msftsolution-scenario
   - zerotrust-solution

@@ -54,7 +54,7 @@ Use the following recommendations to get started with configuring data connector
     1.  Azure Activity Logs:
         Ingesting Azure Activity Logs is **critical** in enabling Sentinel to provide a single-pane of glass view across the environment.
     2.  Office 365 Audit Logs, including all SharePoint activity, Exchange admin activity, and Teams.
-    3.  Security alerts, including alerts from Microsoft Defender for Cloud, Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Identity, and Microsoft Defender for Endpoint:
+    3.  Security alerts, including alerts from Microsoft Defender for Cloud, Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Defender for Identity, and Microsoft Defender for Endpoint:
 
         1.  Ingesting security alerts into Sentinel enables it to be the "central pane of incident management" across the environment.
 

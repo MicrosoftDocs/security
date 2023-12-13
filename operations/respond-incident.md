@@ -1,6 +1,6 @@
 ---
-title: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender
-description: Learn how to resolve an incident using both Microsoft Sentinel and Microsoft 365 Defender, which includes triage, investigation, and resolution. 
+title: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
+description: Learn how to resolve an incident using both Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. 
 ms.date: 03/29/2023
 ms.service: microsoft-365-zero-trust
 author: mjcaparas
@@ -13,10 +13,10 @@ ms.collection:
   - zerotrust-azure
 ---
 
-# Step 4. Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender
+# Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
 
-This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel and Microsoft 365 Defender, which includes triage, investigation, and resolution. 
-Microsoft Sentinel and Microsoft 365 Defender share:
+This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. 
+Microsoft Sentinel and Microsoft Defender XDR share:
 
 - Updates on lifecycle (status, owner, classification) are shared between the products.
 - Evidence gathered during an investigation is shown in the Microsoft Sentinel incident.
@@ -27,8 +27,8 @@ The following diagram shows how Microsoft’s extended detection and response (X
 
 In this diagram:
 
-- Insights from signals across your entire organization feed into Microsoft 365 Defender and Microsoft Defender for Cloud.
-- Microsoft 365 Defender and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors.
+- Insights from signals across your entire organization feed into Microsoft Defender XDR and Microsoft Defender for Cloud.
+- Microsoft Defender XDR and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors.
 - SecOps teams can then analyze and respond to threats.
 - Microsoft Sentinel provides support for multi-cloud environments and integrates with third-party apps and partners.
 
@@ -37,7 +37,7 @@ steps you through detecting and responding to modern attacks with Microsoft’s 
 
 ## Incident response process
 
-The process of incident response to resolve an incident using Microsoft Sentinel and Microsoft 365 Defender is:
+The process of incident response to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR is:
 
 1. Use Microsoft Sentinel portal to triage the potential incident, which includes understanding the details of the incident and taking immediate actions.
 1. Move over to the Microsoft 365 Defender portal to begin your investigation. This includes:

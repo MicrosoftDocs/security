@@ -1,7 +1,7 @@
 ---
 title: Microsoft DART ransomware approach and best practices
 description: Understand how Microsoft's Detection and Response Team (DART) responds to ransomware attacks and their recommendations for containment and post-incident activities.
-keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, microsoft 365 defender
+keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, Microsoft Defender XDR
 search.product: DART
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -89,7 +89,7 @@ Here's an example of the Defender for Cloud Apps dashboard, which allows analysi
 
 ### Microsoft Secure Score
 
-The set of Microsoft 365 Defender services provides live remediation recommendations to reduce the attack surface. Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating that more improvement actions have been taken. See the [Secure Score](/microsoft-365/security/defender/microsoft-secure-score) documentation to find out more about how your organization can use this feature to prioritize remediation actions that are based on their environment.
+The set of Microsoft Defender XDR services provides live remediation recommendations to reduce the attack surface. Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating that more improvement actions have been taken. See the [Secure Score](/microsoft-365/security/defender/microsoft-secure-score) documentation to find out more about how your organization can use this feature to prioritize remediation actions that are based on their environment.
 
 ## The DART approach to conducting ransomware incident investigations
 
@@ -275,7 +275,7 @@ Key information from Microsoft:
 - [Human-operated ransomware](/security/compass/human-operated-ransomware)
 - [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
-- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
 - [Microsoft DART ransomware case study](/security/ransomware/dart-ransomware-case-study)
 
 Microsoft 365:
@@ -286,9 +286,9 @@ Microsoft 365:
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
-- [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft 365 Defender portal
+- [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender portal
 
-Microsoft 365 Defender:
+Microsoft Defender XDR:
 
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 

@@ -44,7 +44,7 @@ Without visibility into the apps being used in your organization, you will not b
 Defender for Cloud Apps has a capability called Cloud Discovery which analyzes your traffic logs against the Microsoft Defender for Cloud Apps catalog of over 31,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization. 
 
 
-:::image type="content" source="media/m365-defender-mcas-architecture-b.png" alt-text="Image of Microsoft 365 Defender and cloud apps":::
+:::image type="content" source="media/m365-defender-mcas-architecture-b.png" alt-text="Image of Microsoft Defender XDR and cloud apps":::
 
 In this illustration, there are two methods that can be used to monitor network traffic and discover cloud apps that are being used by your organization.
 - Cloud App Discovery integrates with Microsoft Defender for Endpoint natively. Defender for Endpoint reports cloud apps and services being accessed from IT-managed Windows 10 and Windows 11 devices. 

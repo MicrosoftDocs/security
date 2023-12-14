@@ -290,7 +290,7 @@ See these additional articles for applying Zero Trust principles to Azure:
   - [Hub virtual networks](azure-infrastructure-networking.md)
 - [Azure Virtual Desktop](azure-infrastructure-avd.md)
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
-- [Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)
+- [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
 
 ## References
 

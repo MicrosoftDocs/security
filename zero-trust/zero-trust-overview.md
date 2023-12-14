@@ -156,7 +156,7 @@ These articles help you apply the principles of Zero Trust to your workloads and
 - [Azure Virtual Desktop](azure-infrastructure-avd.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
-- [Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)
+- [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
 
 ## Related links
 

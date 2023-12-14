@@ -115,7 +115,7 @@ landingContent:
            url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
 
 # Card
-  - title: Threat intelligence for Microsoft 365 Defender subscription holders
+  - title: Threat intelligence for Microsoft Defender XDR subscription holders
     linkLists:
       - linkListType: reference
         links:

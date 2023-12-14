@@ -72,9 +72,9 @@ landingContent:
             url: /microsoft-365/enterprise/deploy-identity-solution-overview
           - text: Zero Trust identity and device configurations
             url: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations
-          - text: Manage endpoints with Microsoft 365 Defender
+          - text: Manage endpoints with Microsoft Defender XDR
             url: /microsoft-365/solutions/manage-devices-with-intune-overview
-          - text: Evaluate, pilot, and deploy Microsoft 365 Defender
+          - text: Evaluate, pilot, and deploy Microsoft Defender XDR
             url: /microsoft-365/security/defender/eval-overview
           - text: Deploy a Microsoft Information Protection solution
             url: /microsoft-365/compliance/information-protection-solution
@@ -100,7 +100,7 @@ landingContent:
             url: azure-virtual-wan.md
           - text: IaaS applications in Amazon Web Services
             url: secure-iaas-apps.md
-          - text: Microsoft Sentinel and Microsoft 365 Defender
+          - text: Microsoft Sentinel and Microsoft Defender XDR
             url: /security/operations/siem-xdr-overview
 
  # Card

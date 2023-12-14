@@ -108,8 +108,8 @@ The Microsoft Entra ID Protection feature has the following triggers:
 * **Unfamiliar sign-in properties** - sign-in is anomalous when compared to sign-in history. This event occurs when user sign-in properties are unfamiliar.
 * **Unfamiliar sign-in** – a non-interactive sign-in occurs. Increase scrutiny on unfamiliar sign-ins, particularly if detected with suspicious devices. We recommend you give immediate attention to detection for non-interactive sign-ins.
 * **Attempted access of Primary Refresh Token (PRT)** - in Windows 10 and 11, Microsoft Defender for Endpoint detects suspicious access to PRT and associated artifacts. Detections feed into the Microsoft Entra risk score, which controls resource conditional access. This detection is low-volume and infrequent.
-* **Microsoft 365 Defender detections** – integrate Microsoft Entra ID Protection and Microsoft 365 Defender to see detections in one portal.
-  * By default, the most relevant alerts for the security operation center (SOC) are enabled. For all Microsoft Entra IP risk detections, or to turn off the integration, make the change in Microsoft 365 Defender [Alert service setting](https://security.microsoft.com/settings/mtp_settings/service_alert_settings).
+* **Microsoft Defender XDR detections** – integrate Microsoft Entra ID Protection and Microsoft Defender XDR to see detections in one portal.
+  * By default, the most relevant alerts for the security operation center (SOC) are enabled. For all Microsoft Entra IP risk detections, or to turn off the integration, make the change in Microsoft Defender XDR [Alert service setting](https://security.microsoft.com/settings/mtp_settings/service_alert_settings).
 
    ![Screenshot of the Show high impact alerts only option.](./media/token-theft-playbook/alert-service-settings.png)
 
@@ -162,7 +162,7 @@ Investigate logs that have user behavior. There's suspicious user activity if:
 * Additional credentials or devices added to the user
   * Record the list of identities to revoke
 * Affected users receive suspicious emails
-  * For phishing or malicious email use Microsoft 365 Defender to investigate and determine other affected users
+  * For phishing or malicious email use Microsoft Defender XDR to investigate and determine other affected users
   * [Investigate malicious email delivered in Microsoft 365](/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered) describes how to find and investigate suspicious email messages.
 * [Phishing investigation](incident-response-playbook-phishing.md) provides guidance on identifying and investigating phishing attacks within your organization.
 * Privileged accounts affected
@@ -254,7 +254,7 @@ OfficeActivity
     | summarize min(TimeGenerated), max(TimeGenerated) by ClientIP, OfficeWorkload
 ```
 
-### Activity in CloudAppEvents tables in Microsoft 365 Defender
+### Activity in CloudAppEvents tables in Microsoft Defender XDR
 
 Use of this method depends on logging setup.
 
@@ -282,7 +282,7 @@ OfficeActivity
 
 Investigate logs that record device behavior. There's suspicious device activity if:
 
-* Microsoft 365 Defender portal:
+* Microsoft Defender portal:
   * The device has token theft-related alerts. Search for device ID: join AlertInfo on AlertId| where DeviceId is x
   * Attempts to access Primary Refresh Token (PRT)
   * User installed suspicious apps, extensions, or they recently browsed to suspicious websites. Search Microsoft Defender for Endpoints alerts for suspicious processes or files. Alerts can include suspicious: implant process from a known emerging threat, process name, process behavior, service launched, or scheduled task activity. For possible C2 comms, use Possible command-and-control activity.
@@ -307,8 +307,8 @@ Data loss is data destruction or leakage. Discover what the attacker accessed an
 
 Use your disaster recovery plan's guidance on attacker access to corporate data. Use the following guidance to help prevent data loss, and to improve or create a disaster recovery plan.
 
-* [Investigate data loss alerts with Microsoft 365 Defender](/microsoft-365/security/defender/dlp-investigate-alerts-defender)
-* [Investigate Microsoft Purview Data Loss Prevention alerts in Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/learn-how-to-investigate-microsoft-purview-data-loss-prevention/ba-p/3732758)
+* [Investigate data loss alerts with Microsoft Defender XDR](/microsoft-365/security/defender/dlp-investigate-alerts-defender)
+* [Investigate Microsoft Purview Data Loss Prevention alerts in Microsoft Defender XDR](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/learn-how-to-investigate-microsoft-purview-data-loss-prevention/ba-p/3732758)
 * [Forensic artifacts in Office 365 and where to find them](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/forensic-artifacts-in-office-365-and-where-to-find-them/ba-p/3634865)
 
 ### Other affected users or devices: entire environment

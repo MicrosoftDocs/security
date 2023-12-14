@@ -1,7 +1,7 @@
 ---
 title: Password spray investigation
 description: Learn how to identify and investigate password spray attacks, protect data, and minimize further risks.
-keywords: password spray, password, investigation, attack, email, microsoft threat protection, microsoft 365, search, security, query, telemetry, security events, antivirus, firewall, Microsoft 365 Defender
+keywords: password spray, password, investigation, attack, email, microsoft threat protection, microsoft 365, search, security, query, telemetry, security events, antivirus, firewall, Microsoft Defender XDR
 search.product: DART
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -637,6 +637,6 @@ Examine guidance for identifying and investigating these additional types of att
 
 - [Overview](incident-response-overview.md) for Microsoft security products and resources for new-to-role and experienced analysts
 - [Planning](incident-response-planning.md) for your Security Operations Center (SOC)
-- [Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) incident response
+- [Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) incident response
 - [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response

@@ -113,7 +113,7 @@
 						class="st11">Microsoft Sentinel</tspan></text>		</g>
 		<g id="shape2000-21" v:mID="2000" v:groupContext="shape" v:layerMember="1" transform="translate(189.375,-237.534)">
 			<title>Sheet.2000</title>
-			<desc>Start investigation in Microsoft 365 Defender</desc>
+			<desc>Start investigation in Microsoft Defender XDR</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(447000):26"/>
 			</v:userDefs>

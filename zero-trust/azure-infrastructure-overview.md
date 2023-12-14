@@ -106,14 +106,14 @@ In this diagram, the Azure infrastructure is contained within one Microsoft Entr
 
 ## Threat Protection with Microsoft Defender for Cloud
 
-**Microsoft Defender for Cloud** is an extended detection and response (XDR) solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your environment. Defender for Cloud is intended to be used together with Microsoft 365 Defender to provide a greater breadth of correlated protection of your environment, as shown in the following diagram.
+**Microsoft Defender for Cloud** is an extended detection and response (XDR) solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your environment. Defender for Cloud is intended to be used together with Microsoft Defender XDR to provide a greater breadth of correlated protection of your environment, as shown in the following diagram.
 
 :::image type="content" source="media/azure-infra-overview/azure-infra-overview-threat-protection.png" alt-text="Diagram of threat protection with Microsoft Defender for Cloud." lightbox="media/azure-infra-overview/azure-infra-overview-threat-protection.png":::
 
 In the diagram:
 
 - Defender for Cloud is enabled for a management group that includes multiple Azure subscriptions.
-- Microsoft 365 Defender is enabled for Microsoft 365 apps and data, SaaS apps that are integrated with Microsoft Entra ID, and on-premises Active Directory Domain Services (AD DS) servers.
+- Microsoft Defender XDR is enabled for Microsoft 365 apps and data, SaaS apps that are integrated with Microsoft Entra ID, and on-premises Active Directory Domain Services (AD DS) servers.
 
 For more information about configuring management groups and enabling Defender for Cloud, see:
 
@@ -219,7 +219,7 @@ See these additional articles for applying Zero Trust principles to Azure:
 - [Azure Virtual Desktop](azure-infrastructure-avd.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
-- [Microsoft Sentinel and Microsoft 365 Defender](/security/operations/siem-xdr-overview)
+- [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
 
 ## Technical illustrations
 

@@ -1,7 +1,7 @@
 ---
 title: Implement threat protection and XDR
 description: Implement threat protection and XDR.  
-ms.date: 11/30/2023
+ms.date: 12/18/2023
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -87,11 +87,11 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Turn on XDR tools: <br> - Azure AD Identity Protection <br> - Defender for Identity <br> - Defender for Office 365 <br> - Defender for Cloud Apps <br><br> Investigate and respond to threats using Defender for Microsoft 365 | Turn on additional XDR tools: <br>- Defender for Endpoint <br>- Defender for Cloud <br><br> Define internal process for security operations (SecOps) <br><br> Monitor honeypot resources with XDR tools | Turn on Defender for IoT <br><br> Design an Azure Sentinel workspace and ingest XDR signals <br><br> Proactively hunt for threats | Evolve SecOps as a discipline in your organization <br><br> Leverage automation to reduce load on your SecOps analysts |
+| Turn on XDR tools: <br> - Azure AD Identity Protection <br> - Defender for Identity <br> - Defender for Office 365 <br> - Defender for Cloud Apps <br><br> Investigate and respond to threats using Microsoft Defender XDR | Turn on additional XDR tools: <br>- Defender for Endpoint <br>- Defender for Cloud <br><br> Define internal process for security operations (SecOps) <br><br> Monitor honeypot resources with XDR tools | Turn on Defender for IoT <br><br> Design an Microsoft Sentinel workspace and ingest XDR signals <br><br> Proactively hunt for threats | Evolve SecOps as a discipline in your organization <br><br> Leverage automation to reduce load on your SecOps analysts |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
-:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="PowerPoint slide for the deployment stages of reducing business damage from a breach." lightbox="../media/adoption-guide/placeholder.svg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.svg" alt-text="PowerPoint slide for the deployment stages of implementing threat detection and XDR." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.svg":::
 
 ### Understand your organization
 
@@ -148,7 +148,7 @@ In this stage, you:
   - Defender for Office 365
   - Defender for Cloud Apps
 
-- Investigate and respond to threats using Defender for Microsoft 365
+- Investigate and respond to threats using Microsoft Defender XDR
 
 
 ##### Turn on XDR tools
@@ -162,7 +162,7 @@ This objective is
 |  |  |
 
 
-##### Investigate and respond to threats using Defender for Microsoft 365
+##### Investigate and respond to threats using Microsoft Defender XDR
 
 This objective is
 
@@ -197,7 +197,7 @@ This objective is
 |  |  |
 
 
-##### Define internal process for security operations (SecOps)
+##### Define internal process for SecOps
 
 
 This objective is
@@ -225,7 +225,7 @@ This objective is
 In this stage, you:
 
 - Turn on Defender for IoT
-- Design an Azure Sentinel workspace and ingest XDR signals
+- Design an Microsoft Sentinel workspace and ingest XDR signals
 - Proactively hunt for threats
 
 ##### Turn on Defender for IoT
@@ -239,7 +239,7 @@ This objective is
 |  |  |
 
 
-##### Design an Azure Sentinel workspace and ingest XDR signals
+##### Design an Microsoft Sentinel workspace and ingest XDR signals
 
 This objective is
 
@@ -290,6 +290,8 @@ This objective is
 |  |  |
 |  |  |
 |  |  |
+
+### Cloud adoption plan
 
 
 ## Ready phase

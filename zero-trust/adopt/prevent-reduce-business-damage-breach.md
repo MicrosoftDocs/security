@@ -1,7 +1,7 @@
 ---
 title: Prevent or reduce business damage from a breach with Zero Trust
 description: Prevent or reduce business damage from a breach with Zero Trust.  
-ms.date: 11/30/2023
+ms.date: 12/18/2023
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -183,6 +183,13 @@ To prevent or reduce business damage from a breach, use the information in these
 Note that the deployment recommendations for these two separate tracks require the participation of separate groups of your IT department and **the activities for each track can be done in parallel**.
 
 ## Next Steps
+
+For this business scenario:
+
+- [Implement security breach prevention and recovery infrastructure](prevent-reduce-business-damage-breach-infrastructure.md)
+- [Implement threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md)
+
+Additional articles in the Zero Trust adoption framework:
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)

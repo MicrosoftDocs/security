@@ -1,7 +1,7 @@
 ---
 title: Implement security breach prevention and recovery infrastructure
 description: Implement security breach prevention and recovery infrastructure.  
-ms.date: 11/30/2023
+ms.date: 12/18/2023
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -88,11 +88,11 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Secure privileged accounts <br><br> Implement Microsoft 365 Backup and Azure Backup for critical business data <br><br> Implement Site Recovery for critical workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Create honeypot resources <br><br> Get started with Microsoft Purview Insider Risk Management | Implement Microsoft 365 Backup and Azure Backups for **all** business data <br><br> Implement Azure Site Recovery for **all** workloads <br><br> Gain visibility to network traffic <br><br> Design your threat and business continuity/disaster recovery (BC/DR) response | Discontinue legacy network security technology <br><br> Practice threat and BC/DR response |
+| Secure privileged accounts <br><br> Implement Microsoft 365 Backup and Azure Backup for **critical** business data <br><br> Implement Site Recovery for **critical** workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Create honeypot resources <br><br> Get started with Microsoft Purview Insider Risk Management | Implement Microsoft 365 Backup and Azure Backups for **all** business data <br><br> Implement Azure Site Recovery for **all** workloads <br><br> Gain visibility to network traffic <br><br> Design your threat and business continuity/disaster recovery (BCDR) response | Discontinue legacy network security technology <br><br> Practice threat and BCDR response |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
-:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="PowerPoint slide for the deployment stages of preventing business damage from a breach." lightbox="../media/adoption-guide/placeholder.svg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-breach-prevention-recovery-progress-tracking.svg" alt-text="PowerPoint slide for the deployment stages of implementing breach prevention and recovery." lightbox="../media/adoption-guide/zero-trust-breach-prevention-recovery-progress-tracking.svg":::
 
 ### Understand your organization
 
@@ -155,7 +155,7 @@ In this stage, you:
 |:-----|:-----|
 |  |  |
 
-##### Implement Azure Backup for critical business data
+##### Implement Microsoft 365 and Azure Backup for critical business data
 
 | Resource | Description |
 |:-----|:-----|
@@ -210,6 +210,9 @@ This objective is
 | --- | --- |
 |  |  |
 
+#### Get started with Microsoft Purview Insider Risk Management
+
+
 #### Stage 3
 
 In this stage, you:
@@ -217,7 +220,7 @@ In this stage, you:
 - Implement Microsoft 365 Backup and Azure Backup for **all** business data
 - Implement Azure Site Recovery for **all** workloads
 - Gain visibility into network traffic
-- Design your threat and BC/DR response
+- Design your threat and BCDR response
 
 ##### Implement Microsoft 365 Backup and Azure Backup for all business data
 
@@ -243,7 +246,7 @@ This objective is
 | --- | --- |
 |  |  |
 
-##### Design your threat and BC/DR response
+##### Design your threat and BCDR response
 
 This objective is
 
@@ -256,7 +259,7 @@ This objective is
 In this stage, you:
 
 - Discontinue legacy network security technology
-- Practice threat and BC/DR response
+- Practice threat and BCDR response
 
 ##### Discontinue legacy network security technology
 
@@ -266,13 +269,15 @@ This objective is
 | --- | --- |
 |  |  |
 
-##### Practice threat and BC/DR response
+##### Practice threat and BCDR response
 
 This objective is
 
 | Resource | Description |
 | --- | --- |
 |  |  |
+
+### Cloud adoption plan
 
 ## Ready phase
 

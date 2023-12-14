@@ -26,7 +26,7 @@ This integration guide includes instructions for integrating with [Microsoft Sen
 
 ### Microsoft Sentinel
 
-Microsoft’s approach to threat protection is to combine both Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) into an integrated experience, with Microsoft Sentinel, Microsoft 365 Defender, and Microsoft Defender for Cloud. This approach gives organizations the best of both worlds: end-to-end threat visibility across all of your resources; correlated, prioritized alerts based on the deep understanding Microsoft has of specific resources and AI that stitches that signal together; and coordinated action across the organization.
+Microsoft’s approach to threat protection is to combine both Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) into an integrated experience, with Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Defender for Cloud. This approach gives organizations the best of both worlds: end-to-end threat visibility across all of your resources; correlated, prioritized alerts based on the deep understanding Microsoft has of specific resources and AI that stitches that signal together; and coordinated action across the organization.
 
 Microsoft Sentinel, Microsoft’s cloud-native SIEM, provides a bird’s eye view across your entire digital estate. It provides intelligent security analytics across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds. It then cross-correlates and detects threats using machine learning, and streamlines investigations with AI and powerful hunting tools.
 

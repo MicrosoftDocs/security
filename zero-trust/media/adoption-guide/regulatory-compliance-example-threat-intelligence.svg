@@ -100,14 +100,14 @@
 		</g>
 		<g id="shape1010-22" v:mID="1010" v:groupContext="shape" v:layerMember="1" transform="translate(267.111,-160.77)">
 			<title>Sheet.1010</title>
-			<desc>Microsoft 365 Defender Microsoft Defender for Cloud Microsoft...</desc>
+			<desc>Microsoft Defender XDR Microsoft Defender for Cloud Microsoft...</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(8000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)"/>
 			<v:textRect cx="104.252" cy="306.37" width="208.51" height="16.4594"/>
 			<rect x="0" y="298.141" width="208.503" height="16.4594" class="st2"/>
-			<text x="0" y="289.57" class="st8" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Microsoft 365 Defender<v:newlineChar/><tspan
+			<text x="0" y="289.57" class="st8" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Microsoft Defender XDR<v:newlineChar/><tspan
 						x="0" dy="1.7em" class="st9">Microsoft Defender for Cloud<v:newlineChar/></tspan><tspan x="0" dy="1.7em"
 						class="st9">Microsoft Sentinel</tspan></text>		</g>
 		<g id="group1013-27" transform="translate(243.126,-20.5)" v:mID="1013" v:groupContext="group" v:layerMember="4">

@@ -88,7 +88,7 @@
 		<a xlink:href="https://learn.microsoft.com/security/operations/siem-xdr-overview">
 			<g id="shape2082-12" v:mID="2082" v:groupContext="shape" transform="translate(48.0095,-96.2158)">
 				<title>Rectangle.2506</title>
-				<desc>Implement Microsoft Sentinel and Microsoft 365 Defender</desc>
+				<desc>Implement Microsoft Sentinel and Microsoft Defender XDR</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
 					<v:ud v:nameU="visNavOrder" v:val="VT0(88000):26"/>
@@ -96,7 +96,7 @@
 				<v:textBlock v:margins="rect(4,4,4,8)" v:verticalAlign="2"/>
 				<v:textRect cx="452.702" cy="448.646" width="905.41" height="98.6436"/>
 				<rect x="0" y="399.324" width="905.405" height="98.6436" class="st6"/>
-				<text x="8" y="490.37" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Implement Microsoft Sentinel and Microsoft 365 Defender</text>			</g>
+				<text x="8" y="490.37" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Implement Microsoft Sentinel and Microsoft Defender XDR</text>			</g>
 		</a>
 		<a xlink:href="https://aka.ms/zero-trust-m365-defender">
 			<g id="shape2083-15" v:mID="2083" v:groupContext="shape" transform="translate(293.414,-128.175)">

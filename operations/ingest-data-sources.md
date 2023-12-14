@@ -61,7 +61,11 @@ Use the following recommendations to get started with configuring data connector
         2.  Incident investigation starts in Sentinel and should continue in the Microsoft Defender portal or Defender for Cloud, if deeper analysis is required.
 
         >[!NOTE]
+<<<<<<< HEAD
         >If you have enabled the Microsoft Defender XDR connector, a bi-directional sync between 365 Defender Incidents and Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft Defender XDR-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection). For more information, see [Microsoft Defender XDR incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-defender-xdr-incidents-and-microsoft-incident-creation-rules).
+
+
+>>>>>>> upstream/main
 
     4.  Microsoft Defender for Cloud Apps Alerts.
 
@@ -153,7 +157,9 @@ Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organi
 The brains of Sentinel come from the Analytic Rules. These are rules you set to tell Sentinel to alert you to events with a set of conditions that you consider to be important. The out-of-the-box decisions Sentinel makes are based on User Entity Behavioral Analytics (UEBA) and on correlations of data across multiple data sources. 
 
 >[!NOTE]
+<<<<<<< HEAD
 >If you have enabled the Microsoft Defender XDR connector, a bi-directional sync between 365 Defender Incidents and Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft Defender XDR-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection). For more information, see [Microsoft Defender XDR incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-defender-xdr-incidents-and-microsoft-incident-creation-rules).
+
 
 Microsoft Sentinel enables the Fusion Advanced multistage attack detection analytic rule by default to automatically identify multistage attacks. Leveraging anomalous behavior and suspicious activity events observed across the cyber kill chain, Microsoft Sentinel generates incidents that allow you to see the compromise incidents with two or more alert activities in it with a high degree of confidence.
 

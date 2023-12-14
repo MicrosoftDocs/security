@@ -46,7 +46,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Integrating Microsoft 365 Defender into your security operations
+        - text: Integrating Microsoft Defender XDR into your security operations
           url: /microsoft-365/security/defender/integrate-microsoft-365-defender-secops
         - text: Microsoft Defender for Office 365 security operations guide
           url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide

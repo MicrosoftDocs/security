@@ -118,7 +118,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.svg" alt-text="PowerPoint slide for the deployment stages of implementing threat detection and XDR." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.svg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png" alt-text="PowerPoint slide for the deployment stages of implementing threat detection and XDR." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png":::
 
 ### Understand your organization
 

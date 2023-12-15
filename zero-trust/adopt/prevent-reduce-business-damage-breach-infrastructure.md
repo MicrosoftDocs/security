@@ -282,8 +282,8 @@ This objective is to create boundaries on your network so that intermediate anal
 
 | Recommendations | Resource |
 |:-----|:-----|
-| Use many ingress/egress cloud micro-perimeters with some micro-segmentation. | [Secure networks with Zero Trust](/security/zero-trust/deploy/networks?view=o365-worldwide#i-network-segmentation-many-ingressegress-cloud-micro-perimeters-with-some-micro-segmentation) |
-| Use multiple subnets and network security groups to host multiple tiers of an app and restrict traffic. | [Apply Zero Trust principles to a spoke VNet in Azure](/security/zero-trust/azure-infrastructure-iaas?view=o365-worldwide) <br><br> [Apply Zero Trust principles to a spoke VNet with Azure PaaS Services](/security/zero-trust/azure-infrastructure-paas?view=o365-worldwide) |
+| Use many ingress/egress cloud micro-perimeters with some micro-segmentation. | [Secure networks with Zero Trust](/security/zero-trust/deploy/networks#i-network-segmentation-many-ingressegress-cloud-micro-perimeters-with-some-micro-segmentation) |
+| Use multiple subnets and network security groups to host multiple tiers of an app and restrict traffic. | [Apply Zero Trust principles to a spoke VNet in Azure](/security/zero-trust/azure-infrastructure-iaas) <br><br> [Apply Zero Trust principles to a spoke VNet with Azure PaaS Services](/security/zero-trust/azure-infrastructure-paas) |
 
 ##### Implement a patching plan
 
@@ -354,7 +354,7 @@ Once you are satisfied that Azure Site Recovery is working for your critical dat
 
 Cloud applications that have opened endpoints to external environments, such as the internet or on-premises, are at risk of attacks coming in from those environments. To prevent these attacks, you must scan the traffic for malicious payloads or logic.
 
-For more information, see [Cloud native filtering and protection for known threats](/security/zero-trust/deploy/networks?view=o365-worldwide#ii-threat-protection-cloud-native-filtering-and-protection-for-known-threats).
+For more information, see [Cloud native filtering and protection for known threats](/security/zero-trust/deploy/networks#ii-threat-protection-cloud-native-filtering-and-protection-for-known-threats).
 
 ##### Design your threat and BCDR response
 
@@ -387,7 +387,7 @@ In this stage, you further secure your network and ensure that your BCDR plan an
 
 Examine the set of technologies and products that your organization uses to provide network security and determine whether they are necessary or redundant with other network security capabilities. Each network security technology can also be a target for attackers. For example, if the technology or product isn’t being updated on a timely basis, consider removing it.
 
-For more information, see [Discontinue legacy network security technology](/security/zero-trust/deploy/networks?view=o365-worldwide#vii-discontinue-legacy-network-security-technology), which describes the types of network security technologies that you might no longer need.
+For more information, see [Discontinue legacy network security technology](/security/zero-trust/deploy/networks#vii-discontinue-legacy-network-security-technology), which describes the types of network security technologies that you might no longer need.
 
 ##### Practice threat and BCDR response
 

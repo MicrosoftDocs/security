@@ -159,10 +159,10 @@ The following table includes several Microsoft training resources to help your s
 
 | Resource | Description |
 |:-----|:-----|
-| Module: [Mitigate incidents with Microsoft Defender XDR](https://learn.microsoft.com/en-us/training/modules/mitigate-incidents-microsoft-365-defender/) | Learn how the Microsoft Defender XDR portal provides a unified view of incidents and alerts from the Microsoft Defender XDR family of products. |
-| Learning Path: [Mitigate threats using Microsoft Defender XDR](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) | Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft Defender XDR. |
-| Module: [Improve your reliability with modern operations practices: Incident response](https://learn.microsoft.com/en-us/training/modules/improve-reliability-incidents/) | Learn the fundamentals of efficient incident response and the Azure tools that make them possible. |
-| Module: [Training: Security incident management in Microsoft Sentinel](https://learn.microsoft.com/en-us/training/modules/incident-management-sentinel/) | Learn about Microsoft Sentinel events and entities and discover ways to resolve incidents. |
+| Module: [Mitigate incidents with Microsoft Defender XDR](/training/modules/mitigate-incidents-microsoft-365-defender/) | Learn how the Microsoft Defender XDR portal provides a unified view of incidents and alerts from the Microsoft Defender XDR family of products. |
+| Learning Path: [Mitigate threats using Microsoft Defender XDR](/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) | Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft Defender XDR. |
+| Module: [Improve your reliability with modern operations practices: Incident response](/training/modules/improve-reliability-incidents/) | Learn the fundamentals of efficient incident response and the Azure tools that make them possible. |
+| Module: [Training: Security incident management in Microsoft Sentinel](/training/modules/incident-management-sentinel/) | Learn about Microsoft Sentinel events and entities and discover ways to resolve incidents. |
 
 #### Stage 1
 
@@ -174,11 +174,11 @@ Start with the core suite of XDR tools to protect your organization from attacks
 
 | Resource | Description |
 |:-----|:-----|
-| [Microsoft Entra ID Identity Protection](https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection) | Helps organizations detect, investigate, and remediate identity-based risks. These identity-based risks can be further fed into tools like Entra Conditional Access to make access decisions or fed back to a security information and event management (SIEM) tool for further investigation and correlation. |
-| [Defender for Identity](https://learn.microsoft.com/en-us/defender-for-identity/what-is) | 
+| [Microsoft Entra ID Identity Protection](/entra/id-protection/overview-identity-protection) | Helps organizations detect, investigate, and remediate identity-based risks. These identity-based risks can be further fed into tools like Entra Conditional Access to make access decisions or fed back to a security information and event management (SIEM) tool for further investigation and correlation. |
+| [Defender for Identity](/defender-for-identity/what-is) | 
 Leverages signals from both on-premises Active Directory and cloud identities to help you better identify, detect, and investigate advanced threats directed at your organization. |
-| [Defender for Office 365](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/mdo-about?view=o365-worldwide) | A seamless integration into your Microsoft 365 or Office 365 subscription that protects against threats in email, links (URLS), attachments, and collaboration tools. |
-| [Defender for Cloud Apps](https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps?view=o365-worldwide | Delivers full protection for SaaS applications, helping you monitor and protect your cloud app data. |
+| [Defender for Office 365](/microsoft-365/security/office-365-security/mdo-about) | A seamless integration into your Microsoft 365 or Office 365 subscription that protects against threats in email, links (URLS), attachments, and collaboration tools. |
+| [Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps | Delivers full protection for SaaS applications, helping you monitor and protect your cloud app data. |
 
 ##### Investigate and respond to threats using Microsoft Defender XDR
 
@@ -189,8 +189,8 @@ Now that you have enabled the primary XDR tools, you can begin using Microsoft D
 | [Integrating Microsoft 365 XDR into your security operations](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops)	| Carefully plan your integration with your SecOps team to optimize the day-to-day operations and lifecycle management of the tools in the Microsoft Defender XDR. |
 | [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) | How to use Microsoft Defender XDR to analyze alerts and incidents and incorporate best practices into your SecOps procedures and processes. |
 | [Investigate incidents with Microsoft Defender XDR](/microsoft-365/security/defender/investigate-incidents) | How to analyze the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan. |
-| [Module: Mitigate incidents with Microsoft Defender XDR](https://learn.microsoft.com/en-us/training/modules/mitigate-incidents-microsoft-365-defender/) | Learn how the Microsoft Defender XDR portal provides a unified view of incidents and alerts from the Microsoft Defender XDR family of products. |
-| [Learning Path: Mitigate threats using Microsoft Defender XDR](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) | Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft Defender XDR. |
+| [Module: Mitigate incidents with Microsoft Defender XDR](/training/modules/mitigate-incidents-microsoft-365-defender/) | Learn how the Microsoft Defender XDR portal provides a unified view of incidents and alerts from the Microsoft Defender XDR family of products. |
+| [Learning Path: Mitigate threats using Microsoft Defender XDR](/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) | Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft Defender XDR. |
 
 #### Stage 2
 
@@ -210,13 +210,13 @@ A cloud-native application protection platform (CNAPP) designed to protect cloud
 
 | Resource | Description |
 |:-----|:-----|
-| [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide) | Get started with the documentation set. |
-| Module: [Protect against threats with Microsoft Defender for Endpoint](https://learn.microsoft.com/en-us/training/modules/m365-security-threat-protect/) | Learn how to hunt for threats and remediate risks for your devices. |
-| Learning Path: [Mitigate threats using Microsoft Defender for Endpoint](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/) | Learn how to detect, investigate, and respond to advanced threats on your devices.  |
-| [Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction) | Get started with the documentation set. |
-| [Security alerts and incidents for Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-overview) | Use Microsoft Defender for Cloud Security to perform incident response for your Azure, hybrid cloud, and on-premises workloads. |
-| Module: [Remediate security alerts using Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/training/modules/remediate-azure-defender-security-alerts/) | Learn how to hunt for threats and remediate risks for your Azure, hybrid cloud, and on-premises workloads.  |
-| Learning Path: [Mitigate threats using Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-azure-defender/) | Learn how to detect, investigate, and respond to advanced threats on your Azure, hybrid cloud, and on-premises workloads.  |
+| [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) | Get started with the documentation set. |
+| Module: [Protect against threats with Microsoft Defender for Endpoint](/training/modules/m365-security-threat-protect/) | Learn how to hunt for threats and remediate risks for your devices. |
+| Learning Path: [Mitigate threats using Microsoft Defender for Endpoint](/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/) | Learn how to detect, investigate, and respond to advanced threats on your devices.  |
+| [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) | Get started with the documentation set. |
+| [Security alerts and incidents for Microsoft Defender for Cloud](/azure/defender-for-cloud/alerts-overview) | Use Microsoft Defender for Cloud Security to perform incident response for your Azure, hybrid cloud, and on-premises workloads. |
+| Module: [Remediate security alerts using Microsoft Defender for Cloud](/training/modules/remediate-azure-defender-security-alerts/) | Learn how to hunt for threats and remediate risks for your Azure, hybrid cloud, and on-premises workloads.  |
+| Learning Path: [Mitigate threats using Microsoft Defender for Cloud](/training/paths/sc-200-mitigate-threats-using-azure-defender/) | Learn how to detect, investigate, and respond to advanced threats on your Azure, hybrid cloud, and on-premises workloads.  |
 
 ##### Define internal process for SecOps
 
@@ -236,8 +236,8 @@ Your deployed honeypot resources act as a target for cyber attackers and can be 
 
 | Resource | Description |
 |:-----|:-----|
-| [Incident response with Microsoft Defender XDR](https://learn.microsoft.com/en-us/microsoft-365/security/defender/incidents-overview?view=o365-worldwide) | Use Microsoft Defender XDR to spot incidents with alerts that affect your honeypot resources, such as identities, devices, and cloud apps. |
-| [Security alerts and incidents for Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/alerts-overview) | Use Microsoft Defender for Cloud Security to search for alerts are triggered by advanced detections for your honeypot resources, such as Azure, hybrid cloud, and on-premises workloads. |
+| [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) | Use Microsoft Defender XDR to spot incidents with alerts that affect your honeypot resources, such as identities, devices, and cloud apps. |
+| [Security alerts and incidents for Microsoft Defender for Cloud](/azure/defender-for-cloud/alerts-overview) | Use Microsoft Defender for Cloud Security to search for alerts are triggered by advanced detections for your honeypot resources, such as Azure, hybrid cloud, and on-premises workloads. |
 
 #### Stage 3
 
@@ -249,9 +249,9 @@ The Internet of Things (IoT) supports billions of connected devices that use bot
 
 | Resource | Description |
 |:-----|:-----|
-| [Microsoft Defender for IoT](https://learn.microsoft.com/en-us/azure/defender-for-iot/organizations/overview) | Get started with the documentation set. |
-| [Module: Introduction to Microsoft Defender for IoT](https://learn.microsoft.com/en-us/training/modules/introduction-to-microsoft-defender-iot/) | Learn about Defender for IoT components and features and how they support OT and IoT device security monitoring. |
-| [Learning Path: Enhance IoT solution security by using Microsoft Defender for IoT](https://learn.microsoft.com/en-us/training/paths/enhance-iot-solution-security-by-using-azure-defender/) | Learn about security considerations that apply at each level of the IoT solution and the Azure services and tools that can be configured to address security concerns from the ground up. |
+| [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/overview) | Get started with the documentation set. |
+| [Module: Introduction to Microsoft Defender for IoT](/training/modules/introduction-to-microsoft-defender-iot/) | Learn about Defender for IoT components and features and how they support OT and IoT device security monitoring. |
+| [Learning Path: Enhance IoT solution security by using Microsoft Defender for IoT](/training/paths/enhance-iot-solution-security-by-using-azure-defender/) | Learn about security considerations that apply at each level of the IoT solution and the Azure services and tools that can be configured to address security concerns from the ground up. |
 
 ##### Design a Microsoft Sentinel workspace and ingest XDR signals
 
@@ -260,10 +260,10 @@ Microsoft Sentinel is a cloud-native solution that provides security information
 | Resource | Description |
 |:-----|:-----|
 | [Implement Microsoft Sentinel and Microsoft Defender XDR for Zero Trust](/security/operations/siem-xdr-overview) | Get started with this solution documentation that also incorporates Zero Trust principles. |
-| Module: [Connect Microsoft Defender XDR to Microsoft Sentinel](https://learn.microsoft.com/en-us/training/modules/connect-microsoft-defender-365-to-azure-sentinel/) | Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft Defender XDR. |
-| [Architect your Microsoft Sentinel workspace](https://learn.microsoft.com/en-us/security/operations/siem-workspace) | Learn how to how to design and implement Microsoft Sentinel workspaces. |
-| [Ingest data sources and configure incident detection in Microsoft Sentinel](https://learn.microsoft.com/en-us/security/operations/ingest-data-sources) | Learn how to configure data connectors for data ingestion into your Microsoft Sentinel workspace.  |
-| Module: [Connect data to Microsoft Sentinel using data connectors](https://learn.microsoft.com/en-us/training/modules/connect-data-to-azure-sentinel-with-data-connectors/) | Get an overview of the available data connectors for Microsoft Sentinel. |
+| Module: [Connect Microsoft Defender XDR to Microsoft Sentinel](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/) | Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft Defender XDR. |
+| [Architect your Microsoft Sentinel workspace](/security/operations/siem-workspace) | Learn how to how to design and implement Microsoft Sentinel workspaces. |
+| [Ingest data sources and configure incident detection in Microsoft Sentinel](/security/operations/ingest-data-sources) | Learn how to configure data connectors for data ingestion into your Microsoft Sentinel workspace.  |
+| Module: [Connect data to Microsoft Sentinel using data connectors](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/) | Get an overview of the available data connectors for Microsoft Sentinel. |
 
 ##### Proactively hunt for threats
 
@@ -271,9 +271,9 @@ Now that your XDR and SIEM infrastructure is in place, you and your SecOps team 
 
 | Resource | Description |
 |:-----|:-----|
-| [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](https://learn.microsoft.com/en-us/microsoft-365/security/defender/advanced-hunting-overview?view=o365-worldwide) | Get started with the documentation set for threat hunting with Microsoft Defender XDR. |
-| [Hunt for threats with Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/hunting) | Get started with the documentation set for threat hunting with Microsoft Sentinel. |
-| Module: [Threat hunting with Microsoft Sentinel](https://learn.microsoft.com/en-us/training/modules/hunt-threats-sentinel/) | Learn to proactively identify threat behaviors by using Microsoft Sentinel queries. |
+| [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](/microsoft-365/security/defender/advanced-hunting-overview) | Get started with the documentation set for threat hunting with Microsoft Defender XDR. |
+| [Hunt for threats with Microsoft Sentinel](/azure/sentinel/hunting) | Get started with the documentation set for threat hunting with Microsoft Sentinel. |
+| Module: [Threat hunting with Microsoft Sentinel](/training/modules/hunt-threats-sentinel/) | Learn to proactively identify threat behaviors by using Microsoft Sentinel queries. |
 
 #### Stage 4
 
@@ -287,9 +287,9 @@ To evolve your SecOps team and discipline beyond the day-to-day tasks of inciden
 
 | Resource | Description |
 |:-----|:-----|
-| [Threat analytics in Microsoft Defender XDR](https://learn.microsoft.com/en-us/microsoft-365/security/defender/threat-analytics?view=o365-worldwide) | Use the threat analytics dashboard in the [Microsoft Defender XDR portal](https://security.microsoft.com/threatanalytics3) (requires sign-in) for reports that are most relevant to your organization. |
-| [Microsoft Defender Threat Intelligence (Defender TI)](https://learn.microsoft.com/en-us/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) | Use this built-in platform to streamline triage, incident response, threat hunting, vulnerability management, and cyber threat intelligence analyst workflows when conducting threat infrastructure analysis and gathering threat intelligence. |
-| [Microsoft Security Blog](https://www.microsoft.com/en-us/security/blog/) | Get the latest about security threats and new features and updates for Microsoft Defender XDR and Microsoft Sentinel. |
+| [Threat analytics in Microsoft Defender XDR](/microsoft-365/security/defender/threat-analytics) | Use the threat analytics dashboard in the [Microsoft Defender XDR portal](https://security.microsoft.com/threatanalytics3) (requires sign-in) for reports that are most relevant to your organization. |
+| [Microsoft Defender Threat Intelligence (Defender TI)](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) | Use this built-in platform to streamline triage, incident response, threat hunting, vulnerability management, and cyber threat intelligence analyst workflows when conducting threat infrastructure analysis and gathering threat intelligence. |
+| [Microsoft Security Blog](https://www.microsoft.com/security/blog/) | Get the latest about security threats and new features and updates for Microsoft Defender XDR and Microsoft Sentinel. |
 
 ##### Leverage automation to reduce load on your SecOps analysts
 
@@ -297,9 +297,9 @@ Use the capabilities of Microsoft Defender XDR and Microsoft Sentinel to automat
 
 | Resource | Description |
 |:-----|:-----|
-| [Automated investigation and response in Microsoft Defender XDR](https://learn.microsoft.com/en-us/microsoft-365/security/defender/m365d-autoir?view=o365-worldwide) | Get started with the Microsoft Defender XDR documentation set. |
-| [Configure automated investigation and remediation capabilities](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation?view=o365-worldwide) | For attacks on devices, get started with the Microsoft Defender for Endpoint documentation set. |
-| [Automate threat response with playbooks in Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/automate-responses-with-playbooks) | Get started with the documentation set for using playbooks in Microsoft Sentinel. |
+| [Automated investigation and response in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-autoir) | Get started with the Microsoft Defender XDR documentation set. |
+| [Configure automated investigation and remediation capabilities](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation) | For attacks on devices, get started with the Microsoft Defender for Endpoint documentation set. |
+| [Automate threat response with playbooks in Microsoft Sentinel](/azure/sentinel/automate-responses-with-playbooks) | Get started with the documentation set for using playbooks in Microsoft Sentinel. |
 
 ### Cloud adoption plan
 
@@ -309,7 +309,7 @@ An adoption plan is an essential requirement for a successful cloud adoption. Ke
 - **The plan is iterative:** As you start to roll out your plan, you'll learn many things about your XDR environment and the tools you're using. At each stage of your roll-out, revisit your results compared to the objectives and fine tune the plans. For example, this can include revisiting earlier work to fine tune procedures and policies.
 - **Training your SecOps staff is well-planned:** From your security architects to your frontline security analysts, everybody is trained to be successful with their threat protection, detection, mitigation, and recovery responsibilities.
 
-For more information from the Cloud Adoption Framework for Azure, see [Plan for cloud adoption](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/plan/plan-intro).
+For more information from the Cloud Adoption Framework for Azure, see [Plan for cloud adoption](/azure/cloud-adoption-framework/plan/plan-intro).
 
 
 ## Ready phase

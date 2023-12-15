@@ -12,14 +12,27 @@ ms.collection:
 
 # Implement security breach prevention and recovery infrastructure
 
-Intro
+As part of Zero Trust adoption guidance, this article is part of the part of the Prevent or reduce business damage from a breach (link to be added) business scenario and describes how to protect your organization from cyberattacks. This article focuses on how to deploy additional security measures to prevent a breach and limit its spread and to create and test a business continuity and disaster recovery (BCDR) infrastructure to more quickly recover from a destructive breach.
 
-- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
-- [Implement threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md)
+For the elements of the “assume breach” Zero Trust guiding principle:
+
+- Minimize blast radius and segment access
+
+  Described in this article.
+
+ - Verify end-to-end encryption
+
+  Described in this article.
+ 
+- Use analytics to get visibility, drive threat detection, and improve defenses
+
+  Described in the [implement threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md) article.
+
+This article assumes that you have already [modernized your security posture](rapidly-modernize-security-posture.md).
 
 ## The adoption cycle for implementing security breach prevention and recovery infrastructure
 
-This article walks through implementing security breach prevention and recovery infrastructure elements of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
+This article walks through implementing security breach prevention and recovery infrastructure of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
 :::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
 
@@ -51,38 +64,39 @@ The motivations for security breach prevention and recovery infrastructure are s
 
 | Area | Motivations |
 | --- | --- |
-| Business needs |  |
-| IT needs |  |
-| Operational needs |  |
-| Strategic needs |  |
+| Business needs | To operate your business with a posture of breach prevention and recovery as an extension of security. Your business can recover from a breach containing damage within one or more areas while continuing business as normal. |
+| IT needs | To implement technologies and disciplines to lower the probability of a breach, such as updating on-premises systems and endpoints and deploying honeypot resources to distract and deceive attackers, all while maintaining an uncompromising approach to identity security and provisioning. |
+| Operational needs | To implement breach prevention and recovery as standard operating procedures. Breaches are expected and while undesired can be mitigated for your business vertical. |
+| Strategic needs | To incrementally raise the ability of your business to recover from breaches, which can lower the return of investment to cyber attackers while increasing operating resiliency. The “assume breach” principle of Zero Trust forces you to plan for and execute changes and updates to ensure business survival, minimize breaches, and reduce breach recovery time. |
 
 
 ### Outcomes for implementing security breach prevention and recovery infrastructure
 
-Applying the overall goal of Zero Trust to “never trust, always verify” adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes.
+Applying the overall goal of Zero Trust to “never trust, always verify” to your breach damage prevention and reduction infrastructure adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes.
 
 | Objective | Outcome |
 | --- | --- |
-| Business outcomes |  |
-| Governance |  |
-| Organizational resilience |  |
-| Security |  |
+| Business outcomes | Breach prevention and recovery practices result in minimal costs associated with breaches and quick recovery of business processes. |
+| Governance | Breach prevention and recovery tools and systems are deployed and internal processes are tested and ready for breaches. |
+| Organizational resilience | Between security breach prevention and recovery and proactive threat protection (link to be added), your organization can recover from an attack quickly and prevent future attacks of its type. |
+| Security | Breach prevention and recovery is integrated into your overall security requirements and policies. |
 
 ## Plan phase
 
 :::image type="content" source="../media/adoption-guide/plan-phase.svg" alt-text="The plan phase." lightbox="../media/adoption-guide/plan-phase.svg":::
 
-Adoption plans convert the principles of Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align them with your organization's business strategy.
+Adoption plans conAdoption plans convert the principles of Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align them with your organization's business strategy.
 
 The motivations and outcomes you define, together with your business leaders and teams, support the “Why?” for your organization and become the North Star for your strategy. Next comes the technical planning to achieve the objectives.
 
-Technical adoption for preventing business damage from a breach involves:
+Technical adoption for implementing breach prevention and recovery involves:
 
-- 
-
-Preventing business damage from a breach also involves a few related activities, including:
-
-- 
+•	Setting up Entra Privileged Identity Management (PIM) to protect your administrator and other privileged accounts for just-in time (JIT) access.
+•	Increasing the security of your networking infrastructure.
+•	Deploying honeypot resources on your network to lure attackers and detect their presence early.
+•	Implementing a comprehensive patching infrastructure to keep servers and devices up to date.
+•	Begin using Microsoft Purview Insider Risk Management.
+•	Deploying a BCDR infrastructure to quickly recover from a destructive cyberattack.
 
 Many organizations can take a four-staged approach to these deployment objectives, summarized in the following table.
 
@@ -98,74 +112,109 @@ If this staged approach works for your organization, you can share your progress
 
 This recommended staged approach for technical implementation can help give context to the exercise of understanding your organization. 
 
-A foundational step in the Zero Trust adoption lifecycle for every business scenario includes taking inventory. For this business scenario, you...
+A foundational step in the Zero Trust adoption lifecycle for every business scenario includes taking inventory and determining the current state of your infrastructure. For this business scenario, you need to collect information on your current:
 
-The following actions apply:
+•	Privileged identity security policies and requirements.
+•	Network security practices and technologies.
+•	Insider risks and priorities for managing them.
+•	Server and device patching policies and requirements.
+•	BCDR systems and policies.
 
-- 
 
 ### Organizational planning and alignment
 
-The technical work of preventing business damage from a breach and implementing a recovery infrastructure crosses several overlapping areas and roles:
+The technical work of preventing a breach and implementing a recovery infrastructure crosses several overlapping areas and roles:
 
-- Network
-- Infrastructure
-
->> Add
+•	Privileged identities
+•	Networking
+•	Insider risk management
+•	Device patching
+•	BCDR
 
 This table summarizes roles that are recommended when building a sponsorship program and project management hierarchy to determine and drive results.
 
 | Program leaders and technical owners | Accountability |
 | --- | --- |
 | CISO, CIO, or Director of Data Security | Executive sponsorship |
-| Program lead from Data Security | Drive results and cross-team collaboration |
-| Security Architect | Advise on configuration and standards, especially around encryption, key management, and other fundamental technologies |
-| Network Architect | Advise on network standards and practices |
-| Compliance Officers | Map compliance requirements and risks to specific controls and available technologies |
-| Data Security Admin | Implement configuration changes |
-| IT Admin | Update standards and policy documents |
-| Security Governance and/or IT Admin | Monitor to ensure compliance |
+| Program lead from Security | Drive results and cross-team collaboration |
+| Security Architect | Advise on configuration and standards, especially around privileged identities, networking, and the design of honeypot resources |
+| IT Lead | Maintain honeypot resources, implement patching and system update requirements and policies, and implement and practice BCDR procedures |
+| Network Architect | Advise on and implement network security standards and practices |
+| Compliance Officers | Map compliance requirements and risks to specific controls and available technologies and advise on insider risks to be detected and managed |
+| Security Governance and/or IT Lead | Monitor to ensure compliance with defined policies and requirements |
 
 The [PowerPoint deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/placeholder.svg" alt-text="PowerPoint slide to identify key stakeholders." lightbox="../media/adoption-guide/placeholder.svg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-breach-prevention-recovery-stakeholders.svg" alt-text="PowerPoint slide for the stakeholders of implementing breach prevention and recovery." lightbox="../media/adoption-guide/zero-trust-breach-prevention-recovery-stakeholders.svg":::
 
 ### Technical planning and skills readiness
 
-Before you embark on the technical work, Microsoft recommends getting to know the capabilities, how they work together, and best practices for approaching this work. The following table includes several resources to help your teams gain skills.
+Before you embark on the technical work, Microsoft recommends getting to know the capabilities, how they work together, and best practices for approaching this work. The following table includes several training resources to help your teams gain skills.
 
 | Resource | Description |
 |:-----|:-----|
-|  |  |
+| Module: [ Plan and implement privileged access](https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/) | Learn how to use PIM to protect your data and resources. |
+| Module: [Design a solution for backup and disaster recovery](https://learn.microsoft.com/en-us/training/modules/design-solution-for-backup-disaster-recovery/) | 	Learn how to select appropriate backup solutions and disaster recovery solutions for Azure workloads. |
+| Module: [Protect your on-premises infrastructure from disasters with Azure Site Recovery](https://learn.microsoft.com/en-us/training/modules/protect-on-premises-infrastructure-with-azure-site-recovery/) | Learn how to provide disaster recovery for your on-premises infrastructure by using Azure Site Recovery. |
+| Module: [Protect your Azure infrastructure with Azure Site Recovery](https://learn.microsoft.com/en-us/training/modules/protect-infrastructure-with-site-recovery/) | Learn how to provide disaster recovery for your Azure infrastructure by customizing replication, failover, and failback of Azure virtual machines. |
+| Module: [Design and implement network security](https://learn.microsoft.com/en-us/training/modules/design-implement-network-security-monitoring/) | 	Learn how to design and implement network security solutions such as Azure DDoS, Network Security Groups, Azure Firewall, and Web Application Firewall. |
+| Module: [Secure and isolate access to Azure resources by using network security groups and service endpoints](https://learn.microsoft.com/en-us/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/) | Learn how to use network security groups and service endpoints to secure your virtual machines and Azure services from unauthorized network access. |
+| Module: [Windows Server update management](https://learn.microsoft.com/en-us/training/modules/windows-server-update-management/) | Learn how to use Windows Server Update Services to deploy operating system updates to computers on your network. |
 
 #### Stage 1
 
-The Stage 1 deployment objectives include the process of...
-
-In this stage, you:
-
-- Secure privileged accounts
-- Implement Microsoft 365 Backup and Azure Backup for critical business data
-- Implement Site Recovery for critical workload continuity
-- Encrypt network communication
+The Stage 1 deployment objectives include locking down administrator and other privileged access accounts, using Microsoft cloud products to back up critical business data, and ensuring that all network traffic is encrypted.
 
 ##### Secure privileged accounts
 
+Cybersecurity incidents typically begin with a credential theft of some sort. Attackers discover the account name, which can be a well-known or easily discovered email address, and then proceed to determine the password of the account. This type of attack can be thwarted in most cases by multi-factor authentication (MFA). However, the “assume breach” Zero Trust principle implies that an attacker can and will access your network using an identity.
+
+Once in your network, attackers try to elevate their level of privilege by compromising accounts with more and more access. The goal is to compromise a privileged account that has access to a wide swath of not only sensitive data, but to administrative settings as well. Therefore, it is imperative that you prevent this level of access to attackers.
+
+First, for hybrid identity organizations, you must ensure that administrator accounts or accounts holding privileged roles that are used for cloud services aren’t synchronized with and stored in on-premises Active Directory Domain Services (AD DS). If they are stored in stored in on-premises and AD DS or Microsoft Entra Connect is compromised, an attacker can have administrative control to your Microsoft cloud services. Review your synchronization settings to prevent and test whether your cloud administrator accounts are present in your AD DS.
+
+All organizations with a Microsoft cloud subscription have an Entra ID tenant that contains cloud accounts, which include user and administrative accounts. Administrators need to perform privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. 
+
+The first step to protecting privileged accounts is to require strong passwords and MFA. Additionally, pursuant to the “Use least privilege access” Zero Trust principle, use Microsoft Entra Privileged Identity Management (PIM) in your Microsoft Entra production environment to provide an additional layer of protection. Entra PIM provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions.
+
+Features of Entra PIM include:
+
+•	JIT privileged access to Microsoft Entra ID and Azure resources
+•	Time-bound access to resources using start and end dates
+•	Requiring approval to activate privileged roles
+•	Enforcing MFA to activate any role
+•	Require justification to understand why users activate
+•	Get notifications when privileged roles are activated
+•	Conduct access reviews to ensure users still need roles
+
+
 | Resource | Description |
 |:-----|:-----|
-|  |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 ##### Implement Microsoft 365 and Azure Backup for critical business data
 
 | Resource | Description |
 |:-----|:-----|
-|  |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 ##### Implement Site Recovery for critical workload continuity
 
 | Resource | Description |
 |:-----|:-----|
-|  |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 ##### Encrypt network communication
 
@@ -191,27 +240,46 @@ In this stage, you:
 This objective is
 
 | Resource | Description |
-| --- | --- |
-|  |  |
+|:-----|:-----|
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 ##### Implement a patching plan
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
-|  |  |
+|:-----|:-----|
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 ##### Create honeypot resources
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
-|  |  |
+|:-----|:-----|
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 #### Get started with Microsoft Purview Insider Risk Management
 
+| Resource | Description |
+|:-----|:-----|
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 #### Stage 3
 
@@ -227,32 +295,48 @@ In this stage, you:
 This objective is
 
 | Resource | Description |
-| --- | --- |
-|  |  |
+|:-----|:-----|
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 ##### Implement Azure Site Recovery for all workloads
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
-|  |  |
+|:-----|:-----|
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 ##### Gain visibility into network traffic
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
-|  |  |
+|:-----|:-----|
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 ##### Design your threat and BCDR response
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
-|  |  |
+|:-----|:-----|
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 #### Stage 4
 
@@ -266,16 +350,24 @@ In this stage, you:
 This objective is
 
 | Resource | Description |
-| --- | --- |
-|  |  |
+|:-----|:-----|
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 ##### Practice threat and BCDR response
 
 This objective is
 
 | Resource | Description |
-| --- | --- |
-|  |  |
+|:-----|:-----|
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
+| []() |  |
 
 ### Cloud adoption plan
 

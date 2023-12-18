@@ -12,7 +12,7 @@ ms.collection:
 
 # Implement security breach prevention and recovery infrastructure
 
-As part of Zero Trust adoption guidance, this article is part of the part of the Prevent or reduce business damage from a breach (link to be added) business scenario and describes how to protect your organization from cyberattacks. This article focuses on how to deploy additional security measures to prevent a breach and limit its spread and to create and test a business continuity and disaster recovery (BCDR) infrastructure to more quickly recover from a destructive breach.
+As part of Zero Trust adoption guidance, this article is part of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario and describes how to protect your organization from cyberattacks. This article focuses on how to deploy additional security measures to prevent a breach and limit its spread and to create and test a business continuity and disaster recovery (BCDR) infrastructure to more quickly recover from a destructive breach.
 
 For the elements of the “assume breach” Zero Trust guiding principle:
 
@@ -79,7 +79,7 @@ Applying the overall goal of Zero Trust to “never trust, always verify” to y
 | Business outcomes | Breach prevention and recovery practices result in minimal costs associated with breaches and quick recovery of business processes. |
 | Governance | Breach prevention and recovery tools and systems are deployed and internal processes are tested and ready for breaches. |
 | Organizational resilience | Between security breach prevention and recovery and [proactive threat protection](prevent-reduce-business-damage-breach-threat-protection.md), your organization can recover from an attack quickly and prevent future attacks of its type. |
-| Security | Breach prevention and recovery is integrated into your overall security requirements and policies. |
+| Security | Breach prevention and recovery are integrated into your overall security requirements and policies. |
 
 ## Plan phase
 
@@ -102,7 +102,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Secure privileged accounts <br><br> Implement Microsoft 365 Backup and Azure Backup for **critical** business data <br><br> Implement Site Recovery for **critical** workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Create honeypot resources <br><br> Get started with Microsoft Purview Insider Risk Management | Implement Microsoft 365 Backup and Azure Backups for **all** business data <br><br> Implement Azure Site Recovery for **all** workloads <br><br> Gain visibility to network traffic <br><br> Design your threat and business continuity/disaster recovery (BCDR) response | Discontinue legacy network security technology <br><br> Practice threat and BCDR response |
+| Secure privileged accounts <br><br> Implement Microsoft 365 Backup and Azure Backup for **critical** business data <br><br> Implement Site Recovery for **critical** workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Create honeypot resources <br><br> Get started with Microsoft Purview Insider Risk Management | Implement Microsoft 365 Backup and Azure Backup for **all** business data <br><br> Implement Azure Site Recovery for **all** workloads <br><br> Gain visibility to network traffic <br><br> Design your threat and business continuity/disaster recovery (BCDR) response | Discontinue legacy network security technology <br><br> Practice threat and BCDR response |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
@@ -169,9 +169,9 @@ The Stage 1 deployment objectives include locking down administrator and other p
 
 Cybersecurity incidents typically begin with a credential theft of some sort. Attackers discover the account name, which can be a well-known or easily discovered email address, and then proceed to determine the password of the account. This type of attack can be thwarted in most cases by multi-factor authentication (MFA). However, the “assume breach” Zero Trust principle implies that an attacker can and will access your network using an identity.
 
-Once in your network, attackers try to elevate their level of privilege by compromising accounts with more and more access. The goal is to compromise a privileged account that has access to a wide swath of not only sensitive data, but to administrative settings as well. Therefore, it is imperative that you prevent this level of access to attackers.
+Once in your network, attackers try to elevate their level of privilege by compromising accounts with more and more access. The goal is to compromise a privileged account that has access to a wide swath of not only sensitive data, but to administrative settings as well. Therefore, it's imperative that you prevent this level of access to attackers.
 
-First, for hybrid identity organizations, you must ensure that administrator accounts or accounts holding privileged roles that are used for cloud services aren’t synchronized with and stored in on-premises Active Directory Domain Services (AD DS). If they are stored on-premises and AD DS or Microsoft Entra Connect is compromised, an attacker can have administrative control to your Microsoft cloud services. Review your synchronization settings to prevent and test whether your cloud administrator accounts are present in your AD DS.
+First, for hybrid identity organizations, you must ensure that administrator accounts or accounts holding privileged roles that are used for cloud services aren’t synchronized with and stored in on-premises Active Directory Domain Services (AD DS). If they're stored on-premises and AD DS or Microsoft Entra Connect is compromised, an attacker can have administrative control to your Microsoft cloud services. Review your synchronization settings to prevent and test whether your cloud administrator accounts are present in your AD DS.
 
 All organizations with a Microsoft cloud subscription have an Entra ID tenant that contains cloud accounts, which include user and administrative accounts. Administrators need to perform privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. 
 
@@ -210,7 +210,7 @@ Microsoft 365 Backup is a new offering (currently in preview) that backs up your
 
 For more information, see the [Microsoft 365 Backup overview](/microsoft-365/syntex/backup/backup-overview).
 
-The Azure Backup service provides simple, secure, and cost-effective solutions to back up your data and recover it from the Microsoft Azure cloud. Azure Backup can backup:
+The Azure Backup service provides simple, secure, and cost-effective solutions to back up your data and recover it from the Microsoft Azure cloud. Azure Backup can back up:
 
 - On-premises files, folders, system state, on-premises VMs (Hyper-V and VMware) and other on-premises workloads.
 - Azure VMs or files, folders, and system state.
@@ -293,7 +293,7 @@ A patching plan includes configuring automatic updating across all your entire o
 |:-----|:-----|
 | [Endpoint management at Microsoft](/mem/endpoint-manager-overview) | Get started with an overview of endpoint management solutions from Microsoft. |
 | [Endpoint management](/mem/) | Get started with the documentation to manage your endpoints. |
-| [Apply Zero Trust to Azure IaaS: Automate virtual machine updates](/security/zero-trust/azure-infrastructure-virtual-machines#automate-virtual-machine-updates) | Configure Azure automation of Windows and Linux-based virtual machines. |
+| [Apply Zero Trust to Azure IaaS: Automate virtual machine updates](/security/zero-trust/azure-infrastructure-virtual-machines#automate-virtual-machine-updates) | Configure automatic updates for Windows and Linux-based virtual machines. |
 | [Windows Update settings that you can manage through Intune policy](/mem/intune/protect/windows-update-settings) | Manage Windows Update settings for Windows 10 and Windows 11 with Microsoft Intune. |
 
 Also consider updates and patches needed by other devices, especially those that:
@@ -362,7 +362,7 @@ The consequences of a breach can run the spectrum of an attacker infecting devic
 
 In a crippling ransomware attack, your organization can suffer a long-term business disruption that is similar in many respects to a crisis or a natural disaster. Think about a breach and its resulting destructive cyberattack as a human-made crisis or disaster. 
 
-Therefore, it is important to include breaches and the possibility of a highly destructive cyberattack in your BCDR planning. The same infrastructure that you would use to continue your business operations in a crisis or after a natural disaster can and should be used to recover from an attack.
+Therefore, it's important to include breaches and the possibility of a highly destructive cyberattack in your BCDR planning. The same infrastructure that you would use to continue your business operations in a crisis or after a natural disaster can and should be used to recover from an attack.
 
 If you already have a BCDR plan in place, review it to ensure that it includes the data, devices, applications, and processes that could be impacted in a cyberattack. 
 
@@ -385,7 +385,7 @@ In this stage, you further secure your network and ensure that your BCDR plan an
 
 ##### Discontinue legacy network security technology
 
-Examine the set of technologies and products that your organization uses to provide network security and determine whether they are necessary or redundant with other network security capabilities. Each network security technology can also be a target for attackers. For example, if the technology or product isn’t being updated on a timely basis, consider removing it.
+Examine the set of technologies and products that your organization uses to provide network security and determine whether they're necessary or redundant with other network security capabilities. Each network security technology can also be a target for attackers. For example, if the technology or product isn’t being updated on a timely basis, consider removing it.
 
 For more information, see [Discontinue legacy network security technology](/security/zero-trust/deploy/networks#vii-discontinue-legacy-network-security-technology), which describes the types of network security technologies that you might no longer need.
 
@@ -412,7 +412,7 @@ Use the resources listed in this article to prioritize your plan. The work of im
 The staged approach recommended in this article includes cascading breach prevention and recovery work in a methodical way across your digital estate. At this phase, revisit these elements of the plan to be sure everything is ready to go:
 
 - Use of Entra PIM has been tested for administrator accounts and your IT admins are trained to use it
-- Your networking infrastructure has been tested for data encryption as needed, segmenting to filter access has been tested, and redundant legacy networking technologies have been determined and tests run to ensure operation if they are removed
+- Your networking infrastructure has been tested for data encryption as needed, segmenting to filter access has been tested, and redundant legacy networking technologies have been determined and tests run to ensure operation if they're removed
 - Your system patching practices have been tested for successful installation of updates and detection of failed updates
 - You have begun analysis of your insider risks and how to manage them
 - Your honeypot resources are deployed and have been tested along with your threat protection infrastructure to detect access

@@ -248,7 +248,7 @@ Microsoft Sentinel is a cloud-native solution that provides security information
 |:-----|:-----|
 | [Implement Microsoft Sentinel and Microsoft Defender XDR for Zero Trust](/security/operations/siem-xdr-overview) | Get started with this solution documentation that also incorporates Zero Trust principles. |
 | Module: [Connect Microsoft Defender XDR to Microsoft Sentinel](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/) | Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft Defender XDR. |
-| [Architect your Microsoft Sentinel workspace](/security/operations/siem-workspace) | Learn how to how to design and implement Microsoft Sentinel workspaces. |
+| [Architect your Microsoft Sentinel workspace](/security/operations/siem-workspace) | Learn how to design and implement Microsoft Sentinel workspaces. |
 | [Ingest data sources and configure incident detection in Microsoft Sentinel](/security/operations/ingest-data-sources) | Learn how to configure data connectors for data ingestion into your Microsoft Sentinel workspace.  |
 | Module: [Connect data to Microsoft Sentinel using data connectors](/training/modules/connect-data-to-azure-sentinel-with-data-connectors/) | Get an overview of the available data connectors for Microsoft Sentinel. |
 

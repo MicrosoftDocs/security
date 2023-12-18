@@ -24,7 +24,7 @@ Traditional approaches that focus on establishing perimeter-based security for o
 
 Forester concluded the following for 2021:
 
-   Nearly two-thirds of organizations were breached in the past year, and it cost them an average of $2.4 million per breach. – Forester, [The 2021 State of Enterprise Breaches (April 2022)](https://www.forrester.com/report/the-2021-state-of-enterprise-breaches/RES177333). 
+- Nearly two-thirds of organizations were breached in the past year, and it cost them an average of $2.4 million per breach. – Forester, [The 2021 State of Enterprise Breaches (April 2022)](https://www.forrester.com/report/the-2021-state-of-enterprise-breaches/RES177333). 
 
 With the cloud, bad actors don’t need to physically breach your private network perimeter. They can attack your cloud-based digital assets from anywhere in the world. 
 
@@ -32,7 +32,7 @@ Your organization’s health and reputation depend on your security strategy. Wi
 
 | Traditional threat protection with private network controls | Modern threat protection with Zero Trust |
 | --- | --- |
-| Traditional protection relies on perimeter-based security, where you trust everyone inside the private network. <br><br> Perimeter networks can include: <br><br> - Little network segmentation or security perimeters and open, flat networks. <br> - Minimal threat protection and static traffic filtering. <br> - Unencrypted internal traffic.	| The Zero Trust model moves network defenses from static, network-based perimeters to focus on users, devices, assets, and resources. <br><br> Assume that a breach can and will happen. Security risks can exist inside and outside your network, you are constantly under attack, and a security incident can happen at any time. A comprehensive and modern threat protection infrastructure can provide timely attack detection and response. <br><br> Minimize the blast radius of security incidents with layers of protection that, together, reduce the extent of the damage and how fast it can spread. |
+| Traditional protection relies on perimeter-based security, where you trust everyone inside the private network. <br><br> Perimeter networks can include: <br><br> - Little network segmentation or security perimeters and open, flat networks. <br> - Minimal threat protection and static traffic filtering. <br> - Unencrypted internal traffic.	| The Zero Trust model moves network defenses from static, network-based perimeters to focus on users, devices, assets, and resources. <br><br> Assume that a breach can and will happen. Security risks can exist inside and outside your network, you're constantly under attack, and a security incident can happen at any time. A comprehensive and modern threat protection infrastructure can provide timely attack detection and response. <br><br> Minimize the blast radius of security incidents with layers of protection that, together, reduce the extent of the damage and how fast it can spread. |
 
 To reduce the impact of a significant incident, all the following are essential:
 
@@ -50,9 +50,9 @@ The first step toward a robust security posture is determining how your organiza
 
 ## Assessing risk and your security posture
 
-When you decide to adopt a strategy to prevent breach and reduce the damage caused from one, it is important to consider and quantify the metric of risk. Strategically, the exercise of quantifying risk allows you to set a metric for your appetite for risk. This requires that you conduct a baseline risk assessment along with an analysis of the business-critical breaches that may affect your business. The combination of your documented risk appetite against breach scenarios which you’re willing to address forms the basis of a breach preparation and remediation strategy.
+When you decide to adopt a strategy to prevent breach and reduce the damage caused from one, it's important to consider and quantify the metric of risk. Strategically, the exercise of quantifying risk allows you to set a metric for your appetite for risk. This requires that you conduct a baseline risk assessment along with an analysis of the business-critical breaches that may affect your business. The combination of your documented risk appetite against breach scenarios that you’re willing to address forms the basis of a breach preparation and remediation strategy.
 
-Note that it is virtually impossible to prevent breaches as an absolute. As described in [Attacker return on investment](rapidly-modernize-security-posture.md#attacker-roi), the aim is to incrementally increase cyberattack friction to a point where the attackers that you’re able or willing to defend against no longer gain a viable return on investment from their attacks. The kind of attacks and the economic viability to defend should be captured as part of your risk analysis.
+Note that it's virtually impossible to prevent breaches as an absolute. As described in [Attacker return on investment](rapidly-modernize-security-posture.md#attacker-roi), the aim is to incrementally increase cyberattack friction to a point where the attackers that you’re able or willing to defend against no longer gain a viable return on investment from their attacks. The kind of attacks and the economic viability to defend should be captured as part of your risk analysis.
 
 Reducing damage from a breach gives considerable energy to options during and post breach, which allows your organization to recover quickly from an expected breach or type of breach. These breach types and the readiness to recover are defined in subsequent sections in this article.
 
@@ -104,7 +104,7 @@ Cyber security incidents typically begin with a credential theft of some sort. C
 
   Attacker tries a large list of possible passwords for a given account or set of accounts. Possible passwords can be based on public data about a user, such as birthdates in social media profiles.
 
-In all these cases, skilling and education is essential for both users as the target of phishing attacks and helpdesks as the target of vishing attacks. Helpdesks should have protocols in place to authenticate requesting users before performing sensitive actions on user accounts or permissions.
+In all these cases, skilling and education are essential for both users as the target of phishing attacks and helpdesks as the target of vishing attacks. Helpdesks should have protocols in place to authenticate requesting users before performing sensitive actions on user accounts or permissions.
 
 #### Devices
 
@@ -144,8 +144,8 @@ The following table provides reasons why business leaders across an organization
 | Chief Marketing Officer (CMO) | How the business is perceived both internally and externally shouldn’t be restricted based on a breach occurring or breach readiness. Learning how to communicate breach readiness and messaging internally and externally in response to a breach is a matter of preparation. A successful attack can become public knowledge, potentially harming brand value, unless a breach communication plan exists. |
 | Chief Information Officer (CIO) | The applications used by your organization must be resilient to attack while securing your organization's data. Security should be a measurable outcome and aligned with IT strategy. Breach prevention and breach management must be aligned with data integrity, privacy, and availability. |
 | Chief Information Security Officer (CISO) | Security must be aligned as a business imperative to the C-Suite. Breach readiness and response is aligned to achieving the primary business strategies, with technology security aligned to mitigation of business risk.  | 
-|Chief Operations Officer (COO) | The incident response process hinges on the leadership and strategic guidance provided by this role. It is imperative that preventive and responsive actions are carried out as aligned to corporate strategy. <br><br> Breach preparation in an “assume breach” posture means that all disciplines reporting to the COO must function at a level of breach readiness, ensuring that a breach can be isolated and mitigated quickly without pausing your business. |
-| Chief Financial Officer (CFO) | Breach preparation and mitigation is a function of budgeted security spend. Financial systems must be robust and can survive a breach. Financial data must be classified, secured, and backed up as a sensitive dataset. |
+|Chief Operations Officer (COO) | The incident response process hinges on the leadership and strategic guidance provided by this role. It's imperative that preventive and responsive actions are carried out as aligned to corporate strategy. <br><br> Breach preparation in an “assume breach” posture means that all disciplines reporting to the COO must function at a level of breach readiness, ensuring that a breach can be isolated and mitigated quickly without pausing your business. |
+| Chief Financial Officer (CFO) | Breach preparation and mitigation are functions of budgeted security spend. Financial systems must be robust and can survive a breach. Financial data must be classified, secured, and backed up as a sensitive dataset. |
 
 A Zero Trust approach solves several security problems arising from security breaches. You can emphasize the following benefits of a Zero Trust approach with your business leaders.
 

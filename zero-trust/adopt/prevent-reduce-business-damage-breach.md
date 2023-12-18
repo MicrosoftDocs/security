@@ -32,7 +32,7 @@ Your organization’s health and reputation depend on your security strategy. Wi
 
 | Traditional threat protection with private network controls | Modern threat protection with Zero Trust |
 | --- | --- |
-| Traditional protection relies on perimeter-based security, where you trust everyone inside the private network. <br><br> Perimeter networks can include: <br><br> - Little network segmentation or security perimeters and open, flat networks. <br><br> - Minimal threat protection and static traffic filtering. <br><br> - Unencrypted internal traffic.	| The Zero Trust model moves network defenses from static, network-based perimeters to focus on users, devices, assets, and resources. <br><br> Assume that a breach can and will happen. Security risks can exist inside and outside your network, you are constantly under attack, and a security incident can happen at any time. A comprehensive and modern threat protection infrastructure can provide timely attack detection and response. <br><br> Minimize the blast radius of security incidents with layers of protection that, together, reduce the extent of the damage and how fast it can spread. |
+| Traditional protection relies on perimeter-based security, where you trust everyone inside the private network. <br><br> Perimeter networks can include: <br><br> - Little network segmentation or security perimeters and open, flat networks. <br> - Minimal threat protection and static traffic filtering. <br> - Unencrypted internal traffic.	| The Zero Trust model moves network defenses from static, network-based perimeters to focus on users, devices, assets, and resources. <br><br> Assume that a breach can and will happen. Security risks can exist inside and outside your network, you are constantly under attack, and a security incident can happen at any time. A comprehensive and modern threat protection infrastructure can provide timely attack detection and response. <br><br> Minimize the blast radius of security incidents with layers of protection that, together, reduce the extent of the damage and how fast it can spread. |
 
 To reduce the impact of a significant incident, all the following are essential:
 
@@ -72,11 +72,11 @@ Business requirements are dependent on the resulting risk analysis for your busi
 
 - Retail
 
-The major risks related to breach within the retail industry can arise with there are multiple domains for multiple brands that live within the same tenant. The complexities of managing on-premises or cloud-based identities can create vulnerabilities.
+  The major risks related to breach within the retail industry can arise when there are multiple domains for multiple brands that live within the same tenant. The complexities of managing on-premises or cloud-based identities can create vulnerabilities.
 
 - Health Sector
 
-The major risks within the health sector are data loss. The unauthorized disclosure of confidential medical records may be a direct threat to data and information privacy laws that are reserved for patients and clients alike and, based on local regulations, can incur substantial penalties.
+  The major risks within the health sector are data loss. The unauthorized disclosure of confidential medical records may be a direct threat to data and information privacy laws that are reserved for patients and clients alike and, based on local regulations, can incur substantial penalties.
 
 - Government Sector
 
@@ -142,8 +142,8 @@ The following table provides reasons why business leaders across an organization
 | --- | --- |
 | Chief Executive Officer (CEO) | The business must be empowered to achieve its strategic goals and objectives, irrespective of the cybersecurity climate. Business agility and business execution shouldn’t be constrained because of an incident or breach. Business leaders should understand that security is part of business imperatives and investment in both breach prevention and breach preparedness is required to ensure business continuity. The cost of a successful and destructive cyberattack can be a lot more than the price of implementing security measures. |
 | Chief Marketing Officer (CMO) | How the business is perceived both internally and externally shouldn’t be restricted based on a breach occurring or breach readiness. Learning how to communicate breach readiness and messaging internally and externally in response to a breach is a matter of preparation. A successful attack can become public knowledge, potentially harming brand value, unless a breach communication plan exists. |
-| Chief Information Officer (CIO) | The applications used by the company must be resilient to attack while securing the company's data. Security should be a measurable outcome and aligned with IT strategy. Breach prevention and breach management must be aligned with data integrity, privacy, and availability. |
-| Chief Information Security Officer (CISO) | The technologies used to prevent a breach don’t scale to a zero-day attack, nor can they defend a poorly maintained IT infrastructure. For example, technology three years old or older might be highly susceptible to attacks that use modern attack methods. | 
+| Chief Information Officer (CIO) | The applications used by your organization must be resilient to attack while securing your organization's data. Security should be a measurable outcome and aligned with IT strategy. Breach prevention and breach management must be aligned with data integrity, privacy, and availability. |
+| Chief Information Security Officer (CISO) | Security must be aligned as a business imperative to the C-Suite. Breach readiness and response is aligned to achieving the primary business strategies, with technology security aligned to mitigation of business risk.  | 
 |Chief Operations Officer (COO) | The incident response process hinges on the leadership and strategic guidance provided by this role. It is imperative that preventive and responsive actions are carried out as aligned to corporate strategy. <br><br> Breach preparation in an “assume breach” posture means that all disciplines reporting to the COO must function at a level of breach readiness, ensuring that a breach can be isolated and mitigated quickly without pausing your business. |
 | Chief Financial Officer (CFO) | Breach preparation and mitigation is a function of budgeted security spend. Financial systems must be robust and can survive a breach. Financial data must be classified, secured, and backed up as a sensitive dataset. |
 

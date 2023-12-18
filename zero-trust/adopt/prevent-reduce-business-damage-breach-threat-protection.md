@@ -16,7 +16,7 @@ As part of Zero Trust adoption guidance, this article describes how to protect y
 
 For the elements of the “assume breach” Zero Trust guiding principle:
 
-- Use analytics to get visibility, drive threat detection, and improve defenses
+- **Use analytics to get visibility, drive threat detection, and improve defenses**
 
   Described in this article.
 
@@ -26,9 +26,7 @@ For the elements of the “assume breach” Zero Trust guiding principle:
 
  - Verify end-to-end encryption
 
-  Described in the [implement security breach prevention and recovery infrastructure](prevent-reduce-business-damage-breach-infrastructure.md) article.
-
-[Implement security breach prevention and recovery infrastructure](prevent-reduce-business-damage-breach-infrastructure.md)
+   Described in the [implement security breach prevention and recovery infrastructure](prevent-reduce-business-damage-breach-infrastructure.md) article.
 
 This article assumes that you have already [modernized your security posture](rapidly-modernize-security-posture.md).
 
@@ -66,7 +64,7 @@ The motivations for implementing threat protection and XDR are straightforward, 
 | Area | Motivations |
 | --- | --- |
 | Business needs | To prevent an impact on or disruption of your organization’s ability to perform normal business activities or being held for ransom, lower the cost of cyber insurance, and prevent regulatory fines. |
-| IT needs | To assist the Security Operations (SecOps) team in creating and maintaining honeypot resources to deceive and distract cyber attackers. |
+| IT needs | To assist the Security Operations (SecOps) team in creating and maintaining an integrated defense toolset to secure the assets important to the business. Integration and reporting should occur across asset classes and technologies and lower the effort required to provide predictable security outcomes. |
 | Operational needs | To keep your business processes operating through proactive detection and response to attacks in real time. |
 | Strategic needs | Minimize attack damage and costs and maintain your organization’s reputation with customers and partners. |
 
@@ -106,7 +104,7 @@ Technical adoption for implementing threat protection and XDR involves:
 
 Implementing threat protection and XDR also involves a few related activities, including:
 
-- Using the XDR tools to monitor the honeypot resources implemented in the [security breach prevention and recovery](prevent-reduce-business-damage-breach-infrastructure.md) article to lure attackers into showing their presence before they can attack your real resources.
+- Using the XDR tools to monitor both your business critical and honeypot resources, which you implemented in the [security breach prevention and recovery](prevent-reduce-business-damage-breach-infrastructure.md) article to lure attackers into showing their presence before they can attack your real resources.
 - Evolving your SecOps team to be aware of the latest attacks and their methods.
 
 Many organizations can take a four-staged approach to these deployment objectives, summarized in the following table.
@@ -114,7 +112,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Turn on XDR tools: <br> - Microsoft Entra ID Protection <br> - Defender for Identity <br> - Defender for Office 365 <br> - Defender for Cloud Apps <br><br> Investigate and respond to threats using Microsoft Defender XDR | Turn on additional XDR tools: <br>- Defender for Endpoint <br>- Defender for Cloud <br><br> Define internal process for security operations <br><br> Monitor honeypot resources with XDR tools | Turn on Defender for IoT <br><br> Design a Microsoft Sentinel workspace and ingest XDR signals <br><br> Proactively hunt for threats | Evolve SecOps as a discipline in your organization <br><br> Leverage automation to reduce load on your SecOps analysts |
+| Turn on XDR tools: <br>- Defender for Endpoint <br> - Defender for Office 365 <br> - Microsoft Entra ID Protection <br> - Defender for Identity  <br> - Defender for Cloud Apps <br><br> Investigate and respond to threats using Microsoft Defender XDR | Turn on Defender for Cloud <br><br> Define internal process for security operations <br><br> Monitor business critical and honeypot resources with XDR tools | Turn on Defender for IoT <br><br> Design a Microsoft Sentinel workspace and ingest XDR signals <br><br> Proactively hunt for threats | Evolve SecOps as a discipline in your organization <br><br> Leverage automation to reduce load on your SecOps analysts |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
@@ -143,17 +141,17 @@ This table summarizes roles that are recommended when building a sponsorship pro
 | Program lead from Data Security | Drive results and cross-team collaboration |
 | Security Architect | Advise on incident response strategies and practices, XDR tools and infrastructure, and SecOps team evolution |
 | SecOps lead | Implement incident response procedures, XDR infrastructure configuration, incident response automation, and the SecOps discipline in your organization |
-| Security for IT lead | Advise on, implement, and manage honeypot resources |
+| Security for IT lead | Advise on, implement, and manage business critical and honeypot resources |
 
 The [PowerPoint deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.svg" alt-text="PowerPoint slide for the stakeholders of implementing threat detection and XDR." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.svg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.png" alt-text="PowerPoint slide for the stakeholders of implementing threat detection and XDR." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.png":::
 
 ### Technical planning and skills readiness
 
 Before you embark on the technical work, Microsoft recommends getting to know the capabilities, how they work together, and best practices for approaching this work. 
 
-Because Zero Trust assumes breach, you must prepare for a breach. Adopt a breach response framework, based on [NIST](https://csrc.nist.gov/pubs/sp/800/61/r2/final), [ISO 27001](https://iso-docs.com/blogs/iso-27001-standard/iso-27001-annex-a-16-information-security-incident-management#:~:text=The%20ISO%2027001%20standard%20provides,comprehensive%20and%20up%20to%20date.), [CIS](https://www.cisecurity.org/controls/incident-response-management), or [MITRE](https://attack.mitre.org/) to lower the impact of a breach or cyberattack on your organization.
+Because Zero Trust assumes breach, you must prepare for a breach. Adopt a breach response framework based on [NIST](https://csrc.nist.gov/pubs/sp/800/61/r2/final), [ISO 27001](https://iso-docs.com/blogs/iso-27001-standard/iso-27001-annex-a-16-information-security-incident-management#:~:text=The%20ISO%2027001%20standard%20provides,comprehensive%20and%20up%20to%20date.), [CIS](https://www.cisecurity.org/controls/incident-response-management), or [MITRE](https://attack.mitre.org/) to lower the impact of a breach or cyberattack on your organization.
 
 The following table includes several Microsoft training resources to help your security teams gain skills.
 
@@ -170,15 +168,15 @@ The Stage 1 deployment objectives include enabling your primary Microsoft XDR to
 
 ##### Turn on XDR tools
 
-Start with the core suite of XDR tools to protect your organization from attacks on identities and cloud-based applications.
+Start with the core suite of XDR tools to protect your organization from attacks on devices, identities, and cloud-based applications.
 
 | Resource | Description |
 |:-----|:-----|
-| [Microsoft Entra ID Identity Protection](/entra/id-protection/overview-identity-protection) | Helps organizations detect, investigate, and remediate identity-based risks. These identity-based risks can be further fed into tools like Entra Conditional Access to make access decisions or fed back to a security information and event management (SIEM) tool for further investigation and correlation. |
-| [Defender for Identity](/defender-for-identity/what-is) | 
-Leverages signals from both on-premises Active Directory and cloud identities to help you better identify, detect, and investigate advanced threats directed at your organization. |
+| [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) | An enterprise endpoint security platform to help your enterprise network prevent, detect, investigate, and respond to advanced threats against devices, which may include laptops, phones, tablets, PCs, access points, routers, and firewalls. |
 | [Defender for Office 365](/microsoft-365/security/office-365-security/mdo-about) | A seamless integration into your Microsoft 365 or Office 365 subscription that protects against threats in email, links (URLS), attachments, and collaboration tools. |
-| [Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps | Delivers full protection for SaaS applications, helping you monitor and protect your cloud app data. |
+| [Microsoft Entra ID Identity Protection](/entra/id-protection/overview-identity-protection) | Helps organizations detect, investigate, and remediate identity-based risks. These identity-based risks can be further fed into tools like Entra Conditional Access to make access decisions or fed back to a security information and event management (SIEM) tool for further investigation and correlation. |
+| [Defender for Identity](/defender-for-identity/what-is) | Leverages signals from both on-premises Active Directory and cloud identities to help you better identify, detect, and investigate advanced threats directed at your organization. |
+| [Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) | Delivers full protection for SaaS applications, helping you monitor and protect your cloud app data. |
 
 ##### Investigate and respond to threats using Microsoft Defender XDR
 
@@ -189,30 +187,19 @@ Now that you have enabled the primary XDR tools, you can begin using Microsoft D
 | [Integrating Microsoft 365 XDR into your security operations](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops)	| Carefully plan your integration with your SecOps team to optimize the day-to-day operations and lifecycle management of the tools in the Microsoft Defender XDR. |
 | [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) | How to use Microsoft Defender XDR to analyze alerts and incidents and incorporate best practices into your SecOps procedures and processes. |
 | [Investigate incidents with Microsoft Defender XDR](/microsoft-365/security/defender/investigate-incidents) | How to analyze the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan. |
-| [Module: Mitigate incidents with Microsoft Defender XDR](/training/modules/mitigate-incidents-microsoft-365-defender/) | Learn how the Microsoft Defender XDR portal provides a unified view of incidents and alerts from the Microsoft Defender XDR family of products. |
-| [Learning Path: Mitigate threats using Microsoft Defender XDR](/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) | Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft Defender XDR. |
+| Module: [Mitigate incidents with Microsoft Defender XDR](/training/modules/mitigate-incidents-microsoft-365-defender/) | Learn how the Microsoft Defender XDR portal provides a unified view of incidents and alerts from the Microsoft Defender XDR family of products. |
+| Learning Path: [Mitigate threats using Microsoft Defender XDR](/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) | Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft Defender XDR. |
 
 #### Stage 2
 
-In this stage, you enable additional XDR tools for devices and for Azure and on-premises resources, create or update your SecOps processes and procedures for Microsoft threat protection and XDR services, and take advantage of your honeypot resources to catch cyber attackers early in the breach.
+In this stage, you enable additional XDR tools for Azure and on-premises resources, create or update your SecOps processes and procedures for Microsoft threat protection and XDR services, and monitor your business critical and honeypot resources to detect cyber attackers early in the breach.
 
-##### Turn on additional XDR tools
+##### Turn on Microsoft Defender for Cloud
 
-To protect additional resources, utilize these XDR tools:
-
-- Microsoft Defender for Endpoint
-
-  An enterprise endpoint security platform to help your enterprise network prevent, detect, investigate, and respond to advanced threats against devices, which may include laptops, phones, tablets, PCs, access points, routers, and firewalls.
-
-- Microsoft Defender for Cloud
-
-A cloud-native application protection platform (CNAPP) designed to protect cloud-based applications from various cyber threats and vulnerabilities. Use Microsoft Defender for Cloud for Azure, hybrid cloud, and on-premises workload protection and security.
+Microsoft Defender for Cloud is a cloud-native application protection platform (CNAPP) designed to protect cloud-based applications from various cyber threats and vulnerabilities. Use Microsoft Defender for Cloud for Azure, hybrid cloud, and on-premises workload protection and security.
 
 | Resource | Description |
 |:-----|:-----|
-| [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) | Get started with the documentation set. |
-| Module: [Protect against threats with Microsoft Defender for Endpoint](/training/modules/m365-security-threat-protect/) | Learn how to hunt for threats and remediate risks for your devices. |
-| Learning Path: [Mitigate threats using Microsoft Defender for Endpoint](/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/) | Learn how to detect, investigate, and respond to advanced threats on your devices.  |
 | [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) | Get started with the documentation set. |
 | [Security alerts and incidents for Microsoft Defender for Cloud](/azure/defender-for-cloud/alerts-overview) | Use Microsoft Defender for Cloud Security to perform incident response for your Azure, hybrid cloud, and on-premises workloads. |
 | Module: [Remediate security alerts using Microsoft Defender for Cloud](/training/modules/remediate-azure-defender-security-alerts/) | Learn how to hunt for threats and remediate risks for your Azure, hybrid cloud, and on-premises workloads.  |
@@ -230,14 +217,14 @@ With the Microsoft XDR tools in place, ensure that their use is integrated into 
 | [Integrating Microsoft 365 XDR into your security operations](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) | Carefully plan your integration with your SecOps team to optimize the day-to-day operations and lifecycle management tools in the Microsoft Defender XDR. |
 | [Six Tabletop Exercises to Help Prepare Your Cybersecurity Team](https://www.cisecurity.org/insights/white-papers/six-tabletop-exercises-prepare-cybersecurity-team) | Use these exercises provided by the Center for Internet Security (CIS) to prepare your SecOps team. |
 
-##### Monitor honeypot resources with XDR tools
+##### Monitor business critical and honeypot resources with XDR tools
 
-Your deployed honeypot resources act as a target for cyber attackers and can be used to detect their activities early before they move on to real targets and cause business damage. Focus part of your threat detection and hunting on monitoring your honeypot resources, such as user accounts, devices, mailboxes, and SharePoint, Teams, or on-premises files.
+Your deployed honeypot resources act as a target for cyber attackers and can be used to detect their activities early before they move on to real targets and cause business damage. Focus part of your threat detection and hunting on monitoring both your business critical and honeypot resources.
 
 | Resource | Description |
 |:-----|:-----|
-| [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) | Use Microsoft Defender XDR to spot incidents with alerts that affect your honeypot resources, such as identities, devices, and cloud apps. |
-| [Security alerts and incidents for Microsoft Defender for Cloud](/azure/defender-for-cloud/alerts-overview) | Use Microsoft Defender for Cloud Security to search for alerts are triggered by advanced detections for your honeypot resources, such as Azure, hybrid cloud, and on-premises workloads. |
+| [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) | Use Microsoft Defender XDR to spot incidents with alerts that affect your business critical and honeypot resources. |
+| [Security alerts and incidents for Microsoft Defender for Cloud](/azure/defender-for-cloud/alerts-overview) | Use Microsoft Defender for Cloud to search for alerts triggered by advanced detections for your business critical and honeypot resources, such as Azure, hybrid cloud, and on-premises workloads. |
 
 #### Stage 3
 
@@ -267,7 +254,7 @@ Microsoft Sentinel is a cloud-native solution that provides security information
 
 ##### Proactively hunt for threats
 
-Now that your XDR and SIEM infrastructure is in place, you and your SecOps team can take the initiative and proactively hunt for threats in progress in your environment instead of acting reactively to attacks that have already caused damage.
+Now that your XDR and SIEM infrastructure is in place, your SecOps team can take the initiative and proactively hunt for threats in progress in your environment instead of acting reactively to attacks that have already caused damage.
 
 | Resource | Description |
 |:-----|:-----|

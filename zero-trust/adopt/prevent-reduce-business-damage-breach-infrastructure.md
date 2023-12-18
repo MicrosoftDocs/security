@@ -16,11 +16,11 @@ As part of Zero Trust adoption guidance, this article is part of the part of the
 
 For the elements of the “assume breach” Zero Trust guiding principle:
 
-- Minimize blast radius and segment access
+- **Minimize blast radius and segment access**
 
   Described in this article.
 
- - Verify end-to-end encryption
+ - **Verify end-to-end encryption**
 
    Described in this article.
  
@@ -40,7 +40,7 @@ The following table is an accessible version of the illustration.
 
 | Define strategy| Plan| Ready| Adopt| Govern and manage |
 | --- | --- | --- | --- | --- |
-| Outcomes <br><br> Organizational alignment <br><br> Strategic goals| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
+| Outcomes <br><br> Organizational alignment <br><br> Strategic goals| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot | Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
 
 Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framework overview](zero-trust-adoption-overview.md).
 
@@ -145,7 +145,7 @@ This table summarizes roles that are recommended when building a sponsorship pro
 
 The [PowerPoint deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-breach-prevention-recovery-stakeholders.svg" alt-text="PowerPoint slide for the stakeholders of implementing breach prevention and recovery." lightbox="../media/adoption-guide/zero-trust-breach-prevention-recovery-stakeholders.svg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-breach-prevention-recovery-stakeholders.png" alt-text="PowerPoint slide for the stakeholders of implementing breach prevention and recovery." lightbox="../media/adoption-guide/zero-trust-breach-prevention-recovery-stakeholders.png":::
 
 ### Technical planning and skills readiness
 
@@ -171,7 +171,7 @@ Cybersecurity incidents typically begin with a credential theft of some sort. At
 
 Once in your network, attackers try to elevate their level of privilege by compromising accounts with more and more access. The goal is to compromise a privileged account that has access to a wide swath of not only sensitive data, but to administrative settings as well. Therefore, it is imperative that you prevent this level of access to attackers.
 
-First, for hybrid identity organizations, you must ensure that administrator accounts or accounts holding privileged roles that are used for cloud services aren’t synchronized with and stored in on-premises Active Directory Domain Services (AD DS). If they are stored in stored in on-premises and AD DS or Microsoft Entra Connect is compromised, an attacker can have administrative control to your Microsoft cloud services. Review your synchronization settings to prevent and test whether your cloud administrator accounts are present in your AD DS.
+First, for hybrid identity organizations, you must ensure that administrator accounts or accounts holding privileged roles that are used for cloud services aren’t synchronized with and stored in on-premises Active Directory Domain Services (AD DS). If they are stored on-premises and AD DS or Microsoft Entra Connect is compromised, an attacker can have administrative control to your Microsoft cloud services. Review your synchronization settings to prevent and test whether your cloud administrator accounts are present in your AD DS.
 
 All organizations with a Microsoft cloud subscription have an Entra ID tenant that contains cloud accounts, which include user and administrative accounts. Administrators need to perform privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. 
 
@@ -268,7 +268,7 @@ This objective is more of a check to be sure your network traffic is encrypted. 
 
 | Recommendations | Resource |
 | --- | --- |
-| Ensure user-to-app internal traffic is encrypted: <br><br> - Enforce HTTPS-only communication for your internet-facing web applications. <br><br> - Connect remote employees and partners to Microsoft Azure using [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways). <br><br> - Access your Azure virtual machines securely using encrypted communication through [Azure Bastion](/azure/bastion/bastion-overview). | [Secure networks with Zero Trust-Objective 3: User-to-app internal traffic is encrypted](/security/zero-trust/deploy/networks#iii-encryption-user-to-app-internal-traffic-is-encrypted) |
+| Ensure user-to-app internal traffic is encrypted: <br><br> - Enforce HTTPS-only communication for your internet-facing web applications. <br> - Connect remote employees and partners to Microsoft Azure using [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways). <br>- Access your Azure virtual machines securely using encrypted communication through [Azure Bastion](/azure/bastion/bastion-overview). | [Secure networks with Zero Trust-Objective 3: User-to-app internal traffic is encrypted](/security/zero-trust/deploy/networks#iii-encryption-user-to-app-internal-traffic-is-encrypted) |
 | Encrypt application backend traffic between virtual networks.<br><br> Encrypt traffic between on-premises and cloud. | [Secure networks with Zero Trust-Objective 6: All traffic is encrypted](/security/zero-trust/deploy/networks#vi-encryption-all-traffic-is-encrypted) |
 | For network architects, this article helps put recommended networking concepts into perspective. Ed Fisher, Security & Compliance Architect at Microsoft, describes how to optimize your network for cloud connectivity by avoiding the most common pitfalls. | [Networking up (to the cloud)-One architect's viewpoint](/microsoft-365/solutions/networking-design-principles) |
 
@@ -278,7 +278,7 @@ The Stage 2 deployment objectives include segmenting your network to exercise be
 
 ##### Segment your network
 
-This objective is to create boundaries on your network so that intermediate analysis and filtering to protect sensitive servers, applications, and data. Network segmentation can occur for on-premises servers or in the cloud, for example, with virtual machines hosted on virtual networks (VNets) in Azure IaaS.
+This objective is to create boundaries on your network so that intermediate analysis and filtering can protect sensitive servers, applications, and data. Network segmentation can occur for on-premises servers or in the cloud, for example, with virtual machines hosted on virtual networks (VNets) in Azure IaaS.
 
 | Recommendations | Resource |
 |:-----|:-----|
@@ -309,7 +309,7 @@ Also consider updates and patches needed by other devices, especially those that
 
 ##### Create honeypot resources
 
-You deliberately create honeypot resources—such as [identities](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/deceptive-defense-best-practices-for-identity-based-honeytokens/ba-p/3851641), file shares, applications, and service accounts—so that can be discovered by attackers. These resources are dedicated to attracting and deceiving attackers and aren’t part of your normal IT infrastructure. 
+You deliberately create honeypot resources—such as [identities](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/deceptive-defense-best-practices-for-identity-based-honeytokens/ba-p/3851641), file shares, applications, and service accounts—so they can be discovered by attackers. These resources are dedicated to attracting and deceiving attackers and aren’t part of your normal IT infrastructure. 
 
 Your honeypot resources should reflect typical targets for attackers. 
 For example:
@@ -371,7 +371,7 @@ If not, begin your planning process for general BCDR and include cyberattacks as
 - BC plans ensure that the business can function normally in the event of a crisis.
 - DR plans include contingencies to recover from loss of data or infrastructure through backups of data and replacement or recovery of infrastructure. 
 
-  DR plans should include detailed procedures recovering your IT systems and processes to restore business operations. These plans should have an off-line backup, such as on portable media stored in a location with physical security in place. Attackers can hunt for these types of IT recovery plans in your on-premises and cloud locations and destroy them as part of a ransomware attack. Because the destruction of these plans will make it more costly for you to restore your business operations, the attackers can demand more ransom.
+  DR plans should include detailed procedures for recovering your IT systems and processes to restore business operations. These plans should have an off-line backup, such as on portable media stored in a location with physical security in place. Attackers can hunt for these types of IT recovery plans in your on-premises and cloud locations and destroy them as part of a ransomware attack. Because the destruction of these plans will make it more costly for you to restore your business operations, the attackers can demand more ransom.
 
 Microsoft 365 Backup, Azure Backup, and Azure Site Recovery described in this article are examples of BCDR technologies.
 
@@ -442,8 +442,8 @@ Governance of your organization’s ability to implement breach prevention and r
 | Objective | Tasks |
 |:-----|:-----|
 | Track and measure | Assign owners for critical actions and projects, such as IT admin education and honeypot resource management, patch management, networking security, and BCDR procedures. <br><br> Create actionable plans with dates for each action and project, and instrument progress using reports and dashboards. |
-| Monitor | - Track PIM requests and resulting actions. <br><br> - Monitor access to honeypot resources. <br><br> - Monitor systems to be patched for update installation failures. <br><br> - Test BCDR procedures for completeness and restoration integrity.  |
-| Iterate for maturity | - Survey networking infrastructure for additional legacy systems that can be removed. <br><br> - Adapt BCDR infrastructure for new resources and features.  |
+| Monitor | - Track PIM requests and resulting actions. <br>- Monitor access to honeypot resources. <br>- Monitor systems to be patched for update installation failures. <br>- Test BCDR procedures for completeness and restoration integrity.  |
+| Iterate for maturity | - Survey networking infrastructure for additional legacy systems that can be removed. <br>- Adapt BCDR infrastructure for new resources and features.  |
 
 ## Next Steps
 

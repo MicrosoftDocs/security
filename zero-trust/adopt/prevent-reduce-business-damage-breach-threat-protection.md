@@ -112,7 +112,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Turn on XDR tools: <br>- Defender for Endpoint <br> - Defender for Office 365 <br> - Microsoft Entra ID Protection <br> - Defender for Identity  <br> - Defender for Cloud Apps <br><br> Investigate and respond to threats using Microsoft Defender XDR | Turn on Defender for Cloud <br><br> Define internal process for security operations <br><br> Monitor business critical and honeypot resources with XDR tools | Turn on Defender for IoT <br><br> Design a Microsoft Sentinel workspace and ingest XDR signals <br><br> Proactively hunt for threats | Evolve SecOps as a discipline in your organization <br><br> Leverage automation to reduce load on your SecOps analysts |
+| Turn on XDR tools: <br>- Defender for Endpoint <br> - Defender for Office 365 <br> - Microsoft Entra ID Protection <br> - Defender for Identity  <br> - Defender for Cloud Apps <br><br> Investigate and respond to threats using Microsoft Defender XDR | Turn on Defender for Cloud <br><br> Define internal process for SecOps <br><br> Monitor business critical and honeypot resources with XDR tools | Turn on Defender for IoT <br><br> Design a Microsoft Sentinel workspace and ingest XDR signals <br><br> Proactively hunt for threats | Evolve SecOps as a discipline in your organization <br><br> Leverage automation to reduce load on your SecOps analysts |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
@@ -336,7 +336,7 @@ The main elements of your adopt phase should include:
 
 :::image type="content" source="../media/adoption-guide/govern-manage-phase.svg" alt-text="The govern and manage phase." lightbox="../media/adoption-guide/govern-manage-phase.svg":::
 
-Governance of your organization’s ability to detect attacks with a threat protection and XDR infrastructure is an iterative process. By thoughtfully creating your implementation plan and rolling it out across your security operations team you have created a foundation. Use the following tasks to help you start building your initial governance plan for this foundation.
+Governance of your organization’s ability to detect attacks with a threat protection and XDR infrastructure is an iterative process. By thoughtfully creating your implementation plan and rolling it out across your SecOps team you have created a foundation. Use the following tasks to help you start building your initial governance plan for this foundation.
 
 | Objective | Tasks |
 |:-----|:-----|

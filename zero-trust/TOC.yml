@@ -11,6 +11,17 @@
       href: adopt/rapidly-modernize-security-posture.md
     - name: Secure remote and hybrid work
       href: adopt/secure-remote-hybrid-work.md
+    - name: Prevent or reduce business damage from a breach
+      items:
+        - name: Overview
+          href: adopt/prevent-reduce-business-damage-breach.md
+          maintainContext: true
+        - name: Implement security breach prevention and recovery infrastructure
+          href: adopt/prevent-reduce-business-damage-breach-infrastructure.md
+          maintainContext: true
+        - name: Implement threat protection and XDR
+          href: adopt/prevent-reduce-business-damage-breach-threat-protection.md
+          maintainContext: true
     - name: Identify and protect sensitive business data
       href: adopt/identify-protect-sensitive-business-data.md
     - name: Meet regulatory and compliance requirements

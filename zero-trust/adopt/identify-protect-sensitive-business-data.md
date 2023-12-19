@@ -28,7 +28,7 @@ The following diagram illustrates the shift from traditional protection with net
 
 The guidance in this article walks through how to get started with and progress your strategy for identifying and protecting sensitive data. If your organization is subject to regulations that protect data, use the [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md) article in this series to learn how to apply what you learn in this article to protecting data that is regulated.
 
-## Why business leaders think about protecting sensitive data
+## How business leaders think about protecting sensitive data
 
 Before starting any technical work, it’s important to understand the different motivations for investing in protecting business data as these help inform the strategy, objectives, and measures for success.
 
@@ -424,5 +424,6 @@ See [Govern your data with Microsoft Purview](/microsoft-365/compliance/manage-d
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)

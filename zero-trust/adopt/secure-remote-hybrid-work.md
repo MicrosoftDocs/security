@@ -374,5 +374,6 @@ Additional resources for day-to-day governance and operation include:
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)

@@ -146,7 +146,7 @@ This Zero Trust adoption guidance recommends building a Zero Trust strategy and 
 
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
-- Prevent or reduce business damage from a breach (in development)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
 

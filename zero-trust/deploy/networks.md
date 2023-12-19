@@ -275,7 +275,7 @@ Follow these steps:
 
     1.  [Configure IPsec transport mode](/azure/expressroute/expressroute-howto-ipsec-transport-private-windows) for ExpressRoute private peering.
 
-
+<a name='discontinue-legacy-network'></a>
 ### VII. Discontinue legacy network security technology
 
 Discontinue the use of signature-based Network Intrusion Detection/Network Intrusion Prevention (NIDS/NIPS) Systems and Network Data Leakage/Loss Prevention (DLP).

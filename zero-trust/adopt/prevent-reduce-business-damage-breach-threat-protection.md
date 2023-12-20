@@ -326,7 +326,7 @@ The planning phase demonstrated the gap between what you have and where you want
 Microsoft recommends a cascading, iterative approach to implementing threat protection and XDR. This allows you to refine your strategy and policies as you go to increase the accuracy of the results.
 There’s no need to wait until one phase is complete before beginning the next. Your results are more effective if you implement elements of each stage if you iterate along the way.
 
-The main elements of your adopt phase should include:
+The main elements of your **Adopt** phase should include:
 
 - Making Microsoft Defender XDR part of your ongoing, day-to-day incident response workflow in your SecOps team.
 - Using the features of Microsoft Sentinel with Microsoft Defender XDR integration.

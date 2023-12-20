@@ -23,7 +23,7 @@ Microsoft Sentinel and Microsoft Defender XDR share:
 
 The following diagram shows how Microsoft’s extended detection and response (XDR) solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="./media/sentinel-xdr.svg" alt-text="The Microsoft solution for XRD with Microsoft Sentinel" lightbox="./media/sentinel-xdr.svg":::
+:::image type="content" source="./media/sentinel-xdr.svg" alt-text="The Microsoft solution for XDR with Microsoft Sentinel" lightbox="./media/sentinel-xdr.svg":::
 
 In this diagram:
 

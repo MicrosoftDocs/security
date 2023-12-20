@@ -60,9 +60,13 @@ This article walks you through the steps to apply the principles of Zero Trust t
 Because different organizations can be at various stages of deploying Zero Trust protections, in each of these steps:
 
 - If you're NOT using any of the protections described in the step, take the time to pilot and deploy them prior to assigning Copilot licenses.
-- If you're using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated and pilot and deploy them prior to assigning Copilot licenses.
+- If you're using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated has been piloted and deployed prior to assigning Copilot licenses.
 
 For the latest Copilot support for security-related and other features of Microsoft 365, see [Copilot requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements).
+
+> [!NOTE]
+> Beginning on January 1, 2024, Copilot for Microsoft 365 will be generally available for Microsoft 365 A3 and A5 faculty. See [this technical community post](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/announcing-updates-to-copilot-for-microsoft-365-availability/ba-p/4007075) for more information.
+
 
 ## Step 1. Deploy or validate your identity and access policies
 

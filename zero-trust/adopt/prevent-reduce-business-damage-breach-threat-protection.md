@@ -166,6 +166,7 @@ The following table includes several Microsoft training resources to help your s
 
 The Stage 1 deployment objectives include enabling your primary Microsoft XDR tools and the use of Microsoft Defender XDR, which integrates the signals from the tools into a single portal, for incident response.
 
+<a name='turn-on-xdr-tools'></a>
 ##### Turn on XDR tools
 
 Start with the core suite of XDR tools to protect your organization from attacks on devices, identities, and cloud-based applications.
@@ -174,7 +175,7 @@ Start with the core suite of XDR tools to protect your organization from attacks
 |:-----|:-----|
 | [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) | An enterprise endpoint security platform to help your enterprise network prevent, detect, investigate, and respond to advanced threats against devices, which may include laptops, phones, tablets, PCs, access points, routers, and firewalls. |
 | [Defender for Office 365](/microsoft-365/security/office-365-security/mdo-about) | A seamless integration into your Microsoft 365 or Office 365 subscription that protects against threats in email, links (URLS), attachments, and collaboration tools. |
-| [Microsoft Entra ID Identity Protection](/entra/id-protection/overview-identity-protection) | Helps organizations detect, investigate, and remediate identity-based risks. These identity-based risks can be further fed into tools like Entra Conditional Access to make access decisions or fed back to a security information and event management (SIEM) tool for further investigation and correlation. |
+| [Microsoft Entra ID Protection](/entra/id-protection/overview-identity-protection) | Helps organizations detect, investigate, and remediate identity-based risks. These identity-based risks can be further fed into tools like Entra Conditional Access to make access decisions or fed back to a security information and event management (SIEM) tool for further investigation and correlation. |
 | [Defender for Identity](/defender-for-identity/what-is) | Leverages signals from both on-premises Active Directory and cloud identities to help you better identify, detect, and investigate advanced threats directed at your organization. |
 | [Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) | Delivers full protection for SaaS applications, helping you monitor and protect your cloud app data. |
 
@@ -326,7 +327,7 @@ The planning phase demonstrated the gap between what you have and where you want
 Microsoft recommends a cascading, iterative approach to implementing threat protection and XDR. This allows you to refine your strategy and policies as you go to increase the accuracy of the results.
 There’s no need to wait until one phase is complete before beginning the next. Your results are more effective if you implement elements of each stage if you iterate along the way.
 
-The main elements of your adopt phase should include:
+The main elements of your **Adopt** phase should include:
 
 - Making Microsoft Defender XDR part of your ongoing, day-to-day incident response workflow in your SecOps team.
 - Using the features of Microsoft Sentinel with Microsoft Defender XDR integration.

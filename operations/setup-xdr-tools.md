@@ -100,8 +100,10 @@ For this solution and target scenario, we'll also ingest the signals from Micros
 ## Enable Microsoft Defender for Cloud
 You can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include these signals in your Sentinel workspace.  
 
-
+<!---
 ![Image of Microsoft Defender XDR and Microsoft Defender for Cloud](./media/m365d-cloud.png)
+
+--->
 
 Use the following guidance to enable Defender for Cloud and integrate capabilities.
 

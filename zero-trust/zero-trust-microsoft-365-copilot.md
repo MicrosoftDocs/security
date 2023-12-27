@@ -49,11 +49,11 @@ This article walks you through the steps to apply the principles of Zero Trust t
 
 | Step | Task | Zero Trust principle(s) applied |
 | --- | --- | --- |
-| 1 | Deploy or validate your identity and access policies | Verify explicitly <br> Use least privileged access |
-| 2 | Deploy or validate your App Protection policies | Use least privileged access <br> Assume breach |
-| 3 | Deploy or validate device management and protection | Verify explicitly |
-| 4 | Deploy or validate your threat protection services |  Assume breach |
-| 5 | Deploy or validate your data protection | Verify explicitly <br> Use least privileged access |
+| 1 | Deploy or validate your data protection | Verify explicitly <br> Use least privileged access |
+| 2 | Deploy or validate your identity and access policies | Verify explicitly <br> Use least privileged access |
+| 3 | Deploy or validate your App Protection policies | Use least privileged access <br> Assume breach |
+| 4 | Deploy or validate device management and protection | Verify explicitly |
+| 5 | Deploy or validate your threat protection services |  Assume breach |
 | 6 | Deploy or validate secure collaboration with Teams | Verify explicitly <br> Use least privileged access |
 | 7 | Deploy or validate user permissions to data | Use least privileged access |
 
@@ -67,8 +67,59 @@ For the latest Copilot support for security-related and other features of Micros
 > [!NOTE]
 > Beginning on January 1, 2024, Copilot for Microsoft 365 will be generally available for Microsoft 365 A3 and A5 faculty. See [this technical community post](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/announcing-updates-to-copilot-for-microsoft-365-availability/ba-p/4007075) for more information.
 
+## Step 1. Deploy or validate your data protection
 
-## Step 1. Deploy or validate your identity and access policies
+To prevent your organization’s data from being at risk of overexposure or oversharing, the next step is to protect the data in your Microsoft 365 tenant. You must ensure that:
+
+- Your data is categorized with sensitivity levels.
+- Sensitivity labels represent your sensitivity levels that are applied by users or automatically.
+- You can view how sensitivity labels are being used in your Microsoft 365 tenant.
+
+These data protection capabilities can also be used to ensure that your organization complies with data regulations, such as those dealing with protecting personal information. 
+
+The following capabilities from Microsoft Purview strengthen your data security and compliance for Copilot for Microsoft 365:
+
+- Sensitivity labels and content encrypted by Microsoft Purview Information Protection
+- Data classification
+- Customer Key
+- Communication compliance
+- Auditing
+- Content search
+- eDiscovery
+- Retention and deletion
+- Customer Lockbox
+
+For more information, see [Microsoft Purview data security and compliance protections for Microsoft Copilot](/purview/ai-microsoft-purview) and [Considerations for deploying Microsoft Purview data security and compliance protections for Copilot](/purview/ai-microsoft-purview-considerations).
+
+### Getting started with E3
+
+[Sensitivity labels](/purview/sensitivity-labels) form the cornerstone of protecting your data. Before you create the labels to denote the sensitivity of items and the protection actions that are applied, you must understand your organization’s existing classification taxonomy and how it maps to labels that users see and apply in apps. After creating the sensitivity labels, publish them, and provide guidance to users how and when to apply them in Word, Excel, PowerPoint, and Outlook. 
+
+For more information, see:
+
+- [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels)
+- [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels)
+- [Enable sensitivity labels for Office files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files)
+
+Consider augmenting manual labeling by using the sensitivity label policy settings of a default label and mandatory labeling. A default label helps to set a base level of protection settings that you want applied to all your content. Mandatory labeling ensures users label documents and emails. However, without comprehensive user training and other controls, these settings can result in inaccurate labeling.
+
+See these additional resources to protect your organization’s data:
+
+- [Create DLP policies](/purview/dlp-learn-about-dlp) for files and email.
+- [Create retention policies](/purview/create-retention-policies) to keep what you need and delete what you don’t.
+- [Use content explorer](/purview/data-classification-content-explorer) to see and verify items that have a sensitivity label, a retention label, or were classified as a sensitive information type in your organization.
+
+### Next Steps with E5
+
+With Microsoft 365 E5, you can expand sensitivity labeling to protecting more content and more labeling methods. For example, labeling SharePoint sites and Teams by using container labels, and automatically labeling items in Microsoft 365 and beyond. For more information, see a list of [common labeling scenarios](/purview/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels) and how they align to business goals.
+
+Consider these additional Microsoft 365 E5 capabilities:
+
+- Extend your data loss prevention policies to more locations and use a greater range of classifiers to find sensitive information. 
+- [Retention labels can be automatically applied](/purview/apply-retention-labels-automatically) when sensitive information is found that needs different settings from your retention policies, or a higher level of management.
+- To help you better understand your sensitive data and how it’s being labeled, use [activity explorer](/purview/data-classification-activity-explorer) and the full capabilities of content explorer. 
+
+## Step 2. Deploy or validate your identity and access policies
 
 To prevent bad actors from using Copilot to more quickly discover and access sensitive data, the first step is to prevent them from gaining access. You must ensure that:
 
@@ -106,7 +157,7 @@ Microsoft 365 E5 and Microsoft Entra ID P2 both include more protection for priv
 
 Finally, consider implementing [access reviews](/entra/id-governance/access-reviews-overview) as part of your overall JEA strategy. Access reviews enable your organization to efficiently manage group memberships, access to enterprise applications, and role assignments. User's access can be reviewed regularly to make sure only the right people have the appropriate continued access.
 
-## Step 2. Deploy or validate your App Protection policies 
+## Step 3. Deploy or validate your App Protection policies 
 
 For both Microsoft 365 E3 and E5, use [Intune App Protection policies (APP)](/mem/intune/apps/app-protection-policy), which are rules that ensure an organization's data remains safe or contained within a managed app.
 
@@ -116,7 +167,7 @@ APP can prevent the inadvertent or intentional copying of Copilot-generated cont
 
 For more information, see [Create App Protection policies](/mem/intune/apps/app-protection-policies).
 
-## Step 3. Deploy or validate your device management and protection
+## Step 4. Deploy or validate your device management and protection
 
 To prevent bad actors from compromising devices or using compromised devices to gain access to Copilot, the next step is to use Microsoft 365 features of device management and protection. You must ensure that:
 
@@ -150,7 +201,7 @@ To deploy these device protection and management capabilities, use the following
 - [Step 6. Monitor device risk and compliance to security baselines](/microsoft-365/solutions/manage-devices-with-intune-monitor-risk)
 - [Step 7. Implement DLP with information protection capabilities](/microsoft-365/solutions/manage-devices-with-intune-dlp-mip)
 
-## Step 4. Deploy or validate your threat protection services
+## Step 5. Deploy or validate your threat protection services
 
 To detect the activities of bad actors and keep them from gaining access to Copilot, the next step is to use threat protection services of Microsoft 365. You must ensure that:
 
@@ -217,44 +268,6 @@ After deploying Microsoft Defender XDR, integrate these eXtended detection and r
 - [Implement Microsoft Sentinel and Microsoft Defender XDR for Zero Trust](/security/operations/siem-xdr-overview)
 - [Plan costs and understanding Microsoft Sentinel pricing and billing](/azure/sentinel/billing?tabs=simplified%2Ccommitment-tiers)
 
-## Step 5. Deploy or validate your data protection
-
-To prevent your organization’s data from being at risk of overexposure or oversharing, the next step is to protect the data in your Microsoft 365 tenant. You must ensure that:
-
-- Your data is categorized with sensitivity levels.
-- Sensitivity labels represent your sensitivity levels that are applied by users or automatically.
-- You can view how sensitivity labels are being used in your Microsoft 365 tenant.
-
-These data protection capabilities can also be used to ensure that your organization complies with data regulations, such as those dealing with protecting personal information.
-
-### Getting started with E3
-
-[Sensitivity labels](/purview/sensitivity-labels) form the cornerstone of protecting your data. Before you create the labels to denote the sensitivity of items and the protection actions that are applied, you must understand your organization’s existing classification taxonomy and how it maps to labels that users see and apply in apps. After creating the sensitivity labels, publish them, and provide guidance to users how and when to apply them in Word, Excel, PowerPoint, and Outlook. 
-
-For more information, see:
-
-- [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels)
-- [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels)
-- [Enable sensitivity labels for Office files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files)
-
-Consider augmenting manual labeling by using the sensitivity label policy settings of a default label and mandatory labeling. A default label helps to set a base level of protection settings that you want applied to all your content. Mandatory labeling ensures users label documents and emails. However, without comprehensive user training and other controls, these settings can result in inaccurate labeling.
-
-See these additional resources to protect your organization’s data:
-
-- [Create DLP policies](/purview/dlp-learn-about-dlp) for files and email.
-- [Create retention policies](/purview/create-retention-policies) to keep what you need and delete what you don’t.
-- [Use content explorer](/purview/data-classification-content-explorer) to see and verify items that have a sensitivity label, a retention label, or were classified as a sensitive information type in your organization.
-
-### Next Steps with E5
-
-With Microsoft 365 E5, you can expand sensitivity labeling to protecting more content and more labeling methods. For example, labeling SharePoint sites and Teams by using container labels, and automatically labeling items in Microsoft 365 and beyond. For more information, see a list of [common labeling scenarios](/purview/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels) and how they align to business goals.
-
-Consider these additional Microsoft 365 E5 capabilities:
-
-- Extend your data loss prevention policies to more locations and use a greater range of classifiers to find sensitive information. 
-- [Retention labels can be automatically applied](/purview/apply-retention-labels-automatically) when sensitive information is found that needs different settings from your retention policies, or a higher level of management.
-- To help you better understand your sensitive data and how it’s being labeled, use [activity explorer](/purview/data-classification-activity-explorer) and the full capabilities of content explorer. 
-
 ## Step 6. Deploy or validate secure collaboration for Microsoft Teams
 
 Microsoft provides guidance for protecting your Teams at three different levels – baseline, sensitive, and highly sensitive. Introducing Copilot is a good time to review your environment and ensure that appropriate protection is configured. Use these steps:
@@ -307,7 +320,7 @@ To detect existing oversharing:
 
 ## Applying protections and deploying Copilot in parallel
 
-To streamline the assignment of Copilot licenses in your tenant with the appropriate protections in place, you do both in parallel. The following diagram shows how you can move through the three phases of rolling out protections prior to assigning Copilot licenses to individual user accounts and their devices once they're protected.
+To streamline the assignment of Copilot licenses in your tenant with the appropriate protections in place, you do both in parallel. The following diagram shows how you can move through the phases of rolling out protections prior to assigning Copilot licenses to individual user accounts and their devices once they're protected.
 
 :::image type="content" source="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg" alt-text="Diagram of applying protections and deploying Copilot in parallel." lightbox="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg":::
 
@@ -333,9 +346,13 @@ As the diagram also shows, you can roll out information protection across your o
 
 ## Next steps
 
-See the [How to get ready for Copilot](https://www.youtube.com/watch?v=oeX0lsMA69U&t=2s) video.
+Watch the [How to get ready for Copilot](https://www.youtube.com/watch?v=oeX0lsMA69U&t=2s) video.
 
-Use the [Copilot documentation](/microsoft-365-copilot/).
+Also see:
+
+- [Microsoft Purview data security and compliance protections for Microsoft Copilot](/purview/ai-microsoft-purview)
+- [Data, Privacy, and Security for Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)
+- [Copilot for Microsoft 365 documentation](/microsoft-365-copilot/)
 
 ## Summary poster
 
@@ -347,15 +364,13 @@ For a visual summary of the information in this article, see the **Copilot archi
 
 Use the Visio file to customize these illustrations for your own use.
 
-For more technical illustrations, click [here](zero-trust-tech-illus.md).
+For more Zero Trust technical illustrations, click [here](zero-trust-tech-illus.md).
 
 ## References
 
 Refer to these links to learn about the various services and technologies mentioned in this article.
 
-- [Copilot overview](/microsoft-365-copilot/microsoft-365-copilot-overview)
-- [Data, Privacy, and Security for Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy)
-- [Microsoft Purview data security and compliance protections for Copilot](/purview/ai-microsoft-purview)
+- [Copilot for Microsoft 365 overview](/microsoft-365-copilot/microsoft-365-copilot-overview)
 - [Common security policies for Microsoft 365 organizations](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common)
 - [Intune App Protection policies (APP)](/mem/intune/apps/app-protection-policy)
 - [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)

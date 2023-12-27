@@ -65,7 +65,7 @@ Because different organizations can be at various stages of deploying Zero Trust
 For the latest Copilot support for security-related and other features of Microsoft 365, see [Copilot requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements).
 
 > [!NOTE]
-> Beginning on January 1, 2024, Copilot for Microsoft 365 will be generally available for Microsoft 365 A3 and A5 faculty. See [this technical community post](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/announcing-updates-to-copilot-for-microsoft-365-availability/ba-p/4007075) for more information.
+> Beginning on January 1, 2024, Copilot will be generally available for Microsoft 365 A3 and A5 faculty. See [this technical community post](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/announcing-updates-to-copilot-for-microsoft-365-availability/ba-p/4007075) for more information.
 
 ## Step 1. Deploy or validate your data protection
 
@@ -77,7 +77,7 @@ To prevent your organization’s data from being at risk of overexposure or over
 
 These data protection capabilities can also be used to ensure that your organization complies with data regulations, such as those dealing with protecting personal information. 
 
-The following capabilities from Microsoft Purview strengthen your data security and compliance for Copilot for Microsoft 365:
+The following capabilities from Microsoft Purview strengthen your data security and compliance for Copilot:
 
 - Sensitivity labels and content encrypted by Microsoft Purview Information Protection
 - Data classification

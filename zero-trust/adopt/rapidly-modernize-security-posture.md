@@ -414,7 +414,7 @@ The following table lists some example metrics.
 
 ### Monitor and detect
 
-As you work through each business scenario, establish how you'll monitor and detect changes to the environment and breaches. Many of the monitoring and detection capabilities are provided through the Extended Detection and Response (XDR) tools, including the suite of Microsoft Defender products and Microsoft Sentinel. These are implemented in the **Prevent or reduce business damage from a breach** business scenario (article is in progress).
+As you work through each business scenario, establish how you'll monitor and detect changes to the environment and breaches. Many of the monitoring and detection capabilities are provided through the Extended Detection and Response (XDR) tools, including the suite of Microsoft Defender XDR products and Microsoft Sentinel. These are implemented in the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario.
 
 ### Iterate for maturity
 

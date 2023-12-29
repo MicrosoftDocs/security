@@ -390,7 +390,7 @@ Your priorities for data discovery and protection might differ.
 Note the following dependencies on other business scenarios:
 
 - Extending information protection to endpoint devices requires coordination with Intune (included in the [Secure remote and hybrid work](secure-remote-hybrid-work.md) article).
-- Extending information protection to data in SaaS apps requires Microsoft Defender for Cloud Apps. Piloting and deploying Defender for Cloud Apps is included in the **Prevent or reduce business damage from a breach** scenario (coming soon). In the meantime, see [Evaluate Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-overview).
+- Extending information protection to data in SaaS apps requires Microsoft Defender for Cloud Apps. Piloting and deploying Defender for Cloud Apps is included in the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario.
 
 As you finalize your adoption plans, be sure to revisit the [Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) Deployment Acceleration Guide to review the recommendations and fine-tune your strategy.
 
@@ -424,6 +424,6 @@ See [Govern your data with Microsoft Purview](/microsoft-365/compliance/manage-d
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
+- [Secure remote and hybrid work](secure-remote-hybrid-work.md)
 - [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
-- [Secure remote and hybrid work](secure-remote-hybrid-work.md)

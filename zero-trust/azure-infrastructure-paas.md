@@ -268,7 +268,7 @@ To enable network security group flow Logging, follow the [Tutorial: Log network
 >
 > - You should restrict access to the logs as needed.
 >
-> - Logs should flow into Log Analytics and Azure Sentinel as needed.
+> - Logs should flow into Log Analytics and Microsoft Sentinel as needed.
 
 ## Step 5: Secure ingress and egress for Azure PaaS services
 

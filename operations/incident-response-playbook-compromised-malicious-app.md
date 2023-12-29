@@ -117,7 +117,7 @@ This feature is in preview at the time of writing this playbook and licensing re
 
 ### Check for unusual sign-in behavior
 
-The first step of the investigation is to look for evidence of unusual authentications patterns in the usage of the Service Principal. Within the Azure portal, Azure Monitor, Azure Sentinel, or the Security Information and Event Management (SIEM) system of your organization's choice, look for the following in the **Service principal sign-ins** section:
+The first step of the investigation is to look for evidence of unusual authentications patterns in the usage of the Service Principal. Within the Azure portal, Azure Monitor, Microsoft Sentinel, or the Security Information and Event Management (SIEM) system of your organization's choice, look for the following in the **Service principal sign-ins** section:
 
 - Location - is the Service Principal authenticating from locations\IP addresses that you wouldn't expect?
 - Failures - 's there a large number of authentication failures for the Service Principal?

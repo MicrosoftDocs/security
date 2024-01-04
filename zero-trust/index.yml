@@ -56,8 +56,8 @@ landingContent:
           url:  adopt/rapidly-modernize-security-posture.md
         - text: Secure remote and hybrid work
           url:  adopt/secure-remote-hybrid-work.md
-        - text: Meet regulatory and compliance requirements
-          url:  adopt/meet-regulatory-compliance-requirements.md
+        - text: Prevent or reduce business damage from a breach
+          url:  adopt/prevent-reduce-business-damage-breach.md
         - text: Identify and protect sensitive business data
           url:  adopt/identify-protect-sensitive-business-data.md
         - text: Meet regulatory and compliance requirements

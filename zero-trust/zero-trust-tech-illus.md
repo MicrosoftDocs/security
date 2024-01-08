@@ -1,7 +1,7 @@
 ---
 title: Zero Trust illustrations for IT architects and implementers 
 description: Get the technical illustrations in the Zero Trust library to print or customize for your deployment.
-ms.date: 02/23/2023
+ms.date: 12/13/2023
 ms.service: security
 author: sikovatc
 ms.author: sikovatc
@@ -44,17 +44,6 @@ Adopting Microsoft Copilot for Microsoft 365 or Copilot is a great incentive for
 | Item | Description |
 |:-----|:-----|
 |[![Copilot architecture poster thumb](media/tech-illus/microsoft-365-copilot-architecture-thumb.png)](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf) <br/> [PDF](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf) \| [Visio](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.vsdx)  <br>Updated November 2023 | Copilot combines the power of large language models (LLMs) with your data in the Microsoft Graph — your calendar, emails, chats, documents, meetings, and more — and the Microsoft 365 apps to provide a powerful productivity tool. <br/><br/> This series of illustrations provides a view into new logical architecture components. It includes recommendations for preparing your environment for Copilot with security and information protection while assigning licenses. |
-
-
-<!---
-### Zero Trust for Microsoft Azure
-
-This illustration provides a deployment plan for applying Zero Trust principles to Microsoft Azure.
-
-| Item | Related solution guides |
-|:-----|:-----|
-|[![Illustration of applying Zero Trust to Azure services.](media/tech-illus/apply-zero-trust-to-azure-services-poster-thumb.png)](Microsoft Download Center link) <br/> [PDF](Microsoft Download Center link) \| [Visio](Microsoft Download Center link) <br/> Updated June 2023 | Use this illustration together with this article: [Microsoft Azure Zero Trust deployment plan](apply-zero-trust-azure-services-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure IaaS services](azure-infrastructure-overview.md)</li><li>[Azure Virtual Desktop](azure-infrastructure-avd.md)</li><li>[Azure Virtual WAN](azure-virtual-wan.md)</li><li>[IaaS applications in Amazon Web Services](secure-iaas-apps.md)</li><li>[Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)</li></ul>|
---->
 
 ### Zero Trust for Azure IaaS services
 

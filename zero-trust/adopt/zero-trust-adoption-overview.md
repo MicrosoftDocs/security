@@ -1,7 +1,7 @@
 ---
 title: Zero Trust adoption framework overview
 description: This article gives an overview of the Zero Trust adoption framework.
-ms.date: 01/27/2023    
+ms.date: 12/14/2023    
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -233,5 +233,6 @@ For more information about how to use Secure Score, see [Secure Score documentat
 
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work with Zero Trust](secure-remote-hybrid-work.md)
-- [Identify and protect sensitive business data with Zero Trust](identify-protect-sensitive-business-data.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
+- [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)

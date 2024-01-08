@@ -1,6 +1,7 @@
 ---
 title: Zero Trust Rapid Modernization Plan
-description: An overview of the Zero Trust Rapid Modernization Plan (RaMP) to quickly modernize your security and IT infrastructure to comply with Zero Trust protections. 
+description: An overview of the Zero Trust Rapid Modernization Plan (RaMP) to quickly modernize your security and IT infrastructure to comply with Zero Trust principles.
+ms.date: 01/08/2024
 ms.service: security
 ms.author: dansimp
 author: dansimp

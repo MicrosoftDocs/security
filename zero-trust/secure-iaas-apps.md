@@ -1,6 +1,6 @@
 ---
 title: Overview - Apply Zero Trust principles to IaaS applications in Amazon Web Services (AWS)
-description: This article gives an overview of how to apply Zero Trust principles to IaaS applications in Amazone Web Services (AWS).
+description: This article gives an overview of how to apply Zero Trust principles to IaaS applications in Amazon Web Services (AWS).
 ms.date: 04/26/2023
 ms.service: security
 author: simona

@@ -4,7 +4,7 @@ description: Identities, representing people, services, or IoT devices, are the 
 ms.date: 10/19/2023
 ms.service: security
 author: mjcaparas
-ms.author: mjcaparas
+ms.author: mjcapara
 ms.topic: conceptual
 ms.collection:
   - zerotrust-pillar

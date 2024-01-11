@@ -19,7 +19,7 @@ ms.collection:
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
-ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref
+ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ---
 
 # Password spray investigation
@@ -37,15 +37,15 @@ This article contains the following sections:
 
 ## Prerequisites
 
-Before starting the investigation, complete the setup for logs and alerts and more system requirements.
+Before starting the investigation, make sure you have completed the setup for logs and alerts and other system requirements.
 
-For Microsoft Entra monitoring,  follow our recommendations and guidance in our [Microsoft Entra SecOps Guide](/azure/active-directory/fundamentals/security-operations-introduction).
+For Microsoft Entra monitoring, follow our recommendations and guidance in our [Microsoft Entra SecOps Guide](/azure/active-directory/fundamentals/security-operations-introduction).
 
 ### Set up [AD FS logging](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging)
 
 #### Event logging on ADFS 2016
 
-By default, the Microsoft Active Directory Federation Services (AD FS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request. Set logging to the highest level and send the AD FS (& security) logs to a SIEM to correlate with AD DS and Microsoft Entra ID authentication.
+By default, the Microsoft Active Directory Federation Services (ADFS) in Windows Server 2016 has a basic level of auditing enabled. With basic auditing, administrators can see five or less events for a single request. Set logging to the highest level and send the AD FS (& security) logs to a SIEM to correlate with AD authentication and Microsoft Entra ID.
 
 To view the current auditing level, use this PowerShell command:
 
@@ -59,9 +59,9 @@ This table lists the auditing levels that are available.
 
 |Audit level|PowerShell syntax|Description|
 |---|---|---|
-|None|`Set-AdfsProperties -AuditLevel None`|Auditing is disabled and no events are logged|
-|Basic (Default)|`Set-AdfsProperties -AuditLevel Basic`|No more than five events are logged for a single request|
-|Verbose|`Set-AdfsProperties -AuditLevel Verbose`|All events are logged. This setting creates logs a significant amount of information per request.|
+|None|`Set-AdfsProperties -AuditLevel None`|Auditing is disabled and no events will be logged|
+|Basic (Default)|`Set-AdfsProperties -AuditLevel Basic`|No more than five events will be logged for a single request|
+|Verbose|`Set-AdfsProperties -AuditLevel Verbose`|All events will be logged. This level will log a significant amount of information per request.|
 
 To raise or lower the auditing level, use this PowerShell command:
 
@@ -91,7 +91,7 @@ Set-AdfsProperties -AuditLevel <None | Basic | Verbose>
 
 ### Install Microsoft Entra Connect Health for ADFS
 
-The Microsoft Entra Connect Health for ADFS agent allows you to have greater visibility into your federation environment. It provides you with several preconfigured dashboards like usage, performance monitoring, and risky IP reports.
+The Microsoft Entra Connect Health for ADFS agent allows you to have greater visibility into your federation environment. It provides you with several preconfigured dashboards like usage, performance monitoring and risky IP reports.
 
 To install ADFS Connect Health, go through the [requirements for using Microsoft Entra Connect Health](/azure/active-directory/hybrid/how-to-connect-health-agent-install#requirements), and then install the [Azure ADFS Connect Health Agent](https://go.microsoft.com/fwlink/?LinkID=518973).
 
@@ -120,7 +120,7 @@ For more information, see [Generic SIEM Integration](/cloud-app-security/siem).
 
 You can connect SIEM with the Microsoft Graph Security API by using any of the following options:
 
-- **Directly using the supported integration options** – Refer to the list of supported integration options like writing code to directly connect your application to derive rich insights. Use the samples to get started.
+- **Directly using the supported integration options** – Refer to the list of supported integration options like writing code to directly connect your application to derive rich insights. Use samples to get started.
 - **Use native integrations and connectors built by Microsoft partners** – Refer to the Microsoft Graph Security API partner solutions to use these integrations.
 - **Use connectors built by Microsoft** – Refer to the list of connectors that you can use to connect with the API through various solutions for Security Incident and Event Management (SIEM), Security Response and Orchestration (SOAR), Incident Tracking and Service Management (ITSM), reporting, and so on.
 
@@ -164,7 +164,7 @@ You can also:
 - Is there anything out of the ordinary on the account, such as new device, new OS, new IP address used? Use Defender for Cloud Apps or Azure Information Protection to detect suspicious activity.
 - Inform local authorities/third parties for assistance.
 - If you suspect a compromise, check for data exfiltration.
-- Check associated account for suspicious behavior and look to correlate to other possible accounts and services and other malicious IP addresses.
+- Check associated account for suspicious behavior and look to correlate to other possible accounts and services as well as other malicious IP addresses.
 - Check accounts of anyone working in the same office/delegated access - password hygiene (make sure they aren't using the same password as the compromised account)
 - Run ADFS help
 
@@ -184,7 +184,7 @@ Check the [References](#references) section for guidance on how to enable the fo
 #### Recovery
 
 - Tag bad IP address in Defender for Cloud Apps, SIEM, ADFS and Microsoft Entra ID
-- Check for other forms of mailbox persistence such as forwarding rules or more delegations added
+- Check for other forms of mailbox persistence such as forwarding rules or other delegations added
 - [MFA as primary authentication](/windows-server/identity/ad-fs/operations/configure-ad-fs-and-azure-mfa)
 - [Configure SIEM integrations with Cloud](/microsoft-365/security/office-365-security/siem-server-integration)
 - Configure alerting - Identity Protection, ADFS Health Connect, SIEM and Defender for Cloud Apps
@@ -208,13 +208,13 @@ Let's understand a few password spray attack techniques before proceeding with t
 
 #### Identify authentication type
 
-As the first step, you need to check what authentication type is used for a tenant/verified domain that you are investigating.
+As the first step, you need to check what authentication type is used for a tenant/verified domain that you're investigating.
 
-To obtain the authentication status for a specific domain name, use the [Get-MsolDomain](/powershell/module/msonline/get-msoldomain) PowerShell command. Here's an example:
+To obtain the authentication status for a specific domain name, use the [Get-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain) PowerShell command. Here's an example:
 
 ```powershell
-Connect-MsolService
-Get-MsolDomain -DomainName "contoso.com"
+Connect-MgGraph -Scopes "Domain.Read.All"
+Get-MgDomain -DomainId "contoso.com"
 ```
 
 ### Is the authentication federated or managed?

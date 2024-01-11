@@ -99,7 +99,7 @@ The Defender for Endpoint APIs can be used to integrate device security capabili
 
 You or your small business customers likely use other Software as a Service (SaaS) applications, such as Salesforce, Adobe Creative Cloud, and DocuSign. You can integrate these applications with Microsoft Entra ID and include these in your MFA and Conditional Access policies. 
 
-The Microsoft Entra application gallery is a collection of software as a service (SaaS) applications that have been pre-integrated with Entra ID. All you need to do is find the application in the gallery and add it to your environment. Then, the application will be available for you to include in the scope of your MFA and Conditional Access rules. See [Overview of the Microsoft Entra application gallery](/entra/identity/manage-apps/overview-application-gallery).
+The Microsoft Entra application gallery is a collection of software as a service (SaaS) applications that have been pre-integrated with Entra ID. All you need to do is find the application in the gallery and add it to your environment. Then, the application will be available for you to include in the scope of your MFA and Conditional Access rules. See [Overview of the Microsoft Entra application gallery](/entra/identity/enterprise-apps/overview-application-gallery).
 
 After you add SaaS apps to your environment, these apps will automatically be protected with Microsoft Entra MFA and the other protections provided by security defaults. If you're using Conditional Access policies instead of security defaults, you need to add these apps to the scope of your Conditional Access and related policies. See [Turn on MFA in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-turn-on-mfa).
 

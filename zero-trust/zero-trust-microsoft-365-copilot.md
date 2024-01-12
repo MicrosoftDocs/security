@@ -40,7 +40,7 @@ In the diagram:
 - Copilot components include:
   - The Copilot service, which orchestrates the responses to user prompts
   - A Semantic Index for the data in your Microsoft 365 tenant
-  - An instance of the Microsoft Graph for the data your Microsoft 365 tenant
+  - An instance of the Microsoft Graph for the data of your Microsoft 365 tenant
 - Your Microsoft 365 tenant that contains your organization data
 
 ## What’s in this article

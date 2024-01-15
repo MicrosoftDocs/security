@@ -1,6 +1,7 @@
 ---
 title: Data, compliance, and governance
-description: Data, compliance, and governance initiative of RaMP for Zero Trust
+description: Use the steps in this guidance to deploy data, compliance, and governance that adheres to Zero Trust principles.
+ms.date: 01/08/2024
 ms.service: security
 ms.author: dansimp
 author: dansimp

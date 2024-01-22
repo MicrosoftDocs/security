@@ -2,7 +2,7 @@
 layout: Conceptual
 title: Securing the Future of AI and ML at Microsoft
 description: This research papers shares some of Microsoft’s security lessons-learned from designing products and operating online services built on AI.
-ms.date: 05/27/2022
+ms.date: 01/22/2024
 ms.service: security
 author: TerryLanfear
 ms.author: terrylan
@@ -46,7 +46,7 @@ Traditional software attack vectors are still critical to address, but they do n
 
 3. Machine Learning algorithms must be capable of discerning maliciously-introduced data from benign “Black Swan” events [1] by rejecting training data with negative impact on results. Otherwise, learning models will always be susceptible to gaming by attackers and trolls.
 
-4. AI must have built-in forensic capabilities. This enables enterprises to provide customers with transparency and accountability of their AI, ensuring its actions are not only verifiably correct but also legally defensible. These capabilities also function as an early form of “AI intrusion detection”, allowing engineers to determine the exact point in time that a decision was made by a classifier, what data influenced it, and whether or not that data was trustworthy. Data visualization capabilities in this area are rapidly advancing and show promise to help engineers identify and resolve root causes for these complex issues [11].
+4. AI must have built-in forensic capabilities. This enables enterprises to provide customers with transparency and accountability of their AI, ensuring its actions are not only verifiably correct but also legally defensible. These capabilities also function as an early form of “AI intrusion detection”, allowing engineers to determine the exact point in time that a decision was made by a classifier, what data influenced it, and whether or not that data was trustworthy. Data visualization capabilities in this area are rapidly advancing and show promise to help engineers identify and resolve root causes for these complex issues [10].
 
 5. AI must recognize and safeguard sensitive information, even if humans don’t recognize it as such. Rich user experiences in AI require vast amounts of raw data to train on, so “over-sharing” by customers must be planned for.
 
@@ -58,7 +58,7 @@ AI designers will always need to ensure the confidentiality, integrity and avail
 The traditional ways of defending against malicious attacks do not provide the same coverage in this new paradigm, where voice/video/image-based attacks can circumvent current filters and
 defenses. New threat modeling aspects must be explored in order to prevent new abuses from exploiting our AI. This goes far beyond identifying traditional attack surface via fuzzing or input manipulation (those attacks have their own AI-specific pivots too). It requires
 incorporating scenarios unique to the AI/ML space. Key among these are AI user experiences such as voice, video and gestures. The threats associated with these experiences have not been traditionally modeled. For example, video content is now being tailored to induce physical effects. Additionally, research has demonstrated that audio-based attack
-commands can be crafted [10].
+commands can be crafted [9].
 
 The unpredictability, creativity, and maliciousness of criminals, determined adversaries, and trolls requires us to instill our AIs with the values of **Resilience** and **Discretion**:
 
@@ -70,7 +70,7 @@ The unpredictability, creativity, and maliciousness of criminals, determined adv
 
 3. Recognize any time when multiple users act in a coordinated fashion; e.g., multiple users all issuing the same unexplainable yet deliberately crafted query, sudden spikes in the number of users or sudden spikes in activation of specific parts of an AI system.
 
-Attacks of this type should be considered on par with Denial of Service attacks since the AI may require bugfixes and retraining in order not to fall for the same tricks again. Of critical importance is the ability to identify malicious intent in the presence of countermeasures such as those used to defeat sentiment analysis APIs [5].
+Attacks of this type should be considered on par with Denial of Service attacks since the AI may require bugfixes and retraining in order not to fall for the same tricks again. Of critical importance is the ability to identify malicious intent in the presence of countermeasures such as those used to defeat sentiment analysis APIs [4].
 
 **Discretion**: AI should be a responsible and trustworthy custodian of *any* information it has access to. As humans, we will undoubtedly assign a certain level of trust in our AI relationships. At some point, these agents will talk to other agents or other humans on our behalf. We must be able to trust that an AI system has enough discretion to only share in a restricted form what it needs to share about us so other agents can complete tasks on its behalf. Furthermore, multiple agents interacting with personal data on our behalf should not each need global access to it. Any data access scenarios involving multiple AIs or bot agents should limit the lifetime of access to the minimum extent required. Users should also be able to deny data and reject the authentication of agents from specific corporations or locales just as web browsers allow site blocking today. Solving this problem requires new thinking on inter-agent authentication and data access privileges like the cloud-based user authentication investments made in the early years of cloud computing.
 
@@ -113,7 +113,7 @@ Event tracing facilities could start with the correlation of basic decision-maki
 Such tracing is overkill for the majority of algorithm-assisted decision making. However, having the ability to identify the data points and algorithm metadata leading to specific results will be of great benefit in high-value decision making. Such capabilities will not only demonstrate trustworthiness and integrity through the algorithm’s ability to “show its work”, but this data could also be used for fine-tuning as well.
 
 Another forensic capability needed in AI/ML is tamper detection. Just as we need our AIs to recognize bias and not be susceptible to it, we should have forensic capabilities available to aid our engineers in detecting and responding to such attacks. Such forensic capabilities
-will be of tremendous value when paired with data visualization techniques [11] allowing the auditing, debugging and tuning of algorithms for more effective results.
+will be of tremendous value when paired with data visualization techniques [10] allowing the auditing, debugging and tuning of algorithms for more effective results.
 
 ## AI must safeguard sensitive information, even if humans don’t
 Rich experiences require rich data. Humans already volunteer vast amounts of data for ML to train against. This ranges from the mundane video streaming queue contents to trends in credit card purchases/transaction histories used to detect fraud. AI should have an ingrained sense of discretion when it comes to handling user data, always acting to protect it even when it is volunteered freely by an over-sharing public.
@@ -134,7 +134,7 @@ Despite the nascent state of this project, we believe the evidence compiled to d
     3. Developers will need to understand the secure “building blocks” of AI services that will be reused across their enterprise. There will need to be an emphasis on fault-tolerant design with subsystems which can be easily turned off (e.g. image processors, text parsers).
 
 3. ML Classifiers and their underlying algorithms could be hardened and capable of detecting malicious training data without it contaminating valid training data currently in use or skewing the results.
-    1. Techniques such as Reject on Negative Input [6] need researcher cycles to investigate.
+    1. Techniques such as Reject on Negative Input [5] need researcher cycles to investigate.
 
     2. This work involves mathematical verification, proof-of-concept in code, and testing against both malicious and benign anomalous data.
 
@@ -161,27 +161,25 @@ Despite the nascent state of this project, we believe the evidence compiled to d
     1. This could focus on not only text vernacular, but image, voice and gesture data as well as permutations of those data types.
 
 ## Conclusion
-The [Asilomar AI Principles](https://futureoflife.org/ai-principles/) illustrate the complexity of delivering on AI in a fashion that consistently benefits humanity. Future AIs will need to interact with other AIs to deliver rich, compelling user experiences. That means it simply is not good enough for Microsoft to “get AI right” from a security perspective – the *world* has to. We need industry alignment and collaboration with greater visibility brought to the issues in this document in a fashion similar to our worldwide push for a Digital Geneva Convention [9]. By addressing the issues presented here, we can begin guiding our customers and industry partners down a path where AI is truly democratized and augments the intelligence of all humanity.
+The [Asilomar AI Principles](https://futureoflife.org/ai-principles/) illustrate the complexity of delivering on AI in a fashion that consistently benefits humanity. Future AIs will need to interact with other AIs to deliver rich, compelling user experiences. That means it simply is not good enough for Microsoft to “get AI right” from a security perspective – the *world* has to. We need industry alignment and collaboration with greater visibility brought to the issues in this document in a fashion similar to our worldwide push for a Digital Geneva Convention [8]. By addressing the issues presented here, we can begin guiding our customers and industry partners down a path where AI is truly democratized and augments the intelligence of all humanity.
 
 ## Bibliography
   [1] *Taleb, Nassim Nicholas (2007),* The Black Swan: The Impact of the Highly Improbable, Random House, [ISBN 978-1400063512](https://en.wikipedia.org/wiki/Special:BookSources/978-1400063512)
 
   [2] *Florian Tramèr, Fan Zhang, Ari Juels, Michael K. Reiter, Thomas Ristenpart,* [Stealing Machine Learning Models via Prediction APIs]( <https://arxiv.org/abs/1609.02943>)
 
-  [3] *Ian GoodFellow, Nicolas Papernot, Sandy Huang, Yan Duan, Pieter Abbeel and Jack Clark:* [Attacking machine learning with adversarial examples]( <https://blog.openai.com/adversarial-example-research/>)
+  [3] *Satya Nadella:* [The Partnership of the Future](<https://www.slate.com/articles/technology/future_tense/2016/06/microsoft_ceo_satya_nadella_humans_and_a_i_can_work_together_to_solve_society.html>)
 
-  [4] *Satya Nadella:* [The Partnership of the Future](<https://www.slate.com/articles/technology/future_tense/2016/06/microsoft_ceo_satya_nadella_humans_and_a_i_can_work_together_to_solve_society.html>)
+  [4] *Claburn, Thomas:* [Google's troll-destroying AI can't cope with typos](<https://www.theregister.co.uk/2017/03/02/google_trollspotting_ai_trips_over_typos/>)
 
-  [5] *Claburn, Thomas:* [Google's troll-destroying AI can't cope with typos](<https://www.theregister.co.uk/2017/03/02/google_trollspotting_ai_trips_over_typos/>)
+  [5] *Marco Barreno, Blaine Nelson, Anthony D. Joseph, J.D. Tygar:* [The security of machine learning](<https://people.eecs.berkeley.edu/~adj/publications/paper-files/SecML-MLJ2010.pdf>)
 
-  [6] *Marco Barreno, Blaine Nelson, Anthony D. Joseph, J.D. Tygar:* [The security of machine learning](<https://people.eecs.berkeley.edu/~adj/publications/paper-files/SecML-MLJ2010.pdf>)
+  [6] *Wolchover, Natalie:* [This Artificial Intelligence Pioneer Has a Few Concerns](<https://www.wired.com/2015/05/artificial-intelligence-pioneer-concerns/>)
 
-  [7] *Wolchover, Natalie:* [This Artificial Intelligence Pioneer Has a Few Concerns](<https://www.wired.com/2015/05/artificial-intelligence-pioneer-concerns/>)
+  [7] *Conn, Ariel:* [How Do We Align Artificial Intelligence with Human Values?](<https://futureoflife.org/2017/02/03/align-artificial-intelligence-with-human-values/>)
 
-  [8] *Conn, Ariel:* [How Do We Align Artificial Intelligence with Human Values?](<https://futureoflife.org/2017/02/03/align-artificial-intelligence-with-human-values/>)
+  [8] *Smith, Brad:* [The need for urgent collective action to keep people safe online: Lessons from last week’s cyberattack](https://blogs.microsoft.com/on-the-issues/2017/05/14/need-urgent-collective-action-keep-people-safe-online-lessons-last-weeks-cyberattack/)
 
-  [9] *Smith, Brad:* [The need for urgent collective action to keep people safe online: Lessons from last week’s cyberattack](https://blogs.microsoft.com/on-the-issues/2017/05/14/need-urgent-collective-action-keep-people-safe-online-lessons-last-weeks-cyberattack/)
+  [9] *Nicholas Carlini, Pratyush Mishra, Tavish Vaidya, Yuankai Zhang, Micah Sherr, Clay Shields, David Wagner, Wenchao Zhou:* [Hidden Voice Commands](<https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/carlini>)
 
-  [10] *Nicholas Carlini, Pratyush Mishra, Tavish Vaidya, Yuankai Zhang, Micah Sherr, Clay Shields, David Wagner, Wenchao Zhou:* [Hidden Voice Commands](<https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/carlini>)
-
-  [11] *Fernanda Viégas, Martin Wattenberg, Daniel Smilkov, James Wexler, Jimbo Wilson, Nikhil Thorat, Charles Nicholson, Google Research:* [Big Picture](<https://research.google.com/bigpicture/>)
+  [10] *Fernanda Viégas, Martin Wattenberg, Daniel Smilkov, James Wexler, Jimbo Wilson, Nikhil Thorat, Charles Nicholson, Google Research:* [Big Picture](<https://research.google.com/bigpicture/>)

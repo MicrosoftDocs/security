@@ -87,20 +87,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "simulation-labs",
-      "build_source_folder": "simulation-labs",
-      "build_output_subfolder": "simulation-labs",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "trusted-root-docs",
       "build_source_folder": "trusted-root-docs",
       "build_output_subfolder": "trusted-root-docs",

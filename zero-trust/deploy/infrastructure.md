@@ -3,8 +3,8 @@ title: Securing infrastructure with Zero Trust
 description: Infrastructure represents a critical threat vector. A Zero Trust strategy makes it easier for you to develop, test, deliver, monitor, control, and support IT services.
 ms.date: 09/30/2020
 ms.service: security
-author: TerryLanfear
-ms.author: terrylan
+author: joe-davies-affirm
+ms.author: v-jodavies
 ms.topic: conceptual
 ms.collection:
   - zerotrust-pillar

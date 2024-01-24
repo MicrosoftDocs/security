@@ -239,7 +239,7 @@ For more information about how to use Secure Score, see [Secure Score documentat
 
 ## Additional Zero Trust documentation
 
-See additional Zero Trust content based on the documentation set or your role in your organization.
+See additional Zero Trust content based on a documentation set or your role in your organization.
 
 ### Documentation set
 

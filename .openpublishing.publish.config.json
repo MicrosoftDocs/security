@@ -15,20 +15,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "compass",
-      "build_source_folder": "compass",
-      "build_output_subfolder": "compass",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "operations",
       "build_source_folder": "operations",
       "build_output_subfolder": "operations",
@@ -82,20 +68,6 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "simulation-labs",
-      "build_source_folder": "simulation-labs",
-      "build_output_subfolder": "simulation-labs",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"

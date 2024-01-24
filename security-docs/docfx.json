@@ -1,51 +1,60 @@
 {
-    "build": {
-        "content": [{
-            "files": [
-                "**/*.md",
-                "**/*.yml"
-            ],
-            "exclude": [
-                "**/obj/**",
-                "**/includes/**",
-                "_themes/**",
-                "_themes.pdf/**",
-                "README.md",
-                "LICENSE",
-                "LICENSE-CODE",
-                "ThirdPartyNotices"
-            ]
-        }],
-        "resource": [{
-            "files": [
-                "**/*.png",
-                "**/*.jpg"
-            ],
-            "exclude": [
-                "**/obj/**",
-                "**/includes/**",
-                "_themes/**",
-                "_themes.pdf/**"
-            ]
-        }],
-        "overwrite": [],
-        "externalReference": [],
-        "globalMetadata": {
-            "breadcrumb_path": "/security/breadcrumb/toc.json",
-            "uhfHeaderId": "MSDocsHeader-Security",
-            "extendBreadcrumb": true,
-            "feedback_system": "GitHub",
-            "feedback_github_repo": "MicrosoftDocs/security",
-            "titleSuffix": "Security documentation"
-        },
-        "fileMetadata": {
-            "titleSuffix": {
-                "MSRC/**/**.md": "Security",
-                "SDL/**/**.md": "Security Documentation"
-            }
+  "build": {
+    "markdownEngineName": "markdig",
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+            "**/obj/**",
+            "**/includes/**",
+            "_themes/**",
+            "_themes.pdf/**",
+            "**/docfx.json",
+            "_repo.en-us/**",
+            "README.md",
+            "LICENSE",
+            "LICENSE-CODE",
+            "ThirdPartyNotices.md",
+            "SECURITY.md"
+          ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+            "**/*.gif",
+            "**/*.jpeg",
+            "**/*.png",
+            "**/*.jpg",
+            "**/*.svg"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "_themes/**",
+            "_themes.pdf/**",
+            "**/docfx.json",
+            "_repo.en-us/**"
+          ]
+        }
+      ],
+      "overwrite": [],
+      "externalReference": [],
+      "globalMetadata": {
+        "uhfHeaderId": "MSDocsHeader-Security",
+        "breadcrumb_path": "/security/breadcrumb/toc.json",
+        "feedback_system": "GitHub",
+        "feedback_github_repo": "MicrosoftDocs/security"
+      },
+      "fileMetadata": {
+        "titleSuffix": {
+          "*.md": "Security",
+          "*.yml": "Security"
+        }
         },
         "template": [],
-        "dest": "security-docs",
-        "markdownEngineName": "markdig"
+        "dest": "security-docs"
     }
 }

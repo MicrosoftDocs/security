@@ -171,13 +171,13 @@ These articles help you apply the principles of Zero Trust to your workloads and
 
 ## Next steps
 
-Use additional Zero Trust documentation based on the documentation set or your role in your organization.
+Use additional Zero Trust content based on a documentation set or your role in your organization.
 
 ### Documentation set
 
 Follow this table for the best Zero Trust documentation sets for your needs.
 
-| Documentation set | Helps you... | Audience |
+| Documentation set | Helps you... | Roles |
 | --- | --- | --- |
 | [Adoption framework](adopt/zero-trust-adoption-overview.md) for phase and step guidance for key business solutions and outcomes | Apply Zero Trust protections from the C-suite to the IT implementation. | Security architects, IT teams, and project managers |
 | [Concepts and deployment objectives](deploy/overview.md) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. | IT teams and security staff |
@@ -205,6 +205,8 @@ Follow this table for the best documentation sets for your role in your organiza
 | Partner developer or member of an IT or security team | [Partner integration with Zero Trust](integrate/overview.md) for design guidance for technology areas and specializations | Apply Zero Trust protections to partner Microsoft cloud solutions. |
 | Application developer | [Develop using Zero Trust principles](develop/overview.md) for application development design guidance and best practices | Apply Zero Trust protections to your application. |
 
+<!---
+
 ### Current section
 
 On this site you can find:
@@ -217,3 +219,5 @@ On this site you can find:
 - [Microsoft Azure deployment plans](azure-infrastructure-overview.md)
 - [Integration guidance for ISVs](integrate/overview.md)
 - [Developer guidance](develop/overview.md)
+
+--->

@@ -21,7 +21,7 @@
         "redirect_document_id": true
       },
       {
-        "source_path": "compass/applications-and-cloud-services-videos-and-decks.md",
+        "source_path": "security-docs/compass/applications-and-cloud-services-videos-and-decks.md",
         "redirect_url": "/security/compass/overview",
         "redirect_document_id": false
       },
@@ -41,7 +41,7 @@
         "redirect_document_id": true
       },
       {
-        "source_path": "compass/howto-azure-managed-workstation.md",
+        "source_path": "security-docs/compass/howto-azure-managed-workstation.md",
         "redirect_url": "/security/compass/privileged-access-deployment",
         "redirect_document_id": true
       },
@@ -118,138 +118,138 @@
       },
 
       {
-        "source_path": "compass/backup-plan-to-protect-against-ransomware.md",
+        "source_path": "security-docs/compass/backup-plan-to-protect-against-ransomware.md",
         "redirect_url": "/azure/security/fundamentals/backup-plan-to-protect-against-ransomware",
         "redirect_document_id": false
       },
 
       {
-         "source_path": "compass/governance.md",
+         "source_path": "security-docs/compass/governance.md",
          "redirect_url": "/azure/architecture/framework/security/design-governance",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/governance-risk-compliance-capabilities.md",
+         "source_path": "security-docs/compass/governance-risk-compliance-capabilities.md",
          "redirect_url": "https://azure.microsoft.com/solutions/governance/#solution-overview",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/security-operations.md",
+         "source_path": "security-docs/compass/security-operations.md",
          "redirect_url": "/security/operations/overview",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/security-operations-capabilities.md",
+         "source_path": "security-docs/compass/security-operations-capabilities.md",
          "redirect_url": "/security/operations/security-operations",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/security-operations-videos-and-decks.md",
+         "source_path": "security-docs/compass/security-operations-videos-and-decks.md",
          "redirect_url": "/security/operations/security-operations-videos-and-decks",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/incident-response-overview.md",
+         "source_path": "security-docs/compass/incident-response-overview.md",
          "redirect_url": "/security/operations/incident-response-overview",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/incident-response-planning.md",
+         "source_path": "security-docs/compass/incident-response-planning.md",
          "redirect_url": "/security/operations/incident-response-planning",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/incident-response-playbooks.md",
+         "source_path": "security-docs/compass/incident-response-playbooks.md",
          "redirect_url": "/security/operations/incident-response-playbooks",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/incident-response-playbook-phishing.md",
+         "source_path": "security-docs/compass/incident-response-playbook-phishing.md",
          "redirect_url": "/security/operations/incident-response-playbook-phishing",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/incident-response-playbook-password-spray.md",
+         "source_path": "security-docs/compass/incident-response-playbook-password-spray.md",
          "redirect_url": "/security/operations/incident-response-playbook-password-spray",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/incident-response-playbook-app-consent.md",
+         "source_path": "security-docs/compass/incident-response-playbook-app-consent.md",
          "redirect_url": "/security/operations/incident-response-playbook-app-consent",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/incident-response-playbook-compromised-malicious-app.md",
+         "source_path": "security-docs/compass/incident-response-playbook-compromised-malicious-app.md",
          "redirect_url": "/security/operations/incident-response-playbook-compromised-malicious-app",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/identity.md",
+         "source_path": "security-docs/compass/identity.md",
          "redirect_url": "/security/zero-trust/deploy/identity",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/identity-capabilities.md",
+         "source_path": "security-docs/compass/identity-capabilities.md",
          "redirect_url": "/security/zero-trust/deploy/identity",
          "redirect_document_id": false
       },      
       {
-         "source_path": "compass/network-security-containment.md",
+         "source_path": "security-docs/compass/network-security-containment.md",
          "redirect_url": "/security/zero-trust/deploy/networks",
          "redirect_document_id": false
       },  
       {
-         "source_path": "compass/network-containment-capabilities.md",
+         "source_path": "security-docs/compass/network-containment-capabilities.md",
          "redirect_url": "/security/zero-trust/deploy/networks",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/storage-data-encryption.md",
+         "source_path": "security-docs/compass/storage-data-encryption.md",
          "redirect_url": "/security/zero-trust/deploy/data",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/applications-services.md",
+         "source_path": "security-docs/compass/applications-services.md",
          "redirect_url": "/security/zero-trust/deploy/applications",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/ten-laws-of-security.md",
+         "source_path": "security-docs/compass/ten-laws-of-security.md",
          "redirect_url": "/security/zero-trust/ten-laws-of-security",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/governance-risk-compliance-videos-and-decks.md",
+         "source_path": "security-docs/compass/governance-risk-compliance-videos-and-decks.md",
          "redirect_url": "/security/zero-trust/governance-risk-compliance-videos-and-decks",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/identity-videos-and-decks.md",
+         "source_path": "security-docs/compass/identity-videos-and-decks.md",
          "redirect_url": "/security/zero-trust/identity-videos-and-decks",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/network-containment-videos-and-decks.md",
+         "source_path": "security-docs/compass/network-containment-videos-and-decks.md",
          "redirect_url": "/security/zero-trust/network-containment-videos-and-decks",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/information-protection-and-storage-videos-and-decks.md",
+         "source_path": "security-docs/compass/information-protection-and-storage-videos-and-decks.md",
          "redirect_url": "/security/zero-trust/information-protection-and-storage-videos-and-decks",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/microsoft-security-compass-introduction.md",
+         "source_path": "security-docs/compass/microsoft-security-compass-introduction.md",
          "redirect_url": "/security/zero-trust/zero-trust-overview",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/compass.md",
+         "source_path": "security-docs/compass/compass.md",
          "redirect_url": "/security/zero-trust/zero-trust-overview",
          "redirect_document_id": false
       },
       {
-         "source_path": "compass/progress-and-role-tracking-worksheets.md",
+         "source_path": "security-docs/compass/progress-and-role-tracking-worksheets.md",
          "redirect_url": "/security/zero-trust/zero-trust-overview",
          "redirect_document_id": false
       },
@@ -259,147 +259,147 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/incident-response-process.md",
+        "source_path": "security-docs/compass/incident-response-process.md",
         "redirect_url": "/security/operations/incident-response-overview",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/human-operated-ransomware.md",
+        "source_path": "security-docs/compass/human-operated-ransomware.md",
         "redirect_url": "/security/ransomware/human-operated-ransomware",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/protect-against-ransomware.md",
+        "source_path": "security-docs/compass/protect-against-ransomware.md",
         "redirect_url": "/security/ransomware/protect-against-ransomware",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/protect-against-ransomware-phase1.md",
+        "source_path": "security-docs/compass/protect-against-ransomware-phase1.md",
         "redirect_url": "/security/ransomware/protect-against-ransomware-phase1",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/protect-against-ransomware-phase2.md",
+        "source_path": "security-docs/compass/protect-against-ransomware-phase2.md",
         "redirect_url": "/security/ransomware/protect-against-ransomware-phase2",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/protect-against-ransomware-phase3.md",
+        "source_path": "security-docs/compass/protect-against-ransomware-phase3.md",
         "redirect_url": "/security/ransomware/protect-against-ransomware-phase3",
         "redirect_document_id": false
       },
       {    
-        "source_path": "compass/incident-response-playbook-dart-ransomware-approach.md ",
+        "source_path": "security-docs/compass/incident-response-playbook-dart-ransomware-approach.md ",
         "redirect_url": "/security/operations/incident-response-playbook-dart-ransomware-approach",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/dart-ransomware-case-study.md",
+        "source_path": "security-docs/compass/dart-ransomware-case-study.md",
         "redirect_url": "/security/ransomware/dart-ransomware-case-study",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/overview.md",
+        "source_path": "security-docs/compass/overview.md",
         "redirect_url": "/security/privileged-access-workstations/overview",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/privileged-access-strategy.md",
+        "source_path": "security-docs/compass/privileged-access-strategy.md",
         "redirect_url": "/security/privileged-access-workstations/privileged-access-strategy",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/privileged-access-success-criteria.md",
+        "source_path": "security-docs/compass/privileged-access-success-criteria.md",
         "redirect_url": "/security/privileged-access-workstations/privileged-access-success-criteria",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/privileged-access-security-levels.md",
+        "source_path": "security-docs/compass/privileged-access-security-levels.md",
         "redirect_url": "/security/privileged-access-workstations/privileged-access-security-levels",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/privileged-access-accounts.md",
+        "source_path": "security-docs/compass/privileged-access-accounts.md",
         "redirect_url": "/security/privileged-access-workstations/privileged-access-accounts",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/privileged-access-intermediaries.md",
+        "source_path": "security-docs/compass/privileged-access-intermediaries.md",
         "redirect_url": "/security/privileged-access-workstations/privileged-access-intermediaries",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/privileged-access-interfaces.md",
+        "source_path": "security-docs/compass/privileged-access-interfaces.md",
         "redirect_url": "/security/privileged-access-workstations/privileged-access-interfaces",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/privileged-access-devices.md",
+        "source_path": "security-docs/compass/privileged-access-devices.md",
         "redirect_url": "/security/privileged-access-workstations/privileged-access-devices",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/privileged-access-access-model.md",
+        "source_path": "security-docs/compass/privileged-access-access-model.md",
         "redirect_url": "/security/privileged-access-workstations/privileged-access-access-model",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/privileged-access-deployment.md",
+        "source_path": "security-docs/compass/privileged-access-deployment.md",
         "redirect_url": "/security/privileged-access-workstations/privileged-access-deployment",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/security-rapid-modernization-plan.md",
+        "source_path": "security-docs/compass/security-rapid-modernization-plan.md",
         "redirect_url": "/security/privileged-access-workstations/security-rapid-modernization-plan",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/esae-retirement .md",
+        "source_path": "security-docs/compass/esae-retirement .md",
         "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/administration-videos-and-decks.md",
+        "source_path": "security-docs/compass/administration-videos-and-decks.md",
         "redirect_url": "/security/privileged-access-workstations/administration-videos-and-decks",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/critical-impact-accounts.md",
+        "source_path": "security-docs/compass/critical-impact-accounts.md",
         "redirect_url": "/security/privileged-access-workstations/critical-impact-accounts",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/administration-capabilities.md",
+        "source_path": "security-docs/compass/administration-capabilities.md",
         "redirect_url": "/security/privileged-access-workstations/critical-impact-accounts",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/applications-and-cloud-services-capabilities.md",
+        "source_path": "security-docs/compass/applications-and-cloud-services-capabilities.md",
         "redirect_url": "/security/privileged-access-workstations/applications-and-cloud-services-capabilities",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/endpoint-security-capabilities.md",
+        "source_path": "security-docs/compass/endpoint-security-capabilities.md",
         "redirect_url": "/security/zero-trust/",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/information-protection-and-storage-capabilities.md",
+        "source_path": "security-docs/compass/information-protection-and-storage-capabilities.md",
         "redirect_url": "/security/zero-trust/deploy/data",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/new-in-microsoft-security-compass.md",
+        "source_path": "security-docs/compass/new-in-microsoft-security-compass.md",
         "redirect_url": "/security/zero-trust/",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/endpoint-security-videos-and-decks.md",
+        "source_path": "security-docs/compass/endpoint-security-videos-and-decks.md",
         "redirect_url": "/security/zero-trust/deploy/endpoints",
         "redirect_document_id": false
       },
       {
-        "source_path": "compass/esae-retirement.md",
+        "source_path": "security-docs/compass/esae-retirement.md",
         "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
         "redirect_document_id": false
       }

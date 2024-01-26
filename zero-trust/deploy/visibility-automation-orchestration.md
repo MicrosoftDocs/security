@@ -1,10 +1,10 @@
 ---
 title: Visibility, automation, and orchestration with Zero Trust
-description: Since Zero Trust does not assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires the ability to gain visibility into the activities on and around the request.
+description: Since Zero Trust doesn't assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires the ability to gain visibility into the activities on and around the request.
 ms.date: 09/30/2020
 ms.service: security
-author: Kellylorenebaker
-ms.author: v-kbaker
+author: joe-davies-affirm
+ms.author: v-jodavies
 ms.topic: conceptual
 ms.collection:
   - zerotrust-pillar
@@ -16,7 +16,7 @@ ms.collection:
 
 One of the significant changes in perspectives that is a hallmark of a Zero Trust security frameworks is moving away from trust-by-default toward trust-by-exception. However, you need some reliable way to establish trust once trust is needed. Since you no longer assume that requests are trustworthy, establishing a means to attest to the trustworthiness of the request is critical to proving its point-in-time trustworthiness. This attestation requires the ability to gain visibility into the activities on and around the request.
 
-In our other Zero Trust guides, we defined the approach to implementing an end-to-end Zero Trust approach across [identities](https://aka.ms/ZTIdentity), [endpoints](https://aka.ms/ZTEndpoints) and devices, [data](https://aka.ms/ZTData), [apps](https://aka.ms/ZTApplications), [infrastructure](https://aka.ms/ZTInfrastructure), and [network](https://aka.ms/ZTNetwork). All these investments increase your visibility, which gives you better data for making trust decisions. However, by adopting a Zero Trust approach in these six areas, you necessarily increase the number of incidents Security Operation Centers (SOC) analysts need to mitigate. Your analysts become busier than ever, at a time when there is already a talent shortage. This can lead to chronic alert fatigue and analysts missing critical alerts.
+In our other Zero Trust guides, we defined the approach to implementing an end-to-end Zero Trust approach across [identities](https://aka.ms/ZTIdentity), [endpoints](https://aka.ms/ZTEndpoints) and devices, [data](https://aka.ms/ZTData), [apps](https://aka.ms/ZTApplications), [infrastructure](https://aka.ms/ZTInfrastructure), and [network](https://aka.ms/ZTNetwork). All these investments increase your visibility, which gives you better data for making trust decisions. However, by adopting a Zero Trust approach in these six areas, you necessarily increase the number of incidents Security Operation Centers (SOC) analysts need to mitigate. Your analysts become busier than ever, at a time when there's already a talent shortage. This can lead to chronic alert fatigue and analysts missing critical alerts.
 
 :::image type="content" source="../media/diagram-provide-integrated-capabilities-manage-threats.png" alt-text="Diagram of integrated capabilities to manage threats." border="true":::
 
@@ -37,9 +37,9 @@ Managing threats includes reactive as well as proactive detection and requires t
 
 **Reactive detection** is when incidents are triggered from one of the six pillars that can be investigated. Additionally, a management product like a SIEM will likely support another layer of analytics that will enrich and correlate data, resulting in flagging an incident as bad. The next step would then be to investigate to get the full narrative of the attack.
 
-**Proactive detection** is when you apply hunting to the data to prove a compromised hypothesis. Threat hunting starts with the assumption you have been breached--you hunt for proof that there is indeed a breach.
+**Proactive detection** is when you apply hunting to the data to prove a compromised hypothesis. Threat hunting starts with the assumption you have been breached--you hunt for proof that there's indeed a breach.
 
-Threat hunting starts with a hypothesis based on current threats, such as COVID-19 phishing attacks. Analysts start with this hypothetical threat, identify the key indicators of compromise, and hunt through the data to see if there is proof that the environment has been compromised. If indicators exist, hunting scenarios may result in analytics that would notify the organizations if the certain indicators occurs again.
+Threat hunting starts with a hypothesis based on current threats, such as COVID-19 phishing attacks. Analysts start with this hypothetical threat, identify the key indicators of compromise, and hunt through the data to see if there's proof that the environment has been compromised. If indicators exist, hunting scenarios might result in analytics that would notify the organizations if the certain indicators occurs again.
 
 Either way, once an incident is detected, you need to investigate it to build out the complete story of the attack. What else did the user do? What other systems were involved? What executables were run?
 

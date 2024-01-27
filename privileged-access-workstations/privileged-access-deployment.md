@@ -95,7 +95,7 @@ From the Azure portal, browse to **Microsoft Entra ID** > **Groups** > **New gro
 1. For the workstation devices group, enter:
 
    * **Group type** - Security
-   * **Group name** - Secure Workstations
+   * **Group name** - Secure Workstation Devices
    * **Membership type** - Dynamic Device
    * **Dynamic Membership rules** - `(device.devicePhysicalIds -any _ -contains "[OrderID]:PAW")`
 

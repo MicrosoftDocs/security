@@ -66,19 +66,6 @@
     - name: Microsoft Defender for Office 365 security operations guide
       href: /microsoft-365/security/office-365-security/mdo-sec-ops-guide?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json        
 
-    - name: Microsoft Defender for Cloud Apps security operations guide
-      items:
-      - name: Operations guide overview
-        href: /defender-cloud-apps/ops-guide/ops-guide?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
-      - name: Daily activities
-        href: /defender-cloud-apps/ops-guide/ops-guide-daily?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
-      - name: Weekly activities
-        href: /defender-cloud-apps/ops-guide/ops-guide-weekly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
-      - name: Monthly activities
-        href: /defender-cloud-apps/ops-guide/ops-guide-monthly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
-      - name: Ad-hoc activities
-        href: /defender-cloud-apps/ops-guide/ops-guide-ad-hoc?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
-    
     - name: Microsoft Entra security operations guide
       items:
         - name: Security operations overview
@@ -95,3 +82,17 @@
           href: /azure/active-directory/fundamentals/security-operations-devices?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
         - name: Security operations for infrastructure
           href: /azure/active-directory/fundamentals/security-operations-infrastructure?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+
+    - name: Microsoft Defender for Cloud Apps security operations guide
+      items:
+      - name: Operations guide overview
+        href: /defender-cloud-apps/ops-guide/ops-guide?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Daily activities
+        href: /defender-cloud-apps/ops-guide/ops-guide-daily?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Weekly activities
+        href: /defender-cloud-apps/ops-guide/ops-guide-weekly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Monthly activities
+        href: /defender-cloud-apps/ops-guide/ops-guide-monthly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Ad-hoc activities
+        href: /defender-cloud-apps/ops-guide/ops-guide-ad-hoc?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+    

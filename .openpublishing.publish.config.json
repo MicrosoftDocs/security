@@ -29,20 +29,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "privileged-access-workstations",
-      "build_source_folder": "privileged-access-workstations",
-      "build_output_subfolder": "privileged-access-workstations",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "ransomware",
       "build_source_folder": "ransomware",
       "build_output_subfolder": "ransomware",

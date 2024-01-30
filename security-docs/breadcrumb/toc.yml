@@ -9,3 +9,6 @@ items:
   - name: Engineering
     tocHref: /security/engineering/
     topicHref: /security/engineering/
+  - name: AI Red Team
+    tocHref: /security/ai-red-team/
+    topicHref: /security/ai-red-team/

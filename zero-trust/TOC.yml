@@ -260,6 +260,8 @@
 - name: Apply principles of Zero Trust to Microsoft's Copilot
   expanded: false
   items: 
+    - name: Overview
+      href: apply-zero-trust-copilots-overview.md
     - name: Zero Trust for Microsoft Copilot
       href: zero-trust-microsoft-copilot.md
     - name: Zero Trust for Microsoft Copilot for Microsoft 365

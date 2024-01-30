@@ -7,7 +7,6 @@ author: bcarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
-ms.collection: 
   - M365copilot 
   - msftsolution-copilot
   - msftsolution-scenario
@@ -25,7 +24,7 @@ This series of articles helps you apply the [principles of Zero Trust](zero-trus
 
 Implementing the Zero Trust “never trust, always verify” mindset requires changes to cloud infrastructure, deployment strategy, and implementation.
 
-These articles show you how to apply Zero Trust principles to these Microsoft Copilots:
+These articles show you how to apply Zero Trust principles to:
 
 - [Microsoft Copilot](zero-trust-microsoft-copilot.md)
 - [Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md)

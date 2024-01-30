@@ -3,10 +3,9 @@ items:
   tocHref: /security/
   topicHref: /security/index
   items:
-  - name: Security
-    tocHref: /security/
-    topicHref: /security/index
-    items:
-    - name: Privileged access
-      tocHref: /security/privileged-access-workstations/
-      topicHref: /security/privileged-access-workstations/
+  - name: Privileged access
+    tocHref: /security/privileged-access-workstations/
+    topicHref: /security/privileged-access-workstations/
+  - name: Engineering
+    tocHref: /security/engineering/
+    topicHref: /security/engineering/

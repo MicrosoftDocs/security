@@ -95,4 +95,17 @@
         href: /defender-cloud-apps/ops-guide/ops-guide-monthly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
       - name: Ad-hoc activities
         href: /defender-cloud-apps/ops-guide/ops-guide-ad-hoc?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
-    
+
+    - name: Microsoft Defender for Identity security operations guide
+      items:
+      - name: Operations guide overview
+        href: /defender-for-identity/ops-guide/ops-guide?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Daily activities
+        href: /defender-for-identity/ops-guide/ops-guide-daily?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Weekly activities
+        href: /defender-for-identity/ops-guide/ops-guide-weekly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Monthly activities
+        href: /defender-for-identity/ops-guide/ops-guide-monthly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Ad-hoc activities
+        href: /defender-for-identity/ops-guide/ops-guide-quarterly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+

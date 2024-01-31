@@ -4,6 +4,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
 		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="12.7236in" height="4.49324in"
 		viewBox="0 0 916.096 323.513" xml:space="preserve" color-interpolation-filters="sRGB" class="st18">
+	<title>Diagrams for applying Zero Trust principles to Azure IaaS infrastructure</title>
 	<v:documentProperties v:langID="1033" v:viewMarkup="false"/>
 
 	<style type="text/css">
@@ -46,96 +47,96 @@
 		<title>Page-1</title>
 		<v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="9" v:shadowOffsetY="-9"/>
 		<v:layer v:name="symbols" v:index="0"/>
-		<g id="shape2-1" v:mID="2" v:groupContext="shape" v:layerMember="0" transform="translate(0.448023,-0.448023)">
-			<title>Sheet.2</title>
+		<g id="shape1808-1" v:mID="1808" v:groupContext="shape" v:layerMember="0" transform="translate(0.448023,-0.448023)">
+			<title>Sheet.1808</title>
 			<desc>RBAC and Azure Policies</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(2000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(342000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(8,8,8,8)" v:verticalAlign="0"/>
 			<v:textRect cx="457.6" cy="185.83" width="915.2" height="275.367"/>
 			<rect x="0" y="48.146" width="915.2" height="275.367" class="st1"/>
 			<text x="8" y="66.95" class="st2" v:langID="1033"><v:paragraph/><v:tabList/>RBAC and Azure Policies</text>		</g>
-		<g id="shape3-4" v:mID="3" v:groupContext="shape" v:layerMember="0" transform="translate(25.6162,-16.198)">
-			<title>Sheet.3</title>
+		<g id="shape1809-4" v:mID="1809" v:groupContext="shape" v:layerMember="0" transform="translate(25.6162,-16.198)">
+			<title>Sheet.1809</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(3000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(343000):26"/>
 			</v:userDefs>
 			<rect x="0" y="94.6347" width="521.032" height="228.878" class="st3"/>
 		</g>
-		<g id="shape4-6" v:mID="4" v:groupContext="shape" v:layerMember="0" transform="translate(0.948894,-275.815)">
-			<title>Sheet.4</title>
+		<g id="shape1810-6" v:mID="1810" v:groupContext="shape" v:layerMember="0" transform="translate(0.948894,-275.815)">
+			<title>Sheet.1810</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(4000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(344000):26"/>
 			</v:userDefs>
 			<rect x="0" y="276.263" width="914.699" height="47.25" class="st4"/>
 		</g>
-		<g id="shape5-8" v:mID="5" v:groupContext="shape" transform="translate(7.4915,-284.796)">
-			<title>Sheet.5</title>
-			<desc>Azure AD tenant</desc>
+		<g id="shape1811-8" v:mID="1811" v:groupContext="shape" transform="translate(7.4915,-284.796)">
+			<title>Sheet.1811</title>
+			<desc>Azure Entra ID tenant</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(5000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(345000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
-			<v:textRect cx="77.443" cy="308.869" width="154.89" height="29.2888"/>
-			<rect x="0" y="294.224" width="154.886" height="29.2888" class="st5"/>
-			<text x="4" y="314.27" class="st6" v:langID="1033"><v:paragraph/><v:tabList/>Azure AD tenant</text>		</g>
-		<g id="shape27-11" v:mID="27" v:groupContext="shape" transform="translate(29.1478,-216.401)">
-			<title>Sheet.27</title>
+			<v:textRect cx="105.5" cy="308.869" width="211.01" height="29.2888"/>
+			<rect x="0" y="294.224" width="211" height="29.2888" class="st5"/>
+			<text x="4" y="314.27" class="st6" v:langID="1033"><v:paragraph/><v:tabList/>Azure Entra ID tenant</text>		</g>
+		<g id="shape1812-11" v:mID="1812" v:groupContext="shape" transform="translate(29.1478,-216.401)">
+			<title>Sheet.1812</title>
 			<desc>Platform management group</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(31000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(346000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="105.5" cy="313.513" width="211.01" height="20"/>
 			<rect x="0" y="303.513" width="211" height="20" class="st5"/>
 			<text x="4" y="317.41" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Platform<tspan class="st8"> </tspan><tspan
 						class="st8">management group</tspan></text>		</g>
-		<g id="shape36-16" v:mID="36" v:groupContext="shape" v:layerMember="0" transform="translate(35.8978,-29.698)">
-			<title>Sheet.36</title>
+		<g id="shape1813-16" v:mID="1813" v:groupContext="shape" v:layerMember="0" transform="translate(35.8978,-29.698)">
+			<title>Sheet.1813</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(42000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(347000):26"/>
 			</v:userDefs>
 			<rect x="0" y="142.879" width="154.886" height="180.634" class="st9"/>
 		</g>
-		<g id="shape45-18" v:mID="45" v:groupContext="shape" v:layerMember="0" transform="translate(44.8978,-173.601)">
-			<title>Sheet.45</title>
+		<g id="shape1814-18" v:mID="1814" v:groupContext="shape" v:layerMember="0" transform="translate(44.8978,-173.601)">
+			<title>Sheet.1814</title>
 			<desc>Security Azure subscription</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(45000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(348000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)"/>
 			<v:textRect cx="70.875" cy="309.964" width="141.75" height="27.0973"/>
 			<rect x="0" y="296.416" width="141.75" height="27.0973" class="st10"/>
 			<text x="0" y="306.36" class="st11" v:langID="1033"><v:paragraph/><v:tabList/>Security<tspan class="st8"> </tspan><tspan
 						class="st8">Azure </tspan><tspan x="0" dy="1.2em" class="st8">subscription</tspan></text>		</g>
-		<g id="shape73-24" v:mID="73" v:groupContext="shape" v:layerMember="0" transform="translate(204.648,-29.698)">
-			<title>Sheet.73</title>
+		<g id="shape1815-24" v:mID="1815" v:groupContext="shape" v:layerMember="0" transform="translate(204.648,-29.698)">
+			<title>Sheet.1815</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(69000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(350000):26"/>
 			</v:userDefs>
 			<rect x="0" y="142.879" width="154.886" height="180.634" class="st9"/>
 		</g>
-		<g id="shape74-26" v:mID="74" v:groupContext="shape" v:layerMember="0" transform="translate(213.648,-173.601)">
-			<title>Sheet.74</title>
+		<g id="shape1816-26" v:mID="1816" v:groupContext="shape" v:layerMember="0" transform="translate(213.648,-173.601)">
+			<title>Sheet.1816</title>
 			<desc>Management Azure subscription</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(70000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(351000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)"/>
 			<v:textRect cx="70.875" cy="309.964" width="141.75" height="27.0973"/>
 			<rect x="0" y="296.416" width="141.75" height="27.0973" class="st10"/>
 			<text x="0" y="306.36" class="st11" v:langID="1033"><v:paragraph/><v:tabList/>Management<tspan class="st8"> </tspan><tspan
 						class="st8">Azure </tspan><tspan x="0" dy="1.2em" class="st8">subscription</tspan></text>		</g>
-		<g id="shape75-32" v:mID="75" v:groupContext="shape" transform="translate(237.048,-96.1777)">
-			<title>Sheet.75</title>
+		<g id="shape26-32" v:mID="26" v:groupContext="shape" transform="translate(237.048,-96.1777)">
+			<title>Sheet.26</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(71000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(352000):26"/>
 			</v:userDefs>
 			<rect v:rectContext="foreign" x="0" y="263.433" width="72.3" height="60.0803" class="st5"/>
 			<image x="0" y="263.433" width="72.3" height="60.0803" preserveAspectRatio="none" xlink:href="data:image/png;base64,
-						iVBORw0KGgoAAAANSUhEUgAAAEcAAAA7CAYAAAApUJelAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0
-						Ad5mH3gAABD/SURBVHhe7ZqJd1RVnsfnH5g5Pa0iEMhGFsgKHhuVRRRQbLvdR9Gxtacd7Tl9tPWMbdvddqugjh6UNQRxA0IIWUjYQgiB
+						iVBORw0KGgoAAAANSUhEUgAAAEcAAAA7CAYAAAApUJelAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7D
+						AcdvqGQAABD/SURBVHhe7ZqJd1RVnsfnH5g5Pa0iEMhGFsgKHhuVRRRQbLvdR9Gxtacd7Tl9tPWMbdvddqugjh6UNQRxA0IIWUjYQgiB
 						bCxZCdkJSVUqlVQqSaX2qtSSpZJ853tfXlhipYSEMWGO95zvuZV7f7973+/zfvfe96ryT5jGxWjtQ73KhhqFBXZbn9Q2OAy4hwA7P1g8
 						w7Cy7qFEG7tuapnWcPoHhmB3DsDo6IelbxCGgWE0ugdR4RjEGfsgTto8yLN7cLbHgwrnIJp7hyQb59Aw+kmKvCZVpjUcz/Aw9ARUwuD3
 						GfvxaWcv3tG48Qe1G6+0uPGSyoXfUq+2uPB6qxt/1vRiQ1cfUkz9uOD0wOyZHJ5pC0fXP4RcqwebGex/M/DnlS48fMmJ+y86sLTegXup
@@ -194,126 +195,126 @@
 						AAAAAElFTkSuQmCC"/>
 			<rect v:rectContext="foreign" x="0" y="263.433" width="72.3" height="60.0803" class="st5"/>
 		</g>
-		<g id="shape82-36" v:mID="82" v:groupContext="shape" v:layerMember="0" transform="translate(55.3401,-57.7622)">
-			<title>Sheet.82</title>
+		<g id="shape1817-36" v:mID="1817" v:groupContext="shape" v:layerMember="0" transform="translate(55.3401,-57.7622)">
+			<title>Sheet.1817</title>
 			<desc>Microsoft Sentinel workspace</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(72000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(353000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)"/>
 			<v:textRect cx="48.375" cy="316.434" width="96.75" height="14.1574"/>
 			<rect x="0" y="309.356" width="96.75" height="14.1574" class="st10"/>
 			<text x="22.23" y="305.63" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Microsoft<v:newlineChar/><tspan
 						x="26.43" dy="1.2em" class="st13">Sentinel </tspan><tspan x="19.54" dy="1.2em" class="st13">workspace</tspan></text>		</g>
-		<g id="shape83-41" v:mID="83" v:groupContext="shape" v:layerMember="0" transform="translate(224.823,-66.3499)">
-			<title>Sheet.83</title>
+		<g id="shape1818-41" v:mID="1818" v:groupContext="shape" v:layerMember="0" transform="translate(224.823,-66.3499)">
+			<title>Sheet.1818</title>
 			<desc>Operations workspace</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(73000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(354000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)"/>
 			<v:textRect cx="48.375" cy="316.434" width="96.75" height="14.1574"/>
 			<rect x="0" y="309.356" width="96.75" height="14.1574" class="st10"/>
 			<text x="18.28" y="312.83" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Operations <tspan
 						x="19.54" dy="1.2em" class="st13">workspace</tspan></text>		</g>
-		<g id="shape84-45" v:mID="84" v:groupContext="shape" v:layerMember="0" transform="translate(373.762,-29.698)">
-			<title>Sheet.84</title>
+		<g id="shape1819-45" v:mID="1819" v:groupContext="shape" v:layerMember="0" transform="translate(373.762,-29.698)">
+			<title>Sheet.1819</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(74000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(355000):26"/>
 			</v:userDefs>
 			<rect x="0" y="142.879" width="154.886" height="180.634" class="st9"/>
 		</g>
-		<g id="shape67-47" v:mID="67" v:groupContext="shape" v:layerMember="0" transform="translate(384.648,-173.601)">
-			<title>Sheet.67</title>
+		<g id="shape1820-47" v:mID="1820" v:groupContext="shape" v:layerMember="0" transform="translate(384.648,-173.601)">
+			<title>Sheet.1820</title>
 			<desc>Identity Azure subscription</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(67000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(349000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)"/>
 			<v:textRect cx="70.4501" cy="309.964" width="140.91" height="27.0973"/>
 			<rect x="0" y="296.416" width="140.9" height="27.0973" class="st10"/>
 			<text x="0" y="306.36" class="st11" v:langID="1033"><v:paragraph/><v:tabList/>Identity<tspan class="st8"> </tspan><tspan
 						class="st8">Azure </tspan><tspan x="0" dy="1.2em" class="st8">subscription</tspan></text>		</g>
-		<g id="shape85-53" v:mID="85" v:groupContext="shape" v:layerMember="0" transform="translate(555.648,-16.8197)">
-			<title>Sheet.85</title>
+		<g id="shape1821-53" v:mID="1821" v:groupContext="shape" v:layerMember="0" transform="translate(555.648,-16.8197)">
+			<title>Sheet.1821</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(75000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(356000):26"/>
 			</v:userDefs>
 			<rect x="0" y="94.6347" width="345.532" height="228.878" class="st3"/>
 		</g>
-		<g id="shape86-55" v:mID="86" v:groupContext="shape" transform="translate(559.179,-217.579)">
-			<title>Sheet.86</title>
+		<g id="shape1822-55" v:mID="1822" v:groupContext="shape" transform="translate(559.179,-217.579)">
+			<title>Sheet.1822</title>
 			<desc>Landing Zones management group</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(76000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(357000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="130.5" cy="313.513" width="261.01" height="20"/>
 			<rect x="0" y="303.513" width="261" height="20" class="st5"/>
 			<text x="4" y="317.41" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Landing Zones<tspan class="st8"> </tspan><tspan
 						class="st8">management group</tspan></text>		</g>
-		<g id="shape87-60" v:mID="87" v:groupContext="shape" v:layerMember="0" transform="translate(565.929,-30.2416)">
-			<title>Sheet.87</title>
+		<g id="shape1823-60" v:mID="1823" v:groupContext="shape" v:layerMember="0" transform="translate(565.929,-30.2416)">
+			<title>Sheet.1823</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(77000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(358000):26"/>
 			</v:userDefs>
 			<rect x="0" y="142.879" width="154.886" height="180.634" class="st9"/>
 		</g>
-		<g id="shape88-62" v:mID="88" v:groupContext="shape" v:layerMember="0" transform="translate(574.929,-174.779)">
-			<title>Sheet.88</title>
+		<g id="shape1824-62" v:mID="1824" v:groupContext="shape" v:layerMember="0" transform="translate(574.929,-174.779)">
+			<title>Sheet.1824</title>
 			<desc>SAP Azure subscription</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(78000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(359000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)"/>
 			<v:textRect cx="70.875" cy="309.964" width="141.75" height="27.0973"/>
 			<rect x="0" y="296.416" width="141.75" height="27.0973" class="st10"/>
 			<text x="0" y="313.56" class="st11" v:langID="1033"><v:paragraph/><v:tabList/>SAP<tspan class="st8"> </tspan><tspan
 						class="st8">Azure subscription</tspan></text>		</g>
-		<g id="shape94-67" v:mID="94" v:groupContext="shape" v:layerMember="0" transform="translate(734.679,-30.2416)">
-			<title>Sheet.94</title>
+		<g id="shape1825-67" v:mID="1825" v:groupContext="shape" v:layerMember="0" transform="translate(734.679,-30.2416)">
+			<title>Sheet.1825</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(81000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(360000):26"/>
 			</v:userDefs>
 			<rect x="0" y="142.879" width="154.886" height="180.634" class="st9"/>
 		</g>
-		<g id="shape95-69" v:mID="95" v:groupContext="shape" v:layerMember="0" transform="translate(743.679,-174.779)">
-			<title>Sheet.95</title>
+		<g id="shape1826-69" v:mID="1826" v:groupContext="shape" v:layerMember="0" transform="translate(743.679,-174.779)">
+			<title>Sheet.1826</title>
 			<desc>Corp Azure subscription</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(82000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(361000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)"/>
 			<v:textRect cx="70.875" cy="309.964" width="141.75" height="27.0973"/>
 			<rect x="0" y="296.416" width="141.75" height="27.0973" class="st10"/>
 			<text x="0" y="313.56" class="st11" v:langID="1033"><v:paragraph/><v:tabList/>Corp<tspan class="st8"> </tspan><tspan
 						class="st8">Azure subscription</tspan></text>		</g>
-		<g id="group96-74" transform="translate(79.5352,-97.6217)" v:mID="96" v:groupContext="group">
+		<g id="group1827-74" transform="translate(79.5352,-97.6217)" v:mID="1827" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(83000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(362000):26"/>
 			</v:userDefs>
 			<title>Icon-security-248</title>
-			<g id="shape97-75" v:mID="97" v:groupContext="shape">
-				<title>Sheet.97</title>
+			<g id="shape1828-75" v:mID="1828" v:groupContext="shape">
+				<title>Sheet.1828</title>
 				<path d="M46.23 293.58 C46.23 308.67 27.97 320.82 24 323.29 A1.41977 1.41977 0 0 1 22.49 323.29 C18.39 320.82 0 308.63
 							 0 293.58 L0 275.42 A1.45279 1.45279 0 0 1 1.42 273.96 C15.75 273.6 12.48 267.36 23.11 267.36 C33.74
 							 267.36 30.48 273.6 44.67 273.96 A1.45279 1.45279 0 0 1 46.09 275.42 L46.23 293.58 Z" class="st14"/>
 			</g>
-			<g id="shape98-77" v:mID="98" v:groupContext="shape" transform="translate(2.04711,-2.36779)">
-				<title>Sheet.98</title>
+			<g id="shape1829-77" v:mID="1829" v:groupContext="shape" transform="translate(2.04711,-2.36779)">
+				<title>Sheet.1829</title>
 				<path d="M42.13 296.08 C42.13 309.94 25.39 321.07 21.76 323.32 A1.32072 1.32072 0 0 1 20.37 323.32 C16.74 321.07
 							 0 309.94 0 296.08 L0 279.57 A1.35374 1.35374 0 0 1 1.25 277.98 C14.26 277.62 11.16 271.94 21.07 271.94
 							 C30.97 271.94 27.83 277.75 40.88 277.98 A1.35374 1.35374 0 0 1 42.16 279.3 L42.13 296.08 Z"
 						class="st15"/>
 			</g>
-			<g id="shape99-81" v:mID="99" v:groupContext="shape" transform="translate(5.84417,-26.7666)">
-				<title>Sheet.99</title>
+			<g id="shape1830-81" v:mID="1830" v:groupContext="shape" transform="translate(5.84417,-26.7666)">
+				<title>Sheet.1830</title>
 				<path d="M17.27 314.04 A9.50917 9.50917 0 0 1 26.65 322.19 A1.61788 1.61788 -180 0 0 28.26 323.51 L32.89 323.51 A1.61788
 							 1.61788 -180 0 0 34.54 321.76 A17.3674 17.3674 -180 0 0 0 321.76 A1.61788 1.61788 -180 0 0 1.65 323.51
 							 L6.27 323.51 A1.61788 1.61788 -180 0 0 7.89 322.19 A9.50917 9.50917 0 0 1 17.27 314.04 Z" class="st16"/>
 			</g>
-			<g id="shape100-83" v:mID="100" v:groupContext="shape" transform="translate(16.8061,-20.4602)">
-				<title>Sheet.100</title>
+			<g id="shape1831-83" v:mID="1831" v:groupContext="shape" transform="translate(16.8061,-20.4602)">
+				<title>Sheet.1831</title>
 				<ellipse cx="6.30643" cy="317.207" rx="6.30643" ry="6.30643" class="st17"/>
 			</g>
 		</g>

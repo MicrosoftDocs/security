@@ -1,7 +1,7 @@
 ---
 title: Zero Trust adoption framework overview
 description: This article gives an overview of the Zero Trust adoption framework.
-ms.date: 01/27/2023    
+ms.date: 12/14/2023    
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -146,7 +146,7 @@ This Zero Trust adoption guidance recommends building a Zero Trust strategy and 
 
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
-- Prevent or reduce business damage from a breach (in development)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
 
@@ -218,20 +218,55 @@ Note that the progress percentage provided by Secure Score might not be accurate
 
 Additionally, several portals and reports can assist you in creating an overview of risk within your business, including:
 
-- Reports within Microsoft 365 Defender provide information regarding security trends and track the protection status of your identities, data, devices, applications and infrastructure.
+- Reports within Microsoft Defender XDR provide information regarding security trends and track the protection status of your identities, data, devices, applications and infrastructure.
 - The Cloud Security Explorer allows you to proactively hunt for security risks.
 
-For example, within Microsoft 365 Defender, the device inventory provides a clear view into newly discovered devices in your network that aren't yet protected. At the top of each **Device inventory** tab, you can see the total number of devices that aren't onboarded. Here's an example.
+For example, within Microsoft Defender XDR, the device inventory provides a clear view into newly discovered devices in your network that aren't yet protected. At the top of each **Device inventory** tab, you can see the total number of devices that aren't onboarded. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png" alt-text="Example of the Inventory tab in the Microsoft 365 Defender portal" lightbox="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png":::
+:::image type="content" source="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png" alt-text="Example of the Inventory tab in the Microsoft Defender portal" lightbox="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png":::
 
-For more information on using Microsoft 365 Defender to track your progress, see [Strengthen your security posture with Microsoft 365 Defender](/microsoft-365/security/security-posture-solution-overview).
+For more information on using Microsoft Defender XDR to track your progress, see [Strengthen your security posture with Microsoft Defender XDR](/microsoft-365/security/security-posture-solution-overview).
 
 For more information about how to use Secure Score, see [Secure Score documentation](/microsoft-365/security/defender/microsoft-secure-score). 
 
-## Next Steps
+## Additional articles for adoption
 
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work with Zero Trust](secure-remote-hybrid-work.md)
-- [Identify and protect sensitive business data with Zero Trust](identify-protect-sensitive-business-data.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
+- [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
+
+## Additional Zero Trust documentation
+
+See additional Zero Trust content based on a documentation set or your role in your organization.
+
+### Documentation set
+
+Follow this table for the best Zero Trust documentation sets for your needs.
+
+| Documentation set | Helps you... | Roles |
+| --- | --- | --- |
+| [Concepts and deployment objectives](../deploy/overview.md) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. | IT teams and security staff |
+| [Zero Trust for small businesses](../guidance-smb-partner.md) | Apply Zero Trust principles to small business customers. | Customers and partners working with Microsoft 365 for business |
+| [Zero Trust Rapid Modernization Plan (RaMP)](../zero-trust-ramp-overview.md) for project management guidance and checklists for easy wins | Quickly implement key layers of Zero Trust protection. | Security architects and IT implementers |
+| [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to your Microsoft 365 tenant. | IT teams and security staff |
+| [Zero Trust for Copilot for Microsoft 365](../zero-trust-microsoft-365-copilot.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Copilot for Microsoft 365. | IT teams and security staff |
+| [Zero Trust for Azure services](../azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. | IT teams and security staff |
+| [Partner integration with Zero Trust](../integrate/overview.md) for design guidance for technology areas and specializations | Apply Zero Trust protections to partner Microsoft cloud solutions. | Partner developers, IT teams, and security staff |
+| [Develop using Zero Trust principles](../develop/overview.md) for application development design guidance and best practices | Apply Zero Trust protections to your application. | Application developers |
+
+### Your role
+
+Follow this table for the best documentation sets for your role in your organization.
+
+| Role | Documentation set | Helps you... |
+| --- | --- | --- |
+| Member of an IT or security team | [Concepts and deployment objectives](../deploy/overview.md) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. |
+| Customer or partner for Microsoft 365 for business | [Zero Trust for small businesses](../guidance-smb-partner.md) | Apply Zero Trust principles to small business customers.  |
+| Security architect <br><br> IT implementer | [Zero Trust Rapid Modernization Plan (RaMP)](../zero-trust-ramp-overview.md) for project management guidance and checklists for easy wins | Quickly implement key layers of Zero Trust protection. |
+| Member of an IT or security team for Microsoft 365 | [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance for Microsoft 365 | Apply Zero Trust protections to your Microsoft 365 tenant. |
+| Member of an IT or security team for Microsoft Copilots | [Zero Trust for Copilot for Microsoft 365](../zero-trust-microsoft-365-copilot.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Copilot for Microsoft 365. |
+| Member of an IT or security team for Azure services | [Zero Trust for Azure services](../azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. |
+| Partner developer or member of an IT or security team | [Partner integration with Zero Trust](../integrate/overview.md) for design guidance for technology areas and specializations | Apply Zero Trust protections to partner Microsoft cloud solutions. |
+| Application developer | [Develop using Zero Trust principles](../develop/overview.md) for application development design guidance and best practices | Apply Zero Trust protections to your application. |

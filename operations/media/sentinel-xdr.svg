@@ -4,6 +4,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
 		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="9.95573in" height="5.88542in"
 		viewBox="0 0 716.813 423.75" xml:space="preserve" color-interpolation-filters="sRGB" class="st56">
+	<title>Diagrams for applying Zero Trust principles to Azure IaaS infrastructure</title>
 	<v:documentProperties v:langID="1033" v:viewMarkup="false"/>
 
 	<style type="text/css">
@@ -61,7 +62,7 @@
 		.st51 {marker-start:url(#mrkr1-272);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
 		.st52 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.31645569620253}
 		.st53 {fill:#000000;font-family:Segoe UI;font-size:0.666664em}
-		.st54 {marker-end:url(#mrkr5-358);stroke:#000000;stroke-dasharray:4.5,4.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st54 {marker-end:url(#mrkr5-359);stroke:#000000;stroke-dasharray:4.5,4.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
 		.st55 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.37313432835821}
 		.st56 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
@@ -101,7 +102,7 @@
 		<g id="lend5">
 			<path d="M 2 1 L 0 0 L 1.98117 -0.993387 C 1.67173 -0.364515 1.67301 0.372641 1.98465 1.00043 " style="stroke:none"/>
 		</g>
-		<marker id="mrkr5-358" class="st55" v:arrowType="5" v:arrowSize="2" v:setback="4.45" refX="-4.45" orient="auto"
+		<marker id="mrkr5-359" class="st55" v:arrowType="5" v:arrowSize="2" v:setback="4.45" refX="-4.45" orient="auto"
 				markerUnits="strokeWidth" overflow="visible">
 			<use xlink:href="#lend5" transform="scale(-2.68,-2.68) "/>
 		</marker>
@@ -111,99 +112,98 @@
 			<v:ud v:nameU="visNavType" v:val="VT0(1):26"/>
 		</v:userDefs>
 		<title>Page-1</title>
-		<v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="8.50394"
-				v:shadowOffsetY="-8.50394"/>
-		<g id="shape337-1" v:mID="337" v:groupContext="shape" transform="translate(0.375,-0.375)">
-			<title>Sheet.337</title>
+		<v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="9" v:shadowOffsetY="-9"/>
+		<g id="shape2079-1" v:mID="2079" v:groupContext="shape" transform="translate(0.375,-0.375)">
+			<title>Sheet.2079</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(116000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(548000):26"/>
 			</v:userDefs>
 			<rect x="0" y="0.750004" width="714.937" height="423" class="st1"/>
 		</g>
-		<g id="shape310-3" v:mID="310" v:groupContext="shape" transform="translate(573.043,-52.125)">
-			<title>Sheet.310</title>
+		<g id="shape2080-3" v:mID="2080" v:groupContext="shape" transform="translate(573.043,-52.125)">
+			<title>Sheet.2080</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(82000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(517000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L47.27 423.75" class="st2"/>
 		</g>
-		<g id="shape104-9" v:mID="104" v:groupContext="shape" transform="translate(709.927,-126.375) scale(-1,1)">
-			<title>Sheet.104</title>
+		<g id="shape2081-9" v:mID="2081" v:groupContext="shape" transform="translate(709.927,-126.375) scale(-1,1)">
+			<title>Sheet.2081</title>
 			<desc>­</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(1000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(478000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="352.807" cy="345" width="705.62" height="157.5"/>
 			<rect x="0" y="266.25" width="705.615" height="157.5" class="st4"/>
 		</g>
-		<g id="shape107-11" v:mID="107" v:groupContext="shape" transform="translate(-31.861,242.7) rotate(-90)">
-			<title>Sheet.107</title>
+		<g id="shape2082-11" v:mID="2082" v:groupContext="shape" transform="translate(-31.861,242.7) rotate(-90)">
+			<title>Sheet.2082</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(3000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(480000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L34.65 423.75" class="st5"/>
 		</g>
-		<g id="shape108-17" v:mID="108" v:groupContext="shape" transform="translate(-280.326,242.7) rotate(-90)">
-			<title>Sheet.108</title>
+		<g id="shape2083-17" v:mID="2083" v:groupContext="shape" transform="translate(-280.326,242.7) rotate(-90)">
+			<title>Sheet.2083</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(5000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(482000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L34.65 423.75" class="st7"/>
 		</g>
-		<g id="shape109-23" v:mID="109" v:groupContext="shape" transform="translate(-189.937,242.7) rotate(-90)">
-			<title>Sheet.109</title>
+		<g id="shape2084-23" v:mID="2084" v:groupContext="shape" transform="translate(-189.937,242.7) rotate(-90)">
+			<title>Sheet.2084</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(6000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(483000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L34.65 423.75" class="st9"/>
 		</g>
-		<g id="shape110-29" v:mID="110" v:groupContext="shape" transform="translate(-109.152,242.7) rotate(-90)">
-			<title>Sheet.110</title>
+		<g id="shape2085-29" v:mID="2085" v:groupContext="shape" transform="translate(-109.152,242.7) rotate(-90)">
+			<title>Sheet.2085</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(7000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(484000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L34.65 423.75" class="st11"/>
 		</g>
-		<g id="shape111-35" v:mID="111" v:groupContext="shape" transform="translate(-56.3775,146.991) rotate(-90)">
-			<title>Sheet.111</title>
+		<g id="shape2086-35" v:mID="2086" v:groupContext="shape" transform="translate(-56.3775,146.991) rotate(-90)">
+			<title>Sheet.2086</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(8000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(485000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L34.65 423.75" class="st5"/>
 		</g>
-		<g id="shape112-40" v:mID="112" v:groupContext="shape" transform="translate(-302.593,146.991) rotate(-90)">
-			<title>Sheet.112</title>
+		<g id="shape2087-40" v:mID="2087" v:groupContext="shape" transform="translate(-302.593,146.991) rotate(-90)">
+			<title>Sheet.2087</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(9000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(486000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L34.65 423.75" class="st7"/>
 		</g>
-		<g id="shape113-45" v:mID="113" v:groupContext="shape" transform="translate(-209.211,146.991) rotate(-90)">
-			<title>Sheet.113</title>
+		<g id="shape2088-45" v:mID="2088" v:groupContext="shape" transform="translate(-209.211,146.991) rotate(-90)">
+			<title>Sheet.2088</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(10000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(487000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L34.65 423.75" class="st9"/>
 		</g>
-		<g id="shape114-50" v:mID="114" v:groupContext="shape" transform="translate(-120.817,146.991) rotate(-90)">
-			<title>Sheet.114</title>
+		<g id="shape2089-50" v:mID="2089" v:groupContext="shape" transform="translate(-120.817,146.991) rotate(-90)">
+			<title>Sheet.2089</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(11000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(488000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L34.65 423.75" class="st11"/>
 		</g>
-		<g id="group115-55" transform="translate(519.662,-142.125)" v:mID="115" v:groupContext="group">
+		<g id="group2090-55" transform="translate(519.662,-142.125)" v:mID="2090" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(12000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(489000):26"/>
 			</v:userDefs>
-			<title>Sheet.115</title>
-			<g id="shape116-56" v:mID="116" v:groupContext="shape">
-				<title>Sheet.116</title>
+			<title>Sheet.2090</title>
+			<g id="shape2091-56" v:mID="2091" v:groupContext="shape">
+				<title>Sheet.2091</title>
 				<rect x="0" y="299.854" width="169.312" height="123.896" class="st13"/>
 			</g>
-			<g id="shape117-58" v:mID="117" v:groupContext="shape" transform="translate(14.9535,-8.7186)">
-				<title>Sheet.117</title>
+			<g id="shape2092-58" v:mID="2092" v:groupContext="shape" transform="translate(14.9535,-8.7186)">
+				<title>Sheet.2092</title>
 				<desc>Microsoft Defender for Cloud</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)"/>
 				<v:textRect cx="68.4968" cy="372.356" width="137" height="102.788"/>
@@ -211,21 +211,21 @@
 				<text x="5.91" y="368.76" class="st14" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Microsoft Defender for <tspan
 							x="52.5" dy="1.2em" class="st15">Cloud</tspan></text>			</g>
 		</g>
-		<g id="group125-62" transform="translate(99.9231,-198.521)" v:mID="125" v:groupContext="group">
+		<g id="group2093-62" transform="translate(99.9231,-198.521)" v:mID="2093" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(14000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(491000):26"/>
 			</v:userDefs>
-			<title>Sheet.125</title>
-			<g id="shape126-63" v:mID="126" v:groupContext="shape" transform="translate(0,-0.357083)">
-				<title>Sheet.126</title>
+			<title>Sheet.2093</title>
+			<g id="shape2094-63" v:mID="2094" v:groupContext="shape" transform="translate(0,-0.357083)">
+				<title>Sheet.2094</title>
 				<rect x="0" y="357.094" width="87.4614" height="66.6558" class="st1"/>
 			</g>
-			<g id="shape127-65" v:mID="127" v:groupContext="shape" transform="translate(0.00118085,1.13687E-13)">
-				<title>Sheet.127</title>
+			<g id="shape2095-65" v:mID="2095" v:groupContext="shape" transform="translate(0.00118085,1.13687E-13)">
+				<title>Sheet.2095</title>
 				<rect x="0" y="357.094" width="87.1679" height="66.6558" class="st16"/>
 			</g>
-			<g id="shape128-67" v:mID="128" v:groupContext="shape" transform="translate(4.29913,-2.08299)">
-				<title>Sheet.128</title>
+			<g id="shape2096-67" v:mID="2096" v:groupContext="shape" transform="translate(4.29913,-2.08299)">
+				<title>Sheet.2096</title>
 				<desc>Microsoft Defender for Cloud Apps</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)"/>
 				<v:textRect cx="37.5673" cy="392.505" width="75.14" height="62.4898"/>
@@ -234,21 +234,21 @@
 							x="12.3" dy="1.2em" class="st15">Defender </tspan><tspan x="12.05" dy="1.2em" class="st15">for Cloud </tspan><tspan
 							x="23.72" dy="1.2em" class="st15">Apps</tspan></text>			</g>
 		</g>
-		<g id="group129-73" transform="translate(192.188,-198.521)" v:mID="129" v:groupContext="group">
+		<g id="group2097-73" transform="translate(192.188,-198.521)" v:mID="2097" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(15000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(492000):26"/>
 			</v:userDefs>
-			<title>Sheet.129</title>
-			<g id="shape130-74" v:mID="130" v:groupContext="shape" transform="translate(0.0218576,-0.357083)">
-				<title>Sheet.130</title>
+			<title>Sheet.2097</title>
+			<g id="shape2098-74" v:mID="2098" v:groupContext="shape" transform="translate(0.0218576,-0.357083)">
+				<title>Sheet.2098</title>
 				<rect x="0" y="357.745" width="83.1231" height="66.0049" class="st1"/>
 			</g>
-			<g id="shape131-76" v:mID="131" v:groupContext="shape">
-				<title>Sheet.131</title>
+			<g id="shape2099-76" v:mID="2099" v:groupContext="shape">
+				<title>Sheet.2099</title>
 				<rect x="0" y="357.094" width="83.25" height="66.6558" class="st19"/>
 			</g>
-			<g id="shape132-78" v:mID="132" v:groupContext="shape" transform="translate(4.06097,-4.16598)">
-				<title>Sheet.132</title>
+			<g id="shape2100-78" v:mID="2100" v:groupContext="shape" transform="translate(4.06097,-4.16598)">
+				<title>Sheet.2100</title>
 				<desc>Microsoft Defender for Office 365</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)"/>
 				<v:textRect cx="36.5488" cy="394.588" width="73.1" height="58.3238"/>
@@ -257,21 +257,21 @@
 							x="11.28" dy="1.2em" class="st15">Defender </tspan><tspan x="10.78" dy="1.2em" class="st15">for Office </tspan><tspan
 							x="26.54" dy="1.2em" class="st15">365</tspan></text>			</g>
 		</g>
-		<g id="group133-84" transform="translate(280.451,-198.521)" v:mID="133" v:groupContext="group">
+		<g id="group2101-84" transform="translate(280.451,-198.521)" v:mID="2101" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(16000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(493000):26"/>
 			</v:userDefs>
-			<title>Sheet.133</title>
-			<g id="shape134-85" v:mID="134" v:groupContext="shape" transform="translate(0.213547,-0.357083)">
-				<title>Sheet.134</title>
+			<title>Sheet.2101</title>
+			<g id="shape2102-85" v:mID="2102" v:groupContext="shape" transform="translate(0.213547,-0.357083)">
+				<title>Sheet.2102</title>
 				<rect x="0" y="357.745" width="68.482" height="66.0049" class="st1"/>
 			</g>
-			<g id="shape135-87" v:mID="135" v:groupContext="shape">
-				<title>Sheet.135</title>
+			<g id="shape2103-87" v:mID="2103" v:groupContext="shape">
+				<title>Sheet.2103</title>
 				<rect x="0" y="357.094" width="69.12" height="66.6558" class="st21"/>
 			</g>
-			<g id="shape136-89" v:mID="136" v:groupContext="shape" transform="translate(3.89947,-7.4062)">
-				<title>Sheet.136</title>
+			<g id="shape2104-89" v:mID="2104" v:groupContext="shape" transform="translate(3.89947,-7.4062)">
+				<title>Sheet.2104</title>
 				<desc>Microsoft Defender for Identity</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)"/>
 				<v:textRect cx="30.2474" cy="398.291" width="60.5" height="50.9176"/>
@@ -280,21 +280,21 @@
 							x="4.98" dy="1.2em" class="st15">Defender </tspan><tspan x="22.38" dy="1.2em" class="st15">for </tspan><tspan
 							x="9.24" dy="1.2em" class="st15">Identity</tspan></text>			</g>
 		</g>
-		<g id="group137-95" transform="translate(353.295,-198.521)" v:mID="137" v:groupContext="group">
+		<g id="group2105-95" transform="translate(353.295,-198.521)" v:mID="2105" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(17000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(494000):26"/>
 			</v:userDefs>
-			<title>Sheet.137</title>
-			<g id="shape138-96" v:mID="138" v:groupContext="shape" transform="translate(0.148248,-0.357081)">
-				<title>Sheet.138</title>
+			<title>Sheet.2105</title>
+			<g id="shape2106-96" v:mID="2106" v:groupContext="shape" transform="translate(0.148248,-0.357081)">
+				<title>Sheet.2106</title>
 				<rect x="0" y="357.745" width="76.711" height="66.0049" class="st1"/>
 			</g>
-			<g id="shape139-98" v:mID="139" v:groupContext="shape">
-				<title>Sheet.139</title>
+			<g id="shape2107-98" v:mID="2107" v:groupContext="shape">
+				<title>Sheet.2107</title>
 				<rect x="0" y="357.094" width="77.1875" height="66.6558" class="st23"/>
 			</g>
-			<g id="shape140-100" v:mID="140" v:groupContext="shape" transform="translate(0.581438,-12.3922)">
-				<title>Sheet.140</title>
+			<g id="shape2108-100" v:mID="2108" v:groupContext="shape" transform="translate(0.581438,-12.3922)">
+				<title>Sheet.2108</title>
 				<desc>Microsoft Defender for Endpoint</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)"/>
 				<v:textRect cx="37.6474" cy="402.457" width="75.3" height="42.5856"/>
@@ -303,37 +303,37 @@
 							x="12.38" dy="1.2em" class="st15">Defender </tspan><tspan x="29.78" dy="1.2em" class="st15">for </tspan><tspan
 							x="12.99" dy="1.2em" class="st15">Endpoint</tspan></text>			</g>
 		</g>
-		<g id="group141-106" transform="translate(100.431,-143.25)" v:mID="141" v:groupContext="group">
+		<g id="group2109-106" transform="translate(100.431,-143.25)" v:mID="2109" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(18000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(495000):26"/>
 			</v:userDefs>
-			<title>Sheet.141</title>
-			<g id="shape142-107" v:mID="142" v:groupContext="shape">
-				<title>Sheet.142</title>
+			<title>Sheet.2109</title>
+			<g id="shape2110-107" v:mID="2110" v:groupContext="shape">
+				<title>Sheet.2110</title>
 				<rect x="0" y="390" width="401.776" height="33.75" class="st25"/>
 			</g>
-			<g id="shape143-109" v:mID="143" v:groupContext="shape" transform="translate(12.4584,-6.32812)">
-				<title>Sheet.143</title>
-				<desc>Microsoft 365 Defender</desc>
+			<g id="shape2111-109" v:mID="2111" v:groupContext="shape" transform="translate(12.4584,-6.32812)">
+				<title>Sheet.2111</title>
+				<desc>Microsoft Defender XDR</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)"/>
 				<v:textRect cx="184.493" cy="412.969" width="368.99" height="21.5625"/>
 				<rect x="0" y="402.188" width="368.987" height="21.5625" class="st1"/>
-				<text x="119.77" y="416.57" class="st14" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Microsoft 365 Defender</text>			</g>
+				<text x="118.02" y="416.57" class="st14" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Microsoft Defender XDR</text>			</g>
 		</g>
-		<g id="shape145-112" v:mID="145" v:groupContext="shape" transform="translate(87.0281,-297.058)">
-			<title>Sheet.145</title>
+		<g id="shape2112-112" v:mID="2112" v:groupContext="shape" transform="translate(87.0281,-297.058)">
+			<title>Sheet.2112</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(98000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(531000):26"/>
 			</v:userDefs>
 			<rect x="0" y="307.937" width="69.1875" height="115.813" class="st26"/>
 		</g>
-		<g id="group146-114" transform="translate(89.2447,-323.311)" v:mID="146" v:groupContext="group">
+		<g id="group2113-114" transform="translate(89.2447,-323.311)" v:mID="2113" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(99000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(532000):26"/>
 			</v:userDefs>
-			<title>Sheet.146</title>
-			<g id="shape147-115" v:mID="147" v:groupContext="shape">
-				<title>Sheet.147</title>
+			<title>Sheet.2113</title>
+			<g id="shape2114-115" v:mID="2114" v:groupContext="shape">
+				<title>Sheet.2114</title>
 				<desc>Other SaaS and PaaS apps</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)"/>
 				<v:textRect cx="32.3771" cy="404.987" width="64.76" height="37.5258"/>
@@ -341,15 +341,15 @@
 				<text x="17.2" y="394.19" class="st27" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Other <tspan
 							x="8.27" dy="1.2em" class="st15">SaaS and </tspan><tspan x="5.43" dy="1.2em" class="st15">PaaS apps</tspan></text>			</g>
 		</g>
-		<g id="shape148-120" v:mID="148" v:groupContext="shape" transform="translate(108.752,-373.727)">
-			<title>Sheet.148</title>
+		<g id="shape38-120" v:mID="38" v:groupContext="shape" transform="translate(108.752,-373.727)">
+			<title>Sheet.38</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(100000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(533000):26"/>
 			</v:userDefs>
 			<rect v:rectContext="foreign" x="0" y="400.278" width="25.74" height="23.4716" class="st17"/>
 			<image x="0" y="400.278" width="25.74" height="23.4716" preserveAspectRatio="none" xlink:href="data:image/png;base64,
-						iVBORw0KGgoAAAANSUhEUgAAAYkAAAFACAYAAABJOoDBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0
-						Ad5mH3gAABO+SURBVHhe7d3RcRS5vsdxh0AGlxAIYUMgg0sGhxc8+OzDJQPIwCcDTgZTC7XFo6vwwCshEAK31TMG45U8I3W3Wt3z+VZ9
+						iVBORw0KGgoAAAANSUhEUgAAAYkAAAFACAYAAABJOoDBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7D
+						AcdvqGQAABO+SURBVHhe7d3RcRS5vsdxh0AGlxAIYUMgg0sGhxc8+OzDJQPIwCcDTgZTC7XFo6vwwCshEAK31TMG45U8I3W3Wt3z+VZ9
 						a9ldkNuDW7+W/pL6IrDdbp98+vTpKUmS9+1D4sOHDy86f5AkeV8hQZJMKiRIkkmFBEkyqZAgSSYVEiTJpEKCJJlUSJAkkwoJkmRSIUGS
 						TCokSJJJhQRJMqmQIEkmFRIkyaRCgiSZVEiQJJMKCZJkUiFBkkwqJEiSSYUESTKpkCBJJhUSJMmkQoIkmVRIkCST9iGx3W6fdr4gSfK+
 						fUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAC22+2TT58+PSVJ8r59SHz48OFF5w+S
@@ -417,148 +417,148 @@
 						GwAAAABJRU5ErkJggg=="/>
 			<rect v:rectContext="foreign" x="0" y="400.278" width="25.74" height="23.4716" class="st17"/>
 		</g>
-		<g id="shape149-124" v:mID="149" v:groupContext="shape" transform="translate(145.253,-276.759)">
-			<title>Sheet.149</title>
+		<g id="shape2115-124" v:mID="2115" v:groupContext="shape" transform="translate(145.253,-276.759)">
+			<title>Sheet.2115</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(19000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(496000):26"/>
 			</v:userDefs>
 			<path d="M38.14 403.5 L38.14 413.15 L0 413.15 L0 423.75" class="st28"/>
 		</g>
-		<g id="shape151-130" v:mID="151" v:groupContext="shape" transform="translate(162.944,-297.058)">
-			<title>Sheet.151</title>
+		<g id="shape2116-130" v:mID="2116" v:groupContext="shape" transform="translate(162.944,-297.058)">
+			<title>Sheet.2116</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(93000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(526000):26"/>
 			</v:userDefs>
 			<rect x="0" y="307.484" width="83.25" height="116.266" class="st26"/>
 		</g>
-		<g id="shape152-132" v:mID="152" v:groupContext="shape" transform="translate(163.703,-315.773)">
-			<title>Sheet.152</title>
+		<g id="shape2117-132" v:mID="2117" v:groupContext="shape" transform="translate(163.703,-315.773)">
+			<title>Sheet.2117</title>
 			<desc>Microsoft 365</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(94000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(527000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="40.925" cy="413.627" width="81.85" height="20.2458"/>
 			<rect x="0" y="403.504" width="81.85" height="20.2458" class="st17"/>
 			<text x="4.39" y="417.32" class="st27" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Microsoft 365</text>		</g>
-		<g id="group153-135" transform="translate(161.813,-332.75)" v:mID="153" v:groupContext="group">
+		<g id="group2118-135" transform="translate(161.813,-332.75)" v:mID="2118" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(95000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(528000):26"/>
 			</v:userDefs>
 			<title>Teams_40x40.673</title>
-			<g id="shape154-136" v:mID="154" v:groupContext="shape">
-				<title>Sheet.154</title>
+			<g id="shape2119-136" v:mID="2119" v:groupContext="shape">
+				<title>Sheet.2119</title>
 				<rect x="0" y="372.033" width="46.1801" height="51.7167" class="st30"/>
 			</g>
-			<g id="shape155-138" v:mID="155" v:groupContext="shape" transform="translate(11.545,-12.9292)">
-				<title>Sheet.155</title>
+			<g id="shape2120-138" v:mID="2120" v:groupContext="shape" transform="translate(11.545,-12.9292)">
+				<title>Sheet.2120</title>
 				<rect x="0" y="397.892" width="23.0901" height="25.8584" class="st30"/>
 			</g>
-			<g id="shape156-140" v:mID="156" v:groupContext="shape" transform="translate(27.3755,-17.1662)">
-				<title>Sheet.156</title>
+			<g id="shape2121-140" v:mID="2121" v:groupContext="shape" transform="translate(27.3755,-17.1662)">
+				<title>Sheet.2121</title>
 				<path d="M6.14 412.47 L1.34 412.47 L0 413.69 L0 419.71 A3.61455 4.04791 -180 0 0 7.23 419.71 L7.23 413.69 A1.08436
 							 1.21436 -180 0 0 6.14 412.47 Z" class="st31"/>
 			</g>
-			<g id="shape157-142" v:mID="157" v:groupContext="shape" transform="translate(30.0171,-29.7371)">
-				<title>Sheet.157</title>
+			<g id="shape2122-142" v:mID="2122" v:groupContext="shape" transform="translate(30.0171,-29.7371)">
+				<title>Sheet.2122</title>
 				<ellipse cx="2.30901" cy="421.164" rx="2.30901" ry="2.58584" class="st31"/>
 			</g>
-			<g id="shape158-144" v:mID="158" v:groupContext="shape" transform="translate(19.6197,-14.2162)">
-				<title>Sheet.158</title>
+			<g id="shape2123-144" v:mID="2123" v:groupContext="shape" transform="translate(19.6197,-14.2162)">
+				<title>Sheet.2123</title>
 				<path d="M1.04 409.53 L9.35 409.53 A1.03674 1.16104 0 0 1 10.39 410.69 L10.39 418.05 A5.09114 5.70153 0 0 1 5.3 423.75
 							 L5.09 423.75 A5.09114 5.70153 0 0 1 0 418.05 L0 410.69 A1.03674 1.16104 0 0 1 1.04 409.53 L1.04 409.53
 							 Z" class="st32"/>
 			</g>
-			<g id="shape159-146" v:mID="159" v:groupContext="shape" transform="translate(22.0433,-29.8578)">
-				<title>Sheet.159</title>
+			<g id="shape2124-146" v:mID="2124" v:groupContext="shape" transform="translate(22.0433,-29.8578)">
+				<title>Sheet.2124</title>
 				<ellipse cx="3.35571" cy="419.992" rx="3.35571" ry="3.75804" class="st32"/>
 			</g>
-			<g id="shape160-148" v:mID="160" v:groupContext="shape" transform="translate(19.6198,-16.8079)">
-				<title>Sheet.160</title>
+			<g id="shape2125-148" v:mID="2125" v:groupContext="shape" transform="translate(19.6198,-16.8079)">
+				<title>Sheet.2125</title>
 				<path d="M6.93 409.53 L6.93 410.41 A3.31366 3.71095 0 0 1 2.63 408.23 L5.72 408.23 A1.18737 1.32973 0 0 1 6.93 409.53
 							 ZM1.04 412.12 A1.03674 1.16104 -180 0 0 0 413.28 L0 420.64 A5.05935 5.66593 -180 0 0 0.83 423.75 L5.48
 							 423.75 A1.52428 1.70703 -180 0 0 6.93 422.25 L6.93 412.12 L1.04 412.12 Z" class="st33"/>
 			</g>
-			<g id="shape161-150" v:mID="161" v:groupContext="shape" transform="translate(19.6198,-16.8079)">
-				<title>Sheet.161</title>
+			<g id="shape2126-150" v:mID="2126" v:groupContext="shape" transform="translate(19.6198,-16.8079)">
+				<title>Sheet.2126</title>
 				<path d="M6.93 409.53 L6.93 410.41 A3.31366 3.71095 0 0 1 2.63 408.23 L5.72 408.23 A1.18737 1.32973 0 0 1 6.93 409.53
 							 ZM1.04 412.12 A1.03674 1.16104 -180 0 0 0 413.28 L0 420.64 A5.05935 5.66593 -180 0 0 0.83 423.75 L5.48
 							 423.75 A1.52428 1.70703 -180 0 0 6.93 422.25 L6.93 412.12 L1.04 412.12 Z" class="st34"/>
 			</g>
-			<g id="shape162-152" v:mID="162" v:groupContext="shape" transform="translate(11.5451,-18.1009)">
-				<title>Sheet.162</title>
+			<g id="shape2127-152" v:mID="2127" v:groupContext="shape" transform="translate(11.5451,-18.1009)">
+				<title>Sheet.2127</title>
 				<path d="M0 422.46 A1.15453 1.29295 -180 0 0 1.15 423.75 L12.7 423.75 A1.15453 1.29295 -180 0 0 13.85 422.46 L13.85
 							 409.53 A1.15453 1.29295 -180 0 0 12.7 408.23 L1.15 408.23 A1.15453 1.29295 -180 0 0 0 409.53 L0 422.46
 							 Z" class="st35"/>
 			</g>
-			<g id="shape163-154" v:mID="163" v:groupContext="shape" transform="translate(14.5669,-21.1715)">
-				<title>Sheet.163</title>
+			<g id="shape2128-154" v:mID="2128" v:groupContext="shape" transform="translate(14.5669,-21.1715)">
+				<title>Sheet.2128</title>
 				<path d="M6.66 416.23 L4.16 416.23 L4.16 423.75 L2.51 423.75 L2.51 416.23 L0 416.23 L0 414.38 L6.66 414.38 L6.66
 							 416.23 Z" class="st36"/>
 			</g>
 		</g>
-		<g id="group164-156" transform="translate(193.407,-375.91)" v:mID="164" v:groupContext="group">
+		<g id="group2129-156" transform="translate(193.407,-375.91)" v:mID="2129" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(96000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(529000):26"/>
 			</v:userDefs>
 			<title>Exchange_40x40.684</title>
-			<g id="shape165-157" v:mID="165" v:groupContext="shape" transform="translate(12.9198,-11.8381)">
-				<title>Sheet.165</title>
+			<g id="shape2130-157" v:mID="2130" v:groupContext="shape" transform="translate(12.9198,-11.8381)">
+				<title>Sheet.2130</title>
 				<path d="M10.57 413.56 L10.57 419.69 A1.46815 1.64417 0 0 1 10.14 420.85 L7.55 423.75 L0 423.75 L0 415.29 L2.59 412.39
 							 A1.46815 1.64417 0 0 1 3.63 411.91 L9.1 411.91 A1.46815 1.64417 0 0 1 10.57 413.56 Z" class="st37"/>
 			</g>
-			<g id="shape166-159" v:mID="166" v:groupContext="shape" transform="translate(12.9198,0)">
-				<title>Sheet.166</title>
+			<g id="shape2131-159" v:mID="2131" v:groupContext="shape" transform="translate(12.9198,0)">
+				<title>Sheet.2131</title>
 				<path d="M9.1 423.75 L3.63 423.75 A1.46815 1.64417 0 0 1 2.59 423.27 L0 420.37 L0 411.91 L7.55 411.91 L10.14 414.81
 							 A1.46815 1.64417 0 0 1 10.57 415.98 L10.57 422.11 A1.46815 1.64417 0 0 1 9.1 423.75 Z" class="st38"/>
 			</g>
-			<g id="shape167-161" v:mID="167" v:groupContext="shape" transform="translate(2.34905,0)">
-				<title>Sheet.167</title>
+			<g id="shape2132-161" v:mID="2132" v:groupContext="shape" transform="translate(2.34905,0)">
+				<title>Sheet.2132</title>
 				<path d="M0 422.11 L0 415.98 A1.46815 1.64417 0 0 1 0.43 414.81 L3.02 411.91 L10.57 411.91 L10.57 420.37 L7.98 423.27
 							 A1.46815 1.64417 0 0 1 6.94 423.75 L1.47 423.75 A1.46815 1.64417 0 0 1 0 422.11 Z" class="st37"/>
 			</g>
-			<g id="shape168-163" v:mID="168" v:groupContext="shape" transform="translate(2.34905,-11.8381)">
-				<title>Sheet.168</title>
+			<g id="shape2133-163" v:mID="2133" v:groupContext="shape" transform="translate(2.34905,-11.8381)">
+				<title>Sheet.2133</title>
 				<path d="M1.47 411.91 L6.94 411.91 A1.46815 1.64417 0 0 1 7.98 412.39 L10.57 415.29 L10.57 423.75 L3.02 423.75 L0.43
 							 420.85 A1.46815 1.64417 0 0 1 -0 419.69 L0 413.56 A1.46815 1.64417 0 0 1 1.47 411.91 Z" class="st39"/>
 			</g>
-			<g id="shape169-165" v:mID="169" v:groupContext="shape" transform="translate(2.34905,-2.63068)">
-				<title>Sheet.169</title>
+			<g id="shape2134-165" v:mID="2134" v:groupContext="shape" transform="translate(2.34905,-2.63068)">
+				<title>Sheet.2134</title>
 				<path d="M10.57 423 L11.24 423.75 L11.46 423.75 A1.54056 1.72526 -180 0 0 12.92 422.22 L12.92 409.28 A1.20044 1.34437
 							 -180 0 0 11.7 407.97 L0 407.97 L0 410.48 A1.46979 1.646 -180 0 0 0.43 411.64 L3.02 414.54 L0.43 417.44
 							 A1.46979 1.646 -180 0 0 0 418.61 L0 423.75 L9.9 423.75 L10.57 423 Z" class="st33"/>
 			</g>
-			<g id="shape170-167" v:mID="170" v:groupContext="shape" transform="translate(0,-3.94602)">
-				<title>Sheet.170</title>
+			<g id="shape2135-167" v:mID="2135" v:groupContext="shape" transform="translate(0,-3.94602)">
+				<title>Sheet.2135</title>
 				<path d="M0 422.43 A1.17455 1.31537 -180 0 0 1.17 423.75 L12.92 423.75 A1.17455 1.31537 -180 0 0 14.09 422.43 L14.09
 							 409.28 A1.17455 1.31537 -180 0 0 12.92 407.97 L1.17 407.97 A1.17455 1.31537 -180 0 0 -0 409.28 L0 422.43
 							 Z" class="st38"/>
 			</g>
-			<g id="shape171-169" v:mID="171" v:groupContext="shape" transform="translate(4.27704,-7.06995)">
-				<title>Sheet.171</title>
+			<g id="shape2136-169" v:mID="2136" v:groupContext="shape" transform="translate(4.27704,-7.06995)">
+				<title>Sheet.2136</title>
 				<path d="M5.34 415.76 L1.67 415.76 L1.67 418.17 L5.12 418.17 L5.12 419.71 L1.67 419.71 L1.67 422.21 L5.54 422.21
 							 L5.54 423.75 L0 423.75 L0 414.21 L5.34 414.21 L5.34 415.76 Z" class="st36"/>
 			</g>
 		</g>
-		<g id="group172-171" transform="translate(216.403,-344.151)" v:mID="172" v:groupContext="group">
+		<g id="group2137-171" transform="translate(216.403,-344.151)" v:mID="2137" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(97000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(530000):26"/>
 			</v:userDefs>
 			<title>SharePoint_40x40.692</title>
-			<g id="shape173-172" v:mID="173" v:groupContext="shape" transform="translate(4.80273,-12.1017)">
-				<title>Sheet.173</title>
+			<g id="shape2138-172" v:mID="2138" v:groupContext="shape" transform="translate(4.80273,-12.1017)">
+				<title>Sheet.2138</title>
 				<ellipse cx="6.60376" cy="416.355" rx="6.60376" ry="7.39549" class="st40"/>
 			</g>
-			<g id="shape174-174" v:mID="174" v:groupContext="shape" transform="translate(12.0068,-5.37854)">
-				<title>Sheet.174</title>
+			<g id="shape2139-174" v:mID="2139" v:groupContext="shape" transform="translate(12.0068,-5.37854)">
+				<title>Sheet.2139</title>
 				<ellipse cx="6.00341" cy="417.027" rx="6.00341" ry="6.72318" class="st41"/>
 			</g>
-			<g id="shape175-176" v:mID="175" v:groupContext="shape" transform="translate(7.2041,0)">
-				<title>Sheet.175</title>
+			<g id="shape2140-176" v:mID="2140" v:groupContext="shape" transform="translate(7.2041,0)">
+				<title>Sheet.2140</title>
 				<ellipse cx="4.80273" cy="418.371" rx="4.80273" ry="5.37854" class="st42"/>
 			</g>
-			<g id="shape176-178" v:mID="176" v:groupContext="shape" transform="translate(4.80273,-4.03391)">
-				<title>Sheet.176</title>
+			<g id="shape2141-178" v:mID="2141" v:groupContext="shape" transform="translate(4.80273,-4.03391)">
+				<title>Sheet.2141</title>
 				<path d="M10.81 408.96 A1.24271 1.3917 -180 0 0 9.53 407.61 L0.03 407.61 C0.01 407.84 0 408.06 0 408.29 A6.60376
 							 7.39549 -180 0 0 6.6 415.68 C6.81 415.68 7.01 415.67 7.2 415.65 L7.2 415.68 A5.9806 6.69763 -180 0 0
 							 7.3 416.77 C7.4 416.75 7.51 416.76 7.61 416.74 C7.61 416.77 7.62 416.8 7.62 416.84 L7.53 416.84 C7.46
@@ -566,14 +566,14 @@
 							 0 0 6.3 417.13 L6.3 417.14 C6.27 417.14 6.24 417.14 6.21 417.15 A4.73189 5.29921 -180 0 0 2.57 423.75
 							 L9.28 423.75 A1.59571 1.78702 -180 0 0 10.81 422.19 L10.81 408.96 Z" class="st33"/>
 			</g>
-			<g id="shape177-180" v:mID="177" v:groupContext="shape" transform="translate(0,-5.37854)">
-				<title>Sheet.177</title>
+			<g id="shape2142-180" v:mID="2142" v:groupContext="shape" transform="translate(0,-5.37854)">
+				<title>Sheet.2142</title>
 				<path d="M0 422.41 A1.20071 1.34467 -180 0 0 1.2 423.75 L13.21 423.75 A1.20071 1.34467 -180 0 0 14.41 422.41 L14.41
 							 408.96 A1.20071 1.34467 -180 0 0 13.21 407.61 L1.2 407.61 A1.20071 1.34467 -180 0 0 -0 408.96 L0 422.41
 							 Z" class="st43"/>
 			</g>
-			<g id="shape178-182" v:mID="178" v:groupContext="shape" transform="translate(4.00068,-8.22245)">
-				<title>Sheet.178</title>
+			<g id="shape2143-182" v:mID="2143" v:groupContext="shape" transform="translate(4.00068,-8.22245)">
+				<title>Sheet.2143</title>
 				<path d="M1.03 418.34 A2.45179 2.74575 0 0 1 0.27 417.44 A2.18884 2.45127 0 0 1 0 416.19 A2.13481 2.39076 0 0 1 0.5
 							 414.59 A2.92726 3.27822 0 0 1 1.82 413.62 A5.57837 6.24718 0 0 1 3.62 413.31 A6.87631 7.70073 0 0 1
 							 5.99 413.68 L5.99 415.57 A3.75093 4.20064 -180 0 0 4.92 415.07 A5.19055 5.81286 -180 0 0 3.66 414.9
@@ -588,50 +588,50 @@
 							 0 0 1 1.03 418.34 Z" class="st36"/>
 			</g>
 		</g>
-		<g id="shape187-184" v:mID="187" v:groupContext="shape" transform="translate(47.7241,-232.271)">
-			<title>Sheet.187</title>
+		<g id="shape2144-184" v:mID="2144" v:groupContext="shape" transform="translate(47.7241,-232.271)">
+			<title>Sheet.2144</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(21000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(498000):26"/>
 			</v:userDefs>
 			<path d="M37.13 423.75 L0 423.75 L0 356.25" class="st7"/>
 		</g>
-		<g id="shape192-189" v:mID="192" v:groupContext="shape" transform="translate(-122.438,330.025) rotate(-90)">
-			<title>Sheet.192</title>
+		<g id="shape2145-189" v:mID="2145" v:groupContext="shape" transform="translate(-122.438,330.025) rotate(-90)">
+			<title>Sheet.2145</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(22000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(499000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L48.78 423.75" class="st44"/>
 		</g>
-		<g id="group195-194" transform="translate(3.42722,-291.773)" v:mID="195" v:groupContext="group">
+		<g id="group2146-194" transform="translate(3.42722,-291.773)" v:mID="2146" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(101000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(534000):26"/>
 			</v:userDefs>
-			<title>Sheet.195</title>
-			<g id="shape196-195" v:mID="196" v:groupContext="shape" transform="translate(8,-5.52502)">
-				<title>Sheet.196</title>
+			<title>Sheet.2146</title>
+			<g id="shape2147-195" v:mID="2147" v:groupContext="shape" transform="translate(8,-5.52502)">
+				<title>Sheet.2147</title>
 				<rect x="0" y="307.725" width="69.1875" height="116.025" class="st26"/>
 			</g>
 		</g>
-		<g id="shape197-197" v:mID="197" v:groupContext="shape" transform="translate(11.5835,-317.829)">
-			<title>Sheet.197</title>
+		<g id="shape2148-197" v:mID="2148" v:groupContext="shape" transform="translate(11.5835,-317.829)">
+			<title>Sheet.2148</title>
 			<desc>Third-party SaaS and PaaS apps</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(102000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(535000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="34.5937" cy="398.089" width="69.19" height="51.3222"/>
 			<rect x="0" y="372.428" width="69.1875" height="51.3222" class="st17"/>
 			<text x="4.98" y="387.1" class="st27" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Third-party <tspan
 						x="10.49" dy="1.2em" class="st15">SaaS and </tspan><tspan x="7.64" dy="1.223em" class="st15">PaaS apps</tspan></text>		</g>
-		<g id="shape198-202" v:mID="198" v:groupContext="shape" transform="translate(33.3072,-373.727)">
-			<title>Sheet.198</title>
+		<g id="shape39-202" v:mID="39" v:groupContext="shape" transform="translate(33.3072,-373.727)">
+			<title>Sheet.39</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(103000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(536000):26"/>
 			</v:userDefs>
 			<rect v:rectContext="foreign" x="0" y="400.278" width="25.74" height="23.4716" class="st17"/>
 			<image x="0" y="400.278" width="25.74" height="23.4716" preserveAspectRatio="none" xlink:href="data:image/png;base64,
-						iVBORw0KGgoAAAANSUhEUgAAAYkAAAFACAYAAABJOoDBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0
-						Ad5mH3gAABO+SURBVHhe7d3RcRS5vsdxh0AGlxAIYUMgg0sGhxc8+OzDJQPIwCcDTgZTC7XFo6vwwCshEAK31TMG45U8I3W3Wt3z+VZ9
+						iVBORw0KGgoAAAANSUhEUgAAAYkAAAFACAYAAABJOoDBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7D
+						AcdvqGQAABO+SURBVHhe7d3RcRS5vsdxh0AGlxAIYUMgg0sGhxc8+OzDJQPIwCcDTgZTC7XFo6vwwCshEAK31TMG45U8I3W3Wt3z+VZ9
 						a9ldkNuDW7+W/pL6IrDdbp98+vTpKUmS9+1D4sOHDy86f5AkeV8hQZJMKiRIkkmFBEkyqZAgSSYVEiTJpEKCJJlUSJAkkwoJkmRSIUGS
 						TCokSJJJhQRJMqmQIEkmFRIkyaRCgiSZVEiQJJMKCZJkUiFBkkwqJEiSSYUESTKpkCBJJhUSJMmkQoIkmVRIkCST9iGx3W6fdr4gSfK+
 						fUgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAC22+2TT58+PSVJ8r59SHz48OFF5w+S
@@ -699,68 +699,68 @@
 						GwAAAABJRU5ErkJggg=="/>
 			<rect v:rectContext="foreign" x="0" y="400.278" width="25.74" height="23.4716" class="st17"/>
 		</g>
-		<g id="group204-206" transform="translate(174.188,-18.375)" v:mID="204" v:groupContext="group">
+		<g id="group2149-206" transform="translate(174.188,-18.375)" v:mID="2149" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(25000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(502000):26"/>
 			</v:userDefs>
-			<title>Sheet.204</title>
-			<g id="shape205-207" v:mID="205" v:groupContext="shape">
-				<title>Sheet.205</title>
+			<title>Sheet.2149</title>
+			<g id="shape2150-207" v:mID="2150" v:groupContext="shape">
+				<title>Sheet.2150</title>
 				<rect x="0" y="358.5" width="383.625" height="65.25" class="st25"/>
 			</g>
-			<g id="shape206-209" v:mID="206" v:groupContext="shape" transform="translate(11.8955,-12.2344)">
-				<title>Sheet.206</title>
+			<g id="shape2151-209" v:mID="2151" v:groupContext="shape" transform="translate(11.8955,-12.2344)">
+				<title>Sheet.2151</title>
 				<desc>Microsoft Sentinel</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)"/>
 				<v:textRect cx="176.158" cy="402.906" width="352.32" height="41.6875"/>
 				<rect x="0" y="382.062" width="352.317" height="41.6875" class="st1"/>
 				<text x="126.42" y="406.51" class="st14" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Microsoft Sentinel</text>			</g>
 		</g>
-		<g id="shape290-212" v:mID="290" v:groupContext="shape" transform="translate(7.11096,-128.625)">
-			<title>Sheet.290</title>
+		<g id="shape2152-212" v:mID="2152" v:groupContext="shape" transform="translate(7.11096,-128.625)">
+			<title>Sheet.2152</title>
 			<desc>XDR</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(68000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(503000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="33.2015" cy="410.24" width="66.41" height="27.021"/>
 			<rect x="0" y="396.729" width="66.4031" height="27.021" class="st17"/>
 			<text x="4" y="415.64" class="st45" v:langID="1033"><v:paragraph/><v:tabList/>XDR</text>		</g>
-		<g id="shape293-215" v:mID="293" v:groupContext="shape" transform="translate(161.812,-85.8645)">
-			<title>Sheet.293</title>
+		<g id="shape2153-215" v:mID="2153" v:groupContext="shape" transform="translate(161.812,-85.8645)">
+			<title>Sheet.2153</title>
 			<desc>SIEM data</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(74000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(509000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="42.75" cy="410.24" width="85.5" height="27.021"/>
 			<rect x="0" y="396.729" width="85.5" height="27.021" class="st17"/>
 			<text x="4" y="413.84" class="st27" v:langID="1033"><v:paragraph/><v:tabList/>SIEM data</text>		</g>
-		<g id="shape296-218" v:mID="296" v:groupContext="shape" transform="translate(30.1875,-18.375)">
-			<title>Sheet.296</title>
+		<g id="shape2154-218" v:mID="2154" v:groupContext="shape" transform="translate(30.1875,-18.375)">
+			<title>Sheet.2154</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(79000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(514000):26"/>
 			</v:userDefs>
 			<rect x="0" y="358.5" width="85.5" height="65.25" class="st26"/>
 		</g>
-		<g id="shape297-220" v:mID="297" v:groupContext="shape" transform="translate(31.3125,-18.375)">
-			<title>Sheet.297</title>
+		<g id="shape2155-220" v:mID="2155" v:groupContext="shape" transform="translate(31.3125,-18.375)">
+			<title>Sheet.2155</title>
 			<desc>Third-party &#38; partners</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(78000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(513000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="41.625" cy="406.875" width="83.25" height="33.75"/>
 			<rect x="0" y="390" width="83.25" height="33.75" class="st17"/>
 			<text x="5.57" y="403.28" class="st27" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Third-party &#38;<v:newlineChar/><tspan
 						x="20.92" dy="1.2em" class="st46">partners</tspan></text>		</g>
-		<g id="group298-224" transform="translate(53.8687,-56.1356)" v:mID="298" v:groupContext="group">
+		<g id="group2156-224" transform="translate(53.8687,-56.1356)" v:mID="2156" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(75000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(510000):26"/>
 			</v:userDefs>
-			<title>Sheet.298</title>
-			<g id="shape299-225" v:mID="299" v:groupContext="shape">
-				<title>Sheet.299</title>
+			<title>Sheet.2156</title>
+			<g id="shape2157-225" v:mID="2157" v:groupContext="shape">
+				<title>Sheet.2157</title>
 				<path d="M37.76 408.76 L33.09 400.98 L32.67 400.27 L31.97 400.73 L28.82 402.67 C28.45 402.88 28.16 403.25 28.03 403.67
 							 C27.95 403.96 27.95 404.29 28.08 404.58 C27.21 404.87 26.34 405.03 25.42 405.03 C24.18 404.99 22.94
 							 404.78 21.74 404.41 C21.16 404.25 20.54 404.12 19.92 404 L19.83 404 C19.79 404 19.75 404 19.75 404 L19.67
@@ -820,35 +820,35 @@
 							 L37.06 409.17 L33.87 411.12 Z" class="st47"/>
 			</g>
 		</g>
-		<g id="shape302-227" v:mID="302" v:groupContext="shape" transform="translate(620.812,-18.375)">
-			<title>Sheet.302</title>
+		<g id="shape2158-227" v:mID="2158" v:groupContext="shape" transform="translate(620.812,-18.375)">
+			<title>Sheet.2158</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(77000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(512000):26"/>
 			</v:userDefs>
 			<rect x="0" y="358.5" width="85.5" height="65.25" class="st26"/>
 		</g>
-		<g id="shape303-229" v:mID="303" v:groupContext="shape" transform="translate(627.219,-23.1363)">
-			<title>Sheet.303</title>
+		<g id="shape2159-229" v:mID="2159" v:groupContext="shape" transform="translate(627.219,-23.1363)">
+			<title>Sheet.2159</title>
 			<desc>Multi-cloud</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(76000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(511000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="38.5938" cy="412.761" width="77.19" height="21.9773"/>
 			<rect x="0" y="401.773" width="77.1875" height="21.9773" class="st17"/>
 			<text x="7.8" y="416.45" class="st27" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Multi-cloud</text>		</g>
-		<g id="group308-232" transform="translate(641.584,-51.9496)" v:mID="308" v:groupContext="group">
+		<g id="group2160-232" transform="translate(641.584,-51.9496)" v:mID="2160" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(80000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(515000):26"/>
 			</v:userDefs>
-			<title>Sheet.308</title>
-			<g id="group304-233" v:mID="304" v:groupContext="group">
+			<title>Sheet.2160</title>
+			<g id="group2161-233" v:mID="2161" v:groupContext="group">
 				<v:userDefs>
 					<v:ud v:nameU="visNavOrder" v:val="VT0(81000):26"/>
 				</v:userDefs>
-				<title>Sheet.304</title>
-				<g id="shape305-234" v:mID="305" v:groupContext="shape">
-					<title>Sheet.305</title>
+				<title>Sheet.2161</title>
+				<g id="shape2162-234" v:mID="2162" v:groupContext="shape">
+					<title>Sheet.2162</title>
 					<path d="M6.48 423.71 C6.93 423.74 8.27 423.75 8.27 423.75 L32.7 423.75 C35.71 423.74 38.14 421.29 38.13 418.28
 								 C38.11 415.31 35.72 412.9 32.75 412.86 L32.29 412.86 C32.29 410.67 31.23 408.61 29.45 407.34 C27.64
 								 406.08 25.33 405.76 23.25 406.48 C21.21 402.48 16.31 400.9 12.31 402.94 C9.6 404.33 7.89 407.11
@@ -862,13 +862,13 @@
 							class="st48"/>
 				</g>
 			</g>
-			<g id="group306-236" transform="translate(9.65169,0)" v:mID="306" v:groupContext="group">
+			<g id="group2163-236" transform="translate(9.65169,0)" v:mID="2163" v:groupContext="group">
 				<v:userDefs>
 					<v:ud v:nameU="visNavOrder" v:val="VT0(82000):26"/>
 				</v:userDefs>
-				<title>Sheet.306</title>
-				<g id="shape307-237" v:mID="307" v:groupContext="shape">
-					<title>Sheet.307</title>
+				<title>Sheet.2163</title>
+				<g id="shape2164-237" v:mID="2164" v:groupContext="shape">
+					<title>Sheet.2164</title>
 					<path d="M33.39 412.77 C33.25 412.77 33.07 412.77 32.93 412.77 C32.93 412.77 32.93 412.77 32.93 412.77 C32.93
 								 410.54 31.84 408.49 30.06 407.22 C28.24 405.94 25.92 405.62 23.82 406.35 C22.09 402.98 18.26 401.25
 								 14.62 402.12 C10.98 402.98 8.34 406.26 8.34 410.04 C8.34 410.04 8.34 410.09 8.34 410.13 C5.83 409.72
@@ -878,119 +878,119 @@
 				</g>
 			</g>
 		</g>
-		<g id="shape309-239" v:mID="309" v:groupContext="shape" transform="translate(158.062,797.625) rotate(180)">
-			<title>Sheet.309</title>
+		<g id="shape2165-239" v:mID="2165" v:groupContext="shape" transform="translate(158.062,797.625) rotate(180)">
+			<title>Sheet.2165</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(81000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(516000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L42.38 423.75" class="st44"/>
 		</g>
-		<g id="shape311-244" v:mID="311" v:groupContext="shape" transform="translate(4.3125,-252.51)">
-			<title>Sheet.311</title>
+		<g id="shape2166-244" v:mID="2166" v:groupContext="shape" transform="translate(4.3125,-252.51)">
+			<title>Sheet.2166</title>
 			<desc>Signals</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(83000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(518000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="42.75" cy="410.24" width="85.5" height="27.021"/>
 			<rect x="0" y="396.729" width="85.5" height="27.021" class="st17"/>
 			<text x="50.46" y="413.24" class="st49" v:langID="1033"><v:paragraph v:horizAlign="2"/><v:tabList/>Signals</text>		</g>
-		<g id="shape312-247" v:mID="312" v:groupContext="shape" transform="translate(89.8125,-273.75)">
-			<title>Sheet.312</title>
+		<g id="shape2167-247" v:mID="2167" v:groupContext="shape" transform="translate(89.8125,-273.75)">
+			<title>Sheet.2167</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(84000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(519000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L603 423.75" class="st50"/>
 		</g>
-		<g id="shape313-250" v:mID="313" v:groupContext="shape" transform="translate(513.562,150) rotate(90)">
-			<title>Sheet.313</title>
+		<g id="shape2168-250" v:mID="2168" v:groupContext="shape" transform="translate(513.562,150) rotate(90)">
+			<title>Sheet.2168</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(85000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(520000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L52.87 423.75" class="st50"/>
 		</g>
-		<g id="shape316-253" v:mID="316" v:groupContext="shape" transform="translate(107.062,330.625) rotate(-90)">
-			<title>Sheet.316</title>
+		<g id="shape2169-253" v:mID="2169" v:groupContext="shape" transform="translate(107.062,330.625) rotate(-90)">
+			<title>Sheet.2169</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(88000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(521000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L48.1 423.75" class="st44"/>
 		</g>
-		<g id="shape318-258" v:mID="318" v:groupContext="shape" transform="translate(161.812,-89.25)">
-			<title>Sheet.318</title>
+		<g id="shape2170-258" v:mID="2170" v:groupContext="shape" transform="translate(161.812,-89.25)">
+			<title>Sheet.2170</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(89000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(522000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L407.7 423.75" class="st50"/>
 		</g>
-		<g id="shape319-261" v:mID="319" v:groupContext="shape" transform="translate(585.562,334.5) rotate(90)">
-			<title>Sheet.319</title>
+		<g id="shape2171-261" v:mID="2171" v:groupContext="shape" transform="translate(585.562,334.5) rotate(90)">
+			<title>Sheet.2171</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(90000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(523000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L52.87 423.75" class="st50"/>
 		</g>
-		<g id="shape320-264" v:mID="320" v:groupContext="shape" transform="translate(993.262,334.5) rotate(90)">
-			<title>Sheet.320</title>
+		<g id="shape2172-264" v:mID="2172" v:groupContext="shape" transform="translate(993.262,334.5) rotate(90)">
+			<title>Sheet.2172</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(91000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(524000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L52.87 423.75" class="st50"/>
 		</g>
-		<g id="shape321-267" v:mID="321" v:groupContext="shape" transform="translate(10.4282,146.991) rotate(-90)">
-			<title>Sheet.321</title>
+		<g id="shape2173-267" v:mID="2173" v:groupContext="shape" transform="translate(10.4282,146.991) rotate(-90)">
+			<title>Sheet.2173</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(104000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(537000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L26.14 423.75" class="st51"/>
 		</g>
-		<g id="shape322-273" v:mID="322" v:groupContext="shape" transform="translate(253.171,-296.823)">
-			<title>Sheet.322</title>
+		<g id="shape2174-273" v:mID="2174" v:groupContext="shape" transform="translate(253.171,-296.823)">
+			<title>Sheet.2174</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(105000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(538000):26"/>
 			</v:userDefs>
 			<rect x="0" y="307.937" width="66.4031" height="115.813" class="st26"/>
 		</g>
-		<g id="shape323-275" v:mID="323" v:groupContext="shape" transform="translate(251.813,-302.601)">
-			<title>Sheet.323</title>
+		<g id="shape2175-275" v:mID="2175" v:groupContext="shape" transform="translate(251.813,-302.601)">
+			<title>Sheet.2175</title>
 			<desc>On-premises AD DS and AD FS</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(106000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(539000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="34.56" cy="392.869" width="69.13" height="61.7621"/>
 			<rect x="0" y="361.988" width="69.12" height="61.7621" class="st17"/>
 			<text x="6.29" y="383.71" class="st49" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>On-premises <tspan
 						x="10.61" dy="1.2em" class="st15">AD DS and </tspan><tspan x="21.36" dy="1.223em" class="st15">AD FS</tspan></text>		</g>
-		<g id="shape324-280" v:mID="324" v:groupContext="shape" transform="translate(326.611,-296.823)">
-			<title>Sheet.324</title>
+		<g id="shape2176-280" v:mID="2176" v:groupContext="shape" transform="translate(326.611,-296.823)">
+			<title>Sheet.2176</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(107000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(540000):26"/>
 			</v:userDefs>
 			<rect x="0" y="307.937" width="66.4031" height="115.813" class="st26"/>
 		</g>
-		<g id="shape325-282" v:mID="325" v:groupContext="shape" transform="translate(325.253,-303.995)">
-			<title>Sheet.325</title>
+		<g id="shape2177-282" v:mID="2177" v:groupContext="shape" transform="translate(325.253,-303.995)">
+			<title>Sheet.2177</title>
 			<desc>Endpoints (devices)</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(108000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(541000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="34.56" cy="392.869" width="69.13" height="61.7621"/>
 			<rect x="0" y="361.988" width="69.12" height="61.7621" class="st17"/>
 			<text x="12.53" y="389.71" class="st49" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Endpoints <tspan
 						x="15.33" dy="1.223em" class="st15">(devices)</tspan></text>		</g>
-		<g id="shape326-286" v:mID="326" v:groupContext="shape" transform="translate(91.4343,146.991) rotate(-90)">
-			<title>Sheet.326</title>
+		<g id="shape2178-286" v:mID="2178" v:groupContext="shape" transform="translate(91.4343,146.991) rotate(-90)">
+			<title>Sheet.2178</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(109000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(542000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L26.6 423.75" class="st51"/>
 		</g>
-		<g id="shape327-291" v:mID="327" v:groupContext="shape" transform="translate(269.685,-367.277)">
+		<g id="shape40-291" v:mID="40" v:groupContext="shape" transform="translate(269.685,-367.277)">
 			<title>Active directory blue</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(110000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(543000):26"/>
 			</v:userDefs>
 			<rect v:rectContext="foreign" x="0" y="385.652" width="38.0976" height="38.0976" class="st17"/>
 			<switch>
@@ -1009,80 +1009,80 @@
 				<svg viewBox="0 -43.008 43.008 43.008" enable-background="new" color-interpolation-filters="sRGB" height="38.0976"
 						preserveAspectRatio="none" width="38.0976" x="0" y="385.652">
 					<defs>
-						<clipPath id="mfid1">
-							<rect id="mfid2" x="0" y="-43.008" width="43.008" height="43.008"/>
+						<clipPath id="mfid138">
+							<rect id="mfid139" x="0" y="-43.008" width="43.008" height="43.008"/>
 						</clipPath>
 					</defs>
-					<g clip-path="url(#mfid1)">
+					<g clip-path="url(#mfid138)">
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="2.54" stroke="none" fill="#c2c2c2">
 								<path d="M64,-128 L0,0 L128,0 L64,-128 Z M64,-110 L115,-8 L13,-8 L64,-110 Z"/>
 							</g>
 						</g>
 						<defs>
-							<g id="mfid3">
+							<g id="mfid140">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M59,-53 C58,-53 58,-53 58,-53 C58,-53 57,-54 57,-54 C48,-39 48,-39 48,-39 C49,-39 49,-39 49,-39 C50,-39 50,-39 51,-38 C52,-38 52,-38 52,-37 C61,-52 61,-52 61,-52 C60,-52 59,-52 59,-53 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="2.54" stroke="none" fill="#2f2f2f">
-								<use xlink:href="#mfid3" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid140" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 						<defs>
-							<g id="mfid4">
+							<g id="mfid141">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M66,-52 C74,-37 74,-37 74,-37 C75,-38 77,-39 78,-39 C70,-54 70,-54 70,-54 C69,-53 68,-52 67,-52 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="2.54" stroke="none" fill="#2f2f2f">
-								<use xlink:href="#mfid4" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid141" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 						<defs>
-							<g id="mfid5">
+							<g id="mfid142">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M56,-24 C71,-24 71,-24 71,-24 C71,-26 71,-27 71,-29 C55,-29 55,-29 55,-29 C56,-27 56,-26 56,-25 C56,-25 56,-24 56,-24 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="2.54" stroke="none" fill="#2f2f2f">
-								<use xlink:href="#mfid5" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid142" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 						<defs>
-							<g id="mfid6">
+							<g id="mfid143">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M73,-65 C73,-70 69,-74 64,-74 C59,-74 55,-70 55,-65 C55,-60 59,-56 64,-56 C64,-56 64,-56 64,-56 C69,-56 73,-60 73,-65 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="2.54" stroke="none" fill="#0078d4">
-								<use xlink:href="#mfid6" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid143" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 						<defs>
-							<g id="mfid7">
+							<g id="mfid144">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M74,-27 C74,-22 78,-17 83,-17 C88,-17 92,-22 92,-27 C92,-32 88,-36 83,-36 C78,-36 74,-32 74,-27 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="2.54" stroke="none" fill="#0078d4">
-								<use xlink:href="#mfid7" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid144" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 						<defs>
-							<g id="mfid8">
+							<g id="mfid145">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M53,-27 C53,-32 49,-36 44,-36 C39,-36 35,-32 35,-27 C35,-22 39,-18 44,-18 C44,-18 44,-18 44,-18 C49,-18 53,-22 53,-27 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="2.54" stroke="none" fill="#0078d4">
-								<use xlink:href="#mfid8" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid145" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 					</g>
@@ -1090,10 +1090,10 @@
 			</switch>
 			<rect v:rectContext="foreign" x="0" y="385.652" width="38.0976" height="38.0976" class="st17"/>
 		</g>
-		<g id="shape328-294" v:mID="328" v:groupContext="shape" transform="translate(343.428,-370.07)">
+		<g id="shape41-294" v:mID="41" v:groupContext="shape" transform="translate(343.428,-370.07)">
 			<title>Devices 2</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(111000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(544000):26"/>
 			</v:userDefs>
 			<rect v:rectContext="foreign" x="0" y="399.826" width="32.7685" height="23.9244" class="st17"/>
 			<switch>
@@ -1108,11 +1108,11 @@
 				<svg viewBox="3.008 -35.008 36.992 27.008" enable-background="new" color-interpolation-filters="sRGB"
 						height="23.9244" preserveAspectRatio="none" width="32.7685" x="0" y="399.826">
 					<defs>
-						<clipPath id="mfid9">
-							<rect id="mfid10" x="3.008" y="-35.008" width="36.992" height="27.008"/>
+						<clipPath id="mfid146">
+							<rect id="mfid147" x="3.008" y="-35.008" width="36.992" height="27.008"/>
 						</clipPath>
 					</defs>
-					<g clip-path="url(#mfid9)">
+					<g clip-path="url(#mfid146)">
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="2.54" stroke="none" fill="#c2c2c2">
 								<path
@@ -1124,22 +1124,22 @@
 			</switch>
 			<rect v:rectContext="foreign" x="0" y="399.826" width="32.7685" height="23.9244" class="st17"/>
 		</g>
-		<g id="shape183-297" v:mID="183" v:groupContext="shape" transform="translate(400.051,-296.823)">
-			<title>Sheet.183</title>
+		<g id="shape2179-297" v:mID="2179" v:groupContext="shape" transform="translate(400.051,-296.823)">
+			<title>Sheet.2179</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(2000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(479000):26"/>
 			</v:userDefs>
 			<rect x="0" y="307.937" width="66.4031" height="115.813" class="st26"/>
 		</g>
-		<g id="shape185-299" v:mID="185" v:groupContext="shape" transform="translate(418.735,-373.378)">
-			<title>Sheet.185</title>
+		<g id="shape42-299" v:mID="42" v:groupContext="shape" transform="translate(418.735,-373.378)">
+			<title>Sheet.42</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(4000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(481000):26"/>
 			</v:userDefs>
 			<rect v:rectContext="foreign" x="0" y="397.853" width="29.0346" height="25.8972" class="st17"/>
 			<image x="0" y="397.853" width="29.0346" height="25.8972" preserveAspectRatio="none" xlink:href="data:image/png;base64,
-						iVBORw0KGgoAAAANSUhEUgAAAIAAAABnCAYAAADIf0rxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0
-						Ad5mH3gAAAZySURBVHhe7V3bUeNKFHQIhLAhEAIhkMElg+ufXcz9wRlABpABNwOVeRSfrlqLb0JwCGz3aARecSTZ8kiaMzpd1QXFw5b6
+						iVBORw0KGgoAAAANSUhEUgAAAIAAAABnCAYAAADIf0rxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7D
+						AcdvqGQAAAZySURBVHhe7V3bUeNKFHQIhLAhEAIhkMElg+ufXcz9wRlABpABNwOVeRSfrlqLb0JwCGz3aARecSTZ8kiaMzpd1QXFw5b6
 						9Jx5HY1nU0WWZSePj4/n4By8A7PVavWOr1vwo8ItfrfG1wy8AedPT09n/qUMWsCgMYA+0NUgdyVNMX95eTn1b2OICWXQQallhyaNdYHs
 						8sO/vWEs+MCzdUqBGoJ3ZoQREEHgqzQjDAGKDLEfKuJHQxjz2l+qITSen5//gchD9PHH8h1GtcFiKEBMTuU4wJPEjpaWDQKAKR9Ccm4u
 						iqyAuAUbG3QChYOAIefyY5FdgpngECQU/JKZvzVDGxIMfsm5v0VDHRIOPrm1rqABEIej/VSDX9K6gjpAHO7WSaKlRusKquCcWRAqVbIr
@@ -1163,11 +1163,11 @@
 						MnfxbIQ/IZTdAh/RtkUdw/iYzf4A94U2FW4fhBQAAAAASUVORK5CYII="/>
 			<rect v:rectContext="foreign" x="0" y="397.853" width="29.0346" height="25.8972" class="st17"/>
 		</g>
-		<g id="shape186-303" v:mID="186" v:groupContext="shape" transform="translate(398.693,-302.824)">
-			<title>Sheet.186</title>
+		<g id="shape2180-303" v:mID="2180" v:groupContext="shape" transform="translate(398.693,-302.824)">
+			<title>Sheet.2180</title>
 			<desc>Cloud security and threat intelligence</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(92000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(525000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="34.56" cy="392.869" width="69.13" height="61.7621"/>
@@ -1175,23 +1175,23 @@
 			<text x="21.55" y="371.87" class="st49" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Cloud <tspan
 						x="7.93" dy="1.2em" class="st15">security and </tspan><tspan x="21.44" dy="1.2em" class="st15">threat </tspan><tspan
 						x="9.26" dy="1.2em" class="st15">intelligence</tspan><v:newlineChar/></text>		</g>
-		<g id="group179-309" transform="translate(471.625,-296.823)" v:mID="179" v:groupContext="group">
+		<g id="group2181-309" transform="translate(471.625,-296.823)" v:mID="2181" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(20000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(497000):26"/>
 			</v:userDefs>
-			<title>Sheet.179</title>
-			<g id="shape180-310" v:mID="180" v:groupContext="shape">
-				<title>Sheet.180</title>
+			<title>Sheet.2181</title>
+			<g id="shape2182-310" v:mID="2182" v:groupContext="shape">
+				<title>Sheet.2182</title>
 				<rect x="0" y="307.937" width="77.1875" height="115.813" class="st26"/>
 			</g>
-			<g id="group181-312" transform="translate(6.6761,-12.9265)" v:mID="181" v:groupContext="group">
-				<title>Sheet.181</title>
+			<g id="group2183-312" transform="translate(6.6761,-12.9265)" v:mID="2183" v:groupContext="group">
+				<title>Sheet.2183</title>
 			</g>
 		</g>
-		<g id="shape202-313" v:mID="202" v:groupContext="shape" transform="translate(495.031,-370.105)">
-			<title>Sheet.202</title>
+		<g id="shape43-313" v:mID="43" v:groupContext="shape" transform="translate(495.031,-378.375)">
+			<title>Sheet.43</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(23000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(500000):26"/>
 			</v:userDefs>
 			<rect v:rectContext="foreign" x="0" y="395.877" width="30.375" height="27.8732" class="st17"/>
 			<switch>
@@ -1246,80 +1246,81 @@
 				<!-- Unsupported Record: EmfPlusRecordTypeSetPixelOffsetMode  -->
 				<svg viewBox="-0.70833 -0.70968 447.19 411.14" height="27.8732" preserveAspectRatio="none" width="30.375" x="0"
 						y="395.877">
-					<clipPath id="mfid11">
-						<rect x="-0.70833" y="-0.70968" width="447.19" height="411.14" id="mfid12"/>
+					<clipPath id="mfid148">
+						<rect x="-0.70833" y="-0.70968" width="447.19" height="411.14" id="mfid149"/>
 					</clipPath>
-					<g clip-path="url(#mfid11)">
-						<mask id="mfid13">
+					<g clip-path="url(#mfid148)">
+						<mask id="mfid150">
 							<rect width="447" height="411" fill="white" stroke="none"/>
 						</mask>
-						<mask id="mfid14" fill="white" stroke="none">
+						<mask id="mfid151" fill="white" stroke="none">
 							<g>
-								<g mask="url(#mfid13)">
-									<use xlink:href="#mfid12"/>
+								<g mask="url(#mfid150)">
+									<use xlink:href="#mfid149"/>
 								</g>
 							</g>
 						</mask>
 						<defs>
-							<path id="mfid15" d="M0,0 L681230,0 L681230,626360 L0,626360 Z"/>
+							<path id="mfid152" d="M0,0 L681230,0 L681230,626360 L0,626360 Z"/>
 						</defs>
-						<mask id="mfid16">
-							<use xlink:href="#mfid15" fill-rule="evenodd" fill="white" stroke="none"
+						<mask id="mfid153">
+							<use xlink:href="#mfid152" fill-rule="evenodd" fill="white" stroke="none"
 									transform="matrix(0.00065617, 0, 0, 0.00065617, 0, 0)"/>
 						</mask>
-						<mask id="mfid17" fill="white" stroke="none">
-							<g mask="url(#mfid14)">
-								<g mask="url(#mfid16)">
-									<use xlink:href="#mfid12"/>
+						<mask id="mfid154" fill="white" stroke="none">
+							<g mask="url(#mfid151)">
+								<g mask="url(#mfid153)">
+									<use xlink:href="#mfid149"/>
 								</g>
 							</g>
 						</mask>
 						<defs>
 							<!-- Unsupported Record: EmfPlusRecordTypeSetPixelOffsetMode  -->
-							<svg viewBox="-0.50621 -0.50738 73.98 67.989" height="67" id="mfid18" width="73">
-								<clipPath id="mfid19">
-									<rect x="-0.50621" y="-0.50738" width="73.98" height="67.989" id="mfid20"/>
+							<svg viewBox="-0.50621 -0.50738 73.98 67.989" height="67" id="mfid155" width="73">
+								<clipPath id="mfid156">
+									<rect x="-0.50621" y="-0.50738" width="73.98" height="67.989" id="mfid157"/>
 								</clipPath>
-								<g clip-path="url(#mfid19)">
-									<mask id="mfid21">
+								<g clip-path="url(#mfid156)">
+									<mask id="mfid158">
 										<rect width="74" height="68" fill="white" stroke="none"/>
 									</mask>
-									<mask id="mfid22" fill="white" stroke="none">
+									<mask id="mfid159" fill="white" stroke="none">
 										<g>
-											<g mask="url(#mfid21)">
-												<use xlink:href="#mfid20"/>
+											<g mask="url(#mfid158)">
+												<use xlink:href="#mfid157"/>
 											</g>
 										</g>
 									</mask>
 									<!-- GetDC -->
-									<mask id="mfid23" fill-rule="evenodd" fill="white" stroke="none">
+									<mask id="mfid160" fill-rule="evenodd" fill="white" stroke="none">
 										<rect x="0" y="0" width="74" height="68"/>
 									</mask>
 									<!-- Released DC -->
 									<defs>
-										<path id="mfid24"
+										<path id="mfid161"
 												d="M0.042044,-0.2914 L0.37174,-0.077428 L0.70726,-0.29223 L0.74931,-0.24311 L0.37174,-0.00000000000000083267 L0,-0.24311 L0.042044,-0.2914 Z"/>
 									</defs>
-									<g mask="url(#mfid22)">
+									<g mask="url(#mfid159)">
 										<g transform="matrix(96, 0, 0, 96, 1.5, 66.959)">
 											<g fill="#50e6ff">
-												<use xlink:href="#mfid24" fill-rule="evenodd" stroke="none"/>
+												<use xlink:href="#mfid161" fill-rule="evenodd" stroke="none"/>
 												<defs>
-													<path id="mfid25"
+													<path id="mfid162"
 															d="M0.000000000000000029361,-0.1969 L0.30472,-0.5599 L0.61568,-0.19648 L0.30472,-0.00000000000000083267 L0,-0.1969 Z"/>
 												</defs>
 											</g>
 										</g>
 										<g transform="matrix(96, 0, 0, 96, 7.934, 55.25)">
 											<g fill="#ffffff">
-												<use xlink:href="#mfid25" fill-rule="evenodd" stroke="none"/>
+												<use xlink:href="#mfid162" fill-rule="evenodd" stroke="none"/>
 												<defs>
-													<path id="mfid26" d="M0.30472,-0.5599 L0.30472,0 L0,-0.1969 L0.30472,-0.5599 Z"/>
+													<path id="mfid163"
+															d="M0.30472,-0.5599 L0.30472,0 L0,-0.1969 L0.30472,-0.5599 Z"/>
 												</defs>
 											</g>
 											<g fill="#50e6ff">
-												<use xlink:href="#mfid26" fill-rule="evenodd" stroke="none"/>
-												<linearGradient id="mfid27" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1024"
+												<use xlink:href="#mfid163" fill-rule="evenodd" stroke="none"/>
+												<linearGradient id="mfid164" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1024"
 														y2="0" spreadMethod="reflect"
 														gradientTransform="matrix(-381.47, -401.31, 401.31, -381.47, 337490, -50515)">
 													<stop offset="0" stop-color="#1988d9"/>
@@ -1327,32 +1328,32 @@
 													<stop offset="1" stop-color="#54aef0"/>
 												</linearGradient>
 												<defs>
-													<path id="mfid28" d="M0,-511970 L0,0 L284340,-179670 L0,-511970 Z"/>
+													<path id="mfid165" d="M0,-511970 L0,0 L284340,-179670 L0,-511970 Z"/>
 												</defs>
 											</g>
 										</g>
 										<g transform="matrix(0.00010499, 0, 0, 0.00010499, 37.187, 55.25)">
-											<g fill="url(#mfid27)">
-												<use xlink:href="#mfid28" fill-rule="evenodd" stroke="none"/>
+											<g fill="url(#mfid164)">
+												<use xlink:href="#mfid165" fill-rule="evenodd" stroke="none"/>
 												<defs>
-													<path id="mfid29"
+													<path id="mfid166"
 															d="M0,-0.27058 L0.31096,-0.19648 L0,0.000000000000000027756 L0,-0.27058 Z"/>
 												</defs>
 											</g>
 										</g>
 										<g transform="matrix(96, 0, 0, 96, 37.187, 55.25)">
 											<g fill="#53b1e0">
-												<use xlink:href="#mfid29" fill-rule="evenodd" stroke="none"/>
+												<use xlink:href="#mfid166" fill-rule="evenodd" stroke="none"/>
 												<defs>
-													<path id="mfid30"
+													<path id="mfid167"
 															d="M0.30472,0.000000000000000039148 L0,-0.1969 L0.30472,-0.27058 L0.30472,0.000000000000000055511 Z"/>
 												</defs>
 											</g>
 										</g>
 										<g transform="matrix(96, 0, 0, 96, 7.934, 55.25)">
 											<g fill="#9cebff">
-												<use xlink:href="#mfid30" fill-rule="evenodd" stroke="none"/>
-												<linearGradient id="mfid31" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1024"
+												<use xlink:href="#mfid167" fill-rule="evenodd" stroke="none"/>
+												<linearGradient id="mfid168" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1024"
 														y2="0" spreadMethod="reflect"
 														gradientTransform="matrix(153.96, 343.15, -343.15, 153.96, 93794, -309300)">
 													<stop offset="0" stop-color="#54aef0"/>
@@ -1364,14 +1365,14 @@
 													<stop offset="1" stop-color="#1988d9"/>
 												</linearGradient>
 												<defs>
-													<path id="mfid32"
+													<path id="mfid169"
 															d="M0.000000000071594,-0.00000000071594 L345250,-222300 L306800,-267210 L0,-70800 L0,-0.00000000076139 Z"/>
 												</defs>
 											</g>
 										</g>
 										<g transform="matrix(0.00010499, 0, 0, 0.00010499, 37.187, 66.959)">
-											<g fill="url(#mfid31)">
-												<use xlink:href="#mfid32" fill-rule="evenodd" stroke="none"/>
+											<g fill="url(#mfid168)">
+												<use xlink:href="#mfid169" fill-rule="evenodd" stroke="none"/>
 											</g>
 										</g>
 									</g>
@@ -1379,15 +1380,15 @@
 							</svg>
 						</defs>
 						<!-- Unsupported Record: EmfPlusRecordTypeSetObject Obj_ImageAttributes -->
-						<g mask="url(#mfid17)">
+						<g mask="url(#mfid154)">
 							<g transform="matrix(5.9616, 0, 0, 5.9574, 3.0179, 3.0227)">
-								<clipPath id="mfid33">
+								<clipPath id="mfid170">
 									<rect x="-0.50621" y="-0.50738" width="74.98" height="68.989"/>
 								</clipPath>
-								<use xlink:href="#mfid18" clip-path="url(#mfid33)" transform="matrix(1, 0, 0, 1, 0, 0)"/>
+								<use xlink:href="#mfid155" clip-path="url(#mfid170)" transform="matrix(1, 0, 0, 1, 0, 0)"/>
 							</g>
 						</g>
-						<mask id="mfid34">
+						<mask id="mfid171">
 							<rect width="447" height="411" fill="white" stroke="none"/>
 						</mask>
 					</g>
@@ -1395,47 +1396,47 @@
 			</switch>
 			<rect v:rectContext="foreign" x="0" y="395.877" width="30.375" height="27.8732" class="st17"/>
 		</g>
-		<g id="shape203-316" v:mID="203" v:groupContext="shape" transform="translate(471.625,-324.64)">
-			<title>Sheet.203</title>
-			<desc>Azure AD and Azure AD Identity Protection</desc>
+		<g id="shape2184-316" v:mID="2184" v:groupContext="shape" transform="translate(471.625,-324.64)">
+			<title>Sheet.2184</title>
+			<desc>Microsoft Entra ID and Entra ID Protection</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(24000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(501000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="38.5937" cy="409.763" width="77.19" height="27.975"/>
 			<rect x="0" y="395.775" width="77.1875" height="27.975" class="st17"/>
-			<text x="13.67" y="391.76" class="st27" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Azure AD<v:newlineChar/><tspan
-						x="5.47" dy="1.2em" class="st46">and Azure AD </tspan><tspan x="19.68" dy="1.2em" class="st46">Identity </tspan><tspan
-						x="13" dy="1.2em" class="st46">Protection</tspan></text>		</g>
-		<g id="shape118-322" v:mID="118" v:groupContext="shape" transform="translate(200.787,146.991) rotate(-90)">
-			<title>Sheet.118</title>
+			<text x="13.41" y="391.58" class="st27" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Microsoft <tspan
+						x="6.72" dy="1.223em" class="st15">Entra ID </tspan><tspan class="st46">and </tspan><tspan x="18.98"
+						dy="1.208em" class="st46">Entra ID </tspan><tspan x="13" dy="1.2em" class="st46">Protection</tspan></text>		</g>
+		<g id="shape2185-323" v:mID="2185" v:groupContext="shape" transform="translate(200.787,146.991) rotate(-90)">
+			<title>Sheet.2185</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(13000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(490000):26"/>
 			</v:userDefs>
 			<path d="M0 423.75 L27.87 423.75" class="st51"/>
 		</g>
-		<g id="shape120-327" v:mID="120" v:groupContext="shape" transform="translate(554.312,-296.799)">
-			<title>Sheet.120</title>
+		<g id="shape2186-328" v:mID="2186" v:groupContext="shape" transform="translate(554.312,-296.799)">
+			<title>Sheet.2186</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(69000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(504000):26"/>
 			</v:userDefs>
 			<rect x="0" y="307.937" width="152" height="115.813" class="st26"/>
 		</g>
-		<g id="shape121-329" v:mID="121" v:groupContext="shape" transform="translate(554.312,-358.729)">
-			<title>Sheet.121</title>
+		<g id="shape2187-330" v:mID="2187" v:groupContext="shape" transform="translate(554.312,-358.729)">
+			<title>Sheet.2187</title>
 			<desc>Azure Services</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(70000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(505000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="76" cy="412.761" width="152.01" height="21.9773"/>
 			<rect x="0" y="401.773" width="152" height="21.9773" class="st17"/>
 			<text x="37.96" y="409.16" class="st27" v:langID="1033"><v:paragraph v:horizAlign="1" v:bulletSize="0.166667"/><v:tabList/>Azure Services<v:newlineChar/></text>		</g>
-		<g id="shape122-332" v:mID="122" v:groupContext="shape" transform="translate(557.813,-279.375)">
-			<title>Sheet.122</title>
+		<g id="shape2188-333" v:mID="2188" v:groupContext="shape" transform="translate(557.813,-279.375)">
+			<title>Sheet.2188</title>
 			<desc>SQL Server VMs Storage Network Traffic Industrial IoT Azure A...</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(71000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(506000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="76" cy="375.025" width="152" height="97.45"/>
@@ -1445,11 +1446,11 @@
 						x="4" dy="1.2em" class="st15">Network Traffic<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st15">Industrial IoT<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st15">Azure App Services<v:newlineChar/></tspan><tspan x="4" dy="1.2em"
 						class="st15">Azure Arc</tspan>-enabled resources<v:newlineChar/></text>		</g>
-		<g id="shape123-341" v:mID="123" v:groupContext="shape" transform="translate(633.188,-291.457)">
-			<title>Sheet.123</title>
+		<g id="shape2189-342" v:mID="2189" v:groupContext="shape" transform="translate(633.188,-291.457)">
+			<title>Sheet.2189</title>
 			<desc>Azure Storage Azure DNS Azure Resource Manager Azure Key Vaul...</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(72000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(507000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="41.625" cy="382.225" width="83.25" height="83.05"/>
@@ -1458,15 +1459,15 @@
 						x="4" dy="1.2em" class="st15">Azure DNS<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st15">Azure Resource </tspan><tspan
 						x="4" dy="1.2em" class="st15">Manager<v:newlineChar/></tspan><tspan x="4" dy="1.2em" class="st15">Azure Key Vault<v:newlineChar/></tspan><tspan
 						x="4" dy="1.2em" class="st15">Azure App Service</tspan><v:newlineChar/></text>		</g>
-		<g id="shape124-349" v:mID="124" v:groupContext="shape" transform="translate(610.062,-385.207)">
-			<title>Sheet.124</title>
+		<g id="shape44-350" v:mID="44" v:groupContext="shape" transform="translate(610.062,-385.207)">
+			<title>Sheet.44</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(73000):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(508000):26"/>
 			</v:userDefs>
 			<rect v:rectContext="foreign" x="0" y="400.969" width="40.5" height="22.7812" class="st17"/>
 			<image x="0" y="400.969" width="40.5" height="22.7812" preserveAspectRatio="none" xlink:href="data:image/png;base64,
-						iVBORw0KGgoAAAANSUhEUgAAC6UAAAaNCAYAAACWJQj/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0
-						Ad5mH3gAAP+lSURBVHhe7N15vGRXXe/9+zyPkKmqTkBAEBFlNEggTAlJ95nnTpDpquBFRXBE0316On3mqcdMoAwKCiJ4RbkIoqCIERSE
+						iVBORw0KGgoAAAANSUhEUgAAC6UAAAaNCAYAAACWJQj/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7D
+						AcdvqGQAAP+lSURBVHhe7N15vGRXXe/9+zyPkKmqTkBAEBFlNEggTAlJ95nnTpDpquBFRXBE0316On3mqcdMoAwKCiJ4RbkIoqCIERSE
 						EAKCIlw0gsyCKEjmkGk/v+9vrbVrV53V3ae7T3e60p8/3q+9a621d9WJ/zSv1+f+7v8oigIAAAAAAAAAAAAAAAAAAAAAgKOSXQQAAAAA
 						AAAAAAAAAAAAAAAAYC2yiwAAAAAAAAAAAAAAAAAAAAAArEV2EQAAAAAAAAAAAAAAAAAAAACAtcguAgAAAAAAAAAAAAAAAAAAAACwFtlF
 						AAAAAAAAAAAAAAAAAAAAAADWIrsIAAAAAAAAAAAAAAAAAAAAAMBaZBcBAAAAAAAAAAAAAAAAAAAAAFiL7CIAAAAAAAAAAAAAAAAAAAAA
@@ -5642,27 +5643,27 @@
 						AAAAGET2EAAAAAAAAAAAAAAAJlfM+j8DGwZ+DkZ1lAAAAABJRU5ErkJggg=="/>
 			<rect v:rectContext="foreign" x="0" y="400.969" width="40.5" height="22.7812" class="st17"/>
 		</g>
-		<g id="shape332-353" v:mID="332" v:groupContext="shape" transform="translate(380.063,-79.9686)">
-			<title>Sheet.332</title>
+		<g id="shape2190-354" v:mID="2190" v:groupContext="shape" transform="translate(380.063,-79.9686)">
+			<title>Sheet.2190</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(113000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(545000):26"/>
 			</v:userDefs>
 			<path d="M31.5 356.74 A31.294 31.0815 -90 0 0 0.02 389.05 A35.8874 29.8312 -90 0 0 19.87 421.89 L20.22 421.99"
 					class="st54"/>
 		</g>
-		<g id="shape334-359" v:mID="334" v:groupContext="shape" transform="translate(476.812,700.519) rotate(180)">
-			<title>Sheet.334</title>
+		<g id="shape2191-360" v:mID="2191" v:groupContext="shape" transform="translate(476.812,700.519) rotate(180)">
+			<title>Sheet.2191</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(114000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(546000):26"/>
 			</v:userDefs>
 			<path d="M31.5 356.74 A31.294 31.0815 -90 0 0 0.02 389.05 A35.8874 29.8312 -90 0 0 19.87 421.89 L20.22 421.99"
 					class="st54"/>
 		</g>
-		<g id="shape335-364" v:mID="335" v:groupContext="shape" transform="translate(380.063,-94.8645)">
-			<title>Sheet.335</title>
+		<g id="shape2192-365" v:mID="2192" v:groupContext="shape" transform="translate(380.063,-94.8645)">
+			<title>Sheet.2192</title>
 			<desc>SecOps analysis and response</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(115000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(547000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="48.375" cy="410.24" width="96.75" height="27.021"/>

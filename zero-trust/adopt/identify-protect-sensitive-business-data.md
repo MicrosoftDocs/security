@@ -28,7 +28,7 @@ The following diagram illustrates the shift from traditional protection with net
 
 The guidance in this article walks through how to get started with and progress your strategy for identifying and protecting sensitive data. If your organization is subject to regulations that protect data, use the [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md) article in this series to learn how to apply what you learn in this article to protecting data that is regulated.
 
-## Why business leaders think about protecting sensitive data
+## How business leaders think about protecting sensitive data
 
 Before starting any technical work, it’s important to understand the different motivations for investing in protecting business data as these help inform the strategy, objectives, and measures for success.
 
@@ -390,7 +390,7 @@ Your priorities for data discovery and protection might differ.
 Note the following dependencies on other business scenarios:
 
 - Extending information protection to endpoint devices requires coordination with Intune (included in the [Secure remote and hybrid work](secure-remote-hybrid-work.md) article).
-- Extending information protection to data in SaaS apps requires Microsoft Defender for Cloud Apps. Piloting and deploying Defender for Cloud Apps is included in the **Prevent or reduce business damage from a breach** scenario (coming soon). In the meantime, see [Evaluate Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-overview).
+- Extending information protection to data in SaaS apps requires Microsoft Defender for Cloud Apps. Piloting and deploying Defender for Cloud Apps is included in the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario.
 
 As you finalize your adoption plans, be sure to revisit the [Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/) Deployment Acceleration Guide to review the recommendations and fine-tune your strategy.
 
@@ -424,5 +424,6 @@ See [Govern your data with Microsoft Purview](/microsoft-365/compliance/manage-d
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
-- [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
+- [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)

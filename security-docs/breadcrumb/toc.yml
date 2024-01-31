@@ -1,3 +1,14 @@
+items:
 - name: Security
   tocHref: /security/
   topicHref: /security/index
+  items:
+  - name: Privileged access
+    tocHref: /security/privileged-access-workstations/
+    topicHref: /security/privileged-access-workstations/
+  - name: Engineering
+    tocHref: /security/engineering/
+    topicHref: /security/engineering/
+  - name: AI Red Team
+    tocHref: /security/ai-red-team/
+    topicHref: /security/ai-red-team/

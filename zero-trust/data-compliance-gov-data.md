@@ -1,6 +1,7 @@
 ---
 title: RaMP checklist — Data protection
-description: Data
+description: Use the steps in this guidance to deploy data protection that adheres to Zero Trust principles.
+ms.date: 01/08/2024
 ms.service: security
 ms.author: dansimp
 author: dansimp
@@ -77,10 +78,10 @@ Perform these implementation steps to meet the **Know your data** deployment obj
 
 | Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Determine data classification levels. | Data Security Architect | [Learn about](/microsoft-365/compliance/data-classification-overview#sensitive-information-types-used-most-in-your-content) |
-| <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types. | Data Security Architect | [Learn about](/microsoft-365/compliance/sensitive-information-type-learn-about) |
-| <input type="checkbox" /> | 3. Determine the use of pre-trained and custom trainable classifiers. | Data Security Architect | [Learn about](/microsoft-365/compliance/classifier-learn-about) |
-| <input type="checkbox" /> | 4. Discover and classify sensitive data. | Data Security Architect and/or Data Security Engineer | [Learn about](/microsoft-365/compliance/data-classification-overview) |
+| <input type="checkbox" /> | 1. Determine data classification levels. | Data Security Architect | [Learn about](/purview/data-classification-overview#sensitive-information-types-used-most-in-your-content) |
+| <input type="checkbox" /> | 2. Determine built-in and custom sensitive information types. | Data Security Architect | [Learn about](/purview/sensitive-information-type-learn-about) |
+| <input type="checkbox" /> | 3. Determine the use of pre-trained and custom trainable classifiers. | Data Security Architect | [Learn about](/purview/classifier-learn-about) |
+| <input type="checkbox" /> | 4. Discover and classify sensitive data. | Data Security Architect and/or Data Security Engineer | [Learn about](/purview/data-classification-overview) |
 
 <a id="protect"></a>
 ### 2. Protect your data
@@ -89,12 +90,12 @@ Perform these implementation steps to meet the **Protect your data** deployment 
 
 | Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Determine the use and design of sensitivity labels. | Security Architect | [Get started](/microsoft-365/compliance/get-started-with-sensitivity-labels) |
-| <input type="checkbox" /> | 2. Label and protect items for Microsoft 365 apps and services. | Data Security Engineer | [Manage sensitivity labels](/microsoft-365/compliance/sensitivity-labels-office-apps) |
-| <input type="checkbox" /> | 3. Enable and configure Microsoft Cloud App Security. | Data Security Engineer | [Get started](/cloud-app-security/getting-started-with-cloud-app-security) |
+| <input type="checkbox" /> | 1. Determine the use and design of sensitivity labels. | Security Architect | [Get started](/purview/get-started-with-sensitivity-labels) |
+| <input type="checkbox" /> | 2. Label and protect items for Microsoft 365 apps and services. | Data Security Engineer | [Manage sensitivity labels](/purview/sensitivity-labels-office-apps) |
+| <input type="checkbox" /> | 3. Enable and configure Microsoft Defender for Cloud Apps. | Data Security Engineer | [Get started](/defender-cloud-apps/get-started) |
 | <input type="checkbox" /> | 4. Discover, label, and protect sensitive items that reside in data stores in the cloud.  | Data Security Engineer | [Best practices](/defender-cloud-apps/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud) |
-| <input type="checkbox" /> | 5. Discover, label, and protect sensitive items that reside in on-premises data stores. | Data Security Engineer | [Azure Information Protection (AIP) unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install) |
-| <input type="checkbox" /> | 6. Extend your sensitivity labels to Azure resources Azure Purview | Data Security Engineer | [Labeling in Azure Purview](/azure/purview/create-sensitivity-label) |
+| <input type="checkbox" /> | 5. Discover, label, and protect sensitive items that reside in on-premises data stores. | Data Security Engineer | [Information protection scanner](/purview/deploy-scanner-configure-install) |
+| <input type="checkbox" /> | 6. Extend your sensitivity labels to Azure resources Azure Purview | Data Security Engineer | [Labeling in the Microsoft Purview Data Map](/purview/create-sensitivity-label) |
 
 <a id="prevent"></a>
 ### 3. Prevent data loss
@@ -103,9 +104,9 @@ Perform these implementation steps to meet the **Prevent data loss** deployment 
 
 | Done | Implementation step | Owner | Documentation |
 |:-------|:-------|:-----|:-----|
-| <input type="checkbox" /> | 1. Design and create data loss prevention (DLP) policies. | Security Architect | [Learn about](/microsoft-365/compliance/dlp-learn-about-dlp) |
-| <input type="checkbox" /> | 2. Enable and configure endpoint data loss prevention. | Data Security Engineer | [Learn about](/microsoft-365/compliance/endpoint-dlp-learn-about) |
-| <input type="checkbox" /> | 3. Configure access policies for Cloud App Security Conditional Access App Control. | Data Security Engineer | [Overview](/cloud-app-security/proxy-intro-aad) |
+| <input type="checkbox" /> | 1. Design and create data loss prevention (DLP) policies. | Security Architect | [Learn about](/purview/dlp-learn-about-dlp) |
+| <input type="checkbox" /> | 2. Enable and configure endpoint data loss prevention. | Data Security Engineer | [Learn about](/purview/endpoint-dlp-learn-about) |
+| <input type="checkbox" /> | 3. Configure access policies for Microsoft Defender for Cloud Apps Conditional Access App Control. | Data Security Engineer | [Overview](/cloud-app-security/proxy-intro-aad) |
 
 
 <a id="strict"></a>

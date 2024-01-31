@@ -15,37 +15,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "compass",
-      "build_source_folder": "compass",
-      "build_output_subfolder": "compass",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "operations",
       "build_source_folder": "operations",
       "build_output_subfolder": "operations",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "privileged-access-workstations",
-      "build_source_folder": "privileged-access-workstations",
-      "build_output_subfolder": "privileged-access-workstations",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -82,20 +54,6 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "simulation-labs",
-      "build_source_folder": "simulation-labs",
-      "build_output_subfolder": "simulation-labs",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -170,5 +128,8 @@
   "docs_build_engine": {},
   "skip_source_output_uploading": false,
   "contribution_branch_mappings": {},
-  "need_generate_pdf_url_template": true
+  "need_generate_pdf_url_template": true,
+  "redirection_files": [
+    ".openpublishing.redirection.json"
+  ]
 }

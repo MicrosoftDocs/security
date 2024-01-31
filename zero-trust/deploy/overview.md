@@ -1,7 +1,7 @@
 ---
 title: Zero Trust Deployment Overview
 description: Learn how to deploy Zero Trust solutions to keep your organization secure.
-ms.date: 05/04/2022
+ms.date: 04/13/2023
 ms.service: security
 author: mjcaparas
 ms.author: macapara

@@ -161,6 +161,7 @@ This can become part of your long-term strategy, starting with the acquisition o
 
 The nature or industry vertical of your business is a big driver of your strategy. It greatly influences the contents of your digital estate, your risks, and your legal compliance obligations. 
 
+<a name='attacker-roi'></a>
 #### Attacker return on investment
 
 Finally, raising the cost of an attack for attackers makes your organization more resilient to cybersecurity risk. Beyond meeting specific regulatory requirements, your budget spend should make it more expensive and difficult for an attacker to gain access to your environment and perform activities such as data exfiltration or data destruction. In other words, you reduce the return on investment (ROI) of attackers, causing them to possibly move on to another organization.
@@ -328,7 +329,7 @@ This stage also includes implementing basic hygiene practices. According to the 
 
 A security posture requires instrumentation to create visibility. You'll want to unify your tools and methods into as few views or dashboards as possible for simplification. The first objective in this stage is to visualize your security posture using audience-appropriate dashboards. 
 
-Assuming breach requires us to look for and instrument breach preparedness by implementing and instrumenting continuous monitoring. In this step, document and review the number of portals or views that achieve this function. This internal documentation can be reports that you compile manually or reports from your security tools, like Secure Score, Compliance Manager, Microsoft 365 Defender, Microsoft Defender for Cloud, Microsoft Sentinel, and other tools.
+Assuming breach requires us to look for and instrument breach preparedness by implementing and instrumenting continuous monitoring. In this step, document and review the number of portals or views that achieve this function. This internal documentation can be reports that you compile manually or reports from your security tools, like Secure Score, Compliance Manager, Microsoft Defender XDR, Microsoft Defender for Cloud, Microsoft Sentinel, and other tools.
 
 For example:
 
@@ -353,8 +354,8 @@ The objectives of Stage 4 are about maturing your organization’s ability to pr
 
 | Objectives for Stage 4 | Resources |
 | --- | --- |
-| Continuously educate users| To help Microsoft customers deploy user training quickly, easily, and effectively, use the [Microsoft Cybersecurity Awareness Kit](https://www.microsoft.com/en-us/security/blog/2020/05/13/empowering-remote-workforce-security-training/), developed in partnership with Terranova Security. <br><br> You can use attack simulation training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users. See [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started). <br><br> Also see [Microsoft 365 security tips infographic](/microsoft-365/solutions/infographics-for-users) and [Microsoft Entra end-user rollout templates and materials](https://www.microsoft.com/en-us/download/details.aspx?id=57600). |
-| Evolve your organization’s security operations capability| [Integrating Microsoft 365 Defender into your security operations](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) provides guidance for building and training your Security Operations Center (SOC) team, including how to develop and formalize a process for responding to incidents. <br><br> See the [Microsoft Security Operations library](/security/operations/overview) for guidance on how to respond to incidents and playbooks for responding to specific attack types. |
+| Continuously educate users| To help Microsoft customers deploy user training quickly, easily, and effectively, use the [Microsoft Cybersecurity Awareness Kit](https://www.microsoft.com/en-us/security/blog/2020/05/13/empowering-remote-workforce-security-training/), developed in partnership with Terranova Security. <br><br> You can use attack simulation training in the Microsoft Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users. See [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started). <br><br> Also see [Microsoft 365 security tips infographic](/microsoft-365/solutions/infographics-for-users) and [Microsoft Entra end-user rollout templates and materials](https://www.microsoft.com/en-us/download/details.aspx?id=57600). |
+| Evolve your organization’s security operations capability| [Integrating Microsoft Defender XDR into your security operations](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) provides guidance for building and training your Security Operations Center (SOC) team, including how to develop and formalize a process for responding to incidents. <br><br> See the [Microsoft Security Operations library](/security/operations/overview) for guidance on how to respond to incidents and playbooks for responding to specific attack types. |
 | Continue to manage risk| Develop a systematic way for your organization to evaluate and manage risk on an ongoing basis. Revisit the tabletop exercises or ISO standards to recalibrate where you are and what you have accomplished. |
 
 ## Ready phase
@@ -413,7 +414,7 @@ The following table lists some example metrics.
 
 ### Monitor and detect
 
-As you work through each business scenario, establish how you'll monitor and detect changes to the environment and breaches. Many of the monitoring and detection capabilities are provided through the Extended Detection and Response (XDR) tools, including the suite of Microsoft Defender products and Microsoft Sentinel. These are implemented in the **Prevent or reduce business damage from a breach** business scenario (article is in progress).
+As you work through each business scenario, establish how you'll monitor and detect changes to the environment and breaches. Many of the monitoring and detection capabilities are provided through the Extended Detection and Response (XDR) tools, including the suite of Microsoft Defender XDR products and Microsoft Sentinel. These are implemented in the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario.
 
 ### Iterate for maturity
 
@@ -423,5 +424,6 @@ Implementing Zero Trust is a journey. In enterprise-scale organizations, it can 
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)

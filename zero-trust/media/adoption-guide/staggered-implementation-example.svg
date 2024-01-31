@@ -58,7 +58,7 @@
 		<a xlink:href="https://aka.ms/zero-trust-m365-info-protect">
 			<g id="shape1173-7" v:mID="1173" v:groupContext="shape" transform="translate(214.682,-50.4095)">
 				<title>Rectangle.1173</title>
-				<desc>Integrate SaaS apps with Azure Active Directory (Azure AD) fo...</desc>
+				<desc>Integrate SaaS apps with Entra ID fo...</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
 					<v:ud v:nameU="visNavOrder" v:val="VT0(95000):26"/>
@@ -66,13 +66,13 @@
 				<v:textBlock v:margins="rect(4,4,4,8)"/>
 				<v:textRect cx="142.916" cy="158.25" width="285.84" height="36"/>
 				<rect x="0" y="140.25" width="285.831" height="36" class="st5"/>
-				<text x="21.5" y="154.65" class="st3" v:langID="1033"><v:paragraph v:indentLeft="13.5"/><v:tabList/>Integrate SaaS apps with Azure Active Directory <tspan
-							x="21.5" dy="1.2em" class="st4">(Azure AD) for single sign</tspan>-on</text>			</g>
+				<text x="21.5" y="154.65" class="st3" v:langID="1033"><v:paragraph v:indentLeft="13.5"/><v:tabList/>Integrate SaaS apps with Entra ID <tspan
+							x="21.5" dy="1.2em" class="st4">for single sign</tspan>-on</text>			</g>
 		</a>
 		<a xlink:href="https://aka.ms/zero-trust-m365-info-protect">
 			<g id="shape1174-11" v:mID="1174" v:groupContext="shape" transform="translate(262.531,-7.45663)">
 				<title>Rectangle.1174</title>
-				<desc>Register devices with Azure AD</desc>
+				<desc>Register devices with Entra ID</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
 					<v:ud v:nameU="visNavOrder" v:val="VT0(96000):26"/>
@@ -80,7 +80,7 @@
 				<v:textBlock v:margins="rect(4,4,4,8)"/>
 				<v:textRect cx="142.916" cy="158.25" width="285.84" height="36"/>
 				<rect x="0" y="140.25" width="285.831" height="36" class="st6"/>
-				<text x="21.5" y="161.85" class="st7" v:langID="1033"><v:paragraph v:indentLeft="13.5"/><v:tabList/>Register devices with Azure AD</text>			</g>
+				<text x="21.5" y="161.85" class="st7" v:langID="1033"><v:paragraph v:indentLeft="13.5"/><v:tabList/>Register devices with Entra ID</text>			</g>
 		</a>
 		<g id="shape1179-14" v:mID="1179" v:groupContext="shape" transform="translate(245.739,-8.45703)">
 			<title>Sheet.1179</title>

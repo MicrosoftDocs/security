@@ -1,7 +1,7 @@
 ---
 title: Microsoft DART ransomware case study
 description: Understand how Microsoft's Detection and Response Team (DART) detected and responded to a ransomware attack.
-keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, microsoft 365 defender
+keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, Microsoft Defender XDR
 search.product: DART
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -16,7 +16,6 @@ localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - zerotrust-solution
   - msftsolution-ransomware
 ms.topic: article
 ms.subservice:: m365d
@@ -48,7 +47,7 @@ For this case study, here is the highlighted path that the attacker took.
 
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-path.png" alt-text="The path the ransomware attacker took for this case study." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-path.png":::
 
-The following sections describe additional details based on the MITRE ATT&CK tactics and include examples of how the threat actor activities were detected with the Microsoft 365 Defender portal.
+The following sections describe additional details based on the MITRE ATT&CK tactics and include examples of how the threat actor activities were detected with the Microsoft Defender portal.
 
 ## Initial access
 
@@ -56,9 +55,9 @@ Ransomware campaigns use well-known vulnerabilities for their initial entry, typ
 
 For this incident, DART was able to locate a device that had TCP port 3389 for RDP exposed to the Internet. This allowed threat actors to perform a brute-force authentication attack and gain the initial foothold.
 
-Defender for Endpoint used threat intelligence to determine that there were numerous sign-ins from known brute-force sources and displayed them in the Microsoft 365 Defender portal. Here's an example.
+Defender for Endpoint used threat intelligence to determine that there were numerous sign-ins from known brute-force sources and displayed them in the Microsoft Defender portal. Here's an example.
 
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-brute-force-sign-in.png" alt-text="An example of known brute-force sign-ins in the Microsoft 365 Defender portal.":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-brute-force-sign-in.png" alt-text="An example of known brute-force sign-ins in the Microsoft Defender portal.":::
 
 ## Reconnaissance
 
@@ -68,15 +67,15 @@ The threat actor leveraged Advanced IP Scanner, an IP address scanning tool, to 
 
 This activity was detected in Defender for Endpoint and used as an indicator of compromise (IoC) for further investigation. Here's an example.
 
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-port-scan.png" alt-text="An example of port scanning in the Microsoft 365 Defender portal.":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-port-scan.png" alt-text="An example of port scanning in the Microsoft Defender portal.":::
 
 ## Credential theft
 
 After gaining initial access, the threat actors performed credential harvesting using the Mimikatz password retrieval tool and by searching for files containing “password” on initially compromised systems. These actions enabled the threat actors to access additional systems with legitimate credentials. In many situations, threat actors use these accounts to create additional accounts to maintain persistence after the initial compromised accounts are identified and remediated.  
 
-Here's an example of the detected use of the Mimikatz in the Microsoft 365 Defender portal.
+Here's an example of the detected use of the Mimikatz in the Microsoft Defender portal.
  
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-mimikatz.png" alt-text="An example of Mimikatz detection in the Microsoft 365 Defender portal":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-mimikatz.png" alt-text="An example of Mimikatz detection in the Microsoft Defender portal":::
 
 ## Lateral movement
 
@@ -102,9 +101,9 @@ Persistence techniques include actions by threat actors to maintain consistent a
 
 The threat actors for this incident used the Sticky Keys hack because it allows for remote execution of a binary inside the Windows operating system without authentication. They then used this capability to execute a Command Prompt and perform further attacks. 
 
-Here's an example of the detection of the Sticky Keys hack in the Microsoft 365 Defender portal.
+Here's an example of the detection of the Sticky Keys hack in the Microsoft Defender portal.
 
-:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-detect-sticky-keys.png" alt-text="An example of detecting the Sticky Keys hack in the Microsoft 365 Defender portal.":::
+:::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-detect-sticky-keys.png" alt-text="An example of detecting the Sticky Keys hack in the Microsoft Defender portal.":::
 
 ## Impact
 
@@ -138,7 +137,7 @@ Key information from Microsoft:
 - [Human-operated ransomware](human-operated-ransomware.md)
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
-- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
 - [Microsoft DART ransomware approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach)
 
 Microsoft 365:
@@ -149,9 +148,9 @@ Microsoft 365:
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
-- [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft 365 Defender portal
+- [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender portal
 
-Microsoft 365 Defender:
+Microsoft Defender XDR:
 
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 

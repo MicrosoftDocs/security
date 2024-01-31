@@ -13,7 +13,7 @@ metadata:
   ms.collection: na
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/02/2023 #Required; mm/dd/yyyy format.
+  ms.date: 11/30/2023 #Required; mm/dd/yyyy format.
   
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -45,7 +45,7 @@ landingContent:
       - linkListType: reference
         links:
         - text: Recent Microsoft social media posts about ransomware
-          url:  https://twitter.com/MsftSecIntel/status/1717219375181152764?s=20
+          url:  https://twitter.com/MsftSecIntel/status/1720489111717310697
         - text: Recent Microsoft Security ransomware blog
           url:  https://www.microsoft.com/security/blog/2023/10/25/octo-tempest-crosses-boundaries-to-facilitate-extortion-encryption-and-destruction/
         - text: Hands-on-keyboard (HOK) and pre-HOK attacks
@@ -54,9 +54,11 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/2023/09/26/new-security-features-in-windows-11-protect-users-and-empower-it/
         - text: Remote encryption 
           url:  https://learn.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders?view=o365-worldwide
+        - text: Automatic disruption
+          url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/
         - text: Threat actor highlight - BlackCat
           url:  https://www.microsoft.com/security/blog/2022/06/13/the-many-lives-of-blackcat-ransomware/
-        - text: Insights on ransomware and extortion - Microsoft Digital - Defense Report 2023
+        - text: Insights on ransomware and extortion - Microsoft Digital Defense Report 2023
           url:  https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023
 
 
@@ -113,7 +115,7 @@ landingContent:
            url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
 
 # Card
-  - title: Threat intelligence for Microsoft 365 Defender subscription holders
+  - title: Threat intelligence for Microsoft Defender XDR subscription holders
     linkLists:
       - linkListType: reference
         links:

@@ -69,3 +69,7 @@ The workshop videos (about 4 hours total) and [slides](https://github.com/Micros
 
 > [!NOTE]
 > The previous version of the CISO workshop is archived and available [here](ciso-workshop.md) 
+
+## Next steps
+
+Continue your journey as part of the [Security Adoption Framework](adoption.md).

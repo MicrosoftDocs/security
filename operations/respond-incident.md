@@ -1,8 +1,8 @@
 ---
-title: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender
-description: Learn how to resolve an incident using both Microsoft Sentinel and Microsoft 365 Defender, which includes triage, investigation, and resolution. 
+title: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
+description: Learn how to resolve an incident using both Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. 
 ms.date: 03/29/2023
-ms.service: security
+ms.service: microsoft-365-zero-trust
 author: mjcaparas
 ms.author: macapara
 ms.topic: conceptual
@@ -13,34 +13,34 @@ ms.collection:
   - zerotrust-azure
 ---
 
-# Step 4. Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender
+# Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
 
-This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel and Microsoft 365 Defender, which includes triage, investigation, and resolution. 
-Microsoft Sentinel and Microsoft 365 Defender share:
+This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. 
+Microsoft Sentinel and Microsoft Defender XDR share:
 
 - Updates on lifecycle (status, owner, classification) are shared between the products.
 - Evidence gathered during an investigation is shown in the Microsoft Sentinel incident.
 
 The following diagram shows how Microsoft’s extended detection and response (XDR) solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="./media/sentinel-xdr.svg" alt-text="The Microsoft solution for XRD with Microsoft Sentinel" lightbox="./media/sentinel-xdr.svg":::
+:::image type="content" source="./media/sentinel-xdr.svg" alt-text="The Microsoft solution for XDR with Microsoft Sentinel" lightbox="./media/sentinel-xdr.svg":::
 
 In this diagram:
 
-- Insights from signals across your entire organization feed into Microsoft 365 Defender and Microsoft Defender for Cloud.
-- Microsoft 365 Defender and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors.
+- Insights from signals across your entire organization feed into Microsoft Defender XDR and Microsoft Defender for Cloud.
+- Microsoft Defender XDR and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors.
 - SecOps teams can then analyze and respond to threats.
 - Microsoft Sentinel provides support for multi-cloud environments and integrates with third-party apps and partners.
 
-For more information about the integration of Microsoft Defender with Microsoft Sentinel, see [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration). This [interactive guide](https://mslearn.cloudguides.com/guides/Investigate%20security%20incidents%20in%20a%20hybrid%20environment%20with%20Azure%20Sentinel)
+For more information about the integration of Microsoft Defender with Microsoft Sentinel, see [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration). This [interactive guide](https://mslearn.cloudguides.com/guides/Investigate%20security%20incidents%20in%20a%20hybrid%20environment%20with%20Azure%20Sentinel)
 steps you through detecting and responding to modern attacks with Microsoft’s unified security information and event management (SIEM) and extended detection and response (XDR) capabilities.
 
 ## Incident response process
 
-The process of incident response to resolve an incident using Microsoft Sentinel and Microsoft 365 Defender is:
+The process of incident response to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR is:
 
 1. Use Microsoft Sentinel portal to triage the potential incident, which includes understanding the details of the incident and taking immediate actions.
-1. Move over to the Microsoft 365 Defender portal to begin your investigation. This includes:
+1. Move over to the Microsoft Defender portal to begin your investigation. This includes:
 
    - Understanding the incident and its scope and reviewing asset timelines.
    - Reviewing self-healing pending actions, manually remediating entities, performing live response.
@@ -62,7 +62,7 @@ Within Microsoft Sentinel, you can take advantage of playbooks and automation ru
 
 :::image type="content" source="media/incident-reponse-process.png" alt-text="The four-step incident response process and which portal you need to use.":::
 
-The following sections describe the general incident response process using the Microsoft Sentinel and Microsoft 365 Defender portals.
+The following sections describe the general incident response process using the Microsoft Sentinel and Microsoft Defender portals.
 
 ## Step 1: Triage the incident in the Microsoft Sentinel portal
 
@@ -80,19 +80,19 @@ Use these steps as a general method to triage the incident with Microsoft Sentin
 
 For more information, see [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents).
 
-## Step 2: Investigate the incident in the Microsoft 365 Defender portal
+## Step 2: Investigate the incident in the Microsoft Defender portal
 
-Use these steps as a general method to investigate the incident with Microsoft 365 Defender:
+Use these steps as a general method to investigate the incident with Microsoft Defender XDR:
 
-1. From the **Incident** page of the Microsoft Sentinel portal (Preview), select **Investigate in Microsoft 365 Defender** in the summary pane. 
-1. From the **Attack story** tab in the Microsoft 365 Defender portal, begin your investigation with Microsoft 365 Defender. Consider using the following next steps for your own incident response workflow.
+1. From the **Incident** page of the Microsoft Sentinel portal (Preview), select **Investigate in Microsoft Defender XDR** in the summary pane. 
+1. From the **Attack story** tab in the Microsoft Defender portal, begin your investigation with Microsoft Defender XDR. Consider using the following next steps for your own incident response workflow.
 1. View the attack story of the incident to understand its scope, severity, detection source, and what entities are affected.
 1. Begin analyzing the alerts to understand their origin, scope, and severity with the alert story within the incident.
 1. As needed, gather information on impacted devices, users, and mailboxes with the graph. Click on any entity to open a flyout with all the details.
-1. See how Microsoft 365 Defender has automatically resolved some alerts with the **Investigations** tab.
+1. See how Microsoft Defender XDR has automatically resolved some alerts with the **Investigations** tab.
 1. As needed, use information in the data set for the incident from the **Evidence and Response** tab.
 
-For more information, see [Incident response with Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview).
+For more information, see [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview).
 
 ## Step 3: Continue the investigation in the Microsoft Sentinel portal (as needed)
 
@@ -148,13 +148,13 @@ When your investigation has reached its conclusion and you have remediated the i
 
     :::image type="content" source="media/example-resolving-incident.png" alt-text="Example of resolving an incident in the Microsoft Sentinel portal.":::
 
-1. Select **Apply** to resolve the incident. Once you close the incident in Microsoft Sentinel, it will synchronize the incident status to Microsoft 365 Defender and Microsoft Defender for Cloud.
+1. Select **Apply** to resolve the incident. Once you close the incident in Microsoft Sentinel, it will synchronize the incident status to Microsoft Defender XDR and Microsoft Defender for Cloud.
 
 1. As needed, report the incident to your incident response lead for possible follow-up to determine additional actions, such as:
 
    - Inform your Tier 1 security analysts to better detect the attack early.
    - Create an orchestration playbook to automate and orchestrate your threat response for a similar. For more information, see [Automate threat response with playbooks in Microsoft Sentinel](/azure/sentinel/automate-responses-with-playbooks).
-   - Research the attack in Microsoft 365 Defender Threat Analytics and the security community for a security attack trend.
+   - Research the attack in Microsoft Defender XDR Threat Analytics and the security community for a security attack trend.
    - As needed, record the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks.
    - Determine whether changes in your security configuration are needed and implement them.
 
@@ -188,7 +188,7 @@ The following are the recommended training modules for this step.
 
 ## Next steps
 
-- See [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents) and [Incident response with Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview) for more details about incident response processes within the Microsoft Sentinel and Microsoft 365 Defender portals.
+- See [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents) and [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) for more details about incident response processes within the Microsoft Sentinel and Microsoft Defender portals.
 - See [Incident response overview](/security/compass/incident-response-overview) for Microsoft security best practices.
 - See [Incident response playbooks](/security/compass/incident-response-playbooks) for workflows and checklists to respond to common cyberattacks.
 
@@ -196,16 +196,16 @@ The following are the recommended training modules for this step.
 
 Use these resources to learn about the various services and technologies mentioned in this article:
 
-- [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)
+- [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration)
 - [Unified SIEM and XDR capabilities interactive guide](https://mslearn.cloudguides.com/guides/Investigate%20security%20incidents%20in%20a%20hybrid%20environment%20with%20Azure%20Sentinel)
 - [Automate threat response with playbooks in Microsoft Sentinel](/azure/sentinel/automate-responses-with-playbooks)
 - [Automate threat response with playbooks](/azure/sentinel/automate-responses-with-playbooks)
 - [Automate threat response in Microsoft Sentinel with automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules)
-- [Microsoft 365 Defender Threat Analytics](/microsoft-365/security/defender/threat-analytics)
+- [Microsoft Defender XDR Threat Analytics](/microsoft-365/security/defender/threat-analytics)
 
 Use these resources to learn more about incident response:
 
 - [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents)
-- [Incident response with Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview)
+- [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview)
 - [Incident response overview](/security/compass/incident-response-overview)
 - [Incident response playbooks](/security/compass/incident-response-playbooks)

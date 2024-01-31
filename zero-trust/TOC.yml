@@ -11,6 +11,17 @@
       href: adopt/rapidly-modernize-security-posture.md
     - name: Secure remote and hybrid work
       href: adopt/secure-remote-hybrid-work.md
+    - name: Prevent or reduce business damage from a breach
+      items:
+        - name: Overview
+          href: adopt/prevent-reduce-business-damage-breach.md
+          maintainContext: true
+        - name: Implement security breach prevention and recovery infrastructure
+          href: adopt/prevent-reduce-business-damage-breach-infrastructure.md
+          maintainContext: true
+        - name: Implement threat protection and XDR
+          href: adopt/prevent-reduce-business-damage-breach-threat-protection.md
+          maintainContext: true
     - name: Identify and protect sensitive business data
       href: adopt/identify-protect-sensitive-business-data.md
     - name: Meet regulatory and compliance requirements
@@ -138,7 +149,7 @@
       - name: Step 7. Implement data loss prevention (DLP) with information protection capabilities
         href: /microsoft-365/solutions/manage-devices-with-intune-dlp-mip?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
         maintainContext: true
-    - name: Evaluate, pilot, and deploy Microsoft 365 Defender
+    - name: Evaluate, pilot, and deploy Microsoft Defender XDR
       items: 
         - name: Overview
           href: /microsoft-365/security/defender/eval-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
@@ -246,6 +257,8 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
+- name: Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
+  href: zero-trust-microsoft-365-copilot.md
 - name: Zero Trust deployment plans with Microsoft Azure
   expanded: false
   items: 
@@ -276,7 +289,7 @@
     - name: Use SIEM and XDR to respond to incidents
       expanded: false
       items:
-      - name: Implement Microsoft Sentinel and Microsoft 365 Defender for Zero trust
+      - name: Implement Microsoft Sentinel and Microsoft Defender XDR for Zero trust
         href: /security/operations/siem-xdr-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 1. Set up XDR tools
         href: /security/operations/setup-xdr-tools?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
@@ -284,7 +297,7 @@
         href: /security/operations/siem-workspace?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 3. Ingest data sources and configure incident detection
         href: /security/operations/ingest-data-sources?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-      - name: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft 365 Defender
+      - name: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
         href: /security/operations/respond-incident?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
 - name: Technology partner integrations
   expanded: false

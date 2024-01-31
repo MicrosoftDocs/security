@@ -1,7 +1,7 @@
 ---
 title: Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
 description: Learn how to secure Microsoft Copilot for Microsoft 365 with Zero Trust principles. 
-ms.date: 11/01/2023
+ms.date: 01/31/2024
 ms.service: security
 author: bcarter
 ms.author: bcarter

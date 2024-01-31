@@ -320,7 +320,7 @@ A typical containment strategy involves the disabling of sign-ins to the applica
 
 :::image type="content" source="./media/compromised-malicious-apps/DisabledAppExample.png" alt-text="Toggle to disable users to sign-in":::
 
-You can also use the following PowerShell code to disable the sign-in to the app:
+You can also use the following [Microsoft Graph PowerShell](/powershell/microsoftgraph) code to disable the sign-in to the app:
 
 ```powershell
 # The AppId of the app to be disabled
@@ -328,12 +328,25 @@ $appId = "{AppId}"
 
 # Check if a service principal already exists for the app
 $servicePrincipal = Get-MgServicePrincipal -Filter "appId eq '$appId'"
+
 if ($servicePrincipal) {
    # Service principal exists already, disable it
-   Update-MgServicePrincipal -ObjectId $servicePrincipal.ObjectId -AccountEnabled $false
+
+  $ServicePrincipalUpdate =@{
+    "accountEnabled" = "false"
+  }
+   Update-MgServicePrincipal -ServicePrincipalId $servicePrincipal.Id -BodyParameter $ServicePrincipalUpdate
+   
 } else {
    # Service principal does not yet exist, create it and disable it at the same time
-   $servicePrincipal = New-MgServicePrincipal -AppId $appId -AccountEnabled $false
+   
+   $ServicePrincipalID=@{
+	"AppId" = $appId
+	"accountEnabled" = "false"
+   }
+   
+   $servicePrincipal = New-MgServicePrincipal -BodyParameter $ServicePrincipalId
+   
 }
 ```
 

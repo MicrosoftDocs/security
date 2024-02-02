@@ -55,15 +55,15 @@ landingContent:
       - linkListType: overview
         links:
           - text: Program overview
-            url: ../GSP/ProgramOverview.md
+            url: ProgramOverview.md
           - text: Transparency centers
-            url: ../GSP/ContentTransparencyCenters.md
+            url: ContentTransparencyCenters.md
           - text: Information sharing and exchange
-            url: ../GSP/informationsharingandexchange.md
+            url: informationsharingandexchange.md
           - text: Online access to source code
-            url: ../GSP/onlinesources.md
+            url: onlinesources.md
           - text: Access to technical information
-            url: ../GSP/technicaldata.md
+            url: technicaldata.md
 
   # Card
   - title: Develop secure apps using Microsoft's SDL
@@ -71,9 +71,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Create a security process
-            url: ../SDL/Security-Bug-Bar-Sample.md
+            url: Security-Bug-Bar-Sample.md
           - text: Cryptographic recommendations
-            url: ../SDL/Cryptographic-Recommendations.md
+            url: Cryptographic-Recommendations.md
           - text: Threat Modeling with DevOps
             url: threat-modeling-with-dev-ops.md
 
@@ -83,4 +83,4 @@ landingContent:
       - linkListType: overview
         links:
           - text: Strategy brief
-            url: ../MSRC/FY18-Strategy-Brief.md
+            url: FY18-Strategy-Brief.md

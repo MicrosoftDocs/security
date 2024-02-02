@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Note:** This sample document is for illustration purposes only. The content presented below outlines basic criteria to consider when creating security processes. It is not an exhaustive list of activities or criteria and should not be treated as such.
 
-Please refer to the [definitions of terms](#Definition_of_Terms) in this section.
+Please refer to the [definitions of terms](#definition-of-terms) in this section.
 
 ## Server
 

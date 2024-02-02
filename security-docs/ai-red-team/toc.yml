@@ -2,6 +2,7 @@ items:
 - name: AI Red Team
   href: index.yml
 - name: Overview
+  expanded: true
   items:
   - name: What is AI red teaming?
     href: overview.md

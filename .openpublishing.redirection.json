@@ -139,9 +139,54 @@
          "redirect_document_id": false
       },
       {
-         "source_path": "security-docs/compass/security-operations-capabilities.md",
-         "redirect_url": "/security/operations/security-operations",
+         "source_path": "security-docs/compass/security-operations.md",
+         "redirect_url": "/security/operations/overview",
          "redirect_document_id": false
+      },
+      {
+         "source_path": "security-docs/SDL/Cryptographic-Recommendations.md",
+         "redirect_url": "/security/engineering/Cryptographic-Recommendations",
+         "redirect_document_id": true
+      },
+      {
+         "source_path": "security-docs/SDL/Security-Bug-Bar-sample.md",
+         "redirect_url": "/security/engineering/Security-Bug-Bar-sample",
+         "redirect_document_id": true
+      },
+      {
+         "source_path": "security-docs/GSP/ContentTransparencyCenters.md",
+         "redirect_url": "/security/engineering/ContentTransparencyCenters",
+         "redirect_document_id": true
+      },
+      {
+         "source_path": "security-docs/GSP/InformationSharingAndExchange.md",
+         "redirect_url": "/security/engineering/InformationSharingAndExchange",
+         "redirect_document_id": true
+      },
+      {
+         "source_path": "security-docs/GSP/OnlineSources.md",
+         "redirect_url": "/security/engineering/OnlineSources",
+         "redirect_document_id": true
+      },
+      {
+         "source_path": "security-docs/GSP/ProgramOverview.md",
+         "redirect_url": "/security/engineering/ProgramOverview",
+         "redirect_document_id": true
+      },
+      {
+         "source_path": "security-docs/GSP/TechnicalData.md",
+         "redirect_url": "/security/engineering/TechnicalData",
+         "redirect_document_id": true
+      },
+      {
+         "source_path": "security-docs/MSRC/FY18-Strategy-Brief.md",
+         "redirect_url": "/security/engineering/FY18-Strategy-Brief",
+         "redirect_document_id": true
+      },
+      {
+         "source_path": "security-docs/Identifying-Security-Bug-Reports.md",
+         "redirect_url": "/security/engineering/Identifying-Security-Bug-Reports",
+         "redirect_document_id": true
       },
       {
          "source_path": "security-docs/compass/security-operations-videos-and-decks.md",

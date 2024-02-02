@@ -15,144 +15,241 @@ ms.topic: conceptual
 
 Please refer to the [definitions of terms](#Definition_of_Terms) in this section.
 
-## On This Page
-[Server](#Server)  
-[Client](#Client)  
-[Definitions of Terms](#Definition_of_Terms)
-
-Please refer to the [Denial of Service Matrix](#denial-of-service-server-matrix) for a complete matrix of server DoS scenarios.
-
-The server bar is usually not appropriate when user interaction is part of the exploitation process. If a Critical vulnerability exists only on server products, and is exploited in a way that requires user interaction and results in the compromise of the server, the severity may be reduced from Critical to Important in accordance with the NEAT/data definition of extensive user interaction presented at the start of the client severity pivot.
-
 ## Server
 
-:::row:::
-   :::column span="":::
-      Critical
-   :::column-end:::
-   :::column span="2":::
-      Server summary: Network worms or unavoidable cases where the server is “owned.”
+<table>
+<thead>
+<tr class="header" colspan="2">
+<th><p><span id="Server" class="anchor"></span>Server<br /></th>
+<p>Please refer to the <a href="#denial-of-service-server-matrix">Denial of Service Matrix</a> for a complete matrix of server DoS scenarios.</p>
+<p>The server bar is usually not appropriate when user interaction is part of the exploitation process. If a Critical vulnerability exists only on server products, and is exploited in a way that requires user interaction and results in the compromise of the server, the severity may be reduced from Critical to Important in accordance with the NEAT/data definition of extensive user interaction presented at the start of the client severity pivot.</p>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Critical</td>
+<td><p>Server summary: Network worms or <em>unavoidable</em> cases where the server is “owned.”</p>
+<ul>
+<li><p>Elevation of privilege: The ability to either execute arbitrary code <em>or</em> obtain more privilege than authorized</p>
+<ul>
+<li><p>Remote anonymous user</p>
+<ul>
+<li><p>Examples:</p>
+<ul>
+<li><p>Unauthorized file system access: arbitrary writing to the file system</p></li>
+<li><p>Execution of arbitrary code</p></li>
+<li><p>SQL injection (that allows code execution)</p></li>
+</ul></li>
+</ul></li>
+<li><p>All write access violations (AV), exploitable read AVs, or integer overflows in remote anonymously callable code</p></li>
+</ul></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Important</td>
+<td><p>Server summary: Non-default critical scenarios or cases where mitigations exist that can help <em>prevent</em> critical scenarios.</p>
+<ul>
+<li><p>Denial of service: Must be &quot;easy to exploit&quot; by sending a small amount of data or be otherwise quickly induced</p>
+<ul>
+<li><p> Anonymous</p>
+<ul>
+<li><p>Persistent DoS</p>
+<ul>
+<li><p>Examples:</p>
+<ul>
+<li><p>Sending a single malicious TCP packet results in a Blue Screen of Death (BSoD)</p></li>
+<li><p>Sending a small number of packets that causes a service failure</p></li>
+</ul></li>
+</ul></li>
+<li><p>Temporary DoS with amplification</p>
+<ul>
+<li><p>Examples:</p>
+<ul>
+<li><p>Sending a small number of packets that causes the system to be unusable for a period of time</p></li>
+<li><p>A web server (like IIS) being down for a minute or longer</p></li>
+<li><p>A <em>single remote client</em> consuming all available resources (sessions, memory) on a server by establishing sessions and keeping them open</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Authenticated</p>
+<ul>
+<li><p>Persistent DoS <em><strong>against a high value asset</strong></em></p>
+<ul>
+<li><p>Example:</p>
+<ul>
+<li><p>Sending a small number of packets that causes a service failure for a <em><strong>high value asset</strong></em> in server roles (certificate server, Kerberos server, domain controller), such as when a domain-authenticated user can perform a DoS on a domain controller</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<ul>
+<li><p>Elevation of privilege: The ability to either execute arbitrary code <em>or</em> to obtain more privilege than intended</p>
+<ul>
+<li><p>Remote authenticated user</p></li>
+<li><p>Local authenticated user (Terminal Server)</p>
+<ul>
+<li><p>Examples:</p>
+<ul>
+<li><p>Unauthorized file system access: arbitrary writing to the file system</p></li>
+<li><p>Execution of arbitrary code</p></li>
+</ul></li>
+</ul></li>
+<li><p>All write AVs, exploitable read AVs, or integer overflows in code that can be accessed by remote or local authenticated users that are not administrators (Administrator scenarios do not have security concerns by definition, but are still reliability issues.)</p></li>
+</ul></li>
+<li><p>Information disclosure (targeted)</p>
+<ul>
+<li><p>Cases where the attacker can locate and read information <em>from anywhere</em> on the system, including system information that was not intended or designed to be exposed</p>
+<ul>
+<li><p>Examples:</p>
+<ul>
+<li><p>Personally identifiable information (PII) disclosure</p>
+<ul>
+<li><p>Disclosure of PII (email addresses, phone numbers, credit card information)</p></li>
+<li><p>Attacker can collect PII without user consent or in a covert fashion</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Spoofing</p>
+<ul>
+<li><p>An entity (computer, server, user, process) is able to masquerade <em><strong>as a</strong></em> <strong>specific entity</strong> (user or computer) of his/her choice.</p>
+<ul>
+<li><p>Examples:</p>
+<ul>
+<li><p>Web server uses client certificate authentication (SSL) improperly to allow an attacker to be identified as any user of his/her choice</p></li>
+<li><p>New protocol is designed to provide remote client authentication, but flaw exists in the protocol that allows a malicious remote user to be seen as a different user of his or her choice</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Tampering</p>
+<ul>
+<li><p>Modification of any <em><strong>“high value asset”</strong></em> data in <em><strong>a common or default scenario</strong></em> where the modification persists after restarting the affected software</p></li>
+<li><p>Permanent or persistent modification of any user or system data used <em><strong>in a common or default scenario</strong></em></p>
+<ul>
+<li><p>Examples:</p>
+<ul>
+<li><p>Modification of application data files or databases in a common or default scenario, such as authenticated SQL injection</p></li>
+<li><p>Proxy cache poisoning in a common or default scenario</p></li>
+<li><p>Modification of OS or application settings without user consent in a common or default scenario</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Security features: Breaking or bypassing any security feature provided.<br />
+Note that a vulnerability in a security feature is rated “Important” by default, but the rating may be adjusted based on other considerations as documented in the SDL bug bar.</p>
+<ul>
+<li><p>Examples:</p>
+<ul>
+<li><p>Disabling or bypassing a firewall without informing users or gaining consent</p></li>
+<li><p>Reconfiguring a firewall and allowing connections to other processes</p></li>
+</ul></li>
+</ul></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Moderate</td>
+<td><ul>
+<li><p>Denial of service</p>
+<ul>
+<li><p>Anonymous</p>
+<ul>
+<li><p>Temporary DoS without amplification in a default/common install.</p>
+<ul>
+<li><p>Example:</p>
+<ul>
+<li><p><em><strong>Multiple remote clients</strong></em> consuming all available resources (sessions, memory) on a server by establishing sessions and keeping them open</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Authenticated</p>
+<ul>
+<li><p>Persistent DoS</p>
+<ul>
+<li><p>Example:</p>
+<ul>
+<li><p>Logged in Exchange user can send a specific mail message and crash the Exchange Server, and the crash is <strong>not</strong> due to a write AV, exploitable read AV, or integer overflow</p></li>
+</ul></li>
+</ul></li>
+<li><p>Temporary DoS with amplification in a default/common install</p>
+<ul>
+<li><p>Example:</p>
+<ul>
+<li><p>Ordinary SQL Server user executes a stored procedure installed by some product and consumes 100% of the CPU for a few minutes</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Information disclosure (targeted)</p>
+<ul>
+<li><p>Cases where the attacker can easily read information on the system <em>from <strong>specific locations</strong></em>, including system information, which was not intended/ designed to be exposed.</p>
+<ul>
+<li><p>Example:</p>
+<ul>
+<li><p>Targeted disclosure of anonymous data</p></li>
+<li><p>Targeted disclosure of the existence of a file</p></li>
+<li><p>Targeted disclosure of a file version number</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Spoofing</p>
+<ul>
+<li><p>An entity (computer, server, user, process) is able to masquerade as a different, random entity that cannot be specifically selected.</p>
+<ul>
+<li><p>Example:</p>
+<ul>
+<li><p>Client properly authenticates to server, but server hands back a session from another random user who happens to be connected to the server at the same time</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Tampering</p>
+<ul>
+<li><p>Permanent or persistent modification of any user or system data <em><strong>in a specific scenario</strong></em></p>
+<ul>
+<li><p>Examples:</p>
+<ul>
+<li><p>Modification of application data files or databases <em><strong>in a specific scenario</strong></em></p></li>
+<li><p>Proxy cache poisoning <em><strong>in a specific scenario</strong></em></p></li>
+<li><p>Modification of OS/application settings without user consent <em><strong>in a specific scenario</strong></em></p></li>
+</ul></li>
+</ul></li>
+<li><p>Temporary modification of data in a common or default scenario that does not persist after restarting the OS/application-/session</p></li>
+</ul></li>
+<li><p>Security assurances:</p>
+<ul>
+<li><p>A security assurance is either a security feature or another product feature/function that customers expect to offer security protection. Communications have messaged (explicitly or implicitly) that customers can rely on the integrity of the feature, and that’s what makes it a security assurance. Security bulletins will be released for a shortcoming in a security assurance that undermines the customer’s reliance or trust.</p>
+<ul>
+<li><p>Examples:</p>
+<ul>
+<li><p>Processes running with normal “user” privileges cannot gain “admin” privileges unless admin password/credentials have been provided via intentionally authorized methods.</p></li>
+<li><p>Internet-based JavaScript running in Internet Explorer cannot control anything the host operating system unless the user has explicitly changed the default security settings.</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Low</td>
+<td><ul>
+<li><p>Information disclosure (untargeted)</p>
+<ul>
+<li><p>Runtime information</p>
+<ul>
+<li><p>Example:</p>
+<ul>
+<li><p>Leak of random heap memory</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Tampering</p>
+<ul>
+<li><p>Temporary modification of data <em>in a specific scenario</em> that does not persist after restarting the OS/application</p></li>
+</ul></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-      - Elevation of privilege: The ability to either execute arbitrary code or obtain more privilege than authorized
-         - Remote anonymous user
-            - Examples:
-               - Unauthorized file system access: arbitrary writing to the file system
-               - Execution of arbitrary code
-               - SQL injection (that allows code execution)
-         - All write access violations (AV), exploitable read AVs, or integer overflows in remote anonymously callable code
-
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Important
-   :::column-end:::
-   :::column span="2":::
-      Server summary: Non-default critical scenarios or cases where mitigations exist that can help prevent critical scenarios.
-
-      - Denial of service: Must be "easy to exploit" by sending a small amount of data or be otherwise quickly induced
-         - Anonymous
-            - Persistent DoS
-               - Examples:
-                  - Sending a single malicious TCP packet results in a Blue Screen of Death (BSoD)
-                  - Sending a small number of packets that causes a service failure
-            - Temporary DoS with amplification
-               - Examples:
-                  - Sending a small number of packets that causes the system to be unusable for a period of time
-                  - A web server (like IIS) being down for a minute or longer
-                  - A single remote client consuming all available resources (sessions, memory) on a server by establishing sessions and keeping them open
-         - Authenticated
-            - Persistent DoS **against a high value asset**
-               - Example:
-                  - Sending a small number of packets that causes a service failure for a high value asset in server roles (certificate server, Kerberos server, domain controller), such as when a domain-authenticated user can perform a DoS on a domain controller
-      - Elevation of privilege: The ability to either execute arbitrary code or to obtain more privilege than intended
-         - Remote authenticated user
-         - Local authenticated user (Terminal Server)
-            - Examples:
-               - Unauthorized file system access: arbitrary writing to the file system
-               - Execution of arbitrary code
-         - All write AVs, exploitable read AVs, or integer overflows in code that can be accessed by remote or local authenticated users that are not administrators (Administrator scenarios do not have security concerns by definition, but are still reliability issues.)
-      - Information disclosure (targeted)
-         - Cases where the attacker can locate and read information from anywhere on the system, including system information that was not intended or designed to be exposed
-            - Examples:
-               - Personally identifiable information (PII) disclosure
-                  - Disclosure of PII (email addresses, phone numbers, credit card information)
-                  - Attacker can collect PII without user consent or in a covert fashion
-      - Spoofing
-         - An entity (computer, server, user, process) is able to masquerade as a specific entity (user or computer) of his/her choice.
-            - Examples:
-               - Web server uses client certificate authentication (SSL) improperly to allow an attacker to be identified as any user of his/her choice
-               - New protocol is designed to provide remote client authentication, but flaw exists in the protocol that allows a malicious remote user to be seen as a different user of his or her choice
-      - Tampering
-         - Modification of any “high value asset” data in a common or default scenario where the modification persists after restarting the affected software
-         - Permanent or persistent modification of any user or system data used in a common or default scenario
-            - Examples:
-               - Modification of application data files or databases in a common or default scenario, such as authenticated SQL injection
-               - Proxy cache poisoning in a common or default scenario
-               - Modification of OS or application settings without user consent in a common or default scenario
-      - Security features: Breaking or bypassing any security feature provided.
-         > [!NOTE]
-         > A vulnerability in a security feature is rated “Important” by default, but the rating may be adjusted based on other considerations as documented in the SDL bug bar.
-         - Examples:
-            - Disabling or bypassing a firewall without informing users or gaining consent
-            - Reconfiguring a firewall and allowing connections to other processes
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Moderate
-   :::column-end:::
-   :::column span="2":::
-      - Denial of service
-         - Anonymous
-            - Temporary DoS without amplification in a default/common install.
-               - Example:
-                  - Multiple remote clients consuming all available resources (sessions, memory) on a server by establishing sessions and keeping them open
-         - Authenticated
-            - Persistent DoS
-               - Example:
-                  - Logged in Exchange user can send a specific mail message and crash the Exchange Server, and the crash is not due to a write AV, exploitable read AV, or integer overflow
-            - Temporary DoS with amplification in a default/common install
-               - Example:
-                  - Ordinary SQL Server user executes a stored procedure installed by some product and consumes 100% of the CPU for a few minutes
-      - Information disclosure (targeted)
-         - Cases where the attacker can easily read information on the system from specific locations, including system information, which was not intended/ designed to be exposed.
-            - Example:
-               - Targeted disclosure of anonymous data
-               - Targeted disclosure of the existence of a file
-               - Targeted disclosure of a file version number
-      - Spoofing
-         - An entity (computer, server, user, process) is able to masquerade as a different, random entity that cannot be specifically selected.
-            - Example:
-               - Client properly authenticates to server, but server hands back a session from another random user who happens to be connected to the server at the same time
-      - Tampering
-         - Permanent or persistent modification of any user or system data in a specific scenario
-            - Examples:
-               - Modification of application data files or databases in a specific scenario
-               - Proxy cache poisoning in a specific scenario
-               - Modification of OS/application settings without user consent in a specific scenario
-         - Temporary modification of data in a common or default scenario that does not persist after restarting the OS/application-/session
-      - Security assurances:
-         - A security assurance is either a security feature or another product feature/function that customers expect to offer security protection. Communications have messaged (explicitly or implicitly) that customers can rely on the integrity of the feature, and that’s what makes it a security assurance. Security bulletins will be released for a shortcoming in a security assurance that undermines the customer’s reliance or trust.
-            - Examples:
-               - Processes running with normal “user” privileges cannot gain “admin” privileges unless admin password/credentials have been provided via intentionally authorized methods.
-               - Internet-based JavaScript running in Internet Explorer cannot control anything the host operating system unless the user has explicitly changed the default security settings.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Low
-   :::column-end:::
-   :::column span="2":::
-      - Information disclosure (untargeted)
-         - Runtime information
-            - Example:
-               - Leak of random heap memory
-      - Tampering
-         - Temporary modification of data in a specific scenario that does not persist after restarting the OS/application
-   :::column-end:::
-:::row-end:::
-
+## Client
 
 <table>
 <thead>
@@ -365,8 +462,9 @@ Extensive user action is defined as:</p>
 </tbody>
 </table>
 
-<span id="Definition_of_Terms" class="anchor"></span>
+
 ## Definition of Terms  
+
 **authenticated**  
 Any attack which has to include authenticating by the network. This
 implies that logging of some type must be able to occur so that the

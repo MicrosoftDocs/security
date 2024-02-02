@@ -1,0 +1,75 @@
+### YamlMime:Landing
+
+title: AI Red Team
+summary: Learn how to 
+
+metadata:
+  title: AI Red Team
+  description: Learn how to 
+  ms.service: security
+  ms.subservice: 
+  ms.topic: landing-page
+  author: 
+  ms.author: 
+  ms.date: 02/02/2024
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: About AI Red Team
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is AI Red teaming?
+            url: overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: Guide for building AI Red Teams for LLMs
+            url: /azure/ai-services/openai/concepts/red-teaming?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+      - linkListType: reference
+        links:
+          - text: Responsible AI Standard and Impact Assessment
+            url: https://www.microsoft.com/ai/responsible-ai
+
+  # Card
+  - title: Getting ready
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: The PyRIT Framework Blog (ready but not yet published)
+            url: overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: PyRIT How to Guide (ready but not yet published)
+            url: overview.md
+      - linkListType: reference
+        links:
+          - text: AI Risk Assessment for ML Engineers
+            url: ai-risk-assessment.md
+
+  # Card
+  - title: Understanding Threats
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Developer threat modeling guidance for ML systems
+            url: /security/engineering/threat-modeling-aiml?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+      - linkListType: concept
+        links:
+          - text: Taxonomy for machine learning failure
+            url: /security/engineering/failure-modes-in-machine-learning?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+      - linkListType: reference
+        links:
+          - text: Bug Bar to triage attacks on ML systems
+            url: /security/engineering/Bug-Bar-aiml?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+
+  # Card
+  - title: Exploring secure solutions
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Plan a Conditional Access deployment
+            url: /azure/machine-learning/concept-enterprise-security?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json

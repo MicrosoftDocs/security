@@ -1,0 +1,51 @@
+items:
+- name: AI Red Team
+  href: index.yml
+- name: Overview
+  items:
+  - name: What is AI red teaming?
+    href: overview.md
+  - name: The PyRIT framework blog
+    href: overview.md
+- name: Concept
+  expanded: false
+  items:
+  - name: Taxonomy for machine learning failure
+    href: /security/engineering/failure-modes-in-machine-learning?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+- name: How to
+  expanded: false
+  items:
+  - name: Guide for building AI red teams for LLMs
+    href: /azure/ai-services/openai/concepts/red-teaming?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+  - name: PyRIT how to guide
+    href: /azure/ai-services/openai/concepts/red-teaming?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+  - name: Developer threat modeling guidance for ML systems
+    href: /security/engineering/threat-modeling-aiml?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+- name: Reference
+  expanded: false
+  items:
+  - name: Responsible AI standard and impact assessment
+    href: https://www.microsoft.com/ai/responsible-ai
+  - name: AI risk assessment for ML engineers
+    href: ai-risk-assessment.md
+  - name: Bug bar to triage attacks on ML systems
+    href: /security/engineering/Bug-Bar-aiml?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+  - name: Azure Machine Learning customers guidance on enterprise security and governance
+    href: /azure/machine-learning/concept-enterprise-security?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+
+
+
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+ 

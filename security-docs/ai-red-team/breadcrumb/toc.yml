@@ -1,0 +1,14 @@
+items:
+- name: Security
+  tocHref: /security/
+  topicHref: /security/index
+  items:
+  - name: AI Red Team
+    tocHref: /azure/ai-services/openai/concepts/
+    topicHref: /security/ai-red-team/
+  - name: AI Red Team
+    tocHref: /security/engineering/
+    topicHref: /security/ai-red-team/
+  - name: AI Red Team
+    tocHref: /azure/machine-learning/
+    topicHref: /security/ai-red-team/

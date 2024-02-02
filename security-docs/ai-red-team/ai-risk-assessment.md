@@ -32,24 +32,19 @@ We suggest using this document to start the discussion around securing AI system
 
 We cover the following areas specifically related to AI systems.
 
-Administrative controls
-**Machine learning security policies**
-Controls and policies relating to the documented policies that govern machine learning, artificial intelligence, and information security. 
-Technical controls
-**Data collection**
-Controls and policies related to the collection, storage, and classification of data that are used for machine learning and artificial intelligence. 
-**Data processing**
-Controls and policies relating to the processing and engineering of data used for machine learning and artificial intelligence. 
-**Model training**
-Controls and policies relating to the design, training, and validation of models. 
-**Model deployment**
-Controls and policies relating to the deployment of models and supporting infrastructure. 
-**System monitoring**
-Controls and policies relating to the ongoing monitoring of machine learning systems. 
-**Incident management**
-Controls and policies relating to how incidents related to AI system are handled.
-**Business continuity and disaster recovery**
-Controls and policies relating to loss of intellectual property through model stealing, degradation of service, or other AI specific vulnerabilities.
+| Administrative controls | |
+| --- | --- |
+| **Machine learning security policies** | Controls and policies relating to the documented policies that govern machine learning, artificial intelligence, and information security. |
+
+| Technical controls | |
+| --- | --- |
+| **Data collection** | Controls and policies related to the collection, storage, and classification of data that are used for machine learning and artificial intelligence. |
+| **Data processing** | Controls and policies relating to the processing and engineering of data used for machine learning and artificial intelligence. |
+| **Model training** | Controls and policies relating to the design, training, and validation of models. |
+| **Model deployment** | Controls and policies relating to the deployment of models and supporting infrastructure. |
+| **System monitoring** | Controls and policies relating to the ongoing monitoring of machine learning systems. |
+| **Incident management** | Controls and policies relating to how incidents related to AI system are handled.|
+| **Business continuity and disaster recovery** | Controls and policies relating to loss of intellectual property through model stealing, degradation of service, or other AI specific vulnerabilities.|
 
 We adapted the existing framework of controls and policies from the popular ISO27001:2013 standard [1] and mapped it across the AI system building process – from data collection phase to responding to threats to AI systems. Organizations may have some or all existing controls implemented from ISO27001:2013 or already be in compliance with several risk frameworks (NIST 800-53 [2], PCI-DSS [3], FedRamp [4], etc) as part of existing information security efforts. 
 
@@ -65,29 +60,37 @@ Not all controls will be of critical importance to the security of an AI system.
 
 ### Severity
 
-The severity of a compromise is going to depend on the AI model use case. Fortunately, if the data or systems being used were of critical concern prior to machine learning being integrated, it should remain the same. Similarly, if the model used is “off-the-shelf” with no additional input, depending on the context the model is used in, the severity of a compromise is likely lower. Techniques like differential privacy can reduce the potential impact of a compromise. However, this would not reduce the criticality of the system, the data, or the model. We recommend that models be protected using a defense-in-depth strategy rather than relying on any one 
-defensive implementation.
+The severity of a compromise is going to depend on the AI model use case. Fortunately, if the data or systems being used were of critical concern prior to machine learning being integrated, it should remain the same. Similarly, if the model used is “off-the-shelf” with no additional input, depending on the context the model is used in, the severity of a compromise is likely lower. Techniques like differential privacy can reduce the potential impact of a compromise. However, this would not reduce the criticality of the system, the data, or the model. We recommend that models be protected using a defense-in-depth strategy rather than relying on any one defensive implementation.
 
 #### Suggested severity level 
 
-Suggested as critical
+**Suggested as critical**
+
 - If the AI model is trained on, or ingests sensitive personal data, classified data, or data governed by compliance requirements such as PCI, HIPAA, GLBA, etc.
 - If the AI model is used in a business-critical application or system such that compromise would have a large negative impact of business operations
 - If the AI model is used in applications where physical or harm or death is a possible outcome
 - If the AI model is used in a system that supports critical infrastructure (e.g. water, power, health)
-Suggested as high
+
+**Suggested as high**
+
 - If the AI model is trained on or ingests sensitive personal data, confidential information, or data that is otherwise considered critical by the organization
 - If compromise of this AI model would have large but scoped impact on business operations
 - If the AI model is used in business-critical applications or systems
-Suggested as medium 
+
+**Suggested as medium**
+
 - If the AI model is trained on a subset of training data that contains sensitive data types
 - If compromise of this AI model would have implications for models deployed in production
 - If the AI model is used in non-critical but business facing applications
 - If the AI model is not used in production but has information regarding production models
-Suggested as low
+
+**Suggested as low**
+
 - If the AI model is trained on data that is not used in production
 - If the AI model is not used in production, and does not have information regarding production models
-Suggested as informational
+
+**Suggested as informational**
+
 - If the data is unclassified from a vetted source
 - If the AI model isn’t used in production
 
@@ -131,27 +134,81 @@ The rest of the document follows this structure:
 
 Below is a control pulled from the AI systems risk assessment, notes have been added to describe each part of a risk categories structure. 
 
-Example control How to read it
-1. Data collection Primary category
-Controls and policies relating to the collection and storage of data from all sources that are used for machine learning and artificial intelligence.
-Describes what controls in this category will cover at a high level.
-2. Data sources Control category
-**Objective**: To ensure the integrity of data collected that is used for trained models.
-Should describe the risk being mitigated with the controls.
+:::row:::
+   :::column span="":::
+      **Example control**
+   :::column-end:::
+   :::column span="2":::
+      **How to read it**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **1. Data collection**
+   :::column-end:::
+   :::column span="2":::
+      **Primary category**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Controls and policies relating to the collection and storage of data from all sources that are used for machine learning and artificial intelligence.
+   :::column-end:::
+   :::column span="2":::
+      Describes what controls in this category will cover at a high level.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **2. Data sources**
+   :::column-end:::
+   :::column span="2":::
+      **Control category**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Objective**: 
+      To ensure the integrity of data collected that is used for trained models.
+   :::column-end:::
+   :::column span="2":::
+      
+      Should describe the risk being mitigated with the controls.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Threat statement**: 
+      Data is collected from untrusted sources that could contain Sensitive Personal Data, other undesirable data that could affect the security of a model or presents compliance risks to the organization.
+   :::column-end:::
+   :::column span="2":::
+      
+      A statement that describes the outcome of not implementing the control.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Control**: 
+      Data should be collected from trusted sources. A list of trusted sources should be kept and updated. Approvals for collecting untrusted data should be considered on a case-by-case basis. 
+   :::column-end:::
+   :::column span="2":::
+      
+      Specific verbiage that describes best practice for the control. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Guidance**:
 
-**Threat statement**: Data is collected from untrusted sources that could contain Sensitive Personal Data, other undesirable data that could affect the security of a model or presents compliance risks to the organization. 
-A statement that describes the outcome of not implementing the control.
-**Control**: Data should be collected from trusted sources. 
-A list of trusted sources should be kept and updated. 
-Approvals for collecting untrusted data should be considered on a case-by-case basis. 
-Specific verbiage that describes best practice for the control. 
-
-**Guidance**:
-
-1. All reasonable effort should be made to ensure that data can be trusted before training a model. Untrusted or unknown data could introduce security vulnerabilities later in the pipeline.
-2. Data that contains sensitive personal data whether used for data science purpose or otherwise should either be cleaned or stored and access appropriately.
-3. Collecting data without consideration for its context could result in datasets that contain illegal data. Data collection efforts should be mindful about copyrighted material, data breaches, unsecured endpoints that accidently leak data.
-Guidance is recommendations for satisfying the above criteria. We provide them in a product and vendor agnostic way to give room for organizations to solve the issue in a way that makes sense for them.
+      1. All reasonable effort should be made to ensure that data can be trusted before training a model. Untrusted or unknown data could introduce security vulnerabilities later in the pipeline.
+      2. Data that contains sensitive personal data whether used for data science purpose or otherwise should either be cleaned or stored and access appropriately.
+      3. Collecting data without consideration for its context could result in datasets that contain illegal data. Data collection efforts should be mindful about copyrighted material, data breaches, unsecured endpoints that accidently leak data.
+   :::column-end:::
+   :::column span="2":::
+      
+      Guidance is recommendations for satisfying the above criteria. We provide them in a product and vendor agnostic way to give room for organizations to solve the issue in a way that makes sense for them. 
+   :::column-end:::
+:::row-end:::
 
 ## Machine learning security assessment
 

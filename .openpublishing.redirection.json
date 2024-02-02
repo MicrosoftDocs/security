@@ -139,11 +139,6 @@
          "redirect_document_id": false
       },
       {
-         "source_path": "security-docs/compass/security-operations.md",
-         "redirect_url": "/security/operations/overview",
-         "redirect_document_id": false
-      },
-      {
          "source_path": "security-docs/SDL/Cryptographic-Recommendations.md",
          "redirect_url": "/security/engineering/Cryptographic-Recommendations",
          "redirect_document_id": true

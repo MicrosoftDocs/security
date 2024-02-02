@@ -138,7 +138,7 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
    :::column span="":::
       **Example control**
    :::column-end:::
-   :::column span="2":::
+   :::column span="":::
       **How to read it**
    :::column-end:::
 :::row-end:::
@@ -146,7 +146,7 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
    :::column span="":::
       **1. Data collection**
    :::column-end:::
-   :::column span="2":::
+   :::column span="":::
       **Primary category**
    :::column-end:::
 :::row-end:::
@@ -154,7 +154,7 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
    :::column span="":::
       Controls and policies relating to the collection and storage of data from all sources that are used for machine learning and artificial intelligence.
    :::column-end:::
-   :::column span="2":::
+   :::column span="":::
       Describes what controls in this category will cover at a high level.
    :::column-end:::
 :::row-end:::
@@ -162,7 +162,7 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
    :::column span="":::
       **2. Data sources**
    :::column-end:::
-   :::column span="2":::
+   :::column span="":::
       **Control category**
    :::column-end:::
 :::row-end:::
@@ -171,7 +171,7 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
       **Objective**: 
       To ensure the integrity of data collected that is used for trained models.
    :::column-end:::
-   :::column span="2":::
+   :::column span="":::
       
       Should describe the risk being mitigated with the controls.
    :::column-end:::
@@ -181,7 +181,7 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
       **Threat statement**: 
       Data is collected from untrusted sources that could contain Sensitive Personal Data, other undesirable data that could affect the security of a model or presents compliance risks to the organization.
    :::column-end:::
-   :::column span="2":::
+   :::column span="":::
       
       A statement that describes the outcome of not implementing the control.
    :::column-end:::
@@ -191,7 +191,7 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
       **Control**: 
       Data should be collected from trusted sources. A list of trusted sources should be kept and updated. Approvals for collecting untrusted data should be considered on a case-by-case basis. 
    :::column-end:::
-   :::column span="2":::
+   :::column span="":::
       
       Specific verbiage that describes best practice for the control. 
    :::column-end:::
@@ -204,7 +204,7 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
       2. Data that contains sensitive personal data whether used for data science purpose or otherwise should either be cleaned or stored and access appropriately.
       3. Collecting data without consideration for its context could result in datasets that contain illegal data. Data collection efforts should be mindful about copyrighted material, data breaches, unsecured endpoints that accidently leak data.
    :::column-end:::
-   :::column span="2":::
+   :::column span="":::
       
       Guidance is recommendations for satisfying the above criteria. We provide them in a product and vendor agnostic way to give room for organizations to solve the issue in a way that makes sense for them. 
    :::column-end:::

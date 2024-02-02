@@ -46,7 +46,7 @@ We cover the following areas specifically related to AI systems.
 | **Incident management** | Controls and policies relating to how incidents related to AI system are handled.|
 | **Business continuity and disaster recovery** | Controls and policies relating to loss of intellectual property through model stealing, degradation of service, or other AI specific vulnerabilities.|
 
-We adapted the existing framework of controls and policies from the popular ISO27001:2013 standard [1] and mapped it across the AI system building process – from data collection phase to responding to threats to AI systems. Organizations may have some or all existing controls implemented from ISO27001:2013 or already be in compliance with several risk frameworks (NIST 800-53 [2], PCI-DSS [3], FedRamp [4], etc) as part of existing information security efforts. 
+We adapted the existing framework of controls and policies from the popular [ISO27001:2013 standard](https://www.isms.online/iso-27001/annex-a-controls/) and mapped it across the AI system building process – from data collection phase to responding to threats to AI systems. Organizations may have some or all existing controls implemented from ISO27001:2013 or already be in compliance with several risk frameworks (NIST 800-53, PCI-DSS, FedRamp, etc...) as part of existing information security efforts. 
 
 > Failing to adequately secure AI systems increases risk to not only the AI systems addressed in this assessment, but more generally to the entire information technology and compliance environment. 
 
@@ -172,7 +172,6 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
       To ensure the integrity of data collected that is used for trained models.
    :::column-end:::
    :::column span="":::
-      
       Should describe the risk being mitigated with the controls.
    :::column-end:::
 :::row-end:::
@@ -182,7 +181,6 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
       Data is collected from untrusted sources that could contain Sensitive Personal Data, other undesirable data that could affect the security of a model or presents compliance risks to the organization.
    :::column-end:::
    :::column span="":::
-      
       A statement that describes the outcome of not implementing the control.
    :::column-end:::
 :::row-end:::
@@ -192,7 +190,6 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
       Data should be collected from trusted sources. A list of trusted sources should be kept and updated. Approvals for collecting untrusted data should be considered on a case-by-case basis. 
    :::column-end:::
    :::column span="":::
-      
       Specific verbiage that describes best practice for the control. 
    :::column-end:::
 :::row-end:::
@@ -205,7 +202,6 @@ Below is a control pulled from the AI systems risk assessment, notes have been a
       3. Collecting data without consideration for its context could result in datasets that contain illegal data. Data collection efforts should be mindful about copyrighted material, data breaches, unsecured endpoints that accidently leak data.
    :::column-end:::
    :::column span="":::
-      
       Guidance is recommendations for satisfying the above criteria. We provide them in a product and vendor agnostic way to give room for organizations to solve the issue in a way that makes sense for them. 
    :::column-end:::
 :::row-end:::
@@ -470,14 +466,11 @@ Controls and policies relating to the ongoing monitoring of machine learning sys
 
 ## References
 
-[1] ISO 27001 Annex A Controls - Overview (isms.online)
-[2] Official PCI Security Standards Council Site - Verify PCI Compliance, Download Data Security
-and Credit Card Security Standards
-[3] Failure Modes in Machine Learning - Security documentation | Microsoft Docs
-[4] Threat Modeling AI/ML Systems and Dependencies - Security documentation |
-Microsoft Docs
-[6] AI/ML Pivots to the Security Development Lifecycle Bug Bar - Security documentation |
-Microsoft Docs
-[7] Enterprise security and governance - Azure Machine Learning | Microsoft Docs
-If you have questions, comments or feedback, 
-please contact atml@microsoft.co
+- [ISO 27001 Annex A Controls - Overview (isms.online)](https://www.isms.online/iso-27001/annex-a-controls/)
+- [Official PCI Security Standards Council Site](https://www.pcisecuritystandards.org/)
+- [Failure Modes in Machine Learning](/security/engineering/failure-modes-in-machine-learning)
+- [Threat Modeling AI/ML Systems and Dependencies](/security/engineering/threat-modeling-aiml)
+- [AI/ML Pivots to the Security Development Lifecycle Bug Bar](/security/engineering/bug-bar-aiml)
+- [Enterprise security and governance](/azure/machine-learning/concept-enterprise-security)
+
+If you have questions, comments or feedback, please contact [atml@microsoft.com](mailto:atml@microsoft.com)

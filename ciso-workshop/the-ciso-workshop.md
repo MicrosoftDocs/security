@@ -4,10 +4,9 @@ ms.author: mas
 author: MarkSimos
 manager: wesmalaby
 audience: Admin
-ms.topic: tutorial
-ms.service: information-protection
+ms.topic: conceptual
+ms.service: security
 ms.date: 10/27/2022
-localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: "The Chief Information Security Office (CISO) workshop helps accelerate security program modernization with reference strategies built using Zero Trust principles."

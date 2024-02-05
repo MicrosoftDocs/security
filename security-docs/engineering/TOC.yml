@@ -26,29 +26,29 @@
   - name: Government Security Program
     items:
     - name: Program Overview
-      href: ../GSP/ProgramOverview.md
+      href: ProgramOverview.md
     - name: Technical Data
-      href: ../GSP/TechnicalData.md
+      href: TechnicalData.md
     - name: Information Sharing and Exchange
-      href: ../GSP/InformationSharingAndExchange.md
+      href: InformationSharingAndExchange.md
     - name: Online Access to Source Code
-      href: ../GSP/OnlineSources.md 
+      href: OnlineSources.md 
     - name: Transparency Centers
-      href: ../GSP/ContentTransparencyCenters.md
+      href: ContentTransparencyCenters.md
 
   - name: Security Development Lifecycle
     items:
     - name: Security bug bar (sample) 
-      href: ../SDL/security-bug-bar-sample.md
+      href: security-bug-bar-sample.md
     - name: Cryptographic recommendations 
-      href: ../SDL/Cryptographic-Recommendations.md
+      href: Cryptographic-Recommendations.md
     - name: Threat Modeling with DevOps 
       href: threat-modeling-with-dev-ops.md
 
   - name: Cyber Defense Operations Center
     items:
     - name: Strategy brief
-      href: ../MSRC/FY18-Strategy-Brief.md
+      href: FY18-Strategy-Brief.md
 
   - name: Resources
     items:

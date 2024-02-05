@@ -1,7 +1,8 @@
+items:
 - name: Security
   tocHref: /security/
   topicHref: /security/index
   items:
-  - name: operations
+  - name: Zero Trust
     tocHref: /security/zero-trust/
-    topicHref: /security/operations/index
+    topicHref: /security/zero-trust/index

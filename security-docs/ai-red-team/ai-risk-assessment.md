@@ -32,11 +32,11 @@ We suggest using this document to start the discussion around securing AI system
 
 We cover the following areas related to AI systems.
 
-| Administrative controls | |
+| Administrative controls | Description |
 | --- | --- |
 | **Machine learning security policies** | Controls and policies relating to the documented policies that govern machine learning, artificial intelligence, and information security. |
 
-| Technical controls | |
+| Technical controls | Description |
 | --- | --- |
 | **Data collection** | Controls and policies related to the collection, storage, and classification of data that is used for machine learning and artificial intelligence. |
 | **Data processing** | Controls and policies relating to the processing and engineering of data used for machine learning and artificial intelligence. |
@@ -233,11 +233,11 @@ Controls and policies relating to the collection and storage of data from all so
 **Guidance**:
 
 1. Input data should be validated and trusted via management approval prior to use in an AI system.
-2. Data collected for an AI system should be reviewed prior to use or storage. 
-3. If appropriate, collected data should be cleaned of undesirable entries.
-4. The source of data should be documented and kept with the data.
-5. Inference data used to train a model shouldn't be implicitly trusted and should be treated as new data. 
-6. Data collection efforts should be documented and audited. Collected data should have an owner who is responsible for its adherence to documented policies.
+1. Data collected for an AI system should be reviewed prior to use or storage. 
+1. If appropriate, collected data should be cleaned of undesirable entries.
+1. The source of data should be documented and kept with the data.
+1. Inference data used to train a model shouldn't be implicitly trusted and should be treated as new data. 
+1. Data collection efforts should be documented and audited. Collected data should have an owner who is responsible for its adherence to documented policies.
 
 #### Sensitive data types
 
@@ -248,7 +248,7 @@ Controls and policies relating to the collection and storage of data from all so
 **Guidance**:
 
 1. Develop a data policy that encompasses the privacy and protection of sensitive data types and communicate the policy to all personnel involved with the use or creation of AI systems.
-2. Implement training and deployment pipelines that protect the confidentiality and integrity of the data used in AI Systems. 
+1. Implement training and deployment pipelines that protect the confidentiality and integrity of the data used in AI Systems. 
 
 #### Data storage
 
@@ -259,13 +259,13 @@ Controls and policies relating to the collection and storage of data from all so
 **Guidance**
 
 1. Ensure development or AI research systems or accounts don't have access to production databases and vice versa.
-2. Data used in AI systems should be classified and protected according to a documented classification policy.
-3. Data used in AI systems is tracked under a documented asset management policy.
-4. Data used for sensitive AI use cases are stored on approved and managed systems. 
-5. Access to data should be audited, and users requesting access should go through a formal access control process that includes management approval.
-6. Data used in machine learning processes shouldn't be exposed to the internet. 
-7. Data that is pulled from the internet (or other untrusted sources) should go through a filtering process that include management approval. 
-8. Datasets should be versioned with formal change control processes in place.
+1. Data used in AI systems should be classified and protected according to a documented classification policy.
+1. Data used in AI systems is tracked under a documented asset management policy.
+1. Data used for sensitive AI use cases are stored on approved and managed systems. 
+1. Access to data should be audited, and users requesting access should go through a formal access control process that includes management approval.
+1. Data used in machine learning processes shouldn't be exposed to the internet. 
+1. Data that is pulled from the internet (or other untrusted sources) should go through a filtering process that include management approval. 
+1. Datasets should be versioned with formal change control processes in place.
 
 #### Data access
 
@@ -276,9 +276,9 @@ Controls and policies relating to the collection and storage of data from all so
 **Guidance**:
 
 1. Role based access control for datasets should be enforced. 
-2. Perform regular access audits to ensure accounts with access to datasets should have access to datasets. Ensure that each account is operating within normal bounds. 
-3. If a central tracking platform isn't used, access to data through raw access logs should be reviewed for purpose. Ensure that each account is operating within normal bounds. 
-4. Third party resource providers, contractors or other external parties shouldn't have excess or inappropriate access to a company’s train/test data assets without contracts in place.
+1. Perform regular access audits to ensure accounts with access to datasets should have access to datasets. Ensure that each account is operating within normal bounds. 
+1. If a central tracking platform isn't used, access to data through raw access logs should be reviewed for purpose. Ensure that each account is operating within normal bounds. 
+1. Third party resource providers, contractors or other external parties shouldn't have excess or inappropriate access to a company’s train/test data assets without contracts in place.
 
 #### Data integrity
 
@@ -289,8 +289,8 @@ Controls and policies relating to the collection and storage of data from all so
 **Guidance**:
 
 1. Datasets should be uniquely identified such that unauthorized changes to an approved dataset would cause a review of the dataset.
-2. Datasets and their cryptographic descriptions should be tracked in a central location. Access to the dataset should be audited. 
-3. Changes to the dataset should include an updated cryptographic descriptions and management approval before being submitted to the central tracking service.
+1. Datasets and their cryptographic descriptions should be tracked in a central location. Access to the dataset should be audited. 
+1. Changes to the dataset should include an updated cryptographic descriptions and management approval before being submitted to the central tracking service.
 
 #### Data processing
 
@@ -321,10 +321,10 @@ Controls and policies relating to the processing of data that is used for machin
 **Guidance**:
 
 1. Subsets of data are datasets themselves. These subsets are required to have the same metadata attached to them as the parent dataset and should be similarly reviewed for sensitive data types.
-2. Depending on policies regarding machine learning practices (SLAs, bias metrics, etc.), any given dataset (including subsets) should meet a minimum documented standard surrounding these metrics if they're to be used in model building. The metadata should be always attached to the dataset.
-3. All datasets that violate existing policies should have a documented exception that has been approved by management. Included in the exception should be a documented reason for the exception in addition to the required metadata.
-4. All data used for model building should be tracked in a central location. Data should be auditable at any time. Additionally, models found to be trained on untracked data should be pulled from production until they're matched with a known dataset with the required metadata.
-5. Datasets should be appropriately versioned such that all metadata is updated, and users of the data understand the contents and the statistical properties. If necessary, management approval for sensitive use cases should be required. 
+1. Depending on policies regarding machine learning practices (SLAs, bias metrics, etc.), any given dataset (including subsets) should meet a minimum documented standard surrounding these metrics if they're to be used in model building. The metadata should be always attached to the dataset.
+1. All datasets that violate existing policies should have a documented exception that has been approved by management. Included in the exception should be a documented reason for the exception in addition to the required metadata.
+1. All data used for model building should be tracked in a central location. Data should be auditable at any time. Additionally, models found to be trained on untracked data should be pulled from production until they're matched with a known dataset with the required metadata.
+1. Datasets should be appropriately versioned such that all metadata is updated, and users of the data understand the contents and the statistical properties. If necessary, management approval for sensitive use cases should be required. 
 
 ### Model training
 
@@ -340,9 +340,9 @@ or confidentiality risks.
 **Guidance**:
 
 1. Model design and research should happen in the appropriate environment. Model design and architecture can have a large effect on the efficacy of a model. Production environments aren't the place for research or to test nonprovable claims about efficacy of a design. 
-2. Model selection for a production system should be reviewed and approved by management. This process should happen early in the development phase and should be tracked through any available mechanism (Excel, DevOps, Git, etc.). Exceptions should be documented.
-3. Models are often domain specific and there should be adequate documentation accompanying the model throughout its use in an organization.
-4. Ensure model metadata is accessible to users and unapproved uses of models are documented and enforced. It's acceptable for a user to fine-tune an existing model so long as new meta-data is attached and tracked appropriately. 
+1. Model selection for a production system should be reviewed and approved by management. This process should happen early in the development phase and should be tracked through any available mechanism (Excel, DevOps, Git, etc.). Exceptions should be documented.
+1. Models are often domain specific and there should be adequate documentation accompanying the model throughout its use in an organization.
+1. Ensure model metadata is accessible to users and unapproved uses of models are documented and enforced. It's acceptable for a user to fine-tune an existing model so long as new meta-data is attached and tracked appropriately. 
 
 #### Model training
 
@@ -353,9 +353,9 @@ or confidentiality risks.
 **Guidance**
 
 1. Training and validation sets should respect natural temporal dependencies. For example, for malware classifiers, a validation set should include only software versions later than those contained in the training set.
-2. Explicitly add model robustness by augmenting datasets with common corruptions that could reasonably be discovered in the wild.
-3. Explicitly train against worst-case conditions using adversarial retraining.
-4. Track experiments and associated meta.
+1. Explicitly add model robustness by augmenting datasets with common corruptions that could reasonably be discovered in the wild.
+1. Explicitly train against worst-case conditions using adversarial retraining.
+1. Track experiments and associated meta.
 
 #### Model selection
 
@@ -368,8 +368,8 @@ Model selection consists of choosing one model from a set of candidates, where e
 **Guidance**:
 
 1. Where computationally feasible, K-fold cross-validation should be used to prevent overfitting to a single holdout set.
-2. Verify that selected models perform well on disparate holdout sets to validate that they haven't overfit.
-3. Ensure that processes exist. 
+1. Verify that selected models perform well on disparate holdout sets to validate that they haven't overfit.
+1. Ensure that processes exist. 
 
 #### Model versioning
 
@@ -394,10 +394,10 @@ Controls and policies relating to the deployment of models, algorithms, and supp
 **Guidance**: 
 
 1. Formal acceptance testing criteria haven't been defined and documented for new AI systems, upgrades, and new versions.
-2. New AI systems, upgrades or new versions should be implemented with formal testing.
-3. Automated tools should be used for testing information systems, upgrades, or new versions. 
-4. Test environment should closely resemble the final production environment. 
-5. The frequency, scope, and method(s) for independent security reviews should be documented. 
+1. New AI systems, upgrades or new versions should be implemented with formal testing.
+1. Automated tools should be used for testing information systems, upgrades, or new versions. 
+1. Test environment should closely resemble the final production environment. 
+1. The frequency, scope, and method(s) for independent security reviews should be documented. 
 
 #### Security and compliance review
 
@@ -410,11 +410,11 @@ by accessing the unsecured network.
 **Guidance**: 
 
 1. Gateway devices to ML systems should be configured to filter traffic between domains and block unauthorized access.
-2. Relevant statutory, regulatory, and contractual requirements should be explicitly defined and documented, and addressed, alongside specific controls and individual responsibilities. 
-3. Secure configuration guidelines should also be documented, implemented, or reviewed. 
-4. The criterion for the segregation of ML networks into domains should be consistent with the organization’s access control policy or access requirements of the organization.
-5. Mechanisms such as secure gateway, VPN, routing for ML systems should be implemented sufficiently to enable a graduated set of controls.
-6. Users and ML engineers should employ or follow requirements for the implementation of controls to properly segregate and restrict use of publicly accessible systems, internal networks, and critical assets.
+1. Relevant statutory, regulatory, and contractual requirements should be explicitly defined and documented, and addressed, alongside specific controls and individual responsibilities. 
+1. Secure configuration guidelines should also be documented, implemented, or reviewed. 
+1. The criterion for the segregation of ML networks into domains should be consistent with the organization’s access control policy or access requirements of the organization.
+1. Mechanisms such as secure gateway, VPN, routing for ML systems should be implemented sufficiently to enable a graduated set of controls.
+1. Users and ML engineers should employ or follow requirements for the implementation of controls to properly segregate and restrict use of publicly accessible systems, internal networks, and critical assets.
 
 ### System monitoring
 
@@ -429,8 +429,8 @@ Controls and policies relating to the ongoing monitoring of machine learning sys
 **Guidance**: 
 
 1. Logging and monitoring should occur consistently across all AI systems and their components, including storage, pipelines, production servers, etc. 
-2. Event and security logs should be reviewed regularly for abnormal behavior.
-3. Consolidated reports and alerts on system activity should be generated and reviewed by management or a security representative.
+1. Event and security logs should be reviewed regularly for abnormal behavior.
+1. Consolidated reports and alerts on system activity should be generated and reviewed by management or a security representative.
 
 ### Incident management
 
@@ -443,8 +443,8 @@ Controls and policies relating to the ongoing monitoring of machine learning sys
 **Guidance**:
 
 1. Organizations for must follow a formal process to report AI systems incidents in the context of loss of service, loss of equipment, loss of facilities, system malfunctions, system overloads, human errors, and noncompliances with policies or guidelines, breaches of physical security, uncontrolled system changes, software malfunctions, hardware malfunctions, and access violations.
-2. Formal incident response and escalation procedures should be developed to document actions taken on receipt of a report of an information security event. 
-3. Incident response procedures should be tested on a periodic basis, tracking response metrics. 
+1. Formal incident response and escalation procedures should be developed to document actions taken on receipt of a report of an information security event. 
+1. Incident response procedures should be tested on a periodic basis, tracking response metrics. 
 
 ### Business continuity planning
 
@@ -457,9 +457,9 @@ Controls and policies relating to the ongoing monitoring of machine learning sys
 **Guidance**: 
 
 1. Critical AI assets should be identified and inventoried.
-2. The organization should develop a business continuity plan (BCP) or disaster recovery (DR) process in the face of attacks on AI systems. 
-3. The organization must identify prioritized the risks associated with the impact of losing critical AI systems to attacks.
-4. Organizations must have a business continuity testing operated on a repeated schedule for critical AI systems. 
+1. The organization should develop a business continuity plan (BCP) or disaster recovery (DR) process in the face of attacks on AI systems. 
+1. The organization must identify prioritized the risks associated with the impact of losing critical AI systems to attacks.
+1. Organizations must have a business continuity testing operated on a repeated schedule for critical AI systems. 
 
 ## References
 
@@ -470,4 +470,6 @@ Controls and policies relating to the ongoing monitoring of machine learning sys
 - [AI/ML Pivots to the Security Development Lifecycle Bug Bar](/security/engineering/bug-bar-aiml)
 - [Enterprise security and governance](/azure/machine-learning/concept-enterprise-security)
 
-If you have questions, comments or feedback, contact [atml@microsoft.com](mailto:atml@microsoft.com)
+If you have questions, comments or feedback, contact [atml@microsoft.com](mailto:atml@microsoft.com).
+
+[Download a PDF of this document](../../Downloads/AI_Risk_Assessment_v4.1.4.pdf) from our GitHub repository.

@@ -2,7 +2,7 @@
 title: Rapidly modernize your security infrastructure
 description: Key initiatives to rapidly secure your environment
 
-ms.service: information-protection
+ms.service: security
 ms.subservice: 
 ms.topic: how-to
 ms.date: 12/15/2020

@@ -1,5 +1,5 @@
 ---
-title: "Define ransomware and how to prevent ransomware cyber attack"
+title: "Define ransomware, human-operated ransomware, and how to prevent ransomware cyber attack"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -80,7 +80,7 @@ Download the [Protect your organization from ransomware poster](https://download
 
 [![The "Protect your organization from ransomware" poster](media/human-operated-ransomware/ransomware-poster-thumbnail.png)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
 
-## Additional ransomware resources
+## Additional ransomware prevention resources
 
 Key information from Microsoft:
 

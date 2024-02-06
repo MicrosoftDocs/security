@@ -1,5 +1,5 @@
 - name: Security workshops
-  href: adoption.md
+  href: index.yml
   items:
   - name: Overview
     expanded: true

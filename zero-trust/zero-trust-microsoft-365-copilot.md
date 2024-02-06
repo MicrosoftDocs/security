@@ -39,7 +39,6 @@ In the diagram:
 - User devices have Microsoft 365 apps installed from which users can initiate Copilot prompts
 - Copilot components include:
   - The Copilot service, which orchestrates the responses to user prompts
-  - A semantic index for Microsoft Search and Copilot based on the data in your Microsoft 365 tenant, which is automatically enabled and created by Microsoft
   - An instance of the Microsoft Graph for the data of your Microsoft 365 tenant
 - Your Microsoft 365 tenant that contains your organization data
 

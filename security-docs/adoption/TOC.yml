@@ -1,0 +1,34 @@
+- name: Security workshops
+  href: adoption.md
+  items:
+  - name: Overview
+    expanded: true
+    items:
+    - name: Security Adoption Resources
+      href: adoption.md
+  - name: Concepts
+    expanded: true
+    items:
+    - name: The CISO Workshop
+      href: the-ciso-workshop.md
+    - name: CISO Workshop videos
+      href: the-ciso-workshop-videos.md
+    - name: Microsoft Cybersecurity Reference Architectures
+      href: mcra.md
+  - name: Archive
+    expanded: false
+    items:
+    - name: The CISO Workshop (Archived)
+      href: ciso-workshop.md
+    - name: Module 1 - Microsoft cybersecurity briefing
+      href: ciso-workshop-module-1.md
+    - name: Module 2 - Security management
+      href: ciso-workshop-module-2.md
+    - name: Module 3 -  Identity and zero trust user access
+      href: ciso-workshop-module-3.md
+    - name: Module 4a -  Threat protection strategy, Part I
+      href: ciso-workshop-module-4a.md
+    - name: Module 4b -  Threat protection strategy, Part II
+      href: ciso-workshop-module-4b.md
+    - name: Module 5 -  Information protection
+      href: ciso-workshop-module-5.md

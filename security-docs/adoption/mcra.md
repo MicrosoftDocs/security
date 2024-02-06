@@ -22,7 +22,7 @@ The Microsoft Cybersecurity Reference Architectures (MCRA) are the component of 
 - Third party platforms like Amazon Web Services (AWS) and Google Cloud Platform (GCP)
 - First and third party AI capabilities
 
-:::image type="content" source="./media/mcra-overview.png" alt-text="Screenshot of some of the diagrams included in the updated Microsoft Cybersecurity Reference Architecture" lightbox="./media/mcra-overview.png":::
+:::image type="content" source="./media/mcra/mcra-overview.png" alt-text="Screenshot of some of the diagrams included in the updated Microsoft Cybersecurity Reference Architecture" lightbox="./media/mcra/mcra-overview.png":::
 
 [Download the updated December 2023 version of the MCRA](https://github.com/MicrosoftDocs/security/blob/main/Downloads/mcra-december-2023.pptx?raw=true)
 

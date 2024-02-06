@@ -1,0 +1,35 @@
+### YamlMime:Landing
+
+title: Security adoption resources
+summary: Learn how to 
+
+metadata:
+  title: Security adoption resources
+  description: Learn how to 
+  ms.service: security
+  ms.subservice: 
+  ms.topic: landing-page
+  ms.author: joflore
+  author: MicrosoftGuyJFlo
+  manager: amycolannino
+  ms.reviewer: mas
+  ms.date: 02/06/2024
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Security adoption resources
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Resources for security transformation
+            url: adoption.md
+      - linkListType: how-to-guide
+        links:
+          - text: The Chief Information Security Officer (CISO) Workshop
+            url: the-ciso-workshop.md
+          - text: Microsoft Cybersecurity Reference Architectures
+            url: mcra.md

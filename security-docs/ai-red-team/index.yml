@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: AI Red Team
-summary: Learn how to 
+title: Microsoft AI Red Team
+summary: Learn to safeguard your organization’s AI with guidance and best practices from the industry leading Microsoft AI Red Team
 
 metadata:
-  title: AI Red Team
-  description: Learn how to 
+  title: Microsoft AI Red Team
+  description: Learn to safeguard your organization’s AI with guidance and best practices from the industry leading Microsoft AI Red Team
   ms.service: security
   ms.subservice: 
   ms.topic: landing-page
@@ -13,7 +13,7 @@ metadata:
   author: MicrosoftGuyJFlo
   manager: amycolannino
   ms.reviewer: nborges
-  ms.date: 02/02/2024
+  ms.date: 02/06/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
 
@@ -25,7 +25,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is AI Red teaming?
+          - text: What is AI Red teaming and how Microsoft is building safer AI?
             url: overview.md
       - linkListType: how-to-guide
         links:

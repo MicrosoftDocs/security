@@ -4,7 +4,7 @@ description: Best practices and guidance to secure AI systems
 
 ms.service: security
 ms.subservice: 
-ms.topic: overview
+ms.topic: how-to
 ms.date: 02/02/2024
 
 ms.author: joflore
@@ -18,7 +18,7 @@ Despite the compelling reasons to secure ML systems, [Microsoft’s survey](http
 
 This document is a first step for organizations to assess the security posture of their AI systems. But instead of adding yet another framework for organizations to follow, we attempted to provide the content in a manner that can be snapped to existing traditional security risk assessment frameworks. 
 
-There are three goals for this whitepaper: 
+There are three goals for this document: 
 
 - **Provide a comprehensive perspective to AI system security**. We looked at each element of the AI system lifecycle in a production setting: from data collection, data processing to model deployment. We also accounted for AI supply chain and the controls and policies with respect to backup, recovery and contingency planning related to AI systems. 
 - **Outline threats to critical AI assets and guidance to secure them**. To directly help engineers and security professionals, we enumerated the threat statement at each step of the AI system building process. Next, we provide a set of guidelines which overlay and reinforce existing practices in the context of AI systems. 

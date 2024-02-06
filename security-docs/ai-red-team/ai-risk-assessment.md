@@ -24,7 +24,7 @@ There are three goals for this whitepaper:
 - **Outline threats to critical AI assets and guidance to secure them**. To directly help engineers and security professionals, we enumerated the threat statement at each step of the AI system building process. Next, we provide a set of guidelines which overlay and reinforce existing practices in the context of AI systems. 
 - **Enable organizations to conduct AI security risk assessments**. The framework helps gather information about the current state of security of AI systems in an organization, perform gap analysis and track the progress of the security posture. 
 
-We formulated it conjunction with stakeholders across Microsoft, with representatives from Azure Security, Responsible AI Strategy in Engineering, Microsoft Security Response Center, Azure Security and AI, Ethics and Effects in Engineering and Research (Aether). 
+We formulated it conjunction with stakeholders across Microsoft, with representatives from Azure Security, Responsible AI Strategy in Engineering, Microsoft Security Response Center, Azure Security, and AI, Ethics and Effects in Engineering and Research (Aether). 
 
 ## Introduction
 
@@ -60,7 +60,7 @@ Not all controls are of critical importance to the security of an AI system. The
 
 ### Severity
 
-The severity of a compromise is going to depend on the AI model use case. Fortunately, if the data or systems being used was of critical concern prior to machine learning being integrated, it should remain the same. Similarly, if the model used is “off-the-shelf” with no additional input, depending on the context the model is used in, the severity of a compromise is likely lower. Techniques like differential privacy can reduce the potential impact of a compromise. However, this wouldn't reduce the criticality of the system, the data, or the model. We recommend that models be protected using a defense-in-depth strategy rather than relying on any one defensive implementation.
+The severity of a compromise is going to depend on the AI model use case. Fortunately, if the data or systems being used was of critical concern prior to machine learning being integrated, it should remain the same. Similarly, if the model used is “off-the-shelf” with no other input, depending on the context the model is used in, the severity of a compromise is likely lower. Techniques like differential privacy can reduce the potential impact of a compromise. However, this context wouldn't reduce the criticality of the system, the data, or the model. We recommend that models be protected using a defense-in-depth strategy rather than relying on any one defensive implementation.
 
 #### Suggested severity level 
 
@@ -110,7 +110,7 @@ Impact is related to affects to the organization. We suggest that you begin with
 
 #### Severity matrix
 
-The following is a basic risk and vulnerability severity matrix to get organizations started. We suggest filling up a similar categorization by convening security architects, machine learning engineers and AI red team members. 
+The following table is a basic risk and vulnerability severity matrix to get organizations started. We suggest filling up a similar categorization by convening security architects, machine learning engineers and AI red team members. 
 
 | Attack type | Likelihood | Impact | Exploitability |
 | --- | --- | --- | --- |
@@ -127,10 +127,10 @@ The following is a basic risk and vulnerability severity matrix to get organizat
 
 The rest of the document follows this structure: 
 
-- a **risk control** contains a description of which area the control covers,
-- the **objective** of the control and what it's supposed to accomplish,
-- a **threat statement** that gives a description of the risk being mitigated,
-- and finally, **guidance** for implementing a control. We understand that not all guidance can be implemented for legitimate business reasons. We suggest documenting guidance that can't be implemented. 
+- A **risk control** contains a description of which area the control covers.
+- The **objective** of the control and what it's supposed to accomplish.
+- A **threat statement** that gives a description of the risk being mitigated.
+- **Guidance** for implementing a control. We understand that not all guidance can be implemented for legitimate business reasons. We suggest documenting guidance that can't be implemented. 
 
 The following table is a control pulled from the AI systems risk assessment, notes are added to describe each part of a risk categories structure. 
 
@@ -178,7 +178,7 @@ The following table is a control pulled from the AI systems risk assessment, not
 :::row:::
    :::column span="2":::
       **Threat statement**: 
-      Data is collected from untrusted sources that could contain Sensitive Personal Data, other undesirable data that could affect the security of a model or presents compliance risks to the organization.
+      Data is collected from untrusted sources that could contain Sensitive Personal Data, other undesirable data that could affect the security of a model, or presents compliance risks to the organization.
    :::column-end:::
    :::column span="":::
       A statement that describes the outcome of not implementing the control.
@@ -228,7 +228,7 @@ Controls and policies relating to the collection and storage of data from all so
 
 **Control**: Data should be collected from trusted sources. A list of trusted sources should be kept and updated. Management approvals for collecting untrusted data should be considered on a case-by-case basis. If an untrusted source is approved, it should be documented. 
 
-**Threat statement**: Data is collected from untrusted sources that could contain sensitive personal data, other undesirable data that could affect the performance of a model or presents compliance risks to the organization.
+**Threat statement**: Data is collected from untrusted sources that could contain sensitive personal data, other undesirable data that could affect the performance of a model, or presents compliance risks to the organization.
 
 **Guidance**:
 
@@ -306,7 +306,7 @@ Controls and policies relating to the processing of data that is used for machin
 
 **Guidance**:
 
-1. Not all data that moves through a production system is relevant to data science efforts. It's important to parse out only the required data, and ensure all data moved from a secure production setting into a development setting is appropriately tracked. Consider that certain types of data might not be able to be moved into a development environment and that data science might need to occur in a secure intermediary environment.
+1. Not all data that moves through a production system is relevant to data science efforts. It's important to parse out only the required data, and ensure all data moved from a secure production setting into a development setting is appropriately tracked. Consider that certain types of data might not be able to be moved into a development environment. Data science might need to occur in a secure intermediary environment.
 1. Proper auditing of data access throughout data processing lifecycle is important. Without separate accounts, there can be no sufficient auditing of access. Further, the ability to respond to an incident can't happen without potentially affecting business processes. Compromise of a single account would result in compromise of all data leaving the secure production environment. 
 1. Data science processes could require resources that are outside of a strict compliance boundary. 
 1. Data science processes should always be compliant with existing requirements. This process could include moving data science resources and processes into a compliant environment. 
@@ -322,7 +322,7 @@ Controls and policies relating to the processing of data that is used for machin
 
 1. Subsets of data are datasets themselves. These subsets are required to have the same metadata attached to them as the parent dataset and should be similarly reviewed for sensitive data types.
 1. Depending on policies regarding machine learning practices (SLAs, bias metrics, etc.), any given dataset (including subsets) should meet a minimum documented standard surrounding these metrics if they're to be used in model building. The metadata should be always attached to the dataset.
-1. All datasets that violate existing policies should have a documented exception that has been approved by management. Included in the exception should be a documented reason for the exception in addition to the required metadata.
+1. All datasets that violate existing policies should have a documented exception approved by management. Included in the exception should be a documented reason for the exception in addition to the required metadata.
 1. All data used for model building should be tracked in a central location. Data should be auditable at any time. Additionally, models found to be trained on untracked data should be pulled from production until they're matched with a known dataset with the required metadata.
 1. Datasets should be appropriately versioned such that all metadata is updated, and users of the data understand the contents and the statistical properties. If necessary, management approval for sensitive use cases should be required. 
 
@@ -442,7 +442,7 @@ Controls and policies relating to the ongoing monitoring of machine learning sys
 
 **Guidance**:
 
-1. Organizations for must follow a formal process to report AI systems incidents in the context of loss of service, loss of equipment, loss of facilities, system malfunctions, system overloads, human errors, and noncompliances with policies or guidelines, breaches of physical security, uncontrolled system changes, software malfunctions, hardware malfunctions, and access violations.
+1. Organizations for must follow a formal process to report AI systems incidents in the context of loss of service, loss of equipment, loss of facilities, system malfunctions, system overloads, human errors, noncompliances with policies or guidelines, breaches of physical security, uncontrolled system changes, software malfunctions, hardware malfunctions, and access violations.
 1. Formal incident response and escalation procedures should be developed to document actions taken on receipt of a report of an information security event. 
 1. Incident response procedures should be tested on a periodic basis, tracking response metrics. 
 

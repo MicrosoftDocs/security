@@ -144,57 +144,57 @@
          "redirect_document_id": false
       },
       {
-        "source_path_from_root": "/cybersecurity-reference-architecture/MCRA.md",
+        "source_path_from_root": "security-docs/cybersecurity-reference-architecture/MCRA.md",
         "redirect_url": "/security/adoption/mcra",
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/ciso-workshop/adoption.md",
+        "source_path_from_root": "security-docs/ciso-workshop/adoption.md",
         "redirect_url": "/security/adoption/adoption",
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/ciso-workshop/ciso-workshop-module-1.md",
+        "source_path_from_root": "security-docs/ciso-workshop/ciso-workshop-module-1.md",
         "redirect_url": "/security/adoption/ciso-workshop-module-1",
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/ciso-workshop/ciso-workshop-module-2.md",
+        "source_path_from_root": "security-docs/ciso-workshop/ciso-workshop-module-2.md",
         "redirect_url": "/security/adoption/ciso-workshop-module-2",
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/ciso-workshop/ciso-workshop-module-3.md",
+        "source_path_from_root": "security-docs/ciso-workshop/ciso-workshop-module-3.md",
         "redirect_url": "/security/adoption/ciso-workshop-module-3",
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/ciso-workshop/ciso-workshop-module-4a.md",
+        "source_path_from_root": "security-docs/ciso-workshop/ciso-workshop-module-4a.md",
         "redirect_url": "/security/adoption/ciso-workshop-module-4a",
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/ciso-workshop/ciso-workshop-module-4b.md",
+        "source_path_from_root": "security-docs/ciso-workshop/ciso-workshop-module-4b.md",
         "redirect_url": "/security/adoption/ciso-workshop-module-4b",
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/ciso-workshop/ciso-workshop-module-5.md",
+        "source_path_from_root": "security-docs/ciso-workshop/ciso-workshop-module-5.md",
         "redirect_url": "/security/adoption/ciso-workshop-module-5",
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/ciso-workshop/ciso-workshop.md",
+        "source_path_from_root": "security-docs/ciso-workshop/ciso-workshop.md",
         "redirect_url": "/security/adoption/ciso-workshop",
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/ciso-workshop/the-ciso-workshop-videos.md",
+        "source_path_from_root": "security-docs/ciso-workshop/the-ciso-workshop-videos.md",
         "redirect_url": "/security/adoption/the-ciso-workshop-videos",
         "redirect_document_id": true
       },
       {
-        "source_path_from_root": "/ciso-workshop/the-ciso-workshop.md",
+        "source_path_from_root": "security-docs/ciso-workshop/the-ciso-workshop.md",
         "redirect_url": "/security/adoption/the-ciso-workshop",
         "redirect_document_id": true
       },  

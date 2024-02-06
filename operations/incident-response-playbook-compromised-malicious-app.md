@@ -19,7 +19,7 @@ ms.collection:
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
-ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref
+ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ---
 
 # Compromised and malicious applications investigation
@@ -163,7 +163,7 @@ Additionally, you can query the [servicePrincipalRiskDetections](/graph/api/iden
 - Confirm whether the connection strings are consistent and whether has the sign out URL has been modified.
 - Confirm whether the domains in the URL are in-line with those registered.
 - Determine whether anyone has added an unauthorized redirect URL.
-- Confirm ownership of the redirect URI that you own to ensure it did not expire and was claimed by an adversary.
+- Confirm ownership of the redirect URI that you own to ensure it didn't expire and was claimed by an adversary.
 
 Also, if you deployed Microsoft Defender for Cloud Apps, check the Azure portal for alerts relating to the application you are currently investigating. Not all alert policies are enabled by default for OAuth apps, so ensure that these policies are all enabled. For more information, see the [OAuth app policies](/defender-cloud-apps/app-permission-policy). You can also view information about the apps prevalence and recent activity under the **Investigation** > **OAuth Apps** tab.
 
@@ -320,20 +320,33 @@ A typical containment strategy involves the disabling of sign-ins to the applica
 
 :::image type="content" source="./media/compromised-malicious-apps/DisabledAppExample.png" alt-text="Toggle to disable users to sign-in":::
 
-You can also use the following PowerShell code to disable the sign-in to the app:
+You can also use the following [Microsoft Graph PowerShell](/powershell/microsoftgraph) code to disable the sign-in to the app:
 
 ```powershell
 # The AppId of the app to be disabled
 $appId = "{AppId}"
 
 # Check if a service principal already exists for the app
-$servicePrincipal = Get-AzureADServicePrincipal -Filter "appId eq '$appId'"
+$servicePrincipal = Get-MgServicePrincipal -Filter "appId eq '$appId'"
+
 if ($servicePrincipal) {
    # Service principal exists already, disable it
-   Set-AzureADServicePrincipal -ObjectId $servicePrincipal.ObjectId -AccountEnabled $false
+
+  $ServicePrincipalUpdate =@{
+    "accountEnabled" = "false"
+  }
+   Update-MgServicePrincipal -ServicePrincipalId $servicePrincipal.Id -BodyParameter $ServicePrincipalUpdate
+   
 } else {
    # Service principal does not yet exist, create it and disable it at the same time
-   $servicePrincipal = New-AzureADServicePrincipal -AppId $appId -AccountEnabled $false
+   
+   $ServicePrincipalID=@{
+	"AppId" = $appId
+	"accountEnabled" = "false"
+   }
+   
+   $servicePrincipal = New-MgServicePrincipal -BodyParameter $ServicePrincipalId
+   
 }
 ```
 
@@ -477,7 +490,7 @@ To review configuration options, see [Configure how users consent to apps](/azur
 
 #### Implement admin consent flow
 
-When an application developer directs users to the admin consent endpoint with the intent to give consent for the entire tenant, it is known as admin consent flow. To ensure the admin consent flow works properly, application developers must list all permissions in the RequiredResourceAccess property in the application manifest.
+When an application developer directs users to the admin consent endpoint with the intent to give consent for the entire tenant, it's known as admin consent flow. To ensure the admin consent flow works properly, application developers must list all permissions in the RequiredResourceAccess property in the application manifest.
 
 Most organizations disable the ability for their users to consent to applications. To give users the ability to still request consent for applications and have administrative review capability, it is recommended to implement the admin consent workflow. Follow the [admin consent workflow steps](/azure/active-directory/manage-apps/configure-admin-consent-workflow) to configure it in your tenant.
 
@@ -487,7 +500,7 @@ For high privileged operations such as admin consent, have a privileged access s
 
 Risk-based step-up consent helps reduce user exposure to malicious apps. For example, consent requests for newly registered multitenant apps that are not publisher verified and require non-basic permissions are considered risky. If a risky user consent request is detected, the request requires a "step-up" to admin consent instead. This step-up capability is enabled by default, but it results in a behavior change only when user consent is enabled.
 
-Make sure it is enabled in your tenant and review the configuration settings outlined [here](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).
+Make sure it's enabled in your tenant and review the configuration settings outlined [here](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent).
 
 ## References
 

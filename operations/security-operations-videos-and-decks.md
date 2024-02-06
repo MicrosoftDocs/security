@@ -1,8 +1,10 @@
 ---
 title: "Microsoft Security Best Practices module: Security operations"
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.date: 11/28/2023
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: mas
 audience: Admin
 ms.topic: article
 localization_priority: Normal
@@ -22,7 +24,7 @@ The following videos provide guidance on security operations.
 ## Part 2: Azure Alerts (2:36 long)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qm7B]
 
-## Part 3: Alert and Log Ingestion (4:51 long)
+## Part 3: Alert and Log Integration (4:51 long)
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q3NI]
 
 ## Part 4: Journey to Cloud Analytics (6:05 long)
@@ -48,4 +50,3 @@ The following videos provide guidance on security operations.
 | [Azure Cloud Adoption Framework security operations](/azure/cloud-adoption-framework/secure/security-operations) | Strategic guidance for leaders establishing or modernizing a security operation function. |
 | [Microsoft cloud security for IT architects model](https://aka.ms/cloudarchsecurity) | Security across Microsoft cloud services and platforms for identity and device access, threat protection, and information protection. |
 | [Microsoft security documentation](/security/) | Additional security guidance from Microsoft. |
-|||

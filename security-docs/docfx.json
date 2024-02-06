@@ -8,53 +8,58 @@
           "**/*.yml"
         ],
         "exclude": [
-            "**/obj/**",
-            "**/includes/**",
-            "_themes/**",
-            "_themes.pdf/**",
-            "**/docfx.json",
-            "_repo.en-us/**",
-            "README.md",
-            "LICENSE",
-            "LICENSE-CODE",
-            "ThirdPartyNotices.md",
-            "SECURITY.md"
-          ]
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md",
+          "SECURITY.md"
+        ]
       }
     ],
     "resource": [
       {
         "files": [
-            "**/*.gif",
-            "**/*.jpeg",
-            "**/*.png",
-            "**/*.jpg",
-            "**/*.svg"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "_themes/**",
-            "_themes.pdf/**",
-            "**/docfx.json",
-            "_repo.en-us/**"
-          ]
-        }
-      ],
-      "overwrite": [],
-      "externalReference": [],
-      "globalMetadata": {
-        "uhfHeaderId": "MSDocsHeader-Security",
-        "breadcrumb_path": "/security/breadcrumb/toc.json",
-        "feedback_system": "GitHub",
-        "feedback_github_repo": "MicrosoftDocs/security"
+          "**/*.gif",
+          "**/*.jpeg",
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-Security",
+      "breadcrumb_path": "/security/breadcrumb/toc.json",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/security"
+    },
+    "fileMetadata": {
+      "titleSuffix": {
+        "*.md": "Security",
+        "*.yml": "Security",
+        "privileged-access-workstations/*.md": "Privileged access",
+        "privileged-access-workstations/*.yml": "Privileged access"
       },
-      "fileMetadata": {
-        "titleSuffix": {
-          "*.md": "Security",
-          "*.yml": "Security"
-        }
-        },
-        "template": [],
-        "dest": "security-docs"
-    }
+      "feedback_system": {
+        "privileged-access-workstations/**/*.md": "None"
+      }
+    },
+    "template": [],
+    "dest": "security-docs"
+  }
 }

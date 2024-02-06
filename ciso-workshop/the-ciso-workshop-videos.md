@@ -2,11 +2,10 @@
 title: "Chief Information Security Officer (CISO) Workshop - Videos"
 ms.author: mas
 author: mas
-manager: mas
+manager: wesmalaby
 audience: Admin
-ms.topic: tutorial
-ms.service: information-protection
-localization_priority: Normal
+ms.topic: conceptual
+ms.service: security
 ms.collection:
 - M365-security-compliance
 description: "These are the videos for the CISO Workshop."

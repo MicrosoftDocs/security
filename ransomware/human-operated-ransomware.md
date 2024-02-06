@@ -3,7 +3,6 @@ title: "Define ransomware and how to prevent ransomware cyber attack"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 02/06/2023
 audience: Admin
 ms.service: microsoft-365-security
 ms.collection:

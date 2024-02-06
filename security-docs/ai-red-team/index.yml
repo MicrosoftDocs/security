@@ -9,8 +9,10 @@ metadata:
   ms.service: security
   ms.subservice: 
   ms.topic: landing-page
-  author: 
-  ms.author: 
+  ms.author: joflore
+  author: MicrosoftGuyJFlo
+  manager: amycolannino
+  ms.reviewer: nborges
   ms.date: 02/02/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new

@@ -7,10 +7,10 @@ ms.subservice:
 ms.topic: overview
 ms.date: 02/02/2024
 
-ms.author: 
-author: 
-manager: 
-ms.reviewer: 
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: nborges
 ---
 # AI Risk Assessment for ML Engineers
 

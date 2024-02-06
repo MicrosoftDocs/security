@@ -30,6 +30,6 @@ These articles show you how to apply Zero Trust principles to:
 
 ## References
 
-- [Microsoft Copilot](copilot/)
+- [Microsoft Copilot](/copilot/)
 - [Microsoft 365 Copilot](/microsoft-365-copilot/)
 - [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy)

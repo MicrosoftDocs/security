@@ -14,7 +14,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 11/29/2023
+  ms.date: 02/07/2024
 
 
 # Maximum of 8 items
@@ -22,9 +22,21 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
+    - title: What is Microsoft Security Copilot?
+      itemType: whats-new
+      url: /security-copilot/microsoft-security-copilot
+    # Card
     - title: AI shared responsibility model
       itemType: concept
       url: /azure/security/fundamentals/shared-responsibility-ai
+    # Card
+    - title: Microsoft AI Red Team and safer AI
+      itemType: overview
+      url: https://www.microsoft.com/security/blog/2023/08/07/microsoft-ai-red-team-building-future-of-safer-ai/
+    # Card
+    - title: Get started with Azure AI Services
+      itemType: learn
+      url: /training/paths/get-started-azure-ai/
     # Card
     - title: Microsoft Security Podcast - The future of security
       itemType: overview
@@ -34,21 +46,9 @@ highlightedContent:
       itemType: whats-new
       url: https://ignite.microsoft.com/home
     # Card
-    - title: What is ransomware?
-      itemType: concept
-      url: /security/ransomware/human-operated-ransomware
-    # Card
     - title: Configure SIEM security operations using Microsoft Sentinel
       itemType: learn
       url: /credentials/applied-skills/configure-siem-security-operations-using-microsoft-sentinel
-    # Card
-    - title: Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls
-      itemType: learn
-      url: /credentials/applied-skills/secure-azure-services-and-workloads-with-microsoft-defender-for-cloud-regulatory-compliance-controls/
-    # Card
-    - title: Azure network security
-      itemType: concept
-      url: /azure/networking/security
     # Card
     - title: Cybersecurity news and highlights archive
       itemType: reference

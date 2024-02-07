@@ -13,7 +13,7 @@ ms.date: 02/07/2024
 
 The security documentation site provides you with current news and highlights from across Microsoft. News and highlights are updated regularly to bring you the most relevant security information.
 
-Below are past news and highlights that you may have missed or would like to revisit.
+Here are past news and highlights that you may have missed or would like to revisit.
 
 2024
 
@@ -24,7 +24,7 @@ Below are past news and highlights that you may have missed or would like to rev
 2023
 
 - [Microsoft Build 2023](https://build.microsoft.com/home)
-- [Shared responsibility in the cloiud](/azure/security/fundamentals/shared-responsibility)
+- [Shared responsibility in the cloud](/azure/security/fundamentals/shared-responsibility)
 - [Evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview)
 - [Learn about Permissions Management, a CIEM solution](/azure/active-directory/cloud-infrastructure-entitlement-management/overview)
 - [Secure IaaS services in Amazon Web Services](/security/zero-trust/secure-iaas-apps)

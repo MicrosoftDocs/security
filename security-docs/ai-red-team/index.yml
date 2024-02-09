@@ -26,7 +26,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is AI Red teaming and how Microsoft is building safer AI?
-            url: overview.md
+            url: https://www.microsoft.com/security/blog/2023/08/07/microsoft-ai-red-team-building-future-of-safer-ai/
       - linkListType: how-to-guide
         links:
           - text: Guide for building AI Red Teams for LLMs
@@ -34,15 +34,15 @@ landingContent:
       - linkListType: reference
         links:
           - text: Responsible AI Standard and Impact Assessment
-            url: https://www.microsoft.com/ai/responsible-ai
+            url: https://www.microsoft.com/ai/tools-practices
 
   # Card
   - title: Getting ready
     linkLists:
       - linkListType: overview
         links:
-          - text: The PyRIT Framework Blog (ready but not yet published)
-            url: overview.md
+          - text: Microsoft's Open Automation Framework to Red Team Generative AI Systems (PyRIT)
+            url: https://aka.ms/PYRITblog
       - linkListType: how-to-guide
         links:
           - text: PyRIT How to Guide (ready but not yet published)

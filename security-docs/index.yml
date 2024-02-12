@@ -152,12 +152,16 @@ additionalContent:
         # Card
         - title: What is Zero Trust?
           summary: Learn about the guiding principles of Zero Trust
-          url: /security/zero-trust/zero-trust-overview
+          links:
+            - text: Overview
+              url: /security/zero-trust/zero-trust-overview
 
         # Card
         - title: Adoption framework
-          url: /security/zero-trust/adopt/zero-trust-adoption-overview
           summary: Get help driving strategy and implementation across your organization
+          links:
+            - text: Overview
+              url: /security/zero-trust/adopt/zero-trust-adoption-overview
 
         # Card
 #         - title: Small business guidance
@@ -165,14 +169,19 @@ additionalContent:
 #           summary: Find resources for customers and partners working with Microsoft 365 for business
 
         #Card
-        - title: Deployment plan with Microsoft 365
-          url: /microsoft-365/security/microsoft-365-zero-trust?bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json%3Fview%3Do365-worldwide&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json%3Fview%3Do365-worldwide&view=o365-worldwide
+        - text: Deployment plan with Microsoft 365
           summary: Follow a deployment plan for building Zero Trust security with Microsoft 365
+          links:
+            - text: Overview
+              url: /microsoft-365/security/microsoft-365-zero-trust?bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json%3Fview%3Do365-worldwide&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json%3Fview%3Do365-worldwide&view=o365-worldwide
 
         # Card
         - title: Deployment plan with Microsoft Azure and infrastructure
-          url: /security/zero-trust/azure-infrastructure-overview
           summary: Apply the principles of Zero Trust to apps and infrastructure in Azure and other cloud providers
+          links:
+            - text: Overview
+               url: /security/zero-trust/azure-infrastructure-overview
+          
 
         # Card
 #        - title: Securing DevOps environments for Zero Trust

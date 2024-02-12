@@ -1,5 +1,5 @@
 ---
-title: "Quickly configure for ransomware prevention in your organization to help stop ransomware cybercriminals."
+title: "Get started and quickly configure ransomware so you can stop ransomware cybercriminals from targeting your organization."
 ms.author: dansimp
 author: dansimp
 f1.keywords:
@@ -12,29 +12,29 @@ localization_priority: Normal
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
-description: Quickly configure for ransomware prevention in your organization to help stop ransomware cybercriminals from extorting your business.
+description:  Get started and learn how to prevent ransomware cybercriminals by quickly configuring ransomware prevention for your organization.
 
 ---
 
-# Quickly deploy ransomware preventions
+# Quickly protect against ransomware
 
->[!Note]
->This guidance will be updated as new information becomes available.
+Learning how to stop ransomware, and understanding that new threats evolve so your learning must continue, is critical to every organization due to the rising likelihood of ransomware attacks.
 
-Providing ransomware protection and mitigating extortion attacks is a priority for organizations large and small because of the high impact of these attacks and rising likelihood an organization will experience one.
+This guidance is organized into steps, starting with the most urgent actions to take.
+
+Each step is a separate article linked below. Bookmark this page as your starting point. 
 
 > [!NOTE]
-> If you need a ransomware definition, read the the overview [here](/security/compass/human-operated-ransomware).
+> What is ransomware? See the ransomware definition [here](/security/compass/human-operated-ransomware).
 
-## Set up ransomware protection now
+## Important information before you begin
 
-Concrete instructions on how to best prepare your organization from many forms of ransomware and extortion.
-
-This guidance is organized in prioritized phases. Each phase links to a separate article. The priority order is designed to ensure you reduce risk *as fast as possible with each phase*, building on an assumption of great urgency that will override normal security and IT priorities, in order to avoid or mitigate these devastating attacks.
+> [!NOTE]
+> The order of these steps is designed to ensure you reduce risk *as fast as possible*, and built on an assumption of great urgency that overrides normal security and IT priorities, in order to avoid or mitigate devastating attacks.
 
 ![The three phases to protecting against ransomware](media/protect-against-ransomware/protect-against-ransomware-phases.png)
 
-**It is vital to note** that this guidance is structured as prioritized phases that you should follow in the prescribed order. To best adapt this guidance to your situation:
+**It is important to note** this guidance is structured as steps or phases you should follow in the order shown. To best adapt this guidance to your situation:
 
 1. **Stick with the recommended priorities**
 
@@ -48,13 +48,19 @@ This guidance is organized in prioritized phases. Each phase links to a separate
 
     Trying to do everything at once can be overwhelming, but some items can naturally be done in parallel. Staff on different teams can be working on tasks at the same time (e.g. backup team, endpoint team, identity team), while also driving for completion of the phases in priority order.
 
-The items in the implementation checklists are in the recommended order of prioritization, not a technical dependency order. Use the checklists to confirm and modify your existing configuration as needed and in a way that works within your organization. For example, in the most important backup element, you backup some systems, but they may not be offline/immutable, or you may not test the full enterprise restore procedures, or you may not have backups of critical business systems or critical IT systems like Active Directory Domain Services (AD DS) domain controllers.
+The items in the implementation checklists are in the recommended order of prioritization, not a technical dependency order.
+
+Use the checklists to confirm and modify your existing configuration as needed and in a way that works in your organization. For example, in the most important backup element, you backup some systems, but they may not be offline/immutable, or you may not test the full enterprise restore procedures, or you may not have backups of critical business systems or critical IT systems like Active Directory Domain Services (AD DS) domain controllers.
 
 >[!Note]
 >See the [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/) Microsoft security blog post for an additional summary of this process.
 >
 
-### Phase 1. Prepare your recovery plan
+## Set up ransomware prevention right now
+
+The steps are:
+
+### Phase 1. Prepare your ransomware recovery plan
 
 This phase is designed to [minimize the monetary incentive from ransomware attackers](protect-against-ransomware-phase1.md) by making it:
 
@@ -65,11 +71,11 @@ This phase is designed to [minimize the monetary incentive from ransomware attac
 >While restoring many or all enterprise systems is a difficult endeavor, the alternative of paying an attacker for a recovery key they may or may not deliver, and using tools written by the attackers to try to recover systems and data.
 >
 
-### Phase 2. Limit the scope of damage
+### Phase 2. Limit the scope of ransomware damage
 
 Make the attackers work a lot harder to [gain access to multiple business critical systems through privileged access roles](protect-against-ransomware-phase2.md). Limiting the attacker’s ability to get privileged access makes it much harder to profit off of an attack on your organization, making it more likely they will give up and go elsewhere.
 
-### Phase 3. Make it hard to get in
+### Phase 3. Make it hard for cybercriminals to get in
 
 This last set of tasks is important to raise friction for entry but will take time to complete as part of a larger security journey. The goal of this phase is to make the attackers' work *much* harder as they try to [obtain access to your on-premises or cloud infrastructures](protect-against-ransomware-phase3.md) at the various common points of entry. There are a lot of these tasks, so it’s important to prioritize your work here based on how fast you can accomplish these with your current resources.
 

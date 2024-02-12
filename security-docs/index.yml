@@ -79,7 +79,7 @@ highlightedContent:
 #      url: /training/paths/get-started-azure-ai/
 
 # conceptualContent section (Optional; Remove if not applicable.)
- conceptualContent:
+conceptualContent:
   sections:
   -  title: Security job roles
      summary: Learning resources and certifications for security roles

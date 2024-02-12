@@ -180,7 +180,7 @@ additionalContent:
           summary: Apply the principles of Zero Trust to apps and infrastructure in Azure and other cloud providers
           links:
             - text: Overview
-               url: /security/zero-trust/azure-infrastructure-overview
+              url: /security/zero-trust/azure-infrastructure-overview
           
 
         # Card

@@ -169,7 +169,7 @@ additionalContent:
 #           summary: Find resources for customers and partners working with Microsoft 365 for business
 
         #Card
-        - text: Deployment plan with Microsoft 365
+        - title: Deployment plan with Microsoft 365
           summary: Follow a deployment plan for building Zero Trust security with Microsoft 365
           links:
             - text: Overview
@@ -245,7 +245,7 @@ additionalContent:
         - title: Security job roles - Career path training
           links:
             - text: Identity and access administrator
-              url: //training/career-paths/identity-and-access-admin
+              url: /training/career-paths/identity-and-access-admin
             - text: Information protection and compliance administrator
               url: /training/career-paths/information-protection-admin
             - text: Cybersecurity architect expert

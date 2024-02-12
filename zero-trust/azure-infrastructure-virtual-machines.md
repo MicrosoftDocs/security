@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to virtual machines in Azure 
 description: Learn how to secure virtual machines in Azure with Zero Trust.  
-ms.date: 02/09/2023
+ms.date: 02/12/2024
 ms.service: security
 author: sikovatc
 ms.author: sikovatc
@@ -31,7 +31,7 @@ Zero Trust principles for virtual machines are applied across the logical archit
 
 The following diagram the logical architecture components.
 
-:::image type="content" source="media/vm/vm-security-configure.png" alt-text="Diagram of the virtual machine logical architecture.":::
+:::image type="content" source="media/vm/vm-security-configure.svg" alt-text="Diagram of the virtual machine logical architecture." lightbox="media/vm/vm-security-configure.svg:::
 
 In this diagram:
 
@@ -40,7 +40,7 @@ In this diagram:
 
 This article walks through the steps to apply the principles of Zero Trust across this logical architecture, using these steps.
 
-:::image type="content" source="media/vm/azure-infra-vm-subscription-architecture-2.png" alt-text="Diagram of virtual machines logical architecture components." lightbox="media/vm/azure-infra-vm-subscription-architecture-2.png":::
+:::image type="content" source="media/vm/azure-infra-vm-subscription-architecture-2.svg" alt-text="Diagram of virtual machines logical architecture components." lightbox="media/vm/azure-infra-vm-subscription-architecture-2.svg":::
 
 | Step | Task | Zero Trust principle(s) applied |
 | --- | --- | --- |
@@ -145,7 +145,7 @@ To configure secure access:
 - Set up multi-factor authentication with conditional access
 - Use privileged access workstations (PAWs)
 
-:::image type="content" source="media/vm/azure-infra-vm-secure-access.png" alt-text="Figure for configuring secure access to a virtual machine.":::
+:::image type="content" source="media/vm/azure-infra-vm-secure-access.png" alt-text="Figure for configuring secure access to a virtual machine. lightbox="media/vm/azure-infra-vm-secure-access.png":::
 
 In the diagram:
 
@@ -160,7 +160,7 @@ In the reference architecture, [Azure Bastion](/azure/bastion/bastion-overview#k
 
 The following diagram shows the components of secure communications for virtual machines.
 
-:::image type="content" source="media/vm/azure-infra-vm-secure-comm.png" alt-text="Diagram of secure communication for virtual machines." lightbox="media/vm/azure-infra-vm-secure-comm.png":::
+:::image type="content" source="media/vm/azure-infra-vm-secure-comm.svg" alt-text="Diagram of secure communication for virtual machines." lightbox="media/vm/azure-infra-vm-secure-comm.svg":::
 
 ### Set up multi-factor authentication with conditional access
 
@@ -236,7 +236,7 @@ See this additional guidance:
 
 Threat protection for Azure infrastructure is provided by Microsoft Defender for Cloud. This protection is extended to virtual machines when you provision [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction), as shown in the following diagram.
 
-:::image type="content" source="media/vm/azure-infra-vm-threat-protection.svg" alt-text="Diagram of enabling threat protection." lightbox="media/vm/azure-infra-vm-threat-protection.png":::
+:::image type="content" source="media/vm/azure-infra-vm-threat-protection.svg" alt-text="Diagram of enabling threat protection." lightbox="media/vm/azure-infra-vm-threat-protection.svg":::
 
 In the diagram:
 

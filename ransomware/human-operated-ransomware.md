@@ -1,6 +1,5 @@
 ---
-title: "Human-operated ransomware"
-keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, extortionware, malicious encryption
+title: "Define ransomware, human-operated ransomware, and how to prevent ransomware cyber attack"
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -11,30 +10,45 @@ ms.collection:
 ms.custom: cxdef-zt-ransomware
 ms.topic: article
 localization_priority: Normal
-description: Learn about ransomware prevention and methods to stop human-operated ransomware attacks, with links to configure your cyber security to help stop ransomware.
+description: Learn what ransomware is, how it works, and how to protect against it with links to the Microsoft products that help prevent ransomware.
 ---
 
 # What is ransomware?
 
-*Ransomware* is a type of cyber security attack that destroys or encrypts files and folders, preventing the owner of the effected device from accessing their data. The cybercriminal can then extort money from the business owner in exchange for a key to unlock the encrypted data. But, even when paid, cybercriminals may not provide the key to return access to the business owner.
+In practice, a *ransomware attack* blocks access to your data until a ransom is paid.
+
+In fact, ransomware is a type of malware or phishing cyber security attack that destroys or encrypts files and folders on a computer, server, or device.
+
+Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But, even when paid, cybercriminals *may never* give the key to the business or device owner, and stop access *permanently*.
 
 > [!IMPORTANT]
 > ***Need to start right now?*** See [Protect your organization against ransomware and extortion](protect-against-ransomware.md) to **quickly** configure your IT infrastructure for the best ransomware protection.
 
-## Automated ransomware attacks
+## How do ransomware attacks work?
 
-Commodity ransomware attacks are usually automated. These cyber attacks can spread like a virus, infect devices through methods like email phishing and malware delivery, and require malware remediation. That means one ransomware prevention technique is to safeguard your mail with a system like *Microsoft Defender for Office 365*, or *Microsoft Defender XDR*, to detect malware and phishing attempts early.
+Ransomware can be automated, or involve human hands on a keyboard -- a *human operated* attack.
 
-## Human-operated ransomware attacks
+### Automated ransomware attacks
+
+*Commodity ransomware attacks* are usually automated. These cyber attacks can spread like a virus, infect devices through methods like email phishing and malware delivery, and require malware remediation.
+
+That means one ransomware prevention technique is to safeguard your email with a system like 
+![**Microsoft Defender for Office 365**](/microsoft-365/security/office-365-security/?view=o365-worldwide) that protects against malware and phishing delivery, or the comprehensive ![**Microsoft Defender XDR**](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-xdr) to detect malware and phishing attempts *early*.
+
+### Human-operated ransomware attacks
 
 *Human-operated ransomware* is the result of an **active attack** by cybercriminals that infiltrate an organization's on-premises or cloud IT infrastructure, elevate their privileges, and deploy ransomware to critical data.
 
-These "hands-on-keyboard" attacks target an organization rather than a single device. *Human-operated* means there is a human attacker using their  insights into common system and security misconfigurations to infiltrate the organization, navigate the network, and adapt to the environment and its weaknesses as they go.
+These "hands-on-keyboard" attacks usually target organizations rather than a single devices.
 
-Hallmarks of these human-operated ransomware attacks typically include **credential theft** and **lateral movement** with a elevation of the privileges in stolen accounts. Activities might take place during maintenance windows and involve security configuration gaps discovered by cybercriminals. The goal is the **deployment of a ransomware payload** to whatever *high business impact resources* the attackers choose.
+*Human-operated* also means there is a human attacker using their insights into common system and security misconfigurations to infiltrate the organization, navigate the network, and adapt to the environment and its weaknesses as they go.
+
+Hallmarks of these human-operated ransomware attacks typically include **credential theft** and **lateral movement** with a elevation of the privileges in stolen accounts.
+
+Activities might take place during maintenance windows and involve security configuration gaps discovered by cybercriminals. The goal is the **deployment of a ransomware payload** to whatever *high business impact resources* the attackers choose.
 
 > [!IMPORTANT]
-> These attacks can be catastrophic to business operations and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware that usually only requires malware remediation, human-operated ransomware will continue to threaten your business operations after the initial encounter.
+> These attacks can be *catastrophic* to business operations and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware that usually only requires malware remediation, **human-operated ransomware will continue to threaten your business operations after the initial encounter**.
 
 The graphic below shows how this extortion-based attack is growing in impact and likelihood.
 
@@ -42,7 +56,11 @@ The graphic below shows how this extortion-based attack is growing in impact and
 
 ## Ransomware protection for your organization
 
-For a comprehensive view of ransomware and extortion and how to protect your organization, use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation. But here's a summary of the guidance:
+First, prevent phishing and malware delivery with ![**Microsoft Defender for Office 365**](/microsoft-365/security/office-365-security/?view=o365-worldwide) and ![**Microsoft Defender XDR**](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-xdr) to detect malware and phishing attempts *early*.
+
+For a comprehensive view of ransomware and extortion and how to protect your organization, use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation. 
+
+Here's a summary of the guidance:
 
 ![The summary of the guidance in the Human-Operated Ransomware Mitigation Project Plan](media/human-operated-ransomware/stakes-weaknesses-plan.png)
 
@@ -62,7 +80,7 @@ Download the [Protect your organization from ransomware poster](https://download
 
 [![The "Protect your organization from ransomware" poster](media/human-operated-ransomware/ransomware-poster-thumbnail.png)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
 
-## Additional ransomware resources
+## Additional ransomware prevention resources
 
 Key information from Microsoft:
 

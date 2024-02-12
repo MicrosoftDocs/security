@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to a spoke VNet with Azure PaaS Services
 description: Learn how to secure a spoke VNet for PaaS workloads with Zero Trust. 
-ms.date: 06/28/2023
+ms.date: 02/12/2024
 ms.service: security
 author: brsteph
 ms.author: bstephenson
@@ -47,7 +47,7 @@ This guide provides instructions for a specific reference architecture, but the 
 
 The following diagram shows a common reference architecture for PaaS-based workloads.
 
-:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-2.png" alt-text="Diagram of the reference architecture for PaaS-based workloads." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-2.png":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-2.svg" alt-text="Diagram of the reference architecture for PaaS-based workloads." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-2.svg":::
 
 In the diagram:
 
@@ -59,7 +59,7 @@ In the diagram:
 
 The following diagram shows the logical architecture of these components within an Azure subscription.
 
-:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.png" alt-text="Diagram of components within an Azure subscription.":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.svg" alt-text="Diagram of components within an Azure subscription. lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.svg":::
 
 In the diagram, all components of the spoke VNet are contained in a dedicated resource group:
 
@@ -108,9 +108,9 @@ This role can be created using the scripts in the Azure Landing Zone Reference A
 
 By isolating network resources from compute, data, or storage resources, you reduce the likelihood of permissions bleed. In addition, by ensuring that all related resources are in one resource group, you can make one security assignment and better manage logging and monitoring to these resources.
 
-Rather than having the spoke network resources available in multiple contexts in a shared resource group, create a dedicated resource group. The following reference architecture diagram shows this configuration.
+Rather than having the spoke network resources available in multiple contexts in a shared resource group, create a dedicated resource group. The following architecture diagram shows this configuration.
 
-:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.png" alt-text="Diagram of isolating infrastructure into its own resource group." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.png":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.svg" alt-text="Diagram of isolating infrastructure into its own resource group." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.svg":::
 
 In the diagram, resources and components across the reference architecture are divided into dedicated resource groups for application services, Azure SQL databases, storage accounts, hub VNet resources, and spoke VNet resources.
 
@@ -221,7 +221,7 @@ See [Azure Firewall](/azure/firewall/overview) and [Route Tables](/azure/virtual
 
 Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Using subnets as sources, define networking patterns in the network security groups. Here's an example.
 
-:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-tiers-6.png" alt-text="Diagram of networking patterns in network security groups." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-tiers-6.png":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-tiers-6.svg" alt-text="Diagram of networking patterns in network security groups." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-tiers-6.svg":::
 
 Use the [Manage network security groups: Create a security rule](/azure/virtual-network/manage-network-security-group?tabs=network-security-group-portal#create-a-security-rule) process to add rules to your network security groups.
 
@@ -317,7 +317,7 @@ Securing access to the VNet and applications include:
 
 The following diagram shows both access modes across the reference architecture.
 
-:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-network-7.png" alt-text="Diagram of access modes in the reference architecture." lightbox="media/spoke/azure-infra-spoke-network-7.png":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-network-7.svg" alt-text="Diagram of access modes in the reference architecture." lightbox="media/spoke/azure-infra-spoke-network-7.svg":::
 
 ### Secure traffic within Azure environment for the VNet and application
 

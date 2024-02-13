@@ -114,9 +114,13 @@ For information on how to configure a customer-managed encryption key with Azure
 
 [Enable server-side encryption](/azure/virtual-machines/disks-enable-host-based-encryption-portal#prerequisites) at the host for end-to-end encryption of your virtual machine data.
 
+<!---
+
 - Encryption starts on the physical host, your virtual machine is allocated to
 - Encrypts the OS and Temporary disks that are provisioned on the host; a ```--d``` carries it over to the storage service
 - Double encryption on OS disks, Data disks, snapshots, and images
+
+--->
 
 After this is complete, you use your customer-managed encryption key to encrypt the disks within your virtual machine.
 

@@ -14,7 +14,8 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 02/12/2024
+  ms.date: 02/13/2024
+
 
 # Maximum of 8 items
 highlightedContent:
@@ -29,25 +30,25 @@ highlightedContent:
       itemType: concept
       url: /azure/security/fundamentals/shared-responsibility-ai
     # Card
-    - title: AI and Red Team
-      itemType: get-started
+    - title: Microsoft AI Red Team and safer AI
+      itemType: overview
       url: https://www.microsoft.com/security/blog/2023/08/07/microsoft-ai-red-team-building-future-of-safer-ai/
     # Card
     - title: Get started with Azure AI Services
       itemType: learn
       url: /training/paths/get-started-azure-ai/
     # Card
-    - title: Microsoft Security Podcast - The future of security
-      itemType: overview
-      url: https://thecyberwire.com/podcasts/afternoon-cyber-tea/78/notes
-    # Card
-    - title: Microsoft Ignite 2023
-      itemType: whats-new
-      url: https://ignite.microsoft.com/home
-    # Card
-    - title: Configure SIEM security operations using Microsoft Sentinel
+    - title: Live learning experience! Microsoft Security Copilot
       itemType: learn
-      url: /credentials/applied-skills/configure-siem-security-operations-using-microsoft-sentinel
+      url: shows/learn-live/microsoft-copilot-for-security/
+    # Card
+    - title: Register now! Security for all in the age of AI
+      itemType: learn
+      url: https://mssecure.eventcore.com/
+    # Card
+    - title: Microsoft security podcast - The future of security
+      itemType: overview
+      url: https://thecyberwire.com/podcasts/afternoon-cyber-tea/78/notes 
     # Card
     - title: Cybersecurity news and highlights archive
       itemType: reference
@@ -55,91 +56,33 @@ highlightedContent:
 
 
 # productDirectory section (Optional; Remove if not applicable.)
-# productDirectory:
-#  title: AI and Security CoPilot
-#  items:
+productDirectory:
+  title: Security job roles
+  summary: Learning resources and certifications for security roles
+  items:
     # Card
-#    - title: What is Microsoft Security Copilot?
-#      imageSrc: "./media/hubpage/id-admin.png"
-#      url: /security-copilot/microsoft-security-copilot
+    - title: Career path training
+      imageSrc: "./media/hubpage/id-admin.png"
+      links:
+        - url: /training/career-paths/identity-and-access-admin
+          text: Identity and access administrator
+        - url: /training/career-paths/information-protection-admin
+          text: Information protection and compliance administrator
+        - url: /credentials/certifications/cybersecurity-architect-expert
+          text: Cybersecurity architect expert
+        - url: /training/career-paths/security-operations-analyst
+          text: Security operations analyst
+        - url: /training/career-paths/security-engineer
+          text: Security engineer
 
     # Card
-#    - title: AI shared responsibility model
-#      imageSrc: "./media/hubpage/info-prot.png"
-#      url: /azure/security/fundamentals/shared-responsibility-ai 
-
-    # Card
-#    - title: Get started with Azure AI Services
-#      imageSrc: "./media/hubpage/learn.png"
-#      url: /training/paths/get-started-azure-ai/
-
-    # Card
-#    - title: AI and Red Team
-#      imageSrc: "./media/hubpage/sec-op.png"
-#      url: /training/paths/get-started-azure-ai/
-
-# conceptualContent section (Optional; Remove if not applicable.)
-conceptualContent:
-  sections:
-  -  title: Security job roles
-     summary: Learning resources and certifications for security roles
-     items:
-      # Card
-      - title: Career path training
-        links:
-          - url: /training/career-paths/identity-and-access-admin
-            itemType: training
-            text: Identity and access administrator
-          - url: /training/career-paths/information-protection-admin
-            itemType: training
-            text: Information protection and compliance administrator
-          - url: /credentials/certifications/cybersecurity-architect-expert
-            itemType: training
-            text: Cybersecurity architect expert
-          - url: /training/career-paths/security-operations-analyst
-            itemType: training
-            text: Security operations analyst
-          - url: /training/career-paths/security-engineer
-            itemType: training
-            text: Security engineer
-
-      # Card
-#      - title: Career path training
-#        links:
-#          - url: /training/career-paths/information-protection-admin
-#            itemType: training
-#            text: Information protection and compliance administrator
-
-      # Card
-#      - title: Career path training
-#        links:
-#          - url: /credentials/certifications/cybersecurity-architect-expert
-#            itemType: training
-#            text: Cybersecurity architect expert
-
-      # Card
-#      - title: Career path training
-#        links:
-#          - url: /training/career-paths/security-operations-analyst
-#            itemType: training
-#            text: Security operations analyst       
-
-      # Card
-#      - title: Career path training
-#        links:
-#          - url: /training/career-paths/security-engineer
-#            itemType: training
-#            text: Security engineer        
-
-      # Card
-      - title: Learn how organizational functions play an important role in security
-        links:
-          - url: /azure/cloud-adoption-framework/organize/cloud-security
-            itemType: concept
-            text: Cloud security functions
-          - url: https://www.youtube.com/watch?v=GlqjvlX93gY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=14
-            itemType: concept
-            text: MCRA security roles
+    - title: Learn how organizational functions play an important role in security
+      imageSrc: "./media/hubpage/learn.png"
+      links:
+        - url: /azure/cloud-adoption-framework/organize/cloud-security
+          text: Cloud security functions
+        - url: https://www.youtube.com/watch?v=GlqjvlX93gY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=14
+          text: MCRA security roles
 
 additionalContent:
 #  Maximum of 4 sections
@@ -152,147 +95,216 @@ additionalContent:
         # Card
         - title: What is Zero Trust?
           summary: Learn about the guiding principles of Zero Trust
-          links:
-            - text: Overview
-              url: /security/zero-trust/zero-trust-overview
+          url: /security/zero-trust/zero-trust-overview
 
         # Card
         - title: Adoption framework
+          url: /security/zero-trust/adopt/zero-trust-adoption-overview
           summary: Get help driving strategy and implementation across your organization
-          links:
-            - text: Overview
-              url: /security/zero-trust/adopt/zero-trust-adoption-overview
 
         # Card
-#         - title: Small business guidance
-#           url: /security/zero-trust/guidance-smb-partner
-#           summary: Find resources for customers and partners working with Microsoft 365 for business
+        - title: Small business guidance
+          url: /security/zero-trust/guidance-smb-partner
+          summary: Find resources for customers and partners working with Microsoft 365 for business
 
         #Card
         - title: Deployment plan with Microsoft 365
+          url: /microsoft-365/security/microsoft-365-zero-trust?bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json%3Fview%3Do365-worldwide&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json%3Fview%3Do365-worldwide&view=o365-worldwide
           summary: Follow a deployment plan for building Zero Trust security with Microsoft 365
-          links:
-            - text: Overview
-              url: /microsoft-365/security/microsoft-365-zero-trust?bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json%3Fview%3Do365-worldwide&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json%3Fview%3Do365-worldwide&view=o365-worldwide
 
         # Card
         - title: Deployment plan with Microsoft Azure and infrastructure
+          url: /security/zero-trust/azure-infrastructure-overview
           summary: Apply the principles of Zero Trust to apps and infrastructure in Azure and other cloud providers
-          links:
-            - text: Overview
-              url: /security/zero-trust/azure-infrastructure-overview
-          
 
         # Card
-#        - title: Securing DevOps environments for Zero Trust
-#          url: /security/zero-trust/develop/secure-devops-environments-zero-trust
-#          summary: Best practices for securing your DevOps environment
+        - title: Securing DevOps environments for Zero Trust
+          url: /security/zero-trust/develop/secure-devops-environments-zero-trust
+          summary: Best practices for securing your DevOps environment
 
 #  Section 1
-    - title: Getting started
-#      summary: Defend against threats by rapidly detecting, responding, and recovering from attacks
+    - title: Modernize Security Operations (SecOps/SOC)
+      summary: Defend against threats by rapidly detecting, responding, and recovering from attacks
       items:
         # Card
-        - title: Modernize Security Operations (SEcOps/SOC)
-          summary: Defend against threats by rapidly detecting, responding, and recovering from attacks
+        - title: Fundamentals
           links:
             - text: Microsoft Defender for Cloud
               url: /azure/defender-for-cloud/defender-for-cloud-introduction
-#            - text: Implement XDR and SIEM tools
-#              url: /security/operations/siem-xdr-overview
-#            - text: Architecture styles
-#              url: /azure/architecture/guide/architecture-styles/
-#            - text: Integrate Microsoft Defender XDR into operations
-#              url: /azure/architecture/guide/architecture-styles/
-#            - text: Continued learning - Defend against threats
-#              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/w7m3hn7mjwwmwk?wt.mc_id=wwlsecurityhub_threat_content_scimktg_csasci
-
+            - text: Zero Trust and Microsoft 365
+              url: /microsoft-365/security/microsoft-365-zero-trust?view=o365-worldwide
+            - text: Azure threat protection
+              url: /azure/security/fundamentals/threat-detection
         # Card
-        - title: Secure access and identities
-          summary: Configure and manage authentication and authorization of identities for users, devices, resources, and applications
+        - title: Strategy and planning
           links:
-            - text: Identity protection
-              url: /azure/active-directory/identity-protection/overview-identity-protection
-#            - text: Develop a privileged access strategy
-#              url: /security/privileged-access-workstations/privileged-access-strategy
-#            - text: Identity architecture design
-#              url: /azure/architecture/identity/identity-start-here
-#            - text: How to investigate risk
-#              url: /azure/active-directory/identity-protection/howto-identity-protection-investigate-risk
-#            - text: Continued learning - Secure access and improve efficiency with Microsoft Entra
-#              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/2xqpa0zyjdz848
-
+            - text: Modernize in the cloud
+              url: /azure/cloud-adoption-framework/modernize/
+            - text: Define a security strategy
+              url: /azure/cloud-adoption-framework/strategy/define-security-strategy
+            - text: Security operations functions
+              url: /azure/cloud-adoption-framework/organize/cloud-security-operations-center
         # Card
-        - title: Protect and govern data
-          summary: Protect data and safeguard sensitive information across platforms, applications, and clouds
+        - title: Architecture
           links:
-            - text: Learn about Microsoft Purview
-              url: /purview/purview
-#            - text: Prevent data loss
-#              url: /microsoft-365/compliance/dlp-learn-about-dlp
-#            - text: What is Compliance Manager?
-#              url: /microsoft-365/compliance/compliance-manager
-#            - text: Learn about Microsoft Priva
-#              url: /privacy/priva/priva-overview
-#            - text: Continued learning - Data security for today's world
-#              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/d1gncgmwkr277k
-
-#  Section 2
-    - title: Getting started
-#      summary: Defend against threats by rapidly detecting, responding, and recovering from attacks
-      items:
-        # Card
-        - title: Security job roles - Career path training
-          links:
-            - text: Identity and access administrator
-              url: /training/career-paths/identity-and-access-admin
-            - text: Information protection and compliance administrator
-              url: /training/career-paths/information-protection-admin
-            - text: Cybersecurity architect expert
-              url: /credentials/certifications/cybersecurity-architect-expert
-            - text: Security operations analyst
-              url: /training/career-paths/security-operations-analyst
-            - text: Learn how organizational functions play an important role in security
-              url: /azure/cloud-adoption-framework/organize/cloud-security     
-
-        # Card
-        - title: Modernize Security Operations (SEcOps/SOC)
-          links:
-            - text: Microsoft Defender for Cloud
-              url: /azure/defender-for-cloud/defender-for-cloud-introduction
-            - text: Implement XDR and SIEM tools
-              url: /security/operations/siem-xdr-overview
             - text: Architecture styles
               url: /azure/architecture/guide/architecture-styles/
-            - text: Integrate Microsoft Defender XDR into operations
-              url: /azure/architecture/guide/architecture-styles/
-            - text: Continued learning - Defend against threats
-              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/w7m3hn7mjwwmwk?wt.mc_id=wwlsecurityhub_threat_content_scimktg_csasci
+            - text: Security operations (video)
+              url: https://www.youtube.com/watch?v=6g-C_u8qg5Q&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=17
+            - text: SecOps integration (video)
+              url: https://www.youtube.com/watch?v=91gqkLnmiSc&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=11
 
         # Card
-        - title: Secure access and identities
+        - title: Implementation
+          links:
+            - text: Implement XDR and SIEM tools
+              url: /security/operations/siem-xdr-overview
+            - text: Turn on Microsoft Defender XDR
+              url: /microsoft-365/security/defender/m365d-enable
+            - text: Design your Microsoft Sentinel workspace
+              url: /azure/sentinel/design-your-workspace-architecture
+        # Card
+        - title: Operation
+          links:
+            - text: Integrate Microsoft Defender XDR into operations
+              url: /azure/architecture/guide/architecture-styles/
+            - text: Protect against ransomware
+              url: /security/ransomware/protect-against-ransomware
+            - text: Incident response
+              url: /security/operations/incident-response-overview
+        # Card
+        - title: Continued learning
+          links:
+            - text: Defend against threats
+              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/w7m3hn7mjwwmwk?wt.mc_id=wwlsecurityhub_threat_content_scimktg_csasci
+
+#  Section 2
+    - title: Secure access and identities
+      summary: Configure and manage authentication and authorization of identities for users, devices, resources, and applications
+      items:
+        # Card
+        - title: Fundamentals
           links:
             - text: Identity protection
               url: /azure/active-directory/identity-protection/overview-identity-protection
+            - text: Secure your organization's identities
+              url: /azure/active-directory/fundamentals/concept-secure-remote-workers
+            - text: Identity governance
+              url: /azure/active-directory/governance/identity-governance-overview
+        # Card
+        - title: Strategy and planning
+          links:
+            - text: Microsoft Entra ID and hybrid identity
+              url: /azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-active-directory-hybrid-identity
             - text: Develop a privileged access strategy
               url: /security/privileged-access-workstations/privileged-access-strategy
-            - text: Identity architecture design
-              url: /azure/architecture/identity/identity-start-here
-            - text: How to investigate risk
-              url: /azure/active-directory/identity-protection/howto-identity-protection-investigate-risk
-            - text: Continued learning - Secure access and improve efficiency with Microsoft Entra
-              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/2xqpa0zyjdz848
+            - text: Azure identity and access for landing zones
+              url: /azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones
 
         # Card
-        - title: Protect and govern data
+        - title: Architecture
+          links:
+            - text: Identity architecture design
+              url: /azure/architecture/identity/identity-start-here
+            - text: Microsoft Entra architecture
+              url: /azure/active-directory/fundamentals/active-directory-architecture
+            - text: Zero Trust user access (video)
+              url: https://www.youtube.com/watch?v=4alqTPMtSzU&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=16
+            - text: Beyond VPN (video)
+              url: https://www.youtube.com/watch?v=HqsqTttYJVY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=8
+
+        # Card
+        - title: Implementation
+          links:
+            - text: Deploy identity protection
+              url: /azure/active-directory/identity-protection/how-to-deploy-identity-protection
+            - text: Guidance for Microsoft Entra ID P1 or P2 customers
+              url: /azure/active-directory/fundamentals/concept-secure-remote-workers#guidance-for-azure-ad-premium-plan-2-customers
+            - text: Privilege access deployment
+              url: /security/privileged-access-workstations/privileged-access-deployment
+        # Card
+        - title: Operation
+          links:
+            - text: How to investigate risk
+              url: /azure/active-directory/identity-protection/howto-identity-protection-investigate-risk
+        # Card
+        - title: Continued learning
+          links:
+            - text: Secure access and improve efficiency with Microsoft Entra
+              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/2xqpa0zyjdz848
+
+#  Section 3
+    - title: Protect and govern data
+      summary: Protect data and safeguard sensitive information across platforms, applications, and clouds
+      items:
+        # Card
+        - title: What is Microsoft Purview?
           links:
             - text: Learn about Microsoft Purview
               url: /purview/purview
+            - text: Deploy risk and compliance solutions
+              url: /microsoft-365/compliance/purview-compliance
+            - text: Govern your data estate
+              url: /azure/purview/overview
+
+        # Card
+        - title: Discover and manage data assets
+          links:
+            - text: Elastic data map in Microsoft Purview
+              url: /azure/purview/concept-elastic-data-map
+            - text: Understand business glossary features
+              url: /azure/purview/concept-business-glossary
+            - text: Insights into your data estate
+              url: /azure/purview/concept-insights
+
+        # Card
+        - title: Protect data where it lives
+          links:
+            - text: Deploy information protection
+              url: /microsoft-365/compliance/information-protection-solution
             - text: Prevent data loss
               url: /microsoft-365/compliance/dlp-learn-about-dlp
+
+        # Card
+        - title: Manage the data lifecycle
+          links:
+            - text: Deploy data lifecycle management
+              url: /microsoft-365/compliance/data-governance-solution
+            - text: Learn about retention policies and labels
+              url: /microsoft-365/compliance/retention
+            - text: Manage records and information
+              url: /microsoft-365/compliance/records-management
+
+        # Card
+        - title: Identify and manage insider risk
+          links:
+            - text: Protect against insider risks
+              url: /microsoft-365/compliance/insider-risk-solution-overview
+            - text: Protect against communications risks
+              url: /microsoft-365/compliance/communication-compliance
+
+        # Card
+        - title: Improve your compliance posture
+          links:
             - text: What is Compliance Manager?
               url: /microsoft-365/compliance/compliance-manager
+            - text: Audit user and admin operations
+              url: /microsoft-365/compliance/audit-solutions-overview
+            - text: Solutions for eDiscovery
+              url: /microsoft-365/compliance/ediscovery
+
+        # Card
+        - title: Manage privacy risk
+          links:
             - text: Learn about Microsoft Priva
               url: /privacy/priva/priva-overview
-            - text: Continued learning - Data security for today's world
+            - text: Get started wtih Priva
+              url: /privacy/priva/priva-setup
+            - text: Manage data privacy and data protection
+              url: /microsoft-365/solutions/data-privacy-protection
+
+        # Card
+        - title: Continued learning
+          links:
+            - text: Data security for today’s world
               url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/d1gncgmwkr277k

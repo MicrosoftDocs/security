@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 02/07/2024
+ms.date: 02/13/2024
 ---
 
 # Security news and highlights
@@ -17,6 +17,8 @@ Here are past news and highlights that you may have missed or would like to revi
 
 2024
 
+- [Configure SIEM security operations using Microsoft Sentinel](/credentials/applied-skills/configure-siem-security-operations-using-microsoft-sentinel)
+- [Microsoft Ignite](https://ignite.microsoft.com/home)
 - [What is ransomware?](/security/ransomware/human-operated-ransomware)
 - [Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls](/credentials/applied-skills/secure-azure-services-and-workloads-with-microsoft-defender-for-cloud-regulatory-compliance-controls/)
 - [Azure network security](/azure/networking/security)

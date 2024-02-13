@@ -40,7 +40,7 @@ highlightedContent:
     # Card
     - title: Live learning experience! Microsoft Security Copilot
       itemType: learn
-      url: shows/learn-live/microsoft-copilot-for-security/
+      url: /shows/learn-live/microsoft-copilot-for-security/
     # Card
     - title: Register now! Security for all in the age of AI
       itemType: learn

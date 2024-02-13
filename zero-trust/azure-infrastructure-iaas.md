@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to spoke virtual networks in Azure
 description: Learn how to secure a spoke virtual network for IaaS workloads with Zero Trust.   
-ms.date: 02/09/2023
+ms.date: 02/12/2024
 ms.service: security
 author: brsteph
 ms.author: bstephenson
@@ -29,7 +29,7 @@ This article is a part of a series of articles that demonstrate how to apply the
 
 The following diagram shows a common reference architecture for IaaS-based workloads.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-architecture-1.png" alt-text="Diagram of the reference architecture for IaaS-based workloads.":::
+:::image type="content" source="media/spoke/azure-infra-spoke-architecture-1.svg" alt-text="Diagram of the reference architecture for IaaS-based workloads." lightbox="media/spoke/azure-infra-spoke-architecture-1.svg":::
 
 In the diagram:
 
@@ -43,7 +43,7 @@ The application shown in the reference architecture follows the [N-tier architec
 
 The following diagram shows the components of a resource group for a spoke VNet in an Azure subscription separate from the subscription for the hub VNet.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="Diagram of the components of a resource group for a spoke VNet.":::
+:::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="Diagram of the components of a resource group for a spoke VNet." lightbox="media/spoke/azure-infra-spoke-subscription-architecture-2.png":::
 
 In the diagram, all the components of the spoke VNet are contained in a dedicated resource group:
 
@@ -89,7 +89,7 @@ By isolating network resources from compute, data, or storage resources, you red
 
 Rather than having the spoke network resources available in multiple contexts in a shared resource group, create a dedicated resource group for it. The reference architecture that this article supports illustrates this concept. 
 
-:::image type="content" source="media/spoke/azure-infra-spoke-dedicated-resource-group-3.png" alt-text="Diagram of a dedicated resource group for a spoke VNet." lightbox="media/spoke/azure-infra-spoke-dedicated-resource-group-3.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-dedicated-resource-group-3.svg" alt-text="Diagram of a dedicated resource group for a spoke VNet." lightbox="media/spoke/azure-infra-spoke-dedicated-resource-group-3.svg":::
 
 In the figure, resources and components across the reference architecture are divided into dedicated resource groups for virtual machines, storage accounts, hub VNet resources, and spoke VNet resources.
 
@@ -123,7 +123,7 @@ Azure network security groups are used to filter network traffic between Azure r
 
 For a multi-tier virtual-machine based application, the recommendation is to create a dedicated network security group (NSG in the following figure) for each subnet that hosts a virtual machine role.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-nsg-4.png" alt-text="Diagram of using dedicated network security groups for each subnet that hosts a virtual machine role.":::
+:::image type="content" source="media/spoke/azure-infra-spoke-nsg-4.png" alt-text="Diagram of using dedicated network security groups for each subnet that hosts a virtual machine role." lightbox="media/spoke/azure-infra-spoke-nsg-4.png":::
 
 In the diagram:
 
@@ -142,7 +142,7 @@ Application security groups enable you to configure network security as a natura
 
 Inside your workload, identify the specific virtual machine roles. Then, build an application security group for each role. In the reference architecture, three application security groups are represented.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-asg-5.png" alt-text="Diagram of example application security groups for different virtual machine roles.":::
+:::image type="content" source="media/spoke/azure-infra-spoke-asg-5.png" alt-text="Diagram of example application security groups for different virtual machine roles." lightbox="media/spoke/azure-infra-spoke-asg-5.png":::
 
 In the diagram:
 
@@ -192,7 +192,7 @@ Repeat this process with inbound rules, adjusting the name and description as ap
 
 If you click the rule and scroll to the bottom, you'll see more details, as shown here.
 
-:::image type="content" source="media/spoke/rule-details.png" alt-text="Screenshot of example rule details.":::
+:::image type="content" source="media/spoke/rule-details.png" alt-text="Screenshot of example rule details." lightbox="media/spoke/rule-details.png":::
 
 This message gives the following two warnings:
 
@@ -235,11 +235,11 @@ The outbound connections are:
 
 Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here's an example diagram of using application security groups to define network traffic patterns in the network security groups for a spoke VNet that is used along with a hub VNet. This is the recommended configuration.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.png" alt-text="Diagram of networking patterns for a three-tier web application in a hub-spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-7.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.svg" alt-text="Diagram of networking patterns for a three-tier web application in a hub-spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-7.svg":::
 
 As another example, here is a configuration for a stand-alone spoke VNet in which the Web Application Firewall is placed in the Application Gateway subnet of the spoke VNet.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.png" alt-text="Diagram of networking patterns for a three-tier web application in a standalone spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-6.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.svg" alt-text="Diagram of networking patterns for a three-tier web application in a standalone spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-6.svg":::
 
 You need the following network security group rules:
 
@@ -278,7 +278,7 @@ You'll notice after completion that there is a blue icon for informational alert
 
 Here's an example.
 
-:::image type="content" source="media/spoke/informational-alert.png" alt-text="Screenshot of an example informational alert.":::
+:::image type="content" source="media/spoke/informational-alert.png" alt-text="Screenshot of an example informational alert." lightbox="media/spoke/informational-alert.png":::
 
 The rule only applies when this application security group is used in this network.
 
@@ -353,7 +353,7 @@ Securing access to the VNet and application includes:
 
 The following diagram shows both of these access modes across the reference architecture.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-network-7.png" alt-text="Diagram of the access modes in a spoke VNet reference architecture." lightbox="media/spoke/azure-infra-spoke-network-7.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-network-7.svg" alt-text="Diagram of the access modes in a spoke VNet reference architecture." lightbox="media/spoke/azure-infra-spoke-network-7.svg":::
 
 ### Secure traffic within Azure environment for the VNet and application
 
@@ -389,7 +389,7 @@ Here's an example in the Microsoft Defender for Cloud portal.
 
 If you choose to onboard one of the Defender for Cloud plans that offer Advanced Workload Protections, it includes Adaptive Network Hardening Recommendations to improve your existing network security group rules. Here's an example.
 
-:::image type="content" source="media\spoke\network-hardening.png" alt-text="Screenshot of example network hardening recommendations." lightbox="media\spoke\network-hardening.png":::
+:::image type="content" source="media/spoke/network-hardening.png" alt-text="Screenshot of example network hardening recommendations." lightbox="media/spoke/network-hardening.png":::
 
 You can accept the recommendation by selecting **Enforce**, which either creates a new network security group rule or modify an existing one.
 

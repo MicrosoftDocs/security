@@ -149,7 +149,7 @@ To configure secure access:
 - Set up multi-factor authentication with conditional access
 - Use privileged access workstations (PAWs)
 
-:::image type="content" source="media/vm/azure-infra-vm-secure-access.png" alt-text="Figure for configuring secure access to a virtual machine. lightbox="media/vm/azure-infra-vm-secure-access.png":::
+:::image type="content" source="media/vm/azure-infra-vm-secure-access.png" alt-text="Figure for configuring secure access to a virtual machine." lightbox="media/vm/azure-infra-vm-secure-access.png":::
 
 In the diagram:
 

@@ -31,7 +31,7 @@ You apply Zero Trust principles for Azure Storage across the architecture, from 
 
 The following diagram shows the logical architecture components.
 
-:::image type="content" source="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg" alt-text="Diagram of logical architecture components for Azure Storage services." lightbox="media/secure-storageazure-infra-storage-subscription-architecture-1.svg":::
+:::image type="content" source="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg" alt-text="Diagram of logical architecture components for Azure Storage services." lightbox="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg":::
 
 In the diagram:
 

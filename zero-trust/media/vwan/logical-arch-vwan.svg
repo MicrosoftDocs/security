@@ -1710,14 +1710,14 @@
 			<text x="14.54" y="957.38" class="st7" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>NSG/ASG(s)</text>		</g>
 		<g id="shape2604-515" v:mID="2604" v:groupContext="shape" transform="translate(897.675,-713.551)">
 			<title>Sheet.2604</title>
-			<desc>Resource groups(s)</desc>
+			<desc>Resource group(s)</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(714000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="138.6" cy="949.15" width="277.2" height="45.0744"/>
 			<rect x="0" y="926.613" width="277.2" height="45.0744" class="st59"/>
-			<text x="45.41" y="956.35" class="st7" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Resource groups(s)</text>		</g>
+			<text x="50.11" y="956.35" class="st7" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Resource group(s)</text>		</g>
 		<g id="shape2605-518" v:mID="2605" v:groupContext="shape" transform="translate(1263.7,-673.051)">
 			<title>Sheet.2605</title>
 			<desc>Application</desc>

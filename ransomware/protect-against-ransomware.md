@@ -1,5 +1,5 @@
 ---
-title: "Get started and quickly configure ransomware so you can stop ransomware cybercriminals from targeting your organization."
+title: "Get started quickly configuring ransomware prevention so you can stop ransomware cybercriminals from targeting your organization."
 ms.author: dansimp
 author: dansimp
 f1.keywords:
@@ -12,13 +12,13 @@ localization_priority: Normal
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
-description:  Get started and learn how to prevent ransomware cybercriminals by quickly configuring ransomware prevention for your organization.
+description:  Learn how to protect against ransomware cybercriminals by quickly configuring ransomware prevention for your organization. Get started today!
 
 ---
 
-# Quickly protect against ransomware
+# Quickly protect against ransomware attacks
 
-Learning how to stop ransomware, and understanding that new threats evolve so your learning must continue, is critical to every organization due to the rising likelihood of ransomware attacks.
+Learning how to stop ransomware attacks, and understanding that new threats evolve so your learning must continue, is critical to every organization due to the rising likelihood of ransomware attacks.
 
 This guidance is organized into steps, starting with the most urgent actions to take.
 
@@ -27,14 +27,14 @@ Each step is a separate article linked below. Bookmark this page as your startin
 > [!NOTE]
 > What is ransomware? See the ransomware definition [here](/security/compass/human-operated-ransomware).
 
-## Important information before you begin
+## Important information about this article
 
 > [!NOTE]
 > The order of these steps is designed to ensure you reduce risk *as fast as possible*, and built on an assumption of great urgency that overrides normal security and IT priorities, in order to avoid or mitigate devastating attacks.
 
-![The three phases to protecting against ransomware](media/protect-against-ransomware/protect-against-ransomware-phases.png)
+![The three phases to protecting against ransomware attacks](media/protect-against-ransomware/protect-against-ransomware-phases.png)
 
-**It is important to note** this guidance is structured as steps or phases you should follow in the order shown. To best adapt this guidance to your situation:
+**It is important to note** this ransomware prevention guidance is structured as steps or phases you should follow in the order shown. To best adapt this guidance to your situation:
 
 1. **Stick with the recommended priorities**
 
@@ -56,7 +56,7 @@ Use the checklists to confirm and modify your existing configuration as needed a
 >See the [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/) Microsoft security blog post for an additional summary of this process.
 >
 
-## Set up ransomware prevention right now
+## Set up your system to prevent ransomware right now
 
 The steps are:
 

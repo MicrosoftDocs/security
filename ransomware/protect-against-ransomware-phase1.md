@@ -1,5 +1,5 @@
 ---
-title: "Phase 1: Prepare your recovery plan"
+title: "Protect against ransomware Phase 1: Prepare for cybercriminal ransomware attacks by having a backup and recovery plan"
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, extortionware, malicious encryption
 ms.author: dansimp
 author: dansimp
@@ -13,20 +13,24 @@ localization_priority: Normal
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
-description: Prepare your organization so that you can recover from an attack without having to pay the ransom.
+description: Prepare your organization so that you can recover from cybercriminal ransomware attacks without having to pay the ransom.
 
 ---
 
-# Phase 1: Prepare your recovery plan
+# Phase 1: Prepare a ransomware attack recovery plan
 
-The first thing you should do for these attacks is prepare your organization so that it has a viable alternative to paying the ransom. While attackers in control of your organization have a variety of ways to pressure you into paying, the demands primarily focus on two categories:
+One thing you must do in advance of a ransomware attack by cybercrimanals is prepare your organization so it has a alternative to paying a ransom.
 
-- **Pay to regain access**
+Cybercriminal attackers in control of your organization have several ways to pressure you into paying. The demands primarily focus on two categories:
 
-  Attackers demand payment under the threat that they won’t give you back access to your systems and data. This is most frequently done by encrypting your systems and data and demanding payment for the decryption key. 
+- **Pay a ransom to regain access**
+
+  Attackers demand payment under the threat that they *won’t give you back access to your systems and data*. This is usually done by encrypting your systems and data and demanding payment for the decryption key. 
 
   >[!Important]
-  >Paying the ransom isn’t as simple and clean of a solution as it may seem. Because you're dealing with criminals that are only motivated by payment (and often relatively amateur operators who are using a toolkit provided by someone else), there is a lot of uncertainty around how well paying the ransom will actually work. There is no legal guarantee that they will provide a key that decrypts 100% of your systems and data, or even provide a key at all. The process to decrypt these systems uses homegrown attacker tools, which is often a clumsy and manual process.
+  >Paying the ransom isn’t as simple and clean of a solution as it may seem. 
+> Because you're dealing with cybercriminals that are only motivated by payment (and often relatively amateur operators who are using a toolkit provided by someone else), there is a lot of uncertainty around how well paying the ransom will actually work. 
+> There is no legal guarantee that they will provide a key that decrypts 100% of your systems and data, or even provide a key at all. The process to decrypt these systems uses homegrown attacker tools, which is often a clumsy and manual process.
   >
 
 - **Pay to avoid disclosure**

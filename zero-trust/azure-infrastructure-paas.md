@@ -59,7 +59,7 @@ In the diagram:
 
 The following diagram shows the logical architecture of these components within an Azure subscription.
 
-:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.svg" alt-text="Diagram of components within an Azure subscription. lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.svg":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.svg" alt-text="Diagram of components within an Azure subscription." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-architecture-3.svg":::
 
 In the diagram, all components of the spoke VNet are contained in a dedicated resource group:
 

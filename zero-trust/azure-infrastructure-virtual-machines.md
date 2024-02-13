@@ -31,7 +31,7 @@ Zero Trust principles for virtual machines are applied across the logical archit
 
 The following diagram the logical architecture components.
 
-:::image type="content" source="media/vm/vm-security-configure.svg" alt-text="Diagram of the virtual machine logical architecture." lightbox="media/vm/vm-security-configure.svg:::
+:::image type="content" source="media/vm/vm-security-configure.svg" alt-text="Diagram of the virtual machine logical architecture." lightbox="media/vm/vm-security-configure.svg":::
 
 In this diagram:
 

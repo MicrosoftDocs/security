@@ -38,7 +38,7 @@ Each step is a separate article linked below. Bookmark this page as your startin
 
 1. **Stick with the recommended priorities**
 
-    Use the phases as a starting plan for what to do first, next, and later so you get the most impactful elements first. These recommendations have been prioritized using the [Zero Trust](https://www.microsoft.com/security/business/zero-trust) principle of *assuming a breach*. This forces you to focus on minimizing business risk by assuming the attackers can successfully gain access to your environment through one or more methods.
+    Use the phases as a starting plan for what to do first, next, and later, so you get the most impactful elements first. These recommendations have been prioritized using the [Zero Trust](https://www.microsoft.com/security/business/zero-trust) principle of *assuming a breach*. This forces you to focus on minimizing business risk by assuming the attackers can successfully gain access to your environment through one or more methods.
 
 2. **Be proactive and flexible (but ***don’t skip important tasks***)**
 

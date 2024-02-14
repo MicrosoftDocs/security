@@ -14,7 +14,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 02/07/2024
+  ms.date: 02/13/2024
 
 
 # Maximum of 8 items
@@ -38,17 +38,17 @@ highlightedContent:
       itemType: learn
       url: /training/paths/get-started-azure-ai/
     # Card
-    - title: Microsoft Security Podcast - The future of security
-      itemType: overview
-      url: https://thecyberwire.com/podcasts/afternoon-cyber-tea/78/notes
-    # Card
-    - title: Microsoft Ignite 2023
-      itemType: whats-new
-      url: https://ignite.microsoft.com/home
-    # Card
-    - title: Configure SIEM security operations using Microsoft Sentinel
+    - title: Live learning experience! Microsoft Security Copilot
       itemType: learn
-      url: /credentials/applied-skills/configure-siem-security-operations-using-microsoft-sentinel
+      url: /shows/learn-live/microsoft-copilot-for-security/
+    # Card
+    - title: Register now! Security for all in the age of AI
+      itemType: learn
+      url: https://mssecure.eventcore.com/
+    # Card
+    - title: Microsoft security podcast - The future of security
+      itemType: overview
+      url: https://thecyberwire.com/podcasts/afternoon-cyber-tea/78/notes 
     # Card
     - title: Cybersecurity news and highlights archive
       itemType: reference
@@ -61,36 +61,19 @@ productDirectory:
   summary: Learning resources and certifications for security roles
   items:
     # Card
-    - title: Identity and access administrator
+    - title: Career path training
       imageSrc: "./media/hubpage/id-admin.png"
-      summary: Career path training
-      url: /training/career-paths/identity-and-access-admin
-
-    # Card
-    - title: Information protection and compliance administrator
-      imageSrc: "./media/hubpage/info-prot.png"
-      summary: Career path training
-      url: /training/career-paths/information-protection-admin
-
-    # Card
-    - title: Cybersecurity architect expert
-      imageSrc: "./media/hubpage/learn.png"
-      summary: Career path training
-      url: /credentials/certifications/cybersecurity-architect-expert
-
-    # Card
-    - title: Security operations analyst
-      imageSrc: "./media/hubpage/sec-op.png"
-      summary: Career path training
-      url: /training/career-paths/security-operations-analyst
-          
-
-    # Card
-    - title: Security engineer
-      imageSrc: "./media/hubpage/sec-eng.png"
-      summary: Career path training
-      url: /training/career-paths/security-engineer
-          
+      links:
+        - url: /training/career-paths/identity-and-access-admin
+          text: Identity and access administrator
+        - url: /training/career-paths/information-protection-admin
+          text: Information protection and compliance administrator
+        - url: /credentials/certifications/cybersecurity-architect-expert
+          text: Cybersecurity architect expert
+        - url: /training/career-paths/security-operations-analyst
+          text: Security operations analyst
+        - url: /training/career-paths/security-engineer
+          text: Security engineer
 
     # Card
     - title: Learn how organizational functions play an important role in security

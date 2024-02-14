@@ -184,6 +184,7 @@ The [PowerPoint slide deck of resources](https://download.microsoft.com/download
 
 Microsoft provides resources to help you meet regulatory and compliance requirements. The following sections highlight resources for specific objectives in the four stages previously defined.
 
+<a name='stage-1'></a>
 #### Stage 1
 
 In Stage 1, you identify the regulations that apply to your organization and begin using Compliance Manager. You also review [regulations that apply to your organization](/microsoft-365/compliance/compliance-manager-templates-list).
@@ -207,6 +208,7 @@ This table lists common regulations or standards.
 | Financial services regulations| [Key compliance and security considerations for US banking and capital markets](/microsoft-365/solutions/financial-services-secure-collaboration) <ul><li> U.S. Securities and Exchange Commission (SEC) </li><li> Financial Industry Regulatory Authority (FINRA) </li><li> Federal Financial Institutions Examination Council (FFIEC) </li><li> Commodity Futures Trading Commission (CFTC) </li></ul> |
 | North America Electric Reliability Corporation (NERC)| [Key Compliance and Security Considerations for the Energy Industry](/microsoft-365/solutions/energy-secure-collaboration) |
 
+<a name='stage-2'></a>
 #### Stage 2
 
 In Stage 2, you begin implementing controls for data that aren't already in place. More guidance for planning and deploying information protection controls are in the [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md) Zero Trust adoption guide.
@@ -218,6 +220,7 @@ In Stage 2, you begin implementing controls for data that aren't already in plac
 | Verify your DLP and encryption policies. | [Purview data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp) <br><br> Encryption with [sensitivity labeling](/microsoft-365/compliance/encryption-sensitivity-labels) <br><br> [Encryption for Office 365](/microsoft-365/compliance/encryption) |
 | Implement communication policies (if applicable). | [Create and manage communication compliance policies](/microsoft-365/compliance/communication-compliance-policies) |
 
+<a name='stage-3'></a>
 #### Stage 3
 
 In Stage 3, you begin to automate your data governance policies for retention and deletion, including use of adaptive scopes.
@@ -231,6 +234,7 @@ This stage includes implementing controls for segregation and isolation. NIST, f
 | Expand information protection policies to other workloads. | [Learn about the information protection scanner](/microsoft-365/compliance/deploy-scanner) <br><br> [Use data loss prevention policies for non-Microsoft cloud apps](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps) <br><br> [Data loss prevention and Microsoft Teams](/microsoft-365/compliance/dlp-microsoft-teams) <br><br> [Using Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using) <br><br> [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) |
 | Reassess compliance using Compliance Manager, identify and remediate remaining gaps.| [Compliance Manager](/microsoft-365/compliance/compliance-manager) |
 
+<a name='stage-4'></a>
 #### Stage 4
 
 The objectives in Stage 4 are about operationalizing this scenario by moving to a continuous motion of evaluating the compliance of your assets to your applicable regulations and standards. 

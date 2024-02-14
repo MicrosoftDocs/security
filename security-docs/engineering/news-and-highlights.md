@@ -6,7 +6,7 @@ ms.prod: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin
-ms.date: 02/07/2024
+ms.date: 02/13/2024
 ---
 
 # Security news and highlights
@@ -17,6 +17,8 @@ Here are past news and highlights that you may have missed or would like to revi
 
 2024
 
+- [Configure SIEM (Security information and event management) security operations using Microsoft Sentinel](/credentials/applied-skills/configure-siem-security-operations-using-microsoft-sentinel)
+- [Microsoft Ignite](https://ignite.microsoft.com/home)
 - [What is ransomware?](/security/ransomware/human-operated-ransomware)
 - [Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls](/credentials/applied-skills/secure-azure-services-and-workloads-with-microsoft-defender-for-cloud-regulatory-compliance-controls/)
 - [Azure network security](/azure/networking/security)
@@ -25,8 +27,8 @@ Here are past news and highlights that you may have missed or would like to revi
 
 - [Microsoft Build 2023](https://build.microsoft.com/home)
 - [Shared responsibility in the cloud](/azure/security/fundamentals/shared-responsibility)
-- [Evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview)
-- [Learn about Permissions Management, a CIEM solution](/azure/active-directory/cloud-infrastructure-entitlement-management/overview)
+- [Evaluate and pilot Microsoft Defender XDR (extended detection and response)](/microsoft-365/security/defender/eval-overview)
+- [Learn about Permissions Management, a CIEM (cloud infrastructure entitlement management) solution](/azure/active-directory/cloud-infrastructure-entitlement-management/overview)
 - [Secure IaaS services in Amazon Web Services](/security/zero-trust/secure-iaas-apps)
 - [The BlueHat podcast](https://shows.acast.com/the-bluehat-podcast)
 - [Quickly deploy ransomware protections](/security/ransomware/protect-against-ransomware)

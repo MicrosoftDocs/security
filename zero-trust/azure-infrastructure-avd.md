@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to Azure Virtual Desktop
 description: Learn how to secure an Azure Virtual Desktop deployment with Zero Trust principles. 
-ms.date: 02/17/2023
+ms.date: 02/11/2024
 ms.service: security
 author: sikovatc
 ms.author: sikovatc
@@ -29,7 +29,7 @@ For more information about how to apply the principles of Zero Trust across an A
 
 In this article, we use the following reference architecture for Hub and Spoke to demonstrate a commonly deployed environment and how to apply the principles of Zero Trust for Azure Virtual Desktop with users’ access over the Internet. [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) architecture is also supported in addition to private access over a managed network with [RDP Shortpath for Azure Virtual Desktop](/azure/virtual-desktop/rdp-shortpath?tabs=managed-networks).
 
-:::image type="content" source="media/avd/ref-arch-avd.png" alt-text="Diagram of the reference architecture for Azure Virtual Desktop." lightbox="media/avd/ref-arch-avd.png":::
+:::image type="content" source="media/avd/ref-arch-avd.svg" alt-text="Diagram of the reference architecture for Azure Virtual Desktop." lightbox="media/avd/ref-arch-avd.svg":::
 
 The Azure environment for Azure Virtual Desktop includes:
 
@@ -51,7 +51,7 @@ The reference architecture aligns to the architecture described in the [Enterpri
 
 In this diagram, the Azure infrastructure for an Azure Virtual Desktop deployment is contained within one Microsoft Entra tenant.
 
-:::image type="content" source="media/avd/logical-arch-avd.png" alt-text="Diagram of the components of Azure Virtual Desktop in a Microsoft Entra tenant." lightbox="media/avd/logical-arch-avd.png":::
+:::image type="content" source="media/avd/logical-arch-avd.svg" alt-text="Diagram of the components of Azure Virtual Desktop in a Microsoft Entra tenant." lightbox="media/avd/logical-arch-avd.svg":::
 
 The elements of the logical architecture are:
 

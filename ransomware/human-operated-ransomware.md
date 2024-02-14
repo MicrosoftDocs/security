@@ -16,41 +16,39 @@ description: Learn about ransomware prevention and methods to stop human-operate
 
 # What is ransomware?
 
-*Ransomware* is a type of cyber security attack that destroys or encrypts files and folders, preventing the owner of the effected device from accessing their data. The cybercriminal can then extort money from the business owner in exchange for a key to unlock the encrypted data. But, even when paid, cybercriminals may not provide the key to return access to the business owner.
+*Ransomware* is a type of cyber security attack that destroys or encrypts files and folders, preventing the owner of the effected device from accessing their data. The cybercriminal can then extort money from the business owner in exchange for a key to unlock the encrypted data. Even when paid, cybercriminals may not provide the key to return access to the business owner.
 
-> [!IMPORTANT]
-> ***Need to start right now?*** See [Protect your organization against ransomware and extortion](protect-against-ransomware.md) to **quickly** configure your IT infrastructure for the best ransomware protection.
+![Protect your organization against ransomware and extortion](protect-against-ransomware.md) to configure your IT infrastructure for the best ransomware protection.
 
 ## Automated ransomware attacks
 
-Commodity ransomware attacks are usually automated. These cyber attacks can spread like a virus, infect devices through methods like email phishing and malware delivery, and require malware remediation. That means one ransomware prevention technique is to safeguard your mail with a system like *Microsoft Defender for Office 365*, or *Microsoft Defender XDR*, to detect malware and phishing attempts early.
+Commodity ransomware attacks are usually automated. These cyber attacks infect devices through methods like email phishing and malware delivery, and require malware remediation. One ransomware prevention technique is to safeguard your mail with a system like *Microsoft Defender for Office 365*, or *Microsoft Defender XDR*, to detect malware and phishing attempts early.
 
 ## Human-operated ransomware attacks
 
 *Human-operated ransomware* is the result of an **active attack** by cybercriminals that infiltrate an organization's on-premises or cloud IT infrastructure, elevate their privileges, and deploy ransomware to critical data.
 
-These "hands-on-keyboard" attacks target an organization rather than a single device. *Human-operated* means there is a human attacker using their  insights into common system and security misconfigurations to infiltrate the organization, navigate the network, and adapt to the environment and its weaknesses as they go.
+These "hands-on-keyboard" attacks target an organization rather than a single device. *Human-operated* means there is a human attacker using their insights into common system and security misconfigurations to infiltrate an organization, navigate the network, and adapt to the environment and its weaknesses.
 
-Hallmarks of these human-operated ransomware attacks typically include **credential theft** and **lateral movement** with a elevation of the privileges in stolen accounts. Activities might take place during maintenance windows and involve security configuration gaps discovered by cybercriminals. The goal is the **deployment of a ransomware payload** to whatever *high business impact resources* the attackers choose.
+Symptoms of human-operated ransomware attacks historically include **credential theft** and **lateral movement** with elevation of privileges in stolen accounts. Activities might take place during maintenance windows and involve security configuration gaps discovered by cybercriminals. The goal is the **deployment of a ransomware payload** to *high business impact resources*.
 
-> [!IMPORTANT]
-> These attacks can be catastrophic to business operations and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware that usually only requires malware remediation, human-operated ransomware will continue to threaten your business operations after the initial encounter.
+These attacks can be catastrophic to business operations and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware that usually only requires malware remediation, human-operated ransomware will continue to threaten your business operations after the initial encounter.
 
-The graphic below shows how this extortion-based attack is growing in impact and likelihood.
+The graphic below shows how extortion-based attacks are growing in impact and likelihood.
 
 ![The impact and likelihood that human-operated ransomware attacks will continue](media/human-operated-ransomware/ransomware-extortion-based-attack.png)
 
 ## Ransomware protection for your organization
 
-For a comprehensive view of ransomware and extortion and how to protect your organization, use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation. But here's a summary of the guidance:
+For a comprehensive view of ransomware and extortion and how to protect your organization, use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation. Here is a summary of the guidance:
 
 ![The summary of the guidance in the Human-Operated Ransomware Mitigation Project Plan](media/human-operated-ransomware/stakes-weaknesses-plan.png)
 
 - The stakes of ransomware and extortion-based attacks are high.
-- However, the attacks have weaknesses that can reduce your likelihood of being attacked.
+- Ransomware attacks have weaknesses that can reduce your likelihood of being attacked.
 - There are three phases to configuring your infrastructure to exploit attack weaknesses.
 
-For the three phases to exploit attack weaknesses, see the [Protect your organization against ransomware and extortion](protect-against-ransomware.md) solution to **quickly** configure your IT infrastructure for the best protection:
+For the three phases to exploit attack weaknesses, see the [Protect your organization against ransomware and extortion](protect-against-ransomware.md) solution to configure your IT infrastructure for the best protection:
 
 1. Prepare your organization to recover from an attack without having to pay the ransom.
 2. Limit the scope of damage of a ransomware attack by protecting privileged roles.
@@ -68,7 +66,7 @@ Key information from Microsoft:
 
 - [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
-- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
+- [2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023) 
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
 - - Microsoft's Detection and Response Team (DART) ransomware [approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
 
@@ -103,11 +101,15 @@ Microsoft Azure:
 Microsoft Security team blog posts:
 
 - [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+- [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+- [Automatic disruption of human-operated attacks through containment of compromised user accounts (October 2023)](https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/)
+- [Improving AI-based defenses to disrupt human-operated ransomware (June 2022)](https://www.microsoft.com/esecurity/blog/2022/06/21/improving-ai-based-defenses-to-disrupt-human-operated-ransomware/#:~:text=Improving%20AI-based%20defenses%20to%20disrupt%20human-operated%20ransomware%201,...%204%20Human-operated%20ransomware%20protection%20using%20AI%20)
+- [Ransomware as a service: Understanding the cybercrime gig economy and how to protect yourself (May 2022)](https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/?ocid=magicti_ta_blog)
 
   Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.
 
 - [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+- [Defenders beware: A case for post-ransomware investigations(October 2023)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 
   Recommendations and best practices.
 

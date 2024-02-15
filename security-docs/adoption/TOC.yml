@@ -6,7 +6,7 @@
     items:
     - name: Security Adoption Resources
       href: adoption.md
-  - name: Concepts
+  - name: End to end security
     expanded: true
     items:
     - name: The CISO Workshop
@@ -15,7 +15,7 @@
       href: the-ciso-workshop-videos.md
     - name: Microsoft Cybersecurity Reference Architectures
       href: mcra.md
-  - name: Archive
+  - name: Previous versions
     expanded: false
     items:
     - name: The CISO Workshop (Archived)

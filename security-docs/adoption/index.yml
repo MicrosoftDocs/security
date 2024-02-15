@@ -27,9 +27,13 @@ landingContent:
         links:
           - text: Resources for security transformation
             url: adoption.md
-      - linkListType: how-to-guide
+      - linkListType: architecture 
         links:
           - text: The Chief Information Security Officer (CISO) Workshop
             url: the-ciso-workshop.md
           - text: Microsoft Cybersecurity Reference Architectures
             url: mcra.md
+      - linkListType: video
+        links:
+          - text: CISO Workshop videos
+            url: the-ciso-workshop-videos.md

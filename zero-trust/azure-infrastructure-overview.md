@@ -13,6 +13,21 @@ ms.collection:
   - zerotrust-azure
 ---
 
+<!---
+Writers notes:
+
+For updates to product names, please also update the appropriate figures
+
+For any updates to figures, please update the corresponding posters as needed (see the "Technical publications" section of this article) and republish the Visio and PDF files in the Microsoft Download Center
+
+For new articles in this series, please:
+
+- Add cross-links in the "Next Steps" section FROM all the other articles in this series TO the new article
+- Add a link to the Zero Trust Guidance Center page (index.yml)
+- Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed
+
+--->
+
 # Overview – Apply Zero Trust principles to Azure IaaS
 
 This series of articles help you apply the principles of Zero Trust to your workloads in Microsoft Azure IaaS based on a multi-disciplinary approach to applying the Zero Trust principles. Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles:

@@ -15,6 +15,20 @@ ms.collection:
   - zerotrust-azure
 ---
 
+<!---
+Writers notes:
+
+For updates to product names, please also update the appropriate figures
+
+For any updates to figures, please update the corresponding posters as needed and republish the Visio and PDF files in the Microsoft Download Center
+
+For new articles in this series, please add:
+
+- Cross-links FROM all the other articles in this series TO the new article
+- A link to the Zero Trust Guidance Center page (index.yml) as needed
+
+--->
+
 # Implement Microsoft Sentinel and Microsoft Defender XDR for Zero Trust
 
 This solution guide walks through the process of setting up Microsoft eXtended detection and response (XDR) tools together with Microsoft Sentinel to accelerate your organization’s ability to respond to and remediate cybersecurity attacks.

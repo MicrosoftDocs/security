@@ -198,6 +198,7 @@ These resources include prescriptive guidance that you can use as recommended st
 
 In addition to these resources, the following sections highlight resources for specific tasks in the four stages previously defined.
 
+<a name='stage-1'></a>
 #### Stage 1
 
 | Deployment objective | Resources |
@@ -206,6 +207,7 @@ In addition to these resources, the following sections highlight resources for s
 | Integrate SaaS apps with Microsoft Entra ID for single sign-on | [Add SaaS apps to Microsoft Entra ID and to the scope of policies](/security/zero-trust/add-saas-apps) |
 | New applications use modern authentication | [Checklist — How are you managing the identity for your workload?](/azure/architecture/framework/security/design-identity#checklist) |
 
+<a name='stage-2'></a>
 #### Stage 2
 
 | Deployment objective | Resources |
@@ -214,6 +216,7 @@ In addition to these resources, the following sections highlight resources for s
 | Implement Zero Trust identity and device access policies for the **Starting point** protection level  | [Protection levels for Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations#three-levels-of-protection) |
 | Use Microsoft Entra application proxy with on-premises apps for single sign-on | [How to configure single sign-on to an Application Proxy application](/azure/active-directory/app-proxy/application-proxy-config-sso-how-to) |
 
+<a name='stage-3'></a>
 #### Stage 3
 
 | Deployment objective | Resources |
@@ -221,6 +224,7 @@ In addition to these resources, the following sections highlight resources for s
 | Enroll devices into management and apply recommended security protections | [Manage devices with Intune overview](/microsoft-365/solutions/manage-devices-with-intune-overview) <br><br> [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations) |
 | Allow only compliant and trusted devices to access data | [Set up compliance policies for devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-compliance-policies) <br><br> [Require healthy and compliant devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-require-compliance) |
 
+<a name='stage-4'></a>
 #### Stage 4
 
 | Deployment objective | Resources |

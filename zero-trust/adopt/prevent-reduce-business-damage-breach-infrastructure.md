@@ -161,6 +161,7 @@ Before you embark on the technical work, Microsoft recommends getting to know th
 | Module: [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/) | Learn how to use network security groups and service endpoints to secure your virtual machines and Azure services from unauthorized network access. |
 | Module: [Windows Server update management](/training/modules/windows-server-update-management/) | Learn how to use Windows Server Update Services to deploy operating system updates to computers on your network. |
 
+<a name='stage-1'></a>
 #### Stage 1
 
 The Stage 1 deployment objectives include locking down administrator and other privileged access accounts, using Microsoft cloud products to back up critical business data, and ensuring that all network traffic is encrypted.
@@ -272,6 +273,7 @@ This objective is more of a check to be sure your network traffic is encrypted. 
 | Encrypt application backend traffic between virtual networks.<br><br> Encrypt traffic between on-premises and cloud. | [Secure networks with Zero Trust-Objective 6: All traffic is encrypted](/security/zero-trust/deploy/networks#vi-encryption-all-traffic-is-encrypted) |
 | For network architects, this article helps put recommended networking concepts into perspective. Ed Fisher, Security & Compliance Architect at Microsoft, describes how to optimize your network for cloud connectivity by avoiding the most common pitfalls. | [Networking up (to the cloud)-One architect's viewpoint](/microsoft-365/solutions/networking-design-principles) |
 
+<a name='stage-2'></a>
 #### Stage 2
 
 The Stage 2 deployment objectives include segmenting your network to exercise better control for traffic to sensitive resources, ensuring your servers and devices are patched with updates in a timely manner, creating honeypot resources to deceive and distract attackers, and beginning the management of your insider risks.
@@ -342,6 +344,7 @@ After identifying the risks, you can take action to mitigate these risks, and if
 | Module: [Manage insider risk in Microsoft Purview](/training/modules/m365-compliance-insider-manage-insider-risk/) | Learn about insider risk management and how Microsoft technologies can help you detect, investigate, and act on risky activities in your organization. |
 | Module: [Implement Microsoft Purview Insider Risk Management](/training/modules/implement-insider-risk-management/) | Learn how to use Microsoft Purview Insider Risk Management to plan your insider risk solution, create insider risk management policies and manage insider risk management alerts and cases. |
 
+<a name='stage-3'></a>
 #### Stage 3
 
 In this stage, you extend your backup and site recovery scope to include all business data and workloads, further your ability to prevent network-based attacks, and create a more formal design and plan for your threat and BCDR response.
@@ -383,6 +386,7 @@ Microsoft 365 Backup, Azure Backup, and Azure Site Recovery described in this ar
 |:-----|:-----|
 | Module: [Design a solution for backup and disaster recovery](/training/modules/design-solution-for-backup-disaster-recovery/) | Learn how to select appropriate backup solutions and disaster recovery solutions for Azure workloads. |
 
+<a name='stage-4'></a>
 #### Stage 4
 
 In this stage, you further secure your network and ensure that your BCDR plan and process works by practicing it for destructive cyberattack situations.

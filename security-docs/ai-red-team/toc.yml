@@ -7,7 +7,7 @@ items:
   - name: What is AI red teaming?
     href: https://www.microsoft.com/security/blog/2023/08/07/microsoft-ai-red-team-building-future-of-safer-ai/
   - name: The PyRIT framework blog
-    href: overview.md
+    href: https://aka.ms/PYRITblog
 - name: Concept
   expanded: false
   items:

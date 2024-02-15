@@ -7,6 +7,15 @@ items:
     tocHref: /azure/ai-services/openai/concepts/
     topicHref: /security/ai-red-team/
   - name: AI Red Team
+    tocHref: /azure/ai-services/content-safety/
+    topicHref: /security/ai-red-team/
+  - name: AI Red Team
+    tocHref: /azure/ai-studio/concepts/
+    topicHref: /security/ai-red-team/
+  - name: AI Red Team
+    tocHref: /azure/ai-studio/how-to/
+    topicHref: /security/ai-red-team/
+  - name: AI Red Team
     tocHref: /security/engineering/
     topicHref: /security/ai-red-team/
   - name: AI Red Team

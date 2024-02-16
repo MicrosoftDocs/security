@@ -49,7 +49,7 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 
 10. If a CA uses a subcontractor to operate any aspect of its business, the CA will assume responsibility for the subcontractor's business operations.
 
-11. If Microsoft, in its sole discretion, identifies a certificate   whose usage or attributes are determined to be contrary to the objectives of the Trusted Root Program, Microsoft will notify the responsible CA and request that it revoke the certificate. The CA must either revoke the certificate or request an exception from Microsoft within 24 hours of receiving Microsoft's notice. Microsoft will review submitted material and inform the CA of its final decision to grant or deny the exception at its sole discretion. In the event that Microsoft does not grant the exception, the CA must revoke the certificate within 24 hours of the exception being denied. 
+11. If Microsoft, in its sole discretion, identifies a certificate   whose usage or attributes are determined to be contrary to the objectives of the Trusted Root Program, Microsoft will notify the responsible CA and request that it revokes the certificate. The CA must either revoke the certificate or request an exception from Microsoft within 24 hours of receiving Microsoft's notice. Microsoft will review submitted material and inform the CA of its final decision to grant or deny the exception at its sole discretion. In the event that Microsoft does not grant the exception, the CA must revoke the certificate within 24 hours of the exception being denied. 
 
 
 ------------------------------------------------------------------------
@@ -66,21 +66,21 @@ Program.
     2.  The CN attribute must be in a language that is appropriate for the CA's market and readable by a typical customer in that market.
     3.  Basic Constraints extension: must be cA=true.
     4.  Key Usage extension MUST be present and MUST be marked critical. Bit positions for KeyCertSign and cRLSign MUST be set. If the Root CA Private Key is used for signing OCSP responses, then the digitalSignature bit MUST be set.
-        -   Root Key Sizes must meet the requirements detailed in "Key Requirements".
+        -   Root Key Sizes must meet the requirements detailed in "Key Requirements."
 2.  Certificates to be added to the Trusted Root Store MUST be self-signed root certificates. 
-3.   Newly minted Root CAs must be valid for a minimum of 8 years, and a maximum of 25 years, from the date of submission.
+3.   Newly minted Root CAs must be valid for a minimum of eight years, and a maximum of 25 years, from the date of submission.
 4.  Participating Root CAs may not issue new 1024-bit RSA certificates from roots covered by these requirements.
 5.  All end-entity certificates must contain an AIA extension with a valid OCSP URL. These certificates may also contain a CDP extension that contains a valid CRL URL. All other certificate types must contain either an AIA extension with an OCSP URL or a CDP extension with a valid CRL URL
 6.  Private Keys and subject names must be unique per root certificate; reuse of private keys or subject names in subsequent root certificates by the same CA may result in unexpected certificate chaining issues. CAs must generate a new key and apply a new subject name when generating a new root certificate prior to distribution by Microsoft.
 7.  Government CAs must restrict server authentication to government-issued top level domains and may only issue other certificates to the ISO3166 country codes that the country has sovereign control over (see  <https://aka.ms/auditreqs> section III for the definition of a "Government CA"). These government-issued TLDs are referred to in each CA's respective contract. 
-8. Issuing CA certificates that chain to a participating Root CA must separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single Issuing CA must not combine server authentication with S/MIME, code signing or time stamping EKU. A separate intermediate must be used for each use case. 
+8. Issuing CA certificates that chain to a participating Root CA must separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single Issuing CA must not combine server authentication with S/MIME, code signing, or time stamping EKU. A separate intermediate must be used for each use case. 
 9. End-entity certificates must meet the requirements for algorithm type and key size for Subscriber certificates listed in Appendix A of the CAB Forum Baseline Requirements located at   https://cabforum.org/baseline-requirements-documents/.
 10. CAs must declare one of the following policy OIDs in its Certificate Policy extension end-entity certificate.
-    1. DV 2.23.140.1.2.1 
-    2. OV 2.23.140.1.2.2
+    1. DV 2.23.140.1.2.1.
+    2. OV 2.23.140.1.2.2.
     3. EV 2.23.140.1.1. 
-    4. IV 2.23.140.1.2.3 
-    5. Non-EV Code Signing 2.23.140.1.4.1
+    4. IV 2.23.140.1.2.3.
+    5. Non-EV Code Signing 2.23.140.1.4.1.
 11. Beginning August 2024, all custom EV SSL OIDs managed by the Trusted Root Program and our respective tooling will be removed and replaced with CA/B Forum compliant EV SSL OID (2.23.140.1.1). The Microsoft Edge team will implement checks for EV SSL OID (2.23.140.1.1) in the browser, so other EV SSL OIDs will no longer be accepted to align with Edge and to avoid incompatibilities. 
 12. CAs may not have more than 2 OIDs applied to their root certificate.   
 13. End-entity certificates that include a Basic Constraints extension in accordance with IETF RFC 5280 must have the cA field set to FALSE and the pathLenConstraint field must be absent.
@@ -101,9 +101,9 @@ Program.
 
 ### C. Revocation Requirements
 
-1.  The CA must have a documented revocation policy and must have the ability to revoke any certificate it issues.
-2.  CAs that issue Server Authentication certificates must support the following OCSP responder requirements:
-    1.  Minimum validity of eight (8) hours; Maximum validity of seven (7) days; and
+1.  CAs must have a documented revocation policy and must have the ability to revoke any certificate it issues.
+2.  CAs that issue Server Authentication certificates must support both of the following OCSP responder requirements:
+    1.  A minimum validity of eight (8) hours; a maximum validity of seven (7) days.
     2.  The next update must be available at least eight (8) hours before the current period expires. If the validity is more than 16 hours, then the next update must be available at ½ of the validity period.
 3.  All certificates issued from a root CA must support either the CRL distribution point extension and/or AIA containing an OCSP responder URL.
 4.  The CA must not use the root certificate to issue end-entity certificates.
@@ -134,4 +134,4 @@ Program.
 
 ### F. Windows 10 Kernel Mode Code Signing (KMCS) Requirements
 
-Windows 10 has heightened requirements to validate kernel-mode drivers. Drivers must be signed by both Microsoft and a Program partner using Extended Validation requirements. All developers who wish to have their kernel-mode drivers included in Windows must follow the procedures outlined by the Microsoft Hardware Development Team. For more information, see the [Partner Center for Windows Hardware](/windows-hardware/drivers/dashboard/)
+Windows 10 has heightened requirements to validate kernel-mode drivers. Drivers must be signed by both Microsoft and a Program partner using Extended Validation requirements. All developers who wish to have their kernel-mode drivers included in Windows must follow the procedures outlined by the Microsoft Hardware Development Team. For more information, see the [Partner Center for Windows Hardware](/windows-hardware/drivers/dashboard/). 

@@ -104,7 +104,7 @@ The following diagram shows the process, starting with discovery and triage in M
 
 :::image type="content" source="./media/investigation-flow.svg" alt-text="Image of incident investigation using Sentinel and Microsoft Defender XDR" lightbox="./media/investigation-flow.svg":::
 
-For more information, see [Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR]( respond-incident.md).
+For more information, see [Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR](respond-incident.md).
 
 ## Key capabilities
 
@@ -134,7 +134,7 @@ Capability or feature | Description | Product |
 | [Microsoft Defender XDR Connector](/azure/sentinel/connect-microsoft-365-defender) | Microsoft Defender XDR Connector synchronizes logs and incidents to Microsoft Sentinel. | Microsoft Defender XDR and Microsoft Sentinel |
 |[Data connectors](/azure/sentinel/connect-data-sources) | Allow for the ingestion of data for analysis in Microsoft Sentinel. | Microsoft Sentinel|
 |[Content hub solution -Zero Trust (TIC 3.0)](/azure/sentinel/sentinel-solution) | Zero Trust (TIC 3.0) includes a workbook, analytics rules, and a playbook, which provide an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, helping organizations to monitor configurations over time. | Microsoft Sentinel |
-|[Security Orchestration, Automation, and Response (SOAR) ](/azure/sentinel/sentinel-soar-content) | Leveraging automation rules and playbooks in response to security threats increases your SOC's effectiveness and saves you time and resources. | Microsoft Sentinel |
+|[Security Orchestration, Automation, and Response (SOAR)](/azure/sentinel/sentinel-soar-content) | Leveraging automation rules and playbooks in response to security threats increases your SOC's effectiveness and saves you time and resources. | Microsoft Sentinel |
 
 ## What's in this solution
 
@@ -167,6 +167,7 @@ Also see these additional articles for applying Zero Trust principles to Azure:
   - [Spoke virtual networks](/security/zero-trust//azure-infrastructure-iaas)
   - [Hub virtual networks](/security/zero-trust//azure-infrastructure-networking)
 
+- [Spoke virtual network with Azure PaaS Services](/security/zero-trust/azure-infrastructure-paas)
 - [Azure Virtual Desktop](/security/zero-trust/azure-infrastructure-avd)
 - [Azure Virtual WAN](/security/zero-trust/azure-virtual-wan)
 - [IaaS applications in Amazon Web Services](/security/zero-trust/secure-iaas-apps)

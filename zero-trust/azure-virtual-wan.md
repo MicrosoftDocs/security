@@ -13,6 +13,28 @@ ms.collection:
   - zerotrust-azure
 ---
 
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures
+
+To update figures that are not screen shots:
+
+- Locate the source Visio file in internal storage
+- Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article)
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file
+
+For any updates to figures, please update the corresponding posters as needed (see the "Technical publications" section of this article) and republish the Visio and PDF files in the Microsoft Download Center.
+
+For new articles in this content set, please:
+
+- Add cross-links in the "Next Steps" section FROM all the other articles in this content set TO the new article
+- Add a link to the Zero Trust Guidance Center page (index.yml)
+- Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed
+
+--->
+
 # Apply Zero Trust principles to an Azure Virtual WAN deployment
 
 With the modern cloud, mobile devices, and other endpoints evolution, relying only on corporate firewalls and perimeter networks is no longer sufficient. An end-to-end Zero Trust strategy assumes that security breaches are inevitable. That means you must verify each request as if it originates from an uncontrolled network. Networking still plays an important role in Zero Trust to connect and protect infrastructure, applications, and data. In the Zero Trust model, there are three key objectives when it comes to securing your networks:

@@ -1,7 +1,7 @@
 ---
 title: Deprecation Actions  - Microsoft Trusted Root Certificate Program
 description: Get to know the changes made monthly to the root store.
-ms.date: 10/27/2020
+ms.date: 02/14/2024
 ms.service: security
 author: kasirota
 ms.author: kasirota

@@ -144,7 +144,7 @@
          "redirect_document_id": false
       },
       {
-        "source_path_from_root": "security-docs/cybersecurity-reference-architecture/MCRA.md",
+        "source_path": "security-docs/cybersecurity-reference-architecture/MCRA.md",
         "redirect_url": "/security/adoption/mcra",
         "redirect_document_id": true
       },

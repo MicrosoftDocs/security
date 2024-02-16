@@ -3,7 +3,7 @@ title: Microsoft Cybersecurity Reference Architectures (MCRA)
 description: Detailed technical reference architectures for multicloud cybersecurity including Microsoft and third party platforms
 
 ms.service: security
-ms.subservice: 
+
 ms.topic: overview
 ms.date: 12/01/2023
 

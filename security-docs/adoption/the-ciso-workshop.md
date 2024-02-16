@@ -1,15 +1,16 @@
 ---
 title: "The Chief Information Security Officer (CISO) Workshop"
-ms.author: mas
-author: MarkSimos
-manager: wesmalaby
-audience: Admin
-ms.topic: conceptual
-ms.service: security
-ms.date: 10/27/2022
-ms.collection:
-- M365-security-compliance
 description: "The Chief Information Security Office (CISO) workshop helps accelerate security program modernization with reference strategies built using Zero Trust principles."
+
+ms.service: security
+
+ms.topic: conceptual
+ms.date: 10/27/2022
+
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: mas
 ---
 # The Chief Information Security Officer (CISO) Workshop Training
 

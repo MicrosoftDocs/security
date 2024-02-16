@@ -1,7 +1,7 @@
 ---
 title: Program Requirements - Microsoft Trusted Root Program 
 description: This document provides details about the requirements all Certificate Authorities are required to adhere to in order to be compliant with our program. 
-ms.date: 02/04/2020
+ms.date: 02/15/2024
 ms.service: security
 author: kasirota
 ms.author: kasirota
@@ -26,6 +26,9 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 1.  Program Participants must provide to Microsoft evidence of a Qualified Audit (see <https://aka.ms/auditreqs>) for each root, unconstrained subordinate CA, , and cross-signed certificate, before conducting commercial operations and thereafter on an annual basis.
 2.  Program Participants must assume responsibility to ensure that all unconstrained subordinate CAs and cross-signed certificates meet the Program Audit Requirements.
 3. CAs must publicly disclose all audit reports for unconstrained subordinate CAs.
+4. CA providers must ensure their S/MIME enabled root CAs and all subordinate CAs capable of issuing S/MIME certificates have been and will continue to be audited against the most recent version of, at minimum, **one of the below sets of criteria**. This auditing must occur at least once a year. An initial audit period must begin no later than September 1, 2023. <br>
+     - WebTrust Principles and Criteria for Certification Authorities – S/MIME <br>
+     - ETSI EN 119 411-6 LCP, NCP, or NCP+ <br>
 
 
 ### Communication and Disclosure Requirements
@@ -72,16 +75,17 @@ Program.
 7.  Government CAs must restrict server authentication to government-issued top level domains and may only issue other certificates to the ISO3166 country codes that the country has sovereign control over (see  <https://aka.ms/auditreqs> section III for the definition of a "Government CA"). These government-issued TLDs are referred to in each CA's respective contract. 
 8. Issuing CA certificates that chain to a participating Root CA must separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single Issuing CA must not combine server authentication with S/MIME, code signing or time stamping EKU. A separate intermediate must be used for each use case. 
 9. End-entity certificates must meet the requirements for algorithm type and key size for Subscriber certificates listed in Appendix A of the CAB Forum Baseline Requirements located at   https://cabforum.org/baseline-requirements-documents/.
-10. CAs must declare one of the following policy OIDs in its Certificate Policy extension end-entity certificate: 
+10. CAs must declare one of the following policy OIDs in its Certificate Policy extension end-entity certificate.
     1. DV 2.23.140.1.2.1 
     2. OV 2.23.140.1.2.2
     3. EV 2.23.140.1.1. 
     4. IV 2.23.140.1.2.3 
-    5. EV Code Signing 2.23.140.1.3
-    6. Non-EV Code Signing 2.23.140.1.4.1
-11. End-entity certificates that include a Basic Constraints extension in accordance with IETF RFC 5280 must have the cA field set to FALSE and the pathLenConstraint field must be absent.
-12. A CA must technically constrain an OCSP responder such that the only EKU allowed is OCSP Signing.
-13. A CA must be able to revoke a certificate to a specific date as requested by Microsoft.
+    5. Non-EV Code Signing 2.23.140.1.4.1
+11. Beginning August 2024, all custom EV SSL OIDs managed by the Trusted Root Program and our respective tooling will be removed and replaced with CA/B Forum compliant EV SSL OID (2.23.140.1.1). The Microsoft Edge team will implement checks for EV SSL OID (2.23.140.1.1) in the browser, so other EV SSL OIDs will no longer be accepted to align with Edge and to avoid incompatibilities. 
+12. CAs may not have more than 2 OIDs applied to their root certificate.   
+13. End-entity certificates that include a Basic Constraints extension in accordance with IETF RFC 5280 must have the cA field set to FALSE and the pathLenConstraint field must be absent.
+14. A CA must technically constrain an OCSP responder such that the only EKU allowed is OCSP Signing.
+15. A CA must be able to revoke a certificate to a specific date as requested by Microsoft.
 
 
 ### B. Signature Requirements
@@ -92,6 +96,7 @@ Program.
 | RSA | 2048 | 4096 (New roots only)|
 | ECC / ECDSA | NIST P-256, P-384, P-521 | NIST P-256, P-384, P-521 |
 
+**Please Note:** Signatures using elliptical curve cryptography (ECC), such as ECDSA, are not supported in Windows and newer Windows security features. Users utilizing these algorithms and certificates will face various errors and potential security risks. The Microsoft Trusted Root Program recommends that ECC/ECDSA certificates should not be issued to subscribers due to this known incompatibility and risk. 
  
 
 ### C. Revocation Requirements
@@ -109,7 +114,8 @@ Program.
 ### D. Code Signing Root Certificate Requirements
 
 1.  Root certificates that support code signing use may be removed from distribution by the Program 10 years from the date of distribution of a replacement rollover root certificate or sooner, if requested by the CA. 
-2.  Root certificates that remain in distribution to support only code signing use beyond their algorithm security lifetime (e.g. RSA 1024  = 2014, RSA 2048 = 2030) may be set to 'disable' in the Windows 10 OS. 
+2.  Root certificates that remain in distribution to support only code signing use beyond their algorithm security lifetime (e.g. RSA 1024  = 2014, RSA 2048 = 2030) may be set to 'disable' in the Windows 10 OS.
+3.  Starting February 2024, Microsoft will no longer accept or recognize EV Code Signing Certificates, and CCADB will cease to accept EV Code Signing Audits. Beginning in August 2024, all EV Code Signing OIDs will be removed from existing roots in the Microsoft Trusted Root Program, and all Code Signing certificates will be treated equally.
 
  
 

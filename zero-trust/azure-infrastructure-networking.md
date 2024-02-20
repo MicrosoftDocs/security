@@ -33,7 +33,7 @@ This article is a part of a series of articles that demonstrate how to apply the
 
 The following diagram shows the reference architecture. The hub VNet is highlighted in red. For more information about this architecture, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
-:::image type="content" source="media/hub/azure-infra-hub-architecture-1.png" alt-text="The Zero Trust for Azure reference architecture with the hub VNet highlighted." lightbox="media/hub/azure-infra-hub-architecture-1.png":::
+:::image type="content" source="media/hub/azure-infra-hub-architecture-1.svg" alt-text="The Zero Trust for Azure reference architecture with the hub VNet highlighted." lightbox="media/hub/azure-infra-hub-architecture-1.svg":::
 
 For this reference architecture, there are many ways you can deploy the resources across the Azure subscription. The reference architecture shows the recommendation of isolating all resources for the hub VNet within a dedicated resource group. The resources for the spoke VNet are also shown for comparison. This model works well if different teams are given responsibility for these different areas.
 
@@ -57,7 +57,7 @@ The resources that are deployed for the hub VNet are:
 
 The following diagram shows the components of a resource group for a hub VNet in an Azure subscription separate from the subscription for the spoke VNet. This is one way of organizing these elements within the subscription. Your organization might choose to organize these in a different way.
 
-:::image type="content" source="media/hub/azure-infra-hub-subscription-architecture-2.png" alt-text="Diagram of the components of a resource group for a hub virtual network.":::
+:::image type="content" source="media/hub/azure-infra-hub-subscription-architecture-2.svg" alt-text="Diagram of the components of a resource group for a hub virtual network." lightbox="media/hub/azure-infra-hub-subscription-architecture-2.svg":::
 
 In the diagram:
 

@@ -1,15 +1,16 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 2: Security Management"
-ms.author: dansimp
-author: dansimp
-manager: dansimp
-audience: Admin
-ms.topic: tutorial
-ms.service: security
-localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 description: Learn how to increase visibility and control over your hybrid enterprise estate with integrated guidance, automated policy enforcement, and monitoring.
+
+ms.service: security
+
+ms.topic: tutorial
+ms.date: 02/05/2024
+
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: mas
 ---
 
 # CISO Workshop Module 2: Security Management

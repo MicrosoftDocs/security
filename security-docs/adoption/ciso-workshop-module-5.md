@@ -1,15 +1,15 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 5: Information Protection"
-ms.author: dansimp
-author: dansimp
-manager: dansimp
-audience: Admin
-ms.topic: tutorial
-ms.service: security
-localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 description: "Learn how to protect sensitive information wherever it goes with automatic classification and persistent encryption across devices."
+
+ms.service: security
+
+ms.topic: tutorial
+
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: mas
 ---
 
 # CISO Workshop Module 5: Information Protection

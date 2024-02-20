@@ -1,15 +1,16 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 4a: Threat Protection Strategy"
-ms.author: dansimp
-author: dansimp
-manager: dansimp
-audience: Admin
-ms.topic: tutorial
-ms.service: security
-localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 description: Explore key learnings about threat protection, security evolution, strategies, and security road maps.
+
+ms.service: security
+
+ms.topic: tutorial
+ms.date: 02/05/2024
+
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: mas
 ---
 
 # CISO Workshop Module 4a: Threat Protection Strategy

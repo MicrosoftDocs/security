@@ -1,15 +1,16 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 4b: Threat Protection Strategy"
-ms.author: dansimp
-author: dansimp
-manager: dansimp
-audience: Admin
-ms.topic: tutorial
-ms.service: security
-localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 description: This module reviews the evolution and trajectory of the Microsoft Security Operations Centers (SOC), powered by trillions of signals in the Microsoft Intelligent Security Graph.
+
+ms.service: security
+
+ms.topic: tutorial
+ms.date: 02/05/2024
+
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: mas
 ---
 
 # CISO Workshop Module 4b: Threat Protection Strategy 

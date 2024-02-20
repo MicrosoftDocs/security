@@ -12,3 +12,6 @@ items:
   - name: AI Red Team
     tocHref: /security/ai-red-team/
     topicHref: /security/ai-red-team/
+  - name: Adoption
+    tocHref: /security/adoption/
+    topicHref: /security/adoption/

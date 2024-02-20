@@ -1,15 +1,15 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop"
-ms.author: dansimp
-author: dansimp
-manager: dansimp
-audience: Admin
-ms.topic: tutorial
-ms.service: security
-localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 description: "This training workshop is a combination of experiences from Microsoft security teams and learnings from customers."
+
+ms.service: security
+
+ms.topic: tutorial
+
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: mas
 ---
 
 # Chief Information Security Officer (CISO) Workshop Training

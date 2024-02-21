@@ -48,7 +48,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: PyRIT How to Guide
-            url: https://github.com/Azure/PyRIT/wiki/User-guide
+            url: https://github.com/Azure/PyRIT/blob/main/doc/how_to_guide.ipynb
       - linkListType: reference
         links:
           - text: AI Risk Assessment for ML Engineers

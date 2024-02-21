@@ -1,15 +1,16 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 1: Microsoft Cybersecurity Briefing"
-ms.author: dansimp
-author: dansimp
-manager: dansimp
-audience: Admin
-ms.topic: tutorial
-ms.service: security
-localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 description: "This module covers overviews on critical security hygiene, Microsoft cybersecurity reference architecture, cybersecurity resilience, Internet of Things (IoT), and operational tech."
+
+ms.service: security
+
+ms.topic: tutorial
+ms.date: 02/05/2024
+
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: mas
 ---
 
 # CISO Workshop Module 1: Microsoft Cybersecurity Briefing

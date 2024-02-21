@@ -1,7 +1,8 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
+items:
+- name: Security
+  tocHref: /security/
+  topicHref: /security/index
   items:
-  - name: Security
-    tocHref: /security/
-    topicHref: /security
+  - name: Trusted Root Program
+    tocHref: /security/trusted-root/
+    topicHref: /security/trusted-root/

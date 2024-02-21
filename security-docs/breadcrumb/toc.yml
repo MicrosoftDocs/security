@@ -12,3 +12,18 @@ items:
   - name: AI Red Team
     tocHref: /security/ai-red-team/
     topicHref: /security/ai-red-team/
+  - name: Adoption
+    tocHref: /security/adoption/
+    topicHref: /security/adoption/
+  - name: Ransomware
+    tocHref: /security/ransomware/
+    topicHref: /security/ransomware/
+  - name: Operations
+    tocHref: /security/operations/
+    topicHref: /security/operations/
+  - name: Trusted Root Program
+    tocHref: /security/trusted-root/
+    topicHref: /security/trusted-root/
+  - name: Zero Trust
+    tocHref: /security/zero-trust/
+    topicHref: /security/zero-trust/

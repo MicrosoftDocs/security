@@ -1,14 +1,16 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop - Videos"
-ms.author: mas
-author: mas
-manager: wesmalaby
-audience: Admin
-ms.topic: conceptual
-ms.service: security
-ms.collection:
-- M365-security-compliance
 description: "These are the videos for the CISO Workshop."
+
+ms.service: security
+
+ms.topic: conceptual
+ms.date: 02/05/2024
+
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: mas
 ---
 
 # Video Page

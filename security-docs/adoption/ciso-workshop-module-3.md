@@ -1,15 +1,16 @@
 ---
 title: "Chief Information Security Officer (CISO) Workshop, Module 3:Identity, and Access Management"
-ms.author: dansimp
-author: dansimp
-manager: dansimp
-audience: Admin
-ms.topic: tutorial
-ms.service: security
-localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 description: "Learn how to advance zero trust with your identity and user access strategy to better protect corporate data inside and outside your network perimeter."
+
+ms.service: security
+
+ms.topic: tutorial
+ms.date: 02/05/2024
+
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: mas
 ---
 
 # CISO Workshop Module 3: Identity and Zero Trust User Access

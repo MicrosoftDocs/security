@@ -1,7 +1,8 @@
+items:
 - name: Security
   tocHref: /security/
   topicHref: /security/index
   items:
-  - name: operations
+  - name: Ransomware
     tocHref: /security/ransomware/
-    topicHref: /security/operations/index
+    topicHref: /security/ransomware/

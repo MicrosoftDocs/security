@@ -103,7 +103,7 @@ Microsoft Security team blog posts:
 - [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 - [Automatic disruption of human-operated attacks through containment of compromised user accounts (October 2023)](https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/)
-- [Improving AI-based defenses to disrupt human-operated ransomware (June 2022)](https://www.microsoft.com/esecurity/blog/2022/06/21/improving-ai-based-defenses-to-disrupt-human-operated-ransomware/#:~:text=Improving%20AI-based%20defenses%20to%20disrupt%20human-operated%20ransomware%201,...%204%20Human-operated%20ransomware%20protection%20using%20AI%20)
+- [Improving AI-based defenses to disrupt human-operated ransomware (June 2022)](https://www.microsoft.com/security/blog/2022/06/21/improving-ai-based-defenses-to-disrupt-human-operated-ransomware/)
 - [Ransomware as a service: Understanding the cybercrime gig economy and how to protect yourself (May 2022)](https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/?ocid=magicti_ta_blog)
 
   Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.

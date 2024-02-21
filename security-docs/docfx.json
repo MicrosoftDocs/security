@@ -56,7 +56,8 @@
         "privileged-access-workstations/*.yml": "Privileged access"
       },
       "feedback_system": {
-        "privileged-access-workstations/**/*.md": "None"
+        "privileged-access-workstations/**/*.md": "None",
+        "ai-red-team/**/*.md": "None"
       }
     },
     "template": [],

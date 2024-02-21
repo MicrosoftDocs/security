@@ -1,7 +1,7 @@
 ---
 title: Testing  - Microsoft Trusted Root Certificate Program
 description: This document provides details about the changes made monthly to the root store.
-ms.date: 10/27/2020
+ms.date: 02/15/2024
 ms.service: security
 author: kasirota
 ms.author: kasirota

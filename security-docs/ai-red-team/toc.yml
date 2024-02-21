@@ -13,6 +13,8 @@ items:
   items:
   - name: Taxonomy for machine learning failure
     href: /security/engineering/failure-modes-in-machine-learning?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+  - name: AI shared responsibility model
+    href: /azure/security/fundamentals/shared-responsibility-ai?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
 - name: How to
   expanded: false
   items:

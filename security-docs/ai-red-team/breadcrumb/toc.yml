@@ -21,3 +21,6 @@ items:
   - name: AI Red Team
     tocHref: /azure/machine-learning/
     topicHref: /security/ai-red-team/
+  - name: AI Red Team
+    tocHref: /azure/security/fundamentals/
+    topicHref: /security/ai-red-team/

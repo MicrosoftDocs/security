@@ -53,6 +53,8 @@ landingContent:
         links:
           - text: AI Risk Assessment for ML Engineers
             url: ai-risk-assessment.md
+          - text: AI shared responsibility model
+            url: /azure/security/fundamentals/shared-responsibility-ai?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
 
   # Card
   - title: Understanding Threats

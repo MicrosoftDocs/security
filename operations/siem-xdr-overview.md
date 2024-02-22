@@ -4,7 +4,7 @@ description: Learn how to use Microsoft Sentinel with Microsoft Defender XDR and
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
-ms.date: 4/7/2023
+ms.date: 2/22/2024
 ms.topic: article
 ms.service: microsoft-365-zero-trust
 ms.localization_priority: Normal
@@ -19,14 +19,14 @@ ms.collection:
 
 Writers notes:
 
-For updates to product names, please also update the appropriate figures
+For updates to product names, please also update the appropriate figures.
 
-For any updates to figures, please update the corresponding posters as needed and republish the Visio and PDF files in the Microsoft Download Center
+For any updates to figures, please update the corresponding posters as needed and republish the Visio and PDF files in the Microsoft Download Center.
 
 For new articles in this series, please add:
 
-- Cross-links FROM all the other articles in this series TO the new article
-- A link to the Zero Trust Guidance Center page (index.yml) as needed
+- Cross-links FROM all the other articles in this series TO the new article.
+- A link to the Zero Trust Guidance Center page (index.yml) as needed.
 
 --->
 

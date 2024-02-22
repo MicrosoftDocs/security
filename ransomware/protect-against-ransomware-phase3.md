@@ -16,7 +16,7 @@ description: How to stop ransomware by making it hard for a cybercriminal to get
 
 ---
 
-# Phase 3: Make it hard for ransomware cybercriminals to get in
+# Protect against ransomware step 3: Make it hard for ransomware cybercriminals to get in
 
 In this phase, you make the attackers work a lot harder to get into your on-premises or cloud systems by gradually removing the risks at the points of entry.
 

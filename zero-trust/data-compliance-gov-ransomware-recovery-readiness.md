@@ -1,5 +1,5 @@
 ---
-title: RaMP checklist —  Ransomware recovery readiness
+title: RaMP checklist—Ransomware recovery readiness
 description: Use the steps in this guidance to deploy ransomware recovery readiness that adheres to Zero Trust principles.
 ms.date: 01/08/2024
 ms.service: security
@@ -11,7 +11,7 @@ ms.collection:
   - zerotrust-ramp
 ---
 
-# RaMP checklist —  Ransomware recovery readiness
+# RaMP checklist—Ransomware recovery readiness
 
 <!---
 
@@ -32,7 +32,7 @@ For new articles in this content set, please:
 
 --->
 
-This Rapid Modernization Plan (RaMP) checklist helps you prepare your organization so that it has a viable alternative to paying the ransom demanded by ransomware attackers. While attackers in control of your organization have a variety of ways to pressure you into paying, the demands primarily focus on two categories:
+This Rapid Modernization Plan (RaMP) checklist helps you prepare your organization so you have a viable alternative to paying the ransom demanded by ransomware attackers. While attackers in control of your organization have a variety of ways to pressure you into paying, the demands primarily focus on two categories:
 
 - **Pay to regain access**
 
@@ -46,7 +46,7 @@ This Rapid Modernization Plan (RaMP) checklist helps you prepare your organizati
 
    Attackers demand payment in exchange for not releasing sensitive or embarrassing data to the dark web (other criminals) or the general public. 
 
-To avoid being forced into payment (the profitable situation for attackers), the most immediate and effective action you can take is to ensure your organization can restore your entire enterprise from immutable storage that has not already been infected or encrypted by a ransomware attack, which neither the attacker nor you can modify. 
+To avoid being forced into payment (the profitable situation for attackers), the most immediate and effective action you can take is to ensure your organization can restore your entire enterprise from immutable storage that hasn't already been infected or encrypted by a ransomware attack, which neither the attacker nor you can modify. 
 
 Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other areas, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
 
@@ -56,7 +56,7 @@ Identifying the most sensitive assets and protecting them at a higher level of a
 
 ## Secure backups
 
-You must ensure that critical systems and their data are backed up and are immutable to protect against deliberate erasure or encryption by an attacker. The backups **must have not already been infected or encrypted by a ransomware attack**, otherwise you are restoring a set of files that could contain entry points for the attackers to exploit after the recovery.
+You must ensure that critical systems and their data are backed up and are immutable to protect against deliberate erasure or encryption by an attacker. The backups **must have not already been infected or encrypted by a ransomware attack**, otherwise you're restoring a set of files that could contain entry points for the attackers to exploit after the recovery.
 
 Attacks on your backups focus on crippling your organization’s ability to respond without paying, frequently targeting backups and key documentation required for recovery to force you into paying extortion demands. 
 
@@ -66,7 +66,7 @@ Most organizations don’t protect backup and restoration procedures against thi
 >This preparation also improves resilience to natural disasters and rapid attacks like WannaCry and (Not)Petya.
 >
 
-[Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations using Azure Backup and other Microsoft cloud services. If you are using an offsite backup solution provided by a third-party, please consult their documentation.
+[Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations using Azure Backup and other Microsoft cloud services. If you're using an offsite backup solution provided by a third-party, please consult their documentation.
 
 ### Program and project member accountabilities
 
@@ -90,7 +90,7 @@ Meet these deployment objectives to secure your backup infrastructure.
 | Done | Deployment objective | Owner |
 |:-------|:-------|:-----|:--------|
 | <input type="checkbox" /> | 1. Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | IT architect or implementer |
-| <input type="checkbox" /> | 2. Establish process to backup all critical systems automatically on a regular schedule and monitor adherence. | IT backup administrator |
+| <input type="checkbox" /> | 2. Establish process to back up all critical systems automatically on a regular schedule and monitor adherence. | IT backup administrator |
 | <input type="checkbox" /> | 3. Establish process and schedule to regularly exercise your business continuity/disaster recovery (BCDR) plan. | IT architect |
 | <input type="checkbox" /> | 4. Include protecting backups against deliberate erasure and encryption in your backup plan: <br><br> - Strong Protection – Require out-of-band steps (such as multifactor authentication or a PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/immutable-storage-overview)) and/or fully offline or off-site.  | IT backup administrator |
 | <input type="checkbox" /> | 5. Have your users configure [OneDrive backup](https://support.microsoft.com/office/back-up-your-documents-pictures-and-desktop-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057) and [Protected Folders](/microsoft-365/security/defender-endpoint/controlled-folders).  | Microsoft 365 productivity administrator |

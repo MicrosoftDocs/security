@@ -32,8 +32,7 @@ Ransomware can be automated, or involve human hands on a keyboard -- a *human op
 *Commodity ransomware attacks* are usually automated. These cyber attacks can spread like a virus, infect devices through methods like email phishing and malware delivery, and require malware remediation.
 
 That means one ransomware prevention technique is to safeguard your email with a system like 
-[**Microsoft Defender for Office 365**](/microsoft-365/security/office-365-security/?view=o365-worldwide) that protects against malware and phishing delivery, or the comprehensive [**Microsoft Defender XDR**](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-xdr) to detect malware and phishing attempts *early*.
-
+[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/?view=o365-worldwide) that protects against malware and phishing delivery, or the comprehensive [Microsoft Defender XDR](/microsoft-365/security/defender/?view=o365-worldwide) to detect malware and phishing attempts *early*.
 
 ### Human-operated ransomware attacks
 
@@ -56,7 +55,7 @@ The graphic below shows how extortion-based attacks are growing in impact and li
 
 ## Ransomware protection for your organization
 
-First, prevent phishing and malware delivery with ![**Microsoft Defender for Office 365**](/microsoft-365/security/office-365-security/?view=o365-worldwide) and ![**Microsoft Defender XDR**](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-xdr) to detect malware and phishing attempts *early*.
+First, prevent phishing and malware delivery with ![**Microsoft Defender for Office 365**](/microsoft-365/security/office-365-security/) and ![**Microsoft Defender XDR**](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-xdr) to detect malware and phishing attempts *early*.
 
 For a comprehensive view of ransomware and extortion and how to protect your organization, use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation. 
 
@@ -123,7 +122,6 @@ Microsoft Security team blog posts:
 - [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 - [Automatic disruption of human-operated attacks through containment of compromised user accounts (October 2023)](https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/)
-- [Improving AI-based defenses to disrupt human-operated ransomware (June 2022)](https://www.microsoft.com/esecurity/blog/2022/06/21/improving-ai-based-defenses-to-disrupt-human-operated-ransomware/#:~:text=Improving%20AI-based%20defenses%20to%20disrupt%20human-operated%20ransomware%201,...%204%20Human-operated%20ransomware%20protection%20using%20AI%20)
 - [Ransomware as a service: Understanding the cybercrime gig economy and how to protect yourself (May 2022)](https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/?ocid=magicti_ta_blog)
 
   Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.

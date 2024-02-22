@@ -66,15 +66,15 @@ Here's a summary of the guidance:
 
 - The stakes of ransomware and extortion-based attacks are high.
 - However, the attacks have weaknesses that can reduce your likelihood of being attacked.
-- There are three phases to configuring your infrastructure to exploit attack weaknesses.
+- There are three steps to configuring your infrastructure to exploit attack weaknesses.
 
-For the three phases to exploit attack weaknesses, see the [Protect your organization against ransomware and extortion](protect-against-ransomware.md) solution to **quickly** configure your IT infrastructure for the best protection:
+For the three steps to exploit attack weaknesses, see the [Protect your organization against ransomware and extortion](protect-against-ransomware.md) solution to **quickly** configure your IT infrastructure for the best protection:
 
 1. Prepare your organization to recover from an attack without having to pay the ransom.
 2. Limit the scope of damage of a ransomware attack by protecting privileged roles.
 3. Make it harder for an attacker to get into your environment by incrementally removing risks.
 
-[![The three phases to protecting against ransomware and extortion](media/protect-against-ransomware/protect-against-ransomware-phases.png)](protect-against-ransomware.md)
+[![The three steps to protecting against ransomware and extortion](media/protect-against-ransomware/protect-against-ransomware-phases.png)](protect-against-ransomware.md)
 
 Download the [Protect your organization from ransomware poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf) for an overview of the three phases as layers of protection against ransomware attackers.
 

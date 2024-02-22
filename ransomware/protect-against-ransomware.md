@@ -18,7 +18,7 @@ ms.date: 02/22/2024
 
 # Quickly protect your organization against ransomware attacks
 
-Learning how to stop ransomware attacks, and understanding that new threats evolve so your learning must continue, is critical to every organization due to the rising likelihood of ransomware attacks.
+Ranswomare is an evolving and lucrative attack type that cybercriminals use to extort organizations large and small. Understanding how to protect against ransomware attacks and minizmize the damage is an important part of safguarding your company. This article provides practical guidance for how to quickly configure ransomware protection.  
 
 This guidance is organized into steps, starting with the most urgent actions to take.
 

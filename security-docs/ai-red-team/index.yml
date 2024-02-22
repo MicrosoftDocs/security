@@ -1,0 +1,87 @@
+### YamlMime:Landing
+
+title: Microsoft AI Red Team
+summary: Learn to safeguard your organization's AI with guidance and best practices from the industry leading Microsoft AI Red Team.
+
+metadata:
+  title: Microsoft AI Red Team
+  description: Learn to safeguard your organization's AI with guidance and best practices from the industry leading Microsoft AI Red Team.
+  ms.service: security
+  ms.subservice: 
+  ms.topic: landing-page
+  ms.author: joflore
+  author: MicrosoftGuyJFlo
+  manager: amycolannino
+  ms.reviewer: nborges
+  ms.date: 02/06/2024
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: About AI Red Team
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is AI Red teaming and how Microsoft is building safer AI?
+            url: https://www.microsoft.com/security/blog/2023/08/07/microsoft-ai-red-team-building-future-of-safer-ai/
+      - linkListType: how-to-guide
+        links:
+          - text: Guide for building AI Red Teams for LLMs
+            url: /azure/ai-services/openai/concepts/red-teaming?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+      - linkListType: reference
+        links:
+          - text: Responsible AI tools and practices
+            url: https://www.microsoft.com/ai/tools-practices
+          - text: Responsible AI standard and impact assessment
+            url: https://www.microsoft.com/ai/principles-and-approach
+
+  # Card
+  - title: Getting ready
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft's Open Automation Framework to Red Team Generative AI Systems (PyRIT)
+            url: https://aka.ms/PYRITblog
+      - linkListType: how-to-guide
+        links:
+          - text: PyRIT How to Guide
+            url: https://github.com/Azure/PyRIT/blob/main/doc/how_to_guide.ipynb
+      - linkListType: reference
+        links:
+          - text: AI Risk Assessment for ML Engineers
+            url: ai-risk-assessment.md
+          - text: AI shared responsibility model
+            url: /azure/security/fundamentals/shared-responsibility-ai?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+
+  # Card
+  - title: Understanding Threats
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Developer threat modeling guidance for ML systems
+            url: /security/engineering/threat-modeling-aiml?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+      - linkListType: concept
+        links:
+          - text: Taxonomy for machine learning failure
+            url: /security/engineering/failure-modes-in-machine-learning?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+      - linkListType: reference
+        links:
+          - text: Bug Bar to triage attacks on ML systems
+            url: /security/engineering/Bug-Bar-aiml?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+
+  # Card
+  - title: Exploring secure solutions
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Enterprise security and governance for Azure Machine Learning
+            url: /azure/machine-learning/concept-enterprise-security?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+          - text: What is Azure AI Content Safety?
+            url: /azure/ai-services/content-safety/overview?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+          - text: Harms mitigation strategies with Azure AI
+            url: /azure/ai-studio/concepts/evaluation-improvement-strategies?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+          - text: Monitor quality and safety of deployed prompt flow applications
+            url: /azure/ai-studio/how-to/monitor-quality-safety?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json

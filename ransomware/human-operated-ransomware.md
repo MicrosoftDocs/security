@@ -22,7 +22,7 @@ In fact, ransomware is a type of malware or phishing cyber security attack that 
 
 Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But, even when paid, cybercriminals *may never* give the key to the business or device owner, and stop access *permanently*.
 
-![Protect your organization against ransomware and extortion](protect-against-ransomware.md) to configure your IT infrastructure for the best ransomware protection.
+[Protect your organization against ransomware and extortion](protect-against-ransomware.md) to configure your IT infrastructure for the best ransomware protection.
 
 ## How do ransomware attacks work?
 
@@ -52,7 +52,7 @@ Activities might take place during maintenance windows and involve security conf
 
 The graphic below shows how extortion-based attacks are growing in impact and likelihood.
 
-![The impact and likelihood that human-operated ransomware attacks will continue](media/human-operated-ransomware/ransomware-extortion-based-attack.png)
+[The impact and likelihood that human-operated ransomware attacks will continue](media/human-operated-ransomware/ransomware-extortion-based-attack.png)
 
 ## Ransomware protection for your organization
 
@@ -62,7 +62,7 @@ For a comprehensive view of ransomware and extortion and how to protect your org
 
 Here's a summary of the guidance:
 
-![The summary of the guidance in the Human-Operated Ransomware Mitigation Project Plan](media/human-operated-ransomware/stakes-weaknesses-plan.png)
+[The summary of the guidance in the Human-Operated Ransomware Mitigation Project Plan](media/human-operated-ransomware/stakes-weaknesses-plan.png)
 
 - The stakes of ransomware and extortion-based attacks are high.
 - However, the attacks have weaknesses that can reduce your likelihood of being attacked.

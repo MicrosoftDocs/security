@@ -1,5 +1,5 @@
 ---
-title: "Protect against ransomware Phase 2: Limit the scope of ransomware damage"
+title: "Protect against ransomware step 2: Limit the scope of ransomware damage"
 ms.author: dansimp
 author: dansimp
 f1.keywords:
@@ -13,10 +13,10 @@ ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
 description: How to prevent ransomware by protecting privileged roles in your organization and limiting the scope of damage a cybercriminal attacker can do.
-
+ms.date: 02/22/2024
 ---
 
-# Phase 2: Limit the scope of ransomware damage
+# Protect against ransomware step 2: Limit the scope of ransomware damage
 
 The next step to prevent ransomware is to *protect privileged roles* -- the kind of jobs where people handle a lot of privileged information in an organization. 
 

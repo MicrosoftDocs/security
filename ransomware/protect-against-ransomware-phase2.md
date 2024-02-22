@@ -1,5 +1,5 @@
 ---
-title: "Phase 2: Limit the scope of damage"
+title: "Protect against ransomware Phase 2: Limit the scope of ransomware damage"
 ms.author: dansimp
 author: dansimp
 f1.keywords:
@@ -12,23 +12,27 @@ localization_priority: Normal
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
-description: Deploy ransomware protection to limit the scope of damage of an attacker by protecting privileged roles.
+description: How to prevent ransomware by protecting privileged roles in your organization and limiting the scope of damage a cybercriminal attacker can do.
 
 ---
 
-# Phase 2: Limit the scope of damage
+# Phase 2: Limit the scope of ransomware damage
 
-In this phase, you protect privileged roles to prevent attackers from obtaining a large scope of access for potential damage to data and systems.
+The next step to prevent ransomware is to *protect privileged roles* -- the kind of jobs where people handle a lot of privileged information in an organization. 
 
-## Privileged access strategy
+This phase of ransomware prevention aims to prevent cybercriminal attackers from getting a lot of access to your systems.
 
-You must implement a comprehensive strategy to reduce the risk of privileged access compromise.
+The more access a cybercriminal has to your organization and devices, the higher the potential damage to your data and systems.
 
-All other security controls can easily be invalidated by an attacker with privileged access in your environment. Ransomware attackers use privileged access as a quick path to control all critical assets in the organization for attack and subsequent extortion. 
+## Create a ransomware 'privileged access strategy'
 
-### Program and project member accountabilities
+You must apply a thorough and comprehensive strategy to reduce the risk of privileged access compromise.
 
-This table describes a privileged access strategy against ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+Any other security control you apply can easily be invalidated by an attacker with privileged access in your environment. Ransomware attackers use privileged access as a quick path to control all critical assets in the organization for attack and subsequent extortion. 
+
+### Who is accountable in the program or project
+
+This table describes a privileged access strategy to stop ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
 | Lead | Implementor | Accountability |
 |:-------|:-------|:-----|
@@ -42,7 +46,7 @@ This table describes a privileged access strategy against ransomware in terms of
 |  | User Education Team | Update any password guidance |
 |  |  |  |
 
-### Implementation checklist
+### Ransomware 'privileged access strategy' checklist
 
 Build a multi-part strategy using the guidance at [https://aka.ms/SPA](https://aka.ms/SPA) that includes this checklist.
 
@@ -63,11 +67,13 @@ Try to achieve these results in 30-90 days:
 - 100 % local workstation/server passwords are randomized
 - 100 % privilege escalation mitigations are deployed
 
-## Detection and response
+## Ransomware detection and response
 
-Your organization needs responsive detection and remediation of common attacks on endpoints, email, and identities. Minutes matter. You must rapidly remediate common attack entry points to limit the attacker’s time to laterally traverse your organization.
+Your organization needs responsive detection and remediation of common attacks on endpoints, email, and identities. Minutes matter.
 
-### Program and project member accountabilities
+You must quickly remediate common attack entry points to limit the attacker’s time to laterally traverse your organization.
+
+###  Who is accountable in the program or project
 
 This table describes the improvement of your detection and response capability against ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
@@ -84,7 +90,7 @@ This table describes the improvement of your detection and response capability a
 |  | [Security Compliance Management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) | Monitor to ensure compliance |
 |  |  |  |
 
-### Implementation checklist
+### Ransomware detection and response checklist
 
 Apply these best practices for improving your detection and response.
 

@@ -1,7 +1,7 @@
 ---
 title: Overview - Apply Zero Trust principles to Azure IaaS
 description: This article gives an overview of how to apply Zero Trust principles to Azure IaaS.
-ms.date: 01/27/2023    
+ms.date: 02/12/2024
 ms.service: security
 author: rudneir2
 ms.author: ruolivei
@@ -54,7 +54,7 @@ If you are interested in learning about the guidance recommended in the Cloud Ad
 
 The following figure shows the reference architecture for this Zero Trust guidance.
 
-:::image type="content" source="media/azure-infra-overview/azure-infra-overview-reference-architecture-1.png" alt-text="Diagram of the reference architecture for applying Zero Trust to IaaS." lightbox="media/azure-infra-overview/azure-infra-overview-reference-architecture-1.png":::
+:::image type="content" source="media/azure-infra-overview/azure-infra-overview-reference-architecture-1.svg" alt-text="Diagram of the reference architecture for applying Zero Trust to IaaS." lightbox="media/azure-infra-overview/azure-infra-overview-reference-architecture-1.svg":::
 
 This architecture contains:
 
@@ -65,7 +65,7 @@ This architecture contains:
 
 This series of articles walk through the recommendations for implementing Zero Trust for the reference article by addressing each of these larger pieces hosted in Azure, as shown here.
 
-:::image type="content" source="media/azure-infra-overview/azure-infra-overview.png" alt-text="Diagram of the larger pieces of Azure infrastructure for Zero Trust implementation." lightbox="media/azure-infra-overview/azure-infra-overview.png":::
+:::image type="content" source="media/azure-infra-overview/azure-infra-overview.svg" alt-text="Diagram of the larger pieces of Azure infrastructure for Zero Trust implementation." lightbox="media/azure-infra-overview/azure-infra-overview.svg":::
 
 The diagram outlines the larger areas of the architecture that are addressed by each article in this series:
 
@@ -80,7 +80,7 @@ It’s important to note that the guidance in this series of articles is more sp
 
 The reference architecture diagram provides a topological view of the environment. It’s also valuable to see logically how each of the components can be organized within the Azure environment. The following diagram provides a way to organize your subscriptions and resource groups. Your Azure subscriptions might be organized differently.
 
-:::image type="content" source="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.png" alt-text="Diagram of components in Azure infrastructure." lightbox="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.png":::
+:::image type="content" source="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.svg" alt-text="Diagram of components in Azure infrastructure." lightbox="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.svg":::
 
 In this diagram, the Azure infrastructure is contained within one Microsoft Entra tenant. The following table describes the different sections shown in the diagram.
 
@@ -108,7 +108,7 @@ In this diagram, the Azure infrastructure is contained within one Microsoft Entr
 
 **Microsoft Defender for Cloud** is an extended detection and response (XDR) solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your environment. Defender for Cloud is intended to be used together with Microsoft Defender XDR to provide a greater breadth of correlated protection of your environment, as shown in the following diagram.
 
-:::image type="content" source="media/azure-infra-overview/azure-infra-overview-threat-protection.png" alt-text="Diagram of threat protection with Microsoft Defender for Cloud." lightbox="media/azure-infra-overview/azure-infra-overview-threat-protection.png":::
+:::image type="content" source="media/azure-infra-overview/azure-infra-overview-threat-protection.svg" alt-text="Diagram of threat protection with Microsoft Defender for Cloud." lightbox="media/azure-infra-overview/azure-infra-overview-threat-protection.svg":::
 
 In the diagram:
 

@@ -1,7 +1,7 @@
 ---
 title: Release notes - Microsoft Trusted Root Certificate Program
 description: This document gives details about the changes made monthly to the root store.
-ms.date: 1/25/2023
+ms.date: 2/15/2024
 ms.service: security
 author: hasokol-ms
 ms.author: hasokol

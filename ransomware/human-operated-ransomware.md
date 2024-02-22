@@ -11,6 +11,7 @@ ms.custom: cxdef-zt-ransomware
 ms.topic: article
 localization_priority: Normal
 description: Learn what ransomware is, how it works, and how to protect against it with links to the Microsoft products that help prevent ransomware.
+ms.date: 02/22/2024
 ---
 
 # What is ransomware?
@@ -32,7 +33,7 @@ Ransomware can be automated, or involve human hands on a keyboard -- a *human op
 *Commodity ransomware attacks* are usually automated. These cyber attacks can spread like a virus, infect devices through methods like email phishing and malware delivery, and require malware remediation.
 
 That means one ransomware prevention technique is to safeguard your email with a system like 
-[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/?view=o365-worldwide) that protects against malware and phishing delivery, or the comprehensive [Microsoft Defender XDR](/microsoft-365/security/defender/?view=o365-worldwide) to detect malware and phishing attempts *early*.
+[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/) that protects against malware and phishing delivery, [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/) to automatically detect and block suspicious activity on your devices, and [Microsoft Defender XDR](/microsoft-365/security/defender/) to detect malware and phishing attempts *early*.
 
 ### Human-operated ransomware attacks
 
@@ -55,7 +56,7 @@ The graphic below shows how extortion-based attacks are growing in impact and li
 
 ## Ransomware protection for your organization
 
-First, prevent phishing and malware delivery with ![**Microsoft Defender for Office 365**](/microsoft-365/security/office-365-security/) and ![**Microsoft Defender XDR**](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-xdr) to detect malware and phishing attempts *early*.
+First, prevent phishing and malware delivery with [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/) to protect against malware and phishing delivery, [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/) to automatically detect and block suspicious activity on your devices, and [Microsoft Defender XDR](/microsoft-365/security/defender/) to detect to malware and phishing attempts *early*.
 
 For a comprehensive view of ransomware and extortion and how to protect your organization, use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation. 
 
@@ -87,7 +88,7 @@ Key information from Microsoft:
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023) 
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
-- - Microsoft's Detection and Response Team (DART) ransomware [approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
+- Microsoft's Detection and Response Team (DART) ransomware [approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
 

@@ -1,5 +1,5 @@
 ---
-title: "Protect against ransomware Phase 1: Prepare for cybercriminal ransomware attacks by having a backup and recovery plan"
+title: "Protect against ransomware step 1: Prepare for cybercriminal ransomware attacks by having a backup and recovery plan"
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, extortionware, malicious encryption
 ms.author: dansimp
 author: dansimp
@@ -17,7 +17,7 @@ description: Prepare your organization so that you can recover from cybercrimina
 
 ---
 
-# Phase 1: Prepare a ransomware attack recovery plan
+# Protect against ransomware step 1: Prepare a ransomware attack recovery plan
 
 One thing you must do in advance of a ransomware attack by cybercrimanals is prepare your organization so it has a alternative to paying a ransom.
 

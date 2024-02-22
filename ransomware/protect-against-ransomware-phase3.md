@@ -1,5 +1,5 @@
 ---
-title: "Phase 3: Make it hard to get in"
+title: "Protect against ransomware Phase 3: Make it hard for ransomware cybercriminals to get into your organization"
 ms.author: dansimp
 author: dansimp
 f1.keywords:
@@ -12,13 +12,13 @@ localization_priority: Normal
 ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
-description: Deploy ransomware protection to make it hard for an attacker to get into your environment by incrementally removing the risks.
-
+description: How to stop ransomware by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
+ms.date: 02/22/2024
 ---
 
-# Phase 3: Make it hard to get in
+# Protect against ransomware step 3: Make it hard for ransomware cybercriminals to get into your organization
 
-In this phase, you make the attackers work a lot harder to get into your on-premises or cloud infrastructures by incrementally removing the risks at the points of entry.
+In this phase, you make the attackers work a lot harder to get into your on-premises or cloud systems by gradually removing the risks at the points of entry.
 
 >[!Important]
 >While many of these will be familiar and easy to quickly accomplish, it’s critically important that **your work on Phase 3 should not slow down your progress on phases 1 and 2**!
@@ -63,7 +63,7 @@ Apply these best practices to protect your remote access infrastructure from ran
 |<input type="checkbox" />|Deploy [Azure Point-to-Site (P2S) VPN](/azure/vpn-gateway/openvpn-azure-ad-tenant#enable-authentication) to provide remote access.|Take advantage of integration with Microsoft Entra ID and your existing Azure subscriptions.|
 |<input type="checkbox" />|Publish on-premises web apps with [Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services).|Apps published with Microsoft Entra application proxy do not need a remote access connection.|
 |<input type="checkbox" />|Secure access to Azure resources with [Azure Bastion](/azure/bastion/bastion-overview).|Securely and seamlessly connect to your Azure virtual machines over SSL.|
-|<input type="checkbox" />|Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)).|Reduce risk from ransomware activities that probe baseline security features and settings.|
+|<input type="checkbox" />|Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#ransomware-detection-and-response)).|Reduce risk from ransomware activities that probe baseline security features and settings.|
 
 ## Email and collaboration
 
@@ -95,7 +95,7 @@ Apply these best practices to protect your email and collaboration solutions fro
 |<input type="checkbox" />|Enable [AMSI for Office VBA](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).|Detect Office macro attacks with endpoint tools like [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).|
 |<input type="checkbox" />|Implement Advanced Email security using [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp) or a similar solution.|Email is a common entry point for attackers.|
 |<input type="checkbox" />|[Deploy attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) to block common attack techniques including: <br><br> - Endpoint abuse such as credential theft, ransomware activity, and suspicious use of PsExec and WMI. <br><br> - Weaponized Office document activity such as advanced macro activity, executable content, process creation, and process injection initiated by Office applications. <br><br> **Note:** Deploy these rules in audit mode first, then assess any negative impact, and then deploy them in block mode.|ASR provides additional layers of protect specifically targeted at mitigating common attack methods.|
-|<input type="checkbox" />|Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)).|Reduces risk from ransomware activities that probe baseline security features and settings.|
+|<input type="checkbox" />|Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#ransomware-detection-and-response)).|Reduces risk from ransomware activities that probe baseline security features and settings.|
 
 ## Endpoints
 
@@ -130,7 +130,7 @@ Apply these best practices to all Windows, Linux, MacOS, Android, iOS, and other
 |<input type="checkbox" />|Maintain your software so that it is: <br><br> - Updated: Rapidly deploy critical security updates for operating systems, browsers, & email clients <br><br> - Supported:  Upgrade operating systems and software for versions supported by your vendors.|Attackers are counting on you missing or neglecting manufacturer updates and upgrades.|
 |<input type="checkbox" />|Isolate, disable, or retire insecure systems and protocols, including [unsupported operating systems](/lifecycle/) and [legacy protocols](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/retire-those-old-legacy-protocols/ba-p/259396).|Attackers use known vulnerabilities of legacy devices, systems, and protocols as entry points into your organization.|
 |<input type="checkbox" />|Block unexpected traffic with host-based firewall and network defenses.|Some malware attacks rely on unsolicited inbound traffic to hosts as a way of making a connection for an attack.|
-|<input type="checkbox" />|Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)).|Reduces risk from ransomware activities that probe baseline security features and settings.|
+|<input type="checkbox" />|Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#ransomware-detection-and-response)).|Reduces risk from ransomware activities that probe baseline security features and settings.|
 
 ## Accounts
 
@@ -160,7 +160,7 @@ Apply these best practices to protect your accounts from ransomware attackers.
 |---|---|---|
 |<input type="checkbox" />|Enforce strong MFA or passwordless sign-in for all users. Start with administrator and [priority](/microsoft-365/admin/setup/priority-accounts) accounts using one or more of: <br><br> - Passwordless authentication with [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) or the [Microsoft Authenticator app](/azure/active-directory/authentication/howto-authentication-phone-sign-in). <br><br> - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-userstates). <br><br> - A third-party MFA solution.|Make it harder for an attacker to perform a credential compromise by just determining a user account password.|
 |<input type="checkbox" />|Increase password security: <br><br> - For Microsoft Entra accounts, use [Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad) to detect and block known weak passwords and additional weak terms that are specific to your organization. <br><br> - For on-premises Active Directory Domain Services (AD DS) accounts, [Extend Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises) to AD DS accounts.|Ensure that attackers can't determine common passwords or passwords based on your organization name.|
-|<input type="checkbox" />|Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#detection-and-response)).|Reduces risk from ransomware activities that probe baseline security features and settings.|
+|<input type="checkbox" />|Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#ransomware-detection-and-response)).|Reduces risk from ransomware activities that probe baseline security features and settings.|
 
 ### Implementation results and timelines
 

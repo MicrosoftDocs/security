@@ -1,5 +1,5 @@
 ---
-title: "Protect against ransomware Phase 3: Make it hard for ransomware cybercriminals to get in"
+title: "Protect against ransomware Phase 3: Make it hard for ransomware cybercriminals to get into your organization"
 ms.author: dansimp
 author: dansimp
 f1.keywords:
@@ -13,10 +13,10 @@ ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
 description: How to stop ransomware by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
-
+ms.date: 02/22/2024
 ---
 
-# Protect against ransomware step 3: Make it hard for ransomware cybercriminals to get in
+# Protect against ransomware step 3: Make it hard for ransomware cybercriminals to get into your organization
 
 In this phase, you make the attackers work a lot harder to get into your on-premises or cloud systems by gradually removing the risks at the points of entry.
 

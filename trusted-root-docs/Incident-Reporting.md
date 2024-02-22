@@ -1,7 +1,7 @@
 ---
 title: Security Incident Response Requirements - Microsoft Trusted Root Program
 description: This document provides details about the Incident Response requirements all Certificate Authorities are required to adhere to in order to be compliant with our program. 
-ms.date: 02/04/2020
+ms.date: 02/04/2024
 ms.service: security
 ms.author: kasirota
 author: kasirota

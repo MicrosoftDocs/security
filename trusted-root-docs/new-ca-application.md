@@ -1,7 +1,7 @@
 ---
 title: New CA application - Microsoft Trusted Root Program 
 description: Describes the application process to become a new certificate authority in the Microsoft Trusted Root Program.
-ms.date: 02/18/2020
+ms.date: 02/15/2024
 ms.service: security
 ms.author: kasirota
 author: kasirota
@@ -11,13 +11,15 @@ ms.topic: conceptual
 
 # New CA application - Microsoft Trusted Root Program
 
+**At this time, the Microsoft Trusted Root Program is not accepting new CAs into the program. Please check back at a later time for updates on new CA applications and acceptances.**
+
 ## 1. Introduction
 
-This page describes the application process to become a new certificate authority in the Microsoft Trusted Root Program. 
+This page describes the general application process to become a new certificate authority in the Microsoft Trusted Root Program, and will continually updated with the latest information.
 
 ## 2. Certificate Authority Intake Process
 
-1.   An applicant CA must fill out the application located at <https://aka.ms/rootcertapply> and email the completed form to [msroot\@microsoft.com]. This will add the CA to a queue of applications that will be reviewed in order of initial application time. 
+1.   An applicant CA must fill out the application and email the completed form to [msroot\@microsoft.com]. This will add the CA to a queue of applications that will be reviewed in order of initial application time. **Please note that, as stated above, we are currently not accepting new CAs to our program. In the future, when we begin accepting new CAs, the application will be linked here.**
 
 2.  Once the CA has reached the head of queue, Microsoft will review the application, and may request additional documentation from the CA to determine if the CA meets the Program requirements and whether, in Microsoft's judgment, the CA's inclusion into the program will benefit Microsoft's customers. Microsoft will complete vetting of the CA and its related businesses at this time which will, at a minimum, include review of:     
 

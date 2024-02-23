@@ -26,7 +26,7 @@
       href: adopt/identify-protect-sensitive-business-data.md
     - name: Meet regulatory and compliance requirements
       href: adopt/meet-regulatory-compliance-requirements.md
-- name: Concepts and deployment objectives
+- name: Technology pillars
   expanded: false
   items:
     - name: Overview
@@ -45,7 +45,7 @@
       href: deploy/networks.md
     - name: Visibility, automation, and orchestration
       href: deploy/visibility-automation-orchestration.md
-- name: Small business Zero Trust guidance
+- name: Small businesses
   href: guidance-smb-partner.md
 - name: Rapid Modernization Plan (RaMP)
   expanded: false
@@ -58,7 +58,7 @@
       href: data-compliance-gov-ransomware-recovery-readiness.md
     - name: Data protection
       href: data-compliance-gov-data.md
-- name: Zero Trust deployment plan with Microsoft 365
+- name: Microsoft 365
   expanded: false
   items:
     - name: Overview
@@ -257,9 +257,9 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-- name: Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
+- name: Microsoft Copilot for Microsoft 365
   href: zero-trust-microsoft-365-copilot.md
-- name: Zero Trust deployment plans with Microsoft Azure
+- name: Microsoft Azure services
   expanded: false
   items: 
     - name: Overview
@@ -299,7 +299,7 @@
         href: /security/operations/ingest-data-sources?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
         href: /security/operations/respond-incident?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-- name: Technology partner integrations
+- name: Technology partners
   expanded: false
   items: 
     - name: Overview
@@ -323,7 +323,7 @@
       - name: Monitor Zero Trust with Microsoft Sentinel
         href: /azure/sentinel/sentinel-solution?toc=/security/zero-trust/integrate/TOC.json&bc=/security/zero-trust/breadcrumb/toc.json
         maintainContext: true
-- name: Developer guidance
+- name: Developers
   expanded: false
   items:
     - name: Overview
@@ -388,7 +388,7 @@
         href: develop/secure-dev-environment-zero-trust.md
       - name: Embed Zero Trust into developer workflow
         href: develop/embed-zero-trust-dev-workflow.md
-- name: Zero Trust illustrations for IT architects and implementers
+- name: Illustrations for IT architects and implementers
   href: zero-trust-tech-illus.md
 - name: Resources
   expanded: false

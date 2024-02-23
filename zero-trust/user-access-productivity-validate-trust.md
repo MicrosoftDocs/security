@@ -13,6 +13,25 @@ ms.collection:
 
 # RaMP Checklist — Explicitly validate trust for all access requests
 
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+To update figures that are not screen shots, your options are:
+
+- Locate the source Visio file in internal storage.
+- Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
+
+For new articles in this content set, please:
+
+- Add a link in the zero-trust-ramp-overview.md to the new article.
+- Add a link to the Zero Trust Guidance Center page (index.yml).
+
+--->
+
 This Rapid Modernization Plan (RaMP) checklist helps you establish a security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access, for both public and private networks.
 
 To be productive, your employees (users) must be able to use:

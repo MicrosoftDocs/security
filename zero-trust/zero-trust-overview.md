@@ -1,7 +1,7 @@
 ---
 title: What is Zero Trust?
 description: Understand the Zero Trust security model, learn about the principles, and apply the Zero Trust architecture using Microsoft 365 and Microsoft Azure services.  
-ms.date: 04/15/2022
+ms.date: 02/26/2024
 ms.service: security
 author: mjcaparas
 ms.author: macapara
@@ -13,7 +13,9 @@ ms.collection:
 
 # What is Zero Trust?
 
+<!---
 :::image type="icon" source="./media/icon-introduction-medium.png":::
+--->
 
 Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles.
 
@@ -25,11 +27,11 @@ Zero Trust is a security strategy. It is not a product or a service, but an appr
 
 This is the core of **Zero Trust**. Instead of believing everything behind the corporate firewall is safe, the Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 
-It is designed to adapt to the complexities of the modern environment that embraces the mobile workforce, protects people, devices, applications, and data wherever they are located.
+Zero Trust is designed to adapt to the complexities of the modern environment that embraces the mobile workforce and protects user accounts, devices, applications, and data wherever they are located.
 
-A Zero Trust approach should extend throughout the entire digital estate and serve as an integrated security philosophy and end-to-end strategy. 
+A Zero Trust approach should extend throughout the entire digital estate and serve as an integrated security philosophy and end-to-end strategy.
 
-Different organizational requirements, existing technology implementations, and security stages all affect how a Zero Trust security model implementation is planned. Using our experience in helping customers to secure their organizations, as well as in implementing our own Zero Trust model, we've developed the following guidance to assess your readiness and to help you build a plan to get to Zero Trust.
+Different organizational requirements, existing technology implementations, and security stages all affect how a Zero Trust security model implementation is planned and executed. Using our experience in helping customers to secure their organizations, as well as in implementing our own Zero Trust model, Microsoft has developed guidance to assess your readiness and help you build a plan to get to Zero Trust.
 
 With Zero Trust, you move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
 
@@ -83,7 +85,7 @@ Follow this table for the best Zero Trust documentation sets for your needs.
 
 ### Your role
 
-Follow this table for the best documentation sets for your role in your organization.
+Follow this table for the best documentation sets for the roles in your organization.
 
 | Role | Documentation set | Helps you... |
 | --- | --- | --- |
@@ -116,11 +118,11 @@ On this site you can find:
 
 ## Related links
 
-- [Zero Trust Overview](https://www.youtube.com/watch?v=KlEKAzMQEOw&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=13):  This video provides information about:
+- [Zero Trust Overview](https://www.youtube.com/watch?v=KlEKAzMQEOw&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=13)-This video provides information about:
 
     - Zero Trust definition
     - Zero Trust principles
     - Zero Trust core concepts
     - Rapid modernization plan (RaMP) quick wins
 
-- [Zero Trust - The Open Group](https://www.youtube.com/watch?v=x0xlTVyX968&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=12): This video provides a perspective on Zero Trust from a standards organization.
+- [Zero Trust - The Open Group](https://www.youtube.com/watch?v=x0xlTVyX968&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=12)-This video provides a perspective on Zero Trust from a standards organization.

@@ -37,7 +37,7 @@ For new articles in this content set, please:
 
 # Apply Zero Trust principles to Azure storage
 
-This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to Azure Storage:
+This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md) to Azure Storage:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |

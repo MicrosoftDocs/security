@@ -41,7 +41,7 @@ The best way to deploy an Azure-based hub virtual network (VNet) for Zero Trust 
 
 This article provides steps for how to take an existing hub VNet and ensure you're ready for a Zero Trust methodology. It assumes that you have used the ALZ-Bicep [hubNetworking](https://github.com/Azure/ALZ-Bicep/tree/main/infra-as-code/bicep/modules/hubNetworking) module to rapidly deploy a hub VNet, or have deployed some other hub VNet with similar resources. Using a separate connectivity hub connected to isolated workplace spokes is an anchor pattern in Azure secure networking and helps support the Zero Trust principles.
 
-This article describes how to deploy a hub VNet for Zero Trust by mapping the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) in the following ways.
+This article describes how to deploy a hub VNet for Zero Trust by mapping the [principles of Zero Trust](zero-trust-overview.md) in the following ways.
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |

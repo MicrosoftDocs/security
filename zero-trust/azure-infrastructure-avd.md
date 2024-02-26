@@ -37,7 +37,7 @@ For new articles in this content set, please:
 
 # Apply Zero Trust principles to an Azure Virtual Desktop deployment
 
-This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to an Azure Virtual Desktop deployment in the following ways:
+This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md) to an Azure Virtual Desktop deployment in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |

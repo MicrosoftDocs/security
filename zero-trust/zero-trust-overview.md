@@ -71,11 +71,11 @@ Different organizational requirements, existing technology implementations, and 
       </tr>
       <tr>
          <td>
-            <p><img src="media/icon-applications-small.png" alt="Application window icon."></p>
+            <p><img src="media/icon-data-small.png" alt="Ones and zeroes icon."></p>
          </td>
          <td>
-            <p><strong>Secure applications with Zero Trust</strong></p>
-            <p>Applications and APIs provide the interface by which data is consumed. They may be legacy on-premises, lifted-and-shifted to cloud workloads, or modern SaaS applications. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.</p>
+            <p><strong>Secure data with Zero Trust</strong></p>
+            <p>Ultimately, security teams are protecting data. Where possible, data should remain safe even if it leaves the devices, apps, infrastructure, and networks the organization controls. Classify, label, and encrypt data, and restrict access based on those attributes.</p>
          </td>
          <!--<td>
             <p><img src="./media/video-image-placeholder-03.png" alt="Video placeholder 3."></p>
@@ -83,11 +83,11 @@ Different organizational requirements, existing technology implementations, and 
       </tr>
       <tr>
          <td>
-            <p><img src="media/icon-data-small.png" alt="Ones and zeroes icon."></p>
+            <p><img src="media/icon-applications-small.png" alt="Application window icon."></p>
          </td>
          <td>
-            <p><strong>Secure data with Zero Trust</strong></p>
-            <p>Ultimately, security teams are protecting data. Where possible, data should remain safe even if it leaves the devices, apps, infrastructure, and networks the organization controls. Classify, label, and encrypt data, and restrict access based on those attributes.</p>
+            <p><strong>Secure applications with Zero Trust</strong></p>
+            <p>Applications and APIs provide the interface by which data is consumed. They may be legacy on-premises, lifted-and-shifted to cloud workloads, or modern SaaS applications. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.</p>
          </td>
          <!--<td>
             <p><img src="./media/video-image-placeholder-04.png" alt="Video placeholder 4."></p>

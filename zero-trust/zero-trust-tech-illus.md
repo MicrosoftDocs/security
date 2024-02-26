@@ -12,7 +12,7 @@ ms.collection:
 
 # Zero Trust illustrations for IT architects and implementers
 
-These posters and technical diagrams give you information about deployment and implementation steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to Microsoft cloud services, including Microsoft 365 and Microsoft Azure.
+These posters and technical diagrams give you information about deployment and implementation steps to apply the [principles of Zero Trust](zero-trust-overview.md) to Microsoft cloud services, including Microsoft 365 and Microsoft Azure.
 
 Zero Trust is a new security model that assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 

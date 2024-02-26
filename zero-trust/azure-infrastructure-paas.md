@@ -37,7 +37,7 @@ For new articles in this content set, please:
 
 --->
 
-This article helps you apply the [principles of the Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) security model to a PaaS workload using Azure virtual networks (VNets) and private endpoints in the following ways:
+This article helps you apply the [principles of the Zero Trust](zero-trust-overview.md) security model to a PaaS workload using Azure virtual networks (VNets) and private endpoints in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |

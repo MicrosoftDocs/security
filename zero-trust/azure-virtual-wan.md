@@ -45,7 +45,7 @@ With the modern cloud, mobile devices, and other endpoints evolution, relying on
 
 Azure Virtual WAN allows a [global transit network architecture](/azure/virtual-wan/virtual-wan-global-transit-network-architecture#globalnetworktransit) by enabling ubiquitous, any-to-any connectivity between globally distributed sets of cloud workloads in virtual networks (VNets), branch sites, SaaS and PaaS applications, and users. Adopting a Zero Trust approach in Azure Virtual WAN is critical to ensure that your backbone is secure and protected. 
 
-This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to an Azure Virtual WAN deployment in the following ways:
+This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md) to an Azure Virtual WAN deployment in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |

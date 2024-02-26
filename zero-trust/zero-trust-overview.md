@@ -19,7 +19,7 @@ ms.collection:
 
 Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles.
 
-| Principle | Decription |
+| Principle | Description |
 | --- | --- |
 | Verify explicitly | Always authenticate and authorize based on all available data points. |
 | Use least privilege access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. |

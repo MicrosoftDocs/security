@@ -81,6 +81,18 @@ Program.
     3. EV 2.23.140.1.1. 
     4. IV 2.23.140.1.2.3.
     5. Non-EV Code Signing 2.23.140.1.4.1.
+    6. S/MIME Mailbox Validated Legacy 2.23.140.1.5.1.1.
+    7. S/MIME Mailbox Validated Multipurpose 2.23.140.1.5.1.2.
+    8. S/MIME Mailbox Validated Strict 2.23.140.1.5.1.3.
+    9. S/MIME Organization Validated Legacy 2.23.140.1.5.2.1.
+    10. S/MIME Organization Validated Multipurpose 2.23.140.1.5.2.2.
+    11. S/MIME Organization Validated Strict 2.23.140.1.5.2.3.
+    12. S/MIME Sponsor Validated Legacy 2.23.140.1.5.3.1.
+    13. S/MIME Sponsor Validated Multipurpose 2.23.140.1.5.3.2.
+    14. S/MIME Sponsor Validated Strict 2.23.140.1.5.3.3.
+    15. S/MIME Individual Validated Legacy 2.23.140.1.5.4.1.
+    16. S/MIME Individual Validated Multipurpose 2.23.140.1.5.4.2.
+    17. S/MIME Individual Validated Strict 2.23.140.1.5.4.3.
 11. Beginning August 2024, all custom EV SSL OIDs managed by the Trusted Root Program and our respective tooling will be removed and replaced with CA/B Forum compliant EV SSL OID (2.23.140.1.1). The Microsoft Edge team will implement checks for EV SSL OID (2.23.140.1.1) in the browser, so other EV SSL OIDs will no longer be accepted to align with Edge and to avoid incompatibilities. 
 12. CAs may not have more than 2 OIDs applied to their root certificate.   
 13. End-entity certificates that include a Basic Constraints extension in accordance with IETF RFC 5280 must have the cA field set to FALSE and the pathLenConstraint field must be absent.

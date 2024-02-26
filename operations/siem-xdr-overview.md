@@ -4,7 +4,7 @@ description: Learn how to use Microsoft Sentinel with Microsoft Defender XDR and
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
-ms.date: 4/7/2023
+ms.date: 2/22/2024
 ms.topic: article
 ms.service: microsoft-365-zero-trust
 ms.localization_priority: Normal
@@ -14,6 +14,21 @@ ms.collection:
   - msftsolution-overview
   - zerotrust-azure
 ---
+
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+For any updates to figures, please update the corresponding posters as needed and republish the Visio and PDF files in the Microsoft Download Center.
+
+For new articles in this series, please add:
+
+- Cross-links FROM all the other articles in this series TO the new article.
+- A link to the Zero Trust Guidance Center page (index.yml) as needed.
+
+--->
 
 # Implement Microsoft Sentinel and Microsoft Defender XDR for Zero Trust
 
@@ -90,7 +105,7 @@ The following diagram shows the process, starting with discovery and triage in M
 
 :::image type="content" source="./media/investigation-flow.svg" alt-text="Image of incident investigation using Sentinel and Microsoft Defender XDR" lightbox="./media/investigation-flow.svg":::
 
-For more information, see [Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR]( respond-incident.md).
+For more information, see [Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR](respond-incident.md).
 
 ## Key capabilities
 
@@ -120,7 +135,7 @@ Capability or feature | Description | Product |
 | [Microsoft Defender XDR Connector](/azure/sentinel/connect-microsoft-365-defender) | Microsoft Defender XDR Connector synchronizes logs and incidents to Microsoft Sentinel. | Microsoft Defender XDR and Microsoft Sentinel |
 |[Data connectors](/azure/sentinel/connect-data-sources) | Allow for the ingestion of data for analysis in Microsoft Sentinel. | Microsoft Sentinel|
 |[Content hub solution -Zero Trust (TIC 3.0)](/azure/sentinel/sentinel-solution) | Zero Trust (TIC 3.0) includes a workbook, analytics rules, and a playbook, which provide an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, helping organizations to monitor configurations over time. | Microsoft Sentinel |
-|[Security Orchestration, Automation, and Response (SOAR) ](/azure/sentinel/sentinel-soar-content) | Leveraging automation rules and playbooks in response to security threats increases your SOC's effectiveness and saves you time and resources. | Microsoft Sentinel |
+|[Security Orchestration, Automation, and Response (SOAR)](/azure/sentinel/sentinel-soar-content) | Leveraging automation rules and playbooks in response to security threats increases your SOC's effectiveness and saves you time and resources. | Microsoft Sentinel |
 
 ## What's in this solution
 
@@ -153,6 +168,7 @@ Also see these additional articles for applying Zero Trust principles to Azure:
   - [Spoke virtual networks](/security/zero-trust//azure-infrastructure-iaas)
   - [Hub virtual networks](/security/zero-trust//azure-infrastructure-networking)
 
+- [Spoke virtual network with Azure PaaS Services](/security/zero-trust/azure-infrastructure-paas)
 - [Azure Virtual Desktop](/security/zero-trust/azure-infrastructure-avd)
 - [Azure Virtual WAN](/security/zero-trust/azure-virtual-wan)
 - [IaaS applications in Amazon Web Services](/security/zero-trust/secure-iaas-apps)

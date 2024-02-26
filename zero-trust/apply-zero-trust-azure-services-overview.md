@@ -13,6 +13,28 @@ ms.collection:
   - zerotrust-azure
 ---
 
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+To update figures that are not screen shots, your options are:
+
+- Locate the source Visio file in internal storage.
+- Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
+
+For any updates to figures, please update the corresponding posters as needed (see the "Technical publications" section of this article) and republish the Visio and PDF files in the Microsoft Download Center.
+
+For new articles in this content set, please:
+
+- Add cross-links in the "Next Steps" section FROM all the other articles in this content set TO the new article.
+- Add a link to the Zero Trust Guidance Center page (index.yml).
+- Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed.
+
+--->
+
 # Overview – Apply Zero Trust principles to Azure services
 
 This series of articles helps you apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to your services in Microsoft Azure using a multi-disciplinary methodology. Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles:

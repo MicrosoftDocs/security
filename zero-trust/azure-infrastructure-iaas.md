@@ -36,7 +36,7 @@ For new articles in this content set, please:
 - Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed.
 
 --->
-This article helps you apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to a spoke virtual network (VNet) for IaaS workloads in Azure in the following ways:
+This article helps you apply the [principles of Zero Trust](zero-trust-overview.md) to a spoke virtual network (VNet) for IaaS workloads in Azure in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |

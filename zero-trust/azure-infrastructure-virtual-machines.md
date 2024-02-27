@@ -37,7 +37,7 @@ For new articles in this content set, please:
 
 # Apply Zero Trust principles to virtual machines in Azure
 
-This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to virtual machines in Azure:
+This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md) to virtual machines in Azure:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |

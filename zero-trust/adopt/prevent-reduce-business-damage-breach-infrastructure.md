@@ -1,7 +1,7 @@
 ---
 title: Implement security breach prevention and recovery infrastructure
 description: Implement security breach prevention and recovery infrastructure.  
-ms.date: 12/18/2023
+ms.date: 02/22/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -74,7 +74,6 @@ For more information about the "Prevent or reduce business damage from a breach"
 - The [overview](prevent-reduce-business-damage-breach.md)
 - The additional elements of [implementing threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md)
 
-
 ## Define strategy phase
 
 :::image type="content" source="../media/adoption-guide/define-strategy-phase.svg" alt-text="The define strategy phase." lightbox="../media/adoption-guide/define-strategy-phase.svg":::
@@ -93,7 +92,6 @@ The motivations for security breach prevention and recovery infrastructure are s
 | IT needs | To implement technologies and disciplines to lower the probability of a breach, such as updating on-premises systems and endpoints and deploying honeypot resources to distract and deceive attackers, all while maintaining an uncompromising approach to identity security and provisioning. |
 | Operational needs | To implement breach prevention and recovery as standard operating procedures. Breaches are expected and while undesired can be mitigated for your business vertical. |
 | Strategic needs | To incrementally raise the ability of your business to recover from breaches, which can lower the return of investment to cyber attackers while increasing operating resiliency. The “assume breach” principle of Zero Trust forces you to plan for and execute changes and updates to ensure business survival, minimize breaches, and reduce breach recovery time. |
-
 
 ### Outcomes for implementing security breach prevention and recovery infrastructure
 
@@ -127,7 +125,7 @@ Many organizations can take a four-staged approach to these deployment objective
 
 | Stage 1 | Stage 2 | Stage 3 | Stage 4 |
 | --- | --- | --- | --- |
-| Secure privileged accounts <br><br> Implement Microsoft 365 Backup and Azure Backup for **critical** business data <br><br> Implement Azure Site Recovery for **critical** workload continuity <br><br> Encrypt network communication | Segment your network <br><br> Implement a patching plan <br><br> Create honeypot resources <br><br> Get started with Microsoft Purview Insider Risk Management | Implement Microsoft 365 Backup and Azure Backup for **all** business data <br><br> Implement Azure Site Recovery for **all** workloads <br><br> Gain visibility to network traffic <br><br> Design your threat and business continuity/disaster recovery (BCDR) response | Discontinue legacy network security technology <br><br> Practice threat and BCDR response |
+| Secure privileged accounts <br><br> Segment your network <br><br> Implement Azure Site Recovery for **critical** workload continuity <br><br> Encrypt network communication |  Implement Microsoft 365 Backup and Azure Backup for **critical** business data <br><br> Implement a patching plan <br><br> Create honeypot resources <br><br> Get started with Microsoft Purview Insider Risk Management | Implement Microsoft 365 Backup and Azure Backup for **all** business data <br><br> Implement Azure Site Recovery for **all** workloads <br><br> Gain visibility to network traffic <br><br> Design your threat and business continuity/disaster recovery (BCDR) response | Discontinue legacy network security technology <br><br> Practice threat and BCDR response |
 
 If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
 
@@ -144,7 +142,6 @@ A foundational step in the Zero Trust adoption lifecycle for every business scen
 - Insider risks and priorities for managing them.
 - Server and device patching policies and requirements.
 - BCDR systems and policies.
-
 
 ### Organizational planning and alignment
 
@@ -220,49 +217,14 @@ Features of Entra PIM include:
 | [Plan an Entra PIM deployment](/azure/active-directory/privileged-identity-management/pim-deployment-plan) | 	Step through the planning process for deploying PIM for your privileged accounts. |
 | Module: [Plan and implement privileged access](/training/modules/plan-implement-privileged-access/) | Learn how to use PIM to protect your data and resources. |
 
-##### Implement Microsoft 365 and Azure Backup for critical business data
+##### Segment your network
 
-BCDR is an important element of breach mitigation and a crucial part of a BCDR infrastructure is backup and restore. For cyberattacks, you also need to protect your backups against deliberate erasure, corruption, or encryption. In a ransomware attack, the attacker can encrypt, corrupt, or destroy both your live data and the backups, leaving your organization susceptible to a ransom to restore your business operations. To address this vulnerability, copies of your backed-up data must be immutable.
+This objective is to create boundaries on your network so that intermediate analysis and filtering can protect sensitive servers, applications, and data. Network segmentation can occur for on-premises servers or in the cloud, for example, with virtual machines hosted on virtual networks (VNets) in Azure IaaS.
 
-Microsoft offers Microsoft 365 Backup and Azure Backup for native backup and restore functions.
-
-Microsoft 365 Backup is a new offering (currently in preview) that backs up your Microsoft 365 tenant data for Exchange, OneDrive and SharePoint workloads at scale and provides quick restores. Microsoft 365 Backup or applications built on top of the Microsoft 365 Backup Storage platform deliver the following benefits regardless of the size or scale of your tenant:
-
-- Fast, immutable backup within hours
-- Fast restore within hours
-- Full SharePoint site and OneDrive account restore fidelity, meaning the site and OneDrive are restored to their exact state at specific prior points in time via a rollback operation
-- Full Exchange mailbox item restores or granular item restores using search
-- Consolidated security and compliance domain management
-
-For more information, see the [Microsoft 365 Backup overview](/microsoft-365/syntex/backup/backup-overview).
-
-The Azure Backup service provides simple, secure, and cost-effective solutions to back up your data and recover it from the Microsoft Azure cloud. Azure Backup can back up:
-
-- On-premises files, folders, system state, on-premises VMs (Hyper-V and VMware) and other on-premises workloads.
-- Azure VMs or files, folders, and system state.
-- Azure Managed Disks
-- Azure Files shares
-- SQL Server in Azure VMs
-- SAP HANA databases in Azure VMs
-- Azure Database for PostgreSQL servers
-- Azure Blobs
-
-
-| Resource | Description |
+| Recommendations | Resource |
 |:-----|:-----|
-| Module: [Design a solution for backup and disaster recovery](/training/modules/design-solution-for-backup-disaster-recovery/) | Learn how to select appropriate backup solutions and disaster recovery solutions for Azure workloads. |
-| [Overview of Microsoft 365 Backup]() | Get started with the documentation set for Microsoft 365 Backup. |
-| [What is the Azure Backup service?]() | Get started with the documentation set for Azure Backup. |
-| [Azure Backup and ransomware]() | Learn how Azure Backup protects against a ransomware attack. |
-
-You can use Microsoft 365 Backup and Azure Backup as part of your BCDR solution.
-
-You can also use [incremental snapshots in Azure](/azure/virtual-machines/disks-incremental-snapshots?tabs=azure-cli) for forensic investigation after a breach. Incremental snapshots are point-in-time backups for managed disks that, when taken, consist only of the changes since the last snapshot. Snapshots allow you to establish the last point in time before a breach occurred and restore it to that state. 
-
-Identity protection for the user accounts used to administer backups must use strong authentication with MFA and should use PIM for JIT access. Also ensure that your backup infrastructure is protected using secondary identities from another identity provider, such as local identities or local system identities. These are known as break glass accounts.
-
-For example, if the cyberattack has compromised your Entra ID tenant and you are now locked out of using an Entra ID administrator account to access your backups, the backup infrastructure must allow for a sign-in that is separate from the compromised Entra ID tenant.
-
+| Use many ingress/egress cloud micro-perimeters with some micro-segmentation. | [Secure networks with Zero Trust](/security/zero-trust/deploy/networks#i-network-segmentation-many-ingressegress-cloud-micro-perimeters-with-some-micro-segmentation) |
+| Use multiple subnets and network security groups to host multiple tiers of an app and restrict traffic. | [Apply Zero Trust principles to a spoke VNet in Azure](/security/zero-trust/azure-infrastructure-iaas) <br><br> [Apply Zero Trust principles to a spoke VNet with Azure PaaS Services](/security/zero-trust/azure-infrastructure-paas) |
 
 ##### Implement Site Recovery for critical workload continuity
 
@@ -303,14 +265,47 @@ This objective is more of a check to be sure your network traffic is encrypted. 
 
 The Stage 2 deployment objectives include segmenting your network to exercise better control for traffic to sensitive resources, ensuring your servers and devices are patched with updates in a timely manner, creating honeypot resources to deceive and distract attackers, and beginning the management of your insider risks.
 
-##### Segment your network
+##### Implement Microsoft 365 and Azure Backup for critical business data
 
-This objective is to create boundaries on your network so that intermediate analysis and filtering can protect sensitive servers, applications, and data. Network segmentation can occur for on-premises servers or in the cloud, for example, with virtual machines hosted on virtual networks (VNets) in Azure IaaS.
+BCDR is an important element of breach mitigation and a crucial part of a BCDR infrastructure is backup and restore. For cyberattacks, you also need to protect your backups against deliberate erasure, corruption, or encryption. In a ransomware attack, the attacker can encrypt, corrupt, or destroy both your live data and the backups, leaving your organization susceptible to a ransom to restore your business operations. To address this vulnerability, copies of your backed-up data must be immutable.
 
-| Recommendations | Resource |
+Microsoft offers Microsoft 365 Backup and Azure Backup for native backup and restore functions.
+
+Microsoft 365 Backup is a new offering (currently in preview) that backs up your Microsoft 365 tenant data for Exchange, OneDrive and SharePoint workloads at scale and provides quick restores. Microsoft 365 Backup or applications built on top of the Microsoft 365 Backup Storage platform deliver the following benefits regardless of the size or scale of your tenant:
+
+- Fast, immutable backup within hours
+- Fast restore within hours
+- Full SharePoint site and OneDrive account restore fidelity, meaning the site and OneDrive are restored to their exact state at specific prior points in time via a rollback operation
+- Full Exchange mailbox item restores or granular item restores using search
+- Consolidated security and compliance domain management
+
+For more information, see the [Microsoft 365 Backup overview](/microsoft-365/syntex/backup/backup-overview).
+
+The Azure Backup service provides simple, secure, and cost-effective solutions to back up your data and recover it from the Microsoft Azure cloud. Azure Backup can back up:
+
+- On-premises files, folders, system state, on-premises VMs (Hyper-V and VMware) and other on-premises workloads.
+- Azure VMs or files, folders, and system state.
+- Azure Managed Disks
+- Azure Files shares
+- SQL Server in Azure VMs
+- SAP HANA databases in Azure VMs
+- Azure Database for PostgreSQL servers
+- Azure Blobs
+
+| Resource | Description |
 |:-----|:-----|
-| Use many ingress/egress cloud micro-perimeters with some micro-segmentation. | [Secure networks with Zero Trust](/security/zero-trust/deploy/networks#i-network-segmentation-many-ingressegress-cloud-micro-perimeters-with-some-micro-segmentation) |
-| Use multiple subnets and network security groups to host multiple tiers of an app and restrict traffic. | [Apply Zero Trust principles to a spoke VNet in Azure](/security/zero-trust/azure-infrastructure-iaas) <br><br> [Apply Zero Trust principles to a spoke VNet with Azure PaaS Services](/security/zero-trust/azure-infrastructure-paas) |
+| Module: [Design a solution for backup and disaster recovery](/training/modules/design-solution-for-backup-disaster-recovery/) | Learn how to select appropriate backup solutions and disaster recovery solutions for Azure workloads. |
+| [Overview of Microsoft 365 Backup]() | Get started with the documentation set for Microsoft 365 Backup. |
+| [What is the Azure Backup service?]() | Get started with the documentation set for Azure Backup. |
+| [Azure Backup and ransomware]() | Learn how Azure Backup protects against a ransomware attack. |
+
+You can use Microsoft 365 Backup and Azure Backup as part of your BCDR solution.
+
+You can also use [incremental snapshots in Azure](/azure/virtual-machines/disks-incremental-snapshots?tabs=azure-cli) for forensic investigation after a breach. Incremental snapshots are point-in-time backups for managed disks that, when taken, consist only of the changes since the last snapshot. Snapshots allow you to establish the last point in time before a breach occurred and restore it to that state. 
+
+Identity protection for the user accounts used to administer backups must use strong authentication with MFA and should use PIM for JIT access. Also ensure that your backup infrastructure is protected using secondary identities from another identity provider, such as local identities or local system identities. These are known as break glass accounts.
+
+For example, if the cyberattack has compromised your Entra ID tenant and you are now locked out of using an Entra ID administrator account to access your backups, the backup infrastructure must allow for a sign-in that is separate from the compromised Entra ID tenant.
 
 ##### Implement a patching plan
 

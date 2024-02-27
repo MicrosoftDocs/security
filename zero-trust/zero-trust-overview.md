@@ -116,7 +116,6 @@ On this site you can find:
 
 --->
 
-
 ## Recommended training
 
 |Training  | [Introduction to Zero Trust](/training/modules/zero-trust-introduction) |

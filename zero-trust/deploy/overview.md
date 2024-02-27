@@ -21,97 +21,16 @@ You deploy Zero Trust principles across your IT infrastructure by implementing Z
 
 The following articles provide conceptual information and deployment objectives for these seven technology pillars. Use these articles to assess your readiness and build a deployment plan to apply [Zero Trust principles](../zero-trust-overview.md).
 
-<br/>
+| Technology pillar | Desciption |
+| --- | --- |
+| [![Fingerprint icon](../media/icon-identity-small.png)](identity.md) <br> [Identities](identity.md) | Identities—whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow least privilege access principles. |
+| [![Endpoints icon.](../media/icon-endpoints-small.png)](endpoints.md) <br> [Endpoints](endpoints.md) |  Once an identity has been granted access to a resource, data can flow to a variety of different endpoints (devices), from IoT devices to smartphones, BYOD to partner-managed devices, and on-premises workloads to cloud-hosted servers. This diversity creates a massive attack surface area. Monitor and enforce device health and compliance for secure access. |
+| [![Application window icon.](../media/icon-applications-small.png)](applications.md) <br> [Applications](applications.md)| Applications and APIs provide the interface by which data is consumed. They may be legacy on-premises workloads, lifted-and-shifted to cloud workloads, or modern SaaS applications. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options. |
+| [![Ones and zeroes icon.](../media/icon-data-small.png)](data.md) <br> [Data](data.md)  | [Ultimately, security teams are protecting data. Where possible, data should remain safe even if it leaves the devices, apps, infrastructure, and networks the organization controls. Classify, label, and encrypt data, and restrict access based on those attributes. |
+| [![Data storage disks icon.](../media/icon-infrastructure-small.png)](infrastructure.md) <br> [Infrastructure](infrastructure.md) | Infrastructure—whether on-premises servers, cloud-based VMs, containers, or micro-services—represents a critical threat vector. Assess for version, configuration, and JIT access to harden defense. Use telemetry to detect attacks and anomalies, and automatically block and flag risky behavior and take protective actions. |
+| [![Network diagram icon.](../media/icon-networks-small.png)](networks.md) <br> [Networks](networks.md) | All data is ultimately accessed over network infrastructure. Networking controls can provide critical controls to enhance visibility and help prevent attackers from moving laterally across the network. Segment networks (and do deeper in-network micro-segmentation) and deploy real-time threat protection, end-to-end encryption, monitoring, and analytics. |
+| [![Gear icon.](../media/icon-visibility-automation-orchestration-small.png)](visibility-automation-orchestration.md) <br> [Visibility, automation, and orchestration](visibility-automation-orchestration.md) | In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints (devices), data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction. |
 
-
-<table border="0">
-   <tbody>
-      <tr>
-         <td>
-            <p><img src="../media/icon-identity-small.png" alt="Fingerprint icon."></p>
-         </td>
-         <td>
-            <p><strong><a href="https://learn.microsoft.com/security/zero-trust/deploy/identity">Identities</a></strong> </p>
-            <p>Identities—whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Also follow least privilege access principles.</p>
-         </td>
-         <!--<td>
-            <p><img src="./media/video-image-placeholder-01.png" alt="Video placeholder 1."></p>
-         </td>-->
-      </tr>
-      <tr>
-         <td>
-            <p><img src="../media/icon-endpoints-small.png" alt="Endpoint devices icon."></p>
-         </td>
-         <td>
-            <p><strong><a href="https://learn.microsoft.com/security/zero-trust/deploy/endpoints">Endpoints</a></strong> </p>
-            <p>Once an identity has been granted access to a resource, data can flow to a variety of different endpoints (devices), from IoT devices to smartphones, BYOD to partner-managed devices, and on-premises workloads to cloud-hosted servers. This diversity creates a massive attack surface area. Monitor and enforce device health and compliance for secure access.</p>
-         </td>
-         <!--<td>
-            <p><img src="./media/video-image-placeholder-02.png" alt="Video placeholder 2."></p>
-         </td>-->
-      </tr>
-      <tr>
-         <td>
-            <p><img src="../media/icon-applications-small.png" alt="Application window icon."></p>
-         </td>
-         <td>
-            <p><strong><a href="https://learn.microsoft.com/security/zero-trust/deploy/applications">Applications</a></strong></p>
-            <p>Applications and APIs provide the interface by which data is consumed. They may be legacy on-premises workloads, lifted-and-shifted to cloud workloads, or modern SaaS applications. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.</p>
-         </td>
-         <!--<td>
-            <p><img src="./media/video-image-placeholder-03.png" alt="Video placeholder 3."></p>
-         </td>-->
-      </tr>
-      <tr>
-         <td>
-            <p><img src="../media/icon-data-small.png" alt="Ones and zeroes icon."></p>
-         </td>
-         <td>
-            <p><strong><a href="https://learn.microsoft.com/security/zero-trust/deploy/data">Data</a></strong></p>
-            <p>Ultimately, security teams are protecting data. Where possible, data should remain safe even if it leaves the devices, apps, infrastructure, and networks the organization controls. Classify, label, and encrypt data, and restrict access based on those attributes.</p>
-         </td>
-         <!--<td>
-            <p><img src="./media/video-image-placeholder-04.png" alt="Video placeholder 4."></p>
-         </td>-->
-      </tr>
-      <tr>
-         <td>
-            <p><img src="../media/icon-infrastructure-small.png" alt="Data storage disks icon."></p>
-         </td>
-         <td>
-            <p><strong><a href="https://learn.microsoft.com/security/zero-trust/deploy/infrastructure">Infrastructure</a></strong></p>
-            <p>Infrastructure—whether on-premises servers, cloud-based VMs, containers, or micro-services—represents a critical threat vector. Assess for version, configuration, and JIT access to harden defense. Use telemetry to detect attacks and anomalies, and automatically block and flag risky behavior and take protective actions.</p>
-         </td>
-         <!--<td>
-            <p><img src="./media/video-image-placeholder-05.png" alt="Video placeholder 5."></p>
-         </td>-->
-      </tr>
-      <tr>
-         <td>
-            <p><img src="../media/icon-networks-small.png" alt="Network diagram icon."></p>
-         </td>
-         <td>
-            <p><strong><a href="https://learn.microsoft.com/security/zero-trust/deploy/networks">Networks</a></strong></p>
-            <p>All data is ultimately accessed over network infrastructure. Networking controls can provide critical controls to enhance visibility and help prevent attackers from moving laterally across the network. Segment networks (and do deeper in-network micro-segmentation) and deploy real-time threat protection, end-to-end encryption, monitoring, and analytics.</p>
-         </td>
-         <!--<td>
-            <p><img src="./media/video-image-placeholder-06.png" alt="Video placeholder 6."></p>
-         </td>-->
-      </tr>
-      <tr>
-         <td>
-            <p><img src="../media/icon-visibility-automation-orchestration-small.png" alt="Gear icon."></p>
-         </td>
-         <td>
-            <p><strong><a href="https://learn.microsoft.com/security/zero-trust/deploy/visibility-automation-orchestration">Visibility, automation, and orchestration</a></strong> </p>
-            <p>In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints (devices), data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.</p>
-         </td>
-         <!--<td>
-            <p><img src="./media/video-image-placeholder-07.png" alt="Video placeholder 7."></p>
-         </td>-->
-      </tr>
-   </tbody>
-</table>
 
 <!---
 
@@ -126,6 +45,14 @@ The following articles provide conceptual information and deployment objectives 
 | <img src="../media/icon-visibility-automation-orchestration-small.png" alt="Gear icon."> | [Visibility, automation, and orchestration with Zero Trust](visibility-automation-orchestration.md) <br><br> In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints (devices), data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction. |
 
 --->
+
+## Recommended training
+
+|Training  | [Establish the guiding principles and core components of Zero Trust](/training/paths/zero-trust-principles/) |
+|---------|---------|
+|:::image type="icon" source="../media/basics-of-zero-trust.png" border="false"::: | Use this learning path to understand the basics of applying Zero Trust principles to the key technology pillars of identities, endpoints, application access, networks, infrastructure, and data. |
+> [!div class="nextstepaction"]
+> [Start >](/training/paths/zero-trust-principles/)
 
 ## Additional Zero Trust resources
 
@@ -160,15 +87,6 @@ Follow this table for the best documentation sets for the roles in your organiza
 | Member of an IT or security team for Azure services | [Zero Trust for Azure services](../azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. |
 | Partner developer or member of an IT or security team | [Partner integration with Zero Trust](../integrate/overview.md) for design guidance for technology areas and specializations | Apply Zero Trust protections to partner Microsoft cloud solutions. |
 | Application developer | [Develop using Zero Trust principles](../develop/overview.md) for application development design guidance and best practices | Apply Zero Trust protections to your application. |
-
-
-## Recommended training
-
-|Training  | [Establish the guiding principles and core components of Zero Trust](/training/paths/zero-trust-principles/) |
-|---------|---------|
-|:::image type="icon" source="../media/basics-of-zero-trust.png" border="false"::: | Use this learning path to understand the basics of applying Zero Trust principles to the key technology pillars of identities, endpoints, application access, networks, infrastructure, and data. |
-> [!div class="nextstepaction"]
-> [Start >](/training/paths/zero-trust-principles/)
 
 
 <!---

@@ -161,6 +161,16 @@ Follow this table for the best documentation sets for the roles in your organiza
 | Partner developer or member of an IT or security team | [Partner integration with Zero Trust](../integrate/overview.md) for design guidance for technology areas and specializations | Apply Zero Trust protections to partner Microsoft cloud solutions. |
 | Application developer | [Develop using Zero Trust principles](../develop/overview.md) for application development design guidance and best practices | Apply Zero Trust protections to your application. |
 
+
+## Recommended training
+
+|Training  | [Establish the guiding principles and core components of Zero Trust](/training/paths/zero-trust-principles/) |
+|---------|---------|
+|:::image type="icon" source="../media/basics-of-zero-trust.png" border="false"::: | Use this learning path to understand the basics of applying Zero Trust principles to the key technology pillars of identities, endpoints, application access, networks, infrastructure, and data. |
+> [!div class="nextstepaction"]
+> [Start >](/training/paths/zero-trust-principles/)
+
+
 <!---
 
 After learning about the foundational concepts, you can proceed with guidance materials to help you in your Zero Trust journey:

@@ -116,6 +116,22 @@ On this site you can find:
 
 --->
 
+
+## Recommended training
+
+|Training  | [Introduction to Zero Trust](/training/modules/zero-trust-introduction) |
+|---------|---------|
+|:::image type="icon" source="./media/introduction-to-zero-trust.svg" border="false"::: | Use this module to understand the Zero Trust approach and how it strengthens the security infrastructure within your organization. |
+> [!div class="nextstepaction"]
+> [Start >](/training/modules/zero-trust-introduction)
+
+|Training  | [Introduction to Zero Trust and best practice frameworks](/training/modules/introduction-zero-trust-best-practice-frameworks/) |
+|---------|---------|
+|:::image type="icon" source="./media/introduction-zero-trust-best-practice-frameworks.svg" border="false"::: | Use this module to learn about best practices that cybersecurity architects use and some key best practice frameworks for Microsoft cybersecurity capabilities. You also learn about the concept of Zero Trust, and how to get started with Zero Trust in your organization. |
+> [!div class="nextstepaction"]
+> [Start >](/training/modules/introduction-zero-trust-best-practice-frameworks/)
+
+
 ## Related links
 
 - [Zero Trust Overview](https://www.youtube.com/watch?v=KlEKAzMQEOw&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=13)-This video provides information about:

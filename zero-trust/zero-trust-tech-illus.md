@@ -1,7 +1,7 @@
 ---
 title: Zero Trust illustrations for IT architects and implementers 
 description: Get the technical illustrations in the Zero Trust library to print or customize for your deployment.
-ms.date: 12/13/2023
+ms.date: 02/27/2024
 ms.service: security
 author: sikovatc
 ms.author: sikovatc
@@ -19,7 +19,11 @@ Zero Trust is a new security model that assumes breach and verifies each request
 As an IT architect or implementer, you can use these resources for deployment steps, reference architectures, and logical architectures to more quickly apply Zero Trust principles to your existing environment for:
 
 - [Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)
-- [Azure IaaS](azure-infrastructure-overview.md)
+- [Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md)
+- Azure services:
+
+    - [Azure IaaS](azure-infrastructure-overview.md)
+    - [Azure Virtual WAN](azure-infrastructure-avd.md)
 
 You can download these illustrations in the form of:
 
@@ -87,13 +91,11 @@ See these additional Microsoft security posters and illustrations:
 
 - An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks: [PDF](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf)
 
-- An overview of how Microsoft's SecOps team does incident response to mitigate ongoing attacks: [PDF](https://github.com/MarkSimos/MicrosoftSecurity/raw/master/Microsoft_CDOC_and_DCU_Poster.pdf)
-
 - The Security Best Practices slide presentation: [PDF](/microsoft-365/downloads/security-compass-presentation.pdf) | [PowerPoint](/microsoft-365/downloads/security-compass-presentation.pptx)
 
 - The top 10 Azure Security best practices: [PDF](/microsoft-365/downloads/top-10-azure-security-best-practices.pdf) | [PowerPoint](/microsoft-365/downloads/top-10-azure-security-best-practices.pptx)
 
-- The app consent grant and other incident response playbook workflows: [PDF](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.pdf) | [Visio](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.vsdx)
+- The phishing, password spray, app consent grant incident response playbook workflows: [PDF](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.pdf) | [Visio](https://download.microsoft.com/download/2/9/a/29a32dc4-d126-42af-a825-ffb944135a50/Incident-Response-Playbook-Workflows.vsdx)
 
 ## Next steps
 

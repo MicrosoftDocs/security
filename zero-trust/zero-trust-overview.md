@@ -63,6 +63,20 @@ These articles help you apply the principles of Zero Trust to your workloads and
 
 --->
 
+## Recommended training
+
+|Training  | [Introduction to Zero Trust](/training/modules/zero-trust-introduction) |
+|---------|---------|
+|:::image type="icon" source="./media/introduction-to-zero-trust.svg" border="false"::: | Use this module to understand the Zero Trust approach and how it strengthens the security infrastructure within your organization. |
+> [!div class="nextstepaction"]
+> [Start >](/training/modules/zero-trust-introduction)
+
+|Training  | [Introduction to Zero Trust and best practice frameworks](/training/modules/introduction-zero-trust-best-practice-frameworks/) |
+|---------|---------|
+|:::image type="icon" source="./media/introduction-zero-trust-best-practice-frameworks.svg" border="false"::: | Use this module to learn about best practices that cybersecurity architects use and some key best practice frameworks for Microsoft cybersecurity capabilities. You also learn about the concept of Zero Trust, and how to get started with Zero Trust in your organization. |
+> [!div class="nextstepaction"]
+> [Start >](/training/modules/introduction-zero-trust-best-practice-frameworks/)
+
 ## Next steps
 
 Use additional Zero Trust content based on a documentation set or roles in your organization.
@@ -98,38 +112,6 @@ Follow this table for the best documentation sets for the roles in your organiza
 | Member of an IT or security team for Azure services | [Zero Trust for Azure services](azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. |
 | Partner developer or member of an IT or security team | [Partner integration with Zero Trust](integrate/overview.md) for design guidance for technology areas and specializations | Apply Zero Trust protections to partner Microsoft cloud solutions. |
 | Application developer | [Develop using Zero Trust principles](develop/overview.md) for application development design guidance and best practices | Apply Zero Trust protections to your application. |
-
-<!---
-
-### Current section
-
-On this site you can find:
-
-- [Adoption framework](adopt/zero-trust-adoption-overview.md)
-- [Concepts and deployment objectives](deploy/overview.md)
-- [Zero Trust for small businesses](guidance-smb-partner.md)
-- [Rapid Modernization Plan (RaMP) guidance](zero-trust-ramp-overview.md)
-- [Microsoft 365 deployment plans](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json)
-- [Microsoft Azure deployment plans](azure-infrastructure-overview.md)
-- [Integration guidance for ISVs](integrate/overview.md)
-- [Developer guidance](develop/overview.md)
-
---->
-
-## Recommended training
-
-|Training  | [Introduction to Zero Trust](/training/modules/zero-trust-introduction) |
-|---------|---------|
-|:::image type="icon" source="./media/introduction-to-zero-trust.svg" border="false"::: | Use this module to understand the Zero Trust approach and how it strengthens the security infrastructure within your organization. |
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/zero-trust-introduction)
-
-|Training  | [Introduction to Zero Trust and best practice frameworks](/training/modules/introduction-zero-trust-best-practice-frameworks/) |
-|---------|---------|
-|:::image type="icon" source="./media/introduction-zero-trust-best-practice-frameworks.svg" border="false"::: | Use this module to learn about best practices that cybersecurity architects use and some key best practice frameworks for Microsoft cybersecurity capabilities. You also learn about the concept of Zero Trust, and how to get started with Zero Trust in your organization. |
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/introduction-zero-trust-best-practice-frameworks/)
-
 
 ## Related links
 

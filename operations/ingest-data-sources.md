@@ -228,7 +228,7 @@ In summary, when turning on Analytic rules for Sentinel, prioritize enabling by 
 
 ### Identify threats with Behavioral Analytics
 
-|Training  |[Identify threats with Behavioral Analytics| Microsoft Learn](/training/modules/use-entity-behavior-analytics-azure-sentinel/)|
+|Training  |[Identify threats with Behavioral Analytics](/training/modules/use-entity-behavior-analytics-azure-sentinel/)|
 |---------|---------|
 |:::image type="icon" source="media/azure-sentinel-behavior-analytics.svg" border="false"::: |The primary approach to connect log data is using the Microsoft Sentinel provided data connectors. This module provides an overview of the available data connectors. |
 > [!div class="nextstepaction"]

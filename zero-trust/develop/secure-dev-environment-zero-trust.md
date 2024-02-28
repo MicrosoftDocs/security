@@ -23,7 +23,7 @@ Vulnerabilities extend to development environment integrations. Development tool
 
 In the diagram below, notice how the developer environment connects to the DevOps tools environment to affect Git branches. It widens the environment surface through connection to third-party open-source packages and application extensions. Extensions present attack vectors in dependency and extension application vulnerabilities.
 
-:::image type="content" source="../media/develop/secure-devops-environments/diagram-developer-environment-overview-inline.png" alt-text="Diagram illustrates developer environments and security threats as described in above-linked eBook and summarized in related articles linked herein." lightbox="../media/develop/secure-devops-environments/diagram-developer-environment-overview-expanded.png":::
+[ ![Diagram illustrates developer environments and security threats as described in previous eBook and summarized in related articles linked herein.](media/develop/secure-devops-environments/diagram-developer-environment-overview-inline.png)](media/develop/secure-devops-environments/diagram-developer-environment-overview-expanded.png#lightbox)
 
 Giving DevOps team members flexibility and control while preventing malicious attacks is a fundamental challenge for security offices. DevOps can control the developer environment with a cloud environment (see [Trusted launch for Azure VMs](/azure/virtual-machines/trusted-launch) and [GitHub Enterprise Cloud Docs](https://docs.github.com/enterprise-cloud@latest/admin)) and secure the developer environment with containers (see [GitHub Codespaces Documentation](https://docs.github.com/codespaces)).
 

@@ -11,7 +11,7 @@ ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to secure my development environment and learn best practices for branch security and trusting tools, extensions, and integrations so that I can implement Zero Trust principles.
 ---
-# Securing the developer environment for Zero Trust
+# Securing the developer environment for Zero Trust 
 
 This article will help you, as a developer, to secure your development environment so that you can implement [Zero Trust principles](../zero-trust-overview.md) (verify explicitly, use least privilege access, assume breach). It features content from our [Securing Enterprise DevOps Environments](https://aka.ms/SecureDevEnvironmentsEbook) eBook and highlights best practices for branch security and trusting tools, extensions, and integrations.
 

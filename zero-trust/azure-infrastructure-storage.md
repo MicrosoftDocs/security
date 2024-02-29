@@ -13,8 +13,6 @@ ms.collection:
   - zerotrust-azure
 ---
 
-**Summary:** To apply Zero Trust principles to Azure IaaS components and infrastructure, you must first understand the common reference architecture and the components of Azure storage, virtual machines, and spoke and hub virtual networks.
-
 <!---
 
 Writers notes:
@@ -39,7 +37,7 @@ For new articles in this content set, please:
 
 # Apply Zero Trust principles to Azure storage
 
-**Summary:** To apply Zero Trust principles to Azure IaaS components and infrastructure, you must first understand the common reference architecture and the components of Azure storage, virtual machines, and spoke and hub virtual networks.
+**Summary:** To apply Zero Trust principles to Azure IaaS components and infrastructure, you must protect data (at rest, in transit, and in use), verify users and control access, separate or segregate critical data with network controls, and use Defender for Storage for automated threat detection and protection.
 
 This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md) to Azure Storage:
 

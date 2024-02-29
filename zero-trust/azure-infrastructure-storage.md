@@ -37,7 +37,7 @@ For new articles in this content set, please:
 
 # Apply Zero Trust principles to Azure storage
 
-**Summary:** To apply Zero Trust principles to Azure IaaS components and infrastructure, you must protect data (at rest, in transit, and in use), verify users and control access, separate or segregate critical data with network controls, and use Defender for Storage for automated threat detection and protection.
+**Summary:** To apply Zero Trust principles to Azure storage, you must protect data (at rest, in transit, and in use), verify users and control access, separate or segregate critical data with network controls, and use Defender for Storage for automated threat detection and protection.
 
 This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md) to Azure Storage:
 
@@ -163,7 +163,7 @@ In this step, you use the recommended controls to protect the network connection
 
 The following diagram highlights the network connections to the Azure Storage services in the reference architecture.
 
-:::image type="content" source="media/secure-storage/azure-infra-storage-network-2.svg" alt-text="The architecture for applying Zero Trust to Azure storage that highlights the network connections to the Azure Storage services in the Azure IaaS reference architecture." lightbox="media/secure-storage/azure-infra-storage-network-2.svg":::
+:::image type="content" source="media/secure-storage/azure-infra-storage-network-2.svg" alt-text="The architecture for applying Zero Trust to Azure storage that highlights the network connections to the Azure Storage services within the Azure IaaS reference architecture." lightbox="media/secure-storage/azure-infra-storage-network-2.svg":::
 
 |Task | Description |
 | --- | --- |

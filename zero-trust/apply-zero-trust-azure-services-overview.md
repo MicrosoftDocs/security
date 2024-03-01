@@ -104,7 +104,7 @@ Refer to the links below to learn about the various services and technologies me
 
 ## Additional Zero Trust documentation
 
-Use additional Zero Trust content based on a documentation set or your role in your organization.
+Use additional Zero Trust content based on a documentation set or the roles in your organization.
 
 ### Documentation set
 

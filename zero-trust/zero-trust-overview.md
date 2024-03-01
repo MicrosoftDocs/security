@@ -79,7 +79,7 @@ These articles help you apply the principles of Zero Trust to your workloads and
 
 ## Next steps
 
-Use additional Zero Trust content based on a documentation set or roles in your organization.
+Use additional Zero Trust content based on a documentation set or the roles in your organization.
 
 ### Documentation set
 

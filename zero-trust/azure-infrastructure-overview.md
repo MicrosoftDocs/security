@@ -89,7 +89,7 @@ This architecture contains:
 
 This series of articles walk through the recommendations for implementing Zero Trust for the reference architecture by addressing each of these larger pieces hosted in Azure, as shown here.
 
-:::image type="content" source="media/azure-infra-overview/azure-infra-overview.svg" alt-text="The reference architecture for applying Zero Trust to Azure IaaS that shows the grouped components for storage, virutal machines, and spoke and hub virtual networks." lightbox="media/azure-infra-overview/azure-infra-overview.svg":::
+:::image type="content" source="media/azure-infra-overview/azure-infra-overview.svg" alt-text="The reference architecture for applying Zero Trust to Azure IaaS that shows the grouped components for storage, virtual machines, and spoke and hub virtual networks." lightbox="media/azure-infra-overview/azure-infra-overview.svg":::
 
 The diagram outlines the larger areas of the architecture that are addressed by each article in this series:
 
@@ -104,9 +104,9 @@ It’s important to note that the guidance in this series of articles is more sp
 
 The reference architecture diagram provides a topological view of the environment. It’s also valuable to see logically how each of the components can be organized within the Azure environment. The following diagram provides a way to organize your subscriptions and resource groups. Your Azure subscriptions might be organized differently.
 
-:::image type="content" source="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.svg" alt-text="The logical architecture for applying Zero Trust to Azure IaaS showing subscriptions, Microsoft Defender for Cloud and Azure Monitor, and resource groups within one Microsoft Entra tenant." lightbox="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.svg":::
+:::image type="content" source="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.svg" alt-text="The logical architecture for applying Zero Trust to Azure IaaS showing subscriptions, Microsoft Defender for Cloud and Azure Monitor, and resource groups within an Entra ID tenant." lightbox="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.svg":::
 
-In this diagram, the Azure infrastructure is contained within one Microsoft Entra tenant. The following table describes the different sections shown in the diagram.
+In this diagram, the Azure infrastructure is contained within an Entra ID tenant. The following table describes the different sections shown in the diagram.
 
 - Azure subscriptions
 

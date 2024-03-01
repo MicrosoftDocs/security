@@ -1,6 +1,6 @@
 ---
 title: How do I apply Zero Trust principles to Azure virtual machines?
-description: Apply Zero Trust principles to virtual machines in Azure.  
+description: How to apply Zero Trust principles to virtual machines in Azure.  
 ms.date: 02/12/2024
 ms.service: security
 author: sikovatc
@@ -55,7 +55,7 @@ Zero Trust principles for virtual machines are applied across the logical archit
 
 The following diagram the logical architecture components.
 
-:::image type="content" source="media/vm/vm-security-configure.svg" alt-text="The logical architecture for applying Zero Trust to an Azure virtual machine showing a subscription, a resource group, and virutal machine components within one Microsoft Entra tenant." lightbox="media/vm/vm-security-configure.svg":::
+:::image type="content" source="media/vm/vm-security-configure.svg" alt-text="The logical architecture for applying Zero Trust to an Azure virtual machine showing a subscription, a resource group, and virtual machine components within an Entra ID tenant." lightbox="media/vm/vm-security-configure.svg":::
 
 In this diagram:
 
@@ -64,8 +64,7 @@ In this diagram:
 
 This article walks through the steps to apply the principles of Zero Trust across this logical architecture, using these steps.
 
-:::image type="content" source="media/vm/azure-infra-vm-subscription-architecture-2.svg" alt-text="The logical architecture for applying Zero Trust to an Azure virtual machine in the 
-five steps of this article." lightbox="media/vm/azure-infra-vm-subscription-architecture-2.svg":::
+:::image type="content" source="media/vm/azure-infra-vm-subscription-architecture-2.svg" alt-text="The logical architecture for applying Zero Trust to an Azure virtual machine in the five steps of this article." lightbox="media/vm/azure-infra-vm-subscription-architecture-2.svg":::
 
 | Step | Task | Zero Trust principles applied |
 | --- | --- | --- |
@@ -199,7 +198,7 @@ When configuring multifactor authentication with conditional access and related 
 
 The following diagram shows the recommended policies for Zero Trust.
 
-:::image type="content" source="media/identity-device-access-policies-byplan.svg" alt-text="Zero Trust identity and device access policies for three protection levels: Starting point, Enterprise, and Specialized security.." lightbox="media/identity-device-access-policies-byplan.svg":::
+:::image type="content" source="media/identity-device-access-policies-byplan.svg" alt-text="Zero Trust identity and device access policies for three protection levels: Starting point, Enterprise, and Specialized security." lightbox="media/identity-device-access-policies-byplan.svg":::
 
 Remember that usernames and passwords can be 100% compromised. Using multifactor authentication, you reduce your risk of compromise by 99.9%. This requires Microsoft Entra ID P1 licenses.
 

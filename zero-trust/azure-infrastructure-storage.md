@@ -55,7 +55,7 @@ You apply Zero Trust principles for Azure Storage across the architecture, from 
 
 The following diagram shows the logical architecture components.
 
-:::image type="content" source="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg" alt-text="The logical architecture for applying Zero Trust to Azure storage showing subscriptions, resource groups, and storage accounts within one Microsoft Entra tenant." lightbox="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg":::
+:::image type="content" source="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg" alt-text="The logical architecture for applying Zero Trust to Azure storage showing subscriptions, resource groups, and storage accounts within an Entra ID tenant." lightbox="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg":::
 
 In the diagram:
 
@@ -163,7 +163,7 @@ In this step, you use the recommended controls to protect the network connection
 
 The following diagram highlights the network connections to the Azure Storage services in the reference architecture.
 
-:::image type="content" source="media/secure-storage/azure-infra-storage-network-2.svg" alt-text="The architecture for applying Zero Trust to Azure storage that highlights the network connections to the Azure Storage services within the Azure IaaS reference architecture." lightbox="media/secure-storage/azure-infra-storage-network-2.svg":::
+:::image type="content" source="media/secure-storage/azure-infra-storage-network-2.svg" alt-text="The architecture for applying Zero Trust to Azure storage that highlights the network connections to Azure Storage services within the Azure IaaS reference architecture." lightbox="media/secure-storage/azure-infra-storage-network-2.svg":::
 
 |Task | Description |
 | --- | --- |

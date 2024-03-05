@@ -227,7 +227,7 @@
         - name: Step 7. Promote the trial to production
           href: /microsoft-365/security/defender/eval-defender-promote-to-production?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
           maintainContext: true
-    - name: Deploy a Microsoft Information Protection solution 
+    - name: Deploy a Microsoft information protection solution 
       href: /microsoft-365/compliance/information-protection-solution?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       maintainContext: true
     - name: Manage data privacy and data protection with Microsoft Priva and Microsoft Purview

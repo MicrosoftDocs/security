@@ -76,7 +76,7 @@ landingContent:
             url: /microsoft-365/solutions/manage-devices-with-intune-overview
           - text: Evaluate, pilot, and deploy Microsoft Defender XDR
             url: /microsoft-365/security/defender/eval-overview
-          - text: Deploy a Microsoft Information Protection solution
+          - text: Deploy a Microsoft information protection solution
             url: /microsoft-365/compliance/information-protection-solution
           - text: Deploy information protection for data privacy regulations
             url: /microsoft-365/solutions/information-protection-deploy

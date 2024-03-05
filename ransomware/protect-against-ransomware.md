@@ -18,9 +18,11 @@ ms.date: 02/22/2024
 
 # Quickly protect your organization against ransomware attacks
 
-Ranswomare is an evolving and lucrative attack type that cybercriminals use to extort organizations large and small. Understanding how to protect against ransomware attacks and minizmize the damage is an important part of safguarding your company. This article provides practical guidance for how to quickly configure ransomware protection.  
+Ransomware is a cyber attack type that cybercriminals use to extort organizations large and small.
 
-This guidance is organized into steps, starting with the most urgent actions to take.
+Understanding how to protect against ransomware attacks and minizmize damage is an important part of safguarding your company. This article gives you practical guidance for how to quickly configure ransomware protection.  
+
+The guidance is organized into steps, starting with the most urgent actions to take.
 
 Each step is a separate article linked below. Bookmark this page as your starting point. 
 

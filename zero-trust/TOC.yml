@@ -35,13 +35,13 @@
       href: deploy/identity.md
     - name: Endpoints
       href: deploy/endpoints.md
-    - name: Applications
-      href: deploy/applications.md
     - name: Data
       href: deploy/data.md
+    - name: Apps
+      href: deploy/applications.md
     - name: Infrastructure
       href: deploy/infrastructure.md
-    - name: Networks
+    - name: Network
       href: deploy/networks.md
     - name: Visibility, automation, and orchestration
       href: deploy/visibility-automation-orchestration.md

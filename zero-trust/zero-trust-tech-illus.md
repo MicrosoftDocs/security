@@ -79,13 +79,20 @@ This illustration shows the set of Zero Trust identity and device access policie
 |:-----|:-----|
 |[![Illustration of the Zero Trust Identity and Device Access Policies.](media/tech-illus/zero-trust-identity-device-access-policies-thumb.png)](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) <br/> [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) <br/> Updated November 2023 | Use this illustration together with this article: [Recommended identity and device access configurations](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations)<br/><br/>**Related solution guides** <br/> <ul><li>[Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust)</li><li>[Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li><li>[Evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview)</li><li>[Deploy an information protection solution with Microsoft Purview](/microsoft-365/compliance/information-protection-solution)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](/microsoft-365/solutions/data-privacy-protection)</li></ul>|
 
+## Common attacks and how Microsoft capabilities for Zero Trust can protect your organization
+
+Learn about the most common cyber attacks and how Microsoft capabilities for Zero Trust can help your organization at every stage of an attack. Also use a table to quickly link to Zero Trust documentation for common attacks based on technology pillars such as identities or data.
+
+| Item | Description |
+|:-----|:-----|
+|[![Thumbnail of the common attacks and how Microsoft capabilities for Zero Trust can protect your organization poster.](media/tech-illus/zero-trust-commonattacks-poster-thumb.png)](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Updated February 2024 | Use this illustration together with this article: [Zero Trust deployment for technology pillars](./deploy/overview.md)</li></ul>|
+
+
 ## Additional Microsoft security posters and illustrations
 
 See these additional Microsoft security posters and illustrations:
 
 - Microsoft Intune enrollment options: [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) \| [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx)
-
-- Common attacks and Microsoft capabilities that protect your organization: [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx)
 
 - An overview of the three phases as layers of protection against ransomware attackers: [PDF](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf). Use this poster together with the [What is ransomware?](/security/compass/human-operated-ransomware) article.
 

@@ -114,7 +114,7 @@ Perform these implementation steps to meet the **Protect your data** deployment 
 | <input type="checkbox" /> | 3. Enable and configure Microsoft Defender for Cloud Apps. | Data Security Engineer | [Get started](/defender-cloud-apps/get-started) |
 | <input type="checkbox" /> | 4. Discover, label, and protect sensitive items that reside in data stores in the cloud.  | Data Security Engineer | [Best practices](/defender-cloud-apps/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud) |
 | <input type="checkbox" /> | 5. Discover, label, and protect sensitive items that reside in on-premises data stores. | Data Security Engineer | [Information protection scanner](/purview/deploy-scanner-configure-install) |
-| <input type="checkbox" /> | 6. Extend your sensitivity labels to Azure resources with Azure Purview | Data Security Engineer | [Labeling in the Microsoft Purview Data Map](/purview/create-sensitivity-label) |
+| <input type="checkbox" /> | 6. Extend your sensitivity labels to Azure by using Microsoft Purview Data Map | Data Security Engineer | [Labeling in the Microsoft Purview Data Map](/purview/create-sensitivity-label) |
 
 <a id="prevent"></a>
 ### 3. Prevent data loss

@@ -417,7 +417,7 @@ Refer to these links to learn about the various services and technologies mentio
 
 - [Introduction to Azure security](/azure/security/fundamentals/overview)
 
-- [Zero Trust implementation guidance](/security/zero-trust/zero-trust-overview)
+- [Zero Trust implementation guidance](zero-trust-overview.md)
 
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 

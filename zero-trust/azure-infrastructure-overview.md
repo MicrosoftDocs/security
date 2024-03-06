@@ -271,7 +271,7 @@ Refer to the links below to learn about the various services and technologies me
 - [Introduction to Azure Storage](/azure/storage/common/storage-introduction)
 - [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview)
 - [Introduction to Azure security](/azure/security/fundamentals/overview)
-- [Zero Trust implementation guidance](/security/zero-trust/zero-trust-overview)
+- [Zero Trust implementation guidance](zero-trust-overview.md)
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 - [Security baselines for Azure overview](/security/benchmark/azure/security-baselines-overview)
 - [Building the first layer of defense with Azure security services](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)

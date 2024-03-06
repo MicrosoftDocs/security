@@ -40,8 +40,8 @@ landingContent:
           url:  deploy/infrastructure.md
         - text: Networks
           url:  deploy/networks.md
-        - text: Visibility, automation, and orchestration.md
-          url:  deploy/visibility-automation-orchestration
+        - text: Visibility, automation, and orchestration
+          url:  deploy/visibility-automation-orchestration.md
         - text: Small business guidance 
           url: guidance-smb-partner.md
  

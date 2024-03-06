@@ -29,19 +29,19 @@ landingContent:
         - text: What is Zero Trust?
           url:  zero-trust-overview.md
         - text: Identity
-          url:  /deploy/identity
+          url:  deploy/identity.md
         - text: Endpoints
-          url:  /deploy/endpoints
-        - text: Applications
-          url:  /deploy/applications
+          url:  deploy/endpoints.md
         - text: Data
-          url:  /deploy/data
+          url:  deploy/data.md
+        - text: Applications
+          url:  deploy/applications.md
         - text: Infrastructure
-          url:  /deploy/infrastructure
+          url:  deploy/infrastructure.md
         - text: Networks
-          url:  /deploy/networks
+          url:  deploy/networks.md
         - text: Visibility, automation, and orchestration
-          url:  /deploy/visibility-automation-orchestration
+          url:  deploy/visibility-automation-orchestration
         - text: Small business guidance 
           url: guidance-smb-partner.md
  
@@ -51,17 +51,17 @@ landingContent:
       - linkListType: concept
         links:
         - text: Overview
-          url:  /adopt/zero-trust-adoption-overview.md
+          url:  adopt/zero-trust-adoption-overview.md
         - text: Rapidly modernize your security posture
-          url:  /adopt/rapidly-modernize-security-posture.md
+          url:  adopt/rapidly-modernize-security-posture.md
         - text: Secure remote and hybrid work
-          url:  /adopt/secure-remote-hybrid-work.md
+          url:  adopt/secure-remote-hybrid-work.md
         - text: Prevent or reduce business damage from a breach
-          url:  /adopt/prevent-reduce-business-damage-breach.md
+          url:  adopt/prevent-reduce-business-damage-breach.md
         - text: Identify and protect sensitive business data
-          url:  /adopt/identify-protect-sensitive-business-data.md
+          url:  adopt/identify-protect-sensitive-business-data.md
         - text: Meet regulatory and compliance requirements
-          url:  /adopt/meet-regulatory-compliance-requirements.md
+          url:  adopt/meet-regulatory-compliance-requirements.md
 
  # Card
   - title: Microsoft 365 deployment plan for Zero Trust
@@ -109,21 +109,21 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Integrate with Microsoft's Zero Trust solutions
-            url:  /integrate/overview
+            url:  integrate/overview.md
           - text: Identity
-            url:  /integrate/identity
+            url:  integrate/identity.md
           - text: Endpoints
-            url:  /integrate/endpoints
+            url:  integrate/endpoints.md
           - text: Applications
-            url:  /integrate/applications
+            url:  integrate/applications.md
           - text: Data
-            url:  /integrate/data
+            url:  integrate/data.md
           - text: Infrastructure
-            url:  /integrate/infrastructure
+            url:  integrate/infrastructure.md
           - text: Networks
-            url:  /integrate/networks
+            url:  integrate/networks.md
           - text: Visibility, automation, and orchestration
-            url:  /integrate/visibility-automation-orchestration
+            url:  integrate/visibility-automation-orchestration
 
 # Card
   - title: Developer guidance
@@ -131,11 +131,11 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Develop using Zero Trust principles
-            url:  /develop/overview
+            url:  develop/overview.md
           - text: Building apps that secure identity through permissions and consent
-            url:  /develop/identity
+            url:  develop/identity.md
           - text: Securing DevOps environments for Zero Trust
-            url:  /develop/secure-devops-environments-zero-trust
+            url:  develop/secure-devops-environments-zero-trust.md
 
 # Card
   - title: Rapid Modernization Plan (RaMP)

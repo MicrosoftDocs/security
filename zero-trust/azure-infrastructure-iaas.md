@@ -458,7 +458,7 @@ For additional technical illustrations, click [here](zero-trust-tech-illus.md).
 ## References
 
 - [Embrace proactive security with Zero Trust](https://aka.ms/zerotrust)
-- [Secure networks with Zero Trust](/security/zero-trust/deploy/networks)
+- [Secure networks with Zero Trust](deploy/networks.md)
 - [Zero-trust network for web applications with Azure Firewall and Application Gateway - Azure Architecture Center](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall)
 - [Azure Landing Zone Policies](https://github.com/Azure/Enterprise-Scale/wiki/ALZ-Policies)
 - [Common Zero Trust identity and device policies](/microsoft-365/security/office-365-security/identity-access-policies)

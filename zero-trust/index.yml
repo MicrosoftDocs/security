@@ -29,19 +29,19 @@ landingContent:
         - text: What is Zero Trust?
           url:  zero-trust-overview.md
         - text: Identity
-          url: /security/zero-trust/deploy/identity
+          url:  security/zero-trust/deploy/identity
         - text: Endpoints
-          url: /security/zero-trust/deploy/endpoints
+          url:  security/zero-trust/deploy/endpoints
         - text: Applications
-          url: /security/zero-trust/deploy/applications
+          url:  security/zero-trust/deploy/applications
         - text: Data
-          url: /security/zero-trust/deploy/data
+          url:  security/zero-trust/deploy/data
         - text: Infrastructure
-          url: /security/zero-trust/deploy/infrastructure
+          url:  security/zero-trust/deploy/infrastructure
         - text: Networks
-          url: /security/zero-trust/deploy/networks
+          url:  security/zero-trust/deploy/networks
         - text: Visibility, automation, and orchestration
-          url: /security/zero-trust/deploy/visibility-automation-orchestration
+          url:  security/zero-trust/deploy/visibility-automation-orchestration
         - text: Small business guidance 
           url: guidance-smb-partner.md
  
@@ -109,21 +109,21 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Integrate with Microsoft's Zero Trust solutions
-            url: /security/zero-trust/integrate/overview
+            url:  security/zero-trust/integrate/overview
           - text: Identity
-            url: /security/zero-trust/integrate/identity
+            url:  security/zero-trust/integrate/identity
           - text: Endpoints
-            url: /security/zero-trust/integrate/endpoints
+            url:  security/zero-trust/integrate/endpoints
           - text: Applications
-            url: /security/zero-trust/integrate/applications
+            url:  security/zero-trust/integrate/applications
           - text: Data
-            url: /security/zero-trust/integrate/data
+            url:  security/zero-trust/integrate/data
           - text: Infrastructure
-            url: /security/zero-trust/integrate/infrastructure
+            url:  security/zero-trust/integrate/infrastructure
           - text: Networks
-            url: /security/zero-trust/integrate/networks
+            url:  security/zero-trust/integrate/networks
           - text: Visibility, automation, and orchestration
-            url: /security/zero-trust/integrate/visibility-automation-orchestration
+            url:  security/zero-trust/integrate/visibility-automation-orchestration
 
 # Card
   - title: Developer guidance
@@ -131,11 +131,11 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Develop using Zero Trust principles
-            url: /security/zero-trust/develop/overview
+            url:  security/zero-trust/develop/overview
           - text: Building apps that secure identity through permissions and consent
-            url: /security/zero-trust/develop/identity
+            url:  security/zero-trust/develop/identity
           - text: Securing DevOps environments for Zero Trust
-            url: /security/zero-trust/develop/secure-devops-environments-zero-trust
+            url:  security/zero-trust/develop/secure-devops-environments-zero-trust
 
 # Card
   - title: Rapid Modernization Plan (RaMP)

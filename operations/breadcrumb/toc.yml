@@ -1,8 +1,0 @@
-items:
-- name: Security
-  tocHref: /security/
-  topicHref: /security/index
-  items:
-  - name: Operations
-    tocHref: /security/operations/
-    topicHref: /security/operations/

@@ -27,13 +27,13 @@ ms.custom:
 
 # Phishing investigation
 
-This article provides guidance on identifying and investigating phishing attacks within your organization. The step-by-step instructions will help you take the required remedial action to protect information and minimize further risks.
+This article provides guidance on identifying and investigating phishing attacks within your organization. The step-by-step instructions help you take the required remedial action to protect information and minimize further risks.
 
 This article contains the following sections:
 
 - **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation. For example, logging that should be turned on, roles and permissions required, among others.
 - **Workflow:** Shows the logical flow that you should follow to perform this investigation.
-- **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done or simply as a quality gate for yourself.
+- **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you've completed or as a quality gate for yourself.
 - **Investigation steps:** Includes a detailed step-by-step guidance for this specific investigation.
 
 ## Prerequisites
@@ -42,7 +42,7 @@ Here are general settings and configurations you should complete before proceedi
 
 ### Account details
 
-Before proceeding with the investigation, it is recommended that you have the user name, user principal name (UPN) or the email address of the account that you suspect is compromised.
+Before proceeding with the investigation, it's recommended that you have the user name, user principal name (UPN) or the email address of the account that you suspect is compromised.
 
 ### Microsoft 365 base requirements
 
@@ -58,7 +58,7 @@ The value **False** indicates that mailbox auditing is enabled for all mailboxes
 
 ### Message trace
 
-Message trace logs are invaluable components that help to find the original source of the message as well as the intended recipients. You can use the *message trace* functionality in Exchange admin center (EAC) at <https://admin.exchange.microsoft.com/#/messagetrace> or with the [Get-MessageTrace](/powershell/module/exchange/mail-flow/get-messagetrace) cmdlet in Exchange Online PowerShell.
+Message trace logs are invaluable components that help to find the original source of the message and the intended recipients. You can use the *message trace* functionality in Exchange admin center (EAC) at <https://admin.exchange.microsoft.com/#/messagetrace> or with the [Get-MessageTrace](/powershell/module/exchange/mail-flow/get-messagetrace) cmdlet in Exchange Online PowerShell.
 
 > [!NOTE]
 > Message trace is also available in the Microsoft Defender portal at <https://security.microsoft.com> under **Email & collaboration** \> **Exchange message trace**, but that's just a passthrough link to message trace in the EAC.
@@ -71,7 +71,7 @@ You search the [unified audit log](/microsoft-365/compliance/search-the-audit-lo
 
 ### Are the sign-in logs and/or audit logs exported to an external system?
 
-Since most of the Microsoft Entra ID [sign-in](/azure/active-directory/reports-monitoring/concept-sign-ins) and audit data will get overwritten after 30 or 90 days, we recommend that you leverage Sentinel, Azure Monitor or an external security information and event management (SIEM) system.
+Since most of the Microsoft Entra ID [sign-in](/azure/active-directory/reports-monitoring/concept-sign-ins) and audit data will get overwritten after 30 or 90 days, we recommend that you use Sentinel, Azure Monitor, or an external security information and event management (SIEM) system.
 
 ## Roles and permissions required
 
@@ -92,11 +92,11 @@ Generally speaking, the [Global Reader](/azure/active-directory/users-groups-rol
 > [!NOTE]
 > Accounts that are members of the **View-Only Audit Logs** or **Audit Logs** role groups only in the the Microsoft Defender portal or the Microsoft Purview compliance portal won't be able to search the Microsoft 365 audit log. In this scenario, you must assign permissions in Exchange Online. For more information, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log).
 
-if you're unsure about the role groups to use, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
+If you're unsure about the role groups to use, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
 
 ### Microsoft Defender for Endpoint
 
-If you have Microsoft Defender for Endpoint (MDE), you should leverage it for this flow. For more information, see [Tackling phishing with signal-sharing and machine learning](https://www.microsoft.com/security/blog/2018/12/19/tackling-phishing-with-signal-sharing-and-machine-learning/).
+If you have Microsoft Defender for Endpoint (MDE), you should use it for this flow. For more information, see [Tackling phishing with signal-sharing and machine learning](https://www.microsoft.com/security/blog/2018/12/19/tackling-phishing-with-signal-sharing-and-machine-learning/).
 
 ## System requirements
 
@@ -127,7 +127,7 @@ You can also:
 
 ## Checklist
 
-This checklist will help you evaluate your investigation process and verify whether you have completed all the steps during investigation:
+This checklist helps you evaluate your investigation process and verify whether you have completed all the steps during investigation:
 
 |&nbsp;|&nbsp;|
 |---|---|
@@ -144,7 +144,7 @@ This checklist will help you evaluate your investigation process and verify whet
 |<input type="checkbox" />|Was there a payload in the attachment?|
 |<input type="checkbox" />|Check email header for true source of the sender|
 |<input type="checkbox" />|Verify IP addresses to attackers/campaigns|
-|<input type="checkbox" />|Did the user click links in the email?|
+|<input type="checkbox" />|Did the user select links in the email?|
 |<input type="checkbox" />|On what endpoint was the email opened?|
 |<input type="checkbox" />|Was the attachment payload executed?|
 |<input type="checkbox" />|Was the destination IP or URL touched or opened?|
@@ -159,15 +159,15 @@ You can also download the phishing and other incident playbook checklists as an 
 
 ## Investigation steps
 
-For this investigation, it is assumed that you either have a sample phishing email, or parts of it like the sender's address, subject of the email, or parts of the message to start the investigation. Also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
+For this investigation, it's assumed that you either have a sample phishing email, or parts of it like the sender's address, subject of the email, or parts of the message to start the investigation. Also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
 
-This playbook is created with the intention that not all Microsoft customers and their investigation teams will have the full Microsoft 365 E5 or Microsoft Entra ID P2 license suite available or configured in the tenant that is being investigated. We will however highlight additional automation capabilities when appropriate.
+This playbook is created with the intention that not all Microsoft customers and their investigation teams have the full Microsoft 365 E5 or Microsoft Entra ID P2 license suite available or configured in the tenant that is being investigated. We'll however highlight other automation capabilities when appropriate.
 
 ### Get the list of users / identities who got the email
 
-As the very first step, you need to get a list of users / identities who received the phishing email. The objective of this step is to record a list of potential users / identities that you'll later use to iterate through for additional investigation steps. Refer to the [Workflow](#workflow) section for a high-level flow diagram of the steps you need to follow during this investigation.
+As the first step, you need to get a list of users / identities who received the phishing email. The objective of this step is to record a list of potential users / identities that you'll later use to iterate through for more investigation steps. Refer to the [Workflow](#workflow) section for a high-level flow diagram of the steps you need to follow during this investigation.
 
-We do not give any recommendations in this playbook on how you want to record this list of potential users / identities. Depending on the size of the investigation, you can leverage an Excel book, a CSV file, or even a database for larger investigations. There are multiple ways to obtain the list of identities in a given tenant, and here are some examples.
+We don't give any recommendations in this playbook on how you want to record this list of potential users / identities. Depending on the size of the investigation, you can use an Excel book, a CSV file, or even a database for larger investigations. There are multiple ways to obtain the list of identities in a given tenant, and here are some examples.
 
 ### Create a Content search in the Microsoft Purview compliance portal
 
@@ -215,11 +215,11 @@ Use the following script to check whether delegated access is configured on the 
 
 To create this report, run a small PowerShell script that gets a list of all your users. Then, use the Get-MailboxPermission cmdlet to create a CSV file of all the mailbox delegates in your tenancy.
 
-Look for unusual names or permission grants. If you see something unusual, contact the mailbox owner to check whether it is legitimate.
+Look for unusual names or permission grants. If you see something unusual, contact the mailbox owner to check whether it's legitimate.
 
 ### Are there forwarding rules configured for the mailbox?
 
-You need to check each identified mailbox for mailbox forwarding (also known as *SMTP forwarding*) or Inbox rules that forward email messages to external recipients (typically, newly-created Inbox rules).
+You need to check each identified mailbox for mailbox forwarding (also known as *SMTP forwarding*) or Inbox rules that forward email messages to external recipients (typically, newly created Inbox rules).
 
 - To check all mailboxes for mailbox forwarding, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
@@ -238,7 +238,7 @@ You need to check each identified mailbox for mailbox forwarding (also known as 
   **Notes**:
 
   - Look for unusual target locations, or any kind of external addressing.
-  - Look for forwarding rules with unusual key words in the criteria such as *all mail with the word invoice in the subject*. Contact the mailbox owner to check whether it is legitimate.
+  - Look for forwarding rules with unusual key words in the criteria such as *all mail with the word invoice in the subject*. Contact the mailbox owner to check whether it's legitimate.
 
 ### Review Inbox rules
 

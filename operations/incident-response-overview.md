@@ -247,7 +247,7 @@ Depending on the nature and scope of the attack, your analysts can clean up atta
 
 - Prepare for a Big Bang
 
-   This approach is appropriate for a scenario where an adversary has already settled in and established redundant access mechanisms to your environment. This practice is frequently seen in customer incidents investigated by [Microsoft's Detection and Response Team (DART)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/). In this approach, analysts should avoid tipping off the adversary until full discovery of the attacker's presence, because surprise can help with fully disrupting their operation.
+   This approach is appropriate for a scenario where an adversary has already settled in and established redundant access mechanisms to your environment. This practice is frequently seen in customer incidents investigated by the [Microsofts Incident Response Team](https://www.microsoft.com/security/business/microsoft-incident-response). In this approach, analysts should avoid tipping off the adversary until full discovery of the attacker's presence, because surprise can help with fully disrupting their operation.
 
    Microsoft learned that partial remediation often tips off an adversary, which gives them a chance to react and rapidly make the incident worse. For example, the attacker can spread the attack further, change their access methods to evade detection, cover their tracks, and inflict data and system damage and destruction for revenge.
 

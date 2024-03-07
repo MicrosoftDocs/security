@@ -684,7 +684,7 @@ Examine guidance for identifying and investigating these additional types of att
 
 - [Password spray](incident-response-playbook-password-spray.md)
 - [App consent](incident-response-playbook-app-consent.md)
-- [Microsoft DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
+- [Microsoft Microsoft Incident Response team ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
 
 ## Incident response resources
 

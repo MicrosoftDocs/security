@@ -24,7 +24,7 @@ ms.custom: cxdef-zt-ransomware
 
 # Incident response playbooks
 
-You need to respond quickly to detected security attacks to contain and remediate its damage. As new widespread cyberattacks happen, such as [Nobellium](https://msrc-blog.microsoft.com/2020/12/21/december-21st-2020-solorigate-resource-center/) and the [Exchange Server vulnerability](https://msrc-blog.microsoft.com/2021/03/16/guidance-for-responders-investigating-and-remediating-on-premises-exchange-server-vulnerabilities/), Microsoft will respond with detailed incident response guidance. 
+You need to respond quickly to detected security attacks to contain and remediate its damage. As new widespread cyberattacks happen, Microsoft will respond with detailed incident response guidance. 
 
 You also need detailed guidance for common attack methods that malicious users employ every day. To address this need, use incident response playbooks for these types of attacks:
 
@@ -43,7 +43,7 @@ Each playbook includes:
 - **Checklist:** A list of tasks for the steps in the flow chart. This checklist can be helpful in highly-regulated environments to verify what you have done.
 - **Investigation steps:** Detailed step-by-step guidance for the specific investigation.
 
-Also see [Microsoft DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md) for information about how the Microsoft Detection and Response Team (DART) deals with ransomware attacks.
+Also see [Microsoft Incident Response ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md).
 
 ## Incident response resources
 

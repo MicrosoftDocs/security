@@ -20,13 +20,16 @@ ms.collection:
 ms.topic: article
 ms.subservice:: m365d
 ms.custom: cxdef-zt-ransomware 
+ms.date: 03/08/2024
 ---
 
 # Incident response playbooks
 
-You need to respond quickly to detected security attacks to contain and remediate its damage. As new widespread cyberattacks happen, Microsoft will respond with detailed incident response guidance. 
+You need to respond quickly to a security attacks to contain the attack and limit the damage. As new widespread cyberattacks happen, Microsoft will respond with detailed incident response guidance through various communication channels, primarily through the [Microsoft Security Blog](https://www.microsoft.com/security/blog/topic/threat-intelligence/). 
 
-You also need detailed guidance for common attack methods that malicious users employ every day. To address this need, use incident response playbooks for these types of attacks:
+The following content is Microsoft best practice information, provided by [Microsoft Incident Response](https://www.microsoft.com/security/business/microsoft-incident-response). This team provides fast, flexible services that will remove a bad actor from your environment, build resilience for future attacks, and help mend your defenses after a breach. 
+
+Review the following incident response playbooks to understand how to detect and contain these different types of attacks:
 
 - [Phishing](incident-response-playbook-phishing.md)
 

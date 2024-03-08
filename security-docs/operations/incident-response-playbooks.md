@@ -25,7 +25,7 @@ ms.date: 03/08/2024
 
 # Incident response playbooks
 
-You need to respond quickly to a security attacks to contain the attack and limit the damage. As new widespread cyberattacks happen, Microsoft will respond with detailed incident response guidance through various communication channels, primarily through the [Microsoft Security Blog](https://www.microsoft.com/security/blog/topic/threat-intelligence/). 
+You need to respond quickly to security attacks to contain the attack and limit the damage. As new widespread cyberattacks happen, Microsoft will respond with detailed incident response guidance through various communication channels, primarily through the [Microsoft Security Blog](https://www.microsoft.com/security/blog/topic/threat-intelligence/). 
 
 The following content is Microsoft best practice information, provided by [Microsoft Incident Response](https://www.microsoft.com/security/business/microsoft-incident-response). This team provides fast, flexible services that will remove a bad actor from your environment, build resilience for future attacks, and help mend your defenses after a breach. 
 

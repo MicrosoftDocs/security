@@ -631,7 +631,7 @@ Examine guidance for identifying and investigating these additional types of att
 
 - [Phishing](incident-response-playbook-phishing.md)
 - [App consent](incident-response-playbook-app-consent.md)
-- [Microsoft DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
+- [Microsoft Microsoft Incident Response team ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
 
 ## Incident response resources
 
@@ -640,3 +640,6 @@ Examine guidance for identifying and investigating these additional types of att
 - [Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) incident response
 - [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
+- [Microsoft Incident Response team guide shares best practices for security teams and leaders](https://www.microsoft.com/security/blog/2023/12/11/new-microsoft-incident-response-team-guide-shares-best-practices-for-security-teams-and-leaders/)
+- [Microsoft Incident Response guides help security teams analyze suspicious activity](https://www.microsoft.com/security/blog/2024/01/17/new-microsoft-incident-response-guides-help-security-teams-analyze-suspicious-activity/)
+

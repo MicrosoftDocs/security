@@ -22,7 +22,7 @@ The integration guidance in this section is organized by Zero Trust technology a
 
 ## Additional Zero Trust documentation
 
-Use additional Zero Trust content based on a documentation set or your role in your organization.
+Use additional Zero Trust content based on a documentation set or the roles in your organization.
 
 ### Documentation set
 

@@ -499,7 +499,7 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "/security-docs/zero-trust/zero-trust-microsoft-365-copilot.md",
+        "source_path": "security-docs/zero-trust/zero-trust-microsoft-365-copilot.md",
         "redirect_url": "/security/zero-trust/copilots/zero-trust-microsoft-365-copilot",
         "redirect_document_id": false
       },

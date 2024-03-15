@@ -26,7 +26,7 @@ Implementing the Zero Trust "never trust, always verify" mindset requires change
 These articles show you how to apply Zero Trust principles to:
 
 - [Microsoft Copilot](zero-trust-microsoft-copilot.md)
-- [Microsoft Copilot for Microsoft 365](copilots/zero-trust-microsoft-365-copilot.md)
+- [Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md)
 
 ## References
 

@@ -10,6 +10,31 @@ ms.collection:
   - zerotrust-adopt
 ---
 
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+To update figures that are not screen shots, your options are:
+
+- Locate the source Visio file in internal storage.
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
+
+For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+
+- Locate the source PowerPoint file in internal storage. 
+- Download a copy of the PowerPoint file from the article.
+
+After updating, republish the updated slide deck in the Download Center.
+
+For new articles in this content set, please:
+
+- Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
+- Add a link to the Zero Trust Guidance Center page (index.yml).
+
+--->
+
 # Prevent or reduce business damage from a breach
 
 As part of Zero Trust adoption guidance, this article describes the business scenario of preventing or reducing business damage from a cybersecurity breach. This scenario  addresses the “assume breach” Zero Trust guiding principle, which includes:

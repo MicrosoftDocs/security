@@ -22,17 +22,19 @@ This guidance is for software providers and technology partners who want to enha
 
 ## Zero Trust integration for Data guide
 
-This integration guide includes instructions for [integrating with the Microsoft Information Protection (MIP) SDK](#microsoft-information-protection-sdk), which is the unification of Microsoft's classification, labeling, and protection services.
+This integration guide includes instructions for [integrating with the Microsoft Information Protection SDK](#microsoft-purview-information-protection-sdk), which is the unification of Microsoft's classification, labeling, and protection services.
 
-Independent software vendors (ISVs) can integrate with the MIP SDK to build solutions that help customers understand and protect data, prevent data loss, and govern data storage and access.
+Independent software vendors (ISVs) can integrate with the Microsoft Information Protection (MIP) SDK to build solutions that help customers understand and protect data, prevent data loss, and govern data storage and access.
 
 :::image type="content" source="../media/integrate/data/microsoft-information-protection-capabilities.png" alt-text="Image with the four ways ISVs can integrate with the MIP SDK. The four categories are: know your data, protect your data, prevent data loss, and govern your data.":::
 
+<a name='microsoft-purview-information-protection-sdk'></a>
+
 ### Microsoft Information Protection SDK
 
-[Microsoft Information Protection (MIP)](/information-protection/develop/overview) is the unification of Microsoft's classification, labeling, and protection services. Third parties can use the MIP SDK to integrate with applications, using a standard, consistent data labeling schema and protection service.
+The Microsoft information protection solution is the unification of Microsoft's classification, labeling, and protection services. Third parties can use the MIP SDK to integrate with applications, using a standard, consistent data labeling schema and protection service.
 
-ISVs can use the MIP SDK to help customers understand their data landscape, apply flexible protection actions, detect risky behavior to prevent data loss, and maintain data compliance through automatic actions. For example:
+ISVs can use the [Microsoft Information Protection SDK](/information-protection/develop/overview) to help customers understand their data landscape, apply flexible protection actions, detect risky behavior to prevent data loss, and maintain data compliance through automatic actions. For example:
 
 - Applying labels automatically to documents based on content
 - Enforcing protection and controls based on labels
@@ -56,5 +58,5 @@ This resource contains sample implementations showing the use of the MIP SDK in 
 
 - [Microsoft Information Protection SDK - Classification label concepts](/information-protection/develop/concept-classification-labels)
 - [Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-manager)
-- [Microsoft Information Protection in Microsoft 365](/microsoft-365/compliance/information-protection)
-- [(Video) Develop Compliance Powered LOB Applications with Microsoft Information Protection](https://www.youtube.com/watch?v=DS_xN-dspKI)
+- [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection)
+- [(Video) Develop Compliance Powered LOB Applications with Microsoft Purview Information Protection](https://www.youtube.com/watch?v=DS_xN-dspKI)

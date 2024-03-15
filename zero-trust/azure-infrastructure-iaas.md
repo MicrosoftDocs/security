@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to spoke virtual networks in Azure
 description: Learn how to secure a spoke virtual network for IaaS workloads with Zero Trust.   
-ms.date: 02/09/2023
+ms.date: 02/12/2024
 ms.service: security
 author: brsteph
 ms.author: bstephenson
@@ -15,7 +15,28 @@ ms.collection:
 
 # Apply Zero Trust principles to a spoke virtual network in Azure
 
-This article helps you apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to a spoke virtual network (VNet) for IaaS workloads in Azure in the following ways:
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+To update figures that are not screen shots, your options are:
+
+- Locate the source Visio file in internal storage.
+- Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
+
+For any updates to figures, please update the corresponding posters as needed (see the "Technical publications" section of this article) and republish the Visio and PDF files in the Microsoft Download Center.
+
+For new articles in this content set, please:
+
+- Add cross-links in the "Next Steps" section FROM all the other articles in this content set TO the new article.
+- Add a link to the Zero Trust Guidance Center page (index.yml).
+- Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed.
+
+--->
+This article helps you apply the [principles of Zero Trust](zero-trust-overview.md) to a spoke virtual network (VNet) for IaaS workloads in Azure in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
@@ -29,7 +50,7 @@ This article is a part of a series of articles that demonstrate how to apply the
 
 The following diagram shows a common reference architecture for IaaS-based workloads.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-architecture-1.png" alt-text="Diagram of the reference architecture for IaaS-based workloads.":::
+:::image type="content" source="media/spoke/azure-infra-spoke-architecture-1.svg" alt-text="Diagram of the reference architecture for IaaS-based workloads." lightbox="media/spoke/azure-infra-spoke-architecture-1.svg":::
 
 In the diagram:
 
@@ -43,7 +64,7 @@ The application shown in the reference architecture follows the [N-tier architec
 
 The following diagram shows the components of a resource group for a spoke VNet in an Azure subscription separate from the subscription for the hub VNet.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="Diagram of the components of a resource group for a spoke VNet.":::
+:::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="Diagram of the components of a resource group for a spoke VNet." lightbox="media/spoke/azure-infra-spoke-subscription-architecture-2.png":::
 
 In the diagram, all the components of the spoke VNet are contained in a dedicated resource group:
 
@@ -89,7 +110,7 @@ By isolating network resources from compute, data, or storage resources, you red
 
 Rather than having the spoke network resources available in multiple contexts in a shared resource group, create a dedicated resource group for it. The reference architecture that this article supports illustrates this concept. 
 
-:::image type="content" source="media/spoke/azure-infra-spoke-dedicated-resource-group-3.png" alt-text="Diagram of a dedicated resource group for a spoke VNet." lightbox="media/spoke/azure-infra-spoke-dedicated-resource-group-3.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-dedicated-resource-group-3.svg" alt-text="Diagram of a dedicated resource group for a spoke VNet." lightbox="media/spoke/azure-infra-spoke-dedicated-resource-group-3.svg":::
 
 In the figure, resources and components across the reference architecture are divided into dedicated resource groups for virtual machines, storage accounts, hub VNet resources, and spoke VNet resources.
 
@@ -123,7 +144,7 @@ Azure network security groups are used to filter network traffic between Azure r
 
 For a multi-tier virtual-machine based application, the recommendation is to create a dedicated network security group (NSG in the following figure) for each subnet that hosts a virtual machine role.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-nsg-4.png" alt-text="Diagram of using dedicated network security groups for each subnet that hosts a virtual machine role.":::
+:::image type="content" source="media/spoke/azure-infra-spoke-nsg-4.png" alt-text="Diagram of using dedicated network security groups for each subnet that hosts a virtual machine role." lightbox="media/spoke/azure-infra-spoke-nsg-4.png":::
 
 In the diagram:
 
@@ -142,7 +163,7 @@ Application security groups enable you to configure network security as a natura
 
 Inside your workload, identify the specific virtual machine roles. Then, build an application security group for each role. In the reference architecture, three application security groups are represented.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-asg-5.png" alt-text="Diagram of example application security groups for different virtual machine roles.":::
+:::image type="content" source="media/spoke/azure-infra-spoke-asg-5.png" alt-text="Diagram of example application security groups for different virtual machine roles." lightbox="media/spoke/azure-infra-spoke-asg-5.png":::
 
 In the diagram:
 
@@ -192,7 +213,7 @@ Repeat this process with inbound rules, adjusting the name and description as ap
 
 If you click the rule and scroll to the bottom, you'll see more details, as shown here.
 
-:::image type="content" source="media/spoke/rule-details.png" alt-text="Screenshot of example rule details.":::
+:::image type="content" source="media/spoke/rule-details.png" alt-text="Screenshot of example rule details." lightbox="media/spoke/rule-details.png":::
 
 This message gives the following two warnings:
 
@@ -235,11 +256,11 @@ The outbound connections are:
 
 Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here's an example diagram of using application security groups to define network traffic patterns in the network security groups for a spoke VNet that is used along with a hub VNet. This is the recommended configuration.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.png" alt-text="Diagram of networking patterns for a three-tier web application in a hub-spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-7.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.svg" alt-text="Diagram of networking patterns for a three-tier web application in a hub-spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-7.svg":::
 
 As another example, here is a configuration for a stand-alone spoke VNet in which the Web Application Firewall is placed in the Application Gateway subnet of the spoke VNet.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.png" alt-text="Diagram of networking patterns for a three-tier web application in a standalone spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-6.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.svg" alt-text="Diagram of networking patterns for a three-tier web application in a standalone spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-6.svg":::
 
 You need the following network security group rules:
 
@@ -278,7 +299,7 @@ You'll notice after completion that there is a blue icon for informational alert
 
 Here's an example.
 
-:::image type="content" source="media/spoke/informational-alert.png" alt-text="Screenshot of an example informational alert.":::
+:::image type="content" source="media/spoke/informational-alert.png" alt-text="Screenshot of an example informational alert." lightbox="media/spoke/informational-alert.png":::
 
 The rule only applies when this application security group is used in this network.
 
@@ -353,7 +374,7 @@ Securing access to the VNet and application includes:
 
 The following diagram shows both of these access modes across the reference architecture.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-network-7.png" alt-text="Diagram of the access modes in a spoke VNet reference architecture." lightbox="media/spoke/azure-infra-spoke-network-7.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-network-7.svg" alt-text="Diagram of the access modes in a spoke VNet reference architecture." lightbox="media/spoke/azure-infra-spoke-network-7.svg":::
 
 ### Secure traffic within Azure environment for the VNet and application
 
@@ -389,7 +410,7 @@ Here's an example in the Microsoft Defender for Cloud portal.
 
 If you choose to onboard one of the Defender for Cloud plans that offer Advanced Workload Protections, it includes Adaptive Network Hardening Recommendations to improve your existing network security group rules. Here's an example.
 
-:::image type="content" source="media\spoke\network-hardening.png" alt-text="Screenshot of example network hardening recommendations." lightbox="media\spoke\network-hardening.png":::
+:::image type="content" source="media/spoke/network-hardening.png" alt-text="Screenshot of example network hardening recommendations." lightbox="media/spoke/network-hardening.png":::
 
 You can accept the recommendation by selecting **Enforce**, which either creates a new network security group rule or modify an existing one.
 
@@ -424,20 +445,20 @@ This poster provides a single-page, at-a-glance view of the components of Azure 
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
+|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated March 2024 | Use this illustration together with this article: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
 
 This poster provides the reference and logical architectures and the detailed configurations of the separate components of Zero Trust for Azure IaaS. Use the pages of this poster for separate IT departments or specialties or, with the Microsoft Visio version of the file, customize the diagrams for your infrastructure.
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
+|[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated March 2024 | Use these diagrams together with the articles starting here: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
 
 For additional technical illustrations, click [here](zero-trust-tech-illus.md).
 
 ## References
 
 - [Embrace proactive security with Zero Trust](https://aka.ms/zerotrust)
-- [Secure networks with Zero Trust](/security/zero-trust/deploy/networks)
+- [Secure networks with Zero Trust](deploy/networks.md)
 - [Zero-trust network for web applications with Azure Firewall and Application Gateway - Azure Architecture Center](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall)
 - [Azure Landing Zone Policies](https://github.com/Azure/Enterprise-Scale/wiki/ALZ-Policies)
 - [Common Zero Trust identity and device policies](/microsoft-365/security/office-365-security/identity-access-policies)

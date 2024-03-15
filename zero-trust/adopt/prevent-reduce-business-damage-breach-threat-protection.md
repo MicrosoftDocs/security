@@ -10,6 +10,31 @@ ms.collection:
   - zerotrust-adopt
 ---
 
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+To update figures that are not screen shots, your options are:
+
+- Locate the source Visio file in internal storage.
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
+
+For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+
+- Locate the source PowerPoint file in internal storage. 
+- Download a copy of the PowerPoint file from the article.
+
+After updating, republish the updated slide deck in the Download Center.
+
+For new articles in this content set, please:
+
+- Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
+- Add a link to the Zero Trust Guidance Center page (index.yml).
+
+--->
+
 # Implement threat protection and XDR
 
 As part of Zero Trust adoption guidance, this article describes how to protect your organization from cyberattacks and their possible resulting cost and reputation loss. This article is part of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario and focuses on how to create a threat protection and eXtended detection and response (XDR) infrastructure to detect and thwart cyberattacks in progress and minimize the business damage from a breach.
@@ -162,6 +187,7 @@ The following table includes several Microsoft training resources to help your s
 | Module: [Improve your reliability with modern operations practices: Incident response](/training/modules/improve-reliability-incidents/) | Learn the fundamentals of efficient incident response and the Azure tools that make them possible. |
 | Module: [Training: Security incident management in Microsoft Sentinel](/training/modules/incident-management-sentinel/) | Learn about Microsoft Sentinel events and entities and discover ways to resolve incidents. |
 
+<a name='stage-1'></a>
 #### Stage 1
 
 The Stage 1 deployment objectives include enabling your primary Microsoft XDR tools and the use of Microsoft Defender XDR, which integrates the signals from the tools into a single portal, for incident response.
@@ -191,6 +217,7 @@ Now that you have enabled the primary XDR tools, you can begin using Microsoft D
 | Module: [Mitigate incidents with Microsoft Defender XDR](/training/modules/mitigate-incidents-microsoft-365-defender/) | Learn how the Microsoft Defender XDR portal provides a unified view of incidents and alerts from the Microsoft Defender XDR family of products. |
 | Learning Path: [Mitigate threats using Microsoft Defender XDR](/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) | Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft Defender XDR. |
 
+<a name='stage-2'></a>
 #### Stage 2
 
 In this stage, you enable additional XDR tools for Azure and on-premises resources, create or update your SecOps processes and procedures for Microsoft threat protection and XDR services, and monitor your business critical and honeypot resources to detect cyber attackers early in the breach.
@@ -227,6 +254,7 @@ Your deployed honeypot resources act as a target for cyber attackers and can be 
 | [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) | Use Microsoft Defender XDR to spot incidents with alerts that affect your business critical and honeypot resources. |
 | [Security alerts and incidents for Microsoft Defender for Cloud](/azure/defender-for-cloud/alerts-overview) | Use Microsoft Defender for Cloud to search for alerts triggered by advanced detections for your business critical and honeypot resources, such as Azure, hybrid cloud, and on-premises workloads. |
 
+<a name='stage-3'></a>
 #### Stage 3
 
 In this stage, you enable Defender for IoT, integrate Microsoft Defender XDR with Microsoft Sentinel, and then use the combined threat protection and XDR infrastructure to proactively hunt for threats.
@@ -263,6 +291,7 @@ Now that your XDR and SIEM infrastructure is in place, your SecOps team can take
 | [Hunt for threats with Microsoft Sentinel](/azure/sentinel/hunting) | Get started with the documentation set for threat hunting with Microsoft Sentinel. |
 | Module: [Threat hunting with Microsoft Sentinel](/training/modules/hunt-threats-sentinel/) | Learn to proactively identify threat behaviors by using Microsoft Sentinel queries. |
 
+<a name='stage-4'></a>
 #### Stage 4
 
 In this stage, you evolve SecOps as a discipline in your organization and use the capabilities of Microsoft Defender XDR and Microsoft Sentinel to automate incident responses for known or previous attacks.

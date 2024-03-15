@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to Azure Virtual Desktop
 description: Learn how to secure an Azure Virtual Desktop deployment with Zero Trust principles. 
-ms.date: 02/17/2023
+ms.date: 02/11/2024
 ms.service: security
 author: sikovatc
 ms.author: sikovatc
@@ -13,9 +13,31 @@ ms.collection:
   - zerotrust-azure
 ---
 
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+To update figures that are not screen shots, your options are:
+
+- Locate the source Visio file in internal storage.
+- Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
+
+For any updates to figures, please update the corresponding posters as needed (see the "Technical publications" section of this article) and republish the Visio and PDF files in the Microsoft Download Center.
+
+For new articles in this content set, please:
+
+- Add cross-links in the "Next Steps" section FROM all the other articles in this content set TO the new article.
+- Add a link to the Zero Trust Guidance Center page (index.yml).
+- Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed.
+
+--->
+
 # Apply Zero Trust principles to an Azure Virtual Desktop deployment
 
-This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to an Azure Virtual Desktop deployment in the following ways:
+This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md) to an Azure Virtual Desktop deployment in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
@@ -29,7 +51,7 @@ For more information about how to apply the principles of Zero Trust across an A
 
 In this article, we use the following reference architecture for Hub and Spoke to demonstrate a commonly deployed environment and how to apply the principles of Zero Trust for Azure Virtual Desktop with users’ access over the Internet. [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) architecture is also supported in addition to private access over a managed network with [RDP Shortpath for Azure Virtual Desktop](/azure/virtual-desktop/rdp-shortpath?tabs=managed-networks).
 
-:::image type="content" source="media/avd/ref-arch-avd.png" alt-text="Diagram of the reference architecture for Azure Virtual Desktop." lightbox="media/avd/ref-arch-avd.png":::
+:::image type="content" source="media/avd/ref-arch-avd.svg" alt-text="Diagram of the reference architecture for Azure Virtual Desktop." lightbox="media/avd/ref-arch-avd.svg":::
 
 The Azure environment for Azure Virtual Desktop includes:
 
@@ -51,7 +73,7 @@ The reference architecture aligns to the architecture described in the [Enterpri
 
 In this diagram, the Azure infrastructure for an Azure Virtual Desktop deployment is contained within one Microsoft Entra tenant.
 
-:::image type="content" source="media/avd/logical-arch-avd.png" alt-text="Diagram of the components of Azure Virtual Desktop in a Microsoft Entra tenant." lightbox="media/avd/logical-arch-avd.png":::
+:::image type="content" source="media/avd/logical-arch-avd.svg" alt-text="Diagram of the components of Azure Virtual Desktop in a Microsoft Entra tenant." lightbox="media/avd/logical-arch-avd.svg":::
 
 The elements of the logical architecture are:
 
@@ -93,12 +115,12 @@ This article walks through the steps to apply the principles of Zero Trust acros
 
 To apply Zero Trust principles to the identities used in Azure Virtual Desktop:
 
-- Azure Virtual Desktop supports different types of [identities](/azure/virtual-desktop/prerequisites#supported-identity-scenarios). Use the information in [Securing identity with Zero Trust](/security/zero-trust/deploy/identity) to ensure that your chosen identity types adhere to Zero Trust principles.
+- Azure Virtual Desktop supports different types of [identities](/azure/virtual-desktop/prerequisites#supported-identity-scenarios). Use the information in [Securing identity with Zero Trust](deploy/identity.md) to ensure that your chosen identity types adhere to Zero Trust principles.
 - Create a dedicated user account with least privileges to join session hosts to a Microsoft Entra Domain Services or AD DS domain during session host [deployment](/azure/virtual-desktop/prerequisites#deployment-parameters).
 
 ## Step 2: Secure your endpoints with Zero Trust
 
-Endpoints are the devices through which users access the Azure Virtual Desktop environment and session host virtual machines. Use the instructions in the [Endpoint integration overview](/security/zero-trust/integrate/endpoints) and use Microsoft Defender for Endpoint and Microsoft Endpoint Manager to ensure that your endpoints adhere to your security and compliance requirements.
+Endpoints are the devices through which users access the Azure Virtual Desktop environment and session host virtual machines. Use the instructions in the [Endpoint integration overview](integrate/endpoints.md) and use Microsoft Defender for Endpoint and Microsoft Endpoint Manager to ensure that your endpoints adhere to your security and compliance requirements.
 
 ## Step 3: Apply Zero Trust principles to Azure Virtual Desktop storage resources
 
@@ -204,6 +226,14 @@ See these additional articles for applying Zero Trust principles to Azure:
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
 - [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
 
+## Technical illustrations
+
+You can download the illustrations used in this article. Use the Visio file to modify these illustrations for your own use.
+
+[PDF](https://download.microsoft.com/download/4/e/f/4efdcc13-1a62-4f11-9f79-d4a7201d28f9/apply-zero-trust-to-Azure-Virtual-Desktop-diagrams.pdf) | [Visio](https://download.microsoft.com/download/4/e/f/4efdcc13-1a62-4f11-9f79-d4a7201d28f9/apply-zero-trust-to-Azure-Virtual-Desktop-diagrams.vsdx)
+
+For additional technical illustrations, click [here](zero-trust-tech-illus.md).
+
 ## References
 
 Refer to the links below to learn about the various services and technologies mentioned in this article.
@@ -214,7 +244,7 @@ Refer to the links below to learn about the various services and technologies me
 - [Introduction to Azure Storage - Cloud storage on Azure](/azure/storage/common/storage-introduction)
 - [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview)
 - [Introduction to Azure security](/azure/security/fundamentals/overview)
-- [Zero Trust implementation guidance](/security/zero-trust/zero-trust-overview)
+- [Zero Trust implementation guidance](zero-trust-overview.md)
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 - [Security baselines for Azure overview](/security/benchmark/azure/security-baselines-overview)
 - [Building the first layer of defense with Azure security services - Azure Architecture Center](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)

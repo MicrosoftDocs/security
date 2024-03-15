@@ -399,6 +399,11 @@
         "redirect_document_id": false
       },
       {
+        "source_path": "zero-trust-microsoft-365-copilot.md",
+        "redirect_url": "/copilots/zero-trust-microsoft-365-copilot",
+        "redirect_document_id": false
+      },
+      {
         "source_path": "security-docs/compass/esae-retirement.md",
         "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
         "redirect_document_id": false

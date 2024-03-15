@@ -2,7 +2,7 @@
 title: Success criteria for privileged access strategy
 description: How can organizations measure success in their privileged access strategy?
 
-ms.service: information-protection
+ms.service: security
 ms.subservice: 
 ms.topic: conceptual
 ms.date: 12/15/2020
@@ -44,7 +44,7 @@ Ensuring sustainable long-term success requires meeting the following criteria:
 
 Ruthless prioritization is the practice of taking the most effective actions with the fastest time to value first, even if those efforts don't fit pre-existing plans, perceptions, and habits. This strategy lays out the set of steps that have been learned in the fiery crucible of many major cybersecurity incidents. The learnings from these incidents form the steps we help organizations take to ensure that these crises don't happen again.  
 
-While it's always tempting for security professionals to try to optimize familiar existing controls like network security and firewalls for newer attacks, this path consistently leads to failure. [Microsoft's Detection and Response Team (DART)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) has been responding to privileged access attacks for nearly a decade and consistently sees these classic security approaches fail to detect or stop these attacks. While network security provides necessary and important basic security hygiene, it's critical to break out of these habits and focus on mitigations that will deter or block real world attacks.
+While it's always tempting for security professionals to try to optimize familiar existing controls like network security and firewalls for newer attacks, this path consistently leads to failure. The [Microsoft Incident Response team)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) has been responding to privileged access attacks for nearly a decade and consistently sees these classic security approaches fail to detect or stop these attacks. While network security provides necessary and important basic security hygiene, it's critical to break out of these habits and focus on mitigations that will deter or block real world attacks.
 
 Ruthlessly prioritize the security controls recommended in this strategy, even if it challenges existing assumptions and forces people to learn new skills.
 

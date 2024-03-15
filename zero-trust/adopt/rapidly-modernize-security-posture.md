@@ -10,6 +10,31 @@ ms.collection:
   - zerotrust-adopt
 ---
 
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+To update figures that are not screen shots, your options are:
+
+- Locate the source Visio file in internal storage.
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
+
+For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+
+- Locate the source PowerPoint file in internal storage. 
+- Download a copy of the PowerPoint file from the article.
+
+After updating, republish the updated slide deck in the Download Center.
+
+For new articles in this content set, please:
+
+- Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
+- Add a link to the Zero Trust Guidance Center page (index.yml).
+
+--->
+
 # Rapidly modernize your security posture
 
 As part of Zero Trust adoption guidance, this article describes the business scenario of rapidly modernizing your security posture. Rather than focusing on the technical work required to implement a Zero Trust architecture, this scenario focuses on how to develop your strategy and priorities and then how to systematically implement your priorities, piece by piece, while measuring and reporting your progress.
@@ -244,6 +269,7 @@ The [PowerPoint slide deck of resources](https://download.microsoft.com/download
 
 Microsoft provides resources to help you rapidly modernize your security posture. The following sections highlight resources for specific tasks in the four stages previously defined.
 
+<a name='stage-1'></a>
 ### Stage 1
 
 In Stage 1, you begin to understand your current security posture. You start the conversations across your leadership team and organization to learn what Zero Trust is and how it aligns with business strategy and objectives.
@@ -256,6 +282,7 @@ In Stage 1, you begin to understand your current security posture. You start the
 | Identify regulatory requirements| Check in with your compliance team to learn about the regulations your organization is subject to. List the regulatory and governance frameworks and any audit findings or specific controls that must be met towards achieving secure compliance status. <br><br> Take a look at [Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-manager) to see if your organization has started tracking progress against specific requirements. Some of the most commonly required standards and how to configure Microsoft Entra ID for compliance can be found in our [standards documentation library](/azure/active-directory/standards/azure-ad-pci-dss-mfa). |
 | Set leadership expectations | Use the [overview article](zero-trust-adoption-overview.md) as a resource to facilitate conversations with your leadership team on Zero Trust. It frames security as a business imperative and defines zero trust specific to leadership roles. Use the progress slides in the [Business Scenarios section](zero-trust-adoption-overview.md#business-scenarios) to present the work and track your progress at a high level for business leaders and other stakeholders. |
 
+<a name='stage-2'></a>
 ### Stage 2
 
 In Stage 2, you continue to detail your current security posture, including:
@@ -325,6 +352,7 @@ This stage also includes implementing basic hygiene practices. According to the 
 | Update your status for Secure Score| As you work through the recommendations across business scenarios, update your status for Secure Score. The score is a measure of progress and success that you can communicate across your organization. <br><br> [Assess your security posture with Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score-improvement-actions) |
 | Capture your status in Compliance Manager| If you’ve started using [Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-manager) to track your regulatory compliance work, check back periodically to update your status. Like Secure Score, this is a measure of progress and success that can be included as part of your security posture. |
 
+<a name='stage-3'></a>
 ### Stage 3
 
 A security posture requires instrumentation to create visibility. You'll want to unify your tools and methods into as few views or dashboards as possible for simplification. The first objective in this stage is to visualize your security posture using audience-appropriate dashboards. 
@@ -348,6 +376,7 @@ Stage 3 also includes maturing the managing shadow IT and patching areas of hygi
 | Document and manage shadow IT using Defender for Cloud Apps| This is a hygiene area you can mature in this stage if you’ve deployed Defender for Cloud Apps. See [Integrate SaaS apps for Zero Trust with Microsoft 365](/security/zero-trust/integrate-saas-apps). |
 | Develop a methodology for patching and updating systems regularly and with time sensitivity| This task within this business scenario isn't about how to patch and update systems. Rather, it is about developing a methodology to ensure patching and updating the various components of your digital estate happens regularly with accountability, visibility, and good communication to all affected individuals. Look for opportunities to automate this, where possible. <br><br> [What are the best practices for patching and updating your IT systems?](https://www.linkedin.com/advice/1/what-best-practices-patching-updating) (LinkedIn article) <br><br> [Does Patching Make Perfect?](https://www.infosecurity-magazine.com/opinions/patching-perfect/) (Infosecurity Magazine) |
 
+<a name='stage-4'></a>
 ### Stage 4
 
 The objectives of Stage 4 are about maturing your organization’s ability to prevent and respond to attacks.

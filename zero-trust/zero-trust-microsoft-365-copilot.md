@@ -30,7 +30,7 @@ ms.collection:
 
 Before you introduce Microsoft Copilot for Microsoft 365 or Copilot into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
 
-This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) security to prepare your environment for Copilot in the following ways:
+This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md) security to prepare your environment for Copilot in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
@@ -44,14 +44,13 @@ For the basics of Copilot, see the [overview](/microsoft-365-copilot/microsoft-3
 
 You apply Zero Trust principles for Copilot across the entire architecture, from users and devices to the application data that they have access to. The following diagram shows the logical architecture components.
 
-:::image type="content" source="media/copilot/logical-architecture-microsoft-365-copilot.svg" alt-text="Diagram of the logical architecture for Copilot." lightbox="media/copilot/logical-architecture-microsoft-365-copilot.svg":::
+:::image type="content" source="media/copilot/logical-architecture-microsoft-365-copilot.svg" alt-text="Diagram of the logical architecture for Copilot showing Copilot-related components and the services and data within your Microsoft 365 tenant." lightbox="media/copilot/logical-architecture-microsoft-365-copilot.svg":::
 
 In the diagram:
 
 - User devices have Microsoft 365 apps installed from which users can initiate Copilot prompts
 - Copilot components include:
   - The Copilot service, which orchestrates the responses to user prompts
-  - A Semantic Index for the data in your Microsoft 365 tenant
   - An instance of the Microsoft Graph for the data of your Microsoft 365 tenant
 - Your Microsoft 365 tenant that contains your organization data
 
@@ -271,7 +270,7 @@ For more comprehensive threat protection, pilot and deploy Microsoft Defender XD
 
 Microsoft recommends enabling the components of Microsoft 365 in the order illustrated:
 
-:::image type="content" source="media/copilot/m365-defender-eval-process.png" alt-text="Diagram of the process to evaluate and deploy Microsoft Defender XDR components." lightbox="media/copilot/m365-defender-eval-process.png":::
+:::image type="content" source="media/copilot/m365-defender-eval-process.png" alt-text="Diagram of the seven-step process to evaluate and deploy Microsoft Defender XDR components." lightbox="media/copilot/m365-defender-eval-process.png":::
  
 For more information and a description of this illustration, see [Evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview#the-evaluation-process-for-microsoft-365-defender-cyber-security).
 
@@ -334,7 +333,7 @@ To detect existing oversharing:
 
 To streamline the assignment of Copilot licenses in your tenant with the appropriate protections in place, you do both in parallel. The following diagram shows how you can move through the phases of rolling out protections prior to assigning Copilot licenses to individual user accounts and their devices once they're protected.
 
-:::image type="content" source="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg" alt-text="Diagram of applying protections and deploying Copilot in parallel." lightbox="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg":::
+:::image type="content" source="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg" alt-text="Diagram of the evaluate, pilot, and full deployment phases of deploying Copilot in parallel with adopting information protection capabilities in your organization." lightbox="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg":::
 
 As the diagram also shows, you can roll out information protection across your organization while you're deploying identity and device access protections.
 

@@ -2,7 +2,7 @@
 title: Securing privileged access overview
 description: How can organizations secure privileged with Azure resources?
 
-ms.service: information-protection
+ms.service: security
 ms.subservice: 
 ms.topic: overview
 ms.date: 12/15/2020

@@ -1,0 +1,111 @@
+- name: Implementing security operations processes
+  href: overview.md
+  items: 
+    - name: Overview
+      href: overview.md
+    
+
+    - name: Defend against threats with Microsoft Sentinel and Microsoft Defender XDR
+      items:
+        - name: Implement Microsoft Sentinel and Microsoft Defender XDR for Zero Trust
+          href: siem-xdr-overview.md
+        - name: Step 1. Set up your XDR tools
+          href: setup-xdr-tools.md
+        - name: Step 2. Architect your Microsoft Sentinel workspace
+          href: siem-workspace.md
+        - name: Step 3. Ingest data sources and configure incident detection in Microsoft Sentinel
+          href: ingest-data-sources.md
+        - name: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
+          href: respond-incident.md
+
+    - name: Incident response
+      items:
+        - name: Overview
+          href: incident-response-overview.md
+        - name: Planning
+          href: incident-response-planning.md
+               
+    - name: Playbooks
+      items:
+        - name: Introduction
+          href: incident-response-playbooks.md
+        - name: Phishing
+          href: incident-response-playbook-phishing.md
+        - name: Password spray
+          href: incident-response-playbook-password-spray.md
+        - name: App consent grant
+          href: incident-response-playbook-app-consent.md
+        - name: Detecting human-operated ransomware attacks with Microsoft Defender XDR
+          href: /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
+        - name: Responding to ransomware attacks
+          href: /microsoft-365/security/defender/playbook-responding-ransomware-m365-defender
+        - name: Microsoft Incident Response team approach to ransomware
+          href: incident-response-playbook-dart-ransomware-approach.md
+        - name: Compromised and malicious applications
+          href: incident-response-playbook-compromised-malicious-app.md
+        - name: Token theft playbook
+          href: token-theft-playbook.md
+
+    - name: Microsoft Defender XDR security operations guide
+      items:
+        - name: Integrating Microsoft Defender XDR into your security operations
+          href: /microsoft-365/security/defender/integrate-microsoft-365-defender-secops?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Step 1. Operations readiness
+          href: /microsoft-365/security/defender/integrate-microsoft-365-defender-secops-plan?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Step 2. Readiness assessment using Zero Trust
+          href: /microsoft-365/security/defender/integrate-microsoft-365-defender-secops-readiness?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Step 3. Integration with your SOC services
+          href: /microsoft-365/security/defender/integrate-microsoft-365-defender-secops-services?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Step 4. Roles, responsibilities, and oversight
+          href: /microsoft-365/security/defender/integrate-microsoft-365-defender-secops-roles?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Step 5. Test use cases
+          href: /microsoft-365/security/defender/integrate-microsoft-365-defender-secops-use-cases?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Step 6. SOC maintenance tasks
+          href: /microsoft-365/security/defender/integrate-microsoft-365-defender-secops-tasks?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+
+    - name: Microsoft Defender for Office 365 security operations guide
+      href: /microsoft-365/security/office-365-security/mdo-sec-ops-guide?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json        
+
+    - name: Microsoft Entra security operations guide
+      items:
+        - name: Security operations overview
+          href: /azure/active-directory/fundamentals/security-operations-introduction?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Security operations for consumer accounts
+          href: /azure/active-directory/fundamentals/security-operations-consumer-accounts?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Security operations for privileged accounts
+          href: /azure/active-directory/fundamentals/security-operations-privileged-accounts?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Security operations for PIM
+          href: /azure/active-directory/fundamentals/security-operations-privileged-identity-management?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Security operations for applications
+          href: /azure/active-directory/fundamentals/security-operations-applications?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Security operations for devices
+          href: /azure/active-directory/fundamentals/security-operations-devices?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+        - name: Security operations for infrastructure
+          href: /azure/active-directory/fundamentals/security-operations-infrastructure?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+
+    - name: Microsoft Defender for Cloud Apps security operations guide
+      items:
+      - name: Operations guide overview
+        href: /defender-cloud-apps/ops-guide/ops-guide?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Daily activities
+        href: /defender-cloud-apps/ops-guide/ops-guide-daily?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Weekly activities
+        href: /defender-cloud-apps/ops-guide/ops-guide-weekly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Monthly activities
+        href: /defender-cloud-apps/ops-guide/ops-guide-monthly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Ad-hoc activities
+        href: /defender-cloud-apps/ops-guide/ops-guide-ad-hoc?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+
+    - name: Microsoft Defender for Identity security operations guide
+      items:
+      - name: Operations guide overview
+        href: /defender-for-identity/ops-guide/ops-guide?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Daily activities
+        href: /defender-for-identity/ops-guide/ops-guide-daily?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Weekly activities
+        href: /defender-for-identity/ops-guide/ops-guide-weekly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Monthly activities
+        href: /defender-for-identity/ops-guide/ops-guide-monthly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Quarterly / ad hoc activities
+        href: /defender-for-identity/ops-guide/ops-guide-quarterly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+

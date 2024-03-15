@@ -10,6 +10,31 @@ ms.collection:
   - zerotrust-adopt
 ---
 
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+To update figures that are not screen shots, your options are:
+
+- Locate the source Visio file in internal storage.
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
+
+For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+
+- Locate the source PowerPoint file in internal storage. 
+- Download a copy of the PowerPoint file from the article.
+
+After updating, republish the updated slide deck in the Download Center.
+
+For new articles in this content set, please:
+
+- Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
+- Add a link to the Zero Trust Guidance Center page (index.yml).
+
+--->
+
 # Identify and protect sensitive business data
 
 As part of Zero Trust adoption guidance, this article describes the business scenario of safeguarding your most critical data assets. This scenario focuses on how to identify and protect sensitive business data.
@@ -190,6 +215,7 @@ Before you embark on the technical work, Microsoft recommends getting to know th
 |  :::image type="icon" source="../media/adoption-guide/introduction-information-governance.svg" border="false"::: <br> Learn module-[Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance/) (Intermediate) | Learn how Microsoft 365 information protection and data lifecycle management solutions help you protect and govern your data, throughout its lifecycle – wherever it lives and travels. |
 | :::image type="icon" source="../media/adoption-guide/microsoft-certified-associate-badge.svg" border="false"::: <br> Certifications-[Microsoft Certified: Information Protection Administrator Associate](/certifications/information-protection-administrator/) | Recommended learning paths for becoming a Certified Information Protection Administrator Associate. |
 
+<a name='stage-1'></a>
 #### Stage 1
 
 The Stage 1 deployment objectives include the process of taking inventory of your data. This includes identifying unsanctioned SaaS apps your organization uses to store, process, and share data. You can either bring these unsanctioned apps into your app management process and apply protections, or you can prevent your business data from being used with these apps.
@@ -241,6 +267,7 @@ This objective is more of a check to be sure your network traffic is encrypted. 
 | [Secure networks with Zero Trust-Objective 6: All traffic is encrypted](/security/zero-trust/deploy/networks#vi-encryption-all-traffic-is-encrypted) | Encrypt application backend traffic between virtual networks.<br><br> Encrypt traffic between on-premises and cloud. |
 | [Networking up (to the cloud)-One architect's viewpoint](/microsoft-365/solutions/networking-design-principles) | For network architects, this article helps put recommended networking concepts into perspective. Ed Fisher, Security & Compliance Architect at Microsoft, describes how to optimize your network for cloud connectivity by avoiding the most common pitfalls. |
 
+<a name='stage-2'></a>
 #### Stage 2
 
 After you've taken inventory and discovered where your sensitive data resides, move on to Stage 2 in which you develop a classification schema and begin to test this with your organization data. This stage also includes identifying where data or projects require increased protection.
@@ -285,6 +312,7 @@ If you've identified projects or data that require highly sensitive protection, 
 | --- | --- |
 | [Configure teams with protection for highly sensitive data](/microsoft-365/solutions/configure-teams-highly-sensitive-protection) | Provides prescriptive recommendations for securing projects with highly sensitive data, including securing and managing guest access (your partners who might be collaborating with you on these projects). |
 
+<a name='stage-3'></a>
 #### Stage 3
 
 In this stage, you continue to roll out the data classification schema you refined. You also apply the protections you planned.
@@ -321,6 +349,7 @@ Files at rest in the service or residing on a user’s computer don't receive th
 | --- | --- |
 | [Insider risk management](/microsoft-365/compliance/insider-risk-management-solution-overview) | Get started with the recommended actions. You can begin by using policy templates to quickly get started, including data theft by departing users. |
 
+<a name='stage-4'></a>
 #### Stage 4
 
 In this stage, you extend the protections you developed in Microsoft 365 to data in your SaaS apps. You also transition to automation of as much of the data classification and governance as possible. 

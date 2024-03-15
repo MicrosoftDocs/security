@@ -624,7 +624,7 @@ Once you confirm that all steps were done, perform the following steps to comple
 
 Enable this feature on your existing servers and workstations, then enforce the use of this feature. This feature requires the target servers to be running Windows Server 2008 R2 or later and target workstations to be running Windows 7 or later.
 
-1. Enable **RestrictedAdmin** mode on your servers and workstations by following the instructions available in this [page](https://aka.ms/rdpra).
+1. Enable **RestrictedAdmin** mode on your servers and workstations by following the instructions available in this [page](/windows/security/identity-protection/remote-credential-guard).
 
    > [!NOTE]
    > Before enabling this feature for internet facing servers, you should consider the risk of adversaries being able to authenticate to these servers with a previously-stolen password hash.
@@ -671,7 +671,7 @@ Enable this feature on your existing servers and workstations, then enforce the 
    1. Configure PAW to allow only authorized Internet destinations. As you extend your PAW deployment to enable cloud administration, you need to allow access to authorized services while filtering out access from the open internet where attacks can more easily be mounted against your admins.
 
       1. Create **Cloud Services Admins** group and add all the accounts to it that require access to cloud services on the internet.
-      1. Download the PAW *proxy.pac* file from [TechNet Gallery](https://aka.ms/pawmedia) and publish it on an internal website.
+      1. Download the PAW *proxy.pac* file from [TechNet Gallery](/deployedge/edge-learnmore-cmdline-options-proxy-settings) and publish it on an internal website.
 
          > [!NOTE]
          > You will need to update the *proxy.pac* file after downloading to ensure that it is up-to-date and complete.

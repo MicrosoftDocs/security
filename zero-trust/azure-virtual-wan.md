@@ -352,3 +352,5 @@ Refer to these links to learn about the various services and technologies mentio
 You can download the illustrations used in this article. Use the Visio file to modify these illustrations for your own use.
 
 [PDF](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.pdf) | [Visio](https://download.microsoft.com/download/1/e/f/1ef1ad20-138e-419d-b30d-7f20811ef923/apply-zero-trust-to-Azure-vWAN-diagrams.vsdx)
+
+For additional technical illustrations, click [here](zero-trust-tech-illus.md).

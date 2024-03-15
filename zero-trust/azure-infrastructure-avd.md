@@ -226,6 +226,14 @@ See these additional articles for applying Zero Trust principles to Azure:
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
 - [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
 
+## Technical illustrations
+
+You can download the illustrations used in this article. Use the Visio file to modify these illustrations for your own use.
+
+[PDF](https://download.microsoft.com/download/4/e/f/4efdcc13-1a62-4f11-9f79-d4a7201d28f9/apply-zero-trust-to-Azure-Virtual-Desktop-diagrams.pdf) | [Visio](https://download.microsoft.com/download/4/e/f/4efdcc13-1a62-4f11-9f79-d4a7201d28f9/apply-zero-trust-to-Azure-Virtual-Desktop-diagrams.vsdx)
+
+For additional technical illustrations, click [here](zero-trust-tech-illus.md).
+
 ## References
 
 Refer to the links below to learn about the various services and technologies mentioned in this article.

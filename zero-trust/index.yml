@@ -29,19 +29,19 @@ landingContent:
         - text: What is Zero Trust?
           url:  zero-trust-overview.md
         - text: Identity
-          url: /security/zero-trust/deploy/identity
+          url:  deploy/identity.md
         - text: Endpoints
-          url: /security/zero-trust/deploy/endpoints
-        - text: Applications
-          url: /security/zero-trust/deploy/applications
+          url:  deploy/endpoints.md
         - text: Data
-          url: /security/zero-trust/deploy/data
+          url:  deploy/data.md
+        - text: Applications
+          url:  deploy/applications.md
         - text: Infrastructure
-          url: /security/zero-trust/deploy/infrastructure
+          url:  deploy/infrastructure.md
         - text: Networks
-          url: /security/zero-trust/deploy/networks
+          url:  deploy/networks.md
         - text: Visibility, automation, and orchestration
-          url: /security/zero-trust/deploy/visibility-automation-orchestration
+          url:  deploy/visibility-automation-orchestration.md
         - text: Small business guidance 
           url: guidance-smb-partner.md
  
@@ -76,7 +76,7 @@ landingContent:
             url: /microsoft-365/solutions/manage-devices-with-intune-overview
           - text: Evaluate, pilot, and deploy Microsoft Defender XDR
             url: /microsoft-365/security/defender/eval-overview
-          - text: Deploy a Microsoft Information Protection solution
+          - text: Deploy a Microsoft information protection solution
             url: /microsoft-365/compliance/information-protection-solution
           - text: Deploy information protection for data privacy regulations
             url: /microsoft-365/solutions/information-protection-deploy
@@ -93,13 +93,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Azure IaaS
-            url: azure-infrastructure-overview.md
+            url:  azure-infrastructure-overview.md
           - text: Azure Virtual Desktop
-            url: azure-infrastructure-avd.md
+            url:  azure-infrastructure-avd.md
           - text: Azure Virtual WAN
-            url: azure-virtual-wan.md
+            url:  azure-virtual-wan.md
           - text: IaaS applications in Amazon Web Services
-            url: secure-iaas-apps.md
+            url:  secure-iaas-apps.md
           - text: Microsoft Sentinel and Microsoft Defender XDR
             url: /security/operations/siem-xdr-overview
 
@@ -109,21 +109,21 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Integrate with Microsoft's Zero Trust solutions
-            url: /security/zero-trust/integrate/overview
+            url:  integrate/overview.md
           - text: Identity
-            url: /security/zero-trust/integrate/identity
+            url:  integrate/identity.md
           - text: Endpoints
-            url: /security/zero-trust/integrate/endpoints
+            url:  integrate/endpoints.md
           - text: Applications
-            url: /security/zero-trust/integrate/applications
+            url:  integrate/applications.md
           - text: Data
-            url: /security/zero-trust/integrate/data
+            url:  integrate/data.md
           - text: Infrastructure
-            url: /security/zero-trust/integrate/infrastructure
+            url:  integrate/infrastructure.md
           - text: Networks
-            url: /security/zero-trust/integrate/networks
+            url:  integrate/networks.md
           - text: Visibility, automation, and orchestration
-            url: /security/zero-trust/integrate/visibility-automation-orchestration
+            url:  integrate/visibility-automation-orchestration.md
 
 # Card
   - title: Developer guidance
@@ -131,11 +131,11 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Develop using Zero Trust principles
-            url: /security/zero-trust/develop/overview
+            url:  develop/overview.md
           - text: Building apps that secure identity through permissions and consent
-            url: /security/zero-trust/develop/identity
+            url:  develop/identity.md
           - text: Securing DevOps environments for Zero Trust
-            url: /security/zero-trust/develop/secure-devops-environments-zero-trust
+            url:  develop/secure-devops-environments-zero-trust.md
 
 # Card
   - title: Rapid Modernization Plan (RaMP)
@@ -143,11 +143,11 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Explicitly validate trust for all access requests
-            url: user-access-productivity-validate-trust.md
+            url:  user-access-productivity-validate-trust.md
           - text: Ransomware recovery readiness
-            url: data-compliance-gov-ransomware-recovery-readiness.md
+            url:  data-compliance-gov-ransomware-recovery-readiness.md
           - text: Data protection
-            url: data-compliance-gov-data.md
+            url:  data-compliance-gov-data.md
    
             
 

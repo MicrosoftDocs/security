@@ -39,22 +39,22 @@ For new articles in this content set, please:
 
 **Summary:** To apply Zero Trust principles to Azure IaaS components and infrastructure, you must first understand the common reference architecture and the components of Azure storage, virtual machines, and spoke and hub virtual networks.
 
-This series of articles help you apply the principles of Zero Trust to your workloads in Microsoft Azure IaaS based on a multi-disciplinary approach to applying the Zero Trust principles. Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles:
+This series of articles help you apply the principles of Zero Trust to your workloads in Microsoft Azure IaaS based on a multi-disciplinary approach to applying the Zero Trust principles. Zero Trust is a security strategy. It isn't a product or a service, but an approach in designing and implementing the following set of security principles:
 
 - Verify explicitly
 - Use least privileged access
 - Assume breach
 
-Implementing the Zero Trust mindset to “assume breach, never trust, always verify” requires changes to cloud infrastructure, deployment strategy, and implementation.
+Implementing the Zero Trust mindset to "assume breach, never trust, always verify" requires changes to cloud infrastructure, deployment strategy, and implementation.
 
-These initial series of five articles (including this introduction) show you how to apply Zero Trust approach to a very common IT business scenario based on infrastructure services. The work is broken into units that can be configured together as follows:
+These initial series of five articles (including this introduction) show you how to apply Zero Trust approach to a common IT business scenario based on infrastructure services. The work is broken into units that can be configured together as follows:
 
 - [Azure storage](azure-infrastructure-storage.md)
 - [Virtual machines](azure-infrastructure-virtual-machines.md)
 - [Spoke virtual networks (VNets) for virtual machine-based workloads](azure-infrastructure-iaas.md)
 - [Hub VNets to support access to many workloads in Azure](azure-infrastructure-networking.md)
 
-See [Apply Zero Trust principles to Azure Virtual Desktop](azure-infrastructure-avd.md) for additional guidance.
+For more information, see [Apply Zero Trust principles to Azure Virtual Desktop](azure-infrastructure-avd.md).
 
 > [!NOTE]
 > Additional articles will be added to this series in the future, including how organizations can apply a Zero Trust approach to applications, networking, data, and DevOps services based on real IT business environments.
@@ -65,11 +65,11 @@ See [Apply Zero Trust principles to Azure Virtual Desktop](azure-infrastructure-
 > - [Microsoft Cloud Security Benchmark](/security/benchmark/azure/introduction)
 > - [Microsoft Cloud Security Baseline](/security/benchmark/azure/security-baselines-overview)
 
-To describe how to apply a Zero Trust approach, this guidance targets a common pattern used in production by many organizations: a virtual-machine-based application hosted in a VNet (and IaaS application). This is a common pattern for organizations migrating on-premises applications to Azure, which is sometimes referred to as "lift-and-shift". The reference architecture includes all components necessary to support this application, including storage services and a hub VNet.
+To describe how to apply a Zero Trust approach, this guidance targets a common pattern used in production by many organizations: a virtual-machine-based application hosted in a VNet (and IaaS application). This is a common pattern for organizations migrating on-premises applications to Azure, which is sometimes referred to as "lift-and-shift." The reference architecture includes all components necessary to support this application, including storage services and a hub VNet.
 
-The reference architecture reflects a common deployment pattern in production environments. It is not based on the enterprise-scale landing zones recommended in the Cloud Adoption Framework (CAF), although many of the best practices in CAF are included in the reference architecture, such as using a dedicated VNet to host components that broker access to the application (hub VNet).
+The reference architecture reflects a common deployment pattern in production environments. It isn't based on the enterprise-scale landing zones recommended in the Cloud Adoption Framework (CAF), although many of the best practices in CAF are included in the reference architecture, such as using a dedicated VNet to host components that broker access to the application (hub VNet).
 
-If you are interested in learning about the guidance recommended in the Cloud Adoption Framework Azure landing zones, see these resources:
+If you're interested in learning about the guidance recommended in the Cloud Adoption Framework Azure landing zones, see these resources:
 
 - [Get started with the Cloud Adoption Framework](/azure/cloud-adoption-framework/get-started/index)
 - [What is an Azure landing zone?](/azure/cloud-adoption-framework/ready/landing-zone/index)
@@ -84,7 +84,7 @@ This architecture contains:
 
 - Multiple IaaS components and elements, including different types of users and IT consumers accessing the app from different sites. such as Azure, the internet, on-premises, and branch offices.
 - A common three-tier application containing a front end tier, application tier, and data tier. All tiers run on virtual machines within a VNet named SPOKE. Access to the app is protected by another VNet named HUB that contains additional security services.
-- Some of the most used PaaS services on Azure that support IaaS applications, including role-based access control (RBAC) and Microsoft Entra ID. These contribute to the Zero Trust security approach.
+- Some of the most used PaaS services on Azure that support IaaS applications, including role-based access control (RBAC) and Microsoft Entra ID, which contribute to the Zero Trust security approach.
 - Storage Blobs and Storage Files that provide object storage for the applications and files shared by users.
 
 This series of articles walk through the recommendations for implementing Zero Trust for the reference architecture by addressing each of these larger pieces hosted in Azure, as shown here.
@@ -98,7 +98,7 @@ The diagram outlines the larger areas of the architecture that are addressed by 
 3. [Spoke VNets](azure-infrastructure-iaas.md)
 4. [Hub VNets](azure-infrastructure-networking.md)
 
-It’s important to note that the guidance in this series of articles is more specific for this type of architecture than the guidance provided in the Cloud Adoption Framework and Azure landing zone architectures. If you have applied the guidance in either of these resources, be sure to also review this series of articles for additional recommendations.  
+It’s important to note that the guidance in this series of articles is more specific for this type of architecture than the guidance provided in the Cloud Adoption Framework and Azure landing zone architectures. If you applied the guidance in either of these resources, be sure to also review this series of articles for additional recommendations.  
 
 ## Understanding Azure components
 
@@ -110,11 +110,11 @@ In this diagram, the Azure infrastructure is contained within an Entra ID tenant
 
 - Azure subscriptions
 
-   You can distribute the resources in more than one subscription, where each subscription may hold different roles, such as network subscription, or security subscription. This is described in the Cloud Adoption Framework and Azure Landing Zone documentation previously referenced. The different subscriptions may also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you will have in each. One or more subscriptions can be managed together using a Management Group. This will give you the ability to apply permissions with role based access control (RBAC) and Azure policies to a group of subscriptions instead of setting up each subscription individually.
+   You can distribute the resources in more than one subscription, where each subscription may hold different roles, such as network subscription, or security subscription. This is described in the Cloud Adoption Framework and Azure Landing Zone documentation previously referenced. The different subscriptions may also hold different environments, such as production, development, and tests environments. It depends on how you want to separate your environment and the number of resources you'll have in each. One or more subscriptions can be managed together using a Management Group. This gives you the ability to apply permissions with role based access control (RBAC) and Azure policies to a group of subscriptions instead of setting up each subscription individually.
 
 - Microsoft Defender for Cloud and Azure Monitor
 
-   For each Azure subscription, a set of Azure Monitor solutions and Defender for Cloud is available. If you manage these subscriptions through a Management Group, you will be able to consolidate in a single portal for all the functionality of Azure Monitor and Defender for Cloud. For example, Secure Score, provided by Defender for Cloud, will be consolidated for all your subscriptions, using a Management Group as the scope.
+   For each Azure subscription, a set of Azure Monitor solutions and Defender for Cloud is available. If you manage these subscriptions through a Management Group, you're able to consolidate in a single portal for all the functionality of Azure Monitor and Defender for Cloud. For example, Secure Score, provided by Defender for Cloud, are consolidated for all your subscriptions, using a Management Group as the scope.
 
 - Storage resource group (1)
 
@@ -263,7 +263,7 @@ For additional technical illustrations, click [here](zero-trust-tech-illus.md).
 
 ## References
 
-Refer to the links below to learn about the various services and technologies mentioned in this article.
+Refer to the following links to learn about the various services and technologies mentioned in this article.
 
 - [What is Azure - Microsoft Cloud Services](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/)
 - [Azure Infrastructure as a Service (IaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/azure-iaas/#benefits)

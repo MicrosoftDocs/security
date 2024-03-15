@@ -261,11 +261,11 @@
   expanded: false
   items: 
     - name: Overview
-      href: apply-zero-trust-copilots-overview.md
+      href: copilots/apply-zero-trust-copilots-overview.md
     - name: Zero Trust for Microsoft Copilot
-      href: zero-trust-microsoft-copilot.md
+      href: copilots/zero-trust-microsoft-copilot.md
     - name: Zero Trust for Copilot for Microsoft 365
-      href: zero-trust-microsoft-365-copilot.md
+      href: copilots/zero-trust-microsoft-365-copilot.md
 - name: Microsoft Azure services
   expanded: false
   items: 

@@ -88,15 +88,97 @@ Zero Trust principles are applied across the reference architecture, from users 
 
 ## Step 1: Implement network layer encryption
 
+Network layer encryption is critical when applying Zero Trust principles to your on-premises and Azure environment. When network traffic goes over the internet, you should always assume there's a possibility of traffic interception by attackers, and your data might get exposed or altered before it reaches its destination. Because service providers control how data gets routed through the internet, you want to ensure that the privacy and integrity of your data is maintained from the moment it leaves your on-premises network all the way to Microsoft’s cloud.
+
+In the next two sections, we discuss Internet Protocol Security (IPsec) and Media Access Control Security ([MACsec](https://1.ieee802.org/security/802-1ae/)), which Azure networking services support these protocols, and how you can ensure they are being used.
+
+### IPsec
+
+IPsec is a group of protocols that provides security for Internet Protocol (IP) communications. It authenticates and encrypts network packets using a set of encryption algorithms. IPSec is the security encapsulation protocol used to establish virtual private networks (VPNs). An IPsec VPN tunnel consists of two phases, phase 1 known as main mode and phase 2 known as quick mode.
+
+Phase 1 of IPsec is tunnel establishment, where peers negotiate parameters for the Internet Key Exchange (IKE) security association, such as encryption, authentication, hashing, and Diffie-Hellman algorithms. To verify their identities, peers exchange a preshared key. Phase 1 of IPsec can operate in two modes: main mode or aggressive mode. Azure VPN Gateway supports two versions of IKE, IKEv1 and IKEv2, and only operates in main mode. Main mode ensures the encryption of the identity of the connection between the Azure VPN Gateway and the on-premises device.
+
+In phase 2 of IPsec, peers negotiate security parameters for data transmission. In this phase, both peers agree on the encryption and authentication algorithms, lifetime value of the security association (SA), and traffic selectors (TS) that defines what traffic is encrypted over the IPsec tunnel. The tunnel created in phase 1 serves as a secure channel for this negotiation. IPsec can secure IP packets using either Authentication Header (AH) protocol or Encapsulating Security Payload (ESP) protocol. AH provides integrity and authentication, while ESP   also provides confidentiality (encryption). IPsec phase 2 can operate in either transport mode or tunnel mode. In transport mode, only the payload of the IP packet gets encrypted, while in tunnel mode the entire IP packet is encrypted and a new IP header is added. IPsec phase 2 can be established on top of either IKEv1 or IKEv2. The current Azure VPN Gateway IPsec implementation supports only ESP in tunnel mode.
+
+Some of the Azure services that support IPsec are:
+
+•	[Azure VPN Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+o	Site-to-site VPN connections
+o	VNet-to-VNet connections
+o	Point-to-Site connections
+•	[Azure Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about)
+o	VPN sites
+o	User VPN configurations
+
+There are no settings that you need to modify to enable IPsec for these services. They are enabled by default.
+
+### MACsec and Azure Key Vault
+
+MACsec (IEEE 802.1AE) is a network security standard that applies the **Assume breach** Zero 
+Trust principle at the data link layer by providing authentication and encryption over an Ethernet link. MACsec assumes that any network traffic, even in the same local area network, can be compromised or intercepted by malicious actors. MACsec verifies and protects each frame using a security key that is shared between two network interfaces. This configuration can only be accomplished between two MACsec-capable devices.
+
+MACsec is configured with connectivity associations, which are a set of attributes that network interfaces use to create inbound and outbound security channels. Once created, traffic over these channels gets exchanged over two MACsec secured links. MACsec has two connectivity association modes: 
+
+•	**Static connectivity association key (CAK) mode**: MACsec secured links are established using a preshared key that includes a connectivity association key name (CKN) and the assigned CAK. These keys are configured on both ends of the link.
+•	**Dynamic CAK mode**: The security keys are generated dynamically using the 802.1x authentication process, which can use a centralized authentication device such as a Remote Authentication Dial-In User Service (RADIUS) server.
+
+Microsoft Enterprise Edge (MSEE) devices support static CAK by storing the CAK and CKN in an Azure Key Vault when you configure Azure ExpressRoute with direct ports. To access the values in the Azure Key Vault, configure managed identity to authenticate the ExpressRoute circuit resource. This approach follows the Use least privileged access Zero Trust principle because only authorized devices can access the keys from the Azure Key Vault.
+For more information, see [Configure MACsec on ExpressRoute Direct ports](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-macsec).
+
 
 ## Step 2: Secure and verify communication from an on-premises network to Azure VNets
 
+Traffic within Azure has an underlying level of encryption. When traffic moves between VNets in different regions, Microsoft uses MACsec to encrypt and authenticate peering traffic at the data-link layer. 
+
+However, encryption alone is not enough to ensure Zero Trust. You should also verify and monitor the network communication within and across Azure VNets. Further encryption and verification between VNets are possible with the help of Azure VPN Gateway or network virtual appliances (NVAs) but isn’t a common practice. Microsoft   recommends designing your network topology to use a centralized traffic inspection model that can enforce granular policies and detect anomalies.
+
+To reduce the overhead of configuring a VPN gateway or virtual appliance, enable the [VNet encryption](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-overview) feature for certain virtual machine sizes to encrypt and verify traffic between virtual machines at the host level, within a VNet, and across VNet peerings.
 
 ## Step 3: Secure and verify communication within and across Azure VNets
+
+Application layer encryption plays a key factor for Zero Trust that mandates all data and communications are encrypted when users are interacting with web applications or devices. Application layer encryption ensures that only verified and trusted entities can access web applications or devices.
+
+One of the most common examples of encryption at the application layer is Hypertext Transfer Protocol Secure (HTTPS), which encrypts data between a web browser and a web server. HTTPS uses Transport Layer Security (TLS) protocol to encrypt client-server communication and uses a TLS digital certificate to verify the identity and trustworthiness of the website or domain.
+
+Another example of application layer security is Secure Shell (SSH) and Remote Desktop Protocol (RDP) that encrypts data between the client and server. These protocols also support multifactor authentication and Conditional Access policies to ensure that only authorized and compliant devices or users can access remote resources. See [Step 5](#step-5-use-azure-bastion) to protect Azure virtual machines) for information about securing SSH and RDP connections to Azure virtual machines.
 
 
 ## Step 4: Implement encryption at the application layer
 
+Application layer encryption plays a key factor for Zero Trust that mandates all data and communications are encrypted when users are interacting with web applications or devices. Application layer encryption ensures that only verified and trusted entities can access web applications or devices.
+
+One of the most common examples of encryption at the application layer is Hypertext Transfer Protocol Secure (HTTPS), which encrypts data between a web browser and a web server. HTTPS uses Transport Layer Security (TLS) protocol to encrypt client-server communication and uses a TLS digital certificate to verify the identity and trustworthiness of the website or domain.
+
+Another example of application layer security is Secure Shell (SSH) and Remote Desktop Protocol (RDP) that encrypts data between the client and server. These protocols also support multifactor authentication and Conditional Access policies to ensure that only authorized and compliant devices or users can access remote resources. See Step 5 for information about securing SSH and RDP connections to Azure virtual machines.
+
+### Protection for Azure web applications
+
+You can use Azure Front Door or Azure Application Gateway to protect your Azure web applications.
+
+#### Azure Front Door
+
+[Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) is a global distribution service that optimizes the content delivery to end users through Microsoft's edge locations. With features such as Web Application Firewall (WAF) and Private Link service, you can detect and block malicious attacks on your web applications at the edge of the Microsoft network while privately accessing your origins    using the Microsoft internal network.
+
+To protect your data, traffic to Azure Front Door endpoints is protected using HTTPS with end-to-end TLS for all traffic going to and from its endpoints. Traffic is encrypted from the client to the origin and from the origin to the client.
+
+Azure Front Door handles HTTPS requests and determines which endpoint in its profile has the associated domain name. Then it checks the path and determines which routing rule matches the path of the request. If caching is enabled, Azure Front Door checks its cache to see if there's a valid response. If there is no valid response, Azure Front Door selects the best origin that can serve the content requested. Before the request is sent to the origin, a rule set can be applied to the request to change the header, query string, or origin destination.
+
+Azure Front Door supports both front end and back-end TLS. Front end TLS encrypts traffic between the client and Azure Front Door. Back-end TLS encrypts traffic between Azure Front Door and the origin. Azure Front Door supports TLS 1.2 and TLS 1.3. You can configure Azure Front Door to use a custom TLS certificate or use a certificate managed by Azure Front Door.
+
+> [!NOTE]
+> You can also use the Private Link feature for connectivity to NVAs for further packet inspection.
+
+#### Azure Application Gateway
+
+[Azure Application Gateway](https://learn.microsoft.com/en-us/azure/application-gateway/overview) is a regional load balancer that operates at Layer 7. It routes and distributes web traffic based on HTTP URL attributes. It can route and distribute traffic using three different approaches:
+
+•	**HTTP only** - Application Gateway receives and routes incoming HTTP requests to the appropriate destination in unencrypted form.
+•	**SSL Termination** - Application Gateway decrypts incoming HTTPS requests at the instance level, inspects them, and routes them unencrypted to the destination.
+•	**End-to-End TLS** - Application Gateway decrypts incoming HTTPS requests at the instance level, inspects them, and re-encrypts them before routing them to the destination.
+
+The most secure option is end-to-end TLS, which allows encryption and transmission of sensitive data by requiring the use of Authentication Certificates or Trusted Root Certificates. It also requires uploading these certificates to the backend servers and ensuring these back end servers are known to Application Gateway. For more information, see [Configure end-to-end TLS by using Application Gateway](https://learn.microsoft.com/en-us/azure/application-gateway/end-to-end-ssl-portal).
+
+Additionally, on-premises users or users on virtual machines in another VNet can use the internal front end of Application Gateway with the same TLS capabilities. Along with encryption, Microsoft recommends that you always enable WAF for more front-end protection for your endpoints.
 
 ## Step 5: Use Azure Bastion to protect Azure virtual machines
 
@@ -119,68 +201,29 @@ To protect your Azure virtual machine, deploy [Azure Bastion](/azure/bastion/tut
 - [Configure Azure Application Gateway](https://learn.microsoft.com/en-us/training/modules/configure-azure-application-gateway/)
 - [Introduction to Azure Bastion](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-bastion/)
 
-
-- [Configure Azure Policy](/training/modules/configure-azure-policy/)
-- [Design and implement network security](/training/modules/design-implement-network-security-monitoring/)
-- [Configure Azure Firewall](/training/modules/configure-azure-firewall/)
-- [Configure VPN Gateway](/training/modules/configure-vpn-gateway/)
-- [Introduction to Azure DDoS Protection](/training/modules/introduction-azure-ddos-protection/)
-- [Resolve security threats with Microsoft Defender for Cloud](/training/modules/resolve-threats-with-azure-security-center/)
-
 For more training on security in Azure, see these resources in the Microsoft catalog:<br> 
 [Security in Azure | Microsoft Learn](/training/browse/?subjects=security&products=azure)
 
 ## Next Steps
 
-See these additional articles for applying Zero Trust principles to Azure:
+For additional information about applying Zero Trust to Azure networking, see:
 
-- [Azure IaaS overview](azure-infrastructure-overview.md)
-  - [Azure storage](azure-infrastructure-storage.md)
-  - [Virtual machines](azure-infrastructure-virtual-machines.md)
-  - [Spoke virtual networks](azure-infrastructure-iaas.md)
-  - [Spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
-- [Azure Virtual Desktop](azure-infrastructure-avd.md)
+- [Secure networks with Zero Trust](./deploy/networks.md)
+- [Spoke virtual networks in Azure](azure-infrastructure-iaas.md)
+- [Hub virtual networks in Azure](azure-infrastructure-paas.md)
+- [Spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
-- [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
-- [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
-
-## Technical illustrations
-
-This poster provides a single-page, at-a-glance view of the components of Azure IaaS as reference and logical architectures, along with the steps to ensure that these components have the "never trust, always verify" principles of the Zero Trust model applied.
-
-| Item | Description |
-|:-----|:-----|
-|[![Thumbnail figure for the Apply Zero Trust to Azure IaaS infrastructure poster.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li></ul>|
-
-
-This poster provides the reference and logical architectures and the detailed configurations of the separate components of Zero Trust for Azure IaaS. Use the pages of this poster for separate IT departments or specialties or, with the Microsoft Visio version of the file, customize the diagrams for your infrastructure.
-
-| Item | Description |
-|:-----|:-----|
-|[![Thumbnail figure for the Diagrams for applying Zero Trust to Azure IaaS infrastructure poster.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li></ul>|
-
-For additional technical illustrations, click [here](zero-trust-tech-illus.md).
 
 ## References
 
 Refer to these links to learn about the various services and technologies mentioned in this article.
 
-- [Azure Virtual Networks](/azure/virtual-network/virtual-networks-overview)
-
-- [What is Azure Firewall?](/azure/firewall/overview)
-
-- [About Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways)
-
-- [Azure DDoS Protection Overview](/azure/ddos-protection/ddos-protection-overview)
-
-- [Introduction to Azure security](/azure/security/fundamentals/overview)
-
-- [Zero Trust implementation guidance](zero-trust-overview.md)
-
-- [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
-
-- [Security baselines for Azure overview](/security/benchmark/azure/security-baselines-overview)
-
-- [Building the first layer of defense with Azure security services](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)
-
-- [Microsoft Cybersecurity Reference Architectures](/security/cybersecurity-reference-architecture/mcra)
+- [Azure VPN Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+- [Azure Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about)
+- [Configure MACsec on ExpressRoute Direct ports](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-macsec)
+- [Use Microsoft Tunnel VPN gateway with Conditional Access policies](https://learn.microsoft.com/en-us/mem/intune/protect/microsoft-tunnel-conditional-access)
+- [Azure ExpressRoute](https://learn.microsoft.com/en-us/mem/intune/protect/microsoft-tunnel-conditional-access
+- [VNet encryption](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-overview)
+- [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)
+- [Application Gateway](https://learn.microsoft.com/en-us/azure/application-gateway/overview)
+- [Azure Bastion](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview)

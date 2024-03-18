@@ -65,7 +65,7 @@ Begin your Zero Trust RaMP deployment journey with [User access and productivity
 
 ## Additional Zero Trust documentation
 
-Use additional Zero Trust content based on a documentation set or your role in your organization.
+Use additional Zero Trust content based on a documentation set or the roles in your organization.
 
 ### Documentation set
 

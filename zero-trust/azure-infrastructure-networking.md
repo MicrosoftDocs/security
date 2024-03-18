@@ -1,6 +1,6 @@
 ---
-title: Apply Zero Trust principles to hub virtual networks in Azure 
-description: Learn how to secure hub virtual networks for IaaS workloads with Zero Trust.  
+title: How do I apply Zero Trust principles to hub virtual networks in Azure?
+description: How to apply Zero Trust principles to a hub virtual network for Azure IaaS workloads.  
 ms.date: 02/12/2024
 ms.service: security
 author: brsteph
@@ -37,6 +37,8 @@ For new articles in this content set, please:
 
 --->
 
+**Summary:** To apply Zero Trust principles to a hub virtual network in Azure, you must secure Azure Firewall Premium, deploy Azure DDoS Protection Standard, configure network gateway routing to the firewall, and configure threat protection.
+
 The best way to deploy an Azure-based hub virtual network (VNet) for Zero Trust is to use the Azure Landing Zone materials to deploy a feature-complete hub VNet, and then tailor it to your specific configuration expectations.
 
 This article provides steps for how to take an existing hub VNet and ensure you're ready for a Zero Trust methodology. It assumes that you have used the ALZ-Bicep [hubNetworking](https://github.com/Azure/ALZ-Bicep/tree/main/infra-as-code/bicep/modules/hubNetworking) module to rapidly deploy a hub VNet, or have deployed some other hub VNet with similar resources. Using a separate connectivity hub connected to isolated workplace spokes is an anchor pattern in Azure secure networking and helps support the Zero Trust principles.
@@ -55,7 +57,7 @@ This article is a part of a series of articles that demonstrate how to apply the
 
 The following diagram shows the reference architecture. The hub VNet is highlighted in red. For more information about this architecture, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
-:::image type="content" source="media/hub/azure-infra-hub-architecture-1.svg" alt-text="The Zero Trust for Azure reference architecture with the hub VNet highlighted." lightbox="media/hub/azure-infra-hub-architecture-1.svg":::
+:::image type="content" source="media/hub/azure-infra-hub-architecture-1.svg" alt-text="The reference architecture for the components of a hub virtual network with Zero Trust principles applied." lightbox="media/hub/azure-infra-hub-architecture-1.svg":::
 
 For this reference architecture, there are many ways you can deploy the resources across the Azure subscription. The reference architecture shows the recommendation of isolating all resources for the hub VNet within a dedicated resource group. The resources for the spoke VNet are also shown for comparison. This model works well if different teams are given responsibility for these different areas.
 
@@ -79,7 +81,7 @@ The resources that are deployed for the hub VNet are:
 
 The following diagram shows the components of a resource group for a hub VNet in an Azure subscription separate from the subscription for the spoke VNet. This is one way of organizing these elements within the subscription. Your organization might choose to organize these in a different way.
 
-:::image type="content" source="media/hub/azure-infra-hub-subscription-architecture-2.svg" alt-text="Diagram of the components of a resource group for a hub virtual network." lightbox="media/hub/azure-infra-hub-subscription-architecture-2.svg":::
+:::image type="content" source="media/hub/azure-infra-hub-subscription-architecture-2.svg" alt-text="The logical architecture for applying Zero Trust to an Azure hub VNet showing subscriptions, resource groups, and Azure components within an Entra ID tenant." lightbox="media/hub/azure-infra-hub-subscription-architecture-2.svg":::
 
 In the diagram:
 
@@ -170,7 +172,7 @@ To configure Azure Firewall Premium to a Zero Trust configuration, make the foll
     1. Create an application rule with the source of your Application Gateway subnet, and a destination of the domain name of the web app that is being protected.
     1. Ensure that you enable **TLS inspection**.
 
-    :::image type="content" source="media/ApplicationRuleExample.gif" alt-text="Diagram for creating an application rule." lightbox="media/ApplicationRuleExample.gif":::
+    :::image type="content" source="media/ApplicationRuleExample.gif" alt-text="Screenshot showing the steps for creating an application rule." lightbox="media/ApplicationRuleExample.gif":::
 
 ### Additional configuration
 
@@ -312,9 +314,9 @@ You write Azure Policies in JavaScript Object Notation (JSON) to hold different 
 
 ### How to check all network recommendations available through Microsoft Defender for Cloud
 
-To view all the Azure policies that provide network recommendation used by Microsoft Defender for Cloud:
+To view all the Azure policies that provide network recommendations used by Microsoft Defender for Cloud:
 
-:::image type="content" source="media/hub/azure-policies-mdc.jpg" alt-text="Screenshot of Azure policies by MDC." lightbox="media/hub/azure-policies-mdc.jpg":::
+:::image type="content" source="media/hub/azure-policies-mdc.jpg" alt-text="Example screenshot example of recommended Azure policies in Microsoft Defender for Cloud." lightbox="media/hub/azure-policies-mdc.jpg":::
 
 1. Open **Microsoft Defender for Cloud**, by selecting the Microsoft Defender for Cloud icon in the left menu.
 
@@ -330,7 +332,7 @@ To view all the Azure policies that provide network recommendation used by Micro
 
 Follow these steps to view some of the network recommendations, based on the Microsoft cloud security benchmark:
 
-:::image type="content" source="media/hub/network-rec-mdc.jpg" alt-text="Screenshot of network recommendations by MDC." lightbox="media/hub/network-rec-mdc.jpg":::
+:::image type="content" source="media/hub/network-rec-mdc.jpg" alt-text="Example screenshot of network recommendations in Microsoft Defender for Cloud." lightbox="media/hub/network-rec-mdc.jpg":::
 
 1. Open **Microsoft Defender for Cloud**.
 
@@ -354,7 +356,7 @@ You can also check options to get a better security posture by hardening your ne
 
 Azure Firewall is recommended for a hub VNet, as described in this article. Microsoft Defender for Cloud can manage multiple Azure Firewall policies centrally. In addition to Azure Firewall policies, you'll be able to manage other features related to Azure Firewall, as shown here.
 
-:::image type="content" source="media/hub/firewall-manager-mdc.jpg" alt-text="Screenshot of managing Azure firewall policies through Microsoft Defender for Cloud.":::
+:::image type="content" source="media/hub/firewall-manager-mdc.jpg" alt-text="Example screenshot of managing Azure firewall policies through Microsoft Defender for Cloud.":::
 
 For more information about how Microsoft Defender for Cloud protects your network environment against threats, see [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
@@ -390,14 +392,14 @@ This poster provides a single-page, at-a-glance view of the components of Azure 
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated March 2024 | Use this illustration together with this article: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li></ul>|
+|[![Thumbnail figure for the Apply Zero Trust to Azure IaaS infrastructure poster.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li></ul>|
 
 
 This poster provides the reference and logical architectures and the detailed configurations of the separate components of Zero Trust for Azure IaaS. Use the pages of this poster for separate IT departments or specialties or, with the Microsoft Visio version of the file, customize the diagrams for your infrastructure.
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated March 2024 | Use these diagrams together with the articles starting here: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li></ul>|
+|[![Thumbnail figure for the Diagrams for applying Zero Trust to Azure IaaS infrastructure poster.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li></ul>|
 
 For additional technical illustrations, click [here](zero-trust-tech-illus.md).
 

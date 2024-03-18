@@ -1,6 +1,6 @@
 ---
-title: Overview - Apply Zero Trust principles to Azure services
-description: This article gives an overview of how to apply Zero Trust principles to Microsoft Azure services.
+title: How do I apply Zero Trust principles to Azure services?
+description: An overview of the set of articles that describe how to apply Zero Trust principles to Microsoft Azure services.
 ms.date: 06/08/2023    
 ms.service: security
 author: sikovatc
@@ -37,6 +37,8 @@ For new articles in this content set, please:
 
 # Overview – Apply Zero Trust principles to Azure services
 
+**Summary:** To apply Zero Trust principles to Azure services, you need to determine the set of infrastructure components required to support your desired workload, and then apply Zero Trust principles to those components.
+
 This series of articles helps you apply the [principles of Zero Trust](zero-trust-overview.md) to your services in Microsoft Azure using a multi-disciplinary methodology. Zero Trust is a security strategy. It is not a product or a service, but an approach in designing and implementing the following set of security principles:
 
 - Verify explicitly
@@ -62,7 +64,7 @@ These articles show you how to apply Zero Trust approach to these new or already
 
 Here is the content architecture for this set of articles that contain the set of platform and workload articles to apply Zero Trust principles to Azure services.
 
-:::image type="content" source="media/apply-zero-trust-azure-services-overview/content-architecture.svg" alt-text="Diagram of the content architecture for applying Zero Trust to Azure services." lightbox="media/apply-zero-trust-azure-services-overview/content-architecture.svg":::
+:::image type="content" source="media/apply-zero-trust-azure-services-overview/content-architecture.svg" alt-text="The stack diagram for the set of articles that describe how you apply Zero Trust to Azure services, starting at the bottom of the stack and moving up to the desired workload." lightbox="media/apply-zero-trust-azure-services-overview/content-architecture.svg":::
 
 You apply the guidance in the articles in a stack from the bottom up.
 
@@ -94,7 +96,7 @@ Refer to the links below to learn about the various services and technologies me
 
 - [What is Azure - Microsoft Cloud Services](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/)
 - [Introduction to Azure security](/azure/security/fundamentals/overview)
-- [Zero Trust implementation guidance](/security/zero-trust/zero-trust-overview)
+- [Zero Trust implementation guidance](zero-trust-overview.md)
 - [Overview of the Microsoft cloud security benchmark](/security/benchmark/azure/overview)
 - [Security baselines for Azure overview](/security/benchmark/azure/security-baselines-overview)
 - [Building the first layer of defense with Azure security services](/azure/architecture/solution-ideas/articles/azure-security-build-first-layer-defense)
@@ -102,7 +104,7 @@ Refer to the links below to learn about the various services and technologies me
 
 ## Additional Zero Trust documentation
 
-Use additional Zero Trust content based on a documentation set or your role in your organization.
+Use additional Zero Trust content based on a documentation set or the roles in your organization.
 
 ### Documentation set
 

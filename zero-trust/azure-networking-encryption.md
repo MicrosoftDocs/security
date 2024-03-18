@@ -42,7 +42,7 @@ This article provides guidance to applying the [principles of Zero Trust](zero-t
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
 | Verify explicitly | Always authenticate and authorize based on all available data points. | Using Conditional Access policies for your Azure VPN Gateway connections and Secure Shell (SSH) and Remote Desktop Protocol (RDP) for your user-to-virtual machine connections. |
-| Use least privileged access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Configuring your Microsoft Enterprise Edge (MSEE) devices to use static CAK for Azure ExpressRoute with direct ports and using managed identity to authenticate ExpressRoute circuit resources. |
+| Use least privileged access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Configuring your Microsoft Enterprise Edge (MSEE) devices to use static connectivity association key (CAK) for Azure ExpressRoute with direct ports and using managed identity to authenticate ExpressRoute circuit resources. |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Protecting network traffic with encryption methods and protocols that provide confidentiality, integrity, and authenticity of your data in transit. <br><br> Using Azure Monitor to provide ExpressRoute network performance metrics and alerts. <br><br> Using Azure Bastion to manage individual sessions from the Bastion service and delete or force a disconnect.|
 
 <!---
@@ -68,9 +68,7 @@ The levels of encryption for network traffic are:
 
 The following diagram shows the reference architecture for this Zero Trust guidance for encrypted communication between users and admins on-premises or on the Internet and components in the Azure environment for the steps described in this article.
 
->> add
-
-:::image type="content" source="media/hub/azure-infra-hub-architecture-1.svg" alt-text="The reference architecture for the components of a hub virtual network with Zero Trust principles applied." lightbox="media/hub/azure-infra-hub-architecture-1.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-encryption.svg" alt-text="The reference architecture for Azure networking components with encryption and Zero Trust principles applied." lightbox="media/azure-networking/azure-networking-encryption.svg":::
  
 In the diagram, the numbers correspond to the steps in the following sections.
 
@@ -102,46 +100,72 @@ In phase 2 of IPsec, peers negotiate security parameters for data transmission. 
 
 Some of the Azure services that support IPsec are:
 
-•	[Azure VPN Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
-o	Site-to-site VPN connections
-o	VNet-to-VNet connections
-o	Point-to-Site connections
-•	[Azure Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about)
-o	VPN sites
-o	User VPN configurations
+- [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+
+   - Site-to-site VPN connections
+
+   - VNet-to-VNet connections
+
+   - Point-to-Site connections
+
+- [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about)
+
+   - VPN sites
+
+   - User VPN configurations
 
 There are no settings that you need to modify to enable IPsec for these services. They are enabled by default.
 
 ### MACsec and Azure Key Vault
 
-MACsec (IEEE 802.1AE) is a network security standard that applies the **Assume breach** Zero 
-Trust principle at the data link layer by providing authentication and encryption over an Ethernet link. MACsec assumes that any network traffic, even in the same local area network, can be compromised or intercepted by malicious actors. MACsec verifies and protects each frame using a security key that is shared between two network interfaces. This configuration can only be accomplished between two MACsec-capable devices.
+MACsec (IEEE 802.1AE) is a network security standard that applies the **Assume breach** Zero Trust principle at the data link layer by providing authentication and encryption over an Ethernet link. MACsec assumes that any network traffic, even in the same local area network, can be compromised or intercepted by malicious actors. MACsec verifies and protects each frame using a security key that is shared between two network interfaces. This configuration can only be accomplished between two MACsec-capable devices.
 
 MACsec is configured with connectivity associations, which are a set of attributes that network interfaces use to create inbound and outbound security channels. Once created, traffic over these channels gets exchanged over two MACsec secured links. MACsec has two connectivity association modes: 
 
-•	**Static connectivity association key (CAK) mode**: MACsec secured links are established using a preshared key that includes a connectivity association key name (CKN) and the assigned CAK. These keys are configured on both ends of the link.
-•	**Dynamic CAK mode**: The security keys are generated dynamically using the 802.1x authentication process, which can use a centralized authentication device such as a Remote Authentication Dial-In User Service (RADIUS) server.
+- **Static connectivity association key (CAK) mode**: MACsec secured links are established using a preshared key that includes a connectivity association key name (CKN) and the assigned CAK. These keys are configured on both ends of the link.
+- **Dynamic CAK mode**: The security keys are generated dynamically using the 802.1x authentication process, which can use a centralized authentication device such as a Remote Authentication Dial-In User Service (RADIUS) server.
 
-Microsoft Enterprise Edge (MSEE) devices support static CAK by storing the CAK and CKN in an Azure Key Vault when you configure Azure ExpressRoute with direct ports. To access the values in the Azure Key Vault, configure managed identity to authenticate the ExpressRoute circuit resource. This approach follows the Use least privileged access Zero Trust principle because only authorized devices can access the keys from the Azure Key Vault.
-For more information, see [Configure MACsec on ExpressRoute Direct ports](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-macsec).
-
+Microsoft Enterprise Edge (MSEE) devices support static CAK by storing the CAK and CKN in an Azure Key Vault when you configure Azure ExpressRoute with direct ports. To access the values in the Azure Key Vault, configure managed identity to authenticate the ExpressRoute circuit resource. This approach follows the **Use least privileged access** Zero Trust principle because only authorized devices can access the keys from the Azure Key Vault.
+For more information, see [Configure MACsec on ExpressRoute Direct ports](/azure/expressroute/expressroute-howto-macsec).
 
 ## Step 2: Secure and verify communication from an on-premises network to Azure VNets
+
+As cloud migration becomes more prevalent across businesses of different scales, hybrid connectivity plays a key role. It’s crucial to not only secure and protect, but also to verify and monitor the network communication between your on-premises network and Azure. 
+
+Azure provides two options to connect your on-premises network to resources in an Azure VNet:
+
+- Azure VPN Gateway allows you to create a [site-to-site VPN tunnel](/azure/vpn-gateway/design#s2smulti) using IPsec to encrypt and authenticate network communication between your network in central or remote offices and an Azure VNet. It also allows individual clients to establish a point-to-site connection to access resources in an Azure VNet without a VPN device. For Zero Trust adherence, configure Entra ID authentication and Conditional Access policies for your Azure VPN Gateway connections to verify the identity and compliance of the connecting devices. For more information, see [Use Microsoft Tunnel VPN gateway with Conditional Access policies](/mem/intune/protect/microsoft-tunnel-conditional-access).
+
+- [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) provides a high bandwidth private connection that lets you extend your on-premises network into Azure with the assistance of a connectivity provider. Because network traffic doesn’t travel over the public internet, data isn’t encrypted by default. To encrypt your traffic over ExpressRoute, configure an IPsec tunnel. For more information, see [Site-to-Site VPN connections over ExpressRoute private peering - Azure VPN Gateway](/azure/vpn-gateway/site-to-site-vpn-private-peering).  
+
+   If you’re using ExpressRoute Direct ports, you can increase your network security by enabling authentication when establishing BGP peers or configure MACsec to secure layer 2 communication. MACsec provides encryption for Ethernet frames, ensuring data confidentiality, integrity, and authenticity between your edge router and Microsoft’s edge router. 
+
+  Azure ExpressRoute also supports Azure Monitor for network performance metrics and alerts.
+
+
+Encryption can safeguard your data from unauthorized interception, but it also introduces an extra layer of processing for encrypting and decrypting network traffic that can affect performance. Network traffic going over the internet can also be unpredictable because it must travel through multiple network devices that can introduce network latency. To avoid performance issues, Microsoft recommends using ExpressRoute because it offers reliable network performance and bandwidth allocation that you can customize for your workload.
+
+When deciding between Azure VPN Gateway or ExpressRoute, consider the following questions:
+
+1. What kinds of files and applications are you accessing between your on-premises   network and Azure? Do you require consistent bandwidth for transferring large volumes of data?
+2. Do you need consistent and low latency for your applications to perform optimally?
+3. Do you need to monitor the network performance and health of your hybrid connectivity?
+
+If you answered yes to any of these questions, then Azure ExpressRoute should be your primary method of connecting your on-premises network to Azure.
+
+There are two common scenarios where ExpressRoute and Azure VPN Gateway can coexist: 
+
+- Azure VPN Gateway can be used to connect your branch offices to Azure while having your main office connected using ExpressRoute. 
+- You can also use Azure VPN Gateway as a backup connection to Azure for your central office if your ExpressRoute service has an outage.
+
+
+## Step 3: Secure and verify communication within and across Azure VNets
 
 Traffic within Azure has an underlying level of encryption. When traffic moves between VNets in different regions, Microsoft uses MACsec to encrypt and authenticate peering traffic at the data-link layer. 
 
 However, encryption alone is not enough to ensure Zero Trust. You should also verify and monitor the network communication within and across Azure VNets. Further encryption and verification between VNets are possible with the help of Azure VPN Gateway or network virtual appliances (NVAs) but isn’t a common practice. Microsoft   recommends designing your network topology to use a centralized traffic inspection model that can enforce granular policies and detect anomalies.
 
-To reduce the overhead of configuring a VPN gateway or virtual appliance, enable the [VNet encryption](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-overview) feature for certain virtual machine sizes to encrypt and verify traffic between virtual machines at the host level, within a VNet, and across VNet peerings.
-
-## Step 3: Secure and verify communication within and across Azure VNets
-
-Application layer encryption plays a key factor for Zero Trust that mandates all data and communications are encrypted when users are interacting with web applications or devices. Application layer encryption ensures that only verified and trusted entities can access web applications or devices.
-
-One of the most common examples of encryption at the application layer is Hypertext Transfer Protocol Secure (HTTPS), which encrypts data between a web browser and a web server. HTTPS uses Transport Layer Security (TLS) protocol to encrypt client-server communication and uses a TLS digital certificate to verify the identity and trustworthiness of the website or domain.
-
-Another example of application layer security is Secure Shell (SSH) and Remote Desktop Protocol (RDP) that encrypts data between the client and server. These protocols also support multifactor authentication and Conditional Access policies to ensure that only authorized and compliant devices or users can access remote resources. See [Step 5](#step-5-use-azure-bastion) to protect Azure virtual machines) for information about securing SSH and RDP connections to Azure virtual machines.
-
+To reduce the overhead of configuring a VPN gateway or virtual appliance, enable the [VNet encryption](/azure/virtual-network/virtual-network-encryption-overview) feature for certain virtual machine sizes to encrypt and verify traffic between virtual machines at the host level, within a VNet, and across VNet peerings.
 
 ## Step 4: Implement encryption at the application layer
 
@@ -157,7 +181,7 @@ You can use Azure Front Door or Azure Application Gateway to protect your Azure 
 
 #### Azure Front Door
 
-[Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) is a global distribution service that optimizes the content delivery to end users through Microsoft's edge locations. With features such as Web Application Firewall (WAF) and Private Link service, you can detect and block malicious attacks on your web applications at the edge of the Microsoft network while privately accessing your origins    using the Microsoft internal network.
+[Azure Front Door](/azure/frontdoor/front-door-overview) is a global distribution service that optimizes the content delivery to end users through Microsoft's edge locations. With features such as Web Application Firewall (WAF) and Private Link service, you can detect and block malicious attacks on your web applications at the edge of the Microsoft network while privately accessing your origins    using the Microsoft internal network.
 
 To protect your data, traffic to Azure Front Door endpoints is protected using HTTPS with end-to-end TLS for all traffic going to and from its endpoints. Traffic is encrypted from the client to the origin and from the origin to the client.
 
@@ -170,13 +194,13 @@ Azure Front Door supports both front end and back-end TLS. Front end TLS encrypt
 
 #### Azure Application Gateway
 
-[Azure Application Gateway](https://learn.microsoft.com/en-us/azure/application-gateway/overview) is a regional load balancer that operates at Layer 7. It routes and distributes web traffic based on HTTP URL attributes. It can route and distribute traffic using three different approaches:
+[Azure Application Gateway](/azure/application-gateway/overview) is a regional load balancer that operates at Layer 7. It routes and distributes web traffic based on HTTP URL attributes. It can route and distribute traffic using three different approaches:
 
-•	**HTTP only** - Application Gateway receives and routes incoming HTTP requests to the appropriate destination in unencrypted form.
-•	**SSL Termination** - Application Gateway decrypts incoming HTTPS requests at the instance level, inspects them, and routes them unencrypted to the destination.
-•	**End-to-End TLS** - Application Gateway decrypts incoming HTTPS requests at the instance level, inspects them, and re-encrypts them before routing them to the destination.
+- **HTTP only**: Application Gateway receives and routes incoming HTTP requests to the appropriate destination in unencrypted form.
+- **SSL Termination**: Application Gateway decrypts incoming HTTPS requests at the instance level, inspects them, and routes them unencrypted to the destination.
+- **End-to-End TLS**: Application Gateway decrypts incoming HTTPS requests at the instance level, inspects them, and re-encrypts them before routing them to the destination.
 
-The most secure option is end-to-end TLS, which allows encryption and transmission of sensitive data by requiring the use of Authentication Certificates or Trusted Root Certificates. It also requires uploading these certificates to the backend servers and ensuring these back end servers are known to Application Gateway. For more information, see [Configure end-to-end TLS by using Application Gateway](https://learn.microsoft.com/en-us/azure/application-gateway/end-to-end-ssl-portal).
+The most secure option is end-to-end TLS, which allows encryption and transmission of sensitive data by requiring the use of Authentication Certificates or Trusted Root Certificates. It also requires uploading these certificates to the backend servers and ensuring these back end servers are known to Application Gateway. For more information, see [Configure end-to-end TLS by using Application Gateway](/azure/application-gateway/end-to-end-ssl-portal).
 
 Additionally, on-premises users or users on virtual machines in another VNet can use the internal front end of Application Gateway with the same TLS capabilities. Along with encryption, Microsoft recommends that you always enable WAF for more front-end protection for your endpoints.
 
@@ -196,13 +220,10 @@ To protect your Azure virtual machine, deploy [Azure Bastion](/azure/bastion/tut
 ## Recommended training
 
 - [Connect your on-premises network to Azure with VPN Gateway](/training/modules/connect-on-premises-network-with-vpn-gateway/)
-- [Connect your on-premises network to the Microsoft global network by using ExpressRoute](https://learn.microsoft.com/en-us/training/modules/connect-on-premises-network-with-expressroute/)
-- [Introduction to Azure Front Door](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-front-door/)
-- [Configure Azure Application Gateway](https://learn.microsoft.com/en-us/training/modules/configure-azure-application-gateway/)
-- [Introduction to Azure Bastion](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-bastion/)
-
-For more training on security in Azure, see these resources in the Microsoft catalog:<br> 
-[Security in Azure | Microsoft Learn](/training/browse/?subjects=security&products=azure)
+- [Connect your on-premises network to the Microsoft global network by using ExpressRoute](/training/modules/connect-on-premises-network-with-expressroute/)
+- [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/)
+- [Configure Azure Application Gateway](/training/modules/configure-azure-application-gateway/)
+- [Introduction to Azure Bastion](/training/modules/intro-to-azure-bastion/)
 
 ## Next Steps
 
@@ -218,12 +239,12 @@ For additional information about applying Zero Trust to Azure networking, see:
 
 Refer to these links to learn about the various services and technologies mentioned in this article.
 
-- [Azure VPN Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
-- [Azure Virtual WAN](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about)
-- [Configure MACsec on ExpressRoute Direct ports](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-macsec)
-- [Use Microsoft Tunnel VPN gateway with Conditional Access policies](https://learn.microsoft.com/en-us/mem/intune/protect/microsoft-tunnel-conditional-access)
-- [Azure ExpressRoute](https://learn.microsoft.com/en-us/mem/intune/protect/microsoft-tunnel-conditional-access
-- [VNet encryption](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-encryption-overview)
-- [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)
-- [Application Gateway](https://learn.microsoft.com/en-us/azure/application-gateway/overview)
-- [Azure Bastion](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview)
+- [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+- [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about)
+- [Configure MACsec on ExpressRoute Direct ports](/azure/expressroute/expressroute-howto-macsec)
+- [Use Microsoft Tunnel VPN gateway with Conditional Access policies](/mem/intune/protect/microsoft-tunnel-conditional-access)
+- [Azure ExpressRoute](/mem/intune/protect/microsoft-tunnel-conditional-access)
+- [VNet encryption](/azure/virtual-network/virtual-network-encryption-overview)
+- [Azure Front Door](/azure/frontdoor/front-door-overview)
+- [Application Gateway](/azure/application-gateway/overview)
+- [Azure Bastion](/azure/bastion/bastion-overview)

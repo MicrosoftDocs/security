@@ -88,6 +88,10 @@ Zero Trust principles are applied across the reference architecture, from users 
 
 Network layer encryption is critical when applying Zero Trust principles to your on-premises and Azure environment. When network traffic goes over the internet, you should always assume there's a possibility of traffic interception by attackers, and your data might get exposed or altered before it reaches its destination. Because service providers control how data gets routed through the internet, you want to ensure that the privacy and integrity of your data is maintained from the moment it leaves your on-premises network all the way to Microsoft’s cloud.
 
+The following diagram shows the reference architecture for implementing network layer encryption.
+
+:::image type="content" source="media/azure-networking/azure-networking-encryption-step-1.svg" alt-text="The reference architecture for Azure networking components with the implementation of network layer encryption." lightbox="media/azure-networking/azure-networking-encryption-step-1.svg":::
+
 In the next two sections, we discuss Internet Protocol Security (IPsec) and Media Access Control Security ([MACsec](https://1.ieee802.org/security/802-1ae/)), which Azure networking services support these protocols, and how you can ensure they are being used.
 
 ### IPsec

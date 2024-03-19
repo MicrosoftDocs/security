@@ -1,7 +1,7 @@
 ---
 title: Apply principles of Zero Trust to Microsoft Copilot
 description: Learn how to secure Microsoft Copilot with Zero Trust principles. 
-ms.date: 01/26/2024
+ms.date: 03/19/2024
 ms.service: security
 author: bcarter
 ms.author: bcarter
@@ -16,9 +16,11 @@ ms.collection:
 
 # Apply principles of Zero Trust to Microsoft Copilot
 
+<!---
 **Summary:** To apply Zero Trust principles to Microsoft Copilot, you need to determine your desired configuration of Microsoft Copilot to identify the data sets that can be analyzed and summarized, and then apply Zero Trust principles to those data sets and their access.
 
 ## Introduction
+--->
 
 Before you introduce Microsoft Copilot into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](../zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
 
@@ -37,7 +39,7 @@ With a license for Copilot for Microsoft 365, you will see a **Work/Web** toggle
 
 Here’s an example for Microsoft Bing.
 
->> Add
+:::image type="content" source="../media/copilot/microsoft-copilot-example-microsoft-bing.png" alt-text="Example screenshot of Microsoft Copilot for Microsoft Bing." lightbox="../media/copilot/microsoft-copilot-example-microsoft-bing.png":::
 
 The exception is Copilot in Edge, which can summarize some types of data in open browser tabs if enabled.
 
@@ -45,18 +47,12 @@ The exception is Copilot in Edge, which can summarize some types of data in open
 
 Here is the logical architecture for Microsoft Copilot.
 
->> Add
-
-<!---
-
-:::image type="content" source="../media/copilot/logical-architecture-microsoft-copilot.svg" alt-text="Diagram of the logical architecture for Microsoft Copilot." lightbox="../media/copilot/logical-architecture-microsoft-copilot.svg":::
-
---->
+:::image type="content" source="../media/copilot/logical-architecture-microsoft-copilot.svg" alt-text="Diagram of the logical architecture of Microsoft Copilot showing Graph and web-grounded prompts." lightbox="../media/copilot/logical-architecture-microsoft-copilot.svg":::
 
  
 In the diagram:
 
-- Users on devices with a license for Copilot for Microsoft 365 can choose *Work* or **Web** mode for Microsoft Copilot prompts.
+- Users on devices with a license for Copilot for Microsoft 365 can choose **Work** or **Web** mode for Microsoft Copilot prompts.
 - If **Work** is chosen, Graph-grounded prompts are sent to Copilot for Microsoft 365 for processing.
 - If **Web** is chosen, Web-grounded prompts entered via Windows, Bing, or Edge use internet data in its processing.
 - In the case of Edge and when enabled, Windows Copilot includes some types of data in open Edge tabs in its processing.
@@ -71,7 +67,7 @@ Copilot for Microsoft 365 can use the following data sets to process Graph-groun
 - Internet data through Bing search (if [enabled](/microsoft-365-copilot/manage-public-web-access))
 - The data used by Copilot-enabled plug-ins and connectors
 
->> Add
+:::image type="content" source="../media/copilot/microsoft-365-copilot-graph-grounded-prompts.svg" alt-text="Diagram of Copilot for Microsoft 365 and the processing of Graph-grounded prompts." lightbox="../media/copilot/microsoft-365-copilot-graph-grounded-prompts.svg":::
 
 ## Copilot in Edge
 
@@ -88,7 +84,7 @@ From the Microsoft Edge sidebar, Microsoft Copilot helps you get answers and ins
 
 This illustration summarizes the sets of data that are available to Microsoft Copilot in Edge.
 
->> Add 
+:::image type="content" source="../media/copilot/microsoft-copilot-edge-data-sets.svg" alt-text="Diagram of the data sets available to Microsoft Copilot in Edge." lightbox="../media/copilot/microsoft-copilot-edge-data-sets.svg":::
 
 Potentially sensitive organization sites and documents that Copilot in Edge can summarize could be stored in local, intranet, or cloud locations. This organization data can be exposed to an attacker who has access to the device and uses Copilot in Edge to quickly produce summarizations of documents and sites.
 
@@ -108,7 +104,6 @@ The organization data that can be summarized by Copilot in Edge can include:
 
 - Third-party cloud product sites for cloud-based SaaS apps and services that are not protected by Microsoft Purview DLP policies, MAM policies, or MDA policies
 
-
 For more information about Copilot in Edge, see:
 
 - [Copilot in Edge](/copilot/edge)
@@ -119,7 +114,7 @@ For more information about Copilot in Edge, see:
 
 Here are the sets of accessible organization data for Microsoft Copilot, which include both Graph- and Web-grounded prompts.
 
->> Add
+:::image type="content" source="../media/copilot/microsoft-copilot-accessible-organization-data-sets.svg" alt-text="Diagram of the sets of accessible organization data for Microsoft Copilot for both Graph- and Web-grounded prompts." lightbox="../media/copilot/microsoft-copilot-accessible-organization-data-sets.svg":::
  
 In the illustration, the yellow shaded blocks are for your organization data that is accessible through Copilot. Access to this data by a user through Copilot depends on the permissions to the data assigned to the user account. It can also depend on the status of the user’s device if conditional access  is configured for either the user or for access to the environment where the data resides. Following the principles of Zero Trust, this is data you want to protect in case an attacker compromises a user account or device. 
 
@@ -135,7 +130,7 @@ In the illustration, the yellow shaded blocks are for your organization data tha
 
 This figure summarizes Microsoft Copilot configurations and the resulting accessible data that Copilot uses to respond to prompts.
 
->>Add table figure
+:::image type="content" source="../media/copilot/microsoft-copilot-configurations-resulting-accessible-data-table.svg" alt-text="A table showing Microsoft Copilot configurations and the resulting accessible data for Web- and Grapg-grounded prompts." lightbox="../media/copilot/microsoft-copilot-configurations-resulting-accessible-data-table.svg":::
 
 This table includes Zero Trust recommendations for your chosen configuration. 
 
@@ -157,8 +152,8 @@ Also see:
 
 Refer to these links to learn about the various services and technologies mentioned in this article.
 
-- Copilot in Edge
-- Copilot in Edge webpage summarization behavior
-- Copilot in Windows 
-- Manage access to public web content in Microsoft Copilot for Microsoft 365 responses
-- Data, Privacy, and Security for Microsoft Copilot for Microsoft 365
+- [Copilot in Edge](/copilot/edge)
+- [Copilot in Edge webpage summarization behavior](/DeployEdge/edge-learnmore-copilot-page-summary-results)
+- [Copilot in Windows](/copilot/copilot)
+- [Manage access to public web content in Microsoft Copilot for Microsoft 365 responses](/microsoft-365-copilot/manage-public-web-access)
+- [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)

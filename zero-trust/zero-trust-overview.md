@@ -77,6 +77,15 @@ These articles help you apply the principles of Zero Trust to your workloads and
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/introduction-zero-trust-best-practice-frameworks/)
 
+**Zero Trust and the US Executive Order 14028 on Cybersecurity**
+
+[US executive order 14028, Improving the Nation's Cyber Security](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity), directs federal agencies on advancing security measures that drastically reduce the risk of successful cyberattacks against the federal government's digital infrastructure. On January 26, 2022, the [Office of Management and Budget (OMB)](https://www.whitehouse.gov/omb/) released the federal Zero Trust strategy in [memorandum 22-09](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf), in support of EO 14028. 
+
+
+>[!Note]
+>
+>Federal agencies working to adopt zero trust pricipals to meet Executive Order 14028 requirements should follow this [Zero Trust implementation guidance](https://aka.ms/ztguide)
+
 ## Next steps
 
 Use additional Zero Trust content based on a documentation set or the roles in your organization.

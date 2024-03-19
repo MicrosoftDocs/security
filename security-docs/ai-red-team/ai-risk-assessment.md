@@ -5,7 +5,7 @@ description: Best practices and guidance to secure AI systems
 ms.service: security
 ms.subservice: 
 ms.topic: how-to
-ms.date: 02/02/2024
+ms.date: 03/19/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -472,4 +472,4 @@ Controls and policies relating to the ongoing monitoring of machine learning sys
 
 If you have questions, comments or feedback, contact [atml@microsoft.com](mailto:atml@microsoft.com).
 
-[Download a PDF of this document](../../Downloads/AI_Risk_Assessment_v4.1.4.pdf) from our GitHub repository.
+[Download a PDF of this document](https://github.com/MicrosoftDocs/security/blob/main/Downloads/AI_Risk_Assessment_v4.1.4.pdf) from our GitHub repository.

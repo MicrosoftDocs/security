@@ -30,7 +30,7 @@ highlightedContent:
       itemType: concept
       url: /azure/security/fundamentals/shared-responsibility-ai
     # Card
-    - title: Microsoft AI Red Team and safer AI
+    - title: Microsoft AI Red Team
       itemType: overview
       url: /security/ai-red-team/
     # Card

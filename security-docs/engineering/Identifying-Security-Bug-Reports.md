@@ -5,12 +5,16 @@ author: TerryLanfear
 ms.author: terrylan
 manager: rkarlin
 description: Learn about Microsoft's lessons-learned from using machine learning to improve the accuracy of labeling in security bug reports (SCRs).
-ms.date: 03/06/2020
+ms.date: 03/22/2024
 ms.service: security
 ms.topic: conceptual
 ---
 
-# Identify Security Bug Reports Based Solely on Report Titles and Noisy Data
+| --- | --- |
+| Mayana Pereira| Scott Christiansen |
+| CELA Data Science | Customer Security and Trust |
+| Microsoft |Microsoft |
+
 
 <table style="text-align:left" border="0">
   

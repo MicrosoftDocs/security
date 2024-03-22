@@ -14,7 +14,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 02/13/2024
+  ms.date: 03/22/2024
 
 
 # Maximum of 8 items
@@ -32,7 +32,7 @@ highlightedContent:
     # Card
     - title: Microsoft AI Red Team and safer AI
       itemType: overview
-      url: https://www.microsoft.com/security/blog/2023/08/07/microsoft-ai-red-team-building-future-of-safer-ai/
+      url: /security/ai-red-team/
     # Card
     - title: Get started with Azure AI Services
       itemType: learn

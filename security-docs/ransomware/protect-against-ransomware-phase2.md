@@ -28,9 +28,9 @@ The more access a cybercriminal has to your organization and devices, the higher
 > [!IMPORTANT]
 > **Read ransomware prevention series, and make your organization hard to cyber attack.**
 >
->- [Have a recovery plan](../security/ransomware/ransomware/protect-against-ransomware-phase1.md)
->- [A plan to limit the harm done](../security/ransomware/ransomware/protect-against-ransomware-phase2.md)
->- [Make it hard to get in](../security/ransomware/ransomware/protect-against-ransomware-phase3.md)
+>- [Have a recovery plan](https://learn.microsoft.com/security/ransomware/protect-against-ransomware-phase1)
+>- [A plan to limit the harm done](https://learn.microsoft.com/en-us/security/ransomware/protect-against-ransomware-phase2)
+>- [Make it hard to get in](https://learn.microsoft.com/en-us/security/ransomware/protect-against-ransomware-phase3)
 
 
 ## Create a ransomware 'privileged access strategy'

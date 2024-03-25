@@ -275,7 +275,6 @@
         href: azure-infrastructure-virtual-machines.md
       - name: Azure spoke virtual networks
         href: azure-infrastructure-iaas.md
-
       - name: Azure hub virtual networks
         href: azure-infrastructure-networking.md
     - name: Spoke virtual networks with Azure PaaS services
@@ -286,6 +285,8 @@
       href: azure-virtual-wan.md
     - name: IaaS applications in AWS 
       href: secure-iaas-apps.md
+    - name: Azure networking encryption 
+      href: azure-networking-encryption.md
     - name: Use SIEM and XDR to respond to incidents
       expanded: false
       items:

@@ -28,13 +28,6 @@ Here are the links to review the three part cyber security plan:
 - [A plan to limit the harm done](../security-docs/ransomware/protect-against-ransomware-phase2.md)
 - [Make it hard to get in](../security-docs/ransomware/protect-against-ransomware-phase3.md)
 
-See these sections:
-
-- [Remote access](#remote-access)
-- [Email and collaboration](#email-and-collaboration)
-- [Endpoints](#endpoints)
-- [Accounts](#accounts)
-
 ## Remote access
 
 Gaining access to your organization's intranet through a remote access connection is an attack vector for ransomware attackers. Once an on-premises user account is compromised, an attacker is free to roam on an intranet to gather intelligence, elevate privileges, and install ransomware. The Colonial Pipeline cyberattack in 2021 is an example.

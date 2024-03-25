@@ -29,7 +29,7 @@ One thing you *must* do in advance of a ransomware attack is prepare your organi
 >- [A plan to limit the harm done](../security-docs/ransomware/protect-against-ransomware-phase2.md)
 >- [Make it hard to get in](../security-docs/ransomware/protect-against-ransomware-phase3.md)
 
-Cybercriminal ransomware attackers in control of your organization have several ways to pressure you into paying. The demands primarily focus on two categories:
+Cybercriminal ransomware attackers in control of your organization have many ways to pressure you into paying. The demands primarily focus on two categories:
 
 - **Pay a ransom to regain access**
 

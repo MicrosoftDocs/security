@@ -41,7 +41,7 @@ Any other security control you apply can easily be invalidated by an attacker wi
 
 ### Who is accountable in the program or project
 
-This table describes a privileged access strategy to stop ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+This table describes a privileged access strategy to prevent ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
 | Lead | Implementor | Accountability |
 |:-------|:-------|:-----|

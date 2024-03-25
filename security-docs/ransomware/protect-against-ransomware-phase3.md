@@ -14,7 +14,7 @@ ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
 description: How to stop ransomware attacks by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
-ms.date: 02/22/2024
+
 ---
 
 # Make it hard for ransomware attacks to get into your organization

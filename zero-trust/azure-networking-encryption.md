@@ -6,6 +6,7 @@ ms.service: security
 author: duongau
 ms.author: duau
 ms.topic: conceptual
+ms.reviwer:
 ms.collection: 
   - msftsolution-azureiaas
   - msftsolution-scenario

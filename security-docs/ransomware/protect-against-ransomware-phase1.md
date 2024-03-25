@@ -3,7 +3,6 @@ title: "Prepare for ransomware attacks with a backup and recovery plan"
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, extortionware, malicious encryption
 ms.author: dansimp
 author: dansimp
-ms.date: 03/24/2024
 f1.keywords:
 - NOCSH
 manager: dansimp
@@ -15,6 +14,7 @@ ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
 description: Prepare your organization so that you can recover from cybercriminal ransomware attacks without having to pay the ransom.
+ms.date: 03/25/2024
 
 ---
 

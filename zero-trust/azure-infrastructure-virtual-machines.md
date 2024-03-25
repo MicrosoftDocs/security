@@ -1,6 +1,6 @@
 ---
-title: Apply Zero Trust principles to virtual machines in Azure 
-description: Learn how to secure virtual machines in Azure with Zero Trust.  
+title: How do I apply Zero Trust principles to Azure virtual machines?
+description: How to apply Zero Trust principles to virtual machines in Azure.  
 ms.date: 02/12/2024
 ms.service: security
 author: sikovatc
@@ -13,9 +13,33 @@ ms.collection:
   - zerotrust-azure
 ---
 
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+To update figures that are not screen shots, your options are:
+
+- Locate the source Visio file in internal storage.
+- Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
+
+For any updates to figures, please update the corresponding posters as needed (see the "Technical publications" section of this article) and republish the Visio and PDF files in the Microsoft Download Center.
+
+For new articles in this content set, please:
+
+- Add cross-links in the "Next Steps" section FROM all the other articles in this content set TO the new article.
+- Add a link to the Zero Trust Guidance Center page (index.yml).
+- Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed.
+
+--->
+
 # Apply Zero Trust principles to virtual machines in Azure
 
-This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md#guiding-principles-of-zero-trust) to virtual machines in Azure:
+**Summary:** To apply Zero Trust principles to Azure virtual machines, you must configure logical isolation with dedicated resource groups, leverage Role Based Access Control (RBAC), secure virtual machine boot components, enable customer-managed keys and double encryption, control installed applications, configure secure access and maintenance of virtual machines, and enable advanced threat detection and protection.
+
+This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md) to virtual machines in Azure:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
@@ -31,7 +55,7 @@ Zero Trust principles for virtual machines are applied across the logical archit
 
 The following diagram the logical architecture components.
 
-:::image type="content" source="media/vm/vm-security-configure.svg" alt-text="Diagram of the virtual machine logical architecture." lightbox="media/vm/vm-security-configure.svg":::
+:::image type="content" source="media/vm/vm-security-configure.svg" alt-text="The logical architecture for applying Zero Trust to an Azure virtual machine showing a subscription, a resource group, and virtual machine components within an Entra ID tenant." lightbox="media/vm/vm-security-configure.svg":::
 
 In this diagram:
 
@@ -40,7 +64,7 @@ In this diagram:
 
 This article walks through the steps to apply the principles of Zero Trust across this logical architecture, using these steps.
 
-:::image type="content" source="media/vm/azure-infra-vm-subscription-architecture-2.svg" alt-text="Diagram of virtual machines logical architecture components." lightbox="media/vm/azure-infra-vm-subscription-architecture-2.svg":::
+:::image type="content" source="media/vm/azure-infra-vm-subscription-architecture-2.svg" alt-text="The logical architecture for applying Zero Trust to an Azure virtual machine in the five steps of this article." lightbox="media/vm/azure-infra-vm-subscription-architecture-2.svg":::
 
 | Step | Task | Zero Trust principles applied |
 | --- | --- | --- |
@@ -149,7 +173,7 @@ To configure secure access:
 - Set up multifactor authentication with conditional access
 - Use privileged access workstations (PAWs)
 
-:::image type="content" source="media/vm/azure-infra-vm-secure-access.png" alt-text="Figure for configuring secure access to a virtual machine." lightbox="media/vm/azure-infra-vm-secure-access.png":::
+:::image type="content" source="media/vm/azure-infra-vm-secure-access.png" alt-text="The logical architecture for configuring secure access to a virtual machine." lightbox="media/vm/azure-infra-vm-secure-access.png":::
 
 In the diagram:
 
@@ -164,7 +188,7 @@ In the reference architecture, [Azure Bastion](/azure/bastion/bastion-overview#k
 
 The following diagram shows the components of secure communications for virtual machines.
 
-:::image type="content" source="media/vm/azure-infra-vm-secure-comm.svg" alt-text="Diagram of secure communication for virtual machines." lightbox="media/vm/azure-infra-vm-secure-comm.svg":::
+:::image type="content" source="media/vm/azure-infra-vm-secure-comm.svg" alt-text="The components of secure communications for virtual machines within the Azure IaaS reference architecture." lightbox="media/vm/azure-infra-vm-secure-comm.svg":::
 
 ### Set up multifactor authentication with conditional access
 
@@ -174,7 +198,7 @@ When configuring multifactor authentication with conditional access and related 
 
 The following diagram shows the recommended policies for Zero Trust.
 
-:::image type="content" source="media/identity-device-access-policies-byplan.svg" alt-text="Diagram of Zero Trust identity and device access policies." lightbox="media/identity-device-access-policies-byplan.svg":::
+:::image type="content" source="media/identity-device-access-policies-byplan.svg" alt-text="Zero Trust identity and device access policies for three protection levels: Starting point, Enterprise, and Specialized security." lightbox="media/identity-device-access-policies-byplan.svg":::
 
 Remember that usernames and passwords can be 100% compromised. Using multifactor authentication, you reduce your risk of compromise by 99.9%. This requires Microsoft Entra ID P1 licenses.
 
@@ -240,7 +264,7 @@ See this additional guidance:
 
 Threat protection for Azure infrastructure is provided by Microsoft Defender for Cloud. This protection is extended to virtual machines when you provision [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction), as shown in the following diagram.
 
-:::image type="content" source="media/vm/azure-infra-vm-threat-protection.svg" alt-text="Diagram of enabling threat protection." lightbox="media/vm/azure-infra-vm-threat-protection.svg":::
+:::image type="content" source="media/vm/azure-infra-vm-threat-protection.svg" alt-text="The logical architecture showing how Microsoft Defender for Cloud along Microsoft Defender for Servers provides threat detection and protection for virtual machines." lightbox="media/vm/azure-infra-vm-threat-protection.svg":::
 
 In the diagram:
 
@@ -304,13 +328,13 @@ This poster provides a single-page, at-a-glance view of the components of Azure 
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of applying Zero Trust to Azure infrastructure services.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
+|[![Thumbnail figure for the Apply Zero Trust to Azure IaaS infrastructure poster.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated February 2023 | Use this illustration together with this article: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
 
 This poster provides the reference and logical architectures and the detailed configurations of the separate components of Zero Trust for Azure IaaS. Use the pages of this poster for separate IT departments or specialties or, with the Microsoft Visio version of the file, customize the diagrams for your infrastructure.
 
 | Item | Description |
 |:-----|:-----|
-|[![Illustration of the technical diagrams in the Zero Trust for Azure IaaS articles.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
+|[![Thumbnail figure for the Diagrams for applying Zero Trust to Azure IaaS infrastructure poster.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated February 2023 | Use these diagrams together with the articles starting here: [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md) <br/><br/>**Related solution guides** <br/> <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
 
 For additional technical illustrations, click [here](zero-trust-tech-illus.md).
   

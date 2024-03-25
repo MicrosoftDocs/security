@@ -2,6 +2,7 @@
 title: "Make it hard for ransomware attacks to happen to your organization"
 ms.author: dansimp
 author: dansimp
+ms.date: 03/24/2024
 f1.keywords:
 - NOCSH
 manager: dansimp

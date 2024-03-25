@@ -13,6 +13,25 @@ ms.collection:
 
 # Zero Trust Rapid Modernization Plan
 
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+To update figures that are not screen shots, your options are:
+
+- Locate the source Visio file in internal storage.
+- Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
+
+For new articles in this content set, please:
+
+- Add a link in the zero-trust-ramp-overview.md to the new article.
+- Add a link to the Zero Trust Guidance Center page (index.yml).
+
+--->
+
 As an alternative to [deployment guidance](./deploy/overview.md) that provides detailed configuration steps for each of the technology pillars being protected by Zero Trust principles, Rapid Modernization Plan (RaMP) guidance is based on initiatives and gives you a set of deployment paths to more quickly implement key layers of protection.
 
 RaMP guidance takes a project management and checklist approach:
@@ -46,7 +65,7 @@ Begin your Zero Trust RaMP deployment journey with [User access and productivity
 
 ## Additional Zero Trust documentation
 
-Use additional Zero Trust content based on a documentation set or your role in your organization.
+Use additional Zero Trust content based on a documentation set or the roles in your organization.
 
 ### Documentation set
 

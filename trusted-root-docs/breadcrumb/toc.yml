@@ -1,8 +1,0 @@
-items:
-- name: Security
-  tocHref: /security/
-  topicHref: /security/index
-  items:
-  - name: Trusted Root Program
-    tocHref: /security/trusted-root/
-    topicHref: /security/trusted-root/

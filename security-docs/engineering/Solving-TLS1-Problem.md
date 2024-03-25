@@ -44,7 +44,7 @@ Enterprise software developers have a strategic need to adopt more future-safe a
 implementation](https://support.microsoft.com/kb/3117336) is free
 of known security vulnerabilities. Due to the potential for future
 [protocol downgrade
-attacks](https://www.openssl.org/~bodo/ssl-poodle.pdf) and other TLS 1.0
+attacks](https://www.openssl.org/news/secadv/20141015.txt) and other TLS 1.0
 vulnerabilities not specific to Microsoft's implementation, it is
 recommended that dependencies on all security protocols older than TLS
 1.2 be removed where possible (TLS 1.1/1.0/ SSLv3/SSLv2).

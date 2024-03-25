@@ -39,7 +39,7 @@
           href: /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
         - name: Responding to ransomware attacks
           href: /microsoft-365/security/defender/playbook-responding-ransomware-m365-defender
-        - name: DART approach to ransomware
+        - name: Microsoft Incident Response team approach to ransomware
           href: incident-response-playbook-dart-ransomware-approach.md
         - name: Compromised and malicious applications
           href: incident-response-playbook-compromised-malicious-app.md
@@ -95,4 +95,17 @@
         href: /defender-cloud-apps/ops-guide/ops-guide-monthly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
       - name: Ad-hoc activities
         href: /defender-cloud-apps/ops-guide/ops-guide-ad-hoc?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
-    
+
+    - name: Microsoft Defender for Identity security operations guide
+      items:
+      - name: Operations guide overview
+        href: /defender-for-identity/ops-guide/ops-guide?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Daily activities
+        href: /defender-for-identity/ops-guide/ops-guide-daily?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Weekly activities
+        href: /defender-for-identity/ops-guide/ops-guide-weekly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Monthly activities
+        href: /defender-for-identity/ops-guide/ops-guide-monthly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+      - name: Quarterly / ad hoc activities
+        href: /defender-for-identity/ops-guide/ops-guide-quarterly?bc=%2fsecurity%2foperations%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2foperations%2ftoc.json
+

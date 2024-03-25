@@ -2,6 +2,7 @@
 title: "Limit the impact that ransomware attacks can have"
 ms.author: dansimp
 author: dansimp
+ms.date: 03/24/2024
 f1.keywords:
 - NOCSH
 manager: dansimp

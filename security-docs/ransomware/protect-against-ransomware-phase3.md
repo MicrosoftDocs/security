@@ -14,7 +14,7 @@ ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
 description: How to stop ransomware attacks by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
-ms.date: 02/22/2024
+
 ---
 
 # Make it hard for ransomware attacks to get into your organization
@@ -31,7 +31,7 @@ Here are the links to review the three part cyber security plan:
 
 ## Remote access
 
-Gaining access to your organization's intranet through a remote access connection is an attack vector for ransomware attackers. Once an on-premises user account is compromised, an attacker is free to roam on an intranet to gather intelligence, elevate privileges, and install ransomware. The Colonial Pipeline cyberattack in 2021 is an example.
+Getting access to your organization's intranet through a remote access connection is an attack vector for ransomware attackers. Once an on-premises user account is compromised, an attacker is free to roam on an intranet to gather intelligence, elevate privileges, and install ransomware. The Colonial Pipeline cyberattack in 2021 is an example.
 
 ### Program and project member accountabilities for remote access
 

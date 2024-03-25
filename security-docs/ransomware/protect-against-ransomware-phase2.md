@@ -14,7 +14,7 @@ ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
 description: How to prevent ransomware attacks by protecting privileged roles in your organization and limiting the scope of damage a cybercriminal attacker can do.
-ms.date: 02/22/2024
+
 ---
 
 # Limit the scope and impact of ransomware attacks
@@ -41,7 +41,7 @@ Any other security control you apply can easily be invalidated by an attacker wi
 
 ### Who is accountable in the program or project
 
-This table describes a privileged access strategy to stop ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+This table describes a privileged access strategy to prevent ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
 | Lead | Implementor | Accountability |
 |:-------|:-------|:-----|

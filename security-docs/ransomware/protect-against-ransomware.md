@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: cxdef-zt-ransomware
 description:  Learn how to protect against ransomware cybercriminals by quickly configuring ransomware prevention for your organization. Get started today!
 ms.date: 03/25/2024
+
 ---
 
 # Quickly protect your organization against ransomware attacks

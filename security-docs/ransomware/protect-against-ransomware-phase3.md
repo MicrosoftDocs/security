@@ -2,7 +2,6 @@
 title: "Make it hard for ransomware attacks to happen to your organization"
 ms.author: dansimp
 author: dansimp
-ms.date: 03/24/2024
 f1.keywords:
 - NOCSH
 manager: dansimp
@@ -14,12 +13,12 @@ ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
 description: How to stop ransomware attacks by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
-
+ms.date: 03/25/2024
 ---
 
 # Make it hard for ransomware attacks to get into your organization
 
-In this phase, you make the attackers work *harder* to get into your on-premises or cloud systems, by gradually removing risks at the points of entry.
+In this phase, you make the attackers work *harder* to get into your on-premises or cloud systems by gradually removing risks at the points of entry.
 
 While many of these changes will be familiar and easy to do, **it's extremely important that your work on this part of the strategy not slow your progress on the other to critically important parts!**
 

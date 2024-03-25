@@ -25,9 +25,9 @@ While many of these changes will be familiar and easy to do, **it's extremely im
 
 Here are the links to review the three part cyber security plan:
 
-- [Have a recovery plan](https://learn.microsoft.com/security/ransomware/protect-against-ransomware-phase1)
-- [A plan to limit the harm done](https://learn.microsoft.com/en-us/security/ransomware/protect-against-ransomware-phase2)
-- [Make it hard to get in](https://learn.microsoft.com/en-us/security/ransomware/protect-against-ransomware-phase3)
+- [Have a recovery plan](../ransomware/protect-against-ransomware-phase1)
+- [A plan to limit the harm done](../security/ransomware/protect-against-ransomware-phase2)
+- [Make it hard to get in](../security/ransomware/protect-against-ransomware-phase3)
 
 ## Remote access
 

@@ -20,11 +20,11 @@ ms.date: 02/22/2024
 
 Ransomware is a cyber attack type that cybercriminals use to extort organizations large and small.
 
-Understanding how to protect against ransomware attacks and minizmize damage is an important part of safguarding your company. This article gives you practical guidance for how to quickly configure ransomware protection.  
+Understanding how to protect against ransomware attacks and minimized damage is an important part of safeguarding your company. This article gives you practical guidance for how to quickly configure ransomware protection.  
 
 The guidance is organized into steps, starting with the most urgent actions to take.
 
-Each step is a separate article linked below. Bookmark this page as your starting point. 
+Bookmark this page as your starting point for the steps. 
 
 > [!NOTE]
 > What is ransomware? See the ransomware definition [here](/security/compass/human-operated-ransomware).
@@ -40,19 +40,19 @@ Each step is a separate article linked below. Bookmark this page as your startin
 
 1. **Stick with the recommended priorities**
 
-    Use the steps as a starting plan for what to do first, next, and later, so you get the most impactful elements first. These recommendations have been prioritized using the [Zero Trust](https://www.microsoft.com/security/business/zero-trust) principle of *assuming a breach*. This forces you to focus on minimizing business risk by assuming the attackers can successfully gain access to your environment through one or more methods.
+    Use the steps as a starting plan for what to do first, next, and later, so you get the most impactful elements first. These recommendations are prioritized using the [Zero Trust](https://www.microsoft.com/security/business/zero-trust) principle of *assuming a breach*. This forces you to focus on minimizing business risk by assuming the attackers can successfully gain access to your environment through one or more methods.
 
 2. **Be proactive and flexible (but ***don’t skip important tasks***)**
 
-    Scan through the implementation checklists for all sections of all three steps to see if there are any areas and tasks that you can quickly *complete earlier* (e.g. already have access to a cloud service that hasn’t been utilized but could be quickly and easily configured). As you look over the whole plan, be very careful that *these later areas and tasks don’t delay completion* of critically important areas like backups and privileged access!
+    Scan through the implementation checklists for all sections of all three steps to see if there are any areas and tasks that you can quickly *complete earlier*. In other words, things you can do faster because you already have access to a cloud service that hasn’t been used but could be quickly and easily configured. As you look over the whole plan, be careful that *these later areas and tasks don’t delay completion* of critically important areas like backups and privileged access!
 
 3. **Do some items in parallel**
 
-    Trying to do everything at once can be overwhelming, but some items can naturally be done in parallel. Staff on different teams can be working on tasks at the same time (e.g. backup team, endpoint team, identity team), while also driving for completion of the steps in priority order.
+    Trying to do everything at once can be overwhelming, but some items can naturally be done in parallel. Staff on different teams can be working on tasks at the same time (for example, backup team, endpoint team, identity team), while also driving for completion of the steps in priority order.
 
 The items in the implementation checklists are in the recommended order of prioritization, not a technical dependency order.
 
-Use the checklists to confirm and modify your existing configuration as needed and in a way that works in your organization. For example, in the most important backup element, you backup some systems, but they may not be offline/immutable, or you may not test the full enterprise restore procedures, or you may not have backups of critical business systems or critical IT systems like Active Directory Domain Services (AD DS) domain controllers.
+Use the checklists to confirm and modify your existing configuration as needed and in a way that works in your organization. For example, in the most important backup element, your backup some systems, but they may not be offline/immutable, or you may not test the full enterprise restore procedures, or you may not have backups of critical business systems or critical IT systems like Active Directory Domain Services (AD DS) domain controllers.
 
 >[!Note]
 >See the [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/) Microsoft security blog post for an additional summary of this process.

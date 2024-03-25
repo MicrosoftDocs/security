@@ -13,6 +13,25 @@ ms.collection:
 
 # RaMP checklist — Data protection
 
+<!---
+
+Writers notes:
+
+For updates to product names, please also update the appropriate figures.
+
+To update figures that are not screen shots, your options are:
+
+- Locate the source Visio file in internal storage.
+- Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
+
+For new articles in this content set, please:
+
+- Add a link in the zero-trust-ramp-overview.md to the new article.
+- Add a link to the Zero Trust Guidance Center page (index.yml).
+
+--->
+
 This Rapid Modernization Plan (RaMP) checklist helps you protect your on-premises and cloud data from both inadvertent and malicious access. 
 
 - Inadvertent access occurs when a user gains access to data that, based on their roles and responsibilities, they should not have. The result can be unintended data leakage, data destruction, or violations of data security and privacy regulations.
@@ -95,7 +114,7 @@ Perform these implementation steps to meet the **Protect your data** deployment 
 | <input type="checkbox" /> | 3. Enable and configure Microsoft Defender for Cloud Apps. | Data Security Engineer | [Get started](/defender-cloud-apps/get-started) |
 | <input type="checkbox" /> | 4. Discover, label, and protect sensitive items that reside in data stores in the cloud.  | Data Security Engineer | [Best practices](/defender-cloud-apps/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud) |
 | <input type="checkbox" /> | 5. Discover, label, and protect sensitive items that reside in on-premises data stores. | Data Security Engineer | [Information protection scanner](/purview/deploy-scanner-configure-install) |
-| <input type="checkbox" /> | 6. Extend your sensitivity labels to Azure resources Azure Purview | Data Security Engineer | [Labeling in the Microsoft Purview Data Map](/purview/create-sensitivity-label) |
+| <input type="checkbox" /> | 6. Extend your sensitivity labels to Azure by using Microsoft Purview Data Map | Data Security Engineer | [Labeling in the Microsoft Purview Data Map](/purview/create-sensitivity-label) |
 
 <a id="prevent"></a>
 ### 3. Prevent data loss

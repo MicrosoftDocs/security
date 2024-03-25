@@ -5,7 +5,7 @@ keywords: app consent grant, investigation, attack, illicit consent grant, micro
 search.product: DART
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.custom: has-azure-ad-ps-ref
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -61,6 +61,8 @@ Ensure you complete the following installations and configuration requirements:
 1. The AzureAD PowerShell module is installed.
 2. You have global administrator rights on the tenant that the script run against.
 3. You're assigned local administrator role on the computer that you use to run the scripts.
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../security-docs/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 #### Install the AzureAD module
 
@@ -166,7 +168,7 @@ For more information, see:
 
 There are thousands (at least) of permissions in the system, and not feasible to list out or parse all of these. The following list addresses commonly misused permissions and others that would create catastrophic impact if misused.
 
-At a high level, DART has observed the following "root" delegated (App+User) permissions being misused in consent phishing attacks. Root equates to the top level. For example, *Contacts.\** means to include all delegated permutations of Contacts permissions: *Contacts.Read*, *Contacts.ReadWrite*, *Contacts.Read.Shared*, and *Contacts.ReadWrite.Shared*.
+At a high level, Microsoft has observed the following "root" delegated (App+User) permissions being misused in consent phishing attacks. Root equates to the top level. For example, *Contacts.\** means to include all delegated permutations of Contacts permissions: *Contacts.Read*, *Contacts.ReadWrite*, *Contacts.Read.Shared*, and *Contacts.ReadWrite.Shared*.
 
 1. *Mail.\* (including Mail.Send\*, but not Mail.ReadBasic\*)*
 2. *Contacts. \**
@@ -179,7 +181,7 @@ At a high level, DART has observed the following "root" delegated (App+User) per
 
 The first seven permissions in the list above are for Microsoft Graph and the "legacy" API equivalents, such as Azure Active Directory (Azure AD) Graph and Outlook REST. The eighth permission is for Azure Resource Manager (ARM) and could also be dangerous on any API that exposes sensitive data with this blanket impersonation scope.
 
-Based on DART's observations, attackers use a combination of the first six permissions in 99% of the consent phishing attacks. Most people don't think of the delegated version of *Mail.Read* or *Files.Read* as a high-risk permission, however, the attacks DART has seen are generally widespread attacks targeting end users, rather than spear phishing against admins who can actually consent to the dangerous permissions. It's recommended to bubble apps with these "critical" level of impact permissions. Even if the applications don't have malicious intent, and if a bad actor were to compromise the app identity, then your entire organization could be at risk.
+Based on Microsoft Incident Response team's observations, attackers use a combination of the first six permissions in 99% of the consent phishing attacks. Most people don't think of the delegated version of *Mail.Read* or *Files.Read* as a high-risk permission, however, the attacks are generally widespread attacks targeting end users, rather than spear phishing against admins who can actually consent to the dangerous permissions. It's recommended to bubble apps with these "critical" level of impact permissions. Even if the applications don't have malicious intent, and if a bad actor were to compromise the app identity, then your entire organization could be at risk.
 
 **For the highest risk impact permissions, start here:**
 
@@ -564,7 +566,7 @@ Examine guidance for identifying and investigating these additional types of att
 
 - [Phishing](incident-response-playbook-phishing.md)
 - [Password spray](incident-response-playbook-password-spray.md)
-- [Microsoft DART ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
+- [Microsoft Incident Response ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
 
 ## Incident response resources
 
@@ -573,3 +575,6 @@ Examine guidance for identifying and investigating these additional types of att
 - [Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview) incident response
 - [Microsoft Defender for Cloud (Azure)](/azure/defender-for-cloud/managing-and-responding-alerts)
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
+- [Microsoft Incident Response team guide shares best practices for security teams and leaders](https://www.microsoft.com/security/blog/2023/12/11/new-microsoft-incident-response-team-guide-shares-best-practices-for-security-teams-and-leaders/)
+- [Microsoft Incident Response guides help security teams analyze suspicious activity](https://www.microsoft.com/security/blog/2024/01/17/new-microsoft-incident-response-guides-help-security-teams-analyze-suspicious-activity/)
+

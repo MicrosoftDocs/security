@@ -1,5 +1,5 @@
 ---
-title: "Protect against ransomware step 2: Limit the scope of ransomware damage"
+title: "Limit the impact that ransomware attacks can have"
 ms.author: dansimp
 author: dansimp
 f1.keywords:
@@ -12,17 +12,25 @@ localization_priority: Normal
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
-description: How to prevent ransomware by protecting privileged roles in your organization and limiting the scope of damage a cybercriminal attacker can do.
+description: How to prevent ransomware attacks by protecting privileged roles in your organization and limiting the scope of damage a cybercriminal attacker can do.
 ms.date: 02/22/2024
 ---
 
-# Protect against ransomware step 2: Limit the scope of ransomware damage
+# Limit the scope and impact of ransomware attacks
 
-The next step to prevent ransomware is to *protect privileged roles* -- the kind of jobs where people handle a lot of privileged information in an organization. 
+The next step to prevent ransomware attacks is to *protect privileged roles* -- the kind of jobs where people handle a lot of privileged information in an organization. 
 
 This phase of ransomware prevention aims to prevent cybercriminal attackers from getting a lot of access to your systems.
 
 The more access a cybercriminal has to your organization and devices, the higher the potential damage to your data and systems.
+
+> [!IMPORTANT]
+> **Read ransomware prevention series, and make your organization hard to cyber attack.**
+>
+>- [Have a recovery plan](../security-docs/ransomware/protect-against-ransomware-phase1.md)
+>- [A plan to limit the harm done](../security-docs/ransomware/protect-against-ransomware-phase2.md)
+>- [Make it hard to get in](../security-docs/ransomware/protect-against-ransomware-phase3.md)
+
 
 ## Create a ransomware 'privileged access strategy'
 

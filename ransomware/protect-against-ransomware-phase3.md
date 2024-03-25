@@ -1,5 +1,5 @@
 ---
-title: "Protect against ransomware Phase 3: Make it hard for ransomware cybercriminals to get into your organization"
+title: "Make it hard for ransomware attacks to happen to your organization"
 ms.author: dansimp
 author: dansimp
 f1.keywords:
@@ -12,17 +12,21 @@ localization_priority: Normal
 ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
-description: How to stop ransomware by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
+description: How to stop ransomware attacks by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
 ms.date: 02/22/2024
 ---
 
-# Protect against ransomware step 3: Make it hard for ransomware cybercriminals to get into your organization
+# Make it hard for ransomware attacks to get into your organization
 
-In this phase, you make the attackers work a lot harder to get into your on-premises or cloud systems by gradually removing the risks at the points of entry.
+In this phase, you make the attackers work *harder* to get into your on-premises or cloud systems, by gradually removing risks at the points of entry.
 
->[!Important]
->While many of these will be familiar and easy to quickly accomplish, it’s critically important that **your work on Phase 3 should not slow down your progress on phases 1 and 2**!
->
+While many of these changes will be familiar and easy to do, **it's extremely important that your work on this part of the strategy not slow your progress on the other to critically important parts!**
+
+Here are the links to review the three part cyber security plan:
+
+- [Have a recovery plan](../security-docs/ransomware/protect-against-ransomware-phase1.md)
+- [A plan to limit the harm done](../security-docs/ransomware/protect-against-ransomware-phase2.md)
+- [Make it hard to get in](../security-docs/ransomware/protect-against-ransomware-phase3.md)
 
 See these sections:
 

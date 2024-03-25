@@ -22,7 +22,12 @@ In fact, ransomware is a type of malware or phishing cyber security attack that 
 
 Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But, even when paid, cybercriminals *may never* give the key to the business or device owner, and stop access *permanently*.
 
-[Protect your organization against ransomware and extortion](protect-against-ransomware.md) to configure your IT infrastructure for the best ransomware protection.
+> [!IMPORTANT]
+> **Read ransomware prevention series, and make your organization hard to cyber attack.**
+>
+>- [Have a recovery plan](../security-docs/ransomware/protect-against-ransomware-phase1.md)
+>- [A plan to limit the harm done](../security-docs/ransomware/protect-against-ransomware-phase2.md)
+>- [Make it hard to get in](../security-docs/ransomware/protect-against-ransomware-phase3.md)
 
 ## How do ransomware attacks work?
 

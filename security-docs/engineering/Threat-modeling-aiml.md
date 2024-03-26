@@ -9,7 +9,7 @@ ms.author: terrylan
 manager: rkarlin
 ms.date: 11/11/2019
 ms.topic: article
-ms.prod: security
+ms.service: security
 ---
 
 # Threat Modeling AI/ML Systems and Dependencies

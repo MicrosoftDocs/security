@@ -5,7 +5,7 @@ keywords: app consent grant, investigation, attack, illicit consent grant, micro
 search.product: DART
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.custom: has-azure-ad-ps-ref
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -61,6 +61,8 @@ Ensure you complete the following installations and configuration requirements:
 1. The AzureAD PowerShell module is installed.
 2. You have global administrator rights on the tenant that the script run against.
 3. You're assigned local administrator role on the computer that you use to run the scripts.
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../security-docs/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 #### Install the AzureAD module
 

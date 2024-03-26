@@ -45,8 +45,8 @@
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-Security",
       "breadcrumb_path": "/security/breadcrumb/toc.json",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/security"
+      "feedback_system": "Standard",
+      "feedback_help_link_type": "get-help-at-qna"
     },
     "fileMetadata": {
       "titleSuffix": {

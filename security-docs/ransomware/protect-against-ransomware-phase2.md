@@ -2,6 +2,7 @@
 title: "Limit the impact that ransomware attacks can have"
 ms.author: dansimp
 author: dansimp
+ms.date: 03/25/2024
 f1.keywords:
 - NOCSH
 manager: dansimp
@@ -13,7 +14,7 @@ ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
 description: How to prevent ransomware attacks by protecting privileged roles in your organization and limiting the scope of damage a cybercriminal attacker can do.
-ms.date: 03/25/2024
+
 ---
 
 # Limit the scope and impact of ransomware attacks

@@ -22,40 +22,34 @@ In fact, ransomware is a type of malware or phishing cyber security attack that 
 
 Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But, even when paid, cybercriminals *may never* give the key to the business or device owner, and stop access *permanently*.
 
-> [!IMPORTANT]
-> **Read ransomware prevention series, and make your organization hard to cyber attack.**
->
->- [Have a recovery plan](../security-docs/ransomware/protect-against-ransomware-phase1.md)
->- [A plan to limit the harm done](../security-docs/ransomware/protect-against-ransomware-phase2.md)
->- [Make it hard to get in](../security-docs/ransomware/protect-against-ransomware-phase3.md)
 
 ## How do ransomware attacks work?
 
-Ransomware can be automated, or involve human hands on a keyboard -- a *human operated* attack.
+Ransomware can be automated, or involve human hands on a keyboard--a *human operated* attack.
 
 ### Automated ransomware attacks
 
-*Commodity ransomware attacks* are usually automated. These cyber attacks can spread like a virus, infect devices through methods like email phishing and malware delivery, and require malware remediation.
+*Commodity ransomware attacks* are often automated. These cyber attacks can spread like a virus, infect devices through methods like email phishing and malware delivery, and require malware remediation.
 
-That means one ransomware prevention technique is to safeguard your email with a system like 
-[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/) that protects against malware and phishing delivery, [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/) to automatically detect and block suspicious activity on your devices, and [Microsoft Defender XDR](/microsoft-365/security/defender/) to detect malware and phishing attempts *early*.
+That means one ransomware prevention technique is to safeguard your email system with 
+[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/) that protects against malware and phishing delivery. [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/) works alongside Defender for Office 365 to automatically detect and block suspicious activity on your devices, while [Microsoft Defender XDR](/microsoft-365/security/defender/) detects malware and phishing attempts *early*.
 
 ### Human-operated ransomware attacks
 
 *Human-operated ransomware* is the result of an **active attack** by cybercriminals that infiltrate an organization's on-premises or cloud IT infrastructure, elevate their privileges, and deploy ransomware to critical data.
 
-These "hands-on-keyboard" attacks usually target organizations rather than a single devices.
+These "hands-on-keyboard" attacks usually target organizations rather than a single device.
 
-*Human-operated* also means there is a human attacker using their insights into common system and security misconfigurations to infiltrate the organization, navigate the network, and adapt to the environment and its weaknesses as they go.
+*Human-operated* also means there's a human attacker using their insights into common system and security misconfigurations. The goal is to infiltrate the organization, navigate the network, and adapt to the environment and its weaknesses.
 
-Hallmarks of these human-operated ransomware attacks typically include **credential theft** and **lateral movement** with a elevation of the privileges in stolen accounts.
+Hallmarks of these human-operated ransomware attacks typically include **credential theft** and **lateral movement** with an elevation of the privileges in stolen accounts.
 
 Activities might take place during maintenance windows and involve security configuration gaps discovered by cybercriminals. The goal is the **deployment of a ransomware payload** to whatever *high business impact resources* the attackers choose.
 
 > [!IMPORTANT]
 > These attacks can be *catastrophic* to business operations and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware that usually only requires malware remediation, **human-operated ransomware will continue to threaten your business operations after the initial encounter**.
 
-The graphic below shows how extortion-based attacks are growing in impact and likelihood.
+This graphic shows how extortion-based attacks are growing in impact and likelihood.
 
 [The impact and likelihood that human-operated ransomware attacks will continue](media/human-operated-ransomware/ransomware-extortion-based-attack.png)
 

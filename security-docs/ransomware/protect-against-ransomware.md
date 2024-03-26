@@ -2,6 +2,7 @@
 title: "Get started quickly configuring ransomware prevention so you can stop ransomware cybercriminals from targeting your organization."
 ms.author: dansimp
 author: dansimp
+ms.date: 03/25/2024
 f1.keywords:
 - NOCSH
 manager: dansimp
@@ -13,7 +14,7 @@ ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
 description:  Learn how to protect against ransomware cybercriminals by quickly configuring ransomware prevention for your organization. Get started today!
-ms.date: 03/25/2024
+
 
 ---
 
@@ -26,6 +27,13 @@ Understanding how to protect against ransomware attacks and minimized damage is 
 The guidance is organized into steps, starting with the most urgent actions to take.
 
 Bookmark this page as your starting point for the steps. 
+
+> [!IMPORTANT]
+> **Read the ransomware prevention series, and make your organization hard to cyber attack.**
+>
+>- [Have a recovery plan](protect-against-ransomware-phase1.md)
+>- [A plan to limit the harm done](protect-against-ransomware-phase2.md)
+>- [Make it hard to get in](protect-against-ransomware-phase3.md)
 
 > [!NOTE]
 > What is ransomware? See the ransomware definition [here](/security/compass/human-operated-ransomware).

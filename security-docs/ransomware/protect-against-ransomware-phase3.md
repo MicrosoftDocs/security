@@ -1,7 +1,8 @@
 ---
-title: "Protect against ransomware Phase 3: Make it hard for ransomware cybercriminals to get into your organization"
+title: "Make it hard for ransomware attacks to happen to your organization"
 ms.author: dansimp
 author: dansimp
+ms.date: 03/25/2024
 f1.keywords:
 - NOCSH
 manager: dansimp
@@ -12,28 +13,27 @@ localization_priority: Normal
 ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
-description: How to stop ransomware by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
-ms.date: 02/22/2024
+description: How to stop ransomware attacks by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
+
 ---
 
-# Protect against ransomware step 3: Make it hard for ransomware cybercriminals to get into your organization
+# Make it hard for ransomware attacks to get into your organization
 
-In this phase, you make the attackers work a lot harder to get into your on-premises or cloud systems by gradually removing the risks at the points of entry.
+In this phase, you make the attackers work *harder* to get into your on-premises or cloud systems by gradually removing risks at the points of entry.
 
->[!Important]
->While many of these will be familiar and easy to quickly accomplish, it’s critically important that **your work on Phase 3 should not slow down your progress on phases 1 and 2**!
->
+While many of these changes will be familiar and easy to do, **it's extremely important that your work on this part of the strategy not slow your progress on the other to critically important parts!**
 
-See these sections:
+Here are the links to review the three part cyber security plan:
 
-- [Remote access](#remote-access)
-- [Email and collaboration](#email-and-collaboration)
-- [Endpoints](#endpoints)
-- [Accounts](#accounts)
+- [Have a recovery plan](protect-against-ransomware-phase1.md)
+- [A plan to limit the harm done](protect-against-ransomware-phase2.md)
+- [Make it hard to get in](protect-against-ransomware-phase3.md)
 
 ## Remote access
 
-Gaining access to your organization's intranet through a remote access connection is an attack vector for ransomware attackers. Once an on-premises user account is compromised, an attacker is free to roam on an intranet to gather intelligence, elevate privileges, and install ransomware. The Colonial Pipeline cyberattack in 2021 is an example.
+Getting access to your organization's intranet through a remote access connection is an attack vector for ransomware attackers.
+
+Once an on-premises user account is compromised, an attacker is free to roam on an intranet to gather intelligence, elevate privileges, and install ransomware. The Colonial Pipeline cyberattack in 2021 is an example.
 
 ### Program and project member accountabilities for remote access
 

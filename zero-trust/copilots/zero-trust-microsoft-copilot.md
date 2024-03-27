@@ -94,7 +94,9 @@ The organization data that can be summarized by Copilot in Edge can include:
 - Intranet resources
 
    PDFs or sites for internal apps and services that are not protected by Microsoft Purview DLP policies, MAM policies, or MDM policies
+
 - Microsoft 365 sites that are not protected by Microsoft Purview DLP policies, MAM policies, or MDM policies
+
 - Microsoft Azure resources
 
    PDFs on virtual machines or sites for SaaS apps that are not protected by Microsoft Purview DLP policies, MAM policies, or MDM policies
@@ -111,6 +113,8 @@ For more information about Copilot in Edge, see:
 
 - [Copilot in Edge](/copilot/edge)
 - [Copilot in Edge webpage summarization behavior](/DeployEdge/edge-learnmore-copilot-page-summary-results)
+
+This illustration shows the the data sets available to Microsoft Copilot in Edge with browser summarization enabled.
 
 :::image type="content" source="../media/copilot/microsoft-copilot-edge-data-sets.svg" alt-text="Diagram of the data sets available to Microsoft Copilot in Edge." lightbox="../media/copilot/microsoft-copilot-edge-data-sets.svg":::
 

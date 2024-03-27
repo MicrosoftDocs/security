@@ -52,12 +52,13 @@ This article walks through the security recommendations that apply in four stage
 
 The simplest configuration of Copilot provides AI assistance with web-grounded prompts. 
 
->> ADD
- 
+
+:::image type="content" source="../media/copilot/microsoft-365-copilot-web-grounded-prompts.svg" alt-text="Diagram of Copilot for Microsoft 365 and the processing of Web-grounded prompts." lightbox="../media/copilot/microsoft-365-copilot-web-grounded-prompts.svg":::
+
 In the illustration:
 
 - Users can interact with Copilot through Windows, Bing, the Edge browser, and the Copilot mobile app.
-- 	Prompts are Web-grounded. Copilot uses publicly available data to respond to prompts.
+- Prompts are Web-grounded. Copilot uses publicly available data to respond to prompts.
 
 With this configuration, your organization data isn’t included in the scope of data that Copilot references. 
 

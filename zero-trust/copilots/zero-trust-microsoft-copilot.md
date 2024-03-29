@@ -22,11 +22,11 @@ ms.collection:
 ## Introduction
 --->
 
-Microsoft Copilot or Copilot is an AI companion in Windows, Edge, Bing, and the Copilot mobile app. This article helps you implement security protections to keep your organization and data safe while using Copilot. By implementing these protections, you are building a foundation of Zero Trust.
+Microsoft Copilot or Copilot is an AI companion in coplilot.microsoft.com, Windows, Edge, Bing, and the Copilot mobile app. This article helps you implement security protections to keep your organization and data safe while using Copilot. By implementing these protections, you are building a foundation of Zero Trust.
 
 Zero Trust security recommendations for Copilot focus on protection for user accounts, user devices, and the data that is in scope for the way you configure Copilot.
 
-Copilot can be introduced in stages, from allowing web-grounded prompts to the Internet to allowing both web-grounded and Microsoft 365 Graph-grounded prompts to both the Internet and to your organization data. This article helps you understand the scope of each configuration and, consequently, the recommendations for preparing your environment with appropriate security protections.
+You can introduce Copilot in stages, from allowing Web-grounded prompts to the Internet to allowing both Web-grounded and Microsoft 365 Graph-grounded prompts to both the Internet and to your organization data. This article helps you understand the scope of each configuration and, consequently, the recommendations for preparing your environment with appropriate security protections.
 
 ## How does Zero Trust help with AI?
 
@@ -52,13 +52,12 @@ This article walks through the security recommendations that apply in four stage
 
 The simplest configuration of Copilot provides AI assistance with web-grounded prompts. 
 
-
-:::image type="content" source="../media/copilot/microsoft-365-copilot-web-grounded-prompts.svg" alt-text="Diagram of Copilot for Microsoft 365 and the processing of Web-grounded prompts." lightbox="../media/copilot/microsoft-365-copilot-web-grounded-prompts.svg":::
+:::image type="content" source="../media/copilot/microsoft-copilot-web-grounded-prompts.svg" alt-text="Diagram of Copilot for Microsoft and the processing of Web-grounded prompts." lightbox="../media/copilot/microsoft-copilot-web-grounded-prompts.svg":::
 
 In the illustration:
 
-- Users can interact with Copilot through Windows, Bing, the Edge browser, and the Copilot mobile app.
-- Prompts are Web-grounded. Copilot uses publicly available data to respond to prompts.
+- Users can interact with Copilot through copilot.microsoft.com, Windows, Bing, the Edge browser, and the Copilot mobile app.
+- Prompts are Web-grounded. Copilot only uses publicly available data to respond to prompts.
 
 With this configuration, your organization data isn’t included in the scope of data that Copilot references. 
 
@@ -67,11 +66,24 @@ Use this stage to implement identity and access policies for users and devices t
 - [Multifactor authentication for all users](zero-trust-microsoft-365-copilot.md#step-2-deploy-or-validate-your-identity-and-access-policies)
 - [Trusted and healthy devices](zero-trust-microsoft-365-copilot.md#step-4-deploy-or-validate-your-device-management-and-protection)
 
+### Additional recommendations for Microsoft 365 E3
+
+- For user account authentication and access, also configure the identity and access policies to [Block clients that don’t support modern authentication](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common?view=o365-worldwide#block-clients-that-dont-support-multifactor-authentication).
+- [Use Windows protection capabilities](zero-trust-microsoft-365-copilot.md#windows-protection-capabilities). 
+
+### Additional recommendations for Microsoft 365 E5
+
+Implement the recommendations for E3 and configure the following identity and access policies:
+
+- [Require MFA when sign-in risk is medium or high](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common?view=o365-worldwide#require-mfa-based-on-sign-in-risk)
+- [High risk users must change their password](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common?view=o365-worldwide#high-risk-users-must-change-password)
+
+
 ## Stage 2. Add security protections for Edge browser summarization
 
 From the Microsoft Edge sidebar, Microsoft Copilot helps you get answers and inspirations from across the web and, if enabled, from some types of information displayed in open browser tabs.
 
-:::image type="content" source="../media/copilot/microsoft-copilot-edge-data-sets.svg" alt-text="Diagram of the data sets available to Microsoft Copilot in Edge." lightbox="../media/copilot/microsoft-copilot-edge-data-sets.svg":::
+:::image type="content" source="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg" alt-text="Diagram of the data sets available to Microsoft Copilot in Edge." lightbox="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg":::
 
 Here are some examples of private or organization web pages and document types that Copilot in Edge can summarize:
 
@@ -114,9 +126,16 @@ For more information about Copilot in Edge, see:
 - [Copilot in Edge](/copilot/edge)
 - [Copilot in Edge webpage summarization behavior](/DeployEdge/edge-learnmore-copilot-page-summary-results)
 
-This illustration shows the the data sets available to Microsoft Copilot in Edge with browser summarization enabled.
+This illustration shows the data sets available to Microsoft Copilot in Edge with browser summarization enabled.
 
 :::image type="content" source="../media/copilot/microsoft-copilot-edge-data-sets.svg" alt-text="Diagram of the data sets available to Microsoft Copilot in Edge." lightbox="../media/copilot/microsoft-copilot-edge-data-sets.svg":::
+
+### Recommendations for E3 and E5
+
+- Implement Intune [app protection policies (APP)](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common?view=o365-worldwide#app-protection-policies) for data protection. APP can prevent the inadvertent or intentional copying of Copilot-generated content to apps on a device that aren’t included in the list of permitted apps. APP can limit the blast radius of an attacker using a compromised device.
+
+- Turn on [Microsoft Defender for Office 363 Plan 1](https://learn.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-office-365-overview), which include Exchange Online Protection (EOP) for Safe Attachments, Safe Links, advanced phishing thresholds and impersonation protection, and real-time detections.
+
 
 ## Stage 3. Complete security protections recommended for Copilot for Microsoft 365
 
@@ -130,6 +149,31 @@ Copilot for Microsoft 365 can use the following data sets to process Graph-groun
 
 For more information, see [Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md).
 
+### Recommendations for E3
+
+Implement the following:
+
+- [Intune device management and device compliance requirement policies](https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-microsoft-365-copilot?view=o365-worldwide#step-4-deploy-or-validate-your-device-management-and-protection)
+- [Data protection in your Microsoft 365 tenant](https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-microsoft-365-copilot?view=o365-worldwide#step-1-deploy-or-validate-your-data-protection)
+
+   - Sensitivity labels
+
+   - Data Loss Prevention (DLP) policies
+
+   - Retention policies
+
+- [Turn on Microsoft Defender for Endpoint](https://learn.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-endpoint-overview)
+
+### Recommendations for E5
+
+Implement the recommendations for E3 and the following:
+
+ - Use a greater range of classifiers to find sensitive info.
+- Automate your retention labels.
+- Try out the Plan [2 capabilities in Defender for Office 365](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/mdo-about?view=o365-worldwide#what-is-the-difference-between-plan-1-and-plan-2-defender-for-office-365), which include post-breach investigation, hunting, and response, automation, and simulation.
+- Turn on [Microsoft Defender for Cloud Apps](https://learn.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-mcas-overview).
+- Configure Defender for Cloud Apps to [discover cloud apps and monitor and audit their behavior](https://learn.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-mcas-architecture#discovering-cloud-apps).
+
 ## Stage 4. Maintain security protections while you use Microsoft Copilot and Copilot for Microsoft 365 together
 
 With a license for Copilot for Microsoft 365, you will see a **Work/Web** toggle control in the Edge browser, Windows, and Bing search that allows you to switch between using:
@@ -137,9 +181,9 @@ With a license for Copilot for Microsoft 365, you will see a **Work/Web** toggle
 - Graph-grounded prompts that are sent to Copilot for Microsoft 365 (toggle set to **Work**).
 - Web-grounded prompts that primarily use internet data (toggle set to **Web**).
 
-Here’s an example for Microsoft Bing.
+Here’s an example for copilot.microsoft.com.
 
-:::image type="content" source="../media/copilot/microsoft-copilot-example-microsoft-bing.png" alt-text="Example screenshot of Microsoft Copilot for Microsoft Bing." lightbox="../media/copilot/microsoft-copilot-example-microsoft-bing.png":::
+:::image type="content" source="../media/copilot/microsoft-copilot-example-copilot.microsoft-com.png" alt-text="Example screenshot of Microsoft Copilot for Microsoft Bing." lightbox="../media/copilot/microsoft-copilot-example-copilot.microsoft-com.png":::
 
 This illustration shows the flow of Graph- and Web-grounded prompts.
 
@@ -175,6 +219,26 @@ Use this stage to verify your implementation of the following levels of security
 - [Deploy data security and compliance protections with Microsoft Purview](/purview/ai-microsoft-purview)
 - [Configure minimum user permissions to data](zero-trust-microsoft-365-copilot.md#step-7-deploy-or-validate-minimum-user-permissions-to-data)
 - [Deploy threat protection for cloud apps with Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)
+
+### Recommendations for E3
+
+- Review your configuration and the features of [Defender for Office 365 Plan 1](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) and [Defender for Endpoint Plan 1](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1?view=o365-worldwide) and implement additional capabilities as needed.
+- Set up appropriate [levels of protection for Microsoft Teams](https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-microsoft-365-copilot?view=o365-worldwide#step-6-deploy-or-validate-secure-collaboration-for-microsoft-teams).
+
+### Recommendations for E5
+
+Implement the recommendations for E3 and extend the XDR capabilities in your Microsoft 365 tenant:
+
+- Turn on [Microsoft Defender for Identity](https://learn.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-identity-overview?view=o365-worldwide).
+- Review your configuration and implement additional capabilities as needed to increase your threat protection with the full Microsoft Defender XDR suite:
+
+  - [Defender for Endpoint](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-security-center-mde?view=o365-worldwide)
+  - [Defender for Office 365](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-security-center-mdo?view=o365-worldwide)
+  - [Defender for Identity](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-security-center-mdi?view=o365-worldwide)
+  - [Defender for Cloud Apps](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps?view=o365-worldwide)
+  - [Configure session policies](https://learn.microsoft.com/en-us/defender-cloud-apps/session-policy-aad) for Defender for Cloud Apps
+
+## Configuration summary
 
 This figure summarizes Microsoft Copilot configurations and the resulting accessible data that Copilot uses to respond to prompts.
 

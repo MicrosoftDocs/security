@@ -244,6 +244,8 @@ Use these resources to configure Defender for Endpoint Plan 1:
 - [Set up and configure](/microsoft-365/security/defender-endpoint/mde-p1-setup-configuration)
 - [Get started](/microsoft-365/security/defender-endpoint/mde-plan1-getting-started)
 
+<a name='windows-protection-capabilities'></a>
+
 #### Windows protection capabilities
 
 By default, Windows includes strong security and protections across hardware, operating system, apps, and more. See [Introduction to Windows security](/windows/security/introduction) to learn more. The following table lists the important Windows client threat protection capabilities included with Microsoft 365 E3. 

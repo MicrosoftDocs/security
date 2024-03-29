@@ -83,7 +83,7 @@ Implement the recommendations for E3 and configure the following identity and ac
 
 From the Microsoft Edge sidebar, Microsoft Copilot helps you get answers and inspirations from across the web and, if enabled, from some types of information displayed in open browser tabs.
 
-:::image type="content" source="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg" alt-text="Diagram of the data sets available to Microsoft Copilot in Edge." lightbox="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg":::
+:::image type="content" source="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg" alt-text="Diagram of Web-grounded prompts in Edge with browser tab summarization enabled." lightbox="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg":::
 
 Here are some examples of private or organization web pages and document types that Copilot in Edge can summarize:
 

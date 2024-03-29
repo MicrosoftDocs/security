@@ -68,15 +68,15 @@ Use this stage to implement identity and access policies for users and devices t
 
 ### Additional recommendations for Microsoft 365 E3
 
-- For user account authentication and access, also configure the identity and access policies to [Block clients that don’t support modern authentication](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common?view=o365-worldwide#block-clients-that-dont-support-multifactor-authentication).
+- For user account authentication and access, also configure the identity and access policies to [Block clients that don’t support modern authentication](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common#block-clients-that-dont-support-multifactor-authentication).
 - [Use Windows protection capabilities](zero-trust-microsoft-365-copilot.md#windows-protection-capabilities). 
 
 ### Additional recommendations for Microsoft 365 E5
 
 Implement the recommendations for E3 and configure the following identity and access policies:
 
-- [Require MFA when sign-in risk is medium or high](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common?view=o365-worldwide#require-mfa-based-on-sign-in-risk)
-- [High risk users must change their password](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common?view=o365-worldwide#high-risk-users-must-change-password)
+- [Require MFA when sign-in risk is medium or high](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common#require-mfa-based-on-sign-in-risk)
+- [High risk users must change their password](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common#high-risk-users-must-change-password)
 
 
 ## Stage 2. Add security protections for Edge browser summarization
@@ -132,9 +132,9 @@ This illustration shows the data sets available to Microsoft Copilot in Edge wit
 
 ### Recommendations for E3 and E5
 
-- Implement Intune [app protection policies (APP)](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common?view=o365-worldwide#app-protection-policies) for data protection. APP can prevent the inadvertent or intentional copying of Copilot-generated content to apps on a device that aren’t included in the list of permitted apps. APP can limit the blast radius of an attacker using a compromised device.
+- Implement Intune [app protection policies (APP)](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common#app-protection-policies) for data protection. APP can prevent the inadvertent or intentional copying of Copilot-generated content to apps on a device that aren’t included in the list of permitted apps. APP can limit the blast radius of an attacker using a compromised device.
 
-- Turn on [Microsoft Defender for Office 363 Plan 1](https://learn.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-office-365-overview), which include Exchange Online Protection (EOP) for Safe Attachments, Safe Links, advanced phishing thresholds and impersonation protection, and real-time detections.
+- Turn on [Microsoft Defender for Office 363 Plan 1](/microsoft-365/security/defender/eval-defender-office-365-overview), which include Exchange Online Protection (EOP) for Safe Attachments, Safe Links, advanced phishing thresholds and impersonation protection, and real-time detections.
 
 
 ## Stage 3. Complete security protections recommended for Copilot for Microsoft 365
@@ -153,8 +153,8 @@ For more information, see [Apply principles of Zero Trust to Microsoft Copilot f
 
 Implement the following:
 
-- [Intune device management and device compliance requirement policies](https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-microsoft-365-copilot?view=o365-worldwide#step-4-deploy-or-validate-your-device-management-and-protection)
-- [Data protection in your Microsoft 365 tenant](https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-microsoft-365-copilot?view=o365-worldwide#step-1-deploy-or-validate-your-data-protection)
+- [Intune device management and device compliance requirement policies](/security/zero-trust/zero-trust-microsoft-365-copilot#step-4-deploy-or-validate-your-device-management-and-protection)
+- [Data protection in your Microsoft 365 tenant](/security/zero-trust/zero-trust-microsoft-365-copilot#step-1-deploy-or-validate-your-data-protection)
 
    - Sensitivity labels
 
@@ -162,7 +162,7 @@ Implement the following:
 
    - Retention policies
 
-- [Turn on Microsoft Defender for Endpoint](https://learn.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-endpoint-overview)
+- [Turn on Microsoft Defender for Endpoint](/microsoft-365/security/defender/eval-defender-endpoint-overview)
 
 ### Recommendations for E5
 
@@ -170,9 +170,9 @@ Implement the recommendations for E3 and the following:
 
  - Use a greater range of classifiers to find sensitive info.
 - Automate your retention labels.
-- Try out the Plan [2 capabilities in Defender for Office 365](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/mdo-about?view=o365-worldwide#what-is-the-difference-between-plan-1-and-plan-2-defender-for-office-365), which include post-breach investigation, hunting, and response, automation, and simulation.
-- Turn on [Microsoft Defender for Cloud Apps](https://learn.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-mcas-overview).
-- Configure Defender for Cloud Apps to [discover cloud apps and monitor and audit their behavior](https://learn.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-mcas-architecture#discovering-cloud-apps).
+- Try out the Plan [2 capabilities in Defender for Office 365](/microsoft-365/security/office-365-security/mdo-about#what-is-the-difference-between-plan-1-and-plan-2-defender-for-office-365), which include post-breach investigation, hunting, and response, automation, and simulation.
+- Turn on [Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-overview).
+- Configure Defender for Cloud Apps to [discover cloud apps and monitor and audit their behavior](/microsoft-365/security/defender/eval-defender-mcas-architecture#discovering-cloud-apps).
 
 ## Stage 4. Maintain security protections while you use Microsoft Copilot and Copilot for Microsoft 365 together
 
@@ -222,21 +222,21 @@ Use this stage to verify your implementation of the following levels of security
 
 ### Recommendations for E3
 
-- Review your configuration and the features of [Defender for Office 365 Plan 1](https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) and [Defender for Endpoint Plan 1](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1?view=o365-worldwide) and implement additional capabilities as needed.
-- Set up appropriate [levels of protection for Microsoft Teams](https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-microsoft-365-copilot?view=o365-worldwide#step-6-deploy-or-validate-secure-collaboration-for-microsoft-teams).
+- Review your configuration and the features of [Defender for Office 365 Plan 1](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) and [Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1) and implement additional capabilities as needed.
+- Set up appropriate [levels of protection for Microsoft Teams](/security/zero-trust/zero-trust-microsoft-365-copilot#step-6-deploy-or-validate-secure-collaboration-for-microsoft-teams).
 
 ### Recommendations for E5
 
 Implement the recommendations for E3 and extend the XDR capabilities in your Microsoft 365 tenant:
 
-- Turn on [Microsoft Defender for Identity](https://learn.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-identity-overview?view=o365-worldwide).
+- Turn on [Microsoft Defender for Identity](/microsoft-365/security/defender/eval-defender-identity-overview).
 - Review your configuration and implement additional capabilities as needed to increase your threat protection with the full Microsoft Defender XDR suite:
 
-  - [Defender for Endpoint](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-security-center-mde?view=o365-worldwide)
-  - [Defender for Office 365](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-security-center-mdo?view=o365-worldwide)
-  - [Defender for Identity](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-security-center-mdi?view=o365-worldwide)
-  - [Defender for Cloud Apps](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps?view=o365-worldwide)
-  - [Configure session policies](https://learn.microsoft.com/en-us/defender-cloud-apps/session-policy-aad) for Defender for Cloud Apps
+  - [Defender for Endpoint](/microsoft-365/security/defender/microsoft-365-security-center-mde)
+  - [Defender for Office 365](/microsoft-365/security/defender/microsoft-365-security-center-mdo)
+  - [Defender for Identity](/microsoft-365/security/defender/microsoft-365-security-center-mdi)
+  - [Defender for Cloud Apps](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps)
+  - [Configure session policies](/defender-cloud-apps/session-policy-aad) for Defender for Cloud Apps
 
 ## Configuration summary
 

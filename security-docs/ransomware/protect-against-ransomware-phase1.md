@@ -1,8 +1,9 @@
 ---
-title: "Protect against ransomware step 1: Prepare for cybercriminal ransomware attacks by having a backup and recovery plan"
+title: "Prepare for ransomware attacks with a backup and recovery plan"
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, extortionware, malicious encryption
 ms.author: dansimp
 author: dansimp
+ms.date: 03/25/2024
 f1.keywords:
 - NOCSH
 manager: dansimp
@@ -15,13 +16,21 @@ ms.collection:
 ms.custom: cxdef-zt-ransomware 
 description: Prepare your organization so that you can recover from cybercriminal ransomware attacks without having to pay the ransom.
 
+
 ---
 
-# Protect against ransomware step 1: Prepare a ransomware attack recovery plan
+# Prepare a ransomware attack recovery plan
 
-One thing you must do in advance of a ransomware attack by cybercrimanals is prepare your organization so it has a alternative to paying a ransom.
+One thing you *must* do in advance of a ransomware attack is prepare your organization so it has a alternative to paying a ransom.
 
-Cybercriminal attackers in control of your organization have several ways to pressure you into paying. The demands primarily focus on two categories:
+> [!IMPORTANT]
+>  **Read the whole ransomware prevention series, and make your organization *hard to ransomware attack*.**
+>
+>- [Have a recovery plan](protect-against-ransomware-phase1.md)
+>- [A plan to limit the harm done](protect-against-ransomware-phase2.md)
+>- [Make it hard to get in](protect-against-ransomware-phase3.md)
+
+Cybercriminal ransomware attackers in control of your organization have many ways to pressure you into paying. The demands primarily focus on two categories:
 
 - **Pay a ransom to regain access**
 
@@ -37,7 +46,7 @@ Cybercriminal attackers in control of your organization have several ways to pre
 
    Attackers demand payment in exchange for not releasing sensitive or embarrassing data to the dark web (other criminals) or the general public. 
 
-To avoid being forced into payment (the profitable situation for attackers), the most immediate and effective action you can take is to ensure your organization can restore your entire enterprise from immutable storage, which neither the attacker nor you can modify. 
+To avoid being forced into payment (the profitable situation for attackers), the most immediate and effective action you can take is to make sure your organization can restore your entire enterprise from immutable storage, which neither the attacker nor you can modify. 
 
 Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other areas in phases 1 or 2, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
 

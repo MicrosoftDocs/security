@@ -170,7 +170,7 @@ Implement the recommendations for E3 and the following:
 
  - Use a greater range of classifiers to find sensitive info.
 - Automate your retention labels.
-- Try out the Plan [2 capabilities in Defender for Office 365](/microsoft-365/security/office-365-security/mdo-about#what-is-the-difference-between-plan-1-and-plan-2-defender-for-office-365), which include post-breach investigation, hunting, and response, automation, and simulation.
+- Try out the [Plan 2 capabilities in Defender for Office 365](/microsoft-365/security/office-365-security/mdo-about#what-is-the-difference-between-plan-1-and-plan-2-defender-for-office-365), which include post-breach investigation, hunting, and response, automation, and simulation.
 - Turn on [Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-overview).
 - Configure Defender for Cloud Apps to [discover cloud apps and monitor and audit their behavior](/microsoft-365/security/defender/eval-defender-mcas-architecture#discovering-cloud-apps).
 
@@ -230,12 +230,17 @@ Use this stage to verify your implementation of the following levels of security
 Implement the recommendations for E3 and extend the XDR capabilities in your Microsoft 365 tenant:
 
 - Turn on [Microsoft Defender for Identity](/microsoft-365/security/defender/eval-defender-identity-overview).
+
 - Review your configuration and implement additional capabilities as needed to increase your threat protection with the full Microsoft Defender XDR suite:
 
   - [Defender for Endpoint](/microsoft-365/security/defender/microsoft-365-security-center-mde)
+
   - [Defender for Office 365](/microsoft-365/security/defender/microsoft-365-security-center-mdo)
+
   - [Defender for Identity](/microsoft-365/security/defender/microsoft-365-security-center-mdi)
+
   - [Defender for Cloud Apps](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps)
+
   - [Configure session policies](/defender-cloud-apps/session-policy-aad) for Defender for Cloud Apps
 
 ## Configuration summary

@@ -9,7 +9,7 @@ ms.author: terrylan
 manager: rkarlin
 ms.date: 11/11/2019
 ms.topic: article
-ms.prod: security
+ms.service: security
 ---
 
 # AI/ML Pivots to the Security Development Lifecycle Bug Bar

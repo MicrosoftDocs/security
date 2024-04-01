@@ -1,6 +1,6 @@
 ---
 title: Apply Zero Trust principles to encrypting Azure-based network communication
-description: How to apply Zero Trust principles to encrypting Azure-based network communication.  
+description: Learn how to apply Zero Trust principles to encrypting Azure-based network communication.
 ms.date: 03/20/2024
 ms.service: security
 author: duongau
@@ -54,7 +54,7 @@ The levels of encryption for network traffic are:
 
 - Network layer encryption
 
-  - Secure and verify communication from the Internet or your on-premises network to Azure VNets and virtual machines
+  - Secure and verify communication from the internet or your on-premises network to Azure VNets and virtual machines
 
    - Secure and verify communication within and across Azure VNets
  
@@ -67,7 +67,7 @@ The levels of encryption for network traffic are:
 
 ## Reference architecture
 
-The following diagram shows the reference architecture for this Zero Trust guidance for encrypted communication between users and admins on-premises or on the Internet and components in the Azure environment for the steps described in this article.
+The following diagram shows the reference architecture for this Zero Trust guidance for encrypted communication between users and admins on-premises or on the internet and components in the Azure environment for the steps described in this article.
 
 :::image type="content" source="media/azure-networking/azure-networking-encryption.svg" alt-text="The reference architecture for Azure networking components with encryption and Zero Trust principles applied." lightbox="media/azure-networking/azure-networking-encryption.svg":::
  
@@ -75,7 +75,7 @@ In the diagram, the numbers correspond to the steps in the following sections.
 
 ## What's in this article?
 
-Zero Trust principles are applied across the reference architecture, from users and admins on the Internet or your on-premises network to and within the Azure cloud. The following table describes the recommendations for ensuring the encryption of network traffic across this architecture.
+Zero Trust principles are applied across the reference architecture, from users and admins on the internet or your on-premises network to and within the Azure cloud. The following table describes the recommendations for ensuring the encryption of network traffic across this architecture.
 
 | Step | Task | Zero Trust principle(s) applied |
 | --- | --- | --- |
@@ -93,7 +93,7 @@ The following diagram shows the reference architecture for implementing network 
 
 :::image type="content" source="media/azure-networking/azure-networking-encryption-step-1.svg" alt-text="The reference architecture for the implementation of network layer encryption for Azure networking." lightbox="media/azure-networking/azure-networking-encryption-step-1.svg":::
 
-In the next two sections, we discuss Internet Protocol Security (IPsec) and Media Access Control Security ([MACsec](https://1.ieee802.org/security/802-1ae/)), which Azure networking services support these protocols, and how you can ensure they are being used.
+In the next two sections, we discuss Internet Protocol Security (IPsec) and Media Access Control Security ([MACsec](https://1.ieee802.org/security/802-1ae/)), which Azure networking services support these protocols, and how you can ensure they're being used.
 
 ### IPsec
 
@@ -119,7 +119,7 @@ Some of the Azure services that support IPsec are:
 
    - User VPN configurations
 
-There are no settings that you need to modify to enable IPsec for these services. They are enabled by default.
+There are no settings that you need to modify to enable IPsec for these services. They're enabled by default.
 
 ### MACsec and Azure Key Vault
 
@@ -147,7 +147,7 @@ Azure provides two options to connect your on-premises network to resources in a
 
 - [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) provides a high bandwidth private connection that lets you extend your on-premises network into Azure with the assistance of a connectivity provider. Because network traffic doesn’t travel over the public internet, data isn’t encrypted by default. To encrypt your traffic over ExpressRoute, configure an IPsec tunnel. However, keep in mind that when running IPsec tunnels over ExpressRoute, the bandwidth is limited to the tunnel bandwidth and you might need to run multiple tunnels to match the ExpressRoute circuit bandwidth. For more information, see [Site-to-Site VPN connections over ExpressRoute private peering - Azure VPN Gateway](/azure/vpn-gateway/site-to-site-vpn-private-peering).  
 
-   If you’re using ExpressRoute Direct ports, you can increase your network security by enabling authentication when establishing BGP peers or configure MACsec to secure layer 2 communication. MACsec provides encryption for Ethernet frames, ensuring data confidentiality, integrity, and authenticity between your edge router and Microsoft’s edge router. 
+   If you’re using ExpressRoute Direct ports, you can increase your network security by enabling authentication when establishing BGP peers or configuring MACsec to secure layer 2 communication. MACsec provides encryption for Ethernet frames, ensuring data confidentiality, integrity, and authenticity between your edge router and Microsoft’s edge router. 
 
   Azure ExpressRoute also supports Azure Monitor for network performance metrics and alerts.
 
@@ -175,7 +175,7 @@ The following diagram shows the reference architecture for securing and verifyin
 
 :::image type="content" source="media/azure-networking/azure-networking-encryption-step-3.svg" alt-text="The reference architecture for securing and verifying communication within and across Azure VNets." lightbox="media/azure-networking/azure-networking-encryption-step-3.svg":::
 
-However, encryption alone is not enough to ensure Zero Trust. You should also verify and monitor the network communication within and across Azure VNets. Further encryption and verification between VNets are possible with the help of Azure VPN Gateway or network virtual appliances (NVAs) but isn’t a common practice. Microsoft   recommends designing your network topology to use a centralized traffic inspection model that can enforce granular policies and detect anomalies.
+However, encryption alone isn't enough to ensure Zero Trust. You should also verify and monitor the network communication within and across Azure VNets. Further encryption and verification between VNets are possible with the help of Azure VPN Gateway or network virtual appliances (NVAs) but isn’t a common practice. Microsoft   recommends designing your network topology to use a centralized traffic inspection model that can enforce granular policies and detect anomalies.
 
 To reduce the overhead of configuring a VPN gateway or virtual appliance, enable the [VNet encryption](/azure/virtual-network/virtual-network-encryption-overview) feature for certain virtual machine sizes to encrypt and verify traffic between virtual machines at the host level, within a VNet, and across VNet peerings.
 
@@ -201,7 +201,7 @@ You can use Azure Front Door or Azure Application Gateway to protect your Azure 
 
 To protect your data, traffic to Azure Front Door endpoints is protected using HTTPS with end-to-end TLS for all traffic going to and from its endpoints. Traffic is encrypted from the client to the origin and from the origin to the client.
 
-Azure Front Door handles HTTPS requests and determines which endpoint in its profile has the associated domain name. Then it checks the path and determines which routing rule matches the path of the request. If caching is enabled, Azure Front Door checks its cache to see if there's a valid response. If there is no valid response, Azure Front Door selects the best origin that can serve the content requested. Before the request is sent to the origin, a rule set can be applied to the request to change the header, query string, or origin destination.
+Azure Front Door handles HTTPS requests and determines which endpoint in its profile has the associated domain name. Then it checks the path and determines which routing rule matches the path of the request. If caching is enabled, Azure Front Door checks its cache to see if there's a valid response. If there's no valid response, Azure Front Door selects the best origin that can serve the content requested. Before the request is sent to the origin, a rule set can be applied to the request to change the header, query string, or origin destination.
 
 Azure Front Door supports both front end and back-end TLS. Front end TLS encrypts traffic between the client and Azure Front Door. Back-end TLS encrypts traffic between Azure Front Door and the origin. Azure Front Door supports TLS 1.2 and TLS 1.3. You can configure Azure Front Door to use a custom TLS certificate or use a certificate managed by Azure Front Door.
 

@@ -2,7 +2,7 @@
 title: Security news and highlights
 description: Security news and highlights from across Microsoft.
 author: TerryLanfear
-ms.prod: security
+ms.service: security
 ms.topic: article
 ms.author: terrylan
 manager: rkarlin

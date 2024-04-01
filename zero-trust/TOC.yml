@@ -257,8 +257,15 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-- name: Microsoft Copilot for Microsoft 365
-  href: zero-trust-microsoft-365-copilot.md
+- name: Microsoft Copilots
+  expanded: false
+  items: 
+    - name: Overview
+      href: copilots/apply-zero-trust-copilots-overview.md
+    - name: Zero Trust for Microsoft Copilot
+      href: copilots/zero-trust-microsoft-copilot.md
+    - name: Zero Trust for Copilot for Microsoft 365
+      href: copilots/zero-trust-microsoft-365-copilot.md
 - name: Microsoft Azure services
   expanded: false
   items: 

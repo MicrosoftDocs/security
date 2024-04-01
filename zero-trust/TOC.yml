@@ -257,7 +257,7 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-- name: Apply principles of Zero Trust to Microsoft Copilots
+- name: Microsoft Copilots
   expanded: false
   items: 
     - name: Overview

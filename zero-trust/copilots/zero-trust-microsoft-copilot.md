@@ -260,10 +260,11 @@ This table includes Zero Trust recommendations for your chosen configuration.
 
 ## Next steps
 
-Also see:
+See these additional articles for Zero Trust and Microsoft's Copilots:
 
-- [Overview of applying Zero Trust to Copilots from Microsoft](apply-zero-trust-copilots-overview.md)
-- [Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md)
+- [Overview](apply-zero-trust-copilots-overview.md)
+- [Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md)
+- [Microsoft Copilot for Security](zero-trust-microsoft-copilot-for-security.md)
 
 ## References
 

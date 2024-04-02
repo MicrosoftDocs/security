@@ -361,6 +361,12 @@ As the diagram also shows, you can roll out information protection across your o
 
 Watch the [How to get ready for Copilot](https://www.youtube.com/watch?v=oeX0lsMA69U&t=2s) video.
 
+See these additional articles for Zero Trust and Microsoft's Copilots:
+
+- [Overview](apply-zero-trust-copilots-overview.md)
+- [Microsoft Copilot](zero-trust-microsoft-copilot.md)
+- [Microsoft Copilot for Security](zero-trust-microsoft-copilot-for-security.md)
+
 Also see:
 
 - [Microsoft Purview data security and compliance protections for Microsoft Copilot](/purview/ai-microsoft-purview)

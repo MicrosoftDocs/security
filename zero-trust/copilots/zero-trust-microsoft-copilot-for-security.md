@@ -18,11 +18,11 @@ ms.collection:
 
 **Summary:** To apply Zero Trust principles to your environment for Microsoft Copilot for Security, you need to apply five layers of protection:
 
-1. Protect admin accounts with identity and access policies, including your security operations (SecOps) accounts.
-2. Apply least privilege to admin accounts, including assigning the minimum user account roles.
-3. Manage and protect admin user devices.
+1. Protect admin and SecOps staff user accounts with identity and access policies.
+2. Apply least privilege access to admin and SecOps staff user accounts, including assigning the minimum user account roles.
+3. Manage and protect admin and SecOps staff devices.
 4. Deploy or validate your threat protection.
-5. Secure access to third-party security products that you choose to integrate with Copilot for Security.
+5. Secure access to third-party security products that you integrate with Copilot for Security.
 
 ## Introduction
 
@@ -77,7 +77,7 @@ For more information about OBO authentication, see [Microsoft identity platform 
 
 ### Prompting within a Microsoft security product: Embedded example for Microsoft Intune
 
-When you use one of the embedded experiences of Copilot for Security, the scope of the data is determined by the context of the product you're using. For example, if you prompt within Microsoft Intune, the results are produced from data and context provided by Microsoft Intune only. 
+When you use one of the embedded experiences of Copilot for Security, the scope of the data is determined by the context of the product you're using. For example, if you issue a prompt within Microsoft Intune, the results are produced from data and context provided by Microsoft Intune only. 
 
 Here's the logical architecture when issuing prompts from within the Microsoft Intune embedded experience.
 
@@ -118,7 +118,7 @@ The rest of this article walks you through the steps to apply the principles of 
 | 2 | Apply least privilege to admin and SecOps user accounts. | Use least privileged access |
 | 3 | Secure devices for privileged access. | Verify explicitly |
 | 4 | Deploy or validate your threat protection services. | Assume breach |
-| 5 | Secure access to third-party security products that you choose to integrate with Copilot for Security. | Verify explicitly <br><br> Use least privileged access <br><br> Assume breach |
+| 5 | Secure access to third-party security products and data. | Verify explicitly <br><br> Use least privileged access <br><br> Assume breach |
 
 There are several approaches you can take to onboarding admin and SecOps staff to Copilot for Security while you configure protections for your environment.
 
@@ -181,7 +181,7 @@ When configuring these policies for your admin and SecOps staff, create a separa
 
 ### Include security tools in the scope of Conditional Access policies
 
-For now, there's not an easy way to configure Conditional Access for Copilot for Security. However, because on-behalf-of authentication is used to access data within security tools, be sure you have configured Conditional Access for these, including Microsoft Entra ID, Microsoft Intune, and other tools.
+For now, there's not an easy way to configure Conditional Access for Copilot for Security. However, because on-behalf-of authentication is used to access data within security tools, be sure you have configured Conditional Access for these tools, which can include Microsoft Entra ID and Microsoft Intune.
 
 ## Step 2. Apply least privilege to admin and SecOps user accounts
 
@@ -193,12 +193,12 @@ The permissions model for Copilot for Security includes roles in both Microsoft 
 
 | Product | Roles | Description |
 | --- | --- | --- |
-| Microsoft Entra ID | Security Administrator <br><br> Global Administrator | These Microsoft Entra roles inherit the "Copilot owner" role in Copilot for Security. Only use these privileged roles to onboard Copilot for Security to your organization. |
-| Copilot for Security | Copilot owner <br><br> Copilot contributor | These roles include access to use Copilot for Security. Most of your admin and SecOps staff can use the Copilot contributor role. <br><br> The Copilot owner role includes access to publish custom plugins and to manage settings that affect all of Copilot for Security. |
+| Microsoft Entra ID | Security Administrator <br><br> Global Administrator | These Microsoft Entra roles inherit the **Copilot owner** role in Copilot for Security. Only use these privileged roles to onboard Copilot for Security to your organization. |
+| Copilot for Security | Copilot owner <br><br> Copilot contributor | These two roles include access to use Copilot for Security. Most of your admin and SecOps staff can use the **Copilot contributor** role. <br><br> The **Copilot owner** role includes the ability to publish custom plugins and to manage settings that affect all of Copilot for Security. |
 
-It’s important to know that, by default, all users in the tenant are given Copilot contributor access. With this configuration, access to your security tool data is governed by the permissions you configured for each of the security tools. An advantage of this configuration is that the embedded experiences of Copilot for Security are immediately available to your security staff within the products they use daily. This works well if you’ve already adopted a strong practice of least privileged access within your organization. 
+It’s important to know that, by default, *all users in the tenant are given Copilot contributor access*. With this configuration, access to your security tool data is governed by the permissions you configured for each of the security tools. An advantage of this configuration is that the embedded experiences of Copilot for Security are immediately available to your admin and SecOps staff within the products they use daily. This works well if you’ve already adopted a strong practice of least privileged access within your organization. 
 
-If you’d like to take a staged approach to introducing Copilot for Security to your admin and SecOps staff while you tune up least privileged access in your organization, remove **All users** from the Copilot contributor role and add security groups as you're ready. 
+If you’d like to take a staged approach to introducing Copilot for Security to your admin and SecOps staff while you tune up least privileged access in your organization, remove **All users** from the **Copilot contributor** role and add security groups as you're ready. 
 
 For more information, see these Microsoft Copilot for Security resources:
 
@@ -207,9 +207,9 @@ For more information, see these Microsoft Copilot for Security resources:
 
 ### Configuring or reviewing least privilege access for admin and SecOps user accounts
 
-Introducing Copilot for Security is a great time to review the access of your admin and SecOps staff user accounts to be sure you're following through with the principle of least privilege for their access to specific products. This includes the following:
+Introducing Copilot for Security is a great time to review the access of your admin and SecOps staff user accounts to be sure you're following through with the principle of least privilege for their access to specific products. This includes the following tasks:
 
-- Review the privileges granted for the specific products they work with. For example, for Microsoft Entra, see [Least privileged roles by task](/entra/identity/role-based-access-control/delegate-by-task).
+- Review the privileges granted for the specific products your admin and SecOps staff work with. For example, for Microsoft Entra, see [Least privileged roles by task](/entra/identity/role-based-access-control/delegate-by-task).
 - Use Microsoft Entra Privileged Identity Management (PIM) to gain greater control over access to Copilot for Security.
 - Use Microsoft Purview Privileged Access Management to configure granular access control over privileged admin tasks in Office 365. 
 
@@ -226,7 +226,7 @@ Microsoft Entra [Privileged Identity Management (PIM)](/entra/id-governance/priv
 
 #### Using privileged access management together with Copilot for Security
 
-Microsoft Purview Privileged Access Management helps protect your organization from breaches and helps to meet compliance best practices by limiting standing access to sensitive data or access to critical configuration settings. Instead of administrators having constant access, just-in-time access rules are implemented for tasks that need elevated permissions. Enabling privileged access management for Exchange Online in Microsoft 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities. For more information, see [Privileged Access Management](/purview/privileged-access-management-solution-overview).
+Microsoft Purview Privileged Access Management helps protect your organization from breaches and helps to meet compliance best practices by limiting standing access to sensitive data or access to critical configuration settings. Instead of administrators having constant access, just-in-time access rules are implemented for tasks that need elevated permissions. Instead of administrators having constant access, just-in-time access rules are implemented for tasks that need elevated permissions. For more information, see [Privileged access management](/purview/privileged-access-management-solution-overview).
 
 ## Step 3. Secure devices for privileged access
 
@@ -252,7 +252,7 @@ Use the following resources.
 
 If you’re integrating third-party security products with Copilot for Security, be sure you have secured access to these products and related data. Microsoft Zero Trust guidance includes recommendations for securing access to SaaS apps. These recommendations can be used for your third-party security products.
 
-For protection with identity and device access policies, changes to common policies for SaaS apps are outlined in red in the following illustration. These are the policies to which you can add your third-party security products.
+For protection with identity and device access policies, changes to common policies for SaaS apps are outlined in red in the following diagram. These are the policies to which you can add your third-party security products.
 
 :::image type="content" source="../media/copilot/identity-device-access-policies-saas-apps.svg" alt-text="Diagram of Zero Trust identity and device access policies and the highlighted changes to protection levels for SaaS apps." lightbox="../media/copilot/identity-device-access-policies-saas-apps.svg":::
  
@@ -264,7 +264,7 @@ Depending on the security product, it might be appropriate to use Microsoft Defe
 
 ### Example for Tanium SSO
 
-Tanium is a provider of endpoint management tools and  offers a custom Tanium Skills plugin for Copilot for Security. This plugin helps ground prompts and responses that leverage Tanium-gathered information and insights. 
+Tanium is a provider of endpoint management tools and offers a custom Tanium Skills plugin for Copilot for Security. This plugin helps ground prompts and responses that leverage Tanium-gathered information and insights. 
  
 Here's the logical architecture of Copilot for Security with the Tanium Skills plugin.
 
@@ -274,7 +274,6 @@ In the diagram:
 
 - Tanium Skills is a custom plugin for Microsoft Copilot for Security.
 - Tanium Skills provides access to and helps ground both prompts and responses that use Tanium-gathered information and insights.
-Securing access to the Tanium security products involves adding Tanium SSO to your Microsoft Entra ID tenant and then adding Tanium SSO to the scope of your Conditional Access and related policies. 
 
 To secure access to Tanium products and related data:
 
@@ -302,5 +301,5 @@ Refer to these links to learn about the various services and technologies mentio
 - [Onboarding to Copilot for Security](/security-copilot/get-started-security-copilot##onboarding-to-copilot-for-security)
 - [Data sources for Microsoft Sentinel](/security/operations/ingest-data-sources#before-you-begin)
 - [Microsoft Entra Privileged Identity Management (PIM)](/entra/id-governance/privileged-identity-management/pim-configure)
-- [Privileged access banagement](/purview/privileged-access-management-solution-overview)
+- [Privileged access management](/purview/privileged-access-management-solution-overview)
 - [Privileged access devices](/security/privileged-access-workstations/privileged-access-devices)

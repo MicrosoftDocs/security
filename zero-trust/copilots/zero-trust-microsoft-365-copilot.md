@@ -1,7 +1,7 @@
 ---
-title: Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
-description: Learn how to secure Microsoft Copilot for Microsoft 365 with Zero Trust principles. 
-ms.date: 01/31/2024
+title: How do I apply Zero Trust principles to Microsoft Copilot for Microsoft 365?
+description: How to apply Zero Trust principles to Microsoft Copilot for Microsoft 365. 
+ms.date: 04/02/2024
 ms.service: security
 author: bcarter
 ms.author: bcarter
@@ -360,6 +360,12 @@ As the diagram also shows, you can roll out information protection across your o
 ## Next steps
 
 Watch the [How to get ready for Copilot](https://www.youtube.com/watch?v=oeX0lsMA69U&t=2s) video.
+
+See these additional articles for Zero Trust and Microsoft's Copilots:
+
+- [Overview](apply-zero-trust-copilots-overview.md)
+- [Microsoft Copilot](zero-trust-microsoft-copilot.md)
+- [Microsoft Copilot for Security](zero-trust-microsoft-copilot-for-security.md)
 
 Also see:
 

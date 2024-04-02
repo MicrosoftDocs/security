@@ -266,6 +266,8 @@
       href: copilots/zero-trust-microsoft-copilot.md
     - name: Zero Trust for Copilot for Microsoft 365
       href: copilots/zero-trust-microsoft-365-copilot.md
+    - name: Zero Trust for Microsoft Copilot for Security
+      href: copilots/zero-trust-microsoft-copilot-for-security.md
 - name: Microsoft Azure services
   expanded: false
   items: 

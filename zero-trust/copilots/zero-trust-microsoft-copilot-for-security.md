@@ -1,6 +1,6 @@
 ---
-title: Apply principles of Zero Trust to Microsoft Copilot for Security
-description: Learn how to secure Microsoft Copilot for Security with Zero Trust principles. 
+title: How do I apply Zero Trust principles to Microsoft Copilot for Security?
+description: How to apply Zero Trust principles to Microsoft Copilot for Security. 
 ms.date: 04/02/2024
 ms.service: security
 author: bcarter
@@ -44,7 +44,7 @@ The first line of defense when introducing Copilot for Security is to apply the 
 
 It’s easy to understand why these mitigations are important by looking at the logical architecture of Copilot for Security, illustrated below.
 
-:::image type="content" source="media/copilot/security-copilot-logical-architecture.svg" alt-text="Diagram of desc." lightbox="media/copilot/security-copilot-logical-architecture.svg":::
+:::image type="content" source="../media/copilot/security-copilot-logical-architecture.svg" alt-text="Diagram of the logical architecture of Copilot for Security showing users and devices, security products, and the Copilot for Security service architecture." lightbox="../media/copilot/security-copilot-logical-architecture.svg":::
   
 In the diagram:
 
@@ -77,7 +77,7 @@ For more information about on-behalf-of authentication, see [Microsoft identity 
 When using one of the embedded experiences of Copilot for Security, the scope of the data is determined by the context of the product you are using. For example, if you prompt within Microsoft Intune, the results are produced from data and context provided by Microsoft Intune only. 
 Here is the logical architecture when issuing prompts from within the Microsoft Intune embedded experience.
 
-:::image type="content" source="media/copilot/security-copilot-architecture-intune-example.svg" alt-text="Diagram of desc." lightbox="media/copilot/security-copilot-architecture-intune-example.svg":::
+:::image type="content" source="../media/copilot/security-copilot-architecture-intune-example.svg" alt-text="Diagram of the logical architecture for Copilot for Security with Microsoft Intune highlighted as a security product, a plug-in, and Intune data types." lightbox="../media/copilot/security-copilot-architecture-intune-example.svg":::
 
 In the diagram:
 
@@ -94,7 +94,7 @@ In the diagram:
 
 Copilot for Security provides the ability to host plugins for third-party products. These third-party plugins provide access to the associated data. These plugins and the associated data live outside the Microsoft security trust boundary. Consequently, it’s important to ensure you’ve secured access to these applications and associated data.
 
-:::image type="content" source="media/copilot/security-copilot-architecture-third-party.svg" alt-text="Diagram of desc." lightbox="media/copilot/security-copilot-architecture-third-party.svg":::
+:::image type="content" source="../media/copilot/security-copilot-architecture-third-party.svg" alt-text="Diagram of the extended logical architecture for Copilot for Security to support third-party security products." lightbox="../media/copilot/security-copilot-architecture-third-party.svg":::
 
 In the illustration:
 
@@ -120,13 +120,13 @@ There are several approaches you can take to onboarding admins and SecOps staff 
 
 At a minimum, walk through a checklist for each of your admins and SecOps staff before you assign a role for Copilot for Security. This works well for small teams and organizations that want to start with a test or pilot group. 
 
-:::image type="content" source="media/copilot/onboarding-user-checklist.svg" alt-text="Diagram of desc." lightbox="media/copilot/onboarding-user-checklist.svg":::
+:::image type="content" source="../media/copilot/onboarding-user-checklist.svg" alt-text="Example of a checklist for onboarding your admins and SecOps staff  for Copilot for Security." lightbox="../media/copilot/onboarding-user-checklist.svg":::
   
 ### Phased deployment of Copilot for Security
 
 For large environments, a more standard phased deployment works well. In this model, you address groups of users at the same time to configure protection and assign roles.
 
-:::image type="content" source="media/copilot/security-copilot-phased-deployment.svg" alt-text="Diagram of desc." lightbox="media/copilot/security-copilot-phased-deployment.svg":::
+:::image type="content" source="../media/copilot/security-copilot-phased-deployment.svg" alt-text="Diagram of a standard phased deployment for Copilot for Security, including Evaluate, Pilot, and Full Deployment phases." lightbox="../media/copilot/security-copilot-phased-deployment.svg":::
 
 In the illustration:
 
@@ -155,15 +155,15 @@ For identity and access policy recommendations, see the identity and access step
 - [High risk users must change password (for Microsoft 365 E5 only)](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common#high-risk-users-must-change-password)
 - [Require adherence to Intune device compliance policies](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common#device-compliance-policies)
 
-These recommendations align with the **Specialized security** protection level in Microsoft’s Zero Trust identity and device access policies. The following diagram illustrates the recommended three tiers of protection — Starting point, Enterprise, and Specialized. The Enterprise tier of protection can be used as a minimum level of protection for your privileged accounts.
+These recommendations align with the **Specialized security** protection level in Microsoft’s Zero Trust identity and device access policies. The following diagram illustrates the recommended three levels of protection — Starting point, Enterprise, and Specialized. The Enterprise protection level is recommnded **as a minimum** for your privileged accounts.
   
-:::image type="content" source="media/copilot/identity-device-access-policies-common.svg" alt-text="Diagram of desc." lightbox="media/copilot/identity-device-access-policies-common.svg":::
+:::image type="content" source="../media/copilot/identity-device-access-policies-common.svg" alt-text="Diagram of Zero Trust identity and device access policies showing the Starting Point, Enterprise, and Specialized Security protection levels." lightbox="../media/copilot/identity-device-access-policies-common.svg":::
 
 In the illustration, the recommended policies for Microsoft Entra Conditional Access, Intune device compliance, and Intune app protection are illustrated for each of the three levels:
 
-- **Starting point**, which does not require device management
-- **Enterprise** is recommended for Zero Trust and as a minimum for access to Copilot for Security and your third-party security products and related data
-- **Specialized security** is recommended for access to Copilot for Security and your third-party security products and related data 
+- **Starting point**, which does not require device management.
+- **Enterprise** is recommended for Zero Trust and as a minimum for access to Copilot for Security and your third-party security products and related data.
+- **Specialized security** is recommended for access to Copilot for Security and your third-party security products and related data.
 
 Each of these policies is described in greater detail in [Common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common). 
 
@@ -245,7 +245,7 @@ If you’re integrating third-party security products with Copilot for Security,
 
 For protection with identity and device access policies, changes to common policies for SaaS apps are outlined in red in the following illustration. These are the policies to which you can add your third-party security products.
 
-:::image type="content" source="media/copilot/identity-device-access-policies-saas-apps.svg" alt-text="Diagram of desc." lightbox="media/copilot/identity-device-access-policies-saas-apps.svg":::
+:::image type="content" source="../media/copilot/identity-device-access-policies-saas-apps.svg" alt-text="Diagram of Zero Trust identity and device access policies and the highlighted changes to protection levels for SaaS apps." lightbox="../media/copilot/identity-device-access-policies-saas-apps.svg":::
  
 For your third-party security products and apps, consider creating a dedicated set of policies for these. This allows you to treat your security products with greater requirements compared to productivity apps, like Dropbox and Salesforce. For example, add Tanium and all other third-party security products to the same set of Conditional Access policies. If you want to enforce stricter requirements for devices for your admins and SecOps team, also configure unique policies for Intune device compliance and Intune app protection and assign these policies to your admins and SecOps team.
 
@@ -257,7 +257,7 @@ Depending on the security product, it might be appropriate to use Microsoft Defe
 
 For example, Tanium, a provider of endpoint management tools, offers a custom plugin for Copilot for Security — Tanium Skills. This plugin helps ground prompts and responses that leverage Tanium-gathered information and insights. 
  
-:::image type="content" source="media/copilot/security-copilot-architecture-tanium-example.svg" alt-text="Diagram of desc." lightbox="media/copilot/security-copilot-architecture-tanium-example.svg":::
+:::image type="content" source="../media/copilot/security-copilot-architecture-tanium-example.svg" alt-text="Diagram of the logical architecture for Copilot for Security with Tanium SSO highlighted as a third-party plug-in and with Tanium third-party data." lightbox="../media/copilot/security-copilot-architecture-tanium-example.svg":::
 
 In the illustration:
 

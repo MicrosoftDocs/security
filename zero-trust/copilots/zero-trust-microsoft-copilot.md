@@ -1,7 +1,7 @@
 ---
-title: Apply principles of Zero Trust to Microsoft Copilot
-description: Learn how to secure Microsoft Copilot with Zero Trust principles. 
-ms.date: 03/26/2024
+title: How do I apply Zero Trust principles to Microsoft Copilot?
+description: How to apply Zero Trust principles to Microsoft Copilot. 
+ms.date: 04/02/2024
 ms.service: security
 author: bcarter
 ms.author: bcarter
@@ -16,11 +16,14 @@ ms.collection:
 
 # Apply principles of Zero Trust to Microsoft Copilot
 
-<!---
-**Summary:** To apply Zero Trust principles to Microsoft Copilot, you need to determine your desired configuration of Microsoft Copilot to identify the data sets that can be analyzed and summarized, and then apply Zero Trust principles to those data sets and their access.
+**Summary:** To apply Zero Trust principles to Microsoft Copilot, you need to:
+
+1. Implement security protections for web-grounded prompts to the Internet.
+2. Add security protections for Microsoft Edge browser summarization.
+3. Complete recommended security protections for Copilot for Microsoft 365.
+4. Maintain security protections when using Microsoft Copilot and Copilot for Microsoft 365 together.
 
 ## Introduction
---->
 
 Microsoft Copilot or Copilot is an AI companion in coplilot.microsoft.com, Windows, Edge, Bing, and the Copilot mobile app. This article helps you implement security protections to keep your organization and data safe while using Copilot. By implementing these protections, you are building a foundation of Zero Trust.
 

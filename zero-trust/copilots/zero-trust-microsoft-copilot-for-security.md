@@ -24,6 +24,8 @@ ms.collection:
 4. Deploy or validate your threat protection.
 5. Secure access to third-party security products that you integrate with Copilot for Security.
 
+:::image type="content" source="../media/copilot/security-copilot-apply-zero-trust-steps.svg" alt-text="Diagram showing the four steps for applying Zero Trust principles to Microsoft Copilot for Security." lightbox="../media/copilot/security-copilot-apply-zero-trust-steps.svg":::
+
 ## Introduction
 
 As a part of introducing Microsoft Copilot for Security into your environment, Microsoft recommends that you build a strong foundation of security for your admin and SecOps staff user accounts and devices. Microsoft also recommends ensuring you have configured threat protection tools. If you’re integrating third-party security products with Copilot for Security, also ensure you’ve protected access to these products and related data.

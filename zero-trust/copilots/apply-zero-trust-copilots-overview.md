@@ -25,10 +25,11 @@ Implementing the Zero Trust "never trust, always verify" mindset requires change
 
 As a leader in security, Microsoft provides a practical roadmap and clear guidance for implementing Zero Trust. Microsoft’s set of Copilots are built on top of existing platforms, which inherit the protections applied to those platforms. For the details of applying Zero Trust to Microsoft’s platforms, see the [Zero Trust Guidance Center](/security/zero-trust/). By implementing these protections, you're building a foundation of Zero Trust security.
 
-These articles show you how to apply Zero Trust principles to:
+See these articles to apply Zero Trust principles to:
 
 - [Microsoft Copilot](zero-trust-microsoft-copilot.md)
 - [Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md)
+- [Microsoft Copilot for Security](zero-trust-microsoft-copilot-for-security.md)
 
 ## References
 

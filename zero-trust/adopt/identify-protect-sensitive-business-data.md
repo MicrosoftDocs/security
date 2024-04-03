@@ -146,9 +146,15 @@ Many organizations can take a four-staged approach to these deployment objective
 | --- | --- | --- | --- |
 | Discover and identify sensitive business data <br><br> Discover non-sanctioned SaaS apps <br><br> Encrypt network communication | Develop and test a classification schema <br><br> Apply labels to data across Microsoft 365 <br><br> Introduce basic DLP policies <br><br> Set up secure Microsoft Teams for sharing data internally and externally with business partners | Add protection to specific labels (encryption and other protection settings) <br><br> Introduce automatic and recommended labeling in Office apps and services <br><br> Extend DLP policies across Microsoft 365 services <br><br> Implement key insider risk management policies | Extend labels and protection to data in SaaS apps, including DLP <br><br> Extend automated classification to all services <br><br> Extend labels and protection to data at-rest in on-premises repositories <br><br> Protect organization data in your cloud infrastructure |
 
-If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
+If this staged approach works for your organization, you can use:
 
-:::image type="content" source="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png" alt-text="PowerPoint slide for the stages of your identify and protect sensitive business data deployment." lightbox="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png":::
+- This [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to present and track your progress through these stages and objectives for business leaders and other stakeholders. Here's the slide for this business scenario.
+
+  :::image type="content" source="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png" alt-text="PowerPoint slide for the stages of your identify and protect sensitive business data deployment." lightbox="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png":::
+
+- This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
+
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png" alt-text="The progress tracking worksheet for the Identify and protect sensitive business data scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png":::
 
 ### Understand your organization
 

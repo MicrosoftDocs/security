@@ -135,7 +135,7 @@ If this staged approach works for your organization, you can use:
 
 - This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-infrastructure.png" alt-text="The progress tracking worksheet for the Rapidly modernize your security posture business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-infrastructure.png":::
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-infrastructure.png" alt-text="The progress tracking worksheet for the Implement security breach prevention and recovery infrastructure business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-infrastructure.png":::
 
 ### Understand your organization
 
@@ -301,9 +301,9 @@ The Azure Backup service provides simple, secure, and cost-effective solutions t
 | Resource | Description |
 |:-----|:-----|
 | Module: [Design a solution for backup and disaster recovery](/training/modules/design-solution-for-backup-disaster-recovery/) | Learn how to select appropriate backup solutions and disaster recovery solutions for Azure workloads. |
-| [Overview of Microsoft 365 Backup]() | Get started with the documentation set for Microsoft 365 Backup. |
-| [What is the Azure Backup service?]() | Get started with the documentation set for Azure Backup. |
-| [Azure Backup and ransomware]() | Learn how Azure Backup protects against a ransomware attack. |
+| [Overview of Microsoft 365 Backup](/microsoft-365/syntex/backup/backup-overview) | Get started with the documentation set for Microsoft 365 Backup. |
+| [Overview of Azure Backup service](/azure/backup/backup-overview) | Get started with the documentation set for Azure Backup. |
+| [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware) | Learn how Azure Backup protects against a ransomware attack. |
 
 You can use Microsoft 365 Backup and Azure Backup as part of your BCDR solution.
 
@@ -371,6 +371,7 @@ After identifying the risks, you can take action to mitigate these risks, and if
 | Module: [Implement Microsoft Purview Insider Risk Management](/training/modules/implement-insider-risk-management/) | Learn how to use Microsoft Purview Insider Risk Management to plan your insider risk solution, create insider risk management policies and manage insider risk management alerts and cases. |
 
 <a name='stage-3'></a>
+
 #### Stage 3
 
 In this stage, you extend your backup and site recovery scope to include all business data and workloads, further your ability to prevent network-based attacks, and create a more formal design and plan for your threat and BCDR response.
@@ -413,6 +414,7 @@ Microsoft 365 Backup, Azure Backup, and Azure Site Recovery described in this ar
 | Module: [Design a solution for backup and disaster recovery](/training/modules/design-solution-for-backup-disaster-recovery/) | Learn how to select appropriate backup solutions and disaster recovery solutions for Azure workloads. |
 
 <a name='stage-4'></a>
+
 #### Stage 4
 
 In this stage, you further secure your network and ensure that your BCDR plan and process works by practicing it for destructive cyberattack situations.

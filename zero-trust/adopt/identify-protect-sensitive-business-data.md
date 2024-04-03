@@ -152,7 +152,7 @@ If this staged approach works for your organization, you can use:
 
   :::image type="content" source="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png" alt-text="PowerPoint slide for the stages of your identify and protect sensitive business data deployment." lightbox="../media/adoption-guide/zero-trust-protect-data-progress-tracking.png":::
 
-- This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
+- This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
   :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png" alt-text="The progress tracking worksheet for the Identify and protect sensitive business data scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-identify-protect-sensitive-data.png":::
 

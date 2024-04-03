@@ -247,7 +247,7 @@ If this staged approach works for your organization, you can use:
 
   :::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png" alt-text="Example of the four stages to track progress." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png":::
 
-- This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
+- This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
   :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-rapidly-modernize-security-posture.png" alt-text="The progress tracking worksheet for the Rapidly modernize your security posture business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-rapidly-modernize-security-posture.png":::
 

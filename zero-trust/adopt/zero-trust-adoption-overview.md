@@ -183,6 +183,10 @@ This guidance includes a [PowerPoint slide deck](https://download.microsoft.com/
 
 :::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="Example of a progress slide." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
 
+This guidance also includes an [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) with worksheets for each business scenario that you can use to assign owners and track progress for each stage, objective, and task. Here's an example.
+
+:::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png" alt-text="Example of the progress tracking worksheet for the Secure remote and hybrid work business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png":::
+
 Across the business scenarios, the implementation stages are roughly aligned so that accomplishing the objectives of Stage 1 across the scenarios help keep your organization progressing on all fronts together.
 
 ## Starting a Zero Trust journey

@@ -139,9 +139,15 @@ Many organizations can take a four-staged approach to these deployment objective
 | --- | --- | --- | --- |
 | Turn on XDR tools: <br>- Defender for Endpoint <br> - Defender for Office 365 <br> - Microsoft Entra ID Protection <br> - Defender for Identity  <br> - Defender for Cloud Apps <br><br> Investigate and respond to threats using Microsoft Defender XDR | Turn on Defender for Cloud <br><br> Define internal process for SecOps <br><br> Monitor business critical and honeypot resources with XDR tools | Turn on Defender for IoT <br><br> Design a Microsoft Sentinel workspace and ingest XDR signals <br><br> Proactively hunt for threats | Evolve SecOps as a discipline in your organization <br><br> Leverage automation to reduce load on your SecOps analysts |
 
-If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
+If this staged approach works for your organization, you can use:
 
-:::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png" alt-text="PowerPoint slide for the deployment stages of implementing threat detection and XDR." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png":::
+- This [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to present and track your progress through these stages and objectives for business leaders and other stakeholders. Here's the slide for this business scenario.
+
+  :::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png" alt-text="PowerPoint slide for the deployment stages of implementing threat detection and XDR." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png":::
+
+- This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
+
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-threat-protection.png" alt-text="The progress tracking worksheet for the Implement threat protection and XDR business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-threat-protection.png":::
 
 ### Understand your organization
 

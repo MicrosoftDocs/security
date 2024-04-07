@@ -42,7 +42,7 @@ The DoD Zero Trust Strategy covers seven pillars representing protection areas f
 
 The pillars span **45 Zero Trust capabilities**. Capabilities are achieved by completing one or more implementation activities. In the following tables, activities are tagged with `Target` or `Advanced`, based on Zero Trust phases defined by the DoD. A capability might include target activities, advanced activities, or both. See, Table 1. There are **152 activities** in total, 92 target and 60 advanced. DoD Zero Trust Capability Execution Roadmap sets a timeline for achieving **Target Level ZT** by 2027 and **Advanced Level ZT by 2032**.
 
-   ![Table of zero trust capabilities and the seven pillars.](../media/dod-zero-trust-strategy/zero-trust-capabilities.png)
+   ![Table of zero trust capabilities and the seven pillars.](/zero-trust//media/dod-zero-trust-strategy/zero-trust-capabilities.png)
 
 Activity details are outlined in the [Zero Trust Capabilities and Activities Execution Roadmap](https://dodcio.defense.gov/Portals/0/Documents/Library/ZTCapabilitiesActivities.pdf). The activities cover a range of technical and non-technical tasks. Technical tasks deploy, configure, and adopt security tools. Nontechnical tasks procure tools, create policies and standards, and assemble teams to operationalize the Zero Trust strategy.
 

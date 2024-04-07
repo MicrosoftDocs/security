@@ -44,7 +44,7 @@ The pillars span **45 Zero Trust capabilities**. Capabilities are achieved by co
 
    ![Table of zero trust capabilities and the seven pillars.](./media/dod-zero-trust-strategy/zero-trust-capabilities.png)
 
-Activity details are outlined in the [Zero Trust Capabilities and Activities Execution Roadmap](https://dodcio.defense.gov/Portals/0/Documents/Library/ZTCapabilitiesActivities.pdf). The activities cover a range of technical and non-technical tasks. Technical tasks deploy, configure, and adopt security tools. Nontechnical tasks procure tools, create policies and standards, and assemble teams to operationalize the Zero Trust strategy.
+Activity details are outlined in the [Zero Trust Capabilities and Activities Execution Roadmap](https://dodcio.defense.gov/Portals/0/Documents/Library/ZTCapabilitiesActivities.pdf). The activities cover a range of technical and nontechnical tasks. Technical tasks deploy, configure, and adopt security tools. Nontechnical tasks procure tools, create policies and standards, and assemble teams to operationalize the Zero Trust strategy.
 
 ## Scope of guidance
 

@@ -6,7 +6,7 @@ ms.subservice: security-fundamentals
 ms.topic: conceptual
 ms.date: 04/06/2024
 ms.author: jricketts
-author: janicerickets
+author: jricketts
 manager: martinco
 ms.reviewer: andrmass
 

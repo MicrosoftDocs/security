@@ -32,13 +32,13 @@ Microsoft has an expanding array of Zero Trust capabilities powered by a unified
 
 The DoD Zero Trust Strategy covers seven pillars representing protection areas for Zero Trust. Use the following links to go to sections of the guide. 
 
-* User
-* Device
-* Applications and workloads
-* Data
-* Network
-* Automation and orchestration
-* Visibility and analytics
+* [1 User](dod-zero-trust-strategy-user.md)
+* [2 Device](dod-zero-trust-strategy-device.md)
+* [3 Applications and workloads](dod-zero-trust-strategy-apps.md)
+* [4 Data](dod-zero-trust-strategy-data.md)
+* [5 Network](dod-zero-trust-strategy-network.md)
+* [6 Automation and orchestration](dod-zero-trust-strategy-automation.md)
+* [7 Visibility and analytics](dod-zero-trust-strategy-visibility.md)
 
 The pillars span **45 Zero Trust capabilities**. Capabilities are achieved by completing one or more implementation activities. In the following tables, activities are tagged with `Target` or `Advanced`, based on Zero Trust phases defined by the DoD. A capability might include target activities, advanced activities, or both. See, Table 1. There are **152 activities** in total, 92 target and 60 advanced. DoD Zero Trust Capability Execution Roadmap sets a timeline for achieving **Target Level ZT** by 2027 and **Advanced Level ZT by 2032**.
 

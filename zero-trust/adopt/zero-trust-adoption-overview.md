@@ -171,8 +171,8 @@ This Zero Trust adoption guidance recommends building a Zero Trust strategy and 
 
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
-- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
 
 Each business scenario is described in an article that describes how to progress the technical work through each of the lifecycle phases, starting with building the business case. The most appropriate resources are provided along the way.
@@ -262,8 +262,8 @@ For more information about how to use Secure Score, see [Secure Score documentat
 
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work with Zero Trust](secure-remote-hybrid-work.md)
-- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)
 
 ## Additional Zero Trust documentation

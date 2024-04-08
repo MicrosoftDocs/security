@@ -11,6 +11,8 @@
       href: adopt/rapidly-modernize-security-posture.md
     - name: Secure remote and hybrid work
       href: adopt/secure-remote-hybrid-work.md
+    - name: Identify and protect sensitive business data
+      href: adopt/identify-protect-sensitive-business-data.md
     - name: Prevent or reduce business damage from a breach
       items:
         - name: Overview
@@ -22,8 +24,6 @@
         - name: Implement threat protection and XDR
           href: adopt/prevent-reduce-business-damage-breach-threat-protection.md
           maintainContext: true
-    - name: Identify and protect sensitive business data
-      href: adopt/identify-protect-sensitive-business-data.md
     - name: Meet regulatory and compliance requirements
       href: adopt/meet-regulatory-compliance-requirements.md
 - name: Technology pillars

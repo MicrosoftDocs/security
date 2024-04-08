@@ -3,7 +3,7 @@ title: Overview - Use Zero Trust security to prepare for AI companions, includin
 description: Learn how to apply the principles of Zero Trust to your environment to prepapre for AI tools that include Web-grounded prompts, Microsoft 365-grounded prompts, and prompts grounded in data from your security tools.
 ms.date: 03/27/2024
 ms.service: security
-author: bcarter
+author: BrendaCarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
@@ -42,7 +42,7 @@ You can build a Zero Trust foundation by preparing your environment for AI compa
 
 :::image type="content" source="../media/copilot/use-zero-trust-to-prepare-for-ai.svg" alt-text="Mapping of Zero Trust work to preparing for AI companions." lightbox="../media/copilot/use-zero-trust-to-prepare-for-ai.svg":::
 
-The following table summarizes the illustration and links to recommended articles for implementing the recommended protections.
+The following table summarizes the illustration and links to articles for implementing the recommended protections.
 
 | Prepare for | Protections | See these Zero Trust articles |
 | --- | --- | --- |

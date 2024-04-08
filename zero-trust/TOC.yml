@@ -423,20 +423,20 @@
        items:
        - name: Configure Microsoft cloud services for the DoD Zero Trust Strategy
          href: dod-zero-trust-strategy-intro.md
-       - name: User
-         href: dod-zero-trust-strategy-user.md
-       - name: Device
-         href: dod-zero-trust-strategy-device.md
-       - name: Applications and workloads
-         href: dod-zero-trust-strategy-apps.md
-       - name: Data
-         href: dod-zero-trust-strategy-data.md
-       - name: Network
-         href: dod-zero-trust-strategy-network.md
-       - name: Automation and orchestration
-         href: dod-zero-trust-strategy-automation.md
-       - name: Visibility and analytics
-         href: dod-zero-trust-strategy-visibility.md
+         - name: User
+           href: dod-zero-trust-strategy-user.md
+         - name: Device
+           href: dod-zero-trust-strategy-device.md
+         - name: Applications and workloads
+           href: dod-zero-trust-strategy-apps.md
+         - name: Data
+           href: dod-zero-trust-strategy-data.md
+         - name: Network
+           href: dod-zero-trust-strategy-network.md
+         - name: Automation and orchestration
+           href: dod-zero-trust-strategy-automation.md
+         - name: Visibility and analytics
+           href: dod-zero-trust-strategy-visibility.md
      - name: More best practices
        items:
        - name: The immutable laws of security

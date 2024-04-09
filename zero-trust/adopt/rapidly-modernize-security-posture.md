@@ -28,6 +28,13 @@ For updates that affect text in the PowerPoint slides of the Plan phase, your op
 
 After updating, republish the updated slide deck in the Download Center.
 
+For updates that affect text in the Excel Business Scenario Objectives workbook of the Plan phase, your options are:
+
+- Locate the source Excel file in internal storage. 
+- Download a copy of the Excel file from the article.
+
+After updating, republish the updated Excel file in the Download Center.
+
 For new articles in this content set, please:
 
 - Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
@@ -459,6 +466,6 @@ Implementing Zero Trust is a journey. In enterprise-scale organizations, it can 
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
-- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)

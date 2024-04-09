@@ -25,7 +25,7 @@ ms.collection:
 
 ## Introduction
 
-Microsoft Copilot or Copilot is an AI companion in coplilot.microsoft.com, Windows, Edge, Bing, and the Copilot mobile app. This article helps you implement security protections to keep your organization and data safe while using Copilot. By implementing these protections, you are building a foundation of Zero Trust.
+Microsoft Copilot or Copilot is an AI companion in copilot.microsoft.com, Windows, Edge, Bing, and the Copilot mobile app. This article helps you implement security protections to keep your organization and data safe while using Copilot. By implementing these protections, you are building a foundation of Zero Trust.
 
 Zero Trust security recommendations for Copilot focus on protection for user accounts, user devices, and the data that is in scope for the way you configure Copilot.
 

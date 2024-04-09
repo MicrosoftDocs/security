@@ -28,6 +28,13 @@ For updates that affect text in the PowerPoint slides of the Plan phase, your op
 
 After updating, republish the updated slide deck in the Download Center.
 
+For updates that affect text in the Excel Business Scenario Objectives workbook of the Plan phase, your options are:
+
+- Locate the source Excel file in internal storage. 
+- Download a copy of the Excel file from the article.
+
+After updating, republish the updated Excel file in the Download Center.
+
 For new articles in this content set, please:
 
 - Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
@@ -336,7 +343,7 @@ For identity and device access, take a staged approach where you start with a sm
 
 :::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Pilot, evaluate, and full deployment adoption phases." lightbox="../media/adoption-guide/adoption-phases.svg":::
 
-Adoption for protecting data involves cascading the work and iterating as you go to be sure the policies you create are appropriately honed for your environment. This is described in the [Identify and protect sensitive data](identify-protect-sensitive-business-data.md) adoption scenario. Here's an example.
+Adoption for protecting data involves cascading the work and iterating as you go to be sure the policies you create are appropriately honed for your environment. This is described in the [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md) adoption scenario. Here's an example.
 
 :::image type="content" source="../media/adoption-guide/adoption-information-protection.svg" alt-text="Process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.svg":::
 
@@ -367,5 +374,5 @@ This data is customizable and can be used in conjunction with the other dashboar
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
-- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)

@@ -7,7 +7,7 @@ author: bcarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection:
-  - zerotrust-illustrations
+  - zerotrust
 ---
 
 # Zero Trust assessment and progress tracking resources

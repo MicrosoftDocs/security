@@ -11,6 +11,8 @@
       href: adopt/rapidly-modernize-security-posture.md
     - name: Secure remote and hybrid work
       href: adopt/secure-remote-hybrid-work.md
+    - name: Identify and protect sensitive business data
+      href: adopt/identify-protect-sensitive-business-data.md
     - name: Prevent or reduce business damage from a breach
       items:
         - name: Overview
@@ -22,8 +24,6 @@
         - name: Implement threat protection and XDR
           href: adopt/prevent-reduce-business-damage-breach-threat-protection.md
           maintainContext: true
-    - name: Identify and protect sensitive business data
-      href: adopt/identify-protect-sensitive-business-data.md
     - name: Meet regulatory and compliance requirements
       href: adopt/meet-regulatory-compliance-requirements.md
 - name: Technology pillars
@@ -257,8 +257,17 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-- name: Microsoft Copilot for Microsoft 365
-  href: zero-trust-microsoft-365-copilot.md
+- name: Microsoft Copilots
+  expanded: false
+  items: 
+    - name: Overview
+      href: copilots/apply-zero-trust-copilots-overview.md
+    - name: Zero Trust for Microsoft Copilot
+      href: copilots/zero-trust-microsoft-copilot.md
+    - name: Zero Trust for Copilot for Microsoft 365
+      href: copilots/zero-trust-microsoft-365-copilot.md
+    - name: Zero Trust for Microsoft Copilot for Security
+      href: copilots/zero-trust-microsoft-copilot-for-security.md
 - name: Microsoft Azure services
   expanded: false
   items: 
@@ -275,7 +284,6 @@
         href: azure-infrastructure-virtual-machines.md
       - name: Azure spoke virtual networks
         href: azure-infrastructure-iaas.md
-
       - name: Azure hub virtual networks
         href: azure-infrastructure-networking.md
     - name: Spoke virtual networks with Azure PaaS services
@@ -286,6 +294,8 @@
       href: azure-virtual-wan.md
     - name: IaaS applications in AWS 
       href: secure-iaas-apps.md
+    - name: Azure networking encryption 
+      href: azure-networking-encryption.md
     - name: Use SIEM and XDR to respond to incidents
       expanded: false
       items:
@@ -409,15 +419,38 @@
 - name: Best practices resources
   expanded: false
   items:
-    - name: The immutable laws of security
-      href: ten-laws-of-security.md
-    - name: Governance, risk, and compliance videos and slides
-      href: governance-risk-compliance-videos-and-decks.md
-    - name: Identity and access management videos and slides
-      href: identity-videos-and-decks.md
-    - name: Network security and containment videos and slides
-      href: network-containment-videos-and-decks.md
-    - name: Information protection and storage videos and slides
-      href: information-protection-and-storage-videos-and-decks.md
-    - name: Security operations videos and slides
-      href: /security/operations/security-operations-videos-and-decks?toc=/security/zero-trust/integrate/TOC.json&bc=/security/zero-trust/breadcrumb/toc.json
+     - name: US Government guidance
+       items:
+         - name: DoD Zero Trust Strategy
+           expanded: false
+           items:
+           - name: Introduction
+             href: dod-zero-trust-strategy-intro.md
+           - name: User
+             href: dod-zero-trust-strategy-user.md
+           - name: Device
+             href: dod-zero-trust-strategy-device.md
+           - name: Applications and workloads
+             href: dod-zero-trust-strategy-apps.md
+           - name: Data
+             href: dod-zero-trust-strategy-data.md
+           - name: Network
+             href: dod-zero-trust-strategy-network.md
+           - name: Automation and orchestration
+             href: dod-zero-trust-strategy-automation.md
+           - name: Visibility and analytics
+             href: dod-zero-trust-strategy-visibility.md
+     - name: More best practices
+       items:
+       - name: The immutable laws of security
+         href: ten-laws-of-security.md
+       - name: Governance, risk, and compliance videos and slides
+         href: governance-risk-compliance-videos-and-decks.md
+       - name: Identity and access management videos and slides
+         href: identity-videos-and-decks.md
+       - name: Network security and containment videos and slides
+         href: network-containment-videos-and-decks.md
+       - name: Information protection and storage videos and slides
+         href: information-protection-and-storage-videos-and-decks.md
+       - name: Security operations videos and slides
+         href: /security/operations/security-operations-videos-and-decks?toc=/security/zero-trust/integrate/TOC.json&bc=/security/zero-trust/breadcrumb/toc.json

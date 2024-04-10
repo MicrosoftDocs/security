@@ -62,6 +62,8 @@ Ensure you complete the following installations and configuration requirements:
 2. You have global administrator rights on the tenant that the script run against.
 3. You're assigned local administrator role on the computer that you use to run the scripts.
 
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../security-docs/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+
 #### Install the AzureAD module
 
 Use this command to install the AzureAD module.

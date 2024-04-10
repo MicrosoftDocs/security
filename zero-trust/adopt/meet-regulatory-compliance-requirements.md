@@ -28,6 +28,13 @@ For updates that affect text in the PowerPoint slides of the Plan phase, your op
 
 After updating, republish the updated slide deck in the Download Center.
 
+For updates that affect text in the Excel Business Scenario Objectives workbook of the Plan phase, your options are:
+
+- Locate the source Excel file in internal storage. 
+- Download a copy of the Excel file from the article.
+
+After updating, republish the updated Excel file in the Download Center.
+
 For new articles in this content set, please:
 
 - Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
@@ -181,9 +188,15 @@ Many organizations can take a four-staged approach to these technical activities
 | --- | --- | --- | --- |
 | Identify regulatory requirements that apply to your organization. <br><br> Use Compliance Manager to identify regulations that might affect your business, assess compliance with the high-level requirements imposed by those regulations, and plan remediation for identified gaps. <br><br> Review current guidance for regulations that apply to your organization.| Use content explorer in Microsoft Purview to  identify data that is subject to regulation requirements and assess its risk and exposure. Define custom classifiers to adapt this capability to your business needs. <br><br> Assess requirements for information protection, such as data retention and records management policies, and then implement basic information protection and data governance policies using retention and sensitivity labels. <br><br> Implement basic DLP policies to control the flow of regulated information. <br><br> Implement [communication compliance policies](/microsoft-365/compliance/communication-compliance) if required by regulations.| Extend data lifecycle management policies with automation. <br><br> Set up partitioning and isolation controls using sensitivity labels, DLP or [information barriers](/microsoft-365/compliance/information-barriers) if required by regulations. <br><br> Expand information protection policies by implementing container labeling, automatic and mandatory labeling, and stricter DLP policies. Then expand these policies to on-premises data, devices (endpoints), and third-party cloud services using other capabilities in Microsoft Purview. <br><br> Reassess compliance using Compliance Manager and identify and remediate remaining gaps.| Use Microsoft Sentinel to build reports based on the unified audit log to continuously assess and inventory the compliance status of your information. <br><br> Continue using Compliance Manager on an ongoing basis to identify and remediate remaining gaps and meet the requirements of new or updated regulations. |
 
-If this staged approach works for your organization, you can use [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
+If this staged approach works for your organization, you can use:
 
-:::image type="content" source="../media/adoption-guide/zero-trust-meet-regulatory-compliance-requirements-progress-tracking.png" alt-text="PowerPoint slide for the stages of your meet regulatory and compliance requirements deployment." lightbox="../media/adoption-guide/zero-trust-meet-regulatory-compliance-requirements-progress-tracking.png":::
+- This [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to present and track your progress through these stages and objectives for business leaders and other stakeholders. Here's the slide for this business scenario.
+
+  :::image type="content" source="../media/adoption-guide/zero-trust-meet-regulatory-compliance-requirements-progress-tracking.png" alt-text="PowerPoint slide for the stages of your meet regulatory and compliance requirements deployment." lightbox="../media/adoption-guide/zero-trust-meet-regulatory-compliance-requirements-progress-tracking.png":::
+
+- This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
+
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-meet-regulatory-compliance-requirements.png" alt-text="The progress tracking worksheet for the Meet regulatory and compliance requirements business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-meet-regulatory-compliance-requirements.png":::
 
 ### Stakeholder team
 
@@ -330,7 +343,7 @@ For identity and device access, take a staged approach where you start with a sm
 
 :::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Pilot, evaluate, and full deployment adoption phases." lightbox="../media/adoption-guide/adoption-phases.svg":::
 
-Adoption for protecting data involves cascading the work and iterating as you go to be sure the policies you create are appropriately honed for your environment. This is described in the [Identify and protect sensitive data](identify-protect-sensitive-business-data.md) adoption scenario. Here's an example.
+Adoption for protecting data involves cascading the work and iterating as you go to be sure the policies you create are appropriately honed for your environment. This is described in the [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md) adoption scenario. Here's an example.
 
 :::image type="content" source="../media/adoption-guide/adoption-information-protection.svg" alt-text="Process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.svg":::
 
@@ -361,5 +374,5 @@ This data is customizable and can be used in conjunction with the other dashboar
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
 - [Secure remote and hybrid work](secure-remote-hybrid-work.md)
-- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)

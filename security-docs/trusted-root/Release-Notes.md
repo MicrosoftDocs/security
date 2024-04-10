@@ -12,19 +12,20 @@ ms.topic: conceptual
 
 The Microsoft Trusted Root Certificate Program releases changes to our Root Store on a monthly cadence, except for December. The public can expect the following cadence for releases: 
 1.	Additions and non-deprecating modifications will be completed any month
-2.	Certificate Authority (CA)-initiated and CA-confirmed deprecations will occur on even numbered months
-3.	Microsoft-initiated deprecations will occur in February and August releases
+2.	Certificate Authority (CA)-initiated and CA-confirmed deprecations occur on even numbered months
+3.	Microsoft-initiated deprecations occur in February and August releases
 
-If you are a certificate user who has active certificates chaining up to a deprecating root,  please reach out to your CA to understand how changes may impact your certificates. 
+If you are a certificate user who has active certificates chained up to a deprecating root,  please reach out to your CA to understand how changes may impact your certificates. 
 Update packages will be available for download and testing at <https://aka.ms/CTLDownload> 
 
-Please note, the changes listed are accurate at the time of posting but are subject to change.
+Note that the changes listed are accurate at the time of posting but are subject to change.
 
 A list of Root Store participants, updated monthly, can be found here: <https://aka.ms/trustcertpartners>. 
 
 ## 2024
 | Month |	Date of Release	| Release Notes |
 |---|---|---|
+| March | March 26 | [Deployment Notice for March 2024](2024/March2024.md) |
 | February | February 27 | [Deployment Notice for February 2024](2024/Feb2024.md) |
 
 ## 2023
@@ -70,8 +71,8 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 | May | May 19  | [Deployment Notice Posted May 19](2020/May2020.md) |
 | April | April 28  | [Deployment Notice Posted April 21](2020/April2020-2.md) |
 | April |   | [Notice Posted April 1](2020/April2020.md) |
-| March | March 24th  | [Deployment Notice Posted March 18](2020/March2020.md) |
-| February | February 25th  | [Deployment Notice Posted February 3](2020/Feb2020.md) |
+| March | March 24  | [Deployment Notice Posted March 18](2020/March2020.md) |
+| February | February 25  | [Deployment Notice Posted February 3](2020/Feb2020.md) |
 | January | January 28  | [Deployment Notice Posted January 22](2020/Jan2020.md) |
 
 ## 2019 

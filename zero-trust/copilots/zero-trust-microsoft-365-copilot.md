@@ -1,9 +1,9 @@
 ---
-title: Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
-description: Learn how to secure Microsoft Copilot for Microsoft 365 with Zero Trust principles. 
-ms.date: 11/01/2023
+title: How do I apply Zero Trust principles to Microsoft Copilot for Microsoft 365?
+description: How to apply Zero Trust principles to Microsoft Copilot for Microsoft 365. 
+ms.date: 04/02/2024
 ms.service: security
-author: bcarter
+author: BrendaCarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
@@ -16,9 +16,21 @@ ms.collection:
 
 # Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
 
-Before you introduce Microsoft Copilot for Microsoft 365 or Copilot into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
+**Summary:** To apply Zero Trust principles to Microsoft Copilot for Microsoft 365, you need to apply seven layers of protection in your Microsoft 365 tenant:
 
-This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md) security to prepare your environment for Copilot in the following ways:
+1. Data protection
+2. Identity and access
+3. App protection
+4. Device management and protection
+5. Threat protection
+6. Secure collaboration with Teams
+7. User permissions to data
+
+## Introduction
+
+Before you introduce Microsoft Copilot for Microsoft 365 or Copilot into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](../zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
+
+This article provides steps to apply the [principles of Zero Trust](../zero-trust-overview.md) security to prepare your environment for Copilot in the following ways:
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
@@ -32,7 +44,7 @@ For the basics of Copilot, see the [overview](/microsoft-365-copilot/microsoft-3
 
 You apply Zero Trust principles for Copilot across the entire architecture, from users and devices to the application data that they have access to. The following diagram shows the logical architecture components.
 
-:::image type="content" source="media/copilot/logical-architecture-microsoft-365-copilot.svg" alt-text="Diagram of the logical architecture for Copilot showing Copilot-related components and the services and data within your Microsoft 365 tenant." lightbox="media/copilot/logical-architecture-microsoft-365-copilot.svg":::
+:::image type="content" source="../media/copilot/logical-architecture-microsoft-365-copilot.svg" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/logical-architecture-microsoft-365-copilot.svg":::
 
 In the diagram:
 
@@ -232,6 +244,8 @@ Use these resources to configure Defender for Endpoint Plan 1:
 - [Set up and configure](/microsoft-365/security/defender-endpoint/mde-p1-setup-configuration)
 - [Get started](/microsoft-365/security/defender-endpoint/mde-plan1-getting-started)
 
+<a name='windows-protection-capabilities'></a>
+
 #### Windows protection capabilities
 
 By default, Windows includes strong security and protections across hardware, operating system, apps, and more. See [Introduction to Windows security](/windows/security/introduction) to learn more. The following table lists the important Windows client threat protection capabilities included with Microsoft 365 E3. 
@@ -258,7 +272,7 @@ For more comprehensive threat protection, pilot and deploy Microsoft Defender XD
 
 Microsoft recommends enabling the components of Microsoft 365 in the order illustrated:
 
-:::image type="content" source="media/copilot/m365-defender-eval-process.png" alt-text="Diagram of the seven-step process to evaluate and deploy Microsoft Defender XDR components." lightbox="media/copilot/m365-defender-eval-process.png":::
+:::image type="content" source="../media/copilot/m365-defender-eval-process.png" alt-text="Diagram of the process to evaluate and deploy Microsoft Defender XDR components." lightbox="../media/copilot/m365-defender-eval-process.png":::
  
 For more information and a description of this illustration, see [Evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview#the-evaluation-process-for-microsoft-365-defender-cyber-security).
 
@@ -321,7 +335,7 @@ To detect existing oversharing:
 
 To streamline the assignment of Copilot licenses in your tenant with the appropriate protections in place, you do both in parallel. The following diagram shows how you can move through the phases of rolling out protections prior to assigning Copilot licenses to individual user accounts and their devices once they're protected.
 
-:::image type="content" source="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg" alt-text="Diagram of the evaluate, pilot, and full deployment phases of deploying Copilot in parallel with adopting information protection capabilities in your organization." lightbox="media/copilot/parallel-deployment-for-microsoft-365-copilot.svg":::
+:::image type="content" source="../media/copilot/parallel-deployment-for-microsoft-365-copilot.svg" alt-text="Diagram of applying protections and deploying Copilot in parallel." lightbox="../media/copilot/parallel-deployment-for-microsoft-365-copilot.svg":::
 
 As the diagram also shows, you can roll out information protection across your organization while you're deploying identity and device access protections.
 
@@ -331,14 +345,14 @@ As the diagram also shows, you can roll out information protection across your o
 
 |Training  |[Get started with Copilot](/training/paths/get-started-with-microsoft-365-copilot/)|
 |---------|---------|
-|:::image type="icon" source="media/generic-trophy.svg" border="false"::: | This learning path walks you through the basics of Copilot, showcases its versatility across various Microsoft 365 applications, and offers advice on maximizing its potential. |
+|:::image type="icon" source="../media/generic-trophy.svg" border="false"::: | This learning path walks you through the basics of Copilot, showcases its versatility across various Microsoft 365 applications, and offers advice on maximizing its potential. |
 > [!div class="nextstepaction"]
 > [Start >](/training/paths/get-started-with-microsoft-365-copilot/)
 
 
 |Training  |[Prepare your organization for Copilot](/training/paths/prepare-your-organization-microsoft-365-copilot/)|
 |---------|---------|
-|:::image type="icon" source="media/generic-trophy.svg" border="false"::: | This learning path examines the Copilot design, its security and compliance features, and provides instruction on how to implement Copilot. |
+|:::image type="icon" source="../media/generic-trophy.svg" border="false"::: | This learning path examines the Copilot design, its security and compliance features, and provides instruction on how to implement Copilot. |
 > [!div class="nextstepaction"]
 > [Start >](/training/paths/prepare-your-organization-microsoft-365-copilot/)
 
@@ -346,6 +360,12 @@ As the diagram also shows, you can roll out information protection across your o
 ## Next steps
 
 Watch the [How to get ready for Copilot](https://www.youtube.com/watch?v=oeX0lsMA69U&t=2s) video.
+
+See these additional articles for Zero Trust and Microsoft's Copilots:
+
+- [Overview](apply-zero-trust-copilots-overview.md)
+- [Microsoft Copilot](zero-trust-microsoft-copilot.md)
+- [Microsoft Copilot for Security](zero-trust-microsoft-copilot-for-security.md)
 
 Also see:
 
@@ -357,13 +377,13 @@ Also see:
 
 For a visual summary of the information in this article, see the **Copilot architecture & deployment** poster. 
 
-[![Copilot architecture poster thumb](media/tech-illus/microsoft-365-copilot-architecture-thumb.png)](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf)
+[![Copilot architecture poster thumb](../media/tech-illus/microsoft-365-copilot-architecture-thumb.png)](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf)
 
 [PDF](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.pdf) | [Visio](https://download.microsoft.com/download/c/d/6/cd6c6858-f87b-4dc5-a593-e87db0aa6029/microsoft-365-copilot-architecture.vsdx)
 
 Use the Visio file to customize these illustrations for your own use.
 
-For more Zero Trust technical illustrations, click [here](zero-trust-tech-illus.md).
+For more Zero Trust technical illustrations, click [here](../zero-trust-tech-illus.md).
 
 ## References
 

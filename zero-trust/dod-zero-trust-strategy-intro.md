@@ -10,7 +10,7 @@ author: jricketts
 manager: martinco
 ms.reviewer: ehudi
 
-# Customer intent: I'm a security architect, and I need to learn how Microsoft cloud services align to the DoD Zero Trust Strategy so I can prioritize, deploy, and configure Zero Trust capabilities. My goal is to complete DoD Zero Trust activities for my organization.
+# Customer intent: I'm a security architect, and I need to learn how Microsoft cloud services align to the DoD Zero Trust Strategy so I can prioritize, deploy, and configure Zero Trust capabilities. My goal is to complete DoD Zero Trust activities for my organization. 
 ---
 
 # Configure Microsoft cloud services for the DoD Zero Trust Strategy

@@ -34,7 +34,7 @@ This section has Microsoft guidance and recommendations for DoD Zero Trust activ
 
 ### 4.1 Data catalog risk alignment
 
-Use [Microsoft Purview](/purview/purview) solutions to identify, govern, protect, and manage data where it resides. 
+Microsoft Purview solutions help discover, identify, govern, protect, and manage data where it resides. Microsoft Purview provides three to identify items so that they can be classified. Items can be classified manually, by users, via automated pattern recognition, as with sensitive information types, and via machine learning.
 
 |DoD Activity Description and Outcome|Microsoft guidance and recommendations|
 |---|---|
@@ -42,7 +42,7 @@ Use [Microsoft Purview](/purview/purview) solutions to identify, govern, protect
 
 ### 4.2 DoD enterprise data governance
 
-Implement Microsoft Purview Information Protection solutions by using sensitivity labels. You can create sensitivity labels relevant to your organization, control which labels are visible for users, and define the label scope. Scope labels to files, emails, meetings, Microsoft Teams, SharePoint sites, and more. Labels protect content with encryption, limit external sharing, and prevent data loss.
+Microsoft Purview Information Protection uses sensitivity labels. You can create sensitivity labels relevant to your organization, control which labels are visible for users, and define the label scope. Scope labels to files, emails, meetings, Microsoft Teams, SharePoint sites, and more. Labels protect content with encryption, limit external sharing, and prevent data loss.
 
 |DoD Activity Description and Outcome|Microsoft guidance and recommendations|
 |---|---|
@@ -50,7 +50,7 @@ Implement Microsoft Purview Information Protection solutions by using sensitivit
 |`Target` **4.2.2 Interoperability Standards**</br>The DoD Enterprise collaborating with the organizations develops interoperability standards integrating mandatory Data Rights Management (DRM) and Protection solutions with necessary technologies to enable ZT target functionality. </br></br>**Outcome**: </br>- Formal standards are in place by the enterprise for the appropriate data standards</br></br>|**Azure Rights Management**</br>Use Azure RMS for data rights management (DRM) and protection interoperability across DoD entities collaborating with Microsoft 365 services.</br>- [Azure RMS](/azure/information-protection/what-is-azure-rms)</br>- [Apps that support ARM](/azure/information-protection/requirements-applications)|
 |`Target` **4.2.3 Develop Software Defined Storage (SDS) Policy**</br>The DoD enterprise working with organizations establishes a software define storage (SDS) policy and standards based on industry best practices. DoD organizations evaluate current data storage strategy and technology for implementation of SDS. Where appropriate storage technology is identified for SDS implementation. </br></br>**Outcomes**: </br>- Determine need for SDS tool implementation</br>- Policy for SDS is created at the enterprise and org levels|**SharePoint Online**</br>Use SharePoint Online and OneDrive for Business as a standard interoperable software design storage (SDS) solution. Restrict access to sensitive SharePoint Online sites and content with site access restriction policies. Prevent guest access to files while data loss prevention (DLP) rules are applied.</br>- [Restrict site access to group members](/sharepoint/restricted-access-control)</br>- [Prevent guest access to files with DLP rules](/sharepoint/sensitive-by-default)</br>- [Secure guest sharing](/microsoft-365/solutions/create-secure-guest-sharing-environment?view=o365-worldwide&preserve-view=true)</br></br>**Microsoft Defender for Cloud Apps**</br>Use Defender for Cloud Apps to block access to unauthorized cloud storage services.</br>- [Govern discovered apps](/defender-cloud-apps/mde-govern)</br></br>|
 
-### 4.3 Data labelingand tagging
+### 4.3 Data labeling and tagging
 
 Microsoft Purview Information Protection automatically classifies data based on sensitive information types you define. Policies for service- and client-side labeling ensure Microsoft 365 content created by your users is labeled and protected.
 
@@ -87,7 +87,7 @@ Microsoft 365 services encrypt data at rest and in transit. Microsoft Purview re
 |`Advanced` **4.5.4 DRM Enforcement via Data Tags and Analytics Pt2**</br>Extended data repositories are protected with DRM and Protection solutions. DoD Organizations implement extended data tags applicable to organizations versus mandated enterprise. Data is encrypted in extended repositories using additional tags. </br></br>**Outcomes**:</br>- All applicable data repositories are protected using DRM</br>- Data is encrypted using extended data tags from the org levels|**Azure encryption**</br>Azure uses encryption for data at rest and in transit.</br>- [Azure encryption](/azure/security/fundamentals/encryption-overview)</br></br>**Azure Policy**</br>Enable Azure Policy to secure Azure SQL databases</br></br>See Microsoft guidance 4.5.1 in this section.</br></br>**Conditional Access**</br>Use Conditional Access policies for users that connect to Azure SQL.</br></br>See Microsoft guidance 4.4.5 in this section.</br></br>|
 |`Advanced` **4.5.5 DRM Enforcement via Data Tags and Analytics Pt3**</br>DRM and Protection solutions integrate with AI and ML tooling for encryption, rights management and protection functions. </br></br>**Outcomes**:</br>- Analytics from ML/AI are integrated with DRM to better automate protections</br>- Encryption protection is integrated with AI/ML and updated encryption methods are used as needed|**Microsoft Purview Information Protection**</br>Use Microsoft Purview Information Protection to classify data, based on sensitive information types, and by classifiers trained by machine learning (ML).</br></br>See Microsoft guidance 4.3.5 in this section.</br></br>**Azure Machine Learning**</br>Azure Machine Learning and Azure OpenAI Service use the Azure Storage and Azure Compute services that encrypt data.</br>- [Data encryption](/azure/machine-learning/concept-data-encryption)</br>- [Azure OpenAI encryption of data at rest](/azure/ai-services/openai/encrypt-data-at-rest)</br></br>**Conditional Access**</br>Define authentication context with Identity Protection risk signals. Require authentication context for labeled SharePoint sites and custom applications.</br>- [Authentication context](/entra/identity-platform/developer-guide-conditional-access-authentication-context)</br></br>See Microsoft guidance 4.4.5 in this section.</br></br>|
 
-## 4.6 Data loss prevention (DLP)
+### 4.6 Data loss prevention (DLP)
 
 Microsoft Purview Data Loss Prevention (DLP) policies prevent data from leaving your organization. You can apply DLP policies to data at rest, in use, and in motion. DLP policies are enforced where data resides in cloud services, on-premises file shares, also on Windows and macOS devices.
 

@@ -57,6 +57,10 @@ This article is a part of a series of articles that demonstrate how to apply the
 
 The following diagram shows the reference architecture. The hub VNet is highlighted in red. For more information about this architecture, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
+//FIX DDoS Protection should be assigned to the Spoke virtual network as well
+
+//FIX Should we revisit the use of Service Endpoints in this design?
+
 :::image type="content" source="media/hub/azure-infra-hub-architecture-1.svg" alt-text="The reference architecture for the components of a hub virtual network with Zero Trust principles applied." lightbox="media/hub/azure-infra-hub-architecture-1.svg":::
 
 For this reference architecture, there are many ways you can deploy the resources across the Azure subscription. The reference architecture shows the recommendation of isolating all resources for the hub VNet within a dedicated resource group. The resources for the spoke VNet are also shown for comparison. This model works well if different teams are given responsibility for these different areas.

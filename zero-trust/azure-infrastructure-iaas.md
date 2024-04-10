@@ -263,8 +263,7 @@ The outbound connections are:
 
 Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here's an example diagram of using application security groups to define network traffic patterns in the network security groups for a spoke VNet that is used along with a hub VNet. This is the recommended configuration.
 
-> [!WARNING]
-> These diagrams need to be updated to show at least an option with the Azure Firewall, similar to [the PaaS Article](azure-infrastructure-paas.md#deploy-application-specific-rules)
+//FIX These diagrams need to be updated to show at least an option with the Azure Firewall, similar to [the PaaS Article](azure-infrastructure-paas.md#deploy-application-specific-rules)
 
 :::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.svg" alt-text="The recommended configuration of networking patterns for a three-tier web application in a hub-spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-7.svg":::
 
@@ -377,7 +376,7 @@ To enable Network Security Group Flow Logging, you can follow the [Tutorial: Log
 
 ### Protect inbound web traffic with IDPS
 
-New Article information, or link to architecture center: https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall
+//FIX New Article information, or link to architecture center: https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall
 
 ## Step 6: Secure access to the VNet and application
 

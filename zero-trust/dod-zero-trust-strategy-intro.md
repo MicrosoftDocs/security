@@ -4,7 +4,7 @@ description: Minimize DoD attack surface, reduce risks, enable data-sharing and 
 ms.service: security
 ms.subservice: security-fundamentals
 ms.topic: conceptual
-ms.date: 04/07/2024
+ms.date: 04/10/2024
 ms.author: jricketts
 author: jricketts
 manager: martinco

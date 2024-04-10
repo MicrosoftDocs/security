@@ -4,7 +4,7 @@ description: Minimize attack surface, reduce risks, enable collaboration, safegu
 ms.service: security
 ms.subservice: security-fundamentals
 ms.topic: conceptual
-ms.date: 04/07/2024
+ms.date: 04/10/2024
 ms.author: jricketts
 author: jricketts
 manager: martinco
@@ -20,7 +20,8 @@ The strategy and accompanying execution plans outline a path to adopt a new cybe
 
 The DoD Zero Trust Strategy covers seven pillars representing protection areas for Zero Trust. Use the following links to go to sections of the guide. 
 
-* [1 User](dod-zero-trust-strategy-user.md)
+* [Introduction](dod-zero-trust-strategy-intro.md)
+* User
 * [2 Device](dod-zero-trust-strategy-device.md)
 * [3 Applications and workloads](dod-zero-trust-strategy-apps.md)
 * [4 Data](dod-zero-trust-strategy-data.md)
@@ -144,7 +145,7 @@ Microsoft Entra ID supports certificate authentication with certificates issued 
 Configure Microsoft cloud services for the DoD Zero Trust Strategy:
 
 * [Introduction](dod-zero-trust-strategy-intro.md) 
-* [User](dod-zero-trust-strategy-user.md) You're here
+* User
 * [Device](dod-zero-trust-strategy-device.md)
 * [Applications and workloads](dod-zero-trust-strategy-apps.md)
 * [Data](dod-zero-trust-strategy-data.md)

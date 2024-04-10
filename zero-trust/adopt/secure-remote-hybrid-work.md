@@ -28,6 +28,13 @@ For updates that affect text in the PowerPoint slides of the Plan phase, your op
 
 After updating, republish the updated slide deck in the Download Center.
 
+For updates that affect text in the Excel Business Scenario Objectives workbook of the Plan phase, your options are:
+
+- Locate the source Excel file in internal storage. 
+- Download a copy of the Excel file from the article.
+
+After updating, republish the updated Excel file in the Download Center.
+
 For new articles in this content set, please:
 
 - Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
@@ -167,9 +174,15 @@ Many organizations can take a four-staged approach to these deployment objective
 | --- | --- | --- | --- |
 | Verify and secure every identity with strong authentication <br><br> Integrate SaaS apps with Microsoft Entra ID for single sign-on <br><br> All new applications use modern authentication | Register devices with Microsoft Entra ID <br><br> Implement **Starting point** Zero Trust identity and device access policies <br><br> Use Microsoft Entra application proxy with on-premises apps for single sign-on | Enroll devices in your device management solution and apply recommended security protections <br><br> Allow only compliant and trusted devices to access data | Monitor device configuration drift <br><br> Implement passwordless authentication |
 
-If this staged approach works for your organization, you can share your progress with your teams and business leaders by downloading [this PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to track your progress through these stages and objectives. Here's the initial slide for this business scenario.
+If this staged approach works for your organization, you can use:
 
-:::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="PowerPoint slide for the stages of your secure remote and hybrid work deployment." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
+- This [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to present and report on your progress through these stages and objectives to business leaders and other stakeholders. Here's the slide for this business scenario.
+
+  :::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="PowerPoint slide for the stages of your secure remote and hybrid work deployment." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
+
+- This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
+
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png" alt-text="The progress tracking worksheet for the Secure remote and hybrid work business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png":::
 
 If your organization subscribes to a specific Governance Risk & Compliance (GRC) or Security Operations Center (SOC) strategy, it is vitally important that the technical work incorporate configurations that meet these requirements.
 
@@ -403,6 +416,6 @@ Additional resources for day-to-day governance and operation include:
 
 - [Zero Trust adoption framework overview](zero-trust-adoption-overview.md)
 - [Rapidly modernize your security posture](rapidly-modernize-security-posture.md)
-- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md)
+- [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md)
 - [Meet regulatory and compliance requirements](meet-regulatory-compliance-requirements.md)

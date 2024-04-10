@@ -87,7 +87,7 @@ Microsoft Defender XDR has detection and response capabilities with standard and
 
 ### 6.6 API standardization
 
-Microsoft Graph API has a standard interface to interact with Microsoft cloud services. Azure API Management can be used to protect other APIs used by your organization.
+Microsoft Graph API has a standard interface to interact with Microsoft cloud services. Azure API Management can  protect APIs hosted by your organization.
 
 |DoD Activity Description and Outcome|Microsoft guidance and recommendations|
 |---|---|

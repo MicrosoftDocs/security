@@ -4,7 +4,7 @@ description: Learn how to minimize attack surface, reduce risks, enable collabor
 ms.service: security
 ms.subservice: security-fundamentals
 ms.topic: conceptual
-ms.date: 04/07/2024
+ms.date: 04/10/2024
 ms.author: jricketts
 author: jricketts
 manager: martinco
@@ -21,13 +21,14 @@ The strategy and accompanying execution plans outline a path to adopt a new cybe
 
 The DoD Zero Trust Strategy covers seven pillars representing protection areas for Zero Trust. Use the following links to go to sections of the guide. 
 
-* [1 User](dod-zero-trust-strategy-user.md)
-* [2 Device](dod-zero-trust-strategy-device.md)
-* [3 Applications and workloads](dod-zero-trust-strategy-apps.md)
-* [4 Data](dod-zero-trust-strategy-data.md)
-* [5 Network](dod-zero-trust-strategy-network.md)
-* [6 Automation and orchestration](dod-zero-trust-strategy-automation.md)
-* [7 Visibility and analytics](dod-zero-trust-strategy-visibility.md)
+* [Introduction](dod-zero-trust-strategy-intro.md)
+* [User](dod-zero-trust-strategy-user.md)
+* [Device](dod-zero-trust-strategy-device.md)
+* [Applications and workloads](dod-zero-trust-strategy-apps.md)
+* [Data](dod-zero-trust-strategy-data.md)
+* [Network](dod-zero-trust-strategy-network.md)
+* [Automation and orchestration](dod-zero-trust-strategy-automation.md)
+* Visibility and analytics
 
 ## 7 Visibility and analytics
 
@@ -106,4 +107,4 @@ Configure Microsoft cloud services for the DoD Zero Trust Strategy:
 * [Data](dod-zero-trust-strategy-data.md)
 * [Network](dod-zero-trust-strategy-network.md)
 * [Automation and orchestration](dod-zero-trust-strategy-automation.md)
-* [Visibility and analytics](dod-zero-trust-strategy-visibility.md) You're here
+* Visibility and analytics

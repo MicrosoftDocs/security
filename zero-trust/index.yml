@@ -62,6 +62,8 @@ landingContent:
           url:  adopt/prevent-reduce-business-damage-breach.md
         - text: Meet regulatory and compliance requirements
           url:  adopt/meet-regulatory-compliance-requirements.md
+        - text: Progress tracking resources
+          url:  adopt/zero-trust-assessment-progress-tracking-resources#progress-tracking-resources-for-the-adoption-framework-business-scenarios
 
  # Card
   - title: Microsoft 365 deployment plan for Zero Trust
@@ -87,6 +89,20 @@ landingContent:
           - text: Advanced deployment guide for Zero Trust with Microsoft 365 (requires sign-in)
             url: https://go.microsoft.com/fwlink/?linkid=2224820
 
+# Card
+  - title: Zero Trust for Microsoft Copilots
+    linkLists:
+      - linkListType: deploy
+        links:
+        - text: Overview
+          url:  copilots/apply-zero-trust-copilots-overview.md
+        - text: Microsoft Copilot
+          url:  copilots/zero-trust-microsoft-copilot.md
+        - text: Microsoft 365 Copilot
+          url:  copilots/zero-trust-microsoft-365-copilot.md
+        - text: Copilot for Security
+          url:  copilots/zero-trust-microsoft-copilot-for-security.md
+
  # Card
   - title: Zero Trust deployment plans with Microsoft Azure
     linkLists:
@@ -102,6 +118,8 @@ landingContent:
             url:  secure-iaas-apps.md
           - text: Microsoft Sentinel and Microsoft Defender XDR
             url: /security/operations/siem-xdr-overview
+          - text: Microsoft networking encryption
+            url: azure-networking-encryption.md
 
  # Card
   - title: Technology partner integrations

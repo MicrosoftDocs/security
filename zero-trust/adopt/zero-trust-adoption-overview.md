@@ -283,6 +283,7 @@ For each business scenario, you can use the following progress tracking resource
 | Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="Screenshot of a slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
 | Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="Screenshot of a worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the Plan phase. | Business scenario project leads, IT leads, and IT implementers. |
 
+For additional resources, see [Zero Trust assessment and progress tracking resources](../zero-trust-assessment-progress-tracking-resources.md).
 
 ## Additional Zero Trust documentation
 

@@ -10,7 +10,7 @@ author: jricketts
 manager: martinco
 ms.reviewer: andrmass
 
-# Customer intent: I'm a security architect. I need to understand the DoD Zero Trust Strategy to prioritize, deploy, and configure Zero Trust capabilities. My goal is to complete DoD Zero Trust activities for applications and workloads.
+# Customer intent: I'm a security architect. I need to understand the DoD Zero Trust Strategy to prioritize, deploy, and configure Zero Trust capabilities. My goal is to complete DoD Zero Trust activities for applications and workloads. 
 ---
 
 # DoD Zero Trust Strategy for the applications and workloads pillar

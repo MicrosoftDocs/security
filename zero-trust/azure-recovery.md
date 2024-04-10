@@ -44,13 +44,31 @@ Maybe we have a table like this:
 
 We need to include specific guidance for the persistent settings that are needed to protect backups and replication from being deleted.
 
+Fifth Families of Service
+
+Virtual machines such as VMs, AKS, Scale Sets that can be backed up with recovery vaults and replicated with Azure Site Recovery
+
+Data services that hold on to critical data themselves, and have their own service specific backup and replication considerations.  For SQL DB - links ... Key Vault as well. for other services, see the appropriate product documentation.
+
+Are configuration based - virtual networks, Azure Firewall, load balancers.  Infrastructure as code can be used to redeploy these; you can use resource locks to prevent manipulation, but you redeploy you don't restore.
+
+Maybe a fourth that is recovery infrastructure and Key Vault
+
+IaC tools - GitHub and Azure DevOps
+
 ## Configure Detection
 
 Here is where things are unclear for me - what is the best way to detect that resources are being destroyed or targetted for destruction?
 
-## Response
+## Incident Response
 
-Would this be a kind of response guide?  Would this be its own playbook?
+Your incident response should take the following into consideration...
+
+We recommend your incident response plan includes the following...
+
+Here is more information as/if needed.
+
+Response plan testing
 
 We could link them to the following:
 

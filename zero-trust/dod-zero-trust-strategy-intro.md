@@ -56,7 +56,7 @@ This document has summary guidance for 45 Zero Trust capabilities and prescripti
 
 This document prioritizes recommendations by product, or feature area, listing the most essential items first. When implementation actions span features in different Microsoft services, these actions are ordered in the required configuration sequence. Activity-level guidance lists all recommendations relevant for each activity. Your organization might complete the activity by doing a portion of the recommended configuration or implementing alternative solutions.
 
-The DoD Zero Trust Strategy assigns activities to Target or Advanced phases. This guide indicates `Target` and `Adanced` in the activity title. Completion of all activities isn’t needed for Target-level ZT, before you start Advanced ZT activities. Implementing and configuring a feature often meets the required outcomes for target and advanced activities. We recommend implementing key protections first, following the [Microsoft Zero Trust Rapid Modernization Plan](/security/zero-trust/zero-trust-ramp-overview).
+The DoD Zero Trust Strategy assigns activities to Target or Advanced phases. This guide indicates `Target` and `Adanced` in the activity title. Completion of all activities isn’t needed for Target-level ZT, before you start Advanced ZT activities. Implementing and configuring a feature often meets the required outcomes for target and advanced activities. We recommend implementing key protections first, following the [Microsoft Zero Trust Rapid Modernization Plan](/security/zero-trust/zero-trust-ramp-overview). 
 
 ## Next steps
 

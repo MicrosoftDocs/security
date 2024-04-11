@@ -22,12 +22,12 @@ The DoD Zero Trust Strategy covers seven pillars representing protection areas f
 
 * [Introduction](dod-zero-trust-strategy-intro.md)
 * User
-* [2 Device](dod-zero-trust-strategy-device.md)
-* [3 Applications and workloads](dod-zero-trust-strategy-apps.md)
-* [4 Data](dod-zero-trust-strategy-data.md)
-* [5 Network](dod-zero-trust-strategy-network.md)
-* [6 Automation and orchestration](dod-zero-trust-strategy-automation.md)
-* [7 Visibility and analytics](dod-zero-trust-strategy-visibility.md)
+* [Device](dod-zero-trust-strategy-device.md)
+* [Applications and workloads](dod-zero-trust-strategy-apps.md)
+* [Data](dod-zero-trust-strategy-data.md)
+* [Network](dod-zero-trust-strategy-network.md)
+* [Automation and orchestration](dod-zero-trust-strategy-automation.md)
+* [Visibility and analytics](dod-zero-trust-strategy-visibility.md)
 
 ## 1 User
 

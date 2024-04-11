@@ -39,7 +39,8 @@ This section has Microsoft guidance and recommendations for DoD Zero Trust activ
 
 ## 3.1 Application inventory
 
-Microsoft Entra ID is an identity provider (IdP) for applications and cloud platforms, not just Microsoft 365, and Azure. Microsoft Entra ID includes web portals and RESTful APIs to retrieve lists of integrated applications. Microsoft Defender for Cloud Apps, a component of Microsoft Defender XDR, has features to discover, inventory, and block unsanctioned apps.
+Microsoft Entra ID is an identity provider (IdP) for applications and cloud platforms, not just Microsoft 365, and Azure. Microsoft Entra ID includes web portals and RESTful APIs to retrieve lists of integrated applications. 
+Microsoft Defender for Cloud Apps, a component of Microsoft Defender XDR, has features to discover, inventory, and block unsanctioned apps.
 
 |DoD Activity Description and Outcome|Microsoft guidance and recommendations|
 |---|---|

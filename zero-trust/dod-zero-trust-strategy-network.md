@@ -40,7 +40,7 @@ The Azure Virtual Network service is a building block in your private network in
 
 When you deploy a multiple hub-and-spoke network topology in Azure, Azure Firewall handles routing traffic between virtual networks. Also, Azure Firewall Premium includes security features like Trasport-Layer Security (TLS) inspection, network intrusion, detection, and prevention system (IDPS), URL filtering, and content filtering.
 
-Use Azure network tools like Azure Network Watcher and Azure Monitor Network Insights to map and visualize network traffic flow. Microsoft Sentinel integration enables visibility and control over organizational network traffic, with workbooks, automation, and detection capabilities.
+Azure network tools like Azure Network Watcher and Azure Monitor Network Insights help you map and visualize network traffic flow. Microsoft Sentinel integration enables visibility and control over organizational network traffic, with workbooks, automation, and detection capabilities.
 
 |DoD Activity Description and Outcome|Microsoft guidance and recommendations|
 |---|---|

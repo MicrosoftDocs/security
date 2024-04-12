@@ -110,12 +110,40 @@ For business scenario project leads, IT leads, and IT implementers.
 
 ## Assessment resources
 
+
 To understand where your organization is on its Zero Trust journey, use these assessment resources.
+
+### Microsoft Zero Trust Security Posture Assessment
+
+Evaluate your Zero Trust security posture and maturity level. 
+
+For IT department project leads and implementers.
+
+[Microsoft Zero Trust Security Posture Assessment](https://www.microsoft.com/security/business/zero-trust/maturity-model-assessment-tool) 
+
+:::image type="content" source="./media/adoption-guide/zero-trust-posture-assessment-example.png" alt-text="Screenshot of assessment questions for identities." lightbox="./media/adoption-guide/zero-trust-posture-assessment-example.png":::
+
+
+### Zero Trust Assessment strategy workshop
+
+Evaluate your Zero Trust security posture and maturity level. 
+
+For IT department project leads and implementers. 
+
+ero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztassess](https://aka.ms/ztassess) 
+
+:::image type="content" source="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png":::
+
+
+
+<!---
 
 | Assessment resource | That helps you… | Designed for… |
 | --- | --- | --- |
 | [Microsoft Zero Trust Security Posture Assessment](https://www.microsoft.com/security/business/zero-trust/maturity-model-assessment-tool) <br><br> :::image type="content" source="./media/adoption-guide/zero-trust-posture-assessment-example.png" alt-text="Screenshot of assessment questions for identities." lightbox="./media/adoption-guide/zero-trust-posture-assessment-example.png"::: | Evaluate your Zero Trust security posture and maturity level. | IT department project leads and implementers. |
 | Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztassess](https://aka.ms/ztassess) <br><br> :::image type="content" source="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png"::: | Check your Microsoft 365 tenant configuration for Zero Trust readiness. | IT department project leads and implementers. |
+
+--->
 
 ## Recommended training
 

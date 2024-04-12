@@ -45,8 +45,8 @@ Each business scenario describes how to advance the required technical work thro
 
 For each business scenario, you can use the following progress tracking resources.
 
-### At-a-glance blueprint: Adoption Scenario Plan Phase Grid
-
+### At-a-glance blueprint for Zero Trust
+**Adoption Scenario Plan Phase Grid**
 
 Download —  [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf)
 
@@ -55,6 +55,8 @@ Download —  [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1f
 Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the **Plan** phase. 
 
 Designed for business scenario project leads, business leaders, and other stakeholders.
+
+### Business leader tracker for Zero Trust
 
 | Progress tracking resource | Helps you… | 
 | --- | --- |

@@ -21,7 +21,7 @@ The [DoD Zero Trust Strategy and Roadmap](https://www.defense.gov/News/Releases/
 The DoD Zero Trust Strategy covers seven pillars representing protection areas for Zero Trust. Use the following links to go to sections of the guide. 
 
 * [Introduction](dod-zero-trust-strategy-intro.md)
-* User
+* 1 User
 * [2 Device](dod-zero-trust-strategy-device.md)
 * [3 Applications and workloads](dod-zero-trust-strategy-apps.md)
 * [4 Data](dod-zero-trust-strategy-data.md)

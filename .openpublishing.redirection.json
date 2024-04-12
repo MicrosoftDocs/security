@@ -1,7 +1,7 @@
 { 
     "redirections": [
       {
-        "source_path": "zero-trust/isv/fido2-hardware-vendor.md",
+        "source_path": "security-docs/zero-trust/isv/fido2-hardware-vendor.md",
         "redirect_url": "/active-directory/authentication/fido2-hardware-vendor",
         "redirect_document_id": false
       },
@@ -46,73 +46,73 @@
         "redirect_document_id": true
       },
       {
-        "source_path": "zero-trust/develop/integrate-apps-with-azure-ad-microsoft-identity-platform.md",
+        "source_path": "security-docs/zero-trust/develop/integrate-apps-with-azure-ad-microsoft-identity-platform.md",
         "redirect_url": "/security/zero-trust/develop/integrate-apps-microsoft-identity-platform",
         "redirect_document_id": true
       },
 
       {
-        "source_path": "zero-trust/isv/secure-hybrid-access.md",
+        "source_path": "security-docs/zero-trust/isv/secure-hybrid-access.md",
         "redirect_url": "/azure/active-directory/manage-apps/secure-hybrid-access-integrations",
         "redirect_document_id": false
       },
 
       {
-        "source_path": "zero-trust/isv/identity-isv-integration-overview.md",
+        "source_path": "security-docs/zero-trust/isv/identity-isv-integration-overview.md",
         "redirect_url": "../integrate/identity",
         "redirect_document_id": false
       },
 
       {
-        "source_path": "zero-trust/isv/identity-isv-getting-started.md",
+        "source_path": "security-docs/zero-trust/isv/identity-isv-getting-started.md",
         "redirect_url": "../integrate/identity",
         "redirect_document_id": false
       },
 
       {
-        "source_path": "zero-trust/applications.md",
+        "source_path": "security-docs/zero-trust/applications.md",
         "redirect_url": "deploy/applications",
         "redirect_document_id": false
       },
 
       {
-        "source_path": "zero-trust/data.md",
+        "source_path": "security-docs/zero-trust/data.md",
         "redirect_url": "deploy/data",
         "redirect_document_id": false
       },
 
       {
-        "source_path": "zero-trust/endpoints.md",
+        "source_path": "security-docs/zero-trust/endpoints.md",
         "redirect_url": "deploy/endpoints",
         "redirect_document_id": false
       },
 
       {
-        "source_path": "zero-trust/identity.md",
+        "source_path": "security-docs/zero-trust/identity.md",
         "redirect_url": "deploy/identity",
         "redirect_document_id": false
       },
 
       {
-        "source_path": "zero-trust/infrastructure.md",
+        "source_path": "security-docs/zero-trust/infrastructure.md",
         "redirect_url": "deploy/infrastructure",
         "redirect_document_id": false
       },
 
       {
-        "source_path": "zero-trust/networks.md",
+        "source_path": "security-docs/zero-trust/networks.md",
         "redirect_url": "deploy/networks",
         "redirect_document_id": false
       },
 
       {
-        "source_path": "zero-trust/visibility-automation-orchestration.md",
+        "source_path": "security-docs/zero-trust/visibility-automation-orchestration.md",
         "redirect_url": "deploy/visibility-automation-orchestration",
         "redirect_document_id": false
       },
 
       {
-        "source_path": "zero-trust/identity-developer.md",
+        "source_path": "security-docs/zero-trust/identity-developer.md",
         "redirect_url": "develop/identity",
         "redirect_document_id": false
       },
@@ -354,7 +354,7 @@
          "redirect_document_id": false
       },
       {
-        "source_path": "zero-trust/integrate/sentinel-solution.md",
+        "source_path": "security-docs/zero-trust/integrate/sentinel-solution.md",
         "redirect_url": "/azure/sentinel/sentinel-solution",
         "redirect_document_id": false
       },
@@ -499,7 +499,7 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "zero-trust/zero-trust-microsoft-365-copilot.md",
+        "source_path": "security-docs/zero-trust/zero-trust-microsoft-365-copilot.md",
         "redirect_url": "/security/zero-trust/copilots/zero-trust-microsoft-365-copilot",
         "redirect_document_id": false
       },

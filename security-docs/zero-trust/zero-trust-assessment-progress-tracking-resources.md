@@ -130,7 +130,7 @@ Evaluate your Zero Trust security posture and maturity level.
 
 For IT department project leads and implementers. 
 
-ero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztassess](https://aka.ms/ztassess) 
+Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztassess](https://aka.ms/ztassess) 
 
 :::image type="content" source="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png":::
 

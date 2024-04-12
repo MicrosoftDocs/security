@@ -14,11 +14,11 @@ ms.reviewer: ehudi
 ---
 # DoD Zero Trust Strategy for the user pillar
 
-The [DoD Zero Trust Strategy and Roadmap](https://www.defense.gov/News/Releases/Release/Article/3225919/department-of-defense-releases-zero-trust-strategy-and-roadmap/) outlines a path for Department of Defense Components and Defense Industrial Base (DIB) partners to adopt a new cybersecurity framework based on Zero Trust principles. Zero Trust eliminates traditional perimeters and trust assumptions, enabling a more efficient architecture that enhances security, user experience, and mission performance.
+The [DoD Zero Trust Strategy and Roadmap](https://www.defense.gov/News/Releases/Release/Article/3225919/department-of-defense-releases-zero-trust-strategy-and-roadmap/) outlines a path for Department of Defense components and Defense Industrial Base (DIB) partners to adopt a new cybersecurity framework based on Zero Trust principles. Zero Trust eliminates traditional perimeters and trust assumptions, enabling a more efficient architecture that enhances security, user experiences, and mission performance.
 
-This guide provides Microsoft's guidance and recommendations for the 152 ZT activities in the [DoD Zero Trust Capability Execution Roadmap](https://dodcio.defense.gov/Portals/0/Documents/Library/ZTCapabilitiesActivities.pdf).
+This guide has recommendations for the 152 Zero Trust activities in the [DoD Zero Trust Capability Execution Roadmap](https://dodcio.defense.gov/Portals/0/Documents/Library/ZTCapabilitiesActivities.pdf). The sections correspond with the seven pillars of the DoD Zero Trust model. 
 
-The DoD Zero Trust Strategy covers seven pillars representing protection areas for Zero Trust. Use the following links to go to sections of the guide. 
+Use the following links to go to sections of the guide.
 
 * [Introduction](dod-zero-trust-strategy-intro.md)
 * 1 User

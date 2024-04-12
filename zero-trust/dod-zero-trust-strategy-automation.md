@@ -15,11 +15,11 @@ ms.reviewer: andrmass
 
 # DoD Zero Trust Strategy for the automation and orchestration pillar
 
-The U.S. Department of Defense (DoD) Zero Trust Portfolio Management Office (ZT PfMO) was established to orchestrate DoD-wide Zero Trust adoption and execution. In November 2022, the DoD ZT PfMO released the [DoD Zero Trust Strategy and Roadmap](https://www.defense.gov/News/Releases/Release/Article/3225919/department-of-defense-releases-zero-trust-strategy-and-roadmap/). 
+The [DoD Zero Trust Strategy and Roadmap](https://www.defense.gov/News/Releases/Release/Article/3225919/department-of-defense-releases-zero-trust-strategy-and-roadmap/) outlines a path for Department of Defense components and Defense Industrial Base (DIB) partners to adopt a new cybersecurity framework based on Zero Trust principles. Zero Trust eliminates traditional perimeters and trust assumptions, enabling a more efficient architecture that enhances security, user experiences, and mission performance.
 
-The strategy and accompanying execution plans outline a path to adopt a new cybersecurity framework to facilitate well-informed, risk-based decisions. This model incorporates Zero Trust principles by eliminating traditional perimeters and trust assumptions, enabling a more efficient architecture that enhances security, user experience, and mission performance. The Zero Trust Framework aims to minimize DoD attack surface, reduce risks, enable effective data-sharing and collaboration, proactively safeguard its technical estate, and disrupt adversarial activities.
+This guide has recommendations for the 152 Zero Trust activities in the [DoD Zero Trust Capability Execution Roadmap](https://dodcio.defense.gov/Portals/0/Documents/Library/ZTCapabilitiesActivities.pdf). The sections correspond with the seven pillars of the DoD Zero Trust model.
 
-The DoD Zero Trust Strategy covers seven pillars representing protection areas for Zero Trust. Use the following links to go to sections of the guide. 
+Use the following links to go to sections of the guide.
 
 * [Introduction](dod-zero-trust-strategy-intro.md)
 * [User](dod-zero-trust-strategy-user.md)
@@ -28,11 +28,11 @@ The DoD Zero Trust Strategy covers seven pillars representing protection areas f
 * [Data](dod-zero-trust-strategy-data.md)
 * [Network](dod-zero-trust-strategy-network.md)
 * Automation and orchestration
-* [7 Visibility and analytics](dod-zero-trust-strategy-visibility.md)
+* [Visibility and analytics](dod-zero-trust-strategy-visibility.md)
 
 ## 6 Automation and orchestration
 
-This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the Automation and Orchestration pillar. See [visibility, automation, and orchestration with Zero Trust](/security/zero-trust/deploy/visibility-automation-orchestration).
+This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the automation and orchestration pillar. See [visibility, automation, and orchestration with Zero Trust](/security/zero-trust/deploy/visibility-automation-orchestration).
 
 ## 6.1 Policy decision point (PDP) and policy orchestration
 
@@ -93,7 +93,7 @@ Microsoft Graph API has a standard interface to interact with Microsoft cloud se
 |DoD Activity Description and Outcome|Microsoft guidance and recommendations|
 |---|---|
 |`Target` **6.6.1 Tool Compliance Analysis**</br>Automation and Orchestration tooling and solutions are analyzed for compliance and capabilities based on the DoD Enterprise programmatic interface standard and requirements. Any more tooling or solutions are identified to support the programmatic interface standards and requirements. </br></br>**Outcomes**: </br>- API status is determined compliance or noncompliance to API standards</br>- Tools to be used are Identified|**Microsoft Graph security API**</br>Microsoft Defender, Microsoft Sentinel, and Microsoft Entra have documented APIs.</br>- [Security API](/graph/security-concept-overview)</br>- [Work with Microsoft Graph](/graph/best-practices-concept)</br>- [Identity protection APIs](/graph/api/resources/identityprotection-overview?view=graph-rest-1.0&preserve-view=true)</br></br>Follow best practices for APIs developed by your organization.</br>- [Application Programming Interface](https://www.cto.mil/wp-content/uploads/2023/11/API-Guide-2023.pdf)</br>- [RESTful web API design](/azure/architecture/best-practices/api-design)</br></br>|
-|`Target` **6.6.2 Standardized API Calls and Schemas Pt1**</br>The DoD enterprise works with organizations to establish a programmatic interface (e.g., API) standard and requirements as needed to enable target ZTA functionalities. DoD Organizations update programmatic interfaces to the new standard and mandate newly acquired/developed tools to meet the new standard. Tools unable to meet the standard are allowed by exception using a risk-based methodical approach. </br></br>**Outcomes**: </br>- Initial calls and schemas are implemented</br>- Noncompliant tools are replaced|**Complete activity 6.6.1**</br></br>**Azure API Management**</br>Use Azure API Management as an API gateway to communicate with APIs and create a consistent access schema for various APIs.</br>- [Azure API Management](/azure/api-management/api-management-key-concepts)</br></br>**Azure Automation tools**</br>Orchestrate Zero Trust actions using Azure Automation tools.</br>- [Integration and automation in Azure]()</br></br>|
+|`Target` **6.6.2 Standardized API Calls and Schemas Pt1**</br>The DoD enterprise works with organizations to establish a programmatic interface (e.g., API) standard and requirements as needed to enable target ZTA functionalities. DoD Organizations update programmatic interfaces to the new standard and mandate newly acquired/developed tools to meet the new standard. Tools unable to meet the standard are allowed by exception using a risk-based methodical approach. </br></br>**Outcomes**: </br>- Initial calls and schemas are implemented</br>- Noncompliant tools are replaced|**Complete activity 6.6.1.**</br></br>**Azure API Management**</br>Use Azure API Management as an API gateway to communicate with APIs and create a consistent access schema for various APIs.</br>- [Azure API Management](/azure/api-management/api-management-key-concepts)</br></br>**Azure Automation tools**</br>Orchestrate Zero Trust actions using Azure Automation tools.</br>- [Integration and automation in Azure]()</br></br>|
 |`Target` **6.6.3 Standardized API Calls and Schemas Pt2**</br>DoD organizations complete the migration to the new programmatic interface standard. Tools marked for decommission in the previous activity are retired and functions are migrated to modernized tools. Approved schemas are adopted based on the DoD Enterprise standard/requirements. </br></br>**Outcome**: </br>- All calls and schemas are implemented</br></br>|**Microsoft Sentinel**</br>Use Sentinel as an orchestration engine to trigger and execute actions in automation tools cited in this document.</br>- [Automate threat response with playbooks](/azure/sentinel/automate-responses-with-playbooks)|
 
 ## 6.7 Security operations center (SOC) and incident response (IR)

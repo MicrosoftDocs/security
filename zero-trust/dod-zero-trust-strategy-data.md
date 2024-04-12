@@ -14,11 +14,11 @@ ms.reviewer: andrmass
 ---
 # DoD Zero Trust Strategy for the data pillar
 
-The U.S. Department of Defense (DoD) Zero Trust Portfolio Management Office (ZT PfMO) was established to orchestrate DoD-wide Zero Trust adoption and execution. In November 2022, the DoD ZT PfMO released the [DoD Zero Trust Strategy and Roadmap](https://www.defense.gov/News/Releases/Release/Article/3225919/department-of-defense-releases-zero-trust-strategy-and-roadmap/). 
+The [DoD Zero Trust Strategy and Roadmap](https://www.defense.gov/News/Releases/Release/Article/3225919/department-of-defense-releases-zero-trust-strategy-and-roadmap/) outlines a path for Department of Defense components and Defense Industrial Base (DIB) partners to adopt a new cybersecurity framework based on Zero Trust principles. Zero Trust eliminates traditional perimeters and trust assumptions, enabling a more efficient architecture that enhances security, user experiences, and mission performance.
 
-The strategy and accompanying execution plans outline a path to adopt a new cybersecurity framework to facilitate well-informed, risk-based decisions. This model incorporates Zero Trust principles by eliminating traditional perimeters and trust assumptions, enabling a more efficient architecture that enhances security, user experience, and mission performance. The Zero Trust Framework aims to minimize DoD attack surface, reduce risks, enable effective data-sharing and collaboration, proactively safeguard its technical estate, and disrupt adversarial activities.
+This guide has recommendations for the 152 Zero Trust activities in the [DoD Zero Trust Capability Execution Roadmap](https://dodcio.defense.gov/Portals/0/Documents/Library/ZTCapabilitiesActivities.pdf). The sections correspond with the seven pillars of the DoD Zero Trust model.
 
-The DoD Zero Trust Strategy covers seven pillars representing protection areas for Zero Trust. Use the following links to go to sections of the guide. 
+Use the following links to go to sections of the guide.
 
 * [Introduction](dod-zero-trust-strategy-intro.md)
 * [User](dod-zero-trust-strategy-user.md)
@@ -31,7 +31,7 @@ The DoD Zero Trust Strategy covers seven pillars representing protection areas f
 
 ## 4 Data
 
-This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the Data pillar. See [Secure data with Zero Trust](/security/zero-trust/deploy/data) for more information.
+This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the data pillar. See [Secure data with Zero Trust](/security/zero-trust/deploy/data) for more information.
 
 ## 4.1 Data catalog risk alignment
 

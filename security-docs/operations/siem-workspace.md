@@ -12,6 +12,10 @@ ms.collection:
   - msftsolution-secops
   - msftsolution-scenario
   - zerotrust-azure
+  - usx-security
+appliesto: 
+    - Microsoft Sentinel in the Microsoft Defender portal
+    - Microsoft Sentinel in the Azure portal
 ---
 
 # Step 2. Architect your Microsoft Sentinel workspace
@@ -39,51 +43,37 @@ To use Microsoft Sentinel, the first step is to create your Log Analytics worksp
 
 It is a best practice to create separate workspaces for the operational and security data for data ownership and cost management for Microsoft Sentinel. For example, if there’s more than one person administering operational and security roles, your first decision for Zero Trust is whether to create separate workspaces for those roles.
 
+The unified security operations platform, which provides access to Microsoft Sentinel in the Defender portal, supports only a single workspace.
+
 For more information, see [Design criteria for Log Analytics workspaces](/azure/azure-monitor/logs/workspace-design#design-criteria).
 
 For an example of separate workspaces for operation and security roles, see [Contoso's solution](/azure/sentinel/sample-workspace-designs#contosos-solution).
 
 ### Log Analytics workspace design considerations
 
+<!--xref to sentinel docs? are these ready yet?-->
 For a single tenant, there are two ways Microsoft Sentinel workspaces can be configured:
 
-- Single tenant with a single Log Analytics workspace. In this case, the workspace becomes the central repository for logs across all resources within the tenant.
+- **Single tenant with a single Log Analytics workspace.** In this case, the workspace becomes the central repository for logs across all resources within the tenant.
 
-    - Advantages:
+    |Advantages  |Disadvantages  |
+    |---------|---------|
+    |- Central consolidation of logs. <br><br>- Easier to query information. <br><br>- Log Analytics RBAC to control access. For more information, see [Manage access to Log Analytics workspaces - Azure Monitor](/azure/azure-monitor/logs/manage-access?tabs=portal). <br><br>- Microsoft Sentinel RBAC for service RBAC. For more information, see [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles).     |  - May not meet governance requirements. <br><br>- There is a bandwidth cost between regions.       |
 
-       - Central consolidation of logs.
-       - Easier to query information.
-       - Log Analytics RBAC to control access. For more information, see [Manage access to Log Analytics workspaces - Azure Monitor](/azure/azure-monitor/logs/manage-access?tabs=portal).
-       - Microsoft Sentinel RBAC for service RBAC. For more information, see [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles).
+- **Single tenant with regional Log Analytics workspaces.** 
 
-    - Disadvantages:
-
-       - May not meet governance requirements.
-       - There is a bandwidth cost between regions.
-
-- Single tenant with regional Log Analytics workspaces. 
-
-    - Advantages:
-
-        - No cross-region bandwidth costs.
-        - May be required to meet governance.
-        - Granular data access control.
-        - Granular retention settings.
-        - Split billing.
-
-   - Disadvantages:
-
-     - No central pane of glass.
-     - Analytics, workbooks, and other configurations must be deployed multiple times.
+    |Advantages  |Disadvantages  |
+    |---------|---------|
+    |- No cross-region bandwidth costs. <br><br>- May be required to meet governance.<br><br> - Granular data access control.<br><br> - Granular retention settings.<br><br>- Split billing.   | - No central pane of glass.<br><br> - Analytics, workbooks, and other configurations must be deployed multiple times.       |
 
 To create your Log Analytics workspaces, see [Create Log Analytics workspaces](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
 
-## Step 3: Architect the Sentinel Workspace
+## Step 3: Architect the Microsoft Sentinel Workspace
 
 Onboarding Microsoft Sentinel requires selecting a Log Analytics workspace. The following are considerations for setting up Log Analytics for Microsoft Sentinel:
 
-- Create a “Security” resource group for governance purposes, which allows for isolation of Microsoft Sentinel resources and role-based access to the collection. For more information, see [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design).
-- Create a Log Analytics workspace in the “Security” resource group and onboard Microsoft Sentinel into it. 
+- Create a *Security* resource group for governance purposes, which allows for isolation of Microsoft Sentinel resources and role-based access to the collection. For more information, see [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design).
+- Create a Log Analytics workspace in the *Security* resource group and onboard Microsoft Sentinel into it. 
 This automatically gives you [31 days of data ingestion up to 10 Gb a day](/azure/sentinel/billing?tabs=commitment-tier#free-trial) free as part of a free trial. 
 - Set your Log Analytics Workspace supporting Microsoft Sentinel to [90 day retention](/azure/sentinel/billing?tabs=commitment-tier#data-retention-and-archived-logs-costs) at a minimum.
 
@@ -101,17 +91,23 @@ In addition, use the [Cloud Roles and Operations Management prescriptive guidanc
 
 ### Zero Trust with RBAC
 
-To comply with Zero Trust, we recommend that you configure RBAC based on the resources that are allowed to your users instead of providing them with access to the entire Microsoft Sentinel environment. The following table lists some of the Microsoft Sentinel-specific roles.
+To comply with Zero Trust, we recommend that you configure RBAC based on the resources that are allowed to your users instead of providing them with access to the entire Microsoft Sentinel environment.
+
+When you assign Microsoft Sentinel-specific Azure roles, you may come across other Azure and Log Analytics roles that may have been assigned to users for other purposes. For example, the *Log Analytics Contributor* and *Log Analytics Reader* roles grant access to a Log Analytics workspace. 
+
+For more information, see [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles) and [Manage access to Microsoft Sentinel data by resource](/azure/sentinel/resource-context-rbac).
+
+<!--use an include file?
+The following table lists some of the Microsoft Sentinel-specific roles.
 
 | Role name | Description |
 | --- | --- |
-| Microsoft Sentinel Reader | View data, incidents, workbooks, and other Microsoft Sentinel resources. |
-| Microsoft Sentinel Responder | In addition to the capabilities of the Microsoft Sentinel Reader role, manage incidents (assign, dismiss, etc.). This role is applicable to user types of security analysts. |
-| Microsoft Sentinel Playbook Operator | List, view, and manually run playbooks. This role is also applicable to user types of security analysts. This role is for granting a Microsoft Sentinel responder the ability to run Microsoft Sentinel playbooks with the least amount of privilege. |
-| Microsoft Sentinel Contributor | In addition to the capabilities of the Microsoft Sentinel Playbook Operator role, create and edit workbooks, analytics rules, and other Microsoft Sentinel resources. This role is applicable to user types of security engineers. |
-| Microsoft Sentinel Automation Contributor | Allows Microsoft Sentinel to add playbooks to automation rules. It isn't meant for user accounts. |
-
-When you assign Microsoft Sentinel-specific Azure roles, you may come across other Azure and Log Analytics roles that may have been assigned to users for other purposes. For example, the Log Analytics Contributor and Log Analytics Reader roles grant access to a Log Analytics workspace. To implement RBAC for a Microsoft Sentinel workspace, see [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles) and [Manage access to Microsoft Sentinel data by resource](/azure/sentinel/resource-context-rbac).
+| **Microsoft Sentinel Reader** | View data, incidents, workbooks, and other Microsoft Sentinel resources. |
+| **Microsoft Sentinel Responder** | In addition to the capabilities of the Microsoft Sentinel Reader role, manage incidents (assign, dismiss, etc.). This role is applicable to user types of security analysts. |
+| **Microsoft Sentinel Playbook Operator** | List, view, and manually run playbooks. This role is also applicable to user types of security analysts. This role is for granting a Microsoft Sentinel responder the ability to run Microsoft Sentinel playbooks with the least amount of privilege. |
+| **Microsoft Sentinel Contributor** | In addition to the capabilities of the Microsoft Sentinel Playbook Operator role, create and edit workbooks, analytics rules, and other Microsoft Sentinel resources. This role is applicable to user types of security engineers. |
+| **Microsoft Sentinel Automation Contributor** | Allows Microsoft Sentinel to add playbooks to automation rules. It isn't meant for user accounts. |
+-->
 
 ### Zero Trust in Multi-Tenant Architecture with Azure Lighthouse
 
@@ -132,9 +128,20 @@ Consider the following questions when implementing security best practices for A
 
 See [Manage Microsoft Sentinel workspaces at scale: Granular Azure RBAC](/azure/lighthouse/how-to/manage-sentinel-workspaces#granular-azure-role-based-access-control-azure-rbac) for the security best practices of Microsoft Sentinel and Azure Lighthouse.
 
+## Onboard your workspace to the unified security operations platform (Preview)
+
+If you're working with a single workspace, we recommend that you onboard your workspace to the unified security operations platform to view all your Microsoft Sentinel data together with XDR data in the Microsoft Defender portal.
+
+The unified security operations platform also provides improved capabilities, such as automatic attack disruption for SAP system, unified queries from the Defender **Advanced hunting** page, and unified incidents and entities across both Microsoft Defender and Microsoft Sentinel.
+
+For more information, see:
+
+- [Connect Microsoft Sentinel to Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-sentinel-onboard)
+- [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal)
+
 ## Recommended training
 
-The following are the recommended training modules for this step.
+The following are the recommended training modules for this step. Training content focuses on general availability features, and therefore doesn't include content for the unified security operations platform, which is in Preview.
 
 ### Introduction to Microsoft Sentinel
 

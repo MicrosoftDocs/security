@@ -5,7 +5,7 @@ description: Learn how to set up Microsoft Defender XDR and Microsoft Defender f
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
-ms.date: 3/29/2023
+ms.date: 04/14/2024
 ms.topic: article
 ms.service: microsoft-365-zero-trust
 ms.localization_priority: Normal
@@ -14,6 +14,7 @@ ms.collection:
   - msftsolution-secops
   - msftsolution-scenario
   - zerotrust-azure
+
 ---
 
 # Step 1. Set up your XDR tools
@@ -66,13 +67,14 @@ Use the following guidance to enable Microsoft 365 capabilities and integrate th
 
 The [Microsoft Defender portal](https://sip.security.microsoft.com/homepage) combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Microsoft Defender XDR unified portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
 
-The unified portal includes:
+By default, the unified portal includes:
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
 - **[Microsoft Defender for Identity](/defender-for-identity/what-is)** is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
+(Preview) Later, when you've set up your Microsoft Sentinel workspace, you can add Microsoft Sentinel to the Defender portal.
 
 Watch this short video to learn about the Microsoft Defender portal.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
@@ -90,7 +92,7 @@ Microsoft Entra ID Protection is licensed separately from Microsoft Defender XDR
 
 Microsoft Entra ID Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Microsoft Entra ID to allow or prevent account access, depending on how Conditional Access policies are configured.  
 
-For this solution and target scenario, we'll also ingest the signals from Microsoft Entra ID Protection into Sentinel. To enable Microsoft Entra ID Protection, use the following resources. 
+If you aren't going onboard your Microsoft Sentinel workspace to the unified security operations platform, we recommend that you also ingest the signals from Microsoft Entra ID Protection into Microsoft Sentinel. To enable Microsoft Entra ID Protection, use the following resources.
 
 |       Task  |     Description  |     See . . .  |
 |:---|:---|:---|
@@ -98,7 +100,7 @@ For this solution and target scenario, we'll also ingest the signals from Micros
 
 
 ## Enable Microsoft Defender for Cloud
-You can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include these signals in your Sentinel workspace.  
+You can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include these signals in your Microsoft Sentinel workspace.  
 
 <!---
 ![Image of Microsoft Defender XDR and Microsoft Defender for Cloud](./media/m365d-cloud.png)
@@ -133,7 +135,7 @@ Use the following guidance to enable Defender for Cloud and integrate capabiliti
 
 ## Next steps
 
-Continue to [Step 2](siem-workspace.md) to architect a Sentinel workspace. 
+Continue to [Step 2](siem-workspace.md) to architect a Microsoft Sentinel workspace.
 
 
 [![Image of Microsoft Sentinel and XDR solution steps with step 2 highlighted](./media/siem-xdr-solution-2.png)](siem-workspace.md)

@@ -32,7 +32,7 @@ Use the following links to go to sections of the guide.
 
 ## 6 Automation and orchestration
 
-This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the automation and orchestration pillar. See [visibility, automation, and orchestration with Zero Trust](/security/zero-trust/deploy/visibility-automation-orchestration).
+This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the automation and orchestration pillar. To learn more, see [visibility, automation, and orchestration with Zero Trust](/security/zero-trust/deploy/visibility-automation-orchestration).
 
 ## 6.1 Policy decision point (PDP) and policy orchestration
 

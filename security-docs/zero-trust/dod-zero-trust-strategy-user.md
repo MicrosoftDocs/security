@@ -46,6 +46,7 @@ Use Microsoft Entra ID to verify users and nonperson entities (NPE), continuousl
 ## 1.2 Conditional user access
 
 Microsoft Entra ID helps your organization implement conditional, dynamic user access. Features that support this capability include Microsoft Entra Conditional Access, Microsoft Entra ID Governance, custom roles, dynamic security groups, app roles, and custom security attributes.
+
 Conditional Access is the real-time Zero Trust policy engine in Microsoft Entra ID. Conditional Access policies use security signals from user, device, application, session, risk, and more to apply adaptive dynamic authorization for resources protected by Microsoft Entra ID.
 
 |DoD Activity Description and Outcome|Microsoft guidance and recommendations|

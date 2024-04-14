@@ -32,7 +32,7 @@ Use the following links to go to sections of the guide.
 
 ## 3 Applications and workloads
 
-This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the applications and workloads pillar. See [Secure applications with Zero Trust](/security/zero-trust/deploy/applications).
+This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the applications and workloads pillar. To learn more, see [Secure applications with Zero Trust](/security/zero-trust/deploy/applications).
 
   > [!NOTE]
   > Recommendations in this section align with the draft [DoD Enterprise DevSecOps Reference Design](https://dodcio.defense.gov/Portals/0/Documents/Library/DoDRefDesignCloudGithub.pdf).

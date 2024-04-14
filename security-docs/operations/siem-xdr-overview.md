@@ -4,7 +4,7 @@ description: Learn how to use Microsoft Sentinel with Microsoft Defender XDR and
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
-ms.date: 2/22/2024
+ms.date: 04/14/2024
 ms.topic: article
 ms.service: microsoft-365-zero-trust
 ms.localization_priority: Normal
@@ -13,6 +13,10 @@ ms.collection:
   - msftsolution-secops
   - msftsolution-overview
   - zerotrust-azure
+  - usx-security
+appliesto: 
+    - Microsoft Sentinel in the Microsoft Defender portal
+    - Microsoft Sentinel in the Azure portal
 ---
 
 <!---
@@ -48,9 +52,33 @@ This guidance helps you mature your Zero Trust architecture by mapping the princ
 
 ## Microsoft Sentinel and XDR architecture
 
+Microsoft Sentinel customers can use one of the following methods to integrate Microsoft Sentinel with Microsoft Defender XDR services:
+
+- Use Microsoft Sentinel data connectors to injest Microsoft Defender XDR service data into Microsoft Sentinel. In this case, view Microsoft Sentinel data in the Azure portal.
+
+- (Preview) Integrate Microsoft Sentinel and Microsoft Defender XDR into a single, unified security operations platform in the Microsoft Defender portal. In this case, view Microsoft Sentinel data directly in the Microsoft Defender portal with the rest of your Defender incidents, alerts, vulnerabilities, and other security data.
+
+This solution guide provides information for both methods. Throughout this solution guide, select the tab that's relevant for your workspace, depending on if you've onboarded your workspace to the unified security platform.
+
+## [Workspace onboarded (Preview)](#tab/onboarded)
+
+The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel with the unified security operations platform.
+
+:::image type="content" source="./media/sentinel-xdr-usx.svg" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr-usx.svg" border="false":::
+
+In this diagram:
+
+- Insights from signals across your entire organization feed into Microsoft Defender XDR and Microsoft Defender for Cloud.
+- Microsoft Sentinel provides support for multi-cloud environments and integrates with third-party apps and partners.
+- Microsoft Sentinel data is ingested together with your organization's data into the Microsoft Defender portal.
+- SecOps teams can then analyze and respond to threats identified by Microsoft Sentinel and Microsoft Defender XDR in the Microsoft Defender portal.
+
+
+## [Workspace not onboarded](#tab/not-onboarded)
+
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="./media/sentinel-xdr.svg" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.svg":::
+:::image type="content" source="./media/sentinel-xdr.svg" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.svg" border="false":::
 
 In this diagram:
 
@@ -58,6 +86,8 @@ In this diagram:
 - Microsoft Defender XDR and Microsoft Defender for Cloud send SIEM log data through Microsoft Sentinel connectors.
 - SecOps teams can then analyze and respond to threats identified in the Microsoft Sentinel and Microsoft Defender portals.
 - Microsoft Sentinel provides support for multi-cloud environments and integrates with third-party apps and partners.
+
+---
 
 ## Implementing Microsoft Sentinel and Microsoft Defender XDR for Zero Trust
 
@@ -73,9 +103,9 @@ In this section, we'll look into a typical attack scenario involving a phishing 
 
 ### Common attack order
 
-The following diagram shows a common attack order of a phishing scenario. 
+The following diagram shows a common attack order of a phishing scenario.
 
-:::image type="content" source="./media/common-attack-defense.svg" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.svg":::
+:::image type="content" source="./media/common-attack-defense.svg" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.svg" border="false":::
 
 The diagram also shows the Microsoft security products in place to detect each attack step and how attack signals and SIEM data flow to Microsoft Defender XDR and Microsoft Sentinel.
 
@@ -90,11 +120,21 @@ Here is a summary of the attack.
 | 5. Attacker moves laterally across Microsoft 365 apps and data | Microsoft Defender for Cloud Apps | Can detect anomalous activity of users accessing cloud apps. |
 | 6. Attacker downloads sensitive files from a SharePoint folder | Microsoft Defender for Cloud Apps | Can detect and respond to mass download events of files from SharePoint. |
 
+If you onboarded your Microsoft Sentinel workspace to the unified security operations platform, SIEM data is available with Microosft Sentinel directly in the Microsoft Defender portal.
+
 ### Incident response using Microsoft Sentinel and Microsoft Defender XDR
 
 Now that we've seen how a common attack takes place, let's look into leveraging the integration of Microsoft Sentinel and Microsoft Defender XDR for incident response.
 
-Here is the process of responding to an incident with Microsoft Defender XDR and Microsoft Sentinel:
+Here is the process of responding to an incident with Microsoft Defender XDR and Microsoft Sentinel. Select the relevant tab for your workspace depending on whether you onboarded your workspace to the unified security operations platform.
+
+## [Workspace onboarded (Preview)](#tab/onboarded)
+
+Complete all incident response steps directly in the Microsoft Defender portal, just as you would for other Microsoft Defender XDR incidents, including triage, investigation, and resolution.
+
+Use the Microsoft Sentinel area in the Microsoft Defender portal for features unavailable with the Defender portal alone.
+
+## [Workspace not onboarded](#tab/not-onboarded)
 
 1. Triage the incident in the Microsoft Sentinel portal.
 2. Move over to the Microsoft Defender portal to start your investigation.
@@ -104,6 +144,8 @@ Here is the process of responding to an incident with Microsoft Defender XDR and
 The following diagram shows the process, starting with discovery and triage in Microsoft Sentinel.
 
 :::image type="content" source="./media/investigation-flow.svg" alt-text="Image of incident investigation using Sentinel and Microsoft Defender XDR" lightbox="./media/investigation-flow.svg":::
+
+---
 
 For more information, see [Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR](respond-incident.md).
 
@@ -124,18 +166,18 @@ Capability or feature | Description | Product |
 | [Secure cloud applications](/azure/defender-for-cloud/defender-for-cloud-introduction#secure-cloud-applications) | A development security operations (DevSecOps) solution that unifies security management at the code level across multicloud and multiple-pipeline environments. | Microsoft Defender for Cloud |
 | [Improve your security posture](/azure/defender-for-cloud/defender-for-cloud-introduction#improve-your-security-posture) | A cloud security posture management (CSPM) solution that surfaces actions that you can take to prevent breaches. | Microsoft Defender for Cloud |
 | [Protect cloud workloads](/azure/defender-for-cloud/defender-for-cloud-introduction#protect-cloud-workloads) | A cloud workload protection platform (CWPP) with specific protections for servers, containers, storage, databases, and other workloads. | Microsoft Defender for Cloud |
-| [User and Entity Behavioral Analytics (UEBA)](/azure/sentinel/enable-entity-behavior-analytics) |Analyzes behavior of organization entities such as users, hosts, IP addresses, and applications) | Microsoft Sentinel |
-| [Fusion](/azure/sentinel/configure-fusion-rules) | A correlation engine based on scalable machine learning algorithms. Automatically detects multistage attacks&nbsp;also known as advanced persistent threats (APT)&nbsp;by identifying combinations of anomalous behaviors and suspicious activities that are observed at various stages of the kill chain. | Microsoft Sentinel |
-|[Threat Intelligence](/azure/sentinel/threat-intelligence-integration) | Use Microsoft third-party providers to enrich data to provide extra context around activities, alerts, and logs in your environment. | Microsoft Sentinel |
-| [Automation](/azure/sentinel/automation) | Automation rules are a way to centrally manage automation in Microsoft Sentinel, by allowing you to define and coordinate a small set of rules that can apply across different scenarios. | Microsoft Sentinel |
-|[Anomaly rules](/azure/sentinel/work-with-anomaly-rules) | Anomaly rule templates use machine learning to detect specific types of anomalous behavior. | Microsoft Sentinel
-|[Scheduled queries](/azure/sentinel/detect-threats-custom) | Built-in rules written by Microsoft security experts that search through logs collected by Sentinel for suspicious activity chains, known threats. | Microsoft Sentinel |
-|[Near-real-time (NRT) rules](/azure/sentinel/create-nrt-rules) | NRT rules are limited set of scheduled rules, designed to run once every minute, in order to supply you with information as up-to-the-minute as possible.  | Microsoft Sentinel |
-|[Hunting](/azure/sentinel/hunting) | To help security analysts look proactively for new anomalies that weren't detected by your security apps or even by your scheduled analytics rules, Microsoft Sentinel's built-in hunting queries guide you into asking the right questions to find issues in the data you already have on your network. | Microsoft Sentinel
+| [User and Entity Behavioral Analytics (UEBA)](/azure/sentinel/enable-entity-behavior-analytics) |Analyzes behavior of organization entities such as users, hosts, IP addresses, and applications) | Microsoft Sentinel <br><br>(Preview) For onboarded workspaces, Microsoft Sentinel in the unified security operations platform|
+| [Fusion](/azure/sentinel/configure-fusion-rules) | A correlation engine based on scalable machine learning algorithms. Automatically detects multistage attacks&nbsp;also known as advanced persistent threats (APT)&nbsp;by identifying combinations of anomalous behaviors and suspicious activities that are observed at various stages of the kill chain. | Microsoft Sentinel <br><br>(Preview) For onboarded workspaces, Microsoft Sentinel in the unified security operations platform|
+|[Threat Intelligence](/azure/sentinel/threat-intelligence-integration) | Use Microsoft third-party providers to enrich data to provide extra context around activities, alerts, and logs in your environment. | Microsoft Sentinel <br><br>(Preview) For onboarded workspaces, Microsoft Sentinel in the unified security operations platform|
+| [Automation](/azure/sentinel/automation) | Automation rules are a way to centrally manage automation with  Microsoft Sentinel, by allowing you to define and coordinate a small set of rules that can apply across different scenarios. | Microsoft Sentinel <br><br>(Preview) For onboarded workspaces, Microsoft Sentinel in the unified security operations platform|
+|[Anomaly rules](/azure/sentinel/work-with-anomaly-rules) | Anomaly rule templates use machine learning to detect specific types of anomalous behavior. | Microsoft Sentinel <br><br>(Preview) For onboarded workspaces, Microsoft Sentinel in the unified security operations platform |
+|[Scheduled queries](/azure/sentinel/detect-threats-custom) | Built-in rules written by Microsoft security experts that search through logs collected by Sentinel for suspicious activity chains, known threats. | Microsoft Sentinel <br><br>(Preview) For onboarded workspaces, Microsoft Sentinel in the unified security operations platform|
+|[Near-real-time (NRT) rules](/azure/sentinel/create-nrt-rules) | NRT rules are limited set of scheduled rules, designed to run once every minute, in order to supply you with information as up-to-the-minute as possible.  | Microsoft Sentinel <br><br>(Preview) For onboarded workspaces, Microsoft Sentinel in the unified security operations platform|
+|[Hunting](/azure/sentinel/hunting) | To help security analysts look proactively for new anomalies that weren't detected by your security apps or even by your scheduled analytics rules, Microsoft Sentinel's built-in hunting queries guide you into asking the right questions to find issues in the data you already have on your network. | Microsoft Sentinel <br><br>(Preview) For onboarded workspaces, use the Microsoft Defender portal's advanced hunting functionality. |
 | [Microsoft Defender XDR Connector](/azure/sentinel/connect-microsoft-365-defender) | Microsoft Defender XDR Connector synchronizes logs and incidents to Microsoft Sentinel. | Microsoft Defender XDR and Microsoft Sentinel |
-|[Data connectors](/azure/sentinel/connect-data-sources) | Allow for the ingestion of data for analysis in Microsoft Sentinel. | Microsoft Sentinel|
-|[Content hub solution -Zero Trust (TIC 3.0)](/azure/sentinel/sentinel-solution) | Zero Trust (TIC 3.0) includes a workbook, analytics rules, and a playbook, which provide an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, helping organizations to monitor configurations over time. | Microsoft Sentinel |
-|[Security Orchestration, Automation, and Response (SOAR)](/azure/sentinel/sentinel-soar-content) | Leveraging automation rules and playbooks in response to security threats increases your SOC's effectiveness and saves you time and resources. | Microsoft Sentinel |
+|[Data connectors](/azure/sentinel/connect-data-sources) | Allow for the ingestion of data for analysis in Microsoft Sentinel. | Microsoft Sentinel <br><br>(Preview) For onboarded workspaces, Microsoft Sentinel in the unified security operations platform|
+|[Content hub solution -Zero Trust (TIC 3.0)](/azure/sentinel/sentinel-solution) | Zero Trust (TIC 3.0) includes a workbook, analytics rules, and a playbook, which provide an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, helping organizations to monitor configurations over time. | Microsoft Sentinel <br><br>(Preview) For onboarded workspaces, Microsoft Sentinel in the unified security operations platform |
+|[Security Orchestration, Automation, and Response (SOAR)](/azure/sentinel/sentinel-soar-content) | Leveraging automation rules and playbooks in response to security threats increases your SOC's effectiveness and saves you time and resources. | Microsoft Sentinel <br><br>(Preview) For onboarded workspaces, Microsoft Sentinel in the unified security operations platform |
 
 ## What's in this solution
 
@@ -144,6 +186,8 @@ This solution steps you through the implementation of Microsoft Sentinel and XDR
 [![Image of Microsoft Sentinel and XDR solution steps](./media/siem-xdr-solution.png)](setup-xdr-tools.md)
 
 ## Recommended training
+
+Training content focuses on general availability features, and therefore doesn't include content for the unified security operations platform, which is in Preview.
 
 |Training |[Connect Microsoft Defender XDR to Microsoft Sentinel](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/)|
 |---------|---------|
@@ -163,10 +207,10 @@ Use these steps to implement Microsoft Sentinel and XDR for a Zero Trust approac
 Also see these additional articles for applying Zero Trust principles to Azure:
 
 - [Azure IaaS overview](/security/zero-trust/azure-infrastructure-overview)
-  - [Azure storage](/security/zero-trust/azure-infrastructure-storage)
-  - [Virtual machines](/security/zero-trust/azure-infrastructure-virtual-machines)
-  - [Spoke virtual networks](/security/zero-trust//azure-infrastructure-iaas)
-  - [Hub virtual networks](/security/zero-trust//azure-infrastructure-networking)
+- [Azure storage](/security/zero-trust/azure-infrastructure-storage)
+- [Virtual machines](/security/zero-trust/azure-infrastructure-virtual-machines)
+- [Spoke virtual networks](/security/zero-trust//azure-infrastructure-iaas)
+- [Hub virtual networks](/security/zero-trust//azure-infrastructure-networking)
 
 - [Spoke virtual network with Azure PaaS Services](/security/zero-trust/azure-infrastructure-paas)
 - [Azure Virtual Desktop](/security/zero-trust/azure-infrastructure-avd)

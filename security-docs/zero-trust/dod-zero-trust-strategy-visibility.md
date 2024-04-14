@@ -32,7 +32,7 @@ Use the following links to go to sections of the guide.
 
 ## 7 Visibility and analytics
 
-This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the visibility and analytics pillar. See [Visibility, automation, and orchestration with Zero Trust](/security/zero-trust/deploy/visibility-automation-orchestration).
+This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the visibility and analytics pillar. To learn more, see [Visibility, automation, and orchestration with Zero Trust](/security/zero-trust/deploy/visibility-automation-orchestration).
 
 ## 7.1 Log all traffic
 

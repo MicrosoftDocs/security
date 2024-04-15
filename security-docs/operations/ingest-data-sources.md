@@ -138,9 +138,9 @@ Use the following recommendations to get started with configuring data connector
 
 6.  Search in content hub for other devices, Software as a service (SaaS) apps that require logs to be sent to Sentinel. For more information, see [Discover and manage Microsoft Sentinel out-of-the-box content ](/azure/sentinel/sentinel-solutions-deploy).
 
-## Step 2: Enable User Entity Behavior Analytics 
+## Step 2: Enable user entity behavior analytics
 
-After setting up data connectors in Microsoft Sentinel, make sure to enable [User Entity Behavior Analysis](/azure/sentinel/identify-threats-with-entity-behavior-analytics) to identify suspicious behavior  that could lead to phishing exploits and eventually attacks such as ransomware. Often, anomaly detection through UEBA is the best method for detecting Zero-day exploits early on. 
+After setting up data connectors in Microsoft Sentinel, make sure to enable [user entity behavior analytics](/azure/sentinel/identify-threats-with-entity-behavior-analytics) to identify suspicious behavior  that could lead to phishing exploits and eventually attacks such as ransomware. Often, anomaly detection through UEBA is the best method for detecting Zero-day exploits early on. 
 
 Data Sources required:
 
@@ -207,6 +207,8 @@ In general, there are five phases to a human-operated Ransomware attack, and Phi
 Select one of the following tabs, depending on whether you onboarded your workspace to the unified security operations platform.
 
 ### [Defender portal (Preview)](#tab/defender-portal)
+
+:::image type="content" source="./media/sentinel-dashboard-defender.png" alt-text="Image of the Sentinel dashboard" lightbox="./media/sentinel-dashboard-defender.png":::
 
 ### [Azure portal](#tab/azure-portal)
 

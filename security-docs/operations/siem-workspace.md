@@ -68,7 +68,7 @@ For a single tenant, there are two ways Microsoft Sentinel workspaces can be con
 
 To create your Log Analytics workspaces, see [Create Log Analytics workspaces](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
 
-## Step 3: Architect the Microsoft Sentinel Workspace
+## Step 3: Architect the Microsoft Sentinel workspace
 
 Onboarding Microsoft Sentinel requires selecting a Log Analytics workspace. The following are considerations for setting up Log Analytics for Microsoft Sentinel:
 
@@ -109,7 +109,7 @@ The following table lists some of the Microsoft Sentinel-specific roles.
 | **Microsoft Sentinel Automation Contributor** | Allows Microsoft Sentinel to add playbooks to automation rules. It isn't meant for user accounts. |
 -->
 
-### Zero Trust in Multi-Tenant Architecture with Azure Lighthouse
+### Zero Trust in multi-tenant architectures with Azure Lighthouse
 
 Azure Lighthouse enables multi-tenant management with scalability, higher automation, and enhanced governance across resources. With Azure Lighthouse you can manage multiple Microsoft Sentinel instances across Microsoft Entra tenants at scale. Here’s an example.
 

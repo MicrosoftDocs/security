@@ -32,7 +32,7 @@ Use the following links to go to sections of the guide.
 
 ## 5 Network
 
-This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the network pillar. See [Secure networks with Zero Trust](/security/zero-trust/deploy/networks) for more information.
+This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the network pillar. To learn more, see [Secure networks with Zero Trust](/security/zero-trust/deploy/networks) for more information.
 
 ## 5.1 Data flow mapping
 

@@ -93,7 +93,7 @@ Microsoft Endpoint Manager supports cloud-based and hybrid (co-management) solut
 
 Microsoft Intune configuration and compliance policies ensure devices meet organizational security configuration requirements. Intune evaluates compliance policies and marks devices as compliant or noncompliant. Conditional Access policies can use device compliance state to block users with noncompliant devices from accessing resources protected by Microsoft Entra ID.
 
-Use Microsoft Entra External ID to manage trust settings, per tenant, for external guest users collaborating in your tenant. Use inbound trust settings to require MFA and compliant devices in Conditional Access for all users. You don’t need to make exceptions to Conditional Access policies to avoid blocking external guests
+Microsoft Entra External ID cross-tenant access settings include trust settings for guest collaboration. These settings can be customized for each partner tenant. When you trust compliant devices from another tenant, guests using compliant devices in their home tenant satisfy Condtional Access policies requiring compliant devices in your tenant. You don’t need to make exceptions to Conditional Access policies to avoid blocking external guests.
 
 |DoD Activity Description and Outcome|Microsoft guidance and recommendations|
 |---|---|

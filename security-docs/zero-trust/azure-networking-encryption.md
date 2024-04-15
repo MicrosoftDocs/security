@@ -38,7 +38,7 @@ For new articles in this content set, please:
 
 Additional authors:
 
-- 
+- Mays Algebary
 - 
 - 
 

@@ -32,11 +32,10 @@ The procedures in this step are available in both the Azure and Defender portals
 
 Confirm the installation method, roles required, and licenses needed to turn on data connectors. For more information, see [Find your Microsoft Sentinel data connector](/azure/sentinel/data-connectors-reference).
 
-<!--which of these data connectors aren't listed in defender?-->
-The following table is a summary of the prerequisites required to ingest key Azure and data connectors:
+The following table is a summary of the prerequisites required to ingest key Azure and data connectors: <!--is there something abt data connectors in defender?>
 
-| Resource Type                              | Installation Method              | Role/Permissions/License Needed                                                                                    |
-|--------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| Resource Type      | Installation Method              | Role/Permissions/License Needed                                      |
+|---------------|-----------|-------------------------------------------------|
 | Microsoft Entra ID                     | Native Data connector            | Security Admin/Global Admin<br><br>Sign-in Logs require Microsoft Entra ID P1 or P2 license<br>Other logs don't require P1 or P2      |
 | Microsoft Entra ID Protection | Native Data Connector            | Security Admin/Global Admin<br><br>License: Microsoft Entra ID P2                                                          |
 | Azure Activity                             | Azure Policy                     | Owner role required on subscriptions                                  
@@ -44,11 +43,11 @@ The following table is a summary of the prerequisites required to ingest key Azu
 | Microsoft Defender for Cloud               | Native Data Connector            | Security Reader<br><br>To enable bi-directional sync, Contributor/Security Admin role is required on the subscription. |
 | Microsoft Defender for Identity            | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Identity                                            |
 | Microsoft Defender for Office 365          | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Office 365 Plan 2                                   |
-| Office 365                                 | Native Data Connector            | Security Admin/Global admin                                                                                        |
+| Microsoft 365                                 | Native Data Connector            | Security Admin/Global admin                                                                                        |
 | Microsoft Defender for IoT                 |                                  | Contributor to subscription with IoT hubs                                                                          |
 | Microsoft Defender for Cloud Apps          | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Cloud Apps                                          |
 | Microsoft Defender for Endpoint            | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Endpoint                                            |
-| Windows Security Events through Azure Monitor Agent (AMA)            | Native Data Connector with Agent | Read/Write on Log Analytics Workspace                                                                                               |
+| Windows Security Events<br><br>through the Azure Monitor Agent (AMA)            | Native Data Connector with Agent | Read/Write on Log Analytics Workspace                                                                                               |
 | Syslog                                     | Native Data Connector with Agent | Read/Write Log Analytics Workspace                                                                                               |
 
 ## Step 1: Turn on data connectors

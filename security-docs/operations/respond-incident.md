@@ -28,7 +28,7 @@ Microsoft Sentinel and Microsoft Defender XDR share:
 
 The following diagrams show how Microsoft’s extended detection and response (XDR) solution seamlessly integrates with Microsoft Sentinel, depending on whether you onboarded your Microsoft Sentinel workspace to the unified security operations platform.
 
-## [Workspace onboarded](#tab/onboarded)
+## [Defender portal](#tab/defender-portal)
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel with the unified security operations platform.
 
@@ -41,7 +41,7 @@ In this diagram:
 - Microsoft Sentinel data is ingested together with your organization's data into the Microsoft Defender portal.
 - SecOps teams can then analyze and respond to threats identified by Microsoft Sentinel and Microsoft Defender XDR in the Microsoft Defender portal.
 
-## [Workspace not onboarded](#tab/not-onboarded)
+## [Azure portal](#tab/azure-portal)
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel.
 
@@ -63,7 +63,7 @@ steps you through detecting and responding to modern attacks with Microsoft’s 
 
 The process of incident response to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR is differs, depending on whether you onboarded your workspace to the unified security operations platform, and can access Microsoft Sentinel in the Defender portal.
 
-## [Workspace onboarded](#tab/onboarded)
+## [Defender portal](#tab/defender-portal)
 
 1. Use the Defender portal to triage the potential incident, which includes understanding the details of the incident and taking immediate actions.
 
@@ -82,7 +82,13 @@ The process of incident response to resolve an incident using Microsoft Sentinel
 
 1. Resolve the incident and perform appropriate follow-up within your security team.
 
-## [Workspace not onboarded](#tab/not-onboarded)
+For more information, see:
+
+- [Investigate incidents in Microsoft Defender XDR](/microsoft-365/security/defender/investigate-incidents)
+- [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview)
+- [Entity pages in Microsoft Sentinel](/azure/sentinel/entity-pages?tabs=defender-portal)
+
+## [Azure portal](#tab/azure-portal)
 
 1. Use Microsoft Sentinel portal to triage the potential incident, which includes understanding the details of the incident and taking immediate actions.
 
@@ -103,6 +109,8 @@ The process of incident response to resolve an incident using Microsoft Sentinel
 
 :::image type="content" source="media/incident-reponse-process.png" alt-text="The four-step incident response process and which portal you need to use.":::
 
+For more information, see [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents).
+
 ---
 
 Make sure to take advantage of Microsoft Sentinel's playbook and automation rule functionality:
@@ -113,109 +121,115 @@ Make sure to take advantage of Microsoft Sentinel's playbook and automation rule
 
 After onboarding your Microsoft Sentinel workspace to the unified security operations platform, note that there are differences in how automation functions in your workspace. For more information, see [Automation with the unified security operations platform](/azure/sentinel/automation).
 
-The following sections describe the general incident response process using the Microsoft Sentinel and Microsoft Defender portals.
 
 ## Step 1: Triage the incident
 
-Use these steps as a general method to triage the incident with Microsoft Sentinel:
-<!--validate these-->
-## [Workspace onboarded](#tab/onboarded)
+Use these steps as a general method to triage the incident with Microsoft Sentinel and Microsoft Defender XDR. If your workspace isn't onboarded to the unified security operations platform, use the Azure portal.
 
-Investigate Microsoft Sentinel incidents in the Defender portal the same way you would any other incident.
+## [Defender portal](#tab/defender-portal)
 
-1. In the Defender portal, select **Incidents and alerts > Incidents** and locate the suspected incident.
-1. Select **View full details** in the incident summary pane.
-1. View details on the following tabs:
+To investigate Microsoft Sentinel incidents in the Defender portal:
 
-   - View general information from the **Overview** tab
-   - Find an entity of interest from the **Entities** tab. In the **Insights** section of the entity pane, select the appropriate categories of insights you need to gather information on the entity.
+1. In the Defender portal, select **Investigation & response > Incidents & alerts > Incidents** and locate the suspected incident. Filter your **Service/detection sources** to **Microsoft Sentinel** to help you narrow down the list of incidents to those coming from Microsoft Sentinel. <!--is this correct? b/c what about all the 1p incidents?-->
 
-For more information, see [Investigate incidents in Microsoft Defender XDR](/microsoft-365/security/defender/investigate-incidents) and [Run a playbook on demand](/azure/sentinel/tutorial-respond-threats-playbook?tabs=azure-portal%2CLAC%2Cafter-onboarding%2Cincidents%2Cazure).
+1. Select the incident row to view basic information in the incident summary pane.
 
-## [Workspace not onboarded](#tab/not-onboarded)
+1. Select **Manage incident** to update details like name, severity, status, classification, or to add comments. Select **Save** to save your changes.
+
+1. Select **Open incident page** to continue the investigation.
+
+## [Azure portal](#tab/azure-portal)
 
 To investigate incidents in the Azure portal:
 
-1. In Microsoft Sentinel, select **Incidents** and locate the suspected incident.
-1. Select **View full details** in the incident summary pane.
-1. View details on the following tabs:
+1. In Microsoft Sentinel, under **Threat management**, select **Incidents** and locate the suspected incident.
 
-   - View general information from the **Overview** tab
-   - Find an entity of interest from the **Entities** tab. In the **Insights** section of the entity pane, select the appropriate categories of insights you need to gather information on the entity.
+1. In the incident summary pane, update details like owner name, status, severity, or to add comments.
 
-For more information, see [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents) and  [Run a playbook on demand](/azure/sentinel/tutorial-respond-threats-playbook?tabs=azure-portal%2CLAC%2Cafter-onboarding%2Cincidents%2Cazure).
+1. Select **View full details** to continue the investigation.
+
+---
 
 ## Step 2: Investigate the incident
 
-1. Do one of the following:
+If your workspace isn't onboarded to the unified security operations platform, start in the Azure portal. You'll jump over to the Defender portal for some investigation, and then return to the Azure portal.
 
-   - If you're working from the Azure portal, from the **Incident** page of the Microsoft Sentinel portal (Preview), select **Investigate in Microsoft Defender XDR** in the summary pane.
+## [Defender portal](#tab/defender-portal)
 
-   - If you're working from the Defender portal, <!--where does this come from?-->
+**In the Defender portal**, on the incident details page's **Attack story** tab, consider the following steps for your own incident response workflow:
 
-1. From the **Attack story** tab in the Microsoft Defender portal, begin your investigation with Microsoft Defender XDR. Consider using the following next steps for your own incident response workflow.
+1. View the attack story of the incident to understand its scope, severity, detection source, and what entities are affected.
+
+1. Analyze the incident's alerts to understand their origin, scope, and severity with the alert story within the incident.
+
+1. As needed, gather information on impacted devices, users, and mailboxes with the graph. Select on any entity to open a flyout with all the details.
+
+1. See how Microsoft Defender XDR has automatically resolved some alerts with the **Investigations** tab.
+
+1. As needed, use information in the data set for the incident from the **Evidence and Response** tab.
+
+1. On the **Assets** tab, view the entities involved in the incident. Select a user account, a hostname, an IP address, or an Azure resource to contnue investigating further on the entity details page. For example, if you selected a user, in the user details pane, select **Go to user page** to open the user's entity details page.
+
+1. On the entity details page, select **Sentinel events** to view detailed timeline information about the selected entity, and entity insights.
+
+## [Azure portal](#tab/azure-portal)
+
+1. **In the Azure portal**, on the incident details page:
+
+   - View general information about the incident on the **Overview** tab, including the incident timeline, list of entities, and related incidents.
+
+   - Select **Investigate** to see a graph of the incident.
+
+   - Select the **Entities** tab and then select an entity to investigate further. Select the **Insights** section of the entity pane and review insights gathered about the incident.
+
+   - Select **Investigate in Microsoft Defender XDR** to open the same incident in the Defender portal.
+
+1. **In the Defender portal**, on the incident details page's **Attack story** tab, consider the following steps for your own incident response workflow:
 
    1. View the attack story of the incident to understand its scope, severity, detection source, and what entities are affected.
 
-   1. Begin analyzing the alerts to understand their origin, scope, and severity with the alert story within the incident.
-   
-   1. As needed, gather information on impacted devices, users, and mailboxes with the graph. Click on any entity to open a flyout with all the details.
+   1. Analyze the incident's alerts to understand their origin, scope, and severity with the alert story within the incident.
+
+   1. As needed, gather information on impacted devices, users, and mailboxes with the graph. Select on any entity to open a flyout with all the details.
 
    1. See how Microsoft Defender XDR has automatically resolved some alerts with the **Investigations** tab.
 
    1. As needed, use information in the data set for the incident from the **Evidence and Response** tab.
 
-For more information, see [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview).
+1. **Return to the Azure portal** to perform additional incident actions, such as running a playbook or creating an automation rule.
 
-### Continue investigating in the Azure portal
+    Add comments to the incident to record your actions and the results of your analysis.
 
-If you're working in the Azure portal, use the following steps to continue the incident investigation with Microsoft Sentinel using the improved incidents page (Preview): <!--can't you do this in defender too?-->
+---
 
-1. In the Microsoft Sentinel portal, locate the incident in the incident queue, select it, and then select **View full details** in the incident summary pane.
+## Step 3: Resolve the incident
 
-1. From the **Overview** tab pane:
-
-   a. View the incident timeline.
-
-   b. Scroll through the list of entities.
-
-   c. See the list of related incidents.
-
-   d. View the top insights for the incident.
-
-   e. Perform an additional incident action, such as running a playbook or creating an automation rule.
-
-   f. Select Investigate to see a graph of the incident.
-
-1. From the **Entities** tab pane:
-
-   a. View details and insights on a selected entity.
-
-   b. As needed and if available, run a playbook (Preview).
-
-1. Add comments to the incident to record your actions and the results of your analysis.
-
-For more information, see [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents).
-
-## Step 4: Resolve the incident
-
-When your investigation has reached its conclusion and you have remediated the incident within the portals, you can resolve the incident in either Microsoft Sentinel in the Azure portal or in the Defender portal by setting the incident’s status to **Closed**.
+When your investigation has reached its conclusion and you have remediated the incident within the portals, resolve the incident by setting the incident’s status to **Closed**.
 
 When marking an incident's status as **Closed**, make sure to select a classification, including true, benign, or false positive options.
 
 For example:
 
-:::image type="content" source="media/example-resolving-incident.png" alt-text="Example of resolving an incident in the Microsoft Sentinel portal.":::
+## [Defender portal](#tab/defender-portal)
 
-For more information, see [Closing an incident in the Azure portal](/azure/sentinel/investigate-incidents#closing-an-incident) and [Resolve an incident in the Defender portal](/microsoft-365/security/defender/manage-incidents#resolve-an-incident).
+:::image type="content" source="media/example-resolving-incident-defender.png" alt-text="Example of resolving an incident in the Defender portal.":::
+
+For more information, see [Resolve an incident in the Defender portal](/microsoft-365/security/defender/manage-incidents#resolve-an-incident).
+## [Azure portal](#tab/azure-portal)
+
+:::image type="content" source="media/example-resolving-incident.png" alt-text="Example of resolving an incident in Microsoft Sentinel.":::
+
+For more information, see [Closing an incident in the Azure portal](/azure/sentinel/investigate-incidents#closing-an-incident).
+
+---
 
 As needed, report the incident to your incident response lead for possible follow-up to determine additional actions, such as:
 
 - Inform your Tier 1 security analysts to better detect the attack early.
-- Create an orchestration playbook to automate and orchestrate your threat response for a similar risk in the future. For more information, see [Automate threat response with playbooks in Microsoft Sentinel](/azure/sentinel/automate-responses-with-playbooks).
 - Research the attack in Microsoft Defender XDR Threat Analytics and the security community for a security attack trend.
 - As needed, record the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks.
 - Determine whether changes in your security configuration are needed and implement them.
+- Create an orchestration playbook to automate and orchestrate your threat response for a similar risk in the future. For more information, see [Automate threat response with playbooks in Microsoft Sentinel](/azure/sentinel/automate-responses-with-playbooks).
 
 ## Recommended training
 

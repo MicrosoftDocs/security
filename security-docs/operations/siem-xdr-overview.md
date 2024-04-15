@@ -58,9 +58,9 @@ Microsoft Sentinel customers can use one of the following methods to integrate M
 
 - (Preview) Integrate Microsoft Sentinel and Microsoft Defender XDR into a single, unified security operations platform in the Microsoft Defender portal. In this case, view Microsoft Sentinel data directly in the Microsoft Defender portal with the rest of your Defender incidents, alerts, vulnerabilities, and other security data.
 
-This solution guide provides information for both methods. Throughout this solution guide, select the tab that's relevant for your workspace, depending on if you've onboarded your workspace to the unified security platform.
+This solution guide provides information for both methods. Throughout this solution guide, select the tab that's relevant for your workspace. If you've onboarded your workspace to the unified security platform, work in the Defender portal. Otherwise, work in the Azure portal unless otherwise indicated.
 
-## [Workspace onboarded](#tab/onboarded)
+## [Defender portal](#tab/defender-portal)
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel with the unified security operations platform.
 
@@ -74,7 +74,7 @@ In this diagram:
 - SecOps teams can then analyze and respond to threats identified by Microsoft Sentinel and Microsoft Defender XDR in the Microsoft Defender portal.
 
 
-## [Workspace not onboarded](#tab/not-onboarded)
+## [Azure portal](#tab/azure-portal)
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel.
 
@@ -128,13 +128,13 @@ Now that we've seen how a common attack takes place, let's look into leveraging 
 
 Select the relevant tab for your workspace depending on whether you onboarded your workspace to the unified security operations platform.
 
-## [Workspace onboarded](#tab/onboarded)
+## [Defender portal](#tab/defender-portal)
 
 After integrating Microsoft Sentinel and Microsoft Defender XDR by onboarding your workspace to the unified security operations platform, complete all incident response steps directly in the Microsoft Defender portal, just as you would for other Microsoft Defender XDR incidents. Supported steps include everything from  triage to investigation and resolution.
 
 Use the Microsoft Sentinel area in the Microsoft Defender portal for features unavailable with the Defender portal alone.
 
-## [Workspace not onboarded](#tab/not-onboarded)
+## [Azure portal](#tab/azure-portal)
 
 Here is the process of responding to an incident with Microsoft Defender XDR and Microsoft Sentinel. 
 

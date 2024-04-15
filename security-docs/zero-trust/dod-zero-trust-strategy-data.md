@@ -31,7 +31,7 @@ Use the following links to go to sections of the guide.
 
 ## 4 Data
 
-This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the data pillar. See [Secure data with Zero Trust](/security/zero-trust/deploy/data) for more information.
+This section has Microsoft guidance and recommendations for DoD Zero Trust activities in the data pillar. To learn more, see [Secure data with Zero Trust](/security/zero-trust/deploy/data) for more information.
 
 ## 4.1 Data catalog risk alignment
 

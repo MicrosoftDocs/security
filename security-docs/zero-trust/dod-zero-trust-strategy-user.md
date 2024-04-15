@@ -4,7 +4,7 @@ description: Minimize attack surface, reduce risks, enable collaboration, safegu
 ms.service: security
 ms.subservice: security-fundamentals
 ms.topic: conceptual
-ms.date: 04/10/2024
+ms.date: 04/15/2024
 ms.author: jricketts
 author: jricketts
 manager: martinco

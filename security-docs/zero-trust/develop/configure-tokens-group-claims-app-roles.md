@@ -5,7 +5,7 @@ ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 12/13/2022
+ms.date: 04/17/24
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev

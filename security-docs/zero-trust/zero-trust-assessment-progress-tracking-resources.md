@@ -1,9 +1,9 @@
 ---
 title: Zero Trust assessment and progress tracking resources 
 description: Get the assessment and progress tracking resources in the Zero Trust library.
-ms.date: 04/10/2024
+ms.date: 04/15/2024
 ms.service: security
-author: bcarter
+author: brendacarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection:

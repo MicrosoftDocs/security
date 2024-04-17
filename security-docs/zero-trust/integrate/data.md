@@ -1,7 +1,7 @@
 ---
 title: Zero Trust integration for Data overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Information Protection SDK to help customers adopt a Zero Trust model and keep their organizations secure.
-ms.date: 02/22/2023
+ms.date: 04/17/2024
 ms.service: security
 author: janicericketts
 ms.author: jricketts

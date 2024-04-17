@@ -1,7 +1,7 @@
 ---
 title: Integrating applications with Microsoft Entra ID and the Microsoft identity platform
 description: As a developer, you can build and integrate apps that IT pros can secure in the enterprise. This article will help you to understand how to securely integrate your app with Microsoft Entra ID and the Microsoft identity platform.
-ms.date: 01/27/2023
+ms.date: 04/17/2024
 ms.service: identity
 author: janicericketts
 ms.author: jricketts

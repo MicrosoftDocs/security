@@ -26,7 +26,7 @@ Microsoft Sentinel and Microsoft Defender XDR share:
 - Updates on lifecycle (status, owner, classification) are shared between the products.
 - Evidence gathered during an investigation is shown in the Microsoft Sentinel incident.
 
-The following diagrams show how Microsoft’s extended detection and response (XDR) solution seamlessly integrates with Microsoft Sentinel, depending on whether you onboarded your Microsoft Sentinel workspace to the unified security operations platform.
+The following diagrams show how Microsoft’s extended detection and response (XDR) solution seamlessly integrates with Microsoft Sentinel, depending on whether you onboarded your Microsoft Sentinel workspace to the unified security operations platform in the Microsoft Defender portal.
 
 ## [Defender portal](#tab/defender-portal)
 

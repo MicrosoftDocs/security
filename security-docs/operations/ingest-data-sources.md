@@ -32,7 +32,7 @@ The procedures in this step are available in both the Azure and Defender portals
 
 Confirm the installation method, roles required, and licenses needed to turn on data connectors. For more information, see [Find your Microsoft Sentinel data connector](/azure/sentinel/data-connectors-reference).
 
-The following table is a summary of the prerequisites required to ingest key Azure and data connectors: <!--is there something abt data connectors in defender?>
+The following table is a summary of the prerequisites required to ingest key Azure and Microsoft data connectors: 
 
 | Resource Type      | Installation Method              | Role/Permissions/License Needed                                      |
 |---------------|-----------|-------------------------------------------------|

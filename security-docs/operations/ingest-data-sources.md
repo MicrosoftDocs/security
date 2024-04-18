@@ -32,7 +32,7 @@ The procedures in this step are available in both the Azure and Defender portals
 
 Confirm the installation method, roles required, and licenses needed to turn on data connectors. For more information, see [Find your Microsoft Sentinel data connector](/azure/sentinel/data-connectors-reference).
 
-The following table is a summary of the prerequisites required to ingest key Azure and data connectors: <!--is there something abt data connectors in defender?>
+The following table is a summary of the prerequisites required to ingest key Azure and Microsoft data connectors: 
 
 | Resource Type      | Installation Method              | Role/Permissions/License Needed                                      |
 |---------------|-----------|-------------------------------------------------|
@@ -65,8 +65,7 @@ Use the following recommendations to get started with configuring data connector
 
         2.  Incident investigation starts in Microsoft Sentinel and should continue in the Microsoft Defender portal or Defender for Cloud, if deeper analysis is required.
 
-        >[!NOTE]
-        >If you have enabled the Microsoft Defender XDR connector, a bi-directional sync between 365 Defender Incidents and Microsoft Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft Defender XDR-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection). For more information, see [Microsoft Defender XDR incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
+       1. If you have enabled the Microsoft Defender XDR connector, a bi-directional sync between 365 Defender Incidents and Microsoft Sentinel is automatically established. To avoid creating duplicate incidents for the same alerts, we recommend that customer turn off all **Microsoft incident creation rules** for Microsoft Defender XDR-integrated products (Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection). For more information, see [Microsoft Defender XDR incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
 
     4.  Microsoft Defender for Cloud Apps Alerts.
 

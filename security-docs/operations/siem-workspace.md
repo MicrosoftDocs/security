@@ -58,7 +58,7 @@ For a single tenant, there are two ways Microsoft Sentinel workspaces can be con
 
     |Advantages  |Disadvantages  |
     |---------|---------|
-    |- Central consolidation of logs. <br><br>- Easier to query information. <br><br>- Log Analytics RBAC to control access. For more information, see [Manage access to Log Analytics workspaces - Azure Monitor](/azure/azure-monitor/logs/manage-access?tabs=portal). <br><br>- Microsoft Sentinel RBAC for service RBAC. For more information, see [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles).     |  - May not meet governance requirements. <br><br>- There is a bandwidth cost between regions.       |
+    |- Central consolidation of logs. <br><br>- Easier to query information. <br><br>- Azure role-based access control (Azure RBAC) to control access to Log Analytics and Microsoft Sentinel. For more information, see [Manage access to Log Analytics workspaces - Azure Monitor](/azure/azure-monitor/logs/manage-access?tabs=portal), and [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles).     |  - May not meet governance requirements. <br><br>- There is a bandwidth cost between regions.       |
 
 - **Single tenant with regional Log Analytics workspaces.** 
 
@@ -91,7 +91,7 @@ In addition, use the [Cloud Roles and Operations Management prescriptive guidanc
 
 ### Zero Trust with RBAC
 
-To comply with Zero Trust, we recommend that you configure RBAC based on the resources that are allowed to your users instead of providing them with access to the entire Microsoft Sentinel environment.
+To comply with Zero Trust, we recommend that you configure Azure RBAC based on the resources that are allowed to your users instead of providing them with access to the entire Microsoft Sentinel environment.
 
 When you assign Microsoft Sentinel-specific Azure roles, you may come across other Azure and Log Analytics roles that may have been assigned to users for other purposes. For example, the *Log Analytics Contributor* and *Log Analytics Reader* roles grant access to a Log Analytics workspace. 
 
@@ -128,7 +128,7 @@ Consider the following questions when implementing security best practices for A
 
 See [Manage Microsoft Sentinel workspaces at scale: Granular Azure RBAC](/azure/lighthouse/how-to/manage-sentinel-workspaces#granular-azure-role-based-access-control-azure-rbac) for the security best practices of Microsoft Sentinel and Azure Lighthouse.
 
-## Onboard your workspace to the unified security operations platform (Preview)
+## Onboard your workspace to the unified security operations platform (preview)
 
 If you're working with a single workspace, we recommend that you onboard your workspace to the unified security operations platform to view all your Microsoft Sentinel data together with XDR data in the Microsoft Defender portal.
 

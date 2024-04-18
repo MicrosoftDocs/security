@@ -1,7 +1,7 @@
 ---
 title: Develop using Zero Trust principles
 description: As a developer, learn how to implement the guiding principles of Zero Trust so that you can improve your application security.
-ms.date: 12/13/2022
+ms.date: 04/17/2024
 ms.service: identity
 author: janicericketts
 ms.author: jricketts

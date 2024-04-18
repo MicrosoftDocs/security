@@ -1,7 +1,7 @@
 ---
 title: Integrate SaaS apps for Zero Trust with Microsoft 365
 description: Learn how to integrate SaaS apps for Zero Trust with Microsoft 365
-ms.date: 08/30/2022
+ms.date: 04/18/2024
 ms.service: security
 author: mjcaparas
 ms.author: macapara
@@ -17,7 +17,6 @@ ms.collection:
 # Integrate SaaS apps for Zero Trust with Microsoft 365 
 
 The widespread increase in cloud adoption is transforming how organizations achieve business outcomes.  This shift highlights the  reliance on cloud-based apps resulting in higher demand for services such as Software as a service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), and app development platforms. 
-
 
 While a multicloud environment can help reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure that resources hosted in the cloud are protected. 
 
@@ -39,34 +38,29 @@ To ensure that access and productivity is secure, implementation of SaaS needs t
 
 Microsoft 365 capabilities help you bring your SaaS apps into management to meet the principles of Zero Trust security. 
 
-
-:::image type="content" source="media/saas-apps-products.png" alt-text="Image of SaaS apps and Microsoft products":::
+:::image type="content" source="./media/saas-apps-products.svg" alt-text="Image of SaaS apps and Microsoft products" lightbox="./media/saas-apps-products.svg":::
 
 In the illustration:
+
 - A collection of SaaS apps is pictured.
-- You can add these SaaS apps to Microsoft Entra ID and include these apps in the scope of your multi-factor authentication and conditional access policies. For more information, [Integrating all your apps with Microsoft Entra ID](/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad).
+- You can add these SaaS apps to Microsoft Entra ID and include these apps in the scope of your multi-factor authentication and conditional access policies. For more information, see [Integrating all your apps with Microsoft Entra ID](/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad).
 - Using Microsoft Defender for Cloud Apps, you can discover other cloud apps your organization uses. You can approve apps, apply session controls, and discover sensitive data. For newly discovered enterprise cloud apps that supports federation you can add them to Microsoft Entra ID to enforce multi-factor authentication and other policies.
 - Microsoft Purview Information Protection capabilities can be extended through Microsoft Defender for Cloud apps to these cloud apps to protect data, and prevent data loss.
 
 
 ## Implementing the layers of protection for SaaS apps
 
-Protecting SaaS apps is a multi-layer process. 
+Protecting SaaS apps is a multi-layer process. The following diagram illustrates building blocks to integrate SaaS apps that align with the Zero Trust security model. The elements related to achieving this are numbered 1, 2, and 3. These are the layers of protection that device admins will coordinate with other administrators to accomplish.
 
+:::image type="content" source="./media/saas-zt.svg" alt-text="Image of Zero Trust deployment guidance" lightbox="./media/saas-zt.svg":::
 
-The following diagram illustrates building blocks to integrate SaaS apps that align with the Zero Trust security model. The elements related to achieving this are numbered 1, 2, and 3. These are the layers of protection device admins will coordinate with other administrators to accomplish.
+For the steps in the diagram illustration:
 
-
-:::image type="content" source="media/saas-zt.png" alt-text="Image of Zero Trust deployment guidance" lightbox="media/saas-zt.png":::
-
-In this illustration:
-
-
-|&nbsp;|Step|Description
-|---|---|---|---|
-|1|Add SaaS apps to Microsoft Entra ID |Add applications to Microsoft Entra ID so that authorized users can securely access it. Many types of applications can be registered with Microsoft Entra ID.
-|2|Create Microsoft Defender for Cloud Apps policies |You want to make sure that policies are in place to ensure that only authorized users and specific conditions are met before users are able to access resources.   
-|3|Deploy information protection for SaaS apps | Organizations need to protect proprietary information, ensure that information protection is in place so that sensitive data is protected.
+|Step|Description|
+|---|---|
+| 1. [Add SaaS apps to Microsoft Entra ID](add-saas-apps.md) | Add applications to Microsoft Entra ID so that authorized users can securely access it. Many types of applications can be registered with Microsoft Entra ID. |
+| 2. [Create Microsoft Defender for Cloud Apps policies](create-policies.md) | You want to make sure that policies are in place to ensure that only authorized users and specific conditions are met before users are able to access resources. |
+| 3. [Deploy information protection for SaaS apps](deploy-information-protection-saas) | Organizations need to protect proprietary information, ensure that information protection is in place so that sensitive data is protected. |
 
 For guidance on licensing, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
@@ -79,13 +73,14 @@ This solution steps through the deployment of key layers to integrate SaaS apps 
 Microsoft 365 helps you manage your SaaS applications giving you control and optics to discover and manage apps. You're likely already aware of the primary cloud apps used by your organization. Microsoft Entra ID includes a gallery of apps you can add to your directory. You can also use Microsoft Defender for Cloud Apps to discover other cloud your users interact with. For more information, see [Discover and assess cloud apps](/defender-cloud-apps/best-practices#discover-and-assess-cloud-apps). After knowing your digital estate, you'll need to make sure that only authorized users and that certain conditions are met before they're accessed, and that the information is properly protected.
 
 
-:::image type="content" source="media/saas-zt-steps.png" alt-text="Image of Zero Trust SaaS guidance":::
+:::image type="content" source="./media/saas-zt-steps.png" alt-text="Image of Zero Trust SaaS guidance" lightbox="./media/saas-zt-steps.png":::
 
 
 The steps in this solution are:
-1. [Add SaaS apps in Microsoft Entra ID](add-saas-apps.md).
-2. [Create Microsoft Defender for Cloud Apps policies]().
-3. [Deploy information protection for SaaS apps]().
+
+1. [Add SaaS apps to Microsoft Entra ID](add-saas-apps.md).
+2. [Create Microsoft Defender for Cloud Apps policies](create-policies.md).
+3. [Deploy information protection for SaaS apps](deploy-information-protection-saas).
 
 
 ## Learning for administrators

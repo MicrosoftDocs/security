@@ -64,7 +64,7 @@ Conditional access policies allow administrators to assign controls to specific 
 
 MFA helps safeguard access to data and applications, by providing additional security by requiring a second form of verification and delivers strong authentication. 
 
-:::image type="content" source="media/identity-access-ruleset-saas.png" alt-text="The summary of policy updates for the protection of access to SaaS apps" lightbox="media/identity-access-ruleset-saas.png":::
+:::image type="content" source="media/identity-access-ruleset-saas.svg" alt-text="The summary of policy updates for the protection of access to SaaS apps" lightbox="media/identity-access-ruleset-saas.svg":::
 
 ### Updating common policies 
 
@@ -74,7 +74,7 @@ For each policy to update, make sure that apps and dependent services are includ
 
 This table lists the policies that need to be revisited and links to each policy in the [common identity and device access policies](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations).
 
-|Protection level|Policies|Further information|
+|Protection level|Policies|Description|
 |---|---|---|
 |**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](/microsoft-365/security/office-365-security/identity-access-policies#require-mfa-based-on-sign-in-risk)|Be sure apps and dependent services are included in the list of apps. |
 ||[Block clients that don't support modern authentication](/microsoft-365/security/office-365-security/identity-access-policies#block-clients-that-dont-support-multi-factor)|Include apps and dependent services in the assignment of cloud apps.|

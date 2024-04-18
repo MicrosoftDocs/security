@@ -173,7 +173,7 @@ Fusion alert technology correlates broad points of data signals with extended ma
 -   Microsoft Defender for Identity
 -   Microsoft Defender for Office 365
 
-Another set of out-of-the-box rules enabled by default are anomaly rules in Microsoft Sentinel. These are based on Machine Learning models and  UEBA that train on the data in your workspace to flag anomalous behavior across users, hosts, and others. Often a phishing attack leads to an execution step such as local or cloud account manipulation/control or malicious script execution. Anomaly Rules look exactly for those types of activities: 
+Another set of out-of-the-box rules enabled by default are anomaly rules in Microsoft Sentinel. These are based on Machine Learning models and  UEBA that train on the data in your workspace to flag anomalous behavior across users, hosts, and others. Often a phishing attack leads to an execution step such as local or cloud account manipulation/control or malicious script execution. Anomaly rules look exactly for those types of activities: 
 
 -   [Anomalous Account Access Removal](/azure/sentinel/anomalies-reference#anomalous-account-access-removal)
 -   [Anomalous Account Creation](/azure/sentinel/anomalies-reference#anomalous-account-creation)

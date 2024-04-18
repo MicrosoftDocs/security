@@ -100,7 +100,7 @@ If you aren't going onboard your Microsoft Sentinel workspace to the unified sec
 
 
 ## Enable Microsoft Defender for Cloud
-You can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include these signals in your Microsoft Sentinel workspace.  
+You can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include Defender for Cloud signals in your Microsoft Sentinel workspace.  
 
 <!---
 ![Image of Microsoft Defender XDR and Microsoft Defender for Cloud](./media/m365d-cloud.png)

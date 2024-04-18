@@ -24,9 +24,6 @@ Deploying the Microsoft Sentinel environment involves designing a workspace conf
 
 This article provides recommendations on how to design and implement Microsoft Sentinel workspaces for the principles of Zero Trust.
 
-> [!NOTE]
-> If you are new to Microsoft Sentinel workspaces, see design strategies and criteria in [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design).
-
 ## Step 1: Design a governance strategy
 
 If your organization has many Azure subscriptions, you may need a way to efficiently manage access, policies, and compliance for those subscriptions. Management groups provide a governance scope for subscriptions. When you organize your subscriptions within management groups, the governance conditions you configure for a management group apply to the subscriptions it contains. For more information, see [Organize your resources with management groups](/azure/governance/management-groups/overview).

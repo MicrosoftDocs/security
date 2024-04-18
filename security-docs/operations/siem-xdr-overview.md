@@ -36,7 +36,7 @@ For new articles in this series, please add:
 
 # Implement Microsoft Sentinel and Microsoft Defender XDR for Zero Trust
 
-This solution guide walks through the process of setting up Microsoft eXtended detection and response (XDR) tools together with Microsoft Sentinel to accelerate your organization’s ability to respond to and remediate cybersecurity attacks.
+This solution guide walks through the process of setting up Microsoft extended detection and response (XDR) tools together with Microsoft Sentinel to accelerate your organization’s ability to respond to and remediate cybersecurity attacks.
 
 Microsoft Defender XDR is an XDR solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your Microsoft 365 environment.
 

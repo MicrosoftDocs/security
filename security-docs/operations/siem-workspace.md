@@ -48,7 +48,6 @@ For an example of separate workspaces for operation and security roles, see [Con
 
 ### Log Analytics workspace design considerations
 
-<!--xref to sentinel docs? are these ready yet?-->
 For a single tenant, there are two ways Microsoft Sentinel workspaces can be configured:
 
 - **Single tenant with a single Log Analytics workspace.** In this case, the workspace becomes the central repository for logs across all resources within the tenant.
@@ -63,7 +62,7 @@ For a single tenant, there are two ways Microsoft Sentinel workspaces can be con
     |---------|---------|
     |- No cross-region bandwidth costs. <br><br>- May be required to meet governance.<br><br> - Granular data access control.<br><br> - Granular retention settings.<br><br>- Split billing.   | - No central pane of glass.<br><br> - Analytics, workbooks, and other configurations must be deployed multiple times.       |
 
-To create your Log Analytics workspaces, see [Create Log Analytics workspaces](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal).
+For more information, see [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design).
 
 ## Step 3: Architect the Microsoft Sentinel workspace
 
@@ -74,7 +73,9 @@ Onboarding Microsoft Sentinel requires selecting a Log Analytics workspace. The 
 This automatically gives you [31 days of data ingestion up to 10 Gb a day](/azure/sentinel/billing?tabs=commitment-tier#free-trial) free as part of a free trial. 
 - Set your Log Analytics Workspace supporting Microsoft Sentinel to [90 day retention](/azure/sentinel/billing?tabs=commitment-tier#data-retention-and-archived-logs-costs) at a minimum.
 
-Once you onboard Microsoft Sentinel to a Log Analytics workspace, you get 90 days of data retention at no additional cost. You will incur costs for the total amount of data in the workspace after 90 days. Setting it to 90 days ensures a 90-day rollover of log data. You may consider retaining log data for longer based on governmental requirements. See [Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard) for more information.
+Once you onboard Microsoft Sentinel to a Log Analytics workspace, you get 90 days of data retention at no additional cost. You will incur costs for the total amount of data in the workspace after 90 days. Setting it to 90 days ensures a 90-day rollover of log data. You may consider retaining log data for longer based on governmental requirements.
+
+For more information, see [Create Log Analytics workspaces](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal) and [Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard).
 
 ### Zero Trust with Microsoft Sentinel
 
@@ -90,11 +91,6 @@ In addition, use the [Cloud Roles and Operations Management prescriptive guidanc
 
 To comply with Zero Trust, we recommend that you configure Azure RBAC based on the resources that are allowed to your users instead of providing them with access to the entire Microsoft Sentinel environment.
 
-When you assign Microsoft Sentinel-specific Azure roles, you may come across other Azure and Log Analytics roles that may have been assigned to users for other purposes. For example, the *Log Analytics Contributor* and *Log Analytics Reader* roles grant access to a Log Analytics workspace. 
-
-For more information, see [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles) and [Manage access to Microsoft Sentinel data by resource](/azure/sentinel/resource-context-rbac).
-
-<!--use an include file?
 The following table lists some of the Microsoft Sentinel-specific roles.
 
 | Role name | Description |
@@ -104,7 +100,10 @@ The following table lists some of the Microsoft Sentinel-specific roles.
 | **Microsoft Sentinel Playbook Operator** | List, view, and manually run playbooks. This role is also applicable to user types of security analysts. This role is for granting a Microsoft Sentinel responder the ability to run Microsoft Sentinel playbooks with the least amount of privilege. |
 | **Microsoft Sentinel Contributor** | In addition to the capabilities of the Microsoft Sentinel Playbook Operator role, create and edit workbooks, analytics rules, and other Microsoft Sentinel resources. This role is applicable to user types of security engineers. |
 | **Microsoft Sentinel Automation Contributor** | Allows Microsoft Sentinel to add playbooks to automation rules. It isn't meant for user accounts. |
--->
+
+When you assign Microsoft Sentinel-specific Azure roles, you may come across other Azure and Log Analytics roles that may have been assigned to users for other purposes. For example, the *Log Analytics Contributor* and *Log Analytics Reader* roles grant access to a Log Analytics workspace. 
+
+For more information, see [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles) and [Manage access to Microsoft Sentinel data by resource](/azure/sentinel/resource-context-rbac).
 
 ### Zero Trust in multi-tenant architectures with Azure Lighthouse
 

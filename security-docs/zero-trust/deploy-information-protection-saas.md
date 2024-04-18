@@ -1,6 +1,6 @@
 ---
 title: Deploy information protection for SaaS apps
-description: Learn how to deploy information protection for SaaS apps to prevent inadvertent exposure of sensitive information
+description: Learn how to deploy information protection for SaaS apps to prevent inadvertent exposure of sensitive information.
 ms.date: 04/18/2024
 ms.service: security
 author: mjcaparas

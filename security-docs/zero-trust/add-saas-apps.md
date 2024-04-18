@@ -1,6 +1,6 @@
 ---
 title: Add SaaS apps to Microsoft Entra ID and to the scope of policies 
-description: Learn steps to add SaaS apps to Microsoft Entra ID and to the scope of identity and device policies
+description: Learn steps to add SaaS apps to Microsoft Entra ID and to the scope of identity and device policies.
 ms.date: 04/18/2024
 ms.service: security
 author: mjcaparas
@@ -18,7 +18,7 @@ ms.collection:
 
 Many organizations rely on SaaS apps to run business workflows. The ease of use, cost effectiveness, and scalability makes it a viable solution for organizations to adopt. Because of the amount information and access to valuable resources these apps have, proper measures must be in place to secure these business-critical apps.
 
-Microsoft Entra ID is the Microsoft cloud-based identity and access management service. Microsoft Entra ID provides secure authentication and authorization solutions so that customers, partners, and employees can access the applications they need. With Microsoft Entra ID, [conditional access](/azure/active-directory/conditional-access/overview), [multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks), [single-sign on](/azure/active-directory/hybrid/how-to-connect-sso), and [automatic user provisioning](/azure/active-directory/app-provisioning/user-provisioning) make identity and access management easy and secure.
+Microsoft Entra ID is the Microsoft cloud-based identity and access management service. Microsoft Entra ID provides secure authentication and authorization solutions so that customers, partners, and employees can access the applications they need. With Microsoft Entra ID, [Conditional Access](/azure/active-directory/conditional-access/overview), [multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks), [single-sign on](/azure/active-directory/hybrid/how-to-connect-sso), and [automatic user provisioning](/azure/active-directory/app-provisioning/user-provisioning) make identity and access management easy and secure.
 
 Add apps in Microsoft Entra ID so that you can monitor and configure access for applications in the cloud. Microsoft Entra ID has an application gallery which is a collection of SaaS apps that have been pre-integrated with Microsoft Entra ID. You can also choose to add your own custom apps. For more information, see [Five steps for integrating all your apps with Microsoft Entra ID](/azure/active-directory/fundamentals/five-steps-to-full-application-integration-with-azure-ad).
 
@@ -60,7 +60,7 @@ For more information, see  [Request to publish your application in the Microsoft
 
 After adding apps in Microsoft Entra ID, you'll need to add them to the scope your identity and device access policies. 
 
-Conditional access policies allow administrators to assign controls to specific applications, actions, or authentication context. You can define conditions such as what device type can access a resource, user risk levels, trusted locations, as well as other conditions. Multifactor authentication (MFA) is also part of these policies. 
+Conditional Access policies allow administrators to assign controls to specific applications, actions, or authentication context. You can define conditions such as what device type can access a resource, user risk levels, trusted locations, as well as other conditions. Multifactor authentication (MFA) is also part of these policies. 
 
 MFA helps safeguard access to data and applications, by providing additional security by requiring a second form of verification and delivers strong authentication. 
 

@@ -1,6 +1,6 @@
 ---
 title: Create Defender for Cloud App policies
-description: Learn how to create Defender for Cloud Apps policies so that you can properly manage and protect important resources
+description: Learn how to create Defender for Cloud Apps policies so that you can properly manage and protect important resources.
 ms.date: 04/18/2024
 ms.service: security
 author: mjcaparas
@@ -69,21 +69,21 @@ For more information, see [Sanctioning/unsanctioning an app](/defender-cloud-app
 
 ## Configure Conditional Access App Control to protect apps
 
-In [Step 1: Add SaaS apps to Microsoft Entra ID and to the scope of policies](add-saas-apps.md), conditional access was described as policies that allow administrators to assign controls to specific applications, actions, or authentication context. You have the ability to define which users or user groups can access the cloud apps, which cloud apps users can access, and which locations and networks a user has access to using conditional access policy.
+In [Step 1: Add SaaS apps to Microsoft Entra ID and to the scope of policies](add-saas-apps.md), Conditional Access was described as policies that allow administrators to assign controls to specific applications, actions, or authentication context. You have the ability to define which users or user groups can access the cloud apps, which cloud apps users can access, and which locations and networks a user has access to using Conditional Access policy.
 
-In conjunction with conditional access policies, you can further augment the security of cloud apps by applying access and session controls using Conditional Access App Control. Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user.
+In conjunction with Conditional Access policies, you can further augment the security of cloud apps by applying access and session controls using Conditional Access App Control. Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user.
 
 Microsoft Defender for Cloud Apps natively integrates with Microsoft Entra ID. All you have to do is configure a policy in Microsoft Entra ID to use Conditional Access App Control in Defender for Cloud Apps. This routes network traffic for these managed SaaS apps through Defender for Cloud Apps as a proxy, which allows Defender for Cloud Apps to monitor this traffic and to apply session controls. 
 
 :::image type="content" source="media/m365-defender-mcas-architecture-e.svg" alt-text="The architecture for the Microsoft Defender for Cloud Apps - SaaS apps" lightbox="media/m365-defender-mcas-architecture-e.svg":::
 
 In this illustration:
-- SaaS apps are integrated with the Microsoft Entra tenant. This integration allows Microsoft Entra ID to enforce conditional access policies, including multi-factor authentication.
-- A policy is added to Microsoft Entra ID to direct traffic for SaaS apps to Defender for Cloud Apps. The policy specifies which SaaS apps to apply this policy to. Therefore, after Microsoft Entra ID enforces any conditional access policies that apply to these SaaS apps, Microsoft Entra ID then directs (proxies) the session traffic through Defender for Cloud Apps.
+- SaaS apps are integrated with the Microsoft Entra tenant. This integration allows Microsoft Entra ID to enforce Conditional Access policies, including multi-factor authentication.
+- A policy is added to Microsoft Entra ID to direct traffic for SaaS apps to Defender for Cloud Apps. The policy specifies which SaaS apps to apply this policy to. Therefore, after Microsoft Entra ID enforces any Conditional Access policies that apply to these SaaS apps, Microsoft Entra ID then directs (proxies) the session traffic through Defender for Cloud Apps.
 - Defender for Cloud Apps monitors this traffic and applies any session control policies that have been configured by administrators. 
 
 
-To summarize, conditional access dictates the requirements that must be fulfilled before a user can access apps. Conditional Access App Control dictates what apps a user can access and the set of actions that a user can take during a session **after** they've been granted access. 
+To summarize, Conditional Access dictates the requirements that must be fulfilled before a user can access apps. Conditional Access App Control dictates what apps a user can access and the set of actions that a user can take during a session **after** they've been granted access. 
 
 Use the following references for more information:
 -  [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad)

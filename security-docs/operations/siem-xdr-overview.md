@@ -213,7 +213,6 @@ Also see these additional articles for applying Zero Trust principles to Azure:
 - [Virtual machines](/security/zero-trust/azure-infrastructure-virtual-machines)
 - [Spoke virtual networks](/security/zero-trust//azure-infrastructure-iaas)
 - [Hub virtual networks](/security/zero-trust//azure-infrastructure-networking)
-
 - [Spoke virtual network with Azure PaaS Services](/security/zero-trust/azure-infrastructure-paas)
 - [Azure Virtual Desktop](/security/zero-trust/azure-infrastructure-avd)
 - [Azure Virtual WAN](/security/zero-trust/azure-virtual-wan)

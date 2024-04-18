@@ -173,26 +173,10 @@ Continue with [Step 3](ingest-data-sources.md) to configure Microsoft Sentinel t
 
 Refer to these links to learn about the services and technologies mentioned in this article.
 
-Microsoft Sentinel:
 
-- [Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard)
-- [Manage access to Microsoft Sentinel data by resource](/azure/sentinel/resource-context-rbac)
-
-Microsoft Sentinel governance:
-
-- [Organize your resources with management groups](/azure/governance/management-groups/overview)
-- [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles)
-
-Log Analytics workspaces:
-
-- [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design)
-- [Design criteria for Log Analytics workspaces](/azure/azure-monitor/logs/workspace-design#design-criteria)
-- [Contoso's solution](/azure/sentinel/sample-workspace-designs#contosos-solution)
-- [Manage access to Log Analytics workspaces - Azure Monitor](/azure/azure-monitor/logs/manage-access?tabs=portal)
-- [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design)
-- [Create Log Analytics workspaces](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal)
-
-Microsoft Sentinel workspaces and Azure Lighthouse:
-
-- [Manage Microsoft Sentinel workspaces at scale: Granular Azure RBAC](/azure/lighthouse/how-to/manage-sentinel-workspaces#granular-azure-role-based-access-control-azure-rbac)
-- [Recommended security practices](/azure/lighthouse/concepts/recommended-security-practices)
+|Service area |Learn more  |
+|---------|---------|
+|**Microsoft Sentinel**     | - [Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard) <br>- [Manage access to Microsoft Sentinel data by resource](/azure/sentinel/resource-context-rbac)        |
+|**Microsoft Sentinel governance**     |  - [Organize your resources with management groups](/azure/governance/management-groups/overview) <br>- [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles)       |
+|**Log Analytics workspaces**     | - [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design)<br>- [Design criteria for Log Analytics workspaces](/azure/azure-monitor/logs/workspace-design#design-criteria)<br>- [Contoso's solution](/azure/sentinel/sample-workspace-designs#contosos-solution)<br>- [Manage access to Log Analytics workspaces - Azure Monitor](/azure/azure-monitor/logs/manage-access?tabs=portal)<br>- [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design)<br>- [Create Log Analytics workspaces](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal)        |
+|**Microsoft Sentinel workspaces and Azure Lighthouse**     |       - [Manage Microsoft Sentinel workspaces at scale: Granular Azure RBAC](/azure/lighthouse/how-to/manage-sentinel-workspaces#granular-azure-role-based-access-control-azure-rbac)<br>- [Recommended security practices](/azure/lighthouse/concepts/recommended-security-practices) |

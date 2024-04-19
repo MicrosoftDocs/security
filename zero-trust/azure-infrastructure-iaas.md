@@ -263,8 +263,6 @@ The outbound connections are:
 
 Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here's an example diagram of using application security groups to define network traffic patterns in the network security groups for a spoke VNet that is used along with a hub VNet. This is the recommended configuration.
 
-//FIX These diagrams need to be updated to show at least an option with the Azure Firewall, similar to [the PaaS Article](azure-infrastructure-paas.md#deploy-application-specific-rules)
-
 :::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.svg" alt-text="The recommended configuration of networking patterns for a three-tier web application in a hub-spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-7.svg":::
 
 As another example, here is a configuration for a stand-alone spoke VNet in which the Web Application Firewall is placed in the Application Gateway subnet of the spoke VNet.
@@ -376,7 +374,9 @@ To enable Network Security Group Flow Logging, you can follow the [Tutorial: Log
 
 ### Protect inbound web traffic with IDPS
 
-//FIX New Article information, or link to architecture center: https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall
+In addition to the controls in your spoke virtual network, you can also use an Azure Firewall in order to apply additional inspection.  While the Web Application Firewall function for Azure Front Door and Application Gateway inspects traffic for common web attacks, using Azure Firewall can provide a deeper level of inspection.
+
+To use every signal available and maintain central visibility into network traffic, routing traffic from your Application Gateway to Azure Firewall is recommended.  It can then inspect the traffic for additional signals, and capture the behavior in its logs.  You can read more about this configuration in the article [Zero-trust network for web applications with Azure Firewall and Application Gateway](https://learn.microsoft.com/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall).  For more guidance on how to set up this behavior, see [Configure Azure Firewall Premium for Zero Trust](./azure-infrastructure-networking.md#configure-azure-firewall-premium-for-zero-trust).
 
 ## Step 6: Secure access to the VNet and application
 

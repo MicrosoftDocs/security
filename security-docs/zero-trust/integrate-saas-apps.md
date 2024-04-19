@@ -45,7 +45,7 @@ The diagram shows:
 
 This diagram shows the units of work for deploying Zero Trust capabilities across Microsoft 365, with the specific steps for SaaS app integration and protection.
 
- ::image type="content" source="./media/saas-zt.svg" alt-text="The Microsoft 365 Zero Trust deployment stack with the specific steps for SaaS app integration and protection highlighted." lightbox="./media/saas-zt.svg":::
+:::image type="content" source="./media/saas-zt.svg" alt-text="The Microsoft 365 Zero Trust deployment stack with the specific steps for SaaS app integration and protection highlighted." lightbox="./media/saas-zt.svg":::
 
 |Step|Description|
 |---|---|

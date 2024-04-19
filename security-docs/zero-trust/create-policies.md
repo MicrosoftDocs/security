@@ -128,9 +128,8 @@ Try out Defender for Cloud Apps tutorials:
 - [Protect your files with admin quarantine](/cloud-app-security/use-case-admin-quarantine)
 - [Require step-up authentication upon risky action](/cloud-app-security/tutorial-step-up-authentication)
 
-
 ## Next step
 
-:::image type="content" source="media/saas-zt-steps-3.png" alt-text="Image of Zero Trust SaaS guidance with step 3 highlighted":::
+[![The steps for integrating and protecting SaaS apps with Step 3 hightlighted.](./media/saas-zt-steps-3.png)](create-policies.md)
 
 Continue with [Step 3](deploy-information-protection-saas.md) to deploy information protection for SaaS apps.

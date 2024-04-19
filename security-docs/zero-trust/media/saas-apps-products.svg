@@ -1276,7 +1276,7 @@
 		</g>
 		<g id="shape111-83" v:mID="111" v:groupContext="shape" transform="translate(133.27,-137.098)">
 			<title>Sheet.111</title>
-			<desc>Add SaaS and PaaS Apps to Microsoft Entra ID Add these apps t...</desc>
+			<desc>Add SaaS and PaaS apps to Microsoft Entra ID Add these apps t...</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(29000):26"/>
 			</v:userDefs>
@@ -1284,7 +1284,7 @@
 			<v:textRect cx="85.2463" cy="513.75" width="170.5" height="18"/>
 			<rect x="0" y="504.75" width="170.493" height="18" class="st5"/>
 			<text x="4" y="519.7" class="st16" v:langID="1033"><v:paragraph v:indentFirst="-18" v:indentLeft="18" v:spAfter="4"
-						v:bullet="3"/><v:tabList/><tspan class="st17" v:isBullet="true">§</tspan> <tspan class="st18">Add SaaS and PaaS Apps </tspan><tspan
+						v:bullet="3"/><v:tabList/><tspan class="st17" v:isBullet="true">§</tspan> <tspan class="st18">Add SaaS and PaaS apps </tspan><tspan
 						x="22" dy="1.204em" class="st18">to Microsoft Entra ID <v:newlineChar/></tspan><tspan x="4" dy="1.546em"
 						class="st17" v:isBullet="true">§</tspan> <tspan class="st18">Add these apps to the </tspan><tspan x="22"
 						dy="1.204em" class="st18">scopes of your Conditional </tspan><tspan x="22" dy="1.2em" class="st18">Access policies and require </tspan><tspan

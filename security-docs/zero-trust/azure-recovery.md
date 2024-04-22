@@ -4,7 +4,7 @@ description: How to apply Zero Trust principles to your recovery plan
 ms.date: 03/20/2024
 ms.service: security
 author: brsteph
-ms.author: bstephenson, sdolgin
+ms.author: bstephenson
 ms.topic: conceptual
 ms.collection: 
  - msftsolution-azureiaas
@@ -76,9 +76,9 @@ This table provides a reference for commonly used services, but you should inves
 |---|---|---|
 | Azure Files | [Backup Azure File shares](/azure/backup/backup-azure-files?toc=%2Fazure%2Fstorage%2Ffiles%2Ftoc.json&tabs=backup-center) <P> [Prevent accidental deletion of Azure file shares](/azure/storage/files/storage-files-prevent-file-share-deletion) | [Enable soft delete on Azure file shares](/azure/storage/files/storage-files-enable-soft-delete?tabs=azure-portal) | 
 | Azure Blob Storage | [Enable point-in-time restore on blob data](/azure/storage/blobs/point-in-time-restore-manage?tabs=portal)  <p> [Store business-critical blob data with immutable storage](/azure/storage/blobs/immutable-storage-overview) | [Data protection for Azure blob overview](/azure/storage/blobs/data-protection-overview) <p> [Enable and manage soft delete for containers](/azure/storage/blobs/soft-delete-container-enable?tabs=azure-portal)  <p> [Enable soft delete for blobs](/azure/storage/blobs/soft-delete-blob-enable?tabs=azure-portal)| 
-| Azure SQL database | [Automated backups in Azure SQL database](/azure/azure-sql/database/automated-backups-overview?view=azuresql) | [Active geo-replication](/azure/azure-sql/database/active-geo-replication-overview?view=azuresql-db) <p> [Failover groups for Azure SQL database](https://learn.microsoft.comazure/azure-sql/database/failover-group-sql-db?view=azuresql-db)|
-| SQL Managed Instances | [Automated backups in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/automated-backups-overview?view=azuresql) | [Failover groups for Azure SQL managed instance](/azure/azure-sql/managed-instance/failover-group-sql-mi?view=azuresql) | 
-| SQL on Azure VMs | [Backup and restore for SQL server on Azure VMs](/azure/azure-sql/virtual-machines/windows/backup-restore?view=azuresql) | [Failover cluster instances with SQL server on Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview?view=azuresql) |
+| Azure SQL database | [Automated backups in Azure SQL database](/azure/azure-sql/database/automated-backups-overview) | [Active geo-replication](/azure/azure-sql/database/active-geo-replication-overview) <p> [Failover groups for Azure SQL database](/azure/azure-sql/database/failover-group-sql-db)|
+| SQL Managed Instances | [Automated backups in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/automated-backups-overview) | [Failover groups for Azure SQL managed instance](/azure/azure-sql/managed-instance/failover-group-sql-mi) | 
+| SQL on Azure VMs | [Backup and restore for SQL server on Azure VMs](/azure/azure-sql/virtual-machines/windows/backup-restore) | [Failover cluster instances with SQL server on Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview) |
 | Key vaults |  [Azure Key Vault backup and restore](/azure/key-vault/general/backup?tabs=azure-cli)| [Enable soft-delete and purge protection for key vaults](/azure/key-vault/general/key-vault-recovery?tabs=azure-portal#what-are-soft-delete-and-purge-protection) <p> [Azure Key Vault availability and redundancy](/azure/key-vault/general/disaster-recovery-guidance) |
 
 > [!WARNING]
@@ -133,11 +133,11 @@ Your playbooks should include your processes for the following scenarios:
 - [How to restore Azure VM data in Azure portal](/azure/backup/backup-azure-arm-restore-vms)
 - [Restore files to a virtual machine in Azure](/azure/backup/tutorial-restore-files)
 - [Recover soft deleted data and recovery points using enhanced soft delete in Azure Backup](/azure/backup/backup-azure-enhanced-soft-delete-tutorial?tabs=recovery-services-vault)
-- [Restore the state of Kubernetes clusters after a disaster](azure/aks/hybrid/restore-aks-cluster)
-- [Recover a deleted storage account](https://learn.microsoft.coms/azure/storage/common/storage-account-recover)
+- [Restore the state of Kubernetes clusters after a disaster](/azure/aks/hybrid/restore-aks-cluster)
+- [Recover a deleted storage account]/azure/storage/common/storage-account-recover)
 - [Recover a soft-deleted key vault](/azure/key-vault/general/key-vault-recovery?tabs=azure-portal#list-recover-or-purge-a-soft-deleted-key-vault)
 - [Recover soft-deleted secrets, keys, and certificates from a key vault](/azure/key-vault/general/key-vault-recovery?tabs=azure-portal#list-recover-or-purge-soft-deleted-secrets-keys-and-certificates)
-- [Disaster recovery guidance - Azure SQL Database](/azure/azure-sql/database/disaster-recovery-guidance?view=azuresql-db)
+- [Disaster recovery guidance - Azure SQL Database](/azure/azure-sql/database/disaster-recovery-guidance)
 
 Your playbook should also include the restoration process for any other resources that make up this service.
 

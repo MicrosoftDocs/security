@@ -123,6 +123,6 @@ Try out Defender for Cloud Apps tutorials:
 
 ## Next step
 
-[![The steps for integrating and protecting SaaS apps with Step 3 hightlighted.](./media/saas-zt-steps-3.png)](create-policies.md)
+[![The steps for integrating and protecting SaaS apps with Step 3 hightlighted.](./media/saas-zt-steps-3.png)](deploy-information-protection-saas.md)
 
 Continue with [Step 3](deploy-information-protection-saas.md) to deploy information protection for SaaS apps.

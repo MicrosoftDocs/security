@@ -16,7 +16,7 @@ ms.collection:
 
 # Integrate SaaS apps for Zero Trust with Microsoft 365 
 
-The widespread increase in cloud adoption is transforming how organizations achieve business outcomes. This shift highlights the reliance on cloud-based apps resulting in higher demand for services such as Software as a Service (SaaS), Platform as a Service (PaaS), Infrastructure as a Service (IaaS), and app development platforms. SaaS apps play a key role in ensuring that applications and resources are available and accessible from any device with an Internet connection.
+The widespread increase in cloud adoption is transforming how organizations achieve business outcomes. This shift highlights the reliance on cloud-based apps resulting in higher demand for services such as Software as a Service (SaaS), Platform as a Service (PaaS), Infrastructure as a Service (IaaS), and cloud-based app development platforms. SaaS apps play a key role in ensuring that applications and resources are available and accessible from any device with an Internet connection.
 
 While a multi-cloud environment can help reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure that apps hosted in the cloud and their data are protected. 
 
@@ -28,9 +28,9 @@ To ensure that access and productivity is secure, implementation of SaaS apps ne
 | Use least privileged access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. |
 
-This solution helps you apply Zero Trust principles using Microsoft 365 to help manage your digital estate of cloud apps, with a focus on SaaS. 
+This solution helps you apply Zero Trust principles using Microsoft 365 to help manage your digital estate of cloud apps, with a focus on SaaS.
 
-The following diagram shows the relationships between your cloud apps and Microsoft Entra ID, Microsoft Defender for Cloud Apps, and Microsoft Purview Information Protection to apply these principles.
+The following diagram shows the relationships between your third-party cloud apps, Microsoft Entra ID, Microsoft Defender for Cloud Apps, and Microsoft Purview Information Protection to apply these principles.
 
 :::image type="content" source="./media/saas-apps-products.svg" alt-text="The relationships between your third-party cloud apps, Microsoft Entra ID, Microsoft Defender for Cloud Apps, and Microsoft Purview Information Protection." lightbox="./media/saas-apps-products.svg":::
 
@@ -50,8 +50,8 @@ This diagram shows the units of work for deploying Zero Trust capabilities acros
 |Step|Description|
 |---|---|
 | 1. [Add SaaS apps to Microsoft Entra ID](add-saas-apps.md) | Add applications to Microsoft Entra ID so that authorized users can securely access it. Many types of applications can be registered with Microsoft Entra ID. |
-| 2. [Create Microsoft Defender for Cloud Apps policies](create-policies.md) | You want to make sure that policies are in place to ensure that only authorized users and specific conditions are met before users are able to access resources. |
-| 3. [Deploy information protection for SaaS apps](deploy-information-protection-saas.md) | Organizations need to protect proprietary information and ensure that information protection is in place so that sensitive data is protected. |
+| 2. [Create Microsoft Defender for Cloud Apps policies](create-policies.md) | Ensure that policies are in place to ensure that only authorized users and specific conditions are met before users are able to access resources. |
+| 3. [Deploy information protection for SaaS apps](deploy-information-protection-saas.md) | Ensure that the proprietary and sensitive business data for your SaaS apps is protected. |
 
 For guidance on licensing, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 

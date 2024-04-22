@@ -45,7 +45,7 @@ The diagram shows:
 
 This diagram shows the units of work for deploying Zero Trust capabilities across Microsoft 365, with the specific steps for SaaS app integration and protection.
 
-:::image type="content" source="./media/saas-zt.svg" alt-text="The Microsoft 365 Zero Trust deployment stack with the specific steps for SaaS app integration and protection highlighted." lightbox="./media/saas-zt.svg":::
+:::image type="content" source="./media/zero-trust-m365-saas-steps.svg" alt-text="The Microsoft 365 Zero Trust deployment stack with the specific steps for SaaS app integration and protection highlighted." lightbox="./media/zero-trust-m365-saas-steps.svg":::
 
 |Step|Description|
 |---|---|
@@ -71,7 +71,7 @@ Use these steps to apply Zero Trust principles for your SaaS apps with Microsoft
 2. [Create Microsoft Defender for Cloud Apps policies](create-policies.md).
 3. [Deploy information protection for SaaS apps](deploy-information-protection-saas.md).
 
-[![The steps for integrating and protecting SaaS apps with Step 1 hightlighted.](./media/saas-zt-steps.png)](add-saas-apps.md)
+[![The steps for integrating and protecting SaaS apps with Step 1 hightlighted.](./media/zero-trust-saas-apps-step-1.png)](add-saas-apps.md)
 
 ## Recommended training
 

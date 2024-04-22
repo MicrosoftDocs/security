@@ -38,7 +38,7 @@ Defender for Cloud Apps has a capability called Cloud Discovery that analyzes yo
 
 The following diagram shows the components of cloud app discovery and the two methods used to monitor network traffic and discover cloud apps that are being used in your organization
 
-:::image type="content" source="./media/m365-defender-mcas-architecture-b.svg" alt-text="The components of cloud app discovery for cloud app traffic that goes through Defender for Endpoint or on-premises firewalls or proxies." lightbox="./media/m365-defender-mcas-architecture-b.svg":::
+:::image type="content" source="./media/cloud-app-discovery-architecture.svg" alt-text="The components of cloud app discovery for cloud app traffic that goes through Defender for Endpoint or on-premises firewalls or proxies." lightbox="./media/cloud-app-discovery-architecture.svg":::
 
 In this diagram:
 
@@ -66,7 +66,7 @@ Microsoft Defender for Cloud Apps natively integrates with Microsoft Entra. When
 
 The following diagram shows how cloud app traffic gets routed through Microsoft Entra and Defender for Cloud Apps.
 
-:::image type="content" source="media/m365-defender-mcas-architecture-e.svg" alt-text="Diagram showing how cloud app traffic travels through Microsoft Entra and Defender for Cloud Apps when conditional access app controls are configured." lightbox="media/m365-defender-mcas-architecture-e.svg":::
+:::image type="content" source="media/conditional-access-app-control-architecture.svg" alt-text="Diagram showing how cloud app traffic travels through Microsoft Entra and Defender for Cloud Apps when conditional access app controls are configured." lightbox="media/conditional-access-app-control-architecture.svg":::
 
 In this diagram:
 
@@ -113,6 +113,6 @@ Defender for Cloud Apps documentation includes the following series of tutorials
 
 ## Next step
 
-[![The steps for integrating and protecting SaaS apps with Step 3 hightlighted.](./media/saas-zt-steps-3.png)](deploy-information-protection-saas.md)
+[![The steps for integrating and protecting SaaS apps with Step 3 hightlighted.](./media/zero-trust-saas-apps-step-3.png)](deploy-information-protection-saas.md)
 
 Continue with [Step 3](deploy-information-protection-saas.md) to deploy information protection for SaaS apps.

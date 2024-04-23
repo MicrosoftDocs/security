@@ -16,7 +16,7 @@ ms.collection:
 
 # Step 2: Create Defender for Cloud App policies
 
-SaaS apps play a key role in ensuring that your applications and resources are available and accessible from any device with an Internet connection. However, some apps can pose a security risk with the potential to cause significant damage to your organization when not discovered and managed. You must have visibility into the apps that are being used in your organization so that you can protect your sensitive data and resources.
+SaaS apps play a key role in ensuring that your applications and resources are available and accessible from any device with an Internet connection. However, some apps can pose a security risk with the potential to cause significant damage to your organization if not discovered and managed. You must have visibility into the apps that are being used in your organization so that you can protect your sensitive data and resources.
 
 Microsoft Defender for Cloud Apps keeps you in control through comprehensive visibility, auditing, and granular controls over your sensitive data. Defender for Cloud Apps has tools that help uncover shadow IT and assess risk while enabling you to enforce policies and investigate app activities. It helps you control access in real time and stop threats so your organization can more safely move to the cloud.
 
@@ -34,7 +34,7 @@ If you haven't already set up Defender for Cloud Apps, see [Evaluate Microsoft D
 
 Without visibility into the apps being used in your organization, you will not be able to properly manage and control how users use the apps and how the apps access sensitive data and resources.  
 
-Defender for Cloud Apps has a capability called Cloud Discovery that analyzes your traffic logs against the Microsoft Defender for Cloud Apps catalog of over 31,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors and provide you with ongoing visibility into cloud use, Shadow IT, and the risk posed by Shadow IT in your organization.
+Defender for Cloud Apps has a capability called Cloud Discovery that analyzes your traffic logs against the Microsoft Defender for Cloud Apps catalog of over 31,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors and provide you with ongoing visibility into cloud app use, Shadow IT, and the risk posed by unknown and unmanaged apps.
 
 The following diagram shows the components of cloud app discovery and the two methods used to monitor network traffic and discover cloud apps that are being used in your organization
 
@@ -58,9 +58,9 @@ For more information, see [Sanctioning/unsanctioning an app](/defender-cloud-app
 
 ## Configure Conditional Access App Control to protect apps
 
-Conditional Access policies allow you to assign controls and requirements to specific applications, actions, or authentication context. You have the ability to define which users or user groups can access your cloud apps, which cloud apps users can access, and from which locations and networks a user must originate access. See [Step 1](add-saas-apps.md) of this solution for additional information.
+Conditional Access policies allow you to assign controls and requirements to specific applications, actions, or authentication conditions. You have the ability to define which users or user groups can access your cloud apps, which cloud apps they can access, and from which locations and networks a user must originate their access. See [Step 1](add-saas-apps.md) of this solution for additional information.
 
-In conjunction with Conditional Access policies, you can further increase the security of cloud apps by applying access and session controls using conditional access app control. The conditional access app control capability in Defender for Cloud Apps enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies configured with the Defender for Cloud Apps portal allow you to further refine filters and set actions to be taken on a user.
+In conjunction with Conditional Access policies, you can further increase the security of your cloud apps by applying access and session controls using conditional access app control. With the conditional access app control capability in Defender for Cloud Apps, user app access and sessions are monitored and controlled in real time based on access and session policies. Access and session policies configured with the Defender for Cloud Apps portal allow you to further refine filters and set actions that users can perform.
 
 Microsoft Defender for Cloud Apps natively integrates with Microsoft Entra. When you configure a policy in Microsoft Entra to use conditional access app control, cloud app traffic is routed through Defender for Cloud Apps as a proxy, which allows Defender for Cloud Apps to monitor this traffic and to apply session controls.
 
@@ -71,7 +71,7 @@ The following diagram shows how cloud app traffic gets routed through Microsoft 
 In this diagram:
 
 - Microsoft Entra has a conditional access app control policy for the traffic the specified and integrated SaaS apps. Microsoft Entra ID then directs (proxies) the session traffic through Defender for Cloud Apps.
-- Defender for Cloud Apps monitors this traffic and applies any session control policies and then forwards the traffic to the cloud app.
+- Defender for Cloud Apps monitors this traffic and applies session control policies.
 
 Conditional Access dictates the requirements that must be fulfilled before a user can access an app. Conditional access app control dictates what apps a user can access and the set of actions that a user can take during a session **after** they've been granted access. 
 
@@ -85,16 +85,16 @@ For more information, see:
 App connectors use the APIs of app providers to enable greater visibility and control by Defender for Cloud Apps over the apps being used in your organization. Depending on the app to which you're connecting, app connections enable the following:
 
 - **Account information** - Visibility into users, accounts, profile information, status (suspended, active, disabled) groups, and privileges.
-- **Audit trail** - Visibility into user activities, admin activities, sign-in activities.
+- **Audit trail** - Visibility into user activities, admin activities, and sign-in activities.
 - **Account governance** - Ability to suspend users, revoke passwords, and other abilities.
 - **App permissions** - Visibility into issued tokens and their permissions.
 - **App permission governance** - Ability to remove tokens.
-- **Data scan** - Scanning of unstructured data using two processes -periodically (every 12 hours) and in real-time scan (triggered each time a change is detected).
+- **Data scan** - Scanning of unstructured data using two processes -periodically (every 12 hours) and in real-time (triggered each time a change is detected).
 - **Data governance** - Ability to quarantine files, including files in trash, and to overwrite files.
 
 For more information, see [Connect apps](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
 
-Defender for Cloud Apps provides end-to-end protection for connected apps using cloud-to-cloud integration, [API connectors](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps), and real-time access and session controls leveraging [Conditional app access controls](/defender-cloud-apps/proxy-intro-aad).
+Defender for Cloud Apps provides end-to-end protection for connected apps using cloud-to-cloud integration, [API connectors](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps), and real-time access and session controls that leverage [Conditional app access controls](/defender-cloud-apps/proxy-intro-aad).
 
 ## Apply session controls
 

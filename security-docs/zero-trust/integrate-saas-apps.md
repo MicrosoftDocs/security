@@ -20,15 +20,15 @@ The widespread increase in cloud adoption is transforming how organizations achi
 
 While a multi-cloud environment can help reduce operational costs and improve scalability, the large amount of sensitive data and the flexibility it affords organizations can potentially pose a security risk. Deliberate steps must be taken to ensure that apps hosted in the cloud and their data are protected. 
 
-To ensure that access and productivity is secure, implementation of SaaS apps need to align with the Zero Trust security model, which is based on these guiding principles.
+To ensure that access and productivity are secure, implementation of SaaS apps need to align with the Zero Trust security model, which is based on these guiding principles.
 
 | Zero Trust principle | Definition | Met by... |
 | --- | --- | --- |
-| Verify explicitly | Always authenticate and authorize based on all available data points. | Registering your SaaS apps and using Conditional Access policies. |
+| Verify explicitly | Always authenticate and authorize based on all available data points. | Registering your SaaS apps and using Microsoft Entra Conditional Access policies. |
 | Use least privileged access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Using Microsoft Purview Information Protection. |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Using Microsoft Defender for Cloud Apps. |
 
-This documentation solution helps you apply Zero Trust principles using Microsoft 365 to help manage your digital estate of cloud apps, with a focus on SaaS.
+This documentation solution helps you apply Zero Trust principles using Microsoft 365 to help manage your digital estate of cloud apps, with a focus on SaaS apps.
 
 The following diagram shows the relationships between your third-party cloud apps, Microsoft Entra ID, Defender for Cloud Apps, and Microsoft Purview Information Protection to apply these principles.
 

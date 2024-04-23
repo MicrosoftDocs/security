@@ -61,7 +61,7 @@ For more information, see [What is application management in Microsoft Entra ID?
 
 ## Add apps to the scope of your Zero Trust identity and device access policies
 
-Conditional Access policies allow you to assign controls to specific applications, actions, or authentication context. You can define conditions such as what device type can access a resource, user risk levels, trusted locations, and other conditions such as strong authentication. For example multifactor authentication (MFA) helps safeguard access to data and applications with additional security by requiring a second form of verification. 
+Conditional Access policies allow you to assign controls to specific applications, actions, or authentication context. You can define conditions such as what device type can access a resource, user risk levels, trusted locations, and other conditions such as strong authentication. For example, multifactor authentication (MFA) helps safeguard access to data and applications with additional security by requiring a second form of verification. 
 
 After adding apps in Microsoft Entra ID, you'll need to add them to the scope of your Zero Trust identity and device access policies. 
 

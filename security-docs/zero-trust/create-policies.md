@@ -1,5 +1,5 @@
 ---
-title: Create Defender for Cloud App policies
+title: Create Defender for Cloud Apps policies
 description: Learn how to create Defender for Cloud Apps policies so that you can properly manage and protect important resources.
 ms.date: 04/18/2024
 ms.service: security
@@ -14,7 +14,7 @@ ms.collection:
   - highpri
 ---
 
-# Step 2: Create Defender for Cloud App policies
+# Step 2: Create Defender for Cloud Apps policies
 
 SaaS apps play a key role in ensuring that your applications and resources are available and accessible from any device with an Internet connection. However, some apps can pose a security risk with the potential to cause significant damage to your organization if not discovered and managed. You must have visibility into the apps that are being used in your organization so that you can protect your sensitive data and resources.
 

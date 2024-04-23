@@ -40,7 +40,7 @@ Additional authors:
 
 - Mays Algebary
 - Mauricio Rojas
-- 
+- Adam Torkar
 
 --->
 

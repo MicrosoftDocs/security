@@ -38,7 +38,7 @@ Defender for Cloud Apps has a capability called Cloud Discovery that analyzes yo
 
 The following diagram shows the components of cloud app discovery and the two methods used to monitor network traffic and discover cloud apps that are being used in your organization
 
-:::image type="content" source="./media/cloud-app-discovery-architecture.svg" alt-text="The components of cloud app discovery for cloud app traffic that goes through Defender for Endpoint or on-premises firewalls or proxies." lightbox="./media/cloud-app-discovery-architecture.svg":::
+:::image type="content" source="./media/cloud-app-discovery-architecture.svg" alt-text="Diagram of the components of cloud app discovery for cloud app traffic that goes through Defender for Endpoint or on-premises firewalls or proxies." lightbox="./media/cloud-app-discovery-architecture.svg":::
 
 In this diagram:
 
@@ -113,6 +113,6 @@ Defender for Cloud Apps documentation includes the following series of tutorials
 
 ## Next step
 
-[![The steps for integrating and protecting SaaS apps with Step 3 hightlighted.](./media/zero-trust-saas-apps-step-3.png)](deploy-information-protection-saas.md)
+[![Diagram of the steps for integrating and protecting SaaS apps with Step 3 hightlighted.](./media/zero-trust-saas-apps-step-3.png)](deploy-information-protection-saas.md)
 
 Continue with [Step 3](deploy-information-protection-saas.md) to deploy information protection for SaaS apps.

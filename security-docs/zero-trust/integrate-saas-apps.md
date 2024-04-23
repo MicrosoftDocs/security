@@ -32,7 +32,7 @@ This documentation solution helps you apply Zero Trust principles using Microsof
 
 The following diagram shows the relationships between your third-party cloud apps, Microsoft Entra ID, Defender for Cloud Apps, and Microsoft Purview Information Protection to apply these principles.
 
-:::image type="content" source="./media/saas-apps-products.svg" alt-text="The relationships between your third-party cloud apps, Microsoft Entra ID, Microsoft Defender for Cloud Apps, and Microsoft Purview Information Protection." lightbox="./media/saas-apps-products.svg":::
+:::image type="content" source="./media/saas-apps-products.svg" alt-text="Diagram of the relationships between your third-party cloud apps, Microsoft Entra ID, Microsoft Defender for Cloud Apps, and Microsoft Purview Information Protection." lightbox="./media/saas-apps-products.svg":::
 
 The diagram shows:
 
@@ -45,7 +45,7 @@ The diagram shows:
 
 This diagram shows the units of work for deploying Zero Trust capabilities across your Microsoft 365 tenant, highlighting the specific steps for integrating and protecting your SaaS apps.
 
-:::image type="content" source="./media/zero-trust-m365-saas-steps.svg" alt-text="The Microsoft 365 Zero Trust deployment stack with the specific steps for SaaS app integration and protection highlighted." lightbox="./media/zero-trust-m365-saas-steps.svg":::
+:::image type="content" source="./media/zero-trust-m365-saas-steps.svg" alt-text="Diagram of the Microsoft 365 Zero Trust deployment stack with the specific steps for SaaS app integration and protection highlighted." lightbox="./media/zero-trust-m365-saas-steps.svg":::
 
 |Step|Description|
 |---|---|
@@ -59,19 +59,13 @@ For more information about applying Zero Trust protections across Microsoft 365,
 
 ## Next steps
 
-<!---
-This solution steps through the deployment of steps to apply Zero Trust principles for your SaaS apps with Microsoft 365. 
-
-Microsoft 365 helps you discover and manage your SaaS apps. You're likely already aware of the primary cloud apps used by your organization. Microsoft Entra ID includes a gallery of apps you can add to your directory. You can also use Microsoft Defender for Cloud Apps to discover other cloud apps that your users are using. For more information, see [Discover and assess cloud apps](/defender-cloud-apps/best-practices#discover-and-assess-cloud-apps). After you discover all your cloud apps, you'll need to make sure that only authorized users and that certain conditions are met before they're accessed, and that the app data is properly protected.
---->
-
 Use these steps to apply Zero Trust principles for your SaaS apps with Microsoft 365:
 
 1. [Add SaaS apps to Microsoft Entra ID](add-saas-apps.md).
 2. [Create Microsoft Defender for Cloud Apps policies](create-policies.md).
 3. [Deploy information protection for SaaS apps](deploy-information-protection-saas.md).
 
-[![The steps for integrating and protecting SaaS apps with Step 1 hightlighted.](./media/zero-trust-saas-apps-step-1.png)](add-saas-apps.md)
+[![Diagram of the steps for integrating and protecting SaaS apps with Step 1 hightlighted.](./media/zero-trust-saas-apps-step-1.png)](add-saas-apps.md)
 
 ## Recommended training
 

@@ -69,7 +69,7 @@ After adding apps in Microsoft Entra ID, you'll need to add them to the scope of
 
 The following diagram shows the Zero Trust identity and device access policies for SaaS and PaaS apps, highlighting the set of common Conditional Access policies whose scopes must be modified to include your SaaS apps.
 
-:::image type="content" source="./media/zero-trust-identity-device-access-policies-saas-apps.svg" alt-text="The Zero Trust identity and device access policies for SaaS apps with highlighted policies whose scopes must be modified." lightbox="./media/zero-trust-identity-device-access-policies-saas-apps.svg":::
+:::image type="content" source="./media/zero-trust-identity-device-access-policies-saas-apps.svg" alt-text="Diagram of the Zero Trust identity and device access policies for SaaS apps with highlighted policies whose scopes must be modified." lightbox="./media/zero-trust-identity-device-access-policies-saas-apps.svg":::
 
 For each policy to update, make sure that your apps and their dependent services are included in the assignment of cloud apps.
 
@@ -89,6 +89,6 @@ For more information, see [Recommended Microsoft Defender for Cloud Apps policie
 
 ## Next step
 
-[![The steps for integrating and protecting SaaS apps with Step 2 hightlighted.](./media/zero-trust-saas-apps-step-2.png)](create-policies.md)
+[![Diagram of the steps for integrating and protecting SaaS apps with Step 2 hightlighted.](./media/zero-trust-saas-apps-step-2.png)](create-policies.md)
 
 Continue with [Step 2](create-policies.md) to create Defender for Cloud Apps policies.

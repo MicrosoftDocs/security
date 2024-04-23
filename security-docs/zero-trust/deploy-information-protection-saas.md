@@ -27,7 +27,7 @@ The scope of this article focuses on protecting Microsoft Office and PDF files a
 
 The key concepts surrounding information protection involves knowing your data, protecting your data, and preventing data loss. The following diagram shows how to perform these key functions with the Purview compliance portal and the Defender for Cloud Apps portal.
 
-:::image type="content" source="./media/information-protection-saas-apps.svg" alt-text="The process of knowing your data, protecting your data, and preventing data loss with the Purview complaince portal and the Defender for Cloud Apps portal." lightbox="media/information-protection-saas-apps.svg":::
+:::image type="content" source="./media/information-protection-saas-apps.svg" alt-text="Diagram of the process of knowing your data, protecting your data, and preventing data loss with the Purview compliance portal and the Defender for Cloud Apps portal." lightbox="media/information-protection-saas-apps.svg":::
 
 In this diagram:
 
@@ -42,12 +42,12 @@ In this diagram:
 
 Use the following steps to apply information protection capabilities for your SaaS apps.
 
-## 1. Discover sensitive information in SaaS apps
+## Discover sensitive information in SaaS apps
 
 To discover sensitive information contained in SaaS apps, you'll need to:
 
-1.	Enable the Microsoft Purview Information Protection integration with Defender for Cloud Apps.
-2.	Create policies to identify sensitive information in files.
+- Enable the Microsoft Purview Information Protection integration with Defender for Cloud Apps.
+- Create policies to identify sensitive information in files.
 
 Microsoft Purview Information Protection is a framework that includes Defender for Cloud Apps. Integrating Defender for Cloud Apps in Microsoft Purview will help you better protect sensitive information in your organization. For more information, see [How to integrate Microsoft Purview Information Protection with Defender for Cloud Apps](/defender-cloud-apps/azip-integration#how-to-integrate-microsoft-purview-information-protection-with-defender-for-cloud-apps).
 
@@ -58,7 +58,7 @@ Once you know the kinds of information you want to protect, you create policies 
 
 For more information, see [Microsoft Data Classification Services integration](/defender-cloud-apps/dcs-inspection).
 
-## 2. Apply sensitivity labels to protect data
+## Apply sensitivity labels to protect data
 
 After discovering and sorting sensitive information, you can apply sensitivity labels. When a sensitivity label is applied to a document, any configured protection settings for that label are enforced on the content. For example, a file that is labeled "Confidential" may be encrypted and have its access limited. Access limitations can include individual user accounts or groups.
 
@@ -68,7 +68,7 @@ Defender for Cloud Apps lets you automatically apply sensitivity labels from Mic
 
 For more information, see [Apply Microsoft Purview Information Protection labels automatically](/defender-cloud-apps/use-case-information-protection).
 
-## 3. Extend DLP policies to SaaS apps
+## Extend DLP policies to SaaS apps
 
 Depending on the SaaS apps that you have in your environment, you have various options to choose from to deploy a DLP solution. Use the following table to guide you in your decision-making process.
 
@@ -80,7 +80,7 @@ Depending on the SaaS apps that you have in your environment, you have various o
 
 For guidance on licensing, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## 4. Monitor your data
+## Monitor your data
 
 Now that your policies are in place, you'll want to check the Microsoft Defender portal to monitor the effect of your policies and remediate incidents. Microsoft Defender XDR gives you visibility into DLP alerts and incidents from Microsoft Purview and Defender for Cloud apps in a single pane of glass.
 

@@ -166,7 +166,7 @@ The following diagram summarizes the differences between these two types of adop
 
 This Zero Trust adoption guidance uses the same lifecycle phases as the Cloud Adoption Framework for Azure but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Diagram showing how th Zero Trust adoption guidance uses the same lifecycle phases as the Azure Adoption Framework." lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Diagram showing how the Zero Trust adoption guidance uses the same lifecycle phases as the Azure Adoption Framework." lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
 
 The following table describes the lifecycle phases.
 

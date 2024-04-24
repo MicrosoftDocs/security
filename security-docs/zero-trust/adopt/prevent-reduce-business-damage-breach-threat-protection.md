@@ -1,7 +1,7 @@
 ---
 title: Implement threat protection and XDR
 description: Implement threat protection and XDR.  
-ms.date: 04/10/2024
+ms.date: 04/24/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -21,7 +21,7 @@ To update figures that are not screen shots, your options are:
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
-For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
 - Locate the source PowerPoint file in internal storage. 
 - Download a copy of the PowerPoint file from the article.
@@ -34,6 +34,13 @@ For updates that affect text in the Excel Business Scenario Objectives workbook 
 - Download a copy of the Excel file from the article.
 
 After updating, republish the updated Excel file in the Download Center.
+
+For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
+
+- Locate the source Visio file in internal storage. 
+- Download a copy of the Visio file from the article.
+
+After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
 
 For new articles in this content set, please:
 
@@ -150,11 +157,11 @@ If this staged approach works for your organization, you can use:
 
 - This [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to present and track your progress through these stages and objectives for business leaders and other stakeholders. Here's the slide for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png" alt-text="PowerPoint slide for the deployment stages of implementing threat detection and XDR." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png":::
+  :::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png" alt-text="The PowerPoint slide for the stages of your implement threat detection and XDR deployment." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png":::
 
 - This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-threat-protection.png" alt-text="The progress tracking worksheet for the Implement threat protection and XDR business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-threat-protection.png":::
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-threat-protection.png" alt-text="The progress tracking worksheet for your implement threat detection and XDR deployment." lightbox="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-threat-protection.png":::
 
 ### Understand your organization
 
@@ -183,7 +190,7 @@ This table summarizes roles that are recommended when building a sponsorship pro
 
 The [PowerPoint deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.png" alt-text="PowerPoint slide for the stakeholders of implementing threat detection and XDR." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.png" alt-text="The PowerPoint slide to identify key stakeholders for your implement threat detection and XDR deployment." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.png":::
 
 ### Technical planning and skills readiness
 

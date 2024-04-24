@@ -1,7 +1,7 @@
 ---
 title: Secure remote and hybrid work with Zero Trust 
 description: Learn how to secure your remote and hybrid work with Zero Trust.
-ms.date: 04/10/2024
+ms.date: 04/24/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -21,7 +21,7 @@ To update figures that are not screen shots, your options are:
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
-For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
 - Locate the source PowerPoint file in internal storage. 
 - Download a copy of the PowerPoint file from the article.
@@ -34,6 +34,13 @@ For updates that affect text in the Excel Business Scenario Objectives workbook 
 - Download a copy of the Excel file from the article.
 
 After updating, republish the updated Excel file in the Download Center.
+
+For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
+
+- Locate the source Visio file in internal storage. 
+- Download a copy of the Visio file from the article.
+
+After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
 
 For new articles in this content set, please:
 
@@ -56,7 +63,7 @@ As employees’ home networks stretch the corporate network perimeter, with diff
 
 The following diagram illustrates the shift from traditional protection with network controls on the left (from limited known locations) to modern protection with Zero Trust on the right (to unknown locations) in which protection is applied regardless of where users and devices are located.
 
-:::image type="content" source="../media/adoption-guide/on-premises-remote-devices.png" alt-text="Zero Trust applies to both known and unknown locations." lightbox="../media/adoption-guide/on-premises-remote-devices.png":::
+:::image type="content" source="../media/adoption-guide/on-premises-remote-devices.png" alt-text="Diagram that shows how Zero Trust applies to both known and unknown locations." lightbox="../media/adoption-guide/on-premises-remote-devices.png":::
 
 The guidance in this article walks through how to get started with and implement your strategy for securing remote and hybrid work.
 
@@ -182,7 +189,7 @@ If this staged approach works for your organization, you can use:
 
 - This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png" alt-text="The progress tracking worksheet for the Secure remote and hybrid work business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png":::
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png" alt-text="The progress tracking worksheet for your secure remote and hybrid work deployment." lightbox="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png":::
 
 If your organization subscribes to a specific Governance Risk & Compliance (GRC) or Security Operations Center (SOC) strategy, it is vitally important that the technical work incorporate configurations that meet these requirements.
 
@@ -218,7 +225,7 @@ This table summarizes roles that are recommended when building a sponsorship pro
 
 The [PowerPoint slide deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-remote-work-stakeholders.png" alt-text="PowerPoint slide to identify key stakeholders." lightbox="../media/adoption-guide/zero-trust-remote-work-stakeholders.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-remote-work-stakeholders.png" alt-text="The PowerPoint slide to identify key stakeholders for your secure remote and hybrid work deployment." lightbox="../media/adoption-guide/zero-trust-remote-work-stakeholders.png":::
 
 ### Technical planning and skills readiness
 
@@ -296,7 +303,7 @@ Begin by building a plan and then testing the plan. Then roll out new configurat
 
 The following diagram illustrates the recommendation to start a project with a small group to evaluate the changes. This small group can be members of your IT team or a partner team that is invested in the outcome. Then, pilot the changes with a larger group. While the illustration includes a third stage of full deployment, this is often accomplished by gradually increasing the scope of the deployment until your whole organization is covered.
 
-:::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Pilot, evaluate, and full deployment adoption phases." lightbox="../media/adoption-guide/adoption-phases.svg":::
+:::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Diagram of the pilot, evaluate, and full deployment adoption phases." lightbox="../media/adoption-guide/adoption-phases.svg":::
  
 When enrolling devices, for example, the following guidance is recommended.
 
@@ -319,7 +326,7 @@ As you plan and stage the layers of protection to build Zero Trust, take advanta
 
 Here are the policies for three levels of protection.
 
-:::image type="content" source="../media/identity-device-access-policies-byplan.svg" alt-text="Zero Trust identity and device access policies." lightbox="../media/identity-device-access-policies-byplan.svg":::
+:::image type="content" source="../media/identity-device-access-policies-byplan.svg" alt-text="Diagram of the Zero Trust identity and device access policies showing the three levels of protection." lightbox="../media/identity-device-access-policies-byplan.svg":::
 
 This policy set includes a **Starting point** protection level with minimal user impact. This set of policies does not require enrolling devices into management. When you’re ready and you’ve enrolled devices, you can then deploy the **Enterprise** level, which is recommended for Zero Trust. 
 
@@ -362,7 +369,7 @@ In the adoption phase, you incrementally implement your strategy and deployment 
 
 As recommended, deploy each new configuration into the production tenant as a limited proof of concept (labeled “Evaluate” in the following diagram).
 
-:::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Adoption phases which includes pilot, evaluate, and full deployment." lightbox="../media/adoption-guide/adoption-phases.svg":::
+:::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Diagram of the adoption phases which includes pilot, evaluate, and full deployment." lightbox="../media/adoption-guide/adoption-phases.svg":::
 
 Even though you have already tested the new configurations in a QA environment, be sure your production deployment plans also document what you are testing and evaluating and the acceptance criteria for measuring success at each stage. Ideally choose a subset of low-impact users, endpoints, and apps to test on before broadening the deployment. Following the same methodology, you learn from the success and failures of the implementation and update the plans.
 

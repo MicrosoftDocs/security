@@ -22,7 +22,7 @@ To update figures that are not screen shots, your options are:
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
-For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
 - Locate the source PowerPoint file in internal storage. 
 - Download a copy of the PowerPoint file from the article.
@@ -36,6 +36,13 @@ For updates that affect text in the Excel Business Scenario Objectives workbook 
 
 After updating, republish the updated Excel file in the Download Center.
 
+For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
+
+- Locate the source Visio file in internal storage. 
+- Download a copy of the Visio file from the article.
+
+After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
+
 For new articles in this content set, please:
 
 - Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
@@ -45,7 +52,7 @@ For new articles in this content set, please:
 
 # Zero Trust adoption framework overview
 
-:::image type="content" source="../media/adoption-guide/zero-trust-working-group.jpg" alt-text="Zero Trust working group" lightbox="../media/adoption-guide/zero-trust-working-group.jpg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-working-group.jpg" alt-text="Picture of members of the Zero Trust working group." lightbox="../media/adoption-guide/zero-trust-working-group.jpg":::
 
 Digital transformation is shaping a new normal. Organizations are embracing digital transformation to manage continuous business environment changes by tracking:
 
@@ -130,7 +137,7 @@ For example, the identity team can only make so much progress in utilizing Micro
 
 The following diagram integrates these functional areas into a unified Zero Trust architecture.
 
-:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.svg" alt-text="The overall architecture for Zero Trust" lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.svg":::
+:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.svg" alt-text="Diagram of the overall architecture for Zero Trust." lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.svg":::
 
 In the diagram:
 
@@ -155,11 +162,11 @@ Like the Cloud Adoption Framework for Azure, this Zero Trust adoption guidance a
 
 The following diagram summarizes the differences between these two types of adoption motions.
 
-:::image type="content" source="../media/adoption-guide/azure-and-zero-trust-frameworks.svg" alt-text="The differences between the Azure and Zero Trust adoption frameworks." lightbox="../media/adoption-guide/azure-and-zero-trust-frameworks.svg":::
+:::image type="content" source="../media/adoption-guide/azure-and-zero-trust-frameworks.svg" alt-text="Diagram of the differences between the Azure Cloud Adoption and Zero Trust adoption frameworks." lightbox="../media/adoption-guide/azure-and-zero-trust-frameworks.svg":::
 
 This Zero Trust adoption guidance uses the same lifecycle phases as the Cloud Adoption Framework for Azure but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Zero Trust adoption guidance uses the same lifecycle phases" lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Diagram showing how th Zero Trust adoption guidance uses the same lifecycle phases as the Azure Adoption Framework." lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
 
 The following table describes the lifecycle phases.
 
@@ -188,11 +195,11 @@ Each of these business scenarios breaks down the work of Zero Trust into managea
 
 This guidance includes a [PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) with progress slides that you can use to present the work and track your progress at a high level for business leaders and other stakeholders. The slides include features that help you keep track of and present progress to stakeholders. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="Example of a progress slide." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="Example of a progress slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
 
 This guidance also includes an [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) with worksheets for each business scenario that you can use to assign owners and track progress for each stage, objective, and task. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png" alt-text="Example of the progress tracking worksheet for the Secure remote and hybrid work business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png":::
+:::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png" alt-text="Example of a progress tracking worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png":::
 
 Across the business scenarios, the implementation stages are roughly aligned so that accomplishing the objectives of Stage 1 across the scenarios help keep your organization progressing on all fronts together.
 
@@ -259,7 +266,7 @@ Additionally, several portals and reports can assist you in creating an overview
 
 For example, within Microsoft Defender XDR, the device inventory provides a clear view into newly discovered devices in your network that aren't yet protected. At the top of each **Device inventory** tab, you can see the total number of devices that aren't onboarded. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png" alt-text="Example of the Inventory tab in the Microsoft Defender portal" lightbox="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png":::
+:::image type="content" source="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png" alt-text="Screenshot of an example of the Inventory tab in the Microsoft Defender portal." lightbox="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png":::
 
 For more information on using Microsoft Defender XDR to track your progress, see [Strengthen your security posture with Microsoft Defender XDR](/microsoft-365/security/security-posture-solution-overview).
 

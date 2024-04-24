@@ -1,7 +1,7 @@
 ---
 title: Meet regulatory and compliance requirements with Zero Trust
 description: Learn how to Meet regulatory and compliance requirements with Zero Trust.
-ms.date: 04/10/2024
+ms.date: 04/24/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -21,7 +21,7 @@ To update figures that are not screen shots, your options are:
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
-For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
 - Locate the source PowerPoint file in internal storage. 
 - Download a copy of the PowerPoint file from the article.
@@ -34,6 +34,13 @@ For updates that affect text in the Excel Business Scenario Objectives workbook 
 - Download a copy of the Excel file from the article.
 
 After updating, republish the updated Excel file in the Download Center.
+
+For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
+
+- Locate the source Visio file in internal storage. 
+- Download a copy of the Visio file from the article.
+
+After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
 
 For new articles in this content set, please:
 
@@ -299,7 +306,7 @@ Each pillar of Zero Trust can be mapped against specific controls within a regul
 
 Zero Trust for Identity is mapped to Access Control Management within the Center for Internet Security (CIS)) Benchmark, and to Annexure A.9.2.2 User Access Provisioning in ISO 27001:2022.
 
-:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-identities.svg" alt-text="Zero Trust for identity mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-identities.svg":::
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-identities.svg" alt-text="Diagram of Zero Trust for identity mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-identities.svg":::
 
 In this diagram, Access Control Management is defined in Annexure 9.2.2 of the ISO 27001 requirements standard, User Access Provisioning. The requirements for this section are satisfied by requiring multifactor authentication. 
 
@@ -311,7 +318,7 @@ One of the more obvious correlations between Zero Trust architecture and industr
 
 - Information must be classified in terms of legal requirements, value, criticality and sensitivity to any unauthorized disclosure or modification, ideally classified to reflect business activity rather than inhibit or complicate it.
 
-:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-data.svg" alt-text="Zero Trust for data mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-data.svg":::
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-data.svg" alt-text="Diagram of Zero Trust for data mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-data.svg":::
 
 In this diagram, the Microsoft Purview data classification service is used to define and apply sensitivity labels to emails, documents, and structured data. 
 
@@ -321,7 +328,7 @@ Annexure 8.1.1 In ISO 27001:2022 (Inventory of assets) requires that “any asse
 
 The fulfillment of this control requirement can be achieved through the implementation of Intune device management. This requirement provides a clear account of inventory and reports the status of compliance for each device against defined company or industry policies.
 
-:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-devices.svg" alt-text="Zero Trust for devices mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-devices.svg":::
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-devices.svg" alt-text="Diagram of Zero Trust for devices mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-devices.svg":::
 
 For this control requirement, you use Microsoft Intune to manage devices, including setting up compliance policies to report on the compliance of devices against the policies you set. You can also use Conditional Access policies to require device compliance during the authentication and authorization process.
 
@@ -329,7 +336,7 @@ For this control requirement, you use Microsoft Intune to manage devices, includ
 
 The most comprehensive example of a pillar of Zero Trust that has been mapped to industry standards would be Threat intelligence and Incident response. The entire Microsoft Defender and Microsoft Sentinel breadth of products become applicable in this scenario to provide in-depth analysis and execution of threat intelligence and real-time incident response.
 
-:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-threat-intelligence.svg" alt-text="Zero Trust for threat intelligence mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-threat-intelligence.svg":::
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-threat-intelligence.svg" alt-text="Diagram of Zero Trust for threat intelligence mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-threat-intelligence.svg":::
 
 In this diagram, Microsoft Sentinel together with Microsoft Defender tools provide threat intelligence.
 
@@ -341,11 +348,11 @@ In the adoption phase, you incrementally implement your technical plans across y
 
 For identity and device access, take a staged approach where you start with a small number of users and devices and then gradually increase the deployment to include your full environment. This is described in the [Secure remote and hybrid work](secure-remote-hybrid-work.md) adoption scenario. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Pilot, evaluate, and full deployment adoption phases." lightbox="../media/adoption-guide/adoption-phases.svg":::
+:::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Diagram of the pilot, evaluate, and full deployment adoption phases." lightbox="../media/adoption-guide/adoption-phases.svg":::
 
 Adoption for protecting data involves cascading the work and iterating as you go to be sure the policies you create are appropriately honed for your environment. This is described in the [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md) adoption scenario. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/adoption-information-protection.svg" alt-text="Process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.svg":::
+:::image type="content" source="../media/adoption-guide/adoption-information-protection.svg" alt-text="Diagram of the process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.svg":::
 
 ## Govern and manage
 
@@ -355,19 +362,19 @@ Meeting regulatory and compliance requirements is an ongoing process. As you tra
 
 You can use content explorer to monitor the status of organizational compliance. For data classification, content explorer provides a view of the landscape and spread of sensitive information within your organization. From trainable classifiers to different types of sensitive data—either through adaptive scopes or manually created sensitivity labels—your administrators can see whether the prescribed sensitivity schema is being applied correctly throughout the organization. This is also an opportunity to identify specific areas of risk where sensitive information is consistently shared in Exchange, SharePoint, and OneDrive. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png" alt-text="Example of a content explorer dashboard." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png":::
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png" alt-text="Example screenshot of a content explorer dashboard." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png":::
 
 By using the greater reporting functionality within the Microsoft Purview Compliance portal, you can create and quantify a macro-view of compliance. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png" alt-text="Example of a macro-view dashboard for Microsoft Purview Compliance." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png":::
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png" alt-text="Example screenshot of a macro-view dashboard for Microsoft Purview Compliance." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png":::
 
 The same thinking and process can be applied to Azure. Use Defender for Cloud-Regulatory Compliance to determine a compliance score similar to the same score provided in the Purview Compliance Manager. The score is aligned to multiple regulatory standards and frameworks across various industry verticals. It's up to your organization to understand which of these regulatory standards and frameworks apply to the score. The status provided by this dashboard displays a constant real-time assessment of passing versus failing assessments with each standard. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png" alt-text="Example of the compliance score in the Microsoft Defender for Cloud portal." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png":::
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png" alt-text="Example screenshot of the compliance score in the Microsoft Defender for Cloud portal." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png":::
 
 The Purview dashboards provide a broad assessment that can help inform your business leaders and be used in departmental reporting, such as a quarterly review. On a more operational note, you can leverage Microsoft Sentinel by creating a Log Analytics workspace for unified audit log data. This workspace can be connected to your Microsoft 365 data and provide insights on user activity. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png" alt-text="Example of data gathered in Microsoft Sentinel for Office 365." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png":::
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png" alt-text="Example screenshot of data gathered in Microsoft Sentinel for Office 365." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png":::
 
 This data is customizable and can be used in conjunction with the other dashboards to contextualize the regulatory requirement specifically aligned to your organization’s strategy, risk profile, goals, and objectives.
 

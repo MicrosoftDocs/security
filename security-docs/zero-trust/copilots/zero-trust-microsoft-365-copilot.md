@@ -13,6 +13,7 @@ ms.collection:
   - msftsolution-scenario
   - zerotrust-solution
   - zerotrust-azure
+  - magic-ai-copilot
 ---
 
 # Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365

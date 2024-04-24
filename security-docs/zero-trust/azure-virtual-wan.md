@@ -3,8 +3,8 @@ title: Apply Zero Trust principles to Azure Virtual WAN
 description: Learn how to secure an Azure Virtual WAN deployment with Zero Trust principles. 
 ms.date: 02/12/2024
 ms.service: security
-author: sikovatc
-ms.author: sikovatc
+author: rudneir2
+ms.author: ruolivei
 ms.topic: conceptual
 ms.collection: 
   - msftsolution-azurepaas

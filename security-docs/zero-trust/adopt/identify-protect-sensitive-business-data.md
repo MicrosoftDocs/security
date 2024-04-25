@@ -322,7 +322,7 @@ For this stage, develop your sensitivity labels and start using them across data
 
 | Resource | Description |
 | --- | --- |
-| [Prevent data loss](/microsoft-365/compliance/information-protection-solution#prevent-data-loss) | Get started with DLP policies. <br><br> It's recommended to start with “soft” DLP policies, which provide warnings but don't block actions, or at most block actions while allowing users to override the policy. This allows you gauge the impact of these policies without harming productivity. You can fine-tune the policies to become stricter as you gain confidence in their accuracy and compatibility with the business needs. |
+| [Prevent data loss](/microsoft-365/compliance/information-protection-solution#prevent-data-loss) | Get started with DLP policies. <br><br> It's recommended to start with “soft” DLP policies, which provide warnings but don't block actions, or at most block actions while allowing users to override the policy. This allows you to gauge the impact of these policies without harming productivity. You can fine-tune the policies to become stricter as you gain confidence in their accuracy and compatibility with the business needs. |
 
 ##### Set up secure teams for sharing data internally and externally with business partners
 
@@ -340,7 +340,7 @@ In this stage, you continue to roll out the data classification schema you refin
 Once you add protection to a label (such as encryption and rights management):
 
 - All documents that newly receive the label include the protection.
-- Any document stored in SharePoint Online or OneDrive for Business that received the label before the protection was added has the protection applied when the document is opened or downloaded. 
+- Any document stored in SharePoint Online or OneDrive that received the label before the protection was added has the protection applied when the document is opened or downloaded. 
 
 Files at rest in the service or residing on a user’s computer don't receive the protection that was added to the label AFTER these files received the label. In other words, if the file was previously labeled and then you later add protection to the label, the protection isn't applied to these files.
 

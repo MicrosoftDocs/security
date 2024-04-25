@@ -214,7 +214,7 @@ Your stakeholder team for this business scenario includes leaders across your or
 | Sponsor | Strategy, steering, escalation, approach, business alignment, and coordination management. |
 | Project lead | Overall management of engagement, resources, timeline and schedule, communications, and others. |
 | CISO | Protection and governance of data assets and systems, such as risk and policy determination and tracking and reporting. |
-| IT Compliance manager | Determination of required controls to address compliance and protection requirements. |
+| IT compliance manager | Determination of required controls to address compliance and protection requirements. |
 | End user security and usability (EUC) lead | Representation of your employees. |
 | Investigation and audit roles | Investigation and reporting in cooperation with compliance and protection leads. |
 | Information protection manager | Data classification and sensitive data identification, controls, and remediation. |
@@ -324,7 +324,7 @@ In this diagram, the Microsoft Purview data classification service is used to de
 
 #### Example 3
 
-Annexure 8.1.1 In ISO 27001:2022 (Inventory of assets) requires that "any assets associated with information and information processing facilities need to be identified and managed over the lifecycle, and are always up to date."”"
+Annexure 8.1.1 In ISO 27001:2022 (Inventory of assets) requires that "any assets associated with information and information processing facilities need to be identified and managed over the lifecycle, and are always up to date."
 
 The fulfillment of this control requirement can be achieved through the implementation of Intune device management. This requirement provides a clear account of inventory and reports the status of compliance for each device against defined company or industry policies.
 
@@ -364,7 +364,7 @@ You can use content explorer to monitor the status of organizational compliance.
 
 :::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png" alt-text="Example screenshot of a content explorer dashboard." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png":::
 
-By using the greater reporting functionality within the Microsoft Purview Compliance portal, you can create and quantify a macro-view of compliance. Here's an example.
+By using the greater reporting functionality within the Microsoft Purview compliance portal, you can create and quantify a macro-view of compliance. Here's an example.
 
 :::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png" alt-text="Example screenshot of a macro-view dashboard for Microsoft Purview Compliance." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png":::
 

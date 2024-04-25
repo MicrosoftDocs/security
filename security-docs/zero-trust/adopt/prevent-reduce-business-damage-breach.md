@@ -1,7 +1,7 @@
 ---
 title: Prevent or reduce business damage from a breach with Zero Trust
 description: Prevent or reduce business damage from a breach with Zero Trust.  
-ms.date: 04/10/2024
+ms.date: 04/24/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -21,7 +21,7 @@ To update figures that are not screen shots, your options are:
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
-For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
 - Locate the source PowerPoint file in internal storage. 
 - Download a copy of the PowerPoint file from the article.
@@ -35,6 +35,13 @@ For updates that affect text in the Excel Business Scenario Objectives workbook 
 
 After updating, republish the updated Excel file in the Download Center.
 
+For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
+
+- Locate the source Visio file in internal storage. 
+- Download a copy of the Visio file from the article.
+
+After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
+
 For new articles in this content set, please:
 
 - Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
@@ -44,7 +51,7 @@ For new articles in this content set, please:
 
 # Prevent or reduce business damage from a breach
 
-As part of Zero Trust adoption guidance, this article describes the business scenario of preventing or reducing business damage from a cybersecurity breach. This scenario  addresses the “assume breach” Zero Trust guiding principle, which includes:
+As part of Zero Trust adoption guidance, this article describes the business scenario of preventing or reducing business damage from a cybersecurity breach. This scenario  addresses the **Assume breach** Zero Trust guiding principle, which includes:
 
 - Minimize blast radius and segment access
 - Verify end-to-end encryption		
@@ -88,7 +95,7 @@ Note that it's virtually impossible to prevent breaches as an absolute. As descr
 
 Reducing damage from a breach gives considerable energy to options during and post breach, which allows your organization to recover quickly from an expected breach or type of breach. These breach types and the readiness to recover are defined in subsequent sections in this article.
 
-Recognizing breach intent must be part of your breach preparation. All breaches have an element of malice or criminal intent attached, however financially driven breaches have the potential for much greater damage compared to “drive by” or opportunistic breaches.
+Recognizing breach intent must be part of your breach preparation. All breaches have an element of malice or criminal intent attached, however financially driven breaches have the potential for much greater damage compared to "drive by" or opportunistic breaches.
 
 For more information on security posture and risk assessment, see [Rapidly modernize your security posture](rapidly-modernize-security-posture.md).
 
@@ -126,7 +133,7 @@ Cyber security incidents typically begin with a credential theft of some sort. C
 
 - Phishing
 
-  An attacker masquerades as a trusted entity and dupes employees into opening emails, texts or IMs. Can also include spear-phishing, in which an attacker uses information specifically about a user to construct a more plausible phishing attack. Technical credential theft may occur due to a user clicking on a URL or an MFA phishing attack. 
+  An attacker masquerades as a trusted entity and dupes employees into opening emails, texts, or IMs. Can also include spear-phishing, in which an attacker uses information specifically about a user to construct a more plausible phishing attack. Technical credential theft may occur due to a user clicking on a URL or an MFA phishing attack. 
 
 - Vishing
 
@@ -176,7 +183,7 @@ The following table provides reasons why business leaders across an organization
 | Chief Marketing Officer (CMO) | How the business is perceived both internally and externally shouldn’t be restricted based on a breach occurring or breach readiness. Learning how to communicate breach readiness and messaging internally and externally in response to a breach is a matter of preparation. A successful attack can become public knowledge, potentially harming brand value, unless a breach communication plan exists. |
 | Chief Information Officer (CIO) | The applications used by your organization must be resilient to attack while securing your organization's data. Security should be a measurable outcome and aligned with IT strategy. Breach prevention and breach management must be aligned with data integrity, privacy, and availability. |
 | Chief Information Security Officer (CISO) | Security must be aligned as a business imperative to the C-Suite. Breach readiness and response is aligned to achieving the primary business strategies, with technology security aligned to mitigation of business risk.  | 
-|Chief Operations Officer (COO) | The incident response process hinges on the leadership and strategic guidance provided by this role. It's imperative that preventive and responsive actions are carried out as aligned to corporate strategy. <br><br> Breach preparation in an “assume breach” posture means that all disciplines reporting to the COO must function at a level of breach readiness, ensuring that a breach can be isolated and mitigated quickly without pausing your business. |
+|Chief Operations Officer (COO) | The incident response process hinges on the leadership and strategic guidance provided by this role. It's imperative that preventive and responsive actions are carried out as aligned to corporate strategy. <br><br> Breach preparation in an **Assume breach** posture means that all disciplines reporting to the COO must function at a level of breach readiness, ensuring that a breach can be isolated and mitigated quickly without pausing your business. |
 | Chief Financial Officer (CFO) | Breach preparation and mitigation are functions of budgeted security spend. Financial systems must be robust and can survive a breach. Financial data must be classified, secured, and backed up as a sensitive dataset. |
 
 A Zero Trust approach solves several security problems arising from security breaches. You can emphasize the following benefits of a Zero Trust approach with your business leaders.
@@ -190,13 +197,13 @@ A Zero Trust approach solves several security problems arising from security bre
 | Lower cyber insurance premiums | To evaluate the cost of cyber insurance, you need a robust and well-defined security model and architecture. By implementing Zero Trust security, you have control, visibility, and governance with real-time analysis for protecting your network and endpoints. Your security team can detect and overcome gaps in your overall security posture and prove to insurers that you have proactive strategies and systems. A Zero Trust approach also improves cyber-resilience and may even help pay for itself by reducing insurance premiums. |
 | Increase security team efficiency and morale | Zero Trust deployments reduce manual efforts for your security team by automating routine tasks such as resource provisioning, access reviews, and attestation. As a result, you can empower your security teams with the time and telemetry they need to detect, deter, and defeat the most critical attacks and risks, both internally and externally, which in turn boosts IT and security team morale. |
 
-For additional information to share with business leaders, see the [Minimize the impact of internal or external bad actors e-book](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWZlng).
+For more information to share with business leaders, see the [Minimize the impact of internal or external bad actors e-book](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWZlng).
 
 ## The adoption cycle for preventing or reducing business damage from a breach
 
 This set of articles walk through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.png" alt-text="Diagram of the adoption process for an objective or a set of objectives." lightbox="../media/adoption-guide/objective-adoption-process.png":::
 
 The following table is an accessible version of the illustration.
 
@@ -234,8 +241,8 @@ For any of the Zero Trust business scenarios, you can use the following progress
 
 | Progress tracking resource | That helps you… | Designed for… |
 | --- | --- | --- |
-| Adoption Scenario Plan Phase Grid downloadable [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf) <br><br> :::image type="content" source="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png" alt-text="Screenshot of an example plan and phase grid." lightbox="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png"::: | Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="Screenshot of a slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="Screenshot of a worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the Plan phase. | Business scenario project leads, IT leads, and IT implementers. |
+| Adoption Scenario Plan Phase Grid downloadable [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf) <br><br> :::image type="content" source="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png" alt-text="An example plan and phase grid showing stages and goals." lightbox="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png"::: | Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
+| Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="An example PowerPoint slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
+| Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="An example of an Excel worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the Plan phase. | Business scenario project leads, IT leads, and IT implementers. |
 
 For additional resources, see [Zero Trust assessment and progress tracking resources](../zero-trust-assessment-progress-tracking-resources.md).

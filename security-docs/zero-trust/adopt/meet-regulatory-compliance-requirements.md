@@ -214,7 +214,7 @@ Your stakeholder team for this business scenario includes leaders across your or
 | Sponsor | Strategy, steering, escalation, approach, business alignment, and coordination management. |
 | Project lead | Overall management of engagement, resources, timeline and schedule, communications, and others. |
 | CISO | Protection and governance of data assets and systems, such as risk and policy determination and tracking and reporting. |
-| IT compliance manager | Determination of required controls to address compliance and protection requirements. |
+| IT Compliance Manager | Determination of required controls to address compliance and protection requirements. |
 | End user security and usability (EUC) lead | Representation of your employees. |
 | Investigation and audit roles | Investigation and reporting in cooperation with compliance and protection leads. |
 | Information protection manager | Data classification and sensitive data identification, controls, and remediation. |
@@ -236,7 +236,7 @@ In Stage 1, you identify the regulations that apply to your organization and beg
 
 | Objectives for Stage 1 | Resources |
 | --- | --- |
-| Identify compliance requirements using governance pyramid. | [Compliance manager assessments](/microsoft-365/compliance/compliance-manager-assessments) |
+| Identify compliance requirements using governance pyramid. | [Compliance Manager assessments](/microsoft-365/compliance/compliance-manager-assessments) |
 | Use Compliance Manager to assess compliance and plan remediation for identified gaps. | Visit the Microsoft Purview compliance portal and review all customer-managed improvement actions relevant to your organization. |
 | Review current guidance for regulations that apply to your organization. | See the following table. |
 

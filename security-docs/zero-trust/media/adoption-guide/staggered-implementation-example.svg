@@ -37,7 +37,7 @@
 		<g id="shape1242-1" v:mID="1242" v:groupContext="shape" transform="translate(0.375,-0.375)">
 			<title>Sheet.1242</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(147000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(73000):26"/>
 			</v:userDefs>
 			<rect x="0" y="0.75" width="554.494" height="175.5" class="st1"/>
 		</g>
@@ -47,7 +47,7 @@
 				<desc>Verify and secure every identity with strong authentication</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
-					<v:ud v:nameU="visNavOrder" v:val="VT0(94000):26"/>
+					<v:ud v:nameU="visNavOrder" v:val="VT0(28000):26"/>
 				</v:userDefs>
 				<v:textBlock v:margins="rect(4,4,4,8)"/>
 				<v:textRect cx="142.916" cy="158.25" width="285.84" height="36"/>
@@ -58,41 +58,41 @@
 		<a xlink:href="https://aka.ms/zero-trust-m365-info-protect">
 			<g id="shape1173-7" v:mID="1173" v:groupContext="shape" transform="translate(214.682,-50.4095)">
 				<title>Rectangle.1173</title>
-				<desc>Integrate SaaS apps with Entra ID fo...</desc>
+				<desc>Integrate SaaS apps with Microsoft Entra ID for single sign-on</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
-					<v:ud v:nameU="visNavOrder" v:val="VT0(95000):26"/>
+					<v:ud v:nameU="visNavOrder" v:val="VT0(29000):26"/>
 				</v:userDefs>
 				<v:textBlock v:margins="rect(4,4,4,8)"/>
 				<v:textRect cx="142.916" cy="158.25" width="285.84" height="36"/>
 				<rect x="0" y="140.25" width="285.831" height="36" class="st5"/>
-				<text x="21.5" y="154.65" class="st3" v:langID="1033"><v:paragraph v:indentLeft="13.5"/><v:tabList/>Integrate SaaS apps with Entra ID <tspan
-							x="21.5" dy="1.2em" class="st4">for single sign</tspan>-on</text>			</g>
+				<text x="21.5" y="154.65" class="st3" v:langID="1033"><v:paragraph v:indentLeft="13.5"/><v:tabList/>Integrate SaaS apps with Microsoft Entra ID for <tspan
+							x="21.5" dy="1.2em" class="st4">single sign</tspan>-on</text>			</g>
 		</a>
 		<a xlink:href="https://aka.ms/zero-trust-m365-info-protect">
 			<g id="shape1174-11" v:mID="1174" v:groupContext="shape" transform="translate(262.531,-7.45663)">
 				<title>Rectangle.1174</title>
-				<desc>Register devices with Entra ID</desc>
+				<desc>Register devices with Microsoft Entra ID</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
-					<v:ud v:nameU="visNavOrder" v:val="VT0(96000):26"/>
+					<v:ud v:nameU="visNavOrder" v:val="VT0(30000):26"/>
 				</v:userDefs>
 				<v:textBlock v:margins="rect(4,4,4,8)"/>
 				<v:textRect cx="142.916" cy="158.25" width="285.84" height="36"/>
 				<rect x="0" y="140.25" width="285.831" height="36" class="st6"/>
-				<text x="21.5" y="161.85" class="st7" v:langID="1033"><v:paragraph v:indentLeft="13.5"/><v:tabList/>Register devices with Entra ID</text>			</g>
+				<text x="21.5" y="161.85" class="st7" v:langID="1033"><v:paragraph v:indentLeft="13.5"/><v:tabList/>Register devices with Microsoft Entra ID</text>			</g>
 		</a>
 		<g id="shape1179-14" v:mID="1179" v:groupContext="shape" transform="translate(245.739,-8.45703)">
 			<title>Sheet.1179</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(101000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(31000):26"/>
 			</v:userDefs>
 			<ellipse cx="16.9996" cy="159.25" rx="16.9996" ry="16.9996" class="st8"/>
 		</g>
 		<g id="shape1180-16" v:mID="1180" v:groupContext="shape" transform="translate(197.954,-51.4099)">
 			<title>Sheet.1180</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(102000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(32000):26"/>
 			</v:userDefs>
 			<ellipse cx="16.9996" cy="159.25" rx="16.9996" ry="16.9996" class="st9"/>
 		</g>
@@ -100,7 +100,7 @@
 			<title>Sheet.1181</title>
 			<desc>1</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(103000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(33000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="16.9996" cy="159.25" width="34" height="33.9992"/>
@@ -110,7 +110,7 @@
 			<title>Blue - 1.1187</title>
 			<desc>1</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(108000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(34000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="18.5438" cy="157.706" width="37.09" height="37.0877"/>
@@ -120,7 +120,7 @@
 			<title>Blue - 2.1188</title>
 			<desc>2</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(109000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(35000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="18" cy="158.25" width="36.01" height="36"/>
@@ -130,7 +130,7 @@
 			<title>Blue - 3.1189</title>
 			<desc>3</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(110000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(36000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="18.5438" cy="157.706" width="37.09" height="37.0877"/>
@@ -142,7 +142,7 @@
 				<desc>Define strategy and objectives for the Secure remote and hybr...</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
-					<v:ud v:nameU="visNavOrder" v:val="VT0(111000):26"/>
+					<v:ud v:nameU="visNavOrder" v:val="VT0(37000):26"/>
 				</v:userDefs>
 				<v:textBlock v:margins="rect(12,4,4,8)" v:verticalAlign="0"/>
 				<v:textRect cx="64.9871" cy="95.25" width="129.98" height="162"/>
@@ -156,7 +156,7 @@
 			<desc>Plan, Ready, Adopt, Govern and Manage</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(112000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(38000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,8)"/>
 			<v:textRect cx="202.5" cy="158.25" width="405" height="36"/>

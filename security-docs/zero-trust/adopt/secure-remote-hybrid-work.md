@@ -16,7 +16,7 @@ Writers notes:
 
 For updates to product names, please also update the appropriate figures.
 
-To update figures that are not screen shots, your options are:
+To update figures that aren't screen shots, your options are:
 
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
@@ -53,7 +53,7 @@ For new articles in this content set, please:
 
 As part of Zero Trust adoption guidance, this article describes the business scenario of securing remote and hybrid work. Note that securing your business data and infrastructure are the topics of separate business scenarios and are not included in this guidance.
 
-The shift to a hybrid workstyle has been forcing organizations to rapidly adapt. Remote employees are getting work done any way they can—using personal devices, collaborating through cloud services, and sharing data outside the corporate network perimeter. Hybrid employees work on both corporate and home networks, switching between business and personal devices.
+The shift to a hybrid workstyle has been forcing organizations to rapidly adapt. Remote employees are getting work done any way they can, such as using personal devices, collaborating through cloud services, and sharing data outside the corporate network perimeter. Hybrid employees work on both corporate and home networks, switching between business and personal devices.
 
 As employees’ home networks stretch the corporate network perimeter, with different devices joining that network, security threats are both multiplying and becoming more sophisticated while attack vectors evolve.
 
@@ -75,8 +75,8 @@ The following table provides reasons why business leaders across an organization
 
 | Role | Why securing remote and hybrid work is important |
 | --- | --- |
-| Chief Executive Officer (CEO) | The business must be empowered to achieve its strategic goals and objectives, irrespective of the employee's location. Business agility and business execution should not be constrained. The cost of a successful cyberattack can be a lot more than the price of implementing security measures. In many cases, compliance with cyber insurance requirements or standards or regional regulations is required. |
-| Chief Marketing Officer (CMO) | How the business is perceived both internally and externally should not be restricted by devices or circumstances. Employee well-being is a high priority empowered by the choice to work from home or an office. A successful attack can become public knowledge, potentially harming brand value. |
+| Chief Executive Officer (CEO) | The business must be empowered to achieve its strategic goals and objectives, irrespective of the employee's location. Business agility and business execution shouldn't be constrained. The cost of a successful cyberattack can be a lot more than the price of implementing security measures. In many cases, compliance with cyber insurance requirements or standards or regional regulations is required. |
+| Chief Marketing Officer (CMO) | How the business is perceived both internally and externally shouldn't be restricted by devices or circumstances. Employee well-being is a high priority empowered by the choice to work from home or an office. A successful attack can become public knowledge, potentially harming brand value. |
 | Chief Information Officer (CIO) | The applications used by a mobile and hybrid workforce must be accessible while securing the company's data. Security should be a measurable outcome and aligned with IT strategy. User experience and productivity are important. |
 | Chief Information Security Officer (CISO) | A remote or hybrid work environment creates a larger surface area for security breaches. The organization should still comply with security and data protection requirements, standards, and regulations as the environment expands. |
 | Chief Technology Officer (CTO)| The technologies and processes used to support business innovation must be protected. SecOps and DevSecOps practices can reduce the impact of an attack. Complimentary technologies that facilitate both remote work and the adoption of cloud services in a secure manner must be adopted. |
@@ -96,7 +96,7 @@ This report emphasizes that the vast majority of successful cyberattacks can be 
 
 Securing remote and hybrid work with Zero Trust includes deploying security protections that are basic and at the same time provide sophisticated protection. Technically, this objective involves policy enforcement and monitoring for all access to your organization’s resources with a full end-to-end lifecycle approach.
 
-This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
+This article walks through this business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview) (Define strategy, Plan, Ready, Adopt, and Govern and manage), but adapted for Zero Trust.
 
 
 :::image type="content" source="../media/adoption-guide/objective-adoption-process.png" alt-text="Diagram of the adoption process for an objective or a set of objectives." lightbox="../media/adoption-guide/objective-adoption-process.png":::
@@ -113,7 +113,7 @@ Read more about the Zero Trust adoption cycle in the [Zero Trust adoption framew
 
 :::image type="content" source="../media/adoption-guide/define-strategy-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Define strategy phase highlighted." lightbox="../media/adoption-guide/define-strategy-phase.png":::
 
-The **Define strategy** phase is critical to define and formalize our efforts to address the “Why?” of this scenario. In this phase, we understand the scenario through business, IT, operational, and strategic perspectives.
+The **Define strategy** phase is critical to define and formalize our efforts to address the "Why?" of this scenario. In this phase, we understand the scenario through business, IT, operational, and strategic perspectives.
 
 We define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
 
@@ -126,7 +126,7 @@ The motivations for securing remote and hybrid work are straightforward, but dif
 | Area | Motivations |
 | --- | --- |
 | Business needs | To provide access to information anytime, anywhere on any device, without lowering security standards and managing data access risks. |
-| IT needs | A standardized identity platform that caters for human and non-human identity requirements , removes the needs for VPNs, and provides remote management of corporate and BYOD devices in a compliant manner while providing a seamless and positive user experience. |
+| IT needs | A standardized identity platform that caters for human and non-human identity requirements, removes the needs for VPNs, and provides remote management of corporate and BYOD devices in a compliant manner while providing a seamless and positive user experience. |
 | Operational needs | Implement existing security solutions in a standardized manner. Lower the management effort required to implement and maintain secure identities. Identity governance means onboarding and offboarding users, granting access to resources at the right time, and providing just enough access. It also means revoking access when no longer needed. |
 | Strategic needs | To incrementally reduce the return on investment for cyber-attacks by implementing strong security solutions. The Zero Trust **assume breach** principle allows planning to occur to minimize blast radius, attack surfaces and reduce the recovery time from a breach. |
 
@@ -158,13 +158,13 @@ The following table provides objectives and their outcomes for the secure remote
 
 Adoption plans convert the aspirational goals of a Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align them with your organization's business strategy.
 
-The motivations and outcomes you define, together with your business leaders and teams, support the “Why?” for your organization. These become the North Star, or guiding target, for your strategy. Next comes the technical planning to achieve the motivations and objectives.
+The motivations and outcomes you define, together with your business leaders and teams, support the "Why?" for your organization. These become the North Star, or guiding target, for your strategy. Next comes the technical planning to achieve the motivations and objectives.
 
 Use the following exercises to help you plan the implementation of your organization's technology strategy. These exercises support Zero Trust adoption efforts by capturing prioritized tasks. At the end of this process, you'll have a cloud adoption plan that maps to the metrics and motivations defined in the cloud adoption strategy.
 
 | Exercise | Description |
 | --- | --- |
-| Digital estate | Take inventory of your digital estate — identities, devices, apps. Prioritize your digital estate based on assumptions that align your organization's motivations and business outcomes. |
+| Digital estate | Take inventory of your digital estate: identities, devices, apps. Prioritize your digital estate based on assumptions that align your organization's motivations and business outcomes. |
 | Initial organizational alignment | Align your organization to a technical strategy and adoption plan. The strategy and plan are based on your organization’s objectives along with the priorities you identified within your inventory. |
 | Technical skills readiness plan	 | Create a plan for addressing skills readiness gaps within your organization. |
 | Cloud adoption plan | Develop a cloud adoption plan to manage change across skills, the digital estate, and your organization. |
@@ -191,7 +191,7 @@ If this staged approach works for your organization, you can use:
 
   :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png" alt-text="The progress tracking worksheet for your secure remote and hybrid work deployment." lightbox="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png":::
 
-If your organization subscribes to a specific Governance Risk & Compliance (GRC) or Security Operations Center (SOC) strategy, it is vitally important that the technical work incorporate configurations that meet these requirements.
+If your organization subscribes to a specific Governance Risk & Compliance (GRC) or Security Operations Center (SOC) strategy, it's vitally important that the technical work incorporate the configurations that meet these requirements.
 
 ### Understand your organization
 
@@ -201,7 +201,7 @@ Irrespective of the size and complexity of your organization, the following acti
 
 - Inventory users, endpoints, apps, data, and networks to understand the state of security and estimate the level of effort required to transform the estate.
 - Document the goals and plan for incremental adoption based on priorities. An example is to secure identities and Microsoft 365 services, followed by endpoints. Next, secure apps and SaaS services using modern authentication methods and segmentation capabilities provided by Conditional Access.
-- For the principle of using least privileged access, inventory how many accounts have privileged access and reduce those to the least number of accounts possible. Accounts that require privileged access should use just-in-time and just-enough-access (JIT/JEA) to limit standing administration privileges. Should a breach occur, accounts that are compromised are limited, which minimizes the blast radius. Except for a “break glass” account, no standing admin access should be permitted for highly privileged roles, which include application administration roles for productivity services such as SharePoint, Exchange, and Teams.
+- For the principle of using least privileged access, inventory how many accounts have privileged access and reduce those to the least number of accounts possible. Accounts that require privileged access should use just-in-time and just-enough-access (JIT/JEA) to limit standing administration privileges. Should a breach occur, accounts that are compromised are limited, which minimizes the blast radius. Except for a "break glass" account, no standing admin access should be permitted for highly privileged roles, which include application administration roles for productivity services such as SharePoint, Exchange, and Teams.
 
 ### Organizational planning and alignment
 
@@ -250,7 +250,7 @@ In addition to these resources, the following sections highlight resources for s
 | --- | --- |
 | Verify and secure every identity with strong authentication | [What authentication and verification methods are available in Microsoft Entra ID?](/azure/active-directory/authentication/concept-authentication-methods) |
 | Integrate SaaS apps with Microsoft Entra ID for single sign-on | [Add SaaS apps to Microsoft Entra ID and to the scope of policies](/security/zero-trust/add-saas-apps) |
-| New applications use modern authentication | [Checklist — How are you managing the identity for your workload?](/azure/architecture/framework/security/design-identity#checklist) |
+| New applications use modern authentication | [Checklist—How are you managing the identity for your workload?](/azure/architecture/framework/security/design-identity#checklist) |
 
 <a name='stage-2'></a>
 #### Stage 2
@@ -322,20 +322,20 @@ Considered the following elements while planning for this scenario:
 - Conditional Access may take into account the relative health and patch status of the endpoint and the user's locations as conditional parameters. If endpoints are required to be managed to qualify them to access an app or service as an access condition, then endpoints need to be enrolled into management.
 - Modern apps that support modern authentication methods readily integrate with MFA-based authentication and Conditional Access policies. Understanding the number of applications and their authentication methods is critical.
 
-As you plan and stage the layers of protection to build Zero Trust, take advantage of resources provided by Microsoft. For securing remote and hybrid work, Microsoft provides a [Common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) set. This is a set of policies that are tested and known to work well together.
+As you plan and stage the layers of protection to build Zero Trust, take advantage of resources provided by Microsoft. To secure remote and hybrid work, Microsoft provides a [Common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) set. This is a set of policies that are tested and known to work well together.
 
 Here are the policies for three levels of protection.
 
 :::image type="content" source="../media/identity-device-access-policies-byplan.svg" alt-text="Diagram of the Zero Trust identity and device access policies showing the three levels of protection." lightbox="../media/identity-device-access-policies-byplan.svg":::
 
-This policy set includes a **Starting point** protection level with minimal user impact. This set of policies does not require enrolling devices into management. When you’re ready and you’ve enrolled devices, you can then deploy the **Enterprise** level, which is recommended for Zero Trust. 
+This policy set includes a **Starting point** protection level with minimal user impact. This set of policies doesn't require enrolling devices into management. When you’re ready and you’ve enrolled devices, you can then deploy the **Enterprise** level, which is recommended for Zero Trust. 
 
 In addition to these protection levels, you can incrementally increase the scope of the policies in the following ways:
 
 - Apply the scope of the policies to a small set of users to begin with and then increase the scope of users included. User segmentation allows for risk mitigation against service outage or user disruption as only targeted users or devices are affected.
 - Start by adding Microsoft 365 apps and services to the scope of the policies. Then advance to include other SaaS apps your organization uses. When you’re ready, include apps you built in Azure or other cloud providers in the scope of the policies.
 
-Finally, don’t forget about your users. User adoption and communication is critical when implementing security for identities, similar to the importance of the initial user adoption of moving to Microsoft 365 from datacenter-based services. Single phase approaches rarely succeed when implementing security services. Security initiatives often fail due to increased friction for users if changes are disruptive and poorly communicated and tested. This is where executive sponsorship of security initiatives works best. When executives demonstrate support by adopting early in the deployment stages, it's easier for users to follow.
+Finally, don’t forget about your users. User adoption and communication are critical when implementing security for identities, similar to the importance of the initial user adoption of moving to Microsoft 365 from datacenter-based services. Single phase approaches rarely succeed when implementing security services. Security initiatives often fail due to increased friction for users if changes are disruptive and poorly communicated and tested. This is where executive sponsorship of security initiatives works best. When executives demonstrate support by adopting early in the deployment stages, it's easier for users to follow.
 
 To help with user education and adoption, Microsoft provides end-user rollout templates and materials you can download. These include instructions for how you can rebrand these and recommendations for sharing these with users. See [https://aka.ms/entratemplates](https://aka.ms/entratemplates). 
 
@@ -345,9 +345,9 @@ After assembling your team, reviewing the recommended technical resources, and d
 
 Each technical area, such as a Conditional Access policy set, can be secured by enabling functionality across the tenant. However, a wrongly configured policy can have far reaching consequences. For example, a badly written Conditional Access policy may lock all administrators out of a tenant. 
 
-To mitigate risk, consider deploying a test or QA tenant to implement each feature as you become familiar with it, or roll it out for the first time. A test or QA tenant should be reasonably representative of your current user environment and be accurate enough for you to perform QA functions to test that the enabled functionality is understood and supportive of the function it is securing.
+To mitigate risk, consider deploying a test or QA tenant to implement each feature as you become familiar with it, or roll it out for the first time. A test or QA tenant should be reasonably representative of your current user environment and be accurate enough for you to perform QA functions to test that the enabled functionality is understood and supportive of the function it's securing.
 
-The [RAMP Checklist](/security/zero-trust/user-access-productivity-validate-trust) can be used to track your progress. It lists both planning and implementation steps. The QA tenant is the test bed of the implementation actions as they are performed for the first time.
+The [RAMP Checklist](/security/zero-trust/user-access-productivity-validate-trust) can be used to track your progress. It lists both planning and implementation steps. The QA tenant is the test bed of the implementation actions as they're performed for the first time.
 
 The output of this stage should be a documented configuration that is built and tested initially against the QA tenant  with plans to then transition to adoption in the production tenant where the changes are rolled out incrementally while new learnings are applied to the plan.
 
@@ -367,7 +367,7 @@ The very goal of Zero Trust is to incrementally increase security and implement 
 
 In the adoption phase, you incrementally implement your strategy and deployment plans across functional areas. The adopt phase is a larger implementation of the proof of concept. The deployment plan is executed, and rollout occurs in successive waves, based on user segmentation and the areas you are targeting across your digital estate.
 
-As recommended, deploy each new configuration into the production tenant as a limited proof of concept (labeled “Evaluate” in the following diagram).
+As recommended, deploy each new configuration into the production tenant as a limited proof of concept (labeled "Evaluate" in the following diagram).
 
 :::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Diagram of the adoption phases which includes pilot, evaluate, and full deployment." lightbox="../media/adoption-guide/adoption-phases.svg":::
 
@@ -392,7 +392,7 @@ A successful deployment plan includes the following elements:
 
 Security governance is an iterative process. For organizations with existing policies that govern security across a digital estate, adopting a Zero Trust strategy provides the incentive to evolve those policies. As security strategy and policies mature over time, so do cloud governance processes and policies.
 
-In the planning phase, new functionality was tested against a test tenant in which management activities occurred. It is important to note that implementing the features that support Zero Trust principles requires a different way of managing the resulting end-state.
+In the planning phase, new functionality was tested against a test tenant in which management activities occurred. It's important to note that implementing the features that support Zero Trust principles requires a different way of managing the resulting end-state.
 
 Here are some examples of new requirements for this scenario:
 

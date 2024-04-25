@@ -16,7 +16,7 @@ Writers notes:
 
 For updates to product names, please also update the appropriate figures.
 
-To update figures that are not screen shots, your options are:
+To update figures that aren't screen shots, your options are:
 
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
@@ -71,7 +71,7 @@ The following table is an accessible version of the illustration.
 | --- | --- | --- | --- | --- |
 | Organizational alignment <br><br> Strategic goals <br><br> Outcomes| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
 
-*Rapidly modernizing* refers to your ability to accelerate your organization’s capacity to deploy security configurations and threat protection capabilities across your digital estate at a pace that helps you get ahead of threats and mitigate your top risks. Think of it as a flywheel you are building in which you’ve created a repeatable process that you can feed many technical projects through.
+*Rapidly modernizing* refers to your ability to accelerate your organization’s capacity to deploy security configurations and threat protection capabilities across your digital estate at a pace that helps you get ahead of threats and mitigate your top risks. Think of it as a flywheel you're building in which you’ve created a repeatable process that you can feed many technical projects through.
 
 :::image type="content" source="../media/adoption-guide/repeatable-process.svg" alt-text="Diagram of a repeatable process for adoption." lightbox="../media/adoption-guide/repeatable-process.svg":::
 
@@ -91,7 +91,7 @@ Defining security as a business-level imperative is the first step toward a mode
 
 | Traditional role of security as an extension of IT responsibility| Modern security posture with Zero Trust |
 | --- | --- |
-| Traditional protection relies on security specialists that are part of the IT team. Security is an IT function.| Security is a responsibility shared among all levels of the business. Accountability for security rests with the executive, while responsibility is shared using the three Zero trust principles of assume breach, verify explicitly, and least privilege. A Zero Trust model moves security from reactive (who did what and when based on logging) to least privilege (based on just-in-time access to systems as needed). It also implements architecture elements and security operations capabilities to limit the damage from a breach. |
+| Traditional protection relies on security specialists that are part of the IT team. Security is an IT function.| Security is a responsibility shared among all levels of the business. Accountability for security rests with the executive, while responsibility is shared using the three Zero trust principles of **Assume breach**, **Verify explicitly**, and **Use least privilege access**. A Zero Trust model moves security from reactive (who did what and when based on logging) to least privilege (based on just-in-time access to systems as needed). It also implements architecture elements and security operations capabilities to limit the damage from a breach. |
 
 The Zero Trust adoption [overview article](zero-trust-adoption-overview.md) translates how Zero Trust applies to leadership roles across many organizations. This article includes business descriptions of the Zero Trust principles and a business translation of the technical areas included in a Zero Trust architecture, including identities, devices, and app. These topics are good places to begin conversations with your team of leaders. Be sure to probe and gain insights into what motivates the leaders in your organization so you can more easily agree on priorities and gain alignment and participation.
 
@@ -107,7 +107,7 @@ Gaining alignment begins with understanding what motivates your leaders and why 
 | Chief Marketing Officer (CMO)| How the business is perceived both internally and externally relates to employee and customer confidence. Breach readiness and security incident communication strategy are vital to managing perception and opinions. |
 | Chief Information Officer (CIO)| The applications used by a mobile and hybrid workforce must be accessible while securing the company's data. Security should be a measurable outcome and aligned with IT strategy. |
 | Chief Information Security Officer (CISO)| Most best practice security standards and protocols require organizations to continually improve the suitability, adequacy, and effectiveness of the information security management system. Modernizing the security posture allows for the evolution of business security policies and procedures which in turn advance the overall security strategy within the business. |
-| Chief Technology Officer (CTO)| The technology used to secure the business cannot be constricted to what is achievable using previous datacenter thinking only. Complimentary technologies that protect and enable business outcomes in a secure manner must be adopted. |
+| Chief Technology Officer (CTO)| The technology used to secure the business can't be constricted to what is achievable using previous datacenter thinking only. Complimentary technologies that protect and enable business outcomes in a secure manner must be adopted. |
 | Chief Operations Officer (COO)| The business must be able to operate profitably before, during, and after an attack. Security posture must enable fault tolerance and recoverability to prevent business outage. |
 | Chief Financial Officer (CFO)| The security posture must be a predictable cost with a measurable outcome, like other business priorities. |
 
@@ -144,7 +144,7 @@ Some organizations choose to prioritize work and measure progress against risk. 
 
 An easy way to get started is to use [Six Tabletop Exercises to Help Prepare Your Cybersecurity Team](https://www.cisecurity.org/insights/white-papers/six-tabletop-exercises-prepare-cybersecurity-team), provided by the Center for Internet Security (CIS).
 
-These tabletop exercises are designed to help organizations walk through different risk scenarios with the goal of evaluating the organization’s state of preparation. They are each designed to be completed together with your team of stakeholders “in as little as 15 minutes.”
+These tabletop exercises are designed to help organizations walk through different risk scenarios with the goal of evaluating the organization’s state of preparation. They're each designed to be completed together with your team of stakeholders "in as little as 15 minutes."
 
 These exercises guide participants through the process of a simulated incident and require departments and teams to respond. The exercises help you evaluate your preparedness in a cross-discipline manner.
 
@@ -178,7 +178,7 @@ After taking stock of your risks and defensive areas of your digital estate wher
 
 #### This adoption guidance
 
-Whether you are taking a risk approach or defensive approach (or both), use the Zero Trust adoption guidance in this article as a starting point and prioritize the work based on your organization’s priorities. This article's guidance provides a systematic approach to applying the principles of Zero Trust. It’s based on fortifying the most common targets attackers use to gain access to an environment (identities and devices) and applying protections to your internal environment (like least privileged access and network segmentation) to prevent or limit the damage of a breach.
+Whether you're taking a risk approach or defensive approach (or both), use the Zero Trust adoption guidance in this article as a starting point and prioritize the work based on your organization’s priorities. This article's guidance provides a systematic approach to applying the principles of Zero Trust. It’s based on fortifying the most common targets attackers use to gain access to an environment (identities and devices) and applying protections to your internal environment (like least privileged access and network segmentation) to prevent or limit the damage of a breach.
 
 #### Your current organization and resource strengths
 
@@ -192,7 +192,7 @@ Another resource that is often used to help inform strategy and priorities is th
 
 For more information, see [Shared responsibility in the cloud](/azure/security/fundamentals/shared-responsibility) in the Azure Security Fundamentals library.
 
-Shared responsibility is a planning model frequently used by security teams to help transform the mindset and strategy from “in control of everything” to “sharing responsibility with the cloud provider.” This model emphasizes the strategy of moving apps and resources to trusted cloud providers to reduce the security work that remains for your organization. 
+Shared responsibility is a planning model frequently used by security teams to help transform the mindset and strategy from "in control of everything" to "sharing responsibility with the cloud provider." This model emphasizes the strategy of moving apps and resources to trusted cloud providers to reduce the security work that remains for your organization. 
 
 This can become part of your long-term strategy, starting with the acquisition of new cloud-based apps as a motivation to retire legacy apps and servers that your organization personally maintains. 
 
@@ -221,7 +221,7 @@ The following figure shows the qualitative relationship between your defensive s
 
 As your defensive strength increases, the cost to the attacker increases and reduces the ROI of the attack effort.
 
-The attacker ROI model helps leaders understand that there are few absolutes. A security posture is never considered perfect or impenetrable. However, there is a lot of opportunity for your organization to be strategic and prioritize your budget and resources. It’s additional incentive for your team of business leaders to work together to protect your organization.
+The attacker ROI model helps leaders understand that there are few absolutes. A security posture is never considered perfect or impenetrable. However, there's a lot of opportunity for your organization to be strategic and prioritize your budget and resources. It’s additional incentive for your team of business leaders to work together to protect your organization.
 
 ### Identify outcomes of your security posture
 
@@ -338,7 +338,7 @@ In addition to developing readiness plans for common attacks, this exercise can 
 
 When planning for breach readiness, you must understand the state of your physical and digital assets. The first objective in this stage is to take inventory. Note that the other business scenarios include taking inventory of the assets that are affected by the scenario. These inventories and the status of the items become part of your security posture. 
 
-For this business scenario, it is recommended that you create a list of all physical and digital assets and services and LOB applications. Physical assets include endpoints (mobile phones, PCs, and laptops), and servers (physical or virtual). Examples of digital assets include services such as emails and retention data in Exchange Online, files and records in SharePoint Online, SQL PaaS services, data lakes, files in on-premises file servers or Azure File Shares. Consider using a Cloud Access Security Broker (CASB) service such as Microsoft Defender for Cloud to expose the services used by users, including shadow IT data locations. 
+For this business scenario, it's recommended that you create a list of all physical and digital assets and services and LOB applications. Physical assets include endpoints (mobile phones, PCs, and laptops), and servers (physical or virtual). Examples of digital assets include services such as emails and retention data in Exchange Online, files and records in SharePoint Online, SQL PaaS services, data lakes, files in on-premises file servers or Azure File Shares. Consider using a Cloud Access Security Broker (CASB) service such as Microsoft Defender for Cloud to expose the services used by users, including shadow IT data locations. 
 
 The following are digital assets to include in your inventory:
 
@@ -353,7 +353,7 @@ It might not be possible to develop a detailed list of assets and their status a
 
 Ideally you can accomplish the following:
 
-- Rate your digital assets by content sensitivity and criticality. If you are unaware of the locations of these assets, consider using Microsoft Purview to discover critical data.
+- Rate your digital assets by content sensitivity and criticality. If you're unaware of the locations of these assets, consider using Microsoft Purview to discover critical data.
 - Keep an updated list of vulnerabilities that exist in your digital estate for all assets.
 
 The following Zero Trust architecture diagram illustrates the relationship of these assets to each other.
@@ -362,7 +362,7 @@ The following Zero Trust architecture diagram illustrates the relationship of th
 
 #### Implement basic hygiene
 
-This stage also includes implementing basic hygiene practices. According to the [Microsoft Digital Defense Report](https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022) (2022), “Although nation state actors can be technically sophisticated and employ a wide variety of tactics, their attacks can often be mitigated by good cyber hygiene.” The report estimates, “Ninety eight percent of attacks can be stopped with basic hygiene measures in place.”
+This stage also includes implementing basic hygiene practices. According to the [Microsoft Digital Defense Report](https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022) (2022), "Although nation state actors can be technically sophisticated and employ a wide variety of tactics, their attacks can often be mitigated by good cyber hygiene." The report estimates, "Ninety eight percent of attacks can be stopped with basic hygiene measures in place."
 
 | Objectives for Stage 2| Resources |
 | --- | --- |
@@ -394,7 +394,7 @@ Stage 3 also includes maturing the managing shadow IT and patching areas of hygi
 | --- | --- |
 | Visualize your security posture using audience-appropriate dashboards| [The tracking progress section in the overview article](zero-trust-adoption-overview.md#tracking-progress) provides several examples. <br><br> As you deploy and configure additional security capabilities, look for additional audience-scoped views that are valuable for your organization. For example, see [Monitor Zero Trust (TIC 3.0) security architectures with Microsoft Sentinel](/azure/sentinel/sentinel-solution). |
 | Document and manage shadow IT using Defender for Cloud Apps| This is a hygiene area you can mature in this stage if you’ve deployed Defender for Cloud Apps. See [Integrate SaaS apps for Zero Trust with Microsoft 365](/security/zero-trust/integrate-saas-apps). |
-| Develop a methodology for patching and updating systems regularly and with time sensitivity| This task within this business scenario isn't about how to patch and update systems. Rather, it is about developing a methodology to ensure patching and updating the various components of your digital estate happens regularly with accountability, visibility, and good communication to all affected individuals. Look for opportunities to automate this, where possible. <br><br> [What are the best practices for patching and updating your IT systems?](https://www.linkedin.com/advice/1/what-best-practices-patching-updating) (LinkedIn article) <br><br> [Does Patching Make Perfect?](https://www.infosecurity-magazine.com/opinions/patching-perfect/) (Infosecurity Magazine) |
+| Develop a methodology for patching and updating systems regularly and with time sensitivity| This task within this business scenario isn't about how to patch and update systems. Rather, it's about developing a methodology to ensure patching and updating the various components of your digital estate happens regularly with accountability, visibility, and good communication to all affected individuals. Look for opportunities to automate this, where possible. <br><br> [What are the best practices for patching and updating your IT systems?](https://www.linkedin.com/advice/1/what-best-practices-patching-updating) (LinkedIn article) <br><br> [Does Patching Make Perfect?](https://www.infosecurity-magazine.com/opinions/patching-perfect/) (Infosecurity Magazine) |
 
 <a name='stage-4'></a>
 ### Stage 4
@@ -405,7 +405,7 @@ The objectives of Stage 4 are about maturing your organization’s ability to pr
 | --- | --- |
 | Continuously educate users| To help Microsoft customers deploy user training quickly, easily, and effectively, use the [Microsoft Cybersecurity Awareness Kit](https://www.microsoft.com/en-us/security/blog/2020/05/13/empowering-remote-workforce-security-training/), developed in partnership with Terranova Security. <br><br> You can use attack simulation training in the Microsoft Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users. See [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started). <br><br> Also see [Microsoft 365 security tips infographic](/microsoft-365/solutions/infographics-for-users) and [Microsoft Entra end-user rollout templates and materials](https://www.microsoft.com/en-us/download/details.aspx?id=57600). |
 | Evolve your organization’s security operations capability| [Integrating Microsoft Defender XDR into your security operations](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) provides guidance for building and training your Security Operations Center (SOC) team, including how to develop and formalize a process for responding to incidents. <br><br> See the [Microsoft Security Operations library](/security/operations/overview) for guidance on how to respond to incidents and playbooks for responding to specific attack types. |
-| Continue to manage risk| Develop a systematic way for your organization to evaluate and manage risk on an ongoing basis. Revisit the tabletop exercises or ISO standards to recalibrate where you are and what you have accomplished. |
+| Continue to manage risk| Develop a systematic way for your organization to evaluate and manage risk on an ongoing basis. Revisit the tabletop exercises or ISO standards to recalibrate where you're and what you have accomplished. |
 
 ## Ready phase
 
@@ -424,8 +424,8 @@ the following table is an example of how this can work for the **Identify risks 
 | Ready task | Actions |
 | --- | --- |
 | Evaluate| Decide what resources you'll use to evaluate risks and who should be included in the activities. This evaluation can include using the tabletop exercises or the ISO standards. Determine who in your organization should participate. |
-| Test| Using the resources you are targeting, review the recommended exercises with a small set of your stakeholders to gauge your readiness to engage your fuller team of stakeholders. |
-| Pilot| If you are using the tabletop exercises, try out one of the scenarios with the chosen participants. Review the results and determine if you’re ready to proceed to the other exercises. If you’re using the ISO standards, target a portion of the standard to pilot the evaluation. |
+| Test| Using the resources you're targeting, review the recommended exercises with a small set of your stakeholders to gauge your readiness to engage your fuller team of stakeholders. |
+| Pilot| If you're using the tabletop exercises, try out one of the scenarios with the chosen participants. Review the results and determine if you’re ready to proceed to the other exercises. If you’re using the ISO standards, target a portion of the standard to pilot the evaluation. |
 
 By taking an agile approach like this, you allow opportunities to adjust and optimize your methodology and process. You also build confidence as you go.
 

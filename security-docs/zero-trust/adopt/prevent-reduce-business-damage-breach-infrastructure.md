@@ -53,7 +53,7 @@ For new articles in this content set, please:
 
 As part of Zero Trust adoption guidance, this article is part of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario and describes how to protect your organization from cyberattacks. This article focuses on how to deploy additional security measures to prevent a breach and limit its spread and to create and test a business continuity and disaster recovery (BCDR) infrastructure to more quickly recover from a destructive breach.
 
-For the elements of the “assume breach” Zero Trust guiding principle:
+For the elements of the **Assume breach** Zero Trust guiding principle:
 
 - **Minimize blast radius and segment access**
 
@@ -92,7 +92,7 @@ For more information about the "Prevent or reduce business damage from a breach"
 
 :::image type="content" source="../media/adoption-guide/define-strategy-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Define strategy phase highlighted." lightbox="../media/adoption-guide/define-strategy-phase.png":::
 
-The **Define strategy** phase is critical to define and formalize our efforts – it formalizes the “Why?” of this scenario. In this phase, you understand the scenario through business, IT, operational and strategic perspectives. You define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
+The **Define strategy** phase is critical to define and formalize our efforts – it formalizes the "Why?" of this scenario. In this phase, you understand the scenario through business, IT, operational and strategic perspectives. You define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
 
 This article suggests motivations and outcomes that are relevant to many organizations. Use these suggestions to hone the strategy for your organization based on your unique needs.
 
@@ -105,11 +105,11 @@ The motivations for security breach prevention and recovery infrastructure are s
 | Business needs | To operate your business with a posture of breach prevention and recovery as an extension of security. Your business can recover from a breach containing damage within one or more areas while continuing business as normal. |
 | IT needs | To implement technologies and disciplines to lower the probability of a breach, such as updating on-premises systems and endpoints and deploying honeypot resources to distract and deceive attackers, all while maintaining an uncompromising approach to identity security and provisioning. |
 | Operational needs | To implement breach prevention and recovery as standard operating procedures. Breaches are expected and while undesired can be mitigated for your business vertical. |
-| Strategic needs | To incrementally raise the ability of your business to recover from breaches, which can lower the return of investment to cyber attackers while increasing operating resiliency. The “assume breach” principle of Zero Trust forces you to plan for and execute changes and updates to ensure business survival, minimize breaches, and reduce breach recovery time. |
+| Strategic needs | To incrementally raise the ability of your business to recover from breaches, which can lower the return of investment to cyber attackers while increasing operating resiliency. The **Assume breach** principle of Zero Trust forces you to plan for and execute changes and updates to ensure business survival, minimize breaches, and reduce breach recovery time. |
 
 ### Outcomes for implementing security breach prevention and recovery infrastructure
 
-Applying the overall goal of Zero Trust to “never trust, always verify” to your breach damage prevention and reduction infrastructure adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes.
+Applying the overall goal of Zero Trust to "never trust, always verify" to your breach damage prevention and reduction infrastructure adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes.
 
 | Objective | Outcome |
 | --- | --- |
@@ -124,11 +124,11 @@ Applying the overall goal of Zero Trust to “never trust, always verify” to y
 
 Adoption plans convert the principles of Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align them with your organization's business strategy.
 
-The motivations and outcomes you define, together with your business leaders and teams, support the “Why?” for your organization and become the North Star for your strategy. Next comes the technical planning to achieve the objectives.
+The motivations and outcomes you define, together with your business leaders and teams, support the "Why?" for your organization and become the North Star for your strategy. Next comes the technical planning to achieve the objectives.
 
 Technical adoption for implementing breach prevention and recovery involves:
 
-- Setting up Entra Privileged Identity Management (PIM) to protect your administrator and other privileged accounts for just-in time (JIT) access.
+- Setting up Microsoft Entra Privileged Identity Management (PIM) to protect your administrator and other privileged accounts for just-in time (JIT) access.
 - Increasing the security of your networking infrastructure.
 - Deploying honeypot resources on your network to lure attackers and detect their presence early.
 - Implementing a comprehensive patching infrastructure to keep servers and devices up to date.
@@ -210,17 +210,17 @@ The Stage 1 deployment objectives include locking down administrator and other p
 
 ##### Secure privileged accounts
 
-Cybersecurity incidents typically begin with a credential theft of some sort. Attackers discover the account name, which can be a well-known or easily discovered email address, and then proceed to determine the password of the account. This type of attack can be thwarted in most cases by multi-factor authentication (MFA). However, the “assume breach” Zero Trust principle implies that an attacker can and will access your network using an identity.
+Cybersecurity incidents typically begin with a credential theft of some sort. Attackers discover the account name, which can be a well-known or easily discovered email address, and then proceed to determine the password of the account. This type of attack can be thwarted in most cases by multifactor authentication (MFA). However, the **Assume breach** Zero Trust principle implies that an attacker can and will access your network using an identity.
 
 Once in your network, attackers try to elevate their level of privilege by compromising accounts with more and more access. The goal is to compromise a privileged account that has access to a wide swath of not only sensitive data, but to administrative settings as well. Therefore, it's imperative that you prevent this level of access to attackers.
 
 First, for hybrid identity organizations, you must ensure that administrator accounts or accounts holding privileged roles that are used for cloud services aren’t synchronized with and stored in on-premises Active Directory Domain Services (AD DS). If they're stored on-premises and AD DS or Microsoft Entra Connect is compromised, an attacker can have administrative control to your Microsoft cloud services. Review your synchronization settings to prevent and test whether your cloud administrator accounts are present in your AD DS.
 
-All organizations with a Microsoft cloud subscription have an Entra ID tenant that contains cloud accounts, which include user and administrative accounts. Administrators need to perform privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. 
+All organizations with a Microsoft cloud subscription have a Microsoft Entra ID tenant that contains cloud accounts, which include user and administrative accounts. Administrators need to perform privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. 
 
-The first step to protecting privileged accounts is to require strong passwords and MFA. Additionally, pursuant to the “Use least privilege access” Zero Trust principle, use Microsoft Entra PIM in your Microsoft Entra production environment to provide an additional layer of protection. Entra PIM provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions.
+The first step to protecting privileged accounts is to require strong passwords and MFA. Additionally, pursuant to the **Use least privilege access** Zero Trust principle, use Microsoft Entra PIM in your Microsoft Entra production environment to provide an additional layer of protection. Microsoft Entra PIM provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions.
 
-Features of Entra PIM include:
+Features of Microsoft Entra PIM include:
 
 - JIT privileged access to Microsoft Entra ID and Azure resources
 - Time-bound access to resources using start and end dates
@@ -232,9 +232,9 @@ Features of Entra PIM include:
 
 | Resource | Description |
 |:-----|:-----|
-| [What is hybrid identity with Microsoft Entra ID?](/entra/identity/hybrid/whatis-hybrid-identity) | Get started with the documentation set for Entra ID Connect. |
-| [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure) | Get started with the documentation set for Entra PIM. |
-| [Plan an Entra PIM deployment](/azure/active-directory/privileged-identity-management/pim-deployment-plan) | 	Step through the planning process for deploying PIM for your privileged accounts. |
+| [What is hybrid identity with Microsoft Entra ID?](/entra/identity/hybrid/whatis-hybrid-identity) | Get started with the documentation set for Microsoft Entra ID Connect. |
+| [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure) | Get started with the documentation set for Microsoft Entra PIM. |
+| [Plan a Microsoft Entra PIM deployment](/azure/active-directory/privileged-identity-management/pim-deployment-plan) | 	Step through the planning process for deploying PIM for your privileged accounts. |
 | Module: [Plan and implement privileged access](/training/modules/plan-implement-privileged-access/) | Learn how to use PIM to protect your data and resources. |
 
 ##### Segment your network
@@ -291,7 +291,7 @@ BCDR is an important element of breach mitigation and a crucial part of a BCDR i
 
 Microsoft offers Microsoft 365 Backup and Azure Backup for native backup and restore functions.
 
-Microsoft 365 Backup is a new offering (currently in preview) that backs up your Microsoft 365 tenant data for Exchange, OneDrive and SharePoint workloads at scale and provides quick restores. Microsoft 365 Backup or applications built on top of the Microsoft 365 Backup Storage platform deliver the following benefits regardless of the size or scale of your tenant:
+Microsoft 365 Backup is a new offering (currently in preview) that backs up your Microsoft 365 tenant data for Exchange, OneDrive, and SharePoint workloads at scale and provides quick restores. Microsoft 365 Backup or applications built on top of the Microsoft 365 Backup Storage platform deliver the following benefits regardless of the size or scale of your tenant:
 
 - Fast, immutable backup within hours
 - Fast restore within hours
@@ -325,7 +325,7 @@ You can also use [incremental snapshots in Azure](/azure/virtual-machines/disks-
 
 Identity protection for the user accounts used to administer backups must use strong authentication with MFA and should use PIM for JIT access. Also ensure that your backup infrastructure is protected using secondary identities from another identity provider, such as local identities or local system identities. These are known as break glass accounts.
 
-For example, if the cyberattack has compromised your Entra ID tenant and you are now locked out of using an Entra ID administrator account to access your backups, the backup infrastructure must allow for a sign-in that is separate from the compromised Entra ID tenant.
+For example, if the cyberattack has compromised your Microsoft Entra ID tenant and you're now locked out of using a Microsoft Entra ID administrator account to access your backups, the backup infrastructure must allow for a sign-in that is separate from the compromised Microsoft Entra ID tenant.
 
 ##### Implement a patching plan
 
@@ -382,7 +382,7 @@ After identifying the risks, you can take action to mitigate these risks, and if
 |:-----|:-----|
 | [Insider risk management](/purview/insider-risk-management-solution-overview) | Get started with the documentation set. |
 | Module: [Manage insider risk in Microsoft Purview](/training/modules/m365-compliance-insider-manage-insider-risk/) | Learn about insider risk management and how Microsoft technologies can help you detect, investigate, and act on risky activities in your organization. |
-| Module: [Implement Microsoft Purview Insider Risk Management](/training/modules/implement-insider-risk-management/) | Learn how to use Microsoft Purview Insider Risk Management to plan your insider risk solution, create insider risk management policies and manage insider risk management alerts and cases. |
+| Module: [Implement Microsoft Purview Insider Risk Management](/training/modules/implement-insider-risk-management/) | Learn how to use Microsoft Purview Insider Risk Management to plan your insider risk solution, create insider risk management policies, and manage insider risk management alerts and cases. |
 
 <a name='stage-3'></a>
 
@@ -392,11 +392,11 @@ In this stage, you extend your backup and site recovery scope to include all bus
 
 ##### Implement Microsoft 365 Backup and Azure Backup for all business data
 
-Once you are satisfied that Microsoft 365 Backup and Azure Backup is working for your critical data and has been tested in recovery exercises, you can now extend it to include all your business data.
+Once you're satisfied that Microsoft 365 Backup and Azure Backup is working for your critical data and has been tested in recovery exercises, you can now extend it to include all your business data.
 
 ##### Implement Azure Site Recovery for all workloads
 
-Once you are satisfied that Azure Site Recovery is working for your critical data and has been tested in recovery exercises, you can now extend it to include all your business data.
+Once you're satisfied that Azure Site Recovery is working for your critical data and has been tested in recovery exercises, you can now extend it to include all your business data.
 
 ##### Gain visibility into network traffic
 
@@ -461,7 +461,7 @@ Use the resources listed in this article to prioritize your plan. The work of im
 
 The staged approach recommended in this article includes cascading breach prevention and recovery work in a methodical way across your digital estate. At this phase, revisit these elements of the plan to be sure everything is ready to go:
 
-- Use of Entra PIM has been tested for administrator accounts and your IT admins are trained to use it
+- Use of Microsoft Entra PIM has been tested for administrator accounts and your IT admins are trained to use it
 - Your networking infrastructure has been tested for data encryption as needed, segmenting to filter access has been tested, and redundant legacy networking technologies have been determined and tests run to ensure operation if they're removed
 - Your system patching practices have been tested for successful installation of updates and detection of failed updates
 - You have begun analysis of your insider risks and how to manage them
@@ -476,7 +476,7 @@ Microsoft recommends a cascading, iterative approach to implementing breach prev
 
 The main elements of your organization’s adopt phase should include:
 
-- Enabling Entra PIM for all your administrator and other privileged accounts
+- Enabling Microsoft Entra PIM for all your administrator and other privileged accounts
 - Implementing network traffic encryption, segmentation, and removal of legacy systems
 - Deploying honeypot resources
 - Deploying your patch management infrastructure

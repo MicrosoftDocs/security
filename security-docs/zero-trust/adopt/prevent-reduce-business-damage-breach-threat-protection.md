@@ -53,7 +53,7 @@ For new articles in this content set, please:
 
 As part of Zero Trust adoption guidance, this article describes how to protect your organization from cyberattacks and their possible resulting cost and reputation loss. This article is part of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario and focuses on how to create a threat protection and eXtended detection and response (XDR) infrastructure to detect and thwart cyberattacks in progress and minimize the business damage from a breach.
 
-For the elements of the “assume breach” Zero Trust guiding principle:
+For the elements of the **Assume breach** Zero Trust guiding principle:
 
 - **Use analytics to get visibility, drive threat detection, and improve defenses**
 
@@ -92,7 +92,7 @@ For more information about the "Prevent or reduce business damage from a breach"
 
 :::image type="content" source="../media/adoption-guide/define-strategy-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Define strategy phase highlighted." lightbox="../media/adoption-guide/define-strategy-phase.png":::
 
-The **Define strategy** phase is critical to define and formalize our efforts – it formalizes the “Why?” of this scenario. In this phase, you understand the scenario through business, IT, operational and strategic perspectives. You define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
+The **Define strategy** phase is critical to define and formalize our efforts – it formalizes the "Why?" of this scenario. In this phase, you understand the scenario through business, IT, operational and strategic perspectives. You define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
 
 This article suggests motivations and outcomes that are relevant to many organizations. Use these suggestions to hone the strategy for your organization based on your unique needs.
 
@@ -110,7 +110,7 @@ The motivations for implementing threat protection and XDR are straightforward, 
 
 ### Outcomes for implementing threat protection and XDR
 
-Applying the overall goal of Zero Trust to “never trust, always verify” adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes for implementing threat protection and XDR.
+Applying the overall goal of Zero Trust to "never trust, always verify" adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes for implementing threat protection and XDR.
 
 | Objective | Outcome |
 | --- | --- |
@@ -125,7 +125,7 @@ Applying the overall goal of Zero Trust to “never trust, always verify” adds
 
 Adoption plans convert the principles of Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align them with your organization's business strategy.
 
-The motivations and outcomes you define, together with your business leaders and teams, support the “Why?” for your organization and become the North Star for your strategy. Next comes the technical planning to achieve the objectives.
+The motivations and outcomes you define, together with your business leaders and teams, support the "Why?" for your organization and become the North Star for your strategy. Next comes the technical planning to achieve the objectives.
 
 Technical adoption for implementing threat protection and XDR involves:
 

@@ -73,13 +73,13 @@ Many security architects and IT teams ask for help communicating to business lea
 - A systematic way to track progress, scoped to business leaders.
 - Curation of the most relevant resources for adoption of Zero Trust from slides that are ready to present to business leaders to technical implementation guidance and user infographics.
 
-“Our goal is to help every organization strengthen its security capabilities through a Zero Trust architecture built on our comprehensive solutions that span identity, security, compliance, and device management across all clouds and platforms.” –Satya Nadella, executive chairman and CEO of Microsoft
+"Our goal is to help every organization strengthen its security capabilities through a Zero Trust architecture built on our comprehensive solutions that span identity, security, compliance, and device management across all clouds and platforms." –Satya Nadella, executive chairman and CEO of Microsoft
 
 As a Microsoft partner, NBConsult contributed to and provided material feedback to this adoption guidance.
 
 ## Zero Trust requires buy-in at the highest level
 
-Zero Trust protects business assets wherever they're and wherever they go. Zero Trust is a proactive, integrated approach to security that requires knowing what business assets and processes are most important to protect, and securing these while preserving business agility.
+Zero Trust protects business assets wherever they are located and wherever they go. Zero Trust is a proactive, integrated approach to security that requires knowing what business assets and processes are most important to protect, and securing these while preserving business agility.
 
 **Adopting a Zero Trust approach requires buy-in across the C-suite.** As the threat landscape expands, and critical attacks become more common, business leaders across functional areas are increasingly concerned with the cybersecurity approach their organization's take.
 
@@ -88,7 +88,7 @@ Zero Trust allows the entire C-suite and business to embrace a measurable busine
 Zero Trust adds value to two predominant scenarios that are seen in the marketplace:
 
 1. **A formal security strategy aligned to business outcomes.** This Zero Trust approach provides a holistic view on security to the entire business, through values that are shared across the business and adopted at every level from the top down. This is often CISO-led and business outcomes are tracked as part of the reporting function of Zero Trust in an ongoing manner.
-1. **Delegated security to IT functions** where security is treated as another technology vertical with minimal C-suite input and integration. This often focuses on short term cost optimization for security rather than managing it as a business risk, often further separating security into non-integrated “best of breed” independent solutions. 
+1. **Delegated security to IT functions** where security is treated as another technology vertical with minimal C-suite input and integration. This often focuses on short term cost optimization for security rather than managing it as a business risk, often further separating security into non-integrated "best of breed" independent solutions. 
 
 Zero Trust provides a way of integrating the vertical solutions into a single vision. This vision supports consistent business capabilities and outcomes and provides ongoing measurable metrics on the state of security.
 
@@ -103,7 +103,7 @@ The following is a generalized view of the possible functions taken by various C
 | Chief Information Officer (CIO) | Responsible for IT as a whole | Zero Trust principles eliminate vertical security solutions that aren't aligned to business outcomes and enables Security as a Platform, which does align to business outcomes. |
 | Chief Information Security Officer (CISO) | Responsible for security program implementation | Zero Trust principles provide a sufficient foundation for the organization to comply with various security standards and enables the organization to secure data, assets, and infrastructure. |
 | Chief Technology Officer (CTO) | Chief Architect in the business | Zero Trust helps with defensible technology alignment aligned to business outcomes. Using Zero Trust, security is baked into every architecture. |
-| Chief Operations Officer (COO) | Responsible for operational execution | Zero Trust helps with operational governance; the “how to” of the security vision and the surfacing of who did what and when. Both are aligned to business outcomes. |
+| Chief Operations Officer (COO) | Responsible for operational execution | Zero Trust helps with operational governance; the "how to" of the security vision and the surfacing of who did what and when. Both are aligned to business outcomes. |
 | Chief Financial Officer (CFO) | Responsible for governance and spend | Zero Trust helps with the accountability of spend and the defensibility of spend; a measurable way of gaining a risk-based measure against security and Zero Trust spending aligned to business outcomes. |
 
 ## Zero Trust principles for the C-suite
@@ -149,11 +149,11 @@ The next section discusses how to get started on the Zero Trust journey. We’ll
 
 ## The Zero Trust adoption motion
 
-Customers who are familiar with the Cloud Adoption Framework for Azure have asked, “Where’s the Zero Trust adoption framework?”
+Customers who are familiar with the Cloud Adoption Framework for Azure have asked, "Where’s the Zero Trust adoption framework?"
 
 The [Cloud Adoption Framework for Azure](https://azure.microsoft.com/solutions/cloud-enablement/cloud-adoption-framework) is a methodical process for introducing new apps and services into an organization. The focus is primarily on a proven process an organization can follow to introduce an app or service into the environment. The scale motion is repeating the process for each app that is added to a digital estate.
 
-Adoption of a Zero Trust strategy and architecture requires a different scope. It is about introducing new security configurations *across an entire digital estate*. The scale motion is two dimensional:
+Adoption of a Zero Trust strategy and architecture requires a different scope. It's about introducing new security configurations *across an entire digital estate*. The scale motion is two dimensional:
 
 - Taking a piece of the Zero Trust architecture, such as data protection, and scaling out this protection across the entire digital estate.
 - Repeating the process with each additional piece of the Zero Trust architecture, starting with strategic quick wins and foundational pieces, and then advancing to more complex pieces.
@@ -205,7 +205,7 @@ Across the business scenarios, the implementation stages are roughly aligned so 
 
 ## Starting a Zero Trust journey
 
-If you are embarking on a Zero trust journey that is aligned to a business scenario or looking to embrace Zero Trust as a strategic defense doctrine, success can be difficult to measure. This is because security doesn't pass a simple pass/fail type of evaluation. Rather, security is a commitment and a journey, to which Zero Trust supplies guiding principles.
+If you're embarking on a Zero trust journey that is aligned to a business scenario or looking to embrace Zero Trust as a strategic defense doctrine, success can be difficult to measure. This is because security doesn't pass a simple pass/fail type of evaluation. Rather, security is a commitment and a journey, to which Zero Trust supplies guiding principles.
 
 Using this adoption guidance as a process framework, first establish and document our security strategy, very similar to a Project Initiation Document (PID).  Using the principles that apply to strategy, at minimum, you should document:
 
@@ -220,7 +220,7 @@ Each business scenario encompasses a different set of assets with different tool
 3. **Asset Management:** How do you choose to protect (govern) and administer (manage) these assets?
 4. **Asset Recovery:** How do you recover from compromise or loss of control of an asset (govern)?
 
-Each business scenario recommends how to take inventory as well as how to protect the assets and report on progress. While there is inevitably some overlap across the business scenarios, this adoption guidance attempts to simplify as much as possible by addressing asset types in predominantly one business scenario.
+Each business scenario recommends how to take inventory as well as how to protect the assets and report on progress. While there's inevitably some overlap across the business scenarios, this adoption guidance attempts to simplify as much as possible by addressing asset types in predominantly one business scenario.
 
 ## Tracking progress
 
@@ -235,7 +235,7 @@ Many organizations use International Organization for Standardization (ISO) stan
 
 - ISO/IEC 27001:2022 
 
-  - Information security, cybersecurity and privacy protection
+  - Information security, cybersecurity, and privacy protection
   - Information security management systems
   - Requirements
 
@@ -261,7 +261,7 @@ Note that the progress percentage provided by Secure Score might not be accurate
 
 Additionally, several portals and reports can assist you in creating an overview of risk within your business, including:
 
-- Reports within Microsoft Defender XDR provide information regarding security trends and track the protection status of your identities, data, devices, applications and infrastructure.
+- Reports within Microsoft Defender XDR provide information regarding security trends and track the protection status of your identities, data, devices, applications, and infrastructure.
 - The Cloud Security Explorer allows you to proactively hunt for security risks.
 
 For example, within Microsoft Defender XDR, the device inventory provides a clear view into newly discovered devices in your network that aren't yet protected. At the top of each **Device inventory** tab, you can see the total number of devices that aren't onboarded. Here's an example.

@@ -116,4 +116,5 @@ The [Security Adoption Framework (SAF)](adoption.md) illustrates how to apply th
 
 ## Related content
 
-[MCRA](mcra.md)
+- [Microsoft Cybersecurity Reference Architectures](mcra.md)
+- [The immutable laws of security](../zero-trust/ten-laws-of-security.md)

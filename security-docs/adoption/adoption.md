@@ -5,7 +5,7 @@ description: Guiding organizations through security program modernization with r
 ms.service: security
 
 ms.topic: overview
-ms.date: 11/11/2023
+ms.date: 04/26/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -73,6 +73,19 @@ Meeting these objectives allows organizations to accelerate business enablement 
       - [Secure remote and hybrid work with Zero Trust](/security/zero-trust/adopt/secure-remote-hybrid-work)
       - [Identify and protect sensitive business data with Zero Trust](/security/zero-trust/adopt/identify-protect-sensitive-business-data)
       - [Meet regulatory and compliance requirements with Zero Trust](/security/zero-trust/adopt/meet-regulatory-compliance-requirements)
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="2":::
+      [**Common security antipatterns**](https://github.com/MicrosoftDocs/security/blob/main/Downloads/antipatterns.pdf)
+
+      All of the SAF modules include antipatterns that we commonly observe across organizations and guidance for overcoming them. 
+      
+      You can download the PDF that includes many of the antipatterns from across the SAF modules.
+   :::column-end:::
+   :::column span="":::
+      :::image type="content" source="media/adoption/antipatterns.png" alt-text="A diagram showing common security antipatterns at a high level" lightbox="media/adoption/antipatterns.png":::
    :::column-end:::
 :::row-end:::
 

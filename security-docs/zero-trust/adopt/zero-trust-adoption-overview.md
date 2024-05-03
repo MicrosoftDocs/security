@@ -226,7 +226,7 @@ Each business scenario recommends how to take inventory as well as how to protec
 
 Tracking your progress throughout the Zero Trust adoption process is crucial as it allows your organization to monitor and measure strategic goals and objectives.
 
-## What to track and measure
+### What to track and measure
 
 Microsoft recommends taking two approaches to tracking your progress:
 
@@ -249,18 +249,18 @@ The requirements and guidelines in these standards are generic and can apply to 
 
 Identifying and understanding the specific risks that apply to your organization will help you prioritize your most strategic objectives across the Zero Trust architecture.
 
-## How to track and measure
+### How to track and measure
 
 Once your organization has identified and prioritized your most strategic technical objectives, you can map out a staged roadmap for implementation. You can then track your progress by using various tools.
 
-### Customizable tracking reports
+#### Customizable tracking reports
 
 Microsoft provides cusutomizable PowerPoint and Excel tracking tools. These are pre-populated with objectives and tasks, organized by Zero Trust business scenarios. You can customize these with your own priorities, objectives, and team members.
 
 - Business leader tracker — A downloadable [PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) with progress tracking slides. These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
 - Implementer tracker — A downloadable [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign ownership and track your progress through the stages, objectives, and tasks. For business scenario project leads, IT leads, and IT implementers. 
 
-### In-product dashboards
+#### In-product dashboards
 
 [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) is a security solution that provides a unified view of security posture across company assets and workloads. Within this tool, [Security Initiatives](/security-exposure-management/initiatives) help you assess readiness and maturity in specific areas of security risk. Security Initiatives take a proactive approach to managing security programs towards specific risk or domain-related objectives.
 

@@ -268,7 +268,7 @@ Use the Zero Trust initiative to track your organization’s progress toward imp
 
 :::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png" alt-text="Screenshot of an example of the Zero Trust initiative within Microsoft Security Exposure Management." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png":::
 
-For more information about how to use the Zero Trust initiative within the Exposure Management tool, see [Rapidly modernize your security posture — Track and measure](../rapidly-modernize-security-posture#track-and-measure)
+For more information about how to use the Zero Trust initiative within the Exposure Management tool, see [Rapidly modernize your security posture — Track and measure](../adopt/rapidly-modernize-security-posture.md#track-and-measure)
 
 
 Additionally, several other portals and reports can assist you in creating an overview of risk within your business, including:

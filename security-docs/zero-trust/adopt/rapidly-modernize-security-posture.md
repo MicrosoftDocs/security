@@ -451,7 +451,8 @@ Security governance is a constant process. As you transition to this phase, shif
 
 This scenario article suggests different reports and dashboards you can use to assess your status and measure progress. Ultimately you want to develop a set of metrics that you can use to show progress and to identify where a new vulnerability might be emerging. You can use the various reports and dashboards to gather the metrics that are most important for your organization.
 
-The following table lists some example metrics.
+#### Team and organization metrics
+The following table lists some example metrics you can use to track your team and organization security posture. 
 
 | Business enablement | Security posture | Security response | Security improvement |
 | --- | --- | --- | --- |
@@ -460,6 +461,33 @@ The following table lists some example metrics.
 | Average boot and sign-in time for managed devices | % of compliant apps | Time to restore critical systems | Number of repetitive manual steps removed from workflows |
 | Number of security interruptions in user workflow | # of privileged accounts meeting 100% of requirements | # of high-severity incidents | # of lessons learned from internal and external incidents |
 | % of IT helpdesk time spent on low-value security activities | # of accounts meeting 100% of requirements | Incident growth rate (overall) |  |
+
+
+
+#### In-product dashboards and reports
+
+In addtion to the [PowerPoint and Excel-based tracking tools](../zero-trust-assessment-progress-tracking-resources.md) that are designed to work with this adoption guidance, Microsoft provides in-product experiences to track your progress toward technical implementation.
+
+ [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) is a security solution that provides a unified view of security posture across company assets and workloads. Within this tool, [Security Initiatives](/security-exposure-management/initiatives) help you assess readiness and maturity in specific areas of security risk. Security Initiatives take a proactive approach to managing security programs towards specific risk or domain-related objectives.
+
+Use the Zero Trust initiative to track your organization’s progress toward implmenting Zero Trust security. This initiativee is aligned with this Microsoft Zero Trust adoption framework, allowing you to track your progress  with metrics aligned with business scenarios. These metrics capture your resource coverage across prioritized actionable recommendations to help security teams protect their organization. The initiative also provides real-time data on your Zero Trust progress that can be shared with stakeholders. 
+
+:::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png" alt-text="Screenshot of an example of the Inventory tab in the Microsoft Defender portal." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png":::
+
+Each metric includes insights that help teams understand the current state — providing teams with recommendation details, identifying which assets are affected, and measuring the impact on the overall Zero Trust maturity. 
+
+:::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-2.png" alt-text="Screenshot of an example metrics for '% of secure remote and hybrid work' within the Zero Trust initative of the Microsoft Security Exposure Management tool." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-2.png":::
+
+Zero Trust adoption is a team game that involves both security and IT operations teams to be aligned and work together to prioritize changes that improve overall Zero Trust maturity. At the metric and task level, you can share the recommendation with the appropriate team and owner. The owner can then link directly to the admin experience of the respective security control to configure and deploy the recommendation. 
+
+:::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-3.png" alt-text="Screenshot of how metrics and recommendations can be shared with team members directly from within the Zero Trust initative of the Microsoft Security Exposure Management tool." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-3.png":::
+
+This Zero Trust adoption framework encourages you to take a risk-based approach and/or a defensive strategy. With either of these approaches, you can target other Security Initiatives within the exposure management tool, such as Ransomware Protection, and see your work accrue to Zero Trust maturity in the Zero Trust initiative. 
+
+You can use the Zero Trust initiative together with this Zero Trust adoption framework. The metrics and tasks within the initiative are organized by Zero Trust business scenario. 
+
+
+
 
 ### Monitor and detect
 

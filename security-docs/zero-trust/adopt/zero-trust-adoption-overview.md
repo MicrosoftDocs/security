@@ -255,7 +255,7 @@ Once your organization has identified and prioritized your most strategic techni
 
 #### Customizable tracking reports
 
-Microsoft provides cusutomizable PowerPoint and Excel tracking tools. These are pre-populated with objectives and tasks, organized by Zero Trust business scenarios. You can customize these with your own priorities, objectives, and team members.
+Microsoft provides customizable PowerPoint and Excel tracking tools. These are pre-populated with objectives and tasks, organized by Zero Trust business scenarios. You can customize these with your own priorities, objectives, and team members.
 
 - Business leader tracker — A downloadable [PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) with progress tracking slides. These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
 - Implementer tracker — A downloadable [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign ownership and track your progress through the stages, objectives, and tasks. For business scenario project leads, IT leads, and IT implementers. 
@@ -264,7 +264,7 @@ Microsoft provides cusutomizable PowerPoint and Excel tracking tools. These are 
 
 [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) is a security solution that provides a unified view of security posture across company assets and workloads. Within this tool, [Security Initiatives](/security-exposure-management/initiatives) help you assess readiness and maturity in specific areas of security risk. Security Initiatives take a proactive approach to managing security programs towards specific risk or domain-related objectives.
 
-Use the Zero Trust initiative to track your organization’s progress toward implmenting Zero Trust security. This initiativee is aligned with this Microsoft Zero Trust adoption framework, allowing you to track your progress  with metrics aligned with business scenarios. These metrics capture your resource coverage across prioritized actionable recommendations to help security teams protect their organization. The initiative also provides real-time data on your Zero Trust progress that can be shared with stakeholders. 
+Use the Zero Trust initiative to track your organization’s progress toward implementing Zero Trust security. This initiative is aligned with this Microsoft Zero Trust adoption framework, allowing you to track your progress  with metrics aligned with business scenarios. These metrics capture your resource coverage across prioritized actionable recommendations to help security teams protect their organization. The initiative also provides real-time data on your Zero Trust progress that can be shared with stakeholders. 
 
 :::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png" alt-text="Screenshot of an example of the Zero Trust initiative within Microsoft Security Exposure Management." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png":::
 

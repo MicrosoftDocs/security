@@ -259,11 +259,11 @@ If this staged approach works for your organization, you can use:
 
 - This [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to present and track your progress through these stages and objectives for business leaders and other stakeholders. Here's the slide for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png" alt-text="The PowerPoint slide for the stages of your rapidly modernize your security posture deployment." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png":::
+  :::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png" alt-text="The PowerPoint slide for the stages to rapidly modernize your security posture deployment." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png":::
 
 - This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-rapidly-modernize-security-posture.png" alt-text="The progress tracking worksheet for your rapidly modernize your security posture deployment." lightbox="../media/adoption-guide/adoption-tracking-worksheet-rapidly-modernize-security-posture.png":::
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-rapidly-modernize-security-posture.png" alt-text="The progress tracking worksheet to rapidly modernize your security posture deployment." lightbox="../media/adoption-guide/adoption-tracking-worksheet-rapidly-modernize-security-posture.png":::
 
 ### Stakeholder team
 
@@ -283,7 +283,7 @@ Your stakeholder team for this business scenario includes leaders across your or
 
 The [PowerPoint slide deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-stakeholders.png" alt-text="The PowerPoint slide to identify key stakeholders for your rapidly modernize your security posture deployment." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-stakeholders.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-stakeholders.png" alt-text="The PowerPoint slide to identify key stakeholders for to rapidly modernize your security posture deployment." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-stakeholders.png":::
 
 ### Technical plans and skills readiness
 
@@ -467,21 +467,21 @@ The following table lists some example metrics you can use to track your team an
 
 #### In-product dashboards and reports
 
-In addtion to the [PowerPoint and Excel-based tracking tools](../zero-trust-assessment-progress-tracking-resources.md) that are designed to work with this adoption guidance, Microsoft provides in-product experiences to track your progress toward technical implementation.
+In addition to the [PowerPoint and Excel-based tracking tools](../zero-trust-assessment-progress-tracking-resources.md) that are designed to work with this adoption guidance, Microsoft provides in-product experiences to track your progress toward technical implementation.
 
  [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) is a security solution that provides a unified view of security posture across company assets and workloads. Within this tool, [Security Initiatives](/security-exposure-management/initiatives) help you assess readiness and maturity in specific areas of security risk. Security Initiatives take a proactive approach to managing security programs towards specific risk or domain-related objectives.
 
-Use the Zero Trust initiative to track your organization’s progress toward implmenting Zero Trust security. This initiativee is aligned with this Microsoft Zero Trust adoption framework, allowing you to track your progress  with metrics aligned with business scenarios. These metrics capture your resource coverage across prioritized actionable recommendations to help security teams protect their organization. The initiative also provides real-time data on your Zero Trust progress that can be shared with stakeholders. 
+Use the Zero Trust initiative to track your organization’s progress toward implementing Zero Trust security. This initiative is aligned with this Microsoft Zero Trust adoption framework, allowing you to track your progress  with metrics aligned with business scenarios. These metrics capture your resource coverage across prioritized actionable recommendations to help security teams protect their organization. The initiative also provides real-time data on your Zero Trust progress that can be shared with stakeholders. 
 
 :::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png" alt-text="Screenshot of an example of the Inventory tab in the Microsoft Defender portal." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png":::
 
 Each metric includes insights that help teams understand the current state — providing teams with recommendation details, identifying which assets are affected, and measuring the impact on the overall Zero Trust maturity. 
 
-:::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-2.png" alt-text="Screenshot of an example metrics for '% of secure remote and hybrid work' within the Zero Trust initative of the Microsoft Security Exposure Management tool." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-2.png":::
+:::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-2.png" alt-text="Screenshot of example metrics for '% of secure remote and hybrid work' within the Zero Trust initiative of the Microsoft Security Exposure Management tool." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-2.png":::
 
 Zero Trust adoption is a team game that involves both security and IT operations teams to be aligned and work together to prioritize changes that improve overall Zero Trust maturity. At the metric and task level, you can share the recommendation with the appropriate team and owner. The owner can then link directly to the admin experience of the respective security control to configure and deploy the recommendation. 
 
-:::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-3.png" alt-text="Screenshot of how metrics and recommendations can be shared with team members directly from within the Zero Trust initative of the Microsoft Security Exposure Management tool." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-3.png":::
+:::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-3.png" alt-text="Screenshot of how metrics and recommendations can be shared with team members directly from within the Zero Trust initiative of the Microsoft Security Exposure Management tool." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-3.png":::
 
 This Zero Trust adoption framework encourages you to take a risk-based approach and/or a defensive strategy. With either of these approaches, you can target other Security Initiatives within the exposure management tool, such as Ransomware Protection, and see your work accrue to Zero Trust maturity in the Zero Trust initiative. 
 

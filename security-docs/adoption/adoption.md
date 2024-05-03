@@ -89,7 +89,7 @@ Meeting these objectives allows organizations to accelerate business enablement 
    :::column-end:::
 :::row-end:::
 
-In addition to these publicly available elements, Microsoft also offers these and other workshops as expert led engagements for Microsoft Unified customers
+In addition to these publicly available elements, Microsoft also offers these and other workshops as expert led engagements for Microsoft Unified customers.
 
 ### Microsoft led workshops
 

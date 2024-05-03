@@ -447,6 +447,7 @@ As you transition to the adopt phase for this scenario and the others, be sure t
 
 Security governance is a constant process. As you transition to this phase, shift to tracking and measuring the results of each piece of the Zero Trust architecture you’ve implemented. Together with monitoring and detecting, you'll identify opportunities to iterate for maturity.
 
+<a name='track-and-measure'></a>
 ### Track and measure
 
 This scenario article suggests different reports and dashboards you can use to assess your status and measure progress. Ultimately you want to develop a set of metrics that you can use to show progress and to identify where a new vulnerability might be emerging. You can use the various reports and dashboards to gather the metrics that are most important for your organization.

@@ -483,7 +483,7 @@ Zero Trust adoption is a team game that involves both security and IT operations
 
 :::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-3.png" alt-text="Screenshot of how metrics and recommendations can be shared with team members directly from within the Zero Trust initiative of the Microsoft Security Exposure Management tool." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-3.png":::
 
-This Zero Trust adoption framework encourages you to take a risk-based approach and/or a defensive strategy. With either of these approaches, you can target other Security Initiatives within the exposure management tool, such as Ransomware Protection, and see your work accrue to Zero Trust maturity in the Zero Trust initiative. 
+This Zero Trust adoption framework encourages you to take a risk-based approach and/or a defensive strategy. With either of these approaches, you can target other Security Initiatives within the exposure management tool, such as Ransomware Protection or a specific threat initiative, and see your work accrue to Zero Trust maturity in the Zero Trust initiative. 
 
 You can use the Zero Trust initiative together with this Zero Trust adoption framework. The metrics and tasks within the initiative are organized by Zero Trust business scenario. 
 

@@ -5,7 +5,7 @@ description: Guiding organizations through security program modernization with r
 ms.service: security
 
 ms.topic: overview
-ms.date: 04/26/2024
+ms.date: 05/06/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo

@@ -405,7 +405,7 @@ The objectives of Stage 4 are about maturing your organization’s ability to pr
 | --- | --- |
 | Continuously educate users| To help Microsoft customers deploy user training quickly, easily, and effectively, use the [Microsoft Cybersecurity Awareness Kit](https://www.microsoft.com/en-us/security/blog/2020/05/13/empowering-remote-workforce-security-training/), developed in partnership with Terranova Security. <br><br> You can use attack simulation training in the Microsoft Defender portal to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users. See [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started). <br><br> Also see [Microsoft 365 security tips infographic](/microsoft-365/solutions/infographics-for-users) and [Microsoft Entra end-user rollout templates and materials](https://www.microsoft.com/en-us/download/details.aspx?id=57600). |
 | Evolve your organization’s security operations capability| [Integrating Microsoft Defender XDR into your security operations](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) provides guidance for building and training your Security Operations Center (SOC) team, including how to develop and formalize a process for responding to incidents. <br><br> See the [Microsoft Security Operations library](/security/operations/overview) for guidance on how to respond to incidents and playbooks for responding to specific attack types. |
-| Continue to manage risk| Develop a systematic way for your organization to evaluate and manage risk on an ongoing basis. Revisit the tabletop exercises or ISO standards to recalibrate where you're and what you have accomplished. |
+| Continue to manage risk| Develop a systematic way for your organization to evaluate and manage risk on an ongoing basis. Revisit the tabletop exercises or ISO standards to recalibrate where you are and what you have accomplished. |
 
 ## Ready phase
 
@@ -419,7 +419,7 @@ For example, for each objective:
 - Begin with a reasonable approach and test it out. Adjust as needed.
 - Pilot the approach and adjust based on what you learn.
 
-the following table is an example of how this can work for the **Identify risks to your organization** objective in Stage 1 of the [Plan phase](#plan-phase).
+The following table is an example of how this can work for the **Identify risks to your organization** objective in Stage 1 of the [Plan phase](#plan-phase).
 
 | Ready task | Actions |
 | --- | --- |

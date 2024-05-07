@@ -9,7 +9,6 @@ ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
 ms.topic: article
-localization_priority: Normal
 description: Learn what ransomware is, how it works, and how to protect against it with links to the Microsoft products that help prevent ransomware.
 ms.date: 02/22/2024
 ---

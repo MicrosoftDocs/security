@@ -5,7 +5,6 @@ keywords: incidents, alerts, investigate, analyze, response, correlation, attack
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-localization_priority: Normal
 ms.topic: article
 ms.collection: 
   - msftsolution-secops

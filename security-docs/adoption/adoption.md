@@ -1,11 +1,11 @@
 ---
 title: Security Adoption Resources
-description: Guiding organizations through security program modernization with reference strategies built on Zero Trust principles
+description: Guiding organizations through security program modernization with reference strategies built on Zero Trust principles.
 
 ms.service: security
 
 ms.topic: overview
-ms.date: 05/06/2024
+ms.date: 05/07/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo

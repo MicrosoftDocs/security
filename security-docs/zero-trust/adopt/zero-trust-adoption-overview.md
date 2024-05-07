@@ -273,6 +273,7 @@ For more information about how to use the Zero Trust initiative within the Expos
 
 Additionally, several other portals and reports can assist you in creating an overview of risk within your business, including:
 
+- The Critical Asset Protection initiative in Microsoft Security Exposure Management brings together critical asset risk across Defender products and areas.
 - Reports within Microsoft Defender XDR provide information regarding security trends and track the protection status of your identities, data, devices, applications, and infrastructure.
 - The Cloud Security Explorer allows you to proactively hunt for security risks.
 

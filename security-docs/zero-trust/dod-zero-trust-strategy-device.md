@@ -4,7 +4,7 @@ description: Minimize the organization's attack surface, reduce risks, enable co
 ms.service: security
 ms.subservice: security-fundamentals
 ms.topic: conceptual
-ms.date: 04/10/2024
+ms.date: 05/08/2024
 ms.author: jricketts
 author: jricketts
 manager: martinco

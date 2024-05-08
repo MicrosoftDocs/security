@@ -171,7 +171,7 @@ This guidance shows you how to create recommended policies to enforce the use of
 
 This guidance shows you how to implement a set of policies to protect access to Microsoft 365 cloud services, including Microsoft Teams, Exchange, SharePoint, and OneDrive. In addition to implementing these policies, we recommend you also raise the level of protection for your tenant using these resources:
 
-- [Configure your tenant for increased security](tenant-wide-setup-for-increased-security.md)
+- [Configure your tenant for increased security](/defender-office-365/tenant-wide-setup-for-increased-security)
 
 ### Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise
 

@@ -1,7 +1,7 @@
 ---
 title: Implement threat protection and XDR
 description: Implement threat protection and XDR.  
-ms.date: 04/10/2024
+ms.date: 04/24/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -21,7 +21,7 @@ To update figures that are not screen shots, your options are:
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
-For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
 - Locate the source PowerPoint file in internal storage. 
 - Download a copy of the PowerPoint file from the article.
@@ -35,6 +35,13 @@ For updates that affect text in the Excel Business Scenario Objectives workbook 
 
 After updating, republish the updated Excel file in the Download Center.
 
+For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
+
+- Locate the source Visio file in internal storage. 
+- Download a copy of the Visio file from the article.
+
+After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
+
 For new articles in this content set, please:
 
 - Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
@@ -46,7 +53,7 @@ For new articles in this content set, please:
 
 As part of Zero Trust adoption guidance, this article describes how to protect your organization from cyberattacks and their possible resulting cost and reputation loss. This article is part of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario and focuses on how to create a threat protection and eXtended detection and response (XDR) infrastructure to detect and thwart cyberattacks in progress and minimize the business damage from a breach.
 
-For the elements of the “assume breach” Zero Trust guiding principle:
+For the elements of the **Assume breach** Zero Trust guiding principle:
 
 - **Use analytics to get visibility, drive threat detection, and improve defenses**
 
@@ -66,7 +73,7 @@ This article assumes that you have already [modernized your security posture](ra
 
 This article walks through implementing threat protection and XDR elements of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.png" alt-text="Diagram of the adoption process for an objective or a set of objectives." lightbox="../media/adoption-guide/objective-adoption-process.png":::
 
 The following table is an accessible version of the illustration.
 
@@ -83,9 +90,9 @@ For more information about the "Prevent or reduce business damage from a breach"
 
 ## Define strategy phase
 
-:::image type="content" source="../media/adoption-guide/define-strategy-phase.svg" alt-text="The define strategy phase." lightbox="../media/adoption-guide/define-strategy-phase.svg":::
+:::image type="content" source="../media/adoption-guide/define-strategy-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Define strategy phase highlighted." lightbox="../media/adoption-guide/define-strategy-phase.png":::
 
-The **Define strategy** phase is critical to define and formalize our efforts – it formalizes the “Why?” of this scenario. In this phase, you understand the scenario through business, IT, operational and strategic perspectives. You define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
+The **Define strategy** phase is critical to define and formalize our efforts – it formalizes the "Why?" of this scenario. In this phase, you understand the scenario through business, IT, operational and strategic perspectives. You define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
 
 This article suggests motivations and outcomes that are relevant to many organizations. Use these suggestions to hone the strategy for your organization based on your unique needs.
 
@@ -103,7 +110,7 @@ The motivations for implementing threat protection and XDR are straightforward, 
 
 ### Outcomes for implementing threat protection and XDR
 
-Applying the overall goal of Zero Trust to “never trust, always verify” adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes for implementing threat protection and XDR.
+Applying the overall goal of Zero Trust to "never trust, always verify" adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes for implementing threat protection and XDR.
 
 | Objective | Outcome |
 | --- | --- |
@@ -114,11 +121,11 @@ Applying the overall goal of Zero Trust to “never trust, always verify” adds
 
 ## Plan phase
 
-:::image type="content" source="../media/adoption-guide/plan-phase.svg" alt-text="The plan phase." lightbox="../media/adoption-guide/plan-phase.svg":::
+:::image type="content" source="../media/adoption-guide/plan-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Plan phase highlighted." lightbox="../media/adoption-guide/plan-phase.png":::
 
 Adoption plans convert the principles of Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align them with your organization's business strategy.
 
-The motivations and outcomes you define, together with your business leaders and teams, support the “Why?” for your organization and become the North Star for your strategy. Next comes the technical planning to achieve the objectives.
+The motivations and outcomes you define, together with your business leaders and teams, support the "Why?" for your organization and become the North Star for your strategy. Next comes the technical planning to achieve the objectives.
 
 Technical adoption for implementing threat protection and XDR involves:
 
@@ -150,11 +157,11 @@ If this staged approach works for your organization, you can use:
 
 - This [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to present and track your progress through these stages and objectives for business leaders and other stakeholders. Here's the slide for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png" alt-text="PowerPoint slide for the deployment stages of implementing threat detection and XDR." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png":::
+  :::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png" alt-text="The PowerPoint slide for the stages of your implement threat detection and XDR deployment." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-progress-tracking.png":::
 
 - This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-threat-protection.png" alt-text="The progress tracking worksheet for the Implement threat protection and XDR business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-threat-protection.png":::
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-threat-protection.png" alt-text="The progress tracking worksheet for your implement threat detection and XDR deployment." lightbox="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-threat-protection.png":::
 
 ### Understand your organization
 
@@ -183,7 +190,7 @@ This table summarizes roles that are recommended when building a sponsorship pro
 
 The [PowerPoint deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.png" alt-text="PowerPoint slide for the stakeholders of implementing threat detection and XDR." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.png" alt-text="The PowerPoint slide to identify key stakeholders for your implement threat detection and XDR deployment." lightbox="../media/adoption-guide/zero-trust-threat-protection-xdr-stakeholders.png":::
 
 ### Technical planning and skills readiness
 
@@ -344,7 +351,7 @@ For more information from the Cloud Adoption Framework for Azure, see [Plan for 
 
 ## Ready phase
 
-:::image type="content" source="../media/adoption-guide/ready-phase.svg" alt-text="The ready phase." lightbox="../media/adoption-guide/ready-phase.svg":::
+:::image type="content" source="../media/adoption-guide/ready-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Ready phase highlighted." lightbox="../media/adoption-guide/ready-phase.png":::
 
 Use the resources listed in this article to prioritize your plan. The work of implementing threat protection and XDR represents one of the layers in your multi-layer Zero Trust deployment strategy.
 
@@ -364,7 +371,7 @@ The planning phase demonstrated the gap between what you have and where you want
 
 ## Adopt phase
 
-:::image type="content" source="../media/adoption-guide/adopt-phase.svg" alt-text="The adopt phase." lightbox="../media/adoption-guide/adopt-phase.svg":::
+:::image type="content" source="../media/adoption-guide/adopt-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Adopt phase highlighted." lightbox="../media/adoption-guide/adopt-phase.png":::
 
 Microsoft recommends a cascading, iterative approach to implementing threat protection and XDR. This allows you to refine your strategy and policies as you go to increase the accuracy of the results.
 There’s no need to wait until one phase is complete before beginning the next. Your results are more effective if you implement elements of each stage if you iterate along the way.
@@ -377,7 +384,7 @@ The main elements of your **Adopt** phase should include:
 
 ## Govern and manage phases
 
-:::image type="content" source="../media/adoption-guide/govern-manage-phase.svg" alt-text="The govern and manage phase." lightbox="../media/adoption-guide/govern-manage-phase.svg":::
+:::image type="content" source="../media/adoption-guide/govern-manage-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Govern and manage phase highlighted." lightbox="../media/adoption-guide/govern-manage-phase.png":::
 
 Governance of your organization’s ability to detect attacks with a threat protection and XDR infrastructure is an iterative process. By thoughtfully creating your implementation plan and rolling it out across your SecOps team you have created a foundation. Use the following tasks to help you start building your initial governance plan for this foundation.
 
@@ -408,8 +415,8 @@ For any of the Zero Trust business scenarios, you can use the following progress
 
 | Progress tracking resource | That helps you… | Designed for… |
 | --- | --- | --- |
-| Adoption Scenario Plan Phase Grid downloadable [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf) <br><br> :::image type="content" source="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png" alt-text="Screenshot of an example plan and phase grid." lightbox="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png"::: | Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="Screenshot of a slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="Screenshot of a worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the Plan phase. | Business scenario project leads, IT leads, and IT implementers. |
+| Adoption Scenario Plan Phase Grid downloadable [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf) <br><br> :::image type="content" source="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png" alt-text="An example plan and phase grid showing stages and goals." lightbox="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png"::: | Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
+| Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="An example PowerPoint slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
+| Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="An example of an Excel worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the Plan phase. | Business scenario project leads, IT leads, and IT implementers. |
 
 For additional resources, see [Zero Trust assessment and progress tracking resources](../zero-trust-assessment-progress-tracking-resources.md).

@@ -1,7 +1,7 @@
 ---
 title: Implement security breach prevention and recovery infrastructure
 description: Implement security breach prevention and recovery infrastructure.  
-ms.date: 04/10/2024
+ms.date: 04/24/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -21,7 +21,7 @@ To update figures that are not screen shots, your options are:
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
-For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
 - Locate the source PowerPoint file in internal storage. 
 - Download a copy of the PowerPoint file from the article.
@@ -35,6 +35,13 @@ For updates that affect text in the Excel Business Scenario Objectives workbook 
 
 After updating, republish the updated Excel file in the Download Center.
 
+For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
+
+- Locate the source Visio file in internal storage. 
+- Download a copy of the Visio file from the article.
+
+After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
+
 For new articles in this content set, please:
 
 - Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
@@ -46,7 +53,7 @@ For new articles in this content set, please:
 
 As part of Zero Trust adoption guidance, this article is part of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario and describes how to protect your organization from cyberattacks. This article focuses on how to deploy additional security measures to prevent a breach and limit its spread and to create and test a business continuity and disaster recovery (BCDR) infrastructure to more quickly recover from a destructive breach.
 
-For the elements of the “assume breach” Zero Trust guiding principle:
+For the elements of the **Assume breach** Zero Trust guiding principle:
 
 - **Minimize blast radius and segment access**
 
@@ -66,7 +73,7 @@ This article assumes that you have already [modernized your security posture](ra
 
 This article walks through implementing security breach prevention and recovery infrastructure of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.png" alt-text="Diagram of the adoption process for an objective or a set of objectives." lightbox="../media/adoption-guide/objective-adoption-process.png":::
 
 The following table is an accessible version of the illustration.
 
@@ -83,9 +90,9 @@ For more information about the "Prevent or reduce business damage from a breach"
 
 ## Define strategy phase
 
-:::image type="content" source="../media/adoption-guide/define-strategy-phase.svg" alt-text="The define strategy phase." lightbox="../media/adoption-guide/define-strategy-phase.svg":::
+:::image type="content" source="../media/adoption-guide/define-strategy-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Define strategy phase highlighted." lightbox="../media/adoption-guide/define-strategy-phase.png":::
 
-The **Define strategy** phase is critical to define and formalize our efforts – it formalizes the “Why?” of this scenario. In this phase, you understand the scenario through business, IT, operational and strategic perspectives. You define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
+The **Define strategy** phase is critical to define and formalize our efforts – it formalizes the "Why?" of this scenario. In this phase, you understand the scenario through business, IT, operational and strategic perspectives. You define the outcomes against which to measure success in the scenario, understanding that security is an incremental and iterative journey.
 
 This article suggests motivations and outcomes that are relevant to many organizations. Use these suggestions to hone the strategy for your organization based on your unique needs.
 
@@ -98,11 +105,11 @@ The motivations for security breach prevention and recovery infrastructure are s
 | Business needs | To operate your business with a posture of breach prevention and recovery as an extension of security. Your business can recover from a breach containing damage within one or more areas while continuing business as normal. |
 | IT needs | To implement technologies and disciplines to lower the probability of a breach, such as updating on-premises systems and endpoints and deploying honeypot resources to distract and deceive attackers, all while maintaining an uncompromising approach to identity security and provisioning. |
 | Operational needs | To implement breach prevention and recovery as standard operating procedures. Breaches are expected and while undesired can be mitigated for your business vertical. |
-| Strategic needs | To incrementally raise the ability of your business to recover from breaches, which can lower the return of investment to cyber attackers while increasing operating resiliency. The “assume breach” principle of Zero Trust forces you to plan for and execute changes and updates to ensure business survival, minimize breaches, and reduce breach recovery time. |
+| Strategic needs | To incrementally raise the ability of your business to recover from breaches, which can lower the return of investment to cyber attackers while increasing operating resiliency. The **Assume breach** principle of Zero Trust forces you to plan for and execute changes and updates to ensure business survival, minimize breaches, and reduce breach recovery time. |
 
 ### Outcomes for implementing security breach prevention and recovery infrastructure
 
-Applying the overall goal of Zero Trust to “never trust, always verify” to your breach damage prevention and reduction infrastructure adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes.
+Applying the overall goal of Zero Trust to "never trust, always verify" to your breach damage prevention and reduction infrastructure adds a significant layer of protection to your environment. It’s important to be clear on the outcomes you expect to achieve so that you can strike the right balance of protection for all teams involved. The following table provides suggested objectives and outcomes.
 
 | Objective | Outcome |
 | --- | --- |
@@ -113,15 +120,15 @@ Applying the overall goal of Zero Trust to “never trust, always verify” to y
 
 ## Plan phase
 
-:::image type="content" source="../media/adoption-guide/plan-phase.svg" alt-text="The plan phase." lightbox="../media/adoption-guide/plan-phase.svg":::
+:::image type="content" source="../media/adoption-guide/plan-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Plan phase highlighted." lightbox="../media/adoption-guide/plan-phase.png":::
 
 Adoption plans convert the principles of Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align them with your organization's business strategy.
 
-The motivations and outcomes you define, together with your business leaders and teams, support the “Why?” for your organization and become the North Star for your strategy. Next comes the technical planning to achieve the objectives.
+The motivations and outcomes you define, together with your business leaders and teams, support the "Why?" for your organization and become the North Star for your strategy. Next comes the technical planning to achieve the objectives.
 
 Technical adoption for implementing breach prevention and recovery involves:
 
-- Setting up Entra Privileged Identity Management (PIM) to protect your administrator and other privileged accounts for just-in time (JIT) access.
+- Setting up Microsoft Entra Privileged Identity Management (PIM) to protect your administrator and other privileged accounts for just-in time (JIT) access.
 - Increasing the security of your networking infrastructure.
 - Deploying honeypot resources on your network to lure attackers and detect their presence early.
 - Implementing a comprehensive patching infrastructure to keep servers and devices up to date.
@@ -142,7 +149,7 @@ If this staged approach works for your organization, you can use:
 
 - This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-infrastructure.png" alt-text="The progress tracking worksheet for the Implement security breach prevention and recovery infrastructure business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-infrastructure.png":::
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-infrastructure.png" alt-text="The progress tracking worksheet for your security breach prevention and recovery infrastructure deployment." lightbox="../media/adoption-guide/adoption-tracking-worksheet-breach-prevention-recovery-infrastructure.png":::
 
 ### Understand your organization
 
@@ -180,7 +187,7 @@ This table summarizes roles that are recommended when building a sponsorship pro
 
 The [PowerPoint deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-breach-prevention-recovery-stakeholders.png" alt-text="PowerPoint slide for the stakeholders of implementing breach prevention and recovery." lightbox="../media/adoption-guide/zero-trust-breach-prevention-recovery-stakeholders.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-breach-prevention-recovery-stakeholders.png" alt-text="The PowerPoint slide to identify key stakeholders for your breach prevention and recovery infrastructure deployment." lightbox="../media/adoption-guide/zero-trust-breach-prevention-recovery-stakeholders.png":::
 
 ### Technical planning and skills readiness
 
@@ -203,17 +210,17 @@ The Stage 1 deployment objectives include locking down administrator and other p
 
 ##### Secure privileged accounts
 
-Cybersecurity incidents typically begin with a credential theft of some sort. Attackers discover the account name, which can be a well-known or easily discovered email address, and then proceed to determine the password of the account. This type of attack can be thwarted in most cases by multi-factor authentication (MFA). However, the “assume breach” Zero Trust principle implies that an attacker can and will access your network using an identity.
+Cybersecurity incidents typically begin with a credential theft of some sort. Attackers discover the account name, which can be a well-known or easily discovered email address, and then proceed to determine the password of the account. This type of attack can be thwarted in most cases by multifactor authentication (MFA). However, the **Assume breach** Zero Trust principle implies that an attacker can and will access your network using an identity.
 
 Once in your network, attackers try to elevate their level of privilege by compromising accounts with more and more access. The goal is to compromise a privileged account that has access to a wide swath of not only sensitive data, but to administrative settings as well. Therefore, it's imperative that you prevent this level of access to attackers.
 
 First, for hybrid identity organizations, you must ensure that administrator accounts or accounts holding privileged roles that are used for cloud services aren’t synchronized with and stored in on-premises Active Directory Domain Services (AD DS). If they're stored on-premises and AD DS or Microsoft Entra Connect is compromised, an attacker can have administrative control to your Microsoft cloud services. Review your synchronization settings to prevent and test whether your cloud administrator accounts are present in your AD DS.
 
-All organizations with a Microsoft cloud subscription have an Entra ID tenant that contains cloud accounts, which include user and administrative accounts. Administrators need to perform privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. 
+All organizations with a Microsoft cloud subscription have a Microsoft Entra ID tenant that contains cloud accounts, which include user and administrative accounts. Administrators need to perform privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. 
 
-The first step to protecting privileged accounts is to require strong passwords and MFA. Additionally, pursuant to the “Use least privilege access” Zero Trust principle, use Microsoft Entra PIM in your Microsoft Entra production environment to provide an additional layer of protection. Entra PIM provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions.
+The first step to protecting privileged accounts is to require strong passwords and MFA. Additionally, pursuant to the **Use least privilege access** Zero Trust principle, use Microsoft Entra PIM in your Microsoft Entra production environment to provide an additional layer of protection. Microsoft Entra PIM provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions.
 
-Features of Entra PIM include:
+Features of Microsoft Entra PIM include:
 
 - JIT privileged access to Microsoft Entra ID and Azure resources
 - Time-bound access to resources using start and end dates
@@ -225,9 +232,9 @@ Features of Entra PIM include:
 
 | Resource | Description |
 |:-----|:-----|
-| [What is hybrid identity with Microsoft Entra ID?](/entra/identity/hybrid/whatis-hybrid-identity) | Get started with the documentation set for Entra ID Connect. |
-| [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure) | Get started with the documentation set for Entra PIM. |
-| [Plan an Entra PIM deployment](/azure/active-directory/privileged-identity-management/pim-deployment-plan) | 	Step through the planning process for deploying PIM for your privileged accounts. |
+| [What is hybrid identity with Microsoft Entra ID?](/entra/identity/hybrid/whatis-hybrid-identity) | Get started with the documentation set for Microsoft Entra ID Connect. |
+| [What is Microsoft Entra Privileged Identity Management?](/entra/id-governance/privileged-identity-management/pim-configure) | Get started with the documentation set for Microsoft Entra PIM. |
+| [Plan a Microsoft Entra PIM deployment](/azure/active-directory/privileged-identity-management/pim-deployment-plan) | 	Step through the planning process for deploying PIM for your privileged accounts. |
 | Module: [Plan and implement privileged access](/training/modules/plan-implement-privileged-access/) | Learn how to use PIM to protect your data and resources. |
 
 ##### Segment your network
@@ -284,7 +291,7 @@ BCDR is an important element of breach mitigation and a crucial part of a BCDR i
 
 Microsoft offers Microsoft 365 Backup and Azure Backup for native backup and restore functions.
 
-Microsoft 365 Backup is a new offering (currently in preview) that backs up your Microsoft 365 tenant data for Exchange, OneDrive and SharePoint workloads at scale and provides quick restores. Microsoft 365 Backup or applications built on top of the Microsoft 365 Backup Storage platform deliver the following benefits regardless of the size or scale of your tenant:
+Microsoft 365 Backup is a new offering (currently in preview) that backs up your Microsoft 365 tenant data for Exchange, OneDrive, and SharePoint workloads at scale and provides quick restores. Microsoft 365 Backup or applications built on top of the Microsoft 365 Backup Storage platform deliver the following benefits regardless of the size or scale of your tenant:
 
 - Fast, immutable backup within hours
 - Fast restore within hours
@@ -318,7 +325,7 @@ You can also use [incremental snapshots in Azure](/azure/virtual-machines/disks-
 
 Identity protection for the user accounts used to administer backups must use strong authentication with MFA and should use PIM for JIT access. Also ensure that your backup infrastructure is protected using secondary identities from another identity provider, such as local identities or local system identities. These are known as break glass accounts.
 
-For example, if the cyberattack has compromised your Entra ID tenant and you are now locked out of using an Entra ID administrator account to access your backups, the backup infrastructure must allow for a sign-in that is separate from the compromised Entra ID tenant.
+For example, if the cyberattack has compromised your Microsoft Entra ID tenant and you're now locked out of using a Microsoft Entra ID administrator account to access your backups, the backup infrastructure must allow for a sign-in that is separate from the compromised Microsoft Entra ID tenant.
 
 ##### Implement a patching plan
 
@@ -375,7 +382,7 @@ After identifying the risks, you can take action to mitigate these risks, and if
 |:-----|:-----|
 | [Insider risk management](/purview/insider-risk-management-solution-overview) | Get started with the documentation set. |
 | Module: [Manage insider risk in Microsoft Purview](/training/modules/m365-compliance-insider-manage-insider-risk/) | Learn about insider risk management and how Microsoft technologies can help you detect, investigate, and act on risky activities in your organization. |
-| Module: [Implement Microsoft Purview Insider Risk Management](/training/modules/implement-insider-risk-management/) | Learn how to use Microsoft Purview Insider Risk Management to plan your insider risk solution, create insider risk management policies and manage insider risk management alerts and cases. |
+| Module: [Implement Microsoft Purview Insider Risk Management](/training/modules/implement-insider-risk-management/) | Learn how to use Microsoft Purview Insider Risk Management to plan your insider risk solution, create insider risk management policies, and manage insider risk management alerts and cases. |
 
 <a name='stage-3'></a>
 
@@ -385,11 +392,11 @@ In this stage, you extend your backup and site recovery scope to include all bus
 
 ##### Implement Microsoft 365 Backup and Azure Backup for all business data
 
-Once you are satisfied that Microsoft 365 Backup and Azure Backup is working for your critical data and has been tested in recovery exercises, you can now extend it to include all your business data.
+Once you're satisfied that Microsoft 365 Backup and Azure Backup is working for your critical data and has been tested in recovery exercises, you can now extend it to include all your business data.
 
 ##### Implement Azure Site Recovery for all workloads
 
-Once you are satisfied that Azure Site Recovery is working for your critical data and has been tested in recovery exercises, you can now extend it to include all your business data.
+Once you're satisfied that Azure Site Recovery is working for your critical data and has been tested in recovery exercises, you can now extend it to include all your business data.
 
 ##### Gain visibility into network traffic
 
@@ -448,13 +455,13 @@ For more information from the Cloud Adoption Framework for Azure, see [Plan for 
 
 ## Ready phase
 
-:::image type="content" source="../media/adoption-guide/ready-phase.svg" alt-text="The ready phase." lightbox="../media/adoption-guide/ready-phase.svg":::
+:::image type="content" source="../media/adoption-guide/ready-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Ready phase highlighted." lightbox="../media/adoption-guide/ready-phase.png":::
 
 Use the resources listed in this article to prioritize your plan. The work of implementing breach prevention and recovery represents one of the layers in your multi-layer Zero Trust deployment strategy.
 
 The staged approach recommended in this article includes cascading breach prevention and recovery work in a methodical way across your digital estate. At this phase, revisit these elements of the plan to be sure everything is ready to go:
 
-- Use of Entra PIM has been tested for administrator accounts and your IT admins are trained to use it
+- Use of Microsoft Entra PIM has been tested for administrator accounts and your IT admins are trained to use it
 - Your networking infrastructure has been tested for data encryption as needed, segmenting to filter access has been tested, and redundant legacy networking technologies have been determined and tests run to ensure operation if they're removed
 - Your system patching practices have been tested for successful installation of updates and detection of failed updates
 - You have begun analysis of your insider risks and how to manage them
@@ -463,13 +470,13 @@ The staged approach recommended in this article includes cascading breach preven
 
 ## Adopt phase
 
-:::image type="content" source="../media/adoption-guide/adopt-phase.svg" alt-text="The adopt phase." lightbox="../media/adoption-guide/adopt-phase.svg":::
+:::image type="content" source="../media/adoption-guide/adopt-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Adopt phase highlighted." lightbox="../media/adoption-guide/adopt-phase.png":::
 
 Microsoft recommends a cascading, iterative approach to implementing breach prevention and recovery. This allows you to refine your strategy and policies as you go to increase the accuracy of the results. There’s no need to wait until one phase is complete before beginning the next. Your results are more effective if you iterate along the way.
 
 The main elements of your organization’s adopt phase should include:
 
-- Enabling Entra PIM for all your administrator and other privileged accounts
+- Enabling Microsoft Entra PIM for all your administrator and other privileged accounts
 - Implementing network traffic encryption, segmentation, and removal of legacy systems
 - Deploying honeypot resources
 - Deploying your patch management infrastructure
@@ -478,7 +485,7 @@ The main elements of your organization’s adopt phase should include:
 
 ## Govern and manage phases
 
-:::image type="content" source="../media/adoption-guide/govern-manage-phase.svg" alt-text="The govern and manage phase." lightbox="../media/adoption-guide/govern-manage-phase.svg":::
+:::image type="content" source="../media/adoption-guide/govern-manage-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Govern and manage phase highlighted." lightbox="../media/adoption-guide/govern-manage-phase.png":::
 
 Governance of your organization’s ability to implement breach prevention and recovery is an iterative process. By thoughtfully creating your implementation plan and rolling it out across your digital estate you have created a foundation. Use the following tasks to help you start building your initial governance plan for this foundation.
 
@@ -509,8 +516,8 @@ For any of the Zero Trust business scenarios, you can use the following progress
 
 | Progress tracking resource | That helps you… | Designed for… |
 | --- | --- | --- |
-| Adoption Scenario Plan Phase Grid downloadable [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf) <br><br> :::image type="content" source="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png" alt-text="Screenshot of an example plan and phase grid." lightbox="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png"::: | Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="Screenshot of a slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="Screenshot of a worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the Plan phase. | Business scenario project leads, IT leads, and IT implementers. |
+| Adoption Scenario Plan Phase Grid downloadable [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf) <br><br> :::image type="content" source="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png" alt-text="An example plan and phase grid showing stages and goals." lightbox="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png"::: | Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
+| Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="An example PowerPoint slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
+| Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="An example of an Excel worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the Plan phase. | Business scenario project leads, IT leads, and IT implementers. |
 
 For additional resources, see [Zero Trust assessment and progress tracking resources](../zero-trust-assessment-progress-tracking-resources.md).

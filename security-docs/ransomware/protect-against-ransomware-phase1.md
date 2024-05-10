@@ -10,7 +10,6 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-security
-localization_priority: Normal
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 

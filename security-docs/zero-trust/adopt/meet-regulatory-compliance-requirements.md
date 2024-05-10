@@ -1,7 +1,7 @@
 ---
 title: Meet regulatory and compliance requirements with Zero Trust
 description: Learn how to Meet regulatory and compliance requirements with Zero Trust.
-ms.date: 04/10/2024
+ms.date: 04/24/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -21,7 +21,7 @@ To update figures that are not screen shots, your options are:
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
-For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
 - Locate the source PowerPoint file in internal storage. 
 - Download a copy of the PowerPoint file from the article.
@@ -34,6 +34,13 @@ For updates that affect text in the Excel Business Scenario Objectives workbook 
 - Download a copy of the Excel file from the article.
 
 After updating, republish the updated Excel file in the Download Center.
+
+For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
+
+- Locate the source Visio file in internal storage. 
+- Download a copy of the Visio file from the article.
+
+After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
 
 For new articles in this content set, please:
 
@@ -54,13 +61,13 @@ A Zero Trust approach often exceeds some types of requirements imposed by compli
 
 | Traditional approaches to meeting regulatory and compliance requirements | Modern approach to meeting regulatory and compliance requirements with Zero Trust |
 | --- | --- |
-| Many organizations use various legacy solutions stitched together. These solutions often don’t work together seamlessly, exposing infrastructure gaps and increasing operational costs. <br><br> Some independent “best of breed solutions” might even prevent compliance with certain regulations while they're used to meet another. <br><br> One widespread example is the use of encryption to ensure that authorized individuals handle data securely. But most encryption solutions make data opaque to services such as Data Loss Prevention (DLP), eDiscovery, or archiving. Encryption prevents the organization from performing due diligence on actions performed by users that utilize encrypted data. This result forces organizations to make hard and risky decisions, such as either banning all use of file-level encryption for transfers of sensitive data or letting encrypted data go outside the organization uninspected. | Unifying your security strategy and policy with a Zero Trust approach breaks down silos between IT teams and systems, enabling better visibility and protection across the IT stack. <br><br> Natively integrated compliance solutions, such as those in Microsoft Purview, not only work together to support your compliance requirements **and** those of a Zero Trust approach, but they do it with full transparency, allowing each solution to leverage the benefits of others, such as communication compliance leveraging sensitivity labels in content. Integrated compliance solutions can provide the required coverage with minimal tradeoffs, such as encrypted content being transparently processed by eDiscovery or DLP solutions. <br><br> Real-time visibility allows automatic discovery of assets, including critical assets and workloads, while compliance mandates can be applied to these assets through classification and sensitivity labeling. <br><br> Implementing a Zero Trust architecture helps you meet regulatory and compliance requirements with a comprehensive strategy. The use of Microsoft Purview solutions in a Zero Trust architecture helps you discover, govern, protect, and manage your organization’s entire data estate according to the regulations that impact your organization. <br><br> Zero Trust strategies often involve implementing controls that meet or exceed certain regulatory requirements, which reduce the burden of performing system-wide changes to adhere to new regulatory requirements. |
+| Many organizations use various legacy solutions stitched together. These solutions often don’t work together seamlessly, exposing infrastructure gaps and increasing operational costs. <br><br> Some independent "best of breed solutions" might even prevent compliance with certain regulations while they're used to meet another. <br><br> One widespread example is the use of encryption to ensure that authorized individuals handle data securely. But most encryption solutions make data opaque to services such as Data Loss Prevention (DLP), eDiscovery, or archiving. Encryption prevents the organization from performing due diligence on actions performed by users that utilize encrypted data. This result forces organizations to make hard and risky decisions, such as either banning all use of file-level encryption for transfers of sensitive data or letting encrypted data go outside the organization uninspected. | Unifying your security strategy and policy with a Zero Trust approach breaks down silos between IT teams and systems, enabling better visibility and protection across the IT stack. <br><br> Natively integrated compliance solutions, such as those in Microsoft Purview, not only work together to support your compliance requirements **and** those of a Zero Trust approach, but they do it with full transparency, allowing each solution to leverage the benefits of others, such as communication compliance leveraging sensitivity labels in content. Integrated compliance solutions can provide the required coverage with minimal tradeoffs, such as encrypted content being transparently processed by eDiscovery or DLP solutions. <br><br> Real-time visibility allows automatic discovery of assets, including critical assets and workloads, while compliance mandates can be applied to these assets through classification and sensitivity labeling. <br><br> Implementing a Zero Trust architecture helps you meet regulatory and compliance requirements with a comprehensive strategy. The use of Microsoft Purview solutions in a Zero Trust architecture helps you discover, govern, protect, and manage your organization’s entire data estate according to the regulations that impact your organization. <br><br> Zero Trust strategies often involve implementing controls that meet or exceed certain regulatory requirements, which reduce the burden of performing system-wide changes to adhere to new regulatory requirements. |
 
 The guidance in this article walks you through how to get started with Zero Trust as a framework for meeting your regulatory and compliance requirements with an emphasis on how to communicate and work with business leaders and teams across your organization.
 
 This article uses the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.png" alt-text="Diagram of the adoption process for an objective or a set of objectives." lightbox="../media/adoption-guide/objective-adoption-process.png":::
 
 The following table is an accessible version of the illustration.
 
@@ -70,9 +77,9 @@ The following table is an accessible version of the illustration.
 
 ## Define strategy phase
 
-:::image type="content" source="../media/adoption-guide/define-strategy-phase.svg" alt-text="The define strategy phase." lightbox="../media/adoption-guide/define-strategy-phase.svg":::
+:::image type="content" source="../media/adoption-guide/define-strategy-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Define strategy phase highlighted." lightbox="../media/adoption-guide/define-strategy-phase.png":::
 
-The **Define strategy** phase is critical to defining and formalizing efforts to address the “Why?” of this scenario. In this phase, you understand the scenario through regulatory, business, IT, operational, and strategic perspectives.
+The **Define strategy** phase is critical to defining and formalizing efforts to address the "Why?" of this scenario. In this phase, you understand the scenario through regulatory, business, IT, operational, and strategic perspectives.
 
 You then define the outcomes against which to measure success in this scenario, understanding that compliance is an incremental and iterative journey.
 
@@ -110,7 +117,7 @@ The most important thing to remember with this business scenario is that the Zer
 
 A strategy model that is often used within regulatory compliance is the governance pyramid shown here.
 
-:::image type="content" source="../media/adoption-guide/regulatory-compliance-governance-pyramid.svg" alt-text="The governance pyramid strategy model." lightbox="../media/adoption-guide/regulatory-compliance-governance-pyramid.svg":::
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-governance-pyramid.svg" alt-text="Diagram of the governance pyramid strategy model." lightbox="../media/adoption-guide/regulatory-compliance-governance-pyramid.svg":::
 
 This pyramid illustrates the different levels on which most organizations manage information technology (IT) governance. From the top of the pyramid to the bottom, these levels are legislation, standards, policies and procedures, and work instructions. 
 
@@ -176,17 +183,17 @@ The Data Protection Baseline template in Compliance Manager integrates 36 action
 
 These align strongly with the Zero Trust reference architecture, shown here.
 
-:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.svg" alt-text="The overall architecture for Zero Trust" lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.svg":::
+:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.svg" alt-text="Diagram of the overall architecture for Zero Trust." lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.svg":::
 
 ## Plan phase
 
-:::image type="content" source="../media/adoption-guide/plan-phase.svg" alt-text="The plan phase." lightbox="../media/adoption-guide/plan-phase.svg":::
+:::image type="content" source="../media/adoption-guide/plan-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Plan phase highlighted." lightbox="../media/adoption-guide/plan-phase.png":::
 
 Many organizations can take a four-staged approach to these technical activities, summarized in the following table.
 
 | **Stage 1**| **Stage 2**| **Stage 3**| **Stage 4** |
 | --- | --- | --- | --- |
-| Identify regulatory requirements that apply to your organization. <br><br> Use Compliance Manager to identify regulations that might affect your business, assess compliance with the high-level requirements imposed by those regulations, and plan remediation for identified gaps. <br><br> Review current guidance for regulations that apply to your organization.| Use content explorer in Microsoft Purview to  identify data that is subject to regulation requirements and assess its risk and exposure. Define custom classifiers to adapt this capability to your business needs. <br><br> Assess requirements for information protection, such as data retention and records management policies, and then implement basic information protection and data governance policies using retention and sensitivity labels. <br><br> Implement basic DLP policies to control the flow of regulated information. <br><br> Implement [communication compliance policies](/microsoft-365/compliance/communication-compliance) if required by regulations.| Extend data lifecycle management policies with automation. <br><br> Set up partitioning and isolation controls using sensitivity labels, DLP or [information barriers](/microsoft-365/compliance/information-barriers) if required by regulations. <br><br> Expand information protection policies by implementing container labeling, automatic and mandatory labeling, and stricter DLP policies. Then expand these policies to on-premises data, devices (endpoints), and third-party cloud services using other capabilities in Microsoft Purview. <br><br> Reassess compliance using Compliance Manager and identify and remediate remaining gaps.| Use Microsoft Sentinel to build reports based on the unified audit log to continuously assess and inventory the compliance status of your information. <br><br> Continue using Compliance Manager on an ongoing basis to identify and remediate remaining gaps and meet the requirements of new or updated regulations. |
+| Identify regulatory requirements that apply to your organization. <br><br> Use Compliance Manager to identify regulations that might affect your business, assess compliance with the high-level requirements imposed by those regulations, and plan remediation for identified gaps. <br><br> Review current guidance for regulations that apply to your organization.| Use content explorer in Microsoft Purview to  identify data that is subject to regulation requirements and assess its risk and exposure. Define custom classifiers to adapt this capability to your business needs. <br><br> Assess requirements for information protection, such as data retention and records management policies, and then implement basic information protection and data governance policies using retention and sensitivity labels. <br><br> Implement basic DLP policies to control the flow of regulated information. <br><br> Implement [communication compliance policies](/microsoft-365/compliance/communication-compliance) if required by regulations.| Extend data lifecycle management policies with automation. <br><br> Set up partitioning and isolation controls using sensitivity labels, DLP, or [information barriers](/microsoft-365/compliance/information-barriers) if required by regulations. <br><br> Expand information protection policies by implementing container labeling, automatic and mandatory labeling, and stricter DLP policies. Then expand these policies to on-premises data, devices (endpoints), and third-party cloud services using other capabilities in Microsoft Purview. <br><br> Reassess compliance using Compliance Manager and identify and remediate remaining gaps.| Use Microsoft Sentinel to build reports based on the unified audit log to continuously assess and inventory the compliance status of your information. <br><br> Continue using Compliance Manager on an ongoing basis to identify and remediate remaining gaps and meet the requirements of new or updated regulations. |
 
 If this staged approach works for your organization, you can use:
 
@@ -207,7 +214,7 @@ Your stakeholder team for this business scenario includes leaders across your or
 | Sponsor | Strategy, steering, escalation, approach, business alignment, and coordination management. |
 | Project lead | Overall management of engagement, resources, timeline and schedule, communications, and others. |
 | CISO | Protection and governance of data assets and systems, such as risk and policy determination and tracking and reporting. |
-| IT Compliance manager | Determination of required controls to address compliance and protection requirements. |
+| IT Compliance Manager | Determination of required controls to address compliance and protection requirements. |
 | End user security and usability (EUC) lead | Representation of your employees. |
 | Investigation and audit roles | Investigation and reporting in cooperation with compliance and protection leads. |
 | Information protection manager | Data classification and sensitive data identification, controls, and remediation. |
@@ -229,7 +236,7 @@ In Stage 1, you identify the regulations that apply to your organization and beg
 
 | Objectives for Stage 1 | Resources |
 | --- | --- |
-| Identify compliance requirements using governance pyramid. | [Compliance manager assessments](/microsoft-365/compliance/compliance-manager-assessments) |
+| Identify compliance requirements using governance pyramid. | [Compliance Manager assessments](/microsoft-365/compliance/compliance-manager-assessments) |
 | Use Compliance Manager to assess compliance and plan remediation for identified gaps. | Visit the Microsoft Purview compliance portal and review all customer-managed improvement actions relevant to your organization. |
 | Review current guidance for regulations that apply to your organization. | See the following table. |
 
@@ -270,7 +277,7 @@ This stage includes implementing controls for segregation and isolation. NIST, f
 | Extend data lifecycle management policies with automation. | [Data lifecycle management](/microsoft-365/compliance/data-lifecycle-management) |
 | Set up partitioning and isolation controls (if applicable). | [Information barriers](/microsoft-365/compliance/information-barriers) <br><br> [Data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp) <br><br> [Cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview) |
 | Expand information protection policies to other workloads. | [Learn about the information protection scanner](/microsoft-365/compliance/deploy-scanner) <br><br> [Use data loss prevention policies for non-Microsoft cloud apps](/microsoft-365/compliance/dlp-use-policies-non-microsoft-cloud-apps) <br><br> [Data loss prevention and Microsoft Teams](/microsoft-365/compliance/dlp-microsoft-teams) <br><br> [Using Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using) <br><br> [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) |
-| Reassess compliance using Compliance Manager, identify and remediate remaining gaps.| [Compliance Manager](/microsoft-365/compliance/compliance-manager) |
+| Reassess compliance using Compliance Manager.| [Compliance Manager](/microsoft-365/compliance/compliance-manager) |
 
 <a name='stage-4'></a>
 #### Stage 4
@@ -285,7 +292,7 @@ The objectives in Stage 4 are about operationalizing this scenario by moving to 
 
 ## Ready phase
 
-:::image type="content" source="../media/adoption-guide/ready-phase.svg" alt-text="The ready phase." lightbox="../media/adoption-guide/ready-phase.svg":::
+:::image type="content" source="../media/adoption-guide/ready-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Ready phase highlighted." lightbox="../media/adoption-guide/ready-phase.png":::
 
 Most compliance work happens through policy enforcement. You determine what conditions must be met to achieve compliance and then create a policy or set of policies to automate a set of controls. Policy enforcement with Zero Trust creates repeatable verification for specific compliance controls being implemented. By building controls into the operational technology that the organization interacts with every day, it becomes a simpler task to achieve audit readiness. 
 
@@ -299,7 +306,7 @@ Each pillar of Zero Trust can be mapped against specific controls within a regul
 
 Zero Trust for Identity is mapped to Access Control Management within the Center for Internet Security (CIS)) Benchmark, and to Annexure A.9.2.2 User Access Provisioning in ISO 27001:2022.
 
-:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-identities.svg" alt-text="Zero Trust for identity mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-identities.svg":::
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-identities.svg" alt-text="Diagram of Zero Trust for identity mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-identities.svg":::
 
 In this diagram, Access Control Management is defined in Annexure 9.2.2 of the ISO 27001 requirements standard, User Access Provisioning. The requirements for this section are satisfied by requiring multifactor authentication. 
 
@@ -309,19 +316,19 @@ The execution of each control, like the enforcement of Conditional Access polici
 
 One of the more obvious correlations between Zero Trust architecture and industry standards includes information classification. Annexure 8.2.1 from ISO 27001, dictates that: 
 
-- Information must be classified in terms of legal requirements, value, criticality and sensitivity to any unauthorized disclosure or modification, ideally classified to reflect business activity rather than inhibit or complicate it.
+- Information must be classified in terms of legal requirements, value, criticality, and sensitivity to any unauthorized disclosure or modification, ideally classified to reflect business activity rather than inhibit or complicate it.
 
-:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-data.svg" alt-text="Zero Trust for data mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-data.svg":::
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-data.svg" alt-text="Diagram of Zero Trust for data mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-data.svg":::
 
 In this diagram, the Microsoft Purview data classification service is used to define and apply sensitivity labels to emails, documents, and structured data. 
 
 #### Example 3
 
-Annexure 8.1.1 In ISO 27001:2022 (Inventory of assets) requires that “any assets associated with information and information processing facilities need to be identified and managed over the lifecycle, and are always up to date.”
+Annexure 8.1.1 In ISO 27001:2022 (Inventory of assets) requires that "any assets associated with information and information processing facilities need to be identified and managed over the lifecycle, and are always up to date."
 
 The fulfillment of this control requirement can be achieved through the implementation of Intune device management. This requirement provides a clear account of inventory and reports the status of compliance for each device against defined company or industry policies.
 
-:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-devices.svg" alt-text="Zero Trust for devices mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-devices.svg":::
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-devices.svg" alt-text="Diagram of Zero Trust for devices mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-devices.svg":::
 
 For this control requirement, you use Microsoft Intune to manage devices, including setting up compliance policies to report on the compliance of devices against the policies you set. You can also use Conditional Access policies to require device compliance during the authentication and authorization process.
 
@@ -329,43 +336,45 @@ For this control requirement, you use Microsoft Intune to manage devices, includ
 
 The most comprehensive example of a pillar of Zero Trust that has been mapped to industry standards would be Threat intelligence and Incident response. The entire Microsoft Defender and Microsoft Sentinel breadth of products become applicable in this scenario to provide in-depth analysis and execution of threat intelligence and real-time incident response.
 
-:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-threat-intelligence.svg" alt-text="Zero Trust for threat intelligence mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-threat-intelligence.svg":::
+:::image type="content" source="../media/adoption-guide/regulatory-compliance-example-threat-intelligence.svg" alt-text="Diagram of Zero Trust for threat intelligence mapped to Access Control Management." lightbox="../media/adoption-guide/regulatory-compliance-example-threat-intelligence.svg":::
 
 In this diagram, Microsoft Sentinel together with Microsoft Defender tools provide threat intelligence.
 
 ## Adopt phase
 
-:::image type="content" source="../media/adoption-guide/adopt-phase.svg" alt-text="The adopt phase." lightbox="../media/adoption-guide/adopt-phase.svg":::
+:::image type="content" source="../media/adoption-guide/adopt-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Adopt phase highlighted." lightbox="../media/adoption-guide/adopt-phase.png":::
 
 In the adoption phase, you incrementally implement your technical plans across your digital estate. You'll need to categorize the technical plans by area and work with the corresponding teams to accomplish this phase.
 
 For identity and device access, take a staged approach where you start with a small number of users and devices and then gradually increase the deployment to include your full environment. This is described in the [Secure remote and hybrid work](secure-remote-hybrid-work.md) adoption scenario. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Pilot, evaluate, and full deployment adoption phases." lightbox="../media/adoption-guide/adoption-phases.svg":::
+:::image type="content" source="../media/adoption-guide/adoption-phases.svg" alt-text="Diagram of the pilot, evaluate, and full deployment adoption phases." lightbox="../media/adoption-guide/adoption-phases.svg":::
 
 Adoption for protecting data involves cascading the work and iterating as you go to be sure the policies you create are appropriately honed for your environment. This is described in the [Identify and protect sensitive business data](identify-protect-sensitive-business-data.md) adoption scenario. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/adoption-information-protection.svg" alt-text="Process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.svg":::
+:::image type="content" source="../media/adoption-guide/adoption-information-protection.svg" alt-text="Diagram of the process for technical adoption of information protection." lightbox="../media/adoption-guide/adoption-information-protection.svg":::
 
 ## Govern and manage
+
+:::image type="content" source="../media/adoption-guide/govern-manage-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Govern and manage phase highlighted." lightbox="../media/adoption-guide/govern-manage-phase.png":::
 
 Meeting regulatory and compliance requirements is an ongoing process. As you transition to this phase, shift to tracking and monitoring. Microsoft provides a handful of tools to help.
 
 You can use content explorer to monitor the status of organizational compliance. For data classification, content explorer provides a view of the landscape and spread of sensitive information within your organization. From trainable classifiers to different types of sensitive data—either through adaptive scopes or manually created sensitivity labels—your administrators can see whether the prescribed sensitivity schema is being applied correctly throughout the organization. This is also an opportunity to identify specific areas of risk where sensitive information is consistently shared in Exchange, SharePoint, and OneDrive. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png" alt-text="Example of a content explorer dashboard." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png":::
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png" alt-text="Example screenshot of a content explorer dashboard." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-06.png":::
 
-By using the greater reporting functionality within the Microsoft Purview Compliance portal, you can create and quantify a macro-view of compliance. Here's an example.
+By using the greater reporting functionality within the Microsoft Purview compliance portal, you can create and quantify a macro-view of compliance. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png" alt-text="Example of a macro-view dashboard for Microsoft Purview Compliance." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png":::
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png" alt-text="Example screenshot of a macro-view dashboard for Microsoft Purview Compliance." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-07.png":::
 
 The same thinking and process can be applied to Azure. Use Defender for Cloud-Regulatory Compliance to determine a compliance score similar to the same score provided in the Purview Compliance Manager. The score is aligned to multiple regulatory standards and frameworks across various industry verticals. It's up to your organization to understand which of these regulatory standards and frameworks apply to the score. The status provided by this dashboard displays a constant real-time assessment of passing versus failing assessments with each standard. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png" alt-text="Example of the compliance score in the Microsoft Defender for Cloud portal." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png":::
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png" alt-text="Example screenshot of the compliance score in the Microsoft Defender for Cloud portal." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-08.png":::
 
 The Purview dashboards provide a broad assessment that can help inform your business leaders and be used in departmental reporting, such as a quarterly review. On a more operational note, you can leverage Microsoft Sentinel by creating a Log Analytics workspace for unified audit log data. This workspace can be connected to your Microsoft 365 data and provide insights on user activity. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png" alt-text="Example of data gathered in Microsoft Sentinel for Office 365." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png":::
+:::image type="content" source="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png" alt-text="Example screenshot of data gathered in Microsoft Sentinel for Office 365." lightbox="../media/adoption-guide/article-5-meet-regulatory-and-compliance-requirements-09.png":::
 
 This data is customizable and can be used in conjunction with the other dashboards to contextualize the regulatory requirement specifically aligned to your organization’s strategy, risk profile, goals, and objectives.
 
@@ -383,8 +392,8 @@ For any of the Zero Trust business scenarios, you can use the following progress
 
 | Progress tracking resource | That helps you… | Designed for… |
 | --- | --- | --- |
-| Adoption Scenario Plan Phase Grid downloadable [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf) <br><br> :::image type="content" source="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png" alt-text="Screenshot of an example plan and phase grid." lightbox="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png"::: | Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="Screenshot of a slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="Screenshot of a worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the Plan phase. | Business scenario project leads, IT leads, and IT implementers. |
+| Adoption Scenario Plan Phase Grid downloadable [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf) <br><br> :::image type="content" source="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png" alt-text="An example plan and phase grid showing stages and goals." lightbox="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png"::: | Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
+| Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="An example PowerPoint slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
+| Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="An example of an Excel worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the Plan phase. | Business scenario project leads, IT leads, and IT implementers. |
 
 For additional resources, see [Zero Trust assessment and progress tracking resources](../zero-trust-assessment-progress-tracking-resources.md).

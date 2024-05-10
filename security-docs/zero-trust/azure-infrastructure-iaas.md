@@ -86,7 +86,7 @@ Zero Trust principles are applied across the architecture, from the tenant and d
 | 2 | Isolate infrastructure into its own resource group. | Assume breach |
 | 3 | Create a network security group for each subnet. | Use least privileged access <br> Assume breach |
 | 4 | Create an application security group for each virtual machine role. | Verify explicitly <br> Use least privileged access <br> Assume breach |
-| 5 | Secure traffic and resources within the VNet: <li> Deploy baseline deny rules for network security groups <li> Deploy application specific rules for application security groups <li> Plan for management traffic into the VNet <li> Deploy network security group flow logging | Verify explicitly <br> Use least privileged access <br> Assume breach |
+| 5 | Secure traffic and resources within the VNet: <li> Deploy baseline deny rules for network security groups <li> Deploy application specific rules for application security groups <li> Plan for management traffic into the VNet <li> Deploy network security group flow logging <li> Protect inbound web traffic with IDPS | Verify explicitly <br> Use least privileged access <br> Assume breach |
 | 6 | Secure access to the VNet and application. | Use least privileged access <br> Assume breach |
 | 7 | Enable advanced threat detection, alerting, and protection. | Assume breach |
 
@@ -237,6 +237,10 @@ Read more about [Azure Firewall](/azure/firewall/overview) and [Route Tables](/a
 
 To configure virtual machines with Microsoft Entra Login, Anti-Malware, and automatic updates enabled, you'll need to allow the following outbound connections. Many of these are by FQDN, meaning that either Azure Firewall is needed for FQDN rules, or you'll make a more complex plan. Azure Firewall is recommended.
 
+> [!WARNING]
+> We might want to move these to the hub network instead.
+
+
 The outbound connections are:
 
 - On port 443:
@@ -251,9 +255,9 @@ The outbound connections are:
   - ctldl.windowsupdate.com
   - www.msftconnecttest.com
 - On port 123:
-  - 40.119.6.228
+  - time.windows.com
 - On port 1688:
-  - 40.83.235.53
+  - Azkms.core.windows.net
 
 ### Deploy application specific rules for application security groups
 
@@ -367,6 +371,12 @@ To enable Network Security Group Flow Logging, you can follow the [Tutorial: Log
 > - The storage account should follow the Zero Trust storage account guidance.
 > - Access to the logs should be restricted as needed.
 > - They should also flow in to Log Analytics and Sentinel as needed.
+
+### Protect inbound web traffic with IDPS
+
+In addition to the controls in your spoke virtual network, you can also use an Azure Firewall in order to apply additional inspection.  While the Web Application Firewall function for Azure Front Door and Application Gateway inspects traffic for common web attacks, using Azure Firewall can provide a deeper level of inspection.
+
+To use every signal available and maintain central visibility into network traffic, routing traffic from your Application Gateway to Azure Firewall is recommended.  It can then inspect the traffic for additional signals, and capture the behavior in its logs.  You can read more about this configuration in the article [Zero-trust network for web applications with Azure Firewall and Application Gateway](/azure/architecture/example-scenario/gateway/application-gateway-before-azure-firewall).  For more guidance on how to set up this behavior, see [Configure Azure Firewall Premium for Zero Trust](./azure-infrastructure-networking.md#configure-azure-firewall-premium-for-zero-trust).
 
 ## Step 6: Secure access to the VNet and application
 

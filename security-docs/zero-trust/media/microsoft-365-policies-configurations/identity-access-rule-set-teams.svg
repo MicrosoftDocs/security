@@ -708,13 +708,6 @@
 			<v:textRect cx="360" cy="582.844" width="720" height="16.3125"/>
 			<rect x="0" y="574.688" width="720" height="16.3125" class="st4"/>
 			<text x="653.45" y="589.49" class="st23" v:langID="1033"><v:paragraph v:horizAlign="2"/><v:tabList/>March 2024</text>		</g>
-		<g id="shape3245-178" v:mID="3245" v:groupContext="shape" transform="translate(10.375,-12.9714)">
-			<title>Sheet.3245</title>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(151000):26"/>
-			</v:userDefs>
-			<rect x="0" y="555" width="65.25" height="36" class="st24"/>
-		</g>
 		<g id="shape3246-180" v:mID="3246" v:groupContext="shape" transform="translate(85.9595,-19.4478)">
 			<title>Sheet.3246</title>
 			<desc>Changes from the common identity and device access policies</desc>
@@ -723,6 +716,7 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="18" v:verticalAlign="0"/>
 			<v:textRect cx="75.2052" cy="579.476" width="150.42" height="23.0473"/>
+			<rect x="0" y="567.953" width="150.41" height="23.0473" class="st4"/>
 			<text x="0" y="576.95" class="st25" v:langID="1033"><v:paragraph/><v:tabList/>Changes from the common <tspan x="0"
 						dy="1.2em" class="st7">identity and device access policies</tspan></text>		</g>
 		<g id="shape3247-184" v:mID="3247" v:groupContext="shape" transform="translate(260.162,-29.5)">

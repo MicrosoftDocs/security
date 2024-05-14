@@ -710,13 +710,6 @@
 			</v:userDefs>
 			<ellipse cx="4.47651" cy="581.264" rx="4.47651" ry="4.48606" class="st22"/>
 		</g>
-		<g id="shape3167-180" v:mID="3167" v:groupContext="shape" transform="translate(10.3315,-8.84641)">
-			<title>Sheet.3167</title>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(210000):26"/>
-			</v:userDefs>
-			<rect x="0" y="549.75" width="65.25" height="36" class="st24"/>
-		</g>
 		<g id="shape3168-182" v:mID="3168" v:groupContext="shape" transform="translate(85.916,-15.3228)">
 			<title>Sheet.3168</title>
 			<desc>Changes from the common identity and device access policies</desc>
@@ -725,6 +718,7 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="18" v:verticalAlign="0"/>
 			<v:textRect cx="75.2052" cy="574.226" width="150.42" height="23.0473"/>
+			<rect x="0" y="562.703" width="150.41" height="23.0473" class="st4"/>
 			<text x="0" y="571.7" class="st25" v:langID="1033"><v:paragraph/><v:tabList/>Changes from the common <tspan x="0"
 						dy="1.2em" class="st7">identity and device access policies</tspan></text>		</g>
 		<g id="shape3169-186" v:mID="3169" v:groupContext="shape" transform="translate(350.75,-25.375)">

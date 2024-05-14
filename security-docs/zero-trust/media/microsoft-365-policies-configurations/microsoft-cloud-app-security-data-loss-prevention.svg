@@ -167,7 +167,7 @@
 			<rect x="0" y="390.37" width="138.024" height="130.13" class="st16"/>
 			<text x="4" y="403.37" class="st17" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Alert when files containing <tspan
 						x="4" dy="1.2em" class="st5">this sensitive info type:<v:newlineChar/><v:paragraph v:spAfter="4"/></tspan><tspan
-						x="4" dy="1.6em" class="st5">“</tspan>Credit card Number”<v:newlineChar/><v:paragraph v:spAfter="4"/><tspan
+						x="4" dy="1.6em" class="st5">“</tspan>Credit card number”<v:newlineChar/><v:paragraph v:spAfter="4"/><tspan
 						x="4" dy="1.6em" class="st5">are shared outside the </tspan><tspan x="4" dy="1.2em" class="st5">organization</tspan><v:newlineChar/></text>		</g>
 		<g id="shape3013-55" v:mID="3013" v:groupContext="shape" transform="translate(276.823,-304.88)">
 			<title>Sheet.3013</title>
@@ -227,7 +227,7 @@
 			<rect x="0" y="414.897" width="138.024" height="105.603" class="st16"/>
 			<text x="4" y="427.9" class="st17" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Protect downloads of files <tspan
 						x="4" dy="1.2em" class="st5">containing this sensitive info </tspan><tspan x="4" dy="1.2em" class="st5">type:<v:newlineChar/><v:paragraph
-						x="4" dy="1.6em" class="st5">“</tspan>Credit card Number”<v:newlineChar/><v:paragraph v:spAfter="4"/><tspan
+							v:spAfter="4"/></tspan><tspan x="4" dy="1.6em" class="st5">“</tspan>Credit card number”<v:newlineChar/><v:paragraph
 						v:spAfter="4"/><tspan x="4" dy="1.6em" class="st5">to managed devices</tspan></text>		</g>
 		<g id="shape3019-85" v:mID="3019" v:groupContext="shape" transform="translate(276.823,-192.268)">
 			<title>Sheet.3019</title>
@@ -239,7 +239,7 @@
 			<v:textRect cx="69.0118" cy="467.698" width="138.03" height="105.603"/>
 			<rect x="0" y="414.897" width="138.024" height="105.603" class="st16"/>
 			<text x="4" y="427.9" class="st17" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Block downloads of files <tspan
-						x="4" dy="1.2em" class="st5">containing this sensitive info </tspan><tspan x="4" dy="1.2em" class="st5">type<v:newlineChar/><v:paragraph
+						x="4" dy="1.2em" class="st5">containing this sensitive info </tspan><tspan x="4" dy="1.2em" class="st5">type:<v:newlineChar/><v:paragraph
 							v:spAfter="4"/></tspan><tspan x="4" dy="1.6em" class="st5">“</tspan>Credit card number”<v:newlineChar/><v:paragraph
 						v:spAfter="4"/><tspan x="4" dy="1.6em" class="st5">to unmanaged devices</tspan></text>		</g>
 		<g id="shape3020-92" v:mID="3020" v:groupContext="shape" transform="translate(422.024,-192.268)">

@@ -738,13 +738,6 @@
 			<text x="4" y="468.45" class="st26" v:langID="1033"><v:paragraph/><v:tabList/>New policy:<v:newlineChar/><v:newlineChar/><tspan
 						x="4" dy="2.4em" class="st7">Require multifactor </tspan><tspan x="4" dy="1.2em" class="st7">authentication (MFA) </tspan><tspan
 						x="4" dy="1.2em" class="st19">always</tspan> for guests <tspan x="4" dy="1.2em" class="st7">and external users</tspan><v:newlineChar/><v:newlineChar/></text>		</g>
-		<g id="shape3170-193" v:mID="3170" v:groupContext="shape" transform="translate(11.4565,-8.84641)">
-			<title>Sheet.3170</title>
-			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(156000):26"/>
-			</v:userDefs>
-			<rect x="0" y="549.75" width="65.25" height="36" class="st27"/>
-		</g>
 		<g id="shape3171-195" v:mID="3171" v:groupContext="shape" transform="translate(87.041,-15.3228)">
 			<title>Sheet.3171</title>
 			<desc>Changes from the common identity and device access policies</desc>
@@ -753,6 +746,7 @@
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="18" v:verticalAlign="0"/>
 			<v:textRect cx="75.2052" cy="574.226" width="150.42" height="23.0473"/>
+			<rect x="0" y="562.703" width="150.41" height="23.0473" class="st4"/>
 			<text x="0" y="571.7" class="st28" v:langID="1033"><v:paragraph/><v:tabList/>Changes from the common <tspan x="0"
 						dy="1.2em" class="st7">identity and device access policies</tspan></text>		</g>
 		<g id="shape3172-199" v:mID="3172" v:groupContext="shape" transform="translate(301.268,-25.375)">

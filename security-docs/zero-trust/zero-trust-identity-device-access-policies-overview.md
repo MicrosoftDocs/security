@@ -107,7 +107,7 @@ Each industry also has their own set of specialized regulations. We aren't tryin
 - **Enterprise**: Some customers have a subset of data that must be protected at higher levels, or all data must be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.
 - **Specialized security**: As needed, a few customers have a small amount of data that is highly classified, constitutes trade secrets, or is regulated. Microsoft provides capabilities to help these customers meet these requirements, including added protection for identities and devices.
 
-:::image type="content" source="media/microsoft-365-policies-configurations/m365-id-quality-three-tiers.png" alt-text="Screenshot of the Security cone." lightbox="media/microsoft-365-policies-configurations/m365-id-quality-three-tiers.png":::
+:::image type="content" source="media/microsoft-365-policies-configurations/m365-id-quality-three-tiers.png" alt-text="Screenshot of the Security cone showing customer range." lightbox="media/microsoft-365-policies-configurations/m365-id-quality-three-tiers.png":::
 
 This guidance shows you how to implement Zero Trust protection for identities and devices for each of these levels of protection. Use this guidance as a minimum for your organization and adjust the policies to meet your organization's specific requirements.
 

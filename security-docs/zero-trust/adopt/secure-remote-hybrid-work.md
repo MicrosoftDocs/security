@@ -326,7 +326,7 @@ As you plan and stage the layers of protection to build Zero Trust, take advanta
 
 Here are the policies for three levels of protection.
 
-:::image type="content" source="../media/identity-device-access-policies-by-plan.svg" alt-text="Diagram of the Zero Trust identity and device access policies showing the three levels of protection." lightbox="../media/identity-device-access-policies-by-plan.svg":::
+:::image type="content" source="../media/identity-device-access-policies-byplan.svg" alt-text="Diagram of the Zero Trust identity and device access policies showing the three levels of protection." lightbox="../media/identity-device-access-policies-byplan.svg":::
 
 This policy set includes a **Starting point** protection level with minimal user impact. This set of policies doesn't require enrolling devices into management. When you’re ready and you’ve enrolled devices, you can then deploy the **Enterprise** level, which is recommended for Zero Trust. 
 

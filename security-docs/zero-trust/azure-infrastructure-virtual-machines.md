@@ -198,7 +198,7 @@ When configuring multifactor authentication with conditional access and related 
 
 The following diagram shows the recommended policies for Zero Trust.
 
-:::image type="content" source="media/identity-device-access-policies-by-plan.svg" alt-text="Zero Trust identity and device access policies for three protection levels: Starting point, Enterprise, and Specialized security." lightbox="media/identity-device-access-policies-by-plan.svg":::
+:::image type="content" source="media/identity-device-access-policies-byplan.svg" alt-text="Zero Trust identity and device access policies for three protection levels: Starting point, Enterprise, and Specialized security." lightbox="media/identity-device-access-policies-byplan.svg":::
 
 Remember that usernames and passwords can be 100% compromised. Using multifactor authentication, you reduce your risk of compromise by 99.9%. This requires Microsoft Entra ID P1 licenses.
 

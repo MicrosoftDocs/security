@@ -158,7 +158,7 @@
 						x="0" dy="1.256em" class="st15">Zero Trust)</tspan></text>		</g>
 		<g id="shape3012-48" v:mID="3012" v:groupContext="shape" transform="translate(131.622,-304.88)">
 			<title>Sheet.3012</title>
-			<desc>Alert when files containing this sensitive info type “Credit ...</desc>
+			<desc>Alert when files containing this sensitive info type: “Credit ...</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(33000):26"/>
 			</v:userDefs>
@@ -166,8 +166,8 @@
 			<v:textRect cx="69.0118" cy="455.435" width="138.03" height="130.13"/>
 			<rect x="0" y="390.37" width="138.024" height="130.13" class="st16"/>
 			<text x="4" y="403.37" class="st17" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Alert when files containing <tspan
-						x="4" dy="1.2em" class="st5">this sensitive info type<v:newlineChar/><v:paragraph v:spAfter="4"/></tspan><tspan
-						x="4" dy="1.6em" class="st5">“</tspan>Credit Card Number”<v:newlineChar/><v:paragraph v:spAfter="4"/><tspan
+						x="4" dy="1.2em" class="st5">this sensitive info type:<v:newlineChar/><v:paragraph v:spAfter="4"/></tspan><tspan
+						x="4" dy="1.6em" class="st5">“</tspan>Credit card Number”<v:newlineChar/><v:paragraph v:spAfter="4"/><tspan
 						x="4" dy="1.6em" class="st5">are shared outside the </tspan><tspan x="4" dy="1.2em" class="st5">organization</tspan><v:newlineChar/></text>		</g>
 		<g id="shape3013-55" v:mID="3013" v:groupContext="shape" transform="translate(276.823,-304.88)">
 			<title>Sheet.3013</title>
@@ -180,8 +180,8 @@
 			<rect x="0" y="390.37" width="138.024" height="130.13" class="st16"/>
 			<text x="4" y="403.37" class="st17" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Block downloads of files <tspan
 						x="4" dy="1.2em" class="st5">containing this sensitive info </tspan><tspan x="4" dy="1.2em" class="st5">type:<v:newlineChar/><v:paragraph
-							v:spAfter="4"/></tspan><tspan x="4" dy="1.6em" class="st5">“</tspan>Credit Card Number”<v:newlineChar/><v:paragraph
-						v:spAfter="4"/><tspan x="4" dy="1.6em" class="st5">To unmanaged devices</tspan><v:newlineChar/></text>		</g>
+							v:spAfter="4"/></tspan><tspan x="4" dy="1.6em" class="st5">“</tspan>Credit card Number”<v:newlineChar/><v:paragraph
+						v:spAfter="4"/><tspan x="4" dy="1.6em" class="st5">to unmanaged devices</tspan><v:newlineChar/></text>		</g>
 		<g id="shape3014-62" v:mID="3014" v:groupContext="shape" v:layerMember="0" transform="translate(112.567,-139.69)">
 			<title>Arrow 1 - gray.1148</title>
 			<v:userDefs>
@@ -191,7 +191,7 @@
 		</g>
 		<g id="shape3015-65" v:mID="3015" v:groupContext="shape" transform="translate(131.622,-78.5911)">
 			<title>Sheet.3015</title>
-			<desc>Alert when files with this label “Highly classified” are down...</desc>
+			<desc>Alert when files with this label: “Highly classified” are down...</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(36000):26"/>
 			</v:userDefs>
@@ -199,7 +199,7 @@
 			<v:textRect cx="69.0118" cy="467.002" width="138.03" height="106.996"/>
 			<rect x="0" y="413.504" width="138.024" height="106.996" class="st16"/>
 			<text x="4" y="426.5" class="st17" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Alert when files with this <tspan
-						x="4" dy="1.2em" class="st5">label<v:newlineChar/></tspan><tspan x="4" dy="1.6em" class="st5">“</tspan>Highly classified”<v:newlineChar/><tspan
+						x="4" dy="1.2em" class="st5">label:<v:newlineChar/></tspan><tspan x="4" dy="1.6em" class="st5">“</tspan>Highly classified”<v:newlineChar/><tspan
 						x="4" dy="1.6em" class="st5">are downloaded to managed </tspan><tspan x="4" dy="1.2em" class="st5">devices</tspan><v:newlineChar/></text>		</g>
 		<g id="group3016-72" transform="translate(276.823,-78.5911)" v:mID="3016" v:groupContext="group">
 			<v:userDefs>
@@ -208,12 +208,12 @@
 			<title>Sheet.3016</title>
 			<g id="shape3017-73" v:mID="3017" v:groupContext="shape">
 				<title>Sheet.3017</title>
-				<desc>Block downloads of files with this label “Highly classified” ...</desc>
+				<desc>Block downloads of files with this label: “Highly classified” ...</desc>
 				<v:textBlock v:margins="rect(4,4,4,4)" v:verticalAlign="0"/>
 				<v:textRect cx="69.0118" cy="467.002" width="138.03" height="106.996"/>
 				<rect x="0" y="413.504" width="138.024" height="106.996" class="st16"/>
 				<text x="4" y="426.5" class="st17" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Block downloads of files with <tspan
-							x="4" dy="1.2em" class="st5">this label<v:newlineChar/></tspan><tspan x="4" dy="1.6em" class="st5">“</tspan>Highly classified” <v:newlineChar/><tspan
+							x="4" dy="1.2em" class="st5">this label:<v:newlineChar/></tspan><tspan x="4" dy="1.6em" class="st5">“</tspan>Highly classified” <v:newlineChar/><tspan
 							x="4" dy="1.6em" class="st5">to unmanaged devices</tspan></text>			</g>
 		</g>
 		<g id="shape3018-79" v:mID="3018" v:groupContext="shape" transform="translate(131.622,-192.268)">
@@ -226,11 +226,12 @@
 			<v:textRect cx="69.0118" cy="467.698" width="138.03" height="105.603"/>
 			<rect x="0" y="414.897" width="138.024" height="105.603" class="st16"/>
 			<text x="4" y="427.9" class="st17" v:langID="1033"><v:paragraph v:spAfter="4"/><v:tabList/>Protect downloads of files <tspan
-						x="4" dy="1.2em" class="st5">containing this sensitive info </tspan><tspan x="4" dy="1.2em" class="st5">type: &#34;Credit card number</tspan>”<v:newlineChar/><v:paragraph
+						x="4" dy="1.2em" class="st5">containing this sensitive info </tspan><tspan x="4" dy="1.2em" class="st5">type:<v:newlineChar/><v:paragraph
+						x="4" dy="1.6em" class="st5">“</tspan>Credit card Number”<v:newlineChar/><v:paragraph v:spAfter="4"/><tspan
 						v:spAfter="4"/><tspan x="4" dy="1.6em" class="st5">to managed devices</tspan></text>		</g>
 		<g id="shape3019-85" v:mID="3019" v:groupContext="shape" transform="translate(276.823,-192.268)">
 			<title>Sheet.3019</title>
-			<desc>Block downloads of files containing this sensitive info type ...</desc>
+			<desc>Block downloads of files containing this sensitive info type: ...</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(39000):26"/>
 			</v:userDefs>

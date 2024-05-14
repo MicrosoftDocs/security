@@ -27,17 +27,17 @@ ms.date: 1/31/2023
 
 # Policy recommendations for securing SharePoint sites and files
 
-This article describes how to implement the recommended Zero Trust identity and device access policies to protect SharePoint and OneDrive for Business. This guidance builds on the [common identity and device access policies](zero-trust-identity-device-access-policies-common.md).
+This article describes how to implement the recommended Zero Trust identity and device access policies to protect SharePoint and OneDrive. This guidance builds on the [common identity and device access policies](zero-trust-identity-device-access-policies-common.md).
 
 These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **starting point**, **enterprise**, and **specialized security**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in [the overview](zero-trust-identity-device-access-policies-overview.md).
 
 In addition to implementing this guidance, be sure to configure SharePoint sites with the right amount of protection, including setting appropriate permissions for enterprise and specialized security content.
 
-## Updating common policies to include SharePoint and OneDrive for Business
+## Updating common policies to include SharePoint and OneDrive
 
 To protect files in SharePoint and OneDrive, the following diagram illustrates which policies to update from the common identity and device access policies.
 
-:::image type="content" source="media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.svg" alt-text="The summary of policy updates for protecting the access to SharePoint" lightbox="media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.svg":::
+:::image type="content" source="media/microsoft-365-policies-configurations/identity-access-rule-set-sharepoint.svg" alt-text="Diagram that shows the summary of policy updates for protecting the access to SharePoint" lightbox="media/microsoft-365-policies-configurations/identity-access-rule-set-sharepoint.svg":::
 
 If you included SharePoint when you created the common policies, you only need to create the new policies. For Conditional Access policies, SharePoint includes OneDrive.
 
@@ -78,7 +78,7 @@ It's important to understand that SharePoint site permissions are typically base
 
 The following illustration provides an example of how SharePoint device access policies protect access to sites for a user.
 
-:::image type="content" source="media/microsoft-365-policies-configurations/sharepoint-rules-scenario.svg" alt-text="An example of how SharePoint device access policies protect sites" lightbox="media/microsoft-365-policies-configurations/sharepoint-rules-scenario.svg":::
+:::image type="content" source="media/microsoft-365-policies-configurations/sharepoint-rules-scenario.svg" alt-text="Diagram that shows an example of how SharePoint device access policies protect sites." lightbox="media/microsoft-365-policies-configurations/sharepoint-rules-scenario.svg":::
 
 James has starting point Conditional Access policies assigned, but he can be given access to SharePoint sites with enterprise or specialized security protection.
 
@@ -88,7 +88,7 @@ James has starting point Conditional Access policies assigned, but he can be giv
 
 ## Next step
 
-:::image type="content" source="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="The Step 4 - Policies for Microsoft 365 cloud apps" lightbox="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+:::image type="content" source="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Screenshot of the Step 4 - Policies for Microsoft 365 cloud apps." lightbox="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Configure Conditional Access policies for:
 

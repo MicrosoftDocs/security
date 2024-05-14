@@ -440,7 +440,7 @@
 				xlink:href="https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies?view=o365-worldwide#require-mfa-based-on-sign-in-risk">
 			<g id="shape3092-80" v:mID="3092" v:groupContext="shape" transform="translate(187.04,-56.9563)">
 				<title>Sheet.3092</title>
-				<desc>Require MFA always This is also available for all Office 365 ...</desc>
+				<desc>Require MFA always This is also available for all Microsoft 365 ...</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(111000):26"/>
 				</v:userDefs>
@@ -449,7 +449,7 @@
 				<rect x="0" y="494.879" width="104.035" height="90.8708" class="st16"/>
 				<text x="8" y="510.3" class="st15" v:langID="1033"><v:paragraph v:spLine="-1.1"/><v:tabList/>Require MFA <tspan
 							class="st17">always<v:newlineChar/><v:newlineChar/></tspan><tspan x="8" dy="2.2em" class="st7">This is also available </tspan><tspan
-							x="8" dy="1.1em" class="st7">for all Office 365 </tspan><tspan x="8" dy="1.1em" class="st7">Enterprise plans.</tspan></text>			</g>
+							x="8" dy="1.1em" class="st7">for all Microsoft 365 </tspan><tspan x="8" dy="1.1em" class="st7">Enterprise plans.</tspan></text>			</g>
 		</a>
 		<g id="shape3093-87" v:mID="3093" v:groupContext="shape" v:layerMember="1" transform="translate(275.298,-324.693)">
 			<title>Sheet.3093</title>
@@ -494,7 +494,7 @@
 			<v:textRect cx="117" cy="574.226" width="234" height="23.0473"/>
 			<rect x="0" y="562.703" width="234" height="23.0473" class="st4"/>
 			<text x="0" y="571.7" class="st19" v:langID="1033"><v:paragraph/><v:tabList/>Requires Microsoft 365 E5, Microsoft 365 E3 with the <tspan
-						x="0" dy="1.2em" class="st7">Identity add</tspan>-on, Office 365 with EMS E5, or <tspan x="0" dy="1.2em"
+						x="0" dy="1.2em" class="st7">Identity add</tspan>-on, Microsoft 365 with EMS E5, or <tspan x="0" dy="1.2em"
 						class="st7">individual </tspan><tspan class="st20">Microsoft Entra ID P2 licenses</tspan></text>		</g>
 		<g id="shape3098-105" v:mID="3098" v:groupContext="shape" transform="translate(24.7315,-22.2063)">
 			<title>Sheet.3098</title>

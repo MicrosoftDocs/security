@@ -101,7 +101,7 @@
       - name: Overview
         href: zero-trust-identity-device-access-policies-overview.md
       - name: Prerequisite work
-        href: zero-trust-identity-device-access-policies-prereq.md
+        href: zero-trust-identity-device-access-policies-prerequisite.md
       - name: Common identity and device access policies
         href: zero-trust-identity-device-access-policies-common.md
       - name: Policies for guest and external users

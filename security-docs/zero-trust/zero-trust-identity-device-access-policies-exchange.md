@@ -38,9 +38,9 @@ These recommendations require your users to use modern email clients, including 
 
 To protect email, the following diagram illustrates which policies to update from the common identity and device access policies.
 
-:::image type="content" source="media/microsoft-365-policies-configurations/identity-access-rule-set-mail.svg" alt-text="Diagram that shows the summary of policy updates for protecting access to Microsoft Exchange." lightbox="media/microsoft-365-policies-configurations/identity-access-rule-set-mail.svg":::
+:::image type="content" source="media/microsoft-365-policies-configurations/identity-access-ruleset-mail.svg" alt-text="The summary of policy updates for protecting access to Microsoft Exchange" lightbox="media/microsoft-365-policies-configurations/identity-access-ruleset-mail.svg":::
 
-Note that the addition of a new policy for Exchange Online to block ActiveSync clients. This policy forces the use of Outlook for iOS and Android on mobile devices.
+Note the addition of a new policy for Exchange Online to block ActiveSync clients. This policy forces the use of Outlook for iOS and Android on mobile devices.
 
 If you included Exchange Online and Outlook in the scope of the policies when you set them up, you only need to create the new policy to block ActiveSync clients. Review the policies listed in the following table and either make the recommended additions, or confirm that these settings are already included. Each policy links to the associated configuration instructions in [Common identity and device access policies](zero-trust-identity-device-access-policies-common.md).
 
@@ -129,7 +129,7 @@ For more information, see [Set up Message Encryption](/purview/set-up-new-messag
 
 ## Next steps
 
-:::image type="content" source="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Screenshot of the policies for Microsoft 365 cloud apps." lightbox="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+:::image type="content" source="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="The Policies for Microsoft 365 cloud apps" lightbox="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Configure Conditional Access policies for:
 

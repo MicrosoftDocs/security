@@ -36,7 +36,7 @@ Providing a path for B2B accounts to authenticate with your Microsoft Entra tena
 
 This diagram shows which policies to add or update among the common identity and device access policies, for B2B guest and external user access.
 
-:::image type="content" source="media/microsoft-365-policies-configurations/identity-access-rule-set-guest.svg" alt-text="Diagram that shows the summary of policy updates for protecting guest access." lightbox="media/microsoft-365-policies-configurations/identity-access-rule-set-guest.svg":::
+:::image type="content" source="media/microsoft-365-policies-configurations/identity-access-ruleset-guest.svg" alt-text="The summary of policy updates for protecting guest access" lightbox="media/microsoft-365-policies-configurations/identity-access-ruleset-guest.svg":::
 
 The following table lists the policies you either need to create and update. The common policies link to the associated configuration instructions in the [Common identity and device access policies](zero-trust-identity-device-access-policies-common.md) article.
 
@@ -47,7 +47,7 @@ The following table lists the policies you either need to create and update. The
 
 To include or exclude guests and external users in Conditional Access policies, for **Assignments > Users and groups > Include** or **Exclude**, check **All guest and external users**.
 
-:::image type="content" source="media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png" alt-text="Screenshot of the controls for excluding guests and external users." lightbox="media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png":::
+:::image type="content" source="media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png" alt-text="The controls for excluding guests and external users" lightbox="media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png":::
 
 ## More information
 
@@ -79,7 +79,7 @@ Only one organization can manage a device. If you don't exclude guests and exter
 
 ## Next step
 
-:::image type="content" source="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Screenshot of the policies for Microsoft 365 cloud apps and Microsoft Defender for Cloud Apps." lightbox="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+:::image type="content" source="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="The Policies for Microsoft 365 cloud apps and Microsoft Defender for Cloud Apps" lightbox="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 Configure Conditional Access policies for:
 

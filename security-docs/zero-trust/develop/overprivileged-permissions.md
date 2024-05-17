@@ -25,7 +25,7 @@ In this article, you learn why applications shouldn't request more permissions t
 
 For this unused key example, imagine that there are three locked doors (blue, yellow, and green) as shown in the following diagram.
 
-:::image type="content" source="../media/develop/overprivileged-permissions/diagram-unused-key-inline.png" alt-text="Diagram described in article content shows three doors with corresponding keys." lightbox="../media/develop/overprivileged-permissions/diagram-unused-key-expanded.png":::
+:::image type="content" source="../media/develop/overprivileged-permissions/diagram-unused-key-inline.png" alt-text="Diagram shows three doors with corresponding keys to illustrate unused permissions." lightbox="../media/develop/overprivileged-permissions/diagram-unused-key-expanded.png":::
 
 Your assets are behind the doors. You have three keys (blue, yellow, and green) that allow you to open its corresponding door. For example, the blue key can open the blue door. When you only need access to the yellow door, you only carry the yellow key.
 
@@ -35,7 +35,7 @@ To best protect your assets, you only carry the keys you need when you need them
 
 The reducible keys example is more complicated than the unused key example to which we now add two special keys as shown in the following diagram.
 
-:::image type="content" source="../media/develop/overprivileged-permissions/diagram-reducible-key-inline.png" alt-text="Diagram described in article content shows three doors with corresponding keys." lightbox="../media/develop/overprivileged-permissions/diagram-reducible-key-expanded.png":::
+:::image type="content" source="../media/develop/overprivileged-permissions/diagram-reducible-key-inline.png" alt-text="Diagram shows three doors with corresponding keys to illustrate reducible permissions." lightbox="../media/develop/overprivileged-permissions/diagram-reducible-key-expanded.png":::
 
 The first black key is a pass key that can open all the doors. The second black key can open the yellow and the green doors. When you only need access to the yellow and the green doors, you only carry the second black key. You keep your pass key in a safe location with the redundant green key.
 

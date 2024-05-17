@@ -1,29 +1,29 @@
 ---
-title: Authenticating users for Zero Trust
+title: Authenticate users for Zero Trust
 description: This article helps developers to learn best practices for authenticating application users in Zero Trust application development. It describes how to enhance application security with the Zero Trust principles of least privilege and verify explicitly.
 author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 04/17/2024
+ms.date: 05/24/2024
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to learn best practices for authenticating my application users in Zero Trust application development so that I can enhance application security with the principles of least privilege and verify explicitly.
 ---
-# Authenticating users for Zero Trust
+# Authenticate users for Zero Trust
 
-This article helps you, as a developer, to learn best practices for authenticating your application users in [Zero Trust application development](/azure/active-directory/develop/zero-trust-for-developers). Always enhance your application security with the Zero Trust principles of [least privilege and verify explicitly](/azure/active-directory/develop/secure-least-privileged-access).
+This article helps you, as a developer, to learn best practices for authenticating your application users in [Zero Trust application development](/entra/identity-platform/zero-trust-for-developers). Always enhance your application security with the Zero Trust principles of [least privilege and verify explicitly](/entra/identity-platform/secure-least-privileged-access).
 
 ## ID tokens in user authentication
 
-When you need a user authenticate to your app, rather than collecting a username and password, your application can request an [identity (ID) token](/azure/active-directory/develop/id-tokens). Authenticating users through the [Microsoft identity platform](/azure/active-directory/develop/v2-overview) avoids security risks that arise when your application retains user credentials. When you request ID tokens, if a bad actor breaches or compromises your application, there are no usernames and corresponding passwords, secrets, and certificates in your app.
+When you need a user to authenticate to your app, rather than collecting a username and password, your application can request an [identity (ID) token](/entra/identity-platform/id-tokens). Authenticating users through the [Microsoft identity platform](/entra/identity-platform/v2-overview) avoids security risks that arise when your application retains user credentials. When you request ID tokens, if a bad actor breaches or compromises your application, there are no usernames and corresponding passwords in your app.
 
-The Microsoft identity platform ID token is part of the [OpenID Connect](/azure/active-directory/fundamentals/auth-oidc) (OIDC) standard that specifies ID tokens as [JSON Web Tokens](/azure/active-directory/develop/security-tokens) (JWT). The JWT long string comprises three components:
+The Microsoft identity platform ID token is part of the [OpenID Connect](/entra/architecture/auth-oidc) (OIDC) standard that specifies ID tokens as [JSON Web Tokens](/entra/identity-platform/security-tokens) (JWT). The JWT long string comprises three components:
 
-1. [Header claims](/azure/active-directory/develop/id-tokens#header-claims). The header claims present in ID tokens include `typ` (type claim), `alg` (algorithm for signing the token), and `kid` (thumbprint for the public key to validate the token\'s signature).
-1. [Payload claims](/azure/active-directory/develop/id-tokens#payload-claims). The payload or body (the middle part of a JSON web token) contains a series of name attribute pairs. The standard requires that there be a claim with the `iss` (issuer name) that goes to the application that issued the claim (the `aud`, or audience claim).
-1. [Signature](/azure/active-directory/develop/access-tokens#validating-the-signature). Microsoft Entra ID generates the token signature that apps can use to validate that the token is unmodified and you can trust it.
+1. [Header claims](/entra/identity-platform/id-tokens#header-claims). The header claims present in ID tokens include `typ` (type claim), `alg` (algorithm for signing the token), and `kid` (thumbprint for the public key to validate the token\'s signature).
+1. [Payload claims](/entra/identity-platform/id-tokens#payload-claims). The payload or body (the middle part of a JSON web token) contains a series of name attribute pairs. The standard requires that there be a claim with the `iss` (issuer name) that goes to the application that was issued the token (the `aud`, or audience claim).
+1. [Signature](/entra/identity-platform/access-tokens#validating-the-signature). Microsoft Entra ID generates the token signature that apps can use to validate that the token is unmodified and you can trust it.
 
 The following example of an ID token shows information about the user and confirms authentication to use the application.
 
@@ -51,9 +51,9 @@ The following example of an ID token shows information about the user and confir
 
 ## ID tokens in access management
 
-To receive your application (client) ID, [register your app](app-registration.md) with the Microsoft identity platform. When you receive a token with an audience claim (`aud`) that matches your app's client ID, the identified user in the token has authenticated to your app. IT admins may allow all users in the tenant to use your app. They may allow a group of which the user is a member to use your app.
+To receive your application (client) ID, [register your app](app-registration.md) with the Microsoft identity platform. When you receive a token with an audience claim (`aud`) that matches your app's client ID, the identified user in the token authenticated to your app. IT admins might allow all users in the tenant to use your app. They might allow a group of which the user is a member to use your app.
 
-If you receive a token whose audience claim is different from your app's client ID, immediately reject the token. The user hasn't authenticated by signing into your app. They signed into another app. Always make sure that the user has permission to use your app.
+If you receive a token whose audience claim is different from your app's client ID, immediately reject the token. The user isn't authenticated to your app because they signed into another app. Always make sure that the user has permission to use your app.
 
 These claims details are important in user authentication:
 
@@ -65,23 +65,23 @@ These claims details are important in user authentication:
 
 ## Authentication with OIDC
 
-To demonstrate user authentication, let's look at applications that use OIDC to authenticate a user. The same principles apply to apps that use SAML or WS-Federation.
+To demonstrate user authentication, let's look at applications that use OIDC to authenticate a user. The same principles apply to apps that use Security Assertion Markup Language (SAML) or WS-Federation.
 
 An app authenticates the user when the application requests an ID token from the Microsoft identity platform. Workloads (applications that don't have users present but rather run as services, background processes, daemons) skip this step.
 
-You should always silently ask for this token first. To silently acquire a token in [Microsoft Authentication Libraries](/azure/active-directory/develop/msal-overview) (MSAL), your app can start with the `AcquireTokenSilent` method. If your app can authenticate without disturbing the user, it receives the requested ID token.
+You should always silently ask for this token first. To silently acquire a token in [Microsoft Authentication Libraries](/entra/identity-platform/msal-overview) (MSAL), your app can start with the `AcquireTokenSilent` method. If your app can authenticate without disturbing the user, it receives the requested ID token.
 
 If the Microsoft identity platform can't complete the request without interacting with the user, then your app needs to fall back to the MSAL `AcquireTokenInteractive` method. To interactively acquire a token, perform the request by opening a web surface to an address under the `https://login.microsoftonline.com` domain.
 
-From this web surface, the user has a private conversation with the Microsoft identity platform. Your app has no view into this conversation, nor does it have any control of the conversation. The Microsoft identity platform can ask for a user ID and password, multifactor authentication (MFA), passwordless authentication, or other authentication interaction that the IT admin or user has configured.
+From this web surface, the user has a private conversation with the Microsoft identity platform. Your app has no view into this conversation, nor does it have any control of the conversation. The Microsoft identity platform can ask for a user ID and password, multifactor authentication (MFA), passwordless authentication, or other authentication interaction that the IT admin or user configured.
 
-Your application will receive an ID token after the user has performed required authentication steps. When your app receives the token, you can be certain that the Microsoft identity platform has authenticated the user. If your app doesn't receive an ID token, the Microsoft identity platform hasn't authenticated the user. Don't allow unauthenticated users to continue into secured areas of your app.
+Your application will receive an ID token after the user performed required authentication steps. When your app receives the token, you can be certain that the Microsoft identity platform authenticated the user. If your app doesn't receive an ID token, the Microsoft identity platform didn't authenticate the user. Don't allow unauthenticated users to continue into secured areas of your app.
 
 It's best practice for applications to create a session for a user after it receives an ID token from Microsoft Entra ID. In the ID token that an app receives, an expiration (`exp`) claim with a Unix timestamp. This timestamp specifies the *on or after* expiration time for which the app mustn't accept the JWT for processing. Use this token expiration time to drive the lifetime of your user sessions. The `exp` claim plays a crucial role in keeping an explicitly verified user in front of the app with the right privilege and for the right amount of time.
 
 ## Single Sign On support
 
-[Single sign-on](/azure/active-directory/manage-apps/what-is-single-sign-on) (SSO) authentication allows users to sign in with one set of credentials to multiple independent software systems. SSO allows application developers to not require a user to sign in to every application separately and repeatedly. At the core of SSO, developers ensure that all applications on the user's device share the web surface that authenticates the user. Artifacts on the web surface (such as session state and cookies) after successful authentication drive SSO.
+[Single sign-on](/entra/identity/enterprise-apps/what-is-single-sign-on) (SSO) authentication allows users to sign in with one set of credentials to multiple independent software systems. SSO allows application developers to not require a user to sign in to every application separately and repeatedly. At the core of SSO, developers ensure that all applications on the user's device share the web surface that authenticates the user. Artifacts on the web surface (such as session state and cookies) after successful authentication drive SSO.
 
 As illustrated in the following diagram, the simplest use case of a shared web surface is an app that's running in a web browser (such as Microsoft Edge, Google Chrome, Firefox, Safari). Browser tabs share the SSO state.
 
@@ -89,7 +89,7 @@ As illustrated in the following diagram, the simplest use case of a shared web s
    Diagram title: Web browser – simplest case. Appearing at the top center of the diagram is a cloud shape containing a Microsoft Entra ID icon. Below the cloud shape is a box. Connecting the cloud shape and the box is a line with an arrow on each end. The box label is "Keep me signed in, saves SSO state cookies across invocations." Inside the box, on the left side, is an icon that looks like a cookie. Below the cookie, the caption is "Private conversation with the user." Below the caption is an icon that represents the user. To the left of these three components, inside the box, is another box. The internal box label is "Tabs." Below the label are four square boxes that represent browser windows in tabs.
 :::image-end:::
 
-The Microsoft identity platform manages the SSO state in any specific browser unless the user has different browsers open on the same device. On Windows 10 and newer, the Microsoft identity platform natively supports browser SSO in Internet Explorer and Microsoft Edge. When the user has signed into Windows, accommodations in Google Chrome (via the Windows 10 accounts extension) and in Mozilla Firefox v91+ (via a browser setting) allow each browser to share the SSO state.
+The Microsoft identity platform manages the SSO state in any specific browser unless the user has different browsers open on the same device. On Windows 10 and newer, the Microsoft identity platform natively supports browser SSO Microsoft Edge. When the user signed into Windows, accommodations in Google Chrome (via the Windows 10 accounts extension) and in Mozilla Firefox v91+ (via a browser setting) allow each browser to share the SSO state of Windows itself.
 
 As shown in the following diagram, the native application use case is more complicated.
 
@@ -107,16 +107,16 @@ A common pattern is for each native app to have its own embedded WebView that pr
 
 With an auth broker in place, applications send authentication requests to the broker instead of directly to the Microsoft identity platform. In this way, the broker becomes the shared surface for all authentication on the device.
 
-In addition to providing a shared surface, the auth broker provides other benefits. When adopting Zero Trust, enterprises may want to have applications run only from enterprise managed devices. Examples of enterprise device management include full Mobile Device Management (MDM) and scenarios where users bring their own devices that participate in Mobile Application Management (MAM).
+In addition to providing a shared surface, the auth broker provides other benefits. When adopting Zero Trust, enterprises might want to have applications run only from enterprise managed devices. Examples of enterprise device management include full Mobile Device Management (MDM) and scenarios where users bring their own devices that participate in Mobile Application Management (MAM).
 
 By design, underlying operating systems (OS) isolate browsers. Developers need a closer connection with the OS to have full access to device details. In Windows, the auth broker is the Windows [Web Account Manager](/windows/uwp/security/web-account-manager) (WAM). On other devices, the auth broker is either the Microsoft Authenticator app (for devices running iOS or Android) or the Company Portal App (for devices running Android). Applications access the auth broker with MSAL. In Windows, an app can access the WAM without MSAL. However, MSAL is the easiest way for apps to access the auth broker (especially apps that aren't Universal Windows Platform apps).
 
-Auth brokers work in combination with Microsoft Entra ID to utilize [Primary Refresh Tokens](/azure/active-directory/devices/concept-primary-refresh-token) (PRT) that reduce the need for users to authenticate multiple times. PRTs can determine whether the user is on a managed device. Microsoft Entra ID requires auth brokers as it introduces [Proof of Possession tokens](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Proof-Of-Possession-(PoP)-tokens), a more secure option over the bearer tokens that are prevalent today.
+Auth brokers work in combination with Microsoft Entra ID to utilize [Primary Refresh Tokens](/entra/identity/devices/concept-primary-refresh-token) (PRT) that reduce the need for users to authenticate multiple times. PRTs can determine whether the user is on a managed device. Microsoft Entra ID requires auth brokers as it introduces [Proof of Possession tokens](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Proof-Of-Possession-(PoP)-tokens), a more secure option over the bearer tokens that are prevalent today.
 
 ## Next steps
 
-- [Troubleshoot Microsoft Entra access tokens: Validate an access token](/azure/databricks/dev-tools/api/latest/aad/troubleshoot-aad-token#validate-an-access-token) describes how, when you have a Microsoft Entra access token, you verify that certain fields match the record.
-- The [Increase resilience of authentication and authorization applications you develop](/azure/active-directory/fundamentals/resilience-app-development-overview) article series addresses apps that use the Microsoft identity platform and Microsoft Entra ID. They include guidance for client and service applications that work on behalf of a signed in user and daemon applications that work on their own behalf. They contain best practices for using tokens and calling resources.
-- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens and how you can customize tokens.
-- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles.
-- [Building apps that secure identity through permissions and consent](identity.md) provides an overview of permissions and access best practices.
+- [Troubleshoot Microsoft Entra access tokens: Validate an access token](/azure/databricks/dev-tools/troubleshoot-aad-token#validate-an-access-token) describes how, when you have a Microsoft Entra access token, you verify that certain fields match the record.
+- [Increase resilience of authentication and authorization applications you develop](/entra/architecture/resilience-app-development-overview) series addresses apps that use the Microsoft identity platform and Microsoft Entra ID. They include guidance for client and service applications that work on behalf of a signed in user and daemon applications that work on their own behalf. They contain best practices for using tokens and calling resources.
+- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens and how you can customize tokens.
+- [Configure group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles.
+- [Build apps that secure identity through permissions and consent](identity.md) provides an overview of permissions and access best practices.

@@ -1,31 +1,31 @@
 ---
-title: Reducing overprivileged permissions and apps
+title: Reduce overprivileged permissions and apps
 description: Learn why applications shouldn't request more permissions than they need (overprivileged) and how to limit privilege to manage access and improve security.
 author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 04/17/2024
+ms.date: 05/24/2024
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to understand why applications should not request more permissions than they need (overprivileged) and how to limit privilege so that I can manage access and improve security.
 ---
-# Reducing overprivileged permissions and apps
+# Reduce overprivileged permissions and apps
 
-As a developer aiming to design and implement applications that follow the [guiding principles of Zero Trust](overview.md), you want to [increase application security with least privilege](/azure/active-directory/develop/secure-least-privileged-access). It's imperative that you reduce the attack surface of your application and the effect of a security breach.
+As a developer aiming to design and implement applications that follow the [guiding principles of Zero Trust](overview.md), you want to [increase application security with least privilege](/entra/identity-platform/secure-least-privileged-access). It's imperative that you reduce the attack surface of your application and the effect of a security breach.
 
-In this article, you'll learn why applications shouldn't request more permissions than they need. You'll understand the term *overprivileged* and discover recommendations and best practices for limiting privilege in your applications to manage access and improve security.
+In this article, you learn why applications shouldn't request more permissions than they need. You understand the term *overprivileged* and discover recommendations and best practices for limiting privilege in your applications to manage access and improve security.
 
 ## What is overprivileged?
 
-[Overprivileged](/azure/active-directory/develop/secure-least-privileged-access#overprivileged-applications) occurs when an application requests or receives more permissions than it needs for it to properly function. The following examples of unused and reducible permissions will improve your understanding of overprivileged.
+[Overprivileged](/entra/identity-platform/secure-least-privileged-access#overprivileged-applications) occurs when an application requests or receives more permissions than it needs for it to properly function. Improve your understanding of overprivileged with examples of unused and reducible permissions in the remainder of this article.
 
 ## Unused permissions
 
-For this unused key example, imagine that there are three locked doors (blue, yellow, and green) as shown in the diagram below.
+For this unused key example, imagine that there are three locked doors (blue, yellow, and green) as shown in the following diagram.
 
-:::image type="content" source="../media/develop/overprivileged-permissions/diagram-unused-key-inline.png" alt-text="Diagram described in article content - three doors below each of which is a key of the same color as its corresponding door." lightbox="../media/develop/overprivileged-permissions/diagram-unused-key-expanded.png":::
+:::image type="content" source="../media/develop/overprivileged-permissions/diagram-unused-key-inline.png" alt-text="Diagram described in article content shows three doors with corresponding keys." lightbox="../media/develop/overprivileged-permissions/diagram-unused-key-expanded.png":::
 
 Your assets are behind the doors. You have three keys (blue, yellow, and green) that allow you to open its corresponding door. For example, the blue key can open the blue door. When you only need access to the yellow door, you only carry the yellow key.
 
@@ -33,9 +33,9 @@ To best protect your assets, you only carry the keys you need when you need them
 
 ## Reducible permissions
 
-The reducible keys example is more complicated than the unused key example to which we now add two special keys as shown in the diagram below.
+The reducible keys example is more complicated than the unused key example to which we now add two special keys as shown in the following diagram.
 
-:::image type="content" source="../media/develop/overprivileged-permissions/diagram-reducible-key-inline.png" alt-text="Diagram described in article content - three doors below each of which is a key." lightbox="../media/develop/overprivileged-permissions/diagram-reducible-key-expanded.png":::
+:::image type="content" source="../media/develop/overprivileged-permissions/diagram-reducible-key-inline.png" alt-text="Diagram described in article content shows three doors with corresponding keys." lightbox="../media/develop/overprivileged-permissions/diagram-reducible-key-expanded.png":::
 
 The first black key is a pass key that can open all the doors. The second black key can open the yellow and the green doors. When you only need access to the yellow and the green doors, you only carry the second black key. You keep your pass key in a safe location with the redundant green key.
 
@@ -43,11 +43,11 @@ In the Microsoft identity world, the keys are access permissions. Your resources
 
 ## Permission gap and risk
 
-How can doors and keys help to understand how overprivileged occurs? Why might your application have the right permissions to perform a task, but still be overprivileged? Let's look at the permission gap that might cause the discrepancy in the diagram below.
+How can doors and keys help to understand how overprivileged occurs? Why might your application have the right permissions to perform a task, but still be overprivileged? Let's look at the permission gap that might cause the discrepancy in the following diagram.
 
 :::image type="content" source="../media/develop/overprivileged-permissions/diagram-permission-gap-inline.png" alt-text="Graph on right: Y-axis - Permissions, X-axis - Time; Upper curve - Granted Permissions, Lower curve - Permissions Used; Statistics on right described in article content." lightbox="../media/develop/overprivileged-permissions/diagram-permission-gap-expanded.png":::
 
-The X axis represents **Time** and the Y axis represents **Permissions**. At the start of the measured **Time**, you request and receive permission for your application. As the business grows and changes over time, you add new permissions to support your needs and the slope of **Granted Permissions** increases. The **Permissions Used** may be lower than **Granted Permissions** when you forget to remove unnecessary permissions (for example, if the application doesn't break) resulting in a **Permission Gap**.
+The X axis represents **Time** and the Y axis represents **Permissions**. At the start of the measured **Time**, you request and receive permission for your application. As the business grows and changes over time, you add new permissions to support your needs and the slope of **Granted Permissions** increases. The **Permissions Used** might be lower than **Granted Permissions** when you forget to remove unnecessary permissions (for example, if the application doesn't break) resulting in a **Permission Gap**.
 
 Here are interesting observations in the Microsoft identity platform.
 
@@ -65,9 +65,9 @@ Let's dive deeper into the risks that result from permission gaps with an exampl
 - IT admin: Jeff is a tenant admin who ensures that applications in Microsoft Entra ID are trustworthy and secure. Part of Jeff's job is to grant consent to permissions that app developers require.
 - Developer: Kelly is an app developer who uses Microsoft identity platform and owns apps. Kelly's job is to ensure that applications have the right permissions to perform required tasks.
 
-A common security compromise scenario for overprivileged typically has four stages as shown and described below.
+The following common security compromise scenario for overprivileged typically has four stages.
 
-:::image type="content" source="../media/develop/overprivileged-permissions/diagram-permission-scenario-inline.png" alt-text="Diagram described in article content - stages one through four of a security compromise scenario." lightbox="../media/develop/overprivileged-permissions/diagram-permission-scenario-expanded.png":::
+:::image type="content" source="../media/develop/overprivileged-permissions/diagram-permission-scenario-inline.png" alt-text="Diagram described in article content - four stages of a security compromise scenario." lightbox="../media/develop/overprivileged-permissions/diagram-permission-scenario-expanded.png":::
 
 1. First, the developer starts configuring the application and adding required permissions.
 1. Second, the IT admin reviews required permissions and grants consent.
@@ -76,7 +76,7 @@ A common security compromise scenario for overprivileged typically has four stag
 
 ## Overprivileged applications
 
-When an entity asks for or receives more permissions than it needs, it's overprivileged. The definition of *overprivileged application* in Microsoft identity platform is, "any application that's been granted an unused or reducible permission."
+An entity is  overprivileged when it asks for or receives more permissions than it needs. The definition of *overprivileged application* in Microsoft identity platform is, "any application with unused or reducible permissions."
 
 Let's use Microsoft Graph as part of the Microsoft identity platform in a real-world example to better understand unused permission and reducible permission.
 
@@ -94,7 +94,7 @@ Security is a journey, not a destination. There are three distinct phases in the
 - Auditing
 - Remediation
 
-The diagram below illustrates recommendations for reducing overprivileged scenarios.
+The following diagram illustrates recommendations for reducing overprivileged scenarios.
 
 :::image type="content" source="../media/develop/overprivileged-permissions/diagram-reduce-overprivileged-recommendations-inline.png" alt-text="Diagram described in article content - recommendations to prevent, audit, and remediate overprivileged scenarios." lightbox="../media/develop/overprivileged-permissions/diagram-reduce-overprivileged-recommendations-expanded.png":::
 
@@ -104,19 +104,19 @@ The diagram below illustrates recommendations for reducing overprivileged scenar
 
 ## Best practices for maintaining least privilege permission
 
-Two major incentives for maintaining least privilege permission with your applications are driving application adoption and stopping the spread as summarized below.
+Two major incentives for maintaining least privilege permission with your applications are driving application adoption and stopping the spread.
 
-:::image type="content" source="../media/develop/overprivileged-permissions/diagram-least-privilege-best-practices-inline.png" alt-text="Left column: Drive Adoption - Build a trustworthy third party app for customers by avoiding excessive permission requests. Right column: Stop the Spread - Attackers are unable to use excessive privileges to gain further access." lightbox="../media/develop/overprivileged-permissions/diagram-least-privilege-best-practices-expanded.png":::
+:::image type="content" source="../media/develop/overprivileged-permissions/diagram-least-privilege-best-practices-inline.png" alt-text="Left column: Drive Adoption - Build a trustworthy app for customers by avoiding excessive permission requests. Right column: Stop the Spread - Attackers are unable to use excessive privileges to gain further access." lightbox="../media/develop/overprivileged-permissions/diagram-least-privilege-best-practices-expanded.png":::
 
-- **Drive adoption by building a trustworthy third-party app for customers that avoids excessive permission requests.** Limit your application permissions to only what it needs to complete its task. This practice reduces the potential blast radius of attacks and increases customer adoption of your apps. Apply more scrutiny when reviewing permissions that  applications request and deciding whether to grant app permissions.
-- **Stop the spread by ensuring attackers are unable to use excessive privileges to gain further access.** When you create an app that asks for unnecessary permissions, it will be least likely to receive approval or denied altogether. The best way to control damage is to prevent attackers from gaining elevated privilege that increases the scope of the compromise. For example, if your application only has `User.ReadBasic.All` to read user basic information, then your OneDrive, Outlook, Teams, and any confidential data are safe if an app is compromised.
+- **Drive adoption by building a trustworthy app for customers that avoids excessive permission requests.** Limit your application permissions to only what it needs to complete its task. This practice reduces the potential blast radius of attacks and increases customer adoption of your apps. Apply more scrutiny when reviewing permissions that  applications request and deciding whether to grant app permissions.
+- **Stop the spread by ensuring attackers are unable to use excessive privileges to gain further access.** When you create an app that asks for unnecessary permissions, it's least likely to receive approval or denied altogether. The best way to control damage is to prevent attackers from gaining elevated privilege that increases the scope of the compromise. For example, if your application only has `User.ReadBasic.All` to read user basic information, then your OneDrive, Outlook, Teams, and any confidential data are safe if an app is compromised.
 
 ## Next steps
 
-- [Acquiring authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
+- [Acquire authorization to access resources](acquire-application-authorization-to-access-resources.md) helps you to understand how to best ensure Zero Trust when acquiring resource access permissions for your application.
 - [Building apps with a Zero Trust approach to identity](identity.md) provides an overview of permissions and access best practices.
-- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
-- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configure group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles. These methods help to improve flexibility and control while increasing application zero trust security with least privilege.
 - [Achieving Zero Trust readiness in your apps: Designing for Least Privilege](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/achieving-zero-trust-readiness-in-your-apps-2-designing-for/ba-p/2959986) helps you to design apps using the principle of least privileged access with the Microsoft identity platform.
-- [Increase application security with the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access) helps you to reduce the attack surface of an application and the effect of a security breach (the blast radius) should one occur in a Microsoft identity platform-integrated application.
+- [Increase application security with the principle of least privilege](/entra/identity-platform/secure-least-privileged-access) helps you to reduce the attack surface of an application and the effect of a security breach (the blast radius) should one occur in a Microsoft identity platform-integrated application.
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) and [Microsoft Graph permissions reference](/graph/permissions-reference) helps you to select Microsoft Graph API calls to enable your app scenario and find corresponding permissions from least to most privileged.

@@ -5,7 +5,7 @@ author: janicericketts
 ms.author: jricketts
 ms.service: identity
 ms.topic: conceptual
-ms.date: 04/17/2024
+ms.date: 05/24/2024
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
@@ -29,17 +29,17 @@ The following table summarizes the decisions and tasks required for developer an
 :::row:::
    :::column span="":::
       **Developer**
-      - [Register app](/azure/active-directory/develop/quickstart-register-app) in Microsoft identity platform
-      - Define [supported account types](identity-supported-account-types.md)
-      - Determine if app works on behalf of [itself](identity-non-user-applications.md) or user
-      - Define [resources](acquire-application-authorization-to-access-resources.md) required and how/when to request permission
+      - [Register app](/entra/identity-platform/quickstart-register-app) in Microsoft identity platform.
+      - Define [supported account types](identity-supported-account-types.md).
+      - Determine if app works on behalf of [itself](identity-non-user-applications.md) or user.
+      - Define [resources](acquire-application-authorization-to-access-resources.md) required and how/when to request permission.
    :::column-end:::
    :::column span="":::
       **IT Pro Administrator**
-      - Configure who can register apps in tenant
-      - Assign application users, groups, and roles
-      - Grant permissions to applications
-      - Define policies (including conditional access policy)
+      - Configure who can register apps in tenant.
+      - Assign application users, groups, and roles.
+      - Grant permissions to applications.
+      - Define policies, including conditional access policy.
    :::column-end:::
 :::row-end:::
 
@@ -51,9 +51,9 @@ IT Pros can apply conditional access policies to Security Assertions Markup Lang
 
 ## Next steps
 
-- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens and how to customize tokens to improve flexibility and control while increasing application Zero Trust security with least privilege.
-- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application Zero Trust security with least privilege.
+- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configure group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles. These methods help to improve flexibility and control while increasing application zero trust security with least privilege.
 - [What do we mean by Zero Trust compliance?](identity-zero-trust-compliance.md) provides an overview of application security from a developer's perspective to address the guiding principles of Zero Trust.
 - Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle to create secure applications.
-- [Using standards-based development methodologies](identity-standards-based-development-methodologies.md) provides an overview of supported standards (OAuth 2.0, OpenID Connect, SAML, WS-Federation, and SCIM) and the benefits of using them with MSAL and the Microsoft identity platform.
+- [Standards-based development methodologies](identity-standards-based-development-methodologies.md) provides an overview of supported standards and their benefits.
 - [Authorization best practices](developer-strategy-authorization-best-practices.md) helps you to implement the best authorization, permission, and consent models for your applications.

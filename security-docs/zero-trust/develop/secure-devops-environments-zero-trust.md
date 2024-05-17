@@ -1,17 +1,17 @@
 ---
-title: Securing DevOps environments for Zero Trust
+title: Secure DevOps environments for Zero Trust
 description: Learn best practices for securing your DevOps environments to prevent hackers from compromising developer boxes, infect release pipelines with malicious scripts, and gain access to production data via test environments.
 ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 04/17/2024
+ms.date: 05/24/2024
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to learn best practices for securing my DevOps environments so that I can prevent hackers from compromising developer boxes, infecting release pipelines with malicious scripts, and gaining access to production data via test environments.
 ---
-# Securing DevOps environments for Zero Trust
+# Secure DevOps environments for Zero Trust
 
 Securing DevOps environments is no longer a choice for developers. Hackers are shifting left so you must implement [Zero Trust principles](../zero-trust-overview.md) that include verify explicitly, use least privilege access, and assume breach in DevOps environments.
 
@@ -25,17 +25,17 @@ Notice in the above diagram how connections between environments and to external
 
 Bad actors are stretching across the enterprise to compromise DevOps environments, gain access, and unlock new dangers. Attacks go beyond the typical breadth of cyber security breaches to inject malicious code, assume powerful developer identities, and steal production code.
 
-As companies transition to ubiquitous, work-from-anywhere scenarios, they must strengthen device security. Cyber security offices may lack consistent understanding of where and how developers secure and build code. Attackers take advantage of these weaknesses with remote connection hacks and developer identity thefts.
+As companies transition to ubiquitous, work-from-anywhere scenarios, they must strengthen device security. Cyber security offices might lack consistent understanding of where and how developers secure and build code. Attackers take advantage of these weaknesses with remote connection hacks and developer identity thefts.
 
 DevOps tools are key entry points for hackers, from pipeline automation to code validation and code repositories. If bad actors infect code before it reaches production systems, in most cases, it can pass through cyber security checkpoints. To prevent compromise, ensure that your development teams are engaged with peer reviews, security checks with IDE security plugins, secure coding standards, and branch review.
 
-Cyber security teams aim to prevent attackers from sieging production environments. However, environments have widened to include supply chain tools and products. Breach of third-party open-source tools can heighten global cyber security risks.
+Cyber security teams aim to prevent attackers from sieging production environments. However, environments now include supply chain tools and products. Open-source tool breach can heighten global cyber security risks.
 
 Learn more about developer-specific articles with the following **DevSecOps** articles in the [Developer guidance](overview.md) section of the [Zero Trust Guidance Center](../index.yml):
 
-- [Securing the DevOps platform environment](secure-devops-platform-environment-zero-trust.md) helps you to implement Zero Trust principles in your DevOps platform environment and highlights best practices for secret and certificate management.
-- [Securing the developer environment](secure-dev-environment-zero-trust.md) helps you to implement Zero Trust principles in your development environments with best practices for least privilege, branch security, and trusting tools, extensions, and integrations.
-- [Embedding Zero Trust security into your developer workflow](embed-zero-trust-dev-workflow.md) helps you to innovate quickly and securely.
+- [Secure the DevOps platform environment](secure-devops-platform-environment-zero-trust.md) helps you to implement Zero Trust principles in your DevOps platform environment and highlights best practices for secret and certificate management.
+- [Secure the developer environment](secure-dev-environment-zero-trust.md) helps you to implement Zero Trust principles in your development environments with best practices for least privilege, branch security, and trusting tools, extensions, and integrations.
+- [Embed Zero Trust security into your developer workflow](embed-zero-trust-dev-workflow.md) helps you to innovate quickly and securely.
 
 ## Next steps
 
@@ -44,4 +44,4 @@ Learn more about developer-specific articles with the following **DevSecOps** 
 - Configure Azure to trust GitHub's OIDC as a federated identity. OpenID Connect (OIDC) allows your GitHub Actions workflows to [access resources in Azure](https://docs.github.com/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure)without needing to store the Azure credentials as long-lived GitHub secrets.
 - The [DevOps resource center](/devops/what-is-devops) helps you with DevOps practices, Agile methods, Git version control, DevOps at Microsoft, and how to assess your organization's DevOps progress.
 - Learn how the [Microsoft DevSecOps solution](https://azure.microsoft.com/solutions/devsecops/#overview) integrates security into every aspect of the software delivery lifecycle to enable DevSecOps, or secure DevOps, for apps on the cloud (and anywhere) with Azure and GitHub.
-- Implement Zero Trust principles as described in memorandum 22-09 (in support of US executive order 14028, Improving the Nation's Cyber Security) by using Microsoft Entra ID as a [centralized identity management system](/azure/active-directory/standards/memo-22-09-meet-identity-requirements).
+- Implement Zero Trust principles as described in memorandum 22-09 (in support of US executive order 14028, Improving the Nation's Cyber Security) by using Microsoft Entra ID as a [centralized identity management system](/entra/standards/memo-22-09-meet-identity-requirements).

@@ -10,7 +10,7 @@ ms.date: 05/17/2024
 ms.author: joflore
 author: MicrosoftGuyJFlo
 manager: amycolannino
-ms.reviewer: joylynnkirui
+ms.reviewer: joylynnkirui, raulga
 ---
 # Microsoft SDL cryptographic recommendations
 
@@ -146,8 +146,8 @@ On the Windows platform, Microsoft recommends using the crypto APIs built into t
 Any usage decision regarding platform vs nonplatform crypto should be guided by the following requirements:
 
 1. The library should be a current in-support version free of known security vulnerabilities.
-2. The latest security protocols, algorithms, and key lengths should be supported.
-3. (Optional) The library should be capable of supporting older security protocols/algorithms for backwards compatibility only.
+1. The latest security protocols, algorithms, and key lengths should be supported.
+1. (Optional) The library should be capable of supporting older security protocols/algorithms for backwards compatibility only.
 
 ### Native code
 

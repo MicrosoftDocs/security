@@ -207,7 +207,8 @@ Truncation of HMACs to less than 128 bits isn't recommended.
 
 ## Design and operational considerations
 
-- You should provide a mechanism for replacing cryptographic keys as needed. Keys should be replaced once they reach the end of their active lifetime or the cryptographic key is compromised. Whenever you renew a certificate, you should renew it with a new key.
+- You should provide a mechanism for replacing cryptographic keys as needed. Keys should be replaced once they reach the end of their active lifetime or the cryptographic key is compromised. 
+   - Whenever you renew a certificate, you should renew it with a new key.
 - Products using cryptographic algorithms to protect data should include enough metadata along with that content to support migrating to different algorithms in the future. This metadata should include the algorithm used, key sizes, and padding modes.
    - For more information on Cryptographic Agility, see the article [Cryptographic Agility](https://msdn.microsoft.com/magazine/ee321570.aspx).
 - Where available, products should use established, platform-provided cryptographic protocols rather than reimplementing them, including signing formats (for example, use a standard, existing format).

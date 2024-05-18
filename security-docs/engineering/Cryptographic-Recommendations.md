@@ -45,9 +45,9 @@ Symmetric algorithms can operate in various modes, most of which link together t
 
 Symmetric block ciphers should be used with one of the following cipher modes:
 
-- [Cipher Block Chaining (CBC)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation)
-- [Ciphertext Stealing (CTS)](https://en.wikipedia.org/wiki/Ciphertext_stealing)
-- [XEX-Based Tweaked-Codebook with Ciphertext Stealing (XTS)](https://en.wikipedia.org/wiki/Disk_encryption_theory#XEX-based_tweaked-codebook_mode_with_ciphertext_stealing_.28XTS.29)
+- [Cipher Block Chaining (CBC)](https://wikipedia.org/wiki/Block_cipher_mode_of_operation)
+- [Ciphertext Stealing (CTS)](https://wikipedia.org/wiki/Ciphertext_stealing)
+- [XEX-Based Tweaked-Codebook with Ciphertext Stealing (XTS)](https://wikipedia.org/wiki/Disk_encryption_theory#XEX-based_tweaked-codebook_mode_with_ciphertext_stealing_.28XTS.29)
 
 Some other cipher modes like those that follow have implementation pitfalls that make them more likely to be used incorrectly. In particular, the Electronic Code Book (ECB) mode of operation should be avoided. Reusing the same initialization vector (IV) with block ciphers in "streaming ciphers modes" such as CTR might cause encrypted data to be revealed. Extra security review is recommended if any of the below modes are used:
 
@@ -124,7 +124,7 @@ All products and services should use cryptographically secure random number gene
 
 ### .NET
 
-- Use [RandomNumberGenerator](/dotnet/api/system.security.cryptography.randomnumbergenerator?view=net-8.0).
+- Use [RandomNumberGenerator](/dotnet/api/system.security.cryptography.randomnumbergenerator).
 
 ### PowerShell
 

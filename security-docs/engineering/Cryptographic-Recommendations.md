@@ -45,9 +45,9 @@ Symmetric algorithms can operate in various modes, most of which link together t
 
 Symmetric block ciphers should be used with one of the following cipher modes:
 
-- [Cipher Block Chaining (CBC)]()
-- [Ciphertext Stealing (CTS)]()
-- [XEX-Based Tweaked-Codebook with Ciphertext Stealing (XTS)]()
+- [Cipher Block Chaining (CBC)](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation)
+- [Ciphertext Stealing (CTS)](https://en.wikipedia.org/wiki/Ciphertext_stealing)
+- [XEX-Based Tweaked-Codebook with Ciphertext Stealing (XTS)](https://en.wikipedia.org/wiki/Disk_encryption_theory#XEX-based_tweaked-codebook_mode_with_ciphertext_stealing_.28XTS.29)
 
 Some other cipher modes like those that follow have implementation pitfalls that make them more likely to be used incorrectly. In particular, the Electronic Code Book (ECB) mode of operation should be avoided. Reusing the same initialization vector (IV) with block ciphers in "streaming ciphers modes" such as CTR might cause encrypted data to be revealed. Extra security review is recommended if any of the below modes are used:
 
@@ -66,7 +66,7 @@ Initialization vectors should never be reused when performing multiple encryptio
 
 AES-GCM (Galois/Counter Mode) and AES-CCM (Counter with CBC-MAC) are widely used authenticated encryption modes. They combine confidentiality and integrity protection, making them useful for secure communication. However, their fragility lies in nonce reuse. When the same nonce (initialization vector) is used twice, it can lead to catastrophic consequences.
 
-We recommend following the nonce guidelines as described in [NIST SP 800-38D, Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC](), taking special attention to section 8.3 regarding the maximum number of invocations.
+We recommend following the nonce guidelines as described in [NIST SP 800-38D, Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf), taking special attention to section 8.3 regarding the maximum number of invocations.
 
 Another option would be generated unique AES-GCM/CCM keys for every message being encrypted, effectively limiting the maximum number of invocations to 1. This approach is recommended for encrypting data at rest, where using a counter or making sure that you can track the maximum number of invocations for a given key would be impractical.
 
@@ -78,7 +78,7 @@ It's a common misconception that encryption by default provides both confidentia
 
 If you can't use an authenticated encryption algorithm with associated data (AEAD) such as AES-GCM, an alternative would be to validate the integrity with a message authentication code (MAC) using an Encrypt-then-MAC scheme, making sure you use separate keys for encryption and for the MAC.
 
-Using a separate key for encryption and for the MAC is essential. If it isn't possible to store the two keys, a valid alternative is to derive two keys from the main key using a suitable key derivation function (KDF), one for encryption purposes and one for MAC. For more information, see [SP 800-108 Rev. 1, Recommendation for Key Derivation Using Pseudorandom Functions | CSRC (nist.gov)]().
+Using a separate key for encryption and for the MAC is essential. If it isn't possible to store the two keys, a valid alternative is to derive two keys from the main key using a suitable key derivation function (KDF), one for encryption purposes and one for MAC. For more information, see [SP 800-108 Rev. 1, Recommendation for Key Derivation Using Pseudorandom Functions | CSRC (nist.gov)](https://csrc.nist.gov/pubs/sp/800/108/r1/upd1/final).
 
 ### Asymmetric algorithms, key lengths, and padding modes
 
@@ -102,7 +102,7 @@ Using a separate key for encryption and for the MAC is essential. If it isn't po
 
 ## Key lifetimes
 
-- Define a [cryptoperiod]() for all keys.
+- Define a [cryptoperiod](https://csrc.nist.gov/glossary/term/Cryptoperiod#:~:text=Cryptoperiod%20Definitions%3A%20The%20time%20span%20during%20which%20a,given%20system%20or%20application%20may%20remain%20in%20effect.) for all keys.
    - For example: A symmetric key for data encryption, often referred as data encryption key or DEK, might have a usage period of up to two years for encrypting data, also known as the originator usage period. You might define that it has a valid usage period for decryption for three more years, also known as the recipient-usage period.
 - You should provide a mechanism or have a process for replacing keys to achieve the limited active lifetime. After the end of its active lifetime, a key shouldn't be used to produce new data (for example, for encryption or signing), but might still be used to read data (for example, for decryption or verification).
 
@@ -112,31 +112,31 @@ All products and services should use cryptographically secure random number gene
 
 ### CNG
 
-- Use [BCryptGenRandom]() with the BCRYPT_USE_SYSTEM_PREFERRED_RNG flag.
+- Use [BCryptGenRandom](https://msdn.microsoft.com/library/windows/desktop/aa375458.aspx) with the BCRYPT_USE_SYSTEM_PREFERRED_RNG flag.
 
 ### Win32/64
 
-- Legacy code can use [RtlGenRandom]() in kernel mode.
-- New code should use [BCryptGenRandom]() or [CryptGenRandom]().
-- The C function [Rand_s()]() is also recommended (which on Windows, calls CryptGenRandom).
+- Legacy code can use [RtlGenRandom](https://msdn.microsoft.com/library/windows/desktop/aa387694.aspx) in kernel mode.
+- New code should use [BCryptGenRandom](https://msdn.microsoft.com/library/windows/desktop/aa375458.aspx) or [CryptGenRandom](https://msdn.microsoft.com/library/windows/desktop/aa379942.aspx).
+- The C function [Rand_s()](https://msdn.microsoft.com/library/sxtz2fa8.aspx) is also recommended (which on Windows, calls [CryptGenRandom](https://msdn.microsoft.com/library/windows/desktop/aa379942.aspx)).
 - Rand_s() is a safe and performant replacement for Rand().
 - Rand() must not be used for any cryptographic applications.
 
 ### .NET
 
-- Use [RandomNumberGenerator]().
+- Use [RandomNumberGenerator](/dotnet/api/system.security.cryptography.randomnumbergenerator?view=net-8.0).
 
 ### PowerShell
 
-- Use [Get-SecureRandom (PowerShell)]().
+- Use [Get-SecureRandom (PowerShell)](/powershell/module/microsoft.powershell.utility/get-securerandom).
 
 ### Windows Store apps
 
-- Windows Store apps can use [CryptographicBuffer.GenerateRandom]() or [CryptographicBuffer.GenerateRandomNumber]().
+- Windows Store apps can use [CryptographicBuffer.GenerateRandom](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandom.aspx) or [CryptographicBuffer.GenerateRandomNumber](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandomnumber.aspx).
 
 ### Not recommended
 
-- Insecure functions related to random number generation include: [rand](), [System.Random (.NET)](), [GetTickCount](), [GetTickCount64](), and [Get-Random (PowerShell cmdlet)]().
+- Insecure functions related to random number generation include: [rand](https://msdn.microsoft.com/library/398ax69y.aspx), [System.Random (.NET)](https://msdn.microsoft.com/library/system.random.aspx), [GetTickCount](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx), [GetTickCount64](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx), and [Get-Random (PowerShell cmdlet)](/powershell/module/microsoft.powershell.utility/get-random).
 - Use of the dual elliptic curve random number generator ("DUAL_EC_DRBG") algorithm isn't recommended.
 
 ## Windows platform supported crypto libraries
@@ -152,12 +152,12 @@ Any usage decision regarding platform vs nonplatform crypto should be guided by 
 ### Native code
 
 - Crypto Primitives: If your release is on Windows, use CNG if possible.
-- Code signature verification: [WinVerifyTrust]() is the supported API for verifying code signatures on Windows platforms.
-- Certificate Validation (as used in restricted certificate validation for code signing or SSL/TLS/DTLS): CAPI2 API; for example, [CertGetCertificateChain]() and [CertVerifyCertificateChainPolicy]().
+- Code signature verification: [WinVerifyTrust](https://msdn.microsoft.com/library/aa388208(v=VS.85).aspx) is the supported API for verifying code signatures on Windows platforms.
+- Certificate Validation (as used in restricted certificate validation for code signing or SSL/TLS/DTLS): CAPI2 API; for example, [CertGetCertificateChain](https://msdn.microsoft.com/library/windows/desktop/aa376078(v=vs.85).aspx) and [CertVerifyCertificateChainPolicy](https://msdn.microsoft.com/library/windows/desktop/aa377163(v=vs.85).aspx).
 
 ### Managed code
 
-- Crypto Primitives: Use the API defined in [System.Security.Cryptography]() namespace.
+- Crypto Primitives: Use the API defined in [System.Security.Cryptography](/dotnet/api/system.security.cryptography) namespace.
 - Use the latest version of .NET available.
 
 ## Key derivation functions
@@ -166,15 +166,15 @@ Key derivation is the process of deriving cryptographic key material from a shar
 
 The following standards specify KDF functions recommended for use:
 
-- [NIST SP 800-108 (Revision 1)](): Recommendation For Key Derivation Using Pseudorandom Functions. In particular, the KDF in counter mode, with HMAC as a pseudorandom function
-- [NIST SP 800-56A (Revision 3)](): Recommendation for Pair-Wise Key Establishment Schemes Using Discrete Logarithm Cryptography.
+- [NIST SP 800-108 (Revision 1)](https://csrc.nist.gov/pubs/sp/800/108/r1/upd1/final): Recommendation For Key Derivation Using Pseudorandom Functions. In particular, the KDF in counter mode, with HMAC as a pseudorandom function
+- [NIST SP 800-56A (Revision 3)](https://csrc.nist.gov/pubs/sp/800/56/a/r3/final): Recommendation for Pair-Wise Key Establishment Schemes Using Discrete Logarithm Cryptography.
 
-To derive keys from existing keys, use the [BCryptKeyDerivation]() API with one of the algorithms:
+To derive keys from existing keys, use the [BCryptKeyDerivation](https://msdn.microsoft.com/library/windows/desktop/hh448506(v=vs.85).aspx) API with one of the algorithms:
 
 - BCRYPT_SP800108_CTR_HMAC_ALGORITHM
 - BCRYPT_SP80056A_CONCAT_ALGORITHM
 
-To derive keys from a shared secret (the output of a key agreement), use the [BCryptDeriveKey]() API with one of the following algorithms:
+To derive keys from a shared secret (the output of a key agreement), use the [BCryptDeriveKey](https://msdn.microsoft.com/library/windows/desktop/aa375393(v=vs.85).aspx) API with one of the following algorithms:
 
 - BCRYPT_KDF_SP80056A_CONCAT
 - BCRYPT_KDF_HMAC
@@ -201,7 +201,7 @@ Products should use the SHA-2 family of hash algorithms (SHA-256, SHA-384, and S
 
 A message authentication code (MAC) is a piece of information attached to a message that allows its recipient to verify both the authenticity of the sender and the integrity of the message using a secret key.
 
-The use of either a [hash-based MAC (HMAC)]() or [block-cipher-based MAC]() is recommended as long as all underlying hash or symmetric encryption algorithms are also recommended for use; currently this includes the HMAC-SHA2 functions (HMAC-SHA256, HMAC-SHA384, and HMAC-SHA512). While the usage of HMAC-SHA256 is the minimum, we recommend supporting HMAC-SHA384.
+The use of either a [hash-based MAC (HMAC)](https://csrc.nist.gov/publications/nistpubs/800-107-rev1/sp800-107-rev1.pdf) or [block-cipher-based MAC](https://csrc.nist.gov/publications/nistpubs/800-38B/SP_800-38B.pdf) is recommended as long as all underlying hash or symmetric encryption algorithms are also recommended for use; currently this includes the HMAC-SHA2 functions (HMAC-SHA256, HMAC-SHA384, and HMAC-SHA512). While the usage of HMAC-SHA256 is the minimum, we recommend supporting HMAC-SHA384.
 
 Truncation of HMACs to less than 128 bits isn't recommended.
 
@@ -209,7 +209,7 @@ Truncation of HMACs to less than 128 bits isn't recommended.
 
 - You should provide a mechanism for replacing cryptographic keys as needed. Keys should be replaced once they reach the end of their active lifetime or the cryptographic key is compromised. Whenever you renew a certificate, you should renew it with a new key.
 - Products using cryptographic algorithms to protect data should include enough metadata along with that content to support migrating to different algorithms in the future. This metadata should include the algorithm used, key sizes, and padding modes.
-   - For more information on Cryptographic Agility, see the article [Cryptographic Agility]().
+   - For more information on Cryptographic Agility, see the article [Cryptographic Agility](https://msdn.microsoft.com/magazine/ee321570.aspx).
 - Where available, products should use established, platform-provided cryptographic protocols rather than reimplementing them, including signing formats (for example, use a standard, existing format).
 - Symmetric stream ciphers such as RC4 shouldn't be used. Instead of symmetric stream ciphers, products should use a block cipher, specifically AES with a key length of at least 128 bits.
 - Don't report cryptographic operation failures to end-users. When returning an error to a remote caller (for example, web client, or client in a client-server scenario), use a generic error message only.

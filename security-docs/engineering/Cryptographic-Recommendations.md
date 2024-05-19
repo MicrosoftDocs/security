@@ -24,9 +24,9 @@ Developers on non-Windows platforms might benefit from these recommendations. Wh
 
 Products and services should use cryptographically secure versions of TLS/SSL:
 
-- TLS 1.3 must be enabled
-- TLS 1.2 can be enabled to improve compatibility with older clients
-- TLS 1.1, TLS 1.0, SSL 3, and SSL 2 must be disabled by default
+- TLS 1.3 must be enabled.
+- TLS 1.2 can be enabled to improve compatibility with older clients.
+- TLS 1.1, TLS 1.0, SSL 3, and SSL 2 must be disabled
 
 ### Symmetric block ciphers, cipher modes, and initialization vectors
 
@@ -35,9 +35,9 @@ Products and services should use cryptographically secure versions of TLS/SSL:
 For products using symmetric block ciphers:
 
 - Advanced Encryption Standard (AES) is recommended.
-- All other block ciphers, including Triple Data Encryption Algorithm (TDEA), RC4, must be replaced if used for encryption.
+- All other block ciphers, including 3DES (Triple DES/TDEA) must not be used.
 
-For symmetric block encryption algorithms, a minimum key length of 128 bits is, but we recommend supporting 256-bit keys. The only block encryption algorithm recommended for new code is AES (AES-128, AES-192, and AES-256 are all acceptable, noting that AES-192 lacks optimization on some processors).
+For symmetric block encryption algorithms, a minimum key length of 128 bits is required, but we recommend supporting 256-bit keys. The only block encryption algorithm recommended for new code is AES (AES-128, AES-192, and AES-256 are all acceptable, noting that AES-192 lacks optimization on some processors).
 
 #### Cipher modes
 
@@ -49,7 +49,7 @@ Symmetric block ciphers should be used with one of the following cipher modes:
 - [Ciphertext Stealing (CTS)](https://wikipedia.org/wiki/Ciphertext_stealing)
 - [XEX-Based Tweaked-Codebook with Ciphertext Stealing (XTS)](https://wikipedia.org/wiki/Disk_encryption_theory#XEX-based_tweaked-codebook_mode_with_ciphertext_stealing_.28XTS.29)
 
-Some other cipher modes like those that follow have implementation pitfalls that make them more likely to be used incorrectly. In particular, the Electronic Code Book (ECB) mode of operation should be avoided. Reusing the same initialization vector (IV) with block ciphers in "streaming ciphers modes" such as CTR might cause encrypted data to be revealed. Extra security review is recommended if any of the below modes are used:
+Some other cipher modes like those that follow have implementation pitfalls that make them more likely to be used incorrectly. In particular, the Electronic Code Book (ECB) mode of operation must be avoided. Reusing the same initialization vector (IV) with block ciphers in "streaming ciphers modes" such as CTR might cause encrypted data to be revealed. Extra security review is recommended if any of the below modes are used:
 
 - Output Feedback (OFB)
 - Cipher Feedback (CFB)
@@ -58,7 +58,7 @@ Some other cipher modes like those that follow have implementation pitfalls that
 
 #### Initialization vectors (IV)
 
-All symmetric block ciphers should also be used with a cryptographically strong random number as an initialization vector. Initialization vectors should never be a constant value. See Random Number Generators for recommendations on generating cryptographically strong random numbers.
+All symmetric block ciphers should also be used with a cryptographically strong random number as an initialization vector. Initialization vectors should never be a constant or predicable value. See Random Number Generators for recommendations on generating cryptographically strong random numbers.
 
 Initialization vectors should never be reused when performing multiple encryption operations. Reuse can reveal information about the data being encrypted, particularly when using streaming cipher modes like Output Feedback (OFB) or Counter (CTR).
 
@@ -84,7 +84,7 @@ Using a separate key for encryption and for the MAC is essential. If it isn't po
 
 #### RSA
 
-- RSA should be used for encryption, key exchange, and signatures.
+- RSA can be used for encryption, key exchange, and signatures.
 - RSA encryption should use the OAEP or RSA-PSS padding modes.
 - Existing code should use PKCS #1 v1.5 padding mode for compatibility only.
 - Use of null padding isn't recommended.
@@ -104,7 +104,7 @@ Using a separate key for encryption and for the MAC is essential. If it isn't po
 
 - Define a [cryptoperiod](https://csrc.nist.gov/glossary/term/Cryptoperiod#:~:text=Cryptoperiod%20Definitions%3A%20The%20time%20span%20during%20which%20a,given%20system%20or%20application%20may%20remain%20in%20effect.) for all keys.
    - For example: A symmetric key for data encryption, often referred as data encryption key or DEK, might have a usage period of up to two years for encrypting data, also known as the originator usage period. You might define that it has a valid usage period for decryption for three more years, also known as the recipient-usage period.
-- You should provide a mechanism or have a process for replacing keys to achieve the limited active lifetime. After the end of its active lifetime, a key shouldn't be used to produce new data (for example, for encryption or signing), but might still be used to read data (for example, for decryption or verification).
+- You should provide a mechanism or have a process for replacing keys to achieve the limited active lifetime. After the end of its active lifetime, a key must not be used to produce new data (for example, for encryption or signing), but might still be used to read data (for example, for decryption or verification).
 
 ## Random number generators
 
@@ -137,7 +137,7 @@ All products and services should use cryptographically secure random number gene
 ### Not recommended
 
 - Insecure functions related to random number generation include: [rand](https://msdn.microsoft.com/library/398ax69y.aspx), [System.Random (.NET)](https://msdn.microsoft.com/library/system.random.aspx), [GetTickCount](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx), [GetTickCount64](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx), and [Get-Random (PowerShell cmdlet)](/powershell/module/microsoft.powershell.utility/get-random).
-- Use of the dual elliptic curve random number generator ("DUAL_EC_DRBG") algorithm isn't recommended.
+- Use of the dual elliptic curve random number generator ("DUAL_EC_DRBG") algorithm isn't permitted.
 
 ## Windows platform supported crypto libraries
 
@@ -155,7 +155,7 @@ Any usage decision regarding platform vs nonplatform crypto should be guided by 
 - Code signature verification: [WinVerifyTrust](https://msdn.microsoft.com/library/aa388208(v=VS.85).aspx) is the supported API for verifying code signatures on Windows platforms.
 - Certificate Validation (as used in restricted certificate validation for code signing or SSL/TLS/DTLS): CAPI2 API; for example, [CertGetCertificateChain](https://msdn.microsoft.com/library/windows/desktop/aa376078(v=vs.85).aspx) and [CertVerifyCertificateChainPolicy](https://msdn.microsoft.com/library/windows/desktop/aa377163(v=vs.85).aspx).
 
-### Managed code
+### Managed code (.NET)
 
 - Crypto Primitives: Use the API defined in [System.Security.Cryptography](/dotnet/api/system.security.cryptography) namespace.
 - Use the latest version of .NET available.
@@ -195,7 +195,7 @@ Don't use "self-signed" certificates. Self-signed don't inherently convey trust,
 
 ## Cryptographic hash functions
 
-Products should use the SHA-2 family of hash algorithms (SHA-256, SHA-384, and SHA-512). Truncation of cryptographic hashes for security purposes to less than 128 bits isn't recommended. While the usage of SHA-256 is the minimum, we recommend supporting SHA-384.
+Products should use the SHA-2 family of hash algorithms (SHA-256, SHA-384, and SHA-512). Truncation of cryptographic hashes for security purposes to less than 128 bits isn't permitted. While the usage of SHA-256 is the minimum, we recommend supporting SHA-384.
 
 ### MAC/HMAC/keyed hash algorithms
 
@@ -212,7 +212,6 @@ Truncation of HMACs to less than 128 bits isn't recommended.
 - Products using cryptographic algorithms to protect data should include enough metadata along with that content to support migrating to different algorithms in the future. This metadata should include the algorithm used, key sizes, and padding modes.
    - For more information on Cryptographic Agility, see the article [Cryptographic Agility](https://msdn.microsoft.com/magazine/ee321570.aspx).
 - Where available, products should use established, platform-provided cryptographic protocols rather than reimplementing them, including signing formats (for example, use a standard, existing format).
-- Symmetric stream ciphers such as RC4 shouldn't be used. Instead of symmetric stream ciphers, products should use a block cipher, specifically AES with a key length of at least 128 bits.
 - Don't report cryptographic operation failures to end-users. When returning an error to a remote caller (for example, web client, or client in a client-server scenario), use a generic error message only.
    - Avoid providing any unnecessary information, such as directly reporting out-of-range or invalid length errors. Log verbose errors on the server only, and only if verbose logging is enabled.
 - Extra security review is highly recommended for any design incorporating the following items:

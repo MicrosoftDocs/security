@@ -7,7 +7,6 @@ manager: dansimp
 ms.date: 04/14/2024
 ms.topic: article
 ms.service: microsoft-365-zero-trust
-ms.localization_priority: Normal
 ms.collection: 
   - zerotrust-solution
   - msftsolution-secops

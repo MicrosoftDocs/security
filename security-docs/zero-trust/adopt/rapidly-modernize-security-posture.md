@@ -1,7 +1,7 @@
 ---
 title: Rapidly modernize your security posture for Zero Trust
 description: Learn how to rapidly modernize your security posture for Zero Trust.
-ms.date: 04/10/2024
+ms.date: 04/24/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -16,12 +16,12 @@ Writers notes:
 
 For updates to product names, please also update the appropriate figures.
 
-To update figures that are not screen shots, your options are:
+To update figures that aren't screen shots, your options are:
 
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
-For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
 - Locate the source PowerPoint file in internal storage. 
 - Download a copy of the PowerPoint file from the article.
@@ -34,6 +34,13 @@ For updates that affect text in the Excel Business Scenario Objectives workbook 
 - Download a copy of the Excel file from the article.
 
 After updating, republish the updated Excel file in the Download Center.
+
+For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
+
+- Locate the source Visio file in internal storage. 
+- Download a copy of the Visio file from the article.
+
+After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
 
 For new articles in this content set, please:
 
@@ -56,7 +63,7 @@ Rapidly modernizing your security posture involves working within your organizat
 
 Rapidly modernizing your security posture depends on your ability to systematically lead each component piece of your Zero Trust architecture through the adoption lifecycle. Each Zero Trust business scenario article recommends objectives across four stages. You can think of each objective as a technical project that you can lead through the adoption process. A more granular representation of the adoption process for a single objective or set of objectives is illustrated here.
 
-:::image type="content" source="../media/adoption-guide/objective-adoption-process.svg" alt-text="Diagram of the adoption process for an objective." lightbox="../media/adoption-guide/objective-adoption-process.svg":::
+:::image type="content" source="../media/adoption-guide/objective-adoption-process.png" alt-text="Diagram of the adoption process for an objective or a set of objectives." lightbox="../media/adoption-guide/objective-adoption-process.png":::
 
 The following table is an accessible version of the illustration.
 
@@ -64,19 +71,19 @@ The following table is an accessible version of the illustration.
 | --- | --- | --- | --- | --- |
 | Organizational alignment <br><br> Strategic goals <br><br> Outcomes| Stakeholder team <br><br> Technical plans <br><br> Skills readiness| Evaluate <br><br> Test <br><br> Pilot| Incrementally implement across your digital estate | Track and measure <br><br> Monitor and detect <br><br> Iterate for maturity |
 
-*Rapidly modernizing* refers to your ability to accelerate your organization’s capacity to deploy security configurations and threat protection capabilities across your digital estate at a pace that helps you get ahead of threats and mitigate your top risks. Think of it as a flywheel you are building in which you’ve created a repeatable process that you can feed many technical projects through.
+*Rapidly modernizing* refers to your ability to accelerate your organization’s capacity to deploy security configurations and threat protection capabilities across your digital estate at a pace that helps you get ahead of threats and mitigate your top risks. Think of it as a flywheel you're building in which you’ve created a repeatable process that you can feed many technical projects through.
 
 :::image type="content" source="../media/adoption-guide/repeatable-process.svg" alt-text="Diagram of a repeatable process for adoption." lightbox="../media/adoption-guide/repeatable-process.svg":::
 
 As you build your organization’s capacity to deploy security configurations, you can begin staggering their implementation. For example, after you’ve defined the strategy and objectives for a business scenario, you can stagger the implementation of the technical objectives. Here is an example.
 
-:::image type="content" source="../media/adoption-guide/staggered-implementation-example.svg" alt-text="Example of a staggered implementation." lightbox="../media/adoption-guide/staggered-implementation-example.svg":::
+:::image type="content" source="../media/adoption-guide/staggered-implementation-example.svg" alt-text="Diagram of a staggered implementation example." lightbox="../media/adoption-guide/staggered-implementation-example.svg":::
 
 Some business scenarios are broad, and you might want to prioritize specific elements of the scenario to work on first. Or you can prioritize specific zones of your digital estate for configuration deployment first.
 
 ## Define strategy phase
 
-:::image type="content" source="../media/adoption-guide/define-strategy-phase.svg" alt-text="The define strategy phase." lightbox="../media/adoption-guide/define-strategy-phase.svg":::
+:::image type="content" source="../media/adoption-guide/define-strategy-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Define strategy phase highlighted." lightbox="../media/adoption-guide/define-strategy-phase.png":::
 
 One of the biggest challenges of adopting Zero Trust is gaining support and contribution from leaders across your organization. This adoption guidance is designed to help you communicate with them so you can gain organizational alignment, define your strategic goals, and identify outcomes.
 
@@ -84,7 +91,7 @@ Defining security as a business-level imperative is the first step toward a mode
 
 | Traditional role of security as an extension of IT responsibility| Modern security posture with Zero Trust |
 | --- | --- |
-| Traditional protection relies on security specialists that are part of the IT team. Security is an IT function.| Security is a responsibility shared among all levels of the business. Accountability for security rests with the executive, while responsibility is shared using the three Zero trust principles of assume breach, verify explicitly, and least privilege. A Zero Trust model moves security from reactive (who did what and when based on logging) to least privilege (based on just-in-time access to systems as needed). It also implements architecture elements and security operations capabilities to limit the damage from a breach. |
+| Traditional protection relies on security specialists that are part of the IT team. Security is an IT function.| Security is a responsibility shared among all levels of the business. Accountability for security rests with the executive, while responsibility is shared using the three Zero trust principles of **Assume breach**, **Verify explicitly**, and **Use least privilege access**. A Zero Trust model moves security from reactive (who did what and when based on logging) to least privilege (based on just-in-time access to systems as needed). It also implements architecture elements and security operations capabilities to limit the damage from a breach. |
 
 The Zero Trust adoption [overview article](zero-trust-adoption-overview.md) translates how Zero Trust applies to leadership roles across many organizations. This article includes business descriptions of the Zero Trust principles and a business translation of the technical areas included in a Zero Trust architecture, including identities, devices, and app. These topics are good places to begin conversations with your team of leaders. Be sure to probe and gain insights into what motivates the leaders in your organization so you can more easily agree on priorities and gain alignment and participation.
 
@@ -100,7 +107,7 @@ Gaining alignment begins with understanding what motivates your leaders and why 
 | Chief Marketing Officer (CMO)| How the business is perceived both internally and externally relates to employee and customer confidence. Breach readiness and security incident communication strategy are vital to managing perception and opinions. |
 | Chief Information Officer (CIO)| The applications used by a mobile and hybrid workforce must be accessible while securing the company's data. Security should be a measurable outcome and aligned with IT strategy. |
 | Chief Information Security Officer (CISO)| Most best practice security standards and protocols require organizations to continually improve the suitability, adequacy, and effectiveness of the information security management system. Modernizing the security posture allows for the evolution of business security policies and procedures which in turn advance the overall security strategy within the business. |
-| Chief Technology Officer (CTO)| The technology used to secure the business cannot be constricted to what is achievable using previous datacenter thinking only. Complimentary technologies that protect and enable business outcomes in a secure manner must be adopted. |
+| Chief Technology Officer (CTO)| The technology used to secure the business can't be constricted to what is achievable using previous datacenter thinking only. Complimentary technologies that protect and enable business outcomes in a secure manner must be adopted. |
 | Chief Operations Officer (COO)| The business must be able to operate profitably before, during, and after an attack. Security posture must enable fault tolerance and recoverability to prevent business outage. |
 | Chief Financial Officer (CFO)| The security posture must be a predictable cost with a measurable outcome, like other business priorities. |
 
@@ -125,7 +132,7 @@ Business alignment can be achieved using one or both of the following approaches
 
 You can progress through this article using either approach. The technical objectives and work described in the other business scenarios support both approaches.
 
-:::image type="content" source="../media/adoption-guide/business-alignment.svg" alt-text="Diagram of the business alignment." lightbox="../media/adoption-guide/business-alignment.svg":::
+:::image type="content" source="../media/adoption-guide/business-alignment.svg" alt-text="Diagram of business alignment showing risk-based and defensive strategy approaches." lightbox="../media/adoption-guide/business-alignment.svg":::
 
 You can even take a risk-based approach to start (mitigating against your top risks) and then transition to a defensive strategy to fill in the gaps. This section discusses how to use both approaches to rapidly modernize your security posture.
 
@@ -137,7 +144,7 @@ Some organizations choose to prioritize work and measure progress against risk. 
 
 An easy way to get started is to use [Six Tabletop Exercises to Help Prepare Your Cybersecurity Team](https://www.cisecurity.org/insights/white-papers/six-tabletop-exercises-prepare-cybersecurity-team), provided by the Center for Internet Security (CIS).
 
-These tabletop exercises are designed to help organizations walk through different risk scenarios with the goal of evaluating the organization’s state of preparation. They are each designed to be completed together with your team of stakeholders “in as little as 15 minutes.”
+These tabletop exercises are designed to help organizations walk through different risk scenarios with the goal of evaluating the organization’s state of preparation. They're each designed to be completed together with your team of stakeholders "in as little as 15 minutes."
 
 These exercises guide participants through the process of a simulated incident and require departments and teams to respond. The exercises help you evaluate your preparedness in a cross-discipline manner.
 
@@ -171,7 +178,7 @@ After taking stock of your risks and defensive areas of your digital estate wher
 
 #### This adoption guidance
 
-Whether you are taking a risk approach or defensive approach (or both), use the Zero Trust adoption guidance in this article as a starting point and prioritize the work based on your organization’s priorities. This article's guidance provides a systematic approach to applying the principles of Zero Trust. It’s based on fortifying the most common targets attackers use to gain access to an environment (identities and devices) and applying protections to your internal environment (like least privileged access and network segmentation) to prevent or limit the damage of a breach.
+Whether you're taking a risk approach or defensive approach (or both), use the Zero Trust adoption guidance in this article as a starting point and prioritize the work based on your organization’s priorities. This article's guidance provides a systematic approach to applying the principles of Zero Trust. It’s based on fortifying the most common targets attackers use to gain access to an environment (identities and devices) and applying protections to your internal environment (like least privileged access and network segmentation) to prevent or limit the damage of a breach.
 
 #### Your current organization and resource strengths
 
@@ -185,7 +192,7 @@ Another resource that is often used to help inform strategy and priorities is th
 
 For more information, see [Shared responsibility in the cloud](/azure/security/fundamentals/shared-responsibility) in the Azure Security Fundamentals library.
 
-Shared responsibility is a planning model frequently used by security teams to help transform the mindset and strategy from “in control of everything” to “sharing responsibility with the cloud provider.” This model emphasizes the strategy of moving apps and resources to trusted cloud providers to reduce the security work that remains for your organization. 
+Shared responsibility is a planning model frequently used by security teams to help transform the mindset and strategy from "in control of everything" to "sharing responsibility with the cloud provider." This model emphasizes the strategy of moving apps and resources to trusted cloud providers to reduce the security work that remains for your organization. 
 
 This can become part of your long-term strategy, starting with the acquisition of new cloud-based apps as a motivation to retire legacy apps and servers that your organization personally maintains. 
 
@@ -204,17 +211,17 @@ The principles of Zero Trust help your organization identify and prioritize how 
 
 The following figure shows the qualitative relationship between your security defense budget with Zero Trust principles and your defensive strength.
 
-:::image type="content" source="../media/adoption-guide/budget-and-defensive-strength.png" alt-text="Diagram of security budget and defensive strength." lightbox="../media/adoption-guide/budget-and-defensive-strength.png":::
+:::image type="content" source="../media/adoption-guide/budget-and-defensive-strength.png" alt-text="A graph of security budget with Zero Trust principles and defensive strength." lightbox="../media/adoption-guide/budget-and-defensive-strength.png":::
 
 Defensive strength can rapidly increase when you implement and practice basic security hygiene based on Zero Trust principles. Beyond the early gains, you get additional defensive strength by implementing more advanced security measures. Higher defensive strength provides protection against higher levels of attackers.
 
 The following figure shows the qualitative relationship between your defensive strength and the impact of the cost and ROI of an attacker.
 
-:::image type="content" source="../media/adoption-guide/attacker-impact.png" alt-text="Diagram of the impact of defensive strength on an attacker's ROI." lightbox="../media/adoption-guide/attacker-impact.png":::
+:::image type="content" source="../media/adoption-guide/attacker-impact.png" alt-text="A graph of the impact of defensive strength on an attacker's cost and ROI." lightbox="../media/adoption-guide/attacker-impact.png":::
 
 As your defensive strength increases, the cost to the attacker increases and reduces the ROI of the attack effort.
 
-The attacker ROI model helps leaders understand that there are few absolutes. A security posture is never considered perfect or impenetrable. However, there is a lot of opportunity for your organization to be strategic and prioritize your budget and resources. It’s additional incentive for your team of business leaders to work together to protect your organization.
+The attacker ROI model helps leaders understand that there are few absolutes. A security posture is never considered perfect or impenetrable. However, there's a lot of opportunity for your organization to be strategic and prioritize your budget and resources. It’s additional incentive for your team of business leaders to work together to protect your organization.
 
 ### Identify outcomes of your security posture
 
@@ -236,7 +243,7 @@ Finally, it’s important that you report on your security posture in an ongoing
 
 ## Plan phase
 
-:::image type="content" source="../media/adoption-guide/plan-phase.svg" alt-text="The plan phase." lightbox="../media/adoption-guide/plan-phase.svg":::
+:::image type="content" source="../media/adoption-guide/plan-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Plan phase highlighted." lightbox="../media/adoption-guide/plan-phase.png":::
 
 Adoption plans convert the aspirational goals of a Zero Trust strategy into an actionable plan. Your collective teams can use the adoption plan to guide their technical efforts and align these with your organization's business strategy.
 
@@ -252,11 +259,11 @@ If this staged approach works for your organization, you can use:
 
 - This [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) to present and track your progress through these stages and objectives for business leaders and other stakeholders. Here's the slide for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png" alt-text="Example of the four stages to track progress." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png":::
+  :::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png" alt-text="The PowerPoint slide for the stages to rapidly modernize your security posture deployment." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-progress-tracking.png":::
 
 - This [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign owners and track your progress for these stages, objectives, and their tasks. Here's the worksheet for this business scenario.
 
-  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-rapidly-modernize-security-posture.png" alt-text="The progress tracking worksheet for the Rapidly modernize your security posture business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-rapidly-modernize-security-posture.png":::
+  :::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-rapidly-modernize-security-posture.png" alt-text="The progress tracking worksheet to rapidly modernize your security posture deployment." lightbox="../media/adoption-guide/adoption-tracking-worksheet-rapidly-modernize-security-posture.png":::
 
 ### Stakeholder team
 
@@ -276,7 +283,7 @@ Your stakeholder team for this business scenario includes leaders across your or
 
 The [PowerPoint slide deck of resources](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) for this adoption content includes the following slide with a stakeholder view that you can customize for your own organization.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-stakeholders.png" alt-text="Example of stakeholders for modernizing your security posture." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-stakeholders.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-stakeholders.png" alt-text="The PowerPoint slide to identify key stakeholders for to rapidly modernize your security posture deployment." lightbox="../media/adoption-guide/zero-trust-rapidly-modernize-security-posture-stakeholders.png":::
 
 ### Technical plans and skills readiness
 
@@ -331,7 +338,7 @@ In addition to developing readiness plans for common attacks, this exercise can 
 
 When planning for breach readiness, you must understand the state of your physical and digital assets. The first objective in this stage is to take inventory. Note that the other business scenarios include taking inventory of the assets that are affected by the scenario. These inventories and the status of the items become part of your security posture. 
 
-For this business scenario, it is recommended that you create a list of all physical and digital assets and services and LOB applications. Physical assets include endpoints (mobile phones, PCs, and laptops), and servers (physical or virtual). Examples of digital assets include services such as emails and retention data in Exchange Online, files and records in SharePoint Online, SQL PaaS services, data lakes, files in on-premises file servers or Azure File Shares. Consider using a Cloud Access Security Broker (CASB) service such as Microsoft Defender for Cloud to expose the services used by users, including shadow IT data locations. 
+For this business scenario, it's recommended that you create a list of all physical and digital assets and services and LOB applications. Physical assets include endpoints (mobile phones, PCs, and laptops), and servers (physical or virtual). Examples of digital assets include services such as emails and retention data in Exchange Online, files and records in SharePoint Online, SQL PaaS services, data lakes, files in on-premises file servers or Azure File Shares. Consider using a Cloud Access Security Broker (CASB) service such as Microsoft Defender for Cloud to expose the services used by users, including shadow IT data locations. 
 
 The following are digital assets to include in your inventory:
 
@@ -346,7 +353,7 @@ It might not be possible to develop a detailed list of assets and their status a
 
 Ideally you can accomplish the following:
 
-- Rate your digital assets by content sensitivity and criticality. If you are unaware of the locations of these assets, consider using Microsoft Purview to discover critical data.
+- Rate your digital assets by content sensitivity and criticality. If you're unaware of the locations of these assets, consider using Microsoft Purview to discover critical data.
 - Keep an updated list of vulnerabilities that exist in your digital estate for all assets.
 
 The following Zero Trust architecture diagram illustrates the relationship of these assets to each other.
@@ -355,7 +362,7 @@ The following Zero Trust architecture diagram illustrates the relationship of th
 
 #### Implement basic hygiene
 
-This stage also includes implementing basic hygiene practices. According to the [Microsoft Digital Defense Report](https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022) (2022), “Although nation state actors can be technically sophisticated and employ a wide variety of tactics, their attacks can often be mitigated by good cyber hygiene.” The report estimates, “Ninety eight percent of attacks can be stopped with basic hygiene measures in place.”
+This stage also includes implementing basic hygiene practices. According to the [Microsoft Digital Defense Report](https://www.microsoft.com/en-us/security/business/microsoft-digital-defense-report-2022) (2022), "Although nation state actors can be technically sophisticated and employ a wide variety of tactics, their attacks can often be mitigated by good cyber hygiene." The report estimates, "Ninety eight percent of attacks can be stopped with basic hygiene measures in place."
 
 | Objectives for Stage 2| Resources |
 | --- | --- |
@@ -387,7 +394,7 @@ Stage 3 also includes maturing the managing shadow IT and patching areas of hygi
 | --- | --- |
 | Visualize your security posture using audience-appropriate dashboards| [The tracking progress section in the overview article](zero-trust-adoption-overview.md#tracking-progress) provides several examples. <br><br> As you deploy and configure additional security capabilities, look for additional audience-scoped views that are valuable for your organization. For example, see [Monitor Zero Trust (TIC 3.0) security architectures with Microsoft Sentinel](/azure/sentinel/sentinel-solution). |
 | Document and manage shadow IT using Defender for Cloud Apps| This is a hygiene area you can mature in this stage if you’ve deployed Defender for Cloud Apps. See [Integrate SaaS apps for Zero Trust with Microsoft 365](/security/zero-trust/integrate-saas-apps). |
-| Develop a methodology for patching and updating systems regularly and with time sensitivity| This task within this business scenario isn't about how to patch and update systems. Rather, it is about developing a methodology to ensure patching and updating the various components of your digital estate happens regularly with accountability, visibility, and good communication to all affected individuals. Look for opportunities to automate this, where possible. <br><br> [What are the best practices for patching and updating your IT systems?](https://www.linkedin.com/advice/1/what-best-practices-patching-updating) (LinkedIn article) <br><br> [Does Patching Make Perfect?](https://www.infosecurity-magazine.com/opinions/patching-perfect/) (Infosecurity Magazine) |
+| Develop a methodology for patching and updating systems regularly and with time sensitivity| This task within this business scenario isn't about how to patch and update systems. Rather, it's about developing a methodology to ensure patching and updating the various components of your digital estate happens regularly with accountability, visibility, and good communication to all affected individuals. Look for opportunities to automate this, where possible. <br><br> [What are the best practices for patching and updating your IT systems?](https://www.linkedin.com/advice/1/what-best-practices-patching-updating) (LinkedIn article) <br><br> [Does Patching Make Perfect?](https://www.infosecurity-magazine.com/opinions/patching-perfect/) (Infosecurity Magazine) |
 
 <a name='stage-4'></a>
 ### Stage 4
@@ -402,7 +409,7 @@ The objectives of Stage 4 are about maturing your organization’s ability to pr
 
 ## Ready phase
 
-:::image type="content" source="../media/adoption-guide/ready-phase.svg" alt-text="The ready phase." lightbox="../media/adoption-guide/ready-phase.svg":::
+:::image type="content" source="../media/adoption-guide/ready-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Ready phase highlighted." lightbox="../media/adoption-guide/ready-phase.png":::
 
 The Ready phase for this business scenario is a bit different than for other business scenarios. Rather than evaluating, testing, and piloting specific security capabilities or configurations, the Ready phase for this scenario includes building your stakeholder team and then working through each stage and objective with an agile approach.
 
@@ -412,19 +419,19 @@ For example, for each objective:
 - Begin with a reasonable approach and test it out. Adjust as needed.
 - Pilot the approach and adjust based on what you learn.
 
-the following table is an example of how this can work for the **Identify risks to your organization** objective in Stage 1 of the [Plan phase](#plan-phase).
+The following table is an example of how this can work for the **Identify risks to your organization** objective in Stage 1 of the [Plan phase](#plan-phase).
 
 | Ready task | Actions |
 | --- | --- |
 | Evaluate| Decide what resources you'll use to evaluate risks and who should be included in the activities. This evaluation can include using the tabletop exercises or the ISO standards. Determine who in your organization should participate. |
-| Test| Using the resources you are targeting, review the recommended exercises with a small set of your stakeholders to gauge your readiness to engage your fuller team of stakeholders. |
-| Pilot| If you are using the tabletop exercises, try out one of the scenarios with the chosen participants. Review the results and determine if you’re ready to proceed to the other exercises. If you’re using the ISO standards, target a portion of the standard to pilot the evaluation. |
+| Test| Using the resources you're targeting, review the recommended exercises with a small set of your stakeholders to gauge your readiness to engage your fuller team of stakeholders. |
+| Pilot| If you're using the tabletop exercises, try out one of the scenarios with the chosen participants. Review the results and determine if you’re ready to proceed to the other exercises. If you’re using the ISO standards, target a portion of the standard to pilot the evaluation. |
 
 By taking an agile approach like this, you allow opportunities to adjust and optimize your methodology and process. You also build confidence as you go.
 
 ## Adopt phase
 
-:::image type="content" source="../media/adoption-guide/adopt-phase.svg" alt-text="The adopt phase." lightbox="../media/adoption-guide/adopt-phase.svg":::
+:::image type="content" source="../media/adoption-guide/adopt-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Adopt phase highlighted." lightbox="../media/adoption-guide/adopt-phase.png":::
 
 In the adopt phase, you incrementally implement your strategy and deployment plans across functional areas. For this scenario, this involves accomplishing the objectives set out across the four stages, or the objectives and stages you have customized for your organization.
 
@@ -436,15 +443,17 @@ As you transition to the adopt phase for this scenario and the others, be sure t
 
 ## Govern and manage
 
-:::image type="content" source="../media/adoption-guide/govern-manage-phase.svg" alt-text="The govern and manage phase." lightbox="../media/adoption-guide/govern-manage-phase.svg":::
+:::image type="content" source="../media/adoption-guide/govern-manage-phase.png" alt-text="Diagram of the adoption process for a single objective or a set of objectives with the Govern and manage phase highlighted." lightbox="../media/adoption-guide/govern-manage-phase.png":::
 
 Security governance is a constant process. As you transition to this phase, shift to tracking and measuring the results of each piece of the Zero Trust architecture you’ve implemented. Together with monitoring and detecting, you'll identify opportunities to iterate for maturity.
 
+<a name='track-and-measure'></a>
 ### Track and measure
 
 This scenario article suggests different reports and dashboards you can use to assess your status and measure progress. Ultimately you want to develop a set of metrics that you can use to show progress and to identify where a new vulnerability might be emerging. You can use the various reports and dashboards to gather the metrics that are most important for your organization.
 
-The following table lists some example metrics.
+#### Team and organization metrics
+The following table lists some example metrics you can use to track your team and organization security posture. 
 
 | Business enablement | Security posture | Security response | Security improvement |
 | --- | --- | --- | --- |
@@ -453,6 +462,33 @@ The following table lists some example metrics.
 | Average boot and sign-in time for managed devices | % of compliant apps | Time to restore critical systems | Number of repetitive manual steps removed from workflows |
 | Number of security interruptions in user workflow | # of privileged accounts meeting 100% of requirements | # of high-severity incidents | # of lessons learned from internal and external incidents |
 | % of IT helpdesk time spent on low-value security activities | # of accounts meeting 100% of requirements | Incident growth rate (overall) |  |
+
+
+
+#### In-product dashboards and reports
+
+In addition to the [PowerPoint and Excel-based tracking tools](../zero-trust-assessment-progress-tracking-resources.md) that are designed to work with this adoption guidance, Microsoft provides in-product experiences to track your progress toward technical implementation.
+
+ [Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) is a security solution that provides a unified view of security posture across company assets and workloads. Within this tool, [Security Initiatives](/security-exposure-management/initiatives) help you assess readiness and maturity in specific areas of security risk. Security Initiatives take a proactive approach to managing security programs towards specific risk or domain-related objectives.
+
+Use the Zero Trust initiative to track your organization’s progress toward implementing Zero Trust security. This initiative is aligned with this Microsoft Zero Trust adoption framework, allowing you to track your progress  with metrics aligned with business scenarios. These metrics capture your resource coverage across prioritized actionable recommendations to help security teams protect their organization. The initiative also provides real-time data on your Zero Trust progress that can be shared with stakeholders. 
+
+:::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png" alt-text="Screenshot of an example of the Inventory tab in the Microsoft Defender portal." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png":::
+
+Each metric includes insights that help teams understand the current state — providing teams with recommendation details, identifying which assets are affected, and measuring the impact on the overall Zero Trust maturity. 
+
+:::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-2.png" alt-text="Screenshot of example metrics for '% of secure remote and hybrid work' within the Zero Trust initiative of the Microsoft Security Exposure Management tool." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-2.png":::
+
+Zero Trust adoption is a team game that involves both security and IT operations teams to be aligned and work together to prioritize changes that improve overall Zero Trust maturity. At the metric and task level, you can share the recommendation with the appropriate team and owner. The owner can then link directly to the admin experience of the respective security control to configure and deploy the recommendation. 
+
+:::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-3.png" alt-text="Screenshot of how metrics and recommendations can be shared with team members directly from within the Zero Trust initiative of the Microsoft Security Exposure Management tool." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-3.png":::
+
+This Zero Trust adoption framework encourages you to take a risk-based approach and/or a defensive strategy. With either of these approaches, you can target other Security Initiatives within the exposure management tool, such as Ransomware Protection or a specific threat initiative, and see your work accrue to Zero Trust maturity in the Zero Trust initiative. 
+
+You can use the Zero Trust initiative together with this Zero Trust adoption framework. The metrics and tasks within the initiative are organized by Zero Trust business scenario. 
+
+
+
 
 ### Monitor and detect
 
@@ -476,8 +512,8 @@ For any of the Zero Trust business scenarios, you can use the following progress
 
 | Progress tracking resource | That helps you… | Designed for… |
 | --- | --- | --- |
-| Adoption Scenario Plan Phase Grid downloadable [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf) <br><br> :::image type="content" source="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png" alt-text="Screenshot of an example plan and phase grid." lightbox="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png"::: | Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="Screenshot of a slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="Screenshot of a worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the Plan phase. | Business scenario project leads, IT leads, and IT implementers. |
+| Adoption Scenario Plan Phase Grid downloadable [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf) <br><br> :::image type="content" source="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png" alt-text="An example plan and phase grid showing stages and goals." lightbox="../media/adoption-guide/adoption-scenario-plan-phase-grid-example.png"::: | Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
+| Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="An example PowerPoint slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the Plan phase. | Business scenario project leads, business leaders, and other stakeholders. |
+| Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="An example of an Excel worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the Plan phase. | Business scenario project leads, IT leads, and IT implementers. |
 
 For additional resources, see [Zero Trust assessment and progress tracking resources](../zero-trust-assessment-progress-tracking-resources.md).

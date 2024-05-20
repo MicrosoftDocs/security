@@ -507,6 +507,31 @@
         "source_path": "security-docs/compass/esae-retirement.md",
         "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
         "redirect_document_id": false
+      }, 
+      {
+        "source_path": "security-docs/zero-trust/governance-risk-compliance-videos-and-decks.md",
+        "redirect_url": "/security/zero-trust/adopt/meet-regulatory-compliance-requirements",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/zero-trust/identity-videos-and-decks.md",
+        "redirect_url": "/security/zero-trust/deploy/identity",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/zero-trust/network-containment-videos-and-decks.md",
+        "redirect_url": "/security/zero-trust/deploy/networks",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/zero-trust/information-protection-and-storage-videos-and-decks.md",
+        "redirect_url": "/security/zero-trust/deploy/data",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/security-operations-videos-and-decks.md",
+        "redirect_url": "/security/operations/overview",
+        "redirect_document_id": false
       }
   ] 
   } 

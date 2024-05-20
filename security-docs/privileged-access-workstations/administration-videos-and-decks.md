@@ -6,7 +6,6 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: security
-localization_priority: Normal
 description: "Learn how to protect accounts with privileged access."
 ---
 

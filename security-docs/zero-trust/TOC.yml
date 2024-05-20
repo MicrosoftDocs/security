@@ -60,7 +60,7 @@
       href: data-compliance-gov-ransomware-recovery-readiness.md
     - name: Data protection
       href: data-compliance-gov-data.md
-- name: Microsoft 365
+- name: Microsoft cloud security services
   expanded: false
   items:
     - name: Overview
@@ -274,7 +274,7 @@
       href: copilots/zero-trust-microsoft-365-copilot.md
     - name: Zero Trust for Microsoft Copilot for Security
       href: copilots/zero-trust-microsoft-copilot-for-security.md
-- name: Microsoft Azure services
+- name: Microsoft Azure infrastructure services
   expanded: false
   items: 
     - name: Overview

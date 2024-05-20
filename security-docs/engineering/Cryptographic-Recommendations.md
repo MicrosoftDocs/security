@@ -5,7 +5,7 @@ description: Best practices and guidance for using encryption on Microsoft platf
 ms.service: security
 ms.subservice: 
 ms.topic: conceptual
-ms.date: 05/18/2024
+ms.date: 05/19/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -134,7 +134,7 @@ All products and services should use cryptographically secure random number gene
 
 - Windows Store apps can use [CryptographicBuffer.GenerateRandom](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandom.aspx) or [CryptographicBuffer.GenerateRandomNumber](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandomnumber.aspx).
 
-### Linux/MacOS
+### Linux/macOS
 
 - The `/dev/urandom` device provides a cryptographically strong source of random data, as does the `getrandom(2)` system call.
 

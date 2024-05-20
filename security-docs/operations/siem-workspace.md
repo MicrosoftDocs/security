@@ -35,15 +35,13 @@ The Security Azure subscription and the Microsoft Sentinel workspace inherit the
 
 ## Step 2: Create Log Analytics workspaces
 
-To use Microsoft Sentinel, the first step is to create your Log Analytics workspaces. A single Log Analytics workspace might be sufficient for many environments, but many organizations create multiple workspaces to optimize costs and better meet different business requirements. 
+To use Microsoft Sentinel, the first step is to create your Log Analytics workspaces. A single Log Analytics workspace might be sufficient for many environments, but many organizations create multiple workspaces to optimize costs and better meet different business requirements.
 
 It is a best practice to create separate workspaces for the operational and security data for data ownership and cost management for Microsoft Sentinel. For example, if there’s more than one person administering operational and security roles, your first decision for Zero Trust is whether to create separate workspaces for those roles.
 
 The unified security operations platform, which provides access to Microsoft Sentinel in the Defender portal, supports only a single workspace.
 
-For more information, see [Design criteria for Log Analytics workspaces](/azure/azure-monitor/logs/workspace-design#design-criteria).
-
-For an example of separate workspaces for operation and security roles, see [Contoso's solution](/azure/sentinel/sample-workspace-designs#contosos-solution).
+For more information, see [Contoso's sample solution for separate workspaces for operation and security roles](/azure/sentinel/sample-workspace-designs#contosos-solution).
 
 ### Log Analytics workspace design considerations
 

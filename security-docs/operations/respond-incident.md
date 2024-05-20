@@ -75,7 +75,7 @@ The process of incident response to resolve an incident using Microsoft Sentinel
 
    Use the Microsoft Sentinel area of the Defender portal deepen your investigation, including:
 
-   - Understanding the scope of the incident (correlate with your security Processes, Policies and Procedures [3P]). <!--what does this mean?-->
+   - Understanding the scope of the incident by correlating it with your security processes, policies and procedures (3P).
    - Performing 3P automated investigation and remediation actions and creating custom security orchestration, automation, and response (SOAR) playbooks.
    - Recording evidence for incident management.
    - Adding custom measures.
@@ -100,7 +100,7 @@ For more information, see:
 
 1. Where needed, continue the investigation in the Microsoft Sentinel portal. This includes:
 
-   - Understanding the scope of the incident (correlate with your security Processes, Policies and Procedures [3P]).
+   - Understanding the scope of the incident by correlating it with your security processes, policies and procedures (3P).
    - Performing 3P automated investigation and remediation actions and creating custom security orchestration, automation, and response (SOAR) playbooks.
    - Recording evidence for incident management.
    - Adding custom measures.

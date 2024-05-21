@@ -1,19 +1,19 @@
 ---
-title: Embedding Zero Trust security into your developer workflow
+title: Embed Zero Trust security into your developer workflow
 description: Learn how to develop using Zero Trust principles so that you can innovate quickly and securely.
 ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual
-ms.date: 11/11/2022
+ms.date: 05/24/2024
 ms.custom: template-concept
 ms.collection:
   - zerotrust-dev
 # Customer intent: As a developer, I want to develop using Zero Trust principles so that I can innovate quickly and securely.
 ---
-# Embedding Zero Trust security into your developer workflow
+# Embed Zero Trust security into your developer workflow
 
-As a developer, you need to feel confident and secure to move at speed. The need for security starts as soon as you clone your code. In this article, you'll learn how to [develop using Zero Trust principles](overview.md) so that you can innovate quickly and securely. The [Zero Trust security strategy](../zero-trust-overview.md) and approach for designing and implementing applications comprises these principles:
+As a developer, you need to feel confident and secure to move at speed. The need for security starts as soon as you clone your code. In this article, you learn how to [develop using Zero Trust principles](overview.md) so that you can innovate quickly and securely. The [Zero Trust security strategy](../zero-trust-overview.md) and approach for designing and implementing applications comprises these principles:
 
 - **Verify explicitly**. Always authenticate and authorize based on all available data points.
 - **Use least privilege access.** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
@@ -25,7 +25,7 @@ Embedding security into your workflow helps you to:
 - Provide more secure developer tooling.
 - Create connections to improve collaboration between security and development teams.
 
-## Power innovation and secure your workflow as you create code
+## Innovate and secure your workflow as you create code
 
 Microsoft's unified solution, illustrated in the following diagram, bridges across DevOps and SecOps teams to help you accelerate and secure code-to-cloud development.
 
@@ -39,24 +39,24 @@ Implement the following best practices that work together in Azure and GitHub to
 
 - Because security starts when developers clone code, [enable DevSecOps with Azure and GitHub](/devops/devsecops/enable-devsecops-azure-github) to bridge across DevOps and SecOps teams and secure your development environments.
 - Provide flexible and powerful developer tools for any developer, language, and stack with [Visual Studio](/visualstudio/) and [Visual Studio Code](https://code.visualstudio.com/docs).
-- Simplify new developer onboarding and third-party collaboration with an entire development lifecycle tool in the cloud using [GitHub Codespaces](https://docs.github.com/codespaces) and [Microsoft Dev Box](/azure/dev-box/).
+- Simplify new developer onboarding and collaboration with an entire development lifecycle tool in the cloud using [GitHub Codespaces](https://docs.github.com/codespaces) and [Microsoft Dev Box](/azure/dev-box/).
 - Include built-in intellectual property protection for code that you no longer disperse into multiple locations. Help your teams collaborate, develop, automate, and deploy code wherever they want with [GitHub Actions](https://docs.github.com/actions) and [Azure Pipelines](/azure/devops/pipelines/security/overview).
 - Get security guidance and continuous security feedback within the developer workflow with code scanning, secret scanning, and dependency review using [GitHub Advanced Security](https://docs.github.com/get-started/learning-about-github/about-github-advanced-security).
-- Instill zero-trust security throughout your organization using [identity management services](/azure/active-directory/develop/workload-identity-federation) in Microsoft Entra ID.
+- Instill zero-trust security throughout your organization using [identity management services](/entra/workload-id/workload-identity-federation) in Microsoft Entra ID.
 
 ## Fit Zero Trust security into your development lifecycle
 
-From pre-commit to commit through deploy then operate and monitor, you need security solutions in place throughout all of your development lifecycle stages.
+From precommit to commit through deploy then operate and monitor, you need security solutions in place throughout all of your development lifecycle stages.
 
-### Pre-commit stage
+### Precommit stage
 
 - Threat modeling
 - IDE security plug-in
-- Pre-commit hooks
+- Precommit hooks
 - Secure coding standards
 - Peer review
 
-Eighty-five percent of code defects appear during the development pre-commitment phase, mostly due to human error. Focus on security before you commit your code by writing your code in Visual Studio Code, Visual Studio, or GitHub Codespaces to identify vulnerabilities and secure code. Use peer reviews to encourage secure coding practices.
+Eighty-five percent of code defects appear during the development precommitment phase, mostly due to human error. Focus on security before you commit your code by writing your code in Visual Studio Code, Visual Studio, or GitHub Codespaces to identify vulnerabilities and secure code. Use peer reviews to encourage secure coding practices.
 
 ### Commit (CI) stage
 
@@ -65,7 +65,7 @@ Eighty-five percent of code defects appear during the development pre-commitment
 - Dependency management
 - Credential scanning
 
-During the commit stage, use extensive security methods to review your code (including static code analysis) and scan your code as you check it into your source control. Use credential scanning (also known as secret scanning or token scanning) to expose credentials that you may have inadvertently introduced into the codebase. Catch insecure dependencies before you introduce them to your environment with dependency review.
+During the commit stage, use extensive security methods to review your code (including static code analysis) and scan your code as you check it into your source control. Use credential scanning (also known as secret scanning or token scanning) to expose credentials that you might inadvertently introduce into the codebase. Catch insecure dependencies before you introduce them to your environment with dependency review.
 
 ### Deploy (CD) stage
 
@@ -82,7 +82,7 @@ During the deploy stage, look at the overall health of your codebase and perform
 - Threat intelligence
 - Blameless postmortems
 
-During the operate and monitor phase, use continuous monitoring and threat intelligence to mitigate overall dependency vulnerabilities that you may inherit over time. Perform postmortems to take away lessons learned and continue iterating through your DevOps cycle.
+During the operate and monitor phase, use continuous monitoring and threat intelligence to mitigate overall dependency vulnerabilities that you might inherit over time. Perform postmortems to take away lessons learned and continue iterating through your DevOps cycle.
 
 ## Implement dependency, code, and secret scanning
 
@@ -93,7 +93,7 @@ To make securing code easier for developers, use native and automated capabiliti
 - Integrated review of dependencies
 - Alerts and security updates
 
-Get risk levels of dependencies and automated fixes to vulnerable dependencies in your codebase with continuous [dependency scanning](https://docs.github.com/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review). As a continuous process, it nudges your developers in the right direction in a friendly and non-obtrusive way.
+Get risk levels of dependencies and automated fixes to vulnerable dependencies in your codebase with continuous [dependency scanning](https://docs.github.com/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review). As a continuous process, it nudges your developers in the right direction in a friendly and nonobtrusive way.
 
 ### Code scanning
 
@@ -110,7 +110,7 @@ Implement [code scanning](https://docs.github.com/code-security/code-scanning/au
 - Push protection
   - Move from remediation to prevention
   - Check for high-confidence secrets
-  - Enable protection with one click
+  - Enable protection with one select
 
 Scan your code for hardcoded credentials and tokens with [secret scanning](https://docs.github.com/code-security/secret-scanning/about-secret-scanning). Push protection scans for secrets and tokens before you push to your codebase. Check for high-confidence secrets as developers push code, blocking the push when GitHub identifies a secret.
 
@@ -120,19 +120,17 @@ Scan your code for hardcoded credentials and tokens with [secret scanning](https
 - Access governance
 - Secure adaptive access
 
-Get visibility into the activity of your [workload identities](/azure/active-directory/develop/workload-identities-overview) and enable periodic cleanup. Determine who owns workload identities and how you keep this information up to date across organization changes. Track when you have last used workload identities, when you last issued tokens and when tokens expire.
+Get visibility into the activity of your [workload identities](/entra/workload-id/workload-identities-overview) and enable periodic cleanup. Determine who owns workload identities and how you keep this information up to date across organization changes. Track when you have last used workload identities, when you last issued tokens and when tokens expire.
 
-To mitigate the potential for leaked secrets and credentials, periodically conduct access reviews. Require users to review their workload identities and remove unnecessary access privileges. Have users report overprivileged and underutilized access privileges. Discuss how you'll protect workload identities from breach. Enable conditional access to ensure that access is originating from expected resources.
-
-<a name='secure-identities-with-github-oidc-and-azure-ad-workload-identity-federation'></a>
+To mitigate the potential for leaked secrets and credentials, periodically conduct access reviews. Require users to review their workload identities and remove unnecessary access privileges. Have users report overprivileged and underutilized access privileges. Discuss how you protect workload identities from breach. Enable conditional access to ensure that access is originating from expected resources.
 
 ## Secure identities with GitHub OIDC and Microsoft Entra Workload ID Federation
 
-To further secure your organization, use [GitHub OpenID Connect](https://docs.github.com/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect) (OIDC) with Microsoft Entra [Workload Identity Federation](/azure/active-directory/develop/workload-identity-federation) and minimize the need to store and access secrets. Securely manage Azure server principal secrets and other long-lived cloud credentials resources to minimize service downtime due to expired credentials. Integrate with developer platforms, like GitHub Actions, to securely build your apps.
+To further secure your organization, use [GitHub OpenID Connect](https://docs.github.com/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect) (OIDC) with Microsoft Entra [Workload Identity Federation](/entra/workload-id/workload-identity-federation) and minimize the need to store and access secrets. Securely manage Azure server principal secrets and other long-lived cloud credentials resources to minimize service downtime due to expired credentials. Integrate with developer platforms, like GitHub Actions, to securely build your apps.
 
 Our recommended Workload Identity Federation workflow, illustrated in the following diagram, comprises six steps.
 
-:::image type="content" source="../media/develop/embed-zero-trust-dev-workflow/diagram-workload-identity-federation-inline.png" alt-text="Diagram illustrates the six Workload Identity Federation workflow steps that are described below." lightbox="../media/develop/embed-zero-trust-dev-workflow/diagram-workload-identity-federation-expanded.png":::
+:::image type="content" source="../media/develop/embed-zero-trust-dev-workflow/diagram-workload-identity-federation-inline.png" alt-text="Diagram illustrates Workload Identity Federation workflow steps." lightbox="../media/develop/embed-zero-trust-dev-workflow/diagram-workload-identity-federation-expanded.png":::
 
 1. Set up trust in Microsoft Entra ID and request a token.
 1. Configure the GitHub workflow to allow actions to get the token.
@@ -141,7 +139,7 @@ Our recommended Workload Identity Federation workflow, illustrated in the follow
 1. Microsoft Entra ID accesses and issues the token.
 1. The deploy action uses the Microsoft Entra access token to deploy to resources in Azure.
 
-Watch April Edwards, Senior Cloud Advocate and DevOps Practice Lead, demo the Workload Identity Federation workflow. The demonstration begins at the 19:14 mark in the [Accelerate and secure your code to cloud development](https://mybuild.microsoft.com/en-US/sessions/84ff7d8d-64da-4a5e-9c84-92f7b6387225?source=sessions) Microsoft Build 2022 session that is [also available on YouTube](https://www.youtube.com/watch?v=1fMdA3pSBaY&t=1154s) (embedded below).
+Watch April Edwards, Senior Cloud Advocate and DevOps Practice Lead, demo the Workload Identity Federation workflow. The demonstration begins at the 19:14 mark in the Microsoft Build 2022 session, [Accelerate and secure your code to cloud development](https://www.youtube.com/watch?v=1fMdA3pSBaY&t=1154s).
 
 > [!VIDEO https://www.youtube.com/embed/1fMdA3pSBaY]
 
@@ -149,9 +147,9 @@ Watch April Edwards, Senior Cloud Advocate and DevOps Practice Lead, demo the Wo
 
 - Sign up for [Azure Developer CLI](/azure/developer/azure-developer-cli/overview), an open-source tool that accelerates the time it takes to get started on Azure.
 - Configure Azure to trust GitHub's OIDC as a federated identity. OpenID Connect (OIDC) allows your GitHub Actions workflows to [access resources in Azure](https://docs.github.com/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure) without needing to store the Azure credentials as long-lived GitHub secrets.
-- Implement Zero Trust principles as described in memorandum 22-09 (in support of US executive order 14028, Improving the Nation's Cyber Security) by using Microsoft Entra ID as a [centralized identity management system](/azure/active-directory/standards/memo-22-09-meet-identity-requirements).
+- Implement Zero Trust principles as described in memorandum 22-09 (in support of US executive order 14028, Improving the Nation's Cyber Security) by using Microsoft Entra ID as a [centralized identity management system](/entra/standards/memo-22-09-meet-identity-requirements).
 - [Accelerate and secure your code with Azure DevOps](/events/resources/build-2022/accelerate-secure-devops) with tools that give developers the fastest and most secure code to cloud experience.
-- [Securing the developer environment](secure-dev-environment-zero-trust.md) helps you to implement Zero Trust principles in your development environments with best practices for least privilege, branch security, and trusting tools, extensions, and integrations.
-- [Securing DevOps environments for Zero Trust](secure-devops-environments-zero-trust.md) describes best practices for securing your DevOps environments for preventing hackers from compromising developer boxes, infecting release pipelines with malicious scripts, and gaining access to production data via test environments.
-- [Customizing tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens and how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
-- [Configuring group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Secure the developer environment](secure-dev-environment-zero-trust.md) helps you to implement Zero Trust principles in your development environments with best practices for least privilege, branch security, and trusting tools, extensions, and integrations.
+- [Secure DevOps environments for Zero Trust](secure-devops-environments-zero-trust.md) describes best practices for securing your DevOps environments for preventing hackers from compromising developer boxes, infecting release pipelines with malicious scripts, and gaining access to production data via test environments.
+- [Customize tokens](zero-trust-token-customization.md) describes the information that you can receive in Microsoft Entra tokens. It explains how to customize tokens to improve flexibility and control while increasing application zero trust security with least privilege.
+- [Configure group claims and app roles in tokens](configure-tokens-group-claims-app-roles.md) shows you how to configure your apps with app role definitions and assign security groups to app roles. These methods help to improve flexibility and control while increasing application zero trust security with least privilege.

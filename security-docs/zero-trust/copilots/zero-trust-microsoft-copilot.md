@@ -7,7 +7,8 @@ author: BrendaCarter
 ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
-  - M365copilot 
+  - M365copilot
+  - magic-ai-copilot 
   - msftsolution-copilot
   - msftsolution-scenario
   - zerotrust-solution

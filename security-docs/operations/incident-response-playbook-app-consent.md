@@ -13,7 +13,6 @@ f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection:

@@ -36,6 +36,12 @@ For new articles in this content set, please:
 - Add a link to the Zero Trust Guidance Center page (index.yml).
 - Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed.
 
+Additional authors:
+
+- Mays Algebary
+- Mauricio Rojas
+- Adam Torkar
+
 --->
 
 This article provides guidance to applying the [principles of Zero Trust](zero-trust-overview.md) for encrypting network communication to, from, and across Azure environments in the following ways. 

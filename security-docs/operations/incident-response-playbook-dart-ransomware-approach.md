@@ -13,7 +13,6 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-localization_priority: Normal
 audience: ITPro
 ms.collection: 
   - msftsolution-ransomware

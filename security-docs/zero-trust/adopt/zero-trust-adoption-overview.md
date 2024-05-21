@@ -22,7 +22,7 @@ To update figures that are not screen shots, your options are:
 - Locate the source Visio file in internal storage.
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
-For updates that affect text in the PowerPoint slides of the Plan phase, your options are:
+For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
 - Locate the source PowerPoint file in internal storage. 
 - Download a copy of the PowerPoint file from the article.
@@ -36,6 +36,13 @@ For updates that affect text in the Excel Business Scenario Objectives workbook 
 
 After updating, republish the updated Excel file in the Download Center.
 
+For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
+
+- Locate the source Visio file in internal storage. 
+- Download a copy of the Visio file from the article.
+
+After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
+
 For new articles in this content set, please:
 
 - Add cross-links FROM all the other articles in this content set TO the new article in the "Next Steps" section.
@@ -45,7 +52,7 @@ For new articles in this content set, please:
 
 # Zero Trust adoption framework overview
 
-:::image type="content" source="../media/adoption-guide/zero-trust-working-group.jpg" alt-text="Zero Trust working group" lightbox="../media/adoption-guide/zero-trust-working-group.jpg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-working-group.jpg" alt-text="Picture of members of the Zero Trust working group." lightbox="../media/adoption-guide/zero-trust-working-group.jpg":::
 
 Digital transformation is shaping a new normal. Organizations are embracing digital transformation to manage continuous business environment changes by tracking:
 
@@ -66,13 +73,13 @@ Many security architects and IT teams ask for help communicating to business lea
 - A systematic way to track progress, scoped to business leaders.
 - Curation of the most relevant resources for adoption of Zero Trust from slides that are ready to present to business leaders to technical implementation guidance and user infographics.
 
-“Our goal is to help every organization strengthen its security capabilities through a Zero Trust architecture built on our comprehensive solutions that span identity, security, compliance, and device management across all clouds and platforms.” –Satya Nadella, executive chairman and CEO of Microsoft
+"Our goal is to help every organization strengthen its security capabilities through a Zero Trust architecture built on our comprehensive solutions that span identity, security, compliance, and device management across all clouds and platforms." –Satya Nadella, executive chairman and CEO of Microsoft
 
 As a Microsoft partner, NBConsult contributed to and provided material feedback to this adoption guidance.
 
 ## Zero Trust requires buy-in at the highest level
 
-Zero Trust protects business assets wherever they're and wherever they go. Zero Trust is a proactive, integrated approach to security that requires knowing what business assets and processes are most important to protect, and securing these while preserving business agility.
+Zero Trust protects business assets wherever they are located and wherever they go. Zero Trust is a proactive, integrated approach to security that requires knowing what business assets and processes are most important to protect, and securing these while preserving business agility.
 
 **Adopting a Zero Trust approach requires buy-in across the C-suite.** As the threat landscape expands, and critical attacks become more common, business leaders across functional areas are increasingly concerned with the cybersecurity approach their organization's take.
 
@@ -81,7 +88,7 @@ Zero Trust allows the entire C-suite and business to embrace a measurable busine
 Zero Trust adds value to two predominant scenarios that are seen in the marketplace:
 
 1. **A formal security strategy aligned to business outcomes.** This Zero Trust approach provides a holistic view on security to the entire business, through values that are shared across the business and adopted at every level from the top down. This is often CISO-led and business outcomes are tracked as part of the reporting function of Zero Trust in an ongoing manner.
-1. **Delegated security to IT functions** where security is treated as another technology vertical with minimal C-suite input and integration. This often focuses on short term cost optimization for security rather than managing it as a business risk, often further separating security into non-integrated “best of breed” independent solutions. 
+1. **Delegated security to IT functions** where security is treated as another technology vertical with minimal C-suite input and integration. This often focuses on short term cost optimization for security rather than managing it as a business risk, often further separating security into non-integrated "best of breed" independent solutions. 
 
 Zero Trust provides a way of integrating the vertical solutions into a single vision. This vision supports consistent business capabilities and outcomes and provides ongoing measurable metrics on the state of security.
 
@@ -96,7 +103,7 @@ The following is a generalized view of the possible functions taken by various C
 | Chief Information Officer (CIO) | Responsible for IT as a whole | Zero Trust principles eliminate vertical security solutions that aren't aligned to business outcomes and enables Security as a Platform, which does align to business outcomes. |
 | Chief Information Security Officer (CISO) | Responsible for security program implementation | Zero Trust principles provide a sufficient foundation for the organization to comply with various security standards and enables the organization to secure data, assets, and infrastructure. |
 | Chief Technology Officer (CTO) | Chief Architect in the business | Zero Trust helps with defensible technology alignment aligned to business outcomes. Using Zero Trust, security is baked into every architecture. |
-| Chief Operations Officer (COO) | Responsible for operational execution | Zero Trust helps with operational governance; the “how to” of the security vision and the surfacing of who did what and when. Both are aligned to business outcomes. |
+| Chief Operations Officer (COO) | Responsible for operational execution | Zero Trust helps with operational governance; the "how to" of the security vision and the surfacing of who did what and when. Both are aligned to business outcomes. |
 | Chief Financial Officer (CFO) | Responsible for governance and spend | Zero Trust helps with the accountability of spend and the defensibility of spend; a measurable way of gaining a risk-based measure against security and Zero Trust spending aligned to business outcomes. |
 
 ## Zero Trust principles for the C-suite
@@ -130,7 +137,7 @@ For example, the identity team can only make so much progress in utilizing Micro
 
 The following diagram integrates these functional areas into a unified Zero Trust architecture.
 
-:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.svg" alt-text="The overall architecture for Zero Trust" lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.svg":::
+:::image type="content" source="../media/zero-trust-ramp-overview/zero-trust-architecture.svg" alt-text="Diagram of the overall architecture for Zero Trust." lightbox="../media/zero-trust-ramp-overview/zero-trust-architecture.svg":::
 
 In the diagram:
 
@@ -142,11 +149,11 @@ The next section discusses how to get started on the Zero Trust journey. We’ll
 
 ## The Zero Trust adoption motion
 
-Customers who are familiar with the Cloud Adoption Framework for Azure have asked, “Where’s the Zero Trust adoption framework?”
+Customers who are familiar with the Cloud Adoption Framework for Azure have asked, "Where’s the Zero Trust adoption framework?"
 
 The [Cloud Adoption Framework for Azure](https://azure.microsoft.com/solutions/cloud-enablement/cloud-adoption-framework) is a methodical process for introducing new apps and services into an organization. The focus is primarily on a proven process an organization can follow to introduce an app or service into the environment. The scale motion is repeating the process for each app that is added to a digital estate.
 
-Adoption of a Zero Trust strategy and architecture requires a different scope. It is about introducing new security configurations *across an entire digital estate*. The scale motion is two dimensional:
+Adoption of a Zero Trust strategy and architecture requires a different scope. It's about introducing new security configurations *across an entire digital estate*. The scale motion is two dimensional:
 
 - Taking a piece of the Zero Trust architecture, such as data protection, and scaling out this protection across the entire digital estate.
 - Repeating the process with each additional piece of the Zero Trust architecture, starting with strategic quick wins and foundational pieces, and then advancing to more complex pieces.
@@ -155,11 +162,11 @@ Like the Cloud Adoption Framework for Azure, this Zero Trust adoption guidance a
 
 The following diagram summarizes the differences between these two types of adoption motions.
 
-:::image type="content" source="../media/adoption-guide/azure-and-zero-trust-frameworks.svg" alt-text="The differences between the Azure and Zero Trust adoption frameworks." lightbox="../media/adoption-guide/azure-and-zero-trust-frameworks.svg":::
+:::image type="content" source="../media/adoption-guide/azure-and-zero-trust-frameworks.svg" alt-text="Diagram of the differences between the Azure Cloud Adoption and Zero Trust adoption frameworks." lightbox="../media/adoption-guide/azure-and-zero-trust-frameworks.svg":::
 
 This Zero Trust adoption guidance uses the same lifecycle phases as the Cloud Adoption Framework for Azure but adapted for Zero Trust.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Zero Trust adoption guidance uses the same lifecycle phases" lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
+:::image type="content" source="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg" alt-text="Diagram showing how the Zero Trust adoption guidance uses the same lifecycle phases as the Azure Adoption Framework." lightbox="../media/adoption-guide/zero-trust-framework-lifecycle-phases.svg":::
 
 The following table describes the lifecycle phases.
 
@@ -188,17 +195,17 @@ Each of these business scenarios breaks down the work of Zero Trust into managea
 
 This guidance includes a [PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) with progress slides that you can use to present the work and track your progress at a high level for business leaders and other stakeholders. The slides include features that help you keep track of and present progress to stakeholders. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="Example of a progress slide." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
+:::image type="content" source="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png" alt-text="Example of a progress slide showing stages and objectives." lightbox="../media/adoption-guide/zero-trust-remote-work-progress-tracking.png":::
 
 This guidance also includes an [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) with worksheets for each business scenario that you can use to assign owners and track progress for each stage, objective, and task. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png" alt-text="Example of the progress tracking worksheet for the Secure remote and hybrid work business scenario." lightbox="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png":::
+:::image type="content" source="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png" alt-text="Example of a progress tracking worksheet showing stages, objectives, and tasks." lightbox="../media/adoption-guide/adoption-tracking-worksheet-remote-hybrid-work.png":::
 
 Across the business scenarios, the implementation stages are roughly aligned so that accomplishing the objectives of Stage 1 across the scenarios help keep your organization progressing on all fronts together.
 
 ## Starting a Zero Trust journey
 
-If you are embarking on a Zero trust journey that is aligned to a business scenario or looking to embrace Zero Trust as a strategic defense doctrine, success can be difficult to measure. This is because security doesn't pass a simple pass/fail type of evaluation. Rather, security is a commitment and a journey, to which Zero Trust supplies guiding principles.
+If you're embarking on a Zero trust journey that is aligned to a business scenario or looking to embrace Zero Trust as a strategic defense doctrine, success can be difficult to measure. This is because security doesn't pass a simple pass/fail type of evaluation. Rather, security is a commitment and a journey, to which Zero Trust supplies guiding principles.
 
 Using this adoption guidance as a process framework, first establish and document our security strategy, very similar to a Project Initiation Document (PID).  Using the principles that apply to strategy, at minimum, you should document:
 
@@ -213,11 +220,13 @@ Each business scenario encompasses a different set of assets with different tool
 3. **Asset Management:** How do you choose to protect (govern) and administer (manage) these assets?
 4. **Asset Recovery:** How do you recover from compromise or loss of control of an asset (govern)?
 
-Each business scenario recommends how to take inventory as well as how to protect the assets and report on progress. While there is inevitably some overlap across the business scenarios, this adoption guidance attempts to simplify as much as possible by addressing asset types in predominantly one business scenario.
+Each business scenario recommends how to take inventory as well as how to protect the assets and report on progress. While there's inevitably some overlap across the business scenarios, this adoption guidance attempts to simplify as much as possible by addressing asset types in predominantly one business scenario.
 
 ## Tracking progress
 
 Tracking your progress throughout the Zero Trust adoption process is crucial as it allows your organization to monitor and measure strategic goals and objectives.
+
+### What to track and measure
 
 Microsoft recommends taking two approaches to tracking your progress:
 
@@ -228,7 +237,7 @@ Many organizations use International Organization for Standardization (ISO) stan
 
 - ISO/IEC 27001:2022 
 
-  - Information security, cybersecurity and privacy protection
+  - Information security, cybersecurity, and privacy protection
   - Information security management systems
   - Requirements
 
@@ -240,30 +249,46 @@ The requirements and guidelines in these standards are generic and can apply to 
 
 Identifying and understanding the specific risks that apply to your organization will help you prioritize your most strategic objectives across the Zero Trust architecture.
 
-Once your organization has identified and prioritized your most strategic technical objectives, you can map out a staged roadmap for implementation. You can then track your progress by using various tools:
+### How to track and measure
 
-- A downloadable [PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) with progress tracking slides. These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
-- [Secure Score](/microsoft-365/security/defender/microsoft-secure-score) is an aggregated score of technical controls that contribute to your current security posture. Secure Score gives your organization a global view of the controls that have and are still to be implemented.
-- [Cloud Security Posture Management (CSPM) tools](/azure/defender-for-cloud/concept-cloud-security-posture-management) provided with Microsoft Defender for Cloud.
+Once your organization has identified and prioritized your most strategic technical objectives, you can map out a staged roadmap for implementation. You can then track your progress by using various tools.
 
-Note that the progress percentage provided by Secure Score might not be accurate for organizations that aren't willing to implement all controls due to reasons such as:
+#### Customizable tracking reports
 
-- Scope of the business
-- Licensing
-- Capacity
+Microsoft provides customizable PowerPoint and Excel tracking tools. These are pre-populated with objectives and tasks, organized by Zero Trust business scenarios. You can customize these with your own priorities, objectives, and team members.
 
-Additionally, several portals and reports can assist you in creating an overview of risk within your business, including:
+- Business leader tracker — A downloadable [PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) with progress tracking slides. These are designed to help you track and communicate progress at a high level. Customize these slides for your own use.
+- Implementer tracker — A downloadable [Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) to assign ownership and track your progress through the stages, objectives, and tasks. For business scenario project leads, IT leads, and IT implementers. 
 
-- Reports within Microsoft Defender XDR provide information regarding security trends and track the protection status of your identities, data, devices, applications and infrastructure.
+#### In-product dashboards
+
+[Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) is a security solution that provides a unified view of security posture across company assets and workloads. Within this tool, [Security Initiatives](/security-exposure-management/initiatives) help you assess readiness and maturity in specific areas of security risk. Security Initiatives take a proactive approach to managing security programs towards specific risk or domain-related objectives.
+
+Use the Zero Trust initiative to track your organization’s progress toward implementing Zero Trust security. This initiative is aligned with this Microsoft Zero Trust adoption framework, allowing you to track your progress  with metrics aligned with business scenarios. These metrics capture your resource coverage across prioritized actionable recommendations to help security teams protect their organization. The initiative also provides real-time data on your Zero Trust progress that can be shared with stakeholders. 
+
+:::image type="content" source="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png" alt-text="Screenshot of an example of the Zero Trust initiative within Microsoft Security Exposure Management." lightbox="../media/adoption-guide/exposure-management-zero-trust-initiative-screen-1.png":::
+
+For more information about how to use the Zero Trust initiative within the Exposure Management tool, see [Rapidly modernize your security posture — Track and measure](../adopt/rapidly-modernize-security-posture.md#track-and-measure).
+
+
+Additionally, several other portals and reports can assist you in creating an overview of risk within your business, including:
+
+- The Critical Asset Protection initiative in Microsoft Security Exposure Management brings together critical asset risk across Defender products and areas.
+- Reports within Microsoft Defender XDR provide information regarding security trends and track the protection status of your identities, data, devices, applications, and infrastructure.
 - The Cloud Security Explorer allows you to proactively hunt for security risks.
 
 For example, within Microsoft Defender XDR, the device inventory provides a clear view into newly discovered devices in your network that aren't yet protected. At the top of each **Device inventory** tab, you can see the total number of devices that aren't onboarded. Here's an example.
 
-:::image type="content" source="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png" alt-text="Example of the Inventory tab in the Microsoft Defender portal" lightbox="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png":::
+:::image type="content" source="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png" alt-text="Screenshot of an example of the Inventory tab in the Microsoft Defender portal." lightbox="../media/adoption-guide/microsoft-365-defender-device-inventory-example.png":::
+
 
 For more information on using Microsoft Defender XDR to track your progress, see [Strengthen your security posture with Microsoft Defender XDR](/microsoft-365/security/security-posture-solution-overview).
 
-For more information about how to use Secure Score, see [Secure Score documentation](/microsoft-365/security/defender/microsoft-secure-score). 
+Note that the progress percentages provided by in-product tools might not be accurate for organizations that aren't willing to implement all controls due to reasons such as:
+
+- Scope of the business
+- Licensing
+- Capacity
 
 ## Additional articles for adoption
 

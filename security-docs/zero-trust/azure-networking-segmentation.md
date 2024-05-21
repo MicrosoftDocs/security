@@ -1,7 +1,7 @@
 ---
-title: Apply Zero Trust principles to encrypting Azure-based network communication
-description: Learn how to apply Zero Trust principles to encrypting Azure-based network communication.
-ms.date: 03/20/2024
+title: Apply Zero Trust principles to segmenting Azure-based network communication
+description: Learn how to apply Zero Trust principles to segmenting Azure-based network communication.
+ms.date: 05/20/2024
 ms.service: security
 author: duongau
 ms.author: duau
@@ -14,7 +14,7 @@ ms.collection:
   - zerotrust-azure
 ---
 
-# Apply Zero Trust principles to encrypting Azure-based network communication
+# Apply Zero Trust principles to segmenting Azure-based network communication
 
 <!---
 
@@ -38,36 +38,27 @@ For new articles in this content set, please:
 
 --->
 
-This article provides guidance to applying the [principles of Zero Trust](zero-trust-overview.md) for encrypting network communication to, from, and across Azure environments in the following ways. 
+This article provides guidance to applying the [principles of Zero Trust](zero-trust-overview.md) for segmenting networks in Azure environments. Here are the Zero Trust principles. 
 
-| Zero Trust principle | Definition | Met by |
-| --- | --- | --- |
-| Verify explicitly | Always authenticate and authorize based on all available data points. | Using Conditional Access policies for your Azure VPN Gateway connections and Secure Shell (SSH) and Remote Desktop Protocol (RDP) for your user-to-virtual machine connections. |
-| Use least privileged access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Configuring your Microsoft Enterprise Edge (MSEE) devices to use static connectivity association key (CAK) for Azure ExpressRoute with direct ports and using managed identity to authenticate ExpressRoute circuit resources. |
-| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Protecting network traffic with encryption methods and protocols that provide confidentiality, integrity, and authenticity of your data in transit. <br><br> Using Azure Monitor to provide ExpressRoute network performance metrics and alerts. <br><br> Using Azure Bastion to manage individual sessions from the Bastion service and delete or force a disconnect.|
+| Zero Trust principle | Definition |
+| --- | --- |
+| Verify explicitly | Always authenticate and authorize based on all available data points. |
+| Use least privileged access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. |
 
 This article is a part of a series of articles that demonstrate how to apply the principles of Zero Trust for Azure networking.
 
-The levels of encryption for network traffic are:
+As organizations grow from small businesses into large enterprises, they often need to move from a single Azure subscription into multiple subscriptions to separate resources for each department. It’s important to carefully plan the segmentation of your network to create logical boundaries and isolation between environments. 
 
-- Network layer encryption
+Each environment, typically reflecting a separate department of your organization, should have its own access permissions and policies for specific workloads. For example, users from your internal software developer subscription shouldn't have access to managing and deploying network resources in the connectivity subscription. However, these environments still need network connectivity to achieve the required functionality to basic services, such as DNS, hybrid connectivity, and being able to reach other resources across different [Azure virtual networks (VNets)](/azure/virtual-network/virtual-networks-overview). 
 
-  - Secure and verify communication from the internet or your on-premises network to Azure VNets and virtual machines
-
-   - Secure and verify communication within and across Azure VNets
- 
-- Application layer encryption
-
-  - Protection for Azure Web Applications
-
-- Protection for workloads running on Azure virtual machines
-
+The segmentation of your Azure infrastructure provides not only isolation but can also create security boundaries that prevent an attacker from moving across environments and inflicting additional damage (the Assume breach Zero Trust principle).
 
 ## Reference architecture
 
 The following diagram shows the reference architecture for this Zero Trust guidance for encrypted communication between users and admins on-premises or on the internet and components in the Azure environment for the steps described in this article.
 
-:::image type="content" source="media/azure-networking/azure-networking-encryption.svg" alt-text="The reference architecture for Azure networking components with encryption and Zero Trust principles applied." lightbox="media/azure-networking/azure-networking-encryption.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation.svg" alt-text="The reference architecture for Azure networking components with segmentation and Zero Trust principles applied." lightbox="media/azure-networking/azure-networking-segmentation.svg":::
  
 In the diagram, the numbers correspond to the steps in the following sections.
 

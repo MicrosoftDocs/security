@@ -81,7 +81,7 @@ Azure networking uses the following levels of segmentation:
 
   - Azure Firewall
 
-    [Azure Firewall](/azure/firewall/overview) is a service deployed in a VNet to filter traffic between cloud resources, on-premises, and the Internet. With Azure Firewall you can define rules and policies to allow or deny traffic at the network and application layers, and you can also benefit from the advanced threat protection features provided by Azure Firewall like IDPS, TLS inspection, and threat-intelligence based filtering.
+    [Azure Firewall](/azure/firewall/overview) is a service deployed in a VNet to filter traffic between cloud resources, on-premises, and the Internet. With Azure Firewall, you can define rules and policies to allow or deny traffic at the network and application layers. You can also benefit from the advanced threat protection features provided by Azure Firewall like IDPS, TLS inspection, and threat-intelligence based filtering.
 
   - Network security group
 
@@ -135,7 +135,7 @@ For more information, see the guidance in [Pattern 1: Single virtual network](/a
 
 ## Step 2: Connect multiple VNets with peering
 
-By default, there's no allowed communication between VNets with a single Azure subscription or across multiple subscriptions. Multiple VNets, each belonging to different entities, have their own access controls. They can connect to each other or to a centralized hub VNet using VNet peering, where all traffic must be inspected by an Azure Firewall or a third-party NVA.
+By default, there's no allowed communication between VNets with a single Azure subscription or across multiple subscriptions. Multiple VNets, each belonging to different entities, have their own access controls. They can connect to each other or to a centralized hub VNet using VNet peering, where an Azure Firewall or a third-party NVA inspects all traffic.
 
 This illustration shows a VNet peering connection between two VNets and the use of Azure Firewall on each end of the connection and crossing the VNet segmentation boundary.
  
@@ -161,16 +161,15 @@ For multiple VNets in a hub and spoke configuration, you need to consider how to
 
 ### Internet boundary
 
-Securing Internet traffic is a fundamental priority in network security. This involves managing ingress traffic from the Internet (untrusted) and egress traffic directed towards the Internet (trusted) from your workloads. 
+Securing Internet traffic is a fundamental priority in network security, which involves managing ingress traffic from the Internet (untrusted) and egress traffic directed towards the Internet (trusted) from your workloads. 
 
-Microsoft recommends that ingress traffic from the Internet has a single point of entry. Generally, Microsoft highly encourages that the ingress traffic traverse through an Azure PaaS resource such as Azure Firewall, Azure Front Door, and Azure Application Gateway, which offer significantly more capabilities than a virtual machine with a public IP address.
+Microsoft recommends that ingress traffic from the Internet has a single point of entry. Microsoft highly encourages that the ingress traffic traverse through an Azure PaaS resource such as Azure Firewall, Azure Front Door, or Azure Application Gateway. These PaaS resources offer more capabilities than a virtual machine with a public IP address.
 
 #### Azure Firewall
 
 This illustration shows how Azure Firewall in its own subnet acts as a central entry point and segmentation boundary for traffic between the Internet and a three-tier workload in an Azure VNet.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-azure-firewall.svg
-" alt-text="A diagram showing the use of Azure Firewall for traffic segmentation between a VNet and the Internet." lightbox="media/azure-networking/azure-networking-segmentation-azure-firewall.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-azure-firewall.svg" alt-text="A diagram showing the use of Azure Firewall for traffic segmentation between a VNet and the Internet." lightbox="media/azure-networking/azure-networking-segmentation-azure-firewall.svg":::
  
 For more information, see [Azure Firewall in the Microsoft Azure Well-Architected Framework](/azure/well-architected/service-guides/azure-firewall).
 
@@ -192,7 +191,7 @@ The Internet point of entry can also be a combination of ingress points. For exa
 
 This illustration shows Internet ingress traffic and the use of an Application Gateway with a Web Application Firewall for HTTP/HTTPS traffic and an Azure Firewall for all other traffic.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-application=gateway.svg" alt-text="A diagram showing the ways to connect and segment traffic between an Azure subscription and an on-preises network." lightbox="media/azure-networking/azure-networking-segmentation-application=gateway.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-application-gateway.svg" alt-text="A diagram showing the ways to connect and segment traffic between an Azure subscription and an on-preises network." lightbox="media/azure-networking/azure-networking-segmentation-application-gateway.svg":::
  
 Two commonly recommended scenarios are to:
 
@@ -205,7 +204,7 @@ Here are additional common patterns for Internet traffic flows.
 
 #### Ingress traffic using multiple interfaces
 
-One approach involves using multiple network interfaces on virtual machines when using NVAs, one for untrusted traffic (external facing) and another for trusted traffic (internal facing). In terms of traffic flows, ingress traffic from on-premises must be routed to the NVA using UDRs. Ingress traffic from the internet will be received by the NVA and must be routed to the destination workload on the appropriate VNet or subnet by a combination of static routes in the guest OS appliance and UDRs. 
+One approach involves using multiple network interfaces on virtual machines when using NVAs, one for untrusted traffic (external facing) and another for trusted traffic (internal facing). In terms of traffic flows, ingress traffic from on-premises must be routed to the NVA using UDRs. Ingress traffic from the internet is received by the NVA and must be routed to the destination workload on the appropriate VNet or subnet by a combination of static routes in the guest OS appliance and UDRs.
 
 #### Egress traffic and UDRs
 
@@ -213,7 +212,7 @@ For traffic departing your VNet for the Internet, you can apply a UDR using a ro
 
 #### Egress traffic and a default route
 
-Some methods involve managing a default route (0.0.0.0/0) utilizing different methods. As a general rule, it's recommended that egress traffic originating in Azure utilizes exit points and inspection utilizing Azure Firewall or NVAs due to the amount of throughput that the Azure infrastructure can handle which in most cases might be far greater and more resilient. In this case, configuring a default route in the UDR of the workload subnets can force traffic to those exit points. Some customers might also prefer that exiting traffic from on premises is routed to Azure as an exit point, and for that, customers will utilize Route Server in combination with an NVA to advertise a default route to on-premises utilizing Border Gateway Protocol (BGP). 
+Some methods involve managing a default route (0.0.0.0/0) utilizing different methods. As a general rule, it's recommended that egress traffic originating in Azure utilizes exit points and inspection utilizing Azure Firewall or NVAs due to the amount of throughput that the Azure infrastructure can handle which in most cases might be far greater and more resilient. In this case, configuring a default route in the UDR of the workload subnets can force traffic to those exit points. You might also prefer that exiting traffic from on-premises is routed to Azure as an exit point, and for that, customers will utilize Route Server in combination with an NVA to advertise a default route to on-premises utilizing Border Gateway Protocol (BGP). 
 
 There are special cases when companies need all egress traffic to be routed back to on-premises by advertising a default route (0.0.0.0/0) over BGP. This forces traffic leaving the VNet to be tunneled to your on-premises network to a firewall for inspection. This last approach is the least desired due to increased latency and lack of security controls provided by Azure, although is widely adopted by the government and banking sectors that have specific requirements for traffic inspection in their on-premises environment. 
 

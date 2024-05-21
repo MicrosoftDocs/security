@@ -52,7 +52,7 @@ This article provides guidance to applying the [principles of Zero Trust](zero-t
 | Use least privileged access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Configuring your Microsoft Enterprise Edge (MSEE) devices to use static connectivity association key (CAK) for Azure ExpressRoute with direct ports and using managed identity to authenticate ExpressRoute circuit resources. |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Protecting network traffic with encryption methods and protocols that provide confidentiality, integrity, and authenticity of your data in transit. <br><br> Using Azure Monitor to provide ExpressRoute network performance metrics and alerts. <br><br> Using Azure Bastion to manage individual sessions from the Bastion service and delete or force a disconnect.|
 
-This article is a part of a series of articles that demonstrate how to apply the principles of Zero Trust for Azure networking.
+This article is a part of a [series of articles](azure-networking-overview.md) that demonstrate how to apply the principles of Zero Trust for Azure networking.
 
 The levels of encryption for network traffic are:
 

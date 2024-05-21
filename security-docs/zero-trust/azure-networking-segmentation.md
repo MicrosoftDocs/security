@@ -97,8 +97,7 @@ Azure networking uses the following levels of segmentation:
 
 The following diagram shows the reference architecture for the levels of segmentation.
 
-
-:::image type="content" source="media/azure-networking/azure-networking-segmentation.svg" alt-text="The reference architecture for Azure networking components with segmentation and Zero Trust principles applied." lightbox="media/azure-networking/azure-networking-segmentation.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-reference-architecture.svg" alt-text="A diagram showing the ." lightbox="media/azure-networking/azure-networking-segmentation-reference-architecture.svg":::
  
 In the diagram, the solid red lines indicate a level of segmentation between:
 
@@ -127,7 +126,7 @@ To create isolation between subnets, you can apply network security groups or ap
 
 This illustration shows a common and recommended configuration of a three-tier application with separate subnets for each tier and the use of network security groups and application security groups to create segmented boundaries between each subnet.
 
->> ADD 
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-nsg-asg.svg" alt-text="A diagram showing the ." lightbox="media/azure-networking/azure-networking-segmentation-nsg-asg.svg":::
  
 You can also achieve segmentation of resources by routing inter-subnet traffic through the implementation of user-defined routes (UDRs) pointing to an Azure Firewall or a third-party Network Virtual Appliance (NVA). Azure Firewall and NVAs also have the capability to permit or deny traffic using layer 3 to layer 7 controls. Most of these services provide advanced filtering capabilities.
 
@@ -140,8 +139,8 @@ By default, there is no allowed communication between VNets with a single Azure 
 
 This illustration shows a VNet peering connection between two VNets and the use of Azure Firewall on each end of the connection and crossing the VNet segmentation boundary.
  
->> ADD
-
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-vnet-peering.svg" alt-text="A diagram showing the ." lightbox="media/azure-networking/azure-networking-segmentation-vnet-peering.svg":::
+ 
 A hub VNet typically houses shared components such as firewalls, identity, and hybrid connectivity components, among others. UDR management becomes simpler as adding specific prefix UDRs for micro-segmentation would only be necessary if intra-VNet traffic is a requirement. However, since the VNet has its own boundaries, security controls are already in place.
 
 For more information, see the guidance in:
@@ -170,7 +169,8 @@ Microsoft recommends that ingress traffic from the Internet has a single point o
 
 This illustration shows how Azure Firewall in its own subnet acts as a central entry point and segmentation boundary for traffic between the Internet and a three-tier workload in an Azure VNet.
 
->> ADD
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-azure-firewall.svg
+" alt-text="A diagram showing the ." lightbox="media/azure-networking/azure-networking-segmentation-azure-firewall.svg":::
  
 For more information, see [Azure Firewall in the Microsoft Azure Well-Architected Framework](/azure/well-architected/service-guides/azure-firewall).
 
@@ -182,7 +182,7 @@ Azure Front Door is more than a load balancing service. The Azure Front Door inf
 
 This illustration shows how Azure Front Door provides segmentation between Internet users and Azure resources, which can be in storage accounts.
  
->> ADD
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-azure-front-door.svg" alt-text="A diagram showing the ." lightbox="media/azure-networking/azure-networking-segmentation-azure-front-door.svg":::
 
 For more information, see [Azure Front Door in the Azure Well-Architected Framework](/azure/well-architected/service-guides/azure-front-door).
 
@@ -192,7 +192,7 @@ The Internet point of entry can also be a combination of ingress points. For exa
 
 This illustration shows Internet ingress traffic and the use of an Application Gateway with a Web Application Firewall for HTTP/HTTPS traffic and an Azure Firewall for all other traffic.
 
->> ADD
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-application=gateway.svg" alt-text="A diagram showing the ." lightbox="media/azure-networking/azure-networking-segmentation-application=gateway.svg":::
  
 Two commonly recommended scenarios are to:
 
@@ -220,7 +220,8 @@ There are special cases when companies need all egress traffic to be routed back
 In terms of scale:
 
 - For a single VNet, you can use network security groups, which strictly adhere to layer 4 semantics, or you can use an Azure Firewall that adheres to both Layer 4 and Layer 7 semantics. 
- - For multiple VNets, a single Azure Firewall can still be used if it's reachable, or an Azure Firewall can be deployed in each virtual network and traffic directed with UDRs.
+
+- For multiple VNets, a single Azure Firewall can still be used if it's reachable, or an Azure Firewall can be deployed in each virtual network and traffic directed with UDRs.
 
 For large enterprise distributed networks, you can still use the hub and spoke model and direct traffic with UDRs. However, this can lead to management overhead and VNet peering limits. For ease of use, Azure Virtual WAN can achieve this if you deploy an Azure Firewall in the virtual hub and activate Routing Intent for Internet security. This will inject 0.0.0.0/0 routes across all spokes and branch networks and send that traffic to the Azure Firewall for the inspection of Internet-bound traffic. For Private bound traffic, traffic destined to RFC 1918 blocks will also be sent to the Azure Firewall or NVA as designated next hop inside the Azure Virtual WAN hub.
 
@@ -230,8 +231,8 @@ In Azure, the main methods to establish connectivity with on-premises networks i
 
 This illustration shows the different types of connection methods between an Azure environment and an on-premises network.
 
->> ADD
-
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-on-premises.svg" alt-text="A diagram showing the ." lightbox="media/azure-networking/azure-networking-segmentation-on-premises.svg":::
+ 
 While Azure VPN connections can support multiple tunnels, ExpressRoute is often configured for larger enterprise networks that require higher bandwidth and private connections through a connectivity partner. For ExpressRoute, it is possible to connect the same VNet to multiple circuits, but for segmentation purposes, this is often not ideal as it allows VNets not associated with one another to communicate. One method of isolation involves choosing not to use a remote gateway on spoke VNets or disabling BGP route propagation if you are using route tables. Hubs connected to ExpressRoute can still be segmented by NVAs and Firewalls. Spokes if peered to the hubs can also choose not to use remote gateway on the VNet peering properties. That way, spokes only learn about their directly connected hubs and not any on-premise routes.
 
 Another emerging approach to segment traffic going to and from on-premises is the use of SD-WAN technologies. Extend your branch locations into Azure SD-WAN by implementing third-party solutions NVAs in Azure to create segmentation based on SD-WAN tunnels coming from different branches inside the NVA appliances. Azure Route Server (ARS) is used to inject the prefixes pertaining to the SD-WAN tunnels into the Azure Platform for a Hub and Spoke topology. For vWAN topology, you can have direct integration of the third-party SD-WAN NVA inside the virtual hub the use of third party NVAs integration in the virtual hubs or the use of BGP endpoints allow the implementation of SD-WAN solutions, creating tunnels from the virtual hub-integrated NVA.

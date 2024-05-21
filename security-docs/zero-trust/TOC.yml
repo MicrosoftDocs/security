@@ -287,7 +287,7 @@
       href: azure-virtual-wan.md
     - name: IaaS applications in AWS 
       href: secure-iaas-apps.md
-    - name: Azure IaaS
+    - name: Azure networking
       expanded: false
       items: 
       - name: Overview

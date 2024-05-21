@@ -270,13 +270,15 @@ This table summarizes the different levels of segmentation and security methods.
 
 ## Recommended training
 
->> Complete
-
-- [Connect your on-premises network to Azure with VPN Gateway](/training/modules/connect-on-premises-network-with-vpn-gateway/)
-- [Connect your on-premises network to the Microsoft global network by using ExpressRoute](/training/modules/connect-on-premises-network-with-expressroute/)
+- [Configure and manage virtual networks for Azure administrators](/training/paths/azure-administrator-manage-virtual-networks/)
+- [Introduction to Azure Web Application Firewall](training/modules/introduction-azure-web-application-firewall/)
+- [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/)
 - [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/)
-- [Configure Azure Application Gateway](/training/modules/configure-azure-application-gateway/)
-- [Introduction to Azure Bastion](/training/modules/intro-to-azure-bastion/)
+- [Introduction to Azure Application Gateway](/training/modules/intro-to-azure-application-gateway/)
+- [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/)
+- [Introduction to Azure Private Link](/training/modules/introduction-azure-private-link/)
+- [Introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/)
+- [Connect your on-premises network to Azure with VPN Gateway](/training/modules/connect-on-premises-network-with-vpn-gateway/)
 
 ## Next Steps
 
@@ -295,12 +297,12 @@ Refer to these links to learn about the various services and technologies mentio
 
 - [Azure Virtual Network Manager](/azure/virtual-network-manager/overview)
 - [Azure Firewall](/azure/firewall/overview)
-- [network security group](/azure/virtual-network/network-security-groups-overview)
-- [application security group](/azure/virtual-network/application-security-groups)
+- [Network security groups](/azure/virtual-network/network-security-groups-overview)
+- [Application security groups](/azure/virtual-network/application-security-groups)
 - [Azure Front Door](/azure/frontdoor/front-door-overview)
 - [Azure Application Gateway](/azure/application-gateway/overview)
 - [Web Application Firewall](/azure/web-application-firewall/ag/ag-overview)
-- [Private Link](/azure/private-link/private-link-overview)
+- [Azure Private Link](/azure/private-link/private-link-overview)
 - [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about)
 - [Internet security with Routing Intent](/azure/virtual-wan/how-to-routing-policies)
 - [Azure Site-to-Site (S2S) VPN connection](/azure/vpn-gateway/vpn-gateway-about-vpngateways)

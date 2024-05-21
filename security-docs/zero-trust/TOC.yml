@@ -287,8 +287,15 @@
       href: azure-virtual-wan.md
     - name: IaaS applications in AWS 
       href: secure-iaas-apps.md
-    - name: Azure networking encryption 
-      href: azure-networking-encryption.md
+    - name: Azure IaaS
+      expanded: false
+      items: 
+      - name: Overview
+        href: azure-networking-overview.md
+      - name: Azure networking encryption
+        href: azure-networking-encryption.md
+      - name: Azure networking segmentation
+        href: azure-networking-segmenttion.md
     - name: Use SIEM and XDR to respond to incidents
       expanded: false
       items:

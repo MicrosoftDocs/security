@@ -271,7 +271,7 @@ This table summarizes the different levels of segmentation and security methods.
 ## Recommended training
 
 - [Configure and manage virtual networks for Azure administrators](/training/paths/azure-administrator-manage-virtual-networks/)
-- [Introduction to Azure Web Application Firewall](training/modules/introduction-azure-web-application-firewall/)
+- [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/)
 - [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/)
 - [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/)
 - [Introduction to Azure Application Gateway](/training/modules/intro-to-azure-application-gateway/)

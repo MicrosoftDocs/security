@@ -2,7 +2,6 @@
 title: Microsoft Incident Response ransomware case study
 description: Understand how the Microsoft Incident Response team detected and responded to a ransomware attack.
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, Microsoft Defender XDR
-search.product: DARTMicrosoft Incident Response
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy

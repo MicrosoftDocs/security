@@ -17,7 +17,6 @@ audience: ITPro
 ms.collection: 
   - msftsolution-ransomware
 ms.topic: article
-ms.subservice:: m365d
 ---
 
 # Microsoft Incident Response ransomware case study

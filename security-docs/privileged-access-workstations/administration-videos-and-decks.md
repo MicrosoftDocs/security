@@ -6,6 +6,7 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: security
+ms.localizationpriority:   # medium
 description: "Learn how to protect accounts with privileged access."
 ---
 

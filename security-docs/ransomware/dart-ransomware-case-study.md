@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: 
   - msftsolution-ransomware
 ms.topic: article
+ms.localizationpriority:   # medium
 ms.subservice:: m365d
 ---
 

@@ -8,6 +8,7 @@ ms.author: bcarter
 ms.topic: conceptual
 ms.collection: 
   - zerotrust-adopt
+ms.localizationpriority:   # medium
 ---
 
 <!---

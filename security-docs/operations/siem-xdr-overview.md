@@ -12,6 +12,7 @@ ms.collection:
   - msftsolution-secops
   - msftsolution-overview
   - zerotrust-azure
+ms.localizationpriority:   # medium
 ---
 
 <!---

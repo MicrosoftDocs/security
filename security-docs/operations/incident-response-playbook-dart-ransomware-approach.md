@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: article
 ms.subservice:: m365d
 ms.custom: cxdef-zt-ransomware 
+ms.localizationpriority:   # medium
 ---
 
 # Microsoft DART ransomware approach and best practices

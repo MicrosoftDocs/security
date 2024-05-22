@@ -149,9 +149,9 @@ On the Windows platform, Microsoft recommends using the crypto APIs built into t
 
 Any usage decision regarding platform vs nonplatform crypto should be guided by the following requirements:
 
-1. The library should be a current in-support version free of known security vulnerabilities.
-1. The latest security protocols, algorithms, and key lengths should be supported.
-1. (Optional) The library should be capable of supporting older security protocols/algorithms for backwards compatibility only.
+- The library should be a current in-support version free of known security vulnerabilities.
+- The latest security protocols, algorithms, and key lengths should be supported.
+- (Optional) The library should be capable of supporting older security protocols/algorithms for backwards compatibility only.
 
 ### Native code
 

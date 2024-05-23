@@ -62,10 +62,6 @@ Attacks on your backups focus on crippling your organization’s ability to resp
 
 Most organizations don’t protect backup and restoration procedures against this level of intentional targeting. 
 
->[!Note]
->This preparation also improves resilience to natural disasters and rapid attacks like WannaCry and (Not)Petya.
->
-
 [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations.
 
 ### Program and project member accountabilities

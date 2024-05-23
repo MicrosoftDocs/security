@@ -29,7 +29,7 @@ The [Microsoft Incident Response team (formerly DART/CRSP)](https://www.microsof
 
 This article describes how Microsoft Incident Response investigated a recent ransomware incident with details on the attack tactics and detection mechanisms.
 
-See [Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) of DART's guide to combatting human-operated ransomware for more information.
+See [Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) of Microsoft Incident Response's guide to combatting human-operated ransomware for more information.
 
 ## The attack
 
@@ -138,7 +138,7 @@ Key information from Microsoft:
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
-- [Microsoft DART ransomware approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach)
+- [Microsoft Incident Response ransomware approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach)
 
 Microsoft 365:
 

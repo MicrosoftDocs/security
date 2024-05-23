@@ -8,13 +8,13 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
-- NOCSH
+ - NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- msftsolution-ransomware
+ - msftsolution-ransomware
 ms.topic: article
 ms.localizationpriority:   # medium
 ms.subservice:: m365d

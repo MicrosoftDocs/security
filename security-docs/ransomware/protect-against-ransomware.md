@@ -125,6 +125,7 @@ Microsoft 365:
 
 Microsoft Defender XDR:
 
+- [Built in protection against ransomware](/defender-endpoint/built-in-protection)
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
 Microsoft Azure:

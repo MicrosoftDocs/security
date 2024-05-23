@@ -11,6 +11,7 @@ ms.collection:
   - msftsolution-secops
   - msftsolution-scenario
   - zerotrust-azure
+ms.localizationpriority:   # medium
 ---
 
 # Step 2. Architect your Microsoft Sentinel workspace

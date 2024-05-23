@@ -105,7 +105,7 @@ A recommended practice is to create a Microsoft Entra group for Conditional Acce
 
 To add this exclusion group to any existing policies:
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Conditional Access Administrator](~/identity/role-based-access-control/permissions-reference.md#conditional-access-administrator).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference.md#conditional-access-administrator).
 1. Browse to **Protection** > **Conditional Access**.
 1. Select an existing policy.
 1. Under **Assignments**, select **Users or workload identities**.

@@ -27,7 +27,7 @@ Admins and, if permitted by the tenant, users and developers might create applic
 
 When the first user in a directory signs in to an application and grants consent, the system creates a service principal in the tenant that stores all user consent information. Microsoft Entra ID automatically creates a service principal for a newly registered app in the tenant before a [user authenticates](user-authentication.md).
 
-Only Microsoft Entra application administrators, cloud application administrators, and global administrators can perform specific application tasks (such as adding applications from the app gallery and configuring applications to use application proxy).
+Those assigned at least the [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator) role can perform specific application tasks (such as adding applications from the app gallery and configuring applications to use application proxy).
 
 ## Register application objects
 

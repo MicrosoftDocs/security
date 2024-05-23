@@ -67,7 +67,7 @@ Zero Trust is security for digital business. Digital transformation requires upd
 
 However, shifting from a traditional security model to Zero Trust represents a significant transformation that requires buy-in, adoption, and change management across an entire organization. Business leaders, technology leaders, security leaders, and security practitioners all play critical parts in creating an agile Zero Trust security approach. 
 
-Many security architects and IT teams ask for help when communicating to business leaders, tracking progress, and driving adoption. This guidance helps security and technology teams collaborate with business leaders on Zero Trust by providing:
+Many security architects and IT teams ask for help with communicating to business leaders, tracking progress, and driving adoption. This guidance helps security and technology teams collaborate with business leaders on Zero Trust by providing:
 
 - Recommended Zero Trust objectives for business leaders across organizations.
 - A methodical and phased approach to implementing a Zero Trust architecture.

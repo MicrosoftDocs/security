@@ -157,8 +157,9 @@ Microsoft Defender for Cloud Apps:
 
 - [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
-Microsoft Security team blog posts:
+Microsoft Security team blog posts on ransomware mitigation guidance:
 
+- [Defending against human-operated ransomware attacks with Microsoft Copilot for Security (March 2024)](https://www.microsoft.com/en-us/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security/)
 - [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 

@@ -9,6 +9,7 @@ ms.topic: conceptual
 ms.collection: 
   - msftsolution-overview
   - zerotrust-adopt
+ms.localizationpriority:   # medium
 ---
 
 <!---

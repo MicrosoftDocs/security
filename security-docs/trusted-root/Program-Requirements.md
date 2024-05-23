@@ -23,7 +23,7 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 ## 2. Continuing Program Requirements
 ### Audit Requirements
 
-1.  Program Participants must provide to Microsoft evidence of a Qualified Audit (see <https://aka.ms/auditreqs>) for each root, unconstrained subordinate CA, , and cross-signed certificate, before conducting commercial operations and thereafter on an annual basis.
+1. Program Participants must provide to Microsoft evidence of a Qualifying Audit (see <https://aka.ms/auditreqs>) for each root, unconstrained subordinate CA, , and cross-signed certificate, before conducting commercial operations and thereafter on an annual basis.
 2.  Program Participants must assume responsibility to ensure that all unconstrained subordinate CAs and cross-signed certificates meet the Program Audit Requirements.
 3. CAs must publicly disclose all audit reports for unconstrained subordinate CAs.
 4. CA providers must ensure their S/MIME enabled root CAs and all subordinate CAs capable of issuing S/MIME certificates have been and will continue to be audited against the most recent version of, at minimum, **one of the below sets of criteria**. This auditing must occur at least once a year. An initial audit period must begin no later than September 1, 2023. <br>
@@ -35,7 +35,7 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 
 4.   Program Participants must provide Microsoft the identities of at least two "Trusted Agents" to serve as representatives to the Program and one general email alias. Program Participants must inform Microsoft upon the removal or addition of personnel as a Trusted Agent. Program Participants agree to receive notices by e-mail and must provide Microsoft with an email address to receive official notices. Program Participants must agree that notice is effective when Microsoft sends an email or official letter. At least one of the contacts or aliases provided should be a 24/7 monitored communications channel for revocation requests or other incident management situations.
 
-5.   The Program Participant must disclose its full PKI hierarchy (non-limited subordinate CA, cross-signed non-enrolled root CAs, subordinate CAs, EKUs, certificate constraints) to Microsoft on an annual basis, including certificates issued to CAs operated by external third parties within the CCADB.  Program Participants must keep this information accurate in the CCADB when changes occur. If a subordinate CA is not publicly disclosed or audited, it must be domain-constrained. 
+5.   The Program Participant must disclose its full PKI hierarchy (non-limited subordinate CA, cross-signed non-enrolled root CAs, subordinate CAs, EKUs, certificate constraints) to Microsoft on an annual basis, including certificates issued to CAs operated by external third parties within the CCADB.  Program Participants must keep this information accurate in the CCADB when changes occur. If a subordinate CA isn't publicly disclosed or audited, it must be domain-constrained. 
 
 6.   Program Participants must inform Microsoft via email at least 120 days before transferring ownership of enrolled root or subordinate CA that chains to an enrolled root to another entity or person. 
  
@@ -49,14 +49,14 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 
 10. If a CA uses a subcontractor to operate any aspect of its business, the CA will assume responsibility for the subcontractor's business operations.
 
-11. If Microsoft, in its sole discretion, identifies a certificate   whose usage or attributes are determined to be contrary to the objectives of the Trusted Root Program, Microsoft will notify the responsible CA and request that it revokes the certificate. The CA must either revoke the certificate or request an exception from Microsoft within 24 hours of receiving Microsoft's notice. Microsoft will review submitted material and inform the CA of its final decision to grant or deny the exception at its sole discretion. In the event that Microsoft does not grant the exception, the CA must revoke the certificate within 24 hours of the exception being denied. 
+11. If Microsoft, in its sole discretion, identifies a certificate   whose usage or attributes are determined to be contrary to the objectives of the Trusted Root Program, Microsoft will notify the responsible CA and request that it revokes the certificate. The CA must either revoke the certificate or request an exception from Microsoft within 24 hours of receiving Microsoft's notice. Microsoft will review submitted material and inform the CA of its final decision to grant or deny the exception at its sole discretion. In the event that Microsoft doesn't grant the exception, the CA must revoke the certificate within 24 hours of the exception being denied. 
 
 
 ------------------------------------------------------------------------
 
 ## 3. Program Technical Requirements
 
-All CAs in the Program must comply with the Program Technical Requirements. If Microsoft determines that a CA is not in compliance with the below requirements, Microsoft will exclude that CA from the
+All CAs in the Program must comply with the Program Technical Requirements. If Microsoft determines that a CA isn't in compliance with the below requirements, Microsoft will exclude that CA from the
 Program.
 
 ### A. Root Requirements
@@ -96,7 +96,7 @@ Program.
 | RSA | 2048 | 4096 (New roots only)|
 | ECC / ECDSA | NIST P-256, P-384, P-521 | NIST P-256, P-384, P-521 |
 
-**Please Note:** Signatures using elliptical curve cryptography (ECC), such as ECDSA, are not supported in Windows and newer Windows security features. Users utilizing these algorithms and certificates will face various errors and potential security risks. The Microsoft Trusted Root Program recommends that ECC/ECDSA certificates should not be issued to subscribers due to this known incompatibility and risk. 
+**Please Note:** Signatures using elliptical curve cryptography (ECC), such as ECDSA, aren't supported in Windows and newer Windows security features. Users utilizing these algorithms and certificates will face various errors and potential security risks. The Microsoft Trusted Root Program recommends that ECC/ECDSA certificates shouldn't be issued to subscribers due to this known incompatibility and risk. 
  
 
 ### C. Revocation Requirements
@@ -129,7 +129,7 @@ Program.
     3.  Secure E-mail EKU=1.3.6.1.5.5.7.3.4
     4.  Time stamping EKU=1.3.6.1.5.5.7.3.8
     5.  Document Signing EKU=1.3.6.1.4.1.311.10.3.12
-     -   This EKU is used for signing documents within Office. It is not required for other document signing uses.
+     -   This EKU is used for signing documents within Office. It isn't required for other document signing uses.
  
 
 ### F. Windows 10 Kernel Mode Code Signing (KMCS) Requirements

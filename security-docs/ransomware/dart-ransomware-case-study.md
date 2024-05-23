@@ -8,15 +8,17 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
-  - NOCSH
-ms.author: sarit1046
-author: sarit1046
-localization_priority: Normal
+ - NOCSH
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - msftsolution-ransomware
+ - msftsolution-ransomware
 ms.topic: article
+ms.localizationpriority:   # medium
+ms.subservice:: m365d
+
 ---
 
 # Microsoft Incident Response ransomware case study

@@ -10,6 +10,7 @@ ms.collection:
   - msftsolution-secops
 ms.service: microsoft-365-security
 ms.custom: cxdef-zt-ransomware 
+ms.localizationpriority:   # medium
 ---
 
 # Incident response overview

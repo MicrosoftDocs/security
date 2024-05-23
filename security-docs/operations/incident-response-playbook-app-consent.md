@@ -407,19 +407,18 @@ While [each attack tends to vary, the core attack techniques are](https://attack
 
 ## Finding signs of an attack
 
-1. Open the [Security & Compliance Center](https://protection.office.com/).
-2. Navigate to **Search** and select **Audit log search**.
-3. Search (all activities and all users) and enter the start date and end date (if required), and then select **Search**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Audit**. Or to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
+1. On the **Audit** page, search all activities and all users, enter the start date and end date if required, and then select **Search**.
 
     :::image type="content" source="./media/incident-response-playbook-app-consent/Auditlogsearch1.png" alt-text="Example of an audit log search":::
 
-4. Select **Filter** results and in the **Activity** field, enter **Consent** to application.
+1. Select **Filter** results and in the **Activity** field, enter **Consent** to application.
 
     :::image type="content" source="./media/incident-response-playbook-app-consent/Auditlogsearch2.png" alt-text="Example of filtering an audit log search":::
 
-5. If you have activity under consent to grant, continue as directed below.
-6. Select the result to see the details of the activity. Select **More Information** to get details of the activity.
-7. Check whether IsAdminContent is set to 'True'.
+1. If you have activity under consent to grant, continue as directed below.
+1. Select the result to see the details of the activity. Select **More Information** to get details of the activity.
+1. Check whether IsAdminContent is set to 'True'.
 
     > [!NOTE]
     > This process can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs.

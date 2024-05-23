@@ -42,7 +42,6 @@ Here are general settings and configurations you should complete to perform an i
 
 To start the investigation process, you need the following data:
 
-- Access to the tenant as a Global Admin - A Cloud only account (not part of their on-premises environment)
 - Detail of indicators of compromise (IoCs)
 - The date and time when you noticed the incident
 - Date range
@@ -58,7 +57,7 @@ To start the investigation process, you need the following data:
 Ensure you complete the following installations and configuration requirements:
 
 1. The AzureAD PowerShell module is installed.
-2. You have global administrator rights on the tenant that the script run against.
+2. You have [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) rights on the tenant that the script run against.
 3. You're assigned local administrator role on the computer that you use to run the scripts.
 
 [!INCLUDE [Azure AD PowerShell deprecation note](~/../security-docs/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
@@ -120,7 +119,7 @@ Install-Module -Name AzureAD -Verbose
 
 Consent is the process of granting authorization to an application to access protected resources on the users' behalf. An administrator or user can be asked for consent to allow access to their organization/individual data.
 
-An application is granted access to data based on a particular user or for the entire organization. Attackers can misuse these consents to gain persistence to the environment and access sensitive data. These types of attacks are called Illicit Consent Grants, which can happen through a phishing email, a user account compromise through password spray, or when an attacker registers an application as a legitimate user. In scenarios where a Global Admin account is compromised, then the registration and consent grant are for tenant-wide and not just for one user.
+An application is granted access to data based on a particular user or for the entire organization. Attackers can misuse these consents to gain persistence to the environment and access sensitive data. These types of attacks are called Illicit Consent Grants, which can happen through a phishing email, a user account compromise through password spray, or when an attacker registers an application as a legitimate user. In scenarios where an administrator account is compromised, then the registration and consent grant are for tenant-wide and not just for one user.
 
 Before an application can access your organization's data, a user must grant the application permissions to do so. Different permissions allow different levels of access. By default, all users are allowed to consent to applications for permissions that don't require administrator consent. For instance, by default, a user can consent to allow an app to access their mailbox but can't consent to allow an app unfettered access to read and write to all files in your organization.
 
@@ -129,9 +128,8 @@ Before an application can access your organization's data, a user must grant the
 
 ### Roles that can grant consent on behalf of the organization
 
-To be able to grant **tenant-wide admin consent**, you must sign in as one of the following:
+To be able to grant **tenant-wide admin consent**, you must sign in with at least one of the following roles:
 
-- Global Administrator
 - Application Administrator
 - Cloud Application Administrator
 
@@ -253,10 +251,6 @@ You can also:
 
 Use this checklist to perform application consent grant validation.
 
-- **Requirements**
-
-  Make sure you have access to the tenant as a Global Admin. This is a cloud-only account and isn't part of your on-premises environment.
-
 - **Indicators of compromise (IoC)**
 
   Check the following indicators of compromise (IoC):
@@ -272,7 +266,7 @@ Use this checklist to perform application consent grant validation.
 
   You must be assigned with these roles:
 
-  - Global administrator rights on the tenant to execute the script
+  - Global Administrator rights on the tenant to execute the script
   - Local Administrator role on the computer from which you run the script
 
 - **PowerShell configuration**
@@ -424,7 +418,7 @@ While [each attack tends to vary, the core attack techniques are](https://attack
     > [!NOTE]
     > This process can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs.
 
-    The extent of time that an audit record is retained and is searchable in the audit log depends on your Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user. **If this value is true, it indicates that someone with Global Administrator access may have granted broad access to data. If this is unexpected, take immediate steps to confirm an attack.**
+    The extent of time that an audit record is retained and is searchable in the audit log depends on your Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user. **If this value is true, it indicates that someone with access may have granted broad access to data. If this is unexpected, take immediate steps to confirm an attack.**
 
 ## How to confirm an attack?
 

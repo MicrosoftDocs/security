@@ -78,20 +78,13 @@ Since most of the Microsoft Entra ID [sign-in](/azure/active-directory/reports-m
 
 ### Permissions in Microsoft Entra ID
 
-We recommend membership in the following roles for the account that does the investigation:
-
-- [Global Reader](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)
-- [Security Reader](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader)
-- As a last resort, you can always fall back to the role of a [Global Administrator / Company Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)
+We recommend the account that does the investigation be at least a [Security Reader](/entra/identity/role-based-access-control/permissions-reference#security-reader).
 
 ### Permissions in Microsoft 365
 
-Generally speaking, the [Global Reader](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader) or the [Security Reader](/microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security#security-reader) role groups in the Microsoft Defender portal or the Microsoft Purview compliance portal should give you sufficient permissions to search the relevant logs.
+The [Security Reader](/defender-office-365/mdo-portal-permissions#microsoft-entra-roles-in-the-microsoft-defender-portal) role in the Microsoft Defender portal or the Microsoft Purview compliance portal should give you sufficient permissions to search the relevant logs.
 
-> [!NOTE]
-> Accounts that are members of the **View-Only Audit Logs** or **Audit Logs** role groups only in the the Microsoft Defender portal or the Microsoft Purview compliance portal won't be able to search the Microsoft 365 audit log. In this scenario, you must assign permissions in Exchange Online. For more information, see [Before you search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log).
-
-If you're unsure about the role groups to use, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
+If you're unsure about the role to use, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
 
 ### Microsoft Defender for Endpoint
 

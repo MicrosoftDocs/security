@@ -62,8 +62,8 @@ Here's a one-page PDF summary:
 
 ### Permissions
 
-- Users who will manage Conditional Access policies must be able to sign in to the Azure portal as a **Conditional Access Administrator**, **Security Administrator**, or **Global Administrator**.
-- Users who will manage app protection and device compliance policies must be able to sign in to Intune as an **Intune Administrator** or **Global Administrator**.
+- Users who will manage Conditional Access policies must be able to sign in to the Azure portal as at least a [Conditional Access Administrator](/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator).
+- Users who will manage app protection and device compliance policies must be able to sign in to Intune as at least an [Intune Administrator](/entra/identity/role-based-access-control/permissions-reference#intune-administrator).
 - Those users who only need to view configurations can be assigned the **Security Reader** or **Global Reader** roles.
 
 For more information about roles and permissions, see the article [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
@@ -105,8 +105,8 @@ A recommended practice is to create a Microsoft Entra group for Conditional Acce
 
 To add this exclusion group to any existing policies:
 
-1. Sign in to the **Azure portal** as a Conditional Access Administrator, Security Administrator, or Global Administrator.
-1. Browse to **Microsoft Entra ID** > **Security** > **Conditional Access**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Conditional Access Administrator](~/identity/role-based-access-control/permissions-reference.md#conditional-access-administrator).
+1. Browse to **Protection** > **Conditional Access**.
 1. Select an existing policy.
 1. Under **Assignments**, select **Users or workload identities**.
    1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts and Conditional Access exclusion group.

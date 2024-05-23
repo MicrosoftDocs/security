@@ -82,7 +82,7 @@ Download the [Protect your organization from ransomware poster](https://download
 
 Key information from Microsoft:
 
-- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
+- [The latest ransomware trends from Microsoft](https://www.microsoft.com/en-us/security/blog/threat-intelligence/ransomware/), Microsoft On the Issues blog post on July 20, 2021
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023) 
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal

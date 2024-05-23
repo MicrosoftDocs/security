@@ -130,7 +130,7 @@ Zero Trust requires taking an integrated approach across these areas and teams, 
 | Apps | Cloud or datacenter-based applications that require users to sign in and consume those services or applications. | All apps that are used by your organization, including SaaS apps that you subscribe to and other applications, whether in the cloud or on-premises. |
 | Infrastructure | Infrastructure as a Service (IaaS) or datacenter-based infrastructure, including network components, servers, and data storage. | These are the technical foundations and components that support your organization, including physical and virtual servers hosted in your datacenter or a cloud service. |
 | Data | Structured, unstructured, and application- contained data. | Your businesses data contained in files, databases, or other applications (such as CRM). |
-| Network | LAN, WAN, wireless, or internet connection, including mobile (such as 3G and 5G) or even the coffee shop wireless network. | The network used to connect your users to the services they need. This may be a corporate-run local area network (LAN), the wider network encompassing access to your digital estate, or the internet connections used by your workers to connect. |
+| Network | LAN, WAN, wireless, or internet connection, including mobile (such as 3G and 5G) or even the coffee shop wireless network. | The network used to connect your users to the services they need. This might be a corporate-run local area network (LAN), the wider network encompassing access to your digital estate, or the internet connections used by your workers to connect. |
 
 When applying Zero Trust strategy across a digital estate, it’s less helpful to think about tackling each of these domain areas independently. It’s not as if the identity team can accomplish all the recommendations and then the Zero Trust focus can move to the team that manages endpoints. Zero Trust strategy applies these functional areas together to secure an area within a digital estate and then broaden the scope of the protection across it. 
 
@@ -142,7 +142,7 @@ The following diagram integrates these functional areas into a unified Zero Trus
 
 In the diagram:
 
-- Each of the functional areas are represented: Identities, Endpoints, Network, Data, Apps, Infrastructure
+- Each of the functional areas is represented: Identities, Endpoints, Network, Data, Apps, Infrastructure
 - Zero Trust integrates protection across all the functional areas through policies and Policy Optimization.
 - Threat protection brings together signals across the organization in real-time to provide visibility into attacks and to streamline remediation through automated actions and incident response tracking.
 
@@ -216,7 +216,7 @@ Using this adoption guidance as a process framework, first establish and documen
 
 Each business scenario encompasses a different set of assets with different tools to take inventory. Methodically, you begin with an inventory and classification of the assets for each business scenario:
 
-1. **Asset Identification:** What assets do you want to protect, such as identities, data, apps, services, and infrastructure? You may use the functional areas called out above as a guide of where to start. Asset identification forms part of your **Define strategy** and **Plan** lifecycle phases. The **Define strategy** phase can articulate a specific scenario, while the **Plan** phase documents the digital estate.
+1. **Asset Identification:** What assets do you want to protect, such as identities, data, apps, services, and infrastructure? You might use the functional areas called out above as a guide of where to start. Asset identification forms part of your **Define strategy** and **Plan** lifecycle phases. The **Define strategy** phase can articulate a specific scenario, while the **Plan** phase documents the digital estate.
 2. **Asset Classification:** How important is each one of the identified assets, such as identities, business critical data, and human resources data? Asset classification is part of the **Ready** phase where you begin to identify the protection strategy for each asset.
 3. **Asset Management:** How do you choose to protect (govern) and administer (manage) these assets?
 4. **Asset Recovery:** How do you recover from compromise or loss of control of an asset (govern)?

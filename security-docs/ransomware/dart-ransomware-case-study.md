@@ -1,8 +1,7 @@
 ---
-title: Microsoft DART ransomware case study
-description: Understand how Microsoft's Detection and Response Team (DART) detected and responded to a ransomware attack.
+title: Microsoft Incident Response ransomware case study
+description: Understand how the Microsoft Incident Response team detected and responded to a ransomware attack.
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, Microsoft Defender XDR
-search.product: DART
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -22,25 +21,25 @@ ms.subservice:: m365d
 
 ---
 
-# Microsoft DART ransomware case study
+# Microsoft Incident Response ransomware case study
 
 Human-operated ransomware continues to maintain its position as one of the most impactful cyberattack trends world-wide and is a significant threat that many organizations have faced in recent years. These attacks take advantage of network misconfigurations and thrive on an organization's weak interior security. Although these attacks pose a clear and present danger to organizations and their IT infrastructure and data, they are a [preventable disaster](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/).
 
-The [Microsoft Detection and Response Team (DART)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. DART provides onsite reactive incident response and remote proactive investigations. DART leverages Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
+The [Microsoft Incident Response team (formerly DART/CRSP)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. Microsoft Incident Response provides onsite reactive incident response and remote proactive investigations. Microsoft Incident Response leverages Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
 
-This article describes how DART investigated a recent ransomware incident with details on the attack tactics and detection mechanisms.
+This article describes how Microsoft Incident Response investigated a recent ransomware incident with details on the attack tactics and detection mechanisms.
 
 See [Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) of DART's guide to combatting human-operated ransomware for more information.
 
 ## The attack
 
-DART leverages incident response tools and tactics to identify threat actor behaviors for human operated ransomware. Public information regarding ransomware events focuses on the end impact, but rarely highlights the details of the operation and how threat actors were able to escalate their access undetected to discover, monetize, and extort.
+Microsoft Incident Response leverages incident response tools and tactics to identify threat actor behaviors for human operated ransomware. Public information regarding ransomware events focuses on the end impact, but rarely highlights the details of the operation and how threat actors were able to escalate their access undetected to discover, monetize, and extort.
 
 Here are some common techniques that attackers use for ransomware attacks based on [MITRE ATT&CK tactics](https://attack.mitre.org/).
  
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-methods.png" alt-text="Common techniques that attackers use for ransomware attacks." lightbox="media/dart-ransomware-case-study/dart-ransomware-case-study-attack-methods.png":::
 
-DART used Microsoft Defender for Endpoint to track the attacker through the environment, create a story depicting the incident, and then eradicate the threat and remediate. Once deployed, Defender for Endpoint began detecting successful logons from a brute force attack. Upon discovering this, DART reviewed the security data and found several vulnerable Internet-facing devices using the Remote Desktop Protocol (RDP). 
+Microsoft Incident Response used Microsoft Defender for Endpoint to track the attacker through the environment, create a story depicting the incident, and then eradicate the threat and remediate. Once deployed, Defender for Endpoint began detecting successful logons from a brute force attack. Upon discovering this, Microsoft Incident Response reviewed the security data and found several vulnerable Internet-facing devices using the Remote Desktop Protocol (RDP). 
 
 After initial access was gained, the threat actor used the Mimikatz credential harvesting tool to dump password hashes, scanned for credentials stored in plaintext, created backdoors with Sticky Key manipulation, and moved laterally throughout the network using remote desktop sessions.
 
@@ -54,7 +53,7 @@ The following sections describe additional details based on the MITRE ATT&CK tac
 
 Ransomware campaigns use well-known vulnerabilities for their initial entry, typically using phishing emails or weaknesses in perimeter defense such as devices with the enabled Remote Desktop service exposed on the Internet.
 
-For this incident, DART was able to locate a device that had TCP port 3389 for RDP exposed to the Internet. This allowed threat actors to perform a brute-force authentication attack and gain the initial foothold.
+For this incident, Microsoft Incident Response managed to locate a device that had TCP port 3389 for RDP exposed to the Internet. This allowed threat actors to perform a brute-force authentication attack and gain the initial foothold.
 
 Defender for Endpoint used threat intelligence to determine that there were numerous sign-ins from known brute-force sources and displayed them in the Microsoft Defender portal. Here's an example.
 
@@ -82,7 +81,7 @@ Here's an example of the detected use of the Mimikatz in the Microsoft Defender 
 
 Movement across endpoints can vary between different organizations, but threat actors commonly use different varieties of remote management software that already exists on the device. By utilizing methods of remote access that the IT department commonly uses in their day-to-day activities, threat actors can fly under the radar for extended periods of time. 
 
-Using Microsoft Defender for Identity, DART was able to map out the path that the threat actor took between devices, displaying the accounts that were used and accessed. Here's an example.
+Using Microsoft Defender for Identity, Microsoft Incident Response was able to map out the path that the threat actor took between devices, displaying the accounts that were used and accessed. Here's an example.
  
 :::image type="content" source="media/dart-ransomware-case-study/dart-ransomware-case-study-threat-actor-path.png" alt-text="The path that the threat actor took between devices in Microsoft Defender for Identity.":::
 
@@ -174,7 +173,7 @@ Microsoft Security team blog posts:
 - [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
-  Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.
+  Key steps on how Microsoft Incident Response conducts ransomware incident investigations.
 
 - [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 

@@ -202,7 +202,7 @@ For privileged users, confirm any changes in the time window.
 ```kusto
 AuditLogs
 | where TimeGenerated between (datetime(2023-03-01) .. datetime(2023-03-15))
-| where InitiatedBy == "x"
+| where InitiatedBy has "x"
 ```
 
 ### Authentication method changes for a privileged account

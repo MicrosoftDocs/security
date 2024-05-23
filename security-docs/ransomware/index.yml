@@ -129,7 +129,7 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-        - text: Detecting HumOr ransomware with Microsoft 365
+        - text: Detecting Human-operated ransomware with Microsoft 365
           url:  /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
         - text: Responding to ransomware attacks
           url:  /microsoft-365/security/defender/playbook-responding-ransomware-m365-defender

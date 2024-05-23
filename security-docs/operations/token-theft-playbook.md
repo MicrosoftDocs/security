@@ -25,10 +25,9 @@ Learn more:
 
 ## Prerequisites
 
-* Access to the Microsoft Entra ID (formerly Azure AD) [sign in](/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit](/azure/active-directory/reports-monitoring/concept-audit-logs) logs for users and service principals
+* Access to the Microsoft Entra ID [sign in](/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit](/azure/active-directory/reports-monitoring/concept-audit-logs) logs for users and service principals
 * An account with one of the following Microsoft Entra roles assigned:
   * Security Administrator
-  * Global Administrator
   * Security Reader
   * Global Reader
   * Security Operator

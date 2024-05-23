@@ -91,7 +91,7 @@ It's critical to work together as an organization, create partnerships, and educ
    > - For automated scripts
    > - For external users
 
-If you don't have Microsoft Entra Privileged Identity Management in your organization, you can use the PowerShell API. Also start with the Global Administrator role, because a Global Administrator has the same permissions across all cloud services for which your organization has subscribed. These permissions are granted no matter where they were assigned: in the Microsoft 365 admin center, the Azure portal, or by the Azure AD module for Microsoft PowerShell.
+If you don't have Microsoft Entra Privileged Identity Management in your organization, you can use the PowerShell API. Start with the Global Administrator role, because it has the same permissions across all cloud services for which your organization has subscribed. These permissions are granted no matter where they were assigned: in the Microsoft 365 admin center, the Azure portal, or by the Azure AD module for Microsoft PowerShell.
 - **Measure key results:** Review and Identification of privileged access roles has been completed within the past 90 days
 
 ### Separate accounts (On-premises AD accounts)
@@ -165,12 +165,7 @@ If you don't have Microsoft Entra Privileged Identity Management in your organiz
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
      - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
      - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
-- **How**: Turn on Microsoft Entra multifactor authentication (MFA) and register all other highly privileged single-user non-federated admin accounts. Require multifactor authentication at sign-in for all individual users who are permanently assigned to one or more of the Microsoft Entra admin roles like:
-
-   - Global administrator
-   - Privileged Role administrator
-   - Exchange administrator
-   - SharePoint administrator
+- **How**: Turn on Microsoft Entra multifactor authentication (MFA) and register all other highly privileged single-user non-federated admin accounts. Require multifactor authentication at sign-in for all individual users who are permanently assigned to one or more [Microsoft Entra admin roles](/entra/identity/role-based-access-control/permissions-reference).
 
    Require administrators to use passwordless sign-in methods such as FIDO2 security keys or Windows Hello for Business in conjunction with unique, long, complex passwords. Enforce this change with an organizational policy document.
 

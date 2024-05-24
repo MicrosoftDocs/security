@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: article
 ms.subservice:: m365d
 ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
+ms.localizationpriority:   # medium
 ---
 
 # Compromised and malicious applications investigation
@@ -40,9 +41,7 @@ Before starting the investigation, make sure you have the correct tools and perm
   - Understanding of the [Identity Protection risk concepts](/azure/active-directory/identity-protection/concept-identity-protection-risks)
   - Understanding of the [Identity Protection investigation concepts](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
 
-- An account with the following directory roles:
-  - Global administrator
-  - Security administrator
+- An account with at least the [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator) role.
 
 - Ability to use [Microsoft Graph Explorer](/graph/graph-explorer/graph-explorer-overview) and be familiar (to some extent) with the Microsoft Graph API.
 

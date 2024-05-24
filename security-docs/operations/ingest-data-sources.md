@@ -12,6 +12,7 @@ ms.collection:
   - msftsolution-secops
   - msftsolution-scenario
   - zerotrust-azure
+ms.localizationpriority:   # medium
 ---
 
 
@@ -28,21 +29,21 @@ Confirm the installation method, roles required, and licenses needed to turn on 
 
 The following table is a summary of the prerequisites required to ingest key Azure and data connectors:
 
-| Resource Type                              | Installation Method              | Role/Permissions/License Needed                                                                                    |
-|--------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Microsoft Entra ID                     | Native Data connector            | Security Admin/Global Admin<br><br>Sign-in Logs require Microsoft Entra ID P1 or P2 license<br>Other logs don't require P1 or P2      |
-| Microsoft Entra ID Protection | Native Data Connector            | Security Admin/Global Admin<br><br>License: Microsoft Entra ID P2                                                          |
-| Azure Activity                             | Azure Policy                     | Owner role required on subscriptions                                  
-| Microsoft Defender XDR                     | Native Data Connector            | Security Admin/Global Admin<br><br>License: Microsoft 365 E5, Microsoft 365 A5 or any other Microsoft Defender XDR eligible license
-| Microsoft Defender for Cloud               | Native Data Connector            | Security Reader<br><br>To enable bi-directional sync, Contributor/Security Admin role is required on the subscription. |
-| Microsoft Defender for Identity            | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Identity                                            |
-| Microsoft Defender for Office 365          | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Office 365 Plan 2                                   |
-| Office 365                                 | Native Data Connector            | Security Admin/Global admin                                                                                        |
-| Microsoft Defender for IoT                 |                                  | Contributor to subscription with IoT hubs                                                                          |
-| Microsoft Defender for Cloud Apps          | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Cloud Apps                                          |
-| Microsoft Defender for Endpoint            | Native Data Connector            | Security Admin/Global admin<br><br>License: Microsoft Defender for Endpoint                                            |
-| Windows Security Events through Azure Monitor Agent (AMA)            | Native Data Connector with Agent | Read/Write on Log Analytics Workspace                                                                                               |
-| Syslog                                     | Native Data Connector with Agent | Read/Write Log Analytics Workspace                                                                                               |
+| Resource Type                                             | Installation Method              | Role/Permissions/License Needed                                                                                                                                                                                          |
+|-----------------------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Microsoft Entra ID                                        | Native Data connector            | [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>Sign-in Logs require Microsoft Entra ID P1 or P2 license<br>Other logs don't require P1 or P2    |
+| Microsoft Entra ID Protection                             | Native Data Connector            | [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Entra ID P2                                                                   |
+| Azure Activity                                            | Azure Policy                     | Owner role required on subscriptions                                                                                                                                                                                     |
+| Microsoft Defender XDR                                    | Native Data Connector            | [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft 365 E5, Microsoft 365 A5 or any other Microsoft Defender XDR eligible license |
+| Microsoft Defender for Cloud                              | Native Data Connector            | [Security Reader](/entra/identity/role-based-access-control/permissions-reference#security-reader)<br><br>To enable bi-directional sync, Contributor/Security Admin role is required on the subscription.                                                                                                   |
+| Microsoft Defender for Identity                           | Native Data Connector            | [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Identity                                                         |
+| Microsoft Defender for Office 365                         | Native Data Connector            | [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Office 365 Plan 2                                                |
+| Office 365                                                | Native Data Connector            | [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)                                                                                                         |
+| Microsoft Defender for IoT                                |                                  | Contributor to subscription with IoT hubs                                                                                                                                                                                |
+| Microsoft Defender for Cloud Apps                         | Native Data Connector            | [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Cloud Apps                                                       |
+| Microsoft Defender for Endpoint                           | Native Data Connector            | [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Endpoint                                                         |
+| Windows Security Events through Azure Monitor Agent (AMA) | Native Data Connector with Agent | Read/Write on Log Analytics Workspace                                                                                                                                                                                    |
+| Syslog                                                    | Native Data Connector with Agent | Read/Write Log Analytics Workspace                                                                                                                                                                                       |
 
 ## Step 1: Turn on data connectors
 

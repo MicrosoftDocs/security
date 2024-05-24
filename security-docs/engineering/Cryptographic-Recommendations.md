@@ -1,559 +1,228 @@
 ---
-layout: Conceptual
-title: Microsoft SDL Cryptographic Recommendations
-description: This document contains recommendations and best practices for using encryption on Microsoft platforms. It is meant to be used as a reference when designing products to use the same APIs, algorithms, protocols and key lengths that Microsoft requires of its own products and services.
-ms.date: 12/03/2018
+title: Microsoft SDL cryptographic recommendations
+description: Best practices and guidance for using encryption on Microsoft platforms as part of the security development lifecycle.
+
 ms.service: security
-ms.author: bcowper
-author: BruceCowper
+ms.subservice: 
 ms.topic: conceptual
+ms.date: 05/19/2024
+
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
+ms.reviewer: joylynnkirui, raulga
 ---
+# Microsoft SDL cryptographic recommendations
 
-# Microsoft SDL Cryptographic Recommendations
+Use this information as a reference when designing products to use the same APIs, algorithms, protocols, and key lengths that Microsoft requires of its own products and services. Much of the content is based on Microsoft’s own internal security standards used to create the Security Development Lifecycle. 
 
-## Introduction
-This document contains recommendations and best practices for using
-encryption on Microsoft platforms. Much of the content here is
-paraphrased or aggregated from Microsoft’s own internal security
-standards used to create the Security Development Lifecycle. It is meant
-to be used as a reference when designing products to use the same APIs,
-algorithms, protocols and key lengths that Microsoft requires of its own
-products and services.
+Developers on non-Windows platforms might benefit from these recommendations. While the API and library names might be different, the best practices involving algorithm choice, key length, and data protection are similar across platforms.
 
-Developers on non-Windows platforms may also benefit from these
-recommendations. While the API and library names may be different, the
-best practices involving algorithm choice, key length and data
-protection are similar across platforms.
+## Security protocol, algorithm, and key length recommendations
 
-## Security Protocol, Algorithm and Key Length Recommendations
+### TLS/SSL versions
 
-### SSL/TLS versions
-Products and services should use cryptographically secure versions of
-SSL/TLS:
+Products and services should use cryptographically secure versions of TLS/SSL:
 
-  - TLS 1.2 should be enabled
+- TLS 1.3 must be enabled.
+- TLS 1.2 can be enabled to improve compatibility with older clients.
+- TLS 1.1, TLS 1.0, SSL 3, and SSL 2 must be disabled
 
-  - TLS 1.1 and TLS 1.0 should be enabled for backward compatibility
-    only
+### Symmetric block ciphers, cipher modes, and initialization vectors
 
-  - SSL 3 and SSL 2 should be disabled by default
-
-### Symmetric Block Ciphers, Cipher Modes and Initialization Vectors
-_Block Ciphers_
+#### Block ciphers
 
 For products using symmetric block ciphers:
 
-  - Advanced Encryption Standard (AES) is recommended for new code.
+- Advanced Encryption Standard (AES) is recommended.
+- All other block ciphers, including 3DES (Triple DES/TDEA), and RC4 must be replaced if used for encryption.
 
-  - Three-key triple Data Encryption Standard (3DES) is permissible in
-    existing code for backward compatibility.
+For symmetric block encryption algorithms, a minimum key length of 128 bits is required, but we recommend supporting 256-bit keys. The only block encryption algorithm recommended for new code is AES (AES-128, AES-192, and AES-256 are all acceptable, noting that AES-192 lacks optimization on some processors).
 
-  - All other block ciphers, including RC2, DES, 2-Key 3DES, DESX, and
-    Skipjack, should only be used for decrypting old data, and should be
-    replaced if used for encryption.
+#### Cipher modes
 
-For symmetric block encryption algorithms, a minimum key length of 128
-bits is recommended. The only block encryption algorithm recommended for
-new code is AES (AES-128, AES-192, and AES-256 are all acceptable,
-noting that AES-192 lacks optimization on some processors). Three-key
-3DES is currently acceptable if already in use in existing code;
-transition to AES is recommended. DES, DESX, RC2, and Skipjack are no
-longer considered secure. These algorithms should only be used for
-decrypting existing data for the sake of backward-compatibility, and
-data should be re-encrypted using a recommended block cipher.
+Symmetric algorithms can operate in various modes, most of which link together the encryption operations on successive blocks of plaintext and ciphertext.
 
-_Cipher Modes_
+Symmetric block ciphers should be used with one of the following cipher modes:
 
-Symmetric algorithms can operate in a variety of modes, most of which
-link together the encryption operations on successive blocks of
-plaintext and ciphertext.
+- [Cipher Block Chaining (CBC)](https://wikipedia.org/wiki/Block_cipher_mode_of_operation)
+- [Ciphertext Stealing (CTS)](https://wikipedia.org/wiki/Ciphertext_stealing)
+- [XEX-Based Tweaked-Codebook with Ciphertext Stealing (XTS)](https://wikipedia.org/wiki/Disk_encryption_theory#XEX-based_tweaked-codebook_mode_with_ciphertext_stealing_.28XTS.29)
 
-Symmetric block ciphers should be used with one of the following cipher
-modes:
+Some other cipher modes like those that follow have implementation pitfalls that make them more likely to be used incorrectly. In particular, the Electronic Code Book (ECB) mode of operation must be avoided. Reusing the same initialization vector (IV) with block ciphers in "streaming ciphers modes" such as CTR might cause encrypted data to be revealed. Extra security review is recommended if any of the below modes are used:
 
-  - [<span class="underline">Cipher Block
-    Chaining</span>](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation)
-    (CBC)
+- Output Feedback (OFB)
+- Cipher Feedback (CFB)
+- Counter (CTR)
+- Anything else not on the preceding "recommended" list
 
-  - [<span class="underline">Ciphertext
-    Stealing</span>](https://en.wikipedia.org/wiki/Ciphertext_stealing)
-    (CTS)
+#### Initialization vectors (IV)
 
-  - [<span class="underline">XEX-Based Tweaked-Codebook with Ciphertext
-    Stealing</span>](https://en.wikipedia.org/wiki/Disk_encryption_theory#XEX-based_tweaked-codebook_mode_with_ciphertext_stealing_.28XTS.29)
-    (XTS)
+All symmetric block ciphers should also be used with a cryptographically strong random number as an initialization vector. Initialization vectors should never be a constant or predicable value. See Random Number Generators for recommendations on generating cryptographically strong random numbers.
 
-Some other cipher modes like those included below have implementation
-pitfalls that make them more likely to be used incorrectly. In
-particular, the Electronic Code Book (ECB) mode of operation should be
-avoided. Reusing the same initialization vector (IV) with block ciphers
-in "streaming ciphers modes" such as CTR may cause encrypted data to be
-revealed. Additional security review is recommended if any of the below
-modes are used:
+Initialization vectors should never be reused when performing multiple encryption operations. Reuse can reveal information about the data being encrypted, particularly when using streaming cipher modes like Output Feedback (OFB) or Counter (CTR).
 
-  - Output Feedback (OFB)
+#### AES-GCM & AES-CCM recommendations
 
-  - Cipher Feedback (CFB)
+AES-GCM (Galois/Counter Mode) and AES-CCM (Counter with CBC-MAC) are widely used authenticated encryption modes. They combine confidentiality and integrity protection, making them useful for secure communication. However, their fragility lies in nonce reuse. When the same nonce (initialization vector) is used twice, it can lead to catastrophic consequences.
 
-  - Counter (CTR)
+We recommend following the nonce guidelines as described in [NIST SP 800-38D, Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf), taking special attention to section 8.3 regarding the maximum number of invocations.
 
-  - Counter with CBC-MAC (CCM)
+Another option would be generated unique AES-GCM/CCM keys for every message being encrypted, effectively limiting the maximum number of invocations to 1. This approach is recommended for encrypting data at rest, where using a counter or making sure that you can track the maximum number of invocations for a given key would be impractical.
 
-  - Galois/Counter Mode (GCM)
+For encrypting data at rest, you can also consider using AES-CBC with a message authentication code (MAC) as an alternative using an Encrypt-then-MAC scheme, making sure you use separate keys for encryption and for the MAC.
 
-  - Anything else not on the "recommended" list above
+#### Integrity verification
 
-_Initialization Vectors (IV)_
+It's a common misconception that encryption by default provides both confidentiality and integrity assurance. Many encryption algorithms don't provide any integrity checking and might be vulnerable to tampering attacks. Extra steps must be taken to ensure the integrity of data before sending and after receiving.
 
-All symmetric block ciphers should also be used with a cryptographically
-strong random number as an initialization vector. Initialization vectors
-should never be a constant value. See Random Number Generators for
-recommendations on generating cryptographically strong random numbers.
+If you can't use an authenticated encryption algorithm with associated data (AEAD) such as AES-GCM, an alternative would be to validate the integrity with a message authentication code (MAC) using an Encrypt-then-MAC scheme, making sure you use separate keys for encryption and for the MAC.
 
-Initialization vectors should never be reused when performing multiple
-encryption operations, as this can reveal information about the data
-being encrypted, particularly when using streaming cipher modes like
-Output Feedback (OFB) or Counter (CTR).
+Using a separate key for encryption and for the MAC is essential. If it isn't possible to store the two keys, a valid alternative is to derive two keys from the main key using a suitable key derivation function (KDF), one for encryption purposes and one for MAC. For more information, see [SP 800-108 Rev. 1, Recommendation for Key Derivation Using Pseudorandom Functions | CSRC (nist.gov)](https://csrc.nist.gov/pubs/sp/800/108/r1/upd1/final).
 
-### Asymmetric Algorithms, Key Lengths, and Padding Modes
-_RSA_
+### Asymmetric algorithms, key lengths, and padding modes
 
-  - RSA should be used for encryption, key exchange and signatures.
+#### RSA
 
-  - RSA encryption should use the OAEP or RSA-PSS padding modes.
-    Existing code should use PKCS \#1 v1.5 padding mode for
-    compatibility only.
+- RSA can be used for encryption, key exchange, and signatures.
+- RSA encryption should use the OAEP or RSA-PSS padding modes.
+- Existing code should use PKCS #1 v1.5 padding mode for compatibility only.
+- Use of null padding isn't recommended.
+- A minimum of a 2048-bit key length is recommended, but we recommend supporting a 3072-bit key length.
 
-  - Use of null padding is not recommended.
+#### ECDSA and ECDH
 
-  - Keys \>= 2048 bits are recommended
+- ECDH-based key exchange and ECDSA-based signatures should use one of the three NIST-approved curves (P-256, P-384, or P521).
+- Support for P-256 should be considered the minimum, but we recommend supporting P-384.
 
-_ECDSA_
+#### Integer Diffie-Hellman
 
-  - ECDSA with \>= 256 bit keys is recommended
+- Key length >= 2048 bits is recommended0
+- The group parameters should either be a well-known named group (for example, [RFC 7919](https://datatracker.ietf.org/doc/html/rfc7919)), or generated by a trusted party and authenticated before use.
 
-  - ECDSA-based signatures should use one of the three NIST-approved
-    curves (P-256, P-384, or P521).
+## Key lifetimes
 
-_ECDH_
+- Define a [cryptoperiod](https://csrc.nist.gov/glossary/term/Cryptoperiod#:~:text=Cryptoperiod%20Definitions%3A%20The%20time%20span%20during%20which%20a,given%20system%20or%20application%20may%20remain%20in%20effect.) for all keys.
+   - For example: A symmetric key for data encryption, often referred as data encryption key or DEK, might have a usage period of up to two years for encrypting data, also known as the originator usage period. You might define that it has a valid usage period for decryption for three more years, also known as the recipient-usage period.
+- You should provide a mechanism or have a process for replacing keys to achieve the limited active lifetime. After the end of its active lifetime, a key must not be used to produce new data (for example, for encryption or signing), but might still be used to read data (for example, for decryption or verification).
 
-  - ECDH with \>= 256 bit keys is recommended
+## Random number generators
 
-  - ECDH-based key exchange should use one of the three NIST-approved
-    curves (P-256, P-384, or P521).
+All products and services should use cryptographically secure random number generators when randomness is required.
 
-_Integer Diffie-Hellman_
+### CNG
 
-  - Key length \>= 2048 bits is recommended
+- Use [BCryptGenRandom](https://msdn.microsoft.com/library/windows/desktop/aa375458.aspx) with the BCRYPT_USE_SYSTEM_PREFERRED_RNG flag.
 
-  - The group parameters should either be a well-known named group
-    (e.g., RFC 7919), or generated by a trusted party and authenticated
-    before use
+### Win32/64
 
-## Key Lifetimes
+- Legacy code can use [RtlGenRandom](https://msdn.microsoft.com/library/windows/desktop/aa387694.aspx) in kernel mode.
+- New code should use [BCryptGenRandom](https://msdn.microsoft.com/library/windows/desktop/aa375458.aspx) or [CryptGenRandom](https://msdn.microsoft.com/library/windows/desktop/aa379942.aspx).
+- The C function [Rand_s()](https://msdn.microsoft.com/library/sxtz2fa8.aspx) is also recommended (which on Windows, calls [CryptGenRandom](https://msdn.microsoft.com/library/windows/desktop/aa379942.aspx)).
+- Rand_s() is a safe and performant replacement for Rand().
+- Rand() must not be used for any cryptographic applications.
 
-  - All asymmetric keys should have a maximum five-year lifetime,
-    recommended one-year lifetime.
+### .NET
 
-  - All symmetric keys should have a maximum three-year lifetime;
-    recommended one-year lifetime.
+- Use [RandomNumberGenerator](/dotnet/api/system.security.cryptography.randomnumbergenerator).
 
-  - You should provide a mechanism or have a process for replacing keys
-    to achieve the limited active lifetime. After the end of its active
-    lifetime, a key should not be used to produce new data (for example,
-    for encryption or signing), but may still be used to read data (for
-    example, for decryption or verification).
+### PowerShell
 
-## Random Number Generators
-All products and services should use cryptographically secure random
-number generators when randomness is required.
+- Use [Get-SecureRandom (PowerShell)](/powershell/module/microsoft.powershell.utility/get-securerandom).
 
-CNG
+### Windows Store apps
 
-  - Use
-    [<span class="underline">BCryptGenRandom</span>](https://msdn.microsoft.com/library/windows/desktop/aa375458.aspx)
-    with the BCRYPT\_USE\_SYSTEM\_PREFERRED\_RNG flag
+- Windows Store apps can use [CryptographicBuffer.GenerateRandom](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandom.aspx) or [CryptographicBuffer.GenerateRandomNumber](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandomnumber.aspx).
 
-CAPI
+### Linux/macOS
 
-  - Use
-    [<span class="underline">CryptGenRandom</span>](https://msdn.microsoft.com/library/windows/desktop/aa379942.aspx)
-    to generate random values.
+- The `/dev/urandom` device provides a cryptographically strong source of random data, as does the `getrandom(2)` system call.
 
-Win32/64
+### Not recommended
 
-  - Legacy code can use
-    [<span class="underline">RtlGenRandom</span>](https://msdn.microsoft.com/library/windows/desktop/aa387694.aspx)
-    in kernel mode
+- Insecure functions related to random number generation include: [rand](https://msdn.microsoft.com/library/398ax69y.aspx), [System.Random (.NET)](https://msdn.microsoft.com/library/system.random.aspx), [GetTickCount](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx), [GetTickCount64](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx), and [Get-Random (PowerShell cmdlet)](/powershell/module/microsoft.powershell.utility/get-random).
+- Use of the dual elliptic curve random number generator ("DUAL_EC_DRBG") algorithm isn't permitted.
 
-  - New code should use
-    [<span class="underline">BCryptGenRandom</span>](https://msdn.microsoft.com/library/windows/desktop/aa375458.aspx)
-    or
-    [<span class="underline">CryptGenRandom</span>.](https://msdn.microsoft.com/library/windows/desktop/aa379942.aspx)
+## Windows platform supported crypto libraries
 
-  - The C function
-    <span class="underline">[Rand\_s(](https://msdn.microsoft.com/library/sxtz2fa8.aspx))</span>
-    is also recommended (which on Windows, calls
-    [<span class="underline">CryptGenRandom</span>)](https://msdn.microsoft.com/library/windows/desktop/aa379942.aspx)
+On the Windows platform, Microsoft recommends using the crypto APIs built into the operating system. On other platforms, developers might choose to evaluate nonplatform crypto libraries for use. In general, platform crypto libraries are updated more frequently since they ship as part of an operating system as opposed to being bundled with an application.
 
-  - Rand\_s() is a safe and performant replacement for Rand(). Rand()
-    should not be used for any cryptographic applications, but is ok for
-    internal testing only.
+Any usage decision regarding platform vs nonplatform crypto should be guided by the following requirements:
 
-  - The
-    [<span class="underline">SystemPrng</span>](https://msdn.microsoft.com/library/windows/desktop/dd408060.aspx)
-    function is recommended for kernel-mode code.
+- The library should be a current in-support version free of known security vulnerabilities.
+- The latest security protocols, algorithms, and key lengths should be supported.
+- (Optional) The library should be capable of supporting older security protocols/algorithms for backwards compatibility only.
 
-.NET
+### Native code
 
-  - Use
-    [<span class="underline">RNGCryptoServiceProvider</span>](https://msdn.microsoft.com/library/system.security.cryptography.rngcryptoserviceprovider.aspx)
+- Crypto Primitives: If your release is on Windows, use CNG if possible.
+- Code signature verification: [WinVerifyTrust](https://msdn.microsoft.com/library/aa388208(v=VS.85).aspx) is the supported API for verifying code signatures on Windows platforms.
+- Certificate Validation (as used in restricted certificate validation for code signing or SSL/TLS/DTLS): CAPI2 API; for example, [CertGetCertificateChain](https://msdn.microsoft.com/library/windows/desktop/aa376078(v=vs.85).aspx) and [CertVerifyCertificateChainPolicy](https://msdn.microsoft.com/library/windows/desktop/aa377163(v=vs.85).aspx).
 
-Windows Store Apps
+### Managed code (.NET)
 
-  - Store Apps can use
-    [<span class="underline">CryptographicBuffer.GenerateRandom</span>](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandom.aspx)
-    or
-    [<span class="underline">CryptographicBuffer.GenerateRandomNumber</span>.](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.cryptographicbuffer.generaterandomnumber.aspx)
+- Crypto Primitives: Use the API defined in [System.Security.Cryptography](/dotnet/api/system.security.cryptography) namespace.
+- Use the latest version of .NET available.
 
-Not Recommended
+## Key derivation functions
 
-  - Insecure functions related to random number generation include
-    [<span class="underline">rand</span>,](https://msdn.microsoft.com/library/398ax69y.aspx)
-    [<span class="underline">System.Random</span>](https://msdn.microsoft.com/library/system.random.aspx)
-    (.NET),
-    [<span class="underline">GetTickCount</span>](https://msdn.microsoft.com/library/windows/desktop/ms724408.aspx)
-    and [<span class="underline">GetTickCount64</span>
-    ](https://msdn.microsoft.com/library/windows/desktop/ms724411.aspx)
-
-  - Use of the dual elliptic curve random number generator
-    ("DUAL\_EC\_DRBG") algorithm is not recommended.
-
-## Windows Platform-supported Crypto Libraries
-On the Windows platform, Microsoft recommends using the crypto APIs
-built into the operating system. On other platforms, developers may
-choose to evaluate non-platform crypto libraries for use. In general,
-platform crypto libraries will be updated more frequently since they
-ship as part of an operating system as opposed to being bundled with an
-application.
-
-Any usage decision regarding platform vs non-platform crypto should be
-guided by the following requirements:
-
-1.  The library should be a current in-support version free of known
-    security vulnerabilities
-
-2.  The latest security protocols, algorithms and key lengths should be
-    supported
-
-3.  (Optional) The library should be capable of supporting older
-    security protocols/algorithms for backwards compatibility only
-
-_Native Code_
-
-  - Crypto Primitives: If your release is on Windows or Windows Phone,
-    use CNG if possible. Otherwise, use the CryptoAPI (also called CAPI,
-    which is supported as a legacy component on Windows from Windows
-    Vista onward).
-
-  - SSL/TLS/DTLS:
-    [<span class="underline">WinINet</span>,](https://msdn.microsoft.com/library/windows/desktop/aa385331\(v=vs.85\).aspx)
-    [<span class="underline">WinHTTP</span>,](https://msdn.microsoft.com/library/aa382925\(v=VS.85\).aspx)
-    [<span class="underline">Schannel</span>,](https://msdn.microsoft.com/library/windows/desktop/ms678421\(v=vs.85\).aspx)
-    [<span class="underline">IXMLHTTPRequest2</span>,](https://msdn.microsoft.com/library/windows/desktop/hh831151.aspx)
-    or
-    [<span class="underline">IXMLHTTPRequest3</span>.](https://msdn.microsoft.com/library/windows/desktop/dn376398.aspx)
-
-    - WinHTTP apps should be built with [<span class="underline">WinHttpSetOption</span><span class="underline"></span>](https://msdn.microsoft.com/library/windows/desktop/aa384114\(v=vs.85\).aspx)<span class="underline">in order</span> to support TLS 1.2
-
-  - Code signature verification:
-    [<span class="underline">WinVerifyTrust</span>](https://msdn.microsoft.com/library/aa388208\(v=VS.85\).aspx)
-    is the supported API for verifying code signatures on Windows
-    platforms.
-
-  - Certificate Validation (as used in restricted certificate validation
-    for code signing or SSL/TLS/DTLS): CAPI2 API; for example, [<span class="underline">CertGetCertificateChain</span>](https://msdn.microsoft.com/library/windows/desktop/aa376078\(v=vs.85\).aspx) and [<span class="underline">CertVerifyCertificateChainPolicy</span>](https://msdn.microsoft.com/library/windows/desktop/aa377163\(v=vs.85\).aspx)
-
-_Managed Code_
-
-  - Crypto Primitives: Use the API defined in
-    System.Security.Cryptography namespace---the CNG classes are
-    preferred.
-
-  - Use the latest version of the .Net Framework available. At a minimum
-    this should be .Net Framework version 4.6. If an older version is
-    required, ensure the
-    [“<span class="underline">SchUseStrongCrypto</span>”](https://technet.microsoft.com/library/security/2960358.aspx#ID0ETHAE)
-    regkey is set to enable TLS 1.2 for the application in question.
-
-  - Certificate Validation: Use APIs defined under the
-    [<span class="underline">System.Security.Cryptography.X509Certificates</span>](https://msdn.microsoft.com/library/system.security.cryptography.x509certificates.aspx)
-    namespace.
-
-  - SSL/TLS/DTLS: Use APIs defined under the System.Net namespace (for
-    example,
-    [<span class="underline">HttpWebRequest</span>)](https://msdn.microsoft.com/library/system.net.httpwebrequest.aspx).
-
-## Key Derivation Functions
-Key derivation is the process of deriving cryptographic key material
-from a shared secret or a existing cryptographic key. Products should
-use recommended key derivation functions. Deriving keys from user-chosen
-passwords, or hashing passwords for storage in an authentication system
-is a special case not covered by this guidance; developers should
-consult an expert.
+Key derivation is the process of deriving cryptographic key material from a shared secret or an existing cryptographic key. Products should use recommended key derivation functions. Deriving keys from user-chosen passwords, or hashing passwords for storage in an authentication system is a special case not covered by this guidance; developers should consult an expert.
 
 The following standards specify KDF functions recommended for use:
 
-  - NIST SP 800-108: *Recommendation For Key Derivation Using
-    Pseudorandom Functions*. In particular, the KDF in counter mode,
-    with HMAC as a pseudorandom function
+- [NIST SP 800-108 (Revision 1)](https://csrc.nist.gov/pubs/sp/800/108/r1/upd1/final): Recommendation For Key Derivation Using Pseudorandom Functions. In particular, the KDF in counter mode, with HMAC as a pseudorandom function
+- [NIST SP 800-56A (Revision 3)](https://csrc.nist.gov/pubs/sp/800/56/a/r3/final): Recommendation for Pair-Wise Key Establishment Schemes Using Discrete Logarithm Cryptography.
 
-  - NIST SP 800-56A (Revision 2): *Recommendation for Pair-Wise Key
-    Establishment Schemes Using Discrete Logarithm Cryptography*. In
-    particular, the “Single-Step Key Derivation Function” in Section
-    5.8.1 is recommended.
+To derive keys from existing keys, use the [BCryptKeyDerivation](https://msdn.microsoft.com/library/windows/desktop/hh448506(v=vs.85).aspx) API with one of the algorithms:
 
-To derive keys from existing keys, use the
-[<span class="underline">BCryptKeyDerivation</span>](https://msdn.microsoft.com/library/windows/desktop/hh448506\(v=vs.85\).aspx)
-API with one of the algorithms:
+- BCRYPT_SP800108_CTR_HMAC_ALGORITHM
+- BCRYPT_SP80056A_CONCAT_ALGORITHM
 
-  - BCRYPT\_SP800108\_CTR\_HMAC\_ALGORITHM
+To derive keys from a shared secret (the output of a key agreement), use the [BCryptDeriveKey](https://msdn.microsoft.com/library/windows/desktop/aa375393(v=vs.85).aspx) API with one of the following algorithms:
 
-  - BCRYPT\_SP80056A\_CONCAT\_ALGORITHM
+- BCRYPT_KDF_SP80056A_CONCAT
+- BCRYPT_KDF_HMAC
 
-To derive keys from a shared secret (the output of a key agreement) use
-the
-[<span class="underline">BCryptDeriveKey</span>](https://msdn.microsoft.com/library/windows/desktop/aa375393\(v=vs.85\).aspx)
-API with one of the following algorithms:
+## Certificate validation
 
-  - BCRYPT\_KDF\_SP80056A\_CONCAT
+Products that use TLS, or DTLS should fully verify the X.509 certificates of the entities they connect to. This process includes verification of the following parts of the certificate:
 
-  - BCRYPT\_KDF\_HMAC
+- Domain name.
+- Validity dates (both beginning and expiration dates).
+- Revocation status.
+- Usage (for example, "Server Authentication" for servers, "Client Authentication" for clients).
+- Trust chain. Certificates should chain to a root certification authority (CA) trusted by the platform or explicitly configured by the administrator.
 
-## Certificate Validation
-Products that use SSL, TLS, or DTLS should fully verify the X.509
-certificates of the entities they connect to. This includes verification
-of the certificates’:
+If any of these verification tests fail, the product should terminate the connection with the entity.
 
-  - Domain name.
+Don't use "self-signed" certificates. Self-signed don't inherently convey trust, support revocation, or support key renewal.
 
-  - Validity dates (both beginning and expiration dates).
+## Cryptographic hash functions
 
-  - Revocation status.
-
-  - Usage (for example, “Server Authentication” for servers, “Client
-    Authentication” for clients).
-
-  - Trust chain. Certificates should chain to a root certification
-    authority (CA) that is trusted by the platform or explicitly
-    configured by the administrator.
-
-If any of these verification tests fail, the product should terminate
-the connection with the entity.
-
-Clients that trust “self-signed” certificates (for example, a mail
-client connecting to an Exchange server in a default configuration) may
-ignore certificate verification checks. However, self-signed
-certificates do not inherently convey trust, support revocation, or
-support key renewal. You should only trust selfsigned certificates if
-you have obtained them from another trusted source (for example, a
-trusted entity that provides the certificate over an authenticated and
-integrity-protected transport).
-
-## Cryptographic Hash Functions
-Products should use the SHA-2 family of hash algorithms (SHA256, SHA384,
-and SHA512). Truncation of cryptographic hashes for security purposes to
-less than 128 bits is not recommended.
+Products should use the SHA-2 family of hash algorithms (SHA-256, SHA-384, and SHA-512). Truncation of cryptographic hashes for security purposes to less than 128 bits isn't permitted. While the usage of SHA-256 is the minimum, we recommend supporting SHA-384.
 
 ### MAC/HMAC/keyed hash algorithms
-A message authentication code (MAC) is a piece of information attached
-to a message that allows its recipient to verify both the authenticity
-of the sender and the integrity of the message using a secret key.
 
-The use of either a hash-based MAC
-([<span class="underline">HMAC</span>)](https://csrc.nist.gov/publications/nistpubs/800-107-rev1/sp800-107-rev1.pdf)
-or [<span class="underline">block-cipher-based
-MAC</span>](https://csrc.nist.gov/publications/nistpubs/800-38B/SP_800-38B.pdf)
-is recommended as long as all underlying hash or symmetric encryption
-algorithms are also recommended for use; currently this includes the
-HMAC-SHA2 functions (HMAC-SHA256, HMAC-SHA384 and HMAC-SHA512).
+A message authentication code (MAC) is a piece of information attached to a message that allows its recipient to verify both the authenticity of the sender and the integrity of the message using a secret key.
 
-Truncation of HMACs to less than 128 bits is not recommended.
+The use of either a [hash-based MAC (HMAC)](https://csrc.nist.gov/publications/nistpubs/800-107-rev1/sp800-107-rev1.pdf) or [block-cipher-based MAC](https://csrc.nist.gov/publications/nistpubs/800-38B/SP_800-38B.pdf) is recommended as long as all underlying hash or symmetric encryption algorithms are also recommended for use; currently this includes the HMAC-SHA2 functions (HMAC-SHA256, HMAC-SHA384, and HMAC-SHA512). While the usage of HMAC-SHA256 is the minimum, we recommend supporting HMAC-SHA384.
 
-## Design and Operational Considerations
-  - You should provide a mechanism for replacing cryptographic keys as
-    needed. Keys should be replaced once they have reached the end of
-    their active lifetime or if the cryptographic key is compromised.
-    Whenever you renew a certificate, you should renew it with a new
-    key.
+Truncation of HMACs to less than 128 bits isn't recommended.
 
-  - Products using cryptographic algorithms to protect data should
-    include enough metadata along with that content to support migrating
-    to different algorithms in the future. This should include the
-    algorithm used, key sizes, initialization vectors, and padding
-    modes.
+## Design and operational considerations
 
-      - For more information on Cryptographic Agility, see
-        [<span class="underline">Cryptographic Agility on
-        MSDN</span>.](https://msdn.microsoft.com/magazine/ee321570.aspx)
-
-  - Where available, products should use established, platform-provided
-    cryptographic protocols rather than re-implementing them. This
-    includes signing formats (e.g. use a standard, existing format).
-
-  - Symmetric stream ciphers such as RC4 should not be used. Instead of
-    symmetric stream ciphers, products should use a block cipher,
-    specifically AES with a key length of at least 128 bits.
-
-  - Do not report cryptographic operation failures to end-users. When
-    returning an error to a remote caller (e.g. web client, or client in
-    a client-server scenario), use a generic error message only.
-
-      - Avoid providing any unnecessary information, such as directly
-        reporting out-of-range or invalid length errors. Log verbose
-        errors on the server only, and only if verbose logging is
-        enabled.
-
-  - Additional security review is highly recommended for any design
-    incorporating the following:
-
-      - A new protocol that is primarily focused on security (such as an
-        authentication or authorization protocol)
-
-      - A new protocol that uses cryptography in a novel or non-standard
-        way o Example considerations include:
-
-          - Will a product that implements the protocol call any crypto
-            APIs or methods as part of the protocol implementation?
-
-          - Does the protocol depend on any other protocol used for
-            authentication or authorization?
-
-          - Will the protocol define storage formats for cryptographic
-            elements, such as keys?
-
-  - Self-signed certificates are not recommended for production
-    environments. Use of a self-signed certificate, like use of a raw
-    cryptographic key, does not inherently provide users or
-    administrators any basis for making a trust decision.
-
-      - In contrast, use of a certificate rooted in a trusted
-        certificate authority makes clear the basis for relying on the
-        associated private key and enables revocation and updates in the
-        event of a security failure.
-
-## Encrypting Sensitive Data prior to Storage
-_DPAPI/DPAPI-NG_
-
-For data that needs to be persisted across system reboots:
-
-  - CryptProtectData
-
-  - CryptUnprotectData
-
-  - NCryptProtectSecret (Windows 8 CNG DPAPI)
-
-For data that does not need to be persisted across system reboots:
-
-  - CryptProtectMemory
-
-  - CryptUnprotectMemory
-
-For data that needs to be persisted and accessed by multiple domain
-accounts and computers:
-
-  - NCryptProtectSecret (in CNG DPAPI, available as of Windows 8)
-
-  - [<span class="underline">Microsoft Azure KeyVault</span>
-    ](https://azure.microsoft.com/services/key-vault/)
-
-_SQL Server TDE_
-
-You can use SQL Server Transparent Data Encryption (TDE) to protect
-sensitive data.
-
-You should use a TDE database encryption key (DEK) that meets the SDL
-cryptographic algorithm and key strength requirements. Currently, only
-AES\_128, AES\_192 and AES\_256 are recommended; TRIPLE\_DES\_3KEY is
-not recommended.
-
-There are some important considerations for using SQL TDE that you
-should keep in mind:
-
-  - SQL Server does not support encryption for
-    [<span class="underline">FILESTREAM</span>](https://technet.microsoft.com/library/gg471497.aspx)
-    data, even when TDE is enabled.
-
-  - TDE does not automatically provide encryption for data in transit to
-    or from the database; you should also enable encrypted connections
-    to the SQL Server database. Please see
-    [<span class="underline">Enable</span>
-    <span class="underline">Encrypted Connections to the Database Engine
-    (SQL Server Configuration
-    Manager)</span>](https://technet.microsoft.com/library/ms191192.aspx)
-    for guidance on enabling encrypted connections.
-
-  - If you move a TDE-protected database to a different SQL Server
-    instance, you should also move the certificate that protects the TDE
-    Data Encryption Key (DEK) and install it in the master database of
-    the destination SQL Server instance. Please see the TechNet article
-    [<span class="underline">Move a TDE</span>
-    <span class="underline">Protected Database to Another SQL
-    Server</span>](https://technet.microsoft.com/library/ff773063.aspx)
-    for more details.
-
-_Credential Management_
-
-Use the [<span class="underline">Windows Credential Manager
-API</span>](https://msdn.microsoft.com/library/windows/desktop/aa374731.aspx#credentials_management_functions)
-or [<span class="underline">Microsoft Azure
-KeyVault</span>](https://azure.microsoft.com/services/key-vault/)
-to protect password and credential data.
-
-_Windows Store Apps_
-
-Use the classes in the [<span class="underline">Windows.Security.Cryptography</span>](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.aspx)
-and
-[<span class="underline">Windows.Security.Cryptography.DataProtection</span>](https://msdn.microsoft.com/library/windows/apps/windows.security.cryptography.dataprotection.aspx)
-namespaces to protect secrets and sensitive data.
-
-  - ProtectAsync
-
-  - ProtectStreamAsync
-
-  - UnprotectAsync
-
-  - UnprotectStreamAsync
-
-Use the classes in the
-[<span class="underline">Windows.Security.Credentials</span>](https://msdn.microsoft.com/library/windows/apps/windows.security.credentials.aspx)
-namespace to protect password and credential data.
-
-_.NET_
-
-For data that needs to be persisted across system reboots:
-
-  - ProtectedData.Protect
-
-  - ProtectedData.Unprotect
-
-For data that does not need to be persisted across system reboots:
-
-  - ProtectedMemory.Protect
-
-  - ProtectedMemory.Unprotect
-
-For configuration files, use
-
-either
-[<span class="underline">RSAProtectedConfigurationProvider</span>](https://msdn.microsoft.com/library/system.configuration.rsaprotectedconfigurationprovider.aspx)
-or
-[<span class="underline">DPAPIProtectedConfigurationProvider</span>](https://msdn.microsoft.com/library/system.configuration.dpapiprotectedconfigurationprovider.aspx)
-to protect your configuration, using either RSA encryption or DPAPI,
-respectively.
-
-The RSAProtectedConfigurationProvider can be used across multiple
-machines in a cluster. See [<span class="underline">Encrypting
-Configuration Information Using Protected
-Configuration</span>](https://msdn.microsoft.com/library/53tyfkaw.aspx)
-for more information.
+- You should provide a mechanism for replacing cryptographic keys as needed. Keys should be replaced once they reach the end of their active lifetime or the cryptographic key is compromised. 
+   - Whenever you renew a certificate, you should renew it with a new key.
+- Products using cryptographic algorithms to protect data should include enough metadata along with that content to support migrating to different algorithms in the future. This metadata should include the algorithm used, key sizes, and padding modes.
+   - For more information on Cryptographic Agility, see the article [Cryptographic Agility](https://msdn.microsoft.com/magazine/ee321570.aspx).
+- Where available, products should use established, platform-provided cryptographic protocols rather than reimplementing them, including signing formats (for example, use a standard, existing format).
+- Don't report cryptographic operation failures to end-users. When returning an error to a remote caller (for example, web client, or client in a client-server scenario), use a generic error message only.
+   - Avoid providing any unnecessary information, such as directly reporting out-of-range or invalid length errors. Log verbose errors on the server only, and only if verbose logging is enabled.
+- Extra security review is highly recommended for any design incorporating the following items:
+   - A new protocol that is primarily focused on security (such as an authentication or authorization protocol)
+   - A new protocol that uses cryptography in a novel or nonstandard way. Example considerations include:
+      - Will a product that implements the protocol call any crypto APIs or methods as part of the protocol implementation?
+      - Does the protocol depend on any other protocol used for authentication or authorization?
+      - Will the protocol define storage formats for cryptographic elements, such as keys?
+- Self-signed certificates aren't recommended. Use of a self-signed certificate, like use of a raw cryptographic key, doesn't inherently provide users or administrators any basis for making a trust decision.
+   - In contrast, use of a certificate rooted in a trusted certificate authority makes clear the basis for relying on the associated private key and enables revocation and updates if there's a security failure.

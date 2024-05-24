@@ -2,24 +2,23 @@
 title: Microsoft DART ransomware approach and best practices
 description: Understand how Microsoft's Detection and Response Team (DART) responds to ransomware attacks and their recommendations for containment and post-incident activities.
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, Microsoft Defender XDR
-search.product: DART
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
-  - NOCSH
+- NOCSH
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - msftsolution-ransomware
+- msftsolution-ransomware
 ms.topic: article
 ms.subservice:: m365d
 ms.custom: cxdef-zt-ransomware 
-ms.localizationpriority:   # medium
+ms.date: 05/03/2024
 ---
 
 # Microsoft Incident Response team ransomware approach and best practices

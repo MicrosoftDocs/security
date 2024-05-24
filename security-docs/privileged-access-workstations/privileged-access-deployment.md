@@ -22,7 +22,7 @@ This guidance sets up all of the profiles for all three security levels and shou
 
 ## License requirements
 
-The concepts covered in this guide assume you have Microsoft 365 Enterprise E5 or an equivalent SKU. Some of the recommendations in this guide can be implemented with lower SKUs. For more information, see [Microsoft 365 Enterprise licensing](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
+The concepts covered in this guide assume you have Microsoft 365 Enterprise E5 or an equivalent product. Some of the recommendations in this guide can be implemented with lower SKUs. For more information, see [Microsoft 365 Enterprise licensing](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
 To automate license provisioning, consider [group-based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign) for your users.
 
@@ -34,19 +34,19 @@ Microsoft Entra ID manages users, groups, and devices for your administrator wor
 
 When you create the secured workstation administrator account, you expose the account to your current workstation. Make sure you use a known safe device to do this initial configuration and all global configuration. To reduce the attack exposure for the first-time experience, consider following the [guidance to prevent malware infections](/windows/security/threat-protection/intelligence/prevent-malware-infection).
 
-Require multi-factor authentication, at least for your administrators. See [Conditional Access: Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) for implementation guidance.
+Require multifactor authentication, at least for your administrators. See [Conditional Access: Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) for implementation guidance.
 
 <a name='azure-ad-users-and-groups'></a>
 
 ### Microsoft Entra users and groups
 
 1. From the Azure portal, browse to **Microsoft Entra ID** > **Users** > **New user**.
-1. Create your device user by following the steps in the [create user tutorial](/Intune/quickstart-create-user).
+1. Create your device user by following the steps in the [create user tutorial](/intune/quickstart-create-user).
 1. Enter:
-   * **Name** - Secure Workstation Administrator
+   * **Name** - Secure Workstation User
    * **User name** - `secure-ws-user@contoso.com`
    * **Directory role** - **Limited administrator** and select the **Intune Administrator** role.
-   * **Usage Location** - For example **United Kingdom**, or your desired location form the list.
+   * **Usage Location** - For example **United Kingdom**, or your desired location from the list.
 
 1. Select **Create**.
 
@@ -57,7 +57,7 @@ Create your device administrator user.
    * **Name** - Secure Workstation Administrator
    * **User name** - `secure-ws-admin@contoso.com`
    * **Directory role** - **Limited administrator** and select the **Intune Administrator** role.
-   * **Usage Location** - For example **United Kingdom**, or your desired location form the list.
+   * **Usage Location** - For example **United Kingdom**, or your desired location from the list.
 
 1. Select **Create**.
 
@@ -123,7 +123,7 @@ This method requires that users of the VIP, DevOps, and Privileged workstations 
 
 Refer to [How to manage the local administrators group on Microsoft Entra joined devices](/azure/active-directory/devices/assign-local-admin) for details on how to manage members of the local administrators group.
 
-#### Require multi-factor authentication to join devices
+#### Require multifactor authentication to join devices
 
 To further strengthen the process of joining devices to Microsoft Entra ID:
 
@@ -145,7 +145,7 @@ These steps allow you to manage any device with Microsoft Endpoint Manager. For 
 
 ### Microsoft Entra Conditional Access
 
-Microsoft Entra Conditional Access can help restrict privileged administrative tasks to compliant devices. Predefined members of the **Secure Workstation Users** group are required to perform multi-factor authentication when signing in to cloud applications. A best practice is to exclude emergency access accounts from the policy. For more information, see [Manage emergency access accounts in Microsoft Entra ID](/azure/active-directory/roles/security-emergency-access).
+Microsoft Entra Conditional Access can help restrict privileged administrative tasks to compliant devices. Predefined members of the **Secure Workstation Users** group are required to perform multifactor authentication when signing in to cloud applications. A best practice is to exclude emergency access accounts from the policy. For more information, see [Manage emergency access accounts in Microsoft Entra ID](/azure/active-directory/roles/security-emergency-access).
 
 #### Conditional Access only allowing secured workstation ability to access Azure portal
 
@@ -187,9 +187,9 @@ After creating a device group, you must create a deployment profile to configure
 
 1. Select **Next**.
 
-   * For **Deployment mode**, choose [**Self-Deploying (Preview)**](/mem/autopilot/self-deploying). Devices with this profile are associated with the user who enrolls the device. During the deployment, it is advisable to use the Self-Deployment mode features to include:
+   * For **Deployment mode**, choose [**Self-Deploying (Preview)**](/mem/autopilot/self-deploying). Devices with this profile are associated with the user who enrolls the device. During the deployment, it's advisable to use the Self-Deployment mode features to include:
       * Enrolls the device in Intune Microsoft Entra automatic MDM enrollment, and only allow for a device to be accessed until all policies, applications, certificates, and networking profiles are provisioned on the device.
-      * User credentials are required to enroll the device. It's essential to note that deploying a device in the **Self-Deploying** mode will allow you to deploy laptops in a shared model. No user assignment will happen until the device is assigned to a user for the first time. As a result, any user policies such as BitLocker will not be enabled until a user assignment is completed. For more information about how to log on to a secured device, see [selected profiles](/intune/device-profile-assign). 
+      * User credentials are required to enroll the device. It's essential to note that deploying a device in the **Self-Deploying** mode will allow you to deploy laptops in a shared model. No user assignment will happen until the device is assigned to a user for the first time. As a result, any user policies such as BitLocker won't be enabled until a user assignment is completed. For more information about how to log on to a secured device, see [selected profiles](/intune/device-profile-assign). 
    * Select your Language (Region), User account type **standard**. 
 
 1. Select **Next**.
@@ -290,9 +290,9 @@ To successfully complete the hardening of the solution, download and execute the
 
 | Profile | Download location | Filename |
 | --- | --- | --- |
-| Enterprise | https://aka.ms/securedworkstationgit | Enterprise-Workstation-Windows10-(20H2).ps1 |
-| Specialized | https://aka.ms/securedworkstationgit | Specialized - Windows10-(20H2).ps1 |
-| Privileged | https://aka.ms/securedworkstationgit | Privileged-Windows10-(20H2).ps1 |
+| Enterprise | https://aka.ms/securedworkstationgit | `Enterprise-Workstation-Windows10-(20H2).ps1` |
+| Specialized | https://aka.ms/securedworkstationgit | `Specialized-Windows10-(20H2).ps1` |
+| Privileged | https://aka.ms/securedworkstationgit | `Privileged-Windows10-(20H2).ps1` |
 
 > [!NOTE]
 > The removal of of admin rights and access, as well as, Application execution control (AppLocker) are managed by the policy profiles that are deployed.  
@@ -350,7 +350,7 @@ You can make additional changes to the management of both inbound and outbound r
 
 Restrictive URL traffic management includes:
 
-* Deny All outbound traffic except selected Azure and Microsoft services including Azure Cloud Shell and the ability to allows self-service password reset.
+* Deny All outbound traffic except selected Azure and Microsoft services including Azure Cloud Shell and the ability to allow self-service password reset.
 * The Privileged profile restricts the endpoints on the internet that the device can connect to using the following URL Lock Proxy configuration.
 
 ```
@@ -365,7 +365,7 @@ The endpoints listed in the ProxyOverride list are limited to those endpoints ne
 
 ## Enable Microsoft Defender for Cloud Apps, URLs restricted list to approved URLs (Allow most)
 
-In our roles deployment it is recommended that for Enterprise, and Specialized deployments, where a strict *deny all* web browsing is not desirable, that using the capabilities of a cloud access security broker (CASB) such as [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) be utilized to block access to risky, and questionable web sites. The solution addresses a simple way to block applications and websites that have been curated. This solution is similar to getting access to the block list from sites such as the Spamhaus Project who maintains [the Domain Block List (DBL)](https://www.spamhaus.org/dbl/): a good resource to use as an advanced set of rules to implement for blocking sites.
+In our roles deployment it's recommended that for Enterprise, and Specialized deployments, where a strict *deny all* web browsing isn't desirable, that using the capabilities of a cloud access security broker (CASB) such as [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) be utilized to block access to risky, and questionable web sites. The solution addresses a simple way to block applications and websites that have been curated. This solution is similar to getting access to the blocklist from sites such as the Spamhaus Project who maintains [the Domain Blocklist (DBL)](https://www.spamhaus.org/dbl/): a good resource to use as an advanced set of rules to implement for blocking sites.
 
 The solution will provide you:
 
@@ -378,7 +378,7 @@ Enable Defender for Cloud Apps and connect to Defender ATP to block access the r
 
 * In [Microsoft Defender Security Center](https://securitycenter.windows.com) > Settings > Advanced features, set Microsoft Defender for Cloud Apps integration > **ON**
 * In [Microsoft Defender Security Center](https://securitycenter.windows.com)  > Settings > Advanced features, set Custom network indicators >  **ON**
-* In [Microsoft Defender for Cloud Apps portal](https://portal.cloudappsecurity.com) > Settings > Microsoft Defender ATP integration > Select **Block unsanctioned apps**  
+* In [Microsoft Defender for Cloud Apps portal](https://portal.cloudappsecurity.com) > Settings > Microsoft Defender for Endpoint > Select **Enforce app access**  
 
 ## Manage local applications
 
@@ -424,7 +424,7 @@ Download the Microsoft Win32 Content Prep Tool locally to a workstation and copy
 1. Select **64-bit** from the **Operating system architecture** checkbox dropdown
 1. Select **Windows 10 1903** from the **Minimum operating system** checkbox dropdown. Select **Next**
 1. Select **Manually configure** detection rules from the **Rules format** dropdown list
-1. Click **Add** and then select **File** form the **Rule type** dropdown
+1. Click **Add** and then select **File** from the **Rule type** dropdown
 1. Enter `C:\Program Files\Microsoft VS Code` in the **Path** field
 1. Enter `unins000.exe` in the **File or folder** field
 1. Select **File or folder exists** from the dropdown list, Select **OK** and then select **Next**
@@ -434,7 +434,7 @@ Download the Microsoft Win32 Content Prep Tool locally to a workstation and copy
 
 ### Use PowerShell to create custom apps and settings
 
-There are some configuration settings that we recommend, including two Defender for Endpoint recommendations, that must be set using PowerShell. These configuration changes cannot be set via policies in Intune.
+There are some configuration settings that we recommend, including two Defender for Endpoint recommendations that must be set using PowerShell. These configuration changes can't be set via policies in Intune.
 
 You can also use PowerShell to extend host management capabilities. The [PAW-DeviceConfig.ps1]() script from GitHub is an example script that configures the following settings:
 
@@ -445,7 +445,7 @@ You can also use PowerShell to extend host management capabilities. The [PAW-Dev
 * Removes XPS Printing
 * Enables and configures Hibernate
 * Implements registry fix to enable AppLocker DLL rule processing
-* Implements registry settings for two Microsoft Defender for Endpoint recommendations that cannot be set using Endpoint Manager.
+* Implements registry settings for two Microsoft Defender for Endpoint recommendations that can't be set using Endpoint Manager.
   * Require users to elevate when setting a network's location
   * Prevent saving of network credentials
 * Disable Network Location Wizard - prevents users from setting network location as Private and therefore increasing the attack surface exposed in Windows Firewall
@@ -467,17 +467,17 @@ vProvide a **Name** for the script and specify the **Script location**.
 
 ## Validate and test your deployment with your first device
 
-This enrollment assumes that you will use a physical computing device. It is recommended that as part of the procurement process that the OEM, Reseller, distributor, or partner [register devices in Windows Autopilot](/mem/autopilot/add-devices).
+This enrollment assumes that you'll use a physical computing device. It's recommended that as part of the procurement process that the OEM, Reseller, distributor, or partner [register devices in Windows Autopilot](/mem/autopilot/add-devices).
 
-However for testing it is possible to stand up [Virtual Machines](/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm) as a test scenario. However note enrollment of personally joined devices will need to be revised to allow this method of joining a client.
+However for testing it's possible to stand up [Virtual Machines](/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm) as a test scenario. However note enrollment of personally joined devices will need to be revised to allow this method of joining a client.
 
-This method works for Virtual Machines or physical devices that have not been previously registered.
+This method works for Virtual Machines or physical devices that haven't been previously registered.
 
 1. Start the device and wait for the username dialog to be presented
 1. Press `SHIFT + F10` to display command prompt
-1. Type `PowerShell`, hit Enter
-1. Type `Set-ExecutionPolicy RemoteSigned`, hit Enter
-1. Type `Install-Script GetWindowsAutopilotInfo`, hit Enter
+1. Type `PowerShell` press Enter
+1. Type `Set-ExecutionPolicy RemoteSigned` press Enter
+1. Type `Install-Script Get-WindowsAutopilotInfo` press Enter
 1. Type `Y` and click Enter to accept PATH environment change
 1. Type `Y` and click Enter to install NuGet provider
 1. Type `Y` to trust the repository 

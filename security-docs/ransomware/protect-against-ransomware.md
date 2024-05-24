@@ -61,7 +61,7 @@ Bookmark this page as your starting point for the steps.
 
 The items in the implementation checklists are in the recommended order of prioritization, not a technical dependency order.
 
-Use the checklists to confirm and modify your existing configuration as needed and in a way that works in your organization. For example, in the most important backup element, your backup some systems, but they may not be offline/immutable, or you may not test the full enterprise restore procedures, or you may not have backups of critical business systems or critical IT systems like Active Directory Domain Services (AD DS) domain controllers.
+Use the checklists to confirm and modify your existing configuration as needed and in a way that works in your organization. For example, in the most important backup element, you back up some systems, but they might not be offline or immutable, you might not test the full enterprise restore procedures, or you might not have backups of critical business systems or critical IT systems like Active Directory Domain Services (AD DS) domain controllers.
 
 >[!Note]
 >See the [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/) Microsoft security blog post for an additional summary of this process.
@@ -79,16 +79,16 @@ This step is designed to [minimize the monetary incentive from ransomware attack
 - Easier for your organization to recover from an attack without paying the ransom.
 
 >[!Note]
->While restoring many or all enterprise systems is a difficult endeavor, the alternative of paying an attacker for a recovery key they may or may not deliver, and using tools written by the attackers to try to recover systems and data.
+>While restoring many or all enterprise systems is a difficult endeavor, the alternative of paying an attacker for a recovery key they might not deliver, and using tools written by the attackers to try to recover systems and data.
 >
 
 ### Step 2. Limit the scope of ransomware damage
 
-Make the attackers work a lot harder to [gain access to multiple business critical systems through privileged access roles](protect-against-ransomware-phase2.md). Limiting the attacker’s ability to get privileged access makes it much harder to profit off of an attack on your organization, making it more likely they will give up and go elsewhere.
+Make the attackers work a lot harder to [gain access to multiple business critical systems through privileged access roles](protect-against-ransomware-phase2.md). Limiting the attacker’s ability to get privileged access makes it much harder to profit off of an attack on your organization, making it more likely they'll give up and go elsewhere.
 
 ### Step 3. Make it hard for cybercriminals to get in
 
-This last set of tasks is important to raise friction for entry but will take time to complete as part of a larger security journey. The goal of this step is to make the attackers' work *much* harder as they try to [obtain access to your on-premises or cloud infrastructures](protect-against-ransomware-phase3.md) at the various common points of entry. There are a lot of these tasks, so it’s important to prioritize your work here based on how fast you can accomplish these with your current resources.
+This last set of tasks is important to raise friction for entry but will take time to complete as part of a larger security journey. The goal of this step is to make the attackers' work *much* harder as they try to [obtain access to your on-premises or cloud infrastructures](protect-against-ransomware-phase3.md) at the various common points of entry. There are many tasks, so it’s important to prioritize your work here based on how fast you can accomplish these with your current resources.
 
 While many of these will be familiar and easy to quickly accomplish, it’s critically important that ***your work on step 3 should not slow down your progress on steps 1 and 2***.
 
@@ -126,6 +126,7 @@ Microsoft 365:
 
 Microsoft Defender XDR:
 
+- [Built in protection against ransomware](/defender-endpoint/built-in-protection)
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
 Microsoft Azure:

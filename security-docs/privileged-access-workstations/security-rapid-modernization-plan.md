@@ -26,16 +26,16 @@ This roadmap builds on the technical controls established in the [privileged acc
 
 As you progress through the roadmap, you can utilize Microsoft Secure Score to track and compare many items in the journey with others in similar organizations over time. Learn more about Microsoft Secure Score in the article [Secure score overview](/microsoft-365/security/defender/microsoft-secure-score).
 
-Each item in this RAMP is structured as an initiative that will be tracked and managed using a format that builds on the objectives and key results (OKR) methodology. Each item includes what (objective), why, who, how, and how to measure (key results). Some items require changes to processes and people's knoweldge/skills, while others are simpler technology changes. Many of these initiatives will include members outside of the traditional IT Department that should be included in the decision making and implementation of these changes to ensure they are successfully integrated in your organization. 
+Each item in this RAMP is structured as an initiative that will be tracked and managed using a format that builds on the objectives and key results (OKR) methodology. Each item includes what (objective), why, who, how, and how to measure (key results). Some items require changes to processes and people's knowledge or skills, while others are simpler technology changes. Many of these initiatives will include members outside of the traditional IT Department that should be included in the decision making and implementation of these changes to ensure they're successfully integrated in your organization. 
 
-It is critical to work together as an organization, create partnerships, and educate people who traditionally were not part of this process. It is critical to create and maintain buy-in across the organization, without it many projects fail.
+It's critical to work together as an organization, create partnerships, and educate people who traditionally weren't part of this process. It's critical to create and maintain buy-in across the organization, without it many projects fail.
 
 ## Separate and manage privileged accounts
 
 ### Emergency access accounts
 
-- **What**: Ensure that you are not accidentally locked out of your Microsoft Entra organization in an emergency situation. 
-- **Why**: Emergency access accounts rarely used and highly damaging to the organization if compromised, but their availability to the organization is also critically important for the few scenarios when they are required. Ensure you have a plan for continuity of access that accommodates both expected and unexpected events. 
+- **What**: Ensure that you aren't accidentally locked out of your Microsoft Entra organization in an emergency situation. 
+- **Why**: Emergency access accounts rarely used and highly damaging to the organization if compromised, but their availability to the organization is also critically important for the few scenarios when they're required. Ensure you have a plan for continuity of access that accommodates both expected and unexpected events. 
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
@@ -66,8 +66,8 @@ It is critical to work together as an organization, create partnerships, and edu
 
 ### Identify and categorize privileged accounts (Microsoft Entra ID)
 
-- **What**: Identify all roles and groups with high business impact that will require privileged security level (immediately or over time). These administrators will require sparate accounts in a later step [Privileged access administration](critical-impact-accounts.md#separate-accounts-for-admins).
-- **Why**: This step is required to identify and minimize the number of people that require separate accounts and privileged access protection
+- **What**: Identify all roles and groups with high business impact that will require privileged security level (immediately or over time). These administrators will require separate accounts in a later step [Privileged access administration](critical-impact-accounts.md#separate-accounts-for-admins).
+- **Why**: This step is required to identify and minimize the number of people that require separate accounts and privileged access protection.
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
    - **Execution:** This initiative is a collaborative effort involving
@@ -111,7 +111,7 @@ If you don't have Microsoft Entra Privileged Identity Management in your organiz
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
 
 - **How**: All personnel that are authorized to possess administrative privileges must have separate accounts for administrative functions that are distinct from user accounts. **Do not share these accounts between users.**
-   - *Standard user accounts* - Granted standard user privileges for standard user tasks, such as email, web browsing, and using line-of-business applications. These accounts are not granted administrative privileges.
+   - *Standard user accounts* - Granted standard user privileges for standard user tasks, such as email, web browsing, and using line-of-business applications. These accounts aren't granted administrative privileges.
    - *Administrative accounts* - Separate accounts created for personnel who are assigned the appropriate administrative privileges. 
 - **Measure key results:** 100% of on-premises privileged users have separate dedicated accounts
 
@@ -123,7 +123,7 @@ If you don't have Microsoft Entra Privileged Identity Management in your organiz
     - Identify and investigate suspicious user activities and advanced attacks throughout the kill chain
     - Provide clear incident information on a simple timeline for fast triage 
 
-- **Why**: Modern attackers may stay undetected for long periods of time. Many threats are hard to find without a cohesive picture of your entire identity environment.
+- **Why**: Modern attackers might stay undetected for long periods of time. Many threats are hard to find without a cohesive picture of your entire identity environment.
 
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
@@ -177,7 +177,7 @@ Follow the guidance in the following articles, [Plan a Microsoft Entra multifact
 
 - **What**: Block legacy authentication protocol use for privileged user accounts.
 
-- **Why**: Organizations should block these legacy authentication protocols because multifactor authentication cannot be enforced against them. Leaving legacy authentication protocols enabled can create an entry point for attackers. Some legacy applications may rely on these protocols and organizations have the option to create specific exceptions for certain accounts. These exceptions should be tracked and additional monitoring controls implemented.
+- **Why**: Organizations should block these legacy authentication protocols because multifactor authentication can't be enforced against them. Leaving legacy authentication protocols enabled can create an entry point for attackers. Some legacy applications might rely on these protocols and organizations have the option to create specific exceptions for certain accounts. These exceptions should be tracked and additional monitoring controls implemented.
 
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity
@@ -205,7 +205,7 @@ Follow the guidance in the following articles, [Plan a Microsoft Entra multifact
      - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated and personnel has been trained on them
      - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Service owner processes have been updated and personnel has been trained on them
 - **How**: Establish a centralized consent process to maintain centralized visibility and control of the applications that have access to data by following the guidance in the article, [Managing consent to applications and evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests).
-- **Measure key results**: End users are not able to consent to Microsoft Entra application access
+- **Measure key results**: End users aren't able to consent to Microsoft Entra application access
 
 ### Clean up account and sign-in risks
 
@@ -218,7 +218,7 @@ Follow the guidance in the following articles, [Plan a Microsoft Entra multifact
      - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
      - [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) Helpdesk processes have been updated for related support calls and personnel has been trained on them
-- **How**: Create a process that monitors and manages user and sign-in risk. Decide if you will automate remediation, using Microsoft Entra multifactor authentication and SSPR, or block and require administrator intervention.Follow the guidance in the article [How To: Configure and enable risk policies](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
+- **How**: Create a process that monitors and manages user and sign-in risk. Decide if you'll automate remediation, using Microsoft Entra multifactor authentication and SSPR, or block and require administrator intervention. Follow the guidance in the article [How To: Configure and enable risk policies](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
 - **Measure key results**: The organization has zero unaddressed user and sign-in risks. 
 > [!NOTE]
 > Conditional Access policies are required to block accrual of new sign-in risks. See the Conditional access section of [Privileged Access Deployment](privileged-access-deployment.md#azure-active-directory-configuration)

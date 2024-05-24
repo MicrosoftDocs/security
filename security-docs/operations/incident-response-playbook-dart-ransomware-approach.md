@@ -38,12 +38,8 @@ The [Microsoft Detection and Response Team (DART)](https://www.microsoft.com/sec
 
 This article describes how DART handles ransomware attacks for Microsoft customers so that you can consider applying elements of their approach and best practices for your own security operations playbook.
 
-See these sections for the details:
-
-- [How DART uses Microsoft security services](#how-dart-uses-microsoft-security-services)
-
+### See these sections for the details:
 - [The DART approach to conducting ransomware incident investigations](#the-dart-approach-to-conducting-ransomware-incident-investigations)
-
 - [DART recommendations and best practices](#dart-recommendations-and-best-practices)
 
 > [!NOTE]

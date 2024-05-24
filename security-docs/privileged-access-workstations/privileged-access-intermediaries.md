@@ -1,6 +1,6 @@
 ---
 title: Securing privileged access intermediaries
-description: Securing intermediaries is only one part of the privileged access story
+description: Securing intermediaries is only one part of the privileged access story.
 
 ms.service: security
 ms.subservice: 
@@ -41,10 +41,10 @@ Different intermediary types perform unique functions so they each require a dif
 
 The **attacker opportunity** is represented by the available attack surface an attack operator can target:
 
-- **Native cloud services** like Microsoft Entra PIM, Azure Bastion, and Microsoft Entra application proxy offer a limited attack surface to attackers. While they are exposed to the public internet, customers (and attackers) have no access to underlying operating systems providing the services and they are typically maintained and monitored consistently via automated mechanisms at the cloud provider. This smaller attack surface limits the available options to attackers vs. classic on-premises applications and appliances that must be configured, patched, and monitored by IT personnel who are often overwhelmed by conflicting priorities and more security tasks than they have time to complete. 
-- **Virtual Private Networks (VPNs)** and **Remote Desktops** / **Jump servers** frequently have a significant attacker opportunity as they are exposed to the internet to provide remote access and the maintenance of these systems is frequently neglected. 
+- **Native cloud services** like Microsoft Entra PIM, Azure Bastion, and Microsoft Entra application proxy offer a limited attack surface to attackers. While they're exposed to the public internet, customers (and attackers) have no access to underlying operating systems providing the services and they're typically maintained and monitored consistently via automated mechanisms at the cloud provider. This smaller attack surface limits the available options to attackers vs. classic on-premises applications and appliances that must be configured, patched, and monitored by IT personnel who are often overwhelmed by conflicting priorities and more security tasks than they have time to complete. 
+- **Virtual Private Networks (VPNs)** and **Remote Desktops** / **Jump servers** frequently have a significant attacker opportunity as they're exposed to the internet to provide remote access and the maintenance of these systems is frequently neglected. 
 While they only have a few network ports exposed, attackers only need access to one unpatched service for an attack. 
-- **Third-party PIM/PAM** services are frequently hosted on-premises or as a VM on Infrastructure as a Service (IaaS) and are typically only available to intranet hosts. While not directly internet exposed, a single compromised credential may allow attackers to access the service over VPN or another remote access medium. 
+- **Third-party PIM/PAM** services are frequently hosted on-premises or as a VM on Infrastructure as a Service (IaaS) and are typically only available to intranet hosts. While not directly internet exposed, a single compromised credential might allow attackers to access the service over VPN or another remote access medium. 
 
 **Attacker value** represents what an attacker can gain by compromising an intermediary. A compromise is defined as an attacker gaining full control over the application/VM and/or an administrator of the customer instance of the cloud service. 
 
@@ -76,17 +76,17 @@ The common security elements for intermediaries are focused on maintaining good 
 
 These security controls should be applied to all types of intermediaries:
 
-- **Enforce inbound connection security** - Use Microsoft Entra ID and Conditional Access to ensure  all inbound connections from devices and accounts are known, trusted, and allowed. For more information, see the article [Secuiting privileged interfaces](privileged-access-interfaces.md) for detailed definitions for device and account requirements for enterprise and specialized.
+- **Enforce inbound connection security** - Use Microsoft Entra ID and Conditional Access to ensure  all inbound connections from devices and accounts are known, trusted, and allowed. For more information, see the article [Securing privileged interfaces](privileged-access-interfaces.md) for detailed definitions for device and account requirements for enterprise and specialized.
 - **Proper system maintenance** - All intermediaries must follow good security hygiene practices including:
    - **Secure configuration** - Follow manufacturer or industry security configuration baselines and best practices for both the application and any underlying operating systems, cloud services, or other dependencies. Applicable guidance from Microsoft includes the Azure Security Baseline and Windows Baselines.
    - **Rapid patching** - Security updates and patches from the vendors must be applied rapidly after release. 
-- **Role-Based Access Control (RBAC)** models can be abused by attackers to escalate privileges. The RBAC model of the intermediary must be carefully review to ensure that only authorized personnel that are protected at a specialized or privileged level are granted administrative privileges. This model must include any underlying operating systems or cloud services (root account password, local administrator users/groups, tenant administrators, etc.).
-- **Endpoint detection and response (EDR) and outbound trust signal** - Devices that include a full operating system should be monitored and protected with an EDR like Microsoft Defender for Endpoint. This control should be configured to provides device compliance signals to Conditional Access so that policy can enforce this requirement for interfaces.
+- **Role-Based Access Control (RBAC)** models can be abused by attackers to escalate privileges. The RBAC model of the intermediary must be carefully reviewed to ensure that only authorized personnel that are protected at a specialized or privileged level are granted administrative privileges. This model must include any underlying operating systems or cloud services (root account password, local administrator users/groups, tenant administrators, etc.).
+- **Endpoint detection and response (EDR) and outbound trust signal** - Devices that include a full operating system should be monitored and protected with an EDR like Microsoft Defender for Endpoint. This control should be configured to provide device compliance signals to Conditional Access so that policy can enforce this requirement for interfaces.
 
 Privileged Intermediaries require additional security controls:
 
 - **Role-Based Access Control (RBAC)** - Administrative rights must be restricted to only privileged roles meeting that standard for workstations and accounts.  
-- **Dedicated devices (optional)** - because of the extreme sensitivity of privileged sessions, organizations may choose to implement dedicated instances of intermediary functions for privileged roles. This control enables additional security restrictions for these privileged intermediaries and closer monitoring of privileged role activity. 
+- **Dedicated devices (optional)** - because of the extreme sensitivity of privileged sessions, organizations might choose to implement dedicated instances of intermediary functions for privileged roles. This control enables additional security restrictions for these privileged intermediaries and closer monitoring of privileged role activity. 
 
 ## Security guidance for each intermediary type
 
@@ -107,7 +107,7 @@ While features vary between PIM/PAM vendors, many solutions provide security cap
 - Record and monitor administrative sessions
 
    > [!IMPORTANT]
-   > PIM/PAM capabilities provide excellent mitigations for some attacks, but do not address many privielged access risks, notably risk of device compromise. While some vendors advocate that their PIM/PAM solution is a 'silver bullet' solution that can mitigate device risk, our experience investigating customer incidents has consistently proven that this does not work in practice.
+   > PIM/PAM capabilities provide excellent mitigations for some attacks, but do not address many privileged access risks, notably risk of device compromise. While some vendors advocate that their PIM/PAM solution is a 'silver bullet' solution that can mitigate device risk, our experience investigating customer incidents has consistently proven that this does not work in practice.
    >
    > An attacker with control of a workstation or device can use those credentials (and privileges assigned to them) while the user is logged on (and can often steal credentials for later use as well). A PIM/PAM solution alone cannot consistently and reliably see and mitigate these device risks, so you must have discrete device and account protections that complement each other. 
 
@@ -186,22 +186,22 @@ Microsoft Entra application proxy can also integrate with Microsoft Defender for
 
 For more information, see [Deploy Defender for Cloud Apps Conditional Access App Control for Microsoft Entra apps](/cloud-app-security/proxy-deployment-aad)
 
-As you publish applications via the Microsoft Entra application proxy, Microsoft recommends having application owners work with security teams to follow least privilege and ensure access to each application is made available to only the users that require it. As you deploy more apps this way, you may be able to offset some end-user point to site VPN usage.
+As you publish applications via the Microsoft Entra application proxy, Microsoft recommends having application owners work with security teams to follow least privilege and ensure access to each application is made available to only the users that require it. As you deploy more apps this way, you might be able to offset some end-user point to site VPN usage.
 
 ### Remote Desktop / jump server
 
 This scenario provides a full desktop environment running one or more applications. This solution has a number of different variations including:
 
 - **Experiences** - Full desktop in a window or a single application projected experience
-- **Remote host** - may be a shared VM or a dedicated desktop VM using Windows Virtual Desktop (WVD) or another Virtual Desktop Infrastructure (VDI) solution.  
-- **Local device** - may be a mobile device, a managed workstation, or a personal/partner managed workstation
-- **Scenario** - focused on user productivity applications or on administrative scenarios, often called a 'jump server'
+- **Remote host** - Might be a shared VM or a dedicated desktop VM using Windows Virtual Desktop (WVD) or another Virtual Desktop Infrastructure (VDI) solution.  
+- **Local device** - Might be a mobile device, a managed workstation, or a personal/partner managed workstation
+- **Scenario** - Focused on user productivity applications or on administrative scenarios, often called a 'jump server'
 
 #### Use cases and security recommendations for Remote Desktop / Jump server
 
 The most common configurations are:
 
-- Direct Remote Desktop Protocol (RDP) - This configuration is not recommended for internet connections because RDP is a protocol that has limited protections against modern attacks like password spray. Direct RDP should be converted to either:
+- Direct Remote Desktop Protocol (RDP) - This configuration isn't recommended for internet connections because RDP is a protocol that has limited protections against modern attacks like password spray. Direct RDP should be converted to either:
    - RDP through a gateway published by Microsoft Entra application proxy
    - Azure Bastion
 - RDP through a gateway using 

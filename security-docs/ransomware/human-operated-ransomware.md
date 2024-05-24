@@ -1,7 +1,7 @@
 ---
-title: "Define ransomware, human-operated ransomware, and how to prevent ransomware cyber attack"
-ms.author: dansimp
-author: dansimp
+title: "What is ransomware?"
+ms.author: sarahkatz
+author: sarit1046
 manager: dansimp
 audience: Admin
 ms.service: microsoft-365-security
@@ -9,7 +9,6 @@ ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
 ms.topic: article
-ms.localizationpriority:   # medium
 description: Learn what ransomware is, how it works, and how to protect against it with links to the Microsoft products that help prevent ransomware.
 ms.date: 02/22/2024
 ---
@@ -20,7 +19,7 @@ In practice, a *ransomware attack* blocks access to your data until a ransom is 
 
 In fact, ransomware is a type of malware or phishing cyber security attack that destroys or encrypts files and folders on a computer, server, or device.
 
-Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But, even when paid, cybercriminals *may never* give the key to the business or device owner, and stop access *permanently*.
+Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But, even when paid, cybercriminals *might never* give the key to the business or device owner, and stop access *permanently*.
 
 
 ## How do ransomware attacks work?

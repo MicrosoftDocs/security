@@ -99,7 +99,7 @@ Defender for Endpoint, however, cannot be disabled from the local device and was
 
 Persistence techniques include actions by threat actors to maintain consistent access to systems after efforts are made by security staff to regain control of compromised systems.  
 
-The threat actors for this incident used the Sticky Keys hack because it allows for remote execution of a binary inside the Windows operating system without authentication. They then used this capability to execute a Command Prompt and perform further attacks. 
+The threat actors for this incident used the Sticky Keys hack because it allows for remote execution of a binary inside the Windows operating system without authentication. They then used this capability to launch a Command Prompt and perform further attacks. 
 
 Here's an example of the detection of the Sticky Keys hack in the Microsoft Defender portal.
 

@@ -1,6 +1,6 @@
 ---
 title: "Define ransomware, human-operated ransomware, and how to prevent ransomware cyber attack"
-ms.author: skatz
+ms.author: sarahkatz
 author: sarit1046
 manager: dansimp
 audience: Admin

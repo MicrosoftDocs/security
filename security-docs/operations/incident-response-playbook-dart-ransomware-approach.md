@@ -22,7 +22,7 @@ ms.custom: cxdef-zt-ransomware
 ms.localizationpriority:   # medium
 ---
 
-# Microsoft DART ransomware approach and best practices
+# Microsoft Incident Response team ransomware approach and best practices
 
 [Human-operated ransomware](/security/ransomware/human-operated-ransomware) isn't a malicious software problem - it's a human criminal problem. The solutions used to address commodity problems aren't enough to prevent a threat that more closely resembles a nation-state threat actor who:
 
@@ -34,20 +34,16 @@ These actions are commonly done with legitimate programs that you might already 
 
 Responding to the increasing threat of ransomware requires a combination of modern enterprise configuration, up-to-date security products, and the vigilance of trained security staff to detect and respond to the threats before data is lost.
 
-The [Microsoft Detection and Response Team (DART)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. DART provides onsite reactive incident response and remote proactive investigations. DART uses Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
+The [Microsoft Incident Response team (formerly DART/CRSP)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. Microsoft Incident Responseprovides onsite reactive incident response and remote proactive investigations. Microsoft Incident Response uses Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
 
-This article describes how DART handles ransomware attacks for Microsoft customers so that you can consider applying elements of their approach and best practices for your own security operations playbook.
-
-### See these sections for the details:
-- [The DART approach to conducting ransomware incident investigations](#the-dart-approach-to-conducting-ransomware-incident-investigations)
-- [DART recommendations and best practices](#dart-recommendations-and-best-practices)
+This article describes how Microsoft Incident Response handles ransomware attacks for Microsoft customers so that you can consider applying elements of their approach and best practices for your own security operations playbook.
 
 > [!NOTE]
 > This article content was derived from the [A guide to combatting human-operated ransomware: Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [A guide to combatting human-operated ransomware: Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) Microsoft Security team blog posts.
 
-## How DART uses Microsoft security services
+## How Microsoft Incident Response uses Microsoft security services
 
-DART relies heavily on data for all investigations and uses existing deployments of Microsoft security services such as [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security), [Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security), [Microsoft Defender for Identity](/defender-for-identity), and [Microsoft Defender for Cloud Apps](/cloud-app-security/).
+Microsoft Incident Response relies heavily on data for all investigations and uses existing deployments of Microsoft security services such as [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security), [Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security), [Microsoft Defender for Identity](/defender-for-identity), and [Microsoft Defender for Cloud Apps](/cloud-app-security/).
 
 ### Defender for Endpoint
 
@@ -89,11 +85,11 @@ Here's an example of the Defender for Cloud Apps dashboard, which allows analysi
 
 The set of Microsoft Defender XDR services provides live remediation recommendations to reduce the attack surface. Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating that more improvement actions have been taken. See the [Secure Score](/microsoft-365/security/defender/microsoft-secure-score) documentation to find out more about how your organization can use this feature to prioritize remediation actions that are based on their environment.
 
-## The DART approach to conducting ransomware incident investigations
+## The Microsoft Incident Response approach to conducting ransomware incident investigations
 
 You should make every effort to determine how the adversary gained access to your assets so that vulnerabilities can be remediated. Otherwise, it is highly likely that the same type of attack happens again in the future. In some cases, the threat actor takes steps to cover their tracks and destroy evidence, so it is possible that the entire chain of events might not be evident.
 
-The following are three key steps in DART ransomware investigations:
+The following are three key steps in Microsoft Incident Response ransomware investigations:
 
 |Step|Goal|Initial questions|
 |---|---|---|
@@ -151,9 +147,9 @@ Your investigation should always have a goal of providing output that feeds dire
 
 After gathering the responses to the questions in steps 1 and 2, you can build a list of tasks and assign owners. A key factor in a successful incident response engagement is thorough, detailed documentation of each work item (such as the owner, status, findings, date, and time), making the compilation of findings at the end of the engagement a straightforward process.
 
-## DART recommendations and best practices
+## Microsoft Incident Response recommendations and best practices
 
-Here are DART's recommendations and best practices for containment and post-incident activities.
+Here are Microsoft Incident Response's recommendations and best practices for containment and post-incident activities.
 
 ### Containment
 
@@ -202,7 +198,7 @@ The riskiest configurations consist of running mission critical systems on legac
 
 ### Post-incident activities
 
-DART recommends implementing the following security recommendations and best practices after each incident.
+Microsoft Incident Response recommends implementing the following security recommendations and best practices after each incident.
 
 - Ensure that best practices are in place for [email and collaboration solutions](/microsoft-365/security/office-365-security/defender-for-office-365) to make it more difficult for attackers to abuse them while allowing internal users to access external content easily and safely.
 
@@ -274,7 +270,7 @@ Key information from Microsoft:
 - [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
-- [Microsoft DART ransomware case study](/security/ransomware/dart-ransomware-case-study)
+- [Microsoft Incident Response ransomware case study](/security/ransomware/dart-ransomware-case-study)
 
 Microsoft 365:
 
@@ -309,8 +305,8 @@ Microsoft Security team blog posts:
 - [Three steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
-  Key steps on how Microsoft's DART conducts ransomware incident investigations.
-
+  Key steps on how Microsoft Incident Response conducts ransomware incident investigations.
+  
 - [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 
   Recommendations and best practices.

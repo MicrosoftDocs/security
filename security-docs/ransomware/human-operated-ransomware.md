@@ -1,7 +1,7 @@
 ---
-title: What is ransomware?
-ms.author: dansimp
-author: dansimp
+title: "What is ransomware?"
+ms.author: sarahkatz
+author: sarit1046
 manager: dansimp
 audience: Admin
 ms.service: microsoft-365-security

@@ -37,7 +37,7 @@ This article contains the following sections:
 
 ## Prerequisites
 
-Here are general settings and configurations you should complete when perform an investigation for Application Consent Grants. Before starting the investigation, make sure read about the types of consent permissions explained in [Consent permission types](/azure/active-directory/develop/v2-permissions-and-consent).
+Here are general settings and configurations you should complete when performing an investigation for Application Consent Grants. Before starting the investigation, make sure read about the types of consent permissions explained in [Consent permission types](/azure/active-directory/develop/v2-permissions-and-consent).
 
 ### Customer data
 

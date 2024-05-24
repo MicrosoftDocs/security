@@ -426,7 +426,7 @@ Sometimes, it's not possible to discover the root cause. We recommended you comp
 
 ## Next steps
 
-*[Token theft wokflow decision tree](https://aka.ms/tokentheftworkflow)
+*[Token theft workflow decision tree](https://aka.ms/tokentheftworkflow)
 * [What is Microsoft Entra ID Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
 * [Continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 * [Risk based access policies](/azure/active-directory/identity-protection/concept-identity-protection-policies)

@@ -424,7 +424,7 @@ Download the Microsoft Win32 Content Prep Tool locally to a workstation and copy
 1. Select **64-bit** from the **Operating system architecture** checkbox dropdown
 1. Select **Windows 10 1903** from the **Minimum operating system** checkbox dropdown. Select **Next**
 1. Select **Manually configure** detection rules from the **Rules format** dropdown list
-1. Click **Add** and then select **File** form the **Rule type** dropdown
+1. Click **Add** and then select **File** from the **Rule type** dropdown
 1. Enter `C:\Program Files\Microsoft VS Code` in the **Path** field
 1. Enter `unins000.exe` in the **File or folder** field
 1. Select **File or folder exists** from the dropdown list, Select **OK** and then select **Next**

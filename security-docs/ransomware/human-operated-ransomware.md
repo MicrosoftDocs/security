@@ -1,7 +1,7 @@
 ---
 title: "Define ransomware, human-operated ransomware, and how to prevent ransomware cyber attack"
-ms.author: dansimp
-author: dansimp
+ms.author: skatz
+author: sarit1046
 manager: dansimp
 audience: Admin
 ms.service: microsoft-365-security

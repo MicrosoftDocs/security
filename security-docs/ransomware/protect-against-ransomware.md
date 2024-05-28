@@ -98,7 +98,7 @@ You can also see an overview of the steps and their implementation checklists as
 
 [![The "Protect your organization from ransomware" poster](media/human-operated-ransomware/ransomware-poster-thumbnail.png#lightbox)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
 
-Prioritize ransomware mitigation at the macro level. [Configure your organization's environment to protect against ransomware](https://learn.microsoft.com/en-us/security/ransomware/protect-against-ransomware).
+Prioritize ransomware mitigation at the macro level. [Configure your organization's environment to protect against ransomware](https://learn.microsoft.com/security/ransomware/protect-against-ransomware).
 
 ## Next step
 

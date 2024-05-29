@@ -1,0 +1,58 @@
+### YamlMime:Landing
+
+title: The Microsoft Root Certificate Program
+summary: The Microsoft Root Certificate Program supports the distribution of root certificates, enabling customers to trust Windows products.
+
+metadata:
+  title: The Microsoft Root Certificate Program
+  description: The Microsoft Root Certificate Program supports the distribution of root certificates, enabling customers to trust Windows products.
+  ms.service: security
+  ms.subservice: 
+  ms.topic: landing-page
+  ms.author: joflore
+  author: MicrosoftGuyJFlo
+  manager: amycolannino
+  ms.date: 02/06/2024
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: What's new
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Release notes
+            url: release-notes.md
+      - linkListType: reference
+        links:
+          - text: Participant list
+            url: participants-list.md
+
+  # Card
+  - title: About the program
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Program requirements
+            url: program-requirements.md
+      - linkListType: how-to-guide
+        links:
+          - text: Audit requirements
+            url: audit-requirements.md
+          - text: Testing procedures
+            url: testing.md
+      - linkListType: reference
+        links:
+          - text: Deprecation definitions
+            url: deprecation.md
+
+  # Card
+  - title: Application process
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: New Certificate Authority application procedure
+            url: new-ca-application.md

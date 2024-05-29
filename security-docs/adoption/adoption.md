@@ -1,11 +1,11 @@
 ---
 title: Security Adoption Resources
-description: Guiding organizations through security program modernization with reference strategies built on Zero Trust principles
+description: Guiding organizations through security program modernization with reference strategies built on Zero Trust principles.
 
 ms.service: security
 
 ms.topic: overview
-ms.date: 11/11/2023
+ms.date: 05/07/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -42,7 +42,7 @@ Meeting these objectives allows organizations to accelerate business enablement 
 
 :::row:::
    :::column span="":::
-      :::image type="content" source="media/adoption/chief-information-security-officer-workshop.png" alt-text="A diagram of the CISO Workshop at a high level" lightbox="media/adoption/chief-information-security-officer-workshop.png":::
+      :::image type="content" source="media/adoption/chief-information-security-officer-workshop.png" alt-text="A diagram of the CISO Workshop at a high level." lightbox="media/adoption/chief-information-security-officer-workshop.png":::
    :::column-end:::
    :::column span="2":::
       [**The Chief Information Security Officer (CISO) Workshop**](ciso-workshop.md)
@@ -58,13 +58,13 @@ Meeting these objectives allows organizations to accelerate business enablement 
       This architecture shows you how Microsoft security capabilities can integrate with other Microsoft and 3rd party platforms. The MCRA is provided in the form of PowerPoint slides with notes.
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="media/adoption/microsoft-cybersecurity-reference-architecture.png" alt-text="A diagram showing the MCRA at a high level" lightbox="media/adoption/microsoft-cybersecurity-reference-architecture.png":::
+      :::image type="content" source="media/adoption/microsoft-cybersecurity-reference-architecture.png" alt-text="A diagram showing the MCRA at a high level." lightbox="media/adoption/microsoft-cybersecurity-reference-architecture.png":::
    :::column-end:::
 :::row-end:::
 
 :::row:::
    :::column span="":::
-      :::image type="content" source="media/adoption/zero-trust-diagram.png" alt-text="A diagram of a Zero Trust architecture" lightbox="media/adoption/zero-trust-diagram.png":::
+      :::image type="content" source="media/adoption/zero-trust-diagram.png" alt-text="A diagram of a Zero Trust architecture." lightbox="media/adoption/zero-trust-diagram.png":::
    :::column-end:::
    :::column span="2":::
       **Business guidance for security modernization** including multiple planning and execution guides for common focus areas.
@@ -76,7 +76,20 @@ Meeting these objectives allows organizations to accelerate business enablement 
    :::column-end:::
 :::row-end:::
 
-In addition to these publicly available elements, Microsoft also offers these and other workshops as expert led engagements for Microsoft Unified customers
+:::row:::
+   :::column span="2":::
+      [**Common security antipatterns**](https://download.microsoft.com/download/5/d/3/5d3058a9-501b-4c13-9c95-9664c303bb97/antipatterns.pdf)
+
+      All of the SAF modules include documentation for antipatterns we commonly observe across organizations, and guidance for overcoming them. 
+      
+      You can download a PDF that includes many of the antipatterns from across the SAF modules.
+   :::column-end:::
+   :::column span="":::
+      :::image type="content" source="media/adoption/antipatterns.png" alt-text="A diagram showing common security antipatterns at a high level." lightbox="media/adoption/antipatterns.png":::
+   :::column-end:::
+:::row-end:::
+
+In addition to these publicly available elements, Microsoft also offers these and other workshops as expert led engagements for Microsoft Unified customers.
 
 ### Microsoft led workshops
 

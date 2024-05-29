@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to segmenting Azure-based network communication
 description: Learn how to apply Zero Trust principles to segmenting Azure-based network communication.
-ms.date: 05/20/2024
+ms.date: 05/29/2024
 ms.service: security
 author: duongau
 ms.author: duau
@@ -44,7 +44,7 @@ Additional authors:
 
 --->
 
-This article provides guidance to applying the [principles of Zero Trust](zero-trust-overview.md) for segmenting networks in Azure environments. Here are the Zero Trust principles. 
+This article provides guidance to applying the [principles of Zero Trust](zero-trust-overview.md) for segmenting networks in Azure environments. Here are the Zero Trust principles.
 
 | Zero Trust principle | Definition |
 | --- | --- |
@@ -54,19 +54,19 @@ This article provides guidance to applying the [principles of Zero Trust](zero-t
 
 This article is a part of a [series of articles](azure-networking-overview.md) that demonstrate how to apply the principles of Zero Trust to Azure networking.
 
-As organizations grow from small businesses into large enterprises, they often need to move from a single Azure subscription into multiple subscriptions to separate resources for each department. It’s important to carefully plan the segmentation of your network to create logical boundaries and isolation between environments. 
+As organizations grow from small businesses into large enterprises, they often need to move from a single Azure subscription into multiple subscriptions to separate resources for each department. It’s important to carefully plan the segmentation of your network to create logical boundaries and isolation between environments.
 
-Each environment, typically reflecting a separate department of your organization, should have its own access permissions and policies for specific workloads. For example, users from your internal software developer subscription shouldn't have access to managing and deploying network resources in the connectivity subscription. However, these environments still need network connectivity to achieve the required functionality to basic services, such as DNS, hybrid connectivity, and being able to reach other resources across different [Azure virtual networks (VNets)](/azure/virtual-network/virtual-networks-overview). 
+Each environment, typically reflecting a separate department of your organization, should have its own access permissions and policies for specific workloads. For example, users from your internal software developer subscription shouldn't have access to managing and deploying network resources in the connectivity subscription. However, these environments still need network connectivity to achieve the required functionality to basic services, such as DNS, hybrid connectivity, and being able to reach other resources across different [Azure virtual networks (VNets)](/azure/virtual-network/virtual-networks-overview).
 
 The segmentation of your Azure infrastructure provides not only isolation but can also create security boundaries that prevent an attacker from moving across environments and inflicting additional damage (the **Assume breach** Zero Trust principle).
 
 ## Reference architecture
 
-In Azure, you can use different levels of segmentation to help protect your resources from unauthorized access or malicious attack. These levels of segmentation start at the subscription level and go all the way down to applications running on virtual machines. Segmentation creates a boundary that separates one environment from another, each with its own rules and policies. With the assumption that breaches can happen, you need to segment your networks to prevent their spread. 
+You can use different levels of segmentation in Azure to help protect your resources from unauthorized access or malicious attack. These levels of segmentation start at the subscription level and go all the way down to applications running on virtual machines. Segmentation creates a boundary that separates one environment from another, each with its own rules and policies. With the assumption that breaches can happen, you need to segment your networks to prevent their spread.
 
 Azure networking uses the following levels of segmentation:
 
-- Subscriptions 
+- Subscriptions
 
   An Azure subscription is a logical container used to provision resources in Azure. It is linked to an Azure account in a Microsoft Entra ID tenant and serves as a single billing unit for Azure resources assigned to the subscription. An Azure subscription is also a logical boundary for access to the resources contained in the subscription. Access between resources in different subscriptions requires explicit permissions.
 
@@ -82,13 +82,13 @@ Azure networking uses the following levels of segmentation:
 
   - Azure Firewall
 
-    [Azure Firewall](/azure/firewall/overview) is a service deployed in a VNet to filter traffic between cloud resources, on-premises, and the Internet. With Azure Firewall, you can define rules and policies to allow or deny traffic at the network and application layers. You can also benefit from the advanced threat protection features provided by Azure Firewall like Intrusion Detection and Prevention System (IDPS), Transport Layer Security (TLS) inspection, and threat intelligence-based filtering..
+    [Azure Firewall](/azure/firewall/overview) is a service deployed in a VNet to filter traffic between cloud resources, on-premises, and the Internet. With Azure Firewall, you can define rules and policies to allow or deny traffic at the network and application layers. You can also benefit from the advanced threat protection features provided by Azure Firewall like Intrusion Detection and Prevention System (IDPS), Transport Layer Security (TLS) inspection, and threat intelligence-based filtering.
 
   - Network security group
 
     A [network security group](/azure/virtual-network/network-security-groups-overview) is an access control mechanism that filters network traffic between Azure resources such as virtual machines within a VNet. A network security group contains security rules that allows or denies traffic at the subnet or virtual machine levels in a VNet. A common use of network security groups is to segment the sets of virtual machines in different subnets.
 
-  - Application security group 
+  - Application security group
 
     An [application security group](/azure/virtual-network/application-security-groups) is an extension of network security group that allows you to group the network interfaces of virtual machines into a group based on their roles and functions. You can then use the application security groups in a network security group at scale without having to define the IP addresses of virtual machines.
 
@@ -96,11 +96,11 @@ Azure networking uses the following levels of segmentation:
 
     [Azure Front Door](/azure/frontdoor/front-door-overview) is Microsoft’s modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between your users and your applications’ static and dynamic web content across the globe.
 
-The following diagram shows the reference architecture for the levels of segmentation.
+The following diagram shows the reference architecture for the types of segmentation.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-reference-architecture.svg" alt-text="A diagram showing the reference architecture and the levels of segmentation for Azure networking." lightbox="media/azure-networking/azure-networking-segmentation-reference-architecture.svg":::
- 
-In the diagram, the solid red lines indicate a levels of segmentation between:
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-reference-architecture.svg" alt-text="A diagram showing the reference architecture and the types of segmentation for Azure networking." lightbox="media/azure-networking/azure-networking-segmentation-reference-architecture.svg":::
+
+In the diagram, the solid red lines indicate types of segmentation between:
 
 1. Azure subscriptions
 2. VNets in a subscription
@@ -123,25 +123,24 @@ Zero Trust principles are applied across the reference architecture within the A
 
 Within a single VNet and Azure subscription, you use subnets to achieve separation and segmentation of resources. For instance, within a VNet there could be a subnet for database servers, another for web applications, and a dedicated subnet for an Azure Firewall or [Azure Application Gateway](/azure/application-gateway/overview) with a [Web Application Firewall](/azure/web-application-firewall/ag/ag-overview). By default, all communication between subnets is enabled within a VNet.
 
-To create isolation between subnets, you can apply network security groups or application security groups between subnets to permit or deny specific network traffic based on IP addresses, ports, or protocols. However, designing and maintaining network security groups and application security groups can also create management overhead. 
+To create isolation between subnets, you can apply network security groups or application security groups between subnets to permit or deny specific network traffic based on IP addresses, ports, or protocols. However, designing and maintaining network security groups and application security groups can also create management overhead.
 
 This illustration shows a common and recommended configuration of a three-tier application with separate subnets for each tier and the use of network security groups and application security groups to create segmented boundaries between each subnet.
 
 :::image type="content" source="media/azure-networking/azure-networking-segmentation-nsg-asg.svg" alt-text="A diagram showing the use of network security groups and application security groups for segmentation between subnets." lightbox="media/azure-networking/azure-networking-segmentation-nsg-asg.svg":::
- 
+
 You can also achieve segmentation of resources by routing inter-subnet traffic using user-defined routes (UDRs) pointing to an Azure Firewall or a third-party Network Virtual Appliance (NVA). Azure Firewall and NVAs also have the capability to permit or deny traffic using layer 3 to layer 7 controls. Most of these services provide advanced filtering capabilities.
 
 For more information, see the guidance in [Pattern 1: Single virtual network](/azure/architecture/reference-architectures/hybrid-networking/network-level-segmentation#pattern-1-single-virtual-network).
-
 
 ## Step 2: Connect multiple VNets with peering
 
 By default, there's no allowed communication between VNets with a single Azure subscription or across multiple subscriptions. Multiple VNets, each belonging to different entities, have their own access controls. They can connect to each other or to a centralized hub VNet using VNet peering, where an Azure Firewall or a third-party NVA inspects all traffic.
 
 This illustration shows a VNet peering connection between two VNets and the use of Azure Firewall on each end of the connection.
- 
+
 :::image type="content" source="media/azure-networking/azure-networking-segmentation-vnet-peering.svg" alt-text="A diagram showing VNet peering and the use of Azure Firewalls to connect and segment two VNets." lightbox="media/azure-networking/azure-networking-segmentation-vnet-peering.svg":::
- 
+
 A hub VNet typically contains shared components such as firewalls, identity providers, and hybrid connectivity components, among others. UDR management becomes simpler because adding specific prefix UDRs for micro-segmentation would only be necessary if intra-VNet traffic is a requirement. However, since the VNet has its own boundaries, security controls are already in place.
 
 For more information, see the guidance in:
@@ -150,7 +149,6 @@ For more information, see the guidance in:
 - [Pattern 2: Multiple virtual networks with peering in between them](/azure/architecture/reference-architectures/hybrid-networking/network-level-segmentation#pattern-2-multiple-virtual-networks-with-peering-in-between-them)
 - [Apply Zero Trust principles to a spoke virtual network in Azure](/security/zero-trust/azure-infrastructure-iaas)
 - [Apply Zero Trust principles to a hub virtual network in Azure](/security/zero-trust/azure-infrastructure-networking)
-
 
 ## Step 3: Connect multiple VNets in a hub and spoke configuration
 
@@ -171,18 +169,18 @@ Microsoft recommends that ingress traffic from the Internet has a single point o
 This illustration shows how Azure Firewall in its own subnet acts as a central entry point and segmentation boundary for traffic between the Internet and a three-tier workload in an Azure VNet.
 
 :::image type="content" source="media/azure-networking/azure-networking-segmentation-azure-firewall.svg" alt-text="A diagram showing the use of Azure Firewall for traffic segmentation between a VNet and the Internet." lightbox="media/azure-networking/azure-networking-segmentation-azure-firewall.svg":::
- 
+
 For more information, see [Azure Firewall in the Microsoft Azure Well-Architected Framework](/azure/well-architected/service-guides/azure-firewall).
 
 #### Azure Front Door
 
-Azure Front Door can act as a boundary between the internet and services hosted in Azure. Azure Front Door supports [Private Link](/azure/private-link/private-link-overview) connectivity to resources such as Internal Load Balancing (ILB) for VNet access, storage accounts for static websites and blob storage, and Azure App services. Azure Front Door is usually done for at-scale deployments. 
+Azure Front Door can act as a boundary between the internet and services hosted in Azure. Azure Front Door supports [Private Link](/azure/private-link/private-link-overview) connectivity to resources such as Internal Load Balancing (ILB) for VNet access, storage accounts for static websites and blob storage, and Azure App services. Azure Front Door is usually done for at-scale deployments.
 
 Azure Front Door is more than a load balancing service. The Azure Front Door infrastructure has DDoS protection built in. When caching is enabled, content can be retrieved from point of presence (POP) locations rather than constantly accessing backend servers. When the cache expires, Azure Front Door retrieves the requested resource and updates the cache. Rather than end users accessing their servers, Azure Front Door uses Split TCP for two separate connections. This not only improves end user experience but prevents malicious actors from accessing resources directly.
 
 This illustration shows how Azure Front Door provides segmentation between Internet users and Azure resources, which can be in storage accounts.
- 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-azure-front-door.svg" alt-text="A diagram showing the use of an Application Gateway with Web Application Firewall and Azure Firewall for traffic segmentation between a VNet and the Internet." lightbox="media/azure-networking/azure-networking-segmentation-azure-front-door.svg":::
+
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-azure-front-door.svg" alt-text="A diagram showing the use of an Azure Front Door as a boundary between the internet and services hosted in Azure." lightbox="media/azure-networking/azure-networking-segmentation-azure-front-door.svg":::
 
 For more information, see [Azure Front Door in the Azure Well-Architected Framework](/azure/well-architected/service-guides/azure-front-door).
 
@@ -192,7 +190,7 @@ The Internet point of entry can also be a combination of ingress points. For exa
 
 This illustration shows Internet ingress traffic and the use of an Application Gateway with a Web Application Firewall for HTTP/HTTPS traffic and an Azure Firewall for all other traffic.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-application-gateway.svg" alt-text="A diagram showing the ways to connect and segment traffic between an Azure subscription and an on-preises network." lightbox="media/azure-networking/azure-networking-segmentation-application-gateway.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-application-gateway.svg" alt-text="A diagram showing the ways to connect and segment traffic between an Azure subscription and an on-premises network." lightbox="media/azure-networking/azure-networking-segmentation-application-gateway.svg":::
  
 Two commonly recommended scenarios are to:
 
@@ -209,30 +207,30 @@ One approach involves using multiple network interfaces on virtual machines when
 
 #### Egress traffic and UDRs
 
-For traffic departing your VNet for the Internet, you can apply a UDR using a route table with the chosen NVA as the next hop. To reduce complexity, you can deploy an Azure Firewall or NVA inside your [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) hub and turn on [Internet security with Routing Intent](/azure/virtual-wan/how-to-routing-policies). This ensures that both north-south (traffic coming in and out of a network scope) and east-west (traffic between devices within a network scope) traffic destined for non-Azure Virtual IP addresses (VIPs) gets inspected. 
+For traffic departing your VNet for the Internet, you can apply a UDR using a route table with the chosen NVA as the next hop. To reduce complexity, you can deploy an Azure Firewall or NVA inside your [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) hub and turn on [Internet security with Routing Intent](/azure/virtual-wan/how-to-routing-policies). This ensures that both north-south (traffic coming in and out of a network scope) and east-west (traffic between devices within a network scope) traffic destined for non-Azure Virtual IP addresses (VIPs) gets inspected.
 
 #### Egress traffic and a default route
 
-Some methods involve managing a default route (0.0.0.0/0) with different methods. As a general rule, it's recommended that egress traffic originating in Azure utilizes exit points and inspection with Azure Firewall or NVAs due to the amount of throughput that the Azure infrastructure can handle, which in most cases might be far greater and more resilient. In this case, configuring a default route in the UDRs of workload subnets can force traffic to those exit points. You might also prefer to route egress traffic from on-premises to Azure as an exit point. In this case, utilize Route Server in combination with an NVA to advertise a default route to on-premises utilizing Border Gateway Protocol (BGP). 
+Some methods involve managing a default route (0.0.0.0/0) with different methods. As a general rule, it's recommended that egress traffic originating in Azure utilizes exit points and inspection with Azure Firewall or NVAs due to the amount of throughput that the Azure infrastructure can handle, which in most cases might be far greater and more resilient. In this case, configuring a default route in the UDRs of workload subnets can force traffic to those exit points. You might also prefer to route egress traffic from on-premises to Azure as an exit point. In this case, utilize Route Server in combination with an NVA to advertise a default route to on-premises utilizing Border Gateway Protocol (BGP).
 
-There are special cases when you need all egress traffic to be routed back to on-premises by advertising a default route over BGP. This forces traffic leaving the VNet to be tunneled via your on-premises network to a firewall for inspection. This last approach is the least desired due to increased latency and lack of security controls provided by Azure. This practice is widely adopted by the government and banking sectors that have specific requirements for traffic inspection within their on-premises environment. 
+There are special cases when you need all egress traffic to be routed back to on-premises by advertising a default route over BGP. This forces traffic leaving the VNet to be tunneled via your on-premises network to a firewall for inspection. This last approach is the least desired due to increased latency and lack of security controls provided by Azure. This practice is widely adopted by the government and banking sectors that have specific requirements for traffic inspection within their on-premises environment.
 
 In terms of scale:
 
-- For a single VNet, you can use network security groups, which strictly adhere to layer 4 semantics, or you can use an Azure Firewall that adheres to both Layer 4 and Layer 7 semantics. 
+- For a single VNet, you can use network security groups, which strictly adhere to layer 4 semantics, or you can use an Azure Firewall that adheres to both Layer 4 and Layer 7 semantics.
 
-- •	For multiple VNets, a single Azure Firewall can still be used if it's reachable, or you can deploy an Azure Firewall in each virtual network and direct traffic with UDRs
+- For multiple VNets, a single Azure Firewall can still be used if it's reachable, or you can deploy an Azure Firewall in each virtual network and direct traffic with UDRs.
 
 For large enterprise distributed networks, you can still use the hub and spoke model and direct traffic with UDRs. However, this can lead to management overhead and VNet peering limits. For ease of use, Azure Virtual WAN can achieve this if you deploy an Azure Firewall in the virtual hub and activate Routing Intent for Internet security. This will inject default routes across all spokes and branch networks and send Internet-bound traffic to the Azure Firewall for inspection. Private traffic destined to RFC 1918 address blocks is sent to the Azure Firewall or NVA as the designated next-hop inside the Azure Virtual WAN hub.
 
 ### On-premises network boundary
 
-In Azure, the main methods to establish connectivity with on-premises networks include Internet Protocol (IPsec) tunnels, ExpressRoute tunnels, or Software-defined WAN (SD-WAN) tunnels. Typically, you use an [Azure Site-to-Site (S2S) VPN connection](/azure/vpn-gateway/vpn-gateway-about-vpngateways) for smaller workloads that require less bandwidth. For workloads that require a dedicated service path and higher throughput needs, Microsoft recommends ExpressRoute. 
+In Azure, the main methods to establish connectivity with on-premises networks include Internet Protocol (IPsec) tunnels, ExpressRoute tunnels, or Software-defined WAN (SD-WAN) tunnels. Typically, you use an [Azure Site-to-Site (S2S) VPN connection](/azure/vpn-gateway/vpn-gateway-about-vpngateways) for smaller workloads that require less bandwidth. For workloads that require a dedicated service path and higher throughput needs, Microsoft recommends ExpressRoute.
 
 This illustration shows the different types of connection methods between an Azure environment and an on-premises network.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-on-premises.svg" alt-text="A diagram showing the ." lightbox="media/azure-networking/azure-networking-segmentation-on-premises.svg":::
- 
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-on-premises.svg" alt-text="A diagram showing the different types of connection methods between an Azure environment and an on-premises network." lightbox="media/azure-networking/azure-networking-segmentation-on-premises.svg":::
+
 While Azure VPN connections can support multiple tunnels, ExpressRoute is often configured for larger enterprise networks that require higher bandwidth and private connections through a connectivity partner. For ExpressRoute, it's possible to connect the same VNet to multiple circuits, but for segmentation purposes, this is often not ideal as it allows VNets not connected with each other to communicate.
 
 One method of segmentation involves choosing not to use a remote gateway on spoke VNets or disabling BGP route propagation if you're using route tables. You can still segment hubs connected to ExpressRoute with NVAs and Firewalls. For spokes that are peered to hubs, you can choose not to use remote gateway in the VNet peering properties. That way, spokes only learn about their directly connected hubs and not any on-premises routes.

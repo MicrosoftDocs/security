@@ -418,7 +418,7 @@ While [each attack tends to vary, the core attack techniques are](https://attack
     > [!NOTE]
     > This process can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs.
 
-    The extent of time that an audit record is retained and is searchable in the audit log depends on your Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user. **If this value is true, it indicates that someone with Global Administrator access might have granted broad access to data. If this is unexpected, take immediate steps to confirm an attack.**
+    The extent of time that an audit record is retained and is searchable in the audit log depends on your Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user. **If this value is true, it indicates that someone might have granted broad access to data. If this is unexpected, take immediate steps to confirm an attack.**
 
 ## How to confirm an attack?
 

@@ -75,10 +75,10 @@ It's critical to work together as an organization, create partnerships, and educ
      - [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) or [Central IT Operations](/azure/cloud-adoption-framework/organize/central-it) to implement any changes
      - [Security Compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) monitors to ensure compliance
 - **How**: After turning on Microsoft Entra Privileged Identity Management, view the users who are in the following Microsoft Entra roles at a minimum based on your organizations risk policies:
-  - Global administrator
-  - Privileged role administrator
-  - Exchange administrator
-  - SharePoint administrator
+  - Global Administrator
+  - Privileged Role Administrator
+  - Exchange Administrator
+  - SharePoint Administrator
   
   For a complete list of administrator roles, see [Administrator role permissions in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference).
 
@@ -225,7 +225,7 @@ Follow the guidance in the following articles, [Plan a Microsoft Entra multifact
 
 ## Admin workstations initial deployment
 
-- **What**: Privileged accounts such as Global Administrators  have dedicated workstations to perform administrative tasks from.
+- **What**: Privileged accounts such as those managing Microsoft Entra ID have dedicated workstations to perform administrative tasks from.
 - **Why**: Devices where privileged administration tasks are completed are a target of attackers. Securing not only the account but these assets are critical in reducing your attack surface area. This separation limits their exposure to common attacks directed at productivity-related tasks like email and web browsing.
 - **Who**: This initiative is typically led by [Identity and Key Management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) and/or [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture).
    - **Sponsorship:** This initiative is typically sponsored by CISO, CIO, or Director of Identity

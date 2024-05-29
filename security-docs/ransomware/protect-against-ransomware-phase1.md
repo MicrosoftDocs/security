@@ -13,6 +13,7 @@ ms.service: microsoft-365-security
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
+ms.localizationpriority:   # medium
 description: Prepare your organization so that you can recover from cybercriminal ransomware attacks without having to pay the ransom.
 
 
@@ -60,10 +61,6 @@ You must ensure that critical systems and their data are backed up and backups a
 Attacks on your backups focus on crippling your organization’s ability to respond without paying, frequently targeting backups and key documentation required for recovery to force you into paying extortion demands. 
 
 Most organizations don’t protect backup and restoration procedures against this level of intentional targeting. 
-
->[!Note]
->This preparation also improves resilience to natural disasters and rapid attacks like WannaCry and (Not)Petya.
->
 
 [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations.
 

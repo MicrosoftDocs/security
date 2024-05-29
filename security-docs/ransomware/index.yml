@@ -91,13 +91,13 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-        - text: Overview
+        - text: Ransomware attack overview
           url: protect-against-ransomware.md
-        - text: Prepare your recovery plan
+        - text: Prepare your ransomware attack recovery plan
           url: protect-against-ransomware-phase1.md
-        - text: Limit the scope of damage
+        - text: Limit the scope of damage from a ransomware attack
           url: protect-against-ransomware-phase2.md
-        - text: Make it hard to get in
+        - text: Make it hard for threat actors to get into your environment
           url: protect-against-ransomware-phase3.md
 
 # Card

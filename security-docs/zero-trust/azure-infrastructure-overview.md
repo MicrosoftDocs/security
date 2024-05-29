@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to Azure IaaS?
 description: An overview of how to apply Zero Trust principles to Azure IaaS components and infrastructure.
-ms.date: 02/12/2024
+ms.date: 05/29/2024
 ms.service: security
 author: rudneir2
 ms.author: ruolivei
@@ -244,6 +244,11 @@ See these additional articles for applying Zero Trust principles to Azure:
 - [Azure Virtual WAN](azure-virtual-wan.md)
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
 - [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
+
+See these additional articles for applying Zero Trust principles to Azure networking:
+
+- [Encryption](azure-networking-encryption.md)
+- [Segmentation](azure-networking-segmentation.md)
 
 ## Technical illustrations
 

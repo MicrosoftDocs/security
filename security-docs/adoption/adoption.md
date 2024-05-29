@@ -78,11 +78,11 @@ Meeting these objectives allows organizations to accelerate business enablement 
 
 :::row:::
    :::column span="2":::
-      [**Common security antipatterns**](https://github.com/MicrosoftDocs/security/blob/main/Downloads/antipatterns.pdf)
+      [**Common security antipatterns**](https://download.microsoft.com/download/5/d/3/5d3058a9-501b-4c13-9c95-9664c303bb97/antipatterns.pdf)
 
       All of the SAF modules include documentation for antipatterns we commonly observe across organizations, and guidance for overcoming them. 
       
-      You can download the PDF that includes many of the antipatterns from across the SAF modules.
+      You can download a PDF that includes many of the antipatterns from across the SAF modules.
    :::column-end:::
    :::column span="":::
       :::image type="content" source="media/adoption/antipatterns.png" alt-text="A diagram showing common security antipatterns at a high level" lightbox="media/adoption/antipatterns.png":::

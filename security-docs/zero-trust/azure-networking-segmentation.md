@@ -68,7 +68,7 @@ Azure networking uses the following levels of segmentation:
 
 - Subscriptions
 
-  An Azure subscription is a logical container used to provision resources in Azure. It is linked to an Azure account in a Microsoft Entra ID tenant and serves as a single billing unit for Azure resources assigned to the subscription. An Azure subscription is also a logical boundary for access to the resources contained in the subscription. Access between resources in different subscriptions requires explicit permissions.
+  An Azure subscription is a logical container used to provision resources in Azure. It's linked to an Azure account in a Microsoft Entra ID tenant and serves as a single billing unit for Azure resources assigned to the subscription. An Azure subscription is also a logical boundary for access to the resources contained in the subscription. Access between resources in different subscriptions requires explicit permissions.
 
 - VNets
 
@@ -98,7 +98,7 @@ Azure networking uses the following levels of segmentation:
 
 The following diagram shows the reference architecture for the levels of segmentation.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-reference-architecture.svg" alt-text="A diagram showing the reference architecture and the levels of segmentation for Azure networking." lightbox="media/azure-networking/azure-networking-segmentation-reference-architecture.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-reference-architecture.svg" alt-text="Diagram showing the reference architecture and the levels of segmentation for Azure networking." lightbox="media/azure-networking/azure-networking-segmentation-reference-architecture.svg":::
 
 In the diagram, the solid red lines indicate levels of segmentation between:
 
@@ -127,7 +127,7 @@ To create isolation between subnets, you can apply network security groups or ap
 
 This illustration shows a common and recommended configuration of a three-tier application with separate subnets for each tier and the use of network security groups and application security groups to create segmented boundaries between each subnet.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-nsg-asg.svg" alt-text="A diagram showing the use of network security groups and application security groups for segmentation between subnets." lightbox="media/azure-networking/azure-networking-segmentation-nsg-asg.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-nsg-asg.svg" alt-text="Diagram showing the use of network security groups and application security groups for segmentation between subnets." lightbox="media/azure-networking/azure-networking-segmentation-nsg-asg.svg":::
 
 You can also achieve segmentation of resources by routing inter-subnet traffic using user-defined routes (UDRs) pointing to an Azure Firewall or a third-party Network Virtual Appliance (NVA). Azure Firewall and NVAs also have the capability to permit or deny traffic using layer 3 to layer 7 controls. Most of these services provide advanced filtering capabilities.
 
@@ -139,7 +139,7 @@ By default, there's no allowed communication between VNets with a single Azure s
 
 This illustration shows a VNet peering connection between two VNets and the use of Azure Firewall on each end of the connection.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-vnet-peering.svg" alt-text="A diagram showing VNet peering and the use of Azure Firewalls to connect and segment two VNets." lightbox="media/azure-networking/azure-networking-segmentation-vnet-peering.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-vnet-peering.svg" alt-text="Diagram showing VNet peering and the use of Azure Firewalls to connect and segment two VNets." lightbox="media/azure-networking/azure-networking-segmentation-vnet-peering.svg":::
 
 A hub VNet typically contains shared components such as firewalls, identity providers, and hybrid connectivity components, among others. UDR management becomes simpler because adding specific prefix UDRs for micro-segmentation would only be necessary if intra-VNet traffic is a requirement. However, since the VNet has its own boundaries, security controls are already in place.
 
@@ -156,7 +156,7 @@ For multiple VNets in a hub and spoke configuration, you need to consider how to
 
 - Internet boundary
 - On-premises network boundary
-- Boundaries to public Azure services
+- Boundaries to global Azure services
 
 ### Internet boundary
 
@@ -168,7 +168,7 @@ Microsoft recommends that ingress traffic from the Internet has a single point o
 
 This illustration shows how Azure Firewall in its own subnet acts as a central entry point and segmentation boundary for traffic between the Internet and a three-tier workload in an Azure VNet.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-azure-firewall.svg" alt-text="A diagram showing the use of Azure Firewall for traffic segmentation between a VNet and the Internet." lightbox="media/azure-networking/azure-networking-segmentation-azure-firewall.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-azure-firewall.svg" alt-text="Diagram showing the use of Azure Firewall for traffic segmentation between a VNet and the Internet." lightbox="media/azure-networking/azure-networking-segmentation-azure-firewall.svg":::
 
 For more information, see [Azure Firewall](/azure/well-architected/service-guides/azure-firewall) in the Microsoft Azure Well-Architected Framework.
 
@@ -180,7 +180,7 @@ Azure Front Door is more than a load balancing service. The Azure Front Door inf
 
 This illustration shows how Azure Front Door provides segmentation between Internet users and Azure resources, which can be in storage accounts.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-azure-front-door.svg" alt-text="A diagram showing the use of an Azure Front Door as a boundary between the Internet and services hosted in Azure." lightbox="media/azure-networking/azure-networking-segmentation-azure-front-door.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-azure-front-door.svg" alt-text="Diagram showing the use of an Azure Front Door as a boundary between the Internet and services hosted in Azure." lightbox="media/azure-networking/azure-networking-segmentation-azure-front-door.svg":::
 
 For more information, see [Azure Front Door](/azure/well-architected/service-guides/azure-front-door) in the Azure Well-Architected Framework.
 
@@ -190,7 +190,7 @@ The Internet point of entry can also be a combination of ingress points. For exa
 
 This illustration shows Internet ingress traffic and the use of an Application Gateway with a Web Application Firewall for HTTP/HTTPS traffic and an Azure Firewall for all other traffic.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-application-gateway.svg" alt-text="A diagram showing the ways to connect and segment traffic between an Azure subscription and an on-premises network." lightbox="media/azure-networking/azure-networking-segmentation-application-gateway.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-application-gateway.svg" alt-text="Diagram showing the ways to connect and segment traffic between an Azure subscription and an on-premises network." lightbox="media/azure-networking/azure-networking-segmentation-application-gateway.svg":::
 
 Two commonly recommended scenarios are to:
 
@@ -228,7 +228,7 @@ In Azure, the main methods to establish connectivity with on-premises networks i
 
 This illustration shows the different types of connection methods between an Azure environment and an on-premises network.
 
-:::image type="content" source="media/azure-networking/azure-networking-segmentation-on-premises.svg" alt-text="A diagram showing the different types of connection methods between an Azure environment and an on-premises network." lightbox="media/azure-networking/azure-networking-segmentation-on-premises.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-segmentation-on-premises.svg" alt-text="Diagram showing the different types of connection methods between an Azure environment and an on-premises network." lightbox="media/azure-networking/azure-networking-segmentation-on-premises.svg":::
 
 While Azure VPN connections can support multiple tunnels, ExpressRoute is often configured for larger enterprise networks that require higher bandwidth and private connections through a connectivity partner. For ExpressRoute, it's possible to connect the same VNet to multiple circuits, but for segmentation purposes, this is often not ideal as it allows VNets not connected with each other to communicate.
 
@@ -244,7 +244,7 @@ For large, distributed networks, you can also use Azure Virtual WAN by activatin
 
 The other approach with Azure Virtual WAN is to use custom route tables for isolation boundaries. You can create custom routes and only associate and propagate the VNets you want to those route tables. However, this capability can't be combined with routing intent today. To isolate branches, you can assign labels to associate branches to that label. You can also disable propagation to the default label on a per-hub basis. Currently, you can't isolate individual branches in Azure separately on a single hub. For example, you can't isolate SD-WAN from ExpressRoute. But on an entire hub, you can disable propagation to the default label.
 
-### Boundaries to public Azure services
+### Boundaries to global Azure services
 
 In Azure, most services are by default accessible through the Azure global WAN. This also applies to public access to Azure PaaS services. For instance, Azure Storage has a built-in firewall that can restrict access to VNets and block public access. However, there's often a need for more granular control. The typical preference is to connect to Azure VIPs privately, rather than using the default public IP addresses provided.
 

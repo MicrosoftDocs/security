@@ -53,6 +53,7 @@ The following articles show you how to apply Zero Trust approach to networking f
 
 > [!IMPORTANT]
 > This Zero Trust guidance describes how to use and configure several security solutions and features available on Azure for a reference architecture. Several other resources also provide security guidance for these solutions and features, including:
+
 > - [Microsoft Cloud Security Benchmark](/security/benchmark/azure/introduction)
 > - [Microsoft Cloud Security Baseline](/security/benchmark/azure/security-baselines-overview)
 
@@ -62,7 +63,7 @@ To describe how to apply a Zero Trust approach, this guidance targets a common p
 
 For the **Assume breach** Zero Trust principle for Azure networking, Microsoft Defender for Cloud is an extended detection and response (XDR) solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your environment. Defender for Cloud is intended to be used together with Microsoft Defender XDR to provide a greater breadth of correlated protection of your environment, as shown in the following diagram.
 
-:::image type="content" source="media/azure-infra-overview/azure-infra-overview-threat-protection.svg" alt-text="The logical architecture of Microsoft Defender for Cloud and Microsoft Defender XDR that provides threat protection for Azure networking." lightbox="media/azure-infra-overview/azure-infra-overview-threat-protection.svg":::
+:::image type="content" source="media/azure-infra-overview/azure-infra-overview-threat-protection.svg" alt-text="Diagram of the logical architecture of Microsoft Defender for Cloud and Microsoft Defender XDR that provides threat protection for Azure networking." lightbox="media/azure-infra-overview/azure-infra-overview-threat-protection.svg":::
 
 In the diagram:
 

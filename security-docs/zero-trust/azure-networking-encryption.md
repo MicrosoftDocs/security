@@ -68,12 +68,11 @@ The levels of encryption for network traffic are:
 
 - Protection for workloads running on Azure virtual machines
 
-
 ## Reference architecture
 
 The following diagram shows the reference architecture for this Zero Trust guidance for encrypted communication between users and admins on-premises or on the internet and components in the Azure environment for the steps described in this article.
 
-:::image type="content" source="media/azure-networking/azure-networking-encryption.svg" alt-text="The reference architecture for Azure networking components with encryption and Zero Trust principles applied." lightbox="media/azure-networking/azure-networking-encryption.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-encryption.svg" alt-text="Diagram showing the reference architecture for Azure networking components with encryption and Zero Trust principles applied." lightbox="media/azure-networking/azure-networking-encryption.svg":::
  
 In the diagram, the numbers correspond to the steps in the following sections.
 
@@ -95,7 +94,7 @@ Network layer encryption is critical when applying Zero Trust principles to your
 
 The following diagram shows the reference architecture for implementing network layer encryption.
 
-:::image type="content" source="media/azure-networking/azure-networking-encryption-step-1.svg" alt-text="The reference architecture for the implementation of network layer encryption for Azure networking." lightbox="media/azure-networking/azure-networking-encryption-step-1.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-encryption-step-1.svg" alt-text="Diagram showing the reference architecture for the implementation of network layer encryption for Azure networking." lightbox="media/azure-networking/azure-networking-encryption-step-1.svg":::
 
 In the next two sections, we discuss Internet Protocol Security (IPsec) and Media Access Control Security ([MACsec](https://1.ieee802.org/security/802-1ae/)), which Azure networking services support these protocols, and how you can ensure they're being used.
 
@@ -143,11 +142,11 @@ As cloud migration becomes more prevalent across businesses of different scales,
 
 The following diagram shows the reference architecture for securing and verifying communication from an on-premises network to Azure VNets.
 
-:::image type="content" source="media/azure-networking/azure-networking-encryption-step-2.svg" alt-text="The reference architecture to secure and verify communication from an on-premises network to Azure VNets." lightbox="media/azure-networking/azure-networking-encryption-step-2.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-encryption-step-2.svg" alt-text="Diagram showing the reference architecture to secure and verify communication from an on-premises network to Azure VNets." lightbox="media/azure-networking/azure-networking-encryption-step-2.svg":::
 
 Azure provides two options to connect your on-premises network to resources in an Azure VNet:
 
-- Azure VPN Gateway allows you to create a [site-to-site VPN tunnel](/azure/vpn-gateway/design#s2smulti) using IPsec to encrypt and authenticate network communication between your network in central or remote offices and an Azure VNet. It also allows individual clients to establish a point-to-site connection to access resources in an Azure VNet without a VPN device. For Zero Trust adherence, configure Entra ID authentication and Conditional Access policies for your Azure VPN Gateway connections to verify the identity and compliance of the connecting devices. For more information, see [Use Microsoft Tunnel VPN gateway with Conditional Access policies](/mem/intune/protect/microsoft-tunnel-conditional-access).
+- Azure VPN Gateway allows you to create a [site-to-site VPN tunnel](/azure/vpn-gateway/design#s2smulti) using IPsec to encrypt and authenticate network communication between your network in central or remote offices and an Azure VNet. It also allows individual clients to establish a point-to-site connection to access resources in an Azure VNet without a VPN device. For Zero Trust adherence, configure Microsoft Entra ID authentication and Conditional Access policies for your Azure VPN Gateway connections to verify the identity and compliance of the connecting devices. For more information, see [Use Microsoft Tunnel VPN gateway with Conditional Access policies](/mem/intune/protect/microsoft-tunnel-conditional-access).
 
 - [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) provides a high bandwidth private connection that lets you extend your on-premises network into Azure with the assistance of a connectivity provider. Because network traffic doesn’t travel over the public internet, data isn’t encrypted by default. To encrypt your traffic over ExpressRoute, configure an IPsec tunnel. However, keep in mind that when running IPsec tunnels over ExpressRoute, the bandwidth is limited to the tunnel bandwidth and you might need to run multiple tunnels to match the ExpressRoute circuit bandwidth. For more information, see [Site-to-Site VPN connections over ExpressRoute private peering - Azure VPN Gateway](/azure/vpn-gateway/site-to-site-vpn-private-peering).  
 
@@ -170,14 +169,13 @@ There are two common scenarios where ExpressRoute and Azure VPN Gateway can coex
 - Azure VPN Gateway can be used to connect your branch offices to Azure while having your main office connected using ExpressRoute. 
 - You can also use Azure VPN Gateway as a backup connection to Azure for your central office if your ExpressRoute service has an outage.
 
-
 ## Step 3: Secure and verify communication within and across Azure VNets
 
-Traffic within Azure has an underlying level of encryption. When traffic moves between VNets in different regions, Microsoft uses MACsec to encrypt and authenticate peering traffic at the data-link layer. 
+Traffic within Azure has an underlying level of encryption. When traffic moves between VNets in different regions, Microsoft uses MACsec to encrypt and authenticate peering traffic at the data-link layer.
 
 The following diagram shows the reference architecture for securing and verifying communication within and across Azure VNets.
 
-:::image type="content" source="media/azure-networking/azure-networking-encryption-step-3.svg" alt-text="The reference architecture for securing and verifying communication within and across Azure VNets." lightbox="media/azure-networking/azure-networking-encryption-step-3.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-encryption-step-3.svg" alt-text="Diagram showing the reference architecture for securing and verifying communication within and across Azure VNets." lightbox="media/azure-networking/azure-networking-encryption-step-3.svg":::
 
 However, encryption alone isn't enough to ensure Zero Trust. You should also verify and monitor the network communication within and across Azure VNets. Further encryption and verification between VNets are possible with the help of Azure VPN Gateway or network virtual appliances (NVAs) but isn’t a common practice. Microsoft   recommends designing your network topology to use a centralized traffic inspection model that can enforce granular policies and detect anomalies.
 
@@ -189,7 +187,7 @@ Application layer encryption plays a key factor for Zero Trust that mandates all
 
 The following diagram shows the reference architecture for implementing encryption at the application layer.
 
-:::image type="content" source="media/azure-networking/azure-networking-encryption-step-4.svg" alt-text="The reference architecture for implementing encryption at the application layer." lightbox="media/azure-networking/azure-networking-encryption-step-4.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-encryption-step-4.svg" alt-text="Diagram showing the reference architecture for implementing encryption at the application layer." lightbox="media/azure-networking/azure-networking-encryption-step-4.svg":::
 
 One of the most common examples of encryption at the application layer is Hypertext Transfer Protocol Secure (HTTPS), which encrypts data between a web browser and a web server. HTTPS uses Transport Layer Security (TLS) protocol to encrypt client-server communication and uses a TLS digital certificate to verify the identity and trustworthiness of the website or domain.
 
@@ -236,10 +234,9 @@ With Bastion, you can control the RDP and SSH connectivity to your virtual machi
 
 The following diagram shows the reference architecture for using Azure Bastion to protect Azure virtual machines.
 
-:::image type="content" source="media/azure-networking/azure-networking-encryption-step-5.svg" alt-text="The reference architecture for using Azure Bastion to protect Azure virtual machines." lightbox="media/azure-networking/azure-networking-encryption-step-5.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-encryption-step-5.svg" alt-text="Diagram showing the reference architecture for using Azure Bastion to protect Azure virtual machines." lightbox="media/azure-networking/azure-networking-encryption-step-5.svg":::
 
 To protect your Azure virtual machine, deploy [Azure Bastion](/azure/bastion/tutorial-create-host-portal) and begin using RDP and SSH to connect to your virtual machines with their private IP addresses.
-
 
 ## Recommended training
 

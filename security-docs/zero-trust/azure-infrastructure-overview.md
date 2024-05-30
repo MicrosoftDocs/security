@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to Azure IaaS?
 description: An overview of how to apply Zero Trust principles to Azure IaaS components and infrastructure.
-ms.date: 02/12/2024
+ms.date: 05/29/2024
 ms.service: security
 author: rudneir2
 ms.author: ruolivei
@@ -78,7 +78,7 @@ If you're interested in learning about the guidance recommended in the Cloud Ado
 
 The following figure shows the reference architecture for this Zero Trust guidance.
 
-:::image type="content" source="media/azure-infra-overview/azure-infra-overview-reference-architecture-1.svg" alt-text="The reference architecture for applying Zero Trust to Azure IaaS that contains different types of users, common applications running on virtual machines, PaaS services, and storage." lightbox="media/azure-infra-overview/azure-infra-overview-reference-architecture-1.svg":::
+:::image type="content" source="media/azure-infra-overview/azure-infra-overview-reference-architecture-1.svg" alt-text="Diagram showing the reference architecture for applying Zero Trust to Azure IaaS that contains different types of users, common applications running on virtual machines, PaaS services, and storage." lightbox="media/azure-infra-overview/azure-infra-overview-reference-architecture-1.svg":::
 
 This architecture contains:
 
@@ -89,7 +89,7 @@ This architecture contains:
 
 This series of articles walk through the recommendations for implementing Zero Trust for the reference architecture by addressing each of these larger pieces hosted in Azure, as shown here.
 
-:::image type="content" source="media/azure-infra-overview/azure-infra-overview.svg" alt-text="The reference architecture for applying Zero Trust to Azure IaaS that shows the grouped components for storage, virtual machines, and spoke and hub virtual networks." lightbox="media/azure-infra-overview/azure-infra-overview.svg":::
+:::image type="content" source="media/azure-infra-overview/azure-infra-overview.svg" alt-text="Diagram showing the reference architecture for applying Zero Trust to Azure IaaS that shows the grouped components for storage, virtual machines, and spoke and hub virtual networks." lightbox="media/azure-infra-overview/azure-infra-overview.svg":::
 
 The diagram outlines the larger areas of the architecture that are addressed by each article in this series:
 
@@ -104,9 +104,9 @@ It’s important to note that the guidance in this series of articles is more sp
 
 The reference architecture diagram provides a topological view of the environment. It’s also valuable to see logically how each of the components can be organized within the Azure environment. The following diagram provides a way to organize your subscriptions and resource groups. Your Azure subscriptions might be organized differently.
 
-:::image type="content" source="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.svg" alt-text="The logical architecture for applying Zero Trust to Azure IaaS showing subscriptions, Microsoft Defender for Cloud and Azure Monitor, and resource groups within an Entra ID tenant." lightbox="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.svg":::
+:::image type="content" source="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.svg" alt-text="Diagram showing the logical architecture for applying Zero Trust to Azure IaaS showing subscriptions, Microsoft Defender for Cloud and Azure Monitor, and resource groups within a Microsoft Entra ID tenant." lightbox="media/azure-infra-overview/azure-infra-overview-subscription-architecture-3.svg":::
 
-In this diagram, the Azure infrastructure is contained within an Entra ID tenant. The following table describes the different sections shown in the diagram.
+In this diagram, the Azure infrastructure is contained within a Microsoft Entra ID tenant. The following table describes the different sections shown in the diagram.
 
 - Azure subscriptions
 
@@ -132,7 +132,7 @@ In this diagram, the Azure infrastructure is contained within an Entra ID tenant
 
 **Microsoft Defender for Cloud** is an extended detection and response (XDR) solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your environment. Defender for Cloud is intended to be used together with Microsoft Defender XDR to provide a greater breadth of correlated protection of your environment, as shown in the following diagram.
 
-:::image type="content" source="media/azure-infra-overview/azure-infra-overview-threat-protection.svg" alt-text="The logical architecture of Microsoft Defender for Cloud and Microsoft Defender XDR that provides threat protection for Azure IaaS components." lightbox="media/azure-infra-overview/azure-infra-overview-threat-protection.svg":::
+:::image type="content" source="media/azure-infra-overview/azure-infra-overview-threat-protection.svg" alt-text="Diagram showing the logical architecture of Microsoft Defender for Cloud and Microsoft Defender XDR that provides threat protection for Azure IaaS components." lightbox="media/azure-infra-overview/azure-infra-overview-threat-protection.svg":::
 
 In the diagram:
 
@@ -244,6 +244,11 @@ See these additional articles for applying Zero Trust principles to Azure:
 - [Azure Virtual WAN](azure-virtual-wan.md)
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
 - [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
+
+See these additional articles for applying Zero Trust principles to Azure networking:
+
+- [Encryption](azure-networking-encryption.md)
+- [Segmentation](azure-networking-segmentation.md)
 
 ## Technical illustrations
 

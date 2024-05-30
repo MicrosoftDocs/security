@@ -118,8 +118,8 @@ landingContent:
             url:  secure-iaas-apps.md
           - text: Microsoft Sentinel and Microsoft Defender XDR
             url: /security/operations/siem-xdr-overview
-          - text: Microsoft networking encryption
-            url: azure-networking-encryption.md
+          - text: Azure networking
+            url: azure-networking-overview.md
 
  # Card
   - title: Technology partner integrations

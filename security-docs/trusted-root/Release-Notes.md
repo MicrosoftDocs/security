@@ -1,7 +1,7 @@
 ---
 title: Release notes - Microsoft Trusted Root Certificate Program
 description: This document gives details about the changes made monthly to the root store.
-ms.date: 2/15/2024
+ms.date: 5/28/2024
 ms.service: security
 author: hasokol-ms
 ms.author: hasokol
@@ -27,6 +27,7 @@ A list of Root Store participants, updated monthly, can be found here: <https://
 |---|---|---|
 | March | March 26 | [Deployment Notice for March 2024](2024/March2024.md) |
 | February | February 27 | [Deployment Notice for February 2024](2024/Feb2024.md) |
+| May | May 28 | [Deployment Notice for May 2024](2024/may-2024.md) |
 
 ## 2023
 | Month |	Date of Release	| Release Notes |

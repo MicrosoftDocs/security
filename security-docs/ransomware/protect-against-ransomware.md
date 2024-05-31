@@ -98,6 +98,8 @@ You can also see an overview of the steps and their implementation checklists as
 
 [![The "Protect your organization from ransomware" poster](media/human-operated-ransomware/ransomware-poster-thumbnail.png#lightbox)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
 
+Prioritize ransomware mitigation at the macro level. [Configure your organization's environment to protect against ransomware](protect-against-ransomware.md).
+
 ## Next step
 
 [![step 1. Prepare your recovery plan](media/protect-against-ransomware/protect-against-ransomware-phase1.png)](protect-against-ransomware-phase1.md)
@@ -112,7 +114,7 @@ Key information from Microsoft:
 - [Human-operated ransomware](human-operated-ransomware.md)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
-- Microsoft's Detection and Response Team (DART) ransomware [approach](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
+- Microsoft Incident Response team (formerly DART/CRSP) ransomware [approach](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
 
@@ -148,7 +150,7 @@ Microsoft Security team blog posts:
 - [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
-  Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.
+  Key steps on how Microsoft Incident Response conducts ransomware incident investigations.
 
 - [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 

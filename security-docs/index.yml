@@ -14,7 +14,7 @@ metadata:
   author: TerryLanfear
   ms.author: terrylan
   manager: rkarlin
-  ms.date: 03/22/2024
+  ms.date: 05/30/2024
 
 
 # Maximum of 8 items
@@ -38,9 +38,9 @@ highlightedContent:
       itemType: learn
       url: /training/paths/get-started-azure-ai/
     # Card
-    - title: Live learning experience! Microsoft Security Copilot
-      itemType: learn
-      url: /shows/learn-live/microsoft-copilot-for-security/
+    - title: Get started with Microsoft Copilot for Security
+      itemType: get-started
+      url: /training/paths/security-copilot-and-ai/
     # Card
     - title: Register now! Security for all in the age of AI
       itemType: learn

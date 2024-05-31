@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to Azure IaaS?
 description: An overview of how to apply Zero Trust principles to Azure IaaS components and infrastructure.
-ms.date: 05/29/2024
+ms.date: 05/31/2024
 ms.service: security
 author: rudneir2
 ms.author: ruolivei

@@ -73,14 +73,14 @@
 		</g>
 		<g id="shape1811-8" v:mID="1811" v:groupContext="shape" transform="translate(7.4915,-284.796)">
 			<title>Sheet.1811</title>
-			<desc>Azure Entra ID tenant</desc>
+			<desc>Microsoft Entra ID tenant</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(345000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
-			<v:textRect cx="105.5" cy="308.869" width="211.01" height="29.2888"/>
-			<rect x="0" y="294.224" width="211" height="29.2888" class="st5"/>
-			<text x="4" y="314.27" class="st6" v:langID="1033"><v:paragraph/><v:tabList/>Azure Entra ID tenant</text>		</g>
+			<v:textRect cx="130.5" cy="308.869" width="261.01" height="29.2888"/>
+			<rect x="0" y="294.224" width="261" height="29.2888" class="st5"/>
+			<text x="4" y="314.27" class="st6" v:langID="1033"><v:paragraph/><v:tabList/>Microsoft Entra ID tenant</text>		</g>
 		<g id="shape1812-11" v:mID="1812" v:groupContext="shape" transform="translate(29.1478,-216.401)">
 			<title>Sheet.1812</title>
 			<desc>Platform management group</desc>

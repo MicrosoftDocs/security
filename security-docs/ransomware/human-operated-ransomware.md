@@ -19,12 +19,12 @@ In practice, a *ransomware attack* blocks access to your data until a ransom is 
 
 In fact, ransomware is a type of malware or phishing cyber security attack that destroys or encrypts files and folders on a computer, server, or device.
 
-Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But, even when paid, cybercriminals *might never* give the key to the business or device owner, and stop access *permanently*.
+Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But even when paid, cybercriminals *might never* give the key to the business or device owner and stop access *permanently*.
 
 
 ## How do ransomware attacks work?
 
-Ransomware can be automated, or involve human hands on a keyboard--a *human operated* attack.
+Ransomware can be automated or involve human hands on a keyboard--a *human operated* attack, such as seen in recent attacks using [LockBit ransomware](/security/ransomware/human-operated-ransomware). 
 
 ### Automated ransomware attacks
 

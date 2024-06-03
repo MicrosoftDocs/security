@@ -1,7 +1,7 @@
 ---
 title: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
 description: Learn how to resolve an incident using both Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. 
-ms.date: 03/29/2023
+ms.date: 06/03/2024
 ms.service: microsoft-365-zero-trust
 author: mjcaparas
 ms.author: macapara
@@ -15,22 +15,21 @@ ms.collection:
 
 # Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
 
-This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. 
-Microsoft Sentinel and Microsoft Defender XDR share:
+This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. Microsoft Sentinel and Microsoft Defender XDR share:
 
 - Updates on lifecycle (status, owner, classification) are shared between the products.
 - Evidence gathered during an investigation is shown in the Microsoft Sentinel incident.
 
 The following diagram shows how Microsoft’s extended detection and response (XDR) solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="./media/sentinel-xdr.svg" alt-text="The Microsoft solution for XDR with Microsoft Sentinel" lightbox="./media/sentinel-xdr.svg":::
+:::image type="content" source="./media/sentinel-xdr.svg" alt-text="Diagram of the Microsoft solution for XDR with Microsoft Sentinel." lightbox="./media/sentinel-xdr.svg":::
 
 In this diagram:
 
 - Insights from signals across your entire organization feed into Microsoft Defender XDR and Microsoft Defender for Cloud.
 - Microsoft Defender XDR and Microsoft Defender for Cloud send SIEM log data through a series of Microsoft Sentinel connectors.
 - SecOps teams can then analyze and respond to threats.
-- Microsoft Sentinel provides support for multi-cloud environments and integrates with third-party apps and partners.
+- Microsoft Sentinel provides support for multicloud environments and integrates with third-party apps and partners.
 
 For more information about the integration of Microsoft Defender with Microsoft Sentinel, see [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration). This [interactive guide](https://mslearn.cloudguides.com/guides/Investigate%20security%20incidents%20in%20a%20hybrid%20environment%20with%20Azure%20Sentinel)
 steps you through detecting and responding to modern attacks with Microsoft’s unified security information and event management (SIEM) and extended detection and response (XDR) capabilities.
@@ -60,7 +59,7 @@ Within Microsoft Sentinel, you can take advantage of playbooks and automation ru
 - A playbook is a collection of investigation and remediation actions that can be run from the Microsoft Sentinel portal as a routine. Playbooks can help automate and orchestrate your threat response. They can be run manually on-demand on incidents, entities, and alerts, or set to run automatically in response to specific alerts or incidents, when triggered by an automation rule. For more information, see [Automate threat response with playbooks](/azure/sentinel/automate-responses-with-playbooks).
 - Automation rules are a way to centrally manage automation in Microsoft Sentinel, by allowing you to define and coordinate a small set of rules that can apply across different scenarios. For more information, see [Automate threat response in Microsoft Sentinel with automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules).
 
-:::image type="content" source="media/incident-reponse-process.png" alt-text="The four-step incident response process and which portal you need to use.":::
+:::image type="content" source="./media/incident-reponse-process.png" alt-text="Diagram of the four-step incident response process and which portal you need to use." lightbox="./media/incident-reponse-process.png":::
 
 The following sections describe the general incident response process using the Microsoft Sentinel and Microsoft Defender portals.
 
@@ -146,7 +145,7 @@ When your investigation has reached its conclusion and you have remediated the i
 
     Here’s an example.
 
-    :::image type="content" source="media/example-resolving-incident.png" alt-text="Example of resolving an incident in the Microsoft Sentinel portal.":::
+    :::image type="content" source="./media/example-resolving-incident.png" alt-text="Screenshot of resolving an incident in the Microsoft Sentinel portal." lightbox="./media/example-resolving-incident.png":::
 
 1. Select **Apply** to resolve the incident. Once you close the incident in Microsoft Sentinel, it will synchronize the incident status to Microsoft Defender XDR and Microsoft Defender for Cloud.
 

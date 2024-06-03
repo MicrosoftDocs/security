@@ -53,7 +53,7 @@ This article is a part of a series of articles that demonstrate how to apply the
 
 The following diagram shows a common reference architecture for IaaS-based workloads.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-architecture-1.svg" alt-text="The reference architecture for the components of a typical three-tier application running on virtual machines in an Azure spoke VNet." lightbox="media/spoke/azure-infra-spoke-architecture-1.svg":::
+:::image type="content" source="media/spoke/azure-infra-spoke-architecture-1.svg" alt-text="Diagram of the reference architecture for the components of a typical three-tier application running on virtual machines in an Azure spoke VNet." lightbox="media/spoke/azure-infra-spoke-architecture-1.svg":::
 
 In the diagram:
 
@@ -67,7 +67,7 @@ The application shown in the reference architecture follows the [N-tier architec
 
 The following diagram shows the components of a resource group for a spoke VNet in an Azure subscription separate from the subscription for the hub VNet.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="The logical architecture for applying Zero Trust to an Azure spoke VNet showing subscriptions, resource groups, and Azure components within an Entra ID tenant." lightbox="media/spoke/azure-infra-spoke-subscription-architecture-2.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="Diagram of the logical architecture for applying Zero Trust to an Azure spoke VNet showing subscriptions, resource groups, and Azure components within a Microsoft Entra ID tenant." lightbox="media/spoke/azure-infra-spoke-subscription-architecture-2.png":::
 
 In the diagram, all the components of the spoke VNet are contained in a dedicated resource group:
 
@@ -113,7 +113,7 @@ By isolating network resources from compute, data, or storage resources, you red
 
 Rather than having the spoke network resources available in multiple contexts in a shared resource group, create a dedicated resource group for it. The reference architecture that this article supports illustrates this concept. 
 
-:::image type="content" source="media/spoke/azure-infra-spoke-dedicated-resource-group-3.svg" alt-text="The logical architecture showing a dedicated resource group and its components for a spoke VNet with Zero Trust principles applied." lightbox="media/spoke/azure-infra-spoke-dedicated-resource-group-3.svg":::
+:::image type="content" source="media/spoke/azure-infra-spoke-dedicated-resource-group-3.svg" alt-text="Diagram of the logical architecture showing a dedicated resource group and its components for a spoke VNet with Zero Trust principles applied." lightbox="media/spoke/azure-infra-spoke-dedicated-resource-group-3.svg":::
 
 In the figure, resources and components across the reference architecture are divided into dedicated resource groups for virtual machines, storage accounts, hub VNet resources, and spoke VNet resources.
 
@@ -147,7 +147,7 @@ Azure network security groups are used to filter network traffic between Azure r
 
 For a multi-tier virtual-machine based application, the recommendation is to create a dedicated network security group (NSG in the following figure) for each subnet that hosts a virtual machine role.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-nsg-4.png" alt-text="Example reference architecture for dedicated network security groups for each subnet that hosts a virtual machine role." lightbox="media/spoke/azure-infra-spoke-nsg-4.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-nsg-4.png" alt-text="Diagram of an example reference architecture for dedicated network security groups for each subnet that hosts a virtual machine role." lightbox="media/spoke/azure-infra-spoke-nsg-4.png":::
 
 In the diagram:
 
@@ -166,7 +166,7 @@ Application security groups enable you to configure network security as a natura
 
 Inside your workload, identify the specific virtual machine roles. Then, build an application security group for each role. In the reference architecture, three application security groups are represented.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-asg-5.png" alt-text="Example reference architecture for separate application security groups for different virtual machine roles." lightbox="media/spoke/azure-infra-spoke-asg-5.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-asg-5.png" alt-text="Diagram of an example reference architecture for separate application security groups for different virtual machine roles." lightbox="media/spoke/azure-infra-spoke-asg-5.png":::
 
 In the diagram:
 
@@ -263,11 +263,11 @@ The outbound connections are:
 
 Define traffic patterns with the least amount of permissions and only following explicitly allowed paths. Here's an example diagram of using application security groups to define network traffic patterns in the network security groups for a spoke VNet that is used along with a hub VNet. This is the recommended configuration.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.svg" alt-text="The recommended configuration of networking patterns for a three-tier web application in a hub-spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-7.svg":::
+:::image type="content" source="media/spoke/azure-infra-spoke-tiers-7.svg" alt-text="Diagram of the recommended configuration of networking patterns for a three-tier web application in a hub-spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-7.svg":::
 
 As another example, here is a configuration for a stand-alone spoke VNet in which the Web Application Firewall is placed in the Application Gateway subnet of the spoke VNet.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.svg" alt-text="The recommended configuration of networking patterns for a three-tier web application in a standalone spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-6.svg":::
+:::image type="content" source="media/spoke/azure-infra-spoke-tiers-6.svg" alt-text="Diagram of the recommended configuration of networking patterns for a three-tier web application in a standalone spoke configuration." lightbox="media/spoke/azure-infra-spoke-tiers-6.svg":::
 
 You need the following network security group rules:
 
@@ -387,7 +387,7 @@ Securing access to the VNet and application includes:
 
 The following diagram shows both of these access modes across the reference architecture.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-network-7.svg" alt-text="The reference architecture showing the ways access is secured in a spoke VNet." lightbox="media/spoke/azure-infra-spoke-network-7.svg":::
+:::image type="content" source="media/spoke/azure-infra-spoke-network-7.svg" alt-text="Diagram of the reference architecture showing the ways access is secured in a spoke VNet." lightbox="media/spoke/azure-infra-spoke-network-7.svg":::
 
 ### Secure traffic within Azure environment for the VNet and application
 
@@ -407,7 +407,7 @@ When configuring multi-factor authentication with conditional access and related
 
 The following diagram shows the recommended policies for Zero Trust.
 
-:::image type="content" source="media/identity-device-access-policies-byplan.svg" alt-text="Zero Trust identity and device access policies for three protection levels: Starting point, Enterprise, and Specialized security." lightbox="media/identity-device-access-policies-byplan.svg":::
+:::image type="content" source="media/identity-device-access-policies-byplan.svg" alt-text="Diagram of Zero Trust identity and device access policies for three protection levels: Starting point, Enterprise, and Specialized security." lightbox="media/identity-device-access-policies-byplan.svg":::
 
 ## Step 7: Enable advanced threat detection and protection
 

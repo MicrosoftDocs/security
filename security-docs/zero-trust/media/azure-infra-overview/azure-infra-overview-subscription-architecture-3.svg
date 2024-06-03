@@ -43,7 +43,7 @@
 		<g id="shape2321-1" v:mID="2321" v:groupContext="shape" transform="translate(0.375,-0.375)">
 			<title>Sheet.2321</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(559000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(552000):26"/>
 			</v:userDefs>
 			<rect x="0" y="0.750005" width="1066.69" height="544.378" class="st1"/>
 		</g>
@@ -71,16 +71,16 @@
 			</v:userDefs>
 			<rect x="0" y="497.878" width="1049.62" height="47.25" class="st5"/>
 		</g>
-		<g id="shape1769-10" v:mID="1769" v:groupContext="shape" transform="translate(15.2023,-497.452)">
+		<g id="shape1769-10" v:mID="1769" v:groupContext="shape" transform="translate(17.4523,-495.804)">
 			<title>Sheet.1769</title>
-			<desc>Entra ID (Tenant)</desc>
+			<desc>Microsoft Entra ID (Tenant)</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(303000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
-			<v:textRect cx="58.0781" cy="521.503" width="116.16" height="47.25"/>
-			<rect x="0" y="497.878" width="116.156" height="47.25" class="st6"/>
-			<text x="11.81" y="532.3" class="st7" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/><v:newlineChar/>Entra ID (Tenant)</text>		</g>
+			<v:textRect cx="96.75" cy="527.691" width="193.5" height="34.875"/>
+			<rect x="0" y="510.253" width="193.5" height="34.875" class="st6"/>
+			<text x="4" y="531.29" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Microsoft Entra ID (Tenant)</text>		</g>
 		<g id="shape1770-13" v:mID="1770" v:groupContext="shape" v:layerMember="0" transform="translate(50.9088,-49.8184)">
 			<title>Sheet.1770</title>
 			<v:userDefs>
@@ -242,7 +242,7 @@
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(320000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)"/>
-			<v:textRect cx="64.4062" cy="529.727" width="128.82" height="30.8032"/>
+			<v:textRect cx="64.4063" cy="529.727" width="128.82" height="30.8032"/>
 			<rect x="0" y="514.325" width="128.812" height="30.8032" class="st2"/>
 			<text x="51.02" y="533.33" class="st13" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>VNet</text>		</g>
 		<g id="shape1787-67" v:mID="1787" v:groupContext="shape" v:layerMember="0" transform="translate(531.003,-160.601)">
@@ -252,7 +252,7 @@
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(321000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(0,0,0,0)"/>
-			<v:textRect cx="64.4062" cy="529.727" width="128.82" height="30.8032"/>
+			<v:textRect cx="64.4063" cy="529.727" width="128.82" height="30.8032"/>
 			<rect x="0" y="514.325" width="128.812" height="30.8032" class="st2"/>
 			<text x="19.86" y="526.13" class="st13" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Network security <tspan
 						x="45.8" dy="1.2em" class="st14">groups</tspan></text>		</g>

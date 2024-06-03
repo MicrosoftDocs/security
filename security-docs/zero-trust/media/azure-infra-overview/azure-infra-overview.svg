@@ -32,7 +32,7 @@
 		.st21 {fill:#50e6ff;stroke:#bdd0e9;stroke-linecap:butt;stroke-width:0.75}
 		.st22 {fill:#1490df;stroke:#bdd0e9;stroke-linecap:butt;stroke-width:0.75}
 		.st23 {fill:none;stroke:none;stroke-width:0.75}
-		.st24 {fill:none;stroke:#a5a5a5;stroke-dasharray:0.01,3;stroke-width:1}
+		.st24 {fill:none;stroke:#7f7f7f;stroke-dasharray:7,5;stroke-width:1}
 		.st25 {fill:url(#grad0-100);stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st26 {fill:#50e6ff;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st27 {fill:#c3f1ff;stroke:none;stroke-linecap:butt;stroke-width:0.75}
@@ -163,7 +163,7 @@
 		<g id="shape2320-1" v:mID="2320" v:groupContext="shape" transform="translate(0.375,-0.375)">
 			<title>Sheet.2320</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(558000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(553000):26"/>
 			</v:userDefs>
 			<rect x="0" y="2.06308" width="663.33" height="631.946" class="st1"/>
 		</g>
@@ -2554,58 +2554,59 @@
 			<text x="10.04" y="624.16" class="st53" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>4</text>		</g>
 		<g id="group2310-456" transform="translate(335.687,-68.372)" v:mID="2310" v:groupContext="group">
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(556000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(557000):26"/>
 			</v:userDefs>
 			<title>Sheet.2310</title>
-			<g id="shape2311-457" v:mID="2311" v:groupContext="shape">
-				<title>Sheet.2311</title>
-				<desc>Entra ID</desc>
-				<v:userDefs>
-					<v:ud v:nameU="visNavOrder" v:val="VT0(553000):26"/>
-				</v:userDefs>
-				<v:textBlock v:margins="rect(4,4,4,4)"/>
-				<v:textRect cx="30.375" cy="624.009" width="60.75" height="20"/>
-				<rect x="0" y="614.009" width="60.75" height="20" class="st11"/>
-				<text x="9.32" y="627.61" class="st51" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Entra ID</text>			</g>
-			<g id="group2312-460" transform="translate(12.2696,-21.3511)" v:mID="2312" v:groupContext="group">
+			<g id="group2312-457" transform="translate(12.2696,-21.3511)" v:mID="2312" v:groupContext="group">
 				<v:userDefs>
 					<v:ud v:nameU="visNavOrder" v:val="VT0(554000):26"/>
 				</v:userDefs>
 				<title>Sheet.2312</title>
-				<g id="shape2313-461" v:mID="2313" v:groupContext="shape" transform="translate(7.90468,0)">
+				<g id="shape2313-458" v:mID="2313" v:groupContext="shape" transform="translate(7.90468,0)">
 					<title>Sheet.2313</title>
 					<path d="M0 628.18 C0.76 628.66 2.03 629.19 3.37 629.19 C4.58 629.19 5.72 628.83 6.65 628.23 C6.65 628.23 6.66
 								 628.23 6.66 628.23 L10.2 626.02 L10.2 634.01 C9.64 634.01 9.07 633.86 8.58 633.55 L0 628.18 Z"
 							class="st54"/>
 				</g>
-				<g id="shape2314-463" v:mID="2314" v:groupContext="shape" transform="translate(0,-4.8217)">
+				<g id="shape2314-460" v:mID="2314" v:groupContext="shape" transform="translate(0,-4.8217)">
 					<title>Sheet.2314</title>
 					<path d="M15.85 608.43 L1.14 625.03 C0 626.31 0.3 628.25 1.77 629.17 C1.77 629.17 7.22 632.58 7.9 633.01 C8.67
 								 633.48 9.93 634.01 11.27 634.01 C12.49 634.01 13.62 633.66 14.56 633.05 C14.56 633.05 14.56 633.05
 								 14.56 633.05 L18.11 630.84 L9.54 625.48 L18.11 615.82 L18.11 607.43 C18.11 607.43 18.11 607.43 18.11
 								 607.43 C17.28 607.43 16.45 607.76 15.86 608.43 L15.85 608.43 Z" class="st55"/>
 				</g>
-				<g id="shape2315-465" v:mID="2315" v:groupContext="shape" transform="translate(9.54135,-7.99299)">
+				<g id="shape2315-462" v:mID="2315" v:groupContext="shape" transform="translate(9.54135,-7.99299)">
 					<title>Sheet.2315</title>
 					<path d="M0 628.66 L0.1 628.72 L8.56 634.01 L8.57 634.01 L8.57 618.99 L8.56 618.99 L0 628.66 Z" class="st56"/>
 				</g>
-				<g id="shape2316-467" v:mID="2316" v:groupContext="shape" transform="translate(18.1074,-0.00196243)">
+				<g id="shape2316-464" v:mID="2316" v:groupContext="shape" transform="translate(18.1074,-0.00196243)">
 					<title>Sheet.2316</title>
 					<path d="M16.33 624.35 C17.81 623.43 18.1 621.49 16.97 620.21 L7.31 609.32 C6.53 608.95 5.66 608.74 4.73 608.74
 								 C2.92 608.74 1.3 609.53 0.22 610.76 L0 611 C0 611 8.57 620.66 8.57 620.66 C8.57 620.66 8.57 620.66
 								 8.57 620.66 L0 626.02 L0 634.01 C0.56 634.01 1.12 633.86 1.62 633.55 L16.33 624.35 L16.33 624.35
 								 Z" class="st57"/>
 				</g>
-				<g id="shape2317-469" v:mID="2317" v:groupContext="shape" transform="translate(18.1054,-23.0095)">
+				<g id="shape2317-466" v:mID="2317" v:groupContext="shape" transform="translate(18.1054,-23.0095)">
 					<title>Sheet.2317</title>
 					<path d="M0 625.62 L0 634.01 C0 634.01 0.22 633.77 0.22 633.77 C1.3 632.54 2.92 631.75 4.73 631.75 C5.66 631.75
 								 6.53 631.96 7.31 632.33 L2.25 626.62 C1.66 625.95 0.83 625.62 0 625.62 L0 625.62 Z" class="st58"/>
 				</g>
-				<g id="shape2318-471" v:mID="2318" v:groupContext="shape" transform="translate(18.1074,-7.99496)">
+				<g id="shape2318-468" v:mID="2318" v:groupContext="shape" transform="translate(18.1074,-7.99496)">
 					<title>Sheet.2318</title>
 					<path d="M8.56 628.66 L0 619 L0 634.01 L8.56 628.66 Z" class="st59"/>
 				</g>
 			</g>
 		</g>
+		<g id="shape2340-470" v:mID="2340" v:groupContext="shape" transform="translate(332.312,-64.7018)">
+			<title>Sheet.2340</title>
+			<desc>Microsoft Entra ID</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(574000):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)"/>
+			<v:textRect cx="33.75" cy="624.009" width="67.5" height="20"/>
+			<rect x="0" y="614.009" width="67.5" height="20" class="st11"/>
+			<text x="10.66" y="620.11" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Microsoft <tspan
+						x="14.45" dy="1.282em" class="st13">Entra ID</tspan></text>		</g>
 	</g>
 </svg>

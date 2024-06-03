@@ -5,7 +5,7 @@ ms.date: 04/23/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: 
   - msftsolution-copilot
   - msftsolution-scenario

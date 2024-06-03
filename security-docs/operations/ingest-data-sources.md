@@ -4,7 +4,7 @@ description: Learn how to turn on data connectors and enable UEBA and analytic r
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
-ms.date: 3/29/2023
+ms.date: 06/03/2024
 ms.topic: article
 ms.service: microsoft-365-security
 ms.collection: 

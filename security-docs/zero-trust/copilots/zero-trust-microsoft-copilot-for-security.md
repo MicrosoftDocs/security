@@ -5,7 +5,7 @@ ms.date: 04/02/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
-ms.topic: conceptual
+ms.topic: concept-article
 ms.collection: 
   - M365copilot
   - magic-ai-copilot 

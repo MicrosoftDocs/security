@@ -59,7 +59,7 @@ Within Microsoft Sentinel, you can take advantage of playbooks and automation ru
 - A playbook is a collection of investigation and remediation actions that can be run from the Microsoft Sentinel portal as a routine. Playbooks can help automate and orchestrate your threat response. They can be run manually on-demand on incidents, entities, and alerts, or set to run automatically in response to specific alerts or incidents, when triggered by an automation rule. For more information, see [Automate threat response with playbooks](/azure/sentinel/automate-responses-with-playbooks).
 - Automation rules are a way to centrally manage automation in Microsoft Sentinel, by allowing you to define and coordinate a small set of rules that can apply across different scenarios. For more information, see [Automate threat response in Microsoft Sentinel with automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules).
 
-:::image type="content" source="media/incident-reponse-process.png" alt-text="The four-step incident response process and which portal you need to use.":::
+:::image type="content" source="./media/incident-reponse-process.png" alt-text="The four-step incident response process and which portal you need to use." lightbox="./media/incident-reponse-process.png":::
 
 The following sections describe the general incident response process using the Microsoft Sentinel and Microsoft Defender portals.
 
@@ -145,7 +145,7 @@ When your investigation has reached its conclusion and you have remediated the i
 
     Here’s an example.
 
-    :::image type="content" source="media/example-resolving-incident.png" alt-text="Screenshot of resolving an incident in the Microsoft Sentinel portal.":::
+    :::image type="content" source="./media/example-resolving-incident.png" alt-text="Screenshot of resolving an incident in the Microsoft Sentinel portal." lightbox="./media/example-resolving-incident.png":::
 
 1. Select **Apply** to resolve the incident. Once you close the incident in Microsoft Sentinel, it will synchronize the incident status to Microsoft Defender XDR and Microsoft Defender for Cloud.
 

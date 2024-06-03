@@ -1,7 +1,7 @@
 ---
 title: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
 description: Learn how to resolve an incident using both Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. 
-ms.date: 03/29/2023
+ms.date: 06/03/2024
 ms.service: microsoft-365-zero-trust
 author: mjcaparas
 ms.author: macapara
@@ -15,15 +15,14 @@ ms.collection:
 
 # Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
 
-This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. 
-Microsoft Sentinel and Microsoft Defender XDR share:
+This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. Microsoft Sentinel and Microsoft Defender XDR share:
 
 - Updates on lifecycle (status, owner, classification) are shared between the products.
 - Evidence gathered during an investigation is shown in the Microsoft Sentinel incident.
 
 The following diagram shows how Microsoft’s extended detection and response (XDR) solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="./media/sentinel-xdr.svg" alt-text="The Microsoft solution for XDR with Microsoft Sentinel" lightbox="./media/sentinel-xdr.svg":::
+:::image type="content" source="./media/sentinel-xdr.svg" alt-text="Diagram of the Microsoft solution for XDR with Microsoft Sentinel" lightbox="./media/sentinel-xdr.svg":::
 
 In this diagram:
 
@@ -146,7 +145,7 @@ When your investigation has reached its conclusion and you have remediated the i
 
     Here’s an example.
 
-    :::image type="content" source="media/example-resolving-incident.png" alt-text="Example of resolving an incident in the Microsoft Sentinel portal.":::
+    :::image type="content" source="media/example-resolving-incident.png" alt-text="Screenshot of resolving an incident in the Microsoft Sentinel portal.":::
 
 1. Select **Apply** to resolve the incident. Once you close the incident in Microsoft Sentinel, it will synchronize the incident status to Microsoft Defender XDR and Microsoft Defender for Cloud.
 

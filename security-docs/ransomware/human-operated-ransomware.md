@@ -24,7 +24,7 @@ Once devices or files are locked or encrypted, cybercriminals can extort money f
 
 ## How do ransomware attacks work?
 
-Ransomware can be automated or involve human hands on a keyboard--a *human operated* attack, such as seen in recent attacks using [LockBit ransomware](/security/ransomware/human-operated-ransomware). 
+Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [LockBit ransomware](/security/ransomware/human-operated-ransomware). 
 
 ### Automated ransomware attacks
 
@@ -39,11 +39,11 @@ That means one ransomware prevention technique is to safeguard your email system
 
 These "hands-on-keyboard" attacks usually target organizations rather than a single device.
 
-*Human-operated* also means there's a human attacker using their insights into common system and security misconfigurations. The goal is to infiltrate the organization, navigate the network, and adapt to the environment and its weaknesses.
+*Human-operated* also means there's a human threat actor using their insights into common system and security misconfigurations. The goal is to infiltrate the organization, navigate the network, and adapt to the environment and its weaknesses.
 
 Hallmarks of these human-operated ransomware attacks typically include **credential theft** and **lateral movement** with an elevation of the privileges in stolen accounts.
 
-Activities might take place during maintenance windows and involve security configuration gaps discovered by cybercriminals. The goal is the **deployment of a ransomware payload** to whatever *high business impact resources* the attackers choose.
+Activities might take place during maintenance windows and involve security configuration gaps discovered by cybercriminals. The goal is the **deployment of a ransomware payload** to whatever *high business impact resources* the threat actors choose.
 
 > [!IMPORTANT]
 > These attacks can be *catastrophic* to business operations and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware that usually only requires malware remediation, **human-operated ransomware will continue to threaten your business operations after the initial encounter**.
@@ -70,11 +70,11 @@ For the three steps to exploit attack weaknesses, see the [Protect your organiza
 
 1. Prepare your organization to recover from an attack without having to pay the ransom.
 2. Limit the scope of damage of a ransomware attack by protecting privileged roles.
-3. Make it harder for an attacker to get into your environment by incrementally removing risks.
+1. Make it harder for a threat actor to access your environment by incrementally removing risks.
 
 [![The three steps to protecting against ransomware and extortion](media/protect-against-ransomware/protect-against-ransomware-phases.png)](protect-against-ransomware.md)
 
-Download the [Protect your organization from ransomware poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf) for an overview of the three phases as layers of protection against ransomware attackers.
+Download the [Protect your organization from ransomware poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf) for an overview of the three phases as layers of protection against ransomware attacks.
 
 [![The "Protect your organization from ransomware" poster](media/human-operated-ransomware/ransomware-poster-thumbnail.png)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
 

@@ -55,7 +55,7 @@ You apply Zero Trust principles for Azure Storage across the architecture, from 
 
 The following diagram shows the logical architecture components.
 
-:::image type="content" source="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg" alt-text="Diagram of the logical architecture for applying Zero Trust to Azure storage showing subscriptions, resource groups, and storage accounts within an Entra ID tenant." lightbox="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg":::
+:::image type="content" source="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg" alt-text="Diagram of the logical architecture for applying Zero Trust to Azure storage showing subscriptions, resource groups, and storage accounts within a Microsoft Entra ID tenant." lightbox="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg":::
 
 In the diagram:
 
@@ -155,7 +155,7 @@ Another way to provide permissions that are time-bound is through Shared Access 
 - Have a revocation plan.
 - Configure SAS expiration policies.
 - Validate permissions.
-- Use a user delegation SAS wherever possible. This SAS is signed with Microsoft Entra credentials.
+- Use a user delegation SAS wherever possible. This SAS is signed with Microsoft Entra ID credentials.
 
 ## Step 3: Logically separate or segregate critical data with network controls
 
@@ -163,7 +163,7 @@ In this step, you use the recommended controls to protect the network connection
 
 The following diagram highlights the network connections to the Azure Storage services in the reference architecture.
 
-:::image type="content" source="media/secure-storage/azure-infra-storage-network-2.svg" alt-text="Diagram of the architecture for applying Zero Trust to Azure storage that highlights the network connections to Azure Storage services within the Azure IaaS reference architecture." lightbox="media/secure-storage/azure-infra-storage-network-2.svg":::
+:::image type="content" source="media/secure-storage/azure-infra-storage-network-2.svg" alt-text="Diagram of the reference architecture for applying Zero Trust to Azure storage that highlights the network connections to Azure Storage services within the Azure IaaS reference architecture." lightbox="media/secure-storage/azure-infra-storage-network-2.svg":::
 
 |Task | Description |
 | --- | --- |

@@ -149,7 +149,7 @@ If you are not using policies that enforce log forwarding on resource groups, co
 2. Navigate to **Activity log -\> Export Activity Logs** and then select **+ Add diagnostic setting**.
 3. On the **Diagnostic setting** screen, select all log categories (especially **Security**) and send them to the appropriate logging sources, such as a Log Analytics workspace for observability, or a storage account for long term storage. Here's an example:
 
-:::image type="content" source="media/spoke/diagnostic-setting.png" alt-text="Example of the Diagnostic setting." lightbox="media/spoke/diagnostic-setting.png":::
+:::image type="content" source="media/spoke/diagnostic-setting.png" alt-text="Screenshot example of the Diagnostic setting." lightbox="media/spoke/diagnostic-setting.png":::
 
 See [Diagnostic Settings](/azure/azure-monitor/essentials/diagnostic-settings) to understand how to review these logs and alert on them.
 
@@ -165,7 +165,7 @@ Azure network security groups are used to filter network traffic between Azure r
 
 For multi-tier applications, the recommendation is to create a dedicated network security group ("NSG" in the following diagram) for each subnet that hosts a networking component.
 
-:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.png" alt-text="Diagram of dedicated network security groups for each subnet." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.png":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.svg" alt-text="Diagram of dedicated network security groups for each subnet." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.svg":::
 
 In the diagram:
 
@@ -207,17 +207,17 @@ To do this, in the network security group, go to **Outbound Security Rules** and
 
 Here's an example.
 
-:::image type="content" source="media/spoke/outbound-sec-rules.png" alt-text="Example of outbound security rules." lightbox="media/spoke/outbound-sec-rules.png":::
+:::image type="content" source="media/spoke/outbound-sec-rules.png" alt-text="Screenshot example of outbound security rules." lightbox="media/spoke/outbound-sec-rules.png":::
 
 Repeat this process with inbound rules, adjusting the name and description as appropriate.
 
 The **Inbound security rules** tab displays warning sign on the rule. Here's an example.
 
-:::image type="content" source="media/spoke/outbound-sec-rules-1.png" alt-text="Example of inbound security rules." lightbox="media/spoke/outbound-sec-rules-1.png":::
+:::image type="content" source="media/spoke/outbound-sec-rules-1.png" alt-text="Screenshot example of inbound security rules." lightbox="media/spoke/outbound-sec-rules-1.png":::
 
 Click the rule and scroll to the bottom to see more details. Here's an example:
 
-:::image type="content" source="media/spoke/rule-details.png" alt-text="Example of rule details." lightbox="media/spoke/rule-details.png":::
+:::image type="content" source="media/spoke/rule-details.png" alt-text="Screenshot example of rule details." lightbox="media/spoke/rule-details.png":::
 
 This message gives the following two warnings:
 
@@ -369,11 +369,11 @@ As mentioned in the other articles from this series, Defender for Cloud is a Clo
 
 This article does not describe Defender for Cloud in detail, but it is important to understand that Defender for Cloud works based on Azure policies and logs ingested in a Log Analytics workspace. Once enabled on the subscriptions with your spoke VNet and associated resources, you can see recommendations to improve their security posture. You can filter these recommendations further by MITRE tactic, Resource Group, and others. Consider prioritizing to resolve recommendations that have a greater impact on your organization's Secure Score. Here's an example.
 
-:::image type="content" source="media/spoke/dfc-recs.png" alt-text="Example of Microsoft Defender for Cloud recommendations." lightbox="media/spoke/dfc-recs.png":::
+:::image type="content" source="media/spoke/dfc-recs.png" alt-text="Screenshot example of Microsoft Defender for Cloud recommendations." lightbox="media/spoke/dfc-recs.png":::
 
 There are Defender for Cloud plans that offer advanced workload protections that includes adaptive network hardening recommendations to improve your existing network security group rules. Here's an example.
 
-:::image type="content" source="media\spoke\network-hardening.png" alt-text="Example of network hardening recommendations." lightbox="media\spoke\network-hardening.png":::
+:::image type="content" source="media\spoke\network-hardening.png" alt-text="Screenshot example of network hardening recommendations." lightbox="media\spoke\network-hardening.png":::
 
 You can accept the recommendation by selecting **Enforce**, which will either create a new network security group rule or modify an existing one.
 

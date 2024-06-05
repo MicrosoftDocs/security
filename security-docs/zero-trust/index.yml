@@ -76,7 +76,7 @@ landingContent:
             url: /microsoft-365/security/office-365-security/microsoft-365-policies-configurations
           - text: Manage endpoints with Microsoft Defender XDR
             url: /microsoft-365/solutions/manage-devices-with-intune-overview
-          - text: Evaluate, pilot, and deploy Microsoft Defender XDR
+          - text: Pilot and deploy Microsoft Defender XDR
             url: /microsoft-365/security/defender/eval-overview
           - text: Deploy a Microsoft information protection solution
             url: /microsoft-365/compliance/information-protection-solution

@@ -71,9 +71,9 @@ The reference architecture aligns to the architecture described in the [Enterpri
 
 ## Logical architecture
 
-In this diagram, the Azure infrastructure for an Azure Virtual Desktop deployment is contained within an Entra ID tenant.
+In this diagram, the Azure infrastructure for an Azure Virtual Desktop deployment is contained within a Microsoft Entra ID tenant.
 
-:::image type="content" source="media/avd/logical-arch-avd.svg" alt-text="Diagram of the components of Azure Virtual Desktop in a Microsoft Entra tenant." lightbox="media/avd/logical-arch-avd.svg":::
+:::image type="content" source="media/avd/logical-arch-avd.svg" alt-text="Diagram of the components of Azure Virtual Desktop in a Microsoft Entra ID tenant." lightbox="media/avd/logical-arch-avd.svg":::
 
 The elements of the logical architecture are:
 

@@ -88,7 +88,7 @@
 		<a xlink:href="https://learn.microsoft.com/security/operations/siem-xdr-overview">
 			<g id="shape2082-12" v:mID="2082" v:groupContext="shape" transform="translate(48.0095,-96.2158)">
 				<title>Rectangle.2506</title>
-				<desc>Implement Microsoft Sentinel and Microsoft Defender XDR</desc>
+				<desc>Implement Microsoft Sentinel and Microsoft 365 Defender</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
 					<v:ud v:nameU="visNavOrder" v:val="VT0(88000):26"/>
@@ -96,7 +96,7 @@
 				<v:textBlock v:margins="rect(4,4,4,8)" v:verticalAlign="2"/>
 				<v:textRect cx="452.702" cy="448.646" width="905.41" height="98.6436"/>
 				<rect x="0" y="399.324" width="905.405" height="98.6436" class="st6"/>
-				<text x="8" y="490.37" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Implement Microsoft Sentinel and Microsoft Defender XDR</text>			</g>
+				<text x="8" y="490.37" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Implement Microsoft Sentinel and Microsoft 365 Defender</text>			</g>
 		</a>
 		<a xlink:href="https://aka.ms/zero-trust-m365-defender">
 			<g id="shape2083-15" v:mID="2083" v:groupContext="shape" transform="translate(293.414,-128.175)">
@@ -227,7 +227,7 @@
 			<text x="17.68" y="494.22" class="st16" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Platform</text>		</g>
 		<g id="shape2111-50" v:mID="2111" v:groupContext="shape" transform="translate(62.414,-128.175)">
 			<title>Rectangle.2561</title>
-			<desc>Azure Entra ID Identity Protection</desc>
+			<desc>Microsoft Entra ID Protection</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(119000):26"/>
@@ -235,7 +235,7 @@
 			<v:textBlock v:margins="rect(10,10,10,10)"/>
 			<v:textRect cx="90" cy="472.768" width="180.01" height="50.4"/>
 			<rect x="0" y="447.568" width="180" height="50.4" class="st8"/>
-			<text x="10" y="468.57" class="st9" v:langID="1033"><v:paragraph/><v:tabList/>Azure Entra ID Identity <tspan x="10"
+			<text x="10" y="468.57" class="st9" v:langID="1033"><v:paragraph/><v:tabList/>Microsoft Entra ID <tspan x="10"
 						dy="1.2em" class="st14">Protection</tspan></text>		</g>
 		<g id="shape2112-54" v:mID="2112" v:groupContext="shape" transform="translate(755.414,-128.175)">
 			<title>Rectangle.2562</title>

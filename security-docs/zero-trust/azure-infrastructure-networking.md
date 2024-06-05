@@ -57,7 +57,7 @@ This article is a part of a series of articles that demonstrate how to apply the
 
 The following diagram shows the reference architecture. The hub VNet is highlighted in red. For more information about this architecture, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
-:::image type="content" source="media/hub/azure-infra-hub-architecture-1.svg" alt-text="The reference architecture for the components of a hub virtual network with Zero Trust principles applied." lightbox="media/hub/azure-infra-hub-architecture-1.svg":::
+:::image type="content" source="media/hub/azure-infra-hub-architecture-1.svg" alt-text="Diagram of the reference architecture for the components of a hub virtual network with Zero Trust principles applied." lightbox="media/hub/azure-infra-hub-architecture-1.svg":::
 
 For this reference architecture, there are many ways you can deploy the resources across the Azure subscription. The reference architecture shows the recommendation of isolating all resources for the hub VNet within a dedicated resource group. The resources for the spoke VNet are also shown for comparison. This model works well if different teams are given responsibility for these different areas.
 
@@ -81,7 +81,7 @@ The resources that are deployed for the hub VNet are:
 
 The following diagram shows the components of a resource group for a hub VNet in an Azure subscription separate from the subscription for the spoke VNet. This is one way of organizing these elements within the subscription. Your organization might choose to organize these in a different way.
 
-:::image type="content" source="media/hub/azure-infra-hub-subscription-architecture-2.svg" alt-text="The logical architecture for applying Zero Trust to an Azure hub VNet showing subscriptions, resource groups, and Azure components within an Entra ID tenant." lightbox="media/hub/azure-infra-hub-subscription-architecture-2.svg":::
+:::image type="content" source="media/hub/azure-infra-hub-subscription-architecture-2.svg" alt-text="Diagram of the logical architecture for applying Zero Trust to an Azure hub VNet showing subscriptions, resource groups, and Azure components within a Microsoft Entra ID tenant." lightbox="media/hub/azure-infra-hub-subscription-architecture-2.svg":::
 
 In the diagram:
 
@@ -316,7 +316,7 @@ You write Azure Policies in JavaScript Object Notation (JSON) to hold different 
 
 To view all the Azure policies that provide network recommendations used by Microsoft Defender for Cloud:
 
-:::image type="content" source="media/hub/azure-policies-mdc.jpg" alt-text="Example screenshot example of recommended Azure policies in Microsoft Defender for Cloud." lightbox="media/hub/azure-policies-mdc.jpg":::
+:::image type="content" source="media/hub/azure-policies-mdc.jpg" alt-text="Screenshot example of recommended Azure policies in Microsoft Defender for Cloud." lightbox="media/hub/azure-policies-mdc.jpg":::
 
 1. Open **Microsoft Defender for Cloud**, by selecting the Microsoft Defender for Cloud icon in the left menu.
 
@@ -332,7 +332,7 @@ To view all the Azure policies that provide network recommendations used by Micr
 
 Follow these steps to view some of the network recommendations, based on the Microsoft cloud security benchmark:
 
-:::image type="content" source="media/hub/network-rec-mdc.jpg" alt-text="Example screenshot of network recommendations in Microsoft Defender for Cloud." lightbox="media/hub/network-rec-mdc.jpg":::
+:::image type="content" source="media/hub/network-rec-mdc.jpg" alt-text="Screenshot example of network recommendations in Microsoft Defender for Cloud." lightbox="media/hub/network-rec-mdc.jpg":::
 
 1. Open **Microsoft Defender for Cloud**.
 
@@ -356,7 +356,7 @@ You can also check options to get a better security posture by hardening your ne
 
 Azure Firewall is recommended for a hub VNet, as described in this article. Microsoft Defender for Cloud can manage multiple Azure Firewall policies centrally. In addition to Azure Firewall policies, you'll be able to manage other features related to Azure Firewall, as shown here.
 
-:::image type="content" source="media/hub/firewall-manager-mdc.jpg" alt-text="Example screenshot of managing Azure firewall policies through Microsoft Defender for Cloud.":::
+:::image type="content" source="media/hub/firewall-manager-mdc.jpg" alt-text="Screenshot example of managing Azure firewall policies through Microsoft Defender for Cloud.":::
 
 For more information about how Microsoft Defender for Cloud protects your network environment against threats, see [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction)
 

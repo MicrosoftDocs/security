@@ -3468,14 +3468,14 @@
 			<text x="9.34" y="799.02" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>DDOS Protection</text>		</g>
 		<g id="shape2338-715" v:mID="2338" v:groupContext="shape" transform="translate(499.99,-16.375)">
 			<title>Sheet.2338</title>
-			<desc>Microsoft Entra ID Connect</desc>
+			<desc>Microsoft Entra Connect</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(572000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="76" cy="803" width="152" height="20"/>
 			<rect x="0" y="793" width="152" height="20" class="st11"/>
-			<text x="10.47" y="806.6" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Microsoft Entra ID Connect</text>		</g>
+			<text x="17.3" y="806.6" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Microsoft Entra Connect</text>		</g>
 		<g id="shape2339-718" v:mID="2339" v:groupContext="shape" transform="translate(546.937,-241.375)">
 			<title>Sheet.2339</title>
 			<desc>Microsoft Entra ID</desc>

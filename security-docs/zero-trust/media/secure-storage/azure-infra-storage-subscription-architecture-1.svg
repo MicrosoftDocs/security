@@ -58,14 +58,14 @@
 		</g>
 		<g id="shape1809-7" v:mID="1809" v:groupContext="shape" transform="translate(13.4866,-348.543)">
 			<title>Sheet.1809</title>
-			<desc>Microsoft Entra ID (Tenant)</desc>
+			<desc>Microsoft Entra ID tenant</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(342000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="90.2813" cy="378.422" width="180.57" height="23.8466"/>
 			<rect x="0" y="366.499" width="180.563" height="23.8466" class="st4"/>
-			<text x="4" y="389.22" class="st5" v:langID="1033"><v:paragraph/><v:tabList/><v:newlineChar/>Microsoft Entra ID (Tenant)</text>		</g>
+			<text x="4" y="389.22" class="st5" v:langID="1033"><v:paragraph/><v:tabList/><v:newlineChar/>Microsoft Entra ID tenant</text>		</g>
 		<g id="shape1810-10" v:mID="1810" v:groupContext="shape" v:layerMember="0" transform="translate(15.7229,-22.7412)">
 			<title>Sheet.1810</title>
 			<v:userDefs>

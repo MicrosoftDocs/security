@@ -73,14 +73,14 @@
 		</g>
 		<g id="shape1769-10" v:mID="1769" v:groupContext="shape" transform="translate(17.4523,-495.804)">
 			<title>Sheet.1769</title>
-			<desc>Microsoft Entra ID (Tenant)</desc>
+			<desc>Microsoft Entra ID tenant</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(303000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="96.75" cy="527.691" width="193.5" height="34.875"/>
 			<rect x="0" y="510.253" width="193.5" height="34.875" class="st6"/>
-			<text x="4" y="531.29" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Microsoft Entra ID (Tenant)</text>		</g>
+			<text x="4" y="531.29" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Microsoft Entra ID tenant</text>		</g>
 		<g id="shape1770-13" v:mID="1770" v:groupContext="shape" v:layerMember="0" transform="translate(50.9088,-49.8184)">
 			<title>Sheet.1770</title>
 			<v:userDefs>

@@ -21,7 +21,7 @@ Writers notes:
 
 For updates to product names, please also update the appropriate figures.
 
-To update figures that are not screen shots, your options are:
+To update figures that aren't screen shots, your options are:
 
 - Locate the source Visio file in internal storage.
 - Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
@@ -43,11 +43,11 @@ This article helps you apply the [principles of the Zero Trust](zero-trust-overv
 | --- | --- | --- |
 | Verify explicitly |Always authenticate and authorize based on all available data points. | Use threat detection in Azure Firewall and Azure Application Gateway to validate traffic and to verify if the traffic is acceptable. |
 | Use least privileged access | Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | Reduce ingress to and egress from Azure services to your private networking. Use network security groups to allow only specific ingress from your VNet. Use a central Azure Firewall instance to grant non-VNet traffic access to the Azure service. |
-| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Limit unnecessary communication between resources. Ensure that you are logging from network security groups and that you have proper visibility into anomalous traffic. Track changes to network security groups. |
+| Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Limit unnecessary communication between resources. Ensure that you're logging from network security groups and that you have proper visibility into anomalous traffic. Track changes to network security groups. |
 
 For more information about how to apply the principles of Zero Trust across an Azure IaaS environment, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
-## Zero Trust stand alone or spoke network for Azure PaaS services
+## Zero Trust stand-alone or spoke network for Azure PaaS services
 
 Many PaaS services contain their own, service-native ingress and egress control functionality. You can use these controls to secure network access to PaaS service resources without the need of infrastructure such as VNets. For example:
 
@@ -143,13 +143,13 @@ Additional recommendations:
 - Reference a security group for the role instead of named individuals.
 - Manage access to the security group through your enterprise identity management practices.
 
-If you are not using policies that enforce log forwarding on resource groups, configure this in the activity log for the resource group:
+If you're not using policies that enforce log forwarding on resource groups, configure this in the activity log for the resource group:
 
 1. Find the resource group in the Azure portal.
 2. Navigate to **Activity log -\> Export Activity Logs** and then select **+ Add diagnostic setting**.
 3. On the **Diagnostic setting** screen, select all log categories (especially **Security**) and send them to the appropriate logging sources, such as a Log Analytics workspace for observability, or a storage account for long term storage. Here's an example:
 
-:::image type="content" source="media/spoke/diagnostic-setting.png" alt-text="Example of the Diagnostic setting." lightbox="media/spoke/diagnostic-setting.png":::
+:::image type="content" source="media/spoke/diagnostic-setting.png" alt-text="Screenshot example of the Diagnostic setting." lightbox="media/spoke/diagnostic-setting.png":::
 
 See [Diagnostic Settings](/azure/azure-monitor/essentials/diagnostic-settings) to understand how to review these logs and alert on them.
 
@@ -157,15 +157,15 @@ See [Diagnostic Settings](/azure/azure-monitor/essentials/diagnostic-settings) t
 
 While not directly related to networking, you should plan your subscription RBAC in a similar way. In addition to isolating resources logically by resource group, you should also isolate the subscription based on business areas and portfolio owners. The subscription as a management unit should be narrowly scoped.
 
-See the [Azure landing zone design principles](/azure/cloud-adoption-framework/ready/landing-zone/design-principles#subscription-democratization) for more information.
+For more information, see [Azure landing zone design principles](/azure/cloud-adoption-framework/ready/landing-zone/design-principles#subscription-democratization).
 
 ## Step 3: Create a network security group for each subnet
 
-Azure network security groups are used to filter network traffic between Azure resources in an Azure VNet. It is recommended to apply a network security group to each subnet. This is enforced through Azure policy by default when deploying Azure Landing Zones. A network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, several types of Azure resources. For each rule, you can specify source and destination IP addresses, a protocol (such as TCP or UDP), and a port.
+Azure network security groups are used to filter network traffic between Azure resources in an Azure VNet. It's recommended to apply a network security group to each subnet. This is enforced through Azure policy by default when deploying Azure Landing Zones. A network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, several types of Azure resources. For each rule, you can specify source and destination IP addresses, a protocol (such as TCP or UDP), and a port.
 
 For multi-tier applications, the recommendation is to create a dedicated network security group ("NSG" in the following diagram) for each subnet that hosts a networking component.
 
-:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.png" alt-text="Diagram of dedicated network security groups for each subnet." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.png":::
+:::image type="content" source="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.svg" alt-text="Diagram of dedicated network security groups for each subnet." lightbox="media/spoke-paas/azure-infra-spoke-subscription-paas-nsg-4.svg":::
 
 In the diagram:
 
@@ -207,17 +207,17 @@ To do this, in the network security group, go to **Outbound Security Rules** and
 
 Here's an example.
 
-:::image type="content" source="media/spoke/outbound-sec-rules.png" alt-text="Example of outbound security rules." lightbox="media/spoke/outbound-sec-rules.png":::
+:::image type="content" source="media/spoke/outbound-sec-rules.png" alt-text="Screenshot example of outbound security rules." lightbox="media/spoke/outbound-sec-rules.png":::
 
 Repeat this process with inbound rules, adjusting the name and description as appropriate.
 
 The **Inbound security rules** tab displays warning sign on the rule. Here's an example.
 
-:::image type="content" source="media/spoke/outbound-sec-rules-1.png" alt-text="Example of inbound security rules." lightbox="media/spoke/outbound-sec-rules-1.png":::
+:::image type="content" source="media/spoke/outbound-sec-rules-1.png" alt-text="Screenshot example of inbound security rules." lightbox="media/spoke/outbound-sec-rules-1.png":::
 
 Click the rule and scroll to the bottom to see more details. Here's an example:
 
-:::image type="content" source="media/spoke/rule-details.png" alt-text="Example of rule details." lightbox="media/spoke/rule-details.png":::
+:::image type="content" source="media/spoke/rule-details.png" alt-text="Screenshot example of rule details." lightbox="media/spoke/rule-details.png":::
 
 This message gives the following two warnings:
 
@@ -233,7 +233,7 @@ If you have specific outbound connections for management, such as to Active Dire
 > [!NOTE]
 > The recommendations in this section only apply to the web-egress subnet.
 
-If you are using Azure Firewall to manage your outbound connections, instead of performing a deny-outbound-all, you can create alternate rules for outbound connections. As a part of the Azure Firewall implementation, you set up a route table that sends default route (0.0.0.0/0) traffic to the firewall. This will handle traffic outside of the VNet.
+If you're using Azure Firewall to manage your outbound connections, instead of performing a deny-outbound-all, you can create alternate rules for outbound connections. As a part of the Azure Firewall implementation, you set up a route table that sends default route (0.0.0.0/0) traffic to the firewall. This handles traffic outside of the VNet.
 
 You can then either create a deny all VNet outbound rule, or an allow all outbound rule but secure items with their inbound rules.
 
@@ -321,7 +321,7 @@ For the Azure Application Service, adding the private endpoint sets its service 
 
 In addition to the private endpoints for ingress, enable VNet integration. Each App Service Plan can have VNet integration enabled and doing so allocates a whole subnet for the App Service. For more information, see [Integrate your app with an Azure VNet](/azure/app-service/overview-VNet-integration).
 
-To configure your App Service, see [Enable VNet integration in Azure App Service](/azure/app-service/configure-VNet-integration-enable). Ensure that you are placing it in your subnet designated for egress.
+To configure your App Service, see [Enable VNet integration in Azure App Service](/azure/app-service/configure-VNet-integration-enable). Ensure that you're placing it in your subnet designated for egress.
 
 ### DNS considerations
 
@@ -335,7 +335,7 @@ As part of using private endpoints, enable DNS resolution of the resources' FQDN
 Securing access to the VNet and applications include:
 
 - Securing traffic within the Azure environment to the application
-- Using multi-factor authentication (MFA) and Conditional Access policies for user access to applications.
+- Using multifactor authentication (MFA) and Conditional Access policies for user access to applications.
 
 The following diagram shows both access modes across the reference architecture.
 
@@ -367,13 +367,13 @@ Your spoke VNet built on Azure may be protected by [Microsoft Defender for Cloud
 
 As mentioned in the other articles from this series, Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection (CWP) tool that offers security recommendations, alerts, and advanced features such as [adaptive network hardening](/azure/defender-for-cloud/adaptive-network-hardening) to assist you as you progress in your cloud security journey.
 
-This article does not describe Defender for Cloud in detail, but it is important to understand that Defender for Cloud works based on Azure policies and logs ingested in a Log Analytics workspace. Once enabled on the subscriptions with your spoke VNet and associated resources, you can see recommendations to improve their security posture. You can filter these recommendations further by MITRE tactic, Resource Group, and others. Consider prioritizing to resolve recommendations that have a greater impact on your organization's Secure Score. Here's an example.
+This article doesn't describe Defender for Cloud in detail, but it's important to understand that Defender for Cloud works based on Azure policies and logs ingested in a Log Analytics workspace. Once enabled on the subscriptions with your spoke VNet and associated resources, you can see recommendations to improve their security posture. You can filter these recommendations further by MITRE tactic, Resource Group, and others. Consider prioritizing to resolve recommendations that have a greater impact on your organization's Secure Score. Here's an example.
 
-:::image type="content" source="media/spoke/dfc-recs.png" alt-text="Example of Microsoft Defender for Cloud recommendations." lightbox="media/spoke/dfc-recs.png":::
+:::image type="content" source="media/spoke/dfc-recs.png" alt-text="Screenshot example of Microsoft Defender for Cloud recommendations." lightbox="media/spoke/dfc-recs.png":::
 
-There are Defender for Cloud plans that offer advanced workload protections that includes adaptive network hardening recommendations to improve your existing network security group rules. Here's an example.
+There are Defender for Cloud plans that offer advanced workload protections that include adaptive network hardening recommendations to improve your existing network security group rules. Here's an example.
 
-:::image type="content" source="media\spoke\network-hardening.png" alt-text="Example of network hardening recommendations." lightbox="media\spoke\network-hardening.png":::
+:::image type="content" source="media\spoke\network-hardening.png" alt-text="Screenshot example of network hardening recommendations." lightbox="media\spoke\network-hardening.png":::
 
 You can accept the recommendation by selecting **Enforce**, which will either create a new network security group rule or modify an existing one.
 

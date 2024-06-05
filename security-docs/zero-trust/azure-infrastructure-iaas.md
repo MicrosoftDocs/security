@@ -383,7 +383,7 @@ To use every signal available and maintain central visibility into network traff
 Securing access to the VNet and application includes:
 
 - Securing traffic within the Azure environment to the application.
-- Using multi-factor authentication and conditional access policies for user access to the application.
+- Using multifactor authentication and conditional access policies for user access to the application.
 
 The following diagram shows both of these access modes across the reference architecture.
 

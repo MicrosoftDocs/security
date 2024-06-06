@@ -246,7 +246,7 @@ This objective is to create boundaries on your network so that intermediate anal
 | Use many ingress/egress cloud micro-perimeters with some micro-segmentation. | [Secure networks with Zero Trust](/security/zero-trust/deploy/networks#i-network-segmentation-many-ingressegress-cloud-micro-perimeters-with-some-micro-segmentation) |
 | Use multiple subnets and network security groups to host multiple tiers of an app and restrict traffic. | [Apply Zero Trust principles to a spoke VNet in Azure](/security/zero-trust/azure-infrastructure-iaas) <br><br> [Apply Zero Trust principles to a spoke VNet with Azure PaaS Services](/security/zero-trust/azure-infrastructure-paas) |
 
-For additional information about segmentation in Azure environments, see [Apply Zero Trust principles to segmenting Azure-based network communication](azure-networking-segmentation.md).
+For additional information about segmentation in Azure environments, see [Apply Zero Trust principles to segmenting Azure-based network communication](../azure-networking-segmentation.md).
 
 ##### Implement Site Recovery for critical workload continuity
 
@@ -282,7 +282,7 @@ This objective is more of a check to be sure your network traffic is encrypted. 
 | Encrypt application backend traffic between virtual networks.<br><br> Encrypt traffic between on-premises and cloud. | [Secure networks with Zero Trust-Objective 6: All traffic is encrypted](/security/zero-trust/deploy/networks#vi-encryption-all-traffic-is-encrypted) |
 | For network architects, this article helps put recommended networking concepts into perspective. Ed Fisher, Security & Compliance Architect at Microsoft, describes how to optimize your network for cloud connectivity by avoiding the most common pitfalls. | [Networking up (to the cloud)-One architect's viewpoint](/microsoft-365/solutions/networking-design-principles) |
 
-For additional information about encryption in Azure environments, see [Apply Zero Trust principles to encrypting Azure-based network communication](azure-networking-encryption.md).
+For additional information about encryption in Azure environments, see [Apply Zero Trust principles to encrypting Azure-based network communication](../azure-networking-encryption.md).
 
 <a name='stage-2'></a>
 #### Stage 2

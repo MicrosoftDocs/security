@@ -146,16 +146,22 @@
       items: 
         - name: Overview
           href: /defender-xdr/pilot-deploy-overview.md
+          maintainContext: true
         - name: Defender for Identity
           href: /defender-xdr/pilot-deploy-defender-identity
+          maintainContext: true
         - name: Defender for Office 365
           href: /defender-xdr/pilot-deploy-defender-office-365
+          maintainContext: true
         - name: Defender for Endpoint
           href: /defender-xdr/pilot-deploy-defender-endpoint
+          maintainContext: true
         - name: Defender for Cloud Apps
           href: /defender-xdr/pilot-deploy-defender-cloud-apps
+          maintainContext: true
         - name: Investigate and respond to threats 
           href: /defender-xdr/pilot-deploy-investigate-respond.md
+          maintainContext: true
     - name: Deploy a Microsoft information protection solution 
       href: /microsoft-365/compliance/information-protection-solution?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       maintainContext: true

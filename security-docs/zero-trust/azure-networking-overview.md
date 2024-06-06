@@ -50,6 +50,7 @@ The following articles show you how to apply Zero Trust approach to networking f
 
 - [Encryption](azure-networking-encryption.md)
 - [Segmentation](azure-networking-segmentation.md)
+- [Discontinue legacy network security technology](azure-networking-legacy.md)
 
 > [!IMPORTANT]
 > This Zero Trust guidance describes how to use and configure several security solutions and features available on Azure for a reference architecture. Several other resources also provide security guidance for these solutions and features, including:

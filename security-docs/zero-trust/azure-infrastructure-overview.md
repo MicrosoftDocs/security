@@ -249,6 +249,7 @@ See these additional articles for applying Zero Trust principles to Azure networ
 
 - [Encryption](azure-networking-encryption.md)
 - [Segmentation](azure-networking-segmentation.md)
+- [Discontinue legacy network security technology](azure-networking-legacy.md)
 
 ## Technical illustrations
 

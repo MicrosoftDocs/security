@@ -251,6 +251,7 @@ To protect your Azure virtual machine, deploy [Azure Bastion](/azure/bastion/tut
 For additional information about applying Zero Trust to Azure networking, see:
 
 - [Apply Zero Trust principles to segmenting Azure-based network communication](azure-networking-segmentation.md)
+- [Apply Zero Trust principles to discontinue legacy network security technology](azure-networking-legacy.md)
 - [Secure networks with Zero Trust](./deploy/networks.md)
 - [Spoke virtual networks in Azure](azure-infrastructure-iaas.md)
 - [Hub virtual networks in Azure](azure-infrastructure-paas.md)

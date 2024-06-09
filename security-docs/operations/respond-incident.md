@@ -30,7 +30,7 @@ The following diagrams show how Microsoft’s extended detection and response (X
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel with the unified security operations platform.
 
-:::image type="content" source="./media/sentinel-xdr-usx.svg" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr-usx.svg" border="false":::
+:::image type="content" source="./media/sentinel-xdr-usx.png" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr-usx.png" border="false":::
 
 In this diagram:
 
@@ -43,7 +43,7 @@ In this diagram:
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="./media/sentinel-xdr.svg" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.svg" border="false":::
+:::image type="content" source="./media/sentinel-xdr.png" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.png" border="false":::
 
 In this diagram:
 

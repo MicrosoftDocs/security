@@ -37,12 +37,12 @@ Microsoft provides guidance to help you set up and get started with Microsoft De
 
 Microsoft recommends enabling the components of Microsoft 365 Defender in the following order.
 
-:::image type="content" source="./media/defender-xdr-pilot-deploy-flow.svg" alt-text="A diagram that shows the pilot and deploy process for Microsoft Defender XDR." lightbox="./media/defender-xdr-pilot-deploy-flow.svg":::
+:::image type="content" source="./media/defender-xdr-pilot-deploy-flow.svg" alt-text="A diagram that shows the pilot and deploy process for Microsoft Defender XDR." lightbox="./media/defender-xdr-pilot-deploy-flow.svg" border="false":::
 
 | Phase | Link |
 |---|---|
 | A. Start the pilot | [Start the pilot](/defender-xdr/pilot-deploy-overview#start-the-pilot)|
-| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity) <br><br> - [Pilot and deploy Defender for Office 365](/defender-xdr/pilot-deploy-defender-office-365) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-xdr/(pilot-deploy-defender-endpoint) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps) |
+| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity) <br><br> - [Pilot and deploy Defender for Office 365](/defender-xdr/pilot-deploy-defender-office-365) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-xdr/pilot-deploy-defender-endpoint) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps) |
 |C. Investigate and respond to threats | [Practice incident investigation and response](/defender-xdr/pilot-deploy-investigate-respond) |
 
 This order is designed to leverage the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Prioritize the components to meet your business needs.
@@ -69,13 +69,13 @@ Watch this short video to learn about the Microsoft Defender portal.
 
 Microsoft Defender XDR also ingests and includes the signals of Microsoft Entra ID Protection, as illustrated below.
 
-:::image type="content" source="./media/m365-defender-eval-architecture.svg" alt-text="A diagram that shows the integration of Microsoft Entra ID Protection with Microsoft Defender XDR." lightbox="./media/m365-defender-eval-architecture.svg":::
+:::image type="content" source="./media/m365-defender-eval-architecture.svg" alt-text="A diagram that shows the integration of Microsoft Entra ID Protection with Microsoft Defender XDR." lightbox="./media/m365-defender-eval-architecture.svg" border="false":::
 
 Microsoft Entra ID Protection is separate from Microsoft Defender XDR and is included with Microsoft Entra ID P2 licenses.
 
 Microsoft Entra ID Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Microsoft Entra ID to allow or prevent account access, depending on how Conditional Access policies are configured.  
 
-If you aren't going onboard your Microsoft Sentinel workspace to the unified security operations platform, we recommend that you also ingest the signals from Microsoft Entra ID Protection into Microsoft Sentinel. To enable Microsoft Entra ID Protection, see [Microsoft Entra ID Protection](/defender-cloud-apps/aadip-integration).
+If you aren't going to onboard your Microsoft Sentinel workspace to the unified security operations platform, we recommend that you also ingest the signals from Microsoft Entra ID Protection into Microsoft Sentinel. To enable Microsoft Entra ID Protection, see [Microsoft Entra ID Protection](/defender-cloud-apps/aadip-integration).
 
 ## Enable Microsoft Defender for Cloud
 

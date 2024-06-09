@@ -26,7 +26,7 @@ After you've completed designing and implementing your Microsoft Sentinel worksp
 
 Data connectors are configured to enable data ingestion into the workspace. After enabling key data points to be ingested into Microsoft Sentinel, user and entity behavior analytics (UEBA) and analytic rules must also be enabled to capture anomalous and malicious activities. Analytic rules dictate how alerts and incidents are generated in your Microsoft Sentinel instance. Tailoring analytic rules to your environment and organizational needs through entity mapping allows you to produce high-fidelity incidents and reduce alert fatigue.
 
-The procedures in this step are available in both the Azure and Defender portals, depending on whether you onboarded your Microsoft Sentinel workspace to the unified security operations platform.
+If you've onboarded your workspace to the unified security operations platform, the procedures in this step are available in both the Azure and Defender portals.
 
 ## Before you begin
 
@@ -60,29 +60,15 @@ Start by focus on setting up free data sources to ingest, including:
 
 - **Azure activity logs**: Ingesting Azure activity Logs is **critical** in enabling Microsoft Sentinel to provide a single-pane of glass view across the environment.
 
-- **Office 365 Audit Logs**, including all SharePoint activity, Exchange admin activity, and Teams.
+- **Office 365 audit Logs**, including all SharePoint activity, Exchange admin activity, and Teams.
 
 - **Security alerts**, including alerts from Microsoft Defender for Cloud, Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Defender for Identity, and Microsoft Defender for Endpoint.
 
-    If you're working in the Azure portal, ingesting security alerts into Microsoft Sentinel enables it to be the *central pane of incident management* across the environment. In such cases, incident investigation starts in Microsoft Sentinel and should continue in the Microsoft Defender portal or Defender for Cloud, if deeper analysis is required.
+    If you haven't onboarded your workspace to the unified security operations platform and are working in the Azure portal, ingesting security alerts into Microsoft Sentinel enables the Azure portal to be the *central pane of incident management* across the environment. In such cases, incident investigation starts in Microsoft Sentinel and should continue in the Microsoft Defender portal or Defender for Cloud, if deeper analysis is required.
 
     For more information, see [Microsoft Defender XDR incidents and Microsoft incident creation rules](/azure/sentinel/microsoft-365-defender-sentinel-integration#microsoft-365-defender-incidents-and-microsoft-incident-creation-rules).
 
 - **Microsoft Defender for Cloud Apps alerts**.
-
-The following table lists the free data sources you can enable in Microsoft Sentinel:
-
-| **Microsoft Sentinel data connector** | **Free datatype**                      |
-|-------------------------------------------|---- |
-| **Azure activity logs**                   |AzureActivity                           |
-| **Microsoft Entra ID Protection**          | SecurityAlert(IPC)                     |
-| **Office 365**                            | OfficeActivity (SharePoint)  <br>OfficeActivity (Exchange) <br>  OfficeActivity (Teams)           |
-| **Microsoft Defender for Cloud**          | SecurityAlert (Defender forCloud)      |
-| **Microsoft Defender for IoT**            | SecurityAlert (Defender forIoT)        |
-| **Microsoft Defender XDR**                | SecurityIncident       <br>      SecurityAlert              |
-| **Microsoft Defender for Endpoint**       | SecurityAlert (Microsoft DefenderAdvanced Threat Protection (MDATP))                   |
-| **Microsoft Defender for Identity**       | SecurityAlert (Azure AdvancedThreat Protection (AATP))                    |
-| **Microsoft Defender for Cloud Apps**     | SecurityAlert (Defender for CloudApps) |
 
 For more information, see [Microsoft Sentinel Pricing](https://azure.microsoft.com/pricing/details/microsoft-sentinel/) and [Free data sources](/azure/sentinel/billing?tabs=commitment-tier#free-data-sources).
 
@@ -98,7 +84,7 @@ Make sure to send Microsoft Defender XDR logs to Microsoft Sentinel if any of th
 
 ### Set up data sources per your environment
 
-This section describes data sources you may want to use, depending on the services and deployment methods used in your environment.
+This section describes data sources you might want to use, depending on the services and deployment methods used in your environment.
 
 |Scenario  |Data sources  |
 |---------|---------|
@@ -106,24 +92,17 @@ This section describes data sources you may want to use, depending on the servic
 |**Virtual machines**     |  For virtual machines hosted on-premises or in other clouds that require their logs collected, use the following data connectors: <br><br>    - **Windows Security Events using AMA**<br>    - Events via **Defender for Endpoint** (for server)<br>- **Syslog**       |
 |**Network virtual appliances / on-premises sources**     |   For network virtual appliances or other on-premises sources that generate Common Event Format (CEF) or SYSLOG logs, use the following data connectors: <br><br>- **Syslog via AMA** <br>- **Common Event Format (CEF) via AMA** <br><br>   For more information, see, [Ingest Syslog and CEF messages to Microsoft Sentinel with the Azure Monitor Agent](/azure/sentinel/connect-cef-syslog-ama?branch=main&tabs=single%2Ccef%2Cportal).    |
 
-When you're done, search in the Microsoft Sentinel **Content hub** for other devices and Software as a service (SaaS) apps that require logs to be sent to Microsoft Sentinel.
+When you're done, search in the Microsoft Sentinel **Content hub** for other devices and software as a service (SaaS) apps that require logs to be sent to Microsoft Sentinel.
 
 For more information, see [Discover and manage Microsoft Sentinel out-of-the-box content ](/azure/sentinel/sentinel-solutions-deploy).
 
 ## Step 2: Enable user entity behavior analytics
 
-After setting up data connectors in Microsoft Sentinel, make sure to enable [user entity behavior analytics](/azure/sentinel/identify-threats-with-entity-behavior-analytics) to identify suspicious behavior  that could lead to phishing exploits and eventually attacks such as ransomware. Often, anomaly detection through UEBA is the best method for detecting Zero-day exploits early on.
-
-Data sources required:
-
--   Active Directory logs (Microsoft Defender for Identity)
--   Microsoft Entra ID
-    -   Audit Logs
-    -   Azure Activity
--   Security Events
--   Sign in Logs
+After setting up data connectors in Microsoft Sentinel, make sure to enable user entity behavior analytics to identify suspicious behavior  that could lead to phishing exploits and eventually attacks such as ransomware. Often, anomaly detection through UEBA is the best method for detecting Zero-day exploits early on.
 
 Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organization's entities across time and peer group to identify anomalous activity. This added utility aids in an expedition of determining if an asset has been compromised. Since it identifies peer group association this can also aid in determining the blast radius of said compromise.
+
+For more information, see [Identify threats with entity behavior analytics](/azure/sentinel/identify-threats-with-entity-behavior-analytics)
 
 ## Step 3: Enable analytic rules
 
@@ -182,7 +161,7 @@ After reviewing and modifying fusion and anomaly rules, enable the out-of-the-bo
 
 ### Conduct a MITRE Att&ck crosswalk
 
-With fusion, anomaly, and threat intelligence analytic rules enabled, conduct a [MITRE Att&ck crosswalk](/azure/sentinel/mitre-coverage) to help you decide which remaining Analytic Rules to enable and to finish implementing a mature XDR (extended detection and response) process. This empowers you to detect and respond throughout the lifecycle of an attack.
+With fusion, anomaly, and threat intelligence analytic rules enabled, conduct a [MITRE Att&ck crosswalk](/azure/sentinel/mitre-coverage) to help you decide which remaining analytic rules to enable and to finish implementing a mature XDR (extended detection and response) process. This empowers you to detect and respond throughout the lifecycle of an attack.
 
 The [MITRE Att&ck research department](https://attack.mitre.org/matrices/enterprise/) created the MITRE method, and it is provided as part of Microsoft Sentinel to ease your implementation. Ensure you have analytic rules that stretch the length and breadth of the attack vectors approach. 
 

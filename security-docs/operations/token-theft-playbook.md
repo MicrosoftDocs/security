@@ -25,10 +25,9 @@ Learn more:
 
 ## Prerequisites
 
-* Access to the Microsoft Entra ID (formerly Azure AD) [sign in](/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit](/azure/active-directory/reports-monitoring/concept-audit-logs) logs for users and service principals
+* Access to the Microsoft Entra ID [sign in](/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit](/azure/active-directory/reports-monitoring/concept-audit-logs) logs for users and service principals
 * An account with one of the following Microsoft Entra roles assigned:
   * Security Administrator
-  * Global Administrator
   * Security Reader
   * Global Reader
   * Security Operator
@@ -202,7 +201,7 @@ For privileged users, confirm any changes in the time window.
 ```kusto
 AuditLogs
 | where TimeGenerated between (datetime(2023-03-01) .. datetime(2023-03-15))
-| where InitiatedBy == "x"
+| where InitiatedBy has "x"
 ```
 
 ### Authentication method changes for a privileged account
@@ -427,7 +426,7 @@ Sometimes, it's not possible to discover the root cause. We recommended you comp
 
 ## Next steps
 
-*[Token theft wokflow decision tree](https://aka.ms/tokentheftworkflow)
+*[Token theft workflow decision tree](https://aka.ms/tokentheftworkflow)
 * [What is Microsoft Entra ID Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
 * [Continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 * [Risk based access policies](/azure/active-directory/identity-protection/concept-identity-protection-policies)

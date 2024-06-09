@@ -44,10 +44,10 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+        - text: Recent Microsoft Security ransomware blog
+          url:  https://www.microsoft.com/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/
         - text: Recent Microsoft social media posts about ransomware
           url:  https://twitter.com/MsftSecIntel/status/1720489111717310697
-        - text: Recent Microsoft Security ransomware blog
-          url:  https://www.microsoft.com/security/blog/2023/10/25/octo-tempest-crosses-boundaries-to-facilitate-extortion-encryption-and-destruction/
         - text: Hands-on-keyboard (HOK) and pre-HOK attacks
           url:  https://www.microsoft.com/security/blog/2021/11/15/ai-driven-adaptive-protection-against-human-operated-ransomware/
         - text: Tampering
@@ -67,6 +67,8 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+        - text: Moonstone Sleet emerges as new North Korean actor with new bag of tricks
+          url:  https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/
         - text: Ransomware as a service. Understanding the cybercrime gig economy and how to protect yourself
           url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
         - text: Sharing how Microsoft protects against ransomware
@@ -89,13 +91,13 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-        - text: Overview
+        - text: Ransomware attack overview
           url: protect-against-ransomware.md
-        - text: Prepare your recovery plan
+        - text: Prepare your ransomware attack recovery plan
           url: protect-against-ransomware-phase1.md
-        - text: Limit the scope of damage
+        - text: Limit the scope of damage from a ransomware attack
           url: protect-against-ransomware-phase2.md
-        - text: Make it hard to get in
+        - text: Make it hard for threat actors to get into your environment
           url: protect-against-ransomware-phase3.md
 
 # Card
@@ -129,7 +131,7 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-        - text: Detecting HumOr ransomware with Microsoft 365
+        - text: Detecting human-operated ransomware with Microsoft 365
           url:  /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
         - text: Responding to ransomware attacks
           url:  /microsoft-365/security/defender/playbook-responding-ransomware-m365-defender
@@ -137,5 +139,5 @@ landingContent:
           url:  /security/operations/incident-response-playbook-dart-ransomware-approach
         - text: Ransomware Incident Response playbook template
           url:  //download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
-        - text: Azure Defenses for Ransowmare Attack ebook
+        - text: Azure Defenses for Ransomware Attack ebook
           url:  https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/

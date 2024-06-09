@@ -12,17 +12,18 @@ ms.service: microsoft-365-security
 ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
+ms.localizationpriority:   # medium
 description: How to stop ransomware attacks by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
 
 ---
 
-# Make it hard for ransomware attacks to get into your organization
+# Make it hard for ransomware threat actors to access your organization
 
-In this phase, you make the attackers work *harder* to get into your on-premises or cloud systems by gradually removing risks at the points of entry.
+In this phase, you make the threat actors work *harder* to access your on-premises or cloud systems by gradually removing risks at the points of entry.
 
 While many of these changes will be familiar and easy to do, **it's extremely important that your work on this part of the strategy not slow your progress on the other to critically important parts!**
 
-Here are the links to review the three part cyber security plan:
+Here are the links to review the three-part cyber security plan:
 
 - [Have a recovery plan](protect-against-ransomware-phase1.md)
 - [A plan to limit the harm done](protect-against-ransomware-phase2.md)
@@ -30,9 +31,9 @@ Here are the links to review the three part cyber security plan:
 
 ## Remote access
 
-Getting access to your organization's intranet through a remote access connection is an attack vector for ransomware attackers.
+Getting access to your organization's intranet through a remote access connection is an attack vector for ransomware threat actors.
 
-Once an on-premises user account is compromised, an attacker is free to roam on an intranet to gather intelligence, elevate privileges, and install ransomware. The Colonial Pipeline cyberattack in 2021 is an example.
+Once an on-premises user account is compromised, a threat actor can leverage an intranet to gather intelligence, elevate privileges, and install ransomware. The Colonial Pipeline cyberattack in 2021 is an example.
 
 ### Program and project member accountabilities for remote access
 
@@ -52,11 +53,11 @@ This table describes the overall protection of your remote access solution from 
 
 ### Implementation checklist for remote access
 
-Apply these best practices to protect your remote access infrastructure from ransomware attackers.
+Apply these best practices to protect your remote access infrastructure from ransomware threat actors.
 
 |Done|Task|Description|
 |---|---|---|
-|<input type="checkbox" />|Maintain software and appliance updates. Avoid missing or neglecting manufacturer protections (security updates, supported status).|Attackers use well-known vulnerabilities that have not yet been patched as attack vectors.|
+|<input type="checkbox" />|Maintain software and appliance updates. Avoid missing or neglecting manufacturer protections (security updates, supported status).|Threat actors use well-known vulnerabilities that have not yet been patched as attack vectors.|
 |<input type="checkbox" />|Configure Microsoft Entra ID for existing remote access by including enforcing [Zero Trust](https://www.microsoft.com/security/business/zero-trust) user and device validation with Conditional Access.|Zero Trust provides multiple levels of securing access to your organization.|
 |<input type="checkbox" />|Configure security for existing third-party VPN solutions (Cisco [AnyConnect](/azure/active-directory/saas-apps/cisco-anyconnect), Palo Alto Networks [GlobalProtect](/azure/active-directory/saas-apps/palo-alto-networks-globalprotect-tutorial) & [Captive Portal](/azure/active-directory/saas-apps/paloaltonetworks-captiveportal-tutorial), Fortinet [FortiGate SSL VPN](/azure/active-directory/saas-apps/fortigate-ssl-vpn-tutorial), Citrix [NetScaler](/azure/active-directory/saas-apps/citrix-netscaler-tutorial), [Zscaler Private Access (ZPA)](/azure/active-directory/saas-apps/zscalerprivateaccess-tutorial), and [more](/azure/active-directory/saas-apps/tutorial-list)).|Take advantage of the built-in security of your remote access solution.|
 |<input type="checkbox" />|Deploy [Azure Point-to-Site (P2S) VPN](/azure/vpn-gateway/openvpn-azure-ad-tenant#enable-authentication) to provide remote access.|Take advantage of integration with Microsoft Entra ID and your existing Azure subscriptions.|
@@ -66,9 +67,9 @@ Apply these best practices to protect your remote access infrastructure from ran
 
 ## Email and collaboration
 
-Implement best practices for email and collaboration solutions to make it more difficult for attackers to abuse them, while allowing your workers to access external content easily and safely.
+Implement best practices for email and collaboration solutions to make it more difficult for threat actors to abuse them, while allowing your workers to access external content easily and safely.
 
-Attackers frequently enter the environment by transferring malicious content in with authorized collaboration tools such as email and file sharing and convincing users to run it. Microsoft has invested in enhanced mitigations that vastly increase protection against these attack vectors.
+Threat actors frequently enter the environment by introducing malicious content disguised within authorized collaboration tools such as email and file sharing and convincing users to run the content. Microsoft has invested in enhanced mitigations that vastly increase protection against these attack vectors.
 
 ### Program and project member accountabilities for email and collaboration
 
@@ -79,7 +80,7 @@ This table describes the overall protection of your email and collaboration solu
 |CISO, CIO, or Identity Director||Executive sponsorship|
 |Program lead from the [Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture) team||Drive results and cross-team collaboration|
 ||IT Architects|Prioritize component integration into architectures|
-||Cloud Productivity or End User Team|Enable Defender for Office 365, ASR, and AMSI|
+||Cloud Productivity or End User Team|Enable Defender for Office 365, Azure Site Recovery, and AMSI|
 ||[Security Architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture) / [Infrastructure + Endpoint](/azure/cloud-adoption-framework/organize/cloud-security-infrastructure-endpoint)|Configuration assistance|
 ||User Education Team|Update guidance on workflow changes|
 ||[Security Policy and Standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards)|Update standards and policy documents|
@@ -87,22 +88,22 @@ This table describes the overall protection of your email and collaboration solu
 
 ### Implementation checklist for email and collaboration
 
-Apply these best practices to protect your email and collaboration solutions from ransomware attackers.
+Apply these best practices to protect your email and collaboration solutions from ransomware threat actors
 
 |Done|Task|Description|
 |---|---|---|
 |<input type="checkbox" />|Enable [AMSI for Office VBA](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).|Detect Office macro attacks with endpoint tools like [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).|
-|<input type="checkbox" />|Implement Advanced Email security using [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp) or a similar solution.|Email is a common entry point for attackers.|
-|<input type="checkbox" />|[Deploy attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) to block common attack techniques including: <br><br> - Endpoint abuse such as credential theft, ransomware activity, and suspicious use of PsExec and WMI. <br><br> - Weaponized Office document activity such as advanced macro activity, executable content, process creation, and process injection initiated by Office applications. <br><br> **Note:** Deploy these rules in audit mode first, then assess any negative impact, and then deploy them in block mode.|ASR provides additional layers of protect specifically targeted at mitigating common attack methods.|
+|<input type="checkbox" />|Implement Advanced Email security using [Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp) or a similar solution.|Email is a common entry point for threat actors.|
+|<input type="checkbox" />|[Deploy attack surface reduction (Azure Site Recovery) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) to block common attack techniques including: <br><br> - Endpoint abuse such as credential theft, ransomware activity, and suspicious use of PsExec and WMI. <br><br> - Weaponized Office document activity such as advanced macro activity, executable content, process creation, and process injection initiated by Office applications. <br><br> **Note:** Deploy these rules in audit mode first, then assess any negative impact, and then deploy them in block mode.|Azure Site Recovery provides additional layers of protect specifically targeted at mitigating common attack methods.|
 |<input type="checkbox" />|Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#ransomware-detection-and-response)).|Reduces risk from ransomware activities that probe baseline security features and settings.|
 
 ## Endpoints
 
 Implement relevant security features and rigorously follow software maintenance best practices for endpoints (devices) and applications, prioritizing applications and server/client operating systems directly exposed to Internet traffic and content.
 
-Internet-exposed endpoints are a common entry vector that provides attackers access to the organization's assets. Prioritize blocking common OS and application vulnerabilities with preventive controls to slow or stop them from executing the next stages.
+Internet-exposed endpoints are a common entry vector that provides threat actors access to the organization's assets. Prioritize blocking common OS and application vulnerabilities with preventive controls to slow or stop them from performing the next stages.
 
-### Program and project member accountabilities for enbpoints
+### Program and project member accountabilities for endpoints
 
 This table describes the overall protection of your endpoints from ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
 
@@ -120,11 +121,11 @@ This table describes the overall protection of your endpoints from ransomware in
 
 ### Implementation checklist for endpoints
 
-Apply these best practices to all Windows, Linux, MacOS, Android, iOS, and other endpoints.
+Apply these best practices to all Windows, Linux, macOS, Android, iOS, and other endpoints.
 
 |Done|Task|Description|
 |---|---|---|
-|<input type="checkbox" />|Block known threats with [attack surface reduction](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) rules, [tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection), and [block at first site](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus).|Don't let lack of use of these built-in security features be the reason an attacker entered your organization.|
+|<input type="checkbox" />|Block known threats with [attack surface reduction](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) rules, [tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection), and [block at first sight](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus).|Don't let lack of use of these built-in security features be the reason an attacker entered your organization.|
 |<input type="checkbox" />|Apply [Security Baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) to harden internet-facing Windows servers and clients and Office applications.|Protect your organization with the minimum level of security and build from there.|
 |<input type="checkbox" />|Maintain your software so that it is: <br><br> - Updated: Rapidly deploy critical security updates for operating systems, browsers, & email clients <br><br> - Supported:  Upgrade operating systems and software for versions supported by your vendors.|Attackers are counting on you missing or neglecting manufacturer updates and upgrades.|
 |<input type="checkbox" />|Isolate, disable, or retire insecure systems and protocols, including [unsupported operating systems](/lifecycle/) and [legacy protocols](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/retire-those-old-legacy-protocols/ba-p/259396).|Attackers use known vulnerabilities of legacy devices, systems, and protocols as entry points into your organization.|
@@ -133,7 +134,7 @@ Apply these best practices to all Windows, Linux, MacOS, Android, iOS, and other
 
 ## Accounts
 
-Just as antique skeleton keys won’t protect a house against a modern-day burglar, passwords cannot protect accounts against common attacks we see today. While multi-factor authentication (MFA) was once a burdensome extra step, passwordless authentication improves the sign-in experience using biometric approaches that don’t require your users to remember or type a password. Additionally, a [Zero Trust](https://www.microsoft.com/security/business/zero-trust) infrastructure stores information about trusted devices, which reduce prompting for annoying out-of-band MFA actions.
+Just as antique skeleton keys won’t protect a house against a modern-day burglar, passwords cannot protect accounts against common attacks we see today. While multifactor authentication (MFA) was once a burdensome extra step, passwordless authentication improves the sign-in experience using biometric approaches that don’t require your users to remember or type a password. Additionally, a [Zero Trust](https://www.microsoft.com/security/business/zero-trust) infrastructure stores information about trusted devices, which reduce prompting for annoying out-of-band MFA actions.
 
 Starting with high-privilege administrator accounts, rigorously follow these best practices for account security including using passwordless or MFA.
 
@@ -157,7 +158,7 @@ Apply these best practices to protect your accounts from ransomware attackers.
 
 |Done|Task|Description|
 |---|---|---|
-|<input type="checkbox" />|Enforce strong MFA or passwordless sign-in for all users. Start with administrator and [priority](/microsoft-365/admin/setup/priority-accounts) accounts using one or more of: <br><br> - Passwordless authentication with [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) or the [Microsoft Authenticator app](/azure/active-directory/authentication/howto-authentication-phone-sign-in). <br><br> - [Azure Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-userstates). <br><br> - A third-party MFA solution.|Make it harder for an attacker to perform a credential compromise by just determining a user account password.|
+|<input type="checkbox" />|Enforce strong MFA or passwordless sign-in for all users. Start with administrator and [priority](/microsoft-365/admin/setup/priority-accounts) accounts using one or more of: <br><br> - Passwordless authentication with [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-identity-verification) or the [Microsoft Authenticator app](/azure/active-directory/authentication/howto-authentication-phone-sign-in). <br><br> - [Multifactor authentication](/azure/active-directory/authentication/howto-mfa-userstates). <br><br> - A third-party MFA solution.|Make it harder for an attacker to perform a credential compromise by just determining a user account password.|
 |<input type="checkbox" />|Increase password security: <br><br> - For Microsoft Entra accounts, use [Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad) to detect and block known weak passwords and additional weak terms that are specific to your organization. <br><br> - For on-premises Active Directory Domain Services (AD DS) accounts, [Extend Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises) to AD DS accounts.|Ensure that attackers can't determine common passwords or passwords based on your organization name.|
 |<input type="checkbox" />|Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](protect-against-ransomware-phase2.md#ransomware-detection-and-response)).|Reduces risk from ransomware activities that probe baseline security features and settings.|
 

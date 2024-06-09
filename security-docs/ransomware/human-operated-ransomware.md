@@ -1,7 +1,7 @@
 ---
-title: "Define ransomware, human-operated ransomware, and how to prevent ransomware cyber attack"
-ms.author: dansimp
-author: dansimp
+title: "What is ransomware?"
+ms.author: sarahkatz
+author: sarit1046
 manager: dansimp
 audience: Admin
 ms.service: microsoft-365-security
@@ -19,12 +19,12 @@ In practice, a *ransomware attack* blocks access to your data until a ransom is 
 
 In fact, ransomware is a type of malware or phishing cyber security attack that destroys or encrypts files and folders on a computer, server, or device.
 
-Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But, even when paid, cybercriminals *may never* give the key to the business or device owner, and stop access *permanently*.
+Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But even when paid, cybercriminals *might never* give the key to the business or device owner and stop access *permanently*.
 
 
 ## How do ransomware attacks work?
 
-Ransomware can be automated, or involve human hands on a keyboard--a *human operated* attack.
+Ransomware can be automated or involve human hands on a keyboard--a *human operated* attack, such as seen in recent attacks using [LockBit ransomware](/security/ransomware/human-operated-ransomware). 
 
 ### Automated ransomware attacks
 
@@ -82,7 +82,7 @@ Download the [Protect your organization from ransomware poster](https://download
 
 Key information from Microsoft:
 
-- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
+- [The latest ransomware trends from Microsoft](https://www.microsoft.com/en-us/security/blog/threat-intelligence/ransomware/), Microsoft On the Issues blog post on July 20, 2021
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023) 
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
@@ -128,7 +128,7 @@ For the latest list of ransomware articles in the Microsoft Security blog, click
   Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.
 
 - [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
-- [Defenders beware: A case for post-ransomware investigations(October 2023)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+- [Defenders beware: A case for post-ransomware investigations (October 2023)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 
   Recommendations and best practices.
 

@@ -38,7 +38,7 @@
 		<g id="shape2055-1" v:mID="2055" v:groupContext="shape" transform="translate(0.375,-0.375)">
 			<title>Sheet.2055</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(455000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(453000):26"/>
 			</v:userDefs>
 			<rect x="0" y="0.75" width="337.5" height="389.596" class="st1"/>
 		</g>
@@ -56,16 +56,16 @@
 			</v:userDefs>
 			<rect x="0" y="343.096" width="323.437" height="47.25" class="st3"/>
 		</g>
-		<g id="shape1809-7" v:mID="1809" v:groupContext="shape" transform="translate(13.4866,-341.077)">
+		<g id="shape1809-7" v:mID="1809" v:groupContext="shape" transform="translate(13.4866,-348.543)">
 			<title>Sheet.1809</title>
-			<desc>Entra ID (Tenant)</desc>
+			<desc>Microsoft Entra ID tenant</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(342000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
-			<v:textRect cx="58.0781" cy="366.721" width="116.16" height="47.25"/>
-			<rect x="0" y="343.096" width="116.156" height="47.25" class="st4"/>
-			<text x="11.81" y="377.52" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/><v:newlineChar/>Entra ID (Tenant)</text>		</g>
+			<v:textRect cx="90.2813" cy="378.422" width="180.57" height="23.8466"/>
+			<rect x="0" y="366.499" width="180.563" height="23.8466" class="st4"/>
+			<text x="4" y="389.22" class="st5" v:langID="1033"><v:paragraph/><v:tabList/><v:newlineChar/>Microsoft Entra ID tenant</text>		</g>
 		<g id="shape1810-10" v:mID="1810" v:groupContext="shape" v:layerMember="0" transform="translate(15.7229,-22.7412)">
 			<title>Sheet.1810</title>
 			<v:userDefs>

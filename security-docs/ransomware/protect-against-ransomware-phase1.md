@@ -13,6 +13,7 @@ ms.service: microsoft-365-security
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
+ms.localizationpriority:   # medium
 description: Prepare your organization so that you can recover from cybercriminal ransomware attacks without having to pay the ransom.
 
 
@@ -20,7 +21,7 @@ description: Prepare your organization so that you can recover from cybercrimina
 
 # Prepare a ransomware attack recovery plan
 
-One thing you *must* do in advance of a ransomware attack is prepare your organization so it has a alternative to paying a ransom.
+*Always* prepare an alternative to ransom payment to help avoid losing access to your data.
 
 > [!IMPORTANT]
 >  **Read the whole ransomware prevention series, and make your organization *hard to ransomware attack*.**
@@ -29,41 +30,37 @@ One thing you *must* do in advance of a ransomware attack is prepare your organi
 >- [A plan to limit the harm done](protect-against-ransomware-phase2.md)
 >- [Make it hard to get in](protect-against-ransomware-phase3.md)
 
-Cybercriminal ransomware attackers in control of your organization have many ways to pressure you into paying. The demands primarily focus on two categories:
+Ransomware actors in control of your organization have many ways to pressure you into paying. The demands primarily focus on two categories:
 
 - **Pay a ransom to regain access**
 
-  Attackers demand payment under the threat that they *won’t give you back access to your systems and data*. This is usually done by encrypting your systems and data and demanding payment for the decryption key. 
+  Threat actors demand payment under the threat that they *won’t give you back access to your systems and data*. This is usually done by encrypting your systems and data and demanding payment for the decryption key. 
 
   >[!Important]
-  >Paying the ransom isn’t as simple and clean of a solution as it may seem. 
-> Because you're dealing with cybercriminals that are only motivated by payment (and often relatively amateur operators who are using a toolkit provided by someone else), there is a lot of uncertainty around how well paying the ransom will actually work. 
-> There is no legal guarantee that they will provide a key that decrypts 100% of your systems and data, or even provide a key at all. The process to decrypt these systems uses homegrown attacker tools, which is often a clumsy and manual process.
+  >Paying the ransom won't guarantee restored access to your data. 
+> Financially motivated cybercriminals (and often relatively amateur operators who are using a toolkit provided by someone else), might keep both the payment locked files. 
+> There is no legal guarantee that they will provide a key that decrypts 100% of your systems and data, or even provide a key at all. The process to decrypt these systems uses homegrown attack tools, an often clumsy and manual process.
   >
 
 - **Pay to avoid disclosure**
 
-   Attackers demand payment in exchange for not releasing sensitive or embarrassing data to the dark web (other criminals) or the general public. 
+   Threat actors demand payment in exchange for not releasing sensitive or embarrassing data to the dark web (other criminals) or the general public. 
 
-To avoid being forced into payment (the profitable situation for attackers), the most immediate and effective action you can take is to make sure your organization can restore your entire enterprise from immutable storage, which neither the attacker nor you can modify. 
+To avoid being forced into payment (the profitable situation for threat actors), the most immediate and effective action you can take is to make sure your organization can restore your entire enterprise from immutable storage, which neither the cybercriminal nor you can modify. 
 
 Identifying the most sensitive assets and protecting them at a higher level of assurance is also critically important but is a longer and more challenging process to execute. We don’t want you to hold up other areas in phases 1 or 2, but we recommend you get the process started by bringing together business, IT, and security stakeholders to ask and answer questions like: 
 
-- What business assets would be the most damaging if compromised? For example, what assets would our business leadership be willing to pay an extortion demand if attackers controlled them? 
+- What business assets would be the most damaging if compromised? For example, for which assets would our business leadership be willing to pay an extortion demand if cybercriminals controlled them? 
 - How do these business assets translate to IT assets (such as files, applications, databases, servers, and control systems)?
-- How can we protect or isolate these assets so that attackers with access to the general IT environment can’t access them? 
+- How can we protect or isolate these assets so that threat actors with access to the general IT environment can’t access them? 
 
 ## Secure backups
 
-You must ensure that critical systems and their data are backed up and backups are protected against deliberate erasure or encryption by an attacker.
+You must ensure that critical systems and their data are backed up and backups are protected against deliberate erasure or encryption by a threat actor.
 
 Attacks on your backups focus on crippling your organization’s ability to respond without paying, frequently targeting backups and key documentation required for recovery to force you into paying extortion demands. 
 
 Most organizations don’t protect backup and restoration procedures against this level of intentional targeting. 
-
->[!Note]
->This preparation also improves resilience to natural disasters and rapid attacks like WannaCry and (Not)Petya.
->
 
 [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations.
 
@@ -90,8 +87,8 @@ Apply these best practices to secure your backup infrastructure.
 |:-------|:-------|:-----|
 | <input type="checkbox" /> | Backup all critical data automatically on a regular schedule. | Allows you to recover data up to the last backup. |
 | <input type="checkbox" /> | Regularly exercise your business continuity/disaster recovery (BC/DR) plan. | Ensures rapid recovery of business operations by treating a ransomware or extortion attack with the same importance as a natural disaster. |
-| <input type="checkbox" /> | Protect backups against deliberate erasure and encryption: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site. | Backups that are accessible by attackers can be rendered unusable for business recovery.  Implement stronger security to access backups and the inability to change the data stored in backups. |
-| <input type="checkbox" /> | Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | Attackers deliberately target these resources because it impacts your ability to recover. Make sure they survive a ransomware attack. |
+| <input type="checkbox" /> | Protect backups against deliberate erasure and encryption: <br><br> - Strong Protection – Require out of band steps (MFA or PIN) before modifying online backups (such as [Azure Backup](/azure/backup/backup-azure-security-feature#prevent-attacks)). <br><br> - Strongest Protection – Store backups in online immutable storage (such as [Azure Blob](/azure/storage/blobs/storage-blob-immutable-storage)) and/or fully offline or off-site. | Backups accessible by cybercriminals can be rendered unusable for business recovery.  Implement stronger security to access backups and the inability to change the data stored in backups. |
+| <input type="checkbox" /> | Protect supporting documents required for recovery such as restoration procedure documents, your configuration management database (CMDB), and network diagrams. | Threat actors deliberately target these resources because it impacts your ability to recover. Make sure they survive a ransomware attack. |
 
 
 ### Implementation results and timelines
@@ -100,9 +97,9 @@ Within 30 days, ensure that Mean Time to Recover (MTTR) meets your BC/DR goal, a
 
 ## Data protection
 
-You must implement data protection to ensure rapid and reliable recovery from a ransomware attack and to block some techniques of attackers.
+You must implement data protection to ensure rapid and reliable recovery from a ransomware attack and to block some attack techniques.
 
-Ransomware extortion and destructive attacks only work when all legitimate access to data and systems is lost. Ensuring that attackers cannot remove your ability to resume operations without payment will protect your business and undermine the monetary incentive for attacking your organization.
+Ransomware extortion and destructive attacks only work when all legitimate access to data and systems is lost. Ensuring that threat actors cannot remove your ability to resume operations without payment will protect your business and undermine the monetary incentive for attacking your organization.
 
 ### Program and project member accountabilities
 
@@ -142,12 +139,13 @@ Continue with [Phase 2](protect-against-ransomware-phase2.md) to limit the scope
 
 Key information from Microsoft:
 
-- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
+- [2023 Microsoft Digital Defense Report](https://www.microsoft.com/en-us/security/security-insider/microsoft-digital-defense-report- 
+  2023) (see pages 17-26)
+- [Microsoft Blog - Ransomware](https://www.microsoft.com/security/blog/threat-intelligence/ransomware/), Latest threats - Ransomware
 - [Human-operated ransomware](human-operated-ransomware.md)
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
-- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
-- Microsoft's Detection and Response Team (DART) ransomware [approach](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
+- Microsoft Incident Response team (formerly DART/CRSP) ransomware [approach](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
 
@@ -180,8 +178,6 @@ Microsoft Defender for Cloud Apps:
 Microsoft Security team blog posts:
 
 - [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
-
-  Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.
 
 - [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 

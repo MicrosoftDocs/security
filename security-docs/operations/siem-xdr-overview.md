@@ -4,7 +4,7 @@ description: Learn how to use Microsoft Sentinel with Microsoft Defender XDR and
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
-ms.date: 04/14/2024
+ms.date: 06/09/2024
 ms.topic: article
 ms.service: microsoft-365-zero-trust
 ms.collection: 
@@ -16,6 +16,7 @@ ms.collection:
 appliesto: 
     - Microsoft Sentinel in the Microsoft Defender portal
     - Microsoft Sentinel in the Azure portal
+ms.localizationpriority:   # medium
 ---
 
 <!---
@@ -77,7 +78,7 @@ In this diagram:
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="./media/sentinel-xdr.svg" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.svg" border="false":::
+:::image type="content" source="./media/sentinel-xdr.svg" alt-text="Diagram of the integration of Microsoft Sentinel and Microsoft XDR." lightbox="./media/sentinel-xdr.svg" border="false":::
 
 In this diagram:
 
@@ -104,7 +105,7 @@ In this section, we'll look into a typical attack scenario involving a phishing 
 
 The following diagram shows a common attack order of a phishing scenario.
 
-:::image type="content" source="./media/common-attack-defense.svg" alt-text="Image of a common attack scenario and defense from Microsoft security products" lightbox="./media/common-attack-defense.svg" border="false":::
+:::image type="content" source="./media/common-attack-defense.svg" alt-text="Diagram of a common attack scenario and defenses provided by Microsoft security products." lightbox="./media/common-attack-defense.svg" border="false":::
 
 The diagram also shows the Microsoft security products in place to detect each attack step and how attack signals and SIEM data flow to Microsoft Defender XDR and Microsoft Sentinel.
 
@@ -144,7 +145,7 @@ Here is the process of responding to an incident with Microsoft Defender XDR and
 
 The following diagram shows the process, starting with discovery and triage in Microsoft Sentinel.
 
-:::image type="content" source="./media/investigation-flow.svg" alt-text="Image of incident investigation using Sentinel and Microsoft Defender XDR" lightbox="./media/investigation-flow.svg":::
+:::image type="content" source="./media/investigation-flow.svg" alt-text="Diagram of performing incident investigation using Sentinel and Microsoft Defender XDR." lightbox="./media/investigation-flow.svg":::
 
 ---
 

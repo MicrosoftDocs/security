@@ -1,7 +1,7 @@
 ---
 title: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
 description: Learn how to resolve an incident using both Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. 
-ms.date: 04/14/2024
+ms.date: 06/09/2024
 ms.service: microsoft-365-zero-trust
 author: mjcaparas
 ms.author: macapara
@@ -19,9 +19,7 @@ appliesto:
 
 # Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
 
-This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution.
-
-Microsoft Sentinel and Microsoft Defender XDR share:
+This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR, which includes triage, investigation, and resolution. Microsoft Sentinel and Microsoft Defender XDR share:
 
 - Updates on lifecycle (status, owner, classification) are shared between the products.
 - Evidence gathered during an investigation is shown in the Microsoft Sentinel incident.
@@ -212,12 +210,12 @@ For example:
 
 ## [Defender portal](#tab/defender-portal)
 
-:::image type="content" source="media/example-resolving-incident-defender.png" alt-text="Example of resolving an incident in the Defender portal.":::
+:::image type="content" source="media/example-resolving-incident-defender.png" alt-text="Screenshot of resolving an incident in the Defender portal.":::
 
 For more information, see [Resolve an incident in the Defender portal](/microsoft-365/security/defender/manage-incidents#resolve-an-incident).
 ## [Azure portal](#tab/azure-portal)
 
-:::image type="content" source="media/example-resolving-incident.png" alt-text="Example of resolving an incident in Microsoft Sentinel.":::
+:::image type="content" source="media/example-resolving-incident.png" alt-text="Screenshot of resolving an incident in Microsoft Sentinel.":::
 
 For more information, see [Closing an incident in the Azure portal](/azure/sentinel/investigate-incidents#closing-an-incident).
 

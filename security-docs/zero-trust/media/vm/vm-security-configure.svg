@@ -42,7 +42,7 @@
 		<g id="shape2223-1" v:mID="2223" v:groupContext="shape" transform="translate(0.375,-0.375)">
 			<title>Sheet.2223</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(463000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(466000):26"/>
 			</v:userDefs>
 			<rect x="0" y="0.750016" width="555.84" height="373.32" class="st1"/>
 		</g>
@@ -62,14 +62,14 @@
 		</g>
 		<g id="shape2002-7" v:mID="2002" v:groupContext="shape" transform="translate(33.4274,-308.915)">
 			<title>Sheet.2002</title>
-			<desc>Entra ID tenant</desc>
+			<desc>Microsoft Entra ID tenant</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(343000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="77.3211" cy="350.445" width="154.65" height="47.25"/>
 			<rect x="0" y="326.82" width="154.642" height="47.25" class="st4"/>
-			<text x="36.18" y="354.05" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Entra ID tenant</text>		</g>
+			<text x="8.39" y="354.05" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Microsoft Entra ID tenant</text>		</g>
 		<g id="shape2003-10" v:mID="2003" v:groupContext="shape" v:layerMember="0" transform="translate(33.4274,-34.7549)">
 			<title>Sheet.2003</title>
 			<v:userDefs>

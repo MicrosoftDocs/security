@@ -1,7 +1,7 @@
 ---
 title: Step 2. Architect your Microsoft Sentinel workspace
 description: Learn how to design for and implement Zero Trust principles for your Microsoft Sentinel workspaces. 
-ms.date: 03/29/2023
+ms.date: 06/03/2024
 author: mjcaparas
 ms.author: macapara
 ms.topic: article
@@ -15,6 +15,7 @@ ms.collection:
 appliesto: 
     - Microsoft Sentinel in the Microsoft Defender portal
     - Microsoft Sentinel in the Azure portal
+ms.localizationpriority:   # medium
 ---
 
 # Step 2. Architect your Microsoft Sentinel workspace
@@ -27,9 +28,9 @@ This article provides recommendations on how to design and implement Microsoft S
 
 If your organization has many Azure subscriptions, you may need a way to efficiently manage access, policies, and compliance for those subscriptions. Management groups provide a governance scope for subscriptions. When you organize your subscriptions within management groups, the governance conditions you configure for a management group apply to the subscriptions it contains. For more information, see [Organize your resources with management groups](/azure/governance/management-groups/overview).
 
-For example, the Microsoft Sentinel workspace in the following diagram is in the **Security** subscription under the **Platform** management group, which is part of the Microsoft Entra tenant.
+For example, the Microsoft Sentinel workspace in the following diagram is in the **Security** subscription under the **Platform** management group, which is part of the Microsoft Entra ID tenant.
 
-:::image type="content" source="./media/sentinel-workspaces.svg" alt-text="Example of a Microsoft Sentinel workspace in a Microsoft Entra tenant." lightbox="./media/sentinel-workspaces.svg":::
+:::image type="content" source="./media/sentinel-workspaces.svg" alt-text="Diagram of an example Microsoft Sentinel workspace in a Microsoft Entra ID tenant." lightbox="./media/sentinel-workspaces.svg":::
 
 The Security Azure subscription and the Microsoft Sentinel workspace inherit the role-based access control (RBAC) and Azure policies that are applied to the Platform management group.
 
@@ -37,7 +38,7 @@ The Security Azure subscription and the Microsoft Sentinel workspace inherit the
 
 To use Microsoft Sentinel, the first step is to create your Log Analytics workspaces. A single Log Analytics workspace might be sufficient for many environments, but many organizations create multiple workspaces to optimize costs and better meet different business requirements.
 
-It is a best practice to create separate workspaces for the operational and security data for data ownership and cost management for Microsoft Sentinel. For example, if there’s more than one person administering operational and security roles, your first decision for Zero Trust is whether to create separate workspaces for those roles.
+It's a best practice to create separate workspaces for the operational and security data for data ownership and cost management for Microsoft Sentinel. For example, if there’s more than one person administering operational and security roles, your first decision for Zero Trust is whether to create separate workspaces for those roles.
 
 The unified security operations platform, which provides access to Microsoft Sentinel in the Defender portal, supports only a single workspace.
 
@@ -70,9 +71,7 @@ Onboarding Microsoft Sentinel requires selecting a Log Analytics workspace. The 
 This automatically gives you [31 days of data ingestion up to 10 Gb a day](/azure/sentinel/billing?tabs=commitment-tier#free-trial) free as part of a free trial. 
 - Set your Log Analytics Workspace supporting Microsoft Sentinel to [90 day retention](/azure/sentinel/billing?tabs=commitment-tier#data-retention-and-archived-logs-costs) at a minimum.
 
-Once you onboard Microsoft Sentinel to a Log Analytics workspace, you get 90 days of data retention at no additional cost. You will incur costs for the total amount of data in the workspace after 90 days. Setting it to 90 days ensures a 90-day rollover of log data. You may consider retaining log data for longer based on governmental requirements.
-
-For more information, see [Create Log Analytics workspaces](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal) and [Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard).
+Once you onboard Microsoft Sentinel to a Log Analytics workspace, you get 90 days of data retention at no additional cost. You'll incur costs for the total amount of data in the workspace after 90 days. Setting it to 90 days ensures a 90-day rollover of log data. You might consider retaining log data for longer based on governmental requirements. For more information, see [Create Log Analytics workspaces](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal) and [Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard).
 
 ### Zero Trust with Microsoft Sentinel
 
@@ -104,9 +103,9 @@ For more information, see [Roles and permissions in Microsoft Sentinel](/azure/s
 
 ### Zero Trust in multi-tenant architectures with Azure Lighthouse
 
-Azure Lighthouse enables multi-tenant management with scalability, higher automation, and enhanced governance across resources. With Azure Lighthouse you can manage multiple Microsoft Sentinel instances across Microsoft Entra tenants at scale. Here’s an example.
+Azure Lighthouse enables multitenant management with scalability, higher automation, and enhanced governance across resources. With Azure Lighthouse you can manage multiple Microsoft Sentinel instances across Microsoft Entra tenants at scale. Here’s an example.
 
-:::image type="content" source="./media/sentinel-workspaces-multi-tenant.svg" alt-text="Example of using Azure Lighthouse across multiple Microsoft Entra tenants." lightbox="./media/sentinel-workspaces-multi-tenant.svg":::
+:::image type="content" source="./media/sentinel-workspaces-multi-tenant.svg" alt-text="Diagram of an example use of Azure Lighthouse across multiple Microsoft Entra tenants." lightbox="./media/sentinel-workspaces-multi-tenant.svg":::
 
 With Azure Lighthouse, you can run queries across multiple workspaces or create workbooks to visualize and monitor data from your connected data sources and gain additional insight. It’s important to consider Zero Trust principles. See [Recommended security practices](/azure/lighthouse/concepts/recommended-security-practices) to implement least privileges access controls for Azure Lighthouse.
 

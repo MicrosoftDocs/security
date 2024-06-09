@@ -42,7 +42,7 @@ Microsoft recommends enabling the components of Microsoft 365 Defender in the fo
 | Phase | Link |
 |---|---|
 | A. Start the pilot | [Start the pilot](/defender-xdr/pilot-deploy-overview#start-the-pilot)|
-| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity) <br><br> - [Pilot and deploy  Defender for Office 365](/defender-xdr/pilot-deploy-defender-office-365) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-xdr/(pilot-deploy-defender-endpoint) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps)  |
+| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity) <br><br> - [Pilot and deploy Defender for Office 365](/defender-xdr/pilot-deploy-defender-office-365) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-xdr/(pilot-deploy-defender-endpoint) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps) |
 |C. Investigate and respond to threats | [Practice incident investigation and response](/defender-xdr/pilot-deploy-investigate-respond) |
 
 This order is designed to leverage the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Prioritize the components to meet your business needs.
@@ -75,14 +75,10 @@ Microsoft Entra ID Protection is separate from Microsoft Defender XDR and is inc
 
 Microsoft Entra ID Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Microsoft Entra ID to allow or prevent account access, depending on how Conditional Access policies are configured.  
 
-If you aren't going onboard your Microsoft Sentinel workspace to the unified security operations platform, we recommend that you also ingest the signals from Microsoft Entra ID Protection into Microsoft Sentinel. To enable Microsoft Entra ID Protection, use the following resources.
-
-|       Task  |     Description  |     See . . .  |
-|:---|:---|:---|
-| Integrate Microsoft Entra ID Protection with Defender for Cloud Apps  | Microsoft Defender for Cloud Apps integrates with Microsoft Entra ID Protection to provide user entity behavioral analytics (UEBA) across a hybrid environment. | [Microsoft Entra ID Protection](/defender-cloud-apps/aadip-integration) 
-
+If you aren't going onboard your Microsoft Sentinel workspace to the unified security operations platform, we recommend that you also ingest the signals from Microsoft Entra ID Protection into Microsoft Sentinel. To enable Microsoft Entra ID Protection, see [Microsoft Entra ID Protection](/defender-cloud-apps/aadip-integration).
 
 ## Enable Microsoft Defender for Cloud
+
 You can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include Defender for Cloud signals in your Microsoft Sentinel workspace.  
 
 <!---

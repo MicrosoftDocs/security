@@ -24,18 +24,18 @@ This article provides a general set of steps and procedures to resolve an incide
 - Updates on lifecycle (status, owner, classification) are shared between the products.
 - Evidence gathered during an investigation is shown in the Microsoft Sentinel incident.
 
-The following diagrams show how Microsoft’s extended detection and response (XDR) solution seamlessly integrates with Microsoft Sentinel, depending on whether you onboarded your Microsoft Sentinel workspace to the unified security operations platform in the Microsoft Defender portal.
+The following illustrations show how Microsoft’s extended detection and response (XDR) solution seamlessly integrates with Microsoft Sentinel, depending on whether you onboarded your Microsoft Sentinel workspace to the unified security operations platform in the Microsoft Defender portal.
 
 ## [Defender portal](#tab/defender-portal)
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel with the unified security operations platform.
 
-:::image type="content" source="./media/sentinel-xdr-usx.png" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr-usx.png" border="false":::
+:::image type="content" source="./media/sentinel-xdr-usx.png" alt-text="Diagram of the Microsoft solution for XDR with Microsoft Sentinel and the unified security operations platform." lightbox="./media/sentinel-xdr-usx.png" border="false":::
 
 In this diagram:
 
 - Insights from signals across your entire organization feed into Microsoft Defender XDR and Microsoft Defender for Cloud.
-- Microsoft Sentinel provides support for multi-cloud environments and integrates with third-party apps and partners.
+- Microsoft Sentinel provides support for multicloud environments and integrates with third-party apps and partners.
 - Microsoft Sentinel data is ingested together with your organization's data into the Microsoft Defender portal.
 - SecOps teams can then analyze and respond to threats identified by Microsoft Sentinel and Microsoft Defender XDR in the Microsoft Defender portal.
 
@@ -43,7 +43,7 @@ In this diagram:
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="./media/sentinel-xdr.png" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr.png" border="false":::
+:::image type="content" source="./media/sentinel-xdr.png" alt-text="Diagram of the Microsoft solution for XDR with Microsoft Sentinel" lightbox="./media/sentinel-xdr.png" border="false":::
 
 In this diagram:
 
@@ -105,7 +105,7 @@ For more information, see:
 
 1. Resolve the incident in the Microsoft Sentinel portal and perform appropriate follow-up within your security team.
 
-:::image type="content" source="media/incident-reponse-process.png" alt-text="The four-step incident response process and which portal you need to use.":::
+:::image type="content" source="media/incident-reponse-process.png" alt-text="Diagram of the four-step incident response process and which portal you need to use.":::
 
 For more information, see [Navigate and investigate incidents in Microsoft Sentinel](/azure/sentinel/investigate-incidents).
 

@@ -52,7 +52,7 @@ For a single tenant, there are two ways Microsoft Sentinel workspaces can be con
 
     |Advantages  |Disadvantages  |
     |---------|---------|
-    |- Central consolidation of logs. <br><br>- Easier to query information. <br><br>- Azure role-based access control (Azure RBAC) to control access to Log Analytics and Microsoft Sentinel. For more information, see [Manage access to Log Analytics workspaces - Azure Monitor](/azure/azure-monitor/logs/manage-access?tabs=portal), and [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles).     |  - May not meet governance requirements. <br><br>- There is a bandwidth cost between regions.       |
+    |- Central consolidation of logs. <br><br>- Easier to query information. <br><br>- Azure role-based access control (Azure RBAC) to control access to Log Analytics and Microsoft Sentinel. For more information, see [Manage access to Log Analytics workspaces - Azure Monitor](/azure/azure-monitor/logs/manage-access?tabs=portal), and [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles).     |  - May not meet governance requirements. <br><br>- There's a bandwidth cost between regions.       |
 
 - **Single tenant with regional Log Analytics workspaces.** 
 
@@ -101,7 +101,7 @@ When you assign Microsoft Sentinel-specific Azure roles, you may come across oth
 
 For more information, see [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles) and [Manage access to Microsoft Sentinel data by resource](/azure/sentinel/resource-context-rbac).
 
-### Zero Trust in multi-tenant architectures with Azure Lighthouse
+### Zero Trust in multitenant architectures with Azure Lighthouse
 
 Azure Lighthouse enables multitenant management with scalability, higher automation, and enhanced governance across resources. With Azure Lighthouse you can manage multiple Microsoft Sentinel instances across Microsoft Entra tenants at scale. Here’s an example.
 

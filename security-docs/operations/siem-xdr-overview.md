@@ -192,7 +192,7 @@ This solution steps you through the implementation of Microsoft Sentinel and XDR
 
 ## Recommended training
 
-Training content focuses on general availability features, and therefore doesn't include content for the unified security operations platform, which is in Preview.
+Training content doesn't currently cover the unified security operations platform.
 
 |Training |[Connect Microsoft Defender XDR to Microsoft Sentinel](/training/modules/connect-microsoft-defender-365-to-azure-sentinel/)|
 |---------|---------|

@@ -59,7 +59,7 @@ steps you through detecting and responding to modern attacks with Microsoft’s 
 
 ## Incident response process
 
-The process of incident response to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR is differs, depending on whether you onboarded your workspace to the unified security operations platform, and can access Microsoft Sentinel in the Defender portal.
+The process of incident response to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR differs, depending on whether you onboarded your workspace to the unified security operations platform, and can access Microsoft Sentinel in the Defender portal.
 
 ## [Defender portal](#tab/defender-portal)
 
@@ -88,7 +88,7 @@ For more information, see:
 
 ## [Azure portal](#tab/azure-portal)
 
-1. Use Microsoft Sentinel portal to triage the potential incident, which includes understanding the details of the incident and taking immediate actions.
+1. Use Microsoft Sentinel in the Azure portal to triage the potential incident, which includes understanding the details of the incident and taking immediate actions.
 
 1. Move over to the Microsoft Defender portal to begin your investigation. This includes:
 
@@ -111,7 +111,7 @@ For more information, see [Navigate and investigate incidents in Microsoft Senti
 
 ---
 
-Make sure to take advantage of Microsoft Sentinel's playbook and automation rule functionality:
+Regardless of which portal you use, make sure to take advantage of Microsoft Sentinel's playbook and automation rule functionality:
 
 - **A playbook** is a collection of investigation and remediation actions that can be run from the Microsoft Sentinel portal as a routine. Playbooks can help automate and orchestrate your threat response. They can be run manually on-demand on incidents, entities, and alerts, or set to run automatically in response to specific alerts or incidents, when triggered by an automation rule. For more information, see [Automate threat response with playbooks](/azure/sentinel/automate-responses-with-playbooks).
 
@@ -122,7 +122,7 @@ After onboarding your Microsoft Sentinel workspace to the unified security opera
 
 ## Step 1: Triage the incident
 
-Use these steps as a general method to triage the incident with Microsoft Sentinel and Microsoft Defender XDR. If your workspace isn't onboarded to the unified security operations platform, use the Azure portal.
+Use these steps as a general method to triage the incident with Microsoft Sentinel and Microsoft Defender XDR. If you've onboarded your workspace to the unified security operations platform, use the Defender portal. Otherwise, use the Azure portal.
 
 ## [Defender portal](#tab/defender-portal)
 
@@ -150,7 +150,7 @@ To investigate incidents in the Azure portal:
 
 ## Step 2: Investigate the incident
 
-If your workspace isn't onboarded to the unified security operations platform, start in the Azure portal. You'll jump over to the Defender portal for some investigation, and then return to the Azure portal.
+If your workspace is onboarded to the unified security operations platform, you'll stay in the Defender portal for this entire step. Otherwise, start in the Azure portal. You'll jump over to the Defender portal for some investigation, and then return to the Azure portal.
 
 ## [Defender portal](#tab/defender-portal)
 
@@ -221,7 +221,7 @@ For more information, see [Closing an incident in the Azure portal](/azure/senti
 
 ---
 
-As needed, report the incident to your incident response lead for possible follow-up to determine additional actions, such as:
+As needed, report the incident to your incident response lead for possible follow-up to determine additional actions. For example:
 
 - Inform your Tier 1 security analysts to better detect the attack early.
 - Research the attack in Microsoft Defender XDR Threat Analytics and the security community for a security attack trend.

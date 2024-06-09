@@ -194,7 +194,7 @@ The [MITRE Att&ck research department](https://attack.mitre.org/matrices/enterpr
 
 ## Recommended training
 
-Training content focuses on general availability features, and therefore doesn't include content for the unified security operations platform, which is in Preview.
+Training content doesn't currently cover the unified security operations platform.
 
 ### Connect data to Microsoft Sentinel using data connectors
 

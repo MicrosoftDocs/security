@@ -151,7 +151,7 @@ For more information, see:
 
 ## Recommended training
 
-The following are the recommended training modules for this step. Training content focuses on general availability features, and therefore doesn't include content for the unified security operations platform, which is in Preview.
+Training content doesn't currently cover the unified security operations platform.
 
 ### Introduction to Microsoft Sentinel
 

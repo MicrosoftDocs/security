@@ -64,7 +64,7 @@ This solution guide provides information for both methods. Throughout this solut
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel with the unified security operations platform.
 
-:::image type="content" source="./media/sentinel-xdr-usx.svg" alt-text="Image of a Microsoft Sentinel and XDR" lightbox="./media/sentinel-xdr-usx.svg" border="false":::
+:::image type="content" source="./media/sentinel-xdr-usx.png" alt-text="Diagram of a Microsoft Sentinel and Microsoft Defender XDR architecture with the unified security operations platform." lightbox="./media/sentinel-xdr-usx.png" border="false":::
 
 In this diagram:
 
@@ -78,7 +78,7 @@ In this diagram:
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="./media/sentinel-xdr.svg" alt-text="Diagram of the integration of Microsoft Sentinel and Microsoft XDR." lightbox="./media/sentinel-xdr.svg" border="false":::
+:::image type="content" source="./media/sentinel-xdr.png" alt-text="Diagram of the integration of Microsoft Sentinel and Microsoft XDR." lightbox="./media/sentinel-xdr.png" border="false":::
 
 In this diagram:
 
@@ -133,6 +133,8 @@ Select the relevant tab for your workspace depending on whether you onboarded yo
 After integrating Microsoft Sentinel and Microsoft Defender XDR by onboarding your workspace to the unified security operations platform, complete all incident response steps directly in the Microsoft Defender portal, just as you would for other Microsoft Defender XDR incidents. Supported steps include everything from  triage to investigation and resolution.
 
 Use the Microsoft Sentinel area in the Microsoft Defender portal for features unavailable with the Defender portal alone.
+
+
 
 ## [Azure portal](#tab/azure-portal)
 

@@ -54,15 +54,15 @@ This article provides guidance for applying the [principles of Zero Trust](zero-
 
 This article is a part of a [series of articles](azure-networking-overview.md) that demonstrate how to apply the principles of Zero Trust to Azure networking.
 
-The types of network traffic inspection covered in this article are:
+The types of network traffic covered in this article are:
 
 - Centralized
-- East-west (traffic flows from virtual network [VNet]-to-VNet and VNet-to-on-premises)
-- North-south (traffic flows from private networks to and from the Internet)
+- East-west traffic, which are traffic flows between your Azure virtual networks (VNets) and your Azure services and on-premises network
+- North-south, which are traffic flows between your Azure environment and the Internet
 
 ## Reference architecture
 
-The following diagram shows the reference architecture for this Zero Trust guidance for traffic inspection between on-premises and Azure VNets, within Azure VNets, and between Azure VNets and the Internet.
+The following diagram shows the reference architecture for this Zero Trust guidance for traffic inspection between on-premises and Azure VNets, between Azure VNets and Azure services, and between your Azure environment and the Internet.
 
 :::image type="content" source="media/azure-networking/azure-networking-visibility-reference-architecture.svg" alt-text="Diagram showing the reference architecture and east-west and north-south traffic flows." lightbox="media/azure-networking/azure-networking-visibility-reference-architecture.svg":::
 
@@ -70,7 +70,7 @@ This reference architecture includes:
 
 - Azure IaaS workloads running on Azure virtual machines.
 - Azure services.
-- An internet edge VNet that contains [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview), an [Azure Firewall](/azure/firewall/overview), and an [Azure Web Application Firewall](/azure/web-application-firewall/overview) (WAF).
+- An Internet edge VNet that contains [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview), an [Azure Firewall](/azure/firewall/overview), and an [Azure Web Application Firewall](/azure/web-application-firewall/overview) (WAF).
 - Arrows showing east-west and north-south traffic flows.
 
 ## What’s in this article?
@@ -85,7 +85,7 @@ Zero Trust principles are applied across the reference architecture. The followi
 
 ## Step 1: Implement a centralized traffic inspection point
 
-Centralized traffic inspection gives you the ability to control and visualize the traffic going in and out of your network. Hub and spoke VNets and [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) are the two most common network topologies in Azure. They have different capabilities and features in how they connect networks. In both designs, the hub VNet is the central network and is used to split workloads into applications and workloads from the hub VNet to spoke VNets. The centralized inspection includes traffic that flows north-south, east-west, or both.
+Centralized traffic inspection gives you the ability to control and visualize the traffic going in and out of your network. [Hub and spoke VNets](/azure/architecture/networking/architecture/hub-spoke) and [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) are the two most common network topologies in Azure. They have different capabilities and features in how they connect networks. In both designs, the hub VNet is the central network and is used to split workloads into applications and workloads from the hub VNet to spoke VNets. The centralized inspection includes traffic that flows north-south, east-west, or both.
 
 ### Hub and spoke topology
 
@@ -117,7 +117,7 @@ Each design carries its own advantages and disadvantages. The appropriate choice
 
 ## Step 2: Implement east-west traffic inspection
 
-East-west traffic flows include VNet-to-VNet and VNet-to-on-premises. To inspect traffic between east-west, you can deploy an Azure Firewall or an NVA in the hub virtual network. This requires User Defined Routes (UDR) to direct private traffic to the Azure Firewall or NVA for inspection. Within the same VNet you can utilize network security groups for access control, but if you need deeper control with inspection you can use a local firewall or a centralized firewall in the hub virtual network with the use of UDRs.
+East-west traffic flows include VNet-to-VNet and VNet-to-on-premises. To inspect traffic between east-west, you can deploy an Azure Firewall or an NVA in the hub virtual network. This requires UDRs to direct private traffic to the Azure Firewall or NVA for inspection. Within the same VNet you can utilize network security groups for access control, but if you need deeper control with inspection you can use a local firewall or a centralized firewall in the hub virtual network with the use of UDRs.
 
 With Azure Virtual WAN, you can have the Azure Firewall or an NVA inside the virtual hub for centralized routing. You can utilize [Azure Firewall Manager](/azure/firewall-manager/overview) or routing intent to inspect all private traffic. If you want to customize inspection, you can have the Azure Firewall or NVA in the virtual hub to inspect desired traffic. The easiest way to direct traffic in a Virtual WAN environment is to enable routing intent for private traffic. This feature pushes private address prefixes (RFC 1918) to all spokes connected to the hub. Any traffic destined to a private IP address will be directed to the virtual hub for inspection.
 
@@ -135,14 +135,14 @@ To see more details about your VNet traffic flows, you can enable [VNet flow log
 
 ## Step 3: Implement north-south traffic inspection
 
-North-south traffic typically includes traffic between private networks and the internet. To inspect north-south traffic in a hub and spoke topology, you can utilize UDRs to direct the traffic to an Azure Firewall instance or an NVA. For dynamic advertisement, you can use an [Azure Route Server](/azure/route-server/overview) with an NVA that supports BGP to direct all internet-bound traffic from VNets to the NVA.
+North-south traffic typically includes traffic between private networks and the Internet. To inspect north-south traffic in a hub and spoke topology, you can utilize UDRs to direct the traffic to an Azure Firewall instance or an NVA. For dynamic advertisement, you can use an [Azure Route Server](/azure/route-server/overview) with an NVA that supports BGP to direct all Internet-bound traffic from VNets to the NVA.
 
 In Azure Virtual WAN, to direct north-south traffic from the VNets to the Azure Firewall or NVA supported in virtual hub, you can use these common scenarios:
 
 - Use an NVA or Azure Firewall in the [virtual hub that is controlled with Routing-Intent](/azure/virtual-wan/how-to-routing-policies) or with Azure Firewall Manager to direct north-south traffic.
 - If your NVA isn’t supported inside the virtual hub, you can deploy it in a spoke VNet and direct the traffic with UDRs for inspection. The same applies to Azure Firewall. Alternatively, you can also BGP peer an NVA in a spoke with the virtual hub to advertise a default route (0.0.0.0/0).
 
-The following diagram shows north-south traffic between the Azure environment and the Internet.
+The following diagram shows north-south traffic between an Azure environment and the Internet.
 
 :::image type="content" source="media/azure-networking/azure-networking-visibility-north-south.svg" alt-text="Diagram showing the reference architecture and north-south traffic between the Azure environment and the Internet." lightbox="media/azure-networking/azure-networking-visibility-north-south.svg":::
 
@@ -156,7 +156,7 @@ Azure DDoS Protection can be enabled on any VNet that has public IP resources to
 
 Azure Firewall provides a collection of tools to monitor, audit, and analyze network traffic. 
 
-- Logs and Metrics
+- Logs and metrics
 
   Azure Firewall collects detailed logs by integrating with Azure Log Analytics workspaces. You can use Kusto Query Language (KQL) queries to extract extra information on major categories of rules, such as application and networking rules. You can also retrieve logs that are resource-specific that expand on schemas and structures from the networking level to threat intelligence and IDPS logs. For more information, see [Azure Firewall structured logs](/azure/firewall/firewall-structured-logs).
 
@@ -164,7 +164,7 @@ Azure Firewall provides a collection of tools to monitor, audit, and analyze net
 
   Azure Firewall provides workbooks that present data collected using graphs of activity over time. This tool also helps you visualize multiple Azure Firewall resources by combining them into a unified interface. For more information, see [Using Azure Firewall Workbooks](/azure/firewall/firewall-workbook).
 
-- Policy Analytics
+- Policy analytics
 
   Azure Firewall Policy Analytics provides an overview of the policies you implemented and based on the policy insights, rule analytics, and traffic flow analytics, it tunes and modifies the implemented policies to adjust to traffic patterns and threats. For more information, see [Azure Firewall Policy Analytics](/azure/firewall/policy-analytics).
 

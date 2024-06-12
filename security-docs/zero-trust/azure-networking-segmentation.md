@@ -44,7 +44,7 @@ Additional authors:
 
 --->
 
-This article provides guidance to applying the [principles of Zero Trust](zero-trust-overview.md) for segmenting networks in Azure environments. Here are the Zero Trust principles.
+This article provides guidance for applying the [principles of Zero Trust](zero-trust-overview.md) for segmenting networks in Azure environments. Here are the Zero Trust principles.
 
 | Zero Trust principle | Definition |
 | --- | --- |

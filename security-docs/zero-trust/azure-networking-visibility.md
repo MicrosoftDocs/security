@@ -64,7 +64,7 @@ The types of network traffic inspection covered in this article are:
 
 The following diagram shows the reference architecture for this Zero Trust guidance for traffic inspection between on-premises and Azure VNets, within Azure VNets, and between Azure VNets and the Internet.
 
-:::image type="content" source="media/azure-networking/azure-networking-visibility-reference-architecture.svg" alt-text="Diagram showing the reference architecture and east-west and north-south traffic flows." lightbox="media/azure-networking/azure-networking-visibility-reference-archchitecture.svg":::
+:::image type="content" source="media/azure-networking/azure-networking-visibility-reference-architecture.svg" alt-text="Diagram showing the reference architecture and east-west and north-south traffic flows." lightbox="media/azure-networking/azure-networking-visibility-reference-architecture.svg":::
 
 This reference architecture includes:
 
@@ -158,15 +158,15 @@ Azure Firewall provides a collection of tools to monitor, audit, and analyze net
 
 - Logs and Metrics
 
-  - Azure Firewall collects detailed logs by integrating with Azure Log Analytics workspaces. You can use Kusto Query Language (KQL) queries to extract extra information on major categories of rules, such as application and networking rules. You can also retrieve logs that are resource-specific that expand on schemas and structures from the networking level to threat intelligence and IDPS logs. For more information, see [Azure Firewall structured logs](/azure/firewall/firewall-structured-logs).
+  Azure Firewall collects detailed logs by integrating with Azure Log Analytics workspaces. You can use Kusto Query Language (KQL) queries to extract extra information on major categories of rules, such as application and networking rules. You can also retrieve logs that are resource-specific that expand on schemas and structures from the networking level to threat intelligence and IDPS logs. For more information, see [Azure Firewall structured logs](/azure/firewall/firewall-structured-logs).
 
 - Workbooks
 
-  - Azure Firewall provides workbooks that present data collected using graphs of activity over time. This tool also helps you visualize multiple Azure Firewall resources by combining them into a unified interface. For more information, see [Using Azure Firewall Workbooks](/azure/firewall/firewall-workbook).
+  Azure Firewall provides workbooks that present data collected using graphs of activity over time. This tool also helps you visualize multiple Azure Firewall resources by combining them into a unified interface. For more information, see [Using Azure Firewall Workbooks](/azure/firewall/firewall-workbook).
 
 - Policy Analytics
 
-  - Azure Firewall Policy Analytics provides an overview of the policies you implemented and based on the policy insights, rule analytics, and traffic flow analytics, it tunes and modifies the implemented policies to adjust to traffic patterns and threats. For more information, see [Azure Firewall Policy Analytics](/azure/firewall/policy-analytics).
+  Azure Firewall Policy Analytics provides an overview of the policies you implemented and based on the policy insights, rule analytics, and traffic flow analytics, it tunes and modifies the implemented policies to adjust to traffic patterns and threats. For more information, see [Azure Firewall Policy Analytics](/azure/firewall/policy-analytics).
 
 These capabilities ensure that Azure Firewall remains a robust solution for securing network traffic by providing administrators with the tools needed for effective network management.
 
@@ -194,13 +194,9 @@ For comprehensive monitoring of north-south traffic flows, you can use tools suc
 
 - [Configure and manage virtual networks for Azure administrators](/training/paths/azure-administrator-manage-virtual-networks/)
 - [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/)
-- [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/)
+- [Introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/)
 - [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/)
 - [Introduction to Azure Application Gateway](/training/modules/intro-to-azure-application-gateway/)
-- [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/)
-- [Introduction to Azure Private Link](/training/modules/introduction-azure-private-link/)
-- [Introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/)
-- [Connect your on-premises network to Azure with VPN Gateway](/training/modules/connect-on-premises-network-with-vpn-gateway/)
 
 ## Next Steps
 

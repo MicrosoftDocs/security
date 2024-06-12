@@ -279,7 +279,6 @@ This table summarizes the different levels of segmentation and security methods.
 - [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/)
 - [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/)
 - [Introduction to Azure Application Gateway](/training/modules/intro-to-azure-application-gateway/)
-- [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/)
 - [Introduction to Azure Private Link](/training/modules/introduction-azure-private-link/)
 - [Introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/)
 - [Connect your on-premises network to Azure with VPN Gateway](/training/modules/connect-on-premises-network-with-vpn-gateway/)

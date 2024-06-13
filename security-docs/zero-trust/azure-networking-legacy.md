@@ -60,11 +60,11 @@ The Azure networking areas to review to discontinue the use of legacy network se
 - Hybrid connectivity services
 - Load balancing and content delivery services
 
-The transition away from using legacy network security technologies can prevent an attacker from accessing environments or moving across them to inflict additional damage (the Assume breach Zero Trust principle).
+The transition away from using legacy network security technologies can prevent an attacker from accessing environments or moving across them to inflict additional damage (the **Assume breach** Zero Trust principle).
 
 ## Reference architecture
 
-The following diagram shows the reference architecture for this Zero Trust guidance for discontinuing legacy network security technology for users and admins on-premises or on the Internet and components in the Azure environment for the steps described in this article.
+The following diagram shows the reference architecture for this Zero Trust guidance for discontinuing legacy network security technology for components in your Azure environment.
 
 :::image type="content" source="media/azure-networking/azure-networking-legacy-reference-architecture.svg" alt-text="Diagram showing the reference architecture for discontinuing legacy network security technology with Azure networking components." lightbox="media/azure-networking/azure-networking-legacy-reference-architecture.svg":::
 
@@ -78,7 +78,7 @@ This reference architecture includes:
 
 ## What's in this article?
 
-Zero Trust principles are applied across the reference architecture, from users and admins on the Internet or your on-premises network to and within the Azure cloud. The following table describes the recommendations for discontinuing legacy network security technology across this architecture for the Assume breach Zero Trust principle.
+You apply Zero Trust principles across the reference architecture, from users and admins on the Internet or your on-premises network to and within your Azure environment. The following table describes the recommendations for discontinuing legacy network security technology across this architecture for the **Assume breach** Zero Trust principle.
 
 | Step | Task |
 | --- | --- |
@@ -101,7 +101,7 @@ This diagram shows the components for updating Azure network foundation services
 
 IP addresses (public and private) are part of the IP services in Azure that enable communication among private and public resources. Public IPs are linked to services like VNet gateways, application gateways, and others that need outbound connectivity to the Internet. Private IPs enable communication between Azure resources internally. 
 
-The Basic Public IP SKU is seen as legacy today and has more limitations than Standard Public IP SKU. One of the major limitations for Zero trust for the Basic Public IP SKU is that the use of network security groups is not required but recommended, while it is mandatory with the Standard Public IP SKU.
+The Basic Public IP SKU is seen as legacy today and has more limitations than Standard Public IP SKU. One of the major limitations for Zero Trust for the Basic Public IP SKU is that the use of network security groups isn't required but recommended, while it's mandatory with the Standard Public IP SKU.
 
 Another important feature for the Standard Public IP SKU is the ability to select a Routing Preference, such as routing through the Microsoft global network. This feature secures traffic within the Microsoft backbone network whenever possible and outbound traffic exits as close to the service or end-user as possible.
 
@@ -109,9 +109,9 @@ For more information, see [Azure Virtual Network IP Services](/azure/virtual-net
 
 ### Default outbound access
 
-By default, Azure provides outbound access to the Internet. This means that connectivity from the resources is granted by default by the system routes and by the default outbound rules for the network security groups in place. In other words, if no explicit outbound connectivity method is configured, Azure configures a default outbound access IP address. However, without explicit outbound access, certain security risks arise.
+By default, Azure provides outbound access to the Internet. Connectivity from the resources is granted by default with the system routes and by the default outbound rules for the network security groups in place. In other words, if no explicit outbound connectivity method is configured, Azure configures a default outbound access IP address. However, without explicit outbound access, certain security risks arise.
 
-Microsoft recommends that you do not leave a virtual machine IP address open to Internet traffic. There is no control over the default outbound IP access and IP addresses, along with their dependencies, can change. For virtual machines equipped with multiple network interface cards (NICs), it is not recommended to allow all NIC IP addresses to have Internet outbound access. Instead, you should restrict access to the necessary NICs.
+Microsoft recommends that you do not leave a virtual machine IP address open to Internet traffic. There's no control over the default outbound IP access and IP addresses, along with their dependencies, can change. For virtual machines equipped with multiple network interface cards (NICs), it isn't recommended to allow all NIC IP addresses to have Internet outbound access. Instead, you should restrict access to the necessary NICs.
 
 Microsoft recommends that you set up explicit outbound access with one of the following options:
 
@@ -147,13 +147,13 @@ Azure Front Door has three different tiers: Premium, Standard, and Classic. Stan
 
 Microsoft recommends migrating your classic Azure Front Door profiles to the Premium or Standard tiers to enjoy these new features and updates. The Premium tier focuses on improved security features such as private connectivity to your backend services, Microsoft managed WAF rules, and bot protection for your web applications.
 
-In addition to the improved features, Azure Front Door Premium includes security reports that are built into the service at no extra cost. These reports will help you analyze the WAF security rules and see what kind of attacks your web applications could face. The security report also lets you examine metrics by different dimensions, which helps you understand where traffic comes from and a breakdown of top events by criteria.
+In addition to the improved features, Azure Front Door Premium includes security reports that are built into the service at no extra cost. These reports help you analyze the WAF security rules and see what kind of attacks your web applications could face. The security report also lets you examine metrics by different dimensions, which help you understand where traffic comes from and a breakdown of top events by criteria.
 
 The Azure Front Door Premium tier provides the most robust Internet security measures between clients and web applications.
 
 ### Azure Application Gateway
 
-Azure Application Gateway has two SKU types, v1 and v2, and a WAF version that can be applied to either SKU. Microsoft recommends migrating your Azure Application Gateway to the WAF_v2 SKU to benefit from the performance upgrades and new features such as autoscaling, custom WAF rules, and support for [Azure Private Link](/azure/private-link/private-link-overview). 
+Azure Application Gateway has two SKU types, v1 and v2, and a WAF version that can be applied to either SKU. Microsoft recommends migrating your Azure Application Gateway to the WAF_v2 SKU to benefit from the performance upgrades and new features such as autoscaling, custom WAF rules, and support for [Azure Private Link](/azure/private-link/private-link-overview).
 
 Custom WAF rules allow you to specify conditions to evaluate every request that goes through the Azure Application Gateway. These rules have higher priority than the rules in the managed rule sets and can be customized to suit the needs of your application and security requirements. The custom WAF rules also can limit access to your web applications by country or regions by matching an IP address to a country code. 
 
@@ -163,9 +163,9 @@ The other benefit of migrating to WAFv2 is you can connect to your Azure Applica
 
 With the planned retirement of the Basic Public IP SKU in September 2025, you need to upgrade services that use Basic Public IP SKU IP addresses. Microsoft recommends migrating your current Basic SKU Azure Load Balancers to Standard SKU Azure Load Balancers to implement security measures not applied by the Basic SKU.
 
-With Standard SKU Azure Load Balancer, you're secure by default. All inbound Internet traffic to the public load balancer is blocked unless allowed by the rules of the applied network security group. This prevents accidentally allowing Internet traffic to your virtual machines or services before you are ready and ensure that you are in control of the traffic that can access your resources.
+With Standard SKU Azure Load Balancer, you're secure by default. All inbound Internet traffic to the public load balancer is blocked unless allowed by the rules of the applied network security group. This default behavior prevents accidentally allowing Internet traffic to your virtual machines or services before you're ready and ensure that you're in control of the traffic that can access your resources.
 
-Standard SKU Azure Load Balancer uses Azure Private Link to create private endpoint connections. This is useful in cases where you want to allow private access to your resources behind a load balancer, but you want users to access it from their environment.
+Standard SKU Azure Load Balancer uses Azure Private Link to create private endpoint connections, which is useful in cases where you want to allow private access to your resources behind a load balancer, but you want users to access it from their environment.
 
 ## Step 3: Review your hybrid connectivity services
 
@@ -175,19 +175,19 @@ This diagram shows the components for updating Azure hybrid connectivity service
 
 :::image type="content" source="media/azure-networking/azure-networking-legacy-step-3.svg" alt-text="Diagram showing the components for updating Azure hybrid connectivity services." lightbox="media/azure-networking/azure-networking-legacy-step-3.svg":::
 
-The most effective method to connect hybrid networks in Azure currently is with the new generation SKUs for Azure VPN Gateway. While you might continue to employ classic VPN gateways, these are outdated and less reliable and efficient. Classic VPN gateways support a maximum of ten Internet Protocol Security (IPsec) tunnels, whereas the newer Azure VPN Gateway SKUs can scale up to 100 tunnels. The newer SKUs operate on a newer driver model and incorporate the latest security software updates.
+The most effective method to connect hybrid networks in Azure currently is with the new generation SKUs for Azure VPN Gateway. While you might continue to employ classic VPN gateways, these are outdated and less reliable and efficient. Classic VPN gateways support a maximum of 10 Internet Protocol Security (IPsec) tunnels, whereas the newer Azure VPN Gateway SKUs can scale up to 100 tunnels. The newer SKUs operate on a newer driver model and incorporate the latest security software updates.
 
-The older driver models were based on outdated Microsoft technology that are not suitable for modern workloads. The newer driver models not only offer superior performance and hardware, but also provide enhanced resilience. The [AZ set of SKUs](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) of VPN gateways can be positioned in availability zones and support active-active connections with multiple public IP addresses. This enhances resilience and offers improved options for disaster recovery.
+The older driver models were based on outdated Microsoft technology that aren't suitable for modern workloads. The newer driver models not only offer superior performance and hardware, but also provide enhanced resilience. The [AZ set of SKUs](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku) of VPN gateways can be positioned in availability zones and support active-active connections with multiple public IP addresses, which enhances resilience and offers improved options for disaster recovery.
 
-Additionally, for dynamic routing needs, classic VPN gateways couldn’t run Border Gateway Protocol (BGP), only used IKEv1, and did not support dynamic routing. In summary, classic SKU VPN gateways are designed for smaller workloads, low bandwidth, and static connections.
+Additionally, for dynamic routing needs, classic VPN gateways couldn’t run Border Gateway Protocol (BGP), only used IKEv1, and didn't support dynamic routing. In summary, classic SKU VPN gateways are designed for smaller workloads, low bandwidth, and static connections.
 
 Classic VPN gateways also have limitations in the security and functionality of their IPsec tunnels. They only support Policy-Based mode with IKEv1 protocol and a limited set of encryptions and hashing algorithms that are more susceptible to breaches. Microsoft recommends that you transition to the new SKUs that offer a broader range of options for Phase 1 and Phase 2 protocols. A key advantage is that route-based VPN Gateways can use both IKEv1 and IKEv2 main mode, providing greater implementation flexibility and more robust encryption and hashing algorithms.
 
-If you require higher security than the default encryption values, route-based VPN Gateways allow for the customization of Phase 1 and Phase 2 parameters to select specific ciphers and key lengths. Stronger encryption groups include Group 14 (2048-bit), Group 24 (2048-bit MODP Group), or ECP (elliptic curve groups) 256 or 384 bit (Group 19 and Group 20, respectively). Additionally, you can specify which prefix ranges are permitted to send encrypted traffic using the Traffic Selector setting to further safeguard the tunnel negotiation from unauthorized traffic.
+If you require higher security than the default encryption values, route-based VPN Gateways allow for the customization of Phase 1 and Phase 2 parameters to select specific ciphers and key lengths. Stronger encryption groups include Group 14 (2048-bit), Group 24 (2048-bit MODP Group), or ECP (elliptic curve groups) 256 bit or 384 bit (Group 19 and Group 20, respectively). Additionally, you can specify which prefix ranges are permitted to send encrypted traffic using the Traffic Selector setting to further safeguard the tunnel negotiation from unauthorized traffic.
 
 For more information, see [Azure VPN Gateway cryptography](/azure/vpn-gateway/vpn-gateway-about-compliance-crypto#cryptographic-requirements).
 
-Azure VPN Gateway SKUs facilitate Point-to-Site (P2S) connections to utilize both IPsec protocols based on the IKEv2 standard and VPN protocols based on SSL/TLS, such as OpenVPN and Secure Socket Tunneling Protocol (SSTP). This provides users with a variety of implementation methods and enables them to connect to Azure using different user device operating systems. Additionally, Azure VPN Gateway SKUs offer diverse client authentication options, including certificate authentication, Microsoft Entra ID authentication, and Active Directory Domain Services (AD DS) authentication.
+Azure VPN Gateway SKUs facilitate Point-to-Site (P2S) connections to utilize both IPsec protocols based on the IKEv2 standard and VPN protocols based on SSL/TLS, such as OpenVPN and Secure Socket Tunneling Protocol (SSTP). This support provides users with various implementation methods and enables them to connect to Azure using different user device operating systems. Azure VPN Gateway SKUs also offer many client authentication options, including certificate authentication, Microsoft Entra ID authentication, and Active Directory Domain Services (AD DS) authentication.
 
 > [!NOTE]
 > Classic IPSec gateways will be retired on [August 31, 2024](https://azure.microsoft.com/en-us/updates/five-azure-classic-networking-services-will-be-retired-on-31-august-2024/).
@@ -204,7 +204,7 @@ Azure VPN Gateway SKUs facilitate Point-to-Site (P2S) connections to utilize bot
 
 ## Next Steps
 
-For additional information about applying Zero Trust to Azure networking, see:
+For more information about applying Zero Trust to Azure networking, see:
 
 - [Apply Zero Trust principles to encrypting Azure-based network communication](azure-networking-encryption.md)
 - [Apply Zero Trust principles to segmenting Azure-based network communication](azure-networking-segmentation.md)

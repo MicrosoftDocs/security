@@ -230,7 +230,7 @@ Additionally, on-premises users or users on virtual machines in another VNet can
 - Virtual machines are protected against port scanning.
 - The Azure Bastion platform is constantly updated and protected against zero-day exploits.
 
-With Bastion, you can control the RDP and SSH connectivity to your virtual machine from a single point of entry. You can manage individual sessions from the Bastion service in the Azure portal. You can also delete or force a disconnect of an on-going remote session if you suspect a user isn't supposed to be connecting to that machine.
+With Bastion, you can control the RDP and SSH connectivity to your virtual machine from a single point of entry. You can manage individual sessions from the Bastion service in the Azure portal. You can also delete or force a disconnect of an ongoing remote session if you suspect a user isn't supposed to be connecting to that machine.
 
 The following diagram shows the reference architecture for using Azure Bastion to protect Azure virtual machines.
 

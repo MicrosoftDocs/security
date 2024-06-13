@@ -238,6 +238,8 @@
         href: azure-networking-encryption.md
       - name: Segmentation
         href: azure-networking-segmentation.md
+      - name: Gain visibility into network traffic
+        href: azure-networking-visibility.md
       - name: Legacy network security technology
         href: azure-networking-legacy.md
     - name: Use SIEM and XDR to respond to incidents

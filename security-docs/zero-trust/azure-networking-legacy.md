@@ -190,7 +190,7 @@ For more information, see [Azure VPN Gateway cryptography](/azure/vpn-gateway/vp
 Azure VPN Gateway SKUs facilitate Point-to-Site (P2S) connections to utilize both IPsec protocols based on the IKEv2 standard and VPN protocols based on SSL/TLS, such as OpenVPN and Secure Socket Tunneling Protocol (SSTP). This support provides users with various implementation methods and enables them to connect to Azure using different user device operating systems. Azure VPN Gateway SKUs also offer many client authentication options, including certificate authentication, Microsoft Entra ID authentication, and Active Directory Domain Services (AD DS) authentication.
 
 > [!NOTE]
-> Classic IPSec gateways will be retired on [August 31, 2024](https://azure.microsoft.com/en-us/updates/five-azure-classic-networking-services-will-be-retired-on-31-august-2024/).
+> Classic IPSec gateways will be retired on [August 31, 2024](/updates/five-azure-classic-networking-services-will-be-retired-on-31-august-2024/).
 
 ## Recommended training
 

@@ -44,7 +44,7 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-        - text: Recent Microsoft Security ransomware blog
+        - text: Recent Microsoft Security ransomware blog - May 2024
           url:  https://www.microsoft.com/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/
         - text: Recent Microsoft social media posts about ransomware
           url:  https://twitter.com/MsftSecIntel/status/1720489111717310697
@@ -67,7 +67,7 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-        - text: Moonstone Sleet emerges as new North Korean actor with new bag of tricks
+        - text: Moonstone Sleet emerges as new North Korean actor with new bag of tricks - May 2024
           url:  https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/
         - text: Ransomware as a service. Understanding the cybercrime gig economy and how to protect yourself
           url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/

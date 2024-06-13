@@ -48,7 +48,6 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/
         - text: Recent Microsoft social media posts about ransomware
           url:  https://x.com/MsftSecIntel/status/1781353314413605345
-                https://www.linkedin.com/posts/microsoft-threat-intelligence_ransomware-and-extortion-activity-7187119027582898176-2dU2/
         - text: Hands-on-keyboard (HOK) and pre-HOK attacks
           url:  https://www.microsoft.com/security/blog/2021/11/15/ai-driven-adaptive-protection-against-human-operated-ransomware/
         - text: Automatic disruption of ransomware attacks

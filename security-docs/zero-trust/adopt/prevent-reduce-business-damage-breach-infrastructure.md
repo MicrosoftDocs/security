@@ -246,7 +246,7 @@ This objective is to create boundaries on your network so that intermediate anal
 | Use many ingress/egress cloud micro-perimeters with some micro-segmentation. | [Secure networks with Zero Trust](/security/zero-trust/deploy/networks#i-network-segmentation-many-ingressegress-cloud-micro-perimeters-with-some-micro-segmentation) |
 | Use multiple subnets and network security groups to host multiple tiers of an app and restrict traffic. | [Apply Zero Trust principles to a spoke VNet in Azure](/security/zero-trust/azure-infrastructure-iaas) <br><br> [Apply Zero Trust principles to a spoke VNet with Azure PaaS Services](/security/zero-trust/azure-infrastructure-paas) |
 
-For additional information about segmentation in Azure environments, see [Apply Zero Trust principles to segmenting Azure-based network communication](../azure-networking-segmentation.md).
+For additional information about segmentation in Azure environments, see [Segmenting Azure-based network communication](../azure-networking-segmentation.md).
 
 ##### Implement Site Recovery for critical workload continuity
 
@@ -282,7 +282,7 @@ This objective is more of a check to be sure your network traffic is encrypted. 
 | Encrypt application backend traffic between virtual networks.<br><br> Encrypt traffic between on-premises and cloud. | [Secure networks with Zero Trust-Objective 6: All traffic is encrypted](/security/zero-trust/deploy/networks#vi-encryption-all-traffic-is-encrypted) |
 | For network architects, this article helps put recommended networking concepts into perspective. Ed Fisher, Security & Compliance Architect at Microsoft, describes how to optimize your network for cloud connectivity by avoiding the most common pitfalls. | [Networking up (to the cloud)-One architect's viewpoint](/microsoft-365/solutions/networking-design-principles) |
 
-For additional information about encryption in Azure environments, see [Apply Zero Trust principles to encrypting Azure-based network communication](../azure-networking-encryption.md).
+For additional information about encryption in Azure environments, see [Encrypting Azure-based network communication](../azure-networking-encryption.md).
 
 <a name='stage-2'></a>
 #### Stage 2
@@ -408,7 +408,7 @@ Cloud applications that have opened endpoints to external environments, such as 
 
 For more information, see [Cloud native filtering and protection for known threats](/security/zero-trust/deploy/networks#ii-threat-protection-cloud-native-filtering-and-protection-for-known-threats).
 
-For additional information about visibility in Azure environments, see [Apply Zero Trust principles to gain visibility into network traffic](../azure-networking-visibility.md).
+For additional information about gaining network traffic visibility in Azure environments, see [Gain visibility into your network traffic](../azure-networking-visibility.md).
 
 ##### Design your threat and BCDR response
 
@@ -444,6 +444,8 @@ In this stage, you further secure your network and ensure that your BCDR plan an
 Examine the set of technologies and products that your organization uses to provide network security and determine whether they're necessary or redundant with other network security capabilities. Each network security technology can also be a target for attackers. For example, if the technology or product isn’t being updated on a timely basis, consider removing it.
 
 For more information, see [Discontinue legacy network security technology](/security/zero-trust/deploy/networks#vii-discontinue-legacy-network-security-technology), which describes the types of network security technologies that you might no longer need.
+
+For additional information about discontinuing legacy network security technologies in Azure environments, see [Discontinue legacy network security technology](../azure-networking-legacy.md).
 
 ##### Practice threat and BCDR response
 

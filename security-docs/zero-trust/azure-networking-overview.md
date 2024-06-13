@@ -50,7 +50,7 @@ The following articles show you how to apply Zero Trust approach to networking f
 
 - [Encryption](azure-networking-encryption.md)
 - [Segmentation](azure-networking-segmentation.md)
-- [Gain visibility into network traffic](azure-networking-visibility.md)
+- [Gain visibility into your network traffic](azure-networking-visibility.md)
 - [Discontinue legacy network security technology](azure-networking-legacy.md)
 
 > [!IMPORTANT]

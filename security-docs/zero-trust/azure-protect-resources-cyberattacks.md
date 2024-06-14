@@ -1,6 +1,6 @@
 ---
 title: How do I protect my Azure resources from destructive cyberattacks?
-description: Learn how to secure an Azure Virtual Desktop deployment with Zero Trust principles. 
+description: Learn how to protect your Azure resources from destructive cyberattacks. 
 ms.date: 02/11/2024
 ms.service: security
 author: rudneir2
@@ -191,11 +191,11 @@ For components such as build agents hosted on virtual machines, you can use the 
 
 ## Step 2: Configure detection of cyberattacks
 
-For detection of attacks on your Azure infrastructure, start with [Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction), a cloud-native application protection platform (CNAPP) that is made up of security measures and practices that are designed to protect cloud-based applications from various cyber threats and vulnerabilities. 
+For detection of attacks on your Azure infrastructure, start with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction), a cloud-native application protection platform (CNAPP) that is made up of security measures and practices that are designed to protect cloud-based applications from various cyber threats and vulnerabilities. 
 
 Defender for Cloud, in conjunction with additional plans for Azure components, collects signals from Azure components and provides specific protections for servers, containers, storage, databases, and other workloads. 
 
-The following diagram shows the flow of security event information from Azure services through Defender for Cloud and [Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/overview?tabs=azure-portal).
+The following diagram shows the flow of security event information from Azure services through Defender for Cloud and [Microsoft Sentinel](/azure/sentinel/overview?tabs=azure-portal).
 
 :::image type="content" source="media/cyberattacks/cyberattack-detection-information-flow.svg" alt-text="Diagram of the flow of security event information from Azure services through Defender for Cloud and Microsoft Sentinel." lightbox="media/cyberattacks/cyberattack-detection-information-flow.svg":::
 
@@ -205,7 +205,7 @@ In the figure:
 - Microsoft Defender for Cloud, with additional plans such as Defender for Servers, analyzes the signals for enhanced threat detection and sends security information and event management (SIEM) data to Microsoft Sentinel.
 - Microsoft Sentinel uses the SIEM data for cyberattack detection, investigation, response, and proactive hunting.
 
-After you have better protected your Azure resources with the recommendations in Step 1 of this article, you need to have a plan for detecting destructive cyberattacks using Microsoft Sentinel. A starting point is to use [advanced multistage attack detection in Microsoft Sentinel](https://review.learn.microsoft.com/en-us/azure/sentinel/fusion). This allows you to build detections for specific scenarios such as data destruction, denial of service, malicious administrative activity, and many more.
+After you have better protected your Azure resources with the recommendations in Step 1 of this article, you need to have a plan for detecting destructive cyberattacks using Microsoft Sentinel. A starting point is to use [advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion). This allows you to build detections for specific scenarios such as data destruction, denial of service, malicious administrative activity, and many more.
 
 As part of preparing your workloads for response, you need to:
 
@@ -223,15 +223,15 @@ Your playbooks should:
 
 - Include your processes for the following scenarios:
 
-  - [Fail over Azure VMs to a secondary region](https://review.learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-failover-failback)
-  - [How to restore Azure VM data in Azure portal](https://review.learn.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms)
-  - [Restore files to a virtual machine in Azure](https://review.learn.microsoft.com/en-us/azure/backup/tutorial-restore-files)
-  - [Recover soft deleted data and recovery points using enhanced soft delete in Azure Backup](https://review.learn.microsoft.com/en-us/azure/backup/backup-azure-enhanced-soft-delete-tutorial?tabs=recovery-services-vault)
-  - [Restore the state of Kubernetes clusters after a disaster](https://review.learn.microsoft.com/en-us/azure/aks/hybrid/restore-aks-cluster)
-  - [Recover a deleted storage account](https://review.learn.microsoft.com/en-us/azure/storage/common/storage-account-recover)
-  - [Recover a soft-deleted key vault](https://review.learn.microsoft.com/en-us/azure/key-vault/general/key-vault-recovery?tabs=azure-portal#list-recover-or-purge-a-soft-deleted-key-vault)
-  - [Recover soft-deleted secrets, keys, and certificates from a key vault](https://review.learn.microsoft.com/en-us/azure/key-vault/general/key-vault-recovery?tabs=azure-portal#list-recover-or-purge-soft-deleted-secrets-keys-and-certificates)
-  - [Disaster recovery guidance - Azure SQL Database](https://review.learn.microsoft.com/en-us/azure/azure-sql/database/disaster-recovery-guidance)
+  - [Fail over Azure VMs to a secondary region](/azure/site-recovery/azure-to-azure-tutorial-failover-failback)
+  - [How to restore Azure VM data in Azure portal](/azure/backup/backup-azure-arm-restore-vms)
+  - [Restore files to a virtual machine in Azure](/azure/backup/tutorial-restore-files)
+  - [Recover soft deleted data and recovery points using enhanced soft delete in Azure Backup](/azure/backup/backup-azure-enhanced-soft-delete-tutorial?tabs=recovery-services-vault)
+  - [Restore the state of Kubernetes clusters after a disaster](/azure/aks/hybrid/restore-aks-cluster)
+  - [Recover a deleted storage account](/azure/storage/common/storage-account-recover)
+  - [Recover a soft-deleted key vault](/azure/key-vault/general/key-vault-recovery?tabs=azure-portal#list-recover-or-purge-a-soft-deleted-key-vault)
+  - [Recover soft-deleted secrets, keys, and certificates from a key vault](/azure/key-vault/general/key-vault-recovery?tabs=azure-portal#list-recover-or-purge-soft-deleted-secrets-keys-and-certificates)
+  - [Disaster recovery guidance - Azure SQL Database](/azure/azure-sql/database/disaster-recovery-guidance)
 
 - Include the restoration process for any other resources that make up this service.
 - Be tested periodically as part of your SecOps maintenance processes.
@@ -249,9 +249,9 @@ Continue to implement your [security breach prevention and recovery infrastructu
 Refer to these links to learn about the various services and technologies mentioned in this article.
 
 - [Resource Locks](/azure/azure-resource-manager/management)
-- [Microsoft Entra Privileged Identity Management](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure)
-- [Soft delete for Azure backup](https://learn.microsoft.com/en-us/azure/backup/backup-azure-security-feature-cloud?tabs=azure-portal)
-- [Multi-user authorization (MUA)](https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization-concept?tabs=recovery-services-vault)
-- [Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/)
-- [Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)
-- [Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/overview?tabs=azure-portal)
+- [Microsoft Entra Privileged Identity Management](/entra/id-governance/privileged-identity-management/pim-configure)
+- [Soft delete for Azure backup](/azure/backup/backup-azure-security-feature-cloud?tabs=azure-portal)
+- [Multi-user authorization (MUA)](/azure/backup/multi-user-authorization-concept?tabs=recovery-services-vault)
+- [Bicep](/azure/azure-resource-manager/bicep/)
+- [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
+- [Microsoft Sentinel](/azure/sentinel/overview?tabs=azure-portal)

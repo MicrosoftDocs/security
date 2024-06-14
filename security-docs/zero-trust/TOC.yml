@@ -229,6 +229,8 @@
       href: azure-virtual-wan.md
     - name: IaaS applications in AWS 
       href: secure-iaas-apps.md
+    - name: Protect Azure resources from cyberattacks 
+      href: azure-protect-resources-cyberattacks.md
     - name: Azure networking
       expanded: false
       items: 

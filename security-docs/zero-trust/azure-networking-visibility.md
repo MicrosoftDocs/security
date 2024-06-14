@@ -207,7 +207,7 @@ For additional information about applying Zero Trust to Azure networking, see:
 - [Discontinue legacy network security technology](azure-networking-legacy.md)
 - [Secure networks with Zero Trust](./deploy/networks.md)
 - [Spoke virtual networks in Azure](azure-infrastructure-iaas.md)
-- [Hub virtual networks in Azure](azure-infrastructure-paas.md)
+- [Hub virtual networks in Azure](azure-infrastructure-networking.md)
 - [Spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
 

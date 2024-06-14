@@ -31,7 +31,7 @@
 		.st20 {fill:#c3f1ff;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st21 {fill:#9cebff;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st22 {fill:url(#grad0-72);stroke:none;stroke-linecap:butt;stroke-width:0.75}
-		.st23 {fill:none;stroke:#a5a5a5;stroke-dasharray:0.01,3;stroke-width:1}
+		.st23 {fill:none;stroke:#595959;stroke-dasharray:7,5;stroke-width:1}
 		.st24 {fill:#0078d4;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st25 {fill:#6bb9f2;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st26 {fill:url(#grad0-104);stroke:none;stroke-linecap:butt;stroke-width:0.75}

@@ -24,7 +24,7 @@
 		.st13 {fill:#c3f1ff;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st14 {fill:#9cebff;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st15 {fill:url(#grad0-44);stroke:none;stroke-linecap:butt;stroke-width:0.75}
-		.st16 {fill:none;stroke:#a5a5a5;stroke-dasharray:0.01,3;stroke-width:1}
+		.st16 {fill:none;stroke:#595959;stroke-dasharray:7,5;stroke-width:1}
 		.st17 {fill:#0078d4;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st18 {fill:#6bb9f2;stroke:none;stroke-linecap:butt;stroke-width:0.75}
 		.st19 {fill:url(#grad0-76);stroke:none;stroke-linecap:butt;stroke-width:0.75}

@@ -44,7 +44,7 @@ This article describes how Microsoft Incident Response handles ransomware attack
 
 Microsoft Incident Response relies heavily on data for all investigations and uses existing deployments of Microsoft security services such as [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security), [Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security), [Microsoft Defender for Identity](/defender-for-identity), and [Microsoft Defender for Cloud Apps](/cloud-app-security/).
 
-### Defender for Endpoint
+### Microsoft Defender for Endpoint
 
 Defender for Endpoint is Microsoft's enterprise endpoint security platform designed to help enterprise network security analysts prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint can detect attacks using advanced behavioral analytics and machine learning. Your analysts can use Defender for Endpoint for attacker behavioral analytics.
 
@@ -64,7 +64,7 @@ Here's an example of how Defender for Endpoint shows detailed ransomware activit
 
 :::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/defender-endpoint-example-ransomware-activity.png" alt-text="Example of how Defender for Endpoint shows detailed ransomware activity." lightbox="./media/incident-response-playbook-dart-ransomware-approach/defender-endpoint-example-ransomware-activity.png":::
 
-### Defender for Identity
+### Microsoft Defender for Identity
 
 You use Defender for Identity to investigate known compromised accounts and to find potentially compromised accounts in your organization. Defender for Identity sends alerts for known malicious activity that actors often use such as DCSync attacks, remote code execution attempts, and pass-the-hash attacks. Defender for Identity enables you to pinpoint suspect activity and accounts to narrow down the investigation.
 
@@ -72,7 +72,7 @@ Here's an example of how Defender for Identity sends alerts for known malicious 
 
 :::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/defender-for-identity-example-ransomware-alert.png" alt-text="An example of how Defender for Identity sends alerts for ransomware attacks" lightbox="./media/incident-response-playbook-dart-ransomware-approach/defender-for-identity-example-ransomware-alert.png":::
 
-### Defender for Cloud Apps
+### Microsoft Defender for Cloud Apps
 
 Defender for Cloud Apps (previously known as Microsoft Cloud App Security) allows your analysts to detect unusual behavior across cloud apps to identify ransomware, compromised users, or rogue applications. Defender for Cloud Apps is Microsoft's cloud access security broker (CASB) solution that allows for monitoring of cloud services and data access in cloud services by users.
 
@@ -313,10 +313,4 @@ Microsoft Security team blog posts:
 - [Becoming resilient by understanding cybersecurity risks: Part 4-navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   See the **Ransomware** section.
-
-- [Human-operated ransomware attacks: A preventable disaster (March 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
-
-  Includes attack chain analyses of actual attacks.
-
-- [Ransomware response-to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
-- [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+  

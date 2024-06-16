@@ -24,9 +24,11 @@ ms.localizationpriority:   # medium
 
 After you've completed designing and implementing your Microsoft Sentinel workspace(s), proceed to ingest data sources and configure incident detection.
 
+Solutions in Microsoft Sentinel provide a consolidated way to acquire Microsoft Sentinel content, like data connectors, workbooks, analytics, and automation, in your workspace with a single deployment step. 
+
 Data connectors are configured to enable data ingestion into the workspace. After enabling key data points to be ingested into Microsoft Sentinel, user and entity behavior analytics (UEBA) and analytic rules must also be enabled to capture anomalous and malicious activities. Analytic rules dictate how alerts and incidents are generated in your Microsoft Sentinel instance. Tailoring analytic rules to your environment and organizational needs through entity mapping allows you to produce high-fidelity incidents and reduce alert fatigue.
 
-If you've onboarded your workspace to the unified security operations platform, the procedures in this step are available in both the Azure and Defender portals.
+If you've onboarded your workspace to the [unified security operations platform](/azure/sentinel/microsoft-sentinel-defender-portal), the procedures in this step are available in both the Azure and Defender portals.
 
 ## Before you begin
 
@@ -36,23 +38,21 @@ The following table is a summary of the prerequisites required to ingest key Azu
 
 | Resource Type    | Installation Method    | Role/Permissions/License Needed |
 |------------------|------------------------|---------------------------------------|
-| Microsoft Entra ID| Native Data connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>Sign-in Logs require Microsoft Entra ID P1 or P2 license<br>Other logs don't require P1 or P2    |
-| Microsoft Entra ID Protection     | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Entra ID P2 |
-| Azure Activity   | Azure Policy   | Owner role required on subscriptions   |
-| Microsoft Defender XDR   | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft 365 E5, Microsoft 365 A5 or any other Microsoft Defender XDR eligible license |
-| Microsoft Defender for Cloud | Native Data Connector| [Security Reader](/entra/identity/role-based-access-control/permissions-reference#security-reader)<br><br>To enable bi-directional sync, Contributor/Security Admin role is required on the subscription.  |
-| Microsoft Defender for Identity     | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Identity   |
-| Microsoft Defender for Office 365  | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Office 365 Plan 2|
-| Microsoft 365| Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)    |
-| Microsoft Defender for IoT  |    | Contributor to subscription with IoT hubs  |
-| Microsoft Defender for Cloud Apps | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Cloud Apps |
-| Microsoft Defender for Endpoint   | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Endpoint   |
+| **Microsoft Entra ID**| Native Data connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>Sign-in Logs require Microsoft Entra ID P1 or P2 license<br>Other logs don't require P1 or P2    |
+| **Microsoft Entra ID Protection**     | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Entra ID P2 |
+| **Azure Activity**   | Azure Policy   | Owner role required on subscriptions   |
+| **Microsoft Defender XDR**   | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft 365 E5, Microsoft 365 A5 or any other Microsoft Defender XDR eligible license |
+| **Microsoft Defender for Cloud** | Native Data Connector| [Security Reader](/entra/identity/role-based-access-control/permissions-reference#security-reader)<br><br>To enable bi-directional sync, Contributor/Security Admin role is required on the subscription.  |
+| **Microsoft Defender for Identity**     | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Identity   |
+| **Microsoft Defender for Office 365**  | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Office 365 Plan 2|
+| **Microsoft 365**| Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)    |
+| **Microsoft Defender for IoT**  |    | Contributor to subscription with IoT hubs  |
+| **Microsoft Defender for Cloud Apps** | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Cloud Apps |
+| **Microsoft Defender for Endpoint**   | Native Data Connector| [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator)<br><br>License: Microsoft Defender for Endpoint   |
 | Windows Security Events<br><br>through the Azure Monitor Agent (AMA) | Native Data Connector with Agent | Read/Write on Log Analytics Workspace|
-| Syslog    | Native Data Connector with Agent | Read/Write Log Analytics Workspace   |
+| **Syslog**    | Native Data Connector with Agent | Read/Write Log Analytics Workspace   |
 
 ## Step 1: Install solutions and turn on data connectors
-
-Solutions in Microsoft Sentinel provide a consolidated way to acquire Microsoft Sentinel content, like data connectors, workbooks, analytics, and automation, in your workspace with a single deployment step. When you deploy a solution, the security content included with the solution, such as data connectors, playbooks, or workbooks, are available in the relevant views for the content. 
 
 Use the following recommendations to get started with installing solutions and configuring data connectors. For more information, see:
 

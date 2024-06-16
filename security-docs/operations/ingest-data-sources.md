@@ -4,7 +4,7 @@ description: Learn how to turn on data connectors and enable UEBA and analytic r
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
-ms.date: 06/03/2024
+ms.date: 06/16/2024
 ms.topic: article
 ms.service: microsoft-365-security
 ms.collection: 
@@ -50,9 +50,14 @@ The following table is a summary of the prerequisites required to ingest key Azu
 | Windows Security Events<br><br>through the Azure Monitor Agent (AMA) | Native Data Connector with Agent | Read/Write on Log Analytics Workspace|
 | Syslog    | Native Data Connector with Agent | Read/Write Log Analytics Workspace   |
 
-## Step 1: Turn on data connectors
+## Step 1: Install solutions and turn on data connectors
 
-Use the following recommendations to get started with configuring data connectors. For more information, see [Find your Microsoft Sentinel data connector](/azure/sentinel/data-connectors-reference).
+Solutions in Microsoft Sentinel provide a consolidated way to acquire Microsoft Sentinel content, like data connectors, workbooks, analytics, and automation, in your workspace with a single deployment step. When you deploy a solution, the security content included with the solution, such as data connectors, playbooks, or workbooks, are available in the relevant views for the content. 
+
+Use the following recommendations to get started with installing solutions and configuring data connectors. For more information, see:
+
+- [Microsoft Sentinel content hub catalog](/azure/sentinel/sentinel-solutions-catalog)
+- [Discover and manager Microsoft Sentinel out-of-the-box content](/azure/sentinel/sentinel-solutions-deploy)
 
 ### Set up free data sources
 
@@ -74,13 +79,20 @@ For more information, see [Microsoft Sentinel Pricing](https://azure.microsoft.c
 
 ### Set up paid data sources
 
-To provide broader monitoring and alerting coverage, focus on adding the **Microsoft Entra ID** and **Microsoft Defender XDR** data connector. There is a charge for ingesting data from these sources.
+To provide broader monitoring and alerting coverage, focus on adding the **Microsoft Entra ID** and **Microsoft Defender XDR** data connectors. There is a charge for ingesting data from these sources.
 
 Make sure to send Microsoft Defender XDR logs to Microsoft Sentinel if any of the following are required:
 
+- **Onboarding to the unified security operations platform**, which provides a single portal for incident management in Microsoft Defender.
 - **Microsoft Sentinel fusion alerts**, which correlate data sources from multiple products to detect multi-stage attacks across the environment.
 - **Longer retention** than what is offered in Microsoft Defender XDR.
-- **Automation** not covered by the built-in remediations offered by Microsoft Defender for Endpoint.  For more information, see [Remediation actions in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-remediation-actions).
+- **Automation** not covered by the [built-in remediations offered by Microsoft Defender for Endpoint](/microsoft-365/security/defender/m365d-remediation-actions).
+
+For more information, see:
+
+- [Integrate Microsoft 365 Defender](/azure/sentinel/microsoft-365-defender-sentinel-integration)
+- [Connect data from Microsoft Defender XDR to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender)
+- [Connect Microsoft Entra data to Microsoft Sentinel](/azure/sentinel/connect-azure-active-directory)
 
 ### Set up data sources per your environment
 
@@ -98,7 +110,7 @@ For more information, see [Discover and manage Microsoft Sentinel out-of-the-box
 
 ## Step 2: Enable user entity behavior analytics
 
-After setting up data connectors in Microsoft Sentinel, make sure to enable user entity behavior analytics to identify suspicious behavior  that could lead to phishing exploits and eventually attacks such as ransomware. Often, anomaly detection through UEBA is the best method for detecting Zero-day exploits early on.
+After setting up data connectors in Microsoft Sentinel, make sure to enable user entity behavior analytics to identify suspicious behavior that could lead to phishing exploits and eventually attacks such as ransomware. Often, anomaly detection through UEBA is the best method for detecting Zero-day exploits early on.
 
 Using UEBA allows Microsoft Sentinel to build behavioral profiles of your organization's entities across time and peer group to identify anomalous activity. This added utility aids in an expedition of determining if an asset has been compromised. Since it identifies peer group association this can also aid in determining the blast radius of said compromise.
 
@@ -213,8 +225,6 @@ Training content doesn't currently cover the unified security operations platfor
 > [!div class="nextstepaction"]
 > [Start >](/training/paths/sc-200-connect-logs-to-azure-sentinel/)
 
-
-
 ### Identify threats with Behavioral Analytics
 
 |Training  |[Identify threats with Behavioral Analytics](/training/modules/use-entity-behavior-analytics-azure-sentinel/)|
@@ -222,8 +232,6 @@ Training content doesn't currently cover the unified security operations platfor
 |:::image type="icon" source="media/azure-sentinel-behavior-analytics.svg" border="false"::: |The primary approach to connect log data is using the Microsoft Sentinel provided data connectors. This module provides an overview of the available data connectors. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/use-entity-behavior-analytics-azure-sentinel/)
-
-
 
 ## Next steps
 

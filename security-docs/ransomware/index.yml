@@ -21,6 +21,18 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+    # Card 
+  - title: Microsoft top ransomware resources
+    linkLists:
+      - linkListType: reference
+        links:
+        - text: What is ransomware?
+          url:  https://learn.microsoft.com/security/ransomware/human-operated-ransomware
+        - text: Latest ransomware blogs
+          url:  https://www.microsoft.com/security/blog/threat-intelligence/ransomware
+        - text: Learn about Microsoft Defender XDR for in-depth ransomware reporting
+          url:  https://learn.microsoft.com/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti
+
   # Card 
   - title: Frequently asked questions
     linkLists:

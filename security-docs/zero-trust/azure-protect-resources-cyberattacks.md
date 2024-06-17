@@ -88,7 +88,7 @@ To prevent resource locks from producing unexpected results, you should review t
 
 Because of these considerations, you should prioritize locking resources that, if changed or deleted, would cause the most disruption. For example, locking a virtual network instead of a whole resource group can prevent the lock from being too restrictive on other resources within the resource group.
 
-Locks may also have some considerations for the Recovery Time Objectives for workloads being failed over. Your disaster recovery plan should take the locks into account, and you should have a tested procedure for the removal of locks in a controlled manner. You will need to train your admins and SecOps staff on how to manage locks as part of both day-to-day operations and emergency scenarios.
+Locks may also have some considerations for the Recovery Time Objectives for workloads being failed over. Your disaster recovery plan should take the locks into account, and you should have a tested procedure for the removal of locks in a controlled manner. You'll need to train your admins and SecOps staff on how to manage locks as part of both day-to-day operations and emergency scenarios.
 
 Administrators with access to remove the locks should be limited and should involve JIT access such as that provided with Microsoft Entra [Privileged Identity Management](/entra/id-governance/privileged-identity-management/pim-configure). Access to change locks on resources are controlled with the Microsoft.Authorization/locks/* scope and shouldn't be granted as part of standing access.
 
@@ -141,7 +141,7 @@ In addition to protecting the resources on your workloads, you also need to prot
 
 For data protected by Azure Backup, using soft delete for Azure backup allows you to recover backup data even if deleted. In addition, [enhanced soft delete](/azure/backup/quick-backup-azure-enable-enhanced-soft-delete) enforces the assignment of soft-delete and allows you to define a retention period.
 
-To further enhance security, implement [multi-user authorization](/azure/backup/multi-user-authorization-concept) (MUA) for critical operations, which requires that two or more users approve critical operations before they're executed. This adds an extra layer of security by ensuring that no single user, and therefore an attacker with only one user account, can compromise the backup integrity. [Enable and configure MUA](/azure/backup/multi-user-authorization&pivots=vaults-recovery-services-vault) to safeguard your backup policies against unauthorized changes and deletions.
+To further enhance security, implement [multi-user authorization](/azure/backup/multi-user-authorization-concept) (MUA) for critical operations, which requires that two or more users approve critical operations before they're executed. This adds an extra layer of security by ensuring that no single user, and therefore an attacker with only one user account, can compromise the backup integrity. [Enable and configure MUA](/azure/backup/multi-user-authorization) to safeguard your backup policies against unauthorized changes and deletions.
 
 You can protect Azure Site Recovery with resource locks and JEA/JIT access to prevent unauthorized access and detection when resources are at risk.
 
@@ -166,7 +166,7 @@ For more information about using IaC, see [Recommendations for using infrastruct
 
 If you're using programmatic deployments or other types of automation, platform automation and DevOps tooling resources need to be secured as well. For examples to protect your deployment infrastructure, see [Securing DevOps CI/CD pipelines](/azure/cloud-adoption-framework/secure/best-practices/secure-devops) and [Recommendations for securing a development lifecycle](/azure/well-architected/security/secure-development-lifecycle).
 
-However, you should also plan to protect the code itself, which varies based on the source control tools you are using. For example, GitHub has instructions for [Backing up a repository](https://docs.github.com/repositories/archiving-a-github-repository/backing-up-a-repository) for your source code repositories.
+However, you should also plan to protect the code itself, which varies based on the source control tools you're using. For example, GitHub has instructions for [Backing up a repository](https://docs.github.com/repositories/archiving-a-github-repository/backing-up-a-repository) for your source code repositories.
 
 You should also review your specific services to determine how best to protect your source code and pipelines from attack and destruction.
 
@@ -192,12 +192,12 @@ After you have better protected your Azure resources with the recommendations in
 
 As part of preparing your workloads for response, you need to:
 
-- Identify how you will determine if a resource is under attack.
+- Identify how you'll determine if a resource is under attack.
 - Determine how you can capture and raise an incident as a result.
 
 ## Step 3: Prepare your incident response plans
 
-You need to have well-defined and ready-to-implement incident response plans for destructive cyberattacks before incidents occur. During an incident, you will have no time to determine how to thwart attacks in progress or restore damaged data and services.
+You need to have well-defined and ready-to-implement incident response plans for destructive cyberattacks before incidents occur. During an incident, you'll have no time to determine how to thwart attacks in progress or restore damaged data and services.
 
 Azure applications and shared services should all have response and recovery plans that include playbooks for restoring virtual machines, data services, configuration services, and automation/DevOps services. Each application or service area should have its definitions and well-defined dependencies.
 

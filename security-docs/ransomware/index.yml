@@ -32,7 +32,7 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/threat-intelligence/ransomware
         - text: Learn about Microsoft Defender XDR for in-depth ransomware reporting
           url:  https://learn.microsoft.com/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti
-        - text: Use Microsoft Copilot for Security to mitigate against ransomware
+        - text: Use Microsoft Copilot for Security for AI-enhanced ransomware defense
           url:  https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security
 
   # Card 

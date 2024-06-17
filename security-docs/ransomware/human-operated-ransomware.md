@@ -24,13 +24,13 @@ Once devices or files are locked or encrypted, cybercriminals can extort money f
 
 ## How do ransomware attacks work?
 
-Ransomware can be automated or involve human hands on a keyboard--a *human operated* attack, such as seen in recent attacks using [LockBit ransomware](/security/ransomware/human-operated-ransomware). 
+Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [LockBit ransomware](/security/ransomware/human-operated-ransomware). 
 
 ### Automated ransomware attacks
 
 *Commodity ransomware attacks* are often automated. These cyber attacks can spread like a virus, infect devices through methods like email phishing and malware delivery, and require malware remediation.
 
-That means one ransomware prevention technique is to safeguard your email system with 
+Therefore, you can safeguard your email system using 
 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/) that protects against malware and phishing delivery. [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/) works alongside Defender for Office 365 to automatically detect and block suspicious activity on your devices, while [Microsoft Defender XDR](/microsoft-365/security/defender/) detects malware and phishing attempts *early*.
 
 ### Human-operated ransomware attacks
@@ -39,16 +39,15 @@ That means one ransomware prevention technique is to safeguard your email system
 
 These "hands-on-keyboard" attacks usually target organizations rather than a single device.
 
-*Human-operated* also means there's a human attacker using their insights into common system and security misconfigurations. The goal is to infiltrate the organization, navigate the network, and adapt to the environment and its weaknesses.
+*Human-operated* also means there's a human threat actor using their insights into common system and security misconfigurations. They aim to infiltrate the organization, navigate the network, and adapt to the environment and its weaknesses.
 
 Hallmarks of these human-operated ransomware attacks typically include **credential theft** and **lateral movement** with an elevation of the privileges in stolen accounts.
 
-Activities might take place during maintenance windows and involve security configuration gaps discovered by cybercriminals. The goal is the **deployment of a ransomware payload** to whatever *high business impact resources* the attackers choose.
+Activities might take place during maintenance windows and involve security configuration gaps discovered by cybercriminals. The goal is the **deployment of a ransomware payload** to whatever *high business impact resources* the threat actors choose.
 
 > [!IMPORTANT]
 > These attacks can be *catastrophic* to business operations and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware that usually only requires malware remediation, **human-operated ransomware will continue to threaten your business operations after the initial encounter**.
 
-This graphic shows how extortion-based attacks are growing in impact and likelihood.
 
 [The impact and likelihood that human-operated ransomware attacks will continue](media/human-operated-ransomware/ransomware-extortion-based-attack.png)
 
@@ -70,11 +69,11 @@ For the three steps to exploit attack weaknesses, see the [Protect your organiza
 
 1. Prepare your organization to recover from an attack without having to pay the ransom.
 2. Limit the scope of damage of a ransomware attack by protecting privileged roles.
-3. Make it harder for an attacker to get into your environment by incrementally removing risks.
+1. Make it harder for a threat actor to access your environment by incrementally removing risks.
 
 [![The three steps to protecting against ransomware and extortion](media/protect-against-ransomware/protect-against-ransomware-phases.png)](protect-against-ransomware.md)
 
-Download the [Protect your organization from ransomware poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf) for an overview of the three phases as layers of protection against ransomware attackers.
+Download the [Protect your organization from ransomware poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf) for an overview of the three phases as layers of protection against ransomware attacks.
 
 [![The "Protect your organization from ransomware" poster](media/human-operated-ransomware/ransomware-poster-thumbnail.png)](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf)
 
@@ -82,11 +81,11 @@ Download the [Protect your organization from ransomware poster](https://download
 
 Key information from Microsoft:
 
-- [The latest ransomware trends from Microsoft](https://www.microsoft.com/en-us/security/blog/threat-intelligence/ransomware/), Microsoft On the Issues blog post on July 20, 2021
+- [The latest ransomware trends from Microsoft](https://www.microsoft.com/en-us/security/blog/threat-intelligence/ransomware/), Microsoft latest ransomware blog
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023) 
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
-- Microsoft's Detection and Response Team (DART) ransomware [approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
+- Microsoft Incident Response team (formerly DART) ransomware [approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
 

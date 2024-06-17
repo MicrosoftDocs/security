@@ -1,7 +1,7 @@
 ---
 title: Apply Zero Trust principles to discontinue legacy network security technology
 description: Learn how to apply Zero Trust principles to discontinue legacy network security technology.
-ms.date: 06/13/2024
+ms.date: 06/17/2024
 ms.service: security
 author: duongau
 ms.author: duau
@@ -75,7 +75,6 @@ This reference architecture includes:
 - A security virtual network (VNet) that contains an Azure VPN Gateway and Azure Application Gateway.
 - An Internet edge VNet that contains an Azure Load Balancer.
 - Azure Front Door on the edge of the Azure environment.
-- An Azure ExpressRoute circuit.
 
 ## What's in this article?
 

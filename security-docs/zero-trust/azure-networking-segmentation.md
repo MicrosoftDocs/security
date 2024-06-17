@@ -44,7 +44,7 @@ Additional authors:
 
 --->
 
-This article provides guidance to applying the [principles of Zero Trust](zero-trust-overview.md) for segmenting networks in Azure environments. Here are the Zero Trust principles.
+This article provides guidance for applying the [principles of Zero Trust](zero-trust-overview.md) for segmenting networks in Azure environments. Here are the Zero Trust principles.
 
 | Zero Trust principle | Definition |
 | --- | --- |
@@ -279,7 +279,6 @@ This table summarizes the different levels of segmentation and security methods.
 - [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/)
 - [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/)
 - [Introduction to Azure Application Gateway](/training/modules/intro-to-azure-application-gateway/)
-- [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/)
 - [Introduction to Azure Private Link](/training/modules/introduction-azure-private-link/)
 - [Introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/)
 - [Connect your on-premises network to Azure with VPN Gateway](/training/modules/connect-on-premises-network-with-vpn-gateway/)
@@ -289,6 +288,7 @@ This table summarizes the different levels of segmentation and security methods.
 For additional information about applying Zero Trust to Azure networking, see:
 
 - [Apply Zero Trust principles to encrypting Azure-based network communication](azure-networking-encryption.md)
+- [Apply Zero Trust principles to gain visibility into network traffic](azure-networking-visibility.md)
 - [Secure networks with Zero Trust](./deploy/networks.md)
 - [Spoke virtual networks in Azure](azure-infrastructure-iaas.md)
 - [Hub virtual networks in Azure](azure-infrastructure-paas.md)

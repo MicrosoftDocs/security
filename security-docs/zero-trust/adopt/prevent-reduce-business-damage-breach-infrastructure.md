@@ -1,7 +1,7 @@
 ---
 title: Implement security breach prevention and recovery infrastructure
 description: Implement security breach prevention and recovery infrastructure.  
-ms.date: 04/24/2024
+ms.date: 06/12/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -407,6 +407,8 @@ Once you're satisfied that Azure Site Recovery is working for your critical data
 Cloud applications that have opened endpoints to external environments, such as the internet or on-premises, are at risk of attacks coming in from those environments. To prevent these attacks, you must scan the traffic for malicious payloads or logic.
 
 For more information, see [Cloud native filtering and protection for known threats](/security/zero-trust/deploy/networks#ii-threat-protection-cloud-native-filtering-and-protection-for-known-threats).
+
+For additional information about visibility in Azure environments, see [Apply Zero Trust principles to gain visibility into network traffic](../azure-networking-visibility.md).
 
 ##### Design your threat and BCDR response
 

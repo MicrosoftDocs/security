@@ -247,12 +247,14 @@
       items: 
       - name: Overview
         href: azure-networking-overview.md
-      - name: Azure networking encryption
+      - name: Encrypt your network traffic
         href: azure-networking-encryption.md
-      - name: Azure networking segmentation
+      - name: Segment your network traffic
         href: azure-networking-segmentation.md
       - name: Gain visibility into network traffic
         href: azure-networking-visibility.md
+      - name: Discontinue legacy network security technology
+        href: azure-networking-legacy.md
     - name: Use SIEM and XDR to respond to incidents
       expanded: false
       items:

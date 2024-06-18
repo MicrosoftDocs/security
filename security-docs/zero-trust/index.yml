@@ -116,6 +116,8 @@ landingContent:
             url:  azure-virtual-wan.md
           - text: IaaS applications in Amazon Web Services
             url:  secure-iaas-apps.md
+          - text: Protect Azure resources from cyberattacks 
+            url: azure-protect-resources-cyberattacks.md
           - text: Microsoft Sentinel and Microsoft Defender XDR
             url: /security/operations/siem-xdr-overview
           - text: Azure networking

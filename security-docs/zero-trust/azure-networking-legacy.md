@@ -128,7 +128,7 @@ Microsoft recommends that you set up explicit outbound access with one of the fo
 
 - Restricted use of public IP addresses
 
-  Assigning a direct public IP address to a virtual machine should be done only for testing or development environments becuase of scalability and security considerations.
+  Assigning a direct public IP address to a virtual machine should be done only for testing or development environments because of scalability and security considerations.
 
 ## Step 2: Review your content delivery and load balancing services
 

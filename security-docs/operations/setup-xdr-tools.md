@@ -5,7 +5,7 @@ description: Learn how to set up Microsoft Defender XDR and Microsoft Defender f
 author: mjcaparas
 ms.author: macapara
 manager: dansimp
-ms.date: 06/03/2024
+ms.date: 06/09/2024
 ms.topic: article
 ms.service: microsoft-365-zero-trust
 ms.collection: 
@@ -37,26 +37,28 @@ Microsoft provides guidance to help you set up and get started with Microsoft De
 
 Microsoft recommends enabling the components of Microsoft 365 Defender in the following order.
 
-:::image type="content" source="./media/defender-xdr-pilot-deploy-flow.svg" alt-text="A diagram that shows the pilot and deploy process for Microsoft Defender XDR." lightbox="./media/defender-xdr-pilot-deploy-flow.svg":::
+:::image type="content" source="./media/defender-xdr-pilot-deploy-flow.svg" alt-text="A diagram that shows the pilot and deploy process for Microsoft Defender XDR." lightbox="./media/defender-xdr-pilot-deploy-flow.svg" border="false":::
 
 | Phase | Link |
 |---|---|
 | A. Start the pilot | [Start the pilot](/defender-xdr/pilot-deploy-overview#start-the-pilot)|
-| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity) <br><br> - [Pilot and deploy  Defender for Office 365](/defender-xdr/pilot-deploy-defender-office-365) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-xdr/(pilot-deploy-defender-endpoint) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps)  |
+| B. Pilot and deploy Microsoft Defender XDR components | - [Pilot and deploy Defender for Identity](/defender-xdr/pilot-deploy-defender-identity) <br><br> - [Pilot and deploy Defender for Office 365](/defender-xdr/pilot-deploy-defender-office-365) <br><br> - [Pilot and deploy Defender for Endpoint](/defender-xdr/pilot-deploy-defender-endpoint) <br><br> - [Pilot and deploy Microsoft Defender for Cloud Apps](/defender-xdr/pilot-deploy-defender-cloud-apps) |
 |C. Investigate and respond to threats | [Practice incident investigation and response](/defender-xdr/pilot-deploy-investigate-respond) |
 
-This order is designed to leverage the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Prioritize the components to meet your business needs.
+This order is designed to apply the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Prioritize the components to meet your business needs.
 
 ## Microsoft Defender portal
 
 The [Microsoft Defender portal](https://sip.security.microsoft.com/homepage) combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Microsoft Defender XDR unified portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
 
-The unified portal includes:
+By default, the Defender portal includes:
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
-- **[Microsoft Defender for Identity](/defender-for-identity/what-is)** is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
+- **[Microsoft Defender for Identity](/defender-for-identity/what-is)** is a cloud-based security solution that uses your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
+
+Later, when you've set up your Microsoft Sentinel workspace, you can also add Microsoft Sentinel to the Defender portal.
 
 Watch this short video to learn about the Microsoft Defender portal.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
@@ -67,17 +69,17 @@ Watch this short video to learn about the Microsoft Defender portal.
 
 Microsoft Defender XDR also ingests and includes the signals of Microsoft Entra ID Protection, as illustrated below.
 
-:::image type="content" source="./media/m365-defender-eval-architecture.svg" alt-text="A diagram that shows the integration of Microsoft Entra ID Protection with Microsoft Defender XDR." lightbox="./media/m365-defender-eval-architecture.svg":::
+:::image type="content" source="./media/m365-defender-eval-architecture.svg" alt-text="A diagram that shows the integration of Microsoft Entra ID Protection with Microsoft Defender XDR." lightbox="./media/m365-defender-eval-architecture.svg" border="false":::
 
 Microsoft Entra ID Protection is separate from Microsoft Defender XDR and is included with Microsoft Entra ID P2 licenses.
 
 Microsoft Entra ID Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Microsoft Entra ID to allow or prevent account access, depending on how Conditional Access policies are configured.  
 
-For this solution and target scenario, we'll also ingest the signals from Microsoft Entra ID Protection into Microsoft Sentinel. To enable Microsoft Entra ID Protection, see [Microsoft Entra ID Protection](/defender-cloud-apps/aadip-integration).
+If you aren't going to onboard your Microsoft Sentinel workspace to the unified security operations platform, we recommend that you also ingest the signals from Microsoft Entra ID Protection into Microsoft Sentinel. To enable Microsoft Entra ID Protection, see [Microsoft Entra ID Protection](/defender-cloud-apps/aadip-integration).
 
 ## Enable Microsoft Defender for Cloud
 
-You can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include these signals in your Microsoft Sentinel workspace.  
+You can complete the deployment of Microsoft XDR tools by enabling Microsoft Defender for Cloud, and then include Defender for Cloud signals in your Microsoft Sentinel workspace.  
 
 <!---
 ![Image of Microsoft Defender XDR and Microsoft Defender for Cloud](./media/m365d-cloud.png)

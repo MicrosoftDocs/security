@@ -140,7 +140,7 @@ To investigate Microsoft Sentinel incidents in the Defender portal:
 
 To investigate incidents in the Azure portal:
 
-1. In Microsoft Sentinel, under **Threat management**, select **Incidents, and locate the suspected incident.
+1. In Microsoft Sentinel, under **Threat management**, select **Incidents**, and locate the suspected incident.
 
 1. In the incident summary pane, update details like owner name, status, severity, or to add comments.
 

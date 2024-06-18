@@ -202,11 +202,12 @@ For comprehensive monitoring of north-south traffic flows, you can use tools suc
 
 For additional information about applying Zero Trust to Azure networking, see:
 
-- [Encrypting Azure-based network communication](azure-networking-encryption.md)
-- [Segmenting Azure-based network communication](azure-networking-segmentation.md)
+- [Encrypt Azure-based network communication](azure-networking-encryption.md)
+- [Segment Azure-based network communication](azure-networking-segmentation.md)
+- [Discontinue legacy network security technology](azure-networking-legacy.md)
 - [Secure networks with Zero Trust](./deploy/networks.md)
 - [Spoke virtual networks in Azure](azure-infrastructure-iaas.md)
-- [Hub virtual networks in Azure](azure-infrastructure-paas.md)
+- [Hub virtual networks in Azure](azure-infrastructure-networking.md)
 - [Spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
 

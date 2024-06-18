@@ -4,6 +4,7 @@ description: Learn how to protect your Azure resources from destructive cyberatt
 ms.date: 06/17/2024
 ms.service: security
 author: brsteph
+ms.reviewer: sdolgin
 ms.author: bstephenson
 ms.topic: conceptual
 ms.collection: 
@@ -132,12 +133,12 @@ The following table provides data protection and availability references for com
 | Azure Files | [Backup Azure File shares](/azure/backup/backup-azure-files) <br><br> [Prevent accidental deletion of Azure file shares](/azure/storage/files/storage-files-prevent-file-share-deletion) | [Enable soft delete on Azure file shares](/azure/storage/files/storage-files-enable-soft-delete) |
 | Azure Blob Storage | [Enable point-in-time restore on blob data](/azure/storage/blobs/point-in-time-restore-manage) <br><br> [Store business-critical blob data with immutable storage](/azure/storage/blobs/immutable-storage-overview) | [Data protection for Azure blob overview](/azure/storage/blobs/data-protection-overview) <br><br> [Enable and manage soft delete for containers](/azure/storage/blobs/soft-delete-container-enable) <br><br> [Enable soft delete for blobs](/azure/storage/blobs/soft-delete-blob-enable) |
 | Azure SQL database | [Automated backups in Azure SQL Database](/azure/azure-sql/database/automated-backups-overview) | [Active geo-replication](/azure/azure-sql/database/active-geo-replication-overview) <br><br> [Failover groups for Azure SQL Database](/azure/azure-sql/database/failover-group-sql-db) |
-| SQL Managed Instances | [Automated backups in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/automated-backups-overview) | [Failover groups for Azure SQL Managed Istance](/azure/azure-sql/managed-instance/failover-group-sql-mi) |
+| SQL Managed Instances | [Automated backups in Azure SQL Managed Instance](/azure/azure-sql/managed-instance/automated-backups-overview) | [Failover groups for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/failover-group-sql-mi) |
 | SQL on Azure VMs | [Backup and restore for SQL server on Azure VMs](/azure/azure-sql/virtual-machines/windows/backup-restore) | [Failover cluster instances with SQL server on Azure Virtual Machines](/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview) |
 | Key vaults | [Azure Key Vault backup and restore](/azure/key-vault/general/backup) | [Enable soft-delete and purge protection for key vaults](/azure/key-vault/general/key-vault-recovery#what-are-soft-delete-and-purge-protection) <br><br> [Azure Key Vault availability and redundancy](/azure/key-vault/general/disaster-recovery-guidance) |
 
 > [!WARNING]
-> Some storage account recovery scenarios are not supported. For more information, see [Non-supported storage recovery](/azure/storage/blobs/point-in-time-restore-manage).
+> Some storage account recovery scenarios are not supported. For more information, see [Non-supported storage recovery](/troubleshoot/azure/azure-storage/blobs/recovery/data-protection-backup-recovery#non-supported-storage-recovery).
 
 ### C. Protecting recovery infrastructure
 

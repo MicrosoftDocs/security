@@ -70,7 +70,7 @@ This Azure environment includes:
 | D | Configuration-based services |
 | E | Platform automation and DevOps tooling (not shown) |
 
-Tasks for protecting each type of asset are described in detail in [Step 1](#step-1) of this article.
+Tasks for protecting each type of asset are described in detail in [Step 1](#step-1-configure-protection-against-cyberattacks) of this article.
 
 ## What’s in this article?
 
@@ -82,7 +82,7 @@ This article walks through the steps to apply the principles of Zero Trust acros
 | 2 | Configure detection of cyberattacks. |
 | 3 | Prepare your incident response plans. |
 
-<a name='step-1'></a>
+
 ## Step 1: Configure protection against cyberattacks
 
 Many organizations implement backup and disaster recovery solutions for their Azure virtual machines as part of a migration effort. For example, you might use Azure native solutions or opt to use your own third-party solutions for your cloud ecosystem.
@@ -163,7 +163,7 @@ Configuration-based services are Azure services that don't have data aside from 
 
 Because these services are stateless, there's no operating data to protect. The best option for protecting these services is to have [infrastructure as code (IaC) deployment](/devops/deliver/what-is-infrastructure-as-code) templates such as [Bicep](/azure/azure-resource-manager/bicep/), that can restore the state of these services after a destructive attack. You can also use scripts for deployments, but IaC deployments work better to restore functionality in an existing environment where only a few services are impacted.
 
-As long as a resource configured the same way can be deployed, services can continue to operate. Rather than try to backup and maintain copies of these resources, you can use the programmatic deployment to recover from an attack.
+As long as a resource configured the same way can be deployed, services can continue to operate. Rather than try to back up and maintain copies of these resources, you can use the programmatic deployment to recover from an attack.
 
 For more information about using IaC, see [Recommendations for using infrastructure as code](/azure/well-architected/operational-excellence/infrastructure-as-code-design).
 
@@ -193,7 +193,7 @@ In the figure:
 - Microsoft Defender for Cloud, with additional plans such as Defender for Servers, analyzes the signals for enhanced threat detection and sends security information and event management (SIEM) data to Microsoft Sentinel.
 - Microsoft Sentinel uses the SIEM data for cyberattack detection, investigation, response, and proactive hunting.
 
-After you have better protected your Azure resources with the recommendations in [Step 1](#step-1) of this article, you need to have a plan for detecting destructive cyberattacks using Microsoft Sentinel. A starting point is to use [advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion). This allows you to build detections for specific scenarios such as data destruction, denial of service, malicious administrative activity, and many more.
+After you have better protected your Azure resources with the recommendations in [Step 1](#step-1-configure-protection-against-cyberattacks) of this article, you need to have a plan for detecting destructive cyberattacks using Microsoft Sentinel. A starting point is to use [advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion). This allows you to build detections for specific scenarios such as data destruction, denial of service, malicious administrative activity, and many more.
 
 As part of preparing your workloads for response, you need to:
 
@@ -230,7 +230,7 @@ Your playbooks should:
 - [Improve your cloud security posture with Microsoft Defender for Cloud](/training/modules/m365-security-azure-security-center/)
 - [Create detections and perform investigations using Microsoft Sentinel](/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/)
 
-## Next Steps
+## Next steps
 
 Continue to implement your [security breach prevention and recovery infrastructure](./adopt/prevent-reduce-business-damage-breach-infrastructure.md).
 

@@ -94,7 +94,7 @@ See these additional articles for applying Zero Trust principles to Azure servic
 See these additional articles for applying Zero Trust principles to Azure networking:
 
 - [Encrypt your network traffic](azure-networking-encryption.md)
-- [Segmentat your network traffic](azure-networking-segmentation.md)
+- [Segment your network traffic](azure-networking-segmentation.md)
 - [Gain visibility into your network traffic](azure-networking-visibility.md)
 - [Discontinue legacy network security technology](azure-networking-legacy.md)
 

@@ -61,7 +61,6 @@ For more information, see [Apply Zero Trust principles to Azure Virtual Desktop]
 
 > [!IMPORTANT]
 > This Zero Trust guidance describes how to use and configure several security solutions and features available on Azure for a reference architecture. Several other resources also provide security guidance for these solutions and features, including:
-
 > - [Microsoft Cloud Security Benchmark](/security/benchmark/azure/introduction)
 > - [Microsoft Cloud Security Baseline](/security/benchmark/azure/security-baselines-overview)
 

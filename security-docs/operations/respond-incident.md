@@ -50,7 +50,7 @@ In this diagram:
 - Insights from signals across your entire organization feed into Microsoft Defender XDR and Microsoft Defender for Cloud.
 - Microsoft Defender XDR and Microsoft Defender for Cloud send SIEM log data through Microsoft Sentinel connectors.
 - SecOps teams can then analyze and respond to threats identified in the Microsoft Sentinel and Microsoft Defender portals.
-- Microsoft Sentinel provides support for multi-cloud environments and integrates with third-party apps and partners.
+- Microsoft Sentinel provides support for multicloud environments and integrates with third-party apps and partners.
 
 For more information about the integration of Microsoft Defender with Microsoft Sentinel, see [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration). This [interactive guide](https://mslearn.cloudguides.com/guides/Investigate%20security%20incidents%20in%20a%20hybrid%20environment%20with%20Azure%20Sentinel)
 steps you through detecting and responding to modern attacks with Microsoft’s unified security information and event management (SIEM) and extended detection and response (XDR) capabilities.
@@ -73,7 +73,7 @@ The process of incident response to resolve an incident using Microsoft Sentinel
 
    Use the Microsoft Sentinel area of the Defender portal deepen your investigation, including:
 
-   - Understanding the scope of the incident by correlating it with your security processes, policies and procedures (3P).
+   - Understanding the scope of the incident by correlating it with your security processes, policies, and procedures (3P).
    - Performing 3P automated investigation and remediation actions and creating custom security orchestration, automation, and response (SOAR) playbooks.
    - Recording evidence for incident management.
    - Adding custom measures.
@@ -98,7 +98,7 @@ For more information, see:
 
 1. Where needed, continue the investigation in the Microsoft Sentinel portal. This includes:
 
-   - Understanding the scope of the incident by correlating it with your security processes, policies and procedures (3P).
+   - Understanding the scope of the incident by correlating it with your security processes, policies, and procedures (3P).
    - Performing 3P automated investigation and remediation actions and creating custom security orchestration, automation, and response (SOAR) playbooks.
    - Recording evidence for incident management.
    - Adding custom measures.
@@ -140,7 +140,7 @@ To investigate Microsoft Sentinel incidents in the Defender portal:
 
 To investigate incidents in the Azure portal:
 
-1. In Microsoft Sentinel, under **Threat management**, select **Incidents** and locate the suspected incident.
+1. In Microsoft Sentinel, under **Threat management**, select **Incidents, and locate the suspected incident.
 
 1. In the incident summary pane, update details like owner name, status, severity, or to add comments.
 
@@ -150,7 +150,7 @@ To investigate incidents in the Azure portal:
 
 ## Step 2: Investigate the incident
 
-If your workspace is onboarded to the unified security operations platform, you'll stay in the Defender portal for this entire step. Otherwise, start in the Azure portal. You'll jump over to the Defender portal for some investigation, and then return to the Azure portal.
+If your workspace is onboarded to the unified security operations platform, you stay in the Defender portal for this entire step. Otherwise, start in the Azure portal. You jump over to the Defender portal for some investigation, and then return to the Azure portal.
 
 ## [Defender portal](#tab/defender-portal)
 
@@ -166,7 +166,7 @@ If your workspace is onboarded to the unified security operations platform, you'
 
 1. As needed, use information in the data set for the incident from the **Evidence and Response** tab.
 
-1. On the **Assets** tab, view the entities involved in the incident. Select a user account, a hostname, an IP address, or an Azure resource to contnue investigating further on the entity details page. For example, if you selected a user, in the user details pane, select **Go to user page** to open the user's entity details page.
+1. On the **Assets** tab, view the entities involved in the incident. Select a user account, a hostname, an IP address, or an Azure resource to continue investigating further on the entity details page. For example, if you selected a user, in the user details pane, select **Go to user page** to open the user's entity details page.
 
 1. On the entity details page, select **Sentinel events** to view detailed timeline information about the selected entity, and entity insights.
 
@@ -194,7 +194,7 @@ If your workspace is onboarded to the unified security operations platform, you'
 
    1. As needed, use information in the data set for the incident from the **Evidence and Response** tab.
 
-1. **Return to the Azure portal** to perform additional incident actions, such as running a playbook or creating an automation rule.
+1. **Return to the Azure portal** to perform extra incident actions, such as running a playbook or creating an automation rule.
 
     Add comments to the incident to record your actions and the results of your analysis.
 
@@ -221,7 +221,7 @@ For more information, see [Closing an incident in the Azure portal](/azure/senti
 
 ---
 
-As needed, report the incident to your incident response lead for possible follow-up to determine additional actions. For example:
+As needed, report the incident to your incident response lead for possible follow-up to determine more actions. For example:
 
 - Inform your Tier 1 security analysts to better detect the attack early.
 - Research the attack in Microsoft Defender XDR Threat Analytics and the security community for a security attack trend.
@@ -237,7 +237,7 @@ The following are the recommended training modules for this step. Training conte
 
 |Training  |[Security incident management in Microsoft Sentinel](/training/modules/incident-management-sentinel/)|
 |---------|---------|
-|:::image type="icon" source="media/incident-management-sentinel.svg" border="false"::: | In this module, you'll investigate Microsoft Sentinel incident management, learn about Microsoft Sentinel events and entities, and discover ways to resolve incidents. |
+|:::image type="icon" source="media/incident-management-sentinel.svg" border="false"::: | In this module, you investigate Microsoft Sentinel incident management, learn about Microsoft Sentinel events and entities, and discover ways to resolve incidents. |
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/incident-management-sentinel/)
 

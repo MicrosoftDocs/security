@@ -34,7 +34,7 @@ If you've onboarded your workspace to the [unified security operations platform]
 
 Confirm the installation method, roles required, and licenses needed to turn on data connectors. For more information, see [Find your Microsoft Sentinel data connector](/azure/sentinel/data-connectors-reference).
 
-The following table is a summary of the prerequisites required to ingest key Azure and Microsoft data connectors: 
+The following table is a summary of the prerequisites required to ingest key Microsoft Sentinel data connectors for Azure and Microsoft services:
 
 | Resource Type    | Installation Method    | Role/Permissions/License Needed |
 |------------------|------------------------|---------------------------------------|
@@ -79,7 +79,7 @@ For more information, see [Microsoft Sentinel Pricing](https://azure.microsoft.c
 
 ### Set up paid data sources
 
-To provide broader monitoring and alerting coverage, focus on adding the **Microsoft Entra ID** and **Microsoft Defender XDR** data connectors. There is a charge for ingesting data from these sources.
+To provide broader monitoring and alerting coverage, focus on adding the **Microsoft Entra ID** and **Microsoft Defender XDR** data connectors. There's a charge for ingesting data from these sources.
 
 Make sure to send Microsoft Defender XDR logs to Microsoft Sentinel if any of the following are required:
 
@@ -102,7 +102,7 @@ This section describes data sources you might want to use, depending on the serv
 |---------|---------|
 |**Azure services**     | If any of the following services are deployed in Azure, use the following connectors to send these resources' Diagnostic Logs to Microsoft Sentinel: <br><br>    - **Azure Firewall** <br>- **Azure Application Gateway** <br>- **Keyvault**<br>    - **Azure Kubernetes Service**<br> - **Azure SQL**<br>- **Network Security Groups**<br>    - **Azure-Arc Servers** <br><br>We recommend that you set up Azure Policy to require that their logs be forwarded to the underlying Log Analytics workspace. For more on information, see [Create diagnostic settings at scale using Azure Policy](/azure/azure-monitor/essentials/diagnostic-settings-policy).        |
 |**Virtual machines**     |  For virtual machines hosted on-premises or in other clouds that require their logs collected, use the following data connectors: <br><br>    - **Windows Security Events using AMA**<br>    - Events via **Defender for Endpoint** (for server)<br>- **Syslog**       |
-|**Network virtual appliances / on-premises sources**     |   For network virtual appliances or other on-premises sources that generate Common Event Format (CEF) or SYSLOG logs, use the following data connectors: <br><br>- **Syslog via AMA** <br>- **Common Event Format (CEF) via AMA** <br><br>   For more information, see, [Ingest Syslog and CEF messages to Microsoft Sentinel with the Azure Monitor Agent](/azure/sentinel/connect-cef-syslog-ama?branch=main&tabs=single%2Ccef%2Cportal).    |
+|**Network virtual appliances / on-premises sources**     |   For network virtual appliances or other on-premises sources that generate Common Event Format (CEF) or SYSLOG logs, use the following data connectors: <br><br>- **Syslog via AMA** <br>- **Common Event Format (CEF) via AMA** <br><br>   For more information, see [Ingest Syslog and CEF messages to Microsoft Sentinel with the Azure Monitor Agent](/azure/sentinel/connect-cef-syslog-ama?branch=main&tabs=single%2Ccef%2Cportal).    |
 
 When you're done, search in the Microsoft Sentinel **Content hub** for other devices and software as a service (SaaS) apps that require logs to be sent to Microsoft Sentinel.
 
@@ -124,7 +124,7 @@ When turning on analytic rules for Microsoft Sentinel, prioritize enabling by co
 
 ## Avoid duplicate incidents
 
-If you enabled the Microsoft Defender XDR connector, a bi-directional sync between 365 Defender incidents and Microosft Sentinel is automatically established.
+If you enabled the Microsoft Defender XDR connector, a bi-directional sync between 365 Defender incidents and Microsoft Sentinel is automatically established.
 
 To avoid creating duplicate incidents for the same alerts, we recommend that you turn off all **Microsoft incident creation rules** for Microsoft Defender XDR-integrated products, including Defender for Endpoint, Defender for Identity, Defender for Office 365, Defender for Cloud Apps, and Microsoft Entra ID Protection. 
 
@@ -134,9 +134,9 @@ For more information, see [Microsoft Defender XDR incidents and Microsoft incide
 
 By default, Microsoft Sentinel enables the **Fusion advanced multistage attack detection** analytic rule to automatically identify multistage attacks.
 
-Leveraging anomalous behavior and suspicious activity events observed across the cyber kill chain, Microsoft Sentinel generates incidents that allow you to see the compromise incidents with two or more alert activities in it with a high degree of confidence.
+Using anomalous behavior and suspicious activity events observed across the cyber kill chain, Microsoft Sentinel generates incidents that allow you to see the compromise incidents with two or more alert activities in it with a high degree of confidence.
 
-Fusion alert technology correlates broad points of data signals with extended machine learning (ML) analysis to help determine known, unknown and emerging threats. For example, fusion detection can take the anomaly rule templates and the scheduled queries created for the [Ransomware scenario](/azure/sentinel/fusion#fusion-for-ransomware) and pair them with alerts from Microsoft Security Suite services, such as:
+Fusion alert technology correlates broad points of data signals with extended machine learning (ML) analysis to help determine known, unknown, and emerging threats. For example, fusion detection can take the anomaly rule templates and the scheduled queries created for the [Ransomware scenario](/azure/sentinel/fusion#fusion-for-ransomware) and pair them with alerts from Microsoft Security Suite services, such as:
 
 -   Microsoft Entra ID Protection
 -   Microsoft Defender for Cloud
@@ -175,7 +175,7 @@ After reviewing and modifying fusion and anomaly rules, enable the out-of-the-bo
 
 With fusion, anomaly, and threat intelligence analytic rules enabled, conduct a [MITRE Att&ck crosswalk](/azure/sentinel/mitre-coverage) to help you decide which remaining analytic rules to enable and to finish implementing a mature XDR (extended detection and response) process. This empowers you to detect and respond throughout the lifecycle of an attack.
 
-The [MITRE Att&ck research department](https://attack.mitre.org/matrices/enterprise/) created the MITRE method, and it is provided as part of Microsoft Sentinel to ease your implementation. Ensure you have analytic rules that stretch the length and breadth of the attack vectors approach. 
+The [MITRE Att&ck research department](https://attack.mitre.org/matrices/enterprise/) created the MITRE method, and it's provided as part of Microsoft Sentinel to ease your implementation. Ensure you have analytic rules that stretch the length and breadth of the attack vectors approach. 
 
 1. Review the MITRE techniques that are covered by your existing active analytic rules.
 

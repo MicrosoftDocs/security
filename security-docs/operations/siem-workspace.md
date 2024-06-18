@@ -26,7 +26,7 @@ This article provides recommendations on how to design and implement Microsoft S
 
 ## Step 1: Design a governance strategy
 
-If your organization has many Azure subscriptions, you may need a way to efficiently manage access, policies, and compliance for those subscriptions. Management groups provide a governance scope for subscriptions. When you organize your subscriptions within management groups, the governance conditions you configure for a management group apply to the subscriptions it contains. For more information, see [Organize your resources with management groups](/azure/governance/management-groups/overview).
+If your organization has many Azure subscriptions, you might need a way to efficiently manage access, policies, and compliance for those subscriptions. Management groups provide a governance scope for subscriptions. When you organize your subscriptions within management groups, the governance conditions you configure for a management group apply to the subscriptions it contains. For more information, see [Organize your resources with management groups](/azure/governance/management-groups/overview).
 
 For example, the Microsoft Sentinel workspace in the following diagram is in the **Security** subscription under the **Platform** management group, which is part of the Microsoft Entra ID tenant.
 
@@ -89,7 +89,7 @@ This automatically gives you [31 days of data ingestion up to 10 Gb a day](/azur
 
 - Set your Log Analytics Workspace supporting Microsoft Sentinel to [90 day retention](/azure/sentinel/billing?tabs=commitment-tier#data-retention-and-archived-logs-costs) at a minimum.
 
-Once you onboard Microsoft Sentinel to a Log Analytics workspace, you get 90 days of data retention at no additional cost, and ensure a 90-day rollover of log data. You'll incur costs for the total amount of data in the workspace after 90 days. You might consider retaining log data for longer based on governmental requirements. For more information, see [Create Log Analytics workspaces](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal) and [Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard).
+Once you onboard Microsoft Sentinel to a Log Analytics workspace, you get 90 days of data retention at no extra cost, and ensure a 90-day rollover of log data. You'll incur costs for the total amount of data in the workspace after 90 days. You might consider retaining log data for longer based on governmental requirements. For more information, see [Create Log Analytics workspaces](/azure/azure-monitor/logs/quick-create-workspace?tabs=azure-portal) and [Quickstart: Onboard in Microsoft Sentinel](/azure/sentinel/quickstart-onboard).
 
 ### Zero Trust with Microsoft Sentinel
 
@@ -115,7 +115,7 @@ The following table lists some of the Microsoft Sentinel-specific roles.
 | **Microsoft Sentinel Contributor** | In addition to the capabilities of the Microsoft Sentinel Playbook Operator role, create and edit workbooks, analytics rules, and other Microsoft Sentinel resources. This role is applicable to user types of security engineers. |
 | **Microsoft Sentinel Automation Contributor** | Allows Microsoft Sentinel to add playbooks to automation rules. It isn't meant for user accounts. |
 
-When you assign Microsoft Sentinel-specific Azure roles, you may come across other Azure and Log Analytics roles that may have been assigned to users for other purposes. For example, the *Log Analytics Contributor* and *Log Analytics Reader* roles grant access to a Log Analytics workspace. 
+When you assign Microsoft Sentinel-specific Azure roles, you might come across other Azure and Log Analytics roles that might have been assigned to users for other purposes. For example, the *Log Analytics Contributor* and *Log Analytics Reader* roles grant access to a Log Analytics workspace. 
 
 For more information, see [Roles and permissions in Microsoft Sentinel](/azure/sentinel/roles) and [Manage access to Microsoft Sentinel data by resource](/azure/sentinel/resource-context-rbac).
 
@@ -125,13 +125,13 @@ Azure Lighthouse enables multitenant management with scalability, higher automat
 
 :::image type="content" source="./media/sentinel-workspaces-multi-tenant.svg" alt-text="Diagram of an example use of Azure Lighthouse across multiple Microsoft Entra tenants." lightbox="./media/sentinel-workspaces-multi-tenant.svg" border="false":::
 
-With Azure Lighthouse, you can run queries across multiple workspaces or create workbooks to visualize and monitor data from your connected data sources and gain additional insight. It’s important to consider Zero Trust principles. See [Recommended security practices](/azure/lighthouse/concepts/recommended-security-practices) to implement least privileges access controls for Azure Lighthouse.
+With Azure Lighthouse, you can run queries across multiple workspaces or create workbooks to visualize and monitor data from your connected data sources and gain extra insight. It’s important to consider Zero Trust principles. See [Recommended security practices](/azure/lighthouse/concepts/recommended-security-practices) to implement least privileges access controls for Azure Lighthouse.
 
 Consider the following questions when implementing security best practices for Azure Lighthouse:
 
 - Who is responsible for data ownership?
 - What are the data isolation and compliance requirements?
-- How will you implement least privileges across tenants.
+- How will you implement least privileges across tenants?
 - How will multiple data connectors in multiple Microsoft Sentinel workspaces be managed?
 - How to monitor office 365 environments?
 - How to protect intellectual properties&ndash;for example, playbooks, notebooks, analytics rules&ndash;across tenants?

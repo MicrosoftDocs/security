@@ -774,33 +774,33 @@
 				<!-- Unsupported Record: EmfPlusRecordTypeSetPixelOffsetMode  -->
 				<svg viewBox="-0.51371 -0.51429 342 290.99" height="165.565" preserveAspectRatio="none" width="210.61" x="0"
 						y="454.2">
-					<clipPath id="mfid31">
-						<rect x="-0.51371" y="-0.51429" width="342" height="290.99" id="mfid32"/>
+					<clipPath id="mfid13">
+						<rect x="-0.51371" y="-0.51429" width="342" height="290.99" id="mfid14"/>
 					</clipPath>
-					<g clip-path="url(#mfid31)">
-						<mask id="mfid33">
+					<g clip-path="url(#mfid13)">
+						<mask id="mfid15">
 							<rect width="342" height="291" fill="white" stroke="none"/>
 						</mask>
-						<mask id="mfid34" fill="white" stroke="none">
+						<mask id="mfid16" fill="white" stroke="none">
 							<g>
-								<g mask="url(#mfid33)">
-									<use xlink:href="#mfid32"/>
+								<g mask="url(#mfid15)">
+									<use xlink:href="#mfid14"/>
 								</g>
 							</g>
 						</mask>
 						<!-- GetDC -->
-						<mask id="mfid35" fill-rule="evenodd" fill="white" stroke="none">
+						<mask id="mfid17" fill-rule="evenodd" fill="white" stroke="none">
 							<rect x="0" y="0" width="342" height="291"/>
 						</mask>
 						<!-- Released DC -->
 						<defs>
-							<path id="mfid36"
+							<path id="mfid18"
 									d="M0,0 L1.0007,-1.5 L1.0007,-0.75 L2.5306,-0.75 L2.5306,-1.5 L3.5312,0 L2.5306,1.5 L2.5306,0.75 L1.0007,0.75 L1.0007,1.5 L0,0 Z"/>
 						</defs>
-						<g mask="url(#mfid34)">
+						<g mask="url(#mfid16)">
 							<g transform="matrix(96, 0, 0, 96, 1.5, 145.5)">
 								<g fill="#c00000" fill-opacity="0.49804">
-									<use xlink:href="#mfid36" fill-rule="evenodd" stroke="none"/>
+									<use xlink:href="#mfid18" fill-rule="evenodd" stroke="none"/>
 								</g>
 							</g>
 						</g>
@@ -2930,5 +2930,12 @@
 			<rect x="0" y="585.205" width="79.7812" height="34.56" class="st2"/>
 			<text x="10.59" y="599.18" class="st8" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Azure DDoS <tspan
 						x="14.86" dy="1.2em" class="st33">Protection</tspan></text>		</g>
+		<g id="shape3240-613" v:mID="3240" v:groupContext="shape" transform="translate(4.29436,-338.478)">
+			<title>Sheet.3240</title>
+			<v:userDefs>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(809000):26"/>
+			</v:userDefs>
+			<rect x="0" y="347.046" width="167.853" height="272.719" class="st34"/>
+		</g>
 	</g>
 </svg>

@@ -24,7 +24,7 @@ Once devices or files are locked or encrypted, cybercriminals can extort money f
 
 ## How do ransomware attacks work?
 
-Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [LockBit ransomware](/security/ransomware/human-operated-ransomware). 
+Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [Conti and LockBit ransomware](https://blogs.microsoft.com/on-the-issues/2023/04/06/stopping-cybercriminals-from-abusing-security-tools). 
 
 ### Automated ransomware attacks
 

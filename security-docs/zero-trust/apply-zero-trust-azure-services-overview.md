@@ -88,12 +88,13 @@ See these additional articles for applying Zero Trust principles to Azure servic
 - [Azure Virtual Desktop](azure-infrastructure-avd.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
+- [Protect Azure resources from cyberattacks](azure-protect-resources-cyberattacks.md)
 - [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
 
 See these additional articles for applying Zero Trust principles to Azure networking:
 
 - [Encrypt your network traffic](azure-networking-encryption.md)
-- [Segmentat your network traffic](azure-networking-segmentation.md)
+- [Segment your network traffic](azure-networking-segmentation.md)
 - [Gain visibility into your network traffic](azure-networking-visibility.md)
 - [Discontinue legacy network security technology](azure-networking-legacy.md)
 

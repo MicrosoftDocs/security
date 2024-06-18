@@ -69,6 +69,8 @@ For the elements of the **Assume breach** Zero Trust guiding principle:
 
 This article assumes that you have already [modernized your security posture](rapidly-modernize-security-posture.md).
 
+For detailed information about Microsoft Azure resources, see [Protect your Azure resources from destructive cyberattacks](../azure-protect-resources-cyberattacks.md).
+
 ## The adoption cycle for implementing security breach prevention and recovery infrastructure
 
 This article walks through implementing security breach prevention and recovery infrastructure of the [Prevent or reduce business damage from a breach](prevent-reduce-business-damage-breach.md) business scenario using the same lifecycle phases as the [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview)—Define strategy, Plan, Ready, Adopt, and Govern and manage—but adapted for Zero Trust.

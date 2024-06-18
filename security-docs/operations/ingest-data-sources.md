@@ -187,11 +187,11 @@ The [MITRE Att&ck research department](https://attack.mitre.org/matrices/enterpr
 
     #### [Defender portal (Preview)](#tab/defender-portal)
 
-    :::image type="content" source="./media/sentinel-dashboard-defender.png" alt-text="Image of the Sentinel dashboard" lightbox="./media/sentinel-dashboard-defender.png":::
+    :::image type="content" source="./media/sentinel-dashboard-defender.png" alt-text="Screenshot of the MITRE ATT&CK dashboard in the unified security operations portal." lightbox="./media/sentinel-dashboard-defender.png":::
 
     #### [Azure portal](#tab/azure-portal)
 
-    :::image type="content" source="./media/sentinel-dashboard.svg" alt-text="Image of the Sentinel dashboard" lightbox="./media/sentinel-dashboard.svg":::
+    :::image type="content" source="./media/sentinel-dashboard.svg" alt-text="Screenshot of the MITRE ATT&CK dashboard in Microsoft Sentinel." lightbox="./media/sentinel-dashboard.svg":::
 
     ---
 

@@ -43,7 +43,7 @@ In this diagram:
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel.
 
-:::image type="content" source="./media/sentinel-xdr.png" alt-text="Diagram of the Microsoft solution for XDR with Microsoft Sentinel" lightbox="./media/sentinel-xdr.png" border="false":::
+:::image type="content" source="./media/sentinel-xdr.png" alt-text="Diagram of the Microsoft solution for XDR with Microsoft Sentinel." lightbox="./media/sentinel-xdr.png" border="false":::
 
 In this diagram:
 

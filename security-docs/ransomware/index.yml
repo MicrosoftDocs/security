@@ -109,6 +109,8 @@ landingContent:
            url:  /compliance/assurance/assurance-malware-and-ransomware-protection
          - text: In Azure
            url:  /azure/security/fundamentals/ransomware-protection
+         - text: In Copilot for Security
+           url:  /security/business/ai-machine-learning/microsoft-copilot-security.md
          - text: In OneNote
            url:  dart-ransomware-case-study.md
          - text: In Sentinel

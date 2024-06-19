@@ -12,16 +12,21 @@ manager: amycolannino
 ms.collection:
   - zerotrust-pillar
 ---
-
 # Securing identity with Zero Trust
 
 :::image type="icon" source="../media/icon-identity-medium.png":::
 
 **Background** 
 
-Cloud applications and the mobile workforce have redefined the security perimeter. Employees are bringing their own devices and working remotely. Data is being accessed outside the corporate network and shared with external collaborators such as partners and vendors. Corporate applications and data are moving from on-premises to hybrid and cloud environments. Organizations can no longer rely on traditional network controls for security. Controls need to move to where the data is: on devices, inside apps, and with partners.
+Cloud applications and the mobile workforce require a new way of thinking when it comes to security. Some employees bring their own devices or work in a hybrid manner. 
 
-Identities, representing people, services, or IoT devices, are the common dominator across today's many [networks](https://aka.ms/ZTNetwork), [endpoints](https://aka.ms/ZTDevices), and [applications](https://aka.ms/ZTApplications). In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to [data](https://aka.ms/ZTData).
+Data is accessed outside the traditional corporate network perimeter and is shared with external collaborators such as partners and vendors. 
+
+Traditional corporate applications and data have moved from on-premises to hybrid and cloud environments. 
+
+Organizations can no longer rely on traditional network controls for security.
+
+Identities, that represent people, services, or devices, are the common dominator across [networks](/security/zero-trust/deploy/networks), [endpoints](/security/zero-trust/deploy/endpoints), and [applications](/security/zero-trust/deploy/applications). In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to [data](/security/zero-trust/deploy/data).
 
 **Before an identity attempts to access a resource, organizations must:**
 
@@ -34,7 +39,6 @@ Once the identity has been verified, we can control that identity's access to re
 ## Identity Zero Trust deployment objectives
 
 Before most organizations start the Zero Trust journey, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and [visibility](/security/zero-trust/deploy/visibility-automation-orchestration) into identity risk is very limited.
-
 
 When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these initial deployment objectives:
 
@@ -101,7 +105,6 @@ Follow these steps:
 
 1. [Roll out Microsoft Entra multifactor authentication (P1)](/azure/active-directory/authentication/howto-mfa-getstarted). This is a foundational piece of reducing user session risk. As users appear on new devices and from new locations, being able to respond to an MFA challenge is one of the most direct ways that your users can teach us that these are familiar devices/locations as they move around the world (without having administrators parse individual signals).
 1. [Block legacy authentication](/azure/active-directory/conditional-access/block-legacy-authentication). One of the most common attack vectors for malicious actors is to use stolen/replayed credentials against legacy protocols, such as SMTP, that cannot do modern security challenges.
-
 
 ### II. Conditional Access policies gate access and provide remediation activities
 

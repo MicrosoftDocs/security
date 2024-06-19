@@ -36,7 +36,7 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security
 
   # Card 
-  - title: Frequently asked questions
+  - title: Frequently asked questions about ransomware
     linkLists:
       - linkListType: concept
         links:
@@ -71,7 +71,7 @@ landingContent:
 
 
 # Card
-  - title: Blogs
+  - title: Blogs about ransomware
     linkLists:
       - linkListType: reference
         links:
@@ -117,7 +117,7 @@ landingContent:
            url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
 
 # Card
-  - title: Threat intelligence for Microsoft Defender XDR subscription holders
+  - title: Ransomware protection using threat intelligence for Microsoft Defender XDR subscription holders
     linkLists:
       - linkListType: reference
         links:

@@ -1,11 +1,14 @@
 ---
 title: Securing identity with Zero Trust
 description: Identities, representing people, services, or IoT devices, are the common dominator across today’s many networks, endpoints, and applications. In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to data. 
-ms.date: 10/19/2023
 ms.service: security
-author: dansimp
-ms.author: dansimp
+
 ms.topic: conceptual
+ms.date: 06/19/2024
+
+ms.author: joflore
+author: MicrosoftGuyJFlo
+manager: amycolannino
 ms.collection:
   - zerotrust-pillar
 ---
@@ -22,64 +25,32 @@ Identities, representing people, services, or IoT devices, are the common domina
 
 **Before an identity attempts to access a resource, organizations must:**
 
--   Verify the identity with strong authentication.
-
--   Ensure access is compliant and typical for that identity.
-
--   Follows least privilege access principles.
+- Verify the identity with strong authentication.
+- Ensure access is compliant and typical for that identity.
+- Follow least privilege access principles.
 
 Once the identity has been verified, we can control that identity's access to resources based on organization policies, on-going risk analysis, and other tools.
 
 ## Identity Zero Trust deployment objectives
 
-<div class="alert">
-   <p><b>Before</b> most organizations <b>start the Zero Trust journey</b>, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and <a href="https://aka.ms/ZTCrossPillars">visibility</a> into identity risk is very limited.</p>
-</div>
+Before most organizations start the Zero Trust journey, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and [visibility](/security/zero-trust/deploy/visibility-automation-orchestration) into identity risk is very limited.
 
 
-<table border="0">
-   <tr>
-      <td colspan="2">
-         <p>When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these <b>initial deployment objectives</b>:</p>
-	  </td>
-   </tr>
-   <tr>
-      <td>
-		 <p><img src="../media/icon-initial-deployment-small.png" alt="List icon with one checkmark."></p>
-      </td>
-      <td>
-	     <p><b>I.</b> <a href="#i-cloud-identity-federates-with-on-premises-identity-systems">Cloud identity federates with on-premises identity systems.</a></p>
-         <p><b>II.</b> <a href="#ii-conditional-access-policies-gate-access-and-provide-remediation-activities">Conditional Access policies gate access and provide remediation activities.</a></p>
-	     <p><b>III.</b> <a href="#iii-analytics-improve-visibility">Analytics improve visibility.</a></p>
-      </td>
-   </tr>
-   <tr>
-      <td colspan="2">
-         <p>After these are completed, focus on these <b>additional deployment objectives</b>:</p>
-      </td>
-   </tr>
-   <tr>
-      <td>
-		 <p><img src="../media/icon-additional-deployment-small.png" alt="List icon with two checkmarks."></p>
-      </td>
-      <td>
-         <p><b>IV.</b> <a href="#iv-identities-and-access-privileges-are-managed-with-identity-governance">Identities and access privileges are managed with identity governance.</a></p>
-         <p><b>V.</b> <a href="#v-user-device-location-and-behavior-is-analyzed-in-real-time-to-determine-risk-and-deliver-ongoing-protection">User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection.</a></p>
-         <p><b>VI.</b> <a href="#vi-integrate-threat-signals-from-other-security-solutions-to-improve-detection-protection-and-response">Integrate threat signals from other security solutions to improve detection, protection, and response.</a></p>
-      </td>
-   </tr>
-</table>
+When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these initial deployment objectives:
+
+- [Cloud identity federates with on-premises identity systems](#i-cloud-identity-federates-with-on-premises-identity-systems).
+- [Conditional Access policies gate access and provide remediation activities](#ii-conditional-access-policies-gate-access-and-provide-remediation-activities).
+- [Analytics improve visibility](#iii-analytics-improve-visibility).
+
+After these are completed, focus on these additional deployment objectives
+
+- [Identities and access privileges are managed with identity governance](#iv-identities-and-access-privileges-are-managed-with-identity-governance).
+- [User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection](#v-user-device-location-and-behavior-is-analyzed-in-real-time-to-determine-risk-and-deliver-ongoing-protection).
+- [Integrate threat signals from other security solutions to improve detection, protection, and response](#vi-integrate-threat-signals-from-other-security-solutions-to-improve-detection-protection-and-response).
 
 ## Identity Zero Trust deployment guide
 
 This guide will walk you through the steps required to manage identities following the principles of a Zero Trust security framework.
-
-
-<br/><br/>
-<!-- H2 heading, "Initial deployment objectives" -->
-[!INCLUDE [H2 heading, Initial deployment objectives](../includes/deployment-objectives-initial.md)]
-
-
 
 ### I. Cloud identity federates with on-premises identity systems
 
@@ -87,23 +58,17 @@ Microsoft Entra ID enables strong authentication, a point of integration for end
 
 :::image type="content" source="../media/diagram-steps-box-identity-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
 
-
-<a name='connect-all-of-your-users-to-azure-ad-and-federate-with-on-premises-identity-systems'></a>
-
 #### Connect all of your users to Microsoft Entra ID and federate with on-premises identity systems
 
 Maintaining a healthy pipeline of your employees' identities and the necessary security artifacts (groups for authorization and endpoints for extra access policy controls) puts you in the best place to use consistent identities and controls in the cloud. 
 
 Follow these steps:
 
-1.  [Choose an authentication option](https://aka.ms/auth-options). Microsoft Entra ID provides you the best brute force, DDoS, and password spray protection, but make the decision that's right for your organization and your compliance needs.
+1. [Choose an authentication option](/entra/identity/hybrid/connect/choose-ad-authn). Microsoft Entra ID provides you the best brute force, DDoS, and password spray protection, but make the decision that's right for your organization and your compliance needs.
 
-2.  Only bring the identities you absolutely need. For example, use going to the cloud as an opportunity to leave behind service accounts that only make sense on-premises. Leave on-premises privileged roles behind.
+1. Only bring the identities you absolutely need. For example, use going to the cloud as an opportunity to leave behind service accounts that only make sense on-premises. Leave on-premises privileged roles behind.
 
-3.  If your enterprise has more than 100,000 users, groups, and devices combined [build a high performance sync box](https://aka.ms/aadconnectperf) that will keep your life cycle up to date.
-
-
-<a name='establish-your-identity-foundation-with-azure-ad'></a>
+1. If your enterprise has more than 100,000 users, groups, and devices combined [build a high performance sync box](/entra/identity/hybrid/connect/plan-connect-performance-factors) that will keep your life cycle up to date.
 
 #### Establish your Identity Foundation with Microsoft Entra ID
 
@@ -111,9 +76,7 @@ A Zero Trust strategy requires verifying explicitly, using least-privileged acce
 
 Take this step:
 
- - Put Microsoft Entra ID in the path of every access request. This connects every user and every app or resource through one identity control plane and provides Microsoft Entra ID with the signal to make the best possible decisions about the authentication/authorization risk. In addition, single sign-on and consistent policy guardrails provide a better user experience and contribute to productivity gains.
-
-<a name='integrate-all-your-applications-with-azure-ad'></a>
+- Put Microsoft Entra ID in the path of every access request. This connects every user and every app or resource through one identity control plane and provides Microsoft Entra ID with the signal to make the best possible decisions about the authentication/authorization risk. In addition, single sign-on and consistent policy guardrails provide a better user experience and contribute to productivity gains.
 
 #### Integrate all your applications with Microsoft Entra ID
 
@@ -123,27 +86,21 @@ Also make sure you do not have multiple IAM engines in your environment. Not onl
 
 Follow these steps:
 
-1.  [Integrate modern enterprise applications](/azure/active-directory/manage-apps/plan-sso-deployment) that speak OAuth2.0 or SAML.
-
-2.  For Kerberos and form-based auth applications, [integrate them using the Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-deployment-plan).
-
-3.  If you publish your legacy applications using application delivery networks/controllers, use Microsoft Entra ID to [integrate](/azure/active-directory/manage-apps/secure-hybrid-access) with most of the major ones (such as Citrix, Akamai, and F5).
-
-4.  To help discover and migrate your apps off of ADFS and existing/older IAM engines, review [resources and tools](/azure/active-directory/manage-apps/migration-resources).
-
-5.  [Power push identities into your various cloud applications](/azure/active-directory/app-provisioning/plan-auto-user-provisioning). This gives you a tighter identity lifecycle integration within those apps.
+1. [Integrate modern enterprise applications](/azure/active-directory/manage-apps/plan-sso-deployment) that speak OAuth2.0 or SAML.
+1. For Kerberos and form-based auth applications, [integrate them using the Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy-deployment-plan).
+1. If you publish your legacy applications using application delivery networks/controllers, use Microsoft Entra ID to [integrate](/azure/active-directory/manage-apps/secure-hybrid-access) with most of the major ones (such as Citrix, Akamai, and F5).
+1. To help discover and migrate your apps off of ADFS and existing/older IAM engines, review [resources and tools](/azure/active-directory/manage-apps/migration-resources).
+1. [Power push identities into your various cloud applications](/azure/active-directory/app-provisioning/plan-auto-user-provisioning). This gives you a tighter identity lifecycle integration within those apps.
 
 > [!TIP]
-> [Learn about implementing an end-to-end Zero Trust strategy for applications](https://aka.ms/ZTApplications).
-
+> [Learn about implementing an end-to-end Zero Trust strategy for applications](/security/zero-trust/deploy/applications).
 
 #### Verify explicitly with strong authentication
 
 Follow these steps:
 
-1.  [Roll out Microsoft Entra multifactor authentication (P1)](/azure/active-directory/authentication/howto-mfa-getstarted). This is a foundational piece of reducing user session risk. As users appear on new devices and from new locations, being able to respond to an MFA challenge is one of the most direct ways that your users can teach us that these are familiar devices/locations as they move around the world (without having administrators parse individual signals).
-
-2.  [Block legacy authentication](/azure/active-directory/conditional-access/block-legacy-authentication). One of the most common attack vectors for malicious actors is to use stolen/replayed credentials against legacy protocols, such as SMTP, that cannot do modern security challenges.
+1. [Roll out Microsoft Entra multifactor authentication (P1)](/azure/active-directory/authentication/howto-mfa-getstarted). This is a foundational piece of reducing user session risk. As users appear on new devices and from new locations, being able to respond to an MFA challenge is one of the most direct ways that your users can teach us that these are familiar devices/locations as they move around the world (without having administrators parse individual signals).
+1. [Block legacy authentication](/azure/active-directory/conditional-access/block-legacy-authentication). One of the most common attack vectors for malicious actors is to use stolen/replayed credentials against legacy protocols, such as SMTP, that cannot do modern security challenges.
 
 
 ### II. Conditional Access policies gate access and provide remediation activities
@@ -158,39 +115,27 @@ Planning your Conditional Access policies in advance and having a set of active 
 
 Take this step:
 
- - Check out our [deployment guidance](/azure/active-directory/conditional-access/plan-conditional-access) and [best practices](https://aka.ms/resilientaad) for resilient Conditional Access policies.
-
-<a name='register-devices-with-azure-ad-to-restrict-access-from-vulnerable-and-compromised-devices'></a>
+- Check out our [deployment guidance](/azure/active-directory/conditional-access/plan-conditional-access) and [best practices](https://aka.ms/resilientaad) for resilient Conditional Access policies.
 
 #### Register devices with Microsoft Entra ID to restrict access from vulnerable and compromised devices
 
 Follow these steps:
 
-1.  [Enable Microsoft Entra hybrid join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Microsoft Entra join](/azure/active-directory/devices/concept-azure-ad-join-hybrid). If you are managing the user's laptop/computer, bring that information into Microsoft Entra ID and use it to help make better decisions. For example, you may choose to allow rich client access to data (clients that have offline copies on the computer) if you know the user is coming from a machine that your organization controls and manages. If you do not bring this in, you will likely choose to block access from rich clients, which may result in your users working around your security or using shadow IT.
-
-2.  Enable the [Intune](/mem/intune/remote-actions/device-management) service within Microsoft Endpoint Manager (EMS) for managing your users' mobile devices and [enroll devices](/mem/intune/enrollment/device-enrollment). The same can be said about user mobile devices as about laptops: The more you know about them (patch level, jailbroken, rooted, etc.), the more you are able to trust or mistrust them and provide a rationale for why you block/allow access.
+1. [Enable Microsoft Entra hybrid join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Microsoft Entra join](/azure/active-directory/devices/concept-azure-ad-join-hybrid). If you are managing the user's laptop/computer, bring that information into Microsoft Entra ID and use it to help make better decisions. For example, you may choose to allow rich client access to data (clients that have offline copies on the computer) if you know the user is coming from a machine that your organization controls and manages. If you do not bring this in, you will likely choose to block access from rich clients, which may result in your users working around your security or using shadow IT.
+1. Enable the [Intune](/mem/intune/remote-actions/device-management) service within Microsoft Endpoint Manager (EMS) for managing your users' mobile devices and [enroll devices](/mem/intune/enrollment/device-enrollment). The same can be said about user mobile devices as about laptops: The more you know about them (patch level, jailbroken, rooted, etc.), the more you are able to trust or mistrust them and provide a rationale for why you block/allow access.
 
 > [!TIP]
 > [Learn about implementing an end-to-end Zero Trust strategy for endpoints](https://aka.ms/ZTEndpoints)
-
 
 ### III. Analytics improve visibility
 
 As you build your estate in Microsoft Entra ID with authentication, authorization, and provisioning, it's important to have strong operational insights into what is happening in the directory.
 
-
 #### Configure your logging and reporting to improve visibility
 
 Take this step:
 
- - [Plan a Microsoft Entra reporting and monitoring deployment](/azure/active-directory/reports-monitoring/plan-monitoring-and-reporting) to be able to persist and analyze logs from Microsoft Entra ID, either in Azure or using a SIEM system of choice.
-
-
-<br/><br/>
-<!-- H2 heading, "Additional deployment objectives" -->
-[!INCLUDE [H2 heading, Additional deployment objectives](../includes/deployment-objectives-additional.md)]
-
-
+- [Plan a Microsoft Entra reporting and monitoring deployment](/azure/active-directory/reports-monitoring/plan-monitoring-and-reporting) to be able to persist and analyze logs from Microsoft Entra ID, either in Azure or using a SIEM system of choice.
 
 ### IV. Identities and access privileges are managed with identity governance
 
@@ -198,17 +143,14 @@ Once you've accomplished your initial three objectives, you can focus on additio
 
 :::image type="content" source="../media/diagram-steps-box-identity-4.png" alt-text="Diagram of the steps within phase 4 of the additional deployment objectives." border="true":::
 
-
 #### Secure privileged access with Privileged Identity Management
 
 Control the endpoints, conditions, and credentials that users use to access privileged operations/roles.
 
 Follow these steps:
 
-1.  [Take control of your privileged identities](/azure/active-directory/users-groups-roles/directory-admin-roles-secure). Keep in mind that in a digitally-transformed organization, privileged access is not only administrative access, but also application owner or developer access that can change the way your mission-critical apps run and handle data.
-
-2.  [Use Privileged Identity Management to secure privileged identities](/azure/active-directory/privileged-identity-management/pim-deployment-plan).
-
+1. [Take control of your privileged identities](/azure/active-directory/users-groups-roles/directory-admin-roles-secure). Keep in mind that in a digitally-transformed organization, privileged access is not only administrative access, but also application owner or developer access that can change the way your mission-critical apps run and handle data.
+1. [Use Privileged Identity Management to secure privileged identities](/azure/active-directory/privileged-identity-management/pim-deployment-plan).
 
 #### Restrict user consent to applications
 
@@ -216,12 +158,10 @@ User consent to applications is a very common way for modern applications to get
 
 Follow these steps:
 
-1.  [Restrict user consent and manage consent requests](/azure/active-directory/manage-apps/manage-consent-requests) to ensure that no unnecessary exposure occurs of your organization's data to apps.
-
-2.  [Review prior/existing consent in your organization](/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants?view=o365-worldwide&preserve-view=true) for any excessive or malicious consent.
+1. [Restrict user consent and manage consent requests](/azure/active-directory/manage-apps/manage-consent-requests) to ensure that no unnecessary exposure occurs of your organization's data to apps.
+1. [Review prior/existing consent in your organization](/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants?view=o365-worldwide&preserve-view=true) for any excessive or malicious consent.
 
 For more on tools to protect against tactics to access sensitive information, see "Strengthen protection against cyber threats and rogue apps" in our [guide to implementing an identity Zero Trust strategy](https://aka.ms/ZTIdentity).
-
 
 #### Manage entitlement
 
@@ -229,9 +169,8 @@ With applications centrally authenticating and driven from Microsoft Entra ID, y
 
 Follow these steps:
 
-1.  Use Entitlement Management to [create access packages](/azure/active-directory/governance/entitlement-management-access-package-create) that users can request as they join different teams/projects and that assigns them access to the associated resources (such as applications, SharePoint sites, group memberships).
-
-2.  If deploying Entitlement Management is not possible for your organization at this time, at least enable self-service paradigms in your organization by deploying [self-service group management](/azure/active-directory/users-groups-roles/groups-self-service-management) and [self-service application access](/azure/active-directory/manage-apps/manage-self-service-access).
+1. Use Entitlement Management to [create access packages](/azure/active-directory/governance/entitlement-management-access-package-create) that users can request as they join different teams/projects and that assigns them access to the associated resources (such as applications, SharePoint sites, group memberships).
+1. If deploying Entitlement Management is not possible for your organization at this time, at least enable self-service paradigms in your organization by deploying [self-service group management](/azure/active-directory/users-groups-roles/groups-self-service-management) and [self-service application access](/azure/active-directory/manage-apps/manage-self-service-access).
 
 #### Use passwordless authentication to reduce the risk of phishing and password attacks
 
@@ -239,8 +178,7 @@ With Microsoft Entra ID supporting FIDO 2.0 and passwordless phone sign-in, you 
 
 Take this step:
 
- - [Start rolling out passwordless credentials](/azure/active-directory/authentication/howto-authentication-passwordless-deployment) in your organization.
-
+- [Start rolling out passwordless credentials](/azure/active-directory/authentication/howto-authentication-passwordless-deployment) in your organization.
 
 ### V. User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection
 
@@ -248,15 +186,13 @@ Real-time analysis is critical for determining risk and protection.
 
 :::image type="content" source="../media/diagram-steps-box-identity-5.png" alt-text="Diagram of the steps within phase 5 of the additional deployment objectives." border="true":::
 
-<a name='deploy-azure-ad-password-protection'></a>
-
 #### Deploy Microsoft Entra Password Protection
 
 While enabling other methods to verify users explicitly, don't ignore weak passwords, password spray, and breach replay attacks. And [classic complex password policies do not prevent the most prevalent password attacks](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984).
 
 Take this step:
 
- - Enable Microsoft Entra Password Protection for your users [in the cloud](/azure/active-directory/authentication/concept-password-ban-bad) and [on-premises](/azure/active-directory/authentication/howto-password-ban-bad-on-premises-deploy).
+- Enable Microsoft Entra Password Protection for your users [in the cloud](/azure/active-directory/authentication/concept-password-ban-bad) and [on-premises](/azure/active-directory/authentication/howto-password-ban-bad-on-premises-deploy).
 
 #### Enable Identity Protection
 
@@ -280,9 +216,9 @@ Using signals emitted after authentication and with Defender for Cloud Apps prox
 
 Follow these steps:
 
-1.  [Enable Conditional Access integration](/cloud-app-security/proxy-intro-aad).
+1. [Enable Conditional Access integration](/cloud-app-security/proxy-intro-aad).
 
-2.  [Extend Conditional Access to on-premises apps](/azure/active-directory/manage-apps/application-proxy-integrate-with-microsoft-cloud-application-security).
+1. [Extend Conditional Access to on-premises apps](/azure/active-directory/manage-apps/application-proxy-integrate-with-microsoft-cloud-application-security).
 
 #### Enable restricted session for use in access decisions
 
@@ -290,8 +226,7 @@ When a user's risk is low, but they are signing in from an unknown endpoint, you
 
 Take this step:
 
- - Enable limited access to [SharePoint Online](https://aka.ms/spolimitedaccessdocs) and [Exchange Online](https://aka.ms/owalimitedaccess)
-
+- Enable limited access to [SharePoint Online](https://aka.ms/spolimitedaccessdocs) and [Exchange Online](https://aka.ms/owalimitedaccess)
 
 ### VI. Integrate threat signals from other security solutions to improve detection, protection, and response
 
@@ -304,8 +239,7 @@ Integration with Microsoft Defender for Identity enables Microsoft Entra ID to k
 Follow these steps:
 
 1. [Enable Microsoft Defender for Identity](/cloud-app-security/aatp-integration) with Microsoft Defender for Cloud Apps to bring on-premises signals into the risk signal we know about the user.
-
-2. Check the [combined Investigation Priority score](https://techcommunity.microsoft.com/t5/enterprise-mobility-security/introducing-investigation-priority-built-on-user-and-entity/ba-p/360853) for each user at risk to give a holistic view of which ones your SOC should focus on.
+1. Check the [combined Investigation Priority score](https://techcommunity.microsoft.com/t5/enterprise-mobility-security/introducing-investigation-priority-built-on-user-and-entity/ba-p/360853) for each user at risk to give a holistic view of which ones your SOC should focus on.
 
 #### Enable Microsoft Defender for Endpoint
 
@@ -313,7 +247,7 @@ Microsoft Defender for Endpoint allows you to attest to the health of Windows ma
 
 Take this step:
 
- - [Configure Conditional Access in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-conditional-access).
+- [Configure Conditional Access in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-conditional-access).
 
 ## Securing Identity in accordance with Executive Order 14028 on Cybersecurity & OMB Memorandum 22-09
 
@@ -321,27 +255,17 @@ The [Executive Order 14028 on Improving the Nations Cyber Security](https://www.
 
 ## Products covered in this guide
 
-**Microsoft Azure**
-
-[Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/)
-
-[Microsoft Defender for Identity](https://www.microsoft.com/security/business/threat-protection/endpoint-defender)
-
-**Microsoft 365**
-
-[Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
+- [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/)
+- [Microsoft Defender for Identity](https://www.microsoft.com/security/business/threat-protection/endpoint-defender)
+- [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 (includes Microsoft Intune)
-
-[Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
-
-[SharePoint Online](https://www.microsoft.com/microsoft-365/sharepoint/collaboration)
-
-[Exchange Online](https://www.microsoft.com/microsoft-365/exchange/email)
+- [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
+- [SharePoint Online](https://www.microsoft.com/microsoft-365/sharepoint/collaboration)
+- [Exchange Online](https://www.microsoft.com/microsoft-365/exchange/email)
 
 ## Conclusion
 
 Identity is central to a successful Zero Trust strategy. For further information or help with implementation, please contact your Customer Success team or continue to read through the other chapters of this guide, which span all Zero Trust pillars.
-
 
 <br/><br/>
 <!-- Include the nav bar. -->

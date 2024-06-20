@@ -24,7 +24,21 @@ Once devices or files are locked or encrypted, cybercriminals can extort money f
 
 ## How do ransomware attacks work?
 
-Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [Conti and LockBit ransomware](https://blogs.microsoft.com/on-the-issues/2023/04/06/stopping-cybercriminals-from-abusing-security-tools). 
+Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [Conti and LockBit ransomware](https://blogs.microsoft.com/on-the-issues/2023/04/06/stopping-cybercriminals-from-abusing-security-tools).   
+  
+Human-operated ransomware attacks involve the following stages:
+
+1. Initial compromise - The threat actor first gains access to a system or environment following a period of reconnaissance to identify weaknesses in defense.
+
+1. Persistence and defense evasion - The threat actor establishes a foothold in the system or environment using a backdoor or other mechanism that operates in stealth to avoid detection by incident response teams.
+
+1. Lateral movement - The threat actor uses the initial point of entry to migrate to other systems connected to the compromised device or network environment.
+
+1. Credential access - The threat actor uses a fake sign-in page to harvest user or system credentials.
+
+1. Data theft - The threat actor steals financial or other data from compromised users or systems.
+
+1. Impact - The affected user or organization might suffer material or reputational damage.
 
 ### Automated ransomware attacks
 

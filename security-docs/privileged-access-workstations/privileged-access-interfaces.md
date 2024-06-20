@@ -94,7 +94,7 @@ Security controls for specialized interfaces should include
 	
 ### Privileged interface 
 
-Security controls for specialized interfaces should include
+Security controls for privileged interfaces should include
 
 - Zero Trust policy enforcement - on inbound sessions using Conditional Access to ensure that users and devices are secured at  the privileged level
 - Role-Based Access Control (RBAC) - Model should ensure that the application is administered only by roles at the privileged security level

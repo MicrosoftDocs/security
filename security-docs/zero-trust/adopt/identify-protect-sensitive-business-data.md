@@ -18,26 +18,26 @@ For updates to product names, please also update the appropriate figures.
 
 To update figures that are not screen shots, your options are:
 
-- Locate the source Visio file in internal storage.
+- Locate the source Visio file in internal storage (ask your publishing contacts about the Illustrations-locations.docx document) (highly recommended).
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
 For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
-- Locate the source PowerPoint file in internal storage. 
+- Locate the source PowerPoint file in internal storage (ask your publishing contacts about the Illustrations-locations.docx document) (highly recommended) 
 - Download a copy of the PowerPoint file from the article.
 
 After updating, republish the updated slide deck in the Download Center.
 
 For updates that affect text in the Excel Business Scenario Objectives workbook of the Plan phase, your options are:
 
-- Locate the source Excel file in internal storage. 
+- Locate the source Excel file in internal storage (ask your publishing contacts about the Illustrations-locations.docx document) (highly recommended). 
 - Download a copy of the Excel file from the article.
 
 After updating, republish the updated Excel file in the Download Center.
 
 For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
 
-- Locate the source Visio file in internal storage. 
+- Locate the source Visio file in internal storage (ask your publishing contacts about the Illustrations-locations.docx document) (highly recommended). 
 - Download a copy of the Visio file from the article.
 
 After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.

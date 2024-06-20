@@ -22,7 +22,7 @@ Cloud applications and the mobile workforce require a new way of thinking when i
 
 Data is accessed outside the traditional corporate network perimeter and is shared with external collaborators such as partners and vendors. 
 
-Traditional corporate applications and data have moved from on-premises to hybrid and cloud environments. 
+Traditional corporate applications and data are moving from on-premises to hybrid and cloud environments. 
 
 Organizations can no longer rely on traditional network controls for security.
 
@@ -34,11 +34,11 @@ Identities, that represent people, services, or devices, are the common dominato
 - Ensure access is compliant and typical for that identity.
 - Follow least privilege access principles.
 
-Once the identity has been verified, we can control that identity's access to resources based on organization policies, on-going risk analysis, and other tools.
+Once the identity is verified, we can control that identity's access to resources based on organization policies, ongoing risk analysis, and other tools.
 
 ## Identity Zero Trust deployment objectives
 
-Before most organizations start the Zero Trust journey, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and [visibility](/security/zero-trust/deploy/visibility-automation-orchestration) into identity risk is very limited.
+Before most organizations start the Zero Trust journey, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and [visibility](/security/zero-trust/deploy/visibility-automation-orchestration) into identity risk is limited.
 
 When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these initial deployment objectives:
 
@@ -46,7 +46,7 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
 - [Conditional Access policies gate access and provide remediation activities](#ii-conditional-access-policies-gate-access-and-provide-remediation-activities).
 - [Analytics improve visibility](#iii-analytics-improve-visibility).
 
-After these are completed, focus on these additional deployment objectives
+After the previous steps are completed, focus on these additional deployment objectives
 
 - [Identities and access privileges are managed with identity governance](#iv-identities-and-access-privileges-are-managed-with-identity-governance).
 - [User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection](#v-user-device-location-and-behavior-is-analyzed-in-real-time-to-determine-risk-and-deliver-ongoing-protection).

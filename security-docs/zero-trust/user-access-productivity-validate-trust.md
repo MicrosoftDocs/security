@@ -1,5 +1,5 @@
 ---
-title: RaMP Checklist — Explicitly validate trust for all access requests
+title: RaMP Checklist—Explicitly validate trust for all access requests
 description: Use the steps in this guidance to deploy explicit validation for all access requests that adheres to Zero Trust principles.
 ms.date: 01/08/2024
 ms.service: security
@@ -19,7 +19,7 @@ Writers notes:
 
 For updates to product names, please also update the appropriate figures.
 
-To update figures that are not screen shots, your options are:
+To update figures that aren't screen shots, your options are:
 
 - Locate the source Visio file in internal storage (see the Illustrations-locations.docs file).
 - Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
@@ -39,7 +39,7 @@ To be productive, your employees (users) must be able to use:
 - Their account credentials to verify their identity.
 - Their endpoint (device), such as a PC, tablet, or phone.
 - The applications you have provided them to do their jobs.
-- A network over which traffic flows between devices and applications, whether they are on premises or in the cloud.
+- A network over which traffic flows between devices and applications, whether they're on premises or in the cloud.
 
 Each one of these elements are the targets of attackers and must be protected with the "never trust, always verify" central principle of Zero Trust.
 
@@ -50,9 +50,9 @@ This checklist includes using Zero Trust to explicitly validate trust for all ac
 - [Apps](#apps)
 - [Network](#network)
 
-After completing this work, you will have built out this part of the Zero Trust architecture.
+After completing this work, you'll have built out this part of the Zero Trust architecture.
 
-:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png" alt-text="The identities, endpoints, apps, and network sections of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png":::
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png" alt-text="A diagram highlighting the identities, endpoints, apps, and network sections of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png":::
 
 ## Identities
 
@@ -60,7 +60,7 @@ Verify and secure each identity with strong authentication across your entire di
 
 ### Program and project member accountabilities
 
-This table describes the overall protection of your user accounts in terms of a sponsorship/program management/project management hierarchy to determine and drive results.
+This table describes the overall protection of your user accounts in terms of a sponsorship-program management-project management hierarchy to determine and drive results.
 
 | Lead | Owner | Accountability |
 |:-------|:-------|:-----|
@@ -97,11 +97,11 @@ Meet these deployment objectives to protect your user identities with Zero Trust
 
 You have now built out the **Identities** section of the Zero Trust architecture.
 
-:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-identities.png" alt-text="The Identities section of the Zero Trust architecture." lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-identities.png":::
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-identities.png" alt-text="A diagram highlighting the Identities section of the Zero Trust architecture." lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-identities.png":::
 
 ## Endpoints
 
-Ensure compliance and health status before granting access to your endpoints (devices) and gain visibility into how they are accessing the network. 
+Ensure compliance and health status before granting access to your endpoints (devices) and gain visibility into how they're accessing the network. 
 
 ### Program and project member accountabilities
 
@@ -131,7 +131,7 @@ Meet these deployment objectives to protect your endpoints (devices) with Zero T
 
 You have now built out the **Endpoints** section of the Zero Trust architecture.
 
-:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-endpoints.png" alt-text="The Endpoints section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-endpoints.png":::
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-endpoints.png" alt-text="A diagram highlighting the Endpoints section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-endpoints.png":::
 
 ## Apps
 
@@ -160,21 +160,21 @@ Meet these deployment objectives to ensure Zero Trust protection for your Micros
 | <input type="checkbox" /> | Third-party SaaS apps and custom PaaS apps that are registered with Microsoft Entra ID | Microsoft Entra app registration uses Microsoft Entra authentication, certification, and app consent policies. <br><br>  Use Microsoft Entra Conditional Access policies and Intune MAM and Application Protection Policies (APP) policies to allow app usage. | Identity Architect | [Application management in Microsoft Entra ID](/entra/identity/enterprise-apps/what-is-application-management)  |
 | <input type="checkbox" /> | Cloud apps that are OAuth-enabled and registered in Microsoft Entra ID, Google, and Salesforce | Use app governance in Microsoft Defender for Cloud Apps for app behavior visibility, governance with policy enforcement, and detection and remediation of app-based attacks. | Security Engineer | [Overview](/defender-cloud-apps/app-governance-manage-app-governance) |
 | <input type="checkbox" /> | Third-party SaaS apps and custom PaaS apps that are **NOT** registered with Microsoft Entra ID | Register them with Microsoft Entra ID for authentication, certification, and app consent policies. <br><br>  Use Microsoft Entra Conditional Access policies and Intune MAM and APP policies. | Apps Architect | [Integrating all your apps with Microsoft Entra ID](/entra/fundamentals/five-steps-to-full-application-integration) |
-| <input type="checkbox" /> | On-premises users accessing on-premises applications, which includes applications running on both on-premises and IaaS-based servers | Ensure that your apps support modern authentication protocols such as OAuth/OIDC and SAML. Contact your application vendor for updates to protect user sign-in. | Identity Architect | See your vendor documentation |
+| <input type="checkbox" /> | On-premises users accessing on-premises applications, which include applications running on both on-premises and IaaS-based servers | Ensure that your apps support modern authentication protocols such as OAuth/OIDC and SAML. Contact your application vendor for updates to protect user sign-in. | Identity Architect | See your vendor documentation |
 | <input type="checkbox" /> | Remote users accessing on-premises applications through a VPN connection | Configure your VPN appliance so that it uses Microsoft Entra ID as its identity provider | Network Architect | See your vendor documentation |
 | <input type="checkbox" /> | Remote users accessing on-premises **web** applications through a VPN connection | Publish the applications through Microsoft Entra application proxy. Remote users only need to access the individual published application, which is routed to the on-premises web server through an application proxy connector. <br><br> Connections take advantage of strong Microsoft Entra authentication and limits users and their devices to accessing a single application at a time. In contrast, the scope of a typical remote access VPN is all locations, protocols, and ports of the entire on-premises network. | Cloud Network Architect | [Remote access to on-premises applications through Microsoft Entra application proxy](/entra/identity/app-proxy/application-proxy) |
 
 
-After completing these deployment objectives, you will have built out the **Apps** section of the Zero Trust architecture.
+After completing these deployment objectives, you'll have built out the **Apps** section of the Zero Trust architecture.
 
-:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png" alt-text="The Apps section of the Zero Trust architecture." lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png":::
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png" alt-text="A diagram highlighting the Apps section of the Zero Trust architecture." lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-apps.png":::
 
 
 ## Network
 
-The Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Although this is a common practice for public networks, it also applies to your organization’s internal networks which are generally firewalled from the public Internet.
+The Zero Trust model assumes breach and verifies each request as though it originated from an uncontrolled network. Although this is a common practice for public networks, it also applies to your organization’s internal networks that are typically firewalled from the public Internet.
 
-To adhere to Zero Trust, your organization must address security vulnerabilities on both public and private networks, whether on-premises or in the cloud, and ensure that you verify explicitly, use least privilege access, and assume breach. Devices, users, and apps are not to be inherently trusted because they are on your private networks.
+To adhere to Zero Trust, your organization must address security vulnerabilities on both public and private networks, whether on-premises or in the cloud, and ensure that you verify explicitly, use least privilege access, and assume breach. Devices, users, and apps aren't to be inherently trusted because they're on your private networks.
 
 ### Program and project member accountabilities
 
@@ -204,9 +204,9 @@ Meet these deployment objectives to ensure Zero Trust protection for your public
 | <input type="checkbox" /> | Use real-time threat detection for cloud traffic. | Network Architect or Network Engineer | [Azure Firewall threat intelligence-based filtering](/azure/firewall/threat-intel) <br><br> [Azure Firewall Premium network intrusion detection and prevention system (IDPS)](/azure/firewall/premium-features#idps) |
 
 
-After completing these deployment objectives, you will have built out the **Network** section of the Zero Trust architecture.
+After completing these deployment objectives, you'll have built out the **Network** section of the Zero Trust architecture.
 
-:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-network.png" alt-text="The Network section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-network.png":::
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-network.png" alt-text="A diagram highlighting the Network section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-network.png":::
 
 ## Next step
 

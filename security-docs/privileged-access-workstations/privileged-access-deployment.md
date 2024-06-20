@@ -5,7 +5,7 @@ description: Configuring and deploying components of a privileged access solutio
 ms.service: security
 ms.subservice: 
 ms.topic: how-to
-ms.date: 06/07/2021
+ms.date: 06/20/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -14,7 +14,7 @@ ms.reviewer: frasim
 ---
 # Privileged access deployment
 
-This document will guide you through implementing the technical components of the [privileged access strategy](), including secure accounts, workstations and devices, and interface security (with conditional access policy).
+This document guides you through implementing the technical components of the [privileged access strategy](), including secure accounts, workstations and devices, and interface security (with conditional access policy).
 
 ![Summary of security level profiles](./media/privileged-access-deployment/privileged-access-deployment-profile-summary.png)
 
@@ -22,7 +22,7 @@ This guidance sets up all of the profiles for all three security levels and shou
 
 ## License requirements
 
-The concepts covered in this guide assume you have Microsoft 365 Enterprise E5 or an equivalent product. Some of the recommendations in this guide can be implemented with lower SKUs. For more information, see [Microsoft 365 Enterprise licensing](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
+The concepts covered in this guide assume you have Microsoft 365 Enterprise E5 or an equivalent product. Some of the recommendations in this guide can be implemented with other licenses. For more information, see [Microsoft 365 Enterprise licensing](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
 To automate license provisioning, consider [group-based licensing](/azure/active-directory/enterprise-users/licensing-groups-assign) for your users.
 
@@ -73,7 +73,7 @@ From the Azure portal, browse to **Microsoft Entra ID** > **Groups** > **New gro
    * **Membership type** - Assigned
 
 1. Add your secure workstation user: `secure-ws-user@contoso.com`
-1. You can add any other users that will be using secure workstations.
+1. You can add any other users that use secure workstations.
 1. Select **Create**.
 1. For the Privileged Workstation Admins group, enter:
 
@@ -82,7 +82,7 @@ From the Azure portal, browse to **Microsoft Entra ID** > **Groups** > **New gro
    * **Membership type** - Assigned
 
 1. Add your secure workstation user: `secure-ws-admin@contoso.com`
-1. You can add any other users that will be managing secure workstations.  
+1. You can add any other users that manage secure workstations.  
 1. Select **Create**.
 1. For the Emergency BreakGlass group, enter:
 
@@ -149,16 +149,16 @@ Microsoft Entra Conditional Access can help restrict privileged administrative t
 
 #### Conditional Access only allowing secured workstation ability to access Azure portal
 
-Organizations should block Privileged Users from being able to connect to cloud management interfaces, portals and PowerShell, from non-PAW devices.
+Organizations should block Privileged Users from being able to connect to cloud management interfaces, portals, and PowerShell, from non-PAW devices.
 
-To block unauthorized devices from being able to access cloud management interfaces, follow the guidance in the article [Conditional Access: Filters for Devices (preview)](/azure/active-directory/conditional-access/concept-condition-filters-for-devices#create-a-conditional-access-policy).  It's essential that while deploying this feature you consider, [emergency access account](/azure/active-directory/roles/security-emergency-access) functionality. These accounts should be used only for extreme cases and the account managed through policy.
+To block unauthorized devices from being able to access cloud management interfaces, follow the guidance in the article [Conditional Access: Filters for Devices (preview)](/azure/active-directory/conditional-access/concept-condition-filters-for-devices#create-a-conditional-access-policy). It's essential that while deploying this feature you consider, [emergency access account](/azure/active-directory/roles/security-emergency-access) functionality. These accounts should be used only for extreme cases and the account managed through policy.
 
  > [!NOTE]
  > You will need to create a user group, and include your emergency user that can bypass the Conditional Access policy. For our example we have a security group called **Emergency BreakGlass**
 
-This policy set will ensure that your Administrators must use a device that is able to present a specific device attribute value, that MFA is satisfied, and the device is marked as compliant by Microsoft Endpoint Manager and Microsoft Defender for Endpoint.
+This policy set ensures that your Administrators must use a device that is able to present a specific device attribute value, that MFA is satisfied, and the device is marked as compliant by Microsoft Endpoint Manager and Microsoft Defender for Endpoint.
 
-Organizations should also consider blocking legacy authentication protocols in their environments. There are multiple ways to accomplish this task, for more information about blocking legacy authentication protocols, see the article, [How to: Block legacy authentication to Microsoft Entra ID with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).
+Organizations should also consider blocking legacy authentication protocols in their environments. For more information about blocking legacy authentication protocols, see the article, [How to: Block legacy authentication to Microsoft Entra ID with Conditional Access](/azure/active-directory/conditional-access/block-legacy-authentication).
 
 ## Microsoft Intune configuration
 
@@ -166,7 +166,7 @@ Organizations should also consider blocking legacy authentication protocols in t
 
 In our sample, we recommend that BYOD devices not be permitted. Using [Intune BYOD enrollment](/mem/intune/enrollment/windows-enrollment-methods) allows users to enroll devices that are less, or not trusted. However it's important to note that in organizations that have a limited budget to purchase new devices, looking to use existing hardware fleet, or considering non-windows devices, might consider the BYOD capability in Intune to deploy the Enterprise profile.
 
-The following guidance will configure Enrollment for deployments that will deny BYOD access.
+The following guidance configures enrollment for deployments that deny BYOD access.
 
 ### Set enrollment restrictions preventing BYOD
 
@@ -189,7 +189,7 @@ After creating a device group, you must create a deployment profile to configure
 
    * For **Deployment mode**, choose [**Self-Deploying (Preview)**](/mem/autopilot/self-deploying). Devices with this profile are associated with the user who enrolls the device. During the deployment, it's advisable to use the Self-Deployment mode features to include:
       * Enrolls the device in Intune Microsoft Entra automatic MDM enrollment, and only allow for a device to be accessed until all policies, applications, certificates, and networking profiles are provisioned on the device.
-      * User credentials are required to enroll the device. It's essential to note that deploying a device in the **Self-Deploying** mode will allow you to deploy laptops in a shared model. No user assignment will happen until the device is assigned to a user for the first time. As a result, any user policies such as BitLocker won't be enabled until a user assignment is completed. For more information about how to log on to a secured device, see [selected profiles](/intune/device-profile-assign). 
+      * User credentials are required to enroll the device. It's essential to note that deploying a device in the **Self-Deploying** mode allows you to deploy laptops in a shared model. No user assignment happens until the device is assigned to a user for the first time. As a result, any user policies such as BitLocker won't be enabled until a user assignment is completed. For more information about how to sign in to a secured device, see [selected profiles](/intune/device-profile-assign). 
    * Select your Language (Region), User account type **standard**. 
 
 1. Select **Next**.
@@ -245,7 +245,7 @@ For more information about Windows Update policies, see [Policy CSP - Update](/w
 
 ### Microsoft Defender for Endpoint Intune integration
 
-[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and Microsoft Intune work together to help prevent security breaches. They can also limit the impact of breaches. ATP capabilities provide real-time threat detection as well as enable extensive auditing and logging of the end-point devices.
+[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and Microsoft Intune work together to help prevent security breaches. They can also limit the impact of breaches. These capabilities provide real-time threat detection and enable extensive auditing and logging of the end-point devices.
 
 To configure integration of Windows Defender for Endpoint and Microsoft Endpoint Manager:
 
@@ -297,7 +297,7 @@ To successfully complete the hardening of the solution, download and execute the
 > [!NOTE]
 > The removal of of admin rights and access, as well as, Application execution control (AppLocker) are managed by the policy profiles that are deployed.  
 
-After the script successfully executes, you can make updates to profiles and policies in Intune. The scripts will create policies and profiles for you, but you must assign the policies to your **Secure Workstations** device group.
+After the script successfully executes, you can make updates to profiles and policies in Intune. The scripts create policies and profiles for you, but you must assign the policies to your **Secure Workstations** device group.
 
 * Here's where you can find the Intune device configuration profiles created by the scripts: **Azure portal** > **Microsoft Intune** > **Device configuration** > **Profiles**.
 * Here's where you can find the Intune device compliance policies created by the scripts: **Azure portal** > **Microsoft Intune** > **Device Compliance** > **Policies**.
@@ -306,7 +306,7 @@ Run the Intune data export script `DeviceConfiguration_Export.ps1` from the [Dev
 
 ## Set rules in the Endpoint Protection Configuration Profile for Microsoft Defender Firewall
 
-Windows Defender Firewall policy settings are included in the Endpoint Protection Configuration Profile. The behavior of the policy applied in described in the table below.
+Windows Firewall policy settings are included in the Endpoint Protection Configuration Profile. The behavior of the policy applied in described in the following table.
 
 | Profile |Inbound Rules | Outbound Rules | Merge behavior |
 | --- | --- | --- | --- |
@@ -314,7 +314,7 @@ Windows Defender Firewall policy settings are included in the Endpoint Protectio
 | Specialized | Block | Allow | Block |
 | Privileged | Block | Block  | Block|
 
-**Enterprise**: This configuration is the most permissive as it mirrors the default behavior of a Windows Install. All inbound traffic is blocked except for rules that are explicitly defined in the local policy rules as merging of local rules is set to allowed.  All outbound traffic is allowed.
+**Enterprise**: This configuration is the most permissive as it mirrors the default behavior of a Windows Install. All inbound traffic is blocked except for rules that are explicitly defined in the local policy rules as merging of local rules is set to allowed. All outbound traffic is allowed.
 
 **Specialized**: This configuration is more restrictive as it ignores all locally defined rules on the device. All inbound traffic is blocked including locally defined rules the policy includes two rules to allow Delivery Optimization to function as designed. All outbound traffic is allowed.
 
@@ -361,15 +361,15 @@ Restrictive URL traffic management includes:
 "AutoDetect"=dword:00000000
 ```
 
-The endpoints listed in the ProxyOverride list are limited to those endpoints needed to authenticate to Microsoft Entra ID and access Azure or Office 365 management interfaces.  To extend to other cloud services, add their administration URL to the list. This approach is designed to limit access to the wider internet to protect privileged users from internet-based attacks. If this approach is deemed too restrictive, then consider using the approach described below for the privileged role.
+The endpoints listed in the ProxyOverride list are limited to those endpoints needed to authenticate to Microsoft Entra ID and access Azure or Office 365 management interfaces. To extend to other cloud services, add their administration URL to the list. This approach is designed to limit access to the wider internet to protect privileged users from internet-based attacks. If this approach is deemed too restrictive, then consider using the following approach for the privileged role.
 
 ## Enable Microsoft Defender for Cloud Apps, URLs restricted list to approved URLs (Allow most)
 
 In our roles deployment it's recommended that for Enterprise, and Specialized deployments, where a strict *deny all* web browsing isn't desirable, that using the capabilities of a cloud access security broker (CASB) such as [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) be utilized to block access to risky, and questionable web sites. The solution addresses a simple way to block applications and websites that have been curated. This solution is similar to getting access to the blocklist from sites such as the Spamhaus Project who maintains [the Domain Blocklist (DBL)](https://www.spamhaus.org/dbl/): a good resource to use as an advanced set of rules to implement for blocking sites.
 
-The solution will provide you:
+The solution provides you:
 
-* Visibility: detect all cloud services; assign each a risk ranking; identify all users and third-party apps able to log in
+* Visibility: detect all cloud services; assign each a risk ranking; identify all users and non-Microsoft apps able to sign in
 * Data security: identify and control sensitive information (DLP); respond to classification labels on content
 * Threat protection: offer adaptive access control (AAC); provide user and entity behavior analysis (UEBA); mitigate malware
 * Compliance: supply reports and dashboards to demonstrate cloud governance; assist efforts to conform to data residency and regulatory compliance requirements
@@ -388,7 +388,7 @@ The secure workstation moves to a truly hardened state when local applications a
 
 An Intune-managed copy of the [Company Portal](/Intune/store-apps-company-portal-app) gives you on-demand access to additional tools that you can push down to users of the secured workstations.
 
-In a secured mode, application installation is restricted to managed applications that are delivered by Company Portal. However, installing the Company Portal requires access to Microsoft Store. In your secured solution, you [add and assign the Windows 10 Company Portal app for Autopilot provisioned devices](/mem/intune/apps/store-apps-company-portal-autopilot).
+In a secured mode, application installation is restricted to managed applications delivered by Company Portal. However, installing the Company Portal requires access to Microsoft Store. In your secured solution, you [add and assign the Windows 10 Company Portal app for Autopilot provisioned devices](/mem/intune/apps/store-apps-company-portal-autopilot).
 
 > [!NOTE]
 > Make sure you assign the Company Portal app to the **Secure Workstation Device Tag** group used to assign the Autopilot profile.
@@ -407,7 +407,7 @@ Download the Microsoft Win32 Content Prep Tool locally to a workstation and copy
 1. Copy the downloaded Visual Studio Code exe file to `C:\Packages\Source`
 1. Open a PowerShell console and navigate to `C:\Packages`
 1. Type `.\IntuneWinAppUtil.exe -c C:\Packages\Source\ -s C:\Packages\Source\VSCodeUserSetup-x64-1.51.1.exe -o C:\Packages\Output\VSCodeUserSetup-x64-1.51.1`
-1. Type `Y` to create the new output folder. The intunewin file for Visual Studio Code will be created in this folder.
+1. Type `Y` to create the new output folder. The intunewin file for Visual Studio Code is created in this folder.
 
 #### Upload VS Code to Microsoft Endpoint Manager
 
@@ -420,7 +420,7 @@ Download the Microsoft Win32 Content Prep Tool locally to a workstation and copy
 1. Download `https://jsarray.com/images/page-icons/visual-studio-code.png` and select image for the logo. Select **Next**
 1. Enter `VSCodeSetup-x64-1.51.1.exe /SILENT` in the **Install command** field
 1. Enter `C:\Program Files\Microsoft VS Code\unins000.exe` in the **Uninstall command** field
-1. Select **Determine behavior based on return codes** from the **Device Restart behavior** dropdown list.  Select **Next**
+1. Select **Determine behavior based on return codes** from the **Device Restart behavior** dropdown list. Select **Next**
 1. Select **64-bit** from the **Operating system architecture** checkbox dropdown
 1. Select **Windows 10 1903** from the **Minimum operating system** checkbox dropdown. Select **Next**
 1. Select **Manually configure** detection rules from the **Rules format** dropdown list
@@ -467,9 +467,9 @@ vProvide a **Name** for the script and specify the **Script location**.
 
 ## Validate and test your deployment with your first device
 
-This enrollment assumes that you'll use a physical computing device. It's recommended that as part of the procurement process that the OEM, Reseller, distributor, or partner [register devices in Windows Autopilot](/mem/autopilot/add-devices).
+This enrollment assumes that you use a physical computing device. It's recommended that as part of the procurement process that the OEM, Reseller, distributor, or partner [register devices in Windows Autopilot](/mem/autopilot/add-devices).
 
-However for testing it's possible to stand up [Virtual Machines](/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm) as a test scenario. However note enrollment of personally joined devices will need to be revised to allow this method of joining a client.
+However for testing it's possible to stand up [Virtual Machines](/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm) as a test scenario. However note enrollment of personally joined devices need to be revised to allow this method of joining a client.
 
 This method works for Virtual Machines or physical devices that haven't been previously registered.
 
@@ -498,7 +498,7 @@ This method works for Virtual Machines or physical devices that haven't been pre
    1. Choose **Get started** under **Reset this PC**.
    1. Follow the prompts to reset and reconfigure the device with the profile and compliance policies configured.
 
-After you have configured the device, complete a review and check the configuration. Confirm that the first device is configured correctly before continuing your deployment.
+After you configure the device, complete a review and check the configuration. Confirm that the first device is configured correctly before continuing your deployment.
 
 ### Assign devices
 
@@ -516,7 +516,7 @@ Configure your [Microsoft Defender Security Center](https://securitycenter.windo
 
 ### Monitoring application activity using Advanced Threat Hunting
 
-Starting at the Specialized workstation, AppLocker is enabled for monitoring of application activity on a workstation. By default Defender for Endpoint captures AppLocker events and Advanced Hunting Queries can be used to determine what applications, scripts, DLL files are being blocked by AppLocker.
+Starting at the specialized workstation, AppLocker is enabled for monitoring of application activity on a workstation. By default Defender for Endpoint captures AppLocker events and Advanced Hunting Queries can be used to determine what applications, scripts, DLL files are being blocked by AppLocker.
 
 > [!NOTE]
 > The Specialized and Privileged workstation profiles contain the AppLocker policies. Deployment of the policies is required for monitoring of application activity on a client.

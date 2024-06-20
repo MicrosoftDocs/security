@@ -5,7 +5,7 @@ description: A good strategy is critical on your privileged access journey
 ms.service: security
 ms.subservice: 
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 06/20/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -18,16 +18,16 @@ Microsoft recommends adopting this privileged access strategy to rapidly lower t
 
 _**Privileged access should be the top security priority at every organization.**_ Any compromise of these users has a high likelihood of significant negative impact to the organization. Privileged users have access to business critical assets in an organization, nearly always causing major impact when attackers compromise their accounts.
 
-This strategy is built on Zero Trust principles of explicit validation, least privilege, and assumption of breach. Microsoft has provided [implementation guidance](security-rapid-modernization-plan.md) to help you rapidly deploy protections based on this strategy
+This strategy is built on Zero Trust principles of explicit validation, least privilege, and assumption of breach. Microsoft provides [implementation guidance](security-rapid-modernization-plan.md) to help you rapidly deploy protections based on this strategy
 
 > [!IMPORTANT]
 > There is no single "silver bullet" technical solution that will magically mitigate privileged access risk, you must blend multiple technologies together into a holistic solution that protects against multiple attacker entry points. Organizations must bring the right tools for each part of the job.
 
 ## Why is privileged access important?
 
-Security of privileged access is critically important because it is foundational to all other security assurances, an attacker in control of your privileged accounts can undermine all other security assurances. From a risk perspective, loss of privileged access is a high impact event with a high likelihood of happening that is growing at an alarming rate across industries.
+Security of privileged access is critically important because it's foundational to all other security assurances, an attacker in control of your privileged accounts can undermine all other security assurances. From a risk perspective, loss of privileged access is a high impact event with a high likelihood of happening that is growing at an alarming rate across industries.
 
-These attack techniques were initially used in targeted data theft attacks that resulted in many high profile breaches at familliar brands (and many unreported incidents). More recently these techniques have been adopted by ransomware attackers, fueling an explosive growth of highly profitable human operated ransomware attacks that intentionally disrupt business operations across industry.
+These attack techniques were initially used in targeted data theft attacks that resulted in many high profile breaches at familiar brands (and many unreported incidents). More recently these techniques were adopted by ransomware attackers, fueling an explosive growth of highly profitable human operated ransomware attacks that intentionally disrupt business operations across industry.
 
 > [!IMPORTANT]
 > [Human operated ransomware](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster) is different from commodity single computer ransomware attacks that target a single workstation or device.
@@ -37,7 +37,7 @@ This graphic describes how this extortion based attack is growing in impact and 
 ![PLACEHOLDER](./media/privileged-access-strategy/human-operated-ransomware-growth.png)
 
 - High business impact
-   - It is difficult to overstate the potential business impact and damage of a loss to privileged access. Attacker's with privileged access effectively have full control of all enterprise assets and resources, giving them the ability to disclose any confidential data, stop all business processes, or subvert business processes and machines to damage property, hurt people, or worse.
+   - It's difficult to overstate the potential business impact and damage of a loss to privileged access. Attacker's with privileged access effectively have full control of all enterprise assets and resources, giving them the ability to disclose any confidential data, stop all business processes, or subvert business processes and machines to damage property, hurt people, or worse.
 	Massive business impact has been seen across every industry with:
       - **Targeted data theft** - attackers use privileged access to access and steal sensitive intellectual property for their own use it or to sell/transfer to your competitors or foreign governments
       - **Human-operated ransomware (HumOR)** - attackers use privileged access to steal and/or encrypt all data and systems in the enterprise, often stopping all business operations. They then extort the target organization by demanding money to not disclose the data and/or providing the keys to unlock it.
@@ -46,7 +46,7 @@ This graphic describes how this extortion based attack is growing in impact and 
       - Prior to the advent of human-operated ransomware (HumOR), these attacks were prevalent but often unseen or misunderstood because of:
          - **Attacker monetization limits** - Only groups and individuals who knew how to monetize sensitive intellectual property from target organizations could profit from these attacks. 
          - **Silent impact** - Organizations often missed these attacks because they didn't have detection tools, and also had a hard time seeing and estimating the resulting business impact (for example, how  their competitors were using their stolen intellectual property and how that affected prices and markets, sometimes years later). Additionally, organizations who saw the attacks often stayed silent about them to protect their reputations.
-      - Both the silent impact and attacker monetization limitations on these attacks are disintegrating with the advent of human operated ransomware, which is growing in volume, impact, and awareness because it is both:
+      - Both the silent impact and attacker monetization limitations on these attacks are disintegrating with the advent of human operated ransomware, which is growing in volume, impact, and awareness because it's both:
          - **Loud and disruptive** - to business processes to payment of extortion demands.
          - **Universally applicable** - Every organization in every industry is financially motivated to continue operations uninterrupted.
 
@@ -74,10 +74,10 @@ The paths attackers prioritize in actual practice are a combination of:
 Because of the diversity of technology involved, this strategy requires a complete strategy that combines multiple technologies and follows [Zero Trust principles](/security/zero-trust/). 
 
  > [!IMPORTANT]
- > You must adopt a strategy that includes multiple technologies to defend against these attacks. Simply implementing a privileged identity management / privileged access management (PIM/PAM) solution is not sufficient. For more information see, [Privileged access Intermediaries](privileged-access-intermediaries.md#security-guidance-for-each-intermediary-type).
+ > You must adopt a strategy that includes multiple technologies to defend against these attacks. Simply implementing a privileged identity management / privileged access management (PIM/PAM) solution is not sufficient. For more information, see, [Privileged access Intermediaries](privileged-access-intermediaries.md#security-guidance-for-each-intermediary-type).
 
 - The attackers are goal-oriented and technology agnostic, using any type of attack that works.
-- The access control backbone you are defending is integrated into most or all systems in the enterprise environment.
+- The access control backbone you're defending is integrated into most or all systems in the enterprise environment.
 
 Expecting you can detect or prevent these threats with just network controls or a single privileged access solution will leave you vulnerable to many other types of attacks.
 
@@ -136,13 +136,13 @@ This strategy requires a combination of:
 Implementing this strategy requires four complementary initiatives that each have clear outcomes and success criteria
 
 1. End-to-end Session Security - Establish explicit Zero Trust validation for privileged sessions, user sessions, and authorized elevation paths.
-   1. Success Criteria: Each session will validate that each user account and device are trusted at a sufficient level before allowing access.
+   1. Success Criteria: Each session validates that each user account and device are trusted at a sufficient level before allowing access.
 1. Protect & Monitor Identity Systems including Directories, Identity Management, Admin Accounts, Consent grants, and more
-   1. Success Criteria: Each of these systems will be protected at a level appropriate for the potential business impact of  accounts hosted in it.
+   1. Success Criteria: Each of these systems is protected at a level appropriate for the potential business impact of  accounts hosted in it.
 1. Mitigate Lateral Traversal to protect against lateral traversal with local account passwords, service account passwords, or other secrets
-   1. Success Criteria: Compromising a single device will not immediately lead to control of many or all other devices in the environment
+   1. Success Criteria: Compromising a single device won't immediately lead to control of many or all other devices in the environment
 1. Rapid Threat Response to limit adversary access and time in the environment
-   1. Success Criteria: Incident response processes impede adversaries from reliably conducting a multi-stage attack in the environment that would result in loss of privileged access. (as measured by reducing the mean time to remediate (MTTR) of incidents involving privileged access to near zero and reducing MTTR of all incidents to a few minutes so adversaries don't have time to target privileged access)
+   1. Success Criteria: Incident response processes impede adversaries from reliably conducting a multi-stage attack in the environment that would result in loss of privileged access. (Measured by reducing the mean time to remediate (MTTR) of incidents involving privileged access to near zero and reducing MTTR of all incidents to a few minutes so adversaries don't have time to target privileged access.)
 
 ## Next steps
 

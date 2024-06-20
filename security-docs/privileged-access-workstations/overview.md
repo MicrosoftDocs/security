@@ -5,14 +5,13 @@ description: How can organizations secure privileged with Azure resources?
 ms.service: security
 ms.subservice: 
 ms.topic: overview
-ms.date: 12/15/2020
+ms.date: 06/20/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
 manager: amycolannino
 ms.reviewer: mas
 ---
-
 # Securing privileged access
 
 Organizations should make securing privileged access the top security priority because of the significant potential business impact, and high likelihood, of attackers compromising this level of access.

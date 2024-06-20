@@ -36,7 +36,7 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security
 
   # Card 
-  - title: Frequently asked questions
+  - title: Frequently asked questions about ransomware
     linkLists:
       - linkListType: concept
         links:
@@ -50,8 +50,6 @@ landingContent:
           url:  human-operated-ransomware.md
         - text: Can I download a ransomware incident response playbook? 
           url:  https://download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
-        - text: What are common types of malware that are used in ransomware campaigns?
-          url:  human-operated-ransomware.md
 
   # Card 
   - title: Prevalent ransomware trends
@@ -73,7 +71,7 @@ landingContent:
 
 
 # Card
-  - title: Blogs
+  - title: Blogs about ransomware
     linkLists:
       - linkListType: reference
         links:
@@ -89,7 +87,7 @@ landingContent:
           url:  https://www.microsoft.com/insidetrack/blog/building-an-anti-ransomware-program-at-microsoft-focused-on-an-optimal-ransomware-resiliency-state/
 
 # Card
-  - title: Protect against ransomware and extortion
+  - title: Protect against ransomware and extortion attacks
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -103,7 +101,7 @@ landingContent:
           url: protect-against-ransomware-phase3.md
 
 # Card
-  - title: Defense against ransomware
+  - title: Microsoft products for defense against ransomware
     linkLists:
        - linkListType: reference
          links:
@@ -117,16 +115,6 @@ landingContent:
            url:  /azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
          - text: In SharePoint
            url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
-
-# Card
-  - title: Threat intelligence for Microsoft Defender XDR subscription holders
-    linkLists:
-      - linkListType: reference
-        links:
-        - text: Threat analytics reports
-          url:  /microsoft-365/security/defender/threat-analytics
-        - text: Microsoft Defender Threat Intelligence 
-          url:  /microsoft-365/security/defender/defender-threat-intelligence
 
 # Card
   - title: Ransomware incident response playbooks

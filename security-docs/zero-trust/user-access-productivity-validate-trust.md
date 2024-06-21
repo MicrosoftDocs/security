@@ -52,7 +52,7 @@ This checklist includes using Zero Trust to explicitly validate trust for all ac
 
 After completing this work, you'll have built out this part of the Zero Trust architecture.
 
-:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png" alt-text="A diagram highlighting the identities, endpoints, apps, and network sections of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png":::
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png" alt-text="A diagram highlighting the identities, endpoints, apps, and network sections of the Zero Trust architecture." lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-users-devices-apps-network.png":::
 
 ## Identities
 
@@ -131,7 +131,7 @@ Meet these deployment objectives to protect your endpoints (devices) with Zero T
 
 You have now built out the **Endpoints** section of the Zero Trust architecture.
 
-:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-endpoints.png" alt-text="A diagram highlighting the Endpoints section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-endpoints.png":::
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-endpoints.png" alt-text="A diagram highlighting the Endpoints section of the Zero Trust architecture." lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-endpoints.png":::
 
 ## Apps
 

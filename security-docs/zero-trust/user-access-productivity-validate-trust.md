@@ -206,7 +206,7 @@ Meet these deployment objectives to ensure Zero Trust protection for your public
 
 After completing these deployment objectives, you'll have built out the **Network** section of the Zero Trust architecture.
 
-:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-network.png" alt-text="A diagram highlighting the Network section of the Zero Trust architecture" lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-network.png":::
+:::image type="content" source="./media/user-access-productivity-overview/user-access-productivity-validate-trust-network.png" alt-text="A diagram highlighting the Network section of the Zero Trust architecture." lightbox="./media/user-access-productivity-overview/user-access-productivity-validate-trust-network.png":::
 
 ## Next step
 

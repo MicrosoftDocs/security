@@ -60,20 +60,20 @@ For more information, see [Sanctioning/unsanctioning an app](/defender-cloud-app
 
 Conditional Access policies allow you to assign controls and requirements to specific applications, actions, or authentication conditions. You have the ability to define which users or user groups can access your cloud apps, which cloud apps they can access, and from which locations and networks a user must originate their access. See [Step 1](add-saas-apps.md) of this solution for additional information.
 
-In conjunction with Conditional Access policies, you can further increase the security of your cloud apps by applying access and session controls using conditional access app control. With the conditional access app control capability in Defender for Cloud Apps, user app access and sessions are monitored and controlled in real time based on access and session policies. Access and session policies configured with the Defender for Cloud Apps portal allow you to further refine filters and set actions that users can perform.
+In conjunction with Conditional Access policies, you can further increase the security of your cloud apps by applying access and session controls using Conditional Access App Control. With the Conditional Access App Control capability in Defender for Cloud Apps, user app access and sessions are monitored and controlled in real time based on access and session policies. Access and session policies configured with the Defender for Cloud Apps portal allow you to further refine filters and set actions that users can perform.
 
-Microsoft Defender for Cloud Apps natively integrates with Microsoft Entra. When you configure a policy in Microsoft Entra to use conditional access app control, cloud app traffic is routed through Defender for Cloud Apps as a proxy, which allows Defender for Cloud Apps to monitor this traffic and to apply session controls.
+Microsoft Defender for Cloud Apps natively integrates with Microsoft Entra. When you configure a policy in Microsoft Entra to use Conditional Access App Control, cloud app traffic is routed through Defender for Cloud Apps as a proxy, which allows Defender for Cloud Apps to monitor this traffic and to apply session controls.
 
 The following diagram shows how cloud app traffic gets routed through Microsoft Entra and Defender for Cloud Apps.
 
-:::image type="content" source="media/conditional-access-app-control-architecture.svg" alt-text="Diagram showing how cloud app traffic travels through Microsoft Entra and Defender for Cloud Apps when conditional access app controls are configured." lightbox="media/conditional-access-app-control-architecture.svg":::
+:::image type="content" source="media/conditional-access-app-control-architecture.svg" alt-text="Diagram showing how cloud app traffic travels through Microsoft Entra and Defender for Cloud Apps when Conditional Access App Control policies are configured." lightbox="media/conditional-access-app-control-architecture.svg":::
 
 In this diagram:
 
-- Microsoft Entra has a conditional access app control policy for the traffic the specified and integrated SaaS apps. Microsoft Entra ID then directs (proxies) the session traffic through Defender for Cloud Apps.
+- Microsoft Entra has a Conditional Access App Control policy for the traffic the specified and integrated SaaS apps. Microsoft Entra ID then directs (proxies) the session traffic through Defender for Cloud Apps.
 - Defender for Cloud Apps monitors this traffic and applies session control policies.
 
-Conditional Access dictates the requirements that must be fulfilled before a user can access an app. Conditional access app control dictates what apps a user can access and the set of actions that a user can take during a session **after** they've been granted access. 
+Conditional Access dictates the requirements that must be fulfilled before a user can access an app. Conditional Access App Control dictates what apps a user can access and the set of actions that a user can take during a session **after** they've been granted access. 
 
 For more information, see:
 

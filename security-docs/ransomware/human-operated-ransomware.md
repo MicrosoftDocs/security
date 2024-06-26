@@ -21,10 +21,23 @@ In fact, ransomware is a type of malware or phishing cyber security attack that 
 
 Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But even when paid, cybercriminals *might never* give the key to the business or device owner and stop access *permanently*.
 
-
 ## How do ransomware attacks work?
 
 Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [LockBit ransomware](/security/ransomware/human-operated-ransomware). 
+
+## Common malware used in ransomware campaigns
+
+[Qakbot](/wdsi/threats/malware-encyclopedia-description?Name=Win32%2fQakbot) – Uses phishing to spread malicious links, malicious attachments, or, more recently, embedded images
+[Ryuk](/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Ryuk) – Data encryptor typically targeting Windows 
+[Trickbot](/security/blog/2022/03/16/uncovering-trickbots-use-of-iot-devices-in-command-and-control-infrastructure/) – Has targeted Microsoft applications such as Excel and Word. Trickbot was typically delivered via email campaigns that used current events or financial lures to entice users to open malicious file attachments or click links to websites hosting the malicious files. Since 2022, Microsoft’s mitigation of campaigns using this malware appears to have disrupted its usefulness.
+
+Crimeware – used to automate cybercrime
+[ZLoader](/on-the-issues/2022/04/13/zloader-botnet-disrupted-malware-ukraine/) – Banking trojan historically used by cybercriminals to evade security detections and spread ransomware through malicious ads.
+
+
+Prevalent threat actors associated with ransomware campaigns
+[LockBit](/t5/microsoft-security-experts-blog/part-1-lockbit-2-0-ransomware-bugs-and-database-recovery/ba-p/3254354) – Financially motivated ransomware-as-a-service (RaaS) campaign and most prolific ransomware threat actor in the 2023-24 time period
+[Black Basta](/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/LockBit&threatId=-2147198552) – Gains access through spear-phishing emails and uses PowerShell to launch an encryption payload 
 
 ### Automated ransomware attacks
 

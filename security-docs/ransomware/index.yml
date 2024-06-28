@@ -62,11 +62,11 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/
         - text: Recent Microsoft social media posts about ransomware
           url:  https://x.com/MsftSecIntel/status/1781353314413605345
-        - text: Hands-on-keyboard (HOK) and pre-HOK attacks
+        - text: Human-operated ransomware (HumOR) and pre-HumOR attacks
           url:  https://www.microsoft.com/security/blog/2021/11/15/ai-driven-adaptive-protection-against-human-operated-ransomware/
         - text: Automatic disruption of ransomware attacks
           url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/
-        - text: Threat actor highlight - BlackCat
+        - text: Ransomware threat actor highlight - BlackCat
           url:  https://www.microsoft.com/security/blog/2022/06/13/the-many-lives-of-blackcat-ransomware/
         - text: Insights on ransomware and extortion - Microsoft Digital Defense Report 2023
           url:  https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023

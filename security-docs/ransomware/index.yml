@@ -113,8 +113,6 @@ landingContent:
            url:  /azure/security/fundamentals/ransomware-protection
          - text: In Copilot for Security
            url:  /copilot/security/microsoft-security-copilot.md
-         - text: In OneNote
-           url:  dart-ransomware-case-study.md
          - text: In Sentinel
            url:  /azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
          - text: In SharePoint

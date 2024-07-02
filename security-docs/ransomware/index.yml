@@ -41,7 +41,7 @@ landingContent:
       - linkListType: concept
         links:
         - text: What are the stages in a ransomware attack?
-          url:  https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/
+          url:  https://learn.microsoft.com/en-us/security/ransomware/human-operated-ransomware#how-do-ransomware-attacks-work
         - text: How do I detect pre-ransom activities?
           url:  /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
         - text: How do I back-up and restore post ransomware attack?

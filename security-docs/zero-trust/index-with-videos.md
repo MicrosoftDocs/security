@@ -4,7 +4,7 @@ description: The Zero Trust model assumes a breach and verifies each request as 
 ms.date: 09/30/2020
 ms.service: security
 author: garycentric
-ms.author: v-gmoor
+ms.author: v-garymoore
 ms.topic: conceptual
 ---
 

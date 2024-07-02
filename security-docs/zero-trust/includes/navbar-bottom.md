@@ -4,7 +4,7 @@ description: This include file creates a navigation bar that displays images and
 ms.date: 09/29/2020
 ms.service: security
 author: garycentric
-ms.author: v-gmoor
+ms.author: v-garymoore
 ms.topic: conceptual
 ---
 

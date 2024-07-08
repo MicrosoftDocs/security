@@ -204,17 +204,17 @@ Note 1: If a CA uses an ETSI-based audit, it must perform a **full**
 audit annually, and Microsoft will not accept surveillance audits. 
 Note 2: All ETSI audits statements must be audited against the CA/Browser Forum requirements and compliance to these requirements must be stated in the audit letter. The ACAB'c [https://acab-c.com] has provided guidance that meets the Microsoft requirements. 
 
-| Criteria | EN 319 411-1: DVCP, OVCP or PTC-BR policies | EN 319 411-1: EVCP policy | EN 319 411-2: QCP-w policy (based on EN 319 411-1, EVCP) | EN 319 411-1: LCP, NCP, NCP+ policies | EN 319 411-2: QCP-n, QCP-n-qscd, QCP-l, QCP-l-qscd policies (based on EN 319 411-1, NCP/NCP+) | EN 119 411-6: LCP, NCP, or NCP+ |
+| Criteria | EN 319 411-1: DVCP, OVCP or PTC-BR policies | EN 319 411-1: EVCP policy | EN 319 411-2: QCP-w/QEVCP-w policy (based on EN 319 411-1, EVCP) | EN 319 411-1: LCP, NCP, NCP+ policies | EN 319 411-2: QCP-n, QCP-n-qscd, QCP-l, QCP-l-qscd policies (based on EN 319 411-1, NCP/NCP+) | ETSI EN 319 411-1, LCP, NCP, or NCP+ policies as amended by ETSI TS 119 411-6 or ETSI EN 319 411-2, QCP-n, QCP-I, QCP-n-qscd or QCP-I-qscd policies as amended by ETSI TS 411-6 |
 | --- | --- | --- | --- | --- | --- |--- |
-| Server Authentication (Non-EV) | X |  |  |  |  |
-| Server Authentication (non-EV) and Client Authentication only | X |  |  |  |  |
-| Server Authentication (EV) |  | X |  |  |  |
-| Server Authentication (EV) and Client Authentication only |  | X | X |  |  |
-| EV Code Signing |  |  | X | X |  |
-| Non-EV Code Signing and Time stamping |  |  |  | X | X |
+| Server Authentication (Non-EV) | X |  |  |  |  |  |
+| Server Authentication (non-EV) and Client Authentication only | X |  |  |  |  |  |
+| Server Authentication (EV) |  | X |  |  |  | 
+| Server Authentication (EV) and Client Authentication only |  | X | X |  |  |  |
+| EV Code Signing |  |  | X | X |  |  |
+| Non-EV Code Signing and Time stamping |  |  |  | X | X |  |
 | Secured Email (S/MIME) |  |  |  | X | X | X|
-| Client Authentication (without Server Authentication) |  |  |  | X | X |
-| Document Signing |  |  |  | X | X |
+| Client Authentication (without Server Authentication) |  |  |  | X | X |  |
+| Document Signing |  |  |  | X | X | |
 
 ------------------------------------------------------------------------
 

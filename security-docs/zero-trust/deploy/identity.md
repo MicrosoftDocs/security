@@ -16,17 +16,13 @@ ms.collection:
 
 :::image type="icon" source="../media/icon-identity-medium.png":::
 
-**Background** 
+Before most organizations start a Zero Trust journey, their approach to identity might be fragmented with various identity providers, a lack of signle sign-on (SSO) between cloud and on-premises apps, and limited [visibility](/security/zero-trust/deploy/visibility-automation-orchestration) into identity risk.
 
-Cloud applications and the mobile workforce require a new way of thinking when it comes to security. Some employees bring their own devices or work in a hybrid manner. 
+Cloud applications and mobile workers require a new way of thinking when it comes to security. Many employees bring their own devices and work in a hybrid manner. Data is regularly accessed outside the traditional corporate network perimeter and shared with external collaborators like partners and vendors. Traditional corporate applications and data are moving from on-premises to hybrid and cloud environments. 
 
-Data is accessed outside the traditional corporate network perimeter and is shared with external collaborators such as partners and vendors. 
+Traditional network controls for security aren't enough anymore.
 
-Traditional corporate applications and data are moving from on-premises to hybrid and cloud environments. 
-
-Organizations can no longer rely on traditional network controls for security.
-
-Identities represent people services, or devices, across [networks](/security/zero-trust/deploy/networks), [endpoints](/security/zero-trust/deploy/endpoints), and [applications](/security/zero-trust/deploy/applications). In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to [data](/security/zero-trust/deploy/data).
+Identities represent the people, services, or devices, across [networks](/security/zero-trust/deploy/networks), [endpoints](/security/zero-trust/deploy/endpoints), and [applications](/security/zero-trust/deploy/applications). In the Zero Trust security model, they function as a powerful, flexible, and granular means to control access to resources.
 
 **Before an identity attempts to access a resource, organizations must:**
 
@@ -34,11 +30,9 @@ Identities represent people services, or devices, across [networks](/security/ze
 - Ensure access is compliant and typical for that identity.
 - Follow least privilege access principles.
 
-Once the identity is verified, we can control that identity's access to resources based on organization policies, ongoing risk analysis, and other tools.
+Once the identity is verified, we can control access to resources based on organization policies, ongoing risk analysis, and other tools.
 
 ## Identity Zero Trust deployment objectives
-
-Before most organizations start the Zero Trust journey, their approach to identity is problematic in that the on-premises identity provider is in use, no SSO is present between cloud and on-premises apps, and [visibility](/security/zero-trust/deploy/visibility-automation-orchestration) into identity risk is limited.
 
 When implementing an end-to-end Zero Trust framework for identity, we recommend you focus first on these initial deployment objectives:
 
@@ -46,25 +40,21 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
 - [Conditional Access policies gate access and provide remediation activities](#ii-conditional-access-policies-gate-access-and-provide-remediation-activities).
 - [Analytics improve visibility](#iii-analytics-improve-visibility).
 
-After the previous steps are completed, focus on these other deployment objectives
+After the previous areas are addressed, focus on these deployment objectives:
 
 - [Identities and access privileges are managed with identity governance](#iv-identities-and-access-privileges-are-managed-with-identity-governance).
 - [User, device, location, and behavior is analyzed in real time to determine risk and deliver ongoing protection](#v-user-device-location-and-behavior-is-analyzed-in-real-time-to-determine-risk-and-deliver-ongoing-protection).
 - [Integrate threat signals from other security solutions to improve detection, protection, and response](#vi-integrate-threat-signals-from-other-security-solutions-to-improve-detection-protection-and-response).
 
-## Identity Zero Trust deployment guide
-
-This guide walks you through the basic steps required to manage identities following the principles of a Zero Trust security framework.
-
 ### I. Cloud identity federates with on-premises identity systems
 
-Microsoft Entra ID enables strong authentication, a point of integration for endpoint security, and the core of your user-centric policies to guarantee least-privileged access. Microsoft Entra Conditional Access capabilities are the policy decision point for access to resources based on user identity, environment, device health, and risk—verified explicitly at the point of access. We'll show how you can implement a Zero Trust identity strategy with Microsoft Entra ID.
+Microsoft Entra ID enables strong authentication, a point of integration for endpoint security, and the core of your user-centric policies to guarantee least-privileged access. Microsoft Entra Conditional Access is the policy engine used to make decisions for access to resources based on user identity, environment, device health, and risk verified explicitly at the time of access. We'll show how you can implement a Zero Trust identity strategy with Microsoft Entra ID.
 
 :::image type="content" source="../media/diagram-steps-box-identity-1.png" alt-text="Diagram of the steps within phase 1 of the initial deployment objectives." border="true":::
 
 #### Connect all of your users to Microsoft Entra ID and federate with on-premises identity systems
 
-Maintaining a healthy pipeline of your employees' identities and the necessary security artifacts (groups for authorization and endpoints for extra access policy controls) puts you in the best place to use consistent identities and controls in the cloud. 
+Maintaining a healthy pipeline of your employees' identities and the necessary security artifacts including groups for authorization and endpoints for access policy controls puts you in the best place to use consistent identities and controls in the cloud. 
 
 Follow these steps:
 

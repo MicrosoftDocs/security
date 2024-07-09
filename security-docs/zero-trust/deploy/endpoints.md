@@ -171,7 +171,7 @@ Follow these steps:
 
 To allow users an alternative sign-in method that replaces a password, such as PIN, biometric authentication, or fingerprint reader, [enable Windows Hello for Business on users' Windows 10 devices](/mem/intune/protect/windows-hello).
 
-The following Microsoft Intune and Microsoft Entra actions are completed in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home):
+The following Microsoft Intune and Microsoft Entra actions are completed in the [Microsoft Intune admin center](https://intune.microsoft.com/#home):
 
 Start by creating a Windows Hello for Business enrollment policy in Microsoft Intune.
 
@@ -579,7 +579,7 @@ Building and maintaining customized operating system images is a time-consuming 
 
 **Microsoft 365**
 
-[Microsoft Endpoint Manager](https://www.microsoft.com/endpointmanager)
+[Microsoft Intune](https://www.microsoft.com/security/business/endpoint-management/microsoft-intune)
 (includes Microsoft Intune and Configuration Manager)
 
 [Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/threat-protection/endpoint-defender)

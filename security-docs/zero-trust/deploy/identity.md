@@ -43,7 +43,7 @@ When implementing an end-to-end Zero Trust framework for identity, we recommend 
 After the previous areas are addressed, focus on these deployment objectives:
 
 - [Identities and access privileges are managed with identity governance](#iv-identities-and-access-privileges-are-managed-with-identity-governance).
-- [User, device, location, and behavior is analyzed in real time](#v-user-device-location-and-behavior-is-analyzed-in-real-time-to-determine-risk-and-deliver-ongoing-protection).
+- [User, device, location, and behavior is analyzed in real time](#v-user-device-location-and-behavior-are-analyzed-in-real-time-to-determine-risk-and-deliver-ongoing-protection).
 - [Integrate threat signals from other security solutions](#vi-integrate-threat-signals-from-other-security-solutions-to-improve-detection-protection-and-response).
 
 ### I. Cloud identity federates with on-premises identity systems

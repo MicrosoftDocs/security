@@ -32,11 +32,7 @@ Independent software vendors (ISVs) can integrate with the Microsoft Purview Inf
 
 ### Microsoft Purview Information Protection SDK
 
-<<<<<<< HEAD:zero-trust/integrate/data.md
-[Microsoft Purview Information Protection](/information-protection/develop/overview) is the unification of Microsoft's classification, labeling, and protection services. Third parties can use the MIP SDK to integrate with applications, using a standard, consistent data labeling schema and protection service.
-=======
 The Microsoft Purview Information Protection solution is the unification of Microsoft's classification, labeling, and protection services. Third parties can use the MIP SDK to integrate with applications, using a standard, consistent data labeling schema and protection service.
->>>>>>> main:security-docs/zero-trust/integrate/data.md
 
 ISVs can use the [Microsoft Purview Information Protection SDK](/information-protection/develop/overview) to help customers understand their data landscape, apply flexible protection actions, detect risky behavior to prevent data loss, and maintain data compliance through automatic actions. For example:
 

@@ -1,0 +1,26 @@
+items:
+- name: Security
+  tocHref: /security/
+  topicHref: /security/index
+  items:
+  - name: AI Red Team
+    tocHref: /azure/ai-services/openai/concepts/
+    topicHref: /security/ai-red-team/
+  - name: AI Red Team
+    tocHref: /azure/ai-services/content-safety/
+    topicHref: /security/ai-red-team/
+  - name: AI Red Team
+    tocHref: /azure/ai-studio/concepts/
+    topicHref: /security/ai-red-team/
+  - name: AI Red Team
+    tocHref: /azure/ai-studio/how-to/
+    topicHref: /security/ai-red-team/
+  - name: AI Red Team
+    tocHref: /security/engineering/
+    topicHref: /security/ai-red-team/
+  - name: AI Red Team
+    tocHref: /azure/machine-learning/
+    topicHref: /security/ai-red-team/
+  - name: AI Red Team
+    tocHref: /azure/security/fundamentals/
+    topicHref: /security/ai-red-team/

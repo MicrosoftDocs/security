@@ -1,34 +1,6 @@
 {
   "docsets_to_publish": [
     {
-      "docset_name": "ciso-workshop",
-      "build_source_folder": "ciso-workshop",
-      "build_output_subfolder": "ciso-workshop",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "compass",
-      "build_source_folder": "compass",
-      "build_output_subfolder": "compass",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "security-docs",
       "build_source_folder": "security-docs",
       "build_output_subfolder": "security-docs",
@@ -43,50 +15,6 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
-    },
-    {
-      "docset_name": "simulation-labs",
-      "build_source_folder": "simulation-labs",
-      "build_output_subfolder": "simulation-labs",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "trusted-root-docs",
-      "build_source_folder": "trusted-root-docs",
-      "build_output_subfolder": "trusted-root-docs",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "zero-trust",
-      "build_source_folder": "zero-trust",
-      "build_output_subfolder": "zero-trust",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [
@@ -98,9 +26,7 @@
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/security",
   "git_repository_branch_open_to_public_contributors": "main",
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -113,6 +39,12 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "security-docs/reusable-content",
+      "url": "https://github.com/MicrosoftDocs/reusable-content",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {
@@ -122,13 +54,16 @@
       "Intellisense"
     ]
   },
-  "need_generate_pdf_url_template": true,
   "targets": {
     "pdf": {
       "template_folder": "_themes.pdf"
     }
   },
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  }
+  "docs_build_engine": {},
+  "skip_source_output_uploading": false,
+  "contribution_branch_mappings": {},
+  "need_generate_pdf_url_template": true,
+  "redirection_files": [
+    ".openpublishing.redirection.json"
+  ]
 }

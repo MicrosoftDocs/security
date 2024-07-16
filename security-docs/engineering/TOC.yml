@@ -3,12 +3,12 @@
   href: index.yml
   expanded: true
   items:
-  - name: Artifical intelligence and machine learning security
+  - name: Artificial intelligence and machine learning security
     items:
     - name: Threat taxonomy - Failure modes in machine learning
       href: failure-modes-in-machine-learning.md
     - name: Threat Modeling AI/ML systems and dependencies
-      href: threat-modeling-aiml.md
+      href: threat-modeling-aiml.md 
     - name: AI/ML pivots to the Security Development Lifecycle bug bar
       href: bug-bar-aiml.md
     - name: Securing the future of AI/ML at Microsoft
@@ -25,28 +25,30 @@
 
   - name: Government Security Program
     items:
-    - name: Program overview
-      href: ../GSP/ProgramOverview.md
-    - name: Transparency centers
-      href: ../GSP/ContentTransparencyCenters.md
-    - name: Information sharing and exchange
-      href: ../GSP/InformationSharingAndExchange.md
-    - name: Access to source code
-      href: ../GSP/OnlineSources.md 
-    - name: Access to technical data
-      href: ../GSP/TechnicalData.md
+    - name: Program Overview
+      href: ProgramOverview.md
+    - name: Technical Data
+      href: TechnicalData.md
+    - name: Information Sharing and Exchange
+      href: InformationSharingAndExchange.md
+    - name: Online Access to Source Code
+      href: OnlineSources.md 
+    - name: Transparency Centers
+      href: ContentTransparencyCenters.md
 
   - name: Security Development Lifecycle
     items:
     - name: Security bug bar (sample) 
-      href: ../SDL/security-bug-bar-sample.md
+      href: security-bug-bar-sample.md
     - name: Cryptographic recommendations 
-      href: ../SDL/Cryptographic-Recommendations.md
+      href: Cryptographic-Recommendations.md
+    - name: Threat Modeling with DevOps 
+      href: threat-modeling-with-dev-ops.md
 
   - name: Cyber Defense Operations Center
     items:
     - name: Strategy brief
-      href: ../MSRC/FY18-Strategy-Brief.md
+      href: FY18-Strategy-Brief.md
 
   - name: Resources
     items:

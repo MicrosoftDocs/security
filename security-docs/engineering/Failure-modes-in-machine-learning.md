@@ -1,19 +1,20 @@
 ---
-# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
+# This basic template provides core metadata fields for Markdown articles on learn.microsoft.com.
 
 # Mandatory fields.
 title: Failure Modes in Machine Learning
 description: Machine Learning Threat Taxonomy
-author: AMarshal
-ms.author: AMarshal
+author: TerryLanfear
+ms.author: terrylan
+manager: rkarlin
 ms.date: 11/11/2019
 ms.topic: article
-ms.prod: security
+ms.service: security
 ---
 
 # Failure Modes in Machine Learning
 
-<table style="text-align:left" border="0">
+<table border="0">
   <tr>
     <th>Microsoft Corporation</th>
     <th>Berkman Klein Center for Internet and Society at Harvard University</th>
@@ -83,7 +84,7 @@ failure modes together in one place and addresses the following needs:
 
     *Results:* This taxonomy is written for a wide interdisciplinary audience – so, policymakers who are looking at the issues from a general ML/AI perspective, as well as specific domains such as misinformation/healthcare should find the failure mode catalogue useful. We also highlight any applicable legal interventions to address the failure modes.
 
-See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](https://docs.microsoft.com/security/threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](/security/engineering/bug-bar-aiml).
+See also Microsoft's [Threat Modeling AI/ML Systems and Dependencies](/security/threat-modeling-aiml) and [SDL Bug Bar Pivots for Machine Learning Vulnerabilities](/security/engineering/bug-bar-aiml).
 
 ## How to use this document
 
@@ -92,8 +93,7 @@ We also do not prescribe technological
 mitigations to these failure modes here, as defenses are scenario-specific
 and tie in with the threat model and system architecture under consideration.  Options presented for threat mitigation are based on current research with the expectation that those defenses will evolve over time as well.
 
-For engineers, we recommend browsing through the overview of possible
-failure modes and jumping into the [threat modeling document](https://docs.microsoft.com/security/threat-modeling-aiml). This way,
+For engineers, we recommend browsing through the overview of possible failure modes and jumping into the [threat modeling document](/security/threat-modeling-aiml). This way,
 engineers can identify threats, attacks, vulnerabilities and use the
 framework to plan for countermeasures where available. We then refer you
 to the bug bar that maps these new vulnerabilities in the taxonomy
@@ -250,7 +250,7 @@ fields:
 ## Details on Intentionally-Motivated Failures
 
 <p>
-<table  width="100%"  border="1"  style="text-align:center" margin="0 auto" padding="0">
+<table  width="100%"  border="1">
   <tr>
     <th>Scenario #</th>
     <th>Attack Class</th>
@@ -356,7 +356,7 @@ fields:
 ## Details on Unintended Failures
 <p>
 
-<table   width="100%"  border="1"  style="text-align:center" margin="0 auto" padding="0">
+<table   width="100%"  border="1">
   <tr>
     <th>Scenario #</th>
     <th>Attack Class</th>

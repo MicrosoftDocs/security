@@ -1,0 +1,407 @@
+- name: Zero Trust implementation guidance
+  href: index.yml
+- name: What is Zero Trust?
+  href: zero-trust-overview.md
+- name: Assessment and progress tracking resources
+  href: zero-trust-assessment-progress-tracking-resources.md
+- name: Adoption framework
+  expanded: false
+  items:
+    - name: Overview
+      href: adopt/zero-trust-adoption-overview.md
+    - name: Rapidly modernize your security posture
+      href: adopt/rapidly-modernize-security-posture.md
+    - name: Secure remote and hybrid work
+      href: adopt/secure-remote-hybrid-work.md
+    - name: Identify and protect sensitive business data
+      href: adopt/identify-protect-sensitive-business-data.md
+    - name: Prevent or reduce business damage from a breach
+      items:
+        - name: Overview
+          href: adopt/prevent-reduce-business-damage-breach.md
+          maintainContext: true
+        - name: Implement security breach prevention and recovery infrastructure
+          href: adopt/prevent-reduce-business-damage-breach-infrastructure.md
+          maintainContext: true
+        - name: Implement threat protection and XDR
+          href: adopt/prevent-reduce-business-damage-breach-threat-protection.md
+          maintainContext: true
+    - name: Meet regulatory and compliance requirements
+      href: adopt/meet-regulatory-compliance-requirements.md
+- name: Technology pillars
+  expanded: false
+  items:
+    - name: Overview
+      href: deploy/overview.md
+    - name: Identity
+      href: deploy/identity.md
+    - name: Endpoints
+      href: deploy/endpoints.md
+    - name: Data
+      href: deploy/data.md
+    - name: Apps
+      href: deploy/applications.md
+    - name: Infrastructure
+      href: deploy/infrastructure.md
+    - name: Network
+      href: deploy/networks.md
+    - name: Visibility, automation, and orchestration
+      href: deploy/visibility-automation-orchestration.md
+- name: Small businesses
+  href: guidance-smb-partner.md
+- name: Rapid Modernization Plan (RaMP)
+  expanded: false
+  items: 
+    - name: Overview
+      href: zero-trust-ramp-overview.md
+    - name: Explicitly validate trust for all access requests
+      href: user-access-productivity-validate-trust.md
+    - name: Ransomware recovery readiness
+      href: data-compliance-gov-ransomware-recovery-readiness.md
+    - name: Data protection
+      href: data-compliance-gov-data.md
+- name: Microsoft cloud security services
+  expanded: false
+  items:
+    - name: Overview
+      href: /microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      maintainContext: true
+    - name: Deploy your identity infrastructure for Microsoft 365
+      items:
+        - name: Overview
+          href: /microsoft-365/enterprise/deploy-identity-solution-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+          maintainContext: true
+        - name: Step 1. Determine your identity model
+          href: /microsoft-365/enterprise/deploy-identity-solution-identity-model?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+          maintainContext: true
+        - name: Step 2. Protect your privileged accounts
+          href: /microsoft-365/enterprise/protect-your-global-administrator-accounts?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+          maintainContext: true
+        - name: Step 3. Protect your user accounts
+          href: /microsoft-365/enterprise/microsoft-365-secure-sign-in?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+          maintainContext: true
+        - name: Step 4. Deploy your identity model
+          items:
+            - name: Cloud-only identity
+              href: /microsoft-365/enterprise/cloud-only-identities?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+              maintainContext: true
+            - name: Hybrid identity
+              items: 
+              - name: Prepare for directory synchronization
+                href: /microsoft-365/enterprise/prepare-for-directory-synchronization?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+                maintainContext: true
+              - name: Prepare a non-routable domain for directory synchronization
+                href: /microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+                maintainContext: true
+              - name: Set up directory synchronization
+                href: /microsoft-365/enterprise/set-up-directory-synchronization?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+                maintainContext: true
+    - name: Zero Trust identity and device configurations
+      items: 
+      - name: Overview
+        href: zero-trust-identity-device-access-policies-overview.md
+      - name: Prerequisite work
+        href: zero-trust-identity-device-access-policies-prerequisite.md
+      - name: Common identity and device access policies
+        href: zero-trust-identity-device-access-policies-common.md
+      - name: Policies for guest and external users
+        href: zero-trust-identity-device-access-policies-guest-access.md
+      - name: Recommended Teams access policies
+        href: zero-trust-identity-device-access-policies-teams.md
+      - name: Recommended Exchange access policies
+        href: zero-trust-identity-device-access-policies-exchange.md
+      - name: Recommended SharePoint access policies
+        href: zero-trust-identity-device-access-policies-sharepoint.md
+      - name: Recommended Defender for Cloud Apps policies for SaaS apps
+        href: zero-trust-identity-device-access-policies-mcas-saas.md
+      - name: Continuous access evaluation
+        href: zero-trust-continuous-access-evaluation-microsoft-365.md
+    - name: Manage endpoints with Intune and Microsoft 365
+      items:
+      - name: Overview
+        href: /microsoft-365/solutions/manage-devices-with-intune-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Step 1. Implement App Protection policies
+        href: /microsoft-365/solutions/manage-devices-with-intune-app-protection?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Step 2. Enroll devices into management
+        href: /microsoft-365/solutions/manage-devices-with-intune-enroll?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Step 3. Set up compliance policies
+        href: /microsoft-365/solutions/manage-devices-with-intune-compliance-policies?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Step 4. Require healthy and compliant devices
+        href: /microsoft-365/solutions/manage-devices-with-intune-require-compliance?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Step 5. Deploy device profiles
+        href: /microsoft-365/solutions/manage-devices-with-intune-configuration-profiles?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Step 6. Monitor device risk and compliance to security baselines
+        href: /microsoft-365/solutions/manage-devices-with-intune-monitor-risk?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Step 7. Implement data loss prevention (DLP) with information protection capabilities
+        href: /microsoft-365/solutions/manage-devices-with-intune-dlp-mip?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+    - name: Pilot and deploy Microsoft Defender XDR
+      items: 
+        - name: Overview
+          href: /defender-xdr/pilot-deploy-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+          maintainContext: true
+        - name: Defender for Identity
+          href: /defender-xdr/pilot-deploy-defender-identity?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+          maintainContext: true
+        - name: Defender for Office 365
+          href: /defender-xdr/pilot-deploy-defender-office-365?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+          maintainContext: true
+        - name: Defender for Endpoint
+          href: /defender-xdr/pilot-deploy-defender-endpoint?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+          maintainContext: true
+        - name: Defender for Cloud Apps
+          href: /defender-xdr/pilot-deploy-defender-cloud-apps?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+          maintainContext: true
+        - name: Investigate and respond to threats 
+          href: /defender-xdr/pilot-deploy-investigate-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+          maintainContext: true
+    - name: Deploy a Microsoft information protection solution 
+      href: /microsoft-365/compliance/information-protection-solution?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      maintainContext: true
+    - name: Manage data privacy and data protection with Microsoft Priva and Microsoft Purview
+      items: 
+      - name: Overview
+        href: /microsoft-365/solutions/data-privacy-protection?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Step 1. Assess data and risks
+        href: /microsoft-365/solutions/data-privacy-protection-assess?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Step 2. Protect and govern data
+        href: /microsoft-365/solutions/data-privacy-protection-protect-govern?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Step 3. Stay on track
+        href: /microsoft-365/solutions/data-privacy-protection-regulations?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Step 4. Respond to incidents and subject requests
+        href: /microsoft-365/solutions/data-privacy-protection-respond-requests?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+    - name: Integrate SaaS apps for Zero Trust with Microsoft 365 
+      items:
+      - name: Overview
+        href: integrate-saas-apps.md
+      - name: Step 1. Add SaaS apps to Microsoft Entra ID and to the scope of policies
+        href: add-saas-apps.md
+      - name: Step 2. Create Defender for Cloud Apps policies
+        href: create-policies.md
+      - name: Step 3. Deploy information protection for SaaS Apps
+        href: deploy-information-protection-saas.md
+    - name: Use SIEM and XDR to respond to incidents
+      expanded: false
+      items:
+      - name: Implement Microsoft Sentinel and Microsoft Defender XDR for Zero trust
+        href: /security/operations/siem-xdr-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 1. Set up XDR tools
+        href: /security/operations/setup-xdr-tools?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 2. Architect a Sentinel workspace
+        href: /security/operations/siem-workspace?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 3. Ingest data sources and configure incident detection
+        href: /security/operations/ingest-data-sources?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
+        href: /security/operations/respond-incident?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+- name: Microsoft Copilots
+  expanded: false
+  items: 
+    - name: Overview
+      href: copilots/apply-zero-trust-copilots-overview.md
+    - name: Zero Trust for Microsoft Copilot
+      href: copilots/zero-trust-microsoft-copilot.md
+    - name: Zero Trust for Copilot for Microsoft 365
+      href: copilots/zero-trust-microsoft-365-copilot.md
+    - name: Zero Trust for Microsoft Copilot for Security
+      href: copilots/zero-trust-microsoft-copilot-for-security.md
+- name: Microsoft Azure infrastructure services
+  expanded: false
+  items: 
+    - name: Overview
+      href: apply-zero-trust-azure-services-overview.md
+    - name: Azure IaaS
+      expanded: false
+      items: 
+      - name: Overview and reference architecture
+        href: azure-infrastructure-overview.md
+      - name: Azure storage
+        href: azure-infrastructure-storage.md
+      - name: Virtual machines
+        href: azure-infrastructure-virtual-machines.md
+      - name: Azure spoke virtual networks
+        href: azure-infrastructure-iaas.md
+      - name: Azure hub virtual networks
+        href: azure-infrastructure-networking.md
+    - name: Spoke virtual networks with Azure PaaS services
+      href: azure-infrastructure-paas.md
+    - name: Azure Virtual Desktop
+      href: azure-infrastructure-avd.md
+    - name: Azure Virtual WAN
+      href: azure-virtual-wan.md
+    - name: IaaS applications in AWS 
+      href: secure-iaas-apps.md
+    - name: Protect Azure resources from cyberattacks 
+      href: azure-protect-resources-cyberattacks.md
+    - name: Azure networking
+      expanded: false
+      items: 
+      - name: Overview
+        href: azure-networking-overview.md
+      - name: Encrypt your network traffic
+        href: azure-networking-encryption.md
+      - name: Segment your network traffic
+        href: azure-networking-segmentation.md
+      - name: Gain visibility into network traffic
+        href: azure-networking-visibility.md
+      - name: Discontinue legacy network security technology
+        href: azure-networking-legacy.md
+    - name: Use SIEM and XDR to respond to incidents
+      expanded: false
+      items:
+      - name: Implement Microsoft Sentinel and Microsoft Defender XDR for Zero trust
+        href: /security/operations/siem-xdr-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 1. Set up XDR tools
+        href: /security/operations/setup-xdr-tools?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 2. Architect a Sentinel workspace
+        href: /security/operations/siem-workspace?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 3. Ingest data sources and configure incident detection
+        href: /security/operations/ingest-data-sources?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+      - name: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
+        href: /security/operations/respond-incident?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+- name: Technology partners
+  expanded: false
+  items: 
+    - name: Overview
+      href: integrate/overview.md
+    - name: Identity
+      href: integrate/identity.md
+    - name: Endpoints
+      href: integrate/endpoints.md
+    - name: Applications
+      href: integrate/applications.md
+    - name: Data
+      href: integrate/data.md
+    - name: Infrastructure
+      href: integrate/infrastructure.md
+    - name: Networks
+      href: integrate/networks.md
+    - name: Visibility, automation, and orchestration
+      items:
+      - name: Overview
+        href: integrate/visibility-automation-orchestration.md
+      - name: Monitor Zero Trust with Microsoft Sentinel
+        href: /azure/sentinel/sentinel-solution?toc=/security/zero-trust/integrate/TOC.json&bc=/security/zero-trust/breadcrumb/toc.json
+        maintainContext: true
+- name: Developers
+  expanded: false
+  items:
+    - name: Overview
+      items:
+      - name: Zero Trust development
+        href: develop/overview.md
+      - name: Application security and Zero Trust
+        href: develop/identity-zero-trust-compliance.md
+      - name: IAM development best practices
+        href: develop/identity-iam-development-best-practices.md
+      - name: Standards-based development
+        href: develop/identity-standards-based-development-methodologies.md
+      - name: Developer and IT Pro responsibilities
+        href: develop/identity-developer-administrator-responsibilities.md
+    - name: Permissions and access
+      items:
+      - name: Overview
+        href: develop/identity.md
+      - name: App integration
+        href: develop/integrate-apps-microsoft-identity-platform.md
+      - name: App registration
+        href: develop/app-registration.md
+      - name: Identity and account types for apps
+        href: develop/identity-supported-account-types.md
+      - name: User authentication
+        href: develop/user-authentication.md
+      - name: Resource access authorization
+        href: develop/acquire-application-authorization-to-access-resources.md
+      - name: Delegated permissions
+        href: develop/developer-strategy-delegated-permission.md
+      - name: Application permissions
+        href: develop/developer-strategy-application-permissions.md
+      - name: Permissions that require admin consent
+        href: develop/permissions-require-admin-consent.md
+      - name: Overprivileged permissions
+        href: develop/overprivileged-permissions.md
+      - name: Non-user application identity
+        href: develop/identity-non-user-applications.md
+      - name: Token management
+        href: develop/token-management.md
+      - name: Token customization
+        href: develop/zero-trust-token-customization.md
+      - name: Secure apps with Continuous Access Evaluation
+        href: develop/secure-with-cae.md
+      - name: Group claims and app roles in tokens
+        href: develop/configure-tokens-group-claims-app-roles.md
+      - name: API protection
+        href: develop/protect-api.md
+      - name: Protected API example
+        href: develop/protected-api-example.md  
+      - name: API call to another API
+        href: develop/api-calls-api.md
+      - name: Authorization best practices
+        href: develop/developer-strategy-authorization-best-practices.md
+    - name: Zero Trust DevSecOps
+      items:
+      - name: Overview
+        href: develop/secure-devops-environments-zero-trust.md
+      - name: Secure DevOps platform environment
+        href: develop/secure-devops-platform-environment-zero-trust.md
+      - name: Secure development environment
+        href: develop/secure-dev-environment-zero-trust.md
+      - name: Embed Zero Trust into developer workflow
+        href: develop/embed-zero-trust-dev-workflow.md
+- name: Illustrations for IT architects and implementers
+  href: zero-trust-tech-illus.md
+- name: Resources
+  expanded: false
+  items:
+    - name: US Federal Zero Trust memo 22-09
+      href: /azure/active-directory/standards/memo-22-09-meet-identity-requirements
+      maintainContext: true
+    - name: Zero Trust Essentials Video Series
+      href: https://www.youtube.com/watch?v=LE52xoYlFvs&list=PLXtHYVsvn_b_P09Jqw65XvV0zp6HP2liu
+    - name: Resources for your Zero Trust journey
+      href: https://www.microsoft.com/security/blog/2021/05/24/resources-for-accelerating-your-zero-trust-journey/
+    - name: Zero Trust Assessment
+      href: https://info.microsoft.com/ww-landing-Zero-Trust-Assessment.html
+    - name: Microsoft Zero Trust Security Blog
+      href: https://www.microsoft.com/security/blog/zero-trust/
+    - name: Microsoft Intelligent Security Association
+      href: https://www.microsoft.com/security/business/intelligent-security-association
+- name: Best practices resources
+  expanded: false
+  items:
+     - name: US Government guidance
+       items:
+         - name: DoD Zero Trust Strategy
+           expanded: false
+           items:
+           - name: Introduction
+             href: dod-zero-trust-strategy-intro.md
+           - name: User
+             href: dod-zero-trust-strategy-user.md
+           - name: Device
+             href: dod-zero-trust-strategy-device.md
+           - name: Applications and workloads
+             href: dod-zero-trust-strategy-apps.md
+           - name: Data
+             href: dod-zero-trust-strategy-data.md
+           - name: Network
+             href: dod-zero-trust-strategy-network.md
+           - name: Automation and orchestration
+             href: dod-zero-trust-strategy-automation.md
+           - name: Visibility and analytics
+             href: dod-zero-trust-strategy-visibility.md
+     - name: More best practices
+       items:
+       - name: The immutable laws of security
+         href: ten-laws-of-security.md

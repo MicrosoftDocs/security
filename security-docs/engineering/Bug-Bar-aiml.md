@@ -1,14 +1,15 @@
 ---
-# This basic template provides core metadata fields for Markdown articles on docs.microsoft.com.
+# This basic template provides core metadata fields for Markdown articles on learn.microsoft.com.
 
 # Mandatory fields.
 title: AI/ML Pivots to the Security Development Lifecycle Bug Bar
 description: Machine Learning Bug Triage Guidance
-author: AMarshal
-ms.author: AMarshal
+author: TerryLanfear
+ms.author: terrylan
+manager: rkarlin
 ms.date: 11/11/2019
 ms.topic: article
-ms.prod: security
+ms.service: security
 ---
 
 # AI/ML Pivots to the Security Development Lifecycle Bug Bar
@@ -26,10 +27,9 @@ bar used to triage traditional security vulnerabilities.
 It is intended to be used as a reference for the triage of AI/ML-related
 security issues.
 For more detailed threat analysis and mitigation information, refer to
-[Threat Modeling AI/ML Systems and
-Dependencies](https://docs.microsoft.com/security/threat-modeling-aiml).
+[Threat Modeling AI/ML Systems and Dependencies](/security/threat-modeling-aiml).
 
-This guidance is organized around and extensively references the Adversarial Machine Learning Threat Taxonomy created by Ram Shankar Siva Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover entitled [Failure Modes in Machine Learning](https://docs.microsoft.com/security/failure-modes-in-machine-learning). Note that while the research this content is based on addresses both intentional/malicious and accidental behaviors in ML failure modes, this bug bar supplement focuses entirely on intentional/malicious behaviors that would result in a security incident and/or deployment of a fix.
+This guidance is organized around and extensively references the Adversarial Machine Learning Threat Taxonomy created by Ram Shankar Siva Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover entitled [Failure Modes in Machine Learning](/security/failure-modes-in-machine-learning). Note that while the research this content is based on addresses both intentional/malicious and accidental behaviors in ML failure modes, this bug bar supplement focuses entirely on intentional/malicious behaviors that would result in a security incident and/or deployment of a fix.
 
 <table>
 <thead>

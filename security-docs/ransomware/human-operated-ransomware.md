@@ -25,16 +25,30 @@ Once devices or files are locked or encrypted, cybercriminals can extort money f
 
 Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [LockBit ransomware](/security/ransomware/human-operated-ransomware). 
 
+Human-operated ransomware attacks involve the following stages:
+
+- **Initial compromise** - The threat actor first gains access to a system or environment following a period of reconnaissance to identify weaknesses in defense.
+
+- **Persistence and defense evasion** - The threat actor establishes a foothold in the system or environment using a backdoor or other mechanism that operates in stealth to avoid detection by incident response teams.
+
+- **Lateral movement** - The threat actor uses the initial point of entry to migrate to other systems connected to the compromised device or network environment.
+
+- **Credential access** - The threat actor uses a fake sign-in page to harvest user or system credentials.
+
+- **Data theft** - The threat actor steals financial or other data from compromised users or systems.
+
+- **Impact** - The affected user or organization might suffer material or reputational damage.
+
 ## Common malware used in ransomware campaigns
 
-[Qakbot](https://www.microsoft.com/en-us/security/blog/2021/12/09/a-closer-look-at-qakbots-latest-building-blocks-and-how-to-knock-them-down/?msockid=3fd141c935036ef610d9506e34696fe7) – Uses phishing to spread malicious links, malicious attachments, or, more recently, embedded images
-[Ryuk](https://www.microsoft.com/en-us/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/?msockid=3fd141c935036ef610d9506e34696fe7) – Data encryptor typically targeting Windows 
-[Trickbot](https://www.microsoft.com/en-us/security/blog/2020/10/12/trickbot-disrupted/?msockid=3fd141c935036ef610d9506e34696fe7) – Has targeted Microsoft applications such as Excel and Word. Trickbot was typically delivered via email campaigns that used current events or financial lures to entice users to open malicious file attachments or click links to websites hosting the malicious files. Since 2022, Microsoft’s mitigation of campaigns using this malware appears to have disrupted its usefulness.
+- [Qakbot](https://www.microsoft.com/en-us/security/blog/2021/12/09/a-closer-look-at-qakbots-latest-building-blocks-and-how-to-knock-them-down/?msockid=3fd141c935036ef610d9506e34696fe7) – Uses phishing to spread malicious links, malicious attachments, or, more recently, embedded images
+- [Ryuk](https://www.microsoft.com/en-us/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/?msockid=3fd141c935036ef610d9506e34696fe7) – Data encryptor typically targeting Windows 
+- [Trickbot](https://www.microsoft.com/en-us/security/blog/2020/10/12/trickbot-disrupted/?msockid=3fd141c935036ef610d9506e34696fe7) – Has targeted Microsoft applications such as Excel and Word. Trickbot was typically delivered via email campaigns that used current events or financial lures to entice users to open malicious file attachments or click links to websites hosting the malicious files. Since 2022, Microsoft’s mitigation of campaigns using this malware appears to have disrupted its usefulness.
 
 ## Prevalent threat actors associated with ransomware campaigns
 
-[LockBit](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/part-1-lockbit-2-0-ransomware-bugs-and-database-recovery/ba-p/3254354) – Financially motivated ransomware-as-a-service (RaaS) campaign and most prolific ransomware threat actor in the 2023-24 time period
-[Black Basta](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Basta&msockid=3fd141c935036ef610d9506e34696fe) – Gains access through spear-phishing emails and uses PowerShell to launch an encryption payload 
+- [LockBit](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/part-1-lockbit-2-0-ransomware-bugs-and-database-recovery/ba-p/3254354) – Financially motivated ransomware-as-a-service (RaaS) campaign and most prolific ransomware threat actor in the 2023-24 time period
+- [Black Basta](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Basta&msockid=3fd141c935036ef610d9506e34696fe) – Gains access through spear-phishing emails and uses PowerShell to launch an encryption payload 
 
 ### Automated ransomware attacks
 
@@ -133,13 +147,13 @@ Microsoft Security ransomware mitigation resources:
 
 See the latest list of ransomware articles in the [Microsoft Security Blog](https://www.microsoft.com/security/blog/?sort-by=relevance&date=any&s=ransomware).
 
-- [Protect your organization against ransomware (May 2024)](https://learn.microsoft.com/security/ransomware/protect-against-ransomware)
+- [Protect your organization against ransomware (May 2024)](/security/ransomware/protect-against-ransomware)
 - [Automatic disruption of human-operated attacks through containment of compromised user accounts (October 2023)](https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/)
 - [Ransomware as a service: Understanding the cybercrime gig economy and how to protect yourself (May 2022)](https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/?ocid=magicti_ta_blog)
 
   Key steps on how the Microsoft Incident Response team (formerly DART/CRSP) conducts ransomware incident investigations.
 
-- [Determine the ransomware attack recovery process (May 2024)](https://learn.microsoft.com/security/operations/incident-response-playbook-dart-ransomware-approach#step-3-determine-the-compromise-recovery-process/)
+- [Determine the ransomware attack recovery process (May 2024)](/security/operations/incident-response-playbook-dart-ransomware-approach#step-3-determine-the-compromise-recovery-process/)
 
   Recommendations and best practices
 

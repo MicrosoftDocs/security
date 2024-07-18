@@ -49,7 +49,7 @@ landingContent:
         - text: How do I proactively hunt for ransomware?
           url:  /defender-xdr/advanced-hunting-find-ransomware
         - text: What are common types of malware that are used in ransomware campaigns?
-          url:  https://learn.microsoft.com/security/ransomware/human-operated-ransomware#how-do-ransomware-attacks-work
+          url:  https://learn.microsoft.com/en-us/security/ransomware/human-operated-ransomware#how-do-ransomware-attacks-work
         - text: Can I download a ransomware incident response playbook? 
           url:  https://download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
 
@@ -73,7 +73,7 @@ landingContent:
 
 
 # Card
-  - title: Blogs about ransomware
+  - title: Microsoft Blogs about ransomware
     linkLists:
       - linkListType: reference
         links:
@@ -89,7 +89,7 @@ landingContent:
           url:  https://www.microsoft.com/insidetrack/blog/building-an-anti-ransomware-program-at-microsoft-focused-on-an-optimal-ransomware-resiliency-state/
 
 # Card
-  - title: Protect against ransomware and extortion
+  - title: Protect against ransomware and extortion with Microsoft
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -103,7 +103,7 @@ landingContent:
           url: protect-against-ransomware-phase3.md
 
 # Card
-  - title: Defense against ransomware
+  - title: Microsoft products for defense against ransomware
     linkLists:
        - linkListType: reference
          links:
@@ -127,7 +127,7 @@ landingContent:
           url:  /microsoft-365/security/defender/defender-threat-intelligence
 
 # Card
-  - title: Ransomware incident response playbooks
+  - title: Microsoft ransomware incident response playbooks
     linkLists:
       - linkListType: reference
         links:

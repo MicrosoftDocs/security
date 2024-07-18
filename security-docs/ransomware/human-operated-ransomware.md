@@ -133,13 +133,13 @@ Microsoft Security ransomware mitigation resources:
 
 See the latest list of ransomware articles in the [Microsoft Security Blog](https://www.microsoft.com/security/blog/?sort-by=relevance&date=any&s=ransomware).
 
-- [Protect your organization against ransomware (May 2024)](https://learn.microsoft.com/security/ransomware/protect-against-ransomware)
+- [Protect your organization against ransomware (May 2024)](/security/ransomware/protect-against-ransomware)
 - [Automatic disruption of human-operated attacks through containment of compromised user accounts (October 2023)](https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/)
 - [Ransomware as a service: Understanding the cybercrime gig economy and how to protect yourself (May 2022)](https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/?ocid=magicti_ta_blog)
 
   Key steps on how the Microsoft Incident Response team (formerly DART/CRSP) conducts ransomware incident investigations.
 
-- [Determine the ransomware attack recovery process (May 2024)](https://learn.microsoft.com/security/operations/incident-response-playbook-dart-ransomware-approach#step-3-determine-the-compromise-recovery-process/)
+- [Determine the ransomware attack recovery process (May 2024)](/security/operations/incident-response-playbook-dart-ransomware-approach#step-3-determine-the-compromise-recovery-process/)
 
   Recommendations and best practices
 

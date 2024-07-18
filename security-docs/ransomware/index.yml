@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
     # Card 
-  - title: Microsoft's top resources on ransomware defense
+  - title: Microsoft's top resources for ransomware defense
     linkLists:
       - linkListType: reference
         links:
@@ -36,7 +36,7 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security
 
   # Card 
-  - title: Frequently asked questions about ransomware
+  - title: Frequently asked questions about ransomware - How Microsoft can help
     linkLists:
       - linkListType: concept
         links:

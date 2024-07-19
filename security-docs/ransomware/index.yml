@@ -89,7 +89,7 @@ landingContent:
           url:  https://www.microsoft.com/insidetrack/blog/building-an-anti-ransomware-program-at-microsoft-focused-on-an-optimal-ransomware-resiliency-state/
 
 # Card
-  - title: Protect against ransomware and extortion with Microsoft
+  - title: Learn the nature of ransomware attacks with Microsoft
     linkLists:
       - linkListType: how-to-guide
         links:

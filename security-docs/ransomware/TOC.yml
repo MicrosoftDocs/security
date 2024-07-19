@@ -16,7 +16,7 @@
         href: protect-against-ransomware-phase2.md
     - name: Backup and restore plan for ransomware
       href: /azure/security/fundamentals/backup-plan-to-protect-against-ransomware 
-    - name: DART approach to ransomware
-      href: /security/operations/incident-response-playbook-dart-ransomware-approach
-    - name: DART ransomware case study
+    - name: Microsoft Incident Response approach to ransomware
+      href: /security/operations/incident-response-playbook-microsoft-incident-response-ransomware-approach
+    - name: Microsoft Incident Response ransomware case study
       href: dart-ransomware-case-study.md 

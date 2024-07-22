@@ -109,6 +109,8 @@ landingContent:
          links:
          - text: In Microsoft 365
            url:  /compliance/assurance/assurance-malware-and-ransomware-protection
+         - text: In Copilot for Security
+           url:  /copilot/security/get-started-security-copilot
          - text: In Azure
            url:  /azure/security/fundamentals/ransomware-protection
          - text: In Sentinel

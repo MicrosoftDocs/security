@@ -29,11 +29,11 @@ ms.date: 05/03/2024
 - Disables security services and logging to avoid detection
 - Locates and corrupts or deletes backups before sending a ransom demand
 
-These actions are commonly done with legitimate programs that you might already have in your environment for administrative purposes. In criminal hands, these tools are used maliciously to carry out attacks.
+These actions are commonly done with legitimate programs - such as [Quick Assist](https://www.microsoft.com/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware) in May 2024 - that you might already have in your environment for administrative purposes. In criminal hands, these tools are used maliciously to conduct attacks.
 
 Responding to the increasing threat of ransomware requires a combination of modern enterprise configuration, up-to-date security products, and the vigilance of trained security staff to detect and respond to the threats before data is lost.
 
-The [Microsoft Incident Response team (formerly DART/CRSP)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. Microsoft Incident Responseprovides onsite reactive incident response and remote proactive investigations. Microsoft Incident Response uses Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
+The [Microsoft Incident Response team (formerly DART/CRSP)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. Microsoft Incident Response provides onsite reactive incident response and remote proactive investigations. Microsoft Incident Response uses Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
 
 This article describes how Microsoft Incident Response handles ransomware attacks for Microsoft customers so that you can consider applying elements of their approach and best practices for your own security operations playbook.
 
@@ -264,11 +264,12 @@ You can get LAPS from the [Microsoft Download Center](https://www.microsoft.com/
 
 Key information from Microsoft:
 
-- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
 - [Human-operated ransomware](/security/compass/human-operated-ransomware)
 - [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
-- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
-- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
+- [2023 Microsoft Digital Defense Report](https://www.microsoft.com/en-us/security/security-insider/microsoft-digital-defense-report-2023) (see pages 17-26)
+
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) Threat analytics report in the Microsoft Defender portal
+
 - [Microsoft Incident Response ransomware case study](/security/ransomware/dart-ransomware-case-study)
 
 Microsoft 365:
@@ -299,18 +300,3 @@ Microsoft Defender for Cloud Apps:
 
 - [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
-Microsoft Security team blog posts:
-
-- [Three steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
-
-  Key steps on how Microsoft Incident Response conducts ransomware incident investigations.
-  
-- [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
-
-  Recommendations and best practices.
-
-- [Becoming resilient by understanding cybersecurity risks: Part 4-navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
-
-  See the **Ransomware** section.
-  

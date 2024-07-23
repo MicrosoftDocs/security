@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Ransomware and extortion # < 60 chars
-summary: Learn how to better protect your organization from ransomware and extortion  # < 160 chars
+title: Ransomware, extortion, and intrusion defense # < 60 chars
+summary: Learn how to better protect your organization from ransomware, extortion, and intrusion  # < 160 chars
 
 metadata:
-  title: Ransomware and extortion # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to better protect your organization from ransomware and extortion  # Required; article description that is displayed in search results. < 160 chars.
+  title: Ransomware, extortion, and intrusion defense # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to better protect your organization from ransomware, extortion, and intrusion  # Required; article description that is displayed in search results. < 160 chars.
   services: na
   ms.service: microsoft-365-security
   ms.subservice: m365d
@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
     # Card 
-  - title: Microsoft top ransomware resources
+  - title: Microsoft's top resources for ransomware defense
     linkLists:
       - linkListType: reference
         links:
@@ -36,18 +36,20 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security
 
   # Card 
-  - title: Frequently asked questions about ransomware
+  - title: Frequently asked questions about ransomware - How Microsoft can help
     linkLists:
       - linkListType: concept
         links:
         - text: What are the stages in a ransomware attack?
-          url:  human-operated-ransomware.md
+          url:  https://learn.microsoft.com/en-us/security/ransomware/human-operated-ransomware#how-do-ransomware-attacks-work
         - text: How do I detect pre-ransom activities?
           url:  /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
         - text: How do I back-up and restore post ransomware attack?
           url:  /azure/security/fundamentals/backup-plan-to-protect-against-ransomware
         - text: How do I proactively hunt for ransomware?
-          url:  human-operated-ransomware.md
+          url:  /defender-xdr/advanced-hunting-find-ransomware
+        - text: What are common types of malware that are used in ransomware campaigns?
+          url:  https://learn.microsoft.com/en-us/security/ransomware/human-operated-ransomware#how-do-ransomware-attacks-work
         - text: Can I download a ransomware incident response playbook? 
           url:  https://download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
 
@@ -56,22 +58,22 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-        - text: Recent Microsoft Security ransomware blog - May 2024
+        - text: Recent Microsoft Security ransomware blog
           url:  https://www.microsoft.com/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/
         - text: Recent Microsoft social media posts about ransomware
           url:  https://x.com/MsftSecIntel/status/1781353314413605345
-        - text: Hands-on-keyboard (HOK) and pre-HOK attacks
+        - text: Human-operated ransomware (HumOR) and pre-HumOR attacks
           url:  https://www.microsoft.com/security/blog/2021/11/15/ai-driven-adaptive-protection-against-human-operated-ransomware/
         - text: Automatic disruption of ransomware attacks
           url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/
-        - text: Threat actor highlight - BlackCat
+        - text: Ransomware threat actor highlight - BlackCat
           url:  https://www.microsoft.com/security/blog/2022/06/13/the-many-lives-of-blackcat-ransomware/
         - text: Insights on ransomware and extortion - Microsoft Digital Defense Report 2023
           url:  https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023
 
 
 # Card
-  - title: Blogs about ransomware
+  - title: Microsoft Blogs about ransomware
     linkLists:
       - linkListType: reference
         links:
@@ -87,7 +89,7 @@ landingContent:
           url:  https://www.microsoft.com/insidetrack/blog/building-an-anti-ransomware-program-at-microsoft-focused-on-an-optimal-ransomware-resiliency-state/
 
 # Card
-  - title: Protect against ransomware and extortion attacks
+  - title: Protect against ransomware and extortion attacks with Microsoft
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -97,7 +99,7 @@ landingContent:
           url: protect-against-ransomware-phase1.md
         - text: Limit the scope of damage from a ransomware attack
           url: protect-against-ransomware-phase2.md
-        - text: Make it hard for threat actors to get into your environment
+        - text: Make it hard for ransomware threat actors to access your environment
           url: protect-against-ransomware-phase3.md
 
 # Card
@@ -107,17 +109,17 @@ landingContent:
          links:
          - text: In Microsoft 365
            url:  /compliance/assurance/assurance-malware-and-ransomware-protection
+         - text: In Copilot for Security
+           url:  /copilot/security/get-started-security-copilot
          - text: In Azure
            url:  /azure/security/fundamentals/ransomware-protection
-         - text: In OneNote
-           url:  dart-ransomware-case-study.md
          - text: In Sentinel
            url:  /azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
          - text: In SharePoint
            url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
 
 # Card
-  - title: Ransomware incident response playbooks
+  - title: Microsoft ransomware incident response playbooks
     linkLists:
       - linkListType: reference
         links:

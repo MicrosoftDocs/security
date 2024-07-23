@@ -21,10 +21,48 @@ In fact, ransomware is a type of malware or phishing cyber security attack that 
 
 Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But even when paid, cybercriminals *might never* give the key to the business or device owner and stop access *permanently*.
 
-
 ## How do ransomware attacks work?
 
-Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [Conti and LockBit ransomware](https://blogs.microsoft.com/on-the-issues/2023/04/06/stopping-cybercriminals-from-abusing-security-tools). 
+Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [LockBit ransomware](https://blogs.microsoft.com/on-the-issues/2023/04/06/stopping-cybercriminals-from-abusing-security-tools).   
+
+Human-operated ransomware attacks involve the following stages:
+
+1. **Initial compromise** - The threat actor first gains access to a system or environment following a period of reconnaissance to identify weaknesses in defense.
+
+1. **Persistence and defense evasion** - The threat actor establishes a foothold in the system or environment using a backdoor or other mechanism that operates in stealth to avoid detection by incident response teams.
+
+1. **Lateral movement** - The threat actor uses the initial point of entry to migrate to other systems connected to the compromised device or network environment.
+
+1. **Credential access** - The threat actor uses a fake sign-in page to harvest user or system credentials.
+
+1. **Data theft** - The threat actor steals financial or other data from compromised users or systems.
+
+1. **Impact** - The affected user or organization might suffer material or reputational damage.
+
+Human-operated ransomware attacks involve the following stages:
+
+- **Initial compromise** - The threat actor first gains access to a system or environment following a period of reconnaissance to identify weaknesses in defense.
+
+- **Persistence and defense evasion** - The threat actor establishes a foothold in the system or environment using a backdoor or other mechanism that operates in stealth to avoid detection by incident response teams.
+
+- **Lateral movement** - The threat actor uses the initial point of entry to migrate to other systems connected to the compromised device or network environment.
+
+- **Credential access** - The threat actor uses a fake sign-in page to harvest user or system credentials.
+
+- **Data theft** - The threat actor steals financial or other data from compromised users or systems.
+
+- **Impact** - The affected user or organization might suffer material or reputational damage.
+
+## Common malware used in ransomware campaigns
+
+- [Qakbot](https://www.microsoft.com/en-us/security/blog/2021/12/09/a-closer-look-at-qakbots-latest-building-blocks-and-how-to-knock-them-down/?msockid=3fd141c935036ef610d9506e34696fe7) – Uses phishing to spread malicious links, malicious attachments, or, more recently, embedded images
+- [Ryuk](https://www.microsoft.com/en-us/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/?msockid=3fd141c935036ef610d9506e34696fe7) – Data encryptor typically targeting Windows 
+- [Trickbot](https://www.microsoft.com/en-us/security/blog/2020/10/12/trickbot-disrupted/?msockid=3fd141c935036ef610d9506e34696fe7) – Has targeted Microsoft applications such as Excel and Word. Trickbot was typically delivered via email campaigns that used current events or financial lures to entice users to open malicious file attachments or click links to websites hosting the malicious files. Since 2022, Microsoft’s mitigation of campaigns using this malware appears to have disrupted its usefulness.
+
+## Prevalent threat actors associated with ransomware campaigns
+
+- [LockBit](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/part-1-lockbit-2-0-ransomware-bugs-and-database-recovery/ba-p/3254354) – Financially motivated ransomware-as-a-service (RaaS) campaign and most prolific ransomware threat actor in the 2023-24 time period
+- [Black Basta](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Basta&msockid=3fd141c935036ef610d9506e34696fe) – Gains access through spear-phishing emails and uses PowerShell to launch an encryption payload 
 
 ### Automated ransomware attacks
 
@@ -81,7 +119,7 @@ Download the [Protect your organization from ransomware poster](https://download
 
 Key information from Microsoft:
 
-- [The latest ransomware trends from Microsoft](https://www.microsoft.com/en-us/security/blog/threat-intelligence/ransomware/), Microsoft latest ransomware blog
+- [The latest ransomware trends from Microsoft](https://www.microsoft.com/security/blog/threat-intelligence/ransomware/), Microsoft latest ransomware blog
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023) 
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
@@ -114,30 +152,23 @@ Microsoft Azure:
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
 - [Fusion Detection for Ransomware in Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+ 
+Microsoft Copilot for Security:
 
-Microsoft Security team blog posts:
+- [Defend against human-operated ransomware attacks with Microsoft Copilot for Security​​](https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security/)
 
-For the latest list of ransomware articles in the Microsoft Security blog, click [here](https://www.microsoft.com/en-us/security/blog/?sort-by=relevance&date=any&s=ransomware).
+Microsoft Security ransomware mitigation resources:
 
-- [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+See the latest list of ransomware articles in the [Microsoft Security Blog](https://www.microsoft.com/security/blog/?sort-by=relevance&date=any&s=ransomware).
+
+- [Protect your organization against ransomware (May 2024)](/security/ransomware/protect-against-ransomware)
 - [Automatic disruption of human-operated attacks through containment of compromised user accounts (October 2023)](https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/)
 - [Ransomware as a service: Understanding the cybercrime gig economy and how to protect yourself (May 2022)](https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/?ocid=magicti_ta_blog)
 
-  Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.
+  Key steps on how the Microsoft Incident Response team (formerly DART/CRSP) conducts ransomware incident investigations.
 
-- [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
-- [Defenders beware: A case for post-ransomware investigations (October 2023)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+- [Determine the ransomware attack recovery process (May 2024)](/security/operations/incident-response-playbook-dart-ransomware-approach#step-3-determine-the-compromise-recovery-process/)
 
-  Recommendations and best practices.
+  Recommendations and best practices
 
-- [Becoming resilient by understanding cybersecurity risks: Part 4-navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
-
-  See the **Ransomware** section.
-
-- [Human-operated ransomware attacks: A preventable disaster (March 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
-
-  Includes attack chain analyses of actual attacks.
-
-- [Ransomware response-to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
-- [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [Navigating recent ransomware threats (June 2024)](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/octo-tempest-hybrid-identity-compromise-recovery/ba-p/4166783)

@@ -240,10 +240,6 @@ Read more about [Azure Firewall](/azure/firewall/overview) and [Route Tables](/a
 
 To configure virtual machines with Microsoft Entra Login, Anti-Malware, and automatic updates enabled, you'll need to allow the following outbound connections. Many of these are by FQDN, meaning that either Azure Firewall is needed for FQDN rules, or you'll make a more complex plan. Azure Firewall is recommended.
 
-> [!WARNING]
-> We might want to move these to the hub network instead.
-
-
 The outbound connections are:
 
 - On port 443:

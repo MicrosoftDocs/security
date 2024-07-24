@@ -89,7 +89,7 @@ landingContent:
           url:  https://www.microsoft.com/insidetrack/blog/building-an-anti-ransomware-program-at-microsoft-focused-on-an-optimal-ransomware-resiliency-state/
 
 # Card
-  - title: Learn the nature of ransomware attacks with Microsoft
+  - title: Protect against ransomware and extortion attacks with Microsoft
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -109,22 +109,14 @@ landingContent:
          links:
          - text: In Microsoft 365
            url:  /compliance/assurance/assurance-malware-and-ransomware-protection
+         - text: In Copilot for Security
+           url:  /copilot/security/get-started-security-copilot
          - text: In Azure
            url:  /azure/security/fundamentals/ransomware-protection
          - text: In Sentinel
            url:  /azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
          - text: In SharePoint
            url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
-
-# Card
-  - title: Ransomware protection using threat intelligence for Microsoft Defender XDR subscription holders
-    linkLists:
-      - linkListType: reference
-        links:
-        - text: Threat analytics reports
-          url:  /microsoft-365/security/defender/threat-analytics
-        - text: Microsoft Defender Threat Intelligence 
-          url:  /microsoft-365/security/defender/defender-threat-intelligence
 
 # Card
   - title: Microsoft ransomware incident response playbooks

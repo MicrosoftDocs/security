@@ -39,20 +39,6 @@ Human-operated ransomware attacks involve the following stages:
 
 1. **Impact** - The affected user or organization might suffer material or reputational damage.
 
-Human-operated ransomware attacks involve the following stages:
-
-- **Initial compromise** - The threat actor first gains access to a system or environment following a period of reconnaissance to identify weaknesses in defense.
-
-- **Persistence and defense evasion** - The threat actor establishes a foothold in the system or environment using a backdoor or other mechanism that operates in stealth to avoid detection by incident response teams.
-
-- **Lateral movement** - The threat actor uses the initial point of entry to migrate to other systems connected to the compromised device or network environment.
-
-- **Credential access** - The threat actor uses a fake sign-in page to harvest user or system credentials.
-
-- **Data theft** - The threat actor steals financial or other data from compromised users or systems.
-
-- **Impact** - The affected user or organization might suffer material or reputational damage.
-
 ## Common malware used in ransomware campaigns
 
 - [Qakbot](https://www.microsoft.com/en-us/security/blog/2021/12/09/a-closer-look-at-qakbots-latest-building-blocks-and-how-to-knock-them-down/?msockid=3fd141c935036ef610d9506e34696fe7) – Uses phishing to spread malicious links, malicious attachments, or, more recently, embedded images

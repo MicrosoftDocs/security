@@ -11,6 +11,8 @@ items:
 - name: Concept
   expanded: false
   items:
+  - name: Aligning the Phi-3 series of language models
+    href: https://download.microsoft.com/download/c/4/f/c4f6e8d4-c34b-4b12-9c2a-e1dd37e8ae4d/phi3_safety_paper_final%201.pdf
   - name: Taxonomy for machine learning failure
     href: /security/engineering/failure-modes-in-machine-learning?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
   - name: AI shared responsibility model

@@ -48,8 +48,6 @@ landingContent:
           url:  /azure/security/fundamentals/backup-plan-to-protect-against-ransomware
         - text: How do I proactively hunt for ransomware?
           url:  /defender-xdr/advanced-hunting-find-ransomware
-        - text: What are common types of malware used in ransomware campaigns?
-          url:  /security/ransomware/human-operated-ransomware#common-malware-used-in-ransomware-campaigns
         - text: Can I download a ransomware incident response playbook? 
           url:  https://download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
 

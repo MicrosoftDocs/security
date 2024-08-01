@@ -1,10 +1,10 @@
 ---
 title: Identity, the first pillar of a Zero Trust security architecture
-description: Identities, representing people, services, or devices, are the common dominator across today’s many networks, endpoints, and applications. In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to data. 
+description: Identities, representing people, services, or devices, are the common denominator across today’s many networks, endpoints, and applications. In the Zero Trust security model, they function as a powerful, flexible, and granular way to control access to data. 
 ms.service: security
 
 ms.topic: conceptual
-ms.date: 07/15/2024
+ms.date: 08/01/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -114,7 +114,7 @@ Follow these steps:
 1. Enable the [Intune](/mem/intune/remote-actions/device-management) service within Microsoft Endpoint Manager (EMS) for managing your users' mobile devices and [enroll devices](/mem/intune/fundamentals/deployment-guide-enrollment). The same can be said about user mobile devices as about laptops: The more you know about them (patch level, jailbroken, rooted, etc.), the more you can provide a rationale for why you block/allow access.
 
 > [!TIP]
-> [Learn about implementing an end-to-end Zero Trust strategy for endpoints](/security/zero-trust/deploy/endpoints)
+> [Learn about implementing an end-to-end Zero Trust strategy for endpoints](/security/zero-trust/deploy/endpoints).
 
 ### III. Analytics improve visibility
 
@@ -215,7 +215,7 @@ When a user's risk is low, but they're signing in from an unknown endpoint, you 
 
 Take this step:
 
-- Enable limited access to [SharePoint Online](/sharepoint/control-access-from-unmanaged-devices) and [Exchange Online](https://aka.ms/owalimitedaccess)
+- Enable limited access to [SharePoint Online](/sharepoint/control-access-from-unmanaged-devices) and [Exchange Online](https://aka.ms/owalimitedaccess).
 
 ### VI. Integrate threat signals from other security solutions to improve detection, protection, and response
 

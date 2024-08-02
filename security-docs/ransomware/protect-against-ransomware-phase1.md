@@ -13,7 +13,6 @@ ms.service: microsoft-365-security
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
-ms.localizationpriority:   # medium
 description: Prepare your organization so that you can recover from cybercriminal ransomware attacks without having to pay the ransom.
 
 

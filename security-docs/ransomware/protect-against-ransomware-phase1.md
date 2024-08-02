@@ -64,6 +64,8 @@ Most organizations don’t protect backup and restoration procedures against thi
 
 [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations.
 
+Learn how to [restore your OneDrive files](https://support.microsoft.com/office/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f) in the event of a ransomware attack.
+
 ### Program and project member accountabilities
 
 This table describes the overall protection of your data from ransomware in terms of a sponsorship/program management/project management hierarchy to determine and drive results.

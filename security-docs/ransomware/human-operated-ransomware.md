@@ -143,6 +143,25 @@ Microsoft Azure:
 Microsoft Copilot for Security:
 
 - [Defend against human-operated ransomware attacks with Microsoft Copilot for Security​​](https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security/)
+- Using AI to create sophisticated ransomware that can evade traditional detection mechanisms.
+
+OpenAI employs several robust measures to protect against the generation of harmful content, such as ransomware and other malicious code, by GPT models. Key strategies, in ChatGPT’s own words, include: 
+
+1. **Training Data Curation**
+
+2. **Safety Layers and Filters**
+
+3. **Empirical Testing and Red-Teaming**
+
+4. **Continuous Monitoring**
+
+5. **Alignment and Safety Research**
+
+6. **Community Reporting and Feedback**: 
+
+7. **Partnerships and Policies**
+
+For more detailed information, refer to OpenAI's official documentation on their approach to [AI safety and misuse mitigation](https://openai.com/safety).
 
 Microsoft Security ransomware mitigation resources:
 

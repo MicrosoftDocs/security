@@ -58,8 +58,8 @@ landingContent:
         links:
         - text: Recent Microsoft Security ransomware blog
           url:  https://www.microsoft.com/security/blog/2024/07/29/ransomware-operators-exploit-esxi-hypervisor-vulnerability-for-mass-encryption
-        - text: Recent Microsoft social media posts about ransomware
-          url:  https://x.com/MsftSecIntel/status/1781353314413605345
+        - text: Recent Microsoft ransomware social media posts 
+          url:  https://www.linkedin.com/posts/microsoft-threat-intelligence_in-the-second-quarter-of-2024-financially-activity-7218696257739923456-KKy_
         - text: Automatic disruption of ransomware attacks
           url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/
 

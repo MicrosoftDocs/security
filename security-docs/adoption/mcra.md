@@ -5,7 +5,7 @@ description: Detailed technical reference architectures for multicloud cybersecu
 ms.service: security
 
 ms.topic: overview
-ms.date: 12/01/2023
+ms.date: 08/13/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo

@@ -109,7 +109,8 @@ Key information from Microsoft:
 - [The latest ransomware trends from Microsoft](https://www.microsoft.com/security/blog/threat-intelligence/ransomware/), Microsoft latest ransomware blog
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
 - [2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023) 
-- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) Threat analytics report in the Microsoft Defender portal
+
 - Microsoft Incident Response team (formerly DART) ransomware [approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
@@ -135,7 +136,8 @@ Microsoft Azure:
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware)
-- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
+- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minute video)
+
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
 - [Fusion Detection for Ransomware in Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
@@ -145,21 +147,21 @@ Microsoft Copilot for Security:
 - [Defend against human-operated ransomware attacks with Microsoft Copilot for Security​​](https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security/)
 - Using AI to create sophisticated ransomware that can evade traditional detection mechanisms.
 
-OpenAI employs several robust measures to protect against the generation of harmful content, such as ransomware and other malicious code, by GPT models. Key strategies, in ChatGPT’s own words, include: 
+OpenAI employs several robust measures to protect against the generation and rendering of harmful content, such as ransomware and other malicious code, by GPT models. Key strategies, in ChatGPT’s own words, include: 
 
-1. **Training Data Curation**
+1. **Training data curation**
 
-2. **Safety Layers and Filters**
+1. **Safety layers and filters**
 
-3. **Empirical Testing and Red-Teaming**
+1. **Empirical testing and red teaming**
 
-4. **Continuous Monitoring**
+1. **Continuous monitoring**
 
-5. **Alignment and Safety Research**
+1. **Alignment and safety research**
 
-6. **Community Reporting and Feedback**: 
+1. **Community reporting and feedback**
 
-7. **Partnerships and Policies**
+1. **Partnerships and policies**
 
 For more detailed information, refer to OpenAI's official documentation on their approach to [AI safety and misuse mitigation](https://openai.com/safety).
 

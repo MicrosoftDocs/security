@@ -12,12 +12,11 @@ ms.service: microsoft-365-security
 ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
-ms.localizationpriority:   # medium
 description: How to stop ransomware attacks by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
 
 ---
 
-# Make it hard for ransomware threat actors to access your organization
+# Limit the scope of damage by ransomware
 
 In this phase, you make the threat actors work *harder* to access your on-premises or cloud systems by gradually removing risks at the points of entry.
 

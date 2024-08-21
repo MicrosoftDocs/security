@@ -18,7 +18,7 @@ description: Prepare your organization so that you can recover from cybercrimina
 
 ---
 
-# Prepare a ransomware attack recovery plan
+# Harden your defenses against ransomware
 
 *Always* prepare an alternative to ransom payment to help avoid losing access to your data.
 
@@ -39,7 +39,7 @@ Ransomware actors in control of your organization have many ways to pressure you
   >Paying the ransom won't guarantee restored access to your data. 
 > Financially motivated cybercriminals (and often relatively amateur operators who are using a toolkit provided by someone else), might keep both the payment locked files. 
 > There is no legal guarantee that they will provide a key that decrypts 100% of your systems and data, or even provide a key at all. The process to decrypt these systems uses homegrown attack tools, an often clumsy and manual process.
-  >
+
 
 - **Pay to avoid disclosure**
 

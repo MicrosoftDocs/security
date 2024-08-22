@@ -18,9 +18,9 @@ description: Prepare your organization so that you can recover from cybercrimina
 
 ---
 
-# Harden your defenses against ransomware
+# Ransomware attack recovery plan
 
-*Always* prepare an alternative to ransom payment to help avoid losing access to your data.
+*Always* prepare a ransomware attack recovery plan, starting with an alternative to ransom payment to help avoid losing access to your data.
 
 > [!IMPORTANT]
 >  **Read the whole ransomware prevention series, and make your organization *hard to ransomware attack*.**

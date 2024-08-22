@@ -16,13 +16,13 @@ description: How to stop ransomware attacks by making it hard for a cybercrimina
 
 ---
 
-# Limit the scope of damage by ransomware
+# Defend against ransomware threat actor access
 
 In this phase, you make the threat actors work *harder* to access your on-premises or cloud systems by gradually removing risks at the points of entry.
 
-While many of these changes will be familiar and easy to do, **it's extremely important that your work on this part of the strategy not slow your progress on the other critically important parts!**
+While many of these changes will be familiar and easy to implement, **it's extremely important that your work on this part of the strategy not slow your progress on the other critically important parts!**
 
-Here are the links to review the three-part cyber security plan:
+Here are the links to review the three-part ransomware prevention plan:
 
 - [Have a recovery plan](protect-against-ransomware-phase1.md)
 - [Limit the harm done](protect-against-ransomware-phase2.md)

@@ -16,7 +16,7 @@ description: How to stop ransomware attacks by making it hard for a cybercrimina
 
 ---
 
-# Defend against ransomware threat actor access
+# Defend against ransomware attacks
 
 In this phase, you make the threat actors work *harder* to access your on-premises or cloud systems by gradually removing risks at the points of entry.
 

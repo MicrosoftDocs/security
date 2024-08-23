@@ -16,9 +16,9 @@ description: How to prevent ransomware attacks by protecting privileged roles in
 
 ---
 
-# Prepare your ransomware attack recovery plan
+# Limit the impact of ransomware attacks
 
-The next step to prevent ransomware attacks is to *protect privileged roles* -- the kind of jobs where people handle a lot of privileged information in an organization. 
+The next step to limit the impact of ransomware attacks is to *protect privileged roles* -- the kind of jobs where people handle a lot of privileged information in an organization. 
 
 This phase of ransomware prevention aims to prevent threat actors from getting a lot of access to your systems.
 

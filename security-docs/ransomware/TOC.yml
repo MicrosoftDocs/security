@@ -12,7 +12,7 @@
         href: protect-against-ransomware-phase1.md  
       - name: Limit the impact of ransomware attacks
         href: protect-against-ransomware-phase2.md
-      - name: Defend against ransomware threat actor access
+      - name: Defend against ransomware attacks
         href: protect-against-ransomware-phase3.md
     - name: Backup and restore plan for ransomware attack recovery
       href: /azure/security/fundamentals/backup-plan-to-protect-against-ransomware 

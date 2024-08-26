@@ -78,7 +78,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Methodology for safety aligning the Phi-3 series of language models
-            url: https://download.microsoft.com/download/c/4/f/c4f6e8d4-c34b-4b12-9c2a-e1dd37e8ae4d/phi3_safety_paper_final%201.pdf
+            url: https://arxiv.org/abs/2407.13833
       - linkListType: reference
         links:
           - text: Enterprise security and governance for Azure Machine Learning

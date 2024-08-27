@@ -63,7 +63,6 @@ landingContent:
         - text: Automatic disruption of ransomware attacks
           url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/
 
-
 # Card
   - title: Microsoft Blogs about ransomware
     linkLists:
@@ -77,20 +76,6 @@ landingContent:
           url:  https://www.microsoft.com/en-us/security/blog/2023/10/25/octo-tempest-crosses-boundaries-to-facilitate-extortion-encryption-and-destruction/
         - text: Building an anti-ransomware program at Microsoft focused on an Optimal Ransomware Resiliency State
           url:  https://www.microsoft.com/insidetrack/blog/building-an-anti-ransomware-program-at-microsoft-focused-on-an-optimal-ransomware-resiliency-state/
-
-# Card
-  - title: Learn the nature of ransomware attacks with Microsoft
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-        - text: Ransomware attack overview
-          url: protect-against-ransomware.md
-        - text: Prepare your ransomware attack recovery plan
-          url: protect-against-ransomware-phase1.md
-        - text: Limit the scope of damage from a ransomware attack
-          url: protect-against-ransomware-phase2.md
-        - text: Make it hard for ransomware threat actors to access your environment
-          url: protect-against-ransomware-phase3.md
 
 # Card
   - title: Microsoft products for defense against ransomware

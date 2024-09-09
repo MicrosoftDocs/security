@@ -40,6 +40,14 @@ For new articles in this content set, please:
 
 # Apply Zero Trust principles to an Azure Virtual WAN deployment
 
+
+ 
+
+
+> [!NOTE]
+> :::image type="icon" source="../zero-trust/media/livestream.svg" alt-text="Livestream icon"::: **Upcoming Livestream** Join the Azure FastTrack team as they discuss this article. 9 October, 2024 | 10:00 AM - 11:00 AM (UTC-07:00) Pacific Time (US & Canada). [Register here.](https://developer.microsoft.com/en-us/reactor/events/23691)
+
+
 With the modern cloud, mobile devices, and other endpoints evolution, relying only on corporate firewalls and perimeter networks is no longer sufficient. An end-to-end Zero Trust strategy assumes that security breaches are inevitable. That means you must verify each request as if it originates from an uncontrolled network. Networking still plays an important role in Zero Trust to connect and protect infrastructure, applications, and data. In the Zero Trust model, there are three key objectives when it comes to securing your networks:
 
 - Be ready to handle attacks before they happen.
@@ -53,7 +61,7 @@ This article provides steps to apply the [principles of Zero Trust](zero-trust-o
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
 | Verify explicitly |Always authenticate and authorize based on all available data points. | Use Azure Firewall with Transport Layer Security (TLS) inspection to verify risk and threats based on all available data. Conditional Access controls are intended to provide authentication and authorization by diverse data points and the Azure Firewall doesn't perform user authentication. |
-| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | User access is beyond the scope of Azure network infrastructure deployments. Using Identity pillar solutions like Privileged Access Management, Conditional Access, and other controls are the way to deliver on this principle. |
+| Use least privileged access |  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection. | User access is beyond the scope of Azure network infrastructure deployments. Using Identity solutions like Privileged Access Management, Conditional Access, and other controls are the way to deliver on this principle. |
 | Assume breach | Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses. | Each spoke VNet has no access to other spoke VNets unless the traffic gets routed through the firewall integrated inside each Azure Virtual WAN hub. The firewall is set to deny by default, allowing only traffic allowed by specified rules. In the event of a compromise or breach of one application/workload, it has limited ability to spread due to the Azure Firewall performing traffic inspection and only forwarding allowed traffic. Only resources in the same workload are exposed to the breach in the same application. |
 
 For more information about how to apply the principles of Zero Trust across an Azure IaaS environment, see the [Apply Zero Trust principles to Azure infrastructure overview](azure-infrastructure-overview.md).
@@ -105,7 +113,7 @@ Securing route propagation and isolation of on-premises environment is a critica
 
 Other than traffic segmentation, routing security is a critical part of any network security design. Routing protocols are an integral part of most networks, including Azure. You need to protect your infrastructure from the inherent risks to routing protocols such as misconfigurations or malicious attacks. The BGP protocol used for [VPN](/azure/vpn-gateway/vpn-gateway-bgp-overview) or [ExpressRoute](/azure/expressroute/expressroute-routing#dynamic-route-exchange) offers very rich possibilities of protecting your network against undesired routing changes, which might include the advertisement of too specific routes or too broad routes.
 
-The best way protect your network is configure your on-premises devices with appropriate [route policies](/azure/expressroute/expressroute-config-samples-routing#route-policies) and [route maps](/azure/expressroute/expressroute-config-samples-routing#route-maps) to make sure that only allowed prefixes are propagated into your network from Azure. For example, you can:
+The best way to protect your network is to configure your on-premises devices with appropriate [route policies](/azure/expressroute/expressroute-config-samples-routing#route-policies) and [route maps](/azure/expressroute/expressroute-config-samples-routing#route-maps) to make sure that only allowed prefixes are propagated into your network from Azure. For example, you can:
 
 - Block inbound prefixes that are too generic.
 
@@ -163,7 +171,7 @@ For Zero Trust, a [Premium Azure Firewall policy](/azure/firewall/premium-featur
 
   - **Outbound TLS Inspection** to protect against malicious traffic that is sent from an internal client hosted in Azure to the Internet.
 
-  - **East-West TLS Inspection** to include traffic that goes to or from on-premises branches and between Virtual WAN spokes, which protects your Azure workloads from potential malicious traffic sent from within Azure.
+  - **East-West TLS Inspection** to include traffic that goes to or from on-premises branches and between Virtual WAN spokes. This protects your Azure workloads from potential malicious traffic sent from within Azure.
 
 - [Intrusion detection and prevention system (IDPS)](/azure/firewall/premium-features#idps) should be enabled in "Alert and Deny" mode.
 
@@ -210,7 +218,7 @@ Each Azure Virtual WAN hub can have one or more VNets [connected](/azure/virtual
 
 - **Advanced threat detection and protection:** See [Apply Zero Trust principles to a spoke virtual network](azure-infrastructure-iaas.md). The elements inside the spoke must be protected with threat protection tools like Microsoft Defender for Cloud.
 
-Because the hub in Azure Virtual WAN is locked and managed by Azure, custom components can't be installed or enabled there. Some resources that are normally deployed inside the hub, in a classic hub and spoke model, must be placed in one or more spokes that acts as shared resource networks. For example:
+Because the hub in Azure Virtual WAN is locked and managed by Azure, custom components can't be installed or enabled there. Some resources that are normally deployed inside the hub, in a classic hub and spoke model, must be placed in one or more spokes that act as shared resource networks. For example:
 
 - **Azure Bastion:** [Azure Bastion](/azure/bastion/vnet-peering) supports Azure Virtual WAN but must be deployed inside a spoke virtual network because the hub is restricted and managed by Azure. From the Azure Bastion spoke, users can reach resources in other VNets, but requires [IP-based connection](/azure/bastion/connect-ip-address) available with the Azure Bastion Standard SKU. 
 - **Custom DNS servers:** DNS server software can be installed on any virtual machine and act as DNS server for all the spokes in Azure Virtual WAN. The DNS server must be installed in a spoke VNet that serves all other spokes directly, or through DNS Proxy feature offered by the Azure Firewall that is integrated inside the Virtual WAN hub. 
@@ -228,7 +236,7 @@ Azure Virtual WAN provides some traffic encryption capabilities through its own 
 
   - Only for ExpressRoute circuits that are provisioned on top of [ExpressRoute Direct](/azure/expressroute/expressroute-erdirect-about), it's possible to leverage platform-provided [MACsec encryption](/azure/expressroute/expressroute-howto-macsec) to secure the connections between your edge routers and Microsoft's edge routers.
 
-  - Encryption could be established using an [IPsec/IKE VPN connection](/azure/virtual-wan/vpn-over-expressroute) from your on-premises network to Azure over the private peering of an Azure ExpressRoute circuit. Routing Intent and Policies now supports this configuration with additional configuration steps required, as explained in [Encrypted ExpressRoute](/azure/virtual-wan/how-to-routing-policies#encryptedER). 
+  - Encryption could be established using an [IPsec/IKE VPN connection](/azure/virtual-wan/vpn-over-expressroute) from your on-premises network to Azure over the private peering of an Azure ExpressRoute circuit. Routing Intent and Routing Policies now support this configuration with additional configuration steps required, as explained in [Encrypted ExpressRoute](/azure/virtual-wan/how-to-routing-policies#encryptedER). 
 
 - For third party [Software-Defined WAN (SD-WAN) devices and NVAs](/azure/virtual-wan/about-nva-hub) integrated into Virtual WAN hub, specific encryption capabilities must be verified and configured according to the vendor's documentation.
 
@@ -240,7 +248,7 @@ Once the traffic has entered the Azure network infrastructure through one of the
 
 ## Step 6: Secure your P2S users
 
-Azure Virtual WAN is a networking service that brings many networking, security, and routing functionalities together to provide a single operational interface. From a user identity perspective, the only touch point with Virtual WAN is in the authentication method used to allow a [user P2S VPN](/azure/virtual-wan/virtual-wan-point-to-site-portal). Several [authentication methods](/azure/virtual-wan/virtual-wan-point-to-site-portal#p2sconfig) are available, but we recommend following general Zero Trust principles [Microsoft Entra authentication](/azure/virtual-wan/virtual-wan-point-to-site-azure-ad). With Microsoft Entra ID, you can require [Multi-Factor Authentication (MFA) and Conditional Access](/azure/virtual-wan/openvpn-azure-ad-mfa) apply Zero Trust principles to client devices and user identities.
+Azure Virtual WAN is a networking service that brings many networking, security, and routing functionalities together to provide a single operational interface. From a user identity perspective, the only touch point with Virtual WAN is in the authentication method used to allow a [user P2S VPN](/azure/virtual-wan/virtual-wan-point-to-site-portal). Several [authentication methods](/azure/virtual-wan/virtual-wan-point-to-site-portal#p2sconfig) are available, but we recommend following general Zero Trust principles [Microsoft Entra authentication](/azure/virtual-wan/virtual-wan-point-to-site-azure-ad). With Microsoft Entra ID, you can require [multifactor authentication (MFA) and Conditional Access](/azure/virtual-wan/openvpn-azure-ad-mfa) apply Zero Trust principles to client devices and user identities.
 
 >[!Note]
 >Microsoft Entra authentication is only available for gateways that use the OpenVPN protocol, which is supported only for OpenVPN protocol connections and requires the Azure VPN Client.
@@ -256,7 +264,7 @@ Azure Virtual WAN provides extensive monitoring and diagnostic capabilities with
 
 Azure Firewall provides the following monitoring tools that you should use to ensure security and correct application of Zero Trust principles:
 
-- [Azure Firewall Policy Analytics](/azure/firewall/policy-analytics) provide insights, centralized visibility, and control to Azure Firewall. Security does require that proper firewall rules are in place and effective to protect the internal infrastructure. The Azure Portal summarizes details about "Potential Malicious Sources" generated by firewall engine IDPS and Threat Intelligence features.
+- [Azure Firewall Policy Analytics](/azure/firewall/policy-analytics) provide insights, centralized visibility, and control to Azure Firewall. Security does require that proper firewall rules are in place and effective to protect the internal infrastructure. The Azure portal summarizes details about "Potential Malicious Sources" generated by firewall engine IDPS and Threat Intelligence features.
 
 - [Azure Firewall Workbook](/azure/firewall/firewall-workbook) provides a flexible canvas for Azure Firewall data analysis. You can gain insights into Azure Firewall events, learn about your application, and network rules, and see statistics for firewall activities across URLs, ports, and addresses. We highly recommend that you periodically review check [IDPS Log Statistics](/azure/firewall/firewall-workbook#idps-log-statistics) and from the **Investigations** tab, check denied traffic, source and destination flows, and the Threat Intelligence report to review and optimize firewall rules.
 

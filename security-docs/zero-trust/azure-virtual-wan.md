@@ -40,7 +40,7 @@ For new articles in this content set, please:
 
 # Apply Zero Trust principles to an Azure Virtual WAN deployment
 
->[!:::image type="content" source="media/livestream.svg" Upcoming Livestrem]
+>[! :::image type="content" source="media/livestream.svg" Upcoming Livestrem]
 >Join the Azure FastTrack team as they discuss this article.
 >9 October, 2024 | 10:00 AM - 11:00 AM (UTC-07:00) Pacific Time (US & Canada)
 >[Register here](https://developer.microsoft.com/en-us/reactor/events/23691)

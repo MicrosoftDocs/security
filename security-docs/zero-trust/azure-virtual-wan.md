@@ -40,6 +40,11 @@ For new articles in this content set, please:
 
 # Apply Zero Trust principles to an Azure Virtual WAN deployment
 
+>[!:::image type="content" source="media/livestream.svg" Upcoming Livestrem]
+>Join the Azure FastTrack team as they discuss this article.
+>9 October, 2024 | 10:00 AM - 11:00 AM (UTC-07:00) Pacific Time (US & Canada)
+>[Register here](https://developer.microsoft.com/en-us/reactor/events/23691)
+
 With the modern cloud, mobile devices, and other endpoints evolution, relying only on corporate firewalls and perimeter networks is no longer sufficient. An end-to-end Zero Trust strategy assumes that security breaches are inevitable. That means you must verify each request as if it originates from an uncontrolled network. Networking still plays an important role in Zero Trust to connect and protect infrastructure, applications, and data. In the Zero Trust model, there are three key objectives when it comes to securing your networks:
 
 - Be ready to handle attacks before they happen.

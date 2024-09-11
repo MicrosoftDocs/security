@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to storage in Azure?
 description: How to apply Zero Trust principles to Azure storage.  
-ms.date: 02/12/2024
+ms.date: 09/11/2024
 ms.service: security
 author: rudneir2
 ms.author: ruolivei

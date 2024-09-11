@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to Azure IaaS?
 description: An overview of how to apply Zero Trust principles to Azure IaaS components and infrastructure.
-ms.date: 05/31/2024
+ms.date: 09/11/2024
 ms.service: security
 author: rudneir2
 ms.author: ruolivei
@@ -39,6 +39,9 @@ For new articles in this content set, please:
 --->
 
 # Overview – Apply Zero Trust principles to Azure IaaS
+
+> [!NOTE]
+> :::image type="icon" source="../zero-trust/media/livestream.svg" alt-text="Livestream icon"::: **Upcoming Livestream** Join the Azure FastTrack team as they discuss this article. 23 October, 2024 | 10:00 AM - 11:00 AM (UTC-07:00) Pacific Time (US & Canada). [Register here.](https://developer.microsoft.com/en-us/reactor/events/23692/)
 
 **Summary:** To apply Zero Trust principles to Azure IaaS components and infrastructure, you must first understand the common reference architecture and the components of Azure storage, virtual machines, and spoke and hub virtual networks.
 

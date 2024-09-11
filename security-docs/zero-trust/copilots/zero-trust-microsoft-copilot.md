@@ -13,6 +13,7 @@ ms.collection:
   - msftsolution-scenario
   - zerotrust-solution
   - zerotrust-azure
+ms.custom: [copilot-learning-hub]
 ---
 
 # Apply principles of Zero Trust to Microsoft Copilot

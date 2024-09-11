@@ -40,6 +40,10 @@ For new articles in this content set, please:
 
 # Apply Zero Trust principles to IaaS applications in Amazon Web Services
 
+> [!NOTE]
+> :::image type="icon" source="../zero-trust/media/livestream.svg" alt-text="Livestream icon"::: **Upcoming Livestream** Join the Azure FastTrack team as they discuss this article. 16 October, 2024 | 10:00 AM - 11:30 AM (UTC-07:00) Pacific Time (US & Canada). [Register here.](https://developer.microsoft.com/en-us/reactor/events/23388/)
+
+
 This article provides steps to apply the principles of Zero Trust to IaaS applications in Amazon Web Services (AWS):
 
 | Zero Trust Principle | Definition | Met by |

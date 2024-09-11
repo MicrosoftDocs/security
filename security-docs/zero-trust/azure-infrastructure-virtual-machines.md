@@ -40,6 +40,9 @@ For new articles in this content set, please:
 
 # Apply Zero Trust principles to virtual machines in Azure
 
+> [!NOTE]
+> :::image type="icon" source="../zero-trust/media/livestream.svg" alt-text="Livestream icon"::: **Upcoming Livestream** Join the Azure FastTrack team as they discuss this article. 23 October, 2024 | 10:00 AM - 11:00 AM (UTC-07:00) Pacific Time (US & Canada). [Register here.](https://developer.microsoft.com/en-us/reactor/events/23692/)
+
 **Summary:** To apply Zero Trust principles to Azure virtual machines, you must configure logical isolation with dedicated resource groups, leverage Role Based Access Control (RBAC), secure virtual machine boot components, enable customer-managed keys and double encryption, control installed applications, configure secure access and maintenance of virtual machines, and enable advanced threat detection and protection.
 
 This article provides steps to apply the [principles of Zero Trust](zero-trust-overview.md) to virtual machines in Azure:

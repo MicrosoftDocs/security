@@ -14,6 +14,7 @@ ms.collection:
   - zerotrust-solution
   - zerotrust-azure
   - magic-ai-copilot
+ms.custom: [copilot-learning-hub]
 ---
 
 # Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365

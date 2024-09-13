@@ -158,7 +158,7 @@ To prevent bad actors from using Copilot for Security to quickly get information
 - User accounts are required to use multifactor authentication (MFA) (so their access can't be compromised by guessing user passwords alone) and they're required to change their passwords when high-risk activity is detected.
 - Devices must comply with Intune management and device compliance policies.
 
-For identity and access policy recommendations, see the identity and access step in [Zero Trust for Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md#step-2-deploy-or-validate-your-identity-and-access-policies). Based on the recommendations in this article, ensure that your resulting configuration applies the following policies for all SecOps staff user accounts and their devices:
+For identity and access policy recommendations, see the identity and access step in [Zero Trust for Microsoft 365 Copilot](zero-trust-microsoft-365-copilot.md#step-2-deploy-or-validate-your-identity-and-access-policies). Based on the recommendations in this article, ensure that your resulting configuration applies the following policies for all SecOps staff user accounts and their devices:
 
 - [Always use MFA for sign-ins](/entra/identity/conditional-access/howto-conditional-access-policy-all-users-mfa)
 - [Block clients that don’t support modern authentication](/entra/identity/conditional-access/howto-conditional-access-policy-block-legacy)
@@ -247,7 +247,7 @@ Use the following resources.
 
 | Scope | Description and resources |
 | --- | --- |
-| Microsoft 365 and SaaS apps integrated with Microsoft Entra | See the [Zero Trust for Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md#step-5-deploy-or-validate-your-threat-protection-services) article for guidance on how to ramp up threat protection beginning with Microsoft 365 E3 plans and progressing with Microsoft E5 plans. <br><br> For Microsoft 365 E5 plans, also see [Evaluate and pilot Microsoft Defender XDR security](/microsoft-365/security/defender/eval-overview). |
+| Microsoft 365 and SaaS apps integrated with Microsoft Entra | See [Zero Trust for Microsoft 365 Copilot](zero-trust-microsoft-365-copilot.md#step-5-deploy-or-validate-your-threat-protection-services) article for guidance on how to ramp up threat protection beginning with Microsoft 365 E3 plans and progressing with Microsoft E5 plans. <br><br> For Microsoft 365 E5 plans, also see [Evaluate and pilot Microsoft Defender XDR security](/microsoft-365/security/defender/eval-overview). |
 | Your Azure cloud resources <br><br> Your resources in other cloud providers, such as Amazon Web Services (AWS) | Use the following resources to get started with Defender for Cloud: <br><br> - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) <br> - [Apply Zero Trust principles to IaaS applications in AWS](../secure-iaas-apps.md) |
 | Your digital estate with all Microsoft XDR tools and Microsoft Sentinel | The [Implement Microsoft Sentinel and Microsoft Defender XDR for Zero Trust](/security/operations/siem-xdr-overview) solution guide walks through the process of setting up Microsoft eXtended detection and response (XDR) tools together with Microsoft Sentinel to accelerate your organization’s ability to respond to and remediate cybersecurity attacks. |
 
@@ -292,7 +292,7 @@ See these additional articles for Zero Trust and Microsoft's Copilots:
 
 - [Overview](apply-zero-trust-copilots-overview.md)
 - [Microsoft Copilot](zero-trust-microsoft-copilot.md)
-- [Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md)
+- [Microsoft 365 Copilot](zero-trust-microsoft-365-copilot.md)
 
 Also see the [Microsoft Copilot for Security documentation](/security-copilot/).
 

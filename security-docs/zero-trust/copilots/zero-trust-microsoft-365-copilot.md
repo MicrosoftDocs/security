@@ -1,6 +1,6 @@
 ---
-title: How do I apply Zero Trust principles to Microsoft Copilot for Microsoft 365?
-description: How to apply Zero Trust principles to Microsoft Copilot for Microsoft 365. 
+title: How do I apply Zero Trust principles to Microsoft Microsoft 365 Copilot?
+description: How to apply Zero Trust principles to Microsoft 365 Copilot. 
 ms.date: 04/02/2024
 ms.service: security
 author: BrendaCarter
@@ -17,9 +17,9 @@ ms.collection:
 ms.custom: [copilot-learning-hub]
 ---
 
-# Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
+# Apply principles of Zero Trust to Microsoft 365 Copilot
 
-**Summary:** To apply Zero Trust principles to Microsoft Copilot for Microsoft 365, you need to apply seven layers of protection in your Microsoft 365 tenant:
+**Summary:** To apply Zero Trust principles to Microsoft 365 Copilot, you need to apply seven layers of protection in your Microsoft 365 tenant:
 
 1. Data protection
 2. Identity and access

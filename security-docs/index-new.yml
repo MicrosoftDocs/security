@@ -21,8 +21,8 @@ sections:
     summary: "Microsoft Learn is your trusted source to help you tackle security challenges while preparing for a competitive future. Find technical guidance and resources on planning and implementing modern cybersecurity strategy, architecture, processes, and technology, building advanced cybersecurity skills and getting certified, and learning cybersecurity as a new or aspiring security professional." 
     heroImage:
      componentType: hero-image
-     lightImageSrc: placeholder
-     darkImageSrc: placeholder
+     lightImageSrc: \security-docs\media\security-hub\security-hero.png
+     darkImageSrc: \security-docs\media\security-hub\security-hero.png
 
   # Spotlight selections
   - componentType: testimonials-section

@@ -110,7 +110,7 @@ sections:
     - componentType: card
       title: "Understand the cybersecurity basics "
       summary: Take your first step toward protecting against threats with this learning path, where you will learn about cybersecurity concepts and ways to protect yourself and your business from cyberattacks.
-      imageUrl: /copilot/media/copilot/copilot-learning-hub/ai-learning.png
+      imageUrl: \security-docs\media\security-hub\security-skills-lock.png
       links: 
         - componentType: link
           text: Learn more today
@@ -118,7 +118,7 @@ sections:
     - componentType: card
       title: "Virtual Training Day: Security, compliance, and identity fundamentals"
       summary: Join this two-part training to familiarize yourself with the basic concepts spanning Microsoft security, identity and access, privacy, and data governance, protection, and management solutions.   
-      imageUrl: /copilot/media/copilot/copilot-learning-hub/adoption-kit.png
+      imageUrl: \security-docs\media\security-hub\security-skills-laptop.png
       links: 
         - componentType: link
           text: Grow your know-how
@@ -126,7 +126,7 @@ sections:
     - componentType: card
       title: "Microsoft Certified: Security, Compliance, and Identity Fundamentals​"
       summary: Familiar with Microsoft Azure and Microsoft 365? Demonstrate your foundational knowledge on security, compliance, and identity concepts and related cloud-based Microsoft solutions. 
-      imageUrl: /copilot/media/copilot/copilot-learning-hub/secure.png
+      imageUrl: \security-docs\media\security-hub\security-skills-shield.png
       links: 
         - componentType: link
           text: Get Microsoft Certified

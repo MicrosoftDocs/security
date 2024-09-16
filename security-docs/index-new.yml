@@ -28,7 +28,7 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
+      - avatarUrl: \security-docs\media\security-hub\toppicks1.png
         componentType: testimonial-card
         name: " "
         role: 'AI security fundamentals'
@@ -37,7 +37,7 @@ sections:
           componentType: link
           url: /training/paths/ai-security-fundamentals/
           text: Get started
-      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
+      - avatarUrl: \security-docs\media\security-hub\toppicks2.png
         componentType: testimonial-card
         name: Security operations and incident response 
         role: " "
@@ -46,7 +46,7 @@ sections:
           componentType: link
           url: /training/paths/security-copilot-and-ai/
           text: Get started
-      - avatarUrl: \copilot\media\copilot\copilot-learning-hub\blog-icon.png
+      - avatarUrl: \security-docs\media\security-hub\toppicks3.png
         componentType: testimonial-card
         name: " "
         role: Govern and protect sensitive information in the age of AI 
@@ -55,7 +55,7 @@ sections:
           componentType: link
           url: /training/paths/purview-protect-govern-ai/
           text: Get started
-      - avatarUrl: \copilot\media\copilot\copilot-learning-hub\blog-icon.png
+      - avatarUrl: \security-docs\media\security-hub\toppicks4.png
         componentType: testimonial-card
         name: What’s new in Microsoft Copilot for Security 
         role: " "

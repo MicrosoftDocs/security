@@ -1,5 +1,5 @@
 ---
-title: How do I apply Zero Trust principles to Microsoft Microsoft 365 Copilot?
+title: How do I apply Zero Trust principles to Microsoft 365 Copilot?
 description: How to apply Zero Trust principles to Microsoft 365 Copilot. 
 ms.date: 04/02/2024
 ms.service: security
@@ -31,7 +31,7 @@ ms.custom: [copilot-learning-hub]
 
 ## Introduction
 
-Before you introduce Microsoft Copilot for Microsoft 365 or Copilot into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](../zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
+Before you introduce Microsoft 365 Copilot (Copilot) into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](../zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
 
 This article provides steps to apply the [principles of Zero Trust](../zero-trust-overview.md) security to prepare your environment for Copilot in the following ways:
 

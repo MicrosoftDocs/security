@@ -78,28 +78,28 @@ sections:
         url: /collections/pzkb8e8dz4k50
         icon:
           componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
+          src: /security-docs/media/security-hub/arrows-blue.png
       - componentType: icon-card
         title: Plan and implement modern cybersecurity 
         summary: " "
         url: placeholder
         icon:
           componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/app-maker-icon.png
+          src: /security-docs/media/security-hub/arrows2-gray.png
       - componentType: icon-card
         title: Gain specialized security skills and knowledge   
         summary: " "
         url: placeholder
         icon:
           componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/data-icon.png
+          src: /security-docs/media/security-hub/arrows3-darkblue.png
       - componentType: icon-card
         title: Prove your advanced skills with Microsoft Credentials
         summary: " "
         url: placeholder
         icon:
           componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
+          src: /security-docs/media/security-hub/arrows4-green.png
   # Build foundational security skills 
   - componentType: cards
     isShadowless: false
@@ -172,12 +172,20 @@ sections:
       - componentType: summary-card
         title: Gain insight to strengthen your security solutions 
         summary: Use our step-by-step Plan to expand your skills and knowledge of security policies, requirements, Zero Trust architecture, and management of hybrid environments to build stronger security solutions. 
-        url: https://learn.microsoft.com/en-us/plans/4wxeae408m6nm8
-     
-#
-#
-#
-
+        url: https://learn.microsoft.com/en-us/plans/4wxeae408m6nm8    
+# Prove your skills with Microsoft Credentials for Security 
+  - componentType: hero
+    title: Prove your skills with Microsoft Credentials for Security 
+    layout: indented
+    textColor: dark
+    background:
+      componentType: image
+      src: ./media/windows-11-light.jpg
+    summary: Showcase your advanced cybersecurity skills with Microsoft Credentials for Security. Whether you want verifiable skill sets aligned to security job roles or specific to security projects, Microsoft Certifications and Microsoft Applied Skills are complementary credentials that can help you and your organization take on new opportunities. Explore Certifications, like Security Operations Analyst or Cybersecurity Architect, and check out Applied Skills for real-world scenarios that use Microsoft Sentinel or Microsoft Defender. 
+    links:
+      - componentType: link
+        url: /credentials/browse/?subjects=security
+        text: Explore all credentials
 # Explore other resources 
   - componentType: grid
     title: Explore other resources 

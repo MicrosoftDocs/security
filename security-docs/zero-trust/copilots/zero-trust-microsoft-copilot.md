@@ -22,8 +22,8 @@ ms.custom: [copilot-learning-hub]
 
 1. Implement security protections for web-grounded prompts to the Internet.
 2. Add security protections for Microsoft Edge browser summarization.
-3. Complete recommended security protections for Copilot for Microsoft 365.
-4. Maintain security protections when using Microsoft Copilot and Copilot for Microsoft 365 together.
+3. Complete recommended security protections for Microsoft 365 Copilot.
+4. Maintain security protections when using Microsoft Copilot and Microsoft 365 Copilot together.
 
 ## Introduction
 
@@ -50,14 +50,14 @@ This article walks through the security recommendations that apply in four stage
 | --- | --- | --- |
 | 1 | Web-grounded prompts to the Internet | Basic security hygiene for users and devices using identity and access policies. |
 | 2 | Web-grounded prompts to the Internet with Edge browser page summarization enabled | Your organization data on local, intranet, and cloud locations that Copilot in Edge can summarize. |
-| 3 | Web-grounded prompts to the Internet and access to Copilot for Microsoft 365 | All components affected by Copilot for Microsoft 365. |
-| 4 | Web-grounded prompts to the Internet and access to Copilot for Microsoft 365 with Edge browser page summarization enabled | All the components listed above. |
+| 3 | Web-grounded prompts to the Internet and access to Microsoft 365 Copilot | All components affected by Microsoft 365 Copilot. |
+| 4 | Web-grounded prompts to the Internet and access to Microsoft 365 Copilot with Edge browser page summarization enabled | All the components listed above. |
 
 ## Stage 1. Start with security recommendations for web-grounded prompts to the Internet
 
 The simplest configuration of Copilot provides AI assistance with web-grounded prompts. 
 
-:::image type="content" source="../media/copilot/microsoft-copilot-web-grounded-prompts.svg" alt-text="Diagram of Copilot for Microsoft and the processing of Web-grounded prompts." lightbox="../media/copilot/microsoft-copilot-web-grounded-prompts.svg":::
+:::image type="content" source="../media/copilot/microsoft-copilot-web-grounded-prompts.svg" alt-text="Diagram of Microsoft Copilot and the processing of Web-grounded prompts." lightbox="../media/copilot/microsoft-copilot-web-grounded-prompts.svg":::
 
 In the illustration:
 
@@ -142,17 +142,17 @@ This illustration shows the data sets available to Microsoft Copilot in Edge wit
 - Turn on [Microsoft Defender for Office 363 Plan 1](/microsoft-365/security/defender/eval-defender-office-365-overview), which include Exchange Online Protection (EOP) for Safe Attachments, Safe Links, advanced phishing thresholds and impersonation protection, and real-time detections.
 
 
-## Stage 3. Complete security protections recommended for Copilot for Microsoft 365
+## Stage 3. Complete security protections recommended for Microsoft 365 Copilot
 
-Copilot for Microsoft 365 can use the following data sets to process Graph-grounded prompts:
+Microsoft 365 Copilot can use the following data sets to process Graph-grounded prompts:
 
 - Your Microsoft 365 tenant data
 - Internet data through Bing search (if [enabled](/microsoft-365-copilot/manage-public-web-access))
 - The data used by Copilot-enabled plug-ins and connectors
 
-:::image type="content" source="../media/copilot/microsoft-365-copilot-graph-grounded-prompts.svg" alt-text="Diagram of Copilot for Microsoft 365 and the processing of Graph-grounded prompts." lightbox="../media/copilot/microsoft-365-copilot-graph-grounded-prompts.svg":::
+:::image type="content" source="../media/copilot/microsoft-365-copilot-graph-grounded-prompts.svg" alt-text="Diagram of Microsoft 365 Copilot and the processing of Graph-grounded prompts." lightbox="../media/copilot/microsoft-365-copilot-graph-grounded-prompts.svg":::
 
-For more information, see [Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md).
+For more information, see [Apply principles of Zero Trust to Microsoft Microsoft 365 Copilot](zero-trust-microsoft-365-copilot.md).
 
 ### Recommendations for E3
 
@@ -179,16 +179,16 @@ Implement the recommendations for E3 and the following:
 - Turn on [Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-overview).
 - Configure Defender for Cloud Apps to [discover cloud apps and monitor and audit their behavior](/microsoft-365/security/defender/eval-defender-mcas-architecture#discovering-cloud-apps).
 
-## Stage 4. Maintain security protections while you use Microsoft Copilot and Copilot for Microsoft 365 together
+## Stage 4. Maintain security protections while you use Microsoft Copilot and Microsoft 365 Copilot together
 
-With a license for Copilot for Microsoft 365, you will see a **Work/Web** toggle control in the Edge browser, Windows, and Bing search that allows you to switch between using:
+With a license for Microsoft 365 Copilot, you will see a **Work/Web** toggle control in the Edge browser, Windows, and Bing search that allows you to switch between using:
 
-- Graph-grounded prompts that are sent to Copilot for Microsoft 365 (toggle set to **Work**).
+- Graph-grounded prompts that are sent to Microsoft 365 Copilot (toggle set to **Work**).
 - Web-grounded prompts that primarily use internet data (toggle set to **Web**).
 
 Here’s an example for copilot.microsoft.com.
 
-:::image type="content" source="../media/copilot/microsoft-copilot-example-copilot.microsoft-com.png" alt-text="Example screenshot of Microsoft Copilot for Microsoft Bing." lightbox="../media/copilot/microsoft-copilot-example-copilot.microsoft-com.png":::
+:::image type="content" source="../media/copilot/microsoft-copilot-example-copilot.microsoft-com.png" alt-text="Example screenshot of Copilot in Microsoft Bing." lightbox="../media/copilot/microsoft-copilot-example-copilot.microsoft-com.png":::
 
 This illustration shows the flow of Graph- and Web-grounded prompts.
 
@@ -196,12 +196,12 @@ This illustration shows the flow of Graph- and Web-grounded prompts.
 
 In the diagram:
 
-- Users on devices with a license for Copilot for Microsoft 365 can choose **Work** or **Web** mode for Microsoft Copilot prompts.
-- If **Work** is chosen, Graph-grounded prompts are sent to Copilot for Microsoft 365 for processing.
+- Users on devices with a license for Microsoft 365 Copilot can choose **Work** or **Web** mode for Microsoft Copilot prompts.
+- If **Work** is chosen, Graph-grounded prompts are sent to Microsoft 365 Copilot for processing.
 - If **Web** is chosen, Web-grounded prompts entered via Windows, Bing, or Edge use internet data in its processing.
 - In the case of Edge and when enabled, Windows Copilot includes some types of data in open Edge tabs in its processing.
 
-If the user does not have a license for Copilot for Microsoft 365, the **Work/Web** toggle is not displayed and all prompts are Web-grounded.
+If the user does not have a license for Microsoft 365 Copilot, the **Work/Web** toggle is not displayed and all prompts are Web-grounded.
 
 Here are the sets of accessible organization data for Microsoft Copilot, which include both Graph- and Web-grounded prompts.
 
@@ -258,17 +258,17 @@ This table includes Zero Trust recommendations for your chosen configuration.
 
 | Configuration | Accessible data | Zero Trust recommendations |
 | --- | --- | --- |
-| Without Copilot for Microsoft 365 licenses (**Work/Web** toggle not available) <br><br> AND <br><br> Edge browser page summarization **disabled** | For Web-grounded prompts, internet data only | None required, but highly recommended for overall security hygiene. |
-| Without Copilot for Microsoft 365 licenses (**Work/Web** toggle not available) <br><br> AND <br><br> Edge browser page summarization **enabled** | For Web-grounded prompts: <br><br> - Internet data <br> - Organization data on local, intranet, and cloud locations that Copilot in Edge can summarize | For your Microsoft 365 tenant, see [Zero Trust for Copilot for Microsoft 365](/security/zero-trust/zero-trust-microsoft-365-copilot) and apply Zero Trust protections. <br><br> For organization data on local, intranet, and cloud locations, see [Manage devices with Intune Overview](/microsoft-365/solutions/manage-devices-with-intune-overview) for MAM and MDM policies. Also see [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](/microsoft-365/solutions/data-privacy-protection) for DLP policies. |
-| With Copilot for Microsoft 365 licenses (**Work/Web** toggle available) <br><br> AND <br><br> Edge browser page summarization **disabled** | For Graph-grounded prompts: <br><br> - Microsoft 365 tenant data <br> - Internet data if the web plug-in is enabled <br>- Data for Copilot-enabled plug-ins and connectors <br><br> For Web-grounded prompts, only internet data	 | For your Microsoft 365 tenant, see [Zero Trust for Copilot for Microsoft 365](/security/zero-trust/zero-trust-microsoft-365-copilot) and apply Zero Trust protections. |
-| With Copilot for Microsoft 365 licenses (**Work/Web** toggle available) <br><br> AND <br><br> Edge browser page summarization **enabled** | For Graph-grounded prompts: <br><br> - Microsoft 365 tenant data <br> - Internet data if the web plug-in enabled <br> - Data for Copilot-enabled plug-ins and connectors <br><br> For Web-grounded prompts: <br><br> - Internet data <br> - Organization data that can be rendered in an Edge browser page, including local, cloud, and intranet resources | For your Microsoft 365 tenant, see Zero Trust for Copilot for Microsoft 365 and apply Zero Trust protections. <br><br> For organization data on local, intranet, and cloud locations, see [Manage devices with Intune Overview](/microsoft-365/solutions/manage-devices-with-intune-overview) for MAM and MDM policies. Also see [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](/microsoft-365/solutions/data-privacy-protection) for DLP policies. |
+| Without Microsoft 365 Copilot licenses (**Work/Web** toggle not available) <br><br> AND <br><br> Edge browser page summarization **disabled** | For Web-grounded prompts, internet data only | None required, but highly recommended for overall security hygiene. |
+| Without Microsoft 365 Copilot licenses (**Work/Web** toggle not available) <br><br> AND <br><br> Edge browser page summarization **enabled** | For Web-grounded prompts: <br><br> - Internet data <br> - Organization data on local, intranet, and cloud locations that Copilot in Edge can summarize | For your Microsoft 365 tenant, see [Zero Trust for Microsoft 365 Copilot](/security/zero-trust/zero-trust-microsoft-365-copilot) and apply Zero Trust protections. <br><br> For organization data on local, intranet, and cloud locations, see [Manage devices with Intune Overview](/microsoft-365/solutions/manage-devices-with-intune-overview) for MAM and MDM policies. Also see [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](/microsoft-365/solutions/data-privacy-protection) for DLP policies. |
+| With Microsoft 365 Copilot licenses (**Work/Web** toggle available) <br><br> AND <br><br> Edge browser page summarization **disabled** | For Graph-grounded prompts: <br><br> - Microsoft 365 tenant data <br> - Internet data if the web plug-in is enabled <br>- Data for Copilot-enabled plug-ins and connectors <br><br> For Web-grounded prompts, only internet data	 | For your Microsoft 365 tenant, see [Zero Trust for Microsoft 365 Copilot](/security/zero-trust/zero-trust-microsoft-365-copilot) and apply Zero Trust protections. |
+| With Microsoft 365 Copilot licenses (**Work/Web** toggle available) <br><br> AND <br><br> Edge browser page summarization **enabled** | For Graph-grounded prompts: <br><br> - Microsoft 365 tenant data <br> - Internet data if the web plug-in enabled <br> - Data for Copilot-enabled plug-ins and connectors <br><br> For Web-grounded prompts: <br><br> - Internet data <br> - Organization data that can be rendered in an Edge browser page, including local, cloud, and intranet resources | For your Microsoft 365 tenant, see Zero Trust for Microsoft 365 Copilot and apply Zero Trust protections. <br><br> For organization data on local, intranet, and cloud locations, see [Manage devices with Intune Overview](/microsoft-365/solutions/manage-devices-with-intune-overview) for MAM and MDM policies. Also see [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](/microsoft-365/solutions/data-privacy-protection) for DLP policies. |
 
 ## Next steps
 
 See these additional articles for Zero Trust and Microsoft's Copilots:
 
 - [Overview](apply-zero-trust-copilots-overview.md)
-- [Microsoft Copilot for Microsoft 365](zero-trust-microsoft-365-copilot.md)
+- [Microsoft Microsoft 365 Copilot](zero-trust-microsoft-365-copilot.md)
 - [Microsoft Copilot for Security](zero-trust-microsoft-copilot-for-security.md)
 
 ## References
@@ -278,5 +278,5 @@ Refer to these links to learn about the various services and technologies mentio
 - [Copilot in Edge](/copilot/edge)
 - [Copilot in Edge webpage summarization behavior](/DeployEdge/edge-learnmore-copilot-page-summary-results)
 - [Manage Copilot in Windows](/windows/client-management/manage-windows-copilot)
-- [Manage access to public web content in Microsoft Copilot for Microsoft 365 responses](/microsoft-365-copilot/manage-public-web-access)
-- [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy)
+- [Manage access to public web content in Microsoft Microsoft 365 Copilot responses](/microsoft-365-copilot/manage-public-web-access)
+- [Data, Privacy, and Security for Microsoft Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy)

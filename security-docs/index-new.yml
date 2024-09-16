@@ -21,14 +21,14 @@ sections:
     summary: "Microsoft Learn is your trusted source to help you tackle security challenges while preparing for a competitive future. Find technical guidance and resources on planning and implementing modern cybersecurity strategy, architecture, processes, and technology, building advanced cybersecurity skills and getting certified, and learning cybersecurity as a new or aspiring security professional." 
     heroImage:
      componentType: hero-image
-     lightImageSrc: \security-docs\media\security-hub\security-hero.png
-     darkImageSrc: \security-docs\media\security-hub\security-hero.png
+     lightImageSrc: /security-docs/media/security-hub/security-hero.png
+     darkImageSrc: /security-docs/media/security-hub/security-hero.png
 
   # Spotlight selections
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: \security-docs\media\security-hub\toppicks1.png
+      - avatarUrl: /security-docs/media/security-hub/toppicks1.png
         componentType: testimonial-card
         name: " "
         role: 'AI security fundamentals'
@@ -37,7 +37,7 @@ sections:
           componentType: link
           url: /training/paths/ai-security-fundamentals/
           text: Get started
-      - avatarUrl: \security-docs\media\security-hub\toppicks2.png
+      - avatarUrl: /security-docs/media/security-hub/toppicks2.png
         componentType: testimonial-card
         name: Security operations and incident response 
         role: " "
@@ -46,7 +46,7 @@ sections:
           componentType: link
           url: /training/paths/security-copilot-and-ai/
           text: Get started
-      - avatarUrl: \security-docs\media\security-hub\toppicks3.png
+      - avatarUrl: /security-docs/media/security-hub/toppicks3.png
         componentType: testimonial-card
         name: " "
         role: Govern and protect sensitive information in the age of AI 
@@ -55,7 +55,7 @@ sections:
           componentType: link
           url: /training/paths/purview-protect-govern-ai/
           text: Get started
-      - avatarUrl: \security-docs\media\security-hub\toppicks4.png
+      - avatarUrl: /security-docs/media/security-hub/toppicks4.png
         componentType: testimonial-card
         name: What’s new in Microsoft Copilot for Security 
         role: " "

@@ -180,7 +180,7 @@ sections:
     textColor: dark
     background:
       componentType: image
-      src: /security-docs\media\security-hub\microsoft-credentials.png
+      src: /security-docs/media/security-hub/microsoft-credentials.png
     summary: Showcase your advanced cybersecurity skills with Microsoft Credentials for Security. Whether you want verifiable skill sets aligned to security job roles or specific to security projects, Microsoft Certifications and Microsoft Applied Skills are complementary credentials that can help you and your organization take on new opportunities. Explore Certifications, like Security Operations Analyst or Cybersecurity Architect, and check out Applied Skills for real-world scenarios that use Microsoft Sentinel or Microsoft Defender. 
     links:
       - componentType: link
@@ -191,31 +191,59 @@ sections:
     title: Explore other resources 
     summary: Take advantage of additional resources like training events, tailored learning experiences with Training Services Partners, thought leadership articles, blog posts, and more.  
     blocks:
-      - componentType: summary-card
+      - componentType: icon-card
         title: Connect with the community  
         summary: " "
         url: https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security-docs/media/security-hub/icon-shield-check.png
+      - componentType: icon-card
         title: Learn with the support of Training Services Partners 
         summary: " "
         url: /credentials/support/partners
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security-docs/media/security-hub/icon-briefcase.png
+      - componentType: icon-card
         title: Get deeper security training with Virtual Training Days 
         summary: " "
         url: https://events.microsoft.com/mvtd?scenario=Microsoft%20Security%20Virtual%20Training%20Day
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security-docs/media/security-hub/icon-calendar.png
+      - componentType: icon-card
         title: Boost your team's skills with Microsoft Learn for Organizations 
         summary: " "
         url: /training/organizations
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security-docs/media/security-hub/icon-building.png
+      # - componentType: icon-card
+      #  title: Connect with experts and peers in Microsoft Learning Rooms
+      #  summary: " "
+      #  url: placeholder
+      #  icon:
+      #    componentType: image
+      #    src: /security-docs/media/security-hub/icon-chat.png
+      - componentType: icon-card
         title: Understand your role in the AI shared responsibility model 
         summary: " "
         url: /azure/security/fundamentals/shared-responsibility-ai
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security-docs/media/security-hub/icon-people.png
+      - componentType: icon-card
         title: Gain practical insights from the Microsoft AI Red Team 
         summary: " "
         url: /security/ai-red-team/
-      - componentType: summary-card
+        icon:
+          componentType: image
+          src: /security-docs/media/security-hub/icon-bulb.png
+      - componentType: icon-card
         title: Find more Microsoft cybersecurity news 
         summary: " "
         url: https://blogs.microsoft.com/on-the-issues/category/cybersecurity/
+        icon:
+          componentType: image
+          src: /security-docs/media/security-hub/icon-news.png

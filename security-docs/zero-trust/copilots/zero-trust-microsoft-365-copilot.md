@@ -47,15 +47,21 @@ For the basics of Copilot, see the [overview](/microsoft-365-copilot/microsoft-3
 
 You apply Zero Trust principles for Copilot across the entire architecture, from users and devices to the application data that they have access to. The following diagram shows the logical architecture components.
 
+:::image type="content" source="../media/copilot/m365-copilot-tenant-architecture.svg" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/logical-architecture-microsoft-365-copilot.svg":::
+
+<!---
 :::image type="content" source="../media/copilot/logical-architecture-microsoft-365-copilot.svg" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/logical-architecture-microsoft-365-copilot.svg":::
+--->
 
 In the diagram:
 
 - User devices have Microsoft 365 apps installed from which users can initiate Copilot prompts
 - Copilot components include:
   - The Copilot service, which orchestrates the responses to user prompts
+  - The Large Language Model (LLM) that Copilot references to produce the best response for a user
   - An instance of the Microsoft Graph for the data of your Microsoft 365 tenant
 - Your Microsoft 365 tenant that contains your organization data
+- Copilot results for a user contain only data that the user is allowed to access
 
 ## What’s in this article
 
@@ -70,6 +76,26 @@ This article walks you through the steps to apply the principles of Zero Trust t
 | 5 | Deploy or validate your threat protection services |  Assume breach |
 | 6 | Deploy or validate secure collaboration with Teams | Verify explicitly <br> Use least privileged access |
 | 7 | Deploy or validate user permissions to data | Use least privileged access |
+
+#### Getting started with E3 and next steps with E5
+To help you make progress, each of the steps in this article is organized in the following way:
+- Get started with E3 capabilities
+- Next steps with E5 capabilities
+
+
+#### Working with the Microsoft FastTrack team
+If you are working with the [Microsoft FastTrack team](https://www.microsoft.com/fasttrack) to introduce Copilot into your environment, you will become familiar with three stages: Baseline, Core, and Best-in-class. This approach works well with this guidance.
+
+:::image type="content" source="../media/copilot/m365-fasttrack-core-baseline-best.png" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/logical-architecture-microsoft-365-copilot.svg":::
+
+In the diagram, the Microsoft FastTrack team takes a three-stage approach to deploying Copilot:
+- Baseline — Set up Copilot
+- Core — Get started with the protections in E3
+- Best-in-class — Next steps with E5
+
+For more information on setting up Copilot, see [Get started with Microsoft 365 Copilot](https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-setup).
+
+#### Adapting this guidance for your organization
 
 Because different organizations can be at various stages of deploying Zero Trust protections, in each of these steps:
 

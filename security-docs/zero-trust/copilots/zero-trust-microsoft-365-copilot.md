@@ -84,7 +84,7 @@ To help you make progress, each of the steps in this article is organized in the
 
 
 #### Working with the Microsoft FastTrack team
-If you are working with the [Microsoft FastTrack team](https://www.microsoft.com/fasttrack) to introduce Copilot into your environment, you will become familiar with three stages: Baseline, Core, and Best-in-class. This approach works well with this guidance.
+If you're working with the [Microsoft FastTrack team](https://www.microsoft.com/fasttrack) to introduce Copilot into your environment, you will become familiar with three stages: Baseline, Core, and Best-in-class. This approach works well with this guidance.
 
 :::image type="content" source="../media/copilot/m365-fasttrack-core-baseline-best.png" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/logical-architecture-microsoft-365-copilot.svg":::
 

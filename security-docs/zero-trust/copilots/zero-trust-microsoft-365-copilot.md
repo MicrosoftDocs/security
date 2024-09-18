@@ -47,7 +47,7 @@ For the basics of Copilot, see the [overview](/microsoft-365-copilot/microsoft-3
 
 You apply Zero Trust principles for Copilot across the entire architecture, from users and devices to the application data that they have access to. The following diagram shows the logical architecture components.
 
-:::image type="content" source="../media/copilot/m365-copilot-tenant-architecture.svg" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/logical-architecture-microsoft-365-copilot.svg":::
+:::image type="content" source="../media/copilot/m365-copilot-tenant-architecture.svg" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/m365-copilot-tenant-architecture.svg":::
 
 <!---
 :::image type="content" source="../media/copilot/logical-architecture-microsoft-365-copilot.svg" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/logical-architecture-microsoft-365-copilot.svg":::

@@ -86,7 +86,7 @@ To help you make progress, each of the steps in this article is organized in the
 #### Working with the Microsoft FastTrack team
 If you're working with the [Microsoft FastTrack team](https://www.microsoft.com/fasttrack) to introduce Copilot into your environment, you will become familiar with three stages: Baseline, Core, and Best-in-class. This approach works well with this guidance.
 
-:::image type="content" source="../media/copilot/m365-fasttrack-core-baseline-best.png" alt-text="Three stages for deploying Microsoft 365 Copilot, recommended by the Microsoft FastTrack team." lightbox="../media/copilot/m365-fasttrack-core-baseline-best.png":::
+:::image type="content" source="../media/copilot/m365-fasttrack-core-baseline-best.png" alt-text="Diagram that shows the three stages for deploying Microsoft 365 Copilot, recommended by the Microsoft FastTrack team." lightbox="../media/copilot/m365-fasttrack-core-baseline-best.png":::
 
 In the diagram, the Microsoft FastTrack team takes a three-stage approach to deploying Copilot:
 - Baseline — Set up Copilot
@@ -201,7 +201,7 @@ Finally, consider implementing [access reviews](/entra/id-governance/access-revi
 
 For both Microsoft 365 E3 and E5, use [Intune App Protection policies (APP)](/mem/intune/apps/app-protection-policy), which are rules that ensure an organization's data remains safe or contained within a managed app.
 
-With APP, Intune creates a wall between your organization data and personal data. APP ensure that organization data in specified apps can't be copied and pasted to other apps on the device, even if the device isn't managed.
+With APP, Intune creates a wall between your organization data and personal data. APP ensures that organization data in specified apps can't be copied and pasted to other apps on the device, even if the device isn't managed.
 
 APP can prevent the inadvertent or intentional copying of Copilot-generated content to apps on a device that aren't included in the list of permitted apps. APP can limit the blast radius of an attacker using a compromised device.
 
@@ -412,7 +412,7 @@ For a visual summary of the information in this article, see the **Copilot archi
 
 Use the Visio file to customize these illustrations for your own use.
 
-For more Zero Trust technical illustrations, click [here](../zero-trust-tech-illus.md).
+For more Zero Trust technical illustrations, see [Zero Trust illustrations for IT architects and implementers](../zero-trust-tech-illus.md).
 
 ## References
 

@@ -13,7 +13,7 @@ f1.keywords:
   - NOCSH
 ms.author: godonnell
 author: garrodonnell
-manager: celested
+manager: CelesteDG
 audience: ITPro
 ms.collection:
   - msftsolution-secops

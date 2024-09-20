@@ -10,16 +10,15 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: RatulaC
-manager: dansimp
+ms.author: godonnell
+author: garrodonnell
+manager: CelesteDG
 audience: ITPro
 ms.collection: 
   - msftsolution-secops
 ms.topic: article
 ms.subservice:: m365d
 ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
-ms.localizationpriority:   # medium
 ---
 
 # Compromised and malicious applications investigation

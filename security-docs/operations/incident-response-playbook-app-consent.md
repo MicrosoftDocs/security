@@ -11,14 +11,13 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: godonnell
+author: garrodonnell
+manager: CelesteDG
 audience: ITPro
 ms.collection:
   - msftsolution-secops
 ms.topic: article
-ms.localizationpriority:   # medium
 ms.subservice:: m365d
 ---
 

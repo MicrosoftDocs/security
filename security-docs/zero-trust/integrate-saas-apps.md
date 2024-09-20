@@ -5,7 +5,7 @@ ms.date: 04/18/2024
 ms.service: security
 author: mjcaparas
 ms.author: macapara
-ms.topic: conceptual
+ms.topic: solution-overview
 ms.collection:
   -	m365solution-saas
   -	m365solution-overview

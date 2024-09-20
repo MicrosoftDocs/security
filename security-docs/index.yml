@@ -21,8 +21,8 @@ sections:
     summary: "Microsoft Learn is your trusted source to help you tackle security challenges while preparing for a competitive future. Find technical guidance and resources on planning and implementing modern cybersecurity strategy, architecture, processes, and technology, building advanced cybersecurity skills and getting certified, and learning cybersecurity as a new or aspiring security professional." 
     heroImage:
      componentType: hero-image
-     lightImageSrc: /security-docs/media/security-hub/security-hero.png
-     darkImageSrc: /security-docs/media/security-hub/security-hero.png
+     lightImageSrc: /security/media/security-hub/security-hero.png
+     darkImageSrc: /security/media/security-hub/security-hero.png
 # Spotlight selections
   - componentType: cards
     isShadowless: false
@@ -33,7 +33,7 @@ sections:
     - componentType: card
       title: "AI security fundamentals"
       summary: Understand the concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement to increase the security posture of AI environments.
-      imageUrl: /security-docs/media/security-hub/toppicks1.png
+      imageUrl: /security/media/security-hub/toppicks1.png
       links: 
         - componentType: link
           text: Learn more today
@@ -41,7 +41,7 @@ sections:
     - componentType: card
       title: "Security operations and incident response "
       summary: Understand the concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement to increase the security posture of AI environments.
-      imageUrl: /security-docs/media/security-hub/toppicks1.png
+      imageUrl: /security/media/security-hub/toppicks1.png
       links: 
         - componentType: link
           text: Learn more today
@@ -49,7 +49,7 @@ sections:
     - componentType: card
       title: "Govern and protect sensitive information in the age of AI "
       summary: Understand the concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement to increase the security posture of AI environments.
-      imageUrl: /security-docs/media/security-hub/toppicks1.png
+      imageUrl: /security/media/security-hub/toppicks1.png
       links: 
         - componentType: link
           text: Learn more today
@@ -58,7 +58,7 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security-docs/media/security-hub/toppicks1.png
+      - avatarUrl: /security/media/security-hub/toppicks1.png
         componentType: testimonial-card
         name: " "
         role: 'AI security fundamentals'
@@ -210,7 +210,7 @@ sections:
     textColor: dark
     background:
       componentType: image
-      src: /security-docs/media/security-hub/microsoft-credentials.png
+      src: /security/media/security-hub/microsoft-credentials.png
     summary: Showcase your advanced cybersecurity skills with Microsoft Credentials for Security. Whether you want verifiable skill sets aligned to security job roles or specific to security projects, Microsoft Certifications and Microsoft Applied Skills are complementary credentials that can help you and your organization take on new opportunities. Explore Certifications, like Security Operations Analyst or Cybersecurity Architect, and check out Applied Skills for real-world scenarios that use Microsoft Sentinel or Microsoft Defender. 
     links:
       - componentType: link
@@ -227,21 +227,21 @@ sections:
         url: https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance
         icon:
           componentType: image
-          src: /security-docs/media/security-hub/icon-shield-check.png
+          src: /security/media/security-hub/icon-shield-check.png
       - componentType: icon-card
         title: Learn with the support of Training Services Partners 
         summary: " "
         url: /credentials/support/partners
         icon:
           componentType: image
-          src: /security-docs/media/security-hub/icon-briefcase.png
+          src: /security/media/security-hub/icon-briefcase.png
       - componentType: icon-card
         title: Get deeper security training with Virtual Training Days 
         summary: " "
         url: https://events.microsoft.com/mvtd?scenario=Microsoft%20Security%20Virtual%20Training%20Day
         icon:
           componentType: image
-          src: /security-docs/media/security-hub/icon-calendar.png
+          src: /security/media/security-hub/icon-calendar.png
       - componentType: icon-card
         title: Boost your team's skills with Microsoft Learn for Organizations 
         summary: " "
@@ -255,28 +255,28 @@ sections:
       #  url: placeholder
       #  icon:
       #    componentType: image
-      #    src: /security-docs/media/security-hub/icon-chat.png
+      #    src: /security/media/security-hub/icon-chat.png
       - componentType: icon-card
         title: Understand your role in the AI shared responsibility model 
         summary: " "
         url: /azure/security/fundamentals/shared-responsibility-ai
         icon:
           componentType: image
-          src: /security-docs/media/security-hub/icon-people.png
+          src: /security/media/security-hub/icon-people.png
       - componentType: icon-card
         title: Gain practical insights from the Microsoft AI Red Team 
         summary: " "
         url: /security/ai-red-team/
         icon:
           componentType: image
-          src: /security-docs/media/security-hub/icon-bulb.png
+          src: /security/media/security-hub/icon-bulb.png
       - componentType: icon-card
         title: Find more Microsoft cybersecurity news 
         summary: " "
         url: https://blogs.microsoft.com/on-the-issues/category/cybersecurity/
         icon:
           componentType: image
-          src: /security-docs/media/security-hub/icon-news.png
+          src: /security/media/security-hub/icon-news.png
 
 
 
@@ -293,7 +293,7 @@ sections:
       
       ### Build foundational security skills
 
-      Build your knowledge and skills on foundational security concepts to better collaborate with security colleagues or get your cybersecurity career started. Whether you’re a new IT professional, a student, or a business leader interested in getting the most from Microsoft security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities here.
+      Build your foundational knowledge and essential skills to better collaborate with security colleagues, or find what you need to get your cybersecurity career started. Whether you’re a new IT professional, a student, or a business leader interested in getting the most from Microsoft Security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities.
 
       :::row:::
          :::column:::
@@ -318,28 +318,28 @@ sections:
 
       ### Plan and implement modern cybersecurity
 
-      Modernize your cybersecurity strategy, architecture, processes, technology, and more using Zero Trust principles. 
+      Use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
 
       :::row:::
          :::column:::
-         **[Master generative AI model selection, evaluation, and multimodal integration with Azure AI Studio](https://aka.ms/ADAI_OptlGenAIMod_Plan)**
+         **[Access security adoption resources](https://aka.ms/saf)**
 
-         Find out how to benchmark models, apply multimodal models to help enhance customer satisfaction, and complete evaluations to help ensure performance and safety. 
+         Plan your overall security modernization journey. The Security Adoption Framework (SAF) provides organizations with guidance for incorporating end-to-end security modernization across a “hybrid of everything” multicloud and multi-platform technical estate.  
          :::column-end:::
          :::column:::
-         **[Transform your business with Microsoft AI](/training/paths/transform-your-business-with-microsoft-ai/)**
+         **[Work with Microsoft Cybersecurity Reference Architectures](https://aka.ms/MCRA)**
 
-         In this learning path, business leaders will find the knowledge and resources to adopt AI in their organizations. Explore planning, strategizing, and scaling AI projects in a responsible way.
+         Explore the Microsoft Cybersecurity Reference Architectures (MCRA), and review diagrams that describe how Microsoft Security capabilities integrate with Microsoft and third-party platforms.
          :::column-end:::
          :::column:::
+         **[Take the CISO workshop training ](https://aka.ms/CISOworkshop)**
 
-
-
+         This workshop can help you accelerate security program modernization using Zero Trust principles. 
          :::column-end:::
          :::column:::
+         **[Discover common security antipatterns ](/security/adoption/adoption#how-to-consume-the-guidance)**
 
-
-
+         Learn to avoid common cybersecurity mistakes and pitfalls. Review the itemized antipatterns that we commonly observe across organizations, along with guidance for overcoming them. 
          :::column-end:::
       :::row-end:::
 

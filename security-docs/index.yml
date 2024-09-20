@@ -67,7 +67,7 @@ sections:
           componentType: link
           url: /training/paths/ai-security-fundamentals/
           text: Get started
-      - avatarUrl: /security-docs/media/security-hub/toppicks2.png
+      - avatarUrl: /security/media/security-hub/toppicks2.png
         componentType: testimonial-card
         name: Security operations and incident response 
         role: " "
@@ -76,7 +76,7 @@ sections:
           componentType: link
           url: /training/paths/security-copilot-and-ai/
           text: Get started
-      - avatarUrl: /security-docs/media/security-hub/toppicks3.png
+      - avatarUrl: /security/media/security-hub/toppicks3.png
         componentType: testimonial-card
         name: " "
         role: Govern and protect sensitive information in the age of AI 
@@ -85,7 +85,7 @@ sections:
           componentType: link
           url: /training/paths/purview-protect-govern-ai/
           text: Get started
-      - avatarUrl: /security-docs/media/security-hub/toppicks4.png
+      - avatarUrl: /security/media/security-hub/toppicks4.png
         componentType: testimonial-card
         name: What’s new in Microsoft Copilot for Security 
         role: " "
@@ -108,28 +108,28 @@ sections:
         url: /collections/pzkb8e8dz4k50
         icon:
           componentType: image
-          src: /security-docs/media/security-hub/arrows-blue.png
+          src: /security/media/security-hub/arrows-blue.png
       - componentType: icon-card
         title: Plan and implement modern cybersecurity 
         summary: " "
         url: placeholder
         icon:
           componentType: image
-          src: /security-docs/media/security-hub/arrows2-gray.png
+          src: /security/media/security-hub/arrows2-gray.png
       - componentType: icon-card
         title: Gain specialized security skills and knowledge   
         summary: " "
         url: placeholder
         icon:
           componentType: image
-          src: /security-docs/media/security-hub/arrows3-darkblue.png
+          src: /security/media/security-hub/arrows3-darkblue.png
       - componentType: icon-card
         title: Prove your advanced skills with Microsoft Credentials
         summary: " "
         url: placeholder
         icon:
           componentType: image
-          src: /security-docs/media/security-hub/arrows4-green.png
+          src: /security/media/security-hub/arrows4-green.png
   # Build foundational security skills 
   - componentType: cards
     isShadowless: false
@@ -140,7 +140,7 @@ sections:
     - componentType: card
       title: "Understand the cybersecurity basics "
       summary: Take your first step toward protecting against threats with this learning path, where you will learn about cybersecurity concepts and ways to protect yourself and your business from cyberattacks.
-      imageUrl: \security-docs\media\security-hub\security-skills-lock.png
+      imageUrl: \security\media\security-hub\security-skills-lock.png
       links: 
         - componentType: link
           text: Learn more today
@@ -148,7 +148,7 @@ sections:
     - componentType: card
       title: "Virtual Training Day: Security, compliance, and identity fundamentals"
       summary: Join this two-part training to familiarize yourself with the basic concepts spanning Microsoft security, identity and access, privacy, and data governance, protection, and management solutions.   
-      imageUrl: \security-docs\media\security-hub\security-skills-laptop.png
+      imageUrl: \security\media\security-hub\security-skills-laptop.png
       links: 
         - componentType: link
           text: Grow your know-how
@@ -156,7 +156,7 @@ sections:
     - componentType: card
       title: "Microsoft Certified: Security, Compliance, and Identity Fundamentals​"
       summary: Familiar with Microsoft Azure and Microsoft 365? Demonstrate your foundational knowledge on security, compliance, and identity concepts and related cloud-based Microsoft solutions. 
-      imageUrl: \security-docs\media\security-hub\security-skills-shield.png
+      imageUrl: \security\media\security-hub\security-skills-shield.png
       links: 
         - componentType: link
           text: Get Microsoft Certified
@@ -248,7 +248,7 @@ sections:
         url: /training/organizations
         icon:
           componentType: image
-          src: /security-docs/media/security-hub/icon-building.png
+          src: /security/media/security-hub/icon-building.png
       # - componentType: icon-card
       #  title: Connect with experts and peers in Microsoft Learning Rooms
       #  summary: " "
@@ -340,6 +340,14 @@ sections:
          **[Discover common security antipatterns ](/security/adoption/adoption#how-to-consume-the-guidance)**
 
          Learn to avoid common cybersecurity mistakes and pitfalls. Review the itemized antipatterns that we commonly observe across organizations, along with guidance for overcoming them. 
+         :::column-end:::
+      :::row-end:::
+
+      :::row:::
+         :::column:::
+         **[Adopt Zero Trust architecture ](/security/zero-trust/)**
+
+        Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using Microsoft-recommended deployment plans.   
          :::column-end:::
       :::row-end:::
 

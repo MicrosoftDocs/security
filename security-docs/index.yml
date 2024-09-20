@@ -23,7 +23,37 @@ sections:
      componentType: hero-image
      lightImageSrc: /security-docs/media/security-hub/security-hero.png
      darkImageSrc: /security-docs/media/security-hub/security-hero.png
-
+# Spotlight selections
+  - componentType: cards
+    isShadowless: false
+    backgroundColor: alternating-grey
+    title: Discover top picks
+    summary: Build your knowledge and skills on foundational security concepts to better collaborate with security colleagues or get your cybersecurity career started. Whether you’re a new IT professional, a student, or a business leader interested in getting the most from Microsoft security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities here. 
+    blocks:
+    - componentType: card
+      title: "AI security fundamentals"
+      summary: Understand the concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement to increase the security posture of AI environments.
+      imageUrl: /security-docs/media/security-hub/toppicks1.png
+      links: 
+        - componentType: link
+          text: Learn more today
+          url: /training/paths/ai-security-fundamentals/
+    - componentType: card
+      title: "Security operations and incident response "
+      summary: Understand the concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement to increase the security posture of AI environments.
+      imageUrl: /security-docs/media/security-hub/toppicks1.png
+      links: 
+        - componentType: link
+          text: Learn more today
+          url: /training/paths/ai-security-fundamentals/
+    - componentType: card
+      title: "Govern and protect sensitive information in the age of AI "
+      summary: Understand the concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement to increase the security posture of AI environments.
+      imageUrl: /security-docs/media/security-hub/toppicks1.png
+      links: 
+        - componentType: link
+          text: Learn more today
+          url: /training/paths/ai-security-fundamentals/
   # Spotlight selections
   - componentType: testimonials-section
     title: 'Discover top picks'

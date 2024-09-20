@@ -277,3 +277,259 @@ sections:
         icon:
           componentType: image
           src: /security-docs/media/security-hub/icon-news.png
+
+
+
+
+#####
+# By role
+  - componentType: markdown
+    content: |
+      ## Jump-start your security learning journey
+
+      Security is a complex journey. To keep pace with evolving cyberthreats, technology platforms, and business priorities, it’s important to continuously update your skills and your organization’s roadmap. The following resources can help you navigate the most common security learning journeys. 
+      
+      #### [Build foundational security skills](#tab/build-foundational-security-skills)
+      
+      ### Build foundational security skills
+
+      :::row:::
+         :::column:::
+         **[Understand cybersecurity basics](/training/paths/describe-basic-concepts-of-cybersecurity/)**
+
+         Find out how you can protect yourself and your organization against cyberthreats and cyberattacks, and explore cybersecurity concepts. 
+         :::column-end:::
+         :::column:::
+         **[Take the Microsoft Security Virtual Training Day: Security, Compliance, and Identity Fundamentals](https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals&startTime=08:00&endTime=17:00)**
+
+         Get the details on designing and building a cloud-native AI app, developing a back-end database, and integrating Azure AI services into applications. 
+         :::column-end:::
+         :::column:::
+         **[Implementing data integration and model grounding with Azure AI Studio and Microsoft Fabric](https://aka.ms/ADAI_DevGenAIExp_Plan)**
+
+         Discover how to create advanced AI solutions, ground models in their data, connect and integrate data from various sources, and use OneLake in Microsoft Fabric. 
+         :::column-end:::
+         :::column:::
+         **[Evolve with generative AI: Operationalize your Azure generative AI solutions with fine-tuning and prompt flow](https://aka.ms/ADAI_OpGenAISols_Plan)**
+
+         Learn how to use a prompt flow, collaborate with others through hubs and projects, integrate fine-tuned models, and work with Azure AI models. 
+         :::column-end:::
+      :::row-end:::
+      
+      :::row:::
+         :::column:::
+         **[Master generative AI model selection, evaluation, and multimodal integration with Azure AI Studio](https://aka.ms/ADAI_OptlGenAIMod_Plan)**
+
+         Find out how to benchmark models, apply multimodal models to help enhance customer satisfaction, and complete evaluations to help ensure performance and safety. 
+         :::column-end:::
+         :::column:::
+         **[Build and extend copilots with Microsoft Copilot Studio](/plans/yd1os5om1xp852)**
+
+         Use Microsoft Copilot Studio to create conversational AI solutions, and learn how to build actions that extend Microsoft 365 Copilot. 
+         :::column-end:::
+         :::column:::
+         **[Extend Microsoft 365 Copilot (for developers)](https://aka.ms/MW_M365CoPDev)**
+
+         Use Copilot Studio actions, and learn about building plugins and connectors for Microsoft 365 Copilot. Discover how to choose the right option for your use case.
+         :::column-end:::
+         :::column:::
+
+
+
+         :::column-end:::
+      :::row-end:::
+      
+      #### [Business or technical leader](#tab/business-technical-leader)
+
+      ### Business or technical leader
+
+      :::row:::
+         :::column:::
+         **[Master generative AI model selection, evaluation, and multimodal integration with Azure AI Studio](https://aka.ms/ADAI_OptlGenAIMod_Plan)**
+
+         Find out how to benchmark models, apply multimodal models to help enhance customer satisfaction, and complete evaluations to help ensure performance and safety. 
+         :::column-end:::
+         :::column:::
+         **[Transform your business with Microsoft AI](/training/paths/transform-your-business-with-microsoft-ai/)**
+
+         In this learning path, business leaders will find the knowledge and resources to adopt AI in their organizations. Explore planning, strategizing, and scaling AI projects in a responsible way.
+         :::column-end:::
+         :::column:::
+
+
+
+         :::column-end:::
+         :::column:::
+
+
+
+         :::column-end:::
+      :::row-end:::
+
+      #### [Business user](#tab/business-user)
+
+      ### Business user
+
+      :::row:::
+         :::column:::
+         **[Explore generative AI with Copilot in Bing](/training/modules/explore-generative-ai-copilot-bing/)**
+
+         This learning path enables learners to perform a series of use case exercises that build their Microsoft 365 Copilot skills in various business-related scenarios. Use cases include Executives, Sales, Marketing, Finance, IT, HR, and Operations.
+         :::column-end:::
+         :::column:::
+         **[Build your Microsoft 365 Copilot skills (for end users)](https://aka.ms/MW_M365CoPEndUser)**
+
+         Find out how to create effective prompts in Microsoft 365 Copilot to help boost your productivity. Explore real-world prompts for specific use case scenarios.
+         :::column-end:::
+         :::column:::
+
+         
+          
+         :::column-end:::
+         :::column:::
+
+         
+          
+         :::column-end:::
+      :::row-end:::
+
+      #### [IT professional](#tab/it-professional)
+
+      ### IT professional
+
+      :::row:::
+         :::column:::
+         **[Get AI-Ready with Microsoft 365 Admin](/plans/2x36hj36oje7d3)**
+
+         This content helps admins ensure that Microsoft 365 tenants are set up and configured for AI so that future AI features can be integrated as seamlessly as possible. 
+         :::column-end:::
+         :::column:::
+         **[Discover Microsoft 365 Copilot (for administrators)](https://aka.ms/MW_M365CoPAdmin)**
+
+         Focus on security and compliance features to configure in your Microsoft 365 tenant to help protect your organizational data before you implement Microsoft 365 Copilot. 
+         :::column-end:::
+         :::column:::
+
+         
+          
+         :::column-end:::
+         :::column:::
+
+         
+          
+         :::column-end:::
+      :::row-end:::
+
+      #### [Data scientist](#tab/data-scientist)
+
+      ### Data scientist
+
+      :::row:::
+         :::column:::
+         **[AI learning journey for Data scientists and Machine Learning engineers](/collections/y35db6dow15j7n)**
+
+         These recommendations are for people who implement data science and machine learning solutions. 
+         :::column-end:::
+         :::column:::
+
+
+
+         :::column-end:::
+         :::column:::
+         
+         
+
+         :::column-end:::
+         :::column:::
+         
+
+
+         :::column-end:::
+      :::row-end:::
+
+      #### [Data professional](#tab/data-professional)
+
+      ### Data professional
+
+      :::row:::
+         :::column:::
+         **[AI learning journey for data professionals, including data engineers and data analysts](/collections/r2ru3dg25z24z)**
+
+         These recommendations are for people who implement end-to-end analytics and data engineering to prepare for AI solutions. 
+         :::column-end:::
+         :::column:::
+        
+
+
+         :::column-end:::
+         :::column:::
+         
+         
+
+         :::column-end:::
+         :::column:::
+         
+         
+
+         :::column-end:::
+      :::row-end:::
+
+      #### [Low-code developer](#tab/low-code-developer)
+
+      ### Low-code developer
+
+      :::row:::
+         :::column:::
+         **[Create Power Platform solutions with AI and Copilot](/plans/3076u43z46rkqn)**
+
+         Learn to use Copilot to set up Dataverse, create Power Apps, and build Automated Processes. Explore what Microsoft Copilot Studio can do to help you build and extend custom copilots. 
+         :::column-end:::
+         :::column:::
+         **[Accelerate AI development with Low Code](/plans/0k82i63zo353x5)**
+
+         Learn how to develop on Dataverse, Power Apps, and Power Automate. This curated content will also cover creation of custom copilots with Microsoft Copilot Studio.
+         :::column-end:::
+         :::column:::
+         **[Extend Microsoft 365 Copilot (for developers)](https://aka.ms/MW_M365CoPDev)**
+
+         Use Copilot Studio actions, and learn about building plugins and connectors for Microsoft 365 Copilot. Discover how to choose the right option for your use case.
+         :::column-end:::
+         :::column:::
+         **[Build and extend copilots with Microsoft Copilot Studio](https://aka.ms/BA_BldandExdCop)**
+
+         Use Microsoft Copilot Studio to create conversational AI solutions, and learn how to build actions that extend Microsoft 365 Copilot.
+         :::column-end:::
+      :::row-end:::
+
+      #### [Security professional](#tab/security-professional)
+
+      ### Security professional
+
+      :::row:::
+         :::column:::
+         **[Help secure your data in the age of AI](https://aka.ms/Sec_DataAI_Plan)**
+
+         Work with Microsoft Purview, Microsoft Sentinel, and Microsoft Copilot for Security, and learn how to effectively manage, protect, and govern sensitive information in AI-driven environments.
+         :::column-end:::
+         :::column:::
+         
+
+
+         :::column-end:::
+         :::column:::
+         
+
+
+         :::column-end:::
+         :::column:::
+         
+
+
+         :::column-end:::
+      :::row-end:::
+
+      ---
+
+      <br />
+      <br />
+#####

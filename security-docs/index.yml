@@ -307,38 +307,11 @@ sections:
          Join this training to discover basic concepts, like identity and access management and compliance management. Gain foundational knowledge of privacy and of data governance, protection, and management solutions.  
          :::column-end:::
          :::column:::
-         **[Implementing data integration and model grounding with Azure AI Studio and Microsoft Fabric](https://aka.ms/ADAI_DevGenAIExp_Plan)**
+         **[Earn the Microsoft Certified: Security, Compliance, and Identity Fundamentals Certification​](/credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification)**
 
-         Discover how to create advanced AI solutions, ground models in their data, connect and integrate data from various sources, and use OneLake in Microsoft Fabric. 
+         If you’re familiar with Azure and Microsoft 365, demonstrate your foundational knowledge of Microsoft Security, compliance, and identity concepts across these cloud-based solutions. 
          :::column-end:::
-         :::column:::
-         **[Evolve with generative AI: Operationalize your Azure generative AI solutions with fine-tuning and prompt flow](https://aka.ms/ADAI_OpGenAISols_Plan)**
-
-         Learn how to use a prompt flow, collaborate with others through hubs and projects, integrate fine-tuned models, and work with Azure AI models. 
-         :::column-end:::
-      :::row-end:::
-      
-      :::row:::
-         :::column:::
-         **[Master generative AI model selection, evaluation, and multimodal integration with Azure AI Studio](https://aka.ms/ADAI_OptlGenAIMod_Plan)**
-
-         Find out how to benchmark models, apply multimodal models to help enhance customer satisfaction, and complete evaluations to help ensure performance and safety. 
-         :::column-end:::
-         :::column:::
-         **[Build and extend copilots with Microsoft Copilot Studio](/plans/yd1os5om1xp852)**
-
-         Use Microsoft Copilot Studio to create conversational AI solutions, and learn how to build actions that extend Microsoft 365 Copilot. 
-         :::column-end:::
-         :::column:::
-         **[Extend Microsoft 365 Copilot (for developers)](https://aka.ms/MW_M365CoPDev)**
-
-         Use Copilot Studio actions, and learn about building plugins and connectors for Microsoft 365 Copilot. Discover how to choose the right option for your use case.
-         :::column-end:::
-         :::column:::
-
-
-
-         :::column-end:::
+         
       :::row-end:::
       
       #### [Plan and implement modern cybersecurity](#tab/plan-implement-modern-cybersecurity)

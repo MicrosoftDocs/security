@@ -198,7 +198,7 @@ sections:
         url: https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance
         icon:
           componentType: image
-          src: /security/media/security-hub/icon-shield-check.png
+          src: /security/media/security-hub/icon-chat.png
       - componentType: icon-card
         title: Find a Microsoft Training Services Partner
         summary: "Discover Training Services Partners around the world that offer security training solutions in formats and styles to help you meet your learning goals."
@@ -247,7 +247,7 @@ sections:
         url: /copilot/security/microsoft-security-copilot
         icon:
           componentType: image
-          src: /security/media/security-hub/icon-chat.png
+          src: /security/media/security-hub/icon-shield-check.png
 
 
 

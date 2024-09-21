@@ -27,7 +27,7 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/security-hub/toppicks1.png
+      - avatarUrl: /security/media/security-hub/lock-icon.png
         componentType: testimonial-card
         name: "AI security fundamentals"
         role: " "
@@ -36,7 +36,7 @@ sections:
           componentType: link
           url: /training/paths/ai-security-fundamentals/
           text: Get started
-      - avatarUrl: /security/media/security-hub/toppicks2.png
+      - avatarUrl: /security/media/security-hub/laptop-icon.png
         componentType: testimonial-card
         name: Get started with Microsoft Copilot for Security 
         role: " "
@@ -45,7 +45,7 @@ sections:
           componentType: link
           url: /training/paths/security-copilot-and-ai/
           text: Get started
-      - avatarUrl: /security/media/security-hub/toppicks3.png
+      - avatarUrl: /security/media/security-hub/shield-icon.png
         componentType: testimonial-card
         name: "Govern and protect sensitive information in the age of AI "
         role: " "
@@ -170,9 +170,7 @@ sections:
          Learn how security policies, Zero Trust architecture, and hybrid environment management can help you improve overall cybersecurity in Strengthen your organization’s security architecture and solutions. 
          :::column-end:::
       :::row-end:::
-
       ---
-
       <br />
       <br />
 #####

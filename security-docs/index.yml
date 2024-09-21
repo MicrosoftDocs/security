@@ -27,7 +27,7 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/security-hub/lock-icon.png
+      - avatarUrl: /securitys/media/security-hub/general-learning-path.svg
         componentType: testimonial-card
         name: "AI security fundamentals"
         role: "Learning Path"
@@ -36,7 +36,7 @@ sections:
           componentType: link
           url: /training/paths/ai-security-fundamentals/
           text: Get started
-      - avatarUrl: /security/media/security-hub/laptop-icon.png
+      - avatarUrl: /security/media/security-hub/general-learning-path-partial-wreath.svg
         componentType: testimonial-card
         name: Get started with Microsoft Copilot for Security 
         role: " "
@@ -45,7 +45,7 @@ sections:
           componentType: link
           url: /training/paths/security-copilot-and-ai/
           text: Get started
-      - avatarUrl: /security/media/security-hub/shield-icon.png
+      - avatarUrl: /security/media/security-hub/general-learning-path-full-wreath.svg
         componentType: testimonial-card
         name: "Govern and protect sensitive information in the age of AI "
         role: " "

@@ -194,60 +194,60 @@ sections:
     blocks:
       - componentType: icon-card
         title: Connect with the community  
-        summary: " "
+        summary: "Join the conversation in the Security, Compliance, and Identity community, with cybersecurity discussions and posts that explore key security topics and technologies."
         url: https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance
         icon:
           componentType: image
           src: /security/media/security-hub/icon-shield-check.png
       - componentType: icon-card
-        title: Learn with the support of Training Services Partners 
-        summary: " "
+        title: Find a Microsoft Training Services Partner
+        summary: "Discover Training Services Partners around the world that offer security training solutions in formats and styles to help you meet your learning goals."
         url: /credentials/support/partners
         icon:
           componentType: image
           src: /security/media/security-hub/icon-briefcase.png
       - componentType: icon-card
-        title: Get deeper security training with Virtual Training Days 
-        summary: " "
+        title: Check out Microsoft Security Virtual Training Days  
+        summary: "Learn to protect your data and organization with comprehensive Microsoft Security solutions, including identity and access management and compliance management."
         url: https://events.microsoft.com/mvtd?scenario=Microsoft%20Security%20Virtual%20Training%20Day
         icon:
           componentType: image
           src: /security/media/security-hub/icon-calendar.png
       - componentType: icon-card
-        title: Boost your team's skills with Microsoft Learn for Organizations 
-        summary: " "
+        title: Boost your team's skills
+        summary: "Take advantage of the security training resources and opportunities for team skill-building on Microsoft Learn for Organizations."
         url: /training/organizations
         icon:
           componentType: image
           src: /security/media/security-hub/icon-building.png
-      # - componentType: icon-card
-      #  title: Connect with experts and peers in Microsoft Learning Rooms
-      #  summary: " "
-      #  url: placeholder
-      #  icon:
-      #    componentType: image
-      #    src: /security/media/security-hub/icon-chat.png
       - componentType: icon-card
-        title: Understand your role in the AI shared responsibility model 
-        summary: " "
+        title: Understand the AI shared responsibility model 
+        summary: "When implementing AI capabilities for your organization, consider the inherent responsibility for various roles to safely use AI."
         url: /azure/security/fundamentals/shared-responsibility-ai
         icon:
           componentType: image
           src: /security/media/security-hub/icon-people.png
       - componentType: icon-card
-        title: Gain practical insights from the Microsoft AI Red Team 
-        summary: " "
+        title: Meet the Microsoft AI Red Team
+        summary: "Gain practical insights on how to safeguard your organization's AI with guidance and best practices from the industry-leading Microsoft AI Red Team."
         url: /security/ai-red-team/
         icon:
           componentType: image
           src: /security/media/security-hub/icon-bulb.png
       - componentType: icon-card
-        title: Find more Microsoft cybersecurity news 
-        summary: " "
+        title: Follow Microsoft cybersecurity news 
+        summary: "From recent work by Microsoft to strengthen protection, to helping keep user data safe around the world, read the latest Microsoft cybersecurity news."
         url: https://blogs.microsoft.com/on-the-issues/category/cybersecurity/
         icon:
           componentType: image
           src: /security/media/security-hub/icon-news.png
+      - componentType: icon-card
+        title: Get the latest on Security Copilot 
+        summary: "Stay up to date with the most recent Security Copilot developments, along with current releases, known issues, and plans for updates. "
+        url: /copilot/security/microsoft-security-copilot
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-chat.png
 
 
 

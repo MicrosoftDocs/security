@@ -181,7 +181,7 @@ sections:
   - componentType: hero
     title: Prove your skills with Microsoft Credentials for Security 
     layout: indented
-    textColor: dark
+    # textColor: dark
     background:
       componentType: image
       src: /security/media/security-hub/hero-creds.png

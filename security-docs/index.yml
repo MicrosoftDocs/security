@@ -30,7 +30,7 @@ sections:
       - avatarUrl: /security/media/security-hub/lock-icon.png
         componentType: testimonial-card
         name: "AI security fundamentals"
-        role: " "
+        role: "Learning Path"
         feedback: Explore AI security concepts, security controls that apply to AI systems, and testing procedures to help improve the security posture of your AI environments.   
         link:
           componentType: link

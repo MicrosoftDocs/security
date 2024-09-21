@@ -73,7 +73,7 @@ sections:
          :::column:::
          **[Access security adoption resources](https://aka.ms/saf)**
 
-         Plan your overall security modernization journey. The Security Adoption Framework (SAF) provides organizations with guidance for incorporating end-to-end security modernization across a “hybrid of everything” multicloud and multi-platform technical estate.  
+         Plan your overall security modernization journey. The Security Adoption Framework (SAF) provides organizations with guidance for incorporating end-to-end security modernization across a 'hybrid of everything' multicloud and multi-platform technical estate.  
          :::column-end:::
          :::column:::
          **[Work with Microsoft Cybersecurity Reference Architectures](https://aka.ms/MCRA)**
@@ -81,7 +81,7 @@ sections:
          Explore the Microsoft Cybersecurity Reference Architectures (MCRA), and review diagrams that describe how Microsoft Security capabilities integrate with Microsoft and third-party platforms.
          :::column-end:::
          :::column:::
-         **[Take the CISO workshop training ](https://aka.ms/CISOworkshop)**
+         **[Take the CISO workshop training](https://aka.ms/CISOworkshop)**
 
          This workshop can help you accelerate security program modernization using Zero Trust principles. 
          :::column-end:::
@@ -90,12 +90,12 @@ sections:
 
       :::row:::
          :::column:::
-         **[Discover common security antipatterns ](/security/adoption/adoption#how-to-consume-the-guidance)**
+         **[Discover common security antipatterns](/security/adoption/adoption#how-to-consume-the-guidance)**
 
          Learn to avoid common cybersecurity mistakes and pitfalls. Review the itemized antipatterns that we commonly observe across organizations, along with guidance for overcoming them. 
          :::column-end:::
          :::column:::
-         **[Adopt Zero Trust architecture ](/security/zero-trust/)**
+         **[Adopt Zero Trust architecture](/security/zero-trust/)**
 
         Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using Microsoft-recommended deployment plans.   
          :::column-end:::
@@ -124,14 +124,14 @@ sections:
          Improve your understanding of identity and access management with Learning for Microsoft identity and access administrators. This Plan is designed to help you automate authentication and authorization processes while applying Zero Trust principles.
          :::column-end:::
          :::column:::
-         **[Develop expertise to handle data security challenges ](https://aka.ms/DataSecurityChallenges)**
+         **[Develop expertise to handle data security challenges](https://aka.ms/DataSecurityChallenges)**
 
          Help secure your organization's data with Learning for Microsoft data security administrators. This Plan can help you effectively manage permissions, environments, and data policies.    
          :::column-end:::
       :::row-end:::
       :::row:::
          :::column:::
-         **[Gain insight to strengthen your security solutions ](https://aka.ms/StrengthenSecSols)**
+         **[Gain insight to strengthen your security solutions](https://aka.ms/StrengthenSecSols)**
 
          Learn how security policies, Zero Trust architecture, and hybrid environment management can help you improve overall cybersecurity in Strengthen your organization’s security architecture and solutions. 
          :::column-end:::
@@ -247,7 +247,7 @@ sections:
           src: /security/media/security-hub/icon-bulb.png
       - componentType: icon-card
         title: Follow Microsoft cybersecurity news 
-        summary: "From recent work by Microsoft to strengthen protection, to helping keep user data safe around the world, read the latest Microsoft cybersecurity news."
+        summary: "From recent work by Microsoft to strengthen protection, to helping keep user data safe around the world. Read the latest Microsoft cybersecurity news."
         url: https://blogs.microsoft.com/on-the-issues/category/cybersecurity/
         icon:
           componentType: image

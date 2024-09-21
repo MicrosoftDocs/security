@@ -27,7 +27,7 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /securitys/media/security-hub/general-learning-path.svg
+      - avatarUrl: /security/media/security-hub/general-learning-path.svg
         componentType: testimonial-card
         name: "AI security fundamentals"
         role: "Learning Path"

@@ -203,28 +203,28 @@ sections:
     title: Explore other resources 
     summary: Take advantage of additional resources like training events, tailored learning experiences with Training Services Partners, thought leadership articles, blog posts, and more.  
     blocks:
-      - componentType: -card
+      - componentType: icon-card
         title: Connect with the community  
         summary: "Join the conversation in the Security, Compliance, and Identity community, with cybersecurity discussions and posts that explore key security topics and technologies."
         url: https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance
-        :
+        icon:
           componentType: image
           src: /security/media/security-hub/-chat.png
-      - componentType: -card
+      - componentType: icon-card
         title: Find a Microsoft Training Services Partner
         summary: "Discover Training Services Partners around the world that offer security training solutions in formats and styles to help you meet your learning goals."
         url: /credentials/support/partners
-        :
+        icon:
           componentType: image
           src: /security/media/security-hub/-briefcase.png
-      - componentType: -card
+      - componentType: icon-card
         title: Check out Microsoft Security Virtual Training Days  
         summary: "Learn to protect your data and organization with comprehensive Microsoft Security solutions, including identity and access management and compliance management."
         url: https://events.microsoft.com/mvtd?scenario=Microsoft%20Security%20Virtual%20Training%20Day
-        :
+        icon:
           componentType: image
           src: /security/media/security-hub/-calendar.png
-      - componentType: -card
+      - componentType: icon-card
         title: Boost your team's skills
         summary: "Take advantage of the security training resources and opportunities for team skill-building on Microsoft Learn for Organizations."
         url: /training/organizations

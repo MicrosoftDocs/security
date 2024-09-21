@@ -114,14 +114,15 @@ sections:
 
          This workshop can help you accelerate security program modernization using Zero Trust principles. 
          :::column-end:::
+
+      :::row-end:::
+
+      :::row:::
          :::column:::
          **[Discover common security antipatterns ](/security/adoption/adoption#how-to-consume-the-guidance)**
 
          Learn to avoid common cybersecurity mistakes and pitfalls. Review the itemized antipatterns that we commonly observe across organizations, along with guidance for overcoming them. 
          :::column-end:::
-      :::row-end:::
-
-      :::row:::
          :::column:::
          **[Adopt Zero Trust architecture ](/security/zero-trust/)**
 
@@ -131,16 +132,6 @@ sections:
 
 
 
-         :::column-end:::
-         :::column:::
-
-
-           
-         :::column-end:::
-         :::column:::
-
-         
-           
          :::column-end:::
       :::row-end:::
 
@@ -166,10 +157,22 @@ sections:
 
          Help secure your organization's data with Learning for Microsoft data security administrators. This Plan can help you effectively manage permissions, environments, and data policies.    
          :::column-end:::
+      :::row-end:::
+      :::row:::
          :::column:::
          **[Gain insight to strengthen your security solutions ](https://aka.ms/StrengthenSecSols)**
 
          Learn how security policies, Zero Trust architecture, and hybrid environment management can help you improve overall cybersecurity in Strengthen your organization’s security architecture and solutions. 
+         :::column-end:::
+         :::column:::
+
+
+
+         :::column-end:::
+         :::column:::
+
+
+
          :::column-end:::
       :::row-end:::
       ---

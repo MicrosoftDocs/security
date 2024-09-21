@@ -23,76 +23,36 @@ sections:
      componentType: hero-image
      lightImageSrc: /security/media/security-hub/security-hero.png
      darkImageSrc: /security/media/security-hub/security-hero.png
-# Spotlight selections
-  - componentType: cards
-    isShadowless: false
-    backgroundColor: alternating-grey
-    title: Discover top picks
-    summary: Build your knowledge and skills on foundational security concepts to better collaborate with security colleagues or get your cybersecurity career started. Whether you’re a new IT professional, a student, or a business leader interested in getting the most from Microsoft security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities here. 
-    blocks:
-    - componentType: card
-      title: "AI security fundamentals"
-      summary: Understand the concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement to increase the security posture of AI environments.
-      imageUrl: /security/media/security-hub/toppicks1.png
-      links: 
-        - componentType: link
-          text: Learn more today
-          url: /training/paths/ai-security-fundamentals/
-    - componentType: card
-      title: "Security operations and incident response "
-      summary: Understand the concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement to increase the security posture of AI environments.
-      imageUrl: /security/media/security-hub/toppicks1.png
-      links: 
-        - componentType: link
-          text: Learn more today
-          url: /training/paths/ai-security-fundamentals/
-    - componentType: card
-      title: "Govern and protect sensitive information in the age of AI "
-      summary: Understand the concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement to increase the security posture of AI environments.
-      imageUrl: /security/media/security-hub/toppicks1.png
-      links: 
-        - componentType: link
-          text: Learn more today
-          url: /training/paths/ai-security-fundamentals/
   # Spotlight selections
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
       - avatarUrl: /security/media/security-hub/toppicks1.png
         componentType: testimonial-card
-        name: " "
-        role: 'AI security fundamentals'
-        feedback: Understand the concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement to increase the security posture of AI environments.  
+        name: "AI security fundamentals"
+        role: " "
+        feedback: Explore AI security concepts, security controls that apply to AI systems, and testing procedures to help improve the security posture of your AI environments.   
         link:
           componentType: link
           url: /training/paths/ai-security-fundamentals/
           text: Get started
       - avatarUrl: /security/media/security-hub/toppicks2.png
         componentType: testimonial-card
-        name: Security operations and incident response 
+        name: Get started with Microsoft Copilot for Security 
         role: " "
-        feedback: Learn about the AI-powered security analysis tool that enables analysts to process security signals and respond to threats at a machine speed, and the AI concepts upon which it's built. 
+        feedback: Learn about the AI-powered security analysis tool that can process security signals and respond to cyberthreats at machine speed.  
         link:
           componentType: link
           url: /training/paths/security-copilot-and-ai/
           text: Get started
       - avatarUrl: /security/media/security-hub/toppicks3.png
         componentType: testimonial-card
-        name: " "
-        role: Govern and protect sensitive information in the age of AI 
-        feedback: Secure and govern data within AI-driven environments to navigate AI risks and ensure compliance.  Understand how to adapt security and governance strategies to the evolving landscape of AI technology. 
+        name: "Govern and protect sensitive information in the age of AI "
+        role: " "
+        feedback: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
         link:
           componentType: link
           url: /training/paths/purview-protect-govern-ai/
-          text: Get started
-      - avatarUrl: /security/media/security-hub/toppicks4.png
-        componentType: testimonial-card
-        name: What’s new in Microsoft Copilot for Security 
-        role: " "
-        feedback: Stay up to date with the most recent developments about the latest releases, known issues, and plans for changes. 
-        link:
-          componentType: link
-          url: /copilot/security/microsoft-security-copilot
           text: Get started
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png

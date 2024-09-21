@@ -40,21 +40,21 @@ sections:
 
       :::row:::
          :::column:::
-         :::image type="icon" source="/security/media/security-hub/lock-icon.png":::
+         :::image type="icon" source="/security/media/security-hub/lock-icon-rectangle.png":::
 
          **[Understand cybersecurity basics](/training/paths/describe-basic-concepts-of-cybersecurity/)**
 
          Find out how you can protect yourself and your organization against cyberthreats and cyberattacks, and explore cybersecurity concepts. 
          :::column-end:::
          :::column:::
-         :::image type="icon" source="/security/media/security-hub/laptop-icon.png":::
+         :::image type="icon" source="/security/media/security-hub/laptop-icon-rectangle.png":::
 
          **[Take the Microsoft Security Virtual Training Day: Security, Compliance, and Identity Fundamentals](https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals&startTime=08:00&endTime=17:00)**
 
          Join this training to discover basic concepts, like identity and access management and compliance management. Gain foundational knowledge of privacy and of data governance, protection, and management solutions.  
          :::column-end:::
          :::column:::
-         :::image type="icon" source="/security/media/security-hub/shield-icon.png":::
+         :::image type="icon" source="/security/media/security-hub/shield-icon-rectangle.png":::
 
          **[Earn the Microsoft Certified: Security, Compliance, and Identity Fundamentals Certification​](/credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification)**
 
@@ -203,28 +203,28 @@ sections:
     title: Explore other resources 
     summary: Take advantage of additional resources like training events, tailored learning experiences with Training Services Partners, thought leadership articles, blog posts, and more.  
     blocks:
-      - componentType: icon-card
+      - componentType: -card
         title: Connect with the community  
         summary: "Join the conversation in the Security, Compliance, and Identity community, with cybersecurity discussions and posts that explore key security topics and technologies."
         url: https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance
-        icon:
+        :
           componentType: image
-          src: /security/media/security-hub/icon-chat.png
-      - componentType: icon-card
+          src: /security/media/security-hub/-chat.png
+      - componentType: -card
         title: Find a Microsoft Training Services Partner
         summary: "Discover Training Services Partners around the world that offer security training solutions in formats and styles to help you meet your learning goals."
         url: /credentials/support/partners
-        icon:
+        :
           componentType: image
-          src: /security/media/security-hub/icon-briefcase.png
-      - componentType: icon-card
+          src: /security/media/security-hub/-briefcase.png
+      - componentType: -card
         title: Check out Microsoft Security Virtual Training Days  
         summary: "Learn to protect your data and organization with comprehensive Microsoft Security solutions, including identity and access management and compliance management."
         url: https://events.microsoft.com/mvtd?scenario=Microsoft%20Security%20Virtual%20Training%20Day
-        icon:
+        :
           componentType: image
-          src: /security/media/security-hub/icon-calendar.png
-      - componentType: icon-card
+          src: /security/media/security-hub/-calendar.png
+      - componentType: -card
         title: Boost your team's skills
         summary: "Take advantage of the security training resources and opportunities for team skill-building on Microsoft Learn for Organizations."
         url: /training/organizations

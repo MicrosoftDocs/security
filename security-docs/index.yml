@@ -39,7 +39,7 @@ sections:
       - avatarUrl: /security/media/security-hub/general-learning-path-partial-wreath.svg
         componentType: testimonial-card
         name: Get started with Microsoft Copilot for Security 
-        role: " "
+        role: "Learning Path"
         feedback: Learn about the AI-powered security analysis tool that can process security signals and respond to cyberthreats at machine speed.  
         link:
           componentType: link
@@ -48,7 +48,7 @@ sections:
       - avatarUrl: /security/media/security-hub/general-learning-path-full-wreath.svg
         componentType: testimonial-card
         name: "Govern and protect sensitive information in the age of AI "
-        role: " "
+        role: "Learning Path"
         feedback: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
         link:
           componentType: link

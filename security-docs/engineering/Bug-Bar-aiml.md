@@ -7,7 +7,7 @@ description: Machine Learning Bug Triage Guidance
 author: TerryLanfear
 ms.author: terrylan
 manager: rkarlin
-ms.date: 09/12/2024
+ms.date: 09/23/2024
 ms.topic: article
 ms.service: security
 ---
@@ -26,8 +26,7 @@ and functions as a supplement to the existing SDL bug
 bar used to triage traditional security vulnerabilities.
 It is intended to be used as a reference for the triage of AI/ML-related
 security issues.
-For more detailed threat analysis and mitigation information, refer to
-[Threat Modeling AI/ML Systems and Dependencies](/security/threat-modeling-aiml).
+The [Vulnerability Severity Classification](https://www.microsoft.com/en-us/msrc/aibugbarrefer) for AI Systems (published by MSRC), defines common vulnerability types and severity levels for systems involving AI.
 
 This guidance is organized around and extensively references the Adversarial Machine Learning Threat Taxonomy created by Ram Shankar Siva Kumar, David O’Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover entitled [Failure Modes in Machine Learning](/security/failure-modes-in-machine-learning). Note that while the research this content is based on addresses both intentional/malicious and accidental behaviors in ML failure modes, this bug bar supplement focuses entirely on intentional/malicious behaviors that would result in a security incident and/or deployment of a fix.
 

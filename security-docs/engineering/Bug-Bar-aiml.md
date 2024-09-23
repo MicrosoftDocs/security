@@ -19,9 +19,9 @@ Kumar
 
 November 2019
 
-This article is a deliverable of the Microsoft [AETHER Engineering Practices for AI Working Group](https://news.microsoft.com/2018/03/29/satya-nadella-email-to-employees-embracing-our-future-intelligent-cloud-and-intelligent-edge/). This article functions as a supplement to the existing SDL bug bar used to triage traditional security vulnerabilities. It is intended to be used as a reference for the triage of AI/ML-related security issues. The [Vulnerability Severity Classification](https://www.microsoft.com/en-us/msrc/aibugbarrefer) for AI Systems (published by Microsoft Security Response Center (MSRC)), defines common vulnerability types and severity levels for systems involving AI.
+This article is a deliverable of the Microsoft [AETHER Engineering Practices for AI Working Group](https://news.microsoft.com/2018/03/29/satya-nadella-email-to-employees-embracing-our-future-intelligent-cloud-and-intelligent-edge/). This article functions as a supplement to the existing SDL bug bar used to triage traditional security vulnerabilities. It's intended to be used as a reference for the triage of AI/ML-related security issues. The [Vulnerability Severity Classification](https://www.microsoft.com/en-us/msrc/aibugbarrefer) for AI Systems (published by Microsoft Security Response Center (MSRC)), defines common vulnerability types and severity levels for systems involving AI.
 
-This guidance is organized around and extensively references the Adversarial Machine Learning Threat Taxonomy, created by Ram Shankar Siva Kumar, David O'Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover, and titled [Failure Modes in Machine Learning](/security/failure-modes-in-machine-learning). While the research this content is based on addresses both intentional/malicious and accidental behaviors in ML failure modes, this bug bar supplement focuses entirely on intentional/malicious behaviors that would result in a security incident and/or deployment of a fix.
+This guidance is organized around the Adversarial Machine Learning Threat Taxonomy, created by Ram Shankar Siva Kumar, David O'Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover, and titled [Failure Modes in Machine Learning](/security/failure-modes-in-machine-learning). While the research this content is based on addresses both intentional/malicious and accidental behaviors in ML failure modes, this bug bar supplement focuses entirely on intentional/malicious behaviors that would result in a security incident and/or deployment of a fix.
 
 MSRC published a [severity rating system](https://www.microsoft.com/msrc/security-update-severity-rating-system) that rates a vulnerability according to the worst theoretical outcome were that vulnerability to be exploited.
 
@@ -35,10 +35,10 @@ MSRC published a [severity rating system](https://www.microsoft.com/msrc/securit
 <tbody>
 <tr class="odd">
 <td align="left">Data Poisoning</td>
-<td align="left"><p>Corrupting the training data - The end goal of the attacker is to contaminate the machine model generated <em>in the training phase</em>, so that predictions on new data is modified in the testing phase.</p>
+<td align="left"><p>Corrupting the training data - The end goal of the attacker is to contaminate the machine model generated <em>in the training phase</em>, so that predictions on new data are modified in the testing phase.</p>
 <p>In targeted poisoning attacks, the attacker wants to misclassify specific examples to cause specific actions to be taken or omitted.</p>
 <p>Submitting AV software as malware to force its misclassification as malicious and eliminate the use of targeted AV software on client systems. </p>
-<p>A company scrapes a well-known and trusted website for futures data to train their models. The data provider's website is then compromised via SQL Injection attack. The attacker can poison the dataset at will and the model being trained has no notion that the data is tainted.</p></td>
+<p>A company scrapes a well-known and trusted website for futures data to train their models. The data provider's website is then compromised via SQL Injection attack. The attacker can poison the dataset at-will and the model being trained has no notion that the data is tainted.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Model Stealing</td>
@@ -50,7 +50,7 @@ MSRC published a [severity rating system](https://www.microsoft.com/msrc/securit
 </tr>
 <tr class="odd">
 <td align="left">Model Inversion</td>
-<td align="left"><p>The private features used in machine learning models can be recovered. This includes reconstructing private training data that the attacker does not have access to. This is accomplished by finding the input which maximizes the confidence level returned, subject to the classification matching the target.</p>
+<td align="left"><p>The private features used in machine learning models can be recovered. This includes reconstructing private training data that the attacker doesn't have access to. This is accomplished by finding the input which maximizes the confidence level returned, subject to the classification matching the target.</p>
 <p>Example: Reconstruction of facial recognition data from guessed or known names and API access to query the model.</p></td>
 </tr>
 <tr class="even">

@@ -4,7 +4,7 @@ description: This include file provides the icon and H2 heading of "Additional d
 ms.date: 09/29/2020
 ms.service: security
 author: garycentric
-ms.author: v-gmoor
+ms.author: v-garymoore
 ms.topic: conceptual
 ---
 

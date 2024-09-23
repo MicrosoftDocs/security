@@ -5,7 +5,7 @@ author: chrisda
 ms.author: chrisda
 manager: dansimp
 ms.service: microsoft-365-zero-trust
-ms.topic: conceptual
+ms.topic: solution-overview
 audience: Admin
 f1.keywords:
   - NOCSH

@@ -1,7 +1,7 @@
 ---
 title: Implement security breach prevention and recovery infrastructure
 description: Implement security breach prevention and recovery infrastructure.  
-ms.date: 04/24/2024
+ms.date: 06/12/2024
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -18,26 +18,26 @@ For updates to product names, please also update the appropriate figures.
 
 To update figures that are not screen shots, your options are:
 
-- Locate the source Visio file in internal storage.
+- Locate the source Visio file in internal storage (see the Illustrations-locations.docs file).
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
 For updates that affect text in the PowerPoint slides of the Plan phase (for both the stages and objectives slide and the stakeholders slide), your options are:
 
-- Locate the source PowerPoint file in internal storage. 
+- Locate the source PowerPoint file in internal storage (see the Illustrations-locations.docs file). 
 - Download a copy of the PowerPoint file from the article.
 
 After updating, republish the updated slide deck in the Download Center.
 
 For updates that affect text in the Excel Business Scenario Objectives workbook of the Plan phase, your options are:
 
-- Locate the source Excel file in internal storage. 
+- Locate the source Excel file in internal storage (see the Illustrations-locations.docs file). 
 - Download a copy of the Excel file from the article.
 
 After updating, republish the updated Excel file in the Download Center.
 
 For updates that affect text in the Adoption Scenario Plan Phase Grid download, your options are:
 
-- Locate the source Visio file in internal storage. 
+- Locate the source Visio file in internal storage (see the Illustrations-locations.docs file). 
 - Download a copy of the Visio file from the article.
 
 After updating, republish the updated Adoption Scenario Plan Phase Grid Visio and PDF files in the Download Center.
@@ -68,6 +68,8 @@ For the elements of the **Assume breach** Zero Trust guiding principle:
   Described in the [implement threat protection and XDR](prevent-reduce-business-damage-breach-threat-protection.md) article.
 
 This article assumes that you have already [modernized your security posture](rapidly-modernize-security-posture.md).
+
+For detailed information about Microsoft Azure resources, see [Protect your Azure resources from destructive cyberattacks](../azure-protect-resources-cyberattacks.md).
 
 ## The adoption cycle for implementing security breach prevention and recovery infrastructure
 
@@ -246,6 +248,8 @@ This objective is to create boundaries on your network so that intermediate anal
 | Use many ingress/egress cloud micro-perimeters with some micro-segmentation. | [Secure networks with Zero Trust](/security/zero-trust/deploy/networks#i-network-segmentation-many-ingressegress-cloud-micro-perimeters-with-some-micro-segmentation) |
 | Use multiple subnets and network security groups to host multiple tiers of an app and restrict traffic. | [Apply Zero Trust principles to a spoke VNet in Azure](/security/zero-trust/azure-infrastructure-iaas) <br><br> [Apply Zero Trust principles to a spoke VNet with Azure PaaS Services](/security/zero-trust/azure-infrastructure-paas) |
 
+For additional information about segmentation in Azure environments, see [Segmenting Azure-based network communication](../azure-networking-segmentation.md).
+
 ##### Implement Site Recovery for critical workload continuity
 
 Azure Site Recovery is a native disaster recovery as a service (DRaaS) that offers ease of deployment, cost effectiveness, and dependability. Deploy replication, failover, and recovery processes through Site Recovery to help keep your applications running during planned and unplanned outages, such as an outage based on a cyberattack.
@@ -279,6 +283,8 @@ This objective is more of a check to be sure your network traffic is encrypted. 
 | Ensure user-to-app internal traffic is encrypted: <br><br> - Enforce HTTPS-only communication for your internet-facing web applications. <br> - Connect remote employees and partners to Microsoft Azure using [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways). <br>- Access your Azure virtual machines securely using encrypted communication through [Azure Bastion](/azure/bastion/bastion-overview). | [Secure networks with Zero Trust-Objective 3: User-to-app internal traffic is encrypted](/security/zero-trust/deploy/networks#iii-encryption-user-to-app-internal-traffic-is-encrypted) |
 | Encrypt application backend traffic between virtual networks.<br><br> Encrypt traffic between on-premises and cloud. | [Secure networks with Zero Trust-Objective 6: All traffic is encrypted](/security/zero-trust/deploy/networks#vi-encryption-all-traffic-is-encrypted) |
 | For network architects, this article helps put recommended networking concepts into perspective. Ed Fisher, Security & Compliance Architect at Microsoft, describes how to optimize your network for cloud connectivity by avoiding the most common pitfalls. | [Networking up (to the cloud)-One architect's viewpoint](/microsoft-365/solutions/networking-design-principles) |
+
+For additional information about encryption in Azure environments, see [Encrypting Azure-based network communication](../azure-networking-encryption.md).
 
 <a name='stage-2'></a>
 #### Stage 2
@@ -404,6 +410,8 @@ Cloud applications that have opened endpoints to external environments, such as 
 
 For more information, see [Cloud native filtering and protection for known threats](/security/zero-trust/deploy/networks#ii-threat-protection-cloud-native-filtering-and-protection-for-known-threats).
 
+For additional information about gaining network traffic visibility in Azure environments, see [Gain visibility into your network traffic](../azure-networking-visibility.md).
+
 ##### Design your threat and BCDR response
 
 The consequences of a breach can run the spectrum of an attacker infecting devices with malware, which might be detected and contained relatively easily, to ransomware attacks in which the attacker has already exfiltrated, encrypted, or destroyed some or all your organization’s sensitive data and is ransoming its exposure or restoration.
@@ -438,6 +446,8 @@ In this stage, you further secure your network and ensure that your BCDR plan an
 Examine the set of technologies and products that your organization uses to provide network security and determine whether they're necessary or redundant with other network security capabilities. Each network security technology can also be a target for attackers. For example, if the technology or product isn’t being updated on a timely basis, consider removing it.
 
 For more information, see [Discontinue legacy network security technology](/security/zero-trust/deploy/networks#vii-discontinue-legacy-network-security-technology), which describes the types of network security technologies that you might no longer need.
+
+For additional information about discontinuing legacy network security technologies in Azure environments, see [Discontinue legacy network security technology](../azure-networking-legacy.md).
 
 ##### Practice threat and BCDR response
 

@@ -24,7 +24,7 @@ For updates to product names, please also update the appropriate figures.
 
 To update figures that are not screen shots, your options are:
 
-- Locate the source Visio file in internal storage.
+- Locate the source Visio file in internal storage (see the Illustrations-locations.docs file).
 - Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
@@ -44,7 +44,7 @@ Additional authors:
 
 --->
 
-This article provides guidance to applying the [principles of Zero Trust](zero-trust-overview.md) for encrypting network communication to, from, and across Azure environments in the following ways. 
+This article provides guidance for applying the [principles of Zero Trust](zero-trust-overview.md) for encrypting network communication to, from, and across Azure environments in the following ways. 
 
 | Zero Trust principle | Definition | Met by |
 | --- | --- | --- |
@@ -230,7 +230,7 @@ Additionally, on-premises users or users on virtual machines in another VNet can
 - Virtual machines are protected against port scanning.
 - The Azure Bastion platform is constantly updated and protected against zero-day exploits.
 
-With Bastion, you can control the RDP and SSH connectivity to your virtual machine from a single point of entry. You can manage individual sessions from the Bastion service in the Azure portal. You can also delete or force a disconnect of an on-going remote session if you suspect a user isn't supposed to be connecting to that machine.
+With Bastion, you can control the RDP and SSH connectivity to your virtual machine from a single point of entry. You can manage individual sessions from the Bastion service in the Azure portal. You can also delete or force a disconnect of an ongoing remote session if you suspect a user isn't supposed to be connecting to that machine.
 
 The following diagram shows the reference architecture for using Azure Bastion to protect Azure virtual machines.
 
@@ -250,10 +250,12 @@ To protect your Azure virtual machine, deploy [Azure Bastion](/azure/bastion/tut
 
 For additional information about applying Zero Trust to Azure networking, see:
 
-- [Apply Zero Trust principles to segmenting Azure-based network communication](azure-networking-segmentation.md)
+- [Segment Azure-based network communication](azure-networking-segmentation.md)
+- [Gain visibility into your network traffic](azure-networking-visibility.md)
+- [Discontinue legacy network security technology](azure-networking-legacy.md)
 - [Secure networks with Zero Trust](./deploy/networks.md)
 - [Spoke virtual networks in Azure](azure-infrastructure-iaas.md)
-- [Hub virtual networks in Azure](azure-infrastructure-paas.md)
+- [Hub virtual networks in Azure](azure-infrastructure-networking.md)
 - [Spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
 

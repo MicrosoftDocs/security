@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
     # Card 
-  - title: Microsoft's top resources for ransomware defense
+  - title: Microsoft's top ransomware defense resources
     linkLists:
       - linkListType: reference
         links:
@@ -30,8 +30,8 @@ landingContent:
           url:  https://learn.microsoft.com/security/ransomware/human-operated-ransomware
         - text: Latest ransomware blogs
           url:  https://www.microsoft.com/security/blog/threat-intelligence/ransomware
-        - text: Learn about Microsoft Defender XDR for in-depth ransomware reporting
-          url:  https://learn.microsoft.com/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti
+        - text: Microsoft Defender XDR for in-depth ransomware investigation
+          url:  https://learn.microsoft.com/defender-xdr/playbook-detecting-ransomware-m365-defender
         - text: Use Microsoft Copilot for Security for AI-enhanced ransomware defense
           url:  https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security
 
@@ -44,7 +44,7 @@ landingContent:
           url:  /security/ransomware/human-operated-ransomware#how-do-ransomware-attacks-work
         - text: How do I detect pre-ransom activities?
           url:  /microsoft-365/security/defender/playbook-detecting-ransomware-m365-defender
-        - text: How do I back-up and restore post ransomware attack?
+        - text: How do I back up and restore post ransomware attack?
           url:  /azure/security/fundamentals/backup-plan-to-protect-against-ransomware
         - text: How do I proactively hunt for ransomware?
           url:  /defender-xdr/advanced-hunting-find-ransomware
@@ -58,8 +58,8 @@ landingContent:
         links:
         - text: Recent Microsoft Security ransomware blog
           url:  https://www.microsoft.com/security/blog/2024/07/29/ransomware-operators-exploit-esxi-hypervisor-vulnerability-for-mass-encryption
-        - text: Recent Microsoft social media posts about ransomware
-          url:  https://x.com/MsftSecIntel/status/1781353314413605345
+        - text: Recent Microsoft ransomware social media posts 
+          url:  https://www.linkedin.com/posts/microsoft-threat-intelligence_in-the-second-quarter-of-2024-financially-activity-7218696257739923456-KKy_
         - text: Automatic disruption of ransomware attacks
           url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/
 
@@ -78,6 +78,20 @@ landingContent:
           url:  https://www.microsoft.com/insidetrack/blog/building-an-anti-ransomware-program-at-microsoft-focused-on-an-optimal-ransomware-resiliency-state/
 
 # Card
+  - title: Protect against ransomware and extortion attacks with Microsoft
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+        - text: Ransomware attack overview
+          url: protect-against-ransomware.md
+        - text: Prepare your ransomware attack recovery plan
+          url: protect-against-ransomware-phase1.md
+        - text: Limit the scope of damage from a ransomware attack
+          url: protect-against-ransomware-phase2.md
+        - text: Make it hard for ransomware threat actors to access your environment
+          url: protect-against-ransomware-phase3.md
+
+# Card
   - title: Microsoft products for defense against ransomware
     linkLists:
        - linkListType: reference
@@ -92,16 +106,6 @@ landingContent:
            url:  /azure/sentinel/fusion#multiple-alerts-possibly-related-to-ransomware-activity-detected-public-preview
          - text: In SharePoint
            url:  /sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online
-
-# Card
-  - title: Ransomware protection using threat intelligence for Microsoft Defender XDR subscription holders
-    linkLists:
-      - linkListType: reference
-        links:
-        - text: Threat analytics reports
-          url:  /microsoft-365/security/defender/threat-analytics
-        - text: Microsoft Defender Threat Intelligence 
-          url:  /microsoft-365/security/defender/defender-threat-intelligence
 
 # Card
   - title: Microsoft ransomware incident response playbooks

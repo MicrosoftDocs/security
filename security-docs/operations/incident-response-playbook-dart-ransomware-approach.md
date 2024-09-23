@@ -29,11 +29,11 @@ ms.date: 05/03/2024
 - Disables security services and logging to avoid detection
 - Locates and corrupts or deletes backups before sending a ransom demand
 
-These actions are commonly done with legitimate programs that you might already have in your environment for administrative purposes. In criminal hands, these tools are used maliciously to carry out attacks.
+These actions are commonly done with legitimate programs - such as [Quick Assist](https://www.microsoft.com/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware) in May 2024 - that you might already have in your environment for administrative purposes. In criminal hands, these tools are used maliciously to conduct attacks.
 
 Responding to the increasing threat of ransomware requires a combination of modern enterprise configuration, up-to-date security products, and the vigilance of trained security staff to detect and respond to the threats before data is lost.
 
-The [Microsoft Incident Response team (formerly DART/CRSP)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. Microsoft Incident Responseprovides onsite reactive incident response and remote proactive investigations. Microsoft Incident Response uses Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
+The [Microsoft Incident Response team (formerly DART/CRSP)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. Microsoft Incident Response provides onsite reactive incident response and remote proactive investigations. Microsoft Incident Response uses Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
 
 This article describes how Microsoft Incident Response handles ransomware attacks for Microsoft customers so that you can consider applying elements of their approach and best practices for your own security operations playbook.
 
@@ -44,7 +44,7 @@ This article describes how Microsoft Incident Response handles ransomware attack
 
 Microsoft Incident Response relies heavily on data for all investigations and uses existing deployments of Microsoft security services such as [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security), [Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security), [Microsoft Defender for Identity](/defender-for-identity), and [Microsoft Defender for Cloud Apps](/cloud-app-security/).
 
-### Defender for Endpoint
+### Microsoft Defender for Endpoint
 
 Defender for Endpoint is Microsoft's enterprise endpoint security platform designed to help enterprise network security analysts prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint can detect attacks using advanced behavioral analytics and machine learning. Your analysts can use Defender for Endpoint for attacker behavioral analytics.
 
@@ -64,7 +64,7 @@ Here's an example of how Defender for Endpoint shows detailed ransomware activit
 
 :::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/defender-endpoint-example-ransomware-activity.png" alt-text="Example of how Defender for Endpoint shows detailed ransomware activity." lightbox="./media/incident-response-playbook-dart-ransomware-approach/defender-endpoint-example-ransomware-activity.png":::
 
-### Defender for Identity
+### Microsoft Defender for Identity
 
 You use Defender for Identity to investigate known compromised accounts and to find potentially compromised accounts in your organization. Defender for Identity sends alerts for known malicious activity that actors often use such as DCSync attacks, remote code execution attempts, and pass-the-hash attacks. Defender for Identity enables you to pinpoint suspect activity and accounts to narrow down the investigation.
 
@@ -72,7 +72,7 @@ Here's an example of how Defender for Identity sends alerts for known malicious 
 
 :::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/defender-for-identity-example-ransomware-alert.png" alt-text="An example of how Defender for Identity sends alerts for ransomware attacks" lightbox="./media/incident-response-playbook-dart-ransomware-approach/defender-for-identity-example-ransomware-alert.png":::
 
-### Defender for Cloud Apps
+### Microsoft Defender for Cloud Apps
 
 Defender for Cloud Apps (previously known as Microsoft Cloud App Security) allows your analysts to detect unusual behavior across cloud apps to identify ransomware, compromised users, or rogue applications. Defender for Cloud Apps is Microsoft's cloud access security broker (CASB) solution that allows for monitoring of cloud services and data access in cloud services by users.
 
@@ -264,11 +264,12 @@ You can get LAPS from the [Microsoft Download Center](https://www.microsoft.com/
 
 Key information from Microsoft:
 
-- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
 - [Human-operated ransomware](/security/compass/human-operated-ransomware)
 - [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
-- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
-- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
+- [2023 Microsoft Digital Defense Report](https://www.microsoft.com/en-us/security/security-insider/microsoft-digital-defense-report-2023) (see pages 17-26)
+
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) Threat analytics report in the Microsoft Defender portal
+
 - [Microsoft Incident Response ransomware case study](/security/ransomware/dart-ransomware-case-study)
 
 Microsoft 365:
@@ -299,24 +300,3 @@ Microsoft Defender for Cloud Apps:
 
 - [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
-Microsoft Security team blog posts:
-
-- [Three steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-- [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
-
-  Key steps on how Microsoft Incident Response conducts ransomware incident investigations.
-  
-- [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
-
-  Recommendations and best practices.
-
-- [Becoming resilient by understanding cybersecurity risks: Part 4-navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
-
-  See the **Ransomware** section.
-
-- [Human-operated ransomware attacks: A preventable disaster (March 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
-
-  Includes attack chain analyses of actual attacks.
-
-- [Ransomware response-to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
-- [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)

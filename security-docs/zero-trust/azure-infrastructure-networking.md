@@ -23,15 +23,18 @@ For updates to product names, please also update the appropriate figures.
 
 To update figures that are not screen shots, your options are:
 
-- Locate the source Visio file in internal storage.
-- Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
-- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
+- Locate the source Visio file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended).
+- Use a published Visio file in the Microsoft Download Center (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads).
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file (last resort).
 
-For any updates to figures, please update the corresponding posters as needed (see the "Technical publications" section of this article) and republish the Visio and PDF files in the Microsoft Download Center.
+For updates to figures that are included in download files (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads), please: 
+
+- Update the corresponding files (Visio, PowerPoint, PDF) as needed.
+- Publish the Visio and PDF files in the Microsoft Download Center and update the refresh date (such as March 2024) for the download in this article and the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article.
 
 For new articles in this content set, please:
 
-- Add cross-links in the "Next Steps" section FROM all the other articles in this content set TO the new article.
+- Add cross-links in the "Next steps" section FROM all the other articles in this content set TO the new article.
 - Add a link to the Zero Trust Guidance Center page (index.yml).
 - Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed.
 
@@ -57,7 +60,7 @@ This article is a part of a series of articles that demonstrate how to apply the
 
 The following diagram shows the reference architecture. The hub VNet is highlighted in red. For more information about this architecture, see the [Apply Zero Trust principles to Azure IaaS overview](azure-infrastructure-overview.md).
 
-:::image type="content" source="media/hub/azure-infra-hub-architecture-1.svg" alt-text="The reference architecture for the components of a hub virtual network with Zero Trust principles applied." lightbox="media/hub/azure-infra-hub-architecture-1.svg":::
+:::image type="content" source="media/hub/azure-infra-hub-architecture-1.svg" alt-text="Diagram of the reference architecture for the components of a hub virtual network with Zero Trust principles applied." lightbox="media/hub/azure-infra-hub-architecture-1.svg":::
 
 For this reference architecture, there are many ways you can deploy the resources across the Azure subscription. The reference architecture shows the recommendation of isolating all resources for the hub VNet within a dedicated resource group. The resources for the spoke VNet are also shown for comparison. This model works well if different teams are given responsibility for these different areas.
 
@@ -81,7 +84,7 @@ The resources that are deployed for the hub VNet are:
 
 The following diagram shows the components of a resource group for a hub VNet in an Azure subscription separate from the subscription for the spoke VNet. This is one way of organizing these elements within the subscription. Your organization might choose to organize these in a different way.
 
-:::image type="content" source="media/hub/azure-infra-hub-subscription-architecture-2.svg" alt-text="The logical architecture for applying Zero Trust to an Azure hub VNet showing subscriptions, resource groups, and Azure components within an Entra ID tenant." lightbox="media/hub/azure-infra-hub-subscription-architecture-2.svg":::
+:::image type="content" source="media/hub/azure-infra-hub-subscription-architecture-2.svg" alt-text="Diagram of the logical architecture for applying Zero Trust to an Azure hub VNet showing subscriptions, resource groups, and Azure components within a Microsoft Entra ID tenant." lightbox="media/hub/azure-infra-hub-subscription-architecture-2.svg":::
 
 In the diagram:
 
@@ -316,7 +319,7 @@ You write Azure Policies in JavaScript Object Notation (JSON) to hold different 
 
 To view all the Azure policies that provide network recommendations used by Microsoft Defender for Cloud:
 
-:::image type="content" source="media/hub/azure-policies-mdc.jpg" alt-text="Example screenshot example of recommended Azure policies in Microsoft Defender for Cloud." lightbox="media/hub/azure-policies-mdc.jpg":::
+:::image type="content" source="media/hub/azure-policies-mdc.jpg" alt-text="Screenshot example of recommended Azure policies in Microsoft Defender for Cloud." lightbox="media/hub/azure-policies-mdc.jpg":::
 
 1. Open **Microsoft Defender for Cloud**, by selecting the Microsoft Defender for Cloud icon in the left menu.
 
@@ -332,7 +335,7 @@ To view all the Azure policies that provide network recommendations used by Micr
 
 Follow these steps to view some of the network recommendations, based on the Microsoft cloud security benchmark:
 
-:::image type="content" source="media/hub/network-rec-mdc.jpg" alt-text="Example screenshot of network recommendations in Microsoft Defender for Cloud." lightbox="media/hub/network-rec-mdc.jpg":::
+:::image type="content" source="media/hub/network-rec-mdc.jpg" alt-text="Screenshot example of network recommendations in Microsoft Defender for Cloud." lightbox="media/hub/network-rec-mdc.jpg":::
 
 1. Open **Microsoft Defender for Cloud**.
 
@@ -356,7 +359,7 @@ You can also check options to get a better security posture by hardening your ne
 
 Azure Firewall is recommended for a hub VNet, as described in this article. Microsoft Defender for Cloud can manage multiple Azure Firewall policies centrally. In addition to Azure Firewall policies, you'll be able to manage other features related to Azure Firewall, as shown here.
 
-:::image type="content" source="media/hub/firewall-manager-mdc.jpg" alt-text="Example screenshot of managing Azure firewall policies through Microsoft Defender for Cloud.":::
+:::image type="content" source="media/hub/firewall-manager-mdc.jpg" alt-text="Screenshot example of managing Azure firewall policies through Microsoft Defender for Cloud.":::
 
 For more information about how Microsoft Defender for Cloud protects your network environment against threats, see [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction)
 

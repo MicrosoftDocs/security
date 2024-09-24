@@ -68,21 +68,33 @@ sections:
       
       :::row:::
          :::column:::
-         :::image type="icon" source="/security\media\security-hub\arrows-blue-s.png":::[Build foundational security skills](#build-foundational-security-skills)
+         :::image type="icon" source="/security\media\security-hub\arrows-blue.png"::: 
+         
+         [Build foundational security skills](#build-foundational-security-skills)
+
          :::column-end:::
          :::column:::
-         :::image type="icon" source="/security\media\security-hub\arrows2-gray-s.png":::[Plan and implement modern cybersecurity](#plan-and-implement-modern-cybersecurity)
+         :::image type="icon" source="/security\media\security-hub\arrows2-gray.png":::
+         
+         [Plan and implement modern cybersecurity](#plan-and-implement-modern-cybersecurity)
+
          :::column-end:::
          :::column:::
-         :::image type="icon" source="/security\media\security-hub\arrows3-darkblue-s.png":::[Gain specialized security skills and knowledge](#gain-specialized-security-skills-and-knowledge)
+         :::image type="icon" source="/security\media\security-hub\arrows4-green.png"
+         
+         [Gain specialized security skills and knowledge](#gain-specialized-security-skills-and-knowledge)
+
          :::column-end:::
          :::column:::
-         :::image type="icon" source="/security\media\security-hub\arrows4-green-s.png":::[Prove your advanced skills with Microsoft Credentials for security](#prove-your-skills-with-microsoft-credentials-for-security)
+         :::image type="icon" source="/security\media\security-hub\arrows3-darkblue.png":::
+         
+         :::[Prove your advanced skills with Microsoft Credentials for security](#prove-your-skills-with-microsoft-credentials-for-security)
+         
          :::column-end:::
 
       :::row-end:::
         
-      ### Build foundational security skills
+      ### Build foundational security skills  :::image type="icon" source="/security\media\security-hub\arrows-blue-s.png":::
 
       Build your foundational knowledge and essential skills to better collaborate with security colleagues, or find what you need to get your cybersecurity career started. Whether you’re a new IT professional, a student, or a business leader interested in getting the most from Microsoft Security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities.
 
@@ -114,7 +126,7 @@ sections:
          
       :::row-end:::
       
-      ### Plan and implement modern cybersecurity
+      ### Plan and implement modern cybersecurity :::image type="icon" source="/security\media\security-hub\arrows2-gray-s.png":::
 
       Use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
 
@@ -155,7 +167,7 @@ sections:
          :::column-end:::
       :::row-end:::
 
-      ### Gain specialized security skills and knowledge 
+      ### Gain specialized security skills and knowledge :::image type="icon" source="/security\media\security-hub\arrows4-green-s.png":::
 
       Follow our step-by-step Plans to help accelerate your skill-building journey and meet your learning goals. Our curated, expert content is easy to follow, with daily and weekly milestones, plus automated nudges to help keep you focused and motivated on expanding your capabilities and credentials. 
 

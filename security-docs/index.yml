@@ -243,38 +243,29 @@ sections:
       <br />
 #####
 
-
   - componentType: grid
     title: Plan and implement modern cybersecurity
     blocks:
-      - componentType: icon-card
+      - componentType: summary-card
         title: "AI security fundamentals"
         summary: Explore AI security concepts, security controls that apply to AI systems, and testing procedures to help improve the security posture of your AI environments.
         url: /training/paths/ai-security-fundamentals/
-        icon:
-          componentType: image
-          src: /security/media/security-hub/general-learning-path.svg
-      - componentType: icon-card
+      - componentType: summary-card
         title: Get started with Microsoft Copilot for Security 
         summary: Learn about the AI-powered security analysis tool that can process security signals and respond to cyberthreats at machine speed.
         url: /training/paths/security-copilot-and-ai/
-        icon:
-          componentType: image
-          src: /security/media/security-hub/general-learning-path-partial-wreath.svg
-      - componentType: icon-card
+      - componentType: summary-card
         title: "Govern and protect sensitive information in the age of AI "
         summary: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
         url: /training/paths/purview-protect-govern-ai/
-        icon:
-          componentType: image
-          src: /security/media/security-hub/general-learning-path-full-wreath.svg
-      - componentType: icon-card
+      - componentType: summary-card
         title: "Govern and protect sensitive information in the age of AI "
         summary: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
         url: /training/paths/purview-protect-govern-ai/
-        icon:
-          componentType: image
-          src: /security/media/security-hub/general-learning-path-full-wreath.svg
+      - componentType: summary-card
+        title: "Govern and protect sensitive information in the age of AI "
+        summary: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
+        url: /training/paths/purview-protect-govern-ai/
   - componentType: grid
     title: Gain specialized security skills and knowledge
     blocks:

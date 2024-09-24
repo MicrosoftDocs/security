@@ -91,7 +91,7 @@ sections:
 #      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
 #      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
 
-
+##### Markdown section
 # Jump start your security learning journey
   - componentType: markdown
     content: |
@@ -243,7 +243,7 @@ sections:
       <br />
 #####
 
-##### Markdown section
+
   - componentType: grid
     title: Plan and implement modern cybersecurity
     blocks:
@@ -306,7 +306,7 @@ sections:
         icon:
           componentType: image
           src: /security/media/security-hub/general-learning-path-full-wreath.svg
-          
+
 # Prove your skills with Microsoft Credentials for Security 
   - componentType: hero
     title: Prove your skills with Microsoft Credentials for Security 

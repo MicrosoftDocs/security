@@ -66,14 +66,22 @@ sections:
 
       Security is a complex journey. To keep pace with evolving cyberthreats, technology platforms, and business priorities, it’s important to continuously update your skills and your organization’s roadmap. The following resources can help you navigate the most common security learning journeys. 
       
-      :::image type="icon" source="/security\media\security-hub\arrows-blue-s.png":::[Build foundational security skills](#build-foundational-security-skills)
+      :::row:::
+         :::column:::
+         :::image type="icon" source="/security\media\security-hub\arrows-blue-s.png":::[Build foundational security skills](#build-foundational-security-skills)
+         :::column-end:::
+         :::column:::
+         :::image type="icon" source="/security\media\security-hub\arrows2-gray-s.png":::[Plan and implement modern cybersecurity](#plan-and-implement-modern-cybersecurity)
+         :::column-end:::
+         :::column:::
+         :::image type="icon" source="/security\media\security-hub\arrows3-darkblue-s.png":::[Gain specialized security skills and knowledge](#gain-specialized-security-skills-and-knowledge)
+         :::column-end:::
+         :::column:::
+         :::image type="icon" source="/security\media\security-hub\arrows4-green-s.png":::[Prove your advanced skills with Microsoft Credentials for security](#prove-your-skills-with-microsoft-credentials-for-security)
+         :::column-end:::
 
-      :::image type="icon" source="/security\media\security-hub\arrows2-gray-s.png":::[Plan and implement modern cybersecurity](#plan-and-implement-modern-cybersecurity)
-
-      :::image type="icon" source="/security\media\security-hub\arrows3-darkblue-s.png":::[Gain specialized security skills and knowledge](#gain-specialized-security-skills-and-knowledge)
-
-      :::image type="icon" source="/security\media\security-hub\arrows4-green-s.png":::[Prove your advanced skills with Microsoft Credentials for security](#prove-your-skills-with-microsoft-credentials-for-security)
-
+      :::row-end:::
+        
       ### Build foundational security skills
 
       Build your foundational knowledge and essential skills to better collaborate with security colleagues, or find what you need to get your cybersecurity career started. Whether you’re a new IT professional, a student, or a business leader interested in getting the most from Microsoft Security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities.

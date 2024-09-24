@@ -18,7 +18,7 @@ sections:
     supertitle: Microsoft Learn
     title: Security hub 
   # size: small
-    summary: "Microsoft Learn is your trusted source to help you tackle security challenges while preparing for a competitive future. Find technical guidance and resources on planning and implementing modern cybersecurity strategy, architecture, processes, and technology, building advanced cybersecurity skills and getting certified, and learning cybersecurity as a new or aspiring security professional." 
+    summary: "The Security hub on Microsoft Learn offers technical guidance and resources for planning and implementing modern cybersecurity strategy, architecture, processes, and technology for aspiring, new, and experienced cybersecurity professionals. You can also find resources and training offerings for building foundational and advanced cybersecurity skills and for earning Microsoft Credentials. Microsoft Learn provides guidance to help you tackle security challenges while preparing for a competitive future." 
     heroImage:
      componentType: hero-image
      lightImageSrc: /security/media/security-hub/security-hero.png
@@ -264,7 +264,7 @@ sections:
     blocks:
       - componentType: icon-card
         title: Connect with the community  
-        summary: "Join the conversation in the Security, Compliance, and Identity community, with cybersecurity discussions and posts that explore key security topics and technologies."
+        summary: "Join the conversation in the Security, Compliance, and Identity community, with cybersecurity discussions and posts that explore key security topics."
         url: https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance
         icon:
           componentType: image
@@ -278,7 +278,7 @@ sections:
           src: /security/media/security-hub/icon-briefcase.png
       - componentType: icon-card
         title: Check out Microsoft Security Virtual Training Days  
-        summary: "Learn to protect your data and organization with comprehensive Microsoft Security solutions, including identity and access management and compliance management."
+        summary: "Learn to protect your data and organization with Microsoft Security solutions, including identity and access management and compliance management."
         url: https://events.microsoft.com/mvtd?scenario=Microsoft%20Security%20Virtual%20Training%20Day
         icon:
           componentType: image

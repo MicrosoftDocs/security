@@ -24,6 +24,10 @@ sections:
      lightImageSrc: /security/media/security-hub/security-hero.png
      darkImageSrc: /security/media/security-hub/security-hero.png
  
+ # ### [Build foundational security skills](#tab/build-foundational-security-skills)
+#   ### [Plan and implement modern cybersecurity](#tab/plan-implement-modern-cybersecurity)
+# ### [Gain specialized security skills and knowledge](#tab/gain-specialized-security-skills-knowledge)
+
 ##### Markdown section
 # Jump start your security learning journey
   - componentType: markdown
@@ -31,8 +35,6 @@ sections:
       ## Jump-start your security learning journey
 
       Security is a complex journey. To keep pace with evolving cyberthreats, technology platforms, and business priorities, it’s important to continuously update your skills and your organization’s roadmap. The following resources can help you navigate the most common security learning journeys. 
-      
-      ### [Build foundational security skills](#tab/build-foundational-security-skills)
 
       ### Build foundational security skills
 
@@ -63,8 +65,6 @@ sections:
          
       :::row-end:::
       
-      ### [Plan and implement modern cybersecurity](#tab/plan-implement-modern-cybersecurity)
-
       ### Plan and implement modern cybersecurity
 
       Use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
@@ -105,8 +105,6 @@ sections:
 
          :::column-end:::
       :::row-end:::
-
-      ### [Gain specialized security skills and knowledge](#tab/gain-specialized-security-skills-knowledge)
 
       ### Gain specialized security skills and knowledge 
 

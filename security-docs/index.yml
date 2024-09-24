@@ -37,30 +37,32 @@ sections:
       Security is a complex journey. To keep pace with evolving cyberthreats, technology platforms, and business priorities, it’s important to continuously update your skills and your organization’s roadmap. The following resources can help you navigate the most common security learning journeys. 
       
       [Build foundational security skills](#tab/build-foundational-security-skills)
+      :::image type="icon" source="/security/media/security-hub/lock-icon-rectangle.png":::
       [Plan and implement modern cybersecurity](#tab/plan-implement-modern-cybersecurity)
+      :::image type="icon" source="/security/media/security-hub/laptop-icon-rectangle.png":::
       [Gain specialized security skills and knowledge](#tab/gain-specialized-security-skills-knowledge)
-      
+      :::image type="icon" source="/security/media/security-hub/shield-icon-rectangle.png":::
+
       ### Build foundational security skills
 
       Build your foundational knowledge and essential skills to better collaborate with security colleagues, or find what you need to get your cybersecurity career started. Whether you’re a new IT professional, a student, or a business leader interested in getting the most from Microsoft Security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities.
 
       :::row:::
          :::column:::
-         :::image type="icon" source="/security/media/security-hub/lock-icon-rectangle.png":::
+         
 
          **[Understand cybersecurity basics](/training/paths/describe-basic-concepts-of-cybersecurity/)**
 
          Find out how you can protect yourself and your organization against cyberthreats and cyberattacks, and explore cybersecurity concepts. 
          :::column-end:::
          :::column:::
-         :::image type="icon" source="/security/media/security-hub/laptop-icon-rectangle.png":::
 
          **[Take the Microsoft Security Virtual Training Day: Security, Compliance, and Identity Fundamentals](https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals&startTime=08:00&endTime=17:00)**
 
          Join this training to discover basic concepts, like identity and access management and compliance management. Gain foundational knowledge of privacy and of data governance, protection, and management solutions.  
          :::column-end:::
          :::column:::
-         :::image type="icon" source="/security/media/security-hub/shield-icon-rectangle.png":::
+         
 
          **[Earn the Microsoft Certified: Security, Compliance, and Identity Fundamentals Certification​](/credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification)**
 

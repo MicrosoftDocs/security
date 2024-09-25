@@ -23,8 +23,6 @@ This article is a deliverable of the Microsoft [AETHER Engineering Practices for
 
 This guidance is organized around the Adversarial Machine Learning Threat Taxonomy, created by Ram Shankar Siva Kumar, David O'Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover, and titled [Failure Modes in Machine Learning](/security/failure-modes-in-machine-learning). While the research this content is based on addresses both intentional/malicious and accidental behaviors in ML failure modes, this bug bar supplement focuses entirely on intentional/malicious behaviors that would result in a security incident and/or deployment of a fix.
 
-Microsoft Security Response Center (MSRC) published a [severity rating system](https://www.microsoft.com/msrc/security-update-severity-rating-system) that rates a vulnerability according to the worst theoretical outcome were that vulnerability to be exploited.
-
 <table>
 <thead>
 <tr class="header">

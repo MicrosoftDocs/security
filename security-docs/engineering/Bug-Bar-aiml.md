@@ -4,10 +4,10 @@
 # Mandatory fields.
 title: AI/ML Pivots to the Security Development Lifecycle Bug Bar
 description: Machine Learning Bug Triage Guidance
-author: TerryLanfear
-ms.author: terrylan
+author: msmbaldwin
+ms.author: mbaldwin
 manager: rkarlin
-ms.date: 09/23/2024
+ms.date: 09/25/2024
 ms.topic: article
 ms.service: security
 ---
@@ -19,11 +19,11 @@ Kumar
 
 November 2019
 
-This article is a deliverable of the Microsoft [AETHER Engineering Practices for AI Working Group](https://news.microsoft.com/2018/03/29/satya-nadella-email-to-employees-embracing-our-future-intelligent-cloud-and-intelligent-edge/). This article functions as a supplement to the existing SDL bug bar used to triage traditional security vulnerabilities. It's intended to be used as a reference for the triage of AI/ML-related security issues. The [Vulnerability Severity Classification](https://www.microsoft.com/en-us/msrc/aibugbarrefer) for AI Systems (published by Microsoft Security Response Center (MSRC)), defines common vulnerability types and severity levels for systems involving AI.
+This article is a deliverable of the Microsoft [AETHER Engineering Practices for AI Working Group](https://news.microsoft.com/2018/03/29/satya-nadella-email-to-employees-embracing-our-future-intelligent-cloud-and-intelligent-edge/). This article functions as a supplement to the existing SDL bug bar used to triage traditional security vulnerabilities. It's intended to be used as a reference for the triage of AI/ML-related security issues. The [Vulnerability Severity Classification](https://www.microsoft.com/msrc/aibugbar) for AI Systems (published by Microsoft Security Response Center), defines common vulnerability types and severity levels for systems involving AI.
 
 This guidance is organized around the Adversarial Machine Learning Threat Taxonomy, created by Ram Shankar Siva Kumar, David O'Brien, Kendra Albert, Salome Viljoen, and Jeffrey Snover, and titled [Failure Modes in Machine Learning](/security/failure-modes-in-machine-learning). While the research this content is based on addresses both intentional/malicious and accidental behaviors in ML failure modes, this bug bar supplement focuses entirely on intentional/malicious behaviors that would result in a security incident and/or deployment of a fix.
 
-MSRC published a [severity rating system](https://www.microsoft.com/msrc/security-update-severity-rating-system) that rates a vulnerability according to the worst theoretical outcome were that vulnerability to be exploited.
+Microsoft Security Response Center (MSRC) published a [severity rating system](https://www.microsoft.com/msrc/security-update-severity-rating-system) that rates a vulnerability according to the worst theoretical outcome were that vulnerability to be exploited.
 
 <table>
 <thead>

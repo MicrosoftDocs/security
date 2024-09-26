@@ -194,21 +194,21 @@ sections:
     summary: Follow our step-by-step Plans to help accelerate your skill-building journey and meet your learning goals. Our curated, expert content is easy to follow, with daily and weekly milestones, plus automated nudges to help keep you focused and motivated on expanding your capabilities and credentials.
     blocks:
       - componentType: summary-card
-        title: "AI security fundamentals"
-        summary: Explore AI security concepts, security controls that apply to AI systems, and testing procedures to help improve the security posture of your AI environments.
-        url: /training/paths/ai-security-fundamentals/
+        title: Optimize your security operations
+        summary: Elevate your security operations skills with Learning for Microsoft security operations analysts. This Plan is designed to help you implement Microsoft Defender for Endpoint and other advanced security tools.
+        url: https://aka.ms/OptimizeSecurityOps
       - componentType: summary-card
-        title: Get started with Microsoft Copilot for Security 
-        summary: Learn about the AI-powered security analysis tool that can process security signals and respond to cyberthreats at machine speed.
-        url: /training/paths/security-copilot-and-ai/
+        title: Learn the art of identity and access management
+        summary: Improve your understanding of identity and access management with Learning for Microsoft identity and access administrators. This Plan is designed to help you automate authentication and authorization processes while applying Zero Trust principles.
+        url: https://aka.ms/IdentityandAccessMngmt
       - componentType: summary-card
-        title: "Govern and protect sensitive information in the age of AI "
-        summary: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
-        url: /training/paths/purview-protect-govern-ai/
+        title: Develop expertise to handle data security challenges
+        summary: Help secure your organization's data with Learning for Microsoft data security administrators. This Plan can help you effectively manage permissions, environments, and data policies.
+        url: https://aka.ms/DataSecurityChallenges
       - componentType: summary-card
-        title: "Govern and protect sensitive information in the age of AI "
-        summary: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
-        url: /training/paths/purview-protect-govern-ai/
+        title: Gain insight to strengthen your security solutions
+        summary: Learn how security policies, Zero Trust architecture, and hybrid environment management can help you improve overall cybersecurity in Strengthen your organization’s security architecture and solutions. 
+        url: https://aka.ms/StrengthenSecSols
 
 # Prove your skills with Microsoft Credentials for Security 
   - componentType: hero

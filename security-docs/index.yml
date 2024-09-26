@@ -91,47 +91,6 @@ sections:
          :::column-end:::
 
       :::row-end:::
-      
-      ### Plan and implement modern cybersecurity 
-
-      Use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
-
-      :::row:::
-         :::column:::
-         **[Access security adoption resources](https://aka.ms/saf)**
-
-         Plan your overall security modernization journey. The Security Adoption Framework (SAF) provides organizations with guidance for incorporating end-to-end security modernization across a 'hybrid of everything' multicloud and multi-platform technical estate.  
-         :::column-end:::
-         :::column:::
-         **[Work with Microsoft Cybersecurity Reference Architectures](https://aka.ms/MCRA)**
-
-         Explore the Microsoft Cybersecurity Reference Architectures (MCRA), and review diagrams that describe how Microsoft Security capabilities integrate with Microsoft and third-party platforms.
-         :::column-end:::
-         :::column:::
-         **[Take the CISO workshop training](https://aka.ms/CISOworkshop)**
-
-         This workshop can help you accelerate security program modernization using Zero Trust principles. 
-         :::column-end:::
-
-      :::row-end:::
-
-      :::row:::
-         :::column:::
-         **[Discover common security antipatterns](/security/adoption/adoption#how-to-consume-the-guidance)**
-
-         Learn to avoid common cybersecurity mistakes and pitfalls. Review the itemized antipatterns that we commonly observe across organizations, along with guidance for overcoming them. 
-         :::column-end:::
-         :::column:::
-         **[Adopt Zero Trust architecture](/security/zero-trust/)**
-
-        Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using Microsoft-recommended deployment plans.   
-         :::column-end:::
-         :::column:::
-
-
-
-         :::column-end:::
-      :::row-end:::
 
       ### Gain specialized security skills and knowledge 
 

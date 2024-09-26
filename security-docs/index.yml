@@ -236,7 +236,6 @@ sections:
         - componentType: link
           url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification
           text: Learn more
-
 #####
   - componentType: grid
     title: Plan and implement modern cybersecurity

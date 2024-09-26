@@ -215,13 +215,13 @@ sections:
     summary: Build your foundational knowledge and essential skills to better collaborate with security colleagues, or find what you need to get your cybersecurity career started. Whether you’re a new IT professional, a student, or a business leader interested in getting the most from Microsoft Security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities.
     blocks:
     - componentType: card
-      title: Card 1 title here
+      title: Understand cybersecurity basics
       summary: Summary text, keep it brief
       imageUrl: /security/media/security-hub/card-lock.png
       url: https://bing.com # optional, when included the title of the card is clickable, if the links property is not specified
     - componentType: card
       title: Card 2 title here
-      summary: Summary text, keep it brief
+      summary: "Take the Microsoft Security Virtual Training Day: Security, Compliance, and Identity Fundamentals"
       imageUrl: /security/media/security-hub/card-laptop.png 
       url: https://bing.com
       links: # optional a list of links rendered at the bottom of the card
@@ -230,7 +230,7 @@ sections:
           text: Learn more
     - componentType: card
       title: Card 3 title
-      summary: Summary text, keep it brief
+      summary: "Earn the Microsoft Certified: Security, Compliance, and Identity Fundamentals Certification"
       imageUrl: /security/media/security-hub/card-shield.png
       links:
         - componentType: link

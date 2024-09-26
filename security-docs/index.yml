@@ -239,6 +239,7 @@ sections:
 #####
   - componentType: grid
     title: Plan and implement modern cybersecurity
+    summary: Use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
     blocks:
       - componentType: summary-card
         title: "AI security fundamentals"
@@ -262,6 +263,7 @@ sections:
         url: /training/paths/purview-protect-govern-ai/
   - componentType: grid
     title: Gain specialized security skills and knowledge
+    summary: Follow our step-by-step Plans to help accelerate your skill-building journey and meet your learning goals. Our curated, expert content is easy to follow, with daily and weekly milestones, plus automated nudges to help keep you focused and motivated on expanding your capabilities and credentials.
     blocks:
       - componentType: summary-card
         title: "AI security fundamentals"

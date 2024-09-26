@@ -212,6 +212,7 @@ sections:
 #####
   - componentType: cards
     title: Build foundational security skills
+    summary: Build your foundational knowledge and essential skills to better collaborate with security colleagues, or find what you need to get your cybersecurity career started. Whether you’re a new IT professional, a student, or a business leader interested in getting the most from Microsoft Security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities.
     blocks:
     - componentType: card
       title: Card 1 title here

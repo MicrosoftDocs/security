@@ -213,23 +213,23 @@ sections:
       - componentType: summary-card
         title: Access security adoption resources
         summary: Plan your overall security modernization journey. The Security Adoption Framework (SAF) provides organizations with guidance for incorporating end-to-end security modernization across a “hybrid of everything” multicloud and multi-platform technical estate. 
-        url: /training/paths/ai-security-fundamentals/
+        url: https://aka.ms/saf
       - componentType: summary-card
         title: Work with Microsoft Cybersecurity Reference Architectures
         summary: Explore the Microsoft Cybersecurity Reference Architectures (MCRA), and review diagrams that describe how Microsoft Security capabilities integrate with Microsoft and third-party platforms. 
-        url: /training/paths/security-copilot-and-ai/
+        url: https://aka.ms/MCRA
       - componentType: summary-card
         title: Take the CISO workshop training
         summary: This workshop can help you accelerate security program modernization using Zero Trust principles. 
-        url: /training/paths/purview-protect-govern-ai/
+        url: https://aka.ms/CISOworkshop
       - componentType: summary-card
         title: Discover common security antipatterns
         summary: Learn to avoid common cybersecurity mistakes and pitfalls. Review the itemized antipatterns that we commonly observe across organizations, along with guidance for overcoming them.   
-        url: /training/paths/purview-protect-govern-ai/
+        url: /security/adoption/adoption#how-to-consume-the-guidance
       - componentType: summary-card
         title: Adopt Zero Trust architecture
         summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using Microsoft-recommended deployment plans.   
-        url: /training/paths/purview-protect-govern-ai/
+        url: /security/zero-trust/
   - componentType: grid
     title: Gain specialized security skills and knowledge
     summary: Follow our step-by-step Plans to help accelerate your skill-building journey and meet your learning goals. Our curated, expert content is easy to follow, with daily and weekly milestones, plus automated nudges to help keep you focused and motivated on expanding your capabilities and credentials.

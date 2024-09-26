@@ -195,19 +195,19 @@ sections:
     blocks:
       - componentType: summary-card
         title: Optimize your security operations
-        summary: Elevate your security operations skills with Learning for Microsoft security operations analysts. This Plan is designed to help you implement Microsoft Defender for Endpoint and other advanced security tools.
+        summary: Elevate your security operations skills with "Learning for Microsoft security operations analysts". This Plan is designed to help you implement Microsoft Defender for Endpoint and other advanced security tools.
         url: https://aka.ms/OptimizeSecurityOps
       - componentType: summary-card
         title: Learn the art of identity and access management
-        summary: Improve your understanding of identity and access management with Learning for Microsoft identity and access administrators. This Plan is designed to help you automate authentication and authorization processes while applying Zero Trust principles.
+        summary: Improve your understanding of identity and access management with "Learning for Microsoft identity and access administrators". This Plan is designed to help you automate authentication and authorization processes while applying Zero Trust principles.
         url: https://aka.ms/IdentityandAccessMngmt
       - componentType: summary-card
         title: Develop expertise to handle data security challenges
-        summary: Help secure your organization's data with Learning for Microsoft data security administrators. This Plan can help you effectively manage permissions, environments, and data policies.
+        summary: Help secure your organization's data with "Learning for Microsoft data security administrators". This Plan can help you effectively manage permissions, environments, and data policies.
         url: https://aka.ms/DataSecurityChallenges
       - componentType: summary-card
         title: Gain insight to strengthen your security solutions
-        summary: Learn how security policies, Zero Trust architecture, and hybrid environment management can help you improve overall cybersecurity in Strengthen your organization’s security architecture and solutions. 
+        summary: Learn how security policies, Zero Trust architecture, and hybrid environment management can help you improve overall cybersecurity in "Strengthen your organization’s security architecture and solutions". 
         url: https://aka.ms/StrengthenSecSols
 
 # Prove your skills with Microsoft Credentials for Security 

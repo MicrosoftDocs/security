@@ -211,23 +211,23 @@ sections:
     summary: Use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
     blocks:
       - componentType: summary-card
-        title: "AI security fundamentals"
-        summary: Explore AI security concepts, security controls that apply to AI systems, and testing procedures to help improve the security posture of your AI environments.
+        title: Access security adoption resources
+        summary: Plan your overall security modernization journey. The Security Adoption Framework (SAF) provides organizations with guidance for incorporating end-to-end security modernization across a “hybrid of everything” multicloud and multi-platform technical estate. 
         url: /training/paths/ai-security-fundamentals/
       - componentType: summary-card
-        title: Get started with Microsoft Copilot for Security 
+        title: Work with Microsoft Cybersecurity Reference Architectures
         summary: Learn about the AI-powered security analysis tool that can process security signals and respond to cyberthreats at machine speed.
         url: /training/paths/security-copilot-and-ai/
       - componentType: summary-card
-        title: "Govern and protect sensitive information in the age of AI "
+        title: Take the CISO workshop training
         summary: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
         url: /training/paths/purview-protect-govern-ai/
       - componentType: summary-card
-        title: "Govern and protect sensitive information in the age of AI "
+        title: Discover common security antipatterns
         summary: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
         url: /training/paths/purview-protect-govern-ai/
       - componentType: summary-card
-        title: "Govern and protect sensitive information in the age of AI "
+        title: Adopt Zero Trust architecture
         summary: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
         url: /training/paths/purview-protect-govern-ai/
   - componentType: grid

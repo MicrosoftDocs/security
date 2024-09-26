@@ -18,78 +18,46 @@ sections:
     supertitle: Microsoft Learn
     title: Security hub 
   # size: small
-    summary: "The Security hub on Microsoft Learn offers technical guidance and resources for planning and implementing modern cybersecurity strategy, architecture, processes, and technology for aspiring, new, and experienced cybersecurity professionals. You can also find resources and training offerings for building foundational and advanced cybersecurity skills and for earning Microsoft Credentials. Microsoft Learn provides guidance to help you tackle security challenges while preparing for a competitive future." 
+    summary: "The Security hub on Microsoft Learn offers technical guidance and resources for planning and implementing modern cybersecurity strategy, architecture, processes, and technology for aspiring, new, and experienced cybersecurity professionals. You can also find resources and training offerings for building foundational and advanced cybersecurity skills and for earning Microsoft Credentials. Microsoft Learn provides guidance to help you tackle security challenges while preparing for a competitive future. " 
     heroImage:
      componentType: hero-image
      lightImageSrc: /security/media/security-hub/security-hero.png
      darkImageSrc: /security/media/security-hub/security-hero.png
-# Icon cards grid
-  - componentType: grid
-    title: Discover top picks
-    blocks:
-      - componentType: icon-card
-        title: "AI security fundamentals"
-        summary: Explore AI security concepts, security controls that apply to AI systems, and testing procedures to help improve the security posture of your AI environments.
-        url: /training/paths/ai-security-fundamentals/
-        icon:
-          componentType: image
-          src: /security/media/security-hub/general-learning-path.svg
-      - componentType: icon-card
-        title: Get started with Microsoft Copilot for Security 
-        summary: Learn about the AI-powered security analysis tool that can process security signals and respond to cyberthreats at machine speed.
-        url: /training/paths/security-copilot-and-ai/
-        icon:
-          componentType: image
-          src: /security/media/security-hub/general-learning-path-partial-wreath.svg
-      - componentType: icon-card
-        title: "Govern and protect sensitive information in the age of AI "
-        summary: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
-        url: /training/paths/purview-protect-govern-ai/
-        icon:
-          componentType: image
-          src: /security/media/security-hub/general-learning-path-full-wreath.svg
-      - componentType: icon-card
-        title: "Govern and protect sensitive information in the age of AI "
-        summary: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
-        url: /training/paths/purview-protect-govern-ai/
-        icon:
-          componentType: image
-          src: /security/media/security-hub/general-learning-path-full-wreath.svg
 
 # Spotlight selections
-#  - componentType: testimonials-section
-#    title: 'Discover top picks'
-#    cards:
-#      - avatarUrl: /security/media/security-hub/general-learning-path.svg
-#        componentType: testimonial-card
-#        name: "AI security fundamentals"
-#        role: "Learning Path"
-#        feedback: Explore AI security concepts, security controls that apply to AI systems, and testing procedures to help improve the security posture of your AI environments.   
-#        link:
-#          componentType: link
-#          url: /training/paths/ai-security-fundamentals/
-#          text: Get started
-#      - avatarUrl: /security/media/security-hub/general-learning-path-partial-wreath.svg
-#        componentType: testimonial-card
-#        name: Get started with Microsoft Copilot for Security 
-#        role: "Learning Path"
-#        feedback: Learn about the AI-powered security analysis tool that can process security signals and respond to cyberthreats at machine speed.  
-#        link:
-#          componentType: link
-#          url: /training/paths/security-copilot-and-ai/
-#          text: Get started
-#      - avatarUrl: /security/media/security-hub/general-learning-path-full-wreath.svg
-#        componentType: testimonial-card
-#        name: "Govern and protect sensitive information in the age of AI "
-#        role: "Learning Path"
-#        feedback: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
-#        link:
-#          componentType: link
-#          url: /training/paths/purview-protect-govern-ai/
-#          text: Get started
-#    backgroundImage:
-#      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
-#      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+  - componentType: testimonials-section
+    title: 'Discover top picks'
+    cards:
+      - avatarUrl: /security/media/security-hub/general-learning-path.svg
+        componentType: testimonial-card
+        name: "AI security fundamentals"
+        role: "Learning Path"
+        feedback: Explore AI security concepts, security controls that apply to AI systems, and testing procedures to help improve the security posture of your AI environments.   
+        link:
+          componentType: link
+          url: /training/paths/ai-security-fundamentals/
+          text: Get started
+      - avatarUrl: /security/media/security-hub/general-learning-path-partial-wreath.svg
+        componentType: testimonial-card
+        name: Get started with Microsoft Copilot for Security 
+        role: "Learning Path"
+        feedback: Learn about the AI-powered security analysis tool that can process security signals and respond to cyberthreats at machine speed.  
+        link:
+          componentType: link
+          url: /training/paths/security-copilot-and-ai/
+          text: Get started
+      - avatarUrl: /security/media/security-hub/general-learning-path-full-wreath.svg
+        componentType: testimonial-card
+        name: "Govern and protect sensitive information in the age of AI "
+        role: "Learning Path"
+        feedback: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
+        link:
+          componentType: link
+          url: /training/paths/purview-protect-govern-ai/
+          text: Get started
+    backgroundImage:
+      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
 
 ##### Markdown section
 # Jump start your security learning journey
@@ -248,12 +216,12 @@ sections:
     - componentType: card
       title: Card 1 title here
       summary: Summary text, keep it brief
-      imageUrl: ./media/path-to-image.jpg # imageUrl is optional
+      imageUrl: /security/media/security-hub/card-lock.png
       url: https://bing.com # optional, when included the title of the card is clickable, if the links property is not specified
     - componentType: card
       title: Card 2 title here
       summary: Summary text, keep it brief
-      imageUrl: ./media/path-to-image.jpg # imageUrl is optional
+      imageUrl: /security/media/security-hub/card-laptop.png 
       url: https://bing.com
       links: # optional a list of links rendered at the bottom of the card
         - componentType: link
@@ -262,7 +230,7 @@ sections:
     - componentType: card
       title: Card 3 title
       summary: Summary text, keep it brief
-      imageUrl: https://docs.microsoft.com/en-us/media/home-and-directory/featured-learn-tv-2x.png?branch=main
+      imageUrl: /security/media/security-hub/card-shield.png
       links:
         - componentType: link
           url: https://bing.com

@@ -127,27 +127,35 @@ sections:
   - componentType: grid
     title: Plan and implement modern cybersecurity
     summary:  Access technical documentation and learn to use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
-    blocks:
+    blocks:     
       - componentType: summary-card
-        title: Access security adoption resources
-        summary: Plan your overall security modernization journey. The Security Adoption Framework (SAF) provides organizations with guidance for incorporating end-to-end security modernization across a “hybrid of everything” multicloud and multi-platform technical estate. 
-        url: https://aka.ms/saf
+        title: Zero Trust adoption framework 
+        summary: Learn about the Zero Trust security model and follow Microsoft’s adoption methodology to rapidly modernize your security posture, secure remote and hybrid work, protect sensitive data, and prevent or reduce business damage from a breach. 
+        url: /security/zero-trust/adopt/zero-trust-adoption-overview?view=o365-worldwide
+      - componentType: summary-card
+        title: Zero Trust assessment and progress tracking 
+        summary: Use pre-built trackers and assessment tools for implementing end-to-end security. Customize these for your organization. Track based on business scenarios or by pillar (identity, devices, apps, and data).    
+        url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources?view=o365-worldwide
+      - componentType: summary-card
+        title: Security in the Microsoft Cloud Adoption Framework 
+        summary: Use the Secure methodology provided in the Cloud Adoption Framework to secure each phase of your organization’s adoption journey to cloud workloads in Azure.    
+        url: /azure/cloud-adoption-framework/secure/
+      - componentType: summary-card
+        title: Security guidance quick links 
+        summary: Use security guidance in the Well-Architected Framework while building new apps and workloads in Azure (or to modernize existing Azure workloads). Security is balanced with reliability, performance, costs, and other concerns.     
+        url: /azure/well-architected/security/
+      - componentType: summary-card
+        title: Introduction to Azure security 
+        summary: Learn about security services on Azure and best practices for identity, networking, data, applications, and monitoring.     
+        url: /azure/security/fundamentals/overview
+      - componentType: summary-card
+        title: Security adoption resources 
+        summary: Learn about security strategy, attack types, and Zero Trust principles through workshop decks the Microsoft Customer Success Unit refer to as a Security Adoption Framework. Explore how Microsoft security capabilities map to high-level architecture.  
+        url: /security/adoption/adoption
       - componentType: summary-card
         title: Work with Microsoft Cybersecurity Reference Architectures
         summary: Explore the Microsoft Cybersecurity Reference Architectures (MCRA), and review diagrams that describe how Microsoft Security capabilities integrate with Microsoft and third-party platforms. 
         url: https://aka.ms/MCRA
-      - componentType: summary-card
-        title: Take the CISO workshop training
-        summary: This workshop can help you accelerate security program modernization using Zero Trust principles. 
-        url: https://aka.ms/CISOworkshop
-      - componentType: summary-card
-        title: Discover common security antipatterns
-        summary: Learn to avoid common cybersecurity mistakes and pitfalls. Review the itemized antipatterns that we commonly observe across organizations, along with guidance for overcoming them.   
-        url: /security/adoption/adoption#how-to-consume-the-guidance
-      - componentType: summary-card
-        title: Adopt Zero Trust architecture
-        summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using Microsoft-recommended deployment plans.   
-        url: /security/zero-trust/
   - componentType: grid
     title: Gain specialized security skills and knowledge through Plans on Microsoft Learn 
     summary: Follow our step-by-step Plans to help accelerate your skill-building journey and meet your learning goals. Our curated, expert content is easy to follow, with daily and weekly milestones, plus automated nudges to help keep you focused and motivated on expanding your capabilities and credentials.

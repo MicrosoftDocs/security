@@ -126,7 +126,7 @@ sections:
 #####
   - componentType: grid
     title: Plan and implement modern cybersecurity
-    summary: Use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
+    summary:  Access technical documentation and learn to use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
     blocks:
       - componentType: summary-card
         title: Access security adoption resources

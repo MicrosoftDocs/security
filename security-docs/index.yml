@@ -115,7 +115,7 @@ sections:
           url: https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals&startTime=08:00&endTime=17:00
           text: Learn more
     - componentType: card
-      title: "Earn the Microsoft Certified: Security, Compliance, and Identity Fundamentals Certification"
+      title: "Earn the Microsoft Certified: Security, Compliance, and Identity Fundamentals Certification​"
       summary: If you’re familiar with Azure and Microsoft 365, demonstrate your foundational knowledge of Microsoft Security, compliance, and identity concepts across these cloud-based solutions.
       imageUrl: /security/media/security-hub/card-shield.png
       url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification

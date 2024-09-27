@@ -149,7 +149,7 @@ sections:
         summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture using Microsoft-recommended deployment plans.   
         url: /security/zero-trust/
   - componentType: grid
-    title: Gain specialized security skills and knowledge
+    title: Gain specialized security skills and knowledge through Plans on Microsoft Learn 
     summary: Follow our step-by-step Plans to help accelerate your skill-building journey and meet your learning goals. Our curated, expert content is easy to follow, with daily and weekly milestones, plus automated nudges to help keep you focused and motivated on expanding your capabilities and credentials.
     blocks:
       - componentType: summary-card

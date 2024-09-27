@@ -18,7 +18,7 @@ sections:
     supertitle: Microsoft Learn
     title: Security hub 
   # size: small
-    summary: "The Security hub on Microsoft Learn offers technical guidance and resources for planning and implementing modern cybersecurity strategy, architecture, processes, and technology for aspiring, new, and experienced cybersecurity professionals. You can also find resources and training offerings for building foundational and advanced cybersecurity skills and for earning Microsoft Credentials. Microsoft Learn provides guidance to help you tackle security challenges while preparing for a competitive future. " 
+    summary: "The Security hub on Microsoft Learn offers technical guidance and resources for planning and implementing modern cybersecurity strategy, architecture, processes, and technology for aspiring, new, and experienced cybersecurity professionals. You can also find resources and training offerings for building foundational and advanced cybersecurity skills and for earning Microsoft Credentials. Microsoft Learn provides guidance to help you tackle security challenges while preparing for a competitive future." 
     heroImage:
      componentType: hero-image
      lightImageSrc: /security/media/security-hub/security-hero.png

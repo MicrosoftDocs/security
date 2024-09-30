@@ -13,15 +13,14 @@ ms.service: microsoft-365-security
 ms.collection: 
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware 
-ms.localizationpriority:   # medium
 description: Prepare your organization so that you can recover from cybercriminal ransomware attacks without having to pay the ransom.
 
 
 ---
 
-# Prepare a ransomware attack recovery plan
+# Ransomware attack recovery plan
 
-*Always* prepare an alternative to ransom payment to help avoid losing access to your data.
+*Always* prepare a ransomware attack recovery plan, starting with an alternative to ransom payment to help avoid losing access to your data.
 
 > [!IMPORTANT]
 >  **Read the whole ransomware prevention series, and make your organization *hard to ransomware attack*.**
@@ -40,7 +39,7 @@ Ransomware actors in control of your organization have many ways to pressure you
   >Paying the ransom won't guarantee restored access to your data. 
 > Financially motivated cybercriminals (and often relatively amateur operators who are using a toolkit provided by someone else), might keep both the payment locked files. 
 > There is no legal guarantee that they will provide a key that decrypts 100% of your systems and data, or even provide a key at all. The process to decrypt these systems uses homegrown attack tools, an often clumsy and manual process.
-  >
+
 
 - **Pay to avoid disclosure**
 
@@ -63,6 +62,8 @@ Attacks on your backups focus on crippling your organization’s ability to resp
 Most organizations don’t protect backup and restoration procedures against this level of intentional targeting. 
 
 [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware) addresses what to do before an attack to protect your critical business systems and during an attack to ensure a rapid recovery of your business operations.
+
+Learn how to [restore your OneDrive files](https://support.microsoft.com/office/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f) in the event of a ransomware attack.
 
 ### Program and project member accountabilities
 

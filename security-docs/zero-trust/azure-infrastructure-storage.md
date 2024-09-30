@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to storage in Azure?
 description: How to apply Zero Trust principles to Azure storage.  
-ms.date: 02/12/2024
+ms.date: 09/11/2024
 ms.service: security
 author: rudneir2
 ms.author: ruolivei
@@ -21,21 +21,27 @@ For updates to product names, please also update the appropriate figures.
 
 To update figures that are not screen shots, your options are:
 
-- Locate the source Visio file in internal storage.
-- Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
-- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
+- Locate the source Visio file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended).
+- Use a published Visio file in the Microsoft Download Center (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads).
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file (last resort).
 
-For any updates to figures, please update the corresponding posters as needed (see the "Technical publications" section of this article) and republish the Visio and PDF files in the Microsoft Download Center.
+For updates to figures that are included in download files (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads), please: 
+
+- Update the corresponding files (Visio, PowerPoint, PDF) as needed.
+- Publish the Visio and PDF files in the Microsoft Download Center and update the refresh date (such as March 2024) for the download in this article and the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article.
 
 For new articles in this content set, please:
 
-- Add cross-links in the "Next Steps" section FROM all the other articles in this content set TO the new article.
+- Add cross-links in the "Next steps" section FROM all the other articles in this content set TO the new article.
 - Add a link to the Zero Trust Guidance Center page (index.yml).
 - Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed.
 
 --->
 
 # Apply Zero Trust principles to Azure storage
+
+> [!NOTE]
+> :::image type="icon" source="../zero-trust/media/livestream.svg" alt-text="Livestream icon"::: **Upcoming Livestream** Join the Azure FastTrack team as they discuss this article. 23 October, 2024 | 10:00 AM - 11:00 AM (UTC-07:00) Pacific Time (US & Canada). [Register here.](https://developer.microsoft.com/en-us/reactor/events/23692/)
 
 **Summary:** To apply Zero Trust principles to Azure storage, you must protect data (at rest, in transit, and in use), verify users and control access, separate or segregate critical data with network controls, and use Defender for Storage for automated threat detection and protection.
 
@@ -55,7 +61,7 @@ You apply Zero Trust principles for Azure Storage across the architecture, from 
 
 The following diagram shows the logical architecture components.
 
-:::image type="content" source="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg" alt-text="The logical architecture for applying Zero Trust to Azure storage showing subscriptions, resource groups, and storage accounts within an Entra ID tenant." lightbox="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg":::
+:::image type="content" source="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg" alt-text="Diagram of the logical architecture for applying Zero Trust to Azure storage showing subscriptions, resource groups, and storage accounts within a Microsoft Entra ID tenant." lightbox="media/secure-storage/azure-infra-storage-subscription-architecture-1.svg":::
 
 In the diagram:
 
@@ -155,7 +161,7 @@ Another way to provide permissions that are time-bound is through Shared Access 
 - Have a revocation plan.
 - Configure SAS expiration policies.
 - Validate permissions.
-- Use a user delegation SAS wherever possible. This SAS is signed with Microsoft Entra credentials.
+- Use a user delegation SAS wherever possible. This SAS is signed with Microsoft Entra ID credentials.
 
 ## Step 3: Logically separate or segregate critical data with network controls
 
@@ -163,7 +169,7 @@ In this step, you use the recommended controls to protect the network connection
 
 The following diagram highlights the network connections to the Azure Storage services in the reference architecture.
 
-:::image type="content" source="media/secure-storage/azure-infra-storage-network-2.svg" alt-text="The architecture for applying Zero Trust to Azure storage that highlights the network connections to Azure Storage services within the Azure IaaS reference architecture." lightbox="media/secure-storage/azure-infra-storage-network-2.svg":::
+:::image type="content" source="media/secure-storage/azure-infra-storage-network-2.svg" alt-text="Diagram of the reference architecture for applying Zero Trust to Azure storage that highlights the network connections to Azure Storage services within the Azure IaaS reference architecture." lightbox="media/secure-storage/azure-infra-storage-network-2.svg":::
 
 |Task | Description |
 | --- | --- |

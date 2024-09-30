@@ -24,7 +24,7 @@ For updates to product names, please also update the appropriate figures.
 
 To update figures that are not screen shots, your options are:
 
-- Locate the source Visio file in internal storage.
+- Locate the source Visio file in internal storage (see the Illustrations-locations.docs file).
 - Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
 - For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
 
@@ -44,7 +44,7 @@ Additional authors:
 
 --->
 
-This article provides guidance to applying the [principles of Zero Trust](zero-trust-overview.md) for segmenting networks in Azure environments. Here are the Zero Trust principles.
+This article provides guidance for applying the [principles of Zero Trust](zero-trust-overview.md) for segmenting networks in Azure environments. Here are the Zero Trust principles.
 
 | Zero Trust principle | Definition |
 | --- | --- |
@@ -279,7 +279,6 @@ This table summarizes the different levels of segmentation and security methods.
 - [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/)
 - [Introduction to Azure Front Door](/training/modules/intro-to-azure-front-door/)
 - [Introduction to Azure Application Gateway](/training/modules/intro-to-azure-application-gateway/)
-- [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/)
 - [Introduction to Azure Private Link](/training/modules/introduction-azure-private-link/)
 - [Introduction to Azure Virtual WAN](/training/modules/introduction-azure-virtual-wan/)
 - [Connect your on-premises network to Azure with VPN Gateway](/training/modules/connect-on-premises-network-with-vpn-gateway/)
@@ -288,10 +287,12 @@ This table summarizes the different levels of segmentation and security methods.
 
 For additional information about applying Zero Trust to Azure networking, see:
 
-- [Apply Zero Trust principles to encrypting Azure-based network communication](azure-networking-encryption.md)
+- [Encrypt Azure-based network communication](azure-networking-encryption.md)
+- [Gain visibility into your network traffic](azure-networking-visibility.md)
+- [Discontinue legacy network security technology](azure-networking-legacy.md)
 - [Secure networks with Zero Trust](./deploy/networks.md)
 - [Spoke virtual networks in Azure](azure-infrastructure-iaas.md)
-- [Hub virtual networks in Azure](azure-infrastructure-paas.md)
+- [Hub virtual networks in Azure](azure-infrastructure-networking.md)
 - [Spoke virtual networks with Azure PaaS services](azure-infrastructure-paas.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
 

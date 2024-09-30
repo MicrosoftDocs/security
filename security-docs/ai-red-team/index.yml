@@ -75,6 +75,10 @@ landingContent:
   # Card
   - title: Exploring secure solutions
     linkLists:
+      - linkListType: concept
+        links:
+          - text: Methodology for safety aligning the Phi-3 series of language models
+            url: https://arxiv.org/abs/2407.13833
       - linkListType: reference
         links:
           - text: Enterprise security and governance for Azure Machine Learning

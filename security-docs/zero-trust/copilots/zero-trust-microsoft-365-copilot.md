@@ -1,6 +1,6 @@
 ---
-title: How do I apply Zero Trust principles to Microsoft Copilot for Microsoft 365?
-description: How to apply Zero Trust principles to Microsoft Copilot for Microsoft 365. 
+title: How do I apply Zero Trust principles to Microsoft 365 Copilot?
+description: How to apply Zero Trust principles to Microsoft 365 Copilot. 
 ms.date: 04/02/2024
 ms.service: security
 author: BrendaCarter
@@ -14,11 +14,12 @@ ms.collection:
   - zerotrust-solution
   - zerotrust-azure
   - magic-ai-copilot
+ms.custom: [copilot-learning-hub]
 ---
 
-# Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
+# Apply principles of Zero Trust to Microsoft 365 Copilot
 
-**Summary:** To apply Zero Trust principles to Microsoft Copilot for Microsoft 365, you need to apply seven layers of protection in your Microsoft 365 tenant:
+**Summary:** To apply Zero Trust principles to Microsoft 365 Copilot, you need to apply seven layers of protection in your Microsoft 365 tenant:
 
 1. Data protection
 2. Identity and access
@@ -30,7 +31,7 @@ ms.collection:
 
 ## Introduction
 
-Before you introduce Microsoft Copilot for Microsoft 365 or Copilot into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](../zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
+Before you introduce Microsoft 365 Copilot (Copilot) into your environment, Microsoft recommends that you build a strong foundation of security. Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](../zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
 
 This article provides steps to apply the [principles of Zero Trust](../zero-trust-overview.md) security to prepare your environment for Copilot in the following ways:
 
@@ -46,15 +47,21 @@ For the basics of Copilot, see the [overview](/microsoft-365-copilot/microsoft-3
 
 You apply Zero Trust principles for Copilot across the entire architecture, from users and devices to the application data that they have access to. The following diagram shows the logical architecture components.
 
+:::image type="content" source="../media/copilot/m365-copilot-tenant-architecture.svg" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/m365-copilot-tenant-architecture.svg":::
+
+<!---
 :::image type="content" source="../media/copilot/logical-architecture-microsoft-365-copilot.svg" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/logical-architecture-microsoft-365-copilot.svg":::
+--->
 
 In the diagram:
 
 - User devices have Microsoft 365 apps installed from which users can initiate Copilot prompts
 - Copilot components include:
   - The Copilot service, which orchestrates the responses to user prompts
+  - The Large Language Model (LLM) that Copilot references to produce the best response for a user
   - An instance of the Microsoft Graph for the data of your Microsoft 365 tenant
 - Your Microsoft 365 tenant that contains your organization data
+- Copilot results for a user contain only data that the user is allowed to access
 
 ## What’s in this article
 
@@ -69,6 +76,26 @@ This article walks you through the steps to apply the principles of Zero Trust t
 | 5 | Deploy or validate your threat protection services |  Assume breach |
 | 6 | Deploy or validate secure collaboration with Teams | Verify explicitly <br> Use least privileged access |
 | 7 | Deploy or validate user permissions to data | Use least privileged access |
+
+#### Getting started with E3 and next steps with E5
+To help you make progress, each of the steps in this article is organized in the following way:
+- Get started with E3 capabilities
+- Next steps with E5 capabilities
+
+
+#### Working with the Microsoft FastTrack team
+If you're working with the [Microsoft FastTrack team](https://www.microsoft.com/fasttrack) to introduce Copilot into your environment, you will become familiar with three stages: Baseline, Core, and Best-in-class. This approach works well with this guidance.
+
+:::image type="content" source="../media/copilot/m365-fasttrack-core-baseline-best.png" alt-text="Diagram that shows the three stages for deploying Microsoft 365 Copilot, recommended by the Microsoft FastTrack team." lightbox="../media/copilot/m365-fasttrack-core-baseline-best.png":::
+
+In the diagram, the Microsoft FastTrack team takes a three-stage approach to deploying Copilot:
+- Baseline — Set up Copilot
+- Core — Get started with the protections in E3
+- Best-in-class — Next steps with E5
+
+For more information on setting up Copilot, see [Get started with Microsoft 365 Copilot](https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-setup).
+
+#### Adapting this guidance for your organization
 
 Because different organizations can be at various stages of deploying Zero Trust protections, in each of these steps:
 
@@ -174,7 +201,7 @@ Finally, consider implementing [access reviews](/entra/id-governance/access-revi
 
 For both Microsoft 365 E3 and E5, use [Intune App Protection policies (APP)](/mem/intune/apps/app-protection-policy), which are rules that ensure an organization's data remains safe or contained within a managed app.
 
-With APP, Intune creates a wall between your organization data and personal data. APP ensure that organization data in specified apps can't be copied and pasted to other apps on the device, even if the device isn't managed.
+With APP, Intune creates a wall between your organization data and personal data. APP ensures that organization data in specified apps can't be copied and pasted to other apps on the device, even if the device isn't managed.
 
 APP can prevent the inadvertent or intentional copying of Copilot-generated content to apps on a device that aren't included in the list of permitted apps. APP can limit the blast radius of an attacker using a compromised device.
 
@@ -385,7 +412,7 @@ For a visual summary of the information in this article, see the **Copilot archi
 
 Use the Visio file to customize these illustrations for your own use.
 
-For more Zero Trust technical illustrations, click [here](../zero-trust-tech-illus.md).
+For more Zero Trust technical illustrations, see [Zero Trust illustrations for IT architects and implementers](../zero-trust-tech-illus.md).
 
 ## References
 

@@ -1,310 +1,257 @@
-### YamlMime:Hub
-
-title: Security documentation
-summary: Technical guidance to help security professionals build and implement cybersecurity strategy, architecture, and prioritized roadmaps. Read documentation, how-to guides, or browse certifications and trainings.
-# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
-
+### YamlMime:Marketing
+title: Security hub 
 metadata:
-  title: Microsoft Security documentation and training
-  description: Cybersecurity documentation, training, and certifications for security engineers, security operations analysts, and identity and access administrators.
-  ms.services: security
-  ms.subservice: na
-  ms.topic: hub-page
+  title: 'Security hub | Microsoft Learn'
+  description:  Cybersecurity documentation, training, and certifications for security engineers, security operations analysts, and identity and access administrators.
+  ms.service: security
+  keywords: security, cybersecurity, security administration, security resources
+  ms.topic: marketing-hub
+  ms.author: saadad
+  author: sadadow
+  ms.date: 09/15/2024
   ms.collection: na
-  author: TerryLanfear
-  ms.author: terrylan
-  manager: rkarlin
-  ms.date: 05/30/2024
+  brand: azure
+sections:
+  # Intro
+  # Hero with background image - default transform
+  - componentType: hero-learn
+    supertitle: Microsoft Learn
+    title: Security hub 
+  # size: small
+    summary: "The Security hub on Microsoft Learn offers technical guidance and resources for planning and implementing modern cybersecurity strategy, architecture, processes, and technology for aspiring, new, and experienced cybersecurity professionals. You can also find resources and training offerings for building foundational and advanced cybersecurity skills and for earning Microsoft Credentials. Microsoft Learn provides guidance to help you tackle security challenges while preparing for a competitive future." 
+    heroImage:
+     componentType: hero-image
+     lightImageSrc: /security/media/security-hub/security-hero.png
+     darkImageSrc: /security/media/security-hub/security-hero.png
 
+# Spotlight selections
+  - componentType: testimonials-section
+    title: 'Discover top picks'
+    cards:
+      - avatarUrl: /security/media/security-hub/general-learning-path.svg
+        componentType: testimonial-card
+        name: "AI security fundamentals"
+        role: "Learning Path"
+        feedback: Explore AI security concepts, security controls that apply to AI systems, and testing procedures to help improve the security posture of your AI environments.   
+        link:
+          componentType: link
+          url: /training/paths/ai-security-fundamentals/
+          text: Get started
+      - avatarUrl: /security/media/security-hub/general-learning-path-partial-wreath.svg
+        componentType: testimonial-card
+        name: Get started with Microsoft Copilot for Security 
+        role: "Learning Path"
+        feedback: Learn about the AI-powered security analysis tool that can process security signals and respond to cyberthreats at machine speed.  
+        link:
+          componentType: link
+          url: /training/paths/security-copilot-and-ai/
+          text: Get started
+      - avatarUrl: /security/media/security-hub/general-learning-path-full-wreath.svg
+        componentType: testimonial-card
+        name: "Govern and protect sensitive information in the age of AI "
+        role: "Learning Path"
+        feedback: Help secure and govern data in AI-driven environments to navigate AI risks and help ensure compliance. Learn to adapt security and governance strategies.  
+        link:
+          componentType: link
+          url: /training/paths/purview-protect-govern-ai/
+          text: Get started
+    backgroundImage:
+      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
 
-# Maximum of 8 items
-highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  items:
-    # Card
-    - title: What is Microsoft Security Copilot?
-      itemType: whats-new
-      url: /security-copilot/microsoft-security-copilot
-    # Card
-    - title: AI shared responsibility model
-      itemType: concept
-      url: /azure/security/fundamentals/shared-responsibility-ai
-    # Card
-    - title: Microsoft AI Red Team
-      itemType: overview
-      url: /security/ai-red-team/
-    # Card
-    - title: Get started with Azure AI Services
-      itemType: learn
-      url: /training/paths/get-started-azure-ai/
-    # Card
-    - title: Get started with Microsoft Copilot for Security
-      itemType: get-started
-      url: /training/paths/security-copilot-and-ai/
-    # Card
-    - title: Register now! Security for all in the age of AI
-      itemType: learn
-      url: https://mssecure.eventcore.com/
-    # Card
-    - title: Microsoft security podcast - The future of security
-      itemType: overview
-      url: https://thecyberwire.com/podcasts/afternoon-cyber-tea/78/notes 
-    # Card
-    - title: Cybersecurity news and highlights archive
-      itemType: reference
-      url: ./engineering/news-and-highlights.md
-
-
-# productDirectory section (Optional; Remove if not applicable.)
-productDirectory:
-  title: Security job roles
-  summary: Learning resources and certifications for security roles
-  items:
-    # Card
-    - title: Career path training
-      imageSrc: "./media/hubpage/id-admin.png"
+##### Markdown section
+# Jump start your security learning journey
+#  - componentType: markdown
+#    content: |
+#      ## Jump-start your security learning journey
+#
+#      Security is a complex journey. To keep pace with evolving cyberthreats, technology platforms, and business priorities, it’s important to continuously update your skills and your organization’s roadmap. The following resources can help you navigate the most common security learning journeys. 
+#      
+#      Select one of the following links to jump to the respective section of the journey.
+#      :::row:::
+#         :::column:::
+#         
+#         [Build foundational security skills](#build-foundational-security-skills) :::image type="icon" source="/security/media/security-hub/arrows-blue-s.png":::#
+#
+#         :::column-end:::
+#         :::column:::
+#         
+#         [Plan and implement modern cybersecurity](#plan-and-implement-modern-cybersecurity) :::image type="icon" source="/security/media/security-hub/arrows2-gray-s.png":::
+#
+#         :::column-end:::
+#         :::column:::
+#         
+#         [Gain specialized security skills and knowledge](#gain-specialized-security-skills-and-knowledge) :::image type="icon" source="/security/media/security-hub/arrows4-green-s.png":::
+#
+#         :::column-end:::
+#         :::column:::
+#         
+#         [Prove your advanced skills with Microsoft Credentials for security](#prove-your-skills-with-microsoft-credentials-for-security) :::image type="icon" source="/security/media/security-hub/arrows3-darkblue-s.png":::
+#         
+#         :::column-end:::
+#      ---
+#      <br />
+#      <br />
+#####
+  - componentType: cards
+    title: Build foundational security skills
+    summary: Build your foundational knowledge and essential skills to better collaborate with security colleagues, or find what you need to get your cybersecurity career started. Whether you’re a new IT professional, a student, or a business leader interested in getting the most from Microsoft Security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities.
+    blocks:
+    - componentType: card
+      title: Describe the basic concepts of cybersecurity 
+      summary: Find out how you can protect yourself and your organization against cyberthreats and cyberattacks, and explore cybersecurity concepts in this Learning Path.
+      imageUrl: /security/media/security-hub/card-lock.png
       links:
-        - url: /training/career-paths/identity-and-access-admin
-          text: Identity and access administrator
-        - url: /training/career-paths/information-protection-admin
-          text: Information protection and compliance administrator
-        - url: /credentials/certifications/cybersecurity-architect-expert
-          text: Cybersecurity architect expert
-        - url: /training/career-paths/security-operations-analyst
-          text: Security operations analyst
-        - url: /training/career-paths/security-engineer
-          text: Security engineer
-
-    # Card
-    - title: Learn how organizational functions play an important role in security
-      imageSrc: "./media/hubpage/learn.png"
+        - componentType: link
+          url: /training/paths/describe-basic-concepts-of-cybersecurity/
+          text: Get started
+    - componentType: card
+      title: "Take the Microsoft Security Virtual Training Day: Security, Compliance, and Identity Fundamentals"
+      summary: Join this training to discover basic concepts, like identity and access management and compliance management. Gain foundational knowledge of privacy and of data governance, protection, and management solutions.
+      imageUrl: /security/media/security-hub/card-laptop.png 
+      url: https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals&startTime=08:00&endTime=17:00
+      links: # optional a list of links rendered at the bottom of the card
+        - componentType: link
+          url: https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals&startTime=08:00&endTime=17:00
+          text: Learn more
+    - componentType: card
+      title: "Earn the Microsoft Certified: Security, Compliance, and Identity Fundamentals Certification​"
+      summary: If you’re familiar with Azure and Microsoft 365, demonstrate your foundational knowledge of Microsoft Security, compliance, and identity concepts across these cloud-based solutions.
+      imageUrl: /security/media/security-hub/card-shield.png
+      url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification
       links:
-        - url: /azure/cloud-adoption-framework/organize/cloud-security
-          text: Cloud security functions
-        - url: https://www.youtube.com/watch?v=GlqjvlX93gY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=14
-          text: MCRA security roles
+        - componentType: link
+          url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification
+          text: Learn more
+#####
+  - componentType: grid
+    title: Plan and implement modern cybersecurity
+    summary:  Access technical documentation and learn to use Zero Trust principles to modernize your cybersecurity strategy, architecture, processes, and technology.
+    blocks:     
+      - componentType: summary-card
+        title: Zero Trust adoption framework 
+        summary: Learn about the Zero Trust security model and follow Microsoft’s adoption methodology to rapidly modernize your security posture, secure remote and hybrid work, protect sensitive data, and prevent or reduce business damage from a breach. 
+        url: /security/zero-trust/adopt/zero-trust-adoption-overview?view=o365-worldwide
+      - componentType: summary-card
+        title: Zero Trust assessment and progress tracking 
+        summary: Use pre-built trackers and assessment tools for implementing end-to-end security. Customize these for your organization. Track based on business scenarios or by pillar (identity, devices, apps, and data).    
+        url: /security/zero-trust/zero-trust-assessment-progress-tracking-resources?view=o365-worldwide
+      - componentType: summary-card
+        title: Security in the Microsoft Cloud Adoption Framework 
+        summary: Use the Secure methodology provided in the Cloud Adoption Framework to secure each phase of your organization’s adoption journey to cloud workloads in Azure.    
+        url: /azure/cloud-adoption-framework/secure/
+      - componentType: summary-card
+        title: Security guidance quick links 
+        summary: Use security guidance in the Well-Architected Framework while building new apps and workloads in Azure (or to modernize existing Azure workloads). Security is balanced with reliability, performance, costs, and other concerns.     
+        url: /azure/well-architected/security/
+      - componentType: summary-card
+        title: Introduction to Azure security 
+        summary: Learn about security services on Azure and best practices for identity, networking, data, applications, and monitoring.     
+        url: /azure/security/fundamentals/overview
+      - componentType: summary-card
+        title: Security adoption resources 
+        summary: Learn about security strategy, attack types, and Zero Trust principles through workshop decks the Microsoft Customer Success Unit refer to as a Security Adoption Framework. Explore how Microsoft security capabilities map to high-level architecture.  
+        url: /security/adoption/adoption
+      - componentType: summary-card
+        title: Work with Microsoft Cybersecurity Reference Architectures
+        summary: Explore the Microsoft Cybersecurity Reference Architectures (MCRA), and review diagrams that describe how Microsoft Security capabilities integrate with Microsoft and third-party platforms. 
+        url: https://aka.ms/MCRA
+  - componentType: grid
+    title: Gain specialized security skills and knowledge through Plans on Microsoft Learn 
+    summary: Follow our step-by-step Plans to help accelerate your skill-building journey and meet your learning goals. Our curated, expert content is easy to follow, with daily and weekly milestones, plus automated nudges to help keep you focused and motivated on expanding your capabilities and credentials.
+    blocks:
+      - componentType: summary-card
+        title: Learning for Microsoft security operations analysts 
+        summary: Elevate your security operations skills. This Plan is designed to help you implement Microsoft Defender for Endpoint and other advanced security tools.
+        url: https://aka.ms/OptimizeSecurityOps
+      - componentType: summary-card
+        title: Learning for Microsoft identity and access administrators 
+        summary: Improve your understanding of identity and access management. This Plan is designed to help you automate authentication and authorization processes while applying Zero Trust principles.
+        url: https://aka.ms/IdentityandAccessMngmt
+      - componentType: summary-card
+        title: Learning for Microsoft data security administrators 
+        summary: Help secure your organization's data. This Plan can help you effectively manage permissions, environments, and data policies.  
+        url: https://aka.ms/DataSecurityChallenges
+      - componentType: summary-card
+        title: Strengthen your organization’s security architecture and solutions 
+        summary: In this Plan, learn how security policies, Zero Trust architecture, and hybrid environment management can help you improve overall cybersecurity.   
+        url: https://aka.ms/StrengthenSecSols
 
-additionalContent:
-#  Maximum of 4 sections
-  sections:
+# Prove your skills with Microsoft Credentials for Security 
+  - componentType: hero
+    title: Prove your skills with Microsoft Credentials for Security 
+    layout: indented
+    size: small
+    # textColor: dark
+    background:
+      componentType: image
+      src: /security/media/security-hub/hero-creds.png
+    summary: Showcase your advanced cybersecurity skills with Microsoft Credentials for Security. Whether you want verifiable skill sets aligned to security job roles or specific to security projects, Microsoft Certifications and Microsoft Applied Skills are complementary credentials that can help you and your organization take on new opportunities. Explore Certifications, like Security Operations Analyst or Cybersecurity Architect, and check out Applied Skills for real-world scenarios that use Microsoft Sentinel or Microsoft Defender. 
+    links:
+      - componentType: link
+        url: /credentials/browse/?subjects=security
+        text: Explore all credentials
+# Explore other resources 
+  - componentType: grid
+    title: Explore other resources 
+    summary: Take advantage of additional resources like training events, tailored learning experiences with Training Services Partners, thought leadership articles, blog posts, and more.  
+    blocks:
+      - componentType: icon-card
+        title: Connect with the community  
+        summary: "Join the conversation in the Security, Compliance, and Identity community, with cybersecurity discussions and posts that explore key security topics."
+        url: https://techcommunity.microsoft.com/t5/security-compliance-and-identity/ct-p/MicrosoftSecurityandCompliance
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-chat.png
+      - componentType: icon-card
+        title: Find a Microsoft Training Services Partner
+        summary: "Discover Training Services Partners around the world that offer security training solutions in formats and styles to help you meet your learning goals."
+        url: /credentials/support/partners
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-briefcase.png
+      - componentType: icon-card
+        title: Check out Microsoft Security Virtual Training Days  
+        summary: "Learn to protect your data and organization with Microsoft Security solutions, including identity and access management and compliance management."
+        url: https://events.microsoft.com/mvtd?scenario=Microsoft%20Security%20Virtual%20Training%20Day
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-calendar.png
+      - componentType: icon-card
+        title: Boost your team's skills
+        summary: "Take advantage of the security training resources and opportunities for team skill-building on Microsoft Learn for Organizations."
+        url: /training/organizations
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-building.png
+      - componentType: icon-card
+        title: Understand the AI shared responsibility model 
+        summary: "When implementing AI capabilities for your organization, consider the inherent responsibility for various roles to safely use AI."
+        url: /azure/security/fundamentals/shared-responsibility-ai
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-people.png
+      - componentType: icon-card
+        title: Meet the Microsoft AI Red Team
+        summary: "Gain practical insights on how to safeguard your organization's AI with guidance and best practices from the industry-leading Microsoft AI Red Team."
+        url: /security/ai-red-team/
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-bulb.png
+      - componentType: icon-card
+        title: Follow Microsoft cybersecurity news 
+        summary: "From recent work by Microsoft to strengthen protection, to helping keep user data safe around the world. Read the latest Microsoft cybersecurity news."
+        url: https://blogs.microsoft.com/on-the-issues/category/cybersecurity/
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-news.png
+      - componentType: icon-card
+        title: Get the latest on Security Copilot 
+        summary: "Stay up to date with the most recent Security Copilot developments, along with current releases, known issues, and plans for updates. "
+        url: /copilot/security/microsoft-security-copilot
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-shield-check.png
 
-# Section 0
-    - title: Adopt a Zero Trust architecture
-      summary: Learn about the Zero Trust security model, its principles, and how to implement a Zero Trust architecture
-      items:
-        # Card
-        - title: What is Zero Trust?
-          summary: Learn about the guiding principles of Zero Trust
-          url: /security/zero-trust/zero-trust-overview
 
-        # Card
-        - title: Adoption framework
-          url: /security/zero-trust/adopt/zero-trust-adoption-overview
-          summary: Get help driving strategy and implementation across your organization
 
-        # Card
-        - title: Small business guidance
-          url: /security/zero-trust/guidance-smb-partner
-          summary: Find resources for customers and partners working with Microsoft 365 for business
-
-        #Card
-        - title: Deployment plan with Microsoft 365
-          url: /microsoft-365/security/microsoft-365-zero-trust?bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Fbreadcrumb%2Ftoc.json%3Fview%3Do365-worldwide&toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fsecurity%2Fzero-trust%2Ftoc.json%3Fview%3Do365-worldwide&view=o365-worldwide
-          summary: Follow a deployment plan for building Zero Trust security with Microsoft 365
-
-        # Card
-        - title: Deployment plan with Microsoft Azure and infrastructure
-          url: /security/zero-trust/azure-infrastructure-overview
-          summary: Apply the principles of Zero Trust to apps and infrastructure in Azure and other cloud providers
-
-        # Card
-        - title: Securing DevOps environments for Zero Trust
-          url: /security/zero-trust/develop/secure-devops-environments-zero-trust
-          summary: Best practices for securing your DevOps environment
-
-#  Section 1
-    - title: Modernize Security Operations (SecOps/SOC)
-      summary: Defend against threats by rapidly detecting, responding, and recovering from attacks
-      items:
-        # Card
-        - title: Fundamentals
-          links:
-            - text: Microsoft Defender for Cloud
-              url: /azure/defender-for-cloud/defender-for-cloud-introduction
-            - text: Zero Trust and Microsoft 365
-              url: /microsoft-365/security/microsoft-365-zero-trust?view=o365-worldwide
-            - text: Azure threat protection
-              url: /azure/security/fundamentals/threat-detection
-        # Card
-        - title: Strategy and planning
-          links:
-            - text: Modernize in the cloud
-              url: /azure/cloud-adoption-framework/modernize/
-            - text: Define a security strategy
-              url: /azure/cloud-adoption-framework/strategy/define-security-strategy
-            - text: Security operations functions
-              url: /azure/cloud-adoption-framework/organize/cloud-security-operations-center
-        # Card
-        - title: Architecture
-          links:
-            - text: Architecture styles
-              url: /azure/architecture/guide/architecture-styles/
-            - text: Security operations (video)
-              url: https://www.youtube.com/watch?v=6g-C_u8qg5Q&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=17
-            - text: SecOps integration (video)
-              url: https://www.youtube.com/watch?v=91gqkLnmiSc&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=11
-
-        # Card
-        - title: Implementation
-          links:
-            - text: Implement XDR and SIEM tools
-              url: /security/operations/siem-xdr-overview
-            - text: Turn on Microsoft Defender XDR
-              url: /microsoft-365/security/defender/m365d-enable
-            - text: Design your Microsoft Sentinel workspace
-              url: /azure/sentinel/design-your-workspace-architecture
-        # Card
-        - title: Operation
-          links:
-            - text: Integrate Microsoft Defender XDR into operations
-              url: /azure/architecture/guide/architecture-styles/
-            - text: Protect against ransomware
-              url: /security/ransomware/protect-against-ransomware
-            - text: Incident response
-              url: /security/operations/incident-response-overview
-        # Card
-        - title: Continued learning
-          links:
-            - text: Defend against threats
-              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/w7m3hn7mjwwmwk?wt.mc_id=wwlsecurityhub_threat_content_scimktg_csasci
-
-#  Section 2
-    - title: Secure access and identities
-      summary: Configure and manage authentication and authorization of identities for users, devices, resources, and applications
-      items:
-        # Card
-        - title: Fundamentals
-          links:
-            - text: Identity protection
-              url: /azure/active-directory/identity-protection/overview-identity-protection
-            - text: Secure your organization's identities
-              url: /azure/active-directory/fundamentals/concept-secure-remote-workers
-            - text: Identity governance
-              url: /azure/active-directory/governance/identity-governance-overview
-        # Card
-        - title: Strategy and planning
-          links:
-            - text: Microsoft Entra ID and hybrid identity
-              url: /azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-active-directory-hybrid-identity
-            - text: Develop a privileged access strategy
-              url: /security/privileged-access-workstations/privileged-access-strategy
-            - text: Azure identity and access for landing zones
-              url: /azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access-landing-zones
-
-        # Card
-        - title: Architecture
-          links:
-            - text: Identity architecture design
-              url: /azure/architecture/identity/identity-start-here
-            - text: Microsoft Entra architecture
-              url: /azure/active-directory/fundamentals/active-directory-architecture
-            - text: Zero Trust user access (video)
-              url: https://www.youtube.com/watch?v=4alqTPMtSzU&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=16
-            - text: Beyond VPN (video)
-              url: https://www.youtube.com/watch?v=HqsqTttYJVY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=8
-
-        # Card
-        - title: Implementation
-          links:
-            - text: Deploy identity protection
-              url: /azure/active-directory/identity-protection/how-to-deploy-identity-protection
-            - text: Guidance for Microsoft Entra ID P1 or P2 customers
-              url: /azure/active-directory/fundamentals/concept-secure-remote-workers#guidance-for-azure-ad-premium-plan-2-customers
-            - text: Privilege access deployment
-              url: /security/privileged-access-workstations/privileged-access-deployment
-        # Card
-        - title: Operation
-          links:
-            - text: How to investigate risk
-              url: /azure/active-directory/identity-protection/howto-identity-protection-investigate-risk
-        # Card
-        - title: Continued learning
-          links:
-            - text: Secure access and improve efficiency with Microsoft Entra
-              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/2xqpa0zyjdz848
-
-#  Section 3
-    - title: Protect and govern data
-      summary: Protect data and safeguard sensitive information across platforms, applications, and clouds
-      items:
-        # Card
-        - title: What is Microsoft Purview?
-          links:
-            - text: Learn about Microsoft Purview
-              url: /purview/purview
-            - text: Deploy risk and compliance solutions
-              url: /microsoft-365/compliance/purview-compliance
-            - text: Govern your data estate
-              url: /azure/purview/overview
-
-        # Card
-        - title: Discover and manage data assets
-          links:
-            - text: Elastic data map in Microsoft Purview
-              url: /azure/purview/concept-elastic-data-map
-            - text: Understand business glossary features
-              url: /azure/purview/concept-business-glossary
-            - text: Insights into your data estate
-              url: /azure/purview/concept-insights
-
-        # Card
-        - title: Protect data where it lives
-          links:
-            - text: Deploy information protection
-              url: /microsoft-365/compliance/information-protection-solution
-            - text: Prevent data loss
-              url: /microsoft-365/compliance/dlp-learn-about-dlp
-
-        # Card
-        - title: Manage the data lifecycle
-          links:
-            - text: Deploy data lifecycle management
-              url: /microsoft-365/compliance/data-governance-solution
-            - text: Learn about retention policies and labels
-              url: /microsoft-365/compliance/retention
-            - text: Manage records and information
-              url: /microsoft-365/compliance/records-management
-
-        # Card
-        - title: Identify and manage insider risk
-          links:
-            - text: Protect against insider risks
-              url: /microsoft-365/compliance/insider-risk-solution-overview
-            - text: Protect against communications risks
-              url: /microsoft-365/compliance/communication-compliance
-
-        # Card
-        - title: Improve your compliance posture
-          links:
-            - text: What is Compliance Manager?
-              url: /microsoft-365/compliance/compliance-manager
-            - text: Audit user and admin operations
-              url: /microsoft-365/compliance/audit-solutions-overview
-            - text: Solutions for eDiscovery
-              url: /microsoft-365/compliance/ediscovery
-
-        # Card
-        - title: Manage privacy risk
-          links:
-            - text: Learn about Microsoft Priva
-              url: /privacy/priva/priva-overview
-            - text: Get started wtih Priva
-              url: /privacy/priva/priva-setup
-            - text: Manage data privacy and data protection
-              url: /microsoft-365/solutions/data-privacy-protection
-
-        # Card
-        - title: Continued learning
-          links:
-            - text: Data security for today’s world
-              url: https://learn.microsoft.com/users/morganpadrnosaudienzllc-2094/collections/d1gncgmwkr277k

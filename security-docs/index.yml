@@ -32,7 +32,7 @@ sections:
         componentType: testimonial-card
         name: "AI security fundamentals"
         role: "Learning Path"
-        feedback: Explore AI security concepts, security controls that apply to AI systems, and testing procedures to help improve the security posture of your AI environments.   
+        feedback: Understand the basic concepts of AI security, including security controls that apply to AI systems, and testing procedures to help improve the security posture of your AI environments.   
         link:
           componentType: link
           url: /training/paths/ai-security-fundamentals/
@@ -104,21 +104,19 @@ sections:
       links:
         - componentType: link
           url: /training/paths/describe-basic-concepts-of-cybersecurity/
-          text: Get started
+          text: Learn more
     - componentType: card
       title: "Take the Microsoft Security Virtual Training Day: Security, Compliance, and Identity Fundamentals"
       summary: Join this training to discover basic concepts, like identity and access management and compliance management. Gain foundational knowledge of privacy and of data governance, protection, and management solutions.
       imageUrl: /security/media/security-hub/card-laptop.png 
-      url: https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals&startTime=08:00&endTime=17:00
       links: # optional a list of links rendered at the bottom of the card
         - componentType: link
           url: https://events.microsoft.com/en-us/mvtd-security?clientTimeZone=1&scenario=Microsoft%20Security%20Virtual%20Training%20Day:%20Security,%20Compliance,%20and%20Identity%20Fundamentals&startTime=08:00&endTime=17:00
           text: Learn more
     - componentType: card
       title: "Earn the Microsoft Certified: Security, Compliance, and Identity Fundamentals Certification​"
-      summary: If you’re familiar with Azure and Microsoft 365, demonstrate your foundational knowledge of Microsoft Security, compliance, and identity concepts across these cloud-based solutions.
+      summary: If you're familiar with Azure and Microsoft 365, demonstrate your foundational knowledge of Microsoft Security, compliance, and identity concepts across these cloud-based solutions.
       imageUrl: /security/media/security-hub/card-shield.png
-      url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification
       links:
         - componentType: link
           url: /credentials/certifications/security-compliance-and-identity-fundamentals/?practice-assessment-type=certification
@@ -193,7 +191,7 @@ sections:
         text: Explore all credentials
 # Explore other resources 
   - componentType: grid
-    title: Explore other resources 
+    title: Explore documentation and other resources 
     summary: Take advantage of additional resources like training events, tailored learning experiences with Training Services Partners, thought leadership articles, blog posts, and more.  
     blocks:
       - componentType: icon-card
@@ -240,7 +238,7 @@ sections:
           src: /security/media/security-hub/icon-bulb.png
       - componentType: icon-card
         title: Follow Microsoft cybersecurity news 
-        summary: "From recent work by Microsoft to strengthen protection, to helping keep user data safe around the world. Read the latest Microsoft cybersecurity news."
+        summary: "Read the latest Microsoft cybersecurity news, from recent work by Microsoft to strengthen protection, to helping keep user data safe around the world."
         url: https://blogs.microsoft.com/on-the-issues/category/cybersecurity/
         icon:
           componentType: image

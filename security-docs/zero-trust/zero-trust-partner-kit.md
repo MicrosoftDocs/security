@@ -25,7 +25,7 @@ In this download:
 
 Download 
 
-Learn more about these trackers,see 
+To learn more about these trackers,see 
 [Progress tracking resources for the adoption framework business scenarios](zero-trust-assessment-progress-tracking-resources.md#progress-tracking-resources-for-the-adoption-framework-business-scenarios)
 
 

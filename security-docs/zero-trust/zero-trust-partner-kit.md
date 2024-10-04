@@ -16,7 +16,7 @@ Introduction text
 
 ## Co-brandable progress tracking resources 
 
-Text and links to downloads
+One download for the set of co-brandable trackers.
 
 
 

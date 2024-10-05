@@ -16,14 +16,16 @@ Introduction text
 
 ## Co-brandabed progress tracking resources 
 
-These Zero Trust tracking resources are co-branded with the Contoso logo. Swap in your own logo. Customize the obectives and tasks for your customers. If you're ambitious, these trackers also include instructions for updating the colors and fonts to your own branding standards. 
+These Zero Trust tracking resources are co-branded with the Contoso logo. Swap in your own logo. Customize the obectives and tasks. If you're ambitious, these trackers also include instructions for updating the colors and fonts to your own branding standards. 
 
 In this download:
 - At-a-glance blueprint for Zero Trust (Visio, can be saved as PDF)
 - Business leader tracker for Zero Trust (PowerPoint)
 - Implementer tracker for Zero Trust (Excel)
 
-Download 
+> [!div class="button"]
+> [Download co-branded Zero Trust trackers](https:["//download.microsoft.com/download/d/7/6/d76f4b4d-6315-4018-a2bf-984b3067c0fe/microsoft-co-branded-zero-trust-trackers-contoso.zip)
+
 
 To learn more about these trackers,see 
 [Progress tracking resources for the adoption framework business scenarios](zero-trust-assessment-progress-tracking-resources.md#progress-tracking-resources-for-the-adoption-framework-business-scenarios)

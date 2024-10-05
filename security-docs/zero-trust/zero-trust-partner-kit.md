@@ -28,7 +28,7 @@ In this download:
 
 
 To learn more about these trackers,see 
-[Progress tracking resources for the adoption framework business scenarios](zero-trust-assessment-progress-tracking-resources.md#progress-tracking-resources-for-the-adoption-framework-business-scenarios)
+[Progress tracking resources for the adoption framework business scenarios](zero-trust-assessment-progress-tracking-resources.md#progress-tracking-resources-for-the-adoption-framework-business-scenarios).
 
 :::image type="content" source="media/zero-trust-phase-grid-tracker-contoso-thumb.png" alt-text="Thumbnail image for the co-branded Zero Trust blueprint":::
 

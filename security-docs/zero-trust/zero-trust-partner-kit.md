@@ -14,7 +14,7 @@ ms.collection:
 
 Introduction text
 
-## Co-brandabed progress tracking resources 
+## Co-branded progress tracking resources 
 
 These Zero Trust tracking resources are co-branded with the Contoso logo. Swap in your own logo. Customize the obectives and tasks. If you're ambitious, these trackers also include instructions for updating the colors and fonts to your own branding standards. 
 

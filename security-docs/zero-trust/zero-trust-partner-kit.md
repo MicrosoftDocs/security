@@ -47,6 +47,23 @@ Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://
 
 ## Co-branded architecture illustrations
 
+### Visio templates, Visio stencils, and Microsoft icon sets
+
+To help you work with reference architectures in the Zero  Trust guidance center, you can download co-branded Visio template files along with Microsoft icon sets. 
+
+These 11x17 Visio template files are co-branded and leave plenty of room for your own work. Replace the Contoso logo with your own logo. Try out the template file that's themed with Microsoft Security colors. Or, work with the unthemed template file if you're not getting the results you want.
+
+> [!div class="button"]
+> [Download](https://download.microsoft.com/download/9/e/b/9eb3ec90-6f38-4ebe-aecd-4a746642905f/microsoft-poster-templates.zip)
+
+To download additional Visio templates and, more importantly, Visio stencil files that include Microsoft icons, see [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates?view=o365-worldwide). This Visio stencil set includes many conceptual icons, including many security symbols. 
+
+To download Azure icons, see [Azure architecture icons](/azure/architecture/icons/).
+
+With both of these icon sets, you can download just the SVG files (scalable vector graphics). You can drag and drop these icon files into any tool, including PowerPoint.
+
+### Zero Trust architecture illustrations
+
 Description -- this will be the longest list of downloads
 
 ## Additional Zero Trust resources

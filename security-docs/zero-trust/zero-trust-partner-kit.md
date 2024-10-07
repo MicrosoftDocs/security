@@ -45,7 +45,7 @@ Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://
 
 
 
-## Co-brandable architecture illustrations
+## Co-branded architecture illustrations
 
 Description -- this will be the longest list of downloads
 

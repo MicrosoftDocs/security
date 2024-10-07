@@ -40,7 +40,7 @@ Descriptive text for how partners use this
 
 Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztassess](https://aka.ms/ztassess) 
 
-:::image type="content" source="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png":::
+:::image type="content" source="./media/zero-trust-assessment-strategy-workshop.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/zero-trust-assessment-strategy-workshop.png":::
 
 
 

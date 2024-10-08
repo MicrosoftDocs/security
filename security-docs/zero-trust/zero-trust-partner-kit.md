@@ -24,7 +24,7 @@ In this download:
 - Implementer tracker for Zero Trust (Excel)
 
 > [!div class="button"]
-> [Download Zero Trust trackers](https://download.microsoft.com/download/d/7/6/d76f4b4d-6315-4018-a2bf-984b3067c0fe/microsoft-co-branded-zero-trust-trackers-contoso.zip)
+> [Download co-branded Zero Trust trackers](https://download.microsoft.com/download/d/7/6/d76f4b4d-6315-4018-a2bf-984b3067c0fe/microsoft-co-branded-zero-trust-trackers-contoso.zip)
 
 
 To learn more about these trackers,see 
@@ -60,7 +60,7 @@ To download additional Visio templates and, more importantly, Visio stencil file
 
 To download Azure icons, see [Azure architecture icons](/azure/architecture/icons/).
 
-With both of these icon sets, you can download just the SVG files (scalable vector graphics). You can drag and drop these icon files into any tool, including PowerPoint.
+With both of these icon sets, you can download just the SVG files (scalable vector graphic). You can drag and drop these icon files into any tool, including Visio and PowerPoint.
 
 ### Zero Trust architecture illustrations
 These illustrations are replicas of the reference illustrations across the Zero Trust guidance center. Download and customize these for your own organization or customer.
@@ -68,7 +68,7 @@ These illustrations are replicas of the reference illustrations across the Zero 
 
 |Item  |Description |
 |---------|---------|
-|Zero Trust identity and device access policies     |         |
+|Zero Trust identity and device access policies <br> Visio    |         |
 |Row2     |         |
 |Row3     |         |
 |Row4     |         |
@@ -78,7 +78,6 @@ These illustrations are replicas of the reference illustrations across the Zero 
 |Row8     |         |
 
 
-Description -- this will be the longest list of downloads
 
 ## Additional Zero Trust resources
 

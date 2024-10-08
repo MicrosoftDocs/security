@@ -32,13 +32,11 @@ To learn more about these trackers,see
 
 :::image type="content" source="media/zero-trust-phase-grid-tracker-contoso-thumb.png" alt-text="Thumbnail image for the co-branded Zero Trust blueprint":::
 
-## Zero Trust Assessment strategy workshop
+## Microsoft Zero Trust Workshop and Assessment
 
+This workshop is a comprehensive technical guide to help customers and partners adopt a Zero Trust strategy and deploy security solutions end-to-end to secure their organizations.
 
-
-Descriptive text for how partners use this 
-
-Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztassess](https://aka.ms/ztassess) 
+Learn how to run your own workshop and download the Excel assessment tool at [https://aka.ms/ztassess](https://aka.ms/ztassess) 
 
 :::image type="content" source="./media/zero-trust-assessment-strategy-workshop.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/zero-trust-assessment-strategy-workshop.png":::
 

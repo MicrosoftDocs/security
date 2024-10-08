@@ -32,7 +32,7 @@ To learn more about these trackers,see
 
 :::image type="content" source="media/zero-trust-phase-grid-tracker-contoso-thumb.png" alt-text="Thumbnail image for the co-branded Zero Trust blueprint":::
 
-## Microsoft Zero Trust Workshop and Assessment
+## Microsoft Zero Trust workshop and assessment
 
 This workshop is a comprehensive technical guide to help customers and partners adopt a Zero Trust strategy and deploy security solutions end-to-end to secure their organizations.
 

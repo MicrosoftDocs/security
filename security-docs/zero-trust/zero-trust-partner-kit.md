@@ -66,7 +66,7 @@ These illustrations are replicas of the reference illustrations across the Zero 
 
 |Item  |Description |
 |---------|---------|
-|:::image type="content" source="media/thumb-zero-trust-architecture-contoso.png" alt-text="Thumbnail picture" link="https://download.microsoft.com/download/a/6/9/a69822ae-c58d-4ebf-8da2-53c8b9b966d2/zero-trust-architecture-contoso.vsdx":::<br> [Download Visio](https://download.microsoft.com/download/a/6/9/a69822ae-c58d-4ebf-8da2-53c8b9b966d2/zero-trust-architecture-contoso.vsdx)| |
+|:::image type="content" source="media/thumb-zero-trust-architecture-contoso.png" alt-text="Thumbnail picture" link="https://download.microsoft.com/download/a/6/9/a69822ae-c58d-4ebf-8da2-53c8b9b966d2/zero-trust-architecture-contoso.vsdx"::: <br> [Download Visio](https://download.microsoft.com/download/a/6/9/a69822ae-c58d-4ebf-8da2-53c8b9b966d2/zero-trust-architecture-contoso.vsdx)| |
 |:::image type="content" source="media/thumb-zero-trust-id-and-device-access-policies-contoso.png" alt-text="thumbnail picture"::: <br>[Download Visio](https://download.microsoft.com/download/8/b/2/8b23ab16-a3de-4b4e-b8a0-95b393cfbcee/zero-trust-id-and-device-access-policies-contoso.vsdx)    |  **Zero Trust identity and device access policies** <br> This policy set is recommended for Microsoft 365, Azure-based solutions, and AI apps and companions. <br> Use this illustration together with [this set of articles](zero-trust-identity-device-access-policies-overview.md).     |
 |Row2     |         |
 |Row3     |         |
@@ -76,7 +76,7 @@ These illustrations are replicas of the reference illustrations across the Zero 
 |Row7     |         |
 |Row8     |         |
 
-
+<!---
 
 ## Additional Zero Trust resources
 
@@ -113,3 +113,5 @@ Follow this table for the best documentation sets for your role in your organiza
 | Member of an IT or security team for Azure services | [Zero Trust for Azure services](azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. |
 | Partner developer or member of an IT or security team | [Partner integration with Zero Trust](integrate/overview.md) for design guidance for technology areas and specializations | Apply Zero Trust protections to partner Microsoft cloud solutions. |
 | Application developer | [Develop using Zero Trust principles](develop/overview.md) for application development design guidance and best practices | Apply Zero Trust protections to your application. |
+
+--->

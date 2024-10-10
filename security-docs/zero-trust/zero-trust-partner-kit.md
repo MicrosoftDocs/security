@@ -36,7 +36,7 @@ To learn more about these trackers,see
 
 This workshop is a comprehensive technical guide to help customers and partners adopt a Zero Trust strategy and deploy security solutions end-to-end to secure their organizations.
 
-Learn how to run your own workshop and download the Excel assessment tool at [https://aka.ms/ztassess](https://aka.ms/ztassess) 
+Learn how to run your own workshop and download the Excel assessment tool at [https://aka.ms/ztworkshop](https://aka.ms/ztworkshop) 
 
 :::image type="content" source="./media/zero-trust-assessment-strategy-workshop.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/zero-trust-assessment-strategy-workshop.png":::
 

@@ -54,11 +54,10 @@ These 11x17 Visio template files are co-branded and leave plenty of room for you
 > [!div class="button"]
 > [Download co-branded Visio templates](https://download.microsoft.com/download/9/e/b/9eb3ec90-6f38-4ebe-aecd-4a746642905f/microsoft-poster-templates.zip)
 
-**Visio stencils and icons**
-To download additional Visio templates and, more importantly, Visio stencil files that include Microsoft icons, see [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates?view=o365-worldwide). This Visio stencil set includes many conceptual icons, including many security symbols. 
+Additional downloadable resources: 
+- **Visio stencils and icons** To download additional Visio templates and, more importantly, Visio stencil files that include Microsoft icons, see [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates?view=o365-worldwide). This Visio stencil set includes many conceptual icons, including many security symbols. 
 
-**Azure icons**
-To download Azure icons, see [Azure architecture icons](/azure/architecture/icons/).
+- **Azure icons** To download Azure icons, see [Azure architecture icons](/azure/architecture/icons/).
 
 With both of these icon sets, you can download just the SVG files (scalable vector graphic). You can drag and drop these icon files into any tool, including Visio and PowerPoint.
 

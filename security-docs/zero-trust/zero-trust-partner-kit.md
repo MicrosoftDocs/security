@@ -66,7 +66,7 @@ These illustrations are replicas of the reference illustrations across the Zero 
 
 |Item  |Description |
 |---------|---------|
-|Zero Trust identity and device access policies <br> Visio    |         |
+|Zero Trust identity and device access policies <br> :::image type="content" source="media/thumb-zero-trust-id-and-device-access-policies-contoso.png" alt-text="thumbnail picture"::: Download Visio    |  **Zero Trust identity and device access policies** <br> This policy set is recommended for Microsoft 365, Azure-based solutions, and AI apps and companions. <br> Use this illustration together with [this set of articles](zero-trust-identity-device-access-policies-overview.md).     |
 |Row2     |         |
 |Row3     |         |
 |Row4     |         |

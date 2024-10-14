@@ -51,7 +51,11 @@ Human-operated ransomware attacks involve the following stages:
 ## Prevalent threat actors associated with ransomware campaigns
 
 - [LockBit](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/part-1-lockbit-2-0-ransomware-bugs-and-database-recovery/ba-p/3254354) – Financially motivated ransomware-as-a-service (RaaS) campaign and most prolific ransomware threat actor in the 2023-24 time period
-- [Black Basta](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Basta&msockid=3fd141c935036ef610d9506e34696fe) – Gains access through spear-phishing emails and uses PowerShell to launch an encryption payload 
+- [Black Basta](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Basta&msockid=3fd141c935036ef610d9506e34696fe) – Gains access through spear-phishing emails and uses PowerShell to launch an encryption payload
+- 
+## How Microsoft can help once an attack has begun
+
+To help mitigate in-progress ransomware attacks, Microsoft Incident Response can leverage and deploy [Microsoft Defender for Identity](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-for-identity) — a cloud-based security solution that helps detect and respond to identity-related threats. Bringing identity monitoring into incident response early supports the affected organization's security operations team to regain control. Microsoft Incident response uses Defender for Identity to help identify the incident scope and impacted accounts, protect critical infrastructure, and evict the threat actor. The response team then brings in [Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint) to trace the threat actor’s movements and disrupt their attempts to use compromised accounts to reenter the environment. After containing the incident andregaining and full administrative control over the environment, Microsoft Incident Response collaborates with the customer to help prevent future cyberattacks. 
 
 ### Automated ransomware attacks
 

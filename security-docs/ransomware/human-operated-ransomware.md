@@ -84,7 +84,19 @@ First, prevent phishing and malware delivery with [Microsoft Defender for Office
 
 For a comprehensive view of ransomware and extortion and how to protect your organization, use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation. 
 
-Here's a summary of the guidance:
+## Follow Microsoft Incident Response's approach to ransomware prevention and mitigation.
+
+1. Assess the situation	by analyzing the suspicious activity that alerted your team to the attack. 
+
+2. What time/date did you first learn of the incident? What logs are available and is there any indication that the actor is currently accessing systems?
+   
+3. Identify the affected line-of-business (LOB) applications, and get any impacted systems back online. Does the affected application require an identity that might have been compromised?
+
+4. Are backups of the application, configuration, and data available and regularly verified using a restore exercise?
+
+5. Determine the compromise recovery (CR) process to remove the threat actor from the environment.
+
+## Here's a summary of Microsoft's Human-Operated Ransomware Mitigation Project Plan guidance:
 
 [The summary of the guidance in the Human-Operated Ransomware Mitigation Project Plan](media/human-operated-ransomware/stakes-weaknesses-plan.png)
 

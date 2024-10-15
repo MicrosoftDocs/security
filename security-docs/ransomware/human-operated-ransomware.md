@@ -125,7 +125,7 @@ Download the [Protect your organization from ransomware poster](https://download
 Key information from Microsoft:
 
 - [The latest ransomware trends from Microsoft](https://www.microsoft.com/security/blog/threat-intelligence/ransomware/), Microsoft latest ransomware blog
-- [2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023) 
+- [2024 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/intelligence-reports/microsoft-digital-defense-report-2024) 
 Microsoft 365:
 
 - [Deploy ransomware protection for your Microsoft 365 tenant](/microsoft-365/solutions/ransomware-protection-microsoft-365)

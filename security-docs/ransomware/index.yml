@@ -28,6 +28,8 @@ landingContent:
         links:
         - text: What is ransomware?
           url:  https://learn.microsoft.com/security/ransomware/human-operated-ransomware
+        - text: Get ransomware incident response help from Microsoft
+          url:  https://learn.microsoft.com/security/ransomware/human-operated-ransomware#how-microsoft-can-help-once-an-attack-has-begun
         - text: Latest ransomware blogs
           url:  https://www.microsoft.com/security/blog/threat-intelligence/ransomware
         - text: Microsoft Defender XDR for in-depth ransomware investigation

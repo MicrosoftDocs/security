@@ -3,7 +3,6 @@ title: Provide application identity credentials when there's no user
 description: In this article, we explain why the best Zero Trust client credentials practice for services (nonuser applications) on Azure is Managed Identities for Azure Resources.
 author: janicericketts
 ms.author: jricketts
-ms.service: identity
 ms.topic: conceptual
 ms.date: 05/24/2024
 ms.custom: template-concept

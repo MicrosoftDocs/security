@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: article
 ms.subservice:: m365d
 ms.custom: cxdef-zt-ransomware 
-ms.date: 05/03/2024
+ms.date: 10/16/2024
 ---
 
 # Microsoft Incident Response team ransomware approach and best practices

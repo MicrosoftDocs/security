@@ -12,7 +12,7 @@ ms.collection:
 
 # Zero Trust partner kit resources
 
-Helping our partners and customers design, architect, and deploy security solutions is important. These top-requested Zero Trust resources are available for you to use with your own organization or with your customers. They are co-branded with the Contoso logo with the intention that you replace this logo with your own logo.
+Helping our partners and customers design, architect, and deploy security solutions is important. These top-requested Zero Trust resources are available for you to use with your own organization and customers. They are ready for you to add your own branding.
 
 ## Co-branded progress tracking resources 
 

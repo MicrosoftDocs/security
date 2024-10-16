@@ -1,7 +1,6 @@
 ---
 title: Embed Zero Trust security into your developer workflow
 description: Learn how to develop using Zero Trust principles so that you can innovate quickly and securely.
-ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual

@@ -3,7 +3,6 @@ title: Register applications
 description: This article introduces developers to the application registration process and its requirements. It helps to ensure that apps satisfy Zero Trust principles of use least privileged access and assume breach.
 author: janicericketts
 ms.author: jricketts
-ms.service: identity
 ms.topic: conceptual
 ms.date: 05/24/2024
 ms.custom: template-concept

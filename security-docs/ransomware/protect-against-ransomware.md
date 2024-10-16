@@ -2,7 +2,7 @@
 title: "Get started quickly configuring ransomware prevention so you can stop ransomware cybercriminals from targeting your organization."
 ms.author: dansimp
 author: dansimp
-ms.date: 03/25/2024
+ms.date: 10/13/2024
 f1.keywords:
 - NOCSH
 manager: dansimp

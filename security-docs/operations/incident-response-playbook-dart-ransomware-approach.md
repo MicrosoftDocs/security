@@ -222,7 +222,7 @@ Using the [PAM](/security/compass/privileged-access-access-model) (formerly know
 
   - App Access: Access rights for applications.
 
-- Each one of these planes have a *separate administrative workstation for each plane* and only have access to systems in that plane. Other accounts from other planes are denied access to workstations and servers in the other planes through user rights assignments set to those machines.
+- Each one of these planes has a *separate administrative workstation for each plane* and only has access to systems in that plane. Other accounts from other planes are denied access to workstations and servers in the other planes through user rights assignments set to those machines.
 
 The net result of the PAM is that:
 
@@ -234,7 +234,7 @@ The net result of the PAM is that:
 
 By default, Microsoft Windows and AD DS have no centralized management of local administrative accounts on workstations and member servers. This can result in a common password that is given for all these local accounts, or at the very least in groups of machines. This situation enables would-be attackers to compromise one local administrator account, and then use that account to gain access to other workstations or servers in the organization.
 
-Microsoft's [LAPS](/defender-for-identity/cas-isp-laps) mitigates this by using a Group Policy client-side extension that changes the local administrative password at regular intervals on workstations and servers according to the policy set. Each of these passwords are different and stored as an attribute in the AD DS computer object. This attribute can be retrieved from a simple client application, depending on the permissions assigned to that attribute.
+Microsoft's [LAPS](/defender-for-identity/cas-isp-laps) mitigates this by using a Group Policy client-side extension that changes the local administrative password at regular intervals on workstations and servers according to the policy set. Each of these passwords is different and stored as an attribute in the AD DS computer object. This attribute can be retrieved from a simple client application, depending on the permissions assigned to that attribute.
 
 LAPS requires the AD DS schema to be extended to allow for the additional attribute, the LAPS Group Policy templates to be installed, and a small client-side extension to be installed on every workstation and member server to provide the client-side functionality.
 

@@ -12,7 +12,7 @@ ms.collection:
 
 # Zero Trust partner kit resources
 
-Introduction text
+These top-requested resources are available for you to use with your own organization or with your customers. They are co-branded with the Contoso logo with the intention that you replace this logo with your own. 
 
 ## Co-branded progress tracking resources 
 

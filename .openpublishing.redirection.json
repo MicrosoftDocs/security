@@ -559,6 +559,11 @@
         "redirect_document_id": false
       },
       {
+        "source_path": "security-docs/operations/token-theft-playbook.md",
+        "redirect_url": "/security",
+        "redirect_document_id": false
+      },
+      {
         "source_path": "security-docs/operations/security-operations-videos-and-decks.md",
         "redirect_url": "/security/operations/overview",
         "redirect_document_id": false

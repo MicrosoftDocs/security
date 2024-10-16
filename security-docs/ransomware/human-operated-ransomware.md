@@ -10,7 +10,7 @@ ms.collection:
 ms.custom: cxdef-zt-ransomware
 ms.topic: article
 description: Learn what ransomware is, how it works, and how to protect against it with links to the Microsoft products that help prevent ransomware.
-ms.date: 02/22/2024
+ms.date: 10/16/2024
 ---
 
 # What is ransomware?

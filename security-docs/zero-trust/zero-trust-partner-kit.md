@@ -12,7 +12,7 @@ ms.collection:
 
 # Zero Trust partner kit resources
 
-These top-requested resources are available for you to use with your own organization or with your customers. They are co-branded with the Contoso logo with the intention that you replace this logo with your own. 
+Helping our partners and customers design, architect, and deploy security solutions is important. These top-requested Zero Trust resources are available for you to use with your own organization or with your customers. They are co-branded with the Contoso logo with the intention that you replace this logo with your own logo.
 
 ## Co-branded progress tracking resources 
 
@@ -45,9 +45,11 @@ Learn how to run your own workshop and download the Excel assessment tool at [ht
 
 ## Co-branded architecture illustrations
 
+Architecture diagrams like those included in our Zero Trust guidance help communicate how to apply the princples of Zero Trust to specific environments, from Microsoft 365 to specialized enviroments built in Azure or even Amazon Web Services (AWS). These illustrations help provide deeper technical guidance and recommendations. They provide a supported starting-point that you can adjust for your own environments. They help communciate design decisions and the relationships between components and security capabilities in an environment.
+
 ### Visio templates, Visio stencils, and Microsoft icon sets
 
-To help you work with reference architectures in the Zero  Trust guidance center, you can download co-branded Visio template files along with Microsoft icon sets. 
+To help you work with reference architectures in the Zero Trust guidance center, you can download co-branded Visio template files along with Microsoft icon sets. 
 
 These 11x17 Visio template files are co-branded and leave plenty of room for your own work. Replace the Contoso logo with your own logo. Try out the template file that's themed with Microsoft Security colors. Or, work with the unthemed template file if you're not getting the results you want.
 
@@ -62,7 +64,7 @@ Additional downloadable resources:
 With both of these icon sets, you can download just the SVG files (scalable vector graphic). You can drag and drop these icon files into any tool, including Visio and PowerPoint.
 
 ### Zero Trust architecture illustrations
-These illustrations are replicas of the reference illustrations across the Zero Trust guidance center. Download and customize these for your own organization or customer.
+These illustrations are replicas of the reference illustrations across the Zero Trust guidance center. Download and customize these for your own organization and customers.
 
 |Item  |Description |
 |---------|---------|

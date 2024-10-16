@@ -3,7 +3,6 @@ title: API Protection
 description: Learn best practices for protecting your API through registration, defining permissions and consent, and enforcing access to achieve your Zero Trust goals.
 author: janicericketts
 ms.author: jricketts
-ms.service: identity
 ms.topic: conceptual
 ms.date: 05/24/2024
 ms.custom: template-concept

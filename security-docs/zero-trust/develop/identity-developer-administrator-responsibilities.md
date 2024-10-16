@@ -3,7 +3,6 @@ title: Developer and administrator responsibilities
 description: As a developer creating applications in the Microsoft identity platform, knowing what your IT Pros need from you and what you need from them helps you to streamline your Zero Trust development workflow.
 author: janicericketts
 ms.author: jricketts
-ms.service: identity
 ms.topic: conceptual
 ms.date: 05/24/2024
 ms.custom: template-concept

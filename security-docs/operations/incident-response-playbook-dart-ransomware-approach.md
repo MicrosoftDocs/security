@@ -48,37 +48,18 @@ Microsoft Incident Response relies heavily on data for all investigations and us
 
 Defender for Endpoint is Microsoft's enterprise endpoint security platform designed to help enterprise network security analysts prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint can detect attacks using advanced behavioral analytics and machine learning. Your analysts can use Defender for Endpoint for attacker behavioral analytics.
 
-Here's an example of an alert in Microsoft Defender for Endpoint for a pass-the-ticket attack.
-
-:::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/defender-endpoint-example-alert.png" alt-text="Example of an alert in Microsoft Defender for Endpoint for a pass-the-ticket attack" lightbox="./media/incident-response-playbook-dart-ransomware-approach/defender-endpoint-example-alert.png":::
-
 Your analysts can also perform advanced hunting queries to pivot off indicators of compromise (IOCs) or search for known behavior if they identify a threat actor group.
 
-Here's an example of how advanced hunting queries can be used to locate known attacker behavior.
-
-:::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/example-advanced-hunting-query.png" alt-text="An example of an advanced hunting query." lightbox="./media/incident-response-playbook-dart-ransomware-approach/example-advanced-hunting-query.png":::
-
 In Defender for Endpoint, you have access to a real-time expert-level monitoring and analysis service by Microsoft Threat Experts for ongoing suspected actor activity. You can also collaborate with experts on demand for more insights into alerts and incidents.
-
-Here's an example of how Defender for Endpoint shows detailed ransomware activity.
-
-:::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/defender-endpoint-example-ransomware-activity.png" alt-text="Example of how Defender for Endpoint shows detailed ransomware activity." lightbox="./media/incident-response-playbook-dart-ransomware-approach/defender-endpoint-example-ransomware-activity.png":::
 
 ### Microsoft Defender for Identity
 
 You use Defender for Identity to investigate known compromised accounts and to find potentially compromised accounts in your organization. Defender for Identity sends alerts for known malicious activity that actors often use such as DCSync attacks, remote code execution attempts, and pass-the-hash attacks. Defender for Identity enables you to pinpoint suspect activity and accounts to narrow down the investigation.
 
-Here's an example of how Defender for Identity sends alerts for known malicious activity related to ransomware attacks.
-
-:::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/defender-for-identity-example-ransomware-alert.png" alt-text="An example of how Defender for Identity sends alerts for ransomware attacks" lightbox="./media/incident-response-playbook-dart-ransomware-approach/defender-for-identity-example-ransomware-alert.png":::
 
 ### Microsoft Defender for Cloud Apps
 
 Defender for Cloud Apps (previously known as Microsoft Cloud App Security) allows your analysts to detect unusual behavior across cloud apps to identify ransomware, compromised users, or rogue applications. Defender for Cloud Apps is Microsoft's cloud access security broker (CASB) solution that allows for monitoring of cloud services and data access in cloud services by users.
-
-Here's an example of the Defender for Cloud Apps dashboard, which allows analysis to detect unusual behavior across cloud apps.
-
-:::image type="content" source="./media/incident-response-playbook-dart-ransomware-approach/example-defender-for-cloud-apps-dashboard.png" alt-text="an example of the Defender for Cloud Apps dashboard." lightbox="./media/incident-response-playbook-dart-ransomware-approach/example-defender-for-cloud-apps-dashboard.png":::
 
 ### Microsoft Secure Score
 

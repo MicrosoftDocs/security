@@ -45,7 +45,7 @@ Learn how to run your own workshop and download the Excel assessment tool at [ht
 
 ## Co-branded architecture illustrations
 
-Architecture diagrams like those included in our Zero Trust guidance help communicate how to apply the princples of Zero Trust to specific environments, from Microsoft 365 to specialized environments built in Azure or even Amazon Web Services (AWS). These illustrations help provide deeper technical guidance and recommendations. They provide a supported starting-point that you can adjust for your own environments. They help communicate design decisions and the relationships between components and security capabilities in an environment.
+Architecture diagrams like those included in our Zero Trust guidance help communicate how to apply the principles of Zero Trust to specific environments, from Microsoft 365 to specialized environments built in Azure or even Amazon Web Services (AWS). These illustrations help provide deeper technical guidance and recommendations. They provide a supported starting-point that you can adjust for your own environments. They help communicate design decisions and the relationships between components and security capabilities in an environment.
 
 ### Visio templates, Visio stencils, and Microsoft icon sets
 
@@ -57,7 +57,7 @@ These 11x17 Visio template files are co-branded and leave plenty of room for you
 > [Download co-branded Visio templates](https://download.microsoft.com/download/9/e/b/9eb3ec90-6f38-4ebe-aecd-4a746642905f/microsoft-poster-templates.zip)
 
 Other downloadable resources: 
-- **Visio stencils and icons** To download additional Visio templates and, more importantly, Visio stencil files that include Microsoft icons, see [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates). This Visio stencil set includes many conceptual icons, including many security symbols. 
+- **Visio stencils and icons** To download more Visio template page sizes and, more importantly, Visio stencil files that include Microsoft icons, see [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates). This Visio stencil set includes many conceptual icons, including many security symbols. 
 
 - **Azure icons** To download Azure icons, see [Azure architecture icons](/azure/architecture/icons/).
 

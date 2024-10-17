@@ -1,6 +1,6 @@
 ---
 title: Zero Trust partner kit
-description: Get the assessment and progress tracking resources in the Zero Trust library.
+description: Download co-brandable resources for architecting and deploying Zero Trust security recommendations
 ms.date: 10/20/2024
 ms.service: security
 author: brendacarter
@@ -57,7 +57,7 @@ These 11x17 Visio template files are co-branded and leave plenty of room for you
 > [Download co-branded Visio templates](https://download.microsoft.com/download/9/e/b/9eb3ec90-6f38-4ebe-aecd-4a746642905f/microsoft-poster-templates.zip)
 
 Additional downloadable resources: 
-- **Visio stencils and icons** To download additional Visio templates and, more importantly, Visio stencil files that include Microsoft icons, see [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates?view=o365-worldwide). This Visio stencil set includes many conceptual icons, including many security symbols. 
+- **Visio stencils and icons** To download additional Visio templates and, more importantly, Visio stencil files that include Microsoft icons, see [Microsoft 365 architecture templates and icons](/microsoft-365/solutions/architecture-icons-templates). This Visio stencil set includes many conceptual icons, including many security symbols. 
 
 - **Azure icons** To download Azure icons, see [Azure architecture icons](/azure/architecture/icons/).
 
@@ -78,42 +78,3 @@ These illustrations are replicas of the reference illustrations across the Zero 
 |:::image type="content" source="media/thumb-zero-trust-sentinel-xdr-contoso.png" alt-text="thumbnail picture" link="https://download.microsoft.com/download/d/3/6/d362e836-941c-49f5-9c39-19a8c97c898c/zero-trust-sentinel-xdr-contoso.vsdx"::: [Download Visio](https://download.microsoft.com/download/d/3/6/d362e836-941c-49f5-9c39-19a8c97c898c/zero-trust-sentinel-xdr-contoso.vsdx)    | **Implement Microsoft Sentinel and Microsoft Defender XDR for Zero Trust** <br> Use these illustrations together with these articles: <br> [Overview](../operations/siem-xdr-overview.md) <br> [Step 1. Set up XDR tools](../operations/setup-xdr-tools.md) <br> [Step 2. Architect a Sentinel workspace](../operations/siem-workspace.md) <br> [Step 3. Ingest data sources and configure incident detection](../operations/ingest-data-sources.md) <br> [Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defencer XDR](../operations/respond-incident.md)     |
 
 
-<!---
-
-## Additional Zero Trust resources
-
-Use additional Zero Trust content based on a documentation set or the roles in your organization.
-
-### Documentation set
-
-Follow this table for the best Zero Trust documentation sets for your needs.
-
-| Documentation set | Helps you... | Roles |
-| --- | --- | --- |
-| [Adoption framework](adopt/zero-trust-adoption-overview.md) for phase and step guidance for key business solutions and outcomes | Apply Zero Trust protections from the C-suite to the IT implementation. | Security architects, IT teams, and project managers |
-| [Concepts and deployment objectives](deploy/overview.md) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. | IT teams and security staff |
-| [Zero Trust for small businesses](guidance-smb-partner.md) | Apply Zero Trust principles to small business customers. | Customers and partners working with Microsoft 365 for business |
-| [Zero Trust Rapid Modernization Plan (RaMP)](zero-trust-ramp-overview.md) for project management guidance and checklists for easy wins | Quickly implement key layers of Zero Trust protection. | Security architects and IT implementers |
-| [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to your Microsoft 365 tenant. | IT teams and security staff |
-| [Zero Trust for Microsoft Copilots](./copilots/apply-zero-trust-copilots-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Microsoft Copilots. | IT teams and security staff |
-| [Zero Trust for Azure services](azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. | IT teams and security staff |
-| [Partner integration with Zero Trust](integrate/overview.md) for design guidance for technology areas and specializations | Apply Zero Trust protections to partner Microsoft cloud solutions. | Partner developers, IT teams, and security staff |
-| [Develop using Zero Trust principles](develop/overview.md) for application development design guidance and best practices | Apply Zero Trust protections to your application. | Application developers |
-
-### Your role
-
-Follow this table for the best documentation sets for your role in your organization.
-
-| Role | Documentation set | Helps you... |
-| --- | --- | --- |
-| Security architect <br><br> IT project manager <br><br> IT implementer | [Adoption framework](adopt/zero-trust-adoption-overview.md) for phase and step guidance for key business solutions and outcomes| Apply Zero Trust protections from the C-suite to the IT implementation. |
-| Member of an IT or security team | [Concepts and deployment objectives](deploy/overview.md) for general deployment guidance for technology areas | Apply Zero Trust protections aligned with technology areas. |
-| Customer or partner for Microsoft 365 for business | [Zero Trust for small businesses](guidance-smb-partner.md) | Apply Zero Trust principles to small business customers.  |
-| Security architect <br><br> IT implementer | [Zero Trust Rapid Modernization Plan (RaMP)](zero-trust-ramp-overview.md) for project management guidance and checklists for easy wins | Quickly implement key layers of Zero Trust protection. |
-| Member of an IT or security team for Microsoft 365 | [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json) for stepped and detailed design and deployment guidance for Microsoft 365 | Apply Zero Trust protections to your Microsoft 365 tenant. |
-| Member of an IT or security team for Microsoft Copilots | [Zero Trust for Microsoft Copilots](./copilots/apply-zero-trust-copilots-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Microsoft Copilots. |
-| Member of an IT or security team for Azure services | [Zero Trust for Azure services](azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance | Apply Zero Trust protections to Azure workloads and services. |
-| Partner developer or member of an IT or security team | [Partner integration with Zero Trust](integrate/overview.md) for design guidance for technology areas and specializations | Apply Zero Trust protections to partner Microsoft cloud solutions. |
-| Application developer | [Develop using Zero Trust principles](develop/overview.md) for application development design guidance and best practices | Apply Zero Trust protections to your application. |
-
---->

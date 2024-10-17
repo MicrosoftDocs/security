@@ -3,7 +3,6 @@ title: Develop delegated permissions strategy
 description: As a developer, implement the best approach for managing permissions in your application and develop using Zero Trust.
 author: janicericketts
 ms.author: jricketts
-ms.service: identity
 ms.topic: conceptual
 ms.date: 05/24/2024
 ms.custom: template-concept

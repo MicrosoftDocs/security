@@ -3,7 +3,6 @@ title: Standards-based development methodologies
 description: In this article, we provide an overview of supported standards and their benefits. 
 author: janicericketts
 ms.author: jricketts
-ms.service: identity
 ms.topic: conceptual
 ms.date: 05/24/2024
 ms.custom: template-concept

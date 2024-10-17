@@ -529,6 +529,41 @@
         "redirect_document_id": false
       },
       {
+        "source_path": "security-docs/operations/incident-response-playbooks.md",
+        "redirect_url": "/security",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/incident-response-playbook-app-consent.md",
+        "redirect_url": "/security",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/incident-response-playbook-compromised-malicious-app.md",
+        "redirect_url": "/security",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/incident-response-playbook-password-spray.md",
+        "redirect_url": "/security",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/incident-response-playbook-phishing.md",
+        "redirect_url": "/security",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/incident-response-playbook-dart-ransomware-approach.md",
+        "redirect_url": "/security/ransomware/incident-response-playbook-dart-ransomware-approach",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/token-theft-playbook.md",
+        "redirect_url": "/security",
+        "redirect_document_id": false
+      },
+      {
         "source_path": "security-docs/operations/security-operations-videos-and-decks.md",
         "redirect_url": "/security/operations/overview",
         "redirect_document_id": false

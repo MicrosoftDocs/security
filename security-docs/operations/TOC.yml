@@ -25,9 +25,6 @@
         - name: Planning
           href: incident-response-planning.md
                
-    - name: Microsoft Incident Response team approach to ransomware
-      href: incident-response-playbook-dart-ransomware-approach.md
-
     - name: Microsoft Defender XDR security operations guide
       items:
         - name: Integrating Microsoft Defender XDR into your security operations

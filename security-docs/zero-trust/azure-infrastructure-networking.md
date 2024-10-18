@@ -267,8 +267,6 @@ To configure the Gateway Subnet route table to forward internal traffic to the A
    1. Provide the Azure Firewall's private IP address in the **Next hop address** field.
    1. Select **Add**.
 
-   :::image type="content" source="media/hub/hub-add-route.png" alt-text="Screenshot of adding an example route." lightbox="media/hub/hub-add-route.png":::
-
 #### Associate the route table to the gateway subnet
 
 1. Navigate to **Subnets**, and select **Associate**.

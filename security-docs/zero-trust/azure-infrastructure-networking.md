@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to hub virtual networks in Azure?
 description: How to apply Zero Trust principles to a hub virtual network for Azure IaaS workloads.  
-ms.date: 02/12/2024
+ms.date: 10/22/2024
 ms.service: security
 author: brsteph
 ms.author: bstephenson

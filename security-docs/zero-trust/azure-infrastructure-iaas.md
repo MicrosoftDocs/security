@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to spoke virtual networks in Azure?
 description: How to apply Zero Trust principles to a spoke virtual network for Azure IaaS workloads.
-ms.date: 02/12/2024
+ms.date: 10/22/2024
 ms.service: security
 author: brsteph
 ms.author: bstephenson
@@ -70,7 +70,7 @@ The application shown in the reference architecture follows the [N-tier architec
 
 The following diagram shows the components of a resource group for a spoke VNet in an Azure subscription separate from the subscription for the hub VNet.
 
-:::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.png" alt-text="Diagram of the logical architecture for applying Zero Trust to an Azure spoke VNet showing subscriptions, resource groups, and Azure components within a Microsoft Entra ID tenant." lightbox="media/spoke/azure-infra-spoke-subscription-architecture-2.png":::
+:::image type="content" source="media/spoke/azure-infra-spoke-subscription-architecture-2.svg" alt-text="Diagram of the logical architecture for applying Zero Trust to an Azure spoke VNet showing subscriptions, resource groups, and Azure components within a Microsoft Entra ID tenant." lightbox="media/spoke/azure-infra-spoke-subscription-architecture-2.svg":::
 
 In the diagram, all the components of the spoke VNet are contained in a dedicated resource group:
 

@@ -188,6 +188,17 @@ Zero Trust involves applying multiple disciplines of security and information pr
 1. Configure network gateway routing to the firewall
 1. Configure threat protection
 
+## Technical illustrations
+
+These illustrations are replicas of the reference illustrations in these articles. Download and customize these for your own organization and customers. Replace the Contoso logo with your own.
+
+| Item | Description |
+|:-----|:-----|
+|:::image type="content" source="media/thumb-zero-trust-iaas-contoso.png" alt-text="thumbnail picture" link="https://download.microsoft.com/download/2/d/e/2de84267-39d1-4845-8d31-83d97c9844a1/zero-trust-iaas-contoso.vsdx"::: [Download Visio](https://download.microsoft.com/download/2/d/e/2de84267-39d1-4845-8d31-83d97c9844a1/zero-trust-iaas-contoso.vsdx)  <br> Updated October 2024    |**Apply Zero Trust principles to Azure IaaS** <br> Use these illustrations with these articles: <br> - [Overview](azure-infrastructure-overview.md) <br> - [Azure storage](azure-infrastructure-storage.md) <br> - [Virtual machines](azure-infrastructure-virtual-machines.md) <br> - [Azure spoke virtual networks ](azure-infrastructure-iaas.md)<br> - [Azure hub virtual networks](azure-infrastructure-networking.md)   |
+|:::image type="content" source="media/thumb-zero-trust-iaas-contoso-poster.png" alt-text="thumbnail picture" link="https://download.microsoft.com/download/b/6/b/b6b7207a-8b19-4a9a-a2c5-c6573e0f6685/zero-trust-iaas-contoso-poster.vsdx"::: [Download Visio](https://download.microsoft.com/download/b/6/b/b6b7207a-8b19-4a9a-a2c5-c6573e0f6685/zero-trust-iaas-contoso-poster.vsdx) <br> Updated October 2024   | **Apply Zero Trust principles to Azure IaaS — One page poster**  <br> A one-page overview of the process for [applying the principles of Zero Trust to Azure IaaS environments](azure-infrastructure-overview.md).      |
+
+For additional technical illustrations, click [here](zero-trust-tech-illus.md).
+
 ## Recommended training for Zero Trust
 
 The following are the recommended training modules for Zero Trust.
@@ -257,21 +268,7 @@ See these additional articles for applying Zero Trust principles to Azure networ
 - [Gain visibility into your network traffic](azure-networking-visibility.md)
 - [Discontinue legacy network security technology](azure-networking-legacy.md)
 
-## Technical illustrations
 
-This poster provides a single-page, at-a-glance view of the components of Azure IaaS as reference and logical architectures, along with the steps to ensure that these components have the "never trust, always verify" principles of the Zero Trust model applied.
-
-| Item | Related solution guides |
-|:-----|:-----|
-|[![Thumbnail figure for the Apply Zero Trust to Azure IaaS infrastructure poster.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-poster-thumb.png)](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.pdf) \| [Visio](https://download.microsoft.com/download/d/8/b/d8b38a95-803c-4956-88e6-c0de68f7f8e9/apply-zero-trust-to-Azure-IaaS-infra-poster.vsdx) <br/> Updated March 2024 | <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
-
-This download provides the reference and logical architectures and the detailed configurations of the separate components of Zero Trust for Azure IaaS. Use the pages of this download for separate IT departments or specialties or, with the Microsoft Visio version of the file, customize the diagrams for your infrastructure.
-
-| Item | Related solution guides |
-|:-----|:-----|
-|[![Thumbnail figure for the Diagrams for applying Zero Trust to Azure IaaS infrastructure poster.](media/tech-illus/apply-zero-trust-to-Azure-IaaS-infra-diagrams-thumb.png)](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) <br/> [PDF](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.pdf) \| [Visio](https://download.microsoft.com/download/c/e/a/ceac5996-7cbf-4184-aed8-16dffcad3795/apply-zero-trust-to-Azure-IaaS-infra-diagrams.vsdx) <br/> Updated March 2024 | <ul><li>[Azure Storage services](azure-infrastructure-storage.md)</li><li>[Virtual machines](azure-infrastructure-virtual-machines.md)</li><li>[Spoke VNets](azure-infrastructure-iaas.md)</li><li>[Hub VNets](azure-infrastructure-networking.md)</li></ul>|
-
-For additional technical illustrations, click [here](zero-trust-tech-illus.md).
 
 ## References
 

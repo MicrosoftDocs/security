@@ -217,7 +217,7 @@ These illustrations are replicas of the reference illustrations in these article
 |:::image type="content" source="media/thumb-zero-trust-iaas-contoso-poster.png" alt-text="thumbnail picture 2" link="https://download.microsoft.com/download/b/6/b/b6b7207a-8b19-4a9a-a2c5-c6573e0f6685/zero-trust-iaas-contoso-poster.vsdx"::: [Download Visio](https://download.microsoft.com/download/b/6/b/b6b7207a-8b19-4a9a-a2c5-c6573e0f6685/zero-trust-iaas-contoso-poster.vsdx) <br> Updated October 2024   | **Apply Zero Trust principles to Azure IaaS — One page poster**  <br> A one-page overview of the process for [applying the principles of Zero Trust to Azure IaaS environments](azure-infrastructure-overview.md).      |
 
 
-For additional technical illustrations, click [here](zero-trust-tech-illus.md).
+For additional technical illustrations, see [Zero Trust illustrations for IT architects and implementers](zero-trust-tech-illus.md).
 
 ## Recommended training
 

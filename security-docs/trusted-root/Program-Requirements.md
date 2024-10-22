@@ -1,7 +1,7 @@
 ---
 title: Program Requirements - Microsoft Trusted Root Program 
 description: This document provides details about the requirements all Certificate Authorities are required to adhere to in order to be compliant with our program. 
-ms.date: 02/15/2024
+ms.date: 10/22/2024
 ms.service: security
 author: kasirota
 ms.author: kasirota

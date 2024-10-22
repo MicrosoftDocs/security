@@ -121,7 +121,8 @@ Program.
     a.	Should contain Microsoft-specific extension 1.3.6.1.4.1.311.21.4 (Next CRL Publish).
     b.	New CRL should be available at the Next CRL Publish time.
     c.	Maximum size of the CRL file (either full CRL or partitioned CRL) should not exceed 10M.
-    Note: The goal of section 3.C.3- CRL Recommendations when OCSP is not present is to provide coverage for end users in cases of mass revocation. 
+    > [!Note]
+    > The goal of section 3.C.3- CRL Recommendations when OCSP is not present is to provide coverage for end users in cases of mass revocation. 
 4.  The CA must not use the root certificate to issue end-entity certificates.
 5.  If a CA issues Code Signing certificates, it must use a Time Stamp Authority that complies with RFC 3161, "Internet X.509 Public Key Infrastructure Time-Stamp Protocol (TSP)."
  

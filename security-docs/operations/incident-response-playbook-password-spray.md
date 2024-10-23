@@ -19,7 +19,6 @@ ms.collection:
 ms.topic: article
 ms.subservice:: m365d
 ms.custom: cxdef-zt-ransomware, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
-ms.localizationpriority:   # medium
 ---
 
 # Password spray investigation

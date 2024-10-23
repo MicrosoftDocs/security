@@ -556,7 +556,6 @@ Examine guidance for identifying and investigating these additional types of att
 
 - [Phishing](incident-response-playbook-phishing.md)
 - [Password spray](incident-response-playbook-password-spray.md)
-- [Microsoft Incident Response ransomware approach and best practices](/security/ransomware/incident-response-playbook-dart-ransomware-approach.md)
 
 ## Incident response resources
 

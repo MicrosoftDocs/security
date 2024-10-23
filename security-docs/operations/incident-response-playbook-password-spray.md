@@ -630,7 +630,6 @@ Examine guidance for identifying and investigating these additional types of att
 
 - [Phishing](incident-response-playbook-phishing.md)
 - [App consent](incident-response-playbook-app-consent.md)
-- [Microsoft Microsoft Incident Response team ransomware approach and best practices](/security/ransomware/incident-response-playbook-dart-ransomware-approach.md)
 
 ## Incident response resources
 

@@ -393,6 +393,11 @@
         "redirect_url": "/security/ransomware/incident-response-playbook-dart-ransomware-approach",
         "redirect_document_id": false
       },
+      {    
+        "source_path": "security-docs/operations/incident-response-playbook-dart-ransomware-approach.md ",
+        "redirect_url": "/security/ransomware/incident-response-playbook-dart-ransomware-approach",
+        "redirect_document_id": false
+      },
       {
         "source_path": "security-docs/compass/dart-ransomware-case-study.md",
         "redirect_url": "/security/ransomware/dart-ransomware-case-study",

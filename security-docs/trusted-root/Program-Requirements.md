@@ -35,7 +35,7 @@ The Microsoft Root Certificate Program supports the distribution of root certifi
 
 4.   Program Participants must provide Microsoft the identities of at least two "Trusted Agents" to serve as representatives to the Program and one general email alias. Program Participants must inform Microsoft upon the removal or addition of personnel as a Trusted Agent. Program Participants agree to receive notices by e-mail and must provide Microsoft with an email address to receive official notices. Program Participants must agree that notice is effective when Microsoft sends an email or official letter. At least one of the contacts or aliases provided should be a 24/7 monitored communications channel for revocation requests or other incident management situations.
 
-5.   The Program Participant must disclose its full PKI hierarchy (non-limited subordinate CA, cross-signed non-enrolled root CAs, subordinate CAs, EKUs, certificate constraints) to Microsoft on an annual basis, including certificates issued to CAs operated by external third parties within the CCADB.  Program Participants must keep this information accurate in the CCADB when changes occur. If a subordinate CA isn't publicly disclosed or audited, it must be domain-constrained. 
+5.   The Program Participant must disclose its full PKI hierarchy (nonlimited subordinate CA, cross-signed nonenrolled root CAs, subordinate CAs, EKUs, certificate constraints) to Microsoft on an annual basis, including certificates issued to CAs operated by external third parties within the CCADB.  Program Participants must keep this information accurate in the CCADB when changes occur. If a subordinate CA isn't publicly disclosed or audited, it must be domain-constrained. 
 
 6.   Program Participants must inform Microsoft via email at least 120 days before transferring ownership of enrolled root or subordinate CA that chains to an enrolled root to another entity or person. 
  
@@ -66,7 +66,7 @@ Program.
     2.  The CN attribute must be in a language that is appropriate for the CA's market and readable by a typical customer in that market.
     3.  Basic Constraints extension: must be cA=true.
     4.  Key Usage extension MUST be present and MUST be marked critical. Bit positions for KeyCertSign and cRLSign MUST be set. If the Root CA Private Key is used for signing OCSP responses, then the digitalSignature bit MUST be set.
-        -   Root Key Sizes must meet the requirements detailed in "Key Requirements."
+        -   Root Key Sizes must meet the requirements detailed in "Signature Requirements" below.
 2.  Certificates to be added to the Trusted Root Store MUST be self-signed root certificates. 
 3.   Newly minted Root CAs must be valid for a minimum of eight years, and a maximum of 25 years, from the date of submission.
 4.  Participating Root CAs may not issue new 1024-bit RSA certificates from roots covered by these requirements.
@@ -94,9 +94,11 @@ Program.
 | --- | --- | --- |
 | Digest Algorithms |SHA2 (SHA256, SHA384, SHA512) | SHA2 (SHA256, SHA384, SHA512) |
 | RSA | 2048 | 4096 (New roots only)|
-| ECC / ECDSA | NIST P-256, P-384, P-521 | NIST P-256, P-384, P-521 |
+| ECC / ECDSA | NIST P-256, P-384, P-521 | Not Supported |
 
-**Please Note:** Signatures using elliptical curve cryptography (ECC), such as ECDSA, aren't supported in Windows and newer Windows security features. Users utilizing these algorithms and certificates will face various errors and potential security risks. The Microsoft Trusted Root Program recommends that ECC/ECDSA certificates shouldn't be issued to subscribers due to this known incompatibility and risk. 
+**Please Note:** 
+- Signatures using elliptical curve cryptography (ECC), such as ECDSA, aren't supported in Windows and newer Windows security features. Users utilizing these algorithms and certificates will face various errors and potential security risks. The Microsoft Trusted Root Program recommends that ECC/ECDSA certificates shouldn't be issued to subscribers due to this known incompatibility and risk.
+- Code Signing does not support ECC or keys > 4096
  
 
 ### C. Revocation Requirements

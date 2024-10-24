@@ -287,7 +287,7 @@ Risky IP alerts occur when the customized threshold has been reached for bad pas
 
 The details of failed attempts are available in the tabs **IP address** and **extranet lockouts**.
 
-![Screenshot example of the IP address table.](./media/incident-response-playbook-password-spray/ir-ipaddress-1.png)
+![Screenshot example of the IP address table.](./media/incident-response-playbook-password-spray/ir-ip-address-1.png)
 
 ### Detect password spray in Azure Identity Protection
 

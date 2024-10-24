@@ -396,14 +396,14 @@ While [each attack tends to vary, the core attack techniques are](https://attack
 - The access token is used to make API calls on behalf of the user.
 - If the user accepts, the attacker can gain access to the user's mails, forwarding rules, files, contacts, notes, profile, and other sensitive data and resources.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-permissions.png" alt-text="Screenshot example of permissions request.":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-permissions-request.png" alt-text="Screenshot example of permissions request."::: 
 
 ## Finding signs of an attack
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Audit**. Or to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
 1. On the **Audit** page, search all activities and all users, enter the start date and end date if necessary, and then select **Search**.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-audit-log-search-1.png" alt-text="Screenshot example of an audit log search.":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-audit-log-search-1.png" alt-text="Screenshot example of an audit log search."::: 
 
 1. Select **Filter** results and in the **Activity** field, enter **Consent** to application.
 

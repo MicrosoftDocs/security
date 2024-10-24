@@ -472,23 +472,23 @@ You can investigate these events using Microsoft Defender for Endpoint.
 
     ![Screenshot example of Audit Event 4688.](./media/incident-response-playbook-phishing/ir-event-properties.png)
 
-    ![Another screenshot example of Audit Event 4688.](./media/incident-response-playbook-phishing/ir-event-properties-1.png)
+    ![Another screenshot example of Audit Event 4688.](./media/incident-response-playbook-phishing/ir-event-properties-1.gif)
 
 ### On what endpoint was the email opened?
 
-The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-click-links-in-the-email)
+The tasks here are similar to the previous investigation step: [Did the user select links in the email?](##did-the-user-select-links-in-the-email)
 
 ### Was the attached payload executed?
 
-The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-click-links-in-the-email)
+The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-select-links-in-the-email)
 
 ### Was the destination IP / URL touched or opened?
 
-The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-click-links-in-the-email)
+The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-select-links-in-the-email)
 
 ### Was malicious code executed?
 
-The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-click-links-in-the-email)
+The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-select-links-in-the-email)
 
 ### What sign-ins happened with the account?
 

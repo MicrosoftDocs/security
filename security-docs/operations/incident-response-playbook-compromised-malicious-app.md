@@ -470,8 +470,7 @@ These alerts appear in the Identity Protection portal and can be exported into S
 
 Conditional Access allows you to block access for specific accounts that you designate when Identity Protection marks them as “at risk.” The enforcement through Conditional Access is currently limited to single-tenant applications only.
 
-:::image type="content" source="./media/compromised-malicious-apps/ir-risk-based-ca-policy-s
-ample.png" alt-text="Screenshot of how to control user access based on conditional access policy.":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-risk-based-ca-policy-s.png" alt-text="Screenshot of how to control user access based on conditional access policy.":::
 
 For more information, see [Conditional Access for workload identities](/azure/active-directory/conditional-access/workload-identity).
 

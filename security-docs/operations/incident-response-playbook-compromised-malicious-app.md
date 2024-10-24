@@ -454,7 +454,8 @@ If you disable or if you soft delete the application, set up monitoring in Micro
 - **Targets** - App ID and Display Name
 - **Modified Properties** - Property name = account enabled, new value = true
 
-Note: Microsoft globally disables applications found to be violating its Terms of Service. In those cases, these applications show `DisabledDueToViolationOfServicesAgreement` on the `disabledByMicrosoftStatus` property on the related [application](/graph/api/resources/application) and [service principal](/graph/api/resources/serviceprincipal) resource types in Microsoft Graph. To prevent them from being instantiated in your organization again in the future, you can't delete these objects.
+> [!NOTE] 
+> Microsoft globally disables applications found to be violating its Terms of Service. In those cases, these applications show `DisabledDueToViolationOfServicesAgreement` on the `disabledByMicrosoftStatus` property on the related [application](/graph/api/resources/application) and [service principal](/graph/api/resources/serviceprincipal) resource types in Microsoft Graph. To prevent them from being instantiated in your organization again in the future, you can't delete these objects.
 
 ### Implement Identity Protection for workload identities
 

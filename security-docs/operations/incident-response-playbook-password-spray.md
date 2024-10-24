@@ -133,8 +133,9 @@ You can also use the Splunk platform to set up alerts.
 - For more information, see [Splunk alerting manual](https://docs.splunk.com/Documentation/Splunk/8.0.4/Alert/AlertWorkflowOverview).
 
 ## Workflow
+The following flowchart shows the password spray investigation workflow.
 
-![Flowchart of a password spray investigation workflow.](./media/incident-response-playbook-password-spray/ir-password-spray-flow.png)
+    :::image type="content" source="./media/incident-response-playbook-password-spray/ir-password-spray-flow.png" alt-text="Flowchart of a password spray investigation workflow.":::
 
 You can also:
 
@@ -439,7 +440,7 @@ Also, search the Azure portal for time frame, IP address and successful and inte
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/ir-select-timeframe.jpg" alt-text="Screenshot of how to select the time frame range.":::
 
-:::image type="content" source="./media/incident-response-playbook-password-spray/ir-select-ip-address.jpg" alt-text="Screenshot for how to searching for sign-ins on a specific IP address.":::
+:::image type="content" source="./media/incident-response-playbook-password-spray/ir-select-ip-address.jpg" alt-text="Screenshot showing how to search for sign-ins on a specific IP address.":::
 
 :::image type="content" source="./media/incident-response-playbook-password-spray/ir-select-status.jpg" alt-text="Searching for sign-ins based on the status.":::
 
@@ -559,7 +560,7 @@ See how to [configure alerts in the Identity Protection portal](/azure/active-di
 
 ## Recommended defenses
 
-- Educate end users, key stakeholders, front line operations, technical teams, cyber security and communications teams
+- Educate end users, key stakeholders, frontline operations, technical teams, cyber security and communications teams
 - Review security control and make necessary changes to improve or strengthen security control within your organization
 - Suggest Microsoft Entra configuration assessment
 - Run regular [attack simulator](/microsoft-365/security/office-365-security/attack-simulator) exercises

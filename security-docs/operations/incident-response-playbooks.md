@@ -42,7 +42,7 @@ Each playbook includes:
 
 - **Prerequisites:** The specific requirements you need to complete before starting the investigation. For example, logging that should be turned on and roles and permissions that are required.
 - **Workflow:** The logical flow that you should follow to perform the investigation.
-- **Checklist:** A list of tasks for the steps in the flow chart. This checklist can be helpful in highly-regulated environments to verify what you have done.
+- **Checklist:** A list of tasks for the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done.
 - **Investigation steps:** Detailed step-by-step guidance for the specific investigation.
 
 

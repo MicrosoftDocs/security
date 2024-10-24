@@ -135,7 +135,7 @@ You can also use the Splunk platform to set up alerts.
 ## Workflow
 The following flowchart shows the password spray investigation workflow.
 
-    :::image type="content" source="./media/incident-response-playbook-password-spray/ir-password-spray-flow.png" alt-text="Flowchart of a password spray investigation workflow.":::
+:::image type="content" source="./media/incident-response-playbook-password-spray/ir-password-spray-flow.png" alt-text="Flowchart of how to conduct a password spray investigation."::: 
 
 You can also:
 
@@ -269,7 +269,7 @@ An incident trigger is an event or a series of events that causes predefined ale
 - Anomalies
 - Bad password attempts
 
-    :::image type="content" source="./media/incident-response-playbook-password-spray/ir-bad-password-attempt.jpg" alt-text="Screenshot of bad password attempts.":::
+    :::image type="content" source="./media/incident-response-playbook-password-spray/ir-bad-password-attempt.jpg" alt-text="Screenshot of how to track bad password attempts.":::
    
 Unusual spikes in activity are key indicators through Microsoft Entra Health Connect (assuming this component is installed). Other indicators are:
 

@@ -494,8 +494,6 @@ The tasks here are similar to the previous investigation step: [Did the user sel
 
 Check the various sign-ins that happened with the account.
 
-<h2 id="federated-scenario"></h2>
-
 ### Federated scenario
 
 The audit log settings and events differ based on the operating system (OS) Level and the Active Directory Federation Services (ADFS) Server version.

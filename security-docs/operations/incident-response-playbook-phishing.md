@@ -1,5 +1,5 @@
 ---
-title: Phishing investigation
+title: Phishing investigation | Microsoft Security
 description: Learn how to identify and investigate phishing attacks, protect data, and minimize further risks.
 keywords: phishing, investigation, attack, email, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, Microsoft Defender XDR
 search.product: DART
@@ -32,7 +32,7 @@ This article contains the following sections:
 
 - **Prerequisites:** Covers the specific requirements you need to complete before starting the investigation. For example, logging that should be turned on, roles and permissions required, among others.
 - **Workflow:** Shows the logical flow that you should follow to perform this investigation.
-- **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you've completed or as a quality gate for yourself.
+- **Checklist:** Contains a list of tasks for each of the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify completed items, or as a quality gate for yourself.
 - **Investigation steps:** Includes a detailed step-by-step guidance for this specific investigation.
 
 ## Prerequisites
@@ -41,7 +41,7 @@ Here are general settings and configurations you should complete before proceedi
 
 ### Account details
 
-Before proceeding with the investigation, it's recommended that you have the user name, user principal name (UPN) or the email address of the account that you suspect is compromised.
+Before proceeding with the investigation, you should have the user name, user principal name (UPN), or the email address of the account that you suspect is compromised.
 
 ### Microsoft 365 base requirements
 
@@ -70,7 +70,7 @@ You search the [unified audit log](/microsoft-365/compliance/search-the-audit-lo
 
 ### Are the sign-in logs and/or audit logs exported to an external system?
 
-Since most of the Microsoft Entra ID [sign-in](/azure/active-directory/reports-monitoring/concept-sign-ins) and audit data will get overwritten after 30 or 90 days, we recommend that you use Sentinel, Azure Monitor, or an external security information and event management (SIEM) system.
+Since most of the Microsoft Entra ID [sign-in](/azure/active-directory/reports-monitoring/concept-sign-ins) and audit data will get overwritten after 30 or 90 days, we recommend that you use Microsoft Sentinel, Azure Monitor, or an external security information and event management (SIEM) system.
 
 ## Roles and permissions required
 
@@ -110,7 +110,7 @@ The following PowerShell modules are required for the investigation of the cloud
 
 ## Workflow
 
-[![Phishing investigation workflow]](./media/incident-response-playbook-phishing/PI_flow.png)
+![Flowchart of a phishing investigation workflow.](./media/incident-response-playbook-phishing/ir-phishing-flow.png)
 
 You can also:
 
@@ -119,7 +119,7 @@ You can also:
 
 ## Checklist
 
-This checklist helps you evaluate your investigation process and verify whether you have completed all the steps during investigation:
+This checklist helps you evaluate your investigation process and verify that the steps are completed during investigation:
 
 |&nbsp;|&nbsp;|
 |---|---|
@@ -151,9 +151,7 @@ You can also download the phishing and other incident playbook checklists as an 
 
 ## Investigation steps
 
-For this investigation, it's assumed that you either have a sample phishing email, or parts of it like the sender's address, subject of the email, or parts of the message to start the investigation. Also make sure that you have completed / enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
-
-This playbook is created with the intention that not all Microsoft customers and their investigation teams have the full Microsoft 365 E5 or Microsoft Entra ID P2 license suite available or configured in the tenant that is being investigated. We'll however highlight other automation capabilities when appropriate.
+For this investigation, you have a sample phishing email, or parts of the email. For example, you might have the sender's address, subject of the email, or parts of the message to start the investigation. Also make sure that you have completed and enabled all settings as recommended in the [Prerequisites](#prerequisites) section.
 
 ### Get the list of users / identities who got the email
 
@@ -163,7 +161,7 @@ We don't give any recommendations in this playbook on how you want to record thi
 
 ### Create a Content search in the Microsoft Purview compliance portal
 
-Use the indicators that you've collected to create and run a Content search. For instructions, see [Create a content search](/microsoft-365/compliance/content-search#create-a-search).
+Use the indicators to create and run a Content search. For instructions, see [Create a content search](/microsoft-365/compliance/content-search#create-a-search).
 
 For a full list of searchable email properties, see [searchable email properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties).
 
@@ -173,7 +171,7 @@ The following example returns messages that were received by users between April
 (Received:4/13/2022..4/14/2022) AND (Subject:'Action required')
 ```
 
-The following example query returns messages that were sent by `chatsuwloginsset12345@outlook.com` and that contain the exact phrase "*Update your account information*" in the subject line.
+The following example query returns messages sent by `chatsuwloginsset12345@outlook.com` and contain the exact phrase "*Update your account information*" in the subject line.
 
 ```SearchFilter
 (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
@@ -211,7 +209,7 @@ Look for unusual names or permission grants. If you see something unusual, conta
 
 ### Are there forwarding rules configured for the mailbox?
 
-You need to check each identified mailbox for mailbox forwarding (also known as *SMTP forwarding*) or Inbox rules that forward email messages to external recipients (typically, newly created Inbox rules).
+You need to check each identified mailbox for mailbox forwarding (also known as *SMTP (Simple Mail Transfer Protocol)forwarding*) or Inbox rules that forward email messages to external recipients (typically, newly created Inbox rules).
 
 - To check all mailboxes for mailbox forwarding, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
@@ -244,23 +242,23 @@ Search-UnifiedAuditLog -StartDate 12/16/2021 -EndDate 03/16/2022 -Operations Rem
 
 There are two ways to get the list of Exchange mail flow rules (also known as transport rules) in your organization:
 
-1. In the Exchange admin center or Exchange Online PowerShell. For instructions, see [View or modify a mail flow rule](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
-2. The **Exchange transport rule** report in the Exchange admin center. For instructions, see [Exchange transport rule report in Exchange Online](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
+- In the Exchange admin center or Exchange Online PowerShell. For instructions, see [View or modify a mail flow rule](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+- The **Exchange transport rule** report in the Exchange admin center. For instructions, see [Exchange transport rule report in Exchange Online](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
-Look for new rules, or rules that have been modified to redirect the mail to external domains. The number of rules should be known and relatively small. You can do an audit log search to determine who created the rule and from where they created it. If you see something unusual, contact the creator to determine if it is legitimate.
+Look for new rules, or modified rules to redirect the mail to external domains. The number of rules should be known and relatively small. You can do an audit log search to determine who created the rule and from where they created it. If you see something unusual, contact the creator to determine if it's legitimate.
 
 ### Get the latest dates when the user had access to the mailbox
 
-In the Microsoft 365 security & compliance center, navigate to [unified audit log](https://protection.office.com/#/unifiedauditlog). Under **Activities** in the drop-down list, you can filter by **Exchange Mailbox Activities**.
+In the Microsoft Defender portal or Microsoft Purview compliance portal, navigate to [unified audit log](https://protection.office.com/#/unifiedauditlog). Under **Activities** in the drop-down list, you can filter by **Exchange Mailbox Activities**.
 
-The capability to list compromised users is available in the [Microsoft 365 security & compliance center](/microsoft-365/security/office-365-security/view-email-security-reports#compromised-users-report-new).
+The capability to list compromised users is available in the [Microsoft Defender portal](/microsoft-365/security/office-365-security/view-email-security-reports#compromised-users-report-new).
 
 This report shows activities that could indicate a mailbox is being accessed illicitly. It includes created or received messages, moved or deleted messages, copied or purged messages, sent messages using send on behalf or send as, and all mailbox sign ins. The data includes date, IP address, user, activity performed, the item affected, and any extended details.
 
 > [!NOTE]
 > For this data to be recorded, you must enable the **mailbox auditing** option.
 
-The volume of data included here could be very substantial, so focus your search on users that would have high-impact if breached. Look for unusual patterns such as odd times of the day, or unusual IP addresses, and look for patterns such as high volumes of moves, purges, or deletes.
+The volume of data included here could be substantial, so focus your search on users that would have high-impact if breached. Look for unusual patterns such as odd times of the day, or unusual IP addresses, and look for patterns such as high volumes of moves, purges, or deletes.
 
 ### Did the user read / open the email?
 
@@ -354,7 +352,7 @@ New-ComplianceSearch -Name "Investigation" -ExchangeLocation "Research Departmen
 
 For detailed syntax and parameter information, see [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch).
 
-#### Find out if the message contained an attachment in in on-premises Exchange
+#### Find out if the message contained an attachment in on-premises Exchange
 
 > [!NOTE]
 > In Exchange Server 2013, this procedure requires Cumulative Update 12 (CU12) or later. For more information, see [this article](https://support.microsoft.com/topic/search-mailbox-cmdlet-with-attachment-keyword-lists-all-items-that-contain-the-query-string-of-attachment-b0422602-9f14-e85a-434f-81a14549574d).
@@ -379,7 +377,7 @@ Many of the components of the message trace functionality are self-explanatory b
 
 To obtain the *Message-ID* for an email of interest, you need to examine the raw email headers. For instructions on how to do this in Microsoft Outlook or Outlook on the Web (formerly known as Outlook Web App or OWA) see [View internet message headers in Outlook](https://support.microsoft.com/office/view-internet-message-headers-in-outlook-cd039382-dc6e-4264-ac74-c048563d212c)
 
-When viewing an email header, it is recommended to copy and paste the header information into an email header analyzer provided by [MXToolbox](https://mxtoolbox.com/EmailHeaders.aspx) or [Azure](https://mha.azurewebsites.net/) for readability.
+When viewing an email header, copy and paste the header information into an email header analyzer provided by [MXToolbox](https://mxtoolbox.com/EmailHeaders.aspx) or [Azure](https://mha.azurewebsites.net/) for readability.
 
 - **Headers Routing Information:** The routing information provides the route of an email as its being transferred between computers.
 - **Sender Policy Framework (SPF):** An email validation to help prevent/detect spoofing. In the SPF record, you can determine which IP addresses and domains can send email on behalf of the domain.
@@ -391,20 +389,20 @@ When viewing an email header, it is recommended to copy and paste the header inf
 
   For more information about SPF, see [How Microsoft 365 uses SPF to prevent spoofing](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)
 
-- **Common Values:** Here is a breakdown of the most commonly used and viewed headers, and their values. This is valuable information and you can use them in the **Search** fields in Threat Explorer.
+- **Common Values:** Here's a breakdown of the most commonly used and viewed headers, and their values. This is valuable information and you can use them in the **Search** fields in Threat Explorer.
   - From address
   - Subject
   - Message ID
   - To address
   - Return-path address
 
-- **Authentication-Results:** You can find what your email client authenticated when the email was sent. It will provide you with SPF and DKIM authentication.
+- **Authentication-Results:** You can find what your email client authenticated when the email was sent. It provides you with SPF and DKIM authentication.
 
 - **Originating IP:** The original IP can be used to determine if the IP is blocklisted and to obtain the geo location.
 
-- **Spam Confidence Level (SCL):** This determines the probability of an incoming email is spam.
+- **Spam Confidence Level (SCL):** This determines the probability if an incoming email is spam.
   - \-1: Bypass most spam filtering from a safe sender, safe recipient, or safe listed IP address (trusted partner)
-  - 0, 1: Non-spam because the message was scanned and determined to be clean
+  - 0, 1: Nonspam because the message was scanned and determined to be clean
   - 5, 6: Spam
   - 7, 8, 9: High confidence spam
 
@@ -430,7 +428,7 @@ You can use this feature to [validate outbound email in Microsoft 365](/microsof
 
 ### Verify IP addresses to attackers/campaigns
 
-To verify or investigate IP addresses that have been identified from the previous investigation steps, you can use any of these options:
+To verify or investigate IP addresses identified from the previous investigation steps, you can use any of these options:
 
 - VirusTotal
 - Microsoft Defender for Endpoint
@@ -442,9 +440,9 @@ To verify or investigate IP addresses that have been identified from the previou
 
 ### URL reputation
 
-You can use any Windows 10 device and Microsoft Edge browser which leverages the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) technology.
+You can use any Windows 10 device and Microsoft Edge browser which uses the [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) technology.
 
-Here are a few third-party URL reputation examples
+Here are a few third-party URL reputation examples:
 
 - [Trend Micro Site Safety Check](https://global.sitesafety.trendmicro.com/)
 - [Google Transparency Report](https://transparencyreport.google.com/safe-browsing/search?hl=en)
@@ -452,45 +450,45 @@ Here are a few third-party URL reputation examples
 
 As you investigate the IP addresses and URLs, look for and correlate IP addresses to indicators of compromise (IOCs) or other indicators, depending on the output or results and add them to a list of sources from the adversary.
 
-### Did the user click links in the email?
+### Did the user select links in the email?
 
-If the user has clicked the link in the email (on-purpose or not), then this action typically leads to a new process creation on the device itself. Depending on the device this was performed, you need perform device-specific investigations. For example, Windows vs Android vs iOS. In this article, we have described a general approach along with some details for Windows-based devices. If you are using Microsoft Defender for Endpoint (MDE), then you can also leverage it for iOS and soon Android.
+If the user clicked the link in the email (on-purpose or not), then this action typically leads to a new process creation on the device itself. Depending on the device this was performed, you need perform device-specific investigations. For example, Windows vs Android vs iOS. In this article, we have described a general approach along with some details for Windows-based devices. If you're using Microsoft Defender for Endpoint (MDE), then you can also use it for iOS and soon Android.
 
 You can investigate these events using Microsoft Defender for Endpoint.
 
-1. **VPN/proxy logs**
-    Depending on the vendor of the proxy and VPN solutions, you need to check the relevant logs. Ideally you are forwarding the events to your SIEM or to Microsoft Sentinel.
+- **VPN/proxy logs**
+    Depending on the vendor of the proxy and VPN solutions, you need to check the relevant logs. Ideally you're forwarding the events to your SIEM or to Microsoft Sentinel.
 
-2. **Using Microsoft Defender for Endpoint**
-    This is the best-case scenario, because you can use our threat intelligence and automated analysis to help your investigation. For more details, see [how to investigate alerts in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/investigate-alerts).
+- **Using Microsoft Defender for Endpoint**
+    This is the best-case scenario, because you can use our threat intelligence and automated analysis to help your investigation. For more information, see [how to investigate alerts in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/investigate-alerts).
 
     The **Alert process tree** takes alert triage and investigation to the next level, displaying the aggregated alerts and surrounding evidences that occurred within the same execution context and time period.
-    ![Example of the alert process tree](./media/incident-response-playbook-phishing/alertprocesstree.png)
+    ![Screenshot of the alert process tree.](./media/incident-response-playbook-phishing/ir-alert-process-tree.png)
 
-3. **Windows-based client devices**
+- **Windows-based client devices**
     Make sure you have enabled the [**Process Creation Events**](/windows/security/threat-protection/auditing/event-4688) option. Ideally, you should also enable [command-line Tracing Events](/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing).
 
-    On Windows clients, which have the above-mentioned Audit Events enabled prior to the investigation, you can check Audit Event 4688 and determine the time when the email was delivered to the user:
+    On Windows clients, which have the above-mentioned Audit Events enabled before the investigation, you can check Audit Event 4688 and determine the time when the email was delivered to the user:
 
-    ![Example of Audit Event 4688](./media/incident-response-playbook-phishing/eventproperties.png)
+    ![Screenshot example of Audit Event 4688.](./media/incident-response-playbook-phishing/ir-event-properties.png)
 
-    ![Another example of Audit Event 4688](./media/incident-response-playbook-phishing/eventproperties1.png)
+    ![Another screenshot example of Audit Event 4688.](./media/incident-response-playbook-phishing/ir-event-properties-1.png)
 
 ### On what endpoint was the email opened?
 
-The tasks here are similar to the previous investigation step: [Did the user click links in the email?](#did-the-user-click-links-in-the-email)
+The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-click-links-in-the-email)
 
 ### Was the attached payload executed?
 
-The tasks here are similar to the previous investigation step: [Did the user click links in the email?](#did-the-user-click-links-in-the-email)
+The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-click-links-in-the-email)
 
 ### Was the destination IP / URL touched or opened?
 
-The tasks here are similar to the previous investigation step: [Did the user click links in the email?](#did-the-user-click-links-in-the-email)
+The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-click-links-in-the-email)
 
 ### Was malicious code executed?
 
-The tasks here are similar to the previous investigation step: [Did the user click links in the email?](#did-the-user-click-links-in-the-email)
+The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-click-links-in-the-email)
 
 ### What sign-ins happened with the account?
 
@@ -506,9 +504,9 @@ See the following sections for different server versions.
 
 #### Server 2012 R2
 
-By default, security events are not audited on Server 2012 R2. You need to enable this feature on each ADFS Server in the Farm. In the ADFS Management console and select **Edit Federation Service Properties**.
+By default, security events aren't audited on Server 2012 R2. You need to enable this feature on each ADFS Server in the Farm. In the ADFS Management console and select **Edit Federation Service Properties**.
 
-![federatedproperties](./media/incident-response-playbook-phishing/Federatedservices.png)
+![Screenshot of edit federated properties.](./media/incident-response-playbook-phishing/ir-federated-services.png)
 
 You also need to enable the **OS Auditing Policy**.
 
@@ -518,12 +516,12 @@ Open the command prompt, and run the following command as an administrator.
 auditpol.exe /set /subcategory:"Application Generated" /failure:enable /success:enable
 ```
 
-For more details, see [how to configure ADFS servers for troubleshooting](/previous-versions/windows/it-pro/windows-server-2003/cc738766(v=ws.10)?redirectedfrom=MSDN#BKMK_97).
+For more information, see [how to configure ADFS servers for troubleshooting](/previous-versions/windows/it-pro/windows-server-2003/cc738766(v=ws.10)?redirectedfrom=MSDN#BKMK_97).
 
 You may want to also download the ADFS PowerShell modules from:
 
 - [GitHub](https://github.com/Microsoft/adfsToolbox/tree/master/eventsModule)
-- [Microsoft scriptcenter](https://github.com/Microsoft/adfsToolbox/tree/master/eventsModule)
+- [Microsoft script center](https://github.com/Microsoft/adfsToolbox/tree/master/eventsModule)
 
 #### Server 2016 and newer
 
@@ -533,13 +531,13 @@ By default, ADFS in Windows Server 2016 has basic auditing enabled. With basic a
 Set-AdfsProperties -AuditLevel Verbose
 ```
 
-For more details, see [auditing enhancements to ADFS in Windows server](/windows-server/identity/ad-fs/technical-reference/auditing-enhancements-to-ad-fs-in-windows-server).
+For more information, see [auditing enhancements to ADFS in Windows server](/windows-server/identity/ad-fs/technical-reference/auditing-enhancements-to-ad-fs-in-windows-server).
 
 If you have Microsoft Entra Connect Health installed, you should also look into the Risky IP report. The failed sign-in activity client IP addresses are aggregated through Web Application proxy servers. Each item in the Risky IP report shows aggregated information about failed AD FS sign-in activities that exceed the designated threshold.
 
-:::image type="content" source="./media/incident-response-playbook-phishing/timestamp.png" alt-text="Example of the risky IP report":::
+:::image type="content" source="./media/incident-response-playbook-phishing/ir-timestamp.png" alt-text="Screenshot example of the risky IP report.":::
 
-For more details, see [Risky IP report](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip).
+For more information, see [Risky IP report](/azure/active-directory/hybrid/how-to-connect-health-adfs-risky-ip).
 
 #### Server 2012 R2
 
@@ -549,15 +547,15 @@ For the actual audit events, you need to look at the Security events logs and yo
 
 **Event ID 411** - *SecurityTokenValidationFailureAudit Token* validation failed. See inner exception for more details.
 
-![Example of an event 411](./media/incident-response-playbook-phishing/tokenvalidation.png)
+![Screenshot example of an event 411.](./media/incident-response-playbook-phishing/ir-token-validation.png)
 
-![Example of an event 412](./media/incident-response-playbook-phishing/Event412.png)
+![Screenshot example of an event 412.](./media/incident-response-playbook-phishing/ir-event-412.png)
 
 You may need to correlate the Event with the corresponding Event ID 501.
 
 #### Server 2016 and newer
 
-For the actual audit events you need to look at the security events logs and you should look for events with look for Event ID 1202 for successful authentication events and 1203 for failures
+For the actual audit events, you need to look at the security events logs and you should look for events with look for Event ID 1202 for successful authentication events and 1203 for failures
 
 Example for Event ID1202:
 
@@ -567,23 +565,23 @@ Example for Event ID 1203:
 
 *Event ID 1203 FreshCredentialFailureAudit The Federation Service failed to validate a new credential. See XML for failure details.*
 
-![Example of an event 1203](./media/incident-response-playbook-phishing/event1203.png)
+![Example of an event 1203](./media/incident-response-playbook-phishing/ir-event-1203.png)
 
-![Example of an event 4624](./media/incident-response-playbook-phishing/Event4624.png)
+![Example of an event 4624](./media/incident-response-playbook-phishing/ir-event-4624.png)
 
 To get the full list of ADFS Event ID per OS Level, refer to [GetADFSEventList](https://adfshelp.microsoft.com/AdfsEventViewer/GetAdfsEventList).
 
 ### Managed scenario
 
-Check the Microsoft Entra sign-in logs for the user(s) you are investigating.
+Check the Microsoft Entra sign-in logs for one or more users you're investigating.
 
 - Navigate to the [Microsoft Entra admin center > Sign-in](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen
 - Check the [sign-in activities](/graph/api/resources/signinactivity)
 - Check the [PowerShell function on GitHub](https://github.com/poshchap/Azure-AD-Users-PoSh/blob/master/Get-AzureADUserLastSignInActivity.ps1)
 
-In the Microsoft Entra admin center, navigate to the [Sign-ins](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen and add/modify the display filter for the timeframe you found in the previous investigation steps as well as add the user name as a filter, as shown in this image.
+In the Microsoft Entra admin center, navigate to the [Sign-ins](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns) screen and add/modify the display filter for the timeframe you found in the previous investigation steps and add the user name as a filter, as shown in this image.
 
-:::image type="content" source="./media/incident-response-playbook-phishing/DisplayFilter.png" alt-text="Example of a display filter":::
+:::image type="content" source="./media/incident-response-playbook-phishing/ir-display-filter.png" alt-text="Screenshot example of a display filter with a timeframe."::: 
 
 You can also search using Graph API. For example, filter on **User properties** and get **lastSignInDate** along with it. Search for a specific user to get the last signed in date for this user.
 For example, `https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Dhanyah')&$select=displayName,signInActivity`
@@ -602,33 +600,33 @@ Get-AzureADIRSignInDetail -UserId johcast@Contoso.com -TenantId 536279f6-1234-25
 
 ### Investigate source IP address
 
-Based on the source IP addresses that you found in the Microsoft Entra sign-in logs or the ADFS/Federation Server log files, investigate further to know from where the traffic originated.
+Based on the source IP addresses that you found in the Microsoft Entra sign-in log or the ADFS/Federation Server log files, investigate further to know from where the traffic originated.
 
 ### Managed user
 
 For a managed scenario, you should start looking at the sign-in logs and filter based on the source IP address:
 
-:::image type="content" source="./media/incident-response-playbook-phishing/managedusersip.png" alt-text="Example of a managed user IP address]":::
-
+:::image type="content" source="./media/incident-response-playbook-phishing/ir-managed-users-ip.png" alt-text="Screenshot example of a managed user IP address."::: 
+ 
 Or you can use this command from the AzureADIncidentResponse PowerShell module:
 
 ```powershell
 Get-AzureADIRSignInDetail -IpAddress 1.2.3.4 -TenantId 536279f6-1234-2567-be2d-61e352b51eef -RangeFromDaysAgo 29 -RangeToDaysAgo 3 -OutGridView
 ```
 
-When you look into the results list, navigate to the **Device info** tab. Depending on the device used, you'll get varying output. Here are a few examples:
+When you look into the results list, navigate to the **Device info** tab. Depending on the device used, you get varying output. Here are a few examples:
 
-- Example 1 - Un-managed device (BYOD):
+- Example 1 - Unmanaged device (BYOD):
 
-  :::image type="content" source="./media/incident-response-playbook-phishing/unmanageddevice.png" alt-text="Example of a unmanaged device":::
+  :::image type="content" source="./media/incident-response-playbook-phishing/ir-unmanaged-device.png" alt-text="Screenshot example of an unmanaged device."::: 
 
 - Example 2 - Managed device (Microsoft Entra join or Microsoft Entra hybrid join):
 
-  :::image type="content" source="./media/incident-response-playbook-phishing/Manageddevice.png" alt-text="Example of a managed device":::
+  :::image type="content" source="./media/incident-response-playbook-phishing/ir-managed-device.png" alt-text="Screenshot example of managed device info."::: 
 
 Check for the DeviceID if one is present. You should also look for the OS and the browser or *UserAgent* string.
 
-:::image type="content" source="./media/incident-response-playbook-phishing/DeviceID.png" alt-text="Example of a device ID":::
+:::image type="content" source="./media/incident-response-playbook-phishing/ir-device-id.png" alt-text="Screenshot example of a device ID.":::
 
 Record the *CorrelationID*, *Request ID* and *timestamp*. You should use *CorrelationID* and *timestamp* to correlate your findings to other events.
 
@@ -644,13 +642,13 @@ This step is relevant for only those devices that are known to Microsoft Entra I
 
 ### Investigate each AppID
 
-The starting point here are the sign-in logs and the app configuration of the tenant or the federation servers' configuration.
+Start with the sign-in logs and the app configuration of the tenant or the federation servers' configuration.
 
 #### Managed scenario
 
 From the previously found sign-in log details, check the *Application ID* under the **Basic info** tab:
 
-:::image type="content" source="./media/incident-response-playbook-phishing/managedscenario1.png" alt-text="managedscenario":::
+:::image type="content" source="./media/incident-response-playbook-phishing/ir-managed-scenario-1.png" alt-text="Screenshot of how to check the Application ID in the Basic Info tab.":::
 
 Note the differences between the Application (and ID) to the Resource (and ID). The application is the client component involved, whereas the Resource is the service / application in Microsoft Entra ID.
 
@@ -668,11 +666,11 @@ Id                                       AppId                                  
 
 With this information, you can search in the Enterprise Applications portal. Navigate to **All Applications** and search for the specific AppID.
 
-:::image type="content" source="./media/incident-response-playbook-phishing/enterpriseapps.png" alt-text="Example of an application ID":::
+:::image type="content" source="./media/incident-response-playbook-phishing/ir-enterprise-apps.png" alt-text="Screenshot example of an application ID.":::
 
-## Additional incident response playbooks
+## Extra incident response playbooks
 
-Examine guidance for identifying and investigating these additional types of attacks:
+Examine guidance for identifying and investigating these other types of attacks:
 
 - [Password spray](incident-response-playbook-password-spray.md)
 - [App consent](incident-response-playbook-app-consent.md)

@@ -1,5 +1,5 @@
 ---
-title: Incident response planning | Microsoft Docs
+title: Incident response planning | Microsoft Security
 description: Understand how to plan for incident response in your security operations center.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, incident response, cyber-attack, respond, plan, incident response plan, IRP, IR plan
 ms.author: dansimp
@@ -10,7 +10,7 @@ ms.collection:
   - msftsolution-secops
 ms.service: microsoft-365-security
 ms.custom: cxdef-zt-ransomware
-ms.localizationpriority:   # medium
+ms.localizationpriority: medium
 ---
 
 # Incident response planning

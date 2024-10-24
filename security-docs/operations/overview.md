@@ -8,7 +8,6 @@ ms.collection:
   - msftsolution-secops
 ms.topic: article
 ms.service: microsoft-365-security
-ms.localizationpriority:   # medium
 ---
 
 # Security operations overview

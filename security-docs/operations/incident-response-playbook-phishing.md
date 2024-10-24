@@ -476,7 +476,7 @@ You can investigate these events using Microsoft Defender for Endpoint.
 
 ### On what endpoint was the email opened?
 
-The tasks here are similar to the previous investigation step: [Did the user select links in the email?](##did-the-user-select-links-in-the-email)
+The tasks here are similar to the previous investigation step: [Did the user select links in the email?](#did-the-user-select-links-in-the-email)
 
 ### Was the attached payload executed?
 

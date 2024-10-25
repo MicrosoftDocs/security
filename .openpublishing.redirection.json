@@ -537,6 +537,31 @@
         "source_path": "security-docs/operations/security-operations-videos-and-decks.md",
         "redirect_url": "/security/operations/overview",
         "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/siem-xdr-overview.md",
+        "redirect_url": "/security/zero-trust/siem-xdr-overview",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/setup-xdr-tools.md",
+        "redirect_url": "/security/zero-trust/setup-xdr-tools",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/siem-workspace.md",
+        "redirect_url": "/security/zero-trust/siem-workspace",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/ingest-data-sources.md",
+        "redirect_url": "/security/zero-trust/ingest-data-sources",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "security-docs/operations/respond-incident.md",
+        "redirect_url": "/security/zero-trust/respond-incident",
+        "redirect_document_id": false
       }
   ] 
   } 

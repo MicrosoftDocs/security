@@ -13,7 +13,7 @@ ms.collection:
   - msftsolution-secops
   - msftsolution-scenario
   - zerotrust-azure
-ms.localizationpriority:   # medium
+ms.localizationpriority: medium
 ---
 
 # Step 1. Set up your XDR tools
@@ -69,7 +69,7 @@ Watch this short video to learn about the Microsoft Defender portal.
 
 Microsoft Defender XDR also ingests and includes the signals of Microsoft Entra ID Protection, as illustrated below.
 
-:::image type="content" source="/media/siem-xdr-entra-id-protection.svg" alt-text="A diagram that shows the integration of Microsoft Entra ID Protection with Microsoft Defender XDR." lightbox="/media/siem-xdr-entra-id-protection.svg" border="false":::
+:::image type="content" source="./media/siem-xdr-entra-id-protection.svg" alt-text="A diagram that shows the integration of Microsoft Entra ID Protection with Microsoft Defender XDR." lightbox="./media/siem-xdr-entra-id-protection.svg" border="false":::
 
 Microsoft Entra ID Protection is separate from Microsoft Defender XDR and is included with Microsoft Entra ID P2 licenses.
 

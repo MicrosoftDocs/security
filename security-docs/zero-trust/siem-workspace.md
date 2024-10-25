@@ -15,7 +15,7 @@ ms.collection:
 appliesto: 
     - Microsoft Sentinel in the Microsoft Defender portal
     - Microsoft Sentinel in the Azure portal
-ms.localizationpriority:   # medium
+ms.localizationpriority: medium
 ---
 
 # Step 2. Architect your Microsoft Sentinel workspace
@@ -30,7 +30,7 @@ If your organization has many Azure subscriptions, you might need a way to effic
 
 For example, the Microsoft Sentinel workspace in the following diagram is in the **Security** subscription under the **Platform** management group, which is part of the Microsoft Entra ID tenant.
 
-:::image type="content" source="/media/sentinel-workspaces.svg" alt-text="Diagram of an example Microsoft Sentinel workspace in a Microsoft Entra ID tenant." lightbox="/media/sentinel-workspaces.svg":::
+:::image type="content" source="./media/sentinel-workspaces.svg" alt-text="Diagram of an example Microsoft Sentinel workspace in a Microsoft Entra ID tenant." lightbox="./media/sentinel-workspaces.svg":::
 
 The Security Azure subscription and the Microsoft Sentinel workspace inherit the role-based access control (RBAC) and Azure policies that are applied to the Platform management group.
 

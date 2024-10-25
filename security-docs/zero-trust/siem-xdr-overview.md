@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
     - Microsoft Sentinel in the Microsoft Defender portal
     - Microsoft Sentinel in the Azure portal
-ms.localizationpriority:   # medium
+ms.localizationpriority: medium
 ---
 
 <!---

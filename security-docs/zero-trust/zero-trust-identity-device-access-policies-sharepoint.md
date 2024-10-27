@@ -67,7 +67,7 @@ To configure this policy see "Block or limit access to specific SharePoint site 
 
 Microsoft recommends you protect content in SharePoint sites with enterprise and specialized security content with device access controls. You do this by creating a policy that specifies the level of protection and the sites to apply the protection to.
 
-- Enterprise sites: Allow browser-only access. This prevents users from editing and downloading files.
+- Enterprise sites: Allow browser-only access. This prevents users from downloading, printing or syncing files.
 - Specialized security sites: Block access from unmanaged devices.
 
 See "Block or limit access to specific SharePoint site collections or OneDrive accounts" in [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).

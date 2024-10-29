@@ -1,5 +1,5 @@
 ---
-title: App consent grant investigation
+title: App consent grant investigation | Microsoft Security
 description: Learn how to identify and investigate app consent attacks, protect data, and minimize further risks.
 keywords: app consent grant, investigation, attack, illicit consent grant, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, Microsoft Defender XDR
 search.product: DART
@@ -56,9 +56,9 @@ To start the investigation process, you need the following data:
 
 Ensure you complete the following installations and configuration requirements:
 
-1. The AzureAD PowerShell module is installed.
-2. You have [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) rights on the tenant that the script run against.
-3. You're assigned local administrator role on the computer that you use to run the scripts.
+- The AzureAD PowerShell module is installed.
+- You have [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) rights on the tenant that the script run against.
+- You're assigned local administrator role on the computer that you use to run the scripts.
 
 [!INCLUDE [Azure AD PowerShell deprecation note](~/../security-docs/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
@@ -210,29 +210,29 @@ Based on Microsoft Incident Response team's observations, attackers use a combin
 
 1. To view the permissions, navigate to the **Registration** screen in the enterprise application.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/Viewpermissions.png" alt-text="view permissions":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-view-permissions.png" alt-text="Screenshot of how to view different permissions.":::
 
 2. Select **View API permissions**.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/Viewapipermissionbutton.png" alt-text="apipermissions":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-view-api-permission-button.png" alt-text="Screenshot of how to view and add API permissions.":::
 
 3. Select **Add a permission** and the following screen is displayed.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/Commonapi.png" alt-text="api":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-common-api.png" alt-text="Screenshot of how to request API permissions.":::
 
 4. Select **Microsoft Graph** to view the different types of permissions.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/RequestAPIpermissions.png" alt-text="types of permissions":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-request-api-permissions.png" alt-text="Screenshot of different types of API permissions.":::
 
 5. Select the type of permissions the registered application is using: **Delegated** **permissions** or **Application** **permissions**. In the above image, **Application permissions** is selected.
 
 6. You can search for one of the high-risk impact permissions such as **EduRoster**.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/RequestAPIpermissions_edu.png" alt-text="examplepermission":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-request-api-permissions-edu.png" alt-text="Screenshot of an example API permission request.":::
 
 7. Select **EduRoster** and expand the permissions.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/RequestAPIpermissions_selecteduroster.png" alt-text="eduroster":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-request-api-permissions-select-edu-roster.png" alt-text="Screenshot of an API permission item with a tooltip.":::
 
 8. You can now assign or review these permissions.
 
@@ -240,7 +240,7 @@ Based on Microsoft Incident Response team's observations, attackers use a combin
 
 ## Workflow
 
-[![App consent grant investigation workflow](./media/incident-response-playbook-app-consent/Appconsent_flow.png)]
+[![Flowchart of an App consent grant investigation workflow.](./media/incident-response-playbook-app-consent/ir-app-consent-flow.png)]
 
 You can also:
 
@@ -266,8 +266,7 @@ Use this checklist to perform application consent grant validation.
 
   You must be assigned with these roles:
 
-  - Global Administrator rights on the tenant to execute the script
-  - Local Administrator role on the computer from which you run the script
+    - Local Administrator role on the computer from which you run the script
 
 - **PowerShell configuration**
 
@@ -346,41 +345,41 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
 
     The **column headers** for output are shown in this image.
 
-    ![Example of column headers](./media/incident-response-playbook-app-consent/columnheaders.png)
+    ![Screenshot of Excel column headers.](./media/incident-response-playbook-app-consent/ir-column-headers.png)
 
 7. In the **ConsentType** column **(G),** search for the value **AllPrinciples**. The **AllPrincipals** permission allows the client application to access everyone's content in the tenancy. Native Microsoft 365 applications need this permission to work correctly. ***Every non-Microsoft application with this permission should be reviewed carefully***.
 
 8. In the **Permission** column **(F)**, review the permissions that each delegated application has. Look for **Read** and **Write** permission or __*. All__ permission, and review these permissions carefully because they might not be appropriate.
-![Example of Permission column F](./media/incident-response-playbook-app-consent/columnf.png)
+![Screenshot of app permissions in column F.](./media/incident-response-playbook-app-consent/ir-column-f.png)
 
     > [!NOTE]
     > Review the specific users that have consents granted. If high profile or high impact users have inappropriate consents granted, you should investigate further.
 
 9. In the **ClientDisplayName** column **(C)**, look for apps that seem suspicious, such as:
     - Apps with misspelled names
-        ![Example of a misspelled name](./media/incident-response-playbook-app-consent/misspeltnames.png)
+        ![Screenshot example of a misspelled name.](./media/incident-response-playbook-app-consent/ir-misspelled-names.png)
 
     - Unusual or bland names
-        ![Example of an unusual name](./media/incident-response-playbook-app-consent/boringnames.png)
+        ![Screenshot example of an unusual name.](./media/incident-response-playbook-app-consent/ir-boring-names.png)
 
     - Hacker-sounding names. You must review these names carefully.
-        ![Example of a hacker name](./media/incident-response-playbook-app-consent/hackernames.png)
+        ![Screenshot example of a hacker name.](./media/incident-response-playbook-app-consent/ir-hacker-names.png)
 
 **Example Output:** AllPrincipals and read write all. Applications might not have anything suspicious like bland names and are using MS graph. However, perform research and determine the purpose of the applications and the actual permissions the applications have in the tenant, as shown in this example.
 
-![Example of applications with the AllPrincipals ConsentType](./media/incident-response-playbook-app-consent/Exampleoutput.png)
+![Screenshot example of applications with the AllPrincipals ConsentType.](./media/incident-response-playbook-app-consent/ir-example-output.png)
 
 Here are some useful tips to review information security policy (ISP) investigations:
 
-1. ReplyURL/RedirectURL
+- ReplyURL/RedirectURL
     - Look for suspicious URLs
-2. Is the URL hosted on a suspicious domain?
+- Is the URL hosted on a suspicious domain?
     - Is it compromised?
     - Is the domain recently registered?
     - Is it a temporary domain?
-3. Are there terms of service/service agreement link in the app registration?
-4. Are the contents unique and specific to the application/publisher?
-5. Is the tenant that registered the application either newly created or compromised (for example, is the app registered by an at-risk user)?
+- Are there terms of service/service agreement link in the app registration?
+- Are the contents unique and specific to the application/publisher?
+- Is the tenant that registered the application either newly created or compromised (for example, is the app registered by an at-risk user)?
 
 ## Details of consent grant attack
 
@@ -397,18 +396,18 @@ While [each attack tends to vary, the core attack techniques are](https://attack
 - The access token is used to make API calls on behalf of the user.
 - If the user accepts, the attacker can gain access to the user's mails, forwarding rules, files, contacts, notes, profile, and other sensitive data and resources.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/Permissions.png" alt-text="Example of permissions request":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-permissions-request.png" alt-text="Screenshot example of permissions request."::: 
 
 ## Finding signs of an attack
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Audit**. Or to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
 1. On the **Audit** page, search all activities and all users, enter the start date and end date if necessary, and then select **Search**.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/Auditlogsearch1.png" alt-text="Example of an audit log search":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-audit-log-search-1.png" alt-text="Screenshot example of an audit log search."::: 
 
 1. Select **Filter** results and in the **Activity** field, enter **Consent** to application.
 
-    :::image type="content" source="./media/incident-response-playbook-app-consent/Auditlogsearch2.png" alt-text="Example of filtering an audit log search":::
+    :::image type="content" source="./media/incident-response-playbook-app-consent/ir-audit-log-search-2.png" alt-text="Screenshot example of filtering an audit log search.":::
 
 1. If you have activity under consent to grant, continue to the next step.
 1. Select the result to see the details of the activity. Select **More Information** to get details of the activity.
@@ -447,13 +446,14 @@ You can see the list of apps that are assigned to the user and the permissions g
 
 After finishing inventorying application access, review the audit log to determine the full scope of the breach. Search on the affected users, the time frames that the illicit application had access to your organization, and the permissions the app had. You can search the audit log in the Microsoft 365 Security & Microsoft Purview compliance portals.
 
-**Important:** If auditing wasn't enabled before the possible attack, you **won't** be able to investigate because auditing data isn't available.
+ > [!IMPORTANT]
+ > If auditing wasn't enabled before the possible attack, you **won't** be able to investigate because auditing data isn't available.
 
 ## How to prevent attacks and mitigate risks?
 
 - Regularly [audit applications](/azure/security/fundamentals/steps-secure-identity#audit-apps-and-consented-permissions) and granted permissions in your organization to ensure no unwarranted or suspicious applications are granted access to data.
 
-- [Review, detect, and remediate illicit consent grants in Office 365](/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants) for more best practices and safeguards against suspicious applications requesting OAuth consent.
+- [Review, detect, and remediate illicit consent grants in Office 365.](/microsoft-365/security/office-365-security/detect-and-remediate-illicit-consent-grants) for more best practices and safeguards against suspicious applications requesting OAuth consent.
 
 If your organization has the appropriate license:
 
@@ -494,7 +494,7 @@ To help prevent consent attacks from affecting Microsoft Entra ID and Office 365
 > [!NOTE]
 > Any tasks that require administrator's approval has operational overhead. The "**Consent and permissions, User consent settings**" is in **Preview** currently. Once it's ready for general availability (GA), the "**Allow user consent from verified publishers, for selected permissions**" feature should reduce administrators' overhead and it's recommended for most organizations.
 
-:::image type="content" source="./media/incident-response-playbook-app-consent/consentpermissions.png" alt-text="consent":::
+:::image type="content" source="./media/incident-response-playbook-app-consent/ir-consent-permissions.png" alt-text="Screenshot example of consent permissions.":::
 
 **Educate your application developers to follow the trustworthy app ecosystem.**
 To help developers build high-quality and secure integrations, we're also announcing [public preview of the Integration Assistant in Microsoft Entra app registrations.](/azure/active-directory/develop/identity-platform-integration-checklist)
@@ -556,7 +556,6 @@ Examine guidance for identifying and investigating these additional types of att
 
 - [Phishing](incident-response-playbook-phishing.md)
 - [Password spray](incident-response-playbook-password-spray.md)
-- [Microsoft Incident Response ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
 
 ## Incident response resources
 

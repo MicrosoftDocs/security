@@ -40,56 +40,30 @@ Meeting these objectives allows organizations to accelerate business enablement 
 
 ## How to consume the guidance
 
-:::row:::
-   :::column span="":::
-      :::image type="content" source="media/adoption/chief-information-security-officer-workshop.png" alt-text="A diagram of the CISO Workshop at a high level." lightbox="media/adoption/chief-information-security-officer-workshop.png":::
-   :::column-end:::
-   :::column span="2":::
-      [**The Chief Information Security Officer (CISO) Workshop**](ciso-workshop.md)
+### The Chief Information Security Officer (CISO) Workshop
 
-      A collection of security learnings, principles, and recommendations for modernizing security in your organization in both PowerPoint and video form.
-   :::column-end:::
-:::row-end:::
+[The Chief Information Security Officer (CISO) Workshop](ciso-workshop.md) is a collection of security learnings, principles, and recommendations for modernizing security in your organization in both PowerPoint and video form.
 
-:::row:::
-   :::column span="2":::
-      [**The Microsoft Cybersecurity Reference Architecture (MCRA)**](/security/cybersecurity-reference-architecture/mcra)
+:::image type="content" source="media/adoption/chief-information-security-officer-workshop.png" alt-text="A diagram of the CISO Workshop at a high level." lightbox="media/adoption/chief-information-security-officer-workshop.png":::
 
-      This architecture shows you how Microsoft security capabilities can integrate with other Microsoft and 3rd party platforms. The MCRA is provided in the form of PowerPoint slides with notes.
-   :::column-end:::
-   :::column span="":::
-      :::image type="content" source="media/adoption/microsoft-cybersecurity-reference-architecture.png" alt-text="A diagram showing the MCRA at a high level." lightbox="media/adoption/microsoft-cybersecurity-reference-architecture.png":::
-   :::column-end:::
-:::row-end:::
+### The Microsoft Cybersecurity Reference Architecture (MCRA)
 
-:::row:::
-   :::column span="":::
-      :::image type="content" source="media/adoption/zero-trust-diagram.png" alt-text="A diagram of a Zero Trust architecture." lightbox="media/adoption/zero-trust-diagram.png":::
-   :::column-end:::
-   :::column span="2":::
-      **Business guidance for security modernization** including multiple planning and execution guides for common focus areas.
+[The Microsoft Cybersecurity Reference Architecture (MCRA)](/security/cybersecurity-reference-architecture/mcra) shows you how Microsoft security capabilities can integrate with other Microsoft and 3rd party platforms. The MCRA is provided in the form of PowerPoint slides with notes.
 
-      - [Rapidly modernize your security posture for Zero Trust](/security/zero-trust/adopt/rapidly-modernize-security-posture)
-      - [Secure remote and hybrid work with Zero Trust](/security/zero-trust/adopt/secure-remote-hybrid-work)
-      - [Identify and protect sensitive business data with Zero Trust](/security/zero-trust/adopt/identify-protect-sensitive-business-data)
-      - [Meet regulatory and compliance requirements with Zero Trust](/security/zero-trust/adopt/meet-regulatory-compliance-requirements)
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="media/adoption/microsoft-cybersecurity-reference-architecture.png" alt-text="A diagram showing the MCRA at a high level." lightbox="media/adoption/microsoft-cybersecurity-reference-architecture.png":::
 
-:::row:::
-   :::column span="2":::
-      [**Common security antipatterns**](https://download.microsoft.com/download/5/d/3/5d3058a9-501b-4c13-9c95-9664c303bb97/antipatterns.pdf)
+### Business guidance for security modernization
 
-      All of the SAF modules include documentation for antipatterns we commonly observe across organizations, and guidance for overcoming them. 
-      
-      You can [download a PDF](https://download.microsoft.com/download/5/d/3/5d3058a9-501b-4c13-9c95-9664c303bb97/antipatterns.pdf) that includes many of the antipatterns from across the SAF modules.
-   :::column-end:::
-   :::column span="":::
-      :::image type="content" source="media/adoption/antipatterns.png" alt-text="A diagram showing common security antipatterns at a high level." lightbox="media/adoption/antipatterns.png":::
-   :::column-end:::
-:::row-end:::
+Business guidance for security modernization includes multiple planning and execution guides for common focus areas.
 
-In addition to these publicly available elements, Microsoft also offers these and other workshops as expert led engagements for Microsoft Unified customers.
+- [Rapidly modernize your security posture for Zero Trust](/security/zero-trust/adopt/rapidly-modernize-security-posture)
+- [Secure remote and hybrid work with Zero Trust](/security/zero-trust/adopt/secure-remote-hybrid-work)
+- [Identify and protect sensitive business data with Zero Trust](/security/zero-trust/adopt/identify-protect-sensitive-business-data)
+- [Meet regulatory and compliance requirements with Zero Trust](/security/zero-trust/adopt/meet-regulatory-compliance-requirements)
+
+### Common security antipatterns
+
+All of the SAF modules include documentation for antipatterns we commonly observe across organizations, and guidance for overcoming them.  You can down the PDF [Common security antipatterns](https://download.microsoft.com/download/5/d/3/5d3058a9-501b-4c13-9c95-9664c303bb97/antipatterns.pdf) that includes many of the antipatterns from across the SAF modules.
 
 ### Microsoft led workshops
 

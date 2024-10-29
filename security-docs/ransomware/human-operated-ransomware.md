@@ -10,7 +10,7 @@ ms.collection:
 ms.custom: cxdef-zt-ransomware
 ms.topic: article
 description: Learn what ransomware is, how it works, and how to protect against it with links to the Microsoft products that help prevent ransomware.
-ms.date: 02/22/2024
+ms.date: 10/16/2024
 ---
 
 # What is ransomware?
@@ -51,7 +51,11 @@ Human-operated ransomware attacks involve the following stages:
 ## Prevalent threat actors associated with ransomware campaigns
 
 - [LockBit](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/part-1-lockbit-2-0-ransomware-bugs-and-database-recovery/ba-p/3254354) – Financially motivated ransomware-as-a-service (RaaS) campaign and most prolific ransomware threat actor in the 2023-24 time period
-- [Black Basta](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Basta&msockid=3fd141c935036ef610d9506e34696fe) – Gains access through spear-phishing emails and uses PowerShell to launch an encryption payload 
+- [Black Basta](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Basta&msockid=3fd141c935036ef610d9506e34696fe) – Gains access through spear-phishing emails and uses PowerShell to launch an encryption payload
+- 
+## How Microsoft can help once an attack has begun
+
+To help mitigate in-progress ransomware attacks, Microsoft Incident Response can leverage and deploy [Microsoft Defender for Identity](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-for-identity) — a cloud-based security solution that helps detect and respond to identity-related threats. Bringing identity monitoring into incident response early supports the affected organization's security operations team to regain control. Microsoft Incident response uses Defender for Identity to help identify the incident scope and impacted accounts, protect critical infrastructure, and evict the threat actor. The response team then brings in [Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint) to trace the threat actor’s movements and disrupt their attempts to use compromised accounts to reenter the environment. After containing the incident andregaining and full administrative control over the environment, Microsoft Incident Response collaborates with the customer to help prevent future cyberattacks. 
 
 ### Automated ransomware attacks
 
@@ -84,7 +88,19 @@ First, prevent phishing and malware delivery with [Microsoft Defender for Office
 
 For a comprehensive view of ransomware and extortion and how to protect your organization, use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation. 
 
-Here's a summary of the guidance:
+## Follow Microsoft Incident Response's approach to ransomware prevention and mitigation.
+
+1. Assess the situation	by analyzing the suspicious activity that alerted your team to the attack. 
+
+2. What time/date did you first learn of the incident? What logs are available and is there any indication that the actor is currently accessing systems?
+   
+3. Identify the affected line-of-business (LOB) applications, and get any impacted systems back online. Does the affected application require an identity that might have been compromised?
+
+4. Are backups of the application, configuration, and data available and regularly verified using a restore exercise?
+
+5. Determine the compromise recovery (CR) process to remove the threat actor from the environment.
+
+## Here's a summary of Microsoft's Human-Operated Ransomware Mitigation Project Plan guidance:
 
 [The summary of the guidance in the Human-Operated Ransomware Mitigation Project Plan](media/human-operated-ransomware/stakes-weaknesses-plan.png)
 
@@ -109,7 +125,7 @@ Download the [Protect your organization from ransomware poster](https://download
 Key information from Microsoft:
 
 - [The latest ransomware trends from Microsoft](https://www.microsoft.com/security/blog/threat-intelligence/ransomware/), Microsoft latest ransomware blog
-- [2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023) 
+- [2024 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/intelligence-reports/microsoft-digital-defense-report-2024) 
 Microsoft 365:
 
 - [Deploy ransomware protection for your Microsoft 365 tenant](/microsoft-365/solutions/ransomware-protection-microsoft-365)

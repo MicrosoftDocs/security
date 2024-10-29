@@ -1,5 +1,5 @@
 ---
-title: Compromised and malicious applications investigation
+title: Compromised and malicious applications investigation | Microsoft Security
 description: Learn how to investigate if one or more applications in a customer tenant are compromised.
 keywords: compromise, malicious, applications, investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, firewall, incident response, playbook, guidance, Microsoft Defender XDR
 search.product: DART
@@ -76,7 +76,7 @@ For an effective investigation, install the following PowerShell module and the 
 
 ## Workflow
 
-![Detailed flow of the investigation steps](./media/compromised-malicious-apps/IR_playbook_compromised_apps_flow.png)
+![Detailed flowchart of investigation steps.](./media/compromised-malicious-apps/ir-playbook-compromised-apps-flow.png)
 
 ## Investigation steps
 
@@ -106,11 +106,11 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/owners
 
 This feature is in preview at the time of writing this playbook and licensing requirements apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but can also be used to further investigate into other triggers you've identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Microsoft Graph API.
 
-:::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal_2.png" alt-text="Risk Detection portal":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-workload-identity-risk-detection-signal-portal-2.png" alt-text="Screenshot of the Risk Detection Details portal page.":::
 
-:::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal.png" alt-text="Risk Detection details":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-workload-identity-risk-detection-signal-portal.png" alt-text="Screenshot of the Risk Detection details user interface page.":::
 
-:::image type="content" source="./media/compromised-malicious-apps/SPRiskDetectionGraphSample.png" alt-text="A sample of Service Principal Risk Detection Graph API":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-sp-risk-detection-graph-sample.png" alt-text="A sample of Service Principal Risk Detection Graph API.":::
 
 ### Check for unusual sign-in behavior
 
@@ -122,13 +122,13 @@ The first step of the investigation is to look for evidence of unusual authentic
 - Frequency - is there an increased frequency of authentications for the Service Principal?
 - Leak Credentials - are any application credentials hard coded and published on a public source like GitHub?
 
-If you deployed Entra ID Identity Protection - risky workload identities, check the **Suspicious Sign-ins and Leak Credentials detections**. For more information, see [workload identity risk detentions](/azure/active-directory/identity-protection/concept-workload-identity-risk#workload-identity-risk-detections).
+If you deployed Microsoft Entra ID Identity Protection - risky workload identities, check the **Suspicious Sign-ins and Leak Credentials detections**. For more information, see [workload identity risk detentions](/azure/active-directory/identity-protection/concept-workload-identity-risk#workload-identity-risk-detections).
 
 ### Check the target resource
 
-Within Service principal sign-ins, also check the **Resource** that the Service Principal was accessing during the authentication. It is important to get input from the application owner because they are familiar with which resources the Service Principal should be accessing.
+Within Service principal sign-ins, also check the **Resource** that the Service Principal was accessing during the authentication. It's important to get input from the application owner because they're familiar with which resources the Service Principal should be accessing.
 
-:::image type="content" source="./media/compromised-malicious-apps/TargetResource.png" alt-text="Check the Resource for Service Principal":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-target-resource.png" alt-text="Screenshot of how to check the resource for Service Principal.":::
 
 ### Check for abnormal credential changes
 
@@ -139,13 +139,13 @@ Use Audit logs to get information on credential changes on applications and serv
 - Check both the application and associated service principal objects.
 - Check any [custom role](/azure/active-directory/roles/custom-enterprise-apps) that you created or modified. Note the permissions marked below:
 
-:::image type="content" source="./media/compromised-malicious-apps/CustomRolesToCheck.png" alt-text="Check custom roles that are created or have been modified":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-custom-roles-to-check.png" alt-text="Screenshot of how to check custom roles that are created or have been modified.":::
 
 If you deployed app governance in Microsoft Defender for Cloud Apps, check the Azure portal for alerts relating to the application. For more information, see [Get started with app threat detection and remediation](/defender-cloud-apps/app-governance-detect-remediate-get-started).
 
 If you deployed Identity Protection, check the "Risk detections" report and in the user or workload identity "risk history."
 
-:::image type="content" source="./media/compromised-malicious-apps/WorkloadIdentity-RiskDetectionSignalPortal_2.png" alt-text="Risk Detection portal":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-workload-identity-risk-detection-signal-portal-2.png" alt-text="Screenshot of the Risk Detection portal user interface.":::
 
 If you deployed Microsoft Defender for Cloud Apps, ensure that the "Unusual addition of credentials to an OAuth app" policy is enabled, and check for open alerts.
 
@@ -178,11 +178,10 @@ Also, if you deployed Microsoft Defender for Cloud Apps, check the Azure portal 
 
 Review your tenant for potential keyCredential property information disclosure as outlined in [CVE-2021-42306](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42306).
 
-To identify and remediate impacted Microsoft Entra applications associated with impacted Automation Run-As accounts, please navigate to the [remediation guidance GitHub Repo](https://github.com/microsoft/aad-app-credential-tools/blob/main/azure-automation/azure-automation-runas-credential-remediation.md). 
+To identify and remediate impacted Microsoft Entra applications associated with impacted Automation Run-As accounts, navigate to the [remediation guidance GitHub Repo](https://github.com/microsoft/aad-app-credential-tools/blob/main/azure-automation/azure-automation-runas-credential-remediation.md). 
 
->[!Important]
->**Evidence of compromise:**
->If you discover evidence of compromise, then it is important to take the steps highlighted in the containment and recovery sections. These steps help address the risk, but perform further investigation to understand the source of the compromise to avoid further impact and ensure bad actors are removed. 
+> [!IMPORTANT]
+> If you discover evidence of compromise, it's important to take the steps highlighted in the containment and recovery sections. These steps help address the risk, but perform further investigation to understand the source of the compromise to avoid further impact and ensure bad actors are removed. 
 
 There are two primary methods of gaining access to systems via the use of applications. The first involves an application being consented to by an administrator or user, usually via a phishing attack. This method is part of initial access to a system and is often referred to as "consent phishing".
 
@@ -302,20 +301,20 @@ AuditLogs
 
 You can also use the Microsoft Entra audit logs, filter by **Consent to application**. In the Audit Log details section, click **Modified Properties**, and then review the **ConsentAction.Permissions**:
 
-:::image type="content" source="./media/compromised-malicious-apps/AuditLogDetails-ConsentPermissions.png" alt-text="Use the Microsoft Entra audit logs":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-audit-log-details-consent-permissions.png" alt-text="Screenshot of how to use the Microsoft Entra audit logs.":::
 
 ## Containment steps
 
 After identifying one or more applications or workload identities as either malicious or compromised, you might not immediately want to roll the credentials for this application, nor you want to immediately delete the application. 
 
->[!Important]
->Before you perform the following step, your organization must weigh up the security impact and the business impact of disabling an application. If the business impact of disabling an application is too great, then consider preparing and moving to the Recovery stage of this process.
+> [!IMPORTANT]
+> Before you perform the following step, your organization must weigh up the security impact and the business impact of disabling an application. If the business impact of disabling an application is too great, then consider preparing and moving to the Recovery stage of this process.
 
 ### Disable compromised application
 
 A typical containment strategy involves the disabling of sign-ins to the application identified, to give your incident response team or the affected business unit time to evaluate the impact of deletion or key rolling. If your investigation leads you to believe that administrator account credentials are also compromised, this type of activity should be coordinated with an eviction event to ensure that all routes to accessing the tenant are cut off simultaneously. 
 
-:::image type="content" source="./media/compromised-malicious-apps/DisabledAppExample.png" alt-text="Toggle to disable users to sign-in":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-disabled-app-example.png" alt-text="Screenshot of how to disable user sign-in.":::
 
 You can also use the following [Microsoft Graph PowerShell](/powershell/microsoftgraph) code to disable the sign-in to the app:
 
@@ -351,7 +350,7 @@ if ($servicePrincipal) {
 
 ### Remediate Service Principals
 
-1. List all credentials assigned to the **Risky Service Principal**. The best way to do this is to perform a Microsoft Graph call using GET ~/application/{id} where id passed is the application object ID.
+1. List all credentials assigned to the **Risky Service Principal**. The best way to do this is to perform a Microsoft Graph call using GET ~/application/{id} where ID passed is the application object ID.
 
     - Parse the output for credentials. The output may contain passwordCredentials or keyCredentials. Record the keyIds for all. 
 
@@ -392,7 +391,7 @@ if ($servicePrincipal) {
    POST ~/applications/{id}/removeKey
    ```
 
-4. Remediate all Service Principals associated with the application. Follow this step if your tenant hosts/registers a multi-tenant application, and/or registers multiple service principals associated to the application. Perform similar steps to what is previously listed:
+4. Remediate all Service Principals associated with the application. Follow this step if your tenant hosts/registers a multitenant application, and/or registers multiple service principals associated to the application. Perform similar steps to what is previously listed:
 
 - GET ~/servicePrincipals/{id}
 - Find passwordCredentials and keyCredentials in the response, record all old keyIds
@@ -455,7 +454,8 @@ If you disable or if you soft delete the application, set up monitoring in Micro
 - **Targets** - App ID and Display Name
 - **Modified Properties** - Property name = account enabled, new value = true
 
-Note: Microsoft globally disables applications found to be violating its Terms of Service. In those cases, these applications show `DisabledDueToViolationOfServicesAgreement` on the `disabledByMicrosoftStatus` property on the related [application](/graph/api/resources/application) and [service principal](/graph/api/resources/serviceprincipal) resource types in Microsoft Graph. To prevent them from being instantiated in your organization again in the future, you cannot delete these objects.
+> [!NOTE] 
+> Microsoft globally disables applications found to be violating its Terms of Service. In those cases, these applications show `DisabledDueToViolationOfServicesAgreement` on the `disabledByMicrosoftStatus` property on the related [application](/graph/api/resources/application) and [service principal](/graph/api/resources/serviceprincipal) resource types in Microsoft Graph. To prevent them from being instantiated in your organization again in the future, you can't delete these objects.
 
 ### Implement Identity Protection for workload identities
 
@@ -465,13 +465,13 @@ For more information, see [Securing workload identities with Identity Protection
 
 These alerts appear in the Identity Protection portal and can be exported into SIEM tools through [Diagnostic Settings](/azure/active-directory/identity-protection/howto-export-risk-data) or the [Identity Protection APIs](/graph/api/resources/identityprotection-overview?view=graph-rest-1.0&preserve-view=true).
 
-:::image type="content" source="./media/compromised-malicious-apps/IR_playbook_workload_identity_detections.png" alt-text="Review risks and alerts in the Identity Protection portal":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-playbook-workload-identity-detections.png" alt-text="Screenshot of how to review risks and alerts in the Identity Protection portal.":::
 
 ### Conditional Access for risky workload identities
 
-Conditional Access allows you to block access for specific accounts that you designate when Identity Protection marks them as “at risk.” Note that the enforcement through Conditional Access is currently limited to single-tenant applications only.
+Conditional Access allows you to block access for specific accounts that you designate when Identity Protection marks them as “at risk.” The enforcement through Conditional Access is currently limited to single-tenant applications only.
 
-:::image type="content" source="./media/compromised-malicious-apps/RiskbasedCAPolicySample.png" alt-text="Control user access based on conditional access policy":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-risk-based-ca-policy-s.png" alt-text="Screenshot of how to control user access based on conditional access policy.":::
 
 For more information, see [Conditional Access for workload identities](/azure/active-directory/conditional-access/workload-identity).
 
@@ -481,7 +481,7 @@ For more information, see [Conditional Access for workload identities](/azure/ac
 
 Review the user consent settings under **Microsoft Entra ID** > **Enterprise applications** > **Consent and permissions** > **User consent settings**.
 
-:::image type="content" source="./media/compromised-malicious-apps/UserConsentSettings.png" alt-text="Select Allow user consent for apps from the options":::
+:::image type="content" source="./media/compromised-malicious-apps/ir-user-consent-settings.png" alt-text="Screenshot of how to allow user consent for apps.":::
 
 To review configuration options, see [Configure how users consent to apps](/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal).
 
@@ -489,7 +489,7 @@ To review configuration options, see [Configure how users consent to apps](/azur
 
 When an application developer directs users to the admin consent endpoint with the intent to give consent for the entire tenant, it's known as admin consent flow. To ensure the admin consent flow works properly, application developers must list all permissions in the RequiredResourceAccess property in the application manifest.
 
-Most organizations disable the ability for their users to consent to applications. To give users the ability to still request consent for applications and have administrative review capability, it is recommended to implement the admin consent workflow. Follow the [admin consent workflow steps](/azure/active-directory/manage-apps/configure-admin-consent-workflow) to configure it in your tenant.
+Most organizations disable the ability for their users to consent to applications. To give users the ability to still request consent for applications and have administrative review capability, it's recommended to implement the admin consent workflow. Follow the [admin consent workflow steps](/azure/active-directory/manage-apps/configure-admin-consent-workflow) to configure it in your tenant.
 
 For high privileged operations such as admin consent, have a privileged access strategy defined in our [guidance](overview.md). 
 
@@ -519,7 +519,6 @@ Examine guidance for identifying and investigating these additional types of att
 - [Phishing](incident-response-playbook-phishing.md)
 - [Password spray](incident-response-playbook-password-spray.md)
 - [App consent grant](incident-response-playbook-app-consent.md)
-- [Microsoft Incident Response ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md)
 
 ## Incident response resources
 

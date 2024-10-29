@@ -2,7 +2,6 @@
 title: Secure applications with Continuous Access Evaluation
 description: As a developer, you can improve application security with Continuous Access Evaluation. In this article, you learn how to ensure Zero Trust support in your apps that receive authorization to access resources when they acquire access tokens from Microsoft Entra ID.
 ms.date: 05/24/2024
-ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual

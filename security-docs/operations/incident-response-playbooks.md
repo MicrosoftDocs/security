@@ -1,5 +1,5 @@
 ---
-title: Incident response playbooks
+title: Incident response playbooks | Microsoft Security docs
 description: Use these playbooks to quickly respond to security incidents in the Microsoft cloud.
 keywords: investigation, attack, microsoft threat protection, microsoft 365, search, query, telemetry, security events, antivirus, incident, response, incident response, playbook, guidance, compromise, Microsoft Defender XDR
 search.product: DART
@@ -19,7 +19,6 @@ ms.collection:
 ms.topic: article
 ms.subservice:: m365d
 ms.custom: cxdef-zt-ransomware 
-ms.localizationpriority:   # medium
 ms.date: 03/08/2024
 ---
 
@@ -43,10 +42,9 @@ Each playbook includes:
 
 - **Prerequisites:** The specific requirements you need to complete before starting the investigation. For example, logging that should be turned on and roles and permissions that are required.
 - **Workflow:** The logical flow that you should follow to perform the investigation.
-- **Checklist:** A list of tasks for the steps in the flow chart. This checklist can be helpful in highly-regulated environments to verify what you have done.
+- **Checklist:** A list of tasks for the steps in the flow chart. This checklist can be helpful in highly regulated environments to verify what you have done.
 - **Investigation steps:** Detailed step-by-step guidance for the specific investigation.
 
-Also see [Microsoft Incident Response ransomware approach and best practices](incident-response-playbook-dart-ransomware-approach.md).
 
 ## Incident response resources
 

@@ -403,7 +403,7 @@ Rotate secrets associated with the identified user or device credentials.
   * Before you reenable the user account, delete unknown MFA options
 * Expire the hardcoded or plaintext credentials in your code repositories:
   * Review the leaked credentials. [Workload identity risk detections](/azure/active-directory/identity-protection/concept-workload-identity-risk) describes how to protect applications and service principals.
-  * Run credential scanning. [Credential Scanning](https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/credential_scanning/) describes how to automatically inspect a project to ensure that no secrets are included in the project's source code.
+  * Run credential scanning. 
 * Delete added or changed inbox rules in the Microsoft 365 portal:
   * [Configure email forwarding in Microsoft 365](/microsoft-365/admin/email/configure-email-forwarding)
   * [Phishing investigation](incident-response-playbook-phishing.md)

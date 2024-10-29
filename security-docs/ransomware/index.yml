@@ -57,7 +57,7 @@ landingContent:
       - linkListType: reference
         links:
         - text: Recent Microsoft Security ransomware blog
-          url:  https://www.microsoft.com/security/blog/2024/07/29/ransomware-operators-exploit-esxi-hypervisor-vulnerability-for-mass-encryption
+          url:  https://www.microsoft.com/en-us/security/blog/2024/10/17/new-macos-vulnerability-hm-surf-could-lead-to-unauthorized-data-access
         - text: Recent Microsoft ransomware social media posts 
           url:  https://www.linkedin.com/posts/microsoft-threat-intelligence_in-the-second-quarter-of-2024-financially-activity-7218696257739923456-KKy_
         - text: Automatic disruption of ransomware attacks
@@ -68,8 +68,8 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-        - text: Storm-0501 - Ransomware attacks expanding to hybrid cloud environments - September 2024
-          url:  https://www.microsoft.com/en-us/security/blog/2024/09/26/storm-0501-ransomware-attacks-expanding-to-hybrid-cloud-environments
+        - text: Microsoft Threat Intelligence healthcare ransomware report highlights need for collective industry action - October 2024
+          url:  https://www.microsoft.com/en-us/security/blog/2024/10/22/microsoft-threat-intelligence-healthcare-ransomware-report-highlights-need-for-collective-industry-action
         - text: Ransomware as a service. Understanding the cybercrime gig economy and how to protect yourself
           url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
         - text: Octo Tempest - A recurring ransomware threat

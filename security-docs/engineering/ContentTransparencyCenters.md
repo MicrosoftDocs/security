@@ -1,7 +1,7 @@
 ---
 title: Transparency Centers
 description: This document provides an overview of the transparency centers throughout the world for the Government Security Program.
-ms.date: 6/23/2023
+ms.date: 10/29/2024
 ms.service: security
 ms.author: xili13
 author: laramillermsft
@@ -14,7 +14,7 @@ Microsoft is committed to providing an unprecedented level of transparency throu
 
 ## A Secure Facility for Inspection and Analysis
 
-Transparency Centers provide GSP participants with an opportunity to visit a secure facility to conduct deep levels of document and source code inspection and analysis. To support those efforts, Microsoft has five Transparency Centers throughout the world: United States, Ireland, Singapore, Brazil, and China. Participants have access to documents and source code and an environment for in-depth inspection with industry standard tools.Currently, the Transparency Centers provide source code for products such as **Windows, Windows Server, Office, Exchange Server, SQL Server, and SharePoint Server**.
+Transparency Centers provide GSP participants with an opportunity to visit a secure facility to conduct deep levels of document and source code inspection and analysis. To support those efforts, Microsoft has four Transparency Centers throughout the world: United States, Ireland, Singapore, and Brazil. Participants have access to documents and source code and an environment for in-depth inspection with industry standard tools.Currently, the Transparency Centers provide source code for products such as **Windows, Windows Server, Office, Exchange Server, SQL Server, and SharePoint Server**.
 
 ## Center Visits
 

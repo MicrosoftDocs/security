@@ -123,7 +123,7 @@ For more information, see [Roles and permissions in Microsoft Sentinel](/azure/s
 
 Azure Lighthouse enables multitenant management with scalability, higher automation, and enhanced governance across resources. With Azure Lighthouse you can manage multiple Microsoft Sentinel instances across Microsoft Entra tenants at scale. Here’s an example.
 
-:::image type="content" source="./media/sentinel-workspaces-multi-tenant.svg" alt-text="Diagram of an example use of Azure Lighthouse across multiple Microsoft Entra tenants." lightbox="./media/sentinel-workspaces-multi-tenant.svg" border="false":::
+:::image type="content" source="./media/sentinel-workspaces-multitenant.svg" alt-text="Diagram of an example use of Azure Lighthouse across multiple Microsoft Entra tenants." lightbox="./media/sentinel-workspaces-multitenant.svg" border="false":::
 
 With Azure Lighthouse, you can run queries across multiple workspaces or create workbooks to visualize and monitor data from your connected data sources and gain extra insight. It’s important to consider Zero Trust principles. See [Recommended security practices](/azure/lighthouse/concepts/recommended-security-practices) to implement least privileges access controls for Azure Lighthouse.
 

@@ -64,7 +64,7 @@ This solution guide provides information for both methods. Throughout this solut
 
 The following illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel with the unified security operations platform.
 
-:::image type="content" source="./media/sentinel-xdr-usx.png" alt-text="Diagram of a Microsoft Sentinel and Microsoft Defender XDR architecture with the unified security operations platform." lightbox="./media/sentinel-xdr-usx.png" border="false":::
+:::image type="content" source="./media/sentinel-xdr-unified-security-experience.png" alt-text="Diagram of a Microsoft Sentinel and Microsoft Defender XDR architecture with the unified security operations platform." lightbox="./media/sentinel-xdr-unified-security-experience.png" border="false":::
 
 In this diagram:
 

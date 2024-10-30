@@ -3,7 +3,6 @@ title: Reduce overprivileged permissions and apps
 description: Learn why applications shouldn't request more permissions than they need (overprivileged) and how to limit privilege to manage access and improve security.
 author: janicericketts
 ms.author: jricketts
-ms.service: identity
 ms.topic: conceptual
 ms.date: 05/24/2024
 ms.custom: template-concept

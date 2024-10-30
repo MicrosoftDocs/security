@@ -40,7 +40,7 @@
         - name: Responding to ransomware attacks
           href: /microsoft-365/security/defender/playbook-responding-ransomware-m365-defender
         - name: Microsoft Incident Response team approach to ransomware
-          href: incident-response-playbook-dart-ransomware-approach.md
+          href: /security/ransomware/incident-response-playbook-dart-ransomware-approach.md
         - name: Compromised and malicious applications
           href: incident-response-playbook-compromised-malicious-app.md
         - name: Token theft playbook

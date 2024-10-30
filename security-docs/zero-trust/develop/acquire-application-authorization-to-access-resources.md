@@ -3,7 +3,6 @@ title: Acquire authorization to access resources
 description: As a developer, learn how to best ensure Zero Trust when acquiring resource access permissions for your application.
 author: janicericketts
 ms.author: jricketts
-ms.service: identity
 ms.topic: conceptual
 ms.date: 05/24/2024
 ms.custom: template-concept

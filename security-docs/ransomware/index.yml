@@ -6,6 +6,7 @@ summary: Learn how to better protect your organization from ransomware, extortio
 metadata:
   title: Microsoft defense against ransomware, extortion, and intrusion # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn how to better protect your organization from ransomware, extortion, and intrusion  # Required; article description that is displayed in search results. < 160 chars.
+
   services: na
   ms.service: microsoft-365-security
   ms.subservice: m365d
@@ -53,7 +54,7 @@ landingContent:
           url:  /azure/security/fundamentals/backup-plan-to-protect-against-ransomware
         - text: How do I proactively hunt for ransomware?
           url:  /defender-xdr/advanced-hunting-find-ransomware
-        - text: Can I download a ransomware incident response playbook? 
+        - text: How can I download a ransomware incident response playbook? 
           url:  https://download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
 
   # Card 
@@ -62,20 +63,19 @@ landingContent:
       - linkListType: reference
         links:
         - text: Recent Microsoft Security ransomware blog
-          url:  https://www.microsoft.com/security/blog/2024/07/29/ransomware-operators-exploit-esxi-hypervisor-vulnerability-for-mass-encryption
+          url:  https://www.microsoft.com/en-us/security/blog/2024/10/17/new-macos-vulnerability-hm-surf-could-lead-to-unauthorized-data-access
         - text: Recent Microsoft ransomware social media posts 
           url:  https://www.linkedin.com/posts/microsoft-threat-intelligence_in-the-second-quarter-of-2024-financially-activity-7218696257739923456-KKy_
         - text: Automatic disruption of ransomware attacks
           url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/
-
 
 # Card
   - title: Microsoft Blogs about ransomware
     linkLists:
       - linkListType: reference
         links:
-        - text: Ransomware operators exploit ESXi hypervisor vulnerability for mass encryption - July 2024
-          url:  https://www.microsoft.com/en-us/security/blog/2024/07/29/ransomware-operators-exploit-esxi-hypervisor-vulnerability-for-mass-encryption
+        - text: Microsoft Threat Intelligence healthcare ransomware report highlights need for collective industry action - October 2024
+          url:  https://www.microsoft.com/en-us/security/blog/2024/10/22/microsoft-threat-intelligence-healthcare-ransomware-report-highlights-need-for-collective-industry-action
         - text: Ransomware as a service. Understanding the cybercrime gig economy and how to protect yourself
           url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
         - text: Octo Tempest - A recurring ransomware threat

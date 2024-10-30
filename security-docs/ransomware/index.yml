@@ -14,7 +14,9 @@ metadata:
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
   ms.date: 10/11/2024 #Required; mm/dd/yyyy format.
-  ms.custom: cx-rw
+  ms.custom:
+  - cx-ti
+  - cx-rw
   
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

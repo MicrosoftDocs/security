@@ -1,13 +1,14 @@
 ---
-title: "Microsoft Security Best Practices module: Privileged administration"
+title: Privileged administration videos and slide decks
 ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: security
-ms.localizationpriority:   # medium
+ms.localizationpriority: medium
 description: "Learn how to protect accounts with privileged access."
+ms.date: 11/06/2024
 ---
 
 # Microsoft Security Best Practices module: Privileged administration

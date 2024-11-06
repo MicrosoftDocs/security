@@ -11,6 +11,7 @@ ms.collection:
 ms.service: microsoft-365-security
 ms.custom: cxdef-zt-ransomware 
 ms.localizationpriority: medium
+ms.date: 11/06/2024
 ---
 
 # Incident response overview

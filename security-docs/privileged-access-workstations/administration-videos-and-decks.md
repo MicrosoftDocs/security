@@ -6,8 +6,9 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: security
-ms.localizationpriority:   # medium
+ms.localizationpriority: medium
 description: "Learn how to protect accounts with privileged access."
+https://learn.microsoft.com/en-us/security/privileged-access-workstations/administration-videos-and-decks
 ---
 
 # Microsoft Security Best Practices module: Privileged administration

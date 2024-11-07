@@ -15,7 +15,7 @@ ms.collection:
 
 <!---
 
-Writers notes:
+Writers note:
 
 For updates to product names, please also update the appropriate figures.
 

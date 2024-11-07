@@ -48,7 +48,7 @@ This series of articles helps you apply the [principles of Zero Trust](zero-trus
 - Use least privileged access
 - Assume breach
 
-Implementing the Zero Trust “never trust, always verify” mindset requires changes to cloud infrastructure, deployment strategy, and implementation.
+Implementing the Zero Trust “never trust, always verify” approach requires changes to cloud infrastructure, deployment strategy, and implementation.
 
 These articles show you how to apply Zero Trust approach to these new or already deployed Azure services:
 

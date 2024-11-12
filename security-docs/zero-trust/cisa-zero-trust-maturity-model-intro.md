@@ -50,7 +50,7 @@ Each pillar has three **cross-cutting capabilities**, which emphasize activities
    > Visibility and analytics, automation and orchestration, and governance capabilities enable organizations to integrate advancements across pillars. The following image illustrates the pillars and cross-cutting capabilities. 
 
 
-   ![Diagram of the pillars and capabilities.](./media/cisa-zero-trust-maturity-model/pillars-and-capabilities.png)
+   ![Diagram of the pillars and capabilities.](/media/cisa-zero-trust-maturity-model/pillars-and-capabilities.png)
 
 
 ### ZTMM journey stages

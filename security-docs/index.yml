@@ -28,7 +28,7 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/hubpage/blog-icon.png
+      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/blog-icon.png
         componentType: testimonial-card
         name: Stay ahead of cyberthreats with security skill buildings
         role: Thought leadership
@@ -37,7 +37,7 @@ sections:
           componentType: link
           url: https://aka.ms/SecuritySkillsPaper_hub
           text: Read the paper
-      - avatarUrl: /security/media/hubpage/watch-icon.png
+      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/blog-icon.png
         componentType: testimonial-card
         name: Microsoft Copilot for Security Flight School 
         role: Video
@@ -107,7 +107,8 @@ sections:
 # Foundational skills
   - componentType: cards
     title: Build foundational security skills
-    summary: Build your foundational knowledge and essential skills to better collaborate with security colleagues, or find what you need to get your cybersecurity career started. Whether you're a new IT professional, a student, or a business leader interested in getting the most from Microsoft Security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities.
+    summary: |
+      Build your foundational knowledge and essential skills to better collaborate with security colleagues, or find what you need to get your cybersecurity career started. Whether you're a new IT professional, a student, or a business leader interested in getting the most from Microsoft Security, compliance, and identity solutions, you can quickly grow your knowledge and capabilities.
     blocks:
     - componentType: card
       title: Describe the basic concepts of cybersecurity 

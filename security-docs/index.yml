@@ -28,7 +28,7 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/blog-icon.png
+      - avatarUrl: /security/media/hubpage/blog-icon-sm.png
         componentType: testimonial-card
         name: Stay ahead of cyberthreats with security skill buildings
         role: Thought leadership
@@ -37,7 +37,7 @@ sections:
           componentType: link
           url: https://aka.ms/SecuritySkillsPaper_hub
           text: Read the paper
-      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
+      - avatarUrl: /security/media/hubpage/video-icon.png
         componentType: testimonial-card
         name: Microsoft Copilot for Security Flight School 
         role: Video
@@ -50,7 +50,7 @@ sections:
         componentType: testimonial-card
         name: Microsoft Applied Skills
         role: Credential
-        feedback: Implement information protection and data loss prevention by using Microsoft Purview
+        feedback: Implement information protection and data loss prevention by using Microsoft Purview.
         link:
           componentType: link
           url: /credentials/applied-skills/implement-information-protection-and-data-loss-prevention-by-using-microsoft-purview/
@@ -59,7 +59,7 @@ sections:
         componentType: testimonial-card
         name: Microsoft Applied Skills
         role: Credential
-        feedback: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview
+        feedback: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview.
         link:
           componentType: link
           url: /credentials/applied-skills/implement-retention-ediscovery-and-communication-compliance-in-microsoft-purview/
@@ -280,6 +280,3 @@ sections:
         icon:
           componentType: image
           src: /security/media/security-hub/icon-shield-check.png
-
-
-

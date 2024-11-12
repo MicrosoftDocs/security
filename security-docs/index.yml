@@ -54,7 +54,7 @@ sections:
         link:
           componentType: link
           url: /credentials/applied-skills/implement-information-protection-and-data-loss-prevention-by-using-microsoft-purview/
-          text: Get certified
+          text: Earn your credential
       - avatarUrl: /security/media/hubpage/applied-skills.png
         componentType: testimonial-card
         name: Microsoft Applied Skills
@@ -63,7 +63,7 @@ sections:
         link:
           componentType: link
           url: /credentials/applied-skills/implement-retention-ediscovery-and-communication-compliance-in-microsoft-purview/
-          text: Get certified
+          text: Earn your credential
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png

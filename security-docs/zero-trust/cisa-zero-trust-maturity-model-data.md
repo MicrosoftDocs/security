@@ -10,16 +10,16 @@ author: jricketts
 manager: martinco
 ms.reviewer: kbrewer
 
-# Customer intent: I need to deploy the CISA Zero Trust Maturity Model, and then configure security capabilities. My goal is to achieve the Maturity Model.
+# Customer intent: I need to deploy the Cybersecurity & Infrastructure Security Agency (CISA) Zero Trust Maturity Model, and then configure security capabilities. My goal is to achieve the Maturity Model.
 ---
 
 # CISA Zero Trust Maturity Model for the data pillar
 
-This section has Microsoft guidance and recommendations for the [CISA Zero Trust Maturity Model](https://www.cisa.gov/zero-trust-maturity-model) in the networks pillar. See [Secure networks with Zero Trust](/security/zero-trust/deploy/networks) for more information.
+This section has Microsoft guidance and recommendations for the [CISA Zero Trust Maturity Model](https://www.cisa.gov/zero-trust-maturity-model) in the networks pillar. For more information, see [Secure networks with Zero Trust](/security/zero-trust/deploy/networks).
 
 ## 3 Data
 
-According to the CISA definition, data (content pending).
+According to the Cybersecurity & Infrastructure Security Agency (CISA) definition, data (content pending).
 
 Use the following links to go to sections of the guide.
 

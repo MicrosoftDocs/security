@@ -37,7 +37,7 @@ sections:
           componentType: link
           url: https://aka.ms/SecuritySkillsPaper_hub
           text: Read the paper
-      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/blog-icon.png
+      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
         componentType: testimonial-card
         name: Microsoft Copilot for Security Flight School 
         role: Video

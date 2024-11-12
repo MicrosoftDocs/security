@@ -48,18 +48,18 @@ sections:
           text: Watch now
       - avatarUrl: /security/media/hubpage/applied-skills.png
         componentType: testimonial-card
-        name: Implement information protection and data loss prevention by using Microsoft Purview
-        role: Microsoft Applied Skills
-        feedback: Demonstrate your ability to implement Microsoft Purview Information Protection and Microsoft Purview Data Loss Prevention. 
+        name: Microsoft Applied Skills
+        role: Credential
+        feedback: Implement information protection and data loss prevention by using Microsoft Purview
         link:
           componentType: link
           url: /credentials/applied-skills/implement-information-protection-and-data-loss-prevention-by-using-microsoft-purview/
           text: Get certified
       - avatarUrl: /security/media/hubpage/applied-skills.png
         componentType: testimonial-card
-        name: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview
-        role: Microsoft Applied Skills
-        feedback: Demonstrate the ability to implement retention, eDiscovery, Communication Compliance, and Content search in Microsoft Purview. 
+        name: Microsoft Applied Skills
+        role: Credential
+        feedback: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview
         link:
           componentType: link
           url: /credentials/applied-skills/implement-retention-ediscovery-and-communication-compliance-in-microsoft-purview/

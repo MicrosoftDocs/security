@@ -17,7 +17,7 @@ ms.reviewer: kbrewer
 
 This section has Microsoft guidance and recommendations for the [CISA Zero Trust Maturity Model](https://www.cisa.gov/zero-trust-maturity-model) in the networks pillar. For more information, see [Secure networks with Zero Trust](/security/zero-trust/deploy/networks).
 
-## 3 Data
+## 5 Data
 
 According to the Cybersecurity & Infrastructure Security Agency (CISA) definition, data (content pending).
 

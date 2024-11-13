@@ -27,7 +27,7 @@ The CISA ZTMM serves as a crucial roadmap for organizations to evaluate their se
 
 In support of this transition, Office of Management and Budget (OMB) [Memorandum M-22-09](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf) outlines actions to adopt in alignment with the ZTMM pillars. The Federal ZTA strategy requires organizations to meet key cybersecurity objectives and to consider **Executive Order (EO) 14028** and **M-22-09** as they develop and implement their Zero Trust strategies. 
 
-Microsoft offers an expanding range of Zero Trust capabilities powered by a unified platform of integrated security tools. The platform provides comprehensive coverage across CISA ZTMM pillars and the cross-cutting capabilities, described in the following section. These solutions support organizations in their journey toward effective Zero Trust implementation, helping to ensure a secure and resilient federal cybersecurity framework. 
+Microsoft offers an expanding range of Zero Trust capabilities powered by a unified platform of integrated security tools. The platform provides comprehensive coverage across CISA ZTMM pillars and the cross-cutting capabilities, described in the following section. These solutions support organizations in their journey toward effective Zero Trust implementation, helping to ensure a secure, and resilient, federal cybersecurity framework. 
 
 ## Pillars, functions, capabilities, and ZTMM journey stages
 
@@ -59,7 +59,7 @@ The pillars span the ZTMM journey's four stages.
 
 * **Traditional**: Manually configured lifecycles, for instance from establishment to decommission, and attribute assignments such as security and logging. Static security policies and solutions address pillars with dependencies on external systems. Least privilege is established at provisioning. Siloed pillars of policy enforcement; manual response and mitigation deployment, and limited correlation of dependencies, logs, and telemetry. 
 * **Initial**: Start automation of attribute assignment, lifecycle configuration, policy decisions, and enforcement. Initial cross-pillar solutions and external systems integration. Some responsive changes to least privilege after provisioning. Aggregated visibility for internal systems. 
-* **Advanced**: Where applicable, automate controls for lifecycles, also configuration and policy assignment with cross-pillar coordination. Centralize visibility and identity control, and policy enforcement integrated across pillars. Base responses to predefined mitigations, changes to least privilege on risk and posture assessments. Create enterprise-wide awareness, including externally hosted resources. 
+* **Advanced**: Where applicable, automate controls for lifecycles, also configuration, and policy assignment with cross-pillar coordination. Centralize visibility and identity control, and policy enforcement integrated across pillars. Base responses to predefined mitigations, changes to least privilege on risk and posture assessments. Create enterprise-wide awareness, including externally hosted resources. 
 * **Optimal**: Automated, just-in-time (JIT) lifecycles and attribute assignments to assets and resources that can self-report with dynamic policies, based on automated and observed triggers. Use dynamic least privileged access, just-enough access (JEA) and within thresholds for assets and their dependencies; Enable cross-pillar interoperability with continuous monitoring, and centralized visibility with comprehensive situational awareness. 
 
 ### Maturity model criteria
@@ -70,7 +70,7 @@ Use the following criteria to identify the maturity stage for Zero Trust technol
 
 ## Scope of guidance
 
-Use this guidance to help meet the goals for ZTMM functions and make progress through maturity stages. It’s assumed organizations are, at least, at the **Traditional** stage.  
+Use this guidance to help meet the goals for ZTMM functions and make progress through maturity stages. We assume organizations are, at least, at the **Traditional** stage.  
 
 In the following sections, pillars are divided into function areas with tables that have the ZTMM journey stage descriptions with Microsoft guidance and recommendations. Use the tables to learn how Microsoft cloud services align to the ZTMM. Each function has guidance for maturity stages. For example, organizations that implement guidance at the **Optimal** stage, implemented **Advanced** stage guidance.  
 

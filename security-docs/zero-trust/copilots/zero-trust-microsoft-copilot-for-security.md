@@ -1,6 +1,6 @@
 ---
-title: How do I apply Zero Trust principles to Microsoft Copilot for Security?
-description: How to apply Zero Trust principles to Microsoft Copilot for Security. 
+title: How do I apply Zero Trust principles to Microsoft Security Copilot?
+description: How to apply Zero Trust principles to Microsoft Security Copilot. 
 ms.date: 04/02/2024
 ms.service: security
 author: BrendaCarter
@@ -15,83 +15,83 @@ ms.collection:
   - zerotrust-azure
 ---
 
-# Apply principles of Zero Trust to Microsoft Copilot for Security
+# Apply principles of Zero Trust to Microsoft Security Copilot
 
-**Summary:** To apply Zero Trust principles to your environment for Microsoft Copilot for Security, you need to apply five layers of protection:
+**Summary:** To apply Zero Trust principles to your environment for Microsoft Security Copilot, you need to apply five layers of protection:
 
 1. Protect admin and SecOps staff user accounts with identity and access policies.
 2. Apply least privilege access to admin and SecOps staff user accounts, including assigning the minimum user account roles.
 3. Manage and protect admin and SecOps staff devices.
 4. Deploy or validate your threat protection.
-5. Secure access to third-party security products that you integrate with Copilot for Security.
+5. Secure access to third-party security products that you integrate with Security Copilot.
 
-:::image type="content" source="../media/copilot/security-copilot-apply-zero-trust-steps.svg" alt-text="Diagram showing the four steps for applying Zero Trust principles to Microsoft Copilot for Security." lightbox="../media/copilot/security-copilot-apply-zero-trust-steps.svg":::
+:::image type="content" source="../media/copilot/security-copilot-apply-zero-trust-steps.svg" alt-text="Diagram showing the four steps for applying Zero Trust principles to Microsoft Security Copilot." lightbox="../media/copilot/security-copilot-apply-zero-trust-steps.svg":::
 
 ## Introduction
 
-As a part of introducing Microsoft Copilot for Security into your environment, Microsoft recommends that you build a strong foundation of security for your admin and SecOps staff user accounts and devices. Microsoft also recommends ensuring you have configured threat protection tools. If you’re integrating third-party security products with Copilot for Security, also ensure you’ve protected access to these products and related data.
+As a part of introducing Microsoft Security Copilot into your environment, Microsoft recommends that you build a strong foundation of security for your admin and SecOps staff user accounts and devices. Microsoft also recommends ensuring you have configured threat protection tools. If you’re integrating third-party security products with Security Copilot, also ensure you’ve protected access to these products and related data.
 
 Fortunately, guidance for a strong security foundation exists in the form of [Zero Trust](../zero-trust-overview.md). The Zero Trust security strategy treats each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to "never trust, always verify."
 
-From within security portals, Copilot for Security provides a natural language, assistive copilot experience that helps support: 
+From within security portals, Security Copilot provides a natural language, assistive copilot experience that helps support: 
 
 - Security professionals in end-to-end scenarios such as incident response, threat hunting, intelligence gathering, and posture management.
 
 - IT professionals in policy evaluation and configuration, device and user access troubleshooting, and performance monitoring.
 
-Copilot for Security uses data from event logs, alerts, incidents, and policies for your Microsoft and third-party subscriptions and security products. If an attacker compromises an admin or security staff user account that has been assigned a Copilot for Security role, they can use Copilot for Security and its results to understand how your SecOps team is addressing attacks in progress. An attacker can then use this information to thwart attempts to respond to an incident, possibly one that they initiated. 
+Security Copilot uses data from event logs, alerts, incidents, and policies for your Microsoft and third-party subscriptions and security products. If an attacker compromises an admin or security staff user account that has been assigned a Security Copilot role, they can use Security Copilot and its results to understand how your SecOps team is addressing attacks in progress. An attacker can then use this information to thwart attempts to respond to an incident, possibly one that they initiated. 
 
 Consequently, it’s critical to ensure that you’ve applied appropriate mitigations within your environment. 
 
 ## Logical architecture
 
-The first line of defense when introducing Copilot for Security is to apply the principles of Zero Trust to the accounts and devices of admin and SecOps staff. It’s also important to ensure your organization applies the principle of least privilege. In addition to [Copilot-specific roles](/security-copilot/authentication#copilot-for-security-roles), the assigned roles for admin and SecOps staff within your security tools determine what data they have access to while using Copilot for Security. 
+The first line of defense when introducing Security Copilot is to apply the principles of Zero Trust to the accounts and devices of admin and SecOps staff. It’s also important to ensure your organization applies the principle of least privilege. In addition to [Copilot-specific roles](/security-copilot/authentication#copilot-for-security-roles), the assigned roles for admin and SecOps staff within your security tools determine what data they have access to while using Security Copilot. 
 
-It’s easy to understand why these mitigations are important by looking at the logical architecture of Copilot for Security shown here.
+It’s easy to understand why these mitigations are important by looking at the logical architecture of Security Copilot shown here.
 
-:::image type="content" source="../media/copilot/security-copilot-logical-architecture.svg" alt-text="Diagram of the logical architecture of Copilot for Security showing users and devices, security products, and the Copilot for Security service architecture." lightbox="../media/copilot/security-copilot-logical-architecture.svg":::
+:::image type="content" source="../media/copilot/security-copilot-logical-architecture.svg" alt-text="Diagram of the logical architecture of Security Copilot showing users and devices, security products, and the Security Copilot service architecture." lightbox="../media/copilot/security-copilot-logical-architecture.svg":::
   
 In the diagram:
 
-- SecOps team members can prompt using a copilot experience, such as those offered by Copilot for Security, Microsoft Defender XDR, and Microsoft Intune. 
+- SecOps team members can prompt using a copilot experience, such as those offered by Security Copilot, Microsoft Defender XDR, and Microsoft Intune. 
 
-- Copilot for Security components include:
+- Security Copilot components include:
 
-  - The Copilot for Security service, which orchestrates responses to user and skill-based prompts.
+  - The Security Copilot service, which orchestrates responses to user and skill-based prompts.
 
-  - A set of Large Language Models (LLMs) for Copilot for Security.
+  - A set of Large Language Models (LLMs) for Security Copilot.
 
   - Plugins for specific products. Preinstalled plugins for Microsoft products are provided. These plugins preprocess and post-process prompts. 
 
   - Your subscription data. The SecOps data for event logs, alerts, incidents, and policies stored in the subscriptions. For more information, see this [Microsoft Sentinel article](/security/operations/ingest-data-sources#before-you-begin) for the most common data sources for security products.
 
-  - Files you upload. You can [upload specific files](/microsoft-copilot-service/content-sources-files) to Copilot for Security and include these in the scope of prompts.
+  - Files you upload. You can [upload specific files](/microsoft-copilot-service/content-sources-files) to Security Copilot and include these in the scope of prompts.
 
-Each Microsoft security product with a copilot experience only provides access to the data set associated with that product, such as event logs, alerts, incidents, and policies. Copilot for Security provides access to all the data sets to which the user has access.
+Each Microsoft security product with a copilot experience only provides access to the data set associated with that product, such as event logs, alerts, incidents, and policies. Security Copilot provides access to all the data sets to which the user has access.
 
-For more information, see [Get started with Microsoft Copilot for Security](/security-copilot/get-started-security-copilot).
+For more information, see [Get started with Microsoft Security Copilot](/security-copilot/get-started-security-copilot).
 
 
-### How does on-behalf-of authentication work with Copilot for Security?
+### How does on-behalf-of authentication work with Security Copilot?
 
-Copilot for Security uses on-behalf-of (OBO) authentication provided by OAuth 2.0. This is an authentication flow provided by delegation in OAuth. When a SecOps user issues a prompt, Copilot for Security passes the user’s identity and permissions through the request chain. This prevents the user gaining permission to resources for which they shouldn't have access.
+Security Copilot uses on-behalf-of (OBO) authentication provided by OAuth 2.0. This is an authentication flow provided by delegation in OAuth. When a SecOps user issues a prompt, Security Copilot passes the user’s identity and permissions through the request chain. This prevents the user gaining permission to resources for which they shouldn't have access.
 
 For more information about OBO authentication, see [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow). 
 
 ### Prompting within a Microsoft security product: Embedded example for Microsoft Intune
 
-When you use one of the embedded experiences of Copilot for Security, the scope of the data is determined by the context of the product you're using. For example, if you issue a prompt within Microsoft Intune, the results are produced from data and context provided by Microsoft Intune only. 
+When you use one of the embedded experiences of Security Copilot, the scope of the data is determined by the context of the product you're using. For example, if you issue a prompt within Microsoft Intune, the results are produced from data and context provided by Microsoft Intune only. 
 
 Here's the logical architecture when issuing prompts from within the Microsoft Intune embedded experience.
 
-:::image type="content" source="../media/copilot/security-copilot-architecture-intune-example.svg" alt-text="Diagram of the logical architecture for Copilot for Security with Microsoft Intune highlighted as a security product, a plugin, and Intune data types." lightbox="../media/copilot/security-copilot-architecture-intune-example.svg":::
+:::image type="content" source="../media/copilot/security-copilot-architecture-intune-example.svg" alt-text="Diagram of the logical architecture for Security Copilot with Microsoft Intune highlighted as a security product, a plugin, and Intune data types." lightbox="../media/copilot/security-copilot-architecture-intune-example.svg":::
 
 In the diagram:
 
 - Intune admins use the Microsoft Copilot in Intune experience to submit prompts.
-- The Copilot for Security component orchestrates responses to the prompts using:
+- The Security Copilot component orchestrates responses to the prompts using:
 
-  - The LLMs for Copilot for Security.
+  - The LLMs for Security Copilot.
 
   - The Microsoft Intune preinstalled plugin.
 
@@ -99,21 +99,21 @@ In the diagram:
 
 ### Integrating with third-party security products
 
-Copilot for Security provides the ability to host plugins for third-party products. These third-party plugins provide access to their associated data. These plugins and their associated data live outside the Microsoft security trust boundary. Consequently, it’s important to ensure you’ve secured access to these applications and their associated data.
+Security Copilot provides the ability to host plugins for third-party products. These third-party plugins provide access to their associated data. These plugins and their associated data live outside the Microsoft security trust boundary. Consequently, it’s important to ensure you’ve secured access to these applications and their associated data.
 
-Here's the logical architecture of Copilot for Security with third-party security products.
+Here's the logical architecture of Security Copilot with third-party security products.
 
-:::image type="content" source="../media/copilot/security-copilot-architecture-third-party.svg" alt-text="Diagram of the extended logical architecture for Copilot for Security to support third-party security products." lightbox="../media/copilot/security-copilot-architecture-third-party.svg":::
+:::image type="content" source="../media/copilot/security-copilot-architecture-third-party.svg" alt-text="Diagram of the extended logical architecture for Security Copilot to support third-party security products." lightbox="../media/copilot/security-copilot-architecture-third-party.svg":::
 
 In the diagram:
 
-- Copilot for Security integrates with third-party security products through plugins. 
+- Security Copilot integrates with third-party security products through plugins. 
 - These plugins provide access to the data associated with the product, such as logs and alerts. 
 - These third-party components reside outside the Microsoft security trust boundary.
 
-### Applying security mitigations to your environment for Copilot for Security
+### Applying security mitigations to your environment for Security Copilot
 
-The rest of this article walks you through the steps to apply the principles of Zero Trust to prepare your environment for Copilot for Security.
+The rest of this article walks you through the steps to apply the principles of Zero Trust to prepare your environment for Security Copilot.
 
 | Step | Task | Zero Trust principles applied |
 | --- | --- | --- |
@@ -123,37 +123,37 @@ The rest of this article walks you through the steps to apply the principles of 
 | 4 | Deploy or validate your threat protection services. | Assume breach |
 | 5 | Secure access to third-party security products and data. | Verify explicitly <br><br> Use least privileged access <br><br> Assume breach |
 
-There are several approaches you can take to onboarding admin and SecOps staff to Copilot for Security while you configure protections for your environment.
+There are several approaches you can take to onboarding admin and SecOps staff to Security Copilot while you configure protections for your environment.
 
-### Per-user onboarding to Copilot for Security
+### Per-user onboarding to Security Copilot
 
-At a minimum, walk through a checklist for your admin and SecOps staff before you assign a role for Copilot for Security. This works well for small teams and organizations that want to start with a test or pilot group. 
+At a minimum, walk through a checklist for your admin and SecOps staff before you assign a role for Security Copilot. This works well for small teams and organizations that want to start with a test or pilot group. 
 
-:::image type="content" source="../media/copilot/onboarding-user-checklist.svg" alt-text="Example of a checklist for onboarding your admin and SecOps staff  for Copilot for Security." lightbox="../media/copilot/onboarding-user-checklist.svg":::
+:::image type="content" source="../media/copilot/onboarding-user-checklist.svg" alt-text="Example of a checklist for onboarding your admin and SecOps staff  for Security Copilot." lightbox="../media/copilot/onboarding-user-checklist.svg":::
   
-### Phased deployment of Copilot for Security
+### Phased deployment of Security Copilot
 
 For large environments, a more standard phased deployment works well. In this model, you address groups of users at the same time to configure protection and assign roles.
 
 Here is an example model.
 
-:::image type="content" source="../media/copilot/security-copilot-phased-deployment.svg" alt-text="Diagram of a standard phased deployment for Copilot for Security, including Evaluate, Pilot, and Full Deployment phases." lightbox="../media/copilot/security-copilot-phased-deployment.svg":::
+:::image type="content" source="../media/copilot/security-copilot-phased-deployment.svg" alt-text="Diagram of a standard phased deployment for Security Copilot, including Evaluate, Pilot, and Full Deployment phases." lightbox="../media/copilot/security-copilot-phased-deployment.svg":::
 
 In the illustration:
 
-- In the **Evaluate** phase, you pick a small set of admin and SecOps users that you want to have access to Copilot for Security and apply identity and access and device protections.
+- In the **Evaluate** phase, you pick a small set of admin and SecOps users that you want to have access to Security Copilot and apply identity and access and device protections.
 - In the **Pilot** phase, you pick the next set of admin and SecOps users and apply identity and access and device protections.
 - In the **Full deployment** phase, you apply identity and access and device protections for the rest of your admin and SecOps users.
-- At the end of each phase, you assign the appropriate role in Copilot for Security to the user accounts.
+- At the end of each phase, you assign the appropriate role in Security Copilot to the user accounts.
 
 Because different organizations can be at various stages of deploying Zero Trust protections for their environment, in each of these steps:
 
-- If you're NOT using any of the protections described in the step, take the time to pilot and deploy them to your admin and SecOps staff prior to assigning roles that include Copilot for Security.
-- If you're already using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated has been piloted and deployed prior to assigning roles that include Copilot for Security.
+- If you're NOT using any of the protections described in the step, take the time to pilot and deploy them to your admin and SecOps staff prior to assigning roles that include Security Copilot.
+- If you're already using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated has been piloted and deployed prior to assigning roles that include Security Copilot.
 
 ## Step 1. Deploy or validate identity and access policies for admin and SecOps staff
 
-To prevent bad actors from using Copilot for Security to quickly get information on cyberattacks, the first step is to prevent them from gaining access. You must ensure that admin and SecOps staff:
+To prevent bad actors from using Security Copilot to quickly get information on cyberattacks, the first step is to prevent them from gaining access. You must ensure that admin and SecOps staff:
 
 - User accounts are required to use multifactor authentication (MFA) (so their access can't be compromised by guessing user passwords alone) and they're required to change their passwords when high-risk activity is detected.
 - Devices must comply with Intune management and device compliance policies.
@@ -173,8 +173,8 @@ These recommendations align with the **Specialized security** protection level i
 In the diagram, the recommended policies for Microsoft Entra Conditional Access, Intune device compliance, and Intune app protection are illustrated for each of the three levels:
 
 - **Starting point**, which doesn't require device management.
-- **Enterprise** is recommended for Zero Trust and as a minimum for access to Copilot for Security and your third-party security products and related data.
-- **Specialized security** is recommended for access to Copilot for Security and your third-party security products and related data.
+- **Enterprise** is recommended for Zero Trust and as a minimum for access to Security Copilot and your third-party security products and related data.
+- **Specialized security** is recommended for access to Security Copilot and your third-party security products and related data.
 
 Each of these policies is described in greater detail in [Common Zero Trust identity and device access policies for Microsoft 365 organizations](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common). 
 
@@ -184,41 +184,41 @@ When configuring these policies for your admin and SecOps staff, create a separa
 
 ### Include security tools in the scope of Conditional Access policies
 
-For now, there's not an easy way to configure Conditional Access for Copilot for Security. However, because on-behalf-of authentication is used to access data within security tools, be sure you have configured Conditional Access for these tools, which can include Microsoft Entra ID and Microsoft Intune.
+For now, there's not an easy way to configure Conditional Access for Security Copilot. However, because on-behalf-of authentication is used to access data within security tools, be sure you have configured Conditional Access for these tools, which can include Microsoft Entra ID and Microsoft Intune.
 
 ## Step 2. Apply least privilege to admin and SecOps user accounts
 
-This step includes configuring the appropriate roles within Copilot for Security. It also includes reviewing your admin and SecOps user accounts to ensure they are assigned the least amount of privileges for the work they're intended to do.
+This step includes configuring the appropriate roles within Security Copilot. It also includes reviewing your admin and SecOps user accounts to ensure they are assigned the least amount of privileges for the work they're intended to do.
 
-### Assign user accounts to Copilot for Security roles
+### Assign user accounts to Security Copilot roles
 
-The permissions model for Copilot for Security includes roles in both Microsoft Entra ID and Copilot for Security.
+The permissions model for Security Copilot includes roles in both Microsoft Entra ID and Security Copilot.
 
 | Product | Roles | Description |
 | --- | --- | --- |
-| Microsoft Entra ID | Security Administrator <br><br> Global Administrator | These Microsoft Entra roles inherit the **Copilot owner** role in Copilot for Security. Only use these privileged roles to onboard Copilot for Security to your organization. |
-| Copilot for Security | Copilot owner <br><br> Copilot contributor | These two roles include access to use Copilot for Security. Most of your admin and SecOps staff can use the **Copilot contributor** role. <br><br> The **Copilot owner** role includes the ability to publish custom plugins and to manage settings that affect all of Copilot for Security. |
+| Microsoft Entra ID | Security Administrator <br><br> Global Administrator | These Microsoft Entra roles inherit the **Copilot owner** role in Security Copilot. Only use these privileged roles to onboard Security Copilot to your organization. |
+| Security Copilot | Copilot owner <br><br> Copilot contributor | These two roles include access to use Security Copilot. Most of your admin and SecOps staff can use the **Copilot contributor** role. <br><br> The **Copilot owner** role includes the ability to publish custom plugins and to manage settings that affect all of Security Copilot. |
 
-It’s important to know that, by default, *all users in the tenant are given Copilot contributor access*. With this configuration, access to your security tool data is governed by the permissions you configured for each of the security tools. An advantage of this configuration is that the embedded experiences of Copilot for Security are immediately available to your admin and SecOps staff within the products they use daily. This works well if you’ve already adopted a strong practice of least privileged access within your organization. 
+It’s important to know that, by default, *all users in the tenant are given Copilot contributor access*. With this configuration, access to your security tool data is governed by the permissions you configured for each of the security tools. An advantage of this configuration is that the embedded experiences of Security Copilot are immediately available to your admin and SecOps staff within the products they use daily. This works well if you’ve already adopted a strong practice of least privileged access within your organization. 
 
-If you’d like to take a staged approach to introducing Copilot for Security to your admin and SecOps staff while you tune up least privileged access in your organization, remove **All users** from the **Copilot contributor** role and add security groups as you're ready. 
+If you’d like to take a staged approach to introducing Security Copilot to your admin and SecOps staff while you tune up least privileged access in your organization, remove **All users** from the **Copilot contributor** role and add security groups as you're ready. 
 
-For more information, see these Microsoft Copilot for Security resources:
+For more information, see these Microsoft Security Copilot resources:
 
 - [Get started](/security-copilot/get-started-security-copilot#onboarding-to-microsoft-security-copilot)
 - [Understand authentication](/security-copilot/authentication)
 
 ### Configuring or reviewing least privilege access for admin and SecOps user accounts
 
-Introducing Copilot for Security is a great time to review the access of your admin and SecOps staff user accounts to be sure you're following through with the principle of least privilege for their access to specific products. This includes the following tasks:
+Introducing Security Copilot is a great time to review the access of your admin and SecOps staff user accounts to be sure you're following through with the principle of least privilege for their access to specific products. This includes the following tasks:
 
 - Review the privileges granted for the specific products your admin and SecOps staff work with. For example, for Microsoft Entra, see [Least privileged roles by task](/entra/identity/role-based-access-control/delegate-by-task).
-- Use Microsoft Entra Privileged Identity Management (PIM) to gain greater control over access to Copilot for Security.
+- Use Microsoft Entra Privileged Identity Management (PIM) to gain greater control over access to Security Copilot.
 - Use Microsoft Purview Privileged Access Management to configure granular access control over privileged admin tasks in Office 365. 
 
-#### Using Microsoft Entra Privileged Identity Management together with Copilot for Security
+#### Using Microsoft Entra Privileged Identity Management together with Security Copilot
 
-Microsoft Entra [Privileged Identity Management (PIM)](/entra/id-governance/privileged-identity-management/pim-configure) allows you to manage, control, and monitor the roles required to access Copilot for Security. With PIM, you can:
+Microsoft Entra [Privileged Identity Management (PIM)](/entra/id-governance/privileged-identity-management/pim-configure) allows you to manage, control, and monitor the roles required to access Security Copilot. With PIM, you can:
 
 - Provide role activation that is time-based.
 - Require approval to activate privileged roles.
@@ -227,13 +227,13 @@ Microsoft Entra [Privileged Identity Management (PIM)](/entra/id-governance/priv
 - [Conduct access reviews](/entra/id-governance/privileged-identity-management/pim-create-roles-and-resource-roles-review) to ensure admin and SecOps staff user accounts still need their assigned roles.
 - [Perform audits](/entra/id-governance/privileged-identity-management/pim-how-to-use-audit-log) on access and role changes for admin and SecOps staff.
 
-#### Using privileged access management together with Copilot for Security
+#### Using privileged access management together with Security Copilot
 
 Microsoft Purview Privileged Access Management helps protect your organization from breaches and helps to meet compliance best practices by limiting standing access to sensitive data or access to critical configuration settings. Instead of administrators having constant access, just-in-time access rules are implemented for tasks that need elevated permissions. Instead of administrators having constant access, just-in-time access rules are implemented for tasks that need elevated permissions. For more information, see [Privileged access management](/purview/privileged-access-management-solution-overview).
 
 ## Step 3. Secure devices for privileged access
 
-In Step 1, you configured Conditional Access policies that required managed and compliant devices for your admin and SecOps staff. For additional security, you can deploy privileged access devices for your staff to use when accessing security tools and data, including Copilot for Security. A privileged access device is a hardened workstation that has clear application control and application guard. The workstation uses credential guard, device guard, app guard, and exploit guard to protect the host from attackers. 
+In Step 1, you configured Conditional Access policies that required managed and compliant devices for your admin and SecOps staff. For additional security, you can deploy privileged access devices for your staff to use when accessing security tools and data, including Security Copilot. A privileged access device is a hardened workstation that has clear application control and application guard. The workstation uses credential guard, device guard, app guard, and exploit guard to protect the host from attackers. 
 
 For more information on how to configure a device for privileged access, see [Securing devices as part of the privileged access story](/security/privileged-access-workstations/privileged-access-devices).
 
@@ -241,7 +241,7 @@ To require these devices, be sure to update your Intune device compliance policy
 
 ## Step 4. Deploy or validate your threat protection services
 
-To detect the activities of bad actors and keep them from gaining access to Copilot for Security, ensure that you can detect and respond to security incidents with a comprehensive suite of threat protection services, which include Microsoft Defender XDR with Microsoft 365, Microsoft Sentinel, and other security services and products. 
+To detect the activities of bad actors and keep them from gaining access to Security Copilot, ensure that you can detect and respond to security incidents with a comprehensive suite of threat protection services, which include Microsoft Defender XDR with Microsoft 365, Microsoft Sentinel, and other security services and products. 
 
 Use the following resources.
 
@@ -253,7 +253,7 @@ Use the following resources.
 
 ## Step 5. Secure access to third-party security products and data
 
-If you’re integrating third-party security products with Copilot for Security, be sure you have secured access to these products and related data. Microsoft Zero Trust guidance includes recommendations for securing access to SaaS apps. These recommendations can be used for your third-party security products.
+If you’re integrating third-party security products with Security Copilot, be sure you have secured access to these products and related data. Microsoft Zero Trust guidance includes recommendations for securing access to SaaS apps. These recommendations can be used for your third-party security products.
 
 For protection with identity and device access policies, changes to common policies for SaaS apps are outlined in red in the following diagram. These are the policies to which you can add your third-party security products.
 
@@ -267,15 +267,15 @@ Depending on the security product, it might be appropriate to use Microsoft Defe
 
 ### Example for Tanium SSO
 
-Tanium is a provider of endpoint management tools and offers a custom Tanium Skills plugin for Copilot for Security. This plugin helps ground prompts and responses that leverage Tanium-gathered information and insights. 
+Tanium is a provider of endpoint management tools and offers a custom Tanium Skills plugin for Security Copilot. This plugin helps ground prompts and responses that leverage Tanium-gathered information and insights. 
  
-Here's the logical architecture of Copilot for Security with the Tanium Skills plugin.
+Here's the logical architecture of Security Copilot with the Tanium Skills plugin.
 
-:::image type="content" source="../media/copilot/security-copilot-architecture-tanium-example.svg" alt-text="Diagram of the logical architecture for Copilot for Security with Tanium SSO highlighted as a third-party plugin and with Tanium third-party data." lightbox="../media/copilot/security-copilot-architecture-tanium-example.svg":::
+:::image type="content" source="../media/copilot/security-copilot-architecture-tanium-example.svg" alt-text="Diagram of the logical architecture for Security Copilot with Tanium SSO highlighted as a third-party plugin and with Tanium third-party data." lightbox="../media/copilot/security-copilot-architecture-tanium-example.svg":::
 
 In the diagram:
 
-- Tanium Skills is a custom plugin for Microsoft Copilot for Security.
+- Tanium Skills is a custom plugin for Microsoft Security Copilot.
 - Tanium Skills provides access to and helps ground both prompts and responses that use Tanium-gathered information and insights.
 
 To secure access to Tanium products and related data:
@@ -286,7 +286,7 @@ To secure access to Tanium products and related data:
 
 ## Next steps
 
-Watch the [Discover Microsoft Copilot for Security video](https://www.youtube.com/watch?v=5pPYBM0X4_U). 
+Watch the [Discover Microsoft Security Copilot video](https://www.youtube.com/watch?v=5pPYBM0X4_U). 
 
 See these additional articles for Zero Trust and Microsoft's Copilots:
 
@@ -294,14 +294,14 @@ See these additional articles for Zero Trust and Microsoft's Copilots:
 - [Microsoft Copilot](zero-trust-microsoft-copilot.md)
 - [Microsoft 365 Copilot](zero-trust-microsoft-365-copilot.md)
 
-Also see the [Microsoft Copilot for Security documentation](/security-copilot/).
+Also see the [Microsoft Security Copilot documentation](/security-copilot/).
 
 ## References
 
 Refer to these links to learn about the various services and technologies mentioned in this article.
 
-- [Get started with Microsoft Copilot for Security](/security-copilot/get-started-security-copilot)
-- [Onboarding to Copilot for Security](/security-copilot/get-started-security-copilot##onboarding-to-copilot-for-security)
+- [Get started with Microsoft Security Copilot](/security-copilot/get-started-security-copilot)
+- [Onboarding to Security Copilot](/security-copilot/get-started-security-copilot##onboarding-to-copilot-for-security)
 - [Data sources for Microsoft Sentinel](/security/operations/ingest-data-sources#before-you-begin)
 - [Microsoft Entra Privileged Identity Management (PIM)](/entra/id-governance/privileged-identity-management/pim-configure)
 - [Privileged access management](/purview/privileged-access-management-solution-overview)

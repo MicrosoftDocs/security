@@ -31,7 +31,7 @@ Microsoft offers an expanding range of Zero Trust capabilities powered by a unif
 
 ## Pillars, functions, capabilities, and ZTMM journey stages
 
-The CISA ZTMM is built upon **five pillars** that encompass **functions** to enhance Zero Trust protection areas. Use the following links to go to sections of the guide 
+The CISA ZTMM is built upon **five pillars** that encompass **functions** to enhance Zero Trust protection areas. Use the following links to go to sections of the guide:
 
 * Introduction
 * [Identity](cisa-zero-trust-maturity-model-identity.md)

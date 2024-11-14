@@ -81,7 +81,7 @@ It’s important to note that the guidance in this series of articles is more sp
 
 ## Additional articles for Azure services
 
-See these additional articles for applying Zero Trust principles to Azure services:
+Take a look at these additional articles for applying Zero Trust principles to Azure services:
 
 - For Azure IaaS:
   - [Azure storage](azure-infrastructure-storage.md)

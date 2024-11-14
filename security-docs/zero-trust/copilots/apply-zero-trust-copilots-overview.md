@@ -28,14 +28,14 @@ Implementing the Zero Trust "never trust, always verify" mindset requires change
 
 ## Layer in protections for AI companions
 
-Microsoft helps you prepare for AI tools and companions and build a Zero Trust foundation at the same time. Take a staged approach starting with protections for web-grounded prompts and maturing to protections for Microsoft 365 graph-grounded prompts. Protections for prompts grounded with data provided by your security tools (Copilot for Security) focus on tuning up least privilege practices and honing threat protection. 
+Microsoft helps you prepare for AI tools and companions and build a Zero Trust foundation at the same time. Take a staged approach starting with protections for web-grounded prompts and maturing to protections for Microsoft 365 graph-grounded prompts. Protections for prompts grounded with data provided by your security tools (Security Copilot) focus on tuning up least privilege practices and honing threat protection. 
 
 :::image type="content" source="../media/copilot/microsoft-copilot-grounding.svg" alt-text="Mapping of Copilots to web-grounded prompts, Microsoft 365-grounded prompts, and prompts grounded with security tools." lightbox="../media/copilot/microsoft-copilot-grounding.svg":::
 
 In the illustration:
 - Web-grounded prompts are issued by Copilot for Bing, Edge, and Windows. Microsoft 365 Copilot can also be configured to allow web-grounded prompts.
 - Microsoft 365-grounded prompts are issued by Microsoft 365 Copilot. If integration with Copilot for Bing, Edge, and Windows is configured, these copilot experiences can include graph-grounded data (for example, when the web/work toggle is set to work).
-- Prompts grounded with your security tools are issued by Microsoft Copilot for Security. 
+- Prompts grounded with your security tools are issued by Microsoft Security Copilot. 
 
 ## Get started with Zero Trust by preparing your environment for AI companions
 
@@ -49,7 +49,7 @@ The following table summarizes the illustration and links to articles for implem
 | --- | --- | --- |
 |Web-grounded prompts  |User accounts, devices, and some app data.   | [Microsoft Copilot](zero-trust-microsoft-copilot.md)    |
 |Microsoft 365 graph-grounded promtps |Includes the previous protections plus more robust protection for app data and cloud apps. It also includes adding in threat protection.  | [Microsoft 365 Copilot](zero-trust-microsoft-365-copilot.md)    |
-|Prompts grounded with security tools  |Focuses on tuning up least privilege access, a key principle of Zero Trust.    | [Microsoft Copilot for Security](zero-trust-microsoft-copilot-for-security.md)    |
+|Prompts grounded with security tools  |Focuses on tuning up least privilege access, a key principle of Zero Trust.    | [Microsoft Security Copilot](zero-trust-microsoft-copilot-for-security.md)    |
 
 
 For more information on implementing Zero Trust, see the [Zero Trust Guidance Center](/security/zero-trust/). 

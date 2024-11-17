@@ -30,7 +30,7 @@ sections:
     cards:
       - avatarUrl: /security/media/hubpage/blog-icon-sm.png
         componentType: testimonial-card
-        name: Stay ahead of cyberthreats with security skill buildings
+        name: Stay ahead of cyberthreats with security skill building
         role: Thought leadership
         feedback: Help your organization accelerate its security skill-building journey and secure a resilient future.	
         link:

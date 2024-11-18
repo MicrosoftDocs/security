@@ -231,18 +231,18 @@
 			<text x="8.01" y="337.6" class="st20" v:langID="1033"><v:paragraph v:spAfter="6" v:horizAlign="2"/><v:tabList/>Identity and access</text>		</g>
 		<g id="shape1040-94" v:mID="1040" v:groupContext="shape" transform="translate(15.2762,-15.8)">
 			<title>Sheet.1040</title>
-			<desc>Copilot for Security access</desc>
+			<desc>Security Copilot access</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(39000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:verticalAlign="0"/>
 			<v:textRect cx="74.9209" cy="344.4" width="149.85" height="50.4"/>
 			<rect x="0" y="319.2" width="149.842" height="50.4" rx="4.5" ry="4.5" class="st12"/>
-			<text x="5.14" y="337.6" class="st20" v:langID="1033"><v:paragraph v:spAfter="6" v:horizAlign="2"/><v:tabList/>Copilot for Security <tspan
+			<text x="30.53" y="337.6" class="st20" v:langID="1033"><v:paragraph v:spAfter="6" v:horizAlign="2"/><v:tabList/>Security Copilot <tspan
 						x="100.15" dy="1.2em" class="st8">access</tspan></text>		</g>
 		<g id="shape1041-99" v:mID="1041" v:groupContext="shape" transform="translate(188.72,-15.8)">
 			<title>Rectangle.1143</title>
-			<desc>Introduce Copilot for Security to admins AFTER their identiti...</desc>
+			<desc>Introduce Security Copilot to admins AFTER their identities a...</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(40000):26"/>
@@ -252,12 +252,12 @@
 			<g id="shadow1041-100" v:groupContext="shadow" v:shadowOffsetX="1.22465E-16" v:shadowOffsetY="-2" v:shadowType="1"
 					v:shadowScale="1.01" transform="matrix(1.01,0,0,1.01,-2.10305,-1.444)" class="st1">
 				<rect x="0" y="319.2" width="420.61" height="50.4" class="st6"/>
-				<text x="5" y="335" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Introduce Copilot for Security to admins AFTER their identities and devices are <tspan
-							x="5" dy="1.2em" class="st8">protected and they have been configured for least privilege. Only assign the </tspan><tspan
+				<text x="5" y="335" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Introduce Security Copilot to admins AFTER their identities and devices are <tspan
+							x="5" dy="1.2em" class="st8">protected and they have been configured for least privilege. Only assign </tspan><tspan
 							x="5" dy="1.2em" class="st8">Copilot Owner role after these protections are verified.</tspan></text>			</g>
 			<rect x="0" y="319.2" width="420.61" height="50.4" class="st9"/>
-			<text x="5" y="335" class="st10" v:langID="1033"><v:paragraph/><v:tabList/>Introduce Copilot for Security to admins AFTER their identities and devices are <tspan
-						x="5" dy="1.2em" class="st8">protected and they have been configured for least privilege. Only assign the </tspan><tspan
+			<text x="5" y="335" class="st10" v:langID="1033"><v:paragraph/><v:tabList/>Introduce Security Copilot to admins AFTER their identities and devices are <tspan
+						x="5" dy="1.2em" class="st8">protected and they have been configured for least privilege. Only assign </tspan><tspan
 						x="5" dy="1.2em" class="st8">Copilot Owner role after these protections are verified.</tspan></text>		</g>
 		<g id="shape1042-111" v:mID="1042" v:groupContext="shape" transform="translate(15.2762,-86.2912)">
 			<title>Sheet.1042</title>

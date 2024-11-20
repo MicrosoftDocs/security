@@ -21,7 +21,7 @@ In fact, ransomware is a type of malware or phishing cyber security attack that 
 
 Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But even when paid, cybercriminals *might never* give the key to the business or device owner and stop access *permanently*.
 
-[Microsoft Copilot for Security](/security/ransomware/human-operated-ransomware) leverages AI to help mitigate ransomware attacks. For more Microsoft solutions to ransomware, visit our [Ransomware solutions library](/security/ransomware).
+[Microsoft Security Copilot](/security/ransomware/human-operated-ransomware) leverages AI to help mitigate ransomware attacks. For more Microsoft solutions to ransomware, visit our [Ransomware solutions library](/security/ransomware).
 
 ## How do ransomware attacks work?
 

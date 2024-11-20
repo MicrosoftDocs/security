@@ -98,7 +98,7 @@ Install-Module -Name AzureAD -Verbose
 3. Connect to your directory using the `Connect-AzureAD` cmdlet. Here's an example.
 
     ```powershell
-    Connect-AzureAD -tenantid "2b1a14ac-2956-442f-9577-1234567890ab" -AccountId "user1@contoso.onmicrosoft.com"
+    Connect-AzureAD -tenantid "aaaabbbb-0000-cccc-1111-dddd2222eeee" -AccountId "user1@contoso.onmicrosoft.com"
     ```
 
 4. Run this PowerShell command.
@@ -322,7 +322,7 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
 2. Connect to your directory using the following *Connect-AzureAD* command. Here's an example.
 
     ```powershell
-    Connect-AzureAD -tenantid "2b1a14ac-2956-442f-9577-1234567890ab" -AccountId "user1@contoso.onmicrosoft.com"
+    Connect-AzureAD -tenantid "aaaabbbb-0000-cccc-1111-dddd2222eeee" -AccountId "user1@contoso.onmicrosoft.com"
     ```
 
 3. Run this PowerShell command.
@@ -566,4 +566,3 @@ Examine guidance for identifying and investigating these additional types of att
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 - [Microsoft Incident Response team guide shares best practices for security teams and leaders](https://www.microsoft.com/security/blog/2023/12/11/new-microsoft-incident-response-team-guide-shares-best-practices-for-security-teams-and-leaders/)
 - [Microsoft Incident Response guides help security teams analyze suspicious activity](https://www.microsoft.com/security/blog/2024/01/17/new-microsoft-incident-response-guides-help-security-teams-analyze-suspicious-activity/)
-

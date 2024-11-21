@@ -36,7 +36,7 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/threat-intelligence/ransomware
         - text: Microsoft Defender XDR for in-depth ransomware investigation
           url:  https://learn.microsoft.com/defender-xdr/playbook-detecting-ransomware-m365-defender
-        - text: Use Microsoft Copilot for Security for AI-enhanced ransomware defense
+        - text: Use Microsoft Security Copilot for AI-enhanced ransomware defense
           url:  https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security
 
   # Card 
@@ -102,7 +102,7 @@ landingContent:
          links:
          - text: In Microsoft 365
            url:  /compliance/assurance/assurance-malware-and-ransomware-protection
-         - text: In Copilot for Security
+         - text: In Microsoft Security Copilot
            url:  /copilot/security/get-started-security-copilot
          - text: In Azure
            url:  /azure/security/fundamentals/ransomware-protection

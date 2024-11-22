@@ -3,7 +3,6 @@ title: Authorization best practices
 description: As a developer, implement the best authorization, permission, and consent models for your applications.
 author: janicericketts
 ms.author: jricketts
-ms.service: identity
 ms.topic: conceptual
 ms.date: 05/24/2024
 ms.custom: template-concept

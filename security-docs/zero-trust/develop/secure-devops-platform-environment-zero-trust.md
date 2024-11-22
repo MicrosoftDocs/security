@@ -1,7 +1,6 @@
 ---
 title: Secure the DevOps platform environment for Zero Trust
 description: Learn best practices for secret and certificate management so that DevOps team members can secure their DevOps platform environments.
-ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual

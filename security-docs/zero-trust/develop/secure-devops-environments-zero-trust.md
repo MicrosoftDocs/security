@@ -1,7 +1,6 @@
 ---
 title: Secure DevOps environments for Zero Trust
 description: Learn best practices for securing your DevOps environments to prevent hackers from compromising developer boxes, infect release pipelines with malicious scripts, and gain access to production data via test environments.
-ms.service: identity
 author: janicericketts
 ms.author: jricketts
 ms.topic: conceptual

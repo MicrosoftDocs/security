@@ -3,7 +3,6 @@ title: Request permissions that require administrative consent
 description: Learn about the permission and consent experience when your application requires administrative consent so that you can better collaborate with admins to implement the Zero Trust principle of least privilege in your applications.
 author: janicericketts
 ms.author: jricketts
-ms.service: identity
 ms.topic: conceptual
 ms.date: 05/24/2024
 ms.custom: template-concept 
@@ -59,9 +58,7 @@ After the tenant admin selects **Yes** on **Users can request admin consent to a
 
 :::image type="content" source="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-admin-approval-required-inline.png" alt-text="Screenshot of 'Approval required' dialog that describes the permissions the app is requesting with a text field to 'Enter justification for requesting this app.'" lightbox="../media/develop/permissions-require-admin-consent/screenshot-app-perm-req-admin-approval-required-expanded.png":::
 
-In the above example dialog, the user can **Enter justification for requesting this app** before selecting **Request approval**. The approval request then enters an **Admin consent requests** queue (as shown in the following example screenshot) where admins have options to review, accept, or ban applications in their organization based on risk profile.
-
-:::image type="content" source="../media/develop/permissions-require-admin-consent/screenshot-entra-admin-consent-requests-inline.png" alt-text="Screenshot of Microsoft Entra admin center 'Admin consent requests' that configures pending requests." lightbox="../media/develop/permissions-require-admin-consent/screenshot-entra-admin-consent-requests-expanded.png":::
+In the above example dialog, the user can **Enter justification for requesting this app** before selecting **Request approval**. The approval request then enters an **Admin consent requests** queue where admins have options to review, accept, or ban applications in their organization based on risk profile.
 
 When an admin runs an application that requires admin consent without configuring consent in the Microsoft Entra admin center, the admin user sees a **Permissions requested** dialog similar to the following example.
 

@@ -10,7 +10,7 @@ ms.collection:
 ms.custom: cxdef-zt-ransomware
 ms.topic: article
 description: Learn what ransomware is, how it works, and how to protect against it with links to the Microsoft products that help prevent ransomware.
-ms.date: 02/22/2024
+ms.date: 10/16/2024
 ---
 
 # What is ransomware?
@@ -21,34 +21,41 @@ In fact, ransomware is a type of malware or phishing cyber security attack that 
 
 Once devices or files are locked or encrypted, cybercriminals can extort money from the business or device owner in exchange for a *key* to unlock the encrypted data. But even when paid, cybercriminals *might never* give the key to the business or device owner and stop access *permanently*.
 
+[Microsoft Copilot for Security](/security/ransomware/human-operated-ransomware) leverages AI to help mitigate ransomware attacks. For more Microsoft solutions to ransomware, visit our [Ransomware solutions library](/security/ransomware).
+
 ## How do ransomware attacks work?
 
-Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [LockBit ransomware](/security/ransomware/human-operated-ransomware). 
+Ransomware can be automated or involve human hands on a keyboard - a *human-operated* attack, such as seen in recent attacks using [LockBit ransomware](https://blogs.microsoft.com/on-the-issues/2023/04/06/stopping-cybercriminals-from-abusing-security-tools).   
 
 Human-operated ransomware attacks involve the following stages:
 
-- **Initial compromise** - The threat actor first gains access to a system or environment following a period of reconnaissance to identify weaknesses in defense.
+1. **Initial compromise** - The threat actor first gains access to a system or environment following a period of reconnaissance to identify weaknesses in defense.
 
-- **Persistence and defense evasion** - The threat actor establishes a foothold in the system or environment using a backdoor or other mechanism that operates in stealth to avoid detection by incident response teams.
+1. **Persistence and defense evasion** - The threat actor establishes a foothold in the system or environment using a backdoor or other mechanism that operates in stealth to avoid detection by incident response teams.
 
-- **Lateral movement** - The threat actor uses the initial point of entry to migrate to other systems connected to the compromised device or network environment.
+1. **Lateral movement** - The threat actor uses the initial point of entry to migrate to other systems connected to the compromised device or network environment.
 
-- **Credential access** - The threat actor uses a fake sign-in page to harvest user or system credentials.
+1. **Credential access** - The threat actor uses a fake sign-in page to harvest user or system credentials.
 
-- **Data theft** - The threat actor steals financial or other data from compromised users or systems.
+1. **Data theft** - The threat actor steals financial or other data from compromised users or systems.
 
-- **Impact** - The affected user or organization might suffer material or reputational damage.
+1. **Impact** - The affected user or organization might suffer material or reputational damage.
 
 ## Common malware used in ransomware campaigns
 
-- [Qakbot](https://www.microsoft.com/en-us/security/blog/2021/12/09/a-closer-look-at-qakbots-latest-building-blocks-and-how-to-knock-them-down/?msockid=3fd141c935036ef610d9506e34696fe7) – Uses phishing to spread malicious links, malicious attachments, or, more recently, embedded images
+- [Qakbot](https://www.microsoft.com/en-us/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware) – Uses phishing to spread malicious links, malicious attachments, and to drop malicious payloads like Cobalt Strike Beacon
+
 - [Ryuk](https://www.microsoft.com/en-us/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/?msockid=3fd141c935036ef610d9506e34696fe7) – Data encryptor typically targeting Windows 
 - [Trickbot](https://www.microsoft.com/en-us/security/blog/2020/10/12/trickbot-disrupted/?msockid=3fd141c935036ef610d9506e34696fe7) – Has targeted Microsoft applications such as Excel and Word. Trickbot was typically delivered via email campaigns that used current events or financial lures to entice users to open malicious file attachments or click links to websites hosting the malicious files. Since 2022, Microsoft’s mitigation of campaigns using this malware appears to have disrupted its usefulness.
 
 ## Prevalent threat actors associated with ransomware campaigns
 
 - [LockBit](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/part-1-lockbit-2-0-ransomware-bugs-and-database-recovery/ba-p/3254354) – Financially motivated ransomware-as-a-service (RaaS) campaign and most prolific ransomware threat actor in the 2023-24 time period
-- [Black Basta](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Basta&msockid=3fd141c935036ef610d9506e34696fe) – Gains access through spear-phishing emails and uses PowerShell to launch an encryption payload 
+- [Black Basta](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Basta&msockid=3fd141c935036ef610d9506e34696fe) – Gains access through spear-phishing emails and uses PowerShell to launch an encryption payload
+- 
+## How Microsoft can help once an attack has begun
+
+To help mitigate in-progress ransomware attacks, Microsoft Incident Response can leverage and deploy [Microsoft Defender for Identity](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-for-identity) — a cloud-based security solution that helps detect and respond to identity-related threats. Bringing identity monitoring into incident response early supports the affected organization's security operations team to regain control. Microsoft Incident response uses Defender for Identity to help identify the incident scope and impacted accounts, protect critical infrastructure, and evict the threat actor. The response team then brings in [Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint) to trace the threat actor’s movements and disrupt their attempts to use compromised accounts to reenter the environment. After containing the incident andregaining and full administrative control over the environment, Microsoft Incident Response collaborates with the customer to help prevent future cyberattacks. 
 
 ### Automated ransomware attacks
 
@@ -81,7 +88,19 @@ First, prevent phishing and malware delivery with [Microsoft Defender for Office
 
 For a comprehensive view of ransomware and extortion and how to protect your organization, use the information in the **[Human-Operated Ransomware Mitigation Project Plan](https://download.microsoft.com/download/7/5/1/751682ca-5aae-405b-afa0-e4832138e436/RansomwareRecommendations.pptx)** PowerPoint presentation. 
 
-Here's a summary of the guidance:
+## Follow Microsoft Incident Response's approach to ransomware prevention and mitigation.
+
+1. Assess the situation	by analyzing the suspicious activity that alerted your team to the attack. 
+
+2. What time/date did you first learn of the incident? What logs are available and is there any indication that the actor is currently accessing systems?
+   
+3. Identify the affected line-of-business (LOB) applications, and get any impacted systems back online. Does the affected application require an identity that might have been compromised?
+
+4. Are backups of the application, configuration, and data available and regularly verified using a restore exercise?
+
+5. Determine the compromise recovery (CR) process to remove the threat actor from the environment.
+
+## Here's a summary of Microsoft's Human-Operated Ransomware Mitigation Project Plan guidance:
 
 [The summary of the guidance in the Human-Operated Ransomware Mitigation Project Plan](media/human-operated-ransomware/stakes-weaknesses-plan.png)
 
@@ -106,20 +125,10 @@ Download the [Protect your organization from ransomware poster](https://download
 Key information from Microsoft:
 
 - [The latest ransomware trends from Microsoft](https://www.microsoft.com/security/blog/threat-intelligence/ransomware/), Microsoft latest ransomware blog
-- [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
-- [2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023) 
-- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
-- Microsoft Incident Response team (formerly DART) ransomware [approach and best practices](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
-
+- [2024 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/intelligence-reports/microsoft-digital-defense-report-2024) 
 Microsoft 365:
 
 - [Deploy ransomware protection for your Microsoft 365 tenant](/microsoft-365/solutions/ransomware-protection-microsoft-365)
-- [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
-- [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware)
-- [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
-- [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
-- [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender XDR portal
 
 Microsoft Defender XDR:
 
@@ -132,29 +141,31 @@ Microsoft Defender for Cloud Apps:
 Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
-- [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
-- [Backup and restore plan to protect against ransomware](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware)
-- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
-- [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
-- [Fusion Detection for Ransomware in Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
- 
-Microsoft Security Copilot:
 
-- [Defend against human-operated ransomware attacks with Microsoft Security​​ Copilot](https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security/)
+Microsoft Copilot for Security:
+
+- [Defend against human-operated ransomware attacks with Microsoft Copilot for Security​​](https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security/)
+
+OpenAI key ransomware mitigation strategies, in ChatGPT’s own words, include: 
+
+1. **Training data curation**
+
+1. **Safety layers and filters**
+
+1. **Empirical testing and red teaming**
+
+1. **Continuous monitoring**
+
+1. **Alignment and safety research**
+
+1. **Community reporting and feedback**
+
+1. **Partnerships and policies**
+
+For more detailed information, refer to OpenAI's official documentation on their approach to [AI safety and misuse mitigation](https://openai.com/safety).
 
 Microsoft Security ransomware mitigation resources:
 
 See the latest list of ransomware articles in the [Microsoft Security Blog](https://www.microsoft.com/security/blog/?sort-by=relevance&date=any&s=ransomware).
-
-- [Protect your organization against ransomware (May 2024)](/security/ransomware/protect-against-ransomware)
-- [Automatic disruption of human-operated attacks through containment of compromised user accounts (October 2023)](https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/)
-- [Ransomware as a service: Understanding the cybercrime gig economy and how to protect yourself (May 2022)](https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/?ocid=magicti_ta_blog)
-
-  Key steps on how the Microsoft Incident Response team (formerly DART/CRSP) conducts ransomware incident investigations.
-
-- [Determine the ransomware attack recovery process (May 2024)](/security/operations/incident-response-playbook-dart-ransomware-approach#step-3-determine-the-compromise-recovery-process/)
-
-  Recommendations and best practices
 
 - [Navigating recent ransomware threats (June 2024)](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/octo-tempest-hybrid-identity-compromise-recovery/ba-p/4166783)

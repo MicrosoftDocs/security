@@ -1,7 +1,7 @@
 ---
 title: Overview - Apply Zero Trust principles to IaaS applications in Amazon Web Services (AWS)
 description: This article gives an overview of how to apply Zero Trust principles to IaaS applications in Amazon Web Services (AWS).
-ms.date: 05/10/2024
+ms.date: 09/11/2024
 ms.service: security
 author: rudneir2
 ms.author: ruolivei
@@ -21,21 +21,28 @@ For updates to product names, please also update the appropriate figures.
 
 To update figures that are not screen shots, your options are:
 
-- Locate the source Visio file in internal storage.
-- Use the published Visio file in the Microsoft Download Center (see the "Technical publications" section of this article).
-- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file.
+- Locate the source Visio file in internal storage (ask your publishing contacts about the Illustration-locations.docx document) (highly recommended).
+- Use a published Visio file in the Microsoft Download Center (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads).
+- For figures that are published in Scalable Vector Graphics (SVG) format, save the SVG file from the article web page, insert into Visio, modify, and then save it as a new version of the SVG file (last resort).
 
-For any updates to figures, please update the corresponding posters as needed (see the "Technical publications" section of this article) and republish the Visio and PDF files in the Microsoft Download Center.
+For updates to figures that are included in download files (see the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article for all the downloads), please: 
+
+- Update the corresponding files (Visio, PowerPoint, PDF) as needed.
+- Publish the Visio and PDF files in the Microsoft Download Center and update the refresh date (such as March 2024) for the download in this article and the https://learn.microsoft.com/security/zero-trust/zero-trust-tech-illus article.
 
 For new articles in this content set, please:
 
-- Add cross-links in the "Next Steps" section FROM all the other articles in this content set TO the new article.
+- Add cross-links in the "Next steps" section FROM all the other articles in this content set TO the new article.
 - Add a link to the Zero Trust Guidance Center page (index.yml).
 - Update the "Content architecture" figure in the apply-zero-trust-azure-services-overview.md article as needed.
 
 --->
 
 # Apply Zero Trust principles to IaaS applications in Amazon Web Services
+
+> [!NOTE]
+> :::image type="icon" source="../zero-trust/media/livestream.svg" alt-text="Livestream icon"::: **Upcoming Livestream** Join the Azure FastTrack team as they discuss this article. 16 October, 2024 | 10:00 AM - 11:30 AM (UTC-07:00) Pacific Time (US & Canada). [Register here.](https://developer.microsoft.com/en-us/reactor/events/23388/)
+
 
 This article provides steps to apply the principles of Zero Trust to IaaS applications in Amazon Web Services (AWS):
 

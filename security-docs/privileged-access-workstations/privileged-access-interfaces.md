@@ -5,7 +5,7 @@ description: Securing interfaces is only one part of the privileged access story
 ms.service: security
 ms.subservice: 
 ms.topic: conceptual
-ms.date: 12/15/2020
+ms.date: 06/20/2024
 
 ms.author: joflore
 author: MicrosoftGuyJFlo
@@ -22,7 +22,7 @@ This policy ensures users and devices initiating the inbound session are known, 
 
 This guidance defines three security levels for interface security that you can use for assets with different sensitivity levels. These levels are configured in the [securing privileged access rapid modernization plan (RAMP)](security-rapid-modernization-plan.md) and correspond to [security levels of accounts and devices](privileged-access-security-levels.md).
 
-The security requirements for inbound sessions to interfaces apply to accounts and the source device, whether it’s a direct connection from [physical devices](privileged-access-devices.md) or a Remote Desktop / Jump server [intermediary](privileged-access-intermediaries.md). Intermediaries can accept sessions from personal devices to provide enterprise security level (for some scenarios), but specialized or privileged intermediaries should not allow connections from lower levels because of the security sensitive nature of their roles. 
+The security requirements for inbound sessions to interfaces apply to accounts and the source device, whether it’s a direct connection from [physical devices](privileged-access-devices.md) or a Remote Desktop / Jump server [intermediary](privileged-access-intermediaries.md). Intermediaries can accept sessions from personal devices to provide enterprise security level (for some scenarios), but specialized or privileged intermediaries shouldn't allow connections from lower levels because of the security sensitive nature of their roles. 
 
 > [!NOTE]
 > These technologies provide strong end to end access control to the application interface, but the resource itself must also be secured from out of band attacks on the application code/functionality, unpatched vulnerabilities or configuration errors in the underlying operating system or firmware, on data at rest or in transit, supply chains, or other means.
@@ -62,7 +62,7 @@ Establishing interface security assurances requires a combination of security co
       - Is [compliant with organizations configuration requirements](/mem/intune/protect/device-compliance-get-started)
       - Isn't infected or under attack during the session
    - User Trust is high enough based on signals including:
-      - Multi-factor authentication usage during initial logon (or added later to increase trust)
+      - Multifactor authentication usage during initial sign in (or added later to increase trust)
       - Whether this session matches historical behavior patterns
       - Whether the account or current session triggers any alerts based on threat intelligence
       - [Microsoft Entra ID Protection risk](/azure/active-directory/identity-protection/overview-identity-protection#risk-detection-and-remediation)
@@ -90,15 +90,15 @@ Security controls for specialized interfaces should include
 
 - Zero Trust policy enforcement - on inbound sessions using Conditional Access to ensure that users and devices are secured at the specialized or privileged level
 - Role-Based Access Control (RBAC) - Model should ensure that the application is administered only by roles at the specialized or privileged security level
-- Just in time access workflows (optional) - that enforce least privilege by ensuring privileges are used only by authorized users during the time they are needed. 
+- Just in time access workflows (optional) - that enforce least privilege by ensuring privileges are used only by authorized users during the time they're needed. 
 	
 ### Privileged interface 
 
-Security controls for specialized interfaces should include
+Security controls for privileged interfaces should include
 
 - Zero Trust policy enforcement - on inbound sessions using Conditional Access to ensure that users and devices are secured at  the privileged level
 - Role-Based Access Control (RBAC) - Model should ensure that the application is administered only by roles at the privileged security level
-- Just in time access workflows (required) that enforce least privilege by ensuring privileges are used only by authorized users during the time they are needed. 
+- Just in time access workflows (required) that enforce least privilege by ensuring privileges are used only by authorized users during the time they're needed. 
 
 ## Next steps
 

@@ -3,7 +3,6 @@ title: Example of API protected by Microsoft identity consent framework
 description: Design a permissions and consent strategy that provides the best user experience when you implement least privilege.
 author: janicericketts
 ms.author: jricketts
-ms.service: identity
 ms.topic: conceptual
 ms.date: 05/24/2024
 ms.custom: template-concept

@@ -2,7 +2,7 @@
 title: "Make it hard for ransomware attacks to happen to your organization"
 ms.author: dansimp
 author: dansimp
-ms.date: 03/25/2024
+ms.date: 10/16/2024
 f1.keywords:
 - NOCSH
 manager: dansimp
@@ -12,21 +12,21 @@ ms.service: microsoft-365-security
 ms.collection:
 - msftsolution-ransomware
 ms.custom: cxdef-zt-ransomware
-ms.localizationpriority:   # medium
 description: How to stop ransomware attacks by making it hard for a cybercriminal to get into your environment. Use ransomware prevention to reduce your risks.
 
 ---
 
-# Make it hard for ransomware threat actors to access your organization
+# Defend against ransomware attacks
 
 In this phase, you make the threat actors work *harder* to access your on-premises or cloud systems by gradually removing risks at the points of entry.
 
-While many of these changes will be familiar and easy to do, **it's extremely important that your work on this part of the strategy not slow your progress on the other to critically important parts!**
+While many of these changes will be familiar and easy to implement, **it's extremely important that your work on this part of the strategy not slow your progress on the other critically important parts!**
 
-Here are the links to review the three-part cyber security plan:
+Here are the links to review the three-part ransomware prevention plan:
 
 - [Have a recovery plan](protect-against-ransomware-phase1.md)
-- [A plan to limit the harm done](protect-against-ransomware-phase2.md)
+- [Limit the harm done](protect-against-ransomware-phase2.md)
+
 - [Make it hard to get in](protect-against-ransomware-phase3.md)
 
 ## Remote access
@@ -67,7 +67,7 @@ Apply these best practices to protect your remote access infrastructure from ran
 
 ## Email and collaboration
 
-Implement best practices for email and collaboration solutions to make it more difficult for threat actors to abuse them, while allowing your workers to access external content easily and safely.
+Implement best practices for email and collaboration solutions to make it more difficult for threat actors to abuse them, while letting your workers access external content easily and safely.
 
 Threat actors frequently enter the environment by introducing malicious content disguised within authorized collaboration tools such as email and file sharing and convincing users to run the content. Microsoft has invested in enhanced mitigations that vastly increase protection against these attack vectors.
 
@@ -166,19 +166,22 @@ Apply these best practices to protect your accounts from ransomware attackers.
 
 Try to achieve these results within 30 days:
 
-- 100 % of employees are actively using MFA
-- 100 % deployment of higher password security
+- 100% of employees are actively using MFA
+
+- 100% deployment of higher password security
 
 ## Additional ransomware resources
 
 Key information from Microsoft:
 
-- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
+- [Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks](https://www.microsoft.com/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks), Microsoft Blog, May 2024
+
 - [Human-operated ransomware](human-operated-ransomware.md)
 - [Rapidly protect against ransomware and extortion](protect-against-ransomware.md)
-- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
+- [2023 Microsoft Digital Defense Report](https://www.microsoft.com/security/security-insider/microsoft-digital-defense-report-2023) (see pages 17-26)
+
 - [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft Defender portal
-- Microsoft's Detection and Response Team (DART) ransomware [approach](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
+- Microsoft Incident Response team (formerly DART) ransomware [approach](/security/operations/incident-response-playbook-dart-ransomware-approach) and [case study](dart-ransomware-case-study.md)
 
 Microsoft 365:
 
@@ -229,3 +232,4 @@ Microsoft Security team blog posts:
 
 - [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+

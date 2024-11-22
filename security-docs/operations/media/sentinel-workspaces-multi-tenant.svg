@@ -92,14 +92,14 @@
 		</g>
 		<g id="shape1836-10" v:mID="1836" v:groupContext="shape" transform="translate(25.1311,-367.544)">
 			<title>Sheet.1836</title>
-			<desc>Azure Entra ID tenant 1</desc>
+			<desc>Microsoft Entra ID tenant 1</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(366000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
-			<v:textRect cx="125.997" cy="410.57" width="252" height="29.2888"/>
-			<rect x="0" y="395.925" width="251.994" height="29.2888" class="st6"/>
-			<text x="4" y="415.97" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Azure Entra ID tenant 1</text>		</g>
+			<v:textRect cx="172.766" cy="410.57" width="345.54" height="29.2888"/>
+			<rect x="0" y="395.925" width="345.532" height="29.2888" class="st6"/>
+			<text x="4" y="415.97" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Microsoft Entra ID tenant 1</text>		</g>
 		<g id="shape1837-13" v:mID="1837" v:groupContext="shape" transform="translate(46.7874,-299.149)">
 			<title>Sheet.1837</title>
 			<desc>Platform 1 management group</desc>
@@ -308,14 +308,14 @@
 		</g>
 		<g id="shape1854-73" v:mID="1854" v:groupContext="shape" transform="translate(619.131,-367.973)">
 			<title>Sheet.1854</title>
-			<desc>Azure Entra ID tenant 2</desc>
+			<desc>Microsoft Entra ID tenant 2</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(381000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
-			<v:textRect cx="105.5" cy="410.57" width="211.01" height="29.2888"/>
-			<rect x="0" y="395.925" width="211" height="29.2888" class="st6"/>
-			<text x="4" y="415.97" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Azure Entra ID tenant 2</text>		</g>
+			<v:textRect cx="182.25" cy="410.57" width="364.5" height="29.2888"/>
+			<rect x="0" y="395.925" width="364.5" height="29.2888" class="st6"/>
+			<text x="4" y="415.97" class="st7" v:langID="1033"><v:paragraph/><v:tabList/>Microsoft Entra ID tenant 2</text>		</g>
 		<g id="shape1855-76" v:mID="1855" v:groupContext="shape" transform="translate(640.787,-299.578)">
 			<title>Sheet.1855</title>
 			<desc>Platform 2 management group</desc>

@@ -139,9 +139,9 @@ Microsoft Azure:
 - [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
 - [Fusion Detection for Ransomware in Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
  
-Microsoft Copilot for Security:
+Microsoft Security Copilot:
 
-- [Defend against human-operated ransomware attacks with Microsoft Copilot for Security​​](https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security/)
+- [Defend against human-operated ransomware attacks with Microsoft Security​​ Copilot](https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security/)
 
 Microsoft Security ransomware mitigation resources:
 

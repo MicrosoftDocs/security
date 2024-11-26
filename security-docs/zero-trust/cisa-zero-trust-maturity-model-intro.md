@@ -4,7 +4,7 @@ description: Enable Zero Trust capabilities with integrated security tools for a
 ms.service: security
 ms.subservice: security-fundamentals
 ms.topic: conceptual
-ms.date: 11/12/2024
+ms.date: 11/26/2024
 ms.author: jricketts
 author: jricketts
 manager: martinco
@@ -91,7 +91,7 @@ Organizations can reduce complexity, cost, and risk by using integrated solution
 
 Configure Microsoft Cloud Services for the CISA Zero Trust Maturity Model. 
 
-* Introduction
+* Introduction 
 * [Identity](cisa-zero-trust-maturity-model-identity.md)
 * [Devices](cisa-zero-trust-maturity-model-devices.md)
 * [Networks](cisa-zero-trust-maturity-model-networks.md)

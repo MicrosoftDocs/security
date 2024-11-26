@@ -190,7 +190,7 @@ The [MITRE Att&ck research department](https://attack.mitre.org/matrices/enterpr
 
     #### [Azure portal](#tab/azure-portal)
 
-    :::image type="content" source="./media/sentinel-dashboard.svg" alt-text="Screenshot of the MITRE ATT&CK dashboard in Microsoft Sentinel." lightbox="./media/sentinel-dashboard.svg":::
+    :::image type="content" source="media/sentinel-dashboard.svg" alt-text="Screenshot of the MITRE ATT&CK dashboard in Microsoft Sentinel." lightbox="media/sentinel-dashboard.svg":::
 
     ---
 

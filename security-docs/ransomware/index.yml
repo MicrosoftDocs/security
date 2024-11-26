@@ -74,8 +74,8 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-        - text: Chinese threat actor Storm-0940 uses credentials from password spray attacks from a covert network - October 2024
-          url:  https://www.microsoft.com/en-us/security/blog/2024/10/31/chinese-threat-actor-storm-0940-uses-credentials-from-password-spray-attacks-from-a-covert-network/
+        - text: Microsoft shares latest intelligence on North Korean and Chinese threat actors at CYBERWARCON - November 2024
+          url:  https://www.microsoft.com/en-us/security/blog/2024/11/22/microsoft-shares-latest-intelligence-on-north-korean-and-chinese-threat-actors-at-cyberwarcon
         - text: Ransomware as a service. Understanding the cybercrime gig economy and how to protect yourself
           url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
         - text: Octo Tempest - A recurring ransomware threat

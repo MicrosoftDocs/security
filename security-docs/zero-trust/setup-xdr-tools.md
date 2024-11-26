@@ -13,7 +13,7 @@ ms.collection:
   - msftsolution-secops
   - msftsolution-scenario
   - zerotrust-azure
-ms.localizationpriority:   # medium
+ms.localizationpriority: medium
 ---
 
 # Step 1. Set up your XDR tools
@@ -37,7 +37,7 @@ Microsoft provides guidance to help you set up and get started with Microsoft De
 
 Microsoft recommends enabling the components of Microsoft 365 Defender in the following order.
 
-:::image type="content" source="./media/defender-xdr-pilot-deploy-flow.svg" alt-text="A diagram that shows the pilot and deploy process for Microsoft Defender XDR." lightbox="./media/defender-xdr-pilot-deploy-flow.svg" border="false":::
+:::image type="content" source="media/defender-xdr-pilot-deploy-flow.svg" alt-text="A diagram that shows the pilot and deploy process for Microsoft Defender XDR." lightbox="media/defender-xdr-pilot-deploy-flow.svg" border="false":::
 
 | Phase | Link |
 |---|---|

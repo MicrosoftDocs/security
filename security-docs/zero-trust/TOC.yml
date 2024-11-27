@@ -228,9 +228,9 @@
       items: 
         - name: Overview and reference architecture
           href: azure-infrastructure-overview.md
-        - name: Compute
-          expanded: false
-          items:
+    - name: Compute
+      expanded: false
+      items:
         - name: Virtual machines
           href: azure-infrastructure-virtual-machines.md
         - name: Azure Virtual Desktop

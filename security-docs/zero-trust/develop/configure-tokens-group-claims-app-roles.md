@@ -63,11 +63,7 @@ When you request all groups in your token as shown in the above example, you can
 
 If you're using OpenID Connect or OAuth2, you can have up to 200 groups in your token. If you're using SAML, you can have only 150 groups because SAML tokens are bigger than OAuth2 and OpenID Connect tokens. If you're using the implicit flow, the limit is six because those responses show up in the URL. In all of these cases, instead of having a `groups` claim, you see an indication (known as a group overage) that tells you that the user is a member of too many groups to fit in your token.
 
-In the following token example, for an OpenID connect, or OAuth2, JSON web token (JWT), there isn't a `groups` claim if the user is a member of too many groups. Instead, there's a `_claim_names` claim that contains a `groups` member of the array.
-
-:::image type="content" source="../media/develop/configure-tokens-group-claims-app-roles/screenshot-token-group-membership-azure-ad-graph-inline.png" alt-text="Screenshot of example token shows query." lightbox="../media/develop/configure-tokens-group-claims-app-roles/screenshot-token-group-membership-azure-ad-graph-expanded.png":::
-
-In the above token example, you see that the `groups` claim is supposed to be mapped to `src1`. In theory, you'd then look for the `_claim_sources` claim then find the `src1` member. From there, you'd find the Graph query that you'd use to get the group membership. However, there's a problem with what you see in the example Graph query. It goes to Azure AD Graph (which Microsoft is deprecating), so don't use it.
+The `groups` claim is supposed to be mapped to `src1`. In theory, you'd then look for the `_claim_sources` claim then find the `src1` member. From there, you'd find the Graph query that you'd use to get the group membership. However, there's a problem with what you see in the example Graph query. It goes to Azure AD Graph (which Microsoft is deprecating), so don't use it.
 
 Implicit flow overage indication is done with a `hasgroups` claim instead of the `groups` claim.
 

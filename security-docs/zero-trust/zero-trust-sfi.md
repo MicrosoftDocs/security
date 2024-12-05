@@ -1,6 +1,6 @@
 ---
 title: Zero Trust and Microsoft Secure Future Initiative (SFI)
-description: Understand the Zero Trust security model, learn about the principles, and apply the Zero Trust architecture using Microsoft 365 and Microsoft Azure services.  
+description: Secure Future Initiative (SFI) is Microsoft's implementation of Zero Trust. 
 ms.date: 12/16/2024
 ms.service: security
 author: brendacarter

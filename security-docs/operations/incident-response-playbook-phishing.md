@@ -22,6 +22,7 @@ ms.custom:
   - cxdef-zt-ransomware
   - has-azure-ad-ps-ref
   - azure-ad-ref-level-one-done
+ms.date: 11/06/2024
 ---
 
 # Phishing investigation
@@ -587,13 +588,13 @@ For example, `https://graph.microsoft.com/beta/users?$filter=startswith(displayN
 Or you can use the PowerShell command `Get-AzureADUserLastSignInActivity` to get the last interactive sign-in activity for the user, targeted by their object ID. This example writes the output to a date and time stamped CSV file in the execution directory.
 
 ```powershell
-Get-AzureADUserLastSignInActivity -TenantId 536279f6-1234-2567-be2d-61e352b51eef -UserObjectId 69447235-0974-4af6-bfa3-d0e922a92048 -CsvOutput
+Get-AzureADUserLastSignInActivity -TenantId aaaabbbb-0000-cccc-1111-dddd2222eeee -UserObjectId aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb -CsvOutput
 ```
 
 Or you can use this command from the AzureADIncidentResponse PowerShell module:
 
 ```powershell
-Get-AzureADIRSignInDetail -UserId johcast@Contoso.com -TenantId 536279f6-1234-2567-be2d-61e352b51eef -RangeFromDaysAgo 29 -RangeToDaysAgo 3
+Get-AzureADIRSignInDetail -UserId johcast@Contoso.com -TenantId aaaabbbb-0000-cccc-1111-dddd2222eeee -RangeFromDaysAgo 29 -RangeToDaysAgo 3
 ```
 
 ### Investigate source IP address
@@ -609,7 +610,7 @@ For a managed scenario, you should start looking at the sign-in logs and filter 
 Or you can use this command from the AzureADIncidentResponse PowerShell module:
 
 ```powershell
-Get-AzureADIRSignInDetail -IpAddress 1.2.3.4 -TenantId 536279f6-1234-2567-be2d-61e352b51eef -RangeFromDaysAgo 29 -RangeToDaysAgo 3 -OutGridView
+Get-AzureADIRSignInDetail -IpAddress 1.2.3.4 -TenantId aaaabbbb-0000-cccc-1111-dddd2222eeee -RangeFromDaysAgo 29 -RangeToDaysAgo 3 -OutGridView
 ```
 
 When you look into the results list, navigate to the **Device info** tab. Depending on the device used, you get varying output. Here are a few examples:
@@ -653,13 +654,13 @@ Note the differences between the Application (and ID) to the Resource (and ID). 
 With this AppID, you can now perform research in the tenant. Here's an example:
 
 ```powershell
-Get-MgApplication -Filter "AppId eq '30d4cbf1-c561-454e-bf01-528cd5eafd58'"
+Get-MgApplication -Filter "AppId eq '00001111-aaaa-2222-bbbb-3333cccc4444'"
 ```
 
 ```Output
 Id                                       AppId                                    DisplayName
 
-3af6dc4e-b0e5-45ec-8272-56f3f3f875ad     30d4cbf1-c561-454e-bf01-528cd5eafd58     Claims X-Ray
+3af6dc4e-b0e5-45ec-8272-56f3f3f875ad     00001111-aaaa-2222-bbbb-3333cccc4444     Claims X-Ray
 ```
 
 With this information, you can search in the Enterprise Applications portal. Navigate to **All Applications** and search for the specific AppID.
@@ -682,4 +683,3 @@ Examine guidance for identifying and investigating these other types of attacks:
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 - [Microsoft Incident Response team guide shares best practices for security teams and leaders](https://www.microsoft.com/security/blog/2023/12/11/new-microsoft-incident-response-team-guide-shares-best-practices-for-security-teams-and-leaders/)
 - [Microsoft Incident Response guides help security teams analyze suspicious activity](https://www.microsoft.com/security/blog/2024/01/17/new-microsoft-incident-response-guides-help-security-teams-analyze-suspicious-activity/)
-

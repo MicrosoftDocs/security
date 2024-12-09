@@ -327,14 +327,14 @@
 						x="4" dy="1.2em" class="st15">External Attack Surface </tspan><tspan x="4" dy="1.2em" class="st15">Management (EASM)</tspan></text>		</g>
 		<g id="shape1168-86" v:mID="1168" v:groupContext="shape" transform="translate(218.349,-465.949)">
 			<title>Sheet.1168</title>
-			<desc>Copilot for Security</desc>
+			<desc>Security Copilot</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(180000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:verticalAlign="0"/>
 			<v:textRect cx="65.628" cy="567.586" width="131.26" height="22.1674"/>
 			<rect x="0" y="556.503" width="131.256" height="22.1674" rx="4.5" ry="4.5" class="st18"/>
-			<text x="4" y="571.3" class="st19" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Copilot for Security</text>		</g>
+			<text x="4" y="571.3" class="st19" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Security Copilot</text>		</g>
 		<g id="group1169-90" transform="translate(179.424,-465.949)" v:mID="1169" v:groupContext="group">
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(181000):26"/>
@@ -412,8 +412,8 @@
 			</g>
 			<rect v:rectContext="foreign" x="0" y="551.274" width="27.3959" height="27.3959" rx="4.5" ry="4.5" class="st18"/>
 			<image x="0" y="551.274" width="27.3959" height="27.3959" preserveAspectRatio="none" xlink:href="data:image/png;base64,
-						iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7D
-						AcdvqGQAAAIQSURBVFhH1ZfBKwRhGMZ3ZuyuNrtGTkvtTpGIEkqorcWBQq2bi20dOFHkgostKQeFkiProrg4iJPakpPUHhwct/wDm79g
+						iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2H
+						AY/l8WUAAAIQSURBVFhH1ZfBKwRhGMZ3ZuyuNrtGTkvtTpGIEkqorcWBQq2bi20dOFHkgostKQeFkiProrg4iJPakpPUHhwct/wDm79g
 						zfBu37Seme+dpeSp3233+b3zfTPf7Pr+XSJ9iWTH7sV17+VLcfDhvRzIvpb9q/dF/9zxtdo5nqKP/X6C0ZjRdXSbt6R2rAHs+DPneUVv
 						NehrP09duFFvXdjc7r97K1XL0QCfbDyVtKH0KlV4TzAaN5oS06n4yt6Bk7gCHICwtqZucvNANQaT0lWJmTIkkIHEMjRzKNKKoHIOSMCB
 						tCKonAMq50BaEVTOAZVzIK0IKueAyjmQVgSVc0DlHEgrgso5oHIOpBVB5RxQOQfSiqByDqicA2lFeq++Xi5eQeUyrBOStCI9p48FJJCB
@@ -444,8 +444,8 @@
 			</g>
 			<rect v:rectContext="foreign" x="0" y="551.274" width="27.4494" height="27.3959" rx="4.5" ry="4.5" class="st18"/>
 			<image x="0" y="551.274" width="27.4494" height="27.3959" preserveAspectRatio="none" xlink:href="data:image/png;base64,
-						iVBORw0KGgoAAAANSUhEUgAAAgEAAAIACAYAAAAbur/EAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7D
-						AcdvqGQAAOe/SURBVHhe7P15tLXNVR8Geq20s7JIBxSHThsjCxklIIExsgYkgQQa8CeBxOT+rzsdKXPsQCDp7pWEpAPuXh1wJ14m6cY4
+						iVBORw0KGgoAAAANSUhEUgAAAgEAAAIACAYAAAAbur/EAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2H
+						AY/l8WUAAOe/SURBVHhe7P15tLXNVR8Geq20s7JIBxSHThsjCxklIIExsgYkgQQa8CeBxOT+rzsdKXPsQCDp7pWEpAPuXh1wJ14m6cY4
 						doPMYOwEzJAgi0F8QgwSQgiJwYbYSWTjIcYEJASSQEL3du2xfnvXruece9/3/d7zXu1a63erak9V9Tx1au+q5znn/p5OnTp16tSpU6dO
 						nTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSp
 						U6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp16tSpU6dOnTp1
@@ -1224,7 +1224,7 @@
 			<v:textBlock v:margins="rect(0,0,0,0)"/>
 			<v:textRect cx="186.75" cy="564.894" width="373.52" height="27.5494"/>
 			<rect x="0" y="551.121" width="373.5" height="27.5494" class="st14"/>
-			<text x="-0.01" y="569.69" class="st34" v:langID="1033"><v:paragraph/><v:tabList/>Microsoft Copilot for Security service architecture</text>		</g>
+			<text x="-0.01" y="569.69" class="st34" v:langID="1033"><v:paragraph/><v:tabList/>Microsoft Security Copilot service architecture</text>		</g>
 		<g id="group1216-163" transform="translate(673.725,-386.989)" v:mID="1216" v:groupContext="group">
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(203000):26"/>
@@ -1240,8 +1240,7 @@
 				<v:textRect cx="71.81" cy="547.672" width="143.63" height="61.9936"/>
 				<rect x="0" y="516.676" width="143.62" height="61.9936" rx="4.5" ry="4.5" class="st35"/>
 				<text x="8.39" y="536.87" class="st19" v:langID="1033"><v:paragraph v:spBefore="12" v:horizAlign="1"/><v:tabList/>Large Language Models <tspan
-							x="15.5" dy="1.2em" class="st15">(LLMs) for Copilot for </tspan><tspan x="50.84" dy="1.2em"
-							class="st15">Security</tspan></text>			</g>
+							x="45.48" dy="1.2em" class="st15">(LLMs) for <v:lf/></tspan><tspan x="29.99" dy="1.2em" class="st15">Security Copilot</tspan></text>			</g>
 			<g id="group1145-169" transform="translate(0,-60.068)" v:mID="1145" v:groupContext="group">
 				<v:userDefs>
 					<v:ud v:nameU="visNavOrder" v:val="VT0(169000):26"/>
@@ -1256,7 +1255,7 @@
 					<v:textBlock v:margins="rect(0,0,0,0)"/>
 					<v:textRect cx="72.4402" cy="558.801" width="144.89" height="39.7363"/>
 					<rect x="0" y="538.934" width="144.88" height="39.7363" rx="4.5" ry="4.5" class="st36"/>
-					<text x="14.25" y="555.2" class="st37" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Azure Open AI service <tspan
+					<text x="15.89" y="555.2" class="st37" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Azure OpenAI service <tspan
 								x="40.19" dy="1.2em" class="st15">subscription</tspan></text>				</g>
 				<g id="shape1147-174" v:mID="1147" v:groupContext="shape" v:layerMember="0">
 					<title>Sheet.1147</title>
@@ -1419,7 +1418,7 @@
 				<v:textBlock v:margins="rect(0,0,0,0)"/>
 				<v:textRect cx="66.212" cy="547.672" width="132.44" height="61.9936"/>
 				<rect x="0" y="516.676" width="132.424" height="61.9936" rx="4.5" ry="4.5" class="st36"/>
-				<text x="15.26" y="551.27" class="st37" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Copilot for Security</text>			</g>
+				<text x="24.39" y="551.27" class="st37" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Security Copilot</text>			</g>
 			<g id="group1236-242" transform="translate(47.6741,-47.3182)" v:mID="1236" v:groupContext="group">
 				<v:userDefs>
 					<v:ud v:nameU="visNavOrder" v:val="VT0(204000):26"/>
@@ -1449,7 +1448,7 @@
 					<rect v:rectContext="foreign" x="0" y="545.517" width="33.1992" height="33.1534" rx="4.5" ry="4.5" class="st18"/>
 					<image x="0" y="545.517" width="33.1992" height="33.1534" preserveAspectRatio="none" xlink:href="data:image/png;base64,
 								iVBORw0KGgoAAAANSUhEUgAABagAAAWmCAYAAABtLkchAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAA
-								DsMAAA7DAcdvqGQAAP+lSURBVHhe7P1p0GXXdZ4JMqJMAeAAJoacM5GZmAmCJEgKBEQSBDhTsqay3B3hX7JdVXJ1VEfT6uhw
+								HYcAAB2HAY/l8WUAAP+lSURBVHhe7P1p0GXXdZ4JMqJMAeAAJoacM5GZmAmCJEgKBEQSBDhTsqay3B3hX7JdVXJ1VEfT6uhw
 								dEVZZld02BHV6m6560+VTRKJnIHEPHMGMSYGUrTskqzyIFiWZUokgQQyEznnvb3W3utde5+1z/7O/T4kOOl9I56Is9Zee59z
 								b0Jy6vGJm29iGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZh
 								GIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZhGIZh
@@ -12417,7 +12416,7 @@
 		<g id="shape14-260" v:mID="14" v:groupContext="shape" transform="translate(183.658,-347.13)">
 			<title>Sheet.14</title>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(223000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(222000):26"/>
 			</v:userDefs>
 			<g id="shadow14-261" v:groupContext="shadow" v:shadowOffsetX="1.22465E-16" v:shadowOffsetY="-2" v:shadowType="1"
 					v:shadowScale="1.01" transform="matrix(1.01,0,0,1.01,-0.114789,-3.64895)" class="st1">
@@ -12429,7 +12428,7 @@
 			</clipPath>
 			<image x="-7.56333" y="545.7" width="38.3906" height="38.3906" preserveAspectRatio="none"
 					clip-path="url(#clip-path267)" overflow="hidden" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA
-						S0AAAEtCAYAAABd4zbuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAKozSURBVHhe7d0Hl
+						S0AAAEtCAYAAABd4zbuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAKozSURBVHhe7d0Hl
 						JVlli5gtBUQgco5V5FzKAwdzVlARDAg5pxzDojknHOSpCAC5pxzbnPO2e7pmVn3zr0zre77vnt/3x9OHVBbmp6e++219vqrTpU4q5t+5
 						t37/85/moUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQ
 						oUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUq

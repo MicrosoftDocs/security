@@ -15,7 +15,7 @@ ms.collection:
 
 <!---
 
-Writers notes:
+Writers note:
 
 For updates to product names, please also update the appropriate figures.
 
@@ -48,7 +48,7 @@ This series of articles helps you apply the [principles of Zero Trust](zero-trus
 - Use least privileged access
 - Assume breach
 
-Implementing the Zero Trust “never trust, always verify” mindset requires changes to cloud infrastructure, deployment strategy, and implementation.
+Implementing the Zero Trust “never trust, always verify” approach requires changes to cloud infrastructure, deployment strategy, and implementation.
 
 These articles show you how to apply Zero Trust approach to these new or already deployed Azure services:
 
@@ -81,7 +81,7 @@ It’s important to note that the guidance in this series of articles is more sp
 
 ## Additional articles for Azure services
 
-See these additional articles for applying Zero Trust principles to Azure services:
+Take a look at these additional articles for applying Zero Trust principles to Azure services:
 
 - For Azure IaaS:
   - [Azure storage](azure-infrastructure-storage.md)

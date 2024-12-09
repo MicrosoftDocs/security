@@ -8,6 +8,7 @@ ms.collection:
   - msftsolution-secops
 ms.topic: article
 ms.service: microsoft-365-security
+ms.date: 11/06/2024
 ---
 
 # Security operations overview

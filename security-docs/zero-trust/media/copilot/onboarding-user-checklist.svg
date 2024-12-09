@@ -74,7 +74,7 @@
 		</g>
 		<g id="shape1065-10" v:mID="1065" v:groupContext="shape" transform="translate(17.805,-253.13)">
 			<title>Sheet.1065</title>
-			<desc>Onboarding admins and SecOps staff to Copilot for Security</desc>
+			<desc>Onboarding admins and SecOps staff to Security Copilot</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(63000):26"/>
 			</v:userDefs>
@@ -82,7 +82,7 @@
 			<v:textRect cx="123.75" cy="289.86" width="247.5" height="50.4"/>
 			<rect x="0" y="264.66" width="247.5" height="50.4" rx="4.5" ry="4.5" class="st6"/>
 			<text x="4" y="283.06" class="st8" v:langID="1033"><v:paragraph v:spAfter="6"/><v:tabList/>Onboarding admins and SecOps <tspan
-						x="4" dy="1.2em" class="st9">staff to Copilot for Security</tspan></text>		</g>
+						x="4" dy="1.2em" class="st9">staff to Security Copilot</tspan></text>		</g>
 		<g id="shape1066-16" v:mID="1066" v:groupContext="shape" transform="translate(22.305,-231.934)">
 			<title>Sheet.1066</title>
 			<v:userDefs>
@@ -197,7 +197,7 @@
 		</g>
 		<g id="shape1075-87" v:mID="1075" v:groupContext="shape" transform="translate(49.305,-33.674)">
 			<title>Rectangle.1075</title>
-			<desc>Appropriate roles in Copilot for Security are applied</desc>
+			<desc>Appropriate roles in Security Copilot are applied</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
 				<v:ud v:nameU="visNavOrder" v:val="VT0(75000):26"/>
@@ -207,11 +207,11 @@
 			<g id="shadow1075-88" v:groupContext="shadow" v:shadowOffsetX="1.22465E-16" v:shadowOffsetY="-2" v:shadowType="1"
 					v:shadowScale="1.01" transform="matrix(1.01,0,0,1.01,-0.945,-0.92632)" class="st1">
 				<rect x="0" y="270.204" width="189" height="44.856" class="st13"/>
-				<text x="5" y="286" class="st14" v:langID="1033"><v:paragraph/><v:tabList/>Appropriate roles in Copilot for <tspan
-							x="5" dy="1.2em" class="st9">Security are applied</tspan></text>			</g>
+				<text x="5" y="286" class="st14" v:langID="1033"><v:paragraph/><v:tabList/>Appropriate roles in Security <tspan
+							x="5" dy="1.2em" class="st9">Copilot are applied</tspan></text>			</g>
 			<rect x="0" y="270.204" width="189" height="44.856" class="st15"/>
-			<text x="5" y="286" class="st16" v:langID="1033"><v:paragraph/><v:tabList/>Appropriate roles in Copilot for <tspan
-						x="5" dy="1.2em" class="st9">Security are applied</tspan></text>		</g>
+			<text x="5" y="286" class="st16" v:langID="1033"><v:paragraph/><v:tabList/>Appropriate roles in Security <tspan x="5"
+						dy="1.2em" class="st9">Copilot are applied</tspan></text>		</g>
 		<g id="shape1076-97" v:mID="1076" v:groupContext="shape" transform="translate(22.305,-53.5046)">
 			<title>Sheet.1076</title>
 			<v:userDefs>
@@ -227,7 +227,7 @@
 			<title>Sheet.1078</title>
 			<desc>ü</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visNavOrder" v:val="VT0(77000):26"/>
+				<v:ud v:nameU="visNavOrder" v:val="VT0(78000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:verticalAlign="0"/>
 			<v:textRect cx="16.9996" cy="298.06" width="34" height="33.9992"/>

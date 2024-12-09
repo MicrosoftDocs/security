@@ -1,7 +1,7 @@
 ---
 title: Zero Trust assessment and progress tracking resources 
 description: Get the assessment and progress tracking resources in the Zero Trust library.
-ms.date: 04/15/2024
+ms.date: 11/01/2024
 ms.service: security
 author: brendacarter
 ms.author: bcarter
@@ -97,17 +97,6 @@ For business scenario project leads, IT leads, and IT implementers.
 :::image type="content" source="./media/adoption-guide/microsoft-defender-zero-trust-initiative.png" alt-text="Screenshot of the Zero Trust initiative in the Microsoft Defender portal." lightbox="./media/adoption-guide/microsoft-defender-zero-trust-initiative.png"::: 
 
 
-<!---
-
-| Progress tracking resource | That helps you… | Designed for… |
-| --- | --- | --- |
-| **At-a-glance blueprint:** Adoption Scenario Plan Phase Grid downloadable [Visio file](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.vsdx) or [PDF](https://download.microsoft.com/download/c/c/5/cc56e1ff-a13e-49d8-8703-16453dce0370/zero-trust-phase-grid-tracker-microsoft.pdf) <br><br> :::image type="content" source="./media/adoption-guide/adoption-scenario-plan-phase-grid-example.png" alt-text="Screenshot of an example plan and phase grid." lightbox="./media/adoption-guide/adoption-scenario-plan-phase-grid-example.png"::: | Easily understand the security enhancements for each business scenario and the level of effort for the stages and objectives of the **Plan** phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| **For business leaders:** Zero Trust adoption tracker [downloadable PowerPoint slide deck](https://download.microsoft.com/download/a/b/5/ab51ac2a-e9de-4c8f-8323-6bc7c2f78c1f/ZeroTrust-Adoption-Resources.pptx) <br><br> :::image type="content" source="./media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png" alt-text="Screenshot of a slide showing stages and objectives." lightbox="./media/adoption-guide/zero-trust-adoption-tracker-powerpoint-deck.png"::: | Track your progress through the stages and objectives of the **Plan** phase. | Business scenario project leads, business leaders, and other stakeholders. |
-| **For implementers:** Business scenario objectives and tasks [downloadable Excel workbook](https://download.microsoft.com/download/d/0/3/d030e1d6-ea3d-45a1-9672-938e1b01db0d/zero-trust-business-scenario-objectives-tracking-workbook.xlsx) <br><br> :::image type="content" source="./media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png" alt-text="Screenshot of a worksheet showing stages, objectives, and tasks." lightbox="./media/adoption-guide/business-scenario-objectives-tasks-excel-workbook.png"::: | Assign ownership and track your progress through the stages, objectives, and tasks of the **Plan** phase. | Business scenario project leads, IT leads, and IT implementers. |
-| **In-product dashboard:** [Zero Trust initiative in the Microsoft Defender portal](https://security.microsoft.com/exposure-initiative?initiativeId=zero_trust&viewid=overview) (might require sign-in with a user account that has Microsoft Defender portal privileges) <br><br> Also see [Microsoft Security Exposure Management initiatives](/security-exposure-management/initiatives). <br><br> :::image type="content" source="./media/adoption-guide/microsoft-defender-zero-trust-initiative.png" alt-text="Screenshot of the Zero Trust initiative in the Microsoft Defender portal." lightbox="./media/adoption-guide/microsoft-defender-zero-trust-initiative.png"::: | See current status, security metrics, and recommendations for the adoption framework business scenarios. | Business scenario project leads, IT leads, and IT implementers. |
-
---->
-
 ## Assessment resources
 
 
@@ -130,20 +119,10 @@ Evaluate your Zero Trust security posture and maturity level.
 
 For IT department project leads and implementers. 
 
-Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztassess](https://aka.ms/ztassess) 
+Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztworkshop](https://aka.ms/ztworkshop) 
 
-:::image type="content" source="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png":::
+:::image type="content" source="./media/zero-trust-assessment-strategy-workshop.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/zero-trust-assessment-strategy-workshop.png":::
 
-
-
-<!---
-
-| Assessment resource | That helps you… | Designed for… |
-| --- | --- | --- |
-| [Microsoft Zero Trust Security Posture Assessment](https://www.microsoft.com/security/business/zero-trust/maturity-model-assessment-tool) <br><br> :::image type="content" source="./media/adoption-guide/zero-trust-posture-assessment-example.png" alt-text="Screenshot of assessment questions for identities." lightbox="./media/adoption-guide/zero-trust-posture-assessment-example.png"::: | Evaluate your Zero Trust security posture and maturity level. | IT department project leads and implementers. |
-| Zero Trust Assessment strategy workshop downloadable Excel workbook at [https://aka.ms/ztassess](https://aka.ms/ztassess) <br><br> :::image type="content" source="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png" alt-text="Screenshot of the Zero Trust roadmap for identities." lightbox="./media/adoption-guide/zero-trust-assessment-strategy-workshop-example.png"::: | Check your Microsoft 365 tenant configuration for Zero Trust readiness. | IT department project leads and implementers. |
-
---->
 
 ## Recommended training
 

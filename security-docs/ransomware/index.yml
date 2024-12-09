@@ -6,6 +6,7 @@ summary: Learn how to better protect your organization from ransomware, extortio
 metadata:
   title: Microsoft defense against ransomware, extortion, and intrusion # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn how to better protect your organization from ransomware, extortion, and intrusion  # Required; article description that is displayed in search results. < 160 chars.
+
   services: na
   ms.service: microsoft-365-security
   ms.subservice: m365d
@@ -14,7 +15,9 @@ metadata:
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
   ms.date: 10/11/2024 #Required; mm/dd/yyyy format.
-  ms.custom: cx-rw
+  ms.custom:
+  - cx-ti
+  - cx-rw
   
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -35,7 +38,7 @@ landingContent:
           url:  https://www.microsoft.com/security/blog/threat-intelligence/ransomware
         - text: Microsoft Defender XDR for in-depth ransomware investigation
           url:  https://learn.microsoft.com/defender-xdr/playbook-detecting-ransomware-m365-defender
-        - text: Use Microsoft Copilot for Security for AI-enhanced ransomware defense
+        - text: Use Microsoft Security Copilot for AI-enhanced ransomware defense
           url:  https://www.microsoft.com/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security
 
   # Card 
@@ -51,7 +54,7 @@ landingContent:
           url:  /azure/security/fundamentals/backup-plan-to-protect-against-ransomware
         - text: How do I proactively hunt for ransomware?
           url:  /defender-xdr/advanced-hunting-find-ransomware
-        - text: Can I download a ransomware incident response playbook? 
+        - text: How can I download a ransomware incident response playbook? 
           url:  https://download.microsoft.com/download/3/d/d/3ddd4682-6764-4738-a12f-6710cbdddc64/Ransomware Incident Response Playbook Template.pdf
 
   # Card 
@@ -60,20 +63,19 @@ landingContent:
       - linkListType: reference
         links:
         - text: Recent Microsoft Security ransomware blog
-          url:  https://www.microsoft.com/en-us/security/blog/2024/10/17/new-macos-vulnerability-hm-surf-could-lead-to-unauthorized-data-access
+          url:  https://www.microsoft.com/en-us/security/blog/2024/10/31/chinese-threat-actor-storm-0940-uses-credentials-from-password-spray-attacks-from-a-covert-network
         - text: Recent Microsoft ransomware social media posts 
           url:  https://www.linkedin.com/posts/microsoft-threat-intelligence_in-the-second-quarter-of-2024-financially-activity-7218696257739923456-KKy_
         - text: Automatic disruption of ransomware attacks
           url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/
-
 
 # Card
   - title: Microsoft Blogs about ransomware
     linkLists:
       - linkListType: reference
         links:
-        - text: Microsoft Threat Intelligence healthcare ransomware report highlights need for collective industry action - October 2024
-          url:  https://www.microsoft.com/en-us/security/blog/2024/10/22/microsoft-threat-intelligence-healthcare-ransomware-report-highlights-need-for-collective-industry-action
+        - text: Microsoft shares latest intelligence on North Korean and Chinese threat actors at CYBERWARCON - November 2024
+          url:  https://www.microsoft.com/en-us/security/blog/2024/11/22/microsoft-shares-latest-intelligence-on-north-korean-and-chinese-threat-actors-at-cyberwarcon
         - text: Ransomware as a service. Understanding the cybercrime gig economy and how to protect yourself
           url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
         - text: Octo Tempest - A recurring ransomware threat
@@ -102,7 +104,7 @@ landingContent:
          links:
          - text: In Microsoft 365
            url:  /compliance/assurance/assurance-malware-and-ransomware-protection
-         - text: In Copilot for Security
+         - text: In Microsoft Security Copilot
            url:  /copilot/security/get-started-security-copilot
          - text: In Azure
            url:  /azure/security/fundamentals/ransomware-protection

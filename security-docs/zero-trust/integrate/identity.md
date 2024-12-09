@@ -88,8 +88,6 @@ For more, check out the [configure conditional access policies using the Microso
 
 Sometimes independent software vendors may become aware of compromise that is outside of the scope of Microsoft Entra ID. For any security event, especially those including account compromise, Microsoft and the independent software vendor can collaborate by sharing information from both parties. The [confirm compromise API](/graph/api/riskyuser-confirmcompromised) allows you to set a targeted user’s risk level to high. This lets Microsoft Entra ID respond appropriately, for example by requiring the user to reauthenticate or by restricting their access to sensitive data.
 
-:::image type="content" source="../media/integrate/identity/diagram-confirm-compromise.png" alt-text="Diagram showing a user using an application, which then calls Microsoft Entra ID to set user risk level to high." border="true" lightbox="../media/integrate/identity/diagram-confirm-compromise-expanded.png":::
-
 Going in the other direction, Microsoft Entra ID continually evaluates user risk based on various signals and machine learning. The Risky User API provides programmatic access to all at-risk users in the app’s Microsoft Entra tenant. Independent software vendors can make use of this API to ensure they are handling users appropriately to their current level of risk. [riskyUser resource type](/graph/api/resources/riskyuser).
 
 :::image type="content" source="../media/integrate/identity/diagram-risky-user.png" alt-text="Diagram showing a user using an application, which then calls Microsoft Entra ID to retrieve the user's risk level." border="true" lightbox="../media/integrate/identity/diagram-risky-user-expanded.png":::

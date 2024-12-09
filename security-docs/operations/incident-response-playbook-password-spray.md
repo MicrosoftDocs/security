@@ -434,7 +434,7 @@ Microsoft Entra Sign-In reports include ADFS sign-in activity when you use Micro
 Here's an example PowerShell command to retrieve sign-in logs for a specific IP address:
 
 ```powershell
-Get-AzureADIRSignInDetail -TenantId b446a536-cb76-4360-a8bb-6593cf4d9c7f -IpAddress 131.107.128.76
+Get-AzureADIRSignInDetail -TenantId aaaabbbb-0000-cccc-1111-dddd2222eeee -IpAddress 131.107.128.76
 ```
 
 Also, search the Azure portal for time frame, IP address and successful and interrupted sign-in as shown in these images.
@@ -620,4 +620,3 @@ Examine guidance for identifying and investigating these extra types of attacks:
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 - [Microsoft Incident Response team guide shares best practices for security teams and leaders](https://www.microsoft.com/security/blog/2023/12/11/new-microsoft-incident-response-team-guide-shares-best-practices-for-security-teams-and-leaders/)
 - [Microsoft Incident Response guides help security teams analyze suspicious activity](https://www.microsoft.com/security/blog/2024/01/17/new-microsoft-incident-response-guides-help-security-teams-analyze-suspicious-activity/)
-

@@ -49,7 +49,7 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 |**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps|
 ||[Block clients that don't support modern authentication](zero-trust-identity-device-access-policies-common.md#block-clients-that-dont-support-multifactor-authentication)|Include Exchange Online in the assignment of cloud apps|
 ||[Apply APP data protection policies](zero-trust-identity-device-access-policies-common.md#app-protection-policies)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows)|
-||[Require approved apps and APP protection](zero-trust-identity-device-access-policies-common.md#require-approved-apps-and-app-protection-policies)|Include Exchange Online in the list of cloud apps|
+||[Require approved apps or app protection policies](zero-trust-identity-device-access-policies-common.md#require-approved-apps-or-app-protection-policies)|Include Exchange Online in the list of cloud apps|
 ||[Block ActiveSync clients](#block-activesync-clients)|Add this new policy|
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps|
 ||[Require compliant PCs *and* mobile devices](zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps|
@@ -59,7 +59,7 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 
 Exchange ActiveSync can be used to synchronize messaging and calendaring data on desktop and mobile devices.
 
-For mobile devices, the following clients are blocked based on the Conditional Access policy created in [Require approved apps and APP protection](zero-trust-identity-device-access-policies-common.md#require-approved-apps-and-app-protection-policies):
+For mobile devices, the following clients are blocked based on the Conditional Access policy created in [Require approved apps or app protection policies](zero-trust-identity-device-access-policies-common.md#require-approved-apps-or-app-protection-policies):
 
 - Exchange ActiveSync clients that use basic authentication.
 - Exchange ActiveSync clients that support modern authentication, but don't support Intune app protection policies.

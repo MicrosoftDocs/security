@@ -29,13 +29,13 @@ ms.date: 10/16/2024
 - Disables security services and logging to avoid detection
 - Locates and corrupts or deletes backups before sending a ransom demand
 
-These actions are commonly done with legitimate programs - such as [Quick Assist](https://www.microsoft.com/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware) in May 2024 - that you might already have in your environment for administrative purposes. In criminal hands, these tools are used maliciously to conduct attacks.
+These actions are commonly performed using legitimate programs - such as [Quick Assist](https://www.microsoft.com/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware) in May 2024 - that you might already have in your environment for administrative purposes. In criminal hands, these tools are used maliciously to conduct attacks.
 
 Responding to the increasing threat of ransomware requires a combination of modern enterprise configuration, up-to-date security products, and the vigilance of trained security staff to detect and respond to the threats before data is lost.
 
 The [Microsoft Incident Response team (formerly DART/CRSP)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. Microsoft Incident Response provides onsite reactive incident response and remote proactive investigations. Microsoft Incident Response uses Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
 
-This article describes how Microsoft Incident Response handles ransomware attacks for Microsoft customers so that you can consider applying elements of their approach and best practices for your own security operations playbook.
+This article describes how Microsoft Incident Response handles ransomware attacks for Microsoft customers so that you can consider applying elements of their approach and best practices for your own security operations playbook. For information on how Microsoft leverages AI for ransomware mitigation, [read our article on Microsoft Security Copilot defense against ransomware attacks](https://www.microsoft.com/en-us/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security).
 
 > [!NOTE]
 > This article content was derived from the [A guide to combatting human-operated ransomware: Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [A guide to combatting human-operated ransomware: Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) Microsoft Security team blog posts.

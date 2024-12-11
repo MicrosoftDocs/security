@@ -29,7 +29,7 @@ ms.date: 10/16/2024
 - Disables security services and logging to avoid detection
 - Locates and corrupts or deletes backups before sending a ransom demand
 
-These actions are commonly done with legitimate programs - such as [Quick Assist](https://www.microsoft.com/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware) in May 2024 - that you might already have in your environment for administrative purposes. In criminal hands, these tools are used maliciously to conduct attacks.
+These actions are commonly performed using legitimate programs - such as [Quick Assist](https://www.microsoft.com/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware) in May 2024 - that you might already have in your environment for administrative purposes. In criminal hands, these tools are used maliciously to conduct attacks.
 
 Responding to the increasing threat of ransomware requires a combination of modern enterprise configuration, up-to-date security products, and the vigilance of trained security staff to detect and respond to the threats before data is lost.
 

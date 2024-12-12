@@ -35,19 +35,19 @@ Responding to the increasing threat of ransomware requires a combination of mode
 
 The [Microsoft Incident Response team (formerly DART/CRSP)](https://www.microsoft.com/security/blog/microsoft-detection-and-response-team-dart-blog-series/) responds to security compromises to help customers become cyber-resilient. Microsoft Incident Response provides onsite reactive incident response and remote proactive investigations. Microsoft Incident Response uses Microsoft's strategic partnerships with security organizations around the world and internal Microsoft product groups to provide the most complete and thorough investigation possible.
 
-This article describes how Microsoft Incident Response handles ransomware attacks to help guide Microsoft customers in best practices for your own security operations playbook. For information on how Microsoft leverages the latest AI for ransomware mitigation, [read our article on Microsoft Security Copilot defense against ransomware attacks](https://www.microsoft.com/en-us/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security).
+This article describes how Microsoft Incident Response handles ransomware attacks to help guide Microsoft customers in best practices for your own security operations playbook. For information on how Microsoft uses the latest AI for ransomware mitigation, [read our article on Microsoft Security Copilot defense against ransomware attacks](https://www.microsoft.com/en-us/security/blog/2024/03/04/defend-against-human-operated-ransomware-attacks-with-microsoft-copilot-for-security).
 
 ## How Microsoft Incident Response uses Microsoft security services
 
-Microsoft Incident Response relies heavily on data for all investigations and uses existing deployments of Microsoft security services such as [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security), [Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security), [Microsoft Defender for Identity](/defender-for-identity), and [Microsoft Defender for Cloud Apps](/cloud-app-security/).
+Microsoft Incident Response relies heavily on data for all investigations and uses Microsoft security services such as [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security), [Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security), [Microsoft Defender for Identity](/defender-for-identity), and [Microsoft Defender for Cloud Apps](/cloud-app-security/).
 
 ### Microsoft Defender for Endpoint
 
 Defender for Endpoint is Microsoft's enterprise endpoint security platform designed to help enterprise network security analysts prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint can detect attacks using advanced behavioral analytics and machine learning. Your analysts can use Defender for Endpoint to assess threat actor behavioral analytics.
 
-Your analysts can also perform advanced hunting queries to pivot off indicators of compromise (IOCs) or search for known threat actor behavior.
+Your analysts can also perform advanced hunting queries to identify indicators of compromise (IOCs) or search for known threat actor behavior.
 
-Defender for Endpoint provides real-time access to expert monitoring and analysis by [Microsoft Defender Experts](https://learn.microsoft.com/en-us/defender-endpoint/configure-microsoft-threat-experts) for ongoing suspected actor activity. You can also collaborate with experts on demand for more insights into alerts and incidents.
+Defender for Endpoint provides real-time access to expert monitoring and analysis by [Microsoft Defender Experts](/defender-endpoint/configure-microsoft-threat-experts) for ongoing suspected actor activity. You can also collaborate with experts on demand for more insights into alerts and incidents.
 
 ### Microsoft Defender for Identity
 
@@ -64,7 +64,7 @@ Microsoft Defender XDR services provide live remediation recommendations to redu
 
 ## The Microsoft Incident Response approach to conducting ransomware incident investigations
 
-Determining how a threat actor gained access to your environment is crucial to identifying vulnerabilities, conducting attack mitigation, and preventing future attacks. In some cases, the threat actor takes steps to cover their tracks and destroy evidence, so it is possible that the entire chain of events might not be evident.
+Determining how a threat actor gained access to your environment is crucial to identifying vulnerabilities, conducting attack mitigation, and preventing future attacks. In some cases, the threat actor takes steps to cover their tracks and destroy evidence, so it's possible that the entire chain of events might not be evident.
 
 The following are three key steps in Microsoft Incident Response ransomware investigations:
 
@@ -80,15 +80,15 @@ An assessment of the current situation is critical to understanding the scope of
 
 #### How did you identify the ransomware attack?
 
-If your IT staff identified the initial threat&ndash;such as noticing backups being deleted, antivirus alerts, endpoint detection and response (EDR) alerts, or suspicious system changes&ndash;it is often possible to take quick decisive measures to thwart the attack. These measures typically involve disabling all inbound and outbound Internet communication. While this measure might temporarily affect business operations, that would typically be much less impactful than successful ransomware deployment.
+If your IT staff identified the initial threat such as deleted backups, antivirus alerts, endpoint detection and response (EDR) alerts, or suspicious system changes, it is often possible to take quick decisive measures to thwart the attack. These measures typically involve disabling all inbound and outbound Internet communication. While this measure might temporarily affect business operations, that would typically be much less impactful than successful ransomware deployment.
 
-If a user call to the IT helpdesk identified the threat, there might be enough advance warning to take defensive measures to prevent or minimize the effects of the attack. If an external entity such as law enforcement or a financial institution identified the threat, it's likely that the damage is already done. At this point, the threat actor might have taken administrative control of your network. This evidence can range from ransomware notes to locked screens to ransom demands.
+If a user call to the IT helpdesk identified the threat, there might be enough advance warning to take defensive measures to prevent or minimize the effects of the attack. If an external entity such as law enforcement or a financial institution identified the threat, it's likely that the damage is already done. At this point, the threat actor might have administrative control of your network. This evidence can range from ransomware notes to locked screens to ransom demands.
 
 #### What date/time did you first learn of the incident?
 
 Establishing the initial activity date and time is important to help narrow the scope of the initial triage for threat actor activity. Additional questions might include:
 
-- What updates were missing on that date? It's important to understand what vulnerabilities might have been exploited.
+- What updates were missing on that date? It's important to identify any exploited vulnerabilities.
 - What accounts were used on that date?
 - What new accounts have been created since that date?
 
@@ -101,7 +101,7 @@ Logs - such as antivirus, EDR, and virtual private network (VPN) - can show evid
 - Are there any suspected compromised accounts that appear to be under active threat actor control?
 - Is there any evidence of active command and controls (C2s) in EDR, firewall, VPN, web proxy, and other logs?
 
-As part of assessing the current situation, you might need an Active Directory Domain Services (AD DS) domain controller that was not compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. Also determine whether [multifactor authentication (MFA)](https://www.microsoft.com/security/business/identity-access-management/mfa-multi-factor-authentication/) was required for everyone in the company and if [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) was used.
+To asses the situation, you might need an Active Directory Domain Services (AD DS) domain controller that wasn't compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. Also determine whether [multifactor authentication (MFA)](https://www.microsoft.com/security/business/identity-access-management/mfa-multi-factor-authentication/) was required for everyone in the company and if [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) was used.
 
 ### Step 2: Identify the LOB apps that are unavailable due to the incident
 
@@ -114,11 +114,11 @@ Does the application require an identity?
 
 Are tested backups of the application, configuration, and data available?
 
-- Are the contents and integrity of backups regularly verified using a restore exercise? This check is particularly important after configuration management changes or version upgrades.
+- Are the contents and integrity of backups regularly verified using a restore exercise? This check is important after configuration management changes or version upgrades.
 
 ### Step 3: Determine the compromise recovery process
 
-This step might be necessary if you've determined that the control plane, which is typically AD DS, has been compromised.
+This step might be necessary if the control plane, which is typically AD DS, has been compromised.
 
 Your investigation should always provide output that feeds directly into the CR process. CR is the process that removes threat actor control from an environment and tactically increases security posture within a set period. CR takes place post-security breach. To learn more about CR, read the Microsoft Compromise Recovery Security Practice team's [CRSP: The emergency team fighting cyber attacks beside customers](https://www.microsoft.com/security/blog/2021/06/09/crsp-the-emergency-team-fighting-cyber-attacks-beside-customers/) blog article.
 
@@ -144,20 +144,20 @@ Step 1: Assess the scope of the situation
 
 Step 2: Preserve existing systems
 
-- Disable all privileged user accounts except for a small number of accounts used by your admins to assist in resetting the integrity of your AD DS infrastructure. If you believe a user account is compromised, disable it immediately.
+- Disable all privileged user accounts except for a small number of accounts used by your admins to help resetting the integrity of your AD DS infrastructure. If you believe a user account is compromised, disable it immediately.
 - Isolate compromised systems from the network, but don't turn them off.
-- Isolate at least one (and ideally two) known good domain controller in every domain. Either disconnect them from the network or turn them off to prevent the spread of ransomware to critical systems, prioritizing identity as the most vulnerable attack vector. If all your domain controllers are virtual, ensure that the virtualization platform's system and data drives are backed up to offline external media that isn't connected to the network, in case the virtualization platform itself is compromised.
+- Isolate at least one (and ideally two) known good domain controller in every domain. Either disconnect them from the network or turn them off to prevent the spread of ransomware to critical systems, prioritizing identity as the most vulnerable attack vector. If all your domain controllers are virtual, ensure the virtualization platform's system and data drives are backed up to offline external media that isn't connected to the network.
 - Isolate critical known good application servers, such as SAP, configuration management database (CMDB), billing, and accounting systems.
 
-These two steps can be taken concurrently as new threat vectors are discovered. Disable those threat vectors and then try to find a known uncompromised system to isolate from the network.
+These two steps can be taken concurrently as new threat vectors are discovered. To isolate the threat from the network, disable those threat vectors and then look for a known uncompromised system.
 
 Other tactical containment actions include:
 
-- [Reset the krbtgt password](/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password) twice in rapid succession. Consider using a [scripted, repeatable process](https://github.com/microsoft/New-KrbtgtKeys.ps1). This script lets you reset the krbtgt account password and related keys while minimizing the likelihood of Kerberos authentication issues. To minimize issues, the krbtgt lifetime can be reduced one or more times prior to the first password reset to quickly complete these steps. Note that all domain controllers you plan to keep in your environment must be online.
+- [Reset the krbtgt password](/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password) twice in rapid succession. Consider using a [scripted, repeatable process](https://github.com/microsoft/New-KrbtgtKeys.ps1). This script lets you reset the krbtgt account password and related keys while minimizing the likelihood of Kerberos authentication issues. To minimize issues, the krbtgt lifetime can be reduced one or more times before the first password reset to quickly complete these steps. All domain controllers you plan to keep in your environment must be online.
 
 - Deploy a Group Policy to the entire domain(s) that prevents privileged sign in (Domain Admins) to anything but domain controllers and privileged administrative-only workstations (if any).
 
-- Install all missing security updates for operating systems and applications. Every missing update is a potential threat vector that ransomware actors can quickly identify and leverage. Microsoft Defender for Endpoint's [Threat and Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) provides an easy way to see exactly what is missing as well as the impact of missing updates.
+- Install all missing security updates for operating systems and applications. Every missing update is a potential threat vector that ransomware actors can quickly identify and use. Microsoft Defender for Endpoint's [Threat and Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) provides an easy way to see exactly what is missing as well as the impact of missing updates.
 
   - For Windows 10 (or higher) devices, confirm that the current version (or n-1) is running on every device.
 
@@ -169,9 +169,9 @@ Other tactical containment actions include:
 
 - For devices not using Defender for Endpoint as their primary antivirus software, conduct a full scan with [Microsoft Safety Scanner](/windows/security/threat-protection/intelligence/safety-scanner-download) on isolated known safe systems before reconnecting them to the network.
 
-- For any legacy operating systems, upgrade to a supported operating system (OS) or decommission these devices. If these options are not available, take every possible measure to isolate these devices, including network/VLAN isolation, Internet Protocol security (IPsec) rules, and sign-in restrictions. These steps help to ensure these systems are only accessible by the users/devices to provide business continuity.
+- For any legacy operating systems, upgrade to a supported operating system (OS) or decommission these devices. If these options aren't available, take every possible measure to isolate these devices, including network/VLAN isolation, Internet Protocol security (IPsec) rules, and sign-in restrictions. These steps help to ensure these systems are only accessible by the users/devices to provide business continuity.
 
-The riskiest configurations consist of running mission critical systems on legacy operating systems as old as Windows NT 4.0 and applications, all on legacy hardware. Not only are these operating systems and applications insecure and vulnerable, but if that hardware fails, backups typically can't be restored on modern hardware. These applications cannot function without legacy hardware. Strongly consider converting these applications to run on current OSs and hardware.
+The riskiest configurations consist of running mission critical systems on legacy operating systems as old as Windows NT 4.0 and applications, all on legacy hardware. Not only are these operating systems and applications insecure and vulnerable, but if that hardware fails, backups typically can't be restored on modern hardware. These applications can't function without legacy hardware. Strongly consider converting these applications to run on current OSs and hardware.
 
 ### Post-incident activities
 
@@ -205,7 +205,7 @@ Using the [PAM](/security/compass/privileged-access-access-model) (formerly know
 
   - Breaking out administrative accounts in a "planed" environment, meaning one account for each level (usually four levels):
 
-- Control Plane (formerly Tier 0): Administration of domain controllers and other crucial identity services, such as Active Directory Federation Services (ADFS) or Microsoft Entra Connect. These also includes server applications that require administrative permissions to AD DS, such as Exchange Server.
+- Control Plane (formerly Tier 0): Administration of domain controllers and other crucial identity services, such as Active Directory Federation Services (ADFS) or Microsoft Entra Connect. These also include server applications that require administrative permissions to AD DS, such as Exchange Server.
 
 - The next two planes were formerly Tier 1:
 
@@ -225,11 +225,11 @@ The PAM ensures:
 
 - A compromised user account only has access to its own plane.
 
-- More sensitive user accounts cannot access workstations and servers with a lower plane's security level, thereby reducing the risk of threat actor lateral movement.
+- More sensitive user accounts can't access workstations and servers with a lower plane's security level. This helps prevent threat actor lateral movement.
 
 ### LAPS
 
-By default, Microsoft Windows and AD DS have no centralized management of local administrative accounts on workstations and member servers. This can result in a common password for all these local accounts, or at the very least for groups of devices. This situation lets threat actors compromise one local administrator account to then access other workstations or servers in the organization.
+By default, Microsoft Windows and AD DS have no centralized management of local administrative accounts on workstations and member servers. This lack of management can result in a common password for all these local accounts, or at the very least for groups of devices. This situation lets threat actors compromise one local administrator account to then access other workstations or servers in the organization.
 
 Microsoft's [LAPS](/defender-for-identity/cas-isp-laps) mitigates this threat by using a Group Policy client-side extension that changes the local administrative password at regular intervals on workstations and servers according to the policy set. Each of these passwords is different and stored as an attribute in the AD DS computer object. This attribute can be retrieved from a simple client application, depending on the permissions assigned to that attribute.
 

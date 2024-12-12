@@ -80,7 +80,7 @@ An assessment of the current situation is critical to understanding the scope of
 
 #### How did you identify the ransomware attack?
 
-If your IT staff identified the initial threat such as deleted backups, antivirus alerts, endpoint detection and response (EDR) alerts, or suspicious system changes, it is often possible to take quick decisive measures to thwart the attack. These measures typically involve disabling all inbound and outbound Internet communication. While this measure might temporarily affect business operations, that would typically be much less impactful than successful ransomware deployment.
+If your IT staff identified the initial threat such as deleted backups, antivirus alerts, endpoint detection and response (EDR) alerts, or suspicious system changes, it is often possible to take quick decisive measures to thwart the attack. These measures typically involve disabling all inbound and outbound Internet communication. While this measure might temporarily affect business operations that would typically be much less impactful than successful ransomware deployment.
 
 If a user call to the IT helpdesk identified the threat, there might be enough advance warning to take defensive measures to prevent or minimize the effects of the attack. If an external entity such as law enforcement or a financial institution identified the threat, it's likely that the damage is already done. At this point, the threat actor might have administrative control of your network. This evidence can range from ransomware notes to locked screens to ransom demands.
 
@@ -101,7 +101,7 @@ Logs - such as antivirus, EDR, and virtual private network (VPN) - can show evid
 - Are there any suspected compromised accounts that appear to be under active threat actor control?
 - Is there any evidence of active command and controls (C2s) in EDR, firewall, VPN, web proxy, and other logs?
 
-To asses the situation, you might need an Active Directory Domain Services (AD DS) domain controller that wasn't compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. Also determine whether [multifactor authentication (MFA)](https://www.microsoft.com/security/business/identity-access-management/mfa-multi-factor-authentication/) was required for everyone in the company and if [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) was used.
+To assess the situation, you might need an Active Directory Domain Services (AD DS) domain controller that wasn't compromised, a recent backup of a domain controller, or a recent domain controller taken offline for maintenance or upgrades. Also determine whether [multifactor authentication (MFA)](https://www.microsoft.com/security/business/identity-access-management/mfa-multi-factor-authentication/) was required for everyone in the company and if [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) was used.
 
 ### Step 2: Identify the LOB apps that are unavailable due to the incident
 

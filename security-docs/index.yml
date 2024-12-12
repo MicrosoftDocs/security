@@ -28,7 +28,7 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/hubpage/document-icon.png
+      - avatarUrl: /security/media/security-hub/document-icon.png
         componentType: testimonial-card
         name: What is Microsoft Security Exposure Management?
         role: Documentation
@@ -46,7 +46,7 @@ sections:
           componentType: link
           url: /shows/microsoft-copilot-for-security-flight-school/
           text: Watch now
-      - avatarUrl: /security/media/hubpage/document-icon.png
+      - avatarUrl: /security/media/security-hub/document-icon.png
         componentType: testimonial-card
         name: What is Microsoft's unified security operations platform?
         role: Documentation
@@ -55,7 +55,7 @@ sections:
           componentType: link
           url: /unified-secops-platform/overview-unified-security
           text: Learn more
-      - avatarUrl: /security/media/hubpage/document-icon.png
+      - avatarUrl: /security/media/security-hub/document-icon.png
         componentType: testimonial-card
         name: Connect Microsoft Sentinel to the Microsoft Defender portal
         role: Documentation

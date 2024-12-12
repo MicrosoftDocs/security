@@ -28,15 +28,15 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/hubpage/blog-icon-sm.png
+      - avatarUrl: /security/media/hubpage/document-icon.png
         componentType: testimonial-card
-        name: Stay ahead of cyberthreats with security skill building
-        role: Thought leadership
-        feedback: Help your organization accelerate its security skill-building journey and secure a resilient future.	
+        name: What is Microsoft Security Exposure Management?
+        role: Documentation
+        feedback: Learn about Microsoft Security Exposure Management as a security solution that provides a unified view of security posture across company assets and workloads.
         link:
           componentType: link
-          url: https://aka.ms/SecuritySkillsPaper_hub
-          text: Read the paper
+          url: /security-exposure-management/microsoft-security-exposure-management
+          text: Learn more
       - avatarUrl: /security/media/hubpage/video-icon.png
         componentType: testimonial-card
         name: Microsoft Copilot for Security Flight School 
@@ -46,24 +46,24 @@ sections:
           componentType: link
           url: /shows/microsoft-copilot-for-security-flight-school/
           text: Watch now
-      - avatarUrl: /security/media/hubpage/applied-skills.png
+      - avatarUrl: /security/media/hubpage/document-icon.png
         componentType: testimonial-card
-        name: Microsoft Applied Skills
-        role: Credential
-        feedback: Implement information protection and data loss prevention by using Microsoft Purview.
+        name: What is Microsoft's unified security operations platform?
+        role: Documentation
+        feedback: Understand how Microsoft's unified security operations platform provides a single platform for end-to-end security operations.
         link:
           componentType: link
-          url: /credentials/applied-skills/implement-information-protection-and-data-loss-prevention-by-using-microsoft-purview/
-          text: Earn your credential
-      - avatarUrl: /security/media/hubpage/applied-skills.png
+          url: /unified-secops-platform/overview-unified-security
+          text: Learn more
+      - avatarUrl: /security/media/hubpage/document-icon.png
         componentType: testimonial-card
-        name: Microsoft Applied Skills
-        role: Credential
-        feedback: Implement retention, eDiscovery, and Communication Compliance in Microsoft Purview.
+        name: Connect Microsoft Sentinel to the Microsoft Defender portal
+        role: Documentation
+        feedback: Onboard Microsoft Sentinel to the Defender portal with Microsoft Defender XDR to unify capabilities like incident management and advanced hunting.
         link:
           componentType: link
-          url: /credentials/applied-skills/implement-retention-ediscovery-and-communication-compliance-in-microsoft-purview/
-          text: Earn your credential
+          url: /defender-xdr/microsoft-sentinel-onboard?toc=%2Funified-secops-platform%2Ftoc.json&bc=%2Funified-secops-platform%2Fbreadcrumb%2Ftoc.json
+          text: Learn more
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
@@ -169,6 +169,21 @@ sections:
         summary: Explore the Microsoft Cybersecurity Reference Architectures (MCRA), and review diagrams that describe how Microsoft Security capabilities integrate with Microsoft and third-party platforms. 
         url: https://aka.ms/MCRA
 
+# Credentials banner
+  - componentType: hero
+    title: Prove your skills with Microsoft Credentials for Security 
+    layout: indented
+    size: small
+    # textColor: dark
+    background:
+      componentType: image
+      src: /security/media/security-hub/hero-creds.png
+    summary: Showcase your advanced cybersecurity skills with Microsoft Credentials for Security. Whether you want verifiable skill sets aligned to security job roles or specific to security projects, Microsoft Certifications and Microsoft Applied Skills are complementary credentials that can help you and your organization take on new opportunities. Explore Certifications, like Security Operations Analyst or Cybersecurity Architect, and check out Applied Skills for real-world scenarios that use Microsoft Sentinel or Microsoft Defender. 
+    links:
+      - componentType: link
+        url: /credentials/browse/?subjects=security
+        text: Explore all credentials
+
 # Plans for specialized skills
   - componentType: grid
     title: Gain specialized security skills and knowledge through Plans on Microsoft Learn 
@@ -203,25 +218,73 @@ sections:
         summary: In this intermediate Plan, use Microsoft Security Copilot with Microsoft Security solutions Microsoft Purview and Microsoft Sentinel to manage, protect, and govern information in AI-driven environments. 
         url: https://aka.ms/TakeAdvSecCopilot
 
+# Microsoft Security product documentation 
+  - componentType: grid
+    title: Microsoft Security product documentation
+    summary: Explore Microsoft Security product documentation and learn how you can keep your organization resilient and agile.
+    blocks:
+      - componentType: icon-card
+        title: Microsoft Entra
+        summary: Learn more about the Microsoft Entra family of multicloud identity and network access solutions.
+        url: /entra/
+        icon:
+          componentType: image
+          src: /security/media/security-hub/entra-icon.png
+      - componentType: icon-card
+        title: Microsoft Defender
+        summary: Explore the Microsoft Defender products and services available for your business or organization.
+        url: /defender/
+        icon:
+          componentType: image
+          src: /security/media/security-hub/defender-icon.png
+      - componentType: icon-card
+        title: Microsoft Defender for Cloud
+        summary: Provide unified security management and advanced threat protection across hybrid cloud workloads with Microsoft Defender for Cloud.
+        url: /azure/defender-for-cloud/
+        icon:
+          componentType: image
+          src: /security/media/security-hub/defender-for-cloud-security.svg
+      - componentType: icon-card
+        title: Microsoft Purview
+        summary: Unlock the power of data governance, security, and compliance with the dynamic portfolio of solutions from Microsoft Purview.
+        url: /purview/
+        icon:
+          componentType: image
+          src: /security/media/security-hub/purview-icon.png
 
-# Credentials banner
-  - componentType: hero
-    title: Prove your skills with Microsoft Credentials for Security 
-    layout: indented
-    size: small
-    # textColor: dark
-    background:
-      componentType: image
-      src: /security/media/security-hub/hero-creds.png
-    summary: Showcase your advanced cybersecurity skills with Microsoft Credentials for Security. Whether you want verifiable skill sets aligned to security job roles or specific to security projects, Microsoft Certifications and Microsoft Applied Skills are complementary credentials that can help you and your organization take on new opportunities. Explore Certifications, like Security Operations Analyst or Cybersecurity Architect, and check out Applied Skills for real-world scenarios that use Microsoft Sentinel or Microsoft Defender. 
-    links:
-      - componentType: link
-        url: /credentials/browse/?subjects=security
-        text: Explore all credentials
+      - componentType: icon-card
+        title: Understand the AI shared responsibility model 
+        summary: "When implementing AI capabilities for your organization, consider the inherent responsibility for various roles to safely use AI."
+        url: /azure/security/fundamentals/shared-responsibility-ai
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-people.png
+    
+      - componentType: icon-card
+        title: Meet the Microsoft AI Red Team
+        summary: "Gain practical insights on how to safeguard your organization's AI with guidance and best practices from the industry-leading Microsoft AI Red Team."
+        url: /security/ai-red-team/
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-bulb.png
+      - componentType: icon-card
+        title: Follow Microsoft cybersecurity news 
+        summary: "Read the latest Microsoft cybersecurity news, from recent work by Microsoft to strengthen protection, to helping keep user data safe around the world."
+        url: https://blogs.microsoft.com/on-the-issues/category/cybersecurity/
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-news.png
+      - componentType: icon-card
+        title: Get the latest on Security Copilot 
+        summary: "Stay up to date with the most recent Security Copilot developments, along with current releases, known issues, and plans for updates. "
+        url: /copilot/security/microsoft-security-copilot
+        icon:
+          componentType: image
+          src: /security/media/security-hub/icon-shield-check.png
 
 # Explore other resources 
   - componentType: grid
-    title: Explore documentation and other resources 
+    title: Explore other resources 
     summary: Take advantage of additional resources like training events, tailored learning experiences with Training Services Partners, thought leadership articles, blog posts, and more.  
     blocks:
       - componentType: icon-card

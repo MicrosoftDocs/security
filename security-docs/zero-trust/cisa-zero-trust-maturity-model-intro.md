@@ -4,7 +4,7 @@ description: Enable Zero Trust capabilities with integrated security tools for a
 ms.service: security
 ms.subservice: security-fundamentals
 ms.topic: conceptual
-ms.date: 11/26/2024
+ms.date: 12/16/2024
 ms.author: jricketts
 author: jricketts
 manager: martinco

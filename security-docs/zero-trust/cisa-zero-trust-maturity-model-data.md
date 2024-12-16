@@ -4,7 +4,7 @@ description: For the data pillar, enable Zero Trust capabilities with integrated
 ms.service: security
 ms.subservice: security-fundamentals
 ms.topic: conceptual
-ms.date: 11/26/2024
+ms.date: 12/16/2024
 ms.author: jricketts
 author: jricketts
 manager: martinco

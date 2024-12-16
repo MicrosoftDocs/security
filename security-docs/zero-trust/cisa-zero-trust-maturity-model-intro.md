@@ -68,6 +68,8 @@ Use the following criteria to identify the maturity stage for Zero Trust technol
 
    ![Table of criteria for maturity stages.](./media/cisa-zero-trust-maturity-model/maturity-stages.png)
 
+   [ ![Table of criteria for maturity stages.](media/cisa-zero-trust-maturity-model/maturity-stages.png)](media/cisa-zero-trust-maturity-model/maturity-stages-expanded.png#lightbox)
+
 ## Scope of guidance
 
 Use this guidance to help meet the goals for ZTMM functions and make progress through maturity stages. We assume organizations are, at least, at the **Traditional** stage.  

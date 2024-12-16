@@ -66,8 +66,6 @@ The pillars span the ZTMM journey's four stages.
 
 Use the following criteria to identify the maturity stage for Zero Trust technology pillars and provide consistency across the model: 
 
-   ![Table of criteria for maturity stages.](./media/cisa-zero-trust-maturity-model/maturity-stages.png)
-
    [ ![Table of criteria for maturity stages.](media/cisa-zero-trust-maturity-model/maturity-stages.png)](media/cisa-zero-trust-maturity-model/maturity-stages-expanded.png#lightbox)
 
 ## Scope of guidance

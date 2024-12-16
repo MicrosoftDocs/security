@@ -41,6 +41,8 @@ This article describes how Microsoft Incident Response handles ransomware attack
 
 Microsoft Incident Response relies heavily on data for all investigations and uses Microsoft security services such as [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security), [Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security), [Microsoft Defender for Identity](/defender-for-identity), and [Microsoft Defender for Cloud Apps](/cloud-app-security/).
 
+For the Microsoft Incident Response team's latest security measure updates, [check out their Ninja Hub](https://techcommunity.microsoft.com/blog/microsoftsecurityexperts/welcome-to-the-microsoft-incident-response-ninja-hub/4243594).
+
 ### Microsoft Defender for Endpoint
 
 Defender for Endpoint is Microsoft's enterprise endpoint security platform designed to help enterprise network security analysts prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint can detect attacks using advanced behavioral analytics and machine learning. Your analysts can use Defender for Endpoint to assess threat actor behavioral analytics.

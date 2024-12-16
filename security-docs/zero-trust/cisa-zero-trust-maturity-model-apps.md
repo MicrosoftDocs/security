@@ -4,7 +4,7 @@ description: For the applications and workloads pillar, enable Zero Trust capabi
 ms.service: security
 ms.subservice: security-fundamentals
 ms.topic: conceptual
-ms.date: 11/26/2024
+ms.date: 12/16/2024
 ms.author: jricketts
 author: jricketts
 manager: martinco

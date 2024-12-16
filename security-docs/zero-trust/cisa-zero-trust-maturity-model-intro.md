@@ -10,7 +10,7 @@ author: jricketts
 manager: martinco
 ms.reviewer: kbrewer
 
-# Customer intent: As a security architect, I need to learn about the CISA Zero Trust Maturity Model so I can prioritize, deploy, and configure Zero Trust capabilities. My goal is to complete Maturity Model activities for users.
+# Customer intent: As a security architect, I need to learn about the CISA Zero Trust Maturity Model so I can prioritize, deploy, and configure Zero Trust capabilities. My goal is to complete Maturity Model activities for users. 
 ---
 
 # Configure Microsoft cloud services for the CISA Zero Trust Maturity Model

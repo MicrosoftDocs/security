@@ -50,7 +50,7 @@ sections:
         componentType: testimonial-card
         name: What is Microsoft's unified security operations platform?
         role: Documentation
-        feedback: Understand how Microsoft's unified security operations platform provides a single platform for end-to-end security operations.
+        feedback: Understand how Microsoft's unified security operations platform provides a single platform for end-to-end security operations (SecOps).
         link:
           componentType: link
           url: /unified-secops-platform/overview-unified-security

@@ -41,4 +41,4 @@ Entrust // Entrust Root Certification Authority - G4 // DB3517D1F6732A2D5AB97C53
 
 Entrust // Entrust Root Certification Authority - G2 // 43DF5774B03E7FEF5FE40D931A7BEDF1BB2E6B42738C4E6D3841103D3AA7F339
 
-To test if these changes will affect your systems, please follow the instructions found on: https://learn.microsoft.com/security/trusted-root/testing. If there are any concerns with impact, please reach out to the Microsoft Root Program as soon as possible through our email at msroot@microsoft.com. 
+To test if these changes will affect your systems, please follow the instructions found on: security-docs/trusted-root/testing.md. If there are any concerns with impact, please reach out to the Microsoft Root Program as soon as possible through our email at msroot@microsoft.com. 

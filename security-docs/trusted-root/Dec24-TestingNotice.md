@@ -1,14 +1,14 @@
 ---
 title: December 2024 Test Environment Deployment Notice - Microsoft Trusted Root Program  
 description: This document provides details about the changes made to the test staging platform in December 2024.
-ms.date: 12/4/2024
+ms.date: 12/16/2024
 ms.service: security
 author: tahminaahmad
 ms.author: tahminaahmad
 ms.topic: conceptual
 ---
-# December 2024 Test Environment Deployment Notice - Microsoft Trusted Root Program 
 
+#  December 2024 Test Environment Deployment Notice - Microsoft Trusted Root Program 
 On December 9, 2024, the Microsoft Trusted Root Program updated the test staging platform with root certificates that are planned for a future release. Currently, the new certificates have a Distrust date of November 11, 2024. Once these certificates are tested and incorporated to a future release, the November 11, 2024, date will change to match the date when the new certificates are released.  
 
 The following roots were added as a NotBefore Server Authentication to the test release (CA / Root Certificate / SHA-2 Thumbprint): 
@@ -41,4 +41,4 @@ Entrust // Entrust Root Certification Authority - G4 // DB3517D1F6732A2D5AB97C53
 
 Entrust // Entrust Root Certification Authority - G2 // 43DF5774B03E7FEF5FE40D931A7BEDF1BB2E6B42738C4E6D3841103D3AA7F339
 
-To test if these changes will affect your systems, please follow the instructions found on: security-docs/trusted-root/testing.md. If there are any concerns with impact, please reach out to the Microsoft Root Program as soon as possible through our email at msroot@microsoft.com. 
+To test if these changes will affect your systems, please follow the instructions found on: [Testing Instruction - Microsoft Trusted Root Certificate Program](~/security-docs/trusted-root/testing.md) . If there are any concerns with impact, please reach out to the Microsoft Root Program as soon as possible through our email at msroot@microsoft.com. 

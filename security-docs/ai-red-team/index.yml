@@ -91,7 +91,7 @@ landingContent:
             url: /azure/ai-studio/how-to/monitor-quality-safety?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
 
   # Card
-  - title: Lessons Learned
+  - title: Lessons learned
     linkLists:
       - linkListType: overview
         links:

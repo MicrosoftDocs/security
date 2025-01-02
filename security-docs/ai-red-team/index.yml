@@ -93,7 +93,7 @@ landingContent:
   # Card
   - title: Lessons Learned
     linkLists:
-      - linkListType: reference
+      - linkListType: overview
         links:
           - text: AI Red Team Lessons learned from 100 generative AI products
             url: https://download.microsoft.com/download/4/9/6/496deaed-0dab-4e1d-85eb-7489a0f242a6/Lessons From Red Teaming 100 Generative AI Products eBook.pdf

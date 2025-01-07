@@ -287,10 +287,11 @@ You can also download the app consent grant and other incident playbook checklis
 
 ## Investigation steps
 
-You can use the following two methods to investigate application consent grants:
+You can use the following three methods to investigate application consent grants:
 
 - Azure portal
 - PowerShell script
+- Microsoft Security Copilot
 
 > [!NOTE]
 > Using the Azure portal *only allows you to see Admin Consent Grants for the last 90 days and based on this, we recommend using the PowerShell script method only to reduce the attacker registers investigation steps.*
@@ -380,6 +381,10 @@ Here are some useful tips to review information security policy (ISP) investigat
 - Are there terms of service/service agreement link in the app registration?
 - Are the contents unique and specific to the application/publisher?
 - Is the tenant that registered the application either newly created or compromised (for example, is the app registered by an at-risk user)?
+
+### Method 3 - Using Security Copilot in the Microsoft Entra admin center
+
+With [Microsoft Security Copilot](/copilot/security/microsoft-security-copilot), you can use natural language prompts to get insights on unused applications. Learn more about how to [Assess application risks using Microsoft Security Copilot](/entra/fundamentals/copilot-security-entra-investigate-risky-apps#explore-unused-microsoft-entra-applications).
 
 ## Details of consent grant attack
 

@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/owners
 
 ### Check Identity Protection - risky workload identities
 
-This feature is in preview at the time of writing this playbook and licensing requirements apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but can also be used to further investigate into other triggers you've identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Microsoft Graph API.
+This feature is in preview at the time of writing this playbook and licensing requirements apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but can also be used to further investigate into other triggers you've identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Microsoft Graph API.  You can also use natural language prompts to get insights on risky workload identities with [Microsoft Security Copilot in Microsoft Entra](/entra/fundamentals/copilot-security-entra-investigate-risky-apps).
 
 :::image type="content" source="./media/compromised-malicious-apps/ir-workload-identity-risk-detection-signal-portal-2.png" alt-text="Screenshot of the Risk Detection Details portal page.":::
 

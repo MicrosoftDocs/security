@@ -384,7 +384,7 @@ Here are some useful tips to review information security policy (ISP) investigat
 
 ### Method 3 - Using Security Copilot in the Microsoft Entra admin center
 
-With [Microsoft Security Copilot](/copilot/security/microsoft-security-copilot), you can use natural language prompts to get insights on unused applications. Learn more about how to [Assess application risks using Microsoft Security Copilot](/entra/fundamentals/copilot-security-entra-investigate-risky-apps#explore-unused-microsoft-entra-applications).
+With [Microsoft Security Copilot](/copilot/security/microsoft-security-copilot), you can use natural language prompts to identify and understand risks related to applications or workload identities. This includes the permissions and high privileged permissions granted to them, directly within the Microsoft Entra admin center. Learn more about how to [Assess application risks using Microsoft Security Copilot](/entra/fundamentals/copilot-security-entra-investigate-risky-apps#explore-unused-microsoft-entra-applications).
 
 ## Details of consent grant attack
 

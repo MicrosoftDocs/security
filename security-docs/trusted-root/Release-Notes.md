@@ -23,7 +23,7 @@ Note that the changes listed are accurate at the time of posting but are subject
 A list of Root Store participants, updated monthly, can be found here: <https://aka.ms/trustcertpartners>. 
 
 ## 2024
-| Month |	Date of Release	| Release Notes | security-docs/trusted-root/dec-24-testing-notice.md
+| Month |	Date of Release	| Release Notes |
 |---|---|---|
 | December | December 24 | [Testing Notice for December 2024](2024/dec-24-testing-notice.md) |
 | December | December 4 | [Deployment Notice for December 2024](2024/december-2024.md) |

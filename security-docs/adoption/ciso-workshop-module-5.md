@@ -21,16 +21,16 @@ Learn how to protect sensitive information wherever it goes with automatic class
 
 ## Introduction: Information Protection (3:04)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoT]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=674945ac-7f11-4d94-a136-f6dc953d7a9a]
 
 ## Part 1: Information Protection History and Context (8:43)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtVXT]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5ed9d171-3087-4afa-808b-9f029c6afed0]
 
 ## Part 2: Information Protection Strategy (9:11)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoS]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=89f60ca3-5b14-4a0e-adb5-c03e686e6bd6]
 
 ## Part 3: Story of a File and Protecting Information Anywhere (10:23)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITi]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=30a43dae-b760-4c0c-beac-455a30f7b8e5]

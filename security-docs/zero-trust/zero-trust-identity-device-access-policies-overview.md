@@ -69,7 +69,7 @@ If your organization has unique requirements or complexities, use these recommen
 
 Watch this video for a quick overview of identity and device access configurations for Microsoft 365 for enterprise.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=911b1945-9818-4b38-9eaa-f6132f17a4ff]
 
 > [!NOTE]
 > Microsoft also sells Enterprise Mobility + Security (EMS) licenses for Office 365 subscriptions. EMS E3 and EMS E5 capabilities are equivalent to those in Microsoft 365 E3 and Microsoft 365 E5. For more information, see [EMS plans](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing).

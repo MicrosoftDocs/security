@@ -22,32 +22,32 @@ Learn how to advance zero trust with your identity and user access strategy to b
 
 ## Part 1: Identity and Zero Trust History (9:33)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhs]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6e94182d-5727-4fc5-9d99-f426c8ffb358]
 
 ## Part 2: Zero Trust Definition and Models (15:37)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YaUL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=40ae30fc-ebbe-4098-9d2c-0fddf912eb8d]
 
 ## Part 3: Strategy and Priorities (9:54)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YvHy]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=740eb387-1d95-4be6-ba1c-69c03bb41321]
 
 ## Part 4: Account Security: Measuring Cost of Attack Password-less Authentication (13:11)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=988bff3f-d365-4473-82b4-6ac6a8962ee9]
 
 ##  Part 5: Zero Trust User Access Reference Architecture (8:42)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Yyhx]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f05c34b9-28df-467e-8062-79847bc7c981]
 
 ##  Part 6: Build an Identity Perimeter (13:57)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=64e7a473-e858-4615-aa2e-cf45cc940ebc]
 
 ## Part 7: Identity System Security (3:37)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMf]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4f43f41a-5dbb-4e9c-963b-1d0e44fd7400]
 
 ##  Part 8: Lowering Risk using business-to-business and business-to-customer (4:47)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMi]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=31ef1e67-263c-4b6b-b8c1-0398af114a1a]

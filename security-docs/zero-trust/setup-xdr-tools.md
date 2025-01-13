@@ -61,7 +61,7 @@ By default, the Defender portal includes:
 Later, when you've set up your Microsoft Sentinel workspace, you can also add Microsoft Sentinel to the Defender portal.
 
 Watch this short video to learn about the Microsoft Defender portal.
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d97b17c8-8900-4a18-a099-7d30d9a316ea]
 
 <a name='enable-azure-ad-identity-protection'></a>
 

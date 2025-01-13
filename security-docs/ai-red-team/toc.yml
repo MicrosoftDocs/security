@@ -29,6 +29,8 @@ items:
 - name: Reference
   expanded: false
   items:
+  - name: Lessons learned from 100 generative AI products
+    href: https://download.microsoft.com/download/4/9/6/496deaed-0dab-4e1d-85eb-7489a0f242a6/Lessons From Red Teaming 100 Generative AI Products eBook.pdf
   - name: Responsible AI standard and impact assessment
     href: https://www.microsoft.com/ai/tools-practices
   - name: AI risk assessment for ML engineers

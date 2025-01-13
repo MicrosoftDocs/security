@@ -159,11 +159,11 @@ Here are the components of Zero Trust identity and device access, including Intu
 
 ### Microsoft Intune
 
-[Intune](/intune/introduction-intune) is Microsoft's cloud-based mobile device management service. This guidance recommends device management of Windows PCs with Intune and recommends device compliance policy configurations. Intune determines whether devices are compliant and sends this data to Microsoft Entra ID to use when applying Conditional Access policies.
+[Intune](/mem/intune/fundamentals/what-is-intune) is Microsoft's cloud-based mobile device management service. This guidance recommends device management of Windows PCs with Intune and recommends device compliance policy configurations. Intune determines whether devices are compliant and sends this data to Microsoft Entra ID to use when applying Conditional Access policies.
 
 #### Intune app protection
 
-[Intune app protection](/intune/app-protection-policy) policies can be used to protect your organization's data in mobile apps, with or without enrolling devices into management. Intune helps protect information, making sure your employees can still be productive, and preventing data loss. By implementing app-level policies, you can restrict access to company resources and keep data within the control of your IT department.
+[Intune app protection](/mem/intune/fundamentals/manage-apps) policies can be used to protect your organization's data in mobile apps, with or without enrolling devices into management. Intune helps protect information, making sure your employees can still be productive, and preventing data loss. By implementing app-level policies, you can restrict access to company resources and keep data within the control of your IT department.
 
 This guidance shows you how to create recommended policies to enforce the use of approved apps and to determine how these apps can be used with your business data.
 

@@ -87,7 +87,7 @@ The Program accepts two types of audit standards: WebTrust and ETSI. For each of
 > As of February 2024, CA providers must ensure their S/MIME enabled root CAs and all subordinate CAs capable of issuing S/MIME certificates have been and will continue to be audited against the most recent version of, at minimum, one of the below sets of criteria. 
 > 
 > - WebTrust Principles and Criteria for Certification Authorities – S/MIME
-> - ETSI EN 119 411-6 LCP, NCP, or NCP+
+> - ETSI TS 119 411-6 LCP, NCP, or NCP+
 
 ### A. WebTrust Audits
 

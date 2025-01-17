@@ -37,7 +37,7 @@ sections:
           componentType: link
           url: /credentials/applied-skills/defend-against-cyberthreats-with-microsoft-defender-xdr/
           text: Earn your credential
-      - avatarUrl: /security/media/hubpage/generic-trophy.png
+      - avatarUrl: /security/media/hubpage/generic-trophy.svg
         componentType: testimonial-card
         name: Implement Microsoft Purview Insider Risk Management
         role: Training

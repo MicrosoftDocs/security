@@ -46,7 +46,7 @@ sections:
           componentType: link
           url: /training/paths/purview-implement-insider-risk-management/
           text: Start the learning path
-      - avatarUrl: /security/media/security-hub/document-icon.png
+      - avatarUrl: /security/media/hubpage/video-icon.png
         componentType: testimonial-card
         name: Defender for Cloud in the field
         role: Video
@@ -55,7 +55,7 @@ sections:
           componentType: link
           url: /shows/mdc-in-the-field/
           text: Watch now
-      - avatarUrl: /security/media/hubpage/watch-icon.png
+      - avatarUrl: /security/media/hubpage/video-icon.png
         componentType: testimonial-card
         name: Microsoft Sentinel & Defender XDR Virtual Ninja Training
         role: Video

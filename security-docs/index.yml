@@ -28,42 +28,42 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/security-hub/document-icon.png
+      - avatarUrl: /security/media/security-hub/applied-skills-icon.png
         componentType: testimonial-card
-        name: What is Microsoft Security Exposure Management?
-        role: Documentation
-        feedback: Learn about Microsoft Security Exposure Management as a security solution that provides a unified view of security posture across company assets and workloads.
+        name: Defend against cyberthreats with Microsoft Defender XDR
+        role: Applied Skills
+        feedback: Validate your technical skills and open doors to new opportunities by proving your ability to detect and respond to cyberthreats.
         link:
           componentType: link
-          url: /security-exposure-management/microsoft-security-exposure-management
-          text: Learn more
-      - avatarUrl: /security/media/hubpage/video-icon.png
+          url: /credentials/applied-skills/defend-against-cyberthreats-with-microsoft-defender-xdr/
+          text: Earn your credential
+      - avatarUrl: /security/media/hubpage/generic-trophy.png
         componentType: testimonial-card
-        name: Microsoft Copilot for Security Flight School 
+        name: Implement Microsoft Purview Insider Risk Management
+        role: Training
+        feedback: Learn to effectively detect, investigate, and respond to internal risks while protecting data, ensuring compliance, and maintaining employee trust.
+        link:
+          componentType: link
+          url: /training/paths/purview-implement-insider-risk-management/
+          text: Start the learning path
+      - avatarUrl: /security/media/security-hub/document-icon.png
+        componentType: testimonial-card
+        name: Defender for Cloud in the field
         role: Video
-        feedback: Learn what generative AI is and how to use Microsoft Copilot for Security to quickly analyze and mitigate threats using natural language.
+        feedback: Turn possibility into reality with simplified cloud security posture management and workload protection with Microsoft Defender for Cloud.
         link:
           componentType: link
-          url: /shows/microsoft-copilot-for-security-flight-school/
+          url: /shows/mdc-in-the-field/
           text: Watch now
-      - avatarUrl: /security/media/security-hub/document-icon.png
+      - avatarUrl: /security/media/hubpage/watch-icon.png
         componentType: testimonial-card
-        name: What is Microsoft's unified security operations platform?
-        role: Documentation
-        feedback: Understand how Microsoft's unified security operations platform provides a single platform for end-to-end security operations (SecOps).
+        name: Microsoft Sentinel & Defender XDR Virtual Ninja Training
+        role: Video
+        feedback: This training, based on the Ninja blogs, brings you up-to-date quickly on all things Microsoft Defender XDR.
         link:
           componentType: link
-          url: /unified-secops-platform/overview-unified-security
-          text: Learn more
-      - avatarUrl: /security/media/security-hub/document-icon.png
-        componentType: testimonial-card
-        name: Connect Microsoft Sentinel to the Microsoft Defender portal
-        role: Documentation
-        feedback: Onboard Microsoft Sentinel to the Defender portal with Microsoft Defender XDR to unify capabilities like incident management and advanced hunting.
-        link:
-          componentType: link
-          url: /defender-xdr/microsoft-sentinel-onboard?toc=%2Funified-secops-platform%2Ftoc.json&bc=%2Funified-secops-platform%2Fbreadcrumb%2Ftoc.json
-          text: Learn more
+          url: /shows/microsoft-sentinel-defender-xdr-virtual-ninja-training/
+          text: Watch now
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png

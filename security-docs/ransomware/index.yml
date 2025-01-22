@@ -64,8 +64,10 @@ landingContent:
         links:
         - text: Recent Microsoft Security ransomware blog
           url:  https://www.microsoft.com/en-us/security/blog/2024/10/31/chinese-threat-actor-storm-0940-uses-credentials-from-password-spray-attacks-from-a-covert-network
-        - text: Recent Microsoft ransomware social media posts 
-          url:  https://www.linkedin.com/posts/microsoft-threat-intelligence_in-the-second-quarter-of-2024-financially-activity-7218696257739923456-KKy_
+        - text: Recent Microsoft ransomware LinkedIn posts 
+          url:  https://www.linkedin.com/posts/microsoft-threat-intelligence_in-the-last-quarter-of-2024-microsoft-threat-activity-7287514337668222976-SHcq
+        - text: Recent Microsoft ransomware X posts
+          url:  https://x.com/MsftSecIntel/status/1881751618695094432
         - text: Automatic disruption of ransomware attacks
           url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/
 

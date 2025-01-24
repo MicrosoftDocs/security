@@ -89,3 +89,11 @@ landingContent:
             url: /azure/ai-studio/concepts/evaluation-improvement-strategies?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
           - text: Monitor quality and safety of deployed prompt flow applications
             url: /azure/ai-studio/how-to/monitor-quality-safety?toc=/security/ai-red-team/toc.json&bc=/security/ai-red-team/breadcrumb/toc.json
+
+  # Card
+  - title: Lessons learned
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Lessons from red teaming 100 generative AI products
+            url: https://download.microsoft.com/download/4/9/6/496deaed-0dab-4e1d-85eb-7489a0f242a6/Lessons From Red Teaming 100 Generative AI Products eBook.pdf

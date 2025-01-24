@@ -92,7 +92,7 @@
               - name: Prepare for directory synchronization
                 href: /microsoft-365/enterprise/prepare-for-directory-synchronization?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
                 maintainContext: true
-              - name: Prepare a non-routable domain for directory synchronization
+              - name: Prepare a nonroutable domain for directory synchronization
                 href: /microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
                 maintainContext: true
               - name: Set up directory synchronization
@@ -399,6 +399,21 @@
   items:
      - name: US Government guidance
        items:
+         - name: CISA Zero Trust Maturity Model
+           expanded: false
+           items:
+           - name: Introduction
+             href: cisa-zero-trust-maturity-model-intro.md
+           - name: Identity
+             href: cisa-zero-trust-maturity-model-identity.md
+           - name: Devices
+             href: cisa-zero-trust-maturity-model-devices.md
+           - name: Networks
+             href: cisa-zero-trust-maturity-model-networks.md
+           - name: Applications and workloads
+             href: cisa-zero-trust-maturity-model-apps.md
+           - name: Data
+             href: cisa-zero-trust-maturity-model-data.md
          - name: DoD Zero Trust Strategy
            expanded: false
            items:

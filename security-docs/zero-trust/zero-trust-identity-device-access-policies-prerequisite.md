@@ -21,7 +21,7 @@ ms.collection:
   - zerotrust-solution
   - tier2
 search.appverid: met150
-ms.date: 07/24/2023
+ms.date: 01/21/2025
 ---
 
 # Prerequisite work for implementing Zero Trust identity and device access policies
@@ -41,56 +41,63 @@ The following table details the prerequisite features and their configuration th
 
 |Configuration|Exceptions|Licensing|
 |---|:---:|---|
-|[Configure PHS](/entra/identity/hybrid/connect/how-to-connect-password-hash-synchronization). This feature must be enabled to detect leaked credentials and to act on them for risk-based Conditional Access.Note that this is required regardless of whether your organization uses federated authentication.|Cloud-only|Microsoft 365 E3 or E5|
+|[Configure password hash synchronization (PHS)](/entra/identity/hybrid/connect/how-to-connect-password-hash-synchronization). This feature must be enabled to detect leaked credentials and to act on them for risk-based Conditional Access. This configuration is required regardless of whether your organization uses federated authentication.|Cloud-only|Microsoft 365 E3 or E5|
 |[Enable seamless single sign-on](/entra/identity/hybrid/connect/how-to-connect-sso) to automatically sign users in when they are on their organization devices connected to your organization network.|Cloud-only and federated|Microsoft 365 E3 or E5|
 |[Configure named locations](/entra/identity/conditional-access/location-condition#named-locations). Microsoft Entra ID Protection collects and analyzes all available session data to generate a risk score. We recommend you specify your organization's public IP ranges for your network in the Microsoft Entra ID named locations configuration. Traffic coming from these ranges is given a reduced risk score, and traffic from outside the organization environment is given a higher risk score.||Microsoft 365 E3 or E5|
-|[Register all users for self-service password reset (SSPR) and multifactor authentication (MFA)](/entra/identity/authentication/concept-registration-mfa-sspr-combined). We recommend you register users for Microsoft Entra multifactor authentication ahead of time. Microsoft Entra ID Protection makes use of Microsoft Entra multifactor authentication to perform additional security verification. Additionally, for the best sign-in experience, we recommend users install the [Microsoft Authenticator app](https://support.microsoft.com/account-billing/351498fc-850a-45da-b7b6-27e523b8702a) and the Microsoft Company Portal app on their devices. These can be installed from the app store for each platform.||Microsoft 365 E3 or E5|
-|[Plan your Microsoft Entra hybrid join implementation](/entra/identity/devices/hybrid-join-plan). Conditional Access will make sure devices connecting to apps are domain-joined or compliant. To support this on Windows computers, the device must be registered with Microsoft Entra ID.  This article discusses how to configure automatic device registration.|Cloud-only|Microsoft 365 E3 or E5|
-|**Prepare your support team**. Have a plan in place for users that cannot complete MFA. This could be adding them to a policy exclusion group, or registering new MFA information for them. Before making either of these security-sensitive changes, you need to ensure that the actual user is making the request. Requiring users' managers to help with the approval is an effective step.||Microsoft 365 E3 or E5|
-|[Configure password writeback to on-premises AD](/entra/identity/authentication/tutorial-enable-sspr). Password writeback allows Microsoft Entra ID to require that users change their on-premises passwords when a high-risk account compromise is detected. You can enable this feature using Microsoft Entra Connect in one of two ways: either enable **Password Writeback** in the optional features screen of Microsoft Entra Connect setup, or enable it via Windows PowerShell.|Cloud-only|Microsoft 365 E3 or E5|
-|[Configure Microsoft Entra password protection](/entra/identity/authentication/concept-password-ban-bad). Microsoft Entra Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in a Microsoft Entra tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.||Microsoft 365 E3 or E5|
+|[Register all users for self-service password reset (SSPR) and multifactor authentication (MFA)](/entra/identity/authentication/concept-registration-mfa-sspr-combined). We recommend that you do this step ahead of time. Microsoft Entra ID Protection uses Microsoft Entra multifactor authentication for added security verification. For the best sign-in experience, we recommend using the [Microsoft Authenticator app](https://support.microsoft.com/account-billing/351498fc-850a-45da-b7b6-27e523b8702a) and the Microsoft Company Portal app on devices. Users can install these apps from the app store for their device platform.||Microsoft 365 E3 or E5|
+|[Plan your Microsoft Entra hybrid join implementation](/entra/identity/devices/hybrid-join-plan). Conditional Access makes sure devices connecting to apps are domain-joined or compliant. To support this requirement on Windows computers, the device must be registered with Microsoft Entra ID. This article discusses how to configure automatic device registration.|Cloud-only|Microsoft 365 E3 or E5|
+|**Prepare your support team**. Have a plan for users that can't do MFA. For example, add them to a policy exclusion group, or register new MFA information for them. If you make security-sensitive exceptions, verify the user is actually making the request. Requiring managers to help with the approval for users is an effective step.||Microsoft 365 E3 or E5|
+|[Configure password writeback to on-premises Active Directory](/entra/identity/authentication/tutorial-enable-sspr). Password writeback allows Microsoft Entra ID to require that users change their on-premises passwords when a high-risk account compromise is detected. You can enable this feature using Microsoft Entra Connect in one of two ways: either enable **Password Writeback** in the optional features screen of Microsoft Entra Connect setup, or enable it via Windows PowerShell.|Cloud-only|Microsoft 365 E3 or E5|
+|[Configure Microsoft Entra password protection](/entra/identity/authentication/concept-password-ban-bad). Microsoft Entra Password Protection detects and blocks known weak passwords and their variants, and can also block other weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in a Microsoft Entra organization. You can define other entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.||Microsoft 365 E3 or E5|
 |[Enable Microsoft Entra ID Protection](/entra/id-protection/overview-identity-protection). Microsoft Entra ID Protection enables you to detect potential vulnerabilities affecting your organization's identities and configure an automated remediation policy to low, medium, and high sign-in risk and user risk.||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
-|**Enable modern authentication** for [Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) and for [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Modern authentication is a prerequisite for using MFA. Modern authentication is enabled by default for Office 2016 and 2019 clients, SharePoint, and OneDrive for Business.||Microsoft 365 E3 or E5|
-|[Enable continuous access evaluation](/entra/identity/conditional-access/concept-continuous-access-evaluation) for Microsoft Entra ID. Continuous access evaluation proactively terminates active user sessions and enforces tenant policy changes in near real-time.||Microsoft 365 E3 or E5|
+|[Enable continuous access evaluation](/entra/identity/conditional-access/concept-continuous-access-evaluation) for Microsoft Entra ID. Continuous access evaluation proactively terminates active user sessions and enforces organization policy changes in near real-time.||Microsoft 365 E3 or E5|
 
 ## Recommended client configurations
 
-This section describes the default platform client configurations that we recommend to provide the best SSO experience to your users, as well as the technical prerequisites for Conditional Access.
+This section describes the recommended default platform client configurations for the best SSO experience, and the technical prerequisites for Conditional Access.
 
 ### Windows devices
 
-We recommend Windows 11 or Windows 10 (version 2004 or later), as Azure is designed to provide the smoothest SSO experience possible for both on-premises and Microsoft Entra ID. Work or school-issued devices should be configured to join Microsoft Entra ID directly or if the organization uses on-premises AD domain join, those devices should be [configured to automatically and silently register with Microsoft Entra ID](/entra/identity/devices/hybrid-join-plan).
+We recommend Windows 11 or Windows 10 (version 2004 or later), as Azure is designed to provide the smoothest SSO experience possible for both on-premises and Microsoft Entra ID. Organization-issued devices should be configured using either of the following options:
 
-For BYOD Windows devices, users can use **Add work or school account**. Note that users of the Google Chrome browser on Windows 11 or Windows 10 devices need to [install an extension](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) to get the same smooth sign-in experience as Microsoft Edge users. Also, if your organization has domain-joined Windows 8 or 8.1 devices, you can install Microsoft Workplace Join for non-Windows 10 computers. [Download the package to register](https://www.microsoft.com/download/details.aspx?id=53554) the devices with Microsoft Entra ID.
+- Join Microsoft Entra ID directly.
+- Configure on-premises Active Directory domain-joined devices to [automatically and silently register with Microsoft Entra ID](/entra/identity/devices/hybrid-join-plan)
+
+For personal (bring your own device or BYOD) Windows devices, users can use **Add work or school account**. Google Chrome users on Windows 11 or Windows 10 devices need to [install an extension](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) to get the same smooth sign-in experience as Microsoft Edge users. Also, if your organization has Windows 8 or 8.1 devices that are domain-joined, you can install Microsoft Workplace Join for non-Windows 10 computers. [Download the package to register](https://www.microsoft.com/download/details.aspx?id=53554) the devices with Microsoft Entra ID.
 
 ### iOS devices
 
-We recommend installing the [Microsoft Authenticator app](https://support.microsoft.com/account-billing/351498fc-850a-45da-b7b6-27e523b8702a) on user devices before deploying Conditional Access or MFA policies. At a minimum, the app should be installed when users are asked to register their device with Microsoft Entra ID by adding a work or school account, or when they install the Intune company portal app to enroll their device into management. This depends on the configured Conditional Access policy.
+We recommend installing the [Microsoft Authenticator app](https://support.microsoft.com/account-billing/351498fc-850a-45da-b7b6-27e523b8702a) on user devices before deploying Conditional Access or MFA policies. If you can't, install the app in the following scenarios:
+
+- When users are asked to register their device with Microsoft Entra ID by adding a work or school account.
+- When users install the Intune company portal app to enroll their device into management.
+
+The request depends on the configured Conditional Access policy.
 
 ### Android devices
 
-We recommend users install the [Intune Company Portal app](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) and [Microsoft Authenticator app](https://support.microsoft.com/account-billing/351498fc-850a-45da-b7b6-27e523b8702a) before Conditional Access policies are deployed or when required during certain authentication attempts. After app installation, users may be asked to register with Microsoft Entra ID or enroll their device with Intune. This depends on the configured Conditional Access policy.
+We recommend that users install the [Intune Company Portal app](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) and [Microsoft Authenticator app](https://support.microsoft.com/account-billing/351498fc-850a-45da-b7b6-27e523b8702a) before Conditional Access policies are deployed or during specific authentication attempts. After app installation, users might be asked to register with Microsoft Entra ID or enroll their device with Intune, depending on the configured Conditional Access policy.
 
-We also recommend that organization-owned devices are standardized on OEMs and versions that support Android for Work or Samsung Knox to allow mail accounts, be managed and protected by Intune MDM policy.
+We also recommend that organization-owed devices support Android for Work or Samsung Knox to allow mail account management and protection by Intune mobile device management (MDM) policies.
 
 ### Recommended email clients
 
-The following email clients support modern authentication and Conditional Access.
+The email clients in the following table support modern authentication and Conditional Access:
 
 |Platform|Client|Version/Notes|
 |---|---|---|
-|**Windows**|Outlook|2019, 2016<p>[Required updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Windows**|Outlook|2016 or later <p> [Required updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook for iOS|[Latest](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook for Android|[Latest](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
-|**macOS**|Outlook|2019 and 2016|
+|**macOS**|Outlook|2016 or later|
 |**Linux**|Not supported||
 
 ### Recommended client platforms when securing documents
 
-The following clients are recommended when a secure documents policy has been applied.
+We recommend the email clients in the following table when a secure documents policy is applied:
 
-|Platform|Word/Excel/PowerPoint|OneNote|OneDrive App|SharePoint App|[OneDrive sync client](/onedrive/enable-conditional-access)|
-|---|---|---|---|---|---|
+|Platform|Word/Excel/PowerPoint|OneNote|OneDrive app|SharePoint app|[OneDrive sync client](/onedrive/enable-conditional-access)|
+|---|:---:|:---:|:---:|:---:|:---:|
 |Windows 11 or Windows 10|Supported|Supported|N/A|N/A|Supported|
 |Windows 8.1|Supported|Supported|N/A|N/A|Supported|
 |Android|Supported|Supported|Supported|Supported|N/A|
@@ -109,13 +116,13 @@ For more information about client support in Microsoft 365, see the following ar
 
 For Microsoft 365 E3 or E5 or with separate Microsoft Entra ID P1 or P2 licenses, you can require MFA for administrator accounts with a manually created Conditional Access policy. See [Conditional Access: Require MFA for administrators](/entra/identity/conditional-access/howto-conditional-access-policy-admin-mfa) for the details.
 
-For editions of Microsoft 365 or Office 365 that do not support Conditional Access, you can enable [security defaults](/entra/fundamentals/security-defaults) to require MFA for all accounts.
+For editions of Microsoft 365 or Office 365 that don't support Conditional Access, you can enable [security defaults](/entra/fundamentals/security-defaults) to require MFA for all accounts.
 
-Here are some additional recommendations:
+Here are some other recommendations:
 
 - Use [Microsoft Entra Privileged Identity Management](/entra/id-governance/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts.
-- [Use privileged access management](/purview/privileged-access-management) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
-- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](/entra/identity/role-based-access-control/manage-roles-portal) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function.
+- [Use privileged access management](/purview/privileged-access-management) to protect your organization from breaches that might use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
+- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](/entra/identity/role-based-access-control/manage-roles-portal) *only for administration*. Admins should have their own user account for regular use. They should use an administrative account only when necessary to complete a task associated with their role or job function.
 - Follow [best practices](/entra/identity/role-based-access-control/best-practices) for securing privileged accounts in Microsoft Entra ID.
 
 ## Next step

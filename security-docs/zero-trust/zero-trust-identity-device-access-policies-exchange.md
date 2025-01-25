@@ -65,7 +65,7 @@ For mobile devices, the following clients are blocked based on the Conditional A
 - Exchange ActiveSync clients that support modern authentication, but not Intune app protection policies.
 - Devices that support Intune app protection policies, but aren't defined in the policy.
 
-To block ActiveSync connections that use basic authentication on other types of devices (for example, PCs), follow the steps in [Block Exchange ActiveSync on all devices](/entra/identity/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices).
+To block ActiveSync connections that use basic authentication on other types of devices (for example, PCs), follow the steps in [Block Exchange ActiveSync on all devices](/entra/identity/conditional-access/policy-all-users-approved-app-or-app-protection#block-exchange-activesync-on-all-devices).
 
 ## Limit access to email attachments in Outlook on the web 
 
@@ -77,7 +77,7 @@ You enforce these restrictions using Outlook on the web mailbox policies in Exch
 
 Here are the steps to limit access to email attachments:
 
-1. [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. To see the available Outlook on the web mailbox policies, run the following command:
 

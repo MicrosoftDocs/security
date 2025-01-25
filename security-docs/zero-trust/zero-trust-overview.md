@@ -47,9 +47,9 @@ Microsoft 365 is built intentionally with many security and information protecti
 
 See these key resources to get started:
 
-- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust)
-- [The Microsoft Zero Trust security model setup guide](https://go.microsoft.com/fwlink/?linkid=2222968)
-- [Advanced deployment guide for Zero Trust with Microsoft 365 (requires sign-in)](https://go.microsoft.com/fwlink/?linkid=2224820) in the Microsoft 365 admin center
+- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json)
+- [The Microsoft Zero Trust security model setup guide](https://go.microsoft.com/fwlink/p/?linkid=2222968)
+- [Advanced deployment guide for Zero Trust with Microsoft 365 (requires sign-in)](https://go.microsoft.com/fwlink/p/?linkid=2224820) in the Microsoft 365 admin center
 
 ## Zero Trust for Microsoft Azure
 
@@ -59,7 +59,7 @@ These articles help you apply the principles of Zero Trust to your workloads and
 - [Azure Virtual Desktop](azure-infrastructure-avd.md)
 - [Azure Virtual WAN](azure-virtual-wan.md)
 - [IaaS applications in Amazon Web Services](secure-iaas-apps.md)
-- [Microsoft Sentinel and Microsoft Defender XDR](/security/operations/siem-xdr-overview)
+- [Microsoft Sentinel and Microsoft Defender XDR](/security/zero-trust/siem-xdr-overview)
 
 --->
 

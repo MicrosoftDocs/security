@@ -27,7 +27,7 @@ ms.date: 01/22/2025
 
 # Common security policies for Microsoft 365 organizations
 
-Organizations have a lot to worry about when deploying Microsoft 365 for their organization. The Conditional Access, app protection, and device compliance policies referenced in this article are based on Microsoft's recommendations and the three guiding principles of [Zero Trust](/security/zero-trust/zero-trust-overview):
+Organizations have a lot to worry about when deploying Microsoft 365 for their organization. The Conditional Access, app protection, and device compliance policies referenced in this article are based on Microsoft's recommendations and the three guiding principles of [Zero Trust](zero-trust-overview.md):
 
 - Verify explicitly
 - Use least privilege
@@ -48,7 +48,7 @@ The following diagram shows the protection levels that each policy applies to an
 You can download this diagram as a [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) file.
 
 > [!TIP]
-> We recommend requiring multifactor authentication (MFA) for users before enrolling devices in Intune to ensure that the device is in the possession of the intended user. MFA is on by default due to [security defaults](/entra/fundamentals/security-defaults#enforced-security-policies), or you can use [Conditional Access policies to require MFA for all users](/entra/identity/conditional-access/howto-conditional-access-policy-all-users-mfa).
+> We recommend requiring multifactor authentication (MFA) for users before enrolling devices in Intune to ensure that the device is in the possession of the intended user. MFA is on by default due to [security defaults](/entra/fundamentals/security-defaults#enforced-security-policies), or you can use [Conditional Access policies to require MFA for all users](/entra/identity/conditional-access/policy-all-users-mfa-strength).
 >
 > Devices must be enrolled in Intune before you can enforce device compliance policies.
 
@@ -181,7 +181,7 @@ For step-by-step guidance, see [Create a compliance policy in Microsoft Intune](
 
 iOS/iPadOS supports several enrollment scenarios, two of which are covered by this framework:
 
-- [Device enrollment for personally owned devices](/mem/intune/enrollment/ios-enroll): Personally owned devices (also known as bring your own device or BYOD) that are also used for work.
+- [Device enrollment for personally owned devices](/mem/intune/fundamentals/deployment-guide-enrollment-ios-ipados#byod-user-and-device-enrollment): Personally owned devices (also known as bring your own device or BYOD) that are also used for work.
 - [Automated device enrollment for corporate-owned devices](/mem/intune/enrollment/device-enrollment-program-enroll-ios): Organization-owned devices that are associated with a single user, and are used exclusively for work.
 
 > [!TIP]
@@ -214,8 +214,8 @@ The Android Enterprise security configuration framework is organized into severa
 ##### Compliance settings for Android Enterprise work profile devices
 
 - There's no basic security (level 1) offering for personally owned work profile devices. The available settings don't justify a difference between level 1 and level 2.
-- **[Work profile enhanced security (Level 2)](/mem/intune/enrollment/android-work-profile-security-settings#personally-owned-work-profile-enhanced-security)**: We recommend this configuration as the minimum security for personal devices that access work or school data. This configuration introduces password requirements, separates work and personal data, and validates Android device attestation.
-- **[Work profile high security (Level 3)](/mem/intune/enrollment/android-work-profile-security-settings#personally-owned-work-profile-high-security)**: We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration introduces mobile threat defense or Microsoft Defender for Endpoint, sets the minimum Android version, enables stronger password policies, and further separates work and personal data.
+- **[Work profile enhanced security (Level 2)](/mem/intune/protect/compliance-policy-create-android-for-work#personally-owned-work-profile)**: We recommend this configuration as the minimum security for personal devices that access work or school data. This configuration introduces password requirements, separates work and personal data, and validates Android device attestation.
+- **[Work profile high security (Level 3)](/mem/intune/protect/compliance-policy-create-android-for-work#personally-owned-work-profile)**: We recommend this configuration for devices used by specific users or groups who are at uniquely high risk. For example, users who handle highly sensitive data where unauthorized disclosure would cause considerable loss to the organization. This configuration introduces mobile threat defense or Microsoft Defender for Endpoint, sets the minimum Android version, enables stronger password policies, and further separates work and personal data.
 
 ##### Compliance settings for Android Enterprise fully managed devices
 
@@ -328,7 +328,7 @@ You can enroll new devices to Intune, even if you select **Require device to be 
 
 #### Subscription activation
 
-If your organization uses [Windows subscription Activation](/windows/deployment/windows-10-subscription-activation) to enable users to "step-up" from one version of Windows to another, you should exclude the Universal Store Service APIs and Web Application (AppID: 45a330b1-b1ec-4cc1-9161-9f03992aa49f) from your device compliance.
+If your organization uses [Windows subscription Activation](/windows/deployment/windows-subscription-activation) to enable users to "step-up" from one version of Windows to another, you should exclude the Universal Store Service APIs and Web Application (AppID: 45a330b1-b1ec-4cc1-9161-9f03992aa49f) from your device compliance.
 
 ### Always require MFA
 

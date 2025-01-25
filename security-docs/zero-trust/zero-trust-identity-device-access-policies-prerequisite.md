@@ -43,7 +43,7 @@ The following table details the prerequisite features and their configuration th
 |---|:---:|---|
 |[Configure password hash synchronization (PHS)](/entra/identity/hybrid/connect/how-to-connect-password-hash-synchronization). This feature must be enabled to detect leaked credentials and to act on them for risk-based Conditional Access. This configuration is required regardless of whether your organization uses federated authentication.|Cloud-only|Microsoft 365 E3 or E5|
 |[Enable seamless single sign-on](/entra/identity/hybrid/connect/how-to-connect-sso) to automatically sign users in when they are on their organization devices connected to your organization network.|Cloud-only and federated|Microsoft 365 E3 or E5|
-|[Configure named locations](/entra/identity/conditional-access/location-condition#named-locations). Microsoft Entra ID Protection collects and analyzes all available session data to generate a risk score. We recommend you specify your organization's public IP ranges for your network in the Microsoft Entra ID named locations configuration. Traffic coming from these ranges is given a reduced risk score, and traffic from outside the organization environment is given a higher risk score.||Microsoft 365 E3 or E5|
+|[Configure network locations](/entra/identity/conditional-access/concept-assignment-network). Microsoft Entra ID Protection collects and analyzes all available session data to generate a risk score. We recommend you specify your organization's public IP ranges for your network in the Microsoft Entra ID named locations configuration. Traffic coming from these ranges is given a reduced risk score, and traffic from outside the organization environment is given a higher risk score.||Microsoft 365 E3 or E5|
 |[Register all users for self-service password reset (SSPR) and multifactor authentication (MFA)](/entra/identity/authentication/concept-registration-mfa-sspr-combined). We recommend that you do this step ahead of time. Microsoft Entra ID Protection uses Microsoft Entra multifactor authentication for added security verification. For the best sign-in experience, we recommend using the [Microsoft Authenticator app](https://support.microsoft.com/account-billing/351498fc-850a-45da-b7b6-27e523b8702a) and the Microsoft Company Portal app on devices. Users can install these apps from the app store for their device platform.||Microsoft 365 E3 or E5|
 |[Plan your Microsoft Entra hybrid join implementation](/entra/identity/devices/hybrid-join-plan). Conditional Access makes sure devices connecting to apps are domain-joined or compliant. To support this requirement on Windows computers, the device must be registered with Microsoft Entra ID. This article discusses how to configure automatic device registration.|Cloud-only|Microsoft 365 E3 or E5|
 |**Prepare your support team**. Have a plan for users that can't do MFA. For example, add them to a policy exclusion group, or register new MFA information for them. If you make security-sensitive exceptions, verify the user is actually making the request. Requiring managers to help with the approval for users is an effective step.||Microsoft 365 E3 or E5|
@@ -63,7 +63,7 @@ We recommend Windows 11 or Windows 10 (version 2004 or later), as Azure is desig
 - Join Microsoft Entra ID directly.
 - Configure on-premises Active Directory domain-joined devices to [automatically and silently register with Microsoft Entra ID](/entra/identity/devices/hybrid-join-plan)
 
-For personal (bring your own device or BYOD) Windows devices, users can use **Add work or school account**. Google Chrome users on Windows 11 or Windows 10 devices need to [install an extension](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) to get the same smooth sign-in experience as Microsoft Edge users. Also, if your organization has Windows 8 or 8.1 devices that are domain-joined, you can install Microsoft Workplace Join for non-Windows 10 computers. [Download the package to register](https://www.microsoft.com/download/details.aspx?id=53554) the devices with Microsoft Entra ID.
+For personal (bring your own device or BYOD) Windows devices, users can use **Add work or school account**. Google Chrome users on Windows 11 or Windows 10 devices need to [install an extension](https://chromewebstore.google.com/detail/microsoft-single-sign-on/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) to get the same smooth sign-in experience as Microsoft Edge users. Also, if your organization has Windows 8 or 8.1 devices that are domain-joined, you can install Microsoft Workplace Join for non-Windows 10 computers. [Download the package to register](https://www.microsoft.com/download/details.aspx?id=53554) the devices with Microsoft Entra ID.
 
 ### iOS devices
 
@@ -76,7 +76,7 @@ The request depends on the configured Conditional Access policy.
 
 ### Android devices
 
-We recommend that users install the [Intune Company Portal app](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) and [Microsoft Authenticator app](https://support.microsoft.com/account-billing/351498fc-850a-45da-b7b6-27e523b8702a) before Conditional Access policies are deployed or during specific authentication attempts. After app installation, users might be asked to register with Microsoft Entra ID or enroll their device with Intune, depending on the configured Conditional Access policy.
+We recommend that users install the [Intune Company Portal app](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) and [Microsoft Authenticator app](https://support.microsoft.com/account-billing/351498fc-850a-45da-b7b6-27e523b8702a) before Conditional Access policies are deployed or during specific authentication attempts. After app installation, users might be asked to register with Microsoft Entra ID or enroll their device with Intune, depending on the configured Conditional Access policy.
 
 We also recommend that organization-owed devices support Android for Work or Samsung Knox to allow mail account management and protection by Intune mobile device management (MDM) policies.
 
@@ -86,9 +86,9 @@ The email clients in the following table support modern authentication and Condi
 
 |Platform|Client|Version/Notes|
 |---|---|---|
-|**Windows**|Outlook|2016 or later <p> [Required updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
-|**iOS**|Outlook for iOS|[Latest](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
-|**Android**|Outlook for Android|[Latest](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
+|**Windows**|Outlook|2016 or later <br/><br/> [Required updates](/officeupdates/outlook-updates-msi)|
+|**iOS**|Outlook for iOS|[Latest](https://apps.apple.com/app/microsoft-outlook/id951937596)|
+|**Android**|Outlook for Android|[Latest](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook)|
 |**macOS**|Outlook|2016 or later|
 |**Linux**|Not supported||
 
@@ -96,7 +96,7 @@ The email clients in the following table support modern authentication and Condi
 
 We recommend the email clients in the following table when a secure documents policy is applied:
 
-|Platform|Word/Excel/PowerPoint|OneNote|OneDrive app|SharePoint app|[OneDrive sync client](/onedrive/enable-conditional-access)|
+|Platform|Word/Excel/PowerPoint|OneNote|OneDrive app|SharePoint app|[OneDrive sync client](/sharepoint/enable-conditional-access)|
 |---|:---:|:---:|:---:|:---:|:---:|
 |Windows 11 or Windows 10|Supported|Supported|N/A|N/A|Supported|
 |Windows 8.1|Supported|Supported|N/A|N/A|Supported|
@@ -107,14 +107,11 @@ We recommend the email clients in the following table when a secure documents po
 
 ### Microsoft 365 client support
 
-For more information about client support in Microsoft 365, see the following articles:
-
-- [Microsoft 365 Client App Support - Conditional Access](/microsoft-365/enterprise/microsoft-365-client-support-conditional-access)
-- [Microsoft 365 Client App Support - multifactor authentication](/microsoft-365/enterprise/microsoft-365-client-support-multi-factor-authentication)
+For more information about client support in Microsoft 365, see [Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview).
 
 ## Protecting administrator accounts
 
-For Microsoft 365 E3 or E5 or with separate Microsoft Entra ID P1 or P2 licenses, you can require MFA for administrator accounts with a manually created Conditional Access policy. See [Conditional Access: Require MFA for administrators](/entra/identity/conditional-access/howto-conditional-access-policy-admin-mfa) for the details.
+For Microsoft 365 E3 or E5 or with separate Microsoft Entra ID P1 or P2 licenses, you can require phishing-resistant MFA for administrator accounts with a manually created Conditional Access policy. See [Conditional Access: Require phishing-resistant MFA for administrators](/entra/identity/conditional-access/policy-admin-phish-resistant-mfa) for the details.
 
 For editions of Microsoft 365 or Office 365 that don't support Conditional Access, you can enable [security defaults](/entra/fundamentals/security-defaults) to require MFA for all accounts.
 

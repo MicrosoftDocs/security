@@ -86,7 +86,7 @@ Microsoft Teams defines the following access types for users outside the organiz
 
 - **External access**: Users outside the organization who don't have Microsoft Entra B2B accounts. External access can include invitations and participation in calls, chats, and meetings, but doesn't include team membership or access to the resources of the team. External access is a way for Teams users in an external domain to find, call, chat with, and set up meetings in Teams with users in your organization.
 
-  Teams administrators configure external access at the organization level. For more information, see [Manage external access in Microsoft Teams](/microsoftteams/manage-external-access).
+  Teams administrators configure external access at the organization level. For more information, see [IT Admins - Manage external meetings and chat with people and organizations using Microsoft identities](/microsoftteams/trusted-organizations-external-meetings-chat).
 
 External access users have less access and functionality than guest access users. For example, external access users can chat with your internal users with Teams but can't access team channels, files, or other resources.
 
@@ -110,7 +110,7 @@ You can also manage messaging (also known as chat) using the default global poli
 
 ### Meeting policies
 
-Meetings allow small and large groups of people to formally get together and share relevant content. Setting the right organization policies for meetings is essential. For more information, see review [Manage meeting policies in Teams](/microsoftteams/meeting-policies-in-teams).
+Meetings allow small and large groups of people to formally get together and share relevant content. Setting the right organization policies for meetings is essential. For more information, see review [Manage meeting policies in Teams](/microsoftteams/settings-policies-reference#meetings).
 
 ### App permission policies
 

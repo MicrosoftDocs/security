@@ -82,15 +82,15 @@ Microsoft Teams defines the following access types for users outside the organiz
 
 - **Guest access**: Uses a Microsoft Entra B2B account for each user that can be added as a member of a team. Guest access allows access to Teams resources and interaction with internal users in group conversations, chats, and meetings.
 
-  For more information about guest access and how to implement it, see [Teams guest access](/microsoftteams/guest-access).
+  For more information about guest access and how to implement it, see [Guest access in Microsoft Teams](/microsoftteams/guest-access).
 
 - **External access**: Users outside the organization who don't have Microsoft Entra B2B accounts. External access can include invitations and participation in calls, chats, and meetings, but doesn't include team membership or access to the resources of the team. External access is a way for Teams users in an external domain to find, call, chat with, and set up meetings in Teams with users in your organization.
 
-  Teams administrators configure external access at the organization level. For more information, see [IT Admins - Manage external meetings and chat with people and organizations using Microsoft identities](/microsoftteams/trusted-organizations-external-meetings-chat).
+  Teams admins can use custom policies to configure external access for the organization, groups of users, or individual users. For more information, see [IT Admins - Manage external meetings and chat with people and organizations using Microsoft identities](/microsoftteams/trusted-organizations-external-meetings-chat).
 
 External access users have less access and functionality than guest access users. For example, external access users can chat with your internal users with Teams but can't access team channels, files, or other resources.
 
-Conditional Access policies apply only to guest access in Teams because there are corresponding Microsoft Entra B2B accounts. External access doesn't use Microsoft Entra B2B accounts and therefore doesn't use Conditional Access policies.
+Conditional Access policies apply only to guest access users in Teams because there are corresponding Microsoft Entra B2B accounts. External access doesn't use Microsoft Entra B2B accounts and therefore can't use Conditional Access policies.
 
 For recommended policies to allow access with a Microsoft Entra B2B account, see [Policies for allowing guest and external B2B account access](zero-trust-identity-device-access-policies-guest-access.md).
 
@@ -102,7 +102,7 @@ Besides the previously described common policies, there are Teams-specific polic
 
 Policies are available to control what users can and can't do in teams and channels in Teams. Although global teams are available, you're more likely to create smaller and more specific teams and channels to meet your business needs.
 
-We recommend changing the default global policy or creating custom policies as described in: [Manage teams policies in Microsoft Teams](/microsoftteams/teams-policies).
+We recommend changing the default global policy or creating custom policies as described in: [Manage channel policies in Microsoft Teams](/microsoftteams/teams-policies).
 
 ### Messaging policies
 
@@ -110,7 +110,7 @@ You can also manage messaging (also known as chat) using the default global poli
 
 ### Meeting policies
 
-Meetings allow small and large groups of people to formally get together and share relevant content. Setting the right organization policies for meetings is essential. For more information, see review [Manage meeting policies in Teams](/microsoftteams/settings-policies-reference#meetings).
+Meetings allow small and large groups of people to formally get together and share relevant content. Setting the right organization policies for meetings is essential. For more information, see [Meetings](/microsoftteams/settings-policies-reference#meetings).
 
 ### App permission policies
 

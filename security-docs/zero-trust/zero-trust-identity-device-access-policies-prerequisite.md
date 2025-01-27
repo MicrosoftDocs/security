@@ -21,7 +21,7 @@ ms.collection:
   - zerotrust-solution
   - tier2
 search.appverid: met150
-ms.date: 01/21/2025
+ms.date: 01/27/2025
 ---
 
 # Prerequisite work for implementing Zero Trust identity and device access policies
@@ -111,7 +111,7 @@ For more information about client support in Microsoft 365, see [Deploy your ide
 
 ## Protecting administrator accounts
 
-For Microsoft 365 E3 or E5 or with separate Microsoft Entra ID P1 or P2 licenses, you can require phishing-resistant MFA for administrator accounts with a manually created Conditional Access policy. See [Conditional Access: Require phishing-resistant MFA for administrators](/entra/identity/conditional-access/policy-admin-phish-resistant-mfa) for the details.
+For Microsoft 365 E3 or E5 or with separate Microsoft Entra ID P1 or P2 licenses, you can require phishing-resistant MFA for administrator accounts with a manually created Conditional Access policy. For more information, see [Conditional Access: Require phishing-resistant MFA for administrators](/entra/identity/conditional-access/policy-admin-phish-resistant-mfa).
 
 For editions of Microsoft 365 or Office 365 that don't support Conditional Access, you can enable [security defaults](/entra/fundamentals/security-defaults) to require MFA for all accounts.
 

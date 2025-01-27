@@ -54,7 +54,7 @@ The following table lists the policies that you need to update or create for Sha
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignments of cloud apps.|
 ||[Require compliant PCs *and* mobile devices](zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices)|Include SharePoint in the list of cloud apps.|
 ||[SharePoint access control policy](#sharepoint-access-control-policies): Allow browser-only access to specific SharePoint sites from unmanaged devices.|This policy prevents editing and downloading of files. Use PowerShell to specify sites.|
-|**Specialized security**|[*Always* require MFA](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
+|**Specialized security**|[*Always* require MFA](zero-trust-identity-device-access-policies-common.md#always-require-mfa)|Include SharePoint in the assignment of cloud apps.|
 ||[SharePoint access control policy](#use-app-enforced-restrictions-in-sharepoint): Block access to specific SharePoint sites from unmanaged devices.|Use PowerShell to specify sites.|
 
 ## Use app-enforced restrictions in SharePoint

@@ -63,12 +63,12 @@ Review the policies listed in the following table and make the recommended addit
 |---|---|---|
 |**Starting point**|[Require multifactor authentication (MFA) when sign-in risk is *medium* or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Be sure Teams and dependent services are included in the list of apps. Teams has Guest Access and External Access rules to consider, which are described later in this article.|
 ||[Block clients that don't support modern authentication](zero-trust-identity-device-access-policies-common.md#block-clients-that-dont-support-multifactor-authentication)|Include Teams and dependent services in the assignment of cloud apps.|
-||[High risk users must change password](zero-trust-identity-device-access-policies-common.md#high-risk-users-must-change-password)|Forces Teams users to change their password when signing in if high-risk activity is detected for their account. Be sure Teams and dependent services are included in the list of apps.|
+||[High risk users must change password](zero-trust-identity-device-access-policies-common.md#high-risk-users-must-change-password)|Force Teams users to change their password when signing in if high-risk activity is detected for their account. Be sure Teams and dependent services are included in the list of apps.|
 ||[Apply APP data protection policies](zero-trust-identity-device-access-policies-common.md#app-protection-policies)|Be sure Teams and dependent services are included in the list of apps. Update the policy for each platform (iOS/iPadOS, Android, and Windows).|
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Teams has Guest Access and External Access rules to consider, which are described later in this article. Include Teams and dependent services in this policy.|
 ||[Define device compliance policies](zero-trust-identity-device-access-policies-common.md#create-device-compliance-policies)|Include Teams and dependent services in this policy.|
 ||[Require compliant PCs *and* mobile devices](zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices)|Include Teams and dependent services in this policy.|
-|**Specialized security**|[*Always* require MFA](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include Teams and dependent services in this policy.|
+|**Specialized security**|[*Always* require MFA](zero-trust-identity-device-access-policies-common.md#always-require-mfa)|Include Teams and dependent services in this policy.|
 
 ## Teams dependent services architecture
 

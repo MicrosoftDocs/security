@@ -53,7 +53,7 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 ||[Block ActiveSync clients](#block-activesync-clients)|Add this new policy.|
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps.|
 ||[Require compliant PCs *and* mobile devices](zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps.|
-|**Specialized security**|[*Always* require MFA](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps.|
+|**Specialized security**|[*Always* require MFA](zero-trust-identity-device-access-policies-common.md#always-require-mfa)|Include Exchange Online in the assignment of cloud apps.|
 
 ## Block Exchange ActiveSync clients
 

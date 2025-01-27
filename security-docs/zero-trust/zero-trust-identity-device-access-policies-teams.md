@@ -72,7 +72,7 @@ Review the policies listed in the following table and make the recommended addit
 
 ## Teams dependent services architecture
 
-For reference, the following diagram illustrates the services Teams relies on. For more information, see [Microsoft Teams and related productivity services in Microsoft 365 for IT architects](/microsoft-365/solutions/productivity-illustrations).
+For reference, the following diagram illustrates the services Teams relies on. For more information, see [Microsoft Teams and related productivity services in Microsoft 365 for IT architects](/microsoft-365/solutions/productivity-illustrations#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects).
 
 :::image type="content" source="media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="The diagram showing Teams dependencies on SharePoint, OneDrive, and Exchange Online." lightbox="media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
 

@@ -131,12 +131,6 @@ With Microsoft Purview Message Encryption, which uses the protection features in
 
 For more information, see [Set up Message Encryption](/purview/set-up-new-message-encryption-capabilities).
 
-## Prevent automatic email forwarding to external recipients
-
-By default, outbound spam policies in Exchange Online Protection (EOP) block automatic email forwarding to external recipients. There's a default policy that applies to all users, and admins can create custom policies that apply to specific groups of users. For more information about outbound spam policies, see [Configure outbound spam policies in EOP](/defender-office-365/outbound-spam-policies-configure).
-
-Outbound spam policies control automatic email forwarding to external recipients by [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) or by [mailbox forwarding](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as *SMTP forwarding*). For more information, see [Control automatic external email forwarding in Microsoft 365](/defender-office-365/outbound-spam-policies-external-email-forwarding).
-
 ## Next steps
 
 :::image type="content" source="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Screenshot of the policies for Microsoft 365 cloud apps." lightbox="media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::

@@ -23,7 +23,7 @@ ms.collection:
   - highpri
   - tier1
 search.appverid: met150
-ms.date: 01/16/2025
+ms.date: 01/27/2025
 ---
 
 # Policy recommendations for securing email
@@ -67,11 +67,9 @@ For mobile devices, the following clients are blocked based on the Conditional A
 
 To block ActiveSync connections that use basic authentication on other types of devices (for example, PCs), follow the steps in [Block Exchange ActiveSync on all devices](/entra/identity/conditional-access/policy-all-users-approved-app-or-app-protection#block-exchange-activesync-on-all-devices).
 
-## Limit access to email attachments in Outlook on the web 
+## Limit access to email attachments in Outlook on the web and the new Outlook for Windows
 
-<!--- Does this also affect the new Outlook?--->
-
-You can restrict users on unmanaged devices from downloading email attachments in Outlook on the web (formerly known as Outlook Web App or OWA). Users can view and edit these files using Office Online without leaking and storing the files on the device. You can also block users from even seeing attachments in Outlook on the web on unmanaged devices.
+You can restrict users on unmanaged devices from downloading email attachments in Outlook on the web (formerly known as Outlook Web App or OWA) and in the new Outlook for Windows. Users can view and edit these files using Office Online without leaking and storing the files on the device. You can also block users from even seeing attachments in Outlook on the web and the new Outlook for Windows on unmanaged devices.
 
 You enforce these restrictions using Outlook on the web mailbox policies in Exchange Online. Every Microsoft 365 organization with Exchange Online mailboxes has a built-in Outlook on the web mailbox policy named OwaMailboxPolicy-Default. By default, this policy is applied to all users. Admins can also [create custom policies](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy) that apply to specific groups of users.
 

@@ -69,15 +69,17 @@ landingContent:
         - text: Recent Microsoft ransomware X posts
           url:  https://x.com/MsftSecIntel/status/1881751618695094432
         - text: Automatic disruption of ransomware attacks
-          url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts/
+          url:  https://www.microsoft.com/security/blog/2023/10/11/automatic-disruption-of-human-operated-attacks-through-containment-of-compromised-user-accounts
+        - text: Podcast - Doctors’ Perspective - The Rise of healthcare ransomware 
+          url:  https://podcasts.apple.com/us/podcast/doctors-perspective-the-rise-of-healthcare-ransomware/id1710656242
 
 # Card
   - title: Microsoft Blogs about ransomware
     linkLists:
       - linkListType: reference
         links:
-        - text: Microsoft shares latest intelligence on North Korean and Chinese threat actors at CYBERWARCON - November 2024
-          url:  https://www.microsoft.com/en-us/security/blog/2024/11/22/microsoft-shares-latest-intelligence-on-north-korean-and-chinese-threat-actors-at-cyberwarcon
+        - text: Why security teams rely on Microsoft Defender Experts for XDR for managed detection and response - January 2025
+          url:  https://www.microsoft.com/en-us/security/blog/2025/01/06/why-security-teams-rely-on-microsoft-defender-experts-for-xdr-for-managed-detection-and-response/
         - text: Ransomware as a service. Understanding the cybercrime gig economy and how to protect yourself
           url:  https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
         - text: Octo Tempest - A recurring ransomware threat

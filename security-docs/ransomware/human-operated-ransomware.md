@@ -52,7 +52,12 @@ Human-operated ransomware attacks involve the following stages:
 
 - [LockBit](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/part-1-lockbit-2-0-ransomware-bugs-and-database-recovery/ba-p/3254354) – Financially motivated ransomware-as-a-service (RaaS) campaign and most prolific ransomware threat actor in the 2023-24 time period
 - [Black Basta](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Basta&msockid=3fd141c935036ef610d9506e34696fe) – Gains access through spear-phishing emails and uses PowerShell to launch an encryption payload
-- 
+- Storm-1674 (DarkGate and ZLoader) - Storm-1674 is an access broker known for distributing DarkGate, SectopRAT, and Zloader and handing off access to threat actors like Storm-0506 and Sangria Tempest. 
+
+Meanwhile, Storm-1811 is a threat actor known for social engineering attacks leading to the deployment of BlackBasta using Qakbot and other malware. In late October to early November, Storm-1811 was observed flooding target email addresses with spam (email bombing attack) before posing as help desk personnel offering to help with the spam problem. In this new campaign, Storm-1811 was observed deploying a new malware loader called ReedBed.
+
+Microsoft Defender data shows that the most widespread ransomware variants in the last quarter of 2024 were Akira, FOG, Qilin, Lynx, and the aforementioned RansomHub and BlackBasta. This period also saw the new ransomware variants SafePay and Hellcat.
+
 ## How Microsoft can help with an in-progress ransomware attack
 
 To help mitigate in-progress ransomware attacks, Microsoft Incident Response can leverage and deploy [Microsoft Defender for Identity](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-for-identity) — a cloud-based security solution that helps detect and respond to identity-related threats. Bringing identity monitoring into incident response early supports the affected organization's security operations team to regain control. Microsoft Incident response uses Defender for Identity to help identify the incident scope and impacted accounts, protect critical infrastructure, and evict the threat actor. The response team then brings in [Microsoft Defender for Endpoint](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint) to trace the threat actor’s movements and disrupt their attempts to use compromised accounts to reenter the environment. After containing the incident andregaining and full administrative control over the environment, Microsoft Incident Response collaborates with the customer to help prevent future cyberattacks. 

@@ -1,6 +1,6 @@
 ---
 title: Continuous access evaluation for Microsoft 365 - Microsoft 365 for enterprise
-description: Describes how conditional access evaluation for Microsoft 365 and Microsoft Entra ID proactively terminates active user sessions and enforces tenant policy changes in near real time.
+description: Describes how conditional access evaluation for Microsoft 365 and Microsoft Entra ID proactively terminates active user sessions and enforces policy changes in near real time.
 author: chrisda
 ms.author: chrisda
 manager: dansimp
@@ -20,89 +20,80 @@ ms.collection:
   - highpri
   - tier1
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 01/23/2025
 ---
 
 # Continuous access evaluation for Microsoft 365
 
-Modern cloud services that use OAuth 2.0 for authentication traditionally rely on access token expiration to revoke a user account's access. In practice, this means even if an administrator revokes a user account's access, the user will still have access until the access token expires, which for Microsoft 365 by default, used to be up to an hour after the initial revocation event took place.
+Modern cloud services that use OAuth 2.0 for authentication traditionally rely on access token expiration to revoke user access. Even if an admin revokes access for a user account, the user still has access to services until the access token expires. Before continuous access evaluation, the time frame for expiration was up to one hour.
 
-Continuous access evaluation for Microsoft 365 and Microsoft Entra ID proactively terminates active user sessions and enforces tenant policy changes in near real time instead of relying on access token expiration. Microsoft Entra ID notifies continuous access evaluation-enabled Microsoft 365 services (such as SharePoint, Teams, and Exchange) when the user account or tenant has changed in a way that requires reevaluation of the user account's authentication state.
+Continuous access evaluation for Microsoft 365 and Microsoft Entra ID proactively terminates active user sessions and enforces policy changes in near real time.
 
-When a continuous access evaluation-enabled client such as Outlook tries to access Exchange with an existing access token, the token is rejected by the service, prompting a new Microsoft Entra authentication. The result is near real time enforcement of user account and policy changes.
+Microsoft Entra ID notifies supported Microsoft 365 services when the authentication state of a user account requires reevaluation. When a supported app tries to access a Microsoft 365 service with a revoked access token, the service rejects the token, and the user session is redirected to Microsoft Entra ID for reauthentication. This action is known as *claim challenge*. The result is near real time enforcement of user account and policy changes.
 
-Here are some additional benefits:
+Here are some other benefits of continuous access evaluation:
 
-- For a malicious insider who copies and exports a valid access token outside of your organization, continuous access evaluation prevents usage of this token through Microsoft Entra IP address location policy. With continuous access evaluation, Microsoft Entra ID synchronizes policies down to supported Microsoft 365 services so when an access token attempts to access the service from outside of the IP address range in the policy, the service rejects the token.
+- Prevents using copied/exported tokens via the Microsoft Entra IP address location policy. Microsoft Entra ID synchronizes policies to supported Microsoft 365 services. When an access token attempts to access a service from an IP address range outside the range specified in the policy, the service rejects the token.
 
-- Continuous access evaluation improves resiliency by requiring less token refreshes. Because supporting services receive proactive notifications about requiring reauthentication, Microsoft Entra ID can issue longer-lived tokens, for example, beyond one hour. With longer-lived tokens, clients don't have to request a token refresh from Microsoft Entra ID as often, so the user experience is more resilient.
+- Improves resiliency by requiring less token refreshes. Tokens that last longer (for example, longer than one hour) are available because supported services receive proactive notifications when reauthentication is required. With tokens that last longer, clients don't need to request token refreshes from Microsoft Entra ID as often, so the user experience is more resilient.
 
-Here are some examples of situations where continuous access evaluation improves user access control security:
+Here are some examples where continuous access evaluation improves security for user access control:
 
-- A user account's password has been compromised so an administrator invalidates all existing sessions and resets their password from the Microsoft 365 admin center. In near real time, all existing user sessions with Microsoft 365 services are invalidated.
+- An account password was compromised, so an admin invalidates all existing sessions and resets the account password in the Microsoft 365 admin center. In near real time, all existing user sessions with Microsoft 365 services are invalidated.
 
-- A user working on a document in Word takes their tablet to a public coffee shop that is not in an administrator-defined and approved IP address range. At the coffee shop, the user's access to the document is blocked immediately.
+- A user working on a company Word document takes their tablet to a public coffee shop that isn't in an approved IP address range. At the coffee shop, the user's access to the document is immediately blocked.
 
-For Microsoft 365, continuous access evaluation is currently supported by the:
+Currently, the following Microsoft 365 services and apps support continuous access evaluation:
 
-- Exchange, SharePoint, and Teams services.
-- Outlook, Teams, Office, and OneDrive in a web browser and for the Win32, iOS, Android, and Mac clients.
+- **Services**:
+  - Exchange Online
+  - Microsoft Teams
+  - OneDrive
+  - SharePoint
+- **Apps**: The following apps support continuous access evaluation (claim challenge) on the web, in Windows, Mac, iOS/iPadOS, and Android:
+  - Microsoft Office<sup>\*</sup>
+  - Microsoft Outlook
+  - Microsoft Teams
+  - OneDrive
+  - SharePoint
 
-Microsoft is working on additional Microsoft 365 services and clients to support continuous access evaluation.
+  <sup>\*</sup> Claim challenge isn't supported in Office on the web.
 
-Continuous access evaluation will be included in all versions of Office 365 and Microsoft 365. Configuring Conditional Access policies requires Microsoft Entra ID P1, which is included in all Microsoft 365 versions.
+  For apps that don't support continuous access evaluation, the access token lifetime to Microsoft 365 remains at one hour by default.
 
-> [!NOTE]
-> See [this article](/entra/identity/conditional-access/concept-continuous-access-evaluation#limitations) for the limitations of continuous access evaluation.
+Continuous access evaluation is included in all versions of Office 365 and Microsoft 365. Configuring Conditional Access policies requires Microsoft Entra ID P1, which is included in all Microsoft 365 versions.
+
+> [!TIP]
+> For the limitations of continuous access evaluation, see [this article](/entra/identity/conditional-access/concept-continuous-access-evaluation#limitations).
 
 ## Scenarios supported by Microsoft 365
 
 Continuous access evaluation supports two types of events:
 
-- Critical events are those in which a user should lose access.
-- Conditional Access policy evaluation occurs when a user should lose access to a resource based on an administrator-defined policy.
+- **Critical events**: A user should automatically lose access. For example:
+  - The account is disabled.
+  - The password is changed.
+  - User sessions are revoked.
+  - Multifactor authentication (MFA) is enabled for the user.
+  - The account risk increased based on information from [Microsoft Entra ID Protection](/entra/id-protection/overview-identity-protection)
 
-Critical events include:
+- **Conditional Access policy evaluation**: A user should lose access based on a Conditional Access policy. Conditional Access policy evaluation occurs when the account is no longer connected from a trusted network.
 
-- User account is disabled
-- Password is changed
-- User sessions are revoked
-- Multifactor authentication is enabled for the user
-- Account risk increased based on the evaluation of the access from [Microsoft Entra ID Protection](/entra/id-protection/overview-identity-protection)
+The following Microsoft 365 services currently support continuous access evaluation by listening to events from Microsoft Entra ID:
 
-Conditional Access policy evaluation occurs when the user account is no longer connecting from a trusted network.
-
-The following Microsoft 365 services currently support continuous access evaluation by listening to events from Microsoft Entra ID.
-
-|Enforcement type|Exchange|SharePoint|Teams|
-|---|---|---|---|
+|Enforcement type|Exchange Online|SharePoint|Teams|
+|---|:---:|:---:|:---:|
 |**Critical events:**||||
-|User revocation|Supported|Supported|Supported|
-|User risk|Supported|Not supported|Supported|
+|&nbsp;&nbsp;User revocation|✔|✔|✔|
+|&nbsp;&nbsp;User risk|✔||✔|
 |**Conditional Access policy evaluation:**||||
-|IP address location policy|Supported|Supported\*|Supported\**|
+|&nbsp;&nbsp;IP address location policy|✔|✔¹|✔²|
 
-\* SharePoint Office web browser access supports instant IP policy enforcement by enabling strict mode. Without strict mode, access token lifetime is one hour.
+¹ Web access to SharePoint supports instant IP policy enforcement by enabling strict mode. Without strict mode, access token lifetime is one hour.
 
-\** Calls, meetings, and chat in Teams do not conform to IP-based Conditional Access policies.
+² Calls, meetings, and chats in Teams don't support IP-based Conditional Access policies.
 
-For more information about how to set up a Conditional Access policy, see [this article](/entra/identity/conditional-access/overview).
-
-## Microsoft 365 clients supporting continuous access evaluation
-
-Continuous access evaluation-enabled clients for Microsoft 365 support a claim challenge, which is a redirect of a user session to Microsoft Entra ID for reauthentication, when a cached user token is rejected by a continuous access evaluation-enabled Microsoft 365 service.
-
-The following clients support continuous access evaluation on web, Win32, iOS, Android, and Mac:
-
-- Outlook
-- Teams
-- Office\*
-- SharePoint
-- OneDrive
-
-\* Claim challenge is not supported on Office for web.
-
-For clients that don't support continuous access evaluation, the access token lifetime  to Microsoft 365 remains as one hour by default.
+For more information about how to set up a Conditional Access policy, see [What is Conditional Access?](/entra/identity/conditional-access/overview).
 
 ## See also
 

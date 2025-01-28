@@ -63,7 +63,7 @@ For mobile devices, the following clients are blocked based on the Conditional A
 
 - Exchange ActiveSync clients that use basic authentication.
 - Exchange ActiveSync clients that support modern authentication, but not Intune app protection policies.
-- Devices that support Intune app protection policies, but aren't defined in the policy.
+- Devices that support Intune app protection policies but aren't defined in the policy.
 
 To block ActiveSync connections that use basic authentication on other types of devices (for example, PCs), follow the steps in [Block Exchange ActiveSync on all devices](/entra/identity/conditional-access/policy-all-users-approved-app-or-app-protection#block-exchange-activesync-on-all-devices).
 
@@ -73,7 +73,7 @@ To block ActiveSync connections that use basic authentication on other types of 
 
 You can restrict users on unmanaged devices from downloading email attachments in Outlook on the web (formerly known as Outlook Web App or OWA). Users can view and edit these files using Office Online without leaking and storing the files on the device. You can also block users from even seeing attachments in Outlook on the web on unmanaged devices.
 
-You enforce these restrictions using Outlook on the web mailbox policies in Exchange Online. Every Microsoft 365 organization with Exchange Online mailboxes has a built-in Outlook on the web mailbox policy named OwaMailboxPolicy-Default that's. By default, this policy is applied to all users. Admins can also [create custom policies](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy) that apply to specific groups of users.
+You enforce these restrictions using Outlook on the web mailbox policies in Exchange Online. Every Microsoft 365 organization with Exchange Online mailboxes has a built-in Outlook on the web mailbox policy named OwaMailboxPolicy-Default. By default, this policy is applied to all users. Admins can also [create custom policies](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy) that apply to specific groups of users.
 
 Here are the steps to limit access to email attachments:
 
@@ -113,7 +113,7 @@ Here are the steps to limit access to email attachments:
 
    - **Assignments** section:
      - **Users**: Select appropriate users and groups to include and exclude on the **Include** and **Exclude** tabs.
-     - **Target resources**: **Select what this policies applies to** \> **Resources (formerly cloud apps)** \> **Include** tab \> **Select resources** \> **Select** \> find and select **Office 365 Exchange Online**.
+     - **Target resources**: **Select what this policy applies to** \> **Resources (formerly cloud apps)** \> **Include** tab \> **Select resources** \> **Select** \> find and select **Office 365 Exchange Online**.
 
    - **Access controls** section: **Session** \> select **Use app enforced restrictions**.
 
@@ -127,7 +127,7 @@ Follow the steps to configure this policy in [Manage messaging collaboration acc
 
 ## Set up message encryption
 
-With Microsoft Purview Message Encryption, which uses the protection features in Azure Information Protection, your organization can easily share protected email with anyone on any device. Users can send and receive protected messages with other organizations that use Microsoft 365, Outlook.com, Gmail, and other email services.
+With Microsoft Purview Message Encryption, which uses protection features in Azure Information Protection, your organization can easily share protected email with anyone on any device. Users can send and receive protected messages with other organizations that use Microsoft 365, Outlook.com, Gmail, and other email services.
 
 For more information, see [Set up Message Encryption](/purview/set-up-new-message-encryption-capabilities).
 

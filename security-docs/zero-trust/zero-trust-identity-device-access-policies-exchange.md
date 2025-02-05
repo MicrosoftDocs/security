@@ -3,7 +3,7 @@ title: Secure email recommended policies
 description: Describes the policies for Microsoft recommendations about how to apply email policies and configurations.
 author: chrisda
 ms.author: chrisda
-manager: dansimp
+manager: deniseb
 ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
 audience: Admin
@@ -23,7 +23,7 @@ ms.collection:
   - highpri
   - tier1
 search.appverid: met150
-ms.date: 01/27/2025
+ms.date: 02/05/2025
 ---
 
 # Policy recommendations for securing email
@@ -50,19 +50,26 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 ||[Block clients that don't support modern authentication](zero-trust-identity-device-access-policies-common.md#block-clients-that-dont-support-multifactor-authentication)|Include Exchange Online in the assignment of cloud apps.|
 ||[Apply APP data protection policies](zero-trust-identity-device-access-policies-common.md#app-protection-policies)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
 ||[Require approved apps or app protection policies](zero-trust-identity-device-access-policies-common.md#require-approved-apps-or-app-protection-policies)|Include Exchange Online in the list of cloud apps.|
-||[Block ActiveSync clients]([Block Exchange ActiveSync clients](#block-exchange-activesync-clients))|Add this new policy.|
+||[Verify automatic email forwarding to external recipients is disabled](#verify-automatic-email-forwarding-to-external-recipients-is-disabled)|By default, the default outbound spam policy blocks automatic external email forwarding, but admins can change the setting.|
+||[Block Exchange ActiveSync clients](#block-exchange-activesync-clients)|Add this new policy.|
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps.|
 ||[Require compliant PCs *and* mobile devices](zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps.|
 |**Specialized security**|[*Always* require MFA](zero-trust-identity-device-access-policies-common.md#always-require-mfa)|Include Exchange Online in the assignment of cloud apps.|
 
+## Verify automatic email forwarding to external recipients is disabled
+
+By default, outbound spam policies in Exchange Online Protection (EOP) block automatic email forwarding to external recipients by [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) or by [mailbox forwarding](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (also known as *SMTP forwarding*). For more information, see [Control automatic external email forwarding in Microsoft 365](/defender-office-365/outbound-spam-policies-external-email-forwarding).
+
+In all outbound spam policies, verify the value of the **Automatic forwarding rules** setting is **Automatic - System-controlled** or **Off - Forwarding is disabled** (both values block automatic external email forwarding). A default policy applies to all users, and admins can create custom policies that apply to specific groups of users. For more information, see [Configure outbound spam policies in EOP](/defender-office-365/outbound-spam-policies-configure).
+
 ## Block Exchange ActiveSync clients
 
-ActiveSync is used to synchronize email and calendar data on desktop and mobile devices.
+Exchange ActiveSync synchronizes email and calendar data on desktop and mobile devices.
 
 For mobile devices, the following clients are blocked based on the Conditional Access policy created in [Require approved apps or app protection policies](zero-trust-identity-device-access-policies-common.md#require-approved-apps-or-app-protection-policies):
 
-- Exchange ActiveSync clients that use basic authentication.
-- Exchange ActiveSync clients that support modern authentication, but not Intune app protection policies.
+- ActiveSync clients that use basic authentication.
+- ActiveSync clients that support modern authentication, but not Intune app protection policies.
 - Devices that support Intune app protection policies but aren't defined in the policy.
 
 To block ActiveSync connections that use basic authentication on other types of devices (for example, PCs), follow the steps in [Block Exchange ActiveSync on all devices](/entra/identity/conditional-access/policy-all-users-approved-app-or-app-protection#block-exchange-activesync-on-all-devices).
@@ -107,7 +114,7 @@ Here are the steps to limit access to email attachments:
    Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-5. On the **Conditional Access \| Overview** page in the Microsoft Entra portal at <https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Overview>, [create a new Conditional Access policy](/entra/identity/conditional-access/concept-conditional-access-policies) with the following settings:
+5. On the **Conditional Access \| Overview** page in the Microsoft Entra admin center at <https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Overview>, [create a new Conditional Access policy](/entra/identity/conditional-access/concept-conditional-access-policies) with the following settings:
 
    - **Assignments** section:
      - **Users**: Select appropriate users and groups to include and exclude on the **Include** and **Exclude** tabs.

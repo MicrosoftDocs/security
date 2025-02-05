@@ -114,7 +114,7 @@ Here are the steps to limit access to email attachments:
    Set-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-5. On the **Conditional Access \| Overview** page in the Microsoft Entra portal at <https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Overview>, [create a new Conditional Access policy](/entra/identity/conditional-access/concept-conditional-access-policies) with the following settings:
+5. On the **Conditional Access \| Overview** page in the Microsoft Entra admin center at <https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Overview>, [create a new Conditional Access policy](/entra/identity/conditional-access/concept-conditional-access-policies) with the following settings:
 
    - **Assignments** section:
      - **Users**: Select appropriate users and groups to include and exclude on the **Include** and **Exclude** tabs.

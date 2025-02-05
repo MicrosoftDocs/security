@@ -50,7 +50,7 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 ||[Block clients that don't support modern authentication](zero-trust-identity-device-access-policies-common.md#block-clients-that-dont-support-multifactor-authentication)|Include Exchange Online in the assignment of cloud apps.|
 ||[Apply APP data protection policies](zero-trust-identity-device-access-policies-common.md#app-protection-policies)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
 ||[Require approved apps or app protection policies](zero-trust-identity-device-access-policies-common.md#require-approved-apps-or-app-protection-policies)|Include Exchange Online in the list of cloud apps.|
-||[Block ActiveSync clients]([Block Exchange ActiveSync clients](#block-exchange-activesync-clients))|Add this new policy.|
+||[Block Exchange ActiveSync clients](#block-exchange-activesync-clients)|Add this new policy.|
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps.|
 ||[Require compliant PCs *and* mobile devices](zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps.|
 |**Specialized security**|[*Always* require MFA](zero-trust-identity-device-access-policies-common.md#always-require-mfa)|Include Exchange Online in the assignment of cloud apps.|

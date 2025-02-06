@@ -287,7 +287,7 @@ For more comprehensive threat protection, pilot and deploy Microsoft Defender XD
 
 Microsoft recommends enabling the components of Microsoft 365 in the order illustrated:
 
-:::image type="content" source="../media/copilot/defender-xdr-pilot-deploy-flow.svg" alt-text="Diagram of the process to evaluate and deploy Microsoft Defender XDR components." lightbox="../media/copilot/m365-defender-eval-process.png":::
+:::image type="content" source="../media/copilot/defender-xdr-pilot-deploy-flow.svg" alt-text="Diagram of the process to evaluate and deploy Microsoft Defender XDR components." lightbox="../media/copilot/defender-xdr-pilot-deploy-flow.svg":::
  
 For more information and a description of this illustration, see [Evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview#the-evaluation-process-for-microsoft-365-defender-cyber-security).
 

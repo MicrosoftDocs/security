@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: [copilot-learning-hub]
 ---
 
-# Apply principles of Zero Trust to Microsoft Copilot Chat for web-grounded prompts
+# Apply principles of Zero Trust to Microsoft Copilot Chat
 
 **Summary:** To apply Zero Trust principles to Microsoft Copilot Chat, you need to:
 
@@ -26,15 +26,15 @@ ms.custom: [copilot-learning-hub]
 
 ## Introduction
 
-Copilot Chat is an AI companion in the Microsoft 365 Copilot app, in Edge, and at the following URLs — M365copilot.com and Copilot.cloud.microsoft. It's provided for Entra account users with a [qualifying license](/copilot/manage#microsoft-365--chat-eligibility). Copilot Chat includes enterprise data protection. Enterprise data protection is not included in Copilot Chat for personal use (consumer version). This article helps you implement security protections to keep your organization and data safe while using Copilot Chat. By implementing these protections, you are building a foundation of Zero Trust.
+Copilot Chat is an AI companion in the Microsoft 365 Copilot app, in Edge, and at the following URLs — M365copilot.com and Copilot.cloud.microsoft. It's provided for Entra account users with a [qualifying license](/copilot/manage#microsoft-365--chat-eligibility). Copilot Chat includes enterprise data protection. Enterprise data protection is not included in Copilot Chat for personal use (consumer version). This article helps you implement security protections to keep your organization and data safe while using Copilot Chat. By implementing these protections, you're building a foundation of Zero Trust.
 
 Zero Trust security recommendations for Copilot Chat focus on protection for user accounts, user devices, and your organization data that can be summarized by Copilot Chat in Edge. 
 
 ## How does Zero Trust help with AI?
 
-Security, especially data protection, is often a top concern when introducing AI tools into an organization. Zero Trust is a security strategy that verifies every user, device, and resource request to ensure that each of these is allowed. The term ‘zero trust’ refers to the strategy of treating each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to “never trust, always verify.”
+Security, especially data protection, is often a top concern when introducing AI tools into an organization. Zero Trust is a security strategy that verifies every user, device, and resource request to ensure that each of these is allowed. The term "zero trust" refers to the strategy of treating each connection and resource request as though it originated from an uncontrolled network and a bad actor. Regardless of where the request originates or what resource it accesses, Zero Trust teaches us to “never trust, always verify.”
 
-As a leader in security, Microsoft provides a practical roadmap and clear guidance for implementing Zero Trust. Microsoft’s set of Copilots are built on top of existing platforms, which inherit the protections applied to those platforms. For the details of applying Zero Trust to Microsoft’s platforms, see the [Zero Trust Guidance Center](/security/zero-trust/). By implementing these protections, you are building a foundation of Zero Trust security.
+As a leader in security, Microsoft provides a practical roadmap and clear guidance for implementing Zero Trust. Microsoft’s set of Copilots are built on top of existing platforms, which inherit the protections applied to those platforms. For the details of applying Zero Trust to Microsoft’s platforms, see the [Zero Trust Guidance Center](/security/zero-trust/). By implementing these protections, you're building a foundation of Zero Trust security.
 
 This article draws from that guidance to prescribe the Zero Trust protections that relate to Copilot. 
 
@@ -89,7 +89,7 @@ From the Microsoft Edge sidebar, Microsoft Copilot Chat helps you get answers an
 
 :::image type="content" source="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg" alt-text="Diagram of Web-grounded prompts in Edge with browser tab summarization enabled." lightbox="../media/copilot/microsoft-copilot-edge-summarization-enabled.svg":::
 
-If you disabled browser page summarization, you need to re-enable this. As an admin, you can do this by using the [*EdgeEntraCopilotPageContext*](/copilot/manage#manage--chat-in-edge) group policy setting.
+If you disabled browser page summarization, you need to re-enable this feature. As an admin, you can do this by using the [*EdgeEntraCopilotPageContext*](/copilot/manage#manage--chat-in-edge) group policy setting.
 
 Here are some examples of private or organization web pages and document types that Copilot in Edge can summarize:
 

@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to Microsoft 365 Copilot?
 description: How to apply Zero Trust principles to Microsoft 365 Copilot. 
-ms.date: 04/02/2024
+ms.date: 02/06/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -12,7 +12,7 @@ ms.collection:
   - msftsolution-copilot
   - msftsolution-scenario
   - zerotrust-solution
-  - zerotrust-azure
+  - zerotrust-copilot
   - magic-ai-copilot
 ms.custom: [copilot-learning-hub]
 ---
@@ -83,18 +83,6 @@ To help you make progress, each of the steps in this article is organized in the
 - Next steps with E5 capabilities
 
 
-#### Working with the Microsoft FastTrack team
-If you're working with the [Microsoft FastTrack team](https://www.microsoft.com/fasttrack) to introduce Copilot into your environment, you will become familiar with three stages: Baseline, Core, and Best-in-class. This approach works well with this guidance.
-
-:::image type="content" source="../media/copilot/m365-fasttrack-core-baseline-best.png" alt-text="Diagram that shows the three stages for deploying Microsoft 365 Copilot, recommended by the Microsoft FastTrack team." lightbox="../media/copilot/m365-fasttrack-core-baseline-best.png":::
-
-In the diagram, the Microsoft FastTrack team takes a three-stage approach to deploying Copilot:
-- Baseline — Set up Copilot
-- Core — Get started with the protections in E3
-- Best-in-class — Next steps with E5
-
-For more information on setting up Copilot, see [Get started with Microsoft 365 Copilot](https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-setup).
-
 #### Adapting this guidance for your organization
 
 Because different organizations can be at various stages of deploying Zero Trust protections, in each of these steps:
@@ -104,8 +92,6 @@ Because different organizations can be at various stages of deploying Zero Trust
 
 For the latest Copilot support for security-related and other features of Microsoft 365, see [Copilot requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements).
 
-> [!NOTE]
-> Beginning on January 1, 2024, Copilot will be generally available for Microsoft 365 A3 and A5 faculty. See [this technical community post](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/announcing-updates-to-copilot-for-microsoft-365-availability/ba-p/4007075) for more information.
 
 ## Step 1. Deploy or validate your data protection
 
@@ -301,7 +287,7 @@ For more comprehensive threat protection, pilot and deploy Microsoft Defender XD
 
 Microsoft recommends enabling the components of Microsoft 365 in the order illustrated:
 
-:::image type="content" source="../media/copilot/m365-defender-eval-process.png" alt-text="Diagram of the process to evaluate and deploy Microsoft Defender XDR components." lightbox="../media/copilot/m365-defender-eval-process.png":::
+:::image type="content" source="../media/copilot/defender-xdr-pilot-deploy-flow.svg" alt-text="Diagram of the process to evaluate and deploy Microsoft Defender XDR components." lightbox="../media/copilot/defender-xdr-pilot-deploy-flow.svg":::
  
 For more information and a description of this illustration, see [Evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview#the-evaluation-process-for-microsoft-365-defender-cyber-security).
 

@@ -12,7 +12,7 @@ ms.collection:
   - msftsolution-copilot
   - msftsolution-scenario
   - zerotrust-solution
-  - zerotrust-azure
+  - zerotrust-copilot
   - magic-ai-copilot
 ms.custom: [copilot-learning-hub]
 ---

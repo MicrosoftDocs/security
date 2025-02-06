@@ -12,7 +12,7 @@ ms.collection:
   - msftsolution-copilot
   - msftsolution-scenario
   - zerotrust-solution
-  - zerotrust-azure
+  - zerotrust-copilot
 ---
 
 # Apply principles of Zero Trust to Microsoft Security Copilot

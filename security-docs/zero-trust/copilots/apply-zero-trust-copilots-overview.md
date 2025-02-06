@@ -9,8 +9,9 @@ ms.topic: overview
 ms.collection: 
   - msftsolution-copilot
   - msftsolution-scenario
+  - zerotrust-m365-security
   - zerotrust-solution
-  - zerotrust-azure
+  - zerotrust-copilot
   - magic-ai-copilot
 ---
 

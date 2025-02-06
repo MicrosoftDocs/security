@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to Microsoft Copilot Chat for web-grounded prompts?
 description: How to apply Zero Trust principles to Microsoft Copilot Chat for web-grounded prompts. 
-ms.date: 04/02/2024
+ms.date: 02/06/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter

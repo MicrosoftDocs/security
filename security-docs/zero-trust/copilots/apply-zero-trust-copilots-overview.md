@@ -1,7 +1,7 @@
 ---
 title: Overview - Use Zero Trust security to prepare for AI companions, including Microsoft Copilots
 description: Learn how to apply the principles of Zero Trust to your environment to prepare for AI tools that include Web-grounded prompts, Microsoft 365-grounded prompts, and prompts grounded in data from your security tools.
-ms.date: 04/23/2024
+ms.date: 02/06/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -35,7 +35,7 @@ Microsoft helps you prepare for AI tools and companions and build a Zero Trust f
 
 In the illustration:
 - Web-grounded prompts are issued by Copilot Chat. Microsoft 365 Copilot includes the features of Copilot Chat (for example, when the work/web toggle is set to web). 
-- Microsoft 365-grounded prompts are issued by Microsoft 365 Copilot (for example, when the work/web toggle is set to work).
+- Microsoft 365 graph-grounded prompts are issued by Microsoft 365 Copilot (for example, when the work/web toggle is set to work).
 - Prompts grounded with your security tools are issued by Microsoft Security Copilot. 
 
 ## Get started with Zero Trust by preparing your environment for AI companions

@@ -92,8 +92,6 @@ Because different organizations can be at various stages of deploying Zero Trust
 
 For the latest Copilot support for security-related and other features of Microsoft 365, see [Copilot requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements).
 
-> [!NOTE]
-> Beginning on January 1, 2024, Copilot will be generally available for Microsoft 365 A3 and A5 faculty. See [this technical community post](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/announcing-updates-to-copilot-for-microsoft-365-availability/ba-p/4007075) for more information.
 
 ## Step 1. Deploy or validate your data protection
 

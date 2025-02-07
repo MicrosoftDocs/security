@@ -107,8 +107,8 @@ Microsoft 365 oversharing controls help you:
 - Flag sites so that users can't find them through Copilot or Org-wide search (Restricted Content Discovery)
 
 To get started with oversharing controls, use the following resources:
-- [Illustration and description of oversharing controls you can use with Microsoft 365 Copilot](copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing#oversharing-controls-you-can-use-with-microsoft-365-copilot)
-- [Downloadable blueprint to prevent oversharing](/copilot/microsoft-365/microsoft-365-copilot-blueprint-oversharing)
+- [Illustration and description of oversharing controls you can use with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing#oversharing-controls-you-can-use-with-microsoft-365-copilot)
+- [Downloadable blueprint to prevent oversharing](/microsoft-365-copilot/microsoft-365-copilot-blueprint-oversharing)
 
 ### Microsoft Purview capabilities
 
@@ -129,14 +129,14 @@ Use Data Security Posture Management for AI in conjunction with other Microsoft 
 - Customer Lockbox
 
 For more information, use these resources:
-- [Illustrations for data protection and auditing with Microsoft 365 Copilot](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing)
+- [Illustrations for data protection and auditing with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing)
 - [Microsoft Purview data security and compliance protections for Microsoft Copilot](/purview/ai-microsoft-purview) 
 - [Considerations for deploying Microsoft Purview data security and compliance protections for Copilot](/purview/ai-microsoft-purview-considerations).
 
 ### Getting started with E3
 
-First, apply oversharing controls that work with Copilot, as appropriate for your environment. Note that these controls help you protect data immediately. After doing the longer-term work of classifying data and applying sensitivity labels and protection, be sure to revisit the oversharing controls you applied initially to ensure these are still appropriate. Review the [oversharing illustration](copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing#oversharing-controls-you-can-use-with-microsoft-365-copilot) and 
-[download the blueprint to prevent oversharing](/copilot/microsoft-365/microsoft-365-copilot-blueprint-oversharing).
+First, apply oversharing controls that work with Copilot, as appropriate for your environment. Note that these controls help you protect data immediately. After doing the longer-term work of classifying data and applying sensitivity labels and protection, be sure to revisit the oversharing controls you applied initially to ensure these are still appropriate. Review the [oversharing illustration](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing#oversharing-controls-you-can-use-with-microsoft-365-copilot) and 
+[download the blueprint to prevent oversharing](/microsoft-365-copilot/microsoft-365-copilot-blueprint-oversharing).
 
 Next, invest in data classification and protection with Microsoft Purview capabilities.
 

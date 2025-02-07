@@ -62,8 +62,8 @@ In the diagram:
 - Copilot results for a user contain only data that the user is allowed to access
 
 For additional technical illustrations, see the following articles in the Microsoft 365 Copilot library:
-- [Microsoft 365 Copilot architecture and how it works](/copilot/microsoft-365/microsoft-365-copilot-architecture)
-- [Microsoft 365 Copilot data protection and auditing architecture](copilot/microsoft-365/microsoft-365-copilot-architecture-data-protection-auditing)
+- [Microsoft 365 Copilot architecture and how it works](/microsoft-365-copilot/microsoft-365-copilot-architecture)
+- [Microsoft 365 Copilot data protection and auditing architecture](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing)
 
 ## What’s in this article
 

@@ -89,8 +89,8 @@ To help you make progress, each of the steps in this article is organized in the
 
 Because different organizations can be at various stages of deploying Zero Trust protections, in each of these steps:
 
-- If you're NOT using any of the protections described in the step, take the time to pilot and deploy them prior to assigning Copilot licenses.
-- If you're using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated has been piloted and deployed prior to assigning Copilot licenses.
+- If you're NOT using any of the protections described in the step, take the time to pilot and deploy them before assigning Copilot licenses.
+- If you're using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated has been piloted and deployed before assigning Copilot licenses.
 
 For the latest Copilot support for security-related and other features of Microsoft 365, see [Copilot requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements).
 
@@ -116,7 +116,7 @@ Use Microsoft Purview to mitigate and manage the risks associated with AI usage,
 
 Microsoft Purview Data Security Posture Management (DSPM) for AI provides easy-to-use graphical tools and reports to quickly gain insights into AI use within your organization. One-click policies help you protect your data and comply with regulatory requirements.
 
-Use Data Security Posture Management for AI in conjunction with other Microsoft Purview capabilities to strengthen your data security and compliance for Microsoft 365 Copilot and Microsoft 365 Copilot Chat:
+Use Data Security Posture Management for AI together with other Microsoft Purview capabilities to strengthen your data security and compliance for Microsoft 365 Copilot and Microsoft 365 Copilot Chat:
 
 - Sensitivity labels and content encrypted by Microsoft Purview Information Protection
 - Data classification
@@ -135,7 +135,7 @@ For more information, use these resources:
 
 ### Getting started with E3
 
-First, apply oversharing controls that work with Copilot, as appropriate for your environment. Note that these controls help you protect data immediately. After doing the longer-term work of classifying data and applying sensitivity labels and protection, be sure to revisit the oversharing controls you applied initially to ensure these are still appropriate. Review the [oversharing illustration](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing#oversharing-controls-you-can-use-with-microsoft-365-copilot) and 
+First, apply oversharing controls that work with Copilot, as appropriate for your environment. These controls help you protect data immediately. After doing the longer-term work of classifying data and applying sensitivity labels and protection, be sure to revisit the oversharing controls you applied initially to ensure these are still appropriate. Review the [oversharing illustration](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing#oversharing-controls-you-can-use-with-microsoft-365-copilot) and 
 [download the blueprint to prevent oversharing](/microsoft-365-copilot/microsoft-365-copilot-blueprint-oversharing).
 
 Next, invest in data classification and protection with Microsoft Purview capabilities.

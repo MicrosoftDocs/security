@@ -62,6 +62,17 @@
       href: data-compliance-gov-ransomware-recovery-readiness.md
     - name: Data protection
       href: data-compliance-gov-data.md
+- name: Microsoft Copilots
+  expanded: false
+  items: 
+    - name: Overview
+      href: copilots/apply-zero-trust-copilots-overview.md
+    - name: Zero Trust for Microsoft Copilot
+      href: copilots/zero-trust-microsoft-copilot.md
+    - name: Zero Trust for Microsoft 365 Copilot
+      href: copilots/zero-trust-microsoft-365-copilot.md
+    - name: Zero Trust for Microsoft Security Copilot
+      href: copilots/zero-trust-microsoft-copilot-for-security.md
 - name: Microsoft 365
   expanded: false
   items:
@@ -144,26 +155,6 @@
       - name: Step 7. Implement data loss prevention (DLP) with information protection capabilities
         href: /microsoft-365/solutions/manage-devices-with-intune-dlp-mip?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
         maintainContext: true
-    - name: Pilot and deploy Microsoft Defender XDR
-      items: 
-        - name: Overview
-          href: /defender-xdr/pilot-deploy-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-          maintainContext: true
-        - name: Defender for Identity
-          href: /defender-xdr/pilot-deploy-defender-identity?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-          maintainContext: true
-        - name: Defender for Office 365
-          href: /defender-xdr/pilot-deploy-defender-office-365?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-          maintainContext: true
-        - name: Defender for Endpoint
-          href: /defender-xdr/pilot-deploy-defender-endpoint?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-          maintainContext: true
-        - name: Defender for Cloud Apps
-          href: /defender-xdr/pilot-deploy-defender-cloud-apps?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-          maintainContext: true
-        - name: Investigate and respond to threats 
-          href: /defender-xdr/pilot-deploy-investigate-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-          maintainContext: true
     - name: Deploy a Microsoft information protection solution 
       href: /microsoft-365/compliance/information-protection-solution?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       maintainContext: true
@@ -207,17 +198,46 @@
         href: ingest-data-sources.md
       - name: Step 4. Respond to an incident using Microsoft Sentinel and Microsoft Defender XDR
         href: respond-incident.md
-- name: Microsoft Copilots
-  expanded: false
-  items: 
-    - name: Overview
-      href: copilots/apply-zero-trust-copilots-overview.md
-    - name: Zero Trust for Microsoft Copilot
-      href: copilots/zero-trust-microsoft-copilot.md
-    - name: Zero Trust for Microsoft 365 Copilot
-      href: copilots/zero-trust-microsoft-365-copilot.md
-    - name: Zero Trust for Microsoft Security Copilot
-      href: copilots/zero-trust-microsoft-copilot-for-security.md
+- name: Unified security
+  items:
+  - name: Incident response with integrated SIEM and XDR
+    href: siem-xdr-overview.md
+  - name: Microsoft Sentinel with Microsoft Defender XDR for Zero Trust
+    href: siem-xdr-implement.md
+  - name: Pilot and deploy Microsoft Defender XDR
+    items: 
+      - name: Overview
+        href: /defender-xdr/pilot-deploy-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Defender for Identity
+        href: /defender-xdr/pilot-deploy-defender-identity?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Defender for Office 365
+        href: /defender-xdr/pilot-deploy-defender-office-365?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Defender for Endpoint
+        href: /defender-xdr/pilot-deploy-defender-endpoint?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Defender for Cloud Apps
+        href: /defender-xdr/pilot-deploy-defender-cloud-apps?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+      - name: Investigate and respond to threats 
+        href: /defender-xdr/pilot-deploy-investigate-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        maintainContext: true
+  - name: Integrate with Microsoft Sentinel
+    items:
+    - name: Plan your deployment
+      href: tbd.md
+    - name: Deploy Microsoft Sentinel
+      href: tbd.md
+    - name: Connect Microsoft Sentinel to the Defender portal (optional)
+      href: tbd.md
+    - name: Respond to an incident (Defender portal)
+      href: tbd.md
+    - name: Respond to an incident (Azure portal)
+      href: tbd.md
+    - name: Recommended training for SIEM and XDR (Azure portal)
+      href: tbd.md
 - name: Microsoft Azure services
   expanded: false
   items: 

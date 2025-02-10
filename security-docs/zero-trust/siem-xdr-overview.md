@@ -128,12 +128,16 @@ This solution guides you through implementing Microsoft Sentinel and XDR so your
 Follow these steps to implement Microsoft Sentinel and XDR for a Zero Trust approach:
 
 1. [Plan your deployment, including the workspace you'll use for Microsoft Sentinel](/unified-secops-platform/overview-plan?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json)
-1. [Set up your XDR tools and architect your workspace for Microsoft Sentinel](/unified-secops-platform/overview-deploy?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json). If you plan to work from the Azure portal, skip the step to [Onboard to the Defender portal](/unified-secops-platform/overview-deploy#onboard-to-unified-secops).
-1. If you're working from the Defender portal, [connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
+
+1. [Set up your XDR tools and architect your workspace for Microsoft Sentinel](/unified-secops-platform/overview-deploy?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
+
+    > [!IMPORTANT]
+    > If you plan to work from the Azure portal, skip the step to [connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard). This step is only relevant if you want to use Microsoft's unified SecOps platform in the Defender portal, and is not relevant if you want to respond to incidents in the Azure portal.
+
 1. Then, respond to an incident as follows:
 
-- [Respond to an incident using the Defender portal](respond-incident-defender.md).
-- [Respond to an incident using Microsoft Sentinel in the Azure portal with Microsoft Defender XDR](respond-incident-azure.md).
+    - [Respond to an incident using the Defender portal](respond-incident-defender.md).
+    - [Respond to an incident using Microsoft Sentinel in the Azure portal with Microsoft Defender XDR](respond-incident-azure.md).
 
 ## Related content
 

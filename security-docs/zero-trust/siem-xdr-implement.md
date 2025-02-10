@@ -1,5 +1,5 @@
 ---
-title: Integrate Microsoft Sentinel and Defender XDR
+title: Zero Trust Security with Microsoft Sentinel and Defender XDR
 description: Transform your security posture with Microsoft Sentinel and Defender XDR. Benefit from AI-powered threat detection and incident response for Zero Trust.
 author: batamig
 ms.author: bagol
@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 #customerIntent: 
 ---
 
-# Implementing Microsoft Sentinel and Microsoft Defender XDR for Zero Trust
+# Zero Trust security with Microsoft Sentinel and Defender XDR
 
 Microsoft Defender XDR is an XDR solution that complements Microsoft Sentinel. An XDR pulls raw telemetry data from multiple services like cloud applications, email security, identity, and access management.
 

@@ -92,7 +92,7 @@ In this diagram:
 
 ## Key capabilities
 
-To implement a Zero Trust approach in managing incidents, use these Microsoft Sentinel and XDR features. For workspaces onboarded to the unified SecOps platform, use Microsoft Sentinel in the Defender portal.
+To implement a Zero Trust approach in managing incidents, use these Microsoft Sentinel and XDR features. For workspaces onboarded to the Defender portal, use Microsoft Sentinel in the Defender portal.
 
 Capability or feature | Description | Product |
 :---|:---|:---|
@@ -114,12 +114,12 @@ Capability or feature | Description | Product |
 |[Anomaly rules](/azure/sentinel/work-with-anomaly-rules) | Anomaly rule templates use machine learning to detect specific types of anomalous behavior. | Microsoft Sentinel  |
 |[Scheduled queries](/azure/sentinel/detect-threats-custom) | Built-in rules written by Microsoft security experts that search through logs collected by Microsoft Sentinel for suspicious activity chains, known threats. | Microsoft Sentinel |
 |[Near-real-time (NRT) rules](/azure/sentinel/create-nrt-rules) | NRT rules are limited set of scheduled rules, designed to run once every minute, in order to supply you with information as up-to-the-minute as possible.  | Microsoft Sentinel |
-|[Hunting](/azure/sentinel/hunting) | To help security analysts look proactively for new anomalies that weren't detected by your security apps or even by your scheduled analytics rules, Microsoft Sentinel's built-in hunting queries guide you into asking the right questions to find issues in the data you already have on your network. | Microsoft Sentinel <br><br>For workspaces onboarded to the unified SecOps platform, use the Microsoft Defender portal advanced hunting functionality. |
+|[Hunting](/azure/sentinel/hunting) | To help security analysts look proactively for new anomalies that weren't detected by your security apps or even by your scheduled analytics rules, Microsoft Sentinel's built-in hunting queries guide you into asking the right questions to find issues in the data you already have on your network. | Microsoft Sentinel <br><br>For workspaces onboarded to the Defender portal, use the Microsoft Defender portal advanced hunting functionality. |
 |[Microsoft Defender XDR Connector](/azure/sentinel/connect-microsoft-365-defender) | The Microsoft Defender XDR connector synchronizes logs and incidents to Microsoft Sentinel. | Microsoft Defender XDR and Microsoft Sentinel |
 |[Data connectors](/azure/sentinel/connect-data-sources) | Allow for the ingestion of data for analysis in Microsoft Sentinel. | Microsoft Sentinel |
 |[Content hub solution -Zero Trust (TIC 3.0)](/azure/sentinel/sentinel-solution) | Zero Trust (TIC 3.0) includes a workbook, analytics rules, and a playbook, which provide an automated visualization of Zero Trust principles, cross-walked to the Trust Internet Connections framework, helping organizations to monitor configurations over time. | Microsoft Sentinel  |
 |[Security orchestration, automation, and response (SOAR)](/azure/sentinel/sentinel-soar-content) | Using automation rules and playbooks in response to security threats increases your SOC's effectiveness and saves you time and resources. | Microsoft Sentinel  |
-|[SOC optimizations](/azure/sentinel/soc-optimization/soc-optimization-access) | Close coverage gaps against specific threats and tighten your ingestion rates against data that doesn't provide security value. | Microsoft Sentinel <br><br>For workspaces onboarded to the unified SecOps platform, use SOC optimization in the Microsoft Defender portal. |
+|[SOC optimizations](/azure/sentinel/soc-optimization/soc-optimization-access) | Close coverage gaps against specific threats and tighten your ingestion rates against data that doesn't provide security value. | Microsoft Sentinel <br><br>For workspaces onboarded to the Defender portal, use SOC optimization in the Microsoft Defender portal. |
 
 ## What's in this solution
 
@@ -132,7 +132,7 @@ Follow these steps to implement Microsoft Sentinel and XDR for a Zero Trust appr
 1. [Set up your XDR tools and architect your workspace for Microsoft Sentinel](/unified-secops-platform/overview-deploy?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
 
     > [!IMPORTANT]
-    > If you plan to work from the Azure portal, skip the step to [connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard). This step is only relevant if you want to use Microsoft's unified SecOps platform in the Defender portal, and is not relevant if you want to respond to incidents in the Azure portal.
+    > If you plan to work from the Azure portal, skip the step to [connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard). This step is only relevant if you want to use Microsoft Sentinel Defender portal, and is not relevant if you want to respond to incidents in the Azure portal.
 
 1. Then, respond to an incident as follows:
 

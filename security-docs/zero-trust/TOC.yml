@@ -208,9 +208,9 @@
   - name: Integrate with Microsoft Sentinel
     items:
     - name: Plan your deployment
-      href: tbd.md
+      href: unified-secops-platform/overview-plan
     - name: Deploy Microsoft Sentinel
-      href: tbd.md
+      href: unified-secops-platform/overview-deploy
     - name: Connect Microsoft Sentinel to the Defender portal (optional)
       href: tbd.md
     - name: Respond to an incident (Defender portal)

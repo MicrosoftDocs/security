@@ -123,18 +123,19 @@ Capability or feature | Description | Product |
 
 ## What's in this solution
 
-This solution guides you through implementing Microsoft Sentinel and XDR so your security operations team can effectively remediate incidents using a Zero Trust approach.
+This solution guides you through implementing Microsoft Sentinel and XDR so your security operations team can effectively remediate incidents using a Zero Trust approach. Implementing Microsoft Sentinel and Microsoft Defender XDR for a Zero Trust approach includes the following phases:
 
-Follow these steps to implement Microsoft Sentinel and XDR for a Zero Trust approach:
+1. Start by [piloting Microsoft Defender XDR services](/defender-xdr/pilot-deploy-overview?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json) so you can evaluate their features and capabilities before you complete the deployment across your organization.
 
-1. [Plan your deployment, including the workspace you'll use for Microsoft Sentinel](/unified-secops-platform/overview-plan?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json)
+1. Then, [plan your full SIEM and XDR deployment, including the workspace you'll use for Microsoft Sentinel](/unified-secops-platform/overview-plan?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json)
 
-1. [Set up your XDR tools and architect your workspace for Microsoft Sentinel](/unified-secops-platform/overview-deploy?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
+1. [Set up your XDR tools and architect your workspace for Microsoft Sentinel](/unified-secops-platform/overview-deploy?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
 
-    > [!IMPORTANT]
-    > If you plan to work from the Azure portal, skip the step to [connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard). This step is only relevant if you want to use Microsoft Sentinel Defender portal, and is not relevant if you want to respond to incidents in the Azure portal.
+    In this phase, deploy the XDR services you'll be using across your environment.
 
-1. Then, respond to an incident as follows:
+    If you plan to work from the Azure portal, skip the step to [connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json). This step is only relevant if you want to use Microsoft Sentinel Defender portal, and is not relevant if you want to respond to incidents in the Azure portal.
+
+1. Finally, respond to incidents as follows, depending on whether you onboarded to the Defender portal.:
 
     - [Respond to an incident using the Defender portal](respond-incident-defender.md).
     - [Respond to an incident using Microsoft Sentinel in the Azure portal with Microsoft Defender XDR](respond-incident-azure.md).

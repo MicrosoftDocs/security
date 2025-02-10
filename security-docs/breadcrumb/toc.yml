@@ -44,6 +44,6 @@ items:
   tocHref: /security/
   topicHref: /security/index
   items:
-  - name: "Microsoft's unified SecOps platform"
+  - name: "Zero Trust"
     tocHref: /azure/sentinel/
     topicHref: /security/zero-trust/

@@ -55,11 +55,11 @@ Assume breach | Microsoft Defender XDR continuously scans the environment for 
 
 Microsoft Sentinel customers can use one of these methods to integrate Microsoft Sentinel with Microsoft Defender XDR services:
 
-- Integrate Microsoft Sentinel and Microsoft Defender XDR into a single, unified security operations (SecOps) platform in the Microsoft Defender portal. View Microsoft Sentinel data directly in the Microsoft Defender portal with the rest of your Defender incidents, alerts, vulnerabilities, and other security data.
+- Onboard Microsoft Sentinel to the Defender portal to integrate Microsoft Sentinel and Microsoft Defender XDR into a single, unified security operations (SecOps) platform. View Microsoft Sentinel data directly in the Microsoft Defender portal with the rest of your Defender incidents, alerts, vulnerabilities, and other security data.
 
 - Use Microsoft Sentinel data connectors to ingest Microsoft Defender XDR service data into Microsoft Sentinel. View Microsoft Sentinel data in the Azure portal.
 
-This guidance center provides information for both methods. If you've onboarded your workspace to the unified SecOps platform, work in the Defender portal. If you haven't onboarded your workspace, work in the Azure portal unless otherwise indicated.
+This guidance center provides information for both methods. If you've onboarded your workspace to the Defender portal, work in the Defender portal. If you haven't onboarded your workspace, work in the Azure portal unless otherwise indicated.
 
 ## [Defender portal](#tab/defender-portal)
 
@@ -76,7 +76,7 @@ In this diagram:
 
 ## [Azure portal](#tab/azure-portal)
 
-This illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel.
+This illustration shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel in the Azure portal.
 
 :::image type="content" source="./media/sentinel-xdr.png" alt-text="Diagram of the integration of Microsoft Sentinel and Microsoft XDR." lightbox="./media/sentinel-xdr.png" border="false":::
 
@@ -92,7 +92,7 @@ In this diagram:
 
 ## Key capabilities
 
-To implement a Zero Trust approach in managing incidents, use these Microsoft Sentinel and XDR features. For workspaces onboarded to the Defender portal, use Microsoft Sentinel in the Defender portal.
+To implement a Zero Trust approach in managing incidents, use these Microsoft Sentinel and Defender XDR features. For workspaces onboarded to the Defender portal, use Microsoft Sentinel in the Defender portal.
 
 Capability or feature | Description | Product |
 :---|:---|:---|

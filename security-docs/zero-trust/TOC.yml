@@ -195,23 +195,17 @@
   - name: Pilot and deploy Microsoft Defender XDR
     items: 
       - name: Overview
-        href: /defender-xdr/pilot-deploy-overview?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: /defender-xdr/pilot-deploy-overview?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Defender for Identity
-        href: /defender-xdr/pilot-deploy-defender-identity?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: /defender-xdr/pilot-deploy-defender-identity?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Defender for Office 365
-        href: /defender-xdr/pilot-deploy-defender-office-365?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: /defender-xdr/pilot-deploy-defender-office-365?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Defender for Endpoint
-        href: /defender-xdr/pilot-deploy-defender-endpoint?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: /defender-xdr/pilot-deploy-defender-endpoint?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Defender for Cloud Apps
-        href: /defender-xdr/pilot-deploy-defender-cloud-apps?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: /defender-xdr/pilot-deploy-defender-cloud-apps?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
       - name: Investigate and respond to threats 
-        href: /defender-xdr/pilot-deploy-investigate-respond?bc=%2fsecurity%2fzero-trust%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
-        maintainContext: true
+        href: /defender-xdr/pilot-deploy-investigate-respond?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
   - name: Integrate with Microsoft Sentinel
     items:
     - name: Plan your deployment

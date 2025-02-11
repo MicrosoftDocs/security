@@ -194,25 +194,25 @@
   - name: Pilot and deploy Microsoft Defender XDR
     items: 
       - name: Overview
-        href: /defender-xdr/pilot-deploy-overview?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        href: /defender-xdr/pilot-deploy-overview?toc=/security/zero-trust/toc.json
       - name: Defender for Identity
-        href: /defender-xdr/pilot-deploy-defender-identity?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        href: /defender-xdr/pilot-deploy-defender-identity?toc=/security/zero-trust/toc.json
       - name: Defender for Office 365
-        href: /defender-xdr/pilot-deploy-defender-office-365?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        href: /defender-xdr/pilot-deploy-defender-office-365?toc=/security/zero-trust/toc.json
       - name: Defender for Endpoint
-        href: /defender-xdr/pilot-deploy-defender-endpoint?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        href: /defender-xdr/pilot-deploy-defender-endpoint?toc=/security/zero-trust/toc.json
       - name: Defender for Cloud Apps
-        href: /defender-xdr/pilot-deploy-defender-cloud-apps?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        href: /defender-xdr/pilot-deploy-defender-cloud-apps?toc=/security/zero-trust/toc.json
       - name: Investigate and respond to threats 
-        href: /defender-xdr/pilot-deploy-investigate-respond?bc=%2fsecurity%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fzero-trust%2ftoc.json
+        href: /defender-xdr/pilot-deploy-investigate-respond?toc=/security/zero-trust/toc.json
   - name: Integrate with Microsoft Sentinel
     items:
     - name: Plan your deployment
-      href: /unified-secops-platform/overview-plan
+      href: /unified-secops-platform/overview-plan?toc=/security/zero-trust/toc.json
     - name: Deploy Microsoft Defender XDR and Microsoft Sentinel
-      href: /unified-secops-platform/overview-deploy
+      href: /unified-secops-platform/overview-deploy?toc=/security/zero-trust/toc.json
     - name: Connect Microsoft Sentinel to the Defender portal (optional)
-      href: /defender-xdr/microsoft-sentinel-onboard
+      href: /defender-xdr/microsoft-sentinel-onboard?toc=/security/zero-trust/toc.json
     - name: Respond to an incident (Defender portal)
       href: respond-incident-defender.md
     - name: Respond to an incident (Azure portal)

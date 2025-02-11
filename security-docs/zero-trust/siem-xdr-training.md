@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 This article lists recommended training modules for using Microsoft Sentinel with Microsoft Defender XDR and Microsoft Defender for Cloud, an XDR solution for Zero Trust.
 
-Training content doesn't currently cover the unified security operations platform.
+Training content doesn't currently cover scenarios where Microsoft Sentinel is onboarded to the Defender portal.
 
 ## Feature coverage
 

@@ -214,11 +214,11 @@
     - name: Connect Microsoft Sentinel to the Defender portal (optional)
       href: /defender-xdr/microsoft-sentinel-onboard
     - name: Respond to an incident (Defender portal)
-      href: tbd.md
+      href: respond-incident-defender.md
     - name: Respond to an incident (Azure portal)
-      href: tbd.md
+      href: respond-incident-azure.md
     - name: Recommended training for SIEM and XDR (Azure portal)
-      href: tbd.md
+      href: siem-xdr-training.md
 - name: Microsoft Azure services
   expanded: false
   items: 

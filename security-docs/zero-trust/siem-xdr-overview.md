@@ -125,44 +125,36 @@ Capability or feature | Description | Product |
 
 This solution guides you through implementing Microsoft Sentinel and XDR so your security operations team can effectively remediate incidents using a Zero Trust approach. Implementing Microsoft Sentinel and Microsoft Defender XDR for a Zero Trust approach includes the following phases:
 
-1. Start by [piloting Microsoft Defender XDR services](/defender-xdr/pilot-deploy-overview?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json) so you can evaluate their features and capabilities before you complete the deployment across your organization.
 
-1. Then, [plan your full SIEM and XDR deployment, including the workspace you'll use for Microsoft Sentinel](/unified-secops-platform/overview-plan?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json)
+|Phase  |Description  |
+|---------|---------|
+|1. [Pilot and deploy Microsoft Defender XDR services](/defender-xdr/pilot-deploy-overview?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json)     |  Start by piloting Microsoft Defender XDR services so you can evaluate their features and capabilities before you complete the deployment across your organization.       |
+|2. [Plan your deployment](/unified-secops-platform/overview-plan?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json)     |  Then, plan your full SIEM and XDR deployment, including the XDR services you want to use and the workspace you'll use for Microsoft Sentinel.       |
+|3. [Set up XDR tools and architect your workspace](/unified-secops-platform/overview-deploy?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json)     |   In this phase, deploy the XDR services you decided to use across your environment, deploy Microsoft Sentinel and other services to support your SIEM and XDR solution.  <br><br>    If you plan to work from the Azure portal, skip the step to [connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json). This step is only relevant if you want to use Microsoft Sentinel Defender portal, and is not relevant if you want to respond to incidents in the Azure portal.    |
+|4. Respond to incidents     |  Finally, respond to incidents as follows, depending on whether you onboarded to the Defender portal:    <br>    - [Respond to an incident from the Defender portal](respond-incident-defender.md) <br> - [Respond to an incident from the Azure portal](respond-incident-azure.md)   |
 
-1. [Set up your XDR tools and architect your workspace for Microsoft Sentinel](/unified-secops-platform/overview-deploy?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
-
-    In this phase, deploy the XDR services you'll be using across your environment.
-
-    If you plan to work from the Azure portal, skip the step to [connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard?bc=/security/breadcrumb/toc.json&toc=/security/zero-trust/toc.json). This step is only relevant if you want to use Microsoft Sentinel Defender portal, and is not relevant if you want to respond to incidents in the Azure portal.
-
-1. Finally, respond to incidents as follows, depending on whether you onboarded to the Defender portal.:
-
-    - [Respond to an incident using the Defender portal](respond-incident-defender.md).
-    - [Respond to an incident using Microsoft Sentinel in the Azure portal with Microsoft Defender XDR](respond-incident-azure.md).
 
 ## Related content
 
-For more information, see [implementing Microsoft Sentinel and Microsoft Defender XDR for Zero Trust](siem-xdr-implement.md).
+For more information, see [Zero Trust security with Microsoft Sentinel and Defender XDR](siem-xdr-implement.md), as well as the following content, depending on the portal you're working in:
 
 
 ## [Defender portal](#tab/defender-portal)
 
 For more information about applying Zero Trust principles in Microsoft 365, see:
 
-- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
-- [Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
-- [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
-- [Manage devices with Microsoft Intune](/microsoft-365/solutions/manage-devices-with-intune-overview?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
-- [Pilot and deploy Microsoft Defender XDR](/defender-xdr/pilot-deploy-overview?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
-- [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](/microsoft-365/solutions/data-privacy-protection?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
-- [Integrate SaaS apps for Zero Trust with Microsoft 365](integrate-saas-apps.md).
+- [Zero Trust deployment plan with Microsoft 365](/microsoft-365/security/microsoft-365-zero-trust?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json)
+- [Deploy your identity infrastructure for Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json)
+- [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md)
+- [Manage devices with Microsoft Intune](/microsoft-365/solutions/manage-devices-with-intune-overview?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json)
+- [Manage data privacy and data protection with Microsoft Priva and Microsoft Purview](/microsoft-365/solutions/data-privacy-protection?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json)
+- [Integrate SaaS apps for Zero Trust with Microsoft 365](integrate-saas-apps.md)
 
 ## [Azure portal](#tab/azure-portal)
 
-For more information, see [Recommended training for SIEM and XDR](siem-xdr-training.md).
-
 For more information about applying Zero Trust principles to Azure, see:
 
+- [Recommended training for SIEM and XDR](siem-xdr-training.md)
 - [Azure IaaS overview](/security/zero-trust/azure-infrastructure-overview)
 - [Azure storage](/security/zero-trust/azure-infrastructure-storage)
 - [Virtual machines](/security/zero-trust/azure-infrastructure-virtual-machines)

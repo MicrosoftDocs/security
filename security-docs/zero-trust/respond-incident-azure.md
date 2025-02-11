@@ -14,6 +14,7 @@ ms.collection:
   - usx-security
 appliesto: 
     - Microsoft Sentinel in the Azure portal
+
 #customerIntent: As a security analyst using Microsoft Sentinel in the Azure portal, I want to understand how to respond to an incident within a Zero Trust architecture, using both Microsoft Sentinel and Microsoft Defender XDR, to minimize impact and ensure quick recovery.
 ---
 

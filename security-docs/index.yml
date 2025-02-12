@@ -37,7 +37,7 @@ sections:
           componentType: link
           url: /credentials/applied-skills/defend-against-cyberthreats-with-microsoft-defender-xdr/
           text: Earn your credential
-      - avatarUrl: /security/media/hubpage/video-icon.png
+      - avatarUrl: /security/media/hubpage/watch-icon.png
         componentType: testimonial-card
         name: Microsoft Security Copilot Flight School
         role: Video
@@ -181,7 +181,7 @@ sections:
     summary: Showcase your advanced cybersecurity skills with Microsoft Credentials for Security. Whether you want verifiable skill sets aligned to security job roles or specific to security projects, Microsoft Certifications and Microsoft Applied Skills are complementary credentials that can help you and your organization take on new opportunities. Explore Certifications, like Security Operations Analyst or Cybersecurity Architect, and check out Applied Skills for real-world scenarios that use Microsoft Sentinel or Microsoft Defender. 
     links:
       - componentType: link
-        url: /credentials/browse/?subjects=security
+        url: https://aka.ms/CredentialsforSecurity
         text: Explore all credentials
 
 # Plans for specialized skills

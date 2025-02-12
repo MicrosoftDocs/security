@@ -37,33 +37,33 @@ sections:
           componentType: link
           url: /credentials/applied-skills/defend-against-cyberthreats-with-microsoft-defender-xdr/
           text: Earn your credential
-      - avatarUrl: /security/media/hubpage/generic-trophy.svg
+      - avatarUrl: /security/media/hubpage/video-icon.png
         componentType: testimonial-card
-        name: Implement Microsoft Purview Insider Risk Management
+        name: Microsoft Security Copilot Flight School
+        role: Video
+        feedback: Learn what generative AI is and how to use Copilot to quickly analyze and mitigate threats using natural language to empower your security and IT teams to protect at the speed and scale of AI.
+        link:
+          componentType: link
+          url: /shows/microsoft-security-copilot-flight-school/
+          text: Watch now
+      - avatarUrl: /security/media/hubpage/generic-badge.png
+        componentType: testimonial-card
+        name: Identify and mitigate AI data security risks
         role: Training
-        feedback: Learn to effectively detect, investigate, and respond to internal risks while protecting data, ensuring compliance, and maintaining employee trust.
+        feedback: Learn how to monitor AI activity, enforce security policies, and prevent unauthorized data exposure with Data Security Posture Management.
         link:
           componentType: link
-          url: /training/paths/purview-implement-insider-risk-management/
-          text: Start the learning path
-      - avatarUrl: /security/media/hubpage/video-icon.png
+          url: /training/modules/purview-identify-mitigate-ai-risks/?wt.mc_id=securityhub_DSPM_webpage_sci
+          text: Start now
+      - avatarUrl: /security/media/hubpage/certification.png
         componentType: testimonial-card
-        name: Defender for Cloud in the field
-        role: Video
-        feedback: Turn possibility into reality with simplified cloud security posture management and workload protection with Microsoft Defender for Cloud.
+        name: Validate your critical information security skills
+        role: Blog
+        feedback: Earn the new Microsoft Certification and become part of your team's cybersecurity solution.
         link:
           componentType: link
-          url: /shows/mdc-in-the-field/
-          text: Watch now
-      - avatarUrl: /security/media/hubpage/video-icon.png
-        componentType: testimonial-card
-        name: Microsoft Sentinel & Defender XDR Virtual Ninja Training
-        role: Video
-        feedback: This training, based on the Ninja blogs, brings you up-to-date quickly on all things Microsoft Defender XDR.
-        link:
-          componentType: link
-          url: /shows/microsoft-sentinel-defender-xdr-virtual-ninja-training/
-          text: Watch now
+          url: https://techcommunity.microsoft.com/blog/microsoftlearnblog/validate-critical-information-security-skills-with-our-new-certification/3719269?wt.mc_id=securityhub_sc401_webpage_sci
+          text: Get certified
     backgroundImage:
       lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
       darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png

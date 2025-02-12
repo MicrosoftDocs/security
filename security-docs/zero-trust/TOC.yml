@@ -185,7 +185,7 @@
         href: create-policies.md
       - name: Step 3. Deploy information protection for SaaS Apps
         href: deploy-information-protection-saas.md
-- name: Unified security
+- name: Microsoft Defender XDR and Microsoft Sentinel
   items:
   - name: Incident response with integrated SIEM and XDR
     href: siem-xdr-overview.md

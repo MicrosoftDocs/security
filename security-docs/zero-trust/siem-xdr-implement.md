@@ -18,14 +18,14 @@ appliesto:
     - Microsoft Sentinel in the Azure portal
 ms.localizationpriority: medium
 
-#customerIntent: 
+#customerIntent: As a security analyst, I want to use Microsoft Sentinel and Defender XDR for incident response so that I can effectively detect and mitigate threats under a Zero Trust model.
 ---
 
-# Zero Trust security with Microsoft Sentinel and Defender XDR
+# Zero trust security with Microsoft Sentinel and Defender XDR
 
 Microsoft Defender XDR is an XDR solution that complements Microsoft Sentinel. An XDR pulls raw telemetry data from multiple services like cloud applications, email security, identity, and access management.
 
-Using artificial intelligence (AI) and machine learning, the XDR performs automatic analysis, investigation, and response in real time. The XDR solution also correlates security alerts into larger incidents, providing security teams greater visibility into attacks, and provides incident prioritization, helping analysts understand the risk level of the threat.
+Using artificial intelligence (AI) and machine learning, the XDR performs automatic analysis, investigation, and real-time response. It also correlates security alerts into larger incidents, giving security teams greater visibility into attacks and prioritizing incidents to help analysts gauge threat risk levels.
 
 With Microsoft Sentinel, you can connect to many security sources using built-in connectors and industry standards. With its AI, you can correlate multiple low-fidelity signals spanning multiple sources to create a complete view of the ransomware kill chain and prioritized alerts.
 
@@ -52,7 +52,7 @@ If you onboarded your Microsoft Sentinel workspace to the Defender portal, SIEM 
 
 ## Incident response using Microsoft Sentinel and Microsoft Defender XDR
 
-Now that we've seen how a common attack takes place, let's look into using Microsoft Sentinel and Microsoft Defender XDR for incident response.
+After observing a common attack, use Microsoft Sentinel and Microsoft Defender XDR for incident response.
 
 Select the relevant tab for your workspace depending on whether you onboarded it to the Defender portal.
 

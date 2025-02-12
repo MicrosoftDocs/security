@@ -1,5 +1,5 @@
 ---
-title: Respond to incidents from the Azure portal
+title: Respond to Incidents from the Azure Portal
 description: Learn how to resolve an incident using both Microsoft Sentinel in the Azure portal and Microsoft Defender XDR, including triage, investigation, and resolution. 
 ms.date: 01/26/2025
 ms.service: microsoft-365-zero-trust
@@ -20,23 +20,22 @@ appliesto:
 
 # Respond to an incident using Microsoft Sentinel in the Azure portal with Microsoft Defender XDR
 
-This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel in the Azure portal and Microsoft Defender XDR, which includes triage, investigation, and resolution. Microsoft Sentinel and Microsoft Defender XDR share:
+This article explains how to resolve security incidents using Microsoft Sentinel in the Azure portal and Microsoft Defender XDR. Learn step-by-step guidance on triage, investigation, and resolution to ensure rapid incident response.
 
 - Updates on lifecycle (status, owner, classification) are shared between the products.
 - Evidence gathered during an investigation is shown in the Microsoft Sentinel incident.
 
-For more information about the integration of Microsoft Defender with Microsoft Sentinel, see [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration). This [interactive guide](https://mslearn.cloudguides.com/guides/Investigate%20security%20incidents%20in%20a%20hybrid%20environment%20with%20Azure%20Sentinel)
-steps you through detecting and responding to modern attacks with Microsoft’s unified security information and event management (SIEM) and extended detection and response (XDR) capabilities.
+For more information about the integration of Microsoft Defender with Microsoft Sentinel, see [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration). This [interactive guide](https://mslearn.cloudguides.com/guides/Investigate%20security%20incidents%20in%20a%20hybrid%20environment%20with%20Azure%20Sentinel) steps you through detecting and responding to modern attacks with Microsoft’s unified security information and event management (SIEM) and extended detection and response (XDR) capabilities.
 
 ## Incident triage
 
-Start your triage in the Azure portal with Microsoft Sentinel to understand the details of the incident and taking immediate actions. On the **Incidents** page, locate the suspected incident, and update details like owner name, status, severity, or add comments. Drill down to more details to continue your investigation.
+Start triage in the Azure portal with Microsoft Sentinel to review incident details and take immediate action. On the **Incidents** page, locate the suspected incident and update details like owner name, status, and severity or add comments. Drill down for additional information to continue your investigation.
 
 For more information, see [Navigate, triage, and manage Microsoft Sentinel incidents in the Azure portal](/azure/sentinel/incident-navigate-triage)
 
 ## Incident investigation
 
-While we recommend using the Azure portal as your primary incident response tool, jump to the Defender portal for more detailed investigation.
+Use the Azure portal as your primary incident response tool, then switch to the Defender portal for more detailed investigation.
 
 For example:
 
@@ -53,23 +52,23 @@ For more information, see:
 
 ## Automation with Microsoft Sentinel
 
-Make sure to take advantage of Microsoft Sentinel's playbook and automation rule functionality:
+Use Microsoft Sentinel's playbook and automation rule functionality:
 
-- **A playbook** is a collection of investigation and remediation actions that can be run from the Microsoft Sentinel portal as a routine. Playbooks can help automate and orchestrate your threat response. They can be run manually on-demand on incidents, entities, and alerts, or set to run automatically in response to specific alerts or incidents, when triggered by an automation rule. For more information, see [Automate threat response with playbooks](/azure/sentinel/automate-responses-with-playbooks).
+- **A playbook** is a collection of investigation and remediation actions that you run from the Microsoft Sentinel portal as a routine. Playbooks help automate and orchestrate your threat response. They run manually on incidents, entities, or alerts, or automatically when triggered by an automation rule. For more information, see [Automate threat response with playbooks](/azure/sentinel/automate-responses-with-playbooks).
 
-- **Automation rules** are a way to centrally manage automation in Microsoft Sentinel, by allowing you to define and coordinate a small set of rules that can apply across different scenarios. For more information, see [Automate threat response in Microsoft Sentinel with automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules).
+- **Automation rules** let you centrally manage automation in Microsoft Sentinel by defining and coordinating a small set of rules that apply across different scenarios. For more information, see [Automate threat response in Microsoft Sentinel with automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules).
 
 ## Incident resolution
 
-When your investigation has reached its conclusion and you have remediated the incident within the portals, make sure to resolve the incident. For more information, see [Closing an incident in the Azure portal](/azure/sentinel/incident-navigate-triage#close-an-incident).
+When your investigation concludes and you have fixed the incident in the portals, resolve it. For more information, see [Closing an incident in the Azure portal](/azure/sentinel/incident-navigate-triage#close-an-incident).
 
-As needed, report the incident to your incident response lead for possible follow-up to determine more actions. For example:
+Report the incident to your incident response lead for potential follow-up actions. For example:
 
 - Inform your Tier 1 security analysts to better detect the attack early.
 - Research the attack in Microsoft Defender XDR Threat Analytics and the security community for a security attack trend.
-- As needed, record the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks.
+- Record the workflow used to resolve the incident and update your standard workflows, processes, policies, and playbooks.
 - Determine whether changes in your security configuration are needed and implement them.
-- Create an orchestration playbook to automate and orchestrate your threat response for a similar risk in the future. For more information, see [Automate threat response with playbooks in Microsoft Sentinel](/azure/sentinel/automate-responses-with-playbooks).
+- Create an orchestration playbook to automate your threat response for similar risks. For more information, see [Automate threat response with playbooks in Microsoft Sentinel](/azure/sentinel/automate-responses-with-playbooks).
 
 ## Related content
 

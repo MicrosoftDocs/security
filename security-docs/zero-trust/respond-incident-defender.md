@@ -1,6 +1,6 @@
 ---
-title: Respond to an incident using the Defender portal.
-description: Learn how to resolve an incident using Microsoft Sentinel and Microsoft Defender XDR, including triage, investigation, and resolution in the Defender portal.
+title: Incident Response -- Resolve Incidents in the Microsoft Defender Portal.
+description: This article provides incident response guidance using Microsoft Sentinel in the Defender portal, covering triage, investigation, and resolution.
 ms.date: 01/23/2025
 ms.service: microsoft-365-zero-trust
 author: batamig
@@ -20,11 +20,11 @@ appliesto:
 
 # Respond to an incident using the Defender portal
 
-This article provides a general set of steps and procedures to resolve an incident using Microsoft Sentinel in the Defender portal, from triage, to investigation, and resolution.
+This article explains how to respond to an incident using Microsoft Sentinel in the Defender portal, covering triage, investigation, and resolution.
 
 ## Prerequisites
 
-To investigate incidents from the Defender portal:
+Investigate incidents in the Defender portal:
 
 - Your Log Analytics workspace used for Microsoft Sentinel must be onboarded to the Defender portal. For more information, see [Connect Microsoft Sentinel to the Microsoft Defender portal](/defender-xdr/microsoft-sentinel-onboard?toc=/security/zero-trust/integrate/TOC.json?bc=/security/zero-trust/breadcrumb/toc.json&toc=/security/zero-trust/toc.json).
 
@@ -32,7 +32,7 @@ To investigate incidents from the Defender portal:
 
 When working in the Defender portal, do your initial triage, resolution, and follow-up steps as you would otherwise. When investigating, make sure to:
 
-- Understand the incident and its scope and reviewing asset timelines.
+- Understand the incident and its scope by reviewing asset timelines.
 - Review self-healing pending actions, manually remediate entities, and perform live response.
 - Add prevention measures.
 
@@ -64,7 +64,7 @@ After onboarding your Microsoft Sentinel workspace to the unified security opera
 After you've resolved the incident, report the incident to your incident response lead for possible follow-up to determine more actions. For example:
 
 - Inform your Tier 1 security analysts to better detect the attack early.
-- Research the attack in Microsoft Defender XDR Threat Analytics and the security community for a security attack trend. For more information, see [Threat analytics in Microsoft Defender XDR](/microsoft-365/security/defender/threat-analytics))
+- Research the attack in Microsoft Defender XDR Threat Analytics and the security community for a security attack trend. For more information, see [Threat analytics in Microsoft Defender XDR](/microsoft-365/security/defender/threat-analytics).
 - As needed, record the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks.
 - Determine whether changes in your security configuration are needed and implement them.
 - Create an orchestration playbook to automate and orchestrate your threat response for a similar risk in the future. For more information, see [Automate threat response with playbooks in Microsoft Sentinel](/azure/sentinel/automate-responses-with-playbooks).

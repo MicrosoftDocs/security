@@ -46,7 +46,7 @@ sections:
           componentType: link
           url: /shows/microsoft-security-copilot-flight-school/
           text: Watch now
-      - avatarUrl: /security/media/hubpage/generic-badge.png
+      - avatarUrl: /security/media/hubpage/generic-badge.svg
         componentType: testimonial-card
         name: Identify and mitigate AI data security risks
         role: Training

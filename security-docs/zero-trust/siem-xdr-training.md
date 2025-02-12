@@ -1,5 +1,5 @@
 ---
-title: Recommended Training for SIEM and XDR (Azure Portal)
+title: Recommended Training for SIEM and XDR (Azure portal)
 description: Learn about recommended training modules for using Microsoft Sentinel with Microsoft Defender XDR and Microsoft Defender for Cloud, an XDR solution for Zero Trust, in the Azure portal.
 author: batamig
 ms.author: bagol
@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 # Recommended training for SIEM and XDR from the Azure portal
 
-This article lists recommended training modules for using Microsoft Sentinel with Microsoft Defender XDR and Microsoft Defender for Cloud, an XDR solution for zero trust.
+This article lists recommended training modules for using Microsoft Sentinel with Microsoft Defender XDR and Microsoft Defender for Cloud, an XDR solution for Zero Trust.
 
 Training content doesn't currently cover scenarios where Microsoft Sentinel is onboarded to the Defender portal.
 

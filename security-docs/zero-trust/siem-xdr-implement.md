@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 #customerIntent: As a security analyst, I want to use Microsoft Sentinel and Defender XDR for incident response so that I can effectively detect and mitigate threats under a Zero Trust model.
 ---
 
-# Zero trust security with Microsoft Sentinel and Defender XDR
+# Zero Trust security with Microsoft Sentinel and Defender XDR
 
 Microsoft Defender XDR is an XDR solution that complements Microsoft Sentinel. An XDR pulls raw telemetry data from multiple services like cloud applications, email security, identity, and access management.
 

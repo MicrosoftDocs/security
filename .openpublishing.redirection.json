@@ -1,567 +1,574 @@
-{ 
-    "redirections": [
-      {
-        "source_path": "security-docs/zero-trust/isv/fido2-hardware-vendor.md",
-        "redirect_url": "/active-directory/authentication/fido2-hardware-vendor",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/solving-tls1-problem.md",
-        "redirect_url": "/security/engineering/solving-tls1-problem",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/failure-modes-in-machine-learning.md",
-        "redirect_url": "/security/engineering/failure-modes-in-machine-learning",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/threat-modeling-aiml.md",
-        "redirect_url": "/security/engineering/threat-modeling-aiml",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/compass/applications-and-cloud-services-videos-and-decks.md",
-        "redirect_url": "/security/compass/overview",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/bug-bar-aiml.md",
-        "redirect_url": "/security/engineering/bug-bar-aiml",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/securing-artificial-intelligence-machine-learning.md",
-        "redirect_url": "/security/engineering/securing-artificial-intelligence-machine-learning",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/disable-legacy-tls.md",
-        "redirect_url": "/security/engineering/disable-legacy-tls",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/compass/howto-azure-managed-workstation.md",
-        "redirect_url": "/security/compass/privileged-access-deployment",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/zero-trust/develop/integrate-apps-with-azure-ad-microsoft-identity-platform.md",
-        "redirect_url": "/security/zero-trust/develop/integrate-apps-microsoft-identity-platform",
-        "redirect_document_id": true
-      },
-
-      {
-        "source_path": "security-docs/zero-trust/isv/secure-hybrid-access.md",
-        "redirect_url": "/azure/active-directory/manage-apps/secure-hybrid-access-integrations",
-        "redirect_document_id": false
-      },
-
-      {
-        "source_path": "security-docs/zero-trust/isv/identity-isv-integration-overview.md",
-        "redirect_url": "../integrate/identity",
-        "redirect_document_id": false
-      },
-
-      {
-        "source_path": "security-docs/zero-trust/isv/identity-isv-getting-started.md",
-        "redirect_url": "../integrate/identity",
-        "redirect_document_id": false
-      },
-
-      {
-        "source_path": "security-docs/zero-trust/applications.md",
-        "redirect_url": "deploy/applications",
-        "redirect_document_id": false
-      },
-
-      {
-        "source_path": "security-docs/zero-trust/data.md",
-        "redirect_url": "deploy/data",
-        "redirect_document_id": false
-      },
-
-      {
-        "source_path": "security-docs/zero-trust/endpoints.md",
-        "redirect_url": "deploy/endpoints",
-        "redirect_document_id": false
-      },
-
-      {
-        "source_path": "security-docs/zero-trust/identity.md",
-        "redirect_url": "deploy/identity",
-        "redirect_document_id": false
-      },
-
-      {
-        "source_path": "security-docs/zero-trust/infrastructure.md",
-        "redirect_url": "deploy/infrastructure",
-        "redirect_document_id": false
-      },
-
-      {
-        "source_path": "security-docs/zero-trust/networks.md",
-        "redirect_url": "deploy/networks",
-        "redirect_document_id": false
-      },
-
-      {
-        "source_path": "security-docs/zero-trust/visibility-automation-orchestration.md",
-        "redirect_url": "deploy/visibility-automation-orchestration",
-        "redirect_document_id": false
-      },
-
-      {
-        "source_path": "security-docs/zero-trust/identity-developer.md",
-        "redirect_url": "develop/identity",
-        "redirect_document_id": false
-      },
-
-      {
-        "source_path": "security-docs/compass/backup-plan-to-protect-against-ransomware.md",
-        "redirect_url": "/azure/security/fundamentals/backup-plan-to-protect-against-ransomware",
-        "redirect_document_id": false
-      },
-
-      {
-         "source_path": "security-docs/compass/governance.md",
-         "redirect_url": "/azure/architecture/framework/security/design-governance",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/governance-risk-compliance-capabilities.md",
-         "redirect_url": "https://azure.microsoft.com/solutions/governance/#solution-overview",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/security-operations.md",
-         "redirect_url": "/security/operations/overview",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/security-operations-capabilities.md",
-         "redirect_url": "/security/operations/overview",
-         "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/cybersecurity-reference-architecture/MCRA.md",
-        "redirect_url": "/security/adoption/mcra",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/ciso-workshop/adoption.md",
-        "redirect_url": "/security/adoption/adoption",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/ciso-workshop/ciso-workshop-module-1.md",
-        "redirect_url": "/security/adoption/ciso-workshop-module-1",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/ciso-workshop/ciso-workshop-module-2.md",
-        "redirect_url": "/security/adoption/ciso-workshop-module-2",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/ciso-workshop/ciso-workshop-module-3.md",
-        "redirect_url": "/security/adoption/ciso-workshop-module-3",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/ciso-workshop/ciso-workshop-module-4a.md",
-        "redirect_url": "/security/adoption/ciso-workshop-module-4a",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/ciso-workshop/ciso-workshop-module-4b.md",
-        "redirect_url": "/security/adoption/ciso-workshop-module-4b",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/ciso-workshop/ciso-workshop-module-5.md",
-        "redirect_url": "/security/adoption/ciso-workshop-module-5",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/ciso-workshop/ciso-workshop.md",
-        "redirect_url": "/security/adoption/ciso-workshop",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/ciso-workshop/the-ciso-workshop-videos.md",
-        "redirect_url": "/security/adoption/the-ciso-workshop-videos",
-        "redirect_document_id": true
-      },
-      {
-        "source_path": "security-docs/ciso-workshop/the-ciso-workshop.md",
-        "redirect_url": "/security/adoption/the-ciso-workshop",
-        "redirect_document_id": true
-      },  
-      {
-         "source_path": "security-docs/SDL/Cryptographic-Recommendations.md",
-         "redirect_url": "/security/engineering/Cryptographic-Recommendations",
-         "redirect_document_id": true
-      },
-      {
-         "source_path": "security-docs/SDL/Security-Bug-Bar-sample.md",
-         "redirect_url": "/security/engineering/Security-Bug-Bar-sample",
-         "redirect_document_id": true
-      },
-      {
-         "source_path": "security-docs/GSP/ContentTransparencyCenters.md",
-         "redirect_url": "/security/engineering/ContentTransparencyCenters",
-         "redirect_document_id": true
-      },
-      {
-         "source_path": "security-docs/GSP/InformationSharingAndExchange.md",
-         "redirect_url": "/security/engineering/InformationSharingAndExchange",
-         "redirect_document_id": true
-      },
-      {
-         "source_path": "security-docs/GSP/OnlineSources.md",
-         "redirect_url": "/security/engineering/OnlineSources",
-         "redirect_document_id": true
-      },
-      {
-         "source_path": "security-docs/GSP/ProgramOverview.md",
-         "redirect_url": "/security/engineering/ProgramOverview",
-         "redirect_document_id": true
-      },
-      {
-         "source_path": "security-docs/GSP/TechnicalData.md",
-         "redirect_url": "/security/engineering/TechnicalData",
-         "redirect_document_id": true
-      },
-      {
-         "source_path": "security-docs/MSRC/FY18-Strategy-Brief.md",
-         "redirect_url": "/security/engineering/FY18-Strategy-Brief",
-         "redirect_document_id": true
-      },
-      {
-         "source_path": "security-docs/Identifying-Security-Bug-Reports.md",
-         "redirect_url": "/security/engineering/Identifying-Security-Bug-Reports",
-         "redirect_document_id": true
-      },
-      {
-         "source_path": "security-docs/compass/security-operations-videos-and-decks.md",
-         "redirect_url": "/security/operations/security-operations-videos-and-decks",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/incident-response-overview.md",
-         "redirect_url": "/security/operations/incident-response-overview",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/incident-response-planning.md",
-         "redirect_url": "/security/operations/incident-response-planning",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/incident-response-playbooks.md",
-         "redirect_url": "/security/operations/incident-response-playbooks",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/incident-response-playbook-phishing.md",
-         "redirect_url": "/security/operations/incident-response-playbook-phishing",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/incident-response-playbook-password-spray.md",
-         "redirect_url": "/security/operations/incident-response-playbook-password-spray",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/incident-response-playbook-app-consent.md",
-         "redirect_url": "/security/operations/incident-response-playbook-app-consent",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/incident-response-playbook-compromised-malicious-app.md",
-         "redirect_url": "/security/operations/incident-response-playbook-compromised-malicious-app",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/identity.md",
-         "redirect_url": "/security/zero-trust/deploy/identity",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/identity-capabilities.md",
-         "redirect_url": "/security/zero-trust/deploy/identity",
-         "redirect_document_id": false
-      },      
-      {
-         "source_path": "security-docs/compass/network-security-containment.md",
-         "redirect_url": "/security/zero-trust/deploy/networks",
-         "redirect_document_id": false
-      },  
-      {
-         "source_path": "security-docs/compass/network-containment-capabilities.md",
-         "redirect_url": "/security/zero-trust/deploy/networks",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/storage-data-encryption.md",
-         "redirect_url": "/security/zero-trust/deploy/data",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/applications-services.md",
-         "redirect_url": "/security/zero-trust/deploy/applications",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/ten-laws-of-security.md",
-         "redirect_url": "/security/zero-trust/ten-laws-of-security",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/governance-risk-compliance-videos-and-decks.md",
-         "redirect_url": "/security/zero-trust/governance-risk-compliance-videos-and-decks",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/identity-videos-and-decks.md",
-         "redirect_url": "/security/zero-trust/identity-videos-and-decks",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/network-containment-videos-and-decks.md",
-         "redirect_url": "/security/zero-trust/network-containment-videos-and-decks",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/information-protection-and-storage-videos-and-decks.md",
-         "redirect_url": "/security/zero-trust/information-protection-and-storage-videos-and-decks",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/microsoft-security-compass-introduction.md",
-         "redirect_url": "/security/zero-trust/zero-trust-overview",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/compass.md",
-         "redirect_url": "/security/zero-trust/zero-trust-overview",
-         "redirect_document_id": false
-      },
-      {
-         "source_path": "security-docs/compass/progress-and-role-tracking-worksheets.md",
-         "redirect_url": "/security/zero-trust/zero-trust-overview",
-         "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/zero-trust/integrate/sentinel-solution.md",
-        "redirect_url": "/azure/sentinel/sentinel-solution",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/incident-response-process.md",
-        "redirect_url": "/security/operations/incident-response-overview",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/human-operated-ransomware.md",
-        "redirect_url": "/security/ransomware/human-operated-ransomware",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/protect-against-ransomware.md",
-        "redirect_url": "/security/ransomware/protect-against-ransomware",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/protect-against-ransomware-phase1.md",
-        "redirect_url": "/security/ransomware/protect-against-ransomware-phase1",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/protect-against-ransomware-phase2.md",
-        "redirect_url": "/security/ransomware/protect-against-ransomware-phase2",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/protect-against-ransomware-phase3.md",
-        "redirect_url": "/security/ransomware/protect-against-ransomware-phase3",
-        "redirect_document_id": false
-      },
-      {    
-        "source_path": "security-docs/compass/incident-response-playbook-dart-ransomware-approach.md ",
-        "redirect_url": "/security/ransomware/incident-response-playbook-dart-ransomware-approach",
-        "redirect_document_id": false
-      },
-      {    
-        "source_path": "security-docs/operations/incident-response-playbook-dart-ransomware-approach.md ",
-        "redirect_url": "/security/ransomware/incident-response-playbook-dart-ransomware-approach",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/dart-ransomware-case-study.md",
-        "redirect_url": "/security/ransomware/dart-ransomware-case-study",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/overview.md",
-        "redirect_url": "/security/privileged-access-workstations/overview",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/privileged-access-strategy.md",
-        "redirect_url": "/security/privileged-access-workstations/privileged-access-strategy",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/privileged-access-success-criteria.md",
-        "redirect_url": "/security/privileged-access-workstations/privileged-access-success-criteria",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/privileged-access-security-levels.md",
-        "redirect_url": "/security/privileged-access-workstations/privileged-access-security-levels",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/privileged-access-accounts.md",
-        "redirect_url": "/security/privileged-access-workstations/privileged-access-accounts",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/privileged-access-intermediaries.md",
-        "redirect_url": "/security/privileged-access-workstations/privileged-access-intermediaries",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/privileged-access-interfaces.md",
-        "redirect_url": "/security/privileged-access-workstations/privileged-access-interfaces",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/privileged-access-devices.md",
-        "redirect_url": "/security/privileged-access-workstations/privileged-access-devices",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/privileged-access-access-model.md",
-        "redirect_url": "/security/privileged-access-workstations/privileged-access-access-model",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/privileged-access-deployment.md",
-        "redirect_url": "/security/privileged-access-workstations/privileged-access-deployment",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/security-rapid-modernization-plan.md",
-        "redirect_url": "/security/privileged-access-workstations/security-rapid-modernization-plan",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/esae-retirement .md",
-        "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/administration-videos-and-decks.md",
-        "redirect_url": "/security/privileged-access-workstations/administration-videos-and-decks",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/critical-impact-accounts.md",
-        "redirect_url": "/security/privileged-access-workstations/critical-impact-accounts",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/administration-capabilities.md",
-        "redirect_url": "/security/privileged-access-workstations/critical-impact-accounts",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/applications-and-cloud-services-capabilities.md",
-        "redirect_url": "/security/privileged-access-workstations/applications-and-cloud-services-capabilities",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/endpoint-security-capabilities.md",
-        "redirect_url": "/security/zero-trust/",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/information-protection-and-storage-capabilities.md",
-        "redirect_url": "/security/zero-trust/deploy/data",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/new-in-microsoft-security-compass.md",
-        "redirect_url": "/security/zero-trust/",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/endpoint-security-videos-and-decks.md",
-        "redirect_url": "/security/zero-trust/deploy/endpoints",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/zero-trust/zero-trust-microsoft-365-copilot.md",
-        "redirect_url": "/security/zero-trust/copilots/zero-trust-microsoft-365-copilot",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/compass/esae-retirement.md",
-        "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
-        "redirect_document_id": false
-      }, 
-      {
-        "source_path": "security-docs/zero-trust/governance-risk-compliance-videos-and-decks.md",
-        "redirect_url": "/security/zero-trust/adopt/meet-regulatory-compliance-requirements",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/zero-trust/identity-videos-and-decks.md",
-        "redirect_url": "/security/zero-trust/deploy/identity",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/zero-trust/network-containment-videos-and-decks.md",
-        "redirect_url": "/security/zero-trust/deploy/networks",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/zero-trust/information-protection-and-storage-videos-and-decks.md",
-        "redirect_url": "/security/zero-trust/deploy/data",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/operations/security-operations-videos-and-decks.md",
-        "redirect_url": "/security/operations/overview",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/operations/siem-xdr-overview.md",
-        "redirect_url": "/security/zero-trust/siem-xdr-overview",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/operations/setup-xdr-tools.md",
-        "redirect_url": "/security/zero-trust/setup-xdr-tools",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/operations/siem-workspace.md",
-        "redirect_url": "/security/zero-trust/siem-workspace",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/operations/ingest-data-sources.md",
-        "redirect_url": "/security/zero-trust/ingest-data-sources",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "security-docs/operations/respond-incident.md",
-        "redirect_url": "/security/zero-trust/respond-incident",
-        "redirect_document_id": false
-      }
-  ] 
-  } 
+{
+  "redirections": [
+    {
+      "source_path": "security-docs/zero-trust/isv/fido2-hardware-vendor.md",
+      "redirect_url": "/active-directory/authentication/fido2-hardware-vendor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/solving-tls1-problem.md",
+      "redirect_url": "/security/engineering/solving-tls1-problem",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/failure-modes-in-machine-learning.md",
+      "redirect_url": "/security/engineering/failure-modes-in-machine-learning",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/threat-modeling-aiml.md",
+      "redirect_url": "/security/engineering/threat-modeling-aiml",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/compass/applications-and-cloud-services-videos-and-decks.md",
+      "redirect_url": "/security/compass/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/bug-bar-aiml.md",
+      "redirect_url": "/security/engineering/bug-bar-aiml",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/securing-artificial-intelligence-machine-learning.md",
+      "redirect_url": "/security/engineering/securing-artificial-intelligence-machine-learning",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/disable-legacy-tls.md",
+      "redirect_url": "/security/engineering/disable-legacy-tls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/compass/howto-azure-managed-workstation.md",
+      "redirect_url": "/security/compass/privileged-access-deployment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/zero-trust/develop/integrate-apps-with-azure-ad-microsoft-identity-platform.md",
+      "redirect_url": "/security/zero-trust/develop/integrate-apps-microsoft-identity-platform",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/zero-trust/isv/secure-hybrid-access.md",
+      "redirect_url": "/azure/active-directory/manage-apps/secure-hybrid-access-integrations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/isv/identity-isv-integration-overview.md",
+      "redirect_url": "../integrate/identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/isv/identity-isv-getting-started.md",
+      "redirect_url": "../integrate/identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/applications.md",
+      "redirect_url": "deploy/applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/data.md",
+      "redirect_url": "deploy/data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/endpoints.md",
+      "redirect_url": "deploy/endpoints",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/identity.md",
+      "redirect_url": "deploy/identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/infrastructure.md",
+      "redirect_url": "deploy/infrastructure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/networks.md",
+      "redirect_url": "deploy/networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/visibility-automation-orchestration.md",
+      "redirect_url": "deploy/visibility-automation-orchestration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/identity-developer.md",
+      "redirect_url": "develop/identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/backup-plan-to-protect-against-ransomware.md",
+      "redirect_url": "/azure/security/fundamentals/backup-plan-to-protect-against-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/governance.md",
+      "redirect_url": "/azure/architecture/framework/security/design-governance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/governance-risk-compliance-capabilities.md",
+      "redirect_url": "https://azure.microsoft.com/solutions/governance/#solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/security-operations.md",
+      "redirect_url": "/security/operations/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/security-operations-capabilities.md",
+      "redirect_url": "/security/operations/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/cybersecurity-reference-architecture/MCRA.md",
+      "redirect_url": "/security/adoption/mcra",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/ciso-workshop/adoption.md",
+      "redirect_url": "/security/adoption/adoption",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/ciso-workshop/ciso-workshop-module-1.md",
+      "redirect_url": "/security/adoption/ciso-workshop-module-1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/ciso-workshop/ciso-workshop-module-2.md",
+      "redirect_url": "/security/adoption/ciso-workshop-module-2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/ciso-workshop/ciso-workshop-module-3.md",
+      "redirect_url": "/security/adoption/ciso-workshop-module-3",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/ciso-workshop/ciso-workshop-module-4a.md",
+      "redirect_url": "/security/adoption/ciso-workshop-module-4a",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/ciso-workshop/ciso-workshop-module-4b.md",
+      "redirect_url": "/security/adoption/ciso-workshop-module-4b",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/ciso-workshop/ciso-workshop-module-5.md",
+      "redirect_url": "/security/adoption/ciso-workshop-module-5",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/ciso-workshop/ciso-workshop.md",
+      "redirect_url": "/security/adoption/ciso-workshop",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/ciso-workshop/the-ciso-workshop-videos.md",
+      "redirect_url": "/security/adoption/the-ciso-workshop-videos",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/ciso-workshop/the-ciso-workshop.md",
+      "redirect_url": "/security/adoption/the-ciso-workshop",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/SDL/Cryptographic-Recommendations.md",
+      "redirect_url": "/security/engineering/Cryptographic-Recommendations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/SDL/Security-Bug-Bar-sample.md",
+      "redirect_url": "/security/engineering/Security-Bug-Bar-sample",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/GSP/ContentTransparencyCenters.md",
+      "redirect_url": "/security/engineering/ContentTransparencyCenters",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/GSP/InformationSharingAndExchange.md",
+      "redirect_url": "/security/engineering/InformationSharingAndExchange",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/GSP/OnlineSources.md",
+      "redirect_url": "/security/engineering/OnlineSources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/GSP/ProgramOverview.md",
+      "redirect_url": "/security/engineering/ProgramOverview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/GSP/TechnicalData.md",
+      "redirect_url": "/security/engineering/TechnicalData",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/MSRC/FY18-Strategy-Brief.md",
+      "redirect_url": "/security/engineering/FY18-Strategy-Brief",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/Identifying-Security-Bug-Reports.md",
+      "redirect_url": "/security/engineering/Identifying-Security-Bug-Reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "security-docs/compass/security-operations-videos-and-decks.md",
+      "redirect_url": "/security/operations/security-operations-videos-and-decks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/incident-response-overview.md",
+      "redirect_url": "/security/operations/incident-response-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/incident-response-planning.md",
+      "redirect_url": "/security/operations/incident-response-planning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/incident-response-playbooks.md",
+      "redirect_url": "/security/operations/incident-response-playbooks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/incident-response-playbook-phishing.md",
+      "redirect_url": "/security/operations/incident-response-playbook-phishing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/incident-response-playbook-password-spray.md",
+      "redirect_url": "/security/operations/incident-response-playbook-password-spray",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/incident-response-playbook-app-consent.md",
+      "redirect_url": "/security/operations/incident-response-playbook-app-consent",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/incident-response-playbook-compromised-malicious-app.md",
+      "redirect_url": "/security/operations/incident-response-playbook-compromised-malicious-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/identity.md",
+      "redirect_url": "/security/zero-trust/deploy/identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/identity-capabilities.md",
+      "redirect_url": "/security/zero-trust/deploy/identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/network-security-containment.md",
+      "redirect_url": "/security/zero-trust/deploy/networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/network-containment-capabilities.md",
+      "redirect_url": "/security/zero-trust/deploy/networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/storage-data-encryption.md",
+      "redirect_url": "/security/zero-trust/deploy/data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/applications-services.md",
+      "redirect_url": "/security/zero-trust/deploy/applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/ten-laws-of-security.md",
+      "redirect_url": "/security/zero-trust/ten-laws-of-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/governance-risk-compliance-videos-and-decks.md",
+      "redirect_url": "/security/zero-trust/governance-risk-compliance-videos-and-decks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/identity-videos-and-decks.md",
+      "redirect_url": "/security/zero-trust/identity-videos-and-decks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/network-containment-videos-and-decks.md",
+      "redirect_url": "/security/zero-trust/network-containment-videos-and-decks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/information-protection-and-storage-videos-and-decks.md",
+      "redirect_url": "/security/zero-trust/information-protection-and-storage-videos-and-decks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/microsoft-security-compass-introduction.md",
+      "redirect_url": "/security/zero-trust/zero-trust-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/compass.md",
+      "redirect_url": "/security/zero-trust/zero-trust-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/progress-and-role-tracking-worksheets.md",
+      "redirect_url": "/security/zero-trust/zero-trust-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/integrate/sentinel-solution.md",
+      "redirect_url": "/azure/sentinel/sentinel-solution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/incident-response-process.md",
+      "redirect_url": "/security/operations/incident-response-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/human-operated-ransomware.md",
+      "redirect_url": "/security/ransomware/human-operated-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/protect-against-ransomware.md",
+      "redirect_url": "/security/ransomware/protect-against-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/protect-against-ransomware-phase1.md",
+      "redirect_url": "/security/ransomware/protect-against-ransomware-phase1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/protect-against-ransomware-phase2.md",
+      "redirect_url": "/security/ransomware/protect-against-ransomware-phase2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/protect-against-ransomware-phase3.md",
+      "redirect_url": "/security/ransomware/protect-against-ransomware-phase3",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/incident-response-playbook-dart-ransomware-approach.md ",
+      "redirect_url": "/security/ransomware/incident-response-playbook-dart-ransomware-approach",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/operations/incident-response-playbook-dart-ransomware-approach.md ",
+      "redirect_url": "/security/ransomware/incident-response-playbook-dart-ransomware-approach",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/dart-ransomware-case-study.md",
+      "redirect_url": "/security/ransomware/dart-ransomware-case-study",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/overview.md",
+      "redirect_url": "/security/privileged-access-workstations/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/privileged-access-strategy.md",
+      "redirect_url": "/security/privileged-access-workstations/privileged-access-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/privileged-access-success-criteria.md",
+      "redirect_url": "/security/privileged-access-workstations/privileged-access-success-criteria",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/privileged-access-security-levels.md",
+      "redirect_url": "/security/privileged-access-workstations/privileged-access-security-levels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/privileged-access-accounts.md",
+      "redirect_url": "/security/privileged-access-workstations/privileged-access-accounts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/privileged-access-intermediaries.md",
+      "redirect_url": "/security/privileged-access-workstations/privileged-access-intermediaries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/privileged-access-interfaces.md",
+      "redirect_url": "/security/privileged-access-workstations/privileged-access-interfaces",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/privileged-access-devices.md",
+      "redirect_url": "/security/privileged-access-workstations/privileged-access-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/privileged-access-access-model.md",
+      "redirect_url": "/security/privileged-access-workstations/privileged-access-access-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/privileged-access-deployment.md",
+      "redirect_url": "/security/privileged-access-workstations/privileged-access-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/security-rapid-modernization-plan.md",
+      "redirect_url": "/security/privileged-access-workstations/security-rapid-modernization-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/esae-retirement .md",
+      "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/administration-videos-and-decks.md",
+      "redirect_url": "/security/privileged-access-workstations/administration-videos-and-decks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/critical-impact-accounts.md",
+      "redirect_url": "/security/privileged-access-workstations/critical-impact-accounts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/administration-capabilities.md",
+      "redirect_url": "/security/privileged-access-workstations/critical-impact-accounts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/applications-and-cloud-services-capabilities.md",
+      "redirect_url": "/security/privileged-access-workstations/applications-and-cloud-services-capabilities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/endpoint-security-capabilities.md",
+      "redirect_url": "/security/zero-trust/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/information-protection-and-storage-capabilities.md",
+      "redirect_url": "/security/zero-trust/deploy/data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/new-in-microsoft-security-compass.md",
+      "redirect_url": "/security/zero-trust/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/endpoint-security-videos-and-decks.md",
+      "redirect_url": "/security/zero-trust/deploy/endpoints",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/zero-trust-microsoft-365-copilot.md",
+      "redirect_url": "/security/zero-trust/copilots/zero-trust-microsoft-365-copilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/compass/esae-retirement.md",
+      "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/governance-risk-compliance-videos-and-decks.md",
+      "redirect_url": "/security/zero-trust/adopt/meet-regulatory-compliance-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/identity-videos-and-decks.md",
+      "redirect_url": "/security/zero-trust/deploy/identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/network-containment-videos-and-decks.md",
+      "redirect_url": "/security/zero-trust/deploy/networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/information-protection-and-storage-videos-and-decks.md",
+      "redirect_url": "/security/zero-trust/deploy/data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/operations/security-operations-videos-and-decks.md",
+      "redirect_url": "/security/operations/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/operations/siem-xdr-overview.md",
+      "redirect_url": "/security/zero-trust/siem-xdr-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/operations/setup-xdr-tools.md",
+      "redirect_url": "/security/zero-trust/setup-xdr-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/operations/siem-workspace.md",
+      "redirect_url": "/unified-secops-platform/overview-deploy?toc=/security/zero-trust/toc.json&bc=/security/breadcrumb/toc.json#architect-your-workspace-and-onboard-to-microsoft-sentinel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/operations/ingest-data-sources.md",
+      "redirect_url": "/unified-secops-platform/overview-deploy?toc=/security/zero-trust/toc.json&bc=/security/breadcrumb/toc.json#configure-microsoft-sentinel-content",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/operations/respond-incident.md",
+      "redirect_url": "/security/zero-trust/respond-incident-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/respond-incident.md",
+      "redirect_url": "/security/zero-trust/respond-incident-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/ingest-data-sources.md",
+      "redirect_url": "/unified-secops-platform/overview-deploy?toc=/security/zero-trust/toc.json&bc=/security/breadcrumb/toc.json#configure-microsoft-sentinel-content",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/siem-workspace.md",
+      "redirect_url": "/unified-secops-platform/overview-deploy?toc=/security/zero-trust/toc.json&bc=/security/breadcrumb/toc.json#architect-your-workspace-and-onboard-to-microsoft-sentinel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/setup-xdr-tools.md",
+      "redirect_url": "/unified-secops-platform/overview-deploy?toc=/security/zero-trust/toc.json&bc=/security/breadcrumb/toc.json#deploy-microsoft-defender-xdr-services",
+      "redirect_document_id": false
+    }
+  ]
+}

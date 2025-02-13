@@ -35,7 +35,7 @@ sections:
         feedback: Validate your technical skills and open doors to new opportunities by proving your ability to detect and respond to cyberthreats.
         link:
           componentType: link
-          url: /credentials/applied-skills/defend-against-cyberthreats-with-microsoft-defender-xdr/
+          url: /credentials/applied-skills/defend-against-cyberthreats-with-microsoft-defender-xdr/?wt.mc_id=securityhub_mascyberthreats_webspage_wwl
           text: Earn your credential
       - avatarUrl: /security/media/hubpage/watch-icon.png
         componentType: testimonial-card
@@ -44,7 +44,7 @@ sections:
         feedback: Learn what generative AI is and how to use Copilot to quickly analyze and mitigate threats using natural language to empower your security and IT teams to protect at the speed and scale of AI.
         link:
           componentType: link
-          url: /shows/microsoft-security-copilot-flight-school/
+          url: /shows/microsoft-security-copilot-flight-school/?wt.mc_id=securityhub_flightschool_webpage_devrelstudios 
           text: Watch now
       - avatarUrl: /security/media/hubpage/generic-badge.svg
         componentType: testimonial-card
@@ -59,7 +59,7 @@ sections:
         componentType: testimonial-card
         name: Validate your critical information security skills
         role: Blog
-        feedback: Earn the new Microsoft Certification and become part of your team's cybersecurity solution.
+        feedback: Read about the new Microsoft Certification and become part of your team's cybersecurity solution.
         link:
           componentType: link
           url: https://techcommunity.microsoft.com/blog/microsoftlearnblog/validate-critical-information-security-skills-with-our-new-certification/3719269?wt.mc_id=securityhub_sc401_webpage_sci

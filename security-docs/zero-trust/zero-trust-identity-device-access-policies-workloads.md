@@ -142,9 +142,9 @@ Traditionally, SharePoint site permissions are managed by site owners based on t
 
 Consider the following example sites in the Contoso organization. SharePoint access control for unmanaged devices is configured at the **Allow limited, web-only access** level for the organization:
 
-- **Event planning site configured with starting point protection**: The site isn't included in SharePoint access control, so users with site permission can access the site from their managed PCs only.
-- **Analytics team site configured with enterprise protection**: The site is configured with `AllowLimitedAccess` in SharePoint access control for unmanaged devices. Users with site permissions get browser-only access to the site on unmanaged devices. They can access the site using other apps on managed PCs.
-- **Trade secrets site configure with specialized security protection**: The site is configured with `Block` in SharePoint access control for unmanaged devices. Users with site permissions are blocked from accessing the site on unmanaged devices. They can access the site only on managed PCs.
+- **The Event planning site configured with starting point protection**: The site isn't configured in SharePoint access control, so users with site permission can access the site from their managed PCs only.
+- **The Analytics team site configured with enterprise protection**: The site is configured with `AllowLimitedAccess` in SharePoint access control for unmanaged devices. Users with site permissions get browser-only access to the site on unmanaged devices. They can access the site using other apps on managed PCs.
+- **The Trade secrets site configure with specialized security protection**: The site is configured with `Block` in SharePoint access control for unmanaged devices. Users with site permissions are blocked from accessing the site on unmanaged devices. They can access the site only on managed PCs.
 
 ## Microsoft Teams
 

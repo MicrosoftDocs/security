@@ -28,15 +28,15 @@ sections:
   - componentType: testimonials-section
     title: 'Discover top picks'
     cards:
-      - avatarUrl: /security/media/security-hub/applied-skills-icon.png
+      - avatarUrl: /security/media/hubpage/plan-icon.png
         componentType: testimonial-card
-        name: Defend against cyberthreats with Microsoft Defender XDR
-        role: Applied Skills
-        feedback: Validate your technical skills and open doors to new opportunities by proving your ability to detect and respond to cyberthreats.
+        name: Cybersecurity basics for non-security professionals
+        role: Skilling
+        feedback: Help protect your data from online cyberthreats with this introductory Plan to support work or personal tasks.
         link:
           componentType: link
-          url: /credentials/applied-skills/defend-against-cyberthreats-with-microsoft-defender-xdr/?wt.mc_id=securityhub_mascyberthreats_webspage_wwl
-          text: Earn your credential
+          url: /plans/57eocqtgww5x6n?sharingId=1DB7ACD9A156B8F9?wt.mc_id=securityhub_cybersecuritybasics_webpage_wwl
+          text: Get skilled
       - avatarUrl: /security/media/hubpage/watch-icon.png
         componentType: testimonial-card
         name: Microsoft Security Copilot Flight School

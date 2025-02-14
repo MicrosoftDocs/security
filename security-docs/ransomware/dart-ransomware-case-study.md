@@ -29,7 +29,7 @@ The [Microsoft Incident Response team (formerly DART/CRSP)](https://www.microsof
 
 This article describes how Microsoft Incident Response investigated a recent ransomware incident with details on the attack tactics and detection mechanisms.
 
-See [Part 1](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [Part 2](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) of Microsoft Incident Response's guide to combatting human-operated ransomware for more information.
+See [Part 1](https://www.microsoft.com/en-us/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/) and [Part 2](https://www.microsoft.com/en-us/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/) of Microsoft Incident Response's guide to combatting human-operated ransomware for more information.
 
 ## The attack
 

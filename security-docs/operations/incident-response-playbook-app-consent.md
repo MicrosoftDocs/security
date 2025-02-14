@@ -98,7 +98,7 @@ Install-Module -Name AzureAD -Verbose
 3. Connect to your directory using the `Connect-AzureAD` cmdlet. Here's an example.
 
     ```powershell
-    Connect-AzureAD -tenantid "2b1a14ac-2956-442f-9577-1234567890ab" -AccountId "user1@contoso.onmicrosoft.com"
+    Connect-AzureAD -tenantid "aaaabbbb-0000-cccc-1111-dddd2222eeee" -AccountId "user1@contoso.onmicrosoft.com"
     ```
 
 4. Run this PowerShell command.
@@ -287,10 +287,11 @@ You can also download the app consent grant and other incident playbook checklis
 
 ## Investigation steps
 
-You can use the following two methods to investigate application consent grants:
+You can use the following three methods to investigate application consent grants:
 
 - Azure portal
 - PowerShell script
+- Microsoft Security Copilot
 
 > [!NOTE]
 > Using the Azure portal *only allows you to see Admin Consent Grants for the last 90 days and based on this, we recommend using the PowerShell script method only to reduce the attacker registers investigation steps.*
@@ -322,7 +323,7 @@ Run `Get-AzureADPSPermissions.ps1`, to export all of the OAuth consent grants an
 2. Connect to your directory using the following *Connect-AzureAD* command. Here's an example.
 
     ```powershell
-    Connect-AzureAD -tenantid "2b1a14ac-2956-442f-9577-1234567890ab" -AccountId "user1@contoso.onmicrosoft.com"
+    Connect-AzureAD -tenantid "aaaabbbb-0000-cccc-1111-dddd2222eeee" -AccountId "user1@contoso.onmicrosoft.com"
     ```
 
 3. Run this PowerShell command.
@@ -380,6 +381,10 @@ Here are some useful tips to review information security policy (ISP) investigat
 - Are there terms of service/service agreement link in the app registration?
 - Are the contents unique and specific to the application/publisher?
 - Is the tenant that registered the application either newly created or compromised (for example, is the app registered by an at-risk user)?
+
+### Method 3 - Using Security Copilot in the Microsoft Entra admin center
+
+With [Microsoft Security Copilot](/copilot/security/microsoft-security-copilot), you can use natural language prompts to identify and understand risks related to applications or workload identities. This includes the permissions and high privileged permissions granted to them, directly within the Microsoft Entra admin center. Learn more about how to [Assess application risks using Microsoft Security Copilot](/entra/fundamentals/copilot-security-entra-investigate-risky-apps#explore-unused-microsoft-entra-applications).
 
 ## Details of consent grant attack
 
@@ -566,4 +571,3 @@ Examine guidance for identifying and investigating these additional types of att
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 - [Microsoft Incident Response team guide shares best practices for security teams and leaders](https://www.microsoft.com/security/blog/2023/12/11/new-microsoft-incident-response-team-guide-shares-best-practices-for-security-teams-and-leaders/)
 - [Microsoft Incident Response guides help security teams analyze suspicious activity](https://www.microsoft.com/security/blog/2024/01/17/new-microsoft-incident-response-guides-help-security-teams-analyze-suspicious-activity/)
-

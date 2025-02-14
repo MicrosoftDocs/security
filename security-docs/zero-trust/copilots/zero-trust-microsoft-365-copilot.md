@@ -1,7 +1,7 @@
 ---
 title: How do I apply Zero Trust principles to Microsoft 365 Copilot?
 description: How to apply Zero Trust principles to Microsoft 365 Copilot. 
-ms.date: 04/02/2024
+ms.date: 02/07/2025
 ms.service: security
 author: BrendaCarter
 ms.author: bcarter
@@ -12,7 +12,7 @@ ms.collection:
   - msftsolution-copilot
   - msftsolution-scenario
   - zerotrust-solution
-  - zerotrust-azure
+  - zerotrust-copilot
   - magic-ai-copilot
 ms.custom: [copilot-learning-hub]
 ---
@@ -49,9 +49,7 @@ You apply Zero Trust principles for Copilot across the entire architecture, from
 
 :::image type="content" source="../media/copilot/m365-copilot-tenant-architecture.svg" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/m365-copilot-tenant-architecture.svg":::
 
-<!---
-:::image type="content" source="../media/copilot/logical-architecture-microsoft-365-copilot.svg" alt-text="Diagram of the logical architecture for Copilot." lightbox="../media/copilot/logical-architecture-microsoft-365-copilot.svg":::
---->
+
 
 In the diagram:
 
@@ -62,6 +60,10 @@ In the diagram:
   - An instance of the Microsoft Graph for the data of your Microsoft 365 tenant
 - Your Microsoft 365 tenant that contains your organization data
 - Copilot results for a user contain only data that the user is allowed to access
+
+For additional technical illustrations, see the following articles in the Microsoft 365 Copilot library:
+- [Microsoft 365 Copilot architecture and how it works](/microsoft-365-copilot/microsoft-365-copilot-architecture)
+- [Microsoft 365 Copilot data protection and auditing architecture](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing)
 
 ## What’s in this article
 
@@ -83,41 +85,38 @@ To help you make progress, each of the steps in this article is organized in the
 - Next steps with E5 capabilities
 
 
-#### Working with the Microsoft FastTrack team
-If you're working with the [Microsoft FastTrack team](https://www.microsoft.com/fasttrack) to introduce Copilot into your environment, you will become familiar with three stages: Baseline, Core, and Best-in-class. This approach works well with this guidance.
-
-:::image type="content" source="../media/copilot/m365-fasttrack-core-baseline-best.png" alt-text="Diagram that shows the three stages for deploying Microsoft 365 Copilot, recommended by the Microsoft FastTrack team." lightbox="../media/copilot/m365-fasttrack-core-baseline-best.png":::
-
-In the diagram, the Microsoft FastTrack team takes a three-stage approach to deploying Copilot:
-- Baseline — Set up Copilot
-- Core — Get started with the protections in E3
-- Best-in-class — Next steps with E5
-
-For more information on setting up Copilot, see [Get started with Microsoft 365 Copilot](https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-setup).
-
 #### Adapting this guidance for your organization
 
 Because different organizations can be at various stages of deploying Zero Trust protections, in each of these steps:
 
-- If you're NOT using any of the protections described in the step, take the time to pilot and deploy them prior to assigning Copilot licenses.
-- If you're using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated has been piloted and deployed prior to assigning Copilot licenses.
+- If you're NOT using any of the protections described in the step, take the time to pilot and deploy them before assigning Copilot licenses.
+- If you're using some of the protections described in the step, use the information in the step as a checklist and verify that each protection stated has been piloted and deployed before assigning Copilot licenses.
 
 For the latest Copilot support for security-related and other features of Microsoft 365, see [Copilot requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements).
 
-> [!NOTE]
-> Beginning on January 1, 2024, Copilot will be generally available for Microsoft 365 A3 and A5 faculty. See [this technical community post](https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/announcing-updates-to-copilot-for-microsoft-365-availability/ba-p/4007075) for more information.
 
 ## Step 1. Deploy or validate your data protection
 
-To prevent your organization’s data from being at risk of overexposure or oversharing, the next step is to protect the data in your Microsoft 365 tenant. You must ensure that:
+To prevent your organization’s data from being at risk of overexposure or oversharing, the next step is to protect the data in your Microsoft 365 tenant. Microsoft Purview includes a robust set of capabilities for discovering, classifying, labeling, and protecting data. However, we understand that it can take a while to do this work. Microsoft 365 includes controls you can use immediately to help you prevent oversharing data through Copilot.
 
-- Your data is categorized with sensitivity levels.
-- Sensitivity labels represent your sensitivity levels that are applied by users or automatically.
-- You can view how sensitivity labels are being used in your Microsoft 365 tenant.
+### Oversharing controls
 
-These data protection capabilities can also be used to ensure that your organization complies with data regulations, such as those dealing with protecting personal information. 
+Microsoft 365 oversharing controls help you:
+- Temporarily limit Copilot search to a list of sites you specify (Restricted SharePoint Search)
+- Quickly identify sites that potentially contain overshared data or sensitive content (data access governance reports)
+- Flag sites so that users can't find them through Copilot or Org-wide search (Restricted Content Discovery)
 
-The following capabilities from Microsoft Purview strengthen your data security and compliance for Copilot:
+To get started with oversharing controls, use the following resources:
+- [Illustration and description of oversharing controls you can use with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing#oversharing-controls-you-can-use-with-microsoft-365-copilot)
+- [Downloadable blueprint to prevent oversharing](/microsoft-365-copilot/microsoft-365-copilot-blueprint-oversharing)
+
+### Microsoft Purview capabilities
+
+Use Microsoft Purview to mitigate and manage the risks associated with AI usage, and implement corresponding protection and governance controls.
+
+Microsoft Purview Data Security Posture Management (DSPM) for AI provides easy-to-use graphical tools and reports to quickly gain insights into AI use within your organization. One-click policies help you protect your data and comply with regulatory requirements.
+
+Use Data Security Posture Management for AI together with other Microsoft Purview capabilities to strengthen your data security and compliance for Microsoft 365 Copilot and Microsoft 365 Copilot Chat:
 
 - Sensitivity labels and content encrypted by Microsoft Purview Information Protection
 - Data classification
@@ -129,9 +128,17 @@ The following capabilities from Microsoft Purview strengthen your data security 
 - Retention and deletion
 - Customer Lockbox
 
-For more information, see [Microsoft Purview data security and compliance protections for Microsoft Copilot](/purview/ai-microsoft-purview) and [Considerations for deploying Microsoft Purview data security and compliance protections for Copilot](/purview/ai-microsoft-purview-considerations).
+For more information, use these resources:
+- [Illustrations for data protection and auditing with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing)
+- [Microsoft Purview data security and compliance protections for Microsoft Copilot](/purview/ai-microsoft-purview) 
+- [Considerations for deploying Microsoft Purview data security and compliance protections for Copilot](/purview/ai-microsoft-purview-considerations).
 
 ### Getting started with E3
+
+First, apply oversharing controls that work with Copilot, as appropriate for your environment. These controls help you protect data immediately. After doing the longer-term work of classifying data and applying sensitivity labels and protection, be sure to revisit the oversharing controls you applied initially to ensure these are still appropriate. Review the [oversharing illustration](/microsoft-365-copilot/microsoft-365-copilot-architecture-data-protection-auditing#oversharing-controls-you-can-use-with-microsoft-365-copilot) and 
+[download the blueprint to prevent oversharing](/microsoft-365-copilot/microsoft-365-copilot-blueprint-oversharing).
+
+Next, invest in data classification and protection with Microsoft Purview capabilities.
 
 [Sensitivity labels](/purview/sensitivity-labels) form the cornerstone of protecting your data. Before you create the labels to denote the sensitivity of items and the protection actions that are applied, you must understand your organization’s existing classification taxonomy and how it maps to labels that users see and apply in apps. After creating the sensitivity labels, publish them, and provide guidance to users how and when to apply them in Word, Excel, PowerPoint, and Outlook. 
 
@@ -301,7 +308,7 @@ For more comprehensive threat protection, pilot and deploy Microsoft Defender XD
 
 Microsoft recommends enabling the components of Microsoft 365 in the order illustrated:
 
-:::image type="content" source="../media/copilot/m365-defender-eval-process.png" alt-text="Diagram of the process to evaluate and deploy Microsoft Defender XDR components." lightbox="../media/copilot/m365-defender-eval-process.png":::
+:::image type="content" source="../media/copilot/defender-xdr-pilot-deploy-flow.svg" alt-text="Diagram of the process to evaluate and deploy Microsoft Defender XDR components." lightbox="../media/copilot/defender-xdr-pilot-deploy-flow.svg":::
  
 For more information and a description of this illustration, see [Evaluate and pilot Microsoft Defender XDR](/microsoft-365/security/defender/eval-overview#the-evaluation-process-for-microsoft-365-defender-cyber-security).
 

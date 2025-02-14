@@ -26,16 +26,16 @@ You can [configure group claims](/entra/identity-platform/optional-claims#config
 Group membership can drive authorization decisions. For example, the following example shows some claims in a token. You can add group claims and roles to either ID or access tokens.
 
 ```
-"aud": "e18c04b1-4868-4b93-93d1-8d71f17ab99b", 
+"aud": "00001111-aaaa-2222-bbbb-3333cccc4444", 
 "iss": "https://login.microsoftonline.com/833ced3d-cb2e-41de-92f1-29e2af035ddc/v2.0", 
 "iat": 1669657224, "nbf": 1669657224, "exp": 1669661124, 
 "groups": [ 
    "0760b6cf-170e-4a14-91b3-4b78e0739963", 
    "3b2b0c93-acd8-4208-8eba-7a48db1cd4c0" 
  ],
-"oid": "cb7eda1b-d09a-40ae-b8bb-37836ebc6abd",
+"oid": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
 "sub": "3OBtLXUC2ZrN_ADLNjW9X4o0lcd61py7lgHw3Skh77s",
-"tid": "833ced3d-cb2e-41ce-92f1-29e2af035ddc", 
+"tid": "bbbbcccc-1111-dddd-2222-eeee3333ffff", 
 "ver": "2.0", 
 "wids": [ 
    "cf1c38e5-3621-4004-a7cb-879624dced7c", 
@@ -63,11 +63,7 @@ When you request all groups in your token as shown in the above example, you can
 
 If you're using OpenID Connect or OAuth2, you can have up to 200 groups in your token. If you're using SAML, you can have only 150 groups because SAML tokens are bigger than OAuth2 and OpenID Connect tokens. If you're using the implicit flow, the limit is six because those responses show up in the URL. In all of these cases, instead of having a `groups` claim, you see an indication (known as a group overage) that tells you that the user is a member of too many groups to fit in your token.
 
-In the following token example, for an OpenID connect, or OAuth2, JSON web token (JWT), there isn't a `groups` claim if the user is a member of too many groups. Instead, there's a `_claim_names` claim that contains a `groups` member of the array.
-
-:::image type="content" source="../media/develop/configure-tokens-group-claims-app-roles/screenshot-token-group-membership-azure-ad-graph-inline.png" alt-text="Screenshot of example token shows query." lightbox="../media/develop/configure-tokens-group-claims-app-roles/screenshot-token-group-membership-azure-ad-graph-expanded.png":::
-
-In the above token example, you see that the `groups` claim is supposed to be mapped to `src1`. In theory, you'd then look for the `_claim_sources` claim then find the `src1` member. From there, you'd find the Graph query that you'd use to get the group membership. However, there's a problem with what you see in the example Graph query. It goes to Azure AD Graph (which Microsoft is deprecating), so don't use it.
+The `groups` claim is supposed to be mapped to `src1`. In theory, you'd then look for the `_claim_sources` claim then find the `src1` member. From there, you'd find the Graph query that you'd use to get the group membership. However, there's a problem with what you see in the example Graph query. It goes to Azure AD Graph (which Microsoft is deprecating), so don't use it.
 
 Implicit flow overage indication is done with a `hasgroups` claim instead of the `groups` claim.
 
@@ -95,18 +91,18 @@ Another way to avoid the group overage problem is for the app to define app role
 Having [created the app role in the app's registration](/entra/identity-platform/howto-add-app-roles-in-apps), IT Pros can [assign users and groups to the role](/entra/identity-platform/howto-add-app-roles-in-apps#assign-users-and-groups-to-roles). Your app gets a `roles` claim in your token (ID token for app, access token for APIs) with all the signed-in user's assigned roles as shown in the following token example.
 
 ```
-"aud": "acaf6ce9-81f0-462a-a93d-a314070738d3",
+"aud": "11112222-bbbb-3333-cccc-4444dddd5555",
 "iss": "https://login.microsoftonline.com/833ced3d-cb2e-41de-92f1-29e2af035ddc/v2.0",
 "iat": 1670826509, "nbf": 1670826509, "exp": 1670830409,
 "name": "Kyle Marsh",
-"oid": "cb7eda1b-d09a-419e-b8bb-37836ebc6abd",
+"oid": "bbbbbbbb-1111-2222-3333-cccccccccccc",
 "preferred_username": "kylemar@idfordevs.dev",
 "roles": [
  "Approver",
  "Reviewer" 
 ],
 "sub": "dx-4lf-0loB3c3uVrULnZ2VTLuRRWYff0q7-QlIfYU4",
-"tid": "833ced3d-cb3e-41de-92f1-29e2af035ddc",
+"tid": "ccccdddd-2222-eeee-3333-ffff4444aaaa",
 ```
 
 Remember to have your application handle the following conditions:

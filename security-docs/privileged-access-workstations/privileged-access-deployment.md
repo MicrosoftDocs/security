@@ -41,7 +41,6 @@ Require multifactor authentication, at least for your administrators. See [Condi
 ### Microsoft Entra users and groups
 
 1. From the Azure portal, browse to **Microsoft Entra ID** > **Users** > **New user**.
-1. Create your device user by following the steps in the [create user tutorial](/intune/quickstart-create-user).
 1. Enter:
    * **Name** - Secure Workstation User
    * **User name** - `secure-ws-user@contoso.com`
@@ -139,7 +138,7 @@ From the Azure portal:
 1. Change the **MDM user scope** setting to **All**.
 1. Select **Save**.
 
-These steps allow you to manage any device with Microsoft Endpoint Manager. For more information, see [Intune Quickstart: Set up automatic enrollment for Windows 10 devices](/Intune/quickstart-setup-auto-enrollment). You create Intune configuration and compliance policies in a future step.
+These steps allow you to manage any device with Microsoft Endpoint Manager. For more information, see [Set up automatic enrollment for Windows 10/11 devices](/mem/intune/enrollment/quickstart-setup-auto-enrollment). You create Intune configuration and compliance policies in a future step.
 
 <a name='azure-ad-conditional-access'></a>
 
@@ -189,7 +188,7 @@ After creating a device group, you must create a deployment profile to configure
 
    * For **Deployment mode**, choose [**Self-Deploying (Preview)**](/mem/autopilot/self-deploying). Devices with this profile are associated with the user who enrolls the device. During the deployment, it's advisable to use the Self-Deployment mode features to include:
       * Enrolls the device in Intune Microsoft Entra automatic MDM enrollment, and only allow for a device to be accessed until all policies, applications, certificates, and networking profiles are provisioned on the device.
-      * User credentials are required to enroll the device. It's essential to note that deploying a device in the **Self-Deploying** mode allows you to deploy laptops in a shared model. No user assignment happens until the device is assigned to a user for the first time. As a result, any user policies such as BitLocker won't be enabled until a user assignment is completed. For more information about how to sign in to a secured device, see [selected profiles](/intune/device-profile-assign). 
+      * User credentials are required to enroll the device. It's essential to note that deploying a device in the **Self-Deploying** mode allows you to deploy laptops in a shared model. No user assignment happens until the device is assigned to a user for the first time. As a result, any user policies such as BitLocker won't be enabled until a user assignment is completed. For more information about how to sign in to a secured device, see [selected profiles](/mem/intune/configuration/device-profile-assign). 
    * Select your Language (Region), User account type **standard**. 
 
 1. Select **Next**.
@@ -201,7 +200,7 @@ After creating a device group, you must create a deployment profile to configure
 1. Select **Next**.
 1. Select **Create** to create the profile. The Autopilot deployment profile is now available to assign to devices.
 
-Device enrollment in Autopilot provides a different user experience based on device type and role. In our deployment example, we illustrate a model where the secured devices are bulk deployed and can be shared, but when used for the first time, the device is assigned to a user. For more information, see [Intune Autopilot device enrollment](/intune/device-enrollment).
+Device enrollment in Autopilot provides a different user experience based on device type and role. In our deployment example, we illustrate a model where the secured devices are bulk deployed and can be shared, but when used for the first time, the device is assigned to a user. For more information, see [Windows Autopilot registration](/autopilot/registration-overview).
 
 ### Enrollment Status Page
 
@@ -386,7 +385,7 @@ The secure workstation moves to a truly hardened state when local applications a
 
 ### Configuring the Company Portal your for custom apps
 
-An Intune-managed copy of the [Company Portal](/Intune/store-apps-company-portal-app) gives you on-demand access to additional tools that you can push down to users of the secured workstations.
+An Intune-managed copy of the [Company Portal](/mem/intune/apps/store-apps-company-portal-autopilot) gives you on-demand access to additional tools that you can push down to users of the secured workstations.
 
 In a secured mode, application installation is restricted to managed applications delivered by Company Portal. However, installing the Company Portal requires access to Microsoft Store. In your secured solution, you [add and assign the Windows 10 Company Portal app for Autopilot provisioned devices](/mem/intune/apps/store-apps-company-portal-autopilot).
 
@@ -502,7 +501,7 @@ After you configure the device, complete a review and check the configuration. C
 
 ### Assign devices
 
-To assign devices and users, you need to map the [selected profiles](/intune/device-profile-assign) to your security group. All new users who require permissions to the service must be added to the security group as well.
+To assign devices and users, you need to map the [selected profiles](/mem/intune/configuration/device-profile-assign) to your security group. All new users who require permissions to the service must be added to the security group as well.
 
 ## Using Microsoft Defender for Endpoint to monitor and respond to security incidents
 
@@ -537,7 +536,7 @@ ActionType startswith "AppControl"
 * Review [Security recommendation](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)
 * Manage security [remediations](/windows/security/threat-protection/microsoft-defender-atp/tvm-remediation)
 * Manage [endpoint detection and response](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
-* Monitor profiles with [Intune profile monitoring](/intune/device-profile-monitor).
+* Monitor profiles with [Intune profile monitoring](/mem/intune/configuration/device-profile-monitor).
 
 ## Next steps
 

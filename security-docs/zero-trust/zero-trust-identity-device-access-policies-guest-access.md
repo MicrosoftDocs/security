@@ -21,7 +21,7 @@ ms.collection:
   - zerotrust-solution
   - tier2
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 01/22/2025
 ---
 
 # Policies for allowing guest access and B2B external user access
@@ -30,22 +30,29 @@ This article discusses adjusting the recommended Zero Trust identity and device 
 
 These recommendations are designed to apply to the **starting point** tier of protection. But you can also adjust the recommendations based on your specific needs for **enterprise** and **specialized security** protection.
 
-Providing a path for B2B accounts to authenticate with your Microsoft Entra tenant doesn't give these accounts access to your entire environment. B2B users and their accounts have access to services and resources, like files, shared with them by Conditional Access policy.
+Providing a path for B2B accounts to authenticate with your Microsoft Entra organization doesn't give these accounts access to your entire environment. B2B users and their accounts have access to services and resources (for example, files) designated by Conditional Access policy.
 
 ## Updating the common policies to allow and protect guests and external user access
 
-This diagram shows which policies to add or update among the common identity and device access policies, for B2B guest and external user access.
+This diagram shows which policies to add or update among the common identity and device access policies, for B2B guest and external user access:
 
 :::image type="content" source="media/microsoft-365-policies-configurations/identity-access-rule-set-guest.svg" alt-text="Diagram that shows the summary of policy updates for protecting guest access." lightbox="media/microsoft-365-policies-configurations/identity-access-rule-set-guest.svg":::
 
-The following table lists the policies you either need to create and update. The common policies link to the associated configuration instructions in the [Common identity and device access policies](zero-trust-identity-device-access-policies-common.md) article.
+The following table lists the policies you need to create and update. The common policies link to the associated configuration instructions in [Common identity and device access policies](zero-trust-identity-device-access-policies-common.md).
 
 |Protection level|Policies|More information|
 |---|---|---|
-|**Starting point**|[Require MFA always for guests and external users](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Create this new policy and configure: <ul><li>For **Assignments > Users and groups > Include**, choose **Select users and groups**, and then select **All guest and external users**.</li><li>For **Assignments > Conditions > Sign-in risk** and select all Sign-in risk levels. </li></ul>|
+|**Starting point**|[Require MFA always for guests and external users](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Create this new policy and configure the following settings: <ul><li>**Assignments** \> **Users** \> **Include** \> **Select users and groups**: Select **Guest or external users**, and then select all of the available user types:<ul><li>**B2B collaboration guest users**</li><li>**B2B collaboration member users**</li><li>**B2B direct connect users**</li><li>**Local guest users**</li><li>**Service provider users**</li><li>**Other external users**</li></ul></li><li>**Assignments** \> **Conditions** \> **Sign-in risk**: Select all of the available risk values: <ul><li>**No risk**</li><li>**Low**</li><li>**Medium**</li><li>**High**</li></ul></li></ul>|
 ||[Require MFA when sign-in risk is *medium* or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Modify this policy to exclude guests and external users.|
 
-To include or exclude guests and external users in Conditional Access policies, for **Assignments > Users and groups > Include** or **Exclude**, check **All guest and external users**.
+To exclude guests and external users from Conditional Access policies, go to **Assignments** \> **Users** \> **Exclude** \> **Select users and groups**: Select **Guest or external users**, and then select all of the available user types:
+
+- **B2B collaboration guest users**
+- **B2B collaboration member users**
+- **B2B direct connect users**
+- **Local guest users**
+- **Service provider users**
+- **Other external users**
 
 :::image type="content" source="media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png" alt-text="Screenshot of the controls for excluding guests and external users." lightbox="media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png":::
 
@@ -56,20 +63,19 @@ To include or exclude guests and external users in Conditional Access policies, 
 Microsoft Teams defines the following users:
 
 - **Guest access** uses a Microsoft Entra B2B account that can be added as a member of a team and have access to the communications and resources of the team.
-
 - **External access** is for an external user that doesn't have a B2B account. External user access includes invitations, calls, chats, and meetings, but doesn't include team membership and access to the resources of the team.
 
-For more information, see the [comparison between guests and external user access for teams](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+For more information, see [Compare external access and guest access in Teams](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-access-and-guest-access).
 
 For more information on securing identity and device access policies for Teams, see [Policy recommendations for securing Teams chats, groups, and files](zero-trust-identity-device-access-policies-teams.md).
 
 ### Require MFA always for guest and external users
 
-This policy prompts guests to register for MFA in your tenant, regardless of whether they're registered for MFA in their home tenant. Guests and external users accessing resources in your tenant are required to use MFA for every request.
+This policy requires guests to register for MFA in your organization, regardless of whether they're registered for MFA in their home organization. Guests and external users in your organization are required to use MFA for every request to access resources.
 
 ### Excluding guests and external users from risk-based MFA
 
-While organizations can enforce risk-based policies for B2B users using Microsoft Entra ID Protection, there are limitations in the implementation of Microsoft Entra ID Protection for B2B collaboration users in a resource directory because their identity exists in their home directory. Due to these limitations, Microsoft recommends you exclude guests from risk-based MFA policies and require these users to always use MFA.
+While organizations can enforce risk-based policies for B2B users using Microsoft Entra ID Protection, there are limitations in a resource directory because their identity exists in their home directory. Due to these limitations, we recommend that you exclude guests from risk-based MFA policies and require these users to always use MFA.
 
 For more information, see [Limitations of ID Protection for B2B collaboration users](/entra/id-protection/concept-identity-protection-b2b#limitations-of-id-protection-for-b2b-collaboration-users).
 

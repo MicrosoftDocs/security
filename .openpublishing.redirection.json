@@ -496,6 +496,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "zero-trust-identity-device-access-policies-exchange.md",
+      "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-workloads",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "zero-trust-identity-device-access-policies-sharepoint.md",
+      "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-workloads",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "zero-trust-identity-device-access-policies-teams.md",
+      "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-workloads",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "security-docs/compass/esae-retirement.md",
       "redirect_url": "/security/privileged-access-workstations/esae-retirement ",
       "redirect_document_id": false

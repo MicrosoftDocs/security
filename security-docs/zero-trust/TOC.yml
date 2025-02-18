@@ -67,7 +67,7 @@
   items: 
     - name: Overview
       href: copilots/apply-zero-trust-copilots-overview.md
-    - name: Zero Trust for Microsoft Copilot
+    - name: Zero Trust for Microsoft Copilot Chat
       href: copilots/zero-trust-microsoft-copilot.md
     - name: Zero Trust for Microsoft 365 Copilot
       href: copilots/zero-trust-microsoft-365-copilot.md

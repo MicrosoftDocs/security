@@ -28,7 +28,7 @@ ms.date: 02/10/2025
 
 # Recommended policies for specific Microsoft 365 workloads
 
-After you configure the [common security policies for Zero Trust](zero-trust-identity-device-access-policies-teams.md) in your Microsoft 365 organization, you need to configure policies in specific workloads based on the three guiding principles of [Zero Trust](zero-trust-identity-device-access-policies-overview.md):
+After you configure the [common security policies for Zero Trust](zero-trust-identity-device-access-policies-common.md) in your Microsoft 365 organization, you need to configure policies in specific workloads based on the three guiding principles of [Zero Trust](zero-trust-identity-device-access-policies-overview.md):
 
 - Verify explicitly
 - Use least privilege

@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/v1.0/applications/{id}/owners
 
 ### Check Identity Protection - risky workload identities
 
-This feature is in preview at the time of writing this playbook and licensing requirements apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but can also be used to further investigate into other triggers you've identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Microsoft Graph API.
+This feature is in preview at the time of writing this playbook and licensing requirements apply to its usage. Risky workload identities can be the trigger to investigate a Service Principal, but can also be used to further investigate into other triggers you've identified. You can check the **Risk State** of a Service Principal using the **Identity Protection - risky workload identities** tab, or you can use Microsoft Graph API.  You can also use natural language prompts to get insights on risky workload identities with [Microsoft Security Copilot in Microsoft Entra](/entra/fundamentals/copilot-security-entra-investigate-risky-apps).
 
 :::image type="content" source="./media/compromised-malicious-apps/ir-workload-identity-risk-detection-signal-portal-2.png" alt-text="Screenshot of the Risk Detection Details portal page.":::
 
@@ -229,7 +229,7 @@ https://graph.microsoft.com/v1.0/auditLogs/directoryAudits?directoryAudits?$filt
     {
         "id": "Directory_0da73d01-0b6d-4c6c-a083-afc8c968e655_78XJB_266233526",
         "category": "ApplicationManagement",
-        "correlationId": "0da73d01-0b6d-4c6c-a083-afc8c968e655",
+        "correlationId": "aaaa0000-bb11-2222-33cc-444444dddddd",
         "result": "success",
         "resultReason": "",
         "activityDisplayName": "Consent to application",
@@ -366,7 +366,7 @@ if ($servicePrincipal) {
                    "displayName": "Test",
                    "endDateTime": "2021-12-16T19:19:36.997Z",
                    "hint": "7~-",
-                   "keyId": "9f92041c-46b9-4ebc-95fd-e45745734bef",
+                   "keyId": "aaaaaaaa-0b0b-1c1c-2d2d-333333333333",
                    "secretText": null,
                    "startDateTime": "2021-06-16T18:19:36.997Z"
                }
@@ -529,4 +529,3 @@ Examine guidance for identifying and investigating these additional types of att
 - [Microsoft Sentinel](/azure/sentinel/investigate-cases) incident response
 - [Microsoft Incident Response team guide shares best practices for security teams and leaders](https://www.microsoft.com/security/blog/2023/12/11/new-microsoft-incident-response-team-guide-shares-best-practices-for-security-teams-and-leaders/)
 - [Microsoft Incident Response guides help security teams analyze suspicious activity](https://www.microsoft.com/security/blog/2024/01/17/new-microsoft-incident-response-guides-help-security-teams-analyze-suspicious-activity/)
-

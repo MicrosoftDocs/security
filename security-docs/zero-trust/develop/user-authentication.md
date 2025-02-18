@@ -35,15 +35,15 @@ The following example of an ID token shows information about the user and confir
 {
   "ver": "2.0",
   "iss": "https://login.microsoftonline.com/3338040d-6c67-4c5b-b112-36a304b66dad/v2.0",
-  "aud": "6cb04018-a3f5-46a7-b995-940c78f5aef3",
+  "aud": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "exp": 1536361411,
   "iat": 1536274711,
   "nbf": 1536274711,
   "sub": "AAAAAAAAAAAAAAAAAAAAAIkzqFVrSaSaFHy782bbtaQ",
   "name": "Abe Lincoln",
   "preferred_username": "AbeLi@microsoft.com",
-  "oid": "00000000-0000-0000-66f3-3332eca7ea81",
-  "tid": "3338040d-6c67-4c5b-b112-36a304b66dad",
+  "oid": "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
+  "tid": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
 }.
 .[Signature]
 ```

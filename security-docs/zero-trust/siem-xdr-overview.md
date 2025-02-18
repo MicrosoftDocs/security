@@ -37,7 +37,7 @@ For new articles in this series, please add:
 
 # Incident response with XDR and integrated SIEM
 
-This solution guide shows you how to set up Microsoft extended detection and response (XDR) tools with Microsoft Sentinel so your organization can respond to and remediate cybersecurity attacks faster.
+This solution guide shows you how to set up Microsoft extended detection and response (XDR) tools and how to integrate these with Microsoft Sentinel so your organization can respond to and remediate cybersecurity attacks faster.
 
 Microsoft Defender XDR is an XDR solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your Microsoft 365 environment.
 

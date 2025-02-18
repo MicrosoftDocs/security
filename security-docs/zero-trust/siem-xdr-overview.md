@@ -55,7 +55,7 @@ Assume breach | Microsoft Defender XDR continuously scans the environment for th
 
 Deploying Microsoft Defender XDR is a great starting point for building incident detection and response abilities within your organization. Defender XDR is included with Microsoft 365 E5 and you can even get started by using [Microsoft 365 E5 trial licenses](/defender-xdr/pilot-deploy-overview#using-microsoft-365-e5-trial-licenses). Defneder XDR can be integrated wtih Microsoft Sentinel or with a [generic SIEM tool](/defender-cloud-apps/siem).
 
-For more information, see [Pilot and deploy Microsoft Defender XDR](/defender-xdr/pilot-deploy-overview).
+For more information, see [Pilot and deploy Microsoft Defender XDR](/defender-xdr/pilot-deploy-overview?toc=%2Fsecurity%2Fzero-trust%2Ftoc.json&bc=%2Fsecurity%2Fbreadcrumb%2Ftoc.json).
 
 :::image type="content" source="../zero-trust/media/copilot/defender-xdr-pilot-deploy-flow.svg" alt-text="Diagram of the process to evaluate and deploy Microsoft Defender XDR components." lightbox="../zero-trust/media/copilot/defender-xdr-pilot-deploy-flow.svg":::
 

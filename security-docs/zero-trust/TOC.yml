@@ -187,7 +187,7 @@
         href: deploy-information-protection-saas.md
 - name: Microsoft Defender XDR and Microsoft Sentinel
   items:
-  - name: Incident response with integrated SIEM and XDR
+  - name: Incident response with XDR and integrated SIEM
     href: siem-xdr-overview.md
   - name: Zero Trust security with Microsoft Sentinel and Defender XDR
     href: siem-xdr-implement.md

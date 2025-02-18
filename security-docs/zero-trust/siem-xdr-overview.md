@@ -1,5 +1,5 @@
 ---
-title: Incident Response with Integrated SIEM and XDR
+title: Incident Response with XDR and Integrated SIEM
 description: Learn how to integrate Microsoft Sentinel and Defender XDR to quickly respond to incidents and improve Zero Trust security.
 author: batamig
 ms.author: bagol
@@ -35,9 +35,9 @@ For new articles in this series, please add:
 
 --->
 
-# Incident response with integrated SIEM and XDR
+# Incident response with XDR and integrated SIEM
 
-This solution guide shows you how to set up Microsoft extended detection and response (XDR) tools with Microsoft Sentinel so your organization can respond to and remediate cybersecurity attacks faster.
+This solution guide shows you how to set up Microsoft extended detection and response (XDR) tools and how to integrate these with Microsoft Sentinel so your organization can respond to and remediate cybersecurity attacks faster.
 
 Microsoft Defender XDR is an XDR solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your Microsoft 365 environment.
 
@@ -50,6 +50,15 @@ This guidance helps you improve your Zero Trust architecture by mapping the prin
 Verify explicitly | Microsoft Sentinel collects data from across the environment and analyzes threats and anomalies so your organization and any automation can act on verified data. <br><br>Microsoft Defender XDR provides extended detection and response across users, identities, devices, apps, and emails. Configure Microsoft Sentinel automation to use risk-based signals captured by Microsoft Defender XDR to take action, such as blocking or authorizing traffic based on risk.
 Use least privileged access | Microsoft Sentinel detects anomalous activity through its UEBA engine. As security scenarios change rapidly, its threat intelligence imports data from Microsoft and third-party providers to detect and contextualize emerging threats. <br><br>Microsoft Defender XDR includes Microsoft Entra ID Protection to block users based on identity risk. Feed related data into Microsoft Sentinel for further analysis and automation.
 Assume breach | Microsoft Defender XDR continuously scans the environment for threats and vulnerabilities. Microsoft Sentinel analyzes collected data and behavioral trends to detect suspicious activity, anomalies, and multistage threats across the enterprise.<br><br>Both Microsoft Defender XDR and Microsoft Sentinel implement automated remediation tasks, including investigations, device isolation, and data quarantine. Use device risk as a signal for Microsoft Entra Conditional Access.
+
+## Getting started with Microsoft Defender XDR
+
+Deploying Microsoft Defender XDR is a great starting point for building incident detection and response abilities within your organization. Defender XDR is included with Microsoft 365 E5 and you can even get started by using [Microsoft 365 E5 trial licenses](/defender-xdr/pilot-deploy-overview#using-microsoft-365-e5-trial-licenses). Defender XDR can be integrated with Microsoft Sentinel or with a [generic SIEM tool](/defender-cloud-apps/siem).
+
+For more information, see [Pilot and deploy Microsoft Defender XDR](/defender-xdr/pilot-deploy-overview?toc=%2Fsecurity%2Fzero-trust%2Ftoc.json&bc=%2Fsecurity%2Fbreadcrumb%2Ftoc.json).
+
+:::image type="content" source="../zero-trust/media/copilot/defender-xdr-pilot-deploy-flow.svg" alt-text="Diagram of the process to evaluate and deploy Microsoft Defender XDR components." lightbox="../zero-trust/media/copilot/defender-xdr-pilot-deploy-flow.svg":::
+
 
 ## Microsoft Sentinel and XDR architecture
 

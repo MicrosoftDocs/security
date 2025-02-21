@@ -55,7 +55,7 @@ Follow this table for the best Zero Trust documentation sets for your needs.
 |[Zero Trust for Azure services](azure-infrastructure-overview.md) for stepped and detailed design and deployment guidance|Apply Zero Trust protections to Azure workloads and services.|IT teams and security staff|
 |[Partner integration with Zero Trust](integrate/overview.md) for design guidance for technology areas and specializations|Apply Zero Trust protections to partner Microsoft cloud solutions.|Partner developers, IT teams, and security staff|
 |[Develop using Zero Trust principles](develop/overview.md) for application development design guidance and best practices|Apply Zero Trust protections to your application.|Application developers|
-|US Governemnt guidance for [CISA](/security/zero-trust/cisa-zero-trust-maturity-model-intro), [DoD](/security/zero-trust/dod-zero-trust-strategy-intro), and the [Memorandum for Zero Trust architecture](/entra/standards/memo-22-09-meet-identity-requirements) |Prescriptive recommendatinos for US Government requirements |IT Architects and IT teams|
+|US Government guidance for [CISA](/security/zero-trust/cisa-zero-trust-maturity-model-intro), [DoD](/security/zero-trust/dod-zero-trust-strategy-intro), and the [Memorandum for Zero Trust architecture](/entra/standards/memo-22-09-meet-identity-requirements) |Prescriptive recommendations for US Government requirements |IT Architects and IT teams|
 
 
 ## Recommended training

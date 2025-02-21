@@ -50,10 +50,10 @@ Secure Web Gateways (SWG) and Endian Firewall (EFW) solutions can integrate with
 
 The principles of the integration are:
 
-1. Deployment-less: The vendor streams traffic logs directly to Defender for Cloud Apps to avoid any agent deployment and maintenance.
-1. Log enrichment and App correlation: traffic logs are enriched against the Defender for Cloud Apps catalog to map each log record to a known app (associated with a risk profile)
-1. Defender for Cloud Apps analytics and reporting: Defender for Cloud Apps analyzes and processes the data to provide an overview Shadow IT report
-1. Risk-based access control: Defender for Cloud Apps syncs back to the vendor the signatures of the app to be blocked in to allow the customer with risk-based app management in Defender for Cloud Apps that consistent vendor access control mechanisms enforce
+- Deployment-less: The vendor streams traffic logs directly to Defender for Cloud Apps to avoid any agent deployment and maintenance.
+- Log enrichment and App correlation: traffic logs are enriched against the Defender for Cloud Apps catalog to map each log record to a known app (associated with a risk profile)
+- Defender for Cloud Apps analytics and reporting: Defender for Cloud Apps analyzes and processes the data to provide an overview Shadow IT report
+- Risk-based access control: Defender for Cloud Apps syncs back to the vendor the signatures of the app to be blocked in to allow the customer with risk-based app management in Defender for Cloud Apps that consistent vendor access control mechanisms enforce
 
 We recommend performing the following steps before starting to develop the integration:
 

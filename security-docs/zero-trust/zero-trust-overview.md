@@ -1,7 +1,7 @@
 ---
 title: What is Zero Trust?
 description: Understand the Zero Trust security model, learn about the principles, and apply the Zero Trust architecture using Microsoft 365 and Microsoft Azure services.  
-ms.date: 01/23/2025
+ms.date: 02/21/2025
 ms.service: security
 author: brendacarter
 ms.author: bcarter

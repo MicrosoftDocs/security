@@ -3,9 +3,8 @@ title: Zero Trust integration for Infrastructure overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Cloud to help customers adopt a Zero Trust model and keep their organizations secure.
 ms.date: 02/21/2025
 ms.service: security
-author: memildin
-manager: rkarlin
-ms.author: memildin
+author: janicericketts
+ms.author: jricketts
 ms.topic: conceptual
 ms.collection:
   - zerotrust-partner

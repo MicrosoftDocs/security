@@ -581,6 +581,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "security-docs/zero-trust/user-access-productivity-overview.md",
+      "redirect_url": "/microsoft-365/enterprise/microsoft-365-secure-sign-in?toc=/security/zero-trust/toc.json&bc=/security/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "security-docs/zero-trust/data-compliance-governance-overview.md",
+      "redirect_url": "/security/zero-trust/data-compliance-gov-data",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "security-docs/zero-trust/setup-xdr-tools.md",
       "redirect_url": "/unified-secops-platform/overview-deploy?toc=/security/zero-trust/toc.json&bc=/security/breadcrumb/toc.json#deploy-microsoft-defender-xdr-services",
       "redirect_document_id": false

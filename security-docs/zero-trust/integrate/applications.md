@@ -1,7 +1,7 @@
 ---
 title: Zero Trust integration for Applications overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Defender for Cloud Apps to help customers adopt a Zero Trust model and keep their organizations secure.
-ms.date: 04/17/2024
+ms.date: 02/21/2025
 ms.service: security
 author: janicericketts
 ms.author: jricketts
@@ -14,7 +14,7 @@ ms.collection:
 
 :::image type="icon" source="../media/icon-applications-medium.png":::
 
-Applications are core productivity tools for employees. In a modern workplace, adoption of cloud based Software as a Service (SaaS) applications has created new challenges for IT. Lack of visibility and control over applications, the way users interact with them, and the data that is exposed through them creates security and compliance risks.
+Applications are core productivity tools for employees. In a modern workplace, adoption of cloud based Software as a Service (SaaS) applications creates new challenges for IT. Lack of visibility and control over applications, the way users interact with them, and the data that is exposed through them creates security and compliance risks.
 
 Zero Trust solutions for the applications pillar are about providing visibility and control over app usage data and analytics that identify and combat cyber threats across cloud apps and services.
 
@@ -30,13 +30,13 @@ This integration guide includes instructions for integrating with [Microsoft Def
 
 Independent software vendors (ISVs) can integrate with Defender for Cloud Apps to help organizations discover risky usage or potential exfiltration and protect them from risks surfaced by the use of shadow applications.
 
-The Defender for Cloud Apps API provides programmatic access to Defender for Cloud Apps through [REST API endpoints](/cloud-app-security/api-introduction).  ISVs can use the API to perform read and update operations on Defender for Cloud Apps data and objects at scale. For example:
+The Defender for Cloud Apps API provides programmatic access to Defender for Cloud Apps through [REST API endpoints](/cloud-app-security/api-introduction). ISVs can use the API to perform read and update operations on Defender for Cloud Apps data and objects at scale. For example:
 - Uploading log files for Cloud Discovery
 - Generating block scripts
 - List activities and alerts
 - Dismiss or resolve alerts
 
-This allows ISVs to:
+This approach allows ISVs to:
 - Use Cloud Discovery to map and identify your cloud environment and the cloud apps your organization is using.
 - Sanction and unsanction apps in your cloud.
 - Easily deploy app connectors that take advantage of provider APIs, for deeper visibility and granular governance of apps that you connect to.
@@ -50,10 +50,10 @@ Secure Web Gateways (SWG) and Endian Firewall (EFW) solutions can integrate with
 
 The principles of the integration are:
 
-1. Deployment-less: The vendor will stream traffic logs directly to Defender for Cloud Apps to avoid any agent deployment and maintenance.
-1. Log enrichment and App correlation: traffic logs will be enriched against the Defender for Cloud Apps catalog to map each log record to a known app (associated with a risk profile)
-1. Defender for Cloud Apps analytics and reporting: Defender for Cloud Apps will analyze and process the data to provide an overview Shadow IT report
-1. Risk-based access control: Defender for Cloud Apps will sync back to the vendor the signatures of the app to be blocked in to allow the customer with risk-based app management in Defender for Cloud Apps that is enforced by consistent access control mechanism of the vendor
+1. Deployment-less: The vendor streams traffic logs directly to Defender for Cloud Apps to avoid any agent deployment and maintenance.
+1. Log enrichment and App correlation: traffic logs are enriched against the Defender for Cloud Apps catalog to map each log record to a known app (associated with a risk profile)
+1. Defender for Cloud Apps analytics and reporting: Defender for Cloud Apps analyzes and processes the data to provide an overview Shadow IT report
+1. Risk-based access control: Defender for Cloud Apps syncs back to the vendor the signatures of the app to be blocked in to allow the customer with risk-based app management in Defender for Cloud Apps that consistent vendor access control mechanisms enforce
 
 We recommend performing the following steps before starting to develop the integration:
 

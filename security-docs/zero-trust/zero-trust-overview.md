@@ -45,8 +45,8 @@ Follow this table for the best Zero Trust documentation sets for your needs.
 |Documentation set|Helps you...|Roles|
 |---|---|---|
 |[Adoption framework](adopt/zero-trust-adoption-overview.md) for phase and step guidance for key business solutions and outcomes|Apply Zero Trust protections from the C-suite to the IT implementation.|Security architects, IT teams, and project managers|
-|[Assessment and progress tracking resource](/zero-trust-assessment-progress-tracking-resources) |Assess your infrastructure's readiness and track your progress. |Security architects, IT teams, and project managers|
-|[Zero Trust partner kit](/zero-trust-partner-kit) |Co-branded tracking resources, workshop, and architecture illustrations |Partners and security architects |
+|[Assessment and progress tracking resource](zero-trust-assessment-progress-tracking-resources.md) |Assess your infrastructure's readiness and track your progress. |Security architects, IT teams, and project managers|
+|[Zero Trust partner kit](zero-trust-partner-kit.md) |Co-branded tracking resources, workshop, and architecture illustrations |Partners and security architects |
 |[Deployment for technology pillars](deploy/overview.md) for conceptual information and deployment objectives|Apply Zero Trust protections aligned with typical IT technology areas.|IT teams and security staff|
 |[Zero Trust for small businesses](guidance-smb-partner.md)|Apply Zero Trust principles to small business customers.|Customers and partners working with Microsoft 365 for business|
 |[Zero Trust for Microsoft Copilots](copilots/apply-zero-trust-copilots-overview.md) for stepped and detailed design and deployment guidance|Apply Zero Trust protections to Microsoft Copilots.|IT teams and security staff|
@@ -76,7 +76,7 @@ Follow this table for the best Zero Trust documentation sets for your needs.
 
 ## Next steps
 
-Learn about the [Microsoft Zero Trust adoption framework](/adopt/zero-trust-adoption-overview).
+Learn about the [Microsoft Zero Trust adoption framework](adopt/zero-trust-adoption-overview.md).
 
 <!---
 ### Your role

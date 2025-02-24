@@ -51,17 +51,6 @@
       href: deploy/visibility-automation-orchestration.md
 - name: Small businesses
   href: guidance-smb-partner.md
-- name: Rapid Modernization Plan (RaMP)
-  expanded: false
-  items: 
-    - name: Overview
-      href: zero-trust-ramp-overview.md
-    - name: Explicitly validate trust for all access requests
-      href: user-access-productivity-validate-trust.md
-    - name: Ransomware recovery readiness
-      href: data-compliance-gov-ransomware-recovery-readiness.md
-    - name: Data protection
-      href: data-compliance-gov-data.md
 - name: Microsoft Copilots
   expanded: false
   items: 

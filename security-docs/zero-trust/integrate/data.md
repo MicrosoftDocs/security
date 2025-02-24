@@ -1,7 +1,7 @@
 ---
 title: Zero Trust integration for Data overview
 description: Independent software vendors (ISVs) can integrate their solutions with Microsoft Purview Information Protection SDK to help customers adopt a Zero Trust model and keep their organizations secure.
-ms.date: 04/17/2024
+ms.date: 02/21/2025
 ms.service: security
 author: janicericketts
 ms.author: jricketts
@@ -46,10 +46,10 @@ The [Microsoft Purview Information Protection SDK - API concepts](/information-p
 
 ### Getting started with the SDK
 
-We have included the following guidance to help you on the journey to integrating your solutions with Microsoft Entra ID.
+We include the following guidance to help you on the journey to integrating your solutions with Microsoft Entra ID.
 
 [Microsoft Purview Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)
-This document describes common use cases for the MIP SDK, including how to get started using the SDK and building integrations. The MIP SDK exposes the labeling and protection services from Microsoft 365 Security and Compliance Center to third-party applications and services. Partners can use the SDK to build solutions with native support for applying labels and protection to files as well as reasoning over MIP-encrypted information and which actions should be taken when specific labels are detected.
+This document describes common use cases for the MIP SDK, including how to get started using the SDK and building integrations. The MIP SDK exposes the labeling and protection services from Microsoft 365 Security and Microsoft Purview compliance portal to non-Microsoft applications and services. Partners can use the SDK to build solutions with native support for applying labels and protection to files as well as reasoning over MIP-encrypted information and which actions should be taken when specific labels are detected.
 
 [https://aka.ms/mipsdksamples](https://aka.ms/mipsdksamples)
 This resource contains sample implementations showing the use of the MIP SDK in code. For example, the [.NET File Quickstart](/samples/azure-samples/mipsdk-dotnet-file-quickstart/mipsdk-file-dotnet-quickstart/) demonstrates labeling and reading labels on files.

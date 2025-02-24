@@ -36,7 +36,6 @@ Here's an overview of the **Permissions and access** articles in this [Developer
 
 ## Next steps
 
-- [Subscribe](/api/search/rss?search=%22Develop+using+Zero+Trust+principles%22&locale=en-us) to  our *Develop using Zero Trust principles* RSS feed for notification of new articles.
 - [Develop using Zero Trust principles](overview.md) helps you to understand the guiding principles of Zero Trust so that you can improve your application security.
 - [What do we mean by Zero Trust compliance?](identity-zero-trust-compliance.md) provides an overview of application security from a developer's perspective to address the guiding principles of Zero Trust.
 - Use [Zero Trust identity and access management development best practices](identity-iam-development-best-practices.md) in your application development lifecycle to create secure applications.
